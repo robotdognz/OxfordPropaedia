@@ -2,17 +2,90 @@
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import navigation from '../data/navigation.json';
 import { getCollection, render } from 'astro:content';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 
 const base = import.meta.env.BASE_URL;
 const parts = navigation.parts;
 
-// Load the Circle of Learning essay (partNumber 0)
 const essays = await getCollection('essays');
-const circleEssay = essays.find((e) => e.data.partNumber === 0);
-let EssayContent: any = null;
-if (circleEssay) {
-  const { Content } = await render(circleEssay);
-  EssayContent = Content;
+const circleEssay = essays.find((entry) => entry.data.title === 'The Circle of Learning');
+const howToUseEssay = essays.find((entry) => entry.data.title === 'How to use the PROPAEDIA');
+
+let HowToUseContent: any = null;
+if (howToUseEssay) {
+  const { Content } = await render(howToUseEssay);
+  HowToUseContent = Content;
+}
+
+const markdownProcessor = await createMarkdownProcessor();
+
+async function renderMarkdownSegment(content: string) {
+  const { code } = await markdownProcessor.render(content);
+  return code;
+}
+
+const circleListStart =
+  'For a synopsis of the subject matter covered in each of the 10 parts of the outline, the reader is referred to that part of the Table of Contents set forth on pages 9-15 of this volume. The titles of the individual parts are given in the following list:';
+const circleFirstFigureStart =
+  'The pair of diagrams below shows the 10 parts as segments of a circle.';
+const circleSecondFigureStart =
+  'The second pair of diagrams, following, places one of the 10 parts at the centre of the circle with the remaining nine parts as segments of the circle formed by lines radiating from the centre.';
+const circleThirdFigureStart =
+  'The final diagram offers still another approach to the circle of learning.';
+const circlePartTenReasonStart =
+  'The reason for this special placement of Part Ten stems from the one organizing principle to which the Editors were explicitly committed in planning and producing this new Britannica.';
+const circleExamplesStart =
+  'Thus, for example, Section 10/34 in Division III of Part Ten examines the nature, methods, problems, and history of the biological sciences; but the knowledge of life that the biological sciences afford is outlined in Part Three.';
+
+let circleIntroHtml = '';
+let circleListHtml = '';
+let circleFirstFigureIntroHtml = '';
+let circleSecondFigureIntroHtml = '';
+let circleThirdFigureIntroHtml = '';
+let circlePartTenReasonHtml = '';
+let circleRemainderHtml = '';
+
+if (circleEssay?.body) {
+  const listStartIndex = circleEssay.body.indexOf(circleListStart);
+  const firstFigureStartIndex = circleEssay.body.indexOf(circleFirstFigureStart);
+  const secondFigureStartIndex = circleEssay.body.indexOf(circleSecondFigureStart);
+  const thirdFigureStartIndex = circleEssay.body.indexOf(circleThirdFigureStart);
+  const partTenReasonStartIndex = circleEssay.body.indexOf(circlePartTenReasonStart);
+  const examplesStartIndex = circleEssay.body.indexOf(circleExamplesStart);
+
+  if (
+    listStartIndex !== -1 &&
+    firstFigureStartIndex !== -1 &&
+    secondFigureStartIndex !== -1 &&
+    thirdFigureStartIndex !== -1 &&
+    partTenReasonStartIndex !== -1 &&
+    examplesStartIndex !== -1 &&
+    listStartIndex < firstFigureStartIndex &&
+    firstFigureStartIndex < secondFigureStartIndex &&
+    secondFigureStartIndex < thirdFigureStartIndex &&
+    thirdFigureStartIndex < partTenReasonStartIndex &&
+    partTenReasonStartIndex < examplesStartIndex
+  ) {
+    circleIntroHtml = await renderMarkdownSegment(circleEssay.body.slice(0, listStartIndex).trim());
+    circleListHtml = await renderMarkdownSegment(
+      circleEssay.body.slice(listStartIndex, firstFigureStartIndex).trim()
+    );
+    circleFirstFigureIntroHtml = await renderMarkdownSegment(
+      circleEssay.body.slice(firstFigureStartIndex, secondFigureStartIndex).trim()
+    );
+    circleSecondFigureIntroHtml = await renderMarkdownSegment(
+      circleEssay.body.slice(secondFigureStartIndex, thirdFigureStartIndex).trim()
+    );
+    circleThirdFigureIntroHtml = await renderMarkdownSegment(
+      circleEssay.body.slice(thirdFigureStartIndex, partTenReasonStartIndex).trim()
+    );
+    circlePartTenReasonHtml = await renderMarkdownSegment(
+      circleEssay.body.slice(partTenReasonStartIndex, examplesStartIndex).trim()
+    );
+    circleRemainderHtml = await renderMarkdownSegment(circleEssay.body.slice(examplesStartIndex).trim());
+  } else {
+    circleIntroHtml = await renderMarkdownSegment(circleEssay.body.trim());
+  }
 }
 
 const partColors: Record<number, string> = {
@@ -54,122 +127,663 @@ const partTextColors: Record<number, string> = {
   10: 'text-amber-700',
 };
 
-const PART_NAMES: Record<number, string> = {
-  1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
-  6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
+const partColorHex: Record<number, string> = {
+  1: '#1e40af',
+  2: '#065f46',
+  3: '#16a34a',
+  4: '#dc2626',
+  5: '#7c3aed',
+  6: '#ea580c',
+  7: '#0891b2',
+  8: '#4338ca',
+  9: '#be185d',
+  10: '#a16207',
 };
+
+const PART_NAMES: Record<number, string> = {
+  1: 'One',
+  2: 'Two',
+  3: 'Three',
+  4: 'Four',
+  5: 'Five',
+  6: 'Six',
+  7: 'Seven',
+  8: 'Eight',
+  9: 'Nine',
+  10: 'Ten',
+};
+
+const figureGroups = [
+  {
+    title: 'Segment rotations',
+    caption: 'The first pair shows the circle rotated so different parts sit at the top.',
+    figures: [
+      {
+        title: 'Part One at the top',
+        kind: 'segments',
+        order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      },
+      {
+        title: 'Part Nine at the top',
+        kind: 'segments',
+        order: [9, 10, 1, 2, 3, 4, 5, 6, 7, 8],
+      },
+    ],
+  },
+  {
+    title: 'Alternative centres',
+    caption: 'The second pair makes the same point by moving a chosen part into the centre.',
+    figures: [
+      {
+        title: 'Part Five at the centre',
+        kind: 'hub',
+        center: 5,
+        outer: [1, 2, 3, 4, 6, 7, 8, 9, 10],
+      },
+      {
+        title: 'Part Three at the centre',
+        kind: 'hub',
+        center: 3,
+        outer: [1, 2, 4, 5, 6, 7, 8, 9, 10],
+      },
+    ],
+  },
+  {
+    title: 'The special final diagram',
+    caption: 'Part Ten occupies the centre because it studies the branches of knowledge themselves.',
+    figures: [
+      {
+        title: 'Part Ten at the centre',
+        kind: 'hub',
+        center: 10,
+        outer: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      },
+    ],
+  },
+];
+
+const [segmentRotationGroup, alternativeCentreGroup, partTenCentreGroup] = figureGroups;
+
+function polar(cx: number, cy: number, radius: number, degrees: number) {
+  const radians = ((degrees - 90) * Math.PI) / 180;
+  return {
+    x: cx + radius * Math.cos(radians),
+    y: cy + radius * Math.sin(radians),
+  };
+}
+
+function donutSlicePath(
+  cx: number,
+  cy: number,
+  innerRadius: number,
+  outerRadius: number,
+  startAngle: number,
+  endAngle: number
+) {
+  const startOuter = polar(cx, cy, outerRadius, startAngle);
+  const endOuter = polar(cx, cy, outerRadius, endAngle);
+  const startInner = polar(cx, cy, innerRadius, startAngle);
+  const endInner = polar(cx, cy, innerRadius, endAngle);
+  const largeArc = endAngle - startAngle > 180 ? 1 : 0;
+
+  return [
+    `M ${startOuter.x} ${startOuter.y}`,
+    `A ${outerRadius} ${outerRadius} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
+    `L ${endInner.x} ${endInner.y}`,
+    `A ${innerRadius} ${innerRadius} 0 ${largeArc} 0 ${startInner.x} ${startInner.y}`,
+    'Z',
+  ].join(' ');
+}
+
+function labelPosition(cx: number, cy: number, radius: number, startAngle: number, endAngle: number) {
+  return polar(cx, cy, radius, (startAngle + endAngle) / 2);
+}
 ---
 
-<BaseLayout title="Propaedia — Outline of Knowledge">
-  <!-- Hero Section -->
-  <section class="text-center py-16 px-4">
-    <h1 class="text-5xl font-serif font-bold text-gray-900 mb-4">
-      Propaedia
-    </h1>
-    <p class="text-xl text-gray-600 font-sans max-w-2xl mx-auto mb-2">
-      Outline of Knowledge
-    </p>
-    <p class="text-base text-gray-500 max-w-3xl mx-auto">
-      A hierarchical classification of all human knowledge, based on the Encyclopaedia Britannica's Propaedia (2005 edition), enriched with Oxford Very Short Introduction recommendations.
-    </p>
-  </section>
+<BaseLayout title="Propaedia - Outline of Knowledge">
+  <main id="main-content" class="w-full overflow-x-hidden">
+    <section class="border-b border-slate-200 bg-gradient-to-b from-slate-50 via-white to-white">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <p class="text-sm font-sans font-semibold uppercase tracking-[0.22em] text-slate-500">
+          Propaedia
+        </p>
+        <h1 class="mt-3 text-5xl font-serif font-bold tracking-tight text-slate-900 sm:text-6xl">
+          Outline of Knowledge
+        </h1>
+      </div>
+    </section>
 
-  <!-- Circle of Learning Essay -->
-  {EssayContent && (
-    <section class="max-w-3xl mx-auto px-4 mb-12">
-      <details class="group">
-        <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center justify-center gap-2">
-          <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-          The Circle of Learning
-          {circleEssay?.data.author && (
-            <span class="text-sm font-normal text-gray-500">by {circleEssay.data.author}</span>
+    <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div class="min-w-0">
+            <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Navigate the Outline
+            </p>
+            <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+              Enter by part links or by circle
+            </h2>
+          </div>
+          <div
+            class="inline-flex rounded-full border border-slate-200 bg-slate-50 p-1 font-sans text-sm"
+            role="tablist"
+            aria-label="Homepage navigation views"
+          >
+            <button
+              type="button"
+              data-view-tab="links"
+              aria-selected="true"
+              class="rounded-full bg-slate-900 px-4 py-2 font-semibold text-white shadow-sm transition"
+            >
+              Part links
+            </button>
+            <button
+              type="button"
+              data-view-tab="circle"
+              aria-selected="false"
+              class="rounded-full px-4 py-2 font-semibold text-slate-600 transition"
+            >
+              Circle
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8" data-view-panel="links">
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+            {parts.map((part) => (
+              <a
+                href={`${base}/part/${part.partNumber}`}
+                class={`block rounded-[1.5rem] border-2 p-5 transition-all hover:-translate-y-0.5 hover:shadow-md ${partColorsLight[part.partNumber]}`}
+              >
+                <div class="flex items-center gap-3">
+                  <span class={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white ${partColors[part.partNumber]}`}>
+                    {part.partNumber}
+                  </span>
+                  <span class="text-xs font-sans font-medium uppercase tracking-wide text-slate-500">
+                    Part {PART_NAMES[part.partNumber]}
+                  </span>
+                </div>
+                <h3 class={`mt-4 text-lg font-serif font-bold ${partTextColors[part.partNumber]}`}>
+                  {part.title}
+                </h3>
+                <p class="mt-2 text-sm text-slate-500">
+                  {part.divisions.length} {part.divisions.length === 1 ? 'division' : 'divisions'}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-8 hidden" data-view-panel="circle">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
+            <div class="min-w-0 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
+              <svg
+                viewBox="0 0 420 420"
+                class="mx-auto w-full max-w-[28rem]"
+                role="img"
+                aria-label="Interactive circle of learning"
+              >
+                <title>Interactive circle of learning</title>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((partNumber, index) => {
+                  const start = index * 40;
+                  const end = start + 40;
+                  const label = labelPosition(210, 210, 138, start, end);
+                  return (
+                    <a
+                      href={`${base}/part/${partNumber}`}
+                      data-circle-part-name={parts.find((part) => part.partNumber === partNumber)?.title}
+                      data-circle-part-number={String(partNumber)}
+                    >
+                      <path
+                        d={donutSlicePath(210, 210, 82, 172, start, end)}
+                        fill={partColorHex[partNumber]}
+                        class="transition-opacity hover:opacity-90"
+                      />
+                      <text
+                        x={label.x}
+                        y={label.y}
+                        fill="white"
+                        font-size="17"
+                        font-family="Inter, sans-serif"
+                        font-weight="700"
+                        text-anchor="middle"
+                        dominant-baseline="middle"
+                        pointer-events="none"
+                      >
+                        {partNumber}
+                      </text>
+                    </a>
+                  );
+                })}
+                <a
+                  href={`${base}/part/10`}
+                  data-circle-part-name={parts.find((part) => part.partNumber === 10)?.title}
+                  data-circle-part-number="10"
+                >
+                  <circle
+                    cx="210"
+                    cy="210"
+                    r="64"
+                    fill={partColorHex[10]}
+                    class="transition-opacity hover:opacity-90"
+                  />
+                  <text
+                    x="210"
+                    y="202"
+                    fill="white"
+                    font-size="24"
+                    font-family="Inter, sans-serif"
+                    font-weight="700"
+                    text-anchor="middle"
+                    dominant-baseline="middle"
+                    pointer-events="none"
+                  >
+                    10
+                  </text>
+                  <text
+                    x="210"
+                    y="226"
+                    fill="white"
+                    font-size="11"
+                    font-family="Inter, sans-serif"
+                    font-weight="600"
+                    text-anchor="middle"
+                    dominant-baseline="middle"
+                    pointer-events="none"
+                  >
+                    Branches
+                  </text>
+                </a>
+              </svg>
+
+              <p
+                class="mt-4 text-center text-sm font-sans font-semibold text-slate-700"
+                data-circle-hover-label
+                data-default-text="Hover a part to preview it."
+              >
+                Hover a part to preview it.
+              </p>
+            </div>
+
+            <div class="min-w-0">
+              <h3 class="text-2xl font-serif font-bold text-slate-900">Circle navigator</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-600">
+                The circle view is useful once you have the structure in mind. Hover any segment to see the
+                part name, then open it directly. Part Ten remains at the centre because it studies the
+                branches of knowledge themselves.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-2 sm:px-6 lg:px-8">
+      <article class="min-w-0 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+        <header class="border-b border-slate-100 pb-5">
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Orientation Guide
+          </p>
+          <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+            How to use the PROPAEDIA
+          </h2>
+          {howToUseEssay?.data.author && (
+            <p class="mt-2 text-sm text-slate-500">by {howToUseEssay.data.author}</p>
           )}
+        </header>
+        {HowToUseContent && (
+          <div class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900">
+            <HowToUseContent />
+          </div>
+        )}
+      </article>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <details class="group rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+        <summary class="cursor-pointer list-none p-6 sm:p-8 [&::-webkit-details-marker]:hidden">
+          <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
+            <div>
+              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Essay with Diagrams
+              </p>
+              <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+                The Circle of Learning
+              </h2>
+              {circleEssay?.data.author && (
+                <p class="mt-2 text-sm text-slate-500">by {circleEssay.data.author}</p>
+              )}
+            </div>
+            <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
         </summary>
-        <div class="mt-4 pl-7 prose-propaedia">
-          <EssayContent />
+
+        <div class="px-6 pb-6 sm:px-8 sm:pb-8">
+          {circleIntroHtml && (
+            <div
+              class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleIntroHtml}
+            />
+          )}
+
+          {circleListHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleListHtml}
+            />
+          )}
+
+          {circleFirstFigureIntroHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleFirstFigureIntroHtml}
+            />
+          )}
+
+          {segmentRotationGroup && (
+            <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
+              {segmentRotationGroup.figures.map((figure) => (
+                <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                    {figure.title}
+                  </figcaption>
+                  <svg
+                    viewBox="0 0 220 220"
+                    class="mt-4 mx-auto w-full max-w-[15rem]"
+                    role="img"
+                    aria-label={figure.title}
+                  >
+                    <title>{figure.title}</title>
+                    {figure.kind === 'segments' &&
+                      figure.order.map((partNumber, index) => {
+                        const segmentAngle = 360 / figure.order.length;
+                        const start = index * segmentAngle;
+                        const end = start + segmentAngle;
+                        const label = labelPosition(110, 110, 72, start, end);
+                        return (
+                          <g>
+                            <path
+                              d={donutSlicePath(110, 110, 42, 96, start, end)}
+                              fill={partColorHex[partNumber]}
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                            <text
+                              x={label.x}
+                              y={label.y}
+                              fill="white"
+                              font-size="15"
+                              font-family="Inter, sans-serif"
+                              font-weight="700"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              {partNumber}
+                            </text>
+                          </g>
+                        );
+                      })}
+                  </svg>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {circleSecondFigureIntroHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleSecondFigureIntroHtml}
+            />
+          )}
+
+          {alternativeCentreGroup && (
+            <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
+              {alternativeCentreGroup.figures.map((figure) => (
+                <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                    {figure.title}
+                  </figcaption>
+                  <svg
+                    viewBox="0 0 220 220"
+                    class="mt-4 mx-auto w-full max-w-[15rem]"
+                    role="img"
+                    aria-label={figure.title}
+                  >
+                    <title>{figure.title}</title>
+                    {figure.kind === 'hub' &&
+                      figure.outer.map((partNumber, index) => {
+                        const segmentAngle = 360 / figure.outer.length;
+                        const start = index * segmentAngle;
+                        const end = start + segmentAngle;
+                        const label = labelPosition(110, 110, 76, start, end);
+                        return (
+                          <g>
+                            <path
+                              d={donutSlicePath(110, 110, 56, 98, start, end)}
+                              fill={partColorHex[partNumber]}
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                            <text
+                              x={label.x}
+                              y={label.y}
+                              fill="white"
+                              font-size="14"
+                              font-family="Inter, sans-serif"
+                              font-weight="700"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              {partNumber}
+                            </text>
+                          </g>
+                        );
+                      })}
+                    {figure.kind === 'hub' && (
+                      <g>
+                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                        <text
+                          x="110"
+                          y="104"
+                          fill="white"
+                          font-size="20"
+                          font-family="Inter, sans-serif"
+                          font-weight="700"
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                        >
+                          {figure.center}
+                        </text>
+                        <text
+                          x="110"
+                          y="126"
+                          fill="white"
+                          font-size="10"
+                          font-family="Inter, sans-serif"
+                          font-weight="600"
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                        >
+                          Part {PART_NAMES[figure.center]}
+                        </text>
+                      </g>
+                    )}
+                  </svg>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {circleThirdFigureIntroHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleThirdFigureIntroHtml}
+            />
+          )}
+
+          {partTenCentreGroup && (
+            <div class="mt-8 grid gap-5 md:justify-center">
+              {partTenCentreGroup.figures.map((figure) => (
+                <figure class="mx-auto w-full max-w-md rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                    {figure.title}
+                  </figcaption>
+                  <svg viewBox="0 0 220 220" class="mt-4 w-full" role="img" aria-label={figure.title}>
+                    <title>{figure.title}</title>
+                    {figure.kind === 'hub' &&
+                      figure.outer.map((partNumber, index) => {
+                        const segmentAngle = 360 / figure.outer.length;
+                        const start = index * segmentAngle;
+                        const end = start + segmentAngle;
+                        const label = labelPosition(110, 110, 76, start, end);
+                        return (
+                          <g>
+                            <path
+                              d={donutSlicePath(110, 110, 56, 98, start, end)}
+                              fill={partColorHex[partNumber]}
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                            <text
+                              x={label.x}
+                              y={label.y}
+                              fill="white"
+                              font-size="14"
+                              font-family="Inter, sans-serif"
+                              font-weight="700"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              {partNumber}
+                            </text>
+                          </g>
+                        );
+                      })}
+                    {figure.kind === 'hub' && (
+                      <g>
+                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                        <text
+                          x="110"
+                          y="104"
+                          fill="white"
+                          font-size="20"
+                          font-family="Inter, sans-serif"
+                          font-weight="700"
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                        >
+                          {figure.center}
+                        </text>
+                        <text
+                          x="110"
+                          y="126"
+                          fill="white"
+                          font-size="10"
+                          font-family="Inter, sans-serif"
+                          font-weight="600"
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                        >
+                          Part {PART_NAMES[figure.center]}
+                        </text>
+                      </g>
+                    )}
+                  </svg>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {circlePartTenReasonHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circlePartTenReasonHtml}
+            />
+          )}
+
+          {circleRemainderHtml && (
+            <div
+              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+              set:html={circleRemainderHtml}
+            />
+          )}
         </div>
       </details>
     </section>
-  )}
+  </main>
 
-  <!-- Circle of Learning - Desktop SVG -->
-  <section class="hidden lg:block max-w-3xl mx-auto px-4 mb-16">
-    <svg viewBox="0 0 600 600" class="w-full" role="img" aria-label="Circle of Learning — click a part to explore">
-      <title>Circle of Learning</title>
-      <!-- Outer circle segments for Parts 1-9 -->
-      {[1,2,3,4,5,6,7,8,9].map((num, i) => {
-        const angle = (i * 40 - 90) * Math.PI / 180;
-        const nextAngle = ((i + 1) * 40 - 90) * Math.PI / 180;
-        const cx = 300, cy = 300, r = 250;
-        const x1 = cx + r * Math.cos(angle);
-        const y1 = cy + r * Math.sin(angle);
-        const x2 = cx + r * Math.cos(nextAngle);
-        const y2 = cy + r * Math.sin(nextAngle);
-        const midAngle = ((i * 40 + 20) - 90) * Math.PI / 180;
-        const labelR = 200;
-        const lx = cx + labelR * Math.cos(midAngle);
-        const ly = cy + labelR * Math.sin(midAngle);
-        const colors = ['#1e40af','#065f46','#059669','#dc2626','#7c3aed','#ea580c','#0891b2','#4338ca','#be185d'];
-        return (
-          <a href={`${base}/part/${num}`}>
-            <path
-              d={`M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2} Z`}
-              fill={colors[i]}
-              opacity="0.85"
-              class="hover:opacity-100 transition-opacity cursor-pointer"
-            />
-            <text x={lx} y={ly} text-anchor="middle" dominant-baseline="middle"
-              fill="white" font-size="12" font-family="Inter, sans-serif" font-weight="600">
-              {num}
-            </text>
-          </a>
-        );
-      })}
-      <!-- Center circle for Part 10 -->
-      <a href={`${base}/part/10`}>
-        <circle cx="300" cy="300" r="80" fill="#854d0e" opacity="0.85"
-          class="hover:opacity-100 transition-opacity cursor-pointer" />
-        <text x="300" y="295" text-anchor="middle" dominant-baseline="middle"
-          fill="white" font-size="13" font-family="Inter, sans-serif" font-weight="600">
-          10
-        </text>
-        <text x="300" y="315" text-anchor="middle" dominant-baseline="middle"
-          fill="white" font-size="10" font-family="Inter, sans-serif" opacity="0.9">
-          Knowledge
-        </text>
-      </a>
-    </svg>
-  </section>
+  <script is:inline>
+    const activeTabClasses = ['bg-slate-900', 'text-white', 'shadow-sm'];
+    const inactiveTabClasses = ['text-slate-600'];
 
-  <!-- Part Cards - Mobile & Desktop -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <h2 class="text-2xl font-sans font-bold text-gray-800 mb-8 lg:text-center">
-      Ten Parts of Knowledge
-    </h2>
-    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {parts.map((part) => (
-        <a href={`${base}/part/${part.partNumber}`}
-          class={`block rounded-lg border-2 p-5 transition-all ${partColorsLight[part.partNumber]}`}>
-          <div class="flex items-center gap-3 mb-2">
-            <span class={`inline-flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold ${partColors[part.partNumber]}`}>
-              {part.partNumber}
-            </span>
-            <span class="text-xs font-sans font-medium text-gray-500 uppercase tracking-wide">
-              Part {PART_NAMES[part.partNumber]}
-            </span>
-          </div>
-          <h3 class={`text-lg font-serif font-bold ${partTextColors[part.partNumber]}`}>
-            {part.title}
-          </h3>
-          {part.divisions.length > 0 && (
-            <p class="text-sm text-gray-500 mt-2">
-              {part.divisions.length} {part.divisions.length === 1 ? 'division' : 'divisions'}
-            </p>
-          )}
-        </a>
-      ))}
-    </div>
-  </section>
+    function setHomepageNavigatorView(view) {
+      const tabs = Array.from(document.querySelectorAll('[data-view-tab]'));
+      const panels = Array.from(document.querySelectorAll('[data-view-panel]'));
+
+      tabs.forEach((tab) => {
+        const isActive = tab.dataset.viewTab === view;
+        tab.setAttribute('aria-selected', String(isActive));
+        activeTabClasses.forEach((className) => tab.classList.toggle(className, isActive));
+        inactiveTabClasses.forEach((className) => tab.classList.toggle(className, !isActive));
+      });
+
+      panels.forEach((panel) => {
+        panel.classList.toggle('hidden', panel.dataset.viewPanel !== view);
+      });
+    }
+
+    function setupHomepageNavigator() {
+      const tabs = Array.from(document.querySelectorAll('[data-view-tab]'));
+      if (tabs.length === 0) return;
+
+      setHomepageNavigatorView('links');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const view = tab.dataset.viewTab;
+          if (view) setHomepageNavigatorView(view);
+        });
+      });
+
+      const label = document.querySelector('[data-circle-hover-label]');
+      const defaultText = label?.dataset.defaultText ?? '';
+      const circleLinks = Array.from(document.querySelectorAll('[data-circle-part-name]'));
+
+      circleLinks.forEach((link) => {
+        const partNumber = link.dataset.circlePartNumber;
+        const partName = link.dataset.circlePartName;
+        const text = partNumber && partName ? `Part ${partNumber}. ${partName}` : defaultText;
+
+        const activate = () => {
+          if (label) label.textContent = text;
+        };
+
+        const reset = () => {
+          if (label) label.textContent = defaultText;
+        };
+
+        link.addEventListener('mouseenter', activate);
+        link.addEventListener('focus', activate);
+        link.addEventListener('mouseleave', reset);
+        link.addEventListener('blur', reset);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupHomepageNavigator, { once: true });
+    } else {
+      setupHomepageNavigator();
+    }
+  </script>
 </BaseLayout>
