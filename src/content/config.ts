@@ -72,7 +72,7 @@ const essaysCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     author: z.string(),
-    partNumber: z.number().int().min(1).max(10),
+    partNumber: z.number().int().min(0).max(10),
   }),
 });
 
