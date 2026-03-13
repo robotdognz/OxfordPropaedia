@@ -38,6 +38,7 @@ const partsCollection = defineCollection({
     title: z.string(),
     subtitle: z.string().optional(),
     color: z.string(),
+    headnote: z.array(z.string()).default([]),
     divisions: z.array(z.string()),
   }),
 });
@@ -49,6 +50,7 @@ const divisionsCollection = defineCollection({
     partNumber: z.number().int().min(1).max(10),
     romanNumeral: z.string(),
     title: z.string(),
+    headnote: z.array(z.string()).default([]),
     sections: z.array(z.string()),
   }),
 });

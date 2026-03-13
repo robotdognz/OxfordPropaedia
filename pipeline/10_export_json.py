@@ -21,6 +21,7 @@ import os
 import re
 import shutil
 import sys
+from copy import deepcopy
 
 sys.path.insert(0, os.path.dirname(__file__))
 import config
@@ -50,6 +51,25 @@ INT_TO_ROMAN = {
     1: "I", 2: "II", 3: "III", 4: "IV", 5: "V",
     6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X",
 }
+
+PART_WORD_BY_NUMBER = {value: key for key, value in config.PART_NUMBER_WORDS.items()}
+
+TEXT_REPLACEMENTS = [
+    ("\ufb01", "fi"),
+    ("\ufb02", "fl"),
+    ("\ufb00", "ff"),
+    ("\ufb03", "ffi"),
+    ("\ufb04", "ffl"),
+    ("\u2019", "'"),
+    ("\u2018", "'"),
+    ("\u201c", '"'),
+    ("\u201d", '"'),
+    ("\u2013", "-"),
+    ("\u2014", "--"),
+    ("\u2026", "..."),
+    ("\u00a0", " "),
+    ("\u00ac", ""),
+]
 
 # Authoritative division titles for the 2005 Propaedia (41 divisions)
 DIVISION_TITLES: dict[tuple[int, int], str] = {
@@ -83,7 +103,7 @@ DIVISION_TITLES: dict[tuple[int, int], str] = {
     (6, 1): "Art in General",
     (6, 2): "The Particular Arts",
     # Part 7: Technology
-    (7, 1): "The Nature of Technology",
+    (7, 1): "The Nature and Development of Technology",
     (7, 2): "Elements of Technology",
     (7, 3): "Major Fields of Technology",
     # Part 8: Religion
@@ -103,8 +123,255 @@ DIVISION_TITLES: dict[tuple[int, int], str] = {
     (10, 3): "Science",
     (10, 4): "History and the Humanities",
     (10, 5): "Philosophy",
-    (10, 6): "The Preservation of Knowledge",
+    (10, 6): "Preservation of Knowledge",
 }
+
+SECTION_PAGE_CACHE: dict[str, int] = {}
+
+
+def _dump_json(path: str, data: dict | list) -> None:
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+
+
+def _normalize_for_match(text: str) -> str:
+    normalized = text
+    for old, new in TEXT_REPLACEMENTS:
+        normalized = normalized.replace(old, new)
+    normalized = re.sub(r"\s+", " ", normalized)
+    return normalized.strip().lower()
+
+
+def _clean_extracted_text(text: str) -> str:
+    cleaned = text
+    for old, new in TEXT_REPLACEMENTS:
+        cleaned = cleaned.replace(old, new)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned.strip()
+
+
+def _load_page_lines(page_number: int) -> list[str]:
+    path = os.path.join(config.RAW_DIR, f"page_{page_number:03d}.txt")
+    if not os.path.isfile(path):
+        return []
+    with open(path, "r", encoding="utf-8") as fh:
+        return [line.rstrip("\n") for line in fh]
+
+
+def _section_code_regex(code: str) -> re.Pattern[str]:
+    if "/" in code:
+        pattern_parts = []
+        for char in code:
+            if char.isdigit():
+                pattern_parts.append(re.escape(char))
+            elif char == "/":
+                pattern_parts.append(r"\s*/\s*")
+        pattern = "".join(pattern_parts)
+    else:
+        pattern = r"\s*".join(re.escape(char) for char in code)
+    return re.compile(rf"Section\s+{pattern}\s*\.", re.IGNORECASE)
+
+
+def _find_section_start_page(code: str) -> int | None:
+    cached = SECTION_PAGE_CACHE.get(code)
+    if cached:
+        return cached
+
+    regex = _section_code_regex(code)
+    for page_number in range(27, config.TOTAL_PAGES + 1):
+        page_lines = _load_page_lines(page_number)
+        if any(regex.search(line) for line in page_lines):
+            SECTION_PAGE_CACHE[code] = page_number
+            return page_number
+
+    return None
+
+
+def _is_page_header_or_noise(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped:
+        return False
+    return bool(
+        re.match(r"^\d+\s+Part\s+\w+\.", stripped)
+        or re.match(r"^Part\s+\w+\.\s+.+\s+\d+\s*$", stripped)
+        or re.match(r"^Division\s+[IVX]+\.\s+Section\s+\d", stripped)
+    )
+
+
+def _starts_new_paragraph(previous_line: str, current_line: str) -> bool:
+    return bool(
+        re.search(r"[.!?][\"\']?\]?\s*$", previous_line.strip())
+        and re.match(r"^[A-Z\"\[]", current_line.strip())
+    )
+
+
+def _append_prose_line(current: str, line: str) -> str:
+    stripped = line.strip()
+    if not current:
+        return stripped
+    if current.endswith("-") or current.endswith("¬"):
+        return current[:-1] + stripped
+    return f"{current} {stripped}"
+
+
+def _lines_to_paragraphs(lines: list[str]) -> list[str]:
+    paragraphs: list[str] = []
+    current = ""
+    previous_line = ""
+
+    for raw_line in lines:
+        line = raw_line.strip()
+        if not line:
+            if current:
+                paragraphs.append(_clean_extracted_text(current))
+                current = ""
+            previous_line = ""
+            continue
+        if _is_page_header_or_noise(line):
+            continue
+        if re.match(r"^\[For Part .+ headnote see page \d+\.\]$", line):
+            continue
+        if current and _starts_new_paragraph(previous_line, line):
+            paragraphs.append(_clean_extracted_text(current))
+            current = line
+        else:
+            current = _append_prose_line(current, line)
+        previous_line = line
+
+    if current:
+        paragraphs.append(_clean_extracted_text(current))
+
+    return [paragraph for paragraph in paragraphs if paragraph]
+
+
+def _extract_part_headnotes(hierarchy: dict[int, dict[int, list[str]]], sections: dict[str, dict]) -> dict[int, list[str]]:
+    headnotes: dict[int, list[str]] = {}
+
+    for part_num in sorted(hierarchy.keys()):
+        first_div_num = min(hierarchy[part_num].keys())
+        first_section_code = hierarchy[part_num][first_div_num][0]
+        page_number = _find_section_start_page(first_section_code)
+        if not page_number:
+            logger.warning("No page found for Part %d first section %s", part_num, first_section_code)
+            continue
+
+        lines = _load_page_lines(page_number)
+        if not lines:
+            logger.warning("No raw page found for Part %d on page %s", part_num, page_number)
+            continue
+
+        part_word = PART_WORD_BY_NUMBER.get(part_num, str(part_num))
+        normalized_title = _normalize_for_match(config.PART_NAMES.get(part_num, f"Part {part_num}"))
+        header_candidates: list[tuple[int, int]] = []
+
+        for index, line in enumerate(lines):
+            normalized_line = _normalize_for_match(line)
+            if normalized_line.startswith(_normalize_for_match(f"Part {part_word}.")) and normalized_title in normalized_line:
+                header_candidates.append((index, index))
+                continue
+            if normalized_line == _normalize_for_match(f"Part {part_word}."):
+                next_index = index + 1
+                while next_index < len(lines) and not lines[next_index].strip():
+                    next_index += 1
+                if next_index < len(lines) and normalized_title in _normalize_for_match(lines[next_index]):
+                    header_candidates.append((index, next_index))
+
+        if not header_candidates:
+            logger.warning("Could not locate Part %d headnote header on page %s", part_num, page_number)
+            continue
+
+        _, header_end_index = header_candidates[-1]
+        collected: list[str] = []
+        found_end = False
+
+        for follow_page in range(page_number, page_number + 3):
+            page_lines = _load_page_lines(follow_page)
+            if not page_lines:
+                break
+            start_index = header_end_index + 1 if follow_page == page_number else 0
+            for line in page_lines[start_index:]:
+                if _normalize_for_match(line).startswith("division i."):
+                    found_end = True
+                    break
+                collected.append(line)
+            if found_end:
+                break
+
+        headnotes[part_num] = _lines_to_paragraphs(collected)
+
+    return headnotes
+
+
+def _extract_division_headnotes(
+    hierarchy: dict[int, dict[int, list[str]]], sections: dict[str, dict]
+) -> dict[tuple[int, int], list[str]]:
+    headnotes: dict[tuple[int, int], list[str]] = {}
+
+    for part_num in sorted(hierarchy.keys()):
+        for div_num in sorted(hierarchy[part_num].keys()):
+            first_section_code = hierarchy[part_num][div_num][0]
+            page_number = _find_section_start_page(first_section_code)
+            if not page_number:
+                logger.warning(
+                    "No page found for Division %d-%02d first section %s",
+                    part_num,
+                    div_num,
+                    first_section_code,
+                )
+                continue
+
+            title = DIVISION_TITLES.get((part_num, div_num))
+            roman = INT_TO_ROMAN.get(div_num, str(div_num))
+            if not title:
+                continue
+
+            header_candidates: list[tuple[int, int, int]] = []
+            normalized_title = _normalize_for_match(title)
+            normalized_division_prefix = _normalize_for_match(f"Division {roman}.")
+
+            for candidate_page in range(max(1, page_number - 2), page_number + 1):
+                page_lines = _load_page_lines(candidate_page)
+                if not page_lines:
+                    continue
+                for index, line in enumerate(page_lines):
+                    normalized_line = _normalize_for_match(line)
+                    if normalized_line.startswith(normalized_division_prefix) and normalized_title in normalized_line:
+                        header_candidates.append((candidate_page, index, index))
+                        continue
+                    if normalized_line == normalized_title:
+                        next_index = index + 1
+                        while next_index < len(page_lines) and not page_lines[next_index].strip():
+                            next_index += 1
+                        if next_index < len(page_lines):
+                            next_normalized = _normalize_for_match(page_lines[next_index])
+                            if next_normalized.startswith(normalized_division_prefix):
+                                header_candidates.append((candidate_page, index, next_index))
+
+            if not header_candidates:
+                logger.warning("Could not locate Division %d-%02d headnote header", part_num, div_num)
+                continue
+
+            start_page, _, header_end_index = header_candidates[-1]
+            collected: list[str] = []
+            found_end = False
+
+            for follow_page in range(start_page, page_number + 2):
+                page_lines = _load_page_lines(follow_page)
+                if not page_lines:
+                    break
+                start_index = header_end_index + 1 if follow_page == start_page else 0
+                for line in page_lines[start_index:]:
+                    if _normalize_for_match(line).startswith(_normalize_for_match(f"Section {first_section_code}.")):
+                        found_end = True
+                        break
+                    collected.append(line)
+                if found_end:
+                    break
+
+            headnotes[(part_num, div_num)] = _lines_to_paragraphs(collected)
+
+    return headnotes
 
 
 def parse_section_code(code: str) -> tuple[int, int, int] | None:
@@ -289,6 +556,54 @@ def _collect_sections() -> dict[str, dict]:
     return sections
 
 
+def _load_existing_final_sections() -> dict[str, dict]:
+    sections_dir = os.path.join(config.FINAL_CONTENT_DIR, "sections")
+    if not os.path.isdir(sections_dir):
+        return {}
+
+    existing_sections: dict[str, dict] = {}
+    for fname in os.listdir(sections_dir):
+        if not fname.endswith(".json"):
+            continue
+        code = config.filename_to_section_code(fname)
+        path = os.path.join(sections_dir, fname)
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                existing_sections[code] = json.load(fh)
+        except json.JSONDecodeError:
+            logger.warning("Skipping unreadable final section file: %s", path)
+
+    logger.info("Loaded %d existing final section files", len(existing_sections))
+    return existing_sections
+
+
+def _merge_sections(
+    pipeline_sections: dict[str, dict], existing_final_sections: dict[str, dict]
+) -> dict[str, dict]:
+    if not existing_final_sections:
+        return pipeline_sections
+
+    merged_sections: dict[str, dict] = {}
+    preserved = 0
+
+    # Keep checked-in section content when present; those files are currently
+    # more reliable than the raw pipeline output.
+    for code, data in pipeline_sections.items():
+        if code in existing_final_sections:
+            merged_sections[code] = deepcopy(existing_final_sections[code])
+            preserved += 1
+        else:
+            merged_sections[code] = deepcopy(data)
+
+    for code, data in existing_final_sections.items():
+        if code not in merged_sections:
+            logger.warning("Keeping existing final section %s without pipeline source", code)
+            merged_sections[code] = deepcopy(data)
+
+    logger.info("Preserved %d existing section files during export", preserved)
+    return merged_sections
+
+
 def _build_structure(sections: dict[str, dict]) -> dict:
     """Build the full Part → Division → Section hierarchy from section codes."""
     # Collect all (part, div, sec) tuples
@@ -317,8 +632,12 @@ def _build_structure(sections: dict[str, dict]) -> dict:
 def export_all() -> None:
     """Run all export steps."""
     boundaries = _load_boundaries()
-    sections = _collect_sections()
+    existing_final_sections = _load_existing_final_sections()
+    pipeline_sections = _collect_sections()
+    sections = _merge_sections(pipeline_sections, existing_final_sections)
     hierarchy = _build_structure(sections)
+    part_headnotes = _extract_part_headnotes(hierarchy, sections)
+    division_headnotes = _extract_division_headnotes(hierarchy, sections)
 
     logger.info(
         "Structure: %d parts, %d divisions, %d sections",
@@ -344,11 +663,11 @@ def export_all() -> None:
             "title": config.PART_NAMES.get(part_num, f"Part {part_num}"),
             "subtitle": PART_SUBTITLES.get(part_num, ""),
             "color": PART_COLORS[part_num],
+            "headnote": part_headnotes.get(part_num, []),
             "divisions": div_ids,
         }
         path = os.path.join(parts_dir, f"part-{part_num:02d}.json")
-        with open(path, "w", encoding="utf-8") as fh:
-            json.dump(data, fh, indent=2, ensure_ascii=False)
+        _dump_json(path, data)
     logger.info("Exported %d part files", len(hierarchy))
 
     # --- Export Divisions ---
@@ -364,11 +683,11 @@ def export_all() -> None:
                 "partNumber": part_num,
                 "romanNumeral": INT_TO_ROMAN.get(div_num, str(div_num)),
                 "title": title,
+                "headnote": division_headnotes.get((part_num, div_num), []),
                 "sections": section_codes,
             }
             path = os.path.join(divs_dir, f"div-{div_id}.json")
-            with open(path, "w", encoding="utf-8") as fh:
-                json.dump(data, fh, indent=2, ensure_ascii=False)
+            _dump_json(path, data)
             total_divs += 1
     logger.info("Exported %d division files", total_divs)
 
@@ -395,8 +714,7 @@ def export_all() -> None:
 
         dest_filename = config.section_code_to_filename(code) + ".json"
         dest_path = os.path.join(secs_dir, dest_filename)
-        with open(dest_path, "w", encoding="utf-8") as fh:
-            json.dump(data, fh, indent=2, ensure_ascii=False)
+        _dump_json(dest_path, data)
         exported += 1
     logger.info("Exported %d section files", exported)
 
@@ -444,8 +762,7 @@ def _export_cross_references() -> None:
         logger.info("Exported cross-references.json")
     else:
         # Write empty structure
-        with open(dest, "w") as fh:
-            json.dump({"references": [], "reverseIndex": {}}, fh, indent=2)
+        _dump_json(dest, {"references": [], "reverseIndex": {}})
         logger.info("Wrote empty cross-references.json")
 
 
@@ -480,8 +797,7 @@ def _export_navigation(
         })
 
     path = os.path.join(dest_dir, "navigation.json")
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump({"parts": nav_parts}, fh, indent=2, ensure_ascii=False)
+    _dump_json(path, {"parts": nav_parts})
     logger.info("Exported navigation.json")
 
 
