@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import Accordion from '../ui/Accordion';
 import VsiCard from './VsiCard';
 
 export interface VsiMapping {
@@ -16,25 +17,18 @@ export default function VsiRecommendations({ mappings }: VsiRecommendationsProps
 
   return (
     <section class="mt-6">
-      <div class="flex items-center gap-3 mb-4">
-        <h3 class="font-serif text-lg font-semibold text-gray-900">
-          Oxford VSI Recommendations
-        </h3>
-        <span class="inline-flex items-center justify-center px-2 py-0.5 text-xs font-mono font-medium text-indigo-700 bg-indigo-100 rounded-full">
-          {mappings.length}
-        </span>
-      </div>
-
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {mappings.map((m, i) => (
-          <VsiCard
-            key={`${m.vsiTitle}-${i}`}
-            title={m.vsiTitle}
-            author={m.vsiAuthor}
-            rationale={m.rationale}
-          />
-        ))}
-      </div>
+      <Accordion title={`Oxford VSI Recommendations (${mappings.length})`}>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {mappings.map((m, i) => (
+            <VsiCard
+              key={`${m.vsiTitle}-${i}`}
+              title={m.vsiTitle}
+              author={m.vsiAuthor}
+              rationale={m.rationale}
+            />
+          ))}
+        </div>
+      </Accordion>
     </section>
   );
 }

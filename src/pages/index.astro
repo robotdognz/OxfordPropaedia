@@ -399,17 +399,17 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               <p
                 class="mt-4 text-center text-sm font-sans font-semibold text-slate-700"
                 data-circle-hover-label
-                data-default-text="Hover a part to preview it."
+                data-default-text="Tap or hover a part to preview it."
               >
-                Hover a part to preview it.
+                Tap or hover a part to preview it.
               </p>
             </div>
 
             <div class="min-w-0">
               <h3 class="text-2xl font-serif font-bold text-slate-900">Circle navigator</h3>
               <p class="mt-4 text-sm leading-7 text-slate-600">
-                The circle view is useful once you have the structure in mind. Hover any segment to see the
-                part name, then open it directly. Part Ten remains at the centre because it studies the
+                The circle view is useful once you have the structure in mind. Tap or hover any segment to
+                preview the part name, then open it directly. Part Ten remains at the centre because it studies the
                 branches of knowledge themselves.
               </p>
             </div>
@@ -418,34 +418,13 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-4 py-2 sm:px-6 lg:px-8">
-      <article class="min-w-0 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-        <header class="border-b border-slate-100 pb-5">
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Orientation Guide
-          </p>
-          <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
-            How to use the PROPAEDIA
-          </h2>
-          {howToUseEssay?.data.author && (
-            <p class="mt-2 text-sm text-slate-500">by {howToUseEssay.data.author}</p>
-          )}
-        </header>
-        {HowToUseContent && (
-          <div class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900">
-            <HowToUseContent />
-          </div>
-        )}
-      </article>
-    </section>
-
     <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       <details class="group rounded-[2rem] border border-slate-200 bg-white shadow-sm">
         <summary class="cursor-pointer list-none p-6 sm:p-8 [&::-webkit-details-marker]:hidden">
           <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
             <div>
               <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Essay with Diagrams
+                Essay by the Propaedia Creator
               </p>
               <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
                 The Circle of Learning
@@ -721,6 +700,44 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         </div>
       </details>
     </section>
+
+    <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <details class="group rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+        <summary class="cursor-pointer list-none p-6 sm:p-8 [&::-webkit-details-marker]:hidden">
+          <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
+            <div>
+              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Orientation Guide
+              </p>
+              <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+                How to use the PROPAEDIA
+              </h2>
+              {howToUseEssay?.data.author && (
+                <p class="mt-2 text-sm text-slate-500">by {howToUseEssay.data.author}</p>
+              )}
+            </div>
+            <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+        </summary>
+
+        {HowToUseContent && (
+          <div class="prose-propaedia px-6 pb-6 pt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900 sm:px-8 sm:pb-8">
+            <HowToUseContent />
+          </div>
+        )}
+      </details>
+    </section>
   </main>
 
   <script is:inline>
@@ -759,6 +776,8 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       const label = document.querySelector('[data-circle-hover-label]');
       const defaultText = label?.dataset.defaultText ?? '';
       const circleLinks = Array.from(document.querySelectorAll('[data-circle-part-name]'));
+      const touchPreviewQuery = window.matchMedia('(pointer: coarse)');
+      let activeTouchLink = null;
 
       circleLinks.forEach((link) => {
         const partNumber = link.dataset.circlePartNumber;
@@ -775,9 +794,29 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
 
         link.addEventListener('mouseenter', activate);
         link.addEventListener('focus', activate);
-        link.addEventListener('mouseleave', reset);
-        link.addEventListener('blur', reset);
+        link.addEventListener('mouseleave', () => {
+          if (activeTouchLink !== link) reset();
+        });
+        link.addEventListener('blur', () => {
+          if (activeTouchLink !== link) reset();
+        });
+        link.addEventListener('click', (event) => {
+          if (!touchPreviewQuery.matches) return;
+          if (activeTouchLink !== link) {
+            event.preventDefault();
+            activeTouchLink = link;
+            activate();
+            return;
+          }
+          activeTouchLink = null;
+        });
       });
+
+      document.addEventListener('touchstart', (event) => {
+        if ((event.target instanceof Element) && event.target.closest('[data-circle-part-name]')) return;
+        activeTouchLink = null;
+        if (label) label.textContent = defaultText;
+      }, { passive: true });
     }
 
     if (document.readyState === 'loading') {

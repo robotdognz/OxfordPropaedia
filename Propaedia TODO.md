@@ -1,17 +1,13 @@
 Propaedia TODO:
 
-- The cross references should be embedded in the actual text where they show up, instead of in their own part of the page
-    - There are also cross references in the headnotes that aren't hyperlinks
-
-- Need to be able to collapse the VSI's section, like we can with the Macropaedia articles sections
-
 - The hamburger top right menu button breaks the website on mobile
 
-- How to use the PROPAEDIA should be collapsed by default, and moved under the circle of knowledge essay
-
-- The Circle of Learning essay shouldn't be labelled "Essay with Diagrams", maybe something like "Essay by the Propaedia Creator"
-
 - Circle navigation doesn't show the sections names on mobile when touching with finger
+
+- The headnote should be collapsed by default. Call it Info instead of Headnote
+
+- About page
+    - The Oxford Very Short Intoroductions section shouldn't imply they replace the micropaedia references. They aren't meant for users who don't have access to the Britannica for the Macropaedia articles. The micropaedia should never be referenced in the tool
 
 
 Later:

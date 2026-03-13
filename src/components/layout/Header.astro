@@ -58,7 +58,7 @@ const base = import.meta.env.BASE_URL;
         <button
           type="button"
           id="sidebar-toggle"
-          class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors lg:hidden"
+          class="hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors lg:hidden"
           aria-label="Toggle sidebar navigation"
           aria-expanded="false"
         >
@@ -78,31 +78,85 @@ const base = import.meta.env.BASE_URL;
 <SearchDialog client:idle baseUrl={base} />
 
 <script>
-  // Wire up all search trigger buttons
-  document.querySelectorAll('[data-search-trigger]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.dispatchEvent(new CustomEvent('propaedia:open-search'));
+  function setupHeader() {
+    document.querySelectorAll('[data-search-trigger]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.dispatchEvent(new CustomEvent('propaedia:open-search'));
+      });
     });
-  });
 
-  // Mobile sidebar toggle
-  const sidebarToggle = document.getElementById('sidebar-toggle');
-  const sidebar = document.getElementById('sidebar-nav');
-  const sidebarOverlay = document.getElementById('sidebar-overlay');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
-  const closeIcon = document.getElementById('close-icon');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebar = document.getElementById('sidebar-nav');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-  function toggleSidebar() {
-    const isOpen = sidebar?.classList.contains('sidebar-open');
-    sidebar?.classList.toggle('sidebar-open');
-    sidebar?.classList.toggle('hidden', !!isOpen);
-    sidebarOverlay?.classList.toggle('hidden');
-    hamburgerIcon?.classList.toggle('hidden');
-    closeIcon?.classList.toggle('hidden');
-    sidebarToggle?.setAttribute('aria-expanded', String(!isOpen));
-    document.body.style.overflow = isOpen ? '' : 'hidden';
+    if (!sidebarToggle) return;
+
+    if (!sidebar || !sidebarOverlay) {
+      sidebarToggle.classList.add('hidden');
+      sidebarToggle.setAttribute('aria-hidden', 'true');
+      sidebarToggle.setAttribute('aria-expanded', 'false');
+      return;
+    }
+
+    sidebarToggle.classList.remove('hidden');
+    sidebarToggle.removeAttribute('aria-hidden');
+
+    const closeSidebar = () => {
+      sidebar.classList.remove('sidebar-open');
+      sidebar.classList.add('hidden');
+      sidebarOverlay.classList.add('hidden');
+      hamburgerIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+      sidebarToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+
+    const openSidebar = () => {
+      sidebar.classList.add('sidebar-open');
+      sidebar.classList.remove('hidden');
+      sidebarOverlay.classList.remove('hidden');
+      hamburgerIcon?.classList.add('hidden');
+      closeIcon?.classList.remove('hidden');
+      sidebarToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const toggleSidebar = () => {
+      const isOpen = sidebar.classList.contains('sidebar-open');
+      if (isOpen) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
+    };
+
+    sidebarToggle.addEventListener('click', toggleSidebar);
+    sidebarOverlay.addEventListener('click', closeSidebar);
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeSidebar);
+    });
+
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    const handleViewportChange = (event) => {
+      if (event.matches) closeSidebar();
+    };
+
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handleViewportChange);
+    } else {
+      mediaQuery.addListener(handleViewportChange);
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeSidebar();
+    });
   }
 
-  sidebarToggle?.addEventListener('click', toggleSidebar);
-  sidebarOverlay?.addEventListener('click', toggleSidebar);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupHeader, { once: true });
+  } else {
+    setupHeader();
+  }
 </script>

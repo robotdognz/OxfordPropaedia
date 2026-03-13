@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
+import InlineReferenceText from './InlineReferenceText';
 
 export interface OutlineItem {
   level: string;
@@ -12,18 +13,25 @@ export interface OutlineTreeProps {
   items: OutlineItem[];
   sectionCode: string;
   baseUrl: string;
+  currentHref?: string;
 }
 
 /**
  * Renders a recursive outline tree. Top-level (major) items are expanded by default
  * and shown with a prominent badge. Sub-levels are collapsible.
  */
-export default function OutlineTree({ items, sectionCode, baseUrl }: OutlineTreeProps) {
+export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }: OutlineTreeProps) {
   return (
     <nav aria-label={`Outline for section ${sectionCode}`} class="font-serif">
       <ul class="space-y-1" role="tree">
         {items.map((item, i) => (
-          <OutlineNode key={`${sectionCode}-${item.level}-${i}`} item={item} depth={0} />
+          <OutlineNode
+            key={`${sectionCode}-${item.level}-${i}`}
+            item={item}
+            depth={0}
+            baseUrl={baseUrl}
+            currentHref={currentHref}
+          />
         ))}
       </ul>
     </nav>
@@ -33,9 +41,11 @@ export default function OutlineTree({ items, sectionCode, baseUrl }: OutlineTree
 interface OutlineNodeProps {
   item: OutlineItem;
   depth: number;
+  baseUrl: string;
+  currentHref?: string;
 }
 
-function OutlineNode({ item, depth }: OutlineNodeProps) {
+function OutlineNode({ item, depth, baseUrl, currentHref }: OutlineNodeProps) {
   const isMajor = item.levelType === 'major';
   const hasChildren = item.children.length > 0;
 
@@ -59,7 +69,10 @@ function OutlineNode({ item, depth }: OutlineNodeProps) {
       <div
         class={`flex items-start gap-2 py-1 rounded hover:bg-gray-50 transition-colors ${hasChildren ? 'cursor-pointer' : ''}`}
         style={{ paddingLeft: `${indentPx}px` }}
-        onClick={toggle}
+        onClick={(e) => {
+          if ((e.target as HTMLElement | null)?.closest('a')) return;
+          toggle();
+        }}
         onKeyDown={(e: KeyboardEvent) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -81,7 +94,7 @@ function OutlineNode({ item, depth }: OutlineNodeProps) {
 
         {/* Text */}
         <span class={`${isMajor ? 'font-semibold text-gray-900' : 'text-gray-700'} text-sm leading-snug`}>
-          {item.text}
+          <InlineReferenceText text={item.text} baseUrl={baseUrl} currentHref={currentHref} />
         </span>
 
         {/* Expand/collapse chevron */}
@@ -104,7 +117,13 @@ function OutlineNode({ item, depth }: OutlineNodeProps) {
       {hasChildren && isExpanded && (
         <ul class="space-y-0.5" role="group">
           {item.children.map((child, i) => (
-            <OutlineNode key={`${child.level}-${i}`} item={child} depth={depth + 1} />
+            <OutlineNode
+              key={`${child.level}-${i}`}
+              item={child}
+              depth={depth + 1}
+              baseUrl={baseUrl}
+              currentHref={currentHref}
+            />
           ))}
         </ul>
       )}
