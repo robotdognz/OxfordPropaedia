@@ -1,7 +1,8 @@
 import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import InlineReferenceText from './InlineReferenceText';
 import { OUTLINE_VSI_SELECT_EVENT, type OutlineSelectionDetail } from '../../utils/vsiOutlineFilter';
+import { outlineAnchorId } from '../../utils/helpers';
 
 export interface OutlineItem {
   level: string;
@@ -22,6 +23,36 @@ export interface OutlineTreeProps {
  * and shown with a prominent badge. Sub-levels are collapsible.
  */
 export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }: OutlineTreeProps) {
+  useEffect(() => {
+    const scrollToHashTarget = (behavior: ScrollBehavior = 'auto') => {
+      const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+      if (!hash) return;
+
+      const scroll = () => {
+        const target = document.getElementById(hash);
+        if (target instanceof HTMLElement) {
+          target.scrollIntoView({ behavior, block: 'start' });
+        }
+      };
+
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(scroll);
+      });
+
+      // Give nested outline branches time to expand after hydration.
+      window.setTimeout(scroll, 80);
+    };
+
+    scrollToHashTarget();
+
+    const handleHashChange = () => scrollToHashTarget('smooth');
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   return (
     <nav aria-label={`Outline for section ${sectionCode}`} class="font-serif">
       <ul class="space-y-1" role="tree">
@@ -54,9 +85,32 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
   const isMajor = item.levelType === 'major';
   const hasChildren = item.children.length > 0;
   const outlinePath = [...pathSegments, item.level].join('.');
+  const anchorId = outlineAnchorId(sectionCode, outlinePath);
+  const nodeRef = useRef<HTMLLIElement>(null);
 
   // Major (top-level) items default open; sub-items default closed
   const [isExpanded, setIsExpanded] = useState(isMajor);
+
+  useEffect(() => {
+    if (!hasChildren) return;
+
+    const expandForHashTarget = () => {
+      const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+      if (!hash) return;
+
+      const target = document.getElementById(hash);
+      if (target && nodeRef.current?.contains(target)) {
+        setIsExpanded(true);
+      }
+    };
+
+    expandForHashTarget();
+    window.addEventListener('hashchange', expandForHashTarget);
+
+    return () => {
+      window.removeEventListener('hashchange', expandForHashTarget);
+    };
+  }, [hasChildren]);
 
   const toggle = () => {
     if (hasChildren) setIsExpanded((prev) => !prev);
@@ -84,8 +138,12 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
     : 'inline-flex items-center justify-center w-5 h-5 font-mono text-xs text-gray-500 flex-shrink-0';
 
   return (
-    <li role="treeitem" aria-expanded={hasChildren ? isExpanded : undefined}>
-      <div class="flex items-start gap-2 py-1 rounded hover:bg-gray-50 transition-colors" style={{ paddingLeft: `${indentPx}px` }}>
+    <li ref={nodeRef} role="treeitem" aria-expanded={hasChildren ? isExpanded : undefined}>
+      <div
+        id={anchorId}
+        class="flex items-start gap-2 py-1 rounded scroll-mt-24 hover:bg-gray-50 transition-colors"
+        style={{ paddingLeft: `${indentPx}px` }}
+      >
         {/* Tree line indicator for sub-items */}
         {depth > 0 && (
           <span class="inline-block w-3 flex-shrink-0 text-gray-300 select-none" aria-hidden="true">
@@ -152,8 +210,8 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
       </div>
 
       {/* Children */}
-      {hasChildren && isExpanded && (
-        <ul class="space-y-0.5" role="group">
+      {hasChildren && (
+        <ul class={isExpanded ? 'space-y-0.5' : 'hidden space-y-0.5'} role="group">
           {item.children.map((child, i) => (
             <OutlineNode
               key={`${child.level}-${i}`}

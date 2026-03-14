@@ -49,11 +49,31 @@ const reverseRefs = (crossReferences.reverseIndex as Record<string, any[]>)[sect
 
 // Try to load VSI mappings for this section
 let vsiMappings: any[] = [];
+const normalizeVsiText = (text: string) => text.replace(/\s+/g, ' ').trim().toLowerCase();
+
 try {
   const allVsiMappings = await getCollection('vsi-mappings');
+  const vsiCatalogCollections = await getCollection('vsi');
+  const vsiCatalog = vsiCatalogCollections.flatMap((entry) => entry.data.titles);
+  const vsiCatalogLookup = new Map(
+    vsiCatalog.map((entry) => [
+      `${normalizeVsiText(entry.title)}::${normalizeVsiText(entry.author)}`,
+      entry,
+    ])
+  );
   const mapping = allVsiMappings.find((m) => m.data.sectionCode === section.sectionCode);
   if (mapping) {
-    vsiMappings = mapping.data.mappings;
+    vsiMappings = mapping.data.mappings.map((entry) => {
+      const catalogEntry = vsiCatalogLookup.get(
+        `${normalizeVsiText(entry.vsiTitle)}::${normalizeVsiText(entry.vsiAuthor)}`
+      );
+
+      return {
+        ...entry,
+        publicationYear: catalogEntry?.publicationYear,
+        edition: catalogEntry?.edition,
+      };
+    });
   }
 } catch {
   // No VSI mappings yet

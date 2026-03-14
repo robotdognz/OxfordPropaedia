@@ -51,5 +51,34 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </div>
 
     <Footer />
+
+    <script is:inline define:vars={{ pagefindHighlightScript: `${base}/pagefind/pagefind-highlight.js` }}>
+      const highlightParam = 'pagefind-highlight';
+      const highlightClassName = 'pagefind-highlight';
+      const highlightTerms = new URLSearchParams(window.location.search).getAll(highlightParam);
+
+      if (highlightTerms.length > 0) {
+        import(pagefindHighlightScript)
+          .then(({ PagefindHighlight }) => {
+            new PagefindHighlight({
+              highlightParam,
+              markOptions: {
+                className: highlightClassName,
+                exclude: ['[data-pagefind-ignore]', '[data-pagefind-ignore] *'],
+              },
+            });
+
+            requestAnimationFrame(() => {
+              const firstHighlight = document.querySelector(`.${highlightClassName}`);
+              if (firstHighlight instanceof HTMLElement) {
+                firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            });
+          })
+          .catch(() => {
+            // Pagefind assets are not available in dev mode.
+          });
+      }
+    </script>
   </body>
 </html>

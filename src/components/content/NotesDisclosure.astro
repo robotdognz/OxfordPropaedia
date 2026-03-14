@@ -1,0 +1,30 @@
+---
+import InlineReferenceText from './InlineReferenceText';
+
+interface Props {
+  paragraphs: string[];
+  baseUrl: string;
+  currentHref: string;
+  label?: string;
+}
+
+const { paragraphs, baseUrl, currentHref, label = 'Notes' } = Astro.props;
+---
+
+{paragraphs.length > 0 && (
+  <section class="mb-10">
+    <details class="group">
+      <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center gap-2">
+        <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        {label}
+      </summary>
+      <div class="mt-4 pl-7 prose-propaedia">
+        {paragraphs.map((paragraph) => (
+          <p><InlineReferenceText text={paragraph} baseUrl={baseUrl} currentHref={currentHref} /></p>
+        ))}
+      </div>
+    </details>
+  </section>
+)}

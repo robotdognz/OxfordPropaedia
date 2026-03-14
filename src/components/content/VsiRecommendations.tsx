@@ -18,6 +18,8 @@ export interface VsiMapping {
   vsiTitle: string;
   vsiAuthor: string;
   rationale: string;
+  publicationYear?: number;
+  edition?: number;
 }
 
 export interface VsiRecommendationsProps {
@@ -109,6 +111,8 @@ export default function VsiRecommendations({ mappings, sectionCode }: VsiRecomme
                   title={mapping.vsiTitle}
                   author={mapping.vsiAuthor}
                   rationale={mapping.rationale}
+                  publicationYear={mapping.publicationYear}
+                  edition={mapping.edition}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />

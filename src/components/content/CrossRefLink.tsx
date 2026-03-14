@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { normalizeOutlinePath, sectionReferenceUrl } from '../../utils/helpers';
 
 export interface CrossRefLinkProps {
   targetSection: string;
@@ -12,14 +13,12 @@ export interface CrossRefLinkProps {
  * in monospace, linking to the section page.
  */
 export default function CrossRefLink({ targetSection, targetPath, baseUrl }: CrossRefLinkProps) {
-  // Normalize the section code for URLs: slashes become hyphens
-  const normalizedCode = targetSection.replace(/\//g, '-');
   const displayCode = targetSection.replace(/-/g, '/');
+  const normalizedTargetPath = targetPath ? normalizeOutlinePath(targetPath) : '';
+  const href = sectionReferenceUrl(targetSection, normalizedTargetPath, baseUrl);
 
-  const href = `${baseUrl}/section/${normalizedCode}`;
-
-  const label = targetPath
-    ? `${displayCode}.${targetPath}`
+  const label = normalizedTargetPath
+    ? `${displayCode}.${normalizedTargetPath}`
     : displayCode;
 
   return (

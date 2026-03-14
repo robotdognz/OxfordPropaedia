@@ -3,7 +3,7 @@
  * Converts slashes to hyphens: "96/10" → "96-10"
  */
 export function normalizeSectionCode(code: string): string {
-  return code.replace(/\//g, '-');
+  return code.replace(/\s+/g, '').replace(/\//g, '-');
 }
 
 /**
@@ -18,6 +18,29 @@ export function displaySectionCode(code: string): string {
  */
 export function sectionUrl(sectionCode: string, base = ''): string {
   return `${base}/section/${normalizeSectionCode(sectionCode)}`;
+}
+
+export function normalizeOutlinePath(path: string): string {
+  return path.replace(/\s+/g, '').replace(/^\.+/, '').replace(/\.+$/, '');
+}
+
+export function outlineAnchorId(sectionCode: string, outlinePath: string): string {
+  const normalizedPath = normalizeOutlinePath(outlinePath);
+
+  return `outline-${normalizeSectionCode(sectionCode).toLowerCase()}-${normalizedPath
+    .split('.')
+    .filter(Boolean)
+    .map((segment) => segment.toLowerCase())
+    .join('-')}`;
+}
+
+export function sectionReferenceUrl(sectionCode: string, outlinePath = '', base = ''): string {
+  const url = sectionUrl(sectionCode, base);
+  const normalizedPath = normalizeOutlinePath(outlinePath);
+
+  return normalizedPath
+    ? `${url}#${outlineAnchorId(sectionCode, normalizedPath)}`
+    : url;
 }
 
 /**

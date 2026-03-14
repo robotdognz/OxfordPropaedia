@@ -6,6 +6,7 @@ export interface SearchDialogProps {
 }
 
 const OPEN_SEARCH_EVENT = 'propaedia:open-search';
+const PAGEFIND_HIGHLIGHT_PARAM = 'pagefind-highlight';
 
 export function openSearchDialog() {
   if (typeof document !== 'undefined') {
@@ -15,8 +16,106 @@ export function openSearchDialog() {
 
 interface SearchResult {
   url: string;
-  meta: { title?: string };
+  title: string;
+  pageTitle?: string;
   excerpt: string;
+}
+
+interface PagefindSubResult {
+  title?: string;
+  url: string;
+  excerpt: string;
+}
+
+interface PagefindResultData {
+  url: string;
+  meta?: { title?: string };
+  excerpt: string;
+  raw_content?: string;
+  sub_results?: PagefindSubResult[];
+}
+
+function stripHtml(html: string) {
+  return html.replace(/<[^>]+>/g, ' ');
+}
+
+function normalizeText(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s/-]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getQueryTokens(query: string) {
+  return normalizeText(query)
+    .split(' ')
+    .filter((token) => token.length > 1);
+}
+
+function matchesQuery(text: string, tokens: string[]) {
+  if (tokens.length === 0) return true;
+  const normalized = normalizeText(text);
+  return tokens.every((token) => normalized.includes(token));
+}
+
+function buildHighlightedUrl(rawUrl: string, query: string) {
+  const highlightTerms = normalizeText(query)
+    .split(' ')
+    .filter(Boolean);
+
+  if (highlightTerms.length === 0) {
+    return rawUrl;
+  }
+
+  try {
+    const isAbsolute = /^(https?:)?\/\//.test(rawUrl);
+    const url = new URL(isAbsolute ? rawUrl : `https://example.com${rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`}`);
+    highlightTerms.forEach((term) => url.searchParams.append(PAGEFIND_HIGHLIGHT_PARAM, term));
+    return isAbsolute ? url.toString() : url.toString().replace(/^https:\/\/example\.com/, '');
+  } catch {
+    return rawUrl;
+  }
+}
+
+function flattenResults(items: PagefindResultData[], query: string) {
+  const tokens = getQueryTokens(query);
+  const flattened = items.flatMap((item) => {
+    const pageTitle = item.meta?.title || 'Untitled';
+    const pageSearchableText = [pageTitle, stripHtml(item.excerpt), item.raw_content ?? ''].join(' ');
+    const subResults = (item.sub_results ?? [])
+      .filter((subResult) => {
+        const subText = [pageTitle, subResult.title ?? '', stripHtml(subResult.excerpt)].join(' ');
+        return matchesQuery(subText, tokens);
+      })
+      .map((subResult) => ({
+        url: buildHighlightedUrl(subResult.url, query),
+        title: subResult.title || pageTitle,
+        pageTitle: subResult.title && subResult.title !== pageTitle ? pageTitle : undefined,
+        excerpt: subResult.excerpt,
+      }));
+
+    if (subResults.length > 0) {
+      return subResults;
+    }
+
+    if (!matchesQuery(pageSearchableText, tokens)) {
+      return [];
+    }
+
+    return [{
+      url: buildHighlightedUrl(item.url, query),
+      title: pageTitle,
+      excerpt: item.excerpt,
+    }];
+  });
+
+  const seen = new Set<string>();
+  return flattened.filter((item) => {
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
 }
 
 export default function SearchDialog({ baseUrl }: SearchDialogProps) {
@@ -35,6 +134,10 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
     (async () => {
       try {
         const pf = await import(/* @vite-ignore */ `${baseUrl}/pagefind/pagefind.js`);
+        await pf.options({
+          highlightParam: PAGEFIND_HIGHLIGHT_PARAM,
+          ranking: { termSimilarity: 0 },
+        });
         await pf.init();
         setPagefind(pf);
       } catch {
@@ -53,14 +156,22 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
     let cancelled = false;
     setLoading(true);
     (async () => {
-      const search = await pagefind.search(query);
-      const items = await Promise.all(
-        search.results.slice(0, 20).map((r: any) => r.data())
-      );
-      if (!cancelled) {
-        setResults(items);
-        setSelectedIndex(0);
-        setLoading(false);
+      try {
+        const search = await pagefind.search(query);
+        const items = await Promise.all(
+          search.results.slice(0, 20).map((r: any) => r.data())
+        );
+        if (!cancelled) {
+          setResults(flattenResults(items, query));
+          setSelectedIndex(0);
+          setLoading(false);
+        }
+      } catch {
+        if (!cancelled) {
+          setResults([]);
+          setSelectedIndex(0);
+          setLoading(false);
+        }
       }
     })();
     return () => { cancelled = true; };
@@ -187,9 +298,12 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
                       i === selectedIndex ? 'bg-indigo-50' : 'hover:bg-gray-50'
                     }`}
                   >
-                    <p class="text-sm font-semibold text-gray-900 font-sans">
-                      {result.meta?.title || 'Untitled'}
-                    </p>
+                    <p class="text-sm font-semibold text-gray-900 font-sans">{result.title}</p>
+                    {result.pageTitle && (
+                      <p class="mt-1 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
+                        {result.pageTitle}
+                      </p>
+                    )}
                     <p
                       class="text-xs text-gray-500 mt-1 line-clamp-2"
                       dangerouslySetInnerHTML={{ __html: result.excerpt }}

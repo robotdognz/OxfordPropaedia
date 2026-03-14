@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
-import InlineReferenceText from '../../components/content/InlineReferenceText';
+import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import Sidebar from '../../components/layout/Sidebar.astro';
 import navigation from '../../data/navigation.json';
 import { getCollection, render } from 'astro:content';
@@ -110,32 +110,11 @@ const breadcrumbItems = [
         </section>
       )}
 
-      {part.headnote && part.headnote.length > 0 && (
-        <section class="mb-10">
-          <details class="group rounded-xl border border-gray-200 bg-gray-50">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6 [&::-webkit-details-marker]:hidden">
-              <h2 class="text-2xl font-sans font-bold text-gray-800">Info</h2>
-              <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 transition group-open:rotate-180">
-                <svg
-                  class="h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  aria-hidden="true"
-                >
-                  <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </span>
-            </summary>
-            <div class="px-6 pb-6 prose-propaedia max-w-none">
-              {part.headnote.map((paragraph) => (
-                <p><InlineReferenceText text={paragraph} baseUrl={base} currentHref={`${base}/part/${part.partNumber}`} /></p>
-              ))}
-            </div>
-          </details>
-        </section>
-      )}
+      <NotesDisclosure
+        paragraphs={part.headnote ?? []}
+        baseUrl={base}
+        currentHref={`${base}/part/${part.partNumber}`}
+      />
 
       <!-- Divisions List -->
       <section>

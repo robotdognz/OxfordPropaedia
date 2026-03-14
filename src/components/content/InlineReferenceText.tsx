@@ -1,5 +1,10 @@
 import { Fragment } from 'preact';
-import { divisionUrl, partUrl, sectionUrl } from '../../utils/helpers';
+import {
+  divisionUrl,
+  normalizeOutlinePath,
+  partUrl,
+  sectionReferenceUrl,
+} from '../../utils/helpers';
 
 export interface InlineReferenceTextProps {
   text: string;
@@ -34,12 +39,12 @@ const ROMAN_TO_NUMBER: Record<string, number> = {
   X: 10,
 };
 
-const REFERENCE_PATTERN =
-  /Division\s+(?<divisionOfPartRoman>[IVX]+)\s+of\s+Part\s+(?<divisionOfPartWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)|Part\s+(?<partDivisionWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten),\s*Division\s+(?<partDivisionRoman>[IVX]+)|Part\s+(?<singlePartWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)|(?<sectionCode>10\/\d{2}|(?<!\d)\d\s*\d\s*\d(?:\/\d{1,2})?(?!\d))(?<sectionPath>\s*(?:\.[A-Za-z0-9]+)+\.?)?/g;
-
-function normalizeSectionCode(code: string) {
-  return code.replace(/\s+/g, '');
-}
+const SECTION_PATH_SEGMENT = String.raw`(?:\d{1,3}|[IVXLCDM]{2,}|[ivxlcdm]{2,}|[A-Z](?![a-z])|[a-z](?![a-z]))`;
+const SECTION_CODE_PATTERN = String.raw`(?<!\d)(?:\d(?:\s*\d){2}|\d(?:\s*\d){1,2}\s*\/\s*\d(?:\s*\d)?)(?!\s*\d)`;
+const REFERENCE_PATTERN = new RegExp(
+  String.raw`Division\s+(?<divisionOfPartRoman>[IVX]+)\s+of\s+Part\s+(?<divisionOfPartWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)|Part\s+(?<partDivisionWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten),\s*Division\s+(?<partDivisionRoman>[IVX]+)|Part\s+(?<singlePartWord>One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)|(?<sectionCode>${SECTION_CODE_PATTERN})(?<sectionPath>\s*\.\s*${SECTION_PATH_SEGMENT}(?:\.${SECTION_PATH_SEGMENT})*\.?)?`,
+  'g'
+);
 
 function divisionId(partNumber: number, divisionNumber: number) {
   return `${partNumber}-${String(divisionNumber).padStart(2, '0')}`;
@@ -70,7 +75,11 @@ function referenceHref(groups: Record<string, string | undefined>, baseUrl: stri
   }
 
   if (groups.sectionCode) {
-    return sectionUrl(normalizeSectionCode(groups.sectionCode), baseUrl);
+    return sectionReferenceUrl(
+      groups.sectionCode,
+      groups.sectionPath ? normalizeOutlinePath(groups.sectionPath) : '',
+      baseUrl
+    );
   }
 
   return null;
