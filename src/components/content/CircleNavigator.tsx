@@ -1005,10 +1005,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
 
         <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-[1.1rem] sm:px-5 sm:py-3">
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-            Current emphasis
+            Circle of learning
           </p>
           <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-            Your curriculum is built around {centerPart.title.toLowerCase()} with {topPart.title.toLowerCase()} as the secondary emphasis.
+            You've chosen to begin your learning from {centerPart.title}, with {topPart.title} as the current focus.
+            {suggestedSections.length > 0 && centerPartNumber !== topPartNumber && (
+              <>{' '}See where these fields connect below.</>
+            )}
           </p>
           {suggestedSections.length > 0 && (() => {
             const isDirect = suggestedSections[0].isDirect;

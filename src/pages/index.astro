@@ -478,16 +478,21 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                         {figure.kind === 'segments' &&
                           figure.order.map((partNumber, index) => {
                             const segmentAngle = 360 / figure.order.length;
-                            const start = index * segmentAngle;
+                            const offset = -segmentAngle / 2;
+                            const start = index * segmentAngle + offset;
                             const end = start + segmentAngle;
-                            const label = labelPosition(110, 110, 72, start, end);
+                            const midAngle = (start + end) / 2;
+                            const distFromTop = Math.abs(((midAngle % 360) + 360) % 360 > 180 ? 360 - ((midAngle % 360) + 360) % 360 : ((midAngle % 360) + 360) % 360);
+                            const topWeight = Math.max(0, 1 - distFromTop / segmentAngle);
+                            const innerR = 42 - 4 * topWeight;
+                            const outerR = 96 + 6 * topWeight;
+                            const label = labelPosition(110, 110, (innerR + outerR) / 2 + 2, start, end);
                             return (
                               <g>
                                 <path
-                                  d={donutSlicePath(110, 110, 42, 96, start, end)}
+                                  d={donutSlicePath(110, 110, innerR, outerR, start - 0.3, end + 0.3)}
                                   fill={partColorHex[partNumber]}
-                                  stroke="white"
-                                  stroke-width="2"
+                                  stroke="none"
                                 />
                                 <text
                                   x={label.x}
@@ -534,16 +539,21 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                         {figure.kind === 'hub' &&
                           figure.outer.map((partNumber, index) => {
                             const segmentAngle = 360 / figure.outer.length;
-                            const start = index * segmentAngle;
+                            const offset = -segmentAngle / 2;
+                            const start = index * segmentAngle + offset;
                             const end = start + segmentAngle;
-                            const label = labelPosition(110, 110, 76, start, end);
+                            const midAngle = (start + end) / 2;
+                            const distFromTop = Math.abs(((midAngle % 360) + 360) % 360 > 180 ? 360 - ((midAngle % 360) + 360) % 360 : ((midAngle % 360) + 360) % 360);
+                            const topWeight = Math.max(0, 1 - distFromTop / segmentAngle);
+                            const innerR = 56 - 4 * topWeight;
+                            const outerR = 98 + 5 * topWeight;
+                            const label = labelPosition(110, 110, (innerR + outerR) / 2 + 2, start, end);
                             return (
                               <g>
                                 <path
-                                  d={donutSlicePath(110, 110, 56, 98, start, end)}
+                                  d={donutSlicePath(110, 110, innerR, outerR, start - 0.3, end + 0.3)}
                                   fill={partColorHex[partNumber]}
-                                  stroke="white"
-                                  stroke-width="2"
+                                  stroke="none"
                                 />
                                 <text
                                   x={label.x}
@@ -614,16 +624,21 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                         {figure.kind === 'hub' &&
                           figure.outer.map((partNumber, index) => {
                             const segmentAngle = 360 / figure.outer.length;
-                            const start = index * segmentAngle;
+                            const offset = -segmentAngle / 2;
+                            const start = index * segmentAngle + offset;
                             const end = start + segmentAngle;
-                            const label = labelPosition(110, 110, 76, start, end);
+                            const midAngle = (start + end) / 2;
+                            const distFromTop = Math.abs(((midAngle % 360) + 360) % 360 > 180 ? 360 - ((midAngle % 360) + 360) % 360 : ((midAngle % 360) + 360) % 360);
+                            const topWeight = Math.max(0, 1 - distFromTop / segmentAngle);
+                            const innerR = 56 - 4 * topWeight;
+                            const outerR = 98 + 5 * topWeight;
+                            const label = labelPosition(110, 110, (innerR + outerR) / 2 + 2, start, end);
                             return (
                               <g>
                                 <path
-                                  d={donutSlicePath(110, 110, 56, 98, start, end)}
+                                  d={donutSlicePath(110, 110, innerR, outerR, start - 0.3, end + 0.3)}
                                   fill={partColorHex[partNumber]}
-                                  stroke="white"
-                                  stroke-width="2"
+                                  stroke="none"
                                 />
                                 <text
                                   x={label.x}
