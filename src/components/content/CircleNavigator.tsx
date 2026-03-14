@@ -369,7 +369,6 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     // Apply the state change
     setRotationDegrees(newRotation);
     setCenterPartNumber(partNumber);
-    setSelectedPartNumber(partNumber);
     setCenterPreviewPartNumber(null);
 
     // Start post-swap animation
@@ -694,22 +693,30 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const segmentInnerRadius = lerp(INNER_RADIUS, INNER_RADIUS - 10, selTopWeight);
             const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, selTopWeight);
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const isMorphing = morphPartNumber === selectedOuterPart.partNumber && morphT > 0;
 
             return (
               <path
-                d={donutSlicePath(
-                  CENTER,
-                  CENTER,
-                  segmentInnerRadius + outlineInset,
-                  segmentOuterRadius - outlineInset,
-                  startAngle,
-                  endAngle
-                )}
+                d={isMorphing
+                  ? morphedDonutPath(
+                      CENTER, CENTER,
+                      segmentInnerRadius + outlineInset, segmentOuterRadius - outlineInset,
+                      startAngle, endAngle,
+                      CENTER_DISC_RADIUS - outlineInset,
+                      morphT
+                    )
+                  : donutSlicePath(
+                      CENTER, CENTER,
+                      segmentInnerRadius + outlineInset, segmentOuterRadius - outlineInset,
+                      startAngle, endAngle
+                    )
+                }
                 fill="none"
                 stroke="#0f172a"
                 stroke-width={SELECTION_OUTLINE_WIDTH}
                 stroke-linejoin="round"
                 pointer-events="none"
+                opacity={isMorphing ? Math.max(0, 1 - morphT * 1.5) : 1}
               />
             );
           })()}
@@ -814,7 +821,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   : 1
               }
             />
-            {selectedPartNumber === centerPart.partNumber && (
+            {(selectedPartNumber === centerPart.partNumber && !(morphT > 0 && morphPartNumber !== null && morphPartNumber !== selectedPartNumber)) || (morphPartNumber === selectedPartNumber && morphT > 0.5) ? (
               <circle
                 cx={CENTER}
                 cy={CENTER}
@@ -824,7 +831,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                 stroke-width={SELECTION_OUTLINE_WIDTH}
                 pointer-events="none"
               />
-            )}
+            ) : null}
             <g opacity={
               postSwapT > 0
                 ? Math.max(0, 1 - postSwapT * 1.5)
