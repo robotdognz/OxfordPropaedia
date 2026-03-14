@@ -24,6 +24,26 @@ export interface OutlineTreeProps {
  */
 export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }: OutlineTreeProps) {
   useEffect(() => {
+    const highlightTimers = new WeakMap<HTMLElement, number>();
+
+    const flashTarget = (target: HTMLElement) => {
+      const existingTimer = highlightTimers.get(target);
+      if (existingTimer) {
+        window.clearTimeout(existingTimer);
+      }
+
+      target.classList.remove('outline-target-flash');
+      void target.offsetWidth;
+      target.classList.add('outline-target-flash');
+
+      const timer = window.setTimeout(() => {
+        target.classList.remove('outline-target-flash');
+        highlightTimers.delete(target);
+      }, 2200);
+
+      highlightTimers.set(target, timer);
+    };
+
     const scrollToHashTarget = (behavior: ScrollBehavior = 'auto') => {
       const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
       if (!hash) return;
@@ -32,6 +52,7 @@ export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }
         const target = document.getElementById(hash);
         if (target instanceof HTMLElement) {
           target.scrollIntoView({ behavior, block: 'start' });
+          flashTarget(target);
         }
       };
 

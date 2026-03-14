@@ -23,4 +23,32 @@
     @apply prose-headings:font-sans prose-headings:text-gray-900;
     @apply prose-a:text-blue-700 prose-a:no-underline hover:prose-a:underline;
   }
+
+  .outline-target-flash {
+    animation: outline-target-flash 2.2s ease-out;
+    border-radius: 0.5rem;
+  }
+}
+
+@keyframes outline-target-flash {
+  0% {
+    background-color: rgb(254 243 199 / 0.95);
+    box-shadow:
+      inset 0 0 0 1px rgb(245 158 11 / 0.55),
+      0 0 0 3px rgb(253 230 138 / 0.55);
+  }
+
+  60% {
+    background-color: rgb(254 249 195 / 0.7);
+    box-shadow:
+      inset 0 0 0 1px rgb(245 158 11 / 0.3),
+      0 0 0 1px rgb(253 230 138 / 0.35);
+  }
+
+  100% {
+    background-color: transparent;
+    box-shadow:
+      inset 0 0 0 1px transparent,
+      0 0 0 0 transparent;
+  }
 }
