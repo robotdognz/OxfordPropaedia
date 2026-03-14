@@ -14,10 +14,11 @@ export interface CircleNavigatorProps {
 }
 
 const VIEWBOX_SIZE = 680;
+const VIEWBOX_INSET = 30;
 const CENTER = VIEWBOX_SIZE / 2;
 const OUTER_RADIUS = 168;
 const INNER_RADIUS = 96;
-const LABEL_RADIUS = 268;
+const LABEL_RADIUS = 250;
 const CONNECTOR_RADIUS = 192;
 const SEGMENT_COUNT = 9;
 const SEGMENT_ANGLE = 360 / SEGMENT_COUNT;
@@ -164,10 +165,11 @@ function angleFromPoint(x: number, y: number): number {
 
 function svgPoint(svg: SVGSVGElement, clientX: number, clientY: number) {
   const bounds = svg.getBoundingClientRect();
+  const vbSize = VIEWBOX_SIZE - VIEWBOX_INSET * 2;
 
   return {
-    x: ((clientX - bounds.left) / bounds.width) * VIEWBOX_SIZE,
-    y: ((clientY - bounds.top) / bounds.height) * VIEWBOX_SIZE,
+    x: VIEWBOX_INSET + ((clientX - bounds.left) / bounds.width) * vbSize,
+    y: VIEWBOX_INSET + ((clientY - bounds.top) / bounds.height) * vbSize,
   };
 }
 
@@ -215,6 +217,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   } | null>(null);
   const postSwapAnimRef = useRef<number | null>(null);
   const skipMorphReverseRef = useRef(false);
+  const snapTargetRef = useRef<number | null>(null);
   const snapAnimRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -239,6 +242,8 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       morphAnimRef.current = requestAnimationFrame(animate);
     } else if (skipMorphReverseRef.current) {
       skipMorphReverseRef.current = false;
+    } else if (morphT < 0.01) {
+      // Already at 0, no animation needed
     } else {
       morphFromTRef.current = morphT;
       morphStartTimeRef.current = performance.now();
@@ -361,7 +366,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     // Cancel any in-flight animations
     if (postSwapAnimRef.current) cancelAnimationFrame(postSwapAnimRef.current);
     if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
-    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
+    cancelSnapAnimation();
     setMorphT(0);
     setMorphPartNumber(null);
     skipMorphReverseRef.current = true;
@@ -391,10 +396,23 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     postSwapAnimRef.current = requestAnimationFrame(animate);
   };
 
+  const cancelSnapAnimation = () => {
+    if (snapAnimRef.current) {
+      cancelAnimationFrame(snapAnimRef.current);
+      snapAnimRef.current = null;
+      if (snapTargetRef.current !== null) {
+        setRotationDegrees(snapTargetRef.current);
+        snapTargetRef.current = null;
+      }
+    }
+  };
+
   const animateSnapRotation = (from: number, to: number) => {
-    if (snapAnimRef.current) cancelAnimationFrame(snapAnimRef.current);
+    cancelSnapAnimation();
+    snapTargetRef.current = to;
     if (Math.abs(from - to) < 0.5) {
-      setRotationDegrees(to);
+      if (from !== to) setRotationDegrees(to);
+      snapTargetRef.current = null;
       return;
     }
     const startTime = performance.now();
@@ -407,6 +425,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
         snapAnimRef.current = requestAnimationFrame(animate);
       } else {
         snapAnimRef.current = null;
+        snapTargetRef.current = null;
       }
     };
     snapAnimRef.current = requestAnimationFrame(animate);
@@ -435,12 +454,12 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     }
 
     dragStateRef.current = null;
-    setCenterPreviewPartNumber(null);
+    if (centerPreviewPartNumber !== null) setCenterPreviewPartNumber(null);
   };
 
   const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGElement>) => {
     if (!svgRef.current) return;
-    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
+    cancelSnapAnimation();
 
     event.stopPropagation();
 
@@ -466,7 +485,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
-    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
+    cancelSnapAnimation();
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
@@ -562,7 +581,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       <div class="sm:rounded-[1.75rem] sm:border sm:border-slate-200 sm:bg-slate-50 sm:p-6">
         <svg
           ref={svgRef}
-          viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
+          viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
           class="mx-auto aspect-square w-full max-w-[38rem] cursor-grab touch-none select-none active:cursor-grabbing sm:max-w-[42rem]"
           style={{ overflow: 'visible' }}
           role="img"
