@@ -405,10 +405,16 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             return (
               <g key={part.partNumber}>
                 <path
+                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, LABEL_RADIUS, startAngle, endAngle)}
+                  fill="transparent"
+                  class="cursor-pointer"
+                  onPointerDown={handleSegmentPointerDown(part.partNumber)}
+                />
+                <path
                   d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius, startAngle, endAngle)}
                   fill={part.colorHex}
-                  stroke={isTop ? '#e2e8f0' : '#ffffff'}
-                  stroke-width={isTop ? 5 : 2}
+                  stroke="none"
+                  stroke-width={0}
                   stroke-linejoin="round"
                   paint-order="stroke fill"
                   opacity={isSelected || isTop ? 1 : 0.94}
