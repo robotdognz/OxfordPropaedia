@@ -62,6 +62,37 @@ function donutSlicePath(
   ].join(' ');
 }
 
+function lerp(a: number, b: number, t: number): number {
+  return a + (b - a) * t;
+}
+
+function easeOutCubic(t: number): number {
+  return 1 - Math.pow(1 - t, 3);
+}
+
+const MORPH_DURATION_MS = 300;
+
+function morphedDonutPath(
+  cx: number,
+  cy: number,
+  srcInner: number,
+  srcOuter: number,
+  srcStartAngle: number,
+  srcEndAngle: number,
+  targetRadius: number,
+  t: number
+): string {
+  const innerR = lerp(srcInner, 1, t);
+  const outerR = lerp(srcOuter, targetRadius, t);
+  const srcSpan = srcEndAngle - srcStartAngle;
+  const span = lerp(srcSpan, 359.9, t);
+  const srcMid = (srcStartAngle + srcEndAngle) / 2;
+  const midAngle = lerp(srcMid, srcMid, t);
+  const startA = midAngle - span / 2;
+  const endA = midAngle + span / 2;
+  return donutSlicePath(cx, cy, innerR, outerR, startA, endA);
+}
+
 function normalizeDegrees(value: number): number {
   let nextValue = value;
 
@@ -171,6 +202,61 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const [rotationDegrees, setRotationDegrees] = useState(0);
   const [selectedPartNumber, setSelectedPartNumber] = useState(DEFAULT_CENTER_PART);
   const [centerPreviewPartNumber, setCenterPreviewPartNumber] = useState<number | null>(null);
+  const [morphT, setMorphT] = useState(0);
+  const [morphPartNumber, setMorphPartNumber] = useState<number | null>(null);
+  const morphAnimRef = useRef<number | null>(null);
+  const morphStartTimeRef = useRef(0);
+  const morphFromTRef = useRef(0);
+
+  const [postSwapT, setPostSwapT] = useState(0);
+  const [postSwapState, setPostSwapState] = useState<{
+    oldCenterPartNumber: number;
+    angularOffsets: Map<number, number>;
+  } | null>(null);
+  const postSwapAnimRef = useRef<number | null>(null);
+  const skipMorphReverseRef = useRef(false);
+
+  useEffect(() => {
+    if (morphAnimRef.current) {
+      cancelAnimationFrame(morphAnimRef.current);
+      morphAnimRef.current = null;
+    }
+
+    if (centerPreviewPartNumber !== null) {
+      setMorphPartNumber(centerPreviewPartNumber);
+      morphFromTRef.current = morphT;
+      morphStartTimeRef.current = performance.now();
+      const animate = (now: number) => {
+        const elapsed = now - morphStartTimeRef.current;
+        const rawT = Math.min(elapsed / MORPH_DURATION_MS, 1);
+        const nextT = lerp(morphFromTRef.current, 1, easeOutCubic(rawT));
+        setMorphT(nextT);
+        if (rawT < 1) {
+          morphAnimRef.current = requestAnimationFrame(animate);
+        }
+      };
+      morphAnimRef.current = requestAnimationFrame(animate);
+    } else if (skipMorphReverseRef.current) {
+      skipMorphReverseRef.current = false;
+    } else {
+      morphFromTRef.current = morphT;
+      morphStartTimeRef.current = performance.now();
+      const animate = (now: number) => {
+        const elapsed = now - morphStartTimeRef.current;
+        const rawT = Math.min(elapsed / (MORPH_DURATION_MS * 0.5), 1);
+        const nextT = lerp(morphFromTRef.current, 0, easeOutCubic(rawT));
+        setMorphT(nextT);
+        if (rawT < 1) {
+          morphAnimRef.current = requestAnimationFrame(animate);
+        }
+      };
+      morphAnimRef.current = requestAnimationFrame(animate);
+    }
+
+    return () => {
+      if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
+    };
+  }, [centerPreviewPartNumber]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -243,10 +329,54 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   const movePartToCenter = (partNumber: number) => {
     if (partNumber === centerPartNumber) return;
+
+    // Compute old and new outer parts to find angular shifts
+    const oldOuter = parts.filter((p) => p.partNumber !== centerPartNumber);
+    const newOuter = parts.filter((p) => p.partNumber !== partNumber);
+    const oldIndexMap = new Map(oldOuter.map((p, i) => [p.partNumber, i]));
+    const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
+
+    const offsets = new Map<number, number>();
+    for (const p of newOuter) {
+      if (oldIndexMap.has(p.partNumber)) {
+        const shift = (oldIndexMap.get(p.partNumber)! - newIndexMap.get(p.partNumber)!) * SEGMENT_ANGLE;
+        if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
+      }
+    }
+
+    const oldCenter = centerPartNumber;
+
+    // Cancel any in-flight animations
+    if (postSwapAnimRef.current) cancelAnimationFrame(postSwapAnimRef.current);
+    if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
+    setMorphT(0);
+    setMorphPartNumber(null);
+    skipMorphReverseRef.current = true;
+
+    // Apply the state change
     setRotationDegrees(snapRotation(rotationDegrees));
     setCenterPartNumber(partNumber);
     setSelectedPartNumber(partNumber);
     setCenterPreviewPartNumber(null);
+
+    // Start post-swap animation
+    setPostSwapState({ oldCenterPartNumber: oldCenter, angularOffsets: offsets });
+    setPostSwapT(1);
+
+    const startTime = performance.now();
+    const POST_SWAP_DURATION = 400;
+    const animate = (now: number) => {
+      const elapsed = now - startTime;
+      const rawT = Math.min(elapsed / POST_SWAP_DURATION, 1);
+      setPostSwapT(Math.max(0, 1 - easeOutCubic(rawT)));
+      if (rawT < 1) {
+        postSwapAnimRef.current = requestAnimationFrame(animate);
+      } else {
+        setPostSwapState(null);
+        setPostSwapT(0);
+      }
+    };
+    postSwapAnimRef.current = requestAnimationFrame(animate);
   };
 
   const finishDrag = (pointerId: number) => {
@@ -386,7 +516,11 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           <circle cx={CENTER} cy={CENTER} r={OUTER_RADIUS + 22} fill="#f8fafc" />
 
           {outerParts.map((part, index) => {
-            const centerAngle = rotationDegrees + index * SEGMENT_ANGLE;
+            const swapOffset = postSwapState && postSwapT > 0
+              ? (postSwapState.angularOffsets.get(part.partNumber) ?? 0) * postSwapT
+              : 0;
+            const isPostSwapMorphing = postSwapState?.oldCenterPartNumber === part.partNumber && postSwapT > 0;
+            const centerAngle = rotationDegrees + index * SEGMENT_ANGLE + swapOffset;
             const startAngle = centerAngle - SEGMENT_ANGLE / 2;
             const endAngle = centerAngle + SEGMENT_ANGLE / 2;
             const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, centerAngle);
@@ -417,8 +551,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   stroke-width={0}
                   stroke-linejoin="round"
                   paint-order="stroke fill"
-                  opacity={isSelected || isTop ? 1 : 0.94}
-                  class="cursor-grab active:cursor-grabbing transition-opacity"
+                  opacity={
+                    part.partNumber === morphPartNumber && morphT > 0
+                      ? Math.max(0, 1 - morphT * 1.5)
+                      : isPostSwapMorphing
+                        ? Math.max(0, 1 - postSwapT * 1.5)
+                        : (isSelected || isTop ? 1 : 0.94)
+                  }
+                  class="cursor-grab active:cursor-grabbing"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
 
@@ -508,21 +648,59 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             );
           })()}
 
-          {previewCenterPart && (
-            <>
-              <circle
-                cx={CENTER}
-                cy={CENTER}
-                r={(CENTER_DISC_RADIUS + INNER_RADIUS) / 2}
-                fill="none"
-                stroke={previewCenterPart.colorHex}
-                stroke-width="4"
-                stroke-dasharray="6 6"
-                class="animate-pulse"
-                opacity="0.9"
+          {morphT > 0 && morphPartNumber !== null && (() => {
+            const mPart = outerParts.find((p) => p.partNumber === morphPartNumber);
+            if (!mPart) return null;
+            const mIndex = outerParts.findIndex((p) => p.partNumber === morphPartNumber);
+            const mCenterAngle = rotationDegrees + mIndex * SEGMENT_ANGLE;
+            const mStartAngle = mCenterAngle - SEGMENT_ANGLE / 2;
+            const mEndAngle = mCenterAngle + SEGMENT_ANGLE / 2;
+            const mIsTop = topPart.partNumber === mPart.partNumber;
+            const mInner = mIsTop ? INNER_RADIUS - 10 : INNER_RADIUS;
+            const mOuter = mIsTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+
+            return (
+              <path
+                d={morphedDonutPath(
+                  CENTER, CENTER,
+                  mInner, mOuter,
+                  mStartAngle, mEndAngle,
+                  CENTER_DISC_RADIUS,
+                  morphT
+                )}
+                fill={mPart.colorHex}
+                pointer-events="none"
               />
-            </>
-          )}
+            );
+          })()}
+
+          {postSwapState && postSwapT > 0 && (() => {
+            const oldCP = parts.find((p) => p.partNumber === postSwapState.oldCenterPartNumber);
+            if (!oldCP) return null;
+            const pIndex = outerParts.findIndex((p) => p.partNumber === oldCP.partNumber);
+            if (pIndex === -1) return null;
+            const pOffset = (postSwapState.angularOffsets.get(oldCP.partNumber) ?? 0) * postSwapT;
+            const pCenterAngle = rotationDegrees + pIndex * SEGMENT_ANGLE + pOffset;
+            const pStartAngle = pCenterAngle - SEGMENT_ANGLE / 2;
+            const pEndAngle = pCenterAngle + SEGMENT_ANGLE / 2;
+            const pIsTop = topPart.partNumber === oldCP.partNumber;
+            const pInner = pIsTop ? INNER_RADIUS - 10 : INNER_RADIUS;
+            const pOuter = pIsTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+
+            return (
+              <path
+                d={morphedDonutPath(
+                  CENTER, CENTER,
+                  pInner, pOuter,
+                  pStartAngle, pEndAngle,
+                  CENTER_DISC_RADIUS,
+                  postSwapT
+                )}
+                fill={oldCP.colorHex}
+                pointer-events="none"
+              />
+            );
+          })()}
 
           <g
             role="button"
@@ -562,6 +740,11 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               cy={CENTER}
               r={CENTER_DISC_RADIUS}
               fill={centerDisplayPart.colorHex}
+              opacity={
+                postSwapT > 0
+                  ? Math.max(0, 1 - postSwapT * 1.5)
+                  : 1
+              }
             />
             {selectedPartNumber === centerPart.partNumber && (
               <circle
@@ -574,6 +757,11 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                 pointer-events="none"
               />
             )}
+            <g opacity={
+              postSwapT > 0
+                ? Math.max(0, 1 - postSwapT * 1.5)
+                : 1
+            }>
             <text
               x={CENTER}
               y={CENTER - 30}
@@ -612,6 +800,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                 {line}
               </text>
             ))}
+            </g>
           </g>
         </svg>
 
