@@ -694,6 +694,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, selTopWeight);
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
             const isMorphing = morphPartNumber === selectedOuterPart.partNumber && morphT > 0;
+            const isPostSwapPart = postSwapState?.oldCenterPartNumber === selectedOuterPart.partNumber && postSwapT > 0;
 
             return (
               <path
@@ -716,7 +717,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                 stroke-width={SELECTION_OUTLINE_WIDTH}
                 stroke-linejoin="round"
                 pointer-events="none"
-                opacity={isMorphing ? Math.max(0, 1 - morphT * 1.5) : 1}
+                opacity={isMorphing ? Math.max(0, 1 - morphT * 1.5) : isPostSwapPart ? 0 : 1}
               />
             );
           })()}
