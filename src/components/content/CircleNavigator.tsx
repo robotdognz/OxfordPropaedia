@@ -159,6 +159,7 @@ type DragState = {
 export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
+  const [centerHasFocus, setCenterHasFocus] = useState(false);
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState(DEFAULT_CENTER_PART);
   const [rotationDegrees, setRotationDegrees] = useState(0);
@@ -481,9 +482,19 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             role="button"
             tabIndex={0}
             class="cursor-pointer"
+            style={{ outline: 'none' }}
+            onPointerDown={(event) => {
+              event.preventDefault();
+              setCenterHasFocus(false);
+              setSelectedPartNumber(centerPart.partNumber);
+            }}
             onClick={() => setSelectedPartNumber(centerPart.partNumber)}
             onMouseEnter={() => setSelectedPartNumber(centerPart.partNumber)}
-            onFocus={() => setSelectedPartNumber(centerPart.partNumber)}
+            onFocus={() => {
+              setCenterHasFocus(true);
+              setSelectedPartNumber(centerPart.partNumber);
+            }}
+            onBlur={() => setCenterHasFocus(false)}
             onKeyDown={(event) => {
               if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();
@@ -491,6 +502,18 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               }
             }}
           >
+            {centerHasFocus && (
+              <circle
+                cx={CENTER}
+                cy={CENTER}
+                r={INNER_RADIUS + 4}
+                fill="none"
+                stroke="#0f172a"
+                stroke-width="4"
+                opacity="0.35"
+                pointer-events="none"
+              />
+            )}
             <circle
               cx={CENTER}
               cy={CENTER}
