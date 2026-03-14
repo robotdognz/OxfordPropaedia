@@ -224,7 +224,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
   const centerTitleLines = wrapLabel(centerDisplayPart.title, 14, 2);
-  const emphasisSummary = `You are focusing on ${centerPart.title}, with ${topPart.title} given the strongest emphasis at the top of the circle.`;
+  const emphasisSummary = `Centered on ${centerPart.title}, with ${topPart.title} emphasized at the top.`;
 
   const rotatePartToTop = (partNumber: number) => {
     const partIndex = outerParts.findIndex((part) => part.partNumber === partNumber);
@@ -236,6 +236,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   const movePartToCenter = (partNumber: number) => {
     if (partNumber === centerPartNumber) return;
+    setRotationDegrees(snapRotation(rotationDegrees));
     setCenterPartNumber(partNumber);
     setSelectedPartNumber(partNumber);
     setCenterPreviewPartNumber(null);
@@ -327,24 +328,37 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   };
 
   return (
-    <div class="grid gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
-      <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-4 sm:p-6">
-        <div class="mb-5 rounded-[1.4rem] border border-slate-200 bg-white px-5 py-4 shadow-sm">
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Current emphasis
-          </p>
-          <p class="mt-2 text-lg font-serif font-semibold leading-7 text-slate-900">
-            {emphasisSummary}
-          </p>
-          <p class="mt-2 text-sm leading-6 text-slate-600">
-            Centre: {centerPart.partName}: {centerPart.title}. Top emphasis: {topPart.partName}: {topPart.title}.
+    <div class="grid gap-5 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
+      <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-3 sm:rounded-[1.75rem] sm:p-6">
+        <div class="mb-4 rounded-[1.1rem] border border-slate-200 bg-white/95 px-4 py-3 shadow-sm sm:mb-5 sm:px-5">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div class="min-w-0">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
+                Current emphasis
+              </p>
+              <p class="mt-1 text-sm font-serif font-semibold leading-6 text-slate-900 sm:text-base sm:leading-7">
+                {emphasisSummary}
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-700 sm:text-sm">
+              <span class="rounded-full bg-slate-100 px-3 py-1.5">
+                Centre: {centerPart.partName}
+              </span>
+              <span class="rounded-full bg-slate-100 px-3 py-1.5">
+                Top: {topPart.partName}
+              </span>
+            </div>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-slate-500 sm:text-sm sm:leading-6">
+            Use the centre to set the main field of study, and the top to choose the strongest secondary emphasis.
           </p>
         </div>
 
         <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
-          class="mx-auto aspect-square w-full max-w-[42rem] touch-none select-none"
+          class="mx-auto aspect-square w-full max-w-[38rem] touch-none select-none sm:max-w-[42rem]"
           style={{ overflow: 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
@@ -526,7 +540,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           </g>
         </svg>
 
-        <div class="mt-4 min-h-[2.5rem] text-center text-sm font-semibold text-slate-700">
+        <div class="mt-3 min-h-[2rem] text-center text-sm font-semibold text-slate-700 sm:mt-4 sm:min-h-[2.5rem]">
           {previewCenterPart ? (
             <span>
               Release to place {previewCenterPart.partName}: {previewCenterPart.title} at the center.
@@ -537,16 +551,16 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
         </div>
       </div>
 
-      <div class="space-y-4">
-        <div class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="space-y-3 sm:space-y-4">
+        <div class="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm sm:rounded-[1.75rem] sm:p-6">
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Selected Part
           </p>
-          <h3 class="mt-3 text-2xl font-serif font-bold text-slate-900">
+          <h3 class="mt-2 text-xl font-serif font-bold text-slate-900 sm:mt-3 sm:text-2xl">
             {selectedPart.partName}: {selectedPart.title}
           </h3>
 
-          <div class="mt-5 space-y-3 text-sm leading-7 text-slate-600">
+          <div class="mt-4 space-y-2 text-sm leading-6 text-slate-600 sm:mt-5 sm:space-y-3 sm:leading-7">
             <p>
               <span class="font-semibold text-slate-800">At the top:</span> {topPart.partName}: {topPart.title}
             </p>
@@ -555,10 +569,10 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             </p>
           </div>
 
-          <div class="mt-6 flex flex-wrap gap-2">
+          <div class="mt-5 grid gap-2 sm:mt-6 sm:flex sm:flex-wrap">
             <a
               href={selectedPart.href}
-              class="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
+              class="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 sm:w-auto sm:py-2"
             >
               Open {selectedPart.partName}
             </a>
@@ -567,7 +581,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               <button
                 type="button"
                 onClick={() => movePartToCenter(selectedPart.partNumber)}
-                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto sm:py-2"
               >
                 Move to centre
               </button>
@@ -577,7 +591,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               <button
                 type="button"
                 onClick={() => rotatePartToTop(selectedPart.partNumber)}
-                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto sm:py-2"
               >
                 Rotate to top
               </button>
@@ -585,11 +599,11 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           </div>
         </div>
 
-        <div class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm sm:rounded-[1.75rem] sm:p-6">
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             How to use the circle
           </p>
-          <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+          <ul class="mt-3 space-y-3 text-sm leading-6 text-slate-600 sm:mt-4 sm:leading-7">
             <li>Rotate the ring to change which part stands at the top, so you can see the same outline with a different emphasis.</li>
             <li>Pull a part inward to place it at the centre when you want that field to act as the organising focus for everything around it.</li>
             <li>Use the floating labels or the selected-part controls to move from this conceptual map straight into the part you want to study.</li>
