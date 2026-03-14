@@ -6,6 +6,7 @@ import {
   writeChecklistState,
 } from '../../utils/readingChecklist';
 import {
+  buildMacropaediaCoverageSnapshot,
   type MacropaediaAggregateEntry,
   type ReadingSectionSummary,
 } from '../../utils/readingData';
@@ -103,8 +104,11 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
     setVisibleCount(INITIAL_VISIBLE_COUNT);
   }, [query, statusFilter, sortMode]);
 
+  const completedChecklistKeys = new Set(
+    Object.keys(checklistState).filter((key) => checklistState[key] === true)
+  );
+  const coverage = buildMacropaediaCoverageSnapshot(entries, completedChecklistKeys);
   const completedCount = entries.filter((entry) => Boolean(checklistState[entry.checklistKey])).length;
-  const totalSections = new Set(entries.flatMap((entry) => entry.sections.map((section) => section.sectionCode))).size;
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
@@ -117,10 +121,11 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
   );
   const visibleEntries = filteredEntries.slice(0, visibleCount);
   const canShowMore = visibleEntries.length < filteredEntries.length;
+  const bestNextArticle = coverage.path[0] ?? null;
 
   return (
     <div class="space-y-8">
-      <section class="grid gap-4 md:grid-cols-3">
+      <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <div class="rounded-xl border border-gray-200 bg-white p-5">
           <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Articles</p>
           <p class="mt-2 font-serif text-3xl text-gray-900">{entries.length}</p>
@@ -132,10 +137,99 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
           <p class="mt-2 text-sm text-gray-600">Uses the same checklist state as the section reading boxes.</p>
         </div>
         <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Sections Represented</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">{totalSections}</p>
-          <p class="mt-2 text-sm text-gray-600">Sections that carry at least one Macropaedia article reference.</p>
+          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
+          <p class="mt-2 font-serif text-3xl text-gray-900">
+            {coverage.currentlyCoveredSections} / {coverage.totalCoveredSections}
+          </p>
+          <p class="mt-2 text-sm text-gray-600">Sections with at least one Macropaedia article already covered by your checked list.</p>
         </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
+          <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Article</p>
+          {bestNextArticle ? (
+            <>
+              <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextArticle.title}</p>
+              <p class="mt-3 text-sm text-amber-900">
+                Adds {bestNextArticle.newSectionCount} new sections, {bestNextArticle.sectionCount} total.
+              </p>
+            </>
+          ) : (
+            <p class="mt-2 text-sm text-amber-900">No unread article adds any further section coverage right now.</p>
+          )}
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-6">
+        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div class="max-w-3xl">
+            <h2 class="font-serif text-2xl text-gray-900">Knowledge-Spread Path</h2>
+            <p class="mt-2 text-sm text-gray-700">
+              This path greedily picks unread Macropaedia articles that add the largest number of not-yet-covered
+              sections, starting from what you have already checked off.
+            </p>
+          </div>
+          <p class="text-sm text-amber-900">
+            {coverage.remainingSections} sections still uncovered by checked Macropaedia articles
+          </p>
+        </div>
+
+        {coverage.path.length > 0 ? (
+          <ol class="mt-6 grid gap-4 lg:grid-cols-2">
+            {coverage.path.map((step, index) => {
+              const isChecked = Boolean(checklistState[step.checklistKey]);
+
+              return (
+                <li key={step.checklistKey} class="rounded-xl border border-amber-200 bg-white p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
+                        Step {index + 1}
+                      </p>
+                      <h3 class="mt-1 font-serif text-xl leading-tight text-gray-900">{step.title}</h3>
+                    </div>
+                    <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
+                      <input
+                        type="checkbox"
+                        checked={isChecked}
+                        onChange={(event) => {
+                          writeChecklistState(
+                            step.checklistKey,
+                            (event.currentTarget as HTMLInputElement).checked
+                          );
+                        }}
+                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                        aria-label={`Mark ${step.title} as completed`}
+                      />
+                      Done
+                    </label>
+                  </div>
+
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
+                      +{step.newSectionCount} new sections
+                    </span>
+                    <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
+                      {step.sectionCount} total sections
+                    </span>
+                    <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
+                      {step.cumulativeCoveredSectionCount} covered after this step
+                    </span>
+                  </div>
+
+                  <SectionLinks
+                    sections={step.newSections}
+                    baseUrl={baseUrl}
+                    label={`Show the ${step.newSectionCount} new sections`}
+                  />
+                </li>
+              );
+            })}
+          </ol>
+        ) : (
+          <div class="mt-6 rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-gray-600">
+            No further spread path is available from unchecked articles. Either you have already covered every mapped
+            section, or the remaining unread articles only overlap with sections already covered.
+          </div>
+        )}
       </section>
 
       <section class="rounded-2xl border border-gray-200 bg-white p-6">

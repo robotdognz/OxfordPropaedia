@@ -75,6 +75,24 @@ export interface VsiCoverageSnapshot {
   path: VsiCoveragePathStep[];
 }
 
+export interface MacropaediaCoveragePathStep {
+  title: string;
+  checklistKey: string;
+  sectionCount: number;
+  newSectionCount: number;
+  cumulativeCoveredSectionCount: number;
+  newSections: ReadingSectionSummary[];
+}
+
+export interface MacropaediaCoverageSnapshot {
+  totalArticles: number;
+  completedArticles: number;
+  totalCoveredSections: number;
+  currentlyCoveredSections: number;
+  remainingSections: number;
+  path: MacropaediaCoveragePathStep[];
+}
+
 const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
 
 function normalizeLookupText(value: string): string {
@@ -252,13 +270,70 @@ export function buildVsiCoverageSnapshot(
   completedChecklistKeys: Set<string>,
   pathLength = 12
 ): VsiCoverageSnapshot {
+  const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
+
+  return {
+    totalTitles: snapshot.totalEntries,
+    completedTitles: snapshot.completedEntries,
+    totalCoveredSections: snapshot.totalCoveredSections,
+    currentlyCoveredSections: snapshot.currentlyCoveredSections,
+    remainingSections: snapshot.remainingSections,
+    path: snapshot.path.map(({ entry, ...rest }) => ({
+      ...entry,
+      ...rest,
+    })),
+  };
+}
+
+export function buildMacropaediaCoverageSnapshot(
+  entries: MacropaediaAggregateEntry[],
+  completedChecklistKeys: Set<string>,
+  pathLength = 12
+): MacropaediaCoverageSnapshot {
+  const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
+
+  return {
+    totalArticles: snapshot.totalEntries,
+    completedArticles: snapshot.completedEntries,
+    totalCoveredSections: snapshot.totalCoveredSections,
+    currentlyCoveredSections: snapshot.currentlyCoveredSections,
+    remainingSections: snapshot.remainingSections,
+    path: snapshot.path.map(({ entry, ...rest }) => ({
+      ...entry,
+      ...rest,
+    })),
+  };
+}
+
+function buildCoverageSnapshot<TEntry extends {
+  title: string;
+  checklistKey: string;
+  sectionCount: number;
+  sections: ReadingSectionSummary[];
+}>(
+  entries: TEntry[],
+  completedChecklistKeys: Set<string>,
+  pathLength: number
+): {
+  totalEntries: number;
+  completedEntries: number;
+  totalCoveredSections: number;
+  currentlyCoveredSections: number;
+  remainingSections: number;
+  path: Array<{
+    entry: TEntry;
+    newSectionCount: number;
+    cumulativeCoveredSectionCount: number;
+    newSections: ReadingSectionSummary[];
+  }>;
+} {
   const coveredSectionCodes = new Set<string>();
-  let completedTitles = 0;
+  let completedEntries = 0;
 
   for (const entry of entries) {
     if (!completedChecklistKeys.has(entry.checklistKey)) continue;
 
-    completedTitles += 1;
+    completedEntries += 1;
     for (const section of entry.sections) {
       coveredSectionCodes.add(section.sectionCode);
     }
@@ -274,10 +349,15 @@ export function buildVsiCoverageSnapshot(
   const currentlyCoveredSections = coveredSectionCodes.size;
 
   const remainingEntries = entries.filter((entry) => !completedChecklistKeys.has(entry.checklistKey));
-  const path: VsiCoveragePathStep[] = [];
+  const path: Array<{
+    entry: TEntry;
+    newSectionCount: number;
+    cumulativeCoveredSectionCount: number;
+    newSections: ReadingSectionSummary[];
+  }> = [];
 
   while (path.length < pathLength) {
-    let bestEntry: VsiAggregateEntry | null = null;
+    let bestEntry: TEntry | null = null;
     let bestNewSections: ReadingSectionSummary[] = [];
 
     for (const entry of remainingEntries) {
@@ -322,14 +402,7 @@ export function buildVsiCoverageSnapshot(
     }
 
     path.push({
-      title: bestEntry.title,
-      author: bestEntry.author,
-      number: bestEntry.number,
-      subject: bestEntry.subject,
-      publicationYear: bestEntry.publicationYear,
-      edition: bestEntry.edition,
-      checklistKey: bestEntry.checklistKey,
-      sectionCount: bestEntry.sectionCount,
+      entry: bestEntry,
       newSectionCount: bestNewSections.length,
       cumulativeCoveredSectionCount: coveredSectionCodes.size,
       newSections: [...bestNewSections].sort(sectionSort),
@@ -337,8 +410,8 @@ export function buildVsiCoverageSnapshot(
   }
 
   return {
-    totalTitles: entries.length,
-    completedTitles,
+    totalEntries: entries.length,
+    completedEntries,
     totalCoveredSections: totalSectionCodes.size,
     currentlyCoveredSections,
     remainingSections: totalSectionCodes.size - currentlyCoveredSections,
