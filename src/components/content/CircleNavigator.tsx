@@ -609,11 +609,13 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
             const isSelected = selectedPartNumber === part.partNumber;
             const isTop = topPart.partNumber === part.partNumber;
-            const segmentInnerRadius = isTop ? INNER_RADIUS - 10 : INNER_RADIUS;
-            const segmentOuterRadius = isTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
-            const numberPosition = polar(CENTER, CENTER, isTop ? 138 : 134, centerAngle);
+            const distFromTop = angularDistance(centerAngle, 0);
+            const topWeight = Math.max(0, 1 - distFromTop / SEGMENT_ANGLE);
+            const segmentInnerRadius = lerp(INNER_RADIUS, INNER_RADIUS - 10, topWeight);
+            const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, topWeight);
+            const numberPosition = polar(CENTER, CENTER, lerp(134, 138, topWeight), centerAngle);
             const connectorStart = polar(CENTER, CENTER, segmentOuterRadius + 6, centerAngle);
-            const connectorEnd = polar(CENTER, CENTER, isTop ? CONNECTOR_RADIUS + 8 : CONNECTOR_RADIUS, centerAngle);
+            const connectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, topWeight), centerAngle);
 
             return (
               <g key={part.partNumber}>
@@ -635,7 +637,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                       ? Math.max(0, 1 - morphT * 1.5)
                       : isPostSwapMorphing
                         ? Math.max(0, 1 - postSwapT * 1.5)
-                        : (isSelected || isTop ? 1 : 0.94)
+                        : (isSelected ? 1 : lerp(0.94, 1, topWeight))
                   }
                   class="cursor-grab active:cursor-grabbing"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
@@ -664,15 +666,15 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                     y1={connectorStart.y}
                     x2={connectorEnd.x}
                     y2={connectorEnd.y}
-                    stroke={isSelected || isTop ? part.colorHex : '#cbd5e1'}
-                    stroke-width={isSelected || isTop ? 2.5 : 1.5}
+                    stroke={isSelected || topWeight > 0.5 ? part.colorHex : '#cbd5e1'}
+                    stroke-width={isSelected ? 2.5 : lerp(1.5, 2.5, topWeight)}
                   />
                   <circle cx={connectorEnd.x} cy={connectorEnd.y} r={3.5} fill={part.colorHex} />
                   <text
                     x={labelX}
                     y={labelPosition.y - (labelLines.length * 8)}
-                    fill={isSelected || isTop ? '#0f172a' : '#334155'}
-                    font-size={isTop ? '12' : '11'}
+                    fill={isSelected || topWeight > 0.5 ? '#0f172a' : '#334155'}
+                    font-size={`${lerp(11, 12, topWeight)}`}
                     font-family="Inter, sans-serif"
                     font-weight="700"
                     letter-spacing="0.12em"
@@ -685,8 +687,8 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                       <tspan
                         x={labelX}
                         dy={lineIndex === 0 ? 16 : 14}
-                        font-size={isTop ? '14' : '13'}
-                        font-weight={isSelected || isTop ? '700' : '600'}
+                        font-size={`${lerp(13, 14, topWeight)}`}
+                        font-weight={isSelected || topWeight > 0.5 ? '700' : '600'}
                         letter-spacing="0"
                       >
                         {line}
@@ -700,12 +702,16 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
           {selectedOuterPart && (() => {
             const selectedIndex = outerParts.findIndex((part) => part.partNumber === selectedOuterPart.partNumber);
-            const centerAngle = rotationDegrees + selectedIndex * SEGMENT_ANGLE;
+            const selSwapOffset = postSwapState && postSwapT > 0
+              ? (postSwapState.angularOffsets.get(selectedOuterPart.partNumber) ?? 0) * postSwapT
+              : 0;
+            const centerAngle = rotationDegrees + selectedIndex * SEGMENT_ANGLE + selSwapOffset;
             const startAngle = centerAngle - SEGMENT_ANGLE / 2;
             const endAngle = centerAngle + SEGMENT_ANGLE / 2;
-            const isTop = topPart.partNumber === selectedOuterPart.partNumber;
-            const segmentInnerRadius = isTop ? INNER_RADIUS - 10 : INNER_RADIUS;
-            const segmentOuterRadius = isTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+            const selDistFromTop = angularDistance(centerAngle, 0);
+            const selTopWeight = Math.max(0, 1 - selDistFromTop / SEGMENT_ANGLE);
+            const segmentInnerRadius = lerp(INNER_RADIUS, INNER_RADIUS - 10, selTopWeight);
+            const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, selTopWeight);
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
 
             return (
@@ -734,9 +740,10 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const mCenterAngle = rotationDegrees + mIndex * SEGMENT_ANGLE;
             const mStartAngle = mCenterAngle - SEGMENT_ANGLE / 2;
             const mEndAngle = mCenterAngle + SEGMENT_ANGLE / 2;
-            const mIsTop = topPart.partNumber === mPart.partNumber;
-            const mInner = mIsTop ? INNER_RADIUS - 10 : INNER_RADIUS;
-            const mOuter = mIsTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+            const mDistFromTop = angularDistance(mCenterAngle, 0);
+            const mTopWeight = Math.max(0, 1 - mDistFromTop / SEGMENT_ANGLE);
+            const mInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, mTopWeight);
+            const mOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, mTopWeight);
 
             return (
               <path
@@ -762,9 +769,10 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const pCenterAngle = rotationDegrees + pIndex * SEGMENT_ANGLE + pOffset;
             const pStartAngle = pCenterAngle - SEGMENT_ANGLE / 2;
             const pEndAngle = pCenterAngle + SEGMENT_ANGLE / 2;
-            const pIsTop = topPart.partNumber === oldCP.partNumber;
-            const pInner = pIsTop ? INNER_RADIUS - 10 : INNER_RADIUS;
-            const pOuter = pIsTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+            const pDistFromTop = angularDistance(pCenterAngle, 0);
+            const pTopWeight = Math.max(0, 1 - pDistFromTop / SEGMENT_ANGLE);
+            const pInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, pTopWeight);
+            const pOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, pTopWeight);
 
             return (
               <path
