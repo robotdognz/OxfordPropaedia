@@ -541,7 +541,24 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
     const nextAngle = angleFromPoint(point.x, point.y);
     const delta = normalizeDegrees(nextAngle - dragState.startAngle);
-    setRotationDegrees(dragState.startRotation + delta);
+    const currentRotation = dragState.startRotation + delta;
+    setRotationDegrees(currentRotation);
+
+    // Update activePartNumber to whichever segment the pointer is nearest
+    if (!dragState.rotateOnly && nextRadius <= LABEL_RADIUS) {
+      const pointerAngle = nextAngle;
+      let bestPart = dragState.activePartNumber;
+      let bestDist = Infinity;
+      for (let i = 0; i < outerParts.length; i++) {
+        const segAngle = currentRotation + i * SEGMENT_ANGLE;
+        const dist = angularDistance(pointerAngle, segAngle);
+        if (dist < bestDist) {
+          bestDist = dist;
+          bestPart = outerParts[i].partNumber;
+        }
+      }
+      dragState.activePartNumber = bestPart;
+    }
   };
 
   const handlePointerUp = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
