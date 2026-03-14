@@ -5,11 +5,39 @@
   <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="text-center space-y-2">
       <p class="text-sm text-gray-500 font-sans">
-        Based on the Encyclopaedia Britannica Propaedia (2005 edition)
+        Based on the Encyclopaedia Britannica Propaedia
       </p>
       <p class="text-xs text-gray-400 font-sans">
         Oxford VSI recommendations curated for self-directed learners
       </p>
     </div>
+
+    <div id="install-prompt" class="mt-6 mx-auto max-w-md rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 font-sans">
+      <strong>Install as App</strong>
+      <details class="mt-2">
+        <summary class="cursor-pointer text-slate-600 hover:text-slate-800">Android (Chrome)</summary>
+        <ol class="mt-2 ml-4 list-decimal text-slate-600 space-y-1 text-xs">
+          <li>Tap the menu icon (three dots) in the top right</li>
+          <li>Tap "Add to Home screen"</li>
+          <li>Tap "Add" to confirm</li>
+        </ol>
+      </details>
+      <details class="mt-2">
+        <summary class="cursor-pointer text-slate-600 hover:text-slate-800">iPhone (Safari)</summary>
+        <ol class="mt-2 ml-4 list-decimal text-slate-600 space-y-1 text-xs">
+          <li>Tap the Share button (square with arrow) at the bottom</li>
+          <li>Scroll down and tap "Add to Home Screen"</li>
+          <li>Tap "Add" in the top right</li>
+        </ol>
+      </details>
+      <p class="mt-3 text-xs text-slate-400">Once installed, Propaedia works offline.</p>
+    </div>
   </div>
 </footer>
+
+<script is:inline>
+  if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+    const el = document.getElementById('install-prompt');
+    if (el) el.style.display = 'none';
+  }
+</script>

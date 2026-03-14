@@ -20,7 +20,13 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/icon.svg`} />
+    <link rel="apple-touch-icon" href={`${base}/icon-192.png`} />
+    <link rel="manifest" href={`${base}/manifest.json`} />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -51,6 +57,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </div>
 
     <Footer />
+
+    <script is:inline define:vars={{ swPath: `${base}/sw.js` }}>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(swPath)
+          .then((reg) => console.log('SW registered', reg.scope))
+          .catch((err) => console.log('SW failed:', err));
+      }
+    </script>
 
     <script is:inline define:vars={{ pagefindHighlightScript: `${base}/pagefind/pagefind-highlight.js` }}>
       const highlightParam = 'pagefind-highlight';
