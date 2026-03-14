@@ -1,832 +1,4 @@
 {
-  "7-10": [
-    {
-      "sourceSection": "10/23",
-      "targetSection": "735",
-      "sourcePath": "A.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "735",
-      "sourcePath": "A.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "712",
-      "sourcePath": "D",
-      "targetPath": "A.6"
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "735",
-      "sourcePath": "F",
-      "targetPath": "A"
-    },
-    {
-      "sourceSection": "10/37",
-      "targetSection": "731",
-      "sourcePath": "C.2",
-      "targetPath": "B"
-    },
-    {
-      "sourceSection": "10/37",
-      "targetSection": "712",
-      "sourcePath": "D.2",
-      "targetPath": "B"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "B.1",
-      "targetPath": "H.2.c"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "B.2",
-      "targetPath": "H.2.c"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "B.3",
-      "targetPath": "H.2.c"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "B.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "B.7",
-      "targetPath": "F"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "C.3.a",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "C.4.a",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "735",
-      "sourcePath": "C.4.b",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "711",
-      "targetSection": "10/37",
-      "sourcePath": "C.4.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "712",
-      "targetSection": "10/23",
-      "sourcePath": "B.3.b",
-      "targetPath": "E"
-    },
-    {
-      "sourceSection": "712",
-      "targetSection": "10/37",
-      "sourcePath": "C.2",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "721",
-      "targetSection": "10/37",
-      "sourcePath": "E",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "722",
-      "targetSection": "10/37",
-      "sourcePath": "E.2",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "723",
-      "targetSection": "10/31",
-      "sourcePath": "A",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "723",
-      "targetSection": "10/37",
-      "sourcePath": "H.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "731",
-      "targetSection": "10/34",
-      "sourcePath": "I.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "732",
-      "targetSection": "10/35",
-      "sourcePath": "D.4",
-      "targetPath": "C.4"
-    },
-    {
-      "sourceSection": "733",
-      "targetSection": "10/37",
-      "sourcePath": "C",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "735",
-      "targetSection": "10/23",
-      "sourcePath": "A",
-      "targetPath": "F"
-    },
-    {
-      "sourceSection": "735",
-      "targetSection": "10/23",
-      "sourcePath": "D",
-      "targetPath": "A.6"
-    },
-    {
-      "sourceSection": "737",
-      "targetSection": "10/37",
-      "sourcePath": "C.2",
-      "targetPath": ""
-    }
-  ],
-  "1-10": [
-    {
-      "sourceSection": "10/23",
-      "targetSection": "126",
-      "sourcePath": "H.1",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "126",
-      "sourcePath": "H.2",
-      "targetPath": "F"
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "126",
-      "sourcePath": "H.3",
-      "targetPath": "D"
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "124",
-      "sourcePath": "H.4",
-      "targetPath": "A.9"
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "127",
-      "sourcePath": "H.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "131",
-      "sourcePath": "H.6",
-      "targetPath": "D"
-    },
-    {
-      "sourceSection": "10/23",
-      "targetSection": "111",
-      "sourcePath": "H.8",
-      "targetPath": "A.4.C"
-    },
-    {
-      "sourceSection": "10/32",
-      "targetSection": "121",
-      "sourcePath": "D",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "111",
-      "targetSection": "10/32",
-      "sourcePath": "F.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "112",
-      "targetSection": "10/32",
-      "sourcePath": "I.4.d",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "121",
-      "targetSection": "10/32",
-      "sourcePath": "D.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "122",
-      "targetSection": "10/32",
-      "sourcePath": "G.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "123",
-      "targetSection": "10/32",
-      "sourcePath": "H.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "124",
-      "targetSection": "10/32",
-      "sourcePath": "H.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "125",
-      "targetSection": "10/32",
-      "sourcePath": "F.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "126",
-      "targetSection": "10/32",
-      "sourcePath": "G.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "127",
-      "targetSection": "10/32",
-      "sourcePath": "F.2",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "128",
-      "targetSection": "10/32",
-      "sourcePath": "E.6.b",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "131",
-      "targetSection": "10/22",
-      "sourcePath": "B.2.a",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "131",
-      "targetSection": "10/32",
-      "sourcePath": "E.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "132",
-      "targetSection": "10/32",
-      "sourcePath": "D.7.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "133",
-      "targetSection": "10/32",
-      "sourcePath": "E.7.c",
-      "targetPath": ""
-    }
-  ],
-  "2-10": [
-    {
-      "sourceSection": "10/33",
-      "targetSection": "222",
-      "sourcePath": "B.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/33",
-      "targetSection": "221",
-      "sourcePath": "B.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "211",
-      "targetSection": "10/33",
-      "sourcePath": "B.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "212",
-      "targetSection": "10/33",
-      "sourcePath": "G.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "213",
-      "targetSection": "10/33",
-      "sourcePath": "D.2.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "221",
-      "targetSection": "10/33",
-      "sourcePath": "B.8",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "222",
-      "targetSection": "10/33",
-      "sourcePath": "H.4.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "223",
-      "targetSection": "10/33",
-      "sourcePath": "E.6.b",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "231",
-      "targetSection": "10/33",
-      "sourcePath": "G.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "232",
-      "targetSection": "10/33",
-      "sourcePath": "D.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "241",
-      "targetSection": "10/33",
-      "sourcePath": "F.4.b",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "242",
-      "targetSection": "10/41",
-      "sourcePath": "C.2",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "242",
-      "targetSection": "10/33",
-      "sourcePath": "F",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "243",
-      "targetSection": "10/33",
-      "sourcePath": "D.2.b",
-      "targetPath": ""
-    }
-  ],
-  "4-10": [
-    {
-      "sourceSection": "10/35",
-      "targetSection": "423",
-      "sourcePath": "B.1.b",
-      "targetPath": "C.2.a"
-    },
-    {
-      "sourceSection": "10/35",
-      "targetSection": "423",
-      "sourcePath": "B.1.c",
-      "targetPath": "F.6"
-    },
-    {
-      "sourceSection": "10/35",
-      "targetSection": "423",
-      "sourcePath": "B.1.d",
-      "targetPath": "F.7"
-    },
-    {
-      "sourceSection": "10/35",
-      "targetSection": "423",
-      "sourcePath": "B.1.e",
-      "targetPath": "F.9.f"
-    },
-    {
-      "sourceSection": "10/35",
-      "targetSection": "423",
-      "sourcePath": "B.1.f",
-      "targetPath": "F.9"
-    },
-    {
-      "sourceSection": "411",
-      "targetSection": "10/36",
-      "sourcePath": "C.2.v",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "421",
-      "targetSection": "10/34",
-      "sourcePath": "K",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "422",
-      "targetSection": "10/35",
-      "sourcePath": "D.3.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "423",
-      "targetSection": "10/35",
-      "sourcePath": "F.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "423",
-      "targetSection": "10/35",
-      "sourcePath": "F.9",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "423",
-      "targetSection": "10/35",
-      "sourcePath": "F.9.j",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "424",
-      "targetSection": "10/35",
-      "sourcePath": "B",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "424",
-      "targetSection": "10/35",
-      "sourcePath": "J",
-      "targetPath": ""
-    }
-  ],
-  "5-10": [
-    {
-      "sourceSection": "10/36",
-      "targetSection": "514",
-      "sourcePath": "H",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/42",
-      "targetSection": "562",
-      "sourcePath": "A.3.g",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/42",
-      "targetSection": "561",
-      "sourcePath": "A.3.i",
-      "targetPath": "C.1.C"
-    },
-    {
-      "sourceSection": "10/52",
-      "targetSection": "551",
-      "sourcePath": "B.15",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/52",
-      "targetSection": "561",
-      "sourcePath": "B.16",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "511",
-      "targetSection": "10/36",
-      "sourcePath": "I.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "512",
-      "targetSection": "10/36",
-      "sourcePath": "C",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "513",
-      "targetSection": "10/36",
-      "sourcePath": "D.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "514",
-      "targetSection": "10/36",
-      "sourcePath": "F",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "521",
-      "targetSection": "10/36",
-      "sourcePath": "E.2.e",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "522",
-      "targetSection": "10/36",
-      "sourcePath": "D.2.i",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "523",
-      "targetSection": "10/36",
-      "sourcePath": "B.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "524",
-      "targetSection": "10/36",
-      "sourcePath": "C",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "531",
-      "targetSection": "10/36",
-      "sourcePath": "C.5.b",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "532",
-      "targetSection": "10/36",
-      "sourcePath": "D.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "534",
-      "targetSection": "10/36",
-      "sourcePath": "B.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "535",
-      "targetSection": "10/36",
-      "sourcePath": "D",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "536",
-      "targetSection": "10/36",
-      "sourcePath": "B.4",
-      "targetPath": ""
-    }
-  ],
-  "8-10": [
-    {
-      "sourceSection": "10/51",
-      "targetSection": "823",
-      "sourcePath": "C.1",
-      "targetPath": "B.3"
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "824",
-      "sourcePath": "C.2",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "825",
-      "sourcePath": "C.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "825",
-      "sourcePath": "C.4",
-      "targetPath": "C.3"
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "826",
-      "sourcePath": "C.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "828",
-      "sourcePath": "C.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "10/51",
-      "targetSection": "827",
-      "sourcePath": "C.7",
-      "targetPath": "E.7"
-    },
-    {
-      "sourceSection": "811",
-      "targetSection": "10/52",
-      "sourcePath": "G.4",
-      "targetPath": "B.6"
-    },
-    {
-      "sourceSection": "821",
-      "targetSection": "10/41",
-      "sourcePath": "A.1",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "822",
-      "targetSection": "10/51",
-      "sourcePath": "E.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "827",
-      "targetSection": "10/51",
-      "sourcePath": "E.7",
-      "targetPath": "A.2"
-    }
-  ],
-  "6-10": [
-    {
-      "sourceSection": "10/52",
-      "targetSection": "611",
-      "sourcePath": "B.12",
-      "targetPath": "A"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "612",
-      "sourcePath": "A.1.v",
-      "targetPath": "G.1"
-    }
-  ],
-  "3-10": [
-    {
-      "sourceSection": "10/61",
-      "targetSection": "355",
-      "sourcePath": "A.1.i.ii",
-      "targetPath": "C.6.a"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "355",
-      "sourcePath": "A.4",
-      "targetPath": "C.6"
-    },
-    {
-      "sourceSection": "10/61",
-      "targetSection": "355",
-      "sourcePath": "A.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "311",
-      "targetSection": "10/34",
-      "sourcePath": "B.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "312",
-      "targetSection": "10/34",
-      "sourcePath": "D.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "313",
-      "targetSection": "10/34",
-      "sourcePath": "F.25.c",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "321",
-      "targetSection": "10/34",
-      "sourcePath": "F",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "322",
-      "targetSection": "10/34",
-      "sourcePath": "C",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "323",
-      "targetSection": "10/34",
-      "sourcePath": "E.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "331",
-      "targetSection": "10/34",
-      "sourcePath": "E.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "332",
-      "targetSection": "10/34",
-      "sourcePath": "E.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "333",
-      "targetSection": "10/34",
-      "sourcePath": "E.5",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "334",
-      "targetSection": "10/34",
-      "sourcePath": "C.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "335",
-      "targetSection": "10/34",
-      "sourcePath": "C.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "336",
-      "targetSection": "10/34",
-      "sourcePath": "C.2.e",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "337",
-      "targetSection": "10/34",
-      "sourcePath": "D.3.e",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "338",
-      "targetSection": "10/34",
-      "sourcePath": "F.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "339",
-      "targetSection": "10/34",
-      "sourcePath": "C.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "341",
-      "targetSection": "10/34",
-      "sourcePath": "D.3",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "342",
-      "targetSection": "10/34",
-      "sourcePath": "D",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "351",
-      "targetSection": "10/34",
-      "sourcePath": "B.7",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "352",
-      "targetSection": "10/34",
-      "sourcePath": "A.1",
-      "targetPath": "B.4"
-    },
-    {
-      "sourceSection": "352",
-      "targetSection": "10/34",
-      "sourcePath": "C.6",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "353",
-      "targetSection": "10/34",
-      "sourcePath": "D",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "354",
-      "targetSection": "10/34",
-      "sourcePath": "D.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "355",
-      "targetSection": "10/34",
-      "sourcePath": "D.4.b",
-      "targetPath": ""
-    }
-  ],
-  "1-4": [
-    {
-      "sourceSection": "111",
-      "targetSection": "423",
-      "sourcePath": "D.4",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "421",
-      "targetSection": "122",
-      "sourcePath": "A.101",
-      "targetPath": ""
-    }
-  ],
   "1-2": [
     {
       "sourceSection": "112",
@@ -1015,6 +187,72 @@
       "targetPath": "C"
     }
   ],
+  "1-3": [
+    {
+      "sourceSection": "121",
+      "targetSection": "335",
+      "sourcePath": "C.6",
+      "targetPath": "A.3"
+    },
+    {
+      "sourceSection": "128",
+      "targetSection": "322",
+      "sourcePath": "C.11",
+      "targetPath": "A"
+    }
+  ],
+  "1-4": [
+    {
+      "sourceSection": "111",
+      "targetSection": "423",
+      "sourcePath": "D.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "421",
+      "targetSection": "122",
+      "sourcePath": "A.101",
+      "targetPath": ""
+    }
+  ],
+  "1-5": [
+    {
+      "sourceSection": "128",
+      "targetSection": "514",
+      "sourcePath": "E.5.c",
+      "targetPath": "D"
+    }
+  ],
+  "1-6": [
+    {
+      "sourceSection": "128",
+      "targetSection": "628",
+      "sourcePath": "E.5.a",
+      "targetPath": "",
+      "via": "735"
+    },
+    {
+      "sourceSection": "128",
+      "targetSection": "623",
+      "sourcePath": "E.5.a",
+      "targetPath": "",
+      "via": "735"
+    },
+    {
+      "sourceSection": "128",
+      "targetSection": "624",
+      "sourcePath": "E",
+      "targetPath": "F.1",
+      "via": "735"
+    },
+    {
+      "sourceSection": "122",
+      "targetSection": "629",
+      "sourcePath": "G",
+      "targetPath": "C.1.a",
+      "via": "732"
+    }
+  ],
   "1-7": [
     {
       "sourceSection": "112",
@@ -1131,99 +369,137 @@
       "targetPath": "B.4.C"
     }
   ],
-  "1-3": [
+  "1-10": [
+    {
+      "sourceSection": "10/23",
+      "targetSection": "126",
+      "sourcePath": "H.1",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "126",
+      "sourcePath": "H.2",
+      "targetPath": "F"
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "126",
+      "sourcePath": "H.3",
+      "targetPath": "D"
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "124",
+      "sourcePath": "H.4",
+      "targetPath": "A.9"
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "127",
+      "sourcePath": "H.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "131",
+      "sourcePath": "H.6",
+      "targetPath": "D"
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "111",
+      "sourcePath": "H.8",
+      "targetPath": "A.4.C"
+    },
+    {
+      "sourceSection": "10/32",
+      "targetSection": "121",
+      "sourcePath": "D",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "111",
+      "targetSection": "10/32",
+      "sourcePath": "F.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "112",
+      "targetSection": "10/32",
+      "sourcePath": "I.4.d",
+      "targetPath": ""
+    },
     {
       "sourceSection": "121",
-      "targetSection": "335",
-      "sourcePath": "C.6",
-      "targetPath": "A.3"
-    },
-    {
-      "sourceSection": "128",
-      "targetSection": "322",
-      "sourcePath": "C.11",
-      "targetPath": "A"
-    }
-  ],
-  "1-5": [
-    {
-      "sourceSection": "128",
-      "targetSection": "514",
-      "sourcePath": "E.5.c",
-      "targetPath": "D"
-    }
-  ],
-  "2-7": [
-    {
-      "sourceSection": "212",
-      "targetSection": "723",
-      "sourcePath": "A.2",
-      "targetPath": "D.2.d"
-    },
-    {
-      "sourceSection": "212",
-      "targetSection": "724",
-      "sourcePath": "G.2.d",
-      "targetPath": "B"
-    },
-    {
-      "sourceSection": "213",
-      "targetSection": "723",
-      "sourcePath": "B.4",
-      "targetPath": "F.6"
-    },
-    {
-      "sourceSection": "214",
-      "targetSection": "724",
-      "sourcePath": "A.4.c",
-      "targetPath": "C.3"
-    },
-    {
-      "sourceSection": "214",
-      "targetSection": "724",
-      "sourcePath": "B.2.v.vii",
-      "targetPath": "B"
-    },
-    {
-      "sourceSection": "214",
-      "targetSection": "724",
-      "sourcePath": "B.5.a",
-      "targetPath": "B"
-    },
-    {
-      "sourceSection": "214",
-      "targetSection": "724",
-      "sourcePath": "B.5.c",
+      "targetSection": "10/32",
+      "sourcePath": "D.4",
       "targetPath": ""
     },
     {
-      "sourceSection": "221",
-      "targetSection": "735",
-      "sourcePath": "A.3.i.iii",
-      "targetPath": ""
-    },
-    {
-      "sourceSection": "222",
-      "targetSection": "737",
-      "sourcePath": "D.6",
-      "targetPath": "A.1"
-    },
-    {
-      "sourceSection": "242",
-      "targetSection": "723",
-      "sourcePath": "D.2",
-      "targetPath": "G.8"
-    },
-    {
-      "sourceSection": "723",
-      "targetSection": "213",
-      "sourcePath": "F.6",
-      "targetPath": "B.6"
-    },
-    {
-      "sourceSection": "723",
-      "targetSection": "222",
+      "sourceSection": "122",
+      "targetSection": "10/32",
       "sourcePath": "G.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "123",
+      "targetSection": "10/32",
+      "sourcePath": "H.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "124",
+      "targetSection": "10/32",
+      "sourcePath": "H.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "125",
+      "targetSection": "10/32",
+      "sourcePath": "F.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "126",
+      "targetSection": "10/32",
+      "sourcePath": "G.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "127",
+      "targetSection": "10/32",
+      "sourcePath": "F.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "128",
+      "targetSection": "10/32",
+      "sourcePath": "E.6.b",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "131",
+      "targetSection": "10/22",
+      "sourcePath": "B.2.a",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "131",
+      "targetSection": "10/32",
+      "sourcePath": "E.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "132",
+      "targetSection": "10/32",
+      "sourcePath": "D.7.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "133",
+      "targetSection": "10/32",
+      "sourcePath": "E.7.c",
       "targetPath": ""
     }
   ],
@@ -1381,62 +657,189 @@
       "targetPath": "C"
     }
   ],
-  "3-5": [
+  "2-5": [
     {
-      "sourceSection": "321",
-      "targetSection": "522",
-      "sourcePath": "C.7",
-      "targetPath": "C.9"
-    },
-    {
-      "sourceSection": "321",
-      "targetSection": "522",
-      "sourcePath": "D",
-      "targetPath": "C.9"
-    },
-    {
-      "sourceSection": "352",
+      "sourceSection": "223",
       "targetSection": "524",
-      "sourcePath": "A.7",
-      "targetPath": "A"
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Climate and Weather"
+    }
+  ],
+  "2-6": [
+    {
+      "sourceSection": "221",
+      "targetSection": "628",
+      "sourcePath": "A.3.i.iii",
+      "targetPath": "",
+      "via": "735"
     },
     {
-      "sourceSection": "543",
-      "targetSection": "355",
-      "sourcePath": "A.6",
+      "sourceSection": "221",
+      "targetSection": "623",
+      "sourcePath": "A.3.i.iii",
+      "targetPath": "",
+      "via": "735"
+    }
+  ],
+  "2-7": [
+    {
+      "sourceSection": "212",
+      "targetSection": "723",
+      "sourcePath": "A.2",
+      "targetPath": "D.2.d"
+    },
+    {
+      "sourceSection": "212",
+      "targetSection": "724",
+      "sourcePath": "G.2.d",
+      "targetPath": "B"
+    },
+    {
+      "sourceSection": "213",
+      "targetSection": "723",
+      "sourcePath": "B.4",
+      "targetPath": "F.6"
+    },
+    {
+      "sourceSection": "214",
+      "targetSection": "724",
+      "sourcePath": "A.4.c",
+      "targetPath": "C.3"
+    },
+    {
+      "sourceSection": "214",
+      "targetSection": "724",
+      "sourcePath": "B.2.v.vii",
+      "targetPath": "B"
+    },
+    {
+      "sourceSection": "214",
+      "targetSection": "724",
+      "sourcePath": "B.5.a",
+      "targetPath": "B"
+    },
+    {
+      "sourceSection": "214",
+      "targetSection": "724",
+      "sourcePath": "B.5.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "221",
+      "targetSection": "735",
+      "sourcePath": "A.3.i.iii",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "222",
+      "targetSection": "737",
+      "sourcePath": "D.6",
+      "targetPath": "A.1"
+    },
+    {
+      "sourceSection": "242",
+      "targetSection": "723",
+      "sourcePath": "D.2",
+      "targetPath": "G.8"
+    },
+    {
+      "sourceSection": "723",
+      "targetSection": "213",
+      "sourcePath": "F.6",
+      "targetPath": "B.6"
+    },
+    {
+      "sourceSection": "723",
+      "targetSection": "222",
+      "sourcePath": "G.4",
       "targetPath": ""
     }
   ],
-  "3-7": [
+  "2-10": [
     {
-      "sourceSection": "321",
-      "targetSection": "736",
-      "sourcePath": "E.4",
-      "targetPath": "A.6"
-    },
-    {
-      "sourceSection": "355",
-      "targetSection": "724",
-      "sourcePath": "C.3",
-      "targetPath": "C.8"
-    },
-    {
-      "sourceSection": "355",
-      "targetSection": "724",
-      "sourcePath": "C.5",
+      "sourceSection": "10/33",
+      "targetSection": "222",
+      "sourcePath": "B.3",
       "targetPath": ""
     },
     {
-      "sourceSection": "711",
-      "targetSection": "355",
-      "sourcePath": "B.7",
-      "targetPath": "B.1"
+      "sourceSection": "10/33",
+      "targetSection": "221",
+      "sourcePath": "B.4",
+      "targetPath": ""
     },
     {
-      "sourceSection": "731",
-      "targetSection": "321",
-      "sourcePath": "C.5",
-      "targetPath": "E.2"
+      "sourceSection": "211",
+      "targetSection": "10/33",
+      "sourcePath": "B.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "212",
+      "targetSection": "10/33",
+      "sourcePath": "G.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "213",
+      "targetSection": "10/33",
+      "sourcePath": "D.2.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "221",
+      "targetSection": "10/33",
+      "sourcePath": "B.8",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "222",
+      "targetSection": "10/33",
+      "sourcePath": "H.4.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "223",
+      "targetSection": "10/33",
+      "sourcePath": "E.6.b",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "231",
+      "targetSection": "10/33",
+      "sourcePath": "G.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "232",
+      "targetSection": "10/33",
+      "sourcePath": "D.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "241",
+      "targetSection": "10/33",
+      "sourcePath": "F.4.b",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "242",
+      "targetSection": "10/41",
+      "sourcePath": "C.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "242",
+      "targetSection": "10/33",
+      "sourcePath": "F",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "243",
+      "targetSection": "10/33",
+      "sourcePath": "D.2.b",
+      "targetPath": ""
     }
   ],
   "3-4": [
@@ -1567,12 +970,220 @@
       "targetPath": "C.4.C"
     }
   ],
-  "4-7": [
+  "3-5": [
     {
-      "sourceSection": "424",
-      "targetSection": "737",
+      "sourceSection": "321",
+      "targetSection": "522",
+      "sourcePath": "C.7",
+      "targetPath": "C.9"
+    },
+    {
+      "sourceSection": "321",
+      "targetSection": "522",
+      "sourcePath": "D",
+      "targetPath": "C.9"
+    },
+    {
+      "sourceSection": "352",
+      "targetSection": "524",
+      "sourcePath": "A.7",
+      "targetPath": "A"
+    },
+    {
+      "sourceSection": "543",
+      "targetSection": "355",
+      "sourcePath": "A.6",
+      "targetPath": ""
+    }
+  ],
+  "3-7": [
+    {
+      "sourceSection": "321",
+      "targetSection": "736",
+      "sourcePath": "E.4",
+      "targetPath": "A.6"
+    },
+    {
+      "sourceSection": "355",
+      "targetSection": "724",
+      "sourcePath": "C.3",
+      "targetPath": "C.8"
+    },
+    {
+      "sourceSection": "355",
+      "targetSection": "724",
+      "sourcePath": "C.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "711",
+      "targetSection": "355",
+      "sourcePath": "B.7",
+      "targetPath": "B.1"
+    },
+    {
+      "sourceSection": "731",
+      "targetSection": "321",
+      "sourcePath": "C.5",
+      "targetPath": "E.2"
+    }
+  ],
+  "3-10": [
+    {
+      "sourceSection": "10/61",
+      "targetSection": "355",
+      "sourcePath": "A.1.i.ii",
+      "targetPath": "C.6.a"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "355",
+      "sourcePath": "A.4",
+      "targetPath": "C.6"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "355",
+      "sourcePath": "A.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "311",
+      "targetSection": "10/34",
+      "sourcePath": "B.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "312",
+      "targetSection": "10/34",
+      "sourcePath": "D.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "313",
+      "targetSection": "10/34",
+      "sourcePath": "F.25.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "321",
+      "targetSection": "10/34",
       "sourcePath": "F",
-      "targetPath": "C.1"
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "322",
+      "targetSection": "10/34",
+      "sourcePath": "C",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "323",
+      "targetSection": "10/34",
+      "sourcePath": "E.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "331",
+      "targetSection": "10/34",
+      "sourcePath": "E.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "332",
+      "targetSection": "10/34",
+      "sourcePath": "E.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "333",
+      "targetSection": "10/34",
+      "sourcePath": "E.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "334",
+      "targetSection": "10/34",
+      "sourcePath": "C.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "335",
+      "targetSection": "10/34",
+      "sourcePath": "C.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "336",
+      "targetSection": "10/34",
+      "sourcePath": "C.2.e",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "337",
+      "targetSection": "10/34",
+      "sourcePath": "D.3.e",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "338",
+      "targetSection": "10/34",
+      "sourcePath": "F.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "339",
+      "targetSection": "10/34",
+      "sourcePath": "C.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "341",
+      "targetSection": "10/34",
+      "sourcePath": "D.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "342",
+      "targetSection": "10/34",
+      "sourcePath": "D",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "351",
+      "targetSection": "10/34",
+      "sourcePath": "B.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "352",
+      "targetSection": "10/34",
+      "sourcePath": "A.1",
+      "targetPath": "B.4"
+    },
+    {
+      "sourceSection": "352",
+      "targetSection": "10/34",
+      "sourcePath": "C.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "353",
+      "targetSection": "10/34",
+      "sourcePath": "D",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "354",
+      "targetSection": "10/34",
+      "sourcePath": "D.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "355",
+      "targetSection": "10/34",
+      "sourcePath": "D.4.b",
+      "targetPath": ""
     }
   ],
   "4-5": [
@@ -1601,23 +1212,100 @@
       "targetPath": ""
     }
   ],
-  "5-8": [
+  "4-6": [
     {
-      "sourceSection": "513",
-      "targetSection": "811",
-      "sourcePath": "D.2",
+      "sourceSection": "432",
+      "targetSection": "629",
+      "sourcePath": "",
+      "targetPath": "C.4.a",
+      "via": "514"
+    }
+  ],
+  "4-7": [
+    {
+      "sourceSection": "424",
+      "targetSection": "737",
+      "sourcePath": "F",
+      "targetPath": "C.1"
+    }
+  ],
+  "4-10": [
+    {
+      "sourceSection": "10/35",
+      "targetSection": "423",
+      "sourcePath": "B.1.b",
+      "targetPath": "C.2.a"
+    },
+    {
+      "sourceSection": "10/35",
+      "targetSection": "423",
+      "sourcePath": "B.1.c",
+      "targetPath": "F.6"
+    },
+    {
+      "sourceSection": "10/35",
+      "targetSection": "423",
+      "sourcePath": "B.1.d",
+      "targetPath": "F.7"
+    },
+    {
+      "sourceSection": "10/35",
+      "targetSection": "423",
+      "sourcePath": "B.1.e",
+      "targetPath": "F.9.f"
+    },
+    {
+      "sourceSection": "10/35",
+      "targetSection": "423",
+      "sourcePath": "B.1.f",
+      "targetPath": "F.9"
+    },
+    {
+      "sourceSection": "411",
+      "targetSection": "10/36",
+      "sourcePath": "C.2.v",
       "targetPath": ""
     },
     {
-      "sourceSection": "811",
-      "targetSection": "521",
-      "sourcePath": "G.3",
-      "targetPath": "D.6"
+      "sourceSection": "421",
+      "targetSection": "10/34",
+      "sourcePath": "K",
+      "targetPath": ""
     },
     {
-      "sourceSection": "812",
-      "targetSection": "551",
-      "sourcePath": "A.3.a",
+      "sourceSection": "422",
+      "targetSection": "10/35",
+      "sourcePath": "D.3.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "423",
+      "targetSection": "10/35",
+      "sourcePath": "F.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "423",
+      "targetSection": "10/35",
+      "sourcePath": "F.9",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "423",
+      "targetSection": "10/35",
+      "sourcePath": "F.9.j",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "424",
+      "targetSection": "10/35",
+      "sourcePath": "B",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "424",
+      "targetSection": "10/35",
+      "sourcePath": "J",
       "targetPath": ""
     }
   ],
@@ -1700,6 +1388,348 @@
       "sourceSection": "736",
       "targetSection": "544",
       "sourcePath": "F.2",
+      "targetPath": ""
+    }
+  ],
+  "5-8": [
+    {
+      "sourceSection": "513",
+      "targetSection": "811",
+      "sourcePath": "D.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "811",
+      "targetSection": "521",
+      "sourcePath": "G.3",
+      "targetPath": "D.6"
+    },
+    {
+      "sourceSection": "812",
+      "targetSection": "551",
+      "sourcePath": "A.3.a",
+      "targetPath": ""
+    }
+  ],
+  "5-9": [
+    {
+      "sourceSection": "511",
+      "targetSection": "941",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "942",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "943",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "944",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "945",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "962",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "978",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "96/11",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "961",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Arctic, The"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "964",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Arctic, The"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "973",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Arctic, The"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "931",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "932",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "933",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "934",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "935",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "936",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "937",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "968",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "969",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "975",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "976",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "96/10",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Asia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "967",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Australia"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "911",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "North Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "922",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "North Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "924",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "North Africa"
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "921",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Transcaucasia"
+    },
+    {
+      "sourceSection": "544",
+      "targetSection": "971",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "United Nations"
+    },
+    {
+      "sourceSection": "552",
+      "targetSection": "971",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "United Nations"
+    }
+  ],
+  "5-10": [
+    {
+      "sourceSection": "10/36",
+      "targetSection": "514",
+      "sourcePath": "H",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/42",
+      "targetSection": "562",
+      "sourcePath": "A.3.g",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/42",
+      "targetSection": "561",
+      "sourcePath": "A.3.i",
+      "targetPath": "C.1.C"
+    },
+    {
+      "sourceSection": "10/52",
+      "targetSection": "551",
+      "sourcePath": "B.15",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/52",
+      "targetSection": "561",
+      "sourcePath": "B.16",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "511",
+      "targetSection": "10/36",
+      "sourcePath": "I.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "512",
+      "targetSection": "10/36",
+      "sourcePath": "C",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "513",
+      "targetSection": "10/36",
+      "sourcePath": "D.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "514",
+      "targetSection": "10/36",
+      "sourcePath": "F",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "521",
+      "targetSection": "10/36",
+      "sourcePath": "E.2.e",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "522",
+      "targetSection": "10/36",
+      "sourcePath": "D.2.i",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "523",
+      "targetSection": "10/36",
+      "sourcePath": "B.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "524",
+      "targetSection": "10/36",
+      "sourcePath": "C",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "531",
+      "targetSection": "10/36",
+      "sourcePath": "C.5.b",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "532",
+      "targetSection": "10/36",
+      "sourcePath": "D.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "534",
+      "targetSection": "10/36",
+      "sourcePath": "B.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "535",
+      "targetSection": "10/36",
+      "sourcePath": "D",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "536",
+      "targetSection": "10/36",
+      "sourcePath": "B.4",
       "targetPath": ""
     }
   ],
@@ -1789,6 +1819,217 @@
       "targetPath": ""
     }
   ],
+  "6-8": [
+    {
+      "sourceSection": "827",
+      "targetSection": "624",
+      "sourcePath": "I",
+      "targetPath": ""
+    }
+  ],
+  "6-9": [
+    {
+      "sourceSection": "613",
+      "targetSection": "911",
+      "sourcePath": "",
+      "targetPath": "",
+      "sharedArticle": "Prehistoric Peoples and Cultures"
+    }
+  ],
+  "6-10": [
+    {
+      "sourceSection": "10/52",
+      "targetSection": "611",
+      "sourcePath": "B.12",
+      "targetPath": "A"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "612",
+      "sourcePath": "A.1.v",
+      "targetPath": "G.1"
+    }
+  ],
+  "7-8": [
+    {
+      "sourceSection": "712",
+      "targetSection": "811",
+      "sourcePath": "C",
+      "targetPath": "G.3",
+      "via": "521"
+    },
+    {
+      "sourceSection": "735",
+      "targetSection": "827",
+      "sourcePath": "",
+      "targetPath": "I",
+      "via": "624"
+    }
+  ],
+  "7-10": [
+    {
+      "sourceSection": "10/23",
+      "targetSection": "735",
+      "sourcePath": "A.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "735",
+      "sourcePath": "A.7",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "712",
+      "sourcePath": "D",
+      "targetPath": "A.6"
+    },
+    {
+      "sourceSection": "10/23",
+      "targetSection": "735",
+      "sourcePath": "F",
+      "targetPath": "A"
+    },
+    {
+      "sourceSection": "10/37",
+      "targetSection": "731",
+      "sourcePath": "C.2",
+      "targetPath": "B"
+    },
+    {
+      "sourceSection": "10/37",
+      "targetSection": "712",
+      "sourcePath": "D.2",
+      "targetPath": "B"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "B.1",
+      "targetPath": "H.2.c"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "B.2",
+      "targetPath": "H.2.c"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "B.3",
+      "targetPath": "H.2.c"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "B.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "B.7",
+      "targetPath": "F"
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "C.3.a",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "C.4.a",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/61",
+      "targetSection": "735",
+      "sourcePath": "C.4.b",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "711",
+      "targetSection": "10/37",
+      "sourcePath": "C.4.c",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "712",
+      "targetSection": "10/23",
+      "sourcePath": "B.3.b",
+      "targetPath": "E"
+    },
+    {
+      "sourceSection": "712",
+      "targetSection": "10/37",
+      "sourcePath": "C.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "721",
+      "targetSection": "10/37",
+      "sourcePath": "E",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "722",
+      "targetSection": "10/37",
+      "sourcePath": "E.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "723",
+      "targetSection": "10/31",
+      "sourcePath": "A",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "723",
+      "targetSection": "10/37",
+      "sourcePath": "H.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "731",
+      "targetSection": "10/34",
+      "sourcePath": "I.4",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "732",
+      "targetSection": "10/35",
+      "sourcePath": "D.4",
+      "targetPath": "C.4"
+    },
+    {
+      "sourceSection": "733",
+      "targetSection": "10/37",
+      "sourcePath": "C",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "735",
+      "targetSection": "10/23",
+      "sourcePath": "A",
+      "targetPath": "F"
+    },
+    {
+      "sourceSection": "735",
+      "targetSection": "10/23",
+      "sourcePath": "D",
+      "targetPath": "A.6"
+    },
+    {
+      "sourceSection": "737",
+      "targetSection": "10/37",
+      "sourcePath": "C.2",
+      "targetPath": ""
+    }
+  ],
   "8-9": [
     {
       "sourceSection": "827",
@@ -1827,12 +2068,81 @@
       "targetPath": "A.4"
     }
   ],
-  "6-8": [
+  "8-10": [
+    {
+      "sourceSection": "10/51",
+      "targetSection": "823",
+      "sourcePath": "C.1",
+      "targetPath": "B.3"
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "824",
+      "sourcePath": "C.2",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "825",
+      "sourcePath": "C.3",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "825",
+      "sourcePath": "C.4",
+      "targetPath": "C.3"
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "826",
+      "sourcePath": "C.5",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "828",
+      "sourcePath": "C.6",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "10/51",
+      "targetSection": "827",
+      "sourcePath": "C.7",
+      "targetPath": "E.7"
+    },
+    {
+      "sourceSection": "811",
+      "targetSection": "10/52",
+      "sourcePath": "G.4",
+      "targetPath": "B.6"
+    },
+    {
+      "sourceSection": "821",
+      "targetSection": "10/41",
+      "sourcePath": "A.1",
+      "targetPath": ""
+    },
+    {
+      "sourceSection": "822",
+      "targetSection": "10/51",
+      "sourcePath": "E.4",
+      "targetPath": ""
+    },
     {
       "sourceSection": "827",
-      "targetSection": "624",
-      "sourcePath": "I",
-      "targetPath": ""
+      "targetSection": "10/51",
+      "sourcePath": "E.7",
+      "targetPath": "A.2"
+    }
+  ],
+  "9-10": [
+    {
+      "sourceSection": "961",
+      "targetSection": "10/51",
+      "sourcePath": "A.3",
+      "targetPath": "C.7",
+      "via": "827"
     }
   ]
 }

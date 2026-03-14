@@ -14,6 +14,8 @@ export interface SectionConnection {
   targetSection: string;
   sourcePath: string;
   targetPath: string;
+  via?: string;
+  sharedArticle?: string;
 }
 
 export interface SectionMeta {
@@ -220,25 +222,57 @@ function summarizeConnections(
   sectionMeta: Record<string, SectionMeta>,
   centerPart: number,
   topPart: number
-): { section: SectionMeta; refCount: number }[] {
+): { section: SectionMeta; refCount: number; isDirect: boolean }[] {
   if (centerPart === topPart) return [];
   const key = getConnectionKey(centerPart, topPart);
   const refs = connections[key] || [];
-  if (!refs.length) return [];
 
-  // Count how many times each section appears as source or target
+  if (refs.length > 0) {
+    // Determine connection type: direct if none have 'via' or 'sharedArticle'
+    const isDirect = refs.every((r) => !r.via && !r.sharedArticle);
+
+    const counts: Record<string, number> = {};
+    refs.forEach((r) => {
+      counts[r.sourceSection] = (counts[r.sourceSection] || 0) + 1;
+      counts[r.targetSection] = (counts[r.targetSection] || 0) + 1;
+    });
+
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 6)
+      .map(([code, count]) => ({
+        section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
+        refCount: count,
+        isDirect,
+      }))
+      .filter((s) => s.section.partNumber > 0);
+  }
+
+  // No connections at all: find the most cross-referenced sections from each part
+  const allRefs = Object.values(connections).flat();
   const counts: Record<string, number> = {};
-  refs.forEach((r) => {
-    counts[r.sourceSection] = (counts[r.sourceSection] || 0) + 1;
-    counts[r.targetSection] = (counts[r.targetSection] || 0) + 1;
+  allRefs.forEach((r) => {
+    const sp = sectionMeta[r.sourceSection]?.partNumber;
+    const tp = sectionMeta[r.targetSection]?.partNumber;
+    if (sp === centerPart || sp === topPart) counts[r.sourceSection] = (counts[r.sourceSection] || 0) + 1;
+    if (tp === centerPart || tp === topPart) counts[r.targetSection] = (counts[r.targetSection] || 0) + 1;
   });
 
-  return Object.entries(counts)
+  // Pick top 3 from each part
+  const fromCenter = Object.entries(counts)
+    .filter(([code]) => sectionMeta[code]?.partNumber === centerPart)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 6)
+    .slice(0, 3);
+  const fromTop = Object.entries(counts)
+    .filter(([code]) => sectionMeta[code]?.partNumber === topPart)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3);
+
+  return [...fromCenter, ...fromTop]
     .map(([code, count]) => ({
       section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
       refCount: count,
+      isDirect: false,
     }))
     .filter((s) => s.section.partNumber > 0);
 }
@@ -976,11 +1010,26 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
           <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
             Your curriculum is built around {centerPart.title.toLowerCase()} with {topPart.title.toLowerCase()} as the secondary emphasis.
           </p>
-          <div class="mt-3 border-t border-slate-200 pt-3">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-              Where these fields connect
-            </p>
-            {suggestedSections.length > 0 ? (
+          {suggestedSections.length > 0 && (() => {
+            const isDirect = suggestedSections[0].isDirect;
+            const key = getConnectionKey(centerPartNumber, topPartNumber);
+            const hasConnectionData = !!(connections[key] && connections[key].length > 0);
+            return (
+            <div class="mt-3 border-t border-slate-200 pt-3">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+                {isDirect
+                  ? 'Direct connections'
+                  : hasConnectionData
+                    ? 'Indirect connections'
+                    : 'No direct overlap'}
+              </p>
+              <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                {isDirect
+                  ? `Sections where ${centerPart.title.toLowerCase()} and ${topPart.title.toLowerCase()} cross-reference each other.`
+                  : hasConnectionData
+                    ? `These parts connect indirectly through shared references. These sections sit at the crossroads.`
+                    : `These two parts don't directly reference each other. Try these well-connected sections as starting points instead.`}
+              </p>
               <ul class="mt-2 space-y-1">
                 {suggestedSections.map((s) => {
                   const part = parts.find((p) => p.partNumber === s.section.partNumber);
@@ -1000,12 +1049,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
                   );
                 })}
               </ul>
-            ) : (
-              <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                No direct cross-references between these two parts.
-              </p>
-            )}
-          </div>
+            </div>
+            );
+          })()}
         </div>
       </div>
 
