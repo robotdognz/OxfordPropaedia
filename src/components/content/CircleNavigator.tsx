@@ -396,7 +396,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
             const isSelected = selectedPartNumber === part.partNumber;
             const isTop = topPart.partNumber === part.partNumber;
-            const segmentInnerRadius = isTop ? INNER_RADIUS - 8 : INNER_RADIUS;
+            const segmentInnerRadius = isTop ? INNER_RADIUS - 10 : INNER_RADIUS;
             const segmentOuterRadius = isTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
             const numberPosition = polar(CENTER, CENTER, isTop ? 138 : 134, centerAngle);
             const connectorStart = polar(CENTER, CENTER, segmentOuterRadius + 6, centerAngle);
@@ -411,7 +411,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
-                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius, startAngle, endAngle)}
+                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius, startAngle - 0.3, endAngle + 0.3)}
                   fill={part.colorHex}
                   stroke="none"
                   stroke-width={0}
@@ -485,7 +485,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const startAngle = centerAngle - SEGMENT_ANGLE / 2;
             const endAngle = centerAngle + SEGMENT_ANGLE / 2;
             const isTop = topPart.partNumber === selectedOuterPart.partNumber;
-            const segmentInnerRadius = isTop ? INNER_RADIUS - 8 : INNER_RADIUS;
+            const segmentInnerRadius = isTop ? INNER_RADIUS - 10 : INNER_RADIUS;
             const segmentOuterRadius = isTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
 
@@ -513,11 +513,11 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               <circle
                 cx={CENTER}
                 cy={CENTER}
-                r={INNER_RADIUS + 10}
+                r={(CENTER_DISC_RADIUS + INNER_RADIUS) / 2}
                 fill="none"
                 stroke={previewCenterPart.colorHex}
-                stroke-width="6"
-                stroke-dasharray="8 8"
+                stroke-width="4"
+                stroke-dasharray="6 6"
                 class="animate-pulse"
                 opacity="0.9"
               />
