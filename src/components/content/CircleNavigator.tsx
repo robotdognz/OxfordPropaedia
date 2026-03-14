@@ -493,25 +493,43 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
   const centerPreviewOffsets = (() => {
     const previewPN = centerPreviewPartNumber ?? (morphT > 0 ? morphPartNumber : null);
     if (previewPN === null) return null;
-    const newOuter = outerParts.filter((p) => p.partNumber !== previewPN);
-    if (newOuter.length === outerParts.length) return null; // dragged part not in outer
-    const newSegAngle = 360 / newOuter.length;
+
+    // When swapping (center exists), new outer = current outer minus dragged + old center
+    // When no center, new outer = current outer minus dragged
+    const newOuterParts = hasCenter
+      ? parts.filter((p) => p.partNumber !== previewPN)
+      : outerParts.filter((p) => p.partNumber !== previewPN);
+    if (newOuterParts.length === outerParts.length && !hasCenter) return null;
+    const newSegAngle = 360 / newOuterParts.length;
     const curIndexMap = new Map(outerParts.map((p, i) => [p.partNumber, i]));
-    const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
+    const newIndexMap = new Map(newOuterParts.map((p, i) => [p.partNumber, i]));
     const currentTopPN = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
     const newTopIdx = newIndexMap.get(currentTopPN);
     const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
 
     const offsets = new Map<number, number>();
-    for (const p of newOuter) {
+    for (const p of outerParts) {
+      if (p.partNumber === previewPN) continue; // this part is morphing to center
       const curIdx = curIndexMap.get(p.partNumber)!;
-      const newIdx = newIndexMap.get(p.partNumber)!;
+      const newIdx = newIndexMap.get(p.partNumber);
+      if (newIdx === undefined) continue;
       const curAngle = rotationDegrees + curIdx * segmentAngle;
       const newAngle = newRotation + newIdx * newSegAngle;
       const shift = normalizeDegrees(newAngle - curAngle);
       if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
     }
-    return { offsets, newSegAngle };
+
+    // For the old center part (if swapping), compute its target position in the new ring
+    let oldCenterTarget: { centerAngle: number; startAngle: number; endAngle: number } | null = null;
+    if (hasCenter && centerPart) {
+      const oldCIdx = newIndexMap.get(centerPart.partNumber);
+      if (oldCIdx !== undefined) {
+        const ca = newRotation + oldCIdx * newSegAngle;
+        oldCenterTarget = { centerAngle: ca, startAngle: ca - newSegAngle / 2, endAngle: ca + newSegAngle / 2 };
+      }
+    }
+
+    return { offsets, newSegAngle, newRotation, oldCenterTarget };
   })();
 
   const rotatePartToTop = (partNumber: number) => {
@@ -736,7 +754,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
       setCenterPreviewPartNumber(null);
 
       // Compute the final rotation for the new layout
-      const newOuter = outerParts.filter((p) => p.partNumber !== partToCenter);
+      // When swapping, new outer includes old center; when no center, just remove dragged part
+      const newOuter = hasCenter
+        ? parts.filter((p) => p.partNumber !== partToCenter)
+        : outerParts.filter((p) => p.partNumber !== partToCenter);
       const newSegAngle = 360 / newOuter.length;
       const curTopPN = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
       const newTopIdx = newOuter.findIndex((p) => p.partNumber === curTopPN);
@@ -850,6 +871,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
     if (!dragState.moved) return;
 
     if (!dragState.rotateOnly && (!hasCenter || dragState.activePartNumber !== centerPartNumber) && nextRadius <= CENTER_COMMIT_THRESHOLD) {
+      // Smoothly rotate to nearest clean position so the preview layout is aligned
+      const snapped = snapRotation(rotationDegrees, segmentAngle);
+      if (Math.abs(snapped - rotationDegrees) > 0.5) {
+        animateSnapRotation(rotationDegrees, snapped);
+      }
+      dragState.startRotation = snapped;
+      dragState.startAngle = angleFromPoint(point.x, point.y);
       setCenterPreviewPartNumber(dragState.activePartNumber);
       dragState.readyForCenter = true;
       return;
@@ -1189,6 +1217,103 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
             );
           })()}
 
+          {/* Old center morphing out to ring during swap preview */}
+          {morphT > 0 && hasCenter && centerPart && centerPreviewOffsets?.oldCenterTarget && (() => {
+            const target = centerPreviewOffsets.oldCenterTarget;
+            const tDistFromTop = angularDistance(target.centerAngle, 0);
+            const tSegAngle = centerPreviewOffsets.newSegAngle;
+            const tTopWeight = Math.max(0, 1 - tDistFromTop / tSegAngle);
+            const tInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, tTopWeight);
+            const tOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, tTopWeight);
+            const tNumberPos = polar(CENTER, CENTER, lerp(134, 138, tTopWeight), target.centerAngle);
+            const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
+            const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
+            const tLabelPos = polar(CENTER, CENTER, LABEL_RADIUS, target.centerAngle);
+            const tTextAnchor = textAnchorForAngle(target.centerAngle);
+            const tLabelX = tLabelPos.x + (tTextAnchor === 'start' ? -30 : tTextAnchor === 'end' ? 30 : 0);
+            const tLabelLines = wrapLabel(centerPart.title);
+            const tIsSelected = selectedPartNumber === centerPart.partNumber;
+            const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const tOutlineInner = Math.max(tInner + outlineInset, CENTER_DISC_RADIUS + outlineInset);
+
+            return (
+              <g opacity={morphT} pointer-events="none">
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    tInner, tOuter,
+                    target.startAngle, target.endAngle,
+                    CENTER_DISC_RADIUS,
+                    1 - morphT
+                  )}
+                  fill={centerPart.colorHex}
+                  opacity={1 / Math.max(morphT, 0.01)}
+                />
+                {tIsSelected && (
+                  <path
+                    d={morphedDonutPath(
+                      CENTER, CENTER,
+                      tOutlineInner, tOuter - outlineInset,
+                      target.startAngle, target.endAngle,
+                      CENTER_DISC_RADIUS - outlineInset,
+                      1 - morphT
+                    )}
+                    fill="none"
+                    stroke="#0f172a"
+                    stroke-width={SELECTION_OUTLINE_WIDTH}
+                    stroke-linejoin="round"
+                  />
+                )}
+                <text
+                  x={tNumberPos.x}
+                  y={tNumberPos.y}
+                  fill="white"
+                  font-size="24"
+                  font-family="Inter, sans-serif"
+                  font-weight="700"
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                >
+                  {centerPart.partNumber}
+                </text>
+                <line
+                  x1={tConnStart.x}
+                  y1={tConnStart.y}
+                  x2={tConnEnd.x}
+                  y2={tConnEnd.y}
+                  stroke={tTopWeight > 0.5 ? centerPart.colorHex : '#cbd5e1'}
+                  stroke-width={lerp(1.5, 2.5, tTopWeight)}
+                />
+                <circle cx={tConnEnd.x} cy={tConnEnd.y} r={3.5} fill={centerPart.colorHex} />
+                <text
+                  x={tLabelX}
+                  y={tLabelPos.y - (tLabelLines.length * 8)}
+                  fill={tTopWeight > 0.5 ? '#0f172a' : '#334155'}
+                  font-size={`${lerp(11, 12, tTopWeight)}`}
+                  font-family="Inter, sans-serif"
+                  font-weight="700"
+                  letter-spacing="0.12em"
+                  text-anchor={tTextAnchor}
+                >
+                  <tspan x={tLabelX} dy="0">
+                    {centerPart.partName.toUpperCase()}
+                  </tspan>
+                  {tLabelLines.map((line, lineIndex) => (
+                    <tspan
+                      x={tLabelX}
+                      dy={lineIndex === 0 ? 16 : 14}
+                      font-size={`${lerp(13, 14, tTopWeight)}`}
+                      font-weight={tTopWeight > 0.5 ? '700' : '600'}
+                      letter-spacing="0"
+                    >
+                      {line}
+                    </tspan>
+                  ))}
+                </text>
+              </g>
+            );
+          })()}
+
           {removeMorphT > 0 && hasCenter && centerPart && (() => {
             // Compute where the center part would go in the full 10-part ring
             const fullOuter = parts;
@@ -1351,7 +1476,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
               cy={CENTER}
               r={CENTER_DISC_RADIUS}
               fill={centerDisplayPart.colorHex}
-              opacity={removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1}
+              opacity={
+                removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
+              }
             />
             {removeMorphT === 0 && (
               (centerPart && selectedPartNumber === centerPart.partNumber && !(morphT > 0 && morphPartNumber !== null))
@@ -1367,7 +1494,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
                 pointer-events="none"
               />
             ) : null}
-            <g opacity={removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1}>
+            <g opacity={
+              removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
+            }>
             <text
               x={CENTER}
               y={CENTER - 30}
