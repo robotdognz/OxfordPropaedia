@@ -1,6 +1,12 @@
 ---
 import SearchDialog from '../search/SearchDialog';
 const base = import.meta.env.BASE_URL;
+const navLinks = [
+  { href: `${base}/vsi`, label: 'VSI' },
+  { href: `${base}/macropaedia`, label: 'Macropaedia' },
+  { href: `${base}/about`, label: 'About' },
+];
+const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
 ---
 
 <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
@@ -33,26 +39,11 @@ const base = import.meta.env.BASE_URL;
           <kbd class="hidden sm:inline px-1.5 py-0.5 text-xs font-mono text-gray-400 bg-white rounded border border-gray-200">/</kbd>
         </button>
 
-        <a
-          href={`${base}/vsi`}
-          class="text-sm font-sans text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          VSI
-        </a>
-
-        <a
-          href={`${base}/macropaedia`}
-          class="text-sm font-sans text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          Macropaedia
-        </a>
-
-        <a
-          href={`${base}/about`}
-          class="text-sm font-sans text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          About
-        </a>
+        {navLinks.map((link) => (
+          <a href={link.href} class="text-sm font-sans text-gray-600 hover:text-gray-900 transition-colors">
+            {link.label}
+          </a>
+        ))}
       </nav>
 
       <!-- Mobile buttons -->
@@ -85,6 +76,19 @@ const base = import.meta.env.BASE_URL;
         </button>
       </div>
     </div>
+
+    <nav class="md:hidden -mx-4 border-t border-gray-100 px-4 py-2" aria-label="Mobile site navigation">
+      <div class="flex gap-2 overflow-x-auto pb-1">
+        {mobileNavLinks.map((link) => (
+          <a
+            href={link.href}
+            class="shrink-0 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-sans text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:text-gray-900"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </nav>
   </div>
 </header>
 

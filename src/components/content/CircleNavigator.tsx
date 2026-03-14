@@ -590,9 +590,9 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             How to use the circle
           </p>
           <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-600">
-            <li>Drag any outer segment around the ring to rotate the order of the parts.</li>
-            <li>Pull an outer segment inward toward the centre to make that part the middle of the circle.</li>
-            <li>Use the floating labels or the selected-part controls to open any part directly.</li>
+            <li>Rotate the ring to change which part stands at the top, so you can see the same outline with a different emphasis.</li>
+            <li>Pull a part inward to place it at the centre when you want that field to act as the organising focus for everything around it.</li>
+            <li>Use the floating labels or the selected-part controls to move from this conceptual map straight into the part you want to study.</li>
           </ul>
         </div>
       </div>
