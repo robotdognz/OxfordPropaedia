@@ -47,31 +47,39 @@ function normalizeText(text: string) {
     .trim();
 }
 
+const STOP_WORDS = new Set([
+  'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from',
+  'has', 'he', 'in', 'is', 'it', 'its', 'of', 'on', 'or', 'that',
+  'the', 'to', 'was', 'were', 'will', 'with',
+]);
+
 function getQueryTokens(query: string) {
   return normalizeText(query)
     .split(' ')
-    .filter((token) => token.length > 1);
+    .filter((token) => token.length > 1 && !STOP_WORDS.has(token));
 }
 
 function matchesQuery(text: string, tokens: string[]) {
   if (tokens.length === 0) return true;
   const normalized = normalizeText(text);
-  return tokens.every((token) => normalized.includes(token));
+  // For single tokens, simple includes check
+  if (tokens.length === 1) return normalized.includes(tokens[0]);
+  // For multi-word queries, check if tokens appear near each other (within ~5 words)
+  const fullPhrase = tokens.join(' ');
+  if (normalized.includes(fullPhrase)) return true;
+  // Proximity check: build a regex that allows a few words between each token
+  const proximityPattern = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('(?:\\s+\\S+){0,5}\\s+');
+  return new RegExp(proximityPattern, 'i').test(normalized);
 }
 
 function buildHighlightedUrl(rawUrl: string, query: string) {
-  const highlightTerms = normalizeText(query)
-    .split(' ')
-    .filter(Boolean);
-
-  if (highlightTerms.length === 0) {
-    return rawUrl;
-  }
+  const trimmed = query.trim();
+  if (!trimmed) return rawUrl;
 
   try {
     const isAbsolute = /^(https?:)?\/\//.test(rawUrl);
     const url = new URL(isAbsolute ? rawUrl : `https://example.com${rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`}`);
-    highlightTerms.forEach((term) => url.searchParams.append(PAGEFIND_HIGHLIGHT_PARAM, term));
+    url.searchParams.append(PAGEFIND_HIGHLIGHT_PARAM, trimmed);
     return isAbsolute ? url.toString() : url.toString().replace(/^https:\/\/example\.com/, '');
   } catch {
     return rawUrl;
@@ -135,7 +143,6 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
       try {
         const pf = await import(/* @vite-ignore */ `${baseUrl}/pagefind/pagefind.js`);
         await pf.options({
-          highlightParam: PAGEFIND_HIGHLIGHT_PARAM,
           ranking: { termSimilarity: 0 },
         });
         await pf.init();

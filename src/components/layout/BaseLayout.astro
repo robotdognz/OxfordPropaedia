@@ -74,7 +74,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         if (!terms.length) return;
 
         var termPattern = new RegExp(terms.join('|'), 'i');
-        var openedPanels = [];
 
         function delay(ms) {
           return new Promise(function(resolve) { setTimeout(resolve, ms); });
@@ -106,7 +105,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
             var panel = panelId && document.getElementById(panelId);
             if (panel && termPattern.test(panel.textContent || '')) {
               btn.click();
-              openedPanels.push(panel);
               count++;
             }
           });
@@ -114,7 +112,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           main.querySelectorAll('details:not([open])').forEach(function(el) {
             if (termPattern.test(el.textContent || '')) {
               el.open = true;
-              openedPanels.push(el);
               count++;
             }
           });
@@ -159,13 +156,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           });
         }
 
-        /** Scrolls to the best highlight — preferring marks inside panels we opened. */
+        /** Scrolls to the first visible highlight on the page. */
         function scrollToHighlight() {
-          var target = null;
-          for (var i = openedPanels.length - 1; i >= 0 && !target; i--) {
-            target = openedPanels[i].querySelector('.' + HIGHLIGHT_CLASS);
-          }
-          if (!target) target = document.querySelector('.' + HIGHLIGHT_CLASS);
+          var target = document.querySelector('.' + HIGHLIGHT_CLASS);
           if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
