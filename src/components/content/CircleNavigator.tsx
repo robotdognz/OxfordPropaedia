@@ -9,8 +9,24 @@ export interface CircleNavigatorPart {
   colorHex: string;
 }
 
+export interface SectionConnection {
+  sourceSection: string;
+  targetSection: string;
+  sourcePath: string;
+  targetPath: string;
+}
+
+export interface SectionMeta {
+  title: string;
+  partNumber: number;
+  sectionCode: string;
+}
+
 export interface CircleNavigatorProps {
   parts: CircleNavigatorPart[];
+  connections: Record<string, SectionConnection[]>;
+  sectionMeta: Record<string, SectionMeta>;
+  baseUrl: string;
 }
 
 const VIEWBOX_SIZE = 680;
@@ -195,7 +211,39 @@ type DragState = {
   rotateOnly: boolean;
 };
 
-export default function CircleNavigator({ parts }: CircleNavigatorProps) {
+function getConnectionKey(a: number, b: number): string {
+  return Math.min(a, b) + '-' + Math.max(a, b);
+}
+
+function summarizeConnections(
+  connections: Record<string, SectionConnection[]>,
+  sectionMeta: Record<string, SectionMeta>,
+  centerPart: number,
+  topPart: number
+): { section: SectionMeta; refCount: number }[] {
+  if (centerPart === topPart) return [];
+  const key = getConnectionKey(centerPart, topPart);
+  const refs = connections[key] || [];
+  if (!refs.length) return [];
+
+  // Count how many times each section appears as source or target
+  const counts: Record<string, number> = {};
+  refs.forEach((r) => {
+    counts[r.sourceSection] = (counts[r.sourceSection] || 0) + 1;
+    counts[r.targetSection] = (counts[r.targetSection] || 0) + 1;
+  });
+
+  return Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6)
+    .map(([code, count]) => ({
+      section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
+      refCount: count,
+    }))
+    .filter((s) => s.section.partNumber > 0);
+}
+
+export default function CircleNavigator({ parts, connections, sectionMeta, baseUrl }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
@@ -324,6 +372,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
   const centerTitleLines = wrapLabel(centerDisplayPart.title, 14, 2);
+  const suggestedSections = summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber);
 
   const rotatePartToTop = (partNumber: number) => {
     const partIndex = outerParts.findIndex((part) => part.partNumber === partNumber);
@@ -927,6 +976,36 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
             Your curriculum is built around {centerPart.title.toLowerCase()} with {topPart.title.toLowerCase()} as the secondary emphasis.
           </p>
+          <div class="mt-3 border-t border-slate-200 pt-3">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+              Where these fields connect
+            </p>
+            {suggestedSections.length > 0 ? (
+              <ul class="mt-2 space-y-1">
+                {suggestedSections.map((s) => {
+                  const part = parts.find((p) => p.partNumber === s.section.partNumber);
+                  return (
+                    <li key={s.section.sectionCode}>
+                      <a
+                        href={`${baseUrl}/section/${s.section.sectionCode.replace(/\//g, '-')}`}
+                        class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                      >
+                        <span
+                          class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
+                          style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
+                        />
+                        <span class="text-slate-700 group-hover:text-indigo-700">{s.section.title}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : (
+              <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                No direct cross-references between these two parts.
+              </p>
+            )}
+          </div>
         </div>
       </div>
 

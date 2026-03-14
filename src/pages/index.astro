@@ -2,11 +2,22 @@
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import CircleNavigator from '../components/content/CircleNavigator';
 import navigation from '../data/navigation.json';
+import partConnections from '../data/part-connections.json';
 import { getCollection, render } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 
 const base = import.meta.env.BASE_URL;
 const parts = navigation.parts;
+
+// Build section metadata lookup for CircleNavigator
+const sectionMeta: Record<string, { title: string; partNumber: number; sectionCode: string }> = {};
+parts.forEach((p: any) => {
+  p.divisions.forEach((d: any) => {
+    d.sections.forEach((s: any) => {
+      sectionMeta[s.sectionCode] = { title: s.title, partNumber: p.partNumber, sectionCode: s.sectionCode };
+    });
+  });
+});
 
 const essays = await getCollection('essays');
 const circleEssay = essays.find((entry) => entry.data.title === 'The Circle of Learning');
@@ -388,7 +399,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
             </div>
 
             <div class="mt-8">
-              <CircleNavigator client:load parts={circleNavigatorParts} />
+              <CircleNavigator client:load parts={circleNavigatorParts} connections={partConnections} sectionMeta={sectionMeta} baseUrl={base} />
             </div>
           </div>
 
