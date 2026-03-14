@@ -507,9 +507,9 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       dragState.moved = true;
     }
 
-    if (!dragState.rotateOnly && dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_PREVIEW_THRESHOLD) {
+    if (!dragState.rotateOnly && dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_COMMIT_THRESHOLD) {
       setCenterPreviewPartNumber(dragState.activePartNumber);
-      dragState.readyForCenter = nextRadius <= CENTER_COMMIT_THRESHOLD;
+      dragState.readyForCenter = true;
       return;
     }
 
@@ -554,8 +554,8 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   };
 
   return (
-    <div class="grid gap-5 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
-      <div class="rounded-[1rem] border border-slate-200 bg-slate-50 p-1 sm:rounded-[1.75rem] sm:p-6">
+    <div class="grid gap-3 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
+      <div class="sm:rounded-[1.75rem] sm:border sm:border-slate-200 sm:bg-slate-50 sm:p-6">
         <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
@@ -872,7 +872,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           </g>
         </svg>
 
-        <div class="mt-4 rounded-[1.1rem] border border-slate-200 bg-white/95 px-4 py-3 shadow-sm sm:mt-5 sm:px-5">
+        <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-[1.1rem] sm:px-5 sm:py-3">
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
             Current emphasis
           </p>
@@ -882,8 +882,8 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
         </div>
       </div>
 
-      <div class="space-y-3 sm:space-y-4">
-        <div class="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm sm:rounded-[1.75rem] sm:p-6">
+      <div class="space-y-2 sm:space-y-4">
+        <div class="rounded-xl border border-slate-200 bg-white px-3 py-3 shadow-sm sm:rounded-[1.75rem] sm:p-6">
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Selected Part
           </p>
@@ -921,7 +921,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           </div>
         </div>
 
-        <div class="rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm sm:rounded-[1.75rem] sm:p-6">
+        <div class="rounded-xl border border-slate-200 bg-white px-3 py-3 shadow-sm sm:rounded-[1.75rem] sm:p-6">
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             How to use the circle
           </p>
