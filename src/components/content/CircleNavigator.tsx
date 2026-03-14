@@ -1094,16 +1094,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
           </div>
         </div>
 
-        <div class="rounded-xl border border-slate-200 bg-white px-3 py-3 shadow-sm sm:rounded-[1.75rem] sm:p-6">
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            How to use the circle
-          </p>
-          <ul class="mt-3 space-y-3 text-sm leading-6 text-slate-600 sm:mt-4 sm:leading-7">
-            <li>Rotate the ring to change which part stands at the top, so you can see the same outline with a different emphasis.</li>
-            <li>Pull a part inward to place it at the centre when you want that field to act as the organising focus for everything around it.</li>
-            <li>Use the floating labels or the selected-part controls to move from this conceptual map straight into the part you want to study.</li>
-          </ul>
-        </div>
       </div>
     </div>
   );
