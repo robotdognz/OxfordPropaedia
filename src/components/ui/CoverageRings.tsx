@@ -5,9 +5,10 @@ export interface CoverageRingsProps {
   rings: { label: string; count: number; total: number; color: string }[];
   size?: number;
   ringWidth?: number;
+  hideLegend?: boolean;
 }
 
-export default function CoverageRings({ rings, size = 160, ringWidth = 10 }: CoverageRingsProps) {
+export default function CoverageRings({ rings, size = 160, ringWidth = 10, hideLegend = false }: CoverageRingsProps) {
   const center = size / 2;
   const gap = 3;
   const [animated, setAnimated] = useState(false);
@@ -65,14 +66,16 @@ export default function CoverageRings({ rings, size = 160, ringWidth = 10 }: Cov
           );
         })}
       </svg>
-      <div class="mt-3 space-y-1">
-        {rings.map((ring) => (
-          <div key={ring.label} class="flex items-center gap-2 text-xs text-gray-500">
-            <span class="inline-block w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: ring.color }} />
-            <span>{ring.label}: {ring.count}/{ring.total}</span>
-          </div>
-        ))}
-      </div>
+      {!hideLegend && (
+        <div class="mt-3 space-y-1">
+          {rings.map((ring) => (
+            <div key={ring.label} class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="inline-block w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: ring.color }} />
+              <span>{ring.label}: {ring.count}/{ring.total}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

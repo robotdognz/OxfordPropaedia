@@ -153,9 +153,25 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
   return (
     <div class="space-y-8">
       <section class="flex flex-col gap-6 md:flex-row md:items-start">
-        <div class="flex-shrink-0 rounded-xl border border-gray-200 bg-white p-4 self-center md:self-stretch flex flex-col items-center justify-center">
-          <p class="text-xs font-medium uppercase tracking-wide text-gray-500 text-center mb-2">Your Coverage</p>
-          <CoverageRings rings={coverageRings} size={120} ringWidth={10} />
+        <div class="rounded-xl border border-gray-200 bg-white p-5 flex flex-row items-center gap-4 md:flex-col md:self-stretch md:items-center md:gap-3">
+          <div class="flex-shrink-0 md:hidden">
+            <CoverageRings rings={coverageRings} size={100} ringWidth={8} hideLegend />
+          </div>
+          <p class="hidden md:block text-sm font-medium uppercase tracking-wide text-gray-500">Your Coverage</p>
+          <div class="hidden md:flex md:flex-1 md:items-center">
+            <CoverageRings rings={coverageRings} size={120} ringWidth={10} />
+          </div>
+          <div class="md:hidden min-w-0">
+            <p class="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1.5">Your Coverage</p>
+            <div class="space-y-0.5">
+              {coverageRings.map((ring) => (
+                <div key={ring.label} class="flex items-center gap-1.5 text-xs text-gray-500">
+                  <span class="inline-block w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: ring.color }} />
+                  <span>{ring.label}: {ring.count}/{ring.total}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <div class="flex-1 grid gap-4 sm:grid-cols-2">
           <div class="rounded-xl border border-gray-200 bg-white p-5">
