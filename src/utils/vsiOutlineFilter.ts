@@ -153,44 +153,55 @@ export function filterMappingsForOutline<T extends SearchableVsiMapping>(
  * Sorts mappings by relevance to the section's title and outline text.
  * Used for the default (unfiltered) display order.
  */
+/**
+ * Computes a relevance score for a single mapping against section context.
+ */
+export function computeRelevanceScore(mapping: SearchableVsiMapping, contextTokens: string[]): number {
+  let score = 0;
+
+  const kwToks = keywordTokens(mapping.keywords);
+  const kwMatches = countTokenMatches(kwToks, contextTokens);
+  score += kwMatches * 3;
+  if (kwMatches >= 3) score += 5;
+  else if (kwMatches >= 2) score += 2;
+
+  const titleTokens = tokenize(mapping.vsiTitle);
+  const titleMatches = countTokenMatches(new Set(contextTokens), titleTokens);
+  score += titleMatches * 2;
+
+  const sToks = subjectTokens(mapping.subject);
+  score += countTokenMatches(sToks, contextTokens);
+
+  const rationaleTokens = new Set(tokenize(mapping.rationale));
+  let rationaleMatches = 0;
+  for (const token of contextTokens) {
+    if (rationaleTokens.has(token)) rationaleMatches++;
+  }
+  score += Math.min(rationaleMatches, 5);
+
+  return score;
+}
+
+/**
+ * Sorts mappings by relevance to the section's title and outline text.
+ * Returns mappings with scores attached.
+ */
 export function sortByDefaultRelevance<T extends SearchableVsiMapping>(
   mappings: T[],
   sectionTitle: string,
   sectionOutlineText?: string
-): T[] {
+): (T & { relevanceScore: number })[] {
   const contextText = `${sectionTitle} ${sectionOutlineText || ''}`;
   const contextTokens = tokenize(contextText);
 
-  const scored = mappings.map((mapping) => {
-    let score = 0;
+  const scored = mappings.map((mapping) => ({
+    ...mapping,
+    relevanceScore: computeRelevanceScore(mapping, contextTokens),
+  }));
 
-    // Keywords matching section context — strongest signal
-    const kwToks = keywordTokens(mapping.keywords);
-    const kwMatches = countTokenMatches(kwToks, contextTokens);
-    score += kwMatches * 3;
-    if (kwMatches >= 3) score += 5;
-    else if (kwMatches >= 2) score += 2;
-
-    // Title matching section context
-    const titleTokens = tokenize(mapping.vsiTitle);
-    const titleMatches = countTokenMatches(new Set(contextTokens), titleTokens);
-    score += titleMatches * 2;
-
-    // Subject matching section context
-    const sToks = subjectTokens(mapping.subject);
-    score += countTokenMatches(sToks, contextTokens);
-
-    // Rationale text matching — lighter weight (it's written to match by design)
-    const rationaleTokens = new Set(tokenize(mapping.rationale));
-    let rationaleMatches = 0;
-    for (const token of contextTokens) {
-      if (rationaleTokens.has(token)) rationaleMatches++;
-    }
-    score += Math.min(rationaleMatches, 5);
-
-    return { mapping, score };
-  });
-
-  scored.sort((a, b) => b.score - a.score);
-  return scored.map(({ mapping }) => mapping);
+  scored.sort((a, b) => b.relevanceScore - a.relevanceScore);
+  return scored;
 }
+
+/** Tokenize text — exported for use in build-time scoring. */
+export { tokenize };

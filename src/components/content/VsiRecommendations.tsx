@@ -68,8 +68,8 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
 
   if (!mappings || mappings.length === 0) return null;
 
-  const sortedMappings = sortByDefaultRelevance(mappings, sectionTitle, sectionOutlineText);
-  const visibleMappings = selection ? filterMappingsForOutline(sortedMappings, selection) : sortedMappings;
+  const scoredMappings = sortByDefaultRelevance(mappings, sectionTitle, sectionOutlineText);
+  const visibleMappings = selection ? filterMappingsForOutline(scoredMappings, selection) : scoredMappings;
   const totalCount = mappings.length;
   const visibleCount = visibleMappings.length;
   const isFiltered = selection !== null;
@@ -122,6 +122,10 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
             {visibleMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
 
+              const relevanceScore = (mapping as any).relevanceScore ?? 0;
+              const sectionMax = Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
+              const matchPercent = Math.round(Math.min(relevanceScore / sectionMax, 1) * 100);
+
               return (
                 <VsiCard
                   key={`${mapping.vsiTitle}-${mapping.vsiAuthor}-${index}`}
@@ -131,6 +135,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   baseUrl={baseUrl}
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
+                  matchPercent={matchPercent}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />

@@ -34,8 +34,16 @@ export interface VsiCardProps {
   baseUrl: string;
   publicationYear?: number;
   edition?: number;
+  matchPercent?: number;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+}
+
+function matchColor(percent: number): string {
+  if (percent >= 70) return 'bg-emerald-500';
+  if (percent >= 40) return 'bg-emerald-400';
+  if (percent >= 20) return 'bg-amber-400';
+  return 'bg-gray-300';
 }
 
 export default function VsiCard({
@@ -45,11 +53,13 @@ export default function VsiCard({
   baseUrl,
   publicationYear,
   edition,
+  matchPercent,
   checked,
   onCheckedChange,
 }: VsiCardProps) {
   const editionLabel = formatEditionLabel(edition);
   const metadata = [author, editionLabel, publicationYear ? String(publicationYear) : null].filter(Boolean).join(' · ');
+  const showMatch = matchPercent !== undefined && matchPercent > 0;
 
   return (
     <div class="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow duration-200">
@@ -69,6 +79,17 @@ export default function VsiCard({
           Done
         </label>
       </div>
+
+      {showMatch && (
+        <div class="mb-3">
+          <div class="h-1.5 rounded-full bg-gray-100 overflow-hidden">
+            <div
+              class={`h-full rounded-full ${matchColor(matchPercent)}`}
+              style={{ width: `${matchPercent}%` }}
+            />
+          </div>
+        </div>
+      )}
 
       {rationale && (
         <Accordion title="Why this book?" defaultOpen={false}>
