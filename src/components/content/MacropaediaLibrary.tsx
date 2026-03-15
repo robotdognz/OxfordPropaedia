@@ -11,6 +11,7 @@ import {
   type ReadingSectionSummary,
 } from '../../utils/readingData';
 import { sectionUrl } from '../../utils/helpers';
+import CoverageRings from '../ui/CoverageRings';
 
 export interface MacropaediaLibraryProps {
   entries: MacropaediaAggregateEntry[];
@@ -109,6 +110,32 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
   );
   const coverage = buildMacropaediaCoverageSnapshot(entries, completedChecklistKeys);
   const completedCount = entries.filter((entry) => Boolean(checklistState[entry.checklistKey])).length;
+
+  // Compute part/division/section coverage from checked entries
+  const allParts = new Set<number>();
+  const allDivisions = new Set<string>();
+  const allSections = new Set<string>();
+  const coveredParts = new Set<number>();
+  const coveredDivisions = new Set<string>();
+  const coveredSections = new Set<string>();
+  for (const entry of entries) {
+    const isChecked = Boolean(checklistState[entry.checklistKey]);
+    for (const s of entry.sections) {
+      allParts.add(s.partNumber);
+      allDivisions.add(s.divisionId);
+      allSections.add(s.sectionCode);
+      if (isChecked) {
+        coveredParts.add(s.partNumber);
+        coveredDivisions.add(s.divisionId);
+        coveredSections.add(s.sectionCode);
+      }
+    }
+  }
+  const coverageRings = [
+    { label: 'Parts', count: coveredParts.size, total: allParts.size, color: '#6366f1' },
+    { label: 'Divisions', count: coveredDivisions.size, total: allDivisions.size, color: '#8b5cf6' },
+    { label: 'Sections', count: coveredSections.size, total: allSections.size, color: '#a78bfa' },
+  ];
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
@@ -125,36 +152,42 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
 
   return (
     <div class="space-y-8">
-      <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Articles</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">{entries.length}</p>
-          <p class="mt-2 text-sm text-gray-600">Unique Macropaedia titles referenced in the outline.</p>
+      <section class="flex flex-col gap-6 md:flex-row md:items-start">
+        <div class="flex-shrink-0 rounded-xl border border-gray-200 bg-white p-4 self-center md:self-stretch flex flex-col items-center justify-center">
+          <p class="text-xs font-medium uppercase tracking-wide text-gray-500 text-center mb-2">Your Coverage</p>
+          <CoverageRings rings={coverageRings} size={120} ringWidth={10} />
         </div>
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Checked Off</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">{completedCount}</p>
-          <p class="mt-2 text-sm text-gray-600">Uses the same checklist state as the section reading boxes.</p>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">
-            {coverage.currentlyCoveredSections} / {coverage.totalCoveredSections}
-          </p>
-          <p class="mt-2 text-sm text-gray-600">Sections with at least one Macropaedia article already covered by your checked list.</p>
-        </div>
-        <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Article</p>
-          {bestNextArticle ? (
-            <>
-              <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextArticle.title}</p>
-              <p class="mt-3 text-sm text-amber-900">
-                Adds {bestNextArticle.newSectionCount} new sections, {bestNextArticle.sectionCount} total.
-              </p>
-            </>
-          ) : (
-            <p class="mt-2 text-sm text-amber-900">No unread article adds any further section coverage right now.</p>
-          )}
+        <div class="flex-1 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Articles</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">{entries.length}</p>
+            <p class="mt-2 text-sm text-gray-600">Unique Macropaedia titles referenced in the outline.</p>
+          </div>
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Checked Off</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">{completedCount}</p>
+            <p class="mt-2 text-sm text-gray-600">Uses the same checklist state as the section reading boxes.</p>
+          </div>
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">
+              {coverage.currentlyCoveredSections} / {coverage.totalCoveredSections}
+            </p>
+            <p class="mt-2 text-sm text-gray-600">Sections with at least one article covered by your checked list.</p>
+          </div>
+          <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Article</p>
+            {bestNextArticle ? (
+              <>
+                <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextArticle.title}</p>
+                <p class="mt-3 text-sm text-amber-900">
+                  Adds {bestNextArticle.newSectionCount} new sections, {bestNextArticle.sectionCount} total.
+                </p>
+              </>
+            ) : (
+              <p class="mt-2 text-sm text-amber-900">No unread article adds any further section coverage right now.</p>
+            )}
+          </div>
         </div>
       </section>
 

@@ -14,6 +14,20 @@ const entries = buildVsiAggregateEntries(
   mappings.map((entry) => entry.data),
   catalogCollections.flatMap((entry) => entry.data.titles)
 );
+
+// Compute outline item counts per section for sub-section coverage
+function countOutlineItems(nodes: any[]): number {
+  let count = 0;
+  (nodes || []).forEach((n: any) => { count++; count += countOutlineItems(n.children); });
+  return count;
+}
+const outlineItemCounts: Record<string, number> = {};
+let totalOutlineItems = 0;
+for (const s of sections) {
+  const count = countOutlineItems(s.data.outline);
+  outlineItemCounts[s.data.sectionCode] = count;
+  totalOutlineItems += count;
+}
 ---
 
 <BaseLayout
@@ -31,7 +45,7 @@ const entries = buildVsiAggregateEntries(
     </header>
 
     <section class="mt-10">
-      <VsiLibrary client:load entries={entries} baseUrl={base} />
+      <VsiLibrary client:load entries={entries} baseUrl={base} outlineItemCounts={outlineItemCounts} totalOutlineItems={totalOutlineItems} />
     </section>
   </main>
 </BaseLayout>

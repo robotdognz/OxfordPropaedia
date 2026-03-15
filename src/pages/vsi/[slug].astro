@@ -1,19 +1,53 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import CoverageRings from '../../components/ui/CoverageRings';
 import { getCollection } from 'astro:content';
 import { slugify } from '../../utils/helpers';
 import { formatEditionLabel } from '../../utils/readingData';
 import navigation from '../../data/navigation.json';
 
 export async function getStaticPaths() {
+  function countOutlineItems(nodes: any[]): number {
+    let count = 0;
+    (nodes || []).forEach((n: any) => { count++; count += countOutlineItems(n.children); });
+    return count;
+  }
+  const nav = navigation as any;
+
+  // Build section metadata
   const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
-  (navigation as any).parts.forEach((p: any) => {
+  nav.parts.forEach((p: any) => {
     p.divisions.forEach((d: any) => {
       d.sections.forEach((s: any) => {
         sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
       });
     });
   });
+
+  // Compute totals
+  let totalDivisions = 0;
+  let totalSections = 0;
+  nav.parts.forEach((p: any) => {
+    totalDivisions += p.divisions.length;
+    p.divisions.forEach((d: any) => totalSections += d.sections.length);
+  });
+
+  // Load sections for outline item counts
+  const allSections = await getCollection('sections');
+  const sectionOutlineCounts: Record<string, number> = {};
+  let totalOutlineItems = 0;
+  for (const s of allSections) {
+    const count = countOutlineItems(s.data.outline);
+    sectionOutlineCounts[s.data.sectionCode] = count;
+    totalOutlineItems += count;
+  }
+
+  const totals = {
+    parts: nav.parts.length,
+    divisions: totalDivisions,
+    sections: totalSections,
+    outlineItems: totalOutlineItems,
+  };
 
   const catalogCollections = await getCollection('vsi');
   const catalog = catalogCollections.flatMap((entry) => entry.data.titles);
@@ -30,15 +64,32 @@ export async function getStaticPaths() {
         }
       }
     }
+
+    // Compute coverage
+    const coveredParts = new Set(sections.map(s => s.meta.partNumber));
+    const coveredDivisions = new Set(sections.map(s => s.meta.divisionId));
+    const coveredSections = new Set(sections.map(s => s.sectionCode));
+    let coveredOutlineItems = 0;
+    for (const code of coveredSections) {
+      coveredOutlineItems += sectionOutlineCounts[code] || 0;
+    }
+
+    const coverage = {
+      parts: coveredParts.size,
+      divisions: coveredDivisions.size,
+      sections: coveredSections.size,
+      outlineItems: coveredOutlineItems,
+    };
+
     return {
       params: { slug: slugify(entry.title) },
-      props: { entry, sections },
+      props: { entry, sections, coverage, totals },
     };
   });
 }
 
 const base = import.meta.env.BASE_URL;
-const { entry, sections: mappedSections } = Astro.props;
+const { entry, sections: mappedSections, coverage, totals } = Astro.props;
 
 // Group by part
 const byPart = new Map<number, typeof mappedSections>();
@@ -51,6 +102,15 @@ const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
 const editionLabel = formatEditionLabel(entry.edition);
 const metadata = [entry.author, editionLabel, entry.publicationYear ? String(entry.publicationYear) : null].filter(Boolean).join(' · ');
+
+// Ring chart data
+const rings = [
+  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
+  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
+  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
+  { label: 'Sub-sections', count: coverage.outlineItems, total: totals.outlineItems, color: '#c4b5fd' },
+];
+
 ---
 
 <BaseLayout title={`${entry.title} — Oxford VSI`} description={entry.abstract || `${entry.title} by ${entry.author}`}>
@@ -63,31 +123,39 @@ const metadata = [entry.author, editionLabel, entry.publicationYear ? String(ent
       <span class="text-gray-900">{entry.title}</span>
     </nav>
 
-    <header>
-      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Oxford Very Short Introduction</p>
-      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{entry.title}</h1>
-      <p class="mt-2 text-base text-gray-500">{metadata}</p>
-      {entry.subject && (
-        <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
-      )}
-    </header>
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+      <div class="flex-1 min-w-0">
+        <header>
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Oxford Very Short Introduction</p>
+          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{entry.title}</h1>
+          <p class="mt-2 text-base text-gray-500">{metadata}</p>
+          {entry.subject && (
+            <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
+          )}
+        </header>
 
-    {entry.abstract && (
-      <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
-        <p class="mt-2 text-sm leading-relaxed text-gray-700">{entry.abstract}</p>
-      </section>
-    )}
+        {entry.abstract && (
+          <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
+            <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
+            <p class="mt-2 text-sm leading-relaxed text-gray-700">{entry.abstract}</p>
+          </section>
+        )}
 
-    {entry.keywords && entry.keywords.length > 0 && (
-      <section class="mt-4">
-        <div class="flex flex-wrap gap-1.5">
-          {entry.keywords.map((kw: string) => (
-            <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{kw}</span>
-          ))}
-        </div>
-      </section>
-    )}
+        {entry.keywords && entry.keywords.length > 0 && (
+          <section class="mt-4">
+            <div class="flex flex-wrap gap-1.5">
+              {entry.keywords.map((kw: string) => (
+                <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{kw}</span>
+              ))}
+            </div>
+          </section>
+        )}
+      </div>
+
+      <div class="flex-shrink-0 self-center sm:self-start">
+        <CoverageRings client:load rings={rings} size={160} ringWidth={10} />
+      </div>
+    </div>
 
     <section class="mt-8">
       <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">

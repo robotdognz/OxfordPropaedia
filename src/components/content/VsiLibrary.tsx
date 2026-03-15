@@ -12,10 +12,13 @@ import {
   type VsiAggregateEntry,
 } from '../../utils/readingData';
 import { sectionUrl } from '../../utils/helpers';
+import CoverageRings from '../ui/CoverageRings';
 
 export interface VsiLibraryProps {
   entries: VsiAggregateEntry[];
   baseUrl: string;
+  outlineItemCounts?: Record<string, number>;
+  totalOutlineItems?: number;
 }
 
 const INITIAL_VISIBLE_COUNT = 50;
@@ -120,7 +123,7 @@ function SectionLinks({
   );
 }
 
-export default function VsiLibrary({ entries, baseUrl }: VsiLibraryProps) {
+export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems }: VsiLibraryProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
@@ -145,6 +148,39 @@ export default function VsiLibrary({ entries, baseUrl }: VsiLibraryProps) {
   const coverage = buildVsiCoverageSnapshot(entries, completedChecklistKeys);
   const completedCount = entries.filter((entry) => Boolean(checklistState[entry.checklistKey])).length;
 
+  // Compute part/division/section/sub-section coverage from checked entries
+  const allParts = new Set<number>();
+  const allDivisions = new Set<string>();
+  const allSections = new Set<string>();
+  const coveredParts = new Set<number>();
+  const coveredDivisions = new Set<string>();
+  const coveredSections = new Set<string>();
+  for (const entry of entries) {
+    const isChecked = Boolean(checklistState[entry.checklistKey]);
+    for (const s of entry.sections) {
+      allParts.add(s.partNumber);
+      allDivisions.add(s.divisionId);
+      allSections.add(s.sectionCode);
+      if (isChecked) {
+        coveredParts.add(s.partNumber);
+        coveredDivisions.add(s.divisionId);
+        coveredSections.add(s.sectionCode);
+      }
+    }
+  }
+  let coveredOutlineItems = 0;
+  if (outlineItemCounts) {
+    for (const code of coveredSections) {
+      coveredOutlineItems += outlineItemCounts[code] || 0;
+    }
+  }
+  const coverageRings = [
+    { label: 'Parts', count: coveredParts.size, total: allParts.size, color: '#6366f1' },
+    { label: 'Divisions', count: coveredDivisions.size, total: allDivisions.size, color: '#8b5cf6' },
+    { label: 'Sections', count: coveredSections.size, total: allSections.size, color: '#a78bfa' },
+    ...(totalOutlineItems ? [{ label: 'Sub-sections', count: coveredOutlineItems, total: totalOutlineItems, color: '#c4b5fd' }] : []),
+  ];
+
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
@@ -162,37 +198,43 @@ export default function VsiLibrary({ entries, baseUrl }: VsiLibraryProps) {
 
   return (
     <div class="space-y-8">
-      <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Titles</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">{entries.length}</p>
-          <p class="mt-2 text-sm text-gray-600">Unique Oxford Very Short Introductions in the mapped reading list.</p>
+      <section class="flex flex-col gap-6 md:flex-row md:items-start">
+        <div class="flex-shrink-0 rounded-xl border border-gray-200 bg-white p-4 self-center md:self-stretch flex flex-col items-center justify-center">
+          <p class="text-xs font-medium uppercase tracking-wide text-gray-500 text-center mb-2">Your Coverage</p>
+          <CoverageRings rings={coverageRings} size={120} ringWidth={9} />
         </div>
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Checked Off</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">{completedCount}</p>
-          <p class="mt-2 text-sm text-gray-600">Shared with the Done boxes on section pages.</p>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
-          <p class="mt-2 font-serif text-3xl text-gray-900">
-            {coverage.currentlyCoveredSections} / {coverage.totalCoveredSections}
-          </p>
-          <p class="mt-2 text-sm text-gray-600">Sections with at least one VSI that are already covered by your checked titles.</p>
-        </div>
-        <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Read</p>
-          {bestNextRead ? (
-            <>
-              <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextRead.title}</p>
-              <p class="mt-1 text-sm text-amber-900">{bestNextRead.author}</p>
-              <p class="mt-3 text-sm text-amber-900">
-                Adds {bestNextRead.newSectionCount} new sections, {bestNextRead.sectionCount} total.
-              </p>
-            </>
-          ) : (
-            <p class="mt-2 text-sm text-amber-900">No unread VSI adds any further section coverage right now.</p>
-          )}
+        <div class="flex-1 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Titles</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">{entries.length}</p>
+            <p class="mt-2 text-sm text-gray-600">Unique Oxford Very Short Introductions in the mapped reading list.</p>
+          </div>
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Checked Off</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">{completedCount}</p>
+            <p class="mt-2 text-sm text-gray-600">Shared with the Done boxes on section pages.</p>
+          </div>
+          <div class="rounded-xl border border-gray-200 bg-white p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
+            <p class="mt-2 font-serif text-3xl text-gray-900">
+              {coverage.currentlyCoveredSections} / {coverage.totalCoveredSections}
+            </p>
+            <p class="mt-2 text-sm text-gray-600">Sections with at least one VSI covered by your checked titles.</p>
+          </div>
+          <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
+            <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Read</p>
+            {bestNextRead ? (
+              <>
+                <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextRead.title}</p>
+                <p class="mt-1 text-sm text-amber-900">{bestNextRead.author}</p>
+                <p class="mt-3 text-sm text-amber-900">
+                  Adds {bestNextRead.newSectionCount} new sections, {bestNextRead.sectionCount} total.
+                </p>
+              </>
+            ) : (
+              <p class="mt-2 text-sm text-amber-900">No unread VSI adds any further section coverage right now.</p>
+            )}
+          </div>
         </div>
       </section>
 

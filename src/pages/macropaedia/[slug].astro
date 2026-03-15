@@ -1,18 +1,27 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import CoverageRings from '../../components/ui/CoverageRings';
 import { getCollection } from 'astro:content';
 import { slugify } from '../../utils/helpers';
 import navigation from '../../data/navigation.json';
 
 export async function getStaticPaths() {
+  const nav = navigation as any;
+
   const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
-  (navigation as any).parts.forEach((p: any) => {
+  let totalDivisions = 0;
+  let totalSections = 0;
+  nav.parts.forEach((p: any) => {
+    totalDivisions += p.divisions.length;
     p.divisions.forEach((d: any) => {
+      totalSections += d.sections.length;
       d.sections.forEach((s: any) => {
         sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
       });
     });
   });
+
+  const totals = { parts: nav.parts.length, divisions: totalDivisions, sections: totalSections };
 
   const sections = await getCollection('sections');
   const articleMap = new Map<string, { title: string; sections: { sectionCode: string; meta: typeof sectionMeta[string] }[] }>();
@@ -35,14 +44,20 @@ export async function getStaticPaths() {
     }
   }
 
-  return [...articleMap.entries()].map(([slug, article]) => ({
-    params: { slug },
-    props: { article },
-  }));
+  return [...articleMap.entries()].map(([slug, article]) => {
+    const coveredParts = new Set(article.sections.map(s => s.meta.partNumber));
+    const coveredDivisions = new Set(article.sections.map(s => s.meta.divisionId));
+    const coverage = {
+      parts: coveredParts.size,
+      divisions: coveredDivisions.size,
+      sections: article.sections.length,
+    };
+    return { params: { slug }, props: { article, coverage, totals } };
+  });
 }
 
 const base = import.meta.env.BASE_URL;
-const { article } = Astro.props;
+const { article, coverage, totals } = Astro.props;
 
 // Group by part
 const byPart = new Map<number, typeof article.sections>();
@@ -52,6 +67,14 @@ for (const s of article.sections) {
   byPart.set(s.meta.partNumber, arr);
 }
 const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
+
+// Ring chart
+const rings = [
+  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
+  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
+  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
+];
+
 ---
 
 <BaseLayout title={`${article.title} — Macropaedia`} description={`Macropaedia article: ${article.title}`}>
@@ -64,10 +87,18 @@ const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
       <span class="text-gray-900">{article.title}</span>
     </nav>
 
-    <header>
-      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
-      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.title}</h1>
-    </header>
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+      <div class="flex-1 min-w-0">
+        <header>
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
+          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.title}</h1>
+        </header>
+      </div>
+
+      <div class="flex-shrink-0 self-center sm:self-start">
+        <CoverageRings client:load rings={rings} size={140} ringWidth={12} />
+      </div>
+    </div>
 
     <section class="mt-8">
       <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
