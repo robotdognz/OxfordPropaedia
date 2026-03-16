@@ -100,6 +100,7 @@ const vsiCatalogCollection = defineCollection({
       publicationDate: z.string().optional(),
       edition: z.number().int().optional(),
       approximateNumber: z.boolean().optional(),
+      summaryAI: z.string().optional(),
     })),
   }),
 });
