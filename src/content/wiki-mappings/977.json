@@ -1,67 +1,109 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "977",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Modern Australian and Oceanian history is part of the global story of human history.",
+      "articleTitle": "Australia",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
+        "B",
         "B.1",
+        "B.2",
         "B.3",
-        "C.1"
-      ]
+        "B.4"
+      ],
+      "rationaleAI": "Covers Australia's full post-1920 history including Labor–Nationalist political cycles, WWII military role and economic effects, postwar prosperity under Menzies, Whitlam's constitutional crisis, Aboriginal rights, European and Asian immigration, and regional diplomacy — addressing all B sub-paths directly."
     },
     {
       "articleTitle": "Oceania",
-      "rationaleAI": "Australia and Oceania since 1920 have experienced decolonization, independence movements, and Pacific regional development.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C"
-      ]
+        "A.3"
+      ],
+      "rationaleAI": "Covers the Pacific island region's post-WWI League of Nations mandate system, WWII Pacific theatre and Japanese power, post-WWII UN trusteeship administrations, movements toward autonomy, and the emergence of independent island states — directly addressing A.1, A.2, and A.3."
     },
     {
-      "articleTitle": "Polynesia",
-      "rationaleAI": "Modern Polynesian societies are part of Oceania since 1920.",
+      "articleTitle": "World War II",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.2",
-        "A.3",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "The Pacific War and the rise and fall of Japanese power is the core subject of A.2, while WWII's military role and economic effects on Australia are central to B.1, and New Zealand's Allied participation is part of C.1."
     },
     {
-      "articleTitle": "Australia",
-      "rationaleAI": "Modern Australia since 1920 is directly covered in this section.",
+      "articleTitle": "Decolonization",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
         "A.3",
+        "A.1"
+      ],
+      "rationaleAI": "Covers the post-WWII dissolution of colonial empires and UN trusteeship systems that led to autonomous and independent Pacific island states (A.3), and contextualizes the League of Nations mandate system (A.1) that preceded it."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "A.1",
         "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
         "C.1"
-      ]
+      ],
+      "rationaleAI": "Britain held mandates and colonial territories across Oceania after WWI (A.1), was the metropole whose dominion status shaped Australian and New Zealand political identity, and the Empire's decolonization trajectory frames C.1's Labour party programs."
+    },
+    {
+      "articleTitle": "Great Depression",
+      "relevantPathsAI": [
+        "B.1",
+        "C.1"
+      ],
+      "rationaleAI": "The Great Depression is explicitly referenced in the outlines for B.1 (Australia: industrial and rural development, formation of United Australia Party) and C.1 (New Zealand: Great Depression and Labour Party victory in 1935)."
+    },
+    {
+      "articleTitle": "Cold War",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Australia's participation in regional security alliances and military involvement in the Korean and Vietnam wars, as well as recognition of China and North Vietnam (B.3), are direct expressions of Cold War geopolitics in the Pacific region."
+    },
+    {
+      "articleTitle": "United Nations",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The UN trusteeship system that replaced the League of Nations mandates in Oceania, including the Trust Territory of the Pacific Islands and its dissolution in 1986, is a core subject of A.3."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "France held mandates and territories in the Pacific (French Polynesia, New Caledonia) relevant to A.1 and A.3, and French nuclear testing in the South Pacific is explicitly mentioned under B.3 as a focus of Australian foreign policy opposition."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "The mandate system as a form of colonial administration (A.1) and the subsequent shift toward autonomy and independence of Pacific territories (A.3) are directly within the scope of colonialism as a concept, covering the occupying powers' relationships with indigenous peoples."
+    },
+    {
+      "articleTitle": "United States",
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "US power in the Pacific was decisive in A.2 (the rise and fall of Japanese power, including WWII Pacific theatre), and US-led regional security alliances, including ANZUS, underpin Australia's military involvement in Korea and Vietnam covered in B.3."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "The post-WWI League of Nations mandate system (A.1) and the subsequent post-WWII UN trusteeship and decolonization process (A.3) are manifestations of imperial management of colonial territories that Imperialism as a concept directly addresses."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,134 +1,163 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "96/11",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Southwest Asian, North African, and Sub-Saharan African modern history are important human history chapters.",
+      "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.c",
         "B.1.b",
-        "B.2.c",
-        "B.3.a",
-        "B.3.b",
-        "D",
-        "D.1"
-      ]
+        "D.1",
+        "D.2",
+        "D.3.a",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "Covers Egypt under British rule 1882-1922 (reforms, nationalist revival, WWI independence) matching B.1.b, and the Scramble for Africa, colonial administration in West, East, and Central Africa matching D.1-D.5. The British Empire article addresses both the Egyptian and sub-Saharan colonial dimensions central to this section."
     },
     {
-      "articleTitle": "Modern era",
-      "rationaleAI": "Southwest Asia, North Africa, and Sub-Saharan Africa experienced transformative imperial and nationalist pressures from 1800 to 1920.",
+      "articleTitle": "World War I",
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.3.a"
+      ],
+      "rationaleAI": "WWI directly caused the dissolution of the Ottoman Empire (A.2.c), and the article covers British encouragement of Arab nationalism and the postwar settlement including the Balfour Declaration and partition of Ottoman territories (B.3.a)."
+    },
+    {
+      "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
         "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1.b",
-        "B.2",
-        "B.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Africa",
-      "rationaleAI": "Sub-Saharan Africa from 1885 experienced the scramble for Africa and colonial partition that reshaped the continent.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Scramble for Africa",
-      "rationaleAI": "The Scramble for Africa divided the continent among European powers in the late 19th century.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Algeria",
-      "rationaleAI": "Algeria's modern history falls within Southwest Asia and North Africa from 1800 to 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.2"
-      ]
+        "A.2.c"
+      ],
+      "rationaleAI": "Directly covers the Tanzimat reforms (A.2.a), Mahmud II's reign and centralisation (A.1), the Young Turk Revolution and Abdulhamid II's nationalism (A.2.c), and the empire's WWI participation and dissolution. The Ottoman Empire article is the primary source for the entire A strand of the outline."
     },
     {
       "articleTitle": "Egypt",
-      "rationaleAI": "Modern Egypt's transformation is covered in this section on Southwest Asia and North Africa.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.b",
-        "A.2.c",
-        "B",
         "B.1",
         "B.1.a",
-        "B.1.b",
+        "B.1.b"
+      ],
+      "rationaleAI": "Covers Muhammad Ali's centralized administration and successors (B.1.a), the Suez Canal, European financial and military intervention, British occupation 1882-1922, Baring's reforms, nationalist revival, and 1922 independence (B.1.b). Egypt is the primary article for the entire B.1 path."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "Napoleon's Egyptian campaign (1798-1801) is explicitly the opening event of outline path B.1.a, marking the beginning of French and then British occupation of Egypt. The article covers this formative episode."
+    },
+    {
+      "articleTitle": "Algeria",
+      "relevantPathsAI": [
         "B.2",
         "B.2.a"
-      ]
+      ],
+      "rationaleAI": "Algeria directly maps to B.2.a, covering the French conquest beginning 1830, the colonial settlement regime, and the national resistance movement under Abdelkader that the outline explicitly names."
+    },
+    {
+      "articleTitle": "Scramble for Africa",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.2.a",
+        "D.3",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "Directly covers the 1884 Berlin Conference and European partition of Africa (D.1), colonial administration and African resistance in West Africa (D.2), and the broader process of European conquest across sub-Saharan Africa in the period 1880-1920. This is the central article for the entire D strand."
+    },
+    {
+      "articleTitle": "Ethiopia",
+      "relevantPathsAI": [
+        "D.3.b"
+      ],
+      "rationaleAI": "Explicitly covers Tewodros II (1855-68), Yohannes IV (1872-89), and Menilek II (1889-1913) as well as struggles against Egypt, the Sudan, and Italy \u2014 all named in outline path D.3.b on the consolidation of central power in Ethiopia."
+    },
+    {
+      "articleTitle": "Nigeria",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b"
+      ],
+      "rationaleAI": "Nigeria's pre-colonial Sokoto Caliphate and British colonisation of West Africa directly illustrate D.2 on European colonies in West Africa, particularly the challenges of establishing colonial regimes and reliance on African political structures (D.2.b)."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The decline in the slave trade is the first element of outline path D.1, which explicitly precedes the discussion of European commercial, missionary, and exploratory activities as drivers of the Scramble for Africa."
+    },
+    {
+      "articleTitle": "Middle East",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.a",
+        "B.3.b"
+      ],
+      "rationaleAI": "Covers Arab nationalism, the Arab-Israeli conflict origins, and Zionism as factors in Middle Eastern affairs \u2014 directly matching B.3.a (Arab nationalism, British encouragement in WWI, postwar settlement) and B.3.b (origins of Zionist movement and conflict with Arab nationalists)."
+    },
+    {
+      "articleTitle": "Democratic Republic of the Congo",
+      "relevantPathsAI": [
+        "D.5.b"
+      ],
+      "rationaleAI": "Directly covers Leopold II's Congo Free State, its establishment, and Belgian Congo policies through WWI \u2014 the specific content of outline path D.5.b on King Leopold II's colonial enterprise in the Congo."
     },
     {
       "articleTitle": "Turkey",
-      "rationaleAI": "Turkey's late Ottoman and early republican period falls within this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1.a",
-        "B.2",
-        "B.2.a",
-        "B.2.c",
-        "B.2.d"
-      ]
+        "A.2.c"
+      ],
+      "rationaleAI": "Turkey's history covers the Abdulhamid II era, the Young Turk Revolution (1908), the Committee of Union and Progress, and the final dissolution of the Ottoman Empire \u2014 the core content of A.2.c on the growth of Turkish nationalism."
     },
     {
-      "articleTitle": "Cairo",
-      "rationaleAI": "Cairo is the capital of modern Egypt, central to this section's coverage.",
+      "articleTitle": "Russia",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
+        "C.1"
+      ],
+      "rationaleAI": "Russian intrusions into Turkey are explicitly named in A.1 (empire under Mahmud II), and Russian penetration of Iran by competition with Britain is the central theme of C.1 on Iran under the Qajar dynasty. Russia's imperial expansion in both directions is core to understanding this section."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Addresses the theoretical and practical frameworks of colonial rule \u2014 mercantilism, chartered companies, coercive institutions \u2014 applicable to D.1 (imperialistic scramble and European partition of Africa) and D.2 (establishment of colonial regimes in West Africa)."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "D.1",
         "B.2"
-      ]
+      ],
+      "rationaleAI": "New Imperialism drove the Scramble for Africa (D.1) and European penetration of the Maghrib (B.2); the article covers Social Darwinism and civilising mission justifications and Lenin's and Hobson's economic theories that explain the 1880-1920 colonial expansion this section describes."
+    },
+    {
+      "articleTitle": "History of Africa",
+      "relevantPathsAI": [
+        "D.1",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "Covers European colonial penetration from the 15th century through anti-colonial movements, with particular attention to the Scramble for Africa period. Provides broad contextual coverage for the entire D strand of this section."
+    },
+    {
+      "articleTitle": "Italy",
+      "relevantPathsAI": [
+        "B.2.d"
+      ],
+      "rationaleAI": "Italy's Libyan conquest (1911-12) is the specific event that closes outline path B.2.d on Libya (Tripolitania and Cyrenaica) from c.1834 to 1920, including subjection to direct Turkish rule and the Italian conquest."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

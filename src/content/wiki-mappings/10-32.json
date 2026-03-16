@@ -1,358 +1,392 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/32",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "The physical sciences as a discipline are a major branch of science covered in this article.",
+      "articleTitle": "Physical cosmology",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.e",
-        "A.1.f",
-        "A.2",
-        "A.2.d",
-        "A.2.e",
-        "A.2.v",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Astronomy",
-      "rationaleAI": "Astronomy is one of the oldest physical sciences, employing physics and mathematics to study celestial phenomena.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Universe",
-      "rationaleAI": "The study of the universe is a major domain within the physical sciences, integrating physics, astronomy, and mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.d"
-      ]
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Physical cosmology is the astrophysical study of the universe's origin, evolution, and large-scale structure, directly corresponding to B.5's scope of cosmology and cosmogony. It covers the Big Bang model and relativistic cosmological frameworks central to A.1.f.iv."
     },
     {
       "articleTitle": "Chemistry",
-      "rationaleAI": "Chemistry is a major physical science discipline studying matter's composition, structure, and transformations.",
       "relevantPathsAI": [
-        "A",
-        "A.2.a",
-        "A.2.i.iv",
-        "A.2.i.iii",
-        "A.2.i.iv",
-        "A.2.v",
-        "A.3",
-        "A.3.a",
-        "A.3.i.ii",
-        "A.3.i"
-      ]
+        "D",
+        "D.1",
+        "D.2",
+        "A.3"
+      ],
+      "rationaleAI": "Chemistry is the foundational discipline whose nature, scope, and subdivisions are exactly what D maps out. It also covers the full historical trajectory of the science from alchemy through Lavoisier and quantum chemistry, aligning with A.3."
+    },
+    {
+      "articleTitle": "Astronomy",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "A.1"
+      ],
+      "rationaleAI": "Astronomy is precisely the discipline whose nature, methods, and component subdisciplines B addresses. It also surveys the full historical arc from ancient astronomical records through 20th-century radio and space astronomy, spanning A.1.a\u2013f."
+    },
+    {
+      "articleTitle": "Chemical element",
+      "relevantPathsAI": [
+        "A.3.c",
+        "D.1"
+      ],
+      "rationaleAI": "Chemical element covers Mendeleev's periodic table (A.3.c.i), the discovery of new elements and isotopes (A.3.c.ii), and the nature of chemistry's primary subject matter \u2014 atomic number and elemental composition \u2014 directly relevant to D.1."
+    },
+    {
+      "articleTitle": "Universe",
+      "relevantPathsAI": [
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Universe encompasses physical cosmology from the Big Bang through large-scale structure and dark matter/energy, matching B.5 and A.1.f.iv's relativistic cosmologies and A.1.f.i's statistical studies of galaxies."
     },
     {
       "articleTitle": "Physics",
-      "rationaleAI": "Physics is the foundational physical science studying matter, energy, and their interactions.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.f",
-        "A.1.i.ii"
-      ]
+        "C",
+        "C.1",
+        "C.2",
+        "A.2"
+      ],
+      "rationaleAI": "Physics maps directly onto C, which addresses the discipline's nature, component subdisciplines (mechanics, thermodynamics, quantum mechanics, etc.), and its relationship to other fields. It covers the full historical trajectory in A.2."
     },
     {
-      "articleTitle": "Time",
-      "rationaleAI": "Time is a fundamental concept in the physical sciences, from Newtonian mechanics to Einstein's relativistic spacetime.",
+      "articleTitle": "Gravity",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
         "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i"
-      ]
+        "A.2.c",
+        "C.2"
+      ],
+      "rationaleAI": "Gravity covers Newton's universal gravitation (A.1.c.iv, A.2.c) and Einstein's general relativistic reinterpretation as spacetime curvature, plus its central role in classical mechanics (C.2). Reconciling gravity with quantum mechanics connects to C.6."
     },
     {
-      "articleTitle": "Antoine Lavoisier",
-      "rationaleAI": "Lavoisier is the father of modern chemistry, establishing the law of conservation of mass and reforming chemical nomenclature.",
+      "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
         "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.d"
-      ]
+        "A.2.c"
+      ],
+      "rationaleAI": "Galileo is the archetypal figure of 17th-century astronomy (A.1.c \u2014 heliocentrism, telescope use) and physics (A.2.c \u2014 free fall, inertia, projectile motion), representing the core developments in both histories during the Scientific Revolution period."
     },
     {
-      "articleTitle": "Dmitri Mendeleev",
-      "rationaleAI": "Mendeleev's periodic law was a landmark achievement in the physical sciences and chemistry.",
+      "articleTitle": "Isaac Newton",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
+        "A.2.c",
         "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Marie Curie",
-      "rationaleAI": "Curie's discovery of radioactivity and the elements polonium and radium transformed the physical sciences.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.d",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.e"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Newton's Principia established classical mechanics and universal gravitation, directly corresponding to A.2.c (physics in the 16th\u201317th centuries) and A.1.c.iv (theory of universal gravitation). His laws remain the foundation of C.2's mechanics subdiscipline."
     },
     {
       "articleTitle": "Albert Einstein",
-      "rationaleAI": "Einstein's theories of relativity and contributions to quantum mechanics are among the most important achievements in the physical sciences.",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
+        "A.2.e",
+        "A.1.f"
+      ],
+      "rationaleAI": "Einstein transformed 20th-century physics through special and general relativity (A.2.e.i) and early quantum theory (A.2.e.ii), while his general relativity enabled the astronomical tests and cosmological red-shift findings described in A.1.f.iii."
     },
     {
       "articleTitle": "History of science",
-      "rationaleAI": "The evolution of the physical sciences is a major thread in the history of scientific achievement.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "History of science surveys the development of physics, chemistry, and astronomy from antiquity through the 20th century, covering the full scope of A and its sub-paths on the histories of astronomy, physics, and chemistry."
     },
     {
       "articleTitle": "Big Bang",
-      "rationaleAI": "The Big Bang theory is a landmark achievement of the physical sciences.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.d"
-      ]
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Big Bang is the cosmological theory central to B.5 (cosmology and cosmogony) and specifically maps to A.1.f.iv's relativistic cosmologies and open/closed models of the universe, along with the CMB observations noted in A.1.f."
     },
     {
-      "articleTitle": "Physical cosmology",
-      "rationaleAI": "Physical cosmology is a major branch of the physical sciences surveyed here.",
+      "articleTitle": "Physical chemistry",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv"
-      ]
+        "D.2",
+        "D.4",
+        "A.3.d"
+      ],
+      "rationaleAI": "Physical chemistry is an explicit subdivision of chemistry in D.2, applying thermodynamics and quantum mechanics to chemical systems. Its treatment of reaction kinetics and equilibrium addresses D.4 (study of chemical transformations \u2014 the priority coverage path) and reflects 20th-century chemistry in A.3.d."
+    },
+    {
+      "articleTitle": "Sun",
+      "relevantPathsAI": [
+        "B.2",
+        "A.1.f"
+      ],
+      "rationaleAI": "The Sun is the central body of solar science, fitting B.2's planetary and solar sciences component. Spacecraft and probe study of the Sun relates to A.1.f.v's major advances in solar-system astronomy."
+    },
+    {
+      "articleTitle": "Moon",
+      "relevantPathsAI": [
+        "B.2",
+        "A.1.f"
+      ],
+      "rationaleAI": "The Moon is Earth's only natural satellite and a primary object of B.2's lunar sciences. Apollo manned missions and subsequent analysis align with A.1.f.v's manned lunar missions and unmanned space probes."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Energy is the core physical quantity linking matter and its interactions (C.1) and is central to thermodynamics, mechanics, and electromagnetic theory \u2014 all subdisciplines under C.2. It is the unifying concept across the physical sciences' scope."
     },
     {
       "articleTitle": "Classical mechanics",
-      "rationaleAI": "Classical mechanics is a foundational branch of the physical sciences surveyed here.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.iii",
-        "A.1.v",
-        "A.2",
-        "A.2.a",
+        "C.2",
+        "A.2.c"
+      ],
+      "rationaleAI": "Classical mechanics is the explicit first subdiscipline listed under C.2 and its historical development \u2014 Newton's laws unifying celestial and terrestrial motion \u2014 corresponds directly to A.2.c (physics in the 16th\u201317th centuries)."
+    },
+    {
+      "articleTitle": "Optics",
+      "relevantPathsAI": [
+        "C.2",
         "A.2.c",
+        "A.2.d"
+      ],
+      "rationaleAI": "Optics is an explicit subdiscipline of physics under C.2. Its historical development through wave theory versus corpuscular theory and the search for the ether matches A.2.c and A.2.d.i."
+    },
+    {
+      "articleTitle": "Matter",
+      "relevantPathsAI": [
+        "C.1",
+        "A.2.e"
+      ],
+      "rationaleAI": "Matter is the primary subject of C.1 (physics' concern with matter and energy), and its quantum mechanical and particle physics dimensions connect to A.2.e.iii's development of theories of atomic structure, nuclear interactions, and elementary particles."
+    },
+    {
+      "articleTitle": "James Clerk Maxwell",
+      "relevantPathsAI": [
         "A.2.d",
-        "A.2.i.ii",
-        "A.2.i.iv"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Maxwell unified electricity, magnetism, and light into classical electromagnetism, directly corresponding to A.2.d.ii (development of theories of electricity, magnetism, and electromagnetic waves). Maxwell's equations define the electromagnetism subdiscipline in C.2."
     },
     {
-      "articleTitle": "Newton's laws of motion",
-      "rationaleAI": "Newton's laws are cornerstone principles of the physical sciences surveyed in this section.",
+      "articleTitle": "Thermodynamics",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Particle physics",
-      "rationaleAI": "Particle physics is a major branch of the physical sciences surveyed here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i.iv",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.2.d",
-        "A.2.i.iv",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.i.iv"
-      ]
-    },
-    {
-      "articleTitle": "Quantum mechanics",
-      "rationaleAI": "Quantum mechanics is a foundational theory of the physical sciences surveyed in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.v",
-        "A.2.c",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Space",
-      "rationaleAI": "Space as a physical concept is fundamental to the physical sciences surveyed here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "C.2",
+        "A.2.d"
+      ],
+      "rationaleAI": "Thermodynamics is an explicit subdiscipline under C.2. Its historical development through Carnot, Clausius, and Kelvin \u2014 laws of thermodynamics and kinetic theory \u2014 maps directly to A.2.d.iii."
     },
     {
       "articleTitle": "Theory of relativity",
-      "rationaleAI": "Relativity is a foundational theory of the physical sciences surveyed in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.iii",
-        "A.1.v.vi",
-        "A.1.v.viii",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.2.d"
-      ]
+        "A.2.e",
+        "A.1.f",
+        "C.6"
+      ],
+      "rationaleAI": "The theory of relativity (special and general) is the defining development of A.2.e.i. General relativity's observational tests \u2014 Mercury's perihelion, gravitational lensing, cosmological redshift \u2014 map precisely to A.1.f.iii. Its philosophical implications connect to C.6."
     },
     {
-      "articleTitle": "Inorganic chemistry",
-      "rationaleAI": "Inorganic chemistry is a major branch of the physical sciences surveyed here.",
+      "articleTitle": "Electricity",
       "relevantPathsAI": [
-        "A",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.2.c",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.i.iv",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Organic chemistry",
-      "rationaleAI": "Organic chemistry is a major branch of the physical sciences surveyed here.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.3.a",
-        "A.3.i.ii",
-        "A.3.i.iv",
-        "A.3.v",
-        "A.3.v.vii",
         "C.2",
-        "D",
-        "D.1"
-      ]
+        "A.2.d"
+      ],
+      "rationaleAI": "Electricity is an explicit component of physics under C.2 (electricity and magnetism). Its historical development from ancient observation through 19th-century theory corresponds to A.2.d.ii."
+    },
+    {
+      "articleTitle": "Mercury (planet)",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Mercury is a Solar System planet whose geology, orbital mechanics, and spacecraft exploration (Mariner 10, MESSENGER, BepiColombo) fall squarely within B.2's planetary sciences component."
+    },
+    {
+      "articleTitle": "Star",
+      "relevantPathsAI": [
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Stars are the primary subject of astrophysics (B.5), and their structure, formation, and evolution \u2014 nucleosynthesis through stellar remnants \u2014 correspond exactly to A.1.f.ii's theories of stellar structure, formation, and evolution."
+    },
+    {
+      "articleTitle": "Force",
+      "relevantPathsAI": [
+        "C.2",
+        "A.2.c"
+      ],
+      "rationaleAI": "Force is foundational to classical mechanics (C.2) via Newton's three laws, developed in A.2.c, and in modern physics reduces to the four fundamental interactions described in A.2.e.iii."
+    },
+    {
+      "articleTitle": "Electron",
+      "relevantPathsAI": [
+        "A.2.d",
+        "A.2.e",
+        "C.2"
+      ],
+      "rationaleAI": "The electron's discovery belongs to A.2.d.iv (discovery of the electron, radioactivity, X-rays). Its quantum mechanical behavior and role in atomic and condensed-matter physics connect to A.2.e.iii and C.2."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "C.2",
+        "A.2.d",
+        "A.1.f"
+      ],
+      "rationaleAI": "Electromagnetic radiation encompasses the full spectrum predicted by Maxwell's equations (A.2.d.ii, C.2). Multi-wavelength astronomy \u2014 radio, X-ray, infrared, gamma-ray \u2014 is precisely what A.1.f.vi covers regarding 20th-century astronomical instrumentation."
+    },
+    {
+      "articleTitle": "Antoine Lavoisier",
+      "relevantPathsAI": [
+        "A.3.b"
+      ],
+      "rationaleAI": "Lavoisier is the central figure of A.3.b.i (studies of combustion, disproof of phlogiston theory) and contributed fundamentally to A.3.b.ii through isolation and identification of elements including oxygen and hydrogen."
+    },
+    {
+      "articleTitle": "Michael Faraday",
+      "relevantPathsAI": [
+        "A.2.d",
+        "A.3.d"
+      ],
+      "rationaleAI": "Faraday discovered electromagnetic induction and laws of electrolysis, directly corresponding to A.2.d.ii. His electrochemical work and identification of benzene connect to A.3's chemistry history (electrochemistry developments in A.3.c.vi)."
+    },
+    {
+      "articleTitle": "Jupiter",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Jupiter is a major Solar System planet covered under B.2's planetary sciences, including its magnetic field, moons, and role in solar system formation \u2014 directly relevant to the study of planetary and lunar sciences."
+    },
+    {
+      "articleTitle": "Milky Way",
+      "relevantPathsAI": [
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "The Milky Way is the primary example of galactic structure studied in B.5 and A.1.f.i's statistical studies of stars, nebulae, and galaxies. Its central black hole (Sagittarius A*) connects to A.1.f.vii."
+    },
+    {
+      "articleTitle": "Planet",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Planet is the foundational subject of B.2's planetary sciences, covering the Solar System's eight planets, exoplanets, and the IAU definition distinguishing planets from dwarf planets."
+    },
+    {
+      "articleTitle": "Electromagnetism",
+      "relevantPathsAI": [
+        "C.2",
+        "A.2.d"
+      ],
+      "rationaleAI": "Electromagnetism is an explicit subdiscipline of physics (C.2) and its unification via Maxwell's equations is the central development in A.2.d.ii. Quantum electrodynamics extends this to A.2.e.ii/iii."
+    },
+    {
+      "articleTitle": "Speed of light",
+      "relevantPathsAI": [
+        "A.2.d",
+        "C.3"
+      ],
+      "rationaleAI": "The speed of light's measurement and invariance connect to A.2.d.i (wave theory, search for ether) and its role as a special relativistic postulate ties to A.2.e.i. Its measurement history exemplifies the experimental methods in C.3."
+    },
+    {
+      "articleTitle": "Periodic table",
+      "relevantPathsAI": [
+        "A.3.c",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "The periodic table is the direct subject of A.3.c.i (development by Mendeleev and Meyer) and organizes the elemental subject matter of D.1. Its quantum mechanical basis connects to D.2's physical chemistry subdivision."
     },
     {
       "articleTitle": "Telescope",
-      "rationaleAI": "The telescope transformed the physical sciences by opening astronomical observation.",
       "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.iii",
         "A.1.c",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.v",
-        "A.1.v.vi",
-        "A.2.a",
-        "A.2.c"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Telescope maps exactly to A.1.c.iii (invention and use of the telescope in the 17th century) and extends through radio, X-ray, and space-based telescopes. It is a primary instrument for B.1's methods of study in astronomy."
+    },
+    {
+      "articleTitle": "Scientific Revolution",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.c",
+        "A.3.a"
+      ],
+      "rationaleAI": "The Scientific Revolution encompasses all three history-of-science sub-paths: heliocentrism and telescope in A.1.c, Galileo-Newton mechanics in A.2.c, and the early modern challenge to alchemy in A.3.a through the influence of the new mechanical philosophy."
+    },
+    {
+      "articleTitle": "Venus",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Venus is a Solar System planet covered in B.2's planetary sciences, with particular relevance given that its observable phases provided historical evidence for heliocentrism (connecting also to A.1.c.i) and it is a target of active planetary exploration."
+    },
+    {
+      "articleTitle": "Mars",
+      "relevantPathsAI": [
+        "B.2",
+        "A.1.f"
+      ],
+      "rationaleAI": "Mars is a primary target of planetary exploration in B.2, and its continuous robotic exploration since 1997 connects to A.1.f.v's discussion of unmanned space probe exploration of planets and their satellites."
+    },
+    {
+      "articleTitle": "Substance (chemistry)",
+      "relevantPathsAI": [
+        "D.1",
+        "D.4"
+      ],
+      "rationaleAI": "Chemical substance defines the nature of chemistry's primary subject matter (D.1 \u2014 composition and properties of matter) and distinguishes chemical from physical change, directly addressing D.4 (the study of chemical transformations \u2014 the priority coverage path)."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "A.3.b",
+        "D.1"
+      ],
+      "rationaleAI": "Oxygen's characterization by Lavoisier is the defining event of A.3.b.i (combustion/phlogiston) and A.3.b.ii (isolation and identification of gases and new elements). As a chemical element it belongs to D.1's subject matter."
+    },
+    {
+      "articleTitle": "Black hole",
+      "relevantPathsAI": [
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Black holes are an explicit subject of A.1.f.vii (identification of possible black holes, pulsars, quasars) and are central to modern B.5 astrophysics, linking general relativity, gravitational waves, and galactic structure."
+    },
+    {
+      "articleTitle": "Galaxy",
+      "relevantPathsAI": [
+        "B.5",
+        "A.1.f"
+      ],
+      "rationaleAI": "Galaxies are the primary objects studied in B.5 (study of stars, galaxies, and the universe) and A.1.f.i (statistical studies of stars, nebulae, and galaxies). Their morphology, dark matter, and large-scale clustering are core astrophysical topics."
+    },
+    {
+      "articleTitle": "Hydrogen",
+      "relevantPathsAI": [
+        "D.1",
+        "A.3.b"
+      ],
+      "rationaleAI": "Hydrogen as the first and most abundant element exemplifies D.1's concern with elemental composition and properties. Its identification and naming by Lavoisier relates to A.3.b.ii, and its spectral lines were historically significant for quantum mechanics (A.2.e.ii)."
+    },
+    {
+      "articleTitle": "Temperature",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Temperature is a core physical quantity in thermodynamics (C.2), governed by the zeroth and third laws and fundamental to statistical mechanics. It applies across all physical sciences as a state variable, though its scope here is moderate."
+    },
+    {
+      "articleTitle": "Biochemistry",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Biochemistry is explicitly listed as a subdivision of chemistry in D.2 alongside analytical, inorganic, organic, physical, polymer, and industrial chemistry. Its inclusion here is as a moderate-overlap candidate covering this subdisciplinary path."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

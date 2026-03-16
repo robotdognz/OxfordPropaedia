@@ -12,6 +12,11 @@
  * Requires:
  *   npm install @anthropic-ai/sdk
  *   ANTHROPIC_API_KEY environment variable
+ *
+ * Note: This script is also used as a reference by Claude Code subagents, which
+ * replicate the prompts and logic inline (reading batch files from /tmp) rather
+ * than calling the Anthropic API directly. The system prompt, guidelines, and
+ * validation rules here are the canonical source of truth for those agents.
  */
 
 import fs from 'fs';
@@ -221,6 +226,7 @@ function writeVsiResults(summaries) {
     const key = `${title.title}::${title.author}`;
     if (lookup.has(key)) {
       title.summaryAI = lookup.get(key);
+      title._summaryGeneratedAt = new Date().toISOString().split('T')[0];
       updated++;
     }
   }
@@ -237,6 +243,7 @@ function writeWikiResults(summaries) {
   for (const article of catalog.articles) {
     if (lookup.has(article.title)) {
       article.summaryAI = lookup.get(article.title);
+      article._summaryGeneratedAt = new Date().toISOString().split('T')[0];
       updated++;
     }
   }

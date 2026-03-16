@@ -1,454 +1,249 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "912",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Ancient European and Mediterranean civilizations are foundational periods in human history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Ancient history",
-      "rationaleAI": "Ancient history encompasses the classical civilizations of Greece and Rome that shaped the Mediterranean world.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Europe",
-      "rationaleAI": "Ancient European civilizations, especially Greece and Rome, established the foundations of European culture and governance.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Civilization",
-      "rationaleAI": "Classical Greek and Roman civilizations represent pinnacles of ancient civilizational achievement in governance, art, and philosophy.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i.ii",
-        "A.3.c",
-        "A.3.i.ii"
-      ]
-    },
-    {
       "articleTitle": "Alexander the Great",
-      "rationaleAI": "Alexander the Great's campaigns spread Hellenistic civilization across the ancient Mediterranean and beyond.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Julius Caesar",
-      "rationaleAI": "Julius Caesar was a pivotal figure in the transformation of the Roman Republic into the Roman Empire.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Cleopatra",
-      "rationaleAI": "Cleopatra's alliances with Caesar and Antony placed her at the center of late Roman Republican politics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c"
-      ]
+        "B.2.h",
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c"
+      ],
+      "rationaleAI": "Alexander's conquest of Persia, establishment of his empire, and death triggering the Hellenistic kingdoms directly maps to B.2.h (empire of Alexander III), C.1 (establishment of Hellenistic kingdoms), C.1.a (regency and successor wars), C.1.b (Ptolemaic Egypt), and C.1.c (Seleucid Kingdom)."
     },
     {
       "articleTitle": "Augustus",
-      "rationaleAI": "Augustus established the Roman Empire and inaugurated the Pax Romana, transforming the classical Mediterranean world.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
+        "D.5.f",
+        "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.1.c",
+        "E.1.d"
+      ],
+      "rationaleAI": "Augustus founded the Roman Empire after defeating Antony and Cleopatra (D.5.f), and his principate, administrative reforms, provincial policy, and Augustan cultural patronage are the core subject of E.1 and its sub-paths E.1.a\u2013E.1.d."
     },
     {
-      "articleTitle": "Socrates",
-      "rationaleAI": "Socrates lived in classical Athens and his trial and execution are defining events of ancient Greek civilization.",
+      "articleTitle": "Phoenicia",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Plato",
-      "rationaleAI": "Plato's Academy in classical Athens was a landmark institution of ancient Mediterranean intellectual life.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Aristotle",
-      "rationaleAI": "Aristotle's work in classical Greece defined the intellectual culture of the ancient Mediterranean world.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Cicero",
-      "rationaleAI": "Cicero was a leading Roman statesman and orator whose writings shaped classical Mediterranean political and literary culture.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Homer",
-      "rationaleAI": "Homer's epics defined the cultural identity of ancient Greece and the classical Mediterranean world.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Virgil",
-      "rationaleAI": "Virgil wrote during the Augustan age, a defining era of classical Roman civilization.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Hippocrates",
-      "rationaleAI": "Hippocrates practiced in classical Greece, where rational medicine emerged as part of ancient Mediterranean civilization.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c",
-        "A.3.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Euclid",
-      "rationaleAI": "Euclid worked in Hellenistic Alexandria, contributing to the intellectual achievements of the ancient Mediterranean world.",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "B",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Jesus",
-      "rationaleAI": "Jesus lived in Roman-era Judea, and the early Christian movement emerged within the context of ancient Mediterranean civilization.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "History of Europe",
-      "rationaleAI": "European history traces from the ancient peoples and classical civilizations of the Mediterranean.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Ancient Greece",
-      "rationaleAI": "Ancient Greece produced the classical civilization that shaped Western philosophy, science, democracy, and art.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "B"
-      ]
+        "B.1.v",
+        "C.2.b"
+      ],
+      "rationaleAI": "Phoenician commercial city-states and their western colonization (including founding Carthage) are relevant to B.1.v (Greek colonies and emporia, including interaction with Phoenicia in the West and Africa), and C.2.b (Celtic migrations and conflicts with established Mediterranean powers including Carthaginian cities)."
     },
     {
       "articleTitle": "Ancient Rome",
-      "rationaleAI": "Ancient Rome built the largest empire of the classical Mediterranean world, shaping Western law, governance, and culture.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i"
-      ]
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4",
+        "E.g"
+      ],
+      "rationaleAI": "Ancient Rome is the central subject of outlines D and E in Section 912, covering regal Rome through the republic and empire up to AD 395, encompassing constitutional evolution, Punic Wars, provincial administration, law, and the transition to Christianity."
     },
     {
-      "articleTitle": "Mediterranean Sea",
-      "rationaleAI": "The Mediterranean was the center of classical civilizations of the ancient world.",
+      "articleTitle": "Julius Caesar",
+      "relevantPathsAI": [
+        "D.5.e",
+        "D.5.f",
+        "D.5.g",
+        "D.5.h"
+      ],
+      "rationaleAI": "Caesar's Gallic Wars, civil war victory, dictatorship, and assassination correspond directly to D.5.e (alliance of Caesar, Pompey, Crassus and Caesar's rise and death), and his impact on Roman law and culture at D.5.g and D.5.h."
+    },
+    {
+      "articleTitle": "Achaemenid Empire",
+      "relevantPathsAI": [
+        "B.1.v.viii",
+        "B.2.h"
+      ],
+      "rationaleAI": "The Achaemenid Persian Empire is directly relevant as the target of the Greco-Persian Wars (B.1.v.viii \u2014 Persian conquest of Asia Minor, Ionian revolt, Darius and Xerxes' invasions) and Alexander's conquest (B.2.h)."
+    },
+    {
+      "articleTitle": "Byzantine Empire",
+      "relevantPathsAI": [
+        "E.4.e",
+        "E.4",
+        "E.4.f",
+        "E.g"
+      ],
+      "rationaleAI": "The Byzantine Empire's origins lie in the late Roman Empire, specifically Diocletian's and Constantine's reforms (E.4.e, E.4.i), Constantine's founding of Constantinople and conversion to Christianity (E.4.i.ii), and the 4th-century successors through Theodosius (E.4.f), with the eclipse of the Western Empire at E.g."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.1",
+        "C.2.a",
+        "D.5.f"
+      ],
+      "rationaleAI": "Egypt under the Ptolemaic dynasty (C.1.b) including dynastic strife and Cleopatra (C.1.i), Hellenistic Egyptian government and civilization (C.1.i.ii), and annexation by Rome under Augustus (D.5.f) are substantively covered in this article."
+    },
+    {
+      "articleTitle": "Cleopatra",
+      "relevantPathsAI": [
+        "C.1",
+        "D.5.f"
+      ],
+      "rationaleAI": "Cleopatra VII as the last Ptolemaic ruler, her alliances with Caesar and Antony, and the end of the dynasty through Roman conquest directly address C.1.i (Ptolemaic dynastic strife and end with Cleopatra's death), C.1.i.ii (government of Hellenistic Egypt), and D.5.f (Octavian's annexation of Egypt)."
+    },
+    {
+      "articleTitle": "Ancient history",
       "relevantPathsAI": [
         "A",
-        "A.1",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "As a broad chronological survey of all inhabited regions from writing's invention through late antiquity, this article provides general context for all divisions of Section 912 and explicitly covers Greece, Rome, Egypt, and Near Eastern civilizations."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
+        "B.2.d",
+        "B.2.e",
+        "B.2.g",
+        "B.2.h",
+        "C",
+        "C.3"
+      ],
+      "rationaleAI": "Ancient Greece is the central subject of section B (Archaic through Classical periods) and C (Hellenistic Age), covering city-states, democracy at Athens, Sparta, the Greco-Persian Wars, the Peloponnesian War, Alexander's empire, and Hellenistic kingdoms."
+    },
+    {
+      "articleTitle": "Cicero",
+      "relevantPathsAI": [
+        "D.5.d",
+        "D.5",
+        "D.5.g",
+        "D.5.h"
+      ],
+      "rationaleAI": "Cicero's suppression of the Catilinarian conspiracy, political career in the turbulent late Republic, oratory, and philosophical adaptation of Hellenism directly correspond to D.5.d (Roman state after Sulla), D.5.i.ii (growing political suspicion, Cicero's decline, Caesar's rise), and D.5.g\u2013D.5.h (Roman law and culture in the late republic)."
+    },
+    {
+      "articleTitle": "Bronze Age",
+      "relevantPathsAI": [
         "A.2",
-        "A.2.b",
+        "A.2.b"
+      ],
+      "rationaleAI": "The Bronze Age article covers the spread of Bronze Age industry throughout Europe, population movements, and the Indo-Europeans, directly addressing A.2 (Europe before the Iron Age) and A.2.b (Bronze Age industry and migrations in the 2nd millennium BC)."
+    },
+    {
+      "articleTitle": "Iron Age",
+      "relevantPathsAI": [
         "A.3",
         "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
         "A.3.b"
-      ]
+      ],
+      "rationaleAI": "The Iron Age article covers the archaeological phase in Europe beginning c. 1200 BC in Anatolia and spreading to Europe, corresponding to A.3 (Non-Classical Europe in the Iron Age), A.3.a (Etruscans and Italic peoples), and A.3.b (Trans-Alpine Europe including Celts and Germans)."
+    },
+    {
+      "articleTitle": "Homer",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.v.vii"
+      ],
+      "rationaleAI": "Homer and the Iliad and Odyssey are explicitly cited at B.1.b (Geometric Period and the world of Homer and Hesiod) and are central to B.1.v.vii (arts in the Archaic Period and beginnings of philosophy and rationalism)."
+    },
+    {
+      "articleTitle": "Socrates",
+      "relevantPathsAI": [
+        "B.2.c",
+        "B.2.g"
+      ],
+      "rationaleAI": "Socrates and his philosophical method are directly addressed in B.2.c (intellectual changes at Athens including the Sophists and Socrates during the Peloponnesian War) and B.2.g (Greek culture in the 4th century BC, developments in philosophy and the arts)."
+    },
+    {
+      "articleTitle": "Italy",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3",
+        "D.2",
+        "D.3",
+        "D.3.b"
+      ],
+      "rationaleAI": "Italy covers Italic prehistory including the Etruscans and other Italic peoples (A.3.a, A.3.i, A.3.i.ii), early Rome's development (D.2\u2013D.3), and the foundation of the Roman Republic, providing substantive coverage of Non-Classical Italic peoples and early Roman history."
     },
     {
       "articleTitle": "Rome",
-      "rationaleAI": "Rome was the center of the Roman Republic and Empire.",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b",
+        "D.2.c",
+        "D.3",
+        "D.4",
+        "D.5",
+        "E.1"
+      ],
+      "rationaleAI": "Rome as a city covers its legendary origins and monarchy (D.2.a), Etruscan influence (D.2.b), republican and imperial development (D.3\u2013D.5, E.1), and its role as religious capital through early Christianity, matching the arc of Section 912's D and E divisions."
+    },
+    {
+      "articleTitle": "Cyrus the Great",
+      "relevantPathsAI": [
+        "B.1.v.viii"
+      ],
+      "rationaleAI": "Cyrus founded the Achaemenid Empire whose conquest of Ionia and conflict with Greece are directly addressed at B.1.v.viii (Persian conquest of Asia Minor and the Ionian revolt), providing essential background to the Greco-Persian Wars."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Stone Age article covers the prehistoric period and Neolithic farming communities across Europe, directly corresponding to A.2 (Europe before the Iron Age, including Neolithic farming community spread)."
+    },
+    {
+      "articleTitle": "Europe",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Western philosophy",
-      "rationaleAI": "Western philosophy originated in classical Greek civilization.",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Greek mythology",
-      "rationaleAI": "Greek mythology was integral to classical Mediterranean civilization.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Indo-European languages",
-      "rationaleAI": "Indo-European languages spread with ancient European peoples and civilizations.",
-      "relevantPathsAI": [
-        "A.2.b",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.c",
-        "A.3.i.ii",
-        "B.1.a",
-        "B.1.i",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Greek language",
-      "rationaleAI": "Greek was the language of classical Mediterranean civilization.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i",
-        "A.3.i.ii",
         "B",
-        "B.1",
-        "B.1.a"
-      ]
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Europe as a broad survey article addresses the geography and ethnography of the continent (A.1), classical antiquity (Greece, Rome \u2014 B, C, D, E), providing overarching context for all major divisions of Section 912."
     },
     {
-      "articleTitle": "Latin",
-      "rationaleAI": "Latin was the language of the Roman Empire.",
+      "articleTitle": "History of art",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.ii"
-      ]
+        "B.1.v.vii",
+        "B.2",
+        "B.2.g",
+        "C.3.b",
+        "E.1.d",
+        "E.3.b"
+      ],
+      "rationaleAI": "The history of art surveys ancient Greek (Archaic arts at B.1.v.vii, Classical Acropolis rebuilding at B.2.i.iii, 4th-century developments at B.2.g), Hellenistic (C.3.b), and Roman Augustan/imperial visual culture (E.1.d, E.3.b)."
     },
     {
-      "articleTitle": "Latin script",
-      "rationaleAI": "Latin script originated with Roman civilization.",
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "A.2",
-        "A.2.b",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i",
-        "A.3.i.ii",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "B.2.b",
-        "B.2.g"
-      ]
+        "E.4.f",
+        "E.g"
+      ],
+      "rationaleAI": "Post-classical history covers the period from c. 500 CE following Western Rome's fall, providing context for E.4.f (4th-century successors of Constantine) and E.g (eclipse of the empire in the West and Germanic hegemony) at the very end of Section 912's chronological scope."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

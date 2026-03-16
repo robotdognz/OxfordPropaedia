@@ -1,166 +1,127 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "962",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Early modern Eastern Europe, Southwest Asia, and North Africa are key to modern human history.",
+      "articleTitle": "Catherine the Great",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.c",
-        "A.2.b",
-        "A.3.b",
         "A.3.d",
-        "A.3.e",
-        "B",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Early modern period",
-      "rationaleAI": "The early modern period saw the rise of the Ottoman, Safavid, and Mughal empires reshaping Eastern Europe, Southwest Asia, and North Africa.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i"
-      ]
+        "A.3.e"
+      ],
+      "rationaleAI": "Catherine II's reign directly covers A.3.d (further westernization and expansion, partitions of Poland, successful wars against the Ottoman Empire) and A.3.e (education and social change under the Enlightenment's impact in Russia)."
     },
     {
       "articleTitle": "Suleiman the Magnificent",
-      "rationaleAI": "Suleiman presided over the Ottoman Empire at its zenith, dominating Eastern Europe, Southwest Asia, and North Africa.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Catherine the Great",
-      "rationaleAI": "Catherine the Great expanded the Russian Empire and modernized its administration, shaping Eastern European history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i"
-      ]
+        "B.1.a"
+      ],
+      "rationaleAI": "Suleiman I's reign (1520-1566) is explicitly named in B.1.a.i as the Ottoman Empire's conflicts with the Habsburgs in Hungary and annexation of Iraq; his role as the Ottoman Empire's peak ruler is the core content of B.1.a."
     },
     {
       "articleTitle": "Ottoman Empire",
-      "rationaleAI": "The Ottoman Empire dominated Eastern Europe, Southwest Asia, and North Africa for over six centuries.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.d"
-      ]
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
+      ],
+      "rationaleAI": "The Ottoman Empire article is the primary source for all of B.1, covering the empire's dominance under Bayezid II through Suleiman (B.1.a), classical Ottoman society and administration (B.1.a.ii), decline and corruption 1566-1807 (B.1.b), and imperial disintegration in the 18th-early 19th centuries (B.1.c)."
     },
     {
-      "articleTitle": "Turkey",
-      "rationaleAI": "The Ottoman Empire centered in Turkey is covered in this section.",
+      "articleTitle": "Early modern period",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers the entire 1500-1800 period for Eastern Europe, the Ottoman Empire, Safavid Iran, and other regions addressed in Section 962, including nation-state formation, globalization onset, and secularization across A and B."
     },
     {
       "articleTitle": "Russia",
-      "rationaleAI": "Imperial Russia's expansion is covered in this section on Eastern Europe.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i"
-      ]
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c",
+        "A.3.d"
+      ],
+      "rationaleAI": "Russia's history directly covers the emergence of the Russian Empire \u2014 Muscovite expansion under Ivan IV (A.3.a), the Time of Troubles and Romanov election (A.3.a-b), Peter the Great's westernization (A.3.c), and Catherine II's further expansion (A.3.d)."
     },
     {
-      "articleTitle": "Istanbul",
-      "rationaleAI": "Istanbul was the Ottoman capital covered in this section on Eastern Europe and Southwest Asia.",
+      "articleTitle": "Iran",
+      "relevantPathsAI": [
+        "B.2.a"
+      ],
+      "rationaleAI": "Iran's history under the Safavids \u2014 Shi'ite dynasty, conflict with Turks, Abbas I (1587-1629), and decline (B.2.a.i) \u2014 and the Nadir Shah period, expulsion of Afghans, and establishment of Zand and Qajar dynasties (B.2.a.ii) directly covers the full B.2.a outline path."
+    },
+    {
+      "articleTitle": "Poland",
       "relevantPathsAI": [
         "A.1",
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
         "A.1.b",
-        "A.1.i",
         "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
+        "A.1.d"
+      ],
+      "rationaleAI": "Poland's history covers the Polish-Lithuanian Commonwealth's Golden Age under Jagiellonian rule (A.1.a), the royal republic period (A.1.b), the Swedish and Cossack wars (A.1.c), the Saxon era, Russian protectorate, and three partitions 1772-1795 (A.1.d) \u2014 the full A.1 path."
     },
     {
-      "articleTitle": "Moscow",
-      "rationaleAI": "Moscow became the capital of the Russian state covered in this section.",
+      "articleTitle": "Mughal Empire",
       "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.2",
-        "A.2.b",
-        "A.3.a",
-        "A.3.b",
-        "A.3.i.ii"
-      ]
+        "B.2.a"
+      ],
+      "rationaleAI": "Nadir Shah's invasion of India (1738-39) is explicitly named in B.2.a.ii; the Mughal Empire article provides context for the target and consequences of this invasion, which disrupted both Mughal and Iranian political trajectories."
     },
     {
-      "articleTitle": "Russian language",
-      "rationaleAI": "Russian was the language of the expanding Russian state.",
+      "articleTitle": "Reformation",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2"
-      ]
+        "A.1.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "The outline explicitly names effects of the Reformation as a domestic development in Polish-Lithuania (A.1.a.ii) and the spread of Protestantism in Hungary (A.2.b); the Reformation article covers the Counter-Reformation and confessional geography that shaped both of these paths."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.e"
+      ],
+      "rationaleAI": "The Enlightenment's impact on Russia is explicitly named in A.3.e (education and social change, impact of the Enlightenment), and Catherine II's Enlightenment reforms are central to A.3.d, making this article substantively relevant to the Russian dimension of Section 962."
+    },
+    {
+      "articleTitle": "Byzantine Empire",
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "The Byzantine Empire's fall to the Ottomans \u2014 Constantinople conquered 1453, just before this section's c.1480 start \u2014 provides direct context for Ottoman consolidation and the empire's role as the dominant power in Southeast Europe and Southwest Asia (B.1.a)."
+    },
+    {
+      "articleTitle": "Holy Roman Empire",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "The Habsburg dimension of the Holy Roman Empire directly overlaps with Hungary's partition period (A.2.b) \u2014 Habsburg sectors controlling part of Hungary after Mohacs (1526) \u2014 and the Austro-Turkish wars that shaped the Hungarian section of this outline."
+    },
+    {
+      "articleTitle": "Renaissance",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The outline explicitly names effects of the Renaissance as a domestic development in Poland-Lithuania's Golden Age (A.1.a.ii); the Renaissance article covers its spread to Poland and other Central European states during this period."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "Classical Ottoman society and administration (B.1.a.ii) drew on Islamic Golden Age intellectual and legal traditions; the article covers the Islamic world's cultural production that informed Ottoman civil and religious law structures in the 15th-16th centuries."
+    },
+    {
+      "articleTitle": "Mongol Empire",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "The Mongol conquest and Golden Horde's role in shaping Russian state formation is background to A.3.a (Muscovite expansion and control of Russia), as the overthrow of Mongol-Tatar authority was the foundational context for Ivan IV's centralisation."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

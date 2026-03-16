@@ -183,13 +183,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Filters that select signals",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Transient phenomena of alternating circuits",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Transient phenomena of alternating circuits",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",
@@ -382,13 +383,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Magnetism of matter",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Diamagnetism",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Diamagnetism",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

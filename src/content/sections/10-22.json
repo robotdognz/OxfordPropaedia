@@ -142,13 +142,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Linear algebra",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Vector spaces",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Vector spaces",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -807,13 +807,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Spectral sequences: Serre, Rothenberg-Steenrod, and Eilenberg-Moore spectral sequences",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Further developments in homotopy theory. Eilenberg-MacLane spaces, the methods of killing homotopy groups, Serre's C-theory",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Further developments in homotopy theory. Eilenberg-MacLane spaces, the methods of killing homotopy groups, Serre's C-theory",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

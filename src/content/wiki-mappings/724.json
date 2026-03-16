@@ -1,323 +1,218 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "724",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Extraction and conversion of raw materials is a key technological process.",
-      "relevantPathsAI": [
-        "B.1",
-        "C.3.n",
-        "C.3.o",
-        "C.6",
-        "C.7",
-        "C.8",
-        "C.8.c"
-      ]
-    },
-    {
-      "articleTitle": "Food",
-      "rationaleAI": "Food processing involves the extraction and conversion of agricultural raw materials into consumable products.",
-      "relevantPathsAI": [
-        "B.1",
-        "C.3.n",
-        "C.3.o",
-        "C.8"
-      ]
-    },
-    {
-      "articleTitle": "Agriculture",
-      "rationaleAI": "Agricultural processing involves the extraction and conversion of plant and animal raw materials into usable products.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n",
-        "C.3.o",
-        "C.4",
-        "C.5.b",
-        "C.6",
-        "C.8"
-      ]
-    },
-    {
-      "articleTitle": "Salt",
-      "rationaleAI": "Salt extraction is a form of industrial raw material conversion.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.b",
-        "C.3.n",
-        "C.3.o",
-        "C.6",
-        "C.7",
-        "C.8.c"
-      ]
-    },
-    {
       "articleTitle": "Mining",
-      "rationaleAI": "Mining is the extraction of industrial raw materials.",
       "relevantPathsAI": [
-        "A",
         "B.1",
         "B.1.a",
-        "B.1.b",
-        "C.3",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
-        "C.3.v",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Iron",
-      "rationaleAI": "Iron extraction and processing is a major industrial raw-materials technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.g",
-        "C.3.n"
-      ]
-    },
-    {
-      "articleTitle": "Copper",
-      "rationaleAI": "Copper extraction and conversion is a significant industrial raw-materials process.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.b",
-        "C.2",
-        "C.3",
-        "C.3.e",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
-        "C.3.v"
-      ]
+        "B.1.b"
+      ],
+      "rationaleAI": "Directly covers underground and surface extraction techniques (B.1.a) and the full range of mined products including coal, salt, stone, metal ores, sulfur, and phosphates (B.1.b), which are the core subjects of section B."
     },
     {
       "articleTitle": "Silver",
-      "rationaleAI": "Silver extraction and refining is part of industrial raw-materials technology.",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.2",
         "C.3",
-        "C.3.m",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
-        "C.3.v"
-      ]
-    },
-    {
-      "articleTitle": "Gold",
-      "rationaleAI": "Gold extraction and processing is part of industrial raw-materials technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Alloy",
-      "rationaleAI": "Alloy production involves extraction and conversion of industrial raw materials.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.1.b",
-        "C.3",
-        "C.3.g",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
-        "C.3.v"
-      ]
-    },
-    {
-      "articleTitle": "Bronze",
-      "rationaleAI": "Bronze production involves the extraction and alloying of copper and tin as industrial raw materials.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.1.b",
-        "C.3",
-        "C.3.e",
-        "C.3.g",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
-        "C.3.v"
-      ]
-    },
-    {
-      "articleTitle": "Steel",
-      "rationaleAI": "Steel making involves the extraction and conversion of iron as an industrial raw material.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.g",
-        "C.3.n",
-        "C.3.o",
-        "C.3.v",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Coal",
-      "rationaleAI": "Coal mining is a significant industrial raw-materials extraction process.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n"
-      ]
-    },
-    {
-      "articleTitle": "Natural gas",
-      "rationaleAI": "Natural gas extraction and processing is part of industrial raw-materials technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n"
-      ]
-    },
-    {
-      "articleTitle": "Petroleum",
-      "rationaleAI": "Petroleum extraction and refining is a major industrial raw-materials process.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.3.n",
-        "C.3.o",
-        "C.4",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Concrete",
-      "rationaleAI": "Concrete production involves extraction and conversion of industrial raw materials.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.b",
-        "C.2",
-        "C.3.n",
-        "C.3.o",
-        "C.4",
-        "C.5.a",
-        "C.5.b",
-        "C.5.c"
-      ]
+        "C.3.m"
+      ],
+      "rationaleAI": "Silver production and processing—including its recovery as a byproduct of copper, gold, lead, and zinc refining—maps directly to the silver entry (C.3.m) within the production and processing of metal ores and metals."
     },
     {
       "articleTitle": "Metallurgy",
-      "rationaleAI": "Metallurgy extracts and converts metallic raw materials for industrial use.",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.b",
         "C.3",
-        "C.3.n",
-        "C.3.o",
-        "C.3.u",
         "C.3.v"
-      ]
-    },
-    {
-      "articleTitle": "Natural rubber",
-      "rationaleAI": "Natural rubber extraction and processing is part of industrial raw-materials technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.a",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n",
-        "C.3.o"
-      ]
-    },
-    {
-      "articleTitle": "Paper",
-      "rationaleAI": "Paper production involves extraction and conversion of plant-based raw materials.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n",
-        "C.3.o",
-        "C.4",
-        "C.5.a",
-        "C.8.a"
-      ]
-    },
-    {
-      "articleTitle": "Cotton",
-      "rationaleAI": "Cotton processing involves extraction and conversion of plant-based raw materials.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "B.1",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.3.n",
-        "C.3.o"
-      ]
+      ],
+      "rationaleAI": "Metallurgy covers both chemical metallurgy (reduction, oxidation, mineral processing) and physical metallurgy across ferrous and non-ferrous metals, directly addressing the primary conversion of metal ores (C.3) and metal alloys (C.3.v)."
     },
     {
       "articleTitle": "Wood",
-      "rationaleAI": "Wood is a natural raw material extracted and converted for industrial use.",
       "relevantPathsAI": [
-        "A",
+        "C.8.b"
+      ],
+      "rationaleAI": "Wood as a material—roundwood, sawn wood, veneer, plywood, laminated timber, particleboard, and fibreboard—maps precisely to the processing of plant products to obtain timber and wood products (C.8.b)."
+    },
+    {
+      "articleTitle": "Salt",
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.6"
+      ],
+      "rationaleAI": "Salt is listed explicitly as a mining product (B.1.b) and processing of water to obtain salt is an identified conversion process (C.6); the article covers both evaporite and solution-mining production of sodium chloride."
+    },
+    {
+      "articleTitle": "Hydrogen",
+      "relevantPathsAI": [
+        "C.6",
+        "C.7"
+      ],
+      "rationaleAI": "Hydrogen is explicitly listed as a product of water processing (C.6) and relates to industrial gas production; its industrial production via steam reforming and electrolysis connects to primary conversion of raw materials."
+    },
+    {
+      "articleTitle": "Silicon",
+      "relevantPathsAI": [
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Silicon's derivation from silica (SiO2) relates to the processing of stone, sand, and clay (C.5), and its use in industrial crystals and semiconductor wafers connects to synthetic gemstones and industrial crystals (C.4)."
+    },
+    {
+      "articleTitle": "Iron",
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.g"
+      ],
+      "rationaleAI": "Iron production via blast furnace, direct reduction, and electric arc processes is the subject of C.3.g; the article also covers the broader metallurgy of iron ores and connects to steel (C.3.o)."
+    },
+    {
+      "articleTitle": "Petroleum",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Petroleum covers both the extraction of crude oil and natural gas (B.2) and its refining by distillation into fuels and chemical feedstocks (C.1), the two principal petroleum-related nodes in this outline."
+    },
+    {
+      "articleTitle": "Copper",
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.e"
+      ],
+      "rationaleAI": "Copper's history as one of the first smelted metals and its modern production as a primary or byproduct metal addresses the copper entry (C.3.e) and broader metal ore production and processing (C.3)."
+    },
+    {
+      "articleTitle": "Metal",
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.v"
+      ],
+      "rationaleAI": "The article surveys the full range of metallic materials and metallurgy, covering extraction, recycling, and alloy development—directly relevant to the production and processing of metal ores and metals (C.3) and metal alloys (C.3.v)."
+    },
+    {
+      "articleTitle": "Steel",
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.o"
+      ],
+      "rationaleAI": "Steel production—from Bessemer process to basic oxygen steelmaking, including alloy steel, stainless steel, and carbon steel—directly covers the steel and steel alloys entry (C.3.o) in the metals processing section."
+    },
+    {
+      "articleTitle": "Fossil fuel",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Fossil fuels encompasses coal (C.2), petroleum and natural gas production and refining (B.2, C.1), covering all three primary fossil fuel types addressed in the extraction and conversion outline."
+    },
+    {
+      "articleTitle": "Concrete",
+      "relevantPathsAI": [
+        "C.5.b"
+      ],
+      "rationaleAI": "Concrete production from Portland cement is the central example of manufacture of cement, gypsum plasters, and plastic cements (C.5.b), with aggregate processing connecting to C.5 broadly."
+    },
+    {
+      "articleTitle": "Natural rubber",
+      "relevantPathsAI": [
+        "C.8"
+      ],
+      "rationaleAI": "Natural rubber is a plant-derived product processed from Hevea brasiliensis latex—its extraction and vulcanization fall squarely within the processing of plant and animal products (C.8), which covers non-food raw material outputs."
+    },
+    {
+      "articleTitle": "Gold",
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.f"
+      ],
+      "rationaleAI": "Gold production from native deposits, veins, and alluvial sources, plus refining to high purity, directly addresses the gold entry (C.3.f) in the metals production section."
+    },
+    {
+      "articleTitle": "Bronze",
+      "relevantPathsAI": [
+        "C.3.v"
+      ],
+      "rationaleAI": "Bronze as a copper-tin alloy is a primary example of metal alloys (C.3.v); the article covers alloying composition, metallurgical properties, and the historical transition from copper to bronze technology."
+    },
+    {
+      "articleTitle": "Coal",
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.2"
+      ],
+      "rationaleAI": "Coal is explicitly listed as a mining product (B.1.b) and coal utilization—coke, coal tar, light oil, gas, and chemicals—is addressed in the coal conversion node (C.2)."
+    },
+    {
+      "articleTitle": "Nitrogen",
+      "relevantPathsAI": [
+        "C.7"
+      ],
+      "rationaleAI": "Nitrogen is explicitly listed as a product of processing air to obtain industrial gases (C.7); the article covers fractional distillation of air and industrial nitrogen production for ammonia synthesis and other applications."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "C.6",
+        "C.7"
+      ],
+      "rationaleAI": "Oxygen is explicitly named in both C.6 (processing of water to obtain oxygen) and C.7 (processing of air to obtain oxygen); the article covers industrial oxygen production through air separation and electrolysis."
+    },
+    {
+      "articleTitle": "Alloy",
+      "relevantPathsAI": [
+        "C.3.v"
+      ],
+      "rationaleAI": "Alloys—metallic mixtures with combined properties—are directly addressed by the metal alloys entry (C.3.v); the article covers bronze, steel, brass, duralumin, and titanium alloys across construction, aerospace, and medicine."
+    },
+    {
+      "articleTitle": "Mineral",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.b"
+      ],
+      "rationaleAI": "Minerals as naturally occurring inorganic solids are the fundamental resource whose identification and distribution is covered in A.1, and they constitute the raw material products of mining (B.1.b) including metal ores, salts, and industrial minerals."
+    },
+    {
+      "articleTitle": "Forest",
+      "relevantPathsAI": [
         "A.1",
         "A.2",
-        "A.2.a",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "C.3.n",
-        "C.3.o",
-        "C.5.a"
-      ]
+        "C.8.a",
+        "C.8.b"
+      ],
+      "rationaleAI": "Forests represent a major biological natural resource (A.1, A.2) whose products—paper pulp (C.8.a), timber and engineered wood products (C.8.b)—are explicitly listed in the plant product processing nodes."
+    },
+    {
+      "articleTitle": "Cotton",
+      "relevantPathsAI": [
+        "C.8.f"
+      ],
+      "rationaleAI": "Cotton as the world's most used natural textile fibre is the primary example of obtaining natural fibres from plant products (C.8.f); the article covers fibre extraction from seed bolls and industrial processing."
+    },
+    {
+      "articleTitle": "Textile",
+      "relevantPathsAI": [
+        "C.8.f"
+      ],
+      "rationaleAI": "Textiles encompass the processing of natural fibres (C.8.f)—cotton, wool, silk, and other plant and animal sources—through fibre, yarn, and fabric production stages addressed in the plant and animal product processing node."
+    },
+    {
+      "articleTitle": "Explosive",
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "Explosives are a primary tool in underground and surface mining operations (B.1.a); the article covers their use in blasting, quarrying, and demolition, all central to mining and quarrying processes."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Geology underpins the identification and distribution of natural resources (A.1) and supports all aspects of mining and quarrying (B.1), from prospecting to understanding ore deposits and sedimentary formations containing coal and petroleum."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

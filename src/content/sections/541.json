@@ -147,13 +147,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Current political ideologies and tendencies",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Anarchism",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Anarchism",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

@@ -1,134 +1,107 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "333",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Coordination and regulation of vital processes are essential to maintaining life.",
+      "articleTitle": "Sense",
       "relevantPathsAI": [
-        "A.1",
-        "A.4",
+        "B",
         "B.1",
-        "B.2",
-        "C",
-        "C.2",
-        "C.2.b",
-        "C.4",
-        "C.5",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Emotion",
-      "rationaleAI": "Emotions serve as regulatory signals coordinating vital processes including stress responses, motivation, and homeostasis.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C",
-        "C.1",
-        "C.2",
-        "C.2.b",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Disease",
-      "rationaleAI": "Disease disrupts the normal coordination and regulation of vital processes in organisms.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C",
-        "C.2",
-        "C.2.b",
-        "C.4",
-        "C.5",
-        "D",
-        "D.3",
-        "D.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Immune system",
-      "rationaleAI": "The immune system coordinates vital processes through regulation and integration.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.2",
-        "C.2.a"
-      ]
+        "B.1.b",
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers the classification of sensory systems by receptor type (photoreceptors, thermoreceptors, chemoreceptors, mechanoreceptors, electroreceptors) corresponding to outline path B.1.b, and the evolution of specialized sensory organs (B.2). Addresses sensory transduction across both vertebrate and invertebrate taxa."
     },
     {
       "articleTitle": "Nervous system",
-      "rationaleAI": "The nervous system coordinates vital processes through regulation and neural integration.",
       "relevantPathsAI": [
-        "A.4",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.2",
-        "C.2.a",
-        "C.2.b",
-        "C.3"
-      ]
+        "D",
+        "D.2",
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Comprehensive treatment of the nervous system as a coordination mechanism, covering both invertebrate and vertebrate nervous systems (D.3, D.4), the neuron and synaptic transmission (D.2), and the division into central and peripheral systems—all core content of outline path D."
     },
     {
       "articleTitle": "Brain",
-      "rationaleAI": "The brain is the central organ of neural coordination and regulatory integration.",
       "relevantPathsAI": [
-        "A",
-        "A.4",
-        "B.1",
-        "B.2",
-        "C",
-        "C.2",
-        "C.2.b",
-        "C.3",
-        "C.4",
-        "D"
-      ]
+        "D.4",
+        "D.4.a"
+      ],
+      "rationaleAI": "Covers the vertebrate brain in anatomical and functional detail including embryonic divisions into forebrain, midbrain, and hindbrain, directly corresponding to outline path D.4.a (the central nervous system, brain and components). Also addresses evolutionary development of the vertebrate nervous system (D.4.d)."
     },
     {
-      "articleTitle": "Sense",
-      "rationaleAI": "Sensory systems coordinate vital processes through regulatory integration.",
+      "articleTitle": "Eye",
       "relevantPathsAI": [
-        "A.1",
-        "B",
-        "B.1",
-        "B.1.a",
         "B.1.b",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.2"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "The eye is the primary photoreceptor organ, covering ten convergently evolved eye types across taxa (B.1.b: photoreceptors) and the evolution of specialized visual organs (B.2). Non-visual functions including circadian entrainment via the retinohypothalamic tract also touch on outline path E (biological clock)."
     },
     {
       "articleTitle": "Hormone",
-      "rationaleAI": "Hormones coordinate vital processes through regulation and integration in organisms.",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.3",
         "C",
         "C.1",
         "C.2",
-        "C.2.a",
-        "C.2.b",
-        "C.3"
-      ]
+        "C.4"
+      ],
+      "rationaleAI": "Hormones are the chemical basis of endocrine coordination, directly addressing C.1 (relationships between endocrine and neural regulation), C.2 (vertebrate endocrine systems including glands, blood transport, structure and function), and C.4 (comparative and evolutionary aspects including hypothalamus-pituitary control)."
+    },
+    {
+      "articleTitle": "Sleep",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Sleep is a major biological periodicity regulated by the circadian clock (Process C) and homeostatic pressure, directly mapping to outline path E on biological clocks and rhythms. The article covers rhythms correlated with natural geophysical cycles (E.2), the mechanism of the biological clock (E.3), and factors affecting periodicities (E.4)."
+    },
+    {
+      "articleTitle": "Ear",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2"
+      ],
+      "rationaleAI": "The ear is the primary mechanoreceptor/sound receptor organ in vertebrates, directly covering outline path B.1.b (sound receptors, mechanoreceptors). Its evolutionary variation across vertebrate taxa addresses B.2 (evolution of specialized sensory organs and information-processing structures)."
+    },
+    {
+      "articleTitle": "Insect",
+      "relevantPathsAI": [
+        "C.3",
+        "D.3"
+      ],
+      "rationaleAI": "Insects are the paradigmatic example cited in outline path C.3 (invertebrate endocrine systems: insects) and have centralized nervous systems treated under D.3 (invertebrate nervous systems). Their tracheal respiratory regulation and hormonal metamorphosis control are canonical endocrine-neural coordination examples."
+    },
+    {
+      "articleTitle": "Arthropod",
+      "relevantPathsAI": [
+        "C.3",
+        "D.3"
+      ],
+      "rationaleAI": "Arthropods include insects and crustaceans—both explicitly cited in outline path C.3 (invertebrate endocrine systems)—and their ventral nerve cords with segmental ganglia are the primary example of centralized invertebrate nervous systems (D.3.c)."
+    },
+    {
+      "articleTitle": "Metabolism",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.6"
+      ],
+      "rationaleAI": "Metabolism is directly relevant to homeostasis (A): basal metabolic rate is a homeostatic parameter, and metabolic dormancy (A.6) and acclimatization (A.5) involve metabolic rate suppression. The regulation of metabolism via hormonal signals and allosteric enzymes connects to the broader homeostatic control hierarchy (A.3)."
+    },
+    {
+      "articleTitle": "Physiology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Physiology as a discipline is the overarching scientific framework for all content in Section 333—homeostasis, sensory reception, endocrine and nervous coordination, and biological clocks are all core physiological topics. Serves as a disciplinary anchor article across all outline paths."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

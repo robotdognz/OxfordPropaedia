@@ -1,253 +1,83 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "911",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Early civilizations of Southwest Asia and Egypt mark the beginning chapters of recorded human history.",
+      "articleTitle": "Phoenicia",
       "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
-    },
-    {
-      "articleTitle": "Prehistory",
-      "rationaleAI": "Prehistory provides the essential background for understanding the emergence of the earliest civilizations of Southwest Asia and Egypt.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Ancient history",
-      "rationaleAI": "Ancient history directly covers the early civilizations of Southwest Asia, Egypt, and the Aegean world.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.d",
-        "B.1.e",
-        "B.2",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Writing",
-      "rationaleAI": "The invention of writing in ancient Sumer and Egypt marks the transition from prehistory to recorded history in Southwest Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Civilization",
-      "rationaleAI": "The earliest civilizations of Sumer, Egypt, and the Indus Valley established the template for complex organized societies.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.d",
-        "B.2",
-        "D",
-        "D.1.a",
-        "D.1.a.ii",
-        "D.1.a.iii"
-      ]
-    },
-    {
-      "articleTitle": "Hammurabi",
-      "rationaleAI": "Hammurabi ruled ancient Babylon and created one of the earliest known legal codes in Southwest Asian civilization.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.b.i",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d.i",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.2",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Ramesses II",
-      "rationaleAI": "Ramesses II was one of ancient Egypt's most powerful pharaohs, central to the civilizations of early Southwest Asia and North Africa.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Cyrus the Great",
-      "rationaleAI": "Cyrus the Great founded the Achaemenid Empire, the largest empire the ancient world had yet seen, shaping Southwest Asian civilization.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
+        "F.2.a",
+        "E.2.b.i",
+        "I.5.a",
+        "I.5.b"
+      ],
+      "rationaleAI": "Phoenicia's Levantine city-states (Tyre, Sidon, Byblos), seafaring trade networks, alphabet invention, and Carthaginian colonization directly map to F.2.a (Canaanite-Phoenician city-states c. 1100–700 BC), E.2.b.i (Levantine trade and the linear alphabet), I.5.a (Phoenician foundation of Carthage c. 814 BC), and I.5.b (Carthage's rise as Mediterranean power)."
     },
     {
       "articleTitle": "Alexander the Great",
-      "rationaleAI": "Alexander's conquests across Southwest Asia and Egypt transformed the ancient Near Eastern world.",
       "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e"
-      ]
+        "G.3.b",
+        "G.3.d"
+      ],
+      "rationaleAI": "Alexander's conquest of the Achaemenid Persian Empire (330 BC) and the transition to Seleucid rule directly addresses G.3.b (Xerxes' successors and conquest by Alexander) and G.3.d (Seleucid rule after Alexander)."
     },
     {
-      "articleTitle": "Cleopatra",
-      "rationaleAI": "Cleopatra was the last active ruler of Ptolemaic Egypt, linking ancient Egyptian and Greco-Roman civilizations.",
+      "articleTitle": "Achaemenid Empire",
       "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
-    },
-    {
-      "articleTitle": "History of Africa",
-      "rationaleAI": "Africa's ancient history includes some of the earliest human civilizations in Egypt and the Nile Valley.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Bronze Age",
-      "rationaleAI": "The Bronze Age saw the rise of the first urban civilizations in Southwest Asia, Egypt, and the Aegean.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.2",
-        "C",
-        "C.1",
-        "C.2.a",
-        "C.2.b",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Ancient Egypt",
-      "rationaleAI": "Ancient Egypt was one of the foundational civilizations of Southwest Asia and North Africa.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii"
-      ]
-    },
-    {
-      "articleTitle": "Indus Valley Civilisation",
-      "rationaleAI": "The Indus Valley Civilisation was one of the earliest urban civilizations, contemporaneous with Mesopotamia and Egypt.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii"
-      ]
+        "G.3",
+        "G.3.a",
+        "G.3.b",
+        "G.3.c",
+        "G.3.d",
+        "G.2.d",
+        "G.2.d.ii"
+      ],
+      "rationaleAI": "The Achaemenid Empire is the central subject of outline section G.3 and its sub-paths, covering Cyrus through Alexander's conquest, administrative innovation (satrapies), Zoroastrianism, Persepolis, and Greek conflicts (G.3.a–G.3.c), as well as Cyrus's foundational role at G.2.d.ii."
     },
     {
       "articleTitle": "Mesopotamia",
-      "rationaleAI": "Mesopotamia was the cradle of civilization, where writing, law, and urbanization first emerged in Southwest Asia.",
       "relevantPathsAI": [
-        "A",
         "B",
+        "B.1",
         "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
+        "B.1.b",
+        "B.1.c",
         "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
+        "B.1.e",
+        "E.3"
+      ],
+      "rationaleAI": "Mesopotamia is the overarching subject of outline division B and E.3, covering Sumerian, Akkadian, Babylonian, and Assyrian civilizations, cuneiform, city-states, hydraulic engineering, and successive imperial phases from the Neolithic through c. 900 BC."
+    },
+    {
+      "articleTitle": "Ancient Egypt",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.3",
+        "C.3.a",
+        "C.3.b",
+        "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.1.c",
+        "F.1.a"
+      ],
+      "rationaleAI": "Ancient Egypt maps comprehensively to sections C (Predynastic through Middle Kingdom) and E.1 (New Kingdom, 18th–20th dynasties), and F.1.a (21st–25th dynasties in decline), covering pharaonic continuity, divine kingship, pyramids, trade, and cultural developments across all these periods."
+    },
+    {
+      "articleTitle": "Cyrus the Great",
+      "relevantPathsAI": [
+        "G.2.d",
+        "G.2.d.i",
+        "G.2.d.ii",
+        "G.3"
+      ],
+      "rationaleAI": "Cyrus II founded the Achaemenid Empire by defeating the Medes, Lydians, and Neo-Babylonians, directly addressing G.2.d (Kingdom of the Medes and establishment of the Achaemenid Persian Empire), G.2.d.ii (Cyrus's territorial expansion), and is foundational to G.3."
     },
     {
       "articleTitle": "Sumer",
-      "rationaleAI": "Sumer was the earliest known civilization, inventing cuneiform writing and establishing the first city-states in Mesopotamia.",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
         "B.1.a",
         "B.1.b",
@@ -256,183 +86,92 @@
         "B.1.c",
         "B.1.c.i",
         "B.1.c.ii"
-      ]
+      ],
+      "rationaleAI": "Sumer directly addresses B.1 and its sub-paths covering the earliest civilization in the Tigris-Euphrates valley, cuneiform invention, Uruk and early city-states (Kish, Ur, Lagash), temple economies, and Sumerian culture through the Ur III period."
     },
     {
-      "articleTitle": "Phoenicia",
-      "rationaleAI": "Phoenicia developed the alphabet and established maritime trade networks across the ancient Mediterranean and Southwest Asia.",
+      "articleTitle": "Hammurabi",
+      "relevantPathsAI": [
+        "B.1.d",
+        "B.1.d.iii"
+      ],
+      "rationaleAI": "Hammurabi's establishment of the Old Babylonian Empire and his law code directly map to B.1.d (Old Babylonian Period) and B.1.d.iii (dynasty of Hammurabi, law, society, and literature)."
+    },
+    {
+      "articleTitle": "Bronze Age",
+      "relevantPathsAI": [
+        "B.1.a",
+        "D.1.a.iii",
+        "D.2.a.iii",
+        "D.2.b",
+        "D.2.c",
+        "E.5"
+      ],
+      "rationaleAI": "The Bronze Age article covers the metallurgical phase relevant to D.1.a.iii (Chalcolithic and Early Bronze Age in Syria-Palestine), D.2.a.iii (Bronze Age Troy and Anatolia), D.2.b (Bronze Ages in Cyprus), D.2.c (early Aegean Bronze Age), and E.5 (Mycenaean Late Bronze Age civilization)."
+    },
+    {
+      "articleTitle": "Ancient history",
       "relevantPathsAI": [
         "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e"
-      ]
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "As a broad survey covering West Asia, Egypt, Nubia, Aksum, Greece, and Rome from writing's invention through late antiquity, this article spans all major divisions of Section 911 and provides historiographic and general context for path A."
     },
     {
       "articleTitle": "Iron Age",
-      "rationaleAI": "The Iron Age transformed civilizations across Southwest Asia, the Mediterranean, and beyond through iron metallurgy.",
       "relevantPathsAI": [
-        "A",
-        "B.1.d",
-        "B.1.d.iii",
-        "C.1",
-        "C.2.a",
-        "D.1.a",
-        "D.1.a.iii",
-        "D.1.b",
-        "D.1.b.ii",
-        "D.2.a.iv"
-      ]
+        "F",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "The Iron Age article covers the archaeological phase defined by iron adoption beginning c. 1200 BC in Anatolia, directly corresponding to outline section F (era of new states and the Iron Age, c. 1050–700 BC), including the Assyrian, Phoenician, and Hebrew states of F.1 and F.2."
     },
     {
-      "articleTitle": "Achaemenid Empire",
-      "rationaleAI": "The Achaemenid Empire was the first great Persian empire, dominating Southwest Asia from Egypt to India.",
+      "articleTitle": "History of Africa",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "I.1",
+        "I.2",
+        "I.4",
+        "I.5"
+      ],
+      "rationaleAI": "African history covers Nubian/Sudanic civilizations and the Kingdom of Kush (I.1, I.2), Aksumite Ethiopia (I.4), and the Berbers, Carthage, and North African prehistory (I.5.a–I.5.c)."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
         "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii"
-      ]
-    },
-    {
-      "articleTitle": "Middle East",
-      "rationaleAI": "The Middle East was the cradle of early civilizations in Southwest Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Egypt",
-      "rationaleAI": "Ancient Egypt is one of the earliest civilizations covered in this section.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii",
-        "B.1.e",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Iran",
-      "rationaleAI": "Ancient Persia is a foundational civilization covered in this section on Southwest Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii"
-      ]
-    },
-    {
-      "articleTitle": "Nile",
-      "rationaleAI": "The Nile valley was the cradle of ancient Egyptian civilization.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Wheat",
-      "rationaleAI": "Wheat domestication was foundational to early Southwest Asian civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
-    },
-    {
-      "articleTitle": "Judaism",
-      "rationaleAI": "Judaism originated among the ancient peoples of Southwest Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b.i",
-        "B.1.b.ii",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.i",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
-    },
-    {
-      "articleTitle": "Moses",
-      "rationaleAI": "Moses is a figure from the ancient civilizations of Southwest Asia and Egypt.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.a",
-        "B.1.b",
-        "B.1.b.ii",
-        "B.1.c",
-        "B.1.c.i",
-        "B.1.c.ii",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.1.d.iii"
-      ]
-    },
-    {
-      "articleTitle": "Alphabet",
-      "rationaleAI": "Alphabetic writing originated in ancient Southwest Asian civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "B.1.b.i",
-        "B.1.d",
-        "B.1.d.ii",
-        "B.2",
-        "C.1",
-        "D",
-        "D.1.a",
-        "D.1.a.iii",
+        "D.1.a.i",
+        "D.1.a.ii",
+        "D.2.a.i",
         "D.2.c.i"
-      ]
+      ],
+      "rationaleAI": "The Stone Age article covers Paleolithic, Mesolithic, and Neolithic periods directly relevant to D.1.a.i (Paleolithic and Mesolithic in Syria-Palestine), D.1.a.ii (Pre-Pottery Neolithic), D.2.a.i (Neolithic farming communities in Anatolia), D.2.c.i (Paleolithic-Neolithic in Greece and Aegean), and B.1.a (Late Neolithic in Mesopotamia)."
+    },
+    {
+      "articleTitle": "History of agriculture",
+      "relevantPathsAI": [
+        "B.1.a",
+        "D.1.a.i",
+        "D.1.a.iii"
+      ],
+      "rationaleAI": "The Neolithic origins of farming and animal domestication in Sumer and the Levant are directly addressed in B.1.a (pre-urban periods in Mesopotamia), D.1.a.i (development of horticulture), and D.1.a.iii (agricultural developments in the Chalcolithic and Early Bronze Age)."
+    },
+    {
+      "articleTitle": "Ancient Rome",
+      "relevantPathsAI": [
+        "I.5.b",
+        "I.5.c"
+      ],
+      "rationaleAI": "Ancient Rome's absorption of Carthage in the Punic Wars and Roman penetration into North Africa are covered at I.5.b (Carthage vs. Rome) and I.5.c (Roman penetration into North Africa, Numidia, and Mauretania)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

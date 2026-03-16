@@ -1,187 +1,294 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "112",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "The atomic nucleus and elementary particles are core subjects of modern physics.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Matter",
-      "rationaleAI": "Subatomic constituents of matter including protons, neutrons, and quarks are studied in nuclear and particle physics.",
+      "articleTitle": "Radioactive decay",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.2.a",
-        "A.2.b",
-        "A.7",
-        "B.4",
-        "B.5",
-        "B.5.a",
-        "C.4",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Strong interaction",
-      "rationaleAI": "The strong interaction binds atomic nuclei and is central to nuclear and particle physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
         "C.1",
-        "C.6",
-        "D",
-        "D.5",
-        "E.1",
-        "E.1.a",
-        "E.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Weak interaction",
-      "rationaleAI": "The weak interaction governs radioactive decay processes in atomic nuclei and elementary particles.",
-      "relevantPathsAI": [
-        "A",
-        "A.7",
         "C.2",
-        "G.2.a",
-        "H.1",
-        "H.1.b",
-        "H.2",
-        "H.3.g",
-        "H.4",
-        "H.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Particle physics",
-      "rationaleAI": "Particle physics studies the atomic nucleus and elementary particles that are the subject of this section.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.5",
-        "B.6",
-        "E.3",
-        "F.3",
-        "H",
-        "H.1",
-        "H.1.b",
-        "H.3.c",
-        "H.3.e"
-      ]
-    },
-    {
-      "articleTitle": "Standard Model",
-      "rationaleAI": "The Standard Model classifies elementary particles and fundamental forces in nuclear and particle physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.5",
-        "A.8",
-        "C.1",
-        "C.6",
-        "D",
-        "E.1.a",
-        "E.3",
-        "F.3",
-        "G.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Subatomic particle",
-      "rationaleAI": "Subatomic particles, including quarks and leptons, are the elementary particles examined in this section.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "B.5.a",
+        "C.7",
         "C.7.a",
         "C.7.b",
         "C.7.c",
-        "C.7.d",
-        "D.1",
-        "H",
-        "H.1"
-      ]
+        "C.7.d"
+      ],
+      "rationaleAI": "Radioactive decay is the primary subject of Section C, covering alpha, beta, and gamma decay modes (C.7.b–d), the exponential decay law (C.7.a), and the general phenomenon of radioactivity including naturally occurring radionuclides (C.1–C.3)."
     },
     {
-      "articleTitle": "Neutron",
-      "rationaleAI": "The neutron is a constituent of the atomic nucleus examined in this section on nuclear physics.",
+      "articleTitle": "Weak interaction",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.f",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.4"
-      ]
+        "C.7.c",
+        "H.4.c",
+        "H.6"
+      ],
+      "rationaleAI": "The weak interaction drives beta decay by transforming neutrons to protons (C.7.c) and its violation of parity and CP symmetry directly addresses conservation-law violations under charge conjugation and time reversal (H.4.c, H.6)."
     },
     {
-      "articleTitle": "Photon",
-      "rationaleAI": "Photons mediate electromagnetic interactions between elementary particles discussed here.",
+      "articleTitle": "Standard Model",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.d",
-        "A.3",
-        "A.5",
+        "H.1.d",
+        "H.3",
+        "H.4",
+        "H.7"
+      ],
+      "rationaleAI": "The Standard Model provides the complete classification of known elementary particles (H.1.d, H.3), the treatment of gauge symmetries and conservation laws (H.4), and theoretical extensions including supersymmetry particles beyond the confirmed set (H.7)."
+    },
+    {
+      "articleTitle": "Subatomic particle",
+      "relevantPathsAI": [
+        "H.1",
+        "H.3",
+        "H.4"
+      ],
+      "rationaleAI": "Systematically classifies subatomic particles by composition, spin statistics, and decay mode (H.1, H.3), covering the fermion/boson distinction and conservation-law analysis relevant to symmetry operations in particle physics (H.4)."
+    },
+    {
+      "articleTitle": "Particle physics",
+      "relevantPathsAI": [
+        "H.1",
+        "H.5",
+        "H.6",
+        "H.9"
+      ],
+      "rationaleAI": "Particle physics covers the discovery and classification of elementary particles (H.1), accelerator production of resonances (H.5.a), relationships between weak, strong, and electromagnetic interactions (H.6), and nuclear force theories involving elementary particles (H.9)."
+    },
+    {
+      "articleTitle": "Strong interaction",
+      "relevantPathsAI": [
         "A.6",
-        "A.8",
-        "B",
-        "B.4",
-        "B.5"
-      ]
+        "H.2",
+        "H.9"
+      ],
+      "rationaleAI": "The strong interaction is the nuclear binding force described in A.6, mediating quark confinement and the residual force holding nucleons in nuclei; it is one of the fundamental forces central to particle classification (H.2) and nuclear structure theories (H.9)."
     },
     {
       "articleTitle": "Proton",
-      "rationaleAI": "The proton is a fundamental constituent of the atomic nucleus examined in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
         "A.1.b",
-        "A.1.c",
-        "A.1.e",
-        "A.2",
         "A.2.b",
+        "A.3"
+      ],
+      "rationaleAI": "The proton defines nuclear charge (A.1.b), is a primary nuclear component (A.2.b), and its count (atomic number Z) together with neutron count distinguishes isotopes of the same element (A.3)."
+    },
+    {
+      "articleTitle": "Neutron",
+      "relevantPathsAI": [
+        "A.2.a",
         "A.3",
-        "A.4",
-        "A.5"
-      ]
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "The neutron is the explicit subject of all Section D paths (properties, sources, manipulation, nuclear reactions, detection) and is a primary nuclear component (A.2.a) whose count variation defines isotopes (A.3)."
     },
     {
-      "articleTitle": "Radioactive decay",
-      "rationaleAI": "Radioactive decay involves transformations of the atomic nucleus and emission of elementary particles.",
+      "articleTitle": "Chemical element",
       "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
+        "A.3",
         "B.1",
-        "B.4",
-        "B.6",
-        "C"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Chemical elements are defined by their isotopic structure (A.3), and the article covers isotopic nuclides and their classification (B.1), isotopic composition of elements (B.2), and nuclear stability and radioactivity."
     },
     {
-      "articleTitle": "Nuclear power",
-      "rationaleAI": "Nuclear power harnesses energy from atomic nuclei through fission reactions.",
+      "articleTitle": "Atom",
       "relevantPathsAI": [
-        "A",
-        "A.2.c",
+        "A.1",
+        "A.3",
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "The atom article covers nuclear binding forces and radioactive decay when electromagnetic repulsion dominates (A.1), isotopes as neutron-count variation (A.3), isotope formation via nuclear reactions (B.3), and isotopic effects on atomic properties (B.4)."
+    },
+    {
+      "articleTitle": "Hydrogen",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "G.2",
+        "G.2.a"
+      ],
+      "rationaleAI": "Hydrogen's isotopes (protium, deuterium, tritium) are the canonical example of isotope classification (B.1–B.2), and deuterium and tritium are the primary fuels for thermonuclear fusion reactions (G.2, G.2.a)."
+    },
+    {
+      "articleTitle": "Star",
+      "relevantPathsAI": [
+        "A.8",
+        "G.3.a"
+      ],
+      "rationaleAI": "Stars are the primary sites where atomic nuclei form and evolve via thermonuclear reactions in the universe (A.8, G.3.a); the article covers stellar nucleosynthesis and fusion mechanisms producing all elements heavier than lithium."
+    },
+    {
+      "articleTitle": "Sun",
+      "relevantPathsAI": [
+        "G.3.a"
+      ],
+      "rationaleAI": "The Sun's core is the nearest studied site of thermonuclear fusion (G.3.a), with the article covering the proton-proton hydrogen-to-helium fusion chain, energy release rates, and the solar nuclear processes directly addressed by the outline."
+    },
+    {
+      "articleTitle": "Big Bang",
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "The Big Bang describes primordial nucleosynthesis — the formation of the lightest atomic nuclei in the first minutes of the universe (A.8) — directly addressing the outline path on how and when atomic nuclei formed and evolved cosmologically."
+    },
+    {
+      "articleTitle": "Plasma (physics)",
+      "relevantPathsAI": [
+        "G.4.a",
+        "G.4.b"
+      ],
+      "rationaleAI": "Plasma is the required state of matter for thermonuclear fusion; the article covers formation of high-temperature plasma (G.4.a) and its confinement via electromagnetic fields and magnetohydrodynamics (G.4.b)."
+    },
+    {
+      "articleTitle": "Mass",
+      "relevantPathsAI": [
+        "A.1.a",
         "A.4",
+        "E.2"
+      ],
+      "rationaleAI": "Nuclear mass (A.1.a), systematic relationships between nuclear masses and binding energies (A.4), and energy relationships of nuclear reactions via E=mc² (E.2) are all directly addressed; the article covers relativistic mass and Standard Model mass origins."
+    },
+    {
+      "articleTitle": "Magnetism",
+      "relevantPathsAI": [
+        "A.1.e"
+      ],
+      "rationaleAI": "Nuclear magnetic moment and nuclear magnetic resonance phenomena are general properties of atomic nuclei listed in A.1.e; the article covers magnetic moments, spin-based magnetic properties, and quantum mechanical origins of nuclear magnetism."
+    },
+    {
+      "articleTitle": "Quantum mechanics",
+      "relevantPathsAI": [
         "A.5",
         "A.6",
-        "A.7",
-        "C",
-        "C.2",
-        "C.4",
-        "C.5"
-      ]
+        "H.4"
+      ],
+      "rationaleAI": "Quantum mechanics provides the framework for nuclear state models (A.5), nuclear binding force theories (A.6), and the symmetry operations (charge conjugation, time reversal, parity) governing conservation-law violations in particle physics (H.4)."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "C.5",
+        "E.2",
+        "F.1.c",
+        "G.2.b"
+      ],
+      "rationaleAI": "Energy release in radioactive decay (C.5), energy relationships of nuclear reactions (E.2), energy released in fission (F.1.c), and energy released in fusion (G.2.b) are all directly mapped; the article covers conservation laws and relativistic energy-mass equivalence."
+    },
+    {
+      "articleTitle": "Photon",
+      "relevantPathsAI": [
+        "C.7.d",
+        "I.1.a"
+      ],
+      "rationaleAI": "Gamma decay produces high-energy photons as the sole emission (C.7.d), and the passage of electromagnetic waves and their interaction with atomic structure (I.1.a) constitutes the photon-matter interaction mechanism in Section I."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "I.1.a",
+        "I.2",
+        "I.3"
+      ],
+      "rationaleAI": "Gamma and X-ray electromagnetic radiation are primary ionizing radiations whose passage through matter (I.1.a), secondary physical and biological effects (I.2), and medical and technological applications (I.3) are the subjects of Section I."
+    },
+    {
+      "articleTitle": "Matter",
+      "relevantPathsAI": [
+        "H.1",
+        "I.1",
+        "I.2"
+      ],
+      "rationaleAI": "The matter article covers baryonic matter and Standard Model particle content relevant to elementary particle classification (H.1) and addresses the fundamental interaction of radiation with matter central to Section I."
+    },
+    {
+      "articleTitle": "Albert Einstein",
+      "relevantPathsAI": [
+        "A.4",
+        "F.1.c",
+        "G.2.b"
+      ],
+      "rationaleAI": "Einstein's E=mc² is the mathematical foundation of nuclear mass-binding energy systematics (A.4), the calculation of energy released in fission (F.1.c), and the energy yields of fusion reactions (G.2.b)."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "C.3"
+      ],
+      "rationaleAI": "Carbon-14 is the most widely applied radioactive isotope in dating and serves as a natural source of radioactivity (C.3); carbon's stable isotopes (C-12, C-13) exemplify isotope classification (B.1) and isotopic composition variation (B.2)."
+    },
+    {
+      "articleTitle": "Emmy Noether",
+      "relevantPathsAI": [
+        "H.4",
+        "H.4.b",
+        "H.4.c"
+      ],
+      "rationaleAI": "Noether's theorem establishing the connection between continuous symmetry and conservation laws is foundational to the symmetry operations and conservation-law violations (H.4, H.4.b–c) central to elementary particle physics."
+    },
+    {
+      "articleTitle": "Supernova",
+      "relevantPathsAI": [
+        "A.8",
+        "G.3.a"
+      ],
+      "rationaleAI": "Supernovae disperse elements produced by nuclear fusion throughout the interstellar medium (A.8) and represent the extreme thermonuclear endpoint of stellar nuclear reactions (G.3.a), addressing the cosmic formation and evolution of atomic nuclei."
+    },
+    {
+      "articleTitle": "Physical cosmology",
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Physical cosmology addresses primordial nucleosynthesis and the formation of atomic nuclei in the early universe (A.8) through the Big Bang model, directly covering the outline path on the formation and cosmic evolution of nuclear species."
+    },
+    {
+      "articleTitle": "Vacuum",
+      "relevantPathsAI": [
+        "H.4",
+        "H.7"
+      ],
+      "rationaleAI": "The quantum vacuum's zero-point energy and virtual particle fluctuations underpin the theoretical particle concepts suggested by contemporary ideas (H.7), and vacuum symmetry properties are fundamental to the conservation laws analyzed in H.4."
+    },
+    {
+      "articleTitle": "Liquid",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "The liquid drop model — one of the nuclear models used to explain fission (F.3) — draws its conceptual basis from classical liquid droplet cohesion and surface tension; this article provides the physical basis for the analogy."
+    },
+    {
+      "articleTitle": "Explosive",
+      "relevantPathsAI": [
+        "F.2.a"
+      ],
+      "rationaleAI": "Nuclear (atomic) bombs are addressed as an application of fission chain reactions in F.2.a; the article on explosives classifies nuclear explosives alongside chemical explosives, providing direct coverage of this outline path."
+    },
+    {
+      "articleTitle": "State of matter",
+      "relevantPathsAI": [
+        "G.4.a"
+      ],
+      "rationaleAI": "Plasma is the required state of matter for thermonuclear fusion (G.4.a); the article covers plasma alongside other exotic states, providing foundational context for the plasma formation requirement of a thermonuclear reactor."
+    },
+    {
+      "articleTitle": "Universe",
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "The Universe article covers the Big Bang chronology and primordial nucleosynthesis — the formation of atomic nuclei in the early universe (A.8) — addressing how nuclear species originated and evolved throughout cosmic history."
+    },
+    {
+      "articleTitle": "Force",
+      "relevantPathsAI": [
+        "H.2"
+      ],
+      "rationaleAI": "The force article explicitly covers all four fundamental forces including the strong and weak nuclear forces (H.2), situating nuclear forces within the broader framework of fundamental interactions that govern particle classification and behavior."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

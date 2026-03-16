@@ -35,13 +35,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Mature tissues",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Dermal (protective) tissues: the epidermis of the primary plant body, the periderm of the secondary plant body",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Dermal (protective) tissues: the epidermis of the primary plant body, the periderm of the secondary plant body",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

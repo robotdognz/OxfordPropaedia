@@ -1,195 +1,224 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "321",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Biochemistry and vital processes operate at the molecular foundation of life.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.4",
-        "B.5.b",
-        "B.9.a",
-        "B.9.b",
-        "B.9.d",
-        "C.4.a",
-        "C.4.c",
-        "C.4.d"
-      ]
-    },
-    {
-      "articleTitle": "Cell (biology)",
-      "rationaleAI": "Cellular biochemistry involves the chemical processes and vital molecular mechanisms operating within cells.",
-      "relevantPathsAI": [
-        "B.3",
-        "B.5.b",
-        "B.9.d",
-        "C.3",
-        "E",
-        "E.1",
-        "E.2",
-        "E.3"
-      ]
-    },
-    {
-      "articleTitle": "Chemistry",
-      "rationaleAI": "Biochemistry applies chemical principles to understand the molecular basis of vital processes in living systems.",
-      "relevantPathsAI": [
-        "B.3",
-        "B.4",
-        "B.9.c",
-        "C.5.b",
-        "E",
-        "E.1",
-        "E.4"
-      ]
-    },
-    {
       "articleTitle": "Drug",
-      "rationaleAI": "Drug action operates through chemicals and vital processes at the molecular level.",
       "relevantPathsAI": [
-        "B.3",
+        "C",
         "C.1",
+        "C.2",
         "C.3",
-        "C.4.b",
-        "C.4.d",
-        "C.7",
-        "E",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Molecular biology",
-      "rationaleAI": "Molecular biology examines the chemicals that underlie vital biological processes.",
-      "relevantPathsAI": [
-        "B.3",
-        "B.6",
-        "B.9.a",
-        "B.9.b",
-        "B.9.c",
-        "B.9.d",
-        "B.10",
-        "C.4.d",
-        "C.7",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Metabolism",
-      "rationaleAI": "Metabolic processes involve the chemicals that underlie vital biological functions.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.5.b",
-        "B.5.c",
-        "B.9.a"
-      ]
+        "C.4",
+        "C.5",
+        "C.6",
+        "C.7"
+      ],
+      "rationaleAI": "Drug is the subject of the entire 321.C subsection, covering sources and development (C.1), general mechanisms of action (C.2), absorption/distribution/metabolism/excretion (C.3), classification by organ system (C.4), drugs against disease organisms (C.5), anticancer drugs (C.6), and drug addiction (C.7)."
     },
     {
       "articleTitle": "Biochemistry",
-      "rationaleAI": "Biochemistry studies the chemicals and vital processes at the molecular basis of life.",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.5.b",
-        "B.5.c",
-        "B.9.a",
-        "B.9.b"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Biochemistry is the foundational science for Section 321.B, characterizing the four classes of biological macromolecules \u2014 proteins, nucleic acids, carbohydrates, and lipids \u2014 that correspond directly to outline paths B.1\u2013B.5, and encompasses enzymology (B.7) and metabolism."
     },
     {
       "articleTitle": "Carbohydrate",
-      "rationaleAI": "Carbohydrates are essential biomolecules involved in the chemical basis of vital processes.",
       "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.3",
-        "E",
-        "E.1",
-        "E.4"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Carbohydrates directly map to 321.B.1, with the article covering monosaccharides, disaccharides, and polysaccharides (energy storage via glycogen/starch, structural roles via cellulose/chitin, and nucleic acid backbone components ribose/deoxyribose)."
     },
     {
-      "articleTitle": "DNA",
-      "rationaleAI": "DNA is a fundamental biomolecule in the chemical basis of vital processes.",
+      "articleTitle": "Nutrition",
       "relevantPathsAI": [
+        "B.1",
+        "B.2",
         "B.3",
-        "B.5",
-        "B.5.b",
-        "B.5.c",
-        "B.6",
-        "B.7",
-        "B.9.a",
-        "E",
-        "E.1",
-        "E.4"
-      ]
+        "B.8"
+      ],
+      "rationaleAI": "Nutrition covers the macro- and micronutrients \u2014 carbohydrates (B.1), lipids (B.2), proteins (B.3), and vitamins (B.8) \u2014 that Section 321.B enumerates as the organic chemicals participating in vital processes, connecting dietary supply to biochemical function."
     },
     {
       "articleTitle": "Hormone",
-      "rationaleAI": "Hormones are biochemical signaling molecules central to the chemistry of vital processes.",
       "relevantPathsAI": [
-        "B.3",
         "B.9",
         "B.9.a",
         "B.9.b",
         "B.9.c",
-        "B.9.d",
-        "C.4",
-        "C.4.b",
-        "C.4.d",
-        "C.7"
-      ]
+        "B.9.d"
+      ],
+      "rationaleAI": "The Hormone article is a direct match for 321.B.9 and all subpaths: it covers general features and endocrine-neural relationships (B.9.a), vertebrate hormones (B.9.b), invertebrate neurohormones, molting hormones, and pheromones (B.9.c), and plant hormones including auxin and brassinosteroids (B.9.d)."
+    },
+    {
+      "articleTitle": "Metabolism",
+      "relevantPathsAI": [
+        "B",
+        "B.4"
+      ],
+      "rationaleAI": "Metabolism covers enzyme-catalyzed chemical reactions sustaining life \u2014 catabolism and anabolism \u2014 and includes regulation via hormonal signals and cellular energy status, fitting 321.B broadly and specifically B.4 (ATP as the major carrier of chemical energy)."
     },
     {
       "articleTitle": "Lipid",
-      "rationaleAI": "Lipids are essential biomolecules involved in energy storage and cellular chemistry.",
       "relevantPathsAI": [
-        "B.2",
-        "B.3",
-        "B.6",
-        "B.10",
-        "C.3",
-        "E",
-        "E.1",
-        "E.4"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Lipids map directly to 321.B.2, with the article covering all eight structural lipid categories, biological functions (energy storage, membrane structure, steroid hormones, fat-soluble vitamins), and connecting to the steroids and sterols listed under 321.B.10."
+    },
+    {
+      "articleTitle": "Medication",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Medication covers pharmaceutical drugs used to treat disease, overlapping with 321.C (drugs broadly), including classification by mechanism and route of administration (C.2) and by organ system (C.4), and the drug discovery pipeline (C.1)."
+    },
+    {
+      "articleTitle": "Molecular biology",
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.b",
+        "B.5.c"
+      ],
+      "rationaleAI": "Molecular biology's foundational framework centers on nucleic acids (DNA and RNA) and proteins, directly covering the content of 321.B.5 (nucleic acids), B.5.b (DNA), and B.5.c (RNA), with the central dogma linking these biomolecules."
     },
     {
       "articleTitle": "Protein",
-      "rationaleAI": "Proteins are fundamental biomolecules that drive the chemical basis of vital processes.",
       "relevantPathsAI": [
-        "B",
-        "B.3",
-        "B.7",
-        "E",
-        "E.1",
+        "B.3"
+      ],
+      "rationaleAI": "Proteins and peptides are named directly at 321.B.3, and the article covers amino acid polymer structure, functional diversity (enzymes at B.7, signaling, transport, structure), and the genetic code linking nucleic acids (B.5) to proteins."
+    },
+    {
+      "articleTitle": "Antibiotic",
+      "relevantPathsAI": [
+        "C.5.a"
+      ],
+      "rationaleAI": "Antibiotics map directly to 321.C.5.a \u2014 drugs derived from living microorganisms \u2014 with the article covering penicillin and natural antibiotic classes, as well as antibiotic resistance and emerging alternatives."
+    },
+    {
+      "articleTitle": "Nitrogen",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Nitrogen is a core element of the inorganic milieu of living systems (321.A), forming the backbone of amino acids, nucleic acids, and ATP \u2014 the very organic chemicals covered in 321.B \u2014 and its biochemical cycling is critical to the inorganic environment supporting life."
+    },
+    {
+      "articleTitle": "Allergy",
+      "relevantPathsAI": [
+        "C.4.h",
+        "C.4"
+      ],
+      "rationaleAI": "Allergy is an IgE-mediated hypersensitivity disorder involving histamine release and immune response, directly relevant to 321.C.4.h (drugs affecting the immune response system) and 321.C.4.i (drugs affecting the histamine response system), as antihistamines and immunotherapy are primary treatments."
+    },
+    {
+      "articleTitle": "Liver",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "The liver is the primary organ for drug metabolism and detoxification, directly corresponding to 321.C.3 (absorption, distribution, metabolism, and excretion of drugs), including hepatic first-pass metabolism of pharmaceuticals."
+    },
+    {
+      "articleTitle": "Digestion",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Digestion encompasses the absorption and first-pass processing steps fundamental to 321.C.3 (absorption, distribution, metabolism, and excretion of drugs), as oral drug bioavailability depends on gastrointestinal absorption mechanisms."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Carbon dioxide is a key component of the inorganic milieu of living systems at 321.A \u2014 it participates in cellular respiration as a waste product and in photosynthesis as a substrate, and its dissolved form (carbonic acid) contributes to pH buffering in biological fluids."
+    },
+    {
+      "articleTitle": "Weapon",
+      "relevantPathsAI": [
         "E.4"
-      ]
+      ],
+      "rationaleAI": "The Weapon article covers biological and chemical agents \u2014 the direct subject of priority path 321.E.4 (biological and chemical warfare agents) \u2014 including weaponization of viruses, toxic chemicals, and their military applications."
+    },
+    {
+      "articleTitle": "Alcoholic beverage",
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Alcoholic beverages are the primary means of ethyl alcohol consumption, directly matching priority path 321.D (ethyl alcohol, alcohol consumption), with the article covering fermentation chemistry, CNS depressant effects, pharmacology, and health consequences of alcohol use."
+    },
+    {
+      "articleTitle": "Smoking",
+      "relevantPathsAI": [
+        "C.4.c",
+        "C.7"
+      ],
+      "rationaleAI": "Smoking delivers nicotine (a drug affecting the CNS via nicotinic acetylcholine receptors, 321.C.4.c) and is a primary route of drug use and abuse (321.C.7 \u2014 drug addiction and dependence), with the article covering addiction pharmacology and health consequences."
+    },
+    {
+      "articleTitle": "Skeletal muscle",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Skeletal muscle is one of the target tissues named in 321.C.4.b (drugs affecting smooth and skeletal muscle systems), and the article's coverage of neuromuscular junction pharmacology and muscle fiber physiology is relevant to understanding drug action at this site."
     },
     {
       "articleTitle": "RNA",
-      "rationaleAI": "RNA is a key biomolecule mediating gene expression in the chemistry of vital processes.",
       "relevantPathsAI": [
-        "B.3",
         "B.5",
-        "B.5.b",
-        "B.5.c",
-        "B.9.a",
-        "E",
-        "E.1",
-        "E.4"
-      ]
+        "B.5.a",
+        "B.5.c"
+      ],
+      "rationaleAI": "RNA directly maps to 321.B.5.c (Ribonucleic acid), with the article covering general features of nucleic acids (B.5.a), diverse RNA classes (mRNA, rRNA, tRNA, miRNA), and the RNA world hypothesis as the primordial nucleic acid \u2014 all within the 321.B.5 framework."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Carbon is the foundational element of the inorganic milieu (321.A) and of all organic chemicals in 321.B \u2014 the article's treatment of carbon's tetravalent bonding versatility as the basis of all known life and organic chemistry directly underpins the biochemical content of 321.B.1\u2013B.10."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Oxygen is an essential component of the inorganic milieu of living systems (321.A) \u2014 it drives aerobic respiration in all eukaryotes, participates in oxidative metabolism, and forms the backbone of water and organic molecules central to all biochemical reactions in 321.B."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Energy as a physical quantity connects to 321.B.4 (ATP as the major carrier of chemical energy in living systems) \u2014 the article covers chemical energy, energy conservation laws, and bioenergetics linking metabolic reactions to ATP synthesis and utilization."
+    },
+    {
+      "articleTitle": "DNA",
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.a",
+        "B.5.b"
+      ],
+      "rationaleAI": "DNA directly maps to 321.B.5.b (Deoxyribonucleic acid), and the article covers the general features of nucleic acids (B.5.a) \u2014 double helix structure, base pairing, replication, transcription \u2014 as the genetic information carrier central to 321.B.5."
+    },
+    {
+      "articleTitle": "Vaccine",
+      "relevantPathsAI": [
+        "C.5",
+        "C.4.h"
+      ],
+      "rationaleAI": "Vaccines are biological preparations that prime the immune response, fitting 321.C.5 (drugs directed against disease organisms) \u2014 specifically as prophylactic agents that confer active immunity \u2014 and 321.C.4.h (drugs affecting the immune response system)."
+    },
+    {
+      "articleTitle": "Diabetes",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Diabetes management involves pharmaceutical agents \u2014 insulin, metformin, GLP-1 agonists \u2014 that fall under 321.C.4 (drugs classified by organ/system of principal effect), specifically affecting the endocrine/metabolic system; the article covers both insulin replacement and pharmacological interventions."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

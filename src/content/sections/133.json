@@ -397,13 +397,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Relative motions of the Sun, Earth, and Moon",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The geometry of the Sun-Earth-Moon system: the celestial equator, the apparent motion of the Sun along the ecliptic, the inclination of the Earth's axis to its orbit",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The geometry of the Sun-Earth-Moon system: the celestial equator, the apparent motion of the Sun along the ecliptic, the inclination of the Earth's axis to its orbit",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

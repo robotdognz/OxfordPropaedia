@@ -1,68 +1,209 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "732",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Major industrial technologies are central applications discussed in this article.",
+      "articleTitle": "Manufacturing",
       "relevantPathsAI": [
-        "F.1",
-        "F.3",
-        "F.5"
-      ]
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Directly covers the transformation of raw materials into finished goods, including the organization of industrial production (A) and the full range of manufacturing industries (B), from aerospace to semiconductors and steel. Provides the broadest conceptual foundation for the section."
     },
     {
       "articleTitle": "Clothing",
-      "rationaleAI": "The textile and garment industry is one of the world's major industries with complex global supply chains.",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Covers the production, global trade, and economics of garments as the core product of the clothing and footwear industry, including fast fashion supply chains, working conditions, and environmental impact."
     },
     {
-      "articleTitle": "Manufacturing",
-      "rationaleAI": "Manufacturing industries including steel, chemicals, electronics, and automotive are among the world's major industries.",
+      "articleTitle": "Henry Ford",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Ford's introduction of the moving assembly line and Fordism is foundational to the principles of work organization and mass production (A), and his Ford Motor Company is the paradigm case for the automotive industry (B.2)."
+    },
+    {
+      "articleTitle": "Textile",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly describes the textile industry — fibre sourcing, yarn formation, fabric construction, dyeing, and finishing — covering every stage of C.1's scope from natural and synthetic fibres to industrial chemistry and global supply chains."
+    },
+    {
+      "articleTitle": "Fashion",
+      "relevantPathsAI": [
+        "B.3",
+        "C.1"
+      ],
+      "rationaleAI": "Fashion drives the clothing and footwear industry (B.3) and depends directly on the textile industry (C.1); addresses mass production, global distribution, and the environmental and ethical dimensions of the garment supply chain."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
       "relevantPathsAI": [
         "A",
         "B",
-        "D.10",
-        "F.1",
-        "I"
-      ]
+        "C"
+      ],
+      "rationaleAI": "The Industrial Revolution established the factory system and mechanized production methods that underlie the organization of work (A) and the emergence of the major manufacturing and fabrication industries (B, C), including textiles and iron/steel."
     },
     {
-      "articleTitle": "Furniture",
-      "rationaleAI": "Furniture production is a significant manufacturing industry.",
+      "articleTitle": "Shoe",
       "relevantPathsAI": [
-        "B.4",
-        "D.10",
-        "F.1",
-        "I"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers the footwear product and its manufacturing — materials, construction, and the $200 billion global industry — corresponding precisely to the clothing and footwear industry path B.3."
     },
     {
-      "articleTitle": "Mining",
-      "rationaleAI": "Mining is a major industry.",
+      "articleTitle": "Service (economics)",
       "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Defines the economic characteristics of service industries — intangibility, heterogeneity, simultaneous production and consumption — providing the conceptual grounding for section F's coverage of hotels, restaurants, food service, and other service-sector industries."
+    },
+    {
+      "articleTitle": "Mechanical engineering",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Mechanical engineering provides the core technical principles — design, manufacture, and maintenance of mechanical systems — that underlie the organization of industrial production processes covered in A, including CAD/CAM tooling and machinery."
+    },
+    {
+      "articleTitle": "Plastic",
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Directly covers the plastics industry (D.5): polymer types, processing methods, petroleum-derived feedstocks, global production volumes, recycling challenges, and environmental impacts central to that outline path."
+    },
+    {
+      "articleTitle": "Biotechnology",
+      "relevantPathsAI": [
+        "D.1",
+        "I"
+      ],
+      "rationaleAI": "Biotechnology's industrial fermentation, recombinant DNA products, and biofuels connect to the chemical industry (D.1), while its emphasis on genetic engineering pipelines and IP tensions makes it a natural entry point for industrial research and development (I)."
+    },
+    {
+      "articleTitle": "Machine",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Covers the full range of machines — simple to complex — and the principles of mechanical advantage and power transmission that are foundational to the organization and mechanization of industrial production (A)."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
+        "A",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C.1",
-        "C.3",
-        "C.4",
-        "C.6",
-        "C.7",
-        "C.8"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Engines are the primary power source for industrial production machinery (A) and are central to the aerospace industry (B.1) and automotive industry (B.2) as the defining technological component of those sectors."
+    },
+    {
+      "articleTitle": "Robotics",
+      "relevantPathsAI": [
+        "A",
+        "I"
+      ],
+      "rationaleAI": "Industrial robotics directly transforms the organization of manufacturing work and production (A), while the R&D driving automation, AI integration, and human-robot interaction belongs squarely to industrial research and development (I)."
+    },
+    {
+      "articleTitle": "Car",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The automobile is the defining product of the automotive industry (B.2); the article covers propulsion systems, production technologies, and the industry's economic and environmental significance."
+    },
+    {
+      "articleTitle": "Construction",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Directly corresponds to E (the construction industries), covering the full lifecycle of built-asset delivery — residential, non-residential, infrastructure, and industrial — and providing the only substantive candidate covering this priority path."
+    },
+    {
+      "articleTitle": "Inorganic chemistry",
+      "relevantPathsAI": [
+        "D.1",
+        "D.8"
+      ],
+      "rationaleAI": "Industrial inorganic chemistry underpins the chemical industry (D.1) through catalysis, materials, and feedstock chemistry, and directly connects to the dye and pigment industry (D.8) via pigments, coatings, and chromophore synthesis."
+    },
+    {
+      "articleTitle": "Catalysis",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Catalysis is described as operating in roughly 90% of commercial chemical products, making it fundamental to the chemical industry (D.1), including hydrocarbon processing, polymer synthesis, and industrial chemical manufacture."
+    },
+    {
+      "articleTitle": "Fossil fuel",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Petroleum and natural gas are the primary feedstocks and energy sources for the petroleum industry (D.2), and the article covers refining into fuels, plastics, pharmaceuticals, and fertilizers that span multiple D-path industries."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "D.10",
+        "D.1"
+      ],
+      "rationaleAI": "Industrial oxygen is among the most important gases produced for industrial and residential use (D.10), and its role as an oxidizer in steelmaking, chemical synthesis, and plastics production connects it to the chemical industry (D.1)."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "D.10"
+      ],
+      "rationaleAI": "CO2 is a major industrial gas used in food carbonation, fire suppression, enhanced oil recovery, and supercritical solvent applications, directly covering the production of industrial and residential gases (D.10)."
+    },
+    {
+      "articleTitle": "Steel",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Directly covers the steel industry (C.2) in full: iron-carbon alloy composition, production via Bessemer and basic oxygen processes, global production volumes (~1.6 billion tonnes annually), and its critical role in fabrication industries."
+    },
+    {
+      "articleTitle": "Thomas Edison",
+      "relevantPathsAI": [
+        "I",
+        "C.6"
+      ],
+      "rationaleAI": "Edison established the paradigm of the industrial research laboratory (I), and his work on electric power, the phonograph, and motion pictures laid foundational groundwork for the electronics industry (C.6)."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Directly addresses the organization of human work — division of labor, paid employment, and production as a factor — providing conceptual grounding for the principles of organization of work and production covered in priority path A."
+    },
+    {
+      "articleTitle": "Retail",
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Retail covers the final-stage sale of goods directly to consumers, including store formats, pricing strategies, and the omnichannel digital transformation that constitutes the merchandising and marketing of consumer goods (H)."
+    },
+    {
+      "articleTitle": "Tool",
+      "relevantPathsAI": [
+        "A",
+        "C.7"
+      ],
+      "rationaleAI": "Tool covers the full history and principles of hand tools and their role in production (A), and the article's treatment of metalworking and industrial-era mechanization directly addresses the tool and die industry (C.7)."
+    },
+    {
+      "articleTitle": "Medication",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Covers the pharmaceutical drug lifecycle — discovery, development, manufacturing, WHO essential medicines, and access-to-medicines policy — directly matching the pharmaceuticals industry path D.4."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

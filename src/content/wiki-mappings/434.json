@@ -1,81 +1,171 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "434",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Persisting capacities and inclinations are fundamental aspects of human psychology covered here.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "E",
-        "E.1",
-        "E.3",
-        "E.4",
-        "G.1",
-        "G.2",
-        "G.3",
-        "G.4"
-      ]
-    },
-    {
-      "articleTitle": "Psychology",
-      "rationaleAI": "Psychology studies the persisting capacities and inclinations including intelligence, temperament, and aptitudes that shape behavior.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "E",
-        "E.1",
-        "E.4",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Mind",
-      "rationaleAI": "The mind's persisting capacities including memory, intelligence, and temperament shape enduring behavioral patterns.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "E",
-        "E.1",
-        "E.3",
-        "E.4",
-        "G.1",
-        "G.2",
-        "G.3"
-      ]
-    },
-    {
       "articleTitle": "Intelligence",
-      "rationaleAI": "Intelligence is a persisting capacity influencing human behavior.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "E",
-        "E.1",
-        "E.4"
-      ]
-    },
-    {
-      "articleTitle": "Personality",
-      "rationaleAI": "Personality reflects persisting capacities and inclinations.",
-      "relevantPathsAI": [
-        "B.2",
-        "E.4",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Intellectual disability",
-      "rationaleAI": "Intellectual disability affects persisting cognitive capacities.",
       "relevantPathsAI": [
         "D",
         "E",
         "E.1",
+        "E.3",
         "E.4"
-      ]
+      ],
+      "rationaleAI": "Intelligence is the direct subject of outline paths D (intellectual abilities and theories of intelligence including g-factor, multiple intelligences) and E (distribution of intelligence, standards, gifted individuals at E.3, and group differences by age, class, race, and sex at E.4). The article addresses all major theoretical frameworks cited in the outline."
+    },
+    {
+      "articleTitle": "Personality",
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "G.1",
+        "G.3"
+      ],
+      "rationaleAI": "Personality directly addresses persisting behavioural, cognitive, and emotional patterns constituting individual adjustment (F), encompassing trait frameworks, motivation, and identity that generate idiosyncrasies affecting behaviour. The five-factor inventory connects to attitude measurement at G.1 and G.3 through its coverage of trait development."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "D",
+        "G.4"
+      ],
+      "rationaleAI": "Psychology as a discipline provides the methodological basis for psychological measurement (B), including types of testing instruments (B.1), standardized test development (B.2), and assessment of results (B.3), while also covering intelligence theory (D) and attitude measurement through questionnaires and sampling (G.4)."
+    },
+    {
+      "articleTitle": "Intellectual disability",
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Intellectual disability directly addresses E.2 (retardation), covering its definition (IQ below 70 with adaptive behavior deficits), causes, diagnostic criteria (DSM-5), and global prevalence. The article provides the substantive content for the retardation outline path."
+    },
+    {
+      "articleTitle": "Statistics",
+      "relevantPathsAI": [
+        "B.3",
+        "G.4"
+      ],
+      "rationaleAI": "Statistics covers inferential statistics, hypothesis testing, and sampling design, which are the methodological underpinnings for B.3 (assessment of test results) and G.4 (measurement of attitudes using questionnaires, sampling techniques, and content analysis)."
+    },
+    {
+      "articleTitle": "Thought",
+      "relevantPathsAI": [
+        "D",
+        "A"
+      ],
+      "rationaleAI": "Thought covers cognitive processes including reasoning, concept formation, and problem-solving that constitute intellectual abilities (D), and the nature of mental capacities as computational or linguistic operations (A). Computationalism and language-of-thought theories address the theoretical foundations of intellectual capacity."
+    },
+    {
+      "articleTitle": "Learning",
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
+      "rationaleAI": "Learning addresses the acquisition of skills through experience and conditioning, directly relevant to the nature of human capacities (A) and sensorimotor skill acquisition (C). The coverage of habituation, conditioning, and observational learning maps onto the development of bodily and mechanical abilities."
+    },
+    {
+      "articleTitle": "Disability",
+      "relevantPathsAI": [
+        "E.2",
+        "B"
+      ],
+      "rationaleAI": "Disability covers cognitive and intellectual conditions that limit activity, directly relevant to E.2 (retardation as a category within intelligence distribution), and its treatment of assessment and classification methods connects to the psychological measurement paths under B."
+    },
+    {
+      "articleTitle": "Racism",
+      "relevantPathsAI": [
+        "E.4",
+        "G",
+        "G.3"
+      ],
+      "rationaleAI": "Racism directly intersects with E.4 (group differences in intelligence including interpretation of race-based differences and scientific racism/eugenics), and with G.3 (the development of racial attitudes). The article covers polygenism and racial typology as historical forms of scientific racism embedded in intelligence debates."
+    },
+    {
+      "articleTitle": "Gender",
+      "relevantPathsAI": [
+        "E.4",
+        "G.3"
+      ],
+      "rationaleAI": "Gender addresses sex-based differences in roles, norms, and hormonal influences that are directly relevant to E.4 (group differences in intelligence by sex) and G.3 (development of gendered attitudes through socialization and cultural norms)."
+    },
+    {
+      "articleTitle": "Social class",
+      "relevantPathsAI": [
+        "E.4",
+        "E.1"
+      ],
+      "rationaleAI": "Social class directly addresses the socioeconomic dimension of group differences in intelligence (E.4), as class position shapes educational opportunity and test performance. The article's treatment of class stratification connects to E.1's concern with the establishment of intelligence standards and their distribution across social groups."
+    },
+    {
+      "articleTitle": "Belief",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Belief is the cognitive counterpart of attitude — a subjective mental attitude toward a proposition — and the article covers the nature of belief (G.1), its functions in guiding behavior (G.2), and its formation through perception, testimony, and inference (G.3), making it directly relevant to the attitudes section G throughout."
+    },
+    {
+      "articleTitle": "Discrimination",
+      "relevantPathsAI": [
+        "G",
+        "G.3",
+        "E.4"
+      ],
+      "rationaleAI": "Discrimination is the enacted form of attitude, directly linked to G (attitudes) and G.3 (the development of attitudes resulting in unjustified distinctions by race, gender, age, disability, and class). It also connects to E.4 through debates over affirmative action and unequal opportunity in intelligence measurement."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
+        "B.2",
+        "E",
+        "G.3"
+      ],
+      "rationaleAI": "Education addresses the psychological factors (motivation, intelligence) shaping educational success, connecting to B.2 (development of standardized tests in educational contexts), E (intelligence distribution across educational cohorts), and G.3 (development of attitudes through the educational process)."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "D",
+        "A"
+      ],
+      "rationaleAI": "Reason as a cognitive capacity for logical inference, deduction, and problem-solving is a core component of intellectual abilities (D) and relates to the theoretical nature of human capacities (A). The article's treatment of reasoning biases also connects to the assessment and limits of intellectual ability."
+    },
+    {
+      "articleTitle": "Human sexuality",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Human sexuality covers sexual orientation and desire as persisting dimensions of individual identity and propensity (F), distinguishing it from transient sexual behavior. The biological and psychological determinants of sexual attraction constitute a personal propensity and idiosyncrasy affecting behaviour and experience."
+    },
+    {
+      "articleTitle": "Feminism",
+      "relevantPathsAI": [
+        "G",
+        "G.3",
+        "E.4"
+      ],
+      "rationaleAI": "Feminism is a socio-political movement grounded in and generating attitudes toward gender equity (G, G.3), and engages directly with the interpretation of sex-based group differences in intelligence, opportunity, and outcomes (E.4). First- and second-wave feminist thought shaped attitude measurement and consciousness-raising as attitude-change mechanisms."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "F",
+        "A"
+      ],
+      "rationaleAI": "Freud's structural model (id, ego, superego) and theory of psychosexual development provide a foundational account of persisting personal propensities and idiosyncrasies affecting behaviour (F) and contribute to theoretical accounts of the nature of human mental capacities (A) through his treatment of the unconscious and libidinal drives."
+    },
+    {
+      "articleTitle": "Violence",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Violence as a behavioral tendency — including aggressive propensities shaped by genetics, socialization, and psychological factors — falls within the domain of personal propensities and idiosyncrasies affecting behaviour (F). The article covers aggression psychology as a persisting inclination rather than a transient state."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

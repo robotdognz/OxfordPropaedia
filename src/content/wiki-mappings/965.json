@@ -1,246 +1,209 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "965",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The development of the United States and Canada represents key modern human history.",
-      "relevantPathsAI": [
-        "A",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.3.i",
-        "A.3.i.ii",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.1.c",
-        "B.2.f"
-      ]
-    },
-    {
-      "articleTitle": "Modern era",
-      "rationaleAI": "The development of the United States and Canada as major powers is a central narrative of the modern era.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2"
-      ]
-    },
-    {
-      "articleTitle": "North America",
-      "rationaleAI": "The development of the United States and Canada from 1763 to 1920 shaped North America's modern nations.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.i",
-        "A.2.b",
-        "A.2.d",
-        "A.3",
-        "A.3.c"
-      ]
-    },
-    {
       "articleTitle": "George Washington",
-      "rationaleAI": "George Washington led the American Revolution and served as the first U.S. president, shaping the development of the United States.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Abraham Lincoln",
-      "rationaleAI": "Abraham Lincoln preserved the Union during the Civil War and abolished slavery, transforming American society and governance.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Thomas Edison",
-      "rationaleAI": "Edison's prolific inventions drove the technological transformation of the United States in the late 19th and early 20th centuries.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Henry Ford",
-      "rationaleAI": "Ford's innovations shaped the industrial and economic development of the United States in the early 20th century.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2"
-      ]
-    },
-    {
-      "articleTitle": "History of North America",
-      "rationaleAI": "The development of the United States and Canada from 1763 is central to North American history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.i"
-      ]
+        "A.1.b"
+      ],
+      "rationaleAI": "Washington is the central figure of A.1.a (American Revolutionary period) and A.1.b (strengthening of the national government), covering the War of Independence (A.1.a.ii), Constitutional Convention (A.1.b.i), and the formation of national policies and political parties during his presidency (A.1.b.ii)."
     },
     {
       "articleTitle": "American Revolution",
-      "rationaleAI": "The American Revolution established the United States and shaped North American political development.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The American Revolution directly corresponds to outline A.1.a (American Revolutionary period 1763\u201387), covering political and economic opposition to British taxation (A.1.a.i), the War of Independence including military leadership and French support (A.1.a.ii), and the Articles of Confederation (A.1.a.iii)."
     },
     {
-      "articleTitle": "Canada",
-      "rationaleAI": "Canada's development from 1763 to 1920 is directly covered in this section.",
+      "articleTitle": "Abraham Lincoln",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2"
-      ]
+        "A.3",
+        "A.3.b",
+        "A.3.c",
+        "B.1"
+      ],
+      "rationaleAI": "Lincoln is the central figure of outline A.3 (United States 1850\u201365), covering secession (A.3.b), the Civil War (A.3.c.i\u2013iii), Emancipation, and Reconstruction policy (B.1.a), making him the most important single figure for these paths."
     },
     {
       "articleTitle": "United States",
-      "rationaleAI": "The development of the United States from 1763 to 1920 is directly covered here.",
       "relevantPathsAI": [
         "A",
+        "B",
         "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Great Lakes",
-      "rationaleAI": "The Great Lakes region was central to the development of the United States and Canada.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
         "A.2",
-        "A.2.i"
-      ]
+        "A.3",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "The United States article broadly covers the entire section's subject matter, from the 1776 Revolution through westward expansion, Civil War, industrialization, and emergence as a world power by 1920, encompassing all major outline divisions A and B."
     },
     {
-      "articleTitle": "Mississippi River",
-      "rationaleAI": "The Mississippi basin was central to the development of the United States.",
+      "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
-        "A",
-        "A.1",
+        "A.2.a",
+        "A.3.a",
+        "A.3.c",
+        "B.1"
+      ],
+      "rationaleAI": "The Atlantic slave trade and abolition movements connect directly to A.2.a.ii (cotton and slavery), A.3.a (the sectionalism and slavery basis of the Civil War), A.3.c.iii (moves toward emancipation), and B.1 (Reconstruction and freedmen)."
+    },
+    {
+      "articleTitle": "World War I",
+      "relevantPathsAI": [
+        "B.3.c"
+      ],
+      "rationaleAI": "US participation in WWI is detailed in outline B.3.c (role of the US in WWI), covering initial neutrality (B.3.c.i), mobilization and decisive effect on the Western Front (B.3.c.ii), and Wilson's Paris Peace Conference policies and Senate rejection of Versailles (B.3.c.iii)."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Imperialism directly corresponds to B.3.a (emergence of the US as an imperial power), covering the Spanish-American War, Open Door policy, Panama Canal Zone acquisition, and the Roosevelt Corollary to the Monroe Doctrine."
+    },
+    {
+      "articleTitle": "Canada",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.3.a",
+        "C.3.b",
+        "C.3.c"
+      ],
+      "rationaleAI": "Canada is the direct subject of outline division C, covering British colonial administration (C.1), social and political development 1790\u20131850 including French-English dissension (C.2), and the Dominion of Canada from 1867 including Confederation, westward expansion, and Laurier's Liberal governments (C.3)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.2.e"
+      ],
+      "rationaleAI": "Marx's socialist theory and class analysis relates to the labour movements referenced in A.2.a.ii (early labour movements) and B.2.e (emergence of national labour union organizations, strikes, and collective bargaining), though his primary historical significance is European."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Spain is directly relevant to B.3.a.i, which cites the Spanish-American War and US acquisition of the Philippines, Hawaii, and Puerto Rico (1898) as the onset of American imperial power."
+    },
+    {
+      "articleTitle": "Mexico",
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.3.b"
+      ],
+      "rationaleAI": "Mexico is relevant at A.2.d (Mexican War 1846\u201348 and annexation of California and New Mexico) and B.3.b.iii (Wilson's intervention in Mexican affairs during his first administration), both explicitly cited in the outline."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Napoleon's role in the Louisiana Purchase is cited in A.1.b.iii (Jefferson's administration and the Louisiana Purchase, 1803), as Napoleon sold Louisiana to the US to finance his European campaigns."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2"
-      ]
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "The British Empire is relevant to A.1.a (colonial taxation and the War of Independence) and division C (British colonial administration of Canada, Quebec Acts, and Confederation), covering the imperial context of both the US and Canadian histories in the section."
     },
     {
-      "articleTitle": "New York City",
-      "rationaleAI": "New York City was central to the development of the United States.",
+      "articleTitle": "Rocky Mountains",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "B.2.b",
+        "C.3.b"
+      ],
+      "rationaleAI": "The Rocky Mountains directly relates to B.2.b (development of the West 1865\u20131900, including gold/silver mining, cattlemen, westward railroad expansion, and Indian wars) and C.3.b (Canadian westward expansion including the transcontinental railroad and Manitoba/British Columbia)."
     },
     {
-      "articleTitle": "Slavery",
-      "rationaleAI": "Slavery was central to the development of the United States.",
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Enlightenment political philosophy (Locke, Montesquieu) underpins the ideological foundations of the American Revolution cited in A.1.a.i (political and economic opposition to Britain's taxation policies culminating in the Declaration of Independence), though the article's primary focus is European."
+    },
+    {
+      "articleTitle": "Philippines",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "The Philippines is explicitly cited in B.3.a.i as one of the territories acquired by the US following the Spanish-American War (1898), making it directly relevant to the outline's coverage of US imperial expansion."
+    },
+    {
+      "articleTitle": "History of North America",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.i"
-      ]
+        "B",
+        "C"
+      ],
+      "rationaleAI": "The history of North America survey covers pre-Columbian through early 20th-century developments including the American Revolution, westward expansion, Civil War, industrialization, both World Wars' domestic impacts, and Canada's development, spanning the entire section's scope."
+    },
+    {
+      "articleTitle": "North America",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "North America as a continental entry covers the geography, Indigenous peoples, European colonization, American Revolution, westward expansion, and Panama Canal referenced across the section, providing broad coverage for all three outline divisions."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "France's military support is explicitly cited in A.1.a.ii (French military support in the US War of Independence), making it directly relevant to the Revolutionary period; France's Louisiana sale connects to A.1.b.iii."
+    },
+    {
+      "articleTitle": "Modern era",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "The modern era article covers industrialization, nationalism, and the emergence of the US as a global power\u2014themes corresponding to B.2 (transformation of American society 1865\u20131900) and B.3 (imperialism and Progressive Era), though it is highly general and primarily a broad overview rather than a specific resource."
+    },
+    {
+      "articleTitle": "Reformation",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The Protestant Reformation's religious legacy indirectly underpins the religious motivations for colonial settlement that precede the section, but its primary connection is to section 964 rather than 965."
+    },
+    {
+      "articleTitle": "China",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "China is explicitly referenced in B.3.a.ii (the 'Open Door' policy and armed US intervention in China in 1900), making it directly relevant to the outline's coverage of US imperialism in the Pacific."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3.a",
+        "B.1"
+      ],
+      "rationaleAI": "Human rights themes underpin the Abolitionist movement (A.2.c, A.3.a) and Reconstruction civil rights legislation (B.1.a), as well as the Progressive Era reforms in B.3.b, though the article's primary framing is the post-WWII international rights framework."
+    },
+    {
+      "articleTitle": "Business",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Business structures (trusts, holding companies, corporations) are directly relevant to B.2.c.ii (development of trusts and holding companies, legal climate favourable to big business) in the industrialization of the American economy 1865\u20131900."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

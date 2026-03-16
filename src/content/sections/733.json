@@ -71,13 +71,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Glass [see 724,C.5.a.]",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Concrete, reinforced concrete, and prestressed concrete",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Concrete, reinforced concrete, and prestressed concrete",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",
@@ -194,13 +195,13 @@
               "level": "g",
               "levelType": "lowercase",
               "text": "Auxiliary systems",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Plumbing systems",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Plumbing systems",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

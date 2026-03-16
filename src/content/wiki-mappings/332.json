@@ -1,83 +1,277 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "332",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "The relation of form and function in organisms reflects the organizational principles of life.",
+      "articleTitle": "Human body",
       "relevantPathsAI": [
-        "C.3.a",
-        "C.3.b",
-        "C.5",
-        "E.1",
-        "E.1.a",
-        "E.1.b",
-        "E.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Animal",
-      "rationaleAI": "Animal anatomy illustrates the relation of form and function in organisms, from locomotion to sensory systems.",
-      "relevantPathsAI": [
-        "B",
-        "C.1",
-        "C.3",
-        "D",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Organism",
-      "rationaleAI": "The relation of form and function in organisms is a central topic of organismal biology.",
-      "relevantPathsAI": [
-        "C.3.a",
-        "C.3.b",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Arthropod",
-      "rationaleAI": "Arthropod body plans illustrate the relation of exoskeletal form to function.",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.3",
-        "C.3.a",
-        "C.3.b",
-        "C.3.c",
-        "C.4",
-        "C.5",
-        "D.3",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Anatomy",
-      "rationaleAI": "Anatomy studies the relation of form and function in organisms as treated here.",
-      "relevantPathsAI": [
-        "B",
-        "B.2.b",
-        "B.2.i.iii",
-        "C",
-        "C.1",
+        "A",
         "D",
         "D.1",
         "D.2",
         "D.3",
-        "D.4"
-      ]
+        "D.4",
+        "E",
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Human body is organized hierarchically from cells to tissues to organ systems precisely as the section's framework requires, covering all major animal tissue types (D.1\u2013D.4) and organ systems including circulatory, digestive, endocrine, immune, musculoskeletal, nervous, and reproductive systems (E.1.a\u2013c), with homeostatic interrelationships at E.2."
+    },
+    {
+      "articleTitle": "Circulatory system",
+      "relevantPathsAI": [
+        "D.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "The circulatory system covers blood and lymph as transport tissues and fluids (D.2) and the heart-blood vessel organ system serving cell metabolism by delivering oxygen and nutrients (E.1.b on circulatory systems serving cell metabolism)."
+    },
+    {
+      "articleTitle": "Skin",
+      "relevantPathsAI": [
+        "D.1",
+        "D.4",
+        "E.1.a"
+      ],
+      "rationaleAI": "Skin is the primary integumentary tissue, covering dermal tissue classification across vertebrate taxa (D.1, D.4 as connective/supportive tissue), and the integumentary system at E.1.a; its variation across fish, reptiles, amphibians, and birds provides comparative form-function content at path A."
+    },
+    {
+      "articleTitle": "Bone",
+      "relevantPathsAI": [
+        "D.4",
+        "D.5",
+        "E.1.a"
+      ],
+      "rationaleAI": "Bone is explicitly identified at D.4 as a supporting and movement tissue, forms part of the skeletal system at E.1.a, and its hematopoietic function connects it to D.5 (hemopoietic tissues), covering three distinct tissue/organ system paths."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a",
+        "E.2"
+      ],
+      "rationaleAI": "Hormones are the products of endocrine tissues (D.3: endocrine tissues for coordination), the endocrine system is listed at E.1.a, and hormones exemplify the feedback mechanisms underpinning interrelationships between organ systems at E.2."
+    },
+    {
+      "articleTitle": "Blood",
+      "relevantPathsAI": [
+        "D.2",
+        "D.5"
+      ],
+      "rationaleAI": "Blood is explicitly listed in the outline at D.2 as a transport and excretion tissue/fluid (blood and lymph), and blood cell precursors relate to D.5 (hemopoietic tissues); the article covers plasma, erythrocytes, leukocytes, and platelets as the distinct cellular components of this tissue."
+    },
+    {
+      "articleTitle": "Lung",
+      "relevantPathsAI": [
+        "D.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "Lungs are gas exchange organs whose tissue is listed at D.2 (lung tissues for assimilation and transport) and the respiratory system is part of E.1.b (systems serving cell metabolism); comparative respiratory morphology across tetrapods addresses the form-function relationship."
+    },
+    {
+      "articleTitle": "Brain",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a"
+      ],
+      "rationaleAI": "The brain is the primary nervous tissue organ (D.3: tissues for coordination \u2014 nervous tissue) and the central component of the nervous system at E.1.a; evolutionary development and comparative brain anatomy across vertebrates and invertebrates address the form-function relationship at path A."
+    },
+    {
+      "articleTitle": "Skeletal muscle",
+      "relevantPathsAI": [
+        "D.4",
+        "E.1.a"
+      ],
+      "rationaleAI": "Skeletal muscle is categorized at D.4 as a tissue for support and movement (muscle), and the muscular system is listed at E.1.a; fiber types, contraction mechanics, and adaptive plasticity directly address muscle tissue form-function relationships."
+    },
+    {
+      "articleTitle": "Skeleton",
+      "relevantPathsAI": [
+        "D.4",
+        "E.1.a"
+      ],
+      "rationaleAI": "The skeleton article covers exo-, endo-, and hydro-skeletal solutions across animal phyla (D.4, connective tissues/bone as support tissues) and the skeletal system at E.1.a; comparative skeletal diversity exemplifies biological form-function across the animal kingdom."
+    },
+    {
+      "articleTitle": "Eye",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a"
+      ],
+      "rationaleAI": "The eye is a sensory tissue organ (D.3: sensory tissues for coordination) in the nervous and sensory system at E.1.a; its convergent evolution into ten distinct structural types across taxa is a prime example of the section's core form-function theme at A."
+    },
+    {
+      "articleTitle": "Sense",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a"
+      ],
+      "rationaleAI": "Senses covers sensory receptor cell types (mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) constituting sensory tissues at D.3, and the diversity of sensory modalities across animal taxa directly addresses comparative form-function in sense organs at E.1.a."
+    },
+    {
+      "articleTitle": "Flower",
+      "relevantPathsAI": [
+        "C.3.c",
+        "C.1"
+      ],
+      "rationaleAI": "Flowers are the reproductive organs of angiosperms, directly addressing path C.3.c (varieties of reproductive organs and organ systems in vascular plants) and C.1 (development, internal morphology, and types of organs in vascular plants)."
     },
     {
       "articleTitle": "Physiology",
-      "rationaleAI": "Physiology studies the functional processes in organisms relating form to function.",
       "relevantPathsAI": [
-        "B.2.i",
-        "B.3",
-        "C.1",
+        "A",
         "C.2",
-        "C.5",
-        "D.6"
-      ]
+        "E"
+      ],
+      "rationaleAI": "Physiology is the direct study of the relation of form and function across all organizational levels, constituting the section's core subject at A; comparative physiology, plant organ physiology (C.2), and systems physiology (E) are all within its explicit scope."
+    },
+    {
+      "articleTitle": "Anatomy",
+      "relevantPathsAI": [
+        "A",
+        "D.1",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Anatomy encompasses gross and microscopic tissue structure including histology that classifies tissues at D.1; comparative anatomy across vertebrate and invertebrate taxa directly addresses the form side of the section's core form-function relationship and covers all tissue and organ system levels."
+    },
+    {
+      "articleTitle": "Digestion",
+      "relevantPathsAI": [
+        "D.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "Digestion covers alimentary tissues (D.2: alimentary tissues for assimilation), the digestive system in cell metabolism serving systems (E.1.b), and comparative digestive structures across animal taxa illustrating form-function diversity."
+    },
+    {
+      "articleTitle": "Photosynthesis",
+      "relevantPathsAI": [
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Photosynthesis occurs in chlorophyll-bearing mesophyll cells within vascular plant tissues (B.2: well-differentiated tissues in vascular plants) and constitutes the primary physiological function of leaf organs in vascular plants (C.2: physiology of organs in vascular plants)."
+    },
+    {
+      "articleTitle": "Tree",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "C.1",
+        "C.3",
+        "C.3.a",
+        "C.3.b"
+      ],
+      "rationaleAI": "Trees exemplify vascular plant form and function: their woody trunk contains xylem and phloem (vascular conducting tissues at B.2.i.ii), lateral and apical meristems drive secondary growth (B.2.a), and their shoot and root system diversity (C.3.a, C.3.b) alongside organ morphology (C.1) are core topics of the section's plant coverage."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
+        "C.3.c",
+        "C.1"
+      ],
+      "rationaleAI": "Fruit is the seed-bearing reproductive structure of angiosperms formed from the ovary post-fertilization, directly addressing path C.3.c (varieties of reproductive organs and organ systems) and organ development and types at C.1."
+    },
+    {
+      "articleTitle": "Algae",
+      "relevantPathsAI": [
+        "B.1",
+        "C.4"
+      ],
+      "rationaleAI": "Algae as non-vascular photosynthetic organisms (from unicellular to multicellular macroalgae) exemplify relatively undifferentiated tissues of nonvascular plants at B.1 and analogues of stem, leaf, and root in nonvascular plants at C.4."
+    },
+    {
+      "articleTitle": "Nervous system",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a",
+        "E.2"
+      ],
+      "rationaleAI": "The nervous system covers neural and sensory tissue organization (D.3), the nervous system as a coordinating organ system at E.1.a, and its role in feedback mechanisms linking organ systems (E.2); evolutionary development from primitive ganglia to centralized vertebrate brains addresses comparative form-function."
+    },
+    {
+      "articleTitle": "Arthropod",
+      "relevantPathsAI": [
+        "D",
+        "D.4",
+        "E.1.a"
+      ],
+      "rationaleAI": "Arthropods exhibit distinctive tissue and organ organization\u2014chitinous exoskeleton (D.4: support tissue), open circulatory haemolymph, compound eyes, and segmental nervous ganglia\u2014providing comparative animal tissue and organ system form-function content for paths D and E.1.a."
+    },
+    {
+      "articleTitle": "Heart",
+      "relevantPathsAI": [
+        "D.2",
+        "D.4",
+        "E.1.b"
+      ],
+      "rationaleAI": "The heart is the central circulatory organ (E.1.b) composed of cardiac muscle tissue (D.4: muscle tissue for movement), and comparative cardiac anatomy across vertebrate taxa from two-chambered fish to four-chambered mammals exemplifies form-function relationships at path A."
+    },
+    {
+      "articleTitle": "Immune system",
+      "relevantPathsAI": [
+        "D.2",
+        "D.5",
+        "E.1.b"
+      ],
+      "rationaleAI": "The immune system encompasses hematopoietic and lymphoid tissues (D.5: hemopoietic tissues) and leukocyte-rich blood and lymph (D.2), and the immune organ system interrelates with other systems including circulatory and lymphatic (E.2), covering multiple tissue and organ system paths."
+    },
+    {
+      "articleTitle": "Ear",
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.a"
+      ],
+      "rationaleAI": "The ear is a sensory tissue organ (D.3: sensory tissues for coordination) within the nervous and sensory system at E.1.a; cochlear hair cell transduction and comparative variation across vertebrate taxa address sensory tissue form and function."
+    },
+    {
+      "articleTitle": "Seed",
+      "relevantPathsAI": [
+        "C.3.c",
+        "C.1"
+      ],
+      "rationaleAI": "Seeds are the reproductive structures of spermatophytes formed from fertilized ovules, directly relevant to path C.3.c (varieties of reproductive organs and organ systems in vascular plants) and the organ types and internal morphology at C.1."
+    },
+    {
+      "articleTitle": "Sex",
+      "relevantPathsAI": [
+        "D.5",
+        "E.1.c"
+      ],
+      "rationaleAI": "Sex covers gamete production (reproductive tissues at D.5) and the reproductive system as a genetic-continuity organ system (E.1.c), with sexual dimorphism illustrating form-function relationships driven by differential selective pressures."
+    },
+    {
+      "articleTitle": "Egg",
+      "relevantPathsAI": [
+        "D.5",
+        "E.1.c"
+      ],
+      "rationaleAI": "Eggs are the products of reproductive tissues (D.5: reproductive tissues) and are central to the reproductive system as a genetic-continuity organ (E.1.c); their diversity across amniote and non-amniote vertebrates and invertebrates illustrates reproductive tissue form-function variation."
+    },
+    {
+      "articleTitle": "Liver",
+      "relevantPathsAI": [
+        "D.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "The liver is the primary metabolic organ at D.2 (liver tissues for assimilation and storage), performing detoxification, synthesis, and metabolic storage functions that serve cell metabolism as part of the E.1.b digestive/metabolic organ system grouping."
+    },
+    {
+      "articleTitle": "Mollusca",
+      "relevantPathsAI": [
+        "D",
+        "D.4"
+      ],
+      "rationaleAI": "Mollusca exhibit distinct tissue organization\u2014mantle, radula, open circulatory haemocoel, and reduced coelom\u2014providing comparative animal tissue content for path D; structural diversity from gastropods to cephalopods exemplifies form-function variation at the section's core theme A."
+    },
+    {
+      "articleTitle": "Zoology",
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Zoology encompasses comparative anatomy, embryology, and physiology across all animal taxa, providing the disciplinary framework for the section's animal tissue and organ system coverage (D and E) and the core biological form-function principle at A."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

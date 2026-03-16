@@ -1,66 +1,11 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "627",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "Sculpture is a major visual art form within the scope of the arts as a whole.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3.b",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Visual arts",
-      "rationaleAI": "Sculpture is a primary visual art form involving three-dimensional artistic creation in various materials.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Michelangelo",
-      "rationaleAI": "Michelangelo's David and Pietà rank among the greatest achievements in the history of sculpture.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.2.a",
-        "B.3.b",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "History of art",
-      "rationaleAI": "The evolution of sculpture is a major strand in the broader history of art.",
-      "relevantPathsAI": [
-        "A",
-        "B.3.b",
-        "C",
-        "C.1"
-      ]
-    },
-    {
       "articleTitle": "Sculpture",
-      "rationaleAI": "Sculpture is the direct subject of this section on three-dimensional art.",
       "relevantPathsAI": [
         "A",
+        "A.1",
         "A.2",
         "A.3",
         "A.4",
@@ -69,8 +14,147 @@
         "B.2",
         "B.2.a",
         "B.2.b",
+        "B.2.c",
+        "B.3",
+        "B.4",
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "The comprehensive article on sculpture directly covers all major outline divisions: design elements and principles (A.1), iconography (A.2), materials including stone, metal, wood, clay, and glass fiber (A.3), carving, modeling, casting, and surface finishing techniques (A.4), spatial types from relief to kinetic (B.1), representational and nonrepresentational kinds (B.2), commemorative and ritualistic uses (B.3), primitive and folk forms (B.4), and Western sculptural history (C.1)."
+    },
+    {
+      "articleTitle": "Michelangelo",
+      "relevantPathsAI": [
+        "A.2",
+        "A.4",
+        "B.2.a",
+        "B.3.c",
+        "C.1"
+      ],
+      "rationaleAI": "Michelangelo's works—Pietà, David, and the Sistine Chapel—exemplify representational religious iconography (A.2, B.2.a), demonstrate carving and modeling techniques (A.4), include commemorative monuments (B.3.c), and are canonical examples of Western Renaissance sculpture (C.1)."
+    },
+    {
+      "articleTitle": "Bronze",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Bronze is a primary sculptural material (A.3) and the article covers its use in sculpture, coinage, and casting techniques (A.4), connecting archaeometallurgy to art history across ancient Mediterranean and other traditions."
+    },
+    {
+      "articleTitle": "Pottery",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
         "B.2.c"
-      ]
+      ],
+      "rationaleAI": "Pottery involves shaping and firing clay, which are sculptural materials and techniques directly relevant to A.3 (materials including clay) and A.4 (modeling methods); decorated ceramic wares shade into decorative sculpture (B.2.c)."
+    },
+    {
+      "articleTitle": "Gold",
+      "relevantPathsAI": [
+        "A.3",
+        "B.3.b"
+      ],
+      "rationaleAI": "Gold is a sculptural material used in jewelry, gold-leaf art, and coinage (A.3), and the article's coverage of coinage and monetary history connects to the coins and medals category (B.3.b)."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "B.4",
+        "A.3"
+      ],
+      "rationaleAI": "The Stone Age covers prehistoric lithic tools and rock art including petroglyphs and sculptural objects made from stone (A.3), connecting to primitive and folk sculpture traditions (B.4) that predate formal artistic categories."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "C"
+      ],
+      "rationaleAI": "Visual arts provides the broader disciplinary context for sculpture alongside painting, drawing, and printmaking, covering sculptural traditions within its historical survey (C) and discussing representational and non-representational forms (B.2) across Western and Eastern hierarchies."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "B.4"
+      ],
+      "rationaleAI": "The history of art surveys sculptural production from prehistoric through 20th-century avant-gardes across all cultures, directly covering Western sculpture history (C.1) and including pre-Columbian, African, and Oceanic primitive sculptural traditions (B.4)."
+    },
+    {
+      "articleTitle": "Realism (arts)",
+      "relevantPathsAI": [
+        "B.2.a",
+        "C.1"
+      ],
+      "rationaleAI": "Realism as an art movement is directly relevant to representational sculpture (B.2.a) and to the history of Western sculpture and its stylistic debates (C.1), particularly in the 19th-century French movement's engagement with unidealized depiction."
+    },
+    {
+      "articleTitle": "Art",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "The general art article addresses the distinction between representational and non-representational modes (B.2), aesthetic theory relevant to sculptural design principles (A.1), and the contested boundary between sculpture, craft, and applied art that informs iconographic interpretation (A.2)."
+    },
+    {
+      "articleTitle": "Iron",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Iron and steel are sculptural materials (A.3) used in modern sculpture through welding, assemblage, and casting; the article covers metallurgical properties relevant to sculptural fabrication."
+    },
+    {
+      "articleTitle": "Wood",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Wood is explicitly listed as a sculptural material (A.3), and the article's coverage of its structural properties (density, hardness, grain) is directly relevant to carving techniques (A.4)."
+    },
+    {
+      "articleTitle": "Jewellery",
+      "relevantPathsAI": [
+        "A.3",
+        "B.2.c",
+        "B.3"
+      ],
+      "rationaleAI": "Jewellery is made from precious metals, gemstones, glass, and shell—all sculptural materials (A.3)—and functions as decorative sculpture (B.2.c) and ritualistic or ceremonial object (B.3.a), spanning all human societies."
+    },
+    {
+      "articleTitle": "Leonardo da Vinci",
+      "relevantPathsAI": [
+        "A.4",
+        "C.1"
+      ],
+      "rationaleAI": "Leonardo's sculptural work and his anatomical investigations directly informed High Renaissance sculptural techniques (A.4) and Western sculpture history (C.1), connecting systematic study of human form to representational sculptural practice."
+    },
+    {
+      "articleTitle": "Color",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Color as a visual perception phenomenon is relevant to sculptural design principles and composition (A.1), including polychromy in sculpture, surface finishing, and the relationship between form and color in sculptural aesthetics."
+    },
+    {
+      "articleTitle": "Performing arts",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Performing arts traditions across African, Asian, and Western cultures use ceremonial masks and ritualistic objects that constitute a major category of sculptural production (B.3.a, B.3.d), connecting performing arts to sculptural function."
+    },
+    {
+      "articleTitle": "Mining",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Mining is the source of sculptural materials including metals, stone, and gemstones (A.3); the extraction of marble, granite, bronze, gold, and other materials from the earth directly underpins sculptural production throughout history."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

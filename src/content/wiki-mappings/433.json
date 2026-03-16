@@ -1,107 +1,109 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "433",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Internal states affecting human behavior and consciousness are central to this article on humans.",
+      "articleTitle": "Anger",
       "relevantPathsAI": [
-        "A.1",
         "A.2",
-        "A.4",
         "B",
         "B.1",
-        "B.2",
-        "B.3",
-        "C.1",
-        "C.3"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Anger is a paradigmatic emotional state driven by perceived provocation; it maps directly to the aggression motive at A.2, and its physiological arousal, facial expression, and postural manifestations address the nature of emotion (B.1) and the expression of emotions including the startle response and vocal channels (B.3)."
     },
     {
       "articleTitle": "Emotion",
-      "rationaleAI": "Emotions are the primary current internal states affecting human behavior and conscious experience.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
         "B",
         "B.1",
         "B.2",
-        "B.3",
-        "C"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Emotion is the direct subject of outline section B, covering the nature of emotion (B.1), diverse conceptions including somatic and neural theories (B.2), and expression through facial, vocal, and postural channels (B.3). The article's coverage of emotional dynamics, neural substrates, and evolutionary accounts maps comprehensively onto section B."
     },
     {
-      "articleTitle": "Anger",
-      "rationaleAI": "Anger is an internal state affecting human behavior and conscious experience.",
+      "articleTitle": "Human sexuality",
       "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.3"
-      ]
+        "A.2"
+      ],
+      "rationaleAI": "Human sexuality covers sexual behaviour and deviations as biological, psychological, and sociocultural phenomena, directly matching the outline's specific mention of sexual behaviour and deviations within the treatment of specific human motives at A.2."
     },
     {
       "articleTitle": "Fear",
-      "rationaleAI": "Fear is an internal state affecting human behavior and conscious experience.",
       "relevantPathsAI": [
         "A.2",
-        "A.3",
-        "A.4",
         "B.1",
+        "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Fear is an emotional state arising from perceived danger, producing amygdala-mediated arousal, and is closely related to anxiety, which is explicitly listed at A.2 as a specific human motive. Its neurophysiological and behavioral substrates address B.1-B.3, including the fight-or-flight startle response (B.3)."
     },
     {
-      "articleTitle": "Happiness",
-      "rationaleAI": "Happiness is an internal state affecting human behavior and experience.",
+      "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "A.1",
         "A.2",
-        "A.3",
-        "B.1",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Love",
-      "rationaleAI": "Love is a powerful internal state affecting human behavior and experience.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Sadness",
-      "rationaleAI": "Sadness is an internal state affecting human behavior and conscious experience.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Dream",
-      "rationaleAI": "Dreams are internal states affecting conscious experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "C",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Sleep",
-      "rationaleAI": "Sleep is an internal physiological state affecting behavior and conscious experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B",
-        "C",
-        "C.1",
+        "C.2",
         "C.3"
-      ]
+      ],
+      "rationaleAI": "Freud's psychoanalytic theory directly provides one of the diverse theories of motivation at A.1 (psychoanalytic theory), addresses drives and libido as specific motives at A.2, and his foundational work on dream interpretation addresses C.2 (dreams), while his work on hypnosis and hysteria is relevant to C.3 (hypnosis and altered states)."
+    },
+    {
+      "articleTitle": "Consciousness",
+      "relevantPathsAI": [
+        "C.1",
+        "C.3",
+        "C"
+      ],
+      "rationaleAI": "Consciousness covers wakefulness and its disruption (directly relevant to C.1 sleep and its opposite), altered states of consciousness and medical coma distinctions (C.3 hypnosis and related altered states), and the full range of transient states of awareness. It is the conceptual framework within which sleep, hypnosis, and fatigue are understood."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Psychology as a discipline encompasses the scientific study of motivation (A, A.1 through its psychoanalytic, drive, and behaviorist theories) and emotional states (B), providing the disciplinary overview for this section's subject matter."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Darwin's work on emotional expression — particularly The Expression of the Emotions in Man and Animals — is directly foundational to B.3 (facial, vocal, and postural expression of emotions) and the evolutionary account of emotion's nature at B.1. His evolutionary framework is the basis for the section's treatment of emotion as adaptive."
+    },
+    {
+      "articleTitle": "Play (activity)",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Play is an intrinsically motivated activity driven by hedonic reward, relevant to hedonic and arousal theories of motivation at A.1. The article's coverage of token systems and reinforcement through play connects to A.4's emphasis on reinforcement in motivation theory."
+    },
+    {
+      "articleTitle": "Learning",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Learning covers operant conditioning and reinforcement — including the use of token economies — which maps directly onto the outline's emphasis at A.4 on reinforcement and instinct in recent motivation theory and the practical use of token systems."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Adolescence is a developmental stage characterized by intensified achievement motivation, anxiety, peer-related drives, and emerging sexual behavior, all of which are the specific human needs listed at A.2. The psychosocial processes of identity formation and risk behavior map onto motivational theory at A.2."
+    },
+    {
+      "articleTitle": "Shamanism",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Shamanism explicitly involves entering altered states of consciousness through trance induction via drumming or psychoactive substances, directly covering C.3 (hypnosis and related states of altered consciousness). It provides cross-cultural ethnographic coverage of this outline path."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

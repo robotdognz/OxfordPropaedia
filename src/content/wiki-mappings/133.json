@@ -1,318 +1,274 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "133",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "Earth is a member of the Solar System and its planetary context is essential to this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Science",
-      "rationaleAI": "The Solar System is a primary subject of planetary science within the broader scientific enterprise.",
-      "relevantPathsAI": [
-        "D.3",
-        "E.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Astronomy",
-      "rationaleAI": "Planetary astronomy studies the Solar System including planets, moons, asteroids, and comets.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1.a",
-        "B.1.c",
-        "B.4",
-        "B.5"
-      ]
-    },
-    {
       "articleTitle": "Solar System",
-      "rationaleAI": "The Solar System, including the Sun, eight planets, and smaller bodies, is the direct subject of this section.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
         "A.4",
-        "A.5"
-      ]
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Covers the full survey of the solar system (outline path A), including all major constituents \u2014 planets, dwarf planets, asteroids, Kuiper belt, Oort cloud, comets, meteoroids, and the heliosphere \u2014 as well as formation theories and comparison with extrasolar systems (A.6)."
     },
     {
       "articleTitle": "Sun",
-      "rationaleAI": "The Sun is the gravitational center and energy source of the Solar System, driving planetary dynamics and habitability.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
         "B",
-        "B.1"
-      ]
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
+        "B.3",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Directly covers all aspects of outline section B: photosphere, chromosphere, corona (B.1), solar magnetic activity, sunspots, solar cycle (B.2), interior structure and energy generation (B.3), electromagnetic output across all wavelengths (B.4), and solar-terrestrial relationships (B.5)."
     },
     {
       "articleTitle": "Moon",
-      "rationaleAI": "The Moon is Earth's only natural satellite and a prominent member of the Solar System studied in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "B.1.a"
-      ]
+        "E",
+        "E.1",
+        "E.2",
+        "E.4",
+        "E.4.a",
+        "E.4.b",
+        "E.4.c",
+        "E.5",
+        "E.6",
+        "E.7",
+        "E.7.a",
+        "E.7.b"
+      ],
+      "rationaleAI": "Comprehensively covers outline section E: physical characteristics, orbital mechanics, mass and gravitational field, surface features (craters, maria, rilles), origin and evolution, chemical composition of lunar rock samples, and the Sun-Earth-Moon system including eclipses (E.7.b)."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.4",
+        "D.5",
+        "D.6",
+        "A.2"
+      ],
+      "rationaleAI": "Covers the Earth as a planet (outline section D): orbital motion and rotation (D.2), physical properties including magnetosphere (D.4), internal structure (D.5), and origin of Earth and its envelopes (D.6); also addresses Earth as one of the major planets (A.2)."
     },
     {
       "articleTitle": "Mercury (planet)",
-      "rationaleAI": "Mercury is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "C.1.a",
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers Mercury (C.1.a), the Solar System's innermost terrestrial planet, with detail on its heavily cratered surface, spin-orbit resonance, thin magnetic field, and extreme temperature swings."
     },
     {
       "articleTitle": "Venus",
-      "rationaleAI": "Venus is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "C.1.b",
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers Venus (C.1.b), including its dense CO\u2082 atmosphere, retrograde rotation, volcanic surface, absence of magnetic field, and history of space exploration."
     },
     {
       "articleTitle": "Mars",
-      "rationaleAI": "Mars is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "C.1.d",
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers Mars (C.1.d), including its surface geology (Olympus Mons, Valles Marineris), hemispheric dichotomy, two moons, past oceans, and its status as a primary target for crewed exploration."
     },
     {
       "articleTitle": "Jupiter",
-      "rationaleAI": "Jupiter is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "C.3.a",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers Jupiter (C.3.a), including its hydrogen-helium atmosphere, Great Red Spot, metallic hydrogen interior, strong magnetic field, and the Galilean moons (Io, Europa, Ganymede, Callisto)."
     },
     {
       "articleTitle": "Saturn",
-      "rationaleAI": "Saturn is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
+        "C.3.b",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers Saturn (C.3.b), including its prominent ring system, layered interior, magnetic field, and its 274+ moons including Titan \u2014 the only Solar System moon with a substantial atmosphere."
     },
     {
       "articleTitle": "Uranus",
-      "rationaleAI": "Uranus is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1.a",
-        "B.1.c",
-        "B.4"
-      ]
+        "C.3.c",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers Uranus (C.3.c), an ice giant with an extreme 98\u00b0 axial tilt, offset magnetosphere, ring system, and 28 known moons, explored only by Voyager 2."
     },
     {
       "articleTitle": "Neptune",
-      "rationaleAI": "Neptune is a planet of the Solar System whose characteristics are covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1.a",
-        "B.1.c",
-        "B.4"
-      ]
+        "C.3.d",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers Neptune (C.3.d), the Solar System's outermost known planet, including its active storm systems, offset magnetosphere, fragmented ring system, and Triton as a captured Kuiper Belt object."
     },
     {
       "articleTitle": "Asteroid",
-      "rationaleAI": "Asteroids are minor bodies of the Solar System whose characteristics are covered here.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
         "A.3.a",
-        "A.3.b",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Directly covers minor planets/asteroids (A.3.a and C.2), including main-belt, Jupiter Trojan, and near-Earth populations, spectral classification, and impact hazard history."
     },
     {
       "articleTitle": "Comet",
-      "rationaleAI": "Comets are small bodies of the Solar System whose orbits and composition are covered here.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1.a",
-        "B.1.c"
-      ]
+        "A.3.b"
+      ],
+      "rationaleAI": "Directly covers comets (A.3.b): icy bodies that develop coma and tails, short-period origins in the Kuiper Belt, long-period origins in the Oort Cloud, and their role in meteor showers and organic compound delivery to early Earth."
     },
     {
       "articleTitle": "Natural satellite",
-      "rationaleAI": "Natural satellites are moons orbiting planets within the Solar System treated here.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
         "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Covers the distribution and properties of natural satellites across the solar system (A.4), including formation mechanisms (accretion, capture, giant impact), tidal locking, and the diversity of geological activity among moons."
     },
     {
       "articleTitle": "Planet",
-      "rationaleAI": "Planets are the major bodies of the Solar System treated in this section.",
       "relevantPathsAI": [
-        "A",
         "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Day",
-      "rationaleAI": "The day as a unit derives from Earth's rotation within the Solar System addressed in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "B.1.a"
-      ]
+        "C",
+        "A.4"
+      ],
+      "rationaleAI": "Covers the major planets of the solar system as a class (A.2) and their characteristics including axial tilt, atmosphere, magnetosphere, and orbital clearing; also connects to satellite distribution (A.4) and the contested definition of planet vs. dwarf planet."
     },
     {
       "articleTitle": "Year",
-      "rationaleAI": "The year as a unit derives from Earth's orbital period around the Sun within the Solar System.",
       "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.3.d",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.2.b",
-        "C",
-        "C.1"
-      ]
+        "D.2",
+        "E.7.a"
+      ],
+      "rationaleAI": "Covers Earth's orbital period (the year) at outline path D.2, and the use of Earth's orbital cycle as the astronomical basis of chronology (E.7.a.ii), including the tropical, sidereal, and Julian year definitions."
     },
     {
-      "articleTitle": "Calendar",
-      "rationaleAI": "Calendar systems are based on astronomical cycles within the Solar System.",
+      "articleTitle": "Day",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
+        "D.2",
+        "E.7.a"
+      ],
+      "rationaleAI": "Covers the Earth's rotation period (the day) as defined at D.2, and the astronomical basis of chronology including the sidereal and solar day (E.7.a.ii), with connections to rotational irregularities and leap seconds."
+    },
+    {
+      "articleTitle": "Season",
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Covers the effects of Earth's axial tilt and orbital position on seasonal variation (D.2), which is the primary driver of the seasonal cycle discussed in this article, fitting the outline's treatment of Earth's orbital effects."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
+        "D.4",
+        "D.6",
+        "B.5"
+      ],
+      "rationaleAI": "Covers the origin and evolution of Earth's atmosphere (D.6) and solar-terrestrial interactions including the greenhouse effect and ozone, relevant to solar radiation's effects (B.5); also addresses the atmosphere as part of D.4 (Earth's physical properties)."
+    },
+    {
+      "articleTitle": "Volcano",
+      "relevantPathsAI": [
+        "E.4.b",
+        "E.4.c",
+        "C.1.b"
+      ],
+      "rationaleAI": "Relevant to the volcanic theory of the origin of Moon's surface features (E.4.c) and Moon's volcanic history (E.4.b); also covers volcanism on Venus (C.1.b), which compares to Earth's volcanic activity in the context of terrestrial planets."
+    },
+    {
+      "articleTitle": "Gravity",
+      "relevantPathsAI": [
         "A.4",
         "A.5",
-        "A.6",
-        "B.4",
-        "B.5",
-        "D.1",
-        "D.3"
-      ]
+        "D.2"
+      ],
+      "rationaleAI": "Covers gravitational interactions that govern planetary distances (A.4), gravitational perturbations among bodies in the solar system (A.5), and the orbital mechanics of Earth's revolution around the Sun (D.2)."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Covers the full electromagnetic spectrum, directly relevant to solar radiation (B.4), which the outline specifies includes light, radio waves, and particles emitted by the Sun."
+    },
+    {
+      "articleTitle": "Star",
+      "relevantPathsAI": [
+        "B.3",
+        "A.6"
+      ],
+      "rationaleAI": "Covers stellar evolution \u2014 including the life cycles of main-sequence stars like the Sun \u2014 directly relevant to the Sun's interior evolution (B.3) and to understanding the Sun's origin and its eventual fate, contextualizing origin theories (A.6)."
+    },
+    {
+      "articleTitle": "Galileo Galilei",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.1.b",
+        "B.2.b"
+      ],
+      "rationaleAI": "Galileo's telescopic discoveries directly underlie knowledge of Jupiter's moons (C.3.a), the phases of Venus (C.1.b), and sunspot observations (B.2.b), making him a historically essential contributor to solar system science."
+    },
+    {
+      "articleTitle": "Classical mechanics",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "D.2"
+      ],
+      "rationaleAI": "Classical (Newtonian) mechanics underlies the regularities of planetary distances (A.4), gravitational perturbations (A.5), and the orbital and rotational dynamics of Earth (D.2) that are fundamental to solar system science."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "D.2"
+      ],
+      "rationaleAI": "Newton's law of universal gravitation directly explains the regularities of planetary distances and distribution of satellites (A.4), gravitational perturbations among solar system bodies (A.5), and Earth's orbital and rotational dynamics (D.2)."
+    },
+    {
+      "articleTitle": "Astronomy",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Astronomy is the discipline through which the solar system is studied; the article covers planetary science and solar astronomy as subfields directly relevant to the survey of the solar system (A)."
+    },
+    {
+      "articleTitle": "Magnetism",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "D.4"
+      ],
+      "rationaleAI": "Covers the physics of magnetic fields underpinning solar magnetic activity and localized strong magnetic fields at the Sun's surface (B.2.a), the sunspot cycle (B.2.b), and Earth's magnetism (D.4)."
+    },
+    {
+      "articleTitle": "Outer space",
+      "relevantPathsAI": [
+        "A.3.d"
+      ],
+      "rationaleAI": "Covers the interplanetary medium (A.3.d) as part of its description of outer space regions including the near-vacuum, cosmic rays, magnetic fields, and the heliosphere between planetary bodies."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

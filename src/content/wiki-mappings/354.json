@@ -1,234 +1,261 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "354",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Ecosystems represent the ecological organization of life in geographic context.",
+      "articleTitle": "Pacific Ocean",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.2",
-        "B.1",
-        "B.2.c",
-        "C",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Geography",
-      "rationaleAI": "Biogeography, a major branch of geography, examines how organisms are distributed across Earth's ecosystems.",
-      "relevantPathsAI": []
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Covers the biological environment of Earth's largest ocean including fisheries, island-chain ecology, and marine communities relevant to B.2 (oceanic populations) and B.5 (productivity comparisons across aquatic ecosystems)."
     },
     {
       "articleTitle": "Ecology",
-      "rationaleAI": "Biogeographic distribution and ecosystem classification are core subjects of ecological science.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.b",
-        "A.3",
         "B",
-        "B.1",
-        "B.2",
-        "B.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Climate",
-      "rationaleAI": "Climate zones are the primary determinant of ecosystem distribution, shaping biomes from tropical forests to tundra.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Antarctica",
-      "rationaleAI": "Antarctica's unique ecosystems represent a distinct biogeographic region.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.a",
-        "A.2.b",
-        "B.1",
-        "B.2",
-        "C",
-        "D",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Central Asia",
-      "rationaleAI": "Central Asia's steppes and deserts form a distinctive biogeographic zone.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "B.1",
-        "B.2",
-        "C",
-        "D",
-        "D.1",
-        "D.1.a",
-        "D.1.b"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Ecology directly addresses biomes, food webs, trophic levels, energy flow, nutrient cycling, biodiversity, and biogeography — the core framework underlying all of section 354's terrestrial and aquatic ecosystem coverage."
     },
     {
       "articleTitle": "Arctic",
-      "rationaleAI": "The Arctic represents a distinct biogeographic zone with unique ecosystems.",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.b",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Desert",
-      "rationaleAI": "Deserts constitute a major biogeographic zone with distinct ecosystems.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.c",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "B",
-        "B.3",
-        "B.3.a",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Sahara",
-      "rationaleAI": "The Sahara defines a vast biogeographic zone across North Africa.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "B.1",
-        "B.2",
-        "C",
-        "D",
-        "D.1",
-        "D.1.a",
-        "D.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Forest",
-      "rationaleAI": "Forests are major biogeographic ecosystems covering extensive land areas.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.b",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Amazon rainforest",
-      "rationaleAI": "The Amazon rainforest is Earth's largest tropical forest ecosystem.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "B.1",
-        "B.2",
-        "B.3.b",
-        "C",
-        "D",
-        "D.1",
-        "D.1.a"
-      ]
+        "A.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Covers polar tundra and sea-ice ecosystems, mapping to A.1.d (polar biomes) and the Arctic Ocean's marine biological communities (B.2), including permafrost ecology and unique fauna adapted to extreme conditions."
     },
     {
       "articleTitle": "Grassland",
-      "rationaleAI": "Grasslands are major biogeographic zones supporting distinct plant and animal communities.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.b",
-        "A.3",
-        "B",
-        "B.4",
-        "D",
-        "D.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Island",
-      "rationaleAI": "Islands harbor unique biogeographic ecosystems shaped by isolation.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.1.c",
         "A.2",
-        "B.1",
+        "A.3"
+      ],
+      "rationaleAI": "Directly covers the grassland and savanna biome listed in A.1.c, including biodiversity of flora and fauna (A.2), ecosystem services, and carbon-sequestration productivity relevant to A.3."
+    },
+    {
+      "articleTitle": "Arctic Ocean",
+      "relevantPathsAI": [
         "B.2",
-        "B.3",
+        "B.5"
+      ],
+      "rationaleAI": "Covers the ecology of the world's smallest ocean including sea-ice dynamics, low-salinity marine biology, and polar marine community structure, directly relevant to B.2 (oceanic communities) and B.5 (aquatic productivity)."
+    },
+    {
+      "articleTitle": "Amazon rainforest",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Provides detailed coverage of the tropical rain forest biome (A.1.c), its extraordinary biodiversity of flora and fauna as major life-forms (A.2), and its role in global carbon storage and primary productivity (A.3)."
+    },
+    {
+      "articleTitle": "Mediterranean Sea",
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Covers the marine biology, biodiversity, and oceanography of the Mediterranean, relevant to oceanic communities (B.2) and its coastal/neritic boundary ecosystems and estuarine interactions (B.4)."
+    },
+    {
+      "articleTitle": "Lake",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Directly addresses lacustrine standing-water communities including limnology, thermal stratification, biological properties, and the ecology of lakes and ponds, mapping precisely to B.3.a."
+    },
+    {
+      "articleTitle": "Great Lakes",
+      "relevantPathsAI": [
         "B.3.a",
-        "C",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Amazon River",
-      "rationaleAI": "The Amazon basin is a major biogeographic region.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.3.b",
-        "C",
-        "D",
-        "D.1"
-      ]
+        "B.5"
+      ],
+      "rationaleAI": "Covers the ecology, invasive species, and environmental history of the world's largest freshwater lake system, directly relevant to B.3.a (lacustrine communities) and freshwater productivity comparisons (B.5)."
     },
     {
       "articleTitle": "Ecosystem",
-      "rationaleAI": "Ecosystems are biogeographic units of organism distribution covered in this section.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2.b",
-        "A.3",
         "B",
-        "B.1",
+        "C"
+      ],
+      "rationaleAI": "Directly defines and elaborates ecosystems through nutrient cycles, energy flows, primary production, trophic transfer, decomposition, and biomes — the foundational framework for all of section 354's outline paths."
+    },
+    {
+      "articleTitle": "Soil",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.b"
+      ],
+      "rationaleAI": "Soil is the medium for terrestrial life (A.1.b, limiting factors on land) and is the habitat for soil organisms explicitly listed in A.2.b as a major life-form classification by habitat."
+    },
+    {
+      "articleTitle": "Sea",
+      "relevantPathsAI": [
         "B.2",
-        "B.4"
-      ]
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Covers marine biology across habitats from sunlit surface to abyssal zone, seawater chemistry, ocean currents, marine ecosystems, and fisheries — directly relevant to oceanic communities (B.2), boundary ecosystems (B.4), and aquatic productivity (B.5)."
+    },
+    {
+      "articleTitle": "Forest",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Addresses boreal, temperate, and tropical forest biomes (A.1.c), layered forest structure and life-forms (A.2), and global biomass, primary production, and carbon cycling (A.3)."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Covers the global water cycle, aquatic ecosystems, and water distribution across oceans and freshwater bodies, providing the physical foundation for the aquatic environment (B.1) and inland water communities (B.3)."
+    },
+    {
+      "articleTitle": "Algae",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.3",
+        "B.5",
+        "A.2.c"
+      ],
+      "rationaleAI": "As the principal primary producers in aquatic ecosystems, algae map directly to B.2.b (planktonic character of oceanic populations), B.3 (freshwater communities), B.5 (productivity through photosynthesis), and the producer niche in A.2.c."
     },
     {
       "articleTitle": "Tree",
-      "rationaleAI": "Trees structure terrestrial ecosystems as dominant organisms in forest biomes.",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.b",
+        "A.2.c"
+      ],
+      "rationaleAI": "Trees are explicitly listed as a major life-form in A.2.b (rooted plants) and define the forest biomes of A.1.c; their role in carbon sequestration and primary production connects to the producer classification of A.2.c."
+    },
+    {
+      "articleTitle": "Rain",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Rainfall is a primary limiting factor for terrestrial life (A.1.b), determining biome boundaries and the distribution of organisms across tundra, forest, grassland, and desert; it also drives freshwater delivery to inland water communities."
+    },
+    {
+      "articleTitle": "Land",
       "relevantPathsAI": [
         "A.1.a",
+        "A.1.b"
+      ],
+      "rationaleAI": "Directly addresses the physical character of the land environment (A.1.a) — terrain types, soil, geomorphology — and limiting factors that shape terrestrial life relative to the aquatic environment (A.1.b)."
+    },
+    {
+      "articleTitle": "Desert",
+      "relevantPathsAI": [
         "A.1.c",
+        "A.2.a"
+      ],
+      "rationaleAI": "The desert is explicitly listed as a major terrestrial biome in A.1.c; the article covers drought-adapted flora and fauna (indicator organisms relevant to A.2.a) and the ecological dynamics of arid landscapes."
+    },
+    {
+      "articleTitle": "Caspian Sea",
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.4.a"
+      ],
+      "rationaleAI": "As the world's largest inland body of water with below-ocean salinity (~1.2%), the Caspian straddles inland standing-water communities (B.3.a) and brackish boundary ecosystems (B.4.a), with endemic species and sturgeon biodiversity."
+    },
+    {
+      "articleTitle": "River",
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "Directly covers riverine flowing-water communities (B.3.b) through hydrology, drainage basins, aquatic food webs, and the River Continuum Concept, mapping precisely to the outline's treatment of rivers and streams."
+    },
+    {
+      "articleTitle": "Biodiversity",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Biodiversity — measuring variability of life by species, ecosystem, and phylogenetic dimensions — is central to all of section 354, from tropical forest species richness (A) to marine ecosystem diversity (B) and biogeographic distribution patterns (C)."
+    },
+    {
+      "articleTitle": "Organism",
+      "relevantPathsAI": [
         "A.2",
-        "A.2.a",
+        "C"
+      ],
+      "rationaleAI": "The concept of the organism as individual functional unit underpins classification of major life-forms (A.2) and the biogeographic distribution analysis in C; relevant to understanding how organisms are classified by habitat and niche."
+    },
+    {
+      "articleTitle": "Archaea",
+      "relevantPathsAI": [
         "A.2.b",
-        "C",
-        "D.1.a"
-      ]
+        "A.2.c",
+        "B.2"
+      ],
+      "rationaleAI": "Archaea inhabit extreme environments including hydrothermal vents and hypersaline bodies, mapping to subterranean and specialized biomes (A.1.d via analogy), soil organisms (A.2.b), decomposers (A.2.c), and deep-sea marine communities (B.2)."
+    },
+    {
+      "articleTitle": "Yangtze",
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "The Yangtze is a major riverine ecosystem with endemic biodiversity (now-extinct dolphin, paddlefish), flooding dynamics, and aquatic community structure directly relevant to riverine flowing-water communities (B.3.b)."
+    },
+    {
+      "articleTitle": "Indian Ocean",
+      "relevantPathsAI": [
+        "B.2",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Covers monsoon-driven marine ecosystems, coral reefs, mangroves, seagrass, upwelling patterns, and tuna fisheries — directly relevant to oceanic biological communities (B.2), coastal boundary ecosystems (B.4), and marine productivity (B.5)."
+    },
+    {
+      "articleTitle": "Atlantic Ocean",
+      "relevantPathsAI": [
+        "B.2",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Covers bathymetry, gyres, fisheries, the Sargasso Sea (a distinct open-ocean ecosystem), and marine biology relevant to oceanic communities (B.2), coastal/boundary ecosystems (B.4), and Atlantic productivity (B.5)."
+    },
+    {
+      "articleTitle": "Andes",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1.d"
+      ],
+      "rationaleAI": "The Andes encompass tropical, dry, and wet biome divisions with the Altiplano constituting a montane specialized biome (A.1.d); also relevant to biodiversity and endemic species distribution across elevation zones (A.1.c)."
+    },
+    {
+      "articleTitle": "Sahara",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "The Sahara is Earth's largest hot desert, directly representing the desert biome of A.1.c, with detailed coverage of its arid ecology, paleoclimatic cycles, and distinctive flora and fauna adaptations."
+    },
+    {
+      "articleTitle": "Polynesia",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Polynesia's island biogeography — remote Pacific islands colonized by Austronesian peoples and distinct biotic communities — is relevant to the distribution of organisms (C), illustrating island biogeography and colonization patterns."
+    },
+    {
+      "articleTitle": "Neolithic Revolution",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The Neolithic Revolution's global transition to agriculture altered terrestrial land use and modified biomes, with moderate relevance to A.1.a (land as a medium for life and human modification of terrestrial ecosystems)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

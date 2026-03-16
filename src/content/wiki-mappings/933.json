@@ -1,134 +1,160 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "933",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The history of Inner Asia is part of the broader tapestry of human history.",
+      "articleTitle": "Mongol Empire",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.2.a",
-        "B.2.b",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Post-classical history",
-      "rationaleAI": "Inner Asian peoples including Turks and Mongols reshaped post-classical Eurasian history through conquest and trade networks.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "Inner Asia including Central Asian steppes and Silk Road civilizations connects the major Asian cultures through trade and conquest.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.3",
-        "B.3.b",
-        "B.4",
         "C",
         "C.1",
-        "C.2.d",
-        "D.2",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Genghis Khan",
-      "rationaleAI": "Genghis Khan founded the Mongol Empire, the largest contiguous land empire in history, dominating Inner Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "C"
-      ]
+        "C.1.a",
+        "C.1.b",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.d"
+      ],
+      "rationaleAI": "The Mongol Empire is the central subject of section C of this outline, covering the establishment of the united empire under Genghis Khan and its successor khanates — the Yuan (C.2.a), Chagatai (C.2.b), Il-Khans (C.2.d), and Golden Horde (C.2.d)."
     },
     {
       "articleTitle": "Timur",
-      "rationaleAI": "Timur built a vast empire across Central Asia, leaving a lasting impact on the region's political and cultural history.",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "Timur (Tamerlane) is the explicit subject of C.2.b: his establishment of the Timurid dynasty (1370–1506), capital at Samarkand, conquests across Turkistan, Afghanistan, and Transoxania are detailed in this outline path."
+    },
+    {
+      "articleTitle": "Genghis Khan",
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Genghis Khan is the direct subject of C.1.a (his rise, military organization, and conquests) and C.1.b (division of his empire among sons and further expansion under Ögedei and Möngke Khans)."
+    },
+    {
+      "articleTitle": "Silk Road",
       "relevantPathsAI": [
         "A",
-        "B",
+        "B.3"
+      ],
+      "rationaleAI": "The Silk Road traversed the steppe and oasis routes of Inner Asia — Central and West Turkistan — providing the material basis for the interactions between steppe peoples and neighboring civilizations at A, and the development of Turkistan trade networks at B.3."
+    },
+    {
+      "articleTitle": "Tang dynasty",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3.b"
+      ],
+      "rationaleAI": "The Tang dynasty conducted military campaigns against the Hsiung-nu successor peoples and expanded influence into Central Asia including East Turkistan; the article's coverage of tributary relations with Central Asian states maps to B.1 and B.3.b."
+    },
+    {
+      "articleTitle": "Han dynasty",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "The Han dynasty's Xiongnu campaigns and Central Asian expansion under Wu Ti are exactly what B.1 describes — Han China's military pressure on the Hsiung-nu confederation and its destruction."
+    },
+    {
+      "articleTitle": "Alexander the Great",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Alexander conquered Bactria and Sogdia (modern Afghanistan and West Turkistan) — part of the early empires that B.3.a describes as ruling West Turkistan before Muslim conquest — directly relevant to the 'early empires' phase of that path."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "The spread of Muslim rule into West Turkistan is a key phase of B.3.a, and the Islamic Golden Age reflects the cultural transformation of these Central Asian regions under Abbasid caliphate influence before and during the Mongol period."
+    },
+    {
+      "articleTitle": "Achaemenid Empire",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "The Achaemenid Empire ruled Bactria and Sogdia (part of West Turkistan) and is explicitly named in the outline's description of Afghanistan's history at B.5 as among the early imperial rulers; also relevant to B.3.a as one of the early empires of West Turkistan."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
+      "rationaleAI": "Covers the Mongol Empire's role in connecting Eurasia through the Pax Mongolica and Central Asian trade networks — directly relevant to the section's overview (A) and the Mongol Empire section (C)."
+    },
+    {
+      "articleTitle": "Mughal Empire",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "The Mughal Empire was founded by Babur, a Timurid descendant from Fergana (Central Asia), making it the direct political continuation of the Timurid dynasty in C.2.b after the Timurids lost Central Asia to the Uzbeks."
+    },
+    {
+      "articleTitle": "Iran",
+      "relevantPathsAI": [
+        "B.3.a",
+        "C.2.d"
+      ],
+      "rationaleAI": "Iran's history encompasses the Muslim conquest of West Turkistan (B.3.a), and the Mongol Il-Khanate was based in Persia and is the direct subject of C.2.d (the Iranian Il-Khans 1258–1335)."
+    },
+    {
+      "articleTitle": "Russia",
+      "relevantPathsAI": [
+        "C.2.d",
+        "E"
+      ],
+      "rationaleAI": "The Golden Horde ruled eastern Europe including Russia from 1240, making Russian history directly connected to C.2.d; and Russian expansion into Siberia and western Turkistan is the explicit subject of E (waning of nomad power)."
+    },
+    {
+      "articleTitle": "Himalayas",
+      "relevantPathsAI": [
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "The Himalayas form the geographic setting for section D on Tibet and Nepal, separating the Indian subcontinent from the Tibetan Plateau and framing the cultural-religious significance of Himalayan civilization relevant to D and D.1."
+    },
+    {
+      "articleTitle": "Mahayana",
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.1.c",
+        "C.2.e"
+      ],
+      "rationaleAI": "Mahayana Buddhism is the dominant tradition of Tibet and Mongolia; D.1.a covers the introduction of Buddhism to Tibet, D.1.c covers the Yellow Hat (Dge-lugs-pa) monastic order's rule, and C.2.e explicitly covers the revival of Buddhism in Mongolia."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Ibn Khaldun's theory of asabiyyah (group solidarity) as the engine of nomadic state formation and his cyclical model of sedentary vs. nomadic civilization dynamics are directly relevant to the outline's section A on the cultures and interactions of steppe peoples with neighboring civilizations."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The Age of Discovery article covers Russian expansion into Siberia — one of the three forces explicitly named in outline path E (Manchu conquest, Afghans, and Russian expansion into Siberia and western Turkistan) as contributing to the waning of nomad power."
+    },
+    {
+      "articleTitle": "China",
+      "relevantPathsAI": [
         "B.1",
         "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
+        "C.2.a",
+        "E"
+      ],
+      "rationaleAI": "China's Han and Tang pressure on Hsiung-nu and Manchurian tribes maps to B.1 and B.2; the Manchu (Ch'ing) conquest of China and Inner Asia is the subject of E; and the Yuan dynasty's establishment at C.2.a is a Chinese-Mongol co-history."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
         "C"
-      ]
-    },
-    {
-      "articleTitle": "Mongol Empire",
-      "rationaleAI": "The Mongol Empire was the largest contiguous land empire, dominating Inner and Central Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Central Asia",
-      "rationaleAI": "Central Asia is the geographic focus of Inner Asian civilizations covered in this section.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Caspian Sea",
-      "rationaleAI": "The Caspian Sea borders Central Asian territories covered in this section.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "C"
-      ]
+      ],
+      "rationaleAI": "The Middle Ages article includes the Mongol Empire as a world-historical phenomenon and its role in connecting Eurasia; as the only broad candidate covering the Mongol successor states context at C from a global historical framing, it provides moderate background coverage."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -17,13 +17,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "In the ancient world",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Near Eastern historiography",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Near Eastern historiography",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -42,13 +42,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "In the Middle Ages",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Western Christian historiography",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Western Christian historiography",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -61,13 +61,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "From the Renaissance to the present",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Renaissance historiography; early modern historiography",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Renaissance historiography; early modern historiography",
+                  "children": []
+                },
                 {
                   "level": "iii",
                   "levelType": "roman",
@@ -86,13 +86,13 @@
               "level": "d",
               "levelType": "lowercase",
               "text": "Non-Western historiographical traditions",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Islamic historiography",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Islamic historiography",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -179,13 +179,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Genealogy",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Geography",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Geography",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

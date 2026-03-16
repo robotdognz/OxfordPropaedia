@@ -25,6 +25,13 @@
  *   npm install @anthropic-ai/sdk
  *   ANTHROPIC_API_KEY environment variable
  *   summaryAI fields populated in catalog files (run generate-summary-ai.mjs first)
+ *
+ * Note: This script is also used as a reference by Claude Code subagents, which
+ * replicate the assign-mode logic inline. The parent agent generates batch files
+ * to /tmp (assign-batch-N.txt with pre-filtered candidates per section), launches
+ * subagents that read those files and produce JSON output, then the parent parses
+ * and saves results. The system prompts, pre-filtering (rankCandidatesForSection),
+ * coverage-aware prompting, and output format defined here are the canonical source.
  */
 
 import fs from 'fs';
@@ -411,7 +418,7 @@ function writeMappingResults(sectionCode, results, type, existingData) {
     return m;
   });
 
-  const output = { sectionCode, mappings, _curatedBy: 'ai' };
+  const output = { sectionCode, mappings, _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
   fs.writeFileSync(filePath, JSON.stringify(output, null, 2) + '\n');
 }
 
@@ -423,7 +430,7 @@ function writeDiscoverResult(sectionCode, item, result, type) {
   if (fs.existsSync(filePath)) {
     data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   } else {
-    data = { sectionCode, mappings: [], _curatedBy: 'ai' };
+    data = { sectionCode, mappings: [], _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
   }
 
   // Check if item already exists in this section's mappings
@@ -711,7 +718,7 @@ function writeAssignResults(sectionCode, results, type) {
     }
   });
 
-  const output = { sectionCode, mappings, _curatedBy: 'ai' };
+  const output = { sectionCode, mappings, _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
   fs.writeFileSync(filePath, JSON.stringify(output, null, 2) + '\n');
 }
 

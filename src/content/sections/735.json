@@ -228,13 +228,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Organizational systems",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Management-oriented systems (executive, command and control, and decision support)",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Management-oriented systems (executive, command and control, and decision support)",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -259,13 +259,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Educational and reference systems",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Dictionaries and lexicons",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Dictionaries and lexicons",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

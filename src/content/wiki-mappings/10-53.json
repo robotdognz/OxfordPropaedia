@@ -1,84 +1,411 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/53",
   "mappings": [
     {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "Philosophical schools and doctrines represent the organized traditions discussed in this article.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Knowledge",
-      "rationaleAI": "Epistemological traditions from empiricism to rationalism to pragmatism represent major philosophical schools and doctrines.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.2.b",
-        "A.2.c",
-        "A.2.i",
-        "A.2.o",
-        "B.2",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Ethics",
-      "rationaleAI": "Ethical traditions from Aristotelian virtue ethics to Kantian deontology to utilitarianism represent major philosophical schools and doctrines.",
-      "relevantPathsAI": [
-        "A.2.e",
-        "A.2.h",
-        "A.2.k",
-        "B.1",
-        "B.2",
-        "C",
-        "C.1",
-        "C.2",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Logic",
-      "rationaleAI": "Logical traditions from Aristotelian syllogistic to modern formal logic represent influential philosophical schools and doctrines.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "A.2.c",
-        "A.2.i",
-        "A.2.o",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Atheism",
-      "rationaleAI": "Atheism is a major philosophical doctrine.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.2",
-        "A.2.b",
-        "A.2.i",
-        "B.2",
-        "B.4",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Anarchism",
-      "rationaleAI": "Anarchism represents a philosophical school and doctrine.",
+      "articleTitle": "Western philosophy",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.b",
         "A.2",
-        "A.2.b",
-        "A.2.i",
         "B",
+        "C"
+      ],
+      "rationaleAI": "Comprehensively surveys all major Western philosophical schools from antiquity through contemporary analytic and continental traditions (A.1, A.2), covering the full array of positions in metaphysics and epistemology (B, C) that constitute the section's content."
+    },
+    {
+      "articleTitle": "Ren\u00e9 Descartes",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.4",
+        "C.3"
+      ],
+      "rationaleAI": "Descartes founded Cartesianism (A.2.a) and his method of doubt grounds a distinct rationalist approach to the sources of knowledge (C.3 \u2014 rationalism), while his mind-body dualism is a primary theory of the mind-body relation (B.4)."
+    },
+    {
+      "articleTitle": "Thought",
+      "relevantPathsAI": [
+        "B.3",
+        "C.1",
+        "C.3"
+      ],
+      "rationaleAI": "Covers competing theories of thought's objects including Platonism, conceptualism, and computationalism (C.1 \u2014 sense-datum theory, Idealism, Realism), and addresses rationalist versus empiricist accounts of concept formation (C.3), as well as different conceptions of mind and its relation to body (B.3)."
+    },
+    {
+      "articleTitle": "Thomas Aquinas",
+      "relevantPathsAI": [
+        "A.1.j",
         "B.1",
-        "B.2",
+        "B.2"
+      ],
+      "rationaleAI": "Aquinas is the central figure of Scholasticism (A.1.j) and his Thomism is explicitly listed as a major metaphysical theory type in B.1; his faith-reason synthesis and natural law position occupy B.2 (different views of God)."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "A.2",
+        "C.3",
+        "C.2"
+      ],
+      "rationaleAI": "Reason as a faculty and its limits is central to both rationalist accounts of knowledge sources (C.3) and Kantian and positivist assessments of its validity (C.2 \u2014 Kantianism, positivism, pragmatism, skepticism); the article traces this debate from Aristotle through modern cognitive science."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.2.b",
+        "A.2.c",
+        "A.2.e",
+        "A.2.l"
+      ],
+      "rationaleAI": "The Enlightenment is the intellectual context generating empiricism (A.2.b), rationalism (A.2.c), Kantianism (A.2.e), and early forms of pragmatism and utilitarian thought (A.2.l, A.2.h); it also cultivated positivism and natural rights frameworks across B and D."
+    },
+    {
+      "articleTitle": "Epistemology",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Epistemology directly covers all the theories enumerated in section C: sense-datum theory and realism (C.1), Kantianism, positivism, pragmatism, and skepticism as views of knowledge's validity (C.2), rationalism and empiricism as sources of knowledge (C.3), and the realism/nominalism debate over universals (C.4)."
+    },
+    {
+      "articleTitle": "Immanuel Kant",
+      "relevantPathsAI": [
+        "A.2.e",
+        "B.3",
+        "C.2",
+        "D.2"
+      ],
+      "rationaleAI": "Kant founded Kantianism (A.2.e) and transcendental idealism, which figures in B.3 (different conceptions of man); his epistemology is central to C.2 (Kantian validity of knowledge); his deontological ethics grounds D.2 (deontological theories: rationalism)."
+    },
+    {
+      "articleTitle": "Ontology",
+      "relevantPathsAI": [
+        "B.1",
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Ontology directly maps to B.1 (types of metaphysical theory including Platonism, nominalism, Aristotelianism), C.4 (realism, conceptualism, nominalism as views on universals), and C.5 (realism, conventionalism, and operationalism as views on scientific theories)."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Provides the broadest framework identifying all major schools (A) and the full range of philosophical theories across metaphysics, epistemology, ethics, and political thought (B, C, D), making it essential background for the section as a whole."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Surveys the succession of Western and non-Western philosophical schools from antiquity through the modern period in the same sequence as A.1 and A.2, providing the historical context for each named school."
+    },
+    {
+      "articleTitle": "God",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers different views of God's existence and attributes including theism, deism, pantheism, panentheism, agnosticism, and process theology (B.2), along with the main philosophical arguments and objections."
+    },
+    {
+      "articleTitle": "Consciousness",
+      "relevantPathsAI": [
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "Consciousness relates to different views of mind and body including dualism, identity theory, and functionalism (B.4), and to the object of knowledge \u2014 phenomenalism, sense-datum theory, and realism \u2014 as contested by the hard problem (C.1)."
+    },
+    {
+      "articleTitle": "Knowledge",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Covers foundationalism, coherentism, and the Gettier problem as accounts of what knowledge is (C.1 \u2014 objects of knowledge), sources including perception and rational intuition (C.3 \u2014 rationalism vs. empiricism), validity criteria (C.2), and the status of universals (C.4)."
+    },
+    {
+      "articleTitle": "Ethics",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Ethics covers all the metaethical theories listed in D.1 (intuitionism, naturalism, noncognitivism) and all the deontological theories in D.2 (rationalism, intuitionism, Existentialism), as well as consequentialism and virtue ethics."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
+        "B.3",
+        "D.1"
+      ],
+      "rationaleAI": "Education has a moderate connection to section C through the philosophy of knowledge and to D through moral aims of education; it is only tangentially a school or doctrine, so it is a weaker fit but serves B.3 (different conceptions of man as doer \u2014 pragmatism, humanism, which grounds progressive education theories)."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.1.f",
+        "B.1",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Aristotle founded Aristotelianism (A.1.f), explicitly listed in B.1 as a distinct metaphysical theory type; his empiricist epistemology is foundational to C.3 (sources of knowledge), and his virtue ethics is foundational to D (normative ethics including D.2 deontological traditions)."
+    },
+    {
+      "articleTitle": "Cicero",
+      "relevantPathsAI": [
+        "A.1.g",
+        "A.1.h",
+        "A.1"
+      ],
+      "rationaleAI": "Cicero's philosophical treatises systematically exposed Stoicism (A.1.g), Epicureanism (A.1.h), and Academic Skepticism (A.1.i) to Latin readers, making him the principal transmitter of those schools in antiquity and a primary source for understanding them."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.1.f",
+        "A.1.j"
+      ],
+      "rationaleAI": "The Islamic Golden Age transmitted and developed Aristotelianism (A.1.f) through Avicenna and Averroes, and the scholastic synthesis of Greek philosophy with theology parallels Scholasticism (A.1.j); it thus occupies a mediating position between these named schools."
+    },
+    {
+      "articleTitle": "Renaissance",
+      "relevantPathsAI": [
+        "A.1.e",
+        "A.2"
+      ],
+      "rationaleAI": "The Renaissance revived Platonism through Florentine Neoplatonism (A.1.e) and prepared the ground for early modern schools including empiricism and rationalism (A.2), constituting a transitional moment between A.1 and A.2 schools."
+    },
+    {
+      "articleTitle": "Romanticism",
+      "relevantPathsAI": [
+        "A.2.f",
+        "A.2.g",
+        "B.3"
+      ],
+      "rationaleAI": "Romanticism is closely linked to German Idealism (A.2.f) and Hegelianism (A.2.g) as a philosophical-cultural movement; it embodies a distinct conception of man emphasizing imagination, subjectivity, and feeling over Enlightenment rationalism (B.3)."
+    },
+    {
+      "articleTitle": "Scientific method",
+      "relevantPathsAI": [
+        "A.2",
+        "C.5"
+      ],
+      "rationaleAI": "The scientific method article covers positivism and logical empiricism's falsifiability criterion (A.2.i) and directly addresses different views of the epistemic status of scientific theories including realism, conventionalism, and epistemological anarchism (C.5)."
+    },
+    {
+      "articleTitle": "Socrates",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.b",
+        "D"
+      ],
+      "rationaleAI": "Socrates connects to the Sophists against whom he argued (A.1.b) and represents the origin of Western moral philosophy; his elenctic method is foundational to the ethical inquiry analyzed in D."
+    },
+    {
+      "articleTitle": "Voltaire",
+      "relevantPathsAI": [
+        "A.2.b",
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "Voltaire was a prominent advocate of Empiricism (A.2.b) and Deism (B.2 \u2014 deism as a view concerning God's existence); his polemics against institutional religion and his promotion of rational inquiry connect empiricist and positivist tendencies (A.2.i)."
+    },
+    {
+      "articleTitle": "Avicenna",
+      "relevantPathsAI": [
+        "A.1.f",
+        "A.1.j",
+        "B.1",
+        "C.3"
+      ],
+      "rationaleAI": "Avicenna developed a Peripatetic Aristotelianism (A.1.f) that was foundational to Islamic Scholasticism (A.1.j) and introduced the floating man argument relevant to rationalist theories of self-knowledge (C.3); his metaphysics contributes to B.1."
+    },
+    {
+      "articleTitle": "Kurt G\u00f6del",
+      "relevantPathsAI": [
+        "A.2",
+        "C.5"
+      ],
+      "rationaleAI": "G\u00f6del's incompleteness theorems decisively impacted logical positivism and the unity of science movement (A.2.i) by limiting the scope of formal axiomatic systems; his results bear on realism versus conventionalism debates in philosophy of mathematics (C.5)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Ancient Greece is the historical and cultural context for all the philosophical schools listed in A.1 \u2014 Pythagoreanism, Sophism, Eleaticism, Atomism, Platonism, Aristotelianism, Stoicism, Epicureanism, and Skepticism \u2014 providing essential background for understanding their origins."
+    },
+    {
+      "articleTitle": "Eastern philosophy",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "Eastern philosophy's major streams (Confucianism, Taoism, Vedanta, Buddhism) represent alternative theories of being (B.1), different conceptions of man as knower and practitioner (B.3), and alternative epistemological traditions emphasizing self-cultivation over propositional justification (C.3)."
+    },
+    {
+      "articleTitle": "Political science",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.l"
+      ],
+      "rationaleAI": "Political science's empiricist and positivist methodology (A.2.i \u2014 positivism and logical empiricism) and its formal modeling approaches connect to pragmatism (A.2.l); these methodological schools shape its claim to be a science of politics."
+    },
+    {
+      "articleTitle": "Plato",
+      "relevantPathsAI": [
+        "A.1.e",
+        "B.1",
+        "C.1",
+        "C.4"
+      ],
+      "rationaleAI": "Plato is the founder of Platonism (A.1.e) and his Theory of Forms is listed in B.1 as a distinct metaphysical theory type; his account of knowledge as recollection of Forms is central to C.1 (Idealism as a conception of the object of knowledge) and C.4 (realism about universals)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.2.j",
+        "B.1",
+        "B.3",
+        "D"
+      ],
+      "rationaleAI": "Marx founded Marxism (A.2.j) and dialectical materialism, explicitly listed in A.2.d and B.1; his historical materialism addresses different conceptions of man as maker and doer (B.3), and his theory of ideology bears on D (theories of conduct and consciousness)."
+    },
+    {
+      "articleTitle": "History of science",
+      "relevantPathsAI": [
+        "A.2",
+        "C.5"
+      ],
+      "rationaleAI": "The history of science traces the philosophical contexts in which positivism and logical empiricism emerged (A.2.i) and illuminates how views of the epistemic status of scientific theories \u2014 including Kuhn's paradigm shifts and Lakatos's research programs \u2014 have evolved (C.5)."
+    },
+    {
+      "articleTitle": "Logic",
+      "relevantPathsAI": [
+        "A.1.f",
+        "A.2",
+        "C"
+      ],
+      "rationaleAI": "Logic is the formal foundation for Aristotelianism (A.1.f \u2014 the Organon), for positivist and analytic philosophy (A.2.i, A.2.o), and for all the epistemic theories in C, since theories of knowledge validation rely on logical inference."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "B.3",
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "Psychology provides the empirical backdrop for philosophical theories of mind-body relations (B.4), different conceptions of man as knower and doer (B.3), and debates over whether mental states are objects of knowledge (C.1)."
+    },
+    {
+      "articleTitle": "Time",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Time as a metaphysical category (the nature of temporal existence, the A-theory/B-theory divide) is a central problem addressed by the metaphysical schools listed in B.1, including Aristotelianism, Idealism, and Naturalism."
+    },
+    {
+      "articleTitle": "Metaphysics",
+      "relevantPathsAI": [
+        "B.1",
         "B.4"
-      ]
+      ],
+      "rationaleAI": "Metaphysics covers the full range of theories listed in B.1 \u2014 Platonism, Aristotelianism, Thomism, Cartesianism, Idealism, Materialism, Atomism, Naturalism, Pythagoreanism \u2014 and addresses different views on the mind-body relation (B.4)."
+    },
+    {
+      "articleTitle": "Anarchism",
+      "relevantPathsAI": [
+        "B.3",
+        "D"
+      ],
+      "rationaleAI": "Anarchism represents a specific philosophical position on the nature of man as a social and political agent (B.3 \u2014 humanism and libertarian conceptions) and its rejection of coercive institutions bears on deontological and consequentialist theories of conduct (D)."
+    },
+    {
+      "articleTitle": "Laozi",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Laozi's Tao Te Ching articulates a cosmological metaphysics (B.1 \u2014 the Dao as the fundamental nature of being) and a conception of man through wu wei and natural spontaneity (B.3), constituting a non-Western counterpart to the Western metaphysical theories enumerated in B.1."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.l"
+      ],
+      "rationaleAI": "Ibn Khaldun's empirical-historical methodology anticipates positivism (A.2.i) and proto-pragmatist social science; his cyclical theory of civilization connects to naturalistic accounts of social dynamics, offering non-Western precedent for the scientific study of society aligned with A.2.i and A.2.l."
+    },
+    {
+      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "relevantPathsAI": [
+        "A.2.k",
+        "B.3",
+        "D"
+      ],
+      "rationaleAI": "Machiavelli's realpolitik represents a form of political realism (A.2.k) and a distinctive conception of man as a political actor governed by virt\u00f9 and necessity rather than moral idealism (B.3); his separation of politics from ethics directly challenges deontological theories of conduct (D.2)."
+    },
+    {
+      "articleTitle": "John Locke",
+      "relevantPathsAI": [
+        "A.2.b",
+        "C.3",
+        "B.2"
+      ],
+      "rationaleAI": "Locke is the founding figure of British Empiricism (A.2.b) and his tabula rasa doctrine is the paradigm for empiricist accounts of the sources of knowledge (C.3); his Deism and natural theology also connect to B.2."
+    },
+    {
+      "articleTitle": "Mary Wollstonecraft",
+      "relevantPathsAI": [
+        "B.3",
+        "D"
+      ],
+      "rationaleAI": "Wollstonecraft's Enlightenment feminism articulates a conception of man \u2014 and woman \u2014 as rational agent (B.3 \u2014 humanism, rationalism) and grounds gender equality in normative ethics and political rights (D \u2014 theories of conduct including rational autonomy)."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.2.c",
+        "C.5"
+      ],
+      "rationaleAI": "Newton's mathematical natural philosophy grounded a rationalist-mechanist worldview (A.2.c \u2014 rationalism) and provided the dominant scientific theory against which positivist, conventionalist, and realist views of scientific theories were debated (C.5)."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "B.1",
+        "C.5"
+      ],
+      "rationaleAI": "Darwinian evolutionary theory contributed to naturalism and materialism (B.1) and raised fundamental questions about the epistemic status of scientific theories including debates over realism, functionalism, and the unity of biology with the physical sciences (C.5)."
+    },
+    {
+      "articleTitle": "Alan Turing",
+      "relevantPathsAI": [
+        "A.2.o",
+        "B.4"
+      ],
+      "rationaleAI": "Turing's work on computability and machine intelligence connects to analytic and linguistic philosophy (A.2.o) and to different views of mind and its relation to the body (B.4 \u2014 functionalism and computational theories of mind)."
+    },
+    {
+      "articleTitle": "History of mathematics",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2",
+        "C.5"
+      ],
+      "rationaleAI": "The history of mathematics traces the development from Pythagorean number mysticism (A.1.a) through the foundational crisis relevant to logical positivism and the unity of science movement (A.2.i); debates over the nature of mathematical truth are central to C.5."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

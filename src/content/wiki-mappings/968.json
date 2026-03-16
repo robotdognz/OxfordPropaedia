@@ -1,133 +1,148 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "968",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "South Asian colonial history documents the impact of imperialism on human societies.",
+      "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "B.1.c",
+        "A",
+        "A.3",
+        "B",
+        "B.1",
         "B.2",
+        "B.3",
+        "C",
+        "C.1",
         "C.2",
         "C.3",
         "C.4",
-        "D.3",
-        "E.1"
-      ]
+        "D",
+        "D.3"
+      ],
+      "rationaleAI": "The British Empire is the central subject of section 968 — covering the East India Company's establishment and growth (A.3.a, B.1), Anglo-French rivalry (A.3.b), extension of British power across India (B), the Indian Mutiny (B.3), the Raj's social and political policies (C.1–C.4), and British rule in Ceylon (D.3)."
     },
     {
-      "articleTitle": "Early modern period",
-      "rationaleAI": "European imperialism's expansion into South Asia beginning c. 1500 marks a key dimension of early modern global history.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Rabindranath Tagore",
-      "rationaleAI": "Tagore's literary and educational work shaped the cultural awakening of South Asia under European imperialism.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.b",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.2",
-        "B.3",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "British Empire",
-      "rationaleAI": "British imperialism profoundly influenced the Indian subcontinent and South Asian societies under colonial rule.",
+      "articleTitle": "Mughal Empire",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.3",
         "A.3.a",
-        "A.3.b",
         "A.3.c",
         "B.1",
-        "B.1.b",
-        "B.1.c"
-      ]
+        "B.1.a",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "The Mughal Empire was the principal indigenous power the British East India Company negotiated with, subverted, and eventually replaced — its administrative centralization and decline directly underpin A.3.a (British settlements and relations with indigenous rulers), B.1.b (Hastings transitioning from revenue farmer), B.3 (the Indian Mutiny coinciding with formal Mughal dissolution), and B.2."
     },
     {
-      "articleTitle": "India",
-      "rationaleAI": "India under European imperialism is the focus of this section.",
+      "articleTitle": "Mahatma Gandhi",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
-      ]
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Gandhi is explicitly named in C.4 as the emergent nationalist leader whose noncooperation policy followed the Amritsar massacre and the Government of India Act (1919); his earlier Indian National Congress involvement also connects to C.3's beginning of Indian nationalism."
     },
     {
-      "articleTitle": "Mumbai",
-      "rationaleAI": "Mumbai (Bombay) grew as a major center under British imperialism in India.",
+      "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "The Age of Discovery, including Vasco da Gama's 1498 voyage to India, is the direct starting point of A.1 (Portuguese commercial relations with India from 1498) and establishes the context for all subsequent European activity in India."
+    },
+    {
+      "articleTitle": "Akbar",
+      "relevantPathsAI": [
         "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Akbar's Mughal Empire — its administrative system, religious pluralism, and integration of Silk Road trade — constitutes the indigenous political context within which the British East India Company first established settlements (A.3.a) and the economic and political effects of early British influence (B.2)."
     },
     {
       "articleTitle": "Colonialism",
-      "rationaleAI": "Colonialism defined South Asia under European imperialism.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "B.1.c",
-        "B.2",
-        "C.2",
-        "C.3",
-        "C.4",
-        "D.3"
-      ]
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Colonialism provides the theoretical and historical framework encompassing the entire section 968 — Portuguese, Dutch, French, and British colonial activity in India and Ceylon from 1498 through 1920."
     },
     {
       "articleTitle": "Imperialism",
-      "rationaleAI": "Imperialism is the defining force in South Asia under European influence.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
         "B.1",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
-      ]
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Imperialism covers the extension of British political power over Indian states (B.1), the climax of the Raj and its social policies (C.1), frontier conflicts with Russia (C.2), and the British response to Indian nationalism (C.3) — all central expressions of late-19th-century imperial governance."
+    },
+    {
+      "articleTitle": "Bangladesh",
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.1.a",
+        "B.3"
+      ],
+      "rationaleAI": "Bangladesh's territory (Bengal) is directly named in A.3.c (British seizure of Calcutta 1757 and Clive's control over Bengal), B.1.a (securing British supremacy in Bengal), and B.3 (the 1857 Indian Mutiny originated partly in Bengal's political context under Company rule)."
+    },
+    {
+      "articleTitle": "Pakistan",
+      "relevantPathsAI": [
+        "B.1.f",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Pakistan's territory encompasses regions directly named in the outline: the Afghan and Sikh kingdoms annexed in the 1840s–1850s (B.1.f), the northwest frontier conflicts with Russia (C.2), and the North-West Frontier Province created in 1901 (C.2); also relevant to C.3 via the Muslim League's founding."
+    },
+    {
+      "articleTitle": "World War I",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "World War I is explicitly the subject of C.4, which covers India's contribution to the war effort, anti-British activity, the Amritsar massacre (1919), the Government of India Act (1919), Hindu-Muslim relations, and Gandhi's emergence — all direct consequences of India's WWI involvement."
+    },
+    {
+      "articleTitle": "Rabindranath Tagore",
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Tagore was a major figure of the Indian nationalist cultural and political milieu covered in C.3 (Indian nationalism and the British response, Bengal partition), and his anti-imperialist critique and cultural output intersect with the nationalist movements of C.4 during and after World War I."
+    },
+    {
+      "articleTitle": "Delhi",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "C.1"
+      ],
+      "rationaleAI": "Delhi was the seat of the Mughal Empire dissolved by the British Raj and a key site during the Indian Mutiny of 1857 (B.3); as capital of the Raj (and later independent India), it connects to the administrative policies of C.1."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "The Industrial Revolution in Britain drove the economic policies and trade interests that shaped the political, legal, economic, and social effects of British rule in India covered in B.2, and the social and economic policies of the Raj (C.1), particularly regarding textile imports undermining Indian weaving industries."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "The Silk Road's maritime extension into the Indian Ocean trade network is the commercial context within which Portuguese (A.1) and Dutch (A.2) activity in India initially operated, as European powers sought to control or bypass existing Asian trade routes."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Spain's rivalry with Portugal and competition for Indian Ocean trade routes is relevant background to A.1's coverage of Portuguese commercial relations with India, as Iberian imperial competition shaped the geopolitics of early European activity in South Asia."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

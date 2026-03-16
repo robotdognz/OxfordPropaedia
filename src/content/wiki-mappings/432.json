@@ -1,86 +1,122 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "432",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Environmental influences on human behavior are directly relevant to understanding the human organism.",
+      "articleTitle": "Psychology",
       "relevantPathsAI": [
         "A",
         "B.1",
-        "B.2.a",
-        "B.3.a",
-        "B.3.b",
-        "B.3.c",
-        "B.4",
-        "B.4.c",
-        "B.4.d",
-        "B.5"
-      ]
-    },
-    {
-      "articleTitle": "Psychology",
-      "rationaleAI": "Environmental psychology and social psychology study how the current environment influences human behavior and conscious experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "B.2.a",
-        "B.3.b",
-        "B.5",
-        "B.7",
-        "C.1",
-        "C.3",
-        "D.3"
-      ]
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Psychology as a discipline directly addresses theories of attention (A, A.2), sensation and the senses in general (B.1), and perception including Gestalt and behaviourist frameworks (C, C.1). Covers the full range of environmental influence on behaviour studied in this section."
     },
     {
       "articleTitle": "Ear",
-      "rationaleAI": "The ear mediates auditory perception of the environment influencing behavior.",
       "relevantPathsAI": [
-        "B.3.a",
-        "B.3.b",
-        "B.3.c",
-        "B.3.d",
-        "B.4.d",
-        "B.5",
-        "B.6",
-        "B.8",
-        "C.3.a",
-        "E.2"
-      ]
-    },
-    {
-      "articleTitle": "Eye",
-      "rationaleAI": "The eye mediates visual perception of the environment influencing behavior.",
-      "relevantPathsAI": [
-        "B.3.b",
-        "B.4.d",
-        "B.5",
-        "C",
-        "D",
-        "D.2",
-        "D.3",
-        "E",
-        "E.2",
-        "E.4"
-      ]
+        "B.3",
+        "B.6"
+      ],
+      "rationaleAI": "The ear article details the anatomy and physiology of auditory transduction through the outer, middle, and inner ear (B.3), and the vestibular role of the semicircular canals and otolith organs in maintaining equilibrium (B.6). Directly addresses the mechanisms outlined at B.3.a-c and B.6."
     },
     {
       "articleTitle": "Sense",
-      "rationaleAI": "The senses mediate perception of the current environment influencing behavior.",
+      "relevantPathsAI": [
+        "B.1",
+        "B"
+      ],
+      "rationaleAI": "Sense covers biological systems for sensation — mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors — and lists modalities including proprioception, nociception, vestibular sense, and interoception, directly addressing B.1 (the senses in general) and providing broad context for the entire B section."
+    },
+    {
+      "articleTitle": "Consciousness",
       "relevantPathsAI": [
         "A",
-        "A.6",
-        "B",
-        "B.1",
+        "A.1",
+        "C"
+      ],
+      "rationaleAI": "Consciousness covers wakefulness, self-awareness, and subjective experience, engaging directly with the problem of defining awareness (A.1) and with how perceptual processing gives rise to conscious experience (C). The global workspace and attention schema theories are directly relevant to A.5-A.6."
+    },
+    {
+      "articleTitle": "Color",
+      "relevantPathsAI": [
         "B.2",
         "B.2.a",
+        "B.2.b",
         "B.2.c",
-        "B.2.d",
+        "C.3.c"
+      ],
+      "rationaleAI": "Color is a visual perception phenomenon grounded in cone cell activation in the retina (B.2.a), psychophysical transduction of light into neural signals (B.2.b), and perceptual processes including color constancy — the tendency to perceive stable hues despite changing illumination — which maps to B.2.c and C.3.c."
+    },
+    {
+      "articleTitle": "Eye",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.d"
+      ],
+      "rationaleAI": "The eye article directly covers the retina and photoreceptor cells (B.2.a), the transduction of light into electrochemical neural signals (B.2.b), and non-visual retinal projections to brain structures (B.2.d), matching the outline's treatment of the visual apparatus from photoreception through cortical processing."
+    },
+    {
+      "articleTitle": "Sound",
+      "relevantPathsAI": [
+        "B.3",
         "B.3.a",
         "B.3.b"
-      ]
+      ],
+      "rationaleAI": "Sound covers the physical wave description (frequency, amplitude) and the psychoacoustic perception of pitch, loudness, timbre, and spatial location, directly corresponding to B.3.a (transmission through the ear) and B.3.b (encoding and processing of pitch, loudness, localization, and duration in the auditory pathways)."
+    },
+    {
+      "articleTitle": "Brain",
+      "relevantPathsAI": [
+        "A.5",
+        "B.2.d",
+        "B.3.b",
+        "C"
+      ],
+      "rationaleAI": "The brain article covers the physiological mechanisms of attention via prefrontal cortex and subcortical structures (A.5), responses of the cerebral cortex to visual stimuli (B.2.d), auditory pathways of the CNS (B.3.b), and the neural basis of perceptual processing broadly (C)."
+    },
+    {
+      "articleTitle": "Mental disorder",
+      "relevantPathsAI": [
+        "G.2",
+        "G.2.a"
+      ],
+      "rationaleAI": "Mental disorder encompasses psychotic and other conditions involving hallucinations — a core topic at G.2 — and neurological factors underlying hallucinatory experience (G.2.a). Psychotic disorders, PTSD, and dissociative conditions all produce the hallucinatory and illusory experiences treated in section G."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "A.2",
+        "A.4",
+        "C.1"
+      ],
+      "rationaleAI": "Freud's stimulus-response and psychoanalytic frameworks directly contributed to the development of theories of attention (A.2), and unconscious influences are listed as determinants of attention (A.4). His theoretical contributions also shaped early perception theories discussed at C.1."
+    },
+    {
+      "articleTitle": "Animation",
+      "relevantPathsAI": [
+        "F",
+        "F.1"
+      ],
+      "rationaleAI": "Animation creates the illusion of motion through sequential display of images, exploiting the visual mechanisms for perceiving motion that are the subject of F.1 (visual cues for perceiving self-motion and motion of objects). As one of the few candidates touching outline path F, it provides coverage of an otherwise unaddressed priority path."
+    },
+    {
+      "articleTitle": "Information",
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Information theory (Shannon's quantification in bits) is explicitly named in the outline at A.6 as the framework for analysing attentive phenomena, making this article a direct fit for that specific and otherwise uncovered path."
+    },
+    {
+      "articleTitle": "Human behavior",
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
+      "rationaleAI": "Human behavior covers the full range of behavioral responses to internal and external stimuli, including cognitive behavior and perception, providing broad contextual coverage for attention (A) and perceptual processes (C) as they shape observable behavior."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

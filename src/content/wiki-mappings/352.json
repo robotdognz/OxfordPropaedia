@@ -1,94 +1,195 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "352",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Biological populations and communities are organized assemblages of living things.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.7",
-        "B.2.a",
-        "C.1",
-        "C.1.a",
-        "C.4.a"
-      ]
-    },
-    {
       "articleTitle": "Ecology",
-      "rationaleAI": "Population ecology and community ecology study how biological populations and communities interact and change over time.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.2.b",
-        "A.3",
-        "A.5",
-        "A.7",
-        "B.1",
-        "B.2.b",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Biodiversity",
-      "rationaleAI": "Biodiversity describes the variety within biological populations and communities.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
         "A.3",
         "A.4",
         "A.5",
-        "A.7",
-        "B.1"
-      ]
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Ecology is the foundational discipline for studying populations (A.1), covering population dynamics, metapopulations, migration (A.2–A.5), biotic interactions including mutualism, predation, and competition (B), and community structure including biomes and food webs (C)."
     },
     {
-      "articleTitle": "Species",
-      "rationaleAI": "Species are the basic units of biological populations and communities.",
+      "articleTitle": "Extinction",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
         "A.2.b",
         "A.3",
-        "A.5",
-        "B.1",
-        "B.3",
-        "C",
-        "C.1.a"
-      ]
+        "A.4"
+      ],
+      "rationaleAI": "Extinction results from mortality rates exceeding reproductive rates in populations (A.2.b) and reflects the ultimate failure of carrying capacity management (A.3); its causes — habitat loss, competition, predation, disease — connect to population fluctuation dynamics (A.4)."
     },
     {
-      "articleTitle": "Insect",
-      "rationaleAI": "Insects play major ecological roles in biological populations and communities.",
+      "articleTitle": "Food",
       "relevantPathsAI": [
-        "A",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.7",
         "B.2.b",
-        "B.3",
-        "C.1.b",
-        "C.1.d",
-        "C.5.c"
-      ]
+        "C.1.c"
+      ],
+      "rationaleAI": "Food as a topic covers consumption relationships — predation and herbivory — between species (B.2.b negative interactions) and the ecological niches and feeding behaviors that structure community heterotrophic nutrition (C.1.c)."
     },
     {
-      "articleTitle": "Fungus",
-      "rationaleAI": "Fungi play essential decomposer roles in biological populations and communities.",
+      "articleTitle": "Ecosystem",
       "relevantPathsAI": [
-        "A.3",
+        "C.2",
+        "C.3",
+        "C.5.b"
+      ],
+      "rationaleAI": "Ecosystem covers community function including energy flow (C.2), ecological succession toward stable states (C.3), and biomes as the unit of community classification (C.5.b), connecting community ecology to the broader ecosystem framework."
+    },
+    {
+      "articleTitle": "Human migration",
+      "relevantPathsAI": [
         "A.5",
+        "A.7"
+      ],
+      "rationaleAI": "Human migration directly covers the movement patterns, emigration/immigration dynamics, and barriers to dispersal (A.5) that shape population structure, and constitutes a primary factor affecting human population structure and distribution (A.7)."
+    },
+    {
+      "articleTitle": "Natural selection",
+      "relevantPathsAI": [
+        "B.3",
+        "A.3"
+      ],
+      "rationaleAI": "Natural selection is the primary mechanism through which interspecific interactions have evolutionary and biogeographic consequences at the population level (B.3), and it shapes population growth and carrying capacity through differential survival and reproduction (A.3)."
+    },
+    {
+      "articleTitle": "Urbanization",
+      "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Urbanization is a central factor affecting human population structure, driving the global shift from rural to urban residence (A.7) and reshaping population density, age structure, and demographic patterns across regions."
+    },
+    {
+      "articleTitle": "Fish",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Fish, as the largest vertebrate group, exemplify interspecific interactions including predation and competition (B.2.b), and their population dynamics and community ecology are central to aquatic community structure (C.1)."
+    },
+    {
+      "articleTitle": "Flower",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Flowers exemplify mutualistic interspecific interactions (B.2.c) through pollination relationships with insects and birds, representing coevolved positive interactions in which both populations benefit."
+    },
+    {
+      "articleTitle": "Sex",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.1"
+      ],
+      "rationaleAI": "Sex covers the biological trait underlying sex-ratio differences in populations (A.2.a) and sex-determination systems that affect intraspecific interactions including sexual selection and mating competition (B.1)."
+    },
+    {
+      "articleTitle": "Season",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "C.1.b"
+      ],
+      "rationaleAI": "Seasons drive annual fluctuations in population size (A.4), trigger migration and dispersal behaviors (A.5), and determine the time relations and periodicity of community composition (C.1.b)."
+    },
+    {
+      "articleTitle": "Exponentiation",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Exponentiation underpins exponential population growth models, which are foundational to understanding growth form and carrying capacity in biological populations (A.3)."
+    },
+    {
+      "articleTitle": "Human",
+      "relevantPathsAI": [
         "A.7",
-        "C.1",
-        "C.1.a",
+        "B.2"
+      ],
+      "rationaleAI": "Human covers the biological and social characteristics of the species whose populations are explicitly addressed in A.7, and describes interspecific interactions including domestication and ecosystem impact (B.2)."
+    },
+    {
+      "articleTitle": "Evolution",
+      "relevantPathsAI": [
+        "B.3",
+        "A.2.a"
+      ],
+      "rationaleAI": "Evolution covers the processes — natural selection, genetic drift, gene flow — that determine the evolutionary and biogeographical consequences of interspecific interactions (B.3) and drive genetic differences in populations (A.2.a)."
+    },
+    {
+      "articleTitle": "Animal",
+      "relevantPathsAI": [
+        "B.2",
         "C.1.d"
-      ]
+      ],
+      "rationaleAI": "Animals constitute the dominant consumer group in ecological communities, their diversity spanning the full range of interspecific interactions (B.2) including predation, parasitism, mutualism, and competition, and they contribute substantially to species diversity and niches (C.1.d)."
+    },
+    {
+      "articleTitle": "Forest",
+      "relevantPathsAI": [
+        "C.5.b",
+        "C.4.a"
+      ],
+      "rationaleAI": "Forests represent a major biome used as the unit of community classification (C.5.b), and their layered structure and habitat gradients illustrate landscape patterns of environmental gradients (C.4.a)."
+    },
+    {
+      "articleTitle": "Mountain",
+      "relevantPathsAI": [
+        "A.5",
+        "C.4.a"
+      ],
+      "rationaleAI": "Mountains function as topographical barriers influencing population dispersal and migration (A.5) and create altitudinal environmental gradients that produce distinct landscape patterns of habitat zonation (C.4.a)."
+    },
+    {
+      "articleTitle": "Ageing",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "Ageing directly shapes age structure in populations (A.2.a) and determines mortality rates, which together with reproductive rates constitute the key demographic parameters of population size change (A.2.b)."
+    },
+    {
+      "articleTitle": "Genetics",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.3"
+      ],
+      "rationaleAI": "Genetics covers genetic differences and their distribution in populations (A.2.a) through population genetics, and provides the mechanistic foundation for understanding evolutionary and biogeographical aspects of population interactions (B.3)."
+    },
+    {
+      "articleTitle": "Heredity",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Heredity covers the transmission of genetic information that produces genetic variation distributed across biological populations (A.2.a), forming the basis for population-level genetic differences studied in population genetics."
+    },
+    {
+      "articleTitle": "Taxonomy (biology)",
+      "relevantPathsAI": [
+        "C.5",
+        "C.5.a"
+      ],
+      "rationaleAI": "Biological taxonomy provides the classification system underlying community classification (C.5), including the species and association concepts used as units of classification (C.5.a)."
+    },
+    {
+      "articleTitle": "Primate",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.1",
+        "B.2.c"
+      ],
+      "rationaleAI": "Primates display complex intraspecific social structures including dominance hierarchies and pair bonds (B.1), exhibit age, sex, and genetic variation within populations (A.2.a), and include humans whose mutualistic and competitive interspecific interactions are ecologically significant (B.2.c)."
+    },
+    {
+      "articleTitle": "Virus",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Viruses are obligate intracellular parasites that exemplify parasitic interspecific interactions (B.2.b) in which one population (host) is harmed, and they drive population dynamics through epidemic host mortality."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

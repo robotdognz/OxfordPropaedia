@@ -1,159 +1,179 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "435",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Learning and thinking are defining cognitive capacities of humans discussed in this article.",
+      "articleTitle": "Thought",
       "relevantPathsAI": [
-        "A.1",
         "G",
         "G.1",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Game",
-      "rationaleAI": "Games are powerful tools for developing cognitive potentials including problem-solving, learning, and creative thinking.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Knowledge",
-      "rationaleAI": "Knowledge acquisition through learning and thinking is fundamental to the development of human cognitive potentials.",
-      "relevantPathsAI": [
-        "D",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Language",
-      "rationaleAI": "Language acquisition and linguistic competence are central to the development of human cognitive and learning potentials.",
-      "relevantPathsAI": [
-        "A.1",
-        "G.2",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Psychology",
-      "rationaleAI": "Cognitive and educational psychology study how humans develop their potentials through learning and thinking.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "G.1"
-      ]
+        "G.3",
+        "D"
+      ],
+      "rationaleAI": "Directly covers the higher thought processes (G, G.1) including reasoning, concept formation, problem-solving, and deliberation, with sustained treatment of conceptual learning and concept formation (D) through associationism, computationalism, and Platonism/Aristotelianism. Also addresses meaning (G.3) through the language-of-thought hypothesis and inner speech."
     },
     {
       "articleTitle": "Mind",
-      "rationaleAI": "The mind's cognitive functions of learning, reasoning, and problem-solving are central to human intellectual development.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "D",
         "G",
         "G.1",
-        "G.2"
-      ]
+        "E"
+      ],
+      "rationaleAI": "Covers the mental phenomena underlying all learning and thinking, including memory, thought, and psychological stages relevant to A and G.1; treatment of conscious and unconscious processes connects to major issues in learning theories (A.2) and the higher thought processes (G, G.1)."
     },
     {
       "articleTitle": "Education",
-      "rationaleAI": "Education is the systematic process through which individuals develop their potentials for learning and thinking.",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Covers learning theories and teaching methods substantively (A, A.1), and addresses major issues such as the roles of motivation, intelligence, and socioeconomic factors in learning (A.2)."
+    },
+    {
+      "articleTitle": "Memory",
+      "relevantPathsAI": [
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Directly and comprehensively covers E (retention and forgetting: encoding, storage, retrieval, interference, decay) and F (abnormalities of memory: amnesia, dementia, PTSD-related disruption), including the structural model distinguishing sensory, short-term, and long-term memory stores."
+    },
+    {
+      "articleTitle": "Learning",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Child",
-      "rationaleAI": "Childhood is the primary period for developing learning and thinking capacities.",
-      "relevantPathsAI": [
-        "A.1",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Play (activity)",
-      "rationaleAI": "Play is essential to the development of learning and thinking potentials.",
-      "relevantPathsAI": [
-        "A.1",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Toy",
-      "rationaleAI": "Toys support the development of learning and thinking in children.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Memory",
-      "rationaleAI": "Memory is essential to the development of learning and thinking.",
-      "relevantPathsAI": [
-        "A.1",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Thought",
-      "rationaleAI": "Thought is the direct subject of developing learning and thinking potentials.",
-      "relevantPathsAI": [
-        "A.1",
-        "D",
-        "E",
-        "F",
-        "G",
-        "G.1",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Intelligence",
-      "rationaleAI": "Intelligence relates to the development of thinking and learning.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Learning",
-      "rationaleAI": "Learning is the direct subject of developing a person's potentials.",
-      "relevantPathsAI": [
-        "A.1",
         "A.3",
         "B",
         "C",
-        "D",
+        "D"
+      ],
+      "rationaleAI": "Directly covers the entire outline division: modern learning theories including classical/operant conditioning and observational learning (A, A.1, A.2), habituation and sensitization addressing major theoretical issues (A.2), transfer across learning domains (A.3), psychomotor learning (B), perceptual learning (C), and conceptual/complex learning forms (D)."
+    },
+    {
+      "articleTitle": "Human behavior",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "G"
+      ],
+      "rationaleAI": "Covers cognitive behavior including learning, memory, and decision-making as a domain (A, A.2), and addresses the higher thought processes through deliberation and reasoning (G)."
+    },
+    {
+      "articleTitle": "Literacy",
+      "relevantPathsAI": [
+        "G.2",
+        "D"
+      ],
+      "rationaleAI": "Literacy is directly related to the role of language in higher thought processes (G.2) and to conceptual learning and concept formation (D), as reading comprehension involves both symbolic processing and concept acquisition."
+    },
+    {
+      "articleTitle": "Communication",
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Covers transmission of meaning through coded messages (G.3) and the role of verbal and non-verbal language in human communication (G.2)."
+    },
+    {
+      "articleTitle": "Language",
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Directly addresses the role of language in cognition (G.2), including acquisition, semantics, and the connections between linguistic structure and thought via Broca/Wernicke areas; covers meaning (G.3) through semantic and philosophical treatment."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers the higher thought processes including deductive, inductive, abductive, and analogical reasoning (G, G.1), and addresses major theoretical issues in cognition such as biases, fallacies, and the neural basis of reasoning (A.2)."
+    },
+    {
+      "articleTitle": "Epistemology",
+      "relevantPathsAI": [
+        "G.1",
+        "G.3",
+        "A.2"
+      ],
+      "rationaleAI": "Epistemology addresses the nature of knowledge and the sources of belief including perception, memory, and reason (G.1, A.2), and treats meaning, justification, and truth as central concepts (G.3)."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "G",
+        "G.1",
         "E"
-      ]
+      ],
+      "rationaleAI": "As the parent discipline, psychology covers all major learning theories including behaviorism, cognitive, and social schools (A, A.1, A.2), the higher thought processes via cognitive psychology (G, G.1), and memory as a core research area (E)."
     },
     {
-      "articleTitle": "Brain",
-      "rationaleAI": "The brain is the biological substrate for learning and thinking.",
+      "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "A.1",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F"
-      ]
+        "A.2",
+        "G.1"
+      ],
+      "rationaleAI": "Freud psychoanalytic theory contributed associationist and unconscious-process accounts relevant to modern learning theories (A.1, A.2), and his work on the unconscious and dream interpretation bears on the psychology of higher thought processes (G.1)."
     },
     {
-      "articleTitle": "Artificial intelligence",
-      "rationaleAI": "AI models aspects of human learning and thinking addressed in this section.",
+      "articleTitle": "Adolescence",
       "relevantPathsAI": [
-        "A.1",
-        "B",
-        "C",
+        "A.2",
         "D",
-        "G.2"
-      ]
+        "G.1"
+      ],
+      "rationaleAI": "Covers cognitive gains in abstract and hypothetical reasoning and metacognition during adolescence (G.1), which constitute major developmental issues in learning theory (A.2)."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "A.2",
+        "B",
+        "D"
+      ],
+      "rationaleAI": "Child developmental stages involve progressive cognitive maturation central to major issues in learning theories (A.2), including motor skill acquisition (B) and concept formation across early, middle, and late childhood (D)."
+    },
+    {
+      "articleTitle": "Knowledge",
+      "relevantPathsAI": [
+        "G.1",
+        "G.3",
+        "A.2"
+      ],
+      "rationaleAI": "Knowledge covers propositional and practical knowing, its sources (perception, memory, inference), and its philosophical analysis (G.1, G.3), directly relevant to the psychology of higher thought processes."
+    },
+    {
+      "articleTitle": "Truth",
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Truth theories—correspondence, coherence, pragmatism, semantic—directly concern meaning (G.3) as a component of the higher thought processes."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "A.3",
+        "E"
+      ],
+      "rationaleAI": "Oral tradition addresses the transmission and retention of learned cultural content across generations without writing (E, A.3), relevant to retention and transfer of learning."
+    },
+    {
+      "articleTitle": "Meditation",
+      "relevantPathsAI": [
+        "C",
+        "G.1"
+      ],
+      "rationaleAI": "Meditation trains sustained attention and metacognitive monitoring directly relevant to perceptual learning (C) and the psychology of higher thought processes (G.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

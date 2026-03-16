@@ -1,134 +1,18 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "436",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Personality and the integrated self are central to the human experience described in this article.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Family",
-      "rationaleAI": "Family relationships are central to personality development and the integration of the self from infancy onward.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Psychology",
-      "rationaleAI": "Clinical and personality psychology address the integration and disintegration of the self and psychological well-being.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Emotion",
-      "rationaleAI": "Emotional regulation and expression are central to personality integration and psychological health.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "C.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Mind",
-      "rationaleAI": "The mind's integration or fragmentation is central to personality, selfhood, and mental health.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "B.1",
-        "C.2",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
       "articleTitle": "Sigmund Freud",
-      "rationaleAI": "Freud's psychoanalytic theory of the unconscious fundamentally shaped understanding of personality, the self, and psychological integration.",
       "relevantPathsAI": [
         "A.2",
-        "A.3",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Adolescence",
-      "rationaleAI": "Adolescence involves major personality development and identity formation.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Humour",
-      "rationaleAI": "Humour reflects personality and the integrated self.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Dream",
-      "rationaleAI": "Dreams are studied in relation to personality and the unconscious self.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3"
-      ]
+        "C.3",
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Freud psychoanalytic theory of personality — id, ego, superego — directly constitutes A.2; his clinical accounts of defense mechanisms cover C.3; and his theories of neurosis are foundational to D.1 and D.3."
     },
     {
       "articleTitle": "Personality",
-      "rationaleAI": "Personality is the direct subject of this section on the self.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "B",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Mental disorder",
-      "rationaleAI": "Mental disorders involve disintegration of personality and the self.",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -137,64 +21,205 @@
         "A.4",
         "B",
         "B.1",
-        "B.2",
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers all definitions of personality (A), from physiological to psychoanalytic (A.2) to trait and factor-analytic frameworks including the five-factor model (A.4), and explicitly includes measurement (B, B.1, B.2)."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "A",
+        "B",
         "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Autism",
-      "rationaleAI": "Autism affects personality development and integration of the self.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "C.1",
-        "C.2",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Mental health",
-      "rationaleAI": "Mental health concerns the integration of personality and the self.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "C.1",
-        "C.2",
-        "C.3",
         "D",
         "D.1",
         "D.2",
         "D.3"
-      ]
+      ],
+      "rationaleAI": "As the parent discipline, psychology encompasses all theoretical approaches to personality (A), psychological assessment methods (B), adjustment and functioning (C), and mental disorder classification (D.1-D.3)."
+    },
+    {
+      "articleTitle": "Emotion",
+      "relevantPathsAI": [
+        "C.2",
+        "C.3",
+        "D.1"
+      ],
+      "rationaleAI": "Covers emotion dynamics and regulation as strains on personality functioning (C.2) and responses to stress through emotional processing (C.3); affective disorders listed under D.1 are categorized by emotional dysregulation."
+    },
+    {
+      "articleTitle": "Mind",
+      "relevantPathsAI": [
+        "A",
+        "C.1",
+        "D"
+      ],
+      "rationaleAI": "Covers the mind conscious/unconscious processes foundational to personality definitions (A), the development of self-awareness (C.1), and mental disorder as disturbance of mind (D)."
+    },
+    {
+      "articleTitle": "Meditation",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Meditation as a technique for emotional regulation and stress management constitutes a coping and adjustment dynamism (C.3)."
+    },
+    {
+      "articleTitle": "Human behavior",
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Covers the full range of behavioral, cognitive, and emotional patterns shaping personality (A), and specifically addresses antisocial behavior, conflict, stress as strains on functioning (C.2, C.3)."
+    },
+    {
+      "articleTitle": "Health",
+      "relevantPathsAI": [
+        "C.2",
+        "D.2"
+      ],
+      "rationaleAI": "Mental health dimensions — stress, psychological well-being — connect to strains on personality functioning (C.2); health determinants and disparities relate to epidemiology of mental disorders (D.2)."
+    },
+    {
+      "articleTitle": "Mental health",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Directly covers the distinction between mental health and mental illness, risk factors across biological and socioeconomic dimensions (D.3), treatment approaches, and disparities."
+    },
+    {
+      "articleTitle": "Sexual orientation",
+      "relevantPathsAI": [
+        "A.3",
+        "D.1"
+      ],
+      "rationaleAI": "Sexual orientation connects to social analytic personality theories regarding identity (A.3), and the DSM-era history of classification is relevant to D.1."
+    },
+    {
+      "articleTitle": "Sadness",
+      "relevantPathsAI": [
+        "C.2",
+        "D.1"
+      ],
+      "rationaleAI": "Sadness as a basic emotion functions as a psychological strain (C.2); its severe form maps to affective disorders under D.1."
+    },
+    {
+      "articleTitle": "Consciousness",
+      "relevantPathsAI": [
+        "A",
+        "C.1"
+      ],
+      "rationaleAI": "Covers awareness and self-awareness central to the development of self (C.1), and phenomenological accounts of consciousness underlie personality theories (A)."
+    },
+    {
+      "articleTitle": "Fear",
+      "relevantPathsAI": [
+        "C.2",
+        "C.3",
+        "D.1"
+      ],
+      "rationaleAI": "Fear is a primary psychological strain (C.2); phobias map to anxiety disorders under D.1; and defensive responses exemplify adjustment dynamisms (C.3)."
+    },
+    {
+      "articleTitle": "Happiness",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Happiness and well-being constitute the positive pole of personality functioning and adjustment (C); connects to self-fulfillment (C.1) and strains on functioning (C.2)."
+    },
+    {
+      "articleTitle": "Autism",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Autism spectrum condition falls under neurodevelopmental disorders (D.1); its rising prevalence maps to D.2; and its genetic heritability addresses causation (D.3)."
     },
     {
       "articleTitle": "Addiction",
-      "rationaleAI": "Addiction involves disintegration of personality and self-regulation.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "C.1"
-      ]
+        "D.1",
+        "D.3",
+        "C.2"
+      ],
+      "rationaleAI": "Addiction as a neuropsychological disorder maps to D.1; its multifactorial etiology addresses D.3; and substance misuse constitutes a strain on personality functioning (C.2)."
+    },
+    {
+      "articleTitle": "Mental disorder",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Directly covers all three sub-paths under D: major categories including anxiety, mood, psychotic, and personality disorders (D.1); epidemiology (D.2); and multifactorial causation (D.3)."
     },
     {
       "articleTitle": "Suicide",
-      "rationaleAI": "Suicide relates to personality disintegration and psychological crisis treated here.",
       "relevantPathsAI": [
-        "A.2",
-        "C.3",
-        "D.2",
-        "D.3"
-      ]
+        "D.1",
+        "D.3",
+        "C.2"
+      ],
+      "rationaleAI": "Suicide is linked to mental illness (D.1) with risk factors spanning psychosocial stressors (D.3); represents an extreme response to strains on personality functioning (C.2)."
+    },
+    {
+      "articleTitle": "Humour",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Humour serves stress relief and psychological adjustment functions (C.3); relief theory specifically theorizes it as a mechanism for coping with psychological tension."
+    },
+    {
+      "articleTitle": "Parenting",
+      "relevantPathsAI": [
+        "C.1",
+        "D.3",
+        "A.3"
+      ],
+      "rationaleAI": "Parenting styles are social-environmental factors shaping personality development (A.3) and self-awareness (C.1); parental psychopathology influences causation of mental disorders (D.3)."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "D.1"
+      ],
+      "rationaleAI": "Adolescence is the key period of identity formation (C.1); peer pressure and role confusion constitute psychological strains (C.2); and onset of many mental disorders occurs in this period (D.1)."
+    },
+    {
+      "articleTitle": "Gender",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
+        "C.1"
+      ],
+      "rationaleAI": "Gender identity and roles are core to social analytic personality theories (A.3) and eclectic role theories (A.4); gender identity formation is central to development of self (C.1)."
+    },
+    {
+      "articleTitle": "René Descartes",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Descartes mind-body dualism is foundational to physiological and philosophical theories of personality (A.1)."
+    },
+    {
+      "articleTitle": "Anthropology",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Anthropology cross-cultural study of personality informs social analytic personality theories (A.3) and eclectic role theories (A.4)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

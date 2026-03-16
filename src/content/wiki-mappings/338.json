@@ -1,174 +1,162 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "338",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Growth, differentiation, and morphogenesis are key developmental processes in living organisms.",
+      "articleTitle": "Egg",
       "relevantPathsAI": [
-        "C.1",
-        "C.2.a",
-        "E.3"
-      ]
-    },
-    {
-      "articleTitle": "Reproduction",
-      "rationaleAI": "Embryonic development following reproduction involves the growth, differentiation, and morphogenesis of new organisms.",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2.a",
-        "E",
-        "E.3"
-      ]
-    },
-    {
-      "articleTitle": "Parenting",
-      "rationaleAI": "Parenting directly affects the development, growth, and differentiation of offspring.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C.3.b",
         "D.1",
-        "D.4",
-        "E.3",
-        "F.2",
-        "F.5"
-      ]
+        "D.2.b"
+      ],
+      "rationaleAI": "The egg article directly covers preparatory events in animal development — egg types, yolk volume and developmental strategy, and activation by fertilization or parthenogenesis (D.1) — as well as protective shells and yolk stores as embryonic adaptations (D.2.b)."
     },
     {
-      "articleTitle": "Adult",
-      "rationaleAI": "Adulthood represents a key stage in human developmental growth.",
+      "articleTitle": "Fruit",
       "relevantPathsAI": [
-        "F.1",
-        "F.3"
-      ]
-    },
-    {
-      "articleTitle": "Adolescence",
-      "rationaleAI": "Adolescence is a critical developmental stage of growth and differentiation.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3.b",
-        "C.4",
-        "D",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Child",
-      "rationaleAI": "Childhood is a fundamental stage of human development and growth.",
-      "relevantPathsAI": [
-        "A",
-        "C.3.b",
-        "D.2",
-        "F.1",
-        "F.3",
-        "F.5"
-      ]
-    },
-    {
-      "articleTitle": "Infant",
-      "rationaleAI": "Infancy is the earliest stage of postnatal human development.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.4",
-        "C",
-        "D",
-        "D.2",
-        "F",
-        "F.5"
-      ]
-    },
-    {
-      "articleTitle": "Ageing",
-      "rationaleAI": "Ageing is a developmental process of growth and differentiation.",
-      "relevantPathsAI": [
-        "A",
-        "F.1",
-        "F.3"
-      ]
-    },
-    {
-      "articleTitle": "Mammal",
-      "rationaleAI": "Mammals exhibit complex developmental patterns including placental growth.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C.1",
-        "C.3.b",
-        "D",
-        "D.1",
-        "E",
-        "E.1",
-        "E.3",
-        "F.1"
-      ]
+        "C.3.b"
+      ],
+      "rationaleAI": "Fruits are the seed-bearing structures formed from the ovary post-fertilization in angiosperms, directly covering the independent dormant stages and dispersal mechanisms of seeds in higher plants (C.3.b)."
     },
     {
       "articleTitle": "Flower",
-      "rationaleAI": "Flower development illustrates growth, differentiation, and morphogenesis in plants.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.4",
-        "C",
         "C.2.b",
-        "C.3.b",
-        "C.4",
-        "D",
-        "D.2",
-        "F"
-      ]
+        "C.2.c"
+      ],
+      "rationaleAI": "Flowers enable pollination and fertilization in angiosperms — the preparatory events (pollination C.2.b, fertilization C.2.c) that initiate plant development from zygote onward; the article covers pollen transfer mechanisms and fertilization leading to seed formation."
     },
     {
       "articleTitle": "Seed",
-      "rationaleAI": "Seed germination initiates growth, differentiation, and morphogenesis in plants.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
+        "C.3",
         "C.3.a",
-        "C.3.b",
-        "C.4",
-        "D",
-        "D.1",
-        "D.2.b"
-      ]
+        "C.3.b"
+      ],
+      "rationaleAI": "Seeds are the dormant stage between fertilization and germination in spermatophytes; the article directly covers embryo development within the seed, dormancy, germination, and the transition to seedling (C.3.a-b), core topics in early plant development."
     },
     {
-      "articleTitle": "Egg",
-      "rationaleAI": "Egg development and fertilization initiate growth and morphogenesis.",
+      "articleTitle": "Death",
       "relevantPathsAI": [
-        "C.3.a",
-        "D",
-        "D.1",
-        "D.2.b",
         "E",
-        "F.5"
-      ]
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Death covers the biology of aging including senescence in organisms (E.1), causes of aging such as biogerontological mechanisms and cell death (E.2), and the duration of life and life span (E.3), directly mapping to section 338's treatment of aging and decline."
     },
     {
       "articleTitle": "Pregnancy",
-      "rationaleAI": "Pregnancy encompasses embryonic and fetal development, growth, and morphogenesis.",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "D.2",
+        "D.2.a",
+        "D.2.b"
+      ],
+      "rationaleAI": "Pregnancy is the period spanning fertilization through birth, covering embryonic development through trimester stages (D.2.a — cleavage, gastrulation, embryo formation), and placenta as the embryonic adaptation for maintaining the developing embryo in eutherian mammals (D.2.b)."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "A child represents the postembryonic developmental phase from birth through puberty; the article covers the cognitive, physical, emotional, and social maturation stages that constitute the transformation of the newborn into the adult (D.4)."
+    },
+    {
+      "articleTitle": "Organism",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The concept of an organism as an integrated individual defined by growth, metabolism, and reproduction is foundational to understanding the nature and scope of biological development (A); the article addresses the integration of simpler units through developmental cooperation."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
         "B.4",
         "C",
-        "C.3.a",
-        "C.3.b",
-        "D",
-        "D.2",
-        "E",
-        "F"
-      ]
+        "D"
+      ],
+      "rationaleAI": "Hormones regulate and integrate development across plants and animals — plant hormones (auxin, brassinosteroids) govern morphogenesis and growth (C), while vertebrate hormones (growth hormone, sex steroids) control the integration of animal development (B.4, D)."
+    },
+    {
+      "articleTitle": "Biology",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biology as a discipline encompasses developmental biology as one of its core subdisciplines; the article addresses cell theory, heredity, growth, and differentiation as unifying themes that frame the nature and scope of biological development (A)."
+    },
+    {
+      "articleTitle": "Reproduction",
+      "relevantPathsAI": [
+        "A",
+        "D.1"
+      ],
+      "rationaleAI": "Reproduction is the process preparatory to development; the article covers fertilization and zygote formation (D.1 preparatory events) and distinguishes reproduction from development, contextualizing Section 338's subject matter within the broader biology of organisms."
+    },
+    {
+      "articleTitle": "Tree",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Trees are the dominant form of the sporophyte plant body in gymnosperms and many angiosperms; the article covers the later developmental trajectory of the sporophyte including woody tissue formation, branching architecture, and the ecological role of mature tree development (C.4)."
+    },
+    {
+      "articleTitle": "Lung",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "The lung article explicitly notes embryological derivation from a foregut outpouching, making it directly relevant to organ formation during animal development (D.3); it illustrates the organogenesis process as a key stage of development."
+    },
+    {
+      "articleTitle": "Brain",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "The brain develops embryonically through sequential regional specification (forebrain, midbrain, hindbrain divisions), making it a primary example of organ formation in animal development (D.3); its embryological division describes the morphogenetic process directly."
+    },
+    {
+      "articleTitle": "Bone",
+      "relevantPathsAI": [
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Bone development through ossification is a central process in vertebrate organ formation (D.3); the article covers osteoblast-mediated bone formation, the reduction from ~300 neonatal bones to 206 adult bones illustrating postembryonic developmental remodeling (D.4)."
+    },
+    {
+      "articleTitle": "Evolution",
+      "relevantPathsAI": [
+        "A",
+        "E.2"
+      ],
+      "rationaleAI": "Evolution provides the framework for understanding why development takes the forms it does; the article addresses the evolution of aging and mortality (E.2) and the evolutionary context of developmental patterns (A) through natural selection acting on developmental trajectories."
+    },
+    {
+      "articleTitle": "Human",
+      "relevantPathsAI": [
+        "D.4",
+        "E"
+      ],
+      "rationaleAI": "Human development from birth through adulthood (D.4) and human aging and life span (E) are directly covered; the article addresses the full human life cycle including maturation, cognitive development, and aging as postembryonic and senescent processes."
+    },
+    {
+      "articleTitle": "Adult",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Adulthood is the end-state of the postembryonic developmental trajectory; the article addresses biological maturation including sexual maturity and the completion of physical development that constitutes the transformation of the newborn into the adult (D.4)."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Adolescence is the transitional postembryonic developmental stage encompassing puberty, growth spurt, reproductive maturation, and brain development, directly corresponding to the transformation from newborn to adult described in D.4."
+    },
+    {
+      "articleTitle": "Abiogenesis",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Abiogenesis addresses the origin of the first self-replicating and cell-forming systems, which constitutes the earliest form of biological development from non-living chemistry; it provides context for the nature and scope of development at the most fundamental level (A)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

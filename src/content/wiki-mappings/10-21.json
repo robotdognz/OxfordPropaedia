@@ -1,408 +1,268 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/21",
   "mappings": [
     {
-      "articleTitle": "0",
-      "rationaleAI": "Zero was a revolutionary concept in the history and foundations of mathematics.",
+      "articleTitle": "History of mathematics",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
+        "A.1.b",
         "A.2.a",
-        "A.2.i"
-      ]
+        "A.2.b",
+        "A.2.d",
+        "A.2.e"
+      ],
+      "rationaleAI": "This article is the direct match for the entire A (History of mathematics) division, covering Babylonian and Egyptian mathematics (A.1.a.i), Greek axiomatic proof (A.1.a.ii), Islamic transmission (A.1.a.iii), calculus and analytic geometry (A.1.b.i), 18th-century advances (A.1.b.ii), non-Euclidean geometry, set theory, and foundations (A.1.b.iii), and numeral systems (A.2.a). The most important single article for this section."
     },
     {
       "articleTitle": "Mathematics",
-      "rationaleAI": "The history and foundations of mathematics are the core subject of this article.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Logic",
-      "rationaleAI": "Logic provides the foundational reasoning framework upon which mathematics is built, from axioms to proofs.",
-      "relevantPathsAI": [
-        "A.1.i.iii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.v",
-        "A.2.v.vi",
-        "B.2.b"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers all major branches of mathematics including number theory, algebra, geometry, analysis, and mathematical logic, and addresses the historical development from ancient geometry through the 19th-century foundational crisis and axiomatic method \u2014 spanning both the historical survey (A) and foundational questions (B)."
     },
     {
       "articleTitle": "Algebra",
-      "rationaleAI": "Algebra has a rich history from Babylonian equation-solving to modern abstract algebra, central to the foundations of mathematics.",
       "relevantPathsAI": [
-        "A.1.i.ii",
-        "A.1.i.iii",
         "A.2.e",
-        "A.2.i.iv",
-        "A.3.i",
-        "A.3.i.ii",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Arithmetic",
-      "rationaleAI": "Arithmetic is the oldest branch of mathematics, with its foundations in counting and number systems tracing back to the earliest civilizations.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.iii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.v.vi",
-        "A.2.i.iv",
-        "A.3.i.ii",
-        "B"
-      ]
+        "A.1.a",
+        "A.1.b"
+      ],
+      "rationaleAI": "Traces algebra from Babylonian and Egyptian contributions (A.2.e.i) through Islamic world (A.2.e.ii, via Al-Khwarizmi) to 19th-century structural generalization including group theory (A.2.e.iii\u2013iv) and the theory of algebraic equations. Directly covers the major sub-paths of A.2.e."
     },
     {
       "articleTitle": "Geometry",
-      "rationaleAI": "Geometry has a foundational history from Euclid's axioms to non-Euclidean geometries that shaped the philosophy of mathematics.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.i.ii",
-        "A.2.d"
-      ]
+        "A.2.d",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Covers Egyptian/Babylonian/Greek geometry (A.2.d.i), analytic geometry (A.2.d.ii), projective geometry (A.2.d.iii), non-Euclidean geometries (A.2.d.iv \u2014 Gauss, Riemann), philosophical aspects (A.2.d.v), and modern axiomatic and differential geometry (A.2.d.vi), and directly corresponds to the axiomatic treatment at B.1.a (Euclidean) and B.1.b (non-Euclidean)."
     },
     {
-      "articleTitle": "Number",
-      "rationaleAI": "The concept of number and its historical evolution from natural numbers to complex numbers is foundational to mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "René Descartes",
-      "rationaleAI": "Descartes co-invented analytic geometry, bridging algebra and geometry and transforming the foundations of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Isaac Newton",
-      "rationaleAI": "Newton co-invented calculus, one of the most important developments in the history and foundations of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i.iii",
-        "A.3.i.ii",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Archimedes",
-      "rationaleAI": "Archimedes made foundational contributions to mathematics including infinitesimal calculus and the computation of areas and volumes.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Al-Khwarizmi",
-      "rationaleAI": "Al-Khwarizmi's works on algebra and Hindu-Arabic numerals are landmarks in the history and foundations of mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.v.vi"
-      ]
-    },
-    {
-      "articleTitle": "Leonhard Euler",
-      "rationaleAI": "Euler was the most prolific mathematician in history, making foundational contributions across virtually every branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Carl Friedrich Gauss",
-      "rationaleAI": "Gauss, the 'Prince of Mathematicians,' made foundational contributions to number theory, statistics, and analysis.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Kurt Gödel",
-      "rationaleAI": "Gödel's work on the limits of formal systems transformed the foundations of mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.i.ii",
-        "A.2.v"
-      ]
-    },
-    {
-      "articleTitle": "History of mathematics",
-      "rationaleAI": "The history of mathematics is the direct subject of this section on the history and foundations of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Gupta Empire",
-      "rationaleAI": "Gupta-era mathematicians developed the decimal system and concept of zero, landmark contributions to mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Maya civilization",
-      "rationaleAI": "The Maya independently invented a positional numeral system with zero, a notable achievement in the history of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Arabic numerals",
-      "rationaleAI": "Arabic numerals are foundational to the history of mathematics.",
+      "articleTitle": "Arithmetic",
       "relevantPathsAI": [
         "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Mathematical proof",
-      "rationaleAI": "Mathematical proof is foundational to the history and epistemology of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i",
-        "A.2.v.vi"
-      ]
+        "A.1.a",
+        "B.2.a"
+      ],
+      "rationaleAI": "Arithmetic's history from ancient Egyptian/Sumerian calculation (A.1.a.i, A.2.a) through Indian development of zero and decimal notation to axiomatic foundations connects to A.2.a (numeral systems) and B.2.a (arithmetic and analysis as the genetic method's foundation). Also addresses the Peano axioms foundational treatment."
     },
     {
       "articleTitle": "Set (mathematics)",
-      "rationaleAI": "Set theory provides the foundational framework for modern mathematics.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i",
-        "A.2.v.vi",
-        "A.2.e"
-      ]
+        "B.2.b",
+        "B.3.a",
+        "B.3.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "Set theory is explicitly named in B.2.b (cardinal number and the theory of sets); ZFC's development in response to the paradoxes is central to B.3.a (the paradoxes) and B.3.c (Logicism and Formalism); Cantor's foundational results shaped the entire foundational crisis in B.3."
     },
     {
-      "articleTitle": "Pi",
-      "rationaleAI": "Pi has been central to the history of mathematics from antiquity through modern computation.",
+      "articleTitle": "Leonhard Euler",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Natural number",
-      "rationaleAI": "Natural numbers have been foundational to mathematics since its earliest history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Number theory",
-      "rationaleAI": "Number theory has deep roots in the history and foundations of mathematics.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
         "A.2.d",
-        "A.2.i.ii",
-        "A.2.v",
-        "A.2.i.iv",
-        "B.2.b"
-      ]
+        "A.2.b"
+      ],
+      "rationaleAI": "Euler is explicitly cited in A.1.b.ii (18th-century advances in geometry, algebra, and analysis); he standardized mathematical notation (A.2.b) and founded graph theory/topology (A.2.d.vi \u2014 modern ideas in geometry). His contributions to analysis and number theory span the 18th-century developments this outline path traces."
     },
     {
-      "articleTitle": "Mathematical analysis",
-      "rationaleAI": "Analysis developed from the foundational work on calculus in mathematical history.",
+      "articleTitle": "Al-Khwarizmi",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2",
-        "A.2.b"
-      ]
+        "A.2.a",
+        "A.2.e"
+      ],
+      "rationaleAI": "Al-Khwarizmi authored the first systematic algebra text (A.2.e.ii \u2014 Islamic contributions to algebra) and introduced the decimal positional number system to the West (A.2.a.ii \u2014 positional numeral systems), and is the defining figure of Islamic mathematical transmission (A.1.a.iii)."
     },
     {
-      "articleTitle": "Infinity",
-      "rationaleAI": "Infinity has been a foundational concept in the history and philosophy of mathematics.",
+      "articleTitle": "Euclid",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.2.i",
-        "A.2.b"
-      ]
+        "A.1.a",
+        "A.2.d",
+        "B.1.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "Euclid's Elements is the foundational text of Greek mathematics (A.1.a.ii) and specifically of Euclidean geometry (A.2.d.i); the axiomatic method it established is the subject of B.1.a (Euclidean geometry as the model for the formal axiomatic method B.1.c). Regarded as the father of geometry and axiomatic proof."
     },
     {
       "articleTitle": "Topology",
-      "rationaleAI": "Topology emerged from geometry and analysis to become a foundational mathematical field.",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.i.iii",
-        "A.2.b",
-        "A.2.i.ii",
-        "A.2.v.vi",
-        "A.2.i.iv",
+        "A.1.b",
+        "A.2.d"
+      ],
+      "rationaleAI": "Topology is mentioned in A.2.d.vi (modern topics in geometry including topology) and its development in the early 20th century connects to A.1.b.iii (19th\u201320th century developments). Euler's polyhedron formula is its origin point and Leonhard Euler (already listed) is directly connected."
+    },
+    {
+      "articleTitle": "Number",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the full spectrum of number types and numeral systems (A.2.a \u2014 numerals and numeral systems), the historical development of zero and negative numbers (A.2.a.ii \u2014 positional systems), and the philosophical/foundational significance of numbers (B.2 \u2014 the genetic method of constructing mathematical objects)."
+    },
+    {
+      "articleTitle": "Kurt G\u00f6del",
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.3.c",
+        "B.4"
+      ],
+      "rationaleAI": "G\u00f6del's incompleteness theorems proved that the Hilbert Formalism program was unrealizable (B.3.c \u2014 Logicism, Formalism, metamathematical method) and exposed fundamental limits (B.3.a \u2014 the paradoxes and their aftermath); his results define the current directions of foundational mathematics research (B.4)."
+    },
+    {
+      "articleTitle": "Number theory",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b"
+      ],
+      "rationaleAI": "Number theory as developed by the Greeks (A.1.a.ii \u2014 Euclid's treatment of primes), refined by Gauss (Disquisitiones Arithmeticae) and others in the 19th\u201320th centuries (A.1.b.iii), and its connection to the foundations of mathematics via the Riemann hypothesis and algebraic number theory."
+    },
+    {
+      "articleTitle": "Calculus",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Calculus is the central content of A.1.b.i (discovery and development by Newton and Leibniz in the 17th century) and connects to A.1.b.ii (18th-century advances in analysis, including contributions of Euler, Lagrange, and Laplace). Directly matches the named content of these outline paths."
+    },
+    {
+      "articleTitle": "Archimedes",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.d"
+      ],
+      "rationaleAI": "Archimedes anticipated integral calculus via the method of exhaustion and derived key results in Greek geometry (A.1.a.ii \u2014 Greek and Hellenistic mathematics; A.2.d.i \u2014 Egyptian, Babylonian, and Greek geometry). His work on areas and volumes is foundational to the pre-calculus period of mathematical development."
+    },
+    {
+      "articleTitle": "Carl Friedrich Gauss",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.d",
+        "B.1.b"
+      ],
+      "rationaleAI": "Gauss is a primary figure in A.1.b.ii\u2013iii: his Disquisitiones Arithmeticae (number theory), fundamental theorem of algebra, and work on non-Euclidean geometry (A.2.d.iv \u2014 B.1.b) are major developments of the 18th\u201319th centuries. His differential geometry (Theorema Egregium) also connects to A.2.d.vi."
+    },
+    {
+      "articleTitle": "Abstract algebra",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.e"
+      ],
+      "rationaleAI": "Abstract algebra's origins in 19th-century group, ring, and field theory (A.1.b.iii \u2014 development of algebraic geometry and structural algebra) and the theory of algebraic equations (A.2.e.iv \u2014 solutions after Galois) make it a direct match for these sub-paths of the modern algebra history."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Newton is explicitly named in A.1.b.i as the co-developer of calculus and analytic geometry; his Principia Mathematica also brought mathematical analysis to bear on physical problems. He is one of the two figures (with Leibniz) specifically cited for the 17th-century content of this outline path."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.e"
+      ],
+      "rationaleAI": "The Islamic Golden Age covers the mathematical contributions (algebra, geometry, trigonometry) and their transmission to medieval Europe \u2014 directly corresponding to A.1.a.iii (the Middle Ages: Islamic mathematics and its transmission to the West) and A.2.e.ii (contributions from the Islamic world to algebra)."
+    },
+    {
+      "articleTitle": "Ancient Egypt",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.a",
+        "A.2.d"
+      ],
+      "rationaleAI": "Ancient Egypt is one of the two civilizations explicitly named in A.1.a.i (ideas originating in Mesopotamia and Egypt) and A.2.a.i (ancient Egyptian numerals) and A.2.d.i (Egyptian geometry). Egyptian practical mathematics \u2014 land measurement, arithmetic tables \u2014 is foundational content for the history of mathematics."
+    },
+    {
+      "articleTitle": "Mesopotamia",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.a",
+        "A.2.d",
+        "A.2.e"
+      ],
+      "rationaleAI": "Mesopotamia is the other explicitly named civilization in A.1.a.i; Babylonian algebra (A.2.e.i \u2014 Babylonian contributions), cuneiform numerical notation (A.2.a.i \u2014 Babylonian numerals), and geometry (A.2.d.i) are all foundational content for the earliest period of mathematical history."
+    },
+    {
+      "articleTitle": "Natural number",
+      "relevantPathsAI": [
+        "B.2.a",
         "B.2.b"
-      ]
+      ],
+      "rationaleAI": "Natural numbers defined via Peano axioms is directly relevant to B.2.a (arithmetic and analysis as the genetic method's domain) and B.2.b (cardinal number \u2014 the foundations of arithmetic through set-theoretic construction). Central to the foundational debate over how numbers are constructed from simpler mathematical objects."
+    },
+    {
+      "articleTitle": "Mathematical analysis",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Mathematical analysis \u2014 limits, continuity, differentiation, integration, and measure theory \u2014 developed in the 18th century (A.1.b.ii \u2014 advances in analysis by Euler, Lagrange, Laplace) and was rigorized in the 19th century (A.1.b.iii \u2014 Cauchy, Weierstrass; influence of physical science on analysis)."
+    },
+    {
+      "articleTitle": "Trigonometry",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Trigonometry originated in Hellenistic astronomy (A.1.a.ii \u2014 Greek and Hellenistic mathematics) and was significantly developed in the Islamic world (A.1.a.iii \u2014 Islamic mathematics), with Al-Khwarizmi and other Islamic mathematicians producing key trigonometric tables and identities."
+    },
+    {
+      "articleTitle": "Function (mathematics)",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.e"
+      ],
+      "rationaleAI": "The modern function concept was formalized in the 19th century as part of the rigorization of analysis (A.1.b.iii \u2014 contributions to the theories of functions and complex variables), making it a key development in the modern period of mathematical history and in the structural generalization of algebra (A.2.e.iii)."
+    },
+    {
+      "articleTitle": "Mathematical proof",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.3.c",
+        "A.1.a"
+      ],
+      "rationaleAI": "Mathematical proof's treatment of the axiomatic method and formal proof connects to B.1.c (the formal axiomatic method) and B.3.c (the metamathematical method of Hilbert's Formalism); Greek axiomatic proof (Euclid) is also foundational content of A.1.a.ii."
+    },
+    {
+      "articleTitle": "Space",
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.1.b"
+      ],
+      "rationaleAI": "Addresses non-Euclidean geometry's development by Gauss and Riemann (A.2.d.iv), philosophical aspects of geometry (A.2.d.v \u2014 Leibniz, Kant, and whether space is substance or relation), and the modern concept of abstract space (A.2.d.vi); also relevant to non-Euclidean geometry as a foundation (B.1.b)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Ancient Greece is the civilization responsible for the content of A.1.a.ii (Greek and Hellenistic mathematics \u2014 Euclid, Archimedes, Pythagoras); the article's treatment of Greek philosophy, mathematics, and natural science provides essential historical context for the Hellenic mathematical tradition."
+    },
+    {
+      "articleTitle": "Renaissance",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "The Renaissance is the immediately preceding period to the 17th century developments in A.1.b.i; it covers the recovery of Greek texts, early symbolic algebra, and the intellectual conditions enabling the development of analytic geometry and calculus. It provides the transitional context from A.1.a.iii to A.1.b.i."
+    },
+    {
+      "articleTitle": "Computer",
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "The history of computing from the abacus through mechanical calculators to modern electronic digital computers is the explicit content of A.2.c.iii (evolution of digital devices: development of computational aids from the abacus to the modern electronic digital computer)."
+    },
+    {
+      "articleTitle": "Scientific Revolution",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "The Scientific Revolution (16th\u201317th centuries) encompasses the mathematical developments of A.1.b.i \u2014 including analytic geometry (Descartes), calculus (Newton, Leibniz), and the mathematization of nature \u2014 providing the intellectual-historical context for this key period in the history of mathematics."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

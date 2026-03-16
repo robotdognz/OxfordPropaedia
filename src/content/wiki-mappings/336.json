@@ -1,162 +1,85 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "336",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Gas exchange, transport, and elimination are vital processes essential to life.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.6",
-        "A.7",
-        "B.1.a",
-        "B.1.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Animal",
-      "rationaleAI": "Animals possess specialized organ systems for gas exchange (lungs, gills), internal transport (circulatory systems), and excretion.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.1.b",
-        "B.2.a",
-        "B.3",
-        "B.4",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Cardiovascular disease",
-      "rationaleAI": "Cardiovascular disease affects the internal transport systems of the body.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Myocardial infarction",
-      "rationaleAI": "Myocardial infarction involves failure of the heart's transport function.",
-      "relevantPathsAI": [
-        "A.4",
-        "C.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Stroke",
-      "rationaleAI": "Stroke involves disruption of blood supply in the internal transport system.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Fish",
-      "rationaleAI": "Fish gills exemplify gas exchange mechanisms in aquatic organisms.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.7",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.2.d"
-      ]
-    },
-    {
       "articleTitle": "Circulatory system",
-      "rationaleAI": "The circulatory system performs internal transport and gas exchange treated in this section.",
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.1.b",
         "B.2",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.3.c",
-        "B.3.d",
-        "B.3.e"
-      ]
-    },
-    {
-      "articleTitle": "Blood",
-      "rationaleAI": "Blood is the internal transport medium for gas exchange and nutrient delivery.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3.a",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.b",
-        "B.3",
-        "B.3.a",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Heart",
-      "rationaleAI": "The heart drives internal transport by pumping blood through the circulatory system.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.2.d",
         "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Lung",
-      "rationaleAI": "The lungs perform gas exchange between the organism and its environment.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.4",
-        "A.7",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2"
-      ]
+      ],
+      "rationaleAI": "Directly covers the organ system comprising heart, blood vessels, and blood that transports substances; addresses both invertebrate open systems and vertebrate closed systems (B.1, B.3), blood and lymph as circulating fluids (B.2), and dual pulmonary/systemic circuits."
     },
     {
       "articleTitle": "Breathing",
-      "rationaleAI": "Breathing is the mechanical process of gas exchange treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.4",
-        "A.5",
-        "A.7"
-      ]
-    },
-    {
-      "articleTitle": "Oxygen",
-      "rationaleAI": "Oxygen is central to gas exchange and respiration in organisms as treated in this section.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "A.5",
-        "B.1",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Covers the mechanics of pulmonary ventilation as the core process of extracting oxygen and releasing CO2 (A.1), the dynamics of respiratory mechanisms (A.4), and chemoreceptor-mediated homeostatic control of breathing rate and depth (A.5)."
+    },
+    {
+      "articleTitle": "Blood",
+      "relevantPathsAI": [
         "B.2",
+        "B.2.b",
         "B.2.c",
-        "C.1"
-      ]
+        "B.2.d"
+      ],
+      "rationaleAI": "Blood is the primary circulating fluid in vertebrates; directly covers plasma composition (B.2.b), formed elements including erythrocytes, leukocytes, and platelets (B.2.c), and lymphocytes in vertebrates (B.2.d)."
+    },
+    {
+      "articleTitle": "Lung",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.7"
+      ],
+      "rationaleAI": "Lungs are the primary vertebrate respiratory organs, covering gills-to-lungs in tetrapods (A.3.b) and the human respiratory system including alveolar gas exchange mechanics, airway structure, and dual blood supply (A.7)."
+    },
+    {
+      "articleTitle": "Heart",
+      "relevantPathsAI": [
+        "B.3.b",
+        "B.3.c",
+        "B.3.e"
+      ],
+      "rationaleAI": "The heart is the pump driving vertebrate circulatory systems; covers four-chambered vertebrate cardiac anatomy and function (B.3.b), coronary circulation (B.3.c), and biodynamics including cardiac output, heart rate, and stroke volume (B.3.e)."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "CO2 is the primary metabolic waste product exchanged during respiration; the article directly covers gas exchange chemistry and the challenges CO2 dissolution poses in aquatic versus terrestrial environments (A.1, A.2), as well as its role in the broader carbon cycle."
+    },
+    {
+      "articleTitle": "Immune system",
+      "relevantPathsAI": [
+        "B.2.c",
+        "B.2.d"
+      ],
+      "rationaleAI": "The immune system involves leukocytes and lymphocytes transported via the blood and lymph; the article covers white cell functions (B.2.c) and lymphatic system components including lymphocytes (B.2.d) in their circulatory context."
+    },
+    {
+      "articleTitle": "Mollusca",
+      "relevantPathsAI": [
+        "A.3.a",
+        "B.3.a"
+      ],
+      "rationaleAI": "Molluscs exemplify invertebrate respiratory and circulatory diversity; the article covers gill-based respiration in aquatic molluscs (A.3.a) and open circulatory systems using haemocoel, contrasting with cephalopod closed systems (B.3.a)."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Hormones are transported via the bloodstream from endocrine glands to target tissues, making them a key component of the circulating fluid medium described in B.2; the article covers plasma-borne signaling molecules and their systemic distribution."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

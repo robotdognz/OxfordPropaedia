@@ -1,195 +1,332 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/42",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "The humanities and humanistic scholarship encompass the study and interpretation of the arts.",
+      "articleTitle": "History of philosophy",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.b",
-        "A.2.c"
-      ]
-    },
-    {
-      "articleTitle": "History",
-      "rationaleAI": "History is a central humanistic discipline whose methods and perspectives shape the broader humanities and humanistic scholarship.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.b",
-        "A.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Architecture",
-      "rationaleAI": "Architectural history and theory are studied as part of the humanities and humanistic scholarship.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Literature",
-      "rationaleAI": "Literary criticism and interpretation are central disciplines within the humanities and humanistic scholarship.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.2.e"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Religious studies is a major field within the humanities examining texts, traditions, and theological thought.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Language",
-      "rationaleAI": "Philology and literary interpretation of languages are central pursuits within the humanities and humanistic scholarship.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.1.g",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Culture",
-      "rationaleAI": "Cultural studies and interpretation are central pursuits within the humanities and humanistic scholarship.",
-      "relevantPathsAI": [
-        "A.1.e",
-        "A.1.g",
-        "A.3.d",
-        "A.3.e",
-        "A.3.f",
-        "A.3.g",
-        "A.4",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Education",
-      "rationaleAI": "Education in the humanities and liberal arts is a central concern of humanistic scholarship and its institutional transmission.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.d",
-        "A.3.b",
-        "A.3.e",
-        "A.3.i",
-        "A.4",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Archaeology",
-      "rationaleAI": "Archaeology is a humanistic discipline that interprets past cultures through their material remains.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.e",
-        "A.1.g",
-        "A.2.d",
-        "A.3.d",
-        "A.3.f",
-        "A.3.g",
-        "A.4",
+        "A.1",
+        "A.3",
         "A.5",
-        "B.1"
-      ]
+        "A.6",
+        "B.3"
+      ],
+      "rationaleAI": "Traces the full development of humanistic scholarship from ancient Greek paideia through Scholasticism, Renaissance, Enlightenment, and non-Western traditions (A.1, A.3, A.5, A.6), and as a meta-discipline also addresses the distinction of the humanities from the sciences (B.3)."
     },
     {
-      "articleTitle": "History of literature",
-      "rationaleAI": "Literary history is a core discipline within the humanities and humanistic scholarship.",
+      "articleTitle": "Art",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.e",
-        "A.3.f",
-        "A.4",
-        "A.5",
-        "A.6"
-      ]
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Art's contested definition\u2014spanning fine arts, craft, and applied forms\u2014illustrates debates over the scope of the humanities (B.1) and the distinction between humanistic and scientific disciplines (B.3)."
+    },
+    {
+      "articleTitle": "Socrates",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Socrates exemplifies A.1.b precisely: his turn from cosmology to ethics and his dialectical method represent the historical shift from pre-philosophic education to logos and the beginnings of rhetoric described in the Propaedia outline."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "The Islamic Golden Age is the defining context for A.5\u2014the Islamic tradition of humanistic scholarship\u2014encompassing translation movements, philosophical synthesis, and the transmission of classical learning that shaped both Islamic and European scholarship."
     },
     {
       "articleTitle": "Renaissance",
-      "rationaleAI": "The Renaissance revived humanistic scholarship and the study of classical texts as core disciplines.",
       "relevantPathsAI": [
-        "A",
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "The Renaissance is the primary referent for A.3.a (the ideal of the classical, rise of the vernacular, dignity of the free individual) and A.3.b (humanism and the new learning), representing the pivotal moment in the development of modern humanistic scholarship."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.3.d",
+        "A.3.e"
+      ],
+      "rationaleAI": "The Enlightenment corresponds to A.3.c (search for a universal method), A.3.d (separation of science from philosophy and rise of empirical science), and A.3.e (the quarrel between ancients and moderns as an Enlightenment debate)."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.1.d",
+        "A.1.g"
+      ],
+      "rationaleAI": "Aristotle and the Lyceum are explicitly named in A.1.d for the invention of logic and the division and organization of the sciences; his conflict with Platonic philosophy also frames A.1.g (the battle among rhetoric, philosophy, and science)."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Philosophy's own account of its branches and their relation to other disciplines directly informs B.3\u2014theories of the humanities as a fundamental division of knowledge and the question of their distinction from the sciences."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b",
         "A.1.c",
         "A.1.d",
         "A.1.e",
-        "A.1.g",
-        "A.2.a",
-        "A.2.e",
-        "A.3.b",
-        "A.3.d",
-        "A.3.e"
-      ]
+        "A.1.f",
+        "A.1.g"
+      ],
+      "rationaleAI": "Ancient Greece is the foundational context for A.1 as a whole, encompassing Homeric education (A.1.a), the Sophists and Socrates (A.1.b), Plato's Academy (A.1.c), Aristotle's Lyceum (A.1.d), Hellenistic scholarship and Alexandria (A.1.e), and the Roman ideal of humanitas (A.1.f)."
     },
     {
-      "articleTitle": "Musicology",
-      "rationaleAI": "Musicology is a humanistic scholarly discipline.",
+      "articleTitle": "Education",
       "relevantPathsAI": [
-        "A",
-        "A.1.c",
-        "A.1.g",
-        "A.2.e",
-        "A.3.b",
-        "A.3.d",
-        "A.3.h",
-        "A.6",
-        "B",
-        "B.1"
-      ]
+        "A.3.g",
+        "B.2"
+      ],
+      "rationaleAI": "Education's coverage of liberal arts colleges, graduate schools, and the history of educational institutions maps to A.3.g, while the question of the humanities as a unified educational program is central to B.2."
     },
     {
-      "articleTitle": "Non-fiction",
-      "rationaleAI": "Non-fiction includes humanistic scholarship and historical writing.",
-      "relevantPathsAI": []
+      "articleTitle": "Plato",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Plato and the Academy are explicitly cited in A.1.c for their role in relating theology to mythology and positioning mathematics in the service of philosophy\u2014foundational acts in the history of humanistic scholarship."
+    },
+    {
+      "articleTitle": "Homer",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Homer is the direct referent for A.1.a (Homeric education: the ideal of the hero), which the outline identifies as the beginning of the humanistic educational tradition in the ancient world."
+    },
+    {
+      "articleTitle": "Dante Alighieri",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Dante's championing of the vernacular Italian and his synthesis of classical mythology with Christian theology make him a key figure for A.3.a (ideal of the classical, rise of the vernacular) and A.3.b (humanism and the new learning)."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.3"
+      ],
+      "rationaleAI": "Reason's treatment of the distinction between formal and substantive reason, and debates between reason and tradition, directly supports A.3.c (search for a universal method) and B.3 (the question of distinguishing humanities from sciences)."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Visual arts as a category within the broader humanities illustrates the scope and definition debates addressed in B.1, particularly the contested boundary between fine arts and applied/decorative arts."
+    },
+    {
+      "articleTitle": "Thomas Aquinas",
+      "relevantPathsAI": [
+        "A.2.d",
+        "A.2.e"
+      ],
+      "rationaleAI": "Aquinas's synthesis of Aristotelian philosophy with Catholic doctrine is the paradigmatic example of the Scholastic method (A.2.d) and the reconciliation of faith and reason (A.2.e) that defined Christian medieval humanistic scholarship."
+    },
+    {
+      "articleTitle": "Ren\u00e9 Descartes",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.3.d"
+      ],
+      "rationaleAI": "Descartes's method of radical doubt exemplifies A.3.c (search for a universal method) and his role in separating philosophy from natural science situates him directly in A.3.d (the rise and development of empirical science distinct from philosophy)."
+    },
+    {
+      "articleTitle": "University",
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3.g",
+        "A.3"
+      ],
+      "rationaleAI": "The University article covers the founding of universities (A.2.c), the development of the liberal arts college and graduate school (A.3.g), and ongoing questions about the social responsibility and organization of the contemporary university (A.3.i)."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A.3.d",
+        "B.3"
+      ],
+      "rationaleAI": "Science's framing of the distinction between natural, social, formal, and applied sciences is essential context for A.3.d (rise of empirical science separating from philosophy) and B.3 (distinguishing the humanities from the sciences)."
+    },
+    {
+      "articleTitle": "Avicenna",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Avicenna's encyclopedic philosophical and medical scholarship\u2014produced within the Islamic Golden Age\u2014exemplifies the Islamic tradition of humanistic scholarship (A.5) and its synthesis with and transformation of classical Greek learning."
+    },
+    {
+      "articleTitle": "Galileo Galilei",
+      "relevantPathsAI": [
+        "A.3.d"
+      ],
+      "rationaleAI": "Galileo's empirical investigation of nature and conflict with scholastic authority is a defining episode in A.3.d (the separation of science from philosophy and the rise and development of empirical science)."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.3.d"
+      ],
+      "rationaleAI": "Newton's Principia represents the culmination of A.3.d\u2014the definitive establishment of empirical-mathematical science as a discipline separate from philosophy\u2014reshaping the self-understanding of all humanistic scholarship thereafter."
+    },
+    {
+      "articleTitle": "History of science",
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.e",
+        "A.3.h"
+      ],
+      "rationaleAI": "The history of science traces the development of empirical inquiry distinct from philosophy (A.3.d), illuminates the quarrel between ancients and moderns about progress in learning (A.3.e), and illustrates the proliferation of special disciplines (A.3.h)."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Middle Ages is the historical context for A.2 as a whole\u2014Christian learning in antiquity and the Middle Ages, including the codification of the liberal arts, the founding of universities, and the Scholastic method."
+    },
+    {
+      "articleTitle": "Novel",
+      "relevantPathsAI": [
+        "A.3.e",
+        "A.3.f"
+      ],
+      "rationaleAI": "The novel's emergence from classical and Renaissance antecedents illustrates the quarrel between ancients and moderns (A.3.e) and its development as a distinct literary form tracks the growth of modern humanistic scholarship in vernacular traditions (A.3.f)."
+    },
+    {
+      "articleTitle": "Literature",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Literature as a discipline is central to defining the scope of the humanities (B.1) and is the paradigmatic humanistic field of study, directly relevant to B.2 (the humanities as an educational program)."
+    },
+    {
+      "articleTitle": "Alexander the Great",
+      "relevantPathsAI": [
+        "A.1.e"
+      ],
+      "rationaleAI": "Alexander's conquests triggered the Hellenistic period, establishing Alexandria and Pergamum as the great centers of ancient scholarly culture explicitly referenced in A.1.e (Hellenistic scholarship and its library-based textual criticism)."
+    },
+    {
+      "articleTitle": "Leonardo da Vinci",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Leonardo exemplifies Renaissance humanism (A.3.b) and the ideal of the universal individual (A.3.a) who synthesized artistic and empirical inquiry, embodying the humanist vision of the period."
+    },
+    {
+      "articleTitle": "Cicero",
+      "relevantPathsAI": [
+        "A.1.f",
+        "A.1.g"
+      ],
+      "rationaleAI": "Cicero is the defining figure of A.1.f (the Roman ideal of humanitas and the training of the orator) and his career exemplifies A.1.g (the conflict among rhetoric, philosophy, and science as competing cultural ideals)."
+    },
+    {
+      "articleTitle": "Archaeology",
+      "relevantPathsAI": [
+        "A.3.f"
+      ],
+      "rationaleAI": "Archaeology is explicitly identified in A.3.f as one of the two disciplines (alongside philology) through which the growth of modern humanistic scholarship transformed from belles lettres to the scientific investigation of antiquity."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "A.3.f",
+        "A.3.h",
+        "B.1"
+      ],
+      "rationaleAI": "Art history exemplifies the growth of modern humanistic scholarship as a special discipline (A.3.f, A.3.h) and is central to debates about the scope of the humanities (B.1)."
+    },
+    {
+      "articleTitle": "History of literature",
+      "relevantPathsAI": [
+        "A.3.f",
+        "A.3.h",
+        "B.1"
+      ],
+      "rationaleAI": "Literary history is a paradigmatic humanistic discipline, illustrating A.3.f (the scientific investigation of literary antiquity through philology) and A.3.h (the proliferation of special disciplines), and it defines the scope of humanities in B.1."
+    },
+    {
+      "articleTitle": "Scientific Revolution",
+      "relevantPathsAI": [
+        "A.3.d"
+      ],
+      "rationaleAI": "The Scientific Revolution is the historical event directly referenced in A.3.d\u2014the separation of empirical natural science from philosophy\u2014which permanently reshaped what counted as humanistic versus scientific knowledge."
+    },
+    {
+      "articleTitle": "Epistemology",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Epistemology's examination of sources and limits of knowledge directly informs B.3\u2014the theoretical question of whether the humanities constitute a fundamental division of knowledge distinct from the sciences and what kind of knowledge they produce."
+    },
+    {
+      "articleTitle": "Western philosophy",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Western philosophy traces the same arc as A.1 and A.3\u2014from ancient Greek paideia through Scholasticism and Renaissance to modern scholarship\u2014constituting the intellectual backbone of the history of humanistic scholarship in the West."
+    },
+    {
+      "articleTitle": "Mahayana",
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Mahayana Buddhism's philosophical and textual traditions, including its intellectual centers at Nalanda, represent a major strand of the humanities and humanistic scholarship in the East (A.6), particularly in India, China, and Japan."
+    },
+    {
+      "articleTitle": "Scientific method",
+      "relevantPathsAI": [
+        "A.3.d",
+        "B.3"
+      ],
+      "rationaleAI": "The scientific method's codification marks the definitive separation of empirical inquiry from philosophical speculation (A.3.d) and raises the question of what forms of inquiry\u2014interpretive, hermeneutic\u2014are distinctive to the humanities (B.3)."
+    },
+    {
+      "articleTitle": "The arts",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "The arts as an umbrella category directly addresses B.1 (the scope of the humanities) and B.2 (the humanities as an educational program combining visual, literary, and performing arts)."
+    },
+    {
+      "articleTitle": "History",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "History's ongoing debate over whether it is a science, humanity, or hybrid discipline is precisely the question in B.3, and its inclusion in or exclusion from the humanities informs B.1 (diverse views on the scope of the humanities)."
+    },
+    {
+      "articleTitle": "Knowledge",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Knowledge's analysis of types of knowing and the sociology of knowledge directly informs B.3\u2014the question of whether the humanities constitute a distinctive fundamental division of knowledge separate from the sciences."
+    },
+    {
+      "articleTitle": "Logic",
+      "relevantPathsAI": [
+        "A.1.d",
+        "B.3"
+      ],
+      "rationaleAI": "Aristotle's invention of formal logic is explicitly cited in A.1.d as one of the Lyceum's key contributions to humanistic scholarship; logic's status as a formal rather than humanistic discipline also directly informs B.3."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

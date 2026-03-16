@@ -1,169 +1,220 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "523",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Social status is a key dimension of societal stratification and organization.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3.c",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Ethnicity",
-      "rationaleAI": "Ethnicity often determines social status, with ethnic hierarchies creating stratification in many societies.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.c",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Atlantic slave trade",
-      "rationaleAI": "The Atlantic slave trade created racial hierarchies and systems of social status that persist in their consequences.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.c",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.5"
-      ]
-    },
-    {
-      "articleTitle": "Gender",
-      "rationaleAI": "Gender is a fundamental dimension of social status.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Man",
-      "rationaleAI": "Masculinity is a dimension of social status across cultures.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3.b",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Woman",
-      "rationaleAI": "Women's social status has varied across cultures and historical periods.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3"
-      ]
-    },
-    {
       "articleTitle": "Social class",
-      "rationaleAI": "Social class is a primary dimension of social status.",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Discrimination",
-      "rationaleAI": "Discrimination operates through systems of social status.",
-      "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.3.b",
-        "A.3.c",
-        "B",
         "B.1",
         "B.2",
         "B.3",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Racism",
-      "rationaleAI": "Racism enforces hierarchies of social status.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.c",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Sexism",
-      "rationaleAI": "Sexism enforces gendered hierarchies of social status.",
-      "relevantPathsAI": [
-        "A.3.c",
-        "B.1",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Feminism",
-      "rationaleAI": "Feminism challenges gendered social status hierarchies.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Slavery",
-      "rationaleAI": "Slavery represents an extreme form of social status hierarchy.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.c",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Social class is the central subject of section 523, covering concepts of stratification and differentiation (A.1), class as a form of stratification (A.3b), relation to caste and elites (B.1), major theoretical frameworks (B.2), types of modern classes (B.3), social mobility (B.4), and the classless society ideal (B.5)."
     },
     {
       "articleTitle": "Social equality",
-      "rationaleAI": "Social equality directly addresses systems of social status.",
       "relevantPathsAI": [
+        "A.1",
+        "A",
+        "B.5"
+      ],
+      "rationaleAI": "Social equality addresses the concepts of equal rights and status (A.1), the effects of differentiation on individuals (A.3c), and the idea of a classless society and equality of conditions (B.5)."
+    },
+    {
+      "articleTitle": "Power (social and political)",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Power as a concept directly maps to class, status, and power as forms of stratification (A.3b); its taxonomy of power bases connects to theories of elite domination and social class relationships (B.1, B.2)."
+    },
+    {
+      "articleTitle": "Discrimination",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Discrimination addresses sex, racial, age, and class-based distinctions as factors producing social inequality (A.2) and their effects on individuals' access to rights and opportunities (A.3c)."
+    },
+    {
+      "articleTitle": "Gender",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Gender covers sex differentiation as a fundamental factor producing social and cultural differences (A.2) and its effect on individual positioning within stratified social structures (A.3c)."
+    },
+    {
+      "articleTitle": "Racism",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Racism addresses racial differentiation as a factor producing social inequality (A.2), its role in establishing status hierarchies (A.3b), and its effects on individuals' life chances (A.3c)."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "A.2",
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Colonialism established racial hierarchy and economic exploitation as forms of social stratification (A.3b), with racial differentiation as a key factor (A.2) and elite colonial relations as a variant of class structure (B.1)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Marx's theory of historical materialism grounds economic differentiation as the basis of stratification (A.3a), defines class struggle (A.3b), provides the dominant theoretical framework for social class analysis (B.2), and articulates the ideal of a classless society (B.5)."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "A",
+        "B.3"
+      ],
+      "rationaleAI": "Work addresses the division of labor as the economic basis of class differentiation (A.3a) and occupational position as a form of stratification (A.3b), connecting to the characteristics of working and middle classes (B.3)."
+    },
+    {
+      "articleTitle": "Property",
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Property as a system of rights is the material basis of economic differentiation and stratification (A.3a); contrasting philosophical traditions from Locke to Marx's critique and Proudhon's 'property is theft' are central to debates about class (B.2) and the classless society (B.5)."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
+        "A.2",
+        "A",
+        "B.4"
+      ],
+      "rationaleAI": "Education is a key factor producing social and cultural differences (A.2), its attainment shapes individual position in stratified society (A.3c), and educational mobility is a principal mechanism of social mobility (B.4)."
+    },
+    {
+      "articleTitle": "Communism",
+      "relevantPathsAI": [
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Communism is built on Marxist class theory (B.2) and advocates collective ownership and the abolition of class distinctions toward a stateless, classless society (B.5)."
+    },
+    {
+      "articleTitle": "Liberalism",
+      "relevantPathsAI": [
+        "A",
         "B.4",
         "B.5"
-      ]
+      ],
+      "rationaleAI": "Liberalism's emphasis on individual rights and equality of opportunity (A.3c) underpins social mobility frameworks (B.4) and democratic arguments for reducing class hierarchy (B.5)."
+    },
+    {
+      "articleTitle": "Sociology",
+      "relevantPathsAI": [
+        "A.1",
+        "B.2"
+      ],
+      "rationaleAI": "Sociology's subfield of stratification is the primary academic framework for concepts of differentiation (A.1) and competing theories of social class (B.2), from functionalism through conflict theory."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
+      "relevantPathsAI": [
+        "A",
+        "B.3"
+      ],
+      "rationaleAI": "The Industrial Revolution restructured economic differentiation and created modern class formations\u2014industrial bourgeoisie and proletariat (A.3a, B.3)\u2014whose characteristics are central to the section."
+    },
+    {
+      "articleTitle": "Clothing",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Clothing explicitly addresses social status signaling, group identity, and wealth display through dress, making it a concrete illustration of class, status, and power as forms of stratification (A.3b)."
+    },
+    {
+      "articleTitle": "Poverty",
+      "relevantPathsAI": [
+        "A",
+        "B.3"
+      ],
+      "rationaleAI": "Poverty represents the experience at the lowest strata of economic differentiation (B.3), with intersecting effects on individuals' life chances (A.3c) across gender, ethnicity, and geography."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "A",
+        "B.5"
+      ],
+      "rationaleAI": "Human rights frameworks address the individual's relationship to society and the effects of discrimination and inequality (A.3c), and provide the normative basis for seeking equality of conditions (B.5)."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "The Atlantic slave trade represents the most extreme form of racial differentiation as a basis for social stratification (A.2, A.3b), institutionalizing status hierarchy based on race across the Atlantic world."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Imperialism imposed hierarchical stratification between colonial powers and subjugated peoples along racial and ethnic lines (A.2, A.3b), with Social Darwinism as ideological justification."
+    },
+    {
+      "articleTitle": "Disability",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Disability is a factor producing differential social and cultural positioning (A.2) and shapes individuals' access to rights, employment, and participation within stratified societies (A.3c)."
+    },
+    {
+      "articleTitle": "Sexism",
+      "relevantPathsAI": [
+        "A.2",
+        "A"
+      ],
+      "rationaleAI": "Sexism addresses sex differentiation as a stratifying factor (A.2), manifesting in wage gaps and glass ceilings as forms of status hierarchy (A.3b) with concrete effects on women's life chances (A.3c)."
+    },
+    {
+      "articleTitle": "Literacy",
+      "relevantPathsAI": [
+        "A.2",
+        "A",
+        "B.4"
+      ],
+      "rationaleAI": "Literacy is a key intellectual differentiator producing social inequality (A.2), shapes individuals' capacity to navigate stratified society (A.3c), and is a mechanism of economic mobility (B.4)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "B.5",
+        "A"
+      ],
+      "rationaleAI": "The Enlightenment generated the philosophical foundations for equality, individual rights, and critiques of hereditary hierarchy (B.5, A.3c) that underpin modern liberal and democratic approaches to stratification."
+    },
+    {
+      "articleTitle": "Decolonization",
+      "relevantPathsAI": [
+        "A",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Decolonization addressed the relationship of colonized individuals and peoples to stratified imperial social structures (A.3c), enabling national mobility and self-determination (B.4) and challenging hierarchical imperial ordering (B.5)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

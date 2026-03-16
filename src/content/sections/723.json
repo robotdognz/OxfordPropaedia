@@ -97,13 +97,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Instruments for measuring position by angulation and direction finding",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Compasses: magnetic compasses, gyrocompasses",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Compasses: magnetic compasses, gyrocompasses",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

@@ -1,218 +1,205 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "337",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Reproduction is the fundamental process by which life perpetuates itself.",
-      "relevantPathsAI": [
-        "A.3",
-        "B.4",
-        "B.6.a",
-        "C",
-        "C.1",
-        "C.5",
-        "D",
-        "D.2",
-        "D.3",
-        "D.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Family",
-      "rationaleAI": "The family is the social unit organized around biological reproduction and the nurturing of offspring.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.3",
-        "B",
-        "B.1",
-        "B.4",
-        "B.6.a",
-        "C",
-        "C.1",
-        "C.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Cell (biology)",
-      "rationaleAI": "Cell division through mitosis and meiosis is the fundamental mechanism underlying reproduction in all organisms.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.3",
-        "B",
-        "B.2",
-        "C",
-        "C.2.a",
-        "C.3.a",
-        "C.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Reproduction",
-      "rationaleAI": "Reproduction and sex are the direct subject of this section covering sexual and asexual reproduction across organisms.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Human sexuality",
-      "rationaleAI": "Human sexuality encompasses the biological dimensions of reproduction and sex.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Sexual intercourse",
-      "rationaleAI": "Sexual intercourse is the primary biological mechanism of human reproduction.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Sexual orientation",
-      "rationaleAI": "Sexual orientation relates to the biological and psychological dimensions of sexuality.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.3",
-        "B.4",
-        "B.6.a",
-        "B.6.d",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Sexually transmitted infection",
-      "rationaleAI": "STIs are transmitted through reproductive and sexual activity.",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "C.2.a",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Abortion",
-      "rationaleAI": "Abortion relates to human reproduction.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Birth control",
-      "rationaleAI": "Birth control directly relates to human reproduction and sex.",
-      "relevantPathsAI": [
-        "C.4",
-        "D",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Flower",
-      "rationaleAI": "Flowers are the reproductive organs of angiosperms central to plant reproduction.",
-      "relevantPathsAI": [
-        "A.1.d",
-        "A.3",
-        "B",
-        "B.1",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2.a",
-        "C.3.a",
-        "C.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Seed",
-      "rationaleAI": "Seeds are the reproductive structures produced by sexual reproduction in plants.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Egg",
-      "rationaleAI": "Eggs are female reproductive cells central to sexual reproduction.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "C"
-      ]
-    },
-    {
       "articleTitle": "Sex",
-      "rationaleAI": "Sex is the biological basis of sexual reproduction treated in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.d",
-        "A.2",
-        "A.3",
         "B",
         "B.1",
         "B.3",
         "B.5",
         "B.6"
-      ]
+      ],
+      "rationaleAI": "Directly and comprehensively covers the biological definition of sex via gamete dimorphism, the adaptive significance of sex for genetic diversity (B.3), sex-determination systems including chromosomal and environmental mechanisms (B.6), sex patterns (B.5), and hermaphroditism and sequential sex change."
+    },
+    {
+      "articleTitle": "Reproduction",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "B"
+      ],
+      "rationaleAI": "Core article covering all forms of reproduction across domains of life — asexual (binary fission, budding, vegetative) and sexual (gametogenesis, meiosis, fertilization) — including the evolutionary paradox of sex (A.3) and r/K life-history strategies."
+    },
+    {
+      "articleTitle": "Flower",
+      "relevantPathsAI": [
+        "C",
+        "C.3.b"
+      ],
+      "rationaleAI": "Flowers are the reproductive structures of angiosperms, covering the sex organs and pollination mechanisms of seed plants (C.3.b) and the physiology of fertilization; directly illustrates the plant reproductive system under C."
+    },
+    {
+      "articleTitle": "Natural selection",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Natural selection acts through differential reproduction and is directly relevant to the evolution of reproductive strategies and variation control (A.3); covers sexual selection as a recognized subtype shaping reproductive systems."
+    },
+    {
+      "articleTitle": "Heredity",
+      "relevantPathsAI": [
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Heredity is the transmission of genetic information through reproduction, connecting the evolution of reproduction to variation control (A.3) and providing context for sex chromosomes and the genetic diversity established through sexual reproduction (B.3)."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Darwin's work on sexual selection (The Descent of Man) directly addresses B.3 — the adaptive significance of sex for establishing genetic diversity — and his broader evolutionary framework underpins A.3 on natural selection and reproductive evolution."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
+        "C",
+        "C.3.b"
+      ],
+      "rationaleAI": "Fruits are the seed-bearing reproductive structures of angiosperms that develop from the ovary post-fertilization, directly representing the outcome of the plant reproductive cycle in seed plants (C.3.b) and the dispersal stage of plant reproduction."
+    },
+    {
+      "articleTitle": "Organism",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Reproduction is one of the defining criteria of an organism, and the article directly addresses reproduction as a core feature of individual biological entities at A.1, including boundary cases that complicate the definition."
+    },
+    {
+      "articleTitle": "Egg",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2.d"
+      ],
+      "rationaleAI": "Eggs are the female gamete vehicle in animals; the article covers egg types across invertebrates and vertebrates (D.2.a), yolk volume corresponding to developmental strategy, and the egg as provision for the developing embryo (D.2.d)."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A",
+        "A.1.d"
+      ],
+      "rationaleAI": "Life's defining feature includes reproduction; the article covers life cycles of organisms spanning Archaea, Bacteria, and Eukaryota (A.1.d) and the biochemical basis of cellular reproduction as fundamental to all living systems."
+    },
+    {
+      "articleTitle": "Gender",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.5"
+      ],
+      "rationaleAI": "Gender covers the social and psychological dimensions of sex, directly engaging B.1 (distinctions between sex, sexuality, and reproduction), B.5 (sex patterns across cultures), and the biological hormonal and neurological correlates of sex determination (B.6.d)."
+    },
+    {
+      "articleTitle": "Gene",
+      "relevantPathsAI": [
+        "B.3",
+        "B.6.a"
+      ],
+      "rationaleAI": "Genes are the units of hereditary variation; the article covers alleles and polygenic traits relevant to the genetic diversity established through sex (B.3), and gene loci on sex chromosomes directly relevant to sex determination (B.6.a)."
+    },
+    {
+      "articleTitle": "Seed",
+      "relevantPathsAI": [
+        "C",
+        "C.3.b"
+      ],
+      "rationaleAI": "Seeds are the reproductive units of seed plants, formed from fertilized ovules; the article directly covers gymnosperm and angiosperm differences in seed enclosure (C.3.b) and the role of dormancy, dispersal, and germination in the plant reproductive cycle."
+    },
+    {
+      "articleTitle": "Human sexuality",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.5"
+      ],
+      "rationaleAI": "Human sexuality covers the distinction between sex and sexuality (B.1), sexual response, reproductive physiology, sexual orientation (B.5), and hormonal influences (B.6.d); directly relevant to B's treatment of sex and sexuality in humans."
+    },
+    {
+      "articleTitle": "Sexual orientation",
+      "relevantPathsAI": [
+        "B",
+        "B.5"
+      ],
+      "rationaleAI": "Sexual orientation as an enduring pattern of attraction is a key component of sex patterns (B.5); the article also addresses biological determinants including prenatal hormone exposure relevant to B.6.d."
+    },
+    {
+      "articleTitle": "Genetics",
+      "relevantPathsAI": [
+        "B.3",
+        "B.6.a",
+        "B.6.b"
+      ],
+      "rationaleAI": "Genetics covers Mendelian inheritance, allelic relationships, and sex chromosome mechanisms (B.6.a), including abnormal chromosome effects (B.6.b), and the genetic diversity that sexual reproduction establishes through recombination (B.3)."
+    },
+    {
+      "articleTitle": "Bacteria",
+      "relevantPathsAI": [
+        "A.1.b",
+        "B.2"
+      ],
+      "rationaleAI": "Bacteria reproduce via binary and multiple fission (A.1.b — cell reproduction), and their horizontal gene transfer including transduction and transformation constitutes the sexlike recombination in bacteria described in B.2."
+    },
+    {
+      "articleTitle": "Virus",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Viral transduction is explicitly cited in the outline as sexlike recombination (B.2); the article covers horizontal gene transfer including transduction as a key mechanism for genetic exchange analogous to sexual recombination."
+    },
+    {
+      "articleTitle": "Pregnancy",
+      "relevantPathsAI": [
+        "D",
+        "D.3.d"
+      ],
+      "rationaleAI": "Pregnancy is the period of intrauterine development representing the vertebrate provision for the developing embryo (D.3.d); it covers placentation, physiological maternal adaptations, and the complete gestational process in eutherian mammals."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
+        "D.3.c",
+        "B.6.d"
+      ],
+      "rationaleAI": "Hormones govern gonadal function and hormone cycles in vertebrate reproductive systems (D.3.c) and exert environmental and hormonal influences on sex determination (B.6.d); the article covers estrogen, progesterone, androgens, and plant reproductive hormones."
+    },
+    {
+      "articleTitle": "Animal",
+      "relevantPathsAI": [
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "Animals reproduce sexually as a defining characteristic; the article covers general features of animal reproduction (D.1) across major clades and the diversity of reproductive strategies spanning invertebrates and vertebrates."
+    },
+    {
+      "articleTitle": "Plant",
+      "relevantPathsAI": [
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Plants covers sexual and asexual reproductive strategies across ~380,000 species from mosses through angiosperms (C.1); the article directly addresses plant reproductive diversity including the alternation of generations that structures plant reproductive cycles."
+    },
+    {
+      "articleTitle": "Cell (biology)",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Cell reproduction by binary and multiple fission is the core mechanism of asexual reproduction at the cellular level (A.1.b); the article covers cell replication, including meiosis for gamete production relevant to sexual reproduction at A.1.c."
+    },
+    {
+      "articleTitle": "Archaea",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Archaea reproduce via binary fission (A.1.b — cell reproduction) and also engage in horizontal gene transfer, representing the most primitive forms of reproduction and the evolutionary baseline for understanding the origin of sex."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

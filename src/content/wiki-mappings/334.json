@@ -1,145 +1,128 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "334",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Integumentary, skeletal, and muscular systems provide the structural support for living organisms.",
+      "articleTitle": "Skin",
       "relevantPathsAI": [
         "A",
-        "A.5",
-        "B",
-        "B.2",
-        "B.2.c",
-        "B.4",
-        "B.7",
-        "C",
-        "C.2",
-        "C.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Animal",
-      "rationaleAI": "Animal integumentary, skeletal, and muscular systems provide the structural framework for covering, support, and movement.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.7",
-        "B.4.a",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Running",
-      "rationaleAI": "Running involves the musculoskeletal systems of the human body.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "C.1",
-        "C.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Walking",
-      "rationaleAI": "Walking engages the skeletal and musculatory systems of the human body.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Exercise",
-      "rationaleAI": "Exercise engages the skeletal and musculatory systems.",
-      "relevantPathsAI": [
-        "A.1",
-        "B.2",
-        "B.7",
-        "C.1",
-        "C.2",
-        "C.2.a",
-        "C.4",
-        "C.5",
-        "C.5.a",
-        "C.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Vertebrate",
-      "rationaleAI": "Vertebrates share skeletal and musculatory systems of covering and support.",
-      "relevantPathsAI": [
-        "A.1",
         "A.3",
-        "A.5",
-        "B.4",
-        "B.4.a",
-        "B.4.b",
-        "B.5",
-        "C.1",
-        "C.5",
-        "C.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Skeletal muscle",
-      "rationaleAI": "Skeletal muscles are part of the musculatory system providing support and movement.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
         "A.4",
         "A.5",
         "A.6",
-        "B",
-        "B.2",
-        "B.2.c",
-        "B.3"
-      ]
+        "A.7"
+      ],
+      "rationaleAI": "Skin directly covers outline path A in full: vertebrate integument layers (epidermis, dermis—A.3.a), skin derivatives and appendages (scales, hair, glands—A.3.b), variation among vertebrate taxa (A.4), embryology and evolution (A.5), biodynamics including wound healing (A.6), and human integument (A.7). One of the two or three most central articles for this section."
     },
     {
       "articleTitle": "Skeleton",
-      "rationaleAI": "The skeleton provides structural support as part of the skeletal system treated here.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.5",
-        "A.7",
         "B",
-        "B.2.c",
+        "B.1",
+        "B.2",
         "B.3",
-        "B.4",
-        "B.4.b"
-      ]
+        "B.4"
+      ],
+      "rationaleAI": "Covers all three skeleton types (exo-, endo-, hydroskeleton) corresponding to outline paths B.2.a–c, invertebrate skeletal solutions including chitinous exoskeletons and spicules (B.3), and vertebrate endoskeleton organization (B.4). Directly addresses the roles of the skeleton (B.1) and skeletal composition."
     },
     {
       "articleTitle": "Bone",
-      "rationaleAI": "Bones are the structural elements of the skeletal system providing support.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.2",
-        "B.2.c",
-        "B.3",
-        "B.4",
+        "B.2.a",
         "B.6",
-        "B.7",
-        "C.1",
-        "C.2"
-      ]
+        "B.7"
+      ],
+      "rationaleAI": "Bone covers the composition and cellular biology of osseous tissue (osteoblasts, osteocytes, osteoclasts; cortical and cancellous structure) directly addressing outline paths B.2.a (cuticular/osseous structures) and B.6 (properties of bone and its development). The human skeletal count (300 at birth, 206 in adults) contributes to B.7."
     },
     {
-      "articleTitle": "Skin",
-      "rationaleAI": "Skin is the primary integumentary covering providing protection and support.",
+      "articleTitle": "Skeletal muscle",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.5",
+        "C",
+        "C.1",
+        "C.2.b",
+        "C.5"
+      ],
+      "rationaleAI": "Skeletal muscle directly addresses outline path C.2.b (complex contractile tissues: striated muscle), C.1 (general features of muscle tissue including thermoregulation and function), and C.5 (vertebrate muscle systems including function and regulation). Fiber type variation (slow/fast-twitch) corresponds to C.5.c (function and regulation of muscle action)."
+    },
+    {
+      "articleTitle": "Anatomy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Anatomy is the disciplinary framework for all structural content in Section 334, covering comparative structural analysis of integument, skeleton, and musculature across vertebrate and invertebrate taxa. Serves as a broad disciplinary anchor for paths A, B, and C collectively."
+    },
+    {
+      "articleTitle": "Human body",
+      "relevantPathsAI": [
         "A.7",
-        "B.2.c",
-        "B.3",
+        "B.7",
+        "C.5"
+      ],
+      "rationaleAI": "Human body provides an integrative overview of the human musculoskeletal and integumentary systems—skin, bones, and muscles—corresponding to the human-specific paths A.7 (human integument), B.7 (human skeletal system), and the vertebrate muscle coverage in C.5."
+    },
+    {
+      "articleTitle": "Vertebrate",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
         "B.4",
+        "C.5"
+      ],
+      "rationaleAI": "Vertebrates are the primary taxon for paths A.3–A.5 (vertebrate integuments) and B.4 (vertebrate skeleton), and C.5 (vertebrate muscle systems). The article covers the vertebral column, cranium, and body plan diversity that grounds the comparative anatomy in this section."
+    },
+    {
+      "articleTitle": "Mammal",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.b",
+        "A.4"
+      ],
+      "rationaleAI": "Mammals are defined in part by hair/fur (A.3.b: skin derivatives and appendages) and mammary glands as skin-derived structures, making this article directly relevant to vertebrate integument variation (A.4) and the distinctive mammalian integumentary features of outline path A.3."
+    },
+    {
+      "articleTitle": "Mollusca",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.3"
+      ],
+      "rationaleAI": "Molluscs have both shells (calcareous skeletal elements, B.2.a) and soft bodies supported by hydrostatic and muscular mechanisms (B.2.c), making them directly relevant to invertebrate skeletal organization (B.3). The mantle and radula also represent integumentary and muscular specializations."
+    },
+    {
+      "articleTitle": "Physiology",
+      "relevantPathsAI": [
+        "A.6",
+        "B.6",
+        "C"
+      ],
+      "rationaleAI": "Physiology as a discipline underlies the biodynamics content of paths A.6 (biodynamics of vertebrate skin), B.6 (bone development), and C (muscle physiology including contraction and regulation). Comparative physiology specifically addresses the adaptive variation across taxa addressed throughout this section."
+    },
+    {
+      "articleTitle": "Heart",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2.b"
+      ],
+      "rationaleAI": "The heart is composed of cardiac muscle, a form of striated muscle (C.2.b: complex contractile tissues), and its function as a muscular pump is part of the general treatment of muscle tissue roles including gland discharge (C.1). Cardiac muscle is a key example within the vertebrate contractile tissue coverage."
+    },
+    {
+      "articleTitle": "Meat",
+      "relevantPathsAI": [
+        "C",
         "C.1"
-      ]
+      ],
+      "rationaleAI": "Meat is predominantly skeletal muscle tissue, making it directly relevant to outline path C (body musculature) and C.1 (general features of muscle tissue including color and arrangement). The article's coverage of muscle composition (water, protein, fat) maps onto the structural properties of skeletal muscle."
+    },
+    {
+      "articleTitle": "Bird",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.4",
+        "B.4"
+      ],
+      "rationaleAI": "Birds exhibit distinctive integumentary features—feathers as a skin derivative (A.3.b)—and lightweight skeletal adaptations for flight (B.4.a), directly relevant to vertebrate skin variation (A.4) and the vertebrate skeleton section. Their unique integumentary and skeletal adaptations make them a key comparative example."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

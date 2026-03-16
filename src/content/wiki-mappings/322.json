@@ -1,71 +1,8 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "322",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Metabolism and bioenergetics are fundamental processes sustaining life.",
-      "relevantPathsAI": [
-        "A",
-        "A.5",
-        "B",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Plant",
-      "rationaleAI": "Photosynthesis in plants is the primary bioenergetic process converting solar energy into chemical energy through biosynthesis.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Energy",
-      "rationaleAI": "Metabolic energy through ATP synthesis and bioenergetics powers all biosynthetic processes in living organisms.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Thermodynamics",
-      "rationaleAI": "Thermodynamic principles govern bioenergetics and metabolic energy transformations in living systems.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Algae",
-      "rationaleAI": "Algal photosynthesis is a major pathway in bioenergetics and biosynthesis.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.7",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Metabolism",
-      "rationaleAI": "Metabolism encompasses bioenergetics and biosynthesis as treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.5",
-        "A.7",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
       "articleTitle": "Photosynthesis",
-      "rationaleAI": "Photosynthesis is the primary bioenergetic process converting light energy to chemical energy.",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -74,36 +11,230 @@
         "A.4",
         "A.5",
         "A.6",
-        "A.7",
-        "B",
-        "B.2"
-      ]
+        "A.7"
+      ],
+      "rationaleAI": "Photosynthesis is the subject of the entire 322.A subsection, directly covering biological importance (A.1), factors affecting rate and efficiency (A.2), mechanism determination (A.3), chloroplast as site (A.4), photosynthetic pigments (A.5), photoelectron transfer and photophosphorylation (A.6), and the Calvin cycle as the metabolic path of carbon (A.7)."
     },
     {
-      "articleTitle": "Carbohydrate",
-      "rationaleAI": "Carbohydrate metabolism is central to bioenergetics and biosynthesis in living organisms.",
+      "articleTitle": "Metabolism",
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Lipid",
-      "rationaleAI": "Lipid metabolism is a major pathway in bioenergetics and biosynthesis.",
-      "relevantPathsAI": [
-        "A.2",
         "B.2",
         "B.3",
         "B.4"
-      ]
+      ],
+      "rationaleAI": "Metabolism maps directly to the entire 322.B subsection: it covers catabolism (B.1 — glycolysis, citric acid cycle), cellular respiration and energy conservation (B.2 — oxidative phosphorylation), anabolism and biosynthesis (B.3), and metabolic regulation via allosteric enzymes and hormonal signals (B.4)."
     },
     {
       "articleTitle": "Redox",
-      "rationaleAI": "Redox reactions power cellular metabolism through bioenergetic electron-transport chains.",
       "relevantPathsAI": [
-        "A.2"
-      ]
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Redox reactions are central to 322.A.6 (photoelectron transfer in photosynthesis — the Z scheme) and 322.B.2 (cellular respiration and oxidative transduction — electron transport chain), with the article covering both biological photosynthetic and respiratory redox processes specifically."
+    },
+    {
+      "articleTitle": "Biochemistry",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Biochemistry is the foundational discipline for the entire 322 section, unifying enzymology, metabolic pathway analysis, and the chemistry of macromolecules relevant to both photosynthesis (A) and metabolism (B), as stated in the article's characterization of biochemistry as encompassing structural biology, enzymology, and metabolism."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Energy directly covers the thermodynamic content of 322.A.6 (energetics of photosynthesis — photophosphorylation and ATP synthesis) and 322.B.2 (conservation of energy from food combustion in cellular respiration), bridging the bioenergetics concepts central to this section."
+    },
+    {
+      "articleTitle": "Ecosystem",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Ecosystem covers primary production and energy flow driven by photosynthesis — directly relevant to 322.A.1 (the biological importance of photosynthesis as the initiation of energy conversion in the biosphere) — with trophic transfer and nutrient cycling dependent on photosynthetic carbon fixation."
+    },
+    {
+      "articleTitle": "Nutrition",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Nutrition covers the supply of macronutrients that undergo catabolism (322.B.1 — fragmentation of complex molecules) and whose combustion is described in 322.B.2 (cellular respiration), directly linking dietary biochemistry to the metabolic processes of the section."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "A.7",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Carbon's global cycle links to 322.A.7 (the metabolic path of carbon in photosynthesis — the Calvin cycle fixes atmospheric CO2 into organic compounds), and carbon atoms flow through catabolism (B.1) and anabolism (B.3) in all metabolic pathways."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "A.7",
+        "B.2"
+      ],
+      "rationaleAI": "CO2 is the substrate fixed in the Calvin cycle at 322.A.7 and the primary waste product of cellular respiration at 322.B.2, making it central to both halves of the section's bioenergetic content."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Oxygen is produced in 322.A.6 (photosynthesis: water splitting releases O2 via photoelectron transfer) and consumed in 322.B.2 (aerobic respiration as the electron acceptor in oxidative phosphorylation), making it fundamental to both halves of the section."
+    },
+    {
+      "articleTitle": "Iron",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Iron in heme groups and iron-sulfur clusters is essential for the electron transport chain of cellular respiration (322.B.2 — combustion of food and energy conservation via oxidative transduction), as redox cycling of Fe2+/Fe3+ drives ATP synthesis in mitochondria."
+    },
+    {
+      "articleTitle": "Cell (biology)",
+      "relevantPathsAI": [
+        "A.4",
+        "B"
+      ],
+      "rationaleAI": "The cell is the site of the photosynthetic process (322.A.4 — the chloroplast in green plants) and of all metabolic reactions (322.B), with the article covering organelles (mitochondria, chloroplasts) and cellular processes including metabolism as core content."
+    },
+    {
+      "articleTitle": "Plant",
+      "relevantPathsAI": [
+        "A",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Plants are the primary oxygenic photosynthesizers, with the article explicitly covering photosynthesis, chlorophyll (322.A.5 — photosynthetic pigments), and the chloroplast (322.A.4) as the site of the photosynthetic process in green plants."
+    },
+    {
+      "articleTitle": "Bacteria",
+      "relevantPathsAI": [
+        "A.3",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Bacteria include anoxygenic photosynthesizers relevant to 322.A.3 (determination of photosynthesis mechanisms), perform chemosynthetic catabolism (B.1), and their conservation of metabolic pathways — citric acid cycle intermediates from bacteria to mammals — is explicitly noted in the Metabolism article."
+    },
+    {
+      "articleTitle": "Breathing",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Breathing delivers oxygen for cellular respiration and removes carbon dioxide, directly supporting 322.B.2 (combustion of food materials and conservation of energy — cellular respiration, oxidation and transduction) by maintaining the gas exchange required for aerobic ATP production."
+    },
+    {
+      "articleTitle": "Digestion",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Digestion is the initial phase of catabolism at 322.B.1 (fragmentation of complex molecules), breaking down macronutrients into absorbable monomers — glucose, amino acids, fatty acids — that then enter the metabolic pathways of cellular respiration."
+    },
+    {
+      "articleTitle": "Carbohydrate",
+      "relevantPathsAI": [
+        "A.7",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Carbohydrates are the direct product of the Calvin cycle (322.A.7 — metabolic path of carbon in photosynthesis), the primary fuel of catabolism (322.B.1 — glycolysis and citric acid cycle), and biosynthesized by anabolism (322.B.3 — glycogen and polysaccharide synthesis)."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Hormones are key regulators of metabolic pathways at 322.B.4 (regulation of metabolism — insulin, glucagon, cortisol, and thyroid hormones control catabolism and anabolism), as described in the article's coverage of hormonal negative feedback maintaining metabolic homeostasis."
+    },
+    {
+      "articleTitle": "Lipid",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Lipids undergo catabolism via beta-oxidation (322.B.1) and anabolic biosynthesis via fatty acid synthase (322.B.3), making them central substrates and products of the metabolic processes described in 322.B, with the article covering both catabolic and anabolic lipid pathways."
+    },
+    {
+      "articleTitle": "Catalysis",
+      "relevantPathsAI": [
+        "A.3",
+        "B",
+        "B.4"
+      ],
+      "rationaleAI": "Enzyme catalysis underlies all metabolic reactions in 322.B, and the determination of photosynthesis mechanism (322.A.3) depended on understanding enzyme-catalyzed steps; catalysis connects to metabolic regulation (B.4) via allosteric enzyme inhibition and activation."
+    },
+    {
+      "articleTitle": "Thermodynamics",
+      "relevantPathsAI": [
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Thermodynamics governs the energetics of photosynthesis (322.A.6 — bioenergetics, photophosphorylation) and cellular respiration (322.B.2 — energy conservation via the first law), with the article covering entropy, free energy, and ATP synthesis as thermodynamic processes central to bioenergetics."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Water is the electron donor split in oxygenic photosynthesis (322.A.6 — the Z scheme: H2O → O2 + electrons), and the hydrogen atoms released drive the reduction reactions of the Calvin cycle (322.A.7), making water a direct substrate in the photosynthetic mechanism."
+    },
+    {
+      "articleTitle": "Algae",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Algae are principal aquatic photosynthesizers responsible for a large fraction of Earth's primary production, directly relevant to 322.A.1 (biological importance of photosynthesis in the biosphere) and 322.A.3 (with cyanobacteria being the subject of key mechanistic studies), and the article covers oxygenic photosynthesis evolution."
+    },
+    {
+      "articleTitle": "Abiogenesis",
+      "relevantPathsAI": [
+        "A.3",
+        "B"
+      ],
+      "rationaleAI": "Abiogenesis covers the RNA world hypothesis and prebiotic chemistry that gave rise to the first metabolic pathways — relevant to 322.A.3 (early determination of photosynthesis mechanisms in primitive organisms) and 322.B broadly as the evolutionary origin of metabolic processes."
+    },
+    {
+      "articleTitle": "Eukaryote",
+      "relevantPathsAI": [
+        "A.4",
+        "B.2"
+      ],
+      "rationaleAI": "Eukaryotes possess the chloroplast (322.A.4 — site of photosynthesis in green plants) and mitochondria via endosymbiogenesis, with mitochondria being the organelle of oxidative phosphorylation (322.B.2) — the article's endosymbiotic origin story directly underpins the bioenergetic organelles of the section."
+    },
+    {
+      "articleTitle": "Food",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Food provides the complex molecules that undergo catabolism (322.B.1 — fragmentation of complex molecules) and combustion for energy conservation (322.B.2 — the section explicitly uses the phrase 'combustion of food materials'), linking dietary biochemistry to the metabolic processes detailed in 322.B."
+    },
+    {
+      "articleTitle": "Chemical reaction",
+      "relevantPathsAI": [
+        "A.6",
+        "B"
+      ],
+      "rationaleAI": "All metabolic pathways in 322.B are enzyme-catalyzed chemical reactions, and the light-dependent reactions of photosynthesis (322.A.6) are explicitly photochemical reactions; the article covers reaction types (synthesis, decomposition, redox) and enzymatic catalysis foundational to the section's content."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Life's biochemical basis — metabolism, energy transformation, and homeostasis — directly corresponds to 322.A.1 (photosynthesis as initiation of energy conversion in the biosphere) and 322.B (metabolism as the totality of all chemical processes in living organisms), with the article treating these as defining features of life."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

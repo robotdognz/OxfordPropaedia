@@ -1,141 +1,155 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "941",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "West African history is a significant regional chapter in human history.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Africa",
-      "rationaleAI": "West Africa's kingdoms and empires, from Ghana to Songhai, represent major chapters in African history.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Mansa Musa",
-      "rationaleAI": "Mansa Musa ruled the Mali Empire at its height, making West Africa a center of wealth and Islamic scholarship.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.2",
-        "C.3",
-        "C.4.a"
-      ]
-    },
-    {
       "articleTitle": "History of Africa",
-      "rationaleAI": "The history of Africa encompasses the civilizations and peoples of West Africa and the broader sub-Saharan region.",
       "relevantPathsAI": [
         "A",
         "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
+        "C"
+      ],
+      "rationaleAI": "African history explicitly covers medieval Sahelian empires (Ghana, Mali, Songhai), the Bantu expansion, East African coast trade, and European colonial penetration from the 15th century, directly addressing the full arc of paths A through C in section 941."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
         "C",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "The Age of Discovery covers Portuguese Atlantic exploration and the opening of West African trade routes from c. 1460, directly relevant to C.1's account of Portuguese trade with the Guinea states. It also provides the broader European expansionist context for path C."
     },
     {
       "articleTitle": "Atlantic slave trade",
-      "rationaleAI": "The Atlantic slave trade devastated West African societies and forcibly transported millions across the Atlantic.",
+      "relevantPathsAI": [
+        "C.2",
+        "C.4.a"
+      ],
+      "rationaleAI": "The Atlantic slave trade article is directly relevant to C.2's detailed treatment of the rise and expansion of slave trade routes (c. 1600–c. 1860) and African slave merchant classes, and to C.4.a's account of European antislavery movements on the Guinea coastlands."
+    },
+    {
+      "articleTitle": "Mansa Musa",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a"
+      ],
+      "rationaleAI": "Mansa Musa's reign at the Mali Empire's territorial and commercial peak—controlling trans-Saharan gold routes and establishing Timbuktu as an Islamic scholarly centre—directly covers the content of B.2.a (Keita dynasty, Timbuktu as cultural and commercial centre, fall of Mali empire)."
+    },
+    {
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.1",
-        "C.2",
+        "B"
+      ],
+      "rationaleAI": "Post-classical history (c. 500–1500 CE) explicitly covers West African kingdoms including Ghana and Mali, Islamic expansion into the Sahel, and trans-Saharan trade networks, directly supporting path A's civilizational overview and B's account of the pre-European West African monarchies."
+    },
+    {
+      "articleTitle": "Ottoman Empire",
+      "relevantPathsAI": [
         "C.3"
-      ]
+      ],
+      "rationaleAI": "At a moderate level, the Ottoman Empire's North African presence and Islamic political authority form part of the broader context for C.3's Islamic revolutions in the western Sudan and the trans-Saharan connections that enabled Fulani and Hausa jihad movements."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.b"
+      ],
+      "rationaleAI": "The British Empire's Scramble for Africa and West African colonial settlements—Sierra Leone, Gold Coast, Lagos, and Ashanti—are directly treated in C.4.b, and the broader trajectory of British imperialism frames C.4's account of West Africa from 1800 to c. 1885."
     },
     {
       "articleTitle": "Nigeria",
-      "rationaleAI": "Nigeria's pre-colonial history is covered in West Africa to 1885.",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
-        "B.2.a",
         "B.2.b",
-        "C",
-        "C.1",
-        "C.2",
         "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Sahara",
-      "rationaleAI": "The Sahara shaped the history of West African civilizations through trade routes.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.2",
-        "C.3",
-        "C.4.a"
-      ]
+        "C.4.b"
+      ],
+      "rationaleAI": "Nigeria's pre-colonial heritage explicitly includes the Hausa kingdoms, the Sokoto Caliphate (directly relevant to C.3's Fulani and Hausa jihads under Usman dan Fodio), the Yoruba Awori origins of Lagos (C.4.b), and Kanem connections (B.1). It is a primary country-level article for several outline paths."
     },
     {
       "articleTitle": "Lagos",
-      "rationaleAI": "Lagos grew as a major West African urban center covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4.a"
-      ]
+        "C.4.b"
+      ],
+      "rationaleAI": "Lagos's 15th-century Yoruba Awori origins and its history as one of the British colonial settlements explicitly listed in C.4.b (the colonies of Sierra Leone, the Gold Coast, Lagos, and Ashanti) make this a direct match for that path."
     },
     {
-      "articleTitle": "African traditional religions",
-      "rationaleAI": "Traditional religions were integral to West African civilizations.",
+      "articleTitle": "Africa",
       "relevantPathsAI": [
         "A",
         "B",
-        "B.1",
-        "C.2",
+        "C"
+      ],
+      "rationaleAI": "The Africa article covers major West African empires (Mali, Songhai, Asante) and the history of Arab and European colonialism across the continent, providing the broad geographic and civilizational context for path A and the historical frameworks for B and C."
+    },
+    {
+      "articleTitle": "Sahara",
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "The Sahara's role as both barrier and trans-Saharan trade route is foundational to path A's geographic and ethnographic overview of West Africa and to B.2's account of western Sudan empires whose wealth depended on controlling Saharan trade. C.1's Portuguese trade also operates in relation to coastal versus Saharan route alternatives."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "The early modern period's coverage of European colonial expansion into Africa, mercantile capitalism, and the Atlantic slave trade directly contextualizes paths C.1 (Portuguese Guinea trade, c. 1460) and C.2 (Atlantic slave trade expansion c. 1600–1860)."
+    },
+    {
+      "articleTitle": "Scramble for Africa",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.b"
+      ],
+      "rationaleAI": "The Scramble for Africa (c. 1880–1914) and the 1884 Berlin Conference directly encompass the endpoint of section 941 (c. 1885) and the process of European partition that frames C.4's account of West Africa from 1800 to c. 1885 and C.4.b's British colonial settlements."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "C",
         "C.4"
-      ]
+      ],
+      "rationaleAI": "Colonialism's treatment of European colonial empires covering 84% of Africa's land area and the mercantile and chartered company mechanisms directly contextualizes path C's precolonial European activity in West Africa, including the slave trade and eventual collapse of indigenous states through C.4."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "C",
+        "C.4"
+      ],
+      "rationaleAI": "Imperialism provides theoretical and historical framing for the European encroachment described in path C, including the economic motivations and power dynamics underlying Portuguese Guinea trade, the slave trade, and the eventual British colonial settlements in C.4."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Ibn Khaldun's North African and Saharan scholarly perspective, his asabiyyah theory of nomadic-sedentary state cycles, and his historical documentation of West African and Saharan societies directly inform path A's historiographic concerns and help explain the formation of the B.2 western Sudan empires."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.2.a",
+        "C.3"
+      ],
+      "rationaleAI": "The Islamic Golden Age's role in spreading Islamic scholarship connects directly to Timbuktu's emergence as an Islamic scholarly centre under Mansa Musa (B.2.a) and the intellectual underpinning of the Islamic revolutions in the western Sudan (C.3) led by Sidi Mukhtar and Usman dan Fodio."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "At a moderate level, globalization's historical account of trans-Saharan and early Atlantic trade networks contextualizes the commercial importance of western Sudan empires (B.2) and the development of the Atlantic slave trade routes (C.2) that connected West Africa to broader world markets."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

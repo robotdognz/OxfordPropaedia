@@ -1,320 +1,205 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "734",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Transportation technology represents a major domain of technological development.",
-      "relevantPathsAI": [
-        "A.5",
-        "C.2",
-        "C.5",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "Sea",
-      "rationaleAI": "Maritime navigation and shipping across the seas have been central to transportation technology throughout history.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.5.c",
-        "C.2",
-        "C.5",
-        "F",
-        "F.1",
-        "F.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Transport",
-      "rationaleAI": "Transportation technology from horse-drawn vehicles to aircraft is the direct subject of this section.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "B",
-        "C",
-        "C.2",
-        "C.5",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Henry Ford",
-      "rationaleAI": "Ford revolutionized transportation technology through mass production of the automobile.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.5.a",
-        "A.5.c",
-        "C",
-        "C.2",
-        "C.5",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Silk Road",
-      "rationaleAI": "The Silk Road was the most important long-distance transportation and trade network of the ancient and medieval world.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "B",
-        "C",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Viking Age",
-      "rationaleAI": "Viking longships and navigation technology enabled unprecedented maritime exploration and transportation across the North Atlantic.",
-      "relevantPathsAI": [
-        "A",
-        "A.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Tourism",
-      "rationaleAI": "Tourism depends on transportation technology infrastructure.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.4.a",
-        "A.5",
-        "A.5.b",
-        "A.5.c",
-        "C.5",
-        "F",
-        "G.3",
-        "G.4"
-      ]
-    },
-    {
-      "articleTitle": "Wheel",
-      "rationaleAI": "The wheel is foundational to wheeled vehicles in transportation technology.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4.a",
-        "A.5.a",
-        "B",
-        "C.5",
-        "F.2",
-        "F.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Internal combustion engine",
-      "rationaleAI": "Internal combustion engines power most modern transportation vehicles.",
+      "articleTitle": "Car",
       "relevantPathsAI": [
         "A.2",
         "A.5.a",
-        "B",
-        "C",
-        "C.5",
-        "F.1",
-        "F.2",
-        "F.2.a",
-        "F.2.c",
-        "G"
-      ]
-    },
-    {
-      "articleTitle": "Mail",
-      "rationaleAI": "Mail systems depend on transportation technology.",
-      "relevantPathsAI": [
-        "A.4.a",
-        "A.5",
-        "A.5.b",
-        "C.5",
-        "F.1",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Rocket",
-      "rationaleAI": "Rockets serve as vehicles for space transportation.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.5.a",
-        "A.5.b",
-        "C",
-        "C.2",
-        "C.5",
-        "F.2",
-        "F.2.a",
-        "F.2.c",
-        "G.1"
-      ]
-    },
-    {
-      "articleTitle": "Spaceflight",
-      "rationaleAI": "Spaceflight represents the extension of transportation technology beyond Earth.",
-      "relevantPathsAI": [
-        "C.5",
-        "F.2.a",
-        "F.2.c",
-        "G.5"
-      ]
+        "C.4"
+      ],
+      "rationaleAI": "The automobile is the central subject of C.4 (automobiles), connects to road vehicle development (A.5.a) and the wheel-and-road history (A.2), covering propulsion, suspension, braking, safety systems, and the automotive industry's evolution."
     },
     {
       "articleTitle": "Vehicle",
-      "rationaleAI": "Vehicles are the conveyances central to transportation technology.",
       "relevantPathsAI": [
-        "A.2",
-        "A.5.a",
-        "A.5.b",
         "C",
-        "C.2",
-        "C.5",
         "F.1",
-        "F.2.a",
-        "F.2.c",
+        "G.1"
+      ],
+      "rationaleAI": "Vehicle covers all transport modes — wheeled, tracked, railed, water, air, space — providing the broadest conceptual framework for section C (road vehicles), F.1 (waterborne vessels), and G.1 (aircraft) simultaneously."
+    },
+    {
+      "articleTitle": "Transport",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Covers the full history and typology of transportation across all modes — road, rail, water, air, pipeline — providing a broad foundation for the history of transportation (A) and connecting all sub-sections of 734."
+    },
+    {
+      "articleTitle": "Civil engineering",
+      "relevantPathsAI": [
+        "B",
         "F.4"
-      ]
-    },
-    {
-      "articleTitle": "Aircraft",
-      "rationaleAI": "Aircraft are vehicles for air transportation treated in this section.",
-      "relevantPathsAI": [
-        "A.4.a",
-        "A.5.a",
-        "B",
-        "C",
-        "C.5",
-        "F.1",
-        "F.2",
-        "F.2.a",
-        "F.2.b",
-        "F.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Bicycle",
-      "rationaleAI": "The bicycle is a human-powered vehicle in transportation technology.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.5.b",
-        "C.3",
-        "C.5",
-        "F.1",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Car",
-      "rationaleAI": "The automobile is a dominant vehicle in modern transportation technology.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "C",
-        "C.2",
-        "C.5",
-        "F.1",
-        "F.2",
-        "F.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Ship",
-      "rationaleAI": "Ships are vehicles for maritime transportation treated in this section.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.4.a",
-        "A.4.b",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "B",
-        "C.5"
-      ]
+      ],
+      "rationaleAI": "Civil engineering encompasses road and highway construction (B) as a core sub-discipline, and harbour and coastal engineering (F.4) covering docks and quays; it also includes transportation engineering as a named sub-discipline."
     },
     {
       "articleTitle": "Train",
-      "rationaleAI": "Trains are vehicles for rail transportation treated in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
         "A.4.a",
-        "A.4.b",
-        "A.5.a",
-        "A.5.b",
-        "C",
-        "C.2",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Bridge",
-      "rationaleAI": "Bridges are essential infrastructure enabling transportation networks.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.4.a",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "B",
-        "C",
-        "C.5",
         "D"
-      ]
+      ],
+      "rationaleAI": "Directly covers rail transportation (D) in full — from early steam locomotives through diesel and electric traction to high-speed rail and maglev — and the historical spread of railways (A.4.a) as a defining phase of steam transportation."
     },
     {
       "articleTitle": "Canal",
-      "rationaleAI": "Canals are artificial waterways constructed for transportation.",
       "relevantPathsAI": [
-        "A.5",
-        "F",
-        "F.3",
-        "G.3"
-      ]
+        "F.3"
+      ],
+      "rationaleAI": "Directly covers canals and inland waterways (F.3) — navigation canals with locks, summit canals, and the Panama Canal as exemplar — including their historical role in Industrial Revolution bulk freight transport."
+    },
+    {
+      "articleTitle": "Aircraft",
+      "relevantPathsAI": [
+        "G.1",
+        "G.1.a",
+        "G.1.b"
+      ],
+      "rationaleAI": "Directly covers the aircraft classification (G.1) — lighter-than-air (G.1.a: airships, balloons) and heavier-than-air (G.1.b: fixed-wing, rotorcraft) — with propulsion and flight characteristics essential to the air transport section."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "The Industrial Revolution is the defining era of steam transportation (A.4), covering the first locomotives and spread of railways (A.4.a) and early steamships and iron vessels (A.4.b) that revolutionized both land and water transport."
+    },
+    {
+      "articleTitle": "Internal combustion engine",
+      "relevantPathsAI": [
+        "C.4",
+        "F.2.c"
+      ],
+      "rationaleAI": "The ICE is the dominant power unit for automobiles (C.4) and marine propulsion (F.2.c), covering Otto and diesel cycles, gas turbines, and jet engines — all directly listed as power units for propulsion in F.2.c."
+    },
+    {
+      "articleTitle": "Ship",
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Directly covers types of ships (F.1) — bulk carriers, tankers, container ships — and ship design and construction (F.2), including hull form, propulsion systems, and cargo architecture across the global merchant fleet."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
+        "C.4",
+        "F.2.c",
+        "G.1.b"
+      ],
+      "rationaleAI": "Engines as energy converters underpin automobile propulsion (C.4), ship power units including steam, diesel, and gas turbines (F.2.c), and aircraft propulsion (G.1.b), making the article relevant across road, water, and air transport modes."
+    },
+    {
+      "articleTitle": "Steam engine",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.4.b",
+        "D"
+      ],
+      "rationaleAI": "The steam engine is the definitive technology of the railroad era (A.4.a) and steam navigation (A.4.b), and steam-powered locomotives drove the development of rail transportation (D) throughout the 19th century."
+    },
+    {
+      "articleTitle": "Bicycle",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers bicycles (C.3) — the mechanical systems, dynamics, and historical development of human-powered two-wheeled transport — as the primary and only substantive candidate for that priority path."
     },
     {
       "articleTitle": "Road",
-      "rationaleAI": "Roads are the fundamental infrastructure of surface transportation technology.",
       "relevantPathsAI": [
         "A.2",
-        "A.4.a",
+        "B"
+      ],
+      "rationaleAI": "Directly covers roads and highways (B) — types, features, pavement maintenance, and engineering — and the history of road development from the ancient world (A.2), connecting to wheel-based transportation history."
+    },
+    {
+      "articleTitle": "Radar",
+      "relevantPathsAI": [
+        "G.5"
+      ],
+      "rationaleAI": "Radar is a foundational technology in aeronautical research and navigation systems (G.5), used in air traffic control, autonomous vehicle guidance, and meteorology; it bridges military origins with civilian aviation applications."
+    },
+    {
+      "articleTitle": "Henry Ford",
+      "relevantPathsAI": [
         "A.5.a",
-        "A.5.b",
-        "B",
-        "C",
-        "C.5",
-        "F.1",
-        "F.2",
-        "F.2.a"
-      ]
+        "C.4"
+      ],
+      "rationaleAI": "Ford's development of mass automobile production through the moving assembly line is central to the construction of road vehicles (A.5.a) and the evolution of the automobile (C.4), making him the defining industrialist for those paths."
+    },
+    {
+      "articleTitle": "Wheel",
+      "relevantPathsAI": [
+        "A.2",
+        "C"
+      ],
+      "rationaleAI": "The wheel is the foundational invention for road-based transportation (A.2) and the defining component of all wheeled vehicles in section C, covering the mechanics of rolling contact and the development of vehicle wheels from antiquity."
+    },
+    {
+      "articleTitle": "Rocket",
+      "relevantPathsAI": [
+        "G.4",
+        "G.5"
+      ],
+      "rationaleAI": "Rockets are the primary propulsion technology for space travel (G.4) and the subject of ongoing aeronautical and space research (G.5), covering propellant types, multistage designs, and the trajectory from military origins to satellite launches and crewed spaceflight."
+    },
+    {
+      "articleTitle": "Bridge",
+      "relevantPathsAI": [
+        "A.5.a",
+        "B"
+      ],
+      "rationaleAI": "Bridge construction is an integral part of road and highway infrastructure (B, A.5.a), as the outline explicitly notes 'construction of railroad bridges and tunnels' under steam transportation history; bridges are essential infrastructure for all surface transport modes."
     },
     {
       "articleTitle": "Navigation",
-      "rationaleAI": "Navigation guides vehicles in transportation systems.",
       "relevantPathsAI": [
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.5.a",
-        "C.5",
-        "F.1",
-        "F.2",
-        "F.2.a",
-        "F.2.b",
-        "F.4"
-      ]
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Navigation covers the methods and instruments for controlling vehicle movement across marine (F) and aeronautical (G) domains, spanning celestial navigation, radar, and satellite GNSS systems essential to both water and air transportation."
+    },
+    {
+      "articleTitle": "Electric motor",
+      "relevantPathsAI": [
+        "C.4",
+        "D",
+        "F.2.c"
+      ],
+      "rationaleAI": "Electric motors are the propulsion technology for electric vehicles (C.4), electric rail traction (D), and ship propulsion systems (F.2.c), and their regenerative operation as generators is central to modern hybrid and battery-electric transport."
+    },
+    {
+      "articleTitle": "History of technology",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Provides the broad historical narrative of transportation technology development — from animal power through steam to modern internal combustion and digital systems — directly supporting the history of transportation section (A)."
+    },
+    {
+      "articleTitle": "Infrastructure",
+      "relevantPathsAI": [
+        "B",
+        "D"
+      ],
+      "rationaleAI": "Infrastructure encompasses the physical transport networks — roads, railways, energy grids — that constitute the built substrate of transportation, directly relating to roads and highways (B) and rail infrastructure (D) as core components of transport systems."
+    },
+    {
+      "articleTitle": "Sea",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Covers ocean and sea environments — currents, tides, maritime navigation, trade, and fisheries — providing the physical and historical context for water transportation (F) including the development of shipping and maritime infrastructure."
+    },
+    {
+      "articleTitle": "Electronics",
+      "relevantPathsAI": [
+        "G.5"
+      ],
+      "rationaleAI": "Modern avionics, navigation systems, and flight control rely on electronics — transistors, integrated circuits, and semiconductor devices — making this a relevant contributor to aeronautical and space research (G.5), though the overlap is indirect."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

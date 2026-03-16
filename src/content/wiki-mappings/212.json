@@ -1,54 +1,287 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "212",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "Earth provides the foundational context for understanding the planet's physical properties covered in this section.",
+      "articleTitle": "Gravity",
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.2",
         "A.3",
         "A.3.a",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Moon",
-      "rationaleAI": "The Moon exerts tidal forces on Earth, directly influencing the planet's physical properties including ocean tides and rotational dynamics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.3.a",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1"
-      ]
+        "A.3.b"
+      ],
+      "rationaleAI": "Directly covers Earth's gravitational field (A): Newton's law and Einstein's general relativity underpin gravitational acceleration measurement (A.2), isostasy (A.3.a), gravity anomalies (A.3.b), and the characteristics of the terrestrial gravitational field (A.1)."
     },
     {
       "articleTitle": "Internal structure of Earth",
-      "rationaleAI": "Earth's internal structure determines its physical properties treated here.",
       "relevantPathsAI": [
-        "A",
         "A.3",
-        "A.3.a",
+        "B.2",
+        "D.1",
+        "D.2",
+        "E.3",
+        "E.2"
+      ],
+      "rationaleAI": "Covers the Earth's layered interior directly supporting interpretation of gravity data (A.3), sources of the magnetic field from the liquid outer core (B.2), heat sources and geothermal transmission (D.1, D.2), and the basic internal mechanical properties (E.3); seismic wave analysis (E.2) is the primary method for probing the interior."
+    },
+    {
+      "articleTitle": "Magnetism",
+      "relevantPathsAI": [
         "B",
+        "B.1",
         "B.2",
         "B.3",
+        "F.4"
+      ],
+      "rationaleAI": "Covers the physics of magnetic fields essential to understanding the Earth's magnetic field (B): measurement techniques (B.1), sources in moving charged particles (B.2), magnetic classification of materials directly relevant to Earth's magnetic properties (F.4), and behavior of ferromagnetic materials."
+    },
+    {
+      "articleTitle": "Rock (geology)",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.4",
+        "F.5",
+        "F.6",
+        "G.1"
+      ],
+      "rationaleAI": "Directly covers the physical properties of Earth materials that form outline section F: density of igneous, sedimentary, and metamorphic rocks (F.1), mechanical properties (F.2), thermal properties (F.3), magnetic properties (F.4), hydraulic properties (F.5), and optical properties (F.6); also addresses rock stress and strain (G.1)."
+    },
+    {
+      "articleTitle": "Mineral",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.4",
+        "F.6"
+      ],
+      "rationaleAI": "Minerals are the primary Earth materials whose physical properties are catalogued in section F: density and specific gravity (F.1), magnetic susceptibility (F.4), and optical properties including colour and lustre (F.6) are standard mineralogical parameters."
+    },
+    {
+      "articleTitle": "Earthquake",
+      "relevantPathsAI": [
+        "E.2",
+        "G.3",
+        "E",
+        "G"
+      ],
+      "rationaleAI": "Earthquakes are directly relevant to seismic waves as a probe of the Earth's mechanical properties (E.2), fault rupture mechanics covering fracture in rocks (G.3), and the elastic-rebound theory underpinning rock stress and strain (G.1)."
+    },
+    {
+      "articleTitle": "Wave",
+      "relevantPathsAI": [
+        "E.2",
+        "E"
+      ],
+      "rationaleAI": "Covers seismic waves (P and S waves) as a category of mechanical waves, directly relevant to E.2 (nature of deformable media, seismic waves as models of stress-strain behavior), which are the primary tool for probing Earth's internal mechanical properties."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "G.2",
+        "G.3",
+        "D",
+        "A.3"
+      ],
+      "rationaleAI": "Geology encompasses structural geology (covering folding — G.2, fracture/faults — G.3, and structural interference — G.4), geothermal processes (D), and interpretation of gravity data (A.3) through geochemical dating and plate tectonics."
+    },
+    {
+      "articleTitle": "Electromagnetism",
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "F.4"
+      ],
+      "rationaleAI": "Provides the theoretical foundation for Earth's magnetic field (B) and electrical properties (C): Maxwell's equations govern electromagnetic induction currents in the Earth's core and rocks, as well as the electrical conductivity of Earth materials (F.4)."
+    },
+    {
+      "articleTitle": "Electricity",
+      "relevantPathsAI": [
         "C",
         "C.1",
         "C.2",
         "C.3"
-      ]
+      ],
+      "rationaleAI": "Covers electric charge, currents, and electromagnetic induction directly relevant to section C: ionospheric currents from charged particle motion (C.1), electrical conductivity of Earth's rocks (C.2), and currents induced by magnetic-field variations (C.3)."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
+        "C.1",
+        "B.3"
+      ],
+      "rationaleAI": "The ionosphere is a layer of Earth's atmosphere where charged-particle currents are generated (C.1); the article also covers the atmosphere's electromagnetic environment and the aurora — manifestations of magnetic-field variations (B.3)."
+    },
+    {
+      "articleTitle": "Lightning",
+      "relevantPathsAI": [
+        "C.1",
+        "C"
+      ],
+      "rationaleAI": "Lightning is an electrostatic atmospheric discharge that drives the global electrical circuit and involves charge separation in the atmosphere, directly relevant to electrical properties (C.1) and the atmosphere's role in Earth's electrical environment."
+    },
+    {
+      "articleTitle": "Volcano",
+      "relevantPathsAI": [
+        "D.4",
+        "D.3"
+      ],
+      "rationaleAI": "Volcanoes are the primary surface manifestation of Earth's internal heat flow (D.4) and are produced by convection currents within the Earth driving magma upward (D.3)."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
+        "F.5",
+        "D.4"
+      ],
+      "rationaleAI": "Water directly governs hydraulic properties of Earth materials — porosity and permeability, capacity to store and transmit fluids (F.5) — and is the medium of hot springs and geysers as surface manifestations of heat flow (D.4)."
+    },
+    {
+      "articleTitle": "Iron",
+      "relevantPathsAI": [
+        "F.4",
+        "B.2",
+        "D.1",
+        "F.1"
+      ],
+      "rationaleAI": "Iron is the primary constituent of Earth's core, making it essential to the sources of Earth's magnetic field (B.2) and heat (D.1 via radioactive isotopes); iron's density (F.1) and ferromagnetic properties (F.4) are central to Earth material characterization."
+    },
+    {
+      "articleTitle": "Mountain",
+      "relevantPathsAI": [
+        "D.3",
+        "G.2",
+        "G.2.a",
+        "A.3.a"
+      ],
+      "rationaleAI": "Mountain building is explicitly named in D.3 (geologic aspects of heat flow: convection currents, rock metamorphism, and mountain building); tectonic folding (G.2.a) is the structural mechanism of orogeny, and mountains provide key data on isostasy (A.3.a)."
+    },
+    {
+      "articleTitle": "Himalayas",
+      "relevantPathsAI": [
+        "G.2.a",
+        "D.3",
+        "A.3.a"
+      ],
+      "rationaleAI": "The Himalayas, formed by Indian-Eurasian plate collision, are a prime example of tectonic folding (G.2.a) and mountain building by convection-driven processes (D.3), and their crustal thickness exemplifies isostasy principles (A.3.a)."
+    },
+    {
+      "articleTitle": "Salt",
+      "relevantPathsAI": [
+        "G.2.d",
+        "F",
+        "F.1"
+      ],
+      "rationaleAI": "Salt domes are explicitly named in the outline at G.2.d as diapiric structures; the article covers salt as a mineral with physical properties (density, F.1) and its role in geological diapirism."
+    },
+    {
+      "articleTitle": "Continent",
+      "relevantPathsAI": [
+        "A.3.a",
+        "E.4"
+      ],
+      "rationaleAI": "Continental crust and tectonic plates are central to isostasy (A.3.a — elevation balanced by crustal density differences) and to lateral variations in crustal structure that cause Earth's departures from spherical symmetry (E.4)."
+    },
+    {
+      "articleTitle": "Ocean",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b",
+        "F.5"
+      ],
+      "rationaleAI": "Ocean basins provide gravity anomaly data (A.3.b) and are central to isostasy discussions (A.3.a — oceanic vs. continental crustal densities); ocean floor sediments also illustrate hydraulic properties of Earth materials (F.5)."
+    },
+    {
+      "articleTitle": "Solid",
+      "relevantPathsAI": [
+        "F",
+        "F.2",
+        "F.3",
+        "G.1.b"
+      ],
+      "rationaleAI": "Covers the mechanical, thermal, and structural properties of crystalline and amorphous solids (F.2, F.3) relevant to Earth material characterization; crystalline vs. amorphous distinction maps to elastic vs. plastic deformation of rocks (G.1.b)."
+    },
+    {
+      "articleTitle": "Light",
+      "relevantPathsAI": [
+        "F.6"
+      ],
+      "rationaleAI": "Optical properties of Earth materials — colour and lustre (F.6) — involve the interaction of visible light with mineral and rock surfaces, making this article relevant to understanding what F.6 describes."
+    },
+    {
+      "articleTitle": "Michael Faraday",
+      "relevantPathsAI": [
+        "B.1",
+        "B",
+        "C.3"
+      ],
+      "rationaleAI": "Faraday's discovery of electromagnetic induction and formulation of field-line concepts directly underpin the measurement and representation of magnetic fields (B.1) and the currents induced by magnetic-field variations in the Earth (C.3)."
+    },
+    {
+      "articleTitle": "Gold",
+      "relevantPathsAI": [
+        "F.1",
+        "F.6",
+        "F.4"
+      ],
+      "rationaleAI": "Gold's high density, characteristic optical properties (yellow colour, lustre — F.6), and corrosion resistance make it relevant to the physical properties of Earth materials section, particularly F.1 (density) and F.6 (optical properties)."
+    },
+    {
+      "articleTitle": "Chemical element",
+      "relevantPathsAI": [
+        "F.1",
+        "F.4",
+        "D.1"
+      ],
+      "rationaleAI": "Chemical elements define the composition of Earth materials and their physical properties: elemental abundance affects rock density (F.1), magnetic and electrical properties (F.4), and radioactive elements (U, Th, K) are sources of Earth's internal heat (D.1)."
+    },
+    {
+      "articleTitle": "Liquid",
+      "relevantPathsAI": [
+        "F.5",
+        "D.4"
+      ],
+      "rationaleAI": "Liquid properties such as viscosity and flow govern hydraulic properties of Earth materials — permeability and fluid transport (F.5) — and liquid water is the medium of hot springs and geysers (D.4)."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "B.3",
+        "C.1"
+      ],
+      "rationaleAI": "Solar electromagnetic radiation drives ionospheric charging and auroral phenomena (C.1), and radiation-driven particle streams cause magnetic storms and substorms (B.3) — both key variations in Earth's magnetic and electrical fields."
+    },
+    {
+      "articleTitle": "Optics",
+      "relevantPathsAI": [
+        "F.6"
+      ],
+      "rationaleAI": "The optical properties of Earth materials (F.6 — colour and lustre) are governed by the interaction of light with material surfaces and crystal structures, topics covered in optics through reflection, refraction, and absorption."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Covers Earth's gravitational field (A), magnetic field via the magnetosphere and liquid outer core (B), thermal and tectonic activity (D), and mechanical behavior as a planet (E) — directly spanning the major themes of Section 212."
+    },
+    {
+      "articleTitle": "Sun",
+      "relevantPathsAI": [
+        "D.1",
+        "B.3"
+      ],
+      "rationaleAI": "Solar radiation is a minor source of Earth's surface heat (D.1), and solar wind interactions drive magnetic storms and magnetospheric substorms that constitute variations in Earth's main magnetic field (B.3)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

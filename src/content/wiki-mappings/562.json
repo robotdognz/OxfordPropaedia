@@ -1,78 +1,184 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "562",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Education systems around the world reflect diverse societal approaches to learning.",
-      "relevantPathsAI": [
-        "B.5.c",
-        "B.8.a"
-      ]
-    },
-    {
       "articleTitle": "Education",
-      "rationaleAI": "Educational systems around the world reflect diverse approaches to curriculum, pedagogy, and institutional structure.",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.2",
         "A.3",
-        "A.3.e",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Charlemagne",
-      "rationaleAI": "Charlemagne's promotion of learning and monastic schools launched the Carolingian Renaissance in education.",
-      "relevantPathsAI": [
-        "A",
-        "A.3.e",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e",
-        "B.2"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Comprehensively covers all aspects of Section 562: types of educational systems (centralized, decentralized, sectarian) at A.3, formation of educational policy at A.1, administrative procedures at A.2, and the full historical arc of education from ancient oral transmission through medieval institutions to modern universal schooling across B.1–B.8."
     },
     {
       "articleTitle": "School",
-      "rationaleAI": "Schools exist in various forms across education systems around the world.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
+        "A.2",
         "A.3",
+        "A.3.a",
         "A.3.b",
-        "A.3.e",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c"
-      ]
+        "A.3.e"
+      ],
+      "rationaleAI": "Directly covers the institutional structures and administrative functions of schooling at A.2 and A.3, distinguishing public, private, religious, and online models that map to centralized, decentralized, and sectarian system types at A.3.a–e."
     },
     {
-      "articleTitle": "University",
-      "rationaleAI": "Universities exist in various forms across education systems around the world.",
+      "articleTitle": "Renaissance",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.3.c",
-        "A.3.e",
-        "B",
-        "B.1",
-        "B.1.a",
+        "B.5",
+        "B.5.a",
+        "B.5.b",
+        "B.5.c"
+      ],
+      "rationaleAI": "Directly covers B.5 (European education during the Renaissance), including the humanistic tradition in Italy at B.5.b and its spread to northern and western Europe at B.5.c, along with the Arabic and secular influences on humanism at B.5.a."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "Comprehensively covers B.3 (education in the European Middle Ages): monasticism and early monastic schools at B.3.a, the Carolingian revival at B.3.b, and the 12th-century renaissance with rise of universities at B.3.c."
+    },
+    {
+      "articleTitle": "Byzantine Empire",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Directly addresses Byzantine education at B.2.b, covering the empire's preservation of Greek Christian and humanistic culture and development of educational institutions throughout its history from the 4th century through 1453."
+    },
+    {
+      "articleTitle": "Charlemagne",
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "Charlemagne's administrative and educational reforms—standardized literacy, promotion of learning, and the Carolingian Renaissance—directly instantiate B.3.b (the cultural revival under Charlemagne and his successors)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "B.6",
+        "B.6.a",
+        "B.6.b",
+        "B.6.c"
+      ],
+      "rationaleAI": "Covers the 17th–18th century social and historical setting at B.6.a, educational theories and practices (Locke, Rousseau) at B.6.b, and the influence of European Enlightenment thought on New World educational development at B.6.c."
+    },
+    {
+      "articleTitle": "Reformation",
+      "relevantPathsAI": [
+        "B.5.d"
+      ],
+      "rationaleAI": "The Protestant Reformation and Catholic Counter-Reformation directly shaped B.5.d, as both movements drove new educational institutions, catechetical instruction, and the use of printing to disseminate literacy and religious learning."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.2.d",
+        "B.4"
+      ],
+      "rationaleAI": "Covers Islamic education at B.2.d through the Abbasid caliphate's patronage of scholarship and institutions like the House of Wisdom, and also contributes to B.4 (Asian civilizations from c. 700) through transmission of knowledge across the Islamic world."
+    },
+    {
+      "articleTitle": "Ancient Rome",
+      "relevantPathsAI": [
+        "B.1.e"
+      ],
+      "rationaleAI": "Ancient Rome's educational institutions—grammar schools, rhetoric, the cursus honorum, and Latin literary culture—directly address B.1.e (ancient Roman education)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "B.1.d"
+      ],
+      "rationaleAI": "Ancient Greek education—the paideia, Socratic method, Platonic Academy, Aristotle's Lyceum, and gymnasium culture—directly addresses B.1.d (ancient Greek education)."
+    },
+    {
+      "articleTitle": "Confucius",
+      "relevantPathsAI": [
         "B.1.b",
-        "B.1.c"
-      ]
+        "B.4.b"
+      ],
+      "rationaleAI": "Confucius's educational philosophy and its institutionalization in Chinese statecraft directly addresses B.1.b (ancient Chinese education) and informs B.4.b (Chinese education from 618 to 1911) through Confucianism's role in the imperial examination system."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "B.7.c"
+      ],
+      "rationaleAI": "Napoleon's lycée system and administrative centralization of French education is a direct example of B.7.c (development of national systems of education in the 19th century)."
+    },
+    {
+      "articleTitle": "Catherine the Great",
+      "relevantPathsAI": [
+        "B.6.b",
+        "B.6"
+      ],
+      "rationaleAI": "Catherine II founded universities and the Smolny Institute (Europe's first state-financed higher education for women) in the 18th-century Enlightenment context, directly illustrating B.6.b (educational theories and practices) and B.6 broadly."
+    },
+    {
+      "articleTitle": "Johannes Gutenberg",
+      "relevantPathsAI": [
+        "B.5",
+        "B.6.b"
+      ],
+      "rationaleAI": "The movable-type printing press enabled the mass dissemination of texts that underpinned Renaissance and Reformation educational reforms at B.5, and shaped educational theories and practices in subsequent centuries at B.6.b."
+    },
+    {
+      "articleTitle": "Holy Roman Empire",
+      "relevantPathsAI": [
+        "B.3",
+        "B.5.d"
+      ],
+      "rationaleAI": "The Holy Roman Empire's political and ecclesiastical structure framed medieval European education at B.3 (monastic schools, cathedral schools, early universities), and the Reformation's disruption of education within its territories connects to B.5.d."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.d",
+        "B.4"
+      ],
+      "rationaleAI": "This global period (c. 500–1450) directly encompasses the spread of Islamic education at B.2.d and Asian civilizations' educational traditions at B.4, providing the comparative historical framework for both outline nodes."
+    },
+    {
+      "articleTitle": "Modern era",
+      "relevantPathsAI": [
+        "B.7",
+        "B.7.a",
+        "B.8",
+        "B.8.a"
+      ],
+      "rationaleAI": "Covers the 19th–20th century social setting of education (nationalism, industrialism, urbanization) at B.7.a and the 20th-century political, social, and intellectual trends affecting education at B.8.a."
+    },
+    {
+      "articleTitle": "History of Europe",
+      "relevantPathsAI": [
+        "B.5",
+        "B.6",
+        "B.7"
+      ],
+      "rationaleAI": "Traces European educational history from the Renaissance through Enlightenment to 19th-century national systems, providing contextual grounding for B.5, B.6, and B.7 as a whole."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "B.8.c",
+        "B.8.d"
+      ],
+      "rationaleAI": "Globalization directly relates to B.8.c (modernization of education in Asia and Africa) and B.8.d (education in colonies and newly emerging nations), as the global spread of Western educational models was driven by the same economic and cultural integration processes."
+    },
+    {
+      "articleTitle": "Romanticism",
+      "relevantPathsAI": [
+        "B.7.b"
+      ],
+      "rationaleAI": "The Romantic movement generated significant educational reform thinking—Pestalozzi, Froebel, the new pedagogy emphasizing child-centered learning—that directly maps to B.7.b (early reform movements and the new pedagogy)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,337 +1,233 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "721",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Energy conversion and utilization technology is a major area covered by this article.",
-      "relevantPathsAI": [
-        "B.8.b",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Sun",
-      "rationaleAI": "Solar energy is a fundamental source of energy for Earth, and solar technology converts sunlight into usable power.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.5",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Fire",
-      "rationaleAI": "Combustion is a fundamental energy conversion process, from ancient hearths to modern internal combustion engines.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Electricity",
-      "rationaleAI": "Electrical power generation and distribution are central to modern energy conversion and utilization technology.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.4.a",
-        "B.5",
-        "B.5.a",
-        "B.5.b",
-        "C.3",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Energy",
-      "rationaleAI": "Energy conversion and utilization technology transforms energy from natural sources into usable power for human purposes.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.8.a",
-        "B.9",
-        "C.4",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Michael Faraday",
-      "rationaleAI": "Faraday's work on electromagnetic induction enabled the development of electric power generation technology.",
-      "relevantPathsAI": [
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Thomas Edison",
-      "rationaleAI": "Edison's inventions in electric lighting and power distribution transformed energy conversion and utilization technology.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.5.b",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Nikola Tesla",
-      "rationaleAI": "Tesla's AC motor and power transmission inventions were foundational to modern energy conversion and utilization technology.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.4.b",
-        "B.5",
-        "B.5.b",
-        "B.8.a",
-        "B.9"
-      ]
-    },
-    {
-      "articleTitle": "Electric battery",
-      "rationaleAI": "Batteries convert chemical energy to electrical energy as treated in energy technology.",
-      "relevantPathsAI": [
-        "B.4.a",
-        "B.5.b",
-        "C.3",
-        "C.4",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Explosive",
-      "rationaleAI": "Explosives release chemical energy rapidly as a form of energy conversion.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Fossil fuel",
-      "rationaleAI": "Fossil fuels are the primary energy sources for conversion and utilization technology.",
-      "relevantPathsAI": [
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Coal",
-      "rationaleAI": "Coal is a major fossil fuel used in energy conversion and utilization.",
-      "relevantPathsAI": [
-        "B",
-        "B.8.a",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Natural gas",
-      "rationaleAI": "Natural gas is a major fossil fuel used in energy conversion and utilization.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.4.c",
-        "B.5",
-        "B.8.a"
-      ]
-    },
-    {
-      "articleTitle": "Petroleum",
-      "rationaleAI": "Petroleum is a primary fossil fuel for energy conversion and utilization.",
-      "relevantPathsAI": [
-        "B.8.b",
-        "C.4",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Nuclear power",
-      "rationaleAI": "Nuclear power converts atomic energy to electricity as treated in energy technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Renewable energy",
-      "rationaleAI": "Renewable energy sources are converted and utilized through the technologies treated here.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.9",
-        "B.10"
-      ]
-    },
-    {
-      "articleTitle": "Hydropower",
-      "rationaleAI": "Hydropower converts the kinetic energy of water into electricity as treated here.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.4.c",
-        "B.4.d",
-        "B.5",
-        "B.9"
-      ]
-    },
-    {
-      "articleTitle": "Solar energy",
-      "rationaleAI": "Solar energy technology converts sunlight into usable energy forms.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.7",
-        "B.9",
-        "B.10"
-      ]
-    },
-    {
-      "articleTitle": "Wind power",
-      "rationaleAI": "Wind power converts atmospheric kinetic energy to electricity as treated here.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.5",
-        "B.5.b",
-        "B.8.a",
-        "B.9"
-      ]
-    },
-    {
-      "articleTitle": "Refrigeration",
-      "rationaleAI": "Refrigeration is a technology of energy conversion and utilization.",
-      "relevantPathsAI": [
-        "B",
-        "B.4",
-        "B.4.c",
-        "B.5",
-        "B.5.b",
-        "B.8.a",
-        "B.8.b",
-        "C.1",
-        "C.5"
-      ]
-    },
-    {
       "articleTitle": "Engine",
-      "rationaleAI": "Engines are prime movers that convert energy sources into mechanical work.",
       "relevantPathsAI": [
-        "B.4.a",
-        "B.4.d",
-        "B.5.b",
-        "B.8.a",
-        "C.3",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Electric motor",
-      "rationaleAI": "Electric motors convert electrical energy to mechanical energy.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
         "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
         "B.4.a",
-        "B.4.c",
-        "B.4.d"
-      ]
+        "B.8.a"
+      ],
+      "rationaleAI": "Directly covers the major device categories in outline B: internal combustion engines (B.8.a) and steam engines (B.4.a) are both explicitly listed under devices for utilizing chemical and strain/compression energy, and the article treats the full taxonomy of energy-to-mechanical-work conversion."
     },
     {
       "articleTitle": "Internal combustion engine",
-      "rationaleAI": "Internal combustion engines convert chemical fuel energy into mechanical work.",
       "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.4.a",
-        "B.4.c",
-        "B.5",
+        "B.8.a"
+      ],
+      "rationaleAI": "Exactly the topic named at B.8.a — gasoline, diesel, jet, turbojet, fan-jet, turboprop, and rocket engines are all internal combustion types covered in the article, matching the outline's explicit enumeration."
+    },
+    {
+      "articleTitle": "Electric motor",
+      "relevantPathsAI": [
         "B.5.b"
-      ]
+      ],
+      "rationaleAI": "The outline at B.5.b names induction motors, synchronous motors, and commutator motors utilizing AC and DC — precisely the taxonomy the article covers under devices for utilizing magnetic and electrical energy."
+    },
+    {
+      "articleTitle": "Electric battery",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "C.4 explicitly lists batteries and fuel cells as energy-conversion devices; the article covers the electrochemical cell principle, primary vs. rechargeable types, and energy storage — direct coverage of this path."
+    },
+    {
+      "articleTitle": "Semiconductor",
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "D.2 names transistors, semiconductor diodes, and integrated circuits; D.3 names liquid-crystal displays, optical fibres, and semiconductor lasers — all treated in this article on semiconductor physics and devices."
+    },
+    {
+      "articleTitle": "Electronics",
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "The article covers transistors, diodes, and integrated circuits (D.2) and the semiconductor basis of optoelectronic devices (D.3), directly matching both solid-state and optoelectronic device categories in outline section D."
+    },
+    {
+      "articleTitle": "Nikola Tesla",
+      "relevantPathsAI": [
+        "B.5.b",
+        "C.7"
+      ],
+      "rationaleAI": "Tesla's AC induction motor design is the canonical device for B.5.b, and his polyphase AC power system underpins turbine-driven generator infrastructure (C.7); the article covers both contributions substantively."
+    },
+    {
+      "articleTitle": "Gunpowder",
+      "relevantPathsAI": [
+        "B.8.b"
+      ],
+      "rationaleAI": "B.8.b explicitly names black powder as the first entry under chemical explosives; this article is the primary source on gunpowder's composition, history, and use as a low explosive and propellant."
     },
     {
       "articleTitle": "Steam engine",
-      "rationaleAI": "Steam engines convert thermal energy to mechanical work as treated here.",
       "relevantPathsAI": [
-        "A",
+        "B.4.a"
+      ],
+      "rationaleAI": "B.4.a directly names steam engines and steam power plants; the article covers Savery, Newcomen, and Watt designs, configurations, and the Rankine cycle — exact coverage of this outline path."
+    },
+    {
+      "articleTitle": "Electricity",
+      "relevantPathsAI": [
+        "B.5",
+        "C.7"
+      ],
+      "rationaleAI": "Covers electromagnetic induction and power generation principles underlying B.5 (magnetic and electrical energy devices) and C.7 (electric power generation), connecting foundational physics to the technology of electrical energy utilization."
+    },
+    {
+      "articleTitle": "Petroleum",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "A.3 lists nonrenewable energy sources including oil; the article treats petroleum's formation, extraction, and refining into fuels, covering oil as a primary nonrenewable energy source."
+    },
+    {
+      "articleTitle": "Nuclear power",
+      "relevantPathsAI": [
         "A.1",
+        "B.9"
+      ],
+      "rationaleAI": "A.1 includes nuclear fission and radioactivity among primary energy sources; B.9 names nuclear fission reactors, radioactive isotopes, and nuclear fusion reactors — all directly treated in this article on civilian nuclear power generation."
+    },
+    {
+      "articleTitle": "Hydropower",
+      "relevantPathsAI": [
         "A.2",
-        "A.3",
-        "B",
-        "B.1",
         "B.2",
-        "B.4",
-        "B.4.a",
-        "B.4.b"
-      ]
+        "C.7"
+      ],
+      "rationaleAI": "A.2 lists water energy among recurring sources; B.2 names water turbines; C.7 explicitly lists hydraulic-turbine-driven generators — the article covers all three aspects including pumped storage and dispatchability."
+    },
+    {
+      "articleTitle": "Plasma (physics)",
+      "relevantPathsAI": [
+        "A.1",
+        "C.3"
+      ],
+      "rationaleAI": "Plasma is the medium for thermonuclear fusion reactions (A.1) and is the working fluid in magnetohydrodynamic power generators (C.3), which the article addresses through MHD and fusion contexts."
+    },
+    {
+      "articleTitle": "Silicon",
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Silicon is the dominant material for the transistors, diodes, and ICs of D.2 and for semiconductor lasers and solar cell photovoltaics of D.3; the article explicitly covers both application domains."
     },
     {
       "articleTitle": "Electric light",
-      "rationaleAI": "Electric lighting is a key application of energy conversion technology.",
-      "relevantPathsAI": []
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "C.5 names lamps and other lighting devices as energy-conversion devices; the article covers all three lamp categories (incandescent, discharge, LED) as electrical-to-light converters — direct coverage of this path."
+    },
+    {
+      "articleTitle": "Rocket",
+      "relevantPathsAI": [
+        "B.8.a"
+      ],
+      "rationaleAI": "B.8.a explicitly lists rocket engines among internal combustion engine types; the article covers liquid, solid, monopropellant, and hybrid rocket propulsion in detail."
+    },
+    {
+      "articleTitle": "Laser",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "D.3 names semiconductor lasers among optoelectronic devices; the article covers semiconductor, gas, and solid-state laser types and their optoelectronic basis, directly fitting the optoelectronic device category."
+    },
+    {
+      "articleTitle": "Explosive",
+      "relevantPathsAI": [
+        "B.8.b"
+      ],
+      "rationaleAI": "B.8.b lists nitroglycerin, dynamites, nitrocellulosic explosives, and military explosives among chemical explosives; this article covers the full taxonomy of high and low explosives, sensitivity classification, and detonation properties."
+    },
+    {
+      "articleTitle": "Natural gas",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "A.3 explicitly lists natural gas as a nonrenewable energy source; the article covers methane composition, extraction, and use in power generation and heating."
+    },
+    {
+      "articleTitle": "Solar energy",
+      "relevantPathsAI": [
+        "A.2",
+        "B.10"
+      ],
+      "rationaleAI": "A.2 lists solar energy among recurring energy sources; B.10 names devices for utilizing solar energy — the article covers photovoltaic systems, concentrated solar power, and passive solar techniques, matching both paths."
+    },
+    {
+      "articleTitle": "Refrigeration",
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "B.7 explicitly names refrigeration equipment alongside heat exchangers under devices for utilizing heat energy; the article covers vapor-compression, absorption, thermoelectric, and magnetic refrigeration cycles in full detail."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Section A surveys major types of energy useful to humankind; this article provides the foundational definitions and taxonomy of all energy forms (chemical, thermal, nuclear, radiant, kinetic, potential) that underpin all of section A's categories."
+    },
+    {
+      "articleTitle": "Fossil fuel",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "A.3 lists coal, natural gas, and oil as nonrenewable energy sources; the article covers all three fossil fuels together, their formation, and their dominance as primary energy sources."
+    },
+    {
+      "articleTitle": "Radioactive decay",
+      "relevantPathsAI": [
+        "A.1",
+        "B.9"
+      ],
+      "rationaleAI": "A.1 includes radioactivity among primary energy sources; B.9 mentions radioactive isotopes as devices for utilizing nuclear energy — the article covers decay modes, half-lives, and applications including nuclear energy production and medical isotopes."
+    },
+    {
+      "articleTitle": "Wind",
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "A.2 includes wind energy among recurring sources; B.2 names windmills and wind turbines as devices for utilizing wind energy — the article covers wind physics, generation mechanisms, and power generation applications."
+    },
+    {
+      "articleTitle": "Coal",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "A.3 explicitly names coal as a nonrenewable energy source; the article covers coal grades, energy content, and its role as the largest single source in global electricity generation."
+    },
+    {
+      "articleTitle": "Simple machine",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "B.1 names the pulley, lever, and block and tackle among devices for utilizing muscle energy; simple machines are the direct topic, covering all six classical devices including pulley and treadmill referenced in the outline."
+    },
+    {
+      "articleTitle": "Dam",
+      "relevantPathsAI": [
+        "B.2",
+        "C.7"
+      ],
+      "rationaleAI": "B.2 covers water turbines and hydropower infrastructure; C.7 lists hydraulic-turbine-driven generators — dams are the enabling structures for both, and the article explicitly covers hydroelectric power generation."
+    },
+    {
+      "articleTitle": "Electron",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Electron tubes (D.1) and solid-state devices (D.2) both depend on electron behavior; the article covers free electrons enabling cathode ray tubes (D.1) and carrier electrons in semiconductor devices (D.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

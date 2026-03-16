@@ -194,13 +194,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Drugs affecting the immune response system",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Drugs affecting the histamine response system",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Drugs affecting the histamine response system",
+                  "children": []
+                }
+              ]
             }
           ]
         },

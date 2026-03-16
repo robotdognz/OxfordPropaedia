@@ -17,13 +17,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Myanmar from c. 1600 to c. 1920",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Renewed expansionism and wars with the Mons, Thais, and Chinese under the Alaungpaya dynasty from 1752: the First and Second Anglo-Burmese Wars (1824-26, 1852), traditional administration in Myanmar",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Renewed expansionism and wars with the Mons, Thais, and Chinese under the Alaungpaya dynasty from 1752: the First and Second Anglo-Burmese Wars (1824-26, 1852), traditional administration in Myanmar",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -36,13 +36,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Malaya from c. 1630 to c. 1920: loss of autonomy through Dutch and British intrusions",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Dutch intervention in the Malay states and seizure of Malacca (1641), immigration of Minangkabau from Sumatra and Buginese from Celebes (mid- 17th- 18th century)",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Dutch intervention in the Malay states and seizure of Malacca (1641), immigration of Minangkabau from Sumatra and Buginese from Celebes (mid- 17th- 18th century)",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -125,13 +125,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "The Philippines to c. 1920",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The people and culture of the Philippines prior to the arrival of the Spanish",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The people and culture of the Philippines prior to the arrival of the Spanish",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -163,13 +163,14 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "The French and British in Java (1806-15), Dutch rule in the 19th century",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The Culture System (Cultuur-stelsel) and its deleterious effects on Java (1830-70): the Liberal Policy",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The Culture System (Cultuur-stelsel) and its deleterious effects on Java (1830-70): the Liberal Policy",
+                  "children": []
+                }
+              ]
             }
           ]
         }

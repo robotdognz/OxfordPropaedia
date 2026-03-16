@@ -1,261 +1,221 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "921",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Medieval Western Europe and the Byzantine Empire represent key eras in human history.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.i.iii",
-        "B.3",
-        "B.3.b",
-        "B.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Post-classical history",
-      "rationaleAI": "Post-classical history covers Western Europe and the Byzantine Empire from the fall of Rome through the medieval period.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.i.ii",
-        "B.2.i.iii",
-        "B.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Europe",
-      "rationaleAI": "Medieval Europe saw the development of feudalism, the Byzantine Empire, and the emergence of European nation-states.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii"
-      ]
-    },
-    {
       "articleTitle": "Charlemagne",
-      "rationaleAI": "Charlemagne united much of Western Europe under Frankish rule and shaped the political foundations of medieval Christendom.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i",
-        "B.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "History of Europe",
-      "rationaleAI": "Medieval European history shaped the foundations of Western Christendom and the Byzantine Empire.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Middle Ages",
-      "rationaleAI": "The Middle Ages defined the political, religious, and social order of Western Europe and the Byzantine Empire.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i",
-        "B.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Byzantine Empire",
-      "rationaleAI": "The Byzantine Empire was the continuation of the Eastern Roman Empire and a defining power of medieval Europe and Southwest Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.i.ii",
-        "B.2.i.iii",
-        "B.2.c"
-      ]
+        "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.1.c",
+        "D.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Charlemagne is the central figure of D.1 (Carolingian Empire), with his military expansion, legislative and ecclesiastical reforms, and Carolingian Renaissance at D.1.a; his successors' dissolution of the empire at D.1.b\u2013D.1.d; and his position as the foremost early Carolingian at B.2.i.iii."
     },
     {
       "articleTitle": "Holy Roman Empire",
-      "rationaleAI": "The Holy Roman Empire was the principal political entity of medieval Central Europe for nearly a millennium.",
       "relevantPathsAI": [
-        "A",
+        "D.3",
+        "D.3.a",
+        "D.3.b",
+        "D.1",
+        "D.1.b"
+      ],
+      "rationaleAI": "The Holy Roman Empire covers its Carolingian origins (D.1, D.1.b), Otto I's establishment of the empire in 962 (D.3.b), and the development of German imperial institutions including the Saxon and early Salian dynasties (D.3.a\u2013D.3.b)."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
         "B",
         "B.1",
-        "B.1.a",
-        "B.1.b",
         "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i",
-        "B.2.i.ii"
-      ]
+        "B.3",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "The Middle Ages article is a broad survey covering all major themes of Section 921: Germanic migrations, the Carolingian Empire, feudalism and the Church, Byzantine survival, the Viking Age, Crusades, and the emergence of centralized kingdoms, corresponding to sections B through F."
     },
     {
       "articleTitle": "Viking Age",
-      "rationaleAI": "The Viking Age saw Norse seafarers expand across Europe, shaping the medieval history of Western and Eastern Europe.",
       "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii",
+        "D.2.c",
+        "D.2.a",
+        "E.2.c",
+        "E.2.d",
+        "E.2.e"
+      ],
+      "rationaleAI": "The Viking Age directly addresses D.2.c (Viking Age in Scandinavia, raids, settlements, and Christianization), D.2.a (Danish invasions of England and Alfred's policies), and E.2.c\u2013E.2.e (Varangian exploration, Rus raids on Constantinople, and the Kievan Rus state)."
+    },
+    {
+      "articleTitle": "Byzantine Empire",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.d",
+        "C.2.e",
+        "C.3",
+        "C.3.a",
+        "C.3.b",
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
+        "B.2.a"
+      ],
+      "rationaleAI": "The Byzantine Empire is the central subject of sections C (early Byzantine Empire, 395\u2013717) and F (zenith and decline, 717\u20131081), covering Justinian's reconquests, the Iconoclasm controversy, Macedonian expansion and legal reforms, and eventual decline and schism with Rome."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Post-classical history (c. 500\u20131450 CE) covers the period that constitutes the core of Section 921, including the Germanic successor states, Carolingian Empire, Byzantine continuity, feudalism, and Slavic state formation \u2014 all directly covered in this article's broad thematic survey."
+    },
+    {
+      "articleTitle": "Crusades",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "The Crusades are directly relevant to F.3 (Byzantine decline and subjection to Western influences in the 11th century, the schism with Rome in 1054, and the beginning of Western military pressure on Byzantium that the Crusades represent), and the papally authorized expeditions connect to the broader D sections on the papacy's growing power."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
         "B.2.c"
-      ]
+      ],
+      "rationaleAI": "The Islamic Golden Age (8th\u201313th centuries) is substantively relevant to B.2.c (effects of the rise of Islam on western Europe), as the Abbasid intellectual flourishing and Islamic civilization's development directly shaped the context of Western Christendom during this period."
     },
     {
-      "articleTitle": "Poland",
-      "rationaleAI": "Medieval Poland is part of Eastern European history covered here.",
+      "articleTitle": "Ancient Rome",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
         "B.1.a",
         "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i",
-        "B.2.i.ii"
-      ]
+        "C.1",
+        "C.2",
+        "C.2.c",
+        "C.2.d"
+      ],
+      "rationaleAI": "Ancient Rome provides essential background for Section 921's opening, covering the late Roman Empire's general decline (B.1.a), the Germanic Volkerwanderung and end of the Western Empire (B.1), and the Eastern Roman state under Anastasius (C.2.c) and Justin I/Justinian (C.2.d)."
     },
     {
-      "articleTitle": "Istanbul",
-      "rationaleAI": "Constantinople was the capital of the Byzantine Empire covered here.",
+      "articleTitle": "Ottoman Empire",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "While the Ottoman Empire's main relevance is to later sections, its connection to Byzantine decline is relevant to F.3 (Byzantine decline and subjection to Western influences), as the Ottoman Turkic forces were among the new enemies arriving in the 11th century that would eventually absorb Byzantium."
+    },
+    {
+      "articleTitle": "History of Europe",
       "relevantPathsAI": [
         "A",
         "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.i.ii",
-        "B.2.i.iii",
-        "B.3"
-      ]
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "History of Europe broadly surveys the Middle Ages (500\u20131500) including the Byzantine Empire, Germanic migrations, feudalism, Carolingian Empire, Viking Age, and eastern European state formation \u2014 all core topics of Section 921's divisions B through F."
+    },
+    {
+      "articleTitle": "Black Death",
+      "relevantPathsAI": [
+        "F.2.c",
+        "F.3"
+      ],
+      "rationaleAI": "While the Black Death (1346\u20131353) falls slightly after Section 921's core chronological scope, its origins in Central Asia and effects on western Europe and Byzantium are relevant to F.2.c (social and economic change) and F.3 (Byzantine decline), as it is the culminating crisis of the medieval Byzantine and Western European world."
+    },
+    {
+      "articleTitle": "Mongol Empire",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "The Mongol Empire's westward expansion into Kievan Rus (1237\u201341) and destruction of Abbasid Baghdad (1258) connects to eastern European state formation in section E and the pressures on Byzantium relevant to F.3, providing context for the disruption of Eurasian political order at the end of the section's period."
     },
     {
       "articleTitle": "Rome",
-      "rationaleAI": "Rome's legacy shaped Western European civilization after AD 395.",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii"
-      ]
+        "C.1",
+        "C.2.d",
+        "D.3"
+      ],
+      "rationaleAI": "Rome as a city covers the papacy's political role emerging from late antiquity (D.3.i), the Justinianic reconquest of Italy (C.2.d), and the beginning of the Western Roman Empire's eclipse (B.1), with the Vatican's presence connecting to the Papal States that emerged in this section's period."
     },
     {
-      "articleTitle": "Christianity",
-      "rationaleAI": "Christianity shaped Western European civilization after AD 395.",
+      "articleTitle": "Martin Luther",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii"
-      ]
+        "B.3.a",
+        "D.1"
+      ],
+      "rationaleAI": "While Luther's Reformation (1517) falls after Section 921's scope, his article's context of Western Christianity and monasticism is moderately relevant to B.3.a (Christianization, monasticism, and the Western Church) and D.1.i.ii (the Cluniac order and Benedictine reform) as background to the religious tradition he later challenged."
     },
     {
-      "articleTitle": "Catholic Church",
-      "rationaleAI": "The Catholic Church was the dominant institution in early medieval Western Europe.",
+      "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.i.ii",
-        "B.2.i.iii",
-        "B.2.c"
-      ]
+        "C.2.a",
+        "E.2.c"
+      ],
+      "rationaleAI": "The Silk Road's Byzantine-era role in Mediterranean and Eurasian trade is relevant to C.2.a (Byzantine economic and social policies, foreign relations) and E.2.c (development of trade routes and the Khazar state), as these connect to the commercial networks tying Byzantium and the Kievan Rus to the broader Eurasian trading world."
     },
     {
-      "articleTitle": "Eastern Orthodox Church",
-      "rationaleAI": "The Orthodox Church was central to the Byzantine Empire.",
+      "articleTitle": "Germany",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i.ii",
-        "B.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Cyrillic script",
-      "rationaleAI": "Cyrillic script was developed in the Byzantine cultural sphere.",
-      "relevantPathsAI": [
-        "B.1.b",
-        "D.1.i",
+        "D.1.c",
+        "D.1.d",
+        "D.3",
         "D.3.a",
-        "D.6",
-        "E",
-        "E.2",
-        "E.2.a",
-        "E.3.i",
-        "E.3.b"
-      ]
+        "D.3.b"
+      ],
+      "rationaleAI": "Germany covers the East Frankish kingdom and stem duchies (D.1.c), dynastic rivalry in West Francia (D.1.d), and the development of the Holy Roman Empire under Saxon and early Salian rulers (D.3.a\u2013D.3.b), all central to Section 921's coverage of medieval German political history."
+    },
+    {
+      "articleTitle": "Joan of Arc",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Joan of Arc's role in the Hundred Years' War and her significance to medieval French political identity under the Capetian/Valois monarchy provides substantive content for D.4 (Kingdom of France under the Capetians), directly connecting to the struggles of the French monarchy against English domination."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Ibn Khaldun's Muqaddimah, with its theories of historical causation, state formation cycles, and sociological analysis, directly informs the historiographic and methodological concerns of path A (study of medieval and Byzantine history, historical sources, and historiographic problems)."
+    },
+    {
+      "articleTitle": "Istanbul",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.d",
+        "C.3",
+        "F"
+      ],
+      "rationaleAI": "Istanbul (as Constantinople/Byzantium) was the capital of the Byzantine Empire through the entire period covered by Section 921, making it directly relevant to sections C and F, including Justinian's reign (C.2.d), Heraclian reorganization (C.3), and the Macedonian era's zenith (F.2)."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.b",
+        "D.1.d",
+        "D.4"
+      ],
+      "rationaleAI": "France's history covers the Carolingian and Capetian medieval monarchies directly corresponding to D.1 (Carolingian Empire and dissolution), D.1.d (West Frankish kingdom and dynastic rivalry to 987), and D.4 (Kingdom of France under early Capetians, 987\u20131180)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,110 +1,186 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "221",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "The atmosphere is a key component of Earth's envelope directly addressed by this article.",
+      "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.1.a",
         "A.1.b",
-        "A.1.i.ii",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Atmosphere of Earth",
-      "rationaleAI": "The atmosphere article directly covers the composition, structure, and dynamics of Earth's atmospheric envelope.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i.ii",
         "A.2.a",
         "A.2.b",
         "A.2.c",
         "A.2.d",
         "A.3",
-        "A.3.i",
-        "A.3.i",
+        "A.3.a",
+        "A.3.b",
         "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Gas",
-      "rationaleAI": "Atmospheric gases compose Earth's atmosphere, the subject of this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Nitrogen",
-      "rationaleAI": "Nitrogen is the dominant component of Earth's atmosphere addressed in this section.",
-      "relevantPathsAI": [
-        "A.1.i.iii",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Cloud",
-      "rationaleAI": "Clouds form in the atmosphere from water vapor as treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Tropical cyclone",
-      "rationaleAI": "Tropical cyclones form within Earth's atmospheric circulation patterns treated here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.a"
-      ]
+      ],
+      "rationaleAI": "This article is the primary source for the entire A division of the outline: it covers compositional division (homosphere/heterosphere), thermal structure layering (troposphere, stratosphere, mesosphere, thermosphere, exosphere), and upper-atmosphere phenomena including the ozonosphere, ionosphere, and greenhouse effect. It directly addresses all priority coverage paths in A.2."
     },
     {
       "articleTitle": "Wind",
-      "rationaleAI": "Wind is the movement of atmospheric air driven by pressure gradients treated here.",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.4",
+        "B.4.b",
+        "B.5",
+        "B.5.a",
+        "B.5.c",
+        "B.7"
+      ],
+      "rationaleAI": "Wind covers the full scope of outline division B: differential solar heating as the cause of winds (B.2), trade winds (B.5.a), monsoons (B.5.c), westerlies and polar easterlies (B.4), and the Coriolis effect on global circulation (B.2). It also touches mean meridional circulations (B.7) through global circulation cells."
+    },
+    {
+      "articleTitle": "Weather",
+      "relevantPathsAI": [
+        "B",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.4.b",
+        "B.5"
+      ],
+      "rationaleAI": "Weather describes atmospheric circulation driven by solar heating gradients, jet streams, and cyclonic systems \u2014 directly covering outline paths B.2 (pressure-temperature-wind relations, Coriolis force), B.3 (jet streams), and B.4 (mid-latitude westerlies and cyclones). It bridges the large-scale motions of the atmosphere with observable short-term phenomena."
+    },
+    {
+      "articleTitle": "Tropical cyclone",
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.b"
+      ],
+      "rationaleAI": "Tropical cyclones are the primary subject of outline path B.5.b (tropical disturbances: hurricanes and typhoons): the article covers their warm-core low-pressure structure, formation over warm ocean surfaces, eye/eyewall dynamics, and geographic naming conventions (hurricanes, typhoons, cyclones)."
+    },
+    {
+      "articleTitle": "Storm",
+      "relevantPathsAI": [
+        "B.4.b",
+        "B.5.b"
+      ],
+      "rationaleAI": "Storms include mid-latitude cyclones and anticyclones (B.4.b) as well as tropical disturbances (B.5.b); the article covers the formation of low-pressure systems against high-pressure surroundings and encompasses thunderstorms, hurricanes, blizzards, and tornadoes \u2014 the full range of disturbed atmospheric states referenced in the outline."
+    },
+    {
+      "articleTitle": "Cloud",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.a",
+        "A.3.a"
+      ],
+      "rationaleAI": "Clouds are central to the water cycle in the homosphere (A.1.a.i) and their altitude classification directly reflects the thermal structure of the troposphere and stratosphere (A.2.a, A.2.b). Their role in modulating Earth's energy balance through UV reflection and infrared trapping connects to the ozonosphere discussion (A.3.a)."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Carbon dioxide covers the atmospheric carbon budget directly corresponding to outline path A.1.a.ii: as an atmospheric trace gas driving the greenhouse effect and the carbon cycle, it is the primary component of the homosphere's carbon budget."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Carbon's participation in the global carbon cycle \u2014 linking photosynthesis, respiration, fossil fuel formation, and atmospheric CO2 \u2014 directly covers the carbon budget component of the homosphere (A.1.a.ii)."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Water covers the global water cycle including evaporation, condensation, and precipitation that constitutes the water cycle component of the homosphere (A.1.a.i), as well as the role of water vapor in atmospheric moisture and climate."
+    },
+    {
+      "articleTitle": "Rain",
+      "relevantPathsAI": [
+        "A.1.a",
+        "B.5.c",
+        "B.7"
+      ],
+      "rationaleAI": "Rain is the dominant freshwater delivery mechanism globally, directly relevant to the water cycle in the homosphere (A.1.a.i). Its formation mechanisms \u2014 frontal lifting, convection, orographic uplift \u2014 and control by monsoon circulation (B.5.c) and the Intertropical Convergence Zone make it central to outline paths on tropical wind systems and mean meridional circulations."
+    },
+    {
+      "articleTitle": "Lightning",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.3.a"
+      ],
+      "rationaleAI": "Lightning drives atmospheric nitrogen fixation (A.1.a.iii, nitrogen budget in the homosphere) and ozone production (A.3.a), and it influences the global electrical circuit. Its connection to atmospheric chemistry in the homosphere makes it directly relevant to both the nitrogen and carbon/sulfur budget paths."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Electromagnetic radiation is foundational to A.3.a.i (the ozonosphere's absorption of ultraviolet radiation harmful to life) and A.3.b (the ionosphere, where ionization results from solar electromagnetic input and affects radio wave propagation as noted in A.3.b.iii)."
+    },
+    {
+      "articleTitle": "Light",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Light's coverage of ultraviolet wavelengths and the ozone layer's role in absorbing biologically harmful UV radiation (400 nm and below) directly addresses A.3.a.i; the article's treatment of wavelength-dependent atmospheric interactions provides the physical basis for understanding ozonospheric protection."
+    },
+    {
+      "articleTitle": "Snow",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Snow is solid precipitation representing a key component of the atmospheric water cycle (A.1.a.i): it covers ice crystal nucleation within clouds, snowpack accumulation as freshwater storage, and seasonal runoff patterns, directly contributing to the water budget of the homosphere."
+    },
+    {
+      "articleTitle": "Climate",
       "relevantPathsAI": [
         "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.a"
-      ]
+        "B",
+        "B.7"
+      ],
+      "rationaleAI": "Climate is the long-term statistical pattern of all meteorological variables driven by atmospheric circulation, covering the composition and structure of the atmosphere (A broadly) and the large-scale motions (B) including mean meridional circulations (B.7) and their role in global climate classification systems like K\u00f6ppen."
+    },
+    {
+      "articleTitle": "Indian Ocean",
+      "relevantPathsAI": [
+        "B.5.c"
+      ],
+      "rationaleAI": "The Indian Ocean article covers monsoon-driven climate, Walker circulation, and unique upwelling patterns \u2014 directly relevant to outline path B.5.c (monsoons as tropical wind systems). The Indian Ocean monsoon is the world's most prominent monsoon system and is the canonical example for this outline path."
+    },
+    {
+      "articleTitle": "Outer space",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c"
+      ],
+      "rationaleAI": "Outer space defines the boundary region above Earth's exosphere (A.3.c), with the K\u00e1rm\u00e1n line at 100 km marking the conventional onset of space. The article's discussion of near-Earth space environment, particle densities, and electromagnetic radiation is relevant to ionospheric and exospheric boundary conditions (A.3.b and A.3.c)."
+    },
+    {
+      "articleTitle": "Gas",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a"
+      ],
+      "rationaleAI": "Gas covers the properties of gaseous matter \u2014 including the ideal gas laws, kinetic theory, and the behavior of gas mixtures like air \u2014 providing the physical foundation for understanding the homosphere's composition and behavior (A.1 and A.1.a)."
+    },
+    {
+      "articleTitle": "Season",
+      "relevantPathsAI": [
+        "B.7",
+        "B.5"
+      ],
+      "rationaleAI": "Seasons are driven by Earth's axial tilt, producing systematic variation in solar flux and atmospheric circulation patterns across latitudes \u2014 relevant to mean meridional circulations (B.7) and the seasonal shifts in tropical wind systems (B.5) including trade winds and monsoons."
+    },
+    {
+      "articleTitle": "Arctic Ocean",
+      "relevantPathsAI": [
+        "B.6",
+        "B.6.a"
+      ],
+      "rationaleAI": "The Arctic Ocean is the environment in which polar-night westerlies and polar atmospheric dynamics operate; its sea-ice dynamics and extreme cold are central to polar atmospheric circulation (B.6 and B.6.a), which are priority coverage paths with no other source type recommendations."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

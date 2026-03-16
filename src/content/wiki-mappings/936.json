@@ -1,100 +1,38 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "936",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Later Indian and Ceylonese history represents continued development in human civilization.",
+      "articleTitle": "Mughal Empire",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "B",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
         "C",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "The Delhi Sultanate and Mughal Empire represent major chapters in Asian history, blending Islamic and Indian cultural traditions.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.2.a",
+        "C.1",
+        "C.2",
         "C.2.a",
-        "E.1"
-      ]
+        "C.2.b",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "The Mughal Empire article is the primary source for the entire C section of the outline, covering Babur's conquest of North India (C.1), Akbar's extension and consolidation (C.2), the reigns of Jahangir, Shah Jahan, and Aurangzeb (C.3), and Mughal decline in the 18th century (C.4). It directly addresses all major political, administrative, and cultural developments outlined."
     },
     {
       "articleTitle": "Akbar",
-      "rationaleAI": "Akbar expanded and consolidated the Mughal Empire, shaping the Indian subcontinent's political and cultural landscape from c. 1200 to 1761.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1"
-      ]
+        "C.2",
+        "C.2.a",
+        "C.2.b"
+      ],
+      "rationaleAI": "Akbar is the central subject of C.2, covering his subjection of neighbouring territories including Bihar, Bengal, Afghanistan, and Kashmir (C.2.a) and his administrative, fiscal, military, judicial, and religious policies including Din-i Ilahi and abolition of jizya (C.2.b). This article provides the most direct and detailed coverage of these specific outline paths."
     },
     {
-      "articleTitle": "Mughal Empire",
-      "rationaleAI": "The Mughal Empire ruled much of the Indian subcontinent from the early 16th to mid-18th century.",
+      "articleTitle": "Timur",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.1.c",
-        "A.1.d",
-        "A.2",
-        "B",
-        "B.1.b",
-        "B.2",
-        "B.2.a",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Bangladesh",
-      "rationaleAI": "The Bengal region's pre-modern history is part of the Indian subcontinent from 1200.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Pakistan",
-      "rationaleAI": "The region's Islamic history is part of the Indian subcontinent from 1200.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2",
-        "B.2.a"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "Timur's sack of Delhi in 1398 is the Mughal invasion that caused the decline of Tughluq control specified in A.1.c, and his Timurid dynasty produced Babur, the founder of the Mughal Empire whose conquest is the subject of C.1. The article provides essential context for both the Delhi Sultanate's collapse and the Mughal Empire's Timurid-Mongol origins."
     },
     {
       "articleTitle": "Delhi",
-      "rationaleAI": "Delhi was the capital of the Delhi Sultanate and Mughal Empire.",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -102,54 +40,92 @@
         "A.1.b",
         "A.1.c",
         "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1"
-      ]
+        "A.1.e"
+      ],
+      "rationaleAI": "Delhi served as the capital of the Delhi Sultanate (1206–1526) throughout the entirety of section A, directly covering the successive dynasties (Slave, Khalji, Tughluq, Sayyid, Lodi) outlined in A.1.a–d and housing the Islamic cultural and architectural heritage central to A.1.e. The article addresses Delhi's role as the political center of Muslim hegemony over North India."
     },
     {
-      "articleTitle": "Sikhism",
-      "rationaleAI": "Sikhism emerged in the Indian subcontinent from the 15th century.",
+      "articleTitle": "Mongol Empire",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "The Mongol Empire's fragmentation produced Timur (whose invasion in 1398 is specified in A.1.c) and the Timurid lineage that founded the Mughal Empire (C.1). The article covers the Mongol-successor political landscape that directly shaped both the Delhi Sultanate's decline and the origins of Mughal rule."
     },
     {
-      "articleTitle": "Bengali language",
-      "rationaleAI": "Bengali developed in the Indian subcontinent covered in this section.",
+      "articleTitle": "India",
       "relevantPathsAI": [
-        "A.2",
+        "A",
         "B",
-        "B.2.a",
-        "C.2.a",
-        "D.2"
-      ]
+        "C",
+        "D"
+      ],
+      "rationaleAI": "India as a country article spans the full scope of Section 936, covering the Delhi Sultanate, Mughal Empire, and the broader political and cultural history of the subcontinent from 1200 to 1761. It provides essential context for all outline sections including North India under Muslim hegemony (A), Deccan and South India (B), Mughal unification (C), and Maratha emergence (D)."
     },
     {
-      "articleTitle": "Hindustani language",
-      "rationaleAI": "Hindustani developed in the Indian subcontinent covered in this section.",
+      "articleTitle": "Early modern period",
       "relevantPathsAI": [
+        "C",
+        "C.2",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "The early modern period article specifically covers Mughal India as one of its regional case studies within the 1500–1800 global framework, directly corresponding to the Akbar through Mughal decline arc in C.2–C.4. It situates Mughal governance, trade, and European contact within contemporaneous global transformations."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Ibn Khaldun (1332–1406) met Timur during his siege of Damascus and his Muqaddimah theorized the cyclical dynamics of dynasty formation and collapse directly illustrated by the Tughluq decline and Timur's invasion of Delhi (A.1.c). His historical sociology provides the closest contemporary analytical framework for the period's political upheaval."
+    },
+    {
+      "articleTitle": "Bangladesh",
+      "relevantPathsAI": [
+        "A.2",
+        "C.2.a"
+      ],
+      "rationaleAI": "Bangladesh's territory corresponds to historical Bengal, one of the regional kingdoms explicitly named in A.2 (14th-century rise of regional kingdoms including Bengal) and a territory conquered by Akbar as specified in C.2.a. The article covers Bengal's Sultanate period and Mughal incorporation substantively."
+    },
+    {
+      "articleTitle": "Pakistan",
+      "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.b",
-        "B.2.a",
-        "B.2.b"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "Pakistan's territory encompasses the northwestern regions of the Delhi Sultanate and the original base of Babur's Mughal conquest, directly relevant to A.1 (Delhi Sultanate's military and administrative control over North India) and C.1 (Mughal origins and conquest of North India). The article covers the historical geography of Muslim hegemony over this region."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "The Age of Discovery covers Portuguese Indian Ocean exploration and Vasco da Gama's 1498 arrival, providing direct context for the arrival of the Portuguese in Ceylon (1505) that marks the endpoint of E.1 and the section's overall timeline for Ceylon. The article explains the maritime expansion that transformed Ceylon's political situation."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Colonialism's discussion of European colonial expansion from the 15th century encompasses the Portuguese arrival in Ceylon (1505) that constitutes the closing event of E.1, providing analytical framework for understanding foreign invasions and the collapse of Sinhalese central authority outlined in that path."
+    },
+    {
+      "articleTitle": "Black Death",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "The Black Death spread via Mongol trade networks and affected the Islamic world including the Delhi Sultanate's contemporaneous contacts; it provides context for the instability and population disruption of the Tughluq period (A.1.c) when Muhammad ibn Tughluq's administrative reforms coincided with plague disruptions across the Muslim world."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "C.3",
+        "A.1.e"
+      ],
+      "rationaleAI": "The Silk Road's Islamic and Mughal-era trade networks provided the commercial infrastructure for Mughal India's integration with Central Asian, Iranian, and European trade (C.3), and facilitated the cultural exchanges that shaped the Delhi Sultanate's Islamic and Hindu religious developments (A.1.e)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

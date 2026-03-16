@@ -1,180 +1,226 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "825",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Indigenous East Asian religions developed within the historical civilizations of China, Korea, and Japan.",
+      "articleTitle": "Confucius",
       "relevantPathsAI": [
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
         "B.1",
         "B.1.b",
         "B.1.c",
-        "B.1.d",
-        "B.1.g",
-        "B.1.h"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Indigenous East Asian religions are integral to the social fabric of Chinese, Korean, and Japanese societies.",
-      "relevantPathsAI": [
-        "A.2.d",
-        "A.3",
-        "B.1.f",
-        "C.1.d",
-        "D.1",
-        "D.3",
-        "D.4",
-        "E.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Indigenous East Asian religions including Confucianism, Daoism, and Shinto represent major traditions in the comparative study of religion.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.4",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Confucius",
-      "rationaleAI": "Confucius founded Confucianism, the dominant ethical and philosophical tradition of East Asian civilization.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.5",
-        "A.6",
-        "B"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers the life and teachings of Confucius (B.1.b \u2014 origin in the life and teachings of Confucius, the first Sage) and the early Confucian school through Mencius and Xunzi (B.1.c), foundational to understanding Confucianism as both religion and philosophy (B.3)."
     },
     {
       "articleTitle": "Laozi",
-      "rationaleAI": "Laozi is the legendary founder of Taoism, one of the indigenous religions and philosophical traditions of China.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.5",
-        "A.6"
-      ]
+        "C.1.a",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Directly addresses the legendary founder of Taoism and the Tao Te Ching (C.1.a \u2014 origin and early developments of Taoism), which articulates the Tao, wu wei, and the foundational Taoist philosophical framework; also relevant to C.3 (Taoism as religion and philosophy)."
     },
     {
-      "articleTitle": "Martial arts",
-      "rationaleAI": "Many martial arts are rooted in East Asian religious and philosophical traditions.",
+      "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.b",
         "A.2.c",
         "A.2.d",
-        "A.3",
-        "B.1",
-        "B.1.c",
-        "B.1.d",
-        "B.1.g"
-      ]
-    },
-    {
-      "articleTitle": "Eastern philosophy",
-      "rationaleAI": "Eastern philosophy is deeply intertwined with East Asian religious traditions.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "B.1.c"
-      ]
+        "B.1.f",
+        "C.1.d"
+      ],
+      "rationaleAI": "The Tang dynasty period was central to Chinese religious history: the Confucian-Buddhist-Daoist synthesis (A.2.c \u2014 Buddhist dominance and Taoist cults; B.1.f \u2014 Confucianism during Buddhist ascendancy), woodblock printing affecting textual transmission, and tributary relations spreading these traditions to Korea and Japan."
     },
     {
       "articleTitle": "Confucianism",
-      "rationaleAI": "Confucianism is a foundational East Asian philosophical and religious tradition.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.5",
-        "A.6"
-      ]
-    },
-    {
-      "articleTitle": "Chinese folk religion",
-      "rationaleAI": "Chinese folk religion is an indigenous religion of East Asia covered here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.4",
-        "A.5"
-      ]
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.1.d",
+        "B.1.e",
+        "B.1.f",
+        "B.1.g",
+        "B.1.h"
+      ],
+      "rationaleAI": "Comprehensive coverage of Confucianism including its history from Confucius through Han state orthodoxy (B.1.d), introduction to Korea and Japan (B.1.e), role during Buddhist ascendancy (B.1.f), Neo-Confucian development (B.1.g), responses to Western challenge (B.1.h), and contemporary aspects (B.1.i), as well as Confucian literature and its status as religion and philosophy (B.2\u2013B.3)."
     },
     {
       "articleTitle": "Shinto",
-      "rationaleAI": "Shinto is an indigenous religion of Japan covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.4",
-        "B.1"
-      ]
+        "E.2",
+        "E.2.a",
+        "E.2.b",
+        "E.2.c",
+        "E.2.d",
+        "E.2.e",
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "Directly and comprehensively covers Shinto (E.2) \u2014 its history (E.2.a/E.1), characteristics of primitive Shinto including guardian shrines and shamans (E.2.b), scriptural literature including Kojiki and Nihon Shoki (E.2.c), basic beliefs and doctrines (E.2.d), ritual practices and institutions (E.2.e), and connects to Japanese religious art and symbolism (E.3)."
     },
     {
       "articleTitle": "Taoism",
-      "rationaleAI": "Taoism is an indigenous religion and philosophy of China covered here.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.1.e",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Comprehensive coverage of Taoism in all dimensions of the outline: history from Laozi and Zhuangzi origins (C.1.a) through Han-era developments (C.1.b), interaction with Buddhism (C.1.c), Tang-Song internal developments (C.1.d), through to the modern period (C.1.e); also covers Taoist literature (C.2) and Taoism as religion and philosophy (C.3)."
+    },
+    {
+      "articleTitle": "Eastern philosophy",
+      "relevantPathsAI": [
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "Covers the philosophical dimensions of both Confucianism (B.3) and Taoism (C.3) as part of its survey of East and South Asian philosophical traditions, addressing their ethical, cosmological, and metaphysical concerns as philosophical systems."
+    },
+    {
+      "articleTitle": "Han dynasty",
+      "relevantPathsAI": [
+        "A.2.b",
+        "B.1.d"
+      ],
+      "rationaleAI": "Directly covers the establishment of Confucianism as state orthodoxy under Han Emperor Wu (B.1.d \u2014 Confucianism as Han state orthodoxy, eclectic tendencies, skeptical reactions) and the early formation of Chinese civilization including ancestor worship and cosmological beliefs (A.2.b context)."
+    },
+    {
+      "articleTitle": "History of religion",
+      "relevantPathsAI": [
         "A.2",
         "A.2.a",
-        "A.2.b",
+        "B.1",
+        "C.1",
+        "D.1",
+        "E.1"
+      ],
+      "rationaleAI": "Provides comparative historical framework for the development of Chinese, Korean, and Japanese religious traditions (A.2 broadly), including ancestor worship, Axial Age religious formation (corresponding to A.2.b), and the broad historical trajectory of East Asian religions."
+    },
+    {
+      "articleTitle": "Buddhism",
+      "relevantPathsAI": [
         "A.2.c",
-        "A.2.d",
+        "C.1.c",
+        "D.1",
+        "E.1.b"
+      ],
+      "rationaleAI": "Buddhism's dominance in Chinese religious history (A.2.c \u2014 Buddhist Way and Taoist-inspired cults, 1st\u201316th century; C.1.c \u2014 Taoism's interaction with Buddhism), its introduction into Korea (D.1) and Japan (E.1.b), and its interaction with Confucianism and Taoism are core topics within this article."
+    },
+    {
+      "articleTitle": "Mahayana",
+      "relevantPathsAI": [
+        "A.2.c",
+        "C.1.c",
+        "E.1.b"
+      ],
+      "rationaleAI": "Mahayana Buddhism is the dominant form that spread through China (A.2.c), interacted with Taoism (C.1.c), and was introduced into Japan during the early historic period (E.1.b), making it directly relevant to sections covering the Buddhist Way's role in East Asian religion."
+    },
+    {
+      "articleTitle": "Chinese folk religion",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
         "A.3",
         "A.4",
-        "A.5"
-      ]
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Directly covers the distinction between folk and literate religions in China (A.1), the syncretic integration of Buddhism, Confucianism, and Taoism (A.2.c, A.2.d), traditional cosmological concepts including Tian, qi, yin-yang, and ancestor veneration (A.3), ritual practices and institutions (A.4), and religious symbolism (A.5)."
+    },
+    {
+      "articleTitle": "East Asia",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Provides comprehensive regional context for Chinese religion (A), Confucianism (B), Taoism (C), Korean religion (D), and Japanese religion (E), covering the Sinosphere's shared cultural heritage of Confucianism, Buddhism, and Taoism across China, Korea, Japan, and Mongolia."
+    },
+    {
+      "articleTitle": "Mao Zedong",
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.1.h",
+        "B.1"
+      ],
+      "rationaleAI": "Mao's Cultural Revolution represented the most radical political assault on Confucian ideology and Chinese religious traditions (A.2.d \u2014 effect of nationalism and secularism; B.1.h \u2014 varied responses to political developments; B.1.i \u2014 Confucianism today under communist governance)."
+    },
+    {
+      "articleTitle": "Murasaki Shikibu",
+      "relevantPathsAI": [
+        "E.1.b",
+        "E.3"
+      ],
+      "rationaleAI": "The Tale of Genji reflects the Heian period's Buddhist-Shinto religious milieu (E.1.b \u2014 early historic and medieval Japan, introduction of Buddhism) including Buddhist themes of impermanence and mono no aware; connects to Japanese religious art and cultural symbolism (E.3)."
+    },
+    {
+      "articleTitle": "History of Asia",
+      "relevantPathsAI": [
+        "A.2",
+        "D.1",
+        "E.1"
+      ],
+      "rationaleAI": "Provides broad historical context for Chinese religious development (A.2), Korean religious history including Joseon dynasty religious policy (D.1), and early Japanese religious history (E.1), covering the Zhou, Han, Tang, Ming, Joseon, and Tokugawa periods relevant to these religious traditions."
+    },
+    {
+      "articleTitle": "South Korea",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Covers Korean religious history from ancient kingdoms through the Joseon dynasty's Neo-Confucian state orthodoxy to contemporary religious pluralism (D.1), directly addressing the history, beliefs, and practices of Korean religion including Confucianism, Buddhism, and Christianity."
+    },
+    {
+      "articleTitle": "Ancient history",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.1"
+      ],
+      "rationaleAI": "Covers the emergence of early Chinese civilization including ancestor worship and cosmological beliefs (A.2.a) and the pre-dynastic institutions that formed the background for Confucianism (B.1.a \u2014 predynastic sage-emperors and founders of the first three dynasties)."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "Surveys Chinese Confucian, Daoist, and Buddhist philosophical thought as part of its non-Western coverage (B.3 \u2014 Confucianism as religion and philosophy; C.3 \u2014 Taoism as religion and philosophy), contextualizing East Asian philosophy within the global philosophical tradition."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Covers the Chinese scholar-painting ideal and East Asian printmaking traditions, relevant to Japanese religious art and symbolism (E.3), including the aesthetic traditions shaped by Shinto and Buddhist visual culture in East Asia."
+    },
+    {
+      "articleTitle": "Christianity",
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.1.h"
+      ],
+      "rationaleAI": "The Western Christian missionary presence in East Asia is part of the modern period's impact on Chinese religion (A.2.d) and represents the intellectual and religious challenge of the West to which Confucianism had to respond (B.1.h)."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.1.h"
+      ],
+      "rationaleAI": "The early modern period encompasses the Tokugawa era in Japan and late Ming-early Qing China, directly relevant to Confucian responses to Western intellectual challenge (B.1.h) and the later development of Taoism from the 14th century (C.1.e), as well as Japanese Neo-Confucian Shinto (E.1.c)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

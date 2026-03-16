@@ -29,13 +29,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Kinematics: motion of particles and rigid bodies without consideration of the forces producing the motion",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Velocity and acceleration",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Velocity and acceleration",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -66,13 +66,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Kinetics: motion of bodies under the action of forces upon them",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Newton's laws of motion: the law of inertia, the law of force, the law of action and reaction",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Newton's laws of motion: the law of inertia, the law of force, the law of action and reaction",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -122,13 +122,13 @@
               "level": "e",
               "levelType": "lowercase",
               "text": "Energy",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The concepts of energy and energy conservation",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The concepts of energy and energy conservation",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -235,7 +235,7 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "The general «-body problem",
+          "text": "The general \u00ab-body problem",
           "children": []
         }
       ]

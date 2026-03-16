@@ -1,225 +1,157 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "828",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Islam arose in the 7th century and became a transformative force in human history.",
+      "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
         "A.4",
         "A.5",
-        "A.6",
-        "B.1",
-        "C.1",
-        "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Islam is a major social institution shaping societies across the Middle East, Africa, and Asia.",
-      "relevantPathsAI": [
-        "A.4",
-        "B.1",
-        "C.1",
-        "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Islam, with over a billion adherents, is a major world religion whose study is essential to understanding religion as a global phenomenon.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Suleiman the Magnificent",
-      "rationaleAI": "Suleiman was Caliph of Islam and a patron of Islamic law and culture during the Ottoman golden age.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Rumi",
-      "rationaleAI": "Rumi's mystical poetry is a supreme expression of Sufi Islam and Islamic spiritual tradition.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
         "B.4",
-        "B.6"
-      ]
-    },
-    {
-      "articleTitle": "Muhammad",
-      "rationaleAI": "Muhammad is the prophet and founder of Islam, the world's second-largest religion.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Ali",
-      "rationaleAI": "Ali ibn Abi Talib was the fourth caliph and a central figure in Islam, particularly revered in Shia tradition.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Saudi Arabia",
-      "rationaleAI": "Saudi Arabia is the birthplace of Islam and home to its holiest sites.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
+        "C.4.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "The Islamic Golden Age directly covers A.4 (development of Islamic religion, culture, and society during the Abbasid caliphate) and A.5 (Middle Ages of Islam, theology, law, and culture), while its art, architecture, and intellectual production address the uncovered paths C.4.a–b (Islamic art, its eras and expression)."
     },
     {
       "articleTitle": "Mecca",
-      "rationaleAI": "Mecca is Islam's holiest city and the birthplace of Muhammad.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
+        "C.3.a",
+        "C.3.b"
+      ],
+      "rationaleAI": "Mecca is the birthplace of Islam and Muhammad, directly covering A.1 (pre-Islamic setting in Arabia) and A.2 (origins of Islam), and the Hajj pilgrimage makes it essential for C.3.a (Five Pillars) and C.3.b (sacred places). A.1 is a currently uncovered priority path."
     },
     {
-      "articleTitle": "Abraham",
-      "rationaleAI": "Abraham (Ibrahim) is a central prophet in Islam.",
+      "articleTitle": "Muhammad",
       "relevantPathsAI": [
-        "A",
         "A.2",
         "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1",
+        "C.1.e",
         "B.2"
-      ]
+      ],
+      "rationaleAI": "Muhammad is the core subject of A.2 (origin of Islam in the life and teachings of the Prophet) and C.1.e (doctrines concerning Muhammad and the nature of prophecy). His establishment of the Hadith/Sunnah also addresses B.2 (the Hadith, oral tradition), a currently uncovered priority path."
     },
     {
       "articleTitle": "Islam",
-      "rationaleAI": "Islam is the direct subject of this section.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
         "B",
-        "B.1"
-      ]
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "The Islam article is the overarching subject of section 828, covering the full history (A), intellectual expressions (B), and beliefs, practices, and institutions (C), including the Five Pillars, Sunni-Shia division, and Islamic law."
     },
     {
-      "articleTitle": "Shia Islam",
-      "rationaleAI": "Shia Islam is a major branch within Islam.",
+      "articleTitle": "Rumi",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
+        "B.5",
         "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1",
+        "C.4.b"
+      ],
+      "rationaleAI": "Rumi is the paradigmatic representative of B.5 (Sufism, the mystical path) and his Masnavi and Divan represent the peak of A.5 (Islamic theological and literary culture in the Middle Ages). His poetry also addresses C.4.b (expression of Islamic faith and themes in the arts), an uncovered priority path."
+    },
+    {
+      "articleTitle": "Ali",
+      "relevantPathsAI": [
+        "A.3",
+        "C.2.d"
+      ],
+      "rationaleAI": "Ali ibn Abi Talib's caliphate and assassination were the founding events of the Sunni-Shia split, directly addressing C.2.d (Shi'ism and its subsects) and A.3 (the foundations and early expansion of Islam and the succession disputes that shaped the early community)."
+    },
+    {
+      "articleTitle": "Jesus",
+      "relevantPathsAI": [
+        "C.1.e",
+        "C.1"
+      ],
+      "rationaleAI": "Jesus is explicitly addressed in Islamic doctrine as a major prophet, making this article relevant to C.1.e (doctrines concerning Muhammad and the nature of prophecy, which situates Islam's view of earlier prophets) and C.1 broadly as it contextualizes Islam's relationship to the earlier Abrahamic revelations."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "The history of philosophy article explicitly covers Islamic Kalam and Arabic-Persian philosophical traditions (al-Farabi, Ibn Sina, Ibn Rushd), directly addressing B.4 (Islamic theology and philosophy, the major schools of Islamic philosophy)."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "The Middle Ages article covers the Islamic world alongside European and Byzantine history, addressing A.4 (development during the Abbasid caliphate) and A.5 (Middle Ages of Islam, including Islamic expansion, culture, and the interaction with Crusader states)."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
         "B.2"
-      ]
+      ],
+      "rationaleAI": "Oral tradition explicitly addresses the Islamic hadith transmission as a major example of the genre, directly and substantively covering B.2 (the Hadith, the oral tradition), which is a currently uncovered priority path."
     },
     {
-      "articleTitle": "Sunni Islam",
-      "rationaleAI": "Sunni Islam is the largest branch within Islam.",
+      "articleTitle": "Al-Khwarizmi",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
         "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
+        "B.4"
+      ],
+      "rationaleAI": "Al-Khwarizmi's work at the House of Wisdom in Baghdad during the Abbasid caliphate directly addresses A.4 (development of Islamic culture and society during the Abbasid era) and represents the rationalist/philosophical strand within B.4 (Islamic theology and philosophy)."
     },
     {
       "articleTitle": "Quran",
-      "rationaleAI": "The Quran is the central sacred text of Islam.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "B",
         "B.1",
-        "B.3"
-      ]
+        "C.1",
+        "C.3.d"
+      ],
+      "rationaleAI": "The Quran article directly and exclusively covers B.1 (the Quran: its form and contents, views about its origin, interpretations), and is also foundational for C.1 (Islamic beliefs and doctrines) and C.3.d (the Shari'ah, which takes the Quran as its primary source)."
+    },
+    {
+      "articleTitle": "Suleiman the Magnificent",
+      "relevantPathsAI": [
+        "A.5",
+        "B.3",
+        "C.4.a",
+        "C.3.d"
+      ],
+      "rationaleAI": "Suleiman's synthesis of Kanun and Sharia law addresses B.3 (Islamic law) and C.3.d (the Shari'ah), while his patronage of Ottoman architecture and arts directly covers the uncovered path C.4.a (major eras, regions, and schools of Islamic art)."
+    },
+    {
+      "articleTitle": "Akbar",
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Akbar's Din-i-Ilahi syncretic movement and his policy of religious pluralism within the Mughal Empire address A.5 (Middle Ages of Islam, developments in theology and culture in the 11th–18th century) and the transition toward A.6 (Islam in the modern world)."
+    },
+    {
+      "articleTitle": "Prayer",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b"
+      ],
+      "rationaleAI": "Prayer as a universal religious practice specifically addresses C.3.a (the Five Pillars of Islam, including the five daily prayers/salat) and C.3.b (sacred places and days, the mosque as a place of worship and prayer)."
+    },
+    {
+      "articleTitle": "Abraham",
+      "relevantPathsAI": [
+        "A.2",
+        "C.1.e",
+        "C.1"
+      ],
+      "rationaleAI": "Abraham (Ibrahim) is a foundational prophet in Islam, situating him as an ancestor of Muhammad and a key figure in C.1.e (doctrines concerning Muhammad and the nature of prophecy, which includes the chain of prophets) and A.2 (the origins of Islam's self-understanding within Abrahamic tradition)."
+    },
+    {
+      "articleTitle": "Law",
+      "relevantPathsAI": [
+        "B.3",
+        "C.3.d"
+      ],
+      "rationaleAI": "The Law article covers religious legal systems including Islamic law (Shari'ah) as a distinct legal tradition, directly addressing B.3 (Islamic law: Shari'ah and fiqh) and C.3.d (the Shari'ah: law and jurisprudence, the schools of law)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

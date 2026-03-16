@@ -1,73 +1,8 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "934",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Japanese and Korean history are important regional narratives within human history.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.3.i.ii",
-        "C.1.e",
-        "C.4.i.iii",
-        "D.1",
-        "D.5.a"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "Japan and Korea developed distinctive civilizations influenced by Chinese culture yet forging independent political and cultural identities.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "B.3.a",
-        "B.3.b",
-        "B.3.i",
-        "C.1.c",
-        "C.1.d",
-        "C.4.i.iii",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Hokusai",
-      "rationaleAI": "Hokusai's art flourished during Japan's Edo period, reflecting the cultural life of pre-Meiji Japan.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "B.3.a",
-        "B.3.b",
-        "B.3.i",
-        "C.1.d",
-        "C.2.c",
-        "C.3",
-        "C.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Murasaki Shikibu",
-      "rationaleAI": "Murasaki wrote during Japan's Heian period, a formative era in Japanese cultural and literary history.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.3.i"
-      ]
-    },
-    {
       "articleTitle": "Japan",
-      "rationaleAI": "Japan's pre-modern history is directly covered in this section.",
       "relevantPathsAI": [
         "A",
         "B",
@@ -78,72 +13,148 @@
         "B.2.c",
         "B.3",
         "B.3.a",
-        "B.3.b"
-      ]
+        "B.3.b",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Japan as a country article directly covers the full scope of Section 934, from prehistoric Jomon/Yayoi cultures through feudal periods (Kamakura, Muromachi, Sengoku) to the Tokugawa shogunate and Meiji Restoration. Provides foundational geographic, ethnographic, and historical context for all outline paths A through C."
+    },
+    {
+      "articleTitle": "Tang dynasty",
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.2.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "The Tang dynasty directly shaped Japan's Nara period (710\u2013784): Chinese and Indian influences on literature, music, and the visual arts, as well as the earlier Taika reforms modeled on Tang governance. The Tang also maintained extensive tributary relations with both Korea and Japan, directly relevant to B.2.b\u2013c and B.3.a."
+    },
+    {
+      "articleTitle": "China",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.2.c",
+        "B.3.a",
+        "C.2.c",
+        "C.4.a",
+        "D.3",
+        "D.5.a"
+      ],
+      "rationaleAI": "China's dynastic history is central to Japan's cultural and political development throughout the outline: the Yamato court's relations with China (B.2.b), Chinese influence on Nara culture (B.3.a), Muromachi trade with China (C.2.c), and Korean adoption of Chinese governmental organization (D.3). The article provides essential context for understanding Japan and Korea as part of the Sinocentric world system."
+    },
+    {
+      "articleTitle": "Mongol Empire",
+      "relevantPathsAI": [
+        "C.1.c",
+        "D.4"
+      ],
+      "rationaleAI": "The Mongol Empire directly covers the 1274 and 1281 invasions of Japan outlined in C.1.c, and the Mongol invasions of Korea (1231\u2013c. 1261) that triggered land reform and social change in the Koryo dynasty (D.4). These are among the most specific events named in the section outline."
+    },
+    {
+      "articleTitle": "Genghis Khan",
+      "relevantPathsAI": [
+        "C.1.c",
+        "D.4"
+      ],
+      "rationaleAI": "Genghis Khan founded the Mongol Empire whose later expansions under his successors directly produced the Mongol invasions of Japan (C.1.c) and Korea (D.4). The article provides foundational context for the Mongol military-administrative structure that shaped these invasions."
     },
     {
       "articleTitle": "South Korea",
-      "rationaleAI": "Korea's pre-modern history is directly covered in this section.",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.5.a",
+        "D.5.b"
+      ],
+      "rationaleAI": "South Korea's article covers the full Korean historical arc outlined in section D, including the Three Kingdoms (Goguryeo/Koguryo, Baekje/Paekche, Silla), unification under Silla, the Goryeo/Koryo dynasty, and the Joseon dynasty under Japanese annexation (1910). This directly addresses every outline path in D."
+    },
+    {
+      "articleTitle": "East Asia",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
+        "B",
+        "D"
+      ],
+      "rationaleAI": "East Asia as a geocultural region encompasses Japan and Korea as core members, providing geographical, ethnographic, and civilizational context for the introduction (A) and the Korean section (D). The article addresses Confucianism, Buddhism, Shinto, and the shared cultural heritage of the Sinocentric regional system that shaped both civilizations."
+    },
+    {
+      "articleTitle": "Confucius",
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.4",
+        "D.5.a"
+      ],
+      "rationaleAI": "Confucianism directly shaped Neo-Confucian philosophy during the Kamakura period (C.1.d), the Confucian and Shinto revival in 18th\u201319th century Tokugawa Japan (C.4.i.ii), and most centrally the Yi/Joseon dynasty's establishment as a Confucian state with decline of Buddhism (D.5.a). These are specific paths named in the outline."
+    },
+    {
+      "articleTitle": "Eastern philosophy",
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.3.c",
+        "C.4",
+        "D.5.a"
+      ],
+      "rationaleAI": "Eastern philosophy covers Zen Buddhism, Neo-Confucianism, and Korean Neo-Confucianism\u2014all directly named in the outline as cultural forces shaping feudal Japan (C.1.d, C.3.c, C.4.i.ii) and Korea's Joseon dynasty (D.5.a). The article addresses these traditions as integrated philosophical systems rather than purely religious ones."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "C.3",
+        "C.4",
+        "D.5"
+      ],
+      "rationaleAI": "The early modern period article specifically covers Tokugawa Japan and Joseon Korea as regional case studies within the global 1500\u20131800 framework, directly corresponding to the Sengoku unification, Tokugawa shogunate (C.3\u2013C.4), and Yi dynasty (D.5) outline paths. It situates Japanese national seclusion and Korean developments within contemporaneous global changes."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
         "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.3.i"
-      ]
+        "C.1",
+        "C.2",
+        "D.2",
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Post-classical history (c. 500\u20131450) covers the spread of Buddhism and Neo-Confucianism across East Asia and the Mongol Empire's role in connecting Eurasia, directly relevant to Japan's Heian and Kamakura periods (B.3, C.1, C.2) and Korea's Three Kingdoms through Koryo dynasty (D.2\u2013D.4)."
     },
     {
       "articleTitle": "Tokyo",
-      "rationaleAI": "Tokyo (Edo) was central to Japanese history before the Meiji Restoration.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b"
-      ]
+        "C.4.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "Tokyo evolved from the Edo fishing village to become the seat of the Tokugawa shogunate (1603), directly relevant to the establishment and consolidation of the Tokugawa (Edo) bakufu outlined in C.4.a\u2013b. The article addresses the city's role as the institutional center of Tokugawa military-bureaucratic rule."
     },
     {
-      "articleTitle": "Shinto",
-      "rationaleAI": "Shinto has been integral to Japanese civilization throughout its history.",
+      "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3.a",
-        "B.3.b",
-        "B.3.i"
-      ]
+        "C.3.b"
+      ],
+      "rationaleAI": "The Age of Discovery covers the arrival of the Portuguese (1543) and Spanish (1549) in Japan\u2014the exact events named in C.3.b\u2014including the opening of trade and Jesuit missionary activity. The article provides the broader Atlantic and Pacific exploration context for these specific contacts."
     },
     {
-      "articleTitle": "Japanese language",
-      "rationaleAI": "Japanese language development is integral to Japanese civilization.",
+      "articleTitle": "Han dynasty",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "D.1",
+        "B.1"
+      ],
+      "rationaleAI": "The Han dynasty is relevant to Korea's prehistoric origins (D.1) through Han military campaigns on the Korean Peninsula and establishment of commanderies, and provides background to the Bronze/Iron Age transition in East Asia that connects to Yayoi period Japan (B.1)."
+    },
+    {
+      "articleTitle": "Bronze Age",
+      "relevantPathsAI": [
         "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b"
-      ]
+        "D.1"
+      ],
+      "rationaleAI": "The Bronze Age article covers the adoption of bronze across East Asia including the archaeological cultures corresponding to Japan's Yayoi period (B.1) and the emergence of tribal states in Korea's Bronze Age (D.1), both of which are explicitly named in the outline."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

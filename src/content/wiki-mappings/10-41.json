@@ -1,127 +1,166 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/41",
   "mappings": [
     {
       "articleTitle": "Human history",
-      "rationaleAI": "Historiography is the discipline devoted to studying and interpreting human history.",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Surveys the full sweep of the human past using history, archaeology, anthropology, linguistics, and genetics, directly illustrating the types and methods of historical writing (A.2) and the vantage point and purposes authors bring to the field (A.3)."
+    },
+    {
+      "articleTitle": "Renaissance",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "The Renaissance was the era in which early modern historiography emerged through humanist recovery and critique of classical texts, corresponding directly to A.1.c.i (Renaissance and early modern historiography)."
+    },
+    {
+      "articleTitle": "Sociology",
+      "relevantPathsAI": [
+        "C",
+        "C.2"
+      ],
+      "rationaleAI": "Sociology's classical theorists (Comte, Marx, Durkheim, Weber) constructed macrosocial explanations of historical change that belong squarely within the speculative philosophy of history (C.2), and the discipline's relationship to history informs C broadly."
+    },
+    {
+      "articleTitle": "Cicero",
       "relevantPathsAI": [
         "A.1.a",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i",
-        "A.1.i.iv",
-        "A.3",
-        "B",
-        "B.2.k"
-      ]
+        "B.2.q"
+      ],
+      "rationaleAI": "As Rome's preeminent prose stylist and a primary source for late-Republican politics, Cicero exemplifies classical historiography (A.1.a.ii) and his speeches and letters are central objects of textual criticism as an auxiliary discipline (B.2.q)."
+    },
+    {
+      "articleTitle": "History of science",
+      "relevantPathsAI": [
+        "A.1",
+        "B.2"
+      ],
+      "rationaleAI": "The history of science explicitly demonstrates historiographic method applied to scientific knowledge, engaging auxiliary disciplines such as bibliography, chronology, and epigraphy (B.2) and spanning ancient through modern historiographical traditions (A.1)."
+    },
+    {
+      "articleTitle": "Social science",
+      "relevantPathsAI": [
+        "C",
+        "C.2"
+      ],
+      "rationaleAI": "Social-scientific theories of historical causation\u2014positivist, interpretivist, Marxist\u2014directly inform speculative and analytical philosophy of history (C.2), and the discipline's debates about objectivity are central to C."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "A.2",
+        "A.1.d"
+      ],
+      "rationaleAI": "As a periodization framework explicitly contrasting 'global' versus Eurocentric framing, it exemplifies the types of historical writing and the methodology of period classification (A.2), and its coverage of the Islamic Golden Age connects to non-Western historiographical traditions (A.1.d.i)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.1.c",
+        "C.2"
+      ],
+      "rationaleAI": "Marx's historical materialism and dialectical method are cornerstones of 19th\u201320th-century historiography (A.1.c.iv) and are the paradigmatic example of speculative philosophy of history based on material-structural explanations of historical patterns (C.2)."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "B.2.n"
+      ],
+      "rationaleAI": "Psychoanalysis is listed explicitly as an auxiliary discipline for historical interpretation (B.2.n), and Freud's methods have been applied in psychohistory and the analysis of historical actors and collective behaviors."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.1.d"
+      ],
+      "rationaleAI": "The Islamic Golden Age produced the most sophisticated medieval historiographical tradition, with figures such as al-Tabari, al-Masudi, and Ibn Khaldun, corresponding directly to A.1.d.i (Islamic historiography)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Enlightenment historiography\u2014Voltaire's universal history, Gibbon's Decline and Fall, Hume's histories\u2014is the defining content of A.1.c.iii, and the Enlightenment's rationalist critique of sources shaped modern historical method."
     },
     {
       "articleTitle": "History",
-      "rationaleAI": "Historiography and the study of history is the direct academic subject matter of this article on history as a discipline.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Prehistory",
-      "rationaleAI": "Prehistory raises distinctive methodological challenges for historiography, relying on archaeology and anthropology rather than written records.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.3",
-        "B",
-        "B.2",
-        "B.2.k",
-        "C",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Ancient history",
-      "rationaleAI": "Ancient history established many foundational methods of historical inquiry and record-keeping still studied in historiography.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i.ii",
-        "A.3",
-        "B",
-        "B.2.k",
-        "C",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Civilization",
-      "rationaleAI": "The concept of civilization itself is a key historiographical framework for organizing and interpreting the human past.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.3",
-        "C",
-        "C.1",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Ibn Khaldun",
-      "rationaleAI": "Ibn Khaldun's Muqaddimah pioneered the philosophy of history and is considered the first work of historiography as a discipline.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i.iii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Archaeology",
-      "rationaleAI": "Archaeology is a primary method of historiography, recovering knowledge of the past through material evidence.",
-      "relevantPathsAI": [
-        "A.1",
         "A.2",
         "A.3",
         "B",
-        "B.2.a",
-        "B.2.b",
-        "B.2.k",
-        "C",
-        "C.2"
-      ]
+        "C"
+      ],
+      "rationaleAI": "The Wikipedia article on History as an academic discipline is the foundational entry for the entire section, covering types of historical writing (A), source criticism and auxiliary disciplines (B), and debates over objectivity and philosophy of history (C)."
     },
     {
-      "articleTitle": "Military history",
-      "rationaleAI": "Military history is a major field within historiography and the study of history.",
+      "articleTitle": "Ancient history",
       "relevantPathsAI": [
-        "A.1",
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
+        "B.1"
+      ],
+      "rationaleAI": "Ancient history spans the period that produced the earliest historiographical traditions (Near Eastern chronicles, Greek and Roman narrative history) and demonstrates the range of primary sources\u2014material remains and written records\u2014central to B.1."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.1.d",
+        "C.2"
+      ],
+      "rationaleAI": "Ibn Khaldun's Muqaddimah established Islamic historiographical method and introduced the first systematic theory of cyclical historical causation, making it essential for A.1.d.i (Islamic historiography) and C.2 (speculative philosophy of history)."
+    },
+    {
+      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.3"
+      ],
+      "rationaleAI": "Machiavelli's Florentine Histories exemplify Renaissance historiography (A.1.c.i) and his empirical, realpolitik vantage point explicitly illustrates how an author's background and purpose shape historical writing (A.3)."
+    },
+    {
+      "articleTitle": "Immanuel Kant",
+      "relevantPathsAI": [
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Kant's 'Idea for a Universal History with a Cosmopolitan Purpose' and 'Perpetual Peace' are foundational texts for the philosophy of history (C.1), articulating a progressive teleological conception of the historical process."
+    },
+    {
+      "articleTitle": "Voltaire",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.3"
+      ],
+      "rationaleAI": "Voltaire's Essay on Universal History was the first attempt at a global secular history and epitomizes Enlightenment historiography (A.1.c.iii); his critical stance toward sources also illustrates historiographical method and authorial purpose (A.3)."
+    },
+    {
+      "articleTitle": "History of Europe",
+      "relevantPathsAI": [
+        "A.1.a",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.iv"
-      ]
+        "A.1.c"
+      ],
+      "rationaleAI": "European history from classical antiquity through the modern era is the primary subject matter within which Western historiographical traditions from ancient through Enlightenment periods (A.1.a\u2013A.1.c) developed and are illustrated."
+    },
+    {
+      "articleTitle": "History of religion",
+      "relevantPathsAI": [
+        "A.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "The history of religion employs historiographic methods across diverse traditions and relies on auxiliary disciplines such as epigraphy, paleography, archaeology, and textual criticism (B.2), while illustrating non-Western historiographical traditions including Islamic and East Asian (A.1.d)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Ancient Greece produced classical historiography with Herodotus and Thucydides\u2014the originating tradition of Western historical writing\u2014corresponding directly to A.1.a.ii (Classical historiography: Greek and Roman)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

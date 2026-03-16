@@ -1,258 +1,177 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "613",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "The arts article addresses how artistic expression varies across particular cultures as explored in this section.",
+      "articleTitle": "Performing arts",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "B.3",
+        "C",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Covers Western (Medieval through Postwar), African (North and West Africa), and Eastern performing-art traditions including India, China, Thailand, Cambodia, and Japan, spanning paths B.3, C, and E. Explicitly includes Oceania, providing partial coverage for the priority paths F.1–F.3."
+    },
+    {
+      "articleTitle": "History of literature",
+      "relevantPathsAI": [
         "B.1",
         "B.2",
         "B.3",
-        "C",
-        "C.2",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Architecture",
-      "rationaleAI": "Architectural styles are among the most visible expressions of artistic characteristics across particular cultures.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.3",
-        "C",
-        "C.2",
-        "D",
-        "D.2",
-        "E",
-        "G.1"
-      ]
-    },
-    {
-      "articleTitle": "Literature",
-      "rationaleAI": "Literary traditions vary distinctively across cultures, reflecting the artistic characteristics of particular civilizations.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.2",
-        "D",
-        "D.2",
-        "G.1"
-      ]
-    },
-    {
-      "articleTitle": "Music",
-      "rationaleAI": "Musical traditions vary distinctively across cultures, from Indian ragas to Western classical to African drumming traditions.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "C",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Culture",
-      "rationaleAI": "Artistic characteristics vary across particular cultures, reflecting distinctive aesthetic traditions and values.",
-      "relevantPathsAI": [
-        "B.1",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Folklore",
-      "rationaleAI": "Folk art, music, and craft traditions reflect the distinctive artistic characteristics of particular cultures.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.3",
-        "C.2",
-        "D",
-        "D.2",
-        "E.1",
-        "G.1"
-      ]
-    },
-    {
-      "articleTitle": "History of art",
-      "rationaleAI": "The history of art examines the characteristics of artistic expression across particular cultures and eras.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C",
         "C.1",
-        "C.2",
-        "D",
-        "D.2",
-        "G.1"
-      ]
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Traces literary arts from ancient Mesopotamian and Egyptian texts (B.1) through medieval Islamic, Indian, and East Asian traditions (B.2, C.1, C.3, D) into early modern and contemporary global production (B.3), directly addressing characteristics of literary arts in each named cultural region."
     },
     {
-      "articleTitle": "History of music",
-      "rationaleAI": "Musical history reveals how artistic expression varies across particular cultures and historical periods.",
+      "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.3",
-        "C.2",
-        "D",
-        "D.2",
-        "E",
-        "E.1",
-        "E.2",
-        "E.3"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Byzantine art, architecture, and Orthodox Christian iconographic tradition are substantive sub-topics of this article, covering the arts of the medieval Eastern Roman world within the B.2 path (arts of the Middle Ages)."
+    },
+    {
+      "articleTitle": "Ancient Egypt",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Monumental architecture (pyramids, temples), hieroglyphic writing and literature, and religious iconography are core sub-topics, directly mapping to the arts of ancient Egypt in path B.1 (arts in antiquity)."
+    },
+    {
+      "articleTitle": "Oceania",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.4"
+      ],
+      "rationaleAI": "Covers Aboriginal Australian artistic tradition, Polynesian seafaring culture, and explicitly names Melanesia, Micronesia, and Polynesia as subregions, providing the only candidate coverage of the priority paths F.1–F.3 (arts of Melanesia, Micronesia, and Polynesia)."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Covers art, architecture, literature, and music in medieval Islamic urban centers (Baghdad, Cordoba, Cairo), directly addressing the arts of the Arab world and North Africa in path D.2."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers Church and monastic culture, scholasticism, and European artistic and theological developments of the Early, High, and Late Middle Ages, mapping to path B.2 (arts of the Middle Ages)."
     },
     {
       "articleTitle": "Renaissance",
-      "rationaleAI": "The Renaissance produced distinctive artistic characteristics across painting, sculpture, and architecture in European culture.",
       "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.2",
-        "E.1"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Centers on visual arts (Leonardo, Michelangelo, Giotto), vernacular literature (Dante, Petrarch), and the spread of Italian artistic conventions across Europe, directly covering path B.3 (arts from the Renaissance to the present in Europe and America)."
     },
     {
-      "articleTitle": "Abstract art",
-      "rationaleAI": "Abstract art emerged within specific cultural contexts of Western modernism.",
+      "articleTitle": "East Asia",
       "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.2",
-        "D",
-        "D.2",
-        "G.1"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "Covers Chinese civilization's domination of cultural and artistic traditions across China, Japan, Korea, and Mongolia, including Confucianism, Buddhism, Taoism, and Shinto as frameworks for artistic production in path C.1 (arts of East Asia)."
     },
     {
-      "articleTitle": "Modernism",
-      "rationaleAI": "Modernism reflects the characteristics of arts in particular 20th-century cultures.",
+      "articleTitle": "Suleiman the Magnificent",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "His reign produced a golden age of Ottoman architecture, literature, and arts, and he was personally a poet and goldsmith; this substantively covers Islamic and Arab-world arts in path D.2."
+    },
+    {
+      "articleTitle": "Charlemagne",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The Carolingian Renaissance—promotion of literacy, education, and manuscript illumination under Charlemagne—represents a substantive arts-of-the-Middle-Ages topic within path B.2, even though the article is primarily political."
+    },
+    {
+      "articleTitle": "Akbar",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "His reign explicitly produced a distinct Mughal artistic style merging Timurid, Perso-Islamic, and Indian traditions; his court directly shaped the visual arts of South Asia, mapping to path C.3 (arts in South Asia: India, Pakistan)."
+    },
+    {
+      "articleTitle": "History of art",
       "relevantPathsAI": [
         "B.1",
+        "B.2",
         "B.3",
-        "C.2",
+        "C.1",
+        "C.3",
         "C.4",
         "D",
-        "D.2",
-        "G.1"
-      ]
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Surveys visual production across virtually all cultures named in the 613 outline—Egyptian, Greek, Roman, Islamic, Indian, Chinese, Japanese, African, Oceanic, and pre-Columbian—making it the broadest-coverage candidate in the batch."
     },
     {
-      "articleTitle": "Realism (arts)",
-      "rationaleAI": "Realism emerged as a movement within 19th-century European culture.",
+      "articleTitle": "History of architecture",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
         "B.2",
         "B.3",
-        "C",
-        "C.2",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Romanticism",
-      "rationaleAI": "Romanticism reflects specific cultural characteristics of late 18th and 19th-century Europe.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.2",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Novel",
-      "rationaleAI": "The novel's development reflects cultural characteristics of particular societies.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C",
         "C.1",
-        "C.2",
-        "D",
-        "D.2",
-        "G.1"
-      ]
-    },
-    {
-      "articleTitle": "Poetry",
-      "rationaleAI": "Poetry traditions vary across particular cultures worldwide.",
-      "relevantPathsAI": [
-        "B",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Classical music",
-      "rationaleAI": "Classical music reflects the cultural characteristics of Western civilization.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Theatre",
-      "rationaleAI": "Theatre traditions reflect the cultural characteristics of particular civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.2",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Painting",
-      "rationaleAI": "Painting traditions reflect the cultural characteristics of particular civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.2",
+        "C.3",
         "C.4",
         "D"
-      ]
+      ],
+      "rationaleAI": "Traces built environments from ancient Egyptian and Mesopotamian through South Asian Buddhist/Hindu, East and Southeast Asian, Islamic, and European medieval to modern forms, covering multiple named regional paths in the 613 outline."
     },
     {
-      "articleTitle": "Sculpture",
-      "rationaleAI": "Sculptural traditions reflect the cultural characteristics of particular civilizations.",
+      "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4"
-      ]
+        "D.2"
+      ],
+      "rationaleAI": "Ottoman arts, architecture, and the millet system's cultural plurality are substantive sub-topics, directly addressing the arts of the Arab world and North Africa in path D.2 alongside the broader Islamic peoples."
+    },
+    {
+      "articleTitle": "Tang dynasty",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers woodblock printing, literature, and extensive cultural exchange with Korea, Japan, and Central Asian states during the Tang golden age, directly covering the arts of East Asia in path C.1."
+    },
+    {
+      "articleTitle": "Italy",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Italy's unique weight in ancient Roman arts (B.1) and Renaissance heritage makes it a substantive coverage point for B.3; the article includes Rome, medieval city-states, and the Renaissance as core historical themes."
+    },
+    {
+      "articleTitle": "Ancient Rome",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Latin literature, monumental architecture (roads, aqueducts), and religious art transitioning to early Christianity are explicit sub-topics, mapping to path B.1 (ancient Roman and early Christian arts)."
+    },
+    {
+      "articleTitle": "Pre-Columbian era",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Spans all indigenous American civilizations before European contact—North American Woodland and Mississippian cultures (G.1), Mesoamerican Olmec/Maya/Aztec (G.2), and South American Chavín/Inca traditions (G.3)—covering the entire G branch of the outline."
+    },
+    {
+      "articleTitle": "Nigeria",
+      "relevantPathsAI": [
+        "E.5"
+      ],
+      "rationaleAI": "The Nok culture and Benin Kingdom are explicitly named; both are among the most significant archaeological and artistic cultures of West Africa, directly covering path E.5 (arts of West African cultures)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

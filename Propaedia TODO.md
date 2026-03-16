@@ -1,8 +1,9 @@
 Propaedia TODO:
-
-- The hamburger top right menu button breaks the website on mobile
-
-- Circle navigation doesn't show the sections names on mobile when touching with finger
-
-- Need to add checkboxes for VSI's and Macropaedia articles, that apply universally (lots of VSI's and articles appear in multiple sections). These need to be stored between launches in the safest possible way
-- Clicking on items in the Subject Outlines should take the user down to the VSI's section and only show the ones relevant to the clicked part (will need a show all button at the top of the vsi section to return to showing them all and something that hsows the user the list is currently filtered, i.e. showing 3 out of 60)
+    - How hard would it be to do a more contextual search that can figure out what section you might be looking for? Keywords are quite limited feeling, especially in the context of exploring all mapped human knwoledge
+    - Put links to the book page on the oxford website for the VSI pages, and see if we can link the macropaedia articles to the current version on the britannica website (the current site was built from the articles these titles reference, so the mapping is possible, some of the online articles are sections of the larger print articles, so some clever web scraping and reconstruction will likely be required).
+    - Have specific vsi recommendations when using the wheel with a center, recommend books based on sections and tags and don't show ones they have already read. It should probably be a tab choice at the top of this view (remember users chosen tab choice) that shows section recommendations using the current system, or VSI/Macropaedia/Wikipedia article recommendations. I guess it would need a Recommended Sections mode, and a Recommended Readings mode, with three modes in the readings one for the three reading types
+    - Rename the VSI link in the header to Oxford
+    - Change the em dash to a hyphen in the zoom tabs in the Wikipedia home page, rework the top text to explain the system better, and include a hyperlink to the wikipedia vital articles root page on Wikipedia itself.
+    - Add BBC In Our Time podcast episodes to the database and mappings as well, would be good to have a different format in there
+    - Need to put the top header links into a hamburger menu, need to fix the propaedia structure navigation to not clip under heading and always be available from the hamburger. Button for random Section
+    - Need to make sure we have mappings after filtering for every subsection at all 3 wikipedia levels. We don't want this to allow users to get full coverage of all subsections by reading 10 articles when they switch the toggle from level 1 to level 2 or 3

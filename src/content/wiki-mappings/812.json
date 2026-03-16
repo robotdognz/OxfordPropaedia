@@ -1,191 +1,279 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "812",
   "mappings": [
     {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "Philosophical inquiry informs the analysis of religious life, institutions, and practices.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Religious institutions and practices are significant components of social organization.",
-      "relevantPathsAI": [
-        "A.3.f"
-      ]
-    },
-    {
-      "articleTitle": "Family",
-      "rationaleAI": "The family is central to religious life, with rituals of birth, marriage, and death anchoring religious practice across traditions.",
+      "articleTitle": "Folklore",
       "relevantPathsAI": [
         "A.2",
-        "A.3",
-        "A.3.f",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Religious institutions and practices including worship, clergy, and ritual are core aspects of organized religion.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
         "A.4",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Deity",
-      "rationaleAI": "Worship of deities through prayer, sacrifice, and ritual is a foundational practice of religious life and institutions.",
-      "relevantPathsAI": [
-        "A.3.f"
-      ]
-    },
-    {
-      "articleTitle": "Death",
-      "rationaleAI": "Funerary rites, mourning practices, and beliefs about the afterlife are major institutions and practices of religious life.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.4",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "History of religion",
-      "rationaleAI": "The history of religion traces the evolution of religious institutions and practices across civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.4",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Marriage",
-      "rationaleAI": "Marriage is closely tied to religious institutions and practices.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.f"
-      ]
-    },
-    {
-      "articleTitle": "Meditation",
-      "rationaleAI": "Meditation is a religious practice across multiple traditions.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "New religious movement",
-      "rationaleAI": "New religious movements develop distinctive institutions and practices.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.3.a",
-        "A.3.d",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.4",
-        "C",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Prayer",
-      "rationaleAI": "Prayer is a fundamental religious practice and institution.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.4",
-        "C.2",
-        "C.3"
-      ]
+        "C.1"
+      ],
+      "rationaleAI": "Folklore covers rites of passage, folk religion, festivals (A.4), customary practices, and the oral transmission of sacred narratives that constitute informal sacred writings (C.1) across religious traditions."
     },
     {
       "articleTitle": "Ritual",
-      "rationaleAI": "Ritual is a fundamental institution and practice in religious life.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.d",
         "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
-        "B.2"
-      ]
+        "A.4"
+      ],
+      "rationaleAI": "Ritual is the core article for section 812.A, directly covering worship rites (A.1), passage and purification rites (A.2), religious regulation of behaviour (A.3), and calendrical/sacrificial ceremonies (A.4). Essential comprehensive coverage."
     },
     {
-      "articleTitle": "Spirituality",
-      "rationaleAI": "Spirituality encompasses personal religious practices and experiences.",
+      "articleTitle": "Confucius",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
+        "B.4",
         "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
+        "B.2"
+      ],
+      "rationaleAI": "Confucius founded a tradition centered on ritual propriety (li) and established educational institutions (B.4); his model of scholarly-official religious leadership shaped Chinese religious-political organization (B.2)."
+    },
+    {
+      "articleTitle": "Catholic Church",
+      "relevantPathsAI": [
         "B",
         "B.1",
         "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Festival",
-      "rationaleAI": "Festivals are closely tied to religious institutions and practices.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.3.a",
-        "A.3.f",
-        "A.4",
-        "B",
+        "B.3",
         "B.4",
+        "C.1",
         "C.2",
         "C.3",
         "C.4"
-      ]
+      ],
+      "rationaleAI": "The Catholic Church provides comprehensive coverage of B (religious institutions): hierarchical organization (B.2), sainthood (B.3), religious education (B.4), sacred writings (C.1), iconic art and architecture (C.2), seven sacraments (C.3), and distinctive vestments and liturgical dress (C.4 \u2014 priority path)."
+    },
+    {
+      "articleTitle": "Jesus",
+      "relevantPathsAI": [
+        "A.1.d",
+        "A.2",
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "Jesus's sacrifice (A.1.d), death and resurrection as ultimate passage rite (A.2), status as the source of Christian sacramental life (C.3), and recognition as saint and divine figure (B.3) are all substantive connections."
+    },
+    {
+      "articleTitle": "Muhammad",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.a",
+        "B.2"
+      ],
+      "rationaleAI": "Muhammad established the five pillars including ritual prayer and fasting (A.1, A.3), Islamic law governing personal and social religious behaviour (A.3.a), and the prophetic leadership model that shaped Islamic religious organization (B.2)."
+    },
+    {
+      "articleTitle": "Martin Luther",
+      "relevantPathsAI": [
+        "B.2",
+        "C.3",
+        "A.3.a"
+      ],
+      "rationaleAI": "Luther's Reformation reshaped Protestant church organization and the priesthood of all believers (B.2), redefined sacramental doctrine rejecting most Catholic sacraments (C.3), and reformed religious law's role in Christian life (A.3.a)."
+    },
+    {
+      "articleTitle": "Prayer",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Prayer is explicitly listed as A.1.a in section 812's outline; the article covers all forms of religious prayer across traditions \u2014 supplication, intercession, thanksgiving, liturgical, and contemplative \u2014 with full topical coverage."
+    },
+    {
+      "articleTitle": "Festival",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Festival directly maps to A.4 (religious feasts and festivals), covering the sociological and anthropological dimensions of communal religious celebration, its roots in harvest and religious observance, and the spectrum from sacred to civic."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "C.1",
+        "B.4"
+      ],
+      "rationaleAI": "Oral tradition is the primary medium for transmission of sacred writings and religious knowledge in pre-literate societies (C.1) and serves as the basis for religious education (B.4) in traditions like Vedic recitation and Islamic hadith transmission."
+    },
+    {
+      "articleTitle": "Religion",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "As the top-level article, Religion covers organized religious institutions and practices across all traditions, directly addressing section 812's full scope of rites (A), institutions (B), and material manifestations (C)."
+    },
+    {
+      "articleTitle": "Culture",
+      "relevantPathsAI": [
+        "A.4",
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "Culture encompasses religious customs and festivals (A.4), rites of passage (A.2), and the religious dimension of cultural artifacts including art and architecture (C.2); provides the broader social context for understanding religious practice."
+    },
+    {
+      "articleTitle": "History of religion",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1"
+      ],
+      "rationaleAI": "Covers the historical development of religious rites (A), religious institutions across traditions (B), and the evolution of sacred texts and scriptures (C.1) from shamanism and ancestor worship through the formation of major world religions."
+    },
+    {
+      "articleTitle": "Hammurabi",
+      "relevantPathsAI": [
+        "B.1",
+        "A.3.a"
+      ],
+      "rationaleAI": "The Code of Hammurabi fuses royal and divine authority in a theocratic legal framework (B.1 \u2014 sacred kingships), and connects to religious regulation of social behaviour through divinely sanctioned law (A.3.a)."
+    },
+    {
+      "articleTitle": "Ramesses II",
+      "relevantPathsAI": [
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "Ramesses II embodies the sacred kingship (B.1) of pharaonic Egypt, combining religious and political authority; his monumental temple construction (Abu Simbel, Ramesseum) is directly relevant to religious art and architecture (C.2)."
+    },
+    {
+      "articleTitle": "Ashoka",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4",
+        "A.3"
+      ],
+      "rationaleAI": "Ashoka exemplifies sacred kingship organized around Buddhist dhamma (B.1), sponsored the Third Buddhist Council and missionary institutions for religious education (B.4), and used royal edicts to regulate personal and social religious behaviour (A.3)."
+    },
+    {
+      "articleTitle": "Joan of Arc",
+      "relevantPathsAI": [
+        "B.3",
+        "A.3.f"
+      ],
+      "rationaleAI": "Joan of Arc was canonized as a Catholic saint (B.3) whose claimed divine visions and prophetic mission directly illustrate prophecy and divination as a religious practice (A.3.f)."
+    },
+    {
+      "articleTitle": "Mahatma Gandhi",
+      "relevantPathsAI": [
+        "A.3.e",
+        "B"
+      ],
+      "rationaleAI": "Gandhi's satyagraha practice was rooted in Hindu asceticism and self-discipline (A.3.e), and his interfaith religious pluralism illustrates religious leadership and practice (B) in the modern period."
+    },
+    {
+      "articleTitle": "Confucianism",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
+        "B.2",
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "Confucianism prescribes ritual propriety governing personal and social behaviour (A.3), seasonal ceremonies and rites of passage (A.4), meritocratic religious-educational institutions (B.4), and maintains a scriptural tradition (C.1)."
+    },
+    {
+      "articleTitle": "Clothing",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Clothing explicitly covers religious dress codes across traditions \u2014 the priority coverage path C.4 (religious dress and vestments) \u2014 including Catholic vestments, Islamic hijab, Jewish kippah, Hindu sacred thread, and Buddhist robes as cultural and religious markers."
+    },
+    {
+      "articleTitle": "Cyrus the Great",
+      "relevantPathsAI": [
+        "B.1",
+        "A.3.a"
+      ],
+      "rationaleAI": "Cyrus exemplifies the religious dimension of kingship through the Edict of Restoration enabling Jewish temple worship and his policy of religious tolerance across Zoroastrianism and subject peoples' faiths (B.1, A.3.a)."
+    },
+    {
+      "articleTitle": "Suleiman the Magnificent",
+      "relevantPathsAI": [
+        "B.1",
+        "A.3.a",
+        "C.2"
+      ],
+      "rationaleAI": "Suleiman combined sacred sultanate authority with codification of Islamic sharia law (B.1, A.3.a) and presided over a golden age of Ottoman Islamic architecture and arts (C.2)."
+    },
+    {
+      "articleTitle": "Marriage",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "A.3.a"
+      ],
+      "rationaleAI": "Marriage is explicitly a passage rite (A.2) regulated across traditions by religious law (A.3.a) and religious customs governing partner selection, ceremony, and divorce, making it a central example in section 812.A."
+    },
+    {
+      "articleTitle": "Michelangelo",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Michelangelo's Sistine Chapel ceiling, Last Judgment, Piet\u00e0, and St. Peter's Basilica dome are paradigmatic examples of religious art and architecture (C.2), covering iconography, religious symbolism, and papal artistic patronage."
+    },
+    {
+      "articleTitle": "Thomas Aquinas",
+      "relevantPathsAI": [
+        "B.4",
+        "A.3.a"
+      ],
+      "rationaleAI": "Aquinas was central to Catholic religious education and scholastic theology (B.4); his natural law theory directly shaped religious regulation of behaviour (A.3.a); relevant also for sacramental and doctrinal theology."
+    },
+    {
+      "articleTitle": "African traditional religions",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3.f",
+        "A.4",
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "African traditional religions provide substantive coverage of oral sacred traditions (C.1), divination and prophetic practices (A.3.f), ancestor veneration rituals and passage rites (A.2), community festivals (A.4), and forms of religious organization through community elders and priests (B.2)."
+    },
+    {
+      "articleTitle": "Quran",
+      "relevantPathsAI": [
+        "C.1",
+        "A.3.a"
+      ],
+      "rationaleAI": "The Quran is Islam's primary sacred writing (C.1) and foundational source of Islamic religious law governing personal and social behaviour (A.3.a); its recitation is itself a central act of Islamic worship."
+    },
+    {
+      "articleTitle": "Jerusalem",
+      "relevantPathsAI": [
+        "A.1.c",
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Jerusalem contains the holiest sites of three Abrahamic religions \u2014 the Western Wall, Dome of the Rock, Church of the Holy Sepulchre \u2014 directly relevant to pilgrimage (A.1.c), religious institutional centers (B.2), and sacred architecture and iconography (C.2)."
+    },
+    {
+      "articleTitle": "Bhagavad Gita",
+      "relevantPathsAI": [
+        "C.1",
+        "A.3"
+      ],
+      "rationaleAI": "The Bhagavad Gita is a foundational Hindu sacred scripture (C.1) prescribing paths of yoga and dharmic religious conduct that regulate personal and social behaviour (A.3) across the Hindu tradition."
+    },
+    {
+      "articleTitle": "Johann Sebastian Bach",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Bach's sacred cantatas, Passions, and motets composed for Lutheran worship are paradigmatic examples of religious music and material expression of religious belief (C.2), synthesizing liturgical function with artistic achievement."
+    },
+    {
+      "articleTitle": "Murasaki Shikibu",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "The Tale of Genji incorporates Buddhist themes of impermanence (mono no aware) as a thread throughout its narrative; Murasaki Shikibu's work reflects Heian Buddhist religious culture expressed through literary-religious writing, placing it at the intersection of sacred narrative and C.1."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -127,13 +127,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Brakes",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Bearings",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Bearings",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

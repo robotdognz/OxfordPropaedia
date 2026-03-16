@@ -1,284 +1,155 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "313",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "The classification of living things organizes the diversity of life covered in this article.",
+      "articleTitle": "Crustacean",
       "relevantPathsAI": [
-        "A"
-      ]
+        "F.14.a"
+      ],
+      "rationaleAI": "Crustaceans are directly named under 313.F.14.a as a subgroup of Arthropods, covering ~67,000 species with full taxonomic and morphological characterization of the subphylum Crustacea including decapods, copepods, barnacles, and krill."
     },
     {
-      "articleTitle": "Biology",
-      "rationaleAI": "Biological taxonomy provides the systems for classifying living things into domains, kingdoms, and species.",
+      "articleTitle": "Life",
       "relevantPathsAI": [
         "A",
         "B",
-        "F.12"
-      ]
-    },
-    {
-      "articleTitle": "Evolution",
-      "rationaleAI": "Evolutionary relationships provide the basis for classifying living things into phylogenetic hierarchies.",
-      "relevantPathsAI": []
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "The article addresses the full span of life's classification — Archaea, Bacteria, Eukaryota (animals, plants, fungi) and viruses — directly covering all major kingdom-level groups enumerated in the section outline, as well as the prokaryote/eukaryote distinction foundational to 313.B and 313.C."
     },
     {
       "articleTitle": "Animal",
-      "rationaleAI": "Animals constitute a major biological kingdom within the classification of living things, from invertebrates to mammals.",
       "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
+        "F"
+      ],
+      "rationaleAI": "The Animal article covers the entire kingdom Animalia as a classification unit, including major clades (Porifera, Cnidaria, Bilateria — protostomes and deuterostomes) and over 1.5 million described species, directly matching 313.F and its phylum-level subdivisions."
     },
     {
-      "articleTitle": "Plant",
-      "rationaleAI": "Plants constitute a major biological kingdom within the classification of living things, from mosses to flowering plants.",
+      "articleTitle": "Seed",
       "relevantPathsAI": [
-        "E"
-      ]
+        "E.6",
+        "E.7",
+        "E.8",
+        "E.9",
+        "E.10"
+      ],
+      "rationaleAI": "Seeds are the defining reproductive character distinguishing the spermatophytes (seed plants: conifers, ginkgos, cycads, gnetophytes, and angiosperms) enumerated at 313.E.6–E.10, with the article explicitly contrasting gymnosperm and angiosperm seed enclosure."
     },
     {
-      "articleTitle": "Biodiversity",
-      "rationaleAI": "Biodiversity is reflected in the classification and diversity of living things.",
-      "relevantPathsAI": [
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Taxonomy (biology)",
-      "rationaleAI": "Biological taxonomy is the science of classifying living things as treated in this section.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Species",
-      "rationaleAI": "Species is the fundamental unit in the classification of living things.",
-      "relevantPathsAI": [
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Archaea",
-      "rationaleAI": "Archaea constitute a domain in the classification of living things.",
+      "articleTitle": "Biology",
       "relevantPathsAI": [
         "A",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Bacteria",
-      "rationaleAI": "Bacteria constitute a domain in the classification of living things.",
-      "relevantPathsAI": [
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Eukaryote",
-      "rationaleAI": "Eukaryotes constitute a domain in the classification of living things.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Zoology",
-      "rationaleAI": "Zoology encompasses the classification of animal species among living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Arthropod",
-      "rationaleAI": "Arthropods are the most species-rich animal phylum in the classification of living things.",
-      "relevantPathsAI": [
-        "F.14"
-      ]
-    },
-    {
-      "articleTitle": "Crustacean",
-      "rationaleAI": "Crustaceans are a subphylum of arthropods in the classification of living things.",
-      "relevantPathsAI": [
-        "F.14.a"
-      ]
-    },
-    {
-      "articleTitle": "Insect",
-      "rationaleAI": "Insects are the most diverse class of animals in the classification of living things.",
-      "relevantPathsAI": [
         "B",
-        "F.14.b"
-      ]
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Biology as a discipline encompasses systematics and the classification of all living things — bacteria, archaea, protists, fungi, plants, and animals — making it a broad but genuine fit for the entire section, particularly through its coverage of cell theory and the diversity of life."
     },
     {
       "articleTitle": "Mollusca",
-      "rationaleAI": "Molluscs are a major animal phylum in the classification of living things.",
       "relevantPathsAI": [
-        "F.15.f",
-        "F.18"
-      ]
+        "F.15"
+      ],
+      "rationaleAI": "Mollusca maps directly to 313.F.15, with the article covering all major molluscan classes — gastropods, bivalves, cephalopods, scaphopods, and polyplacophorans — precisely as enumerated in the outline's subpaths F.15.a through F.15.h."
     },
     {
-      "articleTitle": "Vertebrate",
-      "rationaleAI": "Vertebrates are a subphylum of chordates in the classification of living things.",
+      "articleTitle": "Flower",
       "relevantPathsAI": [
-        "B",
-        "F",
-        "F.16"
-      ]
+        "E.10"
+      ],
+      "rationaleAI": "Flowers are the defining reproductive structure of angiosperms (magnoliophytes) at 313.E.10, with the article explaining how floral morphology is taxonomically diagnostic and how angiosperms' 150–190-million-year evolution underlies their terrestrial dominance."
     },
     {
-      "articleTitle": "Amphibian",
-      "rationaleAI": "Amphibians are a class of vertebrates in the classification of living things.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Bird",
-      "rationaleAI": "Birds are a class of vertebrates in the classification of living things.",
+      "articleTitle": "Plant",
       "relevantPathsAI": [
-        "B",
-        "F",
-        "F.12",
-        "F.16",
-        "F.22.b"
-      ]
+        "E"
+      ],
+      "rationaleAI": "The Plant article covers the entire kingdom Plantae from green algae through mosses, ferns, gymnosperms, and angiosperms, matching the full breadth of 313.E including all major subdivisions from bryophytes (E.1) to flowering plants (E.10)."
     },
     {
-      "articleTitle": "Chicken",
-      "rationaleAI": "The chicken is a domesticated bird species in the classification of living things.",
+      "articleTitle": "Eukaryote",
       "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Fish",
-      "rationaleAI": "Fish are a paraphyletic group of aquatic vertebrates in the classification of living things.",
-      "relevantPathsAI": [
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Mammal",
-      "rationaleAI": "Mammals are a class of vertebrates in the classification of living things.",
-      "relevantPathsAI": [
-        "B",
-        "F",
-        "F.10.b",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Cat",
-      "rationaleAI": "The domestic cat is a species of mammal in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Cattle",
-      "rationaleAI": "Cattle are domesticated bovids in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Dog",
-      "rationaleAI": "The domestic dog is a species of mammal in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Horse",
-      "rationaleAI": "The horse is a species of mammal in the classification of living things.",
-      "relevantPathsAI": [
-        "B",
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Pig",
-      "rationaleAI": "The domestic pig is a species of mammal in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Primate",
-      "rationaleAI": "Primates are an order of mammals in the classification of living things.",
-      "relevantPathsAI": [
-        "B",
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Human",
-      "rationaleAI": "Homo sapiens occupies a specific position in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Rodent",
-      "rationaleAI": "Rodents are the most species-rich order of mammals in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Sheep",
-      "rationaleAI": "Sheep are domesticated ruminants in the classification of living things.",
-      "relevantPathsAI": [
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Reptile",
-      "rationaleAI": "Reptiles are a class of vertebrates in the classification of living things.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Algae",
-      "rationaleAI": "Algae are a diverse group of photosynthetic organisms in the classification of living things.",
-      "relevantPathsAI": [
-        "C.1",
+        "C",
+        "D",
         "E",
-        "F",
-        "F.16"
-      ]
-    },
-    {
-      "articleTitle": "Botany",
-      "rationaleAI": "Botany encompasses the classification and study of plant species.",
-      "relevantPathsAI": [
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Tree",
-      "rationaleAI": "Trees represent a growth form found across multiple plant families in the classification of living things.",
-      "relevantPathsAI": [
-        "B",
-        "E"
-      ]
+        "F"
+      ],
+      "rationaleAI": "Eukaryotes encompass all the non-prokaryotic kingdoms in the section — protists (C), fungi (D), plants (E), and animals (F) — with the article covering the cell-level distinction from prokaryotes (313.B) and the endosymbiotic origins of plastids relevant to algae/plant classification at 313.C.1 and 313.E."
     },
     {
       "articleTitle": "Fungus",
-      "rationaleAI": "Fungi constitute a major kingdom in the classification of living things.",
       "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "The Fungus article directly covers 313.D — the kingdom Fungi — with taxonomic detail across seven phyla (Ascomycota, Basidiomycota, etc.), distinguishing fungi from plants, animals, and protists as required by the section."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
+        "E.10"
+      ],
+      "rationaleAI": "Fruits are the seed-bearing structures exclusive to angiosperms (313.E.10), and the article's botanical treatment of fruit types (simple, aggregate, multiple) is taxonomically diagnostic for angiosperm classification and distinguishes gymnosperms from angiosperms."
+    },
+    {
+      "articleTitle": "Algae",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Algae maps directly to the priority path 313.C.1, covering the polyphyletic assemblage of photosynthetic protists — microalgae, cyanobacteria, and macroalgae — including both prokaryotic and eukaryotic lineages that constitute this group in the outline."
+    },
+    {
+      "articleTitle": "Organism",
+      "relevantPathsAI": [
+        "A",
         "B",
-        "C.1",
+        "C",
         "D",
         "E",
+        "F"
+      ],
+      "rationaleAI": "The organism concept underlies the entire classification enterprise of Section 313, and the article's treatment of boundary cases (viruses, colonial organisms, lichens) directly addresses classification challenges at 313.A (viruses) and 313.C (protists/slime molds)."
+    },
+    {
+      "articleTitle": "Zoology",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Zoology is the scientific discipline dedicated to the structure, classification, and phylogeny of all animals — precisely the content of 313.F — with the article tracing taxonomic frameworks from Aristotle through Linnaeus and molecular systematics."
+    },
+    {
+      "articleTitle": "Insect",
+      "relevantPathsAI": [
         "F.14.b"
-      ]
+      ],
+      "rationaleAI": "Insects (class Insecta) are named as part of the Uniramians at 313.F.14.b, with the article covering taxonomic definition, morphological characters, and the over one million described species constituting the most diverse animal group."
+    },
+    {
+      "articleTitle": "Bird",
+      "relevantPathsAI": [
+        "F.25"
+      ],
+      "rationaleAI": "Birds (class Aves) are chordates nested under 313.F.25, with the article covering taxonomic placement as theropod dinosaurs, diversity across 44 orders, and phylogenetic relationships — all central to the classification framework of the outline."
+    },
+    {
+      "articleTitle": "Botany",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Botany is the scientific discipline for the classification and study of plants, covering the ~410,000 land plant species corresponding to the full content of 313.E, and tracing the taxonomic frameworks (Linnaeus's binomial nomenclature, molecular systematics) used to classify plant groups in the outline."
+    },
+    {
+      "articleTitle": "Arthropod",
+      "relevantPathsAI": [
+        "F.14"
+      ],
+      "rationaleAI": "Arthropoda is listed directly at 313.F.14, and the article covers all four subtaxa named in the outline — Chelicerata (F.14.c), Crustacea (F.14.a), and Hexapoda/Uniramia (F.14.b) — with full taxonomic and morphological characterization."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,183 +1,184 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "736",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Military technology represents a significant domain of technological development.",
+      "articleTitle": "Firearm",
       "relevantPathsAI": [
-        "C.1.b",
-        "D",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "War",
-      "rationaleAI": "Military technology, from bronze weapons to nuclear arms, has been shaped by and has shaped the conduct of war.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Joan of Arc",
-      "rationaleAI": "Joan of Arc's role in the siege of Orléans and subsequent campaigns exemplifies the intersection of military technology and medieval warfare.",
-      "relevantPathsAI": [
-        "B.1.b",
-        "B.1.c",
-        "C.1.b",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "Military history",
-      "rationaleAI": "Military history is closely tied to the evolution of military technology across civilizations.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.1.b",
-        "B.2.b",
-        "B.2.c",
-        "B.2.d"
-      ]
-    },
-    {
-      "articleTitle": "World War I",
-      "rationaleAI": "World War I saw transformative advances in military technology including tanks, aircraft, and chemical weapons.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.5",
-        "A.6",
-        "B.1.b",
-        "B.1.c",
-        "C",
-        "C.2.b",
-        "D.1",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "World War II",
-      "rationaleAI": "World War II drove revolutionary advances in military technology including radar, jet engines, and nuclear weapons.",
-      "relevantPathsAI": [
-        "A",
-        "A.5",
-        "B.1.b",
-        "B.1.c",
-        "B.2.d",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "Military",
-      "rationaleAI": "Military forces employ military technology.",
-      "relevantPathsAI": [
-        "D.1",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "Explosive",
-      "rationaleAI": "Explosives are fundamental to military technology and weaponry.",
-      "relevantPathsAI": [
-        "A.4.e",
-        "A.5",
-        "A.5.a",
-        "A.6",
-        "B.1.b",
-        "B.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Gunpowder",
-      "rationaleAI": "Gunpowder revolutionized military technology as the first chemical propellant.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.i",
-        "B.1.b",
-        "B.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Weapon",
-      "rationaleAI": "Weapons are the direct subject of military technology treated in this section.",
-      "relevantPathsAI": [
-        "A.1",
         "A.2",
         "A.2.d",
-        "A.5",
-        "A.6",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "C",
-        "F.1"
-      ]
+        "A.2.e"
+      ],
+      "rationaleAI": "Directly covers gunpowder weapons (A.2), specifically small arms including muskets, rifles, and pistols (A.2.d), their ammunition including smokeless powder propellants and bullets (A.2.e), and rifled barrel ballistics."
     },
     {
       "articleTitle": "Armour",
-      "rationaleAI": "Armor is defensive military technology designed to protect against weapons.",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Firearm",
-      "rationaleAI": "Firearms are projectile weapons central to modern military technology.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "A.2.d",
-        "A.5",
         "B.1",
         "B.1.a",
         "B.1.b",
-        "B.2.c",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Aircraft",
-      "rationaleAI": "Military aircraft are a major component of modern military technology.",
-      "relevantPathsAI": [
-        "A.4.i.iii",
-        "A.4.b",
-        "C.1.b",
-        "C.2.c",
-        "C.2.e",
-        "C.4",
-        "C.4.a",
-        "C.4.i"
-      ]
-    },
-    {
-      "articleTitle": "Radar",
-      "rationaleAI": "Radar originated as and remains a key component of military technology.",
-      "relevantPathsAI": [
-        "A.4.i.iii",
-        "B.2.b",
-        "C.4",
-        "D",
-        "F.1"
-      ]
+        "B.1.c"
+      ],
+      "rationaleAI": "Directly addresses personal armor from prehistoric leather and mail to medieval plate and modern ballistic composites (B.1.a, B.1.b), as well as armor for vehicles covering warships and armoured fighting vehicles relevant to C.2 and C.1.d."
     },
     {
       "articleTitle": "Fortification",
-      "rationaleAI": "Fortifications are defensive military structures central to military technology.",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.2.a",
-        "B.1.i",
         "B.2",
         "B.2.a",
         "B.2.b",
         "B.2.c",
+        "B.2.d",
+        "B.2.e"
+      ],
+      "rationaleAI": "Directly and comprehensively covers outline B.2 on fortification, spanning field fortification (B.2.a), permanent pre-gunpowder masonry (B.2.b), early gunpowder-era low-profile designs (B.2.c), modern concrete bunkers (B.2.d), and the evolutionary drivers of each period."
+    },
+    {
+      "articleTitle": "Weapon",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6",
+        "B"
+      ],
+      "rationaleAI": "Provides the broadest overview of the offensive weaponry section (A) across all sub-categories from hand-powered to nuclear and chemical-biological weapons, and addresses defensive counterparts in B; serves as a top-level entry for the entire section."
+    },
+    {
+      "articleTitle": "Aircraft",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "Covers fixed-wing aircraft and rotorcraft (C.4.a, C.4.b) including propulsion types (internal combustion, jet, gas turbine) and configurations directly corresponding to the aircraft weapon platform subsections of the outline."
+    },
+    {
+      "articleTitle": "Rocket",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.b",
+        "A.4.c",
+        "A.4.d",
+        "A.4.e"
+      ],
+      "rationaleAI": "Covers self-propelled missiles and rockets including rocket propulsion (A.4.b), guidance (free-flight and inertial, A.4.c), payloads and warheads (A.4.d, A.4.e), and the military origins of rocketry from 13th-century China to modern ballistic missiles."
+    },
+    {
+      "articleTitle": "Gunpowder",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.e",
+        "A.3"
+      ],
+      "rationaleAI": "Gunpowder (black powder) is the foundational propellant for gunpowder weapons (A.2) and its role as a low explosive versus high explosives is directly relevant to propellants (A.2.e.i) and the explosives category (A.3)."
+    },
+    {
+      "articleTitle": "Knife",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.b"
+      ],
+      "rationaleAI": "As one of humanity's oldest cutting tools and combat weapons, the knife belongs to early hand-powered shock/edged weapons (A.1.b), tracing construction materials from stone through metal across the full prehistoric and historical range covered in A.1.a."
+    },
+    {
+      "articleTitle": "Radar",
+      "relevantPathsAI": [
+        "F",
+        "F.1"
+      ],
+      "rationaleAI": "Radar is the paradigmatic electromagnetic sensor addressed in outline F.1, covering its use in military communication, navigation, warning, detection, and weapon guidance through radio and microwave technology."
+    },
+    {
+      "articleTitle": "Military history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Encompasses the history of weapons technology evolution, doctrinal change, and military organization across all major categories of the outline \u2014 offensive weapons (A), defensive weapons (B), and weapon platforms (C) \u2014 making it a broad contextual entry for the section."
+    },
+    {
+      "articleTitle": "Ship",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.c",
+        "C.2.d",
+        "C.2.e"
+      ],
+      "rationaleAI": "Covers surface warships from ancient vessels through steam-powered battleships and aircraft carriers (C.2.c) to diesel-powered craft (C.2.d) and nuclear-powered vessels (C.2.e), directly mapping to the outline's surface ship weapon platform subsections."
+    },
+    {
+      "articleTitle": "Explosive",
+      "relevantPathsAI": [
+        "A.3",
+        "A.2.e"
+      ],
+      "rationaleAI": "Directly covers the explosive devices category (A.3) \u2014 mines, depth charges, bombs, and warheads \u2014 distinguishing high explosives from low explosives and primary from secondary types, and addresses propellant chemistry relevant to A.2.e.i."
+    },
+    {
+      "articleTitle": "Engineering",
+      "relevantPathsAI": [
         "D",
-        "D.1"
-      ]
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Military engineering (D) \u2014 tactical support through fortification, strategic support through roads, bridges, and ports, and ancillary support through maps and bomb disposal \u2014 is a direct application of engineering as covered in this article."
+    },
+    {
+      "articleTitle": "Metallurgy",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.a",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Metallurgy underpins weapon construction materials from bronze and iron for early weapons (A.1.a) to cast iron and forged steel for gunpowder weapons (A.2.a), and from mail and plate armor (B.1.a) to modern steel and composite ballistic protection (B.1.b)."
+    },
+    {
+      "articleTitle": "Military",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The military article covers logistics \u2014 supply, transport, lodging, and services \u2014 directly corresponding to outline section E, as well as personnel hierarchy, training, and technology procurement that contextualizes all the technical sections."
+    },
+    {
+      "articleTitle": "Nuclear power",
+      "relevantPathsAI": [
+        "A.5",
+        "C.2.e",
+        "C.3.a"
+      ],
+      "rationaleAI": "Nuclear power covers fission and fusion energy sources (A.5.a) and nuclear-powered vessel propulsion for aircraft carriers and cruisers (C.2.e) and nuclear submarine propulsion (C.3.a), all directly relevant to the military technology outline."
+    },
+    {
+      "articleTitle": "Navigation",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "D.3"
+      ],
+      "rationaleAI": "Navigation covers radar, radio navigation, inertial navigation, and satellite-based systems \u2014 all within the electronics section on electromagnetic sensors and transmitters used in navigation (F.1) and supporting military engineering maps (D.3)."
+    },
+    {
+      "articleTitle": "Laser",
+      "relevantPathsAI": [
+        "F",
+        "F.1"
+      ],
+      "rationaleAI": "Lasers are explicitly included in outline F.1 as laser technology used in communication, navigation, warning/detection, and weapon guidance \u2014 covering directed-energy weapons and lidar applications in military electronics."
+    },
+    {
+      "articleTitle": "Map",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Maps are explicitly listed in outline D.3 as ancillary engineering support for military operations, covering cartographic elements essential to military navigation, terrain analysis, and operational planning."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

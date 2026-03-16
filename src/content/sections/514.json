@@ -305,13 +305,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Tocharian",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Celtic",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Celtic",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",
@@ -774,13 +775,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Chinantecan",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Mixe-Zoque",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Mixe-Zoque",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

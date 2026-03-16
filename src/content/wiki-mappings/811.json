@@ -1,300 +1,331 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "811",
   "mappings": [
     {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "Philosophy provides critical frameworks for the knowledge and understanding of religion.",
+      "articleTitle": "God",
       "relevantPathsAI": [
-        "F",
-        "G"
-      ]
+        "A.1.a",
+        "A.1.b",
+        "A.2.a",
+        "A.2.b",
+        "D.3",
+        "D.3.c",
+        "D.3.d"
+      ],
+      "rationaleAI": "Central article on the philosophy of religion's core subject: the existence (A.1.a), attributes (A.1.b), and nature (A.2.a, A.2.b) of the divine; doctrines of monotheism, theism, deism, pantheism, and atheism (D.3); and arguments for and against God's existence."
     },
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Religion is a major social institution that shapes values and norms within society.",
+      "articleTitle": "Thomas Aquinas",
       "relevantPathsAI": [
-        "A",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "D.6",
-        "F.1",
-        "F.5",
-        "G.2",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Ethics",
-      "rationaleAI": "Ethics and religion are deeply intertwined, with moral reasoning central to the knowledge and understanding of religious traditions.",
-      "relevantPathsAI": [
-        "A.1",
-        "C",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "F",
-        "F.1",
-        "F.5",
+        "A.1.a",
+        "D",
+        "D.1",
+        "D.3.c",
         "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "This article on religion directly addresses the knowledge and understanding of religious phenomena as a whole.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.2",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c",
-        "D.3.b",
-        "D.3.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Deity",
-      "rationaleAI": "The concept of deity is central to the knowledge and understanding of religion, defining how traditions conceptualize the divine.",
-      "relevantPathsAI": [
-        "A",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "E",
-        "F.1",
-        "F.5",
-        "G.1",
-        "G.2",
-        "G.3"
-      ]
-    },
-    {
-      "articleTitle": "Death",
-      "rationaleAI": "Death raises profound religious questions about the afterlife, the soul, and ultimate meaning that are central to religious understanding.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.d",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.3.b",
-        "D.3.i.iii",
-        "D.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Akbar",
-      "rationaleAI": "Akbar's policy of religious tolerance and his attempt to synthesize faiths reflect important themes in the religious life of institutions and practices.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.2",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.3.b",
-        "D.3.i.iii",
-        "D.3.d"
-      ]
+      ],
+      "rationaleAI": "Aquinas's natural theology and five proofs for God's existence address A.1.a; his Summa Theologiae covers comprehensive Christian doctrine (D.1, D.3.c); his reconciliation of faith and reason directly addresses G.2."
     },
     {
       "articleTitle": "History of religion",
-      "rationaleAI": "The history of religion examines how humanity's knowledge and understanding of religion has developed.",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "E",
         "C",
-        "D",
+        "F"
+      ],
+      "rationaleAI": "Directly covers the study and classification of religions (E) and comparative cross-cultural religious phenomenology (C), tracing development of shamanism, ancestor worship, polytheism, monotheism, and all major traditions (F)."
+    },
+    {
+      "articleTitle": "Jesus",
+      "relevantPathsAI": [
+        "D.1",
+        "D.3.c",
+        "D.4",
+        "D.7",
+        "D"
+      ],
+      "rationaleAI": "Jesus is the central figure in Christian doctrines of incarnation, atonement (D.7/D.8), resurrection and eschatological return (D.7), and Trinitarian theology (D.3.c); his teachings and the Nicene Creed connect to D.1 (doctrine and dogma)."
+    },
+    {
+      "articleTitle": "Muhammad",
+      "relevantPathsAI": [
+        "D.1.a",
         "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Muhammad received and established the Quran as sacred scripture (D.1.a) and founded Islam's articles of faith and creed (D.1.b, D.1.c); his role as Seal of the Prophets is a core Islamic theological doctrine."
+    },
+    {
+      "articleTitle": "Deity",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.b",
+        "D.3",
         "D.3.a",
         "D.3.b",
         "D.3.c",
-        "D.3.i.iii",
-        "D.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Belief",
-      "rationaleAI": "Belief is fundamental to the knowledge and understanding of religion.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.3.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "D.4",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Good and evil",
-      "rationaleAI": "Good and evil are central to religious understanding and moral theology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.d",
-        "A.2",
-        "A.2.b",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c"
-      ]
+        "E"
+      ],
+      "rationaleAI": "Covers the full typology of divine beings across polytheism, monotheism, henotheism, and nontheism (D.3, A.2.a, A.2.b), and classification of religious traditions by their conception of divinity (E). Priority coverage for A.2."
     },
     {
       "articleTitle": "Myth",
-      "rationaleAI": "Myth is fundamental to the knowledge and understanding of religion.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
         "F.1",
-        "F.5",
-        "F.8",
-        "G.2"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Myth is explicitly listed at F.1; covers foundational patterns of religious cosmology, theogony, and origin narratives (C) that constitute basic religious phenomenology across cultures."
     },
     {
       "articleTitle": "Afterlife",
-      "rationaleAI": "The afterlife is a fundamental concept in the knowledge and understanding of religion.",
       "relevantPathsAI": [
-        "A",
         "A.1.d",
-        "A.2",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "God",
-      "rationaleAI": "The concept of God is central to the knowledge and understanding of religion.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c",
-        "D.3",
-        "D.3.b",
-        "D.3.i.iii"
-      ]
+        "D.7",
+        "F.6"
+      ],
+      "rationaleAI": "Covers eschatological doctrines across all major traditions including soul immortality, bodily resurrection, reincarnation (D.7), connects to the problem of immortality (A.1.d), and ancestor veneration perspectives (F.6)."
     },
     {
       "articleTitle": "Prayer",
-      "rationaleAI": "Prayer reflects the human experience of relating to the divine.",
       "relevantPathsAI": [
-        "A",
         "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c",
-        "D.3.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Shamanism",
-      "rationaleAI": "Shamanism represents an early mode of religious understanding.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.2",
-        "C",
-        "D",
-        "D.1.a",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Soul",
-      "rationaleAI": "The soul is a fundamental concept in religious understanding.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.d",
-        "A.2",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Spirituality",
-      "rationaleAI": "Spirituality is a dimension of religious knowledge and understanding.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.d",
-        "A.2",
-        "A.2.b",
-        "B",
-        "C",
-        "D",
-        "D.1.b",
-        "D.1.c",
         "D.2"
-      ]
+      ],
+      "rationaleAI": "Prayer is a direct example of religious experience (B) and contemplative address to the divine; as a form of interior petition and mystical communion, it connects to mystical theology (D.2). Cross-listed to section 812 but relevant here for phenomenology and experience."
     },
     {
-      "articleTitle": "Secularism",
-      "rationaleAI": "Secularism represents a stance toward religion's role in public life.",
+      "articleTitle": "Abraham",
       "relevantPathsAI": [
-        "A",
-        "D",
+        "D.1.c",
+        "D.10"
+      ],
+      "rationaleAI": "Abraham is the archetypal figure of faith and obedience at the origin of the covenantal bond between God and Israel (D.10), and his narrative grounds articles of faith across Judaism, Christianity, and Islam (D.1.c)."
+    },
+    {
+      "articleTitle": "Islam",
+      "relevantPathsAI": [
         "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
+        "D.1.c",
+        "D.3.c",
+        "E"
+      ],
+      "rationaleAI": "Islam's six articles of faith, five pillars, and theology of strict monotheism (D.3.c) are central doctrinal content; as a major world religion it belongs to E (study and classification of religions); the shahada is a creed (D.1.c)."
+    },
+    {
+      "articleTitle": "African traditional religions",
+      "relevantPathsAI": [
         "E",
-        "F.1",
-        "F.5",
-        "G.1",
-        "G.2"
-      ]
+        "F.6",
+        "F.8",
+        "C"
+      ],
+      "rationaleAI": "Provides substantive coverage of ancestor veneration (F.6) and nature/animistic worship (F.8), both priority paths; constitutes a distinct religious tradition for study and classification (E) and illustrates African religious phenomenology (C)."
+    },
+    {
+      "articleTitle": "Good and evil",
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.3.b"
+      ],
+      "rationaleAI": "Directly addresses the problem of evil and theodicy (A.1.d), a core issue in the philosophy of religion; also covers religious dualism \u2014 the cosmic opposition of good and evil forces \u2014 at D.3.b."
     },
     {
       "articleTitle": "Atheism",
-      "rationaleAI": "Atheism is a position regarding the knowledge and understanding of religion.",
+      "relevantPathsAI": [
+        "A.1.a",
+        "D.3.d"
+      ],
+      "rationaleAI": "Atheism is explicitly listed at D.3.d; covers epistemological and ontological arguments against the existence of God (A.1.a) and its relationship to agnosticism and secularism."
+    },
+    {
+      "articleTitle": "Protestantism",
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.1.b",
+        "D.1.c",
+        "D",
+        "D.9"
+      ],
+      "rationaleAI": "Covers Protestant doctrines of sola scriptura (D.1.a), justification by faith (D.8), sacramental theology diverging from Catholicism (D.9), and the Reformation's articles of faith (D.1.c)."
+    },
+    {
+      "articleTitle": "Bhagavad Gita",
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.3",
+        "D"
+      ],
+      "rationaleAI": "The Bhagavad Gita is a foundational Hindu sacred scripture (D.1.a) presenting doctrines of the divine (D.3), soteriological paths (karma/bhakti/jnana yoga) addressing grace and salvation (D.8), and metaphysical cosmology."
+    },
+    {
+      "articleTitle": "Laozi",
+      "relevantPathsAI": [
+        "E",
+        "C",
+        "F.8"
+      ],
+      "rationaleAI": "As the legendary author of the Tao Te Ching and founder of Taoism, Laozi's teachings on the ineffable Dao and naturalness represent a distinct religious-philosophical tradition (E) with nature-harmony elements (F.8) and distinctive phenomenological patterns (C)."
+    },
+    {
+      "articleTitle": "Ren\u00e9 Descartes",
+      "relevantPathsAI": [
+        "A.1.a",
+        "G.2"
+      ],
+      "rationaleAI": "Descartes offers transcendental arguments for God's existence (A.1.a) and his mechanical philosophy directly shaped the science-religion relationship (G.2); his cogito-based foundationalism addresses the extent of human knowledge of the divine (A.1.c)."
+    },
+    {
+      "articleTitle": "Voltaire",
+      "relevantPathsAI": [
+        "D.3.c",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Voltaire's deism (D.3.c.ii) and extensive comparative religious work are central to his philosophical output; his critiques of institutional religion directly address religion-morality (G.4) and religion-science tensions (G.2)."
+    },
+    {
+      "articleTitle": "Philosophy",
       "relevantPathsAI": [
         "A",
-        "A.1.d",
-        "A.2",
-        "C",
-        "D",
-        "D.1.b",
-        "D.3.i.iii",
-        "D.3.d",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Philosophy encompasses philosophy of religion (section 811's core, A) as a named subfield; also connects religion to science (G.2) and to morality through ethics (G.4)."
+    },
+    {
+      "articleTitle": "Religion",
+      "relevantPathsAI": [
         "E",
-        "F.1"
-      ]
+        "C",
+        "G"
+      ],
+      "rationaleAI": "Top-level article covering the study and classification of religions (E), basic patterns of religious thought and practice (C), and religion's intersections with science, society, law, and morality (G). Essential overview for section 811."
+    },
+    {
+      "articleTitle": "Christianity",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D.1.c",
+        "D.3.c",
+        "D.7",
+        "D",
+        "D.9",
+        "E"
+      ],
+      "rationaleAI": "Covers Christian doctrines of Trinity, atonement, eschatology, and salvation (D.7, D.8), sacramental theology (D.9), the Nicene Creed (D.1.c), and scriptural canon (D.1.b). Also classifiable as a major world religion (E)."
+    },
+    {
+      "articleTitle": "Catholic Church",
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.1.b",
+        "D.9",
+        "D.10",
+        "G.3"
+      ],
+      "rationaleAI": "The Catholic Church's Magisterium, scripture-and-tradition doctrine (D.1.a, D.1.b), sacramental theology (D.9), and covenantal ecclesiology (D.10) are substantive; its societal influence covers G.3."
+    },
+    {
+      "articleTitle": "Quran",
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.1.b",
+        "D.4",
+        "D.7"
+      ],
+      "rationaleAI": "The Quran is Islam's primary sacred scripture (D.1.a) containing doctrine and dogma (D.1.b), covering creation narratives (D.4), eschatology (D.7), and establishing Islamic articles of faith across its 114 suras."
+    },
+    {
+      "articleTitle": "Taoism",
+      "relevantPathsAI": [
+        "E",
+        "C",
+        "F.8",
+        "D.3"
+      ],
+      "rationaleAI": "Taoism represents a distinct religious-philosophical tradition for classification (E) organized around the Tao as an impersonal ultimate reality (D.3, A.2.a), with nature-harmony practices (F.8) and distinctive phenomenological patterns (C)."
+    },
+    {
+      "articleTitle": "Metaphysics",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "D.3"
+      ],
+      "rationaleAI": "Metaphysics addresses the fundamental philosophical questions that underpin philosophy of religion (A.1, A.2): the nature of being and existence, which maps directly onto questions about the existence and attributes of the divine (D.3)."
+    },
+    {
+      "articleTitle": "Ontology",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2"
+      ],
+      "rationaleAI": "Ontology directly addresses the question of existence (A.1.a \u2014 existence of the divine) and the nature of categories of reality, providing the philosophical framework for determining whether God exists and what kind of being God would be (A.2)."
+    },
+    {
+      "articleTitle": "Epistemology",
+      "relevantPathsAI": [
+        "A.1.c",
+        "G.2"
+      ],
+      "rationaleAI": "Epistemology covers religious knowledge as a specialized branch (A.1.c \u2014 the extent to which mankind can have knowledge of the divine) and directly informs the religion-science relationship regarding knowledge sources and limits (G.2)."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "A.1.c",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Reason's relationship to faith \u2014 the tension between reason and revelation \u2014 is a core topic in philosophy of religion (A.1.c) and underlies debates about religion's relationship to science (G.2) and to moral authority (G.4)."
+    },
+    {
+      "articleTitle": "Consciousness",
+      "relevantPathsAI": [
+        "B",
+        "D.2"
+      ],
+      "rationaleAI": "Consciousness is central to religious experience (B) \u2014 the subjective, phenomenological dimension of religious encounter \u2014 and directly relevant to mystical theology as immediate experience of the divine (D.2)."
+    },
+    {
+      "articleTitle": "Immanuel Kant",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.c",
+        "D.3.c",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Kant's philosophy of religion grounds morality rather than metaphysics; his critique of pure reason limits knowledge of the divine (A.1.c); his arguments engage theism (D.3.c) and set the framework for religion-science (G.2) and religion-morality debates (G.4)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "D.3.c",
+        "G.2",
+        "G.3",
+        "G.4"
+      ],
+      "rationaleAI": "The Enlightenment's deism (D.3.c.ii), secularism, and rational critique of revealed religion directly shaped G.2 (religion and science) and G.3 (religion and society); the period redefined the relationship between religious authority and rational moral philosophy (G.4)."
+    },
+    {
+      "articleTitle": "Secularism",
+      "relevantPathsAI": [
+        "G.3",
+        "D.3.d"
+      ],
+      "rationaleAI": "Secularism as the political principle of separation of religion from governance is directly relevant to G.3 (religion and society); its philosophical connection to atheism and agnosticism links to D.3.d."
+    },
+    {
+      "articleTitle": "Confucianism",
+      "relevantPathsAI": [
+        "E",
+        "C",
+        "G.3",
+        "G.4"
+      ],
+      "rationaleAI": "Confucianism is a major East Asian religio-philosophical tradition for classification (E) whose emphasis on social ethics and ritual propriety constitutes its religious phenomenology (C) and illustrates G.3 and G.4."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

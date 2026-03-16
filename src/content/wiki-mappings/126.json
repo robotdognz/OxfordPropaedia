@@ -1,200 +1,213 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "126",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "Mechanics of particles and deformable bodies is a foundational branch of physics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.i",
-        "A.3.c",
-        "A.3.d",
-        "B.1",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Physics",
-      "rationaleAI": "Classical and quantum mechanics of particles, rigid bodies, and fluids are core branches of physics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.a",
-        "A.3.i",
-        "A.3.c",
-        "A.3.d",
-        "B.1",
-        "C.3",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Isaac Newton",
-      "rationaleAI": "Newton's laws of motion and universal gravitation are the foundation of classical mechanics.",
-      "relevantPathsAI": [
-        "A.3.i",
-        "A.3.i.iv",
-        "A.3.d",
-        "A.3.f",
-        "A.6.a"
-      ]
-    },
-    {
-      "articleTitle": "Archimedes",
-      "rationaleAI": "Archimedes' principles of buoyancy and the lever are foundational concepts in the mechanics of particles and rigid bodies.",
+      "articleTitle": "Classical mechanics",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
-        "A.3.a",
-        "A.3.i",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.iv",
-        "A.3.c",
-        "A.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Classical mechanics",
-      "rationaleAI": "Classical mechanics governs the motion of particles, rigid bodies, and deformable bodies treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.3",
         "A.3.a",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
         "A.3.b",
-        "A.3.i"
-      ]
+        "A.6"
+      ],
+      "rationaleAI": "Classical mechanics is the direct subject of outline Section A, covering Newtonian, Lagrangian, and Hamiltonian formulations; the article explicitly covers statics, kinematics, dynamics (Newton's laws), energy conservation, and Lagrange's and Hamilton's equations (A.6.d)."
     },
     {
       "articleTitle": "Force",
-      "rationaleAI": "Force is the central concept in mechanics governing the motion of particles and rigid bodies.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.b",
-        "A.3.i",
-        "A.3.i.iv",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Mass",
-      "rationaleAI": "Mass is a fundamental property in mechanics determining inertia and gravitational interaction of bodies.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv"
-      ]
-    },
-    {
-      "articleTitle": "Momentum",
-      "rationaleAI": "Momentum is a conserved quantity central to the mechanics of particles and rigid bodies.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
         "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Motion",
-      "rationaleAI": "Motion is the primary subject of mechanics covering particles, rigid bodies, and deformable bodies.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
-        "A.3.i",
-        "A.3.i.iii"
-      ]
+      ],
+      "rationaleAI": "Force is defined as the central concept of classical mechanics (A.1), covered explicitly in statics/friction (A.2), and as the driver of kinetics including Newton's second and third laws (A.3.b.i); torque as the rotational analogue also connects to A.6."
     },
     {
       "articleTitle": "Newton's laws of motion",
-      "rationaleAI": "Newton's laws provide the foundational framework for classical mechanics of particles and rigid bodies.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
-        "A.3.b"
-      ]
+        "A.3.b",
+        "A.3.c",
+        "A.3.f"
+      ],
+      "rationaleAI": "Newton's three laws are the explicit content of outline A.3.b.i (law of inertia, law of force, action-reaction), and the article's coverage of impulse, momentum, and conservation (A.3.c, A.3.f) is a direct match."
+    },
+    {
+      "articleTitle": "Motion",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Motion covers kinematics (A.3.a) \u2014 velocity, acceleration, rotation about a fixed axis, circular motion, simple harmonic motion, and relative motion \u2014 all of which are the explicit sub-paths of A.3.a in the outline."
+    },
+    {
+      "articleTitle": "Momentum",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.3.f",
+        "A.4.a"
+      ],
+      "rationaleAI": "Momentum directly covers the conservation of momentum (A.3.f), impulse and momentum (A.3.c), and elastic and inelastic collisions in the centre-of-mass system (A.4.a), all high-priority outline paths."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "A.3.e",
+        "A.3.d"
+      ],
+      "rationaleAI": "Energy maps directly to outline A.3.e (energy concept and conservation, forms and transformations, mass-energy equivalence) and A.3.d (work and power), covering all the specified sub-paths comprehensively."
     },
     {
       "articleTitle": "Gravity",
-      "rationaleAI": "Gravity governs the mechanics of celestial and terrestrial bodies through gravitational force.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3.i",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.3.v",
-        "A.3.c",
-        "A.3.d",
-        "A.4",
-        "A.6"
-      ]
+        "A.3.b",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Gravity covers Newton's law of universal gravitation (A.3.b.v), governs orbital mechanics and celestial mechanics broadly (Section B), and Einstein's general relativity reinterpretation is relevant to both B and C."
     },
     {
-      "articleTitle": "Simple machine",
-      "rationaleAI": "Simple machines apply mechanical principles of force and motion.",
+      "articleTitle": "Theory of relativity",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "A.3.e"
+      ],
+      "rationaleAI": "Directly addresses Section C (relativistic mechanics): special relativity foundations (C.1), relativistic kinematics including time dilation and length contraction (C.2), and the gravitational-inertial mass relationship (C.3); mass-energy equivalence covers A.3.e.iii."
+    },
+    {
+      "articleTitle": "Albert Einstein",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Einstein's special and general relativity theories constitute the content of Section C; the article covers the postulates, kinematics, and mass-energy equivalence central to relativistic mechanics (C.1\u2013C.3)."
+    },
+    {
+      "articleTitle": "Wave",
+      "relevantPathsAI": [
+        "E.1",
+        "E.3",
+        "E.4"
+      ],
+      "rationaleAI": "Wave covers vibration properties including natural, damped, and forced vibrations (E.1), types of vibrational waves and modes of propagation (E.3), and material behaviour under vibration (E.4), aligning with outline Section E."
+    },
+    {
+      "articleTitle": "Gas",
+      "relevantPathsAI": [
+        "F.1",
+        "F.3",
+        "F.3.d"
+      ],
+      "rationaleAI": "Gas is a fluid governed by ideal gas laws and kinetic theory, directly relevant to fluid mechanics and gas dynamics (F.1 general properties, F.3 fluid in motion including compressible flow at F.3.d); turbulence and viscosity also match F.3.b\u2013c."
+    },
+    {
+      "articleTitle": "Liquid",
+      "relevantPathsAI": [
+        "F.1",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Liquid covers surface tension, viscosity, buoyancy, and incompressible flow \u2014 the key properties addressed in fluid statics (F.2) and hydrodynamics (F.3); liquids are the canonical fluid studied in fluid mechanics."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.3.b",
+        "B.1"
+      ],
+      "rationaleAI": "Newton is the founder of classical mechanics (Principia Mathematica), directly associated with Newton's laws (A.3.b.i), law of universal gravitation (A.3.b.v), and the history of celestial mechanics (B.1)."
+    },
+    {
+      "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
         "A.3.a",
-        "A.3.i",
-        "A.3.i.iv",
-        "A.3.c",
-        "A.3.d",
-        "A.4.b",
-        "C.2",
-        "F.1",
-        "G.1.a"
-      ]
+        "A.3.b"
+      ],
+      "rationaleAI": "Galileo's experimental work on free fall (kinematics, A.3.a), inertia (A.3.b.i), and projectile motion (A.3.b.iii) are foundational contributions to the mechanics covered in outline Section A."
     },
     {
-      "articleTitle": "Three-dimensional space",
-      "rationaleAI": "Three-dimensional space is the physical setting for mechanics of particles and rigid bodies.",
+      "articleTitle": "Archimedes",
+      "relevantPathsAI": [
+        "A.2",
+        "F.2",
+        "F.2.b"
+      ],
+      "rationaleAI": "Archimedes established foundational principles of statics (lever and center of gravity, A.2) and hydrostatics including the principle of buoyancy (F.2, F.2.b) \u2014 two uncovered or lightly covered areas in the outline."
+    },
+    {
+      "articleTitle": "Steel",
+      "relevantPathsAI": [
+        "D.1",
+        "D.3",
+        "G.3"
+      ],
+      "rationaleAI": "Steel's high elastic modulus and yield/fracture strength make it the paradigmatic material for stress-strain relationships (D.1), elastic constants (D.3), and yield strength and fracture (G.3) in the outline's sections on elasticity and rheology."
+    },
+    {
+      "articleTitle": "Thermodynamics",
+      "relevantPathsAI": [
+        "A.3.e",
+        "F.1"
+      ],
+      "rationaleAI": "Thermodynamics' first law (energy conservation) underpins outline A.3.e.i, and thermodynamic properties of fluids are essential to fluid mechanics (F.1 general properties of fluids including thermodynamic properties)."
+    },
+    {
+      "articleTitle": "Mechanical engineering",
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Mechanical engineering explicitly encompasses mechanics, structural analysis, dynamics, thermodynamics, and computational fluid dynamics, spanning the entire outline's scope from classical mechanics (A) through elasticity (D), vibrations (E), and fluid mechanics (F)."
+    },
+    {
+      "articleTitle": "Leonhard Euler",
+      "relevantPathsAI": [
+        "F.3",
+        "A.6.d",
+        "B.1"
+      ],
+      "rationaleAI": "Euler made foundational contributions to fluid dynamics (Euler equations, F.3), analytical mechanics including the Lagrangian/Hamiltonian framework Euler helped develop (A.6.d), and celestial mechanics (B.1), covering three of the outline's major divisions."
+    },
+    {
+      "articleTitle": "Emmy Noether",
+      "relevantPathsAI": [
+        "A.3.f",
+        "A.3.c"
+      ],
+      "rationaleAI": "Noether's theorem establishes the direct link between continuous symmetry and conservation laws, providing the deep theoretical basis for conservation of momentum (A.3.f) and impulse-momentum relations (A.3.c) in classical mechanics."
+    },
+    {
+      "articleTitle": "Mass",
       "relevantPathsAI": [
         "A.1",
-        "A.3",
-        "A.3.i",
-        "A.3.c",
+        "A.3.e",
+        "C.3"
+      ],
+      "rationaleAI": "Mass is one of the fundamental parameters of classical mechanics (A.1), central to mass-energy equivalence (A.3.e.iii), and the equivalence of gravitational and inertial mass is explicitly the subject of outline path C.3."
+    },
+    {
+      "articleTitle": "Natural satellite",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Natural satellites orbit under gravitational perturbations, directly illustrating the two-body problem and orbital deviations (B.2) and aspects of the three-body problem (B.3) in celestial mechanics."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
         "A.3.d",
-        "A.6",
-        "F.2.b",
-        "F.3.c"
-      ]
+        "A.3.e"
+      ],
+      "rationaleAI": "Engines convert energy forms into mechanical energy (work and power, A.3.d) and represent the most prevalent application of energy transformation chains (A.3.e.ii); heat engines are directly governed by thermodynamic-mechanical principles."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

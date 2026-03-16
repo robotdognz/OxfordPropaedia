@@ -1,70 +1,213 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "241",
   "mappings": [
     {
       "articleTitle": "Earth",
-      "rationaleAI": "The origin and development of Earth and its envelopes is a central topic of this article.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
         "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "C"
-      ]
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Earth covers the origin and development of the planet including the lithosphere, atmosphere, hydrosphere, continental formation, mountain systems, and plate tectonics, providing substantive coverage of essentially the entire outline of section 241."
     },
     {
-      "articleTitle": "Geology",
-      "rationaleAI": "Geology provides the framework for understanding the origin and development of Earth and its envelopes over 4.5 billion years.",
+      "articleTitle": "Plate tectonics",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1",
-        "D.1",
-        "D.3",
-        "E.1",
-        "E.2"
-      ]
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.4",
+        "F.4.a",
+        "E.1"
+      ],
+      "rationaleAI": "Plate tectonics is a direct match to outline F, covering Wegener's continental drift (F.2), Hess's seafloor spreading (F.3), the unifying theory (F.4), and plate boundaries as sites of volcanism, seismicity, and orogeny (F.4.a)."
     },
     {
       "articleTitle": "Continent",
-      "rationaleAI": "Continental formation is central to the origin and development of Earth's surface.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.5",
-        "C",
-        "C.1",
         "D",
         "D.1",
         "D.2",
-        "D.3"
-      ]
+        "F.1"
+      ],
+      "rationaleAI": "The Continent article directly addresses the formation and growth of continents (D), continental crust and tectonics, and the supercontinent concept including Pangaea and continental drift (F.1), covering the main nodes of outline section D."
     },
     {
-      "articleTitle": "History of Earth",
-      "rationaleAI": "The history of Earth's origin and development is the direct subject of this section.",
+      "articleTitle": "Internal structure of Earth",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.2",
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "The article covers geochemical differentiation of the crust and mantle (A.2), the lithosphere–asthenosphere distinction underlying plate tectonics (D.3), and the seismic and geophysical methods used to infer deep-Earth properties and structure."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
         "B",
         "B.1",
         "B.2",
         "B.3",
         "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "The article traces atmospheric evolution from primordial solar-nebula gases through the second and third atmospheres (B.1–B.3) and covers human impacts including ozone depletion, acid deposition, and greenhouse warming corresponding to B.5."
+    },
+    {
+      "articleTitle": "History of Earth",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "The History of Earth article spans all major phases of Earth's development including lithospheric formation, oceanic and atmospheric origin, Snowball Earth, and plate tectonic reorganization of continents and mountain systems—covering the full scope of section 241."
+    },
+    {
+      "articleTitle": "Mountain",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.4",
+        "F.4.a"
+      ],
+      "rationaleAI": "Mountains are the central subject of outline E (formation and growth of mountain ranges), with the article covering tectonic formation types corresponding to E.2 and their relation to global tectonics (E.1) and plate boundary orogeny (F.4.a)."
+    },
+    {
+      "articleTitle": "Himalayas",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.4",
+        "F.4.a"
+      ],
+      "rationaleAI": "The Himalayas formed through Indian–Eurasian plate collision, directly illustrating tectonic mountain belt formation (E.2), the distribution of mountain belts relative to global tectonics (E.1), and plate boundary orogeny (F.4.a)."
+    },
+    {
+      "articleTitle": "Andes",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "F.4.a"
+      ],
+      "rationaleAI": "The Andes illustrate subduction-driven mountain belt formation (E.2) and their volcanic activity exemplifies plate boundaries as sites of volcanism and orogeny (F.4.a), providing a contrasting tectonic mode to collision-type ranges."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Oxygen's entry discusses the Great Oxidation Event and biogenic maintenance of atmospheric oxygen via photosynthesis, directly relevant to the development of the present terrestrial atmosphere (B.3) and the composition of the present atmosphere (B.4)."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
         "B.5",
-        "C"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Carbon dioxide is the principal greenhouse gas driving climate change (B.5: greenhouse warming induced by CO2 buildup) and its dissolution in seawater is central to the chemical view of the modern oceans (C.2)."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Pollution addresses human-induced atmospheric contamination including acid rain from sulfur dioxide, greenhouse gas emissions, and ozone-depleting substances, matching the specific examples listed verbatim in outline B.5."
+    },
+    {
+      "articleTitle": "Ocean",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "The ocean article covers early ocean formation, seawater chemistry and carbon cycling (C.2), and the present hydrosphere (C.3), providing substantive content for all three nodes of section C on the origin and evolution of the hydrosphere."
+    },
+    {
+      "articleTitle": "Moon",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The Moon article covers its formation ~4.51 billion years ago by a giant impact event, which is the leading hypothesis for the origin of the Earth-Moon system and directly relevant to theories of Earth's origin (A.1)."
+    },
+    {
+      "articleTitle": "Abiogenesis",
+      "relevantPathsAI": [
+        "C.1",
+        "B.3"
+      ],
+      "rationaleAI": "Abiogenesis covers early ocean environments as the setting for life's origin (C.1: the early oceans) and connects to the development of the present atmosphere through the relationship between early life and the oxygen revolution (B.3)."
+    },
+    {
+      "articleTitle": "Earthquake",
+      "relevantPathsAI": [
+        "F.4.a"
+      ],
+      "rationaleAI": "Earthquakes are explicitly listed in F.4.a as phenomena at lithospheric plate boundaries, and the article's coverage of seismicity along tectonic plate boundaries directly illustrates this outline node."
+    },
+    {
+      "articleTitle": "Fossil fuel",
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Fossil fuel combustion is the primary driver of the greenhouse gas buildup and CO2 increase explicitly cited in outline B.5, making this a direct topical match for human effects on Earth's atmospheric evolution."
+    },
+    {
+      "articleTitle": "Climate",
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Climate addresses greenhouse warming and paleoclimatology, supporting outline B.5 on human-induced atmospheric changes, while its treatment of long-term climate variation connects to atmospheric evolution over geological time."
+    },
+    {
+      "articleTitle": "Asteroid",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Asteroids as remnant planetesimals and their role in the Late Heavy Bombardment connect to theories of Earth's origin (A.1), including the delivery of volatile compounds that contributed to early ocean and atmosphere formation."
+    },
+    {
+      "articleTitle": "Solar System",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "The Solar System article covers its formation ~4.6 billion years ago from a collapsing molecular cloud, directly relevant to theories of Earth's origin (A.1), and provides the comparative framework for Earth's atmospheric development relative to other planetary atmospheres (B.1)."
+    },
+    {
+      "articleTitle": "Venus",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Venus's dense CO2 atmosphere and extreme greenhouse effect make it the most instructive comparative case for outline B.1 (relation of Earth's atmosphere development to other planetary atmospheres), given its similar mass and its divergent atmospheric fate."
+    },
+    {
+      "articleTitle": "Mars",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Mars lost its early magnetosphere and most of its atmosphere, contrasting sharply with Earth's atmospheric development and illustrating the range of planetary atmospheric outcomes covered by outline B.1."
+    },
+    {
+      "articleTitle": "Pacific Ocean",
+      "relevantPathsAI": [
+        "F.3",
+        "C.1"
+      ],
+      "rationaleAI": "The Pacific Ocean's seafloor geology is relevant to Hess's seafloor spreading model (F.3) and the rates of seafloor spreading (D.4.c), and the basin's origin connects to the early development of the hydrosphere (C.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

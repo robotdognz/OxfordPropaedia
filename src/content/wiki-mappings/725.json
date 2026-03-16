@@ -1,176 +1,192 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "725",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Industrial production processes represent core applied technology.",
+      "articleTitle": "Metallurgy",
       "relevantPathsAI": [
-        "A.5.i.iii",
-        "B.2.i.iv",
-        "B.2.i.iii",
-        "B.3.e",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Clothing",
-      "rationaleAI": "Textile manufacturing and garment production are major industrial processes transforming raw fibers into finished clothing.",
-      "relevantPathsAI": [
-        "A.5.i.ii",
-        "B.2.a",
-        "B.3.a",
-        "B.4.f",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Manufacturing",
-      "rationaleAI": "Manufacturing encompasses the core industrial production processes including machining, casting, molding, and assembly.",
-      "relevantPathsAI": [
-        "B.3.e"
-      ]
-    },
-    {
-      "articleTitle": "Engineering",
-      "rationaleAI": "Process engineering develops and optimizes industrial production processes for manufacturing and materials processing.",
-      "relevantPathsAI": [
-        "A.4",
-        "A.5.i.iii",
-        "A.5.i.ii",
-        "B.2.i.iv",
-        "B.2.i.iii",
-        "B.3.e"
-      ]
-    },
-    {
-      "articleTitle": "Shoe",
-      "rationaleAI": "Shoe manufacturing involves industrial production processes.",
-      "relevantPathsAI": [
-        "B.4.f"
-      ]
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Metallurgy is the exact subject of the B division\u2014covering mineral processing (B.1), all branches of extractive metallurgy including pyrometallurgy, electrometallurgy, and hydrometallurgy (B.2), and physical metallurgy (B.3)."
     },
     {
       "articleTitle": "Metal",
-      "rationaleAI": "Metal processing is a core industrial production technology covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.4.a",
-        "A.5",
-        "A.5.a",
-        "A.5.i",
-        "A.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Steel",
-      "rationaleAI": "Steel production is a major industrial manufacturing process treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.5.i",
-        "A.5.b",
-        "A.5.i",
-        "A.6"
-      ]
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Metal as the substrate of metallurgical production processes covers the physical and chemical properties that govern physical metallurgy (B.3), including heat treatment, surface treatment, and mechanical working."
     },
     {
       "articleTitle": "Oven",
-      "rationaleAI": "Ovens are tools used in industrial and domestic production processes.",
       "relevantPathsAI": [
-        "A.5.i.iii",
-        "B.2.i.iv",
-        "B.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Integrated circuit",
-      "rationaleAI": "IC fabrication is a precision industrial production process.",
-      "relevantPathsAI": [
-        "A.5",
-        "B.3.e"
-      ]
-    },
-    {
-      "articleTitle": "Glass",
-      "rationaleAI": "Glass manufacturing is an industrial production process treated here.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.5.i.ii",
-        "A.5.i.iii",
-        "A.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Metallurgy",
-      "rationaleAI": "Metallurgical processes are core industrial production technologies.",
-      "relevantPathsAI": [
-        "A.4.a",
         "A.5.a",
-        "A.5.i",
-        "A.6.a",
-        "A.6.b",
-        "B",
-        "B.2.a",
-        "B.2.i.ii",
-        "B.2.i.iv",
-        "B.2.i.iii"
-      ]
+        "B.2.a"
+      ],
+      "rationaleAI": "Industrial kilns and furnaces\u2014including those for ceramics firing, glass production, and metallurgical smelting\u2014are the primary equipment for heat-treating operations (A.5.a) and pyrometallurgical processes (B.2.a)."
     },
     {
       "articleTitle": "Natural rubber",
-      "rationaleAI": "Rubber processing is an industrial production technology.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.1.b",
+        "A.2.a"
+      ],
+      "rationaleAI": "Vulcanization (sulfur cross-linking) is a chemical processing operation (A.1.b: polymerization/coagulation) that transforms raw latex, and rubber molding (injection/compression) relates to casting and molding nonmetals (A.2.a.ii)."
+    },
+    {
+      "articleTitle": "Silver",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.b"
+      ],
+      "rationaleAI": "Silver refining by pyrometallurgical methods (B.2.a.iv) and electrorefining (B.2.b.iii) are directly noted in the extractive metallurgy outline; the article covers silver's production as a byproduct of other metal refining."
+    },
+    {
+      "articleTitle": "Alloy",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.f",
+        "A.5"
+      ],
+      "rationaleAI": "Alloy production involves heat treatment (B.3.f\u2014annealing, quenching, tempering to achieve target microstructures) and property modification (A.5); the article covers how alloying and heat treatment alter microstructure and mechanical properties."
+    },
+    {
+      "articleTitle": "Glass",
+      "relevantPathsAI": [
         "A.2.a",
-        "A.2.b",
-        "A.4.b",
+        "A.5"
+      ],
+      "rationaleAI": "Glass production involves casting and molding molten silicate material (A.2.a.ii\u2014casting/molding nonmetals) and property modification through controlled quenching and annealing; the article covers soda-lime, borosilicate, and specialty glass production."
+    },
+    {
+      "articleTitle": "Manufacturing",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Manufacturing provides an overview of industrial production processes\u2014fabrication, assembly, forming, and finishing across industries\u2014that encompasses the scope of section A (materials processing operations)."
+    },
+    {
+      "articleTitle": "Steel",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.3.f",
+        "B.4"
+      ],
+      "rationaleAI": "Steel production maps to converting processes (B.2.a.iii: basic oxygen steelmaking), heat treatment for microstructural control (B.3.f), and welding (B.4: weldability and applications of steel structures)."
+    },
+    {
+      "articleTitle": "Iron",
+      "relevantPathsAI": [
+        "B.2.a"
+      ],
+      "rationaleAI": "Iron smelting via blast furnace (B.2.a.ii\u2014smelting) and direct reduction, plus its conversion to steel (B.2.a.iii), are core pyrometallurgical operations directly addressed in the extractive metallurgy section."
+    },
+    {
+      "articleTitle": "Copper",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.b"
+      ],
+      "rationaleAI": "Copper production exemplifies converting to blister copper (B.2.a.iii), pyrometallurgical refining (B.2.a.iv), and electrorefining (B.2.b.iii)\u2014the outline explicitly names copper in all three nodes."
+    },
+    {
+      "articleTitle": "Refrigeration",
+      "relevantPathsAI": [
         "A.5.a",
-        "A.5.b",
-        "A.5.i",
-        "A.5.c"
-      ]
+        "C.4"
+      ],
+      "rationaleAI": "Cryogenic temperature processing (A.5.a.iv) for materials treatment connects to refrigeration technology; industrial refrigeration also underpins cold-storage warehousing (C.4), one of the priority uncovered paths."
     },
     {
       "articleTitle": "Plastic",
-      "rationaleAI": "Plastic manufacturing is a major industrial production process.",
       "relevantPathsAI": [
-        "A.4.b",
-        "A.5.i.ii",
-        "B.3.e"
-      ]
+        "A.1.b",
+        "A.2.a"
+      ],
+      "rationaleAI": "Plastics are produced by chemical processing including polymerization (A.1.b) and shaped by injection molding, extrusion, and compression (A.2.a.ii\u2014casting and molding nonmetals), making them central examples in both nodes."
     },
     {
-      "articleTitle": "Textile",
-      "rationaleAI": "Textile manufacturing is an industrial production process treated here.",
+      "articleTitle": "Laser",
       "relevantPathsAI": [
-        "A.4.b",
-        "A.5",
-        "A.5.i.iii",
-        "A.5.i.ii",
-        "A.5.c",
-        "A.6",
-        "A.6.a",
-        "B.1",
+        "B.4.g",
+        "A.3"
+      ],
+      "rationaleAI": "Laser welding is explicitly named in recent welding developments (B.4.g); laser cutting also relates to material removal by precision light-based machining (A.3)."
+    },
+    {
+      "articleTitle": "Machine",
+      "relevantPathsAI": [
+        "A",
+        "C.2"
+      ],
+      "rationaleAI": "Machines are the fundamental units of production processes, covering forming, material removal, and joining operations across section A; power trucks and mechanized conveyors also connect to materials-handling equipment (C.2), a priority uncovered path."
+    },
+    {
+      "articleTitle": "Robotics",
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Robotics in manufacturing automates materials processing (A) and industrial materials handling, including conveyors, automated guided vehicles, and storage retrieval systems\u2014directly relevant to the uncovered C paths on materials-handling systems and equipment."
+    },
+    {
+      "articleTitle": "Concrete",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.1.a"
+      ],
+      "rationaleAI": "Concrete production involves mixing and blending aggregates (A.1.a\u2014mechanical processing) and casting molten/wet material into forms (A.2.a.ii\u2014casting/molding nonmetals), making it a direct example of these production processes."
+    },
+    {
+      "articleTitle": "Electricity",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Electrometallurgy (B.2.b)\u2014electrolytic smelting, electrowinning, and electrorefining\u2014relies on electrical principles; electricity generation and distribution underpins industrial production processes throughout the section."
+    },
+    {
+      "articleTitle": "Gold",
+      "relevantPathsAI": [
         "B.2.a",
-        "B.2.i.iv"
-      ]
+        "B.2.b"
+      ],
+      "rationaleAI": "Gold refining is explicitly named in pyrometallurgical refining (B.2.a.iv) and electrorefining (B.2.b.iii); the article covers high-purity gold recovery through both thermal and electrochemical methods."
+    },
+    {
+      "articleTitle": "Mineral",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Mineral processing\u2014crushing, grinding, and concentration of metallic minerals\u2014is the first stage of metallurgy (B.1) and minerals as crystalline inorganic solids are the raw input for all subsequent extractive metallurgy operations."
+    },
+    {
+      "articleTitle": "Rock (geology)",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Rocks are the primary material input to mineral processing (B.1: crushing and grinding of ores), which is the first step in extractive metallurgy; the article connects petrology to ore deposits and mining inputs."
+    },
+    {
+      "articleTitle": "Inorganic chemistry",
+      "relevantPathsAI": [
+        "B.2",
+        "A.1.b"
+      ],
+      "rationaleAI": "Inorganic chemistry provides the theoretical basis for extractive metallurgy\u2014redox reactions, coordination chemistry, and catalysis (B.2)\u2014and for chemical processing operations including leaching, precipitation, and smelting (A.1.b)."
+    },
+    {
+      "articleTitle": "Silicon",
+      "relevantPathsAI": [
+        "B.2.b",
+        "A.2.a"
+      ],
+      "rationaleAI": "Silicon production by electrolytic reduction of silica (analogous to the Hall-H\u00e9roult process, B.2.b.i) and silicon casting for semiconductor wafers (A.2.a.ii\u2014molding nonmetals) relate to industrial production processes covered in the outline."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

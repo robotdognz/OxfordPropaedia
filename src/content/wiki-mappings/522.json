@@ -1,124 +1,288 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "522",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "The group structure of society directly addresses societal organization covered in this article.",
-      "relevantPathsAI": [
-        "C.6",
-        "D"
-      ]
-    },
-    {
       "articleTitle": "Family",
-      "rationaleAI": "The family is the most fundamental unit within the group structure of society, organizing kinship and social obligations.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B",
-        "C",
-        "C.3",
-        "C.6",
-        "C.9",
-        "D",
-        "D.1",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Home",
-      "rationaleAI": "The home is the fundamental unit of domestic life within the group structure of society, organizing household and family relations.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Marriage",
-      "rationaleAI": "Marriage structures the group organization of society.",
       "relevantPathsAI": [
         "A.2",
-        "B",
-        "C",
-        "C.2",
-        "C.3",
-        "C.6",
-        "C.7",
-        "D",
-        "D.1",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Parenting",
-      "rationaleAI": "Parenting roles are fundamental to the group structure of society.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "B",
-        "C.6",
-        "D.1",
-        "D.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Friendship",
-      "rationaleAI": "Friendship is a fundamental social bond within the group structure of society.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "C.1",
-        "C.6",
-        "D",
-        "D.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Adult",
-      "rationaleAI": "Adults occupy central roles within the group structure of society.",
-      "relevantPathsAI": [
-        "C",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Sexual orientation",
-      "rationaleAI": "Sexual orientation affects social group structure and identity.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B",
-        "C",
-        "C.3",
-        "C.6",
-        "C.7",
-        "D",
-        "D.1",
-        "D.2.g"
-      ]
+        "D"
+      ],
+      "rationaleAI": "Family directly covers the modern family's organization, functions, and structural varieties (A.2), and connects to family welfare and child welfare fields of social service (D.2a, D.2b)."
     },
     {
       "articleTitle": "Community",
-      "rationaleAI": "Community is a fundamental unit within the group structure of society.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
+        "A.1",
+        "D"
+      ],
+      "rationaleAI": "Community covers types of social units and the classification of groups by shared place, norms, and identity (A.1), and community development as an organized social capacity-building effort maps to D.2f."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
         "C.6",
-        "D.2.f"
-      ]
+        "D"
+      ],
+      "rationaleAI": "Child covers child labor, abuse, and protection\u2014linking to delinquency and criminality concerns (C.6)\u2014as well as child and youth welfare fields (D.2b, D.2c)."
+    },
+    {
+      "articleTitle": "Discrimination",
+      "relevantPathsAI": [
+        "B",
+        "A.4",
+        "C.3"
+      ],
+      "rationaleAI": "Discrimination directly addresses the social effects of racial and ethnic prejudice (B), the position of minorities and ethnic groups (A.4), and the situation of women (C.3)."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "C.1",
+        "D"
+      ],
+      "rationaleAI": "Adolescence is the subject of C.1 in the 522 outline, covering developmental transitions and social concerns of youth. Youth welfare services (D.2c) address this population's needs."
+    },
+    {
+      "articleTitle": "Racism",
+      "relevantPathsAI": [
+        "B",
+        "A.4"
+      ],
+      "rationaleAI": "Racism is the core topic of B (social effects of racial and ethnic prejudice), covering its manifestations in discrimination, segregation, and oppression, and directly concerns minority and ethnic group relations (A.4)."
+    },
+    {
+      "articleTitle": "Indigenous peoples",
+      "relevantPathsAI": [
+        "A.4",
+        "C.4",
+        "B"
+      ],
+      "rationaleAI": "Indigenous peoples are both ethnic minorities (A.4) and cultural minorities with distinct identity and territorial claims (C.4), and their experience of racism and colonial subjugation is central to B."
     },
     {
       "articleTitle": "Poverty",
-      "rationaleAI": "Poverty shapes the group structure of society.",
+      "relevantPathsAI": [
+        "C.5",
+        "D.1"
+      ],
+      "rationaleAI": "Poverty is the subject of C.5, with the article covering causes, measurement, and welfare policy responses. The background of welfare services for alleviating want maps to D.1."
+    },
+    {
+      "articleTitle": "Violence",
+      "relevantPathsAI": [
+        "C.6",
+        "C.10"
+      ],
+      "rationaleAI": "Violence covers self-inflicted harm (connecting to suicide at C.10) and interpersonal violence including criminality and delinquency (C.6), with attention to gendered and age-based forms."
+    },
+    {
+      "articleTitle": "Welfare spending",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Welfare spending directly addresses the background, history, and scope of social and welfare services (D.1), covering social insurance and assistance across old age, disability, unemployment, and health\u2014the fields of service in D.2."
+    },
+    {
+      "articleTitle": "Birth control",
+      "relevantPathsAI": [
+        "C.7",
+        "D"
+      ],
+      "rationaleAI": "Birth control covers reproductive rights and family planning, touching on sexual health (adjacent to C.7) and family welfare services (D.2a), particularly for women and in developing countries."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "B",
+        "A.4",
+        "C.4"
+      ],
+      "rationaleAI": "Colonialism established racial hierarchy and ethnic domination (B), creating dispossessed minorities and indigenous peoples (A.4, C.4) whose persistent inequalities are documented through postcolonial analysis."
+    },
+    {
+      "articleTitle": "Sexual intercourse",
+      "relevantPathsAI": [
+        "C.7",
+        "C.8"
+      ],
+      "rationaleAI": "Sexual intercourse covers legal frameworks around prostitution and sexual commerce, relevant to C.8, as well as sexual behavior and orientation dimensions (C.7)."
+    },
+    {
+      "articleTitle": "Sexual orientation",
+      "relevantPathsAI": [
+        "C.7"
+      ],
+      "rationaleAI": "Sexual orientation is the direct subject of C.7 in the 522 outline, covering heterosexual, homosexual, bisexual, and asexual categories and their social, legal, and biological dimensions."
+    },
+    {
+      "articleTitle": "Gender",
       "relevantPathsAI": [
         "A.2",
+        "C.3"
+      ],
+      "rationaleAI": "Gender covers social roles, norms, and identities that structure family organization (A.2) and directly addresses women's social and legal status as a special social concern (C.3)."
+    },
+    {
+      "articleTitle": "Mary Wollstonecraft",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Wollstonecraft's foundational feminist argument for women's education and rights as equal citizens directly maps to women's social and legal status (C.3)."
+    },
+    {
+      "articleTitle": "Marriage",
+      "relevantPathsAI": [
+        "A.2",
+        "D"
+      ],
+      "rationaleAI": "Marriage is foundational to the organization and functions of the modern family (A.2), and its legal and welfare dimensions (divorce rights, gender power asymmetries) connect to family welfare services (D.2a)."
+    },
+    {
+      "articleTitle": "Ethnicity",
+      "relevantPathsAI": [
+        "A.4",
         "B",
-        "C.5",
-        "C.6",
-        "D",
+        "C.4"
+      ],
+      "rationaleAI": "Ethnicity is the conceptual basis for ethnic minorities and minority groups (A.4), covers ethnic prejudice and conflict relevant to B, and addresses cultural minority identity relevant to C.4."
+    },
+    {
+      "articleTitle": "Nation",
+      "relevantPathsAI": [
+        "A.4",
+        "C.4"
+      ],
+      "rationaleAI": "Nation covers collective social organization by shared language, culture, and history\u2014foundational to defining ethnic and cultural minorities (A.4, C.4)\u2014and distinguishes ethnic from civic national identity."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "C.3",
         "D.1",
-        "D.2",
-        "D.2.f",
-        "D.2.g"
-      ]
+        "D.2"
+      ],
+      "rationaleAI": "Human rights frameworks underpin protections for women (C.3), establish the legal background for welfare entitlements (D.1), and cover economic, social, and cultural rights realized through social services (D.2)."
+    },
+    {
+      "articleTitle": "Adult",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Adult covers the legal and social definitions of adulthood and its transition from adolescence, and the life-course context relevant to social concerns about aging and old age (C.2)."
+    },
+    {
+      "articleTitle": "Disability",
+      "relevantPathsAI": [
+        "D",
+        "C.5"
+      ],
+      "rationaleAI": "Disability covers medical and social models of disability and the UN CRPD framework, mapping to medical and psychiatric social services (D.2g) and intersecting with poverty and marginalization (C.5)."
+    },
+    {
+      "articleTitle": "Sexism",
+      "relevantPathsAI": [
+        "C.3",
+        "B"
+      ],
+      "rationaleAI": "Sexism addresses women's social and legal status through the lens of prejudice and discrimination based on sex (C.3), and as a form of social prejudice parallels racial/ethnic prejudice (B)."
+    },
+    {
+      "articleTitle": "Sociology",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Sociology as a discipline provides the theoretical frameworks for classifying groups and understanding group relations (A.1), and its subfields\u2014stratification, criminology\u2014address social prejudice and group inequalities (B)."
+    },
+    {
+      "articleTitle": "Anthropology",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "C.4"
+      ],
+      "rationaleAI": "Sociocultural anthropology addresses classification of cultural groups and kinship (A.1), minorities and ethnic groups (A.4), and cultural minorities' practices and identity (C.4) through ethnographic fieldwork."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Folklore is the expressive cultural inheritance of communities, especially minority and indigenous groups, mapping to cultural minorities' traditions and group identity (C.4)."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "D",
+        "C.9",
+        "C.10"
+      ],
+      "rationaleAI": "Psychology covers therapeutic and psychiatric social services (D.2g), and addresses drug/alcohol use and suicide through clinical psychology and mental health frameworks (C.9, C.10)."
+    },
+    {
+      "articleTitle": "Medicine",
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Medicine covers the practice and delivery of healthcare including psychiatric services, directly mapping to medical and psychiatric social services in D.2g."
+    },
+    {
+      "articleTitle": "Police",
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Police covers state institutions for enforcing law, maintaining order, and responding to crime and delinquency, directly mapping to criminality and delinquency as a social concern (C.6)."
+    },
+    {
+      "articleTitle": "City",
+      "relevantPathsAI": [
+        "D",
+        "A.1"
+      ],
+      "rationaleAI": "Cities are the primary setting for community development and organized social capacity (D.2f), and urban settlements constitute a key type of social group and community form (A.1)."
+    },
+    {
+      "articleTitle": "Human sexuality",
+      "relevantPathsAI": [
+        "C.7",
+        "C.8"
+      ],
+      "rationaleAI": "Human sexuality covers sexual orientation as a social concern (C.7) and discusses historical and legal norms around sexual commerce relevant to C.8."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "B",
+        "A.4"
+      ],
+      "rationaleAI": "The Atlantic slave trade is a foundational case study of racial prejudice institutionalized in social structures (B), displacing African peoples as subjugated ethnic minorities (A.4)."
+    },
+    {
+      "articleTitle": "Genocide",
+      "relevantPathsAI": [
+        "B",
+        "A.4"
+      ],
+      "rationaleAI": "Genocide represents the extreme manifestation of racial and ethnic prejudice (B), targeting ethnic, national, and religious minority groups (A.4) for destruction."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The Industrial Revolution generated the modern social question and the historical background for welfare services (D.1), creating urban poverty and labor exploitation that prompted organized social and welfare responses."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "B",
+        "A.4",
+        "C.4"
+      ],
+      "rationaleAI": "Imperialism imposed racial hierarchy and ethnic domination (B), creating subjugated peoples as minorities and dependent ethnic groups (A.4, C.4) whose cultural distinctiveness was suppressed."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

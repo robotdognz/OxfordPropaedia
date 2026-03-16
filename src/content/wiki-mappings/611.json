@@ -1,125 +1,225 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "611",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "The arts article directly covers the theory and classification of artistic disciplines addressed in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Performing arts",
-      "rationaleAI": "The performing arts represent a major classification category within the general theory and taxonomy of the arts.",
-      "relevantPathsAI": [
-        "B",
-        "B.1.d",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Visual arts",
-      "rationaleAI": "The visual arts represent a major classification category within the general theory and taxonomy of artistic expression.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
       "articleTitle": "Art",
-      "rationaleAI": "Art as a concept is the direct subject of the theory and classification of the arts.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.3",
         "B",
         "B.1",
-        "B.1.a",
-        "B.2",
         "B.3",
         "B.4"
-      ]
+      ],
+      "rationaleAI": "Directly addresses A.1 (diverse conceptions of the scope of art), A.2 (theories about the nature and functions of art), and B broadly through the fine arts vs. applied arts distinction at B.1.a and the classification of visual, performing, and literary arts."
     },
     {
-      "articleTitle": "Abstract art",
-      "rationaleAI": "Abstract art represents a fundamental shift in the theory and classification of art.",
+      "articleTitle": "The arts",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.2",
-        "A.3",
-        "B",
         "B.1",
-        "B.1.a",
-        "B.1.d",
         "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Covers the scope of the arts at A.1, the major distinctions among kinds of art (visual, literary, performing) at B.1, and connects to folk, primitive, and popular art characterizations at B.3."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Aristotle's Poetics is the foundational text of mimetic theory at A.2, establishing the view that art imitates reality; his analysis of tragedy and comedy also grounds classification of literary forms at B.1."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Directly addresses style in the arts at B.4 through its survey of personal, school, ethnic, regional, and period styles across all world cultures and art-historical movements from prehistory to the present."
     },
     {
       "articleTitle": "Modernism",
-      "rationaleAI": "Modernism transformed the theory and classification of all the arts.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.d",
-        "B.2",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Realism (arts)",
-      "rationaleAI": "Realism is a major theory of artistic representation.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1.a",
-        "B.1.d",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.4.a"
-      ]
+        "B.4.b"
+      ],
+      "rationaleAI": "Modernism as a movement exemplifies B.4.b (varieties of style including school and period styles), encompassing multiple named movements (Expressionism, Cubism, Abstraction, stream-of-consciousness) that defined early 20th-century artistic style across multiple arts."
     },
     {
       "articleTitle": "Romanticism",
-      "rationaleAI": "Romanticism represented a fundamental shift in artistic theory and values.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
+        "B.4.b"
+      ],
+      "rationaleAI": "Romanticism is a defining example of B.4.b (period and school styles), spanning literature, music, painting, and philosophy across Europe c. 1800–1850 with a coherent set of stylistic principles privileging emotion and imagination."
+    },
+    {
+      "articleTitle": "Realism (arts)",
+      "relevantPathsAI": [
+        "B.4.b"
+      ],
+      "rationaleAI": "Realism as an art movement directly illustrates B.4.b (school and period styles), and the article explicitly discusses the nature of style as non-idealized representation across painting, literature, theatre, opera, and cinema."
+    },
+    {
+      "articleTitle": "Pablo Picasso",
+      "relevantPathsAI": [
         "A.3",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.d",
-        "B.2",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Picasso exemplifies A.3 (the creative process in making works of art) through his multiple periods of reinvention, and illustrates B.4.a (personal style) and B.4.b (school style, co-founding Cubism as a named movement)."
+    },
+    {
+      "articleTitle": "Leonardo da Vinci",
+      "relevantPathsAI": [
+        "A.3",
+        "B.4.a"
+      ],
+      "rationaleAI": "Leonardo exemplifies A.3 (the making of works of art and the creative process) through his systematic empirical notebooks, and B.4.a (personal style) as a Renaissance polymath whose artistic language is immediately identifiable."
+    },
+    {
+      "articleTitle": "Hokusai",
+      "relevantPathsAI": [
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Hokusai illustrates both B.4.a (personal style, his compositional innovations in woodblock print) and B.4.b (ethnic and regional style, ukiyo-e as a Japanese school and period style), along with cross-cultural stylistic influence on European Japonisme."
+    },
+    {
+      "articleTitle": "Popular culture",
+      "relevantPathsAI": [
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Directly addresses B.3 (characterization of works of art by the extent and character of their audience—popular arts), examining the distinction between high culture, folk culture, and mass/popular culture as analytical categories."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Folklore directly covers the primitive and folk arts at B.3, addressing the informal, community-based transmission of expressive culture distinct from fine and commercial arts."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.a",
+        "B.1.b",
+        "B.4.b"
+      ],
+      "rationaleAI": "Architecture addresses A.1 (scope of art and useful vs. fine art debate via Vitruvius, Sullivan), B.1.a (useful art that is also fine art), B.1.b (production of physical artistic objects), and B.4.b (period styles from Gothic to Modernism to Postmodernism)."
+    },
+    {
+      "articleTitle": "Design",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.a"
+      ],
+      "rationaleAI": "Design's purposive, constraint-driven nature directly illustrates the debate at A.1 about the scope of art versus craft, and the category of useful art at B.1.a (arts that are both useful and fine)."
+    },
+    {
+      "articleTitle": "Painting",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.4",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Painting is paradigmatic of B.1.b (production of physical artistic objects) and extensively treats B.4 (style) through its genre distinctions—portrait, landscape, still life—and medium-based and period-style analysis."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b",
+        "B.2",
+        "B.4.b"
+      ],
+      "rationaleAI": "Visual arts addresses the fine arts vs. applied/decorative arts distinction at B.1.a, physical artistic objects at B.1.b, space arts at B.2, and period styles from Impressionism through Cubism at B.4.b."
+    },
+    {
+      "articleTitle": "Literature",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.d",
+        "B.3"
+      ],
+      "rationaleAI": "Literature addresses A.1 (diverse conceptions of the scope of art vs. recorded knowledge), B.1.d (arts using notational devices), and B.3 (folk literature, oral traditions, and popular literary forms vs. high literary art)."
+    },
+    {
+      "articleTitle": "Theatre",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Theatre addresses B.1.c (arts in which performers interpret works), B.1.d (notational dimension of dramatic scripts), and B.2 (time arts as distinct from space arts)."
+    },
+    {
+      "articleTitle": "Opera",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.d",
+        "B.4.b"
+      ],
+      "rationaleAI": "Opera addresses B.1.c (performers as creators), B.1.d (notational devices—libretto and score), and B.4.b (national and school styles including Italian, German, French, and Russian operatic traditions)."
+    },
+    {
+      "articleTitle": "Dance",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Dance addresses B.1.c (performers as creators/interpreters), B.1.d (choreographic notation), and B.2 (time arts) as a performing art whose aesthetic and symbolic value depends entirely on live embodied performance."
+    },
+    {
+      "articleTitle": "Performing arts",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.2",
+        "B.4.b"
+      ],
+      "rationaleAI": "Performing arts directly covers B.1.c (performers as interpreters or creators), B.2 (time arts vs. space arts), and surveys B.4.b (period and regional styles) across global theatrical, musical, and dance traditions."
+    },
+    {
+      "articleTitle": "Folk music",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Folk music directly exemplifies B.3 (characterization of works of art by cultural and social circumstances of production—folk arts), addressing community-based transmission and the distinction from commercial and classical styles."
+    },
+    {
+      "articleTitle": "Jewellery",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Jewellery is a paradigm case of B.1.a (useful art that is also fine art—decorative worn object), and B.1.b (production of physical artistic objects in precious materials), with distinct regional and period styles spanning Egyptian to Art Nouveau."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Freud's psychoanalytic theory generated an influential interpretive framework for art—the unconscious, wish-fulfillment, sublimation—that directly contributes to expressive and pragmatic theories of art at A.2."
+    },
+    {
+      "articleTitle": "Emotion",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Emotion is central to expressive theories of art at A.2, which hold that art expresses or evokes emotion; the article's coverage of classification theories and their philosophical history directly informs debate about art's nature and functions."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.2",
+        "B.4.b"
+      ],
+      "rationaleAI": "Ancient Greece is the origin of mimetic theory (Plato, Aristotle) directly relevant to A.2, and its artistic period style—the classical style in architecture, sculpture, and drama—is a foundational example for B.4.b."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

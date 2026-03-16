@@ -135,13 +135,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Lead",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Magnesium",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Magnesium",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

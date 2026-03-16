@@ -1,150 +1,276 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "532",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Markets and pricing mechanisms are key economic institutions within society.",
+      "articleTitle": "Economy",
       "relevantPathsAI": [
         "A",
-        "C.4",
-        "D.1",
-        "D.2.b",
-        "D.2.c"
-      ]
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Covers A scarcity and value as organizing principles, C markets as economic institutions including market vs. non-market transactions and market classification by sector, and D the price system through its role in organizing production and distribution across market and mixed economies."
     },
     {
-      "articleTitle": "Economics",
-      "rationaleAI": "Market economics studies how prices, supply, and demand mechanisms distribute goods to consumers.",
+      "articleTitle": "Capitalism",
       "relevantPathsAI": [
-        "A",
-        "B.1",
-        "C",
-        "C.1",
         "C.1.a",
-        "C.2",
-        "C.2.c",
-        "C.2.d",
-        "C.3",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Business",
-      "rationaleAI": "Business enterprises operate within markets as key actors in pricing and distributing goods and services to consumers.",
-      "relevantPathsAI": [
-        "C.2.c",
-        "C.4",
-        "D.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Trade",
-      "rationaleAI": "Trade operates through markets and pricing mechanisms that enable the distribution of goods between producers and consumers.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "C.2.c",
-        "C.2.d",
-        "C.4",
-        "C.5",
-        "C.6",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Silk Road",
-      "rationaleAI": "The Silk Road was history's most consequential market system for the distribution of goods across civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "C.2.c",
-        "C.2.d",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Marketing",
-      "rationaleAI": "Marketing involves the consumer, market, and mechanisms for distributing goods.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "C.1.c",
-        "C.2",
-        "C.2.c",
-        "C.2.d",
-        "C.4",
-        "C.6",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Retail",
-      "rationaleAI": "Retail is a mechanism for distributing goods to consumers.",
-      "relevantPathsAI": [
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Money",
-      "rationaleAI": "Money is the fundamental medium of exchange in market mechanisms.",
-      "relevantPathsAI": [
-        "C",
-        "C.2",
-        "C.2.c",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Microeconomics",
-      "rationaleAI": "Microeconomics studies consumer behavior and market pricing mechanisms.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.2",
-        "C.2.c",
-        "C.2.d",
-        "C.3",
-        "C.4"
-      ]
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "Capitalism directly covers D the price system in capitalist economies and D.1 the price system as a means of organizing what is produced, how, and who receives it; C.1.a pure competitive markets are capitalism's idealized form."
     },
     {
       "articleTitle": "Supply and demand",
-      "rationaleAI": "Supply and demand is the central mechanism for pricing and distributing goods.",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "C",
+        "C.6",
+        "D.1"
+      ],
+      "rationaleAI": "Supply and demand is the core model for C.6 the function of the market in establishing equilibrium between supply and effective demand, A (scarcity, utility, and value in pricing), and D.1 the price system as resource allocator."
+    },
+    {
+      "articleTitle": "Business",
+      "relevantPathsAI": [
         "C.1",
-        "C.1.a",
-        "C.2",
-        "C.2.c",
-        "C.2.d",
+        "C.1.b",
+        "C.2.b"
+      ],
+      "rationaleAI": "Business covers C.1.b the behavior of sellers under competitive conditions through marketing, pricing, and commercial strategy, and C.2.b markets for manufactured goods as the primary domain of private enterprise."
+    },
+    {
+      "articleTitle": "Microeconomics",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "C.6"
+      ],
+      "rationaleAI": "Microeconomics covers A (utility theory and value), B (consumer demand theory and behavior), C.1 (market structures from perfect competition to monopoly), and C.6 (market equilibrium) — essentially the theoretical foundation of the entire section."
+    },
+    {
+      "articleTitle": "Bank",
+      "relevantPathsAI": [
+        "C.2.c"
+      ],
+      "rationaleAI": "Banks directly cover C.2.c markets for money and capital through deposit-taking, lending, and capital market operations; the article explicitly addresses the market for short-term loans and the role of financial intermediaries."
+    },
+    {
+      "articleTitle": "Economics",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Economics encompasses all of Section 532: utility and value theory (A), consumer behavior (B), market theory including competition and pricing (C), and the price system's organizing function and failures (D)."
+    },
+    {
+      "articleTitle": "Macroeconomics",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Macroeconomics covers B.1 national consumption levels in the private sector through aggregate consumption analysis, GDP accounting for household expenditure, and the Keynesian consumption function."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
         "C.3",
-        "C.4"
-      ]
+        "D.2"
+      ],
+      "rationaleAI": "Marx's commodity fetishism and critique of the price system directly addresses D.2 limitations and failures of the price system; his analysis of markets under planned economies informs C.3 the counterpart of the market under full-scale economic planning."
+    },
+    {
+      "articleTitle": "Retail",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "C.2.b"
+      ],
+      "rationaleAI": "Retail directly covers B.1 national consumption trends and expenditure patterns, B.2 factors influencing consumer tastes and spending through assortment, pricing, and marketing strategies, and C.2.b markets for manufactured goods as the domain of retail trade."
     },
     {
       "articleTitle": "Service (economics)",
-      "rationaleAI": "Service industries operate within market mechanisms for distributing goods.",
       "relevantPathsAI": [
-        "B.1",
-        "C.2",
+        "C.2.d",
+        "B.1"
+      ],
+      "rationaleAI": "Service (economics) directly covers C.2.d the market for labour and services — the priority uncovered path — through analysis of service sector characteristics, pricing, and the tertiary sector's dominance in advanced economies; also covers B.1 through service expenditure in GDP."
+    },
+    {
+      "articleTitle": "Tax",
+      "relevantPathsAI": [
+        "D.2.b"
+      ],
+      "rationaleAI": "Tax directly covers D.2.b government-established price controls and subsidies through excise taxes, VAT, and regulatory levies that alter market prices; also addresses deadweight loss as a market distortion."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "Work covers C.2.d the market for labour and services through analysis of paid employment, wage determination, and the division of labor as foundational to labour market economics."
+    },
+    {
+      "articleTitle": "Marketing",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Marketing directly covers B.2 factors influencing consumer tastes and spending through the 4Ps and consumer behavior analysis, and B.3 consumer protection through its discussion of ethical criticisms including manipulation and commercialization."
+    },
+    {
+      "articleTitle": "Trade union",
+      "relevantPathsAI": [
+        "C.2.d",
+        "D.2"
+      ],
+      "rationaleAI": "Trade unions cover C.2.d the market for labour and services — a priority uncovered path — through collective bargaining, wage determination, and employment conditions; they also represent D.2 a limitation on the price system through non-market wage-setting mechanisms."
+    },
+    {
+      "articleTitle": "Property",
+      "relevantPathsAI": [
+        "A",
         "D.1"
-      ]
+      ],
+      "rationaleAI": "Property rights underpin A scarcity, utility, and value by defining who can consume, transfer, and exclude, and D.1 the price system's allocation of who gets the product through the legal framework of ownership."
+    },
+    {
+      "articleTitle": "Money",
+      "relevantPathsAI": [
+        "A",
+        "C.2.c"
+      ],
+      "rationaleAI": "Money is the medium through which A scarcity and value are expressed in pricing, and C.2.c markets for money and capital operate through money supply, banking, and monetary instruments."
+    },
+    {
+      "articleTitle": "Insurance",
+      "relevantPathsAI": [
+        "C.2.c"
+      ],
+      "rationaleAI": "Insurance operates within C.2.c markets for money and capital as a risk-management financial instrument; the article covers premium pricing, actuarial valuation, and the capital market role of insurance carriers."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "C.5",
+        "C.4"
+      ],
+      "rationaleAI": "Trade covers C.5 markets in international trade through comparative advantage, bilateral and multilateral exchange, and protectionism; and C.4 the historical development of markets from ancient networks through modern globalization."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Socialism directly covers C.3 the counterpart of the market under full-scale economic planning through market-socialist models, planned allocation, and the debates over price signals in socialist economies."
+    },
+    {
+      "articleTitle": "Adam Smith",
+      "relevantPathsAI": [
+        "A",
+        "C.4",
+        "D.1"
+      ],
+      "rationaleAI": "Smith's price mechanism analysis in The Wealth of Nations covers A (value theory, invisible hand), C.4 (historical development of markets and market theory), and D.1 (the price system as organizer of economic activity)."
+    },
+    {
+      "articleTitle": "Popular culture",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Popular culture covers B.2 factors influencing consumer tastes and spending through mass media, marketing imperatives, and the culture industry's role in shaping consumption patterns at scale."
+    },
+    {
+      "articleTitle": "Management",
+      "relevantPathsAI": [
+        "C.1.b"
+      ],
+      "rationaleAI": "Management covers C.1.b influences affecting the behavior of sellers under competitive conditions through strategic planning, pricing decisions, and organizational resource control."
+    },
+    {
+      "articleTitle": "European Union",
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "The EU's single market, customs union, and common agricultural policy directly exemplify C.5 markets in international trade as a regional framework governing cross-border exchange and competition rules."
+    },
+    {
+      "articleTitle": "Communism",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Communism's planned allocation of resources and abolition of market price mechanisms directly covers C.3 the counterpart of the market under full-scale economic planning."
+    },
+    {
+      "articleTitle": "Corporation",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.2.b"
+      ],
+      "rationaleAI": "Corporations are the primary agents of C.1.b seller behavior under competitive conditions and the dominant form of production in C.2.b markets for manufactured goods in capitalist economies."
+    },
+    {
+      "articleTitle": "Human migration",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "Human migration covers C.2.d the market for labour and services through labor migration theory (neoclassical, dual labor market), remittance flows, and migration's role in equalizing wage differentials across regions."
+    },
+    {
+      "articleTitle": "Welfare spending",
+      "relevantPathsAI": [
+        "B.3",
+        "D.2.b"
+      ],
+      "rationaleAI": "Welfare spending covers B.3 protection of consumer interests through social insurance and needs-based assistance, and D.2.b government-established price controls through subsidies for food, housing, and healthcare."
+    },
+    {
+      "articleTitle": "Waste",
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "Waste directly illustrates D.2.c externalities not susceptible to control by prices — pollution, environmental degradation, and social costs of disposal that market pricing fails to internalize."
+    },
+    {
+      "articleTitle": "Road",
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "Highway congestion is explicitly cited in D.2.c as a canonical example of an externality the price system cannot control; the road article covers congestion, public infrastructure, and the economics of road pricing."
+    },
+    {
+      "articleTitle": "Clothing",
+      "relevantPathsAI": [
+        "B.2",
+        "C.2.b"
+      ],
+      "rationaleAI": "Clothing covers B.2 factors influencing consumer tastes and spending through fashion, social status signaling, and Western dress globalization; and C.2.b markets for manufactured goods through the global garment trade and fast fashion industry."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Globalization covers C.5 markets in international trade through trade barrier reduction and capital liberalization, and C.4 the historical development of markets from ancient Silk Road networks through post-Cold War acceleration."
+    },
+    {
+      "articleTitle": "Vehicle",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "Vehicles represent one of the largest categories in C.2.b markets for manufactured goods, encompassing the global automobile, truck, and transport equipment industries with their competitive market structures."
+    },
+    {
+      "articleTitle": "Transport",
+      "relevantPathsAI": [
+        "C.2.d",
+        "D.2.c"
+      ],
+      "rationaleAI": "Transport covers C.2.d the market for labour and services through freight and passenger service industries, and D.2.c externalities (highway congestion, pollution) that the price system fails to control."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

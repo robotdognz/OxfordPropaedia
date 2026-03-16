@@ -1,52 +1,124 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "945",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Southern African history is an important regional chapter in human history.",
+      "articleTitle": "South Africa",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "C.3",
+        "C.6",
+        "C.6.a",
+        "C.6.b",
+        "C.7"
+      ],
+      "rationaleAI": "Directly covers Khoisan and Bantu-speaking peoples, Dutch Cape Colony (1652), the Anglo-Boer Wars, the Mineral Revolution (diamonds and gold), and the formation of Cape Colony, Natal, and the Orange Free State, substantively addressing B.1, C.3, C.6, C.6.a, C.6.b, and C.7."
+    },
+    {
+      "articleTitle": "History of Africa",
       "relevantPathsAI": [
         "A",
         "B.1",
         "B.2",
-        "C.1",
+        "C"
+      ],
+      "rationaleAI": "Covers the Bantu expansion into southern Africa, Indian Ocean trade networks connecting the southeast coast, and European colonial penetration from the 15th century, providing broad coverage of A's ethnographic/historiographic context and substantive events across B and C."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the African Stone Age with Oldowan origins and the full lithic sequence including African-specific periodization (Early, Middle, Later Stone Age), directly relevant to B.1's focus on Stone Age and Iron Age origins of humanity and culture in southern Africa."
+    },
+    {
+      "articleTitle": "Iron Age",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the sub-Saharan African Iron Age and its role in enabling Bantu-speaking migrations and state formation, directly relevant to B.1 and the Late Iron Age southeast coast trade networks (Great Zimbabwe, Mapungubwe) described in B.2."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
         "C.2",
-        "C.4",
-        "C.5",
+        "C.5"
+      ],
+      "rationaleAI": "Covers Portuguese-organized slave trading from the Kongo and Ndongo kingdoms of west-central Africa (C.2) and the broader 19th-century slave trade networks north of the Zambezi (C.5), with direct coverage of African political participation and opposition."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Covers Portuguese maritime expansion including Vasco da Gama's Indian Ocean route and Portuguese colonial incursions into southern and central Africa, directly contextualizing C.1 (Portuguese in the Zambezi valley) and C.2 (Portuguese in west central Africa and the Kongo/Ndongo kingdoms)."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "C.6",
+        "C.6.b",
         "C.7"
-      ]
+      ],
+      "rationaleAI": "Covers British colonial expansion in southern Africa including Cape Colony, Natal, and the conflict with Boers and Zulus, the Scramble for Africa, and the mineral-driven imperial consolidation described in C.6.b (British colonies) and C.7 (diamonds, gold, Zulu wars)."
+    },
+    {
+      "articleTitle": "Scramble for Africa",
+      "relevantPathsAI": [
+        "A",
+        "C.7"
+      ],
+      "rationaleAI": "Covers the partition of southern Africa by European powers culminating in the 1880s, directly relevant to A's historiographic framing and C.7's era of mineral discoveries, confederation, and wars against Zulu and Pedi peoples."
+    },
+    {
+      "articleTitle": "Democratic Republic of the Congo",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Covers the Kongo kingdom and the Congo Basin, directly relevant to C.2's account of Portuguese conquests over the Kongo kingdom (1665) and control of the slave trade from west-central Africa."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The maritime Silk Road explicitly connected East and Southeast African coastal ports to Indian Ocean trading networks, providing the commercial context for B.2's southeast coast trade routes linking Mapungubwe, Great Zimbabwe, and Ingombe Ilede to coastal emporia."
+    },
+    {
+      "articleTitle": "Swahili",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The Swahili-speaking coastal trading network extended to the Mozambique channel and provided the commercial and linguistic infrastructure through which B.2's southeast coast trade connected interior sites like Mapungubwe and Great Zimbabwe to Indian Ocean markets."
     },
     {
       "articleTitle": "Africa",
-      "rationaleAI": "Southern African history including Great Zimbabwe and the Zulu kingdom represents significant developments in African civilization.",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Provides geographic and demographic overview including Bantu expansion and major pre-colonial civilizations, grounding A's definition and ethnographic overview of southern Africa and B.1's Stone Age and Bantu migration origins."
     },
     {
-      "articleTitle": "South Africa",
-      "rationaleAI": "South Africa's pre-colonial and early colonial history is covered in Southern Africa to 1885.",
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "A",
         "B",
-        "B.1",
-        "B.2",
-        "C",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the c. 500–1500 CE global period including African Great Lakes kingdoms, Indian Ocean networks, and the spread of Islam, providing historical framing for B's pre-1500 southern Africa and B.2's Late Iron Age coast trade."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
         "C.1",
         "C.2",
-        "C.3",
-        "C.4",
-        "C.5"
-      ]
+        "C.3"
+      ],
+      "rationaleAI": "Covers c. 1500–1800 as defined by European global colonial expansion including Portuguese African empire-building and Dutch Cape settlement, directly contextualizing C.1 (Portuguese Zambezi), C.2 (Portuguese west central Africa), and C.3 (Dutch Cape from 1652)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

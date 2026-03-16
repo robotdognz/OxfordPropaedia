@@ -1,593 +1,191 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "514",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "Language and communication provide the medium through which literary and performative arts are expressed.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "C",
-        "C.4",
-        "D",
-        "D.2",
-        "E.1",
-        "E.5",
-        "F",
-        "F.4"
-      ]
-    },
-    {
-      "articleTitle": "Human",
-      "rationaleAI": "Language and communication are uniquely human capacities central to this article on the human species.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Language and communication are essential social mechanisms that enable society to function.",
-      "relevantPathsAI": [
-        "A",
-        "B.4",
-        "G",
-        "G.5",
-        "H.14.b",
-        "H.22"
-      ]
-    },
-    {
-      "articleTitle": "Literature",
-      "rationaleAI": "Literature is a primary vehicle of language and communication, preserving and transmitting ideas through written expression.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C",
-        "C.4",
-        "C.6",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Communication",
-      "rationaleAI": "Communication encompasses the full range of language and information exchange systems used by human societies.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "C.8",
-        "G",
-        "H.22"
-      ]
-    },
-    {
       "articleTitle": "Language",
-      "rationaleAI": "Language is the primary system of human communication, the direct subject of this section on language and communication.",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
         "C",
         "C.1",
         "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Mass media",
-      "rationaleAI": "Mass media are powerful systems of language and communication that shape public discourse and cultural transmission.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "G",
-        "G.1",
-        "H.22"
-      ]
-    },
-    {
-      "articleTitle": "Writing",
-      "rationaleAI": "Writing is the foundational technology of recorded language and communication, enabling permanent transmission of ideas.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Phoenicia",
-      "rationaleAI": "The Phoenician alphabet is the ancestor of virtually all modern alphabets, a landmark in the history of language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.4",
-        "C.5",
         "C.6",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Myth",
-      "rationaleAI": "Myths are transmitted through language and oral communication.",
-      "relevantPathsAI": [
-        "C",
-        "D",
-        "E.1",
-        "G",
-        "G.1",
-        "H.1",
-        "H.22"
-      ]
-    },
-    {
-      "articleTitle": "Oral tradition",
-      "rationaleAI": "Oral tradition is a primary mode of language and communication.",
-      "relevantPathsAI": [
-        "C.6",
-        "E.5",
+        "C.7",
         "F",
-        "F.4",
-        "F.5",
-        "F.6",
-        "G",
-        "H.4.b",
-        "H.4.c",
-        "H.8.b"
-      ]
-    },
-    {
-      "articleTitle": "Indo-European languages",
-      "rationaleAI": "Indo-European is the largest language family relevant to language and communication.",
-      "relevantPathsAI": [
-        "B.2",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.7",
-        "C.8",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Bengali language",
-      "rationaleAI": "Bengali is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.7",
-        "C.8",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "English language",
-      "rationaleAI": "English is the world's most widely spoken language.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "French language",
-      "rationaleAI": "French is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "German language",
-      "rationaleAI": "German is a major European language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Greek language",
-      "rationaleAI": "Greek is a historically significant language within language and communication.",
-      "relevantPathsAI": [
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.7",
-        "C.8",
-        "D",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Hindustani language",
-      "rationaleAI": "Hindustani (Hindi-Urdu) is among the world's most spoken languages.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Latin",
-      "rationaleAI": "Latin is a historically foundational language in Western civilization.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Portuguese language",
-      "rationaleAI": "Portuguese is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Russian language",
-      "rationaleAI": "Russian is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Spanish language",
-      "rationaleAI": "Spanish is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Arabic",
-      "rationaleAI": "Arabic is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Chinese language",
-      "rationaleAI": "Chinese is the world's most spoken language by native speakers.",
-      "relevantPathsAI": [
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.7",
-        "C.8",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Japanese language",
-      "rationaleAI": "Japanese is a major world language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Malay language",
-      "rationaleAI": "Malay is a major language of Southeast Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Swahili",
-      "rationaleAI": "Swahili is a major African language within language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6"
-      ]
-    },
-    {
-      "articleTitle": "Linguistics",
-      "rationaleAI": "Linguistics is the scientific study of language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Grammar",
-      "rationaleAI": "Grammar is the structural foundation of language and communication.",
-      "relevantPathsAI": [
-        "F.2",
-        "F.6"
-      ]
-    },
-    {
-      "articleTitle": "Word",
-      "rationaleAI": "Words are the basic units of language and communication.",
-      "relevantPathsAI": [
-        "C.2",
-        "C.5"
-      ]
-    },
-    {
-      "articleTitle": "Literacy",
-      "rationaleAI": "Literacy is the ability to use written language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.4",
-        "C.6",
-        "C.7",
-        "E.1",
-        "E.2",
-        "E.3",
-        "E.5",
-        "F",
-        "F.1"
-      ]
-    },
-    {
-      "articleTitle": "Personal name",
-      "rationaleAI": "Personal names are a universal feature of language and communication.",
-      "relevantPathsAI": [
-        "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.4",
-        "C.6",
-        "C.8",
-        "D",
-        "D.2",
-        "E.1"
-      ]
-    },
-    {
-      "articleTitle": "Speech",
-      "rationaleAI": "Speech is the primary mode of language and communication.",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.4",
-        "C",
-        "C.1",
-        "D",
-        "D.2",
-        "D.3",
-        "F.7",
         "G"
-      ]
-    },
-    {
-      "articleTitle": "Alphabet",
-      "rationaleAI": "Alphabets are writing systems fundamental to language and communication.",
-      "relevantPathsAI": [
-        "E.1",
-        "E.5",
-        "G",
-        "H.1",
-        "H.22"
-      ]
-    },
-    {
-      "articleTitle": "Arabic script",
-      "rationaleAI": "Arabic script is a major writing system within language and communication.",
-      "relevantPathsAI": [
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.7",
-        "C.8",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Brahmic scripts",
-      "rationaleAI": "Brahmic scripts are writing systems originating in South Asia.",
-      "relevantPathsAI": [
-        "E.2",
-        "E.3",
-        "F.6",
-        "H.8.c"
-      ]
-    },
-    {
-      "articleTitle": "Cyrillic script",
-      "rationaleAI": "Cyrillic script is a major writing system within language and communication.",
-      "relevantPathsAI": [
-        "B.3",
-        "B.4",
-        "C.3",
-        "C.8",
-        "E.1",
-        "E.5",
-        "G",
-        "H.1.d",
-        "H.4.b",
-        "H.8.b"
-      ]
+      ],
+      "rationaleAI": "Core article for section 514: covers definitions of language (C.1), linguistic structure including phonology, morphology, and semantics (C.2), sociolinguistics and language acquisition (C.6), typology and historical change (C.7), the scientific study of language as a discipline (F), and the social functions of language (G)."
     },
     {
       "articleTitle": "Latin script",
-      "rationaleAI": "Latin script is the world's most widely used writing system.",
       "relevantPathsAI": [
-        "C",
-        "C.1",
-        "D",
-        "E.1",
-        "E.5",
-        "F",
-        "F.5",
-        "F.6",
-        "F.7",
-        "G"
-      ]
+        "E.2",
+        "E.3",
+        "H.1.d"
+      ],
+      "rationaleAI": "Covers the most widely used alphabetic writing system globally (E.2, types of writing systems; E.3, alphabetic writing), derived from Etruscan adaptation of Greek colonial script, and foundational to the Italic branch of Indo-European languages (H.1.d)."
     },
     {
-      "articleTitle": "Chinese characters",
-      "rationaleAI": "Chinese characters are a major writing system within language and communication.",
+      "articleTitle": "Indo-European languages",
+      "relevantPathsAI": [
+        "H.1",
+        "F.3",
+        "F.7"
+      ],
+      "rationaleAI": "Directly covers H.1 (Indo-European languages) in full, including all major branches (Indo-Iranian, Germanic, Romance, Balto-Slavic, etc.) and the reconstruction of Proto-Indo-European; central to F.3 (diachronic linguistics and comparative method) and F.7 (classification of language)."
+    },
+    {
+      "articleTitle": "Speech",
+      "relevantPathsAI": [
+        "C.4",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Covers the use of the human voice as primary language medium, including the psychological and physiological bases of speech (C.4, D.2), phonemic articulation, production via Broca's and Wernicke's areas, and speech as distinct from written language."
+    },
+    {
+      "articleTitle": "English language",
+      "relevantPathsAI": [
+        "H.1.f",
+        "G.3",
+        "G.5"
+      ],
+      "rationaleAI": "Covers the English language as a West Germanic language (H.1.f) that has become the primary international lingua franca for science and diplomacy (G.3, language in cross-cultural relations; G.5, language in unifying occupational groups), covering its spread through British imperialism and US influence."
+    },
+    {
+      "articleTitle": "Japanese language",
+      "relevantPathsAI": [
+        "H.13"
+      ],
+      "rationaleAI": "Directly covers H.13 (Japanese language), including its agglutinative grammar, pitch-accent system, complex honorific register, and tripartite writing system combining kanji, hiragana, and katakana, with its unresolved genetic affiliation."
+    },
+    {
+      "articleTitle": "Phoenicia",
+      "relevantPathsAI": [
+        "E.1",
+        "E.3",
+        "H.11.a"
+      ],
+      "rationaleAI": "The Phoenician alphabet, derived from Proto-Sinaitic script and ancestral to Greek, Latin, and Cyrillic, is foundational to E.1 (the nature, origin, and evolution of writing) and E.3 (alphabetic writing systems); Phoenician is also a Semitic language (H.11.a)."
+    },
+    {
+      "articleTitle": "Latin",
+      "relevantPathsAI": [
+        "H.1.d",
+        "H.1.e",
+        "E.3",
+        "G.2"
+      ],
+      "rationaleAI": "Latin directly covers H.1.d (Italic languages) and the evolution into Romance languages (H.1.e); as the international language of European scholarship for centuries, it is also relevant to G.2 (the connection of language with history and cultural transmission) and E.3 (alphabetic writing systems)."
+    },
+    {
+      "articleTitle": "Brahmic scripts",
+      "relevantPathsAI": [
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Covers the abugida family of writing systems used across South, East, and Southeast Asia (E.2, types of writing systems including syllabic and featural; E.3, systems of writing), encoding the scripts for Indo-Aryan, Dravidian, and numerous other language families."
+    },
+    {
+      "articleTitle": "Writing",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Core article for section E of the outline: covers the nature, origins, and evolution of writing from pictographic to alphabetic systems (E.1), all major writing system types (E.2), and specific systems including logographic, syllabic, and alphabetic (E.3), addressing writing's role in knowledge organization."
+    },
+    {
+      "articleTitle": "Oral tradition",
       "relevantPathsAI": [
         "A",
-        "B.3",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.5",
         "C.6",
-        "C.7"
-      ]
+        "G.2"
+      ],
+      "rationaleAI": "As the dominant mode of communication and cultural transmission before and alongside writing, oral tradition is central to A (communication as foundation of culture) and to C.6 (language and culture, transmission of language), as well as G.2 (the role of language in historical and cultural transmission)."
+    },
+    {
+      "articleTitle": "Portuguese language",
+      "relevantPathsAI": [
+        "H.1.e"
+      ],
+      "rationaleAI": "Directly covers H.1.e (Romance languages) as a major Western Romance language with approximately 267 million native speakers and official status across multiple continents, with detailed treatment of its phonological and lexical characteristics."
+    },
+    {
+      "articleTitle": "Linguistics",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.4",
+        "F.5",
+        "F.7"
+      ],
+      "rationaleAI": "Core article for section F (Linguistics: the scientific study of language): covers theoretical linguistics (F.2, universal grammar), diachronic and comparative linguistics (F.3), dialectology (F.4), semantics (F.5), and language classification (F.7), providing the meta-framework for all other language study."
+    },
+    {
+      "articleTitle": "Cyrillic script",
+      "relevantPathsAI": [
+        "E.2",
+        "E.3",
+        "H.1.k"
+      ],
+      "rationaleAI": "Covers the Cyrillic writing system used across Slavic and other Eurasian languages (E.2, types of writing systems; E.3, systems of writing), with its 9th-century Bulgarian origins, and directly relevant to H.1.k (Slavic languages) as the primary script for Russian, Bulgarian, Serbian, and other Slavic languages."
+    },
+    {
+      "articleTitle": "Communication",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers A (communication as the foundation of human culture and social interaction) and B (nonverbal communication), including verbal and nonverbal forms, interpersonal and computer-mediated exchange, and the historical evolution driven by writing, print, and digital technologies."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "E.1",
+        "E.3",
+        "H.11.b"
+      ],
+      "rationaleAI": "Egyptian hieroglyphic writing is one of the earliest independently developed writing systems (E.1, evolution of writing; E.3, hieroglyphic writing systems), and Egyptian language is explicitly named in the outline under H.11.b (Afro-Asiatic: Egyptian)."
+    },
+    {
+      "articleTitle": "Mesoamerica",
+      "relevantPathsAI": [
+        "E.1",
+        "H.19",
+        "H.19.k"
+      ],
+      "rationaleAI": "Mesoamerica independently developed writing systems including Mayan script (E.1, origin and evolution of writing), and the outline specifically covers Mesoamerican language families at H.19, including Mayan (H.19.k), Mixe-Zoque, and Uto-Aztecan."
+    },
+    {
+      "articleTitle": "Emotion",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Cross-cultural variation in emotional expression through facial expressions (B.1) and nonword vocalizations such as laughter, crying, and sighing (B.2) are directly covered, as emotion research explicitly addresses these nonverbal communicative channels."
+    },
+    {
+      "articleTitle": "Arabic numerals",
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Arabic numerals as a globally adopted notation system represent an adjunct to writing systems (E.4, adjuncts to writing), transmitted through Arabic scholarship and the printing press into universal use across otherwise divergent written language systems."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "G.3",
+        "G.4"
+      ],
+      "rationaleAI": "The spread of the English language through British imperial expansion is a prime historical example of G.3 (the role of language in cross-cultural relations) and G.4 (the use of language as a political instrument), shaping global linguistic geography through colonialism."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

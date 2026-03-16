@@ -1,164 +1,226 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "551",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Legal philosophies and systems provide the normative framework for societal order.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.2"
-      ]
-    },
-    {
-      "articleTitle": "Ethics",
-      "rationaleAI": "Legal philosophy draws heavily on ethical theory to establish principles of justice, rights, and obligations within legal systems.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.2",
-        "D.2"
-      ]
-    },
-    {
       "articleTitle": "Law",
-      "rationaleAI": "Law is the direct subject of this section covering legal philosophies, systems of jurisprudence, and the practice of law.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.1.a",
         "A.1.b",
         "A.1.c",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Hammurabi",
-      "rationaleAI": "The Code of Hammurabi is one of the earliest surviving written legal systems and a foundational document in the history of law.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
         "B",
         "B.2",
-        "B.2.a",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Napoleon",
-      "rationaleAI": "The Napoleonic Code fundamentally reformed European legal systems and became a model for civil law worldwide.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.c",
-        "A.1.d",
-        "B.1",
-        "B.2.a",
-        "B.2.f",
-        "C",
-        "D",
-        "D.1"
-      ]
+        "B.4",
+        "C"
+      ],
+      "rationaleAI": "Law provides foundational coverage across the entire section: jurisprudence and natural law (A.1.b, A.1.c), major legal systems including civil, common, religious, and socialist law (B.4), ancient legal traditions (B.2), and comparative analysis of diverse systems (C)."
     },
     {
       "articleTitle": "Ancient Rome",
-      "rationaleAI": "Roman law is the foundation of Western legal systems and a landmark in the philosophies and systems of law.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
+        "B.2.f",
+        "A.1.d"
+      ],
+      "rationaleAI": "Ancient Rome is the definitive reference for B.2.f (Roman law — its legal institutions, the Twelve Tables, the Corpus Juris Civilis, and Roman jurisprudence), and covers A.1.d (historical survey of legal theory in the ancient world) through Roman legal philosophy."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "Aristotle's political philosophy and Nicomachean Ethics are foundational to A.1.b (theories of law and jurisprudence — natural law grounded in virtue) and A.1.d (historical survey from the ancient world, as Aristotle's legal-political theory shaped all subsequent Western jurisprudence)."
+    },
+    {
+      "articleTitle": "Thomas Aquinas",
+      "relevantPathsAI": [
         "A.1.b",
         "A.1.c",
         "A.1.d",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Human rights",
-      "rationaleAI": "Human rights are a foundational concept in philosophies and systems of law.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Liberty",
-      "rationaleAI": "Liberty is a central principle in philosophies and systems of law.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "B.3.a",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Crime",
-      "rationaleAI": "Criminal justice is part of philosophies and systems of law.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c"
-      ]
+        "B.3.d"
+      ],
+      "rationaleAI": "Aquinas is central to A.1.b–c (natural law theory, relationship between law and morality — his Summa Theologiae is the defining medieval natural law text) and A.1.d (medieval period of jurisprudential history), while his canon law work covers B.3.d."
     },
     {
       "articleTitle": "Constitution",
-      "rationaleAI": "Constitutions are foundational to philosophies and systems of law.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c"
-      ]
+        "B.3.b",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Constitution covers B.3.b (sources and institutions of medieval constitutional law) and B.4 (modern systems — the contrast between codified and uncodified constitutions directly maps to B.4.a Anglo-American common law and B.4.b Continental civil law traditions)."
     },
     {
-      "articleTitle": "Justice",
-      "rationaleAI": "Justice is a central concept in philosophies and systems of law.",
+      "articleTitle": "John Locke",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
+        "A.1.b",
+        "A.1.c",
+        "A.1.d"
+      ],
+      "rationaleAI": "Locke's social contract theory and natural rights doctrine (life, liberty, property) are foundational contributions to A.1.b (jurisprudence and theory of law), A.1.c (relationship between law and morality and natural law principles), and A.1.d (early modern period of legal theory)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.1.d",
+        "B.4.c"
+      ],
+      "rationaleAI": "Marx's critique of law as an instrument of class domination contributes to A.1.d (19th-century legal theory) and directly informs B.4.c (Soviet and socialist law, which implemented Marxist legal theory in state socialist systems of the 20th century)."
+    },
+    {
+      "articleTitle": "Cicero",
+      "relevantPathsAI": [
         "A.1.b",
         "A.1.c",
         "A.1.d",
+        "B.2.f"
+      ],
+      "rationaleAI": "Cicero is a principal figure in A.1.b (jurisprudential theory — De Legibus and De Re Publica), A.1.c (natural law and its relationship to morality), A.1.d (ancient legal theory), and B.2.f (Roman law — his speeches are primary sources for late Republican legal practice)."
+    },
+    {
+      "articleTitle": "Suleiman the Magnificent",
+      "relevantPathsAI": [
         "A.2",
-        "B.1",
-        "B.2",
-        "B.2.a"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Suleiman's synthesis of sultanic Kanun law with Islamic Sharia through chief jurist Ebussuud Efendi directly addresses A.2 (non-Western — Islamic — philosophy of law) and B.2 (historical Islamic legal systems as a distinct ancient-to-early-modern tradition)."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "The Islamic Golden Age covers the development of Islamic legal philosophy (fiqh, Sharia jurisprudence) and legal institutions in A.2 (non-Western philosophies of law — Islamic), and the historical development of Islamic law as a major legal system in B.2."
+    },
+    {
+      "articleTitle": "Mesopotamia",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Mesopotamia is the primary reference for B.2.b (cuneiform law), covering the Code of Hammurabi, Sumerian and Babylonian legal codes, and the origins of codified law in the ancient Near East."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "B.2.d",
+        "B.2.e",
+        "A.1.d"
+      ],
+      "rationaleAI": "Ancient Greece covers B.2.d (Greek law — Athenian legal institutions, trial procedures, Solon's reforms) and B.2.e (Hellenistic law — the spread of Greek legal forms across Alexander's empire), plus A.1.d (ancient Greek legal philosophy)."
+    },
+    {
+      "articleTitle": "Middle Ages",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.3.c",
+        "B.3.d"
+      ],
+      "rationaleAI": "Middle Ages directly covers all of B.3 (medieval European law): feudalism, the Church and monasticism (canon law — B.3.d), scholasticism informing legal theory, and the development of medieval private law institutions (B.3.c)."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "B.4.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "The Napoleonic Code is the foundational document of B.4.b (Continental civil law) — Napoleon's legal reforms systematized French and European civil law, directly shaping modern civil law systems across Europe, Latin America, and beyond."
+    },
+    {
+      "articleTitle": "Western philosophy",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "Western philosophy covers A.1.a (the scope of Western philosophy of law and its relationship to other branches of philosophy), A.1.b (jurisprudential problems — from Stoic natural law to Kantian legal philosophy), and A.1.d (historical survey across antiquity through 20th century)."
+    },
+    {
+      "articleTitle": "Ethics",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.c",
+        "D.2"
+      ],
+      "rationaleAI": "Ethics covers A.1.b (normative and metaethical frameworks applied to jurisprudence), A.1.c (the relationship between law and morality — deontological, consequentialist, and virtue approaches), and the priority path D.2 (legal ethics as applied ethics for the legal profession)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.1.d",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "The Enlightenment is covered in A.1.d (18th-century legal theory — natural rights, social contract, Montesquieu's separation of powers), and directly enabled both B.4.a (Anglo-American common law reform) and B.4.b (Continental codification leading to Napoleonic law)."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.c",
+        "B.4"
+      ],
+      "rationaleAI": "Human rights are grounded in natural law (A.1.c) and jurisprudential theory (A.1.b), and the modern human rights treaty framework (UDHR, regional regimes) represents a key development in B.4 (modern systems of law — international human rights law)."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.2",
+        "A.1.d"
+      ],
+      "rationaleAI": "Ibn Khaldun's sociological analysis of law, governance, and Islamic jurisprudence contributes to A.2 (non-Western — Islamic — philosophy of law) and A.1.d (historical survey of legal theory, as his Muqaddimah addresses the sociological foundations of legal systems)."
+    },
+    {
+      "articleTitle": "Avicenna",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Avicenna's Peripatetic Islamic philosophy shaped Islamic legal philosophy (fiqh) through his integration of Aristotelian logic with Islamic theology, contributing to A.2 (non-Western — Islamic — philosophy of law and its rational foundations)."
+    },
+    {
+      "articleTitle": "Charlemagne",
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.3.b"
+      ],
+      "rationaleAI": "Charlemagne's administrative reforms — capitularies, missi dominici, legal standardization across the Carolingian Empire — directly cover B.3.a (origins and development of medieval European law) and B.3.b (sources and institutions of medieval constitutional law)."
+    },
+    {
+      "articleTitle": "Immanuel Kant",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.c",
+        "A.1.d"
+      ],
+      "rationaleAI": "Kant's categorical imperative and deontological ethics are foundational to A.1.b (jurisprudential theory — Kant's Rechtslehre is a landmark in philosophy of law), A.1.c (the relationship between law and morality), and A.1.d (18th–19th century legal theory)."
+    },
+    {
+      "articleTitle": "Democracy",
+      "relevantPathsAI": [
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "Democracy as a legal-constitutional form is embedded in B.4.a (Anglo-American common law democracies) and B.4.b (Continental civil law democracies), where constitutional democracy shapes the legal systems and judicial institutions of modern states."
+    },
+    {
+      "articleTitle": "Socrates",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "Socrates' commitment to law — accepting the death penalty rather than escaping — and his dialectical examination of justice are foundational to A.1.b (jurisprudential theory on justice and obligation) and A.1.d (ancient Greek legal philosophy)."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The Silk Road's operation across multiple legal jurisdictions (Sogdian, Chinese, Byzantine, Islamic) contributed to the development and transmission of commercial law and contract practices, offering moderate coverage of B.2 (ancient systems of law across Asian and Middle Eastern legal traditions)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,68 +1,273 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "822",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The religions of ancient peoples developed within the historical civilizations documented in human history.",
+      "articleTitle": "Ancient Egypt",
       "relevantPathsAI": [
-        "A.3.a",
-        "F",
-        "H"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Religions of ancient peoples reflect the social and cultural organization of early civilizations.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Ancient history",
-      "rationaleAI": "The religions of ancient peoples from Egypt to Rome emerged during and are documented through ancient historical records.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
         "A.3",
-        "A.3.a",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Deity",
-      "rationaleAI": "Ancient peoples developed elaborate pantheons of deities from Egyptian Ra to Greek Zeus to Roman Jupiter.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.c",
-        "A.3.d",
-        "A.4",
-        "A.5",
-        "B.2",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Greek mythology",
-      "rationaleAI": "Greek mythology belongs to the religions of ancient peoples.",
-      "relevantPathsAI": [
         "A.3.a",
         "A.3.b",
         "A.3.c",
-        "B.3",
-        "B.4",
+        "A.3.d",
+        "A.3.e"
+      ],
+      "rationaleAI": "Directly covers the full breadth of ancient Egyptian religion including its historical development across kingdoms, religious mythology, pantheon, and major forms — the core content of the entire A.3 subsection."
+    },
+    {
+      "articleTitle": "Sumer",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Sumer is the foundational Mesopotamian civilization whose cosmological, funerary, and temple religion constitutes the primary subject of A.2 (Mesopotamian religions)."
+    },
+    {
+      "articleTitle": "Phoenicia",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Phoenicia was a Semitic city-state civilization on the Levantine coast whose religious practices are central to A.5 (Syrian and Palestinian religions)."
+    },
+    {
+      "articleTitle": "Moses",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Moses is the central prophetic and lawgiving figure of ancient Israelite religion, directly relevant to A.5 (Syrian and Palestinian religions) as the founder of the Mosaic covenant within the Canaanite-Levantine religious context."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
         "C",
+        "C.1",
         "C.2",
         "C.3",
-        "C.5",
+        "C.4"
+      ],
+      "rationaleAI": "Covers ancient Greek civilization comprehensively including democratic governance, philosophy, and religion, directly supporting the full scope of section C (Greek religion) including its historical development, mythology, pantheon, and worship practices."
+    },
+    {
+      "articleTitle": "Ancient Rome",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Covers ancient Roman civilization comprehensively including its polytheistic religion's historical development, transition to Christianity, and religious institutions — the core content of section D (Roman religion)."
+    },
+    {
+      "articleTitle": "Achaemenid Empire",
+      "relevantPathsAI": [
+        "B",
+        "B.4"
+      ],
+      "rationaleAI": "The Achaemenid Empire was the primary Persian imperial state whose state religion was Zoroastrianism centered on the cult of Ahura Mazda, directly relevant to B (Iranian religions) and B.4 (the cult of Ahura Mazda and Zoroaster's preaching)."
+    },
+    {
+      "articleTitle": "Homer",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Homer's Iliad and Odyssey are the primary sources of Greek mythology and religious literature, directly mapping to C.2 (Greek mythology and other religious literature) and the Olympian pantheon they encode."
+    },
+    {
+      "articleTitle": "Inca Empire",
+      "relevantPathsAI": [
+        "I.1"
+      ],
+      "rationaleAI": "The Inca Empire's state religion centered on sun worship (Inti), reciprocal ritual economy, and imperial cult directly maps to I.1 (Inca religion) as one of the section's priority uncovered paths."
+    },
+    {
+      "articleTitle": "Mesoamerica",
+      "relevantPathsAI": [
+        "I.2"
+      ],
+      "rationaleAI": "Mesoamerica encompasses Maya and Aztec religious systems including human sacrifice, calendrical ritual, and the ritual ballgame — the core content of I.2 (Mayan religion) and the broader pre-Columbian religious context."
+    },
+    {
+      "articleTitle": "Judaism",
+      "relevantPathsAI": [
+        "E.6",
+        "A.5"
+      ],
+      "rationaleAI": "Judaism's roots lie in ancient Israelite religion (A.5 — Syrian and Palestinian religions) and its Hellenistic-era development constitutes E.6, making this a direct fit for two major outline nodes."
+    },
+    {
+      "articleTitle": "History of religion",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Provides broad comparative and historical coverage of ancient Near Eastern, Iranian, Greek, Roman, and Hellenistic religions, serving as a general overview across the entire section's scope."
+    },
+    {
+      "articleTitle": "Viking Age",
+      "relevantPathsAI": [
+        "G.2",
+        "F"
+      ],
+      "rationaleAI": "The Viking Age covers Norse religion — the Germanic peoples' pre-Christian polytheism including Odin, Thor, and the Eddic mythological corpus — directly relevant to G.2 (religion of the Germanic peoples) and broader northern European indigenous religion (F)."
+    },
+    {
+      "articleTitle": "Indo-European languages",
+      "relevantPathsAI": [
+        "B.2",
+        "G"
+      ],
+      "rationaleAI": "Proto-Indo-European linguistic origins trace the shared religious vocabulary and ritual patterns underlying early Indo-Iranian nature-polytheism (B.2) and Celtic and Germanic religions (G), providing the scholarly linguistic context for these traditions."
+    },
+    {
+      "articleTitle": "Turkey",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Turkey encompasses ancient Anatolia (Asia Minor), the home of Hittite, Phrygian, and other ancient Anatolian religious traditions — the core subject of A.4 (religions of the ancient peoples of Asia Minor)."
+    },
+    {
+      "articleTitle": "Pre-Columbian era",
+      "relevantPathsAI": [
+        "I",
+        "I.1",
+        "I.2"
+      ],
+      "rationaleAI": "Covers the full range of pre-Columbian indigenous American civilizations and their religious systems, supporting both I.1 (Inca religion) and I.2 (Mayan religion) as the broadest contextual article for section I."
+    },
+    {
+      "articleTitle": "Andean civilizations",
+      "relevantPathsAI": [
+        "I.1"
+      ],
+      "rationaleAI": "Covers the succession of Andean cultures from Norte Chico through Inca including religious practices, monumental architecture, and ritual life, relevant to I.1 (Inca religion) and its pre-Inca antecedents."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The modern Egypt article encompasses Egyptian civilization from pharaonic antiquity, including the polytheistic religion and its historical development, covering the broader context of A.3 (Egyptian religion)."
+    },
+    {
+      "articleTitle": "Deity",
+      "relevantPathsAI": [
+        "A.1",
+        "C.3",
+        "D.2"
+      ],
+      "rationaleAI": "Covers the typology of divine beings across ancient Near Eastern, Greek, and Roman traditions, relevant to A.1 (characteristics of ancient Near Eastern religions), C.3 (the Greek pantheon), and D.2 (Roman gods and numina)."
+    },
+    {
+      "articleTitle": "Cicero",
+      "relevantPathsAI": [
+        "D.3",
+        "E.4"
+      ],
+      "rationaleAI": "Cicero was both a practitioner of Roman religious and civic life (D.3 — worship and practices of Roman religion) and the primary Latin transmitter of Hellenistic philosophical schools including Stoicism and Epicureanism (E.4 — Hellenistic religious philosophies)."
+    },
+    {
+      "articleTitle": "Socrates",
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Socrates is foundational to the Hellenistic philosophical tradition — elenctic moral philosophy, the examined life — that feeds into Hellenistic religious philosophies including Stoicism and later Neoplatonism covered under E.4."
+    },
+    {
+      "articleTitle": "Jesus",
+      "relevantPathsAI": [
+        "E.7"
+      ],
+      "rationaleAI": "Jesus is the central figure of Christianity as it emerged within the Hellenistic world, directly relevant to E.7 (Christianity as a religion of the Hellenistic world), its founding context and earliest institutional development."
+    },
+    {
+      "articleTitle": "Christianity",
+      "relevantPathsAI": [
+        "E.7"
+      ],
+      "rationaleAI": "Christianity emerged from Second Temple Judaism in the Hellenistic-Roman world, making its early history and doctrines directly relevant to E.7 as one of the section's uncovered priority paths."
+    },
+    {
+      "articleTitle": "Augustus",
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Augustus institutionalized the Roman imperial cult and restored traditional Roman religious practices, making him directly relevant to D.1 (historical development of Roman religion) and D.3 (Roman worship and institutions)."
+    },
+    {
+      "articleTitle": "Rome",
+      "relevantPathsAI": [
         "D"
-      ]
+      ],
+      "rationaleAI": "Rome as a city and civilization is the primary locus of Roman religion, including the imperial cult, pagan temples, and early Christian basilicas, providing contextual coverage for section D (Roman religion) broadly."
+    },
+    {
+      "articleTitle": "Cleopatra",
+      "relevantPathsAI": [
+        "A.3",
+        "E"
+      ],
+      "rationaleAI": "Cleopatra ruled in the Hellenistic-era Egypt of the Ptolemaic dynasty, relevant to A.3.a (Egyptian religion's late developments through the Hellenistic Age) and the broader Hellenistic religious and cultural world of section E."
+    },
+    {
+      "articleTitle": "Alexander the Great",
+      "relevantPathsAI": [
+        "E",
+        "E.4"
+      ],
+      "rationaleAI": "Alexander's conquests directly created the Hellenistic world in which mystery religions, Gnosticism, Neoplatonism, and the syncretism of section E flourished, and his campaigns produced Greco-Buddhism and Hellenistic Judaism."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "C.5",
+        "D.4",
+        "A.3.e"
+      ],
+      "rationaleAI": "Covers ancient Egyptian religious art and iconography (A.3.e), Greek religious art and sculpture (C.5), and Roman religious art including sculpture, metalwork, painting, and mosaic (D.4) — three of the section's uncovered priority paths."
+    },
+    {
+      "articleTitle": "Ancient history",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Provides broad coverage of ancient Near Eastern and Mesopotamian civilizations including their religious developments, relevant to A.1 (characteristics of ancient Near Eastern religions) and A.2 (Mesopotamian religions)."
+    },
+    {
+      "articleTitle": "Virgil",
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Virgil's Aeneid encodes Roman religious mythology, the Olympian pantheon, and civic piety (pietas) — the Augustan religious program — relevant to D.2 (Roman gods) and D.3 (Roman worship and institutions)."
+    },
+    {
+      "articleTitle": "Europe",
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Covers European history from classical antiquity through the medieval period, providing broad contextual coverage for the religions of early European peoples in sections F (eastern/central Europe), G (Celtic and Germanic), and H (northeastern Europe)."
+    },
+    {
+      "articleTitle": "Israel",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Israel's article encompasses the history of ancient Israelite and Jewish civilization in the Southern Levant, relevant to A.5 (Syrian and Palestinian religions) and the Hebrew Bible's religious traditions."
+    },
+    {
+      "articleTitle": "Bronze Age",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Bronze Age encompasses the Near Eastern civilizations — Mesopotamia, Egypt, Asia Minor — whose religions are the primary content of A.1 and A.2, including the earliest writing systems encoding religious cosmology."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

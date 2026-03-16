@@ -1,137 +1,168 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "553",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Private law regulates relationships among individuals within society.",
-      "relevantPathsAI": [
-        "C.5",
-        "E.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Family",
-      "rationaleAI": "Family law governing marriage, divorce, custody, and inheritance is a major branch of private law.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d"
-      ]
-    },
-    {
       "articleTitle": "Business",
-      "rationaleAI": "Commercial law, contract law, and corporate governance are major branches of private law governing business activity.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4",
-        "A.5.d",
-        "A.6.a",
-        "A.6.b",
-        "A.7.c",
-        "A.7.d",
-        "A.8",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Law",
-      "rationaleAI": "Private law including contracts, torts, and property law regulates relationships among individuals and organizations.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
-        "A.6.a",
-        "A.6.b",
-        "A.7",
-        "A.7.a"
-      ]
+        "D.3",
+        "D.3.a"
+      ],
+      "rationaleAI": "Covers the legal structures of business entities \u2014 sole proprietorships, partnerships, corporations, cooperatives \u2014 and their regulatory frameworks including intellectual property, commercial regulation, and taxation, which map directly to the law of business associations (D.3) and its principal forms (D.3.a)."
     },
     {
       "articleTitle": "Corporation",
-      "rationaleAI": "Corporate law falls within branches of private law.",
       "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.5.d",
-        "A.6.a",
-        "A.6.b",
-        "A.7.b",
-        "A.7.c",
-        "A.7.d",
-        "A.8",
-        "B"
-      ]
+        "D.3.a",
+        "D.3.b",
+        "D.3.c"
+      ],
+      "rationaleAI": "Directly covers corporate law \u2014 legal personality, limited liability, governance separation of ownership and control via board of directors (D.3.b), and corporate finance including equity and debt capital structures (D.3.c) \u2014 making it the central article for D.3.a.ii and surrounding paths."
     },
     {
-      "articleTitle": "Insurance",
-      "rationaleAI": "Insurance contracts fall within branches of private law.",
+      "articleTitle": "Law",
       "relevantPathsAI": [
         "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
-        "A.6",
-        "A.6.b",
-        "A.7"
-      ]
-    },
-    {
-      "articleTitle": "Privacy",
-      "rationaleAI": "Privacy rights fall within branches of private law.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
-        "A.6",
-        "A.6.a",
-        "A.6.b"
-      ]
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Provides a comprehensive survey of private law including property, contracts, torts, trusts, and family law (A\u2013D), and legal procedure (E), covering all major divisions of Section 553 at a high level."
     },
     {
       "articleTitle": "Property",
-      "rationaleAI": "Property law is a central branch of private law.",
       "relevantPathsAI": [
-        "A",
+        "A.1",
+        "A.2",
         "A.3",
-        "A.5.d",
-        "C.5.b",
-        "E.1.c"
-      ]
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Directly and substantively covers property law: historical development of property rights (A.1), methods of acquiring property (A.2), types of ownership \u2014 private, public, collective (A.3), real and personal property distinctions (A.4), and intellectual property as intangible rights (A.5)."
     },
     {
-      "articleTitle": "Theft",
-      "rationaleAI": "Theft involves violations of property rights in private law.",
+      "articleTitle": "Family",
       "relevantPathsAI": [
-        "A",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.2"
+      ],
+      "rationaleAI": "Comprehensively covers family law: marriage law and civil effects (B.1.a), laws concerning children including adoption, guardianship, and parental rights (B.1.b), divorce and marital dissolution (B.1.c), and property devolution through inheritance (B.2)."
+    },
+    {
+      "articleTitle": "Marriage",
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "Covers the legal institution of marriage including state regulation, civil effects of the marriage contract and the legal status of married women (B.1.a), and divorce rights and marital dissolution across jurisdictions (B.1.c)."
+    },
+    {
+      "articleTitle": "Bank",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Banking operations directly involve the transfer of negotiable instruments including promissory notes and bills of exchange (D.2.a.ii), the issuance of letters of credit (D.2.a.iv), and the full range of commercial transactions law (D.2)."
+    },
+    {
+      "articleTitle": "Finance",
+      "relevantPathsAI": [
+        "D.3.c"
+      ],
+      "rationaleAI": "Covers the legal and financial structures of corporate finance \u2014 equity (common and preferred shares), debt instruments (bonds and debentures), and capital allocation \u2014 directly matching the structure of corporate finance outlined in D.3.c."
+    },
+    {
+      "articleTitle": "Insurance",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Insurance is a contract \u2014 governed by the law of contracts (D.1) \u2014 and a major category of commercial transaction subject to commercial law (D.2); contract law principles including offer, consideration, and indemnity are central to insurance."
+    },
+    {
+      "articleTitle": "Privacy",
+      "relevantPathsAI": [
+        "C.5.a",
+        "A.5"
+      ],
+      "rationaleAI": "Invasion of privacy is a recognized tort under C.5.a (defamation and other invasions of privacy), and informational privacy interests can constitute intangible property rights (A.5) in some legal systems."
+    },
+    {
+      "articleTitle": "Home",
+      "relevantPathsAI": [
         "A.4",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
         "A.6",
-        "A.7",
-        "A.7.a",
-        "A.7.c",
-        "A.7.d"
-      ]
+        "A.6.a",
+        "A.8"
+      ],
+      "rationaleAI": "A home is the paradigmatic piece of real property (A.4), held under freehold or leasehold tenure (A.6.a), subject to mortgage law (A.8), and the article covers owner-occupancy, rental tenure, and property regimes directly relevant to these paths."
+    },
+    {
+      "articleTitle": "Building",
+      "relevantPathsAI": [
+        "A.4",
+        "A.6"
+      ],
+      "rationaleAI": "Buildings are real property improvements (A.4) whose ownership and tenure \u2014 including freehold, leasehold, and mixed-use ownership \u2014 connect to laws concerning the temporal division of property rights and distinctions between real and personal property (A.6)."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "D.2",
+        "D.5",
+        "D.5.a"
+      ],
+      "rationaleAI": "Covers the commercial law of goods exchange including sales, comparative advantage, and international trade (D.2), as well as the laws governing commercial transportation of goods (D.5, D.5.a), from ancient maritime networks to modern trade agreements."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Covers employment, wage labor, worker rights, and the legal structures of paid and forced labor, connecting directly to labor law (D.4) which governs employment relationships, collective bargaining, and occupational conditions."
+    },
+    {
+      "articleTitle": "Parenting",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Covers parental rights and obligations, guardianship, adoption, and the legal and institutional frameworks for child-rearing, which are the substantive content of B.1.b's laws concerning children, legitimacy, adoption, and parental obligations."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Covers the legal definition of childhood and minority status, child protection frameworks, adoption, guardianship, parental rights, and child labor law, directly matching B.1.b's laws concerning children, legitimacy, adoption, and parental obligations."
+    },
+    {
+      "articleTitle": "Trade union",
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Trade unions are the primary institutional actors in labor law (D.4), and the article covers collective bargaining, labor agreements, wage determination, occupational health, and the legal frameworks governing worker organization."
+    },
+    {
+      "articleTitle": "Money",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Money functions as legal tender and medium of exchange in commercial transactions (D.2), and negotiable instruments such as promissory notes, bills of exchange, and checks \u2014 transfer mechanisms for money \u2014 are the specific subject of D.2.a.ii."
+    },
+    {
+      "articleTitle": "Slavery",
+      "relevantPathsAI": [
+        "D.4",
+        "A.1"
+      ],
+      "rationaleAI": "Slavery represents the historical negation of labor law rights (D.4) and its abolition marks a fundamental development in property rights history \u2014 slaves were legally classified as property \u2014 making it relevant to historical development of property rights (A.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,226 +1,248 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "231",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "The physical features of Earth's surface are directly addressed by this article on the planet.",
+      "articleTitle": "Pacific Ocean",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.3",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "D",
-        "D.1.a"
-      ]
+        "D.1.b",
+        "G"
+      ],
+      "rationaleAI": "The Pacific Ocean covers major oceanic features including the Mariana Trench (deepest point on Earth), seamount chains, and geological history (231.A.3, 231.D.1.b), and its extensive mid-ocean ridge system and island arc chains connect to oceanic ridges and fracture zones (231.G)."
     },
     {
-      "articleTitle": "Geography",
-      "rationaleAI": "Physical geography directly studies the surface features of the Earth including landforms, water bodies, and terrain.",
+      "articleTitle": "Indian Ocean",
       "relevantPathsAI": [
-        "A.1",
-        "B.2.a",
-        "C.2",
-        "F",
-        "F.2",
-        "F.2.b",
-        "G.1.a",
-        "G.2"
-      ]
+        "A.3",
+        "C",
+        "D.1"
+      ],
+      "rationaleAI": "The Indian Ocean covers its narrow continental shelves (231.C), major oceanic basin features, and its geological origin separated from the Tethys (231.D.1), directly addressing oceanic physiography and continental margins."
+    },
+    {
+      "articleTitle": "Lake",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Lake covers tectonic, rift-zone, and fault-bounded lakes as water bodies occupying structural depressions (231.B.2.c), including endorheic lakes and inland seas formed by crustal separation—directly mapping to this outline path."
     },
     {
       "articleTitle": "Land",
-      "rationaleAI": "Land encompasses the continents, islands, and terrestrial surface features that define Earth's physical geography.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.a",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "C",
-        "C.2",
-        "D.1.a",
-        "D.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Continent",
-      "rationaleAI": "Continents are the primary large-scale physical features of Earth's surface.",
       "relevantPathsAI": [
         "A.1",
         "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "D"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Land covers the distribution of continents and islands (29.2% of Earth's surface), terrain types (mountains, deserts, plains, plateaus, cratons), and plate tectonics directly relevant to hypsography (231.A.1), physiography of the continents (231.A.2), and stable platform regions (231.B)."
     },
     {
-      "articleTitle": "Antarctica",
-      "rationaleAI": "Antarctica is a major physical feature of Earth's surface defined by its continental landmass.",
+      "articleTitle": "Arctic Ocean",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Island",
-      "rationaleAI": "Islands are distinctive physical features of Earth's surface.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
         "A.3.a",
-        "A.3.b",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "D"
-      ]
+        "A.3.b"
+      ],
+      "rationaleAI": "The Arctic Ocean's oceanography—its connections to the Atlantic via Greenland-Scotland Ridge and to the Pacific via Bering Strait—covers principal oceanic features and oceanic physiography (231.A.3.a, 231.A.3.b)."
     },
     {
       "articleTitle": "Mountain",
-      "rationaleAI": "Mountains are major physical features of Earth's surface.",
       "relevantPathsAI": [
-        "A.1",
-        "B.2.a",
-        "C.2",
-        "D.1.a",
         "F",
         "F.1",
-        "F.2",
-        "F.2.c",
-        "F.2.e"
-      ]
+        "A.2"
+      ],
+      "rationaleAI": "Mountain covers geological formation types including fold, block-fault, and volcanic mountains (231.F.1)—exactly the typology listed in the outline—and connects to the worldwide system of mountain ranges (231.F) as major surface features."
     },
     {
-      "articleTitle": "Andes",
-      "rationaleAI": "The Andes are the longest continental mountain range and a major surface feature.",
+      "articleTitle": "Ocean",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
         "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
         "C",
-        "C.2",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Himalayas",
-      "rationaleAI": "The Himalayas are the world's highest mountain range and a major surface feature.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Rocky Mountains",
-      "rationaleAI": "The Rocky Mountains are a major North American mountain system.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Natural disaster",
-      "rationaleAI": "Natural disasters reshape the physical features of Earth's surface.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
         "D",
-        "D.1.a"
-      ]
+        "G"
+      ],
+      "rationaleAI": "Ocean covers depth zones (pelagic, photic, abyssal), continental margins, oceanic ridges, trenches, and abyssal plains (231.D.1.b), directly addressing the oceanic deeps (231.D), continental shelf (231.C), oceanic ridges (231.G), and overall oceanic physiography (231.A.3)."
     },
     {
-      "articleTitle": "Earthquake",
-      "rationaleAI": "Earthquakes reshape the physical features of Earth's surface.",
+      "articleTitle": "Atlantic Ocean",
       "relevantPathsAI": [
-        "A.1",
-        "B.2.a",
+        "A.3",
+        "G",
+        "D.1.b"
+      ],
+      "rationaleAI": "The Atlantic Ocean covers the Mid-Atlantic Ridge (a principal oceanic ridge in the global spreading-centre system, 231.G), ocean floor bathymetry including the Sargasso Sea, and plate tectonic history (231.D.1.b, 231.G.2.b)."
+    },
+    {
+      "articleTitle": "Mediterranean Sea",
+      "relevantPathsAI": [
         "B.2.c",
-        "C.2",
-        "D.1.b",
-        "F",
-        "F.1",
-        "F.2",
-        "F.2.e"
-      ]
+        "A.3"
+      ],
+      "rationaleAI": "The Mediterranean Sea is an inland sea with an outlet to the Atlantic Ocean (231.B.2.c—inland seas with outlets to the oceans) formed through crustal and tectonic history including the Messinian salinity crisis; it also constitutes a notable marginal oceanic region (231.A.3)."
     },
     {
       "articleTitle": "Plate tectonics",
-      "rationaleAI": "Plate tectonics shapes the physical features of Earth's surface through continental drift.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a"
-      ]
+        "F.2",
+        "D.2",
+        "G.2.b",
+        "B.2"
+      ],
+      "rationaleAI": "Plate tectonics is the unifying theory explaining mountain-building at convergent boundaries (231.F.2), seafloor spreading and ocean basin origin (231.D.2), oceanic ridges as divergent plate boundaries (231.G.2.b), and uplift and fracture of continental platforms (231.B.2)."
     },
     {
       "articleTitle": "Volcano",
-      "rationaleAI": "Volcanoes are physical features of Earth's surface formed by magmatic activity.",
+      "relevantPathsAI": [
+        "F.1",
+        "F.2.d",
+        "G.2"
+      ],
+      "rationaleAI": "Volcano covers volcanic mountain types (231.F.1), volcanic island arc systems formed at convergent plate boundaries (231.F.2.d), and submarine volcanism at mid-ocean ridges relevant to oceanic ridge origin and growth (231.G.2)."
+    },
+    {
+      "articleTitle": "Continent",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Continent covers the geological basis in continental crust, tectonic plates, and supercontinents (231.A.1, 231.B.1), and the physiography of major continental land masses (231.A.2), directly mapping to hypsography and stable platform regions."
+    },
+    {
+      "articleTitle": "Arctic",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Arctic covers polar geomorphology and the physiography of northern territories across North America and Eurasia (231.A.2—physiography of the continents), including permafrost tundra and polar landscape features."
+    },
+    {
+      "articleTitle": "Internal structure of Earth",
+      "relevantPathsAI": [
+        "B.1",
+        "D.1.a"
+      ],
+      "rationaleAI": "Internal structure of Earth covers the silicate crust (oceanic and continental) including the distinction between oceanic crust and continental shield areas (231.B.1, 231.D.1.a), and the lithosphere-asthenosphere boundary that underlies plate tectonic theory and surface feature formation."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "B.1",
+        "D",
+        "F"
+      ],
+      "rationaleAI": "Geology covers petrology, structural geology, plate tectonics, and the full spectrum of Earth surface processes that produce the features described across 231—continental shield rock composition (231.B.1), ocean basin origin (231.D), and mountain-building (231.F)."
+    },
+    {
+      "articleTitle": "Andes",
+      "relevantPathsAI": [
+        "F.2.a",
+        "F.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Andes are part of the Circum-Pacific mountain and volcanic system (231.F.2.a), formed by subduction-driven orogenesis (fold/volcanic type, 231.F.1), and constitute a major feature of South American continental physiography (231.A.2)."
+    },
+    {
+      "articleTitle": "Himalayas",
+      "relevantPathsAI": [
+        "F.2.b",
+        "F.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Himalayas are part of the Tethyan mountain system (231.F.2.b), formed by continental collision (fold mountain type, 231.F.1), and are a defining feature of Asian continental physiography (231.A.2)."
+    },
+    {
+      "articleTitle": "Caspian Sea",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "The Caspian Sea is the world's largest inland body of water, an endorheic basin that fits precisely into the category of water bodies occupying fault-bounded structural depressions and inland seas without ocean outlets (231.B.2.c)."
+    },
+    {
+      "articleTitle": "Island",
+      "relevantPathsAI": [
+        "A.1",
+        "E",
+        "F.2.d"
+      ],
+      "rationaleAI": "Island covers formation through plate tectonics, volcanism, and coral reef accretion (atolls, 231.E), as well as volcanic island arc systems (231.F.2.d), directly addressing coral islands and atolls—the sole no-coverage priority path—and the distribution of land and islands (231.A.1)."
+    },
+    {
+      "articleTitle": "Great Lakes",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "The Great Lakes are a system of interconnected freshwater lakes of glacial geological origin occupying structural/glacially modified depressions (231.B.2.c—water bodies occupying fault-bounded and structural depressions), the largest such freshwater system on Earth."
+    },
+    {
+      "articleTitle": "Sea",
       "relevantPathsAI": [
         "A.3.a",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.c",
-        "C",
-        "C.2",
-        "C.3",
         "D.1.b",
-        "F.2"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Sea covers major oceanic features including continental margins, abyssal plains, ridges, and trenches (231.A.3.a, 231.D.1.b), and the thermohaline conveyor belt relates to deep ocean basin geography; the continental shelf and slope are covered as part of ocean basin structure (231.C)."
+    },
+    {
+      "articleTitle": "Rocky Mountains",
+      "relevantPathsAI": [
+        "F.2.c",
+        "F.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Rocky Mountains are a subsidiary mountain range in North America (231.F.2.c) formed through the Laramide orogeny, constituting a major feature of North American continental physiography (231.A.2), with fold and block-fault mountain types (231.F.1)."
+    },
+    {
+      "articleTitle": "River",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Rivers are surface features that define continental physiography through drainage basins, deltas, and canyon formation (231.A.2), though their primary coverage is under 232; they merit inclusion here as geomorphic elements of continental surface description."
+    },
+    {
+      "articleTitle": "Erosion",
+      "relevantPathsAI": [
+        "A.1",
+        "F"
+      ],
+      "rationaleAI": "Erosion is a geomorphic process that shapes the Earth's surface features including mountain weathering (231.F) and modifies the hypsography of the land surface (231.A.1); it is the key process mediating between tectonic uplift and the observed surface relief."
+    },
+    {
+      "articleTitle": "Antarctica",
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Antarctica is a continent with distinctive physiography and geology spanning the Paleozoic to present (231.A.2—physiography of the continents: Antarctica), and its continental shield geology is relevant to stable platform shield areas (231.B.1)."
+    },
+    {
+      "articleTitle": "Desert",
+      "relevantPathsAI": [
+        "A.2",
+        "B.2.a"
+      ],
+      "rationaleAI": "Deserts cover major surface features including sand dunes, pavements, oases, and salt pans (231.A.2—physiography of the continents) and arid plateaus and basins (231.B.2.a), present on every continent."
+    },
+    {
+      "articleTitle": "Asia",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Asia, as the world's largest continent, encompasses major physiographic features—Himalayas, Tibetan Plateau, Siberian Shield, river systems, and Pacific coastal ranges—directly relevant to the physiography of the continents (231.A.2)."
+    },
+    {
+      "articleTitle": "Ganges",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Ganges and the Gangetic Plain define a major physiographic feature of South Asian continental geography (231.A.2), draining the Himalayan front and forming a major alluvial floodplain system."
+    },
+    {
+      "articleTitle": "Mineral",
+      "relevantPathsAI": [
+        "F.2.e"
+      ],
+      "rationaleAI": "Minerals constitute the rock types forming folded mountain ranges and island arcs (231.F.2.e—the rock types constituting the folded mountain ranges and island arcs), with silicates comprising ~90% of Earth's crust and governing the composition of orogenic belts."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,75 +1,175 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "243",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "The eras and periods of geologic time document Earth's history as described in this article.",
+      "articleTitle": "Vertebrate",
       "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Geology",
-      "rationaleAI": "Geologic timescales dividing Earth's history into eons, eras, periods, and epochs are a central framework of geological science.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "C.1",
-        "C.2",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "History of life",
-      "rationaleAI": "The history of life unfolds across the eras and periods of geologic time.",
-      "relevantPathsAI": [
-        "A",
         "B",
         "B.1",
         "B.2",
         "B.3",
         "B.4",
-        "B.5",
-        "B.6",
         "C",
-        "C.1"
-      ]
+        "C.2",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Vertebrates first appeared in the Cambrian (~518 Ma), with jawed forms emerging in the Ordovician–Silurian and tetrapods in the late Devonian, directly covering the coverage-priority Ordovician (B.2) and Silurian (B.3) periods. Mammals and dinosaurs arose in the Triassic, and birds diverged from dinosaurs in the Jurassic, mapping substantively across Mesozoic and Cenozoic outline paths."
     },
     {
-      "articleTitle": "Dinosaur",
-      "rationaleAI": "Dinosaurs dominated the Mesozoic era, a major period of geologic time.",
-      "relevantPathsAI": []
+      "articleTitle": "History of life",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "C",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "This article traces biological milestones keyed to geologic time: the Great Oxygenation Event in the Proterozoic (Precambrian), the Cambrian explosion of animal phyla, land colonization in the Paleozoic, successive mass extinctions through the Mesozoic, and mammalian rise after the Cretaceous–Paleogene extinction (D). Its explicit stratigraphic framing makes it directly relevant to the eras and periods outline."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Geology encompasses stratigraphy, geochemical dating, and the reconstruction of Earth's 4.5-billion-year history, providing the methodological and conceptual framework for recognizing and defining all geologic time periods covered in the section's outline."
     },
     {
       "articleTitle": "History of Earth",
-      "rationaleAI": "Earth's history unfolds across the eras and periods of geologic time.",
       "relevantPathsAI": [
         "A",
+        "B",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
+        "C",
+        "C.3",
+        "D",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Earth's 4.54-billion-year history organized by four eons explicitly addresses Snowball Earth (Precambrian), the Cambrian explosion, mass extinctions through the Mesozoic, and mammalian diversification in the Cenozoic, mapping across virtually the entire section outline including the Quaternary and Pleistocene cross-references."
+    },
+    {
+      "articleTitle": "Mammal",
+      "relevantPathsAI": [
         "B.5",
-        "B.6",
         "C.1",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Mammals originated from cynodont therapsids in the Late Triassic (C.1) having diverged from reptile ancestors in the Carboniferous (B.5), and diversified explosively after the Cretaceous–Paleogene extinction at 66 Ma (C.3/D transition), directly placing this article at key Mesozoic–Cenozoic junctions."
+    },
+    {
+      "articleTitle": "Animal",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Animals evolved in the late Cryogenian (~650 Mya, Precambrian) and diversified in the Cambrian explosion (~539 Mya, B.1), making this article directly relevant to Precambrian (A) and earliest Paleozoic (B.1) outline paths."
+    },
+    {
+      "articleTitle": "Evolution",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Evolution covers phylogenetics and the history of life from ~3.5–3.8 billion years ago, including adaptation, speciation, and extinction events that define the boundaries between geologic periods and eras throughout the outline."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Earth's article covers the planet's 4.5-billion-year origin (Precambrian) and biological evolution through the Quaternary, providing genuine if broad coverage of Precambrian time and the Cenozoic eras."
+    },
+    {
+      "articleTitle": "Flower",
+      "relevantPathsAI": [
         "C.2",
         "C.3"
-      ]
+      ],
+      "rationaleAI": "Flowering plants evolved 150–190 million years ago in the Jurassic (C.2) and came to dominate terrestrial ecosystems through the Cretaceous (C.3), directly placing this article within Mesozoic geologic time coverage."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Life covers the origin (~3.5 billion years ago, deep Precambrian) and the entire evolutionary trajectory to present biodiversity, spanning all eras and periods in the outline through its discussion of the geological and biological record."
+    },
+    {
+      "articleTitle": "Climate",
+      "relevantPathsAI": [
+        "A",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Paleoclimatology using proxy records covering millions of years directly underpins interpretation of Precambrian climate epochs and the Quaternary/Pleistocene glacial cycles; the Pleistocene Epoch (D.2.a) is explicitly cross-referenced to Section 223 on weather and climate."
+    },
+    {
+      "articleTitle": "Human evolution",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Human evolution traces from primate divergence ~65 mya (Tertiary, D.1) through Australopithecine origins (~4–7 mya) to anatomically modern humans (~300,000 years ago, Quaternary/Pleistocene D.2.a), directly covering the Cenozoic outline paths."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "The Stone Age spans from the earliest Oldowan tools (~2.6 million years ago) through the Neolithic, placing it squarely within Quaternary time (D.2) and substantially within the Pleistocene Epoch (D.2.a) as cross-referenced in the outline."
+    },
+    {
+      "articleTitle": "Prehistory",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Prehistory begins with hominin stone-tool use (~3.3 million years ago) and extends through the adoption of writing (~5,000 years ago), falling within the Quaternary Period (D.2) and most substantially within the Pleistocene Epoch (D.2.a) as cross-referenced in the outline."
+    },
+    {
+      "articleTitle": "Human",
+      "relevantPathsAI": [
+        "D",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Homo sapiens emerged ~300,000 years ago in Africa, placing human origins firmly within the Quaternary Period (D.2) and the Pleistocene Epoch (D.2.a) as cross-referenced by the outline."
+    },
+    {
+      "articleTitle": "Horse",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The horse lineage traces to the multi-toed Eohippus of 45–55 million years ago (Eocene, within the Tertiary Period D.1), providing direct coverage of the Cenozoic mammalian fossil record for this outline path."
+    },
+    {
+      "articleTitle": "Extinction",
+      "relevantPathsAI": [
+        "B.6",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Mass extinctions punctuate the fossil record at key period boundaries: the end-Permian event (B.6), the Cretaceous–Paleogene event (C.3/D boundary), and the article addresses the ongoing sixth mass extinction—giving substantive coverage to multiple geologic period transitions."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

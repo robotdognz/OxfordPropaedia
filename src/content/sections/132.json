@@ -165,13 +165,13 @@
               "level": "f",
               "levelType": "lowercase",
               "text": "The general interstellar medium: principal components and their distribution throughout the various galactic regions",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Grains of interstellar dust",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Grains of interstellar dust",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -408,13 +408,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Intrinsic variables",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Pulsating stars; e.g., Cepheid, RR Lyrae, and Beta Canis Majoris variables",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Pulsating stars; e.g., Cepheid, RR Lyrae, and Beta Canis Majoris variables",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -478,13 +478,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "The life history of a typical star",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Formation of a protostar by gravitational contraction",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Formation of a protostar by gravitational contraction",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

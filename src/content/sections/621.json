@@ -85,13 +85,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Elements of prosody",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Rhythmic elements; e.g., accent, beat, cadence, the foot, the stanza, metre",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Rhythmic elements; e.g., accent, beat, cadence, the foot, the stanza, metre",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -295,13 +295,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Scientific literature",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Reportage: journalism",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Reportage: journalism",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

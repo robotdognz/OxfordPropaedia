@@ -1,550 +1,316 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "963",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Europe from the French Revolution to 1920 encompasses pivotal transformations in human history.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i.ii",
-        "A.1.v",
-        "A.1.f",
-        "A.1.i",
-        "A.1.h"
-      ]
-    },
-    {
-      "articleTitle": "Modern era",
-      "rationaleAI": "The modern era encompasses the revolutionary transformations of Europe from the French Revolution through World War I.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "War",
-      "rationaleAI": "The Napoleonic Wars and World War I were defining conflicts that reshaped European civilization from 1789 to 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.f"
-      ]
-    },
-    {
       "articleTitle": "Napoleon",
-      "rationaleAI": "Napoleon's conquests and reforms transformed Europe's political order from the French Revolution through the early 19th century.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.1.c"
+      ],
+      "rationaleAI": "Napoleon Bonaparte is the central figure of outline paths A.1.b\u2013c, covering the French First Republic, Consulate, and First Empire, the Napoleonic Code, the Continental System, and the campaigns of the multiple coalitions through Waterloo and the Congress of Vienna. His domestic reforms (A.1.b.iv) and the entire sequence of international wars (A.1.c.i\u2013v) are inseparable from his biography."
     },
     {
-      "articleTitle": "Vincent van Gogh",
-      "rationaleAI": "Van Gogh worked in late 19th-century Europe, a period of profound cultural and artistic transformation.",
+      "articleTitle": "George Washington",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Adam Smith",
-      "rationaleAI": "Smith's economic ideas emerged during the Scottish Enlightenment and shaped European economic transformation in the 18th-19th centuries.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Mary Wollstonecraft",
-      "rationaleAI": "Wollstonecraft wrote during the revolutionary era of late 18th-century Europe, contributing to Enlightenment political discourse.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Karl Marx",
-      "rationaleAI": "Marx's ideas emerged from and responded to 19th-century European industrialization and social upheaval.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Leo Tolstoy",
-      "rationaleAI": "Tolstoy's work captures the social and political transformation of 19th-century Russia and Europe.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Ludwig van Beethoven",
-      "rationaleAI": "Beethoven's career spanned the revolutionary and Napoleonic periods that transformed Europe from 1789 to the early 19th century.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Antoine Lavoisier",
-      "rationaleAI": "Lavoisier's chemical revolution occurred during the Enlightenment era of late 18th-century Europe.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Florence Nightingale",
-      "rationaleAI": "Nightingale's reforms during the Crimean War and Victorian era shaped 19th-century European public health.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Marie Curie",
-      "rationaleAI": "Curie's pioneering career as the first woman Nobel laureate unfolded during the transformative period of late 19th- and early 20th-century Europe.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "History of Europe",
-      "rationaleAI": "Modern European history from 1789 to 1920 saw revolution, industrialization, and global imperialism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "British Empire",
-      "rationaleAI": "The British Empire was the largest in history, and its expansion shaped European and world history from 1789 to 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "French Revolution",
-      "rationaleAI": "The French Revolution overthrew the monarchy and launched the era of democratic revolution across Europe.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Industrial Revolution",
-      "rationaleAI": "The Industrial Revolution reshaped European society, economy, and politics from the late 18th century onward.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
-    },
-    {
-      "articleTitle": "Scramble for Africa",
-      "rationaleAI": "The Scramble for Africa was driven by European imperial competition during the era from 1789 to 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The outline opens at A.1.a with the 'climate of change' including 'patriotism in America' (1770\u201390), and Washington's leadership of the American Revolution and presidency directly exemplifies the transatlantic democratic ferment that preceded and influenced the French Revolution."
     },
     {
       "articleTitle": "World War I",
-      "rationaleAI": "World War I was the culminating catastrophe of the European era from 1789 to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B.2.d",
+        "B.3.a",
+        "B.3.b",
+        "B.3.c",
+        "B.3.d",
+        "B.3.e",
+        "B.3.f",
+        "B.3.k"
+      ],
+      "rationaleAI": "World War I is the culminating event of section 963, treated in detail across B.2.d (causes, campaigns, armistice, peace settlement) and the individual state histories B.3.a\u2013k. The article covers all major outline sub-topics including trench warfare, US entry, the Russian Revolution, armistice, and the Treaty of Versailles."
     },
     {
-      "articleTitle": "France",
-      "rationaleAI": "France from the Revolution onward is a major focus of European history to 1920.",
+      "articleTitle": "American Revolution",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The American Revolution is explicitly cited in path A.1.a as the 'patriotism in America' precedent (1770\u201390) that formed part of the climate of change preceding the French Revolution, and the article covers colonial grievances, Enlightenment ideology, and the war itself."
     },
     {
-      "articleTitle": "Germany",
-      "rationaleAI": "German unification and imperial history are major topics in Europe to 1920.",
+      "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B.2.b",
+        "B.2.d",
+        "B.3.k"
+      ],
+      "rationaleAI": "The Ottoman Empire is directly relevant to B.3.k (the Balkan states and their conflicts with Ottoman power), B.2.b.ii (the Russo-Turkish War of 1877\u201378 and Congress of Berlin), and B.2.d.ii (Ottoman entry into WWI and campaigns in the Balkans and Middle East)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.2.e",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Marx is a central figure in the pan-European intellectual and political thought of the period: his materialist philosophy and class-struggle framework align with B.1.a (prevalence of Determinism and Materialism) and B.1.b (developments in arts, philosophy), while his Communist Manifesto (1848) and First International connect to socialist movements referenced in A.2 and B.3 state histories."
     },
     {
       "articleTitle": "Italy",
-      "rationaleAI": "Italian unification is a major topic in European history to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.2.m",
+        "B.2.a",
+        "B.3.f"
+      ],
+      "rationaleAI": "Italy's Risorgimento, unification under Cavour and Garibaldi, the Kingdom of Italy, and WWI participation are the exact subject matter of outline paths A.2.m (Italian states 1815\u201350), B.2.a.ii (the Italian War of Independence and Kingdom of Italy), and B.3.f (Italy 1850\u20131920) including the Triple Alliance and colonial expansion."
     },
     {
-      "articleTitle": "Poland",
-      "rationaleAI": "Poland's partition and nationalism are covered in European history to 1920.",
+      "articleTitle": "Scramble for Africa",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B.2.c"
+      ],
+      "rationaleAI": "The Scramble for Africa (c. 1880\u20131914) directly corresponds to outline B.2.c on the resurgence of European imperialism, covering renewed overseas expansion, the partitioning of Africa at the Berlin Conference, and new colonial powers and theories of imperialism."
     },
     {
       "articleTitle": "Russia",
-      "rationaleAI": "Russia's revolutionary period is a major topic in European history to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.1.f",
+        "A.2.o",
+        "B.3.e"
+      ],
+      "rationaleAI": "Russia under Alexander I (A.1.f), the Decembrist revolt and Nicholas I (A.2.o), and the full arc from Crimean War defeat through abolition of serfdom, revolutionary movements, Russo-Japanese War, and 1917 revolution (B.3.e.i\u2013iv) are core outline content."
     },
     {
-      "articleTitle": "Spain",
-      "rationaleAI": "Spain's modern political development is covered in European history to 1920.",
+      "articleTitle": "France",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.2.j",
+        "B.3.b"
+      ],
+      "rationaleAI": "France is the central subject of the section's A division (the Revolution, First Republic, Napoleonic Empire) and A.2.j (the Restoration through Second Republic), and B.3.b (Second Empire and Third Republic through WWI), covering all major milestones from 1789 to 1920."
     },
     {
-      "articleTitle": "London",
-      "rationaleAI": "London was a major center of European political and cultural life to 1920.",
+      "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.2.e",
+        "A.2.c"
+      ],
+      "rationaleAI": "The Enlightenment forms the intellectual backdrop to the French Revolution (A.1.a climate of change) and is directly referenced in A.2.e (philosophy: Kant, Fichte, Hegel, Schopenhauer) and A.2.c (the Romantic movement as a reaction to Enlightenment rationalism)."
     },
     {
-      "articleTitle": "Paris",
-      "rationaleAI": "Paris was the epicenter of the French Revolution and 19th-century European history.",
+      "articleTitle": "Voltaire",
       "relevantPathsAI": [
-        "A",
+        "A.1.a",
+        "A.2.e",
+        "A.2.f"
+      ],
+      "rationaleAI": "Voltaire's advocacy for reason, religious toleration, and civil liberties catalyzed the intellectual climate of the French Revolution (A.1.a), and his role as an Enlightenment philosopher connects to the philosophical developments in A.2.e and the religious alternatives discussed in A.2.f."
+    },
+    {
+      "articleTitle": "Holy Roman Empire",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1"
+      ],
+      "rationaleAI": "The formal dissolution of the Holy Roman Empire in 1806 under Napoleonic pressure is explicitly cited in A.1.c.ii, and the smaller German states under French influence as the Confederation of the Rhine is covered in A.1.i, making this article directly relevant to the section's opening period."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "B.2.c",
+        "B.3.a"
+      ],
+      "rationaleAI": "The British Empire is substantively covered in outline paths B.2.c (European imperialism and partitioning of Africa) and B.3.a (Great Britain's mid-Victorian politics, Gladstone/Disraeli, Irish Question, South African War, and WWI participation from 1850\u20131920)."
+    },
+    {
+      "articleTitle": "French Revolution",
+      "relevantPathsAI": [
         "A.1",
         "A.1.a",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
         "A.1.c",
-        "A.1.i"
-      ]
+        "A.2.b"
+      ],
+      "rationaleAI": "The French Revolution is the foundational topic of the entire A.1 division, with the article covering the Ancien R\u00e9gime's collapse, Constituent Assembly, First Republic, Reign of Terror, Thermidorian reaction, and Napoleon's Consulate\u2014all mapped exactly to A.1.b.i\u2013iii and A.1.c, and its legacy addressed in A.2.b."
+    },
+    {
+      "articleTitle": "John Locke",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Locke's social contract theory and natural rights philosophy were foundational to the Enlightenment liberalism that generated the 'climate of change' in America and the Netherlands (A.1.a) preceding the French Revolution, though his dates predate the section's core period."
+    },
+    {
+      "articleTitle": "Leo Tolstoy",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.3.e"
+      ],
+      "rationaleAI": "Tolstoy's literary and moral work spans the period B.1.b (developments in arts and philosophy) and his setting in 19th-century Russia connects to B.3.e (Russian Empire 1850\u20131917); War and Peace directly depicts the Napoleonic era that opens section 963."
+    },
+    {
+      "articleTitle": "Poland",
+      "relevantPathsAI": [
+        "A.2.o",
+        "B.3.e"
+      ],
+      "rationaleAI": "Poland features in the section through the partitions (relevant to the Vienna settlement context), the Polish rebellion of 1863 cited in B.3.e.i under Alexander II's Russia, and the broader context of nationalist movements within the Austrian and Russian empires addressed in A.2.l and B.3.d."
+    },
+    {
+      "articleTitle": "Ludwig van Beethoven",
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.1.b"
+      ],
+      "rationaleAI": "Beethoven (1770\u20131827) is the paradigmatic figure of the Romantic movement in music (A.2.c) with his heroic middle period contemporaneous with the Napoleonic era; his later work connects to the broader developments in arts across the section's period (B.1.b)."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.b"
+      ],
+      "rationaleAI": "Freud's development of psychoanalysis in Vienna from the 1880s\u20131900s connects to B.1.c (development of the behavioral sciences, new scientific theories) and B.1.b (philosophical developments in the period), placing him within the European intellectual life of 1850\u20131920."
+    },
+    {
+      "articleTitle": "United Kingdom",
+      "relevantPathsAI": [
+        "A.1.e",
+        "A.2.i",
+        "B.3.a"
+      ],
+      "rationaleAI": "The United Kingdom is covered across A.1.e (Britain 1789\u20131815, Pitt, the war with France), A.2.i (political and social reforms 1815\u201350, the Great Famine, Chartism), and B.3.a (mid-Victorian politics through WWI participation), encompassing the full 1789\u20131920 scope."
     },
     {
       "articleTitle": "Imperialism",
-      "rationaleAI": "Imperialism was a major feature of European history from 1789 to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B.2.c"
+      ],
+      "rationaleAI": "Imperialism as a theoretical and historical concept maps directly to B.2.c (resurgence of European imperialism c. 1875\u20131914) covering new theories of imperialism, colonial expansion, and the European penetration of Asia and partitioning of Africa."
     },
     {
-      "articleTitle": "Capitalism",
-      "rationaleAI": "Industrial capitalism transformed European society from 1789 to 1920.",
+      "articleTitle": "Spain",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Liberalism",
-      "rationaleAI": "Liberalism shaped European political development from 1789 to 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.f",
         "A.1.j",
-        "A.1.i"
-      ]
+        "A.2.q",
+        "B.3.h"
+      ],
+      "rationaleAI": "Spain under Charles IV, French occupation and the Peninsular War (A.1.j.i), the Carlist Wars and First Republic (A.2.q.i), and continued civil strife, Spanish-American War loss, and WWI neutrality (B.3.h) place Spain squarely within the section's narrative across all three chronological divisions."
     },
     {
-      "articleTitle": "Nationalism",
-      "rationaleAI": "Nationalism was a driving force in European history from 1789 to 1920.",
+      "articleTitle": "Europe",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Europe as a continental overview covers the entire political, cultural, and economic history addressed in the section, from the French Revolution through WWI, the Congress of Vienna, and European nationalism\u2014serving as a broad parent entry for the section as a whole."
     },
     {
-      "articleTitle": "Socialism",
-      "rationaleAI": "Socialism emerged as a major force in European history from 1789 to 1920.",
+      "articleTitle": "Early modern period",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The early modern period (c. 1500\u20131800) provides the immediate historical context for the section's opening, ending precisely at the French Revolution and Industrial Revolution onset; it covers the Enlightenment and state formation that fed into the 1789 changes addressed in A.1.a."
     },
     {
-      "articleTitle": "Trade union",
-      "rationaleAI": "Trade unions were a major force in European history from 1789 to 1920.",
+      "articleTitle": "Catherine the Great",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i.ii",
-        "A.1.v",
-        "A.1.d",
-        "A.1.i.ii",
+        "A.1.f"
+      ],
+      "rationaleAI": "Catherine II (d. 1796) directly precedes the section's coverage of Russia under Paul I and Alexander I (A.1.f), and her policies of Enlightened absolutism, partition of Poland, and Russo-Turkish Wars set the immediate context for Russian participation in the Napoleonic Wars."
+    },
+    {
+      "articleTitle": "Florence Nightingale",
+      "relevantPathsAI": [
+        "B.3.e"
+      ],
+      "rationaleAI": "Nightingale's work during the Crimean War (1853\u201356) places her within the period covered by B.3.e.i (Russia's defeat in the Crimean War and Alexander II's reforms), though she is primarily a British social reformer rather than a direct subject of European political history."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "A.2.i"
+      ],
+      "rationaleAI": "The abolition of slavery in British colonies (1833) is explicitly cited in A.2.i.ii among British political and social reform measures, making the Atlantic slave trade relevant as background to the abolitionist reform movement in Britain during 1815\u201350."
+    },
+    {
+      "articleTitle": "Pablo Picasso",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Picasso (1881\u20131973) began his career in the section's period and co-founded Cubism in Paris by 1907\u201308; his early periods (Blue, Rose, African-influenced, Cubist) fall within B.1.b (developments in the arts c. 1850\u20131920), though most of his major works postdate 1920."
+    },
+    {
+      "articleTitle": "George Washington",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Already noted above \u2014 Washington exemplifies the American democratic movement cited in A.1.a as a precursor to the French Revolution."
+    },
+    {
+      "articleTitle": "Spanish Empire",
+      "relevantPathsAI": [
         "A.1.j",
-        "A.2"
-      ]
+        "A.2.q"
+      ],
+      "rationaleAI": "The Spanish Empire's Bourbon reforms, the Peninsular War (A.1.j.i), loss of South American empire in the 1820s (A.2.q.i), and the Spanish-American War loss of 1898 (B.3.h.i) are all outlined in the section's coverage of Spain from 1789 to 1920."
     },
     {
-      "articleTitle": "German language",
-      "rationaleAI": "German was central to European cultural and political life.",
+      "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.c",
-        "A.1.i"
-      ]
+        "B.2.b",
+        "B.2.d",
+        "B.3.k"
+      ],
+      "rationaleAI": "Already noted \u2014 Ottoman Empire is directly relevant to Balkan history and WWI."
+    },
+    {
+      "articleTitle": "Scramble for Africa",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Already noted \u2014 directly maps to B.2.c."
+    },
+    {
+      "articleTitle": "Michael Faraday",
+      "relevantPathsAI": [
+        "B.1.d",
+        "A.2.d"
+      ],
+      "rationaleAI": "Faraday's electromagnetic discoveries in the 1830s\u20131850s are relevant to A.2.d (new facilities for scientific study, effects of technological developments) and B.1.d.iii (revolution in transportation and communications, industrialization on the eve of WWI), as his work underpins electrical technology."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "The French expedition to Egypt and Syria (1798\u20131802) is explicitly cited in outline path A.1.c.ii, making Egypt directly relevant to the Napoleonic campaigns covered in the section."
+    },
+    {
+      "articleTitle": "United States",
+      "relevantPathsAI": [
+        "B.2.d"
+      ],
+      "rationaleAI": "US entry into WWI in 1917 is addressed in outline path B.2.d.iii (German submarine warfare and US entry), and the Paris Peace Conference's Wilson-influenced outcome is covered in B.2.d.vi, making the US relevant within the WWI subsection."
+    },
+    {
+      "articleTitle": "Turkey",
+      "relevantPathsAI": [
+        "B.3.k"
+      ],
+      "rationaleAI": "Turkey as the successor to the Ottoman Empire and the context of Balkan state formation connects to B.3.k (Balkan states 1850\u20131920) which covers the Balkan Wars and Ottoman separation from Bulgaria; the Young Turk Revolution (1908) also falls within B.3.k's timeframe."
+    },
+    {
+      "articleTitle": "Poland",
+      "relevantPathsAI": [
+        "A.2.o",
+        "A.1.g",
+        "B.3.e"
+      ],
+      "rationaleAI": "Poland is referenced across the section: Stein reforms and Prussian leadership connecting to Polish territories (A.1.g.ii), Russian conflict with Poland (A.2.o.ii), and the Polish rebellion of 1863 under Alexander II (B.3.e.i), making Poland a recurring subject in 963's coverage."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

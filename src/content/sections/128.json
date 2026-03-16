@@ -196,13 +196,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Sources of infrared, visible, and ultraviolet waves",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Blackbody radiation",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Blackbody radiation",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

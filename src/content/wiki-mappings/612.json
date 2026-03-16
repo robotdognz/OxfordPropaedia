@@ -1,105 +1,280 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "612",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "The arts article encompasses the experience, criticism, and broader context of art works discussed here.",
+      "articleTitle": "Museum",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Literature",
-      "rationaleAI": "Literary criticism evaluates the experience and interpretation of literary works within their cultural and aesthetic contexts.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.b",
-        "A.4.a",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Visual arts",
-      "rationaleAI": "Art criticism and aesthetic experience of visual works are central to understanding and evaluating painting, sculpture, and design.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.1"
-      ]
+        "G.1",
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "Museums are the paradigmatic institution addressed in G.1 (role of institutions including museums and galleries in preserving works of art), and their acquisition and display practices directly bear on E.1 (factors affecting economic value) and E.3 (the art market)."
     },
     {
       "articleTitle": "Art",
-      "rationaleAI": "Art encompasses the experience and criticism of works discussed in this section.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B"
-      ]
+        "B",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "The general article on Art covers the aesthetic experience and criticism at A and B, addresses art's social and economic context at D and E, and provides the overarching framework within which 612's specific concerns about criticism, scholarship, and art's nonaesthetic context are located."
     },
     {
-      "articleTitle": "Museum",
-      "rationaleAI": "Museums provide the context for experiencing and criticizing works of art.",
+      "articleTitle": "The arts",
       "relevantPathsAI": [
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "E.4",
-        "G.1"
-      ]
+        "A",
+        "D",
+        "D.5"
+      ],
+      "rationaleAI": "Covers aesthetic theory and criticism across art forms at A, addresses the political/moral dimensions and social context of creative practice at D, and connects to arts in education at D.5."
     },
     {
-      "articleTitle": "Fiction",
-      "rationaleAI": "Fiction engages readers in the experience and criticism of literary art.",
+      "articleTitle": "Oral tradition",
       "relevantPathsAI": [
-        "B.2.b",
+        "G.5",
+        "G.6"
+      ],
+      "rationaleAI": "Directly addresses G.5 (role of oral tradition in preserving and disseminating works of art) and G.6 (imitative tradition), as oral traditions operate through memorized performance passed from specialist to specialist in an explicitly imitative chain."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "G.5",
+        "G.6"
+      ],
+      "rationaleAI": "Folklore is the primary field studying oral and imitative transmission of expressive culture at G.5 and G.6, covering the dynamics of how tradition-bearers preserve and transmit folk art forms across generations."
+    },
+    {
+      "articleTitle": "Musicology",
+      "relevantPathsAI": [
+        "B.2.d",
+        "C.1",
+        "C.2",
         "G.2"
-      ]
+      ],
+      "rationaleAI": "Musicology covers critical methods in music at B.2.d, scholarly resources and methods in the arts at C.1, its relation to linguistics, history, and archaeology at C.2, and the role of notation in music's preservation at G.2."
     },
     {
-      "articleTitle": "Aesthetics",
-      "rationaleAI": "Aesthetics provides the framework for experiencing and criticizing works of art.",
+      "articleTitle": "Religion",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
+        "D.3"
+      ],
+      "rationaleAI": "Religion directly addresses D.3 (the arts and religion) through its treatment of sacred texts, ritual practice, and aesthetic expression across 10,000+ religious traditions, including music, architecture, visual arts, and dance as integral to religious life."
+    },
+    {
+      "articleTitle": "Myth",
+      "relevantPathsAI": [
         "A.2.b",
-        "A.3",
+        "D.3"
+      ],
+      "rationaleAI": "Myth directly addresses A.2.b (symbol and myth in the arts) through structuralist and psychoanalytic scholarly interpretations, and contributes to D.3 (arts and religion) as myth encodes cosmological narratives that underpin religious and artistic traditions."
+    },
+    {
+      "articleTitle": "Mass media",
+      "relevantPathsAI": [
+        "G.3",
+        "G.4",
+        "D.1"
+      ],
+      "rationaleAI": "Mass media covers G.3 (role of industry and commerce in disseminating works of art), G.4 (role of mechanical and electronic media), and D.1 (social uses of art) through its analysis of how conglomerate media structures distribute cultural content at scale."
+    },
+    {
+      "articleTitle": "Television",
+      "relevantPathsAI": [
+        "G.4",
+        "D.4"
+      ],
+      "rationaleAI": "Television directly addresses G.4 (role of mechanical and electronic media in disseminating works of art) and D.4 (technology, science, and the arts), as a broadcast medium through which artistic works reach mass audiences."
+    },
+    {
+      "articleTitle": "Film",
+      "relevantPathsAI": [
         "A.4.b",
+        "B.2.d",
+        "D.4",
+        "G.4"
+      ],
+      "rationaleAI": "Film addresses special problems of appreciation and criticism in the theatrical arts at A.4.b, critical approaches at B.2.d, technology and the arts at D.4, and the role of the film industry as mechanical/electronic medium of dissemination at G.4."
+    },
+    {
+      "articleTitle": "Painting",
+      "relevantPathsAI": [
         "A.4.d",
         "B",
+        "B.1",
+        "B.2.d",
+        "C"
+      ],
+      "rationaleAI": "Painting directly addresses special problems of appreciation of visual arts at A.4.d, is a primary subject of critical evaluation with diverse aesthetic criteria at B.1, and has extensive scholarly resources and methods documented at C."
+    },
+    {
+      "articleTitle": "Literature",
+      "relevantPathsAI": [
+        "A.4.a",
+        "B.2.d",
+        "C",
+        "D.2",
+        "G.2"
+      ],
+      "rationaleAI": "Literature addresses A.4.a (special problems of appreciation in the sphere of literature), critical methods in literary criticism at B.2.d, scholarly resources at C, censorship at D.2, and the role of writing and notation (copyright, textual criticism) at G.2."
+    },
+    {
+      "articleTitle": "Music",
+      "relevantPathsAI": [
+        "A.4.c",
+        "B.2.d",
+        "E",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Music addresses A.4.c (special problems of appreciation and apprehension in music), critical approaches at B.2.d, economic dimensions of the music industry at E, musical notation at G.2, and recording technology as electronic dissemination at G.4."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "A.4.d",
+        "B.2.d",
+        "C",
+        "E.1"
+      ],
+      "rationaleAI": "Visual arts addresses A.4.d (special problems of appreciation in the visual arts sphere), critical methods at B.2.d, the scholarly hierarchy of genres at C, and factors affecting economic value including genre hierarchy at E.1."
+    },
+    {
+      "articleTitle": "Popular culture",
+      "relevantPathsAI": [
+        "A.1",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Popular culture addresses A.1 (individual, social, and cultural conditioning affecting apprehension of works of art through mass media), D.1 (social uses of art), and D.2 (social control—Frankfurt School critique of culture industry as ideological)."
+    },
+    {
+      "articleTitle": "Culture",
+      "relevantPathsAI": [
+        "A.1",
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "Culture as a concept directly underlies A.1 (social and cultural conditioning of apprehension) and D (interaction of arts with social, economic, and cultural institutions), as cultural norms shape both the production and reception of art."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "A.2",
+        "B.2.d"
+      ],
+      "rationaleAI": "Freud's psychoanalytic framework—unconscious, repression, sublimation, wish-fulfillment—generated a major critical approach to interpreting works of art at A.2 and constitutes one of the primary analytical, interpretive critical methods at B.2.d."
+    },
+    {
+      "articleTitle": "Leo Tolstoy",
+      "relevantPathsAI": [
+        "A.2.a",
         "B.1"
-      ]
+      ],
+      "rationaleAI": "Tolstoy's aesthetic theory (What Is Art?) argued that art's value lies in its moral and religious communication, directly addressing meaning in art at A.2.a and criteria related to social and moral significance at B.1."
+    },
+    {
+      "articleTitle": "Vincent van Gogh",
+      "relevantPathsAI": [
+        "A.3",
+        "E.1",
+        "F.2"
+      ],
+      "rationaleAI": "Van Gogh illustrates A.3 (appreciation complicated by the artist's psychological state), E.1 (factors affecting economic value of art—near-zero in life, record-breaking posthumously), and F.2 (conditions of work in the arts as vocation, including poverty and institutional marginalization)."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Education directly addresses D.5 (the arts in education and aesthetic education), as the article covers teaching methods, curriculum, and the transmission of values through formal learning institutions."
+    },
+    {
+      "articleTitle": "Animation",
+      "relevantPathsAI": [
+        "A.4.b",
+        "D.4",
+        "G.4"
+      ],
+      "rationaleAI": "Animation addresses A.4.b (appreciation in the theatrical/cinematic arts), D.4 (technology and the arts, as animation is fundamentally a technological art form), and G.4 (role of mechanical and electronic media in disseminating works of art)."
+    },
+    {
+      "articleTitle": "Performing arts",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.2.d",
+        "G.1"
+      ],
+      "rationaleAI": "Performing arts covers A.4.b (appreciation and apprehension in theatrical arts), critical approaches to live performance at B.2.d, and G.1 (preservation of works of art by performance, as live performance is itself the preservation mechanism)."
+    },
+    {
+      "articleTitle": "Charlie Chaplin",
+      "relevantPathsAI": [
+        "A.4.b",
+        "F.2"
+      ],
+      "rationaleAI": "Chaplin illustrates A.4.b (appreciation in the sphere of theatrical/film arts) through his pioneering blend of slapstick and social critique, and F.2 (art as vocation) through his total artistic control as writer, director, producer, and composer."
+    },
+    {
+      "articleTitle": "Property",
+      "relevantPathsAI": [
+        "E.1",
+        "E.4"
+      ],
+      "rationaleAI": "Property and intellectual property law directly address E.1 (factors affecting the economic value of a work of art through ownership rights) and E.4 (protection of artists' rights through copyright and related property frameworks)."
+    },
+    {
+      "articleTitle": "Pottery",
+      "relevantPathsAI": [
+        "G.6",
+        "E.1"
+      ],
+      "rationaleAI": "Pottery's transmission of technique across generations through apprenticeship and imitation directly addresses G.6 (role of imitative tradition in preserving works of art), and regional ceramic traditions bear on E.1 (factors including rarity and provenance affecting economic value)."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "D.3",
+        "G.6"
+      ],
+      "rationaleAI": "The Islamic Golden Age illustrates D.3 (the arts and religion) through the theological and patronage frameworks governing Islamic art, architecture, and music, and G.6 (imitative tradition) through the apprenticeship-based transmission of artistic craftsmanship across the Islamic world."
+    },
+    {
+      "articleTitle": "History of music",
+      "relevantPathsAI": [
+        "B.2.d",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "The history of music addresses critical methods and scholarly approaches to music at B.2.d, scholarly resources in the field at C.1, and its relation to anthropology, archaeology, and cultural history at C.2."
+    },
+    {
+      "articleTitle": "Realism (arts)",
+      "relevantPathsAI": [
+        "A.2",
+        "B.1",
+        "B.2.d"
+      ],
+      "rationaleAI": "Realism addresses the interpretation of meaning in art at A.2 (truthful non-idealized representation as artistic meaning), criteria of evaluation at B.1 (truthfulness as a critical criterion), and critical approaches at B.2.d through art historical scholarship on Courbet and his successors."
+    },
+    {
+      "articleTitle": "Akbar",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Akbar's syncretic religious policy and the Mughal artistic tradition it produced—merging Timurid, Perso-Islamic, and Indian aesthetics under court patronage—directly illustrates D.3 (the interaction of the arts with religion) in a non-Western historical context."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A.2",
+        "B.1",
+        "B.2.d"
+      ],
+      "rationaleAI": "Philosophy's aesthetics branch directly addresses A.2 (theories of the nature and effects of art) and B.1 (diverse criteria of evaluation including aesthetic criteria), while philosophy of criticism informs B.2.d (critical methods and approaches to the arts)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,166 +1,185 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "924",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The Crusades and medieval Islamic states represent important episodes in human history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.iii",
-        "A.1.d",
-        "A.1.f",
-        "A.2.b",
-        "A.3.a",
-        "A.3.c",
-        "B",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Post-classical history",
-      "rationaleAI": "The Crusading movement and medieval Islamic states exemplify the cross-cultural encounters defining post-classical history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Genghis Khan",
-      "rationaleAI": "Mongol invasions devastated Islamic Southwest Asia and fundamentally altered the region's political landscape.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Timur",
-      "rationaleAI": "Timur's campaigns devastated Islamic states across Southwest Asia and reshaped the political order of the late medieval Muslim world.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
-    },
-    {
       "articleTitle": "Crusades",
-      "rationaleAI": "The Crusades were military campaigns that reshaped relations between Western Christendom and the Islamic states of Southwest Asia.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
         "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
         "A.1.d"
-      ]
+      ],
+      "rationaleAI": "The Crusades are the central subject of section A, covering all major crusades from First through Seventh and Eighth, the establishment and loss of Crusader states, military orders, crusade financing, and the Albigensian and Iberian Crusades explicitly addressed throughout A.1.a\u2013A.1.d."
     },
     {
-      "articleTitle": "Mongol Empire",
-      "rationaleAI": "Mongol invasions devastated the Islamic states of Southwest Asia, ending the Abbasid Caliphate.",
+      "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
         "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "A.1",
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c"
+      ],
+      "rationaleAI": "The Byzantine Empire is the explicit subject of A.1.c (Byzantine Empire 1081\u20131204 under the Comnenian dynasty) and A.3 (restoration under the Palaeologus dynasty 1261), covering Alexius I Comnenus, the Fourth Crusade, and the fall of Constantinople (1453) in A.3.c."
     },
     {
       "articleTitle": "Ottoman Empire",
-      "rationaleAI": "The Ottoman conquest of Constantinople ended the Byzantine era and reshaped the Islamic states of the late medieval period.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "B.3.b",
+        "B.3",
+        "A.3.c"
+      ],
+      "rationaleAI": "The Ottoman Empire's origins, expansion in Anatolia, conquest of Serbia and Bulgaria, defeat by Timur in 1402, and conquest of Constantinople in 1453 are directly covered in B.3.b and B.3.i\u2013B.3.i.ii; the fall of Constantinople also appears in A.3.c."
     },
     {
-      "articleTitle": "Istanbul",
-      "rationaleAI": "Constantinople's fall to the Ottomans is a key event in this section.",
+      "articleTitle": "Mongol Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "B.2",
+        "B.3",
+        "B.3.a"
+      ],
+      "rationaleAI": "The Mongol invasions of eastern Europe and Southwest Asia in the 13th century (B.2) and the successor khanates \u2014 Il-Khans in Iraq/Iran and Golden Horde in eastern Europe (B.3.a, B.3.i, B.3.i.ii) \u2014 are the central subject of section B.2\u2013B.3."
     },
     {
-      "articleTitle": "Jerusalem",
-      "rationaleAI": "Jerusalem was the goal of the Crusading movement covered in this section.",
+      "articleTitle": "Genghis Khan",
       "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Genghis Khan founded the Mongol Empire and initiated the invasions of eastern Europe and Southwest Asia (B.2); his legacy directly produced the Il-Khan and Golden Horde successor states (B.3.i, B.3.i.ii) that restructured the Islamic world after the invasions."
+    },
+    {
+      "articleTitle": "Timur",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.b"
+      ],
+      "rationaleAI": "Timur is explicitly named across multiple outline paths: B.3.i (Timurids as Il-Khan successor states), B.3.i.ii (Timur's invasion of the Golden Horde in 1395 and its partition), and B.3.b.i (defeat of the Ottoman Empire by Timur at Ankara in 1402)."
+    },
+    {
+      "articleTitle": "Turkey",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.3.b",
+        "B.3"
+      ],
+      "rationaleAI": "Turkey (Anatolia) is the geographic setting for B.1.c (independent Sultanate of Rum carved from Byzantine territory), B.3.b (Turkish Anatolia and the rise of the Ottoman Empire to 1481), and B.3.i\u2013B.3.i.ii (Ottoman expansion and administrative institutions)."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "B.4.a",
+        "B.4.b",
+        "B.4"
+      ],
+      "rationaleAI": "Egypt is the geographic focus of B.4.a (decline of the Fatimids 1050\u20131171) and B.4.b\u2013B.4.i.ii (Ayyubid dynasty under Saladin 1171\u20131250, displacement by the Turkish Mamluks, and Bahri/Burji Mamluk administration and resistance to the Mongols)."
+    },
+    {
+      "articleTitle": "Iran",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Iran is the geographic center of the Great Seljuq Empire in Syria, Iraq, and Iran (B.1.a), the foundation of the Seljuq state and conquest of Iran (B.1.i), Seljuq patronage of the Iranian cultural revival (B.1.i.ii), and the Il-Khanate in Iraq and Iran (B.3.i)."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "B.4.c",
+        "B.4",
+        "B.4.d"
+      ],
+      "rationaleAI": "Muslim Spain is the subject of B.4.c (Almoravid and Almohad empires in northwest Africa and Spain, the Reconquista), B.4.i (Almoravid conquest of Spain 1090\u201391, defeat by Reconquista), B.4.i.ii (Almohad control of Spain, capital at Seville, disintegration after 1212), and B.4.d (Nasrid kingdom of Granada)."
+    },
+    {
+      "articleTitle": "Cairo",
+      "relevantPathsAI": [
+        "B.4.a",
+        "B.4.b",
+        "B.4"
+      ],
+      "rationaleAI": "Cairo was founded by the Fatimids in 969 CE (B.4.a) and served as the capital of the Ayyubid and Mamluk states (B.4.b, B.4.i.ii), making it the direct urban center for all paths covering Fatimid decline, Saladin's dynasty, and Mamluk military administration."
+    },
+    {
+      "articleTitle": "Russia",
+      "relevantPathsAI": [
         "A.1.e",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "B",
-        "B.1.i",
-        "B.1.i.ii"
-      ]
+        "A.2.a"
+      ],
+      "rationaleAI": "Russia is the explicit subject of A.1.e (lands of Rus 1054\u20131300, rise of Novgorod and Vladimir, the Mongol invasion of 1223 and Tatar rule) and A.2.a (rise of the Muscovite state under Golden Horde suzerainty and successful revolt in 1380, Ivan III's expansion)."
     },
     {
-      "articleTitle": "Islam",
-      "rationaleAI": "Islamic states were central to the Crusading era covered here.",
+      "articleTitle": "Algeria",
+      "relevantPathsAI": [
+        "B.4.c",
+        "B.4.d"
+      ],
+      "rationaleAI": "Algeria encompasses the territories of the Almoravid and Almohad empires in northwest Africa (B.4.c) and the Abd al-Wadid kingdom of Tlemcen (in western Algeria) and Hafsid Tunisia (B.4.d), which are explicitly named late medieval North African dynasties."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.d"
+      ],
+      "rationaleAI": "The Islamic Golden Age encompasses the Seljuq patronage of the Iranian cultural revival (B.1.i.ii) and the intellectual and artistic life of late medieval North Africa including Sufism and literary/artistic influences from Muslim Spain (B.4.d)."
+    },
+    {
+      "articleTitle": "Rumi",
+      "relevantPathsAI": [
+        "B.1.c"
+      ],
+      "rationaleAI": "Rumi (1207\u20131273) was active in Konya, the capital of the Seljuq Sultanate of Rum in Anatolia (B.1.c), making him a direct cultural product of the independent sultanate of Rum carved from Byzantine territory; his Mevlevi Order was founded there."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "B.4.d"
+      ],
+      "rationaleAI": "Ibn Khaldun (1332\u20131406) was a North African scholar active in the Hafsid and Marinid cultural sphere in Tunisia and the Maghrib, analyzing the rise and fall of dynasties including those covered in B.4.d (late medieval dynasties of North Africa, religious and intellectual life)."
+    },
+    {
+      "articleTitle": "Black Death",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "The Black Death (1346\u201353) originated in Central Asia and spread via Mongol trade networks through Southwest Asia and Europe, making it a direct consequence of the Mongol invasions (B.2) and their aftermath (B.3); it devastated the Middle East and disrupted the states covered throughout section B."
+    },
+    {
+      "articleTitle": "Holy Roman Empire",
+      "relevantPathsAI": [
+        "A.1.d"
+      ],
+      "rationaleAI": "The Holy Roman Empire is directly referenced in A.1.d.i through Emperor Frederick II's oriental policies during the Fifth and Sixth Crusades, including his negotiations for Jerusalem; this makes it a moderate but substantive connection to the crusading movement's politics."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The Mongol Il-Khanate in Iraq and Iran is noted for facilitating trade (B.3.i: trade, administration, and eventual conversion to Islam), and the Silk Road's revitalization under the Pax Mongolica was central to Il-Khan economic policy and connections between East and West."
+    },
+    {
+      "articleTitle": "Middle Ages",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.d"
-      ]
+        "B"
+      ],
+      "rationaleAI": "The Middle Ages article covers the Crusades, Byzantine survival and fall, Islamic expansion and consolidation, and the Mongol Empire's role in Eurasian connectivity \u2014 all central to section 924's two main divisions (A and B)."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Post-classical history (c.500\u20131450) frames the Crusades, Mongol invasions, and Islamic state consolidation as defining world-historical events of the period, providing broad contextual coverage for both division A (crusading movement) and division B (Islamic states and Mongol invasions)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

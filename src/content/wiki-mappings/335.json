@@ -1,77 +1,223 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "335",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Nutrition and nutrient processing are fundamental requirements for sustaining life.",
-      "relevantPathsAI": [
-        "C.2",
-        "C.2.b",
-        "C.2.c",
-        "C.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Food",
-      "rationaleAI": "Food provides the essential nutrients that organisms procure and process to sustain biological function.",
-      "relevantPathsAI": [
-        "A.3",
-        "B",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Plant",
-      "rationaleAI": "Plants are the foundation of nutrition in most ecosystems, producing the organic matter that sustains food webs.",
-      "relevantPathsAI": [
-        "A.3",
-        "B",
-        "C.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Fruit",
-      "rationaleAI": "Fruits are nutrient sources central to the nutrition of organisms.",
-      "relevantPathsAI": [
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Nutrition",
-      "rationaleAI": "Nutrition is the direct subject of this section on nutrient procurement.",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "C.2"
-      ]
-    },
-    {
-      "articleTitle": "Liver",
-      "rationaleAI": "The liver processes nutrients as part of the nutritional system of organisms.",
-      "relevantPathsAI": [
-        "A.3",
-        "B",
-        "C",
-        "C.2",
-        "C.2.b",
-        "C.2.c",
-        "C.2.d"
-      ]
-    },
-    {
       "articleTitle": "Digestion",
-      "rationaleAI": "Digestion is the process of nutrient procurement and processing treated here.",
       "relevantPathsAI": [
-        "A.3",
-        "A.4",
         "C",
         "C.2",
         "C.2.a",
         "C.2.b",
-        "C.2.c",
         "C.2.d"
-      ]
+      ],
+      "rationaleAI": "Digestion is the central topic of outline path C, covering both mechanical and chemical breakdown in invertebrate (C.2.a) and vertebrate (C.2.b) digestive systems, including all organs from mouth through large intestine. Digestive hormone coordination of secretion and motility directly addresses biodynamics (C.2.d)."
+    },
+    {
+      "articleTitle": "Nutrition",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Nutrition directly covers the basic features of outline path A: nutritional patterns including autotrophism and heterotrophism (A.1), essential nutrients and nutritional needs of organisms (A.3), and syntrophic nutritional interrelationships (A.4). This is the primary disciplinary article for the entire section."
+    },
+    {
+      "articleTitle": "Food",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Food covers the biological dimensions of nutrient sourcing (autotrophism via photosynthesis and heterotrophism), species-specific feeding behaviors (A.1), and the nutritional composition of foods including carbohydrates, fats, proteins, vitamins, and minerals (A.3). The broad coverage of food systems from primary production to digestion maps across the section."
+    },
+    {
+      "articleTitle": "Photosynthesis",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Photosynthesis is explicitly listed as outline path B (production of food in green plants) and also covers the contrast between autotrophic phototrophism and chemotrophism (A.1). The Calvin cycle, Z scheme, and C3/C4/CAM pathway distinctions are the primary content of path B."
+    },
+    {
+      "articleTitle": "Plant",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Plants are the primary autotrophs and the taxon addressed by outline path B (photosynthesis/food production in green plants). The article covers plant photosynthesis, primary production, and ecological roles as autotrophs (A.1 autotrophism), directly supporting both paths."
+    },
+    {
+      "articleTitle": "Liver",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "The liver is explicitly named in outline path C.2.b (vertebrate digestive systems: small intestine, pancreas, and liver), and its ~500 functions in metabolic processing, bile secretion for fat digestion, and glycogen regulation are core content of vertebrate digestive physiology and biodynamics (C.2.d)."
+    },
+    {
+      "articleTitle": "Algae",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Algae are major aquatic autotrophs performing oxygenic photosynthesis, directly relevant to outline path A.1 (autotrophism and phototrophism) and B (photosynthesis as food production, including cyanobacterial/algal forms). Algae are the principal primary producers in aquatic ecosystems and include the evolutionary ancestors of land-plant photosynthesis."
+    },
+    {
+      "articleTitle": "Fungus",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Fungi are osmotrophic heterotrophs with a distinctive nutritional mode (extracellular digestion via mycelium) that contrasts with animal ingestion, directly illustrating the variety of nutritional patterns in A.1. Mycorrhizal associations with plants also exemplify syntrophism (A.4)."
+    },
+    {
+      "articleTitle": "Bacteria",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Bacteria exhibit the full range of nutritional patterns outlined in A.1—autotrophism (chemosynthesis at hydrothermal vents), phototrophy, and heterotrophy—and are central to syntrophism (A.4) through nitrogen fixation, decomposition, and gut microbiome metabolic exchange with host organisms."
+    },
+    {
+      "articleTitle": "Cattle",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "Cattle are ruminants with a highly specialized four-chambered digestive system (rumen, reticulum, omasum, abomasum) that represents one of the most elaborated vertebrate digestive system variations covered in outline path C.2.b. The ruminant digestive process is a paradigmatic example of vertebrate alimentary system diversity."
+    },
+    {
+      "articleTitle": "Fish",
+      "relevantPathsAI": [
+        "C.2.b",
+        "C.2.c"
+      ],
+      "rationaleAI": "Fish represent a major vertebrate lineage with diverse digestive systems (C.2.b), and their evolutionary history (Devonian 'Age of Fishes') is relevant to the embryology and evolutionary development of the vertebrate digestive system (C.2.c). Fish digestive anatomy spans jawless to bony forms."
+    },
+    {
+      "articleTitle": "Insect",
+      "relevantPathsAI": [
+        "C.2.a"
+      ],
+      "rationaleAI": "Insects have tubular digestive systems exemplifying invertebrate alimentary organization (C.2.a: tubular systems), and their diverse feeding strategies (herbivory, predation, parasitism, detritivory, filter feeding) illustrate the variety of invertebrate digestion and ingestion methods (A.2)."
+    },
+    {
+      "articleTitle": "Arthropod",
+      "relevantPathsAI": [
+        "C.2.a"
+      ],
+      "rationaleAI": "Arthropods encompass the largest animal phylum and show diverse invertebrate digestive structures across hexapods, crustaceans, chelicerates, and myriapods, covering the tubular and saccular invertebrate digestive systems described in outline path C.2.a."
+    },
+    {
+      "articleTitle": "Mollusca",
+      "relevantPathsAI": [
+        "C.2.a"
+      ],
+      "rationaleAI": "Molluscs have a distinctive invertebrate digestive system including the radula (feeding organ) in most classes, a complete alimentary canal, and digestive glands, directly covering invertebrate digestive systems (C.2.a). Their diversity from filter-feeding bivalves to predatory cephalopods illustrates the range of ingestion methods (A.2)."
+    },
+    {
+      "articleTitle": "Bird",
+      "relevantPathsAI": [
+        "C.2.b",
+        "C.2.c"
+      ],
+      "rationaleAI": "Birds have highly specialized digestive modifications including a crop (food storage), proventriculus (glandular stomach), and gizzard (muscular grinding), directly exemplifying vertebrate digestive system diversity (C.2.b) and evolutionary specialization (C.2.c) in relation to dietary and ecological niches."
+    },
+    {
+      "articleTitle": "Meat",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Meat as a food source covers the nutritional composition of animal tissue (water, protein, fat) and the role of animal-source foods in meeting essential nutrient requirements (A.3). The article addresses protein quality and the nutritional context of animal product consumption."
+    },
+    {
+      "articleTitle": "Vegetable",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Vegetables are a primary source of vitamins, minerals, and dietary fiber as essential nutrients (A.3), covering the nutritional needs of organisms and the role of plant parts (roots, stems, leaves) as nutrient sources. Their cultivation history also touches on the procurement dimension of the section."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Fruits provide essential vitamins, minerals, and carbohydrates (A.3: essential nutrients) and represent a key plant-derived food category. The mutualistic dispersal relationship between edible fruits and animals is also relevant to nutritional interrelationships (A.4: syntrophism)."
+    },
+    {
+      "articleTitle": "Maize",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Maize as the world's highest-volume grain crop is a paradigmatic example of essential carbohydrate and caloric provision (A.3), and its protein quality limitations (low essential amino acids, bound niacin requiring alkali treatment) directly illustrate the concept of essential nutrient availability in food organisms."
+    },
+    {
+      "articleTitle": "Bean",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Beans are high-protein legumes and a primary plant-source of essential amino acids (A.3), while their nitrogen-fixing symbiosis with rhizobia bacteria exemplifies syntrophism (A.4: nutritional interrelationships where metabolic products of one organism supply nutrients for another)."
+    },
+    {
+      "articleTitle": "Milk",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Milk is a nutrient-rich food containing essential proteins (casein), fats, calcium, and lactose, directly relevant to essential nutrient provision (A.3). The variation in composition across mammalian species also illustrates the diversity of animal-source nutrient procurement."
+    },
+    {
+      "articleTitle": "Cooking",
+      "relevantPathsAI": [
+        "A.2",
+        "C"
+      ],
+      "rationaleAI": "Cooking is a primary method of food processing that improves digestibility and nutrient availability, directly relevant to methods of ingestion/food preparation (A.2) and the biodynamics of digestion (C). The article addresses cooking as uniquely human and its role in breaking down macromolecules prior to digestive processing."
+    },
+    {
+      "articleTitle": "Bread",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Bread as a cereal-based staple food is a primary source of carbohydrate energy and represents one of humanity's oldest processed essential nutrient sources (A.3). The article also touches on fermentation as a food-processing method relevant to A.2 (methods of ingestion/penetration)."
+    },
+    {
+      "articleTitle": "Salt",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Salt (NaCl) provides essential electrolyte minerals—sodium and chloride—that organisms cannot synthesize and must obtain from food (A.3: essential nutrients). Its role in food preservation and the WHO dietary recommendation directly connect to nutritional requirements and health."
+    },
+    {
+      "articleTitle": "Hunting",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Hunting is a primary method of nutrient procurement for heterotrophic organisms (A.2: methods of ingestion or penetration), representing predatory capture as a feeding strategy. Its origins with Homo erectus and persistence alongside agriculture frame the evolutionary basis of heterotrophic nutrient acquisition."
+    },
+    {
+      "articleTitle": "Human body",
+      "relevantPathsAI": [
+        "A.3",
+        "C"
+      ],
+      "rationaleAI": "Human body covers the complete digestive system as one of its principal organ systems, addressing nutritional needs (A.3) and the human alimentary system in the context of C.2.b. It provides an integrative view of how the human organism processes and utilizes nutrients."
+    },
+    {
+      "articleTitle": "Hormone",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "Digestive hormones (gastrin, secretin, cholecystokinin) coordinate the secretion of digestive enzymes and control intestinal motility, directly addressing outline path C.2.d (biodynamics of the vertebrate digestive system: control of secretions and intestinal movements)."
+    },
+    {
+      "articleTitle": "Biochemistry",
+      "relevantPathsAI": [
+        "A.3",
+        "C"
+      ],
+      "rationaleAI": "Biochemistry characterizes the macromolecule classes (proteins, carbohydrates, lipids, nucleic acids) that constitute essential nutrients (A.3) and are substrates of digestive enzymology (C). Its coverage of nutrition applications (deficiency and health) directly supports the essential nutrients content of path A.3."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

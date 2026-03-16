@@ -130,13 +130,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Unmanned space probes",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The use of sounding rockets to explore the upper atmosphere of Earth",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The use of sounding rockets to explore the upper atmosphere of Earth",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -192,13 +192,13 @@
               "level": "d",
               "levelType": "lowercase",
               "text": "Mechanics and techniques of space flight",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Types of trajectories: suborbital, Earth orbital, Earth escape, and interplanetary",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Types of trajectories: suborbital, Earth orbital, Earth escape, and interplanetary",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

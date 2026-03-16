@@ -1,41 +1,119 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "942",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The Nilotic Sudan and Ethiopian history are important threads in human history.",
+      "articleTitle": "History of Africa",
       "relevantPathsAI": [
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Africa",
-      "rationaleAI": "The Nilotic Sudan and Ethiopia have distinct historical trajectories documented in this section on African history.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.4",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
+        "A",
+        "B"
+      ],
+      "rationaleAI": "African history covers the Nilotic Sudan's medieval Christian kingdoms, the Bantu expansion, East African coast trade, and Ethiopian civilization including Aksum, directly addressing the historiographic overview underpinning paths A and B of section 942."
     },
     {
       "articleTitle": "Ethiopia",
-      "rationaleAI": "Ethiopia's history is directly covered in this section on the Nilotic Sudan and Ethiopia.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.4",
         "B",
         "B.1",
         "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Ethiopia is the primary country-level article for section 942's B paths: it explicitly covers the Kingdom of Aksum (Christianity adopted 330 AD, decline mapped to B.1), the Zagwe and Solomonic dynasties (B.2), and resistance to and encounters with European and Ottoman powers (B.3), including the Italian occupation context."
+    },
+    {
+      "articleTitle": "Ottoman Empire",
+      "relevantPathsAI": [
+        "A.2",
+        "A.4",
+        "B.3"
+      ],
+      "rationaleAI": "The Ottoman Empire's expansion into northeastern Africa is directly relevant: Ottoman suzerainty over Egypt (A.4's context of Egyptian occupation from 1820), Mamluk and Ottoman relations with Nubian Sudan (A.2), and Turkish garrisons established in Ethiopia in the 16th century (B.3)."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The Age of Discovery encompasses Portuguese maritime exploration and contacts with Ethiopia—specifically the 1520s Portuguese missions that opened B.3's period of Portuguese contact (1520–c. 1632), providing the broader European expansionist framework for this path."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Egypt is directly relevant to A.2 (Mamluk attacks on Nubia in the 13th and 14th centuries, Arab nomadic invasion linked to Egyptian expansion) and A.4 (the Egyptian occupation of Nilotic Sudan from 1820 under Muhammad Ali and his successors, including Ismail Pasha and British influence)."
+    },
+    {
+      "articleTitle": "Byzantine Empire",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "The Byzantine Empire's Orthodox Christianity was directly connected to the medieval Christian kingdoms of Nobatia, Maqurrah, and 'Alwah (A.1) and to the Aksumite Christian tradition (B.1), as Byzantine religious influence shaped Nubian and Ethiopian Christianity during this period."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Post-classical history (c. 500–1500 CE) covers the spread of Islam across Northeast Africa and the persistence of Christian kingdoms in Nubia and Ethiopia, directly relevant to the historical framework of both A and B paths in section 942."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "The Islamic Golden Age's spread of Muslim scholarship and institutional power connects to A.2's account of Muslim domination spreading into the Nilotic Sudan from c. 639 and the intellectual context for B.3's Muslim invasion of Ethiopia under Ahmad Gran (1531–43)."
+    },
+    {
+      "articleTitle": "Crusades",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Crusades' account of Mamluk political consolidation is directly relevant to A.2's Mamluk attacks on Nubian Sudan in the 13th and 14th centuries, as the Mamluks who defeated Crusaders also directed military pressure southward into Christian Nubia."
+    },
+    {
+      "articleTitle": "Ancient history",
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Ancient history's coverage of Aksum (Nok culture and African civilizations section) provides the pre-c. 550 context for understanding the decline of Aksum addressed in B.1, and contextualizes the historical sources relevant to path A's Nilotic Sudan overview."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A",
+        "A.2"
+      ],
+      "rationaleAI": "Ibn Khaldun's theories of nomadic-sedentary dynastic cycles and his historical documentation of northeastern African societies directly illuminate path A's account of nomadic Arab invasions and intermarriage with Nubians (A.2) and the broader historiographic concerns of section 942's overview."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "A.4 specifically names the growth of British influence under Ismail Pasha during the Egyptian occupation (1820–1885); the British Empire article covers British expansion into northeastern Africa and the Nile valley, directly relevant to this path."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The early modern period (c. 1500–1800) encompasses the Portuguese contacts with Ethiopia (1520–c. 1632), the Muslim invasion under Ahmad Gran, and the establishment of Turkish garrisons—all the events described in B.3—within its global coverage of the 16th-century world."
+    },
+    {
+      "articleTitle": "Mongol Empire",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Mongol Empire's destruction of the Abbasid Caliphate in 1258 and its disruption of the Islamic world contributed to the political and demographic pressures that intensified nomadic Arab migration into the Nilotic Sudan, relevant to A.2's account of Arab invasion and intermarriage with Nubians in the 15th century."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

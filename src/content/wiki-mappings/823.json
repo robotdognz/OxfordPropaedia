@@ -1,177 +1,186 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "823",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Hinduism and other Indian religions arose as major traditions within the historical development of South Asian civilizations.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
-        "A.8",
-        "C.2.a",
-        "C.2.d",
-        "C.3.a",
-        "D.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Hinduism and other Indian religions are major social and cultural forces shaping societies.",
-      "relevantPathsAI": [
-        "C.1.c",
-        "C.1.i.iii",
-        "C.2.a",
-        "C.2.d",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "Hinduism originated in and remains centered on the Indian subcontinent, profoundly shaping Asian civilizations and cultural identity.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3.b",
-        "A.3.c",
-        "B.1.c",
-        "B.3",
-        "C.2.a",
-        "C.2.d",
-        "C.3.a",
-        "C.4.a",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Hinduism, one of the world's oldest and most diverse religions, exemplifies key themes in the comparative study of religion.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.7",
-        "A.10"
-      ]
-    },
-    {
-      "articleTitle": "Adi Shankara",
-      "rationaleAI": "Adi Shankara consolidated the doctrine of Advaita Vedanta, one of the most influential schools of Hindu philosophy.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7",
-        "A.8"
-      ]
-    },
-    {
-      "articleTitle": "Ganges",
-      "rationaleAI": "The Ganges is sacred in Hinduism and other Indian religions.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.8",
-        "B.1",
-        "B.1.c",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Hinduism",
-      "rationaleAI": "Hinduism is the direct subject of this section on Indian religions.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.7",
-        "A.8"
-      ]
-    },
-    {
       "articleTitle": "Vedas",
-      "rationaleAI": "The Vedas are the foundational sacred texts of Hinduism.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
         "A.3",
         "A.3.b",
         "A.3.c",
-        "A.4",
-        "A.5",
-        "A.7",
-        "B.1",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Bhagavad Gita",
-      "rationaleAI": "The Bhagavad Gita is a central text of Hinduism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.7",
-        "A.8"
-      ]
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "The Vedas are the primary texts of the Vedic period (A.3) \u2014 covering the Rigveda (A.3.a) and later Vedas and Brahmanas (A.3.b) including the Upanishads (A.3.c) \u2014 and constitute the revealed scriptures of B.1.a and the foundational post-Vedic Sanskrit literature of B.1.b."
     },
     {
       "articleTitle": "Jainism",
-      "rationaleAI": "Jainism is an Indian religion covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "B.1.a",
-        "B.3"
-      ]
+        "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Jainism is the direct subject of D.1, covering its history through the Tirthankaras and Mahavira, Jaina mythology, and the beliefs, practices, and institutions of the tradition including ahimsa, anekantavada, and ascetic orders."
+    },
+    {
+      "articleTitle": "Adi Shankara",
+      "relevantPathsAI": [
+        "A.7",
+        "B.3",
+        "B.4",
+        "C.2.a"
+      ],
+      "rationaleAI": "Adi Shankara systematized Advaita Vedanta \u2014 one of the most influential schools of Hindu philosophy (B.3) and mysticism (B.4) \u2014 and his 8th-century reforms correspond to A.7 (rise of devotional Hinduism), while Advaita addresses C.2.a (Vedism and Brahmanism) and views about God/Brahman."
+    },
+    {
+      "articleTitle": "Buddhism",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Buddhism emerged in the heterodox period (A.4) as one of the primary challenges to Brahmanism by reformers and ascetic groups, making it essential context for understanding Hinduism's development during the 7th\u20132nd century BCE."
     },
     {
       "articleTitle": "Sikhism",
-      "rationaleAI": "Sikhism is an Indian religion covered in this section.",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b",
+        "D.2.c"
+      ],
+      "rationaleAI": "Sikhism is the direct subject of D.2, covering its founding by Guru Nanak, the ten Gurus, the Guru Granth Sahib, Khalsa formation, and Sikh beliefs, practices, and institutions."
+    },
+    {
+      "articleTitle": "Bhagavad Gita",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.3",
+        "C.1.b",
+        "C.1.c",
+        "C.2.b"
+      ],
+      "rationaleAI": "The Bhagavad Gita is the most influential post-Vedic Sanskrit text (B.1.b), synthesizing Hindu mythology (B.3), the paths of dharma, karma, and bhakti (C.1.b, C.1.c), and providing a core scriptural basis for Vaishnavism (C.2.b)."
+    },
+    {
+      "articleTitle": "Indus Valley Civilisation",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Indus Valley Civilisation is explicitly named at A.2 (prehistoric and protohistoric periods, through the 2nd millennium BCE) as one of the two primary subjects \u2014 alongside the religions of indigenous prehistoric peoples \u2014 making this a direct and priority fit."
+    },
+    {
+      "articleTitle": "Gupta Empire",
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "The Gupta Empire (mid-3rd to mid-6th century CE) corresponds to both the early Hindu period when major sects rose (A.5) and the Puranic period of Hindu consolidation (A.6), and is notable for Mahabharata/Ramayana canonization and Sanskrit literary patronage."
+    },
+    {
+      "articleTitle": "Mahatma Gandhi",
+      "relevantPathsAI": [
+        "A.9",
+        "C.2.f"
+      ],
+      "rationaleAI": "Gandhi exemplifies the modern period of Hinduism (A.9) and specifically the ethical and nationalist movements in modern Hinduism (C.2.f) through his application of ahimsa and Hindu ethics to anti-colonial politics."
+    },
+    {
+      "articleTitle": "Akbar",
+      "relevantPathsAI": [
+        "A.8",
+        "D.2.a"
+      ],
+      "rationaleAI": "Akbar's reign spans the age of bhakti (A.8) and his Din-i Ilahi syncretic movement represents a key instance of Hindu-Islamic interaction; his abolition of the jizya and Hindu-Muslim conciliation provide context for Sikhism's growth (D.2.a.vi)."
+    },
+    {
+      "articleTitle": "Mughal Empire",
+      "relevantPathsAI": [
+        "A.8",
+        "A.9",
+        "D.2"
+      ],
+      "rationaleAI": "The Mughal Empire spans the age of bhakti (A.8) through the modern period (A.9), providing the political and cultural context for Hinduism's development including bhakti movements and Hindu-Islamic interaction, and Sikhism's establishment and militarism under Mughal rule (D.2)."
+    },
+    {
+      "articleTitle": "The Buddha",
+      "relevantPathsAI": [
+        "A.4",
+        "D.1.a"
+      ],
+      "rationaleAI": "The Buddha's life and heterodox teachings were a primary challenge to Brahmanism in the heterodox period (A.4), and he was a contemporary of Mahavira (D.1.a.ii), making his article essential context for both Hinduism's response and Jainism's background."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "The Vedas were preserved through elaborate oral mnemonic transmission for millennia before writing, making oral tradition directly relevant to B.1.a (primary Vedic scriptures as eternal revelations) and B.1.c (sacred literature in Indian regional languages transmitted orally)."
+    },
+    {
+      "articleTitle": "Deity",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1.a",
+        "C.2.b",
+        "C.2.c"
+      ],
+      "rationaleAI": "Covers the typology of divine beings relevant to Hindu mythology (B.2), views about God or the sacred in Hindu belief (C.1.a), and the deity-centered traditions of Vaishnavism (C.2.b) and Shaivism (C.2.c)."
+    },
+    {
+      "articleTitle": "Achaemenid Empire",
+      "relevantPathsAI": [
+        "D.3.a"
+      ],
+      "rationaleAI": "The Achaemenid Empire provides the historical background for Zoroastrianism that preceded the Parsi community's migration to India; the Parsis (D.3) are Zoroastrians who fled Persian Islamic conquest and whose Iranian religious heritage begins with the Achaemenid era."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.a"
+      ],
+      "rationaleAI": "Covers Indian religious art including symbols, iconography, temple sculpture, and the theological function of icons in expressing Hinduism \u2014 directly relevant to C.4 (cultural expressions of Hindu values) and C.4.a (traditional religious functions of Indian art, yantras, mandalas, icons)."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Covers Indian philosophy including the six orthodox Hindu schools (Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta), directly relevant to B.3 (Hindu philosophy: the integral relation of philosophy and religion in Hinduism)."
+    },
+    {
+      "articleTitle": "Religion",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7"
-      ]
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Provides broad cross-cultural framing for understanding Hinduism within the global context of religious traditions, covering Indian religions including Hinduism, Buddhism, Jainism, and Sikhism (A, C, D) at an overview level."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "A.9",
+        "D.2.a"
+      ],
+      "rationaleAI": "The British Empire's rule of India shaped the modern period of Hinduism (A.9) including reform movements and nationalist Hinduism, and directly constitutes the context of D.2.a.v (Sikhism under British rule, 19th\u201320th century)."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "A.9",
+        "D.2.a"
+      ],
+      "rationaleAI": "Colonial rule reshaped modern Hinduism (A.9) and the Sikh community's identity and institutions under British rule (D.2.a.v) and in independent India and Pakistan (D.2.a.vi), with colonial modernity driving Hindu reform and nationalist movements."
+    },
+    {
+      "articleTitle": "Alexander the Great",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Alexander's campaigns into northwestern India and the subsequent Hellenistic cultural exchange contributed to the context of the early Hindu period (A.5), including the rise of Greco-Buddhist artistic conventions that influenced Indian religious iconography."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

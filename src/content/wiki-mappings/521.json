@@ -1,113 +1,292 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "521",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Social structure and change are fundamental aspects of how societies are organized.",
+      "articleTitle": "Culture",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.3"
-      ]
+        "D.2",
+        "D.7"
+      ],
+      "rationaleAI": "Directly addresses theories of social structure and how culture functions as shared norms and behaviors within groups (A). Covers cultural change through contact with other cultures and internal intellectual forces, mapping to D.2 and D.7."
     },
     {
-      "articleTitle": "Ethnicity",
-      "rationaleAI": "Ethnic relations and ethnic conflict are major forces driving social structural change throughout history.",
+      "articleTitle": "Violence",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Addresses the regulation of violent behavior through criminal justice and public health prevention models (C.3a), and persuasion-based prevention approaches (C.3c)."
+    },
+    {
+      "articleTitle": "Community",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.3",
         "C.1",
-        "C.2",
-        "E.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Politics",
-      "rationaleAI": "Political dynamics are a primary driver of social structural change, shaping power relations and institutional transformation.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Power (social and political)",
-      "rationaleAI": "Power dynamics drive social structure and change.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.3",
-        "C",
-        "C.2",
-        "D.3",
-        "D.6",
-        "D.8",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Social class",
-      "rationaleAI": "Class structure is fundamental to social organization and change.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.3",
-        "D.1",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Social science",
-      "rationaleAI": "Social science provides the theoretical framework for studying social structure and change.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.3",
-        "D.1",
-        "D.2"
-      ]
+        "D.10"
+      ],
+      "rationaleAI": "Community as a social unit directly engages structural theories (A) and the socialization functions of community (C.1). Community development and collective action connect to collective behavior in social change (D.10)."
     },
     {
       "articleTitle": "Sociology",
-      "rationaleAI": "Sociology's primary focus is social structure and change.",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1",
-        "C.3",
-        "C.3.a",
-        "D"
-      ]
+        "D.7",
+        "D.8"
+      ],
+      "rationaleAI": "Sociology as a discipline is the primary scholarly framework for theories of social structure (A), and its theoretical traditions\u2014functionalism, conflict theory\u2014address intellectual and economic factors in social stability (D.7, D.8)."
     },
     {
       "articleTitle": "Ideology",
-      "rationaleAI": "Ideologies drive social structure and change.",
+      "relevantPathsAI": [
+        "D.1",
+        "E"
+      ],
+      "rationaleAI": "Ideology is the central concept for D.1, addressing how structured belief systems legitimize or challenge social arrangements and drive social change. Its role in mass movements and false consciousness also maps to revolutionary movements (E.2d)."
+    },
+    {
+      "articleTitle": "Anarchism",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "D.1"
+      ],
+      "rationaleAI": "Anarchism is a prototypical revolutionary social movement advocating abolition of the state (E.2d, E.1). Its ideological critique of hierarchy and statism directly addresses the role of ideology in social change (D.1)."
+    },
+    {
+      "articleTitle": "Society",
       "relevantPathsAI": [
         "A",
-        "B",
+        "D.8",
+        "D.9"
+      ],
+      "rationaleAI": "Society directly covers diverse typologies and theories of social structure and organization (A), and addresses economic and technological factors shaping social forms from agrarian to information societies (D.8, D.9)."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "C.2",
+        "C"
+      ],
+      "rationaleAI": "Freud's theories of alienation, repression, and his work Civilization and Its Discontents directly engage C.2 (alienation). Psychoanalysis as a therapeutic framework is foundational to C.3b (psychological therapy for behavioral regulation)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "D.7",
+        "E"
+      ],
+      "rationaleAI": "The Enlightenment is a paradigm case of intellectual factors driving social change (D.7), generating reform movements in law, education, and religion. Its humanitarian reformist legacy directly maps to E.2b."
+    },
+    {
+      "articleTitle": "Urbanization",
+      "relevantPathsAI": [
         "B.1",
+        "D.4",
+        "D.9"
+      ],
+      "rationaleAI": "Urbanization is a primary social effect of modernization (B.1) driven by demographic shifts (D.4) and technological change (D.9); the article covers its cascading social, environmental, and health consequences."
+    },
+    {
+      "articleTitle": "Conservatism",
+      "relevantPathsAI": [
+        "D.1",
+        "E"
+      ],
+      "rationaleAI": "Conservatism as a political philosophy emphasizing tradition against disruptive change directly engages the role of ideology in social change (D.1). As an organized interest and value-based movement it maps to E.2c."
+    },
+    {
+      "articleTitle": "Human behavior",
+      "relevantPathsAI": [
+        "C.1",
+        "C"
+      ],
+      "rationaleAI": "Covers socialization processes and norm transmission (C.1), and addresses antisocial and moral behavior including regulatory responses through criminal justice (C.3a) and persuasion (C.3c)."
+    },
+    {
+      "articleTitle": "Information Age",
+      "relevantPathsAI": [
+        "B.3",
+        "D.9"
+      ],
+      "rationaleAI": "The Information Age covers automation, job displacement, and the social effects of information technology (B.3 \u2014 industrial specialization and automation \u2014 as well as D.9, technological factors in social change)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "C.2",
+        "D.1",
+        "D.8",
+        "E"
+      ],
+      "rationaleAI": "Marx's theory of alienated labour is foundational to C.2; his analysis of ideology and false consciousness to D.1; the relationship of economic factors to social stability to D.8; and his program for revolutionary overthrow to E.2d."
+    },
+    {
+      "articleTitle": "French Revolution",
+      "relevantPathsAI": [
+        "D.1",
+        "D.7",
+        "E"
+      ],
+      "rationaleAI": "The French Revolution is the paradigmatic case of ideology (D.1) and intellectual forces (D.7) driving revolutionary social change (E.2d) and generating humanitarian reform movements (E.2b) through abolition of feudalism and the Declaration of Rights."
+    },
+    {
+      "articleTitle": "Reformation",
+      "relevantPathsAI": [
+        "D.6",
+        "E",
+        "D.7"
+      ],
+      "rationaleAI": "The Reformation is the defining historical example of religion as a factor for and against social change (D.6) and of a religiously-centered social movement (E.2a); intellectual factors (humanism, printing) also feature prominently (D.7)."
+    },
+    {
+      "articleTitle": "Industrial Revolution",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "D.9"
+      ],
+      "rationaleAI": "The Industrial Revolution is the foundational event for B.1 (social effects of industrialization/modernization) and B.3 (industrial specialization and automation), and represents technological factors driving social change (D.9)."
+    },
+    {
+      "articleTitle": "Communism",
+      "relevantPathsAI": [
+        "D.1",
+        "E"
+      ],
+      "rationaleAI": "Communism as ideology directly addresses the role of structured belief systems in social transformation (D.1) and represents a revolutionary movement organized to abolish class society (E.2d)."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "D.1",
+        "E"
+      ],
+      "rationaleAI": "Socialism covers ideological frameworks for social change (D.1), with reformist social democratic strands mapping to humanitarian/reform movements (E.2b) and revolutionary variants to E.2d."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
         "B.2",
         "B.3",
-        "C",
+        "C.2"
+      ],
+      "rationaleAI": "Work addresses the division of labor and organizational specialization (B.2), automation and debates over its social effects (B.3), and Marx's concept of alienated labor (C.2)."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "D.2",
+        "D.1"
+      ],
+      "rationaleAI": "Imperialism is a primary mechanism of contact between cultures as a factor in social change (D.2), and its theoretical frameworks (Social Darwinism, Orientalism) engage the role of ideology in justifying and producing social transformation (D.1)."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "E",
+        "D.7"
+      ],
+      "rationaleAI": "Human rights movements are a paradigmatic example of humanitarian and reform movements (E.2b); the intellectual development of natural rights theory maps to intellectual factors in social change (D.7)."
+    },
+    {
+      "articleTitle": "Religion",
+      "relevantPathsAI": [
+        "D.6",
+        "E"
+      ],
+      "rationaleAI": "Religion directly covers D.6 (religion as a factor for and against social change) through its intersections with law, science, politics, and economics. Religious movements map to E.2a."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "D.2",
+        "C.1"
+      ],
+      "rationaleAI": "Oral tradition as cultural transmission across generations relates to socialization (C.1) and to contact with other cultures as a mechanism of cultural diffusion and social change (D.2)."
+    },
+    {
+      "articleTitle": "Silk Road",
+      "relevantPathsAI": [
+        "D.2",
+        "D.9"
+      ],
+      "rationaleAI": "The Silk Road is a paradigm case of cultural contact as a factor in social change (D.2), facilitating exchange of religions, goods, and technologies across Eurasia (D.9)."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
         "C.1",
-        "C.2",
-        "C.3",
-        "C.3.b"
-      ]
+        "D.7"
+      ],
+      "rationaleAI": "Education is the primary institutional vehicle for socialization and transmission of normative behavior (C.1), and the spread of education is itself an intellectual factor driving social change across history (D.7)."
+    },
+    {
+      "articleTitle": "Family",
+      "relevantPathsAI": [
+        "C.1",
+        "A"
+      ],
+      "rationaleAI": "The family is the primary socialization institution through which normative patterns are transmitted (C.1), and is itself a core element of social structure across diverse typological frameworks (A)."
+    },
+    {
+      "articleTitle": "Civilization",
+      "relevantPathsAI": [
+        "A",
+        "D.9",
+        "D.8"
+      ],
+      "rationaleAI": "Civilization as a concept engages directly with theories of social organization and structural complexity (A), and its emergence is linked to technological and economic factors (D.9, D.8)."
+    },
+    {
+      "articleTitle": "Machine",
+      "relevantPathsAI": [
+        "B.3",
+        "D.9"
+      ],
+      "rationaleAI": "Machines, including automation and computing systems, are the technological basis for industrial specialization and automation (B.3) and the material vehicle for technological factors in social change (D.9)."
+    },
+    {
+      "articleTitle": "Romanticism",
+      "relevantPathsAI": [
+        "D.5",
+        "D.7",
+        "D.1"
+      ],
+      "rationaleAI": "Romanticism is an artistic and intellectual movement that directly engaged art as a vehicle of social and political change (D.5), generated Romantic nationalism as an ideological force (D.1), and represents intellectual factors in social transformation (D.7)."
+    },
+    {
+      "articleTitle": "Genocide",
+      "relevantPathsAI": [
+        "D.1",
+        "E",
+        "C"
+      ],
+      "rationaleAI": "Genocide arises from ideological dehumanization (D.1) and represents the extreme of revolutionary or ethnic mass movements (E.2d); international criminal prosecution connects to C.3a (punishment and reform of criminal behavior at collective scale)."
+    },
+    {
+      "articleTitle": "Florence Nightingale",
+      "relevantPathsAI": [
+        "E",
+        "D.7"
+      ],
+      "rationaleAI": "Nightingale exemplifies a humanitarian and reform movement leader (E.2b), applying statistical and intellectual innovations (D.7) to reform hospital and public health institutions."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Adolescence covers identity formation, peer group influence, and psychosocial processes of social development directly relevant to the socialization process outlined in C.1."
+    },
+    {
+      "articleTitle": "Human sexuality",
+      "relevantPathsAI": [
+        "C.1",
+        "D.2"
+      ],
+      "rationaleAI": "Covers sociocultural dimensions of sexual norms and their transmission across cultures and generations (C.1, D.2), including the impact of colonialism and religious institutions on sexual norms."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -252,13 +252,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "The early electronic theory of bonding",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "The nature of ionic bonds: shell theory, ion pairs",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "The nature of ionic bonds: shell theory, ion pairs",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -493,13 +493,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Organic sulfur compounds",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Organic phosphorus compounds",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Organic phosphorus compounds",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

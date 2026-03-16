@@ -1,129 +1,8 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "826",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Judaism developed across millennia of human history as one of the oldest monotheistic traditions.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
-        "B.3",
-        "C.1.e",
-        "C.3.d",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Judaism has been a defining social and cultural institution for Jewish communities throughout history.",
-      "relevantPathsAI": [
-        "B.3",
-        "C.1.e",
-        "C.2.b",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Deity",
-      "rationaleAI": "Judaism's monotheistic concept of God as a single, transcendent creator represents a foundational theological development in understanding deity.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.4",
-        "A.6",
-        "B",
-        "B.3",
-        "C",
-        "C.3.a",
-        "C.3.b",
-        "C.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Israel",
-      "rationaleAI": "Israel is the historical homeland of Judaism covered in this section.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1",
-        "B.1.a",
-        "B.3",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Jerusalem",
-      "rationaleAI": "Jerusalem is the holiest city in Judaism.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.4",
-        "A.6",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.3",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Abraham",
-      "rationaleAI": "Abraham is the founding patriarch of Judaism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Bible",
-      "rationaleAI": "The Hebrew Bible is the foundational text of Judaism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.2"
-      ]
-    },
-    {
       "articleTitle": "Judaism",
-      "rationaleAI": "Judaism is the direct subject of this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Moses",
-      "rationaleAI": "Moses is the central prophet and lawgiver in Judaism.",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -134,8 +13,206 @@
         "A.6",
         "B",
         "B.1",
-        "B.1.a"
-      ]
+        "B.2",
+        "B.3",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Comprehensive overview directly covering all major outline sections: the full historical trajectory from biblical through modern era, core texts (Torah, Tanakh, Talmud), rabbinic Judaism's foundations, major denominations (Orthodox, Conservative, Reform, Reconstructionist), and basic beliefs and practices including covenant theology, sabbath, and synagogue life."
+    },
+    {
+      "articleTitle": "Abraham",
+      "relevantPathsAI": [
+        "A.1",
+        "C.1.b"
+      ],
+      "rationaleAI": "Abraham is the founding patriarch of Judaism, central to the biblical era (A.1) and the defining figure of the covenant between God and the Jewish people (C.1.b — the concept of Covenant), with his narrative encompassing the calling, circumcision covenant, and binding of Isaac foundational to Jewish identity."
+    },
+    {
+      "articleTitle": "Moses",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.b",
+        "C.1.b"
+      ],
+      "rationaleAI": "Moses is the central lawgiver of the Hebrew Bible and Judaism's most important prophet, directly relevant to the biblical era (A.1), Torah as sacred literature (B.1.b — Torah as part of Tanakh), and the Sinai covenant foundational to Jewish doctrine (C.1.b)."
+    },
+    {
+      "articleTitle": "Bible",
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Directly covers Jewish biblical literature (B.1), including canons and vernacular versions such as the Septuagint (B.1.a) and the structure of the Hebrew Bible (TaNaKh — Torah, Nevi'im, Ketuvim — B.1.b), as well as its role in Jewish and Christian traditions."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "B.3",
+        "B.7"
+      ],
+      "rationaleAI": "The Talmud originated as oral tradition before written codification (B.3 — Talmud and Midrash), and Jewish oral tradition encompasses myth, legend, and rabbinic teaching (B.7 — Jewish myth and legend); the article covers Vedic and Islamic parallels including the hadith transmission process analogous to oral law."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Jewish myth and legend (B.7) is a form of religious folklore, and this article's treatment of oral traditions, folk beliefs, and communally transmitted narrative provides analytical framing applicable to the Jewish legendary corpus including midrashic stories."
+    },
+    {
+      "articleTitle": "Alexander the Great",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Alexander's conquests initiated the Hellenistic era directly relevant to A.2 (the Hellenistic era of Jewish history), during which Greek culture, language (Septuagint translation), and political structures profoundly shaped Second Temple Judaism and eventually gave rise to Hellenistic Judaism."
+    },
+    {
+      "articleTitle": "Plato",
+      "relevantPathsAI": [
+        "A.2",
+        "B.6"
+      ],
+      "rationaleAI": "Platonic philosophy was the primary philosophical influence on Hellenistic Jewish thought (A.2) and on medieval Jewish philosophical writings (B.6), shaping thinkers like Philo of Alexandria and later influencing Maimonides' synthesis of Aristotle and Jewish theology."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.2",
+        "B.6"
+      ],
+      "rationaleAI": "Aristotelian philosophy mediated through Islamic transmitters was central to medieval Jewish philosophical writings (B.6 — Jewish philosophical writings), particularly Maimonides' Guide for the Perplexed, and shapes the Hellenistic era's intellectual context (A.2)."
+    },
+    {
+      "articleTitle": "History of religion",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Provides comparative historical framework covering the development of monotheism, Axial Age religions, and the diversification of Judaism through biblical, Hellenistic, and Talmudic eras (A.1–A.3) within the broader context of world religious history."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.5",
+        "B.6"
+      ],
+      "rationaleAI": "The Enlightenment directly shaped modern Jewish history (A.5 — modern era from mid-18th century, including the Haskalah Jewish Enlightenment and Reform Judaism), and Jewish thinkers like Spinoza contributed to Enlightenment philosophy, linking to Jewish philosophical writings (B.6)."
+    },
+    {
+      "articleTitle": "Reformation",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "The Protestant Reformation altered the position of Jews in European society and influenced subsequent developments in modern Judaism (A.5), including the emergence of Reform Judaism partly modeled on Protestant patterns of textual access and liturgical modernization."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Synagogue architecture is specifically identified in C.4.b (uses of the visual arts in ceremony and ritual: ceremonial objects, synagogue architecture), and this article covers Islamic, Romanesque, Gothic, and Renaissance architectural traditions within which Jewish communal buildings were constructed."
+    },
+    {
+      "articleTitle": "Painting",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Medieval manuscript illumination and ceremonial object decoration in Jewish tradition (C.4.b) falls within the history of painting; the article also covers religious iconography and its relationship to anti-iconic traditions relevant to C.4.a."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "Directly relevant to Jewish art and iconography (C.4), including the anti-iconic tradition (C.4.a — biblical prohibition against idolatry) and uses of visual arts in Jewish ceremony and ritual (C.4.b — ceremonial objects, synagogue architecture, manuscript illumination)."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.b"
+      ],
+      "rationaleAI": "Surveys Jewish art within the context of Near Eastern, medieval European, and Islamic visual traditions (C.4 — art and iconography), relevant to understanding synagogue art, manuscript illumination, and ceremonial objects (C.4.b) in their historical artistic context."
+    },
+    {
+      "articleTitle": "Music",
+      "relevantPathsAI": [
+        "C.4.c"
+      ],
+      "rationaleAI": "Jewish liturgical music (C.4.c — Jewish liturgical modes, influence of folk traditions, vocal and instrumental music) is directly within scope; this article covers music's role in religious ceremony and social cohesion broadly applicable to understanding Jewish musical tradition."
+    },
+    {
+      "articleTitle": "History of music",
+      "relevantPathsAI": [
+        "C.4.c"
+      ],
+      "rationaleAI": "Provides historical context for Jewish liturgical music (C.4.c) through its coverage of ancient Near Eastern, medieval Byzantine, and medieval European sacred musical traditions within which Jewish cantorial and liturgical music developed."
+    },
+    {
+      "articleTitle": "Jesus",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "C.1.e"
+      ],
+      "rationaleAI": "Jesus was a 1st-century Jewish teacher emerging from Second Temple Judaism (A.1–A.2), and the Messianic expectations he either fulfilled or failed to fulfill are directly relevant to Jewish eschatology (C.1.e — eschatology, the King-Messiah); his movement's split from Judaism is foundational to modern Jewish history."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Napoleon's emancipation of Jews in French-controlled territories and his convening of the Grand Sanhedrin were transformative events in the modern era of Jewish history (A.5 — developments in modern Judaism from the mid-18th century), directly reshaping Jewish civic status across Europe."
+    },
+    {
+      "articleTitle": "Voltaire",
+      "relevantPathsAI": [
+        "A.5",
+        "B.6"
+      ],
+      "rationaleAI": "Voltaire's Enlightenment writings on Judaism — alternately critical and comparative — were part of the intellectual context shaping the Haskalah and modern Jewish philosophical responses (A.5, B.6); his comparative religious thought engaged Jewish tradition directly."
+    },
+    {
+      "articleTitle": "Rembrandt",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Rembrandt lived and worked in Amsterdam's Jewish quarter, painted extensively from Hebrew Bible subjects, and documented the Sephardic Jewish community in his portraits, making him directly relevant to C.4.b (uses of visual arts in ceremony and ritual, paintings) and the representation of Jewish subjects in European religious art."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.4",
+        "B.6"
+      ],
+      "rationaleAI": "The Islamic phase of medieval rabbinic Judaism (A.4) flourished during the Islamic Golden Age, with Jewish scholars like Saadia Gaon, Maimonides, and Judah Halevi producing major philosophical writings (B.6) in Arabic and Hebrew under Islamic civilization's intellectual patronage."
+    },
+    {
+      "articleTitle": "History of literature",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Jewish literature — biblical texts, Dead Sea Scrolls, and rabbinic writings (B.1, B.2, B.3) — is part of this article's global literary history survey, which covers ancient Near Eastern, Hebrew, and medieval Jewish literary traditions."
+    },
+    {
+      "articleTitle": "Literature",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Biblical and rabbinic literature (B.1 — biblical literature, B.3 — Talmud and Midrash) constitute major literary corpora covered within this article's treatment of oral tradition, early written texts, and the cultural roles of preserved canonical writing."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -53,13 +53,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Epicureanism",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Skepticism",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Skepticism",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",
@@ -120,13 +121,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Utilitarianism",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Positivism and Logical Empiricism [for metalogical studies, see 10/12. B.; for studies in the foundations of mathematics, see 10/21. B.]",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Positivism and Logical Empiricism [for metalogical studies, see 10/12. B.; for studies in the foundations of mathematics, see 10/21. B.]",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",

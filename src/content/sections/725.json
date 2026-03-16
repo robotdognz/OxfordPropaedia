@@ -36,13 +36,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Processing liquid materials",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Casting metals; e.g., sand casting, die casting",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Casting metals; e.g., sand casting, die casting",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -93,13 +93,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Thermal processing",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Basic heat-treating operations: annealing, stress relieving, and hardening",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Basic heat-treating operations: annealing, stress relieving, and hardening",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -124,13 +124,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Processing of materials by exposure to physical conditions other than heat or cold",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Processing of materials in a vacuum",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Processing of materials in a vacuum",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -194,13 +194,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Pyrometallurgy: processes that involve the use of heat",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Roasting: oxidizing, reducing reactions",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Roasting: oxidizing, reducing reactions",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -225,13 +225,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Electrometallurgy: processes that involve electrochemical reactions",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Electrolytic smelting; e.g., the Hall-Heroult process",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Electrolytic smelting; e.g., the Hall-Heroult process",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -250,13 +250,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Hydrometallurgy",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Leaching: techniques for dissolving metallic minerals",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Leaching: techniques for dissolving metallic minerals",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

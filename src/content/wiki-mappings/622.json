@@ -1,101 +1,244 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "622",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "Theatre is a core performing art encompassed by this article on the full range of creative arts.",
+      "articleTitle": "Theatre",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.3",
         "A.5",
-        "A.8",
-        "B.1.i.ii",
-        "B.1.i.iii",
-        "B.1.i.iv",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Performing arts",
-      "rationaleAI": "Theatre is a primary performing art encompassing drama, stagecraft, and live audience interaction.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.5",
-        "A.8",
-        "B.1.i.iii",
-        "C.1.b",
-        "C.2",
-        "D",
+        "A.7",
+        "B.1.a",
         "D.1"
-      ]
+      ],
+      "rationaleAI": "The core article for Section 622, covering the nature and origins of theatre (A.1), its social and entertainment functions (A.2), technical staging elements including scenery and lighting (A.5), acting (A.7), dramatic genres (B.1.a.i), and derivation from ancient Greek precedents (D.1)."
     },
     {
       "articleTitle": "Entertainment",
-      "rationaleAI": "Theatre has been a primary form of entertainment from ancient Greek drama to modern Broadway and West End productions.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.8",
-        "B.1.i",
-        "B.1.i.ii",
-        "B.1.i.iii"
-      ]
+        "B.1.b",
+        "B.1.f"
+      ],
+      "rationaleAI": "Covers theatre as entertainment and social expression (A.2), court and civic forms (B.1.b), circus and carnival (B.1.f.i), pageants and parades (B.1.f.ii), and music hall, variety, and burlesque productions (B.1.f.iii)."
     },
     {
-      "articleTitle": "William Shakespeare",
-      "rationaleAI": "Shakespeare's plays are the foundational works of Western theatre and continue to dominate the global stage.",
+      "articleTitle": "Music",
       "relevantPathsAI": [
-        "A",
+        "A.8"
+      ],
+      "rationaleAI": "Music is one of the arts explicitly named in path A.8 (roles of other arts in the theatre), and this article covers music's full scope including its integration with theatrical and performance contexts."
+    },
+    {
+      "articleTitle": "Dance",
+      "relevantPathsAI": [
+        "A.8",
+        "B.1"
+      ],
+      "rationaleAI": "Dance is explicitly named in path A.8 (roles of other arts in the theatre) and theatrical dance (ballet, staged performance) is one of the two principal types named in the article, directly relevant to B.1 theatrical production kinds."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "A.5",
+        "C.1",
+        "C.1.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Theatre buildings are a distinct architectural typology; the article covers design theory and historical development of built structures, directly addressing theatre as place (C.1.a) and the historical development of theatre buildings (C.1.b) as well as staging design (A.5)."
+    },
+    {
+      "articleTitle": "Performing arts",
+      "relevantPathsAI": [
         "A.1",
         "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.8",
-        "B",
-        "B.1.i.iii",
-        "B.1.i.iv"
-      ]
+        "D.1"
+      ],
+      "rationaleAI": "Covers the nature and historical development of live performance arts (A.1, A.2) across Western, African, and Eastern traditions, providing broad historical context for path D.1 (history of Western theatre) and its non-Western extensions."
+    },
+    {
+      "articleTitle": "Charlie Chaplin",
+      "relevantPathsAI": [
+        "B.1.a",
+        "D.1"
+      ],
+      "rationaleAI": "Chaplin pioneered feature-length silent comedy blending slapstick with pantomime and mime (B.1.a.iii), and his Tramp persona and works like Modern Times and The Great Dictator are central documents in the history of comic theatrical performance (D.1)."
     },
     {
       "articleTitle": "Opera",
-      "rationaleAI": "Opera is a form of musical theatre.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.5",
         "A.8",
-        "B.1.i",
-        "B.1.i.ii",
-        "B.1.i.iii",
-        "B.1.i.iv"
-      ]
+        "B.1.a",
+        "B.2",
+        "D.1"
+      ],
+      "rationaleAI": "Opera integrates music, literature, acting, scenery, costume, and sometimes dance (A.8, B.2) within a theatrical form (B.1.a); its history from 16th-century Italian origins through national traditions constitutes a major thread in Western theatre history (D.1)."
     },
     {
-      "articleTitle": "Theatre",
-      "rationaleAI": "Theatre is the direct subject of this section on the dramatic performing arts.",
+      "articleTitle": "Film",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
+        "B.1.h"
+      ],
+      "rationaleAI": "Film is the primary medium addressed in path B.1.h (kinds defined by production media: radio and television); the article covers its evolution from live-action recording through animation and digital production as distinct theatrical-descended media."
+    },
+    {
+      "articleTitle": "Visual arts",
+      "relevantPathsAI": [
         "A.5",
-        "A.8",
-        "B",
-        "B.1.i",
-        "B.1.i.ii"
-      ]
+        "A.8"
+      ],
+      "rationaleAI": "Visual arts\u2014painting, sculpture, photography, and design\u2014feed directly into theatrical scenography, set design, costume, and lighting (A.5), and painting is explicitly named in path A.8 as one of the arts with a role in theatre."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "B.1.g"
+      ],
+      "rationaleAI": "Folklore covers oral traditions, customs, folk performance, folk dance, and folk festivals, directly mapping to path B.1.g (theatrical productions defined by the cultural character of their audience: primitive, folk, and popular theatre)."
+    },
+    {
+      "articleTitle": "William Shakespeare",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.d",
+        "C.1.a",
+        "C.1.b",
+        "D.1"
+      ],
+      "rationaleAI": "Shakespeare's works define the dramatic genres of comedy and tragedy (B.1.a.i), his company represents the dramatist-controlled and actor-dominated production model (B.1.d), and the Globe Theatre is a key historical stage (C.1.a\u2013b); foundational to Western theatre history (D.1)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.a",
+        "C.1.b",
+        "D.1"
+      ],
+      "rationaleAI": "Ancient Greek theatre is the origin of Western theatrical traditions (A.1, D.1), establishing the genres of comedy and tragedy (B.1.a.i) and producing distinctive open-air theatre architectural forms (C.1.b)."
+    },
+    {
+      "articleTitle": "Realism (arts)",
+      "relevantPathsAI": [
+        "B.1.e",
+        "D.1"
+      ],
+      "rationaleAI": "Theatrical realism is explicitly named as a distinct movement adapting the realist principle to theatre (B.1.e: styles of particular historical periods), representing a key episode in Western theatre history (D.1)."
+    },
+    {
+      "articleTitle": "Romanticism",
+      "relevantPathsAI": [
+        "B.1.e",
+        "D.1"
+      ],
+      "rationaleAI": "Romanticism shaped theatrical aesthetics and dramatic forms (B.1.e) across European theatre in the 1800\u20131850 period, contributing to the historical development of Western theatre (D.1)."
+    },
+    {
+      "articleTitle": "Festival",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.f"
+      ],
+      "rationaleAI": "Festivals encompass civic and religious theatrical events (B.1.b) including patronal commemorations and arts festivals, and their pageant and parade forms connect to path B.1.f.ii (pageants, parades, and related forms)."
+    },
+    {
+      "articleTitle": "Television",
+      "relevantPathsAI": [
+        "B.1.h"
+      ],
+      "rationaleAI": "Television is one of the two production media explicitly named in path B.1.h, and the article's coverage of broadcast engineering, distribution, and content connects to theatre's adaptation to electronic mass-media formats."
+    },
+    {
+      "articleTitle": "Renaissance",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b",
+        "D.1"
+      ],
+      "rationaleAI": "The Renaissance produced commedia dell'arte (B.1.a.ii: dramatic improvisation), court theatre (B.1.b), and a transformation of theatrical practice across Europe, marking a pivotal period in Western theatre history (D.1)."
+    },
+    {
+      "articleTitle": "Singing",
+      "relevantPathsAI": [
+        "A.7",
+        "A.8"
+      ],
+      "rationaleAI": "Singing is the primary instrument of the actor-singer in opera and musical theatre, connecting to acting technique (A.7) and the role of music in theatrical production (A.8) through vocal classification, technique, and ensemble performance."
+    },
+    {
+      "articleTitle": "Classical music",
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Classical music underpins opera and orchestral theatre accompaniment, connecting to path A.8 (the role of music in the theatre) through its historical arc from plainchant through Baroque opera to Romantic music drama."
+    },
+    {
+      "articleTitle": "Fashion",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Fashion covers the creation and wearing of clothing and accessories as signifiers of identity, directly connecting to costume and makeup design in theatrical production (A.5) as one of the named design elements."
+    },
+    {
+      "articleTitle": "Painting",
+      "relevantPathsAI": [
+        "A.5",
+        "A.8"
+      ],
+      "rationaleAI": "Painting feeds directly into theatrical scenography and set design (A.5), and painting is explicitly named in path A.8 as one of the other arts with a role in the theatre; the article covers representational, symbolic, and design traditions across cultures."
+    },
+    {
+      "articleTitle": "Design",
+      "relevantPathsAI": [
+        "A.5",
+        "B.2"
+      ],
+      "rationaleAI": "Design as an intentional process of creating specifications balancing aesthetic and functional goals maps to the arts of design in the theatre (A.5) including stage, set, lighting, and costume design, and connects to methods of theatrical production (B.2)."
+    },
+    {
+      "articleTitle": "Literature",
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Literature is explicitly named in path A.8 as one of the other arts with a role in the theatre; the article covers drama as a literary sub-field and the interrelation of written text with theatrical performance."
+    },
+    {
+      "articleTitle": "Folk music",
+      "relevantPathsAI": [
+        "B.1.g"
+      ],
+      "rationaleAI": "Folk music is the musical backbone of folk and popular theatre traditions (B.1.g), and its oral transmission and community-based character align with the theatrical productions defined by their primitive, folk, and popular audience."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.g"
+      ],
+      "rationaleAI": "Oral performance traditions\u2014including African griot practice and Homeric recitation\u2014are foundational to the origins of theatre (A.1) and represent the primitive/folk theatrical forms addressed in path B.1.g."
+    },
+    {
+      "articleTitle": "Jazz",
+      "relevantPathsAI": [
+        "B.1.f"
+      ],
+      "rationaleAI": "Jazz is historically intertwined with cabaret, revue, nightclub shows, and musical comedy (B.1.f.iii: popular entertainments), particularly through its New Orleans and Harlem Renaissance connections to theatrical performance venues."
+    },
+    {
+      "articleTitle": "Popular culture",
+      "relevantPathsAI": [
+        "B.1.f"
+      ],
+      "rationaleAI": "Popular culture encompasses the entertainment forms\u2014film, music, television, theatre\u2014that constitute popular entertainments including music hall, variety, and revue (B.1.f.iii), connecting mass media and theatrical production."
+    },
+    {
+      "articleTitle": "Clothing",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Clothing covers the full lifecycle and social signaling function of garments, directly connecting to costume as one of the named design elements in theatrical production at path A.5."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,128 +1,162 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "737",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Urban community technology applies technological solutions to city infrastructure.",
+      "articleTitle": "Civil engineering",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "B",
-        "B.1",
-        "B.1.b",
-        "C.1"
-      ]
+        "A.3"
+      ],
+      "rationaleAI": "Civil engineering encompasses the design and construction of water-supply systems (A.1), sewage/sanitation infrastructure (A.2), and urban transportation systems (A.3), making it the foundational technical discipline for the outline's basic engineering services section."
     },
     {
-      "articleTitle": "Human settlement",
-      "rationaleAI": "The technology of the urban community addresses the infrastructure systems that sustain human settlements.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Home",
-      "rationaleAI": "Homes are the basic residential units within the urban community, connected to municipal infrastructure and services.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Water",
-      "rationaleAI": "Water supply, treatment, and distribution are critical infrastructure technologies of the urban community.",
+      "articleTitle": "Car",
       "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.6",
-        "C.1"
-      ]
+        "A.3"
+      ],
+      "rationaleAI": "Automobiles are the dominant mode of urban transportation (A.3), and the article addresses urban infrastructure impacts including road congestion, air pollution, and traffic management technologies that connect to urban engineering services."
     },
     {
       "articleTitle": "Transport",
-      "rationaleAI": "Urban transportation systems including roads, railways, and public transit are critical infrastructure of the urban community.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.a",
-        "A.2.b",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "City",
-      "rationaleAI": "Cities are the focus of urban community technology and infrastructure.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
         "A.3",
-        "A.4",
-        "B"
-      ]
+        "A.4"
+      ],
+      "rationaleAI": "Covers urban transportation systems (A.3) and interurban transportation (A.4) across all modes — road, rail, water, and air — with attention to urban planning, infrastructure, and sustainable development directly relevant to the outline."
     },
     {
-      "articleTitle": "Urbanization",
-      "rationaleAI": "Urbanization drives the development of urban community technology.",
+      "articleTitle": "Vehicle",
       "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "B",
-        "B.1.b",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Drinking water",
-      "rationaleAI": "Water supply systems are a core technology of urban communities.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Pollution",
-      "rationaleAI": "Pollution is a challenge for urban community technology.",
-      "relevantPathsAI": [
-        "A.6",
-        "B.1.b",
-        "C.1"
-      ]
+        "A.3"
+      ],
+      "rationaleAI": "Vehicles are the core technology of urban transportation systems (A.3); the article covers wheeled, tracked, and electric vehicle types used in urban and interurban transport contexts."
     },
     {
       "articleTitle": "Sanitation",
-      "rationaleAI": "Sanitation is a core technology of urban communities.",
       "relevantPathsAI": [
-        "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "C.1"
-      ]
+        "A.2.a"
+      ],
+      "rationaleAI": "Directly and comprehensively covers outline A.2 on sanitation systems, specifically sewage disposal systems (A.2.a), water treatment, and the public health infrastructure for safe excreta management in urban communities."
     },
     {
-      "articleTitle": "Waste",
-      "rationaleAI": "Waste management is a core concern of the technology of the urban community.",
+      "articleTitle": "Canal",
       "relevantPathsAI": [
-        "A.2.b",
-        "B.2"
-      ]
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Urban water supply canals (A.1) and navigable waterways serving as urban transportation infrastructure (A.3) are both covered; the article notes modern uses including urban water supply and flood control directly relevant to basic engineering services."
+    },
+    {
+      "articleTitle": "Police",
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.b"
+      ],
+      "rationaleAI": "Police is the subject of outline B.1 on police technology, covering crime control technology (B.1.b) and law enforcement functions including surveillance and public order management in the urban context."
+    },
+    {
+      "articleTitle": "Road",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Roads are the primary infrastructure for urban transportation systems (A.3); the article covers lanes, carriageways, expressways, and maintenance technology directly applicable to urban engineering services."
     },
     {
       "articleTitle": "Infrastructure",
-      "rationaleAI": "Infrastructure systems support the technology of the urban community.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2.a",
-        "A.2.b",
+        "A.2",
         "A.3",
-        "B",
-        "B.2",
+        "A.5"
+      ],
+      "rationaleAI": "Infrastructure as a concept covers water supply, sewers, energy grids, and transportation networks — all the basic engineering services of the city addressed in outline section A — and explicitly includes green and smart city infrastructure."
+    },
+    {
+      "articleTitle": "Building",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Buildings constitute the constructed facilities for recreational and social services (B.2), including stadiums, aquariums, and planetariums; the article covers construction technology, design, and urban planning connections relevant to urban community infrastructure."
+    },
+    {
+      "articleTitle": "Fire",
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "The article covers fire science and firefighting/suppression systems directly relevant to outline A.6 on fire prevention and control as a basic engineering service of the urban community."
+    },
+    {
+      "articleTitle": "Urbanization",
+      "relevantPathsAI": [
+        "A",
+        "C",
         "C.1"
-      ]
+      ],
+      "rationaleAI": "Urbanization as the process driving urban growth connects to all urban engineering challenges in section A, and its environmental consequences (urban heat islands, water quality) directly correspond to the technological responses to urban problems in C.1."
+    },
+    {
+      "articleTitle": "Dam",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Dams are primary water-supply infrastructure (A.1), creating reservoirs for municipal water supply, flood control, and hydroelectric power serving urban communities, directly relevant to the outline's water-supply systems path."
+    },
+    {
+      "articleTitle": "Construction",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Construction covers the delivery of all built urban assets — infrastructure systems (A) and recreational facilities (B.2) such as stadiums and parks — making it a foundational enabling discipline for the entire urban technology outline."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly corresponds to outline C.1 on control of air, water, land, and other pollution as a technological response to urban problems, covering all major pollution categories and their regulatory and engineering management."
+    },
+    {
+      "articleTitle": "Waste",
+      "relevantPathsAI": [
+        "A.2.b",
+        "C.1"
+      ],
+      "rationaleAI": "Covers street clearance and refuse disposal systems (A.2.b) as urban sanitation infrastructure, and connects to pollution control (C.1) through environmental management of municipal solid waste, electronic waste, and wastewater."
+    },
+    {
+      "articleTitle": "Thomas Edison",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Edison originated practical systems of electrical power distribution and lighting that are the historical foundation of urban electric power technology (A.5), making him a key figure in the development of this basic engineering service of the city."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Architecture covers the design and construction of recreational and civic facilities including stadiums and public buildings (B.2), and connects urban design and planning to the social service infrastructure of the city."
+    },
+    {
+      "articleTitle": "Human settlement",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Human settlement covers the formation and infrastructure of communities from hamlets to megacities, including roads, enclosures, and physical infrastructure directly corresponding to the basic engineering services of the city (A)."
+    },
+    {
+      "articleTitle": "Ecology",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Ecology provides the scientific basis for understanding environmental impacts that urban pollution control technology (C.1) must address, covering habitat, ecosystems, and the effects of human urban activity on natural environments."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,149 +1,227 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "431",
   "mappings": [
     {
       "articleTitle": "Human",
-      "rationaleAI": "Human nature and experience are core aspects of being human as discussed in this article.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.1.a",
         "A.1.b",
         "A.1.c",
         "A.2",
-        "A.2.a",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Psychology",
-      "rationaleAI": "Psychology provides the scientific framework for understanding human nature and experience as a whole.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.5"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers human evolutionary origins, anatomy, psychology, cultural universals including language and civilization, and social structures — directly spanning A.1 (mankind's distinction from and continuity with nature), A.1.a (shared behavioral capacities with primates), A.1.b (distinctive human traits: language, cultural transmission), and developmental stages under B."
     },
     {
       "articleTitle": "Emotion",
-      "rationaleAI": "Emotions are fundamental aspects of human nature and experience, shaping perception, decision-making, and social interaction.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
         "A.3.c"
-      ]
+      ],
+      "rationaleAI": "Emotion as a neurophysiologically grounded mental and physical state associated with valenced experience — covering classification theories, neural substrates, and the affective dimensions — directly addresses A.3.c (the affective dimension: emotions, the pleasant and unpleasant, the sentiments)."
     },
     {
       "articleTitle": "Mind",
-      "rationaleAI": "The mind encompasses the totality of human nature and experience including consciousness, perception, and thought.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Friendship",
-      "rationaleAI": "Friendship is a central aspect of human nature and experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.3.a",
-        "A.5",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Humour",
-      "rationaleAI": "Humour is a dimension of human nature and experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Love",
-      "rationaleAI": "Love is a fundamental aspect of human nature and experience.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Consciousness",
-      "rationaleAI": "Consciousness is central to human nature and experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Memory",
-      "rationaleAI": "Memory is fundamental to human nature and experience.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
         "A.3",
         "A.3.a",
         "A.5"
-      ]
+      ],
+      "rationaleAI": "The mind article covers thought, feeling, perception, memory, and volition (A.3: cognitive, conative, and affective dimensions), the evolutionary development of nervous systems (A.3.a: cognitive dimension), and the contested attribution of mind to artificial systems (A.5: comparison of human and machine-created intelligence)."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "A child as a human between birth and puberty covers infancy through childhood developmental stages — progressive cognitive, physical, emotional, and social maturation — directly addressing B.4 (infancy: first 18 months) and B.5 (early childhood and childhood: one to 12 years)."
+    },
+    {
+      "articleTitle": "Sexual orientation",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Sexual orientation as an enduring pattern of attraction with biological determinants including genetic factors and prenatal hormone exposure connects to A.2.a (elements of genetic endowment: physiological and psychological characteristics), illustrating the nature side of the nature-nurture controversy with empirical data."
+    },
+    {
+      "articleTitle": "Adult",
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Adult covers human biological maturity and legal majority, the divergence between biological, legal, and social definitions of adulthood, and continued psychological development beyond biological maturation, directly addressing B.7 (young adulthood and maturity) — a primary uncovered path."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Adolescence covers the transitional stage from puberty to adulthood including physical changes, cognitive gains, and psychosocial processes such as identity formation and autonomy negotiation, mapping precisely to B.6 (adolescence: puberty to adulthood)."
+    },
+    {
+      "articleTitle": "Infant",
+      "relevantPathsAI": [
+        "B.4",
+        "B.3"
+      ],
+      "rationaleAI": "Covers the first year of life including the neonatal period, developmental domains of sensorimotor responsiveness and early language acquisition, emotional bonding, and maternal sensitivity effects, directly addressing B.4 (infancy: first 18 months) and B.3 (birth: effects of the birth experience on subsequent history) — a primary uncovered path."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Reason as the cognitive capacity to draw valid conclusions through deductive, inductive, abductive, and analogical reasoning maps directly to A.3.a (the cognitive dimension: sensation and perception; concept formation, ideation, and reasoning), covering the core cognitive processes enumerated in that path."
+    },
+    {
+      "articleTitle": "Learning",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.4"
+      ],
+      "rationaleAI": "Learning as acquisition of knowledge through experience covers memory and habit formation connecting to A.3.a (cognitive dimension: memory and imagination) and A.4 (observed behavioral elements and dispositional tendencies: habits, inclinations, and capacities), spanning both cognitive and dispositional aspects of behavior."
+    },
+    {
+      "articleTitle": "Belief",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Belief as a subjective mental attitude that a proposition is true addresses A.3.a (cognitive dimension: concept formation and ideation) through its epistemological analysis, and A.3.b (conative dimension: desires and motivation) through the role of belief in guiding purposive action."
+    },
+    {
+      "articleTitle": "Fear",
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Fear as an emotional state arising from perceived or anticipated danger, with amygdala-mediated arousal and fight-flight-freeze responses, directly exemplifies A.3.c (the affective dimension: emotions, the pleasant and unpleasant); phobias as pathological fear also connect to emotional intensity and variability discussed there."
+    },
+    {
+      "articleTitle": "Thought",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Thought as cognitive processes encompassing judging, reasoning, concept formation, problem-solving, and imagination maps precisely to A.3.a (the cognitive dimension: concept formation, ideation, and reasoning), covering the full range of cognitive processes enumerated in that path across philosophical and empirical traditions."
+    },
+    {
+      "articleTitle": "Artificial intelligence",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Artificial intelligence as systems performing tasks associated with human intelligence — learning, reasoning, perception, planning, and natural language processing — directly addresses A.5 (emergent problems: comparison of human and artificial, machine-created intelligence), the specific path designated for this topic."
+    },
+    {
+      "articleTitle": "Culture",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.b"
+      ],
+      "rationaleAI": "Culture as social behaviors, norms, and cumulative knowledge shared by a human group directly addresses A.1.b (cumulative transmission of culture as a distinctive human behavioral capacity) and A.2.b (cultural conditioning and personal socialization experiences as environmental conditions in the nature-nurture debate)."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "A",
+        "A.3"
+      ],
+      "rationaleAI": "Psychology as the scientific study of mind and behavior spanning biological, behavioral, cognitive, social, and psychoanalytic schools provides the methodological framework for outline path A as a whole and explicitly covers cognitive, affective, and motivational dimensions corresponding to A.3."
+    },
+    {
+      "articleTitle": "Play (activity)",
+      "relevantPathsAI": [
+        "B.5",
+        "A.3"
+      ],
+      "rationaleAI": "Play's core functions in cognitive development, social learning, emotional regulation, and physical coordination in youth directly address B.5 (early childhood: one to 12 years), while play's role in social bonding and therapeutic purposes in adults also connects to A.3 (cognitive, conative, and affective behavioral dimensions)."
     },
     {
       "articleTitle": "Human behavior",
-      "rationaleAI": "Human behavior is the broad subject of this section on human nature and experience.",
       "relevantPathsAI": [
         "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
         "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Human behavior as the full range of expressed and potential responses shaped by genetic, physiological, environmental, and cultural factors directly covers outline A in its entirety, with specific coverage of cognitive behavior (A.3.a), social and emotional behavior (A.3.c), and dispositional tendencies (A.4)."
+    },
+    {
+      "articleTitle": "Personality",
+      "relevantPathsAI": [
+        "A.4",
+        "A.3.c"
+      ],
+      "rationaleAI": "Personality as characteristic behavioral, cognitive, and emotional patterns constituting individual adjustment to life directly addresses A.4 (observed elements of behavior and inferred dispositional tendencies: habits, inclinations, and capacities) — a primary uncovered path — and connects to A.3.c through its emotional components."
+    },
+    {
+      "articleTitle": "Primate",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.c"
+      ],
+      "rationaleAI": "Primates as the closest relatives to humans with shared cognitive capacities including tool use and complex vocalizations directly address A.1.a (behavioral capacities shared with other primates and higher mammals) and A.1.c (the evolutionary development of mankind in accordance with phylogenetic continuity)."
+    },
+    {
+      "articleTitle": "Animal",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Animals as the kingdom from which humans evolved, with diverse behavioral capacities across phyla, provide context for A.1.a (behavioral capacities and performances that humans share with other higher mammals), situating human behavior within the broader animal behavioral repertoire."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Darwin's theory of evolution by natural selection and his later work on human evolution (The Descent of Man) and animal psychology directly address A.1.c (the explanation of distinctive human traits in accordance with phylogenetic continuity and the evolutionary development of mankind)."
+    },
+    {
+      "articleTitle": "Human sexuality",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.2.a"
+      ],
+      "rationaleAI": "Human sexuality covering the biological, psychological, and sociocultural dimensions of sexual experience connects to A.3.b (the conative dimension: desires, needs, and drives) through sexual motivation, and to A.2.a (elements of genetic endowment) through prenatal hormonal influences on sexual orientation."
+    },
+    {
+      "articleTitle": "Gender",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "Gender as social, psychological, and behavioral dimensions of being male or female — with biological sciences investigating hormonal and neurological influences — addresses A.2.a (physiological and psychological characteristics as genetic endowment) and A.2.b (cultural conditioning and socialization as environmental conditions)."
+    },
+    {
+      "articleTitle": "Anthropology",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Anthropology as the scientific study of humanity encompassing biology, society, culture, and language — with biological anthropology covering human evolution and sociocultural anthropology covering cultural meaning — provides a broad methodological framework directly relevant to outline path A and A.1's questions about human nature and distinctiveness."
+    },
+    {
+      "articleTitle": "Intelligence",
+      "relevantPathsAI": [
         "A.3.a",
         "A.5"
-      ]
+      ],
+      "rationaleAI": "Intelligence covering abstraction, reasoning, learning, and problem-solving maps to A.3.a (cognitive dimension: concept formation, ideation, and reasoning); the article's treatment of artificial intelligence as replicating specific cognitive functions also connects to A.5 (comparison of human and machine-created intelligence)."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
+        "A.3.b"
+      ],
+      "rationaleAI": "Freud's theories of the unconscious, repression, psychosexual development, and the id/ego/superego structural model address A.3 (cognitive, conative, and affective dimensions) and A.4 (inferred dispositional tendencies including habits and unconscious inclinations), with libido theory connecting to A.3.b (the conative dimension: drives and motivation)."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Oral tradition as the transmission of knowledge, belief, and culture through speech across generations without writing directly exemplifies A.1.b (cumulative transmission of culture as a behavioral capacity held to be distinctive of humans), illustrating pre-literate forms of the cultural transmission that distinguishes Homo sapiens."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

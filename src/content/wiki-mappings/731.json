@@ -1,693 +1,413 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "731",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Agriculture and food production are among the earliest and most important technologies.",
-      "relevantPathsAI": [
-        "B.2",
-        "B.4",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "E",
-        "F.2",
-        "F.5",
-        "F.8.a"
-      ]
-    },
-    {
-      "articleTitle": "Land",
-      "rationaleAI": "Arable land is the fundamental resource upon which agriculture and food production depend.",
-      "relevantPathsAI": [
-        "C.1",
-        "D.2.c",
-        "F.5",
-        "G.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Food",
-      "rationaleAI": "Agriculture and food production encompass the cultivation, harvesting, and preparation of food for human consumption.",
-      "relevantPathsAI": [
-        "B.2",
-        "C.2",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "F",
-        "F.5",
-        "G",
-        "G.1.d",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Agriculture",
-      "rationaleAI": "Agriculture is the direct subject of this section covering crop cultivation, animal husbandry, and food production technology.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.4",
-        "C",
-        "C.2",
-        "C.3",
-        "C.6",
-        "C.6.a",
-        "C.6.d",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Plant",
-      "rationaleAI": "Cultivated plants are the basis of agriculture, with crop science central to food production technology.",
-      "relevantPathsAI": [
-        "A",
-        "C.2",
-        "C.5",
-        "D.2.c",
-        "D.3",
-        "F",
-        "F.2",
-        "F.3",
-        "F.5",
-        "F.6"
-      ]
-    },
-    {
-      "articleTitle": "History of agriculture",
-      "rationaleAI": "The history of agriculture traces the development of farming and food production technologies.",
-      "relevantPathsAI": [
-        "A",
-        "D.2.c",
-        "F.5",
-        "G.1.d",
-        "I",
-        "I.1"
-      ]
-    },
-    {
-      "articleTitle": "Neolithic Revolution",
-      "rationaleAI": "The Neolithic Revolution marks the origin of agriculture and food production, transforming human subsistence.",
-      "relevantPathsAI": [
-        "A",
-        "C",
-        "C.3",
-        "C.6",
-        "C.6.a",
-        "D",
-        "D.2.c",
-        "D.2.g",
-        "E",
-        "F.5"
-      ]
-    },
-    {
-      "articleTitle": "Forest",
-      "rationaleAI": "Forestry is a significant component of agricultural and resource production.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "C.6.c",
-        "D.2.c",
-        "F.5",
-        "G.1.d",
-        "I.1"
-      ]
-    },
-    {
-      "articleTitle": "Cooking",
-      "rationaleAI": "Cooking is a fundamental aspect of food production and processing.",
-      "relevantPathsAI": [
-        "D.2.c",
-        "F",
-        "F.3",
-        "F.5",
-        "F.7.a",
-        "F.11",
-        "G",
-        "G.1.d",
-        "G.2",
-        "H"
-      ]
-    },
-    {
-      "articleTitle": "Bread",
-      "rationaleAI": "Bread is a staple food product central to agriculture and food production.",
-      "relevantPathsAI": [
-        "C.1",
-        "D.2.c",
-        "F",
-        "F.3",
-        "F.5",
-        "F.11",
-        "G",
-        "G.1.d",
-        "G.1.e",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Cereal",
-      "rationaleAI": "Cereals are the primary agricultural crops for food production worldwide.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.2",
-        "C.3",
-        "C.6",
-        "C.6.a",
-        "C.6.b",
-        "C.6.d",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Wheat",
-      "rationaleAI": "Wheat is one of the world's most important agricultural food crops.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6",
-        "C.6.a",
-        "C.6.d",
-        "D"
-      ]
-    },
-    {
       "articleTitle": "Maize",
-      "rationaleAI": "Maize is a major agricultural crop originating in the Americas.",
       "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
+        "C.6.b",
         "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6",
-        "C.6.a",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Rice",
-      "rationaleAI": "Rice is the staple food crop for much of Asia.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "C",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "C.6",
-        "C.6.a"
-      ]
-    },
-    {
-      "articleTitle": "Cheese",
-      "rationaleAI": "Cheese is a processed dairy food product within agricultural production.",
-      "relevantPathsAI": [
-        "C.3",
-        "C.5",
-        "D.2.c",
-        "D.3",
-        "F",
-        "F.1",
-        "F.2",
-        "F.3",
-        "F.5",
-        "F.6"
-      ]
-    },
-    {
-      "articleTitle": "Chocolate",
-      "rationaleAI": "Chocolate is a food product derived from cacao, originally cultivated in Meso-America.",
-      "relevantPathsAI": [
-        "B.2",
-        "C.3",
-        "C.6.d",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "F",
-        "F.1",
         "F.2"
-      ]
-    },
-    {
-      "articleTitle": "Fruit",
-      "rationaleAI": "Fruits are a major category of agricultural food production.",
-      "relevantPathsAI": [
-        "F",
-        "G",
-        "G.2",
-        "H.2"
-      ]
-    },
-    {
-      "articleTitle": "Meat",
-      "rationaleAI": "Meat production is a major component of agriculture and food systems.",
-      "relevantPathsAI": [
-        "B.2",
-        "C",
-        "C.1",
-        "C.5",
-        "D",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.3",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Salt",
-      "rationaleAI": "Salt is an essential food preservative and seasoning in food production.",
-      "relevantPathsAI": [
-        "D.2.c",
-        "D.2.g",
-        "F",
-        "F.2",
-        "F.5",
-        "F.10",
-        "G",
-        "G.1.d",
-        "G.2",
-        "H.1"
-      ]
-    },
-    {
-      "articleTitle": "Spice",
-      "rationaleAI": "Spices are agricultural products used in food production.",
-      "relevantPathsAI": [
-        "A",
-        "C.2",
-        "D.2.c",
-        "F.2",
-        "F.3",
-        "F.5",
-        "F.6",
-        "F.7",
-        "F.7.a",
-        "F.7.b"
-      ]
-    },
-    {
-      "articleTitle": "Sugar",
-      "rationaleAI": "Sugar is a major agricultural food product.",
-      "relevantPathsAI": [
-        "C.6.d",
-        "D.2.c",
-        "D.2.g",
-        "F.2",
-        "F.5",
-        "F.10",
-        "G.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Vegetable",
-      "rationaleAI": "Vegetables are a major category of agricultural food production.",
-      "relevantPathsAI": [
-        "C.2",
-        "C.3",
-        "C.6.a",
-        "D.2.c",
-        "F",
-        "F.1",
-        "F.2",
-        "F.3",
-        "F.5",
-        "F.6"
-      ]
+      ],
+      "rationaleAI": "Maize is the world's highest-volume cereal crop (C.6.b), with extensive coverage of its cultivation (C.2), processing into starch, syrup, and flour (F.2), and use in animal feed and industrial feedstocks."
     },
     {
       "articleTitle": "Bean",
-      "rationaleAI": "Beans are a staple legume crop in global agriculture.",
       "relevantPathsAI": [
-        "C",
-        "C.2",
-        "C.3",
-        "C.6",
         "C.6.a",
-        "C.6.d",
-        "D.2.c",
-        "D.2.g",
-        "F",
-        "F.2"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Beans are leguminous horticultural crops (C.6.a) cultivated since the Neolithic for protein; the article covers cultivation, soil nitrogen fixation (relevant to C.1), and processing into fermented and protein foods."
     },
     {
-      "articleTitle": "Potato",
-      "rationaleAI": "The potato is a major food crop originating in the Andes.",
+      "articleTitle": "Vegetable",
       "relevantPathsAI": [
-        "A",
-        "C",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6",
         "C.6.a",
-        "C.6.d",
-        "D.1",
-        "D.2.c"
-      ]
+        "C.2",
+        "F.1"
+      ],
+      "rationaleAI": "Vegetables are the primary category of horticultural crops (C.6.a), covering roots, stems, leaves, and flowers cultivated for food, with connections to harvesting and fruit/vegetable processing (F.1)."
     },
     {
-      "articleTitle": "Drink",
-      "rationaleAI": "Beverages are a component of food production and processing.",
+      "articleTitle": "Meat",
       "relevantPathsAI": [
-        "C.2",
-        "C.6.d",
-        "D.2.c",
-        "F",
-        "F.3",
+        "D",
         "F.5",
-        "F.7.a",
-        "F.7.b",
-        "F.8.b",
-        "F.8.d"
-      ]
-    },
-    {
-      "articleTitle": "Alcoholic beverage",
-      "rationaleAI": "Alcoholic beverages are a product of agricultural fermentation processes.",
-      "relevantPathsAI": [
-        "C.6.d",
-        "D.2.c",
-        "D.2.g",
-        "F",
-        "F.2",
-        "F.3",
-        "F.4",
-        "F.5",
-        "F.7.a",
-        "F.8"
-      ]
-    },
-    {
-      "articleTitle": "Coffee",
-      "rationaleAI": "Coffee is a major agricultural commodity in global food production.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.6.a",
-        "C.6.d",
-        "D.1"
-      ]
+        "E"
+      ],
+      "rationaleAI": "Meat production connects livestock farming (D) and hunting (E) to food processing (F.5: meat and meat products), covering the full chain from Neolithic domestication through modern industrial slaughter and processing."
     },
     {
       "articleTitle": "Milk",
-      "rationaleAI": "Milk is a major agricultural product from animal husbandry.",
       "relevantPathsAI": [
-        "B.2",
-        "C.3",
-        "C.5",
-        "C.6.d",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "D.3",
-        "F"
-      ]
+        "D",
+        "F.7",
+        "F.7.a"
+      ],
+      "rationaleAI": "Milk is the primary output of dairy livestock (D) and is the subject of dairying technology (F.7), including milk production and handling techniques (F.7.a) covering pasteurization, homogenization, and UHT processing."
     },
     {
-      "articleTitle": "Tea",
-      "rationaleAI": "Tea is a major agricultural commodity in global food production.",
+      "articleTitle": "Rice",
       "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
+        "C.6.b",
         "C.2",
-        "C.3",
-        "C.6",
-        "C.6.a",
-        "C.6.d",
-        "D.2.c",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Fishing",
-      "rationaleAI": "Fishing is a form of food production within agriculture.",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.3",
-        "D.1",
-        "F.5",
-        "F.6"
-      ]
-    },
-    {
-      "articleTitle": "Hunting",
-      "rationaleAI": "Hunting is a form of food procurement.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "E",
         "F.2"
-      ]
-    },
-    {
-      "articleTitle": "Famine",
-      "rationaleAI": "Famine results from failures in agriculture and food production.",
-      "relevantPathsAI": [
-        "A",
-        "D.2.c",
-        "F",
-        "F.3",
-        "F.4",
-        "F.5",
-        "F.7.a",
-        "F.8",
-        "G",
-        "G.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Chicken",
-      "rationaleAI": "Chickens are a major domesticated animal in agriculture and food production.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.5",
-        "D",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.e",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Cattle",
-      "rationaleAI": "Cattle are fundamental to agriculture and food production worldwide.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2",
-        "C.5",
-        "D.1",
-        "D.2",
-        "D.2.a",
-        "D.2.c",
-        "D.3",
-        "F.5"
-      ]
-    },
-    {
-      "articleTitle": "Pig",
-      "rationaleAI": "Pigs are major domesticated animals in agriculture and food production.",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C",
-        "C.5",
-        "D",
-        "D.1",
-        "D.2",
-        "D.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Sheep",
-      "rationaleAI": "Sheep are important domesticated animals in agriculture and food production.",
-      "relevantPathsAI": [
-        "B.2",
-        "D",
-        "D.1",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "F",
-        "F.5",
-        "G",
-        "G.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Soil",
-      "rationaleAI": "Soil quality is fundamental to agriculture and food production.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "C.1",
-        "D.2.c",
-        "F.5",
-        "G.1.d",
-        "I.1"
-      ]
+      ],
+      "rationaleAI": "Rice is one of the world's most important cereals (C.6.b), covering domestication history (A), cultivation in flooded paddies (C.2), and processing into cooked staple and fortified grain products (F.2)."
     },
     {
       "articleTitle": "Animal husbandry",
-      "rationaleAI": "Animal husbandry is a core component of agriculture and food production.",
       "relevantPathsAI": [
         "D",
         "D.1",
-        "D.2.e",
-        "F.5",
-        "F.7",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Animal husbandry is the overarching topic of livestock farming (D), covering breeding (D.1), management of cattle, sheep, pigs, poultry, and other stock (D.2), and disease and pest control (D.3)."
+    },
+    {
+      "articleTitle": "Wheat",
+      "relevantPathsAI": [
+        "C.6.b",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Wheat is the leading vegetable protein cereal crop (C.6.b) and the primary ingredient in flour-based bakery products (F.3); its breeding and genomics connect to C.2 and the article covers its global role in food security."
+    },
+    {
+      "articleTitle": "Cheese",
+      "relevantPathsAI": [
         "F.7.b"
-      ]
+      ],
+      "rationaleAI": "Cheese is a dairy product (F.7.b) produced through microbial fermentation and enzymatic coagulation—the article covers production technology, aging, varieties, and the microbiology of ripening."
+    },
+    {
+      "articleTitle": "Drink",
+      "relevantPathsAI": [
+        "F.8",
+        "F.8.a",
+        "F.8.b",
+        "F.8.c",
+        "F.8.d"
+      ],
+      "rationaleAI": "Drinks encompass the full range of beverage production technologies—brewing (F.8.a), wine making (F.8.b), distilled spirits (F.8.c), and nonalcoholic beverages including coffee and tea (F.8.d)."
+    },
+    {
+      "articleTitle": "Fishing",
+      "relevantPathsAI": [
+        "E",
+        "F.6"
+      ],
+      "rationaleAI": "Fishing directly addresses the technology of fishing and harvesting aquatic animals (E), and fish as a food source connects to fish and marine products processing (F.6)."
+    },
+    {
+      "articleTitle": "Sheep",
+      "relevantPathsAI": [
+        "D.2.c",
+        "D.1"
+      ],
+      "rationaleAI": "Sheep are one of the earliest domesticated livestock (D.2.c: sheep and goats), with coverage of breeds, wool production, meat, milk, and animal breeding (D.1) going back to Neolithic domestication."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Agriculture as a topic covers all major domains of this section—history (A), farm management (B), crop farming (C), and livestock farming (D)—providing the broad overview entry for Section 731."
+    },
+    {
+      "articleTitle": "Chocolate",
+      "relevantPathsAI": [
+        "F.13",
+        "C.6.d"
+      ],
+      "rationaleAI": "Chocolate production (F.13) spans fermentation, drying, roasting, and grinding of cacao beans, which are also a major tropical field crop (C.6.d: cocoa); the article covers the full supply chain from West African cultivation to confectionery."
+    },
+    {
+      "articleTitle": "Spice",
+      "relevantPathsAI": [
+        "F.9",
+        "C.6.d"
+      ],
+      "rationaleAI": "Spices are addressed in flavourings (F.9) and represent major tropical agricultural products (C.6.d); the article covers global production, processing, and preservation of spice crops."
+    },
+    {
+      "articleTitle": "Tea",
+      "relevantPathsAI": [
+        "F.8.d",
+        "C.6.d"
+      ],
+      "rationaleAI": "Tea is both a nonalcoholic beverage production technology (F.8.d) and a major field crop (C.6.d); the article covers cultivation of Camellia sinensis, processing into green/black/oolong varieties, and trade history."
+    },
+    {
+      "articleTitle": "Food",
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Food as a broad topic covers industrial food processing and distribution (F), food safety regulation (H), and new food source development (I), connecting all aspects of food production to nutrition and supply-chain technology."
+    },
+    {
+      "articleTitle": "Bread",
+      "relevantPathsAI": [
+        "F.3",
+        "F.2"
+      ],
+      "rationaleAI": "Bread is the central subject of bakery products production (F.3), covering leavening methods, mass-production technology, additives, and quality control; it also connects to cereal products (F.2) as flour is the primary ingredient."
     },
     {
       "articleTitle": "Domestication",
-      "rationaleAI": "Domestication of plants and animals is foundational to agriculture and food production.",
       "relevantPathsAI": [
         "A",
-        "B.2",
-        "C.2",
         "D.1",
-        "D.2",
-        "D.2.c",
-        "F.5",
-        "G.1.d",
-        "I.1"
-      ]
+        "C.2"
+      ],
+      "rationaleAI": "Domestication is foundational to agricultural history (A) and covers the genetics and behavioral changes in livestock (D.1: animal breeding) and crops (C.2: plant propagation) that enabled agriculture."
+    },
+    {
+      "articleTitle": "Biotechnology",
+      "relevantPathsAI": [
+        "C.2",
+        "C.5",
+        "I.2"
+      ],
+      "rationaleAI": "Agricultural biotechnology covers GM crop development and plant propagation (C.2), biological pest and disease control (C.5), and the utilization of new food sources through genetic engineering and fermentation (I.2)."
+    },
+    {
+      "articleTitle": "Louis Pasteur",
+      "relevantPathsAI": [
+        "F.7.a",
+        "G.1.c"
+      ],
+      "rationaleAI": "Pasteur's discovery of pasteurization (F.7.a: milk production and handling) and his foundational work on microbial fermentation directly underpin high-temperature food preservation technology (G.1.c: pasteurization and canning)."
+    },
+    {
+      "articleTitle": "Cereal",
+      "relevantPathsAI": [
+        "C.6.b",
+        "F.2",
+        "A"
+      ],
+      "rationaleAI": "Cereals are the largest crop category (C.6.b), covering wheat, rice, maize, barley, oats, and millet, with processing into flour-based foods (F.2) and historical connections to Neolithic domestication (A)."
+    },
+    {
+      "articleTitle": "Hunting",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Hunting is explicitly addressed in the technology of hunting and fishing section (E), covering methods, wildlife management implications, and the historical role of hunting as primary food production prior to agriculture."
+    },
+    {
+      "articleTitle": "Chicken",
+      "relevantPathsAI": [
+        "D.2.e",
+        "D.1"
+      ],
+      "rationaleAI": "Chickens are the world's most numerous domesticated livestock (D.2.e: poultry), with specialized broiler and laying breeds (D.1: animal breeding) producing meat and over 300 eggs per year per high-production hen."
+    },
+    {
+      "articleTitle": "Cattle",
+      "relevantPathsAI": [
+        "D.2.a",
+        "D.1"
+      ],
+      "rationaleAI": "Cattle are the first-named livestock category (D.2.a), with coverage of taurine and zebu domestication, breeds for meat, dairy, and draft power, and animal breeding (D.1) including full genome mapping."
+    },
+    {
+      "articleTitle": "Horse",
+      "relevantPathsAI": [
+        "D.2.d",
+        "B.2"
+      ],
+      "rationaleAI": "Horses are listed in livestock (D.2.d) and were historically the primary draft animal in farm labour (B.2: farm labour and draft animals); the article covers domestication, breeds, and agricultural uses."
     },
     {
       "articleTitle": "Fertilizer",
-      "rationaleAI": "Fertilizers are essential inputs in modern agriculture and food production.",
       "relevantPathsAI": [
-        "A",
-        "B.4",
         "C.1",
-        "D.2.c",
-        "D.2.g",
-        "F.2",
-        "F.5",
-        "F.10",
-        "G.1.d",
-        "G.1.e"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Fertilizers are the primary inputs for soil preparation and care (C.1), the first step in crop farming; the article covers nitrogen, phosphorus, and potassium supply including the Haber-Bosch process and environmental impacts."
     },
     {
-      "articleTitle": "Food preservation",
-      "rationaleAI": "Food preservation is a key technology in agriculture and food production.",
+      "articleTitle": "History of agriculture",
       "relevantPathsAI": [
-        "F",
-        "F.8.a",
-        "F.8.b",
-        "G",
-        "G.1",
-        "G.1.a",
-        "G.1.b",
-        "G.1.c",
-        "G.1.d",
-        "G.1.e"
-      ]
+        "A"
+      ],
+      "rationaleAI": "History of agriculture maps exactly to outline section A, covering the full chronological arc from Neolithic origins through the British Agricultural Revolution, Green Revolution, and modern organic farming."
     },
     {
-      "articleTitle": "Garden",
-      "rationaleAI": "Gardening is a form of small-scale food production.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Irrigation",
-      "rationaleAI": "Irrigation is a fundamental technology supporting agriculture and food production.",
+      "articleTitle": "Cooking",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.3",
-        "C.6",
+        "F"
+      ],
+      "rationaleAI": "Cooking is the application of heat and technique to food processing (F broadly), covering grilling, baking, boiling, and advanced methods that underlie all food processing technologies from domestic to industrial scale."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
         "C.6.a",
-        "C.6.d",
-        "D.2.c"
-      ]
+        "F.1",
+        "C.2"
+      ],
+      "rationaleAI": "Fruits are a major horticultural crop (C.6.a: fruits and nuts), with fruit processing into juices, jams, and preserved products (F.1: fruit and vegetable processing) and cultivation connections to plant propagation (C.2)."
     },
     {
       "articleTitle": "Oven",
-      "rationaleAI": "Ovens are essential to food production and processing.",
       "relevantPathsAI": [
-        "D.2.c",
-        "F.5",
-        "F.7.a",
-        "G.1.d"
-      ]
+        "F.3",
+        "G.1.c"
+      ],
+      "rationaleAI": "Ovens are the central equipment for bakery production (F.3: bakery products) and are also used in high-temperature food preservation including canning and pasteurization processes (G.1.c)."
+    },
+    {
+      "articleTitle": "Potato",
+      "relevantPathsAI": [
+        "C.6.a",
+        "C.2",
+        "F.1"
+      ],
+      "rationaleAI": "Potato is a major horticultural/vegetable crop (C.6.a) with Andean domestication history (A), global cultivation (C.2), and processing into starch, flour, and packaged products (F.1)."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Pollution control in agriculture (B.4: farming in relation to pollution control) is a priority management concern; the article addresses agricultural runoff, pesticide use, and nonpoint source pollution from farming operations."
+    },
+    {
+      "articleTitle": "Nutrition",
+      "relevantPathsAI": [
+        "H.1",
+        "I"
+      ],
+      "rationaleAI": "Nutrition science informs sensory and chemical evaluation of food quality (H.1) and underpins new food product development (I: new food sources and market forms), particularly regarding nutrient density and new protein sources."
+    },
+    {
+      "articleTitle": "Fish",
+      "relevantPathsAI": [
+        "E",
+        "F.6"
+      ],
+      "rationaleAI": "Fish as food connects directly to fishing technology (E) and fish and marine products processing (F.6), covering the diversity of edible fish species, catch handling, and aquaculture alongside wild-catch fisheries."
+    },
+    {
+      "articleTitle": "Egg",
+      "relevantPathsAI": [
+        "D.2.e",
+        "F.12"
+      ],
+      "rationaleAI": "Eggs are the primary product of poultry farming (D.2.e) and are explicitly addressed in the egg and egg products processing node (F.12), covering collection, grading, preservation, and industrial use."
+    },
+    {
+      "articleTitle": "Irrigation",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4"
+      ],
+      "rationaleAI": "Irrigation is a core soil preparation and care technology (C.1), and the article covers specialized techniques including drip irrigation that relate to specialized farming (C.4: dryland, tropical, and greenhouse farming)."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Engines power farm machinery (B.2: farm labour and farm machinery), including tractors, combines, and irrigation pumps; the article covers internal combustion and other engine types central to modern mechanized agriculture."
+    },
+    {
+      "articleTitle": "Internal combustion engine",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Internal combustion engines are the dominant power source for farm machinery (B.2), powering tractors, harvesters, and other mechanized farm equipment; the article covers four-stroke diesel engines most commonly used in agriculture."
+    },
+    {
+      "articleTitle": "Neolithic Revolution",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The Neolithic Revolution is the foundational event in agricultural history (A), covering the polycentric transition from hunter-gatherer subsistence to sedentary farming and animal husbandry across multiple world regions."
+    },
+    {
+      "articleTitle": "Salt",
+      "relevantPathsAI": [
+        "F.9",
+        "G.1",
+        "G.1.e"
+      ],
+      "rationaleAI": "Salt is a fundamental food seasoning and preservative (F.9: spices and flavourings) and chemical preservation agent (G.1.e); the article covers salt's role in food preservation through salting, brining, and curing of meat and fish."
+    },
+    {
+      "articleTitle": "Sugar",
+      "relevantPathsAI": [
+        "F.10",
+        "C.6.d",
+        "F.4"
+      ],
+      "rationaleAI": "Sugar is explicitly addressed in cane sugar, beet sugar, and sweeteners (F.10) and as a major field crop—sugarcane and sugar beet—in C.6.d; it also connects to confectionery production (F.4)."
+    },
+    {
+      "articleTitle": "Alcoholic beverage",
+      "relevantPathsAI": [
+        "F.8",
+        "F.8.a",
+        "F.8.b",
+        "F.8.c"
+      ],
+      "rationaleAI": "Alcoholic beverages cover brewing (F.8.a), wine making (F.8.b), and distilled spirits production (F.8.c) in detail, with fermentation chemistry connecting to food preservation and beverage technology."
+    },
+    {
+      "articleTitle": "Coffee",
+      "relevantPathsAI": [
+        "F.8.d",
+        "C.6.d"
+      ],
+      "rationaleAI": "Coffee is a major nonalcoholic beverage (F.8.d: nonalcoholic beverages) and a significant tropical field crop (C.6.d: coffee, tea, cocoa, sugar, tobacco), covering cultivation, roasting, and global supply chains."
+    },
+    {
+      "articleTitle": "Pig",
+      "relevantPathsAI": [
+        "D.2.b",
+        "D.1"
+      ],
+      "rationaleAI": "Pigs are listed as swine in livestock (D.2.b) and independently domesticated in Near East and China (D.1: animal breeding), with the article covering pork production, ~1.5 billion animals globally, and biomedical significance."
+    },
+    {
+      "articleTitle": "Tree",
+      "relevantPathsAI": [
+        "C.6.c"
+      ],
+      "rationaleAI": "Trees are addressed in forest crops (C.6.c: trees, rubber), covering timber production, rubber trees (Hevea brasiliensis), and orchard cultivation; the article also connects to carbon sequestration relevant to B.4 (farming/environment)."
+    },
+    {
+      "articleTitle": "Soil",
+      "relevantPathsAI": [
+        "C.1",
+        "B.1"
+      ],
+      "rationaleAI": "Soil is the fundamental subject of soil preparation and care (C.1) and connects to basic farm management (B.1); the article covers soil composition, horizons, fertility, erosion threats, and agricultural management practices."
     },
     {
       "articleTitle": "Refrigeration",
-      "rationaleAI": "Refrigeration is essential to modern food preservation and production.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.2",
-        "B.3",
-        "C.3",
-        "C.6.d",
-        "D.2.c",
-        "D.2.g",
-        "E",
-        "F"
-      ]
+        "G.1.a",
+        "G.2"
+      ],
+      "rationaleAI": "Refrigeration is the subject of low-temperature preservation (G.1.a: refrigeration and freezing) and underpins food storage and packaging systems (G.2), connecting to cold-chain logistics for agricultural products."
     },
     {
-      "articleTitle": "Cotton",
-      "rationaleAI": "Cotton is a major agricultural crop in food and fiber production.",
+      "articleTitle": "Machine",
       "relevantPathsAI": [
-        "A",
-        "B.1",
-        "C",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6",
-        "C.6.a",
-        "C.6.d",
-        "D.2.c"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Machines are central to farm labour and farm machinery (B.2), covering simple machines through complex agricultural equipment such as plows, threshers, and combines that transformed agricultural productivity."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

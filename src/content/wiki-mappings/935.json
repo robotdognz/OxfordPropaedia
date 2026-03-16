@@ -1,251 +1,144 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "935",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The history of the Indian subcontinent is a major chapter in human civilization.",
+      "articleTitle": "Indus Valley Civilisation",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
         "B.2",
-        "B.3.a",
-        "B.4.a",
-        "B.5.a",
-        "B.7",
-        "B.7.a",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "The Indian subcontinent hosted major Asian civilizations including the Indus Valley, Maurya, and Gupta empires.",
-      "relevantPathsAI": [
-        "A",
-        "B.1",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "B.5.b",
-        "B.6",
-        "C"
-      ]
+        "B.2.a",
+        "B.2.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "The Indus Valley Civilisation directly covers all sub-paths of B.2: urban centres at Harappa and Mohenjo-daro (B.2.a), agriculture, metallurgy, pottery, and trade (B.2.b), and language and religious developments (B.2.c). This is the primary article for the Indus civilization section."
     },
     {
       "articleTitle": "Ashoka",
-      "rationaleAI": "Ashoka ruled the Maurya Empire and profoundly shaped the Indian subcontinent's political and religious landscape.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.b",
-        "B.4",
-        "B.4.a",
-        "B.4.b"
-      ]
-    },
-    {
-      "articleTitle": "The Buddha",
-      "rationaleAI": "The Buddha lived and taught in ancient India, shaping the religious and philosophical landscape of the Indian subcontinent.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "B.4.a",
-        "B.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Adi Shankara",
-      "rationaleAI": "Shankara's philosophical and institutional reforms shaped Hinduism across the Indian subcontinent in the early medieval period.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4.a",
-        "B.4.b",
-        "B.5"
-      ]
-    },
-    {
-      "articleTitle": "History of Asia",
-      "rationaleAI": "The history of Asia includes the rich civilizations of the Indian subcontinent.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
+        "B.5",
+        "B.5.a",
+        "B.5.b",
         "B.4.a"
-      ]
+      ],
+      "rationaleAI": "Ashoka is the central figure of B.5.a (consolidation of the Mauryan empire) and his dhamma-based governance directly addresses B.5.b (Mauryan economic, social, and administrative developments). His patronage of Buddhism and state-sponsored religious tolerance also relates to B.4.a's early development of Buddhism."
     },
     {
-      "articleTitle": "Indus Valley Civilisation",
-      "rationaleAI": "The Indus Valley Civilisation is the earliest known civilization of the Indian subcontinent.",
+      "articleTitle": "Alexander the Great",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
+        "B.4.b",
+        "B.6"
+      ],
+      "rationaleAI": "Alexander the Great's invasion of northwestern India in 327 BC is the precise event named in B.4.b, and the establishment of Greek settlements and resulting Hellenistic influence on South Asia (Greco-Buddhism, Indo-Greek kingdoms) is directly relevant to B.6 (rise of small kingdoms including Indo-Greek rulers)."
     },
     {
       "articleTitle": "Gupta Empire",
-      "rationaleAI": "The Gupta Empire presided over a golden age of Indian science, art, and culture on the Indian subcontinent.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "B.4.a"
-      ]
+        "C.1",
+        "C",
+        "D.3"
+      ],
+      "rationaleAI": "The Gupta Empire (c. 320–540 CE) is the central subject of outline path C.1, covering its expansion, administration, and the Hunnic invasions that ended it. Its cultural efflorescence in mathematics (Aryabhata), literature (Kalidasa), and Hindu consolidation also connects to C and D.3's social, economic, and cultural developments."
     },
     {
-      "articleTitle": "India",
-      "rationaleAI": "Ancient India's civilizations are directly covered in this section.",
+      "articleTitle": "Neolithic Revolution",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
-        "B.2",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "B.4.a"
-      ]
+        "B"
+      ],
+      "rationaleAI": "The Neolithic Revolution directly covers Late Stone Age to Neolithic settlement patterns, including Baluchistan and the Indus Valley as one of its independent agricultural centers, corresponding to B.1 (Late Stone Age hunters and Neolithic settlement). It provides the broader framework for understanding India's transition to sedentary agriculture."
     },
     {
-      "articleTitle": "Indian Ocean",
-      "rationaleAI": "The Indian Ocean facilitated trade networks linking South Asian civilizations.",
+      "articleTitle": "Achaemenid Empire",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.b",
-        "B.4.a",
+        "B.4",
+        "B.4.b"
+      ],
+      "rationaleAI": "The Achaemenid Empire controlled the Indus Valley region (its easternmost satrapy) during the Pre-Mauryan period (B.4), providing the political context for Alexander's invasion (B.4.b) and the establishment of Greek settlements. It directly shaped the political landscape of northwestern India outlined in B.4."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
         "B.4.b",
-        "B.5.a"
-      ]
+        "B.6"
+      ],
+      "rationaleAI": "Ancient Greece covers Alexander's Indian campaign (B.4.b) and the resulting Hellenistic period that produced the Indo-Greek kingdoms directly named in B.6 (rise of small kingdoms with Indo-Greek rulers). Greek cultural influence on Gandhara art and religion is substantive for this section."
     },
     {
-      "articleTitle": "Ganges",
-      "rationaleAI": "The Ganges valley was the heartland of ancient Indian civilization.",
+      "articleTitle": "Stone Age",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1",
-        "B.2",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4",
-        "B.4.a"
-      ]
+        "B"
+      ],
+      "rationaleAI": "The Stone Age article directly covers the prehistoric period relevant to B.1 (Late Stone Age hunters in Baluchistan and Indus Valley), addressing lithic technology, hunter-gatherer subsistence, and the transition to Neolithic agriculture that preceded Indus Valley civilization."
     },
     {
-      "articleTitle": "Buddhism",
-      "rationaleAI": "Buddhism originated in the Indian subcontinent covered here.",
+      "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "B.7.a",
+        "D.3"
+      ],
+      "rationaleAI": "The Silk Road covers maritime trade networks that connected South India with the West (B.7.a: development of guilds, banking, and extensive maritime trade), and the broader overland and maritime commerce that shaped cultural and economic development in D.3's feudalism and economic decentralization."
+    },
+    {
+      "articleTitle": "History of agriculture",
+      "relevantPathsAI": [
         "B.1",
-        "B.2",
         "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "History of agriculture covers the Indian subcontinent as one of its independent agricultural origins, relevant to B.1 (Neolithic settlement) and B.2.b (Indus Valley agriculture and animal husbandry). The development of Ganges Valley agriculture through B.3 is also addressed in its survey of South Asian farming history."
     },
     {
-      "articleTitle": "Hinduism",
-      "rationaleAI": "Hinduism has been central to Indian civilization since its origins.",
+      "articleTitle": "Pottery",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
         "B.2.b",
-        "B.2.c",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Pottery is among humanity's oldest technologies and the Indus Valley Civilisation produced distinctive ceramic traditions directly relevant to B.2.b (developments in metalwork, pottery, and transportation). The article contextualizes South Asian pottery within global ceramic history and archaeological significance."
     },
     {
-      "articleTitle": "Vedas",
-      "rationaleAI": "The Vedic period is a formative era in Indian subcontinent history.",
+      "articleTitle": "Sumer",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2.c",
-        "B.3",
-        "B.3.b",
-        "B.4.a",
-        "B.4.b",
-        "B.5.a",
-        "B.5.b"
-      ]
+        "B.2.b"
+      ],
+      "rationaleAI": "Sumer had documented trade connections with the Indus Valley, directly relevant to B.2.b's coverage of Indus transportation and trade. The article addresses Sumerian trade networks including connections to the Indus Valley, making it the primary source for contextualizing Indus-Mesopotamia exchange."
     },
     {
-      "articleTitle": "Jainism",
-      "rationaleAI": "Jainism originated in the Indian subcontinent.",
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "A",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Post-classical history covers South and Southeast Asia including Indian kingdoms of the 500–1200 CE period, directly corresponding to sections C (Gupta successors, Deccan kingdoms, Pallava South India) and D (North India 750–1200, Chola rise). It frames Indian developments within the global post-classical system of trade and religious diffusion."
+    },
+    {
+      "articleTitle": "Himalayas",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The Himalayas article addresses the physical geography of the Indian subcontinent that shaped its civilizations, directly relevant to outline path A's coverage of the geography and ethnography of the Indian subcontinent. As the primary geographic barrier defining the subcontinent, it is essential context for the introduction."
+    },
+    {
+      "articleTitle": "History of art",
+      "relevantPathsAI": [
+        "B.7.b",
+        "C.3",
+        "D.3"
+      ],
+      "rationaleAI": "History of art covers Indian, Buddhist, and Hindu artistic traditions including the Gandhara and Gupta periods, directly relevant to B.7.b (patronage of religious art and literature in South Indian civilizations), C.3 (Pallava developments in religious art and architecture), and D.3 (literature and the visual arts in medieval India)."
+    },
+    {
+      "articleTitle": "Ancient history",
+      "relevantPathsAI": [
         "B",
         "B.1",
         "B.2",
-        "B.2.c",
         "B.3",
-        "B.3.a",
-        "B.3.b",
         "B.4",
-        "B.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Brahmic scripts",
-      "rationaleAI": "Brahmic scripts developed in the Indian subcontinent.",
-      "relevantPathsAI": []
+        "B.5"
+      ],
+      "rationaleAI": "Ancient history (writing to AD 500) encompasses South Asia as a covered region, providing broad coverage of Indian prehistoric and early historic civilization corresponding to the full B section (prehistoric period to AD 300). It addresses the Indus Valley, Vedic cultures, and the Mauryan empire within the three-age archaeological framework."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

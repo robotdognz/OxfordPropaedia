@@ -1,572 +1,299 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "541",
   "mappings": [
     {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "Political theory has deep roots in philosophical traditions of ethics and governance.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Political theory addresses the philosophical foundations of societal governance.",
-      "relevantPathsAI": [
-        "A.4",
-        "A.5.a",
-        "A.5.b",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Ethics",
-      "rationaleAI": "Ethics provides the moral philosophical foundations that underpin political theory, including questions of justice, rights, and the good society.",
-      "relevantPathsAI": [
-        "C"
-      ]
-    },
-    {
       "articleTitle": "Government",
-      "rationaleAI": "Government is the institutional expression of political theory, embodying ideas about sovereignty, legitimacy, and the common good.",
       "relevantPathsAI": [
         "A.4",
-        "A.4.b",
         "A.5",
-        "A.5.a",
-        "A.5.b",
-        "B.4",
-        "C",
-        "C.3",
-        "C.3.a",
-        "C.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Law",
-      "rationaleAI": "Legal systems embody political theory about authority, rights, and justice, linking law to fundamental questions of governance.",
-      "relevantPathsAI": [
-        "A.4.b",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "C.3.a",
-        "C.4.b",
-        "C.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Politics",
-      "rationaleAI": "Political theory provides the philosophical foundations for understanding political activity, power, and governance.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.d",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "C",
-        "C.1",
-        "C.3"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers constitutional frameworks and forms of government authority (A.4, A.5), and the institutional organization of political action through legislative, executive, and judicial branches relevant to B; provides structural context for political theory discussions of legitimacy."
     },
     {
       "articleTitle": "State (polity)",
-      "rationaleAI": "The state as a political entity is a central concept in political theory, from Hobbes's Leviathan to modern theories of sovereignty.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Mahatma Gandhi",
-      "rationaleAI": "Gandhi's philosophy of nonviolent resistance became a foundational contribution to modern political theory.",
-      "relevantPathsAI": [
-        "A",
+        "A.1",
         "A.2",
         "A.4",
         "A.4.b",
-        "A.4.d",
-        "B.4",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Mao Zedong",
-      "rationaleAI": "Mao's adaptation of Marxism-Leninism into Maoism constituted a major contribution to 20th-century political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "A.5.b",
-        "B.4",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Cicero",
-      "rationaleAI": "Cicero's works on republicanism, natural law, and justice are foundational texts in Western political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Niccolò Machiavelli",
-      "rationaleAI": "Machiavelli's The Prince is a foundational work of modern political theory on power, statecraft, and governance.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.a",
-        "A.4.b",
-        "A.4.d",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "John Locke",
-      "rationaleAI": "Locke's social contract theory and defense of individual rights profoundly influenced modern liberal political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "A.5.b",
-        "B",
-        "B.4",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Mary Wollstonecraft",
-      "rationaleAI": "Wollstonecraft's A Vindication of the Rights of Woman is a foundational text in feminist political theory.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "C.2",
-        "C.3.a",
-        "C.4.a",
-        "C.4.b",
-        "C.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Karl Marx",
-      "rationaleAI": "Marx's theories of class struggle and historical materialism are among the most influential frameworks in modern political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Age of Enlightenment",
-      "rationaleAI": "Enlightenment thinkers articulated theories of natural rights, social contract, and liberal governance that shaped modern political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5",
-        "A.5.a",
-        "A.5.b",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "American Revolution",
-      "rationaleAI": "The American Revolution put Enlightenment political theories of natural rights and self-governance into practice.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5.c",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "French Revolution",
-      "rationaleAI": "The French Revolution enacted Enlightenment ideals of liberty, equality, and popular sovereignty, reshaping political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Secularism",
-      "rationaleAI": "Secularism is a political theory about the separation of religion and state.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "C",
-        "C.3.a",
-        "C.3.b",
-        "C.4",
-        "C.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Power (social and political)",
-      "rationaleAI": "Power is a central concept in political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.4.b",
-        "A.5.a",
-        "B",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3.a",
-        "C.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Political science",
-      "rationaleAI": "Political science studies the theories underlying political systems.",
-      "relevantPathsAI": [
-        "A.5.a",
-        "A.5.c",
-        "C",
-        "C.3.a",
-        "C.3.b",
-        "C.4"
-      ]
+        "A.4.d"
+      ],
+      "rationaleAI": "Directly addresses A.1 (sovereignty as a property of statehood), A.2 (state and individual relationship), and multiple A.4 legitimacy theories including social contract, divine right, and anarchist critiques of the state; theories of state formation and failure map to A.4 branches."
     },
     {
       "articleTitle": "Democracy",
-      "rationaleAI": "Democracy is a fundamental concept in political theory.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.c",
+        "A.4.a",
         "A.5",
         "A.5.a",
-        "A.5.b",
-        "A.5.c",
+        "B.2",
         "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Dictatorship",
-      "rationaleAI": "Dictatorship is a form of political organization addressed in political theory.",
-      "relevantPathsAI": [
-        "A.4"
-      ]
+      ],
+      "rationaleAI": "Directly covers A.4.a (popular sovereignty and continuing consent of the governed) and A.5 (constitutionalism in direct, representative, and constitutional forms); connects to B.2 (political parties as vehicles of democratic action) and B.4 (public opinion in democratic systems)."
     },
     {
       "articleTitle": "Monarchy",
-      "rationaleAI": "Monarchy is a fundamental concept in political theory.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
         "A.4.c",
         "A.4.d",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Ideology",
-      "rationaleAI": "Ideology provides the theoretical frameworks underlying political systems.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.4",
-        "C",
-        "C.1"
-      ]
+        "A.2"
+      ],
+      "rationaleAI": "Directly addresses A.4.c (venerable sanction: hereditary succession and constitutional monarchy) and A.4.d (divine right theory in absolute monarchies); the transition to constitutional monarchy informs A.2 (state\u2013individual relationship and civil liberties)."
     },
     {
       "articleTitle": "Anarchism",
-      "rationaleAI": "Anarchism is a political theory opposing state authority.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5",
-        "A.5.a",
-        "B.4",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Capitalism",
-      "rationaleAI": "Capitalism has political theoretical dimensions regarding state and market.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "C",
-        "C.3",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Communism",
-      "rationaleAI": "Communism is a major political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Conservatism",
-      "rationaleAI": "Conservatism is a major political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "C",
-        "C.3",
-        "C.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Fascism",
-      "rationaleAI": "Fascism is a political theory and ideology.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.a",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.1",
-        "B.2"
-      ]
+        "C.3.b",
+        "C.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers C.3.b.i as the anarchist ideological tradition, including its rejection of state authority and coercive hierarchy; its analysis of C.1 (political power as illegitimate) and A.2 (radical position on state\u2013individual relations) makes it central to the ideologies section."
     },
     {
       "articleTitle": "Liberalism",
-      "rationaleAI": "Liberalism is a foundational political theory.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.b",
-        "A.4.d",
-        "A.5",
-        "A.5.a",
-        "B",
-        "B.1",
-        "B.3",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Nationalism",
-      "rationaleAI": "Nationalism is a major political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Socialism",
-      "rationaleAI": "Socialism is a major political and economic theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B",
-        "B.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Nation",
-      "rationaleAI": "The concept of nationhood is central to political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.4.b",
-        "A.4.d",
-        "B.1",
-        "B.4",
-        "C",
-        "C.1",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Discrimination",
-      "rationaleAI": "Anti-discrimination principles are central to political theory.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4.b",
-        "A.5.a",
-        "C",
-        "C.4.a",
-        "C.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Feminism",
-      "rationaleAI": "Feminism is a political theory addressing gender equality.",
-      "relevantPathsAI": [
-        "A.4.b",
-        "A.5",
-        "A.5.a",
-        "C",
-        "C.3",
-        "C.3.a",
         "C.3.b",
-        "C.3.i.iv",
-        "C.3.v.viii"
-      ]
+        "A.4.a",
+        "A.4.b",
+        "A.2",
+        "A.5"
+      ],
+      "rationaleAI": "Directly covers C.3.b.v as the liberal political philosophy tradition; its core tenets of consent of the governed and individual rights map to A.4.a (popular sovereignty), A.4.b (social contract from Locke/Hobbes), and A.5 (constitutional government and rule of law)."
     },
     {
       "articleTitle": "Human rights",
-      "rationaleAI": "Human rights are central to political theory.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
+        "C.2",
         "A.2",
-        "A.3",
-        "A.4",
-        "A.4.a",
+        "C.4"
+      ],
+      "rationaleAI": "Directly covers C.2 (the concept of human rights including civil, political, economic, social, and cultural rights) and A.2 (state\u2013individual relationship through rights frameworks); the UDHR and international enforcement connect to C.4 (contemporary political issues)."
+    },
+    {
+      "articleTitle": "John Locke",
+      "relevantPathsAI": [
         "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "C"
-      ]
+        "A.4.a",
+        "A.2",
+        "C.3.b"
+      ],
+      "rationaleAI": "Foundational to A.4.b (social contract theory: natural rights, consent of the governed, right of revolution from Two Treatises); directly informs A.4.a (popular sovereignty) and C.3.b.v (classical liberalism) as the intellectual origin of liberal constitutionalism."
+    },
+    {
+      "articleTitle": "Conservatism",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.3.a"
+      ],
+      "rationaleAI": "Directly covers C.3.b.iii as the conservative ideological tradition emphasizing tradition, hierarchy, and established authority; addresses C.3.a (the relationship between ideological commitment and civil/reform politics) through its acceptance of incremental versus revolutionary change."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.3.a"
+      ],
+      "rationaleAI": "Directly covers C.3.b.viii as the socialist ideological tradition; debates on reform versus revolution address C.3.a (ideology's relationship to civil politics); connections to communism and anarchism span adjacent outline positions C.3.b.ii and C.3.b.i."
     },
     {
       "articleTitle": "Liberty",
-      "rationaleAI": "Liberty is a foundational concept in political theory.",
       "relevantPathsAI": [
-        "A",
         "A.2",
-        "A.4.b",
-        "A.5.a",
-        "B",
-        "C",
         "C.1",
+        "C.3.b"
+      ],
+      "rationaleAI": "Negative and positive liberty (Berlin's framework) map directly to A.2 (the state\u2013individual relationship through rights and freedom) and C.1 (political power as constraint on or enabler of liberty); contested across the ideological traditions of C.3.b including liberalism, anarchism, and socialism."
+    },
+    {
+      "articleTitle": "Ideology",
+      "relevantPathsAI": [
         "C.3",
         "C.3.a",
         "C.3.b"
-      ]
+      ],
+      "rationaleAI": "Directly covers C.3.a (the nature and function of ideology in political systems and movements) and the theoretical framework for understanding all C.3.b ideological traditions; Marxist false consciousness and Inglehart's value-shift are canonical political theory analyses."
     },
     {
-      "articleTitle": "Privacy",
-      "rationaleAI": "Privacy is a political concept related to individual rights.",
+      "articleTitle": "Fascism",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
+        "C.3.b",
+        "C.3.a"
+      ],
+      "rationaleAI": "Directly covers C.3.b.iv as the fascist ideological tradition including ultranationalism, authoritarianism, and rejection of both liberal democracy and Marxism; its mass-mobilization aesthetics and relationship to C.3.a (ideology and political systems) are central topics."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.3.a",
+        "A.4"
+      ],
+      "rationaleAI": "Directly covers C.3.b.vi (Marxism: historical materialism, class struggle, theory of the state) and C.3.b.ii (communism as transition from capitalism); his theory of the state as class instrument and ideology as false consciousness addresses A.4 (legitimacy) and C.3.a (ideology function)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.4.a",
         "A.4.b",
-        "A.4.d",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c",
-        "C.2"
-      ]
+        "A.5",
+        "C.3.b"
+      ],
+      "rationaleAI": "The Enlightenment is the intellectual seedbed for A.4.a (popular sovereignty), A.4.b (social contract theory from Locke, Rousseau, Montesquieu), and A.5 (constitutional government and separation of powers); foundational to C.3.b.v (liberalism) and C.3.b.viii (early socialism)."
+    },
+    {
+      "articleTitle": "Communism",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.3.a",
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers C.3.b.ii as the communist ideological tradition including Marxist-Leninist variants and the goal of a stateless classless society; its mass-party political organization maps to B.2 (political action by organized parties) as the vanguard party model."
+    },
+    {
+      "articleTitle": "Nationalism",
+      "relevantPathsAI": [
+        "C.3.b",
+        "A.1",
+        "C.4.e"
+      ],
+      "rationaleAI": "Directly covers C.3.b.vii as the nationalist ideological tradition asserting congruence of nation and state; connects to A.1 (sovereignty and statehood as the basis of nationalist claims) and C.4.e (adapting traditional political forms, including national self-determination, to changing conditions)."
+    },
+    {
+      "articleTitle": "Secularism",
+      "relevantPathsAI": [
+        "C.4.a"
+      ],
+      "rationaleAI": "Directly addresses C.4.a (the problem of church and state: its background and contemporary form), covering hard secularism, soft secularism, and la\u00efcit\u00e9 as frameworks for separating religious from governmental authority in modern states."
+    },
+    {
+      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "relevantPathsAI": [
+        "C.1",
+        "A.4",
+        "A.5.a"
+      ],
+      "rationaleAI": "Machiavelli's realpolitik analysis of power (The Prince) is foundational to C.1 (the concept of political power); his empirical approach to governance and legitimacy informs A.4 (bases of authority), and Discourses on Livy addresses A.5.a (origins and theories of constitutional/republican government)."
+    },
+    {
+      "articleTitle": "Power (social and political)",
+      "relevantPathsAI": [
+        "C.1",
+        "B",
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers C.1 (the concept of political power) through Foucault, Gramsci, Galbraith, and French & Raven's taxonomies; connects to B (patterns of political action mediated through power) and A.2 (power relations between state and individual)."
+    },
+    {
+      "articleTitle": "Dictatorship",
+      "relevantPathsAI": [
+        "A.4",
+        "A.2",
+        "C.3.b"
+      ],
+      "rationaleAI": "Covers non-democratic bases of authority (A.4) through military, one-party, and personalist subtypes; directly addresses A.2 (the subordination of individual to state power) and overlaps with C.3.b.iv (fascist totalitarianism as a subtype of dictatorial rule)."
+    },
+    {
+      "articleTitle": "Community",
+      "relevantPathsAI": [
+        "B.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly addresses the priority path B.1 (political action within small groups, villages, and communities) through Gemeinschaft/Gesellschaft analysis of community bonds, governance, and social capacity development; connects to A.2 via civil society and community-level state\u2013individual relations."
+    },
+    {
+      "articleTitle": "Politics",
+      "relevantPathsAI": [
+        "B",
+        "C.1",
+        "C.4"
+      ],
+      "rationaleAI": "Provides the overarching framework for B (patterns of political action through parties, groups, public opinion) and C.1 (power distribution); covers the left\u2013right ideological spectrum that contextualizes C.3.b and contemporary political issues across C.4."
+    },
+    {
+      "articleTitle": "Mary Wollstonecraft",
+      "relevantPathsAI": [
+        "C.2",
+        "A.2",
+        "C.3.b"
+      ],
+      "rationaleAI": "Vindication of the Rights of Woman grounds feminist political theory in C.2 (human rights derived from rational Enlightenment equality) and A.2 (relationship between state/society and individual); positioned within C.3.b.v as a founding text of liberal political thought applied to gender."
+    },
+    {
+      "articleTitle": "Nation",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3",
+        "C.3.b"
+      ],
+      "rationaleAI": "The concept of the nation is foundational to A.1 (statehood and sovereignty), A.3 (the national state in the international community), and C.3.b.vii (nationalism as the ideology of national self-determination)."
+    },
+    {
+      "articleTitle": "European Union",
+      "relevantPathsAI": [
+        "A.3",
+        "C.4.c"
+      ],
+      "rationaleAI": "The EU directly illustrates A.3 (the national state in the international community) as a supranational body with binding authority over member states, and C.4.c (the problem of international cooperation and integration) through its institutional architecture."
     },
     {
       "articleTitle": "Social equality",
-      "rationaleAI": "Equality is a foundational concept in political theory.",
       "relevantPathsAI": [
-        "A.4.b"
-      ]
+        "C.2",
+        "A.2"
+      ],
+      "rationaleAI": "Covers formal and substantive equality as dimensions of C.2 (human rights) including civil rights, equal access, and non-discrimination; grounded in Enlightenment liberalism and social contract theory that underpins A.2 (state\u2013individual relations)."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A.3",
+        "C.3.b",
+        "C.4.e"
+      ],
+      "rationaleAI": "Covers the extension of state power internationally (A.3) through hard and soft power; nationalist resistance and anti-imperialism connect to C.3.b.vii, while adapting political forms under imperial or colonial conditions maps to C.4.e."
+    },
+    {
+      "articleTitle": "Feminism",
+      "relevantPathsAI": [
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Feminist political philosophy directly addresses C.2 (human rights, equal rights for women) and contemporary political issues in C.4 including equality legislation and the adaptation of political institutions to include previously excluded groups."
+    },
+    {
+      "articleTitle": "French Revolution",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.5",
+        "A.4.d"
+      ],
+      "rationaleAI": "The French Revolution is the defining political event for A.4.a (popular sovereignty displacing divine-right monarchy) and A.5 (constitutional government emerging from revolutionary principles); the Declaration of the Rights of Man combines A.4.a and early human rights theory."
+    },
+    {
+      "articleTitle": "City",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Directly addresses the priority-adjacent path C.4.b (the urban problem: administration of cities and metropolitan areas) through coverage of municipal governance, urban planning, and global-city theory as political and administrative challenges."
+    },
+    {
+      "articleTitle": "Property",
+      "relevantPathsAI": [
+        "A.2",
+        "C.3.b"
+      ],
+      "rationaleAI": "Property rights are a central axis of A.2 (state\u2013individual relations) and of ideological debates in C.3.b, from Locke's labor theory (underpinning liberalism) through Proudhon's 'property is theft' (anarchism) and Marx's critique (Marxism)."
+    },
+    {
+      "articleTitle": "Political science",
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
+      "rationaleAI": "Political science as an empirical discipline frames the study of political theory (A) and political concepts/ideologies (C); its subfields of political theory, comparative politics, and public policy directly overlap with the content of Section 541's outline."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,150 +1,137 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/11",
   "mappings": [
     {
-      "articleTitle": "Mathematics",
-      "rationaleAI": "Logic shares deep foundations with mathematics and is historically intertwined with mathematical reasoning.",
+      "articleTitle": "Kurt Gödel",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "The history and philosophy of logic is a core branch of philosophical inquiry.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3.b",
-        "A.3.c",
-        "A.5",
-        "A.5.a",
-        "A.5.b"
-      ]
+        "A.4.b",
+        "A.4.c",
+        "B.1.b"
+      ],
+      "rationaleAI": "Gödel's incompleteness theorems are a defining result in 20th-century logic (A.4.b/c) and his metalogical work on the limits of formal systems — including consistency and completeness — is central to B.1.b. He also contributed to modal logic and proof theory, directly relevant to A.4."
     },
     {
       "articleTitle": "Logic",
-      "rationaleAI": "Logic as a discipline is the direct subject of this section covering its history and philosophical foundations.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers the entire history of logic from Aristotle through Frege to contemporary proof systems (A) and the philosophy of logic including metalogic, formal semantics, and alternative logics (B). Serves as a broad overview article for both major divisions of this section."
     },
     {
-      "articleTitle": "Number",
-      "rationaleAI": "Number theory connects to logic through the foundations of mathematics, including Goedel's incompleteness theorems and formal systems.",
+      "articleTitle": "Aristotle",
       "relevantPathsAI": [
-        "A.1.a",
         "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Kurt Gödel",
-      "rationaleAI": "Gödel's incompleteness theorems are the most important results in the history and philosophy of logic.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.a",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Alan Turing",
-      "rationaleAI": "Turing's work on computability and the halting problem made fundamental contributions to formal logic and metalogic.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.a"
-      ]
+        "A.1.c"
+      ],
+      "rationaleAI": "Aristotle is the primary figure at A.1.b — the logic of predicates, syllogistic, and modal logic — and Theophrastus (A.1.c) was Aristotle's student, making Aristotle essential context for later developments in predicate logic. Regarded as the founder of formal logic."
     },
     {
       "articleTitle": "Reason",
-      "rationaleAI": "Reason is the foundation of logic as a branch of knowledge.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
+        "B.1.a",
+        "B.2.a"
+      ],
+      "rationaleAI": "Addresses the nature and varieties of reasoning — deductive, inductive, abductive — and contrasts formal reason with substantive reason, relevant to B.1.a (the nature and varieties of logic). Its treatment of logical semantics and cognitive biases also connects to B.2.a (problems in meaning and truth)."
     },
     {
-      "articleTitle": "Truth",
-      "rationaleAI": "Truth is a central concept in logic.",
+      "articleTitle": "Philosophy",
       "relevantPathsAI": [
-        "A",
+        "B.1.a"
+      ],
+      "rationaleAI": "Logic is listed as a core branch of philosophy, and this article situates logic within the broader landscape of philosophical inquiry; relevant to B.1.a as context for differing conceptions of logic's field and scope. Overlap is moderate but fills a gap as a high-level orientation article."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Surveys the development of philosophical traditions across Western, Islamic, Indian, and Chinese contexts, which are precisely the civilizations whose logical contributions are traced in A.1–A.5 (ancient, medieval, modern, 20th century, and Eastern logic). Provides narrative framing for the historical development of logic as embedded in broader intellectual history."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "The Islamic Golden Age covers Arabic contributions to medieval logic — explicitly referenced in A.2.a — including the transmission of Aristotle's Organon into Arabic and subsequent logical commentaries by scholars such as Avicenna and Averroes."
+    },
+    {
+      "articleTitle": "Ontology",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Ontology addresses problems of individuation, existence, and what entities there are — directly corresponding to B.2.b (problems of ontology in the philosophy of logic). Quine's criterion of ontological commitment connects formal logic to existence claims."
+    },
+    {
+      "articleTitle": "Western philosophy",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Traces Western philosophical traditions through precisely the periods and figures relevant to A.1–A.4: ancient Greek logic (Aristotle, Stoics), medieval Scholasticism, early modern (Leibniz, Ramus), and 20th-century analytic philosophy with its logical foundations (Frege, Russell, Wittgenstein)."
+    },
+    {
+      "articleTitle": "Eastern philosophy",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.b"
+      ],
+      "rationaleAI": "Covers Indian logic (Nyaya school, inference theory) and Chinese philosophical traditions including Mohism with its logical elements, directly corresponding to A.5.a (Indian logic) and A.5.b (Chinese logic)."
+    },
+    {
+      "articleTitle": "Alan Turing",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.1.b"
+      ],
+      "rationaleAI": "Turing's formalization of computability and decidability (the Entscheidungsproblem) is a landmark in 20th-century logic (A.4.b — developments in the logic of predicates) and directly addresses the question of logic and computability mentioned in B.1.b."
+    },
+    {
+      "articleTitle": "Avicenna",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Avicenna's logical works in The Book of Healing cover both Aristotelian predicate logic and modal logic, forming part of the Arabic contribution to medieval logic specifically cited in A.2.a. He was among the most influential Islamic logicians whose work was later transmitted to the Latin West."
     },
     {
       "articleTitle": "Mathematical proof",
-      "rationaleAI": "Proof methodology connects mathematics to the philosophy of logic.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c"
-      ]
+        "A.3.c",
+        "B.1.b"
+      ],
+      "rationaleAI": "Mathematical proof sits at the intersection of logic and mathematics; its formal methods (axiomatic deduction, inference rules) connect to A.3.c (development of mathematical logic in the 19th century) and B.1.b (features and problems of logic including limitations and Gödel's theorems)."
+    },
+    {
+      "articleTitle": "Set (mathematics)",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.4.a"
+      ],
+      "rationaleAI": "Cantor's set theory and its relation to the foundations of mathematics is explicitly cited in A.3.c; the conflict between Logicism, Intuitionism, and Formalism in A.4.a was largely precipitated by the paradoxes of naive set theory (Russell's paradox) leading to ZFC axiomatization."
+    },
+    {
+      "articleTitle": "History of mathematics",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c",
+        "A.4.a"
+      ],
+      "rationaleAI": "Traces the rise of mathematical logic during the Enlightenment (A.3.b — Leibniz), 19th-century logic developments (A.3.c — Boole, Frege, Cantor), and 20th-century foundational debates (A.4.a — Logicism vs. Intuitionism vs. Formalism), making it substantively relevant to the modern history of logic section."
+    },
+    {
+      "articleTitle": "René Descartes",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Descartes represents the Renaissance-to-Enlightenment transition in logic and method — his rationalist epistemology and mathematical method connect to A.3.a (logic in the Renaissance, influence of natural sciences) and A.3.b (the rise of mathematical reasoning during the Enlightenment)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

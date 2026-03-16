@@ -1,35 +1,90 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "944",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Central African history contributes to the global narrative of human history.",
+      "articleTitle": "History of Africa",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1"
-      ]
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the Bantu expansion (3000 BCE–500 CE) across sub-Saharan Africa, medieval Great Lakes kingdoms, and oral tradition as a primary historical source, directly relevant to A's historiographic context and the Bantu origins and state-formation described in B.1 and B.2."
     },
     {
       "articleTitle": "Africa",
-      "rationaleAI": "Central African kingdoms including Kongo and Luba developed sophisticated political and trade systems documented in this section.",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Provides geographic and demographic overview of the continent including the Bantu expansion and major pre-colonial empires, grounding A's definition of the Central African region and B.1's origins of Bantu-speaking peoples."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the African Stone Age with the Early, Middle, and Later Stone Age periodization used in sub-Saharan African archaeology, directly relevant to B.1's focus on Stone Age origins of Central African cultures."
+    },
+    {
+      "articleTitle": "Iron Age",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Explicitly covers the sub-Saharan African Iron Age and its relationship to Bantu-speaking peoples' expansion and state formation, directly addressing B.1's emergence and expansion of Bantu-speaking peoples."
     },
     {
       "articleTitle": "Democratic Republic of the Congo",
-      "rationaleAI": "The Congo region's pre-colonial history is the focus of Central Africa to 1885.",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
         "B.2"
-      ]
+      ],
+      "rationaleAI": "Covers the Congo Basin as the geographic heart of Central Africa, the history of the Kongo kingdom (specifically Leopold II's Congo Free State which built on prior Kongo structures), and the DRC's ethnolinguistic diversity, directly relevant to A and B.2 (Kongo kingdom, Congo region states)."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the Central African dimension of the slave trade, including the role of the Kongo kingdom and Luba-Lunda network territories as source regions for enslaved people, directly relevant to B.2's development of Bantu states and their interaction with European traders."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers Portuguese Atlantic and Indian Ocean expansion that brought European contact with Central African coastal kingdoms (including the Kongo), providing the external context within which B.2's Bantu states developed relations with European powers."
+    },
+    {
+      "articleTitle": "Scramble for Africa",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Covers the 1884 Berlin Conference partition of Central Africa among European powers, directly shaping the historiographic boundaries and documentary sources discussed in A, and marking the endpoint of the pre-colonial Central African period described in B."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Covers sub-Saharan Africa's place in the c. 500–1500 CE global framework of civilizational expansion and oral-tradition-based societies, providing broader context for A's historiographic challenges and B.1's Stone Age to early Bantu transition."
+    },
+    {
+      "articleTitle": "Prehistory",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the prehistoric period as known exclusively through archaeological and material evidence — the primary source base for Central African Stone Age cultures described in B.1 — including the methodological challenges of protohistory relevant to A."
+    },
+    {
+      "articleTitle": "Swahili",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "As a Bantu language with documented historical spread across central and eastern Africa, Swahili illustrates the linguistic dimension of the Bantu expansion addressed in B.1, though its coastal focus limits direct relevance to Central Africa's interior Bantu-speaking cultures."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

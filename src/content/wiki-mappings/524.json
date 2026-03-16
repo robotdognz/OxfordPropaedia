@@ -1,159 +1,256 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "524",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Urban and rural communities represent the spatial organization of human society.",
+      "articleTitle": "Urbanization",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3.g",
-        "B.4.c",
-        "B.4.d"
-      ]
-    },
-    {
-      "articleTitle": "Geography",
-      "rationaleAI": "Human geography studies the spatial distribution of populations in urban and rural communities.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.3.g",
+        "B.1",
         "B.2",
-        "B.3.a",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Human settlement",
-      "rationaleAI": "Human settlements, from villages to megacities, are the primary subject of the study of urban and rural communities.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.3.g",
-        "B.2",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Civilization",
-      "rationaleAI": "Cities and urban centers are the defining spatial feature of civilizations, concentrating population and cultural activity.",
-      "relevantPathsAI": [
-        "A",
-        "A.3.g",
-        "A.5",
-        "B.2",
-        "B.3",
-        "B.4.a",
-        "B.4.c",
-        "B.4.d"
-      ]
+        "B.4",
+        "B.4.b",
+        "B.4.e",
+        "B.4.f"
+      ],
+      "rationaleAI": "Directly covers B.1 characteristics and B.2 history of urbanization; addresses suburbanization (B.4.b), urban growth problems (B.4.e), and environmental consequences such as urban heat islands and water quality deterioration (B.4.f)."
     },
     {
       "articleTitle": "City",
-      "rationaleAI": "Cities are the primary form of urban community in human populations.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.f",
-        "A.3.g",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Town",
-      "rationaleAI": "Towns are a form of human settlement bridging rural and urban communities.",
-      "relevantPathsAI": [
-        "B",
-        "B.3",
-        "B.3.a",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Urbanization",
-      "rationaleAI": "Urbanization is the demographic shift from rural to urban communities.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.c",
-        "A.2",
-        "A.3.g",
-        "A.5",
         "B.1",
         "B.2",
         "B.3",
-        "B.3.a"
-      ]
+        "B.4"
+      ],
+      "rationaleAI": "Covers the full developmental arc of cities from ancient through post-industrial forms (B.2), characteristics of urban settlements including governance and infrastructure (B.1), urban planning (B.3), and contemporary urbanization trends and global-city theory (B.4)."
     },
     {
-      "articleTitle": "Village",
-      "rationaleAI": "Villages are the primary form of rural community in human populations.",
+      "articleTitle": "Cairo",
       "relevantPathsAI": [
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.4.d",
+        "B.2",
         "B.4.e"
-      ]
+      ],
+      "rationaleAI": "Illustrates B.2 history of urbanization through its millennium-long development under successive dynasties, and exemplifies B.4.e problems of urban growth including traffic congestion and pollution in a major African megacity."
     },
     {
-      "articleTitle": "Community",
-      "rationaleAI": "Communities are the basis of urban and rural human populations.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Disability",
-      "rationaleAI": "Disability affects participation in human populations and communities.",
+      "articleTitle": "Lagos",
       "relevantPathsAI": [
-        "A",
-        "A.1.c",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3.f",
-        "A.3.g",
-        "A.5",
-        "B.3"
-      ]
+        "B.1",
+        "B.2",
+        "B.4.a",
+        "B.4.e"
+      ],
+      "rationaleAI": "As Africa's most populous urban area and part of the emerging Abidjan–Lagos coastal megalopolis (B.4.a), Lagos illustrates B.1 characteristics of urbanization and B.4.e problems of urban growth, including infrastructure deficits and governance challenges."
+    },
+    {
+      "articleTitle": "Beijing",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Exemplifies B.1 characteristics of a major global city and B.2 history of urbanization through eight centuries of development as China's political and cultural capital."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.3.e"
+      ],
+      "rationaleAI": "Marx's theory of population, class struggle, and the relationship between capitalism and urbanization directly covers the Marxist theory of population path A.3.e."
+    },
+    {
+      "articleTitle": "Tokyo",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.a"
+      ],
+      "rationaleAI": "As the world's most populous metropolitan area (41 million), Tokyo is a prime example of B.1 characteristics of urbanization and B.4.a megalopolis formation in the Greater Tokyo Area."
+    },
+    {
+      "articleTitle": "Bangkok",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.b",
+        "B.4.e"
+      ],
+      "rationaleAI": "Bangkok exemplifies B.1 characteristics of urbanization as an extreme primate city, B.4.b suburbanization through haphazard peripheral growth, and B.4.e problems including chronic traffic congestion and uncontrolled expansion."
+    },
+    {
+      "articleTitle": "Delhi",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.e"
+      ],
+      "rationaleAI": "As the second-largest metropolitan area globally, Delhi illustrates B.1 characteristics of urbanization at extreme scale and B.4.e problems of urban growth including severe air pollution and urban sprawl."
+    },
+    {
+      "articleTitle": "Mumbai",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.4.e"
+      ],
+      "rationaleAI": "Mumbai's evolution from seven islands to India's financial megacity covers B.2 history of urbanization including colonial land reclamation, and B.4.e problems of urban growth exemplified by informal settlements and infrastructure strain."
+    },
+    {
+      "articleTitle": "New York City",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.4.a"
+      ],
+      "rationaleAI": "New York illustrates B.1 characteristics of a global city, B.2 history of urbanization from colonial settlement, and B.4.a megalopolis formation in the larger Northeast US urban corridor."
+    },
+    {
+      "articleTitle": "Ecology",
+      "relevantPathsAI": [
+        "A.3.g"
+      ],
+      "rationaleAI": "Ecology's treatment of population dynamics, carrying capacity, and the relationship between human populations and natural resource consumption directly underpins A.3.g ecological theories concerning human population growth and conservation."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "B.4.c",
+        "B.4.d"
+      ],
+      "rationaleAI": "Globalization covers B.4.c regional integration through economic and cultural interdependence between cities and their hinterlands, and B.4.d the role of technology (telecommunications, transport) in extending urban dominance."
+    },
+    {
+      "articleTitle": "Singapore",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Singapore as an island city-state exemplifies B.1 characteristics of urbanization at extreme density and B.2 the compressed history of urbanization from colonial trading post to planned global metropolis."
+    },
+    {
+      "articleTitle": "Istanbul",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Istanbul's development across three imperial eras illustrates B.2 history of urbanization, and its contemporary role as a transcontinental megacity of 15 million covers B.1 characteristics of urbanization."
+    },
+    {
+      "articleTitle": "Paris",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "B.3.a"
+      ],
+      "rationaleAI": "Haussmann's 19th-century renovation of Paris is a canonical case study in B.3 patterns of urban planning and B.3.a methods and materials of urban planning and redevelopment; the city's long development also covers B.2."
     },
     {
       "articleTitle": "Human migration",
-      "rationaleAI": "Migration is a major demographic process shaping human populations.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
         "A.1.c",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3.f"
-      ]
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers A.1.c migration and refugee movements as a determinant of population, including theoretical frameworks (neoclassical, dual labor market, world systems theory) and historical migration patterns relevant to A.2 historical changes in population."
     },
     {
-      "articleTitle": "Birth control",
-      "rationaleAI": "Birth control affects human population demographics.",
+      "articleTitle": "Transport",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.3.a",
-        "A.3.f",
-        "B",
+        "B.4.d"
+      ],
+      "rationaleAI": "Transport technology—roads, rail, aviation—is the primary mechanism by which urban concentrations extend their dominance and influence over surrounding regions, directly covering B.4.d."
+    },
+    {
+      "articleTitle": "Information Age",
+      "relevantPathsAI": [
+        "B.4.d"
+      ],
+      "rationaleAI": "The Information Age, centered on telecommunications and digital networks, is a key example of B.4.d the role of technology in extending the dominance and influence of urban concentrations globally."
+    },
+    {
+      "articleTitle": "Hong Kong",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.e"
+      ],
+      "rationaleAI": "Hong Kong exemplifies B.1 characteristics of extreme-density urbanization and B.4.e problems of urban growth and governance, particularly through post-2019 political pressures on its urban social fabric."
+    },
+    {
+      "articleTitle": "Jakarta",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.e"
+      ],
+      "rationaleAI": "Jakarta's capital relocation due to land subsidence, flooding, and overcrowding is a direct case study in B.4.e problems of urban growth and population control, alongside B.1 characteristics of urbanization."
+    },
+    {
+      "articleTitle": "London",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "London's development from Roman Londinium through medieval, imperial, and modern phases covers B.2 history of urbanization; its contemporary status as Europe's largest city economy illustrates B.1 characteristics, and its governance structures relate to B.3."
+    },
+    {
+      "articleTitle": "São Paulo",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.a"
+      ],
+      "rationaleAI": "São Paulo Macrometropolis (~30 million) is explicitly identified as the Southern Hemisphere's first megalopolis, directly covering B.4.a; the city also illustrates B.1 characteristics of rapid 20th-century Latin American urbanization."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "B.4.f"
+      ],
+      "rationaleAI": "Pollution directly covers B.4.f problems of environmental change, including air and water pollution as consequences of urban growth, with specific discussion of point-source and non-point-source urban pollution."
+    },
+    {
+      "articleTitle": "Human settlement",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
         "B.2"
-      ]
+      ],
+      "rationaleAI": "Human settlement covers the full range from homesteads to megacities, addressing A's population composition and change and B.1–B.2 characteristics and history of urbanization as a process of settlement formation and densification."
+    },
+    {
+      "articleTitle": "Africa",
+      "relevantPathsAI": [
+        "A.2",
+        "B.4"
+      ],
+      "rationaleAI": "Africa's population is the fastest-growing and youngest globally (A.2 historical changes in population) and urbanization is concentrated there among B.4 trends, including emerging megalopolis corridors."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.a"
+      ],
+      "rationaleAI": "Architecture explicitly includes urban design as a subfield, directly connecting to B.3 patterns of urban planning and B.3.a methods and materials of urban planning and redevelopment."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3.g"
+      ],
+      "rationaleAI": "Agriculture's Neolithic origins and the shift from rural to urban economies underpin A.2 historical changes in population; agricultural resource constraints and land use relate to A.3.g ecological theories on population growth and natural resource conservation."
+    },
+    {
+      "articleTitle": "Black Death",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2"
+      ],
+      "rationaleAI": "The Black Death is the paradigmatic historical case of mortality as a determinant of population (A.1.b), killing 30–60% of Europe's population, and its demographic consequences directly illustrate A.2 historical changes in population."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.3",
+        "B.2"
+      ],
+      "rationaleAI": "Ibn Khaldun's Muqaddimah develops a cyclical theory of urban-nomadic civilizational dynamics and population-based state formation, covering A.3 theories of population and B.2 history of urbanization from a premodern theoretical perspective."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

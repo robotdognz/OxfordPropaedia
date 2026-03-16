@@ -1,40 +1,112 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "211",
   "mappings": [
     {
       "articleTitle": "Earth",
-      "rationaleAI": "Earth provides the foundational context for understanding the planet as a whole as covered in this section.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
-        "A.2.a",
+        "B"
+      ],
+      "rationaleAI": "Covers Earth's orbital revolution and axial rotation (A.1), the Coriolis force and centrifugal effects from Earth's rotation (A.2), and the planet's overall size, shape, and geophysical properties that define the figure of the Earth (B)."
+    },
+    {
+      "articleTitle": "Moon",
+      "relevantPathsAI": [
+        "A.2.c",
+        "A"
+      ],
+      "rationaleAI": "The Moon's gravitational interaction with Earth drives tidal friction (A.2.c), which gradually slows Earth's rotation; the article covers tidal dynamics between Earth and Moon explicitly."
+    },
+    {
+      "articleTitle": "Natural satellite",
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Covers tidal locking and tidal dynamics that produce tidal friction (A.2.c) across satellite systems, with direct application to Earth-Moon tidal braking of Earth's rotation."
+    },
+    {
+      "articleTitle": "Sun",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2.c"
+      ],
+      "rationaleAI": "Earth's revolution about the Sun (A.1) is one of the two primary orbital motions; solar tidal forces also contribute to tidal friction (A.2.c) affecting Earth's rotation rate."
+    },
+    {
+      "articleTitle": "Day",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers Earth's rotation on its axis and the resultant solar and sidereal day (A.1), as well as rotational irregularities; connects to centrifugal effects and rotational dynamics (A.2)."
+    },
+    {
+      "articleTitle": "Season",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Seasons result from Earth's axial tilt during its revolution about the Sun (A.1); this article covers the geometry of the orbital motion and its effects on solar flux across latitudes."
+    },
+    {
+      "articleTitle": "Wind",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Wind patterns are driven by the Coriolis effect arising from Earth's rotation (A.2.a), making the article directly relevant to the forces and dynamic effects of Earth's rotation."
+    },
+    {
+      "articleTitle": "Carl Friedrich Gauss",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Gauss conducted geodetic surveys of Hanover and made contributions to potential theory and differential geometry, directly supporting the geodetic measurement of Earth's figure (B.3); the method of least squares is foundational to correlating geodetic data (B.3.c)."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Newton established the laws of orbital motion (A.1) and centrifugal/gravitational forces governing Earth's rotation (A.2); his theory of universal gravitation predicts Earth's oblate spheroid shape, foundational to determining the figure of the Earth (B.1, B.2)."
+    },
+    {
+      "articleTitle": "Geometry",
+      "relevantPathsAI": [
         "B",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a",
+        "B.2"
+      ],
+      "rationaleAI": "The figure of the Earth (B) is defined geometrically as the geoid (B.1) and measured through improved spherical/ellipsoidal approximations (B.2); geodesy is a direct application of differential geometry and spherical geometry."
+    },
+    {
+      "articleTitle": "Solar System",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Earth's revolution about the Sun and its place in the solar system (A.1) is covered in this article's account of solar system structure and orbital dynamics."
+    },
+    {
+      "articleTitle": "Astronomy",
+      "relevantPathsAI": [
+        "A.1",
         "B.3.b"
-      ]
+      ],
+      "rationaleAI": "Astronomy provides the observational framework for measuring Earth's orbital motion (A.1) and contributes satellite-based geodetic measurements (B.3.b) through space and observational astronomy."
     },
     {
-      "articleTitle": "Geography",
-      "rationaleAI": "Geography provides the foundational framework for understanding the planet Earth as an integrated physical and human system.",
+      "articleTitle": "Planet",
       "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.2",
-        "B.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Earth science",
-      "rationaleAI": "Earth science encompasses the study of the planet Earth as treated in this section.",
-      "relevantPathsAI": [
-        "A.2",
-        "B"
-      ]
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Covers planetary characteristics including revolution, rotation, and axial tilt (A.1), as well as rotational dynamics that are relevant to understanding Earth's orbital motions (A.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,89 +1,160 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "712",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "The organization of human work is a fundamental aspect of technological practice.",
+      "articleTitle": "Industrial Revolution",
       "relevantPathsAI": [
-        "B.2",
-        "B.3",
-        "B.3.a",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Manufacturing",
-      "rationaleAI": "Manufacturing organizations structure human work through factory systems, assembly lines, and industrial management.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.3",
-        "A.4",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Board game",
-      "rationaleAI": "Board games represent early organized human leisure activities.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "B.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Management",
-      "rationaleAI": "Management relates to the organization of human work.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Trade union",
-      "rationaleAI": "Trade unions relate to the organization of human work.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.2.c",
-        "A.3",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Work (human activity)",
-      "rationaleAI": "Work is the direct subject of the organization of human work.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.2.e",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Textile",
-      "rationaleAI": "Textile production historically shaped the organization of human work.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
         "A.4",
         "A.5",
         "A.6",
+        "C.1"
+      ],
+      "rationaleAI": "The Industrial Revolution is the defining event for A.4 (changes in production techniques 16th\u201318th century as foundations of modern production) and A.5 (mass production by product rather than process), while steam power and factories also transformed the use of machines as labor replacements (A.6) and had profound psychological/social effects (C.1)."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.c",
+        "A.3"
+      ],
+      "rationaleAI": "Agriculture covers the communal organization required by its development (A.1.b), the organization of agricultural labour in ancient societies (A.2.c), and the manor system's organization of agricultural work in the medieval world (A.3)."
+    },
+    {
+      "articleTitle": "History of agriculture",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.b",
+        "A.2.c",
+        "A.3"
+      ],
+      "rationaleAI": "The history of agriculture traces the organizational development of farming work from Neolithic origins (A.1, A.1.b), through ancient agricultural labor systems (A.2.c), the medieval agricultural economy including the manor system (A.3), and into modern mechanization, directly covering all major outline nodes for agricultural work organization."
+    },
+    {
+      "articleTitle": "Robotics",
+      "relevantPathsAI": [
+        "A.6",
+        "C.1"
+      ],
+      "rationaleAI": "Robotics is the contemporary instantiation of machines as replacements for labor (A.6), and its coverage of worker displacement, automation, income inequality, and human-robot interaction directly addresses the psychological and social aspects of rationalization of work (C.1)."
+    },
+    {
+      "articleTitle": "Social class",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Social class directly covers A.2.b (effect of social classes on the organization of labour), with Marxist and Weberian frameworks for understanding how class position shapes access to and control over labour, foundational to ancient, medieval, and modern work organization."
+    },
+    {
+      "articleTitle": "Management",
+      "relevantPathsAI": [
         "B",
         "B.1",
+        "A.5"
+      ],
+      "rationaleAI": "Management is the applied field of B (application of scientific methods to managerial functions), covering planning, organizing, directing, and controlling organizational resources; its historical development through industrialization connects to mass production organization (A.5), and MBA programs and evidence-based management exemplify B.1 (operations research)."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a"
+      ],
+      "rationaleAI": "The Stone Age covers the prehistoric period directly addressed by A.1 (organization of work in the prehistoric world), including A.1.a (origin of division of labor based on age and sex, initial absence of class divisions) among early hunter-gatherer and early agricultural communities."
+    },
+    {
+      "articleTitle": "Neolithic Revolution",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.b"
+      ],
+      "rationaleAI": "The Neolithic Revolution covers the transition that directly drives A.1.b (communal organization: specialization required by development of pottery, textiles, agriculture, and metallurgy), representing the foundational shift from undifferentiated to specialized work organization in human prehistory."
+    },
+    {
+      "articleTitle": "Engineering",
+      "relevantPathsAI": [
         "B.2",
-        "B.3.a",
-        "C"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Engineering addresses systems engineering (B.2: utilization of scientific and technological knowledge in planning and designing complex systems) and the engineering design process which maps to systems-design techniques, tools, and procedures in B.3."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.2.b",
+        "C.1"
+      ],
+      "rationaleAI": "Marx's analysis of class struggle (bourgeoisie vs. proletariat), alienated labour, and the critique of capitalism are foundational to A.2.b (effect of social classes on organization of labour) and C.1 (psychological and social effects of rationalization of work and mass production)."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Science's coverage of operations research and applied sciences, and the systematic application of empirical methods to organized systems, directly underpins B (application of scientific methods to managerial functions) and B.1 (operations research: application of scientific method to management)."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "The early modern period (c. 1500\u20131800) covers A.4 (changes in production techniques from the 16th to 18th century: foundations of modern industrial production), encompassing mercantile capitalism, proto-industrialization, and the organizational transitions preceding the Industrial Revolution."
+    },
+    {
+      "articleTitle": "Johannes Gutenberg",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Gutenberg's movable-type printing press represents a paradigmatic change in production technique (A.4), introducing mass-production of texts and organizational innovations in craft production that prefigure modern industrial manufacturing systems."
+    },
+    {
+      "articleTitle": "Building",
+      "relevantPathsAI": [
+        "A.2.e"
+      ],
+      "rationaleAI": "Building covers the organization of labor for large-scale construction (A.2.e), addressing the ancient and medieval systems of coordinating skilled and unskilled workers for monumental construction projects from pyramids to Gothic cathedrals."
+    },
+    {
+      "articleTitle": "Animal husbandry",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.c"
+      ],
+      "rationaleAI": "Animal husbandry covers livestock management as a specialized form of agricultural labor, connecting to the specialization required by Neolithic developments (A.1.b) and the organization of agricultural labour in ancient societies (A.2.c)."
+    },
+    {
+      "articleTitle": "Joseph Stalin",
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Stalin's forced industrialization through five-year plans represents a state-directed version of mass production organization (A.5) and the systematic replacement of agricultural and craft labor with industrial machinery (A.6), with the Gulag labor camp system also relevant to A.2 (labor organization under coercive conditions)."
+    },
+    {
+      "articleTitle": "Social science",
+      "relevantPathsAI": [
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Social science encompasses the empirical and interpretive study of human organizations and behavior that underpins B (application of scientific methods to managerial functions), particularly B.1 (operations research) which draws on economics, sociology, and applied mathematics."
+    },
+    {
+      "articleTitle": "State (polity)",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "The state article covers theories of civilization's development and the origin of hierarchical organization (A.2.a), addressing scholarly explanations of how early states emerged from stateless societies through economic and coercive stratification of labor."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "A.5",
+        "B"
+      ],
+      "rationaleAI": "Globalization covers the intensifying interdependence driven by mass production and trade (A.5 context), and the export of production systems and technology to developing regions broadly connects to the outline's concern with post-industrial labor organization; the operations research tools of B.3.b (optimization, communication theory) underpin global supply chain management."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

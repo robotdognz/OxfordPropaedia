@@ -1,422 +1,188 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "972",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Modern European history since 1920 is a major chapter in recent human history.",
+      "articleTitle": "NATO",
       "relevantPathsAI": [
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.2.i.iii",
-        "A.3.i.ii",
-        "A.3.i",
-        "A.3.i.iii",
-        "A.4.i.ii",
-        "A.4.b",
-        "A.5",
-        "A.5.i"
-      ]
-    },
-    {
-      "articleTitle": "Modern era",
-      "rationaleAI": "Modern European history since 1920, including two world wars and the Cold War, is a central chapter of the modern era.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Europe",
-      "rationaleAI": "Europe since 1920 experienced world wars, the Cold War division, and European integration.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
+        "A.1.a",
+        "B.1.b",
+        "B.2.b"
+      ],
+      "rationaleAI": "NATO covers its 1949 founding to counter Soviet expansion (directly named in A.1.a.iv as part of Labour government Britain's role), its incorporation of former Warsaw Pact states relevant to B.2.b (central European states' NATO membership), and its role in European security architecture relevant to B.1.b (postwar Soviet period)."
     },
     {
       "articleTitle": "Joseph Stalin",
-      "rationaleAI": "Stalin's totalitarian rule transformed the Soviet Union into an industrial superpower and shaped 20th-century European history.",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Adolf Hitler",
-      "rationaleAI": "Hitler's Nazi regime and instigation of World War II and the Holocaust devastated Europe in the 20th century.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Pablo Picasso",
-      "rationaleAI": "Picasso's career spanned 20th-century Europe, and works like Guernica responded directly to European political upheaval.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.a"
-      ]
-    },
-    {
-      "articleTitle": "The Beatles",
-      "rationaleAI": "The Beatles emerged from 1960s Britain and became a global cultural phenomenon that defined post-war European and world culture.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Emmy Noether",
-      "rationaleAI": "Noether's career in early 20th-century Germany, including her forced emigration under Nazism, reflects the turbulence of modern European history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Soviet Union",
-      "rationaleAI": "The Soviet Union was a superpower that shaped 20th-century European history through communist ideology and Cold War rivalry.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "World War II",
-      "rationaleAI": "World War II devastated Europe and led to the continent's division into Western and Soviet spheres.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.a",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "Contemporary history",
-      "rationaleAI": "Contemporary European history since 1920 includes the world wars, Cold War, and European integration.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Cold War",
-      "rationaleAI": "The Cold War divided Europe into Western and Eastern blocs, shaping the continent's political history since 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "France",
-      "rationaleAI": "Modern France is covered in this section on Europe since 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Germany",
-      "rationaleAI": "Modern Germany is covered in this section on Europe since 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Italy",
-      "rationaleAI": "Modern Italy is covered in this section on Europe since 1920.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Stalin covers the entire arc of B.1.a (Soviet Union from 1917 to end of WWII) including the October Revolution, Civil War, rise of Stalin after Lenin's death, Great Purge, WWII military strategy and Eastern Bloc formation (B.1.a.i\u2013iii), and the postwar monopoly of power (B.1.b.i). He is the central figure for the Soviet portion of the outline."
     },
     {
       "articleTitle": "Poland",
-      "rationaleAI": "Modern Poland is covered in this section on Europe since 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
+        "B.2.d"
+      ],
+      "rationaleAI": "Poland directly corresponds to B.2.d (Poland since 1918), covering the interwar Second Republic (B.2.d.i), postwar communist rule, Solidarity's formation and suppression (B.2.d.ii), and post-1989 democratic transition with NATO and EU membership (B.2.d.iii). It is the primary article for this specific outline path."
+    },
+    {
+      "articleTitle": "Adolf Hitler",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "Hitler covers the Weimar Republic's collapse (A.3.a.i), the Nazi revolution and establishment of the totalitarian state 1934\u201339, persecution of Jews, rearmament, eastern European expansion, and WWII defeat (A.3.a.ii). He is the central figure for Germany's Fascist era sub-paths in the outline."
+    },
+    {
+      "articleTitle": "World War I",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "A.2.a"
+      ],
+      "rationaleAI": "World War I provides the essential background for A.1's immediate postwar problems (1920\u201324), the Paris Peace Conference, and the League of Nations, and directly informs A.2.a.i's coverage of French interwar financial crises and German reparations. It is the foundational context for the interwar period covered in section A."
     },
     {
       "articleTitle": "Russia",
-      "rationaleAI": "The Soviet Union and modern Russia are covered in Europe since 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a"
-      ]
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
+      ],
+      "rationaleAI": "Russia covers the 1917 Revolution, Soviet Union, and post-1991 Russian Federation \u2014 directly addressing B.1.a (Soviet Union from 1917 to end of WWII), B.1.b (postwar Soviet period), and B.1.c (Russia, Ukraine, and Belarus since 1991). It is the primary state-level article for the Soviet/Russian portions of the outline."
+    },
+    {
+      "articleTitle": "Soviet Union",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "The Soviet Union article directly covers the entire B.1.a and B.1.b sub-outlines: October Revolution, Civil War, NEP, WWII Eastern Front (B.1.a), and postwar Stalin, Khrushchev, Brezhnev, and Gorbachev eras including glasnost and perestroika leading to the 1991 dissolution (B.1.b). It is the primary article for the section's Soviet coverage."
+    },
+    {
+      "articleTitle": "United States",
+      "relevantPathsAI": [
+        "A.1.b",
+        "B.1.b"
+      ],
+      "rationaleAI": "The United States covers US diplomatic isolation in the interwar period (A.1.b), and postwar Cold War competition with the Soviet Union including the Truman Doctrine and Marshall Plan \u2014 relevant to B.1.b as the principal Cold War antagonist of the Soviet Union whose actions shaped Eastern European politics."
+    },
+    {
+      "articleTitle": "World War II",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.3.a",
+        "A.4.a",
+        "A.7",
+        "A.8",
+        "B.1.a",
+        "B.3.a"
+      ],
+      "rationaleAI": "World War II covers France's defeat and Vichy government and Free French resistance (A.2.a.iii), the Third Reich's WWII conquests (A.3.a.ii), Italian participation and fall of Mussolini (A.4.a.ii), German occupation of Low Countries (A.7) and Swiss neutrality (A.8), Soviet WWII role (B.1.a.iii), and Axis occupation and Partisan resistance in the Balkans (B.3.a.ii)."
+    },
+    {
+      "articleTitle": "Cold War",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2",
+        "B.3",
+        "B.3.b"
+      ],
+      "rationaleAI": "The Cold War covers Soviet domination of Eastern Europe, Berlin Blockade, Soviet suppression of Eastern European uprisings, d\u00e9tente, and the 1989 revolutions \u2014 directly addressing B.1.b (postwar Soviet period), B.2 (eastern European states), B.3 (Balkans), and B.3.b (postwar Balkan developments under communist rule)."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The British Empire covers British colonial and Commonwealth relations in the interwar period (A.1.a.ii: division of Ireland, Indian problem), Britain's WWII role (A.1.a.iii), and the disintegration of the British Empire in the postwar period (A.1.a.iv). It provides the imperial context for Britain's trajectory in the section."
     },
     {
       "articleTitle": "Spain",
-      "rationaleAI": "Modern Spain is covered in this section on Europe since 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
+        "A.5.a"
+      ],
+      "rationaleAI": "Spain directly corresponds to A.5.a (Spain since 1920), covering Primo de Rivera's military government, the Spanish Civil War and Franco's victory (A.5.a.i), Franco regime's rapprochement with NATO powers (A.5.a.ii), and the democratic transition under King Juan Carlos and constitution of 1978 (A.5.a.iii). It is the primary article for A.5.a."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "A.2",
         "A.2.a",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
+        "A.2.b"
+      ],
+      "rationaleAI": "France directly corresponds to A.2 (France since 1920), covering interwar financial crises (A.2.a.i), the Third Republic's social and cultural developments (A.2.a.ii), WWII defeat and Vichy government and Free French (A.2.a.iii), the Fourth Republic and Indochina/Algerian wars (A.2.b.i), and the Fifth Republic under de Gaulle through Chirac (A.2.b.ii). It is the primary article for A.2."
     },
     {
       "articleTitle": "United Kingdom",
-      "rationaleAI": "Modern Britain is covered in this section on Europe since 1920.",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The United Kingdom directly corresponds to A.1.a (Developments in Great Britain), covering interwar economic depression and labour unrest (A.1.a.i), colonial/Commonwealth relations and the Indian problem (A.1.a.ii), Churchill's WWII government (A.1.a.iii), and the postwar welfare state, Thatcher's denationalization, and the Blair government (A.1.a.iv). It is the primary article for A.1.a."
+    },
+    {
+      "articleTitle": "Europe",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a"
-      ]
+        "B"
+      ],
+      "rationaleAI": "The Europe article covers the two World Wars, Cold War division, and post-1989 European integration \u2014 providing broad contextual coverage across A (western European nations since 1920) and B (eastern and central Europe) outline paths."
     },
     {
-      "articleTitle": "London",
-      "rationaleAI": "London remains a global city relevant to modern European history.",
+      "articleTitle": "Germany",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Germany directly corresponds to A.3 (Germany since 1920), covering the Weimar Republic (A.3.a.i), the Third Reich and Nazi dictatorship (A.3.a.ii), postwar Allied occupation and partition (A.3.b.i), West Germany's Federal Republic and NATO role (A.3.b.ii), the German Democratic Republic (A.3.b.iii), and reunification in 1990 (A.3.b.iv). It is the primary article for A.3."
+    },
+    {
+      "articleTitle": "Italy",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Italy directly corresponds to A.4 (Italy since 1920), covering postwar cabinets and the Fascist Party's rise (A.4.a.i), rapprochement with Germany, Ethiopian conquest, and WWII participation (A.4.a.ii), and postwar ministerial instability through the De Gasperi era and Berlusconi (A.4.b). It is the primary article for A.4."
+    },
+    {
+      "articleTitle": "Ethiopia",
+      "relevantPathsAI": [
+        "A.4.a"
+      ],
+      "rationaleAI": "Ethiopia covers the Italian occupation (1936\u20131941) and Haile Selassie's imperial rule \u2014 directly relevant to A.4.a.ii's explicit mention of 'conquest of Ethiopia' as part of Mussolini's Fascist expansion and its effects including Italian participation in WWII."
+    },
+    {
+      "articleTitle": "History of Europe",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.i"
-      ]
+        "B"
+      ],
+      "rationaleAI": "History of Europe covers nationalism, two world wars, Cold War, and post-1945 integration \u2014 providing broad contextual coverage across the western European (A) and eastern/central European (B) dimensions of the section's outline."
     },
     {
-      "articleTitle": "Moscow",
-      "rationaleAI": "Moscow was the Soviet and is the modern Russian capital covered here.",
+      "articleTitle": "Argentina",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Argentina covers the Falklands War with Britain (1982) \u2014 directly named in A.1.a.iv as a defining event of the Thatcher Conservative government's period (1979\u201390). This is the only candidate covering this specific event."
+    },
+    {
+      "articleTitle": "Mahatma Gandhi",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Gandhi covers the Indian independence movement against British rule \u2014 directly relevant to A.1.a.ii's reference to 'the Indian problem' as a central dimension of British colonial and Commonwealth relations during the interwar period (1920\u201339)."
+    },
+    {
+      "articleTitle": "Decolonization",
       "relevantPathsAI": [
         "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Paris",
-      "rationaleAI": "Paris remains central to modern European affairs.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Communism",
-      "rationaleAI": "Communism shaped Europe since 1920 through the Soviet bloc.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Fascism",
-      "rationaleAI": "Fascism was a defining political force in Europe since 1920.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "European Union",
-      "rationaleAI": "The European Union is the defining political institution of modern Europe.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2.a",
-        "A.2.i"
-      ]
-    },
-    {
-      "articleTitle": "NATO",
-      "rationaleAI": "NATO shaped the political structure of post-war Europe.",
-      "relevantPathsAI": [
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.i.iv",
-        "A.1.i",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii"
-      ]
+        "A.2.b"
+      ],
+      "rationaleAI": "Decolonization covers the major post-WWII independence movements including French colonial independence (Indochina War, Algerian War) and British Empire dissolution \u2014 directly addressing A.1.a.iv (disintegration of the British Empire) and A.2.b.i\u2013ii (colonial independence movements and French African colonies' independence under de Gaulle)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

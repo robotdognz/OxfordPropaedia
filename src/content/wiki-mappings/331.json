@@ -1,78 +1,171 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "331",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "The cellular basis of form and function represents the structural foundation of life.",
+      "articleTitle": "Cell (biology)",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.1.b",
         "A.2",
-        "A.2.a",
-        "A.2.c",
+        "B",
         "B.1",
         "B.2",
-        "B.2.b",
         "C",
-        "C.1"
-      ]
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Cell (biology) is the primary topic of this section, directly covering cell theory history (A.1), prokaryote-eukaryote classification (A.2), organellar organization including nucleus, membrane, mitochondria, ribosomes, and cytoskeleton (B.2.b), functional processes including signaling and motility (C), the cell cycle through mitosis and meiosis (D), and gamete biology relevant to fertilization (E)."
     },
     {
-      "articleTitle": "Cell (biology)",
-      "rationaleAI": "The cell is the direct subject of this section as the basic structural and functional unit of all living organisms.",
+      "articleTitle": "DNA",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "B",
-        "B.1.a"
-      ]
+        "B.1.a",
+        "B.2.b",
+        "C.3",
+        "D.1"
+      ],
+      "rationaleAI": "DNA is the macromolecule in cells encoding genetic information (B.1.a), organized into chromosomes within the nucleus (B.2.b), controls nucleus-cytoplasm interplay via transcription (C.3), and replicates faithfully during cell growth preparation for division (D.1)."
     },
     {
-      "articleTitle": "Reproduction",
-      "rationaleAI": "Reproductive structures and processes are fundamental aspects of cellular form and function, from gametes to zygotes.",
+      "articleTitle": "Biochemistry",
       "relevantPathsAI": [
-        "A.2.c",
-        "D.2.a"
-      ]
+        "B.1",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Biochemistry characterizes the four classes of biological macromolecules—nucleic acids, proteins, carbohydrates, and lipids—plus small molecules including amino acids, nucleotides, and fatty acids, directly mapping to outline paths B.1.a (macromolecules in cells) and B.1.b (small molecules in cells)."
     },
     {
-      "articleTitle": "Plant",
-      "rationaleAI": "Plant cell structure, including cell walls, chloroplasts, and vacuoles, illustrates the cellular basis of form and function.",
+      "articleTitle": "Protein",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "B",
-        "B.2"
-      ]
+        "B.1.a",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Proteins function as structural scaffolds (cytoskeleton, nuclear envelope) and signaling molecules in cells (B.1.a), mediate nucleus-cytoplasm interplay via gene expression (C.3), and regulate the cell cycle (D), making this article directly relevant across cell design and functional topics."
     },
     {
       "articleTitle": "Eukaryote",
-      "rationaleAI": "Eukaryotic cells with nuclei and organelles exemplify the cellular basis of biological form.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
         "A.2.a",
-        "A.2.c",
-        "B.2",
-        "B.2.b",
-        "C",
-        "C.1",
+        "A.2.b",
+        "B.2.c",
         "C.2"
-      ]
+      ],
+      "rationaleAI": "Eukaryote directly addresses the prokaryote-eukaryote distinction in cell classification (A.2.a), specific features of eukaryotic animal cells including organelles (A.2.b), eukaryotic cell structure (B.2.c), and membrane compartmentalization via organelles (C.2)."
+    },
+    {
+      "articleTitle": "Virus",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.a"
+      ],
+      "rationaleAI": "Viruses are explicitly mentioned in the outline as a comparison case at A.2.a (cells vs. viruses), and their non-cellular nature constitutes a challenge to and revision of the classical cell theory (all cells from pre-existing cells), directly addressing path A.1.b."
+    },
+    {
+      "articleTitle": "Molecular biology",
+      "relevantPathsAI": [
+        "B.1",
+        "C.3",
+        "D.1"
+      ],
+      "rationaleAI": "Molecular biology covers the macromolecular structures and processes—DNA replication, transcription, translation—at the heart of cell design (B.1), nucleus-cytoplasm interplay (C.3), and genetic replication in the cell cycle (D.1)."
+    },
+    {
+      "articleTitle": "Bacteria",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2.c"
+      ],
+      "rationaleAI": "Bacteria exemplify prokaryotic cells, directly illustrating the prokaryote-eukaryote comparison at A.2.a and the cytoplasmic organization without membrane-bound organelles for path B.2.c on procaryotic cell structure."
+    },
+    {
+      "articleTitle": "Archaea",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2.c"
+      ],
+      "rationaleAI": "Archaea represent the second prokaryotic domain, contributing to the prokaryote-eukaryote comparison at A.2.a and to prokaryotic cell structure coverage at B.2.c, with their distinctive ether-linked membrane lipids offering a variant of molecular cellular architecture."
+    },
+    {
+      "articleTitle": "RNA",
+      "relevantPathsAI": [
+        "B.1.a",
+        "C.3"
+      ],
+      "rationaleAI": "RNA is a core macromolecule in cells (B.1.a) mediating nucleus-cytoplasm interplay as the intermediary of gene expression (C.3), including mRNA as translation template, rRNA in ribosomes, and regulatory non-coding RNA classes."
+    },
+    {
+      "articleTitle": "Carbohydrate",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Carbohydrates include polysaccharides among the major cell macromolecules (B.1.a) and monosaccharides (glucose, ribose) among the small molecules central to cell metabolism and nucleic acid structure (B.1.b), addressing both macromolecular and small-molecule cell composition paths."
+    },
+    {
+      "articleTitle": "Organism",
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Organism addresses the transition from cells to multicellular individuals, including the cooperation principle defining cellular integration into tissues and whole organisms, directly relevant to path C.5 on cells in combination forming tissues and multicellular organisms."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a"
+      ],
+      "rationaleAI": "Life covers the historical development of understanding cells as the basis of living systems, connecting to the historical background of cell theory at A.1 and A.1.a, including the biochemical basis that underpins the cell theory framework."
+    },
+    {
+      "articleTitle": "Abiogenesis",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Abiogenesis addresses the emergence of cell membranes and protocells from prebiotic chemistry, representing a fundamental challenge to the classical cell theory tenet that all cells come from pre-existing cells, directly engaging path A.1.b on challenges and revisions to cell theory."
+    },
+    {
+      "articleTitle": "Heredity",
+      "relevantPathsAI": [
+        "D.2.c",
+        "E"
+      ],
+      "rationaleAI": "Heredity covers meiotic division of germ cells and the inheritance of genetic material, directly addressing path D.2.c (meiosis: division of germ cell into gametes each with half the genetic material), and is implicitly connected to fertilization at path E through the genetic basis of offspring formation."
+    },
+    {
+      "articleTitle": "Skeletal muscle",
+      "relevantPathsAI": [
+        "A.2.b",
+        "C.4"
+      ],
+      "rationaleAI": "Skeletal muscle covers myocytes as a specific animal tissue cell type classified in the outline at A.2.b (muscle cells), and the contractile actin-myosin machinery relates to cell movement topics at C.4."
+    },
+    {
+      "articleTitle": "Physiology",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Cell physiology as a subdiscipline directly addresses the functional aspects of cells—metabolism, signaling, and homeostasis—providing broad disciplinary framing for the functional aspects of cells at outline path C."
+    },
+    {
+      "articleTitle": "Biology",
+      "relevantPathsAI": [
+        "A.1",
+        "A"
+      ],
+      "rationaleAI": "Biology as a discipline is explicitly structured around cell theory as one of its five unifying themes, and covers cell theory, heredity, and metabolism at the level of the cell, providing disciplinary context for section A (cell theory and classification)."
+    },
+    {
+      "articleTitle": "Genetics",
+      "relevantPathsAI": [
+        "D",
+        "D.2.c",
+        "E.3"
+      ],
+      "rationaleAI": "Genetics directly addresses DNA replication, meiosis (D.2.c), and the biochemical analysis of fertilization at the genetic level (E.3), relevant to cell cycle division topics and the biochemical analysis of fertilization events."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

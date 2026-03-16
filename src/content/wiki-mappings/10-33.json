@@ -1,126 +1,304 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/33",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "The earth sciences as a discipline are devoted to the systematic study of Earth covered in this article.",
+      "articleTitle": "Sea",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.3",
-        "A.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Science",
-      "rationaleAI": "The earth sciences are a major branch of natural science.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.i.iii",
-        "A.3.b",
-        "A.3.c",
-        "A.4"
-      ]
-    },
-    {
-      "articleTitle": "Geography",
-      "rationaleAI": "Geography as an academic discipline is a core earth science concerned with the systematic study of Earth's physical and human landscapes.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i.ii",
-        "A.3",
-        "A.3.a",
-        "A.3.i.iii",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Atmosphere of Earth",
-      "rationaleAI": "Atmospheric science is a major branch of the earth sciences studying the gaseous envelope surrounding the planet.",
-      "relevantPathsAI": [
-        "A.2.b",
-        "A.2.i",
-        "A.3",
-        "A.3.i.iii",
-        "A.3.c",
-        "A.3.i.ii",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.v",
-        "A.4.v.vi"
-      ]
-    },
-    {
-      "articleTitle": "Climate",
-      "rationaleAI": "Climatology is a major branch of the earth sciences studying atmospheric conditions and their long-term patterns.",
-      "relevantPathsAI": [
-        "A.4.v.vi",
-        "A.5.v"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Sea covers physical oceanography \u2014 seawater chemistry, currents, tides, waves \u2014 and the history of oceanography, squarely within B.3's hydrologic sciences (oceanography). It also connects to A.5.b.iv (ocean circulation, currents, and waves)."
     },
     {
       "articleTitle": "Geology",
-      "rationaleAI": "Geology is a foundational earth science discipline studying Earth's materials, processes, and history.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.i.iii",
-        "A.3",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.4",
-        "A.4.i",
-        "A.4.v"
-      ]
+        "B.2",
+        "A.3.a",
+        "A.4.a",
+        "A.5.a"
+      ],
+      "rationaleAI": "Geology is the core geologic science described in B.2, encompassing petrology, structural geology, stratigraphy, plate tectonics, and geochronology. Its disciplinary history maps across A.3.a\u2013A.5.a for the 16th\u201320th century development of the field."
+    },
+    {
+      "articleTitle": "Pacific Ocean",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Pacific Ocean covers physical oceanography and marine geology relevant to B.3 (oceanography), with bathymetric and seafloor features connecting to A.5.b.iii (charting of ocean floors and progress in bathymetry)."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Earth as a planet encompasses internal structure, hydrosphere, atmosphere, and geological history \u2014 together spanning the full scope of B's individual Earth sciences from physical geography (B.1) to geologic sciences (B.2)."
+    },
+    {
+      "articleTitle": "Internal structure of Earth",
+      "relevantPathsAI": [
+        "B.2",
+        "A.5.a"
+      ],
+      "rationaleAI": "Internal structure of Earth covers seismic wave analysis, core-mantle differentiation, and geomagnetic field generation, directly corresponding to A.5.a.iii (development of seismology and study of Earth's internal structure) and geophysics within B.2."
+    },
+    {
+      "articleTitle": "Ocean",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Ocean is the primary subject of B.3 (oceanography), covering physical oceanography, chemical properties, marine biology, and ocean circulation. Its study of currents, waves, and seawater chemistry maps to A.5.b.i and A.5.b.iv."
+    },
+    {
+      "articleTitle": "Geography",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Geography maps directly to B.1 (physical geography \u2014 the study of distribution and spatial patterns of soils, water, climate, and landforms), covering GIS, remote sensing, and Earth science traditions traced from Greek scholarship."
+    },
+    {
+      "articleTitle": "Atlantic Ocean",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Atlantic Ocean covers physical oceanography \u2014 Mid-Atlantic Ridge bathymetry, gyres, salinity patterns \u2014 relevant to B.3 and A.5.b.iii (charting ocean floors, bathymetry). Its geological formation also touches B.2 (plate tectonics)."
+    },
+    {
+      "articleTitle": "Paleontology",
+      "relevantPathsAI": [
+        "B.2",
+        "A.4.a",
+        "A.5.a"
+      ],
+      "rationaleAI": "Paleontology is explicitly listed in B.2's geologic sciences. A.4.a.ii (faunal succession and organic evolution) and A.5.a.v (advances in paleoecology, micropaleontology, Precambrian life) provide precise historical coverage."
     },
     {
       "articleTitle": "Earth science",
-      "rationaleAI": "Earth science as a discipline is the direct subject of this section on the earth sciences.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.4"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Earth science defines the entire scope of this section, covering the nature and scope of all Earth science disciplines (B) and providing the broadest historical context for the field's development (A)."
     },
     {
-      "articleTitle": "Map",
-      "rationaleAI": "Cartography is a key tool of the earth sciences for representing spatial data.",
+      "articleTitle": "Mediterranean Sea",
+      "relevantPathsAI": [
+        "B.3",
+        "A.2.b"
+      ],
+      "rationaleAI": "Mediterranean Sea includes oceanographic content (circulation, Messinian salinity crisis) relevant to B.3. Its tidal study connects to A.2.b.iii (study of the tides in antiquity through the 16th century), and its deep geological history to B.2."
+    },
+    {
+      "articleTitle": "Indian Ocean",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Indian Ocean covers physical oceanography \u2014 monsoon-driven circulation, upwelling patterns, coral reef ecosystems \u2014 directly within B.3 (oceanography). Its geological youth and narrow continental shelves also connect to B.2."
+    },
+    {
+      "articleTitle": "History of Earth",
       "relevantPathsAI": [
         "A",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.3",
-        "A.3.i.ii",
-        "A.3.i.iii",
-        "A.3.i.ii",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii"
-      ]
+        "B.2",
+        "A.4.a",
+        "A.5.a"
+      ],
+      "rationaleAI": "History of Earth covers geologic time across four eons using geochronology (A.5.a.i \u2014 radiometric dating), stratigraphy, and the geological time scale, corresponding to B.2 and A.4.a.v (concept of geologic time and age of the Earth)."
+    },
+    {
+      "articleTitle": "Land",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Land covers physical features of Earth's terrestrial surface including plate tectonics, terrain types, soil, and geomorphological processes, spanning B.1 (physical geography \u2014 soils, water, landforms) and B.2 (geomorphology)."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "A.4.a"
+      ],
+      "rationaleAI": "Darwin is explicitly named in A.4.a.ii as a contributor to the concept of faunal succession and organic evolution, which was foundational to 19th-century geology and paleontology."
+    },
+    {
+      "articleTitle": "Arctic Ocean",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Arctic Ocean covers sea ice dynamics, polar oceanography, and high-latitude climate, fitting B.3 (oceanography, glaciology). Sea ice loss and methane clathrate risks connect to A.5.b.v (study of glacier motion and high-latitude ice sheets)."
+    },
+    {
+      "articleTitle": "Lightning",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.4.c"
+      ],
+      "rationaleAI": "Lightning is an atmospheric electrical phenomenon studied under atmospheric sciences. It relates to A.3.c (early study of atmospheric phenomena) and A.4.c.ii (study of clouds, fog, dew, and storms in 19th-century atmospheric sciences)."
+    },
+    {
+      "articleTitle": "Antarctica",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Antarctica is central to B.3 (glaciology \u2014 Southern Ocean circulation, ice sheet dynamics) and A.5.b.v (study of glacier motion and high-latitude ice sheets). Its geology also connects to B.2."
+    },
+    {
+      "articleTitle": "Lake",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Lakes are the primary subject of limnology, explicitly listed under B.3 (hydrologic sciences: hydrology, limnology). Their glacial origins also connect to B.2 (glacial geology) and A.4.a.iv (Ice Age evidence)."
+    },
+    {
+      "articleTitle": "River",
+      "relevantPathsAI": [
+        "B.3",
+        "A.3.b"
+      ],
+      "rationaleAI": "Rivers are a primary subject of hydrology (B.3), and A.3.b.i covers theories of spring discharge and early quantitative investigations of water balances. River geomorphology (erosion, deltas) also belongs to B.2."
+    },
+    {
+      "articleTitle": "Weather",
+      "relevantPathsAI": [
+        "A.5.c",
+        "A.4.c",
+        "B"
+      ],
+      "rationaleAI": "Weather directly corresponds to A.5.c.i\u2013ii (application of technology to meteorology, advances in weather forecasting) and A.4.c.iii (origin of synoptic meteorology). It is a core subject of the atmospheric sciences within B."
+    },
+    {
+      "articleTitle": "Rain",
+      "relevantPathsAI": [
+        "A.4.c",
+        "B.3"
+      ],
+      "rationaleAI": "Rain (precipitation) connects to A.4.c.ii (study of clouds, fog, dew, and storms in 19th-century atmospheric sciences) and to B.3's hydrology as the primary freshwater delivery mechanism governing groundwater recharge and river systems."
+    },
+    {
+      "articleTitle": "Snow",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.b"
+      ],
+      "rationaleAI": "Snow is a critical component of the cryosphere covered under B.3 (glaciology, hydrology), and its role in snowpack accumulation and ice formation directly connects to A.5.b.v (glacier motion and high-latitude ice sheets)."
+    },
+    {
+      "articleTitle": "Rock (geology)",
+      "relevantPathsAI": [
+        "B.2",
+        "A.4.a",
+        "A.5.a"
+      ],
+      "rationaleAI": "Rock is the foundational material of petrology and mineralogy, explicitly listed in B.2's geologic sciences. The classification of rocks connects to A.4.a.i (crystallography and classification of minerals and rocks) and A.5.a.ii (experimental petrology)."
+    },
+    {
+      "articleTitle": "Climate",
+      "relevantPathsAI": [
+        "A.5.c",
+        "B.1",
+        "A.4.c"
+      ],
+      "rationaleAI": "Climate covers classification systems (A.5.c.v), paleoclimatology, and climate variability central to B.1 (physical geography \u2014 climate) and A.4.c.iii (study of weather and climate, origin of synoptic meteorology)."
+    },
+    {
+      "articleTitle": "History of science",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "History of science surveys Earth science milestones including plate tectonics, glacial theory, and paleoclimatology across all historical periods covered in A, providing broad historical context for the section's entire A path."
+    },
+    {
+      "articleTitle": "Nile",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "The Nile is explicitly named in A.2.b.ii (the origin of the Nile and the cause of its floods as a historical hydrological question) and connects to B.3 through hydrology and geomorphology."
+    },
+    {
+      "articleTitle": "Climate change",
+      "relevantPathsAI": [
+        "A.5.c",
+        "B.1"
+      ],
+      "rationaleAI": "Climate change relates to A.5.c (atmospheric sciences \u2014 atmospheric properties, weather modification, climate) and B.1 (physical geography \u2014 climate distribution and change). It brings together atmospheric and hydrological Earth sciences."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Islamic Golden Age contributed substantially to medieval Earth sciences including hydrological theories and astronomical geography, fitting A.2's coverage of Earth sciences from antiquity to the 16th century including medieval contributions."
+    },
+    {
+      "articleTitle": "Great Lakes",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The Great Lakes constitute the world's largest freshwater lake system and are a prime subject of limnology, explicitly listed in B.3. Their glacial geological origins also connect to B.2 (glacial geology) and A.4.a.iv (Ice Age evidence)."
+    },
+    {
+      "articleTitle": "Cloud",
+      "relevantPathsAI": [
+        "A.5.c",
+        "A.4.c"
+      ],
+      "rationaleAI": "Clouds are directly addressed in A.4.c.ii (study of clouds, fog, dew, and storms) and A.5.c.ii (advances in weather forecasting and cloud physics). They are central to atmospheric science within B."
+    },
+    {
+      "articleTitle": "Erosion",
+      "relevantPathsAI": [
+        "B.2",
+        "A.4.a"
+      ],
+      "rationaleAI": "Erosion is the primary geomorphological process studied in B.2 (geomorphology) and connects to A.4.a.vi (concepts of landform evolution in 19th-century geology) through its role in shaping Earth's surface."
+    },
+    {
+      "articleTitle": "Plate tectonics",
+      "relevantPathsAI": [
+        "A.5.a",
+        "B.2"
+      ],
+      "rationaleAI": "Plate tectonics is explicitly named in A.5.a.vi as a unification of continental drift and seafloor spreading \u2014 the defining geologic advance of the 20th century. It is the foundational theory of B.2's structural geology."
+    },
+    {
+      "articleTitle": "Soil",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Soil is an explicit subject of B.1 (physical geography \u2014 distribution and spatial patterns of soils) and connects to B.2 through pedology and weathering processes in environmental and engineering geology."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.4.c",
+        "A.5.c",
+        "B"
+      ],
+      "rationaleAI": "Earth's atmosphere is the core subject of atmospheric science within B, spanning all three historical phases: A.3.c (16th\u201318th century \u2014 water vapour, atmospheric pressure), A.4.c (19th century \u2014 composition, clouds, storms), and A.5.c (20th century \u2014 satellites, forecasting, climate)."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The Age of Discovery drove early modern advances in physical geography, cartography, and hydrology through oceanographic exploration, fitting A.3's coverage of Earth sciences in the 16th and 17th centuries including beginnings of mineralogy and global water-balance investigations."
+    },
+    {
+      "articleTitle": "Continent",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Continent covers geological definitions via continental crust and plate tectonics, Pangaea and continental drift, fitting B.1 (physical geography) and B.2 (structural geology, plate tectonics) as foundational physical geography and geological concepts."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,220 +1,252 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "422",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Human health is a fundamental aspect of the human organism discussed in this article.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.7",
-        "B",
-        "C",
-        "C.1",
-        "C.2.c",
-        "C.2.d",
-        "C.4",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Food",
-      "rationaleAI": "Nutrition and diet are fundamental determinants of human health, with dietary deficiencies causing preventable disease.",
-      "relevantPathsAI": [
-        "A.7",
-        "B",
-        "D.1",
-        "D.1.a",
-        "D.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Death",
-      "rationaleAI": "Death and dying are central concerns of human health, from end-of-life care to the medical determination of death.",
-      "relevantPathsAI": [
-        "A.3",
-        "A.6",
-        "A.7",
-        "B",
-        "C.1",
-        "D.1",
-        "D.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Medicine",
-      "rationaleAI": "Medicine aims to maintain and restore human health through preventive care, diagnosis, and treatment.",
-      "relevantPathsAI": [
-        "A.7",
-        "C.1",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Sport",
-      "rationaleAI": "Sport relates to physical fitness and human health.",
-      "relevantPathsAI": [
-        "A.7",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Association football",
-      "rationaleAI": "Football is a form of physical exercise related to human health.",
-      "relevantPathsAI": [
-        "A.7",
-        "C.1",
-        "C.2.d",
-        "C.4",
-        "D.1",
-        "D.2",
-        "D.2.b",
-        "D.3",
-        "D.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Sport of athletics",
-      "rationaleAI": "Athletic activities promote human health and fitness.",
-      "relevantPathsAI": [
-        "A.7",
-        "C.4",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Running",
-      "rationaleAI": "Running is a fundamental form of human physical exercise and health activity.",
-      "relevantPathsAI": [
-        "A.7",
-        "B",
-        "C",
-        "C.1",
-        "D.1",
-        "D.1.a",
-        "D.1.c",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Walking",
-      "rationaleAI": "Walking is a basic form of physical activity related to human health.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Swimming",
-      "rationaleAI": "Swimming is a form of physical exercise related to human health.",
-      "relevantPathsAI": [
-        "A.7",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Exercise",
-      "rationaleAI": "Exercise is directly related to human health and fitness.",
-      "relevantPathsAI": [
-        "A.7",
-        "B",
-        "C",
-        "C.2.d",
-        "D",
-        "D.1",
-        "D.2",
-        "D.2.a",
-        "D.2.b",
-        "D.3"
-      ]
-    },
-    {
       "articleTitle": "Health",
-      "rationaleAI": "Health is the direct subject of this section on human health.",
       "relevantPathsAI": [
-        "D.1",
-        "D.1.e",
-        "D.2.a"
-      ]
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Health directly addresses the WHO and other definitions of normality and well-being (B), the determinants of health maintenance, and connects to nutrition, exercise, and mental health covered under D, providing broad coverage of the entire section."
     },
     {
-      "articleTitle": "Hygiene",
-      "rationaleAI": "Hygiene is a fundamental practice in maintaining human health.",
+      "articleTitle": "Pregnancy",
       "relevantPathsAI": [
-        "A.7",
-        "B",
-        "C.1",
-        "C.2.d",
-        "C.4",
-        "D.1",
-        "D.1.a",
-        "D.1.b",
-        "D.2.b",
-        "D.3"
-      ]
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.5"
+      ],
+      "rationaleAI": "Pregnancy covers fertilization (A.1), intrauterine prenatal development through three trimesters (A.2), birth as an outcome (A.3), and reproduction as the mechanism (A.5), directly addressing multiple priority and standard life-cycle stages."
     },
     {
       "articleTitle": "Nutrition",
-      "rationaleAI": "Nutrition is essential to human health.",
       "relevantPathsAI": [
-        "A",
         "D.1",
-        "D.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Obesity",
-      "rationaleAI": "Obesity is a major human health condition.",
-      "relevantPathsAI": [
-        "C",
-        "C.2.b",
-        "C.2.d",
-        "C.5",
-        "D",
-        "D.1",
-        "D.1.e",
-        "D.2.b",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Smoking",
-      "rationaleAI": "Smoking is a major risk factor for human health.",
-      "relevantPathsAI": [
-        "A.7",
-        "B",
-        "D",
-        "D.1",
-        "D.2.a",
-        "D.2.b",
-        "D.3"
-      ]
+        "D.1.a",
+        "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Nutrition covers macro- and micronutrient functions, classes of food, recommended dietary intakes, and metabolic roles, directly addressing D.1 (nutrition and diet) and its sub-paths on functions of food, classes of food, and nutrient requirements."
     },
     {
       "articleTitle": "Sleep",
-      "rationaleAI": "Sleep is essential to human health and its disruption relates to health conditions.",
       "relevantPathsAI": [
-        "A.7",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.1.a",
-        "D.1.c",
-        "D.1.e",
-        "D.2.a",
-        "D.3"
-      ]
+        "D.3",
+        "D.3.a",
+        "D.3.b"
+      ],
+      "rationaleAI": "Sleep covers the nature and definition of sleep, NREM and REM phase cycling, circadian and homeostatic regulation, and physiological effects including immune restoration and memory consolidation, directly addressing D.3 and its sub-paths on defining sleep and psychophysiological variations."
     },
     {
-      "articleTitle": "Food preservation",
-      "rationaleAI": "Food preservation is important for maintaining human health through safe nutrition.",
+      "articleTitle": "Death",
       "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Death covers clinical and biological definitions of dying and death, causes, the biology of senescence, and organ failure, directly addressing the priority path A.7 (dying and death) which has no other source recommendations."
+    },
+    {
+      "articleTitle": "Ageing",
+      "relevantPathsAI": [
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Ageing covers the cumulative biological processes of senescence including DNA damage accumulation and epigenetic regulation, and connects aging to mortality, directly addressing A.6 (aging) and contextualizing A.7 (dying and death)."
+    },
+    {
+      "articleTitle": "Exercise",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b"
+      ],
+      "rationaleAI": "Exercise covers health benefits of physical activity across cardiovascular, immune, neurobiological, and musculoskeletal systems, recommended minimums, and physiological responses to conditioning, directly addressing D.2 and its sub-paths on exercise needs and physiological responses."
+    },
+    {
+      "articleTitle": "Obesity",
+      "relevantPathsAI": [
+        "B",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Obesity covers excess body fat as a medical condition deviating from health norms (B), its dietary causes (D.1), and the role of exercise in management (D.2), providing substantive coverage across multiple outline paths."
+    },
+    {
+      "articleTitle": "Infant",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Infant covers the neonatal period and first year of postnatal life including birth characteristics (A.3 priority path), developmental milestones, sleep patterning, and emotional bonding in postnatal development (A.4)."
+    },
+    {
+      "articleTitle": "Allergy",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "Allergy covers IgE-mediated immune hypersensitivity responses including mast cell and basophil degranulation, directly exemplifying C.2.d (the immune response) as a bodily defense mechanism that can be pathologically exaggerated."
+    },
+    {
+      "articleTitle": "Vaccine",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "Vaccine covers the mechanism of conferring active acquired immunity by priming the immune system's recognition and memory, directly addressing C.2.d (the immune response) as a primary defense against disease."
+    },
+    {
+      "articleTitle": "Injury",
+      "relevantPathsAI": [
+        "C.2.c",
+        "C.4"
+      ],
+      "rationaleAI": "Injury covers inflammatory responses to tissue damage and wound healing processes involving coagulation and antimicrobial responses, directly addressing C.2.c (inflammation: the response to biological insult) and C.4 (healing: regeneration and repair of tissues)."
+    },
+    {
+      "articleTitle": "Blood",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Blood covers the roles of platelets and clotting factors in hemostasis, directly addressing C.3 (role of the blood in the prevention of hemorrhage) as a bodily mechanism for health maintenance."
+    },
+    {
+      "articleTitle": "Disease",
+      "relevantPathsAI": [
+        "B",
+        "C.2"
+      ],
+      "rationaleAI": "Disease provides the definitional contrast for B (definitions and ranges of normality in human health) and covers etiology and defenses relevant to C.2 (defenses against disease), giving substantive coverage of when and how normality fails."
+    },
+    {
+      "articleTitle": "Adolescence",
+      "relevantPathsAI": [
+        "A.4",
+        "A"
+      ],
+      "rationaleAI": "Adolescence covers the transitional developmental stage from puberty to adulthood including physical, cognitive, and psychosocial development, directly addressing A.4 (postnatal development) and A (stages in the human life cycle)."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "A.4",
+        "A"
+      ],
+      "rationaleAI": "Child covers developmental stages from birth through puberty including cognitive, physical, and social maturation, directly addressing A.4 (postnatal development) and providing broad coverage of the childhood portion of A (stages in the human life cycle)."
+    },
+    {
+      "articleTitle": "Parenting",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Parenting covers the physical, cognitive, social, and emotional support provided to children, attachment, and developmental outcomes, directly relevant to A.4 (postnatal development) as a key environmental factor shaping human development."
+    },
+    {
+      "articleTitle": "Food",
+      "relevantPathsAI": [
+        "D.1",
         "D.1.a",
         "D.1.b"
-      ]
+      ],
+      "rationaleAI": "Food covers nutritional macronutrients (carbohydrates, fats, proteins, vitamins, minerals) and human food systems, directly addressing D.1.a (functions of food) and D.1.b (classes of food) within the nutrition and diet path."
+    },
+    {
+      "articleTitle": "Meat",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.b"
+      ],
+      "rationaleAI": "Meat covers protein and fat content as a food class, dietary associations with cardiovascular and cancer risk, and nutritional quality variation, directly addressing D.1.b (classes of food) and D.1.e (therapeutic diets: reducing red meat intake)."
+    },
+    {
+      "articleTitle": "Drinking water",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Drinking water covers safe water as a dietary essential, its role in hydration and public health, fluoridation for dental health, and daily intake requirements, addressing D.1.b (classes of food) and D.1.c (recommended intakes of nutrients)."
+    },
+    {
+      "articleTitle": "Alcoholic beverage",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.d"
+      ],
+      "rationaleAI": "Alcoholic beverages cover ethanol consumption's dose-dependent physiological effects and long-term health risks as a food-related behavior, directly addressing D.1.d (feeding behaviour) and D.1.b (classes of food) in the nutrition path."
+    },
+    {
+      "articleTitle": "Louis Pasteur",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.d"
+      ],
+      "rationaleAI": "Louis Pasteur established germ theory and developed vaccines for cholera, anthrax, and rabies, foundational to understanding C.2 (defenses against disease) and C.2.d (the immune response), making him highly relevant despite being a biographical article."
+    },
+    {
+      "articleTitle": "Physiology",
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Physiology defines normal function at molecular, cellular, organ, and whole-organism levels (B), and pathological deviations underlying disease, providing the scientific framework for understanding bodily health maintenance mechanisms in C."
+    },
+    {
+      "articleTitle": "Human body",
+      "relevantPathsAI": [
+        "B",
+        "C.1"
+      ],
+      "rationaleAI": "Human body covers organ system homeostasis and multi-system interaction maintaining normal function, directly relevant to B (definitions and ranges of normality) and C.1 (maintenance of the internal environment)."
+    },
+    {
+      "articleTitle": "Swimming",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b"
+      ],
+      "rationaleAI": "Swimming covers cardiovascular conditioning, muscle strengthening, and physical health benefits as a form of aerobic exercise, directly addressing D.2 (exercise and physical conditioning) and its sub-paths on exercise needs and physiological responses."
+    },
+    {
+      "articleTitle": "Diabetes",
+      "relevantPathsAI": [
+        "B",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Diabetes illustrates deviation from metabolic normality (B) caused by diet and lifestyle (D.1), and manageable through exercise interventions (D.2), providing substantive coverage of health maintenance paths even though its primary home is Section 423."
+    },
+    {
+      "articleTitle": "Salt",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Salt covers sodium chloride as a dietary mineral essential for electrolyte balance, WHO intake recommendations to limit cardiovascular risk, and iodization to prevent deficiency, directly addressing D.1.b (classes of food) and D.1.c (recommended nutrient intakes)."
+    },
+    {
+      "articleTitle": "Bread",
+      "relevantPathsAI": [
+        "D.1.b"
+      ],
+      "rationaleAI": "Bread is one of humanity's most widely consumed staple foods and covers carbohydrate-based nutrition, leavening and fermentation, and its centrality to global human diets, addressing D.1.b (classes of food) within the nutrition path."
+    },
+    {
+      "articleTitle": "Fruit",
+      "relevantPathsAI": [
+        "D.1.b"
+      ],
+      "rationaleAI": "Fruit covers seed-bearing plant structures consumed for nutrition, providing vitamins and dietary variety, and their role in global agricultural food supply, addressing D.1.b (classes of food) within the nutrition path."
+    },
+    {
+      "articleTitle": "Drink",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D.1.d"
+      ],
+      "rationaleAI": "Drink covers all liquid beverage categories consumed by humans for hydration and physiological support, addressing D.1.b (classes of food) and D.1.d (feeding behaviour), including the cultural and health dimensions of beverage consumption."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

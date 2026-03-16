@@ -1,10 +1,8 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "625",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "Dance is a fundamental performing art within the range of creative arts discussed in this article.",
+      "articleTitle": "Dance",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -12,81 +10,137 @@
         "A.3",
         "A.4",
         "A.5",
-        "B.1",
-        "B.2",
-        "B.4",
-        "C"
-      ]
+        "B",
+        "C",
+        "D",
+        "E",
+        "E.1"
+      ],
+      "rationaleAI": "The core article covering the full outline of Section 625: dance as art, choreography, classification, writing about dance, integration with theatre and film, theatrical vs. participatory types, folk and social dance, and global historical traditions including Western dance (E.1)."
     },
     {
-      "articleTitle": "Music",
-      "rationaleAI": "Music and dance are deeply intertwined performing arts, with musical accompaniment integral to most dance traditions.",
+      "articleTitle": "Theatre",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "C.1"
-      ]
+        "A.5",
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Theatre is the primary context for the integration of dance with other arts (A.5), and ballet's integration with opera and drama (B.2) and modern dance's relation to musical theatre and drama (C.2) are both situated within the theatrical performing arts tradition."
     },
     {
       "articleTitle": "Performing arts",
-      "rationaleAI": "Dance is a fundamental performing art combining physical movement with artistic expression.",
       "relevantPathsAI": [
         "A",
+        "E"
+      ],
+      "rationaleAI": "Situates dance within the broader category of performing arts (A.1, nature and origins of dance as art) and provides a cross-cultural historical survey of dance traditions from prehistoric origins through Asian, African, European, and American forms relevant to E."
+    },
+    {
+      "articleTitle": "Opera",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Ballet has historically been integrated with opera — particularly in the French operatic tradition — making opera directly relevant to B.2 (integration of ballet with opera) and the broader context of dance as a component of musical theatre."
+    },
+    {
+      "articleTitle": "Michael Jackson",
+      "relevantPathsAI": [
+        "D",
+        "A.1"
+      ],
+      "rationaleAI": "Michael Jackson popularized the moonwalk and defined visual performance aesthetics in popular dance, directly relevant to D (popular dance) and to understanding the origins and social functions of dance as performance art (A.1)."
+    },
+    {
+      "articleTitle": "Music",
+      "relevantPathsAI": [
         "A.5",
-        "C",
-        "C.2",
-        "E",
-        "E.1"
-      ]
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Music is the indispensable partner art to dance in nearly all contexts, making this article relevant to A.5 (integration of dance with music), the musical accompaniment of ballet (B), and the role of music in modern dance (C)."
     },
     {
       "articleTitle": "Entertainment",
-      "rationaleAI": "Dance serves as entertainment across cultures, from folk dances to ballet to contemporary social dancing.",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
         "D"
-      ]
+      ],
+      "rationaleAI": "Entertainment covers dance as a historical form of audience entertainment across court, public, and mass media contexts (A.1, origins and functions of dance), and addresses popular and folk dance within the sociology of leisure (D)."
     },
     {
-      "articleTitle": "Singing",
-      "rationaleAI": "Singing is integral to dance and other performing arts traditions.",
+      "articleTitle": "Film",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.5",
-        "B.1",
-        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Film is one of the arts with which dance is integrated (A.5, cross-referenced from 623.B), and the dance-in-film tradition — from Hollywood musicals to modern-dance films — also connects to modern dance's relation to motion pictures (C.2)."
+    },
+    {
+      "articleTitle": "Charlie Chaplin",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Chaplin's films made extensive use of dance and physical movement as a performance art integrated with cinema, exemplifying the intersection of dance with motion pictures addressed under A.5."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
         "B.4",
-        "C.2",
-        "C.3",
-        "D",
-        "E"
-      ]
+        "E.1"
+      ],
+      "rationaleAI": "France is the founding locus of classical ballet — the Paris Opéra Ballet, the Académie Royale de Danse — and the French tradition is central to the history of ballet (B.4) and Western dance (E.1)."
     },
     {
-      "articleTitle": "Dance",
-      "rationaleAI": "Dance is the direct subject of this section on the performing art of dance.",
+      "articleTitle": "Romanticism",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
+        "B.4",
+        "B.3",
+        "E.1"
+      ],
+      "rationaleAI": "The Romantic era produced the classical ballets of the 19th century (Giselle, La Sylphide, Swan Lake), making Romanticism directly relevant to the history of ballet (B.4), the definition of traditional and classical ballet types (B.3), and Western dance history (E.1)."
+    },
+    {
+      "articleTitle": "Classical music",
+      "relevantPathsAI": [
         "B",
-        "B.2",
         "B.4",
-        "C",
-        "C.1"
-      ]
+        "E.1"
+      ],
+      "rationaleAI": "Classical music provides the primary compositional tradition for ballet accompaniment — from Baroque court dances through Romantic and 20th-century ballet scores (Tchaikovsky, Stravinsky) — directly relevant to B (ballet and its integration with music) and B.4 (history of ballet)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "E.1",
+        "A.1"
+      ],
+      "rationaleAI": "Ancient Greek choral dance, the dithyramb, and theatrical dance in tragedy and comedy represent the earliest documented Western dance traditions (E.1) and inform understanding of dance's origins and ritual functions (A.1)."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "D",
+        "E.1"
+      ],
+      "rationaleAI": "Spain's flamenco and other regional dance traditions (bolero, sardana) are significant examples of folk and popular dance (D) and constitute a major strand of Western dance history (E.1)."
+    },
+    {
+      "articleTitle": "Pop music",
+      "relevantPathsAI": [
+        "D",
+        "A.3"
+      ],
+      "rationaleAI": "Pop music's emphasis on danceability and its connection to popular dance forms (D) — from disco and hip-hop to contemporary club dance — makes it relevant to popular dance classification and the diverse kinds of dance addressed in A.3."
+    },
+    {
+      "articleTitle": "Europe",
+      "relevantPathsAI": [
+        "E.1",
+        "B.4"
+      ],
+      "rationaleAI": "Europe encompasses the full tradition of Western dance (E.1) including the development of classical ballet from the Italian Renaissance through the French court and Russian Imperial Ballet (B.4), making it a relevant geographic and cultural context."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

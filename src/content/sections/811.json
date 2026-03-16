@@ -129,13 +129,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Monotheism",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Theism",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Theism",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

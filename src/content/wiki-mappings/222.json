@@ -1,398 +1,266 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "222",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "Earth's hydrosphere, including oceans and ice masses, is a central feature of the planet covered here.",
+      "articleTitle": "Ocean",
       "relevantPathsAI": [
-        "A",
-        "A.1.b",
+        "A.1.a",
         "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3",
-        "D.4",
-        "D.6"
-      ]
+        "E",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Ocean covers the physical and chemical properties of seawater (222.B), ocean-atmosphere interactions including ENSO and Gulf Stream effects (222.E), surface and internal waves and tides (222.G), and ocean circulation currents (222.H). It directly addresses the principal saltwater bodies of the hydrosphere (222.A.1.a)."
     },
     {
       "articleTitle": "Sea",
-      "rationaleAI": "The sea is the primary component of Earth's hydrosphere, covering over 70% of the planet's surface.",
+      "relevantPathsAI": [
+        "A.1.a",
+        "B",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Sea covers seawater chemistry (salinity, pH, dissolved gases), ocean currents including thermohaline conveyor, tides, and waves (222.G, 222.H), directly mapping to the physical and chemical properties of seawater (222.B) and saltwater body distribution (222.A.1.a)."
+    },
+    {
+      "articleTitle": "Earth",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.4",
-        "B",
-        "C",
         "D"
-      ]
-    },
-    {
-      "articleTitle": "Water",
-      "rationaleAI": "Water constitutes the hydrosphere including oceans, freshwater bodies, and ice masses that cover most of Earth's surface.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Antarctica",
-      "rationaleAI": "Antarctica's ice sheets are the largest ice masses in Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3",
-        "D.4",
-        "E.3",
-        "E.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Arctic",
-      "rationaleAI": "The Arctic's ice masses and cold-water systems are key components of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3",
-        "D.4"
-      ]
-    },
-    {
-      "articleTitle": "Ocean",
-      "rationaleAI": "Oceans are the dominant component of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Arctic Ocean",
-      "rationaleAI": "The Arctic Ocean is a major component of Earth's hydrosphere with extensive ice cover.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Atlantic Ocean",
-      "rationaleAI": "The Atlantic Ocean is a major component of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Mediterranean Sea",
-      "rationaleAI": "The Mediterranean is a major semi-enclosed sea within Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.4",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Indian Ocean",
-      "rationaleAI": "The Indian Ocean is a major component of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Pacific Ocean",
-      "rationaleAI": "The Pacific Ocean is the largest component of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "D.1",
-        "D.3",
-        "D.4",
-        "D.6",
-        "E",
-        "E.1",
-        "E.3",
-        "E.3.a"
-      ]
+      ],
+      "rationaleAI": "Earth's article covers the hydrosphere including oceans covering 70.8% of the surface and the water cycle broadly, providing essential framing for the distribution of water in the hydrosphere (222.A) and the hydrologic cycle (222.D)."
     },
     {
       "articleTitle": "Lake",
-      "rationaleAI": "Lakes are freshwater bodies that are key components of the hydrosphere.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.2",
         "A.2.a",
-        "A.3.c",
-        "B",
-        "C",
-        "D.1",
-        "D.3"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Lake covers freshwater bodies including tectonic, glacial, volcanic, and endorheic lakes (222.A.2.a), with limnology covering the physical and chemical properties of freshwater standing water bodies (222.C)."
     },
     {
-      "articleTitle": "Caspian Sea",
-      "rationaleAI": "The Caspian Sea is the world's largest enclosed body of water.",
+      "articleTitle": "Water",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
         "B",
         "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3",
-        "D.4"
-      ]
+        "D"
+      ],
+      "rationaleAI": "Water covers the molecular structure and physical properties of H\u2082O, the global water cycle, and ocean and groundwater distribution, directly relevant to the physical and chemical properties of seawater and freshwater (222.B, 222.C) and the hydrologic cycle (222.D)."
     },
     {
-      "articleTitle": "Great Lakes",
-      "rationaleAI": "The Great Lakes are the largest group of freshwater lakes in the world.",
+      "articleTitle": "Pacific Ocean",
       "relevantPathsAI": [
-        "A",
-        "A.1",
         "A.1.a",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
+        "E.3.b",
+        "H"
+      ],
+      "rationaleAI": "The Pacific Ocean is one of the principal saltwater bodies (222.A.1.a); its Coriolis-driven circulation connects to ocean currents (222.H), and its role in El Ni\u00f1o/ENSO patterns directly maps to ocean-atmosphere interactions and climate anomalies (222.E.3.b)."
+    },
+    {
+      "articleTitle": "Arctic Ocean",
+      "relevantPathsAI": [
+        "A.1.a",
         "A.3.b",
-        "A.3.c"
-      ]
+        "E"
+      ],
+      "rationaleAI": "The Arctic Ocean is a principal saltwater body (222.A.1.a) with sea ice dynamics including icebergs and pack ice (222.A.3.b), and its connections to Atlantic and Pacific circulation are relevant to ocean-atmosphere interactions and global climate regulation (222.E)."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
+        "D.3",
+        "E"
+      ],
+      "rationaleAI": "Atmosphere of Earth covers the role of water vapor, precipitation and evaporation in the atmospheric system (222.D.3), and the greenhouse effect and ocean-atmosphere energy exchange are directly relevant to ocean-atmosphere interactions (222.E)."
+    },
+    {
+      "articleTitle": "Mediterranean Sea",
+      "relevantPathsAI": [
+        "A.1.a",
+        "B"
+      ],
+      "rationaleAI": "The Mediterranean Sea is a major marginal saltwater body (222.A.1.a) with distinctive oceanography including the Messinian salinity crisis, circulation patterns, and seawater chemistry relevant to physical and chemical properties of seawater (222.B)."
     },
     {
       "articleTitle": "River",
-      "rationaleAI": "Rivers are major freshwater components of Earth's hydrosphere.",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.2",
         "A.2.a",
-        "A.3.c",
-        "D.3",
-        "D.4",
-        "D.6",
-        "E.1",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Amazon River",
-      "rationaleAI": "The Amazon is the world's largest river by discharge volume.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3",
         "D.4"
-      ]
+      ],
+      "rationaleAI": "Rivers are primary freshwater bodies (222.A.2.a) whose hydrology\u2014drainage basins, discharge, and groundwater connections\u2014maps directly to runoff and subsurface water in the hydrologic cycle (222.D.4)."
     },
     {
-      "articleTitle": "Ganges",
-      "rationaleAI": "The Ganges is a major river system in South Asia.",
+      "articleTitle": "Climate change",
       "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Mississippi River",
-      "rationaleAI": "The Mississippi is North America's largest river system.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Nile",
-      "rationaleAI": "The Nile is Africa's longest river and a major hydrological feature.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Yangtze",
-      "rationaleAI": "The Yangtze is Asia's longest river and a major hydrological feature.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.2.a",
-        "A.3.c",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3"
-      ]
-    },
-    {
-      "articleTitle": "Drinking water",
-      "rationaleAI": "Freshwater sources for drinking are part of Earth's hydrosphere.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "D.1",
-        "D.3",
-        "D.4",
-        "D.6",
-        "E.1",
-        "E.2",
+        "E.3",
         "F"
-      ]
-    },
-    {
-      "articleTitle": "Flood",
-      "rationaleAI": "Floods involve extreme hydrological events affecting freshwater systems treated here.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.2",
-        "A.2.a",
-        "A.3.c",
-        "D.1",
-        "D.3",
-        "D.4",
-        "D.6",
-        "E.1"
-      ]
+      ],
+      "rationaleAI": "Climate change covers glacier retreat, sea level rise, and intensified storms as documented hydrosphere impacts, relevant to ocean-atmosphere interactions affecting climate (222.E.3), and addresses human activities disrupting the water balance and ocean acidification (222.F)."
     },
     {
       "articleTitle": "Rain",
-      "rationaleAI": "Rainfall replenishes the hydrosphere including freshwater bodies addressed here.",
       "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.2.b",
-        "A.4",
-        "B",
-        "C",
-        "D",
-        "D.1",
-        "D.2",
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Rain is the dominant freshwater delivery mechanism globally, sustaining river systems and groundwater recharge, which maps to the role of water vapor and precipitation in the hydrologic cycle (222.D.3) and runoff and subsurface water (222.D.4)."
+    },
+    {
+      "articleTitle": "Tropical cyclone",
+      "relevantPathsAI": [
+        "E.3.a"
+      ],
+      "rationaleAI": "Tropical cyclones are sustained by warm ocean surface temperatures, directly illustrating the link between ocean surface temperature and climate/weather anomalies (222.E.3.a), and their storm surges demonstrate ocean-atmosphere interaction impacts."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "E.2",
+        "F"
+      ],
+      "rationaleAI": "CO\u2082 dissolving in ocean water to form carbonic acid and causing ocean acidification is the central topic of oceanic waters as a sink for carbon dioxide (222.E.2), and rising CO\u2082 from fossil fuels is the primary example of human activities acidifying precipitation and disrupting the water balance (222.F)."
+    },
+    {
+      "articleTitle": "Cloud",
+      "relevantPathsAI": [
         "D.3"
-      ]
+      ],
+      "rationaleAI": "Clouds are central to the role of water vapor in the hydrologic cycle\u2014condensation and precipitation processes (222.D.3)\u2014covering cloud formation, classification, and their role in precipitation, directly relevant to the hydrosphere's water cycle linkages."
     },
     {
       "articleTitle": "Snow",
-      "rationaleAI": "Snow accumulation contributes to ice masses and freshwater systems in the hydrosphere.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
         "A.3.c",
-        "D.3",
-        "D.4"
-      ]
+        "D.5"
+      ],
+      "rationaleAI": "Snow covers river ice and lake ice as a form of frozen freshwater (222.A.3.c) and snowpack's role as a critical freshwater reservoir regulating seasonal runoff, directly mapping to the role of ice in the hydrologic cycle (222.D.5)."
     },
     {
-      "articleTitle": "Dam",
-      "rationaleAI": "Dams alter the hydrosphere by controlling freshwater flow and creating reservoirs.",
+      "articleTitle": "Antarctica",
       "relevantPathsAI": [
-        "A.1.b",
-        "D.1",
-        "E.3",
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Antarctica holds approximately 70% of global freshwater as ice sheets and glaciers (222.A.3.a), with sea-level implications from ice sheet dynamics; it also connects to icebergs calving into the Southern Ocean (222.A.3.b)."
+    },
+    {
+      "articleTitle": "Flood",
+      "relevantPathsAI": [
+        "D.4",
         "F"
-      ]
+      ],
+      "rationaleAI": "Floods represent the direct consequence of runoff and subsurface water overflows in the hydrologic cycle (222.D.4), and human activities such as deforestation and urbanization that increase flood frequency constitute effects on the hydrosphere (222.F)."
+    },
+    {
+      "articleTitle": "Indian Ocean",
+      "relevantPathsAI": [
+        "A.1.a",
+        "E.3"
+      ],
+      "rationaleAI": "The Indian Ocean is the third-largest oceanic saltwater body (222.A.1.a) with monsoon-driven climate and Walker circulation directly relevant to ocean-atmosphere interactions affecting weather and climate (222.E.3)."
+    },
+    {
+      "articleTitle": "Great Lakes",
+      "relevantPathsAI": [
+        "A.2.a",
+        "C"
+      ],
+      "rationaleAI": "The Great Lakes constitute the largest freshwater lake system on Earth's surface (222.A.2.a), containing 21% of surface freshwater, with water chemistry and limnological properties directly relevant to the physical and chemical properties of freshwater (222.C)."
+    },
+    {
+      "articleTitle": "Caspian Sea",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.a",
+        "C"
+      ],
+      "rationaleAI": "The Caspian Sea is the world's largest inland body of water and is ambiguous between lake and sea (222.A.1.a, 222.A.2.a), with distinctive low salinity chemistry and hydrology (endorheic basin with Volga inflow) directly relevant to freshwater and brackish water properties (222.C)."
+    },
+    {
+      "articleTitle": "Ecology",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Ecology covers the role of water in biosphere functioning including aquatic ecosystems, directly addressing water in the biosphere (222.A.4), the sole no-coverage priority path for this section."
+    },
+    {
+      "articleTitle": "Wind",
+      "relevantPathsAI": [
+        "E.3",
+        "H.2",
+        "H.3"
+      ],
+      "rationaleAI": "Wind drives ocean surface circulation through frictional forces (222.H.2, 222.H.3) including trade winds and westerlies generating major surface currents, and is a key component of ocean-atmosphere interactions affecting climate (222.E.3)."
+    },
+    {
+      "articleTitle": "Earthquake",
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Earthquakes generate tsunamis\u2014a form of surface wave in the hydrosphere (222.G.1)\u2014and the article explicitly covers these as a secondary seismic effect, making it relevant to waves in the hydrosphere."
+    },
+    {
+      "articleTitle": "Amazon rainforest",
+      "relevantPathsAI": [
+        "A.4",
+        "D"
+      ],
+      "rationaleAI": "The Amazon rainforest plays a disproportionate role in South American hydrology and water cycling, relevant to water in the biosphere (222.A.4) and to the hydrologic cycle via Amazonian moisture recycling (222.D)."
+    },
+    {
+      "articleTitle": "Hydropower",
+      "relevantPathsAI": [
+        "D.6"
+      ],
+      "rationaleAI": "Hydropower is a direct application of water resources and supply (222.D.6), converting the energy of flowing water into electricity and constituting a major component of freshwater utilization in the hydrosphere."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Pollution covers the introduction of harmful contaminants into water bodies, including cultural eutrophication and acid precipitation from sulfur dioxide and nitrogen oxides\u2014exactly the examples cited in outline path 222.F on human activities affecting the hydrosphere."
+    },
+    {
+      "articleTitle": "Yangtze",
+      "relevantPathsAI": [
+        "A.2.a",
+        "D.4"
+      ],
+      "rationaleAI": "The Yangtze is a major freshwater river body (222.A.2.a) whose hydrology, periodic flooding, and Three Gorges Dam connect to runoff and water resources in the hydrologic cycle (222.D.4, 222.D.6)."
+    },
+    {
+      "articleTitle": "Ganges",
+      "relevantPathsAI": [
+        "A.2.a",
+        "D.4"
+      ],
+      "rationaleAI": "The Ganges is a major Himalayan-fed freshwater river (222.A.2.a) whose hydrology, irrigation canals, and dams connect to runoff and subsurface water in the hydrologic cycle (222.D.4), and it is threatened by climate-driven water stress."
+    },
+    {
+      "articleTitle": "Arctic",
+      "relevantPathsAI": [
+        "A.3.b",
+        "E"
+      ],
+      "rationaleAI": "The Arctic covers sea ice dynamics including seasonal melt and icebergs/pack ice (222.A.3.b) and connects to global climate regulation through polar ocean-atmosphere interactions (222.E)."
+    },
+    {
+      "articleTitle": "History of Earth",
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "History of Earth covers oceanic and atmospheric formation and the evolution of the hydrosphere over geological time, relevant as broad background to the hydrologic cycle (222.D) and the long-term context of water distribution."
+    },
+    {
+      "articleTitle": "Fossil fuel",
+      "relevantPathsAI": [
+        "E.2",
+        "F"
+      ],
+      "rationaleAI": "Fossil fuel combustion is the primary driver of CO\u2082 buildup causing ocean acidification (222.E.2) and greenhouse warming that disrupts the water balance (222.F), making it directly relevant to human effects on the hydrosphere."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

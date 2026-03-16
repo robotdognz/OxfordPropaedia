@@ -1,187 +1,268 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "124",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "Heat, thermodynamics, and states of matter are fundamental topics in the physical sciences.",
-      "relevantPathsAI": [
-        "D",
-        "F.1",
-        "G.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Fire",
-      "rationaleAI": "Fire involves heat transfer and thermodynamic processes including energy release and state changes of matter.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4.a",
-        "A.4.b",
-        "A.4.i",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5.b",
-        "A.5.d",
-        "A.5.e",
-        "A.9.a"
-      ]
-    },
-    {
-      "articleTitle": "Energy",
-      "rationaleAI": "Energy, heat, and thermodynamics are intimately connected, with energy conservation governing all thermal processes and state changes.",
+      "articleTitle": "Thermodynamics",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
         "A.3",
-        "A.4.b",
-        "A.4.i",
-        "A.4.i.iii",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Matter",
-      "rationaleAI": "The states of matter including gas, liquid, and plasma are governed by thermodynamic principles of heat and energy.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4.i.iii",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
-        "A.5.e",
-        "D",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "State of matter",
-      "rationaleAI": "States of matter and phase transitions are governed by thermodynamics as treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4.a",
-        "A.4.i.iii",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
+        "A.4",
+        "A.5",
+        "A.6",
         "A.9"
-      ]
-    },
-    {
-      "articleTitle": "Liquid",
-      "rationaleAI": "Liquids are a nonsolid state of matter whose properties are governed by thermodynamics as treated here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4.b",
-        "A.4.i.iii",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5.b",
-        "A.5.c",
-        "A.5.d",
-        "A.5.e"
-      ]
+      ],
+      "rationaleAI": "The core article for Section A, covering all four laws of thermodynamics, the description of physical systems and states (A.1), the Carnot cycle and Maxwell equations (A.5), stable equilibrium (A.4), and statistical thermodynamics (A.9)."
     },
     {
       "articleTitle": "Gas",
-      "rationaleAI": "Gases are a nonsolid state of matter whose behavior is described by thermodynamic principles in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.v"
-      ]
+        "B",
+        "B.1",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers the gaseous state of matter (B), including the nature and properties of a gas (B.1), simple gas laws and thermal equation of state (B.2.a–b), and kinetic theory approaches to particle-description of gases (B.3)."
+    },
+    {
+      "articleTitle": "Liquid",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers the liquid state of matter (C), including equilibrium behavior and properties (C.1), molecular structure of liquids via distribution functions (C.2), and transport, acoustic, thermodynamic, optical, and surface tension properties (C.3)."
     },
     {
       "articleTitle": "Plasma (physics)",
-      "rationaleAI": "Plasma is a high-energy state of matter whose properties relate to thermodynamics and energy.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4.a",
-        "A.4.b",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.5.a",
-        "A.5.b",
-        "A.5.c"
-      ]
+        "F",
+        "F.1",
+        "F.2",
+        "F.4",
+        "F.5",
+        "F.7",
+        "F.8",
+        "F.9"
+      ],
+      "rationaleAI": "Directly covers the plasma state of matter (F), including basic plasma properties such as electron density and quasineutrality (F.1), elastic and inelastic collisions (F.2), plasma formation (F.4), behavior in fields (F.5), fluidlike behavior (F.7), applications (F.8), and natural occurrence (F.9)."
     },
     {
-      "articleTitle": "Vacuum",
-      "rationaleAI": "Vacuum represents the absence of matter and is relevant to thermodynamic and state-of-matter considerations.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4.i.iii",
-        "A.5.b",
-        "A.5.d",
-        "A.5.e",
-        "A.7",
-        "A.9.a",
-        "B.3.c",
-        "D",
-        "D.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Thermodynamics",
-      "rationaleAI": "Thermodynamics is the direct subject of this section on heat, energy, and the states of matter.",
+      "articleTitle": "State of matter",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.a",
-        "A.4.b",
-        "A.4.i.iv",
-        "A.4.v",
-        "A.5"
-      ]
+        "B",
+        "C",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Provides comprehensive coverage of all phase states (gas, liquid, plasma, and Bose-Einstein condensates at extreme conditions), phase transitions driven by temperature and pressure, directly spanning divisions A through G of the section outline."
     },
     {
       "articleTitle": "Temperature",
-      "rationaleAI": "Temperature is the fundamental thermodynamic variable governing heat and state changes of matter.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.a",
+        "A.4.b",
         "A.4.c",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii"
-      ]
+        "A.5",
+        "D.5"
+      ],
+      "rationaleAI": "Temperature as the intensive property governing heat flow between systems directly corresponds to A.4.b, its thermodynamic definition connects to A.5's relations, and its effects on solubility are covered in D.5."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "A.2",
+        "A.4.c",
+        "A.4.v"
+      ],
+      "rationaleAI": "Covers the conservation of energy as the first law of thermodynamics (A.2), heat as a form of energy (A.4.c), and the relation of heat to entropy, work, and change of energy (A.4.v), which are foundational principles of the section."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
+        "C",
+        "D",
+        "D.3.c",
+        "D.4.b"
+      ],
+      "rationaleAI": "Water is the paradigmatic liquid (C) and universal solvent, covering solution properties and thermodynamics (D), hydrogen bonding effects on solutions (D.3.c), and the Arrhenius dissociation theory of its self-ionization (D.4.b)."
     },
     {
       "articleTitle": "Physical chemistry",
-      "rationaleAI": "Physical chemistry draws on thermodynamics to explain the states and transformations of matter.",
       "relevantPathsAI": [
-        "A.1",
-        "A.9.a",
+        "A",
         "D",
         "E",
-        "E.3",
-        "G.3"
-      ]
+        "H"
+      ],
+      "rationaleAI": "Physical chemistry encompasses thermodynamic principles (A), solution theory (D), surface phenomena including colloids and adsorption (E), and transport phenomena (H) — all major divisions of this section's outline."
+    },
+    {
+      "articleTitle": "Refrigeration",
+      "relevantPathsAI": [
+        "A.4.c",
+        "A.5.a",
+        "G.1",
+        "G.1.c"
+      ],
+      "rationaleAI": "Refrigeration directly applies thermodynamic principles including the Carnot cycle (A.5.a), heat transfer (A.4.c), and achieves low temperatures requiring special methods (G.1.c: adiabatic cooling), making it relevant to both heat engineering and low-temperature matter properties."
+    },
+    {
+      "articleTitle": "Electromagnetism",
+      "relevantPathsAI": [
+        "F.5",
+        "C.3.c"
+      ],
+      "rationaleAI": "Electromagnetism governs plasma behavior in magnetic and electric fields (F.5) and explains the electrical and magnetic properties of liquids (C.3.c), providing the theoretical framework for these two outline paths."
+    },
+    {
+      "articleTitle": "James Clerk Maxwell",
+      "relevantPathsAI": [
+        "A.5.b",
+        "A.9"
+      ],
+      "rationaleAI": "Maxwell's thermodynamic equations relating entropy to pressure, volume, and temperature (A.5.b) and his Maxwell-Boltzmann velocity distribution foundational to statistical thermodynamics (A.9) are central contributions covered in this article."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "Electromagnetic radiation covers synchrotron radiation, X-ray emission, and excitation radiation from plasmas (F.3) as part of its spectrum-wide treatment of electromagnetic wave phenomena and their sources."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2.a"
+      ],
+      "rationaleAI": "Earth's atmosphere is a real-world system of mixed gases whose macroscopic behavior is governed by the simple gas laws (B.2.a) and whose nature and properties as a gaseous system (B.1) are illustrated by atmospheric composition and layering."
+    },
+    {
+      "articleTitle": "Natural gas",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Natural gas (primarily methane) is a practical exemplar of the gaseous state of matter (B.1) and its thermodynamic treatment via gas laws and equations of state (B.2), covering compression, liquefaction, and transport properties."
+    },
+    {
+      "articleTitle": "Lightning",
+      "relevantPathsAI": [
+        "F.4",
+        "F.9"
+      ],
+      "rationaleAI": "Lightning is a natural formation of plasma through atmospheric electrical discharge (F.4) and exemplifies the existence of plasmas on Earth (F.9), covering the atmospheric physics of charge separation and rapid ionization."
+    },
+    {
+      "articleTitle": "Plasma (physics)",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.4",
+        "F.5",
+        "F.7",
+        "F.8",
+        "F.9"
+      ],
+      "rationaleAI": "Directly covers the plasma state of matter (F) in full, including basic plasma properties and parameters (F.1), particle collisions (F.2), plasma formation (F.4), behavior in magnetic and electric fields (F.5), fluidlike behavior via MHD (F.7), applications in fusion and propulsion (F.8), and natural plasmas in space and on Earth (F.9)."
+    },
+    {
+      "articleTitle": "Star",
+      "relevantPathsAI": [
+        "F.9"
+      ],
+      "rationaleAI": "Stars are luminous plasma spheroids whose interiors represent the most abundant natural plasma environments in the universe (F.9: existence of plasmas in the Sun and stars), providing direct coverage of this outline path."
+    },
+    {
+      "articleTitle": "Outer space",
+      "relevantPathsAI": [
+        "F.9"
+      ],
+      "rationaleAI": "Outer space is the extraterrestrial medium where plasma (intergalactic plasma, stellar winds, interplanetary medium) constitutes the dominant phase of baryonic matter (F.9: plasmas in the extraterrestrial medium)."
+    },
+    {
+      "articleTitle": "Quantum mechanics",
+      "relevantPathsAI": [
+        "A.9",
+        "G.1.b"
+      ],
+      "rationaleAI": "Quantum mechanics underlies statistical thermodynamics (A.9: laws considering microscopic structure of physical systems) and explains special quantum phenomena at very low temperatures such as superconductivity and superfluidity (G.1.b)."
+    },
+    {
+      "articleTitle": "Albert Einstein",
+      "relevantPathsAI": [
+        "A.9"
+      ],
+      "rationaleAI": "Einstein's work on Brownian motion and Bose-Einstein statistics directly contributed to the foundations of statistical thermodynamics (A.9), alongside his photoelectric effect work that connects to quantum aspects of energy at the microscopic scale."
+    },
+    {
+      "articleTitle": "Magnetism",
+      "relevantPathsAI": [
+        "G.1.a",
+        "C.3.c"
+      ],
+      "rationaleAI": "Magnetism covers effects of low temperature on magnetic properties (G.1.a) including superconducting diamagnetism (Meissner effect) and antiferromagnetism, and the magnetic properties of liquids (C.3.c) as a physical property of the liquid state."
+    },
+    {
+      "articleTitle": "Acid–base reaction",
+      "relevantPathsAI": [
+        "D.1",
+        "D.4.b"
+      ],
+      "rationaleAI": "Acid-base reactions are relevant to solutions of weak electrolytes (D.1) and to the Arrhenius dissociation theory of electrolyte solutions (D.4.b), covering the ionization behavior that determines solution properties."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Carbon dioxide dissolution in water is a canonical example of the effects of temperature and pressure on the solubility of gases (D.5), governing ocean acidification and carbonation equilibria."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
+        "A.4.c",
+        "A.5.a"
+      ],
+      "rationaleAI": "Heat engines directly apply thermodynamic principles including the Carnot cycle (A.5.a) and represent the technical applications of heat energy (A.4.c.iv), converting thermal energy into mechanical work."
+    },
+    {
+      "articleTitle": "Wave",
+      "relevantPathsAI": [
+        "C.3.b",
+        "H"
+      ],
+      "rationaleAI": "Wave covers acoustic properties including propagation of sound waves through liquids (C.3.b) and the wave mechanics underlying transport phenomena (H) such as phonon transport and diffusion processes in condensed matter."
+    },
+    {
+      "articleTitle": "Subatomic particle",
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Plasma consists of free electrons and ions (subatomic particles), making subatomic particle physics directly relevant to basic plasma parameters and electron density (F.1) and to elastic and inelastic collisions of plasma particles (F.2)."
+    },
+    {
+      "articleTitle": "Vacuum",
+      "relevantPathsAI": [
+        "G.1.c"
+      ],
+      "rationaleAI": "Vacuum technology is used in achieving and characterizing very low temperatures (G.1.c: special methods including adiabatic cooling in low-pressure environments), and the quantum vacuum with zero-point energy is relevant to extremely low-temperature physics."
+    },
+    {
+      "articleTitle": "Force",
+      "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Force fields (gravitational, electromagnetic) applied to thermodynamic systems are covered in outline path A.7 (the effects of applied force fields on simple systems), directly relevant to this otherwise uncovered path."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

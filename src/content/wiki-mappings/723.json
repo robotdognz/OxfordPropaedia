@@ -1,255 +1,171 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "723",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Measurement, observation, and control technologies are essential to technological practice.",
-      "relevantPathsAI": [
-        "B.1",
-        "D.1.d",
-        "E.1.b",
-        "E.1.c",
-        "G",
-        "G.2",
-        "H",
-        "H.2"
-      ]
-    },
-    {
-      "articleTitle": "Time",
-      "rationaleAI": "Timekeeping and chronometry are fundamental measurement and observation technologies from sundials to atomic clocks.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.2",
-        "E.1.b",
-        "E.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Measurement",
-      "rationaleAI": "Measurement is a core function of the technology of observation and control.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D.1.b",
-        "D.1.c",
-        "E.1.b",
-        "E.1.c",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "International System of Units",
-      "rationaleAI": "The SI system standardizes measurement as part of the technology of observation and control.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Light",
-      "rationaleAI": "Optical technologies for measurement and observation rely on the properties of light.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.1.f",
-        "D.2"
-      ]
-    },
-    {
       "articleTitle": "Optics",
-      "rationaleAI": "Optical instruments are key technologies of measurement and observation.",
       "relevantPathsAI": [
-        "B.1",
         "C",
-        "D.1.c",
-        "D.2",
-        "D.2.c",
         "D.2.e",
-        "D.2.f",
-        "D.2.g",
-        "E",
-        "E.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Navigation",
-      "rationaleAI": "Navigation relies on technologies of measurement and observation treated here.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D.2",
         "E.1.a",
-        "E.1.b",
-        "E.1.c",
-        "G",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Compass",
-      "rationaleAI": "The compass is an instrument of measurement and observation using Earth's magnetic field.",
-      "relevantPathsAI": [
-        "D.2.i",
-        "G.7"
-      ]
-    },
-    {
-      "articleTitle": "Map",
-      "rationaleAI": "Maps are instruments of spatial measurement and observation treated here.",
-      "relevantPathsAI": [
-        "B.1",
-        "D.1.b",
-        "E.1.b",
-        "E.1.c",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Radar",
-      "rationaleAI": "Radar is a technology of measurement and observation using electromagnetic waves.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D",
-        "D.1",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "Calendar",
-      "rationaleAI": "Calendars are systems of temporal measurement and timekeeping.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "D.1.c",
-        "D.1.d",
-        "E.1.b",
-        "E.1.c",
-        "G",
-        "G.2",
-        "G.6"
-      ]
-    },
-    {
-      "articleTitle": "Clock",
-      "rationaleAI": "Clocks are precision instruments of temporal measurement and control.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "D",
-        "D.1.a",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.1.f"
-      ]
+        "E.1.b"
+      ],
+      "rationaleAI": "Covers the refraction and reflection principles governing how optical measurement instruments operate (C); directly underpins microscopes (E.1.a), telescopes (E.1.b), and optical measurement devices like polarimeters and refractometers (D.2.e)."
     },
     {
       "articleTitle": "Camera",
-      "rationaleAI": "The camera is an optical instrument of observation and image recording.",
       "relevantPathsAI": [
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.1.f",
-        "E.1.a",
-        "E.1.b",
-        "E.1.c",
-        "G.2",
-        "G.7",
-        "G.8"
-      ]
+        "E.2"
+      ],
+      "rationaleAI": "E.2 explicitly names cameras as instruments for recording phenomena; the article covers the full range from daguerreotype to digital and scientific imaging, directly addressing this outline path."
     },
     {
-      "articleTitle": "Laser",
-      "rationaleAI": "Lasers serve as precision instruments in measurement and observation technology.",
+      "articleTitle": "Radar",
       "relevantPathsAI": [
-        "B.1",
-        "C",
-        "D.1.d",
-        "E.1.a",
-        "E.1.b",
-        "E.1.c",
-        "G.2"
-      ]
-    },
-    {
-      "articleTitle": "Lens",
-      "rationaleAI": "Lenses are core components of optical instruments for measurement and observation.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "D.1.b",
-        "D.1.c",
-        "D.1.d",
-        "D.2",
         "D.2.c",
-        "D.2.e",
-        "D.2.g",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Microscope",
-      "rationaleAI": "The microscope is an optical instrument of observation enabling study of small structures.",
-      "relevantPathsAI": [
-        "D",
-        "D.2.e",
-        "E.1.a",
-        "E.1.b",
-        "F"
-      ]
+        "G.5",
+        "G.7"
+      ],
+      "rationaleAI": "Radar is used for direction-finding and ranging (D.2.c), meteorological observation (G.5), and navigation (G.7) \u2014 all three are explicitly listed outline paths and are substantively covered in the article's applications section."
     },
     {
       "articleTitle": "Telescope",
-      "rationaleAI": "The telescope is an optical instrument of observation enabling study of distant objects.",
       "relevantPathsAI": [
-        "C",
-        "D.2",
-        "D.2.c",
-        "D.2.g",
-        "E",
         "E.1.b",
-        "E.1.c",
-        "F",
+        "G.6"
+      ],
+      "rationaleAI": "E.1.b explicitly names telescopes across the full EM spectrum (optical, radio, infrared, ultraviolet, X-ray, gamma-ray); G.6 covers astronomical observations \u2014 the article covers both the instrument taxonomy and its astronomical use."
+    },
+    {
+      "articleTitle": "Microscope",
+      "relevantPathsAI": [
+        "E.1.a"
+      ],
+      "rationaleAI": "E.1.a explicitly names optical, electron, acoustic, and scanning tunneling microscopes; this article covers exactly those categories (optical, TEM, SEM, fluorescence, scanning probe), directly matching the outline entry."
+    },
+    {
+      "articleTitle": "Shen Kuo",
+      "relevantPathsAI": [
+        "D.2.c",
         "G.2",
         "G.6"
-      ]
+      ],
+      "rationaleAI": "Shen Kuo made the first recorded description of magnetic declination relevant to magnetic compasses (D.2.c.i), produced raised-relief maps covering cartography (G.2), and led the imperial astronomy bureau with observational contributions (G.6)."
+    },
+    {
+      "articleTitle": "Mass",
+      "relevantPathsAI": [
+        "B.1",
+        "D.1.b"
+      ],
+      "rationaleAI": "B.1 covers systems for measurement of mass; D.1.b names devices for measuring mass and weight including scales and balances \u2014 this article defines mass as a measurable quantity and its distinction from weight, directly relevant to both paths."
+    },
+    {
+      "articleTitle": "Clock",
+      "relevantPathsAI": [
+        "B.2",
+        "D.1.c"
+      ],
+      "rationaleAI": "B.2 addresses standards and techniques for time measurement; D.1.c names mechanical, electric, and atomic clocks \u2014 the article covers the full evolutionary sequence from water clocks through atomic clocks, directly matching both paths."
+    },
+    {
+      "articleTitle": "Time",
+      "relevantPathsAI": [
+        "B.2",
+        "D.1.c"
+      ],
+      "rationaleAI": "B.2 covers standards for time measurement; D.1.c covers timekeeping devices \u2014 the article addresses the SI second, clock types, and time measurement across scales, providing conceptual foundation for both paths."
+    },
+    {
+      "articleTitle": "Compass",
+      "relevantPathsAI": [
+        "D.2.c",
+        "G.7"
+      ],
+      "rationaleAI": "D.2.c.i explicitly names magnetic compasses and gyrocompasses as direction-finding instruments; G.7 covers navigational techniques \u2014 the article covers magnetic, gyroscopic, and GPS-based compass variants and their navigational history."
+    },
+    {
+      "articleTitle": "Lens",
+      "relevantPathsAI": [
+        "C",
+        "D.2.e",
+        "E.1.a",
+        "E.1.b"
+      ],
+      "rationaleAI": "Lenses are the core optical components determining how microscopes (E.1.a), telescopes (E.1.b), and refractometers (D.2.e) operate; the article covers refraction principles and aberration correction foundational to optical instrument operation (C)."
+    },
+    {
+      "articleTitle": "Measurement",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Directly covers outline sections A (theory of measurement), B (units and standards including SI), and C (principles by which instruments operate) \u2014 measurement theory, metrology, and the history of standardization are its central topics."
+    },
+    {
+      "articleTitle": "Laser",
+      "relevantPathsAI": [
+        "E.1",
+        "F"
+      ],
+      "rationaleAI": "Lasers serve as coherent light sources in interferometers (E.1.d) and other observational instruments (E.1), and as tools in special research apparatus (F); the article covers laser types and applications in measurement, spectroscopy, and lidar."
+    },
+    {
+      "articleTitle": "Electron",
+      "relevantPathsAI": [
+        "E.1.a",
+        "F.3"
+      ],
+      "rationaleAI": "E.1.a names electron microscopes (TEM and SEM) among observational instruments; F.3 covers particle accelerators \u2014 free electrons are the beam in both, and the article explicitly connects electron behavior to both technologies."
+    },
+    {
+      "articleTitle": "Temperature",
+      "relevantPathsAI": [
+        "D.1.d"
+      ],
+      "rationaleAI": "D.1.d explicitly names gas, liquid, and electrical resistance thermometers as devices for measuring temperature; the article covers temperature as a scalar property, the Kelvin scale, and thermometer operation \u2014 direct coverage of this path."
+    },
+    {
+      "articleTitle": "Photography",
+      "relevantPathsAI": [
+        "E.2",
+        "G.6"
+      ],
+      "rationaleAI": "E.2 covers instruments for recording phenomena (cameras); G.6 addresses astronomical observations, which have relied heavily on photographic recording \u2014 the article covers both the instrument basis and scientific imaging applications."
+    },
+    {
+      "articleTitle": "International System of Units",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "B.1 covers systems of weights and measures (mass and length standards); B.2 covers time standards \u2014 SI directly defines and governs all these measurement standards including the metre, kilogram, and second."
+    },
+    {
+      "articleTitle": "Navigation",
+      "relevantPathsAI": [
+        "D.2.c",
+        "G.7"
+      ],
+      "rationaleAI": "D.2.c covers instruments for measuring position by angulation and direction-finding; G.7 explicitly names navigational techniques and devices \u2014 the article covers celestial navigation, dead reckoning, inertial navigation, radar, and GNSS."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "D.2.f",
+        "E.1.b",
+        "G.8"
+      ],
+      "rationaleAI": "D.2.f covers instruments measuring ionizing radiation (Geiger counters, scintillation counters); E.1.b covers telescopes across the EM spectrum; G.8 covers radiological techniques \u2014 the article spans radio through gamma rays relevant to all three paths."
+    },
+    {
+      "articleTitle": "Internal structure of Earth",
+      "relevantPathsAI": [
+        "F.6"
+      ],
+      "rationaleAI": "F.6 names seismographs as special scientific instruments; seismic wave analysis is the primary method for inferring Earth's interior layering, and the article explicitly describes how P and S wave measurements from seismographs inform Earth structure knowledge."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

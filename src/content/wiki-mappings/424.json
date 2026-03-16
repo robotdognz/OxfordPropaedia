@@ -1,341 +1,245 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "424",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "The practice of medicine addresses the care of the human organism covered in this article.",
-      "relevantPathsAI": [
-        "B",
-        "C",
-        "C.1.a",
-        "C.2.a",
-        "C.2.b",
-        "C.2.d",
-        "F",
-        "G",
-        "H",
-        "H.1"
-      ]
-    },
-    {
-      "articleTitle": "Medicine",
-      "rationaleAI": "The practice of medicine and the care of health is the direct subject of this section on clinical medical practice.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.2.a",
-        "C.2.c",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Disease",
-      "rationaleAI": "The diagnosis, treatment, and prevention of disease are central to the practice of medicine and health care.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C.2.a",
-        "G",
-        "H",
-        "H.1",
-        "H.3",
-        "H.5"
-      ]
-    },
-    {
-      "articleTitle": "Florence Nightingale",
-      "rationaleAI": "Nightingale founded modern nursing and transformed the practice of medicine and health care.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1.a",
-        "C.1.b",
-        "C.2.a",
-        "C.2.d",
-        "E",
-        "F",
-        "G"
-      ]
-    },
-    {
-      "articleTitle": "History of medicine",
-      "rationaleAI": "The history of medicine documents the development of medical practice and health care from antiquity to the present.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.2.a",
-        "C.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Drinking water",
-      "rationaleAI": "Clean drinking water is essential to public health and the practice of medicine.",
-      "relevantPathsAI": [
-        "C.1.a",
-        "C.1.b",
-        "C.2",
-        "C.2.d",
-        "D",
-        "F",
-        "G",
-        "H.1",
-        "H.4",
-        "I.2"
-      ]
-    },
-    {
-      "articleTitle": "Pollution",
-      "rationaleAI": "Pollution affects public health and the practice of medicine.",
-      "relevantPathsAI": [
-        "B",
-        "C",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.2.a",
-        "C.2.c",
-        "D",
-        "F",
-        "H"
-      ]
-    },
-    {
-      "articleTitle": "Injury",
-      "rationaleAI": "Injury treatment is part of the practice of medicine and health care.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Physical disability",
-      "rationaleAI": "Physical disability management is part of medical practice.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Dentistry",
-      "rationaleAI": "Dentistry is a branch of the practice of medicine and health care.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C.2.a",
-        "H.1",
-        "I.1",
-        "I.2"
-      ]
-    },
-    {
-      "articleTitle": "Hospital",
-      "rationaleAI": "Hospitals are the primary institutions for the practice of medicine.",
-      "relevantPathsAI": [
-        "B",
-        "C.1.a",
-        "C.1.b",
-        "E",
-        "H.1",
-        "I.2"
-      ]
-    },
-    {
       "articleTitle": "Nursing",
-      "rationaleAI": "Nursing is a core practice in the care of health.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.2",
-        "C.2.a",
-        "C.2.c",
-        "C.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Surgery",
-      "rationaleAI": "Surgery is a major branch of the practice of medicine.",
       "relevantPathsAI": [
         "B",
-        "C.1.a",
-        "C.1.b",
-        "G",
-        "H",
-        "H.1"
-      ]
-    },
-    {
-      "articleTitle": "Abortion",
-      "rationaleAI": "Abortion is a medical procedure within the practice of medicine.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.2.a",
-        "C.2.d",
-        "D",
-        "F",
-        "G"
-      ]
-    },
-    {
-      "articleTitle": "Health",
-      "rationaleAI": "Health is the goal of the practice of medicine and care.",
-      "relevantPathsAI": [
-        "C.1.a",
-        "C.1.c",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Mental health",
-      "rationaleAI": "Mental health care is part of the practice of medicine.",
-      "relevantPathsAI": [
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.c",
-        "C.2.a",
-        "C.2.b",
-        "C.2.d",
-        "D",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Hygiene",
-      "rationaleAI": "Hygiene is part of preventive health care in medical practice.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.2.a",
-        "C.2.b",
-        "C.2.d",
-        "D",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Sanitation",
-      "rationaleAI": "Sanitation is essential to public health.",
-      "relevantPathsAI": [
-        "C.1.a",
-        "D",
-        "F",
-        "G",
-        "H.1",
-        "I.2"
-      ]
-    },
-    {
-      "articleTitle": "Drug",
-      "rationaleAI": "Drugs are central to the practice of medicine and health care.",
-      "relevantPathsAI": [
-        "D",
-        "F",
-        "H",
-        "H.1",
-        "H.3",
-        "H.4",
-        "H.5",
-        "I.2"
-      ]
-    },
-    {
-      "articleTitle": "Medication",
-      "rationaleAI": "Medication is a primary tool in the practice of medicine and health care.",
-      "relevantPathsAI": [
-        "C",
-        "D",
-        "F",
-        "H.1",
-        "H.4",
-        "I",
-        "I.1",
-        "I.2"
-      ]
-    },
-    {
-      "articleTitle": "Anesthesia",
-      "rationaleAI": "Anesthesia is essential to the practice of surgery and medicine.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C.1.a",
-        "C.1.b",
-        "C.2.a",
-        "G",
-        "H.1"
-      ]
-    },
-    {
-      "articleTitle": "Antibiotic",
-      "rationaleAI": "Antibiotics are key medications in the practice of medicine.",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.2.a",
-        "C.2.b",
-        "C.2.d",
-        "D",
-        "F"
-      ]
-    },
-    {
-      "articleTitle": "Birth control",
-      "rationaleAI": "Birth control is part of reproductive health care in medicine.",
-      "relevantPathsAI": [
-        "C.1.c",
-        "C.1.d",
-        "C.2.c",
-        "D",
-        "F",
-        "I.2"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Nursing is explicitly named in outline path B (the related disciplines of nursing) and constitutes a major component of healthcare practice covered under C (the practice of medicine); the article addresses scope of practice, professional standards, and medical education connections."
     },
     {
       "articleTitle": "Vaccine",
-      "rationaleAI": "Vaccination is a cornerstone of preventive medicine.",
       "relevantPathsAI": [
-        "C",
-        "C.1.c",
-        "I.2"
-      ]
+        "H.1",
+        "H.5"
+      ],
+      "rationaleAI": "Vaccines are the primary instrument of vaccination and immunization programs (H.1) and have been central to the eradication of smallpox and control of polio and measles, directly addressing H.5 (the prevention and control of epidemics) through population-level immunization campaigns."
     },
     {
-      "articleTitle": "Medical imaging",
-      "rationaleAI": "Medical imaging is a diagnostic tool in the practice of medicine.",
+      "articleTitle": "Hospital",
+      "relevantPathsAI": [
+        "E",
+        "C.1.b",
+        "A"
+      ],
+      "rationaleAI": "Directly addresses hospital services and facilities (E), the primary uncovered path, covering typology of general, specialist, and teaching hospitals, funding structures, and administrative evolution; teaching hospitals also connect to C.1.b (hospital and specialist practice) and medical education under A."
+    },
+    {
+      "articleTitle": "Hygiene",
+      "relevantPathsAI": [
+        "H.3",
+        "F"
+      ],
+      "rationaleAI": "Hygiene encompasses personal and environmental practices preventing disease transmission including hand washing and medical hygiene, directly addressing H.3 (destruction of infectious agent: aseptic and antiseptic precautions, disinfection), and connects to F (environmental sanitation) through its broader scope."
+    },
+    {
+      "articleTitle": "Drinking water",
+      "relevantPathsAI": [
+        "F",
+        "H.5"
+      ],
+      "rationaleAI": "Safe drinking water is a central component of environmental sanitation (F: control of water pollution), and waterborne disease transmission from contaminated water connects to H.5 (the prevention and control of epidemics); WHO and national regulatory frameworks govern water quality standards globally."
+    },
+    {
+      "articleTitle": "Dentistry",
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Dentistry is explicitly named as a related discipline in outline path B (fields of specialized medical research; the related disciplines of osteopathy, dentistry, and nursing), covering its own degree structure, subspecialties, and evidence-based practice — a primary uncovered priority path."
+    },
+    {
+      "articleTitle": "Medicine",
       "relevantPathsAI": [
         "A",
         "B",
         "C",
         "C.1",
-        "C.1.a",
+        "C.2"
+      ],
+      "rationaleAI": "Medicine as a broad article covers the science and practice of diagnosing, treating, and preventing human disease including clinical specialties, medical ethics, education, licensing, and healthcare delivery systems, spanning outline paths A (medical education), B (specialized fields), C (practice), and C.2 (professional standards)."
+    },
+    {
+      "articleTitle": "Tuberculosis",
+      "relevantPathsAI": [
+        "H.5",
+        "H.4"
+      ],
+      "rationaleAI": "Tuberculosis as the leading infectious disease killer globally illustrates both the prevention and control of epidemics (H.5) including multi-drug-resistant strain challenges, and the use of therapeutic agents and prophylactic medication (H.4) through BCG vaccination and multi-drug treatment regimens."
+    },
+    {
+      "articleTitle": "Drug",
+      "relevantPathsAI": [
+        "H.4",
+        "C"
+      ],
+      "rationaleAI": "Pharmaceutical drugs as agents treating, curing, preventing, or diagnosing disease directly address H.4 (the use of therapeutic agents and prophylactic medication) and underpin the practice of medicine broadly under C; the article also covers drug regulation under I.2 (health and safety laws, control of foods and drugs)."
+    },
+    {
+      "articleTitle": "Florence Nightingale",
+      "relevantPathsAI": [
+        "B",
+        "D",
+        "H.3"
+      ],
+      "rationaleAI": "Florence Nightingale professionalized nursing (B: related discipline of nursing), pioneered evidence-based hospital design and public health statistical methods (D: public health services and administration), and significantly reduced mortality by improving sanitation and hygiene (H.3: antiseptic precautions), covering multiple priority paths."
+    },
+    {
+      "articleTitle": "Pollution",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Pollution directly addresses environmental sanitation and health through the introduction of harmful contaminants into air, water, and soil (F: control of air, water, and soil pollution), covering all three environmental media explicitly named in the outline path and the nine million annual deaths attributable to pollution."
+    },
+    {
+      "articleTitle": "Sexually transmitted infection",
+      "relevantPathsAI": [
+        "H.5",
+        "H.1",
+        "H.3"
+      ],
+      "rationaleAI": "STIs illustrate epidemic prevention and control (H.5) through programs combining vaccination for HPV and hepatitis B (H.1), condom use and comprehensive sex education (H.3: control of disease carriers), addressing public health coordination across multiple prevention strategies."
+    },
+    {
+      "articleTitle": "Nutrition",
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Nutrition directly addresses the recognition and solution of problems relating to nutrient requirements and world food supply, corresponding exactly to outline path G (prevention of malnutrition: nutrient requirements, world food supply, and world population), covering macro- and micronutrient deficiency and excess."
+    },
+    {
+      "articleTitle": "Trade union",
+      "relevantPathsAI": [
+        "I.2"
+      ],
+      "rationaleAI": "Trade unions negotiate health and safety standards including regulation of working hours and elimination of health, safety, and fire hazards, directly connecting to I.2 (health and safety laws: restrictions on labor conditions and elimination of occupational hazards), one dimension of industrial and social medicine."
+    },
+    {
+      "articleTitle": "Mining",
+      "relevantPathsAI": [
+        "I.1",
+        "I.2"
+      ],
+      "rationaleAI": "Mining generates significant occupational hazards including respiratory disease and physical injury, directly relevant to I.1 (the scope of industrial and occupational medicine) — a primary uncovered path — and the associated health and safety laws under I.2 governing working conditions in extractive industries."
+    },
+    {
+      "articleTitle": "Birth control",
+      "relevantPathsAI": [
+        "D",
+        "C.1.c"
+      ],
+      "rationaleAI": "Birth control is central to public health services (D) through family planning programs and government reproductive health services (C.1.c: governmental practice, public health service), preventing pregnancy-related deaths and addressing unmet contraceptive need in developing countries as a public health intervention."
+    },
+    {
+      "articleTitle": "Smoking",
+      "relevantPathsAI": [
+        "I.1",
+        "H.5"
+      ],
+      "rationaleAI": "Smoking causes 1.3 million annual deaths from secondhand smoke and is a major occupational and social medicine concern (I.1), while public health campaigns for smoking cessation address epidemic prevention (H.5); both the occupational health dimension and population-level prevention are directly relevant."
+    },
+    {
+      "articleTitle": "Waste",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Waste management — encompassing hazardous, radioactive, medical, and municipal waste — directly addresses environmental sanitation and health (F), covering the control of soil and water pollution through collection, treatment, and recovery processes that prevent disease from environmental contamination."
+    },
+    {
+      "articleTitle": "Biotechnology",
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Biotechnology as specialized medical research applying living organisms for pharmaceutical production, diagnostics, and therapeutics connects to outline path B (fields of specialized medical research), covering a primary uncovered priority path; its integration with medicine through recombinant DNA and bioinformatics is directly relevant."
+    },
+    {
+      "articleTitle": "Food",
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Food systems covering agriculture, food security, and global governance through FAO and WFP directly address outline path G (prevention of malnutrition: world food supply and world population), supplementing the Nutrition article with systems-level coverage of food production and distribution."
+    },
+    {
+      "articleTitle": "Hippocrates",
+      "relevantPathsAI": [
         "C.2.a",
-        "C.2.d",
-        "F",
-        "G",
-        "H"
-      ]
+        "A"
+      ],
+      "rationaleAI": "Hippocrates is foundational to the Hippocratic Oath (C.2.a: the ethical basis of medical practice), which the outline explicitly names, and to the establishment of medicine as a rational independent discipline — the historical basis for all medical education (A)."
+    },
+    {
+      "articleTitle": "Louis Pasteur",
+      "relevantPathsAI": [
+        "H.3",
+        "H.1",
+        "H.5"
+      ],
+      "rationaleAI": "Pasteur established germ theory as the basis for antiseptic precautions and hygiene (H.3), developed vaccines for cholera, anthrax, and rabies (H.1: vaccination and immunization), and founded bacteriology as the scientific basis for epidemic prevention (H.5), substantively covering three prevention-oriented paths."
+    },
+    {
+      "articleTitle": "History of medicine",
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Covers healing practices from prehistoric traditions through bacteriology, nursing, statistics, and modern specialties, tracing the development of medical education (A), clinical practice (C), and public health infrastructure (D) across cultures and historical periods."
+    },
+    {
+      "articleTitle": "Smallpox",
+      "relevantPathsAI": [
+        "H.1",
+        "H.5"
+      ],
+      "rationaleAI": "Smallpox eradication through the WHO vaccination campaign is the canonical example of H.1 (vaccination and immunization) and H.5 (the prevention and control of epidemics); Jenner's 1796 vaccine as the foundational intervention and the global eradication campaign structure directly illustrate both paths."
+    },
+    {
+      "articleTitle": "Surgery",
+      "relevantPathsAI": [
+        "C.1.b",
+        "B"
+      ],
+      "rationaleAI": "Surgery is a medical specialty employing manual and instrumental techniques spanning elective, emergency, and cosmetic procedures, directly addressing C.1.b (hospital and specialist practice: general surgery) and B (specialized medical research), covering a primary uncovered path through its scope, history, and subspecialties."
+    },
+    {
+      "articleTitle": "Health",
+      "relevantPathsAI": [
+        "D",
+        "C"
+      ],
+      "rationaleAI": "Health as physical, mental, and social well-being with determinants spanning individual behavior and structural societal factors provides the conceptual framework for public health services (D) and the broader practice of medicine (C), including healthcare access and occupational health connections."
+    },
+    {
+      "articleTitle": "Obesity",
+      "relevantPathsAI": [
+        "I.1",
+        "D"
+      ],
+      "rationaleAI": "Obesity as a social medicine issue with determinants including sedentary lifestyle and social factors connects to I.1 (the scope of industrial and occupational medicine) through workplace health, and to D (public health services) through the epidemiological scale of over one billion affected globally requiring population-level interventions."
+    },
+    {
+      "articleTitle": "Biochemistry",
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Biochemistry as the study of chemical processes in living organisms underpins virtually all life science disciplines and medical research, connecting to outline path B (fields of specialized medical research); its applications in disease mechanisms, nutrition, and drug development make it foundational to medical practice."
+    },
+    {
+      "articleTitle": "Insurance",
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Health insurance as a mechanism funding healthcare delivery and managing medical risk is integral to public health services and administration (D), covering how health systems in different countries finance and organize care; the article discusses health insurance explicitly as a major category alongside other insurance types."
+    },
+    {
+      "articleTitle": "University",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Universities are the primary institutions of medical education (A), combining teaching and research, with medical faculties integral to the development of clinical training and residency programs; the article's coverage of degree-granting and research mandates directly supports this path."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

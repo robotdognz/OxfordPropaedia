@@ -1,98 +1,176 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "543",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "The political process is the dynamic mechanism through which societies govern themselves.",
+      "articleTitle": "Government",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2",
         "A.3",
         "A.4",
         "A.5",
         "A.6",
         "B"
-      ]
-    },
-    {
-      "articleTitle": "Government",
-      "rationaleAI": "The functioning of government through elections, policy-making, and administration drives the dynamic political process.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Politics",
-      "rationaleAI": "The political process involves the dynamic activities of campaigns, elections, lobbying, and policy-making.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Abraham Lincoln",
-      "rationaleAI": "Lincoln's wartime leadership and the Emancipation Proclamation exemplify the dynamics of political process under crisis.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Nelson Mandela",
-      "rationaleAI": "Mandela's transition from prisoner to president exemplifies the dynamics of political reconciliation and democratic transition.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Political party",
-      "rationaleAI": "Political parties are key mechanisms in the dynamics of the political process.",
-      "relevantPathsAI": [
-        "A.2"
-      ]
+      ],
+      "rationaleAI": "Comprehensively covers all functional dimensions of how governments exercise power across A.1–A.6, including security, regulatory, supervisory, law enforcement, and enterprising functions. The broad treatment of government's role in production, public administration, and policy directly covers the priority path B."
     },
     {
       "articleTitle": "Democracy",
-      "rationaleAI": "Democratic processes shape the dynamics of political participation.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C"
-      ]
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Democracy's core mechanisms — elections, popular sovereignty, constitutional mandates, and peaceful transfer of power — directly cover C.1's peaceful methods of changing government form through electoral process and constitutional mandate."
     },
     {
-      "articleTitle": "Conservatism",
-      "rationaleAI": "Conservatism shapes the dynamics of the political process.",
+      "articleTitle": "Dictatorship",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Analyzes how governments are established and maintained by extra-constitutional means and how dictatorships arise from regime change, directly addressing C's methods of changing government form, including by non-peaceful means."
+    },
+    {
+      "articleTitle": "Police",
+      "relevantPathsAI": [
+        "A.1",
+        "A.5"
+      ],
+      "rationaleAI": "Police are the primary instrument of A.1 (internal security) and A.5 (law enforcement and corrective functions of government), including the application of sanctions and the state's monopoly on violence in domestic contexts."
+    },
+    {
+      "articleTitle": "Military",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The military's central function in providing external security and deterrence directly covers A.1's external security function of government, including defense, deterrence, and coercive capability maintenance."
+    },
+    {
+      "articleTitle": "Welfare spending",
+      "relevantPathsAI": [
+        "A.6",
+        "B"
+      ],
+      "rationaleAI": "Government welfare expenditure — health, education, old age, disability — is a central case of A.6 (enterprising functions of government) and the priority path B (government's role in production and consumption through public provision of services and transfers)."
+    },
+    {
+      "articleTitle": "Trade union",
+      "relevantPathsAI": [
+        "A.4",
+        "B"
+      ],
+      "rationaleAI": "Trade unions operate within frameworks of government regulatory functions (A.4) covering labor standards and collective bargaining law, and intersect with B through their role shaping government's relationship to labor markets and consumption."
+    },
+    {
+      "articleTitle": "Human rights",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Human rights frameworks define the limits and obligations of governmental power in A.3 (supervisory resolution of conflicts), A.4 (regulatory standards enforcement), and A.5 (sanctions and penalties constrained by rights protections)."
+    },
+    {
+      "articleTitle": "Crime",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Crime directly engages A.5's law enforcement and corrective functions — criminal justice, sanctions, incapacitation, rehabilitation — as the state's primary response to unlawful acts via its coercive apparatus."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Imperialism covers how states exercise power externally through military coercion, economic dominance, and diplomatic influence (A.1 external security, A.2 foreign relations), establishing hegemony over foreign territories."
+    },
+    {
+      "articleTitle": "Ideology",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Ideology motivates and legitimizes methods of changing government form — revolutionary ideologies (Marxism, fascism, liberalism) drive both C.1 peaceful and violent regime transformation, linking belief systems to political change processes."
+    },
+    {
+      "articleTitle": "Monarchy",
+      "relevantPathsAI": [
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Monarchy addresses succession law and how monarchical governments are maintained or changed — hereditary versus elective succession and constitutional versus absolute forms illuminate C and C.1's electoral and constitutional mandate mechanisms."
+    },
+    {
+      "articleTitle": "Anarchism",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Anarchism advocates the abolition of government itself as the ultimate method of changing the form of government (C), offering the most radical theoretical framework for regime transformation through elimination of state structures."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Socialism's core concern with social ownership and government's role in production directly addresses the priority path B, while its reform-versus-revolution debates cover C's methods of changing government form from electoral democratic to revolutionary approaches."
+    },
+    {
+      "articleTitle": "Liberty",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Liberty defines the boundary conditions for A.4 (regulatory functions) and A.5 (law enforcement and corrective functions), establishing through political philosophy the legitimate scope of state coercion and rights-bounded enforcement."
+    },
+    {
+      "articleTitle": "Power (social and political)",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Political power is the foundational concept for all of section A, covering how coercive, institutional, and discursive forms of power underpin internal and external security (A.1), regulatory (A.4), and law enforcement (A.5) functions of government."
+    },
+    {
+      "articleTitle": "Economy",
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "The economy article directly addresses the priority path B by covering government's relationship to production, distribution, and consumption through market, mixed, and planned economic systems and the role of political structures in shaping economic activity."
+    },
+    {
+      "articleTitle": "Poverty",
+      "relevantPathsAI": [
+        "A.6",
+        "B"
+      ],
+      "rationaleAI": "Poverty reduction strategies — state transfers, income grants, public services — directly engage A.6 (enterprising functions of government) and B (government's role in production and consumption), including international frameworks like the UN SDGs."
+    },
+    {
+      "articleTitle": "Diplomacy",
       "relevantPathsAI": [
         "A.2"
-      ]
+      ],
+      "rationaleAI": "Diplomacy covers A.2's conduct of foreign relations — negotiation, representation, multilateral conferences, arbitration and mediation — as the professional practice through which governments manage relations with other sovereign states."
+    },
+    {
+      "articleTitle": "State (polity)",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "The state article covers the entire functional range of A (how sovereign power is exercised), B (government's role in production and consumption through theories of state function), and C (historical forms of state formation and regime change)."
+    },
+    {
+      "articleTitle": "Abraham Lincoln",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Lincoln's presidency addresses C through the constitutional crisis of secession and preservation of the Union — the Civil War tested whether a democratic republic could survive constitutional challenges to its form of government by force."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

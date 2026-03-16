@@ -1,178 +1,229 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "531",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Economic concepts and systems are foundational to how societies produce and distribute resources.",
+      "articleTitle": "Economy",
       "relevantPathsAI": [
+        "A",
         "B",
-        "B.1",
-        "B.2",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.5.a"
-      ]
+        "C"
+      ],
+      "rationaleAI": "Covers the full scope of Section 531: basic economic concepts including production, distribution, and scarcity (A); levels of economic analysis from micro through macro (B); and comparison of market, mixed, and planned economic systems (C)."
     },
     {
       "articleTitle": "Economics",
-      "rationaleAI": "Economics as a discipline provides the concepts, theories, and analytical frameworks for understanding economic systems.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.8",
+        "A",
         "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Trade",
-      "rationaleAI": "Trade is a fundamental economic concept connecting production, exchange, and consumption within and between economic systems.",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.8",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Adam Smith",
-      "rationaleAI": "Adam Smith's The Wealth of Nations founded modern economics and articulated the principles of free-market capitalism.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.8",
-        "B",
-        "B.1",
-        "B.2",
         "C"
-      ]
-    },
-    {
-      "articleTitle": "Karl Marx",
-      "rationaleAI": "Marx's critique of capitalism fundamentally shaped economic thought and debates about economic systems.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.8",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Globalization",
-      "rationaleAI": "Globalization is the defining economic phenomenon of the modern era, integrating markets and trade worldwide.",
-      "relevantPathsAI": [
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.5.a"
-      ]
-    },
-    {
-      "articleTitle": "Capitalism",
-      "rationaleAI": "Capitalism is a fundamental economic system.",
-      "relevantPathsAI": [
-        "A.5",
-        "A.6",
-        "A.8",
-        "B",
-        "B.1",
-        "B.2",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.5.a"
-      ]
-    },
-    {
-      "articleTitle": "Socialism",
-      "rationaleAI": "Socialism proposes alternative economic systems to capitalism.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.8",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
+      ],
+      "rationaleAI": "Directly covers A (basic concepts through history of economic thought), B (micro and macroeconomics as analytical levels), and C (comparison of systems from classical to Keynesian and post-2008 frameworks)."
     },
     {
       "articleTitle": "Microeconomics",
-      "rationaleAI": "Microeconomics addresses fundamental economic concepts and systems.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.6",
-        "B",
-        "B.1",
-        "B.2",
-        "C.1",
-        "C.3",
-        "C.5",
-        "C.5.a"
-      ]
-    },
-    {
-      "articleTitle": "Supply and demand",
-      "rationaleAI": "Supply and demand is a fundamental economic concept.",
       "relevantPathsAI": [
         "A.1",
         "A.3",
         "A.4",
-        "A.5",
         "A.6",
-        "A.8",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Microeconomics directly covers B.1 (microeconomic analysis of individual decisions) and foundational concepts in A including scarcity/choice (A.1), diminishing returns/optimization (A.3), marginality (A.4), and competition (A.6) through supply-demand and market structure models."
     },
     {
-      "articleTitle": "Economy",
-      "rationaleAI": "The economy encompasses the economic concepts, issues, and systems of this section.",
-      "relevantPathsAI": []
+      "articleTitle": "Macroeconomics",
+      "relevantPathsAI": [
+        "A.8",
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers B.3 macroeconomics as the economy-as-a-whole level of analysis, including Keynesian, monetarist, and new classical schools; also addresses A.8 concepts of growth and development through GDP and long-run growth analysis."
+    },
+    {
+      "articleTitle": "Adam Smith",
+      "relevantPathsAI": [
+        "A.2",
+        "A.1",
+        "A.7",
+        "C.2"
+      ],
+      "rationaleAI": "The Wealth of Nations covers A.2 division of labour as Smith's central mechanism, A.1 resource allocation through markets, A.7 comparative advantage through free trade arguments, and underpins C.2 Western-type market economies as the foundational text of liberal economic thought."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.1.c",
+        "C.3"
+      ],
+      "rationaleAI": "Covers C.1.b the centrally planned economy (pure socialist model) and its variants including market-socialist models (C.1.c), and C.3 Soviet- and socialist-type economic systems through democratic socialism, Leninism, and syndicalism."
+    },
+    {
+      "articleTitle": "Supply and demand",
+      "relevantPathsAI": [
+        "A.1",
+        "A.6",
+        "C.1.a"
+      ],
+      "rationaleAI": "Supply and demand is the foundational model of A.1 resource allocation under scarcity and A.6 competition in markets; it underlies C.1.a the pure private enterprise economy as the price-clearing mechanism of competitive markets."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers A.2 division of labour as a core analytical concept across the social sciences, tracing from subsistence labor through industrial specialization to contemporary automation debates."
+    },
+    {
+      "articleTitle": "Business",
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2"
+      ],
+      "rationaleAI": "Business covers the structures and operations of private profit-seeking enterprises, directly illustrating C.1.a the pure private enterprise economy and the institutional form of C.2 Western-type market economies."
+    },
+    {
+      "articleTitle": "Capitalism",
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2"
+      ],
+      "rationaleAI": "Capitalism directly covers C.1.a the pure private enterprise economy model and C.2 Western-type market economies, detailing private ownership, wage labor, profit motive, and market competition as organizing principles."
+    },
+    {
+      "articleTitle": "Communism",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.3"
+      ],
+      "rationaleAI": "Communism covers C.1.b the centrally planned economy as the pure socialist model and C.3 Soviet- and socialist-type economic systems through Marxism, Leninism, Stalinism, and Maoism as implemented planned economies."
     },
     {
       "articleTitle": "Property",
-      "rationaleAI": "Property rights are fundamental to economic concepts and systems.",
+      "relevantPathsAI": [
+        "A.5",
+        "C.1.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Property rights are central to A.5 the concept of capital and distinguish C.1.a the pure private enterprise economy (private property) from C.1.b the centrally planned economy (social/state ownership), with Locke, Marx, and Proudhon providing the theoretical range."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "A.7",
+        "A.8"
+      ],
+      "rationaleAI": "Trade covers A.7 comparative advantage as the basis for specialization and exchange, and A.8 growth and development through the relationship between trade openness and economic expansion across historical periods."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.3",
+        "A.8"
+      ],
+      "rationaleAI": "Marx covers C.1.b the pure socialist model through historical materialism and the transition to communism, C.3 Soviet-type systems as founded on Marxist theory, and A.8 growth and development through critique of capitalist accumulation and the theory of surplus value."
+    },
+    {
+      "articleTitle": "Joseph Stalin",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.3"
+      ],
+      "rationaleAI": "Stalin's five-year plans and forced collectivization are the primary historical implementation of C.1.b the centrally planned economy and C.3 Soviet-type economic systems, making this article essential for the applied dimension of these outline paths."
+    },
+    {
+      "articleTitle": "Finance",
+      "relevantPathsAI": [
+        "A.5",
+        "B.1"
+      ],
+      "rationaleAI": "Finance covers A.5 the concept of capital through investment, asset valuation, and capital allocation; it also informs B.1 microeconomic decisions of firms regarding financing and resource allocation."
+    },
+    {
+      "articleTitle": "Poverty",
+      "relevantPathsAI": [
+        "A.8",
+        "C.4"
+      ],
+      "rationaleAI": "Poverty is central to A.8 the concepts of growth and development as both a target and a measure, and C.4 mixed economies in developing countries where poverty reduction strategies shape economic policy design."
+    },
+    {
+      "articleTitle": "Welfare spending",
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Welfare spending is a defining feature of C.1.c the mixed economy with various degrees of economic planning, representing the state's redistribution role in capitalist economies with social provision."
+    },
+    {
+      "articleTitle": "Society",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C.1",
-        "C.3",
-        "C.5",
         "C.5.a"
-      ]
+      ],
+      "rationaleAI": "Society's typology from hunting-gathering through agricultural to industrial economies covers A (basic economic concepts embedded in social structure) and C.5.a primitive economic systems as early societal formations."
+    },
+    {
+      "articleTitle": "Ancient history",
+      "relevantPathsAI": [
+        "C.5.a"
+      ],
+      "rationaleAI": "Ancient history covers C.5.a primitive economic systems through the Neolithic Revolution, early trade networks, Bronze Age economies, and pre-market resource exchange across Mesopotamia, Egypt, and beyond."
+    },
+    {
+      "articleTitle": "Great Depression",
+      "relevantPathsAI": [
+        "B.3",
+        "C.2"
+      ],
+      "rationaleAI": "The Great Depression is the central empirical case for B.3 macroeconomics (Keynesian vs. monetarist causal debates, unemployment, deflation) and shaped the development of C.2 Western-type market economies through the New Deal and subsequent regulatory frameworks."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "A.7",
+        "A.8",
+        "B.2"
+      ],
+      "rationaleAI": "Globalization covers A.7 comparative advantage as the driver of international specialization, A.8 growth and development through trade-led expansion, and B.2 sectoral economics through the reorganization of industries across global value chains."
+    },
+    {
+      "articleTitle": "Decolonization",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Decolonization directly shaped C.4 mixed economies in developing countries, as newly independent states inherited colonial economic structures and pursued various mixed and planned strategies for development."
+    },
+    {
+      "articleTitle": "Singapore",
+      "relevantPathsAI": [
+        "C.2",
+        "A.8"
+      ],
+      "rationaleAI": "Singapore's Four Asian Tigers transformation exemplifies C.2 Western-type market economies in Asia and A.8 the concept of growth and development through export-led industrialization and state-guided market mechanisms."
+    },
+    {
+      "articleTitle": "Indonesia",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Indonesia as Southeast Asia's largest economy with a resource-rich mixed economy under successive political regimes directly exemplifies C.4 mixed economies in developing countries."
+    },
+    {
+      "articleTitle": "Malaysia",
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Malaysia's upper-middle-income mixed economy with Bumiputera affirmative economic policies and export-oriented manufacturing exemplifies C.4 mixed economies in developing countries balancing market forces with planning."
+    },
+    {
+      "articleTitle": "East Asia",
+      "relevantPathsAI": [
+        "C.2",
+        "A.8"
+      ],
+      "rationaleAI": "East Asia encompasses the world's largest market economies (China, Japan, South Korea) and illustrates C.2 Western-type market economies alongside state-led variants, and A.8 growth and development through the 20th-century economic dynamism of the region."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

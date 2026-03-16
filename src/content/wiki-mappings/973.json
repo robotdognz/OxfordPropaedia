@@ -1,197 +1,143 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "973",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The modern United States and Canada represent key developments in contemporary human history.",
+      "articleTitle": "Cold War",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.2",
-        "A.2.c",
-        "A.2.d",
+        "A.3",
+        "A.3.a",
+        "A.3.b",
         "A.4",
-        "A.4.e",
-        "B.1",
+        "A.5"
+      ],
+      "rationaleAI": "The Cold War's superpower rivalry directly structures A.3 (Truman Doctrine, Marshall Plan, NATO, containment policy) and A.3.b (Eisenhower's foreign policy), and frames every subsequent US administration's foreign policy through A.5. The section cannot be understood without this context."
+    },
+    {
+      "articleTitle": "World War II",
+      "relevantPathsAI": [
+        "A.2.d",
         "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Modern era",
-      "rationaleAI": "The rise of the United States and Canada as global powers since 1920 is a defining feature of the contemporary modern era.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.i",
-        "A.3.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "North America",
-      "rationaleAI": "The United States and Canada since 1920 have been dominant powers in North American and global affairs.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.c",
-        "A.2.d",
-        "A.3.i.ii",
-        "A.3.i.iv",
-        "A.3.i.ii",
-        "A.4.i.ii",
-        "A.4.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Louis Armstrong",
-      "rationaleAI": "Armstrong's career shaped American cultural identity and the development of popular music in the 20th-century United States.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Michael Jackson",
-      "rationaleAI": "Jackson's career as an American entertainment icon shaped global popular culture from the late 20th-century United States.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.b",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Charlie Chaplin",
-      "rationaleAI": "Chaplin's career in Hollywood shaped the development of the American film industry in the early 20th century.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Walt Disney",
-      "rationaleAI": "Disney's innovations in entertainment defined 20th-century American popular culture and the U.S. media landscape.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.i"
-      ]
+      ],
+      "rationaleAI": "A.2.d covers US wartime mobilisation, the role of US forces in defeating the Axis, and postwar occupation of Japan and Germany; B.2 covers Canadian participation including manpower mobilisation and the development of armed forces."
     },
     {
       "articleTitle": "Canada",
-      "rationaleAI": "Modern Canada is covered in this section on the US and Canada since 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d",
-        "A.3.i",
-        "A.3.i.ii"
-      ]
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Canada is the direct subject of the entire B division, covering the interwar Liberal government under King, WWII participation, postwar foreign policy in NATO and the UN, Commonwealth relations, Franco-Canadian tensions, and postwar economic expansion."
     },
     {
       "articleTitle": "United States",
-      "rationaleAI": "The modern United States since 1920 is directly covered in this section.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
         "A.2",
-        "A.2.i.ii",
-        "A.2.c",
-        "A.2.d",
-        "A.3"
-      ]
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "The United States is the direct subject of the entire A division from the 1920 Republican administrations through the George W. Bush era, covering every presidential administration, domestic policy, and foreign affairs outlined."
     },
     {
-      "articleTitle": "New York City",
-      "rationaleAI": "New York City is a major American and global city since 1920.",
+      "articleTitle": "Great Depression",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
         "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii"
-      ]
+        "B.1.b"
+      ],
+      "rationaleAI": "The Great Depression is explicitly named in A.1.c (Hoover's administration, stock market crash, economic repercussions) and B.1.b (Depression's impact on Canada, Conservative relief measures 1930\u201335)."
     },
     {
-      "articleTitle": "Jazz",
-      "rationaleAI": "Jazz is a defining cultural contribution of the United States since 1920.",
+      "articleTitle": "Soviet Union",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.c"
-      ]
+        "A.3",
+        "A.3.a",
+        "A.4",
+        "A.4.c",
+        "A.4.d",
+        "A.4.f"
+      ],
+      "rationaleAI": "The Soviet Union is the defining antagonist of the Cold War sections A.3 onward\u2014Truman's containment policy, Eisenhower's d\u00e9tente, Nixon's SALT talks, Reagan's Gorbachev-era relations, and d\u00e9tente under Ford all require coverage of Soviet policies and actions."
     },
     {
-      "articleTitle": "Rock music",
-      "rationaleAI": "Rock music emerged as a cultural force in mid-20th-century America.",
+      "articleTitle": "Vietnam",
+      "relevantPathsAI": [
+        "A.4.b",
+        "A.4.c",
+        "A.4.d"
+      ],
+      "rationaleAI": "Vietnam is explicitly named in A.4.b.iii (Gulf of Tonkin, escalation of US involvement), A.4.c.i (Paris peace talks, Cambodia invasion, ceasefire 1973), and A.4.d (Ford administration conclusion of the war 1975)."
+    },
+    {
+      "articleTitle": "NATO",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b",
+        "B.3.a"
+      ],
+      "rationaleAI": "NATO's creation is explicitly named in A.3.a.i (Truman Doctrine and NATO formation) and is the framework for Eisenhower's military alliances in A.3.b; Canada's participation in NATO is outlined in B.3.a as a cornerstone of postwar foreign policy."
+    },
+    {
+      "articleTitle": "History of North America",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.c"
-      ]
+        "B"
+      ],
+      "rationaleAI": "This article spans both divisions of section 973, covering 20th-century US and Canadian history including the World Wars, the postwar boom, the Vietnam era, and late-20th-century political and economic developments."
+    },
+    {
+      "articleTitle": "Henry Ford",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Henry Ford's assembly-line mass production and the five-dollar workday are emblematic of the Republican-era 'Coolidge prosperity' and favouritism toward big business described in A.1.a; his Model T and Fordism defined US industrial culture of the 1920s."
+    },
+    {
+      "articleTitle": "South Korea",
+      "relevantPathsAI": [
+        "A.3.a"
+      ],
+      "rationaleAI": "South Korea is the direct subject of the Korean War (A.3.a.iv), including US and UN intervention (1950\u201353), which the outline lists as a key event of the Truman administration and a major Cold War confrontation."
+    },
+    {
+      "articleTitle": "Iran",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.4.e",
+        "A.4.f"
+      ],
+      "rationaleAI": "Iran appears in three distinct outline nodes: the US-sponsored coup of 1953 (A.3.b.ii under Eisenhower's foreign policy), the Iranian hostage crisis during Carter (A.4.e), and the Iran-Contra Affair under Reagan (A.4.f.i)."
+    },
+    {
+      "articleTitle": "China",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.4.c",
+        "A.5"
+      ],
+      "rationaleAI": "China figures in US foreign policy across multiple outline nodes: US support of Nationalist China under Truman (A.3.a.i), Nixon's rapprochement with the People's Republic and opening of diplomatic relations (A.4.c.i), and continuation of China relations through the Clinton era (A.5.d)."
+    },
+    {
+      "articleTitle": "Joseph Stalin",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.a"
+      ],
+      "rationaleAI": "Stalin is the Soviet counterpart who shaped the Cold War framework that defines A.3; his postwar Eastern Bloc formation and the ideological competition he embodied directly drove the Truman Doctrine, Marshall Plan, and NATO creation outlined in A.3.a.i."
+    },
+    {
+      "articleTitle": "United Kingdom",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.3.a",
+        "B.3.b"
+      ],
+      "rationaleAI": "The United Kingdom is central to Canada's section: B.1.a covers Commonwealth relations under King's Liberal government, B.3.a addresses postwar Canadian participation in NATO alongside the UK and Commonwealth affairs, and B.3.b covers Canada's involvement in British Commonwealth matters."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

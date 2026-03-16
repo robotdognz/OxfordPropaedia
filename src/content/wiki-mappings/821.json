@@ -1,147 +1,164 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "821",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Prehistoric and primitive religions emerged as part of the earliest chapters of human history.",
+      "articleTitle": "African traditional religions",
       "relevantPathsAI": [
-        "A.2.c",
-        "B.2.d",
-        "B.5.b",
-        "B.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Prehistoric and primitive religions are early expressions of communal belief systems within societies.",
-      "relevantPathsAI": [
-        "A.2.c",
-        "A.2.d",
-        "B.2",
-        "B.2.b",
-        "B.3",
-        "B.4.e"
-      ]
-    },
-    {
-      "articleTitle": "Prehistory",
-      "rationaleAI": "Prehistoric religion, inferred from burial practices and cave art, represents humanity's earliest spiritual expressions.",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.3",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.2.d",
-        "B.3",
-        "B.4.e",
-        "B.5",
-        "B.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Deity",
-      "rationaleAI": "Prehistoric and primitive religions centered on spirits, animism, and nature deities that represent early concepts of the divine.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.e",
-        "A.3",
-        "B",
-        "B.1",
-        "B.3",
-        "B.5.a",
-        "B.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Folklore",
-      "rationaleAI": "Folklore preserves elements of prehistoric and primitive religion through myths, rituals, and supernatural beliefs.",
-      "relevantPathsAI": [
-        "A.2.a",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.2.d",
-        "B.3",
-        "B.4.e",
-        "B.5.b",
-        "B.5.c"
-      ]
-    },
-    {
-      "articleTitle": "Myth",
-      "rationaleAI": "Myths are central to prehistoric and primitive religious traditions.",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.2.d",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Ritual",
-      "rationaleAI": "Ritual is especially central to prehistoric and primitive religions.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.c",
-        "A.2.d",
-        "A.2.e",
-        "A.3",
-        "B.3",
-        "B.4",
-        "B.4.a"
-      ]
+        "B.5.a"
+      ],
+      "rationaleAI": "Directly covers the traditional religions of indigenous African peoples, including animism, ancestor veneration, divination, spirit worlds, and communal ethics — the core content of B.5.a on Africa's primitive religions."
     },
     {
       "articleTitle": "Shamanism",
-      "rationaleAI": "Shamanism is a form of prehistoric and primitive religion.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
         "A.2.f",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b"
-      ]
+        "B.4.e"
+      ],
+      "rationaleAI": "Shamanism is explicitly named at both A.2.f (shamanism, sorcery, and magic in prehistoric religion) and B.4.e (roles of asceticism, shamanism, divination in primitive religion), covering the full cross-cultural and historical scope of shamanic practices."
     },
     {
-      "articleTitle": "African traditional religions",
-      "rationaleAI": "African traditional religions represent forms of indigenous and primitive religion.",
+      "articleTitle": "History of religion",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.c",
-        "A.3",
-        "B",
-        "B.1",
-        "B.2.a",
-        "B.2.b",
-        "B.2.d",
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Provides scholarly frameworks for studying prehistoric religion (A.1) and comparative analysis of primitive religious forms including animism, ancestor worship, and polytheism that underpin B.1 on the nature and significance of primitive religion."
+    },
+    {
+      "articleTitle": "Myth",
+      "relevantPathsAI": [
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Directly addresses the nature and function of myth and symbol in culture and religion — including ritual, cosmogony, and etiological narrative — mapping precisely to B.3 on the role of myth and symbol in primitive religion."
     },
     {
-      "articleTitle": "Indigenous peoples",
-      "rationaleAI": "Indigenous peoples often maintain prehistoric and primitive religious traditions.",
+      "articleTitle": "Chinese folk religion",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.2.c",
-        "A.3",
-        "B.1",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.3",
+        "B.5.d"
+      ],
+      "rationaleAI": "Covers traditional Han Chinese folk religious practices including ancestor veneration, local spirit worship, and divination that constitute an Asian aboriginal religious tradition falling under B.5.d."
+    },
+    {
+      "articleTitle": "Ritual",
+      "relevantPathsAI": [
         "B.4",
-        "B.4.c"
-      ]
+        "B.4.a"
+      ],
+      "rationaleAI": "Comprehensively covers ritual types including rites of passage, sacrifice, divination, and healing ceremonies — the institutional and practical content of B.4 (primitive religious practices and institutions) and B.4.a (sacrifice, purification, passage rites) specifically."
+    },
+    {
+      "articleTitle": "Religion",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the origins and significance of religion as a human phenomenon, including indigenous and primitive traditions, providing the broadest framing for B.1 on the nature and significance of primitive religion — the section's only uncovered path."
+    },
+    {
+      "articleTitle": "Polynesia",
+      "relevantPathsAI": [
+        "B.5.b"
+      ],
+      "rationaleAI": "Covers indigenous Polynesian religious and cultural traditions rooted in Austronesian migration, relevant to B.5.b on religions of the Pacific Island peoples of Australia and Oceania."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "The Stone Age is the foundational prehistoric cultural stage from which religions are inferred (A.2) — covering burial, tool use, petroglyphs, and ritual belief systems — and directly supports A.3 on religions attributed to various prehistoric cultural stages."
+    },
+    {
+      "articleTitle": "Afterlife",
+      "relevantPathsAI": [
+        "B.2.d"
+      ],
+      "rationaleAI": "Covers cross-cultural conceptions of personal existence after death, including ancestor veneration, reincarnation, and eschatological beliefs found in primitive and indigenous traditions — directly relevant to B.2.d on sacred time, destiny, and primitive cosmogonies and eschatologies."
+    },
+    {
+      "articleTitle": "Anthropology",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Anthropology — particularly sociocultural and archaeological subfields — provides the primary methods and frameworks for studying prehistoric and primitive religion (A.1), and ethnography underpins the study of the nature and significance of primitive religion (B.1)."
+    },
+    {
+      "articleTitle": "Shinto",
+      "relevantPathsAI": [
+        "B.5.d"
+      ],
+      "rationaleAI": "Shinto is Japan's indigenous polytheistic and animistic religion centered on kami inhabiting natural phenomena, representing an Asian aboriginal religious tradition covered under B.5.d."
+    },
+    {
+      "articleTitle": "Deity",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "Covers the full typology of supernatural beings across indigenous and primitive traditions, addressing dynamistic, daemonistic, and theistic conceptions of the sacred (B.2.b) and animistic views of external reality as living presence (B.2.c)."
+    },
+    {
+      "articleTitle": "Death",
+      "relevantPathsAI": [
+        "B.2.d",
+        "B.4.a"
+      ],
+      "rationaleAI": "Covers religious and cultural dimensions of death across world traditions including ancestor veneration and passage rites — relevant to B.2.d (man's destiny, eschatologies) and B.4.a (purification, passage rites)."
+    },
+    {
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Folklore encompasses the oral traditions, folk beliefs, and customary practices — including folk religion, rites, and narrative — that constitute the primary materials of B.3 (myth and symbol in primitive religion) and B.4 (primitive religious practices and institutions)."
+    },
+    {
+      "articleTitle": "Spirituality",
+      "relevantPathsAI": [
+        "B.1",
+        "B.4.e"
+      ],
+      "rationaleAI": "Covers human engagement with transcendent meaning including ascetic, mystical, and shamanic practices across traditions, supporting B.1 (nature and significance of primitive religion) and B.4.e (roles of asceticism, shamanism, and divination)."
+    },
+    {
+      "articleTitle": "Festival",
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.b"
+      ],
+      "rationaleAI": "Festivals are rooted in ancient religious observance and serve as communal religious practice, connecting to B.4 (primitive religious practices and institutions) and B.4.b (worship or veneration centred on natural objects or forces)."
+    },
+    {
+      "articleTitle": "Meditation",
+      "relevantPathsAI": [
+        "B.4.e"
+      ],
+      "rationaleAI": "Meditation traditions originating in Asian contemplative practices relate to the ascetic and trance-inducing dimensions of shamanism and divination covered under B.4.e."
+    },
+    {
+      "articleTitle": "Pre-Columbian era",
+      "relevantPathsAI": [
+        "B.5.c"
+      ],
+      "rationaleAI": "Covers indigenous American civilizations and their religious systems before European contact, providing broad coverage for B.5.c on religions of the indigenous peoples of North, Central, and South America."
+    },
+    {
+      "articleTitle": "Mesoamerica",
+      "relevantPathsAI": [
+        "B.5.c"
+      ],
+      "rationaleAI": "Covers indigenous Mesoamerican religious practices including human sacrifice, ritual ballgames, and calendrical systems tied to religious observance — relevant to B.5.c on religions of indigenous peoples of the Americas."
+    },
+    {
+      "articleTitle": "Oceania",
+      "relevantPathsAI": [
+        "B.5.b"
+      ],
+      "rationaleAI": "Covers Aboriginal Australian and Pacific Islander cultural and religious traditions — including their ancient settlement histories and indigenous practices — relevant to B.5.b on religions of Australia and Pacific Island peoples."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

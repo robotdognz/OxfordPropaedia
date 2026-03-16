@@ -1,55 +1,137 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "96/10",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Modern Chinese and Japanese history represents major transformations in human civilization.",
-      "relevantPathsAI": [
-        "A.2.b",
-        "B",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "Modern Asian transformations including China's revolution and Japan's modernization reshaped the continent.",
-      "relevantPathsAI": [
-        "A.2.b",
-        "B.1.c"
-      ]
-    },
-    {
       "articleTitle": "Japan",
-      "rationaleAI": "Japan's Meiji-era modernization is covered in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.i",
-        "A.1.b",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.c"
-      ]
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
+      ],
+      "rationaleAI": "Core article on Japan covering the Meiji Restoration (1868), the fall of the Tokugawa shogunate, rapid industrialization, zaibatsu formation, abolition of feudalism, civil service and religious/educational reform, creation of political parties, and Japan's emergence as a colonial power. Directly maps to all of B (modernization of Japan) including B.1.a (fall of Tokugawa), B.1.b (modernization policies), and B.1.c (Meiji political institutions)."
     },
     {
       "articleTitle": "Hong Kong",
-      "rationaleAI": "Hong Kong's colonial history falls within this section on China and Japan.",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a"
+      ],
+      "rationaleAI": "Hong Kong's history begins with British colonization through the Opium Wars — the territory was ceded under the Treaty of Nanking (1842) following the First Opium War — mapping directly to A.1.a (Opium War and aftermath: granting of commercial privileges to Western powers) and A.1 (Western challenge 1839–60)."
+    },
+    {
+      "articleTitle": "China",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.1.a",
-        "A.1.i",
         "A.1.b",
         "A.2",
         "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
+        "A.2.b",
+        "A.2.c",
+        "A.2.d"
+      ],
+      "rationaleAI": "Core article covering Chinese civilization through the Qing dynasty, the Opium War, self-strengthening movement, Sino-Japanese War, Boxer Rebellion, and the 1911 Revolution under Sun Yat-sen. Directly maps to the entire A section of the outline (late Qing China under Western challenge, westernization vs tradition, and the 1911 Revolution)."
+    },
+    {
+      "articleTitle": "South Korea",
+      "relevantPathsAI": [
         "A.2.b"
-      ]
+      ],
+      "rationaleAI": "Covers the Korean Peninsula's history under successive dynasties before Japanese annexation in 1910, including the role of Korea in the Sino-Japanese War (1894–95) which is directly referenced in A.2.b (Korea and the Sino-Japanese War as part of increasing foreign encroachments 1870–95)."
+    },
+    {
+      "articleTitle": "United States",
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Covers US history including the Open Door policy articulated after the Boxer Rebellion (1900) and Western intervention in China, mapping to A.2.c (U.S. Open Door policy and Western seizure of Peking in 1900 following the Boxer Rebellion)."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.2.b",
+        "B"
+      ],
+      "rationaleAI": "Covers the theory and practice of imperialism including European and American expansion into East Asia, relevant to A (Western challenge to China including Opium War and treaty-port system) and A.2.b (increasing foreign encroachments 1870–95); also pertinent to B as Japan became an imperialist power following Meiji modernization."
+    },
+    {
+      "articleTitle": "East Asia",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Surveys East Asia as a geocultural region including China and Japan, covering the modern era of colonialism and WWII Japanese occupation, with relevance to A (China under late Qing and Western encroachments) and B (Japan's modernization and emergence as a regional power under Meiji)."
+    },
+    {
+      "articleTitle": "Russia",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Russia's imperial expansion into Central Asia and the chilling of Sino-Russian relations are directly referenced in A.2.a.i (Western attempts at treaty revision and the chilling of Sino-Russian relations), as Russia competed with China over Central Asian territories during the self-strengthening movement era."
+    },
+    {
+      "articleTitle": "United Kingdom",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "Britain initiated the First and Second Opium Wars, extracted commercial privileges through the Treaty of Nanking (1842), and was a primary agent of increasing foreign encroachments in China through 1895, mapping to A.1.a (British demands culminating in the Opium War) and A.2.b (increasing foreign encroachments 1870–95)."
+    },
+    {
+      "articleTitle": "Tokyo",
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Tokyo evolved from Edo (seat of the Tokugawa shogunate) to Japan's modern imperial capital after the Meiji Restoration of 1868, directly connecting to B.1.a (fall of the Tokugawa) and B.1.b (beginning of Japanese modernization under the new government that established its capital in Tokyo)."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "A.2.a"
+      ],
+      "rationaleAI": "The Opium War arose directly from British demands for trade advantages and revision of commercial terms, and the self-strengthening movement involved industrial and commercial development; Trade maps to A.1.a (commercial privileges granted to Western powers after the Opium War) and A.2.a.ii (industrialization for self-strengthening including mining and weapons industries)."
+    },
+    {
+      "articleTitle": "History of Asia",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Explicitly covers Qing decline, the Opium War, European colonialism in Asia, and Meiji Japan as part of its survey of Asian history, mapping to A (late Qing under Western challenge) and B (Meiji Restoration and Japanese modernization)."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "Covers the Opium Wars, establishment of treaty ports, and British commercial and political encroachment in China including Hong Kong's cession, directly mapping to A.1.a (Opium War and granting of commercial privileges) and A.2.b (increasing foreign encroachments including loss of territories 1870–95)."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.2.b"
+      ],
+      "rationaleAI": "Provides the analytical framework for Western imperial penetration of China through commercial dominance, treaty-port systems, and extraterritoriality, relevant to A.1 (Western challenge including Opium War) and A.2.b (increasing foreign encroachments on Chinese sovereignty 1870–95)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

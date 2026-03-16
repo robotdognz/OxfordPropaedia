@@ -1,116 +1,161 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "969",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Southeast Asian colonial history is part of the broader narrative of human history.",
+      "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1.i",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.3.b",
-        "A.3.c",
+        "A.1",
+        "A.1.b"
+      ],
+      "rationaleAI": "The British Empire article covers the establishment of British colonial authority in Malaya and Burma, directly addressing A.1's scope of British rule in mainland Southeast Asia. It provides the broader imperial framework within which the Federated Malay States and Anglo-Burmese Wars (A.1.a, A.1.b) are situated."
+    },
+    {
+      "articleTitle": "Spanish Empire",
+      "relevantPathsAI": [
         "B.1",
         "B.1.a",
-        "B.1.i.ii",
-        "B.2.a"
-      ]
+        "B.1.b"
+      ],
+      "rationaleAI": "The Spanish Empire covers Spanish naval and commercial activities in Southeast Asia, Portuguese-Spanish rivalry in the Spice Islands (B.1.a), and the full arc of Spanish control of the Philippines including government administration, Catholic Church influence, land policy, and overseas trade (B.1.b.ii). It directly addresses the colonial history outlined in B.1."
     },
     {
-      "articleTitle": "Early modern period",
-      "rationaleAI": "Southeast Asia came under increasing European imperial influence during the early modern period.",
+      "articleTitle": "Myanmar",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.a",
-        "A.2.b"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The Myanmar article covers the Alaungpaya dynasty's expansionism, the three Anglo-Burmese Wars, annexation to British India in 1886, and effects of British colonialism including destruction of the church-state relationship, directly corresponding to A.1.a.i and A.1.a.ii. It is the primary reference for Burma's history under European imperialism."
     },
     {
-      "articleTitle": "Indonesia",
-      "rationaleAI": "Indonesia under European imperialism is addressed in this section.",
+      "articleTitle": "Thailand",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.b",
-        "A.3.a",
-        "A.3.b"
-      ]
-    },
-    {
-      "articleTitle": "Philippines",
-      "rationaleAI": "The Philippines under European and American imperialism is covered here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.2",
+        "A.3",
         "A.3.a",
         "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1"
-      ]
+        "A.3.c"
+      ],
+      "rationaleAI": "The Thailand article covers Siam from the Ayutthayan period through the Chakkri dynasty (Mongkut, Chulalongkorn), trade relations with China and European powers, the 1767 Burmese invasion, and the political, social, and economic reforms of the late 19th century \u2014 matching A.3.a, A.3.b, and A.3.c precisely. It is the core article for the entire A.3 outline path."
     },
     {
       "articleTitle": "Vietnam",
-      "rationaleAI": "Vietnam under French imperialism is addressed in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
         "A.2",
         "A.2.a",
-        "A.2.b",
-        "A.3.a"
-      ]
+        "A.2.b"
+      ],
+      "rationaleAI": "The Vietnam article covers French Indochina colonization, the First Indochina War, and the Portuguese and French missionary involvement in Vietnam that preceded formal colonization \u2014 directly addressing A.2.a (Portuguese/French missionary involvement, French territorial acquisition) and A.2.b (establishment of French protectorates in Annam, Tonkin, and Laos). It is the central article for A.2."
+    },
+    {
+      "articleTitle": "Singapore",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "The Singapore article covers British colonial rule from 1819 onward and its role as a key entrep\u00f4t within the British Malayan sphere, directly relevant to A.1.b's focus on British incursions and assumption of power from Malay sultanates. It addresses Chinese immigration and British commercial and political penetration of the Malay Peninsula."
+    },
+    {
+      "articleTitle": "Philippines",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "The Philippines article is the primary source for the entire B.1.b outline path, covering pre-colonial Philippine culture, Spanish colonial administration and Catholic Church influence (B.1.b.ii), the Philippine Revolution of 1896\u201398, and U.S. takeover and administration to c.1920 (B.1.b.iii). It addresses all three sub-paths comprehensively."
+    },
+    {
+      "articleTitle": "United States",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "The United States article covers American support in expelling Spain from the Philippines and the subsequent U.S. takeover and administration, directly addressing B.1.b.iii's focus on U.S. involvement in the Philippines after the Spanish-American War."
     },
     {
       "articleTitle": "Jakarta",
-      "rationaleAI": "Jakarta (Batavia) was the center of Dutch colonial rule in Southeast Asia.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.b",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.b",
-        "A.3.a"
-      ]
+        "B.2",
+        "B.2.a",
+        "B.2.b"
+      ],
+      "rationaleAI": "The Jakarta article covers the Dutch East India Company's establishment of Batavia in 1619, the VOC's commercial supremacy under Coen, and the city's role as the hub of Dutch colonial administration in Java \u2014 directly addressing B.2.a's focus on the VOC and B.2.b's focus on Dutch rule in the 19th century. It is a key reference for the B.2 outline."
     },
     {
       "articleTitle": "Colonialism",
-      "rationaleAI": "Colonialism shaped Southeast Asia under European imperialism.",
       "relevantPathsAI": [
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.3.a",
-        "A.3.b",
-        "B.1.a",
-        "B.1.i.ii",
+        "A",
+        "B"
+      ],
+      "rationaleAI": "The Colonialism article provides the analytical framework for understanding European chartered company rule, mercantilism, and coercive colonial institutions that underpin both mainland Southeast Asian (A) and Indonesian Archipelago/Philippine (B) colonial histories. It covers the theoretical and institutional dimensions of European colonial dominance relevant across the entire section."
+    },
+    {
+      "articleTitle": "Imperialism",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "The Imperialism article addresses the extension of European power through both hard power and soft power mechanisms \u2014 including the chartered company model and civilising mission justifications \u2014 that structured European imperialism in Southeast Asia across both the mainland (A) and archipelago (B) contexts."
+    },
+    {
+      "articleTitle": "History of Asia",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "The History of Asia article covers Southeast Asian kingdoms (Khmer, Vietnam), European colonialism, and inter-regional exchange patterns that provide broad context for the section. It addresses the pre-colonial and colonial periods across mainland and archipelago Southeast Asia relevant to both A and B outline paths."
+    },
+    {
+      "articleTitle": "Malaysia",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "The Malaysia article covers Dutch intervention in Malay states, British colonialism from the 18th century, Malay sultanates, Chinese and Indian immigration, and the Federated Malay States \u2014 directly addressing A.1.b's focus on loss of Malay autonomy through Dutch and British intrusions, including the paths A.1.b.i (Dutch intervention, Minangkabau/Buginese immigration) and A.1.b.ii (British incursions and Chinese immigration)."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.a"
+      ],
+      "rationaleAI": "The Age of Discovery covers Portuguese Indian Ocean exploration, Portuguese domination of the Strait of Malacca, Spanish transatlantic and Pacific voyages, and the Portuguese-Spanish rivalry in the Spice Islands \u2014 providing essential context for B.1.a on Portuguese naval and commercial activities in Southeast Asia."
+    },
+    {
+      "articleTitle": "Indonesia",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
         "B.2.b"
-      ]
+      ],
+      "rationaleAI": "The Indonesia article covers three and a half centuries of Dutch colonial rule including the VOC, Coen's establishment of commercial supremacy, the Culture System (Cultuur-stelsel) and its effects on Java, and 19th-century Liberal Policy \u2014 directly addressing B.2.a and B.2.b's outline of Dutch colonial administration in Indonesia."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.a",
+        "A.2.b"
+      ],
+      "rationaleAI": "The France article covers French colonial empire including Indochina, the French Indochina War, and the colonial independence movements \u2014 directly relevant to A.2's focus on French colonial involvement from Portuguese and French missionary activities through the establishment of French protectorates in Annam, Tonkin, and Laos."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "The Spain article covers the Spanish Empire's colonization of the Philippines, the Spanish-American War of 1898, and the imperial legacy across the Philippines \u2014 directly relevant to B.1.b on Spanish control of the Philippines and B.1.b.ii on government administration and the Roman Catholic Church's influence."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "The Early modern period article covers European colonization of Asia, the Age of Discovery, mercantile capitalism, and the onset of globalization from c.1500\u20131800 \u2014 providing essential chronological and thematic context for European imperialism in Southeast Asia covered across both A and B outline paths."
+    },
+    {
+      "articleTitle": "China",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "The China article is relevant to A.1.b.ii's focus on steady Chinese immigration throughout the 19th century and resulting social unrest in Malaya, and to A.3.a's coverage of Siam's trade relations with China, which were a defining feature of Siamese foreign policy before and during European intrusions."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

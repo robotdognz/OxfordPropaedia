@@ -1,451 +1,117 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/22",
   "mappings": [
     {
-      "articleTitle": "0",
-      "rationaleAI": "Zero is the additive identity fundamental to number systems across mathematical branches.",
+      "articleTitle": "Arithmetic",
       "relevantPathsAI": [
-        "B",
         "B.1",
         "B.1.a",
         "B.1.b",
         "B.1.c",
         "B.1.d",
-        "B.2",
-        "B.2.a",
-        "B.2.d",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Mathematics",
-      "rationaleAI": "The branches of mathematics represent the organized subdivisions of the field covered in this article.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Algebra",
-      "rationaleAI": "Algebra is a major branch of mathematics studying abstract structures, equations, and symbolic manipulation.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1.a",
-        "B.1.e",
-        "B.2",
-        "B.2.a",
-        "B.2.c",
-        "B.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Arithmetic",
-      "rationaleAI": "Arithmetic operations on integers, rationals, and reals constitute a fundamental branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
+        "B.1.e"
+      ],
+      "rationaleAI": "Directly covers arithmetic as a branch of mathematics including fundamental definitions, number systems, notation (decimal, binary), divisibility, and logarithms, matching B.1 and all its sub-paths comprehensively."
     },
     {
       "articleTitle": "Geometry",
-      "rationaleAI": "Geometry is a major branch of mathematics studying shapes, spaces, distances, and spatial relationships.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "B.1.a",
-        "B.1.b",
-        "B.3.i",
-        "B.3.v"
-      ]
-    },
-    {
-      "articleTitle": "Number",
-      "rationaleAI": "Number theory is a major branch of mathematics studying the properties and relationships of integers and other number systems.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Euclid",
-      "rationaleAI": "Euclid's Elements established the axiomatic method and the foundations of geometry as a branch of mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1.a",
-        "B.1.c",
-        "C.1.b",
-        "C.3.d",
-        "C.4.c",
-        "D.1.b",
-        "E",
-        "E.2",
-        "E.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Leonhard Euler",
-      "rationaleAI": "Euler's work in analysis, number theory, graph theory, and topology shaped the major branches of modern mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Carl Friedrich Gauss",
-      "rationaleAI": "Gauss advanced multiple branches of mathematics including non-Euclidean geometry, algebra, and mathematical physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Emmy Noether",
-      "rationaleAI": "Noether's theorem and her work in abstract algebra fundamentally shaped modern branches of mathematics and theoretical physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c"
-      ]
-    },
-    {
-      "articleTitle": "History of mathematics",
-      "rationaleAI": "The historical development of mathematical branches from geometry to analysis is central to this subject.",
-      "relevantPathsAI": [
-        "C.4.e",
-        "D.5.a",
-        "E.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Set (mathematics)",
-      "rationaleAI": "Set theory is a fundamental branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Function (mathematics)",
-      "rationaleAI": "Functions are central objects studied across the branches of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Real number",
-      "rationaleAI": "Real numbers form a fundamental number system studied in mathematical analysis.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "E (mathematical constant)",
-      "rationaleAI": "The constant e arises naturally in analysis and is fundamental across mathematical branches.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Pi",
-      "rationaleAI": "Pi is a fundamental mathematical constant relating circle geometry to analysis.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Fraction",
-      "rationaleAI": "Fractions represent rational numbers studied within the branches of mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e",
-        "B.2.a",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Integer",
-      "rationaleAI": "Integers are a fundamental number system within the branches of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B.1.a",
-        "B.1.b",
-        "B.2.b",
-        "B.4",
-        "B.4.b",
-        "C.1.d",
-        "D.1.b",
-        "D.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Natural number",
-      "rationaleAI": "Natural numbers are the most basic number system within the branches of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Prime number",
-      "rationaleAI": "Prime numbers are fundamental objects in number theory, a branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Complex number",
-      "rationaleAI": "Complex numbers extend the real number system as studied in mathematical branches.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.b",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Number theory",
-      "rationaleAI": "Number theory is a major branch of mathematics studying properties of integers.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B.1.b",
-        "B.2.b",
-        "B.4",
         "C",
         "C.1",
+        "C.2",
         "C.3",
-        "C.3.c",
-        "C.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Equation",
-      "rationaleAI": "Equations are central objects in algebra and other branches of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.2",
-        "B.2.a",
-        "B.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Variable (mathematics)",
-      "rationaleAI": "Variables are fundamental symbolic elements across the branches of mathematics.",
-      "relevantPathsAI": [
-        "A.1",
-        "B",
-        "B.1.a",
-        "B.1.c",
-        "B.1.e",
-        "B.2",
-        "B.2.a",
-        "B.2.d",
-        "B.3",
-        "B.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Abstract algebra",
-      "rationaleAI": "Abstract algebra studies algebraic structures as a major branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "B",
-        "B.1.b",
-        "B.2",
-        "B.2.d",
-        "B.3.a",
-        "B.3.b",
-        "B.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Linear algebra",
-      "rationaleAI": "Linear algebra studies vector spaces and matrices as a branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.2",
-        "B.2.a",
-        "B.3"
-      ]
+        "C.4",
+        "C.6",
+        "C.7"
+      ],
+      "rationaleAI": "Broad survey spanning Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometries, covering section C and its major sub-paths including priority paths C.2, C.3, C.6, and C.7."
     },
     {
       "articleTitle": "Mathematical analysis",
-      "rationaleAI": "Analysis is a major branch of mathematics studying limits, continuity, and convergence.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.6"
+      ],
+      "rationaleAI": "Directly maps to section D (Analysis), covering real analysis, complex analysis, functional analysis, harmonic analysis, differential equations, measure theory, and probability \u2014 the core content of D.1 through D.6."
+    },
+    {
+      "articleTitle": "Algebra",
+      "relevantPathsAI": [
+        "B",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
         "B.2.c",
-        "B.3.i",
-        "B.3.i.iv"
-      ]
+        "B.2.d",
+        "B.3",
+        "B.3.a",
+        "B.4"
+      ],
+      "rationaleAI": "Covers elementary algebra, linear algebra, abstract algebra (groups, rings, fields, modules), universal algebra, and category theory, directly mapping to the priority paths B.2 (elementary/multivariate algebra), B.3 (linear algebra), and B.4 (algebraic structures)."
     },
     {
-      "articleTitle": "Calculus",
-      "rationaleAI": "Calculus is a foundational branch of mathematics studying rates of change and accumulation.",
+      "articleTitle": "Number theory",
       "relevantPathsAI": [
-        "A.2.a",
-        "B.1.a",
-        "B.1.c",
-        "B.3.v.vi",
-        "C.1.a",
-        "C.1.d",
-        "C.4.a",
-        "C.4.c",
-        "D.1.c",
-        "D.1.d"
-      ]
+        "E.2",
+        "E.2.a",
+        "E.2.b",
+        "E.2.c",
+        "E.2.d",
+        "E.2.e"
+      ],
+      "rationaleAI": "Directly covers number theory with all subdivisions: elementary (E.2.a), algebraic (E.2.b), analytic (E.2.c), geometric (E.2.d), and probabilistic (E.2.e) \u2014 a precise match to the full E.2 sub-tree."
     },
     {
-      "articleTitle": "Infinity",
-      "rationaleAI": "Infinite processes underlie analysis and set theory within the branches of mathematics.",
+      "articleTitle": "Line (geometry)",
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.a",
+        "C.4.a"
+      ],
+      "rationaleAI": "Lines are foundational objects in Euclidean geometry axioms (C.1.a) and in plane analytic geometry (C.4.a); the article also treats lines in non-Euclidean and projective settings."
+    },
+    {
+      "articleTitle": "Three-dimensional space",
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.e",
+        "C.4",
+        "C.4.d",
+        "B.3.a"
+      ],
+      "rationaleAI": "Covers 3D Euclidean space as a generalization of geometry (C.1.e), coordinate systems central to solid analytic geometry (C.4.d), and inner product/linear algebra structure (B.3.a)."
+    },
+    {
+      "articleTitle": "Topology",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.c",
+        "F.2",
+        "F.2.e",
+        "F.3"
+      ],
+      "rationaleAI": "Directly covers general topology (F.1), topological groups and differential topology (F.2), and algebraic topology (F.3) including fundamental group, homology, cohomology \u2014 the full content of section F."
+    },
+    {
+      "articleTitle": "Exponentiation",
+      "relevantPathsAI": [
+        "B.1.d",
+        "B.1.e",
+        "B.4.b",
+        "B.4.c"
+      ],
+      "rationaleAI": "Exponentiation is part of arithmetic calculation (B.1.d roots and powers), connects to logarithms (B.1.e), and extends to group and ring theory (B.4.b, B.4.c) for abstract exponentiation."
+    },
+    {
+      "articleTitle": "Set (mathematics)",
       "relevantPathsAI": [
         "A",
         "A.1",
@@ -455,249 +121,351 @@
         "A.3",
         "A.3.a",
         "A.3.b",
-        "A.3.c",
-        "B.1.a"
-      ]
+        "A.3.c"
+      ],
+      "rationaleAI": "Directly addresses the foundations of set theory including fundamental set concepts (A.2.a), Cantorian set theory (A.2.b), and ZFC axiomatic set theory with its postulates and limitations (A.3.a, A.3.b, A.3.c)."
     },
     {
-      "articleTitle": "Limit (mathematics)",
-      "rationaleAI": "Limits are the foundational concept of mathematical analysis as a branch of mathematics.",
+      "articleTitle": "Integer",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "B.1.c",
-        "B.3.i",
-        "C.1.a",
-        "C.3.b",
-        "C.3.d",
-        "D",
-        "D.1"
-      ]
-    },
-    {
-      "articleTitle": "Series (mathematics)",
-      "rationaleAI": "Series are infinite sums studied within analysis as a branch of mathematics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
         "B.1.a",
         "B.1.b",
-        "B.1.c"
-      ]
+        "E.2.a"
+      ],
+      "rationaleAI": "Integers are the foundational objects of arithmetic (B.1.a defines natural numbers and integers, B.1.b divisibility) and elementary number theory (E.2.a properties of whole numbers/integers)."
     },
     {
-      "articleTitle": "Exponentiation",
-      "rationaleAI": "Exponentiation is a fundamental operation studied across the branches of mathematics.",
+      "articleTitle": "Natural number",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3.b",
-        "B",
         "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e"
-      ]
+        "E.2.a"
+      ],
+      "rationaleAI": "Natural numbers underlie the fundamental definitions and laws of arithmetic (B.1.a) and elementary number theory (E.2.a); the article covers Peano axioms and set-theoretic constructions foundational to both paths."
     },
     {
-      "articleTitle": "Logarithm",
-      "rationaleAI": "Logarithms are the inverse of exponentiation and fundamental across mathematical branches.",
+      "articleTitle": "Abstract algebra",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1",
-        "B.1.a",
-        "B.1.b"
-      ]
+        "B.4",
+        "B.4.a",
+        "B.4.b",
+        "B.4.c",
+        "B.4.d",
+        "B.4.e",
+        "B.4.f",
+        "B.4.g"
+      ],
+      "rationaleAI": "Abstract algebra directly covers all algebraic structures listed under B.4: lattices (B.4.a), groups (B.4.b), fields (B.4.c), rings (B.4.d), categories (B.4.e), homological algebra (B.4.f), and universal algebra (B.4.g)."
     },
     {
-      "articleTitle": "Angle",
-      "rationaleAI": "Angles are fundamental geometric objects studied within the branches of mathematics.",
+      "articleTitle": "Linear algebra",
       "relevantPathsAI": [
-        "A.2.a",
-        "B.1.a",
-        "B.1.c",
-        "B.1.e",
+        "B.3",
+        "B.3.a",
         "B.3.v",
-        "B.3.v.vi",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b"
-      ]
+        "B.3.v.vi"
+      ],
+      "rationaleAI": "Linear algebra directly covers all the priority paths: vector spaces (B.3.i), matrices (B.3.i.ii), linear transformations (B.3.i.iii), linear functionals (B.3.i.iv), inner products (B.3.v), and self-adjoint operators and spectral theorem (B.3.v.vi)."
     },
     {
-      "articleTitle": "Trigonometry",
-      "rationaleAI": "Trigonometry studies angular relationships as a branch of mathematics.",
+      "articleTitle": "Number",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
         "B.1.a",
         "B.1.c",
-        "B.1.e",
-        "B.2.c",
-        "B.3.v.vi",
-        "C.1.a",
-        "C.1.b",
-        "C.1.d"
-      ]
+        "D.1.b",
+        "E.2"
+      ],
+      "rationaleAI": "Surveys number systems (natural, integer, rational, real, complex, p-adic, transfinite), numeral systems and notation (B.1.c), number properties foundational to real analysis (D.1.b) and number theory (E.2)."
+    },
+    {
+      "articleTitle": "Kurt G\u00f6del",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c"
+      ],
+      "rationaleAI": "G\u00f6del's incompleteness theorems directly address the limitations of axiomatic set theory (A.3.b) and the profound changes and present status of axiomatic set theory resulting from recent discoveries (A.3.c)."
+    },
+    {
+      "articleTitle": "Prime number",
+      "relevantPathsAI": [
+        "E.2.a",
+        "E.2.c"
+      ],
+      "rationaleAI": "Prime numbers are the central object of elementary number theory (E.2.a divisibility and factorization) and analytic number theory (E.2.c prime number theorem, Riemann hypothesis, distribution of primes)."
+    },
+    {
+      "articleTitle": "Real number",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.a",
+        "D.1.b"
+      ],
+      "rationaleAI": "Real numbers are the foundational objects of real analysis (D.1), covering their formal definition via Dedekind cuts and Cauchy sequences (D.1.a origins and concepts) and number system properties (D.1.b)."
+    },
+    {
+      "articleTitle": "0",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "Zero is the additive identity central to fundamental arithmetic definitions (B.1.a), and its role as positional placeholder is essential to number systems and notation (B.1.c) including the historical development of decimal notation."
+    },
+    {
+      "articleTitle": "Function (mathematics)",
+      "relevantPathsAI": [
+        "D.1.c",
+        "D.4",
+        "B.4.e"
+      ],
+      "rationaleAI": "Functions are central to differential calculus (D.1.c), functional analysis (D.4), and form the morphisms of category theory (B.4.e); they underpin virtually all of analysis (section D)."
+    },
+    {
+      "articleTitle": "History of mathematics",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "C.1",
+        "D.1"
+      ],
+      "rationaleAI": "Traces the origins of set theory, arithmetic, geometry, and analysis, providing contextual coverage of introductory paths across multiple branches including A.1, B.1.a, C.1, and D.1.a."
+    },
+    {
+      "articleTitle": "Fraction",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.d"
+      ],
+      "rationaleAI": "Fractions arise directly from the theory of divisors and extension to non-integers (B.1.b) and are involved in arithmetic calculation with decimals (B.1.d)."
+    },
+    {
+      "articleTitle": "Equation",
+      "relevantPathsAI": [
+        "B.2.d",
+        "D.3",
+        "D.3.a",
+        "D.3.b"
+      ],
+      "rationaleAI": "Solving equations is the principal problem of elementary algebra (B.2.d); the article also covers differential equations, connecting to D.3 (ordinary and partial differential equations)."
     },
     {
       "articleTitle": "Area",
-      "rationaleAI": "Area is a fundamental geometric measurement within the branches of mathematics.",
       "relevantPathsAI": [
-        "A.1",
-        "B.1.a",
-        "B.1.e",
-        "B.2.c",
-        "B.3.i.iv",
-        "B.3.v.vi",
         "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.2.a"
-      ]
+        "D.1.d"
+      ],
+      "rationaleAI": "Area connects to the measure of polygons and the theories of equivalence (C.1.b) and to integral calculus and Lebesgue measure (D.1.d) as the analytic generalization of geometric area."
     },
     {
-      "articleTitle": "Circle",
-      "rationaleAI": "The circle is a fundamental geometric object studied within the branches of mathematics.",
+      "articleTitle": "Euclid",
       "relevantPathsAI": [
-        "A.1",
-        "A.3.b",
-        "A.3.c",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e",
-        "B.2",
-        "B.2.c",
-        "B.2.d"
-      ]
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.d"
+      ],
+      "rationaleAI": "Euclid's Elements established axiomatic foundations of geometry (C.1.a), the measure of polygons and polyhedra (C.1.b), and geometric constructions (C.1.d); he is the foundational figure for all of C.1."
     },
     {
-      "articleTitle": "Line (geometry)",
-      "rationaleAI": "Lines are the most basic geometric objects within the branches of mathematics.",
+      "articleTitle": "Carl Friedrich Gauss",
       "relevantPathsAI": [
-        "A.2.a",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "B.2.d",
-        "B.3.a",
-        "B.3.i",
-        "B.3.v.vi",
-        "C"
-      ]
+        "C.2",
+        "C.6",
+        "E.2",
+        "E.2.b"
+      ],
+      "rationaleAI": "Gauss contributed foundational results in non-Euclidean geometry (C.2), differential geometry and Gaussian curvature (C.6), and number theory including quadratic reciprocity (E.2, E.2.b algebraic number theory)."
+    },
+    {
+      "articleTitle": "Limit (mathematics)",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.a",
+        "D.1.c",
+        "D.5.a"
+      ],
+      "rationaleAI": "Limits are the foundational concept of real analysis (D.1.a origins and concepts), define derivatives and continuity (D.1.c), and underlie the theory of series (D.5.a)."
+    },
+    {
+      "articleTitle": "Complex number",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "C.3.c",
+        "B.4.c"
+      ],
+      "rationaleAI": "Complex numbers are the domain of complex analysis (D.2), underlie complex projective geometry as homogeneous coordinates (C.3.c), and form an algebraically closed field in abstract algebra (B.4.c)."
+    },
+    {
+      "articleTitle": "Leonhard Euler",
+      "relevantPathsAI": [
+        "D",
+        "D.2",
+        "E.2",
+        "F.1"
+      ],
+      "rationaleAI": "Euler founded or decisively advanced analysis (D), complex analysis (D.2), number theory (E.2), and topology (F.1 via the polyhedron formula); his breadth spans the major branches of section 10-22."
+    },
+    {
+      "articleTitle": "Emmy Noether",
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.b",
+        "B.4.c",
+        "B.4.d"
+      ],
+      "rationaleAI": "Noether's foundational work in abstract algebra \u2014 ideals, rings, modules, and chain conditions \u2014 directly maps to algebraic structures (B.4), particularly groups (B.4.b), fields (B.4.c), and rings (B.4.d)."
+    },
+    {
+      "articleTitle": "Mathematical proof",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.a",
+        "A.3.b"
+      ],
+      "rationaleAI": "Mathematical proof is the method underlying axiomatic set theory (A.3) and its postulates (A.3.a); G\u00f6del's incompleteness, which limits proof, is addressed at A.3.b (limitations of axiomatic set theory)."
+    },
+    {
+      "articleTitle": "Series (mathematics)",
+      "relevantPathsAI": [
+        "D.5",
+        "D.5.a",
+        "D.5.b",
+        "D.5.c",
+        "D.1"
+      ],
+      "rationaleAI": "Mathematical series directly covers the theory of series (D.5.a), Fourier series (D.5.b), and harmonic analysis (D.5.c), as well as convergence concepts foundational to real analysis (D.1)."
+    },
+    {
+      "articleTitle": "Logarithm",
+      "relevantPathsAI": [
+        "B.1.e"
+      ],
+      "rationaleAI": "Logarithms are explicitly listed at B.1.e as a sub-topic of arithmetic: their formal definition and use to reduce multiplication/division to addition/subtraction \u2014 a direct and precise match."
+    },
+    {
+      "articleTitle": "Angle",
+      "relevantPathsAI": [
+        "C.4.b",
+        "C.1",
+        "C.2.d"
+      ],
+      "rationaleAI": "Angles are fundamental to trigonometry (C.4.b), Euclidean geometry (C.1), and hyperbolic trigonometry (C.2.d); the article covers degree/radian measurement, trigonometric connections, and spherical/hyperbolic geometry."
+    },
+    {
+      "articleTitle": "Trigonometry",
+      "relevantPathsAI": [
+        "C.4.b",
+        "C.4.a",
+        "C.4.c",
+        "D.5"
+      ],
+      "rationaleAI": "Trigonometry is explicitly listed at C.4.b; it connects to plane analytic geometry (C.4.a), coordinate transformations (C.4.c), and ultimately Fourier analysis (D.5) through the periodic character of trigonometric functions."
     },
     {
       "articleTitle": "Polygon",
-      "rationaleAI": "Polygons are geometric figures studied within the branches of mathematics.",
       "relevantPathsAI": [
-        "B.1.a",
-        "B.1.c",
-        "B.2.a",
-        "B.2.b",
-        "B.3.v",
-        "B.3.v.vi",
-        "C",
         "C.1",
-        "C.1.a",
-        "C.1.b"
-      ]
+        "C.1.b",
+        "E.1.c"
+      ],
+      "rationaleAI": "Polygons are core objects of Euclidean plane geometry (C.1), central to the measure of polygons and equivalence theories (C.1.b), and connect to combinatorial geometry via triangulation and tiling (E.1.c)."
     },
     {
       "articleTitle": "Triangle",
-      "rationaleAI": "Triangles are fundamental geometric figures within the branches of mathematics.",
       "relevantPathsAI": [
-        "A.1",
-        "B.1.a",
-        "B.1.d",
-        "B.1.e",
-        "B.3.i",
-        "B.3.v",
-        "B.3.v.vi",
-        "C",
         "C.1",
-        "C.1.a"
-      ]
+        "C.1.b",
+        "C.4.b",
+        "C.1.c"
+      ],
+      "rationaleAI": "Triangles are foundational to Euclidean geometry (C.1), the measure of polygons (C.1.b), and the primary objects of trigonometry (C.4.b); transformation geometry (C.1.c congruence and similarity) also applies directly."
     },
     {
-      "articleTitle": "Three-dimensional space",
-      "rationaleAI": "Three-dimensional space is a core concept in geometry within the branches of mathematics.",
+      "articleTitle": "Infinity",
       "relevantPathsAI": [
-        "A.2.a",
-        "B",
-        "B.1.a",
-        "B.1.c",
-        "B.2",
-        "B.2.a",
-        "B.3",
-        "B.3.a",
-        "B.3.i",
-        "B.3.i.iii"
-      ]
+        "A.2.b",
+        "A.3",
+        "D.1"
+      ],
+      "rationaleAI": "Infinity is central to Cantorian set theory and multiple infinite cardinalities (A.2.b), axiomatic set theory (A.3 axiom of infinity), and the limit and convergence concepts of real analysis (D.1)."
     },
     {
       "articleTitle": "Volume",
-      "rationaleAI": "Volume is a fundamental geometric measurement within the branches of mathematics.",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.1.c",
-        "C.1.d",
-        "C.2.b",
-        "C.4.c",
-        "D.1.c",
-        "D.1.d",
-        "D.4.b",
-        "D.5.c",
-        "D.7.a"
-      ]
+        "C.1.b",
+        "D.1.d"
+      ],
+      "rationaleAI": "Volume is part of the measure of polyhedra (C.1.b) and is computed via integral calculus including Lebesgue measure (D.1.d); a moderate but genuine overlap with these two paths."
     },
     {
-      "articleTitle": "Topology",
-      "rationaleAI": "Topology studies properties preserved under continuous deformation as a branch of mathematics.",
+      "articleTitle": "Mathematics",
       "relevantPathsAI": [
-        "A.2.a",
-        "B.1.a",
-        "B.2.a",
-        "B.2.c",
-        "B.4",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.1.f",
-        "C.2.b"
-      ]
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "The overarching mathematics article covers all major branches of section 10-22 \u2014 set theory, algebra, geometry, analysis, combinatorics/number theory, and topology \u2014 at the parent-path level."
+    },
+    {
+      "articleTitle": "Pi",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4.b",
+        "D.5",
+        "E.2.c"
+      ],
+      "rationaleAI": "Pi is defined geometrically (circle circumference, C.1), appears in trigonometry (C.4.b), Fourier analysis (D.5), and analytic number theory through the Riemann zeta function and prime counting (E.2.c)."
     },
     {
       "articleTitle": "Probability",
-      "rationaleAI": "Probability theory is a branch of mathematics studying random phenomena.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.3.i.iv",
-        "C.1.b",
-        "C.2.c",
-        "C.4.c",
-        "D.2.c",
-        "D.5.a",
-        "D.6"
-      ]
+        "D.6",
+        "D.6.a",
+        "D.6.b",
+        "D.6.c"
+      ],
+      "rationaleAI": "Probability theory is explicitly listed at D.6 as a branch of analysis; the article covers Kolmogorov's axiomatic approach and finite and infinite dimensional probability spaces, matching D.6.a, D.6.b, and D.6.c precisely."
+    },
+    {
+      "articleTitle": "Al-Khwarizmi",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "Al-Khwarizmi founded algebra as a systematic discipline (B.2, B.2.a algebra as extension of arithmetic) and introduced the decimal positional number system to Western mathematics (B.1.c number systems and notation)."
+    },
+    {
+      "articleTitle": "Circle",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4.a",
+        "C.4.e",
+        "F.3"
+      ],
+      "rationaleAI": "The circle is a fundamental object of Euclidean geometry (C.1), plane analytic geometry (C.4.a), a named curve studied in mathematics (C.4.e), and the 1-sphere fundamental to algebraic topology (F.3)."
+    },
+    {
+      "articleTitle": "Ren\u00e9 Descartes",
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.a",
+        "C.4.c"
+      ],
+      "rationaleAI": "Descartes founded analytic geometry and the Cartesian coordinate system, directly corresponding to plane analytic geometry (C.4.a) and coordinates and transformation of coordinates (C.4.c)."
+    },
+    {
+      "articleTitle": "Variable (mathematics)",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b"
+      ],
+      "rationaleAI": "Variables are central to elementary and multivariate algebra (B.2), introduced as an extension and generalization of arithmetic (B.2.a) and underlying the basic algebraic properties covered at B.2.b."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

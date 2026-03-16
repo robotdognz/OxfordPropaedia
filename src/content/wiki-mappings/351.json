@@ -1,168 +1,192 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "351",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "The biosphere represents the global totality of life on Earth.",
+      "articleTitle": "Ecosystem",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.a",
-        "A.4.c",
-        "A.4.d",
-        "A.5",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Atmosphere of Earth",
-      "rationaleAI": "The atmosphere is a fundamental component of the biosphere, providing the gases essential for life on Earth.",
-      "relevantPathsAI": [
-        "B",
-        "B.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Sea",
-      "rationaleAI": "Oceans and seas are critical components of the biosphere, hosting vast marine ecosystems and regulating global climate.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "A.4.e",
-        "A.4.f",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Ecology",
-      "rationaleAI": "Ecology studies the basic features of the biosphere including energy flow, nutrient cycling, and ecosystem structure.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "A.4.e",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Water",
-      "rationaleAI": "Water is essential to all known life and is a fundamental component of the biosphere's physical environment.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4.a",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "A.4.e",
-        "A.4.f",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Forest",
-      "rationaleAI": "Forests are fundamental features of the biosphere's structure.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "B",
         "B.1",
         "B.2",
         "B.3",
-        "B.5"
-      ]
+        "B.6",
+        "A.2"
+      ],
+      "rationaleAI": "Ecosystem directly defines the ecosystem concept (B.1), details biotic components including producers, consumers, and decomposers (B.2), discusses abiotic components and their conditioning by organisms (B.3), and addresses productivity processes including primary production, nutrient cycling, and ecological resilience (B.6). It also covers levels of biosphere organization (A.2)."
     },
     {
-      "articleTitle": "Amazon rainforest",
-      "rationaleAI": "The Amazon is a critical component of the global biosphere.",
+      "articleTitle": "Ecology",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "B",
-        "B.3.f",
-        "B.6"
-      ]
-    },
-    {
-      "articleTitle": "Ocean",
-      "rationaleAI": "Oceans are fundamental to the biosphere's structure and function.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.4.a",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "A.4.e",
-        "A.4.f"
-      ]
-    },
-    {
-      "articleTitle": "Nature",
-      "rationaleAI": "Nature encompasses the basic features of the biosphere and the natural world.",
-      "relevantPathsAI": [
-        "A.2",
-        "B",
-        "B.1",
-        "B.3.d",
-        "B.3.e",
-        "B.6"
-      ]
-    },
-    {
-      "articleTitle": "Ecosystem",
-      "rationaleAI": "Ecosystems are fundamental features of the biosphere addressed here.",
-      "relevantPathsAI": [
-        "A",
         "A.2",
         "A.3",
         "A.4",
-        "A.4.b",
-        "A.4.c",
-        "A.4.d",
-        "B",
-        "B.1",
-        "B.2"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Ecology covers biosphere levels of organization from populations through the biosphere (A.2), energy flow and nutrient cycling in ecosystems (A.3, A.4), food webs, trophic levels, and the biotic and abiotic factors structuring ecosystems (B)."
     },
     {
       "articleTitle": "Photosynthesis",
-      "rationaleAI": "Photosynthesis is a basic feature of the biosphere driving primary production.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4.a",
+        "A.4.b",
+        "B.2.a"
+      ],
+      "rationaleAI": "Photosynthesis is the primary mechanism of the carbon and oxygen cycles (A.4.b), converting CO2 to organic carbon while releasing O2, and defines the role of autotrophic producers in the biosphere (B.2.a)."
+    },
+    {
+      "articleTitle": "Soil",
+      "relevantPathsAI": [
+        "B.3.d",
+        "A.4.f"
+      ],
+      "rationaleAI": "Soil is explicitly an abiotic component covering water and soil characteristics as limiting factors in ecosystems (B.3.d) and is central to the sedimentary cycles of essential minerals (A.4.f) through weathering and mineral cycling."
+    },
+    {
+      "articleTitle": "Archaea",
+      "relevantPathsAI": [
+        "B.2.c",
+        "A.4.c"
+      ],
+      "rationaleAI": "Archaea include methanogenic and nitrogen-cycling forms that function as decomposers in ecosystems (B.2.c) and participate in the nitrogen cycle through chemolithotrophic metabolisms (A.4.c)."
+    },
+    {
+      "articleTitle": "Bacteria",
+      "relevantPathsAI": [
+        "B.2.c",
+        "A.4.c",
+        "A.4.b"
+      ],
+      "rationaleAI": "Bacteria are the primary decomposers in ecosystems (B.2.c) and drive nitrogen fixation, denitrification, and nitrification in the nitrogen cycle (A.4.c), while cyanobacteria contributed to the oxygen cycle (A.4.b)."
+    },
+    {
+      "articleTitle": "Oxygen",
+      "relevantPathsAI": [
+        "A.4.b"
+      ],
+      "rationaleAI": "Oxygen is the subject of the carbon and oxygen cycle (A.4.b); its atmospheric presence is biogenically maintained via photosynthesis and consumed by aerobic respiration, making it a central element of biospheric chemical cycling."
+    },
+    {
+      "articleTitle": "Carbon dioxide",
+      "relevantPathsAI": [
+        "A.4.b",
+        "A.3"
+      ],
+      "rationaleAI": "Carbon dioxide is the primary carbon compound of the carbon cycle (A.4.b), mediating photosynthesis and respiration that drive energy flow in the biosphere (A.3), and its greenhouse role connects to biosphere preconditions (A.1)."
+    },
+    {
+      "articleTitle": "Atmosphere of Earth",
+      "relevantPathsAI": [
         "A.4.b",
         "A.4.c",
-        "A.4.d",
+        "B.3.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "Earth's atmosphere is the medium for the carbon/oxygen (A.4.b) and nitrogen (A.4.c) cycles, and provides the radiation (B.3.b) and illumination (B.3.c) abiotic components that structure ecosystems."
+    },
+    {
+      "articleTitle": "Fire",
+      "relevantPathsAI": [
+        "B.3.f"
+      ],
+      "rationaleAI": "Fire is explicitly named in the outline as a limiting abiotic factor in ecosystems (B.3.f); the article covers wildfire effects on soil, plant growth, and ecosystem dynamics, directly addressing its role as an ecosystem-structuring force."
+    },
+    {
+      "articleTitle": "Water",
+      "relevantPathsAI": [
         "A.4.e",
-        "A.4.f",
-        "A.5",
-        "B"
-      ]
+        "B.3.d"
+      ],
+      "rationaleAI": "Water covers the global water cycle (A.4.e) in detail and water's role as an abiotic component of ecosystems — soil moisture, aquatic habitats — (B.3.d), spanning chemistry, hydrology, and ecological function."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "A.4.b"
+      ],
+      "rationaleAI": "Carbon's participation in the global carbon cycle — linking photosynthesis, respiration, fossil fuel formation, and climate — directly covers the carbon cycle component (A.4.b) of biospheric chemical cycling."
+    },
+    {
+      "articleTitle": "Nitrogen",
+      "relevantPathsAI": [
+        "A.4.c"
+      ],
+      "rationaleAI": "Nitrogen covers the nitrogen cycle explicitly (A.4.c), connecting atmospheric N2 through biological fixation by soil microbiota, agricultural fertilization, and aquatic eutrophication — all key aspects of nitrogen cycling in the biosphere."
+    },
+    {
+      "articleTitle": "Desert",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Deserts exemplify extreme abiotic conditions (temperature, water scarcity) as limiting factors structuring ecosystems (B.3), and their flora and fauna illustrate how biotic components adapt to harsh abiotic environments (B.2), making desert a useful ecosystem case study for B broadly."
+    },
+    {
+      "articleTitle": "Forest",
+      "relevantPathsAI": [
+        "B",
+        "A.3",
+        "A.4.b"
+      ],
+      "rationaleAI": "Forests are major terrestrial ecosystems (B) that account for a large share of global primary production and biomass (A.3 energy flow), and play a central role in carbon cycling and precipitation feedback (A.4.b)."
+    },
+    {
+      "articleTitle": "Temperature",
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Temperature is explicitly listed as an abiotic factor (B.3.a: pressure and temperature) that conditions ecosystems; the article covers its role in governing biological processes, phase transitions, and reaction rates that affect ecosystem function."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "Electromagnetic radiation covers the radiation abiotic component of ecosystems (B.3.b), including solar radiation that drives photosynthesis and energy flow, and UV radiation that affects ecosystem productivity."
+    },
+    {
+      "articleTitle": "Light",
+      "relevantPathsAI": [
+        "B.3.c"
+      ],
+      "rationaleAI": "Light directly corresponds to illumination as an abiotic component of ecosystems (B.3.c); as the energy source for photosynthesis, it is the primary driver of primary production and thus ecosystem productivity."
+    },
+    {
+      "articleTitle": "Lightning",
+      "relevantPathsAI": [
+        "A.4.c",
+        "B.3.f"
+      ],
+      "rationaleAI": "Lightning drives atmospheric nitrogen fixation (A.4.c), contributing to the nitrogen cycle, and serves as a wildfire ignition source (B.3.f), making it an abiotic factor relevant to two biosphere cycling pathways."
+    },
+    {
+      "articleTitle": "Rock (geology)",
+      "relevantPathsAI": [
+        "A.4.f"
+      ],
+      "rationaleAI": "Rocks and their weathering are the source of minerals in sedimentary cycles (A.4.f), providing essential mineral nutrients that cycle through the biosphere via geological and biological processes."
+    },
+    {
+      "articleTitle": "Climate",
+      "relevantPathsAI": [
+        "A.1",
+        "B.3.a",
+        "B.6"
+      ],
+      "rationaleAI": "Climate constitutes the set of preconditions that make the biosphere possible (A.1) and acts as the primary external abiotic factor (B.3.a) that determines the nature and productivity of ecosystems (B.6) through temperature and precipitation regimes."
+    },
+    {
+      "articleTitle": "Energy",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Energy covers the foundational physical concept underlying energy flow in the biosphere (A.3), including the thermodynamic principles by which solar energy is captured, transferred through trophic levels, and dissipated as heat."
+    },
+    {
+      "articleTitle": "Grassland",
+      "relevantPathsAI": [
+        "B",
+        "A.3"
+      ],
+      "rationaleAI": "Grasslands are major terrestrial ecosystems (B) covering up to 69% of land area, with significant roles in primary production and energy flow (A.3), carbon sequestration, and water regulation; the article covers biotic and abiotic components of grassland ecosystems."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

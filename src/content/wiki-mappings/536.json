@@ -1,28 +1,162 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "536",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Economic growth and planning are processes through which societies develop materially.",
+      "articleTitle": "Singapore",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
+        "A.4",
         "A.4.a",
-        "A.4.b",
-        "B",
-        "B.3"
-      ]
+        "A.4.b"
+      ],
+      "rationaleAI": "Singapore's transformation from colonial entrepôt to one of the world's highest-GDP-per-capita economies exemplifies A.4 development economics and is a canonical case in A.4.b theories of national economic development, particularly state-directed growth."
     },
     {
-      "articleTitle": "Energy",
-      "rationaleAI": "Energy resources and their development are fundamental to economic growth and national development planning.",
+      "articleTitle": "Poverty",
       "relevantPathsAI": [
-        "A"
-      ]
+        "A.3",
+        "A.4",
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Directly addresses A.4.a by analyzing low per capita income and its relationship to underdevelopment, and covers A.3 social costs of insufficient growth; connects to A.4.b theories of development and retardation via structural, political, and environmental causal frameworks."
+    },
+    {
+      "articleTitle": "Economics",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "B"
+      ],
+      "rationaleAI": "Covers macroeconomic growth theory, fiscal and monetary policy, development economics, and planned versus market economic systems, providing broad foundational coverage across both A (growth) and B (planning) divisions of the outline."
+    },
+    {
+      "articleTitle": "Adam Smith",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4.b"
+      ],
+      "rationaleAI": "The Wealth of Nations is foundational to A.1 (capital accumulation, markets, division of labour as growth factors) and to A.4.b (classical political economy theories of national development), anchoring the liberal tradition of growth theory."
+    },
+    {
+      "articleTitle": "Macroeconomics",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.2.a",
+        "A.5",
+        "B"
+      ],
+      "rationaleAI": "Covers GDP measurement, long-term economic growth theory, business cycle models, and fiscal/monetary policy frameworks directly relevant to A.2 growth models; Keynesian and monetarist schools inform B (planning for stability) and A.5 (productivity and output measurement)."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4.b",
+        "B.2"
+      ],
+      "rationaleAI": "Historical materialism and surplus value theory constitute a major A.4.b theory of economic development and retardation; Marxist political economy informs B.2 planning in communist countries and critiques of capital accumulation as a growth factor under A.1."
+    },
+    {
+      "articleTitle": "Tax",
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Governmental fiscal policies—including taxation—are explicitly listed under A.1 as a factor influencing economic growth; tax policy analysis also informs B.3 (planning in developed non-communist countries) through Pigovian, redistributive, and public finance dimensions."
+    },
+    {
+      "articleTitle": "Capitalism",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4.b",
+        "B.3"
+      ],
+      "rationaleAI": "Defines the system of private ownership, markets, and capital accumulation that forms the backdrop for A.1 growth factors and A.2 supply-determined models; its variants (welfare state, state capitalism) inform B.3 planning in developed non-communist countries."
+    },
+    {
+      "articleTitle": "Economy",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Provides foundational overview of economic systems—market, mixed, and planned—directly relevant to B.1 (the nature of economic planning) and the institutional context of A.1 growth factors including natural resources, labor, and capital."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.2",
+        "A.4.b"
+      ],
+      "rationaleAI": "The Muqaddimah presents a proto-macroeconomic cyclical theory of dynastic rise and fall with supply-demand and labor value analysis, qualifying as an early A.2 growth model and an A.4.b theory of economic development and retardation in pre-modern societies."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "B.2",
+        "B.4",
+        "A.4.b"
+      ],
+      "rationaleAI": "Encompasses planned economy variants, state-directed and self-managed socialism, and democratic socialist models central to B.2 (planning in communist and socialist countries) and B.4 (planning in developing countries with socialist leanings); informs A.4.b alternative development theories."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A.1",
+        "A.5"
+      ],
+      "rationaleAI": "Technology is explicitly named in A.1 as a key factor influencing economic growth; its analysis of productivity and output-per-unit-of-input improvements directly maps to A.5 (economic productivity measured by changes in output per unit of input)."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "A.4.b"
+      ],
+      "rationaleAI": "Market access and international trade (including free trade vs. protectionism) are A.1 growth factors; comparative advantage and trade-led development are central to A.4.b theories of national development, particularly relevant for export-oriented developing countries."
+    },
+    {
+      "articleTitle": "Malaysia",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Malaysia's trajectory as an upper-middle-income emerging economy with state-directed industrial policy in electronics, palm oil, and petrochemicals illustrates A.4.a GDP growth relative to population and A.4.b theories of development through industrial planning."
+    },
+    {
+      "articleTitle": "Bangladesh",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Bangladesh's garment-export-driven growth from post-independence poverty exemplifies A.4.a (per capita income growth relative to population) and A.4.b (development through export manufacturing), while climate vulnerability and corruption illustrate retardation factors."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "A.1",
+        "A.5"
+      ],
+      "rationaleAI": "Work as a primary factor of production and the division of labour as an analytical concept map directly to A.1 (the labour force as a growth factor); discussion of productivity and output connects to A.5 (economic efficiency and output per unit of input)."
+    },
+    {
+      "articleTitle": "Poland",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Poland's post-1989 transition from communist central planning (B.2) to market-based growth in a developed non-communist context (B.3) and its rapid economic growth trajectory illustrates A.4.b theories of development and economic retardation under Soviet-era planning."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

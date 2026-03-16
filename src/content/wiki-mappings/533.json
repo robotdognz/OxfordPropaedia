@@ -1,289 +1,264 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "533",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "The organization of production and distribution is a core economic function of society.",
-      "relevantPathsAI": [
-        "C.1.e",
-        "C.1.f",
-        "C.1.j",
-        "D.1.c",
-        "D.2.h",
-        "D.3",
-        "D.3.c",
-        "E",
-        "E.1",
-        "E.2"
-      ]
-    },
-    {
       "articleTitle": "Business",
-      "rationaleAI": "Business organizations are the primary agents in the organization of production and distribution of economic goods.",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.1.e",
-        "C.1.g",
-        "C.1.h",
-        "C.1.i",
-        "C.4",
-        "D.2",
-        "D.2.c",
-        "D.2.g"
-      ]
-    },
-    {
-      "articleTitle": "Manufacturing",
-      "rationaleAI": "Manufacturing is a core activity in the organization of production, transforming raw materials into finished goods for distribution.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "C.1.e",
-        "C.1.f",
-        "C.1.h",
-        "C.1.j",
-        "D",
-        "D.3",
-        "D.3.c",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Trade",
-      "rationaleAI": "Trade networks organize the distribution of goods across local, national, and international scales.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h",
-        "C.1.j"
-      ]
-    },
-    {
-      "articleTitle": "Transport",
-      "rationaleAI": "Transportation networks are essential infrastructure for the organization of production and distribution of goods.",
-      "relevantPathsAI": [
-        "A.1",
-        "B.2",
-        "C.1.e",
-        "C.1.f",
-        "C.1.i",
-        "C.1.j",
-        "C.2",
-        "D.2",
-        "D.2.c",
-        "D.2.d"
-      ]
-    },
-    {
-      "articleTitle": "Henry Ford",
-      "rationaleAI": "Ford's assembly line method transformed the organization of industrial production and distribution.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h",
-        "C.1.j"
-      ]
-    },
-    {
-      "articleTitle": "Industrial Revolution",
-      "rationaleAI": "The Industrial Revolution transformed the organization of production and distribution through mechanization and factory systems.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Tourism",
-      "rationaleAI": "Tourism is a major service industry within the organization of production and distribution.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h",
-        "C.1.j"
-      ]
-    },
-    {
-      "articleTitle": "Corporation",
-      "rationaleAI": "Corporations are a primary form of organizing production and distribution.",
-      "relevantPathsAI": [
-        "C.1.e",
-        "C.1.g",
-        "D.4",
-        "E.1",
-        "E.2",
-        "E.5",
         "H",
-        "H.1.b",
-        "H.2.a",
-        "H.2.c"
-      ]
-    },
-    {
-      "articleTitle": "Management",
-      "rationaleAI": "Management is essential to the organization of production and distribution.",
-      "relevantPathsAI": [
-        "B.1",
-        "C.1.a",
-        "C.1.e",
-        "C.1.i",
-        "D.1",
-        "D.2.h",
-        "G.3",
-        "H.2.c",
-        "H.3.c",
-        "H.5"
-      ]
-    },
-    {
-      "articleTitle": "Marketing",
-      "rationaleAI": "Marketing is part of the organization of production and distribution.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.c",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h"
-      ]
-    },
-    {
-      "articleTitle": "Retail",
-      "rationaleAI": "Retail is part of the organization of production and distribution.",
-      "relevantPathsAI": [
-        "C.1.e",
-        "D.3.b",
-        "E.4",
-        "F.2.a",
-        "F.2.b",
-        "H.2.a",
-        "H.2.b",
-        "H.2.c",
-        "H.4.b",
-        "H.5.b"
-      ]
-    },
-    {
-      "articleTitle": "Trade union",
-      "rationaleAI": "Trade unions are organizations within the system of production and distribution.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h",
-        "C.1.i",
-        "C.1.j",
-        "D.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Finance",
-      "rationaleAI": "Finance is essential to the organization of production and distribution.",
-      "relevantPathsAI": [
-        "C.1.f",
-        "C.1.g",
-        "C.1.j",
-        "D.1.c",
-        "D.2.b",
-        "D.3",
-        "D.3.c",
-        "D.4",
-        "E",
-        "E.1"
-      ]
+        "H.1",
+        "H.2",
+        "H.3",
+        "H.4",
+        "H.5",
+        "B"
+      ],
+      "rationaleAI": "Covers the full range of methods of business organization (H): accounting (H.1), financial management (H.2), personnel administration (H.3), production control (H.4), and distribution/marketing (H.5). Also directly addresses the organization of distribution of goods (B) through commerce, retail, and wholesale functions."
     },
     {
       "articleTitle": "Bank",
-      "rationaleAI": "Banks are financial institutions organizing the distribution of capital.",
+      "relevantPathsAI": [
+        "D.2",
+        "D.2.a",
+        "D.2.b",
+        "D.2.c",
+        "D.2.d",
+        "D.2.e",
+        "D.2.g"
+      ],
+      "rationaleAI": "Directly covers the monetary functions of commercial and central banks (D.2), including historical development of banking systems (D.2.a), structure of national banking systems (D.2.b), principles of commercial banking (D.2.c) and central banking (D.2.d), money markets (D.2.e), and long-term capital markets including savings and investment institutions (D.2.g)."
+    },
+    {
+      "articleTitle": "Money",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.1.c"
+      ],
+      "rationaleAI": "Directly addresses the nature and characteristics of money (D.1): its basic functions as medium of exchange, unit of account, and store of value (D.1.a); forms of money including commodity, fiat, and bank money (D.1.b); and the quantity theory of money including classical and neoclassical monetary theories (D.1.c)."
+    },
+    {
+      "articleTitle": "Microeconomics",
       "relevantPathsAI": [
         "A.1",
         "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
+        "F.1"
+      ],
+      "rationaleAI": "Covers the analysis of costs and output in the short run\u2014production functions, marginal cost, marginal product (A.1)\u2014and cost minimization and profit maximization in the long run (A.2). Also addresses classical and contemporary theories of international trade underlying F.1."
+    },
+    {
+      "articleTitle": "Finance",
+      "relevantPathsAI": [
+        "H.2",
+        "H.2.a",
+        "H.2.b",
+        "D.2.g",
+        "K"
+      ],
+      "rationaleAI": "Covers management of business funds including short-term and long-term financial operations, capital structure design (H.2.a, H.2.b), and the long-term funds market including bonds, equities, and investment instruments (D.2.g). Consumer credit and lending institutions also fall within its scope (K)."
+    },
+    {
+      "articleTitle": "Supply and demand",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "F.2.c"
+      ],
+      "rationaleAI": "The supply-and-demand model directly underpins the analysis of costs, output, and marginal cost relative to market price (A.1\u2013A.2), and price movements as a national/regional factor influencing trade (F.2.c)."
+    },
+    {
+      "articleTitle": "Welfare spending",
+      "relevantPathsAI": [
+        "G",
+        "G.3"
+      ],
+      "rationaleAI": "Covers the growth in government spending in the 19th and 20th centuries, specifically the rise in social welfare expenditures alongside military spending (G.3), and the broader role of government in production and distribution (G)."
+    },
+    {
+      "articleTitle": "Corporation",
+      "relevantPathsAI": [
+        "D.4",
+        "H.2.b",
+        "H.2.c"
+      ],
+      "rationaleAI": "Directly covers the business corporation as an institutional arrangement facilitating production (D.4), with detailed treatment of capital structure and issuance of securities (H.2.b) and consolidations and mergers (H.2.c) through its analysis of corporate governance and capital markets."
+    },
+    {
+      "articleTitle": "Mining",
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Mining is the primary means by which land and raw materials are extracted as inputs into the productive process (C.2), covering metals, coal, gemstones, and industrial minerals. It also intersects with energy production (coal, oil shale) relevant to energy as an input (C.3)."
+    },
+    {
+      "articleTitle": "Trade union",
+      "relevantPathsAI": [
         "C.1.g",
-        "C.1.h",
-        "C.1.i"
-      ]
+        "C.1.h"
+      ],
+      "rationaleAI": "Directly covers the organization of unions (C.1.g) and the influence of the union on the supply of labour, wages, and output (C.1.h), including collective bargaining, craft versus industrial unionism, union density trends, and the relationship to wage determination."
+    },
+    {
+      "articleTitle": "Retail",
+      "relevantPathsAI": [
+        "H.5.b",
+        "H.5",
+        "B"
+      ],
+      "rationaleAI": "Directly covers retailing as a mode of distributing goods to final consumers (H.5.b), including store format decisions, pricing strategies, and the evolution from traditional to digital retail formats. Also relevant to the broader organization of distribution (H.5, B)."
     },
     {
       "articleTitle": "Insurance",
-      "rationaleAI": "Insurance is a financial service within the organization of production and distribution.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1.a",
-        "C.1.c",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h"
-      ]
+        "J",
+        "J.1",
+        "J.2",
+        "J.3",
+        "J.4",
+        "J.5",
+        "J.6",
+        "J.7"
+      ],
+      "rationaleAI": "Comprehensively covers the distribution of risk (J): the nature of insurance (J.1), major insurance types including property/marine (J.2), liability/casualty (J.3), life/health (J.4), government health insurance (J.5), underwriting and rate-making (J.6), and legal aspects of insurance (J.7)."
     },
     {
-      "articleTitle": "Service (economics)",
-      "rationaleAI": "Services are a major sector in the organization of production and distribution.",
+      "articleTitle": "Trade",
       "relevantPathsAI": [
-        "D.3",
-        "D.3.a",
-        "D.3.c",
-        "E",
+        "F",
+        "F.1",
+        "F.2",
+        "F.3",
         "H.5"
-      ]
+      ],
+      "rationaleAI": "Directly covers the geographical distribution of resources and markets through international trade (F), including classical theories of comparative advantage (F.1), national and regional factors affecting trade including protectionism (F.2), and international trade arrangements (F.3). Distribution of goods broadly (H.5) is also addressed through retail and wholesale coverage."
+    },
+    {
+      "articleTitle": "Adam Smith",
+      "relevantPathsAI": [
+        "F.1",
+        "A",
+        "D.1.c"
+      ],
+      "rationaleAI": "Smith's Wealth of Nations is foundational to classical theories of international trade (F.1) and the analysis of production through division of labour (A). His work also anticipates the quantity theory of money (D.1.c) through his price mechanism analysis."
+    },
+    {
+      "articleTitle": "History of agriculture",
+      "relevantPathsAI": [
+        "E",
+        "E.4",
+        "E.5"
+      ],
+      "rationaleAI": "Covers agricultural economics in historical dimension (E), with particular relevance to the effect of technology on world agriculture and the increase in crop yields (E.4) and the organization of farming and types of farms (E.5) from ancient to modern systems."
+    },
+    {
+      "articleTitle": "Capitalism",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "G"
+      ],
+      "rationaleAI": "Covers the organizational logic of production under private ownership (A, B broadly) and the contested role of government in production versus market allocation (G.2), including debates on public versus private sector resource use central to G.2."
+    },
+    {
+      "articleTitle": "Marketing",
+      "relevantPathsAI": [
+        "H.5",
+        "H.5.a",
+        "I"
+      ],
+      "rationaleAI": "Directly covers the functions of a marketing department in a large firm (H.5.a), market research and merchandising techniques (H.5.e), and interfaces closely with advertising (I) through its treatment of promotional strategy and digital targeting."
+    },
+    {
+      "articleTitle": "Tax",
+      "relevantPathsAI": [
+        "G.1",
+        "F.2.d"
+      ],
+      "rationaleAI": "Covers the theory of taxation in the budgetary process and tax administration (G.1) and national domestic taxes and subsidies as factors influencing trade (F.2.d). Its analysis of incidence, deadweight loss, and tax categories directly supports the role of government in production and distribution."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4",
+        "E.5",
+        "C.2"
+      ],
+      "rationaleAI": "Comprehensively covers agricultural economics (E): the relationship between agriculture and economic development (E.1), government price supports and subsidies (E.2), farm price behavior (E.3), technology's effect on yields (E.4), and organization of farming (E.5). Agriculture is also the primary use of land as a productive input (C.2)."
+    },
+    {
+      "articleTitle": "Transport",
+      "relevantPathsAI": [
+        "B",
+        "H.5"
+      ],
+      "rationaleAI": "Transport is the physical infrastructure enabling distribution of goods (B) and the logistics function within marketing and distribution operations (H.5), covering road, rail, air, water, and pipeline modes essential to moving goods from producers to consumers."
+    },
+    {
+      "articleTitle": "Human migration",
+      "relevantPathsAI": [
+        "C.1.f"
+      ],
+      "rationaleAI": "Covers the economic and social status of temporary, seasonal, and migrant laborers (C.1.f) through its analysis of labor migration theories, remittance flows, and the dual labor market as a driver of migration including seasonal agricultural work."
+    },
+    {
+      "articleTitle": "Fertilizer",
+      "relevantPathsAI": [
+        "E.4",
+        "C.2"
+      ],
+      "rationaleAI": "Fertilizers are the primary technological input driving the increase in crop yields central to E.4 (effect of technology on world agriculture), and represent a key raw material input in agricultural production (C.2)."
+    },
+    {
+      "articleTitle": "Infrastructure",
+      "relevantPathsAI": [
+        "G.4",
+        "G"
+      ],
+      "rationaleAI": "Covers government operation of basic industries (G.4) through its analysis of publicly provided networked systems (roads, energy grids, water supply), and the broader justification for government investment in infrastructure as a public good relevant to G.2."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Marx's analysis of surplus value and the labour theory of value directly addresses the relation between the productive process and incomes derived from it (B.1) and the earnings of labour and capital in the productive process (B.2), with labour as a key input (C.1) central to his theory of exploitation and wage determination."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Covers the intensifying interdependence of economies through trade and capital flows (F), including the reduction of trade barriers (F.2.a), changing conditions of production across countries (F.2.b), and the development of multilateral trade arrangements (F.3)."
     },
     {
       "articleTitle": "Work (human activity)",
-      "rationaleAI": "Work is fundamental to the organization of production and distribution.",
       "relevantPathsAI": [
-        "B.2",
-        "C.1.a",
-        "C.1.e",
-        "C.1.f",
-        "C.1.g",
-        "C.1.h",
-        "C.1.i",
-        "C.1.j",
-        "D.2.f",
-        "D.2.g"
-      ]
+        "C.1",
+        "C.1.a"
+      ],
+      "rationaleAI": "Covers labour as a primary input in the productive process (C.1), including the labour force across its forms\u2014paid employment, domestic work, forced labour (C.1.a)\u2014and capital elements in labour through education and training (C.1.i). The division of labour is a core analytical concept addressed here."
+    },
+    {
+      "articleTitle": "Management",
+      "relevantPathsAI": [
+        "H",
+        "H.3",
+        "H.4",
+        "C.1.j"
+      ],
+      "rationaleAI": "Covers methods of business organization broadly (H), with direct relevance to management of human resources and personnel administration (H.3), administration and control of production (H.4), and the economic role of managers and entrepreneurs (C.1.j)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

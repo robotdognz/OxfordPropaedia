@@ -1,109 +1,60 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "213",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "Earth provides the foundational context for understanding the structure and composition of the planet's interior.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Geology",
-      "rationaleAI": "Geology studies the structure and composition of Earth's interior through seismology, petrology, and geophysics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "B",
-        "C",
-        "D"
-      ]
-    },
-    {
-      "articleTitle": "Himalayas",
-      "rationaleAI": "The Himalayas result from tectonic plate collision revealing Earth's interior dynamics.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.c",
-        "A.3",
-        "C",
-        "D",
-        "D.2.a",
-        "D.2.b"
-      ]
-    },
-    {
       "articleTitle": "Internal structure of Earth",
-      "rationaleAI": "The structure and composition of Earth's interior is the direct subject of this section.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
         "A.2.a",
         "A.2.b",
         "A.2.c",
         "A.2.d",
-        "A.3",
-        "B",
-        "B.2"
-      ]
+        "D.1",
+        "D.1.a"
+      ],
+      "rationaleAI": "This article directly describes Earth's radially layered interior — crust (oceanic and continental), asthenosphere, mantle, liquid outer core, and solid inner core — covering the full scope of outline paths A.1 and A.2. It also covers the seismic wave analysis (P and S waves) and gravity/magnetic measurements used to infer interior structure, directly addressing D.1 and D.1.a."
     },
     {
       "articleTitle": "Earthquake",
-      "rationaleAI": "Earthquakes originate from stress release within Earth's interior structure.",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.a",
-        "A.2.c",
-        "A.3",
         "B",
         "B.1",
         "B.2",
         "B.3",
         "B.4",
-        "C"
-      ]
+        "D.1"
+      ],
+      "rationaleAI": "Earthquakes are the primary subject of outline section B in full: the article covers causes (B.1), geographic distribution (B.2), magnitude and elastic-rebound dynamics (B.3), and seismic measurements (B.4). Seismic waves from earthquakes are also the main geophysical evidence for inferring interior structure, linking to D.1."
     },
     {
-      "articleTitle": "Plate tectonics",
-      "rationaleAI": "Plate tectonics describes the dynamic structure of Earth's lithospheric interior.",
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Geology as a discipline encompasses petrology, structural geology, plate tectonics, and geochemical dating, covering all four major divisions of the section 213 outline as a broad parent. It provides the disciplinary framework within which Earth's interior structure, seismology, and geochemical evidence are studied."
+    },
+    {
+      "articleTitle": "Earth",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "B",
-        "B.3"
-      ]
+        "A.2"
+      ],
+      "rationaleAI": "The Earth article covers internal structure including tectonic plates, liquid outer core, and magnetosphere, directly addressing the concentric-layer model (A) and basic divisions of the solid Earth (A.2). It serves as the broad parent entry for the section's subject matter."
     },
     {
-      "articleTitle": "Volcano",
-      "rationaleAI": "Volcanic activity reveals the structure and composition of Earth's interior.",
+      "articleTitle": "Chemical element",
       "relevantPathsAI": [
-        "A.2.a",
+        "C",
         "D.2.b"
-      ]
+      ],
+      "rationaleAI": "Chemical element covers elemental abundance in the Earth's crust and interior, connecting to outline path C (distribution of elements in Earth's core, mantle, and crust). Its coverage of meteorite composition and nucleosynthetic origins also touches D.2.b, which concerns meteorites as analogues for Earth interior composition."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

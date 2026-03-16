@@ -1,264 +1,219 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "511",
   "mappings": [
     {
-      "articleTitle": "Human",
-      "rationaleAI": "Peoples and cultures of the world are expressions of human social nature discussed in this article.",
+      "articleTitle": "Arctic",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Directly covers the Arctic region and its indigenous peoples and cultures (A, A.1, A.2), including territories of Norway, Russia, Canada, Alaska, Greenland, and Iceland; the sub-Arctic is geographically contiguous (B.1)."
+    },
+    {
+      "articleTitle": "Andean civilizations",
+      "relevantPathsAI": [
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "Covers the succession of indigenous Andean peoples and civilizations along the central and southern Andes (D.1)."
+    },
+    {
+      "articleTitle": "Rocky Mountains",
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Covers indigenous peoples of the Rocky Mountain region, relevant to the Northwest Coast (B.2) and Plateau (B.4) cultural areas."
+    },
+    {
+      "articleTitle": "North America",
+      "relevantPathsAI": [
+        "B",
         "B.1",
         "B.2",
+        "B.3",
         "B.4",
         "B.5",
         "B.6",
         "B.7",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Peoples and cultures of the world are the foundational social groups that constitute society.",
-      "relevantPathsAI": [
-        "A.2",
-        "H.1"
-      ]
+        "B.8",
+        "B.9"
+      ],
+      "rationaleAI": "Provides broad coverage of the entire North American region, encompassing all subregions (B.1-B.9) where indigenous peoples lived."
     },
     {
       "articleTitle": "Oceania",
-      "rationaleAI": "Oceania's diverse Polynesian, Melanesian, and Micronesian peoples represent distinctive cultures of the world.",
       "relevantPathsAI": [
-        "D.1",
-        "F.2",
-        "G",
-        "G.2",
-        "G.3",
-        "G.4",
-        "G.5",
-        "H.7",
         "I",
-        "I.1"
-      ]
+        "I.1",
+        "I.2",
+        "I.3"
+      ],
+      "rationaleAI": "Covers Oceania including Australia (I.1), Melanesia (I.2), and Polynesia (I.3)."
     },
     {
-      "articleTitle": "Language",
-      "rationaleAI": "Language is a defining feature of peoples and cultures, with linguistic diversity reflecting the richness of human civilizations.",
+      "articleTitle": "Inca Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "B.8"
-      ]
+        "D.1"
+      ],
+      "rationaleAI": "The Inca Empire was the dominant civilization of the central and southern Andes (D.1)."
     },
     {
-      "articleTitle": "Culture",
-      "rationaleAI": "Culture defines the shared beliefs, practices, and identities of peoples and cultures across the world.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Ethnicity",
-      "rationaleAI": "Ethnic groups are fundamental units of peoples and cultures, defining shared identity through language, customs, and heritage.",
+      "articleTitle": "Colombia",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
+        "D",
+        "D.2",
+        "C.3"
+      ],
+      "rationaleAI": "Colombia encompasses Andean, Amazonian, and Caribbean indigenous peoples, mapping to South American sub-regions (D, D.2) and Caribbean/Central American transition areas (C.3)."
     },
     {
-      "articleTitle": "Mesoamerica",
-      "rationaleAI": "Mesoamerican peoples developed distinctive cultures, religions, and social systems among the world's civilizations.",
+      "articleTitle": "Sahara",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Aztecs",
-      "rationaleAI": "Aztec society had a complex social structure, religion, and culture among the peoples of the pre-Columbian world.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Continent",
-      "rationaleAI": "Continents define the broad geographic settings of the world's peoples and cultures.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Central Asia",
-      "rationaleAI": "Central Asian peoples represent distinct cultural traditions within world cultures.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "East Asia",
-      "rationaleAI": "East Asian peoples share cultural traditions that distinguish them as a world cultural region.",
-      "relevantPathsAI": [
-        "F",
-        "F.2",
-        "G",
-        "G.2",
-        "G.3",
-        "G.4",
-        "G.5",
-        "H.5"
-      ]
-    },
-    {
-      "articleTitle": "Southeast Asia",
-      "rationaleAI": "Southeast Asian peoples represent diverse cultural traditions within world cultures.",
-      "relevantPathsAI": [
-        "B.9",
-        "F.2",
-        "G",
-        "G.2",
-        "G.3",
-        "G.4",
-        "G.5"
-      ]
-    },
-    {
-      "articleTitle": "Arctic",
-      "rationaleAI": "Arctic indigenous peoples represent distinctive cultural adaptations.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
+        "F.1",
+        "H.2"
+      ],
+      "rationaleAI": "The Sahara spans North Africa including the Maghrib (F.1) and connects to the eastern Sudan (H.2) through the Sahel."
     },
     {
       "articleTitle": "Polynesia",
-      "rationaleAI": "Polynesian peoples developed distinctive cultural traditions across the Pacific.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
+        "I.3"
+      ],
+      "rationaleAI": "Directly covers Polynesian peoples, their Austronesian origins, and individual island groups (I.3)."
+    },
+    {
+      "articleTitle": "Algeria",
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Algeria is a core Maghrib country (F.1: northwestern Africa), with its Berber/Amazigh indigenous population and Arab-Islamic culture."
+    },
+    {
+      "articleTitle": "Turkey",
+      "relevantPathsAI": [
+        "F.4"
+      ],
+      "rationaleAI": "Turkey corresponds directly to outline path F.4 (In Turkey)."
+    },
+    {
+      "articleTitle": "Amazon rainforest",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "The Amazon rainforest is the primary locus of tropical forest peoples in South America (D.2)."
+    },
+    {
+      "articleTitle": "Andes",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The Andes is the geographic backbone of the central and southern Andes cultural area (D.1)."
+    },
+    {
+      "articleTitle": "Swahili",
+      "relevantPathsAI": [
+        "H.5",
+        "H.6"
+      ],
+      "rationaleAI": "Swahili as language and culture is the primary marker of East African coastal and Great Lakes peoples (H.5, H.6)."
+    },
+    {
+      "articleTitle": "South America",
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Provides broad coverage of South American peoples and cultures (D), encompassing Andean civilizations (D.1), Amazon tropical forest peoples (D.2), and Southern Cone groups (D.3)."
+    },
+    {
+      "articleTitle": "History of Africa",
+      "relevantPathsAI": [
+        "H",
+        "H.1",
+        "H.2",
+        "H.3",
+        "H.4",
+        "H.5",
+        "H.6",
+        "H.7"
+      ],
+      "rationaleAI": "Covers sub-Saharan African history comprehensively (H), including Bantu expansion, Sahelian empires, and East African peoples."
+    },
+    {
+      "articleTitle": "East Asia",
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Covers the peoples and cultures of East Asia (G.3), including Chinese, Japanese, Korean, and Mongolian cultural traditions."
+    },
+    {
+      "articleTitle": "Egypt",
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Egypt corresponds to the Mashriq/northeastern Africa component of F.2."
+    },
+    {
+      "articleTitle": "Nigeria",
+      "relevantPathsAI": [
+        "H.3",
+        "H.1"
+      ],
+      "rationaleAI": "Nigeria is the most populous country on the Guinea coast (H.3) and in the western Sudan zone (H.1)."
+    },
+    {
+      "articleTitle": "Mesoamerica",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Mesoamerica directly covers the peoples and cultures of Mexico, Belize, Guatemala, El Salvador (C.2)."
+    },
+    {
+      "articleTitle": "Pre-Columbian era",
+      "relevantPathsAI": [
         "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
-    },
-    {
-      "articleTitle": "Country",
-      "rationaleAI": "Countries frame the peoples and cultures of the world.",
-      "relevantPathsAI": []
-    },
-    {
-      "articleTitle": "Australia",
-      "rationaleAI": "Australia's indigenous peoples represent distinctive world cultures.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Anthropology",
-      "rationaleAI": "Anthropology studies the peoples and cultures of the world.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "B.8"
-      ]
-    },
-    {
-      "articleTitle": "Human migration",
-      "rationaleAI": "Migration has shaped the distribution of peoples and cultures worldwide.",
-      "relevantPathsAI": []
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Spans all indigenous American civilizations before 1492, covering North American (B), Middle American (C), and South American peoples (D)."
     },
     {
       "articleTitle": "Indigenous peoples",
-      "rationaleAI": "Indigenous peoples represent distinct cultures of the world.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
         "B",
-        "B.1",
-        "B.2",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7"
-      ]
+        "C",
+        "D",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Covers indigenous peoples globally across all continents and cultural regions."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
+        "H.3",
+        "H.4",
+        "H.1"
+      ],
+      "rationaleAI": "The Atlantic slave trade drew primarily from West African coastal peoples (H.3: Guinea coast), the Congo basin (H.4), and the western Sudan (H.1)."
+    },
+    {
+      "articleTitle": "Pacific Ocean",
+      "relevantPathsAI": [
+        "I",
+        "I.2",
+        "I.3"
+      ],
+      "rationaleAI": "Covers Pacific prehistoric migrations and European exploration of Oceanian island peoples (I), with relevance to Melanesian (I.2) and Polynesian (I.3) settlement."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,135 +1,178 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "242",
   "mappings": [
     {
-      "articleTitle": "Earth",
-      "rationaleAI": "The interpretation of Earth's geologic record is fundamental to understanding the planet's history.",
+      "articleTitle": "Paleontology",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.d",
-        "A.2.e",
-        "A.2.f",
+        "B",
         "B.1",
         "B.2",
-        "B.2.a",
-        "B.2.i"
-      ]
+        "B.3",
+        "B.4",
+        "A.2.c"
+      ],
+      "rationaleAI": "Paleontology is the direct scientific discipline behind section B (paleontological interpretation of the geologic record), covering fossil formation, the fossil record, biostratigraphy as a correlation tool (A.2.c, B.4), and mass extinctions (B.3)."
     },
     {
-      "articleTitle": "Geology",
-      "rationaleAI": "Stratigraphy and paleontology are geological methods for interpreting the geologic record preserved in rock layers.",
+      "articleTitle": "History of Earth",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.d",
-        "A.2.e",
-        "A.2.f",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Time",
-      "rationaleAI": "Geologic time provides the chronological framework for interpreting the geologic record spanning billions of years.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.d",
-        "A.2.e",
-        "A.2.f",
-        "B.1",
+        "A",
         "B.2",
-        "B.2.i.ii",
-        "B.2.b"
-      ]
+        "D.4.a",
+        "D.4.b",
+        "E"
+      ],
+      "rationaleAI": "The History of Earth article integrates stratigraphic, radiometric, and fossil data across all four eons, covering the absolute geologic time scale (D.4.a), the age of the Earth (D.4.b), and major fossil record milestones (B.2)."
     },
     {
       "articleTitle": "Radioactive decay",
-      "rationaleAI": "Radiometric dating based on radioactive decay is essential to interpreting the geologic record.",
       "relevantPathsAI": [
-        "A.2",
-        "B.1",
-        "B.2.i",
-        "B.2.b",
-        "C.1",
-        "D.1",
+        "D.2",
         "D.2.a",
-        "D.2.c",
-        "D.3",
-        "D.4"
-      ]
+        "D.2.b",
+        "D.2.d"
+      ],
+      "rationaleAI": "Radioactive decay is the physical foundation of radiometric dating (D.2), and the article covers exponential decay statistics, half-lives, decay chains, and specific nuclides (uranium, thorium, potassium-40) used as geochronological tools."
     },
     {
       "articleTitle": "Extinction",
-      "rationaleAI": "Extinction events are recorded in and interpreted through the geologic record.",
       "relevantPathsAI": [
         "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Paleontology",
-      "rationaleAI": "Paleontology interprets the fossil evidence within the geologic record.",
-      "relevantPathsAI": [
-        "A.2.d",
-        "A.2.e",
-        "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.i",
-        "B.2.i.ii",
-        "B.2.i.iii",
-        "B.2.i.iv",
-        "B.2.v"
-      ]
-    },
-    {
-      "articleTitle": "Amphibian",
-      "rationaleAI": "Amphibian fossils mark the vertebrate transition to land in the geologic record.",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.2.x",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Reptile",
-      "rationaleAI": "Reptile fossils document major evolutionary transitions in the geologic record.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.d",
-        "A.2.e",
-        "A.2.f",
-        "B.1",
-        "B.2",
-        "B.2.i",
-        "B.2.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Dinosaur",
-      "rationaleAI": "Dinosaur fossils are among the most significant records interpreted in geology.",
-      "relevantPathsAI": [
-        "B.2.x",
-        "B.3"
-      ]
+      ],
+      "rationaleAI": "Extinction directly addresses the appearance and disappearance of species in the fossil record (B.3), covering mass extinctions, background extinctions, and the paleontological record of taxon loss including causes and the concept of pseudoextinction."
     },
     {
       "articleTitle": "Rock (geology)",
-      "rationaleAI": "Rock strata form the geologic record from which Earth's history is interpreted.",
       "relevantPathsAI": [
+        "A.1",
         "A.1.a",
         "A.1.b",
         "A.1.c"
-      ]
+      ],
+      "rationaleAI": "The Rock (geology) article covers the three fundamental classes—igneous, sedimentary (clastic and carbonate), and metamorphic—corresponding directly to outline A.1 (layered rocks and depositional environments) and subnodes A.1.a–c."
+    },
+    {
+      "articleTitle": "History of life",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.3",
+        "E"
+      ],
+      "rationaleAI": "The History of life article traces the fossil record from Precambrian microbial life through the Cambrian explosion, successive mass extinctions, and vertebrate radiations, providing comprehensive coverage of the paleontological fossil record outline (B.2) and mass extinctions (B.3)."
+    },
+    {
+      "articleTitle": "Dinosaur",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Dinosaurs are explicitly listed in outline B.2.b.x ('dinosaurs and other fossil reptiles'), and the article covers over 900 non-avian genera with fossil evidence spanning the Triassic through Cretaceous, including their connection to avian dinosaurs."
+    },
+    {
+      "articleTitle": "Mollusca",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Mollusca includes cephalopods with ammonoids explicitly cited at B.2.b.v ('fossil mollusks, e.g., ammonoids'), and the phylum has a Cambrian fossil record with major stratigraphic utility as zone and index fossils."
+    },
+    {
+      "articleTitle": "Fish",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Fish are explicitly listed in outline B.2.b.x ('fossil fish'), and the article traces their evolution from the Cambrian through the Devonian 'Age of Fishes,' providing direct content for the Phanerozoic fossil record node."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Geology encompasses stratigraphy, stratigraphic correlation, and relative and absolute geochemical dating (including radiometric methods), providing broad disciplinary coverage of the section's stratigraphic interpretation (A) and dating (C, D) nodes."
+    },
+    {
+      "articleTitle": "Vertebrate",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Vertebrates collectively encompass fossil fish, amphibians, reptiles, birds, and mammals as listed in outline B.2.b.x, and the article traces their evolutionary and fossil history from the Cambrian through successive geological periods."
+    },
+    {
+      "articleTitle": "Abiogenesis",
+      "relevantPathsAI": [
+        "B.2.a"
+      ],
+      "rationaleAI": "Abiogenesis addresses the origin of life on early Earth (B.2.a.i: the origin of life) and the emergence of early cellular life constituting the beginning of the Precambrian fossil record covered at B.2.a."
+    },
+    {
+      "articleTitle": "Bird",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Birds (avian dinosaurs) are explicitly listed in outline B.2.b.x ('fossil birds'), and the article covers Late Jurassic fossil origins including Archaeopteryx and their Cenozoic diversification after the Cretaceous–Paleogene extinction."
+    },
+    {
+      "articleTitle": "Mammal",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Mammals are explicitly listed in outline B.2.b.x ('fossil mammals'), and the article covers their Triassic origins from cynodont therapsids and Cenozoic diversification following the K-Pg extinction event."
+    },
+    {
+      "articleTitle": "Reptile",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Reptiles are cited in outline B.2.b.x ('dinosaurs and other fossil reptiles'), and the article covers their Permian origins and fossil record including the archosaurian lineage leading to dinosaurs and birds."
+    },
+    {
+      "articleTitle": "Carbon",
+      "relevantPathsAI": [
+        "D.2.d"
+      ],
+      "rationaleAI": "Carbon isotope C-14 (radiocarbon dating) is a principal absolute dating method (D.2.d: dating methods), and the article explicitly addresses radiocarbon dating as one of carbon's key scientific applications."
+    },
+    {
+      "articleTitle": "Charles Darwin",
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.3"
+      ],
+      "rationaleAI": "Darwin's work established the idea of fossil succession as evidence for evolution (A.2.c: the idea of a fossil succession) and the concept of species extinction through the fossil record, which are foundational principles of paleontological stratigraphy."
+    },
+    {
+      "articleTitle": "Species",
+      "relevantPathsAI": [
+        "B.3",
+        "B.4.a"
+      ],
+      "rationaleAI": "Species as the unit of paleontological analysis underpins the record of taxon appearances and extinctions (B.3) and is the basis for index fossils and faunal assemblages used in stratigraphic correlation (B.4.a)."
+    },
+    {
+      "articleTitle": "Crustacean",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Crustaceans are arthropods with a Cambrian fossil record; trilobites—explicitly cited at B.2.b.ix as 'fossil arthropods, e.g., trilobites'—are crustacean relatives within Pancrustacea, and crustacean fossils serve as significant stratigraphic markers."
+    },
+    {
+      "articleTitle": "Pacific Ocean",
+      "relevantPathsAI": [
+        "D.4.c"
+      ],
+      "rationaleAI": "The Pacific Ocean's seafloor geology is directly relevant to the determination of rates of seafloor spreading (D.4.c), a listed application of absolute dating methods illustrating how radiometric techniques calibrate geological processes."
+    },
+    {
+      "articleTitle": "Iron Age",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "The Iron Age is a named archaeological period defined by relative dating principles—the three-age system—directly relevant to C.2 (application of relative age dating to archaeological problems) as a concrete example of archaeological periodization."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

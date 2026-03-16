@@ -72,13 +72,13 @@
               "level": "e",
               "levelType": "lowercase",
               "text": "Ammunition",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Propellant: black powder, smokeless powder",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Propellant: black powder, smokeless powder",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -104,13 +104,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Basing",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Land: e.g., barrage rocket, ballistic missile, surface-to-air missile",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Land: e.g., barrage rocket, ballistic missile, surface-to-air missile",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -192,13 +192,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Armour against early hand-powered weapons",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Materials: e.g., leather, bronze, iron",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Materials: e.g., leather, bronze, iron",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -217,13 +217,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Armour against gunpowder and explosive weapons",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Materials: steel, plastic, Kevlar",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Materials: steel, plastic, Kevlar",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -386,13 +386,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Fixed-wing airplanes",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Propulsion: internal combustion/propeller, jet",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Propulsion: internal combustion/propeller, jet",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",
@@ -411,13 +411,13 @@
               "level": "b",
               "levelType": "lowercase",
               "text": "Helicopters",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Propulsion: internal combustion, gas turbine",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Propulsion: internal combustion, gas turbine",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

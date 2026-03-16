@@ -1,48 +1,92 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "829",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "New religious movements represent ongoing developments in the religious dimension of human history.",
+      "articleTitle": "New religious movement",
       "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
         "E",
         "F"
-      ]
+      ],
+      "rationaleAI": "The New religious movement article is the core topical subject of section 829, covering typologies (world-rejecting, world-affirming, world-accommodating), case examples including groups that map to the outline's specific categories (Scientology, ISKCON, Wicca), and academic frameworks for studying NRMs. It is the most direct match for the currently uncovered priority path A."
     },
     {
-      "articleTitle": "Society",
-      "rationaleAI": "New religious movements reflect ongoing social dynamics of belief and community formation.",
-      "relevantPathsAI": []
+      "articleTitle": "Shamanism",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Shamanism covers spirit possession, trance induction, divination, and healing\u2014directly addressing F (residues or revivals of ancient/primitive religious beliefs and practices), F.1 (witchcraft and magic context), and F.2 (prophecy and divination), with its psychoactive substance use also relevant to F.4."
     },
     {
       "articleTitle": "Religion",
-      "rationaleAI": "New religious movements from the 19th century onward illustrate ongoing dynamics of religious innovation, syncretism, and social change.",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "B.1",
-        "B.2",
-        "E",
-        "E.1",
-        "E.2",
-        "E.3",
-        "F",
-        "F.3"
-      ]
+        "A"
+      ],
+      "rationaleAI": "The Religion article covers new religious movements as part of its global taxonomy of approximately 10,000 distinct traditions, providing essential context for A (new religious movements reflecting the impact of dominant cultures and religions), the currently uncovered priority path."
     },
     {
-      "articleTitle": "New religious movement",
-      "rationaleAI": "New religious movements are the direct subject of this section.",
+      "articleTitle": "Folklore",
+      "relevantPathsAI": [
+        "F",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Folklore encompasses folk religion, divination, healing customs, rites of passage, and folk beliefs that directly correspond to F (residues/revivals of ancient and primitive religious beliefs), F.2 (prophecy and divination), and F.3 (healing cults or practices)."
+    },
+    {
+      "articleTitle": "History of medicine",
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "The history of medicine includes healing practices outside mainstream medicine (folk, traditional, and shamanic healing), providing substantive coverage for F.3 (healing cults or practices), especially in its sections on non-Western and pre-modern healing traditions."
+    },
+    {
+      "articleTitle": "History of religion",
       "relevantPathsAI": [
         "A",
+        "F"
+      ],
+      "rationaleAI": "The history of religion explicitly covers modern new religious movements as part of the long arc of religious development, and traces survivals of shamanism and primitive religion through to the present, addressing the currently uncovered priority path A and F (residues/revivals of ancient religious beliefs)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The Enlightenment was the dominant Western intellectual culture whose critique of institutional religion and promotion of Deism, rationalism, and religious toleration directly stimulated many of the new religious movements that emerged in the 18th\u201319th centuries, making it substantive for A (NRMs reflecting the impact of dominant cultures)."
+    },
+    {
+      "articleTitle": "Spirituality",
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "F"
+      ],
+      "rationaleAI": "Spirituality explicitly covers the 'spiritual but not religious' phenomenon, new religious movements, and spiritualist and esoteric traditions, directly addressing A (NRMs and the dominant culture context), D (Spiritualist groups, an uncovered priority path), and F (residues of ancient spiritual practices in modern civilization)."
+    },
+    {
+      "articleTitle": "Christianity",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Christianity as the dominant religious culture provides the context for A (NRMs reflecting the impact of dominant cultures) and is specifically cross-referenced in H (sects and movements tangentially related to traditional Christianity, including Christian Science and Mormonism)."
+    },
+    {
+      "articleTitle": "African traditional religions",
+      "relevantPathsAI": [
         "B",
         "B.2",
-        "E",
         "F",
-        "F.3",
-        "F.4"
-      ]
+        "F.1"
+      ],
+      "rationaleAI": "African traditional religions include the diaspora forms (Vodou, Candombl\u00e9, Rastafari) that directly inform B (Negro cults in Western cultures) and B.2 (Black Jewish cults and African-American religious movements), and their animistic and magic practices address F and F.1."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

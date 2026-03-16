@@ -1,183 +1,161 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "512",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "The development of human culture is a central narrative thread within the story of human history.",
+      "articleTitle": "Society",
       "relevantPathsAI": [
-        "A.2",
+        "B",
+        "B.1",
         "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Covers the full typology of societies from hunting-gathering and pastoral through horticultural, agrarian, industrial, and post-industrial, directly mapping onto outline nodes B.1a–d and B.3. Theoretical frameworks (functionalism, conflict theory) address A broadly as well."
     },
     {
-      "articleTitle": "Society",
-      "rationaleAI": "The development of human culture is a core process in the formation of societies.",
+      "articleTitle": "Human history",
       "relevantPathsAI": [
-        "A.2",
-        "B.1.b",
+        "B.1",
+        "B.2",
         "B.3"
-      ]
-    },
-    {
-      "articleTitle": "History",
-      "rationaleAI": "History as a discipline tracks the development of human culture through the systematic study of past societies and their transformations.",
-      "relevantPathsAI": [
-        "A.2",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Ancient history",
-      "rationaleAI": "Ancient history documents the foundational developments of human culture including writing, law, literature, and organized religion.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Human settlement",
-      "rationaleAI": "The transition from nomadic to settled life was a pivotal moment in the development of human culture and civilization.",
-      "relevantPathsAI": [
-        "A.2"
-      ]
-    },
-    {
-      "articleTitle": "Culture",
-      "rationaleAI": "The development of human culture from earliest tool use to modern globalization is a central narrative of cultural evolution.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Agriculture",
-      "rationaleAI": "The agricultural revolution was the pivotal development in human culture, enabling settled communities and civilization.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "B.1.b"
-      ]
+      ],
+      "rationaleAI": "Surveys the arc from hunter-gatherer origins through the Neolithic transition, the emergence of early civilizations, and the Industrial Revolution, providing narrative coverage of B.1 (primitive cultures), B.2 (civilized societies), and B.3 (modern industrial civilization)."
     },
     {
       "articleTitle": "Civilization",
-      "rationaleAI": "Civilization represents the most complex form of human cultural development, marked by urbanization, writing, and social stratification.",
       "relevantPathsAI": [
-        "A.5",
+        "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Directly addresses B.2 by analyzing theories of the origin and evolution of civilized societies, including state formation, social stratification, and urbanization; also connects to B.3 through its treatment of modernity and industrialization."
     },
     {
-      "articleTitle": "Tool",
-      "rationaleAI": "Tool development from stone to metal to digital represents a fundamental trajectory in the development of human culture.",
-      "relevantPathsAI": [
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Prehistory",
-      "rationaleAI": "Prehistory traces the initial development of human culture from stone tools to the first settlements.",
+      "articleTitle": "Personality",
       "relevantPathsAI": [
         "A.2"
-      ]
+      ],
+      "rationaleAI": "Covers the relationship between individual psychological characteristics and cultural contexts, directly relevant to A.2 (culture and personality), including cross-cultural psychology and the influence of cultural environment on behavioral patterns."
     },
     {
-      "articleTitle": "Neolithic Revolution",
-      "rationaleAI": "The shift from foraging to farming was a decisive turning point in the development of human culture.",
+      "articleTitle": "Culture",
       "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "B.1.b",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Village",
-      "rationaleAI": "Villages represent an early stage in the development of human culture.",
-      "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Pottery",
-      "rationaleAI": "Pottery is a key marker in the development of human culture.",
-      "relevantPathsAI": [
-        "A.2",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Oral tradition",
-      "rationaleAI": "Oral tradition was essential to the development of human culture.",
-      "relevantPathsAI": [
-        "A.2",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Anthropology",
-      "rationaleAI": "Anthropology examines the development of human culture.",
-      "relevantPathsAI": [
         "A.2",
         "A.3",
         "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "The primary article for section 512: covers definitions of culture (A.1), enculturation and personality (A.2), cultural relativism and ethnocentrism (A.3), cultural change (A.4), and cultural norms and patterns (A.5), tracking the concept from German Romanticism through modern anthropology and sociology."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Traces the Neolithic domestication of crops, the rise of horticultural and settled agricultural societies (B.1.b and B.1.d), and agriculture's role in enabling the complex civilizations described in B.2."
+    },
+    {
+      "articleTitle": "Neolithic Revolution",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b",
+        "B.1.d",
+        "B.2"
+      ],
+      "rationaleAI": "Directly documents the transition from nomadic hunter-gatherer cultures (B.1.a) through early agriculture (B.1.b, B.1.d) to sedentary complex societies (B.2), making it the foundational event linking all B.1 subtypes to B.2."
+    },
+    {
+      "articleTitle": "Anthropology",
+      "relevantPathsAI": [
+        "A",
+        "A.3"
+      ],
+      "rationaleAI": "Provides the primary theoretical and methodological framework for the study of culture (A), with cultural relativism and ethnocentrism as central concerns of A.3; sociocultural anthropology is the discipline most directly engaged with comparing and analyzing cultural diversity."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "Covers the full span of prehistoric hunter-gatherer and early human technological cultures, directly addressing B.1.a (cultures of nomadic and settled hunters and gatherers) through examination of lithic tool traditions, foraging, migration, and early ritual behavior."
+    },
+    {
+      "articleTitle": "Information Age",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Defines and characterizes the post-industrial information economy as the latest phase of modern civilization, directly relevant to B.3 (the development of modern industrial civilization and mass society) and its extension into digital and knowledge-based mass culture."
+    },
+    {
+      "articleTitle": "Globalization",
+      "relevantPathsAI": [
+        "A.4",
+        "B.3"
+      ],
+      "rationaleAI": "Covers intensifying cultural interdependence and the spread of mass consumer culture globally, relevant to A.4 (cultural adaptation and change) and B.3 (the development of modern industrial civilization and mass society)."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
         "A.5",
+        "B.1"
+      ],
+      "rationaleAI": "As the primary medium of cultural transmission in preliterate and non-urban societies, oral tradition is central to A.5 (cultural patterns) and to understanding the expressive culture of the B.1 types (nomadic, horticultural, pastoralist, and peasant societies)."
+    },
+    {
+      "articleTitle": "City",
+      "relevantPathsAI": [
         "B.2",
         "B.3"
-      ]
+      ],
+      "rationaleAI": "Urban settlements are both the defining feature of civilized societies (B.2) and the primary social form of modern industrial civilization (B.3); covers urbanization, historical evolution from ancient city-states to contemporary global cities, and mass-society dynamics."
     },
     {
-      "articleTitle": "Fishing",
-      "rationaleAI": "Fishing was an early subsistence activity in the development of human culture.",
+      "articleTitle": "Urbanization",
       "relevantPathsAI": [
-        "A.5"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Directly addresses the demographic and societal transformation associated with modern industrial civilization and mass society (B.3), covering historical causes, economic effects, and contemporary patterns of urban growth."
     },
     {
-      "articleTitle": "Hunting",
-      "rationaleAI": "Hunting was a foundational activity in the development of human culture.",
+      "articleTitle": "Village",
       "relevantPathsAI": [
-        "A.2",
-        "B.1",
-        "B.1.b",
-        "B.2"
-      ]
+        "B.1.d"
+      ],
+      "rationaleAI": "Focuses on the small-scale rural settlement characteristic of subsistence agricultural communities, directly relevant to B.1.d (cultures of peasants and settled agriculturists), covering global typological variation and the transformation wrought by industrialization."
     },
     {
       "articleTitle": "Animal husbandry",
-      "rationaleAI": "Animal domestication was transformative in the development of human culture.",
-      "relevantPathsAI": []
+      "relevantPathsAI": [
+        "B.1.c"
+      ],
+      "rationaleAI": "Covers the management of livestock as the primary economic practice of pastoral and herding societies, directly mapping to B.1.c (cultures of pastoralists and herdsmen), including Neolithic origins, nomadic pastoralism, and the contrast between subsistence and industrial animal farming."
     },
     {
-      "articleTitle": "Domestication",
-      "rationaleAI": "Domestication was a pivotal step in the development of human culture.",
+      "articleTitle": "Modern era",
       "relevantPathsAI": [
-        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "Defines the historical period shaped by industrialization, nationalism, urbanization, and mass society — the exact content of B.3 — covering the French and Industrial Revolutions, global capitalism, and postmodern critique of Western cultural dominance."
+    },
+    {
+      "articleTitle": "Johannes Gutenberg",
+      "relevantPathsAI": [
         "A.4",
-        "B.1.b"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "The printing press catalyzed a fundamental shift in how culture was transmitted and adapted across Europe, directly relevant to A.4 (cultural adaptation and change) and to B.3 by enabling the mass literacy that underpins modern industrial civilization."
+    },
+    {
+      "articleTitle": "Sigmund Freud",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Freud's cultural works (Civilization and Its Discontents, Totem and Taboo) and his psychoanalytic theory of personality directly engage A.2 (culture and personality), theorizing the relationship between social repression and individual psychological development."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

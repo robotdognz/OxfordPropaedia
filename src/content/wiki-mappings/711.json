@@ -1,277 +1,237 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "711",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "The scope and history of technology are the core subject of this article.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "C",
-        "C.1.a",
-        "C.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Prehistory",
-      "rationaleAI": "Prehistoric stone tools and fire mastery represent the earliest chapters in the history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.6",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.2.b",
-        "C.3.b",
-        "C.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Fire",
-      "rationaleAI": "The mastery of fire was one of the earliest and most transformative technologies in human history.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1.a",
-        "C.1.b",
-        "C.2.b",
-        "C.3.a",
-        "C.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Tool",
-      "rationaleAI": "Tools are the foundational artifacts of technology, representing the earliest human innovations and driving technological advancement.",
-      "relevantPathsAI": [
-        "C.1.a",
-        "C.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Civilization",
-      "rationaleAI": "The rise of civilization is closely linked to the scope and history of technology, from agriculture to urbanization.",
-      "relevantPathsAI": [
-        "C.1.b",
-        "C.3",
-        "C.4.b"
-      ]
-    },
-    {
-      "articleTitle": "History of agriculture",
-      "rationaleAI": "Agriculture's evolution is a central theme in the scope and history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.6",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.2",
-        "C.2.b",
-        "C.3"
-      ]
-    },
-    {
       "articleTitle": "History of technology",
-      "rationaleAI": "The history of technology is the direct subject of this section on technology's scope and historical development.",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
+        "A",
         "C",
         "C.1",
-        "C.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Stone Age",
-      "rationaleAI": "Stone tools represent the first chapter in the scope and history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.4",
-        "B.6",
-        "C.1.a",
-        "C.1.b",
         "C.2",
-        "C.2.b",
-        "C.4.a",
-        "C.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Bronze Age",
-      "rationaleAI": "Bronze metallurgy was a transformative technological development in the scope and history of technology.",
-      "relevantPathsAI": [
-        "C.1.b",
-        "C.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Iron Age",
-      "rationaleAI": "Iron smelting technology was a transformative advance in the scope and history of technology.",
-      "relevantPathsAI": [
-        "C.1",
-        "C.1.a",
-        "C.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Han dynasty",
-      "rationaleAI": "Han-era innovations including paper, the compass, and iron casting were transformative technological achievements.",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Andean civilizations",
-      "rationaleAI": "Andean peoples developed unique technologies including quipu record-keeping and advanced agricultural terracing.",
-      "relevantPathsAI": []
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "This article is the single most comprehensive match for Section 711, covering the full arc of C (history of technology) from Stone Age lithics (C.1.a) through medieval innovations (C.2), the Industrial Revolution (C.3), and 20th-century computing, nuclear, and space technology (C.4), as well as addressing definitional questions about technology (A)."
     },
     {
       "articleTitle": "Industrial Revolution",
-      "rationaleAI": "The Industrial Revolution was the most transformative period in the scope and history of technology.",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "C",
-        "C.1"
-      ]
+        "C.3",
+        "C.3.a",
+        "C.3.b"
+      ],
+      "rationaleAI": "The Industrial Revolution directly covers C.3, including steam power and power technology advances (C.3.a) and the development of iron/steel, textiles, railways, and canals (C.3.b), representing the core sociocultural transition of this period."
+    },
+    {
+      "articleTitle": "Tool",
+      "relevantPathsAI": [
+        "A",
+        "C.1.a"
+      ],
+      "rationaleAI": "Tools are foundational to defining technology (A) and the article traces the prehistoric development of stone, bone, and wood tools directly to C.1.a (beginnings of technology: stone tools and weapons), covering tool use from the Paleolithic through industrialization."
+    },
+    {
+      "articleTitle": "Engine",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "The engine article covers the development of heat engines — steam, internal combustion, and turbines — directly mapping to C.3.a (advances in power technology: steam power, internal-combustion engine) and the continued refinement of power technology in C.4.b."
+    },
+    {
+      "articleTitle": "Internal combustion engine",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b",
+        "C.4"
+      ],
+      "rationaleAI": "The internal combustion engine is the paradigmatic power technology advance of C.3.a, enabling the transformation of transportation in C.3.b and continuing as a dominant power source into the 20th century (C.4)."
+    },
+    {
+      "articleTitle": "Thomas Edison",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b",
+        "C.4.a"
+      ],
+      "rationaleAI": "Edison pioneered practical electrical power distribution (C.3.a: electric power) and invented technologies spanning communications and media industries (C.3.b), while his industrial research laboratory model exemplifies the rationalization of production (C.4.a)."
+    },
+    {
+      "articleTitle": "Alan Turing",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Turing is the foundational figure for the electronic digital computer and automation (C.4.b: automation and the electronic digital computer), formalizing computation theory and contributing to early stored-program computer design."
+    },
+    {
+      "articleTitle": "Henry Ford",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.4.a"
+      ],
+      "rationaleAI": "Ford pioneered mass automobile production through the moving assembly line, directly instantiating rationalization of production (C.4.a) and the development of transportation industries (C.3.b), while Fordism as a manufacturing system exemplifies the sociocultural consequences addressed in C."
     },
     {
       "articleTitle": "Information Age",
-      "rationaleAI": "The Information Age represents the latest transformative chapter in the scope and history of technology.",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "B.6",
-        "B.7",
-        "C",
-        "C.1"
-      ]
-    },
-    {
-      "articleTitle": "Musical instrument",
-      "rationaleAI": "Musical instruments represent an early and ongoing application of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.6",
-        "C.1.b",
-        "C.2",
-        "C.2.a",
-        "C.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Pottery",
-      "rationaleAI": "Pottery-making is one of the earliest human technologies.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.4",
-        "B.6",
-        "C.1.a",
-        "C.1.b",
-        "C.2.b",
-        "C.3.a",
-        "C.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Bronze",
-      "rationaleAI": "Bronze was a transformative material in the early history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.1.c",
-        "C.2.b",
-        "C.3.b"
-      ]
+        "C.4.b"
+      ],
+      "rationaleAI": "The Information Age covers the period defined by the transistor, internet, and World Wide Web, mapping to C.4.b (automation and the electronic digital computer) and addressing the sociocultural consequences of digital computing and communication technology shifts."
     },
     {
       "articleTitle": "Gunpowder",
-      "rationaleAI": "Gunpowder was a transformative invention in the history of technology.",
-      "relevantPathsAI": []
+      "relevantPathsAI": [
+        "C.2.a",
+        "B.2"
+      ],
+      "rationaleAI": "Gunpowder originated in Tang dynasty China and spread through the Islamic world and medieval Europe (C.2.a: medieval advances), representing a major technological innovation with direct military applications (B.2: technology and war) that transformed both warfare and industrial chemistry."
     },
     {
-      "articleTitle": "Irrigation",
-      "rationaleAI": "Irrigation is one of the oldest applications of technology.",
+      "articleTitle": "Firearm",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.3",
-        "B.5",
-        "C.1.b",
-        "C.2.b",
-        "C.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Knife",
-      "rationaleAI": "Edged tools like knives were among the earliest artifacts in the history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "C.1.a",
-        "C.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Steam engine",
-      "rationaleAI": "The steam engine catalyzed the Industrial Revolution in the history of technology.",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3",
-        "B.6",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
         "C.2.a",
         "C.2.b",
-        "C.3.a",
-        "C.3.b"
-      ]
+        "C.3.b",
+        "B.2"
+      ],
+      "rationaleAI": "Firearms evolved from 13th-century Chinese fire lances through medieval European adoption (C.2.a) and the emergence of early modern weapons technology (C.2.b), with industrial-era mass production of firearms forming part of C.3.b industry development; connects to technology and war (B.2)."
     },
     {
-      "articleTitle": "Compass",
-      "rationaleAI": "The compass was a transformative invention in the history of technology.",
+      "articleTitle": "Machine",
+      "relevantPathsAI": [
+        "A",
+        "C.1",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Machine as a concept is definitionally central to technology (A), covering the full history from simple machines and mechanical advantage through industrial complex machinery (C.3) to computing machines and automation (C.4), spanning the entire arc of C."
+    },
+    {
+      "articleTitle": "Rocket",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Rockets are explicitly named in C.4.b (rocketry and space exploration), with the article covering military origins in 13th-century China through 20th-century advances enabling satellite launches, crewed spaceflight, and interplanetary missions."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Ancient Greece directly covers C.1.c (technological achievements of Greece and Rome: mastery of iron, mechanical contrivances, architectural and constructional works), with coverage of Greek engineering, philosophy of nature, and technology in the classical Mediterranean world."
+    },
+    {
+      "articleTitle": "Ancient Rome",
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Ancient Rome is the primary example for C.1.c, with its engineering achievements in roads, aqueducts, and monumental construction representing the apex of ancient technological achievement and its sociocultural consequences."
+    },
+    {
+      "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
         "C.2.a"
-      ]
+      ],
+      "rationaleAI": "Shen Kuo's Dream Pool Essays recorded medieval Chinese technological innovations including movable-type printing, canal pound locks, the magnetic compass, and drydock use, all directly mapping to C.2.a (medieval advances: harnessing of power, printing, ship construction)."
+    },
+    {
+      "articleTitle": "Sumer",
+      "relevantPathsAI": [
+        "C.1.b"
+      ],
+      "rationaleAI": "Sumer is the primary civilization covered under C.1.b (the urban revolution c. 3000–500 BC: early civilization in the valleys of the Tigris–Euphrates, waterworks for irrigation, urban manufacturing), with cuneiform, temple economies, and agricultural hydraulics as core topics."
+    },
+    {
+      "articleTitle": "Stone Age",
+      "relevantPathsAI": [
+        "C.1.a"
+      ],
+      "rationaleAI": "The Stone Age directly covers C.1.a (beginnings of technology to c. 3000 BC: stone tools and weapons, beginnings of mining and agriculture), tracing lithic tool use from the earliest Oldowan industries through the Neolithic transition."
+    },
+    {
+      "articleTitle": "Robotics",
+      "relevantPathsAI": [
+        "C.4.b",
+        "B.5"
+      ],
+      "rationaleAI": "Robotics addresses the automation dimension of C.4.b (automation and the electronic digital computer), covering robots' displacement of workers and social implications that connect to technology and social institutions (B.5)."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "C.2.a"
+      ],
+      "rationaleAI": "The Islamic Golden Age (8th–13th centuries) covers medieval technological and engineering innovations including advances in agriculture, commerce, and applied sciences that connect to C.2.a (medieval advances: 500–1500 AD)."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Science addresses the definitional distinction between technology (application) and science (knowledge), directly relevant to A (general conceptions of technology), and its survey of science policy and social context connects to technology's relationships with education (B.3) and social institutions (B.5)."
+    },
+    {
+      "articleTitle": "Architecture",
+      "relevantPathsAI": [
+        "B.4",
+        "C.1.c",
+        "C.2"
+      ],
+      "rationaleAI": "Architecture bridges technology and art (B.4), and its historical coverage of constructional works maps to C.1.c (architectural and constructional works of Greece and Rome) and C.2 (medieval construction of canals, bridges, and buildings)."
+    },
+    {
+      "articleTitle": "Education",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Education directly covers the relationship between technology and education (B.3), including the impact of the printing press on universal schooling, modern educational technology, and how technological change has reshaped teaching and learning institutions."
+    },
+    {
+      "articleTitle": "Art",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "The Art article's discussion of how technology (photography, digital media, film) has transformed art forms and aesthetic categories directly addresses the technology-art relationship of B.4, including the contested boundary between fine arts and applied technology."
+    },
+    {
+      "articleTitle": "Engineering",
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
+      "rationaleAI": "Engineering is the implementation discipline of technology (A), and its historical sweep from ancient simple machines through industrial and contemporary specializations maps across the full history of technology in C, particularly the constructional achievements in C.1.c and industrial advances in C.3."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "The early modern period (c. 1500–1800) directly covers C.2.b (emergence of Western technology 1500–1750: early scientific instruments, birth of steam power, agricultural and constructional techniques) and the Scientific Revolution's technological dimensions."
+    },
+    {
+      "articleTitle": "Car",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.4.b"
+      ],
+      "rationaleAI": "The automobile, with its internal combustion engine and mass production, represents the transportation industry development in C.3.b and continues into 20th-century advances in transportation (C.4.b), with electric vehicles representing a current technological transition."
+    },
+    {
+      "articleTitle": "Bronze Age",
+      "relevantPathsAI": [
+        "C.1.b"
+      ],
+      "rationaleAI": "The Bronze Age covers the period of ancient urban civilizations in C.1.b (c. 3000–500 BC), including the metallurgical advances that enabled urban manufacturing and trade networks, and the earliest writing systems accompanying technological development."
+    },
+    {
+      "articleTitle": "Post-classical history",
+      "relevantPathsAI": [
+        "C.2.a"
+      ],
+      "rationaleAI": "Post-classical history (c. 500–1450/1500 CE) maps to C.2.a (medieval advances AD 500–1500), covering the period of medieval technological development including gunpowder, printing, and the harnessing of wind and waterpower."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

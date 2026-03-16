@@ -1,388 +1,225 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "513",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "The arts are a major cultural institution shaping human societies as discussed in this section.",
-      "relevantPathsAI": [
-        "A.5",
-        "B.1",
-        "C.1.c",
-        "D.1",
-        "D.4",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Society",
-      "rationaleAI": "Major cultural components and institutions are the building blocks of human society.",
+      "articleTitle": "Marriage",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.5",
-        "A.6",
-        "C",
-        "C.1.c"
-      ]
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Core article for section 513.A: addresses mate selection criteria, marriage forms, kinship rights and obligations, post-marital residence patterns (linking to A.3), divorce, bridewealth, and dowry across cultures, directly covering A.1 (general kinship), A.2 (mate selection and marriage customs), and A.3 (rules of residence)."
     },
     {
-      "articleTitle": "Music",
-      "rationaleAI": "Music is a major cultural institution present in all human societies, serving ritual, social, and artistic functions.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "C.1.c",
-        "D",
-        "D.1",
-        "D.4"
-      ]
-    },
-    {
-      "articleTitle": "Performing arts",
-      "rationaleAI": "Performing arts are major cultural institutions found in all human societies from ritual to entertainment.",
-      "relevantPathsAI": [
-        "D.4"
-      ]
-    },
-    {
-      "articleTitle": "Clothing",
-      "rationaleAI": "Clothing is a major cultural institution reflecting social identity, status, and aesthetic values across human societies.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "C.1.c",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Entertainment",
-      "rationaleAI": "Entertainment is a major cultural institution encompassing the leisure activities and amusements found across human societies.",
-      "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "C.1.c",
-        "D.4",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Game",
-      "rationaleAI": "Games are major cultural institutions found in all human societies, reflecting values, social rules, and competitive traditions.",
-      "relevantPathsAI": [
-        "A.5",
-        "B",
-        "B.1",
-        "C.1.c",
-        "D",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Food",
-      "rationaleAI": "Food traditions including cuisine, dietary customs, and food rituals are major cultural institutions across societies.",
-      "relevantPathsAI": [
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Religion",
-      "rationaleAI": "Religion is one of the most significant cultural institutions shaping values, rituals, and social organization across human societies.",
+      "articleTitle": "Family",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Culture",
-      "rationaleAI": "Major cultural components including art, religion, law, and customs are the institutional building blocks of culture.",
-      "relevantPathsAI": [
-        "A.6",
-        "B",
-        "C.1.c"
-      ]
+        "A.5"
+      ],
+      "rationaleAI": "Covers kinship systems including patrilineal, matrilineal, and bilateral descent (A.4), family as the centre of economic and property transmission (A.5), structural family types across cultures (A.1), and family as an evolving institution (A.6)."
     },
     {
       "articleTitle": "Folklore",
-      "rationaleAI": "Folklore including myths, legends, and customs is a major cultural institution transmitting shared values and identity across generations.",
       "relevantPathsAI": [
-        "A.2",
-        "A.5",
-        "B.1",
-        "C.1.c",
-        "D.6"
-      ]
+        "D.2"
+      ],
+      "rationaleAI": "Directly covers D.2 (religious belief and folklore) with its treatment of oral traditions, folk beliefs, customary practices, rites of passage, and the informal cross-generational transmission of expressive culture within communities."
     },
     {
-      "articleTitle": "Fashion",
-      "rationaleAI": "Fashion is a major cultural institution reflecting social values and identity.",
+      "articleTitle": "The arts",
       "relevantPathsAI": [
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Folk music",
-      "rationaleAI": "Folk music is a major cultural institution reflecting community identity.",
-      "relevantPathsAI": [
-        "A.4",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Dance",
-      "rationaleAI": "Dance is a major cultural institution found across all human societies.",
-      "relevantPathsAI": [
-        "A.6",
-        "B",
-        "C.1.c",
-        "D.1",
         "D.4"
-      ]
+      ],
+      "rationaleAI": "Umbrella article for D.4 (artistic expression: literature, visual arts, performing arts, crafts), covering the full range of artistic forms across cultures and their roles in cultural identity formation and social history."
     },
     {
-      "articleTitle": "Jewellery",
-      "rationaleAI": "Jewellery serves as cultural adornment reflecting social status and identity.",
+      "articleTitle": "Social class",
       "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "C",
-        "C.1.c"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Directly addresses B.2 (organization by status: class systems) through Marxist, Weberian, and Bourdieusian analysis of hierarchical stratification, covering how class shapes life outcomes across education, health, and employment."
     },
     {
-      "articleTitle": "Marriage",
-      "rationaleAI": "Marriage is a major cultural institution across human societies.",
+      "articleTitle": "Game",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C",
-        "C.1.c"
-      ]
+        "D.6"
+      ],
+      "rationaleAI": "Covers games as a cultural universal present in all human societies (D.6, recreation, sports and games), including board games, card games, video games, and their anthropological and psychological dimensions."
     },
     {
-      "articleTitle": "Human sexuality",
-      "rationaleAI": "Sexuality is regulated by major cultural institutions and norms.",
+      "articleTitle": "Work (human activity)",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "A.5",
-        "B.1",
+        "C.1.a"
+      ],
+      "rationaleAI": "Addresses intentional productive activity as a primary factor of production, covering division of labor and role differentiation across subsistence and paid-employment contexts, directly relevant to C.1.a (production and division of labour in primitive and non-urban economies)."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Oral tradition as folk knowledge transmitted across generations maps squarely onto D.2 (folklore), covering folktales, epic poetry, religious canon, and the function of oral specialists as custodians of collective cultural memory."
+    },
+    {
+      "articleTitle": "Economy",
+      "relevantPathsAI": [
         "C",
         "C.1",
-        "C.1.c",
         "C.2"
-      ]
+      ],
+      "rationaleAI": "Provides the overarching framework for economic systems (C), covering production, distribution, trade, and consumption within both primitive/non-urban (C.1) and developed national (C.2) economic contexts."
     },
     {
-      "articleTitle": "Sexual intercourse",
-      "rationaleAI": "Sexual behavior is regulated by cultural institutions and social norms.",
+      "articleTitle": "Hunting",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "C.1.c"
-      ]
+        "C.1.a"
+      ],
+      "rationaleAI": "As the original form of food-procurement labor predating agriculture, hunting is directly relevant to C.1.a (production and role differentiation in primitive societies), covering its prehistoric origins and its continued cultural role alongside forestry and agriculture."
     },
     {
-      "articleTitle": "Gender",
-      "rationaleAI": "Gender roles are a major component of cultural institutions.",
+      "articleTitle": "Discrimination",
       "relevantPathsAI": [
-        "A.1",
-        "A.5",
-        "A.6",
-        "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.1.c",
-        "C.2"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Covers unjustified distinctions based on group membership including race, class, caste, and religion, directly relevant to B.2 (organization by status: class, caste systems, slavery) and the structural mechanisms by which status hierarchies deny equal rights."
     },
     {
-      "articleTitle": "Cooking",
-      "rationaleAI": "Cooking practices are a major cultural institution across societies.",
+      "articleTitle": "Music",
       "relevantPathsAI": [
-        "A.1",
-        "A.5",
-        "C",
-        "C.1.c"
-      ]
+        "D.4"
+      ],
+      "rationaleAI": "As a recognized cultural universal present in all human societies, music is a primary form of artistic expression (D.4), with roles in religious ceremony, social cohesion, and commercial industry across diverse cultural contexts."
     },
     {
-      "articleTitle": "Alcoholic beverage",
-      "rationaleAI": "Alcohol consumption is regulated by cultural institutions across societies.",
+      "articleTitle": "Law",
       "relevantPathsAI": [
-        "A.2",
-        "A.5",
-        "B",
-        "B.1",
-        "C.1.c",
-        "D",
-        "D.6"
-      ]
+        "D.3"
+      ],
+      "rationaleAI": "Directly covers D.3 (legal systems as an element common to all cultures), including the origins of law, major legal systems (civil, common, religious), and law's role in regulating conduct and resolving disputes across societies."
     },
     {
-      "articleTitle": "Board game",
-      "rationaleAI": "Board games are cultural artifacts reflecting strategic thinking across societies.",
+      "articleTitle": "Slavery",
       "relevantPathsAI": [
-        "C",
-        "C.1.c",
-        "D.6"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Slavery is explicitly named in the outline under B.2 (systems characterized by slavery or serfdom); this article covers chattel slavery, bonded labour, and forced labour across historical and contemporary contexts including the Atlantic slave trade and modern trafficking."
     },
     {
-      "articleTitle": "Card game",
-      "rationaleAI": "Card games are widespread cultural entertainment activities.",
+      "articleTitle": "Indigenous peoples",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "C.1.c",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Gambling",
-      "rationaleAI": "Gambling is a cultural practice regulated by social institutions.",
-      "relevantPathsAI": [
-        "A.5",
-        "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.2",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Video game",
-      "rationaleAI": "Video games are a major cultural institution in modern entertainment.",
-      "relevantPathsAI": [
-        "A.5",
-        "C.1.c",
-        "D.4",
-        "D.6"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Indigenous peoples as culturally distinctive ethnic groups with ancestral territorial relationships represent key examples of the varieties of groups and associations within societies (B.1), particularly covering non-state, non-urban social formations."
     },
     {
       "articleTitle": "Sport",
-      "rationaleAI": "Sport is a major cultural institution found across all human societies.",
       "relevantPathsAI": [
-        "A.5",
-        "A.6",
-        "B",
-        "C.1.c",
-        "D.1",
         "D.6"
-      ]
+      ],
+      "rationaleAI": "Directly covers D.6 (recreation, sports and games) as an organized, rule-governed physical activity constituting a cultural universal across all human societies, including its intersections with education, gender, and political governance."
     },
     {
       "articleTitle": "Association football",
-      "rationaleAI": "Association football is the world's most popular sport and cultural institution.",
       "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "A.5",
-        "B.1",
-        "C.1.c",
-        "D.1",
         "D.6"
-      ]
+      ],
+      "rationaleAI": "As the world's most widely practiced team sport (250 million players across 200+ countries), association football exemplifies D.6 (recreation, sports and games) as a globally institutionalized form of cultural recreation."
     },
     {
       "articleTitle": "Sport of athletics",
-      "rationaleAI": "Athletics encompasses fundamental competitive sporting activities.",
       "relevantPathsAI": [
-        "A",
-        "C.1.c",
         "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Toy",
-      "rationaleAI": "Toys are cultural artifacts designed for play across societies.",
-      "relevantPathsAI": [
-        "A.5",
-        "C",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Martial arts",
-      "rationaleAI": "Martial arts are cultural institutions combining physical discipline and tradition.",
-      "relevantPathsAI": [
-        "C.1.c",
-        "D.4",
-        "D.6"
-      ]
-    },
-    {
-      "articleTitle": "Ritual",
-      "rationaleAI": "Rituals are major cultural institutions across human societies.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4",
-        "A.5",
-        "A.6",
-        "B",
-        "C.1.c",
-        "D.4"
-      ]
+      ],
+      "rationaleAI": "Track and field athletics as formalized competitive sport with roots in the ancient Olympics represents D.6 (recreation, sports and games), covering organized competitive physical culture from antiquity to the modern Olympics."
     },
     {
       "articleTitle": "Festival",
-      "rationaleAI": "Festivals are major cultural institutions across human societies.",
       "relevantPathsAI": [
-        "A.5",
-        "A.6",
-        "B",
-        "C",
-        "C.1.c",
-        "D.4"
-      ]
+        "D.2",
+        "D.6"
+      ],
+      "rationaleAI": "Festivals function as both folk cultural practice (D.2, folklore) and communal recreation (D.6), rooted in agricultural, religious, and civic identity and serving to transmit cultural values between generations."
     },
     {
-      "articleTitle": "Popular culture",
-      "rationaleAI": "Popular culture reflects the major cultural institutions of modern societies.",
-      "relevantPathsAI": [
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Personal name",
-      "rationaleAI": "Naming conventions are cultural institutions across societies.",
+      "articleTitle": "Property",
       "relevantPathsAI": [
         "A.5",
-        "B",
-        "B.1",
         "C.1.c"
-      ]
+      ],
+      "rationaleAI": "Covers property rights as a mechanism for controlling resources, inheritance, and succession (A.5), and directly addresses C.1.c (property and property rights in primitive economic systems), drawing on Locke, Hume, Marx, and Proudhon."
+    },
+    {
+      "articleTitle": "Religion",
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Religion as a social-cultural system of beliefs, practices, and institutions is the primary subject of D.2 (religious belief), covering approximately 10,000 distinct traditions and their institutional dimensions across cultures globally."
+    },
+    {
+      "articleTitle": "Language",
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Language as the primary human medium for conveying meaning directly covers D.5 (linguistic systems), addressing linguistic structure, acquisition, sociolinguistics, and the relationship between language and cultural identity."
+    },
+    {
+      "articleTitle": "Economics",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "The discipline of economics provides the analytical framework for both C.1 (economic systems of primitive peoples, including production and exchange) and C.2 (economic systems of developed nations), encompassing microeconomics, macroeconomics, and the full history of economic thought."
+    },
+    {
+      "articleTitle": "Ethnicity",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Ethnicity as a form of social grouping bound by shared language, culture, ancestry, and history is directly relevant to B.1 (the varieties of groups and other associations within societies), covering ethnic group formation, boundaries, and inter-ethnic relations."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Marx's analysis of class struggle (B.2), primitive accumulation, and the critique of capitalism (C.2) are central to the social structures and economic systems covered in section 513; his labor theory of value also addresses C.1.a (production and division of labour)."
+    },
+    {
+      "articleTitle": "Socialism",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Socialism as a political-economic philosophy advocating social ownership of means of production directly addresses C.2 (economic systems of developed nations), covering planned, self-managed, and market-socialist models and the debate between reform and revolution."
+    },
+    {
+      "articleTitle": "Child",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The social and legal construction of childhood and its associated processes of development, education, and socialization are relevant to D.1 (education and socialization: formal and informal enculturation), covering how cultural values are transmitted to the next generation."
+    },
+    {
+      "articleTitle": "Confucianism",
+      "relevantPathsAI": [
+        "A.1",
+        "D.2"
+      ],
+      "rationaleAI": "Confucianism's Five Relationships and emphasis on filial piety, hierarchical kinship bonds, and ritual propriety make it relevant to A.1 (general aspects of kinship) and D.2 (religious belief and normative cultural systems) within East Asian cultural contexts."
+    },
+    {
+      "articleTitle": "John Locke",
+      "relevantPathsAI": [
+        "A.5",
+        "C.1.c"
+      ],
+      "rationaleAI": "Locke's labor theory of property and natural rights framework directly engages A.5 (control of resources, inheritance, and property as a family/kinship function) and C.1.c (property and property rights), foundational to Western legal and economic thinking."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

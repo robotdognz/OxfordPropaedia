@@ -1,125 +1,135 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "932",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Later imperial Chinese history represents a significant chapter in human civilization.",
+      "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
         "A.1.a",
-        "A.1.c",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.3",
-        "B.2",
-        "B.2.b",
-        "C.1.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Asia",
-      "rationaleAI": "Later imperial Chinese civilization from the Song through Qing dynasties represents a major chapter in Asian history and cultural achievement.",
-      "relevantPathsAI": [
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Genghis Khan",
-      "rationaleAI": "The Mongol conquest of China under Genghis Khan and his successors reshaped Chinese civilization and governance.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
         "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.e",
-        "A.1.i"
-      ]
+        "A.1.c"
+      ],
+      "rationaleAI": "Covers the An Lushan rebellion (755\u2013763) and its aftermath, provincial separatism, Tang cultural life including Buddhist influences and visual arts, and social-economic developments \u2014 mapping precisely to A.1.a, A.1.b, and A.1.c of the late Tang period."
     },
     {
-      "articleTitle": "Shen Kuo",
-      "rationaleAI": "Shen Kuo served the Song dynasty, contributing to the scientific and technological achievements of medieval China.",
+      "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.1.i.ii",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.3",
         "B.1.b",
-        "B.2",
-        "C.1.i.ii",
-        "C.1.c",
-        "C.2.i.iii"
-      ]
+        "C.1.b"
+      ],
+      "rationaleAI": "Under Yuan (Mongol) rule the Silk Road expanded greatly as Mongols promoted trade; under Ming, foreign economic relations included maritime trade \u2014 relevant to B.1.b (expansion of trade under Mongols) and C.1.b (Ming foreign relations and economic policy)."
     },
     {
       "articleTitle": "Mongol Empire",
-      "rationaleAI": "Mongol conquest established the Yuan dynasty in China, profoundly altering Chinese civilization.",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.2",
+        "B.2.a",
+        "B.2.b"
+      ],
+      "rationaleAI": "The Yuan dynasty section of section 932 is entirely about the Mongol Empire's China chapter; the article covers Kublai Khan's conquest of the Song, the transfer of the capital to Ta-tu (Peking), Mongol administration, religious toleration, and Yuan China's contacts with the West."
+    },
+    {
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.e",
-        "A.1.i"
-      ]
+        "B"
+      ],
+      "rationaleAI": "Covers Tang and Song dynasty China as central examples of post-classical civilization alongside the Mongol Empire's role in connecting Eurasia, directly relevant to the A (Tang/Song) and B (Yuan) sections of the outline."
     },
     {
       "articleTitle": "China",
-      "rationaleAI": "Imperial China's later history is the focus of this section.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.e",
-        "A.1.i"
-      ]
+        "B",
+        "C"
+      ],
+      "rationaleAI": "The China overview article spans Tang, Song, Yuan, Ming, and Qing dynastic history with sufficient detail to provide broad coverage of all three major sections of the 932 outline."
+    },
+    {
+      "articleTitle": "Genghis Khan",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1"
+      ],
+      "rationaleAI": "Genghis Khan's conquest of the Jin (Chin) dynasty in northern China (1211\u201334) is the foundational event of B.1.a, and his military organization and restructuring of Mongol society are essential context for understanding the Mongol conquest of China."
+    },
+    {
+      "articleTitle": "Confucius",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The Sung period saw the resurgence of Neo-Confucianism (explicitly named at A.3); Confucius's article explains the foundational philosophy that Neo-Confucian thinkers were systematizing, providing necessary intellectual context."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "The Islamic Golden Age overlaps chronologically with Yuan China's contacts with the West, and the Mongol connections between the Islamic world and Yuan China \u2014 including the arrival of Catholic missionaries and commercial contacts \u2014 are covered in B.2.b."
     },
     {
       "articleTitle": "Beijing",
-      "rationaleAI": "Beijing served as China's imperial capital during later dynasties.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.e",
-        "A.1.i"
-      ]
+        "B.1.b",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Beijing (Ta-tu/Peking) was the Mongol capital under Kublai Khan (B.1.b) and remained the imperial capital through Ming (C.1) and Qing (C.2) dynasties, making the article's historical material on Beijing's role directly relevant."
     },
     {
-      "articleTitle": "Tea",
-      "rationaleAI": "Tea culture was central to Chinese civilization and East Asian trade.",
+      "articleTitle": "History of Asia",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.i",
-        "A.2",
-        "A.3",
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Covers Ming, Qing, Joseon, Mongol Empire, and Silk Road trade within a single Asian history narrative, providing broad background context spanning all three major dynastic sections of the 932 outline."
+    },
+    {
+      "articleTitle": "Black Death",
+      "relevantPathsAI": [
         "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "The Black Death originated in Central Asia and spread along Mongol trade networks during the Yuan dynasty period \u2014 directly relevant to the Mongol Empire's role in B.1 (Mongol conquest and administration) and B.2 (decline of Mongol rule)."
+    },
+    {
+      "articleTitle": "East Asia",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Covers Chinese dynastic civilization from Tang through Qing as the dominant regional cultural tradition, along with tributary relations with Korea and Japan, providing broad overview context for the full chronological scope of section 932."
+    },
+    {
+      "articleTitle": "Trade",
+      "relevantPathsAI": [
+        "A.1.c",
         "B.1.b",
-        "B.2.a",
-        "B.2.b"
-      ]
+        "C.1.b",
+        "C.2.b"
+      ],
+      "rationaleAI": "Expansion of commerce is explicitly referenced at A.1.c (Tang), B.1.b (Mongol expansion of trade), C.1.b (Ming foreign economic policy), and C.2.b (Ch'ing expansion of industry and commerce)."
+    },
+    {
+      "articleTitle": "History of agriculture",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "The article covers the introduction of new crops and spread of rice cultivation globally; C.2.i specifically addresses advances in agriculture through increased rice cultivation and introduction of new crops during mid-Ch'ing."
+    },
+    {
+      "articleTitle": "Agriculture",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "The general agriculture article covers crop systems and agricultural development including in China, relevant to C.2.i's focus on agricultural advances and new crop introductions during the mid-Ch'ing period."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

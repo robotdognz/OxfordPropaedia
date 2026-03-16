@@ -242,13 +242,13 @@
               "level": "a",
               "levelType": "lowercase",
               "text": "Solar radiation",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Variability of incident radiation; the solar constant",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Variability of incident radiation; the solar constant",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

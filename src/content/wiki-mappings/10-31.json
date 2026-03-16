@@ -1,350 +1,329 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "10/31",
   "mappings": [
     {
-      "articleTitle": "Philosophy",
-      "rationaleAI": "The history and philosophy of science is a major branch of philosophical inquiry.",
+      "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A.4.i.ii",
-        "B.1"
-      ]
-    },
-    {
-      "articleTitle": "Science",
-      "rationaleAI": "The history and philosophy of science directly examines the scientific enterprise itself.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Knowledge",
-      "rationaleAI": "The philosophy of science examines how scientific knowledge is generated, validated, and distinguished from belief.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4"
-      ]
-    },
-    {
-      "articleTitle": "Universe",
-      "rationaleAI": "Cosmology raises fundamental questions about the nature of physical law, origins, and scientific explanation that connect to the philosophy of science.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.i",
         "A.5",
-        "A.5.d"
-      ]
-    },
-    {
-      "articleTitle": "Evolution",
-      "rationaleAI": "Evolutionary theory exemplifies major themes in the history and philosophy of science, from Darwin's methodology to debates about scientific explanation.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.b",
-        "A.4.i",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Leonardo da Vinci",
-      "rationaleAI": "Leonardo's empirical investigations in anatomy, optics, and engineering contributed to the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4"
-      ]
-    },
-    {
-      "articleTitle": "Aristotle",
-      "rationaleAI": "Aristotle's empirical approach and systematic classification laid groundwork for the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Shen Kuo",
-      "rationaleAI": "Shen Kuo's Dream Pool Essays documented pioneering scientific observations in astronomy, geology, and magnetism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4.i"
-      ]
-    },
-    {
-      "articleTitle": "Nicolaus Copernicus",
-      "rationaleAI": "Copernicus launched the Scientific Revolution, a watershed in the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.3",
-        "A.4",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.b"
-      ]
-    },
-    {
-      "articleTitle": "Galileo Galilei",
-      "rationaleAI": "Galileo's telescopic observations and experimental methods established the foundations of modern empirical science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Isaac Newton",
-      "rationaleAI": "Newton's Principia Mathematica is a landmark in the history and philosophy of science, unifying terrestrial and celestial physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4"
-      ]
+        "A.5.b",
+        "A.5.c",
+        "B.2.c"
+      ],
+      "rationaleAI": "The Enlightenment covers the intellectual origins and spirit relevant to science in the age of modern revolutions (A.5.b), institutional organization of science under the French Revolution (A.5.c), and the Empiricist/Rationalist/Kantian epistemological debates (B.2.c)."
     },
     {
       "articleTitle": "History of science",
-      "rationaleAI": "The history of science is the direct subject of this section on the history and philosophy of science.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Islamic Golden Age",
-      "rationaleAI": "Islamic scholars preserved and advanced Greek, Persian, and Indian scientific knowledge, shaping the history of science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Early modern period",
-      "rationaleAI": "The early modern period launched the Scientific Revolution, transforming the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Scientific Revolution",
-      "rationaleAI": "The Scientific Revolution established the empirical method and transformed the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
         "A.3",
-        "A.4"
-      ]
-    },
-    {
-      "articleTitle": "University",
-      "rationaleAI": "Universities are key institutions in the history and philosophy of science.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.c",
         "A.4",
-        "A.4.i",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.i"
-      ]
-    },
-    {
-      "articleTitle": "Scientific method",
-      "rationaleAI": "The scientific method is the epistemological foundation of science treated here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4"
-      ]
-    },
-    {
-      "articleTitle": "Measurement",
-      "rationaleAI": "Measurement is a foundational practice in the philosophy and methodology of science.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.i.ii",
-        "A.6",
-        "A.7",
-        "A.8",
-        "B.2.a",
-        "B.2.b",
-        "B.2.d",
-        "B.2.e",
-        "B.3.a"
-      ]
-    },
-    {
-      "articleTitle": "International System of Units",
-      "rationaleAI": "Standardized units of measurement are essential to the practice of science.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.i",
-        "A.5.d",
+        "A.5",
         "A.6",
         "A.7",
         "A.8"
-      ]
+      ],
+      "rationaleAI": "History of science directly maps to the entire section A across all periods: ancient/medieval (A.2), other civilizations including Islamic science (A.3 \u2014 priority), early modern (A.4), industrial era (A.5), 19th century (A.6), 20th century (A.7), and contemporary issues (A.8)."
     },
     {
-      "articleTitle": "Nature",
-      "rationaleAI": "Nature as the subject of scientific inquiry is foundational to the history and philosophy of science.",
+      "articleTitle": "Science",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.4.i.ii",
-        "A.4.c"
-      ]
+        "B",
+        "B.1",
+        "B.3",
+        "B.6"
+      ],
+      "rationaleAI": "The overarching article on science covers its history (A broadly), the nature and scope of science and philosophy of science (B.1), elements of the scientific enterprise (B.3), and the social relevance of science (B.6)."
     },
     {
-      "articleTitle": "Research",
-      "rationaleAI": "Research is the systematic pursuit of knowledge central to the practice of science.",
+      "articleTitle": "Renaissance",
       "relevantPathsAI": [
-        "A.1",
+        "A.4",
+        "A.4.a"
+      ],
+      "rationaleAI": "The Renaissance directly corresponds to European science in the early modern period (A.4.a), covering the state of science in early 15th-century Europe (A.4.a.i), influences of technology and exploration (A.4.a.ii), and coexistence of new discoveries with old philosophy (A.4.a.iii)."
+    },
+    {
+      "articleTitle": "Scientific Revolution",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.b"
+      ],
+      "rationaleAI": "The Scientific Revolution directly matches A.4.b (revolution in natural philosophy), covering the radical reformulation of natural knowledge by Bacon, Descartes, and Galileo (A.4.b.i) and the establishment of scientific societies and progress (A.4.b.ii)."
+    },
+    {
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The Islamic Golden Age directly addresses the priority path A.3 (science in other civilizations: Islamic science), covering mathematics, astronomy, physics, chemistry, and medicine across the Abbasid caliphate era."
+    },
+    {
+      "articleTitle": "History of mathematics",
+      "relevantPathsAI": [
         "A.2",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.4.i.ii",
-        "A.4.i.iii",
-        "A.4.i",
-        "A.4.i.ii",
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Traces mathematical-scientific development across Greek civilization (A.2.a), Islamic culture (A.3 \u2014 priority path), early modern Europe (A.4), and 19th-century rigor (A.6), providing cross-period and cross-civilizational coverage."
+    },
+    {
+      "articleTitle": "Galileo Galilei",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.3.b",
+        "B.4.a"
+      ],
+      "rationaleAI": "Galileo is explicitly named in A.4.b.i as a central figure in the revolution in natural philosophy; his experimental method also exemplifies empirical procedures of science (B.3.b) and the nature of scientific discovery (B.4.a)."
+    },
+    {
+      "articleTitle": "Aristotle",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2.a"
+      ],
+      "rationaleAI": "Aristotle represents the Aristotelian view of nature contrasted with Platonism (A.2.a.ii) and is central to the classical and medieval development of the philosophy of science (B.2.a)."
+    },
+    {
+      "articleTitle": "Isaac Newton",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.2.c",
+        "B.2.d"
+      ],
+      "rationaleAI": "Newton's Principia was the culminating result of the new natural philosophy (A.4.b.ii); his synthesis defined the framework debated in Enlightenment epistemology (B.2.c) and assumed uniquely rational through the early 19th century (B.2.d)."
+    },
+    {
+      "articleTitle": "Antoine Lavoisier",
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.5.c",
+        "A.6"
+      ],
+      "rationaleAI": "Lavoisier's chemical revolution exemplifies science during the Industrial Revolution (A.5.a), occurred in the French Revolutionary institutional context (A.5.c), and marks 18th-century progress in chemistry (A.6)."
+    },
+    {
+      "articleTitle": "Michael Faraday",
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.6"
+      ],
+      "rationaleAI": "Faraday's experimental discoveries in electromagnetism belong to science in the Industrial Revolution (A.5.a) and 19th-century progress in physics (A.6), demonstrating the characteristic experimental style of that era."
+    },
+    {
+      "articleTitle": "Kurt G\u00f6del",
+      "relevantPathsAI": [
+        "A.7",
+        "B.2.e",
+        "B.4.a"
+      ],
+      "rationaleAI": "G\u00f6del's incompleteness theorems are a key development of early 20th-century science (A.7), a response to the 20th-century philosophical debate including logical positivism (B.2.e), and set permanent limits on the scope of scientific formalism (B.4.a)."
+    },
+    {
+      "articleTitle": "History of medicine",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Medicine's history spans all major periods \u2014 Greek humoral theory (A.2.a), Islamic preservation (A.3 \u2014 priority path), early modern anatomy (A.4), 19th-century germ theory (A.6), and 20th-century developments (A.7) \u2014 providing substantive cross-period coverage."
+    },
+    {
+      "articleTitle": "Ren\u00e9 Descartes",
+      "relevantPathsAI": [
+        "A.4.b",
+        "B.2.b"
+      ],
+      "rationaleAI": "Descartes is explicitly named in A.4.b.i as a founder of the revolution in natural philosophy; his deductive approach also defines one side of the Baconian/Cartesian methodological debate in 17th-century philosophy of science (B.2.b)."
+    },
+    {
+      "articleTitle": "Scientific method",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.3.c",
+        "B.4",
+        "B.4.a",
+        "B.4.b"
+      ],
+      "rationaleAI": "The scientific method directly covers the philosophy of science's nature and scope (B.1), elements of the scientific enterprise (B.3 \u2014 empirical, formal, conceptual), and movements of thought including discovery (B.4.a) and justification (B.4.b)."
+    },
+    {
+      "articleTitle": "Nicolaus Copernicus",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Copernicus's heliocentric model initiated the revolution in natural philosophy (A.4.b) and exemplifies the coexistence of new discoveries with old philosophical views in the Renaissance period (A.4.a.iii)."
+    },
+    {
+      "articleTitle": "Avicenna",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Avicenna is a central figure of Islamic Golden Age science \u2014 covering medicine, natural science, mathematics, and philosophy \u2014 directly addressing the priority path A.3 (science in other civilizations: Islamic science)."
+    },
+    {
+      "articleTitle": "Reason",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.4.a",
+        "B.5.a"
+      ],
+      "rationaleAI": "Reason as a philosophical concept underlies the 17th-century Baconian vs. Cartesian methodological debate (B.2.b), scientific discovery processes (B.4.a), and the philosophical status of scientific concepts and propositions (B.5.a)."
+    },
+    {
+      "articleTitle": "Epistemology",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.5",
+        "B.5.a",
+        "B.6"
+      ],
+      "rationaleAI": "Epistemology directly addresses the nature and scope of the philosophy of science (B.1), the philosophical status of scientific propositions (B.5.a), and connects historical philosophical approaches (B.2) to scientific knowledge and its limits."
+    },
+    {
+      "articleTitle": "Western philosophy",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
+        "B.2.d",
+        "B.2.e"
+      ],
+      "rationaleAI": "Western philosophy traces the intellectual traditions that directly shaped the philosophy of science across all historical sub-periods: classical (B.2.a), 17th century (B.2.b), 18th century (B.2.c), 19th century (B.2.d), and 20th century (B.2.e)."
+    },
+    {
+      "articleTitle": "History of philosophy",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "History of philosophy covers the intellectual traditions \u2014 from Aristotle through Empiricism, Rationalism, and Kantianism \u2014 that form the historical development of the philosophy of science (B.2 and its sub-paths A through C)."
+    },
+    {
+      "articleTitle": "Ancient Greece",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.a"
+      ],
+      "rationaleAI": "Ancient Greece directly covers pre-Periclean protoscience (A.2.a.i), development of scientific attitudes and Platonic vs. Aristotelian views (A.2.a.ii), and the Hellenistic age with Alexandria as the foremost research centre (A.2.a.iii)."
+    },
+    {
+      "articleTitle": "Age of Discovery",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a"
+      ],
+      "rationaleAI": "The Age of Discovery connects to the influence of exploration and trade demands placed upon science in the Renaissance (A.4.a.ii), driving advances in navigation, cartography, and observational astronomy."
+    },
+    {
+      "articleTitle": "Romanticism",
+      "relevantPathsAI": [
         "A.5.d"
-      ]
+      ],
+      "rationaleAI": "Romanticism corresponds directly to A.5.d (Romantic reaction and science: the proponents of Naturphilosophie) as the cultural and intellectual movement reacting against Enlightenment rationalism and mechanistic science."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Human history provides contextual coverage across all major periods in the history of science (A) \u2014 ancient civilizations, Islamic Golden Age (A.3), early modern period (A.4), and Industrial Revolution (A.5) \u2014 though as secondary context rather than primary focus."
+    },
+    {
+      "articleTitle": "Early modern period",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b",
+        "A.4.c"
+      ],
+      "rationaleAI": "The early modern period directly covers the European Renaissance (A.4.a), the revolution in natural philosophy (A.4.b), and characteristics of European science (A.4.c) as primary historical content."
+    },
+    {
+      "articleTitle": "Alan Turing",
+      "relevantPathsAI": [
+        "A.7",
+        "B.3.c"
+      ],
+      "rationaleAI": "Turing's work on computability is a key development of 20th-century science (A.7) and exemplifies the formal structures and limits of scientific inference \u2014 the decidability problem as a limit on formal analysis (B.3.c)."
+    },
+    {
+      "articleTitle": "Ibn Khaldun",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Ibn Khaldun was an important scholar of the medieval Islamic world whose Muqaddimah introduced systematic empirical social analysis, contributing to the tradition of Islamic intellectual production covered by A.3 (priority path)."
+    },
+    {
+      "articleTitle": "History of technology",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.5",
+        "A.5.a",
+        "A.6"
+      ],
+      "rationaleAI": "History of technology connects to the influence of technology on science in the Renaissance (A.4.a.ii), science during the Industrial Revolution (A.5.a), and 19th-century scientific progress driven by technological change (A.6)."
+    },
+    {
+      "articleTitle": "Sociology",
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Sociology provides the disciplinary basis for understanding the social significance of science and the sociology of knowledge that shapes scientific institutions and practice (B.6)."
     },
     {
       "articleTitle": "Physics",
-      "rationaleAI": "The history and philosophy of science draws heavily on physics as a paradigmatic natural science.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
+        "A.6",
+        "A.7",
+        "B.2.e"
+      ],
+      "rationaleAI": "Physics provides the key case studies for 19th-century scientific progress (A.6), early 20th-century transformation via relativity and quantum mechanics (A.7), and the 20th-century philosophical debate responding to these changes (B.2.e)."
+    },
+    {
+      "articleTitle": "Mathematics",
+      "relevantPathsAI": [
         "A.2.a",
-        "A.2.i.ii",
-        "A.2.i.iii",
-        "A.2.b",
-        "A.2.c",
         "A.3",
-        "A.4"
-      ]
+        "A.4.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "Mathematics as the formal language of science connects to Greek science (A.2.a), Islamic mathematical contributions (A.3 \u2014 priority), the mathematization of nature in the Scientific Revolution (A.4.b.i), and formal structures of scientific inference (B.3.c)."
+    },
+    {
+      "articleTitle": "Leonardo da Vinci",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a"
+      ],
+      "rationaleAI": "Leonardo epitomizes the Renaissance integration of systematic observation with natural philosophy (A.4.a), bridging artistic practice and early scientific methodology under the influence of technology and exploration (A.4.a.ii) while working within the coexistence of old and new ideas (A.4.a.iii)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

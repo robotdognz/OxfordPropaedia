@@ -1,73 +1,94 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "323",
   "mappings": [
     {
-      "articleTitle": "Life",
-      "rationaleAI": "Molecular-level vital processes are the mechanistic basis of life covered in this article.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "C",
-        "C.1",
-        "E.2"
-      ]
-    },
-    {
       "articleTitle": "Cell (biology)",
-      "rationaleAI": "Vital processes at the molecular level, including DNA replication and protein synthesis, occur within the cellular context.",
       "relevantPathsAI": [
         "A",
         "A.1",
         "A.2",
         "A.3",
-        "E.1"
-      ]
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Cell (biology) directly covers the cell membrane, compartmentalization via organelles, and membrane transport including osmosis and active transport, mapping precisely to outline paths A.1–A.5. The article also treats cellular signaling and motility, providing broad context for the entire section."
+    },
+    {
+      "articleTitle": "Skeletal muscle",
+      "relevantPathsAI": [
+        "D",
+        "D.2"
+      ],
+      "rationaleAI": "Skeletal muscle covers striated/voluntary muscle structure and contraction via actin-myosin sarcomere dynamics and fiber-type distinctions, directly addressing path D.2 (striated or skeletal muscle in higher animals) and the broader muscle contraction topic at D."
     },
     {
       "articleTitle": "Molecular biology",
-      "rationaleAI": "Molecular biology investigates vital processes at the molecular level as covered in this section.",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "C",
-        "C.1",
-        "E.1",
-        "E.2"
-      ]
-    },
-    {
-      "articleTitle": "Gene",
-      "rationaleAI": "Gene expression involves vital molecular processes including transcription and translation.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "C.1"
-      ]
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Molecular biology covers the molecular mechanisms of membrane dynamics, ion channel function central to bioelectricity (B), and electrochemical processes underlying nerve impulse propagation (C), placing it across the section's membrane and nerve impulse topics."
     },
     {
       "articleTitle": "Protein",
-      "rationaleAI": "Proteins perform vital processes at the molecular level including catalysis and signaling.",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "C.1"
-      ]
+        "A.4",
+        "A.5",
+        "D"
+      ],
+      "rationaleAI": "Proteins are the structural and functional basis of membrane transport systems (ion channels, carrier proteins for active transport at A.4–A.5) and of contractile machinery (actin, myosin in muscle contraction at D), making this article directly relevant to both topics."
     },
     {
-      "articleTitle": "Catalysis",
-      "rationaleAI": "Enzymatic catalysis drives vital processes at the molecular level in living organisms.",
+      "articleTitle": "Biochemistry",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
+        "E"
+      ],
+      "rationaleAI": "Biochemistry characterizes lipids (membrane structure at A), enzymes, and energy metabolites underpinning membrane function, and covers the chemistry of bioluminescent reactions (E), connecting to both the cell membrane and bioluminescence topics."
+    },
+    {
+      "articleTitle": "Physiology",
+      "relevantPathsAI": [
+        "B",
         "C",
-        "C.1",
-        "E.1",
-        "E.2"
-      ]
+        "D"
+      ],
+      "rationaleAI": "Physiology as a discipline directly encompasses bioelectricity (B), nerve impulse physiology (C), and muscle contraction (D), operating at the cellular and organ levels that bridge molecular mechanism to organismal function."
+    },
+    {
+      "articleTitle": "Blood",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Blood plasma composition and erythrocyte function involve osmotic regulation across cell membranes and solute concentration gradients, providing concrete biological examples for path A.3 (osmosis) and A.4 (movement of solutes through membranes along concentration gradients)."
+    },
+    {
+      "articleTitle": "Heart",
+      "relevantPathsAI": [
+        "B",
+        "D.3"
+      ],
+      "rationaleAI": "The sinoatrial node generates bioelectric pacemaker potentials (path B) and cardiac muscle represents the specific tissue type at path D.3, making this article directly relevant to both bioelectricity and cardiac muscle contraction."
+    },
+    {
+      "articleTitle": "Anatomy",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Anatomy covers neuron microstructure via histology and cytology, mapping to path C.1 on the structure of the neuron; it is the best available candidate among the batch for providing structural content on neurons as the cellular unit of nerve impulse conduction."
+    },
+    {
+      "articleTitle": "Eye",
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "C.4"
+      ],
+      "rationaleAI": "The eye article covers photoreceptor cell transduction converting light into electrochemical signals, directly involving bioelectricity (B) and nerve impulse conduction from sensory cells including synaptic transmission (C and C.4) in a specialized sensory context."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

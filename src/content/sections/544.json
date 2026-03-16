@@ -177,13 +177,13 @@
               "level": "c",
               "levelType": "lowercase",
               "text": "Establishment and maintenance of various branches of the armed forces",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Ground forces",
               "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Ground forces",
+                  "children": []
+                },
                 {
                   "level": "ii",
                   "levelType": "roman",

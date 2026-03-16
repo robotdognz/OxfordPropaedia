@@ -77,13 +77,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Occupational therapy",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Shock therapy",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Shock therapy",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "j",
@@ -538,13 +539,14 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Disorders of other sensory receptors",
-              "children": []
-            },
-            {
-              "level": "i",
-              "levelType": "lowercase",
-              "text": "Disorders of speech",
-              "children": []
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "lowercase",
+                  "text": "Disorders of speech",
+                  "children": []
+                }
+              ]
             }
           ]
         }

@@ -1,214 +1,175 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "923",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Western Christendom in the High and Late Middle Ages is a pivotal era in human history.",
+      "articleTitle": "Holy Roman Empire",
       "relevantPathsAI": [
-        "A.1.i",
         "A.2",
         "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
         "A.2.b",
-        "A.2.i.iii",
-        "A.3.i.iv",
-        "A.3.v",
-        "A.4.a"
-      ]
-    },
-    {
-      "articleTitle": "Post-classical history",
-      "rationaleAI": "Western Christendom in the High and Late Middle Ages represents the European core of post-classical civilization.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
-    },
-    {
-      "articleTitle": "Europe",
-      "rationaleAI": "Western Christendom in the High and Late Middle Ages shaped European identity through universities, cathedrals, and scholasticism.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i"
-      ]
+        "A.4.a",
+        "A.1.g"
+      ],
+      "rationaleAI": "The Holy Roman Empire is the central political institution of sections A.2 and A.4, covering the Investiture Controversy, Hohenstaufen dynasty, decentralized feudal structure, and the empire-papacy power struggle explicitly discussed in A.1.g.i and A.2.a\u2013b."
     },
     {
       "articleTitle": "Joan of Arc",
-      "rationaleAI": "Joan of Arc's military leadership during the Hundred Years' War was a turning point in late medieval Western Christendom.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
+        "A.6",
+        "A.6.v",
+        "A.6.a"
+      ],
+      "rationaleAI": "Joan of Arc lifted the siege of Orl\u00e9ans (1429) and secured the coronation of Charles VII, events explicitly described in A.6.i.iv and A.6.v (recovery and reunification of France, stirring of French national feeling, expulsion of the English)."
     },
     {
-      "articleTitle": "Dante Alighieri",
-      "rationaleAI": "Dante wrote at the transition from medieval to Renaissance Europe, embodying the culture of high medieval Western Christendom.",
+      "articleTitle": "Renaissance",
       "relevantPathsAI": [
-        "A",
+        "A.1.a",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.g"
-      ]
-    },
-    {
-      "articleTitle": "Johannes Gutenberg",
-      "rationaleAI": "Gutenberg's press in 15th-century Germany transformed knowledge dissemination in late medieval Western Christendom.",
-      "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2"
-      ]
+        "A.5",
+        "A.5.a",
+        "A.5.b",
+        "A.5.c"
+      ],
+      "rationaleAI": "The Renaissance originated in Italian city-states in the 14th century, directly addressed in A.1.a (early Renaissance in Italy, Humanism), A.1.i (revival of Greek studies), A.1.i.ii (new concepts in painting, sculpture, architecture), and A.5 (Italy in the late Middle Ages and Renaissance)."
     },
     {
       "articleTitle": "Middle Ages",
-      "rationaleAI": "The High and Later Middle Ages saw the rise of universities, Gothic cathedrals, and Western Christendom's cultural florescence.",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
+        "A.2",
         "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f"
-      ]
+        "A.1.e"
+      ],
+      "rationaleAI": "Provides comprehensive coverage of the entire period and subject matter of section 923 \u2014 feudalism, church-state relations, scholasticism, universities, Black Death, and the emergence of centralized kingdoms \u2014 spanning both the High and Late Middle Ages."
+    },
+    {
+      "articleTitle": "France",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.a",
+        "A.6",
+        "A.6.a",
+        "A.6.v"
+      ],
+      "rationaleAI": "France is the direct subject of A.3 (Kingdom of France under the Capetians 1180\u20131328) and A.6 (France and the Low Countries 1300\u20131500), covering Philip II Augustus, Louis IX, Philip IV, and the Hundred Years' War including Joan of Arc."
+    },
+    {
+      "articleTitle": "Italy",
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.5.b",
+        "A.5.c",
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Italy is the direct subject of A.5 (Italy in the late Middle Ages and Renaissance), covering Florentine republicanism, Venetian commercial empire, the Papal States, Milan, and city-state politics; also relevant to A.2 (HRE, papacy, and Italy) and A.1.i.iii (the city-state as political form)."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.a",
+        "A.4.b",
+        "A.4.c",
+        "A.8",
+        "A.8.a",
+        "A.8.b",
+        "A.8.c"
+      ],
+      "rationaleAI": "Spain is the direct subject of A.4 (Spanish Christian kingdoms 1035\u2013c.1260) covering Castile, Leon, Aragon, and Portugal, and A.8 (Spain and Portugal c.1300\u20131500) including the union of Ferdinand and Isabella, conquest of Granada, and early colonialism."
     },
     {
       "articleTitle": "Black Death",
-      "rationaleAI": "The Black Death devastated 14th-century Western Christendom, killing a third of Europe's population.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.2",
-        "A.2.a"
-      ]
+        "A.2.b",
+        "A.5.a",
+        "A.7"
+      ],
+      "rationaleAI": "The Black Death (1347\u201350) is explicitly cited in A.2.b (economic and social effects of the plague, peasant revolts) and A.5.a (crises of the 14th century including the Black Death, economic decline, urban unrest in Italy); also connects to the social disruption underlying A.7.i.ii (Peasants' Revolt 1381)."
+    },
+    {
+      "articleTitle": "Poland",
+      "relevantPathsAI": [
+        "A.7.a",
+        "A.10.b",
+        "A.10"
+      ],
+      "rationaleAI": "Poland is the direct subject of A.7.a (Poland under Boleslaw II and III, division of the kingdom) and A.10.b\u2013A.10.i (Poland-Lithuania, the Teutonic Order, Mongol invasions of 1241\u201342, and the reestablishment of the Kingdom of Poland under Wladyslaw I)."
+    },
+    {
+      "articleTitle": "Viking Age",
+      "relevantPathsAI": [
+        "A.6",
+        "A.6.a",
+        "A.6.b"
+      ],
+      "rationaleAI": "The Viking Age ends c.1066 and provides direct background for A.6 (Scandinavia c.1050\u20131300), covering the establishment of the kingdoms of Denmark, Norway, and Sweden, the trend toward strong monarchy (A.6.a), and Norse expansion into Iceland and Greenland (A.6.b)."
     },
     {
       "articleTitle": "Crusades",
-      "rationaleAI": "The Crusades were a defining phenomenon of the High Middle Ages in Western Christendom.",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
         "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
+        "A.1.d"
+      ],
+      "rationaleAI": "The Crusades are directly mentioned in A.1.b (commercial effects of the Crusades) and A.1.d (the church in medieval society, growth of papal hegemony, struggle against heretics including the Inquisition); the papally authorized crusading movement exemplifies the temporal-spiritual power relationship central to A.1.g.i."
     },
     {
-      "articleTitle": "United Kingdom",
-      "rationaleAI": "Medieval England is a major focus of Western Christendom in the High Middle Ages.",
+      "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
-        "A",
+        "A.2"
+      ],
+      "rationaleAI": "The Byzantine Empire is explicitly referenced in A.2.i.ii (Norman conquest of southern Italy and Sicily, relations with the Byzantine Empire) and A.2.i.iv (Venetian expansion in the Levant and aid to the Normans in the conquest of Byzantium, 1204)."
+    },
+    {
+      "articleTitle": "Mongol Empire",
+      "relevantPathsAI": [
+        "A.7.c",
+        "A.10"
+      ],
+      "rationaleAI": "The Mongol Empire's invasion of Hungary in 1241 is explicitly listed in A.7.c (Hungary: Mongol invasion 1241, extinction of the Arpad dynasty), and A.10.i covers the Mongol invasions of 1241\u201342 and their effect on Poland-Lithuania."
+    },
+    {
+      "articleTitle": "Leonardo da Vinci",
+      "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i"
-      ]
+        "A.5.c"
+      ],
+      "rationaleAI": "Leonardo da Vinci exemplifies the new concepts and techniques in painting, sculpture, and architecture in A.1.i.ii, and his work under Sforza patronage in Milan and French royal patronage directly connects to A.5.c (Italian states in the 15th century, cultural developments)."
     },
     {
-      "articleTitle": "Christianity",
-      "rationaleAI": "Western Christendom defined the High and Later Middle Ages.",
+      "articleTitle": "Reformation",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f"
-      ]
+        "A.4.b",
+        "A.3"
+      ],
+      "rationaleAI": "The Reformation's direct precursor Jan Hus and the Hussite movement are explicitly covered in A.4.b.i.ii (beginning of the religious reform movement, Jan Hus's execution at the Council of Constance 1415); the section also covers the Avignon papacy and conciliar movement (A.3) that fed into Reformation tensions."
     },
     {
-      "articleTitle": "Catholic Church",
-      "rationaleAI": "The Catholic Church defined Western Christendom in the High Middle Ages.",
+      "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
-        "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii"
-      ]
+        "A.8.c"
+      ],
+      "rationaleAI": "The Spanish Empire's origins are directly covered in A.8.c (creation of a united Spain and expansion of Spanish dominance in the early Age of Discovery), A.8.c.i (union of Aragon and Castile-Leon under Ferdinand and Isabella, conquest of Granada 1492), and A.8.c.i.ii (Spanish explorations and colonial policy in the New World)."
     },
     {
-      "articleTitle": "Latin",
-      "rationaleAI": "Latin was the lingua franca of Western Christendom in the Middle Ages.",
+      "articleTitle": "Islamic Golden Age",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The intellectual revival of the 11th and 12th centuries (A.1.i.ii) was substantially driven by the recovery of Greek texts through Islamic translations; the transmission of Islamic learning into medieval European scholasticism is a documented historical process directly relevant to this path."
+    },
+    {
+      "articleTitle": "Post-classical history",
       "relevantPathsAI": [
         "A",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.i.ii",
-        "A.1.i.iii",
-        "A.1.f",
-        "A.1.i",
-        "A.1.i.ii",
-        "A.1.i.iii"
-      ]
+        "A.1"
+      ],
+      "rationaleAI": "Post-classical history (c.500\u20131450) provides a broad world-historical framing for the section's period, covering feudalism in Europe, spread of Christianity, Crusades, Black Death, and the emergence of centralized kingdoms that constitute the section's subject matter."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

@@ -1,230 +1,203 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "128",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "Waves and wave motion are fundamental phenomena studied across the physical sciences.",
-      "relevantPathsAI": [
-        "C.7.a",
-        "C.7.b"
-      ]
-    },
-    {
-      "articleTitle": "Physics",
-      "rationaleAI": "Wave physics studies the propagation, interference, and diffraction of waves across mechanical and electromagnetic domains.",
-      "relevantPathsAI": [
-        "A",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "B.5",
-        "C.6",
-        "C.7.a",
-        "C.7.b",
-        "D.1",
-        "D.2"
-      ]
-    },
-    {
-      "articleTitle": "James Clerk Maxwell",
-      "rationaleAI": "Maxwell demonstrated that light is an electromagnetic wave, transforming the understanding of waves and wave motion.",
-      "relevantPathsAI": [
-        "A",
-        "A.2.b",
-        "A.3",
-        "A.3.b",
-        "A.6",
-        "A.7",
-        "B.2",
-        "B.5",
-        "C.1",
-        "C.1.a"
-      ]
-    },
-    {
-      "articleTitle": "Electromagnetism",
-      "rationaleAI": "Electromagnetic waves are a key manifestation of electromagnetism covered in wave motion.",
-      "relevantPathsAI": [
-        "A",
-        "B.3.c",
-        "B.4",
-        "C.4",
-        "C.7.a",
-        "C.7.b",
-        "C.10",
-        "E.3",
-        "E.6.a"
-      ]
-    },
-    {
-      "articleTitle": "Photon",
-      "rationaleAI": "The photon is the quantum of electromagnetic radiation and wave motion treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Speed of light",
-      "rationaleAI": "The speed of light is the fundamental velocity of electromagnetic waves treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.6",
-        "A.7",
-        "B",
-        "B.1"
-      ]
-    },
-    {
       "articleTitle": "Wave",
-      "rationaleAI": "Waves and wave motion are the direct subject of this section covering mechanical and electromagnetic waves.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
         "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
-      ]
-    },
-    {
-      "articleTitle": "Electromagnetic radiation",
-      "rationaleAI": "Electromagnetic radiation is a form of wave motion whose properties are treated in this section.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4.b",
-        "A.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Light",
-      "rationaleAI": "Light is the visible portion of the electromagnetic spectrum treated in this section on waves.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.b",
-        "A.4.b",
-        "A.4.c",
-        "A.5"
-      ]
-    },
-    {
-      "articleTitle": "Color",
-      "rationaleAI": "Color arises from the wavelength properties of visible light as part of wave phenomena.",
-      "relevantPathsAI": [
-        "A.3",
-        "A.3.b",
-        "B.2",
-        "C.1.a",
-        "D.1",
-        "D.2.a",
-        "E.1",
-        "E.4",
-        "E.6.a"
-      ]
+        "A.4",
+        "A.5",
+        "A.6",
+        "A.7",
+        "A"
+      ],
+      "rationaleAI": "Wave is the foundational article for Section 128, covering all core properties (frequency, amplitude, wavelength, phase velocity, group velocity), classification by medium and particle motion, and key phenomena including superposition, reflection, refraction, diffraction, interference, and dispersion — directly matching 128.A.1 through A.7. It also addresses mechanical and electromagnetic wave types, connecting to 128.B and 128.E."
     },
     {
       "articleTitle": "Optics",
-      "rationaleAI": "Optics studies the behavior of light as electromagnetic wave motion treated in this section.",
       "relevantPathsAI": [
-        "A.5",
-        "A.6",
-        "B",
+        "C",
+        "D",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Optics covers both the wave theory of light (physical optics: diffraction, interference, polarisation) and the geometry of image formation through optical systems (geometric optics), directly matching 128.C (light waves) and 128.D (focusing and imaging of light waves). It also addresses quantum optics and photon behaviour relevant to 128.C.8."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
         "B.1",
         "B.2",
-        "B.2.c",
-        "B.3.i",
-        "B.4",
-        "B.5",
-        "C"
-      ]
+        "B.3"
+      ],
+      "rationaleAI": "Electromagnetic radiation directly covers the properties and behaviour of EM waves (128.B.1), the full electromagnetic spectrum from radio through gamma rays (128.B.2), and their sources including accelerating charges and radioactive nuclei (128.B.3). Maxwell's equations and quantum electrodynamics contexts align with the theoretical underpinning of Section 128.B."
     },
     {
-      "articleTitle": "Sound",
-      "rationaleAI": "Sound is a mechanical wave whose propagation and properties are treated in this section on wave motion.",
+      "articleTitle": "Light",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.3",
-        "A.3.b",
-        "A.4.b",
-        "B",
-        "B.2.a",
-        "B.2.e",
-        "C"
-      ]
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.4",
+        "C.5",
+        "C.7",
+        "C.8",
+        "C.10"
+      ],
+      "rationaleAI": "Light covers wave-particle duality, wave phenomena (interference, diffraction, polarisation), the speed of light, spectrum, and photon detection — spanning virtually all of 128.C's subtopics from wave theory through quantum optics. It also addresses sources of light (128.C.10) and interaction with matter including refraction and absorption (128.C.7)."
     },
     {
-      "articleTitle": "Radio",
-      "rationaleAI": "Radio operates through electromagnetic wave transmission.",
+      "articleTitle": "Electromagnetism",
       "relevantPathsAI": [
-        "B.2.a",
-        "C.7.a",
-        "C.7.b",
-        "D.1"
-      ]
+        "B.1",
+        "C.6"
+      ],
+      "rationaleAI": "Electromagnetism establishes that Maxwell's equations predict self-sustaining electromagnetic wave propagation, directly underpinning 128.B.1 (properties of EM waves) and 128.C.6 (light wave behaviour based on Maxwell's equations). It covers the unification of electric and magnetic fields that produces the EM wave phenomenon."
     },
     {
-      "articleTitle": "Laser",
-      "rationaleAI": "Lasers produce coherent light as a controlled wave phenomenon.",
+      "articleTitle": "Speed of light",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.4",
-        "A.4.b"
-      ]
+        "C.2",
+        "D.1.a"
+      ],
+      "rationaleAI": "Speed of light directly addresses 128.C.2 (the velocity of light and its measurement), covering Rømer's 1676 measurement through modern interferometry. Its role as the propagation velocity of all EM radiation is also foundational to the geometrical optics law of refraction (128.D.1.a) through the refractive index."
     },
     {
       "articleTitle": "Lens",
-      "rationaleAI": "Lenses manipulate light through refraction as treated in wave and optics phenomena.",
       "relevantPathsAI": [
-        "A.2.c",
-        "A.6",
+        "D.1",
+        "D.1.a",
+        "D.1.b"
+      ],
+      "rationaleAI": "Lens directly covers the geometrical optics of refraction, the lensmaker's equation, the Gauss theory, and lens aberrations — all central to 128.D.1 (geometrical optics) and its subtopics covering law of refraction, Gauss theory, optical system components, and aberrations. It is the primary article for optical image-forming elements in 128.D."
+    },
+    {
+      "articleTitle": "Sound",
+      "relevantPathsAI": [
+        "E.1",
+        "E.3",
+        "E.4",
+        "E.6"
+      ],
+      "rationaleAI": "Sound covers the nature and properties of sound as a mechanical pressure wave (128.E.1), including frequency, amplitude, speed, and propagation medium, as well as sources (128.E.3), reception (128.E.4), and physical aspects of musical sound including pitch, timbre, and loudness (128.E.6). It bridges the physical and psychoacoustic dimensions of 128.E."
+    },
+    {
+      "articleTitle": "Radar",
+      "relevantPathsAI": [
+        "B.2.b",
+        "A.5",
+        "E.5.d"
+      ],
+      "rationaleAI": "Radar uses pulsed microwave radiation and exploits wave reflection to measure distance and velocity, directly relevant to 128.B.2.b (microwaves) and 128.A.5 (behaviour at boundaries: reflection and transmission). Its military detection applications also touch 128.E.5.d (military acoustical detectors) by contrast with sonar."
+    },
+    {
+      "articleTitle": "Photon",
+      "relevantPathsAI": [
+        "C.8",
+        "C.8.a",
+        "C.8.c",
+        "B.4"
+      ],
+      "rationaleAI": "Photon is the quantum of electromagnetic radiation and directly covers 128.C.8 (quantum theory of light), including observed photon phenomena such as the photoelectric effect and Compton scattering (128.C.8.a) and photon detection and counting (128.C.8.c). Its role in stimulated emission also connects to coherent EM wave sources (128.B.4)."
+    },
+    {
+      "articleTitle": "Laser",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "A laser is the primary technological embodiment of 128.B.4 (sources of coherent electromagnetic waves via stimulated emission), covering gain media, optical cavities, and the full range of laser types. Its applications in holography also connect to 128.D.2.b (holography as a two-step imaging process using coherent light)."
+    },
+    {
+      "articleTitle": "Quantum mechanics",
+      "relevantPathsAI": [
+        "C.8",
+        "C.8.b",
+        "A.1"
+      ],
+      "rationaleAI": "Quantum mechanics underpins 128.C.8 (the quantum theory of light and photon phenomena) and specifically addresses the uncertainty principle in relation to light phenomena (128.C.8.b). Wave functions and de Broglie waves also connect to the broader wave theory framework of 128.A."
+    },
+    {
+      "articleTitle": "Telescope",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D.2.a"
+      ],
+      "rationaleAI": "Telescopes are a primary application of the optical systems described in 128.D.1.b (optical systems: components and applications), employing lenses and mirrors governed by geometrical optics. Multi-spectral telescopes (radio, X-ray) also illustrate the practical transmission and detection of different parts of the EM spectrum covered in 128.B."
+    },
+    {
+      "articleTitle": "Camera",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D"
+      ],
+      "rationaleAI": "Cameras are optical image-forming systems using lenses governed by geometrical optics, directly exemplifying the optical systems described in 128.D.1.b. Their aperture and focusing mechanisms operationalise the brightness and aberration theory of image formation outlined in 128.D."
+    },
+    {
+      "articleTitle": "Photography",
+      "relevantPathsAI": [
+        "D.2",
+        "D.1.b"
+      ],
+      "rationaleAI": "Photography involves capturing light via optical systems (128.D.1.b) and connects to optical data processing and information-theoretic aspects of image formation (128.D.2.a). The article addresses both the optical and recording dimensions that make image capture from light waves possible."
+    },
+    {
+      "articleTitle": "Color",
+      "relevantPathsAI": [
+        "C.1.b",
+        "C.9"
+      ],
+      "rationaleAI": "Color directly addresses 128.C.1.b (the spectrum of light, describing colour in terms of wavelengths) and relates to 128.C.9 (separation of light into constituent wavelengths and spectral analysis). It bridges the physical wavelength description and the psychophysical colour perception response."
+    },
+    {
+      "articleTitle": "James Clerk Maxwell",
+      "relevantPathsAI": [
         "B.1",
-        "B.2",
-        "C.1.a",
-        "C.4",
-        "C.5.c",
-        "C.6",
-        "C.7.a",
-        "C.7.b"
-      ]
+        "C.6"
+      ],
+      "rationaleAI": "Maxwell's equations are the theoretical foundation for EM wave propagation (128.B.1) and specifically for the description of light as an electromagnetic wave (128.C.6). This biographical article covers his derivation of those equations and prediction of radio waves, which are central theoretical content for 128.B and 128.C."
+    },
+    {
+      "articleTitle": "Telecommunications",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.5"
+      ],
+      "rationaleAI": "Telecommunications covers the transmission of information via radio waves and photonic channels (128.B.2.a, radio waves as a medium), including modulation encoding of signals onto electromagnetic carriers and the transmission of EM waves through media and by waveguides (128.B.5). It represents a major applied context for the EM wave phenomena described in 128.B."
+    },
+    {
+      "articleTitle": "Radio",
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.3.a",
+        "A.5"
+      ],
+      "rationaleAI": "Radio directly addresses radio waves as a portion of the EM spectrum (128.B.2.a), their transmitter and antenna sources (128.B.3.a), and their use via reflection for radar (128.A.5). It covers the foundational physics of radio wave generation, propagation, and modulation described in 128.B."
+    },
+    {
+      "articleTitle": "Momentum",
+      "relevantPathsAI": [
+        "A.3.d"
+      ],
+      "rationaleAI": "Momentum connects to 128.A.3.d (transport of energy and momentum by waves), as waves carry momentum as well as energy — a key property explored in wave mechanics, and relevant to radiation pressure and photon momentum. The article's treatment of momentum in electrodynamics (field momentum) directly supports this path."
+    },
+    {
+      "articleTitle": "Musicology",
+      "relevantPathsAI": [
+        "E.6"
+      ],
+      "rationaleAI": "Musicology's systematic branch encompasses acoustics and the physical properties of musical sound — pitch, timbre, and loudness — which correspond directly to 128.E.6 (physical aspects of musical sound: pitch, timbre, loudness, fundamentals and overtones). It provides the disciplinary context for the intersection of wave physics and music theory."
+    },
+    {
+      "articleTitle": "Theory of relativity",
+      "relevantPathsAI": [
+        "C.2",
+        "B.1"
+      ],
+      "rationaleAI": "Special relativity's postulate of the invariance of c is directly connected to 128.C.2 (the velocity of light) and the propagation of EM waves in vacuum (128.B.1). The constancy of the speed of light across reference frames is a foundational result arising from Maxwell's wave theory."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

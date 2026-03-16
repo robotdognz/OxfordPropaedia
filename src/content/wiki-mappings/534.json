@@ -1,100 +1,172 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "534",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "The distribution of income and wealth reflects fundamental social and economic structures.",
+      "articleTitle": "Tax",
       "relevantPathsAI": [
         "B",
-        "B.1",
-        "B.4",
-        "B.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Economics",
-      "rationaleAI": "Economic theory analyzes the distribution of income and wealth including inequality, taxation, and redistributive policies.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "B",
-        "B.1",
         "B.2",
+        "B.2.a",
         "B.2.b",
         "B.2.c",
-        "B.4"
-      ]
-    },
-    {
-      "articleTitle": "Business",
-      "rationaleAI": "Business profitability and corporate structures directly affect the distribution of income and wealth in society.",
-      "relevantPathsAI": [
+        "B.2.d",
+        "B.3",
         "B.3.a",
         "B.3.b",
+        "B.3.c",
         "B.3.d",
-        "B.4",
-        "B.6.b"
-      ]
-    },
-    {
-      "articleTitle": "Tax",
-      "rationaleAI": "Taxation is a primary mechanism for the distribution of income and wealth.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.b",
-        "B",
-        "B.1",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Famine",
-      "rationaleAI": "Famine reflects extreme inequality in the distribution of wealth.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.b",
-        "B",
-        "B.1",
-        "B.2",
-        "B.2.b",
-        "B.2.c",
+        "B.3.e",
+        "B.3.f",
         "B.3.g"
-      ]
+      ],
+      "rationaleAI": "Comprehensively covers the nature and purposes of taxation (B.2) including principles of taxation (B.2.a), distributional effects of progressive/regressive taxes (B.2.b), tax burden and incidence (B.2.c), and comparisons of national tax systems (B.2.d). Also covers all major kinds of taxes (B.3): property (B.3.a), sales/excise (B.3.b), tariffs (B.3.c), income/capital gains (B.3.d), corporate (B.3.e), death/gift (B.3.f), and payroll/social security taxes (B.3.g)."
     },
     {
-      "articleTitle": "Poverty",
-      "rationaleAI": "Poverty is a central issue in the distribution of income and wealth.",
+      "articleTitle": "Property",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.b",
-        "B",
-        "B.1",
-        "B.2"
-      ]
+        "B.3.a"
+      ],
+      "rationaleAI": "Covers the measurement of wealth through property rights and property as a form of wealth (A.1), and directly addresses taxes on real and personal property (B.3.a) through its analysis of property regimes and legal systems of ownership."
     },
     {
       "articleTitle": "Welfare spending",
-      "rationaleAI": "Welfare spending addresses the distribution of income and wealth.",
       "relevantPathsAI": [
+        "B.4",
+        "B.4.b",
+        "B.4.c",
+        "B.1"
+      ],
+      "rationaleAI": "Directly covers government-sponsored and government-administered welfare programs (B.4.c), subsidies and social insurance as transfers (B.4.b), and the role of the national budget in funding welfare expenditure (B.1). Traces the historical development of welfare states from Bismarck through the post-WWII expansion."
+    },
+    {
+      "articleTitle": "Social class",
+      "relevantPathsAI": [
+        "A.2.b",
+        "A.3",
+        "A.3.b"
+      ],
+      "rationaleAI": "Directly addresses the distribution of wealth and income according to the number of persons in various classes (A.2.b) through Marxist, Weberian, and Bourdieusian class frameworks, and examines patterns of distribution within countries (A.3) including comparisons among income groups (A.3.b)."
+    },
+    {
+      "articleTitle": "Poverty",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.b"
+      ],
+      "rationaleAI": "Covers patterns of wealth and income distribution (A.3) through absolute and relative poverty measurement across countries and population groups, with direct analysis of comparisons among lower income groups (A.3.b) and the structural determinants of income deficits."
+    },
+    {
+      "articleTitle": "Social equality",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.b"
+      ],
+      "rationaleAI": "Addresses patterns of wealth and income distribution through the lens of formal and substantive equality (A.3), with direct relevance to comparisons among wealth and income groups (A.3.b) through analysis of equal opportunity versus equal outcomes frameworks."
+    },
+    {
+      "articleTitle": "Karl Marx",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.3"
+      ],
+      "rationaleAI": "Marx's analysis of surplus value and factor shares (wages vs. profits) directly addresses distribution by factor shares (A.2.a), and his theory of bourgeoisie/proletariat class inequality covers patterns of wealth concentration (A.3)."
+    },
+    {
+      "articleTitle": "Capitalism",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.3"
+      ],
+      "rationaleAI": "Capitalism's organizing logic of capital accumulation and wage labour directly concerns distribution by factor shares—wages, profits, and interest (A.2.a)—and its analysis of inequality and wealth concentration addresses patterns of distribution (A.3)."
+    },
+    {
+      "articleTitle": "Finance",
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Finance addresses the financing of budgetary deficits and surpluses (B.5) through its coverage of government bond markets, deficit spending, and the role of capital markets in funding public debt obligations."
+    },
+    {
+      "articleTitle": "Corporation",
+      "relevantPathsAI": [
+        "B.3.e",
+        "B.6.b"
+      ],
+      "rationaleAI": "Covers taxes on corporate income and excess profits (B.3.e) through corporate tax frameworks, and relates to control of restrictive practices and antitrust legislation (B.6.b) through its analysis of corporate governance and shareholder rights."
+    },
+    {
+      "articleTitle": "Great Depression",
+      "relevantPathsAI": [
+        "A.3",
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "The Great Depression dramatically altered patterns of wealth and income distribution (A.3) through mass unemployment and deflation, forced major fiscal responses including deficit financing (B.5), and precipitated direct government controls including the New Deal's regulatory interventions (B.6)."
+    },
+    {
+      "articleTitle": "War",
+      "relevantPathsAI": [
+        "B.6.c"
+      ],
+      "rationaleAI": "Covers economic mobilization for war (B.6.c) through its analysis of wartime resource allocation, government commandeering of industries, price controls, and the economic organization of armed conflict."
+    },
+    {
+      "articleTitle": "World War I",
+      "relevantPathsAI": [
+        "B.6.c",
+        "B.5"
+      ],
+      "rationaleAI": "WWI involved massive economic mobilization for war (B.6.c) including industrial conversion, rationing, and price controls, and required unprecedented deficit financing (B.5) to fund the war effort across all belligerent nations."
+    },
+    {
+      "articleTitle": "Economics",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Economics broadly covers measurement and theory of income and wealth distribution (A) and the principles of taxation and fiscal policy (B.2) as major subdisciplines, providing foundational analytical frameworks for the section's topics."
+    },
+    {
+      "articleTitle": "Government",
+      "relevantPathsAI": [
+        "B",
         "B.1",
-        "B.3.g",
-        "B.4.c"
-      ]
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Government is the primary agent through which income and wealth distribution is affected (B), setting the national budget (B.1), financing deficits and surpluses (B.5), and imposing direct controls on the private sector including price and wage controls (B.6)."
+    },
+    {
+      "articleTitle": "Work (human activity)",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Wages as the return to labour are the dominant factor share in income distribution (A.2.a), and this article's coverage of paid employment, labor as factor of production, and wage structures directly addresses the earnings dimension of income distribution."
+    },
+    {
+      "articleTitle": "Adam Smith",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2"
+      ],
+      "rationaleAI": "Smith's analysis of wages, profits, and rent as the three components of national income in Wealth of Nations directly addresses distribution by factor shares (A.2.a), and his writing on taxation principles informs B.2.a."
+    },
+    {
+      "articleTitle": "Henry Ford",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Ford's five-dollar workday represents a landmark case study in wage determination and the relationship between high wages and productivity/consumption (A.2.a), relevant to how wage rates affect the distribution of income between workers and capital owners."
+    },
+    {
+      "articleTitle": "Slavery",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Slavery represents an extreme case of income and wealth distribution (A.3) in which enslaved persons receive no wage income while their labor generates all returns to owners—relevant to historical patterns of distribution across countries and population groups."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

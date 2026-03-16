@@ -1,132 +1,168 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "561",
   "mappings": [
     {
-      "articleTitle": "Society",
-      "rationaleAI": "Education is a fundamental social institution for transmitting knowledge across generations.",
-      "relevantPathsAI": [
-        "C.3"
-      ]
-    },
-    {
       "articleTitle": "Education",
-      "rationaleAI": "Education is the direct subject of this section covering the aims, philosophy, and institutional organization of educational systems.",
       "relevantPathsAI": [
-        "B",
+        "A",
         "B.1",
         "B.2",
-        "B.2.b",
-        "B.2.c",
-        "C",
         "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Catherine the Great",
-      "rationaleAI": "Catherine promoted Enlightenment ideals and educational reform, founding institutions of learning across Russia.",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.b",
-        "B.2.c",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.e"
-      ]
-    },
-    {
-      "articleTitle": "Child",
-      "rationaleAI": "Children are the primary focus of educational aims and organization.",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.2.a",
+        "C.2",
         "C.3"
-      ]
+      ],
+      "rationaleAI": "Comprehensively covers all major outline paths: philosophies of education (A), learning theories and teaching methods (B.1–B.2), all levels of education from preschool through adult and vocational (C.1), teacher preparation (C.2), and economics of education (C.3)."
     },
     {
       "articleTitle": "School",
-      "rationaleAI": "Schools are the primary institutions for organizing education.",
       "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.a",
-        "B.2.c",
-        "B.2.d",
-        "C",
-        "C.1",
         "C.1.a",
         "C.1.b",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Library",
-      "rationaleAI": "Libraries support the aims and organization of education.",
-      "relevantPathsAI": [
-        "B.2",
-        "B.2.c",
-        "C",
-        "C.1.d",
-        "C.2.a",
-        "C.2.b",
-        "C.3"
-      ]
+        "C.1.d"
+      ],
+      "rationaleAI": "Directly covers schools as institutions spanning preschool (C.1.a) and elementary/secondary levels (C.1.b), including special education models and the organization of curriculum delivery; also addresses public vs. private and religious school systems."
     },
     {
       "articleTitle": "University",
-      "rationaleAI": "Universities are major institutions in the organization of education.",
       "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.c",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.e",
-        "C.2"
-      ]
+        "C.1.c"
+      ],
+      "rationaleAI": "Directly covers higher education — colleges, universities, and professional schools — including historical development from medieval Church schools to modern research universities, degree structures, and the tension between access and cost (C.1.c)."
     },
     {
       "articleTitle": "Learning",
-      "rationaleAI": "Learning is the goal of educational aims and organization.",
       "relevantPathsAI": [
-        "B",
         "B.1",
-        "B.2",
-        "B.2.b",
-        "B.2.c",
-        "B.2.d",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b"
-      ]
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers the processes of learning and thinking including non-associative, associative, and complex learning forms (B.1), and the article's coverage of pedagogy, memory, and development connects to the art and science of teaching (B.2)."
     },
     {
-      "articleTitle": "Literacy",
-      "rationaleAI": "Literacy is a fundamental aim of education.",
+      "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
-        "B",
+        "B.2.d",
+        "C.1.d"
+      ],
+      "rationaleAI": "AI-driven computer-based instruction (B.2.d) and AI as instructional media and educational technology directly map onto B.2.d and C.1.d; AI in education represents the contemporary frontier of instructional technology."
+    },
+    {
+      "articleTitle": "Library",
+      "relevantPathsAI": [
+        "C.1.c",
+        "B.2.d"
+      ],
+      "rationaleAI": "Libraries serve as core information resources for higher education (C.1.c) and function as instructional media institutions providing visual, observational, and digital learning aids (B.2.d), with modern libraries expanding into digital-access and lifelong-learning roles."
+    },
+    {
+      "articleTitle": "Nursing",
+      "relevantPathsAI": [
+        "C.1.c",
+        "C.1.f",
+        "C.2"
+      ],
+      "rationaleAI": "Nursing is a profession requiring specialized higher education through professional schools (C.1.c) and vocational/apprenticeship training (C.1.f), and the article addresses the professionalization of nursing education and ongoing global challenges in teacher and nurse workforce preparation (C.2)."
+    },
+    {
+      "articleTitle": "Psychology",
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Educational psychology and psychological theories of motivation, intelligence, and developmental stages are foundational to philosophies of education (A) and directly inform learning processes and thinking models (B.1)."
+    },
+    {
+      "articleTitle": "Medicine",
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Medical education through professional schools, licensing, and the clinical residency model (teaching hospitals) is substantively covered, making medicine a direct example of professional school education at the higher education level (C.1.c)."
+    },
+    {
+      "articleTitle": "Play (activity)",
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Play-based learning is a recognized educational philosophy (A) and the article covers play's documented functions in cognitive development, social learning, and physical coordination that are central to learning process theory (B.1)."
+    },
+    {
+      "articleTitle": "Computer",
+      "relevantPathsAI": [
+        "B.2.d"
+      ],
+      "rationaleAI": "Computers are the foundational instructional medium for computer-based instruction (B.2.d), and the article covers their development from early machines to modern digital tools that have transformed educational delivery."
+    },
+    {
+      "articleTitle": "Writing",
+      "relevantPathsAI": [
+        "B.2.d",
+        "C.1.b"
+      ],
+      "rationaleAI": "Writing as a persistent medium for transmitting knowledge is central to instructional media (B.2.d), and literacy — learning to read and write — is the foundational goal of elementary education (C.1.b)."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
         "B.1",
-        "B.2",
-        "B.2.b",
-        "C.2.b",
+        "B.2"
+      ],
+      "rationaleAI": "Oral tradition represents the most historically widespread mode of knowledge transmission and non-formal learning (B.1), and its reliance on specialist oral custodians — who memorize and perform — constitutes a non-literate pedagogical tradition (B.2)."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A",
         "C.3"
-      ]
+      ],
+      "rationaleAI": "Enlightenment thinkers (Locke, Rousseau, Kant) developed foundational philosophies of education centered on reason and individual development (A), and Enlightenment-era advocacy for universal rational schooling drove the economics and political organization of modern mass education (C.3)."
+    },
+    {
+      "articleTitle": "Leo Tolstoy",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Tolstoy founded and ran an experimental school at Yasnaya Polyana based on anarchist free-education principles — children learning voluntarily without coercion — making him a substantive contributor to philosophies of education (A)."
+    },
+    {
+      "articleTitle": "Immanuel Kant",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Kant developed a systematic philosophy of moral education — educating toward rational autonomy and the categorical imperative — that directly contributes to philosophies of education (A) and influenced subsequent educational theory."
+    },
+    {
+      "articleTitle": "Catholic Church",
+      "relevantPathsAI": [
+        "A",
+        "C.1.b",
+        "C.1.c"
+      ],
+      "rationaleAI": "The Catholic Church was the primary organizer of education in medieval and early modern Western civilization, founding cathedral schools and universities (C.1.c), operating primary and secondary schools globally (C.1.b), and embodying a distinctive philosophy of religious-moral education (A)."
+    },
+    {
+      "articleTitle": "Museum",
+      "relevantPathsAI": [
+        "C.1.e",
+        "B.2.d"
+      ],
+      "rationaleAI": "Museums function as informal adult education institutions (C.1.e — education of the adult population) providing observational and visual learning aids (B.2.d); the article explicitly addresses their public educational mission alongside decolonization and digital transformation challenges."
+    },
+    {
+      "articleTitle": "Video game",
+      "relevantPathsAI": [
+        "B.2.d"
+      ],
+      "rationaleAI": "Video games as interactive electronic systems represent a form of computer-based and digital instructional media (B.2.d), and the article's coverage of the cognitive science dimension connects to educational game design and gamification in learning contexts."
+    },
+    {
+      "articleTitle": "Communication",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a"
+      ],
+      "rationaleAI": "Communication covers the transmission of meaning through verbal and non-verbal channels that constitute the fundamental medium of teaching (B.2); components of the teaching situation (B.2.a) inherently involve communication theory and communicative competence."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

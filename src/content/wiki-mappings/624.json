@@ -1,374 +1,255 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "624",
   "mappings": [
     {
-      "articleTitle": "The arts",
-      "rationaleAI": "Music is one of the primary art forms covered by this article on human creative expression.",
+      "articleTitle": "Music",
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.2",
+        "A.3",
         "A.4",
         "A.5",
+        "B",
         "B.1",
         "B.2",
-        "B.3",
-        "C",
-        "C.1.c",
-        "C.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Music",
-      "rationaleAI": "Music is the direct subject of this section on musical composition, performance, and the history of musical forms.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
         "C",
         "C.1",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "Performing arts",
-      "rationaleAI": "Music performance is a core performing art involving live interpretation and improvisation before audiences.",
-      "relevantPathsAI": [
-        "A",
-        "A.5",
-        "E.1.b",
-        "E.2.i",
-        "E.3.a",
-        "E.3.b",
-        "E.3.c",
-        "E.3.i.ii",
-        "E.3.i.iii",
-        "E.3.i.iv"
-      ]
-    },
-    {
-      "articleTitle": "Entertainment",
-      "rationaleAI": "Music performance and recording are among the most universal and popular forms of entertainment worldwide.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.5",
-        "B.2",
-        "C",
-        "C.1.d",
+        "C.2",
+        "C.3",
+        "C.4",
+        "C.5",
+        "C.6",
         "C.7",
         "C.8",
+        "D",
         "E",
-        "E.1"
-      ]
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4",
+        "F",
+        "G",
+        "G.1"
+      ],
+      "rationaleAI": "The core article covering all aspects of the section outline: diverse conceptions of music as art, musical meaning, performance, notation, all formal elements (pitch, rhythm, harmony, counterpoint, texture, form, timbre), instruments, vocal music, genres, recording technology, and the full history of Western and world music."
+    },
+    {
+      "articleTitle": "Singing",
+      "relevantPathsAI": [
+        "B.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "Directly addresses the human voice as source of musical sound (B.2), covering vocal classification, registration, technique, and the art of singing across Western and non-Western genres from classical art song and opera to folk and popular music."
+    },
+    {
+      "articleTitle": "Theatre",
+      "relevantPathsAI": [
+        "E.3.c"
+      ],
+      "rationaleAI": "Covers musical theatre (including opera) as one of the principal genres of music for the theatre (E.3.c.iii) and situates opera within the broader theatrical tradition (E.3.c.i), connecting music to the performing arts context."
     },
     {
       "articleTitle": "Johann Sebastian Bach",
-      "rationaleAI": "Bach is widely regarded as one of the greatest composers in Western music history.",
       "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
-        "B.1",
+        "G.1",
+        "C.5",
+        "E.2.a",
+        "E.1.b",
+        "E.3.a"
+      ],
+      "rationaleAI": "Bach's encyclopedic mastery of counterpoint and fugue directly illustrates C.5 and E.2.a.v; his sacred cantatas, Passions, and motets exemplify E.1.b.ii and E.3.a; his career represents a foundational chapter in Western music history (G.1)."
+    },
+    {
+      "articleTitle": "Ludwig van Beethoven",
+      "relevantPathsAI": [
+        "G.1",
+        "E.2.a",
+        "E.3.b"
+      ],
+      "rationaleAI": "Beethoven's symphonies, concertos, and piano sonatas directly exemplify the principal notated instrumental forms (E.2.a.i-iii) and his string quartets exemplify chamber music (E.3.b); his career spans the Classical-to-Romantic transition in Western music history (G.1)."
+    },
+    {
+      "articleTitle": "Popular culture",
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Directly addresses popular music as a mass-culture phenomenon, situating it within the commercial media system that shapes the production and consumption of popular and folk genres treated under E.4."
+    },
+    {
+      "articleTitle": "Dance",
+      "relevantPathsAI": [
+        "E.3.c"
+      ],
+      "rationaleAI": "Dance is the primary context for music for theatrical dance (ballet, modern dance) addressed under E.3.c.ii, and the article covers music's role as the temporal organizer and expressive partner of choreographic form."
+    },
+    {
+      "articleTitle": "Opera",
+      "relevantPathsAI": [
+        "E.3.c",
         "B.2",
+        "E.1.b"
+      ],
+      "rationaleAI": "Opera is the paradigmatic genre of music for the theatre (E.3.c.i), and the article's coverage of vocal forms \u2014 recitative, aria, bel canto \u2014 directly addresses B.2 (the human voice and singing styles) and solo vocal performance (E.1.b.i)."
+    },
+    {
+      "articleTitle": "Performing arts",
+      "relevantPathsAI": [
+        "A.4",
+        "E"
+      ],
+      "rationaleAI": "Situates music within the broader context of performing arts (A.4, the relation of music to other human activities), and its historical survey of musical and theatrical traditions across cultures contributes to the comparative dimension of sections E and G."
+    },
+    {
+      "articleTitle": "History of music",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "A.1",
+        "E.4"
+      ],
+      "rationaleAI": "Directly covers the history of music from prehistoric origins through ancient, medieval, Renaissance, Baroque, Classical, Romantic, and modern periods (G, G.1), and addresses debates about music's origins and cross-cultural universality relevant to A.1 and E.4."
+    },
+    {
+      "articleTitle": "Rhythm",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c"
+      ],
+      "rationaleAI": "Directly covers rhythm, pulse, beat, measure, tempo, and metre as distinct but interrelated musical elements (C.2, C.2.a-c), including cross-cultural variation from African polyrhythm to Indian tala systems and Western mensural notation."
+    },
+    {
+      "articleTitle": "Orchestra",
+      "relevantPathsAI": [
+        "B.3",
+        "C.7",
+        "E.2.a",
+        "E.3.b"
+      ],
+      "rationaleAI": "The orchestra as a large instrumental ensemble directly addresses B.3 (musical instruments by class) and C.7 (orchestration and instrumentation); its repertoire spanning symphonies and concertos connects to E.2.a.ii and chamber/ensemble distinctions to E.3.b."
+    },
+    {
+      "articleTitle": "Film",
+      "relevantPathsAI": [
+        "E.3.c"
+      ],
+      "rationaleAI": "Motion pictures are one of the principal contexts for incidental and background music addressed under E.3.c.iv, with film scoring representing a major genre of 20th-century music production."
+    },
+    {
+      "articleTitle": "Louis Armstrong",
+      "relevantPathsAI": [
+        "E.2.b"
+      ],
+      "rationaleAI": "Armstrong is the defining figure of early jazz performance, directly illustrating the jazz section's emphasis on improvisation, the performer as creator, and the social/cultural forces behind jazz (E.2.b.i); his career traces the development of jazz styles (E.2.b.ii)."
+    },
+    {
+      "articleTitle": "The Beatles",
+      "relevantPathsAI": [
+        "E.4",
+        "G.1",
+        "F.2",
+        "F.3",
+        "F.4"
+      ],
+      "rationaleAI": "The Beatles represent the paradigmatic example of popular music (E.4) and their pioneering use of multi-track studio recording directly addresses the techniques of music recording (F.2) and effects on music production and criticism (F.3, F.4) in Western music history (G.1)."
+    },
+    {
+      "articleTitle": "Pop music",
+      "relevantPathsAI": [
+        "E.4",
+        "G.1"
+      ],
+      "rationaleAI": "Pop music is directly addressed as a genre under E.4 (popular music), covering its hook-driven structures, commercial character, and global variants (K-pop, J-pop), while its mid-20th-century emergence contributes to the contemporary section of G.1."
+    },
+    {
+      "articleTitle": "Musical instrument",
+      "relevantPathsAI": [
         "B.3",
         "B.3.a",
         "B.3.b",
         "B.3.c",
         "B.3.d"
-      ]
-    },
-    {
-      "articleTitle": "Wolfgang Amadeus Mozart",
-      "rationaleAI": "Mozart's symphonies, operas, and concertos represent the pinnacle of Classical-era musical composition.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a"
-      ]
-    },
-    {
-      "articleTitle": "Ludwig van Beethoven",
-      "rationaleAI": "Beethoven bridged the Classical and Romantic eras and is among the most influential composers in music history.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.c",
-        "C",
-        "C.1.c",
-        "C.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Louis Armstrong",
-      "rationaleAI": "Armstrong was a foundational figure in jazz and one of the most influential musicians in modern music history.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.c",
-        "C.1.d"
-      ]
-    },
-    {
-      "articleTitle": "The Beatles",
-      "rationaleAI": "The Beatles are the best-selling and most influential band in popular music history.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Michael Jackson",
-      "rationaleAI": "Michael Jackson was the 'King of Pop' whose innovations in music and performance redefined popular music.",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.c"
-      ]
-    },
-    {
-      "articleTitle": "History of music",
-      "rationaleAI": "The history of music traces the evolution of musical forms, styles, and traditions.",
-      "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.c",
-        "C.1.d",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Musicology",
-      "rationaleAI": "Musicology is the scholarly study of music as an art form.",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.5",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.d",
-        "C.7",
-        "C.8",
-        "E"
-      ]
-    },
-    {
-      "articleTitle": "Romanticism",
-      "rationaleAI": "Romanticism was a defining movement in Western music.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.c",
-        "C.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Musical instrument",
-      "rationaleAI": "Musical instruments are essential tools for the creation and performance of music.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a",
-        "C.1.c",
-        "C.1.d",
-        "C.7",
-        "C.8"
-      ]
-    },
-    {
-      "articleTitle": "Rhythm",
-      "rationaleAI": "Rhythm is a fundamental element of music.",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1.d",
-        "C.2",
-        "C.2.b",
-        "C.2.c",
-        "C.7"
-      ]
-    },
-    {
-      "articleTitle": "Singing",
-      "rationaleAI": "Singing is the primary vocal mode of musical performance.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.c"
-      ]
+      ],
+      "rationaleAI": "Directly addresses all classes of musical instruments using the Hornbostel-Sachs classification system that maps onto B.3.a (idiophones/membranophones), B.3.b (aerophones), B.3.c (chordophones), and B.3.d (electrophones), covering history, technology, and the study of organology."
     },
     {
       "articleTitle": "Classical music",
-      "rationaleAI": "Classical music is a major tradition within the art of music.",
       "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B.3",
-        "C",
-        "C.1.c",
-        "C.1.d",
-        "C.7",
-        "C.8"
-      ]
+        "G.1",
+        "E.2.a",
+        "C.5",
+        "C.4",
+        "D",
+        "E.3.a",
+        "E.3.b",
+        "E.3.c"
+      ],
+      "rationaleAI": "Covers the full arc of Western art music (G.1) from plainchant through Baroque counterpoint (C.5), Classical harmony (C.4), and sophisticated written notation (D), with its genres spanning sacred (E.3.a), chamber (E.3.b), and operatic (E.3.c.i) forms."
     },
     {
-      "articleTitle": "Folk music",
-      "rationaleAI": "Folk music is a widespread musical tradition rooted in oral culture.",
+      "articleTitle": "Television",
       "relevantPathsAI": [
-        "A",
-        "A.5",
-        "C",
-        "C.1.d",
-        "C.7",
-        "C.8",
-        "E",
-        "E.1",
-        "E.1.b",
-        "E.1.i"
-      ]
+        "E.3.c",
+        "F.1"
+      ],
+      "rationaleAI": "Television is a primary medium for incidental and background music (E.3.c.iv) and its broadcast technology represents a major form of music reproduction and transmission (F.1)."
     },
     {
-      "articleTitle": "Jazz",
-      "rationaleAI": "Jazz is a major musical genre originating in African American culture.",
+      "articleTitle": "Emotion",
       "relevantPathsAI": [
-        "A",
         "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C"
-      ]
+        "A.1"
+      ],
+      "rationaleAI": "Problems of musical meaning (A.2) are centrally concerned with how music expresses, evokes, or represents emotion; the article's coverage of emotional theories (dimensional models, somatic theories) informs diverse conceptions of music as an art (A.1)."
     },
     {
-      "articleTitle": "Pop music",
-      "rationaleAI": "Pop music is a dominant genre in contemporary musical culture.",
+      "articleTitle": "Musicology",
       "relevantPathsAI": [
-        "A",
         "A.5",
-        "B.2",
-        "B.3",
-        "C",
-        "C.1.d",
-        "C.7",
-        "C.8",
-        "E",
-        "E.1"
-      ]
+        "G",
+        "G.1",
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Directly addresses writings about music (A.5) by defining musicology's three branches \u2014 historical, systematic, and ethnomusicological \u2014 which encompass the history of music (G), music theory, performance study (A.3), and diverse aesthetic conceptions (A.1)."
     },
     {
       "articleTitle": "Rock music",
-      "rationaleAI": "Rock music is a major genre that transformed popular musical culture.",
       "relevantPathsAI": [
-        "A",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a",
-        "B.3.b",
-        "B.3.c"
-      ]
+        "E.4",
+        "G.1",
+        "F.3",
+        "F.4"
+      ],
+      "rationaleAI": "Rock music is a major genre under E.4 (popular music), whose history from 1950s rock and roll through numerous subgenres constitutes an important chapter of G.1; its development is deeply tied to recorded music's effects on composition and culture (F.3, F.4)."
     },
     {
-      "articleTitle": "Opera",
-      "rationaleAI": "Opera combines music with theatrical performance as a major musical art form.",
+      "articleTitle": "Telecommunications",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "C"
-      ]
+        "F",
+        "F.1",
+        "F.4"
+      ],
+      "rationaleAI": "The progression from phonograph to radio to digital transmission constitutes the history of music recording and reproduction (F, F.1, F.4), as telecommunications technology \u2014 telephone, radio, internet \u2014 fundamentally shaped how music is distributed and consumed."
     },
     {
-      "articleTitle": "Orchestra",
-      "rationaleAI": "The orchestra is the primary large ensemble for performing classical music.",
+      "articleTitle": "Folklore",
       "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.3.a"
-      ]
+        "E.4"
+      ],
+      "rationaleAI": "Folklore's coverage of oral tradition, folk song, and the informal community-based transmission of musical culture directly addresses the folk and primitive music genres under E.4, including ballads, work songs, and ceremonial music."
+    },
+    {
+      "articleTitle": "Oral tradition",
+      "relevantPathsAI": [
+        "E.4",
+        "D"
+      ],
+      "rationaleAI": "Oral tradition encompasses the pre-notational transmission of music \u2014 epic poetry with melodic formula, ballads, religious chant \u2014 directly relevant to E.4 (primitive and folk music) and to understanding the limits and antecedents of musical notation (D)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

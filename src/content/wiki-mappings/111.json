@@ -1,142 +1,199 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "111",
   "mappings": [
     {
-      "articleTitle": "Science",
-      "rationaleAI": "Atomic structure and properties are fundamental topics within the physical sciences.",
-      "relevantPathsAI": [
-        "A.3",
-        "D.4"
-      ]
-    },
-    {
-      "articleTitle": "Chemical element",
-      "rationaleAI": "Chemical elements are defined by their atomic structure, with atomic number determining each element's identity and properties.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3.g"
-      ]
-    },
-    {
-      "articleTitle": "Physics",
-      "rationaleAI": "Atomic physics studies the structure and properties of atoms, a foundational domain of physics.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
-        "A.3.c",
-        "A.3.h",
-        "A.4",
-        "B",
-        "B.3"
-      ]
-    },
-    {
-      "articleTitle": "Matter",
-      "rationaleAI": "Matter at the atomic level exhibits the structure and properties of atoms that define material existence.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.c",
-        "A.3.h",
-        "C",
-        "C.1.b",
-        "C.1.e",
-        "D.1",
-        "D.2.a"
-      ]
-    },
-    {
-      "articleTitle": "Mass",
-      "rationaleAI": "Atomic mass is a key property of atoms whose structure is examined in this section.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.b",
-        "A.3.c",
-        "A.3.h",
-        "A.4",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
-      ]
-    },
-    {
       "articleTitle": "Atom",
-      "rationaleAI": "The atom is the fundamental unit whose structure and properties define this section.",
       "relevantPathsAI": [
-        "A",
         "A.1",
         "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3.f"
-      ]
+        "A.4"
+      ],
+      "rationaleAI": "The Atom article directly covers the central subject of Section 111: the nucleus-plus-electron-cloud model (A.1), early particulate theories (A.2), experimental evidence from chemistry and spectroscopy (A.3), and the quantum mechanical model of atomic structure (A.4)."
     },
     {
       "articleTitle": "Electron",
-      "rationaleAI": "The electron is a fundamental component of atomic structure examined in this section.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.b",
         "A.3.c",
-        "A.3.d",
-        "A.3.h",
-        "A.4",
         "A.4.c"
-      ]
-    },
-    {
-      "articleTitle": "Proton",
-      "rationaleAI": "Protons determine atomic number and thus the chemical identity of atoms described here.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "A.3.d",
-        "A.3.g",
-        "A.3.h"
-      ]
+      ],
+      "rationaleAI": "Covers the discovery of the electron as a particle and component of all matter (A.3.c) and its role in the wave-mechanical theory of electronic structure (A.4.c), including orbital probability distributions that determine atomic interactions."
     },
     {
       "articleTitle": "Quantum mechanics",
-      "rationaleAI": "Quantum mechanics governs the structure and behavior of atoms at the subatomic level.",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.c",
+        "A.4.c",
+        "C.2"
+      ],
+      "rationaleAI": "Quantum mechanics underlies the wave-mechanical model of the atom (A.4.c) and provides the theoretical framework for interpreting atomic spectra as quantized electronic transitions (C.2), including the Schrödinger and Heisenberg formulations."
+    },
+    {
+      "articleTitle": "Proton",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "The proton's atomic number Z defines element identity and electron configuration (A.1), and proton count is the basis for atomic weight definitions and isotopic variation (B.1–B.2) that underpin the atomic weight scales of the outline."
+    },
+    {
+      "articleTitle": "Electromagnetic radiation",
+      "relevantPathsAI": [
+        "C.1",
+        "D.1"
+      ],
+      "rationaleAI": "Electromagnetic radiation encompasses the atomic spectral emissions central to Section C and includes X-rays as a subrange (D.1), with the article covering photon-based interactions with atomic structure across the full spectrum."
+    },
+    {
+      "articleTitle": "Hydrogen",
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2"
+      ],
+      "rationaleAI": "The hydrogen atom spectrum (C.1.a) is the canonical test case for Bohr's theory and wave-mechanical interpretations of quantized transitions (C.2); the article specifically covers quantum mechanical spectral line analysis as a key connection."
+    },
+    {
+      "articleTitle": "Photon",
+      "relevantPathsAI": [
         "C.2",
         "D.1",
-        "D.2.b",
-        "D.4",
-        "E",
+        "D.2"
+      ],
+      "rationaleAI": "The photon is the quantum of electromagnetic radiation emitted in atomic spectral transitions (C.2) and constitutes the X-ray quantum underlying X-ray spectra and bremsstrahlung phenomena (D.1–D.2)."
+    },
+    {
+      "articleTitle": "Subatomic particle",
+      "relevantPathsAI": [
+        "A.1",
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "Covers the electron, proton, and nucleus as components of the atom (A.1) and classifies antiparticles (E.1), with wave-particle duality and creation/annihilation events directly relevant to charge conjugation symmetry (E.3)."
+    },
+    {
+      "articleTitle": "Particle physics",
+      "relevantPathsAI": [
         "E.1",
         "E.3",
-        "F"
-      ]
+        "E.4"
+      ],
+      "rationaleAI": "Particle physics directly addresses antiparticles and antimatter (E.1), the Standard Model's treatment of charge conjugation invariance (E.3), and theoretical speculations about antimatter's cosmic role (E.4)."
+    },
+    {
+      "articleTitle": "Standard Model",
+      "relevantPathsAI": [
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "The Standard Model classifies antiparticles as mirroring particles in mass but opposing charge (E.1) and explicitly addresses matter-antimatter asymmetry and CP-symmetry violation relevant to charge conjugation invariance (E.3)."
+    },
+    {
+      "articleTitle": "Matter",
+      "relevantPathsAI": [
+        "A.2",
+        "E.1"
+      ],
+      "rationaleAI": "Traces early philosophical and historical particulate theories of matter from ancient India and Greece (A.2) and covers antimatter and exotic matter forms, directly addressing general properties of antimatter (E.1)."
+    },
+    {
+      "articleTitle": "Albert Einstein",
+      "relevantPathsAI": [
+        "A.3.f",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Einstein's 1905 explanation of Brownian motion constitutes direct scientific evidence for the existence of atoms (A.3.f), and his work on mass-energy equivalence and statistical mechanics underpins the fundamental physical constants and their interrelationships (F.1–F.2)."
+    },
+    {
+      "articleTitle": "Mass",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "F.1"
+      ],
+      "rationaleAI": "Atomic mass grounds the entire atomic weight section (B.1, B.3), and mass's relativistic relation to energy via E=mc² and its Standard Model origin through the Higgs mechanism are core interrelationships among the physical constants (F.1–F.2)."
+    },
+    {
+      "articleTitle": "Radioactive decay",
+      "relevantPathsAI": [
+        "A.3.e"
+      ],
+      "rationaleAI": "The discovery of radioactive transformation of one element into another is explicitly listed as category A.3.e of scientific evidence for the nature of atoms, making this article a direct match for that specific outline path."
+    },
+    {
+      "articleTitle": "Periodic table",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "The periodic table encodes atomic weights organized by atomic number (B.3) and captures isotopic composition and periodic variation (B.1); the article covers atomic weight scales and the history of atomic weight determination that the outline addresses in B.3–B.4."
+    },
+    {
+      "articleTitle": "Chemical element",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "D.2"
+      ],
+      "rationaleAI": "Chemical elements are defined by atomic number and isotopic composition (B.1–B.2), and characteristic X-ray emission tied to atomic number directly connects elemental identity to X-ray atomic structure analysis (D.2)."
+    },
+    {
+      "articleTitle": "Light",
+      "relevantPathsAI": [
+        "C.1",
+        "D.1"
+      ],
+      "rationaleAI": "Visible light constitutes the observable portion of atomic emission spectra (C.1), and the article's coverage of wave-particle duality and photon detection is directly relevant to spectral line interpretation and X-ray phenomena (D.1)."
+    },
+    {
+      "articleTitle": "Electromagnetism",
+      "relevantPathsAI": [
+        "C.1",
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Electromagnetism governs atomic spectral emission and absorption processes (C.1) and provides the classical framework for X-ray phenomena and bremsstrahlung radiation (D.1–D.2) through Maxwell's equations and QED."
+    },
+    {
+      "articleTitle": "Physical chemistry",
+      "relevantPathsAI": [
+        "A.3",
+        "C.1"
+      ],
+      "rationaleAI": "Physical chemistry's use of spectroscopy as an analytical tool directly relates to the spectroscopic evidence for atomic structure (A.3.b) and atomic absorption spectra (C.1.c); the article covers spectroscopy, quantum theory, and electrochemistry as branches."
+    },
+    {
+      "articleTitle": "Dmitri Mendeleev",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Mendeleev's formulation of the periodic law required systematic determination and organization of atomic weights, with his corrections to accepted atomic weights representing a direct historical contribution to atomic weight scales (B.3)."
+    },
+    {
+      "articleTitle": "Theory of relativity",
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Special relativity yields E=mc², a fundamental dimensional interrelationship connecting mass and energy among the physical constants (F.1), and the speed of light c is the defining constant whose value and interrelationships are central to the fundamental constants section (F.2)."
+    },
+    {
+      "articleTitle": "Chemical bond",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Chemical bonds arise directly from the arrangement and behavior of electrons surrounding the nucleus (A.1); the article covers how electron orbital configurations determine all atomic interaction types including covalent, ionic, and metallic bonding."
+    },
+    {
+      "articleTitle": "Neutron",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "The neutron is a nuclear component determining atomic mass and isotopic variation (A.1, B.1); neutron count variation defines isotopes, fundamental to atomic weight discussions and the significance of isotopic composition in atomic weight (B.1–B.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

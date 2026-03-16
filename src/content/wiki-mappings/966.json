@@ -1,255 +1,218 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "966",
   "mappings": [
     {
-      "articleTitle": "Human history",
-      "rationaleAI": "Latin American and Caribbean national development is an important thread in human history.",
+      "articleTitle": "Sim\u00f3n Bol\u00edvar",
       "relevantPathsAI": [
-        "A.1.c",
         "A.2",
-        "B.1.a",
-        "C",
-        "C.1.a",
-        "C.1.h",
-        "C.2.i",
-        "D.2.b",
-        "E.3.a",
-        "G.1.i"
-      ]
-    },
-    {
-      "articleTitle": "South America",
-      "rationaleAI": "South American nations gained independence in the 19th century, developing distinct national identities.",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.c",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
+        "A.2.a",
         "A.2.c",
         "A.2.d",
-        "A.3"
-      ]
+        "D",
+        "D.f",
+        "D.a",
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Bol\u00edvar commanded the liberation campaigns across Venezuela, Colombia, Ecuador, Panama, Peru, and Bolivia, directly covering A.2.a (the struggle for independence in New Granada), A.2.c\u2013d (liberation of Peru and Bolivia), and the Venezuelan independence movement in D.f\u2013D.a. His founding of Gran Colombia is central to the entire D section on successor states."
     },
     {
-      "articleTitle": "Simón Bolívar",
-      "rationaleAI": "Simón Bolívar led the independence movements that liberated much of South America from Spanish colonial rule.",
+      "articleTitle": "George Washington",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The U.S. War of Independence is explicitly cited in A.1.a as one of the ideological influences on Latin American independence movements, making Washington's role directly relevant to the background of the independence movement."
+    },
+    {
+      "articleTitle": "Napoleon",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.e",
+        "B.2.b"
+      ],
+      "rationaleAI": "Napoleon's seizure of the Spanish throne is explicitly named in A.1.c as a precipitating cause of Latin American independence; his placement of Joseph Bonaparte on the throne triggered Creole loyalism to Ferdinand VII. French intervention in Mexico under Napoleon III also maps to B.2.b."
+    },
+    {
+      "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
         "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b"
-      ]
-    },
-    {
-      "articleTitle": "History of South America",
-      "rationaleAI": "The development of Latin American nations through independence movements defines South America's modern history.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Caribbean",
-      "rationaleAI": "Caribbean nations' development to 1920 is directly covered in this section.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.d",
         "A.3",
-        "B.1.a",
-        "B.1.b"
-      ]
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "The Spanish Empire is the colonial backdrop against which the entire section operates \u2014 the independence movements of A, the post-independence political struggles in B through G, and the loss of the Cuban and Caribbean colonies in C.2.c all occur within or against its framework."
     },
     {
-      "articleTitle": "Central America",
-      "rationaleAI": "Central American national development is covered in this Latin American history section.",
+      "articleTitle": "American Revolution",
       "relevantPathsAI": [
-        "B.3.a",
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.f",
-        "C.1.h",
-        "F.2",
-        "F.2.a",
-        "G.1.i.ii",
-        "G.1.c"
-      ]
+        "A.1.a"
+      ],
+      "rationaleAI": "The American Revolution (1765\u20131783) is explicitly cited in A.1.a as one of the direct ideological inspirations for Latin American independence movements, alongside the Enlightenment and the French Revolution."
     },
     {
       "articleTitle": "Mexico",
-      "rationaleAI": "Mexico's national development is covered in Latin American nations to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
+        "A.3",
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.4"
+      ],
+      "rationaleAI": "Mexico directly covers the entirety of sections A.3 (Mexican War of Independence) and B (Mexico from independence through the 1917 Revolution), including Iturbide, Santa Anna, Ju\u00e1rez, the French intervention, the D\u00edaz dictatorship, and the revolutionary period."
+    },
+    {
+      "articleTitle": "Atlantic slave trade",
+      "relevantPathsAI": [
         "A.1.b",
-        "A.1.c",
+        "C.2.a",
+        "C.2",
+        "H.1.b"
+      ],
+      "rationaleAI": "The Atlantic slave trade underlies Toussaint-Louverture's revolt in A.1.b (the Haitian slave revolt), the sugar economy and abolition of slavery in Cuba (C.2.i), and Brazil's gradual emancipation and abolition (H.1.b)."
+    },
+    {
+      "articleTitle": "Central America",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.1.e",
+        "C.1.f",
+        "C.1.g",
+        "C.1.h"
+      ],
+      "rationaleAI": "Central America directly covers section C.1 in its entirety, including the independence movements, the federation of United Provinces of Central America, and the individual national histories of Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, and Panama through c. 1920."
+    },
+    {
+      "articleTitle": "South America",
+      "relevantPathsAI": [
         "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b"
-      ]
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "South America provides the continental framework for sections D through H, covering the independence movements, successor states of Gran Colombia, Andean nations, Chile, the R\u00edo de la Plata states, and Brazil \u2014 the bulk of the outline's geographic coverage."
+    },
+    {
+      "articleTitle": "British Empire",
+      "relevantPathsAI": [
+        "C.1.h",
+        "C.2.d"
+      ],
+      "rationaleAI": "British colonial and economic interests in Central America are explicitly named in C.1.h (including British Honduras), and British insular possessions in the Caribbean are covered under C.2.d, making the British Empire directly relevant to both paths."
     },
     {
       "articleTitle": "Argentina",
-      "rationaleAI": "Argentina's national development is covered in Latin American nations to 1920.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b"
-      ]
-    },
-    {
-      "articleTitle": "Brazil",
-      "rationaleAI": "Brazil's national development is covered in Latin American nations to 1920.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii",
         "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.2.e"
-      ]
+        "G.1",
+        "G.1.a",
+        "G.1.b",
+        "G.1.c"
+      ],
+      "rationaleAI": "Argentina covers the establishment of the United Provinces of the R\u00edo de la Plata in A.2.b and the entirety of G.1, including the Rosas confederation, national consolidation under Mitre and Roca, the rise of radicalism, and Irigoyen's presidency."
     },
     {
       "articleTitle": "Colombia",
-      "rationaleAI": "Colombia's national development is covered in Latin American nations to 1920.",
+      "relevantPathsAI": [
+        "A.2.a",
+        "D.2",
+        "D.2.a",
+        "D.2.b"
+      ],
+      "rationaleAI": "Colombia covers the independence struggle in New Granada (A.2.a), participation in Gran Colombia, and the post-independence history in D.2, including Liberal-Conservative conflicts, civil wars, and the loss of Panama (1903)."
+    },
+    {
+      "articleTitle": "History of South America",
       "relevantPathsAI": [
         "A",
+        "A.2",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "History of South America directly covers the Iberian colonial period, independence movements of the early 19th century, and 20th-century political history across sections A.2 and D\u2013H, providing an overarching narrative connecting all the South American successor states."
+    },
+    {
+      "articleTitle": "Brazil",
+      "relevantPathsAI": [
+        "A.2.e",
+        "H",
+        "H.1",
+        "H.1.a",
+        "H.1.b",
+        "H.2",
+        "H.2.a"
+      ],
+      "rationaleAI": "Brazil directly covers the establishment of the independent Empire under Pedro I (A.2.e and H.1.a), the empire under Pedro II including abolition of slavery (H.1.b), and the First Republic (H.2), covering the entire H section of the outline."
+    },
+    {
+      "articleTitle": "Age of Enlightenment",
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "The Enlightenment is explicitly named in A.1.a as one of the three key ideological sources of discontent (alongside the U.S. War of Independence and the French Revolution) that underpinned the Latin American independence movement."
+    },
+    {
+      "articleTitle": "Spain",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2",
+        "A.3",
+        "B.2.b",
+        "C.1.a",
+        "E.2.b",
+        "F"
+      ],
+      "rationaleAI": "Spain is the direct metropolitan power whose Peninsular War (A.1.c), colonial rule, and military forces (A.2, A.3) shaped the independence movements across Latin America; Spanish military invasion of Peru (E.2.b) and the Cuban wars (C.2.c) also fall within this scope."
+    },
+    {
+      "articleTitle": "Colonialism",
+      "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b"
-      ]
+        "C.1.h",
+        "C.2.d"
+      ],
+      "rationaleAI": "Colonialism provides the conceptual framework for the background of the independence movements (A.1), British colonial interests in Central America (C.1.h), and the European insular possessions in the Caribbean (C.2.d)."
     },
     {
-      "articleTitle": "Mexico City",
-      "rationaleAI": "Mexico City was the capital of developing Mexican nationhood.",
+      "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.d",
-        "A.2.e"
-      ]
+        "C.1.h",
+        "C.2"
+      ],
+      "rationaleAI": "Imperialism covers U.S. military intervention and economic dominance \u2014 directly relevant to C.1.h (U.S. economic and military interests in Central America) and C.2.i.iii (Cuba as a U.S. protectorate with military occupation from 1899)."
     },
     {
-      "articleTitle": "São Paulo",
-      "rationaleAI": "São Paulo grew as a major Brazilian city during national development.",
+      "articleTitle": "Mesoamerica",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.d",
-        "A.2.e",
-        "A.3"
-      ]
-    },
-    {
-      "articleTitle": "Sugar",
-      "rationaleAI": "Sugar plantations shaped the development of Latin American and Caribbean nations.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "C.2.i",
-        "C.2.i.iii"
-      ]
-    },
-    {
-      "articleTitle": "Coffee",
-      "rationaleAI": "Coffee cultivation shaped the economies of Latin American nations.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2.a",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
         "A.3",
-        "B.1.a",
-        "B.1.b"
-      ]
-    },
-    {
-      "articleTitle": "Portuguese language",
-      "rationaleAI": "Portuguese spread to Latin America through colonial expansion.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.e",
-        "A.3",
-        "B"
-      ]
-    },
-    {
-      "articleTitle": "Spanish language",
-      "rationaleAI": "Spanish spread to the Americas through colonial expansion.",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.2.i",
-        "A.2.i.ii",
-        "A.2.b",
-        "A.2.d",
-        "A.3",
-        "B"
-      ]
+        "B.1"
+      ],
+      "rationaleAI": "Mesoamerica's pre-Columbian civilizations and their transformation under Spanish colonization provide essential background for understanding the social composition \u2014 including Indian discontent \u2014 cited in A.1.a, and the Indigenous social context for Mexico's independence (A.3) and subsequent history (B.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }

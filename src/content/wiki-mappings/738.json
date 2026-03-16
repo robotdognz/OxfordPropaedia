@@ -1,180 +1,170 @@
 {
-  "_curatedBy": "ai",
   "sectionCode": "738",
   "mappings": [
     {
-      "articleTitle": "Technology",
-      "rationaleAI": "Earth and space exploration technology represents advanced technological achievement.",
-      "relevantPathsAI": [
-        "A.1.c",
-        "B.1.d",
-        "B.2",
-        "C.1",
-        "C.3.b",
-        "C.3.c",
-        "C.3.i.iii",
-        "C.3.i.iv"
-      ]
-    },
-    {
-      "articleTitle": "Astronomy",
-      "rationaleAI": "Space exploration technology including telescopes, probes, and observatories extends astronomical observation beyond Earth.",
-      "relevantPathsAI": [
-        "B.2",
-        "C.1",
-        "C.2.i.ii",
-        "C.2.i.iii",
-        "C.2.d",
-        "C.3.c",
-        "C.3.d",
-        "C.3.i.iii",
-        "C.3.i.iv",
-        "C.4"
-      ]
-    },
-    {
-      "articleTitle": "Solar System",
-      "rationaleAI": "Solar System exploration through spacecraft missions represents a major achievement in Earth and space exploration technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1.d",
-        "B.2",
-        "C"
-      ]
-    },
-    {
       "articleTitle": "Moon",
-      "rationaleAI": "The Apollo Moon landings represent humanity's greatest achievement in Earth and space exploration technology.",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Christopher Columbus",
-      "rationaleAI": "Columbus's transatlantic voyages represent a landmark in the technology of earth and maritime exploration.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1.d",
-        "B.2",
-        "C"
-      ]
-    },
-    {
-      "articleTitle": "Age of Discovery",
-      "rationaleAI": "The Age of Discovery advanced the technology of earth exploration through navigation, cartography, and shipbuilding.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1",
-        "B.1.a",
-        "B.1.d"
-      ]
-    },
-    {
-      "articleTitle": "Outer space",
-      "rationaleAI": "Outer space is the frontier of earth and space exploration technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1.c",
-        "B.1.d",
-        "B.2"
-      ]
-    },
-    {
-      "articleTitle": "Rocket",
-      "rationaleAI": "Rockets are the propulsion technology enabling space exploration.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "B.1.c",
-        "B.1.d",
-        "C",
-        "C.1",
-        "C.2.a",
         "C.2.b",
-        "C.2.i.ii",
         "C.2.c",
-        "C.3"
-      ]
-    },
-    {
-      "articleTitle": "Satellite",
-      "rationaleAI": "Artificial satellites are key tools of earth and space exploration technology.",
-      "relevantPathsAI": [
-        "A.1.b",
-        "B.1.c",
-        "B.3",
-        "C.1",
-        "C.2.i",
-        "C.2.i.ii",
-        "C.2.i.iii",
-        "C.2.d",
-        "C.3.b",
-        "C.3.i"
-      ]
-    },
-    {
-      "articleTitle": "Space exploration",
-      "rationaleAI": "Space exploration is the direct subject of this section on earth and space exploration technology.",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.2",
-        "B",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d"
-      ]
+        "C.4"
+      ],
+      "rationaleAI": "Covers the history of spacecraft exploration of the Moon including Luna and Apollo programs (C.2.b.iii) and crewed Moon landings (C.2.c). Also touches on life support for crewed missions, connecting to D."
     },
     {
       "articleTitle": "Spaceflight",
-      "rationaleAI": "Spaceflight is the core activity of space exploration technology treated here.",
       "relevantPathsAI": [
-        "A.1.b",
-        "B.2",
         "C",
-        "C.1",
+        "C.2",
         "C.2.a",
         "C.2.b",
-        "C.2.i.ii",
-        "C.2.i.iii",
         "C.2.c",
-        "C.3"
-      ]
+        "C.2.d",
+        "C.3",
+        "C.3.a",
+        "C.3.b",
+        "C.3.c",
+        "C.3.d"
+      ],
+      "rationaleAI": "Directly addresses all major subtopics of C: crewed and uncrewed missions (C.2.b, C.2.c), launch vehicles/rockets (C.2.a), Earth-oriented satellites (C.2.d), orbital mechanics and reentry (C.3.d), and the space environment (C.3.a). Core article for section 738."
+    },
+    {
+      "articleTitle": "Rocket",
+      "relevantPathsAI": [
+        "C.2.a",
+        "C.3.c"
+      ],
+      "rationaleAI": "Covers space launch vehicles \u2014 multistage rocket design, propellant types, staging, and the physics enabling orbital and escape velocity (C.2.a, C.3.c). Foundational technology for all space programs."
+    },
+    {
+      "articleTitle": "Space exploration",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.b",
+        "C.2.c",
+        "C.2.d",
+        "C.4"
+      ],
+      "rationaleAI": "Comprehensive overview covering the history of space flight from Sputnik through Apollo and commercial era (C.1, C.2), robotic probes across the solar system (C.2.b), crewed programs including Mercury/Gemini/Apollo and Soviet Vostok/Soyuz (C.2.c), and Earth-oriented satellites (C.2.d). Primary article for section outline C."
+    },
+    {
+      "articleTitle": "Radar",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Radar is a key indirect geophysical/remote sensing method used in surface and underground exploration (A.2.a) and in oceanographic measurement and navigation (B.2, B.3). Also used in satellite remote sensing (B.1.c)."
+    },
+    {
+      "articleTitle": "Satellite",
+      "relevantPathsAI": [
+        "B.1.c",
+        "C.2.b",
+        "C.2.d"
+      ],
+      "rationaleAI": "Covers the full scope of artificial satellites including Earth observation, communications, GPS navigation, and scientific research satellites (C.2.d, C.2.b.ii), and their application to remote sensing relevant to undersea mapping (B.1.c)."
+    },
+    {
+      "articleTitle": "Sea",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Covers oceanographic science including ocean currents, tides, marine habitats, and the history of navigation and oceanography, relevant to the context of undersea exploration (B) and oceanographic measurement techniques (B.3)."
+    },
+    {
+      "articleTitle": "Navigation",
+      "relevantPathsAI": [
+        "B.2",
+        "C.3.d"
+      ],
+      "rationaleAI": "Directly addresses navigational methods for establishing precise location (B.2) and covers space navigation including celestial navigation, inertial systems, and GPS, relevant to navigation in space (C.3.d.ii)."
+    },
+    {
+      "articleTitle": "Mars",
+      "relevantPathsAI": [
+        "C.2.b",
+        "C.4"
+      ],
+      "rationaleAI": "Mars has been continuously explored by robotic probes since 1997 and is the primary target for future crewed missions, directly illustrating C.2.b.iii (unmanned spacecraft probing planets) and the planning of life-support for crewed exploration (C.4)."
+    },
+    {
+      "articleTitle": "Natural satellite",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "Covers moons of planets across the solar system \u2014 primary targets of unmanned space probes (C.2.b.iii) \u2014 including geologically active bodies like Europa and Titan that are targets of exploration missions."
+    },
+    {
+      "articleTitle": "Geology",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b",
+        "A.2"
+      ],
+      "rationaleAI": "Covers economic geology, petroleum geology, hydrology, and engineering geology directly relevant to resource exploration (A.1.b), scientific determination of Earth interior properties (A.1.a), and field methods of exploration (A.2)."
+    },
+    {
+      "articleTitle": "Laser",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.3"
+      ],
+      "rationaleAI": "Lidar (laser-based remote sensing) is a key indirect exploration method (A.2.a) used in surface mapping and undersea measurement; also used in satellite-based remote sensing (B.1.c)."
+    },
+    {
+      "articleTitle": "Soviet Union",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.2.c"
+      ],
+      "rationaleAI": "The Soviet space programme \u2014 Sputnik 1, Gagarin, Vostok, Voskhod, and Soyuz/Salyut \u2014 is explicitly named in the outline (C.2.c) and was the primary competitor driving the Cold War Space Race (C.1, C.2)."
+    },
+    {
+      "articleTitle": "Antarctica",
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2",
+        "B"
+      ],
+      "rationaleAI": "Antarctica's ice sheet dynamics are studied through geophysical exploration methods (A.2.a), and the continent is a key site for surface/undersea exploration of sub-glacial environments and oceanographic research in the Southern Ocean (B)."
+    },
+    {
+      "articleTitle": "Civil engineering",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.b"
+      ],
+      "rationaleAI": "Civil engineering's geotechnical sub-discipline directly covers exploration for construction purposes \u2014 planning tunnels, foundations, and other works (A.1.c) \u2014 using on-site boring, excavation, and soil/rock sampling (A.2.b)."
+    },
+    {
+      "articleTitle": "Pacific Ocean",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "The Pacific, including the Mariana Trench (deepest point on Earth), is a primary site of undersea exploration, covering oceanographic sampling, seamount geology, and deep-sea research (B, B.3)."
+    },
+    {
+      "articleTitle": "Measurement",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.3"
+      ],
+      "rationaleAI": "Covers measurement science foundational to geophysical and geochemical indirect exploration methods (A.2.a) and oceanographic sampling and measurement techniques (B.3), including metrology standards used in scientific instruments."
+    },
+    {
+      "articleTitle": "Artificial intelligence",
+      "relevantPathsAI": [
+        "B.3",
+        "C.2.b"
+      ],
+      "rationaleAI": "AI is increasingly integrated into autonomous spacecraft operations (C.2.b), remote sensing data analysis, and oceanographic measurement systems (B.3). Moderate overlap as enabling technology for modern exploration."
     }
-  ]
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-16"
 }
