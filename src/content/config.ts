@@ -90,7 +90,9 @@ const vsiCatalogCollection = defineCollection({
       keywords: z.array(z.string()).optional(),
       abstract: z.string().optional(),
       publicationYear: z.number().int().optional(),
+      publicationDate: z.string().optional(),
       edition: z.number().int().optional(),
+      approximateNumber: z.boolean().optional(),
     })),
   }),
 });

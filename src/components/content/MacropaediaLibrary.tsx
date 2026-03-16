@@ -21,7 +21,7 @@ export interface MacropaediaLibraryProps {
 const INITIAL_VISIBLE_COUNT = 60;
 
 type StatusFilter = 'all' | 'unchecked' | 'checked';
-type SortMode = 'sections-desc' | 'title-asc';
+type SortMode = 'sections-desc' | 'sections-asc' | 'title-asc' | 'title-desc';
 
 function matchesQuery(entry: MacropaediaAggregateEntry, query: string): boolean {
   if (!query) return true;
@@ -30,16 +30,22 @@ function matchesQuery(entry: MacropaediaAggregateEntry, query: string): boolean 
 
 function sortEntries(entries: MacropaediaAggregateEntry[], sortMode: SortMode): MacropaediaAggregateEntry[] {
   const nextEntries = [...entries];
+  const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
 
-  if (sortMode === 'title-asc') {
-    nextEntries.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' }));
-    return nextEntries;
+  switch (sortMode) {
+    case 'title-asc':
+      nextEntries.sort((a, b) => collate(a.title, b.title));
+      break;
+    case 'title-desc':
+      nextEntries.sort((a, b) => collate(b.title, a.title));
+      break;
+    case 'sections-asc':
+      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? a.sectionCount - b.sectionCount : collate(a.title, b.title));
+      break;
+    default: // sections-desc
+      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? b.sectionCount - a.sectionCount : collate(a.title, b.title));
+      break;
   }
-
-  nextEntries.sort((a, b) => {
-    if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;
-    return a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' });
-  });
   return nextEntries;
 }
 
@@ -338,8 +344,10 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
               onChange={(event) => setSortMode((event.currentTarget as HTMLSelectElement).value as SortMode)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="sections-desc">Most sections</option>
-              <option value="title-asc">Title A-Z</option>
+              <option value="sections-desc">Most sections first</option>
+              <option value="sections-asc">Fewest sections first</option>
+              <option value="title-asc">Title A → Z</option>
+              <option value="title-desc">Title Z → A</option>
             </select>
           </label>
         </div>

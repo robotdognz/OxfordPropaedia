@@ -24,7 +24,7 @@ export interface VsiLibraryProps {
 const INITIAL_VISIBLE_COUNT = 50;
 
 type StatusFilter = 'all' | 'unchecked' | 'checked';
-type SortMode = 'sections-desc' | 'title-asc' | 'number-asc';
+type SortMode = 'sections-desc' | 'sections-asc' | 'title-asc' | 'title-desc' | 'number-asc' | 'number-desc';
 
 function matchesQuery(entry: VsiAggregateEntry, query: string): boolean {
   if (!query) return true;
@@ -56,26 +56,36 @@ function formatMetadata(entry: VsiAggregateEntry): string {
 
 function sortEntries(entries: VsiAggregateEntry[], sortMode: SortMode): VsiAggregateEntry[] {
   const nextEntries = [...entries];
+  const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
 
-  if (sortMode === 'title-asc') {
-    nextEntries.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' }));
-    return nextEntries;
+  switch (sortMode) {
+    case 'title-asc':
+      nextEntries.sort((a, b) => collate(a.title, b.title));
+      break;
+    case 'title-desc':
+      nextEntries.sort((a, b) => collate(b.title, a.title));
+      break;
+    case 'number-asc':
+      nextEntries.sort((a, b) => {
+        const an = a.number ?? Number.MAX_SAFE_INTEGER;
+        const bn = b.number ?? Number.MAX_SAFE_INTEGER;
+        return an !== bn ? an - bn : collate(a.title, b.title);
+      });
+      break;
+    case 'number-desc':
+      nextEntries.sort((a, b) => {
+        const an = a.number ?? 0;
+        const bn = b.number ?? 0;
+        return an !== bn ? bn - an : collate(a.title, b.title);
+      });
+      break;
+    case 'sections-asc':
+      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? a.sectionCount - b.sectionCount : collate(a.title, b.title));
+      break;
+    default: // sections-desc
+      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? b.sectionCount - a.sectionCount : collate(a.title, b.title));
+      break;
   }
-
-  if (sortMode === 'number-asc') {
-    nextEntries.sort((a, b) => {
-      const aNumber = a.number ?? Number.MAX_SAFE_INTEGER;
-      const bNumber = b.number ?? Number.MAX_SAFE_INTEGER;
-      if (aNumber !== bNumber) return aNumber - bNumber;
-      return a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' });
-    });
-    return nextEntries;
-  }
-
-  nextEntries.sort((a, b) => {
-    if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;
-    return a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' });
-  });
   return nextEntries;
 }
 
@@ -387,9 +397,12 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
               onChange={(event) => setSortMode((event.currentTarget as HTMLSelectElement).value as SortMode)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="sections-desc">Most sections</option>
-              <option value="title-asc">Title A-Z</option>
-              <option value="number-asc">Series number</option>
+              <option value="sections-desc">Most sections first</option>
+              <option value="sections-asc">Fewest sections first</option>
+              <option value="title-asc">Title A → Z</option>
+              <option value="title-desc">Title Z → A</option>
+              <option value="number-asc">Series number (oldest)</option>
+              <option value="number-desc">Series number (newest)</option>
             </select>
           </label>
         </div>
