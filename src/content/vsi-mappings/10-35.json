@@ -4,222 +4,362 @@
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "rationale": "Directly covers the entire history of medicine from ancient through modern times, the central topic of section A."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers the entire history of medicine from ancient through modern times, the central topic of section A."
     },
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Epidemiology is a core medical discipline related to public health (B.2.d) and the study of disease transmission (A.2.e)."
+      "relevantPathsAI": [
+        "B.2",
+        "A.2"
+      ],
+      "rationaleAI": "Epidemiology is a core medical discipline related to public health (B.2.d) and the study of disease transmission (A.2.e)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Pandemics relate to bacteriology (A.2.c), immunology (A.3.b), and tropical medicine (A.3.d.iii)."
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3"
+      ],
+      "rationaleAI": "Pandemics relate to bacteriology (A.2.c), immunology (A.3.b), and tropical medicine (A.3.d.iii)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "rationale": "Plague illustrates the evolution of medicine from ancient practices through the establishment of bacteriology."
+      "relevantPathsAI": [],
+      "rationaleAI": "Plague illustrates the evolution of medicine from ancient practices through the establishment of bacteriology."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Sections A.2.c (bacteriology), A.3.a (antibiotics), and A.3.b (immunology) address the medical response to infectious disease."
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3"
+      ],
+      "rationaleAI": "Sections A.2.c (bacteriology), A.3.a (antibiotics), and A.3.b (immunology) address the medical response to infectious disease."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
-      "rationale": "HIV/AIDS is a major 20th-century medical challenge, relevant to immunology (A.3.b) and tropical medicine (A.3.d.iii)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "HIV/AIDS is a major 20th-century medical challenge, relevant to immunology (A.3.b) and tropical medicine (A.3.d.iii)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Section A.3.b.ii covers vaccines for viral diseases including yellow fever, influenza, poliomyelitis, and measles."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.b.ii covers vaccines for viral diseases including yellow fever, influenza, poliomyelitis, and measles."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Section A.2.c covers the establishment of bacteriology, germ theory verification, and disease-producing organisms."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c covers the establishment of bacteriology, germ theory verification, and disease-producing organisms."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
-      "rationale": "Section A.3.b covers advances in immunology including vaccines for bacterial and viral diseases."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.b covers advances in immunology including vaccines for bacterial and viral diseases."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
-      "rationale": "Section A.3.d.ii specifically covers cancer research and treatment of abnormal cell growths."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.d.ii specifically covers cancer research and treatment of abnormal cell growths."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Section A.3.a covers chemotherapy including antibiotics and synthetic drugs, and B.3 covers pharmacology."
+      "relevantPathsAI": [
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Section A.3.a covers chemotherapy including antibiotics and synthetic drugs, and B.3 covers pharmacology."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "Section A.2.d covers the discovery and use of anesthesia, and A.4.e covers inhalation anesthetic procedures."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Section A.2.d covers the discovery and use of anesthesia, and A.4.e covers inhalation anesthetic procedures."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Anatomical discoveries are discussed throughout the history from ancient times (A.1.b-c) through Renaissance dissection (A.1.f.i)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Anatomical discoveries are discussed throughout the history from ancient times (A.1.b-c) through Renaissance dissection (A.1.f.i)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Section A.2.b covers advances in physiology, and B.3 lists medical physiology as a nonclinical specialty."
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "Section A.2.b covers advances in physiology, and B.3 lists medical physiology as a nonclinical specialty."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Section A.3.c covers endocrinology including insulin, cortisone, and sex hormones, and B.2.e lists endocrinology."
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.2"
+      ],
+      "rationaleAI": "Section A.3.c covers endocrinology including insulin, cortisone, and sex hormones, and B.2.e lists endocrinology."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Section A.3.d.i covers nutrition and treatment of deficiency diseases through vitamins, and B.3 lists nutrition."
+      "relevantPathsAI": [
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Section A.3.d.i covers nutrition and treatment of deficiency diseases through vitamins, and B.3 lists nutrition."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "Section B.2.d lists public health as a clinical specialty."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2.d lists public health as a clinical specialty."
     },
     {
       "vsiTitle": "Psychiatry",
       "vsiAuthor": "Tom Burns",
-      "rationale": "Section B.1.g lists psychiatry as a hospital residency specialty."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Section B.1.g lists psychiatry as a hospital residency specialty."
     },
     {
       "vsiTitle": "Clinical Psychology",
       "vsiAuthor": "Susan Llewellyn, Katie Aafjes-van Doorn",
-      "rationale": "Clinical psychology connects to psychiatry (B.1.g) and the assessment and treatment of mental disorders."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Clinical psychology connects to psychiatry (B.1.g) and the assessment and treatment of mental disorders."
     },
     {
       "vsiTitle": "Psychotherapy",
       "vsiAuthor": "Tom Burns (Author), Eva Burns-Lundgren (Editor)",
-      "rationale": "Psychotherapy connects to psychiatry (B.1.g) as a therapeutic approach within medical practice."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Psychotherapy connects to psychiatry (B.1.g) as a therapeutic approach within medical practice."
     },
     {
       "vsiTitle": "Cognitive Behavioural Therapy",
       "vsiAuthor": "Freda McManus",
-      "rationale": "CBT is a leading therapeutic modality used in psychiatry (B.1.g)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "CBT is a leading therapeutic modality used in psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Schizophrenia",
       "vsiAuthor": "Chris Frith, Eve C. Johnstone",
-      "rationale": "Schizophrenia is a major psychiatric condition relevant to psychiatry (B.1.g)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Schizophrenia is a major psychiatric condition relevant to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Depression",
       "vsiAuthor": "Mary Jane Tacchi, Jan Scott",
-      "rationale": "Depression relates to psychiatry (B.1.g) as a major area of medical practice."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Depression relates to psychiatry (B.1.g) as a major area of medical practice."
     },
     {
       "vsiTitle": "Anxiety",
       "vsiAuthor": "Daniel Freeman, Jason Freeman",
-      "rationale": "Anxiety disorders are a major concern of psychiatry (B.1.g)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Anxiety disorders are a major concern of psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
-      "rationale": "Autism relates to neurology (B.1.f) and psychiatry (B.1.g) as neurodevelopmental conditions."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Autism relates to neurology (B.1.f) and psychiatry (B.1.g) as neurodevelopmental conditions."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
-      "rationale": "Addiction medicine relates to psychiatry (B.1.g) and pharmacology (B.3)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Addiction medicine relates to psychiatry (B.1.g) and pharmacology (B.3)."
     },
     {
       "vsiTitle": "Psychopathy",
       "vsiAuthor": "Essi Viding",
-      "rationale": "Psychopathy relates to psychiatry (B.1.g) as a clinical condition."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Psychopathy relates to psychiatry (B.1.g) as a clinical condition."
     },
     {
       "vsiTitle": "Dementia",
       "vsiAuthor": "Kathleen Taylor",
-      "rationale": "Dementia relates to neurology (B.1.f) and psychiatry (B.1.g)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Dementia relates to neurology (B.1.f) and psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
-      "rationale": "Dyslexia relates to neurology (B.1.f) and understanding of neurodevelopmental conditions."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Dyslexia relates to neurology (B.1.f) and understanding of neurodevelopmental conditions."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Neurology (B.1.f) is a hospital residency specialty, and the brain is central to neuroscience in medicine."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Neurology (B.1.f) is a hospital residency specialty, and the brain is central to neuroscience in medicine."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
-      "rationale": "Sleep medicine relates to neurology (B.1.f) and psychiatry (B.1.g)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Sleep medicine relates to neurology (B.1.f) and psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
-      "rationale": "Pain management connects to anesthesiology (B.1.h) and the historical development of anesthesia (A.2.d)."
+      "relevantPathsAI": [
+        "B.1",
+        "A.2"
+      ],
+      "rationaleAI": "Pain management connects to anesthesiology (B.1.h) and the historical development of anesthesia (A.2.d)."
     },
     {
       "vsiTitle": "Ageing",
       "vsiAuthor": "Nancy Pachana",
-      "rationale": "Section B.3 lists gerontology as a nonclinical specialty and basic medical science."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Section B.3 lists gerontology as a nonclinical specialty and basic medical science."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Section A.2.a mentions the cell and cellular pathology as foundational 19th-century medical concepts."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.a mentions the cell and cellular pathology as foundational 19th-century medical concepts."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
-      "rationale": "Section A.4.d covers blood transfusions and intravenous techniques in 20th-century surgery."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Section A.4.d covers blood transfusions and intravenous techniques in 20th-century surgery."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Section C.1 covers the history and practice of dentistry as a discipline affiliated with medicine."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Section C.1 covers the history and practice of dentistry as a discipline affiliated with medicine."
     },
     {
       "vsiTitle": "Medical ethics",
       "vsiAuthor": "Tony Hope",
-      "rationale": "Medical ethics relates to the Hippocratic charter of medical conduct (A.1.d.ii) and ethical dimensions of practice."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Medical ethics relates to the Hippocratic charter of medical conduct (A.1.d.ii) and ethical dimensions of practice."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
-      "rationale": "Section B.2.b covers medical jurisprudence as a clinical specialty."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2.b covers medical jurisprudence as a clinical specialty."
     },
     {
       "vsiTitle": "Forensic science",
       "vsiAuthor": "Jim Fraser",
-      "rationale": "Forensic science connects to medical jurisprudence (B.2.b), pathology (B.1.h), and toxicology (B.2.g)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.1"
+      ],
+      "rationaleAI": "Forensic science connects to medical jurisprudence (B.2.b), pathology (B.1.h), and toxicology (B.2.g)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
-      "rationale": "Veterinary science is closely affiliated with medicine, sharing foundational sciences and methods."
+      "relevantPathsAI": [],
+      "rationaleAI": "Veterinary science is closely affiliated with medicine, sharing foundational sciences and methods."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Section A.1.g.i highlights the importance of the microscope to medical studies."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.g.i highlights the importance of the microscope to medical studies."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Section A.2.e mentions X-ray discovery, and B.1.a lists radiology as a hospital specialty."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.2.e mentions X-ray discovery, and B.1.a lists radiology as a hospital specialty."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Circadian rhythms are relevant to medical physiology (B.3) and understanding of sleep, hormones, and metabolism."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Circadian rhythms are relevant to medical physiology (B.3) and understanding of sleep, hormones, and metabolism."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Molecular understanding underpins pharmacology (B.3) and chemotherapy (A.3.a) at the molecular level."
+      "relevantPathsAI": [
+        "B.3",
+        "A.3"
+      ],
+      "rationaleAI": "Molecular understanding underpins pharmacology (B.3) and chemotherapy (A.3.a) at the molecular level."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

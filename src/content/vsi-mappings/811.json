@@ -4,207 +4,322 @@
     {
       "vsiTitle": "Philosophy of Religion",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Directly addresses 811.A on the philosophy of religion, covering the existence and attributes of the divine, the problem of evil, and the extent of human knowledge of God."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses 811.A on the philosophy of religion, covering the existence and attributes of the divine, the problem of evil, and the extent of human knowledge of God."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
-      "rationale": "Covers questions about the nature of the divine across traditions, including creation, existence of God, and divine attributes, central to 811.A.1-2 and 811.D.3."
+      "relevantPathsAI": [
+        "A.1",
+        "D.3"
+      ],
+      "rationaleAI": "Covers questions about the nature of the divine across traditions, including creation, existence of God, and divine attributes, central to 811.A.1-2 and 811.D.3."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
-      "rationale": "Addresses theology as an attempt to understand religious belief, including doctrines of God, revelation, and the role of sacred scriptures across traditions (811.D)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses theology as an attempt to understand religious belief, including doctrines of God, revelation, and the role of sacred scriptures across traditions (811.D)."
     },
     {
       "vsiTitle": "Religion",
       "vsiAuthor": "Thomas A. Tweed",
-      "rationale": "Provides a broad framework for the study and classification of religions, directly relevant to 811.E and 811.A on the nature and characteristics of religion."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides a broad framework for the study and classification of religions, directly relevant to 811.E and 811.A on the nature and characteristics of religion."
     },
     {
       "vsiTitle": "Faith",
       "vsiAuthor": "Roger Trigg",
-      "rationale": "Examines belief, faith, and reason in relation to religion, directly relevant to 811.D.1.c on articles of faith and religious creeds, and 811.B on religious experience."
+      "relevantPathsAI": [
+        "D.1.c"
+      ],
+      "rationaleAI": "Examines belief, faith, and reason in relation to religion, directly relevant to 811.D.1.c on articles of faith and religious creeds, and 811.B on religious experience."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
-      "rationale": "Directly addresses the philosophical problem of free will, one of the special problems explicitly listed in 811.A.1.d."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Directly addresses the philosophical problem of free will, one of the special problems explicitly listed in 811.A.1.d."
     },
     {
       "vsiTitle": "Evil",
       "vsiAuthor": "Luke Russell",
-      "rationale": "Addresses the problem of evil and suffering, a special problem of the philosophy of religion listed in 811.A.1.d."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses the problem of evil and suffering, a special problem of the philosophy of religion listed in 811.A.1.d."
     },
     {
       "vsiTitle": "Atheism",
       "vsiAuthor": "Julian Baggini",
-      "rationale": "Directly covers atheism as a doctrinal position regarding the divine, the subject of 811.D.3.d."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Directly covers atheism as a doctrinal position regarding the divine, the subject of 811.D.3.d."
     },
     {
       "vsiTitle": "Agnosticism",
       "vsiAuthor": "Robin Le Poidevin",
-      "rationale": "Directly covers agnosticism, the other position listed alongside atheism in 811.D.3.d, and addresses limits of knowledge of the divine (811.A.1.c)."
+      "relevantPathsAI": [
+        "D.3",
+        "A.1.c"
+      ],
+      "rationaleAI": "Directly covers agnosticism, the other position listed alongside atheism in 811.D.3.d, and addresses limits of knowledge of the divine (811.A.1.c)."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
-      "rationale": "Addresses religious experience and mystical theology across traditions, covering the nature and varieties of spiritual experience in 811.B and 811.D.2."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Addresses religious experience and mystical theology across traditions, covering the nature and varieties of spiritual experience in 811.B and 811.D.2."
     },
     {
       "vsiTitle": "Miracles",
       "vsiAuthor": "Yujin Nagasawa",
-      "rationale": "Directly addresses the topic of miracles across religious traditions, the subject of 811.D.11."
+      "relevantPathsAI": [
+        "D.11"
+      ],
+      "rationaleAI": "Directly addresses the topic of miracles across religious traditions, the subject of 811.D.11."
     },
     {
       "vsiTitle": "Angels",
       "vsiAuthor": "David Albert Jones",
-      "rationale": "Directly covers angelology across Judaism, Christianity, Islam, and Hinduism, the specific topic of 811.D.5."
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Directly covers angelology across Judaism, Christianity, Islam, and Hinduism, the specific topic of 811.D.5."
     },
     {
       "vsiTitle": "The Devil",
       "vsiAuthor": "Darren Oldridge",
-      "rationale": "Covers doctrines of evil and religious dualism through the figure of the Devil, relevant to 811.D.3.b on religious dualism and 811.A.1.d on evil."
+      "relevantPathsAI": [
+        "D.3",
+        "A.1"
+      ],
+      "rationaleAI": "Covers doctrines of evil and religious dualism through the figure of the Devil, relevant to 811.D.3.b on religious dualism and 811.A.1.d on evil."
     },
     {
       "vsiTitle": "Science and Religion",
       "vsiAuthor": "Thomas Dixon, Adam Shapiro",
-      "rationale": "Directly covers the relationship between religion and science, the subject of 811.G.2."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Directly covers the relationship between religion and science, the subject of 811.G.2."
     },
     {
       "vsiTitle": "Myth",
       "vsiAuthor": "Robert A. Segal",
-      "rationale": "Addresses myth as a belief system and its relationship to religion, directly relevant to 811.F.1 on myth and mythology."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Addresses myth as a belief system and its relationship to religion, directly relevant to 811.F.1 on myth and mythology."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
-      "rationale": "Provides a comparative survey of creation myths, flood narratives, and deity archetypes across cultures, relevant to 811.F.1 and 811.D.4 on doctrines of creation."
+      "relevantPathsAI": [
+        "F.1",
+        "D.4"
+      ],
+      "rationaleAI": "Provides a comparative survey of creation myths, flood narratives, and deity archetypes across cultures, relevant to 811.F.1 and 811.D.4 on doctrines of creation."
     },
     {
       "vsiTitle": "Classical Mythology",
       "vsiAuthor": "Helen Morales",
-      "rationale": "Examines Greek and Roman polytheistic mythological traditions, relevant to 811.F.1 on myth and mythology and 811.D.3.a on polytheism."
+      "relevantPathsAI": [
+        "F.1",
+        "D.3"
+      ],
+      "rationaleAI": "Examines Greek and Roman polytheistic mythological traditions, relevant to 811.F.1 on myth and mythology and 811.D.3.a on polytheism."
     },
     {
       "vsiTitle": "Magic",
       "vsiAuthor": "Owen Davies",
-      "rationale": "Directly covers magic as a system of belief and practice, the subject of 811.F.2."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Directly covers magic as a system of belief and practice, the subject of 811.F.2."
     },
     {
       "vsiTitle": "Witchcraft",
       "vsiAuthor": "Malcolm Gaskill",
-      "rationale": "Directly covers witchcraft as a belief system and practice, the subject of 811.F.3."
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "Directly covers witchcraft as a belief system and practice, the subject of 811.F.3."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
-      "rationale": "Covers polytheism, nature worship, shamanism, and sacred practices, relevant to 811.D.3.a on polytheism and 811.F.4-8 on shamanism, ancestor worship, and nature worship."
+      "relevantPathsAI": [
+        "D.3",
+        "F.4"
+      ],
+      "rationaleAI": "Covers polytheism, nature worship, shamanism, and sacred practices, relevant to 811.D.3.a on polytheism and 811.F.4-8 on shamanism, ancestor worship, and nature worship."
     },
     {
       "vsiTitle": "Superstition",
       "vsiAuthor": "Stuart Vyse",
-      "rationale": "Examines superstitious beliefs including astrology and divination, relevant to 811.F.5 on astrology and alchemy."
+      "relevantPathsAI": [
+        "F.5"
+      ],
+      "rationaleAI": "Examines superstitious beliefs including astrology and divination, relevant to 811.F.5 on astrology and alchemy."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
-      "rationale": "Explores humanist and secular alternatives to religious belief, relevant to 811.D.3.d on atheism and agnosticism and 811.G on religion and other aspects of experience."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Explores humanist and secular alternatives to religious belief, relevant to 811.D.3.d on atheism and agnosticism and 811.G on religion and other aspects of experience."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "Examines fundamentalism across religious traditions as a phenomenon of religious classification and doctrine, relevant to 811.E and 811.D."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines fundamentalism across religious traditions as a phenomenon of religious classification and doctrine, relevant to 811.E and 811.D."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
-      "rationale": "Comparative study of Judaism, Christianity, and Islam as monotheistic faiths, relevant to 811.D.3.c on monotheism and 811.E on classification of religions."
+      "relevantPathsAI": [
+        "D.3.c"
+      ],
+      "rationaleAI": "Comparative study of Judaism, Christianity, and Islam as monotheistic faiths, relevant to 811.D.3.c on monotheism and 811.E on classification of religions."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
-      "rationale": "Illustrates the relationship between religion and art through Christian iconography and symbolism, relevant to 811.G.1 on religion and art."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Illustrates the relationship between religion and art through Christian iconography and symbolism, relevant to 811.G.1 on religion and art."
     },
     {
       "vsiTitle": "Ethics",
       "vsiAuthor": "Simon Blackburn",
-      "rationale": "Addresses morality, freedom, and ethical reasoning in relation to religious thought, relevant to 811.G.4 on religion and morality."
+      "relevantPathsAI": [
+        "G.4"
+      ],
+      "rationaleAI": "Addresses morality, freedom, and ethical reasoning in relation to religious thought, relevant to 811.G.4 on religion and morality."
     },
     {
       "vsiTitle": "Conscience",
       "vsiAuthor": "Paul Strohm",
-      "rationale": "Explores the relationship between conscience, morality, and religious duty, relevant to 811.G.4 on religion and morality."
+      "relevantPathsAI": [
+        "G.4"
+      ],
+      "rationaleAI": "Explores the relationship between conscience, morality, and religious duty, relevant to 811.G.4 on religion and morality."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
-      "rationale": "Explores the relationship between religion and public life including church-state separation, relevant to 811.G.3 on religion and society."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Explores the relationship between religion and public life including church-state separation, relevant to 811.G.3 on religion and society."
     },
     {
       "vsiTitle": "Toleration",
       "vsiAuthor": "Andrew R. Murphy",
-      "rationale": "Examines religious pluralism and toleration, relevant to 811.G.3 on religion and society."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Examines religious pluralism and toleration, relevant to 811.G.3 on religion and society."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "rationale": "Explores conflict and peace-building in religious contexts, relevant to 811.G on religion in relation to other aspects of human experience."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores conflict and peace-building in religious contexts, relevant to 811.G on religion in relation to other aspects of human experience."
     },
     {
       "vsiTitle": "Blasphemy",
       "vsiAuthor": "Yvonne Sherwood",
-      "rationale": "Examines concepts of the sacred and its violation across religions, relevant to 811.A on the nature of the divine and 811.G.3 on religion and society."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Examines concepts of the sacred and its violation across religions, relevant to 811.A on the nature of the divine and 811.G.3 on religion and society."
     },
     {
       "vsiTitle": "The Meaning of Life",
       "vsiAuthor": "Terry Eagleton",
-      "rationale": "Engages with fundamental questions about existence, purpose, and meaning that underlie the basic questions of philosophy of religion in 811.A.1."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Engages with fundamental questions about existence, purpose, and meaning that underlie the basic questions of philosophy of religion in 811.A.1."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
-      "rationale": "Covers the theory of interpretation including theological hermeneutics, relevant to 811.D.1.a on the role of Sacred Scriptures."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Covers the theory of interpretation including theological hermeneutics, relevant to 811.D.1.a on the role of Sacred Scriptures."
     },
     {
       "vsiTitle": "Metaphysics",
       "vsiAuthor": "Stephen Mumford",
-      "rationale": "Addresses fundamental questions about existence, causation, and the nature of reality that underpin debates about the existence of the divine in 811.A.1.a."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses fundamental questions about existence, causation, and the nature of reality that underpin debates about the existence of the divine in 811.A.1.a."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
-      "rationale": "Covers existentialist engagement with questions of God, faith, and the death of God (Kierkegaard, Sartre), relevant to 811.A on philosophy of religion."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers existentialist engagement with questions of God, faith, and the death of God (Kierkegaard, Sartre), relevant to 811.A on philosophy of religion."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Covers anthropological approaches to religion, ritual, and belief systems, relevant to 811.C on religious phenomenology and 811.E on classification of religions."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers anthropological approaches to religion, ritual, and belief systems, relevant to 811.C on religious phenomenology and 811.E on classification of religions."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
-      "rationale": "Augustine's theology addresses doctrines of grace, free will, evil, creation, and faith, central topics throughout 811.D."
+      "relevantPathsAI": [],
+      "rationaleAI": "Augustine's theology addresses doctrines of grace, free will, evil, creation, and faith, central topics throughout 811.D."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
-      "rationale": "Aquinas developed proofs for God's existence, doctrines on divine attributes, and natural theology, central to 811.A.1.a and 811.D.3.c on theism."
+      "relevantPathsAI": [
+        "A.1",
+        "D.3.c"
+      ],
+      "rationaleAI": "Aquinas developed proofs for God's existence, doctrines on divine attributes, and natural theology, central to 811.A.1.a and 811.D.3.c on theism."
     },
     {
       "vsiTitle": "Spinoza",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Spinoza's pantheistic philosophy directly addresses 811.D.3.c.iii on pantheism and panentheism."
+      "relevantPathsAI": [
+        "D.3.c"
+      ],
+      "rationaleAI": "Spinoza's pantheistic philosophy directly addresses 811.D.3.c.iii on pantheism and panentheism."
     },
     {
       "vsiTitle": "Anselm",
       "vsiAuthor": "Thomas Williams",
-      "rationale": "Anselm's ontological argument is a landmark in philosophy of religion on the existence of God, directly relevant to 811.A.1.a."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Anselm's ontological argument is a landmark in philosophy of religion on the existence of God, directly relevant to 811.A.1.a."
     },
     {
       "vsiTitle": "Polygamy",
       "vsiAuthor": "Sarah Pearsall",
-      "rationale": "Examines marriage practices across religions including Christianity, Islam, Judaism, and Mormonism, relevant to 811.G.3 on religion and society."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Examines marriage practices across religions including Christianity, Islam, Judaism, and Mormonism, relevant to 811.G.3 on religion and society."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

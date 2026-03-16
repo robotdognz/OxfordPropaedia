@@ -4,62 +4,101 @@
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Core text for this section, covering instinct, fixed action patterns, learning, and the interplay of genes and experience in shaping behaviour (A, B.2, D)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Core text for this section, covering instinct, fixed action patterns, learning, and the interplay of genes and experience in shaping behaviour (A, B.2, D)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers the nervous system's role in receiving sensory information, processing it in the brain and spinal cord, and initiating behavioural responses (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Covers the nervous system's role in receiving sensory information, processing it in the brain and spinal cord, and initiating behavioural responses (C.3)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Directly addresses hormonal influences on behaviour including sex hormones, and the interaction of endocrine and nervous systems (C.1, C.2)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Directly addresses hormonal influences on behaviour including sex hormones, and the interaction of endocrine and nervous systems (C.1, C.2)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Covers plant movements including tropic responses and other autonomous movements relevant to stereotyped plant responses (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers plant movements including tropic responses and other autonomous movements relevant to stereotyped plant responses (B.1)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Directly relevant to photoperiodism and molecular clock mechanisms that govern rhythmic behavioural patterns (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly relevant to photoperiodism and molecular clock mechanisms that govern rhythmic behavioural patterns (B.3)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Covers genetic determination of behaviour through natural selection and the evolutionary basis of behavioural traits (D.1, D.2)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Covers genetic determination of behaviour through natural selection and the evolutionary basis of behavioural traits (D.1, D.2)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Covers sensory reception and visual processing central to understanding how organisms detect stimuli and initiate behavioural responses (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Covers sensory reception and visual processing central to understanding how organisms detect stimuli and initiate behavioural responses (C.3)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Addresses genetic determination of traits including behavioural phenotypes, sex linkage, and variation underlying the evolution of behaviour (D.1)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Addresses genetic determination of traits including behavioural phenotypes, sex linkage, and variation underlying the evolution of behaviour (D.1)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Illustrates the diversity of mammalian behaviour and the role of brain evolution in shaping complex behavioural repertoires (A.1, D)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Illustrates the diversity of mammalian behaviour and the role of brain evolution in shaping complex behavioural repertoires (A.1, D)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Covers conditioning and learning processes that shape behavioural responses, directly relevant to the influence of experience on behaviour (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Covers conditioning and learning processes that shape behavioural responses, directly relevant to the influence of experience on behaviour (D.2)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Covers nervous system development and the biological foundations underlying the emergence of behavioural responses in organisms (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Covers nervous system development and the biological foundations underlying the emergence of behavioural responses in organisms (C.3)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Covers insect behavioural responses to environmental stimuli, relevant to taxes, fixed action patterns, and predator-prey interactions (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers insect behavioural responses to environmental stimuli, relevant to taxes, fixed action patterns, and predator-prey interactions (B.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

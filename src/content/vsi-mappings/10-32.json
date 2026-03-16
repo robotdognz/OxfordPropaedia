@@ -4,282 +4,461 @@
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Section A.1 covers the complete history of astronomy from ancient time reckoning through 20th-century radio astronomy and black holes."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1 covers the complete history of astronomy from ancient time reckoning through 20th-century radio astronomy and black holes."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Section A.2 covers the history of physics from Greek speculations through 20th-century relativity, quantum theory, and condensed-matter physics."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2 covers the history of physics from Greek speculations through 20th-century relativity, quantum theory, and condensed-matter physics."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Section A.3 covers the history of chemistry from alchemy through 20th-century instrumental methods and quantum chemistry."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3 covers the history of chemistry from alchemy through 20th-century instrumental methods and quantum chemistry."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Section C covers the nature and scope of physics including mechanics, thermodynamics, electricity, magnetism, optics, and quantum mechanics."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section C covers the nature and scope of physics including mechanics, thermodynamics, electricity, magnetism, optics, and quantum mechanics."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Section D covers the nature and scope of chemistry including composition, properties, and transformations of matter."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section D covers the nature and scope of chemistry including composition, properties, and transformations of matter."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Section D.2 lists physical chemistry as a subdivision, and A.3.c.vi covers electrochemistry development."
+      "relevantPathsAI": [
+        "D.2",
+        "A.3.c"
+      ],
+      "rationaleAI": "Section D.2 lists physical chemistry as a subdivision, and A.3.c.vi covers electrochemistry development."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Section A.3.c.v covers the development of organic chemistry including valence, aromatic compounds, and structural theory."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c.v covers the development of organic chemistry including valence, aromatic compounds, and structural theory."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Section D.2 lists biochemistry as a subdivision of chemistry."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Section D.2 lists biochemistry as a subdivision of chemistry."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Section A.3.c.i specifically covers the development of the periodic table by Mendeleyev and Meyer."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c.i specifically covers the development of the periodic table by Mendeleyev and Meyer."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Section A.3.c.ii covers discoveries of new elements and isotopes, and A.3.c.i the periodic table."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c.ii covers discoveries of new elements and isotopes, and A.3.c.i the periodic table."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Section A.3.c.iv covers the development of theories of molecular structure and chemical reaction."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c.iv covers the development of theories of molecular structure and chemical reaction."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Section A.3.c.ii mentions the discovery of isotopes as part of 19th-century chemistry."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c.ii mentions the discovery of isotopes as part of 19th-century chemistry."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Section A.2.d.iv covers the discovery of radioactivity and X-rays, and A.3.c.ii covers radioactive elements."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.2.d.iv covers the discovery of radioactivity and X-rays, and A.3.c.ii covers radioactive elements."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Section B.5 covers cosmology and cosmogony, and A.1.f.iv covers relativistic cosmologies including the big bang model."
+      "relevantPathsAI": [
+        "B.5",
+        "A.1"
+      ],
+      "rationaleAI": "Section B.5 covers cosmology and cosmogony, and A.1.f.iv covers relativistic cosmologies including the big bang model."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
-      "rationale": "Section B.5 directly covers astrophysics including the study of stars, galaxies, and the universe."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Section B.5 directly covers astrophysics including the study of stars, galaxies, and the universe."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Section A.1.f.i-ii covers statistical studies of stars and theories of stellar structure, formation, and evolution."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.f.i-ii covers statistical studies of stars and theories of stellar structure, formation, and evolution."
     },
     {
       "vsiTitle": "Galaxies",
       "vsiAuthor": "John Gribbin",
-      "rationale": "Section A.1.f.i covers statistical studies of galaxies and B.5 covers astrophysics including galaxy studies."
+      "relevantPathsAI": [
+        "A.1",
+        "B.5"
+      ],
+      "rationaleAI": "Section A.1.f.i covers statistical studies of galaxies and B.5 covers astrophysics including galaxy studies."
     },
     {
       "vsiTitle": "Black holes",
       "vsiAuthor": "Katherine Blundell",
-      "rationale": "Section A.1.f.vii specifically mentions identification of possible black holes as a 20th-century development."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.f.vii specifically mentions identification of possible black holes as a 20th-century development."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Section A.1.f.v covers exploration of planets and their satellites, and B.2 lists planetary sciences."
+      "relevantPathsAI": [
+        "A.1",
+        "B.2"
+      ],
+      "rationaleAI": "Section A.1.f.v covers exploration of planets and their satellites, and B.2 lists planetary sciences."
     },
     {
       "vsiTitle": "Moons",
       "vsiAuthor": "David Rothery",
-      "rationale": "Section A.1.f.v covers exploration of planets and their satellites with unmanned probes."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.f.v covers exploration of planets and their satellites with unmanned probes."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "The Sun is central to solar-system astronomy (A.1.f.v) and is a key subject in astrophysics (B.5)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.5"
+      ],
+      "rationaleAI": "The Sun is central to solar-system astronomy (A.1.f.v) and is a key subject in astrophysics (B.5)."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Section B.2 covers planetary and lunar sciences and the origin of the solar system."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 covers planetary and lunar sciences and the origin of the solar system."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Section A.1.c.iii covers the invention and use of telescopes, and A.1.f.viii covers advances in instrumentation."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.c.iii covers the invention and use of telescopes, and A.1.f.viii covers advances in instrumentation."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Section A.2.e.i covers the development of relativity theory, and A.1.f.iii covers astronomical tests of general relativity."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Section A.2.e.i covers the development of relativity theory, and A.1.f.iii covers astronomical tests of general relativity."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Section A.2.e.ii covers the development of quantum theory, wave mechanics, and statistical mechanics."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e.ii covers the development of quantum theory, wave mechanics, and statistical mechanics."
     },
     {
       "vsiTitle": "Particle physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Section A.2.e.iii covers theories of atomic structure, nuclear interactions, and elementary particles."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e.iii covers theories of atomic structure, nuclear interactions, and elementary particles."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Section A.2.e.iii covers nuclear interactions and C.2 lists nuclear physics as a component discipline."
+      "relevantPathsAI": [
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "Section A.2.e.iii covers nuclear interactions and C.2 lists nuclear physics as a component discipline."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Section A.2.d.iii covers the development of thermodynamics including the laws and kinetic theory of gases."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d.iii covers the development of thermodynamics including the laws and kinetic theory of gases."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Section A.2.d.ii covers the development of theories of electricity, magnetism, and electromagnetic waves."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d.ii covers the development of theories of electricity, magnetism, and electromagnetic waves."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Section A.2.d.i covers wave vs. corpuscular theory of light, and A.2.e.v mentions nonlinear optics and lasers."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d.i covers wave vs. corpuscular theory of light, and A.2.e.v mentions nonlinear optics and lasers."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Section C.2 lists sound as a component discipline of physics."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Section C.2 lists sound as a component discipline of physics."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Wave phenomena are central to optics, acoustics, and electromagnetic theory in A.2.d and C.2."
+      "relevantPathsAI": [
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "Wave phenomena are central to optics, acoustics, and electromagnetic theory in A.2.d and C.2."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Section A.2.e.iv specifically covers the development of condensed-matter physics and its contributions to electronics."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e.iv specifically covers the development of condensed-matter physics and its contributions to electronics."
     },
     {
       "vsiTitle": "Superconductivity",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Superconductivity is part of condensed-matter physics (A.2.e.iv) and its contributions to electronics."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Superconductivity is part of condensed-matter physics (A.2.e.iv) and its contributions to electronics."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Section C.1 defines physics as concerned with matter and energy, and A.2.d.iv covers the atomic theory of matter."
+      "relevantPathsAI": [
+        "C.1",
+        "A.2"
+      ],
+      "rationaleAI": "Section C.1 defines physics as concerned with matter and energy, and A.2.d.iv covers the atomic theory of matter."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Section A.1.c.iv covers universal gravitation, and A.1.f.iii covers gravitational effects in relativity."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.c.iv covers universal gravitation, and A.1.f.iii covers gravitational effects in relativity."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Crystallography relates to the study of crystal structure, part of the methods of chemistry (D.3) and condensed-matter physics."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Crystallography relates to the study of crystal structure, part of the methods of chemistry (D.3) and condensed-matter physics."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Water is a fundamental substance studied through physical chemistry and molecular structure, topics in D."
+      "relevantPathsAI": [],
+      "rationaleAI": "Water is a fundamental substance studied through physical chemistry and molecular structure, topics in D."
     },
     {
       "vsiTitle": "Galileo",
       "vsiAuthor": "Stillman Drake",
-      "rationale": "Section A.1.c covers Galileo's era including heliocentric systems and the telescope, and A.2.c covers physics contributions."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.1.c covers Galileo's era including heliocentric systems and the telescope, and A.2.c covers physics contributions."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
-      "rationale": "Section A.1.c.iv covers Newton's theory of universal gravitation and A.2.c covers mechanics and optics contributions."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.1.c.iv covers Newton's theory of universal gravitation and A.2.c covers mechanics and optics contributions."
     },
     {
       "vsiTitle": "Copernicus",
       "vsiAuthor": "Owen Gingerich",
-      "rationale": "Section A.1.c.i covers the geocentric and heliocentric world systems, Copernicus's central contribution."
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Section A.1.c.i covers the geocentric and heliocentric world systems, Copernicus's central contribution."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
-      "rationale": "Section A.2.d.ii covers theories of electricity, magnetism, and electromagnetic waves, to which Faraday was a primary contributor."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d.ii covers theories of electricity, magnetism, and electromagnetic waves, to which Faraday was a primary contributor."
     },
     {
       "vsiTitle": "Niels Bohr",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Section A.2.e.ii covers the development of quantum theory, to which Bohr made foundational contributions."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e.ii covers the development of quantum theory, to which Bohr made foundational contributions."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Section C.5 specifically lists geophysics as an interdisciplinary field of physics."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Section C.5 specifically lists geophysics as an interdisciplinary field of physics."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Fluid mechanics is a core topic within physics (C.2, mechanics)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Fluid mechanics is a core topic within physics (C.2, mechanics)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Soft matter is a branch of condensed-matter physics covered in A.2.e.iv."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Soft matter is a branch of condensed-matter physics covered in A.2.e.iv."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Materials science connects to condensed-matter physics (A.2.e.iv) and the study of matter (D.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "D.1"
+      ],
+      "rationaleAI": "Materials science connects to condensed-matter physics (A.2.e.iv) and the study of matter (D.1)."
     },
     {
       "vsiTitle": "Entropy",
       "vsiAuthor": "James Binney",
-      "rationale": "Entropy is central to thermodynamics (A.2.d.iii) and the laws of thermodynamics in physics (C.2)."
+      "relevantPathsAI": [
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "Entropy is central to thermodynamics (A.2.d.iii) and the laws of thermodynamics in physics (C.2)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
-      "rationale": "Section C.6 covers philosophical problems in physics at the formal, quantum, macrophysical, and cosmological levels."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Section C.6 covers philosophical problems in physics at the formal, quantum, macrophysical, and cosmological levels."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "rationale": "Nanotechnology derives from condensed-matter physics (A.2.e.iv) and relates to interdisciplinary applications (C.5)."
+      "relevantPathsAI": [
+        "A.2",
+        "C.5"
+      ],
+      "rationaleAI": "Nanotechnology derives from condensed-matter physics (A.2.e.iv) and relates to interdisciplinary applications (C.5)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "Astrobiology connects astronomy (B) with biology, relating to the interdisciplinary fields of physical science."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Astrobiology connects astronomy (B) with biology, relating to the interdisciplinary fields of physical science."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
-      "rationale": "The concept of vacuum and nothing relates to fundamental questions about matter, energy, and space in physics (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "The concept of vacuum and nothing relates to fundamental questions about matter, energy, and space in physics (C)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Nuclear power applies nuclear physics covered in A.2.e.iii on nuclear interactions and energy."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Nuclear power applies nuclear physics covered in A.2.e.iii on nuclear interactions and energy."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Nuclear weapons derive from nuclear physics in A.2.e.iii on nuclear interactions and elementary particles."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Nuclear weapons derive from nuclear physics in A.2.e.iii on nuclear interactions and elementary particles."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Mineralogy connects to crystallography and chemistry, relating to composition and properties of matter in D."
+      "relevantPathsAI": [],
+      "rationaleAI": "Mineralogy connects to crystallography and chemistry, relating to composition and properties of matter in D."
     },
     {
       "vsiTitle": "Fire",
       "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Section A.2.d.iii covers theories of heat, and A.3.b.i covers combustion chemistry (phlogiston, Lavoisier)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Section A.2.d.iii covers theories of heat, and A.3.b.i covers combustion chemistry (phlogiston, Lavoisier)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

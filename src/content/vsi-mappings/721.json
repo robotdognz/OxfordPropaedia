@@ -4,72 +4,129 @@
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "A core text on major energy types (A), devices for energy utilization (B), and electric power generation (C.7), including fossil fuels, nuclear, and bioenergy."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.7"
+      ],
+      "rationaleAI": "A core text on major energy types (A), devices for energy utilization (B), and electric power generation (C.7), including fossil fuels, nuclear, and bioenergy."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Nuclear fission (A.1), fission and fusion reactors (B.9), and nuclear-powered generators (C.7) are the central subjects."
+      "relevantPathsAI": [
+        "A.1",
+        "B.9",
+        "C.7"
+      ],
+      "rationaleAI": "Nuclear fission (A.1), fission and fusion reactors (B.9), and nuclear-powered generators (C.7) are the central subjects."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Recurring energy sources -- solar, wind, water, biomass (A.2) -- and the devices that harness them, including windmills, turbines (B.2), and solar collectors (B.10), are examined."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2",
+        "B.10"
+      ],
+      "rationaleAI": "Recurring energy sources -- solar, wind, water, biomass (A.2) -- and the devices that harness them, including windmills, turbines (B.2), and solar collectors (B.10), are examined."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Thermonuclear reaction, nuclear fission, and radioactivity are explored as primary energy sources (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Thermonuclear reaction, nuclear fission, and radioactivity are explored as primary energy sources (A.1)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Radioactivity as a primary energy source (A.1) and radioactive isotopes for nuclear energy utilization (B.9) are central topics."
+      "relevantPathsAI": [
+        "A.1",
+        "B.9"
+      ],
+      "rationaleAI": "Radioactivity as a primary energy source (A.1) and radioactive isotopes for nuclear energy utilization (B.9) are central topics."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Provides the physics underlying thermoelectric devices (C.1), heat exchangers and refrigeration (B.7), and energy conversion generally."
+      "relevantPathsAI": [
+        "C.1",
+        "B.7"
+      ],
+      "rationaleAI": "Provides the physics underlying thermoelectric devices (C.1), heat exchangers and refrigeration (B.7), and energy conversion generally."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "The engineering of energy utilization devices (B) -- including turbines, motors, and generators (C.7) -- is addressed."
+      "relevantPathsAI": [
+        "B",
+        "C.7"
+      ],
+      "rationaleAI": "The engineering of energy utilization devices (B) -- including turbines, motors, and generators (C.7) -- is addressed."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Optoelectronic devices including semiconductor lasers and optical fibres (D.3) and lamps and lighting (C.5) are explored."
+      "relevantPathsAI": [
+        "D.3",
+        "C.5"
+      ],
+      "rationaleAI": "Optoelectronic devices including semiconductor lasers and optical fibres (D.3) and lamps and lighting (C.5) are explored."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Magnets, electromagnets (B.5), and electric motors (B.5.b) that harness magnetic and electrical energy are examined."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Magnets, electromagnets (B.5), and electric motors (B.5.b) that harness magnetic and electrical energy are examined."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Solid-state devices -- transistors, semiconductor diodes, integrated circuits -- for energy concentration and control are the focus (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Solid-state devices -- transistors, semiconductor diodes, integrated circuits -- for energy concentration and control are the focus (D.2)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "The physics of wind and water turbines (B.2), hydraulic devices (B.4.d), and steam engines and turbines (B.4.a-b) is examined."
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "The physics of wind and water turbines (B.2), hydraulic devices (B.4.d), and steam engines and turbines (B.4.a-b) is examined."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "The chemistry of batteries and fuel cells (C.4) and chemical energy utilization devices (B.8) is addressed."
+      "relevantPathsAI": [
+        "C.4",
+        "B.8"
+      ],
+      "rationaleAI": "The chemistry of batteries and fuel cells (C.4) and chemical energy utilization devices (B.8) is addressed."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Solar energy as a recurring source (A.2) and devices for utilizing it (B.10) are central topics."
+      "relevantPathsAI": [
+        "A.2",
+        "B.10"
+      ],
+      "rationaleAI": "Solar energy as a recurring source (A.2) and devices for utilizing it (B.10) are central topics."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Chemical explosives (B.8.b) and the destructive applications of nuclear fission and fusion energy (A.1) are examined."
+      "relevantPathsAI": [
+        "B.8",
+        "A.1"
+      ],
+      "rationaleAI": "Chemical explosives (B.8.b) and the destructive applications of nuclear fission and fusion energy (A.1) are examined."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

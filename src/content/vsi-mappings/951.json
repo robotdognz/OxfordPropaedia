@@ -4,32 +4,54 @@
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "rationale": "Covers archaeological methods essential for studying pre-Inca cultures (A), including Chavin, Paracas, Nazca, Moche, and Tiahuanaco sites (B.2-B.5)."
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Covers archaeological methods essential for studying pre-Inca cultures (A), including Chavin, Paracas, Nazca, Moche, and Tiahuanaco sites (B.2-B.5)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
-      "rationale": "Directly covers the Spanish conquest of the Incas (1532-40), Pizarro's execution of Atahuallpa, and consolidation of Spanish power (C.1.f)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers the Spanish conquest of the Incas (1532-40), Pizarro's execution of Atahuallpa, and consolidation of Spanish power (C.1.f)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Covers the Late Preceramic development of agriculture (B.1) and early Andean settlement patterns before the rise of complex societies."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the Late Preceramic development of agriculture (B.1) and early Andean settlement patterns before the rise of complex societies."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Relevant to the ethnography of the Andean region (A), Incan government and society, and the quipu record-keeping system (C.2.a)."
+      "relevantPathsAI": [
+        "A",
+        "C.2"
+      ],
+      "rationaleAI": "Relevant to the ethnography of the Andean region (A), Incan government and society, and the quipu record-keeping system (C.2.a)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
-      "rationale": "Covers documentary historical sources about the Incas and the Spanish conquest, including chronicles by Las Casas and Garcilaso de la Vega (A, C.1.f)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers documentary historical sources about the Incas and the Spanish conquest, including chronicles by Las Casas and Garcilaso de la Vega (A, C.1.f)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "rationale": "Provides context for understanding the Inca Empire as one of the great pre-modern empires, and the Spanish imperial conquest that destroyed it (C.1.f)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Provides context for understanding the Inca Empire as one of the great pre-modern empires, and the Spanish imperial conquest that destroyed it (C.1.f)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,152 +4,246 @@
     {
       "vsiTitle": "The U.S. Constitution",
       "vsiAuthor": "David J. Bodenhamer",
-      "rationale": "Constitutional law governing the organization and functions of the state is the central subject (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Constitutional law governing the organization and functions of the state is the central subject (A.1)."
     },
     {
       "vsiTitle": "The British Constitution",
       "vsiAuthor": "Martin Loughlin",
-      "rationale": "Examines constitutional law in a parliamentary system, including the Bill of Rights and common law principles (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Examines constitutional law in a parliamentary system, including the Bill of Rights and common law principles (A.1)."
     },
     {
       "vsiTitle": "Administrative Law",
       "vsiAuthor": "Stephen Thomson",
-      "rationale": "Laws governing public administration -- including judicial review, tribunals, and ombudsmen -- are the central subject (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Laws governing public administration -- including judicial review, tribunals, and ombudsmen -- are the central subject (A.2)."
     },
     {
       "vsiTitle": "Public Administration",
       "vsiAuthor": "Stella Z. Theodoulou, Ravi K. Roy",
-      "rationale": "The organization, powers, and functions of public administrative authorities are examined (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The organization, powers, and functions of public administrative authorities are examined (A.2)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
-      "rationale": "Laws governing relations among sovereign states, treaties, and international institutions are the focus (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Laws governing relations among sovereign states, treaties, and international institutions are the focus (B)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
-      "rationale": "The UN represents the most significant attempt to create a supranational legislative and executive authority (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The UN represents the most significant attempt to create a supranational legislative and executive authority (B.2)."
     },
     {
       "vsiTitle": "European Union Law",
       "vsiAuthor": "Anthony Arnull",
-      "rationale": "EU law represents a distinctive attempt to create supranational legislative and judicial authority (B.2, B.3)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "EU law represents a distinctive attempt to create supranational legislative and judicial authority (B.2, B.3)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
-      "rationale": "Laws attempting to limit war crimes and crimes against humanity, and laws promoting public welfare, are examined (B.5, D)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Laws attempting to limit war crimes and crimes against humanity, and laws promoting public welfare, are examined (B.5, D)."
     },
     {
       "vsiTitle": "Military Justice",
       "vsiAuthor": "Eugene R. Fidell",
-      "rationale": "Laws governing offenses by military forces and persons under military discipline are the central subject (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Laws governing offenses by military forces and persons under military discipline are the central subject (C.2)."
     },
     {
       "vsiTitle": "Criminal Justice",
       "vsiAuthor": "Julian V. Roberts",
-      "rationale": "Principles of criminal law and the criminal justice process are examined (C.1, F.2.a)."
+      "relevantPathsAI": [
+        "C.1",
+        "F.2"
+      ],
+      "rationaleAI": "Principles of criminal law and the criminal justice process are examined (C.1, F.2.a)."
     },
     {
       "vsiTitle": "Criminology",
       "vsiAuthor": "Tim Newburn",
-      "rationale": "The study of criminal law, crime prevention, and white-collar crime is addressed (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "The study of criminal law, crime prevention, and white-collar crime is addressed (C)."
     },
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
-      "rationale": "Courts, the legal system, and judicial procedure are broadly addressed (F)."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Courts, the legal system, and judicial procedure are broadly addressed (F)."
     },
     {
       "vsiTitle": "Comparative Law",
       "vsiAuthor": "Sabrina Ragone and Guido Smorto",
-      "rationale": "Comparisons between common law and civil law systems illuminate criminal law doctrines (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Comparisons between common law and civil law systems illuminate criminal law doctrines (C.1)."
     },
     {
       "vsiTitle": "The American Judicial System",
       "vsiAuthor": "Charles L. Zelden",
-      "rationale": "The organization and administration of the legal system -- including courts, judges, and judicial procedure -- are examined (F.1, F.2)."
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "The organization and administration of the legal system -- including courts, judges, and judicial procedure -- are examined (F.1, F.2)."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
-      "rationale": "The organization and role of the highest court in a federal judicial system is the central subject (F.1)."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "The organization and role of the highest court in a federal judicial system is the central subject (F.1)."
     },
     {
       "vsiTitle": "The Jury",
       "vsiAuthor": "Renee Lettow Lerner",
-      "rationale": "The jury system as part of criminal and civil judicial procedure is examined (F.2)."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "The jury system as part of criminal and civil judicial procedure is examined (F.2)."
     },
     {
       "vsiTitle": "Habeas corpus",
       "vsiAuthor": "Amanda Tyler",
-      "rationale": "Habeas corpus as a fundamental legal procedure protecting liberty and constraining state power is the central subject (F.2.a)."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Habeas corpus as a fundamental legal procedure protecting liberty and constraining state power is the central subject (F.2.a)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Laws providing for general social security and welfare are examined (D.1)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Laws providing for general social security and welfare are examined (D.1)."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "Laws promoting public health and safety are addressed (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Laws promoting public health and safety are addressed (D.2)."
     },
     {
       "vsiTitle": "Employment Law",
       "vsiAuthor": "David Cabrelli",
-      "rationale": "Laws regulating the health, safety, and welfare of workers are the focus (D.3)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Laws regulating the health, safety, and welfare of workers are the focus (D.3)."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
-      "rationale": "Laws governing health, consent, negligence, and patient welfare are examined (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Laws governing health, consent, negligence, and patient welfare are examined (D.2)."
     },
     {
       "vsiTitle": "Environmental Law",
       "vsiAuthor": "Elizabeth Fisher",
-      "rationale": "Public welfare laws related to environmental protection and public safety are addressed (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Public welfare laws related to environmental protection and public safety are addressed (D.2)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Laws governing taxation -- including income tax, corporation tax, and tax evasion -- are directly relevant (E)."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Laws governing taxation -- including income tax, corporation tax, and tax evasion -- are directly relevant (E)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
-      "rationale": "The rule of law as a foundational principle underlying constitutional and administrative law is the central subject (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The rule of law as a foundational principle underlying constitutional and administrative law is the central subject (A)."
     },
     {
       "vsiTitle": "Privacy",
       "vsiAuthor": "Raymond Wacks",
-      "rationale": "Data protection and privacy rights as matters of public law and constitutional protection are explored (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Data protection and privacy rights as matters of public law and constitutional protection are explored (A.1)."
     },
     {
       "vsiTitle": "Free speech",
       "vsiAuthor": "Nigel Warburton",
-      "rationale": "Freedom of speech as a constitutional right and its legal limits are examined (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Freedom of speech as a constitutional right and its legal limits are examined (A.1)."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
-      "rationale": "The attempt to limit and punish war crimes and crimes against humanity is a central theme (B.5)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "The attempt to limit and punish war crimes and crimes against humanity is a central theme (B.5)."
     },
     {
       "vsiTitle": "Forensic science",
       "vsiAuthor": "Jim Fraser",
-      "rationale": "Scientific methods used in criminal investigations and the administration of criminal justice are examined (C, F.2.a)."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Scientific methods used in criminal investigations and the administration of criminal justice are examined (C, F.2.a)."
     },
     {
       "vsiTitle": "Forensic psychology",
       "vsiAuthor": "David Canter",
-      "rationale": "Psychological methods applied in criminal proceedings and judicial processes are explored (F.2)."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Psychological methods applied in criminal proceedings and judicial processes are explored (F.2)."
     },
     {
       "vsiTitle": "Blasphemy",
       "vsiAuthor": "Yvonne Sherwood",
-      "rationale": "Blasphemy laws as a form of criminal law governing religious expression are examined (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Blasphemy laws as a form of criminal law governing religious expression are examined (C.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

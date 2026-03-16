@@ -4,127 +4,197 @@
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Directly covers structures of all major body systems: skeleton, heart, nervous system, lymphatic system, abdomen, pelvis, and trunk (A through K)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers structures of all major body systems: skeleton, heart, nervous system, lymphatic system, abdomen, pelvis, and trunk (A through K)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Directly covers functions of all major body systems including cardiovascular, respiratory, digestive, endocrine, and nervous systems (A through K)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers functions of all major body systems including cardiovascular, respiratory, digestive, endocrine, and nervous systems (A through K)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Examines the central nervous system, cerebral cortex, basal ganglia, sensory processing, and spinal cord architecture (J.1, J.2, J.3)."
+      "relevantPathsAI": [
+        "J.1",
+        "J.2",
+        "J.3"
+      ],
+      "rationaleAI": "Examines the central nervous system, cerebral cortex, basal ganglia, sensory processing, and spinal cord architecture (J.1, J.2, J.3)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
-      "rationale": "Directly covers blood components, haemoglobin, blood pressure, oxygen transport, and transfusion, corresponding to A.3 and A.4."
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Directly covers blood components, haemoglobin, blood pressure, oxygen transport, and transfusion, corresponding to A.3 and A.4."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
-      "rationale": "Details the lymphatic system including lymphocytes, antibody production, and immune defense mechanisms (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Details the lymphatic system including lymphocytes, antibody production, and immune defense mechanisms (B)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Directly covers thyroid, adrenal, pituitary, pancreatic islets, growth hormone, and reproductive hormones (E.1, E.2)."
+      "relevantPathsAI": [
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Directly covers thyroid, adrenal, pituitary, pancreatic islets, growth hormone, and reproductive hormones (E.1, E.2)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Directly covers the eye, retina, lens, optic nerve, colour vision, and visual processing (J.4)."
+      "relevantPathsAI": [
+        "J.4"
+      ],
+      "rationaleAI": "Directly covers the eye, retina, lens, optic nerve, colour vision, and visual processing (J.4)."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
-      "rationale": "Directly covers olfactory processes and the smell sense (J.6.e)."
+      "relevantPathsAI": [
+        "J.6"
+      ],
+      "rationaleAI": "Directly covers olfactory processes and the smell sense (J.6.e)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Explains cell biology underlying all body tissues, including blood cells, the nuclear envelope, and the endoplasmic reticulum (K)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explains cell biology underlying all body tissues, including blood cells, the nuclear envelope, and the endoplasmic reticulum (K)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Describes dental structures including canines, molars, enamel, and dentine, part of the mouth and digestive system (D.1.a)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Describes dental structures including canines, molars, enamel, and dentine, part of the mouth and digestive system (D.1.a)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Enzymes drive the digestive process, metabolic functions, and biochemical reactions throughout all body systems (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Enzymes drive the digestive process, metabolic functions, and biochemical reactions throughout all body systems (D.2)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Illuminates the molecular basis of metabolism, cell membranes, and chemical bonding relevant to body fluids and tissues (K)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Illuminates the molecular basis of metabolism, cell membranes, and chemical bonding relevant to body fluids and tissues (K)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Addresses biochemical reactions, DNA, and cellular chemistry underlying the composition and function of body tissues and fluids (K)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses biochemical reactions, DNA, and cellular chemistry underlying the composition and function of body tissues and fluids (K)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Explains metabolism, vitamin function, and protein processing relevant to the digestive system's absorption and nutrient utilization (D.2)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Explains metabolism, vitamin function, and protein processing relevant to the digestive system's absorption and nutrient utilization (D.2)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
-      "rationale": "Investigates pain perception and pain management, relevant to cutaneous senses including touch, heat, cold, and nociception (J.6.a)."
+      "relevantPathsAI": [
+        "J.6"
+      ],
+      "rationaleAI": "Investigates pain perception and pain management, relevant to cutaneous senses including touch, heat, cold, and nociception (J.6.a)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Explains acoustics, frequency, pitch, and resonance relevant to the ear and the process of audition (J.5)."
+      "relevantPathsAI": [
+        "J.5"
+      ],
+      "rationaleAI": "Explains acoustics, frequency, pitch, and resonance relevant to the ear and the process of audition (J.5)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Analyzes the visual system, colour perception, motion perception, and the physiology of sensory processing (J.4, J.6)."
+      "relevantPathsAI": [
+        "J.4",
+        "J.6"
+      ],
+      "rationaleAI": "Analyzes the visual system, colour perception, motion perception, and the physiology of sensory processing (J.4, J.6)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Describes biological rhythms regulated by the suprachiasmatic nucleus of the hypothalamus and the pineal gland's melatonin secretion (E.1.d, E.1.h)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Describes biological rhythms regulated by the suprachiasmatic nucleus of the hypothalamus and the pineal gland's melatonin secretion (E.1.d, E.1.h)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Shows how body structures differentiate during embryonic development, including nervous system formation and Hox gene patterning (J.1, H)."
+      "relevantPathsAI": [
+        "J.1"
+      ],
+      "rationaleAI": "Shows how body structures differentiate during embryonic development, including nervous system formation and Hox gene patterning (J.1, H)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
-      "rationale": "The gut microbiome is integral to digestive system function and nutrition absorption (D)."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "The gut microbiome is integral to digestive system function and nutrition absorption (D)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "Explains the sympathetic nervous system, action potentials, spinal cord anatomy, and muscle physiology from an anaesthetic perspective (J.2, J.3, H.7)."
+      "relevantPathsAI": [
+        "J.2",
+        "J.3",
+        "H.7"
+      ],
+      "rationaleAI": "Explains the sympathetic nervous system, action potentials, spinal cord anatomy, and muscle physiology from an anaesthetic perspective (J.2, J.3, H.7)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Explores brain-based memory processes, including the hippocampus and long-term potentiation, relevant to the central nervous system's cognitive functions (J.1)."
+      "relevantPathsAI": [
+        "J.1"
+      ],
+      "rationaleAI": "Explores brain-based memory processes, including the hippocampus and long-term potentiation, relevant to the central nervous system's cognitive functions (J.1)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Applies fluid dynamics principles to blood circulation, respiratory airflow, and the physics of body fluid transport (A.4, C.3)."
+      "relevantPathsAI": [
+        "A.4",
+        "C.3"
+      ],
+      "rationaleAI": "Applies fluid dynamics principles to blood circulation, respiratory airflow, and the physics of body fluid transport (A.4, C.3)."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
-      "rationale": "Takes a systems-level perspective on the digestive system and metabolic processes, modeling how organs interact as integrated networks (D, E)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Takes a systems-level perspective on the digestive system and metabolic processes, modeling how organs interact as integrated networks (D, E)."
     },
     {
       "vsiTitle": "The Body",
       "vsiAuthor": "Chris Shilling",
-      "rationale": "Explores the sociology and cultural significance of the human body, providing broader context for understanding the structures and functions covered in this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores the sociology and cultural significance of the human body, providing broader context for understanding the structures and functions covered in this section."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

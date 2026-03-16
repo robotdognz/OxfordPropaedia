@@ -9,8 +9,9 @@ import VsiRecommendations from '../../components/content/VsiRecommendations';
 import CrossRefLink from '../../components/content/CrossRefLink';
 import navigation from '../../data/navigation.json';
 import crossReferences from '../../data/cross-references.json';
-import wikiData from '../../data/wikipedia-vital-articles.json';
+import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
+import { computeWikiRelevanceScore, tokenize } from '../../utils/wikipediaOutlineFilter';
 
 export async function getStaticPaths() {
   const sections = await getCollection('sections');
@@ -82,6 +83,49 @@ try {
   }
 } catch {
   // No VSI mappings yet
+}
+
+// Pre-compute Wikipedia article scores for this section
+function collectOutlineText(nodes: any[]): string {
+  let t = '';
+  for (const nd of nodes || []) { t += ' ' + (nd.text || ''); t += collectOutlineText(nd.children); }
+  return t;
+}
+const sectionTokens = tokenize(section.title + ' ' + collectOutlineText(section.outline));
+
+// Load Wikipedia mappings for this section from the per-section file
+const wikiCatalogLookup = new Map((wikiCatalog as any).articles.map((a: any) => [a.title, a]));
+let wikiArticlesForSection: any[] = [];
+try {
+  const allWikiMappings = await getCollection('wiki-mappings');
+  const wikiMapping = allWikiMappings.find((m) => m.data.sectionCode === section.sectionCode);
+  if (wikiMapping) {
+    wikiArticlesForSection = wikiMapping.data.mappings.map((entry) => {
+      const catalogEntry = wikiCatalogLookup.get(entry.articleTitle);
+      return {
+        title: entry.articleTitle,
+        displayTitle: catalogEntry?.displayTitle,
+        url: catalogEntry?.url || `https://en.wikipedia.org/wiki/${entry.articleTitle.replace(/ /g, '_')}`,
+        category: catalogEntry?.category,
+        lowestLevel: catalogEntry?.lowestLevel || 3,
+        extract: catalogEntry?.extract,
+        toc: catalogEntry?.toc,
+        wikiCategories: catalogEntry?.wikiCategories,
+        rationale: entry.rationaleAI || '',
+        relevantPathsAI: entry.relevantPathsAI || [],
+        _score: computeWikiRelevanceScore(
+          { title: entry.articleTitle, category: catalogEntry?.category, toc: catalogEntry?.toc, wikiCategories: catalogEntry?.wikiCategories },
+          sectionTokens,
+        ),
+      };
+    });
+    const maxWikiScore = Math.max(...wikiArticlesForSection.map((a: any) => a._score), 1);
+    wikiArticlesForSection = wikiArticlesForSection
+      .map((a: any) => ({ ...a, matchPercent: Math.round(Math.min(a._score / maxWikiScore, 1) * 100) }))
+      .sort((a: any, b: any) => b._score - a._score);
+  }
+} catch {
+  // No wiki mappings yet
 }
 
 const breadcrumbItems = [
@@ -192,34 +236,16 @@ const breadcrumbItems = [
       })()}
 
       <!-- Wikipedia Article Recommendations -->
-      {(() => {
-        const articleMap = new Map();
-        for (const article of (wikiData as any).levels[1].articles) {
-          if ((article.sectionCodes || []).includes(section.sectionCode)) {
-            articleMap.set(article.title, { ...article, lowestLevel: 1 });
-          }
-        }
-        for (const article of (wikiData as any).levels[2].articles) {
-          if ((article.sectionCodes || []).includes(section.sectionCode) && !articleMap.has(article.title)) {
-            articleMap.set(article.title, { ...article, lowestLevel: 2 });
-          }
-        }
-        for (const article of (wikiData as any).levels[3].articles) {
-          if ((article.sectionCodes || []).includes(section.sectionCode) && !articleMap.has(article.title)) {
-            articleMap.set(article.title, { ...article, lowestLevel: 3 });
-          }
-        }
-        const wikiArticles = [...articleMap.values()];
-        return wikiArticles.length > 0 ? (
-          <section class="mb-8">
-            <WikipediaRefs
-              client:load
-              articles={wikiArticles}
-              baseUrl={base}
-            />
-          </section>
-        ) : null;
-      })()}
+      {wikiArticlesForSection.length > 0 && (
+        <section class="mb-8">
+          <WikipediaRefs
+            client:load
+            articles={wikiArticlesForSection}
+            sectionCode={section.sectionCode}
+            baseUrl={base}
+          />
+        </section>
+      )}
 
       <!-- Macropaedia References -->
       {section.macropaediaReferences.length > 0 && (

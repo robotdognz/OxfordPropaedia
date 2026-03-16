@@ -4,82 +4,147 @@
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Traces the historical rise of manufacturing (B) and fabrication industries (C), explaining how textiles, steel, and chemicals became the backbone of industrial economies."
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Traces the historical rise of manufacturing (B) and fabrication industries (C), explaining how textiles, steel, and chemicals became the backbone of industrial economies."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Engineering principles underpin aerospace (B.1), automotive (B.2), and electronics (C.6) industries, connecting design theory to industrial production."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "C.6"
+      ],
+      "rationaleAI": "Engineering principles underpin aerospace (B.1), automotive (B.2), and electronics (C.6) industries, connecting design theory to industrial production."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "The chemical industry (D.1) and processing sectors—plastics (D.5), rubber (D.6), dyes and pigments (D.8)—rely on the reactions and principles this volume introduces."
+      "relevantPathsAI": [
+        "D.1",
+        "D.5",
+        "D.6",
+        "D.8"
+      ],
+      "rationaleAI": "The chemical industry (D.1) and processing sectors—plastics (D.5), rubber (D.6), dyes and pigments (D.8)—rely on the reactions and principles this volume introduces."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Organic chemistry drives the petroleum (D.2), plastics (D.5), rubber (D.6), and man-made fibre (D.9) processing industries."
+      "relevantPathsAI": [
+        "D.2",
+        "D.5",
+        "D.6",
+        "D.9"
+      ],
+      "rationaleAI": "Organic chemistry drives the petroleum (D.2), plastics (D.5), rubber (D.6), and man-made fibre (D.9) processing industries."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Materials science connects the steel industry (C.2), textile industry (C.1), and plastics (D.5), explaining how molecular structure determines industrial performance."
+      "relevantPathsAI": [
+        "C.2",
+        "C.1",
+        "D.5"
+      ],
+      "rationaleAI": "Materials science connects the steel industry (C.2), textile industry (C.1), and plastics (D.5), explaining how molecular structure determines industrial performance."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "A core text on D.4 (the pharmaceuticals industry), tracing the pipeline from drug discovery and development through manufacturing and regulation."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "A core text on D.4 (the pharmaceuticals industry), tracing the pipeline from drug discovery and development through manufacturing and regulation."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Industrial research and development (I) drives competitive advantage across manufacturing, and this volume examines how innovation processes unfold in practice."
+      "relevantPathsAI": [],
+      "rationaleAI": "Industrial research and development (I) drives competitive advantage across manufacturing, and this volume examines how innovation processes unfold in practice."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Economic forces—trade, labor costs, capital flows—shaped the evolution of manufacturing (B) and processing industries (D) across historical periods."
+      "relevantPathsAI": [
+        "B",
+        "D"
+      ],
+      "rationaleAI": "Economic forces—trade, labor costs, capital flows—shaped the evolution of manufacturing (B) and processing industries (D) across historical periods."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Manufacturing (B) and service industries (F) are organized within capitalist market structures, and this volume explains how capital, labor, and competition interact."
+      "relevantPathsAI": [
+        "B",
+        "F"
+      ],
+      "rationaleAI": "Manufacturing (B) and service industries (F) are organized within capitalist market structures, and this volume explains how capital, labor, and competition interact."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
-      "rationale": "The clothing and footwear industry (B.3) and textile industry (C.1) span the journey from design through production, where aesthetics meets industrial process."
+      "relevantPathsAI": [
+        "B.3",
+        "C.1"
+      ],
+      "rationaleAI": "The clothing and footwear industry (B.3) and textile industry (C.1) span the journey from design through production, where aesthetics meets industrial process."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "The lumber industry (C.8) and paper industry (D.3) depend on forest resources, linking natural resource management to industrial output."
+      "relevantPathsAI": [
+        "C.8",
+        "D.3"
+      ],
+      "rationaleAI": "The lumber industry (C.8) and paper industry (D.3) depend on forest resources, linking natural resource management to industrial output."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Biotechnology and synthetic biology are transforming the pharmaceuticals industry (D.4) and cosmetics and personal care industry (D.11)."
+      "relevantPathsAI": [
+        "D.4",
+        "D.11"
+      ],
+      "rationaleAI": "Biotechnology and synthetic biology are transforming the pharmaceuticals industry (D.4) and cosmetics and personal care industry (D.11)."
     },
     {
       "vsiTitle": "Marketing",
       "vsiAuthor": "Kenneth Le Meunier-FitzHugh",
-      "rationale": "Merchandising and marketing of consumer goods (H) connects industrial production to the consumers who purchase the output."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Merchandising and marketing of consumer goods (H) connects industrial production to the consumers who purchase the output."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Environmental regulation shapes the chemical (D.1), petroleum (D.2), and surface-coating (D.7) processing industries, imposing costs and driving cleaner technologies."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.7"
+      ],
+      "rationaleAI": "Environmental regulation shapes the chemical (D.1), petroleum (D.2), and surface-coating (D.7) processing industries, imposing costs and driving cleaner technologies."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
-      "rationale": "Security and protection systems (F.5) represent a growing segment of the service industries, driven by technological advances in monitoring."
+      "relevantPathsAI": [
+        "F.5"
+      ],
+      "rationaleAI": "Security and protection systems (F.5) represent a growing segment of the service industries, driven by technological advances in monitoring."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Utilities industries (G), including electric power generation and distribution, supply the energy on which all major industries depend."
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Utilities industries (G), including electric power generation and distribution, supply the energy on which all major industries depend."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

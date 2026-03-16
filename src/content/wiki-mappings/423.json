@@ -1,0 +1,452 @@
+{
+  "_curatedBy": "ai",
+  "sectionCode": "423",
+  "mappings": [
+    {
+      "articleTitle": "Human",
+      "rationaleAI": "Human diseases affect the human organism and are directly relevant to this article.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.2.b",
+        "D",
+        "D.6",
+        "E",
+        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.d"
+      ]
+    },
+    {
+      "articleTitle": "Medicine",
+      "rationaleAI": "Medical science provides the understanding of human diseases including their causes, mechanisms, and treatments.",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.a",
+        "F.9.a"
+      ]
+    },
+    {
+      "articleTitle": "Disease",
+      "rationaleAI": "Human diseases, their classification, etiology, and pathology, are the direct subject of this section.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.j",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4"
+      ]
+    },
+    {
+      "articleTitle": "Disability",
+      "rationaleAI": "Disability relates to human diseases and health conditions.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "D",
+        "D.6",
+        "E",
+        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.d"
+      ]
+    },
+    {
+      "articleTitle": "Allergy",
+      "rationaleAI": "Allergies are a category of human disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.6",
+        "D.7",
+        "D.8"
+      ]
+    },
+    {
+      "articleTitle": "Arthritis",
+      "rationaleAI": "Arthritis is a chronic human disease affecting joints.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g"
+      ]
+    },
+    {
+      "articleTitle": "Asthma",
+      "rationaleAI": "Asthma is a chronic respiratory disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g"
+      ]
+    },
+    {
+      "articleTitle": "Cancer",
+      "rationaleAI": "Cancer is a major category of human disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.2.b",
+        "C.2.c",
+        "C.2.d",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h",
+        "C.2.i"
+      ]
+    },
+    {
+      "articleTitle": "Cardiovascular disease",
+      "rationaleAI": "Cardiovascular diseases are the leading cause of human death globally.",
+      "relevantPathsAI": [
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h",
+        "C.2.i",
+        "C.2.l",
+        "D.7",
+        "D.8"
+      ]
+    },
+    {
+      "articleTitle": "Myocardial infarction",
+      "rationaleAI": "Heart attack is a critical cardiovascular disease event.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "C.2.k",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.6"
+      ]
+    },
+    {
+      "articleTitle": "Stroke",
+      "rationaleAI": "Stroke is a major cerebrovascular disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h"
+      ]
+    },
+    {
+      "articleTitle": "Diabetes",
+      "rationaleAI": "Diabetes is a major chronic metabolic disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.j",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4"
+      ]
+    },
+    {
+      "articleTitle": "Gastroenteritis",
+      "rationaleAI": "Gastroenteritis is a common inflammatory disease of the digestive system.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.6",
+        "D.7",
+        "D.8"
+      ]
+    },
+    {
+      "articleTitle": "Infection",
+      "rationaleAI": "Infectious diseases are a major category of human disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.j",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4"
+      ]
+    },
+    {
+      "articleTitle": "Common cold",
+      "rationaleAI": "The common cold is a widespread viral infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.6",
+        "D.7",
+        "D.9",
+        "D.11"
+      ]
+    },
+    {
+      "articleTitle": "Influenza",
+      "rationaleAI": "Influenza is a major infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.6",
+        "D.7",
+        "D.9"
+      ]
+    },
+    {
+      "articleTitle": "Malaria",
+      "rationaleAI": "Malaria is a major parasitic disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.2.a",
+        "C.2.j",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
+      ]
+    },
+    {
+      "articleTitle": "Pneumonia",
+      "rationaleAI": "Pneumonia is a major respiratory infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.2.g",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "D.6"
+      ]
+    },
+    {
+      "articleTitle": "Sexually transmitted infection",
+      "rationaleAI": "STIs are a category of infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.6",
+        "D.7",
+        "D.11",
+        "E"
+      ]
+    },
+    {
+      "articleTitle": "HIV/AIDS",
+      "rationaleAI": "HIV/AIDS is a major infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h"
+      ]
+    },
+    {
+      "articleTitle": "Smallpox",
+      "rationaleAI": "Smallpox was a devastating infectious disease in human history.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.j",
+        "D",
+        "D.2"
+      ]
+    },
+    {
+      "articleTitle": "Tuberculosis",
+      "rationaleAI": "Tuberculosis is a major infectious disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.j",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4"
+      ]
+    },
+    {
+      "articleTitle": "Mental disorder",
+      "rationaleAI": "Mental disorders are a major category of human disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h"
+      ]
+    },
+    {
+      "articleTitle": "Autism",
+      "rationaleAI": "Autism is a neurodevelopmental condition classified as a disease.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1",
+        "D",
+        "D.6",
+        "E",
+        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.d"
+      ]
+    },
+    {
+      "articleTitle": "Intellectual disability",
+      "rationaleAI": "Intellectual disability is a medical condition.",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.6",
+        "D.8",
+        "D.9",
+        "E"
+      ]
+    },
+    {
+      "articleTitle": "Injury",
+      "rationaleAI": "Injuries are addressed within the scope of human diseases and conditions.",
+      "relevantPathsAI": [
+        "C.2.b"
+      ]
+    },
+    {
+      "articleTitle": "Physical disability",
+      "rationaleAI": "Physical disabilities are medical conditions affecting body function.",
+      "relevantPathsAI": [
+        "C.2.g"
+      ]
+    },
+    {
+      "articleTitle": "Obesity",
+      "rationaleAI": "Obesity is a risk factor for numerous diseases.",
+      "relevantPathsAI": [
+        "C.1",
+        "D",
+        "D.5",
+        "D.7",
+        "E",
+        "F.1",
+        "F.1.b",
+        "F.2",
+        "F.3",
+        "F.4"
+      ]
+    },
+    {
+      "articleTitle": "Addiction",
+      "rationaleAI": "Addiction is classified as a medical condition.",
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.e",
+        "C.2.f",
+        "C.2.g",
+        "C.2.h"
+      ]
+    },
+    {
+      "articleTitle": "Smoking",
+      "rationaleAI": "Smoking causes numerous diseases.",
+      "relevantPathsAI": [
+        "F.9.a"
+      ]
+    }
+  ]
+}

@@ -4,67 +4,121 @@
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "The primary VSI for this section, directly covering growth, differentiation, morphogenesis (B.1-3), blastula/gastrulation (D.2.a), Hox genes in organ formation (D.3), and identical twins (F.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "D.2",
+        "D.3",
+        "F.4"
+      ],
+      "rationaleAI": "The primary VSI for this section, directly covering growth, differentiation, morphogenesis (B.1-3), blastula/gastrulation (D.2.a), Hox genes in organ formation (D.3), and identical twins (F.4)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Directly addresses cell differentiation (B.3), biological regeneration (F.1), and development in vitro including cell and tissue cultures (F.5)."
+      "relevantPathsAI": [
+        "B.3",
+        "F.1",
+        "F.5"
+      ],
+      "rationaleAI": "Directly addresses cell differentiation (B.3), biological regeneration (F.1), and development in vitro including cell and tissue cultures (F.5)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Explains the cell cycle, cell growth (B.1), the nucleus and nuclear envelope during division, and the cellular basis of differentiation (B.3)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Explains the cell cycle, cell growth (B.1), the nucleus and nuclear envelope during division, and the cellular basis of differentiation (B.3)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Treats plant development (C), including pollination mechanisms (C.2.b), seed germination and dispersal (C.3.b), and the sporophyte plant body (C.4)."
+      "relevantPathsAI": [
+        "C",
+        "C.2",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Treats plant development (C), including pollination mechanisms (C.2.b), seed germination and dispersal (C.3.b), and the sporophyte plant body (C.4)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Addresses genetic control and integration of development (B.4) including gene expression patterns, molecular biology of differentiation, and regulation during morphogenesis."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Addresses genetic control and integration of development (B.4) including gene expression patterns, molecular biology of differentiation, and regulation during morphogenesis."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Details growth hormone and insulin-like growth factor in controlling growth (B.1), along with hormonal regulation of postembryonic development and metamorphosis (D.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "D.4"
+      ],
+      "rationaleAI": "Details growth hormone and insulin-like growth factor in controlling growth (B.1), along with hormonal regulation of postembryonic development and metamorphosis (D.4)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
-      "rationale": "Relevant to biological malformation (F.3) where control of cell growth and differentiation fails, leading to abnormal development."
+      "relevantPathsAI": [
+        "F.3"
+      ],
+      "rationaleAI": "Relevant to biological malformation (F.3) where control of cell growth and differentiation fails, leading to abnormal development."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Elucidates molecular mechanisms of gene regulation underlying the control and integration of developmental processes (B.4), including transcription factors and signaling cascades."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Elucidates molecular mechanisms of gene regulation underlying the control and integration of developmental processes (B.4), including transcription factors and signaling cascades."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Surveys the diversity of embryonic development and organ formation across invertebrate phyla (D.2-3), including variations in gastrulation and metamorphosis."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Surveys the diversity of embryonic development and organ formation across invertebrate phyla (D.2-3), including variations in gastrulation and metamorphosis."
     },
     {
       "vsiTitle": "Ageing",
       "vsiAuthor": "Nancy Pachana",
-      "rationale": "Directly relevant to aging and decline (E) including senescence (E.1), causes of aging (E.2), life expectancy, and the duration of life (E.3)."
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Directly relevant to aging and decline (E) including senescence (E.1), causes of aging (E.2), life expectancy, and the duration of life (E.3)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Describes mammalian embryonic adaptations including placental development (D.2.b), postembryonic growth, and senescence in mammals (E.1)."
+      "relevantPathsAI": [
+        "D.2",
+        "E.1"
+      ],
+      "rationaleAI": "Describes mammalian embryonic adaptations including placental development (D.2.b), postembryonic growth, and senescence in mammals (E.1)."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Highlights amphibian metamorphosis as a paradigmatic example of postembryonic transformation (D.4) and developmental adaptation to aquatic and terrestrial life."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Highlights amphibian metamorphosis as a paradigmatic example of postembryonic transformation (D.4) and developmental adaptation to aquatic and terrestrial life."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "rationale": "Shows how symbiotic interactions with microbiomes influence biological development and growth processes in both plants and animals (B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Shows how symbiotic interactions with microbiomes influence biological development and growth processes in both plants and animals (B.4)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

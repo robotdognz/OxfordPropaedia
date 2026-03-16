@@ -4,52 +4,95 @@
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Directly covers metabolism (B) including catabolism (B.1), cellular respiration (B.2), anabolism/biosynthesis (B.3), and biochemical reactions."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers metabolism (B) including catabolism (B.1), cellular respiration (B.2), anabolism/biosynthesis (B.3), and biochemical reactions."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Enzymes catalyze all metabolic reactions including photosynthesis (A), cellular respiration (B.2), and biosynthetic pathways (B.3)."
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Enzymes catalyze all metabolic reactions including photosynthesis (A), cellular respiration (B.2), and biosynthetic pathways (B.3)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Covers photosynthesis in green plants (A) including the chloroplast (A.4), photosynthetic pigments (A.5), and the carbon reduction cycle (A.7)."
+      "relevantPathsAI": [
+        "A",
+        "A.4",
+        "A.5",
+        "A.7"
+      ],
+      "rationaleAI": "Covers photosynthesis in green plants (A) including the chloroplast (A.4), photosynthetic pigments (A.5), and the carbon reduction cycle (A.7)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Addresses the molecular basis of metabolism including energy carriers, substrates of catabolism (B.1), and products of anabolism (B.3)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Addresses the molecular basis of metabolism including energy carriers, substrates of catabolism (B.1), and products of anabolism (B.3)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Covers cellular respiration in mitochondria (B.2) and the regulation of metabolic processes (B.4) within cells."
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Covers cellular respiration in mitochondria (B.2) and the regulation of metabolic processes (B.4) within cells."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Provides the thermodynamic principles underlying bioenergetics (A.6), energy conservation in cellular respiration (B.2), and free energy in metabolism."
+      "relevantPathsAI": [
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Provides the thermodynamic principles underlying bioenergetics (A.6), energy conservation in cellular respiration (B.2), and free energy in metabolism."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Covers the combustion of food materials (B.2) and metabolism of proteins, vitamins, and dietary components central to bioenergetics."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the combustion of food materials (B.2) and metabolism of proteins, vitamins, and dietary components central to bioenergetics."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Relevant to the regulation of metabolism (B.4), covering how metabolic processes are temporally organized and regulated."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Relevant to the regulation of metabolism (B.4), covering how metabolic processes are temporally organized and regulated."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Addresses the molecular mechanisms underlying biosynthesis of cell components (B.3) and genetic regulation of metabolism (B.4)."
+      "relevantPathsAI": [
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Addresses the molecular mechanisms underlying biosynthesis of cell components (B.3) and genetic regulation of metabolism (B.4)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "rationale": "Relevant to photosynthesis (A) through the endosymbiotic origin of chloroplasts, and metabolic exchanges in symbiotic relationships."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Relevant to photosynthesis (A) through the endosymbiotic origin of chloroplasts, and metabolic exchanges in symbiotic relationships."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

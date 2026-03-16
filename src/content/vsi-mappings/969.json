@@ -4,67 +4,105 @@
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
-      "rationale": "Directly addresses the geography, peoples, and history of Southeast Asia from Myanmar to the Philippines (A-B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses the geography, peoples, and history of Southeast Asia from Myanmar to the Philippines (A-B)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "rationale": "British colonial rule in Burma and Malaya, the Anglo-Burmese Wars, and British power over Malay sultanates are central to A.1."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "British colonial rule in Burma and Malaya, the Anglo-Burmese Wars, and British power over Malay sultanates are central to A.1."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "rationale": "Multiple European imperial enterprises in Southeast Asia -- British, French, Dutch, Spanish, and Portuguese -- shaped every part of outline A-B."
+      "relevantPathsAI": [],
+      "rationaleAI": "Multiple European imperial enterprises in Southeast Asia -- British, French, Dutch, Spanish, and Portuguese -- shaped every part of outline A-B."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "rationale": "The effects of European colonialism on Southeast Asian societies and the destruction of traditional institutions connect to outline A-B."
+      "relevantPathsAI": [],
+      "rationaleAI": "The effects of European colonialism on Southeast Asian societies and the destruction of traditional institutions connect to outline A-B."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "rationale": "Nascent independence movements across Southeast Asia -- including the Philippine Revolution and Vietnamese nationalism -- are central to B.1.b.iii."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Nascent independence movements across Southeast Asia -- including the Philippine Revolution and Vietnamese nationalism -- are central to B.1.b.iii."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "rationale": "The rise of nationalist movements in the Philippines (19th century) and other Southeast Asian nations under colonial rule shaped the politics of B.1.b.ii."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "The rise of nationalist movements in the Philippines (19th century) and other Southeast Asian nations under colonial rule shaped the politics of B.1.b.ii."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "rationale": "Theravada Buddhism in Siam and the destruction of the church-state relationship in Burma under British rule connect to A.1.a.ii and A.3."
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Theravada Buddhism in Siam and the destruction of the church-state relationship in Burma under British rule connect to A.1.a.ii and A.3."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "Islamic societies of the Indonesian Archipelago and the Malay sultanates are central to A.1.b and B.2."
+      "relevantPathsAI": [
+        "A.1",
+        "B.2"
+      ],
+      "rationaleAI": "Islamic societies of the Indonesian Archipelago and the Malay sultanates are central to A.1.b and B.2."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "The Dutch East India Company, the Culture System in Java, and colonial economic exploitation illuminate outline B.2."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "The Dutch East India Company, the Culture System in Java, and colonial economic exploitation illuminate outline B.2."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "rationale": "Portuguese and Spanish exploration and commercial activities in Southeast Asia initiated the transformations described in B.1.a."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Portuguese and Spanish exploration and commercial activities in Southeast Asia initiated the transformations described in B.1.a."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
-      "rationale": "Missionary activities in the Philippines and Vietnam, where Portuguese and French missionaries played significant roles, connect to A.2.a and B.1.b.ii."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Missionary activities in the Philippines and Vietnam, where Portuguese and French missionaries played significant roles, connect to A.2.a and B.1.b.ii."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Anglo-French activity in Southeast Asia, territorial acquisitions, and diplomatic maneuvering among European powers shaped outline A.2-A.3."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Anglo-French activity in Southeast Asia, territorial acquisitions, and diplomatic maneuvering among European powers shaped outline A.2-A.3."
     },
     {
       "vsiTitle": "Modern France",
       "vsiAuthor": "Vanessa R. Schwartz",
-      "rationale": "French colonial rule in Indochina -- protectorates in Annam, Tonkin, Cambodia, and Laos -- is central to outline A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "French colonial rule in Indochina -- protectorates in Annam, Tonkin, Cambodia, and Laos -- is central to outline A.2."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

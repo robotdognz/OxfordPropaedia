@@ -4,102 +4,155 @@
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
-      "rationale": "Directly covers the propositional calculus, predicate calculus, modal logic, necessity, and decision theory central to sections A and C."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers the propositional calculus, predicate calculus, modal logic, necessity, and decision theory central to sections A and C."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
-      "rationale": "Directly addresses completeness, consistency, decidability, and undecidability of formal mathematical systems (B.3), including Hilbert's programme."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly addresses completeness, consistency, decidability, and undecidability of formal mathematical systems (B.3), including Hilbert's programme."
     },
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
-      "rationale": "Set theory, formal systems, and mathematical abstraction underpin set theory and natural-number arithmetic (A.5) and the formal language concepts in B."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Set theory, formal systems, and mathematical abstraction underpin set theory and natural-number arithmetic (A.5) and the formal language concepts in B."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Russell's theory of types, Principia Mathematica, and analysis are foundational to the formal logical systems in sections A and B."
+      "relevantPathsAI": [],
+      "rationaleAI": "Russell's theory of types, Principia Mathematica, and analysis are foundational to the formal logical systems in sections A and B."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Wittgenstein's Tractatus contributed to the propositional calculus and the philosophy of formal languages discussed in A.1 and B."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Wittgenstein's Tractatus contributed to the propositional calculus and the philosophy of formal languages discussed in A.1 and B."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
-      "rationale": "Analytic philosophy is rooted in Frege's and Russell's formal logic, deeply connected to model theory and metalogical studies in this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Analytic philosophy is rooted in Frege's and Russell's formal logic, deeply connected to model theory and metalogical studies in this section."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
-      "rationale": "Aristotle developed syllogistic theory (A.3), the foundational treatment of the syllogism in formal logic."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Aristotle developed syllogistic theory (A.3), the foundational treatment of the syllogism in formal logic."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
-      "rationale": "Leibniz's characteristica universalis and logical calculus are precursors to the formal propositional and predicate calculi (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Leibniz's characteristica universalis and logical calculus are precursors to the formal propositional and predicate calculi (A.1, A.2)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
-      "rationale": "Directly relevant to the theory of argumentation and the new rhetoric (C.1.a) in applied logic."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly relevant to the theory of argumentation and the new rhetoric (C.1.a) in applied logic."
     },
     {
       "vsiTitle": "Knowledge",
       "vsiAuthor": "Jennifer Nagel",
-      "rationale": "Directly relevant to epistemic logic (C.2) dealing with the formal logic of belief, knowledge, assertion, and doubt."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Directly relevant to epistemic logic (C.2) dealing with the formal logic of belief, knowledge, assertion, and doubt."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Covers deduction and reasoning relevant to the critique of forms of reasoning and analysis of logical fallacies (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers deduction and reasoning relevant to the critique of forms of reasoning and analysis of logical fallacies (C.1)."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
-      "rationale": "Formal semantics and speech acts connect to logical semantics and model theory (B.5) and the applied logic of language."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Formal semantics and speech acts connect to logical semantics and model theory (B.5) and the applied logic of language."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "rationale": "Information theory concepts including communication and probability relate to epistemic logic (C.2) and the foundations in B."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Information theory concepts including communication and probability relate to epistemic logic (C.2) and the foundations in B."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Algorithms and Turing machines relate directly to computability, decidability, and the metalogical discoveries in B.3."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Algorithms and Turing machines relate directly to computability, decidability, and the metalogical discoveries in B.3."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "AI builds on formal logic and automata theory; Turing and von Neumann's work connects to practical logic and computational applications (C.3, C.4)."
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "AI builds on formal logic and automata theory; Turing and von Neumann's work connects to practical logic and computational applications (C.3, C.4)."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Set theory and natural-number arithmetic (A.5) connect to number-theoretic foundations used in metalogical proofs."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Set theory and natural-number arithmetic (A.5) connect to number-theoretic foundations used in metalogical proofs."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
-      "rationale": "Covers proof, rigour, and convergence relevant to the formal methods underlying logical calculi and syntax of formal systems (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers proof, rigour, and convergence relevant to the formal methods underlying logical calculi and syntax of formal systems (A, B)."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Set theory and natural-number arithmetic (A.5) involve infinite sets and cardinality, central to the study of infinity."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Set theory and natural-number arithmetic (A.5) involve infinite sets and cardinality, central to the study of infinity."
     },
     {
       "vsiTitle": "Choice Theory",
       "vsiAuthor": "Michael Allingham",
-      "rationale": "Expected utility and decision-making relate to practical logic dealing with concepts of choosing and planning (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Expected utility and decision-making relate to practical logic dealing with concepts of choosing and planning (C.3)."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Combinatorics involves formal mathematical reasoning about discrete structures, relating to the formal systems discussed in A and B."
+      "relevantPathsAI": [],
+      "rationaleAI": "Combinatorics involves formal mathematical reasoning about discrete structures, relating to the formal systems discussed in A and B."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

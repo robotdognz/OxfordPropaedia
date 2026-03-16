@@ -4,132 +4,213 @@
     {
       "vsiTitle": "Linguistics",
       "vsiAuthor": "P. H. Matthews",
-      "rationale": "Directly addresses the scientific study of language including phonetics, grammar, semantics, and linguistic theory (outline F)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses the scientific study of language including phonetics, grammar, semantics, and linguistic theory (outline F)."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
-      "rationale": "Explores the diversity of world languages, phonology, language classification, and typology (outline C and H)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores the diversity of world languages, phonology, language classification, and typology (outline C and H)."
     },
     {
       "vsiTitle": "Sociolinguistics",
       "vsiAuthor": "John Edwards",
-      "rationale": "Examines language and society including dialects, language as a political instrument, and language in cross-cultural relations (outline G)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines language and society including dialects, language as a political instrument, and language in cross-cultural relations (outline G)."
     },
     {
       "vsiTitle": "The English Language",
       "vsiAuthor": "Simon Horobin",
-      "rationale": "Traces the history, dialects, and standardization of a major Indo-European Germanic language (outline H.1.f)."
+      "relevantPathsAI": [
+        "H.1"
+      ],
+      "rationaleAI": "Traces the history, dialects, and standardization of a major Indo-European Germanic language (outline H.1.f)."
     },
     {
       "vsiTitle": "Multilingualism",
       "vsiAuthor": "John C. Maher",
-      "rationale": "Addresses multilingual societies, endangered languages, and pidgins and creoles (outline C.3, G.3, and H.22)."
+      "relevantPathsAI": [
+        "C.3",
+        "G.3",
+        "H.22"
+      ],
+      "rationaleAI": "Addresses multilingual societies, endangered languages, and pidgins and creoles (outline C.3, G.3, and H.22)."
     },
     {
       "vsiTitle": "Slang",
       "vsiAuthor": "Jonathon Green",
-      "rationale": "Investigates language variants including slang, jargon, and specialized registers (outline C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Investigates language variants including slang, jargon, and specialized registers (outline C.3)."
     },
     {
       "vsiTitle": "Translation",
       "vsiAuthor": "Matthew Reynolds",
-      "rationale": "Explores cross-linguistic communication including machine translation and sign language (outline G.3 and B.4)."
+      "relevantPathsAI": [
+        "G.3",
+        "B.4"
+      ],
+      "rationaleAI": "Explores cross-linguistic communication including machine translation and sign language (outline G.3 and B.4)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "rationale": "Traces the origin and evolution of writing systems including cuneiform, hieroglyphic, alphabetic, and Mayan scripts (outline E)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Traces the origin and evolution of writing systems including cuneiform, hieroglyphic, alphabetic, and Mayan scripts (outline E)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
-      "rationale": "Egyptian hieroglyphic writing is examined in detail, relevant to outline E.3 on systems of writing."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Egyptian hieroglyphic writing is examined in detail, relevant to outline E.3 on systems of writing."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
-      "rationale": "The visual representation of written language -- fonts, letterforms, and printing -- connects to outline E.4."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "The visual representation of written language -- fonts, letterforms, and printing -- connects to outline E.4."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
-      "rationale": "Explores literacy, the history of reading, and the relationship between written and spoken language (outline C.6 and E)."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Explores literacy, the history of reading, and the relationship between written and spoken language (outline C.6 and E)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
-      "rationale": "Lexicography, the codification of language, and linguistic authority are central to outline F.6 and C.5."
+      "relevantPathsAI": [
+        "F.6",
+        "C.5"
+      ],
+      "rationaleAI": "Lexicography, the codification of language, and linguistic authority are central to outline F.6 and C.5."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
-      "rationale": "Meaning and style in language, persuasive speech, and language as a political instrument connect to outline C.5 and G.4."
+      "relevantPathsAI": [
+        "C.5",
+        "G.4"
+      ],
+      "rationaleAI": "Meaning and style in language, persuasive speech, and language as a political instrument connect to outline C.5 and G.4."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
-      "rationale": "Directly addresses semantics, word meaning, speech acts, and the relationship between language and conceptualization (outline C.5 and F.5)."
+      "relevantPathsAI": [
+        "C.5",
+        "F.5"
+      ],
+      "rationaleAI": "Directly addresses semantics, word meaning, speech acts, and the relationship between language and conceptualization (outline C.5 and F.5)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
-      "rationale": "Interpretation theory and the relationship between language and meaning inform outline C.5 and A."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Interpretation theory and the relationship between language and meaning inform outline C.5 and A."
     },
     {
       "vsiTitle": "Psycholinguistics",
       "vsiAuthor": "Fernanda Ferreira",
-      "rationale": "Psychological bases of speech and language processing are relevant to outline C.4 and D.2."
+      "relevantPathsAI": [
+        "C.4",
+        "D.2"
+      ],
+      "rationaleAI": "Psychological bases of speech and language processing are relevant to outline C.4 and D.2."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
-      "rationale": "Reading disorders and developmental language issues are relevant to speech disorders (outline D.3)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Reading disorders and developmental language issues are relevant to speech disorders (outline D.3)."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
-      "rationale": "Language acquisition and development in children illuminate the psychological bases of speech (outline C.4 and C.6)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.6"
+      ],
+      "rationaleAI": "Language acquisition and development in children illuminate the psychological bases of speech (outline C.4 and C.6)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Codes, ciphers, and encrypting language directly match outline C.8 on cryptology."
+      "relevantPathsAI": [
+        "C.8"
+      ],
+      "rationaleAI": "Codes, ciphers, and encrypting language directly match outline C.8 on cryptology."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "AI and human-computer interfaces are relevant to cybernetic communication (outline B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "AI and human-computer interfaces are relevant to cybernetic communication (outline B.4)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Computer languages and algorithms are relevant to cybernetic communication (outline B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Computer languages and algorithms are relevant to cybernetic communication (outline B.4)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "rationale": "Communication theory, signals, signs, and information systems are foundational to outline A and B.3."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Communication theory, signals, signs, and information systems are foundational to outline A and B.3."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
-      "rationale": "Poststructuralist theories of language challenge established models of meaning and representation (outline F.1)."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Poststructuralist theories of language challenge established models of meaning and representation (outline F.1)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
-      "rationale": "Theories of language in literary study -- including speech acts and poetics -- are relevant to linguistic theory (outline F.1 and C.5)."
+      "relevantPathsAI": [
+        "F.1",
+        "C.5"
+      ],
+      "rationaleAI": "Theories of language in literary study -- including speech acts and poetics -- are relevant to linguistic theory (outline F.1 and C.5)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
-      "rationale": "The Chinese literary tradition illuminates Sino-Tibetan languages and East Asian writing systems (outline H.6.a and E.3)."
+      "relevantPathsAI": [
+        "H.6",
+        "E.3"
+      ],
+      "rationaleAI": "The Chinese literary tradition illuminates Sino-Tibetan languages and East Asian writing systems (outline H.6.a and E.3)."
     },
     {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
-      "rationale": "The Japanese literary tradition is relevant to the Japanese language section (outline H.13)."
+      "relevantPathsAI": [
+        "H.13"
+      ],
+      "rationaleAI": "The Japanese literary tradition is relevant to the Japanese language section (outline H.13)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -2,10 +2,11 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
 import { slugify } from '../../utils/helpers';
-import wikiData from '../../data/wikipedia-vital-articles.json';
+import wikiCatalog from '../../data/wikipedia-catalog.json';
 import navigation from '../../data/navigation.json';
+import { getCollection } from 'astro:content';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const nav = navigation as any;
   const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
   nav.parts.forEach((p: any) => {
@@ -21,24 +22,19 @@ export function getStaticPaths() {
   nav.parts.forEach((p: any) => { totalDivisions += p.divisions.length; p.divisions.forEach((d: any) => { totalSections += d.sections.length; }); });
   const totals = { parts: nav.parts.length, divisions: totalDivisions, sections: totalSections };
 
-  // Build unique article list from all levels
-  const articleMap = new Map<string, any>();
-  for (const article of (wikiData as any).levels[1].articles) {
-    articleMap.set(article.title, { ...article, lowestLevel: 1 });
-  }
-  for (const article of (wikiData as any).levels[2].articles) {
-    if (!articleMap.has(article.title)) {
-      articleMap.set(article.title, { ...article, lowestLevel: 2 });
-    }
-  }
-  for (const article of (wikiData as any).levels[3].articles) {
-    if (!articleMap.has(article.title)) {
-      articleMap.set(article.title, { ...article, lowestLevel: 3 });
+  // Build section codes per article from per-section mapping files
+  const wikiMappings = await getCollection('wiki-mappings');
+  const articleSectionCodes = new Map<string, string[]>();
+  for (const mapping of wikiMappings) {
+    for (const m of mapping.data.mappings) {
+      if (!articleSectionCodes.has(m.articleTitle)) articleSectionCodes.set(m.articleTitle, []);
+      articleSectionCodes.get(m.articleTitle)!.push(mapping.data.sectionCode);
     }
   }
 
-  return [...articleMap.values()].map((article) => {
-    const sections = (article.sectionCodes || []).map((code: string) => ({
+  return (wikiCatalog as any).articles.map((article: any) => {
+    const codes = articleSectionCodes.get(article.title) || [];
+    const sections = codes.map((code: string) => ({
       sectionCode: code,
       meta: sectionMeta[code],
     })).filter((s: any) => s.meta);
@@ -57,7 +53,6 @@ export function getStaticPaths() {
 const base = import.meta.env.BASE_URL;
 const { article, sections, coverage, totals } = Astro.props;
 
-// Group sections by part
 const byPart = new Map<number, typeof sections>();
 for (const s of sections) {
   const arr = byPart.get(s.meta.partNumber) || [];
@@ -94,9 +89,6 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
           <div class="mt-2 flex flex-wrap gap-2">
             {article.category && (
               <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>
-            )}
-            {article.subcategory && (
-              <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.subcategory}</span>
             )}
             <span class="inline-block rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs text-indigo-700">{levelLabel}</span>
           </div>

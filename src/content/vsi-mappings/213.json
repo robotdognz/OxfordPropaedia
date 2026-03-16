@@ -4,57 +4,75 @@
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Covers the Earth's concentric layers, seismic wave analysis, and the geophysical evidence used to infer interior structure and composition."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers the Earth's concentric layers, seismic wave analysis, and the geophysical evidence used to infer interior structure and composition."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Provides a comprehensive treatment of the Earth's internal structure including crust, mantle, core, and the Mohorovicic discontinuity."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides a comprehensive treatment of the Earth's internal structure including crust, mantle, core, and the Mohorovicic discontinuity."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "Covers the distinction between continental and oceanic crust, lithosphere and mantle structure, and subduction processes that reveal interior composition."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers the distinction between continental and oceanic crust, lithosphere and mantle structure, and subduction processes that reveal interior composition."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Covers the layered structure of the Earth, earthquake processes, and geochemical differentiation of the Earth's interior."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers the layered structure of the Earth, earthquake processes, and geochemical differentiation of the Earth's interior."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Directly relevant to the composition of the Earth's core, mantle, and crust—the basic divisions of the solid Earth discussed in section A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Directly relevant to the composition of the Earth's core, mantle, and crust—the basic divisions of the solid Earth discussed in section A.2."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Relevant to the mineral composition and phase transitions at depth, and the distribution of elements in the Earth's core, mantle, and crust."
+      "relevantPathsAI": [],
+      "rationaleAI": "Relevant to the mineral composition and phase transitions at depth, and the distribution of elements in the Earth's core, mantle, and crust."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
-      "rationale": "Covers earthquakes—their causes, distribution, and magnitude—which are central to section B on seismic sources within the Earth."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers earthquakes—their causes, distribution, and magnitude—which are central to section B on seismic sources within the Earth."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Volcanism provides direct evidence about the Earth's interior composition, magma generation in the mantle, and the molten state of the outer core."
+      "relevantPathsAI": [],
+      "rationaleAI": "Volcanism provides direct evidence about the Earth's interior composition, magma generation in the mantle, and the molten state of the outer core."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers the chemical elements and their properties, relevant to the distribution of elements in the Earth's core, mantle, and crust (section C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers the chemical elements and their properties, relevant to the distribution of elements in the Earth's core, mantle, and crust (section C)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Discusses the development of the Earth's structure and composition as an integrated system, relevant to section A.3 on the evolution of the Earth's interior."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Discusses the development of the Earth's structure and composition as an integrated system, relevant to section A.3 on the evolution of the Earth's interior."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers wave propagation and behavior, directly relevant to seismic wave velocities and their use in interpreting the Earth's interior structure (section D.1)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Covers wave propagation and behavior, directly relevant to seismic wave velocities and their use in interpreting the Earth's interior structure (section D.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

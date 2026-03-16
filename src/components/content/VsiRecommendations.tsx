@@ -11,14 +11,14 @@ import {
 import {
   filterMappingsForOutline,
   sortByDefaultRelevance,
-  OUTLINE_VSI_SELECT_EVENT,
+  OUTLINE_SELECT_EVENT,
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
 
 export interface VsiMapping {
   vsiTitle: string;
   vsiAuthor: string;
-  rationale: string;
+  rationaleAI: string;
   publicationYear?: number;
   edition?: number;
   subject?: string;
@@ -60,9 +60,9 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
       });
     };
 
-    document.addEventListener(OUTLINE_VSI_SELECT_EVENT, handleOutlineSelect as EventListener);
+    document.addEventListener(OUTLINE_SELECT_EVENT, handleOutlineSelect as EventListener);
     return () => {
-      document.removeEventListener(OUTLINE_VSI_SELECT_EVENT, handleOutlineSelect as EventListener);
+      document.removeEventListener(OUTLINE_SELECT_EVENT, handleOutlineSelect as EventListener);
     };
   }, [mappings, sectionCode]);
 
@@ -134,7 +134,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   key={`${mapping.vsiTitle}-${mapping.vsiAuthor}-${index}`}
                   title={mapping.vsiTitle}
                   author={mapping.vsiAuthor}
-                  rationale={mapping.rationale}
+                  rationale={mapping.rationaleAI}
                   baseUrl={baseUrl}
                   sectionCode={sectionCode}
                   publicationYear={mapping.publicationYear}

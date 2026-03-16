@@ -4,102 +4,164 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Introduces general conceptions of technology and engineering, relevant to A (definitions of technology) and the broad sweep of technological history."
+      "relevantPathsAI": [],
+      "rationaleAI": "Introduces general conceptions of technology and engineering, relevant to A (definitions of technology) and the broad sweep of technological history."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Examines the transformation of 1750-1900 (C.3) including Watt's steam engine, Bessemer's steel process, textile mechanization, and the rise of industrial chemistry and communications."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Examines the transformation of 1750-1900 (C.3) including Watt's steam engine, Bessemer's steel process, textile mechanization, and the rise of industrial chemistry and communications."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Addresses B (technology and contemporary life) including technology's role in economic development and Schumpeter's concept of creative destruction."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses B (technology and contemporary life) including technology's role in economic development and Schumpeter's concept of creative destruction."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "Directly covers B.2 (technology and war) from ancient weapons through nuclear arms."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers B.2 (technology and war) from ancient weapons through nuclear arms."
     },
     {
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
-      "rationale": "Addresses B.3 (technology and education) including the role of technology in transforming pedagogical methods and educational access."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Addresses B.3 (technology and education) including the role of technology in transforming pedagogical methods and educational access."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Links technological change to wealth creation (B.1) and traces the sociocultural consequences of technological shifts across global history (C)."
+      "relevantPathsAI": [
+        "B.1",
+        "C"
+      ],
+      "rationaleAI": "Links technological change to wealth creation (B.1) and traces the sociocultural consequences of technological shifts across global history (C)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Directly relevant to B.7 (effects of technology on the environment) including fossil fuel combustion, industrial pollution, and the climate crisis."
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Directly relevant to B.7 (effects of technology on the environment) including fossil fuel combustion, industrial pollution, and the climate crisis."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
-      "rationale": "Addresses B.7 (effects of technology on the environment) through the lens of humanity's accumulated technological impact on Earth systems."
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Addresses B.7 (effects of technology on the environment) through the lens of humanity's accumulated technological impact on Earth systems."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Traces the beginnings of technology to c. 3000 BC (C.1.a), including Oldowan stone tools, fire use, and the earliest agricultural settlements."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Traces the beginnings of technology to c. 3000 BC (C.1.a), including Oldowan stone tools, fire use, and the earliest agricultural settlements."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
-      "rationale": "Illuminates the technological achievements of Greece 500 BC-AD 500 (C.1.c), including mastery of iron smelting, the Antikythera mechanism, and monumental architecture."
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Illuminates the technological achievements of Greece 500 BC-AD 500 (C.1.c), including mastery of iron smelting, the Antikythera mechanism, and monumental architecture."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
-      "rationale": "Surveys medieval advances AD 500-1500 (C.2.a) including the heavy plough, wind and water mills, Gothic cathedrals, and advances in navigation and shipbuilding."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Surveys medieval advances AD 500-1500 (C.2.a) including the heavy plough, wind and water mills, Gothic cathedrals, and advances in navigation and shipbuilding."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
-      "rationale": "Explores the emergence of Western technology 1500-1750 (C.2.b), including the invention of the telescope, microscope, and other scientific instruments."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Explores the emergence of Western technology 1500-1750 (C.2.b), including the invention of the telescope, microscope, and other scientific instruments."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Traces computing from Babbage's Analytical Engine to the electronic digital computer, relevant to Space Age technology and automation (C.4.b)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Traces computing from Babbage's Analytical Engine to the electronic digital computer, relevant to Space Age technology and automation (C.4.b)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Focuses on nuclear fission power development in the 20th century, a defining technology of the Space Age (C.4.b)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Focuses on nuclear fission power development in the 20th century, a defining technology of the Space Age (C.4.b)."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Addresses advances in power technology (C.3.a) and modern energy developments (C.4.b) including solar, wind, and hydroelectric power."
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Addresses advances in power technology (C.3.a) and modern energy developments (C.4.b) including solar, wind, and hydroelectric power."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Spans advances in power technology (C.3.a) through 20th-century energy infrastructure (C.4), including fossil fuels, nuclear energy, and electrical grids."
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Spans advances in power technology (C.3.a) through 20th-century energy infrastructure (C.4), including fossil fuels, nuclear energy, and electrical grids."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Explores automation, autonomous machines, and space exploration robotics as defining Space Age technologies (C.4.b)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Explores automation, autonomous machines, and space exploration robotics as defining Space Age technologies (C.4.b)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Traces AI from Turing's foundational ideas through machine learning, relevant to the electronic digital computer and automation (C.4.b)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Traces AI from Turing's foundational ideas through machine learning, relevant to the electronic digital computer and automation (C.4.b)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Addresses B.7 (effects of technology on the environment) and B.6 (technology and underdeveloped regions)."
+      "relevantPathsAI": [
+        "B.7",
+        "B.6"
+      ],
+      "rationaleAI": "Addresses B.7 (effects of technology on the environment) and B.6 (technology and underdeveloped regions)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "Spans the urban revolution's waterworks and irrigation systems (C.1.b) through the architectural and constructional works of Greece and Rome (C.1.c)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.c"
+      ],
+      "rationaleAI": "Spans the urban revolution's waterworks and irrigation systems (C.1.b) through the architectural and constructional works of Greece and Rome (C.1.c)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -1,4 +1,4 @@
-export const OUTLINE_VSI_SELECT_EVENT = 'propaedia:outline-select';
+export const OUTLINE_SELECT_EVENT = 'propaedia:outline-select';
 
 export interface OutlineSelectionDetail {
   sectionCode: string;
@@ -10,10 +10,11 @@ export interface OutlineSelectionDetail {
 export interface SearchableVsiMapping {
   vsiTitle: string;
   vsiAuthor: string;
-  rationale: string;
+  rationaleAI: string;
   subject?: string;
   keywords?: string[];
   abstract?: string;
+  relevantPathsAI?: string[];
 }
 
 const STOP_WORDS = new Set([
@@ -64,15 +65,15 @@ function tokenize(text: string): string[] {
   return Array.from(unique);
 }
 
-function matchesOutlinePath(rationale: string, outlinePath: string): boolean {
+function matchesOutlinePath(rationaleAI: string, outlinePath: string): boolean {
   if (!outlinePath) return false;
 
   const escaped = escapeRegExp(outlinePath);
   const pathPattern = new RegExp(`(^|[^A-Za-z0-9])${escaped}(?:\\.|[^A-Za-z0-9]|$)`, 'i');
-  return pathPattern.test(rationale);
+  return pathPattern.test(rationaleAI);
 }
 
-function keywordTokens(keywords: string[] | undefined): Set<string> {
+export function keywordTokens(keywords: string[] | undefined): Set<string> {
   if (!keywords) return new Set();
   const tokens = new Set<string>();
   for (const kw of keywords) {
@@ -94,7 +95,7 @@ function subjectTokens(subject: string | undefined): Set<string> {
   return tokens;
 }
 
-function countTokenMatches(tokenSet: Set<string>, contextTokens: string[]): number {
+export function countTokenMatches(tokenSet: Set<string>, contextTokens: string[]): number {
   let matched = 0;
   for (const token of contextTokens) {
     if (tokenSet.has(token)) matched++;
@@ -102,16 +103,20 @@ function countTokenMatches(tokenSet: Set<string>, contextTokens: string[]): numb
   return matched;
 }
 
+export function pathMatchesSelection(paths: string[] | undefined, outlinePath: string): boolean {
+  if (!paths || !outlinePath) return false;
+  return paths.some((p) => outlinePath === p || outlinePath.startsWith(p + '.') || p.startsWith(outlinePath + '.'));
+}
+
 function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelectionDetail): number {
   const selectionTokens = tokenize(selection.text);
   const titleTokens = new Set(tokenize(mapping.vsiTitle));
   const kwToks = keywordTokens(mapping.keywords);
-  const rationaleTokens = new Set(tokenize(mapping.rationale));
 
   let score = 0;
 
-  // Outline path reference in rationale
-  if (matchesOutlinePath(mapping.rationale, selection.outlinePath)) {
+  // Outline path match via relevantPathsAI
+  if (pathMatchesSelection(mapping.relevantPathsAI, selection.outlinePath)) {
     score += selection.outlinePath.includes('.') ? 5 : 4;
   }
 
@@ -127,13 +132,6 @@ function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelection
   // Subject matches
   const sToks = subjectTokens(mapping.subject);
   score += countTokenMatches(sToks, selectionTokens) * 2;
-
-  // Rationale text matches
-  let rationaleMatches = 0;
-  for (const token of selectionTokens) {
-    if (rationaleTokens.has(token)) rationaleMatches++;
-  }
-  score += Math.min(rationaleMatches, 4);
 
   // Sub-section coverage: reward books that match across more children of the selected item
   const childrenTexts = selection.childrenText || [];
@@ -190,7 +188,7 @@ export function computeRelevanceScore(mapping: SearchableVsiMapping, contextToke
   const sToks = subjectTokens(mapping.subject);
   score += countTokenMatches(sToks, contextTokens);
 
-  const rationaleTokens = new Set(tokenize(mapping.rationale));
+  const rationaleTokens = new Set(tokenize(mapping.rationaleAI));
   let rationaleMatches = 0;
   for (const token of contextTokens) {
     if (rationaleTokens.has(token)) rationaleMatches++;

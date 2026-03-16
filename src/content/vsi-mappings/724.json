@@ -4,87 +4,148 @@
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Mineral identification and distribution (A.1) are the starting point for extraction, encompassing metal ores, salt, stone, sulfur, and phosphates (B.1.b)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Mineral identification and distribution (A.1) are the starting point for extraction, encompassing metal ores, salt, stone, sulfur, and phosphates (B.1.b)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Geological mapping reveals where coal, petroleum, and mineral deposits lie (A.1), making this foundational for all extraction planning."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Geological mapping reveals where coal, petroleum, and mineral deposits lie (A.1), making this foundational for all extraction planning."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Quarrying (B.1) and the processing of stone, sand, clay, and gravel (C.5) depend on understanding rock types and their mechanical properties."
+      "relevantPathsAI": [
+        "B.1",
+        "C.5"
+      ],
+      "rationaleAI": "Quarrying (B.1) and the processing of stone, sand, clay, and gravel (C.5) depend on understanding rock types and their mechanical properties."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Glass, cement, ceramics, and bricks (C.5) as well as metal processing (C.3) are materials-science problems explored in this volume."
+      "relevantPathsAI": [
+        "C.5",
+        "C.3"
+      ],
+      "rationaleAI": "Glass, cement, ceramics, and bricks (C.5) as well as metal processing (C.3) are materials-science problems explored in this volume."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Individual metals—aluminum, copper, gold, iron—each have distinct production and processing requirements (C.3), while air processing yields industrial gases (C.7)."
+      "relevantPathsAI": [
+        "C.3",
+        "C.7"
+      ],
+      "rationaleAI": "Individual metals—aluminum, copper, gold, iron—each have distinct production and processing requirements (C.3), while air processing yields industrial gases (C.7)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Chemical processing principles underpin petroleum refining (C.1) and the conversion of coal into coke, gas, and chemicals (C.2)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Chemical processing principles underpin petroleum refining (C.1) and the conversion of coal into coke, gas, and chemicals (C.2)."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Petroleum refining (C.1) and the production of petrochemicals from coal tar and oil (C.2) are applications of organic chemistry at industrial scale."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Petroleum refining (C.1) and the production of petrochemicals from coal tar and oil (C.2) are applications of organic chemistry at industrial scale."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Uranium processing (C.3.s) and the nuclear fuel cycle depend on isotopic separation, connecting nuclear materials science to resource extraction."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Uranium processing (C.3.s) and the nuclear fuel cycle depend on isotopic separation, connecting nuclear materials science to resource extraction."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Resource conservation (A.2.a) and sustainable management practices (A.2) are essential counterweights to extractive industry pressures."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Resource conservation (A.2.a) and sustainable management practices (A.2) are essential counterweights to extractive industry pressures."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Timber, pulp, roundwood, sawn wood, veneer, and plywood (C.8.a-b) are major plant-derived products of the extraction and processing industries."
+      "relevantPathsAI": [
+        "C.8"
+      ],
+      "rationaleAI": "Timber, pulp, roundwood, sawn wood, veneer, and plywood (C.8.a-b) are major plant-derived products of the extraction and processing industries."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Synthetic gemstones and industrial crystals (C.4) are manufactured using crystallographic principles that govern structure and purity."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Synthetic gemstones and industrial crystals (C.4) are manufactured using crystallographic principles that govern structure and purity."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "The Industrial Revolution transformed extraction industries (B), as coal mining and iron production scaled up to feed factory systems."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "The Industrial Revolution transformed extraction industries (B), as coal mining and iron production scaled up to feed factory systems."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Processing water to obtain salt, magnesium, oxygen, hydrogen, and other dissolved elements (C.6) is both a chemical and an industrial challenge."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Processing water to obtain salt, magnesium, oxygen, hydrogen, and other dissolved elements (C.6) is both a chemical and an industrial challenge."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
-      "rationale": "Conservation of natural resources (A.2.a), particularly biological ones, constrains and guides how extraction industries operate."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Conservation of natural resources (A.2.a), particularly biological ones, constrains and guides how extraction industries operate."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Resource management (A.2) viewed through an economic lens—pricing externalities, pollution costs, and depletion—shapes extraction policy."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Resource management (A.2) viewed through an economic lens—pricing externalities, pollution costs, and depletion—shapes extraction policy."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Fossil fuel extraction—petroleum and natural gas (B.2), coal (B.1.b)—drives climate change, making this directly relevant to A.2 (management of resources)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.1",
+        "A.2"
+      ],
+      "rationaleAI": "Fossil fuel extraction—petroleum and natural gas (B.2), coal (B.1.b)—drives climate change, making this directly relevant to A.2 (management of resources)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Petroleum and natural gas production (B.2) and coal utilization (C.2) are the energy raw materials that power modern economies."
+      "relevantPathsAI": [
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Petroleum and natural gas production (B.2) and coal utilization (C.2) are the energy raw materials that power modern economies."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

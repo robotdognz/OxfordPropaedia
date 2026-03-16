@@ -4,82 +4,142 @@
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Directly covers photography as an art, including major photographers (Adams, Cartier-Bresson, Capa), photojournalism, and the nature of photography (D)."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Directly covers photography as an art, including major photographers (Adams, Cartier-Bresson, Capa), photojournalism, and the nature of photography (D)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Covers the history of Western drawing and painting with references to artists and techniques like camera obscura, relevant to A.4, B.6.a, C.4."
+      "relevantPathsAI": [
+        "A.4",
+        "B.6",
+        "C.4"
+      ],
+      "rationaleAI": "Covers the history of Western drawing and painting with references to artists and techniques like camera obscura, relevant to A.4, B.6.a, C.4."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
-      "rationale": "Addresses aesthetics of visual arts including representation, significant form, and taste -- central to design elements and iconography (A.1, B.1, B.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Addresses aesthetics of visual arts including representation, significant form, and taste -- central to design elements and iconography (A.1, B.1, B.2)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
-      "rationale": "Covers modern painting movements including Cubism (Braque), abstraction (Mondrian), and nonrepresentational painting (B.5.b.ii, B.6.a)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Covers modern painting movements including Cubism (Braque), abstraction (Mondrian), and nonrepresentational painting (B.5.b.ii, B.6.a)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
-      "rationale": "Covers contemporary painting, drawing, and photography practices including the global art market and biennials (B.6.a, D)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Covers contemporary painting, drawing, and photography practices including the global art market and biennials (B.6.a, D)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
-      "rationale": "Renaissance masters (da Vinci, Durer, van Eyck) are central to Western painting and drawing history, covering techniques and manuscript illumination (A.4, B.5.a.ii, B.6.a)."
+      "relevantPathsAI": [
+        "A.4",
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Renaissance masters (da Vinci, Durer, van Eyck) are central to Western painting and drawing history, covering techniques and manuscript illumination (A.4, B.5.a.ii, B.6.a)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
-      "rationale": "Dada and Surrealist painting, collage, and printmaking (De Chirico, Magritte, Miro) expanded artistic techniques in Western painting history (B.6.a)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Dada and Surrealist painting, collage, and printmaking (De Chirico, Magritte, Miro) expanded artistic techniques in Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
-      "rationale": "Avant-garde movements transformed painting from Impressionism (Seurat) through Cubism (Picasso), relevant to Western painting history (B.6.a)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Avant-garde movements transformed painting from Impressionism (Seurat) through Cubism (Picasso), relevant to Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
-      "rationale": "Egyptian mural painting and drawing traditions are relevant to painting on fixed objects (B.5.a.i) and non-Western painting (B.6.b)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Egyptian mural painting and drawing traditions are relevant to painting on fixed objects (B.5.a.i) and non-Western painting (B.6.b)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
-      "rationale": "Christian painting traditions including devotional painting, manuscript illumination, and stained glass are directly relevant to B.4.f, B.5.a.ii, B.5.b.i."
+      "relevantPathsAI": [
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Christian painting traditions including devotional painting, manuscript illumination, and stained glass are directly relevant to B.4.f, B.5.a.ii, B.5.b.i."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
-      "rationale": "Covers letterforms, fonts, and printing design, directly relevant to printmaking media and the relationship between type and graphic arts (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Covers letterforms, fonts, and printing design, directly relevant to printmaking media and the relationship between type and graphic arts (C)."
     },
     {
       "vsiTitle": "Futurism",
       "vsiAuthor": "Ara H. Merjian",
-      "rationale": "Futurist painting is a significant movement in Western painting history, notable for depicting motion and modern life (B.6.a)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Futurist painting is a significant movement in Western painting history, notable for depicting motion and modern life (B.6.a)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Prehistoric cave painting at sites like Lascaux is the earliest form of painting on fixed objects (B.5.a.i) and primitive painting (B.5.c)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.c"
+      ],
+      "rationaleAI": "Prehistoric cave painting at sites like Lascaux is the earliest form of painting on fixed objects (B.5.a.i) and primitive painting (B.5.c)."
     },
     {
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
-      "rationale": "Romantic painting including landscape painting is a major period in Western painting history (B.5.b.i, B.6.a)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Romantic painting including landscape painting is a major period in Western painting history (B.5.b.i, B.6.a)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "rationale": "Covers calligraphy and writing systems, directly relevant to the relationship between drawing and calligraphy (B.4.a) referenced in this section."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Covers calligraphy and writing systems, directly relevant to the relationship between drawing and calligraphy (B.4.a) referenced in this section."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
-      "rationale": "Covers photojournalism and press photography, directly relevant to kinds of functional photography (D.3.b)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Covers photojournalism and press photography, directly relevant to kinds of functional photography (D.3.b)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,252 +4,403 @@
     {
       "vsiTitle": "Social Science",
       "vsiAuthor": "Alexander Betts",
-      "rationale": "Directly addresses the nature, scope, and methods of the social sciences, the central subject of this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses the nature, scope, and methods of the social sciences, the central subject of this section."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Section B covers the nature of anthropology including its background, scope, and division between cultural and physical anthropology."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section B covers the nature of anthropology including its background, scope, and division between cultural and physical anthropology."
     },
     {
       "vsiTitle": "Sociology",
       "vsiAuthor": "Steve Bruce",
-      "rationale": "Section C covers the nature of sociology including background, methodology, status, and emergent trends."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section C covers the nature of sociology including background, methodology, status, and emergent trends."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
-      "rationale": "Section D covers the nature of economics including theories, scope, methods, and cognate disciplines."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section D covers the nature of economics including theories, scope, methods, and cognate disciplines."
     },
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
-      "rationale": "Section D.2 lists microeconomics as part of the scope and methods of the study of economics."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Section D.2 lists microeconomics as part of the scope and methods of the study of economics."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
-      "rationale": "Behavioural economics incorporates psychological insights into economic theory, reflecting the changing character of disciplines (A.3.d)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Behavioural economics incorporates psychological insights into economic theory, reflecting the changing character of disciplines (A.3.d)."
     },
     {
       "vsiTitle": "Politics",
       "vsiAuthor": "Kenneth Minogue",
-      "rationale": "Section E covers the nature of political science including its history, scope, methods, and cognate disciplines."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section E covers the nature of political science including its history, scope, methods, and cognate disciplines."
     },
     {
       "vsiTitle": "Political philosophy",
       "vsiAuthor": "David Miller",
-      "rationale": "Political philosophy connects to the nature of political science (E) and the influence of political theories on social sciences."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Political philosophy connects to the nature of political science (E) and the influence of political theories on social sciences."
     },
     {
       "vsiTitle": "Geography",
       "vsiAuthor": "John A. Matthews, David T. Herbert",
-      "rationale": "Section F covers the nature of geography including its history, scope, and division between physical, human, and regional geography."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section F covers the nature of geography including its history, scope, and division between physical, human, and regional geography."
     },
     {
       "vsiTitle": "Human Geography",
       "vsiAuthor": "Patricia Daley, Ian Klinke",
-      "rationale": "Human geography is part of the scope of geography (F.2) and studies migration, inequality, and spatial relationships."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Human geography is part of the scope of geography (F.2) and studies migration, inequality, and spatial relationships."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Section G covers the history and methods of psychology including its nature, scope, and special branches."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section G covers the history and methods of psychology including its nature, scope, and special branches."
     },
     {
       "vsiTitle": "Linguistics",
       "vsiAuthor": "P. H. Matthews",
-      "rationale": "Section H covers the nature of linguistics including its history, nature, and scope."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section H covers the nature of linguistics including its history, nature, and scope."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
-      "rationale": "Languages relate to linguistics (H) including the study of phonology, word order, and language diversity."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Languages relate to linguistics (H) including the study of phonology, word order, and language diversity."
     },
     {
       "vsiTitle": "Sociolinguistics",
       "vsiAuthor": "John Edwards",
-      "rationale": "Sociolinguistics bridges sociology (C) and linguistics (H), illustrating cross-disciplinary approaches (A.3.d.i)."
+      "relevantPathsAI": [
+        "A.3",
+        "C",
+        "H"
+      ],
+      "rationaleAI": "Sociolinguistics bridges sociology (C) and linguistics (H), illustrating cross-disciplinary approaches (A.3.d.i)."
     },
     {
       "vsiTitle": "Psycholinguistics",
       "vsiAuthor": "Fernanda Ferreira",
-      "rationale": "Psycholinguistics bridges psychology (G) and linguistics (H), illustrating the interdisciplinary nature of these fields."
+      "relevantPathsAI": [
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Psycholinguistics bridges psychology (G) and linguistics (H), illustrating the interdisciplinary nature of these fields."
     },
     {
       "vsiTitle": "Multilingualism",
       "vsiAuthor": "John C. Maher",
-      "rationale": "Multilingualism is a topic within linguistics (H) connected to sociolinguistic and anthropological approaches."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Multilingualism is a topic within linguistics (H) connected to sociolinguistic and anthropological approaches."
     },
     {
       "vsiTitle": "The English Language",
       "vsiAuthor": "Simon Horobin",
-      "rationale": "The study of English relates to linguistics (H) and the historical development of language study."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "The study of English relates to linguistics (H) and the historical development of language study."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
-      "rationale": "Explores how language conveys meaning -- a foundational question in linguistics (H) that also connects to philosophy and psychology."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Explores how language conveys meaning -- a foundational question in linguistics (H) that also connects to philosophy and psychology."
     },
     {
       "vsiTitle": "Translation",
       "vsiAuthor": "Matthew Reynolds",
-      "rationale": "Translation studies are connected to linguistics (H), involving theoretical and practical study of language."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Translation studies are connected to linguistics (H), involving theoretical and practical study of language."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Section C.5 lists social psychology as a cognate discipline of sociology, and G.3 mentions it as a branch of psychology."
+      "relevantPathsAI": [
+        "C.5",
+        "G.3"
+      ],
+      "rationaleAI": "Section C.5 lists social psychology as a cognate discipline of sociology, and G.3 mentions it as a branch of psychology."
     },
     {
       "vsiTitle": "Criminology",
       "vsiAuthor": "Tim Newburn",
-      "rationale": "Section C.5 lists criminology as a cognate discipline of sociology."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Section C.5 lists criminology as a cognate discipline of sociology."
     },
     {
       "vsiTitle": "Demography",
       "vsiAuthor": "Sarah Harper",
-      "rationale": "Section C.5 lists demography as a cognate discipline of sociology."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Section C.5 lists demography as a cognate discipline of sociology."
     },
     {
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
-      "rationale": "Section E.3 lists international relations as a cognate discipline of political science."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Section E.3 lists international relations as a cognate discipline of political science."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
-      "rationale": "Section A.3.b specifically identifies the influence of Marxism as a major 20th-century development in the social sciences."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.b specifically identifies the influence of Marxism as a major 20th-century development in the social sciences."
     },
     {
       "vsiTitle": "Freud",
       "vsiAuthor": "Anthony Storr",
-      "rationale": "Section A.3.c identifies the influence of Freudian ideas as a major 20th-century development in the social sciences."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c identifies the influence of Freudian ideas as a major 20th-century development in the social sciences."
     },
     {
       "vsiTitle": "Psychoanalysis",
       "vsiAuthor": "Daniel Pick",
-      "rationale": "Section A.3.c covers the influence of Freudian psychoanalytic ideas on 20th-century social sciences."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Section A.3.c covers the influence of Freudian psychoanalytic ideas on 20th-century social sciences."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
-      "rationale": "Section A.1.b identifies the heritage of the Enlightenment as a key origin of the social sciences."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.b identifies the heritage of the Enlightenment as a key origin of the social sciences."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Section A.2.b mentions social statistics, and A.3.d.iii-iv covers quantitative methods and empiricism in social sciences."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Section A.2.b mentions social statistics, and A.3.d.iii-iv covers quantitative methods and empiricism in social sciences."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Illustrates the scope of psychology (G) through its study of reasoning, judgment, and decision-making -- topics that also inform economics (D) and political science (E)."
+      "relevantPathsAI": [
+        "D",
+        "E",
+        "G"
+      ],
+      "rationaleAI": "Illustrates the scope of psychology (G) through its study of reasoning, judgment, and decision-making -- topics that also inform economics (D) and political science (E)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Explores one of psychology's central questions -- the nature of conscious experience -- bridging physiological psychology (G.3) and philosophy of mind."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Explores one of psychology's central questions -- the nature of conscious experience -- bridging physiological psychology (G.3) and philosophy of mind."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
-      "rationale": "Represents developmental psychology, one of the special branches listed under G.3, covering how cognition and language emerge in childhood."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Represents developmental psychology, one of the special branches listed under G.3, covering how cognition and language emerge in childhood."
     },
     {
       "vsiTitle": "Clinical Psychology",
       "vsiAuthor": "Susan Llewellyn, Katie Aafjes-van Doorn",
-      "rationale": "Represents clinical practice as a special branch of psychology (G.3), showing how the discipline applies its methods to mental health."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Represents clinical practice as a special branch of psychology (G.3), showing how the discipline applies its methods to mental health."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Exemplifies physiological psychology (G.3) by showing how brain imaging and neuroscience methods have transformed the study of cognition."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Exemplifies physiological psychology (G.3) by showing how brain imaging and neuroscience methods have transformed the study of cognition."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Traces the behaviorist and cognitive traditions that shaped psychology's methodology (G.2), from Pavlov and Skinner to modern learning theory."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Traces the behaviorist and cognitive traditions that shaped psychology's methodology (G.2), from Pavlov and Skinner to modern learning theory."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
-      "rationale": "Globalization is a cross-disciplinary social science topic touching economics (D), political science (E), and sociology (C)."
+      "relevantPathsAI": [
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Globalization is a cross-disciplinary social science topic touching economics (D), political science (E), and sociology (C)."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "rationale": "Geopolitics connects political science (E) with geography (F), exemplifying cross-disciplinary approaches (A.3.d.i)."
+      "relevantPathsAI": [
+        "A.3",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Geopolitics connects political science (E) with geography (F), exemplifying cross-disciplinary approaches (A.3.d.i)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "rationale": "Democracy is a foundational concept in political science (E), and its study illustrates the scope and methods of the discipline."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Democracy is a foundational concept in political science (E), and its study illustrates the scope and methods of the discipline."
     },
     {
       "vsiTitle": "Populism",
       "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
-      "rationale": "Examines populism as a political phenomenon studied within political science (E), reflecting the discipline's engagement with contemporary movements."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Examines populism as a political phenomenon studied within political science (E), reflecting the discipline's engagement with contemporary movements."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "rationale": "Nationalism is a central concept studied across political science (E) and sociology (C), illustrating how identity shapes political movements and state formation."
+      "relevantPathsAI": [
+        "C",
+        "E"
+      ],
+      "rationaleAI": "Nationalism is a central concept studied across political science (E) and sociology (C), illustrating how identity shapes political movements and state formation."
     },
     {
       "vsiTitle": "Ideology",
       "vsiAuthor": "Michael Freeden",
-      "rationale": "The study of ideology is central to political science (E) and the theoretical frameworks of social sciences."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The study of ideology is central to political science (E) and the theoretical frameworks of social sciences."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Capitalism is central to economics (D) and relates to the influence of economic theories on social sciences (A.2.a)."
+      "relevantPathsAI": [
+        "A.2",
+        "D"
+      ],
+      "rationaleAI": "Capitalism is central to economics (D) and relates to the influence of economic theories on social sciences (A.2.a)."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
-      "rationale": "Feminism has been a major theoretical influence on sociology (C) and the changing character of disciplines (A.3.d)."
+      "relevantPathsAI": [
+        "A.3",
+        "C"
+      ],
+      "rationaleAI": "Feminism has been a major theoretical influence on sociology (C) and the changing character of disciplines (A.3.d)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
-      "rationale": "A topic studied through sociological (C) and anthropological (B) frameworks, illustrating how the social sciences analyze structural inequality."
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "A topic studied through sociological (C) and anthropological (B) frameworks, illustrating how the social sciences analyze structural inequality."
     },
     {
       "vsiTitle": "Identity",
       "vsiAuthor": "Florian Coulmas",
-      "rationale": "Identity is studied across sociology (C), anthropology (B), and psychology (G), making it a natural example of cross-disciplinary approaches (A.3.d.i)."
+      "relevantPathsAI": [
+        "A.3",
+        "B",
+        "C",
+        "G"
+      ],
+      "rationaleAI": "Identity is studied across sociology (C), anthropology (B), and psychology (G), making it a natural example of cross-disciplinary approaches (A.3.d.i)."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
-      "rationale": "International migration is studied across sociology, economics, and political science as a cross-disciplinary topic."
+      "relevantPathsAI": [],
+      "rationaleAI": "International migration is studied across sociology, economics, and political science as a cross-disciplinary topic."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "rationale": "Physical anthropology, including human evolution, is part of the scope of anthropology (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Physical anthropology, including human evolution, is part of the scope of anthropology (B.2)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
-      "rationale": "Tocqueville's work on democracy and society is a foundational contribution to political science and sociology."
+      "relevantPathsAI": [],
+      "rationaleAI": "Tocqueville's work on democracy and society is a foundational contribution to political science and sociology."
     },
     {
       "vsiTitle": "Malthus",
       "vsiAuthor": "Donald Winch",
-      "rationale": "Malthus's work on population connects demography (C.5), economics (D), and social science history."
+      "relevantPathsAI": [
+        "C.5",
+        "D"
+      ],
+      "rationaleAI": "Malthus's work on population connects demography (C.5), economics (D), and social science history."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
-      "rationale": "Adam Smith is foundational to the development of economics (D) and the emergence of social science."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Adam Smith is foundational to the development of economics (D) and the emergence of social science."
     },
     {
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
-      "rationale": "Keynes is pivotal in the development of economic theory (D) and macroeconomics (D.2)."
+      "relevantPathsAI": [
+        "D",
+        "D.2"
+      ],
+      "rationaleAI": "Keynes is pivotal in the development of economic theory (D) and macroeconomics (D.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

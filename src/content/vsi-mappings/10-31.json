@@ -4,177 +4,281 @@
     {
       "vsiTitle": "Philosophy of science",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Directly covers the philosophy of science including scientific methodology, the status of scientific theory, and validation of theories (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Directly covers the philosophy of science including scientific methodology, the status of scientific theory, and validation of theories (B)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
-      "rationale": "Section A.4.b covers the revolution in natural philosophy by Bacon, Descartes, and Galileo, which is the Scientific Revolution."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Section A.4.b covers the revolution in natural philosophy by Bacon, Descartes, and Galileo, which is the Scientific Revolution."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
-      "rationale": "Section A.2.a covers science in Greek civilization including protoscience, disciplined observation, and the Platonic vs. Aristotelian view of nature."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.a covers science in Greek civilization including protoscience, disciplined observation, and the Platonic vs. Aristotelian view of nature."
     },
     {
       "vsiTitle": "Galileo",
       "vsiAuthor": "Stillman Drake",
-      "rationale": "Galileo is named in A.4.b.i as a key figure in the radical reformulation of natural knowledge during the scientific revolution."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Galileo is named in A.4.b.i as a key figure in the radical reformulation of natural knowledge during the scientific revolution."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
-      "rationale": "Newton's work is foundational to A.4 and B.2.c-d on the Kantian interpretation of Newtonian physics."
+      "relevantPathsAI": [
+        "A.4",
+        "B.2.c"
+      ],
+      "rationaleAI": "Newton's work is foundational to A.4 and B.2.c-d on the Kantian interpretation of Newtonian physics."
     },
     {
       "vsiTitle": "Copernicus",
       "vsiAuthor": "Owen Gingerich",
-      "rationale": "The Copernican revolution is part of the rebirth of science in the Renaissance (A.4.a)."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "The Copernican revolution is part of the rebirth of science in the Renaissance (A.4.a)."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
-      "rationale": "Descartes is named in A.4.b.i and B.2.b as central to the revolution in natural philosophy and the debate about methodology."
+      "relevantPathsAI": [
+        "A.4",
+        "B.2"
+      ],
+      "rationaleAI": "Descartes is named in A.4.b.i and B.2.b as central to the revolution in natural philosophy and the debate about methodology."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
-      "rationale": "Aristotle's empirical approach and view of nature are discussed in A.2.a.ii and B.2.a on the Aristotelian approach to science."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "Aristotle's empirical approach and view of nature are discussed in A.2.a.ii and B.2.a on the Aristotelian approach to science."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
-      "rationale": "Darwin's theory profoundly transformed 19th-century science (A.6) and raised enduring questions in the philosophy of science."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Darwin's theory profoundly transformed 19th-century science (A.6) and raised enduring questions in the philosophy of science."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "The history of physics from Copernicus through Einstein is a major component of the history of science throughout section A."
+      "relevantPathsAI": [],
+      "rationaleAI": "The history of physics from Copernicus through Einstein is a major component of the history of science throughout section A."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Chemistry's development is part of the history of science in section A, including institutional organization of science."
+      "relevantPathsAI": [],
+      "rationaleAI": "Chemistry's development is part of the history of science in section A, including institutional organization of science."
     },
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "rationale": "Medicine's history is part of the broader development of science in A.5-A.7, including social organization aspects."
+      "relevantPathsAI": [
+        "A.5",
+        "A.7"
+      ],
+      "rationaleAI": "Medicine's history is part of the broader development of science in A.5-A.7, including social organization aspects."
     },
     {
       "vsiTitle": "The History of Mathematics",
       "vsiAuthor": "Jacqueline Stedall",
-      "rationale": "The development of mathematics is intertwined with the history of science, especially the mathematical formulation discussed in B.3.a."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The development of mathematics is intertwined with the history of science, especially the mathematical formulation discussed in B.3.a."
     },
     {
       "vsiTitle": "Science and Religion",
       "vsiAuthor": "Thomas Dixon, Adam Shapiro",
-      "rationale": "Section B.6 addresses the relevance of scientific knowledge to other spheres of human experience, including science-religion tensions."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Section B.6 addresses the relevance of scientific knowledge to other spheres of human experience, including science-religion tensions."
     },
     {
       "vsiTitle": "Pseudoscience",
       "vsiAuthor": "Michael D. Gordin",
-      "rationale": "The demarcation between science and pseudoscience is central to the philosophy of science, relating to B.3 and B.4 on validation."
+      "relevantPathsAI": [
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "The demarcation between science and pseudoscience is central to the philosophy of science, relating to B.3 and B.4 on validation."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
-      "rationale": "Section B.2.e covers responses to relativity, quantum mechanics, and changes in natural sciences, core to philosophy of physics."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2.e covers responses to relativity, quantum mechanics, and changes in natural sciences, core to philosophy of physics."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Section B.5.b discusses applying different philosophical doctrines to different sciences; biology raises unique philosophical questions."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Section B.5.b discusses applying different philosophical doctrines to different sciences; biology raises unique philosophical questions."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
-      "rationale": "Faraday exemplifies 19th-century experimental science and the progress in physics discussed in A.6."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Faraday exemplifies 19th-century experimental science and the progress in physics discussed in A.6."
     },
     {
       "vsiTitle": "Niels Bohr",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Bohr's quantum mechanics is central to the profound changes driving 20th-century philosophy of science debates (B.2.e)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Bohr's quantum mechanics is central to the profound changes driving 20th-century philosophy of science debates (B.2.e)."
     },
     {
       "vsiTitle": "Hume",
       "vsiAuthor": "James Anthony Harris",
-      "rationale": "Hume's empiricism is central to B.2.c on 18th-century philosophy of science and the problem of induction."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Hume's empiricism is central to B.2.c on 18th-century philosophy of science and the problem of induction."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Section B.2.c-d covers Kantian interpretation of Newtonian physics and belief in the unique rationality of the classical synthesis."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Section B.2.c-d covers Kantian interpretation of Newtonian physics and belief in the unique rationality of the classical synthesis."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
-      "rationale": "Section A.5.b covers the intellectual origins of revolution in the spirit of the Enlightenment."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Section A.5.b covers the intellectual origins of revolution in the spirit of the Enlightenment."
     },
     {
       "vsiTitle": "Objectivity",
       "vsiAuthor": "Stephen Gaukroger",
-      "rationale": "Objectivity is a central concern of the philosophy of science, relating to B.3-4 on empirical procedures, validation, and scientific theory."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Objectivity is a central concern of the philosophy of science, relating to B.3-4 on empirical procedures, validation, and scientific theory."
     },
     {
       "vsiTitle": "Causation",
       "vsiAuthor": "Stephen Mumford, Rani Lill Anjum",
-      "rationale": "Causation is fundamental to scientific explanation, relevant to B.3 on empirical procedures and B.4 on scientific discovery."
+      "relevantPathsAI": [
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Causation is fundamental to scientific explanation, relevant to B.3 on empirical procedures and B.4 on scientific discovery."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Section B.3.b specifically lists measurement as a key empirical procedure of science."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Section B.3.b specifically lists measurement as a key empirical procedure of science."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Astronomy's development is a central thread in the history of science from ancient Greek through modern times."
+      "relevantPathsAI": [],
+      "rationaleAI": "Astronomy's development is a central thread in the history of science from ancient Greek through modern times."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Section B.2.e discusses relativity as one of the profound changes driving 20th-century debate in philosophy of science."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2.e discusses relativity as one of the profound changes driving 20th-century debate in philosophy of science."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Section B.2.e discusses quantum mechanics as a profound change driving 20th-century philosophical debates."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2.e discusses quantum mechanics as a profound change driving 20th-century philosophical debates."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Pavlov exemplifies the social organization and common pattern of advance in early 20th-century science (A.7)."
+      "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Pavlov exemplifies the social organization and common pattern of advance in early 20th-century science (A.7)."
     },
     {
       "vsiTitle": "Eugenics",
       "vsiAuthor": "Philippa Levine",
-      "rationale": "Eugenics illustrates the moral and political difficulties facing science discussed in A.8 on contemporary problems."
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Eugenics illustrates the moral and political difficulties facing science discussed in A.8 on contemporary problems."
     },
     {
       "vsiTitle": "The History of Time",
       "vsiAuthor": "Leofranc Holford-Strevens",
-      "rationale": "The measurement of time is part of the history of science and its empirical methods throughout section A."
+      "relevantPathsAI": [],
+      "rationaleAI": "The measurement of time is part of the history of science and its empirical methods throughout section A."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Section A.4.a.ii covers the influence of technology on science, and A.4.b.ii covers the results of the new philosophy in practical fields."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Section A.4.a.ii covers the influence of technology on science, and A.4.b.ii covers the results of the new philosophy in practical fields."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
-      "rationale": "Section A.2.a.ii covers the Platonic view of nature and its contrast with the Aristotelian approach, foundational to philosophy of science."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.a.ii covers the Platonic view of nature and its contrast with the Aristotelian approach, foundational to philosophy of science."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
-      "rationale": "Continental philosophy addresses positivism and phenomenology's relationship to science, relevant to B.2.e on 20th-century debates."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Continental philosophy addresses positivism and phenomenology's relationship to science, relevant to B.2.e on 20th-century debates."
     },
     {
       "vsiTitle": "Montaigne",
       "vsiAuthor": "William M. Hamlin",
-      "rationale": "Montaigne's early modern skepticism relates to Renaissance-era coexistence of new discoveries and old philosophical views (A.4.a.iii)."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Montaigne's early modern skepticism relates to Renaissance-era coexistence of new discoveries and old philosophical views (A.4.a.iii)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

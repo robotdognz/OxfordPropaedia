@@ -4,127 +4,199 @@
     {
       "vsiTitle": "The History of Mathematics",
       "vsiAuthor": "Jacqueline Stedall",
-      "rationale": "Directly covers the historical development of mathematics from ancient through modern times, the central topic of section A."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers the historical development of mathematics from ancient through modern times, the central topic of section A."
     },
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
-      "rationale": "Provides an overview of mathematical concepts and foundations, relevant to both historical development (A) and foundational questions (B)."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Provides an overview of mathematical concepts and foundations, relevant to both historical development (A) and foundational questions (B)."
     },
     {
       "vsiTitle": "Numbers",
       "vsiAuthor": "Peter M. Higgins",
-      "rationale": "Section A.2.a covers numeral systems from Egyptian to positional systems, and B.2 discusses cardinal number and set theory foundations."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "Section A.2.a covers numeral systems from Egyptian to positional systems, and B.2 discusses cardinal number and set theory foundations."
     },
     {
       "vsiTitle": "Algebra",
       "vsiAuthor": "Peter M. Higgins",
-      "rationale": "Section A.2.e covers the history of algebra from Babylonian through modern European developments including algebraic equations."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e covers the history of algebra from Babylonian through modern European developments including algebraic equations."
     },
     {
       "vsiTitle": "Geometry",
       "vsiAuthor": "Maciej Dunajski",
-      "rationale": "Section A.2.d covers the historical development of geometry including Euclidean, non-Euclidean, projective, and differential geometry."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d covers the historical development of geometry including Euclidean, non-Euclidean, projective, and differential geometry."
     },
     {
       "vsiTitle": "Trigonometry",
       "vsiAuthor": "Glen Van Brummelen",
-      "rationale": "Trigonometry is part of the historical development of geometry and mathematical analysis covered in A.2.d."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Trigonometry is part of the historical development of geometry and mathematical analysis covered in A.2.d."
     },
     {
       "vsiTitle": "Probability",
       "vsiAuthor": "John Haigh",
-      "rationale": "Section A.3 covers the historical development of probability theory, including the abstract calculus and alternative views of probability."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3 covers the historical development of probability theory, including the abstract calculus and alternative views of probability."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Section A.3.b covers the development of mathematical statistics including stochastic processes and control theory."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.b covers the development of mathematical statistics including stochastic processes and control theory."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Infinity is central to the foundations of mathematics (B), including set theory, Cantor's work, and the crisis in foundations after 1900."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Infinity is central to the foundations of mathematics (B), including set theory, Cantor's work, and the crisis in foundations after 1900."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
-      "rationale": "Section B.3 covers the crisis in foundations after 1900 including paradoxes and the metamathematical method that Godel's theorems epitomize."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Section B.3 covers the crisis in foundations after 1900 including paradoxes and the metamathematical method that Godel's theorems epitomize."
     },
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
-      "rationale": "Section B.3 discusses Logicism, Intuitionism, and Formalism as alternative positions on the foundations of mathematics."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Section B.3 discusses Logicism, Intuitionism, and Formalism as alternative positions on the foundations of mathematics."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Russell's Logicism and the crisis in foundations (B.3.c) are central to the foundations of mathematics."
+      "relevantPathsAI": [
+        "B.3.c"
+      ],
+      "rationaleAI": "Russell's Logicism and the crisis in foundations (B.3.c) are central to the foundations of mathematics."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern electronic digital computers."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern electronic digital computers."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Section A.2.c traces the evolution of computational devices from the abacus to modern computers, the history of computing."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c traces the evolution of computational devices from the abacus to modern computers, the history of computing."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
-      "rationale": "Leibniz co-developed calculus (A.1.b.i) and contributed to the logical calculus, both central to this section."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Leibniz co-developed calculus (A.1.b.i) and contributed to the logical calculus, both central to this section."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
-      "rationale": "Section A.1.b.i specifically names Newton as co-discoverer of calculus in the 17th century."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.b.i specifically names Newton as co-discoverer of calculus in the 17th century."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Number theory's historical development from Euclid through Gauss is part of the broader mathematical history in this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Number theory's historical development from Euclid through Gauss is part of the broader mathematical history in this section."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
-      "rationale": "Section A.1.a.ii covers Greek and Hellenistic mathematics as part of the broader scientific achievements of the ancient world."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.a.ii covers Greek and Hellenistic mathematics as part of the broader scientific achievements of the ancient world."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Combinatorics is part of the broader historical development of mathematical branches covered in section A."
+      "relevantPathsAI": [],
+      "rationaleAI": "Combinatorics is part of the broader historical development of mathematical branches covered in section A."
     },
     {
       "vsiTitle": "Fractals",
       "vsiAuthor": "Kenneth Falconer",
-      "rationale": "Fractals represent a modern development in geometry and analysis relevant to 19th-20th century developments in A.1.b.iii."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Fractals represent a modern development in geometry and analysis relevant to 19th-20th century developments in A.1.b.iii."
     },
     {
       "vsiTitle": "Topology",
       "vsiAuthor": "Richard Earl",
-      "rationale": "Section A.2.d.vi lists topology as a modern idea in geometry, part of the historical development of mathematics."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.d.vi lists topology as a modern idea in geometry, part of the historical development of mathematics."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
-      "rationale": "The development of calculus and analysis is a major thread in the history of mathematics from Newton and Leibniz onward (A.1.b)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The development of calculus and analysis is a major thread in the history of mathematics from Newton and Leibniz onward (A.1.b)."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
-      "rationale": "The relationship between pure and applied mathematics is part of the historical development, including the influence of physical science on analysis (A.1.b.iii)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The relationship between pure and applied mathematics is part of the historical development, including the influence of physical science on analysis (A.1.b.iii)."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
-      "rationale": "Chaos theory is a 20th-century mathematical development relevant to the modern period developments in A.1.b.iii."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Chaos theory is a 20th-century mathematical development relevant to the modern period developments in A.1.b.iii."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern computers, connecting to computer science foundations."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern computers, connecting to computer science foundations."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

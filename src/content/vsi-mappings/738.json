@@ -4,127 +4,218 @@
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "rationale": "Traces the history of scientific and resource exploration across surface and underground environments (A), from polar expeditions to geological surveys."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Traces the history of scientific and resource exploration across surface and underground environments (A), from polar expeditions to geological surveys."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Essential for understanding A.1.a (determining Earth's interior properties) and A.1.b (resource exploration for ores, fuels, and water), as geology defines where resources lie."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Essential for understanding A.1.a (determining Earth's interior properties) and A.1.b (resource exploration for ores, fuels, and water), as geology defines where resources lie."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Seismology, gravimetry, and GPS are the indirect geophysical methods (A.2.a) that reveal subsurface structures without excavation."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Seismology, gravimetry, and GPS are the indirect geophysical methods (A.2.a) that reveal subsurface structures without excavation."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "Crustal and mantle dynamics shape Earth's interior properties (A.1.a), and plate-boundary processes determine where mineral and energy resources concentrate."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Crustal and mantle dynamics shape Earth's interior properties (A.1.a), and plate-boundary processes determine where mineral and energy resources concentrate."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
-      "rationale": "Explores undersea exploration (B) including offshore platforms (B.1) and the oceanographic sampling and measurement techniques (B.3) used to study the deep ocean."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Explores undersea exploration (B) including offshore platforms (B.1) and the oceanographic sampling and measurement techniques (B.3) used to study the deep ocean."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Biological oceanography is a key dimension of undersea exploration (B), encompassing aquaculture platforms and the living systems that exploration encounters."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Biological oceanography is a key dimension of undersea exploration (B), encompassing aquaculture platforms and the living systems that exploration encounters."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
-      "rationale": "Antarctica represents surface exploration (A) at its most extreme, requiring specialized life-support systems (D) and international cooperation frameworks."
+      "relevantPathsAI": [
+        "A",
+        "D"
+      ],
+      "rationaleAI": "Antarctica represents surface exploration (A) at its most extreme, requiring specialized life-support systems (D) and international cooperation frameworks."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
-      "rationale": "Arctic exploration demands life-support systems (D) for extreme conditions and illustrates the challenges of surface exploration (A) in polar environments."
+      "relevantPathsAI": [
+        "A",
+        "D"
+      ],
+      "rationaleAI": "Arctic exploration demands life-support systems (D) for extreme conditions and illustrates the challenges of surface exploration (A) in polar environments."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Unmanned spacecraft probing the planets and their satellites (C.2.b.iii) have transformed our understanding of the solar system."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Unmanned spacecraft probing the planets and their satellites (C.2.b.iii) have transformed our understanding of the solar system."
     },
     {
       "vsiTitle": "Moons",
       "vsiAuthor": "David Rothery",
-      "rationale": "Examines planetary satellites explored by unmanned probes (C.2.b.iii) and the manned Apollo lunar program (C.2.c), bridging robotic and human space exploration."
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.c"
+      ],
+      "rationaleAI": "Examines planetary satellites explored by unmanned probes (C.2.b.iii) and the manned Apollo lunar program (C.2.c), bridging robotic and human space exploration."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Provides the scientific context for interplanetary trajectories (C.3.d) and the unmanned space probes (C.2.b) that navigate them."
+      "relevantPathsAI": [
+        "C.3",
+        "C.2"
+      ],
+      "rationaleAI": "Provides the scientific context for interplanetary trajectories (C.3.d) and the unmanned space probes (C.2.b) that navigate them."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Solar physics defines the space environment (C.3.a) through which all missions travel, and solar observations have driven advances in the physical sciences (C.4)."
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Solar physics defines the space environment (C.3.a) through which all missions travel, and solar observations have driven advances in the physical sciences (C.4)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Space exploration has transformed cosmology, making this essential for understanding C.4 (contributions of space exploration to advances in the physical sciences)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Space exploration has transformed cosmology, making this essential for understanding C.4 (contributions of space exploration to advances in the physical sciences)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
-      "rationale": "Orbiting satellites for scientific purposes (C.2.b.ii) have enabled astrophysical discoveries impossible from Earth's surface, advancing the physical sciences (C.4)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Orbiting satellites for scientific purposes (C.2.b.ii) have enabled astrophysical discoveries impossible from Earth's surface, advancing the physical sciences (C.4)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "The search for extraterrestrial life motivates planetary probes (C.2.b.iii) and represents one of space science's most consequential research frontiers (C.4)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "The search for extraterrestrial life motivates planetary probes (C.2.b.iii) and represents one of space science's most consequential research frontiers (C.4)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "rationale": "Sounding rockets exploring Earth's upper atmosphere (C.2.b.i) provided early data about the space environment (C.3.a) before orbital missions became routine."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Sounding rockets exploring Earth's upper atmosphere (C.2.b.i) provided early data about the space environment (C.3.a) before orbital missions became routine."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Earth-oriented satellites (C.2.d) revolutionized our ability to survey the planet, connecting space technology to understanding Earth's properties (A.1.a)."
+      "relevantPathsAI": [
+        "C.2",
+        "A.1"
+      ],
+      "rationaleAI": "Earth-oriented satellites (C.2.d) revolutionized our ability to survey the planet, connecting space technology to understanding Earth's properties (A.1.a)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Resource exploration for ores and building materials (A.1.b) relies on direct methods—excavation, boring, and sampling (A.2.b)—grounded in mineralogical knowledge."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Resource exploration for ores and building materials (A.1.b) relies on direct methods—excavation, boring, and sampling (A.2.b)—grounded in mineralogical knowledge."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Navigational science underpins both undersea exploration (B.2) and space navigation (C.3.d.ii), connecting centuries of wayfinding to modern mission planning."
+      "relevantPathsAI": [
+        "B.2",
+        "C.3"
+      ],
+      "rationaleAI": "Navigational science underpins both undersea exploration (B.2) and space navigation (C.3.d.ii), connecting centuries of wayfinding to modern mission planning."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Orbiting satellites carrying telescopes (C.2.b.ii) opened wavelength windows blocked by Earth's atmosphere, enabling space-based astronomical observations."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Orbiting satellites carrying telescopes (C.2.b.ii) opened wavelength windows blocked by Earth's atmosphere, enabling space-based astronomical observations."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Volcanic activity reveals Earth's interior properties (A.1.a) and geothermal energy potential (A.1.b), connecting deep-Earth processes to resource exploration."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Volcanic activity reveals Earth's interior properties (A.1.a) and geothermal energy potential (A.1.b), connecting deep-Earth processes to resource exploration."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Direct exploration methods—boring and sampling of soil and rock (A.2.b)—depend on understanding rock types, structures, and stratigraphic relationships."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Direct exploration methods—boring and sampling of soil and rock (A.2.b)—depend on understanding rock types, structures, and stratigraphic relationships."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Early speculations about space travel and the development of space flight theory (C.1) grew from centuries of astronomical observation and imagination."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Early speculations about space travel and the development of space flight theory (C.1) grew from centuries of astronomical observation and imagination."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "rationale": "Tidal patterns shape navigational methods (B.2) and oceanographic measurement techniques (B.3) essential for undersea exploration."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Tidal patterns shape navigational methods (B.2) and oceanographic measurement techniques (B.3) essential for undersea exploration."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Unmanned underwater vehicles (B.1.d) and unmanned space probes (C.2.b) are robotic exploration platforms that extend human reach into hostile environments."
+      "relevantPathsAI": [
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "Unmanned underwater vehicles (B.1.d) and unmanned space probes (C.2.b) are robotic exploration platforms that extend human reach into hostile environments."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

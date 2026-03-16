@@ -4,112 +4,182 @@
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Directly covers perception including motion perception, colour, visual system, and the translation of sensory stimulation into organized experience (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Directly covers perception including motion perception, colour, visual system, and the translation of sensory stimulation into organized experience (C)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Covers vision including the retina, transduction, eye movements, colour vision, and cortical responses to visual stimuli (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers vision including the retina, transduction, eye movements, colour vision, and cortical responses to visual stimuli (B.2)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers the cerebral cortex, sensory processing, and the neural mechanisms underlying attention, sensation, and perception (A.5, B.2.d)."
+      "relevantPathsAI": [
+        "A.5",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the cerebral cortex, sensory processing, and the neural mechanisms underlying attention, sensation, and perception (A.5, B.2.d)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers brain imaging, cognition, and neural basis of attention and perceptual processing (A.5, A.6)."
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Covers brain imaging, cognition, and neural basis of attention and perceptual processing (A.5, A.6)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Directly relevant to awareness of internal and external events and the problem of defining attention (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Directly relevant to awareness of internal and external events and the problem of defining attention (A)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers acoustics, pitch, loudness, frequency, and the Doppler effect, directly relevant to audition mechanisms (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Covers acoustics, pitch, loudness, frequency, and the Doppler effect, directly relevant to audition mechanisms (B.3)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Covers optics and wave-particle duality of light, the physical basis of the visual stimulus and transduction process (B.2.b)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers optics and wave-particle duality of light, the physical basis of the visual stimulus and transduction process (B.2.b)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
-      "rationale": "Directly covers the sensory experience of pain including cause, function, qualities, theories, and modes of treatment (B.4.d)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Directly covers the sensory experience of pain including cause, function, qualities, theories, and modes of treatment (B.4.d)."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
-      "rationale": "Covers olfactory receptors, olfactory processes, odour-inducing factors, and effects on behaviour (B.8)."
+      "relevantPathsAI": [
+        "B.8"
+      ],
+      "rationaleAI": "Covers olfactory receptors, olfactory processes, odour-inducing factors, and effects on behaviour (B.8)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Covers physiological mechanisms of the senses in general, relevant to sensory reception and transduction (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers physiological mechanisms of the senses in general, relevant to sensory reception and transduction (B.1)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Covers the central and peripheral nervous systems relevant to sensory pathways, vestibular systems, and kinesthesis (B.5, B.6)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Covers the central and peripheral nervous systems relevant to sensory pathways, vestibular systems, and kinesthesis (B.5, B.6)."
     },
     {
       "vsiTitle": "Synaesthesia",
       "vsiAuthor": "Julia Simner",
-      "rationale": "A perceptual phenomenon relevant to interrelations among the senses and individual differences in perceptual functioning (E.3, C.4)."
+      "relevantPathsAI": [
+        "E.3",
+        "C.4"
+      ],
+      "rationaleAI": "A perceptual phenomenon relevant to interrelations among the senses and individual differences in perceptual functioning (E.3, C.4)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Relevant to context effects in perception -- how previously experienced stimuli influence the observer (C.3.b)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Relevant to context effects in perception -- how previously experienced stimuli influence the observer (C.3.b)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Covers perception and reasoning, relevant to information-theory analysis of attentive phenomena (A.6)."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Covers perception and reasoning, relevant to information-theory analysis of attentive phenomena (A.6)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides the broad psychological framework for understanding sensation, perception, and attention, including Gestalt and behaviourist theories (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Provides the broad psychological framework for understanding sensation, perception, and attention, including Gestalt and behaviourist theories (C.1)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers wave physics underlying both audition (sound waves) and vision (electromagnetic radiation), the physical basis of sensory stimulation."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers wave physics underlying both audition (sound waves) and vision (electromagnetic radiation), the physical basis of sensory stimulation."
     },
     {
       "vsiTitle": "The Psychology of Music",
       "vsiAuthor": "Elizabeth Hellmuth Margulis",
-      "rationale": "Covers auditory perception and processing of complex sounds, relevant to audition mechanisms and perceptual organization of sound (B.3, C)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Covers auditory perception and processing of complex sounds, relevant to audition mechanisms and perceptual organization of sound (B.3, C)."
     },
     {
       "vsiTitle": "Dreaming",
       "vsiAuthor": "J. Allan Hobson",
-      "rationale": "Covers hallucinations and altered perceptual states with neurological factors (G.2)."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Covers hallucinations and altered perceptual states with neurological factors (G.2)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
-      "rationale": "Relevant to differences in perceptual functioning among individuals and atypical attention and sensory processing (C.4, A.4)."
+      "relevantPathsAI": [
+        "C.4",
+        "A.4"
+      ],
+      "rationaleAI": "Relevant to differences in perceptual functioning among individuals and atypical attention and sensory processing (C.4, A.4)."
     },
     {
       "vsiTitle": "Madness",
       "vsiAuthor": "Andrew T. Scull",
-      "rationale": "Covers hallucinations including neurological factors and types of hallucinatory experience (G.2)."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Covers hallucinations including neurological factors and types of hallucinatory experience (G.2)."
     },
     {
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
-      "rationale": "Emotions influence attention and perception; relevant to determinants of attention including temperament and unconscious influences (A.4)."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Emotions influence attention and perception; relevant to determinants of attention including temperament and unconscious influences (A.4)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Drugs are relevant to factors affecting perception and are linked to hallucinatory experiences (G.2) and altered perceptual states."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Drugs are relevant to factors affecting perception and are linked to hallucinatory experiences (G.2) and altered perceptual states."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

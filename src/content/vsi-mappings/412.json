@@ -4,67 +4,114 @@
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "rationale": "Directly covers human heredity, genome, variation, and race -- the central topics of this section (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers human heredity, genome, variation, and race -- the central topics of this section (A, B)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Explains cell division, chromosomes, mutations, cystic fibrosis inheritance, and sex linkage, directly relevant to genetic reproduction and chromosome variations (A.1, A.2.b)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Explains cell division, chromosomes, mutations, cystic fibrosis inheritance, and sex linkage, directly relevant to genetic reproduction and chromosome variations (A.1, A.2.b)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
-      "rationale": "Introduces DNA sequencing and genomic technologies that underpin our understanding of human genetic variation and applied human genetics (A.3, B.1)."
+      "relevantPathsAI": [
+        "A.3",
+        "B.1"
+      ],
+      "rationaleAI": "Introduces DNA sequencing and genomic technologies that underpin our understanding of human genetic variation and applied human genetics (A.3, B.1)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Details DNA structure, Mendelian inheritance patterns, and molecular mechanisms underlying genetic reproduction and chromosome variations (A.1, A.2.b)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Details DNA structure, Mendelian inheritance patterns, and molecular mechanisms underlying genetic reproduction and chromosome variations (A.1, A.2.b)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Illuminates how identical twins form and how cell differentiation translates genotype into phenotypic variation (A.2.a, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Illuminates how identical twins form and how cell differentiation translates genotype into phenotypic variation (A.2.a, B.1)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "rationale": "Ancient DNA analysis and hominin speciation bear directly on the nature and origin of human physical variation (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Ancient DNA analysis and hominin speciation bear directly on the nature and origin of human physical variation (B)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Explains genetic drift, natural selection, and population-level mechanisms that generate human physical diversity (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Explains genetic drift, natural selection, and population-level mechanisms that generate human physical diversity (B.1, B.2)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
-      "rationale": "Examines IQ measurement, Wechsler scales, and twin studies on cognitive heritability, directly relevant to inheritance of behavioral traits (A.2, A.4)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Examines IQ measurement, Wechsler scales, and twin studies on cognitive heritability, directly relevant to inheritance of behavioral traits (A.2, A.4)."
     },
     {
       "vsiTitle": "Eugenics",
       "vsiAuthor": "Philippa Levine",
-      "rationale": "Traces historical applications of human genetics to population control and racial classification, from Francis Galton's founding ideas onward (A.3, B.2)."
+      "relevantPathsAI": [
+        "A.3",
+        "B.2"
+      ],
+      "rationaleAI": "Traces historical applications of human genetics to population control and racial classification, from Francis Galton's founding ideas onward (A.3, B.2)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
-      "rationale": "Directly addresses critiques of old racial measures such as colour, hair form, and body measurements, and institutional racism (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Directly addresses critiques of old racial measures such as colour, hair form, and body measurements, and institutional racism (B.2)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Provides cultural perspectives on human diversity and the anthropological critique of biological race concepts (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Provides cultural perspectives on human diversity and the anthropological critique of biological race concepts (B.1, B.2)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Engages with the nature-versus-nurture debate, essentialism, and species concepts relevant to scientific controversies about race and heredity (A.2, B.2)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "Engages with the nature-versus-nurture debate, essentialism, and species concepts relevant to scientific controversies about race and heredity (A.2, B.2)."
     },
     {
       "vsiTitle": "Demography",
       "vsiAuthor": "Sarah Harper",
-      "rationale": "Analyzes population distribution and life chances relevant to understanding patterns of human diversity across populations (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Analyzes population distribution and life chances relevant to understanding patterns of human diversity across populations (B.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

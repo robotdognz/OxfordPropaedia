@@ -4,47 +4,82 @@
     {
       "vsiTitle": "The Aztecs",
       "vsiAuthor": "David Carrasco",
-      "rationale": "Directly covers the Aztec state, its military campaigns under Itzcoatl and Montezuma, and Aztec culture and society up to the Spanish conquest (C.2-C.3)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers the Aztec state, its military campaigns under Itzcoatl and Montezuma, and Aztec culture and society up to the Spanish conquest (C.2-C.3)."
     },
     {
       "vsiTitle": "The Maya",
       "vsiAuthor": "Matthew Restall, Amara Solari",
-      "rationale": "Directly covers Maya civilization in Classic and Post-Classic periods, including urban settlements, temple-pyramids, the calendar, writing system, and the collapse (B.2, C.1)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers Maya civilization in Classic and Post-Classic periods, including urban settlements, temple-pyramids, the calendar, writing system, and the collapse (B.2, C.1)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
-      "rationale": "Narrates the Spanish conquest of the Aztec Empire and the broader European subjugation of Meso-America that ended the Post-Classic Period (C.2-C.3)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Narrates the Spanish conquest of the Aztec Empire and the broader European subjugation of Meso-America that ended the Post-Classic Period (C.2-C.3)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "rationale": "Introduces the excavation and dating methods essential for studying Olmec, Teotihuacan, Maya, and Aztec sites, including ceremonial architecture and pottery analysis (A, B.1-B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Introduces the excavation and dating methods essential for studying Olmec, Teotihuacan, Maya, and Aztec sites, including ceremonial architecture and pottery analysis (A, B.1-B.2)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Traces Late Pleistocene migrations and Early Hunter peoples through the emergence of agriculture around 6500 BC in Meso-America (B.1.a)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Traces Late Pleistocene migrations and Early Hunter peoples through the emergence of agriculture around 6500 BC in Meso-America (B.1.a)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Provides ethnographic frameworks for understanding Meso-American societies (A), Aztec political organization, religious ritual, and social hierarchies (C.3)."
+      "relevantPathsAI": [
+        "A",
+        "C.3"
+      ],
+      "rationaleAI": "Provides ethnographic frameworks for understanding Meso-American societies (A), Aztec political organization, religious ritual, and social hierarchies (C.3)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
-      "rationale": "Examines documentary sources about Meso-American civilizations, including chronicles by Cortes, Bernal Diaz del Castillo, and Bartolome de Las Casas (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Examines documentary sources about Meso-American civilizations, including chronicles by Cortes, Bernal Diaz del Castillo, and Bartolome de Las Casas (A)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
-      "rationale": "Explores mythological traditions such as the legend of Quetzalcoatl (C.1), Maya cosmology (B.2.c.ii), and Aztec sacrificial religion (C.3)."
+      "relevantPathsAI": [
+        "C.1",
+        "B.2.c",
+        "C.3"
+      ],
+      "rationaleAI": "Explores mythological traditions such as the legend of Quetzalcoatl (C.1), Maya cosmology (B.2.c.ii), and Aztec sacrificial religion (C.3)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
-      "rationale": "Situates Meso-American peoples within the broader world of indigenous cultures of the Americas, providing ethnographic context for pre-Columbian societies (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Situates Meso-American peoples within the broader world of indigenous cultures of the Americas, providing ethnographic context for pre-Columbian societies (A)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

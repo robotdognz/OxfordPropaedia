@@ -57,7 +57,7 @@ function linkifyRationale(text: string, baseUrl: string, sectionCode?: string) {
 export interface VsiCardProps {
   title: string;
   author: string;
-  rationale: string;
+  rationaleAI: string;
   baseUrl: string;
   sectionCode?: string;
   publicationYear?: number;

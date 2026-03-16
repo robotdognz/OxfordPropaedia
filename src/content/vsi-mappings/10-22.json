@@ -4,97 +4,147 @@
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
-      "rationale": "Provides an overview of the branches of mathematics including algebra, analysis, geometry, and combinatorics, the core topics of this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides an overview of the branches of mathematics including algebra, analysis, geometry, and combinatorics, the core topics of this section."
     },
     {
       "vsiTitle": "Algebra",
       "vsiAuthor": "Peter M. Higgins",
-      "rationale": "Section B covers algebra from arithmetic through algebraic structures including groups, rings, fields, and categories."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section B covers algebra from arithmetic through algebraic structures including groups, rings, fields, and categories."
     },
     {
       "vsiTitle": "Numbers",
       "vsiAuthor": "Peter M. Higgins",
-      "rationale": "Section B.1 covers arithmetic including natural numbers, integers, binary operations, number systems, and logarithms."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Section B.1 covers arithmetic including natural numbers, integers, binary operations, number systems, and logarithms."
     },
     {
       "vsiTitle": "Geometry",
       "vsiAuthor": "Maciej Dunajski",
-      "rationale": "Section C covers Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometry in comprehensive detail."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section C covers Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometry in comprehensive detail."
     },
     {
       "vsiTitle": "Trigonometry",
       "vsiAuthor": "Glen Van Brummelen",
-      "rationale": "Section C.4.b specifically covers trigonometry as part of analytic and trigonometric geometry."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Section C.4.b specifically covers trigonometry as part of analytic and trigonometric geometry."
     },
     {
       "vsiTitle": "Topology",
       "vsiAuthor": "Richard Earl",
-      "rationale": "Section F covers topology in detail including general topology, algebraic topology, topological spaces, and homotopy theory."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section F covers topology in detail including general topology, algebraic topology, topological spaces, and homotopy theory."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Section E.2 covers number theory including elementary, algebraic, analytic, geometric, and probabilistic number theory."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Section E.2 covers number theory including elementary, algebraic, analytic, geometric, and probabilistic number theory."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
-      "rationale": "Section E.1 covers combinatorics and combinatorial geometry including methods, results, and unsolved problems."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Section E.1 covers combinatorics and combinatorial geometry including methods, results, and unsolved problems."
     },
     {
       "vsiTitle": "Probability",
       "vsiAuthor": "John Haigh",
-      "rationale": "Section D.6 covers the theory of probability on both finite and infinite dimensional spaces."
+      "relevantPathsAI": [
+        "D.6"
+      ],
+      "rationaleAI": "Section D.6 covers the theory of probability on both finite and infinite dimensional spaces."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Statistics is grounded in probability theory (D.6) and closely related to the analysis topics in section D."
+      "relevantPathsAI": [
+        "D.6"
+      ],
+      "rationaleAI": "Statistics is grounded in probability theory (D.6) and closely related to the analysis topics in section D."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
-      "rationale": "Section D covers analysis comprehensively: real analysis, complex analysis, differential equations, functional analysis, and Fourier analysis."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section D covers analysis comprehensively: real analysis, complex analysis, differential equations, functional analysis, and Fourier analysis."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Set theory (A) deals fundamentally with infinite sets including Cantorian set theory and the Zermelo-Fraenkel axioms."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Set theory (A) deals fundamentally with infinite sets including Cantorian set theory and the Zermelo-Fraenkel axioms."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
-      "rationale": "Section A.3.b discusses Godel's theorem as a limitation of axiomatic set theory, demonstrating the failure to prove consistency."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Section A.3.b discusses Godel's theorem as a limitation of axiomatic set theory, demonstrating the failure to prove consistency."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Section B.4.b covers group theory (the mathematical formalization of symmetry) and C.1.c covers transformation geometry."
+      "relevantPathsAI": [
+        "B.4",
+        "C.1.c"
+      ],
+      "rationaleAI": "Section B.4.b covers group theory (the mathematical formalization of symmetry) and C.1.c covers transformation geometry."
     },
     {
       "vsiTitle": "Fractals",
       "vsiAuthor": "Kenneth Falconer",
-      "rationale": "Fractals relate to topology (F), the concept of dimension, and special curves in section C.4.e."
+      "relevantPathsAI": [
+        "C.4",
+        "F"
+      ],
+      "rationaleAI": "Fractals relate to topology (F), the concept of dimension, and special curves in section C.4.e."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
-      "rationale": "Section D.3.d covers dynamical systems on manifolds, and chaos theory is a key branch of nonlinear differential equations (D.3)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Section D.3.d covers dynamical systems on manifolds, and chaos theory is a key branch of nonlinear differential equations (D.3)."
     },
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
-      "rationale": "Set theory (A) is deeply connected to logic, and A.3.a-b discuss axiomatic foundations and Godel's theorem."
+      "relevantPathsAI": [
+        "A",
+        "A.3"
+      ],
+      "rationaleAI": "Set theory (A) is deeply connected to logic, and A.3.a-b discuss axiomatic foundations and Godel's theorem."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
-      "rationale": "Many branches covered here (differential equations, Fourier analysis, vector/tensor analysis) have extensive applications bridging pure and applied mathematics."
+      "relevantPathsAI": [],
+      "rationaleAI": "Many branches covered here (differential equations, Fourier analysis, vector/tensor analysis) have extensive applications bridging pure and applied mathematics."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
-      "rationale": "Mathematical finance draws on probability theory (D.6), stochastic processes, and analysis (D) as major applications."
+      "relevantPathsAI": [
+        "D",
+        "D.6"
+      ],
+      "rationaleAI": "Mathematical finance draws on probability theory (D.6), stochastic processes, and analysis (D) as major applications."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

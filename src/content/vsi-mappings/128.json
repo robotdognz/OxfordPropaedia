@@ -4,62 +4,106 @@
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Directly covers general wave phenomena (A), including wave classification, diffraction, interference, electromagnetic radiation, sound, water waves, and gravitational waves."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Directly covers general wave phenomena (A), including wave classification, diffraction, interference, electromagnetic radiation, sound, water waves, and gravitational waves."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Directly covers sound waves (E), including frequency, pitch, loudness, resonance, the Doppler effect, infrasound, noise, and acoustical properties."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Directly covers sound waves (E), including frequency, pitch, loudness, resonance, the Doppler effect, infrasound, noise, and acoustical properties."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Directly covers light waves (C) and focusing/imaging (D), including optics, wave-particle duality, speed of light, and the quantum theory of light."
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Directly covers light waves (C) and focusing/imaging (D), including optics, wave-particle duality, speed of light, and the quantum theory of light."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Addresses the quantum theory of light (C.8), including wave-particle duality, the superposition principle (A.4), and Heisenberg's uncertainty principle (C.8.b)."
+      "relevantPathsAI": [
+        "C.8",
+        "A.4"
+      ],
+      "rationaleAI": "Addresses the quantum theory of light (C.8), including wave-particle duality, the superposition principle (A.4), and Heisenberg's uncertainty principle (C.8.b)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Explains Maxwell's electromagnetic theory (C.6) and Faraday's foundational work on electromagnetic wave generation and propagation (B)."
+      "relevantPathsAI": [
+        "B",
+        "C.6"
+      ],
+      "rationaleAI": "Explains Maxwell's electromagnetic theory (C.6) and Faraday's foundational work on electromagnetic wave generation and propagation (B)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Illustrates geometrical optics, lenses, mirrors, and optical systems (D.1), as well as radio telescopes relevant to electromagnetic wave detection (B.2.a)."
+      "relevantPathsAI": [
+        "D.1",
+        "B.2"
+      ],
+      "rationaleAI": "Illustrates geometrical optics, lenses, mirrors, and optical systems (D.1), as well as radio telescopes relevant to electromagnetic wave detection (B.2.a)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Discusses gamma rays (B.2.g), sources of gamma radiation from radioactive nuclei (B.3.e), and synchrotron radiation (B.3.d)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Discusses gamma rays (B.2.g), sources of gamma radiation from radioactive nuclei (B.3.e), and synchrotron radiation (B.3.d)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Demonstrates wave interference and diffraction through X-ray and electron diffraction in crystalline materials (A.6, B.2.f)."
+      "relevantPathsAI": [
+        "A.6",
+        "B.2"
+      ],
+      "rationaleAI": "Demonstrates wave interference and diffraction through X-ray and electron diffraction in crystalline materials (A.6, B.2.f)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Establishes the constancy of the velocity of light (C.2) and introduces gravitational waves as a type of wave phenomenon predicted by general relativity (A.2)."
+      "relevantPathsAI": [
+        "C.2",
+        "A.2"
+      ],
+      "rationaleAI": "Establishes the constancy of the velocity of light (C.2) and introduces gravitational waves as a type of wave phenomenon predicted by general relativity (A.2)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Illustrates lens-based imaging systems (D.1), the electromagnetic spectrum in microscopy (B.2), and wave phenomena like diffraction limits in optical instruments."
+      "relevantPathsAI": [
+        "D.1",
+        "B.2"
+      ],
+      "rationaleAI": "Illustrates lens-based imaging systems (D.1), the electromagnetic spectrum in microscopy (B.2), and wave phenomena like diffraction limits in optical instruments."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Provides broad coverage of wave motion fundamentals, electromagnetic waves, quantum mechanics, and the physics underlying all wave phenomena in this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides broad coverage of wave motion fundamentals, electromagnetic waves, quantum mechanics, and the physics underlying all wave phenomena in this section."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Uses seismic wave propagation as an example of mechanical waves (A.2.a), including wave behaviour at boundaries such as reflection, refraction, and mode conversion (A.5)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.5"
+      ],
+      "rationaleAI": "Uses seismic wave propagation as an example of mechanical waves (A.2.a), including wave behaviour at boundaries such as reflection, refraction, and mode conversion (A.5)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,287 +4,477 @@
     {
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
-      "rationale": "Section A.1 covers Pythagoreanism (A.1.a), the Sophists (A.1.b), Eleaticism (A.1.c), and Atomism (A.1.d)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.c"
+      ],
+      "rationaleAI": "Section A.1 covers Pythagoreanism (A.1.a), the Sophists (A.1.b), Eleaticism (A.1.c), and Atomism (A.1.d)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
-      "rationale": "Section A.1.e covers Platonism as a major philosophical school, and B.1 discusses it as a metaphysical theory."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.1.e covers Platonism as a major philosophical school, and B.1 discusses it as a metaphysical theory."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
-      "rationale": "Section A.1.f covers Aristotelianism as a philosophical school, and B.1 discusses it as a metaphysical theory."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.1.f covers Aristotelianism as a philosophical school, and B.1 discusses it as a metaphysical theory."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
-      "rationale": "Section A.1.g covers Stoicism as a major philosophical school in antiquity."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.g covers Stoicism as a major philosophical school in antiquity."
     },
     {
       "vsiTitle": "Epicureanism",
       "vsiAuthor": "Catherine Wilson",
-      "rationale": "Section A.1.h covers Epicureanism as a major philosophical school in antiquity."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.h covers Epicureanism as a major philosophical school in antiquity."
     },
     {
       "vsiTitle": "Scepticism",
       "vsiAuthor": "Duncan Pritchard",
-      "rationale": "Section A.1.i covers Skepticism as a philosophical school, and C.2 discusses it as a theory of knowledge validity."
+      "relevantPathsAI": [
+        "A.1.i",
+        "C.2"
+      ],
+      "rationaleAI": "Section A.1.i covers Skepticism as a philosophical school, and C.2 discusses it as a theory of knowledge validity."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
-      "rationale": "Section A.1.j covers Scholasticism, and B.1 lists Thomism as a type of metaphysical theory."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.1.j covers Scholasticism, and B.1 lists Thomism as a type of metaphysical theory."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
-      "rationale": "Section A.1.j covers Scholasticism as a philosophical school, encompassing major medieval thinkers."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Section A.1.j covers Scholasticism as a philosophical school, encompassing major medieval thinkers."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
-      "rationale": "Section A.2.a covers Cartesianism as a philosophical school, and B.1 lists it as a metaphysical theory."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.2.a covers Cartesianism as a philosophical school, and B.1 lists it as a metaphysical theory."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
-      "rationale": "Section A.2.b covers Empiricism, to which Locke is a foundational contributor."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.b covers Empiricism, to which Locke is a foundational contributor."
     },
     {
       "vsiTitle": "Hume",
       "vsiAuthor": "James Anthony Harris",
-      "rationale": "Hume is central to Empiricism (A.2.b) and Skepticism, both major philosophical schools."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Hume is central to Empiricism (A.2.b) and Skepticism, both major philosophical schools."
     },
     {
       "vsiTitle": "Spinoza",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Section A.2.c covers Rationalism, to which Spinoza is a central contributor."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c covers Rationalism, to which Spinoza is a central contributor."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
-      "rationale": "Section A.2.c covers Rationalism, to which Leibniz is a central contributor."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Section A.2.c covers Rationalism, to which Leibniz is a central contributor."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Section A.2.e covers Kantianism as a major philosophical school."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.e covers Kantianism as a major philosophical school."
     },
     {
       "vsiTitle": "Hegel",
       "vsiAuthor": "Peter Singer",
-      "rationale": "Section A.2.g covers Hegelianism, and A.2.f covers Idealism to which Hegel is central."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.g covers Hegelianism, and A.2.f covers Idealism to which Hegel is central."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
-      "rationale": "Section A.2.j covers Marxism, and B.1 lists dialectical Materialism as a metaphysical theory."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Section A.2.j covers Marxism, and B.1 lists dialectical Materialism as a metaphysical theory."
     },
     {
       "vsiTitle": "Utilitarianism",
       "vsiAuthor": "Katarzyna de Lazari-Radek, Peter Singer",
-      "rationale": "Section A.2.h covers Utilitarianism as a major philosophical school."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.h covers Utilitarianism as a major philosophical school."
     },
     {
       "vsiTitle": "John Stuart Mill",
       "vsiAuthor": "Gregory Claeys",
-      "rationale": "Mill is central to Utilitarianism (A.2.h) and Empiricism (A.2.b)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Mill is central to Utilitarianism (A.2.h) and Empiricism (A.2.b)."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
-      "rationale": "Section A.2.n covers Existentialism, and B.3 discusses it as a conception of man."
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "Section A.2.n covers Existentialism, and B.3 discusses it as a conception of man."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
-      "rationale": "Section A.2.o covers Analytic and Linguistic philosophy as a major modern school."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Section A.2.o covers Analytic and Linguistic philosophy as a major modern school."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
-      "rationale": "Encompasses Phenomenology (A.2.m), Existentialism (A.2.n), and Marxism (A.2.j)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Encompasses Phenomenology (A.2.m), Existentialism (A.2.n), and Marxism (A.2.j)."
     },
     {
       "vsiTitle": "German philosophy",
       "vsiAuthor": "Andrew Bowie",
-      "rationale": "Spans Rationalism (A.2.c), Kantianism (A.2.e), Idealism (A.2.f), Hegelianism (A.2.g), and Phenomenology (A.2.m)."
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.2"
+      ],
+      "rationaleAI": "Spans Rationalism (A.2.c), Kantianism (A.2.e), Idealism (A.2.f), Hegelianism (A.2.g), and Phenomenology (A.2.m)."
     },
     {
       "vsiTitle": "French Philosophy",
       "vsiAuthor": "Stephen Gaukroger, Knox Peden",
-      "rationale": "Encompasses Cartesianism (A.2.a), Existentialism (A.2.n), Positivism (A.2.i), and Phenomenology (A.2.m)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.i"
+      ],
+      "rationaleAI": "Encompasses Cartesianism (A.2.a), Existentialism (A.2.n), Positivism (A.2.i), and Phenomenology (A.2.m)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
-      "rationale": "Hobbes is relevant to Materialism (A.2.d) and Empiricism (A.2.b)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Hobbes is relevant to Materialism (A.2.d) and Empiricism (A.2.b)."
     },
     {
       "vsiTitle": "Kierkegaard",
       "vsiAuthor": "Patrick Gardiner",
-      "rationale": "Kierkegaard is foundational for Existentialism (A.2.n)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Kierkegaard is foundational for Existentialism (A.2.n)."
     },
     {
       "vsiTitle": "Nietzsche",
       "vsiAuthor": "Michael Tanner",
-      "rationale": "Nietzsche challenges multiple philosophical schools and relates to theories of conduct (D) and conceptions of man (B.3)."
+      "relevantPathsAI": [
+        "B.3",
+        "D"
+      ],
+      "rationaleAI": "Nietzsche challenges multiple philosophical schools and relates to theories of conduct (D) and conceptions of man (B.3)."
     },
     {
       "vsiTitle": "Schopenhauer",
       "vsiAuthor": "Christopher Janaway",
-      "rationale": "Schopenhauer relates to Idealism (A.2.f) and the reaction against Rationalism."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Schopenhauer relates to Idealism (A.2.f) and the reaction against Rationalism."
     },
     {
       "vsiTitle": "Heidegger",
       "vsiAuthor": "Michael Inwood",
-      "rationale": "Heidegger relates to Phenomenology (A.2.m) and Existentialism (A.2.n)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Heidegger relates to Phenomenology (A.2.m) and Existentialism (A.2.n)."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Wittgenstein is central to Analytic and Linguistic philosophy (A.2.o) and Positivism/Logical Empiricism (A.2.i)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.i"
+      ],
+      "rationaleAI": "Wittgenstein is central to Analytic and Linguistic philosophy (A.2.o) and Positivism/Logical Empiricism (A.2.i)."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Russell is foundational in Analytic philosophy (A.2.o) and contributed to Realism (A.2.k) and Logical Empiricism (A.2.i)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.i"
+      ],
+      "rationaleAI": "Russell is foundational in Analytic philosophy (A.2.o) and contributed to Realism (A.2.k) and Logical Empiricism (A.2.i)."
     },
     {
       "vsiTitle": "Foucault",
       "vsiAuthor": "Gary Gutting",
-      "rationale": "Foucault engages with Marxism (A.2.j) and Phenomenology (A.2.m)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Foucault engages with Marxism (A.2.j) and Phenomenology (A.2.m)."
     },
     {
       "vsiTitle": "Derrida",
       "vsiAuthor": "Simon Glendinning",
-      "rationale": "Derrida's deconstruction engages with and challenges Phenomenology (A.2.m) and other schools."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Derrida's deconstruction engages with and challenges Phenomenology (A.2.m) and other schools."
     },
     {
       "vsiTitle": "Habermas",
       "vsiAuthor": "Gordon Finlayson",
-      "rationale": "Habermas engages with Marxism (A.2.j), Pragmatism (A.2.l), and Positivism (A.2.i)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.l",
+        "A.2.i"
+      ],
+      "rationaleAI": "Habermas engages with Marxism (A.2.j), Pragmatism (A.2.l), and Positivism (A.2.i)."
     },
     {
       "vsiTitle": "Theodor W. Adorno",
       "vsiAuthor": "Andrew Bowie",
-      "rationale": "Adorno's critical theory engages with Marxism (A.2.j), Idealism (A.2.f), and Positivism (A.2.i)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.i"
+      ],
+      "rationaleAI": "Adorno's critical theory engages with Marxism (A.2.j), Idealism (A.2.f), and Positivism (A.2.i)."
     },
     {
       "vsiTitle": "Critical theory",
       "vsiAuthor": "Stephen Eric Bronner",
-      "rationale": "Critical theory emerged from Marxism (A.2.j) and engages with multiple philosophical schools."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Critical theory emerged from Marxism (A.2.j) and engages with multiple philosophical schools."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
-      "rationale": "Postmodernism challenges Realism (A.2.k), Positivism (A.2.i), and other traditional positions."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.i"
+      ],
+      "rationaleAI": "Postmodernism challenges Realism (A.2.k), Positivism (A.2.i), and other traditional positions."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
-      "rationale": "Poststructuralism extends beyond Phenomenology (A.2.m) and Linguistic philosophy (A.2.o)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Poststructuralism extends beyond Phenomenology (A.2.m) and Linguistic philosophy (A.2.o)."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
-      "rationale": "Section B.2 lists humanism as a view concerning God, and B.3 lists it as a conception of man."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Section B.2 lists humanism as a view concerning God, and B.3 lists it as a conception of man."
     },
     {
       "vsiTitle": "Atheism",
       "vsiAuthor": "Julian Baggini",
-      "rationale": "Section B.2 covers atheism as a view concerning the existence of God."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 covers atheism as a view concerning the existence of God."
     },
     {
       "vsiTitle": "Agnosticism",
       "vsiAuthor": "Robin Le Poidevin",
-      "rationale": "Section B.2 covers agnosticism as a view concerning the existence and knowledge of God."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 covers agnosticism as a view concerning the existence and knowledge of God."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
-      "rationale": "Section B.2 covers different views on God including theism, Deism, fideism, and pantheism."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 covers different views on God including theism, Deism, fideism, and pantheism."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
-      "rationale": "Section B.2 covers theism, Deism, and other views concerning God's existence and attributes."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 covers theism, Deism, and other views concerning God's existence and attributes."
     },
     {
       "vsiTitle": "Knowledge",
       "vsiAuthor": "Jennifer Nagel",
-      "rationale": "Section C covers theories of thought and knowledge including different conceptions of objects, validity, and sources."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section C covers theories of thought and knowledge including different conceptions of objects, validity, and sources."
     },
     {
       "vsiTitle": "Reality",
       "vsiAuthor": "Jan Westerhoff",
-      "rationale": "Section C.1 covers conceptions of the object of knowledge including Phenomenalism, Idealism, and Realism."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Section C.1 covers conceptions of the object of knowledge including Phenomenalism, Idealism, and Realism."
     },
     {
       "vsiTitle": "Metaphysics",
       "vsiAuthor": "Stephen Mumford",
-      "rationale": "Section B.1 covers different types of metaphysical theory from Platonism through Organismic dynamism."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Section B.1 covers different types of metaphysical theory from Platonism through Organismic dynamism."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Section B.4 covers views on mind and body including Materialism, dualism, and immaterialism."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Section B.4 covers views on mind and body including Materialism, dualism, and immaterialism."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
-      "rationale": "Free will connects to theories of conduct (D) and the mind-body problem (B.4)."
+      "relevantPathsAI": [
+        "B.4",
+        "D"
+      ],
+      "rationaleAI": "Free will connects to theories of conduct (D) and the mind-body problem (B.4)."
     },
     {
       "vsiTitle": "Objectivity",
       "vsiAuthor": "Stephen Gaukroger",
-      "rationale": "Objectivity relates to Realism (C.1), Kantianism (C.2), and Positivism (C.2)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Objectivity relates to Realism (C.1), Kantianism (C.2), and Positivism (C.2)."
     },
     {
       "vsiTitle": "Hannah Arendt",
       "vsiAuthor": "Dana Villa",
-      "rationale": "Arendt engages with Existentialism (A.2.n), Pragmatism (A.2.l), and political philosophy doctrines."
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.l"
+      ],
+      "rationaleAI": "Arendt engages with Existentialism (A.2.n), Pragmatism (A.2.l), and political philosophy doctrines."
     },
     {
       "vsiTitle": "Simone Weil",
       "vsiAuthor": "A. Rebecca Rozelle-Stone",
-      "rationale": "Weil engages with Platonism (A.1.e), mysticism, and ethical doctrines (D)."
+      "relevantPathsAI": [
+        "A.1",
+        "D"
+      ],
+      "rationaleAI": "Weil engages with Platonism (A.1.e), mysticism, and ethical doctrines (D)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
-      "rationale": "Augustine is relevant to Platonism (A.1.e) and Scholasticism (A.1.j)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Augustine is relevant to Platonism (A.1.e) and Scholasticism (A.1.j)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
-      "rationale": "Rousseau relates to theories of conduct (D) and the Enlightenment critique of Rationalism."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Rousseau relates to theories of conduct (D) and the Enlightenment critique of Rationalism."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
-      "rationale": "Indian philosophy provides alternative metaphysical and epistemological frameworks relevant to B and C."
+      "relevantPathsAI": [],
+      "rationaleAI": "Indian philosophy provides alternative metaphysical and epistemological frameworks relevant to B and C."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Avicenna contributed to Scholasticism (A.1.j) and engaged with Aristotelianism (A.1.f) in the Islamic tradition."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Avicenna contributed to Scholasticism (A.1.j) and engaged with Aristotelianism (A.1.f) in the Islamic tradition."
     },
     {
       "vsiTitle": "Moses Maimonides",
       "vsiAuthor": "Ross Brann",
-      "rationale": "Maimonides contributed to Scholasticism (A.1.j) through his rationalist methodology within Jewish philosophy."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Maimonides contributed to Scholasticism (A.1.j) through his rationalist methodology within Jewish philosophy."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Islamic philosophy engaged with Aristotelianism (A.1.f) and Neoplatonism, contributing to Scholasticism (A.1.j)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Islamic philosophy engaged with Aristotelianism (A.1.f) and Neoplatonism, contributing to Scholasticism (A.1.j)."
     },
     {
       "vsiTitle": "Ancient philosophy",
       "vsiAuthor": "Julia Annas",
-      "rationale": "Covers the ancient schools listed in A.1 including Platonism, Aristotelianism, Stoicism, Epicureanism, and Skepticism."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Covers the ancient schools listed in A.1 including Platonism, Aristotelianism, Stoicism, Epicureanism, and Skepticism."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

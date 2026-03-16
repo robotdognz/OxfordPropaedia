@@ -4,112 +4,178 @@
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Directly covers the periodic law, atomic number, electron configuration, and the systematic classification of elements (A and B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers the periodic law, atomic number, electron configuration, and the systematic classification of elements (A and B)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Traces the discovery, properties, isotopes, and cosmic origins of the chemical elements, spanning element groups (B) and origin/abundances (D)."
+      "relevantPathsAI": [
+        "B",
+        "D"
+      ],
+      "rationaleAI": "Traces the discovery, properties, isotopes, and cosmic origins of the chemical elements, spanning element groups (B) and origin/abundances (D)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Introduces the periodic table, inorganic chemistry, spectroscopy, and the chemical properties distinguishing element groups (A and B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Introduces the periodic table, inorganic chemistry, spectroscopy, and the chemical properties distinguishing element groups (A and B)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Traces the arc from alchemy through Mendeleev's periodic table to modern elemental discovery, illuminating how chemical classification evolved (A and B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Traces the arc from alchemy through Mendeleev's periodic table to modern elemental discovery, illuminating how chemical classification evolved (A and B)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Explains electron configuration, quantum mechanics of atomic structure, states of matter, and thermodynamic properties that govern element behavior (A and B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explains electron configuration, quantum mechanics of atomic structure, states of matter, and thermodynamic properties that govern element behavior (A and B)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Atomic structure and nuclear properties underpin the periodic table, and this volume connects radioactivity to C.2 (radioactive elements) and stellar nucleosynthesis to D.3 (elements in stars)."
+      "relevantPathsAI": [
+        "C.2",
+        "D.3"
+      ],
+      "rationaleAI": "Atomic structure and nuclear properties underpin the periodic table, and this volume connects radioactivity to C.2 (radioactive elements) and stellar nucleosynthesis to D.3 (elements in stars)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Isotopic composition and abundance shape the behavior of elements from hydrogen (B.1) through the actinides (B.13), with direct relevance to C.2 (stable and radioactive elements)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.13",
+        "C.2"
+      ],
+      "rationaleAI": "Isotopic composition and abundance shape the behavior of elements from hydrogen (B.1) through the actinides (B.13), with direct relevance to C.2 (stable and radioactive elements)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Radioactive decay, nuclear fission, and radioisotope applications illuminate C.2 (stable and radioactive elements) and C.5 (synthetic/transuranium elements)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.5"
+      ],
+      "rationaleAI": "Radioactive decay, nuclear fission, and radioisotope applications illuminate C.2 (stable and radioactive elements) and C.5 (synthetic/transuranium elements)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Water's molecular structure and anomalous physical properties make it directly relevant to B.1 (hydrogen and water), the most abundant compound of the lightest element."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Water's molecular structure and anomalous physical properties make it directly relevant to B.1 (hydrogen and water), the most abundant compound of the lightest element."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Chemical bonds, covalent bonding, and molecular structures reveal how elements combine, essential for understanding principal compounds across element groups (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Chemical bonds, covalent bonding, and molecular structures reveal how elements combine, essential for understanding principal compounds across element groups (B)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Metals, ceramics, and their bonding and crystallographic properties connect to C.1 (metals vs. nonmetals) and C.7 (technologically significant elements)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.7"
+      ],
+      "rationaleAI": "Metals, ceramics, and their bonding and crystallographic properties connect to C.1 (metals vs. nonmetals) and C.7 (technologically significant elements)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Natural mineral forms—crystallography, solid solutions, ore deposits—illustrate how elements occur in Earth's crust (C.3, native and combined elements; D.1.a)."
+      "relevantPathsAI": [
+        "C.3",
+        "D.1"
+      ],
+      "rationaleAI": "Natural mineral forms—crystallography, solid solutions, ore deposits—illustrate how elements occur in Earth's crust (C.3, native and combined elements; D.1.a)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Life depends on specific elements—iron in hemoglobin, zinc in enzymes, phosphorus in DNA—making this essential for C.6 (biologically active or essential elements)."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Life depends on specific elements—iron in hemoglobin, zinc in enzymes, phosphorus in DNA—making this essential for C.6 (biologically active or essential elements)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Nuclear fission of uranium and plutonium and fusion of hydrogen isotopes connect directly to B.13 (actinide elements) and C.5 (synthetic/transuranium elements)."
+      "relevantPathsAI": [
+        "B.13",
+        "C.5"
+      ],
+      "rationaleAI": "Nuclear fission of uranium and plutonium and fusion of hydrogen isotopes connect directly to B.13 (actinide elements) and C.5 (synthetic/transuranium elements)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Stellar nucleosynthesis—hydrogen burning, helium fusion, and the formation of heavier elements—is the origin story told in D.3 (elements in the stars)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Stellar nucleosynthesis—hydrogen burning, helium fusion, and the formation of heavier elements—is the origin story told in D.3 (elements in the stars)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Solar physics reveals the Sun's elemental composition, directly relevant to D.2 (elements in the solar system) and D.3 (elements in stars)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Solar physics reveals the Sun's elemental composition, directly relevant to D.2 (elements in the solar system) and D.3 (elements in stars)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Big Bang nucleosynthesis produced the primordial hydrogen and helium from which all heavier elements descend, central to D (origin of the elements and their relative abundances)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Big Bang nucleosynthesis produced the primordial hydrogen and helium from which all heavier elements descend, central to D (origin of the elements and their relative abundances)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Earth's chemical composition, radioactive decay, and geological differentiation govern element distribution across the planet, relevant to D.1 (elements on Earth)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Earth's chemical composition, radioactive decay, and geological differentiation govern element distribution across the planet, relevant to D.1 (elements on Earth)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Earth's internal structure and physical properties determine how elements are distributed between crust and mantle, relevant to D.1.a (elements in the crust)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Earth's internal structure and physical properties determine how elements are distributed between crust and mantle, relevant to D.1.a (elements in the crust)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "rationale": "Atmospheric composition—nitrogen, oxygen, argon, carbon dioxide—is a direct expression of D.1.c (elements in the atmosphere)."
+      "relevantPathsAI": [
+        "D.1.c"
+      ],
+      "rationaleAI": "Atmospheric composition—nitrogen, oxygen, argon, carbon dioxide—is a direct expression of D.1.c (elements in the atmosphere)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Biogeochemical cycling moves elements through the biosphere, relevant to D.1.d (elements in the biosphere) and the global cycling of carbon, nitrogen, and phosphorus."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Biogeochemical cycling moves elements through the biosphere, relevant to D.1.d (elements in the biosphere) and the global cycling of carbon, nitrogen, and phosphorus."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Planetary composition reflects the solar nebula from which planets condensed, directly relevant to D.2 (elements in the solar system)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Planetary composition reflects the solar nebula from which planets condensed, directly relevant to D.2 (elements in the solar system)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

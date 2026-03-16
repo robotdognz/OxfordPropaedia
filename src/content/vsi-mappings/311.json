@@ -4,72 +4,122 @@
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers the molecular level of biotic organization (A.2.a) including polymers, carbohydrates, lipids, proteins, and nucleic acids, and addresses metabolism (A.1.b)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Covers the molecular level of biotic organization (A.2.a) including polymers, carbohydrates, lipids, proteins, and nucleic acids, and addresses metabolism (A.1.b)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Directly covers the cellular level of biotic organization (A.2.b) including procaryotic and eucaryotic cells, nucleus, and endoplasmic reticulum."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers the cellular level of biotic organization (A.2.b) including procaryotic and eucaryotic cells, nucleus, and endoplasmic reticulum."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Addresses metabolism (A.1.b) including catabolism and anabolism at the molecular level, and biochemical reactions within cells."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses metabolism (A.1.b) including catabolism and anabolism at the molecular level, and biochemical reactions within cells."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Covers nucleic acids and the molecular machinery of reproduction, growth, and development (A.1.d) at the molecular level of organization (A.2.a)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Covers nucleic acids and the molecular machinery of reproduction, growth, and development (A.1.d) at the molecular level of organization (A.2.a)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Directly addresses population-level biotic organization (A.2.d) including species, communities, and interaction with the environment (A.1.e)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Directly addresses population-level biotic organization (A.2.d) including species, communities, and interaction with the environment (A.1.e)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Covers reproduction, growth, and development (A.1.d) including cell differentiation and the progression from blastula to organism (A.2.c)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2.c"
+      ],
+      "rationaleAI": "Covers reproduction, growth, and development (A.1.d) including cell differentiation and the progression from blastula to organism (A.2.c)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Directly relevant to metabolism (A.1.b), covering the chemical reactions and proteins that drive catabolism and anabolism in living organisms."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Directly relevant to metabolism (A.1.b), covering the chemical reactions and proteins that drive catabolism and anabolism in living organisms."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers sensory reception (A.1.c) and the nervous system, addressing how organisms process stimuli and interact with their environment (A.1.e)."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1"
+      ],
+      "rationaleAI": "Covers sensory reception (A.1.c) and the nervous system, addressing how organisms process stimuli and interact with their environment (A.1.e)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Addresses the molecular level of organization (A.2.a) through DNA, genes, and genomes, and reproduction at the cellular level (A.1.d and A.2.b)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Addresses the molecular level of organization (A.2.a) through DNA, genes, and genomes, and reproduction at the cellular level (A.1.d and A.2.b)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "Directly covers the concept of extraterrestrial life and its chemistry (B.1) and the significance of the search for life beyond Earth (B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Directly covers the concept of extraterrestrial life and its chemistry (B.1) and the significance of the search for life beyond Earth (B.2)."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Relevant to the search for life beyond Earth (B.2), covering planetary environments where life might exist."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Relevant to the search for life beyond Earth (B.2), covering planetary environments where life might exist."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Illustrates interaction with the environment (A.1.e) and metabolism (A.1.b), showing how organisms respond to environmental cycles."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Illustrates interaction with the environment (A.1.e) and metabolism (A.1.b), showing how organisms respond to environmental cycles."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Covers procaryotic cells (A.2.b), microbial metabolism, reproduction, and the population/community levels of organization (A.2.d)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers procaryotic cells (A.2.b), microbial metabolism, reproduction, and the population/community levels of organization (A.2.d)."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
-      "rationale": "Addresses the integration of multiple levels of biotic organization (A.2) from molecular through organ systems."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Addresses the integration of multiple levels of biotic organization (A.2) from molecular through organ systems."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

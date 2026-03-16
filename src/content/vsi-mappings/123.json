@@ -4,97 +4,179 @@
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Core coverage of the entire section including acid-base reactions (E), oxidation-reduction (F), reaction classification (A.3), and spectroscopy as an experimental method (C.5)."
+      "relevantPathsAI": [
+        "A.3",
+        "C.5",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Core coverage of the entire section including acid-base reactions (E), oxidation-reduction (F), reaction classification (A.3), and spectroscopy as an experimental method (C.5)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly covers activation energy (B.2), reaction thermodynamics and equilibrium (B.3), chemical kinetics (C), and electrochemistry (F.4)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "C",
+        "F.4"
+      ],
+      "rationaleAI": "Directly covers activation energy (B.2), reaction thermodynamics and equilibrium (B.3), chemical kinetics (C), and electrochemistry (F.4)."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers free energy, entropy, and thermodynamic principles central to energy changes in chemical reactions (B) and chemical equilibrium (B.3)."
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Covers free energy, entropy, and thermodynamic principles central to energy changes in chemical reactions (B) and chemical equilibrium (B.3)."
     },
     {
       "vsiTitle": "Entropy",
       "vsiAuthor": "James Binney",
-      "rationale": "Directly relevant to entropy changes in chemical reactions (B.3) and the thermodynamic classification of exothermic and endothermic processes (B.1)."
+      "relevantPathsAI": [
+        "B.3",
+        "B.1"
+      ],
+      "rationaleAI": "Directly relevant to entropy changes in chemical reactions (B.3) and the thermodynamic classification of exothermic and endothermic processes (B.1)."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Covers nucleophilic and electrophilic substitution, addition and elimination reaction mechanisms (D.5), and synthesis of chemical compounds (H)."
+      "relevantPathsAI": [
+        "D.5",
+        "H"
+      ],
+      "rationaleAI": "Covers nucleophilic and electrophilic substitution, addition and elimination reaction mechanisms (D.5), and synthesis of chemical compounds (H)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers how molecular structure and chemical bonds influence reaction mechanisms (D.1, D.3) and molecular recognition relevant to reaction specificity."
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Covers how molecular structure and chemical bonds influence reaction mechanisms (D.1, D.3) and molecular recognition relevant to reaction specificity."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers Lavoisier's work on conservation of mass (A.1), oxygen's role in oxidation-reduction (F.1), and elemental reactivity underlying reaction classification (A.3)."
+      "relevantPathsAI": [
+        "A.1",
+        "F.1",
+        "A.3"
+      ],
+      "rationaleAI": "Covers Lavoisier's work on conservation of mass (A.1), oxygen's role in oxidation-reduction (F.1), and elemental reactivity underlying reaction classification (A.3)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Relevant to understanding how electron configuration determines chemical reactivity and reaction classification (A.3), and electron pairing in transition states (D.4)."
+      "relevantPathsAI": [
+        "A.3",
+        "D.4"
+      ],
+      "rationaleAI": "Relevant to understanding how electron configuration determines chemical reactivity and reaction classification (A.3), and electron pairing in transition states (D.4)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Covers the historical growth of major theories concerning chemical reactions (A.2), from alchemy through modern physical chemistry."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers the historical growth of major theories concerning chemical reactions (A.2), from alchemy through modern physical chemistry."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Directly relevant to catalysis (C.1.d), acid-base catalysis (E.3.c), enzyme kinetics as a model for reaction rates (C), and biological redox reactions (F.5)."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "E.3.c",
+        "F.5"
+      ],
+      "rationaleAI": "Directly relevant to catalysis (C.1.d), acid-base catalysis (E.3.c), enzyme kinetics as a model for reaction rates (C), and biological redox reactions (F.5)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Covers biochemical reactions relevant to oxidation-reduction in biological systems (F.5) and acid-base equilibria in biological processes (E)."
+      "relevantPathsAI": [
+        "E",
+        "F.5"
+      ],
+      "rationaleAI": "Covers biochemical reactions relevant to oxidation-reduction in biological systems (F.5) and acid-base equilibria in biological processes (E)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to photochemical reactions (G) and light as a factor affecting reaction rates and direction (C.1.f)."
+      "relevantPathsAI": [
+        "C.1",
+        "G"
+      ],
+      "rationaleAI": "Relevant to photochemical reactions (G) and light as a factor affecting reaction rates and direction (C.1.f)."
     },
     {
       "vsiTitle": "Fire",
       "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Directly relevant to oxidation-reduction reactions in combustion and flames (F.6) and the chemical composition of combustion processes."
+      "relevantPathsAI": [
+        "F.6"
+      ],
+      "rationaleAI": "Directly relevant to oxidation-reduction reactions in combustion and flames (F.6) and the chemical composition of combustion processes."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Relevant to acid-base equilibria in aqueous solutions (E.4.a), the role of solvents in reaction rates (C.1.a), and electrochemical reactions (F.4)."
+      "relevantPathsAI": [
+        "E.4",
+        "C.1",
+        "F.4"
+      ],
+      "rationaleAI": "Relevant to acid-base equilibria in aqueous solutions (E.4.a), the role of solvents in reaction rates (C.1.a), and electrochemical reactions (F.4)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Directly relevant to isotopic substitution as a factor affecting chemical reaction rates (C.1.g) and as a tool for elucidating reaction mechanisms (C.6)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.6"
+      ],
+      "rationaleAI": "Directly relevant to isotopic substitution as a factor affecting chemical reaction rates (C.1.g) and as a tool for elucidating reaction mechanisms (C.6)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Provides the theoretical basis for understanding electron pairing in transition states (D.4), reaction mechanisms (D), and molecular orbital theory underlying reactivity."
+      "relevantPathsAI": [
+        "D",
+        "D.4"
+      ],
+      "rationaleAI": "Provides the theoretical basis for understanding electron pairing in transition states (D.4), reaction mechanisms (D), and molecular orbital theory underlying reactivity."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Relevant to chain reactions (A.3.a.iii), nuclear energy and radiation-driven reactions, and radioisotope use as tracers in studying reaction mechanisms (C.6)."
+      "relevantPathsAI": [
+        "A.3",
+        "C.6"
+      ],
+      "rationaleAI": "Relevant to chain reactions (A.3.a.iii), nuclear energy and radiation-driven reactions, and radioisotope use as tracers in studying reaction mechanisms (C.6)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers chemical bonding and synthesis relevant to the synthesis of chemical compounds (H) and factors affecting choice of synthetic paths (H.1)."
+      "relevantPathsAI": [
+        "H",
+        "H.1"
+      ],
+      "rationaleAI": "Covers chemical bonding and synthesis relevant to the synthesis of chemical compounds (H) and factors affecting choice of synthetic paths (H.1)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Relevant to polymerization reactions (A.3.a.ii) as soft matter science deals extensively with polymer formation and macromolecular chemistry."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Relevant to polymerization reactions (A.3.a.ii) as soft matter science deals extensively with polymer formation and macromolecular chemistry."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

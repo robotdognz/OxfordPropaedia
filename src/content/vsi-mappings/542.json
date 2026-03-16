@@ -4,127 +4,202 @@
     {
       "vsiTitle": "Politics",
       "vsiAuthor": "Kenneth Minogue",
-      "rationale": "A foundational introduction to the state, branches of government, and types of political organization (A, B), explaining how power is structured in modern polities."
+      "relevantPathsAI": [],
+      "rationaleAI": "A foundational introduction to the state, branches of government, and types of political organization (A, B), explaining how power is structured in modern polities."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "rationale": "Explores democratic systems—parliamentary rule, representative governance, and electoral accountability—as a model of political organization (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Explores democratic systems—parliamentary rule, representative governance, and electoral accountability—as a model of political organization (A.2, B.1)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
-      "rationale": "Examines how authoritarian regimes concentrate power and suppress opposition, providing the essential contrast to democratic models (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Examines how authoritarian regimes concentrate power and suppress opposition, providing the essential contrast to democratic models (A.2)."
     },
     {
       "vsiTitle": "Federalism",
       "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
-      "rationale": "Directly covers the federal state system and the distribution of power among national and subnational governments (A.1.b)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Directly covers the federal state system and the distribution of power among national and subnational governments (A.1.b)."
     },
     {
       "vsiTitle": "The European Union",
       "vsiAuthor": "John Pinder, Simon Usherwood",
-      "rationale": "The EU represents a unique experiment in supranational governance and regional federation (A.1.a), blending intergovernmental and federal elements."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The EU represents a unique experiment in supranational governance and regional federation (A.1.a), blending intergovernmental and federal elements."
     },
     {
       "vsiTitle": "European Union Law",
       "vsiAuthor": "Anthony Arnull",
-      "rationale": "Explains the legal architecture of a supranational political system with its own legislative, executive, and judicial institutions (A.1.a)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Explains the legal architecture of a supranational political system with its own legislative, executive, and judicial institutions (A.1.a)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
-      "rationale": "The UN functions as a supranational world congress (A.1.a), mediating sovereignty and collective action among member states."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The UN functions as a supranational world congress (A.1.a), mediating sovereignty and collective action among member states."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "rationale": "Empires are among the oldest supranational political systems (A.1.a), and understanding their structure illuminates modern debates about sovereignty and hierarchy."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Empires are among the oldest supranational political systems (A.1.a), and understanding their structure illuminates modern debates about sovereignty and hierarchy."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
-      "rationale": "The HRE operated as a complex confederation and supranational system (A.1.a), offering a historical model of layered political authority."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The HRE operated as a complex confederation and supranational system (A.1.a), offering a historical model of layered political authority."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "rationale": "Traces how the British Empire functioned as a supranational system encompassing commonwealths, dominions, and dependencies (A.1.a)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Traces how the British Empire functioned as a supranational system encompassing commonwealths, dominions, and dependencies (A.1.a)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "rationale": "Dynastic rule shaped political systems for millennia, establishing models of leadership succession and hereditary authority (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Dynastic rule shaped political systems for millennia, establishing models of leadership succession and hereditary authority (A.2)."
     },
     {
       "vsiTitle": "The American Presidency",
       "vsiAuthor": "Charles O. Jones",
-      "rationale": "Examines the executive branch in a presidential system built on separation of powers (B.3), from constitutional design to modern practice."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Examines the executive branch in a presidential system built on separation of powers (B.3), from constitutional design to modern practice."
     },
     {
       "vsiTitle": "The U.S. Congress",
       "vsiAuthor": "Donald Ritchie",
-      "rationale": "Illuminates how the legislature functions as a branch of government in a federal system (B.2), including committee structures, lawmaking, and oversight."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Illuminates how the legislature functions as a branch of government in a federal system (B.2), including committee structures, lawmaking, and oversight."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
-      "rationale": "The judiciary as a co-equal branch of government (B.4) is central to constitutional governance, and this volume explains how the Court exercises judicial review."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "The judiciary as a co-equal branch of government (B.4) is central to constitutional governance, and this volume explains how the Court exercises judicial review."
     },
     {
       "vsiTitle": "The American Judicial System",
       "vsiAuthor": "Charles L. Zelden",
-      "rationale": "Explores the judicial branch structure—courts, judges, and the power of judicial review (B.4)—across federal and state systems."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Explores the judicial branch structure—courts, judges, and the power of judicial review (B.4)—across federal and state systems."
     },
     {
       "vsiTitle": "The U.S. Constitution",
       "vsiAuthor": "David J. Bodenhamer",
-      "rationale": "The Constitution defines the branches of government and the federal structure (A.1.b, B), making it the foundational document of American political organization."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The Constitution defines the branches of government and the federal structure (A.1.b, B), making it the foundational document of American political organization."
     },
     {
       "vsiTitle": "American politics",
       "vsiAuthor": "Richard M. Valelly",
-      "rationale": "Provides a comprehensive view of American political institutions—Congress, the presidency, the electoral college—and how they interact (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides a comprehensive view of American political institutions—Congress, the presidency, the electoral college—and how they interact (A, B)."
     },
     {
       "vsiTitle": "British Politics",
       "vsiAuthor": "Tony Wright",
-      "rationale": "Parliamentary government concentrates legislative and executive functions in ways that differ fundamentally from presidential systems (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Parliamentary government concentrates legislative and executive functions in ways that differ fundamentally from presidential systems (B.1)."
     },
     {
       "vsiTitle": "The British Constitution",
       "vsiAuthor": "Martin Loughlin",
-      "rationale": "Explains the unwritten constitutional structure of a parliamentary system—House of Commons, House of Lords, civil service—and how conventions substitute for codified rules (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Explains the unwritten constitutional structure of a parliamentary system—House of Commons, House of Lords, civil service—and how conventions substitute for codified rules (B.1, B.2)."
     },
     {
       "vsiTitle": "Governance",
       "vsiAuthor": "Mark Bevir",
-      "rationale": "Explores governance structures and models of political organization at multiple levels (A.2), from local to global."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Explores governance structures and models of political organization at multiple levels (A.2), from local to global."
     },
     {
       "vsiTitle": "Public Administration",
       "vsiAuthor": "Stella Z. Theodoulou, Ravi K. Roy",
-      "rationale": "The bureaucratic machinery that operates within political systems (B) is essential to understanding how government decisions become action."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "The bureaucratic machinery that operates within political systems (B) is essential to understanding how government decisions become action."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Urban governments and the political organization of cities and metropolitan areas (A.1.c) represent the level of government closest to daily life."
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Urban governments and the political organization of cities and metropolitan areas (A.1.c) represent the level of government closest to daily life."
     },
     {
       "vsiTitle": "The Roman Republic",
       "vsiAuthor": "David M. Gwynn",
-      "rationale": "Rome's republic pioneered separated branches of government—senate, magistracies, popular assemblies—providing an early model studied ever since (A.2, B)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Rome's republic pioneered separated branches of government—senate, magistracies, popular assemblies—providing an early model studied ever since (A.2, B)."
     },
     {
       "vsiTitle": "The Soviet Union",
       "vsiAuthor": "Stephen Lovell",
-      "rationale": "The Soviet one-party state concentrated executive and legislative power in ways that defined twentieth-century authoritarianism (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "The Soviet one-party state concentrated executive and legislative power in ways that defined twentieth-century authoritarianism (A.2, B.1)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
-      "rationale": "Magna Carta established foundational constitutional principles governing the structure and limits of government (B), shaping the rule of law for eight centuries."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Magna Carta established foundational constitutional principles governing the structure and limits of government (B), shaping the rule of law for eight centuries."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

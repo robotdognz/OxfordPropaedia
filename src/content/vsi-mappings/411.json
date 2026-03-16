@@ -4,92 +4,147 @@
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "rationale": "Directly covers the hominid fossil record, Australopithecus, Homo habilis, Homo erectus, Homo sapiens, and primate evolutionary relationships (A through C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers the hominid fossil record, Australopithecus, Homo habilis, Homo erectus, Homo sapiens, and primate evolutionary relationships (A through C)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Covers natural selection, genetic drift, and speciation -- the core evolutionary mechanisms underlying the evolutionary process (A) and hominid divergence."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Covers natural selection, genetic drift, and speciation -- the core evolutionary mechanisms underlying the evolutionary process (A) and hominid divergence."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
-      "rationale": "Covers Darwin's theory of natural and sexual selection, the foundational framework for understanding human evolutionary relationships (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers Darwin's theory of natural and sexual selection, the foundational framework for understanding human evolutionary relationships (A, B)."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
-      "rationale": "Covers the discovery and interpretation of fossil remains, directly relevant to the hominid fossil record and paleontological evidence (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers the discovery and interpretation of fossil remains, directly relevant to the hominid fossil record and paleontological evidence (C.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Covers Australopithecus through the emergence of Homo sapiens, Neanderthals, and Cro-Magnons in their environmental context (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Covers Australopithecus through the emergence of Homo sapiens, Neanderthals, and Cro-Magnons in their environmental context (C.2)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Primates are mammals; covers mammalian brain evolution, behavior, and fossil record providing context for primate natural history (B.1.b, B.1.c)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.c"
+      ],
+      "rationaleAI": "Primates are mammals; covers mammalian brain evolution, behavior, and fossil record providing context for primate natural history (B.1.b, B.1.c)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Dental morphology is a key morphological characteristic used to classify hominid fossils and infer feeding adaptations (B.2.a, C.2)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Dental morphology is a key morphological characteristic used to classify hominid fossils and infer feeding adaptations (B.2.a, C.2)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Covers the genetic basis of evolutionary change, relevant to understanding molecular evidence for primate and hominid phylogenetics (A, B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the genetic basis of evolutionary change, relevant to understanding molecular evidence for primate and hominid phylogenetics (A, B.1)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
-      "rationale": "Ancient DNA and genomic sequencing have transformed understanding of evolutionary relationships among hominid lineages (B, C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Ancient DNA and genomic sequencing have transformed understanding of evolutionary relationships among hominid lineages (B, C.2)."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
-      "rationale": "Provides the broad evolutionary context for the emergence of primates and hominids, including molecular clock dating (A, B.1.c)."
+      "relevantPathsAI": [
+        "B.1.c"
+      ],
+      "rationaleAI": "Provides the broad evolutionary context for the emergence of primates and hominids, including molecular clock dating (A, B.1.c)."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Covers instinct, learning, and kin selection relevant to inferred behavioral characteristics of hominids and primate behavior (B.2.b)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers instinct, learning, and kin selection relevant to inferred behavioral characteristics of hominids and primate behavior (B.2.b)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "rationale": "Sexual dimorphism and mate choice are important for understanding contrasting morphological adaptations of Hominidae vs. Pongidae (B.2.c)."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Sexual dimorphism and mate choice are important for understanding contrasting morphological adaptations of Hominidae vs. Pongidae (B.2.c)."
     },
     {
       "vsiTitle": "Extinction",
       "vsiAuthor": "Paul B. Wignall",
-      "rationale": "Covers megafauna extinction and Pleistocene events, relevant to the disappearance of Neanderthals and other hominid species (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Covers megafauna extinction and Pleistocene events, relevant to the disappearance of Neanderthals and other hominid species (C.2)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "rationale": "Covers methods for excavating and interpreting early human sites, directly relevant to discovery and recognition of the hominid fossil record (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers methods for excavating and interpreting early human sites, directly relevant to discovery and recognition of the hominid fossil record (C.1)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Addresses species concepts and essentialism relevant to hominid taxonomy and the classification of primates and Hominidae (B.1.d, C.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "Addresses species concepts and essentialism relevant to hominid taxonomy and the classification of primates and Hominidae (B.1.d, C.2)."
     },
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
-      "rationale": "Covers geographic distribution of species relevant to migration patterns of hominids out of Africa and primate distribution (C.2.d.iv)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Covers geographic distribution of species relevant to migration patterns of hominids out of Africa and primate distribution (C.2.d.iv)."
     },
     {
       "vsiTitle": "Fire",
       "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Covers the role of fire in human evolution, a key inferred behavioral characteristic distinguishing early Homo species (B.2.b)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the role of fire in human evolution, a key inferred behavioral characteristic distinguishing early Homo species (B.2.b)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Explains how Hox genes and developmental processes produce the morphological differences distinguishing Hominidae from Pongidae (B.2.a, B.2.c)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.c"
+      ],
+      "rationaleAI": "Explains how Hox genes and developmental processes produce the morphological differences distinguishing Hominidae from Pongidae (B.2.a, B.2.c)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

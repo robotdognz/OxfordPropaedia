@@ -4,62 +4,101 @@
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Core VSI for this section, covering cell theory, cell classification (procaryotic vs. eucaryotic), cell membrane, nuclear envelope, organelles, the cell cycle, and cell division."
+      "relevantPathsAI": [],
+      "rationaleAI": "Core VSI for this section, covering cell theory, cell classification (procaryotic vs. eucaryotic), cell membrane, nuclear envelope, organelles, the cell cycle, and cell division."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Covers chromosomes, DNA replication, cell division (mitosis and meiosis), and molecular biology relevant to B.1.a (nucleic acids, proteins) and D (the cell cycle)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers chromosomes, DNA replication, cell division (mitosis and meiosis), and molecular biology relevant to B.1.a (nucleic acids, proteins) and D (the cell cycle)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Addresses macromolecules in cells (nucleic acids, proteins) and the molecular underpinnings of genetic replication and cell design (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Addresses macromolecules in cells (nucleic acids, proteins) and the molecular underpinnings of genetic replication and cell design (B.1)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Covers the cell as a molecular system (B.1) including biochemical reactions, DNA, proteins, and small molecules like lipids and amino acids (B.1.b)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the cell as a molecular system (B.1) including biochemical reactions, DNA, proteins, and small molecules like lipids and amino acids (B.1.b)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to cell macromolecules and small molecules (B.1), covering chemical bonds, alpha helices in proteins, and molecular recognition in cellular processes."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Relevant to cell macromolecules and small molecules (B.1), covering chemical bonds, alpha helices in proteins, and molecular recognition in cellular processes."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Addresses cell differentiation, cells in combination forming tissues and multicellular organisms (C.5), and fertilization events (E)."
+      "relevantPathsAI": [
+        "C.5",
+        "E"
+      ],
+      "rationaleAI": "Addresses cell differentiation, cells in combination forming tissues and multicellular organisms (C.5), and fertilization events (E)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Directly relevant to the cell cycle (D), cell division, and cells in combination forming tissues (C.5)."
+      "relevantPathsAI": [
+        "C.5",
+        "D"
+      ],
+      "rationaleAI": "Directly relevant to the cell cycle (D), cell division, and cells in combination forming tissues (C.5)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Covers the tools essential for studying cell morphological elements (B.2.b) including electron microscopy for organelles, ribosomes, and cytoskeleton."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the tools essential for studying cell morphological elements (B.2.b) including electron microscopy for organelles, ribosomes, and cytoskeleton."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Covers procaryotic cell structure and function (A.2.a, B.2.c), illustrating the contrast between procaryotic and eucaryotic cells."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2.c"
+      ],
+      "rationaleAI": "Covers procaryotic cell structure and function (A.2.a, B.2.c), illustrating the contrast between procaryotic and eucaryotic cells."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Addresses procaryotic and eucaryotic microorganisms (A.2.a, B.2.c), including bacteria, archaea, and fungi at the cellular level."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2.c"
+      ],
+      "rationaleAI": "Addresses procaryotic and eucaryotic microorganisms (A.2.a, B.2.c), including bacteria, archaea, and fungi at the cellular level."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Covers outstanding features of the plant cell and plant cell types (A.2.c) including meristematic, epidermal, and other specialized plant cells."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Covers outstanding features of the plant cell and plant cell types (A.2.c) including meristematic, epidermal, and other specialized plant cells."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Addresses proteins as functional molecules in cells (B.1.a) and the enzymatic processes central to cell metabolism and the cell cycle."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Addresses proteins as functional molecules in cells (B.1.a) and the enzymatic processes central to cell metabolism and the cell cycle."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

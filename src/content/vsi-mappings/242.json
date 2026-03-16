@@ -4,97 +4,164 @@
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Examines stratigraphic principles, geochemistry, and the rock record that form the foundation of interpreting the geologic record (A-E)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines stratigraphic principles, geochemistry, and the rock record that form the foundation of interpreting the geologic record (A-E)."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
-      "rationale": "Directly addresses fossilization processes (B.1), the fossil record from the Burgess Shale onward (B.2), and the use of fossils for stratigraphic correlation (B.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Directly addresses fossilization processes (B.1), the fossil record from the Burgess Shale onward (B.2), and the use of fossils for stratigraphic correlation (B.4)."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
-      "rationale": "Explores the Phanerozoic fossil record (B.2.b), mass extinctions (B.3), the origin of life (B.2.a), and the molecular clock for dating evolutionary events."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Explores the Phanerozoic fossil record (B.2.b), mass extinctions (B.3), the origin of life (B.2.a), and the molecular clock for dating evolutionary events."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Examines sedimentary, igneous, and metamorphic rocks and their depositional environments (A.1), directly relevant to understanding layered rocks of the Earth's crust."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Examines sedimentary, igneous, and metamorphic rocks and their depositional environments (A.1), directly relevant to understanding layered rocks of the Earth's crust."
     },
     {
       "vsiTitle": "Dinosaurs",
       "vsiAuthor": "David Norman",
-      "rationale": "Addresses dinosaurs and other fossil reptiles (B.2.b.x) and the iridium anomaly marking the Cretaceous mass extinction (B.3)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Addresses dinosaurs and other fossil reptiles (B.2.b.x) and the iridium anomaly marking the Cretaceous mass extinction (B.3)."
     },
     {
       "vsiTitle": "Extinction",
       "vsiAuthor": "Paul B. Wignall",
-      "rationale": "Directly addresses mass extinctions and background extinctions as revealed in the fossil record (B.3), including the Pleistocene megafaunal extinction."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly addresses mass extinctions and background extinctions as revealed in the fossil record (B.3), including the Pleistocene megafaunal extinction."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Explains radioactive decay principles (D.2.a) and radiometric dating methods (D.2) used to determine the absolute age of rocks and the Earth (D.4.b)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.4"
+      ],
+      "rationaleAI": "Explains radioactive decay principles (D.2.a) and radiometric dating methods (D.2) used to determine the absolute age of rocks and the Earth (D.4.b)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Explores carbon dating and isotopic methods (D.2.d) for determining ages of rocks and meteorites (D.4.b) and rates of seafloor spreading (D.4.c)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.4",
+        "D.4.c"
+      ],
+      "rationaleAI": "Explores carbon dating and isotopic methods (D.2.d) for determining ages of rocks and meteorites (D.4.b) and rates of seafloor spreading (D.4.c)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "Essential for paleogeographical interpretation (E) and determination of seafloor spreading rates from the geologic record (D.4.c)."
+      "relevantPathsAI": [
+        "D.4.c",
+        "E"
+      ],
+      "rationaleAI": "Essential for paleogeographical interpretation (E) and determination of seafloor spreading rates from the geologic record (D.4.c)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Addresses radioactive decay for age determination (D.4.b) and the geological processes that produce the layered rock record (A)."
+      "relevantPathsAI": [
+        "A",
+        "D.4"
+      ],
+      "rationaleAI": "Addresses radioactive decay for age determination (D.4.b) and the geological processes that produce the layered rock record (A)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Illuminates the concept of fossil succession (A.2.c) and the appearance and disappearance of species in the fossil record (B.3)."
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.3"
+      ],
+      "rationaleAI": "Illuminates the concept of fossil succession (A.2.c) and the appearance and disappearance of species in the fossil record (B.3)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Examines mineral composition of rocks including calcite, feldspar, quartz, and clay minerals (A.1.a-b), essential for identifying sedimentary and carbonate rock types."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Examines mineral composition of rocks including calcite, feldspar, quartz, and clay minerals (A.1.a-b), essential for identifying sedimentary and carbonate rock types."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Explores geophysical methods including paleomagnetism for stratigraphic correlation and determination of seafloor spreading rates (D.4.c, E)."
+      "relevantPathsAI": [
+        "D.4.c"
+      ],
+      "rationaleAI": "Explores geophysical methods including paleomagnetism for stratigraphic correlation and determination of seafloor spreading rates (D.4.c, E)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Addresses radiometric dating of landforms and the geomorphological processes that shape depositional environments (A.1) and paleogeography (E)."
+      "relevantPathsAI": [
+        "A.1",
+        "E"
+      ],
+      "rationaleAI": "Addresses radiometric dating of landforms and the geomorphological processes that shape depositional environments (A.1) and paleogeography (E)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Explores volcanic rocks (A.1.c) and pyroclastic deposits that form important marker beds for stratigraphic correlation."
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "Explores volcanic rocks (A.1.c) and pyroclastic deposits that form important marker beds for stratigraphic correlation."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Traces the fossil record of mammals (B.2.b.x), their evolution and radiation through geological time, and their use as index fossils."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Traces the fossil record of mammals (B.2.b.x), their evolution and radiation through geological time, and their use as index fossils."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "rationale": "Fossil cnidarians and reef-building corals (B.2.b.iv) serve as important indicators in the paleontological record."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Fossil cnidarians and reef-building corals (B.2.b.iv) serve as important indicators in the paleontological record."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Surveys the major invertebrate phyla -- Cnidaria, Echinodermata, Porifera, Annelida, Platyhelminthes (B.2.b.iii-ix) -- whose fossil records are central to paleontological interpretation."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Surveys the major invertebrate phyla -- Cnidaria, Echinodermata, Porifera, Annelida, Platyhelminthes (B.2.b.iii-ix) -- whose fossil records are central to paleontological interpretation."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "rationale": "Explores accelerator mass spectrometry and dating methods applied to archaeological problems (C.2), including relative and absolute dating techniques."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Explores accelerator mass spectrometry and dating methods applied to archaeological problems (C.2), including relative and absolute dating techniques."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

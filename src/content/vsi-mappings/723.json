@@ -4,92 +4,155 @@
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Directly addresses A (theory of measurement), B (units and standards including SI), and C (principles of measuring instruments)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses A (theory of measurement), B (units and standards including SI), and C (principles of measuring instruments)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Directly addresses E.1.a (microscopes: optical, electron, acoustic, and scanning tunneling types)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Directly addresses E.1.a (microscopes: optical, electron, acoustic, and scanning tunneling types)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Directly addresses E.1.b (telescopes: optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Directly addresses E.1.b (telescopes: optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Traces the development of compasses and surveying instruments (D.2.c) alongside navigational techniques and devices (G.7)."
+      "relevantPathsAI": [
+        "D.2.c",
+        "G.7"
+      ],
+      "rationaleAI": "Traces the development of compasses and surveying instruments (D.2.c) alongside navigational techniques and devices (G.7)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Traces the evolution of astronomical observations (G.6) and the historical development of observational instruments from antiquity onward."
+      "relevantPathsAI": [
+        "G.6"
+      ],
+      "rationaleAI": "Traces the evolution of astronomical observations (G.6) and the historical development of observational instruments from antiquity onward."
     },
     {
       "vsiTitle": "Particle physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Examines particle accelerators -- cyclotrons, synchrotrons, and colliding-beam storage rings (F.3) -- along with particle detectors (F.7)."
+      "relevantPathsAI": [
+        "F.3",
+        "F.7"
+      ],
+      "rationaleAI": "Examines particle accelerators -- cyclotrons, synchrotrons, and colliding-beam storage rings (F.3) -- along with particle detectors (F.7)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Explores instruments for measuring ionizing radiation such as Geiger counters and scintillation counters (D.2.f), as well as mass spectrometers (F.4)."
+      "relevantPathsAI": [
+        "D.2",
+        "F.4"
+      ],
+      "rationaleAI": "Explores instruments for measuring ionizing radiation such as Geiger counters and scintillation counters (D.2.f), as well as mass spectrometers (F.4)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Examines gravimeters (D.2.d), seismographs (F.6), and surveying methods (G.1) through the lens of geophysical measurement techniques."
+      "relevantPathsAI": [
+        "D.2",
+        "F.6",
+        "G.1"
+      ],
+      "rationaleAI": "Examines gravimeters (D.2.d), seismographs (F.6), and surveying methods (G.1) through the lens of geophysical measurement techniques."
     },
     {
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
-      "rationale": "Addresses meteorological measurement (G.5) including barometers, thermometers, and the instruments used in modern weather forecasting."
+      "relevantPathsAI": [
+        "G.5"
+      ],
+      "rationaleAI": "Addresses meteorological measurement (G.5) including barometers, thermometers, and the instruments used in modern weather forecasting."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Explores photometers and light meters (D.1.f) alongside polarimeters and refractometers (D.2.e) for optical measurements."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Explores photometers and light meters (D.1.f) alongside polarimeters and refractometers (D.2.e) for optical measurements."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Examines spectroscopes, spectrographs, and interferometers (E.1.c-d) as well as diffraction-based scientific instruments."
+      "relevantPathsAI": [
+        "E.1.c"
+      ],
+      "rationaleAI": "Examines spectroscopes, spectrographs, and interferometers (E.1.c-d) as well as diffraction-based scientific instruments."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Isotopic analysis relies on mass spectrometers (F.4) and radiation measurement instruments (D.2.f), both central to scientific research."
+      "relevantPathsAI": [
+        "F.4",
+        "D.2"
+      ],
+      "rationaleAI": "Isotopic analysis relies on mass spectrometers (F.4) and radiation measurement instruments (D.2.f), both central to scientific research."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Addresses instrumentation and control systems (H) that automatically actuate control devices and record measurements."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Addresses instrumentation and control systems (H) that automatically actuate control devices and record measurements."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Cameras are explicitly listed under E.2 (instruments for recording phenomena), making this a direct match."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Cameras are explicitly listed under E.2 (instruments for recording phenomena), making this a direct match."
     },
     {
       "vsiTitle": "The History of Time",
       "vsiAuthor": "Leofranc Holford-Strevens",
-      "rationale": "Traces standards and techniques for time measurement (B.2) and the evolution of mechanical, electric, and atomic clocks (D.1.c)."
+      "relevantPathsAI": [
+        "B.2",
+        "D.1.c"
+      ],
+      "rationaleAI": "Traces standards and techniques for time measurement (B.2) and the evolution of mechanical, electric, and atomic clocks (D.1.c)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Statistical methods underpin the quantitative analysis central to measurement theory (A) and the rigorous evaluation of measurement data."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Statistical methods underpin the quantitative analysis central to measurement theory (A) and the rigorous evaluation of measurement data."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
-      "rationale": "Explores hydrographic charting (G.3) and oceanographic measurement systems (G.4) used to study the marine environment."
+      "relevantPathsAI": [
+        "G.3",
+        "G.4"
+      ],
+      "rationaleAI": "Explores hydrographic charting (G.3) and oceanographic measurement systems (G.4) used to study the marine environment."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
-      "rationale": "Provides the mathematical foundations for measurement theory (A), control systems (H.2), and instrument calibration."
+      "relevantPathsAI": [
+        "A",
+        "H.2"
+      ],
+      "rationaleAI": "Provides the mathematical foundations for measurement theory (A), control systems (H.2), and instrument calibration."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

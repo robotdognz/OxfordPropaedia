@@ -4,92 +4,154 @@
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Core match addressing all three laws of thermodynamics, entropy, free energy, internal energy, absolute zero, and temperature -- directly relevant to A.2 through A.6 and A.9."
+      "relevantPathsAI": [
+        "A.2",
+        "A.6",
+        "A.9"
+      ],
+      "rationaleAI": "Core match addressing all three laws of thermodynamics, entropy, free energy, internal energy, absolute zero, and temperature -- directly relevant to A.2 through A.6 and A.9."
     },
     {
       "vsiTitle": "Entropy",
       "vsiAuthor": "James Binney",
-      "rationale": "Explores entropy, the Carnot cycle, caloric theory, and energy transitions, directly relevant to A.3 (second law), A.4.c.ii (theories of heat including caloric), and A.5.a (Carnot cycle)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.4.c",
+        "A.5"
+      ],
+      "rationaleAI": "Explores entropy, the Carnot cycle, caloric theory, and energy transitions, directly relevant to A.3 (second law), A.4.c.ii (theories of heat including caloric), and A.5.a (Carnot cycle)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Examines equations of state, phase equilibria, states of matter, and thermodynamic properties -- relevant to A.5 (thermodynamic relations), B (gas laws), C (liquid properties), and D (solutions)."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Examines equations of state, phase equilibria, states of matter, and thermodynamic properties -- relevant to A.5 (thermodynamic relations), B (gas laws), C (liquid properties), and D (solutions)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Addresses energy, entropy, and physical chemistry fundamentals relevant to chemical equilibrium (A.5.g) and thermodynamic aspects of solutions and phase changes."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Addresses energy, entropy, and physical chemistry fundamentals relevant to chemical equilibrium (A.5.g) and thermodynamic aspects of solutions and phase changes."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Directly addresses fluid dynamics, hydrodynamics, and flow behaviour -- core match for H (transport phenomena, hydrodynamic aspects) and A.5.f (bulk flow)."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Directly addresses fluid dynamics, hydrodynamics, and flow behaviour -- core match for H (transport phenomena, hydrodynamic aspects) and A.5.f (bulk flow)."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Explores the fundamental nature and states of matter including atomic structure and mass, providing broad context for B (gaseous state), C (liquid state), and F (plasma state)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores the fundamental nature and states of matter including atomic structure and mass, providing broad context for B (gaseous state), C (liquid state), and F (plasma state)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Examines Boltzmann statistics, liquids, and soft condensed matter including colloids and polymers in solution -- relevant to E.4 (colloids), D (solutions of polymers), and H (transport in suspensions and polymers)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Examines Boltzmann statistics, liquids, and soft condensed matter including colloids and polymers in solution -- relevant to E.4 (colloids), D (solutions of polymers), and H (transport in suspensions and polymers)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Explores the liquid state properties and molecular structure of water -- relevant to C (liquid state behaviour and properties) and D (water as solvent in solutions)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores the liquid state properties and molecular structure of water -- relevant to C (liquid state behaviour and properties) and D (water as solvent in solutions)."
     },
     {
       "vsiTitle": "Superconductivity",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Directly addresses superconductivity and related low-temperature phenomena -- core match for G.1.b (superconductivity and superfluidity at very low temperatures)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Directly addresses superconductivity and related low-temperature phenomena -- core match for G.1.b (superconductivity and superfluidity at very low temperatures)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Explores phase transitions, superconductivity, and states of matter -- relevant to G.1 (properties at low temperatures), A.5.c (phase changes), and G.3 (effects of high pressure)."
+      "relevantPathsAI": [
+        "G.1",
+        "A.5.c",
+        "G.3"
+      ],
+      "rationaleAI": "Explores phase transitions, superconductivity, and states of matter -- relevant to G.1 (properties at low temperatures), A.5.c (phase changes), and G.3 (effects of high pressure)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Examines hydrogen bonding, molecular recognition, and intermolecular forces -- relevant to D.3 (solvent-solute interactions, hydrogen bonding) and C.2 (molecular structure of liquids)."
+      "relevantPathsAI": [
+        "D.3",
+        "C.2"
+      ],
+      "rationaleAI": "Examines hydrogen bonding, molecular recognition, and intermolecular forces -- relevant to D.3 (solvent-solute interactions, hydrogen bonding) and C.2 (molecular structure of liquids)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Explores acoustics, frequency, resonance, and sound propagation -- directly relevant to C.3.b (acoustic properties and propagation of sound waves in liquids)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Explores acoustics, frequency, resonance, and sound propagation -- directly relevant to C.3.b (acoustic properties and propagation of sound waves in liquids)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Addresses nuclear fusion, thermal processes, and tritium -- relevant to F.4 (formation of plasmas), F.8 (plasma applications for power production), and G.2 (matter at high temperatures)."
+      "relevantPathsAI": [
+        "F.4",
+        "F.8",
+        "G.2"
+      ],
+      "rationaleAI": "Addresses nuclear fusion, thermal processes, and tritium -- relevant to F.4 (formation of plasmas), F.8 (plasma applications for power production), and G.2 (matter at high temperatures)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Solar physics, magnetic fields, and dynamic forces in the Sun are directly relevant to F.9 (plasmas in the Sun and stars) and F.5 (plasma behaviour in magnetic fields)."
+      "relevantPathsAI": [
+        "F.9",
+        "F.5"
+      ],
+      "rationaleAI": "Solar physics, magnetic fields, and dynamic forces in the Sun are directly relevant to F.9 (plasmas in the Sun and stars) and F.5 (plasma behaviour in magnetic fields)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Stellar temperatures, nuclear fusion, and stellar evolution are relevant to F.9 (plasmas in the Sun and stars) and G.2 (properties of matter at high temperatures)."
+      "relevantPathsAI": [
+        "F.9",
+        "G.2"
+      ],
+      "rationaleAI": "Stellar temperatures, nuclear fusion, and stellar evolution are relevant to F.9 (plasmas in the Sun and stars) and G.2 (properties of matter at high temperatures)."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Provides broad physics context for matter, force, and fundamental concepts that underpin thermodynamics and the states of matter discussed throughout this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides broad physics context for matter, force, and fundamental concepts that underpin thermodynamics and the states of matter discussed throughout this section."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "rationale": "Entropy and Maxwell's demon -- the famous thought experiment central to understanding the second law of thermodynamics (A.3) and statistical thermodynamics (A.9)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.9"
+      ],
+      "rationaleAI": "Entropy and Maxwell's demon -- the famous thought experiment central to understanding the second law of thermodynamics (A.3) and statistical thermodynamics (A.9)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Traces Robert Boyle and the historical development of physical chemistry -- relevant to A.4.c.ii (theories of heat including phlogiston and caloric) and B.2.a (simple gas laws, Boyle's law)."
+      "relevantPathsAI": [
+        "A.4.c",
+        "B.2"
+      ],
+      "rationaleAI": "Traces Robert Boyle and the historical development of physical chemistry -- relevant to A.4.c.ii (theories of heat including phlogiston and caloric) and B.2.a (simple gas laws, Boyle's law)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

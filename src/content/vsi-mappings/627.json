@@ -4,82 +4,142 @@
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Covers the history of visual arts including sculpture, with references to sculptors like Ghiberti, directly relevant to Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers the history of visual arts including sculpture, with references to sculptors like Ghiberti, directly relevant to Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
-      "rationale": "Addresses sculpture explicitly as a keyword, along with aesthetics, significant form, and representation -- central to elements of design and iconography (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Addresses sculpture explicitly as a keyword, along with aesthetics, significant form, and representation -- central to elements of design and iconography (A.1, A.2)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
-      "rationale": "Covers modern sculptors like Tatlin and Oldenburg, relevant to nonrepresentational sculpture (B.2.b) and Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Covers modern sculptors like Tatlin and Oldenburg, relevant to nonrepresentational sculpture (B.2.b) and Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
-      "rationale": "Covers contemporary sculptural practices including installation and environmental sculpture (B.1) and the global art market for sculpture."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers contemporary sculptural practices including installation and environmental sculpture (B.1) and the global art market for sculpture."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
-      "rationale": "Covers Renaissance sculptors including Ghiberti, Alberti, and da Vinci, a major period in Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Covers Renaissance sculptors including Ghiberti, Alberti, and da Vinci, a major period in Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
-      "rationale": "Egyptian sculpture including devotional images, portraits, and commemorative monuments spans representational sculpture (B.2.a) and ceremonial objects (B.3.a)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Egyptian sculpture including devotional images, portraits, and commemorative monuments spans representational sculpture (B.2.a) and ceremonial objects (B.3.a)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
-      "rationale": "Dada and Surrealist sculptors challenged traditional sculptural forms, relevant to nonrepresentational sculpture (B.2.b) and Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Dada and Surrealist sculptors challenged traditional sculptural forms, relevant to nonrepresentational sculpture (B.2.b) and Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
-      "rationale": "Avant-garde movements expanded the definition and materials of sculpture, relevant to kinetic and environmental sculpture (B.1) and nonrepresentational sculpture (B.2.b)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Avant-garde movements expanded the definition and materials of sculpture, relevant to kinetic and environmental sculpture (B.1) and nonrepresentational sculpture (B.2.b)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
-      "rationale": "Christian sculpture includes devotional images, commemorative monuments, and ritualistic objects -- directly relevant to B.2.a, B.3.a, and B.3.c."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "B.3.c"
+      ],
+      "rationaleAI": "Christian sculpture includes devotional images, commemorative monuments, and ritualistic objects -- directly relevant to B.2.a, B.3.a, and B.3.c."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
-      "rationale": "Classical Greek and Roman sculpture including temple sculpture at Bassae is foundational to Western sculpture history, covering human figures and devotional images (B.2.a, C.1)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Classical Greek and Roman sculpture including temple sculpture at Bassae is foundational to Western sculpture history, covering human figures and devotional images (B.2.a, C.1)."
     },
     {
       "vsiTitle": "Classical Mythology",
       "vsiAuthor": "Helen Morales",
-      "rationale": "Mythological subjects were central to classical sculptural iconography, relevant to the iconography of sculpture (A.2) and representational sculpture (B.2.a)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2"
+      ],
+      "rationaleAI": "Mythological subjects were central to classical sculptural iconography, relevant to the iconography of sculpture (A.2) and representational sculpture (B.2.a)."
     },
     {
       "vsiTitle": "Futurism",
       "vsiAuthor": "Ara H. Merjian",
-      "rationale": "Futurist sculpture explored kinetic forms and modern materials, directly relevant to kinetic sculpture (B.1) and Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.1"
+      ],
+      "rationaleAI": "Futurist sculpture explored kinetic forms and modern materials, directly relevant to kinetic sculpture (B.1) and Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "The Etruscans",
       "vsiAuthor": "Christopher Smith",
-      "rationale": "Etruscan sarcophagi and bronze figures represent a significant sculptural tradition in Western sculpture history (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Etruscan sarcophagi and bronze figures represent a significant sculptural tradition in Western sculpture history (C.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Covers prehistoric figurines and sculptural objects, relevant to primitive and folk sculpture (B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Covers prehistoric figurines and sculptural objects, relevant to primitive and folk sculpture (B.4)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "rationale": "Covers rock art and prehistoric sculptural heritage, relevant to understanding ancient and primitive sculpture in its archaeological context (B.4, C.1)."
+      "relevantPathsAI": [
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "Covers rock art and prehistoric sculptural heritage, relevant to understanding ancient and primitive sculpture in its archaeological context (B.4, C.1)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers properties of stone, metal, clay, and glass — sculptural materials explicitly listed in A.3 (the materials of sculpture)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Covers properties of stone, metal, clay, and glass — sculptural materials explicitly listed in A.3 (the materials of sculpture)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

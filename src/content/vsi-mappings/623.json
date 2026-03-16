@@ -4,72 +4,123 @@
     {
       "vsiTitle": "Film",
       "vsiAuthor": "Michael Wood",
-      "rationale": "Directly covers the art of motion pictures, including the roles of director, camera, and technology in the creative process (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly covers the art of motion pictures, including the roles of director, camera, and technology in the creative process (A.1, A.2)."
     },
     {
       "vsiTitle": "The History of Cinema",
       "vsiAuthor": "Geoffrey Nowell-Smith",
-      "rationale": "Traces cinema's historical development from the Lumiere brothers through sound, color, and the transition to digital (A, C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Traces cinema's historical development from the Lumiere brothers through sound, color, and the transition to digital (A, C.3)."
     },
     {
       "vsiTitle": "Hollywood",
       "vsiAuthor": "Peter Decherney",
-      "rationale": "Examines the Hollywood studio system -- from the golden age of the majors to the New Hollywood -- directly relevant to the motion-picture industry and classical film production (C.1, A.3)."
+      "relevantPathsAI": [
+        "C.1",
+        "A.3"
+      ],
+      "rationaleAI": "Examines the Hollywood studio system -- from the golden age of the majors to the New Hollywood -- directly relevant to the motion-picture industry and classical film production (C.1, A.3)."
     },
     {
       "vsiTitle": "Silent Film",
       "vsiAuthor": "Donna Kornhaber",
-      "rationale": "Traces early, transitional, and classical silent film from Melies and Porter through Chaplin and Keaton, illuminating the evolution of film technology (A.2.e, C.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "C.3"
+      ],
+      "rationaleAI": "Traces early, transitional, and classical silent film from Melies and Porter through Chaplin and Keaton, illuminating the evolution of film technology (A.2.e, C.3)."
     },
     {
       "vsiTitle": "Film Noir",
       "vsiAuthor": "James Naremore",
-      "rationale": "Analyzes film noir as a major motion-picture classification and artistic style, from its 1940s roots to neo-noir (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Analyzes film noir as a major motion-picture classification and artistic style, from its 1940s roots to neo-noir (A.1)."
     },
     {
       "vsiTitle": "Documentary film",
       "vsiAuthor": "Patricia Aufderheide",
-      "rationale": "Examines documentary as a classification of motion pictures, tracing its development from Grierson's social realism to modern advocacy and propaganda uses (A.1, C.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "C.2"
+      ],
+      "rationaleAI": "Examines documentary as a classification of motion pictures, tracing its development from Grierson's social realism to modern advocacy and propaganda uses (A.1, C.2)."
     },
     {
       "vsiTitle": "Film music",
       "vsiAuthor": "Kathryn Kalinak",
-      "rationale": "Directly covers the interrelation of music with motion pictures, from silent film accompaniment to contemporary scoring (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Directly covers the interrelation of music with motion pictures, from silent film accompaniment to contemporary scoring (B)."
     },
     {
       "vsiTitle": "Indian Cinema",
       "vsiAuthor": "Ashish Rajadhyaska",
-      "rationale": "Surveys a major non-Western cinema tradition -- from Phalke's mythologicals to Bollywood and parallel cinema -- relevant to global motion-picture art and industry (A.1, C.1)."
+      "relevantPathsAI": [
+        "A.1",
+        "C.1"
+      ],
+      "rationaleAI": "Surveys a major non-Western cinema tradition -- from Phalke's mythologicals to Bollywood and parallel cinema -- relevant to global motion-picture art and industry (A.1, C.1)."
     },
     {
       "vsiTitle": "French Cinema",
       "vsiAuthor": "Dudley Andrew",
-      "rationale": "Explores French cinema from the Lumiere origins through poetic realism to the New Wave auteurs like Godard and Truffaut, illuminating the director's role and film as art (A.2.c, C.3)."
+      "relevantPathsAI": [
+        "A.2.c",
+        "C.3"
+      ],
+      "rationaleAI": "Explores French cinema from the Lumiere origins through poetic realism to the New Wave auteurs like Godard and Truffaut, illuminating the director's role and film as art (A.2.c, C.3)."
     },
     {
       "vsiTitle": "British Cinema",
       "vsiAuthor": "Charles Barr",
-      "rationale": "Surveys British cinema history, from Hitchcock's early work through Ealing comedies to contemporary filmmaking, as a significant tradition in motion-picture art (C.1, C.3)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.3"
+      ],
+      "rationaleAI": "Surveys British cinema history, from Hitchcock's early work through Ealing comedies to contemporary filmmaking, as a significant tradition in motion-picture art (C.1, C.3)."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Photography is the foundational technology of cinema; addresses the camera, exposure, and visual composition central to filmmaking (A.2.e)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Photography is the foundational technology of cinema; addresses the camera, exposure, and visual composition central to filmmaking (A.2.e)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Explains the physics of sound including acoustics and recording, relevant to sound technology in film production (A.2.e, A.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Explains the physics of sound including acoustics and recording, relevant to sound technology in film production (A.2.e, A.3)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
-      "rationale": "Bunuel, Deren, and other Surrealist filmmakers profoundly influenced avant-garde and experimental cinema (A.1, B)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Bunuel, Deren, and other Surrealist filmmakers profoundly influenced avant-garde and experimental cinema (A.1, B)."
     },
     {
       "vsiTitle": "Horror",
       "vsiAuthor": "Darryl Jones",
-      "rationale": "Traces horror from Nosferatu through the slasher era as a major film genre, alongside its literary roots, relevant to the classification of motion pictures (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Traces horror from Nosferatu through the slasher era as a major film genre, alongside its literary roots, relevant to the classification of motion pictures (A.1)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

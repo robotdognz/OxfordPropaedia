@@ -4,117 +4,199 @@
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
-      "rationale": "Directly addresses philosophy of art, diverse conceptions of art's scope, and theories about art's nature and functions (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Directly addresses philosophy of art, diverse conceptions of art's scope, and theories about art's nature and functions (A.1, A.2)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
-      "rationale": "Covers aesthetic theories including formalist and expressive approaches to art, beauty, and taste -- central to diverse theories of art's nature (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers aesthetic theories including formalist and expressive approaches to art, beauty, and taste -- central to diverse theories of art's nature (A.2)."
     },
     {
       "vsiTitle": "Beauty",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Examines philosophical theories of beauty and taste in art, relevant to mimetic, formalist, and expressive art theories (A.2) and the distinction between fine and useful art (B.1.a)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Examines philosophical theories of beauty and taste in art, relevant to mimetic, formalist, and expressive art theories (A.2) and the distinction between fine and useful art (B.1.a)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
-      "rationale": "Directly addresses the creative process and creative expression in art-making (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Directly addresses the creative process and creative expression in art-making (A.3)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
-      "rationale": "Explores imagination's role in artistic creation and aesthetic experience, directly relevant to the creative process (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Explores imagination's role in artistic creation and aesthetic experience, directly relevant to the creative process (A.3)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Addresses classification and periodization of arts and style analysis, relevant to classification of the arts (B) and varieties of style (B.4)."
+      "relevantPathsAI": [
+        "B",
+        "B.4"
+      ],
+      "rationaleAI": "Addresses classification and periodization of arts and style analysis, relevant to classification of the arts (B) and varieties of style (B.4)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
-      "rationale": "Explores the distinction between useful and fine art, and form versus function in art classification (B.1.a)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Explores the distinction between useful and fine art, and form versus function in art classification (B.1.a)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
-      "rationale": "Addresses mimetic, expressive, formalist, and pragmatic theories as applied to literature as an art form (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Addresses mimetic, expressive, formalist, and pragmatic theories as applied to literature as an art form (A.2)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
-      "rationale": "Examines current debates about what qualifies as art and how contemporary works challenge traditional classifications (A.1, B.1)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Examines current debates about what qualifies as art and how contemporary works challenge traditional classifications (A.1, B.1)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
-      "rationale": "Covers how modernist movements redefined conceptions of art and created new stylistic categories (A.1, B.4)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.4"
+      ],
+      "rationaleAI": "Covers how modernist movements redefined conceptions of art and created new stylistic categories (A.1, B.4)."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
-      "rationale": "Explores avant-garde movements that challenged boundaries between art kinds and conventional style categories (B.1, B.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "Explores avant-garde movements that challenged boundaries between art kinds and conventional style categories (B.1, B.4)."
     },
     {
       "vsiTitle": "Folk music",
       "vsiAuthor": "Mark Slobin",
-      "rationale": "Directly relevant to characterizing folk and popular arts by their audience and cultural context (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly relevant to characterizing folk and popular arts by their audience and cultural context (B.3)."
     },
     {
       "vsiTitle": "Ethnomusicology",
       "vsiAuthor": "Timothy Rice",
-      "rationale": "Studies music across cultural contexts, relevant to classifying arts by social circumstances of production and audience character (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Studies music across cultural contexts, relevant to classifying arts by social circumstances of production and audience character (B.3)."
     },
     {
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
-      "rationale": "Covers performers as interpreters and creators of art, and the use of notational devices in theatrical arts (B.1.c, B.1.d)."
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1"
+      ],
+      "rationaleAI": "Covers performers as interpreters and creators of art, and the use of notational devices in theatrical arts (B.1.c, B.1.d)."
     },
     {
       "vsiTitle": "Music",
       "vsiAuthor": "Nicholas Cook",
-      "rationale": "Addresses music as art classified by notation (B.1.d), performers as interpreters/creators (B.1.c), and the distinction between production and consumption."
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.c"
+      ],
+      "rationaleAI": "Addresses music as art classified by notation (B.1.d), performers as interpreters/creators (B.1.c), and the distinction between production and consumption."
     },
     {
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
-      "rationale": "Exemplifies a major period style across literature, music, and visual arts, directly relevant to varieties of style (B.4.b)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Exemplifies a major period style across literature, music, and visual arts, directly relevant to varieties of style (B.4.b)."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
-      "rationale": "Exemplifies period style across multiple art forms, relevant to the discussion of period, school, and personal styles (B.4.b)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Exemplifies period style across multiple art forms, relevant to the discussion of period, school, and personal styles (B.4.b)."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
-      "rationale": "Addresses postmodernist theories challenging traditional conceptions of art's nature and function, and represents a period style (A.2, B.4.b)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.4"
+      ],
+      "rationaleAI": "Addresses postmodernist theories challenging traditional conceptions of art's nature and function, and represents a period style (A.2, B.4.b)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
-      "rationale": "Exemplifies school styles that challenged prevailing theories of art's nature and the boundaries between art kinds (A.2, B.4.b)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.4"
+      ],
+      "rationaleAI": "Exemplifies school styles that challenged prevailing theories of art's nature and the boundaries between art kinds (A.2, B.4.b)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Provides frameworks for understanding primitive, folk, and popular arts characterized by cultural/social context (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Provides frameworks for understanding primitive, folk, and popular arts characterized by cultural/social context (B.3)."
     },
     {
       "vsiTitle": "Critical theory",
       "vsiAuthor": "Stephen Eric Bronner",
-      "rationale": "Frankfurt School approaches address pragmatic theories of art's social functions and effects (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Frankfurt School approaches address pragmatic theories of art's social functions and effects (A.2)."
     },
     {
       "vsiTitle": "German philosophy",
       "vsiAuthor": "Andrew Bowie",
-      "rationale": "Covers aesthetics and German idealist art theory, a major tradition in the philosophy of art (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Covers aesthetics and German idealist art theory, a major tradition in the philosophy of art (A.1, A.2)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
-      "rationale": "Illustrates classification of arts by physical matter and the production of artistic works as physical objects (B.1.b), and period/regional styles (B.4.b)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "Illustrates classification of arts by physical matter and the production of artistic works as physical objects (B.1.b), and period/regional styles (B.4.b)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,52 +4,96 @@
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Core VSI for this section, covering the human skeletal system (B.7), skeleton structure, and musculatory system, with detailed treatment of vertebrate anatomy."
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Core VSI for this section, covering the human skeletal system (B.7), skeleton structure, and musculatory system, with detailed treatment of vertebrate anatomy."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Addresses the physiology of muscle contraction (C.3), skeletal support, and integumentary function including temperature regulation (C.1)."
+      "relevantPathsAI": [
+        "C.3",
+        "C.1"
+      ],
+      "rationaleAI": "Addresses the physiology of muscle contraction (C.3), skeletal support, and integumentary function including temperature regulation (C.1)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Covers diversity of body coverings, skeletal systems, and musculature across invertebrate phyla (A.1, B.3, C.4) including Annelida, Echinodermata, and Porifera."
+      "relevantPathsAI": [
+        "A.1",
+        "B.3",
+        "C.4"
+      ],
+      "rationaleAI": "Covers diversity of body coverings, skeletal systems, and musculature across invertebrate phyla (A.1, B.3, C.4) including Annelida, Echinodermata, and Porifera."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Covers embryology of vertebrate skin (A.5), skeleton (B.4.b), and muscular system (C.5.a), including cell differentiation into connective tissues."
+      "relevantPathsAI": [
+        "A.5",
+        "B.4",
+        "C.5"
+      ],
+      "rationaleAI": "Covers embryology of vertebrate skin (A.5), skeleton (B.4.b), and muscular system (C.5.a), including cell differentiation into connective tissues."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Covers teeth as skeletal elements (B.2.a bone, dentine, enamel), their composition, and evolutionary development in vertebrates (B.4)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Covers teeth as skeletal elements (B.2.a bone, dentine, enamel), their composition, and evolutionary development in vertebrates (B.4)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Addresses mammalian integument including hair and skin glands (A.3.b), skeletal structure, and vertebrate musculature (C.5)."
+      "relevantPathsAI": [
+        "A.3",
+        "C.5"
+      ],
+      "rationaleAI": "Addresses mammalian integument including hair and skin glands (A.3.b), skeletal structure, and vertebrate musculature (C.5)."
     },
     {
       "vsiTitle": "Reptiles",
       "vsiAuthor": "Tom Kemp",
-      "rationale": "Covers reptilian epidermal scales (A.3.b), skeletal systems, and musculature, illustrating skin variations among vertebrates (A.4)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Covers reptilian epidermal scales (A.3.b), skeletal systems, and musculature, illustrating skin variations among vertebrates (A.4)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Addresses invertebrate exoskeletons and cuticular structures (B.2.a, B.3), invertebrate integuments (A.2), and invertebrate muscle systems (C.4)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "A.2",
+        "C.4"
+      ],
+      "rationaleAI": "Addresses invertebrate exoskeletons and cuticular structures (B.2.a, B.3), invertebrate integuments (A.2), and invertebrate muscle systems (C.4)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "rationale": "Relevant to skin derivatives such as feathers, hair, and horns (A.3.b) as products of sexual dimorphism and sexual selection pressures."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Relevant to skin derivatives such as feathers, hair, and horns (A.3.b) as products of sexual dimorphism and sexual selection pressures."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Provides the evolutionary framework for understanding the development of vertebrate skin (A.5), skeleton (B.4.b), and musculatory system (C.5.b)."
+      "relevantPathsAI": [
+        "A.5",
+        "B.4",
+        "C.5"
+      ],
+      "rationaleAI": "Provides the evolutionary framework for understanding the development of vertebrate skin (A.5), skeleton (B.4.b), and musculatory system (C.5.b)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,92 +4,158 @@
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Provides foundational chemistry concepts -- chemical bonds, reaction kinetics, and molecular structure -- that underpin the organic and inorganic chemistry of living systems (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides foundational chemistry concepts -- chemical bonds, reaction kinetics, and molecular structure -- that underpin the organic and inorganic chemistry of living systems (A, B)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Thermodynamics and reaction energetics are essential for understanding metabolism, enzyme kinetics (B.7), and drug action mechanisms (C.2)."
+      "relevantPathsAI": [
+        "B.7",
+        "C.2"
+      ],
+      "rationaleAI": "Thermodynamics and reaction energetics are essential for understanding metabolism, enzyme kinetics (B.7), and drug action mechanisms (C.2)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Covers organic chemicals in life processes (B) including carbohydrates, lipids, proteins, DNA, and biochemical reactions central to this section."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Covers organic chemicals in life processes (B) including carbohydrates, lipids, proteins, DNA, and biochemical reactions central to this section."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Directly covers enzymes (B.7), their role in chemical reactions, and their relationship to proteins and DNA in vital processes."
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Directly covers enzymes (B.7), their role in chemical reactions, and their relationship to proteins and DNA in vital processes."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Directly addresses hormones (B.9) including vertebrate hormones (B.9.b), endocrine-neural regulation (B.9.a), and reproductive hormones."
+      "relevantPathsAI": [
+        "B.9"
+      ],
+      "rationaleAI": "Directly addresses hormones (B.9) including vertebrate hormones (B.9.b), endocrine-neural regulation (B.9.a), and reproductive hormones."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers the molecular structures of carbohydrates, lipids, proteins, and nucleic acids (B.1-B.5) and metabolism at the chemical level."
+      "relevantPathsAI": [
+        "B.1",
+        "B.5"
+      ],
+      "rationaleAI": "Covers the molecular structures of carbohydrates, lipids, proteins, and nucleic acids (B.1-B.5) and metabolism at the chemical level."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Covers the chemistry of carbon-based molecules including alkaloids, steroids, and terpenes (B.10) and the organic basis of drugs (C)."
+      "relevantPathsAI": [
+        "B.10",
+        "C"
+      ],
+      "rationaleAI": "Covers the chemistry of carbon-based molecules including alkaloids, steroids, and terpenes (B.10) and the organic basis of drugs (C)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Addresses DNA and RNA structure and function (B.5.b and B.5.c), nucleic acids central to vital processes."
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.c"
+      ],
+      "rationaleAI": "Addresses DNA and RNA structure and function (B.5.b and B.5.c), nucleic acids central to vital processes."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Directly covers drug classification (C.4), drug action (C.2), absorption and metabolism of drugs (C.3), and drug addiction (C.7)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.2",
+        "C.3",
+        "C.7"
+      ],
+      "rationaleAI": "Directly covers drug classification (C.4), drug action (C.2), absorption and metabolism of drugs (C.3), and drug addiction (C.7)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Covers vitamins (B.8), proteins (B.3), and the metabolic role of nutrients in vital processes."
+      "relevantPathsAI": [
+        "B.8",
+        "B.3"
+      ],
+      "rationaleAI": "Covers vitamins (B.8), proteins (B.3), and the metabolic role of nutrients in vital processes."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
-      "rationale": "Directly relevant to drug use and abuse and the nature of drug addiction and dependence (C.7)."
+      "relevantPathsAI": [
+        "C.7"
+      ],
+      "rationaleAI": "Directly relevant to drug use and abuse and the nature of drug addiction and dependence (C.7)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
-      "rationale": "Relevant to drugs affecting the immune response system (C.4.h) and drugs directed against disease organisms (C.5)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Relevant to drugs affecting the immune response system (C.4.h) and drugs directed against disease organisms (C.5)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Covers antibiotics (C.5.a), chemotherapeutic drugs (C.5.b), and drugs directed against disease organisms (C.5)."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Covers antibiotics (C.5.a), chemotherapeutic drugs (C.5.b), and drugs directed against disease organisms (C.5)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
-      "rationale": "Directly relevant to drugs directed at the suppression of cancer (C.6), including drug development and treatment."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Directly relevant to drugs directed at the suppression of cancer (C.6), including drug development and treatment."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Covers antibiotics and antibiotic resistance (C.5.a), and microbial toxins (E.3) relevant to biocides and biotoxins."
+      "relevantPathsAI": [
+        "C.5",
+        "E.3"
+      ],
+      "rationaleAI": "Covers antibiotics and antibiotic resistance (C.5.a), and microbial toxins (E.3) relevant to biocides and biotoxins."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "Covers drugs affecting the central and autonomic nervous systems (C.4.c and C.4.d), opioids, and drug action mechanisms (C.2)."
+      "relevantPathsAI": [
+        "C.4.c",
+        "C.4",
+        "C.2"
+      ],
+      "rationaleAI": "Covers drugs affecting the central and autonomic nervous systems (C.4.c and C.4.d), opioids, and drug action mechanisms (C.2)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Relevant to the evolution of hormones (B.9.a) and the relationship between endocrine and neural regulation of metabolism."
+      "relevantPathsAI": [
+        "B.9"
+      ],
+      "rationaleAI": "Relevant to the evolution of hormones (B.9.a) and the relationship between endocrine and neural regulation of metabolism."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Covers nucleic acids (B.5), DNA and RNA, and the molecular biology of proteins (B.3) central to vital processes."
+      "relevantPathsAI": [
+        "B.5",
+        "B.3"
+      ],
+      "rationaleAI": "Covers nucleic acids (B.5), DNA and RNA, and the molecular biology of proteins (B.3) central to vital processes."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

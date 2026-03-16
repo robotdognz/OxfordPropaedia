@@ -4,87 +4,161 @@
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "The definitive overview, spanning offensive weaponry (A), defensive systems (B), weapon platforms (C), and the engineering, logistics, and electronics (D-F) that support them."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "The definitive overview, spanning offensive weaponry (A), defensive systems (B), weapon platforms (C), and the engineering, logistics, and electronics (D-F) that support them."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Nuclear fission and fusion weapons (A.5) transformed warfare, and this volume explains their energy sources, blast effects, heat, and radioactive fallout."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Nuclear fission and fusion weapons (A.5) transformed warfare, and this volume explains their energy sources, blast effects, heat, and radioactive fallout."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "rationale": "Self-propelled missiles (A.4), military aircraft (C.4), and electromagnetic sensors (F.1) define modern warfare, and this volume integrates them into a coherent picture."
+      "relevantPathsAI": [
+        "A.4",
+        "C.4",
+        "F.1"
+      ],
+      "rationaleAI": "Self-propelled missiles (A.4), military aircraft (C.4), and electromagnetic sensors (F.1) define modern warfare, and this volume integrates them into a coherent picture."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
-      "rationale": "Traces the earliest hand-powered weapons—shock weapons, missile weapons, mechanical siege engines (A.1)—and the permanent fortifications built to resist them (B.2.b)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.2"
+      ],
+      "rationaleAI": "Traces the earliest hand-powered weapons—shock weapons, missile weapons, mechanical siege engines (A.1)—and the permanent fortifications built to resist them (B.2.b)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
-      "rationale": "Strategic thinking determines how weapon platforms (C), logistics (E), and military technology are deployed to achieve political objectives."
+      "relevantPathsAI": [
+        "C",
+        "E"
+      ],
+      "rationaleAI": "Strategic thinking determines how weapon platforms (C), logistics (E), and military technology are deployed to achieve political objectives."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
-      "rationale": "Military aircraft (C.4)—fighters, bombers, helicopters, and transport planes—reshaped warfare from World War I onward."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Military aircraft (C.4)—fighters, bombers, helicopters, and transport planes—reshaped warfare from World War I onward."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
-      "rationale": "Traces the evolution of American weaponry from gunpowder arms (A.2) through guided missiles (A.4) and the platforms (C) that carried them into battle."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4",
+        "C"
+      ],
+      "rationaleAI": "Traces the evolution of American weaponry from gunpowder arms (A.2) through guided missiles (A.4) and the platforms (C) that carried them into battle."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
-      "rationale": "Naval vessels evolved from galleons to nuclear aircraft carriers, illuminating surface ships (C.2) and submarines (C.3) as weapon platforms."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Naval vessels evolved from galleons to nuclear aircraft carriers, illuminating surface ships (C.2) and submarines (C.3) as weapon platforms."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
-      "rationale": "World War I introduced chemical weapons (A.6), early tanks (C.1.c-d), and trench fortification (B.2), while artillery and small arms (A.2) reached industrial scale."
+      "relevantPathsAI": [
+        "A.6",
+        "C.1.c",
+        "B.2",
+        "A.2"
+      ],
+      "rationaleAI": "World War I introduced chemical weapons (A.6), early tanks (C.1.c-d), and trench fortification (B.2), while artillery and small arms (A.2) reached industrial scale."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "rationale": "World War II accelerated military technology across every domain: aircraft (C.4), naval vessels (C.2.c), nuclear weapons (A.5), and radar (F.1)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.2.c",
+        "A.5",
+        "F.1"
+      ],
+      "rationaleAI": "World War II accelerated military technology across every domain: aircraft (C.4), naval vessels (C.2.c), nuclear weapons (A.5), and radar (F.1)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
-      "rationale": "The gunpowder era's apex saw artillery and small arms (A.2) reach new effectiveness alongside permanent fortification systems (B.2.c)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.2.c"
+      ],
+      "rationaleAI": "The gunpowder era's apex saw artillery and small arms (A.2) reach new effectiveness alongside permanent fortification systems (B.2.c)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "rationale": "The superpower arms race drove ballistic missiles (A.4), nuclear weapons (A.5), and missile defense systems (B.3) to unprecedented levels of sophistication."
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "B.3"
+      ],
+      "rationaleAI": "The superpower arms race drove ballistic missiles (A.4), nuclear weapons (A.5), and missile defense systems (B.3) to unprecedented levels of sophistication."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
-      "rationale": "Clausewitz's theoretical framework for war informs the strategic application of engineering (D), logistics (E), and military technology at every level."
+      "relevantPathsAI": [
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Clausewitz's theoretical framework for war informs the strategic application of engineering (D), logistics (E), and military technology at every level."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Signal security and encrypted communications are vital aspects of military electronics (F.1), from Enigma to modern digital encryption."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Signal security and encrypted communications are vital aspects of military electronics (F.1), from Enigma to modern digital encryption."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Nuclear propulsion powers aircraft carriers, cruisers (C.2.e), and submarines (C.3.a), giving naval forces virtually unlimited range."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Nuclear propulsion powers aircraft carriers, cruisers (C.2.e), and submarines (C.3.a), giving naval forces virtually unlimited range."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Autonomous weapons systems and unmanned platforms are reshaping weapon platforms (C) and self-propelled missile technology (A.4)."
+      "relevantPathsAI": [
+        "A.4",
+        "C"
+      ],
+      "rationaleAI": "Autonomous weapons systems and unmanned platforms are reshaping weapon platforms (C) and self-propelled missile technology (A.4)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
-      "rationale": "Explosives, grenades, mines, and bombs (A.3) alongside small arms (A.2.d) are wielded in unconventional warfare contexts that challenge traditional military frameworks."
+      "relevantPathsAI": [
+        "A.3",
+        "A.2"
+      ],
+      "rationaleAI": "Explosives, grenades, mines, and bombs (A.3) alongside small arms (A.2.d) are wielded in unconventional warfare contexts that challenge traditional military frameworks."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

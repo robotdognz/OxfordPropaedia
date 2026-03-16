@@ -55,12 +55,12 @@ export async function getStaticPaths() {
   const normalizeText = (text: string) => text.replace(/\s+/g, ' ').trim().toLowerCase();
 
   return catalog.map((entry) => {
-    const sections: { sectionCode: string; rationale: string; meta: typeof sectionMeta[string] }[] = [];
+    const sections: { sectionCode: string; rationaleAI: string; meta: typeof sectionMeta[string] }[] = [];
     for (const mapping of allMappings) {
       for (const m of mapping.data.mappings) {
         if (normalizeText(m.vsiTitle) === normalizeText(entry.title) && normalizeText(m.vsiAuthor) === normalizeText(entry.author)) {
           const meta = sectionMeta[mapping.data.sectionCode];
-          if (meta) sections.push({ sectionCode: mapping.data.sectionCode, rationale: m.rationale, meta });
+          if (meta) sections.push({ sectionCode: mapping.data.sectionCode, rationaleAI: m.rationaleAI, meta });
         }
       }
     }
@@ -176,7 +176,7 @@ const rings = [
                 >
                   Section {s.sectionCode}: {s.meta.sectionTitle}
                 </a>
-                <p class="mt-1 text-xs text-gray-500 leading-relaxed">{s.rationale}</p>
+                <p class="mt-1 text-xs text-gray-500 leading-relaxed">{s.rationaleAI}</p>
               </li>
             ))}
           </ul>

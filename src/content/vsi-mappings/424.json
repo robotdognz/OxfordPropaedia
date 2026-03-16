@@ -4,127 +4,201 @@
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "rationale": "Traces the historical development of medical education, hospital practice, the Hippocratic tradition, and public health (A, C, D)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Traces the historical development of medical education, hospital practice, the Hippocratic tradition, and public health (A, C, D)."
     },
     {
       "vsiTitle": "Medical ethics",
       "vsiAuthor": "Tony Hope",
-      "rationale": "Directly addresses the ethical basis of medical practice including euthanasia, consent, and health policy (C.2.a)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Directly addresses the ethical basis of medical practice including euthanasia, consent, and health policy (C.2.a)."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
-      "rationale": "Examines licensure, legal restrictions on practice, consent, confidentiality, and organ donation regulation (C.2.b, C.2.c)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.c"
+      ],
+      "rationaleAI": "Examines licensure, legal restrictions on practice, consent, confidentiality, and organ donation regulation (C.2.b, C.2.c)."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "A core text on public health services, disease prevention, sanitation, and population-level health administration (D, F, H)."
+      "relevantPathsAI": [],
+      "rationaleAI": "A core text on public health services, disease prevention, sanitation, and population-level health administration (D, F, H)."
     },
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Essential for understanding disease surveillance, population health data, and the scientific methods underpinning epidemic prevention and control (H.5)."
+      "relevantPathsAI": [
+        "H.5"
+      ],
+      "rationaleAI": "Essential for understanding disease surveillance, population health data, and the scientific methods underpinning epidemic prevention and control (H.5)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Addresses vaccination, quarantine, antibiotic use, and vector control strategies for prevention and control of infection (H)."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Addresses vaccination, quarantine, antibiotic use, and vector control strategies for prevention and control of infection (H)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Examines epidemic prevention and control including quarantine, isolation, and public health responses to outbreaks (H.2, H.5)."
+      "relevantPathsAI": [
+        "H.2",
+        "H.5"
+      ],
+      "rationaleAI": "Examines epidemic prevention and control including quarantine, isolation, and public health responses to outbreaks (H.2, H.5)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "rationale": "Illustrates historical quarantine measures and public health responses to epidemic diseases (H.2, H.5)."
+      "relevantPathsAI": [
+        "H.2",
+        "H.5"
+      ],
+      "rationaleAI": "Illustrates historical quarantine measures and public health responses to epidemic diseases (H.2, H.5)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
-      "rationale": "Global prevention programs, public health policy, and coordinated treatment strategies for HIV/AIDS illuminate modern epidemic management (H.5)."
+      "relevantPathsAI": [
+        "H.5"
+      ],
+      "rationaleAI": "Global prevention programs, public health policy, and coordinated treatment strategies for HIV/AIDS illuminate modern epidemic management (H.5)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Vaccine technology and virus infection control are central topics, directly relevant to vaccination and immunization programs (H.1)."
+      "relevantPathsAI": [
+        "H.1"
+      ],
+      "rationaleAI": "Vaccine technology and virus infection control are central topics, directly relevant to vaccination and immunization programs (H.1)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Antibiotic resistance and aseptic practices are key themes, relevant to destruction of infectious agents and prophylactic medication (H.3, H.4)."
+      "relevantPathsAI": [
+        "H.3",
+        "H.4"
+      ],
+      "rationaleAI": "Antibiotic resistance and aseptic practices are key themes, relevant to destruction of infectious agents and prophylactic medication (H.3, H.4)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Explores drug regulation and prescription practices relevant to control of drugs and therapeutic agent use (H.4, I.2)."
+      "relevantPathsAI": [
+        "H.4",
+        "I.2"
+      ],
+      "rationaleAI": "Explores drug regulation and prescription practices relevant to control of drugs and therapeutic agent use (H.4, I.2)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Nutrient requirements, obesity, and undernutrition are directly relevant to prevention of malnutrition (G)."
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Nutrient requirements, obesity, and undernutrition are directly relevant to prevention of malnutrition (G)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
-      "rationale": "Food safety, food poisoning, and genetically modified food are examined in the context of food supply control (G, I.2)."
+      "relevantPathsAI": [
+        "I.2"
+      ],
+      "rationaleAI": "Food safety, food poisoning, and genetically modified food are examined in the context of food supply control (G, I.2)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "A key field of specialized hospital and specialist practice essential to surgical care (B, C.1.b)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "A key field of specialized hospital and specialist practice essential to surgical care (B, C.1.b)."
     },
     {
       "vsiTitle": "Psychiatry",
       "vsiAuthor": "Tom Burns",
-      "rationale": "Explores psychiatry as a specialized field of medical practice with hospital, community, and research dimensions (B, C.1.b)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Explores psychiatry as a specialized field of medical practice with hospital, community, and research dimensions (B, C.1.b)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "The National Health Service and social services are central topics, relevant to governmental public health practice and health legislation (C.1.c, D, I.2)."
+      "relevantPathsAI": [
+        "C.1.c",
+        "I.2"
+      ],
+      "rationaleAI": "The National Health Service and social services are central topics, relevant to governmental public health practice and health legislation (C.1.c, D, I.2)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
-      "rationale": "Zoonotic disease control and vaccination history -- including Edward Jenner's contributions -- are relevant to prevention of cross-species infection (H)."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Zoonotic disease control and vaccination history -- including Edward Jenner's contributions -- are relevant to prevention of cross-species infection (H)."
     },
     {
       "vsiTitle": "Environmental Law",
       "vsiAuthor": "Elizabeth Fisher",
-      "rationale": "Environmental protection legislation directly bears on the control of air, water, and soil pollution (F, I.2)."
+      "relevantPathsAI": [
+        "I.2"
+      ],
+      "rationaleAI": "Environmental protection legislation directly bears on the control of air, water, and soil pollution (F, I.2)."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Pollution control policy and environmental regulation inform debates about environmental sanitation and health (F)."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Pollution control policy and environmental regulation inform debates about environmental sanitation and health (F)."
     },
     {
       "vsiTitle": "Demography",
       "vsiAuthor": "Sarah Harper",
-      "rationale": "Population dynamics, life expectancy, and demographic transitions are essential to world population and public health planning (D, G)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Population dynamics, life expectancy, and demographic transitions are essential to world population and public health planning (D, G)."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
-      "rationale": "Explores laws, regulations, and treatment programs for substance use relevant to drug control and industrial medicine (H.4, I)."
+      "relevantPathsAI": [
+        "H.4"
+      ],
+      "rationaleAI": "Explores laws, regulations, and treatment programs for substance use relevant to drug control and industrial medicine (H.4, I)."
     },
     {
       "vsiTitle": "Forensic science",
       "vsiAuthor": "Jim Fraser",
-      "rationale": "Forensic examination and evidence bear on the legal aspects of medical practice and cause-of-death determination (C.2.c)."
+      "relevantPathsAI": [
+        "C.2.c"
+      ],
+      "rationaleAI": "Forensic examination and evidence bear on the legal aspects of medical practice and cause-of-death determination (C.2.c)."
     },
     {
       "vsiTitle": "Social work",
       "vsiAuthor": "Stanley Wells",
-      "rationale": "Community health, disability, and mental health social services are central themes, relevant to public health services and social medicine (D, I)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Community health, disability, and mental health social services are central themes, relevant to public health services and social medicine (D, I)."
     },
     {
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
-      "rationale": "Educational systems and teaching methods inform medical education and professional training (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Educational systems and teaching methods inform medical education and professional training (A)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

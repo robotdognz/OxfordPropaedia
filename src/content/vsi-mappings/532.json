@@ -4,82 +4,130 @@
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
-      "rationale": "Directly covers consumer behaviour, market structures (competition, monopoly, oligopoly), supply, and price determination (A, C.1, D)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers consumer behaviour, market structures (competition, monopoly, oligopoly), supply, and price determination (A, C.1, D)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
-      "rationale": "Introduces scarcity, utility, value, and opportunity cost—the fundamental economic problem of resource allocation that underlies all market analysis (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Introduces scarcity, utility, value, and opportunity cost—the fundamental economic problem of resource allocation that underlies all market analysis (A)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
-      "rationale": "Reveals how actual buyer behaviour departs from rational models through cognitive biases and heuristics, directly relevant to consumer spending (B.2, D.2.d)."
+      "relevantPathsAI": [
+        "B.2",
+        "D.2"
+      ],
+      "rationaleAI": "Reveals how actual buyer behaviour departs from rational models through cognitive biases and heuristics, directly relevant to consumer spending (B.2, D.2.d)."
     },
     {
       "vsiTitle": "Choice Theory",
       "vsiAuthor": "Michael Allingham",
-      "rationale": "Utility theory, marginal utility, risk aversion, and expected utility are the formal tools for analyzing consumer decision-making (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Utility theory, marginal utility, risk aversion, and expected utility are the formal tools for analyzing consumer decision-making (A, B)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
-      "rationale": "Monopoly, cartels, mergers, and government regulation of market power are central to C.1.a and C.1.d, where law intersects with economic structure."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Monopoly, cartels, mergers, and government regulation of market power are central to C.1.a and C.1.d, where law intersects with economic structure."
     },
     {
       "vsiTitle": "Game theory",
       "vsiAuthor": "Ken Binmore",
-      "rationale": "Strategic interaction among sellers under oligopoly (C.1.b) is fundamentally a game-theoretic problem, and this volume provides the analytical framework."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Strategic interaction among sellers under oligopoly (C.1.b) is fundamentally a game-theoretic problem, and this volume provides the analytical framework."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Externalities like pollution represent market failures where the price system breaks down (D.2.c), requiring corrective policy instruments."
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "Externalities like pollution represent market failures where the price system breaks down (D.2.c), requiring corrective policy instruments."
     },
     {
       "vsiTitle": "Advertising",
       "vsiAuthor": "Winston Fletcher",
-      "rationale": "Advertising is a powerful force shaping consumer tastes and spending behaviour (B.2), and this volume examines its methods, psychology, and market effects."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Advertising is a powerful force shaping consumer tastes and spending behaviour (B.2), and this volume examines its methods, psychology, and market effects."
     },
     {
       "vsiTitle": "Marketing",
       "vsiAuthor": "Kenneth Le Meunier-FitzHugh",
-      "rationale": "Marketing strategy shapes consumer behaviour and competitive positioning in markets (B.2, C), bridging firms and the buyers they seek to reach."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Marketing strategy shapes consumer behaviour and competitive positioning in markets (B.2, C), bridging firms and the buyers they seek to reach."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
-      "rationale": "Money markets, capital markets, and securities trading (C.2.c) are the financial infrastructure on which broader markets depend."
+      "relevantPathsAI": [
+        "C.2.c"
+      ],
+      "rationaleAI": "Money markets, capital markets, and securities trading (C.2.c) are the financial infrastructure on which broader markets depend."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
-      "rationale": "Interest rates, derivatives pricing, and arbitrage theory provide the quantitative tools for analyzing capital markets (C.2.c)."
+      "relevantPathsAI": [
+        "C.2.c"
+      ],
+      "rationaleAI": "Interest rates, derivatives pricing, and arbitrage theory provide the quantitative tools for analyzing capital markets (C.2.c)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
-      "rationale": "Smith's foundational ideas—competition, the invisible hand, the relationship of markets to social welfare—remain central to market theory (C.4, D)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Smith's foundational ideas—competition, the invisible hand, the relationship of markets to social welfare—remain central to market theory (C.4, D)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "The price system in capitalist economies organizes production, consumption, and investment through market forces (D.1)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "The price system in capitalist economies organizes production, consumption, and investment through market forces (D.1)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
-      "rationale": "Socialist economies offer a counterpoint to market allocation, and this volume examines full-scale economic planning and markets under socialism (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Socialist economies offer a counterpoint to market allocation, and this volume examines full-scale economic planning and markets under socialism (C.3)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
-      "rationale": "International trade frameworks and regulation shape how markets function across borders (C.5)."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "International trade frameworks and regulation shape how markets function across borders (C.5)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Government price controls, subsidies, and tax policy alter market outcomes in ways that are central to D.2.b."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Government price controls, subsidies, and tax policy alter market outcomes in ways that are central to D.2.b."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

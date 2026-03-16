@@ -4,102 +4,162 @@
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Spans the entire geologic time scale including Precambrian, Paleozoic, Mesozoic, and Cenozoic eras and the tectonic and environmental events defining each."
+      "relevantPathsAI": [],
+      "rationaleAI": "Spans the entire geologic time scale including Precambrian, Paleozoic, Mesozoic, and Cenozoic eras and the tectonic and environmental events defining each."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
-      "rationale": "Traces the succession of life through each geological era, from the origin of life in the Precambrian (A) through mass extinctions marking era boundaries."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Traces the succession of life through each geological era, from the origin of life in the Precambrian (A) through mass extinctions marking era boundaries."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
-      "rationale": "Examines the fossils characteristic of each geological period, from the Burgess Shale fauna (B.1, Cambrian) through Mesozoic reptiles (C) to Cenozoic mammals."
+      "relevantPathsAI": [
+        "B.1",
+        "C"
+      ],
+      "rationaleAI": "Examines the fossils characteristic of each geological period, from the Burgess Shale fauna (B.1, Cambrian) through Mesozoic reptiles (C) to Cenozoic mammals."
     },
     {
       "vsiTitle": "Dinosaurs",
       "vsiAuthor": "David Norman",
-      "rationale": "Directly addresses the dominant fauna of the Mesozoic Era (C), spanning the Triassic, Jurassic, and Cretaceous periods and the end-Cretaceous extinction."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Directly addresses the dominant fauna of the Mesozoic Era (C), spanning the Triassic, Jurassic, and Cretaceous periods and the end-Cretaceous extinction."
     },
     {
       "vsiTitle": "Extinction",
       "vsiAuthor": "Paul B. Wignall",
-      "rationale": "Mass extinction events define period and era boundaries, including the end-Permian (B.6/C) and end-Cretaceous (C.3/D) transitions."
+      "relevantPathsAI": [
+        "B.6",
+        "C.3"
+      ],
+      "rationaleAI": "Mass extinction events define period and era boundaries, including the end-Permian (B.6/C) and end-Cretaceous (C.3/D) transitions."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Provides a comprehensive overview of Earth's geological history through each era, including the physical and chemical changes defining period boundaries."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides a comprehensive overview of Earth's geological history through each era, including the physical and chemical changes defining period boundaries."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
-      "rationale": "Directly addresses the Quaternary Period (D.2) and Pleistocene Epoch (D.2.a), including glacial-interglacial cycles and ice sheet dynamics."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Directly addresses the Quaternary Period (D.2) and Pleistocene Epoch (D.2.a), including glacial-interglacial cycles and ice sheet dynamics."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
-      "rationale": "Explores glacial periods throughout Earth history including Precambrian glaciations (A), Carboniferous-Permian glaciation (B.5-6), and the Pleistocene (D.2.a)."
+      "relevantPathsAI": [
+        "A",
+        "B.5",
+        "D.2"
+      ],
+      "rationaleAI": "Explores glacial periods throughout Earth history including Precambrian glaciations (A), Carboniferous-Permian glaciation (B.5-6), and the Pleistocene (D.2.a)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Illuminates the major evolutionary events defining geological periods, from the Cambrian explosion (B.1) to mammalian radiation in the Cenozoic (D)."
+      "relevantPathsAI": [
+        "B.1",
+        "D"
+      ],
+      "rationaleAI": "Illuminates the major evolutionary events defining geological periods, from the Cambrian explosion (B.1) to mammalian radiation in the Cenozoic (D)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "The tectonic configuration of continents through geological time provides the paleogeographic framework for understanding each era and period."
+      "relevantPathsAI": [],
+      "rationaleAI": "The tectonic configuration of continents through geological time provides the paleogeographic framework for understanding each era and period."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Addresses snowball Earth events in the Precambrian (A) and the co-evolution of life and climate through subsequent eras, including greenhouse and icehouse transitions."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Addresses snowball Earth events in the Precambrian (A) and the co-evolution of life and climate through subsequent eras, including greenhouse and icehouse transitions."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Examines the rock formations characteristic of each geological era, from Precambrian igneous and metamorphic rocks (A) to Cenozoic sedimentary sequences (D)."
+      "relevantPathsAI": [
+        "A",
+        "D"
+      ],
+      "rationaleAI": "Examines the rock formations characteristic of each geological era, from Precambrian igneous and metamorphic rocks (A) to Cenozoic sedimentary sequences (D)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "Explores the origin of life and atmospheric oxygen evolution in the Precambrian (A), providing context for the earliest era of geological time."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Explores the origin of life and atmospheric oxygen evolution in the Precambrian (A), providing context for the earliest era of geological time."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "The evolution and radiation of mammals characterize the Cenozoic Era (D), including their fossil record through the Tertiary and Quaternary periods."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "The evolution and radiation of mammals characterize the Cenozoic Era (D), including their fossil record through the Tertiary and Quaternary periods."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "rationale": "Traces the evolution of Homo and Australopithecus during the Quaternary Period and Pleistocene Epoch (D.2.a)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Traces the evolution of Homo and Australopithecus during the Quaternary Period and Pleistocene Epoch (D.2.a)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Explores the Holocene and late Pleistocene (D.2) from the perspective of human prehistory, including the Clovis Culture and Australopithecus."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Explores the Holocene and late Pleistocene (D.2) from the perspective of human prehistory, including the Clovis Culture and Australopithecus."
     },
     {
       "vsiTitle": "Reptiles",
       "vsiAuthor": "Tom Kemp",
-      "rationale": "Reptiles including dinosaurs and crocodilians dominated the Mesozoic Era (C) across the Triassic, Jurassic, and Cretaceous periods."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Reptiles including dinosaurs and crocodilians dominated the Mesozoic Era (C) across the Triassic, Jurassic, and Cretaceous periods."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Amphibian evolution and the transition to land are central to the Devonian and Carboniferous periods (B.4-B.5) when vertebrates first colonized terrestrial habitats."
+      "relevantPathsAI": [
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Amphibian evolution and the transition to land are central to the Devonian and Carboniferous periods (B.4-B.5) when vertebrates first colonized terrestrial habitats."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "rationale": "Reef-building corals are key organisms of Paleozoic and Mesozoic marine ecosystems (B-C), marking important biostratigraphic intervals."
+      "relevantPathsAI": [],
+      "rationaleAI": "Reef-building corals are key organisms of Paleozoic and Mesozoic marine ecosystems (B-C), marking important biostratigraphic intervals."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Explores the geomorphological processes and landforms shaped during the Quaternary Period (D.2), including glacial landscapes and sea level changes."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Explores the geomorphological processes and landforms shaped during the Quaternary Period (D.2), including glacial landscapes and sea level changes."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

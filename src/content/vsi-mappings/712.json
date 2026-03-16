@@ -4,77 +4,123 @@
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
-      "rationale": "Directly addresses A (the organization of work), its social dimensions, and C.1 (effects of rationalization on workers)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly addresses A (the organization of work), its social dimensions, and C.1 (effects of rationalization on workers)."
     },
     {
       "vsiTitle": "Management",
       "vsiAuthor": "John Hendry",
-      "rationale": "Examines B (application of scientific methods to managerial functions) including Frederick Taylor's scientific management and modern operations research."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines B (application of scientific methods to managerial functions) including Frederick Taylor's scientific management and modern operations research."
     },
     {
       "vsiTitle": "Organizations",
       "vsiAuthor": "Mary Jo Hatch",
-      "rationale": "Addresses B.2 (systems engineering) and B.3 (systems-design techniques) including organizational design and information technology infrastructure."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Addresses B.2 (systems engineering) and B.3 (systems-design techniques) including organizational design and information technology infrastructure."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Treats B.2 (systems engineering) and the utilization of scientific and technological knowledge in designing complex production systems."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Treats B.2 (systems engineering) and the utilization of scientific and technological knowledge in designing complex production systems."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Traces the transformation from cottage industry to factory production, encompassing A.4 (16th-18th century production changes), A.5 (mass production), and A.6 (mechanization of labour)."
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Traces the transformation from cottage industry to factory production, encompassing A.4 (16th-18th century production changes), A.5 (mass production), and A.6 (mechanization of labour)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Directly relevant to A.6 (machines as replacements for labour) and C (relation between man and machine in industrial production)."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Directly relevant to A.6 (machines as replacements for labour) and C (relation between man and machine in industrial production)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Addresses how intelligent systems automate decision-making and production tasks, relevant to A.6 (machines as replacements for labour)."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Addresses how intelligent systems automate decision-making and production tasks, relevant to A.6 (machines as replacements for labour)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Explores systematic approaches to improving production processes, relevant to B.1 (operations research) and continuous improvement methodologies."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Explores systematic approaches to improving production processes, relevant to B.1 (operations research) and continuous improvement methodologies."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Situates changes in production techniques (A.4) and mass production (A.5) within the broader capitalist economic framework and its logic of accumulation."
+      "relevantPathsAI": [
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Situates changes in production techniques (A.4) and mass production (A.5) within the broader capitalist economic framework and its logic of accumulation."
     },
     {
       "vsiTitle": "Game theory",
       "vsiAuthor": "Ken Binmore",
-      "rationale": "Directly listed in B.3.b as a tool for systems-design: optimization theory and game theory."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly listed in B.3.b as a tool for systems-design: optimization theory and game theory."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
-      "rationale": "Addresses A (organization of work) and C.1 (psychological and social dimensions of mass production and automation on workers)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Addresses A (organization of work) and C.1 (psychological and social dimensions of mass production and automation on workers)."
     },
     {
       "vsiTitle": "Leadership",
       "vsiAuthor": "Keith Grint",
-      "rationale": "Explores decision-making and organizational direction-setting, relevant to B (application of scientific methods to managerial functions)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores decision-making and organizational direction-setting, relevant to B (application of scientific methods to managerial functions)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Traces the computing technology that underpins operations research and systems-design tools, relevant to B.3."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Traces the computing technology that underpins operations research and systems-design tools, relevant to B.3."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Illuminates A.1 (organization of work in the prehistoric world) including early division of labour and craft specialization."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Illuminates A.1 (organization of work in the prehistoric world) including early division of labour and craft specialization."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
-      "rationale": "Illustrates A.2 (organization of work in the ancient world), from slave labour and artisan workshops to large-scale construction projects like the Parthenon."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Illustrates A.2 (organization of work in the ancient world), from slave labour and artisan workshops to large-scale construction projects like the Parthenon."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

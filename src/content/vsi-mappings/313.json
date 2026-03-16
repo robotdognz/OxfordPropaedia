@@ -4,72 +4,118 @@
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Directly covers animal classification (F) from Porifera and Cnidaria through Annelida, Echinodermata, and chordates."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Directly covers animal classification (F) from Porifera and Cnidaria through Annelida, Echinodermata, and chordates."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Directly addresses viruses (A), the first major group in this classification of living things."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Directly addresses viruses (A), the first major group in this classification of living things."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Directly covers monerans/bacteria and other prokaryotes (B), including their diversity and classification."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Directly covers monerans/bacteria and other prokaryotes (B), including their diversity and classification."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "rationale": "Directly addresses the fungal kingdom (D), covering mycology, decomposition, parasitism, and fungal genetics."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Directly addresses the fungal kingdom (D), covering mycology, decomposition, parasitism, and fungal genetics."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Covers the plant kingdom (E) from bryophytes through seed plants and angiosperms, including pollination and species diversity."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Covers the plant kingdom (E) from bryophytes through seed plants and angiosperms, including pollination and species diversity."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Covers classification of microorganisms spanning bacteria (B), protists including algae (C.1), and fungi (D)."
+      "relevantPathsAI": [
+        "B",
+        "C.1",
+        "D"
+      ],
+      "rationaleAI": "Covers classification of microorganisms spanning bacteria (B), protists including algae (C.1), and fungi (D)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Covers insects (F.14.b), the largest group within arthropods and the most species-rich animal taxon."
+      "relevantPathsAI": [
+        "F.14"
+      ],
+      "rationaleAI": "Covers insects (F.14.b), the largest group within arthropods and the most species-rich animal taxon."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Covers mammals as a major class within chordates (F.25), including their diversity, biology, and fossil record."
+      "relevantPathsAI": [
+        "F.25"
+      ],
+      "rationaleAI": "Covers mammals as a major class within chordates (F.25), including their diversity, biology, and fossil record."
     },
     {
       "vsiTitle": "Reptiles",
       "vsiAuthor": "Tom Kemp",
-      "rationale": "Covers reptiles as a major class of chordates (F.25), including crocodiles, snakes, and turtles."
+      "relevantPathsAI": [
+        "F.25"
+      ],
+      "rationaleAI": "Covers reptiles as a major class of chordates (F.25), including crocodiles, snakes, and turtles."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Covers amphibians as a major class of chordates (F.25), including their biology, adaptations, and evolution."
+      "relevantPathsAI": [
+        "F.25"
+      ],
+      "rationaleAI": "Covers amphibians as a major class of chordates (F.25), including their biology, adaptations, and evolution."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "rationale": "Covers cnidarians/corals (F.4.a), a major animal phylum in the classification including anthozoans."
+      "relevantPathsAI": [
+        "F.4"
+      ],
+      "rationaleAI": "Covers cnidarians/corals (F.4.a), a major animal phylum in the classification including anthozoans."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Covers diversity across many marine phyla listed in this section including cnidarians (F.4), mollusks (F.15), echinoderms (F.22), and chordates (F.25)."
+      "relevantPathsAI": [
+        "F.4",
+        "F.15",
+        "F.22",
+        "F.25"
+      ],
+      "rationaleAI": "Covers diversity across many marine phyla listed in this section including cnidarians (F.4), mollusks (F.15), echinoderms (F.22), and chordates (F.25)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "rationale": "Addresses relationships among classified groups including microbiomes, corals, insects, and plant roots, spanning categories B through F."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses relationships among classified groups including microbiomes, corals, insects, and plant roots, spanning categories B through F."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
-      "rationale": "Relevant to modern molecular classification methods using DNA sequencing across bacteria (B) and other taxa."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Relevant to modern molecular classification methods using DNA sequencing across bacteria (B) and other taxa."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

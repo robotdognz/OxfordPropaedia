@@ -4,102 +4,158 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Section B covers the nature and scope of engineering including its professional character, education, and branches."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section B covers the nature and scope of engineering including its professional character, education, and branches."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "Section B.2 lists civil engineering as one of the major branches of engineering."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 lists civil engineering as one of the major branches of engineering."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Structural engineering is part of the broader engineering disciplines covered in B.2."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Structural engineering is part of the broader engineering disciplines covered in B.2."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "rationale": "Section C covers the nature and scope of agricultural sciences including soil science, plant/animal production, and agricultural engineering."
+      "relevantPathsAI": [],
+      "rationaleAI": "Section C covers the nature and scope of agricultural sciences including soil science, plant/animal production, and agricultural engineering."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Section D.1 covers bionics including mimicry of nature for engineering and natural models for engineering problems, connecting to robotics."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Section D.1 covers bionics including mimicry of nature for engineering and natural models for engineering problems, connecting to robotics."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Section D.1.b mentions the human brain as a model for computers and information-processing devices, directly connecting to AI."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Section D.1.b mentions the human brain as a model for computers and information-processing devices, directly connecting to AI."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "rationale": "Nanotechnology is a recently developed interscience discipline (D) combining physics, chemistry, and engineering."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Nanotechnology is a recently developed interscience discipline (D) combining physics, chemistry, and engineering."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Materials science is fundamental to engineering (B) and connects to chemical and mechanical engineering branches."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Materials science is fundamental to engineering (B) and connects to chemical and mechanical engineering branches."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Energy systems engineering connects to electrical (B.2) and mechanical engineering as branches of the technological sciences."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Energy systems engineering connects to electrical (B.2) and mechanical engineering as branches of the technological sciences."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Renewable energy technology involves electrical, chemical, and mechanical engineering disciplines (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Renewable energy technology involves electrical, chemical, and mechanical engineering disciplines (B.2)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Section B.2 lists nuclear engineering as a branch of engineering."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Section B.2 lists nuclear engineering as a branch of engineering."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "The history of technological sciences (A) includes military technology and its relationship to engineering development."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The history of technological sciences (A) includes military technology and its relationship to engineering development."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Innovation is central to the technological sciences, driving the development of new technologies and methods."
+      "relevantPathsAI": [],
+      "rationaleAI": "Innovation is central to the technological sciences, driving the development of new technologies and methods."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Section D.1 references computer memory devices and information-processing devices, connecting to the bionics-computing interface."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Section D.1 references computer memory devices and information-processing devices, connecting to the bionics-computing interface."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Computer science underpins modern engineering including bionics (D.1) and systems engineering (D.2)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Computer science underpins modern engineering including bionics (D.1) and systems engineering (D.2)."
     },
     {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
-      "rationale": "Section D.2 covers systems engineering and operations research, which involves network analysis and optimization."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Section D.2 covers systems engineering and operations research, which involves network analysis and optimization."
     },
     {
       "vsiTitle": "Complexity",
       "vsiAuthor": "John H. Holland",
-      "rationale": "Section D.2 covers systems engineering, which draws on complexity theory for analyzing complex technical systems."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Section D.2 covers systems engineering, which draws on complexity theory for analyzing complex technical systems."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Computing technology is part of the history of technological sciences (A) and connects to bionics and systems engineering (D)."
+      "relevantPathsAI": [
+        "A",
+        "D"
+      ],
+      "rationaleAI": "Computing technology is part of the history of technological sciences (A) and connects to bionics and systems engineering (D)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Nuclear weapons technology relates to nuclear engineering (B.2) and the history of technological sciences (A)."
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Nuclear weapons technology relates to nuclear engineering (B.2) and the history of technological sciences (A)."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "rationale": "Landscape architecture involves engineering and agricultural science principles applied to land design."
+      "relevantPathsAI": [],
+      "rationaleAI": "Landscape architecture involves engineering and agricultural science principles applied to land design."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

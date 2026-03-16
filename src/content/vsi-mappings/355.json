@@ -4,97 +4,168 @@
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "rationale": "Examines the structural and physiological characteristics that set humans apart, including bipedalism, brain enlargement, and an extended developmental period (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Examines the structural and physiological characteristics that set humans apart, including bipedalism, brain enlargement, and an extended developmental period (A.1, A.2)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "rationale": "Directly covers domestication, cultivation and breeding of plants and animals, and food production (C.1, C.2, C.4)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Directly covers domestication, cultivation and breeding of plants and animals, and food production (C.1, C.2, C.4)."
     },
     {
       "vsiTitle": "Eugenics",
       "vsiAuthor": "Philippa Levine",
-      "rationale": "Directly covers attempts to change genetic endowments through deliberate selective measures (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Directly covers attempts to change genetic endowments through deliberate selective measures (B.3)."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
-      "rationale": "Documents humanity's transformation of the biosphere through land use, deforestation, pollution, and fossil fuel combustion (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Documents humanity's transformation of the biosphere through land use, deforestation, pollution, and fossil fuel combustion (B.1)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Illustrates a major consequence of human influence on the biosphere, directly relevant to environmental modification by humans (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Illustrates a major consequence of human influence on the biosphere, directly relevant to environmental modification by humans (B.1)."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
-      "rationale": "Directly covers conservation management of natural resources and the protection of biodiversity from human impacts (D.1, D.2, D.3)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Directly covers conservation management of natural resources and the protection of biodiversity from human impacts (D.1, D.2, D.3)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
-      "rationale": "Addresses the world's food supply, food safety, and genetically modified food relevant to food supply management (D.4)."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Addresses the world's food supply, food safety, and genetically modified food relevant to food supply management (D.4)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Analyzes nutritional needs, undernutrition, and dietary health relevant to food supply challenges in developing countries (D.4.a)."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Analyzes nutritional needs, undernutrition, and dietary health relevant to food supply challenges in developing countries (D.4.a)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Focuses on sustainable management of natural resources, energy flows, and human impact on environmental systems (D.1, D.3)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Focuses on sustainable management of natural resources, energy flows, and human impact on environmental systems (D.1, D.3)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Provides the ecological context for understanding human impacts on ecosystems and the science underlying conservation management (D.1)."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Provides the ecological context for understanding human impacts on ecosystems and the science underlying conservation management (D.1)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Addresses forest resources including timber harvest, deforestation, and reforestation as major natural resources under human management (D.2, D.3)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Addresses forest resources including timber harvest, deforestation, and reforestation as major natural resources under human management (D.2, D.3)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Explains the genetics of breeding, artificial selection, and genetic modification relevant to plant and animal cultivation (C.2, C.4)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Explains the genetics of breeding, artificial selection, and genetic modification relevant to plant and animal cultivation (C.2, C.4)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Illuminates human cultural uniqueness including language, social organization, and cultural adaptations that distinguish humans from other species (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Illuminates human cultural uniqueness including language, social organization, and cultural adaptations that distinguish humans from other species (A.3)."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Applies economic valuation to natural resource management and pollution control, informing conservation policy (D.3)."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Applies economic valuation to natural resource management and pollution control, informing conservation policy (D.3)."
     },
     {
       "vsiTitle": "Environmental Law",
       "vsiAuthor": "Elizabeth Fisher",
-      "rationale": "Outlines legal frameworks for environmental protection and conservation management of natural resources (D.1, D.3)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Outlines legal frameworks for environmental protection and conservation management of natural resources (D.1, D.3)."
     },
     {
       "vsiTitle": "Garden History",
       "vsiAuthor": "Gordon Campbell",
-      "rationale": "Traces botanical gardens, allotments, and the historical cultivation of plants relevant to botanical collections and plant use (C.6.d, C.3)."
+      "relevantPathsAI": [
+        "C.6",
+        "C.3"
+      ],
+      "rationaleAI": "Traces botanical gardens, allotments, and the historical cultivation of plants relevant to botanical collections and plant use (C.6.d, C.3)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
-      "rationale": "Addresses the care and management of domesticated animals, relevant to animal cultivation and maintenance of animal collections (C.4, C.6)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.6"
+      ],
+      "rationaleAI": "Addresses the care and management of domesticated animals, relevant to animal cultivation and maintenance of animal collections (C.4, C.6)."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "rationale": "Examines human-caused species introductions as a major form of environmental modification, from ballast water to deliberate release (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Examines human-caused species introductions as a major form of environmental modification, from ballast water to deliberate release (B.1)."
     },
     {
       "vsiTitle": "Animal rights",
       "vsiAuthor": "David DeGrazia",
-      "rationale": "Addresses ethical considerations in human utilization of animals, relevant to domestication, zoos, and animal welfare (C.4, C.5, C.6)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.5",
+        "C.6"
+      ],
+      "rationaleAI": "Addresses ethical considerations in human utilization of animals, relevant to domestication, zoos, and animal welfare (C.4, C.5, C.6)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

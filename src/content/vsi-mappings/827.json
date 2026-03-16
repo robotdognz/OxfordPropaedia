@@ -4,302 +4,485 @@
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "rationale": "Directly covers Christianity including its history, major forms (Orthodox, Catholic, Protestant), church institutions, and doctrines, the primary subject of 827."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers Christianity including its history, major forms (Orthodox, Catholic, Protestant), church institutions, and doctrines, the primary subject of 827."
     },
     {
       "vsiTitle": "Jesus",
       "vsiAuthor": "Richard Bauckham",
-      "rationale": "Examines the life, death, resurrection, and teachings of Jesus Christ, directly relevant to 827.A.1.a and 827.F.1.c on Christology."
+      "relevantPathsAI": [
+        "A.1",
+        "F.1.c"
+      ],
+      "rationaleAI": "Examines the life, death, resurrection, and teachings of Jesus Christ, directly relevant to 827.A.1.a and 827.F.1.c on Christology."
     },
     {
       "vsiTitle": "Paul",
       "vsiAuthor": "E. P. Sanders",
-      "rationale": "Explores the apostle Paul's theology of faith, salvation, and resurrection, shedding light on the origins of the primitive church in 827.A.1.a."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Explores the apostle Paul's theology of faith, salvation, and resurrection, shedding light on the origins of the primitive church in 827.A.1.a."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
-      "rationale": "Traces Augustine's thinking on grace, original sin, creation, and the Donatist controversy, directly relevant to 827.A.2.b on doctrinal disputes of the patristic era."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Traces Augustine's thinking on grace, original sin, creation, and the Donatist controversy, directly relevant to 827.A.2.b on doctrinal disputes of the patristic era."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
-      "rationale": "Engages with Aquinas's Summa Theologiae and his theology of creation and natural law, relevant to 827.C.1.b on Latin Christianity and 827.E.7 on Christian philosophy."
+      "relevantPathsAI": [
+        "C.1",
+        "E.7"
+      ],
+      "rationaleAI": "Engages with Aquinas's Summa Theologiae and his theology of creation and natural law, relevant to 827.C.1.b on Latin Christianity and 827.E.7 on Christian philosophy."
     },
     {
       "vsiTitle": "Anselm",
       "vsiAuthor": "Thomas Williams",
-      "rationale": "Presents Anselm's satisfaction theory of atonement, the ontological argument for God's existence, and his role in the investiture controversy, relevant to 827.C.1 and 827.E.7."
+      "relevantPathsAI": [
+        "C.1",
+        "E.7"
+      ],
+      "rationaleAI": "Presents Anselm's satisfaction theory of atonement, the ontological argument for God's existence, and his role in the investiture controversy, relevant to 827.C.1 and 827.E.7."
     },
     {
       "vsiTitle": "Martin Luther",
       "vsiAuthor": "Scott H. Hendrix",
-      "rationale": "Traces Luther's break with Rome over indulgences and justification by faith, along with the German Reformation he ignited, directly relevant to 827.D.1.b."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Traces Luther's break with Rome over indulgences and justification by faith, along with the German Reformation he ignited, directly relevant to 827.D.1.b."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
-      "rationale": "Addresses the Bible as foundational Christian scripture and the history of its interpretation, directly relevant to 827.E.1 on biblical literature."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Addresses the Bible as foundational Christian scripture and the history of its interpretation, directly relevant to 827.E.1 on biblical literature."
     },
     {
       "vsiTitle": "The Old Testament",
       "vsiAuthor": "Michael Coogan",
-      "rationale": "Surveys the Old Testament as part of Christian biblical literature, including the Pentateuch, prophetic books, and wisdom writings, relevant to 827.E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Surveys the Old Testament as part of Christian biblical literature, including the Pentateuch, prophetic books, and wisdom writings, relevant to 827.E.1."
     },
     {
       "vsiTitle": "The New Testament",
       "vsiAuthor": "Luke Timothy Johnson",
-      "rationale": "Directly covers the New Testament including its canon, the Holy Spirit, and the Kingdom of God, relevant to 827.E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Directly covers the New Testament including its canon, the Holy Spirit, and the Kingdom of God, relevant to 827.E.1."
     },
     {
       "vsiTitle": "The Apocryphal Gospels",
       "vsiAuthor": "Paul Foster",
-      "rationale": "Investigates non-canonical early Christian texts such as the Gospel of Thomas and the Nag Hammadi library, including their Gnostic dimensions, relevant to 827.E.1 on the Apocrypha."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Investigates non-canonical early Christian texts such as the Gospel of Thomas and the Nag Hammadi library, including their Gnostic dimensions, relevant to 827.E.1 on the Apocrypha."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
-      "rationale": "Explores the theory of biblical interpretation from patristic allegory through modern historical-critical methods, directly relevant to 827.E.2 on exegesis and hermeneutics."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Explores the theory of biblical interpretation from patristic allegory through modern historical-critical methods, directly relevant to 827.E.2 on exegesis and hermeneutics."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
-      "rationale": "Surveys Christian theology broadly, from doctrines of creation and prayer to inter-faith dialogue, relevant to 827.E and 827.F."
+      "relevantPathsAI": [],
+      "rationaleAI": "Surveys Christian theology broadly, from doctrines of creation and prayer to inter-faith dialogue, relevant to 827.E and 827.F."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
-      "rationale": "Examines Christian doctrines concerning God, including the Trinity, creation ex nihilo, and Aquinas's five ways, relevant to 827.F.1."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Examines Christian doctrines concerning God, including the Trinity, creation ex nihilo, and Aquinas's five ways, relevant to 827.F.1."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
-      "rationale": "Directly covers Christian art and iconography, the subject of 827.F.7."
+      "relevantPathsAI": [
+        "F.7"
+      ],
+      "rationaleAI": "Directly covers Christian art and iconography, the subject of 827.F.7."
     },
     {
       "vsiTitle": "Christian ethics",
       "vsiAuthor": "D. Stephen Long",
-      "rationale": "Analyzes Christian ethical teaching on virtue, the morality of abortion, and economic justice, relevant to 827.F.4 and 827.G.3.c on Protestantism's influence on social thought."
+      "relevantPathsAI": [
+        "F.4",
+        "G.3.c"
+      ],
+      "rationaleAI": "Analyzes Christian ethical teaching on virtue, the morality of abortion, and economic justice, relevant to 827.F.4 and 827.G.3.c on Protestantism's influence on social thought."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
-      "rationale": "Directly covers Roman Catholicism including sacraments, creation, and sacred traditions, the subject of 827.G.2."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Directly covers Roman Catholicism including sacraments, creation, and sacred traditions, the subject of 827.G.2."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
-      "rationale": "Directly covers Eastern Orthodoxy including the East-West Schism, the subject of 827.B and 827.G.1."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Directly covers Eastern Orthodoxy including the East-West Schism, the subject of 827.B and 827.G.1."
     },
     {
       "vsiTitle": "Protestantism",
       "vsiAuthor": "Mark A. Noll",
-      "rationale": "Directly covers Protestantism including Lutheranism, Calvinism, Methodism, and the World Council of Churches, the subject of 827.D and 827.G.3."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers Protestantism including Lutheranism, Calvinism, Methodism, and the World Council of Churches, the subject of 827.D and 827.G.3."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
-      "rationale": "Directly covers the Protestant Reformation including Lutheran, Calvinist, and Anabaptist movements, the subject of 827.C.2 and 827.D.1."
+      "relevantPathsAI": [
+        "C.2",
+        "D.1"
+      ],
+      "rationaleAI": "Directly covers the Protestant Reformation including Lutheran, Calvinist, and Anabaptist movements, the subject of 827.C.2 and 827.D.1."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
-      "rationale": "Details the Counter-Reformation response to Protestantism, including the Council of Trent's doctrinal decrees and Jesuit missionary activity, the subject of 827.C.2.c and 827.D.1.g."
+      "relevantPathsAI": [
+        "C.2.c",
+        "D.1"
+      ],
+      "rationaleAI": "Details the Counter-Reformation response to Protestantism, including the Council of Trent's doctrinal decrees and Jesuit missionary activity, the subject of 827.C.2.c and 827.D.1.g."
     },
     {
       "vsiTitle": "Calvinism",
       "vsiAuthor": "Jon Balserak",
-      "rationale": "Explores Calvin's covenant theology, predestination, and model of church governance, directly relevant to 827.G.3.d.ii on Reformed and Presbyterian churches."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Explores Calvin's covenant theology, predestination, and model of church governance, directly relevant to 827.G.3.d.ii on Reformed and Presbyterian churches."
     },
     {
       "vsiTitle": "Anglicanism",
       "vsiAuthor": "Mark Chapman",
-      "rationale": "Directly covers the Anglican Communion including the Church of England, the subject of 827.G.3.d.iii."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers the Anglican Communion including the Church of England, the subject of 827.G.3.d.iii."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
-      "rationale": "Examines the Puritan movement's Calvinist roots, emphasis on godly discipline, and the Protestant ethic, relevant to 827.D.2.d-e on English and American Protestantism."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Examines the Puritan movement's Calvinist roots, emphasis on godly discipline, and the Protestant ethic, relevant to 827.D.2.d-e on English and American Protestantism."
     },
     {
       "vsiTitle": "Methodism",
       "vsiAuthor": "William J. Abraham",
-      "rationale": "Directly covers Methodism and the Wesley brothers, one of the Free churches listed in 827.G.3.d.iv."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers Methodism and the Wesley brothers, one of the Free churches listed in 827.G.3.d.iv."
     },
     {
       "vsiTitle": "Pentecostalism",
       "vsiAuthor": "William K. Kay",
-      "rationale": "Directly covers Pentecostalism including healing and holiness traditions, the subject of 827.G.3.e.ii."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers Pentecostalism including healing and holiness traditions, the subject of 827.G.3.e.ii."
     },
     {
       "vsiTitle": "Evangelicalism",
       "vsiAuthor": "John G. Stackhouse Jr.",
-      "rationale": "Traces the evangelical movement from its revivalist origins to the modern megachurch phenomenon, relevant to 827.G.3.e.vii on evangelical groups."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Traces the evangelical movement from its revivalist origins to the modern megachurch phenomenon, relevant to 827.G.3.e.vii on evangelical groups."
     },
     {
       "vsiTitle": "The Quakers",
       "vsiAuthor": "Pink Dandelion",
-      "rationale": "Directly covers the Society of Friends (Quakers) including George Fox and worship practices, the subject of 827.G.3.e.iv."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers the Society of Friends (Quakers) including George Fox and worship practices, the subject of 827.G.3.e.iv."
     },
     {
       "vsiTitle": "Mormonism",
       "vsiAuthor": "Richard Bushman",
-      "rationale": "Directly covers Mormonism, the subject of 827.H.3."
+      "relevantPathsAI": [
+        "H.3"
+      ],
+      "rationaleAI": "Directly covers Mormonism, the subject of 827.H.3."
     },
     {
       "vsiTitle": "Vatican II",
       "vsiAuthor": "Shaun Blanchard, Stephen Bullivant",
-      "rationale": "Assesses the Second Vatican Council's sweeping reforms to Catholic liturgy, theology, and ecumenical relations, relevant to 827.C.5."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Assesses the Second Vatican Council's sweeping reforms to Catholic liturgy, theology, and ecumenical relations, relevant to 827.C.5."
     },
     {
       "vsiTitle": "The Virgin Mary",
       "vsiAuthor": "Mary Joan Winn Leith",
-      "rationale": "Traces Marian devotion from the early church through Reformation-era debates and modern feminist theology, relevant to 827.F on beliefs and practices."
+      "relevantPathsAI": [],
+      "rationaleAI": "Traces Marian devotion from the early church through Reformation-era debates and modern feminist theology, relevant to 827.F on beliefs and practices."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
-      "rationale": "Traces the development of Christian monastic life from the Desert Fathers through Benedictine and mendicant orders, relevant to 827.F.6.c on monasticism as a form of Christian life."
+      "relevantPathsAI": [
+        "F.6.c"
+      ],
+      "rationaleAI": "Traces the development of Christian monastic life from the Desert Fathers through Benedictine and mendicant orders, relevant to 827.F.6.c on monasticism as a form of Christian life."
     },
     {
       "vsiTitle": "Saints",
       "vsiAuthor": "Simon Yarrow",
-      "rationale": "Explores the Christian tradition of sainthood, canonization, and the cult of relics, relevant to 827.F.6.c on the saintly life."
+      "relevantPathsAI": [
+        "F.6.c"
+      ],
+      "rationaleAI": "Explores the Christian tradition of sainthood, canonization, and the cult of relics, relevant to 827.F.6.c on the saintly life."
     },
     {
       "vsiTitle": "Martyrdom",
       "vsiAuthor": "Jolyon Mitchell",
-      "rationale": "Traces Christian martyrdom from the persecution of the early church under Rome through modern witness, relevant to 827.A.1.b on post-apostolic developments."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Traces Christian martyrdom from the persecution of the early church under Rome through modern witness, relevant to 827.A.1.b on post-apostolic developments."
     },
     {
       "vsiTitle": "Angels",
       "vsiAuthor": "David Albert Jones",
-      "rationale": "Examines angelology in Christian tradition, from the celestial hierarchies of Pseudo-Dionysius to popular devotion, relevant to 827.F.2 on doctrines concerning intermediary beings."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Examines angelology in Christian tradition, from the celestial hierarchies of Pseudo-Dionysius to popular devotion, relevant to 827.F.2 on doctrines concerning intermediary beings."
     },
     {
       "vsiTitle": "The Devil",
       "vsiAuthor": "Darren Oldridge",
-      "rationale": "Traces the evolving Christian concept of Satan from the New Testament through medieval demonology, directly relevant to 827.F.2 on doctrines concerning Satan."
+      "relevantPathsAI": [
+        "F.2"
+      ],
+      "rationaleAI": "Traces the evolving Christian concept of Satan from the New Testament through medieval demonology, directly relevant to 827.F.2 on doctrines concerning Satan."
     },
     {
       "vsiTitle": "Miracles",
       "vsiAuthor": "Yujin Nagasawa",
-      "rationale": "Investigates the philosophical and theological status of miracles in Christian belief, relevant to 827.F.1.c on Christology and claims about Jesus."
+      "relevantPathsAI": [
+        "F.1.c"
+      ],
+      "rationaleAI": "Investigates the philosophical and theological status of miracles in Christian belief, relevant to 827.F.1.c on Christology and claims about Jesus."
     },
     {
       "vsiTitle": "Pilgrimage",
       "vsiAuthor": "Ian Reader",
-      "rationale": "Explores Christian pilgrimage traditions from Jerusalem and Canterbury to Lourdes and Santiago de Compostela, relevant to 827.F.6 on practices common among Christians."
+      "relevantPathsAI": [
+        "F.6"
+      ],
+      "rationaleAI": "Explores Christian pilgrimage traditions from Jerusalem and Canterbury to Lourdes and Santiago de Compostela, relevant to 827.F.6 on practices common among Christians."
     },
     {
       "vsiTitle": "Science and Religion",
       "vsiAuthor": "Thomas Dixon, Adam Shapiro",
-      "rationale": "Examines Christianity's engagement with science, from the Galileo affair to modern debates over evolution, relevant to 827.A.2.c on the relation of Christian religion to culture."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Examines Christianity's engagement with science, from the Galileo affair to modern debates over evolution, relevant to 827.A.2.c on the relation of Christian religion to culture."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "Analyzes Christian fundamentalism and its commitment to biblical inerrancy, relevant to 827.G.3.e.vii on fundamentalist groups."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Analyzes Christian fundamentalism and its commitment to biblical inerrancy, relevant to 827.G.3.e.vii on fundamentalist groups."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
-      "rationale": "Illuminates the era when Christianity became the Roman state religion and contended with Manichaeism and other rivals, directly relevant to 827.A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Illuminates the era when Christianity became the Roman state religion and contended with Manichaeism and other rivals, directly relevant to 827.A.2."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "rationale": "Explores Byzantine civilization and its deep entanglement with Eastern Christianity, from the construction of Hagia Sophia to iconoclasm, relevant to 827.B.1."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Explores Byzantine civilization and its deep entanglement with Eastern Christianity, from the construction of Hagia Sophia to iconoclasm, relevant to 827.B.1."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "rationale": "The Crusades were a major expression of medieval Christianity, relevant to 827.C.1."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "The Crusades were a major expression of medieval Christianity, relevant to 827.C.1."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
-      "rationale": "Depicts the medieval world in which Christianity shaped every aspect of European culture and the papacy wielded enormous power, relevant to 827.C.1."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Depicts the medieval world in which Christianity shaped every aspect of European culture and the papacy wielded enormous power, relevant to 827.C.1."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
-      "rationale": "Traces Christian scholasticism from Boethius through William of Ockham, showing how philosophy served theology in the medieval university, relevant to 827.E.7 on Christian philosophy."
+      "relevantPathsAI": [
+        "E.7"
+      ],
+      "rationaleAI": "Traces Christian scholasticism from Boethius through William of Ockham, showing how philosophy served theology in the medieval university, relevant to 827.E.7 on Christian philosophy."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
-      "rationale": "Renaissance art is largely Christian in subject matter, relevant to 827.F.7 on major eras and schools of Christian art."
+      "relevantPathsAI": [
+        "F.7"
+      ],
+      "rationaleAI": "Renaissance art is largely Christian in subject matter, relevant to 827.F.7 on major eras and schools of Christian art."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
-      "rationale": "The Enlightenment challenged Christianity with rationalism and Deism, directly relevant to 827.D.2.c."
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "The Enlightenment challenged Christianity with rationalism and Deism, directly relevant to 827.D.2.c."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
-      "rationale": "The Holy Roman Empire's history is intertwined with the papacy and the Reformation, relevant to 827.C.1.a and 827.D.1."
+      "relevantPathsAI": [
+        "C.1",
+        "D.1"
+      ],
+      "rationaleAI": "The Holy Roman Empire's history is intertwined with the papacy and the Reformation, relevant to 827.C.1.a and 827.D.1."
     },
     {
       "vsiTitle": "Stuart Britain",
       "vsiAuthor": "John Morrill",
-      "rationale": "Examines Stuart-era religious conflicts among Puritans, Anglicans, and Catholics that reshaped English Protestantism, relevant to 827.D.2.d."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Examines Stuart-era religious conflicts among Puritans, Anglicans, and Catholics that reshaped English Protestantism, relevant to 827.D.2.d."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
-      "rationale": "Places Christianity in comparative perspective with Judaism and Islam, illuminating its shared Abrahamic roots and distinctive developments."
+      "relevantPathsAI": [],
+      "rationaleAI": "Places Christianity in comparative perspective with Judaism and Islam, illuminating its shared Abrahamic roots and distinctive developments."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
-      "rationale": "Surveys Christianity in the American context, from Methodist circuit riders to new religious movements, relevant to 827.D.2.e and 827.G.3."
+      "relevantPathsAI": [
+        "D.2",
+        "G.3"
+      ],
+      "rationaleAI": "Surveys Christianity in the American context, from Methodist circuit riders to new religious movements, relevant to 827.D.2.e and 827.G.3."
     },
     {
       "vsiTitle": "African American Religion",
       "vsiAuthor": "Eddie S. Glaude Jr.",
-      "rationale": "Illuminates the African American Christian tradition and the Black church's role in spiritual life and social justice, directly relevant to 827.G.3.e.viii."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Illuminates the African American Christian tradition and the Black church's role in spiritual life and social justice, directly relevant to 827.G.3.e.viii."
     },
     {
       "vsiTitle": "Toleration",
       "vsiAuthor": "Andrew R. Murphy",
-      "rationale": "Traces the idea of religious toleration through the wars of religion and confessional schisms, relevant to 827.D.1.h on the development of religious liberty."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Traces the idea of religious toleration through the wars of religion and confessional schisms, relevant to 827.D.1.h on the development of religious liberty."
     },
     {
       "vsiTitle": "Dante",
       "vsiAuthor": "Peter Hainsworth, David Robey",
-      "rationale": "Dante's Divine Comedy is a supreme expression of medieval Christian theology and eschatology, relevant to 827.E and 827.F.1.d."
+      "relevantPathsAI": [
+        "F.1"
+      ],
+      "rationaleAI": "Dante's Divine Comedy is a supreme expression of medieval Christian theology and eschatology, relevant to 827.E and 827.F.1.d."
     },
     {
       "vsiTitle": "C. S. Lewis",
       "vsiAuthor": "James Como",
-      "rationale": "C. S. Lewis was a major Christian apologist, relevant to 827.E.5 on writings of theologians and church leaders."
+      "relevantPathsAI": [
+        "E.5"
+      ],
+      "rationaleAI": "C. S. Lewis was a major Christian apologist, relevant to 827.E.5 on writings of theologians and church leaders."
     },
     {
       "vsiTitle": "Kierkegaard",
       "vsiAuthor": "Patrick Gardiner",
-      "rationale": "Kierkegaard is a major Christian philosopher addressing faith and subjectivity, relevant to 827.E.7 on Christian philosophy."
+      "relevantPathsAI": [
+        "E.7"
+      ],
+      "rationaleAI": "Kierkegaard is a major Christian philosopher addressing faith and subjectivity, relevant to 827.E.7 on Christian philosophy."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
-      "rationale": "Analyzes the secularization of historically Christian societies and the challenges posed to organized religion, relevant to 827.D.4 on modern Protestantism and the contemporary context."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Analyzes the secularization of historically Christian societies and the challenges posed to organized religion, relevant to 827.D.4 on modern Protestantism and the contemporary context."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
-      "rationale": "Explores Christian spiritual and mystical traditions, from Meister Eckhart to contemplative prayer, relevant to 827.E.6 on Christian mysticism."
+      "relevantPathsAI": [
+        "E.6"
+      ],
+      "rationaleAI": "Explores Christian spiritual and mystical traditions, from Meister Eckhart to contemplative prayer, relevant to 827.E.6 on Christian mysticism."
     },
     {
       "vsiTitle": "Faith",
       "vsiAuthor": "Roger Trigg",
-      "rationale": "Probes the nature of Christian faith, the interplay of belief and reason, and how confessional identity is articulated, relevant to 827.E.4 on creeds and confessions of faith."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Probes the nature of Christian faith, the interplay of belief and reason, and how confessional identity is articulated, relevant to 827.E.4 on creeds and confessions of faith."
     },
     {
       "vsiTitle": "Philosophy of Religion",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Engages with the existence and nature of God (F.1), the problem of evil (F.2), and the relationship between faith and reason, directly relevant to Christian doctrines and philosophy (E.7)."
+      "relevantPathsAI": [
+        "F.1",
+        "F.2",
+        "E.7"
+      ],
+      "rationaleAI": "Engages with the existence and nature of God (F.1), the problem of evil (F.2), and the relationship between faith and reason, directly relevant to Christian doctrines and philosophy (E.7)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

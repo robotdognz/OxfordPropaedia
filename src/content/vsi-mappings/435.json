@@ -4,117 +4,175 @@
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Directly covers theories of learning, conditioning, and the psychology of learning including transfer of training (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers theories of learning, conditioning, and the psychology of learning including transfer of training (A, B)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Directly covers memory, retention, forgetting, and memory manipulation, including abnormalities of memory (E, F)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers memory, retention, forgetting, and memory manipulation, including abnormalities of memory (E, F)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Directly covers the higher thought processes including reasoning, problem solving, and deduction (G.1)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Directly covers the higher thought processes including reasoning, problem solving, and deduction (G.1)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Covers the psychology of higher thought processes, consciousness, and reasoning (G.1)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Covers the psychology of higher thought processes, consciousness, and reasoning (G.1)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Directly relevant to perceptual learning -- how perceptual skills develop through experience (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Directly relevant to perceptual learning -- how perceptual skills develop through experience (C)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural basis of learning, memory formation, and higher cognitive processes (A, E, G)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers the neural basis of learning, memory formation, and higher cognitive processes (A, E, G)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers brain mechanisms underlying learning, memory storage, and the neural substrates of thought."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers brain mechanisms underlying learning, memory storage, and the neural substrates of thought."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
-      "rationale": "Covers active learning, cognitive development, inner speech, and Piaget's work on concept formation in children (D, G.2)."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Covers active learning, cognitive development, inner speech, and Piaget's work on concept formation in children (D, G.2)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Pavlov's conditioning research is foundational to modern learning theories (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Pavlov's conditioning research is foundational to modern learning theories (A.1)."
     },
     {
       "vsiTitle": "Linguistics",
       "vsiAuthor": "P. H. Matthews",
-      "rationale": "Covers language, meaning, and speech, directly relevant to the role of language in higher thought processes (G.2, G.3)."
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Covers language, meaning, and speech, directly relevant to the role of language in higher thought processes (G.2, G.3)."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
-      "rationale": "Covers how language structures and phonology influence thought, relevant to language in higher thought processes (G.2)."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Covers how language structures and phonology influence thought, relevant to language in higher thought processes (G.2)."
     },
     {
       "vsiTitle": "Psycholinguistics",
       "vsiAuthor": "Fernanda Ferreira",
-      "rationale": "Directly covers the intersection of language and cognition, relevant to the role of language in thought and meaning (G.2, G.3)."
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers the intersection of language and cognition, relevant to the role of language in thought and meaning (G.2, G.3)."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
-      "rationale": "Directly covers meaning, reference, truth, and word meaning -- the core of section G.3."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "Directly covers meaning, reference, truth, and word meaning -- the core of section G.3."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Relevant to the role of conscious awareness in learning and concept formation."
+      "relevantPathsAI": [],
+      "rationaleAI": "Relevant to the role of conscious awareness in learning and concept formation."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Covers cognitive psychology, developmental psychology, and the broad framework for understanding learning and thinking."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers cognitive psychology, developmental psychology, and the broad framework for understanding learning and thinking."
     },
     {
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
-      "rationale": "Covers the applied dimension of learning theories including teaching methods and transfer of training (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Covers the applied dimension of learning theories including teaching methods and transfer of training (A.3)."
     },
     {
       "vsiTitle": "Dementia",
       "vsiAuthor": "Kathleen Taylor",
-      "rationale": "Covers memory loss, diagnosis, and cognitive decline, directly relevant to abnormalities of memory including amnesia (F)."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Covers memory loss, diagnosis, and cognitive decline, directly relevant to abnormalities of memory including amnesia (F)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
-      "rationale": "Covers a specific learning difficulty affecting reading and perceptual processing, relevant to perceptual and conceptual learning (C, D)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers a specific learning difficulty affecting reading and perceptual processing, relevant to perceptual and conceptual learning (C, D)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
-      "rationale": "Covers creative thinking and invention, relevant to the higher thought processes and novel concept formation (G.1)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Covers creative thinking and invention, relevant to the higher thought processes and novel concept formation (G.1)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
-      "rationale": "Covers the cognitive processes of imagination and ideation, relevant to higher thought processes (G.1)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Covers the cognitive processes of imagination and ideation, relevant to higher thought processes (G.1)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
-      "rationale": "Covers interpretation, meaning, and the role of language in understanding -- relevant to meaning and language in thought (G.2, G.3)."
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Covers interpretation, meaning, and the role of language in understanding -- relevant to meaning and language in thought (G.2, G.3)."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
-      "rationale": "Wittgenstein's philosophy of language addresses meaning and the relationship between language and thought (G.2, G.3)."
+      "relevantPathsAI": [
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Wittgenstein's philosophy of language addresses meaning and the relationship between language and thought (G.2, G.3)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Machine learning provides comparative models for understanding human learning theories and concept formation."
+      "relevantPathsAI": [],
+      "rationaleAI": "Machine learning provides comparative models for understanding human learning theories and concept formation."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

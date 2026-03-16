@@ -4,87 +4,159 @@
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "Directly covers Wegener's continental drift, Hess's seafloor spreading, and plate tectonics as a unifying theory (F), plus lithospheric plate boundaries as sites of volcanism and orogeny (F.4.a)."
+      "relevantPathsAI": [
+        "F",
+        "F.4"
+      ],
+      "rationaleAI": "Directly covers Wegener's continental drift, Hess's seafloor spreading, and plate tectonics as a unifying theory (F), plus lithospheric plate boundaries as sites of volcanism and orogeny (F.4.a)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Spans the origin of the Earth (A.1), development of crust from mantle, chemical weathering, and Wegener's continental drift (F.2), providing a comprehensive overview of this section's scope."
+      "relevantPathsAI": [
+        "A.1",
+        "F.2"
+      ],
+      "rationaleAI": "Spans the origin of the Earth (A.1), development of crust from mantle, chemical weathering, and Wegener's continental drift (F.2), providing a comprehensive overview of this section's scope."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Integrates Earth's geochemical differentiation (A.2), tectonic processes (F), and the geophysical forces driving continental formation (D) and mountain building (E)."
+      "relevantPathsAI": [
+        "A.2",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Integrates Earth's geochemical differentiation (A.2), tectonic processes (F), and the geophysical forces driving continental formation (D) and mountain building (E)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Addresses the co-evolution of Earth's lithosphere, atmosphere, hydrosphere, and biosphere (A-C), including snowball Earth events and greenhouse effects relevant to atmospheric development (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Addresses the co-evolution of Earth's lithosphere, atmosphere, hydrosphere, and biosphere (A-C), including snowball Earth events and greenhouse effects relevant to atmospheric development (B.3)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "rationale": "Directly covers the origin and evolution of the atmosphere (B), including its relation to the solar system (B.1), greenhouse effects, and climate change from human activities (B.5)."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.5"
+      ],
+      "rationaleAI": "Directly covers the origin and evolution of the atmosphere (B), including its relation to the solar system (B.1), greenhouse effects, and climate change from human activities (B.5)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Investigates deep-seated Earth processes (D.3), continental drift (F.2), sea-floor spreading (F.3), plate tectonics (F.4), and seismicity at plate boundaries (F.4.a)."
+      "relevantPathsAI": [
+        "D.3",
+        "F.2",
+        "F.3",
+        "F.4"
+      ],
+      "rationaleAI": "Investigates deep-seated Earth processes (D.3), continental drift (F.2), sea-floor spreading (F.3), plate tectonics (F.4), and seismicity at plate boundaries (F.4.a)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Volcanism is central to crust formation from mantle (A.2) and lithospheric plate boundaries as sites of volcanism and orogeny (F.4.a)."
+      "relevantPathsAI": [
+        "A.2",
+        "F.4"
+      ],
+      "rationaleAI": "Volcanism is central to crust formation from mantle (A.2) and lithospheric plate boundaries as sites of volcanism and orogeny (F.4.a)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
-      "rationale": "Traces the origin and evolution of the hydrosphere (C), from the earliest oceans (C.1) to the chemical composition of modern seawater (C.2)."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Traces the origin and evolution of the hydrosphere (C), from the earliest oceans (C.1) to the chemical composition of modern seawater (C.2)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Surveys igneous, sedimentary, and metamorphic rocks formed through geochemical differentiation of the Earth's outer layers (A.2) and mantle processes (D.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "D.1"
+      ],
+      "rationaleAI": "Surveys igneous, sedimentary, and metamorphic rocks formed through geochemical differentiation of the Earth's outer layers (A.2) and mantle processes (D.1)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
-      "rationale": "Directly relevant to the formation and growth of mountain ranges and belts (E), including their distribution in relation to global tectonics (E.1)."
+      "relevantPathsAI": [
+        "E",
+        "E.1"
+      ],
+      "rationaleAI": "Directly relevant to the formation and growth of mountain ranges and belts (E), including their distribution in relation to global tectonics (E.1)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Addresses atmospheric carbon dioxide levels, greenhouse warming, and the present atmosphere (B.4-B.5), including human-induced effects like acid rain and ozone depletion."
+      "relevantPathsAI": [
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Addresses atmospheric carbon dioxide levels, greenhouse warming, and the present atmosphere (B.4-B.5), including human-induced effects like acid rain and ozone depletion."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "Traces atmospheric oxygen evolution and the co-development of life and the atmosphere (B.2-B.3), including the Great Oxidation Event and greenhouse dynamics on early Earth."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Traces atmospheric oxygen evolution and the co-development of life and the atmosphere (B.2-B.3), including the Great Oxidation Event and greenhouse dynamics on early Earth."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Situates Earth's atmospheric development within a comparative planetary framework, drawing parallels with Venus's runaway greenhouse and Mars's thin atmosphere (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Situates Earth's atmospheric development within a comparative planetary framework, drawing parallels with Venus's runaway greenhouse and Mars's thin atmosphere (B.1)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Illuminates the chemistry of water on Earth, relevant to the origin and chemical composition of the oceans (C.1-C.2) and the hydrosphere's evolution."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Illuminates the chemistry of water on Earth, relevant to the origin and chemical composition of the oceans (C.1-C.2) and the hydrosphere's evolution."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Explains geomorphological processes shaping continental surfaces (D) and mountain system development (E.4) through erosion, weathering, and tectonic uplift."
+      "relevantPathsAI": [
+        "D",
+        "E.4"
+      ],
+      "rationaleAI": "Explains geomorphological processes shaping continental surfaces (D) and mountain system development (E.4) through erosion, weathering, and tectonic uplift."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Illuminates the Sun's influence on Earth's atmospheric development (B.1) and the solar energy that drives atmospheric and hydrospheric evolution."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Illuminates the Sun's influence on Earth's atmospheric development (B.1) and the solar energy that drives atmospheric and hydrospheric evolution."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
-      "rationale": "Addresses volcanism and earthquakes at plate boundaries (F.4.a) and climate hazards tied to atmospheric changes (B.5)."
+      "relevantPathsAI": [
+        "F.4",
+        "B.5"
+      ],
+      "rationaleAI": "Addresses volcanism and earthquakes at plate boundaries (F.4.a) and climate hazards tied to atmospheric changes (B.5)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

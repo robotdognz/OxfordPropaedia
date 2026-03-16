@@ -4,72 +4,120 @@
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "A core text on communicable disease agents (viruses, bacteria), transmission, vaccination, and the multifactorial concept of contagious disease (A.2, A.4)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "A core text on communicable disease agents (viruses, bacteria), transmission, vaccination, and the multifactorial concept of contagious disease (A.2, A.4)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
-      "rationale": "Essential for understanding immunity including innate and adaptive immune responses, vaccines, and immunological memory (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Essential for understanding immunity including innate and adaptive immune responses, vaccines, and immunological memory (A.3)."
     },
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Explores population-level disease patterns, the distinction between endemic and epidemic disease, and disease prevention methods (A.2.b, A.4)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Explores population-level disease patterns, the distinction between endemic and epidemic disease, and disease prevention methods (A.2.b, A.4)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Examines major epidemic diseases -- influenza, plague, cholera, smallpox, tuberculosis, HIV/AIDS -- and their spread and control (A.2.b)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Examines major epidemic diseases -- influenza, plague, cholera, smallpox, tuberculosis, HIV/AIDS -- and their spread and control (A.2.b)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Viruses as major agents of communicable disease in animals and plants, including SARS-CoV-2 and vaccine technology, are the central subject (A.2, B, C)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Viruses as major agents of communicable disease in animals and plants, including SARS-CoV-2 and vaccine technology, are the central subject (A.2, B, C)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Bacterial pathogens, antibiotic resistance, and immune system interactions are examined in the context of communicable disease and its control (A.2, A.4, C)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Bacterial pathogens, antibiotic resistance, and immune system interactions are examined in the context of communicable disease and its control (A.2, A.4, C)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "rationale": "Fungal diseases and parasitism in both plants and animals are explored (B, C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Fungal diseases and parasitism in both plants and animals are explored (B, C)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Disease-causing microorganisms -- including bacteria, fungi, and their ecological roles in disease transmission -- are broadly examined (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Disease-causing microorganisms -- including bacteria, fungi, and their ecological roles in disease transmission -- are broadly examined (A.2)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
-      "rationale": "HIV/AIDS illustrates epidemic spread, immunity challenges, prevention, and public health responses as a major communicable disease (A.2.b, A.3, A.4)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "HIV/AIDS illustrates epidemic spread, immunity challenges, prevention, and public health responses as a major communicable disease (A.2.b, A.3, A.4)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "rationale": "A historically significant epidemic disease illustrating endemic and epidemic patterns and public health control measures (A.2.b, A.4)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "A historically significant epidemic disease illustrating endemic and epidemic patterns and public health control measures (A.2.b, A.4)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
-      "rationale": "A major noncommunicable disease involving metabolic defects and environmental hazards, including diagnosis and treatment (A.1, A.4)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "A major noncommunicable disease involving metabolic defects and environmental hazards, including diagnosis and treatment (A.1, A.4)."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "Disease prevention and control at the population level, including sanitation and public health infrastructure, are central themes (A.4)."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Disease prevention and control at the population level, including sanitation and public health infrastructure, are central themes (A.4)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Pharmacological agents used in disease treatment are relevant to the control and treatment of disease (A.4)."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Pharmacological agents used in disease treatment are relevant to the control and treatment of disease (A.4)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
-      "rationale": "Animal diseases, their diagnosis, treatment, and prevention are directly relevant to diseases of non-human animals (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Animal diseases, their diagnosis, treatment, and prevention are directly relevant to diseases of non-human animals (C)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

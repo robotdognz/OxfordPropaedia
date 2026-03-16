@@ -4,127 +4,212 @@
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Directly covers nuclear structure, binding energy, radioactivity, quantum chromodynamics, and nuclear reactions, central to A, C, D, E, and F of this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers nuclear structure, binding energy, radioactivity, quantum chromodynamics, and nuclear reactions, central to A, C, D, E, and F of this section."
     },
     {
       "vsiTitle": "Particle physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Explores quarks, neutrinos, antimatter, the Higgs boson, and the Standard Model, directly relevant to H (elementary particles) and H.2 (fundamental forces)."
+      "relevantPathsAI": [
+        "H.2"
+      ],
+      "rationaleAI": "Explores quarks, neutrinos, antimatter, the Higgs boson, and the Standard Model, directly relevant to H (elementary particles) and H.2 (fundamental forces)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Traces the physics of ionizing radiation, nuclear fission, mass spectrometry, and radioactive decay, directly relevant to C (radioactive nuclei), B.5.a (mass spectrometry), and I (radiation through matter)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Traces the physics of ionizing radiation, nuclear fission, mass spectrometry, and radioactive decay, directly relevant to C (radioactive nuclei), B.5.a (mass spectrometry), and I (radiation through matter)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Examines fission chain reactions, controlled fission reactors, and fusion prospects including tritium and thermal processes, relevant to F (fission) and G.4-5 (fusion reactors)."
+      "relevantPathsAI": [
+        "G.4"
+      ],
+      "rationaleAI": "Examines fission chain reactions, controlled fission reactors, and fusion prospects including tritium and thermal processes, relevant to F (fission) and G.4-5 (fusion reactors)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Addresses the physics and politics of nuclear bombs and the hydrogen bomb, directly relevant to F.2.a (nuclear explosions) and G.3.b (thermonuclear explosions)."
+      "relevantPathsAI": [
+        "F.2",
+        "G.3"
+      ],
+      "rationaleAI": "Addresses the physics and politics of nuclear bombs and the hydrogen bomb, directly relevant to F.2.a (nuclear explosions) and G.3.b (thermonuclear explosions)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "A core text on isotope classification, carbon dating, uranium, thorium, and nuclear power applications, directly relevant to B (isotopes) and B.5-6 (separation and applications)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "A core text on isotope classification, carbon dating, uranium, thorium, and nuclear power applications, directly relevant to B (isotopes) and B.5-6 (separation and applications)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Provides the quantum-mechanical foundation for understanding field theory, superposition, and the uncertainty principle, relevant to H.1.c (quantum field theory advances) and H.4 (conservation and symmetry)."
+      "relevantPathsAI": [
+        "H.1.c",
+        "H.4"
+      ],
+      "rationaleAI": "Provides the quantum-mechanical foundation for understanding field theory, superposition, and the uncertainty principle, relevant to H.1.c (quantum field theory advances) and H.4 (conservation and symmetry)."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Explores the nature of mass, atoms, and the Big Bang origin of matter, relevant to A.1.a (mass), A.8 (formation of nuclei), and H.1 (subatomic particles)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.8",
+        "H.1"
+      ],
+      "rationaleAI": "Explores the nature of mass, atoms, and the Big Bang origin of matter, relevant to A.1.a (mass), A.8 (formation of nuclei), and H.1 (subatomic particles)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Traces isotopes, transuranic elements, heavy water, and the Big Bang origin of elements, relevant to A.8 (formation of nuclei) and B.2 (isotopic composition)."
+      "relevantPathsAI": [
+        "A.8",
+        "B.2"
+      ],
+      "rationaleAI": "Traces isotopes, transuranic elements, heavy water, and the Big Bang origin of elements, relevant to A.8 (formation of nuclei) and B.2 (isotopic composition)."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
-      "rationale": "Investigates the quantum vacuum, the Higgs field, and antimatter, relevant to H.7 (particles from contemporary theory) and H.2 (fundamental forces)."
+      "relevantPathsAI": [
+        "H.7",
+        "H.2"
+      ],
+      "rationaleAI": "Investigates the quantum vacuum, the Higgs field, and antimatter, relevant to H.7 (particles from contemporary theory) and H.2 (fundamental forces)."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Mathematical group theory and symmetry operations underpin the classification schemes in H.3.f (SU(3) classification) and H.4 (conservation and symmetry laws)."
+      "relevantPathsAI": [
+        "H.3",
+        "H.4"
+      ],
+      "rationaleAI": "Mathematical group theory and symmetry operations underpin the classification schemes in H.3.f (SU(3) classification) and H.4 (conservation and symmetry laws)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Essential for understanding primordial nucleosynthesis and the Big Bang origin of atomic nuclei, relevant to A.8 (formation and evolution of nuclei in the universe)."
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Essential for understanding primordial nucleosynthesis and the Big Bang origin of atomic nuclei, relevant to A.8 (formation and evolution of nuclei in the universe)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Examines nuclear power generation and hydrogen energy, relevant to F.2.b (controlled fission) and G.5 (controlled fusion prospects)."
+      "relevantPathsAI": [
+        "F.2",
+        "G.5"
+      ],
+      "rationaleAI": "Examines nuclear power generation and hydrogen energy, relevant to F.2.b (controlled fission) and G.5 (controlled fusion prospects)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Stellar fusion, binding energy, and the evolution of neutron stars illuminate G.3.a (thermonuclear reactions in stars) and A.4 (binding energies)."
+      "relevantPathsAI": [
+        "G.3",
+        "A.4"
+      ],
+      "rationaleAI": "Stellar fusion, binding energy, and the evolution of neutron stars illuminate G.3.a (thermonuclear reactions in stars) and A.4 (binding energies)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "The Sun as a thermonuclear reactor provides a real-world window into G.3.a (thermonuclear reactions in the Sun)."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "The Sun as a thermonuclear reactor provides a real-world window into G.3.a (thermonuclear reactions in the Sun)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Atomic number, electron configuration, and quantum mechanics of atomic structure connect to A.1.b (atomic number) and the relationship between nuclear and atomic properties."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Atomic number, electron configuration, and quantum mechanics of atomic structure connect to A.1.b (atomic number) and the relationship between nuclear and atomic properties."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Spin, magnetic properties, and quantum aspects of magnetism are central to A.1.d (spin) and A.1.e (magnetic moment and NMR phenomena)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Spin, magnetic properties, and quantum aspects of magnetism are central to A.1.d (spin) and A.1.e (magnetic moment and NMR phenomena)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Addresses nuclear magnetic resonance and quantum mechanics of molecular structure, directly relevant to A.1.e (NMR phenomena)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses nuclear magnetic resonance and quantum mechanics of molecular structure, directly relevant to A.1.e (NMR phenomena)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Einstein's mass-energy equivalence and spacetime symmetry are foundational to E.2 (energy relationships of nuclear reactions) and H.4.b (space and time inversion)."
+      "relevantPathsAI": [
+        "E.2",
+        "H.4"
+      ],
+      "rationaleAI": "Einstein's mass-energy equivalence and spacetime symmetry are foundational to E.2 (energy relationships of nuclear reactions) and H.4.b (space and time inversion)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Wave-particle duality and the quantum nature of photons illuminate I.1.a (passage of electromagnetic waves and their interaction with matter)."
+      "relevantPathsAI": [
+        "I.1"
+      ],
+      "rationaleAI": "Wave-particle duality and the quantum nature of photons illuminate I.1.a (passage of electromagnetic waves and their interaction with matter)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Electromagnetic radiation, diffraction, and interference phenomena underpin I.1.a (passage of electromagnetic waves) and I.1.b (passage of radiations through matter)."
+      "relevantPathsAI": [
+        "I.1"
+      ],
+      "rationaleAI": "Electromagnetic radiation, diffraction, and interference phenomena underpin I.1.a (passage of electromagnetic waves) and I.1.b (passage of radiations through matter)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
-      "rationale": "Stellar nucleosynthesis, the Pauli exclusion principle, and the electromagnetic spectrum connect to G.3.a (thermonuclear reactions in stars) and A.8 (formation of nuclei)."
+      "relevantPathsAI": [
+        "G.3",
+        "A.8"
+      ],
+      "rationaleAI": "Stellar nucleosynthesis, the Pauli exclusion principle, and the electromagnetic spectrum connect to G.3.a (thermonuclear reactions in stars) and A.8 (formation of nuclei)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Rutherford's discovery of the nucleus and the development of atomic theory provide essential historical context for A (nuclear structure) and H.1.a (discovery of particles)."
+      "relevantPathsAI": [
+        "H.1"
+      ],
+      "rationaleAI": "Rutherford's discovery of the nucleus and the development of atomic theory provide essential historical context for A (nuclear structure) and H.1.a (discovery of particles)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Gravity as a fundamental interaction and its quantum aspects are relevant to H.2 (fundamental forces associated with particle interactions)."
+      "relevantPathsAI": [
+        "H.2"
+      ],
+      "rationaleAI": "Gravity as a fundamental interaction and its quantum aspects are relevant to H.2 (fundamental forces associated with particle interactions)."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Provides broad coverage of fundamental forces, quantum mechanics, and the nature of matter, relevant to H.2 (fundamental forces) and E (nuclear reactions)."
+      "relevantPathsAI": [
+        "H.2"
+      ],
+      "rationaleAI": "Provides broad coverage of fundamental forces, quantum mechanics, and the nature of matter, relevant to H.2 (fundamental forces) and E (nuclear reactions)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

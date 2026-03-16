@@ -4,97 +4,179 @@
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Core text for this section: covers the expanding universe and Hubble's law (A.1.b), cosmic microwave background (A.1.e), dark matter and the missing mass problem (A.1.f), Big Bang vs. steady-state models (E.1), and cosmological models (A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "E.1",
+        "A.2"
+      ],
+      "rationaleAI": "Core text for this section: covers the expanding universe and Hubble's law (A.1.b), cosmic microwave background (A.1.e), dark matter and the missing mass problem (A.1.f), Big Bang vs. steady-state models (E.1), and cosmological models (A.2)."
     },
     {
       "vsiTitle": "Galaxies",
       "vsiAuthor": "John Gribbin",
-      "rationale": "Covers the large-scale structure and clustering of galaxies (A.1.d), the Milky Way and Andromeda (A.3.a-b), background radiation (A.1.e), and dark energy and the cosmological constant (A.1.b, A.1.f)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Covers the large-scale structure and clustering of galaxies (A.1.d), the Milky Way and Andromeda (A.3.a-b), background radiation (A.1.e), and dark energy and the cosmological constant (A.1.b, A.1.f)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Directly covers special relativity (D.1) and general relativity (D.2), including space-time (A.1.g), black holes, gravitational waves, and the astronomical implications of relativity theory."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "A.1"
+      ],
+      "rationaleAI": "Directly covers special relativity (D.1) and general relativity (D.2), including space-time (A.1.g), black holes, gravitational waves, and the astronomical implications of relativity theory."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Covers gravitational theory from Newton to modern field theories (B.1-B.3), gravitational waves, dark energy (A.1.f), and the relationship between gravity and general relativity (B.3.b, D.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "A.1",
+        "D.2"
+      ],
+      "rationaleAI": "Covers gravitational theory from Newton to modern field theories (B.1-B.3), gravitational waves, dark energy (A.1.f), and the relationship between gravity and general relativity (B.3.b, D.2)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
-      "rationale": "Covers the physical processes governing cosmic microwave background (A.1.e), electromagnetic spectrum observations, black holes (A.3.c), and the theoretical framework for stellar and galactic evolution (E.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.c",
+        "E.2"
+      ],
+      "rationaleAI": "Covers the physical processes governing cosmic microwave background (A.1.e), electromagnetic spectrum observations, black holes (A.3.c), and the theoretical framework for stellar and galactic evolution (E.2)."
     },
     {
       "vsiTitle": "Black holes",
       "vsiAuthor": "Katherine Blundell",
-      "rationale": "Directly relevant to quasars and supermassive black holes at galactic centres (A.3.c), gravitational phenomena (B.3), and entropy and thermodynamics in extreme gravitational environments."
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.3"
+      ],
+      "rationaleAI": "Directly relevant to quasars and supermassive black holes at galactic centres (A.3.c), gravitational phenomena (B.3), and entropy and thermodynamics in extreme gravitational environments."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Covers stellar evolution and the formation of stars (E.2.b), nuclear fusion processes relevant to primordial and stellar nucleosynthesis (E.1.b), and neutron stars and white dwarfs as components of the universe (A.3.e)."
+      "relevantPathsAI": [
+        "E.2",
+        "E.1",
+        "A.3"
+      ],
+      "rationaleAI": "Covers stellar evolution and the formation of stars (E.2.b), nuclear fusion processes relevant to primordial and stellar nucleosynthesis (E.1.b), and neutron stars and white dwarfs as components of the universe (A.3.e)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Covers the historical development of cosmological understanding from Aristotle and Ptolemy through Newton (B.1), including early concepts of the cosmos and the structure of the universe."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the historical development of cosmological understanding from Aristotle and Ptolemy through Newton (B.1), including early concepts of the cosmos and the structure of the universe."
     },
     {
       "vsiTitle": "Galileo",
       "vsiAuthor": "Stillman Drake",
-      "rationale": "Directly relevant to the early development of gravitational concepts (B.1.a), Galileo's contributions to our understanding of motion and gravity, and the scientific revolution that shaped modern cosmology."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Directly relevant to the early development of gravitational concepts (B.1.a), Galileo's contributions to our understanding of motion and gravity, and the scientific revolution that shaped modern cosmology."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
-      "rationale": "Covers the Big Bang (E.1), the nature of vacuum and space (A.1.g), gravitational fields (B), and the physics of the early universe's emergence from nothing."
+      "relevantPathsAI": [
+        "A.1",
+        "B",
+        "E.1"
+      ],
+      "rationaleAI": "Covers the Big Bang (E.1), the nature of vacuum and space (A.1.g), gravitational fields (B), and the physics of the early universe's emergence from nothing."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Directly relevant to primordial nucleosynthesis (E.1.b), the Big Bang, and the formation of chemical elements in the early universe (A.1.a)."
+      "relevantPathsAI": [
+        "E.1",
+        "A.1"
+      ],
+      "rationaleAI": "Directly relevant to primordial nucleosynthesis (E.1.b), the Big Bang, and the formation of chemical elements in the early universe (A.1.a)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers the Big Bang origin of elements (E.1.b) and the chemical composition of the universe (A.1.a), including isotopes and atomic structure relevant to nucleosynthesis."
+      "relevantPathsAI": [
+        "E.1",
+        "A.1"
+      ],
+      "rationaleAI": "Covers the Big Bang origin of elements (E.1.b) and the chemical composition of the universe (A.1.a), including isotopes and atomic structure relevant to nucleosynthesis."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers the Big Bang, dark energy, mass, and the fundamental nature of matter as a component of the universe (A.3, A.1.f)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.1"
+      ],
+      "rationaleAI": "Covers the Big Bang, dark energy, mass, and the fundamental nature of matter as a component of the universe (A.3, A.1.f)."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Relevant to planetary systems as known components of the universe (A.3.f), including both solar and extrasolar systems."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Relevant to planetary systems as known components of the universe (A.3.f), including both solar and extrasolar systems."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Directly relevant to extrasolar planetary systems as components of the universe (A.3.f) and the origin of the solar system (E.2.c)."
+      "relevantPathsAI": [
+        "A.3",
+        "E.2.c"
+      ],
+      "rationaleAI": "Directly relevant to extrasolar planetary systems as components of the universe (A.3.f) and the origin of the solar system (E.2.c)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Relevant as the nearest star and a key component of the universe (A.3.e-f), providing observational data for understanding stellar structure and evolution (E.2.b)."
+      "relevantPathsAI": [
+        "A.3",
+        "E.2"
+      ],
+      "rationaleAI": "Relevant as the nearest star and a key component of the universe (A.3.e-f), providing observational data for understanding stellar structure and evolution (E.2.b)."
     },
     {
       "vsiTitle": "Time",
       "vsiAuthor": "Jenann Ismael",
-      "rationale": "Relevant to the age of the universe (A.1.c), the space-time continuum (A.1.g, D), and the time scale of significant events in cosmic history (E.3)."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1",
+        "E.3"
+      ],
+      "rationaleAI": "Relevant to the age of the universe (A.1.c), the space-time continuum (A.1.g, D), and the time scale of significant events in cosmic history (E.3)."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Covers contributions of Copernicus, Kepler, Galileo, and Newton to gravitational theory (B.1.a-b) and the scientific revolution that established modern cosmological understanding."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers contributions of Copernicus, Kepler, Galileo, and Newton to gravitational theory (B.1.a-b) and the scientific revolution that established modern cosmological understanding."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers gravitational waves (B.3, D.2) and electromagnetic radiation relevant to cosmic microwave background observations (A.1.e) and red shift measurements (A.1.b)."
+      "relevantPathsAI": [
+        "B.3",
+        "D.2",
+        "A.1"
+      ],
+      "rationaleAI": "Covers gravitational waves (B.3, D.2) and electromagnetic radiation relevant to cosmic microwave background observations (A.1.e) and red shift measurements (A.1.b)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

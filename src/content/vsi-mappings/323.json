@@ -4,47 +4,91 @@
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Covers cell membrane structure (A.1), compartmentalization (A.2), and transport mechanisms including osmosis (A.3) and active transport (A.5)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.5"
+      ],
+      "rationaleAI": "Covers cell membrane structure (A.1), compartmentalization (A.2), and transport mechanisms including osmosis (A.3) and active transport (A.5)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Directly addresses the nerve impulse (C), neuron structure (C.1), synaptic transmission (C.4), ion channels, and bioelectricity (B)."
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "C.1",
+        "C.4"
+      ],
+      "rationaleAI": "Directly addresses the nerve impulse (C), neuron structure (C.1), synaptic transmission (C.4), ion channels, and bioelectricity (B)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers the molecular basis of membrane structure (A.1), molecular recognition in transport (A.4-A.5), and chemistry underlying bioelectricity (B)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "A.5",
+        "B"
+      ],
+      "rationaleAI": "Covers the molecular basis of membrane structure (A.1), molecular recognition in transport (A.4-A.5), and chemistry underlying bioelectricity (B)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Addresses the biochemical basis of membrane transport (A.4-A.5), chemical reactions in nerve impulse propagation (C.3), and muscle contraction (D)."
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "C.3",
+        "D"
+      ],
+      "rationaleAI": "Addresses the biochemical basis of membrane transport (A.4-A.5), chemical reactions in nerve impulse propagation (C.3), and muscle contraction (D)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Covers muscle contraction including striated, cardiac, and smooth muscle (D.2-D.4), nerve impulse transmission (C), and physiological mechanisms."
+      "relevantPathsAI": [
+        "C",
+        "D.2",
+        "D.4"
+      ],
+      "rationaleAI": "Covers muscle contraction including striated, cardiac, and smooth muscle (D.2-D.4), nerve impulse transmission (C), and physiological mechanisms."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers neural signal processing, synapse function (C.4), and brain imaging of nerve impulse transmission (C)."
+      "relevantPathsAI": [
+        "C",
+        "C.4"
+      ],
+      "rationaleAI": "Covers neural signal processing, synapse function (C.4), and brain imaging of nerve impulse transmission (C)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Illustrates nerve impulse transmission (C) through photoreceptors, optic nerve signaling, and retinal processing of stimuli."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Illustrates nerve impulse transmission (C) through photoreceptors, optic nerve signaling, and retinal processing of stimuli."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Covers contractile and motile activity across animal groups (D.1), including muscle systems and nervous systems in diverse phyla."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Covers contractile and motile activity across animal groups (D.1), including muscle systems and nervous systems in diverse phyla."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Relevant to bioluminescence (E) covering the range and variety of bioluminescent marine organisms (E.2)."
+      "relevantPathsAI": [
+        "E",
+        "E.2"
+      ],
+      "rationaleAI": "Relevant to bioluminescence (E) covering the range and variety of bioluminescent marine organisms (E.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

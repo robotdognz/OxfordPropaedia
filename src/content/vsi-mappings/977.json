@@ -4,87 +4,136 @@
     {
       "vsiTitle": "Australia",
       "vsiAuthor": "Kenneth Morgan",
-      "rationale": "Directly covers Australian history including the Great Depression, WWII, postwar prosperity, Aboriginal land rights, and the White Australia policy in B."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers Australian history including the Great Depression, WWII, postwar prosperity, Aboriginal land rights, and the White Australia policy in B."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "rationale": "Australia and New Zealand's Commonwealth relationships, the League of Nations mandate system, and Papua New Guinea's path to independence are examined in context of imperial decline."
+      "relevantPathsAI": [],
+      "rationaleAI": "Australia and New Zealand's Commonwealth relationships, the League of Nations mandate system, and Papua New Guinea's path to independence are examined in context of imperial decline."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "rationale": "Papua New Guinea's independence in 1975 and the dissolution of the Trust Territory of the Pacific Islands (A.3) exemplify decolonization in Oceania."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Papua New Guinea's independence in 1975 and the dissolution of the Trust Territory of the Pacific Islands (A.3) exemplify decolonization in Oceania."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "rationale": "The Pacific theater—Japanese expansion, Allied island-hopping, and the war's aftermath—reshaped the entire region (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Pacific theater—Japanese expansion, Allied island-hopping, and the war's aftermath—reshaped the entire region (A.2)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "rationale": "Australia and New Zealand joined ANZUS and SEATO, committed forces to Korea and Vietnam, and navigated superpower rivalry in the Pacific (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Australia and New Zealand joined ANZUS and SEATO, committed forces to Korea and Vietnam, and navigated superpower rivalry in the Pacific (B.3)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
-      "rationale": "The UN trusteeship system administered Pacific territories and guided the dissolution of the Trust Territory of the Pacific Islands (A.3)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The UN trusteeship system administered Pacific territories and guided the dissolution of the Trust Territory of the Pacific Islands (A.3)."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
-      "rationale": "Large-scale European and Asian immigration transformed Australia's demographics and national identity, central to B.4."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Large-scale European and Asian immigration transformed Australia's demographics and national identity, central to B.4."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Australian Labor governments and New Zealand's Labour Party built welfare programs (B.2, C.1) that became defining features of both nations' social contracts."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Australian Labor governments and New Zealand's Labour Party built welfare programs (B.2, C.1) that became defining features of both nations' social contracts."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "rationale": "Australian and New Zealand democratic traditions, including the 1975 constitutional crisis and Whitlam's dismissal, illustrate parliamentary democracy under stress (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Australian and New Zealand democratic traditions, including the 1975 constitutional crisis and Whitlam's dismissal, illustrate parliamentary democracy under stress (B.2)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
-      "rationale": "The Great Depression devastated Australia and New Zealand's commodity-dependent economies, shaping the political upheavals described in B.1 and C.1."
+      "relevantPathsAI": [
+        "B.1",
+        "C.1"
+      ],
+      "rationaleAI": "The Great Depression devastated Australia and New Zealand's commodity-dependent economies, shaping the political upheavals described in B.1 and C.1."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
-      "rationale": "The women's movement drove significant social change in Australia, from suffrage through second-wave feminism and workplace reform (B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "The women's movement drove significant social change in Australia, from suffrage through second-wave feminism and workplace reform (B.4)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Australia's vigorous opposition to French nuclear testing in the South Pacific became a defining foreign policy stance (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Australia's vigorous opposition to French nuclear testing in the South Pacific became a defining foreign policy stance (B.3)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
-      "rationale": "Aboriginal-rights struggles, including the landmark 1993 Native Title Act and the Stolen Generations reckoning, are central to B.2 and B.4."
+      "relevantPathsAI": [
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Aboriginal-rights struggles, including the landmark 1993 Native Title Act and the Stolen Generations reckoning, are central to B.2 and B.4."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Indigenous peoples of Oceania and the cultural impacts of UN trusteeship administrations (A.3) are illuminated through anthropological perspectives."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Indigenous peoples of Oceania and the cultural impacts of UN trusteeship administrations (A.3) are illuminated through anthropological perspectives."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
-      "rationale": "Australia's pivot toward Asian and Pacific economic partnerships and domestic deregulation reshaped its place in the global economy (B.2-3)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Australia's pivot toward Asian and Pacific economic partnerships and domestic deregulation reshaped its place in the global economy (B.2-3)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "rationale": "Indigenous autonomy movements and the evolution of Australian national identity—from British dominion to multicultural republic debates—are explored here."
+      "relevantPathsAI": [],
+      "rationaleAI": "Indigenous autonomy movements and the evolution of Australian national identity—from British dominion to multicultural republic debates—are explored here."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
-      "rationale": "Japan's imperial expansion and wartime conquests in the Pacific fundamentally altered Oceania's political landscape (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Japan's imperial expansion and wartime conquests in the Pacific fundamentally altered Oceania's political landscape (A.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

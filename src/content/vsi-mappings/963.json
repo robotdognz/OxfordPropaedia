@@ -4,232 +4,390 @@
     {
       "vsiTitle": "The French Revolution",
       "vsiAuthor": "William Doyle",
-      "rationale": "The French Revolution of 1789, the Third Estate revolt, the Jacobins, the Terror, and the First Republic are central topics (A.1.b)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "The French Revolution of 1789, the Third Estate revolt, the Jacobins, the Terror, and the First Republic are central topics (A.1.b)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
-      "rationale": "Napoleon's rise, the coalitions against France, the Continental System, and defeat at Waterloo are extensively covered (A.1.b-c)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Napoleon's rise, the coalitions against France, the Continental System, and defeat at Waterloo are extensively covered (A.1.b-c)."
     },
     {
       "vsiTitle": "Napoleon",
       "vsiAuthor": "David A. Bell",
-      "rationale": "Napoleon's career as first consul and emperor, the Code Napoleon, and his military campaigns are central to A.1.b.iii-iv and A.1.c."
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.c"
+      ],
+      "rationaleAI": "Napoleon's career as first consul and emperor, the Code Napoleon, and his military campaigns are central to A.1.b.iii-iv and A.1.c."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "The Industrial Revolution's development from British origins through Continental spread and the factory system is explicitly discussed in A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Industrial Revolution's development from British origins through Continental spread and the factory system is explicitly discussed in A.2."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
-      "rationale": "World War I, including the Serbian crisis, trench warfare, new military technology, and the armistice, is covered in detail (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "World War I, including the Serbian crisis, trench warfare, new military technology, and the armistice, is covered in detail (C)."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
-      "rationale": "The Paris Peace Conference, German reparations, reorganization of central Europe, and the League of Nations are discussed (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "The Paris Peace Conference, German reparations, reorganization of central Europe, and the League of Nations are discussed (C.3)."
     },
     {
       "vsiTitle": "The Russian Revolution",
       "vsiAuthor": "S. A. Smith",
-      "rationale": "The 1917 Russian Revolution, abolition of the monarchy, and the Treaty of Brest-Litovsk are covered in the WWI section (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "The 1917 Russian Revolution, abolition of the monarchy, and the Treaty of Brest-Litovsk are covered in the WWI section (C.2)."
     },
     {
       "vsiTitle": "Russian History",
       "vsiAuthor": "Geoffrey Hosking",
-      "rationale": "Russia from Alexander I through Nicholas II, including serfdom's abolition, revolutionary movements, and the Russo-Japanese War (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Russia from Alexander I through Nicholas II, including serfdom's abolition, revolutionary movements, and the Russo-Japanese War (B.2)."
     },
     {
       "vsiTitle": "The Habsburg Empire",
       "vsiAuthor": "Martyn Rady",
-      "rationale": "The Austrian and Austro-Hungarian Empire, including the Ausgleich, Dual Monarchy, and its dissolution in 1918, is covered in B.1 and B.2."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "The Austrian and Austro-Hungarian Empire, including the Ausgleich, Dual Monarchy, and its dissolution in 1918, is covered in B.1 and B.2."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "rationale": "Cultural nationalism, the Risorgimento, German unification under Bismarck, and national movements in the Habsburg and Ottoman empires are pervasive themes."
+      "relevantPathsAI": [],
+      "rationaleAI": "Cultural nationalism, the Risorgimento, German unification under Bismarck, and national movements in the Habsburg and Ottoman empires are pervasive themes."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
-      "rationale": "The social consequences of industrialization, the division between capitalist and worker, and the rise of socialist movements connect to Marx's thought (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The social consequences of industrialization, the division between capitalist and worker, and the rise of socialist movements connect to Marx's thought (A.2)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
-      "rationale": "Socialist thought, the Second Republic in France, Fabian socialism, and the growth of the Labour movement in Britain are discussed (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Socialist thought, the Second Republic in France, Fabian socialism, and the growth of the Labour movement in Britain are discussed (A.2, B.1)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
-      "rationale": "The Paris Commune, Social Democrats in Russia and Germany, and revolutionary movements culminating in the 1917 Revolution are relevant (B.1, C.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "The Paris Commune, Social Democrats in Russia and Germany, and revolutionary movements culminating in the 1917 Revolution are relevant (B.1, C.2)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "rationale": "Parliamentary reform, universal suffrage movements, Reform Bills in Britain, and constitutional developments across Europe are major themes (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Parliamentary reform, universal suffrage movements, Reform Bills in Britain, and constitutional developments across Europe are major themes (B.1)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
-      "rationale": "The French Revolution, the revolutions of 1830 and 1848, and the Russian Revolution of 1917 are all covered (A.1, A.2, C.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "The French Revolution, the revolutions of 1830 and 1848, and the Russian Revolution of 1917 are all covered (A.1, A.2, C.2)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "rationale": "The resurgence of European imperialism from c. 1875-1914, the scramble for Africa, and the partitioning of Asia are discussed (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The resurgence of European imperialism from c. 1875-1914, the scramble for Africa, and the partitioning of Asia are discussed (B.3)."
     },
     {
       "vsiTitle": "Nineteenth-Century Britain",
       "vsiAuthor": "Christopher Harvie, H. C. G. Matthew",
-      "rationale": "Mid-Victorian politics, Gladstone's liberalism, Disraeli's imperialism, the Irish Question, and social reform movements are covered (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Mid-Victorian politics, Gladstone's liberalism, Disraeli's imperialism, the Irish Question, and social reform movements are covered (B.1)."
     },
     {
       "vsiTitle": "Modern France",
       "vsiAuthor": "Vanessa R. Schwartz",
-      "rationale": "France from the Revolution through the Third Republic, including Napoleon III, the Commune, and the Dreyfus affair, is covered (A.1, B.1-B.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "France from the Revolution through the Third Republic, including Napoleon III, the Commune, and the Dreyfus affair, is covered (A.1, B.1-B.2)."
     },
     {
       "vsiTitle": "Modern Italy",
       "vsiAuthor": "Anna Cento Bull",
-      "rationale": "Italian unification under Cavour and Garibaldi and Italian participation in WWI are covered (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Italian unification under Cavour and Garibaldi and Italian participation in WWI are covered (B.1, B.2)."
     },
     {
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
-      "rationale": "The Romantic movement as an intellectual and artistic development of the period is explicitly discussed (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The Romantic movement as an intellectual and artistic development of the period is explicitly discussed (A.2)."
     },
     {
       "vsiTitle": "Liberalism",
       "vsiAuthor": "Michael Freeden",
-      "rationale": "Gladstone's liberalism, free trade, and liberal constitutionalism across Europe are recurring themes (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Gladstone's liberalism, free trade, and liberal constitutionalism across Europe are recurring themes (B.1, B.2)."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
-      "rationale": "The Napoleonic Wars and the development of modern military strategy are the direct context for Clausewitz's theories of warfare (A.1.c)."
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
+      "rationaleAI": "The Napoleonic Wars and the development of modern military strategy are the direct context for Clausewitz's theories of warfare (A.1.c)."
     },
     {
       "vsiTitle": "Hegel",
       "vsiAuthor": "Peter Singer",
-      "rationale": "German Idealism including Fichte, Hegel, and Schopenhauer is explicitly discussed as a philosophical development of this period (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "German Idealism including Fichte, Hegel, and Schopenhauer is explicitly discussed as a philosophical development of this period (A.2)."
     },
     {
       "vsiTitle": "Schopenhauer",
       "vsiAuthor": "Christopher Janaway",
-      "rationale": "Schopenhauer is explicitly named in the outline alongside Kant, Fichte, and Hegel as a key figure in the philosophical developments of this period (A.2.d.iii: 'the role of Immanuel Kant and his disciples (Fichte, Hegel, and Schopenhauer), German Idealism')."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Schopenhauer is explicitly named in the outline alongside Kant, Fichte, and Hegel as a key figure in the philosophical developments of this period (A.2.d.iii: 'the role of Immanuel Kant and his disciples (Fichte, Hegel, and Schopenhauer), German Idealism')."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
-      "rationale": "Kant and his disciples are explicitly identified as central to the philosophical developments of this period (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Kant and his disciples are explicitly identified as central to the philosophical developments of this period (A.2)."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
-      "rationale": "The principle of evolution is explicitly mentioned as a new scientific development affecting society during this period (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The principle of evolution is explicitly mentioned as a new scientific development affecting society during this period (B.3)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Einsteinian relativity is explicitly named in the outline as a major scientific development of this period (B.3.d.i: 'Einsteinian relativity, the social effects of medical advances, development of the behavioral sciences, new views of the universe')."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Einsteinian relativity is explicitly named in the outline as a major scientific development of this period (B.3.d.i: 'Einsteinian relativity, the social effects of medical advances, development of the behavioral sciences, new views of the universe')."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Bismarck's alliance system, the Triple Entente, and the prelude to WWI are major diplomatic themes (B.2, C.1)."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Bismarck's alliance system, the Triple Entente, and the prelude to WWI are major diplomatic themes (B.2, C.1)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Industrialization, the division between capitalist and worker, and economic transformations of the 19th century are central (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Industrialization, the division between capitalist and worker, and economic transformations of the 19th century are central (A.2, B.1)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Industrialization from 1870-1914, the changing balance of economic power, and the revolution in transportation are covered (A.2, B.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "Industrialization from 1870-1914, the changing balance of economic power, and the revolution in transportation are covered (A.2, B.3)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "rationale": "Total war, mobilization of populations, new military technology including air power, tanks, and poison gas in WWI are discussed (C.1-C.2)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Total war, mobilization of populations, new military technology including air power, tanks, and poison gas in WWI are discussed (C.1-C.2)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
-      "rationale": "The outline explicitly discusses 'the leadership, industrial strength, strategic plans and goals, and tactical and logistical procedures of the belligerents' in WWI (C.2.b)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "The outline explicitly discusses 'the leadership, industrial strength, strategic plans and goals, and tactical and logistical procedures of the belligerents' in WWI (C.2.b)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
-      "rationale": "Air power is explicitly mentioned as a new military technology introduced during World War I (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Air power is explicitly mentioned as a new military technology introduced during World War I (C.1)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Bismarck's social legislation, Lloyd George's National Insurance Act, and factory acts represent early welfare state developments (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Bismarck's social legislation, Lloyd George's National Insurance Act, and factory acts represent early welfare state developments (B.1, B.2)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
-      "rationale": "The decline of aristocratic power, the conflict between nobility and bourgeoisie, and the revolutions of 1848 transformed European hierarchies (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "The decline of aristocratic power, the conflict between nobility and bourgeoisie, and the revolutions of 1848 transformed European hierarchies (A.1, A.2)."
     },
     {
       "vsiTitle": "Northern Ireland",
       "vsiAuthor": "Marc Mulholland",
-      "rationale": "The Irish Question, Fenianism, Parnell, Home Rule, and the Easter Rising of 1916 are explicitly discussed (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "The Irish Question, Fenianism, Parnell, Home Rule, and the Easter Rising of 1916 are explicitly discussed (B.1)."
     },
     {
       "vsiTitle": "Modern Ireland",
       "vsiAuthor": "Senia Paseta",
-      "rationale": "The Great Famine, O'Connell, the Young Ireland movement, Home Rule, and the Easter Rising are covered (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "The Great Famine, O'Connell, the Young Ireland movement, Home Rule, and the Easter Rising are covered (A.2, B.1)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
-      "rationale": "Tocqueville's analysis of democracy and revolution emerged from the post-revolutionary French context covered in A.1-A.2."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Tocqueville's analysis of democracy and revolution emerged from the post-revolutionary French context covered in A.1-A.2."
     },
     {
       "vsiTitle": "Engels",
       "vsiAuthor": "Terrell Carver",
-      "rationale": "The social consequences of the Industrial Revolution and the rise of socialism connect to Engels's contributions (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "The social consequences of the Industrial Revolution and the rise of socialism connect to Engels's contributions (A.2)."
     },
     {
       "vsiTitle": "The Victorians",
       "vsiAuthor": "Martin Hewitt",
-      "rationale": "Victorian social attitudes, liberalism, the High Church movement, and mid-Victorian politics and economics are discussed (B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Victorian social attitudes, liberalism, the High Church movement, and mid-Victorian politics and economics are discussed (B.1)."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "New military technology including air power, tanks, and poison gas, and the revolution in transportation are discussed (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "New military technology including air power, tanks, and poison gas, and the revolution in transportation are discussed (C.1)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "rationale": "British imperial expansion, the South African War, and British gains in the WWI peace settlements are covered (B.3, C.3)."
+      "relevantPathsAI": [
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "British imperial expansion, the South African War, and British gains in the WWI peace settlements are covered (B.3, C.3)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
-      "rationale": "Scottish developments including Edinburgh's intellectual prominence and the revival of Scottish culture are referenced (A.2, B.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Scottish developments including Edinburgh's intellectual prominence and the revival of Scottish culture are referenced (A.2, B.1)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "rationale": "The European scramble for Africa and partitioning of Asia from c. 1875-1914 set the stage for later decolonization (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The European scramble for Africa and partitioning of Asia from c. 1875-1914 set the stage for later decolonization (B.3)."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
-      "rationale": "Militant nationalism, dissolution of empires in WWI, and social dislocations of industrialization provided conditions that gave rise to fascism (B.2, C)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Militant nationalism, dissolution of empires in WWI, and social dislocations of industrialization provided conditions that gave rise to fascism (B.2, C)."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
-      "rationale": "Jewish emancipation and the development of national consciousness among European peoples provide context for the emergence of Zionism (B.1, B.2)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Jewish emancipation and the development of national consciousness among European peoples provide context for the emergence of Zionism (B.1, B.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

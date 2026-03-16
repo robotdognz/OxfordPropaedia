@@ -4,112 +4,195 @@
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Core overview covering inorganic chemistry, organic chemistry, spectroscopy, and quantum mechanics, relevant across the entire section (A through G)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Core overview covering inorganic chemistry, organic chemistry, spectroscopy, and quantum mechanics, relevant across the entire section (A through G)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Activation energy, NMR, computational chemistry, quantum mechanics, and thermodynamics are directly relevant to A.2, B.3.c, B.5, C, and D.2."
+      "relevantPathsAI": [
+        "A.2",
+        "B.3.c",
+        "B.5",
+        "D.2"
+      ],
+      "rationaleAI": "Activation energy, NMR, computational chemistry, quantum mechanics, and thermodynamics are directly relevant to A.2, B.3.c, B.5, C, and D.2."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Chemical bonds, covalent bonds, hydrogen bonds, molecular recognition, and molecular structure are directly relevant to A.3, A.5, and D.3."
+      "relevantPathsAI": [
+        "A.3",
+        "A.5",
+        "D.3"
+      ],
+      "rationaleAI": "Chemical bonds, covalent bonds, hydrogen bonds, molecular recognition, and molecular structure are directly relevant to A.3, A.5, and D.3."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Directly addresses organic compound synthesis, analysis, and carbon chemistry central to G.1 and G.2."
+      "relevantPathsAI": [
+        "G.1",
+        "G.2"
+      ],
+      "rationaleAI": "Directly addresses organic compound synthesis, analysis, and carbon chemistry central to G.1 and G.2."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "X-ray, electron, and neutron diffraction methods with symmetry analysis are directly relevant to B.4 and B.8."
+      "relevantPathsAI": [
+        "B.4",
+        "B.8"
+      ],
+      "rationaleAI": "X-ray, electron, and neutron diffraction methods with symmetry analysis are directly relevant to B.4 and B.8."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Atomic number, electron configuration, and quantum mechanics underlying elemental properties determine bonding behavior, relevant to D.1 and E.1."
+      "relevantPathsAI": [
+        "D.1",
+        "E.1"
+      ],
+      "rationaleAI": "Atomic number, electron configuration, and quantum mechanics underlying elemental properties determine bonding behavior, relevant to D.1 and E.1."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "The quantum mechanical framework -- Schrodinger equation, superposition -- underlies molecular orbital theory and chemical bonding, relevant to A.2 and D.2."
+      "relevantPathsAI": [
+        "A.2",
+        "D.2"
+      ],
+      "rationaleAI": "The quantum mechanical framework -- Schrodinger equation, superposition -- underlies molecular orbital theory and chemical bonding, relevant to A.2 and D.2."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Molecular structures of biological molecules including DNA, proteins, and chemical reactions connect to G.1.m-r and G.1.n."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Molecular structures of biological molecules including DNA, proteins, and chemical reactions connect to G.1.m-r and G.1.n."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "The historical development of chemical theory from alchemy through physical chemistry is directly relevant to A.1 and D.1.a."
+      "relevantPathsAI": [
+        "A.1",
+        "D.1"
+      ],
+      "rationaleAI": "The historical development of chemical theory from alchemy through physical chemistry is directly relevant to A.1 and D.1.a."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Atoms, elements, isotopes, and the periodic table connect to E.1 (classification by elemental composition) and F (inorganic compounds)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Atoms, elements, isotopes, and the periodic table connect to E.1 (classification by elemental composition) and F (inorganic compounds)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "DNA structure and the molecular biology of macromolecules are relevant to G.1.n (proteins), G.1.q (nucleotides), and G.1.r (nucleic acids)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "DNA structure and the molecular biology of macromolecules are relevant to G.1.n (proteins), G.1.q (nucleotides), and G.1.r (nucleic acids)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Chemical bonds, crystal lattices, and X-ray crystallography connect to A.5 (molecular structure and bulk matter properties) and D.3 (bonds in crystals)."
+      "relevantPathsAI": [
+        "A.5",
+        "D.3"
+      ],
+      "rationaleAI": "Chemical bonds, crystal lattices, and X-ray crystallography connect to A.5 (molecular structure and bulk matter properties) and D.3 (bonds in crystals)."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Entropy, free energy, and thermodynamic principles underlie calorimetry and molecular characterization, relevant to B.3.d and B.7."
+      "relevantPathsAI": [
+        "B.3",
+        "B.7"
+      ],
+      "rationaleAI": "Entropy, free energy, and thermodynamic principles underlie calorimetry and molecular characterization, relevant to B.3.d and B.7."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Radioisotopes, ionizing radiation, mass spectrometry, and synchrotron radiation are directly relevant to B.3.e (radiochemical methods) and B.3.b (mass spectrometry)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Radioisotopes, ionizing radiation, mass spectrometry, and synchrotron radiation are directly relevant to B.3.e (radiochemical methods) and B.3.b (mass spectrometry)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Diffraction, electromagnetic radiation, and interference phenomena underpin B.4 (diffraction methods) and C (molecular spectra)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Diffraction, electromagnetic radiation, and interference phenomena underpin B.4 (diffraction methods) and C (molecular spectra)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Crystal structure, X-ray crystallography, unit cells, and solid solutions are relevant to B.4, D.3 (bonds in crystals), and F.2 (inorganic structural classification)."
+      "relevantPathsAI": [
+        "B.4",
+        "D.3",
+        "F.2"
+      ],
+      "rationaleAI": "Crystal structure, X-ray crystallography, unit cells, and solid solutions are relevant to B.4, D.3 (bonds in crystals), and F.2 (inorganic structural classification)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Water as a molecule with hydrogen bonding and unique chemical properties connects to D.3 (hydrogen bonding) and A.3 (molecular bonds and shapes)."
+      "relevantPathsAI": [
+        "D.3",
+        "A.3"
+      ],
+      "rationaleAI": "Water as a molecule with hydrogen bonding and unique chemical properties connects to D.3 (hydrogen bonding) and A.3 (molecular bonds and shapes)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Protein structure and biochemical catalysis are relevant to G.1.n (amino acids, proteins, and peptides)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "Protein structure and biochemical catalysis are relevant to G.1.n (amino acids, proteins, and peptides)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Atomic structure, electrons, and radioactivity connect to D.1.c (quantum theory applied to atomic structure) and B.3.e (radiochemical methods)."
+      "relevantPathsAI": [
+        "D.1.c",
+        "B.3"
+      ],
+      "rationaleAI": "Atomic structure, electrons, and radioactivity connect to D.1.c (quantum theory applied to atomic structure) and B.3.e (radiochemical methods)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Polymers, liquids, and the relationship between molecular interactions and macroscopic properties are relevant to A.5 and G.1.u (organic polymers)."
+      "relevantPathsAI": [
+        "A.5",
+        "G.1"
+      ],
+      "rationaleAI": "Polymers, liquids, and the relationship between molecular interactions and macroscopic properties are relevant to A.5 and G.1.u (organic polymers)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Bonding in solids, phase transitions, and electronic structure are relevant to D.3 (bonds in crystals) and E.4 (classification by physical state)."
+      "relevantPathsAI": [
+        "D.3",
+        "E.4"
+      ],
+      "rationaleAI": "Bonding in solids, phase transitions, and electronic structure are relevant to D.3 (bonds in crystals) and E.4 (classification by physical state)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "DNA, proteins, and molecular biology connect to G.1.n (proteins) and G.1.r (nucleic acids: DNA and RNA)."
+      "relevantPathsAI": [
+        "G.1"
+      ],
+      "rationaleAI": "DNA, proteins, and molecular biology connect to G.1.n (proteins) and G.1.r (nucleic acids: DNA and RNA)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

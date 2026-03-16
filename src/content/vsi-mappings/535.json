@@ -4,77 +4,128 @@
     {
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
-      "rationale": "Directly covers Keynesian effective demand theory, unemployment theory, monetary policy, and countercyclical fiscal policy (A.1, C.3)."
+      "relevantPathsAI": [
+        "A.1",
+        "C.3"
+      ],
+      "rationaleAI": "Directly covers Keynesian effective demand theory, unemployment theory, monetary policy, and countercyclical fiscal policy (A.1, C.3)."
     },
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
-      "rationale": "Bridges micro and macro analysis, explaining how inflation, investment, and unemployment connect individual decisions to aggregate outcomes (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Bridges micro and macro analysis, explaining how inflation, investment, and unemployment connect individual decisions to aggregate outcomes (A)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
-      "rationale": "National income, GDP, and aggregate output are the building blocks of macroeconomic analysis introduced here (A.1, A.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "National income, GDP, and aggregate output are the building blocks of macroeconomic analysis introduced here (A.1, A.2)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
-      "rationale": "Central banking, monetary policy transmission, financial crises, and sovereign debt have profound macroeconomic effects (B.1, B.2, C.3)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "C.3"
+      ],
+      "rationaleAI": "Central banking, monetary policy transmission, financial crises, and sovereign debt have profound macroeconomic effects (B.1, B.2, C.3)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
-      "rationale": "International monetary institutions, balance of payments mechanics, and the Bretton Woods system shaped the postwar macroeconomic order (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "International monetary institutions, balance of payments mechanics, and the Bretton Woods system shaped the postwar macroeconomic order (B.2)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
-      "rationale": "The Depression represents the defining business cycle collapse (C.1), and the New Deal demonstrated countercyclical fiscal and monetary policy in action (C.3)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.3"
+      ],
+      "rationaleAI": "The Depression represents the defining business cycle collapse (C.1), and the New Deal demonstrated countercyclical fiscal and monetary policy in action (C.3)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
-      "rationale": "Interest rates, arbitrage, and financial instruments are relevant to foreign exchange mechanics and monetary analysis (B.1.a)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Interest rates, arbitrage, and financial instruments are relevant to foreign exchange mechanics and monetary analysis (B.1.a)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Business cycles, financial crises, and boom-bust dynamics are inherent features of capitalist macroeconomies (C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Business cycles, financial crises, and boom-bust dynamics are inherent features of capitalist macroeconomies (C)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
-      "rationale": "International economic integration, cross-border capital flows, and balance of payments challenges are macroeconomic phenomena intensified by globalization (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "International economic integration, cross-border capital flows, and balance of payments challenges are macroeconomic phenomena intensified by globalization (B)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
-      "rationale": "Smith's classical law of markets laid the intellectual foundation from which macroeconomic thought later diverged (A.1.a)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Smith's classical law of markets laid the intellectual foundation from which macroeconomic thought later diverged (A.1.a)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Historical business cycles, financial panics, and their macroeconomic consequences illustrate recurring patterns across centuries (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Historical business cycles, financial panics, and their macroeconomic consequences illustrate recurring patterns across centuries (C.1)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
-      "rationale": "Monetarist and supply-side approaches emerged as alternatives to Keynesian demand management, reshaping fiscal and monetary policy debates (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Monetarist and supply-side approaches emerged as alternatives to Keynesian demand management, reshaping fiscal and monetary policy debates (C.3)."
     },
     {
       "vsiTitle": "Development",
       "vsiAuthor": "Ian Goldin",
-      "rationale": "Developing countries face distinctive macroeconomic challenges—balance of payments deficits, exchange rate instability, capital flight—examined here (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Developing countries face distinctive macroeconomic challenges—balance of payments deficits, exchange rate instability, capital flight—examined here (B)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Taxation is a primary fiscal policy tool, and its design as a countercyclical instrument has significant macroeconomic effects (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Taxation is a primary fiscal policy tool, and its design as a countercyclical instrument has significant macroeconomic effects (C.3)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
-      "rationale": "Marx theorized that capitalist crises and business cycles are systemic rather than accidental, offering an alternative lens on macroeconomic instability (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Marx theorized that capitalist crises and business cycles are systemic rather than accidental, offering an alternative lens on macroeconomic instability (C.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

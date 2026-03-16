@@ -4,137 +4,240 @@
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Traces atomic structure from Rutherford's nucleus to quantum mechanics, directly relevant to A.1 through A.4 and the radioactive transformations in A.3.e."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "A.3"
+      ],
+      "rationaleAI": "Traces atomic structure from Rutherford's nucleus to quantum mechanics, directly relevant to A.1 through A.4 and the radioactive transformations in A.3.e."
     },
     {
       "vsiTitle": "Particle physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Antimatter, electrons, quarks, and neutrinos are central to E (antimatter concept and production) and A.3.c (discovery of the electron)."
+      "relevantPathsAI": [
+        "A.3.c"
+      ],
+      "rationaleAI": "Antimatter, electrons, quarks, and neutrinos are central to E (antimatter concept and production) and A.3.c (discovery of the electron)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "The Bohr model, Heisenberg's uncertainty principle, and the Schrodinger equation are foundational to A.4.b (Bohr-Sommerfeld model), A.4.c, and C.2 (wave-mechanical interpretations)."
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.c",
+        "C.2"
+      ],
+      "rationaleAI": "The Bohr model, Heisenberg's uncertainty principle, and the Schrodinger equation are foundational to A.4.b (Bohr-Sommerfeld model), A.4.c, and C.2 (wave-mechanical interpretations)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Atoms, atomic weight, isotopes, and the periodic table connect to A.1 (atomic nature of matter), B (atomic weights), and B.1 (isotopic composition)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Atoms, atomic weight, isotopes, and the periodic table connect to A.1 (atomic nature of matter), B (atomic weights), and B.1 (isotopic composition)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Electron behavior, quantum mechanics, nuclear magnetic resonance, and spectroscopy illuminate A.3.b (spectroscopy), C.1 (atomic spectra), and the quantum basis of atomic structure."
+      "relevantPathsAI": [
+        "A.3",
+        "C.1"
+      ],
+      "rationaleAI": "Electron behavior, quantum mechanics, nuclear magnetic resonance, and spectroscopy illuminate A.3.b (spectroscopy), C.1 (atomic spectra), and the quantum basis of atomic structure."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Rutherford's pioneering work on radioactive decay, mass spectrometry, and ionizing radiation is directly relevant to A.3.e (radioactive transformation) and A.3.g (mass spectrometry)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Rutherford's pioneering work on radioactive decay, mass spectrometry, and ionizing radiation is directly relevant to A.3.e (radioactive transformation) and A.3.g (mass spectrometry)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Atomic number and electron configuration organize the elements, connecting to A.1 (atomic structure), B (atomic weights), and C (electronic structure)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Atomic number and electron configuration organize the elements, connecting to A.1 (atomic structure), B (atomic weights), and C (electronic structure)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "The periodic table, spectroscopy, and quantum chemistry bridge A.3.a (developments in chemistry), B.2 (atomic weights in chemistry), and C.1 (atomic spectra)."
+      "relevantPathsAI": [
+        "A.3",
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "The periodic table, spectroscopy, and quantum chemistry bridge A.3.a (developments in chemistry), B.2 (atomic weights in chemistry), and C.1 (atomic spectra)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Isotopic variation explains B.1 (variations in atomic weight from isotopic composition) and underpins B.4 (methods for determining atomic weights)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "Isotopic variation explains B.1 (variations in atomic weight from isotopic composition) and underpins B.4 (methods for determining atomic weights)."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Atomic structure, mass, and the quantum properties of matter provide the physical context for A.1 (atomic nature of matter) and F (fundamental physical constants)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Atomic structure, mass, and the quantum properties of matter provide the physical context for A.1 (atomic nature of matter) and F (fundamental physical constants)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Wave-particle duality and the speed of light connect to A.3.b (spectroscopy), C (atomic spectra), and F (physical constants), bridging optics and atomic theory."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Wave-particle duality and the speed of light connect to A.3.b (spectroscopy), C (atomic spectra), and F (physical constants), bridging optics and atomic theory."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Electromagnetic radiation and diffraction phenomena underpin A.3.b (spectroscopy), A.4.c (wave-mechanical theory), and D.5 (X-ray diffraction)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.4.c",
+        "D.5"
+      ],
+      "rationaleAI": "Electromagnetic radiation and diffraction phenomena underpin A.3.b (spectroscopy), A.4.c (wave-mechanical theory), and D.5 (X-ray diffraction)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "X-ray and electron diffraction revealed atomic arrangements in crystals, directly relevant to D.5 (diffraction of X rays by crystals) and D.2."
+      "relevantPathsAI": [
+        "D.5",
+        "D.2"
+      ],
+      "rationaleAI": "X-ray and electron diffraction revealed atomic arrangements in crystals, directly relevant to D.5 (diffraction of X rays by crystals) and D.2."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "X-ray crystallography, X-ray fluorescence, and chemical bonding link to D (X rays and atomic structure) and D.2.a (fluorescence yield)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "X-ray crystallography, X-ray fluorescence, and chemical bonding link to D (X rays and atomic structure) and D.2.a (fluorescence yield)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Einstein's explanation of Brownian motion confirmed atomic theory, directly relevant to A.3.f (Brownian movement of suspended particles) and F (fundamental physical constants)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Einstein's explanation of Brownian motion confirmed atomic theory, directly relevant to A.3.f (Brownian movement of suspended particles) and F (fundamental physical constants)."
     },
     {
       "vsiTitle": "Niels Bohr",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Bohr's quantum model of the atom revolutionized physics, making this essential for A.4.b (Bohr-Sommerfeld model) and C.2 (classical Bohr theory)."
+      "relevantPathsAI": [
+        "A.4",
+        "C.2"
+      ],
+      "rationaleAI": "Bohr's quantum model of the atom revolutionized physics, making this essential for A.4.b (Bohr-Sommerfeld model) and C.2 (classical Bohr theory)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Precision measurement and SI standardization are central to F.1 (measurement of physical constants) and F.2 (interrelationships among constants)."
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Precision measurement and SI standardization are central to F.1 (measurement of physical constants) and F.2 (interrelationships among constants)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Electron microscopy, scanning tunnelling microscopy, and atomic force microscopy image atomic structures, relevant to A.3.h (scattering and beam studies) and D.3 (X-ray detection)."
+      "relevantPathsAI": [
+        "A.3",
+        "D.3"
+      ],
+      "rationaleAI": "Electron microscopy, scanning tunnelling microscopy, and atomic force microscopy image atomic structures, relevant to A.3.h (scattering and beam studies) and D.3 (X-ray detection)."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Traces the historical development of atomic theory from early speculations (A.2) through the scientific evidence that confirmed atoms exist (A.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Traces the historical development of atomic theory from early speculations (A.2) through the scientific evidence that confirmed atoms exist (A.3)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "From Dalton's atomic hypothesis through Rutherford's nucleus and the periodic table, chemistry's history parallels the story of A.2 (early speculations), A.3.a, and A.4.a."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "From Dalton's atomic hypothesis through Rutherford's nucleus and the periodic table, chemistry's history parallels the story of A.2 (early speculations), A.3.a, and A.4.a."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "A broad introduction to matter and quantum mechanics, providing general context for A.1 (atomic nature of matter) and F (fundamental constants)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "A broad introduction to matter and quantum mechanics, providing general context for A.1 (atomic nature of matter) and F (fundamental constants)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Chemical bonds—covalent, ionic, hydrogen—determine how atoms interact, relevant to A.1 (electron arrangements determining atomic interactions)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Chemical bonds—covalent, ionic, hydrogen—determine how atoms interact, relevant to A.1 (electron arrangements determining atomic interactions)."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
-      "rationale": "The quantum vacuum and particle-antiparticle creation from empty space illuminate E (antimatter concept) and E.2 (production of antiparticles in high-energy collisions)."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "The quantum vacuum and particle-antiparticle creation from empty space illuminate E (antimatter concept) and E.2 (production of antiparticles in high-energy collisions)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
-      "rationale": "Philosophical questions about quantum theory and statistical mechanics deepen understanding of A.2 (philosophical speculations on atomic nature) and A.4.c (wave-mechanical theory)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4.c"
+      ],
+      "rationaleAI": "Philosophical questions about quantum theory and statistical mechanics deepen understanding of A.2 (philosophical speculations on atomic nature) and A.4.c (wave-mechanical theory)."
     },
     {
       "vsiTitle": "Philosophy of science",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Scientific inference and paradigm shifts in physics provide the epistemological backdrop for A.2 (early philosophical speculations on the atomic nature of matter)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Scientific inference and paradigm shifts in physics provide the epistemological backdrop for A.2 (early philosophical speculations on the atomic nature of matter)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
-      "rationale": "Boyle's early chemistry and Newton's corpuscular theory of matter laid groundwork for A.2 (early speculations) and A.3.a (developments in chemistry)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Boyle's early chemistry and Newton's corpuscular theory of matter laid groundwork for A.2 (early speculations) and A.3.a (developments in chemistry)."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
-      "rationale": "Faraday's discoveries in electromagnetism and the magneto-optical effect connect to C.1.d (effects of magnetic fields on atomic spectra) and A.3.b (spectroscopy)."
+      "relevantPathsAI": [
+        "C.1",
+        "A.3"
+      ],
+      "rationaleAI": "Faraday's discoveries in electromagnetism and the magneto-optical effect connect to C.1.d (effects of magnetic fields on atomic spectra) and A.3.b (spectroscopy)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

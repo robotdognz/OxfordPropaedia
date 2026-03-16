@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import InlineReferenceText from './InlineReferenceText';
-import { OUTLINE_VSI_SELECT_EVENT, type OutlineSelectionDetail } from '../../utils/vsiOutlineFilter';
+import { OUTLINE_SELECT_EVENT, type OutlineSelectionDetail } from '../../utils/vsiOutlineFilter';
 import { outlineAnchorId } from '../../utils/helpers';
 
 export interface OutlineItem {
@@ -157,7 +157,7 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
       childrenText: collectChildrenText(item.children || []),
     };
 
-    document.dispatchEvent(new CustomEvent<OutlineSelectionDetail>(OUTLINE_VSI_SELECT_EVENT, { detail }));
+    document.dispatchEvent(new CustomEvent<OutlineSelectionDetail>(OUTLINE_SELECT_EVENT, { detail }));
   };
 
   // Indentation depth: each sub-level gets additional left padding
@@ -203,7 +203,7 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
           }}
           tabIndex={0}
           role="button"
-          aria-label={`Show Oxford VSI recommendations for ${outlinePath}`}
+          aria-label={`Filter recommendations for ${outlinePath}`}
         >
           {/* Level badge */}
           <span class={badgeClasses}>{item.level}</span>

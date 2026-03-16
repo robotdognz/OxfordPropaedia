@@ -4,147 +4,242 @@
     {
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
-      "rationale": "Directly addresses educational systems, policy formation, administrative functions, and the history of educational philosophies (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses educational systems, policy formation, administrative functions, and the history of educational philosophies (A, B)."
     },
     {
       "vsiTitle": "Universities and Colleges",
       "vsiAuthor": "David Palfreyman, Paul Temple",
-      "rationale": "Traces the historical development of higher education from its medieval origins through the modern research university (B.3.c, B.5, B.7)."
+      "relevantPathsAI": [
+        "B.3.c",
+        "B.5",
+        "B.7"
+      ],
+      "rationaleAI": "Traces the historical development of higher education from its medieval origins through the modern research university (B.3.c, B.5, B.7)."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
-      "rationale": "Ancient Greek education established foundational traditions in Western pedagogy that still shape liberal arts ideals (B.1.d)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Ancient Greek education established foundational traditions in Western pedagogy that still shape liberal arts ideals (B.1.d)."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
-      "rationale": "Addresses Roman educational institutions and their lasting influence on European schooling (B.1.e)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Addresses Roman educational institutions and their lasting influence on European schooling (B.1.e)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "rationale": "The Confucian emphasis on moral cultivation through study shaped educational traditions across East Asia for millennia (B.1.b, B.4.b)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "The Confucian emphasis on moral cultivation through study shaped educational traditions across East Asia for millennia (B.1.b, B.4.b)."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
-      "rationale": "Provides context for medieval European education including monastic schools, the rise of universities, and grammar schools (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Provides context for medieval European education including monastic schools, the rise of universities, and grammar schools (B.3)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "rationale": "Examines Byzantine education, which preserved Greek learning and transmitted it to both the Islamic world and Renaissance Europe (B.2.b)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Examines Byzantine education, which preserved Greek learning and transmitted it to both the Islamic world and Renaissance Europe (B.2.b)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "rationale": "Explores Islamic educational traditions including the madrasa system and its role in transmitting knowledge (B.2.d)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Explores Islamic educational traditions including the madrasa system and its role in transmitting knowledge (B.2.d)."
     },
     {
       "vsiTitle": "The Renaissance",
       "vsiAuthor": "Jerry Brotton",
-      "rationale": "Renaissance humanism transformed European education by reviving classical learning and redefining the purpose of schooling (B.5)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Renaissance humanism transformed European education by reviving classical learning and redefining the purpose of schooling (B.5)."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
-      "rationale": "The Reformation reshaped education by promoting vernacular literacy and creating new school systems across Protestant Europe (B.5.d)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "The Reformation reshaped education by promoting vernacular literacy and creating new school systems across Protestant Europe (B.5.d)."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
-      "rationale": "Addresses Counter-Reformation educational initiatives including the Jesuit school network and missionary education abroad (B.5.d)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Addresses Counter-Reformation educational initiatives including the Jesuit school network and missionary education abroad (B.5.d)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
-      "rationale": "Enlightenment thinkers reconceived education as a vehicle for human progress, ideas that drove 18th-century reform movements (B.6.b)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Enlightenment thinkers reconceived education as a vehicle for human progress, ideas that drove 18th-century reform movements (B.6.b)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
-      "rationale": "Rousseau's Emile remains one of the most influential works on education ever written, shaping progressive pedagogy for centuries (B.6.b)."
+      "relevantPathsAI": [
+        "B.6"
+      ],
+      "rationaleAI": "Rousseau's Emile remains one of the most influential works on education ever written, shaping progressive pedagogy for centuries (B.6.b)."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
-      "rationale": "Traces humanistic educational philosophy from the Renaissance emphasis on classical texts through modern secular approaches to moral and civic education (B.5, B.8.b)."
+      "relevantPathsAI": [
+        "B.5",
+        "B.8"
+      ],
+      "rationaleAI": "Traces humanistic educational philosophy from the Renaissance emphasis on classical texts through modern secular approaches to moral and civic education (B.5, B.8.b)."
     },
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
-      "rationale": "Traces China's dramatic educational transformation from the imperial examination system to mass modern schooling (B.8.c)."
+      "relevantPathsAI": [
+        "B.8.c"
+      ],
+      "rationaleAI": "Traces China's dramatic educational transformation from the imperial examination system to mass modern schooling (B.8.c)."
     },
     {
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
-      "rationale": "Examines Indian educational modernization from colonial English-medium schooling to post-independence expansion (B.4.a, B.7.d)."
+      "relevantPathsAI": [
+        "B.4",
+        "B.7"
+      ],
+      "rationaleAI": "Examines Indian educational modernization from colonial English-medium schooling to post-independence expansion (B.4.a, B.7.d)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
-      "rationale": "Japan's rapid educational modernization after the Meiji Restoration is a key case study in state-directed educational reform (B.4.c, B.7.d)."
+      "relevantPathsAI": [
+        "B.4.c",
+        "B.7"
+      ],
+      "rationaleAI": "Japan's rapid educational modernization after the Meiji Restoration is a key case study in state-directed educational reform (B.4.c, B.7.d)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "rationale": "Decolonization raised urgent questions about replacing colonial education with systems serving newly independent nations (B.8.d)."
+      "relevantPathsAI": [
+        "B.8"
+      ],
+      "rationaleAI": "Decolonization raised urgent questions about replacing colonial education with systems serving newly independent nations (B.8.d)."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "rationale": "Provides historical context for African educational development from indigenous traditions through colonial schooling and post-independence modernization (B.8.d)."
+      "relevantPathsAI": [
+        "B.8"
+      ],
+      "rationaleAI": "Provides historical context for African educational development from indigenous traditions through colonial schooling and post-independence modernization (B.8.d)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Industrialization created new demands for literacy and technical training that drove 19th-century educational expansion (B.7.a)."
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Industrialization created new demands for literacy and technical training that drove 19th-century educational expansion (B.7.a)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
-      "rationale": "Illustrates how political ideology shapes educational policy, from Soviet-era schooling to socialist critiques of class-based education (A.3.d)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Illustrates how political ideology shapes educational policy, from Soviet-era schooling to socialist critiques of class-based education (A.3.d)."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
-      "rationale": "Addresses Catholic educational traditions and the role of sectarian schooling in shaping educational systems worldwide (A.3.e)."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Addresses Catholic educational traditions and the role of sectarian schooling in shaping educational systems worldwide (A.3.e)."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
-      "rationale": "Puritan emphasis on Bible literacy drove the founding of schools and colleges in early New England (B.6.c)."
+      "relevantPathsAI": [
+        "B.6.c"
+      ],
+      "rationaleAI": "Puritan emphasis on Bible literacy drove the founding of schools and colleges in early New England (B.6.c)."
     },
     {
       "vsiTitle": "Colonial America",
       "vsiAuthor": "Alan Taylor",
-      "rationale": "Provides context for how European educational models were transplanted and adapted in the New World (B.6.c)."
+      "relevantPathsAI": [
+        "B.6.c"
+      ],
+      "rationaleAI": "Provides context for how European educational models were transplanted and adapted in the New World (B.6.c)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
-      "rationale": "Globalization has intensified the spread of educational practices across cultures and the rise of international assessment frameworks (B.8)."
+      "relevantPathsAI": [
+        "B.8"
+      ],
+      "rationaleAI": "Globalization has intensified the spread of educational practices across cultures and the rise of international assessment frameworks (B.8)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Theories of learning -- from behaviorism to constructivism -- have shaped educational practices and pedagogical reforms across eras (B.6.b, B.7.b)."
+      "relevantPathsAI": [
+        "B.6",
+        "B.7"
+      ],
+      "rationaleAI": "Theories of learning -- from behaviorism to constructivism -- have shaped educational practices and pedagogical reforms across eras (B.6.b, B.7.b)."
     },
     {
       "vsiTitle": "The History of Childhood",
       "vsiAuthor": "James Marten",
-      "rationale": "Explores how evolving conceptions of childhood have shaped what societies expect education to do for young people (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Explores how evolving conceptions of childhood have shaped what societies expect education to do for young people (B)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Islamic philosophical traditions and Arabic intellectual achievements profoundly influenced the revival of learning that preceded Renaissance humanism (B.2.d, B.5.a)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Islamic philosophical traditions and Arabic intellectual achievements profoundly influenced the revival of learning that preceded Renaissance humanism (B.2.d, B.5.a)."
     },
     {
       "vsiTitle": "Gandhi",
       "vsiAuthor": "Bhikhu Parekh",
-      "rationale": "Gandhi's philosophy of education -- emphasizing self-reliance and moral development -- shaped Indian educational reform and anti-colonial pedagogy (B.7.d, B.8.d)."
+      "relevantPathsAI": [
+        "B.7",
+        "B.8"
+      ],
+      "rationaleAI": "Gandhi's philosophy of education -- emphasizing self-reliance and moral development -- shaped Indian educational reform and anti-colonial pedagogy (B.7.d, B.8.d)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

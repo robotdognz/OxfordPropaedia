@@ -26,7 +26,14 @@ const crossReferenceSchema = z.object({
 const vsiMappingEntrySchema = z.object({
   vsiTitle: z.string(),
   vsiAuthor: z.string(),
-  rationale: z.string(),
+  rationaleAI: z.string(),
+  relevantPathsAI: z.array(z.string()).optional(),
+});
+
+const wikiMappingEntrySchema = z.object({
+  articleTitle: z.string(),
+  rationaleAI: z.string().optional(),
+  relevantPathsAI: z.array(z.string()).optional(),
 });
 
 // --- Collection schemas ---
@@ -100,8 +107,18 @@ const vsiCatalogCollection = defineCollection({
 const vsiMappingsCollection = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/vsi-mappings' }),
   schema: z.object({
+    _curatedBy: z.string().optional(),
     sectionCode: z.string(),
     mappings: z.array(vsiMappingEntrySchema),
+  }),
+});
+
+const wikiMappingsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/wiki-mappings' }),
+  schema: z.object({
+    _curatedBy: z.string().optional(),
+    sectionCode: z.string(),
+    mappings: z.array(wikiMappingEntrySchema),
   }),
 });
 
@@ -111,5 +128,6 @@ export const collections = {
   sections: sectionsCollection,
   essays: essaysCollection,
   vsi: vsiCatalogCollection,
+  'wiki-mappings': wikiMappingsCollection,
   'vsi-mappings': vsiMappingsCollection,
 };

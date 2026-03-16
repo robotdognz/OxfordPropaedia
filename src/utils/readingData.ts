@@ -26,7 +26,7 @@ export interface VsiMappingRecord {
   mappings: Array<{
     vsiTitle: string;
     vsiAuthor: string;
-    rationale: string;
+    rationaleAI: string;
   }>;
 }
 

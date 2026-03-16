@@ -4,127 +4,207 @@
     {
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
-      "rationale": "Directly covers the nature of emotion, empathy, and emotional expression (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Directly covers the nature of emotion, empathy, and emotional expression (B)."
     },
     {
       "vsiTitle": "The History of Emotions",
       "vsiAuthor": "Thomas Dixon",
-      "rationale": "Covers the history of how emotions, affect, and feelings have been understood, including their expression and cultural dimensions (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Covers the history of how emotions, affect, and feelings have been understood, including their expression and cultural dimensions (B.3)."
     },
     {
       "vsiTitle": "Anxiety",
       "vsiAuthor": "Daniel Freeman, Jason Freeman",
-      "rationale": "Anxiety is specifically named as a key human motive requiring special attention (A.2), covering the amygdala, conditioning, and arousal."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Anxiety is specifically named as a key human motive requiring special attention (A.2), covering the amygdala, conditioning, and arousal."
     },
     {
       "vsiTitle": "Psychopathy",
       "vsiAuthor": "Essi Viding",
-      "rationale": "Covers aggression and empathy deficits, directly relevant to aggression as a specific human motive (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers aggression and empathy deficits, directly relevant to aggression as a specific human motive (A.2)."
     },
     {
       "vsiTitle": "Sexuality",
       "vsiAuthor": "Veronique Mottier",
-      "rationale": "Sexual behaviour and deviations are specifically named as requiring special attention in motivational states (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Sexual behaviour and deviations are specifically named as requiring special attention in motivational states (A.2)."
     },
     {
       "vsiTitle": "Love",
       "vsiAuthor": "Ronald de Sousa",
-      "rationale": "Covers desire, pleasure, and love as fundamental motivational and emotional states (A.2, B)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers desire, pleasure, and love as fundamental motivational and emotional states (A.2, B)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
-      "rationale": "Covers pain, pleasure, and their emotional dimensions, relevant to emotional states and the pleasant/unpleasant (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Covers pain, pleasure, and their emotional dimensions, relevant to emotional states and the pleasant/unpleasant (B)."
     },
     {
       "vsiTitle": "Happiness",
       "vsiAuthor": "Daniel M. Haybron",
-      "rationale": "Covers hedonic dimensions of emotion and motivation, relevant to hedonic theories of motivation (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Covers hedonic dimensions of emotion and motivation, relevant to hedonic theories of motivation (A.1)."
     },
     {
       "vsiTitle": "Freud",
       "vsiAuthor": "Anthony Storr",
-      "rationale": "Psychoanalytic theory is explicitly cited as a theory of motivation (A.1); covers drives, instincts, sexual development, and dreams (C.2)."
+      "relevantPathsAI": [
+        "A.1",
+        "C.2"
+      ],
+      "rationaleAI": "Psychoanalytic theory is explicitly cited as a theory of motivation (A.1); covers drives, instincts, sexual development, and dreams (C.2)."
     },
     {
       "vsiTitle": "Psychoanalysis",
       "vsiAuthor": "Daniel Pick",
-      "rationale": "Psychoanalytic theories are named as diverse theories of motivation (A.1), covering unconscious drives and wish fulfilment."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Psychoanalytic theories are named as diverse theories of motivation (A.1), covering unconscious drives and wish fulfilment."
     },
     {
       "vsiTitle": "Jung",
       "vsiAuthor": "Anthony Stevens",
-      "rationale": "Jungian psychology addresses motivational drives, archetypes, and the relationship between conscious and unconscious states."
+      "relevantPathsAI": [],
+      "rationaleAI": "Jungian psychology addresses motivational drives, archetypes, and the relationship between conscious and unconscious states."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Pavlov's conditioning research is foundational to drive and arousal theories of motivation and reinforcement (A.1, A.4)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Pavlov's conditioning research is foundational to drive and arousal theories of motivation and reinforcement (A.1, A.4)."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
-      "rationale": "Directly covers sleep as a transient state affecting behaviour including REM/NREM stages, sleep disorders, and melatonin (C.1)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers sleep as a transient state affecting behaviour including REM/NREM stages, sleep disorders, and melatonin (C.1)."
     },
     {
       "vsiTitle": "Dreaming",
       "vsiAuthor": "J. Allan Hobson",
-      "rationale": "Directly covers dreams as transient states including brain imaging, REM sleep, and dream interpretation (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Directly covers dreams as transient states including brain imaging, REM sleep, and dream interpretation (C.2)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Covers the biological basis of sleep-wake cycles and their effects on arousal and fatigue (C.1, C.4)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.4"
+      ],
+      "rationaleAI": "Covers the biological basis of sleep-wake cycles and their effects on arousal and fatigue (C.1, C.4)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Directly relevant to hypnosis and states of altered consciousness (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Directly relevant to hypnosis and states of altered consciousness (C.3)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Covers substances that alter consciousness and arousal, relevant to hypnosis-related states and factors affecting transient states (C.3)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Covers substances that alter consciousness and arousal, relevant to hypnosis-related states and factors affecting transient states (C.3)."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
-      "rationale": "Covers compulsive drives, cravings, and reinforcement, relevant to incentive and hedonic theories of motivation (A.1, A.4)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Covers compulsive drives, cravings, and reinforcement, relevant to incentive and hedonic theories of motivation (A.1, A.4)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers the nervous system's role in emotion, arousal, and motivation, including basal ganglia and cerebral cortex (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the nervous system's role in emotion, arousal, and motivation, including basal ganglia and cerebral cortex (B.2)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the amygdala and brain systems involved in emotional processing and arousal conditions (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Covers the amygdala and brain systems involved in emotional processing and arousal conditions (B.2)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Covers cognitive dissonance, aggression, and situational/interactional factors in motivation (A.2, A.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Covers cognitive dissonance, aggression, and situational/interactional factors in motivation (A.2, A.3)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
-      "rationale": "Covers incentive theories and reinforcement in decision-making, relevant to incentive and hedonic motivation theories (A.1, A.4)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.4"
+      ],
+      "rationaleAI": "Covers incentive theories and reinforcement in decision-making, relevant to incentive and hedonic motivation theories (A.1, A.4)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides the broad framework for understanding motivational states, emotional states, and transient states affecting behaviour."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides the broad framework for understanding motivational states, emotional states, and transient states affecting behaviour."
     },
     {
       "vsiTitle": "Philosophy of Mind",
       "vsiAuthor": "Barbara Gail Montero",
-      "rationale": "Covers the nature of emotion, sensation, and consciousness as they relate to internal states and behaviour (B.1, C.3)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.3"
+      ],
+      "rationaleAI": "Covers the nature of emotion, sensation, and consciousness as they relate to internal states and behaviour (B.1, C.3)."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Covers instinct, learning, and alarm responses, relevant to drive and instinct theories of motivation (A.1) and startle response (B.3)."
+      "relevantPathsAI": [
+        "A.1",
+        "B.3"
+      ],
+      "rationaleAI": "Covers instinct, learning, and alarm responses, relevant to drive and instinct theories of motivation (A.1) and startle response (B.3)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,192 +4,311 @@
     {
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
-      "rationale": "Directly addresses the politics of international relations including state sovereignty, international institutions, and political authority (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Directly addresses the politics of international relations including state sovereignty, international institutions, and political authority (A)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
-      "rationale": "Directly addresses the United Nations as an international organization for peacekeeping and collective security (A.2)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Directly addresses the United Nations as an international organization for peacekeeping and collective security (A.2)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
-      "rationale": "The legal framework governing treaties, sovereignty, and international law relating to wartime connects to outline B and E.2.e."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "The legal framework governing treaties, sovereignty, and international law relating to wartime connects to outline B and E.2.e."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Directly addresses diplomacy, negotiation of international disputes, and public international conferences (C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Directly addresses diplomacy, negotiation of international disputes, and public international conferences (C.2)."
     },
     {
       "vsiTitle": "Peace",
       "vsiAuthor": "Oliver P. Richmond",
-      "rationale": "Peacekeeping, collective security, just war theory, and conflict resolution are central to B.1 and C.2."
+      "relevantPathsAI": [
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "Peacekeeping, collective security, just war theory, and conflict resolution are central to B.1 and C.2."
     },
     {
       "vsiTitle": "International security",
       "vsiAuthor": "Christopher S. Browning",
-      "rationale": "Collective security, arms limitation, NATO, and the prevention of war between states are central to B.1 and B.3."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Collective security, arms limitation, NATO, and the prevention of war between states are central to B.1 and B.3."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Nuclear weapons, deterrence, and arms limitation treaties are central to B.3."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Nuclear weapons, deterrence, and arms limitation treaties are central to B.3."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "rationale": "The Cold War as a major period of international relations -- arms treaties, alliances, and geopolitics -- is central to outline A and B.3."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "The Cold War as a major period of international relations -- arms treaties, alliances, and geopolitics -- is central to outline A and B.3."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "rationale": "Geopolitical dimensions of international relations including territorial disputes and regional power dynamics connect to B.4."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Geopolitical dimensions of international relations including territorial disputes and regional power dynamics connect to B.4."
     },
     {
       "vsiTitle": "Borders",
       "vsiAuthor": "Alexander C. Diener, Joshua Hagen",
-      "rationale": "Territorial treaties, border disputes, and the geopolitical significance of boundaries connect to B.4."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Territorial treaties, border disputes, and the geopolitical significance of boundaries connect to B.4."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "rationale": "Modern warfare -- limited war, total war, guerrilla warfare, and psychological warfare -- connects to E.1 and E.2.d."
+      "relevantPathsAI": [
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Modern warfare -- limited war, total war, guerrilla warfare, and psychological warfare -- connects to E.1 and E.2.d."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
-      "rationale": "Civil wars and insurrections, including their causes, consequences, and transnational dimensions, connect to E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Civil wars and insurrections, including their causes, consequences, and transnational dimensions, connect to E.1."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
-      "rationale": "Directly addresses military strategy as an element of the conduct of war (E.2.a)."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Directly addresses military strategy as an element of the conduct of war (E.2.a)."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
-      "rationale": "Clausewitz's foundational theory of war, strategy, and the relationship between war and politics is central to E.2.a."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Clausewitz's foundational theory of war, strategy, and the relationship between war and politics is central to E.2.a."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "The technological development of weapons and military forces throughout history connects to E.3."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "The technological development of weapons and military forces throughout history connects to E.3."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "rationale": "Religious wars as a kind of war and just war theory are relevant to E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Religious wars as a kind of war and just war theory are relevant to E.1."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
-      "rationale": "The historical development of organized military forces and ancient military strategy and tactics connect to E.2 and E.3.b."
+      "relevantPathsAI": [
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "The historical development of organized military forces and ancient military strategy and tactics connect to E.2 and E.3.b."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
-      "rationale": "A worldwide war involving military strategy, logistics, propaganda, and its aftermath in treaties is central to outline E and B.2."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "A worldwide war involving military strategy, logistics, propaganda, and its aftermath in treaties is central to outline E and B.2."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "rationale": "A total world war involving military organization and strategy across ground, naval, and air forces is central to outline E."
+      "relevantPathsAI": [],
+      "rationaleAI": "A total world war involving military organization and strategy across ground, naval, and air forces is central to outline E."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
-      "rationale": "A treaty terminating a major war and its consequences for international relations connect to B.2."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "A treaty terminating a major war and its consequences for international relations connect to B.2."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
-      "rationale": "Air forces as a branch of the armed forces connect to E.3.c.iii."
+      "relevantPathsAI": [
+        "E.3.c"
+      ],
+      "rationaleAI": "Air forces as a branch of the armed forces connect to E.3.c.iii."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
-      "rationale": "Naval and amphibious forces as a branch of the armed forces connect to E.3.c.ii."
+      "relevantPathsAI": [
+        "E.3.c"
+      ],
+      "rationaleAI": "Naval and amphibious forces as a branch of the armed forces connect to E.3.c.ii."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
-      "rationale": "The historical development of organized military forces -- professional and volunteer soldiers -- connects to E.3.a and E.3.b."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "The historical development of organized military forces -- professional and volunteer soldiers -- connects to E.3.a and E.3.b."
     },
     {
       "vsiTitle": "American Foreign Relations",
       "vsiAuthor": "Andrew Preston",
-      "rationale": "Foreign policy aims and compatibility with national and humanitarian interests connect to C.1."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Foreign policy aims and compatibility with national and humanitarian interests connect to C.1."
     },
     {
       "vsiTitle": "Humanitarianism",
       "vsiAuthor": "Julia F Irwin",
-      "rationale": "International humanitarian law, foreign aid, and humanitarian intervention connect to C.3 and E.2.e."
+      "relevantPathsAI": [
+        "C.3",
+        "E.2"
+      ],
+      "rationaleAI": "International humanitarian law, foreign aid, and humanitarian intervention connect to C.3 and E.2.e."
     },
     {
       "vsiTitle": "Military Justice",
       "vsiAuthor": "Eugene R. Fidell",
-      "rationale": "International law relating to military discipline and treatment of persons during wartime connects to E.2.e."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "International law relating to military discipline and treatment of persons during wartime connects to E.2.e."
     },
     {
       "vsiTitle": "The European Union",
       "vsiAuthor": "John Pinder, Simon Usherwood",
-      "rationale": "European federalism as a transnational political movement is relevant to A.1."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "European federalism as a transnational political movement is relevant to A.1."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "rationale": "Nationalism as a transnational political movement driving Pan-national ideologies connects to A.1."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Nationalism as a transnational political movement driving Pan-national ideologies connects to A.1."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
       "vsiAuthor": "Martin Bunton",
-      "rationale": "A regional conflict involving territorial disputes, diplomacy, and military force connects to B.4 and E.1."
+      "relevantPathsAI": [
+        "B.4",
+        "E.1"
+      ],
+      "rationaleAI": "A regional conflict involving territorial disputes, diplomacy, and military force connects to B.4 and E.1."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
-      "rationale": "A major regional war involving military strategy, tactics, logistics, and treaty settlements connects to E.2 and B.2."
+      "relevantPathsAI": [
+        "E.2",
+        "B.2"
+      ],
+      "rationaleAI": "A major regional war involving military strategy, tactics, logistics, and treaty settlements connects to E.2 and B.2."
     },
     {
       "vsiTitle": "The Spanish Civil War",
       "vsiAuthor": "Helen Graham",
-      "rationale": "A civil war with significant international dimensions and foreign intervention is relevant to E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "A civil war with significant international dimensions and foreign intervention is relevant to E.1."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "rationale": "Religious wars as a major historical type of armed conflict connect to E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Religious wars as a major historical type of armed conflict connect to E.1."
     },
     {
       "vsiTitle": "The U.S. Civil War",
       "vsiAuthor": "Louis P. Masur",
-      "rationale": "A major civil war involving military strategy, organization, and the conduct of war connects to E.1 and E.2."
+      "relevantPathsAI": [
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "A major civil war involving military strategy, organization, and the conduct of war connects to E.1 and E.2."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
-      "rationale": "Crimes against humanity are relevant to the attempt to punish war crimes and crimes against peace (E.2.e)."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Crimes against humanity are relevant to the attempt to punish war crimes and crimes against peace (E.2.e)."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
-      "rationale": "Refugee crises resulting from wars and international conflicts are a recurring consequence throughout."
+      "relevantPathsAI": [],
+      "rationaleAI": "Refugee crises resulting from wars and international conflicts are a recurring consequence throughout."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "rationale": "National liberation movements and their impact on international relations and sovereignty connect to A.1."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "National liberation movements and their impact on international relations and sovereignty connect to A.1."
     },
     {
       "vsiTitle": "The BRICS",
       "vsiAuthor": "Andrew F. Cooper",
-      "rationale": "Emerging powers and their role in contemporary international organizations and diplomacy connect to A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Emerging powers and their role in contemporary international organizations and diplomacy connect to A.2."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
-      "rationale": "Terrorism as a challenge to international peace and security connects to E.1."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Terrorism as a challenge to international peace and security connects to E.1."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

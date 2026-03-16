@@ -4,137 +4,213 @@
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "A core text on Islam encompassing its history, Sunnism, Shiism, Islamic law, the Ottoman Empire, and the prophet, the primary subject of 828."
+      "relevantPathsAI": [],
+      "rationaleAI": "A core text on Islam encompassing its history, Sunnism, Shiism, Islamic law, the Ottoman Empire, and the prophet, the primary subject of 828."
     },
     {
       "vsiTitle": "The Koran",
       "vsiAuthor": "Michael Cook",
-      "rationale": "Directly relevant to 828.B.1, examining the Quran's form, contents, revelation in Mecca and Medina, and its diverse interpretations."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Directly relevant to 828.B.1, examining the Quran's form, contents, revelation in Mecca and Medina, and its diverse interpretations."
     },
     {
       "vsiTitle": "Muhammad",
       "vsiAuthor": "Jonathan A.C. Brown",
-      "rationale": "Traces the life and teachings of the Prophet Muhammad including Abu Bakr and the early Muslim community, directly relevant to 828.A.2."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Traces the life and teachings of the Prophet Muhammad including Abu Bakr and the early Muslim community, directly relevant to 828.A.2."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "rationale": "Surveys Islamic history from its origins through the Ottoman Empire including Hadith, jihad, and Mecca, the subject of 828.A."
+      "relevantPathsAI": [],
+      "rationaleAI": "Surveys Islamic history from its origins through the Ottoman Empire including Hadith, jihad, and Mecca, the subject of 828.A."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
-      "rationale": "Examines Shariah, Islamic jurisprudence, family law, and penal law, directly relevant to 828.B.3 and 828.C.3.d."
+      "relevantPathsAI": [
+        "B.3",
+        "C.3"
+      ],
+      "rationaleAI": "Examines Shariah, Islamic jurisprudence, family law, and penal law, directly relevant to 828.B.3 and 828.C.3.d."
     },
     {
       "vsiTitle": "Global Islam",
       "vsiAuthor": "Nile Green",
-      "rationale": "Traces Islam's worldwide development, the role of communication technologies, and its contemporary evolution, relevant to 828.A.6-7 on Islam in the modern world."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Traces Islam's worldwide development, the role of communication technologies, and its contemporary evolution, relevant to 828.A.6-7 on Islam in the modern world."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Explores Islamic philosophy including Avicenna, Mulla Sadra, and the role of reason in Islam, directly relevant to 828.B.4."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Explores Islamic philosophy including Avicenna, Mulla Sadra, and the role of reason in Islam, directly relevant to 828.B.4."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Avicenna stands as one of the most important Islamic philosophers, making this text essential for 828.B.4 on major schools of Islamic philosophy."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Avicenna stands as one of the most important Islamic philosophers, making this text essential for 828.B.4 on major schools of Islamic philosophy."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "Islamic fundamentalism as a modern religious phenomenon is central to understanding 828.A.6 on Islam in the modern world."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Islamic fundamentalism as a modern religious phenomenon is central to understanding 828.A.6 on Islam in the modern world."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
-      "rationale": "Explores Islamic mystical traditions essential for understanding Sufism, the subject of 828.B.5."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Explores Islamic mystical traditions essential for understanding Sufism, the subject of 828.B.5."
     },
     {
       "vsiTitle": "Pilgrimage",
       "vsiAuthor": "Ian Reader",
-      "rationale": "The hajj to Mecca, one of the Five Pillars listed in 828.C.3.a, is a central topic of this study of pilgrimage."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "The hajj to Mecca, one of the Five Pillars listed in 828.C.3.a, is a central topic of this study of pilgrimage."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
-      "rationale": "Explores concepts of God including Islamic monotheism, relevant to 828.C.1.a on doctrines concerning God."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Explores concepts of God including Islamic monotheism, relevant to 828.C.1.a on doctrines concerning God."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
-      "rationale": "Places Islam in comparative perspective with Judaism and Christianity, illuminating Islam's Abrahamic context."
+      "relevantPathsAI": [],
+      "rationaleAI": "Places Islam in comparative perspective with Judaism and Christianity, illuminating Islam's Abrahamic context."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
-      "rationale": "Theological approaches to doctrines of creation and prayer inform understanding of Islamic theology in 828.B.4 and 828.C.1."
+      "relevantPathsAI": [
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "Theological approaches to doctrines of creation and prayer inform understanding of Islamic theology in 828.B.4 and 828.C.1."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
-      "rationale": "Iran as a major Shia Muslim country and the site of the Islamic revolution is directly relevant to 828.C.2.d on Shiism."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Iran as a major Shia Muslim country and the site of the Islamic revolution is directly relevant to 828.C.2.d on Shiism."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "rationale": "The Crusades represent a defining encounter between Islam and Christianity, relevant to 828.A.5 on the Middle Ages of Islam."
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "The Crusades represent a defining encounter between Islam and Christianity, relevant to 828.A.5 on the Middle Ages of Islam."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
       "vsiAuthor": "Martin Bunton",
-      "rationale": "Addresses the conflict including the Dome of the Rock and Jerusalem's significance in Islam, relevant to 828.A.7 on Islam today."
+      "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Addresses the conflict including the Dome of the Rock and Jerusalem's significance in Islam, relevant to 828.A.7 on Islam today."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "rationale": "Examines the relationship between religion and warfare including concepts of jihad and just war, relevant to 828.A on Islam's military expansion."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines the relationship between religion and warfare including concepts of jihad and just war, relevant to 828.A on Islam's military expansion."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
-      "rationale": "Interpretive theory is foundational to Quranic interpretation and Islamic hermeneutics, relevant to 828.B.1."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Interpretive theory is foundational to Quranic interpretation and Islamic hermeneutics, relevant to 828.B.1."
     },
     {
       "vsiTitle": "Blasphemy",
       "vsiAuthor": "Yvonne Sherwood",
-      "rationale": "Addresses blasphemy laws in Islamic contexts and the anti-iconic principle, relevant to 828.C.4.c."
+      "relevantPathsAI": [
+        "C.4.c"
+      ],
+      "rationaleAI": "Addresses blasphemy laws in Islamic contexts and the anti-iconic principle, relevant to 828.C.4.c."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
-      "rationale": "Explores debates about secularism in Islamic societies and church-state relations, relevant to 828.A.6."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Explores debates about secularism in Islamic societies and church-state relations, relevant to 828.A.6."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "rationale": "The Silk Road facilitated the spread of Islam across Central Asia, relevant to 828.A.3-4."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "The Silk Road facilitated the spread of Islam across Central Asia, relevant to 828.A.3-4."
     },
     {
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
-      "rationale": "Pakistan as a major Islamic nation created through partition is directly relevant to 828.A.7 on Islam today."
+      "relevantPathsAI": [
+        "A.7"
+      ],
+      "rationaleAI": "Pakistan as a major Islamic nation created through partition is directly relevant to 828.A.7 on Islam today."
     },
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
-      "rationale": "Islam is a major religion across Southeast Asia, making this text relevant to 828.A.3-4 on the expansion of Islam."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Islam is a major religion across Southeast Asia, making this text relevant to 828.A.3-4 on the expansion of Islam."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "rationale": "Traces the spread of Islam in Africa, relevant to 828.A.3-4 on the expansion of Islam beyond Arabia."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Traces the spread of Islam in Africa, relevant to 828.A.3-4 on the expansion of Islam beyond Arabia."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "rationale": "Byzantine interactions with Islam and the fall of Constantinople are essential context for 828.A.4-5."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Byzantine interactions with Islam and the fall of Constantinople are essential context for 828.A.4-5."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
-      "rationale": "Ritual practices including the five daily prayers and festivals are central to Islamic worship, relevant to 828.C.3.a-b."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Ritual practices including the five daily prayers and festivals are central to Islamic worship, relevant to 828.C.3.a-b."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

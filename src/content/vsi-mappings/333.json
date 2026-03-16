@@ -4,72 +4,119 @@
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Core VSI for endocrine systems (C), covering vertebrate hormonal coordination, pituitary gland, hypothalamus control, and the relationship between endocrine and neural regulation."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Core VSI for endocrine systems (C), covering vertebrate hormonal coordination, pituitary gland, hypothalamus control, and the relationship between endocrine and neural regulation."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Core VSI for nervous systems (D), covering the brain and its components, cerebral cortex, basal ganglia, spinal cord, and neural information processing."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Core VSI for nervous systems (D), covering the brain and its components, cerebral cortex, basal ganglia, spinal cord, and neural information processing."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Directly covers sensory reception (B), specifically photoreceptors, retinal processing, optic nerve transmission, and evolution of visual sensory systems."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Directly covers sensory reception (B), specifically photoreceptors, retinal processing, optic nerve transmission, and evolution of visual sensory systems."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Core VSI for the biological clock (E), covering solar-day rhythms, the molecular clock mechanism, metabolism, and factors affecting biological periodicities."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Core VSI for the biological clock (E), covering solar-day rhythms, the molecular clock mechanism, metabolism, and factors affecting biological periodicities."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
-      "rationale": "Covers dormancy and metabolic rate changes (A.6), brain-wave rhythms (E.1), and melatonin's role in biological periodicity (E)."
+      "relevantPathsAI": [
+        "A.6",
+        "E",
+        "E.1"
+      ],
+      "rationaleAI": "Covers dormancy and metabolic rate changes (A.6), brain-wave rhythms (E.1), and melatonin's role in biological periodicity (E)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Addresses homeostasis (A), physiological regulation mechanisms, and the interplay of endocrine and nervous systems in maintaining steady states."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Addresses homeostasis (A), physiological regulation mechanisms, and the interplay of endocrine and nervous systems in maintaining steady states."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the nervous system's role in information processing and integration (D.2), including brain imaging and cognition in the vertebrate brain (D.4)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.4"
+      ],
+      "rationaleAI": "Covers the nervous system's role in information processing and integration (D.2), including brain imaging and cognition in the vertebrate brain (D.4)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Addresses sensory information processing (B.3), interactions between sense cells and sensory neurons, and the physiology of the visual system."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Addresses sensory information processing (B.3), interactions between sense cells and sensory neurons, and the physiology of the visual system."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
-      "rationale": "Covers chemoreceptors (B.1.b) and olfactory sensory systems, illustrating chemoreception as a fundamental class of sensory reception."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers chemoreceptors (B.1.b) and olfactory sensory systems, illustrating chemoreception as a fundamental class of sensory reception."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Covers invertebrate nervous systems (D.3) including diffuse and centralized systems across Annelida, Cnidaria, and other phyla."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Covers invertebrate nervous systems (D.3) including diffuse and centralized systems across Annelida, Cnidaria, and other phyla."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Relevant to invertebrate endocrine systems (C.3) in insects and invertebrate nervous system organization."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Relevant to invertebrate endocrine systems (C.3) in insects and invertebrate nervous system organization."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "Covers nerve impulse transmission, action potentials, and the sympathetic nervous system (D.2, D.4.b), illustrating neural regulation mechanisms."
+      "relevantPathsAI": [
+        "D.2",
+        "D.4"
+      ],
+      "rationaleAI": "Covers nerve impulse transmission, action potentials, and the sympathetic nervous system (D.2, D.4.b), illustrating neural regulation mechanisms."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Addresses higher-level integration of sensory information in the brain and the evolution of consciousness as nervous system complexity (D.4.e)."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Addresses higher-level integration of sensory information in the brain and the evolution of consciousness as nervous system complexity (D.4.e)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
-      "rationale": "Covers nociception as a sensory modality (B.1.b mechanoreceptors) and neural processing pathways for pain signals."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers nociception as a sensory modality (B.1.b mechanoreceptors) and neural processing pathways for pain signals."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

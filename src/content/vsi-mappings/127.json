@@ -4,107 +4,185 @@
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Core coverage of magnetic phenomena, magnetic materials (dia/para/ferro/antiferro/ferrimagnetism), atomic magnetism, and the relationship between electricity and magnetism (C.1-C.5)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.5"
+      ],
+      "rationaleAI": "Core coverage of magnetic phenomena, magnetic materials (dia/para/ferro/antiferro/ferrimagnetism), atomic magnetism, and the relationship between electricity and magnetism (C.1-C.5)."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
-      "rationale": "Directly covers Faraday's law of electromagnetic induction (B.3.a), the development of field theory (D), and the foundational link between electricity and magnetism (C.2)."
+      "relevantPathsAI": [
+        "B.3",
+        "C.2",
+        "D"
+      ],
+      "rationaleAI": "Directly covers Faraday's law of electromagnetic induction (B.3.a), the development of field theory (D), and the foundational link between electricity and magnetism (C.2)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Explains the electromagnetic nature of light, wave-particle duality of the photon (E.2.b), and quantum theory of radiation including Einstein's photoelectric effect (E.2.a)."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Explains the electromagnetic nature of light, wave-particle duality of the photon (E.2.b), and quantum theory of radiation including Einstein's photoelectric effect (E.2.a)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Treats electromagnetic radiation, wave propagation, diffraction, and interference -- phenomena central to the electromagnetic spectrum (E.1.c) and transmission of radiation (E.3.b)."
+      "relevantPathsAI": [
+        "E.1.c",
+        "E.3"
+      ],
+      "rationaleAI": "Treats electromagnetic radiation, wave propagation, diffraction, and interference -- phenomena central to the electromagnetic spectrum (E.1.c) and transmission of radiation (E.3.b)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Addresses the quantum theory of radiation (E.2), including Planck's and Einstein's contributions to the photoelectric and Compton effects (E.2.a) and wave-particle duality of the photon (E.2.b)."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Addresses the quantum theory of radiation (E.2), including Planck's and Einstein's contributions to the photoelectric and Compton effects (E.2.a) and wave-particle duality of the photon (E.2.b)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Directly relevant to relativistic electrodynamics (F) and the four-dimensional formulation of electromagnetic theory (F.1)."
+      "relevantPathsAI": [
+        "F",
+        "F.1"
+      ],
+      "rationaleAI": "Directly relevant to relativistic electrodynamics (F) and the four-dimensional formulation of electromagnetic theory (F.1)."
     },
     {
       "vsiTitle": "Superconductivity",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Explores electrical conduction mechanisms in metals (B.2.b), magnetic properties of superconducting materials (C.5), and electromagnetic effects in condensed matter."
+      "relevantPathsAI": [
+        "B.2",
+        "C.5"
+      ],
+      "rationaleAI": "Explores electrical conduction mechanisms in metals (B.2.b), magnetic properties of superconducting materials (C.5), and electromagnetic effects in condensed matter."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Examines conduction of electricity in metals and semiconductors (B.2.b), magnetic phase transitions in solids (C.5), and superconductivity as an electromagnetic phenomenon."
+      "relevantPathsAI": [
+        "B.2",
+        "C.5"
+      ],
+      "rationaleAI": "Examines conduction of electricity in metals and semiconductors (B.2.b), magnetic phase transitions in solids (C.5), and superconductivity as an electromagnetic phenomenon."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Traces the historical development of ideas about electricity, magnetism, and the nature of light (E.1.a), from Newton's corpuscular theory through Faraday's field concept to Maxwell's equations and Einstein's photon."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Traces the historical development of ideas about electricity, magnetism, and the nature of light (E.1.a), from Newton's corpuscular theory through Faraday's field concept to Maxwell's equations and Einstein's photon."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Provides broad coverage of electrostatics, electrodynamics, electromagnetic radiation, and the relationship between force, matter, and electromagnetic fields (A-E)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides broad coverage of electrostatics, electrodynamics, electromagnetic radiation, and the relationship between force, matter, and electromagnetic fields (A-E)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Details the principles of generation and transmission of AC single- and multiphase power (B.3.k), electricity grids, and practical electromagnetic induction applications."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Details the principles of generation and transmission of AC single- and multiphase power (B.3.k), electricity grids, and practical electromagnetic induction applications."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Addresses solar photovoltaics rooted in the photoelectric effect (B.2.d/E.2.a), battery electrochemistry (B.5.d), and electricity grids for AC power transmission (B.3.k)."
+      "relevantPathsAI": [
+        "B.2",
+        "E.2",
+        "B.5",
+        "B.3"
+      ],
+      "rationaleAI": "Addresses solar photovoltaics rooted in the photoelectric effect (B.2.d/E.2.a), battery electrochemistry (B.5.d), and electricity grids for AC power transmission (B.3.k)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "rationale": "Directly relevant to electricity in the atmosphere (A.1.e), including lightning, atmospheric electric phenomena, and the electromagnetic spectrum."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Directly relevant to electricity in the atmosphere (A.1.e), including lightning, atmospheric electric phenomena, and the electromagnetic spectrum."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
-      "rationale": "Probes electromagnetic fields in vacuum, Maxwell's unification of electricity and magnetism, and the nature of electromagnetic radiation in free space (E.3.b, D)."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Probes electromagnetic fields in vacuum, Maxwell's unification of electricity and magnetism, and the nature of electromagnetic radiation in free space (E.3.b, D)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Discusses nuclear magnetic moments and magnetic resonance (C.3.d), electron behavior, and quantum mechanical foundations of electromagnetic interactions."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Discusses nuclear magnetic moments and magnetic resonance (C.3.d), electron behavior, and quantum mechanical foundations of electromagnetic interactions."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Treats nuclear magnetic resonance spectroscopy (C.3.d), electrolysis and electro-osmosis (B.5.d), and electron behavior in chemical systems relevant to electrical conduction."
+      "relevantPathsAI": [
+        "C.3",
+        "B.5"
+      ],
+      "rationaleAI": "Treats nuclear magnetic resonance spectroscopy (C.3.d), electrolysis and electro-osmosis (B.5.d), and electron behavior in chemical systems relevant to electrical conduction."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly relevant to thermoelectric effects (B.2.c) where electric energy transforms into thermal energy, and resistance heating (B.5.c)."
+      "relevantPathsAI": [
+        "B.2.c",
+        "B.5.c"
+      ],
+      "rationaleAI": "Directly relevant to thermoelectric effects (B.2.c) where electric energy transforms into thermal energy, and resistance heating (B.5.c)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Addresses SI units and standardization relevant to definitions of electric quantities (B.1.a) and measurement of electrostatic forces and fields (A.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "A.4"
+      ],
+      "rationaleAI": "Addresses SI units and standardization relevant to definitions of electric quantities (B.1.a) and measurement of electrostatic forces and fields (A.4)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Examines the Sun's magnetic field, sunspot cycles, and solar wind, directly relevant to terrestrial magnetism (C.5.c.vi) and electricity in the atmosphere (A.1.e)."
+      "relevantPathsAI": [
+        "C.5.c",
+        "A.1"
+      ],
+      "rationaleAI": "Examines the Sun's magnetic field, sunspot cycles, and solar wind, directly relevant to terrestrial magnetism (C.5.c.vi) and electricity in the atmosphere (A.1.e)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Explains Earth's dynamo-generated magnetic field and solar wind interactions, directly relevant to terrestrial magnetism (C.5.c.vi)."
+      "relevantPathsAI": [
+        "C.5.c"
+      ],
+      "rationaleAI": "Explains Earth's dynamo-generated magnetic field and solar wind interactions, directly relevant to terrestrial magnetism (C.5.c.vi)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Analyzes chemical bonding, crystal lattice structures, and material properties relevant to dielectrics (A.2), magnetic materials (C.5), and piezoelectricity (B.5.a)."
+      "relevantPathsAI": [
+        "A.2",
+        "C.5",
+        "B.5"
+      ],
+      "rationaleAI": "Analyzes chemical bonding, crystal lattice structures, and material properties relevant to dielectrics (A.2), magnetic materials (C.5), and piezoelectricity (B.5.a)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

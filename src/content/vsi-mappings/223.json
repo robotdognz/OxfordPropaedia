@@ -4,67 +4,118 @@
     {
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
-      "rationale": "Directly addresses clouds, precipitation, storms, El Nino, numerical weather prediction (C.2), weather forecasting (C), and chaos theory's role in predictability limits (C.4.b)."
+      "relevantPathsAI": [
+        "C",
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Directly addresses clouds, precipitation, storms, El Nino, numerical weather prediction (C.2), weather forecasting (C), and chaos theory's role in predictability limits (C.4.b)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Explores climate types, temperature patterns, atmospheric pressure, rainfall distribution (A.4.c), and the factors that generate climate (E.1)."
+      "relevantPathsAI": [
+        "A.4.c",
+        "E.1"
+      ],
+      "rationaleAI": "Explores climate types, temperature patterns, atmospheric pressure, rainfall distribution (A.4.c), and the factors that generate climate (E.1)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Directly addresses climatic change (E.6), greenhouse warming from CO2 buildup (E.2.c), extreme weather events, and evidence for historical climate shifts."
+      "relevantPathsAI": [
+        "E.6",
+        "E.2.c"
+      ],
+      "rationaleAI": "Directly addresses climatic change (E.6), greenhouse warming from CO2 buildup (E.2.c), extreme weather events, and evidence for historical climate shifts."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "rationale": "Examines atmospheric moisture, the greenhouse effect (E.1.a.ii), and the electromagnetic spectrum relevant to solar radiation absorption that drives climate (E.1.a)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Examines atmospheric moisture, the greenhouse effect (E.1.a.ii), and the electromagnetic spectrum relevant to solar radiation absorption that drives climate (E.1.a)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Addresses climate sensitivity, the greenhouse effect (E.1.a.ii), solar energy input (E.1.a), and carbon dioxide's role in climate change (E.2.c)."
+      "relevantPathsAI": [
+        "E.1",
+        "E.2.c"
+      ],
+      "rationaleAI": "Addresses climate sensitivity, the greenhouse effect (E.1.a.ii), solar energy input (E.1.a), and carbon dioxide's role in climate change (E.2.c)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
-      "rationale": "Directly addresses hurricanes/typhoons (B.4), storms (B.1-B.3), floods from extreme precipitation (A.4.d), and wildfire linked to climate."
+      "relevantPathsAI": [
+        "B.4",
+        "B.1",
+        "B.3",
+        "A.4"
+      ],
+      "rationaleAI": "Directly addresses hurricanes/typhoons (B.4), storms (B.1-B.3), floods from extreme precipitation (A.4.d), and wildfire linked to climate."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Solar radiation variability and the solar constant (E.1.a.i) are directly relevant to solar radiation as a primary factor generating climate."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Solar radiation variability and the solar constant (E.1.a.i) are directly relevant to solar radiation as a primary factor generating climate."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
-      "rationale": "Chaos theory and sensitivity to initial conditions are directly relevant to limits of weather predictability (C.4.b) and numerical weather modeling (C.2)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.2"
+      ],
+      "rationaleAI": "Chaos theory and sensitivity to initial conditions are directly relevant to limits of weather predictability (C.4.b) and numerical weather modeling (C.2)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
-      "rationale": "Glacial-interglacial climate cycles and ice core evidence are directly relevant to climatic change evidence from glaciations and lake/sea level fluctuations (E.6.a)."
+      "relevantPathsAI": [
+        "E.6"
+      ],
+      "rationaleAI": "Glacial-interglacial climate cycles and ice core evidence are directly relevant to climatic change evidence from glaciations and lake/sea level fluctuations (E.6.a)."
     },
     {
       "vsiTitle": "Deserts",
       "vsiAuthor": "Nick Middleton",
-      "rationale": "Arid climates, rain shadow effects, and evaporation are relevant to climatic types and their distribution (E.3) and local terrain effects (E.2.b)."
+      "relevantPathsAI": [
+        "E.3",
+        "E.2"
+      ],
+      "rationaleAI": "Arid climates, rain shadow effects, and evaporation are relevant to climatic types and their distribution (E.3) and local terrain effects (E.2.b)."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
-      "rationale": "Human-driven climate change from fossil fuel burning and land use change is directly relevant to human effects on global climate (E.2.c)."
+      "relevantPathsAI": [
+        "E.2.c"
+      ],
+      "rationaleAI": "Human-driven climate change from fossil fuel burning and land use change is directly relevant to human effects on global climate (E.2.c)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
-      "rationale": "Mountain weather systems, orographic precipitation effects, and local terrain modification of climate (E.2.b) including altitude-driven climatic variation."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Mountain weather systems, orographic precipitation effects, and local terrain modification of climate (E.2.b) including altitude-driven climatic variation."
     },
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
-      "rationale": "The relationship between climate zones and the distribution of life forms is relevant to influences of climate on terrestrial life (E.4) and climatic types (E.3)."
+      "relevantPathsAI": [
+        "E.4",
+        "E.3"
+      ],
+      "rationaleAI": "The relationship between climate zones and the distribution of life forms is relevant to influences of climate on terrestrial life (E.4) and climatic types (E.3)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

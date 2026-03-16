@@ -4,82 +4,137 @@
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
-      "rationale": "Core text on functional design covering the Arts and Crafts Movement, industrial design, and product form -- the central subject of this section (A, C.2)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Core text on functional design covering the Arts and Crafts Movement, industrial design, and product form -- the central subject of this section (A, C.2)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
-      "rationale": "Directly covers dress design and fashion accessories, explicitly listed under arts of functional design (C.1.a)."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly covers dress design and fashion accessories, explicitly listed under arts of functional design (C.1.a)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
-      "rationale": "Covers typography, fonts, letterforms, and printing design, explicitly listed under design of materials for communication (C.4.b)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Covers typography, fonts, letterforms, and printing design, explicitly listed under design of materials for communication (C.4.b)."
     },
     {
       "vsiTitle": "Advertising",
       "vsiAuthor": "Winston Fletcher",
-      "rationale": "Covers advertising design including print media and outdoor advertising, directly relevant to advertising art and design (C.4.c)."
+      "relevantPathsAI": [
+        "C.4.c"
+      ],
+      "rationaleAI": "Covers advertising design including print media and outdoor advertising, directly relevant to advertising art and design (C.4.c)."
     },
     {
       "vsiTitle": "Branding",
       "vsiAuthor": "Robert Jones",
-      "rationale": "Covers the design of brand identity including signs, symbols, and commercial marks, relevant to design for identification (C.4.d) and advertising design (C.4.c)."
+      "relevantPathsAI": [
+        "C.4",
+        "C.4.c"
+      ],
+      "rationaleAI": "Covers the design of brand identity including signs, symbols, and commercial marks, relevant to design for identification (C.4.d) and advertising design (C.4.c)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "rationale": "Covers handwriting systems, calligraphy, and lettering across cultures, directly relevant to C.4.a."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Covers handwriting systems, calligraphy, and lettering across cultures, directly relevant to C.4.a."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
-      "rationale": "Covers Egyptian hieroglyphic writing and decorative inscription, relevant to calligraphy and lettering traditions (C.4.a)."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Covers Egyptian hieroglyphic writing and decorative inscription, relevant to calligraphy and lettering traditions (C.4.a)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers properties of clay, ceramics, glass, metals, and cement -- materials explicitly listed as decorative art media throughout section B."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers properties of clay, ceramics, glass, metals, and cement -- materials explicitly listed as decorative art media throughout section B."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Relevant to the integration of interior design with architecture, including ceilings, floors, walls, windows, and doors (C.3.b)."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Relevant to the integration of interior design with architecture, including ceilings, floors, walls, windows, and doors (C.3.b)."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
-      "rationale": "Modernist design philosophy transformed industrial and interior design, relevant to the relationship between art and functional objects (C.2, C.3)."
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Modernist design philosophy transformed industrial and interior design, relevant to the relationship between art and functional objects (C.2, C.3)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
-      "rationale": "Addresses aesthetic theory including beauty and taste, relevant to the nature and scope of decorative arts as a category distinct from fine art (A)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Addresses aesthetic theory including beauty and taste, relevant to the nature and scope of decorative arts as a category distinct from fine art (A)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
-      "rationale": "Classical Greek and Roman decorative arts including pottery, coins, medals, and temple ornamentation are relevant to B.1, B.5, and C.5.a."
+      "relevantPathsAI": [
+        "B.1",
+        "B.5",
+        "C.5"
+      ],
+      "rationaleAI": "Classical Greek and Roman decorative arts including pottery, coins, medals, and temple ornamentation are relevant to B.1, B.5, and C.5.a."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Covers decorative traditions across cultures including body decoration, textiles, and ceremonial objects (C.1.c, B.10)."
+      "relevantPathsAI": [
+        "C.1.c",
+        "B.10"
+      ],
+      "rationaleAI": "Covers decorative traditions across cultures including body decoration, textiles, and ceremonial objects (C.1.c, B.10)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Prehistoric decorative arts including pottery, jewelry, and body decoration are among the earliest functional design objects (B.1, C.1)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.1"
+      ],
+      "rationaleAI": "Prehistoric decorative arts including pottery, jewelry, and body decoration are among the earliest functional design objects (B.1, C.1)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Covers the properties of gemstones and decorative stones such as quartz and pyrite, relevant to gems as decorative materials (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Covers the properties of gemstones and decorative stones such as quartz and pyrite, relevant to gems as decorative materials (B.3)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers the chemistry of materials including ceramics, glass, and metals relevant to understanding decorative art media (B.1, B.4, B.5)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Covers the chemistry of materials including ceramics, glass, and metals relevant to understanding decorative art media (B.1, B.4, B.5)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

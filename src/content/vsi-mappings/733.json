@@ -4,62 +4,107 @@
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Explains how loads flow through beams, frames, and shells in A.7.b (structural systems), with detail on wood, masonry, concrete, and steel construction in A.6 and bridge design in B.3."
+      "relevantPathsAI": [
+        "A.7",
+        "A.6",
+        "B.3"
+      ],
+      "rationaleAI": "Explains how loads flow through beams, frames, and shells in A.7.b (structural systems), with detail on wood, masonry, concrete, and steel construction in A.6 and bridge design in B.3."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "The definitive introduction to B (civil engineering works), addressing the design and construction of dams (B.1), bridges (B.3), tunnels (B.4), harbour works (B.5), and lighthouses (B.6)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "B.4",
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "The definitive introduction to B (civil engineering works), addressing the design and construction of dams (B.1), bridges (B.3), tunnels (B.4), harbour works (B.5), and lighthouses (B.6)."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Explores how architectural vision translates into buildable form, directly relevant to A.1 (preconstruction planning and design) and the interplay between aesthetics and construction technology."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Explores how architectural vision translates into buildable form, directly relevant to A.1 (preconstruction planning and design) and the interplay between aesthetics and construction technology."
     },
     {
       "vsiTitle": "Modern architecture",
       "vsiAuthor": "Adam Sharr",
-      "rationale": "Traces how reinforced and prestressed concrete (A.3.i) and steel-frame construction (A.6.c-d) enabled the radical forms of twentieth-century buildings."
+      "relevantPathsAI": [
+        "A.3.i",
+        "A.6.c"
+      ],
+      "rationaleAI": "Traces how reinforced and prestressed concrete (A.3.i) and steel-frame construction (A.6.c-d) enabled the radical forms of twentieth-century buildings."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Provides the materials-science foundation for A.3 (building materials: cement, ceramics, glass, metals, concrete, plastics) and A.4 (testing of building materials)."
+      "relevantPathsAI": [
+        "A.3",
+        "A.4"
+      ],
+      "rationaleAI": "Provides the materials-science foundation for A.3 (building materials: cement, ceramics, glass, metals, concrete, plastics) and A.4 (testing of building materials)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Addresses how buildings fit into larger urban systems, essential for understanding A.1 (preconstruction planning and design programming) and infrastructure integration."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses how buildings fit into larger urban systems, essential for understanding A.1 (preconstruction planning and design programming) and infrastructure integration."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "rationale": "Examines site design and the integration of buildings with surrounding landscapes, directly relevant to A.1 (preconstruction planning)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Examines site design and the integration of buildings with surrounding landscapes, directly relevant to A.1 (preconstruction planning)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Essential for understanding A.8 (acoustics and sound-control techniques), explaining how sound behaves in enclosed spaces and how buildings manage noise."
+      "relevantPathsAI": [
+        "A.8"
+      ],
+      "rationaleAI": "Essential for understanding A.8 (acoustics and sound-control techniques), explaining how sound behaves in enclosed spaces and how buildings manage noise."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Geological conditions determine foundation requirements (A.7.a) and the suitability of stone as a building material (A.3.e), making this a key reference for site assessment."
+      "relevantPathsAI": [
+        "A.7",
+        "A.3"
+      ],
+      "rationaleAI": "Geological conditions determine foundation requirements (A.7.a) and the suitability of stone as a building material (A.3.e), making this a key reference for site assessment."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Surveying grew out of navigational science, and this volume illuminates A.2 (surveying procedures) and the precision techniques used to lay out building foundations."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Surveying grew out of navigational science, and this volume illuminates A.2 (surveying procedures) and the precision techniques used to lay out building foundations."
     },
     {
       "vsiTitle": "British Architecture",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Traces the evolution of construction techniques (A.6) and building components (A.7) across centuries of British architectural development, from medieval timber to Georgian masonry."
+      "relevantPathsAI": [
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Traces the evolution of construction techniques (A.6) and building components (A.7) across centuries of British architectural development, from medieval timber to Georgian masonry."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "A broad introduction to the engineering principles that underpin both A (general building construction) and B (civil engineering works), connecting theory to practice."
+      "relevantPathsAI": [],
+      "rationaleAI": "A broad introduction to the engineering principles that underpin both A (general building construction) and B (civil engineering works), connecting theory to practice."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

@@ -4,72 +4,118 @@
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Core text covering individual activities (food getting, aggression, reproduction), kin selection, alarm calls, parental care, and social behaviour (A, C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Core text covering individual activities (food getting, aggression, reproduction), kin selection, alarm calls, parental care, and social behaviour (A, C)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Directly covers habituation, sensitization, classical and operant conditioning, and observational learning in animals (B.1, B.2, B.4)."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Directly covers habituation, sensitization, classical and operant conditioning, and observational learning in animals (B.1, B.2, B.4)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Directly relevant to classical conditioning, a foundational form of associative learning central to this section (B.2)."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Directly relevant to classical conditioning, a foundational form of associative learning central to this section (B.2)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Examines problem solving, reasoning, and insight as cognitive capacities observable in higher animals (B.5)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Examines problem solving, reasoning, and insight as cognitive capacities observable in higher animals (B.5)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "rationale": "Explores Darwin's theory of mate choice, sexual dimorphism, and reproductive behaviour including intrasexual competition and intersexual selection (A.6)."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Explores Darwin's theory of mate choice, sexual dimorphism, and reproductive behaviour including intrasexual competition and intersexual selection (A.6)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Illustrates mammalian behavioural capacities from basic locomotion and foraging to complex social structures and brain-driven learning (A, B)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Illustrates mammalian behavioural capacities from basic locomotion and foraging to complex social structures and brain-driven learning (A, B)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Examines insect social behaviour, colony dynamics, and pheromone-based communication in eusocial species such as ants, bees, and termites (C.1, C.2, C.4)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.4"
+      ],
+      "rationaleAI": "Examines insect social behaviour, colony dynamics, and pheromone-based communication in eusocial species such as ants, bees, and termites (C.1, C.2, C.4)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Reveals the neural substrates of learning, spatial cognition, and memory that underlie higher behavioural capacities (B.3, B.5)."
+      "relevantPathsAI": [
+        "B.3",
+        "B.5"
+      ],
+      "rationaleAI": "Reveals the neural substrates of learning, spatial cognition, and memory that underlie higher behavioural capacities (B.3, B.5)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Investigates memory formation and spatial memory, directly relevant to maze learning, place cells, and animal navigation (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Investigates memory formation and spatial memory, directly relevant to maze learning, place cells, and animal navigation (B.3)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Analyzes perceptual processing including motion perception and pattern recognition relevant to perceptual and observational learning (B.4)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Analyzes perceptual processing including motion perception and pattern recognition relevant to perceptual and observational learning (B.4)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
-      "rationale": "Explores cognitive abilities, working memory, and problem-solving capacities relevant to complex reasoning in higher animals (B.5)."
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "Explores cognitive abilities, working memory, and problem-solving capacities relevant to complex reasoning in higher animals (B.5)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
-      "rationale": "Addresses foraging behaviour, optimal diet theory, and food-getting strategies directly relevant to basic food-getting activities (A.1)."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Addresses foraging behaviour, optimal diet theory, and food-getting strategies directly relevant to basic food-getting activities (A.1)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Introduces principles of navigation -- landmarks, dead reckoning, celestial cues -- relevant to spatial learning and animal navigation abilities (B.3)."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Introduces principles of navigation -- landmarks, dead reckoning, celestial cues -- relevant to spatial learning and animal navigation abilities (B.3)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Addresses aggression, group dynamics, obedience, and social interaction relevant to the dynamics of social behaviour (A.4, C.3, C.4)."
+      "relevantPathsAI": [
+        "A.4",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Addresses aggression, group dynamics, obedience, and social interaction relevant to the dynamics of social behaviour (A.4, C.3, C.4)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

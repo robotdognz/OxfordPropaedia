@@ -4,67 +4,106 @@
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Directly covers plant tissues (meristematic, dermal, vascular, ground), plant organs (stem, leaf, root), and diverse forms of shoot and root systems (B and C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly covers plant tissues (meristematic, dermal, vascular, ground), plant organs (stem, leaf, root), and diverse forms of shoot and root systems (B and C)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Covers animal tissues, organ systems, and body plans across invertebrate and vertebrate phyla (D and E), including muscle, nervous, and reproductive systems."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers animal tissues, organ systems, and body plans across invertebrate and vertebrate phyla (D and E), including muscle, nervous, and reproductive systems."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Addresses vertebrate organ systems (E.1) including skeletal, muscular, nervous, circulatory, digestive, and respiratory systems, plus their interrelationships."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Addresses vertebrate organ systems (E.1) including skeletal, muscular, nervous, circulatory, digestive, and respiratory systems, plus their interrelationships."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Covers the functional aspects of organ systems and feedback mechanisms (E.2), illustrating the relation of form and function in the human body."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Covers the functional aspects of organ systems and feedback mechanisms (E.2), illustrating the relation of form and function in the human body."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Provides the cellular basis for understanding how cells organize into tissues (B.3, D.6), the building blocks of organs and organ systems."
+      "relevantPathsAI": [
+        "B.3",
+        "D.6"
+      ],
+      "rationaleAI": "Provides the cellular basis for understanding how cells organize into tissues (B.3, D.6), the building blocks of organs and organ systems."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Addresses development of organ systems (E.3) and evolution of plant and animal organs into complex multicellular states (C.5)."
+      "relevantPathsAI": [
+        "E.3",
+        "C.5"
+      ],
+      "rationaleAI": "Addresses development of organ systems (E.3) and evolution of plant and animal organs into complex multicellular states (C.5)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
-      "rationale": "Covers blood as an animal tissue and fluid (D.2) including its roles in transport and its classification among circulating tissues."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Covers blood as an animal tissue and fluid (D.2) including its roles in transport and its classification among circulating tissues."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Relevant to endocrine tissues (D.3) and the reproductive system (E.1.c), covering hormonal coordination among organ systems."
+      "relevantPathsAI": [
+        "D.3",
+        "E.1.c"
+      ],
+      "rationaleAI": "Relevant to endocrine tissues (D.3) and the reproductive system (E.1.c), covering hormonal coordination among organ systems."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Illustrates the relationship between form and function in a specific organ, covering skeletal and connective tissue organization (D.4)."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Illustrates the relationship between form and function in a specific organ, covering skeletal and connective tissue organization (D.4)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Covers a specialized sensory organ illustrating nervous and sensory tissue integration (D.3), and organ development and evolution."
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Covers a specialized sensory organ illustrating nervous and sensory tissue integration (D.3), and organ development and evolution."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "Illustrates vertebrate organ systems and diversity of form and function across mammalian body plans (E)."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Illustrates vertebrate organ systems and diversity of form and function across mammalian body plans (E)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "rationale": "Relevant to biological form and function (A) through microbiome interactions that influence organ function and tissue organization in host organisms."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Relevant to biological form and function (A) through microbiome interactions that influence organ function and tissue organization in host organisms."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "rationale": "Covers the relatively undifferentiated tissues of nonvascular organisms (B.1), including fungal cell walls and tissue organization."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Covers the relatively undifferentiated tissues of nonvascular organisms (B.1), including fungal cell walls and tissue organization."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

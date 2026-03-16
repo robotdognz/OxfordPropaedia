@@ -4,97 +4,149 @@
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
-      "rationale": "Directly addresses theories of intelligence, IQ, Wechsler scales, and cognitive domains -- the core of intelligence distribution and measurement (D, E)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly addresses theories of intelligence, IQ, Wechsler scales, and cognitive domains -- the core of intelligence distribution and measurement (D, E)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Examines psychological measurement, individual differences, and the study of human abilities across cognitive and developmental domains (B, D)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Examines psychological measurement, individual differences, and the study of human abilities across cognitive and developmental domains (B, D)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Explores reasoning, problem solving, and deduction as intellectual abilities underlying theories of intelligence (D)."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Explores reasoning, problem solving, and deduction as intellectual abilities underlying theories of intelligence (D)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Examines the neural basis of intellectual abilities and brain imaging methods used in assessing cognition (D, B.1)."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Examines the neural basis of intellectual abilities and brain imaging methods used in assessing cognition (D, B.1)."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
-      "rationale": "Explores cognitive development and learning in children, relevant to age differences in intelligence and standardized testing (E.4)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Explores cognitive development and learning in children, relevant to age differences in intelligence and standardized testing (E.4)."
     },
     {
       "vsiTitle": "Adolescence",
       "vsiAuthor": "Peter Smith",
-      "rationale": "Addresses developmental changes during adolescence, relevant to age differences in intelligence measurement (E.4)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Addresses developmental changes during adolescence, relevant to age differences in intelligence measurement (E.4)."
     },
     {
       "vsiTitle": "Genius",
       "vsiAuthor": "Andrew Robinson",
-      "rationale": "Directly addresses the gifted and the upper end of intelligence distribution, including creativity and mental illness links (E.3)."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Directly addresses the gifted and the upper end of intelligence distribution, including creativity and mental illness links (E.3)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
-      "rationale": "Explores creative abilities beyond standard intelligence, relevant to the gifted and intellectual capacities (E.3)."
+      "relevantPathsAI": [
+        "E.3"
+      ],
+      "rationaleAI": "Explores creative abilities beyond standard intelligence, relevant to the gifted and intellectual capacities (E.3)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
-      "rationale": "Examines atypical cognitive profiles and intelligence, relevant to problems in establishing intelligence standards (E.1, E.2)."
+      "relevantPathsAI": [
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Examines atypical cognitive profiles and intelligence, relevant to problems in establishing intelligence standards (E.1, E.2)."
     },
     {
       "vsiTitle": "Neurodiversity",
       "vsiAuthor": "Robert Chapman, Sue Fletcher-Watson",
-      "rationale": "Explores diverse cognitive profiles in education and the workplace, relevant to the nature of human abilities and intelligence standards (A, E.1)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Explores diverse cognitive profiles in education and the workplace, relevant to the nature of human abilities and intelligence standards (A, E.1)."
     },
     {
       "vsiTitle": "Eugenics",
       "vsiAuthor": "Philippa Levine",
-      "rationale": "Traces historical attempts to measure and interpret intelligence by race and heredity, directly relevant to group differences controversies (E.4)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Traces historical attempts to measure and interpret intelligence by race and heredity, directly relevant to group differences controversies (E.4)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
-      "rationale": "The measurement and interpretation of group differences in intelligence by race remains a contested topic central to E.4."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "The measurement and interpretation of group differences in intelligence by race remains a contested topic central to E.4."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "rationale": "Heredity and variation shed light on genetic factors in intelligence distribution and personal propensities (E, F)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Heredity and variation shed light on genetic factors in intelligence distribution and personal propensities (E, F)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Statistical methods including experimental design, sampling, and probability are directly relevant to psychological measurement (B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Statistical methods including experimental design, sampling, and probability are directly relevant to psychological measurement (B)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Standardization, accuracy, and measurement scales are directly relevant to the development of standardized tests and assessment (B.2, B.3)."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Standardization, accuracy, and measurement scales are directly relevant to the development of standardized tests and assessment (B.2, B.3)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Explores attitudes -- their nature, functions, development, and how social factors shape them (G)."
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Explores attitudes -- their nature, functions, development, and how social factors shape them (G)."
     },
     {
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
-      "rationale": "Emotions function as personal propensities and idiosyncrasies affecting behaviour (F)."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Emotions function as personal propensities and idiosyncrasies affecting behaviour (F)."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
-      "rationale": "Essential for understanding critiques of gender bias in intelligence testing and the interpretation of sex differences in measurement (E.4)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Essential for understanding critiques of gender bias in intelligence testing and the interpretation of sex differences in measurement (E.4)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Explores conditioning, intelligence, and learning, relevant to sensorimotor abilities and the nature of human capacities (A, C)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Explores conditioning, intelligence, and learning, relevant to sensorimotor abilities and the nature of human capacities (A, C)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

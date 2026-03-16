@@ -4,97 +4,169 @@
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "rationale": "The definitive introduction, spanning A (history of agriculture), B (farm management), C (crop farming), and D (livestock farming) in a single volume."
+      "relevantPathsAI": [],
+      "rationaleAI": "The definitive introduction, spanning A (history of agriculture), B (farm management), C (crop farming), and D (livestock farming) in a single volume."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
-      "rationale": "Addresses the downstream side of agriculture: food processing (F), preservation (G), quality control (H), and the search for new food sources (I)."
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Addresses the downstream side of agriculture: food processing (F), preservation (G), quality control (H), and the search for new food sources (I)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Evaluating food quality (H.1) and developing new food products (I) requires the nutritional science framework this volume provides."
+      "relevantPathsAI": [
+        "H.1"
+      ],
+      "rationaleAI": "Evaluating food quality (H.1) and developing new food products (I) requires the nutritional science framework this volume provides."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Plant biology underpins crop farming—propagation, seeding, and cultivation (C.2)—and the major cereal and horticultural crops in C.6."
+      "relevantPathsAI": [
+        "C.2",
+        "C.6"
+      ],
+      "rationaleAI": "Plant biology underpins crop farming—propagation, seeding, and cultivation (C.2)—and the major cereal and horticultural crops in C.6."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Pest and disease control (C.5) and pollution management (B.4) depend on ecological principles that govern agricultural ecosystems."
+      "relevantPathsAI": [
+        "C.5",
+        "B.4"
+      ],
+      "rationaleAI": "Pest and disease control (C.5) and pollution management (B.4) depend on ecological principles that govern agricultural ecosystems."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Forestry is a branch of crop farming, and this volume addresses forest crops including timber and rubber (C.6.c)."
+      "relevantPathsAI": [
+        "C.6.c"
+      ],
+      "rationaleAI": "Forestry is a branch of crop farming, and this volume addresses forest crops including timber and rubber (C.6.c)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
-      "rationale": "Soil microbial communities drive nutrient cycling essential to C.1 (soil preparation) and influence C.5 (pest and disease control) in crop production."
+      "relevantPathsAI": [
+        "C.1",
+        "C.5"
+      ],
+      "rationaleAI": "Soil microbial communities drive nutrient cycling essential to C.1 (soil preparation) and influence C.5 (pest and disease control) in crop production."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Fermentation drives beverage production (F.8, brewing and wine) and food preservation (G.1.d, pickling), while microbiological methods assess food quality (H.1)."
+      "relevantPathsAI": [
+        "F.8",
+        "G.1",
+        "H.1"
+      ],
+      "rationaleAI": "Fermentation drives beverage production (F.8, brewing and wine) and food preservation (G.1.d, pickling), while microbiological methods assess food quality (H.1)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "rationale": "Fungi play dual roles in agriculture: as crop disease organisms (C.5) and as essential agents in yeast-based fermentation for brewing, baking (F.8), and preservation (G.1.d)."
+      "relevantPathsAI": [
+        "C.5",
+        "F.8",
+        "G.1"
+      ],
+      "rationaleAI": "Fungi play dual roles in agriculture: as crop disease organisms (C.5) and as essential agents in yeast-based fermentation for brewing, baking (F.8), and preservation (G.1.d)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Insects are both the primary pest threat to crops (C.5) and, as pollinators and honey producers, valuable livestock in their own right (D.2.f, bees)."
+      "relevantPathsAI": [
+        "C.5",
+        "D.2"
+      ],
+      "rationaleAI": "Insects are both the primary pest threat to crops (C.5) and, as pollinators and honey producers, valuable livestock in their own right (D.2.f, bees)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Genetic principles govern both animal breeding (D.1) and plant propagation (C.2), making this essential for understanding crop and livestock improvement."
+      "relevantPathsAI": [
+        "D.1",
+        "C.2"
+      ],
+      "rationaleAI": "Genetic principles govern both animal breeding (D.1) and plant propagation (C.2), making this essential for understanding crop and livestock improvement."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "rationale": "Selective breeding and hereditary principles have shaped livestock improvement (D.1) for millennia, from Bakewell's sheep to modern genomics."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Selective breeding and hereditary principles have shaped livestock improvement (D.1) for millennia, from Bakewell's sheep to modern genomics."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "rationale": "The biology of cattle, swine, sheep, goats, and horses provides the zoological context for D.2 (major livestock animals)."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "The biology of cattle, swine, sheep, goats, and horses provides the zoological context for D.2 (major livestock animals)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Fishing technology (E) and marine products processing (F.6) depend on understanding marine ecosystems and the species they sustain."
+      "relevantPathsAI": [
+        "E",
+        "F.6"
+      ],
+      "rationaleAI": "Fishing technology (E) and marine products processing (F.6) depend on understanding marine ecosystems and the species they sustain."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Bacteria are agents of fermentation and pickling (G.1.d), threats to livestock health (D.3), and subjects of microbiological food quality evaluation (H.1)."
+      "relevantPathsAI": [
+        "G.1",
+        "D.3",
+        "H.1"
+      ],
+      "rationaleAI": "Bacteria are agents of fermentation and pickling (G.1.d), threats to livestock health (D.3), and subjects of microbiological food quality evaluation (H.1)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Livestock disease and pest control (D.3) and food safety (H) both require understanding how infectious agents spread and can be contained."
+      "relevantPathsAI": [
+        "D.3",
+        "H"
+      ],
+      "rationaleAI": "Livestock disease and pest control (D.3) and food safety (H) both require understanding how infectious agents spread and can be contained."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Shifting weather patterns reshape farming (B.4) and threaten specialized crop production (C.4), making climate science essential to agricultural planning."
+      "relevantPathsAI": [
+        "B.4",
+        "C.4"
+      ],
+      "rationaleAI": "Shifting weather patterns reshape farming (B.4) and threaten specialized crop production (C.4), making climate science essential to agricultural planning."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Sustainable agriculture balances pollution control (B.4) with the need to develop new food sources (I), a challenge this volume addresses directly."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Sustainable agriculture balances pollution control (B.4) with the need to develop new food sources (I), a challenge this volume addresses directly."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "rationale": "Invasive pests and disease organisms (C.5) threaten crop farming worldwide, and this volume explains their pathways, impacts, and management."
+      "relevantPathsAI": [
+        "C.5"
+      ],
+      "rationaleAI": "Invasive pests and disease organisms (C.5) threaten crop farming worldwide, and this volume explains their pathways, impacts, and management."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

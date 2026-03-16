@@ -4,117 +4,195 @@
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "A broad introduction to computing, spanning hardware, programming, languages, and information processing systems (D, H)."
+      "relevantPathsAI": [],
+      "rationaleAI": "A broad introduction to computing, spanning hardware, programming, languages, and information processing systems (D, H)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Explores the theoretical foundations of computing including programming systems, language design, and artificial intelligence (D.2, D.3, D.5)."
+      "relevantPathsAI": [
+        "D.2",
+        "D.3",
+        "D.5"
+      ],
+      "rationaleAI": "Explores the theoretical foundations of computing including programming systems, language design, and artificial intelligence (D.2, D.3, D.5)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Traces the evolution from the abacus and mechanical calculators (B) through the development of modern electronic computers (D)."
+      "relevantPathsAI": [
+        "B",
+        "D"
+      ],
+      "rationaleAI": "Traces the evolution from the abacus and mechanical calculators (B) through the development of modern electronic computers (D)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Directly addresses artificial intelligence including expert systems, natural-language processing, computer vision, and robotics (D.5)."
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Directly addresses artificial intelligence including expert systems, natural-language processing, computer vision, and robotics (D.5)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "rationale": "Provides the theoretical framework for understanding communication and information that underpins all information processing systems (A, H)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Provides the theoretical framework for understanding communication and information that underpins all information processing systems (A, H)."
     },
     {
       "vsiTitle": "Big Data",
       "vsiAuthor": "Dawn E. Holmes",
-      "rationale": "Addresses mass data storage, database design, and search systems -- the infrastructure behind modern information retrieval (H.1.b, H.1.c, H.2.b)."
+      "relevantPathsAI": [
+        "H.1",
+        "H.1.c",
+        "H.2"
+      ],
+      "rationaleAI": "Addresses mass data storage, database design, and search systems -- the infrastructure behind modern information retrieval (H.1.b, H.1.c, H.2.b)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Directly relevant to signal security, message authentication, and the history of code-making and code-breaking (I.9)."
+      "relevantPathsAI": [
+        "I.9"
+      ],
+      "rationaleAI": "Directly relevant to signal security, message authentication, and the history of code-making and code-breaking (I.9)."
     },
     {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
-      "rationale": "Examines electronic networks and telecommunications systems that form the backbone of modern communications (I.4, I.8)."
+      "relevantPathsAI": [
+        "I.4",
+        "I.8"
+      ],
+      "rationaleAI": "Examines electronic networks and telecommunications systems that form the backbone of modern communications (I.4, I.8)."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Addresses photographic technology for both still and motion-picture imaging (G.1, G.2)."
+      "relevantPathsAI": [
+        "G.1",
+        "G.2"
+      ],
+      "rationaleAI": "Addresses photographic technology for both still and motion-picture imaging (G.1, G.2)."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
-      "rationale": "Explores the media landscape from traditional publishing (I.1) through modern broadcasting and digital communications."
+      "relevantPathsAI": [
+        "I.1"
+      ],
+      "rationaleAI": "Explores the media landscape from traditional publishing (I.1) through modern broadcasting and digital communications."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Focuses on robotics as a key application of artificial intelligence, from industrial automation to autonomous systems (D.5)."
+      "relevantPathsAI": [
+        "D.5"
+      ],
+      "rationaleAI": "Focuses on robotics as a key application of artificial intelligence, from industrial automation to autonomous systems (D.5)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
-      "rationale": "Explores how technology has transformed music through recording and reproducing devices -- mechanical, magnetic, and optical (F)."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Explores how technology has transformed music through recording and reproducing devices -- mechanical, magnetic, and optical (F)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to holography and the optical systems that underlie modern audio-visual technology (F.3, G.3)."
+      "relevantPathsAI": [
+        "F.3",
+        "G.3"
+      ],
+      "rationaleAI": "Relevant to holography and the optical systems that underlie modern audio-visual technology (F.3, G.3)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "The physics of waves underpins radio communications (I.5), radar (J.1), sonar (J.2), and modern telecommunications."
+      "relevantPathsAI": [
+        "I.5",
+        "J.1",
+        "J.2"
+      ],
+      "rationaleAI": "The physics of waves underpins radio communications (I.5), radar (J.1), sonar (J.2), and modern telecommunications."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Relevant to sound recording technologies from phonographs to digital systems, and the principles of high-fidelity reproduction (F, F.5)."
+      "relevantPathsAI": [
+        "F.5"
+      ],
+      "rationaleAI": "Relevant to sound recording technologies from phonographs to digital systems, and the principles of high-fidelity reproduction (F, F.5)."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
-      "rationale": "Addresses detection and remote sensing systems, including the electronic monitoring technologies that raise contemporary privacy concerns (J)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses detection and remote sensing systems, including the electronic monitoring technologies that raise contemporary privacy concerns (J)."
     },
     {
       "vsiTitle": "The History of Cinema",
       "vsiAuthor": "Geoffrey Nowell-Smith",
-      "rationale": "Traces the technological evolution of motion-picture photography and film production from early cinema to digital formats (G.2)."
+      "relevantPathsAI": [
+        "G.2"
+      ],
+      "rationaleAI": "Traces the technological evolution of motion-picture photography and film production from early cinema to digital formats (G.2)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
-      "rationale": "Spans printing technology from traditional plate-making and press work (E.3, E.4) to electronic and digital printing (H.1.d)."
+      "relevantPathsAI": [
+        "E.3",
+        "E.4",
+        "H.1"
+      ],
+      "rationaleAI": "Spans printing technology from traditional plate-making and press work (E.3, E.4) to electronic and digital printing (H.1.d)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
-      "rationale": "Addresses the legal frameworks -- copyright, patents, and digital rights -- that govern publishing (I.1) and information systems (H)."
+      "relevantPathsAI": [
+        "H",
+        "I.1"
+      ],
+      "rationaleAI": "Addresses the legal frameworks -- copyright, patents, and digital rights -- that govern publishing (I.1) and information systems (H)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "The physics of semiconductors and integrated circuits (K.1.a, K.1.c) provides the foundation for all modern computing hardware."
+      "relevantPathsAI": [
+        "K.1",
+        "K.1.c"
+      ],
+      "rationaleAI": "The physics of semiconductors and integrated circuits (K.1.a, K.1.c) provides the foundation for all modern computing hardware."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
-      "rationale": "Examines dictionaries and lexicons as structured information systems for reference and education (H.2.c.i)."
+      "relevantPathsAI": [
+        "H.2.c"
+      ],
+      "rationaleAI": "Examines dictionaries and lexicons as structured information systems for reference and education (H.2.c.i)."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "rationale": "Nanotechnology enables continued miniaturization of integrated circuits and microprocessors at the heart of computing (K.1.c)."
+      "relevantPathsAI": [
+        "K.1.c"
+      ],
+      "rationaleAI": "Nanotechnology enables continued miniaturization of integrated circuits and microprocessors at the heart of computing (K.1.c)."
     },
     {
       "vsiTitle": "Biometrics",
       "vsiAuthor": "Michael Fairhurst",
-      "rationale": "Addresses biometric sensing devices and pattern recognition, connecting physical measurement to information processing (K.2)."
+      "relevantPathsAI": [
+        "K.2"
+      ],
+      "rationaleAI": "Addresses biometric sensing devices and pattern recognition, connecting physical measurement to information processing (K.2)."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

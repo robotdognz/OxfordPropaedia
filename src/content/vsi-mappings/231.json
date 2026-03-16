@@ -4,87 +4,156 @@
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Covers continental structure, oceanic crust, mountain ranges, and tectonic processes directly relevant to the physical features described throughout this section."
+      "relevantPathsAI": [],
+      "rationaleAI": "Covers continental structure, oceanic crust, mountain ranges, and tectonic processes directly relevant to the physical features described throughout this section."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "rationale": "Directly addresses oceanic ridges (G), deep-sea trenches (D), subduction zones, mountain ranges (F), and volcanic island arcs as products of plate boundary interactions."
+      "relevantPathsAI": [
+        "D",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Directly addresses oceanic ridges (G), deep-sea trenches (D), subduction zones, mountain ranges (F), and volcanic island arcs as products of plate boundary interactions."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Covers the geophysical properties of continental shields (B.1), oceanic crust (D.1.a), sea-floor spreading (G), and techniques for studying subsurface structure (C.1)."
+      "relevantPathsAI": [
+        "B.1",
+        "C.1",
+        "D.1",
+        "G"
+      ],
+      "rationaleAI": "Covers the geophysical properties of continental shields (B.1), oceanic crust (D.1.a), sea-floor spreading (G), and techniques for studying subsurface structure (C.1)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Provides an overview of continental and oceanic physiography (A.2, A.3), continental drift, and the geological processes shaping the Earth's major surface features."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Provides an overview of continental and oceanic physiography (A.2, A.3), continental drift, and the geological processes shaping the Earth's major surface features."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
-      "rationale": "Covers oceanic physiography (A.3.b), continental margins (C), oceanic ridges (G), deep-sea trenches (D.1.b), abyssal plains, and seamounts."
+      "relevantPathsAI": [
+        "A.3",
+        "C",
+        "D.1",
+        "G"
+      ],
+      "rationaleAI": "Covers oceanic physiography (A.3.b), continental margins (C), oceanic ridges (G), deep-sea trenches (D.1.b), abyssal plains, and seamounts."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
-      "rationale": "Directly relevant to mountain types (F.1), the worldwide system of mountain ranges (F.2), and alpine valleys and landforms."
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Directly relevant to mountain types (F.1), the worldwide system of mountain ranges (F.2), and alpine valleys and landforms."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Covers volcanic mountains (F.1), volcanic island arcs (F.2.d), and the Circum-Pacific volcanic system (F.2.a)."
+      "relevantPathsAI": [
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Covers volcanic mountains (F.1), volcanic island arcs (F.2.d), and the Circum-Pacific volcanic system (F.2.a)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "rationale": "Directly corresponds to section E on coral islands, coral reefs, and atolls."
+      "relevantPathsAI": [],
+      "rationaleAI": "Directly corresponds to section E on coral islands, coral reefs, and atolls."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Covers the physical landscape features including plateaus, rift valleys (B.2), coastal landforms, and the geomorphic context of the Earth's surface relief (A)."
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Covers the physical landscape features including plateaus, rift valleys (B.2), coastal landforms, and the geomorphic context of the Earth's surface relief (A)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to the rock types constituting continental shields (B.1), folded mountain ranges (F.2.e), oceanic crust (D.1.a), and sediments of the ocean floor (D.1.b)."
+      "relevantPathsAI": [
+        "B.1",
+        "F.2",
+        "D.1"
+      ],
+      "rationaleAI": "Relevant to the rock types constituting continental shields (B.1), folded mountain ranges (F.2.e), oceanic crust (D.1.a), and sediments of the ocean floor (D.1.b)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Relevant to the constituent rocks and minerals of continental shield areas (B.1) and the rock types in mountain ranges (F.2.e)."
+      "relevantPathsAI": [
+        "B.1",
+        "F.2"
+      ],
+      "rationaleAI": "Relevant to the constituent rocks and minerals of continental shield areas (B.1) and the rock types in mountain ranges (F.2.e)."
     },
     {
       "vsiTitle": "Lakes",
       "vsiAuthor": "Warwick F. Vincent",
-      "rationale": "Directly relevant to water bodies occupying fault-bounded structural depressions (B.2.c), including lakes and landlocked seas."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Directly relevant to water bodies occupying fault-bounded structural depressions (B.2.c), including lakes and landlocked seas."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
-      "rationale": "Covers the physiography of Antarctica (A.2), its ice sheet, mountains, and surrounding oceanic features relevant to continental and oceanic description."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Covers the physiography of Antarctica (A.2), its ice sheet, mountains, and surrounding oceanic features relevant to continental and oceanic description."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
-      "rationale": "Covers Arctic continental shelf features (C), oceanic ridges in the Arctic basin, and the physical environment of the Arctic region (A.2, A.3)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "C"
+      ],
+      "rationaleAI": "Covers Arctic continental shelf features (C), oceanic ridges in the Arctic basin, and the physical environment of the Arctic region (A.2, A.3)."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
-      "rationale": "Relevant to understanding glacially shaped continental physiography (A.2) and the relationship between glaciation and sea level affecting coastlines (A.1)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Relevant to understanding glacially shaped continental physiography (A.2) and the relationship between glaciation and sea level affecting coastlines (A.1)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
-      "rationale": "Covers ice sheets that shaped continental physiography (A.2) and their effects on sea level, coastlines (A.1), and continental shelf exposure (C)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "C"
+      ],
+      "rationaleAI": "Covers ice sheets that shaped continental physiography (A.2) and their effects on sea level, coastlines (A.1), and continental shelf exposure (C)."
     },
     {
       "vsiTitle": "Geography",
       "vsiAuthor": "John A. Matthews, David T. Herbert",
-      "rationale": "Covers the physiography of continents (A.2), the distribution of land and sea (A.1), and the physical geography framework for understanding surface features."
+      "relevantPathsAI": [
+        "A.2",
+        "A.1"
+      ],
+      "rationaleAI": "Covers the physiography of continents (A.2), the distribution of land and sea (A.1), and the physical geography framework for understanding surface features."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }

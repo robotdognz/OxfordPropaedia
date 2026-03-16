@@ -4,52 +4,83 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Addresses B (machines and machine components), C (machine tools), and the engineering principles behind mechanical systems."
+      "relevantPathsAI": [],
+      "rationaleAI": "Addresses B (machines and machine components), C (machine tools), and the engineering principles behind mechanical systems."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Directly covers D.3 (robots) in computer-aided machining and D.4 (computer-integrated manufacturing)."
+      "relevantPathsAI": [
+        "D.3",
+        "D.4"
+      ],
+      "rationaleAI": "Directly covers D.3 (robots) in computer-aided machining and D.4 (computer-integrated manufacturing)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Explains D.1 (computer numerical control), D.2 (CAD/CAM), and D.4 (computer-integrated manufacturing) from a computing perspective."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.4"
+      ],
+      "rationaleAI": "Explains D.1 (computer numerical control), D.2 (CAD/CAM), and D.4 (computer-integrated manufacturing) from a computing perspective."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Examines the AI systems driving automated machining and adaptive manufacturing, relevant to D.4 (computer-integrated manufacturing)."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Examines the AI systems driving automated machining and adaptive manufacturing, relevant to D.4 (computer-integrated manufacturing)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Provides the algorithmic and programming foundations for D.1-D.4 (computer numerical control, CAD/CAM, computer-integrated manufacturing)."
+      "relevantPathsAI": [
+        "D.1",
+        "D.4"
+      ],
+      "rationaleAI": "Provides the algorithmic and programming foundations for D.1-D.4 (computer numerical control, CAD/CAM, computer-integrated manufacturing)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Explains materials properties relevant to C (machine tools for shaping metals and other materials) and B.4 (friction and lubricants)."
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Explains materials properties relevant to C (machine tools for shaping metals and other materials) and B.4 (friction and lubricants)."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "rationale": "Introduces nonconventional machining at the nanoscale, relevant to E (electron-beam, ion beam, and laser machining methods)."
+      "relevantPathsAI": [],
+      "rationaleAI": "Introduces nonconventional machining at the nanoscale, relevant to E (electron-beam, ion beam, and laser machining methods)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Traces the history of machine tools (C.1) and the pivotal transition from hand tools to power-driven machinery."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Traces the history of machine tools (C.1) and the pivotal transition from hand tools to power-driven machinery."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "rationale": "Documents the early history of hand tools (A.1), from Paleolithic stone implements through Neolithic and early metal tool development."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Documents the early history of hand tools (A.1), from Paleolithic stone implements through Neolithic and early metal tool development."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
-      "rationale": "Explores design principles behind tools and machine components, relevant to D.2 (computer-aided design) and industrial design methodology."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Explores design principles behind tools and machine components, relevant to D.2 (computer-aided design) and industrial design methodology."
     }
-  ]
+  ],
+  "_curatedBy": "ai"
 }
