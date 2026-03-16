@@ -151,7 +151,7 @@ function prepareWikiEntries() {
   return catalog.articles.map((a) => ({
     id: a.title,
     title: a.title,
-    source: cleanWikiMarkup(a.extract || '').substring(0, 2000),
+    source: cleanWikiMarkup(a.extract || '').substring(0, 4000),
     toc: (a.toc || []).join(', '),
     category: a.category || '',
     wikiCategories: (a.wikiCategories || []).slice(0, 15).join(', '),
