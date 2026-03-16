@@ -4,6 +4,7 @@
  *
  * Modes:
  *   --mode remap    Improve existing mappings with better paths and rationales (default)
+ *   --mode assign   Full recompute: select items for each section from catalog + assign paths
  *   --mode discover Find which sections an item maps to from the full catalog
  *
  * Usage:
@@ -12,10 +13,12 @@
  *   node scripts/generate-mappings-ai.mjs --all --empty-only               # Only sections with empty paths
  *   node scripts/generate-mappings-ai.mjs --all --limit 5                  # Process first 5 sections
  *   node scripts/generate-mappings-ai.mjs --all --type vsi                 # VSI only
+ *   node scripts/generate-mappings-ai.mjs --mode assign --all --type wikipedia  # Full Wikipedia recompute
+ *   node scripts/generate-mappings-ai.mjs --mode assign --section 824 --type vsi  # Assign one section
  *   node scripts/generate-mappings-ai.mjs --mode discover --item "Buddhism::Damien Keown" --type vsi
  *   node scripts/generate-mappings-ai.mjs --mode discover --new-only --type vsi
- *   node scripts/generate-mappings-ai.mjs --mode discover --all --type wikipedia --limit 10
  *   node scripts/generate-mappings-ai.mjs --validate                       # Validate existing mappings
+ *   node scripts/generate-mappings-ai.mjs --coverage                       # Coverage gap report
  *   node scripts/generate-mappings-ai.mjs --section 824 --dry-run          # Preview without writing
  *
  * Requires:
@@ -36,6 +39,7 @@ async function getAnthropicClient() {
 const MODEL = 'claude-sonnet-4-6';
 const CONCURRENCY = 3;
 const DISCOVER_TOP_SECTIONS = 50; // candidate sections per item in discover mode
+const ASSIGN_CANDIDATES = 60; // candidate items per section in assign mode
 
 // --- CLI args ---
 const args = process.argv.slice(2);
@@ -60,6 +64,14 @@ const dryRunFlag = hasFlag('dry-run');
 if (!validateFlag && !coverageFlag) {
   if (modeFlag === 'remap' && !sectionFlag && !allFlag) {
     console.error('Remap mode requires --section CODE or --all');
+    process.exit(1);
+  }
+  if (modeFlag === 'assign' && !sectionFlag && !allFlag) {
+    console.error('Assign mode requires --section CODE or --all');
+    process.exit(1);
+  }
+  if (modeFlag === 'assign' && typeFlag === 'both') {
+    console.error('Assign mode requires --type vsi or --type wikipedia');
     process.exit(1);
   }
   if (modeFlag === 'discover' && !itemFlag && !allFlag && !newOnlyFlag) {
@@ -567,6 +579,170 @@ async function processDiscoverItem(client, systemPrompt, item, allSections, type
   return { discovered: results.length };
 }
 
+// --- Assign mode: select articles for a section from candidates + assign paths ---
+
+function buildAssignSystemPrompt(taxonomy) {
+  return `You are a knowledge-mapping agent for the Propaedia — a taxonomy of all human knowledge.
+
+You receive a section's full outline and a list of candidate items (books or articles) with their summaryAI. Your job is to:
+1. DECIDE which candidates genuinely belong in this section (reject those with only tangential overlap)
+2. For each confirmed item, assign the specific outline paths it covers (relevantPathsAI)
+3. Write a brief rationale (1-2 sentences) explaining the connection
+
+The full Propaedia taxonomy for context:
+
+${taxonomy}
+
+IMPORTANT RULES:
+- Only confirm items with genuine, substantive topical overlap — not just tangential mention of a keyword
+- Every outline path in the section should ideally have at least one item covering it, so that users clicking any subsection see recommendations. If a candidate is the only item that covers a particular outline path, include it even if the overlap is moderate.
+- Use the most specific path that applies (e.g., A.3.b rather than just A), AND also include broader parent paths if the item covers the topic broadly
+- Write rationales that reference specific concepts from the item's summary and specific outline paths
+- Do not use framing like "This article covers..." — write direct factual rationales
+- It is fine to reject many candidates — quality over quantity
+- If no candidates genuinely match, return an empty array
+
+Output format — a JSON array (only include confirmed items):
+[{
+  "id": "item identifier",
+  "relevantPathsAI": ["A.1", "B.3", ...],
+  "rationaleAI": "Direct factual rationale referencing outline paths..."
+}]`;
+}
+
+function rankCandidatesForSection(section, allItems) {
+  const scored = allItems
+    .filter((item) => item.summaryAI)
+    .map((item) => {
+      const textParts = [item.summaryAI, item.title];
+      if (item.keywords) textParts.push(item.keywords);
+      if (item.subject) textParts.push(item.subject);
+      const itemTokens = tokenize(textParts.join(' '));
+      return { ...item, score: countOverlap(itemTokens, section.tokens) };
+    })
+    .filter((item) => item.score > 0);
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, ASSIGN_CANDIDATES);
+}
+
+async function generateAssignMappings(client, systemPrompt, section, candidates, type) {
+  // Include all outline paths and flag which ones currently have no coverage from OTHER source types
+  const outlinePaths = collectAllOutlinePaths(section.sectionCode);
+
+  // Check coverage from the OTHER type (e.g., if assigning wikipedia, check what VSI already covers)
+  const otherType = type === 'wiki' ? 'vsi-mappings' : 'wiki-mappings';
+  const otherPaths = new Set();
+  const otherFile = `src/content/${otherType}/${section.sectionCode}.json`;
+  if (fs.existsSync(otherFile)) {
+    const otherData = JSON.parse(fs.readFileSync(otherFile, 'utf8'));
+    for (const m of otherData.mappings) {
+      for (const p of m.relevantPathsAI || []) otherPaths.add(p);
+    }
+  }
+
+  // Find paths not covered by the other type
+  const uncoveredByOther = outlinePaths.filter((op) => {
+    for (const ip of otherPaths) {
+      if (pathCovers(ip, op.path)) return false;
+    }
+    return true;
+  });
+
+  const coverageNote = uncoveredByOther.length > 0
+    ? `\n\nCOVERAGE PRIORITY — The following ${uncoveredByOther.length} outline paths have NO recommendations from other source types. ` +
+      `Prioritize including candidates that cover these paths, even if the overlap is moderate, so that every subsection has at least one recommendation:\n` +
+      uncoveredByOther.map((u) => `  ${u.path}: ${u.text.substring(0, 80)}`).join('\n')
+    : '';
+
+  const userMessage = `Section ${section.sectionCode}: ${section.title}
+
+Outline:
+${section.outlineText}${coverageNote}
+
+---
+
+Candidate items to evaluate (${candidates.length} ${type === 'vsi' ? 'VSI books' : 'Wikipedia articles'}):
+
+${formatItemsForPrompt(candidates, type)}`;
+
+  const response = await client.messages.create({
+    model: MODEL,
+    max_tokens: 8192,
+    system: systemPrompt,
+    messages: [{ role: 'user', content: userMessage }],
+  });
+
+  const text = response.content[0].text;
+  const jsonMatch = text.match(/\[[\s\S]*\]/);
+  if (!jsonMatch) {
+    console.error(`  Failed to parse JSON for section ${section.sectionCode}`);
+    return [];
+  }
+
+  try {
+    return JSON.parse(jsonMatch[0]);
+  } catch (err) {
+    console.error(`  JSON parse error for section ${section.sectionCode}: ${err.message}`);
+    return [];
+  }
+}
+
+function writeAssignResults(sectionCode, results, type) {
+  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
+  const filePath = `${dir}/${sectionCode}.json`;
+
+  const mappings = results.map((r) => {
+    if (type === 'vsi') {
+      // Parse "Title::Author" ID format
+      const parts = r.id.split('::');
+      return {
+        vsiTitle: parts[0],
+        vsiAuthor: parts[1] || '',
+        relevantPathsAI: r.relevantPathsAI || [],
+        rationaleAI: r.rationaleAI || '',
+      };
+    } else {
+      return {
+        articleTitle: r.id,
+        relevantPathsAI: r.relevantPathsAI || [],
+        rationaleAI: r.rationaleAI || '',
+      };
+    }
+  });
+
+  const output = { sectionCode, mappings, _curatedBy: 'ai' };
+  fs.writeFileSync(filePath, JSON.stringify(output, null, 2) + '\n');
+}
+
+async function processAssignSection(client, systemPrompt, sectionCode, type, allItems, sectionData) {
+  const section = sectionData || loadSectionOutline(sectionCode);
+  if (!section) {
+    return { confirmed: 0, candidates: 0, skipped: true };
+  }
+  if (!section.tokens) section.tokens = tokenize(section.fullText);
+
+  const candidates = rankCandidatesForSection(section, allItems);
+  if (candidates.length === 0) {
+    return { confirmed: 0, candidates: 0, skipped: true };
+  }
+
+  if (dryRunFlag) {
+    console.log(`  Section ${sectionCode} (${type}): ${candidates.length} candidates (top: ${candidates.slice(0, 5).map((c) => c.title).join(', ')})`);
+    return { confirmed: 0, candidates: candidates.length, skipped: false };
+  }
+
+  const results = await generateAssignMappings(client, systemPrompt, section, candidates, type);
+  if (results.length > 0) {
+    writeAssignResults(sectionCode, results, type);
+  } else {
+    // Write empty mapping file to indicate this section was processed
+    writeAssignResults(sectionCode, [], type);
+  }
+
+  return { confirmed: results.length, candidates: candidates.length, skipped: false };
+}
+
 // --- Coverage analysis ---
 function pathCovers(itemPath, outlinePath) {
   return itemPath === outlinePath ||
@@ -715,10 +891,12 @@ async function main() {
     return;
   }
 
-  const client = await getAnthropicClient();
   const taxonomy = loadTaxonomy();
+  const client = dryRunFlag ? null : await getAnthropicClient();
 
-  if (modeFlag === 'discover') {
+  if (modeFlag === 'assign') {
+    await runAssignMode(client, taxonomy);
+  } else if (modeFlag === 'discover') {
     await runDiscoverMode(client, taxonomy);
   } else {
     await runRemapMode(client, taxonomy);
@@ -833,6 +1011,89 @@ async function runDiscoverMode(client, taxonomy) {
   }
 
   console.log(`Done. Discovered ${totalDiscovered} section mappings for ${items.length} items.`);
+}
+
+async function runAssignMode(client, taxonomy) {
+  const systemPrompt = buildAssignSystemPrompt(taxonomy);
+  const type = typeFlag === 'wikipedia' ? 'wiki' : 'vsi';
+  const catalog = type === 'vsi' ? loadVsiCatalog() : loadWikiCatalog();
+
+  const withSummary = [...catalog.values()].filter((v) => v.summaryAI).length;
+  console.log(`${type} catalog: ${withSummary}/${catalog.size} have summaryAI`);
+
+  if (withSummary === 0) {
+    console.error('No items have summaryAI. Run generate-summary-ai.mjs first.');
+    process.exit(1);
+  }
+
+  // Pre-compute all items as array with tokens for ranking
+  const allItems = [...catalog.entries()].map(([id, entry]) => ({
+    id,
+    title: entry.title,
+    author: entry.author,
+    summaryAI: entry.summaryAI,
+    keywords: entry.keywords,
+    subject: entry.subject,
+  }));
+
+  let sectionCodes = sectionFlag ? [sectionFlag] : getAllSectionCodes().slice(0, limitFlag);
+
+  console.log(`\nMode: assign, Sections: ${sectionCodes.length}, Type: ${type}`);
+  console.log(`Model: ${MODEL}, Concurrency: ${CONCURRENCY}`);
+  console.log(`Candidates per section: up to ${ASSIGN_CANDIDATES} (pre-filtered by token overlap)`);
+  if (dryRunFlag) console.log('DRY RUN — no changes will be written');
+  console.log('');
+
+  let totalConfirmed = 0;
+  let totalCandidates = 0;
+  let totalSkipped = 0;
+
+  // Pre-load all section data with tokens
+  const sectionDataMap = new Map();
+  for (const code of sectionCodes) {
+    const s = loadSectionOutline(code);
+    if (s) {
+      s.tokens = tokenize(s.fullText);
+      sectionDataMap.set(code, s);
+    }
+  }
+
+  for (let i = 0; i < sectionCodes.length; i += CONCURRENCY) {
+    const chunk = sectionCodes.slice(i, i + CONCURRENCY);
+    const promises = chunk.map((code) => {
+      console.log(`  Assigning ${code} (${type})...`);
+      return processAssignSection(client, systemPrompt, code, type, allItems, sectionDataMap.get(code));
+    });
+
+    const results = await Promise.all(promises);
+    for (const r of results) {
+      if (r.skipped) totalSkipped++;
+      else {
+        totalConfirmed += r.confirmed;
+        totalCandidates += r.candidates;
+      }
+    }
+
+    const done = Math.min(i + CONCURRENCY, sectionCodes.length);
+    console.log(`  Progress: ${done}/${sectionCodes.length} sections (${totalConfirmed} items assigned from ${totalCandidates} candidates)\n`);
+  }
+
+  // Post-run coverage check
+  if (!dryRunFlag && totalConfirmed > 0) {
+    console.log('=== Post-assign coverage check ===');
+    let totalPaths = 0;
+    let uncoveredPaths = 0;
+    for (const code of sectionCodes) {
+      const { total, uncovered } = findUncoveredPaths(code);
+      totalPaths += total;
+      uncoveredPaths += uncovered.length;
+    }
+    console.log(`Outline paths in processed sections: ${totalPaths}`);
+    console.log(`Covered: ${totalPaths - uncoveredPaths} (${Math.round((totalPaths - uncoveredPaths) / totalPaths * 100)}%)`);
+    console.log(`Uncovered: ${uncoveredPaths} (${Math.round(uncoveredPaths / totalPaths * 100)}%)`);
+  }
+
+  console.log(`\nDone. Assigned ${totalConfirmed} items across ${sectionCodes.length - totalSkipped} sections (${totalCandidates} candidates evaluated).`);
 }
 
 main().catch((err) => {
