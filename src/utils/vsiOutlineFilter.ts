@@ -4,6 +4,7 @@ export interface OutlineSelectionDetail {
   sectionCode: string;
   outlinePath: string;
   text: string;
+  childrenText?: string[];
 }
 
 export interface SearchableVsiMapping {
@@ -102,37 +103,54 @@ function countTokenMatches(tokenSet: Set<string>, contextTokens: string[]): numb
 }
 
 function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelectionDetail): number {
-  const searchableText = `${mapping.vsiTitle} ${mapping.vsiAuthor} ${mapping.rationale}`;
-  const mappingTokens = new Set(tokenize(searchableText));
   const selectionTokens = tokenize(selection.text);
+  const titleTokens = new Set(tokenize(mapping.vsiTitle));
+  const kwToks = keywordTokens(mapping.keywords);
+  const rationaleTokens = new Set(tokenize(mapping.rationale));
 
   let score = 0;
 
+  // Outline path reference in rationale
   if (matchesOutlinePath(mapping.rationale, selection.outlinePath)) {
     score += selection.outlinePath.includes('.') ? 5 : 4;
   }
 
-  let matchedTokenCount = 0;
-  for (const token of selectionTokens) {
-    if (mappingTokens.has(token)) {
-      matchedTokenCount += 1;
-      score += token.length >= 8 ? 2 : 1;
-    }
-  }
+  // VSI title matching the selection text — strongest signal
+  const titleMatches = countTokenMatches(titleTokens, selectionTokens);
+  score += titleMatches * 5;
 
-  if (matchedTokenCount >= 2) {
-    score += 2;
-  }
-
-  // Boost if VSI subject matches the selection text
-  const sToks = subjectTokens(mapping.subject);
-  score += countTokenMatches(sToks, selectionTokens) * 2;
-
-  // Boost if VSI keywords match the selection text
-  const kwToks = keywordTokens(mapping.keywords);
+  // Keyword matches against selection text
   const kwMatches = countTokenMatches(kwToks, selectionTokens);
   score += kwMatches * 3;
   if (kwMatches >= 2) score += 3;
+
+  // Subject matches
+  const sToks = subjectTokens(mapping.subject);
+  score += countTokenMatches(sToks, selectionTokens) * 2;
+
+  // Rationale text matches
+  let rationaleMatches = 0;
+  for (const token of selectionTokens) {
+    if (rationaleTokens.has(token)) rationaleMatches++;
+  }
+  score += Math.min(rationaleMatches, 4);
+
+  // Sub-section coverage: reward books that match across more children of the selected item
+  const childrenTexts = selection.childrenText || [];
+  if (childrenTexts.length > 0) {
+    let childrenMatched = 0;
+    for (const childText of childrenTexts) {
+      const childTokens = tokenize(childText);
+      let hasMatch = false;
+      for (const ct of childTokens) {
+        if (titleTokens.has(ct) || kwToks.has(ct)) { hasMatch = true; break; }
+      }
+      if (hasMatch) childrenMatched++;
+    }
+    // Breadth bonus: how many sub-items does this book touch?
+    score += childrenMatched * 2;
+    if (childrenMatched >= 3) score += 5;
+  }
 
   return score;
 }

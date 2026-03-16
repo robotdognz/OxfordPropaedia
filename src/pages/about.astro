@@ -43,9 +43,40 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
       <p>
         Each recommendation includes a short rationale explaining how the VSI maps to
         the section's subject matter. Recommendations are sorted by relevance using
-        keyword data sourced from Oxford Academic. When you click an outline item,
-        the list filters and re-sorts to show the most relevant books for that topic.
+        keyword data sourced from Oxford Academic.
       </p>
+
+      <details class="mt-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
+        <summary class="cursor-pointer text-sm font-semibold text-gray-700">How relevance is calculated</summary>
+        <div class="mt-3 space-y-3 text-sm text-gray-600">
+          <p>
+            Each book receives a relevance score based on how closely it relates to
+            the section you are viewing. A book whose <strong>title</strong> directly
+            names the topic scores highest — if the section is about economics, a book
+            called <em>Economics</em> will naturally rank above a more specialised title
+            like <em>Behavioural Economics</em>.
+          </p>
+          <p>
+            Beyond the title, the scoring considers the book's <strong>subject
+            keywords</strong> (sourced from Oxford Academic) and how well its
+            <strong>description</strong> aligns with the topics covered in the
+            section's outline.
+          </p>
+          <p>
+            When you click an outline item to filter the list, the scoring also looks
+            at the <strong>sub-topics</strong> beneath that item. A book that touches
+            many of those sub-topics ranks higher than one that strongly matches just
+            one narrow area. This favours comprehensive introductions over highly
+            specialised treatments when you are browsing at a broader level of the
+            outline.
+          </p>
+          <p>
+            The relevance percentage shown on each card is relative — the best-scoring
+            book in the current view is always shown as 100%, and the others are scaled
+            proportionally.
+          </p>
+        </div>
+      </details>
       <p>
         The VSI catalogue and keyword data were last updated in <strong>March 2025</strong>,
         covering 793 titles from the Oxford Very Short Introductions series.

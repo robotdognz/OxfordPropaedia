@@ -141,10 +141,20 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
     if ((event?.target as HTMLElement | null)?.closest('a, button')) return;
     if (typeof document === 'undefined') return;
 
+    function collectChildrenText(items: OutlineItem[]): string[] {
+      const texts: string[] = [];
+      for (const child of items) {
+        if (child.text) texts.push(child.text);
+        texts.push(...collectChildrenText(child.children || []));
+      }
+      return texts;
+    }
+
     const detail: OutlineSelectionDetail = {
       sectionCode,
       outlinePath,
       text: item.text,
+      childrenText: collectChildrenText(item.children || []),
     };
 
     document.dispatchEvent(new CustomEvent<OutlineSelectionDetail>(OUTLINE_VSI_SELECT_EVENT, { detail }));

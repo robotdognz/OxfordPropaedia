@@ -120,7 +120,7 @@ export default function VsiCard({
             />
           </div>
           <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">
-            {matchPercent}% match
+            {matchPercent}% relevance
           </span>
         </div>
       )}
