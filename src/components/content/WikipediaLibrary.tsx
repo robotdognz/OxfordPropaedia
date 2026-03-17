@@ -143,7 +143,7 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
       <div class="flex justify-center">
         <div class="flex rounded-lg border border-gray-200 bg-white p-1">
           {([1, 2, 3] as KnowledgeLevel[]).map((lvl) => {
-            const labels: Record<number, string> = { 1: 'Level 1 — 10', 2: 'Level 2 — 100', 3: 'Level 3 — ~1,000' };
+            const labels: Record<number, string> = { 1: 'Level 1 - 10', 2: 'Level 2 - 100', 3: 'Level 3 - ~1,000' };
             return (
               <button
                 key={lvl} type="button" onClick={() => changeLevel(lvl)}
