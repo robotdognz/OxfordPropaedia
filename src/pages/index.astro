@@ -124,6 +124,11 @@ const circleNavigatorParts = parts.map((part) => ({
   title: part.title,
   href: `${base}/part/${part.partNumber}`,
   colorHex: partColorHex[part.partNumber],
+  divisions: part.divisions.map((d: any) => ({
+    divisionId: d.divisionId,
+    romanNumeral: d.romanNumeral,
+    title: d.title,
+  })),
 }));
 
 const figureGroups = [
@@ -239,10 +244,13 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
             The Circle of Learning
           </h2>
           <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-            Drag the ring to rotate it, or pull any part inward to make it the centre.
-            The centre part anchors the circle - rotate to bring other parts to the top
-            and see how they connect. Click a selected part to open it.
+            A visual way to explore the ten parts of the Outline of Knowledge.
+            Drag the ring to rotate it - the part at the top is your current focus,
+            and its divisions are listed below the circle.
+            Pull any part inward to make it the centre, then rotate to see how
+            other parts connect to it. Click a selected part to open it.
             Adler&apos;s essay below explains the thinking behind this arrangement.
+            You can also browse the full outline from the sidebar on any page.
           </p>
         </div>
 

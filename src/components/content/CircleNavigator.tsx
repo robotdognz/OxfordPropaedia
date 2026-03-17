@@ -1,12 +1,19 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
+export interface CircleNavigatorDivision {
+  divisionId: string;
+  romanNumeral: string;
+  title: string;
+}
+
 export interface CircleNavigatorPart {
   partNumber: number;
   partName: string;
   title: string;
   href: string;
   colorHex: string;
+  divisions: CircleNavigatorDivision[];
 }
 
 export interface SectionConnection {
@@ -418,14 +425,16 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
       const nextRotationDegrees = Number(parsed?.rotationDegrees);
       const nextSelectedPartNumber = Number(parsed?.selectedPartNumber);
 
-      if (nextCenterPartNumber !== null && knownParts.has(nextCenterPartNumber)) {
+      const loadedHasCenter = nextCenterPartNumber !== null && knownParts.has(nextCenterPartNumber);
+      if (loadedHasCenter) {
         setCenterPartNumber(nextCenterPartNumber);
       } else if (rawCenter === null) {
         setCenterPartNumber(null);
       }
 
       if (Number.isFinite(nextRotationDegrees)) {
-        setRotationDegrees(snapRotation(nextRotationDegrees));
+        const loadedSegAngle = loadedHasCenter ? RING_SEGMENT_ANGLE : FULL_SEGMENT_ANGLE;
+        setRotationDegrees(snapRotation(nextRotationDegrees, loadedSegAngle));
       }
 
       if (knownParts.has(nextSelectedPartNumber)) {
@@ -1625,61 +1634,97 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
           )}
         </svg>
 
-        {hasCenter && centerPart && (
         <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-[1.1rem] sm:px-5 sm:py-3">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-            Circle of learning
-          </p>
-          <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-            You've chosen to begin your learning from {centerPart.title}, with {topPart.title} as the current focus.
-            {suggestedSections.length > 0 && centerPartNumber !== topPartNumber && (
-              <>{' '}See where these fields connect below.</>
-            )}
-          </p>
-          {suggestedSections.length > 0 && (() => {
-            const isDirect = suggestedSections[0].isDirect;
-            const key = getConnectionKey(centerPartNumber, topPartNumber);
-            const hasConnectionData = !!(connections[key] && connections[key].length > 0);
-            return (
-            <div class="mt-3 border-t border-slate-200 pt-3">
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                {isDirect
-                  ? 'Direct connections'
-                  : hasConnectionData
-                    ? 'Indirect connections'
-                    : 'No direct overlap'}
+          {hasCenter && centerPart ? (
+            <>
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
+                Circle of learning
               </p>
-              <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                {isDirect
-                  ? `Sections where ${centerPart.title.toLowerCase()} and ${topPart.title.toLowerCase()} cross-reference each other.`
-                  : hasConnectionData
-                    ? `These parts connect indirectly through shared references. These sections sit at the crossroads.`
-                    : `These two parts don't directly reference each other. Try these well-connected sections as starting points instead.`}
+              <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+                Centred on {centerPart.title}, with {topPart.title} at the top.
+                {suggestedSections.length > 0 && centerPartNumber !== topPartNumber && (
+                  <>{' '}See where these fields connect below.</>
+                )}
               </p>
-              <ul class="mt-2 space-y-1">
-                {suggestedSections.map((s) => {
-                  const part = parts.find((p) => p.partNumber === s.section.partNumber);
-                  return (
-                    <li key={s.section.sectionCode}>
-                      <a
-                        href={`${baseUrl}/section/${s.section.sectionCode.replace(/\//g, '-')}`}
-                        class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                      >
-                        <span
-                          class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
-                          style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
-                        />
-                        <span class="text-slate-700 group-hover:text-indigo-700">{s.section.title}</span>
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            );
-          })()}
+              {suggestedSections.length > 0 && (() => {
+                const isDirect = suggestedSections[0].isDirect;
+                const key = getConnectionKey(centerPartNumber, topPartNumber);
+                const hasConnectionData = !!(connections[key] && connections[key].length > 0);
+                return (
+                <div class="mt-3 border-t border-slate-200 pt-3">
+                  <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+                    {isDirect
+                      ? 'Direct connections'
+                      : hasConnectionData
+                        ? 'Indirect connections'
+                        : 'No direct overlap'}
+                  </p>
+                  <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                    {isDirect
+                      ? `Sections where ${centerPart.title.toLowerCase()} and ${topPart.title.toLowerCase()} cross-reference each other.`
+                      : hasConnectionData
+                        ? `These parts connect indirectly through shared references. These sections sit at the crossroads.`
+                        : `These two parts don't directly reference each other. Try these well-connected sections as starting points instead.`}
+                  </p>
+                  <ul class="mt-2 space-y-1">
+                    {suggestedSections.map((s) => {
+                      const part = parts.find((p) => p.partNumber === s.section.partNumber);
+                      return (
+                        <li key={s.section.sectionCode}>
+                          <a
+                            href={`${baseUrl}/section/${s.section.sectionCode.replace(/\//g, '-')}`}
+                            class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                          >
+                            <span
+                              class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
+                              style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
+                            />
+                            <span class="text-slate-700 group-hover:text-indigo-700">{s.section.title}</span>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                );
+              })()}
+            </>
+          ) : (
+            <>
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
+                Circle of learning
+              </p>
+              <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+                {topPart.title} is at the top. See its divisions below.
+              </p>
+              {topPart.divisions.length > 0 && (
+                <div class="mt-3 border-t border-slate-200 pt-3">
+                  <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+                    {topPart.divisions.length} {topPart.divisions.length === 1 ? 'Division' : 'Divisions'}
+                  </p>
+                  <ul class="mt-2 space-y-1">
+                    {topPart.divisions.map((d) => (
+                      <li key={d.divisionId}>
+                        <a
+                          href={`${baseUrl}/division/${d.divisionId}`}
+                          class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                        >
+                          <span
+                            class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
+                            style={{ backgroundColor: topPart.colorHex }}
+                          />
+                          <span class="text-slate-700 group-hover:text-indigo-700">
+                            <span class="text-slate-400">{d.romanNumeral}.</span>{' '}{d.title}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </>
+          )}
         </div>
-        )}
       </div>
 
     </div>
