@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
 import WikipediaRefs from '../../components/content/WikipediaRefs';
@@ -45,6 +44,19 @@ const partTextColors: Record<number, string> = {
   9: 'text-pink-700',
   10: 'text-amber-700',
 };
+
+// Build flat ordered list of all sections for prev/next navigation
+const allSections: { sectionCode: string; title: string; partNumber: number }[] = [];
+for (const p of navigation.parts) {
+  for (const d of p.divisions) {
+    for (const s of d.sections) {
+      allSections.push({ sectionCode: s.sectionCode, title: s.title, partNumber: p.partNumber });
+    }
+  }
+}
+const currentIndex = allSections.findIndex((s) => s.sectionCode === section.sectionCode);
+const prevSection = currentIndex > 0 ? allSections[currentIndex - 1] : null;
+const nextSection = currentIndex < allSections.length - 1 ? allSections[currentIndex + 1] : null;
 
 // Get reverse cross-references ("Referenced by")
 const reverseRefs = (crossReferences.reverseIndex as Record<string, any[]>)[section.sectionCode] ?? [];
@@ -127,21 +139,17 @@ try {
   // No wiki mappings yet
 }
 
-const breadcrumbItems = [
-  { label: 'Home', href: `${base}/` },
-  { label: `Part ${PART_NAMES[section.partNumber]}: ${parentPart?.title ?? ''}`, href: `${base}/part/${section.partNumber}` },
-  { label: `Division ${parentDiv?.romanNumeral ?? ''}: ${parentDiv?.title ?? ''}`, href: `${base}/division/${section.divisionId}` },
-  { label: `Section ${section.sectionCodeDisplay}: ${section.title}` },
-];
 ---
 
 <BaseLayout title={`Section ${section.sectionCodeDisplay}: ${section.title} — Propaedia`} currentPartNumber={section.partNumber} currentDivisionId={section.divisionId} currentSectionCode={section.sectionCode}>
     <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
-      <Breadcrumbs items={breadcrumbItems} />
-
       <header class="mb-8">
         <p class={`text-sm font-sans font-medium uppercase tracking-wide mb-1 ${partTextColors[section.partNumber]}`}>
-          Part {PART_NAMES[section.partNumber]} &middot; Division {parentDiv?.romanNumeral ?? ''} &middot; Section {section.sectionCodeDisplay}
+          <a href={`${base}/part/${section.partNumber}`} class="hover:underline">Part {PART_NAMES[section.partNumber]}</a>
+          {' '}&middot;{' '}
+          <a href={`${base}/division/${section.divisionId}`} class="hover:underline">Division {parentDiv?.romanNumeral ?? ''}</a>
+          {' '}&middot;{' '}
+          Section {section.sectionCodeDisplay}
         </p>
         <h1 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900">
           {section.title}
@@ -247,6 +255,38 @@ const breadcrumbItems = [
             baseUrl={base}
           />
         </section>
+      )}
+      {(prevSection || nextSection) && (
+        <nav class="mt-12 flex items-stretch gap-3 border-t border-slate-200 pt-6" aria-label="Section navigation">
+          {prevSection ? (
+            <a
+              href={`${base}/section/${prevSection.sectionCode.replace(/\//g, '-')}`}
+              class="group flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              <svg class="h-4 w-4 shrink-0 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <div class="min-w-0">
+                <p class="text-xs font-sans font-semibold uppercase tracking-wide text-slate-400">Previous</p>
+                <p class="truncate text-sm font-serif font-semibold text-slate-700 group-hover:text-slate-900">{prevSection.title}</p>
+              </div>
+            </a>
+          ) : <div class="flex-1" />}
+          {nextSection ? (
+            <a
+              href={`${base}/section/${nextSection.sectionCode.replace(/\//g, '-')}`}
+              class="group flex min-w-0 flex-1 items-center justify-end gap-2 rounded-xl border border-slate-200 px-4 py-3 text-right transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              <div class="min-w-0">
+                <p class="text-xs font-sans font-semibold uppercase tracking-wide text-slate-400">Next</p>
+                <p class="truncate text-sm font-serif font-semibold text-slate-700 group-hover:text-slate-900">{nextSection.title}</p>
+              </div>
+              <svg class="h-4 w-4 shrink-0 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          ) : <div class="flex-1" />}
+        </nav>
       )}
     </main>
 </BaseLayout>

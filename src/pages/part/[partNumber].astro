@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import navigation from '../../data/navigation.json';
 import { getCollection, render } from 'astro:content';
@@ -33,6 +32,11 @@ const PART_NAMES: Record<number, string> = {
 const partNav = navigation.parts.find((p) => p.partNumber === part.partNumber);
 const divisions = partNav?.divisions ?? [];
 
+// Prev/next parts
+const partIndex = navigation.parts.findIndex((p) => p.partNumber === part.partNumber);
+const prevPart = partIndex > 0 ? navigation.parts[partIndex - 1] : null;
+const nextPart = partIndex < navigation.parts.length - 1 ? navigation.parts[partIndex + 1] : null;
+
 const partColors: Record<number, string> = {
   1: 'text-blue-800 border-blue-300',
   2: 'text-emerald-800 border-emerald-300',
@@ -59,15 +63,10 @@ const bgColors: Record<number, string> = {
   10: 'bg-amber-700',
 };
 
-const breadcrumbItems = [
-  { label: 'Home', href: `${base}/` },
-  { label: `Part ${PART_NAMES[part.partNumber]}: ${part.title}` },
-];
 ---
 
 <BaseLayout title={`Part ${PART_NAMES[part.partNumber]}: ${part.title} — Propaedia`} currentPartNumber={part.partNumber}>
     <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
-      <Breadcrumbs items={breadcrumbItems} />
 
       <header class="mb-10">
         <div class="flex items-center gap-3 mb-2">
@@ -136,5 +135,38 @@ const breadcrumbItems = [
           ))}
         </div>
       </section>
+
+      {(prevPart || nextPart) && (
+        <nav class="mt-12 flex items-stretch gap-3 border-t border-slate-200 pt-6" aria-label="Part navigation">
+          {prevPart ? (
+            <a
+              href={`${base}/part/${prevPart.partNumber}`}
+              class="group flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              <svg class="h-4 w-4 shrink-0 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <div class="min-w-0">
+                <p class="text-xs font-sans font-semibold uppercase tracking-wide text-slate-400">Previous</p>
+                <p class="truncate text-sm font-serif font-semibold text-slate-700 group-hover:text-slate-900">{prevPart.title}</p>
+              </div>
+            </a>
+          ) : <div class="flex-1" />}
+          {nextPart ? (
+            <a
+              href={`${base}/part/${nextPart.partNumber}`}
+              class="group flex min-w-0 flex-1 items-center justify-end gap-2 rounded-xl border border-slate-200 px-4 py-3 text-right transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              <div class="min-w-0">
+                <p class="text-xs font-sans font-semibold uppercase tracking-wide text-slate-400">Next</p>
+                <p class="truncate text-sm font-serif font-semibold text-slate-700 group-hover:text-slate-900">{nextPart.title}</p>
+              </div>
+              <svg class="h-4 w-4 shrink-0 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          ) : <div class="flex-1" />}
+        </nav>
+      )}
     </main>
 </BaseLayout>
