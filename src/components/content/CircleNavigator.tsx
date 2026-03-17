@@ -948,7 +948,54 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
   };
 
   return (
-    <div class="grid gap-3 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
+    <div class="space-y-3 sm:space-y-4">
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm sm:rounded-2xl sm:px-4 sm:py-2.5">
+        <span
+          class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+          style={{ backgroundColor: selectedPart.colorHex }}
+        >
+          {selectedPart.partNumber}
+        </span>
+        <span class="mr-auto text-sm font-serif font-bold text-slate-900 sm:text-base">
+          {selectedPart.title}
+        </span>
+        <div class="flex gap-1.5">
+          <a
+            href={selectedPart.href}
+            class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white transition hover:bg-slate-700"
+          >
+            Open
+          </a>
+          {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && (
+            <button
+              type="button"
+              onClick={() => movePartToCenter(selectedPart.partNumber)}
+              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            >
+              Centre
+            </button>
+          )}
+          {hasCenter && selectedPart.partNumber === centerPartNumber && (
+            <button
+              type="button"
+              onClick={removeFromCenter}
+              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            >
+              Uncentre
+            </button>
+          )}
+          {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && selectedPart.partNumber !== topPart.partNumber && (
+            <button
+              type="button"
+              onClick={() => rotatePartToTop(selectedPart.partNumber)}
+              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            >
+              To top
+            </button>
+          )}
+        </div>
+      </div>
+
       <div class="sm:rounded-[1.75rem] sm:border sm:border-slate-200 sm:bg-slate-50 sm:p-6">
         <svg
           ref={svgRef}
@@ -1635,56 +1682,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
         )}
       </div>
 
-      <div class="space-y-2 sm:space-y-4">
-        <div class="rounded-xl border border-slate-200 bg-white px-3 py-3 shadow-sm sm:rounded-[1.75rem] sm:p-6">
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Selected Part
-          </p>
-          <h3 class="mt-2 text-xl font-serif font-bold text-slate-900 sm:mt-3 sm:text-2xl">
-            {selectedPart.partName}: {selectedPart.title}
-          </h3>
-
-          <div class="mt-5 grid gap-2 sm:mt-6 sm:flex sm:flex-wrap">
-            <a
-              href={selectedPart.href}
-              class="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 sm:w-auto sm:py-2"
-            >
-              Open {selectedPart.partName}
-            </a>
-
-            {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && (
-              <button
-                type="button"
-                onClick={() => movePartToCenter(selectedPart.partNumber)}
-                class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto sm:py-2"
-              >
-                Move to centre
-              </button>
-            )}
-
-            {hasCenter && selectedPart.partNumber === centerPartNumber && (
-              <button
-                type="button"
-                onClick={removeFromCenter}
-                class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto sm:py-2"
-              >
-                Remove from centre
-              </button>
-            )}
-
-            {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && selectedPart.partNumber !== topPart.partNumber && (
-              <button
-                type="button"
-                onClick={() => rotatePartToTop(selectedPart.partNumber)}
-                class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:w-auto sm:py-2"
-              >
-                Rotate to top
-              </button>
-            )}
-          </div>
-        </div>
-
-      </div>
     </div>
   );
 }

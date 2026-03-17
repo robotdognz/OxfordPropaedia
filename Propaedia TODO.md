@@ -1,4 +1,6 @@
 Propaedia TODO:
+    - Do you think it would be a good idea to add ratio buttons next to the three media types in the navigation bar, only one can be selected at a time, this selection is saved as user preference, it determines what kind of recomendations the user sees, rather than showing them all all the time
+
     - Lots of years are being picked up as hyper links to sections, we need to fix that
     - Need to do a full AI audit of the propaedia structure, and subsection names, there are still some odd anomalies in there
 
@@ -8,7 +10,7 @@ Propaedia TODO:
     - Need to create a proper well structured final AI pipline step that ensures that there is a match for every subsection. It should be of the same quality and thoughtfulness as the existing pipelines, and should be cleverly designed not to waste tokens, but also to get good results. Perhaps we should try programatically figuring out what books/articles should be mapped to each dead subsection and then just get the AI to write any rationales if we need them? Do a full review and audit first.
     
     - See if we can link the macropaedia articles to the current version on the britannica website (the current site was built from the articles these titles reference, so the mapping is possible, some of the online articles are sections of the larger print articles, so some clever web scraping and reconstruction will likely be required).
-    - Have specific vsi recommendations when using the wheel with a center, recommend books based on sections and tags and don't show ones they have already read. It should probably be a tab choice at the top of this view (remember users chosen tab choice) that shows section recommendations using the current system, or VSI/Macropaedia/Wikipedia article recommendations. I guess it would need a Recommended Sections mode, and a Recommended Readings mode, with three modes in the readings one for the three reading types
+    - Have specific vsi recommendations when using the wheel with a center, recommend books based on sections and tags and don't show ones they have already read. It should probably be a tab choice at the top of this view (remember users chosen tab choice) that shows section recommendations using the current system, or VSI/Macropaedia/Wikipedia article recommendations. I guess it would need a Recommended Sections mode, and a Recommended Readings mode
     - Add BBC In Our Time podcast episodes to the database and mappings as well, would be good to have a different format in there
     - Button for random Section in side bar
 
