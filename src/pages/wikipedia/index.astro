@@ -23,11 +23,9 @@ const sectionLookup = new Map<string, ReadingSectionSummary>(
 );
 
 // Build sectionCodes per article from the per-section mapping files
-// Exclude _levelOnly broad coverage mappings — they inflate section counts at higher levels
 const articleSectionCodes = new Map<string, Set<string>>();
 for (const mapping of wikiMappings) {
   for (const m of mapping.data.mappings) {
-    if (m._levelOnly) continue;
     if (!articleSectionCodes.has(m.articleTitle)) articleSectionCodes.set(m.articleTitle, new Set());
     articleSectionCodes.get(m.articleTitle)!.add(mapping.data.sectionCode);
   }

@@ -32,15 +32,15 @@ export interface WikipediaRefsProps {
 const STORAGE_KEY = 'propaedia-wiki-level';
 
 function getStoredLevel(): number {
-  if (typeof window === 'undefined') return 2;
+  if (typeof window === 'undefined') return 3;
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored === '1') return 1;
   if (stored === '3') return 3;
-  return 2;
+  return 3;
 }
 
 export default function WikipediaRefs({ articles, sectionCode, baseUrl }: WikipediaRefsProps) {
-  const [level, setLevel] = useState(2);
+  const [level, setLevel] = useState(3);
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
@@ -71,12 +71,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
 
   if (!articles || articles.length === 0) return null;
 
-  const levelFiltered = articles.filter((a) => {
-    if ((a.lowestLevel || 3) > level) return false;
-    // Exclude broad coverage mappings when user is at a more detailed level
-    if (a._levelOnly && level > a._levelOnly) return false;
-    return true;
-  });
+  const levelFiltered = articles.filter((a) => (a.lowestLevel || 3) <= level);
   if (levelFiltered.length === 0) return null;
 
   let visibleArticles: (WikipediaArticleRef & { filterScore?: number })[];

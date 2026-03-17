@@ -27,8 +27,6 @@ export async function getStaticPaths() {
   const articleSectionCodes = new Map<string, string[]>();
   for (const mapping of wikiMappings) {
     for (const m of mapping.data.mappings) {
-      // Skip broad coverage mappings (_levelOnly) — they inflate section counts
-      if (m._levelOnly) continue;
       if (!articleSectionCodes.has(m.articleTitle)) articleSectionCodes.set(m.articleTitle, []);
       articleSectionCodes.get(m.articleTitle)!.push(mapping.data.sectionCode);
     }

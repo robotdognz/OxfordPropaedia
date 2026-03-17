@@ -113,7 +113,6 @@ try {
         wikiCategories: catalogEntry?.wikiCategories,
         rationale: entry.rationaleAI || '',
         relevantPathsAI: entry.relevantPathsAI || [],
-        _levelOnly: entry._levelOnly,
         _score: computeWikiRelevanceScore(
           { title: entry.articleTitle, category: catalogEntry?.category, toc: catalogEntry?.toc, wikiCategories: catalogEntry?.wikiCategories },
           sectionTokens,

@@ -34,7 +34,6 @@ const wikiMappingEntrySchema = z.object({
   articleTitle: z.string(),
   rationaleAI: z.string().optional(),
   relevantPathsAI: z.array(z.string()).optional(),
-  _levelOnly: z.number().int().optional(),
 });
 
 // --- Collection schemas ---

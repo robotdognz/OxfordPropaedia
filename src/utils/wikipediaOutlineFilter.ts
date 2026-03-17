@@ -15,7 +15,6 @@ export interface SearchableWikiArticle {
   toc?: string[];
   wikiCategories?: string[];
   relevantPathsAI?: string[];
-  _levelOnly?: number;
 }
 
 const TOC_EXCLUSIONS = new Set([

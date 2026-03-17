@@ -252,7 +252,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
             <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Read</p>
             {bestNextRead ? (
               <>
-                <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextRead.title}</p>
+                <a href={`${baseUrl}/vsi/${bestNextRead.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="mt-2 block font-serif text-2xl leading-tight text-amber-950 hover:text-indigo-700 transition-colors">{bestNextRead.title}</a>
                 <p class="mt-1 text-sm text-amber-900">{bestNextRead.author}</p>
                 <p class="mt-3 text-sm text-amber-900">
                   Adds {bestNextRead.newSectionCount} new sections, {bestNextRead.sectionCount} total.

@@ -26,11 +26,11 @@ const LEVEL_KEY = 'propaedia-wiki-level';
 const INITIAL_VISIBLE = 50;
 
 function getStoredLevel(): KnowledgeLevel {
-  if (typeof window === 'undefined') return 2;
+  if (typeof window === 'undefined') return 3;
   const stored = localStorage.getItem(LEVEL_KEY);
   if (stored === '1') return 1;
   if (stored === '3') return 3;
-  return 2;
+  return 3;
 }
 
 function storeLevel(level: KnowledgeLevel) {
@@ -198,7 +198,7 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
             <p class="text-sm font-medium uppercase tracking-wide text-amber-800">Best Next Read</p>
             {bestNextRead ? (
               <>
-                <p class="mt-2 font-serif text-2xl leading-tight text-amber-950">{bestNextRead.title}</p>
+                <a href={`${baseUrl}/wikipedia/${slugify(bestNextRead.title)}`} class="mt-2 block font-serif text-2xl leading-tight text-amber-950 hover:text-indigo-700 transition-colors">{bestNextRead.title}</a>
                 <p class="mt-3 text-sm text-amber-900">Adds {bestNextRead.newSectionCount} new sections, {bestNextRead.sectionCount} total.</p>
               </>
             ) : (
