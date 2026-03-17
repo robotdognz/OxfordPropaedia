@@ -88,25 +88,20 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
             href={`${baseUrl}/vsi`}
             class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
           >
-            Browse full VSI list
+            Browse all Oxford VSI books
           </a>
         </div>
 
-        <div class="mb-4 flex flex-wrap items-start justify-between gap-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2">
-          <div class="min-w-0">
-            <p class="text-sm font-medium text-amber-900">
-              {isFiltered
-                ? `Showing ${visibleCount} of ${totalCount} recommendations for ${selectionPath}`
-                : `Showing all ${totalCount} recommendations`}
-            </p>
-            {isFiltered && (
+        {isFiltered && (
+          <div class="mb-4 flex flex-wrap items-start justify-between gap-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2">
+            <div class="min-w-0">
+              <p class="text-sm font-medium text-amber-900">
+                Showing {visibleCount} of {totalCount} recommendations for {selectionPath}
+              </p>
               <p class="mt-1 text-xs text-amber-800">
                 {selectionText}
               </p>
-            )}
-          </div>
-
-          {isFiltered && (
+            </div>
             <button
               type="button"
               onClick={clearFilter}
@@ -114,8 +109,8 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
             >
               Show all
             </button>
-          )}
-        </div>
+          </div>
+        )}
 
         {visibleCount > 0 ? (
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

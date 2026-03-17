@@ -72,7 +72,6 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
   if (!articles || articles.length === 0) return null;
 
   const levelFiltered = articles.filter((a) => (a.lowestLevel || 3) <= level);
-  if (levelFiltered.length === 0) return null;
 
   let visibleArticles: (WikipediaArticleRef & { filterScore?: number })[];
   if (selection) {

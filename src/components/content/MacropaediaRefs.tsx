@@ -32,13 +32,13 @@ export default function MacropaediaRefs({ references, baseUrl }: MacropaediaRefs
   if (!references || references.length === 0) return null;
 
   return (
-    <Accordion title="Macropaedia Reading List">
+    <Accordion title={`Macropaedia Reading List (${references.length})`}>
       <div class="mb-4 flex justify-end">
         <a
           href={`${baseUrl}/macropaedia`}
           class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
         >
-          Browse full Macropaedia list
+          Browse all Macropaedia articles
         </a>
       </div>
 
