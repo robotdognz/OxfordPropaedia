@@ -2,7 +2,6 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
-import Sidebar from '../../components/layout/Sidebar.astro';
 import navigation from '../../data/navigation.json';
 import { getCollection } from 'astro:content';
 
@@ -47,14 +46,7 @@ const breadcrumbItems = [
 ];
 ---
 
-<BaseLayout title={`Division ${division.romanNumeral}: ${division.title} — Propaedia`}>
-  <div class="flex min-h-screen">
-    <Sidebar
-      navigation={navigation.parts}
-      currentPartNumber={division.partNumber}
-      currentDivisionId={division.divisionId}
-    />
-
+<BaseLayout title={`Division ${division.romanNumeral}: ${division.title} — Propaedia`} currentPartNumber={division.partNumber} currentDivisionId={division.divisionId}>
     <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
       <Breadcrumbs items={breadcrumbItems} />
 
@@ -93,5 +85,4 @@ const breadcrumbItems = [
         </div>
       </section>
     </main>
-  </div>
 </BaseLayout>

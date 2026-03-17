@@ -81,10 +81,22 @@ const partBorderColors: Record<number, string> = {
 
 <aside
   id="sidebar-nav"
-  class="hidden lg:block w-72 xl:w-80 flex-shrink-0 border-r border-gray-200 bg-gray-50
+  class="max-lg:hidden lg:block w-72 xl:w-80 flex-shrink-0 border-r border-gray-200 bg-gray-50
          lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] overflow-y-auto
-         max-lg:fixed max-lg:inset-y-16 max-lg:left-0 max-lg:z-30 max-lg:shadow-xl"
+         max-lg:fixed max-lg:top-16 max-lg:bottom-0 max-lg:left-0 max-lg:z-30 max-lg:shadow-xl"
 >
+  <!-- Site navigation links -->
+  <nav aria-label="Site pages" class="px-3 pt-4 pb-2 font-sans text-sm border-b border-gray-200">
+    <div class="space-y-0.5">
+      <a href={`${base}/`} class="block px-2 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors font-medium">Home</a>
+      <a href={`${base}/vsi`} class="block px-2 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">Oxford VSI's</a>
+      <a href={`${base}/wikipedia`} class="block px-2 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">Wikipedia Articles</a>
+      <a href={`${base}/macropaedia`} class="block px-2 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">Britannica Articles</a>
+      <a href={`${base}/about`} class="block px-2 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">About</a>
+    </div>
+  </nav>
+
+  <!-- Propaedia outline tree -->
   <nav aria-label="Knowledge outline" class="py-4 px-3 font-sans text-sm">
     {navigation.map((part) => {
       const isCurrentPart = part.partNumber === currentPartNumber;

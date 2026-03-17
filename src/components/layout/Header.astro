@@ -1,36 +1,43 @@
 ---
 import SearchDialog from '../search/SearchDialog';
 const base = import.meta.env.BASE_URL;
-const navLinks = [
-  { href: `${base}/vsi`, label: 'VSI' },
-  { href: `${base}/wikipedia`, label: 'Wikipedia' },
-  { href: `${base}/macropaedia`, label: 'Macropaedia' },
-  { href: `${base}/about`, label: 'About' },
-];
-const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
 ---
 
 <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
   <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <!-- Site title -->
-      <div class="flex items-center gap-4">
-        <a href={`${base}/`} class="flex items-baseline gap-2 group">
-          <span class="font-serif text-2xl font-bold text-gray-900 tracking-tight group-hover:text-gray-700 transition-colors">
-            Propaedia
-          </span>
-          <span class="hidden sm:inline text-sm text-gray-500 font-sans">
-            Outline of Knowledge
-          </span>
-        </a>
-      </div>
+      <!-- Hamburger toggle (always visible) -->
+      <button
+        type="button"
+        id="sidebar-toggle"
+        class="p-2 -ml-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors lg:hidden"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-      <!-- Desktop navigation -->
-      <nav class="hidden md:flex items-center gap-4">
+      <!-- Site title -->
+      <a href={`${base}/`} class="flex items-baseline gap-2 group">
+        <span class="font-serif text-2xl font-bold text-gray-900 tracking-tight group-hover:text-gray-700 transition-colors">
+          Propaedia
+        </span>
+        <span class="hidden sm:inline text-sm text-gray-500 font-sans">
+          Outline of Knowledge
+        </span>
+      </a>
+
+      <!-- Right side: search -->
+      <div class="flex items-center gap-2">
         <button
           type="button"
           data-search-trigger
-          class="flex items-center gap-2 px-3 py-1.5 text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-200 hover:border-gray-300 hover:text-gray-700 transition-colors"
+          class="hidden md:flex items-center gap-2 px-3 py-1.5 text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-200 hover:border-gray-300 hover:text-gray-700 transition-colors"
           aria-label="Search"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -39,57 +46,18 @@ const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
           <span class="font-sans">Search</span>
           <kbd class="hidden sm:inline px-1.5 py-0.5 text-xs font-mono text-gray-400 bg-white rounded border border-gray-200">/</kbd>
         </button>
-
-        {navLinks.map((link) => (
-          <a href={link.href} class="text-sm font-sans text-gray-600 hover:text-gray-900 transition-colors">
-            {link.label}
-          </a>
-        ))}
-      </nav>
-
-      <!-- Mobile buttons -->
-      <div class="flex items-center gap-2 md:hidden">
         <button
           type="button"
           data-search-trigger
-          class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+          class="md:hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
           aria-label="Search"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </button>
-
-        <!-- Sidebar toggle (only shown on pages with sidebar) -->
-        <button
-          type="button"
-          id="sidebar-toggle"
-          class="hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors lg:hidden"
-          aria-label="Toggle sidebar navigation"
-          aria-expanded="false"
-        >
-          <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
       </div>
     </div>
-
-    <nav class="md:hidden -mx-4 border-t border-gray-100 px-4 py-2" aria-label="Mobile site navigation">
-      <div class="flex gap-2 overflow-x-auto pb-1">
-        {mobileNavLinks.map((link) => (
-          <a
-            href={link.href}
-            class="shrink-0 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-sans text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:text-gray-900"
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
-    </nav>
   </div>
 </header>
 
@@ -110,21 +78,11 @@ const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const closeIcon = document.getElementById('close-icon');
 
-    if (!sidebarToggle) return;
-
-    if (!sidebar || !sidebarOverlay) {
-      sidebarToggle.classList.add('hidden');
-      sidebarToggle.setAttribute('aria-hidden', 'true');
-      sidebarToggle.setAttribute('aria-expanded', 'false');
-      return;
-    }
-
-    sidebarToggle.classList.remove('hidden');
-    sidebarToggle.removeAttribute('aria-hidden');
+    if (!sidebarToggle || !sidebar || !sidebarOverlay) return;
 
     const closeSidebar = () => {
       sidebar.classList.remove('sidebar-open');
-      sidebar.classList.add('hidden');
+      sidebar.classList.add('max-lg:hidden');
       sidebarOverlay.classList.add('hidden');
       hamburgerIcon?.classList.remove('hidden');
       closeIcon?.classList.add('hidden');
@@ -134,7 +92,7 @@ const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
 
     const openSidebar = () => {
       sidebar.classList.add('sidebar-open');
-      sidebar.classList.remove('hidden');
+      sidebar.classList.remove('max-lg:hidden');
       sidebarOverlay.classList.remove('hidden');
       hamburgerIcon?.classList.add('hidden');
       closeIcon?.classList.remove('hidden');
@@ -144,11 +102,7 @@ const mobileNavLinks = [{ href: `${base}/`, label: 'Home' }, ...navLinks];
 
     const toggleSidebar = () => {
       const isOpen = sidebar.classList.contains('sidebar-open');
-      if (isOpen) {
-        closeSidebar();
-      } else {
-        openSidebar();
-      }
+      if (isOpen) closeSidebar(); else openSidebar();
     };
 
     sidebarToggle.addEventListener('click', toggleSidebar);

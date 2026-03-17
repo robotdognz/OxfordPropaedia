@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
-import Sidebar from '../../components/layout/Sidebar.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
 import WikipediaRefs from '../../components/content/WikipediaRefs';
@@ -136,15 +135,7 @@ const breadcrumbItems = [
 ];
 ---
 
-<BaseLayout title={`Section ${section.sectionCodeDisplay}: ${section.title} — Propaedia`}>
-  <div class="flex min-h-screen">
-    <Sidebar
-      navigation={navigation.parts}
-      currentPartNumber={section.partNumber}
-      currentDivisionId={section.divisionId}
-      currentSectionCode={section.sectionCode}
-    />
-
+<BaseLayout title={`Section ${section.sectionCodeDisplay}: ${section.title} — Propaedia`} currentPartNumber={section.partNumber} currentDivisionId={section.divisionId} currentSectionCode={section.sectionCode}>
     <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
       <Breadcrumbs items={breadcrumbItems} />
 
@@ -258,5 +249,4 @@ const breadcrumbItems = [
         </section>
       )}
     </main>
-  </div>
 </BaseLayout>
