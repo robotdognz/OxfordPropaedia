@@ -9,6 +9,11 @@ import {
   wikipediaChecklistKey,
   macropaediaChecklistKey,
 } from '../../utils/readingChecklist';
+import {
+  getReadingPreference,
+  subscribeReadingPreference,
+  type ReadingType,
+} from '../../utils/readingPreference';
 
 export interface ReadingItem {
   title: string;
@@ -31,10 +36,13 @@ function slugify(s: string): string {
 
 export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const [readingPref, setReadingPref] = useState<ReadingType>(() => getReadingPreference());
 
   useEffect(() => {
     setChecklistState(readChecklistState());
-    return subscribeChecklistState(() => setChecklistState(readChecklistState()));
+    const unsubChecklist = subscribeChecklistState(() => setChecklistState(readChecklistState()));
+    const unsubPref = subscribeReadingPreference((type) => setReadingPref(type));
+    return () => { unsubChecklist(); unsubPref(); };
   }, []);
 
   if (vsi.length === 0 && wiki.length === 0 && macro.length === 0) return null;
@@ -53,7 +61,15 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
       </div>
 
       {vsi.length > 0 && (
-        <Accordion title={`Oxford VSI Recommendations (${vsi.length})`}>
+        <Accordion title={`Oxford VSI Recommendations (${vsi.length})`} forceOpenKey={readingPref === 'vsi' ? 0 : undefined} forceCloseKey={readingPref !== 'vsi' ? 0 : undefined}>
+          <div class="mb-4 flex justify-end">
+            <a
+              href={`${baseUrl}/vsi`}
+              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+            >
+              Browse all Oxford VSI books
+            </a>
+          </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {vsi.map((item) => {
               const checkKey = vsiChecklistKey(item.title, item.author || '');
@@ -100,7 +116,15 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
       )}
 
       {wiki.length > 0 && (
-        <Accordion title={`Wikipedia Article Recommendations (${wiki.length})`}>
+        <Accordion title={`Wikipedia Article Recommendations (${wiki.length})`} forceOpenKey={readingPref === 'wikipedia' ? 0 : undefined} forceCloseKey={readingPref !== 'wikipedia' ? 0 : undefined}>
+          <div class="mb-4 flex justify-end">
+            <a
+              href={`${baseUrl}/wikipedia`}
+              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+            >
+              Browse all Wikipedia articles
+            </a>
+          </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {wiki.map((item) => {
               const checkKey = wikipediaChecklistKey(item.title);
@@ -146,7 +170,15 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
       )}
 
       {macro.length > 0 && (
-        <Accordion title={`Macropaedia Reading List (${macro.length})`}>
+        <Accordion title={`Macropaedia Reading List (${macro.length})`} forceOpenKey={readingPref === 'macropaedia' ? 0 : undefined} forceCloseKey={readingPref !== 'macropaedia' ? 0 : undefined}>
+          <div class="mb-4 flex justify-end">
+            <a
+              href={`${baseUrl}/macropaedia`}
+              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+            >
+              Browse all Macropaedia articles
+            </a>
+          </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {macro.map((item) => {
               const checkKey = macropaediaChecklistKey(item.title);

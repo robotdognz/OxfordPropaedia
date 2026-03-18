@@ -23,8 +23,8 @@ export interface MacropaediaRefsProps {
 
 export default function MacropaediaRefs({ references, sectionCode, baseUrl }: MacropaediaRefsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
-  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
-  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
+  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'macropaedia' ? 0 : undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'macropaedia' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {

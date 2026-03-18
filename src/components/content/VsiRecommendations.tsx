@@ -39,8 +39,8 @@ export interface VsiRecommendationsProps {
 export default function VsiRecommendations({ mappings, sectionCode, sectionTitle, sectionOutlineText, baseUrl }: VsiRecommendationsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
-  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
-  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
+  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'vsi' ? 0 : undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'vsi' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {

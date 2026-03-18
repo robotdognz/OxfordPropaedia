@@ -45,8 +45,8 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
   const [level, setLevel] = useState(3);
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
-  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
-  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
+  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'wikipedia' ? 0 : undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'wikipedia' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
