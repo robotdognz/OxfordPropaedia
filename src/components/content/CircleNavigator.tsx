@@ -1,5 +1,11 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import {
+  readChecklistState,
+  subscribeChecklistState,
+  vsiChecklistKey,
+  wikipediaChecklistKey,
+} from '../../utils/readingChecklist';
 
 export interface CircleNavigatorDivision {
   divisionId: string;
@@ -31,10 +37,25 @@ export interface SectionMeta {
   sectionCode: string;
 }
 
+export interface BridgeItem {
+  t: string;   // title
+  a?: string;  // author (VSI only)
+  ca: number;  // section count in lower-numbered part
+  cb: number;  // section count in higher-numbered part
+}
+
+export interface BridgePair {
+  totalVsi: number;
+  totalWiki: number;
+  vsi?: BridgeItem[];
+  wiki?: BridgeItem[];
+}
+
 export interface CircleNavigatorProps {
   parts: CircleNavigatorPart[];
   connections: Record<string, SectionConnection[]>;
   sectionMeta: Record<string, SectionMeta>;
+  bridgeRecommendations: Record<string, BridgePair>;
   baseUrl: string;
 }
 
@@ -289,10 +310,16 @@ function summarizeConnections(
     .filter((s) => s.section.partNumber > 0);
 }
 
-export default function CircleNavigator({ parts, connections, sectionMeta, baseUrl }: CircleNavigatorProps) {
+export default function CircleNavigator({ parts, connections, sectionMeta, bridgeRecommendations, baseUrl }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
+  const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    setChecklistState(readChecklistState());
+    return subscribeChecklistState(() => setChecklistState(readChecklistState()));
+  }, []);
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState<number | null>(null);
   const [rotationDegrees, setRotationDegrees] = useState(0);
@@ -1686,6 +1713,99 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
                     })}
                   </ul>
                 </div>
+                );
+              })()}
+              {(() => {
+                if (centerPartNumber === topPartNumber) return null;
+                const bridgeKey = getConnectionKey(centerPartNumber, topPartNumber);
+                const bridge = bridgeRecommendations[bridgeKey];
+                if (!bridge || (!bridge.vsi?.length && !bridge.wiki?.length)) return null;
+                const isFlipped = centerPartNumber > topPartNumber;
+                const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                const BRIDGE_LIMIT = 5;
+                const filteredVsi = (bridge.vsi || [])
+                  .filter(item => !checklistState[vsiChecklistKey(item.t, item.a || '')])
+                  .slice(0, BRIDGE_LIMIT);
+                const filteredWiki = (bridge.wiki || [])
+                  .filter(item => !checklistState[wikipediaChecklistKey(item.t)])
+                  .slice(0, BRIDGE_LIMIT);
+                if (filteredVsi.length === 0 && filteredWiki.length === 0) return null;
+                return (
+                  <div class="mt-3 border-t border-slate-200 pt-3">
+                    <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+                      Bridge readings
+                    </p>
+                    <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                      Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how many sections across both parts recommend them. The bar shows the balance of coverage between the two chosen parts.
+                    </p>
+                    {filteredVsi.length > 0 && (
+                      <div class="mt-3">
+                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-1">
+                          Oxford VSI
+                        </p>
+                        <ul class="space-y-1.5">
+                          {filteredVsi.map((item) => {
+                            const centerCount = isFlipped ? item.cb : item.ca;
+                            const topCount = isFlipped ? item.ca : item.cb;
+                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
+                            return (
+                              <li key={item.t}>
+                                <a
+                                  href={`${baseUrl}/vsi/${slugify(item.t)}`}
+                                  class="group block rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                                >
+                                  <span class="text-slate-700 group-hover:text-indigo-700">
+                                    {item.t}
+                                    {item.a && <span class="text-slate-400"> by {item.a}</span>}
+                                  </span>
+                                  <span class="mt-1 flex items-center gap-2">
+                                    <span class="flex h-1 w-1/2 shrink-0 overflow-hidden rounded-full bg-slate-100">
+                                      <span class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                      <span class="rounded-r-full" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
+                                    </span>
+                                    <span class="text-[10px] text-slate-400 whitespace-nowrap">Part {centerPart.partNumber}: {centerCount} · Part {topPart.partNumber}: {topCount}</span>
+                                  </span>
+                                </a>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    )}
+                    {filteredWiki.length > 0 && (
+                      <div class="mt-3">
+                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-1">
+                          Wikipedia
+                        </p>
+                        <ul class="space-y-1.5">
+                          {filteredWiki.map((item) => {
+                            const centerCount = isFlipped ? item.cb : item.ca;
+                            const topCount = isFlipped ? item.ca : item.cb;
+                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
+                            return (
+                              <li key={item.t}>
+                                <a
+                                  href={`${baseUrl}/wikipedia/${slugify(item.t)}`}
+                                  class="group block rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                                >
+                                  <span class="text-slate-700 group-hover:text-indigo-700">
+                                    {item.t}
+                                  </span>
+                                  <span class="mt-1 flex items-center gap-2">
+                                    <span class="flex h-1 w-1/2 shrink-0 overflow-hidden rounded-full bg-slate-100">
+                                      <span class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                      <span class="rounded-r-full" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
+                                    </span>
+                                    <span class="text-[10px] text-slate-400 whitespace-nowrap">Part {centerPart.partNumber}: {centerCount} · Part {topPart.partNumber}: {topCount}</span>
+                                  </span>
+                                </a>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 );
               })()}
             </>

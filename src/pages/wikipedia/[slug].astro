@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
+import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { slugify } from '../../utils/helpers';
+import { wikipediaChecklistKey } from '../../utils/readingChecklist';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import navigation from '../../data/navigation.json';
 import { getCollection } from 'astro:content';
@@ -93,14 +95,17 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
             )}
             <span class="inline-block rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs text-indigo-700">{levelLabel}</span>
           </div>
-          <a
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-3 inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
-          >
-            Read on Wikipedia ↗
-          </a>
+          <div class="mt-3 flex flex-wrap items-center gap-4">
+            <ReadingCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
+            <a
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+            >
+              Read on Wikipedia ↗
+            </a>
+          </div>
         </header>
       </div>
 

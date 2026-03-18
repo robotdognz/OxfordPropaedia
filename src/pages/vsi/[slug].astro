@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
+import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { getCollection } from 'astro:content';
 import { slugify } from '../../utils/helpers';
 import { formatEditionLabel } from '../../utils/readingData';
+import { vsiChecklistKey } from '../../utils/readingChecklist';
 import navigation from '../../data/navigation.json';
 
 export async function getStaticPaths() {
@@ -133,6 +135,9 @@ const rings = [
           {entry.subject && (
             <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
           )}
+          <div class="mt-3">
+            <ReadingCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author)} />
+          </div>
           <a
             href={`https://global.oup.com/academic/content/series/v/very-short-introductions-702/?cc=us&lang=en&q=${encodeURIComponent(entry.title)}`}
             target="_blank"
