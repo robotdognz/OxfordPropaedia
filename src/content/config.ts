@@ -123,6 +123,34 @@ const wikiMappingsCollection = defineCollection({
   }),
 });
 
+const readingItemSchema = z.object({
+  title: z.string(),
+  author: z.string().optional(),
+  count: z.number().int(),
+});
+
+const readingsSchema = z.object({
+  vsi: z.array(readingItemSchema).optional(),
+  wiki: z.array(readingItemSchema).optional(),
+  macro: z.array(readingItemSchema).optional(),
+});
+
+const partReadingsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/part-readings' }),
+  schema: z.object({
+    partNumber: z.number().int().min(1).max(10),
+    readings: readingsSchema,
+  }),
+});
+
+const divisionReadingsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/division-readings' }),
+  schema: z.object({
+    divisionId: z.string(),
+    readings: readingsSchema,
+  }),
+});
+
 export const collections = {
   parts: partsCollection,
   divisions: divisionsCollection,
@@ -131,4 +159,6 @@ export const collections = {
   vsi: vsiCatalogCollection,
   'wiki-mappings': wikiMappingsCollection,
   'vsi-mappings': vsiMappingsCollection,
+  'part-readings': partReadingsCollection,
+  'division-readings': divisionReadingsCollection,
 };

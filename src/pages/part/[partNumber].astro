@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
+import TopReadings from '../../components/content/TopReadings';
 import navigation from '../../data/navigation.json';
 import { getCollection, render } from 'astro:content';
 
@@ -31,6 +32,11 @@ const PART_NAMES: Record<number, string> = {
 
 const partNav = navigation.parts.find((p) => p.partNumber === part.partNumber);
 const divisions = partNav?.divisions ?? [];
+
+// Load reading recommendations for this part
+const allPartReadings = await getCollection('part-readings');
+const partReadingsEntry = allPartReadings.find((r) => r.data.partNumber === part.partNumber);
+const partReadings = partReadingsEntry?.data.readings;
 
 // Prev/next parts
 const partIndex = navigation.parts.findIndex((p) => p.partNumber === part.partNumber);
@@ -136,6 +142,19 @@ const bgColors: Record<number, string> = {
           ))}
         </div>
       </section>
+
+      {partReadings && (
+        <section class="mt-10">
+          <TopReadings
+            client:load
+            vsi={partReadings.vsi}
+            wiki={partReadings.wiki}
+            macro={partReadings.macro}
+            baseUrl={base}
+            contextLabel="this part"
+          />
+        </section>
+      )}
 
       {(prevPart || nextPart) && (
         <nav class="mt-12 flex items-stretch gap-3 border-t border-slate-200 pt-6" aria-label="Part navigation">

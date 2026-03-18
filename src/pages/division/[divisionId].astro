@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
+import TopReadings from '../../components/content/TopReadings';
 import navigation from '../../data/navigation.json';
 import { getCollection } from 'astro:content';
 
@@ -24,6 +25,11 @@ const PART_NAMES: Record<number, string> = {
 const parentPart = navigation.parts.find((p) => p.partNumber === division.partNumber);
 const divNav = parentPart?.divisions.find((d) => d.divisionId === division.divisionId);
 const sections = divNav?.sections ?? [];
+
+// Load reading recommendations for this division
+const allDivReadings = await getCollection('division-readings');
+const divReadingsEntry = allDivReadings.find((r) => r.data.divisionId === division.divisionId);
+const divReadings = divReadingsEntry?.data.readings;
 
 // Build flat ordered list of all divisions for prev/next navigation
 const allDivisions: { divisionId: string; title: string; partNumber: number }[] = [];
@@ -90,6 +96,19 @@ const partTextColors: Record<number, string> = {
           ))}
         </div>
       </section>
+
+      {divReadings && (
+        <section class="mt-10">
+          <TopReadings
+            client:load
+            vsi={divReadings.vsi}
+            wiki={divReadings.wiki}
+            macro={divReadings.macro}
+            baseUrl={base}
+            contextLabel="this division"
+          />
+        </section>
+      )}
 
       {(prevDiv || nextDiv) && (
         <nav class="mt-12 flex items-stretch gap-3 border-t border-slate-200 pt-6" aria-label="Division navigation">
