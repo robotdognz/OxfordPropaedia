@@ -3,375 +3,428 @@
   "readings": {
     "vsi": [
       {
-        "title": "Aesthetics",
-        "count": 2,
-        "sections": 6,
-        "paths": 10,
-        "author": "Bence Nanay"
-      },
-      {
-        "title": "Art history",
-        "count": 2,
-        "sections": 5,
-        "paths": 8,
-        "author": "Dana Arnold"
-      },
-      {
-        "title": "Dada and Surrealism",
-        "count": 2,
-        "sections": 5,
-        "paths": 7,
-        "author": "David Hopkins"
-      },
-      {
-        "title": "Contemporary art",
-        "count": 2,
-        "sections": 5,
-        "paths": 6,
-        "author": "Julian Stallabrass"
-      },
-      {
         "title": "Art Theory",
         "count": 2,
         "sections": 4,
         "paths": 9,
-        "author": "Cynthia Freeland"
-      },
-      {
-        "title": "Ancient Egyptian Art and Architecture",
-        "count": 2,
-        "sections": 4,
-        "paths": 7,
-        "author": "Christina Riggs"
+        "author": "Cynthia Freeland",
+        "relevance": 100
       },
       {
         "title": "Modern art",
         "count": 2,
         "sections": 4,
         "paths": 7,
-        "author": "David Cottington"
+        "author": "David Cottington",
+        "relevance": 100
       },
       {
         "title": "Renaissance Art",
         "count": 2,
         "sections": 4,
         "paths": 7,
-        "author": "Geraldine A. Johnson"
+        "author": "Geraldine A. Johnson",
+        "relevance": 100
       },
       {
         "title": "Creativity",
         "count": 2,
         "sections": 4,
         "paths": 6,
-        "author": "Vlad Petre Glăveanu"
+        "author": "Vlad Petre Glăveanu",
+        "relevance": 100
       },
       {
         "title": "Futurism",
         "count": 2,
         "sections": 4,
         "paths": 6,
-        "author": "Ara H. Merjian"
-      },
-      {
-        "title": "Prehistory",
-        "count": 2,
-        "sections": 4,
-        "paths": 6,
-        "author": "Chris Gosden"
+        "author": "Ara H. Merjian",
+        "relevance": 100
       },
       {
         "title": "The Avant-Garde",
         "count": 2,
         "sections": 4,
         "paths": 6,
-        "author": "David Cottington"
+        "author": "David Cottington",
+        "relevance": 100
       },
       {
         "title": "Design",
         "count": 2,
         "sections": 4,
         "paths": 5,
-        "author": "John Heskett"
+        "author": "John Heskett",
+        "relevance": 100
       },
       {
         "title": "Ethnomusicology",
         "count": 2,
         "sections": 4,
         "paths": 5,
-        "author": "Timothy Rice"
+        "author": "Timothy Rice",
+        "relevance": 100
       },
       {
         "title": "Romanticism",
         "count": 2,
         "sections": 4,
         "paths": 5,
-        "author": "Michael Ferber"
+        "author": "Michael Ferber",
+        "relevance": 100
       },
       {
         "title": "Folk music",
         "count": 2,
         "sections": 4,
         "paths": 4,
-        "author": "Mark Slobin"
+        "author": "Mark Slobin",
+        "relevance": 100
       },
       {
-        "title": "Christian art",
+        "title": "Art history",
         "count": 2,
-        "sections": 3,
+        "sections": 5,
+        "paths": 8,
+        "author": "Dana Arnold",
+        "relevance": 98
+      },
+      {
+        "title": "Dada and Surrealism",
+        "count": 2,
+        "sections": 5,
         "paths": 7,
-        "author": "Beth Williamson"
+        "author": "David Hopkins",
+        "relevance": 98
       },
       {
-        "title": "Classics",
+        "title": "Contemporary art",
         "count": 2,
-        "sections": 3,
+        "sections": 5,
         "paths": 6,
-        "author": "Mary Beard, John Henderson"
-      },
-      {
-        "title": "Imagination",
-        "count": 2,
-        "sections": 3,
-        "paths": 5,
-        "author": "Jennifer Gosetti-Ferencei"
-      },
-      {
-        "title": "Music",
-        "count": 2,
-        "sections": 3,
-        "paths": 5,
-        "author": "Nicholas Cook"
-      },
-      {
-        "title": "Indian Cinema",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Ashish Rajadhyaska"
-      },
-      {
-        "title": "Literary Theory",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Jonathan Culler"
-      },
-      {
-        "title": "Modernism",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Christopher Butler"
-      },
-      {
-        "title": "Social and Cultural Anthropology",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "John Monaghan, Peter Just"
-      },
-      {
-        "title": "Theatre",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Marvin Carlson"
-      },
-      {
-        "title": "Classical Literature",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "William Allan"
+        "author": "Julian Stallabrass",
+        "relevance": 98
       },
       {
         "title": "Byzantium",
         "count": 2,
         "sections": 2,
         "paths": 5,
-        "author": "Peter Sarris"
+        "author": "Peter Sarris",
+        "relevance": 98
       },
       {
         "title": "Medieval Literature",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Elaine Treharne"
+        "author": "Elaine Treharne",
+        "relevance": 98
       },
       {
         "title": "Music and Technology",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Mark Katz"
+        "author": "Mark Katz",
+        "relevance": 98
       },
       {
         "title": "The History of Cinema",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Geoffrey Nowell-Smith"
+        "author": "Geoffrey Nowell-Smith",
+        "relevance": 98
       },
       {
         "title": "Theodor W. Adorno",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Andrew Bowie"
+        "author": "Andrew Bowie",
+        "relevance": 98
       },
       {
         "title": "Archaeology",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Paul Bahn"
+        "author": "Paul Bahn",
+        "relevance": 98
       },
       {
         "title": "Barthes",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Jonathan Culler"
+        "author": "Jonathan Culler",
+        "relevance": 98
       },
       {
         "title": "British Architecture",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Dana Arnold"
+        "author": "Dana Arnold",
+        "relevance": 98
       },
       {
         "title": "Classical Mythology",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Helen Morales"
+        "author": "Helen Morales",
+        "relevance": 98
       },
       {
         "title": "Colonial Latin American Literature",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Rolena Adorno"
+        "author": "Rolena Adorno",
+        "relevance": 98
       },
       {
         "title": "Early Music",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Thomas Forrest Kelly"
+        "author": "Thomas Forrest Kelly",
+        "relevance": 98
       },
       {
         "title": "French Cinema",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Dudley Andrew"
+        "author": "Dudley Andrew",
+        "relevance": 98
       },
       {
         "title": "Islam",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Malise Ruthven"
+        "author": "Malise Ruthven",
+        "relevance": 98
       },
       {
         "title": "Modern Latin American Literature",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Roberto González Echevarría"
+        "author": "Roberto González Echevarría",
+        "relevance": 98
       },
       {
         "title": "Reading",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Belinda Jack"
+        "author": "Belinda Jack",
+        "relevance": 98
       },
       {
         "title": "Chinese literature",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Sabina Knight"
+        "author": "Sabina Knight",
+        "relevance": 98
       },
       {
         "title": "Comparative Literature",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Ben Hutchinson"
+        "author": "Ben Hutchinson",
+        "relevance": 98
       },
       {
         "title": "Hermeneutics",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Jens Zimmermann"
+        "author": "Jens Zimmermann",
+        "relevance": 98
       },
       {
         "title": "Hieroglyphs",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Penelope Wilson"
+        "author": "Penelope Wilson",
+        "relevance": 98
       },
       {
         "title": "Japanese Literature",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Alan Tansman"
+        "author": "Alan Tansman",
+        "relevance": 98
       },
       {
         "title": "Jewish Literature",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Ilan Stavans"
+        "author": "Ilan Stavans",
+        "relevance": 98
       },
       {
         "title": "Journalism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Ian Hargreaves"
+        "author": "Ian Hargreaves",
+        "relevance": 98
       },
       {
         "title": "Modern architecture",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Adam Sharr"
+        "author": "Adam Sharr",
+        "relevance": 98
       },
       {
         "title": "Myth",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Robert A. Segal"
+        "author": "Robert A. Segal",
+        "relevance": 98
       },
       {
         "title": "Native American Literature",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Sean Teuton"
+        "author": "Sean Teuton",
+        "relevance": 98
       },
       {
         "title": "Poststructuralism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Catherine Belsey"
+        "author": "Catherine Belsey",
+        "relevance": 98
       },
       {
         "title": "World music",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Philip V. Bohlman"
+        "author": "Philip V. Bohlman",
+        "relevance": 98
+      },
+      {
+        "title": "Aesthetics",
+        "count": 2,
+        "sections": 6,
+        "paths": 10,
+        "author": "Bence Nanay",
+        "relevance": 95
+      },
+      {
+        "title": "Christian art",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "author": "Beth Williamson",
+        "relevance": 93
+      },
+      {
+        "title": "Classics",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "author": "Mary Beard, John Henderson",
+        "relevance": 93
+      },
+      {
+        "title": "Imagination",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Jennifer Gosetti-Ferencei",
+        "relevance": 93
+      },
+      {
+        "title": "Music",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Nicholas Cook",
+        "relevance": 93
+      },
+      {
+        "title": "Indian Cinema",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Ashish Rajadhyaska",
+        "relevance": 93
+      },
+      {
+        "title": "Literary Theory",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Jonathan Culler",
+        "relevance": 93
+      },
+      {
+        "title": "Modernism",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Christopher Butler",
+        "relevance": 93
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "John Monaghan, Peter Just",
+        "relevance": 93
+      },
+      {
+        "title": "Theatre",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Marvin Carlson",
+        "relevance": 93
+      },
+      {
+        "title": "Classical Literature",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "William Allan",
+        "relevance": 93
+      },
+      {
+        "title": "Ancient Egyptian Art and Architecture",
+        "count": 2,
+        "sections": 4,
+        "paths": 7,
+        "author": "Christina Riggs",
+        "relevance": 85
+      },
+      {
+        "title": "Prehistory",
+        "count": 2,
+        "sections": 4,
+        "paths": 6,
+        "author": "Chris Gosden",
+        "relevance": 85
       }
     ],
     "wiki": [
@@ -379,297 +432,346 @@
         "title": "Performing arts",
         "count": 2,
         "sections": 7,
-        "paths": 18
-      },
-      {
-        "title": "Film",
-        "count": 2,
-        "sections": 6,
-        "paths": 22
-      },
-      {
-        "title": "Visual arts",
-        "count": 2,
-        "sections": 6,
-        "paths": 18
-      },
-      {
-        "title": "Theatre",
-        "count": 2,
-        "sections": 6,
-        "paths": 17
-      },
-      {
-        "title": "Realism (arts)",
-        "count": 2,
-        "sections": 6,
-        "paths": 12
-      },
-      {
-        "title": "Music",
-        "count": 2,
-        "sections": 5,
-        "paths": 38
-      },
-      {
-        "title": "Dance",
-        "count": 2,
-        "sections": 5,
-        "paths": 18
-      },
-      {
-        "title": "Literature",
-        "count": 2,
-        "sections": 5,
-        "paths": 15
-      },
-      {
-        "title": "Opera",
-        "count": 2,
-        "sections": 5,
-        "paths": 13
-      },
-      {
-        "title": "Romanticism",
-        "count": 2,
-        "sections": 5,
-        "paths": 11
-      },
-      {
-        "title": "Popular culture",
-        "count": 2,
-        "sections": 5,
-        "paths": 8
+        "paths": 18,
+        "relevance": 100
       },
       {
         "title": "Painting",
         "count": 2,
         "sections": 4,
-        "paths": 22
+        "paths": 22,
+        "relevance": 99
       },
       {
         "title": "History of art",
         "count": 2,
         "sections": 4,
-        "paths": 21
+        "paths": 21,
+        "relevance": 99
       },
       {
         "title": "Art",
         "count": 2,
         "sections": 4,
-        "paths": 17
-      },
-      {
-        "title": "Oral tradition",
-        "count": 2,
-        "sections": 4,
-        "paths": 10
-      },
-      {
-        "title": "Charlie Chaplin",
-        "count": 2,
-        "sections": 4,
-        "paths": 9
-      },
-      {
-        "title": "Design",
-        "count": 2,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Television",
-        "count": 2,
-        "sections": 4,
-        "paths": 7
+        "paths": 17,
+        "relevance": 99
       },
       {
         "title": "Folklore",
         "count": 2,
         "sections": 4,
-        "paths": 5
+        "paths": 5,
+        "relevance": 99
       },
       {
-        "title": "Architecture",
+        "title": "Literature",
         "count": 2,
-        "sections": 3,
-        "paths": 14
+        "sections": 5,
+        "paths": 15,
+        "relevance": 97
       },
       {
-        "title": "Ancient Greece",
+        "title": "Popular culture",
         "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Jewellery",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Leonardo da Vinci",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Pottery",
-        "count": 2,
-        "sections": 3,
-        "paths": 6
-      },
-      {
-        "title": "Folk music",
-        "count": 2,
-        "sections": 3,
-        "paths": 4
+        "sections": 5,
+        "paths": 8,
+        "relevance": 97
       },
       {
         "title": "History of architecture",
         "count": 2,
         "sections": 2,
-        "paths": 11
+        "paths": 11,
+        "relevance": 97
       },
       {
         "title": "Musicology",
         "count": 2,
         "sections": 2,
-        "paths": 9
+        "paths": 9,
+        "relevance": 97
       },
       {
         "title": "History of literature",
         "count": 2,
         "sections": 2,
-        "paths": 8
+        "paths": 8,
+        "relevance": 97
       },
       {
         "title": "History of music",
         "count": 2,
         "sections": 2,
-        "paths": 7
+        "paths": 7,
+        "relevance": 97
       },
       {
         "title": "Vincent van Gogh",
         "count": 2,
         "sections": 2,
-        "paths": 6
+        "paths": 6,
+        "relevance": 97
       },
       {
         "title": "Animation",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 97
       },
       {
         "title": "Aristotle",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 97
       },
       {
         "title": "Hokusai",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 97
       },
       {
         "title": "Leo Tolstoy",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 97
       },
       {
         "title": "Museum",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 97
       },
       {
         "title": "Renaissance",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 97
       },
       {
         "title": "Emotion",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 97
       },
       {
         "title": "Modernism",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 97
+      },
+      {
+        "title": "Visual arts",
+        "count": 2,
+        "sections": 6,
+        "paths": 18,
+        "relevance": 94
+      },
+      {
+        "title": "Realism (arts)",
+        "count": 2,
+        "sections": 6,
+        "paths": 12,
+        "relevance": 94
+      },
+      {
+        "title": "Architecture",
+        "count": 2,
+        "sections": 3,
+        "paths": 14,
+        "relevance": 91
+      },
+      {
+        "title": "Ancient Greece",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 91
+      },
+      {
+        "title": "Jewellery",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 91
+      },
+      {
+        "title": "Leonardo da Vinci",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 91
+      },
+      {
+        "title": "Pottery",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 91
+      },
+      {
+        "title": "Folk music",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 91
+      },
+      {
+        "title": "Oral tradition",
+        "count": 2,
+        "sections": 4,
+        "paths": 10,
+        "relevance": 84
+      },
+      {
+        "title": "Charlie Chaplin",
+        "count": 2,
+        "sections": 4,
+        "paths": 9,
+        "relevance": 84
+      },
+      {
+        "title": "Design",
+        "count": 2,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 84
+      },
+      {
+        "title": "Television",
+        "count": 2,
+        "sections": 4,
+        "paths": 7,
+        "relevance": 84
+      },
+      {
+        "title": "Music",
+        "count": 2,
+        "sections": 5,
+        "paths": 38,
+        "relevance": 78
+      },
+      {
+        "title": "Dance",
+        "count": 2,
+        "sections": 5,
+        "paths": 18,
+        "relevance": 77
+      },
+      {
+        "title": "Opera",
+        "count": 2,
+        "sections": 5,
+        "paths": 13,
+        "relevance": 77
+      },
+      {
+        "title": "Romanticism",
+        "count": 2,
+        "sections": 5,
+        "paths": 11,
+        "relevance": 77
+      },
+      {
+        "title": "Film",
+        "count": 2,
+        "sections": 6,
+        "paths": 22,
+        "relevance": 73
+      },
+      {
+        "title": "Theatre",
+        "count": 2,
+        "sections": 6,
+        "paths": 17,
+        "relevance": 73
       }
     ],
     "macro": [
       {
-        "title": "African Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "Central Asian Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "Folk Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "Oceanic Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "South Asian Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "Southeast Asian Arts",
-        "count": 2,
-        "sections": 8,
-        "paths": 8
-      },
-      {
-        "title": "American Peoples, Arts of Native",
-        "count": 2,
-        "sections": 7,
-        "paths": 7
-      },
-      {
-        "title": "East Asian Arts",
-        "count": 2,
-        "sections": 7,
-        "paths": 7
-      },
-      {
         "title": "Egyptian Arts and Architecture, Ancient",
         "count": 2,
         "sections": 3,
-        "paths": 3
+        "paths": 3,
+        "relevance": 100
       },
       {
         "title": "Islamic Arts",
         "count": 2,
         "sections": 3,
-        "paths": 3
+        "paths": 3,
+        "relevance": 100
       },
       {
         "title": "Middle Eastern Arts and Architecture, Ancient",
         "count": 2,
         "sections": 3,
-        "paths": 3
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "American Peoples, Arts of Native",
+        "count": 2,
+        "sections": 7,
+        "paths": 7,
+        "relevance": 75
+      },
+      {
+        "title": "East Asian Arts",
+        "count": 2,
+        "sections": 7,
+        "paths": 7,
+        "relevance": 75
+      },
+      {
+        "title": "African Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
+      },
+      {
+        "title": "Central Asian Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
+      },
+      {
+        "title": "Folk Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
+      },
+      {
+        "title": "Oceanic Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
+      },
+      {
+        "title": "South Asian Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
+      },
+      {
+        "title": "Southeast Asian Arts",
+        "count": 2,
+        "sections": 8,
+        "paths": 8,
+        "relevance": 72
       }
     ]
   }

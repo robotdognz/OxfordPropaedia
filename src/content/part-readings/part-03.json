@@ -3,870 +3,1006 @@
   "readings": {
     "vsi": [
       {
-        "title": "Plants",
-        "count": 5,
-        "sections": 11,
-        "paths": 17,
-        "author": "Timothy Walker"
-      },
-      {
         "title": "Genes",
         "count": 5,
         "sections": 10,
         "paths": 20,
-        "author": "Jonathan Slack"
+        "author": "Jonathan Slack",
+        "relevance": 100
       },
       {
-        "title": "Evolution",
-        "count": 4,
-        "sections": 6,
-        "paths": 16,
-        "author": "Brian Charlesworth, Deborah Charlesworth"
-      },
-      {
-        "title": "Marine biology",
-        "count": 4,
-        "sections": 6,
-        "paths": 12,
-        "author": "Philip V. Mladenov"
+        "title": "Plants",
+        "count": 5,
+        "sections": 11,
+        "paths": 17,
+        "author": "Timothy Walker",
+        "relevance": 91
       },
       {
         "title": "Bacteria",
         "count": 4,
         "sections": 6,
         "paths": 11,
-        "author": "Sebastian G. B. Amyes"
-      },
-      {
-        "title": "Symbiosis",
-        "count": 4,
-        "sections": 6,
-        "paths": 7,
-        "author": "Nancy A. Moran"
+        "author": "Sebastian G. B. Amyes",
+        "relevance": 87
       },
       {
         "title": "The Brain",
         "count": 4,
         "sections": 5,
         "paths": 10,
-        "author": "Michael O'Shea"
+        "author": "Michael O'Shea",
+        "relevance": 87
       },
       {
         "title": "Sexual Selection",
         "count": 4,
         "sections": 5,
         "paths": 8,
-        "author": "Marlene Zuk, Leigh W Simmons"
+        "author": "Marlene Zuk, Leigh W Simmons",
+        "relevance": 87
       },
       {
         "title": "Circadian Rhythms",
         "count": 4,
         "sections": 5,
         "paths": 5,
-        "author": "Russell Foster, Leon Kreitzman"
+        "author": "Russell Foster, Leon Kreitzman",
+        "relevance": 87
       },
       {
-        "title": "Developmental biology",
-        "count": 3,
-        "sections": 9,
-        "paths": 18,
-        "author": "Lewis Wolpert"
+        "title": "Evolution",
+        "count": 4,
+        "sections": 6,
+        "paths": 16,
+        "author": "Brian Charlesworth, Deborah Charlesworth",
+        "relevance": 83
       },
       {
-        "title": "Microbiology",
-        "count": 3,
-        "sections": 9,
-        "paths": 13,
-        "author": "Nicholas P. Money"
+        "title": "Marine biology",
+        "count": 4,
+        "sections": 6,
+        "paths": 12,
+        "author": "Philip V. Mladenov",
+        "relevance": 83
       },
       {
-        "title": "The Animal Kingdom",
-        "count": 3,
-        "sections": 9,
-        "paths": 13,
-        "author": "Peter Holland"
-      },
-      {
-        "title": "The Cell",
-        "count": 3,
-        "sections": 8,
-        "paths": 14,
-        "author": "Terence Allen, Graham Cowling"
-      },
-      {
-        "title": "Hormones",
-        "count": 3,
-        "sections": 7,
-        "paths": 11,
-        "author": "Martin Luck"
+        "title": "Symbiosis",
+        "count": 4,
+        "sections": 6,
+        "paths": 7,
+        "author": "Nancy A. Moran",
+        "relevance": 83
       },
       {
         "title": "Molecular Biology",
         "count": 3,
         "sections": 7,
         "paths": 11,
-        "author": "Aysha Divan, Janice Royds"
+        "author": "Aysha Divan, Janice Royds",
+        "relevance": 71
       },
       {
-        "title": "Mammals",
+        "title": "Microbiology",
         "count": 3,
-        "sections": 6,
-        "paths": 8,
-        "author": "T. S. Kemp"
-      },
-      {
-        "title": "Biochemistry",
-        "count": 3,
-        "sections": 5,
-        "paths": 11,
-        "author": "Mark Lorch"
-      },
-      {
-        "title": "Molecules",
-        "count": 3,
-        "sections": 5,
-        "paths": 11,
-        "author": "Philip Ball"
-      },
-      {
-        "title": "Insects",
-        "count": 3,
-        "sections": 5,
-        "paths": 10,
-        "author": "Simon Leather"
-      },
-      {
-        "title": "Enzymes",
-        "count": 3,
-        "sections": 5,
-        "paths": 7,
-        "author": "Paul Engel"
-      },
-      {
-        "title": "Nutrition",
-        "count": 3,
-        "sections": 4,
-        "paths": 5,
-        "author": "David Bender"
-      },
-      {
-        "title": "Fungi",
-        "count": 3,
-        "sections": 4,
-        "paths": 4,
-        "author": "Nicolas P. Money"
-      },
-      {
-        "title": "The Eye",
-        "count": 3,
-        "sections": 4,
-        "paths": 4,
-        "author": "Michael F. Land"
+        "sections": 9,
+        "paths": 13,
+        "author": "Nicholas P. Money",
+        "relevance": 71
       },
       {
         "title": "The Immune System",
         "count": 3,
         "sections": 3,
         "paths": 5,
-        "author": "Paul Klenerman"
+        "author": "Paul Klenerman",
+        "relevance": 70
       },
       {
         "title": "Cancer",
         "count": 3,
         "sections": 3,
         "paths": 4,
-        "author": "Nick James"
+        "author": "Nick James",
+        "relevance": 70
       },
       {
         "title": "Food",
         "count": 3,
         "sections": 3,
         "paths": 3,
-        "author": "John Krebs"
+        "author": "John Krebs",
+        "relevance": 70
       },
       {
-        "title": "Human Physiology",
-        "count": 2,
-        "sections": 6,
-        "paths": 11,
-        "author": "Jamie A. Davies"
-      },
-      {
-        "title": "Ecology",
-        "count": 2,
+        "title": "Insects",
+        "count": 3,
         "sections": 5,
-        "paths": 9,
-        "author": "Jaboury Ghazoul"
+        "paths": 10,
+        "author": "Simon Leather",
+        "relevance": 69
       },
       {
-        "title": "Astrobiology",
-        "count": 2,
-        "sections": 3,
-        "paths": 6,
-        "author": "David C. Catling"
+        "title": "Enzymes",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "author": "Paul Engel",
+        "relevance": 69
       },
       {
-        "title": "Agriculture",
-        "count": 2,
-        "sections": 3,
+        "title": "Nutrition",
+        "count": 3,
+        "sections": 4,
         "paths": 5,
-        "author": "Paul Brassley, Richard Soffe"
+        "author": "David Bender",
+        "relevance": 68
       },
       {
-        "title": "Genomics",
-        "count": 2,
-        "sections": 3,
-        "paths": 5,
-        "author": "John M. Archibald"
-      },
-      {
-        "title": "Heredity",
-        "count": 2,
-        "sections": 3,
-        "paths": 5,
-        "author": "John Waller"
-      },
-      {
-        "title": "Amphibians",
-        "count": 2,
-        "sections": 3,
+        "title": "Fungi",
+        "count": 3,
+        "sections": 4,
         "paths": 4,
-        "author": "T. S. Kemp"
+        "author": "Nicolas P. Money",
+        "relevance": 68
       },
       {
-        "title": "Animal Behaviour",
-        "count": 2,
-        "sections": 3,
+        "title": "The Eye",
+        "count": 3,
+        "sections": 4,
         "paths": 4,
-        "author": "Tristram D. Wyatt"
+        "author": "Michael F. Land",
+        "relevance": 68
       },
       {
-        "title": "Coral Reefs",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Charles Sheppard"
+        "title": "Mammals",
+        "count": 3,
+        "sections": 6,
+        "paths": 8,
+        "author": "T. S. Kemp",
+        "relevance": 67
+      },
+      {
+        "title": "Biochemistry",
+        "count": 3,
+        "sections": 5,
+        "paths": 11,
+        "author": "Mark Lorch",
+        "relevance": 63
+      },
+      {
+        "title": "Molecules",
+        "count": 3,
+        "sections": 5,
+        "paths": 11,
+        "author": "Philip Ball",
+        "relevance": 63
+      },
+      {
+        "title": "The Cell",
+        "count": 3,
+        "sections": 8,
+        "paths": 14,
+        "author": "Terence Allen, Graham Cowling",
+        "relevance": 62
+      },
+      {
+        "title": "Developmental biology",
+        "count": 3,
+        "sections": 9,
+        "paths": 18,
+        "author": "Lewis Wolpert",
+        "relevance": 59
+      },
+      {
+        "title": "Hormones",
+        "count": 3,
+        "sections": 7,
+        "paths": 11,
+        "author": "Martin Luck",
+        "relevance": 56
+      },
+      {
+        "title": "The Animal Kingdom",
+        "count": 3,
+        "sections": 9,
+        "paths": 13,
+        "author": "Peter Holland",
+        "relevance": 51
       },
       {
         "title": "Anaesthesia",
         "count": 2,
         "sections": 2,
         "paths": 5,
-        "author": "Aidan O'Donnell"
+        "author": "Aidan O'Donnell",
+        "relevance": 45
       },
       {
         "title": "Drugs",
         "count": 2,
         "sections": 2,
         "paths": 5,
-        "author": "Leslie Iversen"
+        "author": "Leslie Iversen",
+        "relevance": 45
       },
       {
         "title": "Human evolution",
         "count": 2,
         "sections": 2,
         "paths": 5,
-        "author": "Bernard Wood"
+        "author": "Bernard Wood",
+        "relevance": 45
       },
       {
         "title": "Cognitive Neuroscience",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Richard Passingham"
+        "author": "Richard Passingham",
+        "relevance": 45
       },
       {
         "title": "Darwin",
         "count": 2,
         "sections": 2,
         "paths": 4,
-        "author": "Jonathan Howard"
+        "author": "Jonathan Howard",
+        "relevance": 45
       },
       {
         "title": "Extinction",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Paul B. Wignall"
+        "author": "Paul B. Wignall",
+        "relevance": 45
       },
       {
         "title": "Infectious Disease",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Benjamin Bolker and Marta Wayne"
+        "author": "Benjamin Bolker and Marta Wayne",
+        "relevance": 45
       },
       {
         "title": "Microbiomes",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Angela E. Douglas"
+        "author": "Angela E. Douglas",
+        "relevance": 45
       },
       {
         "title": "Philosophy of Biology",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Samir Okasha"
+        "author": "Samir Okasha",
+        "relevance": 45
       },
       {
         "title": "Reptiles",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Tom Kemp"
+        "author": "Tom Kemp",
+        "relevance": 45
       },
       {
         "title": "Eugenics",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Philippa Levine"
+        "author": "Philippa Levine",
+        "relevance": 45
       },
       {
         "title": "Perception",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Brian J. Rogers"
+        "author": "Brian J. Rogers",
+        "relevance": 45
       },
       {
         "title": "Viruses",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Dorothy H. Crawford"
+        "author": "Dorothy H. Crawford",
+        "relevance": 45
+      },
+      {
+        "title": "Astrobiology",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "author": "David C. Catling",
+        "relevance": 42
+      },
+      {
+        "title": "Agriculture",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Paul Brassley, Richard Soffe",
+        "relevance": 42
+      },
+      {
+        "title": "Genomics",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "John M. Archibald",
+        "relevance": 42
+      },
+      {
+        "title": "Heredity",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "John Waller",
+        "relevance": 42
+      },
+      {
+        "title": "Amphibians",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "T. S. Kemp",
+        "relevance": 42
+      },
+      {
+        "title": "Animal Behaviour",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Tristram D. Wyatt",
+        "relevance": 42
+      },
+      {
+        "title": "Coral Reefs",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Charles Sheppard",
+        "relevance": 42
+      },
+      {
+        "title": "Ecology",
+        "count": 2,
+        "sections": 5,
+        "paths": 9,
+        "author": "Jaboury Ghazoul",
+        "relevance": 36
+      },
+      {
+        "title": "Human Physiology",
+        "count": 2,
+        "sections": 6,
+        "paths": 11,
+        "author": "Jamie A. Davies",
+        "relevance": 33
       }
     ],
     "wiki": [
       {
-        "title": "Genetics",
-        "count": 4,
-        "sections": 7,
-        "paths": 21
-      },
-      {
-        "title": "Physiology",
-        "count": 4,
-        "sections": 7,
-        "paths": 18
-      },
-      {
-        "title": "Bacteria",
-        "count": 4,
-        "sections": 7,
-        "paths": 16
-      },
-      {
         "title": "Life",
         "count": 4,
         "sections": 6,
-        "paths": 23
+        "paths": 23,
+        "relevance": 100
       },
       {
         "title": "Cell (biology)",
         "count": 4,
         "sections": 6,
-        "paths": 20
+        "paths": 20,
+        "relevance": 100
       },
       {
         "title": "Photosynthesis",
         "count": 4,
         "sections": 6,
-        "paths": 17
-      },
-      {
-        "title": "Sex",
-        "count": 4,
-        "sections": 6,
-        "paths": 14
-      },
-      {
-        "title": "Heredity",
-        "count": 4,
-        "sections": 6,
-        "paths": 13
+        "paths": 17,
+        "relevance": 100
       },
       {
         "title": "Nutrition",
         "count": 4,
         "sections": 5,
-        "paths": 12
+        "paths": 12,
+        "relevance": 100
       },
       {
         "title": "Algae",
         "count": 4,
         "sections": 5,
-        "paths": 11
+        "paths": 11,
+        "relevance": 100
       },
       {
         "title": "Animal",
         "count": 4,
         "sections": 5,
-        "paths": 10
+        "paths": 10,
+        "relevance": 100
       },
       {
-        "title": "Hormone",
-        "count": 3,
-        "sections": 9,
-        "paths": 22
-      },
-      {
-        "title": "Biochemistry",
-        "count": 3,
+        "title": "Genetics",
+        "count": 4,
         "sections": 7,
-        "paths": 15
+        "paths": 21,
+        "relevance": 97
       },
       {
-        "title": "Flower",
-        "count": 3,
+        "title": "Bacteria",
+        "count": 4,
         "sections": 7,
-        "paths": 10
+        "paths": 16,
+        "relevance": 97
+      },
+      {
+        "title": "Sex",
+        "count": 4,
+        "sections": 6,
+        "paths": 14,
+        "relevance": 95
+      },
+      {
+        "title": "Heredity",
+        "count": 4,
+        "sections": 6,
+        "paths": 13,
+        "relevance": 95
+      },
+      {
+        "title": "Physiology",
+        "count": 4,
+        "sections": 7,
+        "paths": 18,
+        "relevance": 90
       },
       {
         "title": "Evolution",
         "count": 3,
         "sections": 6,
-        "paths": 30
-      },
-      {
-        "title": "Ecology",
-        "count": 3,
-        "sections": 6,
-        "paths": 20
-      },
-      {
-        "title": "Ecosystem",
-        "count": 3,
-        "sections": 6,
-        "paths": 16
-      },
-      {
-        "title": "Organism",
-        "count": 3,
-        "sections": 6,
-        "paths": 14
+        "paths": 30,
+        "relevance": 82
       },
       {
         "title": "Molecular biology",
         "count": 3,
         "sections": 6,
-        "paths": 13
+        "paths": 13,
+        "relevance": 82
       },
       {
         "title": "Protein",
         "count": 3,
         "sections": 6,
-        "paths": 11
+        "paths": 11,
+        "relevance": 82
       },
       {
-        "title": "Abiogenesis",
+        "title": "Biochemistry",
         "count": 3,
-        "sections": 5,
-        "paths": 15
-      },
-      {
-        "title": "Biology",
-        "count": 3,
-        "sections": 5,
-        "paths": 14
-      },
-      {
-        "title": "DNA",
-        "count": 3,
-        "sections": 5,
-        "paths": 13
-      },
-      {
-        "title": "Natural selection",
-        "count": 3,
-        "sections": 5,
-        "paths": 11
-      },
-      {
-        "title": "Archaea",
-        "count": 3,
-        "sections": 5,
-        "paths": 10
-      },
-      {
-        "title": "RNA",
-        "count": 3,
-        "sections": 5,
-        "paths": 10
-      },
-      {
-        "title": "Brain",
-        "count": 3,
-        "sections": 5,
-        "paths": 7
-      },
-      {
-        "title": "Virus",
-        "count": 3,
-        "sections": 5,
-        "paths": 7
-      },
-      {
-        "title": "Metabolism",
-        "count": 3,
-        "sections": 4,
-        "paths": 11
-      },
-      {
-        "title": "Food",
-        "count": 3,
-        "sections": 4,
-        "paths": 9
-      },
-      {
-        "title": "Bird",
-        "count": 3,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Carbon",
-        "count": 3,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Plant",
-        "count": 3,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Carbohydrate",
-        "count": 3,
-        "sections": 4,
-        "paths": 7
-      },
-      {
-        "title": "Carbon dioxide",
-        "count": 3,
-        "sections": 4,
-        "paths": 7
-      },
-      {
-        "title": "Domestication",
-        "count": 3,
-        "sections": 4,
-        "paths": 6
-      },
-      {
-        "title": "Insect",
-        "count": 3,
-        "sections": 4,
-        "paths": 6
-      },
-      {
-        "title": "Energy",
-        "count": 3,
-        "sections": 4,
-        "paths": 5
+        "sections": 7,
+        "paths": 15,
+        "relevance": 81
       },
       {
         "title": "Eukaryote",
         "count": 3,
         "sections": 3,
-        "paths": 10
+        "paths": 10,
+        "relevance": 80
       },
       {
         "title": "Species",
         "count": 3,
         "sections": 3,
-        "paths": 8
+        "paths": 8,
+        "relevance": 80
       },
       {
         "title": "Zoology",
         "count": 3,
         "sections": 3,
-        "paths": 7
+        "paths": 7,
+        "relevance": 80
       },
       {
         "title": "Death",
         "count": 3,
         "sections": 3,
-        "paths": 6
+        "paths": 6,
+        "relevance": 80
       },
       {
         "title": "Dog",
         "count": 3,
         "sections": 3,
-        "paths": 6
+        "paths": 6,
+        "relevance": 80
       },
       {
         "title": "Botany",
         "count": 3,
         "sections": 3,
-        "paths": 4
+        "paths": 4,
+        "relevance": 80
       },
       {
-        "title": "Reproduction",
-        "count": 2,
+        "title": "Abiogenesis",
+        "count": 3,
         "sections": 5,
-        "paths": 13
+        "paths": 15,
+        "relevance": 79
       },
       {
-        "title": "Skeletal muscle",
-        "count": 2,
+        "title": "Biology",
+        "count": 3,
         "sections": 5,
-        "paths": 11
+        "paths": 14,
+        "relevance": 79
       },
       {
-        "title": "Mollusca",
-        "count": 2,
+        "title": "DNA",
+        "count": 3,
         "sections": 5,
-        "paths": 8
+        "paths": 13,
+        "relevance": 79
       },
       {
-        "title": "Fruit",
-        "count": 2,
+        "title": "Natural selection",
+        "count": 3,
         "sections": 5,
-        "paths": 7
+        "paths": 11,
+        "relevance": 79
       },
       {
-        "title": "Seed",
-        "count": 2,
+        "title": "Archaea",
+        "count": 3,
+        "sections": 5,
+        "paths": 10,
+        "relevance": 79
+      },
+      {
+        "title": "RNA",
+        "count": 3,
+        "sections": 5,
+        "paths": 10,
+        "relevance": 79
+      },
+      {
+        "title": "Virus",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "relevance": 79
+      },
+      {
+        "title": "Metabolism",
+        "count": 3,
         "sections": 4,
-        "paths": 12
+        "paths": 11,
+        "relevance": 77
       },
       {
-        "title": "Heart",
-        "count": 2,
+        "title": "Food",
+        "count": 3,
         "sections": 4,
-        "paths": 10
+        "paths": 9,
+        "relevance": 77
       },
       {
-        "title": "Bone",
-        "count": 2,
+        "title": "Bird",
+        "count": 3,
         "sections": 4,
-        "paths": 9
+        "paths": 8,
+        "relevance": 77
+      },
+      {
+        "title": "Carbon",
+        "count": 3,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 77
+      },
+      {
+        "title": "Plant",
+        "count": 3,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 77
+      },
+      {
+        "title": "Carbohydrate",
+        "count": 3,
+        "sections": 4,
+        "paths": 7,
+        "relevance": 77
+      },
+      {
+        "title": "Carbon dioxide",
+        "count": 3,
+        "sections": 4,
+        "paths": 7,
+        "relevance": 77
+      },
+      {
+        "title": "Domestication",
+        "count": 3,
+        "sections": 4,
+        "paths": 6,
+        "relevance": 77
+      },
+      {
+        "title": "Insect",
+        "count": 3,
+        "sections": 4,
+        "paths": 6,
+        "relevance": 77
+      },
+      {
+        "title": "Energy",
+        "count": 3,
+        "sections": 4,
+        "paths": 5,
+        "relevance": 77
+      },
+      {
+        "title": "Organism",
+        "count": 3,
+        "sections": 6,
+        "paths": 14,
+        "relevance": 76
+      },
+      {
+        "title": "Flower",
+        "count": 3,
+        "sections": 7,
+        "paths": 10,
+        "relevance": 76
+      },
+      {
+        "title": "Brain",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "relevance": 72
+      },
+      {
+        "title": "Hormone",
+        "count": 3,
+        "sections": 9,
+        "paths": 22,
+        "relevance": 68
+      },
+      {
+        "title": "Ecology",
+        "count": 3,
+        "sections": 6,
+        "paths": 20,
+        "relevance": 68
+      },
+      {
+        "title": "Ecosystem",
+        "count": 3,
+        "sections": 6,
+        "paths": 16,
+        "relevance": 68
       },
       {
         "title": "Digestion",
         "count": 2,
         "sections": 4,
-        "paths": 9
+        "paths": 9,
+        "relevance": 52
       },
       {
-        "title": "Arthropod",
+        "title": "Reproduction",
         "count": 2,
-        "sections": 4,
-        "paths": 7
+        "sections": 5,
+        "paths": 13,
+        "relevance": 51
       },
       {
-        "title": "Tree",
+        "title": "Skeletal muscle",
         "count": 2,
-        "sections": 3,
-        "paths": 10
-      },
-      {
-        "title": "Anatomy",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Blood",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Cat",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Gene",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Nervous system",
-        "count": 2,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Charles Darwin",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Eye",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Immune system",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Learning",
-        "count": 2,
-        "sections": 3,
-        "paths": 6
-      },
-      {
-        "title": "Water",
-        "count": 2,
-        "sections": 3,
-        "paths": 6
-      },
-      {
-        "title": "Maize",
-        "count": 2,
-        "sections": 3,
-        "paths": 5
-      },
-      {
-        "title": "Meat",
-        "count": 2,
-        "sections": 3,
-        "paths": 5
-      },
-      {
-        "title": "Taxonomy (biology)",
-        "count": 2,
-        "sections": 3,
-        "paths": 5
-      },
-      {
-        "title": "Liver",
-        "count": 2,
-        "sections": 3,
-        "paths": 4
-      },
-      {
-        "title": "Oxygen",
-        "count": 2,
-        "sections": 3,
-        "paths": 4
+        "sections": 5,
+        "paths": 11,
+        "relevance": 51
       },
       {
         "title": "Primate",
         "count": 2,
         "sections": 2,
-        "paths": 7
+        "paths": 7,
+        "relevance": 51
       },
       {
         "title": "Breathing",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 51
       },
       {
         "title": "Extinction",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 51
       },
       {
         "title": "Catalysis",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Fish",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Gender",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Human",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Human sexuality",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Louis Pasteur",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Pig",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Sexual orientation",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Vegetable",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Adolescence",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Biotechnology",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Child",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Fungus",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Intelligence",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Smoking",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 51
       },
       {
         "title": "Nitrogen",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
+      },
+      {
+        "title": "Tree",
+        "count": 2,
+        "sections": 3,
+        "paths": 10,
+        "relevance": 48
+      },
+      {
+        "title": "Anatomy",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 48
+      },
+      {
+        "title": "Blood",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 48
+      },
+      {
+        "title": "Cat",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 48
+      },
+      {
+        "title": "Gene",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 48
+      },
+      {
+        "title": "Nervous system",
+        "count": 2,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 48
+      },
+      {
+        "title": "Charles Darwin",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 48
+      },
+      {
+        "title": "Eye",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 48
+      },
+      {
+        "title": "Immune system",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 48
+      },
+      {
+        "title": "Learning",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 48
+      },
+      {
+        "title": "Water",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 48
+      },
+      {
+        "title": "Maize",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "relevance": 48
+      },
+      {
+        "title": "Meat",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "relevance": 48
+      },
+      {
+        "title": "Taxonomy (biology)",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "relevance": 48
+      },
+      {
+        "title": "Liver",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 48
+      },
+      {
+        "title": "Oxygen",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 48
+      },
+      {
+        "title": "Seed",
+        "count": 2,
+        "sections": 4,
+        "paths": 12,
+        "relevance": 44
+      },
+      {
+        "title": "Heart",
+        "count": 2,
+        "sections": 4,
+        "paths": 10,
+        "relevance": 44
+      },
+      {
+        "title": "Bone",
+        "count": 2,
+        "sections": 4,
+        "paths": 9,
+        "relevance": 44
+      },
+      {
+        "title": "Arthropod",
+        "count": 2,
+        "sections": 4,
+        "paths": 7,
+        "relevance": 44
+      },
+      {
+        "title": "Mollusca",
+        "count": 2,
+        "sections": 5,
+        "paths": 8,
+        "relevance": 41
+      },
+      {
+        "title": "Fruit",
+        "count": 2,
+        "sections": 5,
+        "paths": 7,
+        "relevance": 41
       }
     ],
     "macro": [
@@ -874,85 +1010,99 @@
         "title": "Behaviour, Animal",
         "count": 4,
         "sections": 5,
-        "paths": 5
+        "paths": 5,
+        "relevance": 100
       },
       {
         "title": "Cells: Their Structures and Functions",
         "count": 3,
         "sections": 7,
-        "paths": 7
-      },
-      {
-        "title": "Animals",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Biosphere, The",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Muscles and Muscle Systems",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Nerves and Nervous Systems",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Plants",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Reproduction and Reproductive Systems",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
+        "paths": 7,
+        "relevance": 77
       },
       {
         "title": "Death",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Genetics and Heredity, The Principles of",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Growth and Development, Biological",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Metabolism",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Photosynthesis",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Sensory Reception",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 51
+      },
+      {
+        "title": "Animals",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
+      },
+      {
+        "title": "Biosphere, The",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
+      },
+      {
+        "title": "Muscles and Muscle Systems",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
+      },
+      {
+        "title": "Nerves and Nervous Systems",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
+      },
+      {
+        "title": "Plants",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
+      },
+      {
+        "title": "Reproduction and Reproductive Systems",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 48
       }
     ]
   }

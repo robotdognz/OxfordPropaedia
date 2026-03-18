@@ -1768,24 +1768,27 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
                             const total = centerCount + topCount;
+                            const relevancePct = Math.round((total / section.maxTotal) * 100);
                             const centerPct = Math.round((centerCount / section.maxTotal) * 100);
                             const topPct = Math.round((topCount / section.maxTotal) * 100);
                             const checkKey = section.getCheckKey(item);
                             const isChecked = Boolean(checklistState[checkKey]);
+                            const whyLabel = section.type === 'vsi' ? 'Why this book?' : 'Why this article?';
+                            const rationale = `Recommended in ${centerCount} section${centerCount !== 1 ? 's' : ''} of ${centerPart.title} and ${topCount} section${topCount !== 1 ? 's' : ''} of ${topPart.title}.`;
 
                             return (
                               <div
                                 key={item.t}
-                                class={`rounded-lg border bg-white p-4 transition ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                                class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
                               >
-                                <div class="flex items-start justify-between gap-2">
-                                  <a
-                                    href={section.getHref(item)}
-                                    class="text-sm font-serif font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
-                                  >
-                                    {item.t}
-                                  </a>
-                                  <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
+                                <div class="mb-2 flex items-start justify-between gap-3">
+                                  <div class="min-w-0">
+                                    <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
+                                      <a href={section.getHref(item)} class="hover:text-indigo-700 transition-colors">{item.t}</a>
+                                    </h4>
+                                    {item.a && <p class="text-sm text-gray-500 mt-0.5">{item.a}</p>}
+                                  </div>
+                                  <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
                                     <input
                                       type="checkbox"
                                       checked={isChecked}
@@ -1795,15 +1798,18 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                                     Done
                                   </label>
                                 </div>
-                                {item.a && <p class="mt-1 text-xs text-gray-400">{item.a}</p>}
-                                <div class="mt-3 flex items-center gap-2">
-                                  <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
+                                <div class="mb-3 flex items-center gap-2">
+                                  <div class="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
                                     <div class="flex h-full">
                                       <div class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
                                       <div style={{ width: `${topPct}%`, backgroundColor: topPart.colorHex, borderRadius: centerPct === 0 ? '9999px 0 0 9999px' : topPct + centerPct >= 100 ? '0 9999px 9999px 0' : '0' }} />
                                     </div>
                                   </div>
+                                  <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{relevancePct}% relevance</span>
                                 </div>
+                                <Accordion title={whyLabel} defaultOpen={false}>
+                                  <p class="text-gray-600">{rationale}</p>
+                                </Accordion>
                               </div>
                             );
                           })}

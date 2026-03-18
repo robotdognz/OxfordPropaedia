@@ -3,1405 +3,1619 @@
   "readings": {
     "vsi": [
       {
-        "title": "Capitalism",
-        "count": 4,
-        "sections": 9,
-        "paths": 12,
-        "author": "James Fulcher"
-      },
-      {
-        "title": "Marx",
-        "count": 4,
-        "sections": 8,
-        "paths": 13,
-        "author": "Peter Singer"
-      },
-      {
-        "title": "Socialism",
-        "count": 4,
-        "sections": 8,
-        "paths": 12,
-        "author": "Michael Newman"
-      },
-      {
-        "title": "The Industrial Revolution",
-        "count": 4,
-        "sections": 8,
-        "paths": 11,
-        "author": "Robert C. Allen"
-      },
-      {
-        "title": "Globalization",
-        "count": 4,
-        "sections": 7,
-        "paths": 8,
-        "author": "Manfred Steger"
-      },
-      {
         "title": "Decolonization",
         "count": 4,
         "sections": 4,
         "paths": 5,
-        "author": "Dane Kennedy"
+        "author": "Dane Kennedy",
+        "relevance": 100
       },
       {
         "title": "The Welfare State",
         "count": 4,
         "sections": 4,
         "paths": 4,
-        "author": "David Garland"
+        "author": "David Garland",
+        "relevance": 100
       },
       {
-        "title": "Economics",
-        "count": 3,
+        "title": "Globalization",
+        "count": 4,
+        "sections": 7,
+        "paths": 8,
+        "author": "Manfred Steger",
+        "relevance": 95
+      },
+      {
+        "title": "The Industrial Revolution",
+        "count": 4,
+        "sections": 8,
+        "paths": 11,
+        "author": "Robert C. Allen",
+        "relevance": 94
+      },
+      {
+        "title": "Marx",
+        "count": 4,
+        "sections": 8,
+        "paths": 13,
+        "author": "Peter Singer",
+        "relevance": 91
+      },
+      {
+        "title": "Socialism",
+        "count": 4,
         "sections": 8,
         "paths": 12,
-        "author": "Partha Dasgupta"
+        "author": "Michael Newman",
+        "relevance": 91
       },
       {
-        "title": "Competition and Antitrust Law",
-        "count": 3,
-        "sections": 6,
-        "paths": 8,
-        "author": "Ariel Ezrachi"
-      },
-      {
-        "title": "Global Economic History",
-        "count": 3,
-        "sections": 6,
-        "paths": 6,
-        "author": "Robert C. Allen"
-      },
-      {
-        "title": "Communism",
-        "count": 3,
-        "sections": 5,
-        "paths": 6,
-        "author": "Leslie Holmes"
-      },
-      {
-        "title": "Feminism",
-        "count": 3,
-        "sections": 5,
-        "paths": 6,
-        "author": "Margaret Walters"
-      },
-      {
-        "title": "Neoliberalism",
-        "count": 3,
-        "sections": 5,
-        "paths": 6,
-        "author": "Manfred Steger, Ravi K. Roy"
-      },
-      {
-        "title": "Innovation",
-        "count": 3,
-        "sections": 4,
-        "paths": 6,
-        "author": "Mark Dodgson, David Gann"
-      },
-      {
-        "title": "Confucianism",
-        "count": 3,
-        "sections": 4,
-        "paths": 5,
-        "author": "Daniel K. Gardner"
-      },
-      {
-        "title": "The History of Childhood",
-        "count": 3,
-        "sections": 4,
-        "paths": 5,
-        "author": "James Marten"
-      },
-      {
-        "title": "Education",
-        "count": 3,
-        "sections": 4,
-        "paths": 4,
-        "author": "Gary Thomas"
+        "title": "Capitalism",
+        "count": 4,
+        "sections": 9,
+        "paths": 12,
+        "author": "James Fulcher",
+        "relevance": 79
       },
       {
         "title": "Child Psychology",
         "count": 3,
         "sections": 3,
         "paths": 5,
-        "author": "Usha Goswami"
+        "author": "Usha Goswami",
+        "relevance": 78
       },
       {
         "title": "Modern India",
         "count": 3,
         "sections": 3,
         "paths": 5,
-        "author": "Craig Jeffrey"
+        "author": "Craig Jeffrey",
+        "relevance": 78
       },
       {
         "title": "Criminal Justice",
         "count": 3,
         "sections": 3,
         "paths": 4,
-        "author": "Julian V. Roberts"
+        "author": "Julian V. Roberts",
+        "relevance": 78
       },
       {
         "title": "Free speech",
         "count": 3,
         "sections": 3,
         "paths": 4,
-        "author": "Nigel Warburton"
+        "author": "Nigel Warburton",
+        "relevance": 78
       },
       {
         "title": "Ancient Greece",
         "count": 3,
         "sections": 3,
         "paths": 3,
-        "author": "Paul Cartledge"
+        "author": "Paul Cartledge",
+        "relevance": 78
       },
       {
         "title": "Family law",
         "count": 3,
         "sections": 3,
         "paths": 3,
-        "author": "Jonathan Herring"
+        "author": "Jonathan Herring",
+        "relevance": 78
       },
       {
         "title": "Human Rights",
         "count": 3,
         "sections": 3,
         "paths": 3,
-        "author": "Andrew Clapham"
+        "author": "Andrew Clapham",
+        "relevance": 78
       },
       {
         "title": "Rousseau",
         "count": 3,
         "sections": 3,
         "paths": 3,
-        "author": "Robert Wokler"
+        "author": "Robert Wokler",
+        "relevance": 78
       },
       {
-        "title": "Sociology",
-        "count": 2,
-        "sections": 6,
-        "paths": 7,
-        "author": "Steve Bruce"
-      },
-      {
-        "title": "Taxation",
-        "count": 2,
-        "sections": 6,
-        "paths": 7,
-        "author": "Stephen Smith"
-      },
-      {
-        "title": "Banking",
-        "count": 2,
-        "sections": 5,
-        "paths": 8,
-        "author": "John O. S. Wilson, John Goddard"
-      },
-      {
-        "title": "Microeconomics",
-        "count": 2,
-        "sections": 5,
-        "paths": 7,
-        "author": "Avinash Dixit"
-      },
-      {
-        "title": "Social and Cultural Anthropology",
-        "count": 2,
-        "sections": 5,
-        "paths": 7,
-        "author": "John Monaghan, Peter Just"
-      },
-      {
-        "title": "The Rule of Law",
-        "count": 2,
+        "title": "Communism",
+        "count": 3,
         "sections": 5,
         "paths": 6,
-        "author": "Aziz Z. Huq"
+        "author": "Leslie Holmes",
+        "relevance": 77
       },
       {
-        "title": "Democracy",
-        "count": 2,
+        "title": "Innovation",
+        "count": 3,
         "sections": 4,
         "paths": 6,
-        "author": "Bernard Crick"
+        "author": "Mark Dodgson, David Gann",
+        "relevance": 75
       },
       {
-        "title": "Terrorism",
-        "count": 2,
-        "sections": 4,
-        "paths": 6,
-        "author": "Charles Townshend"
-      },
-      {
-        "title": "Authoritarianism",
-        "count": 2,
+        "title": "Confucianism",
+        "count": 3,
         "sections": 4,
         "paths": 5,
-        "author": "James Loxton"
+        "author": "Daniel K. Gardner",
+        "relevance": 75
+      },
+      {
+        "title": "The History of Childhood",
+        "count": 3,
+        "sections": 4,
+        "paths": 5,
+        "author": "James Marten",
+        "relevance": 75
+      },
+      {
+        "title": "Education",
+        "count": 3,
+        "sections": 4,
+        "paths": 4,
+        "author": "Gary Thomas",
+        "relevance": 75
+      },
+      {
+        "title": "Feminism",
+        "count": 3,
+        "sections": 5,
+        "paths": 6,
+        "author": "Margaret Walters",
+        "relevance": 71
+      },
+      {
+        "title": "Neoliberalism",
+        "count": 3,
+        "sections": 5,
+        "paths": 6,
+        "author": "Manfred Steger, Ravi K. Roy",
+        "relevance": 71
+      },
+      {
+        "title": "Competition and Antitrust Law",
+        "count": 3,
+        "sections": 6,
+        "paths": 8,
+        "author": "Ariel Ezrachi",
+        "relevance": 66
+      },
+      {
+        "title": "Global Economic History",
+        "count": 3,
+        "sections": 6,
+        "paths": 6,
+        "author": "Robert C. Allen",
+        "relevance": 66
+      },
+      {
+        "title": "Economics",
+        "count": 3,
+        "sections": 8,
+        "paths": 12,
+        "author": "Partha Dasgupta",
+        "relevance": 59
       },
       {
         "title": "Employment Law",
         "count": 2,
         "sections": 4,
         "paths": 5,
-        "author": "David Cabrelli"
+        "author": "David Cabrelli",
+        "relevance": 51
       },
       {
         "title": "Populism",
         "count": 2,
         "sections": 4,
         "paths": 5,
-        "author": "Cas Mudde, Cristsbal Rovia Kalwasser"
-      },
-      {
-        "title": "Social Psychology",
-        "count": 2,
-        "sections": 4,
-        "paths": 5,
-        "author": "Richard J. Crisp"
-      },
-      {
-        "title": "Mathematical finance",
-        "count": 2,
-        "sections": 4,
-        "paths": 4,
-        "author": "Mark H. A. Davis"
+        "author": "Cas Mudde, Cristsbal Rovia Kalwasser",
+        "relevance": 51
       },
       {
         "title": "Revolutions",
         "count": 2,
         "sections": 4,
         "paths": 4,
-        "author": "Jack A. Goldstone"
+        "author": "Jack A. Goldstone",
+        "relevance": 51
       },
       {
-        "title": "Advertising",
+        "title": "Social and Cultural Anthropology",
         "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Winston Fletcher"
+        "sections": 5,
+        "paths": 7,
+        "author": "John Monaghan, Peter Just",
+        "relevance": 50
       },
       {
-        "title": "Environmental economics",
+        "title": "The Rule of Law",
         "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Stephen Smith"
-      },
-      {
-        "title": "Identity",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Florian Coulmas"
-      },
-      {
-        "title": "Malthus",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Donald Winch"
-      },
-      {
-        "title": "Poverty",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Philip N. Jefferson"
-      },
-      {
-        "title": "Public Administration",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Stella Z. Theodoulou, Ravi K. Roy"
-      },
-      {
-        "title": "The American Judicial System",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Charles L. Zelden"
-      },
-      {
-        "title": "Tocqueville",
-        "count": 2,
-        "sections": 3,
-        "paths": 4,
-        "author": "Harvey Mansfield"
-      },
-      {
-        "title": "Diaspora",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Kevin Kenny"
-      },
-      {
-        "title": "Gender History",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Antoinette Burton"
-      },
-      {
-        "title": "Ideology",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Michael Freeden"
-      },
-      {
-        "title": "International law",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Vaughan Lowe"
-      },
-      {
-        "title": "Magna Carta",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Nicholas Vincent"
-      },
-      {
-        "title": "Nationalism",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Steven Grosby"
-      },
-      {
-        "title": "Public health",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Virginia Berridge"
-      },
-      {
-        "title": "Refugees",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Gil Loescher"
-      },
-      {
-        "title": "The United Nations",
-        "count": 2,
-        "sections": 3,
-        "paths": 3,
-        "author": "Jussi M. Hanhimäki"
+        "sections": 5,
+        "paths": 6,
+        "author": "Aziz Z. Huq",
+        "relevance": 50
       },
       {
         "title": "American Slavery",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Heather Andrea Williams"
+        "author": "Heather Andrea Williams",
+        "relevance": 50
       },
       {
         "title": "Aristocracy",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "William Doyle"
+        "author": "William Doyle",
+        "relevance": 50
       },
       {
         "title": "Borders",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Alexander C. Diener, Joshua Hagen"
+        "author": "Alexander C. Diener, Joshua Hagen",
+        "relevance": 50
       },
       {
         "title": "European Union Law",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Anthony Arnull"
+        "author": "Anthony Arnull",
+        "relevance": 50
       },
       {
         "title": "Fascism",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Kevin Passmore"
+        "author": "Kevin Passmore",
+        "relevance": 50
       },
       {
         "title": "Humanitarianism",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Julia F Irwin"
+        "author": "Julia F Irwin",
+        "relevance": 50
       },
       {
         "title": "Intellectual property",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Siva Vaidhyanathan"
+        "author": "Siva Vaidhyanathan",
+        "relevance": 50
       },
       {
         "title": "Islamic Law",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Mashood A. Baderin"
+        "author": "Mashood A. Baderin",
+        "relevance": 50
       },
       {
         "title": "Liberalism",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Michael Freeden"
+        "author": "Michael Freeden",
+        "relevance": 50
       },
       {
         "title": "Locke",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "John Dunn"
+        "author": "John Dunn",
+        "relevance": 50
       },
       {
         "title": "Modern Japan",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Christopher Goto-Jones"
+        "author": "Christopher Goto-Jones",
+        "relevance": 50
       },
       {
         "title": "Philosophy in the Islamic World",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Peter Adamson"
+        "author": "Peter Adamson",
+        "relevance": 50
       },
       {
         "title": "Psycholinguistics",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Fernanda Ferreira"
+        "author": "Fernanda Ferreira",
+        "relevance": 50
       },
       {
         "title": "Surveillance",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "David Lyon"
+        "author": "David Lyon",
+        "relevance": 50
       },
       {
         "title": "Sustainability",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Saleem H. Ali"
+        "author": "Saleem H. Ali",
+        "relevance": 50
       },
       {
         "title": "The BRICS",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Andrew F. Cooper"
+        "author": "Andrew F. Cooper",
+        "relevance": 50
       },
       {
         "title": "The British Constitution",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Martin Loughlin"
+        "author": "Martin Loughlin",
+        "relevance": 50
       },
       {
         "title": "The Holy Roman Empire",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Joachim Whaley"
+        "author": "Joachim Whaley",
+        "relevance": 50
       },
       {
         "title": "The Soviet Union",
         "count": 2,
         "sections": 2,
         "paths": 3,
-        "author": "Stephen Lovell"
+        "author": "Stephen Lovell",
+        "relevance": 50
       },
       {
         "title": "Accounting",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Christopher Nobes"
+        "author": "Christopher Nobes",
+        "relevance": 50
       },
       {
         "title": "Adolescence",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Peter Smith"
+        "author": "Peter Smith",
+        "relevance": 50
       },
       {
         "title": "African American History",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Jonathan Scott Holloway"
+        "author": "Jonathan Scott Holloway",
+        "relevance": 50
       },
       {
         "title": "African History",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "John Parker, Richard Rathbone"
+        "author": "John Parker, Richard Rathbone",
+        "relevance": 50
       },
       {
         "title": "Agriculture",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Paul Brassley, Richard Soffe"
+        "author": "Paul Brassley, Richard Soffe",
+        "relevance": 50
       },
       {
         "title": "Anarchism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Alex Prichard"
+        "author": "Alex Prichard",
+        "relevance": 50
       },
       {
         "title": "Ancient Egypt",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Ian Shaw"
+        "author": "Ian Shaw",
+        "relevance": 50
       },
       {
         "title": "Arbitration",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Thomas Schultz, Thomas Grant"
+        "author": "Thomas Schultz, Thomas Grant",
+        "relevance": 50
       },
       {
         "title": "Artificial Intelligence",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Margaret A. Boden"
+        "author": "Margaret A. Boden",
+        "relevance": 50
       },
       {
         "title": "Byzantium",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Peter Sarris"
+        "author": "Peter Sarris",
+        "relevance": 50
       },
       {
         "title": "City Planning",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Carl Abbott"
+        "author": "Carl Abbott",
+        "relevance": 50
       },
       {
         "title": "Concentration Camps",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Dan Stone"
+        "author": "Dan Stone",
+        "relevance": 50
       },
       {
         "title": "Criminology",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Tim Newburn"
+        "author": "Tim Newburn",
+        "relevance": 50
       },
       {
         "title": "Dyslexia",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Margaret J. Snowling"
+        "author": "Margaret J. Snowling",
+        "relevance": 50
       },
       {
         "title": "Environmental Law",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Elizabeth Fisher"
+        "author": "Elizabeth Fisher",
+        "relevance": 50
       },
       {
         "title": "Fundamentalism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Malise Ruthven"
+        "author": "Malise Ruthven",
+        "relevance": 50
       },
       {
         "title": "Geopolitics",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Klaus Dodds"
+        "author": "Klaus Dodds",
+        "relevance": 50
       },
       {
         "title": "Hobbes",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Richard Tuck"
+        "author": "Richard Tuck",
+        "relevance": 50
       },
       {
         "title": "Human Resource Management",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Adrian Wilkinson"
+        "author": "Adrian Wilkinson",
+        "relevance": 50
       },
       {
         "title": "Information",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Luciano Floridi"
+        "author": "Luciano Floridi",
+        "relevance": 50
       },
       {
         "title": "Islamic History",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Adam J. Silverstein"
+        "author": "Adam J. Silverstein",
+        "relevance": 50
       },
       {
         "title": "Military Justice",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Eugene R. Fidell"
+        "author": "Eugene R. Fidell",
+        "relevance": 50
       },
       {
         "title": "Modern China",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Rana Mitter"
+        "author": "Rana Mitter",
+        "relevance": 50
       },
       {
         "title": "Multiculturalism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Ali Rattansi"
+        "author": "Ali Rattansi",
+        "relevance": 50
       },
       {
         "title": "Negotiation",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Carrie Menkel-Meadow"
+        "author": "Carrie Menkel-Meadow",
+        "relevance": 50
       },
       {
         "title": "Organizations",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Mary Jo Hatch"
+        "author": "Mary Jo Hatch",
+        "relevance": 50
       },
       {
         "title": "Polygamy",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Sarah Pearsall"
+        "author": "Sarah Pearsall",
+        "relevance": 50
       },
       {
         "title": "Psychology",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Gillian Butler, Freda McManus"
+        "author": "Gillian Butler, Freda McManus",
+        "relevance": 50
       },
       {
         "title": "Reading",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Belinda Jack"
+        "author": "Belinda Jack",
+        "relevance": 50
       },
       {
         "title": "Secularism",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Andrew Copson"
+        "author": "Andrew Copson",
+        "relevance": 50
       },
       {
         "title": "Sexuality",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Veronique Mottier"
+        "author": "Veronique Mottier",
+        "relevance": 50
       },
       {
         "title": "Social Science",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Alexander Betts"
+        "author": "Alexander Betts",
+        "relevance": 50
       },
       {
         "title": "The Ancient Near East",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Amanda H. Podany"
+        "author": "Amanda H. Podany",
+        "relevance": 50
       },
       {
         "title": "The Enlightenment",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "John Robertson"
+        "author": "John Robertson",
+        "relevance": 50
       },
       {
         "title": "The Middle Ages",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Miri Rubin"
+        "author": "Miri Rubin",
+        "relevance": 50
       },
       {
         "title": "The Roman Empire",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Christopher Kelly"
+        "author": "Christopher Kelly",
+        "relevance": 50
       },
       {
         "title": "The Roman Republic",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "David M. Gwynn"
+        "author": "David M. Gwynn",
+        "relevance": 50
       },
       {
         "title": "The U.S. Constitution",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "David J. Bodenhamer"
+        "author": "David J. Bodenhamer",
+        "relevance": 50
       },
       {
         "title": "The U.S. Supreme Court",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Linda Greenhouse"
+        "author": "Linda Greenhouse",
+        "relevance": 50
       },
       {
         "title": "Work",
         "count": 2,
         "sections": 2,
         "paths": 2,
-        "author": "Stephen Fineman"
-      }
-    ],
-    "wiki": [
-      {
-        "title": "Karl Marx",
-        "count": 5,
-        "sections": 11,
-        "paths": 29
+        "author": "Stephen Fineman",
+        "relevance": 50
       },
       {
-        "title": "Property",
-        "count": 5,
-        "sections": 7,
-        "paths": 19
+        "title": "Sociology",
+        "count": 2,
+        "sections": 6,
+        "paths": 7,
+        "author": "Steve Bruce",
+        "relevance": 48
       },
       {
-        "title": "Work (human activity)",
-        "count": 4,
-        "sections": 10,
-        "paths": 16
+        "title": "Taxation",
+        "count": 2,
+        "sections": 6,
+        "paths": 7,
+        "author": "Stephen Smith",
+        "relevance": 48
       },
       {
-        "title": "Welfare spending",
-        "count": 4,
-        "sections": 8,
-        "paths": 16
+        "title": "Advertising",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Winston Fletcher",
+        "relevance": 47
       },
       {
-        "title": "Age of Enlightenment",
-        "count": 4,
-        "sections": 7,
-        "paths": 19
+        "title": "Environmental economics",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Stephen Smith",
+        "relevance": 47
+      },
+      {
+        "title": "Identity",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Florian Coulmas",
+        "relevance": 47
+      },
+      {
+        "title": "Malthus",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Donald Winch",
+        "relevance": 47
       },
       {
         "title": "Poverty",
-        "count": 4,
-        "sections": 7,
-        "paths": 15
-      },
-      {
-        "title": "Socialism",
-        "count": 4,
-        "sections": 7,
-        "paths": 14
-      },
-      {
-        "title": "Globalization",
-        "count": 4,
-        "sections": 6,
-        "paths": 15
-      },
-      {
-        "title": "Human rights",
-        "count": 3,
-        "sections": 8,
-        "paths": 21
-      },
-      {
-        "title": "European Union",
-        "count": 3,
-        "sections": 6,
-        "paths": 11
-      },
-      {
-        "title": "Government",
-        "count": 3,
-        "sections": 5,
-        "paths": 24
-      },
-      {
-        "title": "Law",
-        "count": 3,
-        "sections": 5,
-        "paths": 23
-      },
-      {
-        "title": "Economy",
-        "count": 3,
-        "sections": 5,
-        "paths": 14
-      },
-      {
-        "title": "City",
-        "count": 3,
-        "sections": 5,
-        "paths": 10
-      },
-      {
-        "title": "Communism",
-        "count": 3,
-        "sections": 5,
-        "paths": 10
-      },
-      {
-        "title": "Oral tradition",
-        "count": 3,
-        "sections": 5,
-        "paths": 10
-      },
-      {
-        "title": "Trade union",
-        "count": 3,
-        "sections": 5,
-        "paths": 8
-      },
-      {
-        "title": "Family",
-        "count": 3,
-        "sections": 4,
-        "paths": 13
-      },
-      {
-        "title": "John Locke",
-        "count": 3,
-        "sections": 4,
-        "paths": 10
-      },
-      {
-        "title": "Atlantic slave trade",
-        "count": 3,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Ibn Khaldun",
-        "count": 3,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Transport",
-        "count": 3,
-        "sections": 4,
-        "paths": 6
-      },
-      {
-        "title": "Agriculture",
-        "count": 3,
-        "sections": 3,
-        "paths": 12
-      },
-      {
-        "title": "Social class",
-        "count": 3,
-        "sections": 3,
-        "paths": 11
-      },
-      {
-        "title": "Marriage",
-        "count": 3,
-        "sections": 3,
-        "paths": 9
-      },
-      {
-        "title": "Society",
-        "count": 3,
-        "sections": 3,
-        "paths": 9
-      },
-      {
-        "title": "Ancient Rome",
-        "count": 3,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "War",
-        "count": 3,
-        "sections": 3,
-        "paths": 8
-      },
-      {
-        "title": "Decolonization",
-        "count": 3,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Social equality",
-        "count": 3,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Police",
-        "count": 3,
-        "sections": 3,
-        "paths": 5
-      },
-      {
-        "title": "Child",
-        "count": 3,
-        "sections": 3,
-        "paths": 4
-      },
-      {
-        "title": "Slavery",
-        "count": 3,
-        "sections": 3,
-        "paths": 4
-      },
-      {
-        "title": "Economics",
-        "count": 2,
-        "sections": 6,
-        "paths": 18
-      },
-      {
-        "title": "Trade",
-        "count": 2,
-        "sections": 6,
-        "paths": 18
-      },
-      {
-        "title": "Imperialism",
-        "count": 2,
-        "sections": 6,
-        "paths": 15
-      },
-      {
-        "title": "Finance",
-        "count": 2,
-        "sections": 5,
-        "paths": 15
-      },
-      {
-        "title": "State (polity)",
-        "count": 2,
-        "sections": 5,
-        "paths": 15
-      },
-      {
-        "title": "Education",
-        "count": 2,
-        "sections": 4,
-        "paths": 16
-      },
-      {
-        "title": "Business",
-        "count": 2,
-        "sections": 4,
-        "paths": 14
-      },
-      {
-        "title": "Bank",
-        "count": 2,
-        "sections": 4,
-        "paths": 12
-      },
-      {
-        "title": "Democracy",
-        "count": 2,
-        "sections": 4,
-        "paths": 12
-      },
-      {
-        "title": "Money",
-        "count": 2,
-        "sections": 4,
-        "paths": 11
-      },
-      {
-        "title": "Corporation",
-        "count": 2,
-        "sections": 4,
-        "paths": 10
-      },
-      {
-        "title": "Monarchy",
-        "count": 2,
-        "sections": 4,
-        "paths": 8
-      },
-      {
-        "title": "Military",
         "count": 2,
         "sections": 3,
-        "paths": 12
+        "paths": 4,
+        "author": "Philip N. Jefferson",
+        "relevance": 47
       },
       {
-        "title": "Indigenous peoples",
+        "title": "Public Administration",
         "count": 2,
         "sections": 3,
-        "paths": 11
+        "paths": 4,
+        "author": "Stella Z. Theodoulou, Ravi K. Roy",
+        "relevance": 47
       },
       {
-        "title": "Insurance",
+        "title": "The American Judicial System",
         "count": 2,
         "sections": 3,
-        "paths": 11
+        "paths": 4,
+        "author": "Charles L. Zelden",
+        "relevance": 47
       },
       {
-        "title": "Power (social and political)",
+        "title": "Tocqueville",
         "count": 2,
         "sections": 3,
-        "paths": 10
+        "paths": 4,
+        "author": "Harvey Mansfield",
+        "relevance": 47
       },
       {
-        "title": "Urbanization",
+        "title": "Diaspora",
         "count": 2,
         "sections": 3,
-        "paths": 10
+        "paths": 3,
+        "author": "Kevin Kenny",
+        "relevance": 47
       },
       {
-        "title": "Colonialism",
+        "title": "Gender History",
         "count": 2,
         "sections": 3,
-        "paths": 9
-      },
-      {
-        "title": "Anarchism",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "British Empire",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Community",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Singapore",
-        "count": 2,
-        "sections": 3,
-        "paths": 7
-      },
-      {
-        "title": "Discrimination",
-        "count": 2,
-        "sections": 3,
-        "paths": 6
+        "paths": 3,
+        "author": "Antoinette Burton",
+        "relevance": 47
       },
       {
         "title": "Ideology",
         "count": 2,
         "sections": 3,
-        "paths": 6
+        "paths": 3,
+        "author": "Michael Freeden",
+        "relevance": 47
       },
       {
-        "title": "Nation",
+        "title": "International law",
         "count": 2,
         "sections": 3,
-        "paths": 6
+        "paths": 3,
+        "author": "Vaughan Lowe",
+        "relevance": 47
       },
       {
-        "title": "Diplomacy",
+        "title": "Magna Carta",
         "count": 2,
         "sections": 3,
-        "paths": 5
+        "paths": 3,
+        "author": "Nicholas Vincent",
+        "relevance": 47
       },
       {
-        "title": "Human migration",
+        "title": "Nationalism",
         "count": 2,
         "sections": 3,
-        "paths": 4
+        "paths": 3,
+        "author": "Steven Grosby",
+        "relevance": 47
       },
       {
-        "title": "Information Age",
+        "title": "Public health",
         "count": 2,
         "sections": 3,
-        "paths": 4
+        "paths": 3,
+        "author": "Virginia Berridge",
+        "relevance": 47
+      },
+      {
+        "title": "Refugees",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Gil Loescher",
+        "relevance": 47
+      },
+      {
+        "title": "The United Nations",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Jussi M. Hanhimäki",
+        "relevance": 47
+      },
+      {
+        "title": "Democracy",
+        "count": 2,
+        "sections": 4,
+        "paths": 6,
+        "author": "Bernard Crick",
+        "relevance": 43
+      },
+      {
+        "title": "Terrorism",
+        "count": 2,
+        "sections": 4,
+        "paths": 6,
+        "author": "Charles Townshend",
+        "relevance": 43
+      },
+      {
+        "title": "Authoritarianism",
+        "count": 2,
+        "sections": 4,
+        "paths": 5,
+        "author": "James Loxton",
+        "relevance": 43
+      },
+      {
+        "title": "Social Psychology",
+        "count": 2,
+        "sections": 4,
+        "paths": 5,
+        "author": "Richard J. Crisp",
+        "relevance": 43
+      },
+      {
+        "title": "Mathematical finance",
+        "count": 2,
+        "sections": 4,
+        "paths": 4,
+        "author": "Mark H. A. Davis",
+        "relevance": 43
+      },
+      {
+        "title": "Banking",
+        "count": 2,
+        "sections": 5,
+        "paths": 8,
+        "author": "John O. S. Wilson, John Goddard",
+        "relevance": 40
+      },
+      {
+        "title": "Microeconomics",
+        "count": 2,
+        "sections": 5,
+        "paths": 7,
+        "author": "Avinash Dixit",
+        "relevance": 40
+      }
+    ],
+    "wiki": [
+      {
+        "title": "Property",
+        "count": 5,
+        "sections": 7,
+        "paths": 19,
+        "relevance": 100
+      },
+      {
+        "title": "Karl Marx",
+        "count": 5,
+        "sections": 11,
+        "paths": 29,
+        "relevance": 96
+      },
+      {
+        "title": "Age of Enlightenment",
+        "count": 4,
+        "sections": 7,
+        "paths": 19,
+        "relevance": 90
+      },
+      {
+        "title": "Poverty",
+        "count": 4,
+        "sections": 7,
+        "paths": 15,
+        "relevance": 86
+      },
+      {
+        "title": "Socialism",
+        "count": 4,
+        "sections": 7,
+        "paths": 14,
+        "relevance": 86
+      },
+      {
+        "title": "Globalization",
+        "count": 4,
+        "sections": 6,
+        "paths": 15,
+        "relevance": 83
+      },
+      {
+        "title": "Work (human activity)",
+        "count": 4,
+        "sections": 10,
+        "paths": 16,
+        "relevance": 77
+      },
+      {
+        "title": "Welfare spending",
+        "count": 4,
+        "sections": 8,
+        "paths": 16,
+        "relevance": 75
+      },
+      {
+        "title": "Human rights",
+        "count": 3,
+        "sections": 8,
+        "paths": 21,
+        "relevance": 72
+      },
+      {
+        "title": "Agriculture",
+        "count": 3,
+        "sections": 3,
+        "paths": 12,
+        "relevance": 71
+      },
+      {
+        "title": "Social class",
+        "count": 3,
+        "sections": 3,
+        "paths": 11,
+        "relevance": 71
+      },
+      {
+        "title": "Marriage",
+        "count": 3,
+        "sections": 3,
+        "paths": 9,
+        "relevance": 71
+      },
+      {
+        "title": "Society",
+        "count": 3,
+        "sections": 3,
+        "paths": 9,
+        "relevance": 71
+      },
+      {
+        "title": "Ancient Rome",
+        "count": 3,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 71
+      },
+      {
+        "title": "War",
+        "count": 3,
+        "sections": 3,
+        "paths": 8,
+        "relevance": 71
+      },
+      {
+        "title": "Decolonization",
+        "count": 3,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 71
+      },
+      {
+        "title": "Social equality",
+        "count": 3,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 71
+      },
+      {
+        "title": "Police",
+        "count": 3,
+        "sections": 3,
+        "paths": 5,
+        "relevance": 71
+      },
+      {
+        "title": "Child",
+        "count": 3,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 71
+      },
+      {
+        "title": "Slavery",
+        "count": 3,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 71
+      },
+      {
+        "title": "City",
+        "count": 3,
+        "sections": 5,
+        "paths": 10,
+        "relevance": 69
+      },
+      {
+        "title": "Communism",
+        "count": 3,
+        "sections": 5,
+        "paths": 10,
+        "relevance": 69
+      },
+      {
+        "title": "Trade union",
+        "count": 3,
+        "sections": 5,
+        "paths": 8,
+        "relevance": 69
+      },
+      {
+        "title": "Family",
+        "count": 3,
+        "sections": 4,
+        "paths": 13,
+        "relevance": 68
+      },
+      {
+        "title": "John Locke",
+        "count": 3,
+        "sections": 4,
+        "paths": 10,
+        "relevance": 68
+      },
+      {
+        "title": "Atlantic slave trade",
+        "count": 3,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 68
+      },
+      {
+        "title": "Ibn Khaldun",
+        "count": 3,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 68
+      },
+      {
+        "title": "Transport",
+        "count": 3,
+        "sections": 4,
+        "paths": 6,
+        "relevance": 68
+      },
+      {
+        "title": "European Union",
+        "count": 3,
+        "sections": 6,
+        "paths": 11,
+        "relevance": 67
+      },
+      {
+        "title": "Government",
+        "count": 3,
+        "sections": 5,
+        "paths": 24,
+        "relevance": 64
+      },
+      {
+        "title": "Law",
+        "count": 3,
+        "sections": 5,
+        "paths": 23,
+        "relevance": 64
+      },
+      {
+        "title": "Economy",
+        "count": 3,
+        "sections": 5,
+        "paths": 14,
+        "relevance": 64
+      },
+      {
+        "title": "Oral tradition",
+        "count": 3,
+        "sections": 5,
+        "paths": 10,
+        "relevance": 64
+      },
+      {
+        "title": "Imperialism",
+        "count": 2,
+        "sections": 6,
+        "paths": 15,
+        "relevance": 47
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "sections": 4,
+        "paths": 16,
+        "relevance": 46
       },
       {
         "title": "Culture",
         "count": 2,
         "sections": 2,
-        "paths": 9
+        "paths": 9,
+        "relevance": 45
       },
       {
         "title": "Middle Ages",
         "count": 2,
         "sections": 2,
-        "paths": 9
+        "paths": 9,
+        "relevance": 45
       },
       {
         "title": "Liberalism",
         "count": 2,
         "sections": 2,
-        "paths": 8
+        "paths": 8,
+        "relevance": 45
       },
       {
         "title": "Communication",
         "count": 2,
         "sections": 2,
-        "paths": 7
+        "paths": 7,
+        "relevance": 45
       },
       {
         "title": "French Revolution",
         "count": 2,
         "sections": 2,
-        "paths": 6
+        "paths": 6,
+        "relevance": 45
       },
       {
         "title": "United Nations",
         "count": 2,
         "sections": 2,
-        "paths": 6
+        "paths": 6,
+        "relevance": 45
       },
       {
         "title": "Writing",
         "count": 2,
         "sections": 2,
-        "paths": 6
+        "paths": 6,
+        "relevance": 45
       },
       {
         "title": "Anthropology",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Civilization",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Modern era",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Peace",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Politics",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Psychology",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Suleiman the Magnificent",
         "count": 2,
         "sections": 2,
-        "paths": 5
+        "paths": 5,
+        "relevance": 45
       },
       {
         "title": "Ancient Greece",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Conservatism",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Ethnicity",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Holy Roman Empire",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Immanuel Kant",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "International Red Cross and Red Crescent Movement",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Islamic Golden Age",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Johannes Gutenberg",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Mary Wollstonecraft",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "New York City",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Nigeria",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Reformation",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Romanticism",
         "count": 2,
         "sections": 2,
-        "paths": 4
+        "paths": 4,
+        "relevance": 45
       },
       {
         "title": "Charlemagne",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Clothing",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Crime",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "East Asia",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Napoleon",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Religion",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Sigmund Freud",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Silk Road",
         "count": 2,
         "sections": 2,
-        "paths": 3
+        "paths": 3,
+        "relevance": 45
       },
       {
         "title": "Folklore",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 45
       },
       {
         "title": "Medicine",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 45
       },
       {
         "title": "Secularism",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 45
+      },
+      {
+        "title": "Military",
+        "count": 2,
+        "sections": 3,
+        "paths": 12,
+        "relevance": 43
+      },
+      {
+        "title": "Indigenous peoples",
+        "count": 2,
+        "sections": 3,
+        "paths": 11,
+        "relevance": 43
+      },
+      {
+        "title": "Insurance",
+        "count": 2,
+        "sections": 3,
+        "paths": 11,
+        "relevance": 43
+      },
+      {
+        "title": "Power (social and political)",
+        "count": 2,
+        "sections": 3,
+        "paths": 10,
+        "relevance": 43
+      },
+      {
+        "title": "Urbanization",
+        "count": 2,
+        "sections": 3,
+        "paths": 10,
+        "relevance": 43
+      },
+      {
+        "title": "Colonialism",
+        "count": 2,
+        "sections": 3,
+        "paths": 9,
+        "relevance": 43
+      },
+      {
+        "title": "Anarchism",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 43
+      },
+      {
+        "title": "British Empire",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 43
+      },
+      {
+        "title": "Community",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 43
+      },
+      {
+        "title": "Singapore",
+        "count": 2,
+        "sections": 3,
+        "paths": 7,
+        "relevance": 43
+      },
+      {
+        "title": "Discrimination",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 43
+      },
+      {
+        "title": "Ideology",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 43
+      },
+      {
+        "title": "Nation",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "relevance": 43
+      },
+      {
+        "title": "Diplomacy",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "relevance": 43
+      },
+      {
+        "title": "Human migration",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 43
+      },
+      {
+        "title": "Information Age",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "relevance": 43
+      },
+      {
+        "title": "Business",
+        "count": 2,
+        "sections": 4,
+        "paths": 14,
+        "relevance": 39
+      },
+      {
+        "title": "Bank",
+        "count": 2,
+        "sections": 4,
+        "paths": 12,
+        "relevance": 39
+      },
+      {
+        "title": "Democracy",
+        "count": 2,
+        "sections": 4,
+        "paths": 12,
+        "relevance": 39
+      },
+      {
+        "title": "Money",
+        "count": 2,
+        "sections": 4,
+        "paths": 11,
+        "relevance": 39
+      },
+      {
+        "title": "Corporation",
+        "count": 2,
+        "sections": 4,
+        "paths": 10,
+        "relevance": 39
+      },
+      {
+        "title": "Monarchy",
+        "count": 2,
+        "sections": 4,
+        "paths": 8,
+        "relevance": 39
+      },
+      {
+        "title": "Finance",
+        "count": 2,
+        "sections": 5,
+        "paths": 15,
+        "relevance": 36
+      },
+      {
+        "title": "State (polity)",
+        "count": 2,
+        "sections": 5,
+        "paths": 15,
+        "relevance": 36
+      },
+      {
+        "title": "Economics",
+        "count": 2,
+        "sections": 6,
+        "paths": 18,
+        "relevance": 34
+      },
+      {
+        "title": "Trade",
+        "count": 2,
+        "sections": 6,
+        "paths": 18,
+        "relevance": 34
       }
     ],
     "macro": [
@@ -1409,79 +1623,92 @@
         "title": "Social Sciences, The",
         "count": 4,
         "sections": 15,
-        "paths": 15
-      },
-      {
-        "title": "Crime and Punishment",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
-      },
-      {
-        "title": "Modernization and Industrialization",
-        "count": 2,
-        "sections": 3,
-        "paths": 3
+        "paths": 15,
+        "relevance": 100
       },
       {
         "title": "Cities",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Family and Kinship",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Inheritance and Succession",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Public Administration",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Social Structure and Change",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Social Welfare",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Taxation",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "United Nations",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "War, The Theory and Conduct of",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
       },
       {
         "title": "Work and Employment",
         "count": 2,
         "sections": 2,
-        "paths": 2
+        "paths": 2,
+        "relevance": 49
+      },
+      {
+        "title": "Crime and Punishment",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 46
+      },
+      {
+        "title": "Modernization and Industrialization",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "relevance": 46
       }
     ]
   }

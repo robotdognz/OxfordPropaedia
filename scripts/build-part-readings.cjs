@@ -129,8 +129,68 @@ const vsiIndex = buildIndex(VSI_MAPPINGS_DIR, m => m.vsiTitle, m => m.vsiAuthor,
 const wikiIndex = buildIndex(WIKI_MAPPINGS_DIR, m => m.articleTitle, null, m => (m.relevantPathsAI || []).length || 1);
 const macroIndex = buildMacroIndex();
 
+/**
+ * Shannon entropy of a distribution. Higher = more evenly spread.
+ * Input: array of counts (e.g., [3, 3, 3] or [8, 1, 1])
+ */
+function entropy(counts) {
+  const total = counts.reduce((a, b) => a + b, 0);
+  if (total === 0) return 0;
+  let h = 0;
+  for (const c of counts) {
+    if (c > 0) {
+      const p = c / total;
+      h -= p * Math.log2(p);
+    }
+  }
+  return h;
+}
+
+/**
+ * For a given title within a part, get the distribution of its section counts
+ * across divisions. Used to compute spread evenness at the Part level.
+ */
+function getPartDivDistribution(entry, partNumber, sectionToDivision) {
+  const divCounts = {};
+  const sections = entry.partSections[partNumber];
+  if (!sections) return [];
+  for (const sec of sections) {
+    const divId = sectionToDivision[sec];
+    if (divId) divCounts[divId] = (divCounts[divId] || 0) + 1;
+  }
+  return Object.values(divCounts);
+}
+
+/**
+ * For a given title within a division, get the distribution of its path counts
+ * across sections. Used to compute spread evenness at the Division level.
+ */
+function getDivSectionDistribution(entry, divisionId) {
+  // We need per-section path counts within this division.
+  // The index tracks total paths per division, not per section.
+  // Use section count as proxy — each section contributes equally.
+  const secs = entry.divSections[divisionId];
+  if (!secs) return [];
+  // All we know is which sections it appears in. Assume roughly even paths per section.
+  // For a better signal, count 1 per section (the entropy of presence/absence is the spread).
+  return Array.from(secs).map(() => 1);
+}
+
+/**
+ * Compute a composite relevance score combining entropy, breadth, and depth.
+ * Returns a value where higher = more relevant.
+ * Components are weighted so entropy dominates, then count, then sections, then paths.
+ */
+function compositeScore(spread, count, sections, paths) {
+  // Entropy typically ranges 0 to ~3.3 (log2(10))
+  // Normalise each component and weight them
+  return spread * 10000 + count * 1000 + (sections || 0) * 100 + (paths || 0);
+}
+
 // Part-level: items appearing in 2+ divisions within the part
-// Ranked by: divisions count (primary), sections count (secondary), outline paths (tertiary)
+// Ranked by: entropy of spread across divisions (primary), division count (secondary),
+// section count (tertiary), outline paths (quaternary)
+// Outputs a normalised relevance score (0-100) for bar display
 function partItems(index, partNumber, hasAuthor) {
   const items = [];
   for (const [title, entry] of index) {
@@ -138,37 +198,42 @@ function partItems(index, partNumber, hasAuthor) {
     if (!divs || divs.size < 2) continue;
     const sectionCount = entry.partSections[partNumber]?.size || 0;
     const pathCount = entry.partPaths[partNumber] || 0;
-    const item = { title, count: divs.size, sections: sectionCount, paths: pathCount };
+    const distribution = getPartDivDistribution(entry, partNumber, sectionToDivision);
+    const spread = entropy(distribution);
+    const score = compositeScore(spread, divs.size, sectionCount, pathCount);
+    const item = { title, count: divs.size, sections: sectionCount, paths: pathCount, _score: score };
     if (hasAuthor && entry.author) item.author = entry.author;
     items.push(item);
   }
-  items.sort((a, b) =>
-    b.count - a.count ||
-    b.sections - a.sections ||
-    b.paths - a.paths ||
-    a.title.localeCompare(b.title)
-  );
-  return items;
+  items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
+  // Normalise scores to 0-100 relative to the top item
+  const maxScore = items.length > 0 ? items[0]._score : 1;
+  return items.map(({ _score, ...rest }) => ({
+    ...rest,
+    relevance: Math.round((_score / maxScore) * 100),
+  }));
 }
 
 // Division-level: items appearing in 2+ sections within the division
-// Ranked by: sections count (primary), outline paths (secondary)
+// Ranked by: section count (primary), outline paths as depth (secondary)
+// Outputs a normalised relevance score (0-100) for bar display
 function divItems(index, divisionId, hasAuthor) {
   const items = [];
   for (const [title, entry] of index) {
     const secs = entry.divSections[divisionId];
     if (!secs || secs.size < 2) continue;
     const pathCount = entry.divPaths[divisionId] || 0;
-    const item = { title, count: secs.size, paths: pathCount };
+    const score = compositeScore(0, secs.size, 0, pathCount);
+    const item = { title, count: secs.size, paths: pathCount, _score: score };
     if (hasAuthor && entry.author) item.author = entry.author;
     items.push(item);
   }
-  items.sort((a, b) =>
-    b.count - a.count ||
-    b.paths - a.paths ||
-    a.title.localeCompare(b.title)
-  );
-  return items;
+  items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
+  const maxScore = items.length > 0 ? items[0]._score : 1;
+  return items.map(({ _score, ...rest }) => ({
+    ...rest,
+    relevance: Math.round((_score / maxScore) * 100),
+  }));
 }
 
 // Write per-part files

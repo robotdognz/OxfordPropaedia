@@ -21,6 +21,7 @@ export interface ReadingItem {
   count: number;
   sections?: number;
   paths?: number;
+  relevance?: number;
 }
 
 export interface TopReadingsProps {
@@ -68,14 +69,8 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
 
   if (vsi.length === 0 && wiki.length === 0 && macro.length === 0) return null;
 
-  // Composite relevance score matching the build script ranking:
-  // count (divisions/sections) weighted heavily, paths as depth signal
-  function relevanceScore(item: ReadingItem): number {
-    return (item.count * 1000) + (item.sections || 0) * 100 + (item.paths || item.count);
-  }
-  const maxVsiScore = vsi.length > 0 ? relevanceScore(vsi[0]) : 1;
-  const maxWikiScore = wiki.length > 0 ? relevanceScore(wiki[0]) : 1;
-  const maxMacroScore = macro.length > 0 ? relevanceScore(macro[0]) : 1;
+  // Use the pre-computed relevance score from the build script.
+  // Falls back to 100 if not available (shouldn't happen with current data).
 
   return (
     <div class="space-y-4">
@@ -102,7 +97,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {vsi.map((item) => {
               const checkKey = vsiChecklistKey(item.title, item.author || '');
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((relevanceScore(item) / maxVsiScore) * 100);
+              const matchPercent = item.relevance ?? 100;
 
               return (
                 <div
@@ -162,7 +157,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {wiki.map((item) => {
               const checkKey = wikipediaChecklistKey(item.title);
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((relevanceScore(item) / maxWikiScore) * 100);
+              const matchPercent = item.relevance ?? 100;
 
               return (
                 <div
@@ -221,7 +216,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {macro.map((item) => {
               const checkKey = macropaediaChecklistKey(item.title);
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((relevanceScore(item) / maxMacroScore) * 100);
+              const matchPercent = item.relevance ?? 100;
 
               return (
                 <div
