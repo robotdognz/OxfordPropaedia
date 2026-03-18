@@ -1,7 +1,4 @@
 Propaedia TODO:
-    - There are no chevrons for expanding the devisions in the navigation sidebar, only for parts
-
-    - Button for random Section in side bar
 
     - Have specific vsi recommendations when using the wheel with a center, recommend books based on sections and tags and don't show ones they have already read. It should probably be a tab choice at the top of this view (remember users chosen tab choice) that shows section recommendations using the current system, or VSI/Macropaedia/Wikipedia article recommendations. I guess it would need a Recommended Sections mode, and a Recommended Readings mode
 

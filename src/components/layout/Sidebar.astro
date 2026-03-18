@@ -33,6 +33,16 @@ interface Props {
 const { navigation, currentPartNumber, currentDivisionId, currentSectionCode } = Astro.props;
 const base = import.meta.env.BASE_URL;
 
+// Build flat list of all section URLs for random navigation
+const allSectionUrls: string[] = [];
+for (const part of navigation) {
+  for (const div of part.divisions) {
+    for (const sec of div.sections) {
+      allSectionUrls.push(sectionUrl(sec.sectionCode, base));
+    }
+  }
+}
+
 /**
  * Full Tailwind class maps -- spelled out so the JIT compiler detects them.
  */
@@ -145,48 +155,64 @@ const partBorderColors: Record<number, string> = {
           <div class:list={['ml-4 pl-2 border-l-2 mt-1 mb-2', borderColor]}>
             {part.divisions.map((division) => {
               const isCurrentDivision = division.divisionId === currentDivisionId;
+              const hasCurrent = isCurrentDivision || division.sections.some(s => s.sectionCode === currentSectionCode);
 
               return (
-                <div class="mb-1">
-                  <a
-                    href={divisionUrl(division.divisionId, base)}
+                <details class="group/div mb-1" open={hasCurrent}>
+                  <summary
                     class:list={[
-                      'block px-2 py-1.5 rounded-md transition-colors truncate',
-                      'hover:bg-gray-100',
-                      isCurrentDivision
-                        ? 'font-semibold text-gray-900 bg-gray-100'
-                        : 'text-gray-600',
+                      'flex items-center gap-1.5 px-2 py-1.5 rounded-md cursor-pointer select-none',
+                      'hover:bg-gray-100 transition-colors',
+                      'list-none [&::-webkit-details-marker]:hidden',
+                      isCurrentDivision && 'bg-gray-100',
                     ]}
                   >
-                    <span class="text-gray-400 mr-1">{division.romanNumeral}.</span>
-                    {division.title}
-                  </a>
+                    <svg
+                      class="h-3 w-3 text-gray-300 flex-shrink-0 transition-transform group-open/div:rotate-90"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                    <a
+                      href={divisionUrl(division.divisionId, base)}
+                      class:list={[
+                        'truncate transition-colors',
+                        isCurrentDivision
+                          ? 'font-semibold text-gray-900'
+                          : 'text-gray-600',
+                      ]}
+                    >
+                      <span class="text-gray-400 mr-1">{division.romanNumeral}.</span>
+                      {division.title}
+                    </a>
+                  </summary>
 
-                  {/* Sections — only show when this division or a child section is current */}
-                  {(isCurrentDivision || division.sections.some(s => s.sectionCode === currentSectionCode)) && (
-                    <div class="ml-4 mt-0.5 space-y-0.5">
-                      {division.sections.map((section) => {
-                        const isCurrentSection = section.sectionCode === currentSectionCode;
+                  <div class="ml-4 mt-0.5 mb-1 space-y-0.5">
+                    {division.sections.map((section) => {
+                      const isCurrentSection = section.sectionCode === currentSectionCode;
 
-                        return (
-                          <a
-                            href={sectionUrl(section.sectionCode, base)}
-                            class:list={[
-                              'block px-2 py-1 rounded text-xs transition-colors truncate',
-                              'hover:bg-gray-100',
-                              isCurrentSection
-                                ? 'font-semibold text-gray-900 bg-gray-100'
-                                : 'text-gray-500',
-                            ]}
-                          >
-                            <span class="font-mono text-gray-400 mr-1">{section.sectionCodeDisplay ?? section.sectionCode}</span>
-                            {section.title}
-                          </a>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
+                      return (
+                        <a
+                          href={sectionUrl(section.sectionCode, base)}
+                          class:list={[
+                            'block px-2 py-1 rounded text-xs transition-colors truncate',
+                            'hover:bg-gray-100',
+                            isCurrentSection
+                              ? 'font-semibold text-gray-900 bg-gray-100'
+                              : 'text-gray-500',
+                          ]}
+                        >
+                          <span class="font-mono text-gray-400 mr-1">{section.sectionCodeDisplay ?? section.sectionCode}</span>
+                          {section.title}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </details>
               );
             })}
           </div>
@@ -194,4 +220,26 @@ const partBorderColors: Record<number, string> = {
       );
     })}
   </nav>
+
+  <div class="px-3 py-4 border-t border-gray-200 font-sans text-sm">
+    <button
+      type="button"
+      id="random-section-btn"
+      class="flex w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600 transition hover:bg-slate-50 hover:text-slate-900"
+    >
+      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+      </svg>
+      Random section
+    </button>
+  </div>
+
+  <script is:inline define:vars={{ allSectionUrls }}>
+    document.getElementById('random-section-btn')?.addEventListener('click', function () {
+      var urls = allSectionUrls;
+      if (urls.length > 0) {
+        window.location.href = urls[Math.floor(Math.random() * urls.length)];
+      }
+    });
+  </script>
 </aside>
