@@ -4,110 +4,891 @@
     "vsi": [
       {
         "title": "Aristotle",
-        "count": 7,
+        "count": 4,
         "author": "Jonathan Barnes"
       },
       {
-        "title": "Analytic Philosophy",
-        "count": 5,
-        "author": "Michael Beaney"
-      },
-      {
         "title": "Computer Science",
-        "count": 5,
+        "count": 4,
         "author": "Subrata Dasgupta"
       },
       {
-        "title": "Continental philosophy",
-        "count": 5,
-        "author": "Simon Critchley"
-      },
-      {
         "title": "Descartes",
-        "count": 5,
+        "count": 4,
         "author": "Tom Sorell"
       },
       {
+        "title": "Information",
+        "count": 4,
+        "author": "Luciano Floridi"
+      },
+      {
+        "title": "Plato",
+        "count": 4,
+        "author": "Julia Annas"
+      },
+      {
+        "title": "Ancient philosophy",
+        "count": 3,
+        "author": "Julia Annas"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "count": 3,
+        "author": "Margaret A. Boden"
+      },
+      {
+        "title": "Confucianism",
+        "count": 3,
+        "author": "Daniel K. Gardner"
+      },
+      {
+        "title": "Continental philosophy",
+        "count": 3,
+        "author": "Simon Critchley"
+      },
+      {
+        "title": "Geography",
+        "count": 3,
+        "author": "John A. Matthews, David T. Herbert"
+      },
+      {
+        "title": "Indian philosophy",
+        "count": 3,
+        "author": "Sue Hamilton"
+      },
+      {
+        "title": "Infinity",
+        "count": 3,
+        "author": "Ian Stewart"
+      },
+      {
+        "title": "Kant",
+        "count": 3,
+        "author": "Roger Scruton"
+      },
+      {
         "title": "Leibniz",
-        "count": 5,
+        "count": 3,
         "author": "Maria Rosa Antognazza"
       },
       {
         "title": "Logic",
-        "count": 5,
+        "count": 3,
         "author": "Graham Priest"
       },
       {
-        "title": "Plato",
-        "count": 5,
-        "author": "Julia Annas"
+        "title": "Meaning",
+        "count": 3,
+        "author": "Emma Borg and Sarah A. Fisher"
+      },
+      {
+        "title": "Medieval Philosophy",
+        "count": 3,
+        "author": "John Marenbon"
+      },
+      {
+        "title": "Montaigne",
+        "count": 3,
+        "author": "William M. Hamlin"
+      },
+      {
+        "title": "Navigation",
+        "count": 3,
+        "author": "Jim Bennett"
+      },
+      {
+        "title": "Philosophy in the Islamic World",
+        "count": 3,
+        "author": "Peter Adamson"
+      },
+      {
+        "title": "Presocratic Philosophy",
+        "count": 3,
+        "author": "Catherine Osborne"
+      },
+      {
+        "title": "Russell",
+        "count": 3,
+        "author": "A. C. Grayling"
+      },
+      {
+        "title": "Socrates",
+        "count": 3,
+        "author": "C. C. W. Taylor"
+      },
+      {
+        "title": "The Computer",
+        "count": 3,
+        "author": "Darrel Ince"
+      },
+      {
+        "title": "The History of Computing",
+        "count": 3,
+        "author": "Doron Swade"
+      },
+      {
+        "title": "The History of Mathematics",
+        "count": 3,
+        "author": "Jacqueline Stedall"
+      },
+      {
+        "title": "Thomas Aquinas",
+        "count": 3,
+        "author": "Fergus Kerr"
+      },
+      {
+        "title": "Adam Smith",
+        "count": 2,
+        "author": "Christopher J. Berry"
+      },
+      {
+        "title": "Aesthetics",
+        "count": 2,
+        "author": "Bence Nanay"
+      },
+      {
+        "title": "Analytic Philosophy",
+        "count": 2,
+        "author": "Michael Beaney"
+      },
+      {
+        "title": "Ancient Greek and Roman Science",
+        "count": 2,
+        "author": "Liba Taub"
+      },
+      {
+        "title": "Archaeology",
+        "count": 2,
+        "author": "Paul Bahn"
+      },
+      {
+        "title": "Art history",
+        "count": 2,
+        "author": "Dana Arnold"
+      },
+      {
+        "title": "Augustine",
+        "count": 2,
+        "author": "Henry Chadwick"
+      },
+      {
+        "title": "Big Data",
+        "count": 2,
+        "author": "Dawn E. Holmes"
+      },
+      {
+        "title": "Biodiversity Conservation",
+        "count": 2,
+        "author": "David W. Macdonald"
+      },
+      {
+        "title": "Causation",
+        "count": 2,
+        "author": "Stephen Mumford, Rani Lill Anjum"
+      },
+      {
+        "title": "Choice Theory",
+        "count": 2,
+        "author": "Michael Allingham"
+      },
+      {
+        "title": "Combinatorics",
+        "count": 2,
+        "author": "Robin Wilson"
+      },
+      {
+        "title": "Complexity",
+        "count": 2,
+        "author": "John H. Holland"
+      },
+      {
+        "title": "Consciousness",
+        "count": 2,
+        "author": "Susan Blackmore"
+      },
+      {
+        "title": "Critical theory",
+        "count": 2,
+        "author": "Stephen Eric Bronner"
+      },
+      {
+        "title": "Cryptography",
+        "count": 2,
+        "author": "Fred Piper, Sean Murphy"
+      },
+      {
+        "title": "Dictionaries",
+        "count": 2,
+        "author": "Lynda Mugglestone"
+      },
+      {
+        "title": "Ecology",
+        "count": 2,
+        "author": "Jaboury Ghazoul"
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "author": "Gary Thomas"
+      },
+      {
+        "title": "Existentialism",
+        "count": 2,
+        "author": "Thomas Flynn"
+      },
+      {
+        "title": "Fluid Mechanics",
+        "count": 2,
+        "author": "Eric Lauga"
+      },
+      {
+        "title": "Forensic science",
+        "count": 2,
+        "author": "Jim Fraser"
+      },
+      {
+        "title": "Gödel's Theorem",
+        "count": 2,
+        "author": "A. W. Moore"
+      },
+      {
+        "title": "Hermeneutics",
+        "count": 2,
+        "author": "Jens Zimmermann"
+      },
+      {
+        "title": "Hieroglyphs",
+        "count": 2,
+        "author": "Penelope Wilson"
+      },
+      {
+        "title": "Humanism",
+        "count": 2,
+        "author": "Stephen Law"
+      },
+      {
+        "title": "Hume",
+        "count": 2,
+        "author": "James Anthony Harris"
+      },
+      {
+        "title": "Ibn Sīnā (Avicenna)",
+        "count": 2,
+        "author": "Peter Adamson"
+      },
+      {
+        "title": "Innovation",
+        "count": 2,
+        "author": "Mark Dodgson, David Gann"
+      },
+      {
+        "title": "Knowledge",
+        "count": 2,
+        "author": "Jennifer Nagel"
+      },
+      {
+        "title": "Landscapes and Geomorphology",
+        "count": 2,
+        "author": "Andrew Goudie, Heather Viles"
+      },
+      {
+        "title": "Late Antiquity",
+        "count": 2,
+        "author": "Gillian Clark"
+      },
+      {
+        "title": "Light",
+        "count": 2,
+        "author": "Ian A. Walmsley"
+      },
+      {
+        "title": "Linguistics",
+        "count": 2,
+        "author": "P. H. Matthews"
+      },
+      {
+        "title": "Machiavelli",
+        "count": 2,
+        "author": "Quentin Skinner"
+      },
+      {
+        "title": "Marx",
+        "count": 2,
+        "author": "Peter Singer"
+      },
+      {
+        "title": "Mathematical Analysis",
+        "count": 2,
+        "author": "Richard Earl"
+      },
+      {
+        "title": "Mathematical Biology",
+        "count": 2,
+        "author": "Philip K Maini"
+      },
+      {
+        "title": "Mathematics",
+        "count": 2,
+        "author": "Timothy Gowers"
+      },
+      {
+        "title": "Measurement",
+        "count": 2,
+        "author": "David J. Hand"
+      },
+      {
+        "title": "Medical ethics",
+        "count": 2,
+        "author": "Tony Hope"
+      },
+      {
+        "title": "Metaphysics",
+        "count": 2,
+        "author": "Stephen Mumford"
+      },
+      {
+        "title": "Networks",
+        "count": 2,
+        "author": "Guido Caldarelli, Michele Catanzaro"
+      },
+      {
+        "title": "Newton",
+        "count": 2,
+        "author": "Rob Iliffe"
+      },
+      {
+        "title": "Nothing",
+        "count": 2,
+        "author": "Frank Close"
+      },
+      {
+        "title": "Number theory",
+        "count": 2,
+        "author": "Robin Wilson"
+      },
+      {
+        "title": "Objectivity",
+        "count": 2,
+        "author": "Stephen Gaukroger"
+      },
+      {
+        "title": "Oral History",
+        "count": 2,
+        "author": "Douglas A Boyd"
+      },
+      {
+        "title": "Philosophy",
+        "count": 2,
+        "author": "Edward Craig"
+      },
+      {
+        "title": "Philosophy of Biology",
+        "count": 2,
+        "author": "Samir Okasha"
+      },
+      {
+        "title": "Philosophy of Physics",
+        "count": 2,
+        "author": "David Wallace"
+      },
+      {
+        "title": "Philosophy of science",
+        "count": 2,
+        "author": "Samir Okasha"
+      },
+      {
+        "title": "Political philosophy",
+        "count": 2,
+        "author": "David Miller"
+      },
+      {
+        "title": "Postmodernism",
+        "count": 2,
+        "author": "Christopher Butler"
+      },
+      {
+        "title": "Poststructuralism",
+        "count": 2,
+        "author": "Catherine Belsey"
+      },
+      {
+        "title": "Pseudoscience",
+        "count": 2,
+        "author": "Michael D. Gordin"
+      },
+      {
+        "title": "Psychoanalysis",
+        "count": 2,
+        "author": "Daniel Pick"
+      },
+      {
+        "title": "Quantum Theory",
+        "count": 2,
+        "author": "John Polkinghorne"
+      },
+      {
+        "title": "Radioactivity",
+        "count": 2,
+        "author": "Claudio Tuniz"
+      },
+      {
+        "title": "Reading",
+        "count": 2,
+        "author": "Belinda Jack"
+      },
+      {
+        "title": "Relativity",
+        "count": 2,
+        "author": "Russell Stannard"
+      },
+      {
+        "title": "Rhetoric",
+        "count": 2,
+        "author": "Richard Toye"
+      },
+      {
+        "title": "Robotics",
+        "count": 2,
+        "author": "Alan Winfield"
+      },
+      {
+        "title": "Rousseau",
+        "count": 2,
+        "author": "Robert Wokler"
+      },
+      {
+        "title": "Science and Religion",
+        "count": 2,
+        "author": "Thomas Dixon, Adam Shapiro"
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 2,
+        "author": "John Monaghan, Peter Just"
+      },
+      {
+        "title": "Statistics",
+        "count": 2,
+        "author": "David J. Hand"
+      },
+      {
+        "title": "Stoicism",
+        "count": 2,
+        "author": "Brad Inwood"
+      },
+      {
+        "title": "Telescopes",
+        "count": 2,
+        "author": "Geoffrey Cottrell"
+      },
+      {
+        "title": "The Enlightenment",
+        "count": 2,
+        "author": "John Robertson"
+      },
+      {
+        "title": "The History of Astronomy",
+        "count": 2,
+        "author": "Michael Hoskin"
+      },
+      {
+        "title": "The History of Time",
+        "count": 2,
+        "author": "Leofranc Holford-Strevens"
+      },
+      {
+        "title": "Theology",
+        "count": 2,
+        "author": "David F. Ford"
+      },
+      {
+        "title": "Thinking and Reasoning",
+        "count": 2,
+        "author": "Jonathan Evans"
+      },
+      {
+        "title": "Tocqueville",
+        "count": 2,
+        "author": "Harvey Mansfield"
+      },
+      {
+        "title": "Universities and Colleges",
+        "count": 2,
+        "author": "David Palfreyman, Paul Temple"
+      },
+      {
+        "title": "Wittgenstein",
+        "count": 2,
+        "author": "A. C. Grayling"
+      },
+      {
+        "title": "Writing and Script",
+        "count": 2,
+        "author": "Andrew Robinson"
       }
     ],
     "wiki": [
       {
         "title": "Islamic Golden Age",
-        "count": 11
+        "count": 6
+      },
+      {
+        "title": "René Descartes",
+        "count": 5
       },
       {
         "title": "Age of Enlightenment",
-        "count": 9
+        "count": 4
       },
       {
-        "title": "History of science",
-        "count": 9
+        "title": "Alan Turing",
+        "count": 4
       },
       {
         "title": "Ancient Greece",
-        "count": 8
+        "count": 4
       },
       {
         "title": "Aristotle",
-        "count": 8
+        "count": 4
       },
       {
-        "title": "Renaissance",
-        "count": 8
+        "title": "Artificial intelligence",
+        "count": 4
       },
       {
         "title": "Avicenna",
-        "count": 7
+        "count": 4
+      },
+      {
+        "title": "Epistemology",
+        "count": 4
       },
       {
         "title": "History of mathematics",
-        "count": 7
+        "count": 4
+      },
+      {
+        "title": "History of philosophy",
+        "count": 4
+      },
+      {
+        "title": "History of science",
+        "count": 4
+      },
+      {
+        "title": "Isaac Newton",
+        "count": 4
+      },
+      {
+        "title": "Kurt Gödel",
+        "count": 4
+      },
+      {
+        "title": "Mathematics",
+        "count": 4
+      },
+      {
+        "title": "Philosophy",
+        "count": 4
+      },
+      {
+        "title": "Reason",
+        "count": 4
+      },
+      {
+        "title": "Renaissance",
+        "count": 4
+      },
+      {
+        "title": "Scientific method",
+        "count": 4
+      },
+      {
+        "title": "Scientific Revolution",
+        "count": 4
+      },
+      {
+        "title": "Western philosophy",
+        "count": 4
+      },
+      {
+        "title": "Computer",
+        "count": 3
+      },
+      {
+        "title": "Education",
+        "count": 3
+      },
+      {
+        "title": "Galileo Galilei",
+        "count": 3
+      },
+      {
+        "title": "Ibn Khaldun",
+        "count": 3
+      },
+      {
+        "title": "Immanuel Kant",
+        "count": 3
+      },
+      {
+        "title": "Karl Marx",
+        "count": 3
+      },
+      {
+        "title": "Logic",
+        "count": 3
+      },
+      {
+        "title": "Mathematical proof",
+        "count": 3
+      },
+      {
+        "title": "Niccolò Machiavelli",
+        "count": 3
+      },
+      {
+        "title": "Science",
+        "count": 3
+      },
+      {
+        "title": "Sigmund Freud",
+        "count": 3
+      },
+      {
+        "title": "Social science",
+        "count": 3
+      },
+      {
+        "title": "Albert Einstein",
+        "count": 2
+      },
+      {
+        "title": "Alexander the Great",
+        "count": 2
+      },
+      {
+        "title": "Ancient Egypt",
+        "count": 2
+      },
+      {
+        "title": "Ancient history",
+        "count": 2
+      },
+      {
+        "title": "Anthropology",
+        "count": 2
+      },
+      {
+        "title": "Art",
+        "count": 2
+      },
+      {
+        "title": "Astronomy",
+        "count": 2
+      },
+      {
+        "title": "Charles Darwin",
+        "count": 2
+      },
+      {
+        "title": "Cicero",
+        "count": 2
+      },
+      {
+        "title": "Classical mechanics",
+        "count": 2
+      },
+      {
+        "title": "Computer science",
+        "count": 2
+      },
+      {
+        "title": "Cryptography",
+        "count": 2
+      },
+      {
+        "title": "Dante Alighieri",
+        "count": 2
+      },
+      {
+        "title": "Eastern philosophy",
+        "count": 2
+      },
+      {
+        "title": "Electricity",
+        "count": 2
+      },
+      {
+        "title": "Electromagnetism",
+        "count": 2
+      },
+      {
+        "title": "Emotion",
+        "count": 2
+      },
+      {
+        "title": "Force",
+        "count": 2
+      },
+      {
+        "title": "Gravity",
+        "count": 2
+      },
+      {
+        "title": "History of technology",
+        "count": 2
+      },
+      {
+        "title": "Human history",
+        "count": 2
+      },
+      {
+        "title": "Infinity",
+        "count": 2
+      },
+      {
+        "title": "Johannes Gutenberg",
+        "count": 2
+      },
+      {
+        "title": "John Locke",
+        "count": 2
+      },
+      {
+        "title": "Knowledge",
+        "count": 2
+      },
+      {
+        "title": "Leonardo da Vinci",
+        "count": 2
+      },
+      {
+        "title": "Literature",
+        "count": 2
+      },
+      {
+        "title": "Mahayana",
+        "count": 2
+      },
+      {
+        "title": "Mesopotamia",
+        "count": 2
+      },
+      {
+        "title": "Metaphysics",
+        "count": 2
+      },
+      {
+        "title": "Middle Ages",
+        "count": 2
+      },
+      {
+        "title": "Natural number",
+        "count": 2
+      },
+      {
+        "title": "Ontology",
+        "count": 2
+      },
+      {
+        "title": "Paper",
+        "count": 2
+      },
+      {
+        "title": "Physical cosmology",
+        "count": 2
+      },
+      {
+        "title": "Physics",
+        "count": 2
+      },
+      {
+        "title": "Plato",
+        "count": 2
+      },
+      {
+        "title": "Political science",
+        "count": 2
+      },
+      {
+        "title": "Robotics",
+        "count": 2
+      },
+      {
+        "title": "Romanticism",
+        "count": 2
+      },
+      {
+        "title": "Set (mathematics)",
+        "count": 2
+      },
+      {
+        "title": "Shen Kuo",
+        "count": 2
+      },
+      {
+        "title": "Sociology",
+        "count": 2
+      },
+      {
+        "title": "Socrates",
+        "count": 2
+      },
+      {
+        "title": "Statistics",
+        "count": 2
+      },
+      {
+        "title": "The arts",
+        "count": 2
+      },
+      {
+        "title": "Thomas Aquinas",
+        "count": 2
+      },
+      {
+        "title": "Thought",
+        "count": 2
+      },
+      {
+        "title": "Time",
+        "count": 2
+      },
+      {
+        "title": "Truth",
+        "count": 2
+      },
+      {
+        "title": "Variable (mathematics)",
+        "count": 2
+      },
+      {
+        "title": "Voltaire",
+        "count": 2
       }
     ],
     "macro": [
       {
         "title": "Philosophies of the Branches of Knowledge",
-        "count": 7
+        "count": 5
+      },
+      {
+        "title": "Locke",
+        "count": 2
       },
       {
         "title": "Marxism, Marx and",
-        "count": 3
+        "count": 2
+      },
+      {
+        "title": "Pascal",
+        "count": 2
       },
       {
         "title": "Smith, Adam",
-        "count": 3
-      },
-      {
-        "title": "Aristotelianism, Aristotle and",
-        "count": 2
-      },
-      {
-        "title": "Cartesianism, Descartes and",
-        "count": 2
-      },
-      {
-        "title": "Galileo",
-        "count": 2
-      },
-      {
-        "title": "Geography",
-        "count": 2
-      },
-      {
-        "title": "Hegelianism, Hegel and",
         "count": 2
       }
     ]

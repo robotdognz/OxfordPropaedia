@@ -22,13 +22,14 @@ export interface TopReadingsProps {
   macro?: ReadingItem[];
   baseUrl: string;
   contextLabel: string; // e.g., "this part" or "this division"
+  countLabel: string; // e.g., "divisions" or "sections"
 }
 
 function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel }: TopReadingsProps) {
+export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
       <div>
         <h2 class="text-2xl font-sans font-bold text-gray-800">Recommended Readings</h2>
         <p class="mt-1 text-sm text-slate-500">
-          The most frequently recommended books and articles across sections in {contextLabel}, ranked by how many sections include them.
+          Books and articles recommended across multiple {countLabel} in {contextLabel}, ranked by how many {countLabel} include them.
         </p>
       </div>
 
@@ -89,7 +90,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count} sections</span>
+                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
                   </div>
                 </div>
               );
@@ -135,7 +136,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count} sections</span>
+                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
                   </div>
                 </div>
               );
@@ -181,7 +182,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count} sections</span>
+                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
                   </div>
                 </div>
               );

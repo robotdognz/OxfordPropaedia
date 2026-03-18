@@ -3,111 +3,425 @@
   "readings": {
     "vsi": [
       {
-        "title": "Waves",
-        "count": 9,
-        "author": "Mike Goldsmith"
+        "title": "Astrophysics",
+        "count": 3,
+        "author": "James Binney"
+      },
+      {
+        "title": "Cosmology",
+        "count": 3,
+        "author": "Peter Coles"
+      },
+      {
+        "title": "Gravity",
+        "count": 3,
+        "author": "Timothy Clifton"
+      },
+      {
+        "title": "Isotopes",
+        "count": 3,
+        "author": "Rob Ellam"
       },
       {
         "title": "Light",
-        "count": 8,
+        "count": 3,
         "author": "Ian A. Walmsley"
       },
       {
-        "title": "Physical chemistry",
-        "count": 8,
-        "author": "Peter Atkins"
+        "title": "Magnetism",
+        "count": 3,
+        "author": "Stephen J. Blundell"
       },
       {
-        "title": "Materials",
-        "count": 7,
-        "author": "Christopher Hall"
+        "title": "Matter",
+        "count": 3,
+        "author": "Geoff Cottrell"
       },
       {
-        "title": "Physics",
-        "count": 7,
-        "author": "Sidney Perkowitz"
+        "title": "Nothing",
+        "count": 3,
+        "author": "Frank Close"
       },
       {
-        "title": "Quantum Theory",
-        "count": 7,
-        "author": "John Polkinghorne"
+        "title": "Nuclear Physics",
+        "count": 3,
+        "author": "Frank Close"
       },
       {
         "title": "Radioactivity",
-        "count": 7,
+        "count": 3,
         "author": "Claudio Tuniz"
       },
       {
+        "title": "Relativity",
+        "count": 3,
+        "author": "Russell Stannard"
+      },
+      {
+        "title": "Stars",
+        "count": 3,
+        "author": "Andrew King"
+      },
+      {
         "title": "The Elements",
-        "count": 7,
+        "count": 3,
         "author": "Philip Ball"
+      },
+      {
+        "title": "The History of Physics",
+        "count": 3,
+        "author": "J. L. Heilbron"
+      },
+      {
+        "title": "The Sun",
+        "count": 3,
+        "author": "Philip Judge"
+      },
+      {
+        "title": "Waves",
+        "count": 3,
+        "author": "Mike Goldsmith"
+      },
+      {
+        "title": "Chemistry",
+        "count": 2,
+        "author": "Peter Atkins"
+      },
+      {
+        "title": "Crystallography",
+        "count": 2,
+        "author": "A. M. Glazer"
+      },
+      {
+        "title": "Earth System Science",
+        "count": 2,
+        "author": "Tim Lenton"
+      },
+      {
+        "title": "Energy Systems",
+        "count": 2,
+        "author": "Nick Jenkins"
+      },
+      {
+        "title": "Galileo",
+        "count": 2,
+        "author": "Stillman Drake"
+      },
+      {
+        "title": "Materials",
+        "count": 2,
+        "author": "Christopher Hall"
+      },
+      {
+        "title": "Measurement",
+        "count": 2,
+        "author": "David J. Hand"
+      },
+      {
+        "title": "Michael Faraday",
+        "count": 2,
+        "author": "Frank A.J.L. James"
+      },
+      {
+        "title": "Microscopy",
+        "count": 2,
+        "author": "Terence Allen"
+      },
+      {
+        "title": "Minerals",
+        "count": 2,
+        "author": "David Vaughan"
+      },
+      {
+        "title": "Molecules",
+        "count": 2,
+        "author": "Philip Ball"
+      },
+      {
+        "title": "Nuclear power",
+        "count": 2,
+        "author": "Maxwell Irvine"
+      },
+      {
+        "title": "Philosophy of Physics",
+        "count": 2,
+        "author": "David Wallace"
+      },
+      {
+        "title": "Physical chemistry",
+        "count": 2,
+        "author": "Peter Atkins"
+      },
+      {
+        "title": "Physics",
+        "count": 2,
+        "author": "Sidney Perkowitz"
+      },
+      {
+        "title": "Planetary Systems",
+        "count": 2,
+        "author": "Raymond T. Pierrehumbert"
+      },
+      {
+        "title": "Planets",
+        "count": 2,
+        "author": "David A. Rothery"
+      },
+      {
+        "title": "Quantum Theory",
+        "count": 2,
+        "author": "John Polkinghorne"
+      },
+      {
+        "title": "Soft Matter",
+        "count": 2,
+        "author": "Tom McLeish"
+      },
+      {
+        "title": "Symmetry",
+        "count": 2,
+        "author": "Ian Stewart"
+      },
+      {
+        "title": "Telescopes",
+        "count": 2,
+        "author": "Geoffrey Cottrell"
+      },
+      {
+        "title": "The Atmosphere",
+        "count": 2,
+        "author": "Paul Palmer"
+      },
+      {
+        "title": "The Earth",
+        "count": 2,
+        "author": "Martin Redfern"
+      },
+      {
+        "title": "The History of Astronomy",
+        "count": 2,
+        "author": "Michael Hoskin"
+      },
+      {
+        "title": "The History of Chemistry",
+        "count": 2,
+        "author": "William H. Brock"
+      },
+      {
+        "title": "The Periodic Table",
+        "count": 2,
+        "author": "Eric R. Scerri"
       }
     ],
     "wiki": [
       {
-        "title": "Electromagnetic radiation",
-        "count": 8
-      },
-      {
         "title": "Albert Einstein",
-        "count": 7
-      },
-      {
-        "title": "Quantum mechanics",
-        "count": 6
-      },
-      {
-        "title": "Star",
-        "count": 6
-      },
-      {
-        "title": "Atom",
-        "count": 5
+        "count": 3
       },
       {
         "title": "Carbon",
-        "count": 5
+        "count": 3
       },
       {
         "title": "Chemical element",
-        "count": 5
+        "count": 3
+      },
+      {
+        "title": "Electromagnetic radiation",
+        "count": 3
       },
       {
         "title": "Electromagnetism",
-        "count": 5
+        "count": 3
+      },
+      {
+        "title": "Magnetism",
+        "count": 3
+      },
+      {
+        "title": "Mass",
+        "count": 3
+      },
+      {
+        "title": "Star",
+        "count": 3
+      },
+      {
+        "title": "State of matter",
+        "count": 3
+      },
+      {
+        "title": "Subatomic particle",
+        "count": 3
+      },
+      {
+        "title": "Sun",
+        "count": 3
+      },
+      {
+        "title": "Theory of relativity",
+        "count": 3
+      },
+      {
+        "title": "Atmosphere of Earth",
+        "count": 2
+      },
+      {
+        "title": "Atom",
+        "count": 2
+      },
+      {
+        "title": "Big Bang",
+        "count": 2
+      },
+      {
+        "title": "Chemical bond",
+        "count": 2
+      },
+      {
+        "title": "Classical mechanics",
+        "count": 2
+      },
+      {
+        "title": "Dmitri Mendeleev",
+        "count": 2
+      },
+      {
+        "title": "Earth",
+        "count": 2
+      },
+      {
+        "title": "Electron",
+        "count": 2
+      },
+      {
+        "title": "Emmy Noether",
+        "count": 2
+      },
+      {
+        "title": "Energy",
+        "count": 2
+      },
+      {
+        "title": "Explosive",
+        "count": 2
+      },
+      {
+        "title": "Force",
+        "count": 2
+      },
+      {
+        "title": "Galileo Galilei",
+        "count": 2
+      },
+      {
+        "title": "Gravity",
+        "count": 2
+      },
+      {
+        "title": "Hydrogen",
+        "count": 2
+      },
+      {
+        "title": "Isaac Newton",
+        "count": 2
+      },
+      {
+        "title": "Light",
+        "count": 2
+      },
+      {
+        "title": "Liquid",
+        "count": 2
+      },
+      {
+        "title": "Matter",
+        "count": 2
+      },
+      {
+        "title": "Motion",
+        "count": 2
+      },
+      {
+        "title": "Natural satellite",
+        "count": 2
+      },
+      {
+        "title": "Newton's laws of motion",
+        "count": 2
+      },
+      {
+        "title": "Outer space",
+        "count": 2
+      },
+      {
+        "title": "Periodic table",
+        "count": 2
+      },
+      {
+        "title": "Photon",
+        "count": 2
+      },
+      {
+        "title": "Physical chemistry",
+        "count": 2
+      },
+      {
+        "title": "Physical cosmology",
+        "count": 2
+      },
+      {
+        "title": "Plasma (physics)",
+        "count": 2
+      },
+      {
+        "title": "Proton",
+        "count": 2
+      },
+      {
+        "title": "Quantum mechanics",
+        "count": 2
+      },
+      {
+        "title": "Radioactive decay",
+        "count": 2
+      },
+      {
+        "title": "Speed of light",
+        "count": 2
+      },
+      {
+        "title": "Standard Model",
+        "count": 2
+      },
+      {
+        "title": "Supernova",
+        "count": 2
+      },
+      {
+        "title": "Telescope",
+        "count": 2
+      },
+      {
+        "title": "Universe",
+        "count": 2
+      },
+      {
+        "title": "Vacuum",
+        "count": 2
+      },
+      {
+        "title": "Venus",
+        "count": 2
       }
     ],
     "macro": [
       {
         "title": "Physical Sciences, The",
-        "count": 7
+        "count": 3
       },
       {
         "title": "Analysis and Measurement, Physical and Chemical",
-        "count": 3
-      },
-      {
-        "title": "Matter: Its Properties, States, Varieties, and Behaviour",
-        "count": 3
-      },
-      {
-        "title": "Atoms: Their Structure, Properties, and Component Particles",
-        "count": 2
-      },
-      {
-        "title": "Chemical Compounds",
-        "count": 2
-      },
-      {
-        "title": "Cosmos, The",
-        "count": 2
-      },
-      {
-        "title": "Electromagnetic Radiation",
-        "count": 2
-      },
-      {
-        "title": "Energy Conversion",
         "count": 2
       }
     ]

@@ -3,112 +3,417 @@
   "readings": {
     "vsi": [
       {
-        "title": "Ritual",
-        "count": 7,
-        "author": "Barry Stephenson"
+        "title": "African Religions",
+        "count": 2,
+        "author": "Jacob K. Olupona"
       },
       {
-        "title": "Spirituality",
-        "count": 7,
-        "author": "Philip Sheldrake"
+        "title": "Angels",
+        "count": 2,
+        "author": "David Albert Jones"
       },
       {
-        "title": "Secularism",
-        "count": 5,
-        "author": "Andrew Copson"
+        "title": "Anglicanism",
+        "count": 2,
+        "author": "Mark Chapman"
       },
       {
-        "title": "The Abrahamic Religions",
-        "count": 5,
-        "author": "Charles L. Cohen"
+        "title": "Anselm",
+        "count": 2,
+        "author": "Thomas Williams"
+      },
+      {
+        "title": "Atheism",
+        "count": 2,
+        "author": "Julian Baggini"
+      },
+      {
+        "title": "Augustine",
+        "count": 2,
+        "author": "Henry Chadwick"
+      },
+      {
+        "title": "Blasphemy",
+        "count": 2,
+        "author": "Yvonne Sherwood"
+      },
+      {
+        "title": "Christian art",
+        "count": 2,
+        "author": "Beth Williamson"
+      },
+      {
+        "title": "Christianity",
+        "count": 2,
+        "author": "Linda Woodhead"
+      },
+      {
+        "title": "Classical Mythology",
+        "count": 2,
+        "author": "Helen Morales"
       },
       {
         "title": "Druids",
-        "count": 4,
+        "count": 2,
         "author": "Barry Cunliffe"
       },
       {
+        "title": "Faith",
+        "count": 2,
+        "author": "Roger Trigg"
+      },
+      {
         "title": "Fundamentalism",
-        "count": 4,
+        "count": 2,
         "author": "Malise Ruthven"
       },
       {
         "title": "God",
-        "count": 4,
+        "count": 2,
         "author": "John Bowker"
       },
       {
         "title": "Hermeneutics",
-        "count": 4,
+        "count": 2,
         "author": "Jens Zimmermann"
+      },
+      {
+        "title": "Islam",
+        "count": 2,
+        "author": "Malise Ruthven"
+      },
+      {
+        "title": "Islamic Law",
+        "count": 2,
+        "author": "Mashood A. Baderin"
+      },
+      {
+        "title": "Judaism",
+        "count": 2,
+        "author": "Norman Solomon"
+      },
+      {
+        "title": "Magic",
+        "count": 2,
+        "author": "Owen Davies"
+      },
+      {
+        "title": "Martyrdom",
+        "count": 2,
+        "author": "Jolyon Mitchell"
+      },
+      {
+        "title": "Miracles",
+        "count": 2,
+        "author": "Yujin Nagasawa"
+      },
+      {
+        "title": "Monasticism",
+        "count": 2,
+        "author": "Stephen J. Davis"
+      },
+      {
+        "title": "Myth",
+        "count": 2,
+        "author": "Robert A. Segal"
+      },
+      {
+        "title": "Paganism",
+        "count": 2,
+        "author": "Owen Davies"
+      },
+      {
+        "title": "Philosophy of Religion",
+        "count": 2,
+        "author": "Tim Bayne"
+      },
+      {
+        "title": "Pilgrimage",
+        "count": 2,
+        "author": "Ian Reader"
+      },
+      {
+        "title": "Religion",
+        "count": 2,
+        "author": "Thomas A. Tweed"
+      },
+      {
+        "title": "Ritual",
+        "count": 2,
+        "author": "Barry Stephenson"
+      },
+      {
+        "title": "Saints",
+        "count": 2,
+        "author": "Simon Yarrow"
+      },
+      {
+        "title": "Science and Religion",
+        "count": 2,
+        "author": "Thomas Dixon, Adam Shapiro"
+      },
+      {
+        "title": "Secularism",
+        "count": 2,
+        "author": "Andrew Copson"
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 2,
+        "author": "John Monaghan, Peter Just"
+      },
+      {
+        "title": "Spirituality",
+        "count": 2,
+        "author": "Philip Sheldrake"
+      },
+      {
+        "title": "Superstition",
+        "count": 2,
+        "author": "Stuart Vyse"
+      },
+      {
+        "title": "The Abrahamic Religions",
+        "count": 2,
+        "author": "Charles L. Cohen"
+      },
+      {
+        "title": "The Apocryphal Gospels",
+        "count": 2,
+        "author": "Paul Foster"
+      },
+      {
+        "title": "The Bible",
+        "count": 2,
+        "author": "John Riches"
+      },
+      {
+        "title": "The Book of Mormon",
+        "count": 2,
+        "author": "Terryl Givens"
+      },
+      {
+        "title": "The Catholic Reformation",
+        "count": 2,
+        "author": "James E. Kelly"
+      },
+      {
+        "title": "The Dead Sea Scrolls",
+        "count": 2,
+        "author": "Timothy Lim"
+      },
+      {
+        "title": "The Devil",
+        "count": 2,
+        "author": "Darren Oldridge"
+      },
+      {
+        "title": "The Hebrew Bible As Literature",
+        "count": 2,
+        "author": "Tod Linafelt"
+      },
+      {
+        "title": "The Koran",
+        "count": 2,
+        "author": "Michael Cook"
+      },
+      {
+        "title": "The New Testament",
+        "count": 2,
+        "author": "Luke Timothy Johnson"
+      },
+      {
+        "title": "The Old Testament",
+        "count": 2,
+        "author": "Michael Coogan"
+      },
+      {
+        "title": "The Quakers",
+        "count": 2,
+        "author": "Pink Dandelion"
+      },
+      {
+        "title": "Theology",
+        "count": 2,
+        "author": "David F. Ford"
+      },
+      {
+        "title": "Thomas Aquinas",
+        "count": 2,
+        "author": "Fergus Kerr"
+      },
+      {
+        "title": "Toleration",
+        "count": 2,
+        "author": "Andrew R. Murphy"
+      },
+      {
+        "title": "Vatican II",
+        "count": 2,
+        "author": "Shaun Blanchard, Stephen Bullivant"
+      },
+      {
+        "title": "War & Religion",
+        "count": 2,
+        "author": "Jolyon Mitchell, Joshua Rey"
+      },
+      {
+        "title": "Witchcraft",
+        "count": 2,
+        "author": "Malcolm Gaskill"
+      },
+      {
+        "title": "World Mythology",
+        "count": 2,
+        "author": "David A. Leeming"
       }
     ],
     "wiki": [
       {
-        "title": "History of religion",
-        "count": 7
-      },
-      {
-        "title": "Christianity",
-        "count": 5
-      },
-      {
-        "title": "Jesus",
-        "count": 5
-      },
-      {
-        "title": "Religion",
-        "count": 5
+        "title": "Abraham",
+        "count": 2
       },
       {
         "title": "African traditional religions",
-        "count": 4
+        "count": 2
+      },
+      {
+        "title": "Afterlife",
+        "count": 2
       },
       {
         "title": "Age of Enlightenment",
-        "count": 4
+        "count": 2
       },
       {
         "title": "Bhagavad Gita",
-        "count": 4
+        "count": 2
+      },
+      {
+        "title": "Catholic Church",
+        "count": 2
+      },
+      {
+        "title": "Christianity",
+        "count": 2
+      },
+      {
+        "title": "Confucianism",
+        "count": 2
+      },
+      {
+        "title": "Confucius",
+        "count": 2
       },
       {
         "title": "Deity",
-        "count": 4
+        "count": 2
+      },
+      {
+        "title": "Festival",
+        "count": 2
+      },
+      {
+        "title": "Folklore",
+        "count": 2
+      },
+      {
+        "title": "History of religion",
+        "count": 2
+      },
+      {
+        "title": "Immanuel Kant",
+        "count": 2
+      },
+      {
+        "title": "Islam",
+        "count": 2
+      },
+      {
+        "title": "Jesus",
+        "count": 2
+      },
+      {
+        "title": "Joan of Arc",
+        "count": 2
+      },
+      {
+        "title": "Laozi",
+        "count": 2
+      },
+      {
+        "title": "Mahatma Gandhi",
+        "count": 2
+      },
+      {
+        "title": "Martin Luther",
+        "count": 2
+      },
+      {
+        "title": "Muhammad",
+        "count": 2
+      },
+      {
+        "title": "Murasaki Shikibu",
+        "count": 2
+      },
+      {
+        "title": "Myth",
+        "count": 2
+      },
+      {
+        "title": "Oral tradition",
+        "count": 2
+      },
+      {
+        "title": "Prayer",
+        "count": 2
+      },
+      {
+        "title": "Protestantism",
+        "count": 2
+      },
+      {
+        "title": "Quran",
+        "count": 2
+      },
+      {
+        "title": "Religion",
+        "count": 2
+      },
+      {
+        "title": "Ritual",
+        "count": 2
+      },
+      {
+        "title": "Suleiman the Magnificent",
+        "count": 2
+      },
+      {
+        "title": "Taoism",
+        "count": 2
+      },
+      {
+        "title": "Thomas Aquinas",
+        "count": 2
+      },
+      {
+        "title": "Voltaire",
+        "count": 2
       }
     ],
     "macro": [
       {
         "title": "Doctrines and Dogmas, Religious",
-        "count": 7
-      },
-      {
-        "title": "Sacred Offices and Orders",
-        "count": 4
+        "count": 2
       },
       {
         "title": "Occultism",
         "count": 2
       },
       {
-        "title": "Biblical Literature and Its Critical Interpretation",
-        "count": 1
-      },
-      {
-        "title": "Buddhism, The Buddha and",
-        "count": 1
-      },
-      {
-        "title": "Calvinism, Calvin and",
-        "count": 1
-      },
-      {
-        "title": "Chinese Literature",
-        "count": 1
-      },
-      {
-        "title": "Christianity",
-        "count": 1
+        "title": "Sacred Offices and Orders",
+        "count": 2
       }
     ]
   }

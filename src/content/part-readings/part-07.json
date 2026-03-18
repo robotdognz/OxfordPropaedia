@@ -3,93 +3,458 @@
   "readings": {
     "vsi": [
       {
-        "title": "Engineering",
-        "count": 8,
-        "author": "David Blockley"
-      },
-      {
-        "title": "The Industrial Revolution",
-        "count": 7,
-        "author": "Robert C. Allen"
-      },
-      {
-        "title": "Energy Systems",
-        "count": 6,
-        "author": "Nick Jenkins"
-      },
-      {
-        "title": "Robotics",
-        "count": 6,
-        "author": "Alan Winfield"
-      },
-      {
-        "title": "Materials",
-        "count": 5,
-        "author": "Christopher Hall"
-      },
-      {
-        "title": "Sustainability",
-        "count": 5,
-        "author": "Saleem H. Ali"
-      },
-      {
         "title": "Artificial Intelligence",
-        "count": 4,
+        "count": 3,
         "author": "Margaret A. Boden"
       },
       {
+        "title": "Climate change",
+        "count": 3,
+        "author": "Mark Maslin"
+      },
+      {
+        "title": "Energy Systems",
+        "count": 3,
+        "author": "Nick Jenkins"
+      },
+      {
+        "title": "Engineering",
+        "count": 3,
+        "author": "David Blockley"
+      },
+      {
+        "title": "Nuclear power",
+        "count": 3,
+        "author": "Maxwell Irvine"
+      },
+      {
+        "title": "Robotics",
+        "count": 3,
+        "author": "Alan Winfield"
+      },
+      {
+        "title": "Sustainability",
+        "count": 3,
+        "author": "Saleem H. Ali"
+      },
+      {
+        "title": "The Industrial Revolution",
+        "count": 3,
+        "author": "Robert C. Allen"
+      },
+      {
+        "title": "Capitalism",
+        "count": 2,
+        "author": "James Fulcher"
+      },
+      {
+        "title": "Chemistry",
+        "count": 2,
+        "author": "Peter Atkins"
+      },
+      {
         "title": "Civil engineering",
-        "count": 4,
+        "count": 2,
         "author": "David Muir Wood"
+      },
+      {
+        "title": "Computer Science",
+        "count": 2,
+        "author": "Subrata Dasgupta"
+      },
+      {
+        "title": "Condensed Matter Physics",
+        "count": 2,
+        "author": "Ross McKenzie"
+      },
+      {
+        "title": "Design",
+        "count": 2,
+        "author": "John Heskett"
+      },
+      {
+        "title": "Environmental economics",
+        "count": 2,
+        "author": "Stephen Smith"
+      },
+      {
+        "title": "Fluid Mechanics",
+        "count": 2,
+        "author": "Eric Lauga"
+      },
+      {
+        "title": "Forests",
+        "count": 2,
+        "author": "Jaboury Ghazoul"
+      },
+      {
+        "title": "Geology",
+        "count": 2,
+        "author": "Jan Zalasiewicz"
+      },
+      {
+        "title": "Geophysics",
+        "count": 2,
+        "author": "William Lowrie"
+      },
+      {
+        "title": "Global Economic History",
+        "count": 2,
+        "author": "Robert C. Allen"
+      },
+      {
+        "title": "Innovation",
+        "count": 2,
+        "author": "Mark Dodgson, David Gann"
+      },
+      {
+        "title": "Light",
+        "count": 2,
+        "author": "Ian A. Walmsley"
+      },
+      {
+        "title": "Materials",
+        "count": 2,
+        "author": "Christopher Hall"
+      },
+      {
+        "title": "Minerals",
+        "count": 2,
+        "author": "David Vaughan"
+      },
+      {
+        "title": "Nanotechnology",
+        "count": 2,
+        "author": "Philip Moriarty"
+      },
+      {
+        "title": "Navigation",
+        "count": 2,
+        "author": "Jim Bennett"
+      },
+      {
+        "title": "Nuclear Weapons",
+        "count": 2,
+        "author": "Joseph M. Siracusa"
+      },
+      {
+        "title": "Oceans",
+        "count": 2,
+        "author": "Dorrik Stow"
+      },
+      {
+        "title": "Organic Chemistry",
+        "count": 2,
+        "author": "Graham Patrick"
+      },
+      {
+        "title": "Photography",
+        "count": 2,
+        "author": "Steven Edwards"
+      },
+      {
+        "title": "Prehistory",
+        "count": 2,
+        "author": "Chris Gosden"
+      },
+      {
+        "title": "Renewable Energy",
+        "count": 2,
+        "author": "Nick Jelley"
+      },
+      {
+        "title": "Rocks",
+        "count": 2,
+        "author": "Jan Zalasiewicz"
+      },
+      {
+        "title": "Structural engineering",
+        "count": 2,
+        "author": "David Blockley"
+      },
+      {
+        "title": "Telescopes",
+        "count": 2,
+        "author": "Geoffrey Cottrell"
+      },
+      {
+        "title": "The Computer",
+        "count": 2,
+        "author": "Darrel Ince"
+      },
+      {
+        "title": "The History of Astronomy",
+        "count": 2,
+        "author": "Michael Hoskin"
+      },
+      {
+        "title": "The History of Computing",
+        "count": 2,
+        "author": "Doron Swade"
+      },
+      {
+        "title": "The Sun",
+        "count": 2,
+        "author": "Philip Judge"
+      },
+      {
+        "title": "War and Technology",
+        "count": 2,
+        "author": "Alex Roland"
+      },
+      {
+        "title": "Water",
+        "count": 2,
+        "author": "John Finney"
       }
     ],
     "wiki": [
       {
-        "title": "Laser",
-        "count": 6
-      },
-      {
-        "title": "Machine",
-        "count": 6
-      },
-      {
-        "title": "Robotics",
-        "count": 6
-      },
-      {
         "title": "Engine",
-        "count": 5
+        "count": 3
       },
       {
         "title": "Engineering",
-        "count": 5
+        "count": 3
+      },
+      {
+        "title": "Gunpowder",
+        "count": 3
+      },
+      {
+        "title": "History of technology",
+        "count": 3
       },
       {
         "title": "Industrial Revolution",
-        "count": 5
+        "count": 3
+      },
+      {
+        "title": "Internal combustion engine",
+        "count": 3
+      },
+      {
+        "title": "Machine",
+        "count": 3
+      },
+      {
+        "title": "Robotics",
+        "count": 3
+      },
+      {
+        "title": "Rocket",
+        "count": 3
+      },
+      {
+        "title": "Tool",
+        "count": 3
+      },
+      {
+        "title": "Agriculture",
+        "count": 2
+      },
+      {
+        "title": "Alan Turing",
+        "count": 2
+      },
+      {
+        "title": "Animal husbandry",
+        "count": 2
+      },
+      {
+        "title": "Architecture",
+        "count": 2
+      },
+      {
+        "title": "Bronze Age",
+        "count": 2
+      },
+      {
+        "title": "Building",
+        "count": 2
+      },
+      {
+        "title": "Camera",
+        "count": 2
+      },
+      {
+        "title": "Car",
+        "count": 2
+      },
+      {
+        "title": "Computer",
+        "count": 2
+      },
+      {
+        "title": "Concrete",
+        "count": 2
+      },
+      {
+        "title": "Copper",
+        "count": 2
+      },
+      {
+        "title": "Dam",
+        "count": 2
+      },
+      {
+        "title": "Electric light",
+        "count": 2
+      },
+      {
+        "title": "Electric motor",
+        "count": 2
+      },
+      {
+        "title": "Electronics",
+        "count": 2
+      },
+      {
+        "title": "Explosive",
+        "count": 2
+      },
+      {
+        "title": "Firearm",
+        "count": 2
+      },
+      {
+        "title": "Fossil fuel",
+        "count": 2
+      },
+      {
+        "title": "Geology",
+        "count": 2
+      },
+      {
+        "title": "Henry Ford",
+        "count": 2
+      },
+      {
+        "title": "History of agriculture",
+        "count": 2
+      },
+      {
+        "title": "Information Age",
+        "count": 2
+      },
+      {
+        "title": "Inorganic chemistry",
+        "count": 2
+      },
+      {
+        "title": "Iron",
+        "count": 2
+      },
+      {
+        "title": "Johannes Gutenberg",
+        "count": 2
+      },
+      {
+        "title": "Knife",
+        "count": 2
+      },
+      {
+        "title": "Laser",
+        "count": 2
+      },
+      {
+        "title": "Manufacturing",
+        "count": 2
+      },
+      {
+        "title": "Measurement",
+        "count": 2
+      },
+      {
+        "title": "Mechanical engineering",
+        "count": 2
+      },
+      {
+        "title": "Metal",
+        "count": 2
       },
       {
         "title": "Metallurgy",
-        "count": 5
+        "count": 2
+      },
+      {
+        "title": "Navigation",
+        "count": 2
+      },
+      {
+        "title": "Neolithic Revolution",
+        "count": 2
+      },
+      {
+        "title": "Nuclear power",
+        "count": 2
+      },
+      {
+        "title": "Oven",
+        "count": 2
+      },
+      {
+        "title": "Oxygen",
+        "count": 2
+      },
+      {
+        "title": "Photography",
+        "count": 2
+      },
+      {
+        "title": "Plastic",
+        "count": 2
       },
       {
         "title": "Radar",
-        "count": 5
+        "count": 2
+      },
+      {
+        "title": "Refrigeration",
+        "count": 2
+      },
+      {
+        "title": "Rock (geology)",
+        "count": 2
+      },
+      {
+        "title": "Salt",
+        "count": 2
+      },
+      {
+        "title": "Shen Kuo",
+        "count": 2
+      },
+      {
+        "title": "Steam engine",
+        "count": 2
+      },
+      {
+        "title": "Steel",
+        "count": 2
+      },
+      {
+        "title": "Stone Age",
+        "count": 2
+      },
+      {
+        "title": "Textile",
+        "count": 2
+      },
+      {
+        "title": "Thomas Edison",
+        "count": 2
+      },
+      {
+        "title": "Wheel",
+        "count": 2
+      },
+      {
+        "title": "Wood",
+        "count": 2
       }
     ],
     "macro": [
-      {
-        "title": "Industries, Extraction and Processing",
-        "count": 5
-      },
-      {
-        "title": "Public Works",
-        "count": 4
-      },
-      {
-        "title": "Forestry and Wood Production",
-        "count": 3
-      },
       {
         "title": "Analysis and Measurement, Physical and Chemical",
         "count": 2
@@ -103,11 +468,23 @@
         "count": 2
       },
       {
+        "title": "Forestry and Wood Production",
+        "count": 2
+      },
+      {
         "title": "Industrial Ceramics",
         "count": 2
       },
       {
         "title": "Industrial Glass",
+        "count": 2
+      },
+      {
+        "title": "Industries, Chemical Process",
+        "count": 2
+      },
+      {
+        "title": "Industries, Extraction and Processing",
         "count": 2
       }
     ]

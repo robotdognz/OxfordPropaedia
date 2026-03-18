@@ -3,111 +3,297 @@
   "readings": {
     "vsi": [
       {
-        "title": "The Brain",
-        "count": 7,
-        "author": "Michael O'Shea"
-      },
-      {
-        "title": "Psychology",
-        "count": 6,
-        "author": "Gillian Butler, Freda McManus"
-      },
-      {
-        "title": "Cognitive Neuroscience",
-        "count": 5,
-        "author": "Richard Passingham"
-      },
-      {
         "title": "Developmental biology",
-        "count": 5,
+        "count": 3,
         "author": "Lewis Wolpert"
       },
       {
+        "title": "Heredity",
+        "count": 3,
+        "author": "John Waller"
+      },
+      {
         "title": "Addiction",
-        "count": 4,
+        "count": 2,
         "author": "Keith Humphreys"
       },
       {
+        "title": "Adolescence",
+        "count": 2,
+        "author": "Peter Smith"
+      },
+      {
+        "title": "Animal Behaviour",
+        "count": 2,
+        "author": "Tristram D. Wyatt"
+      },
+      {
+        "title": "Anxiety",
+        "count": 2,
+        "author": "Daniel Freeman, Jason Freeman"
+      },
+      {
         "title": "Autism",
-        "count": 4,
+        "count": 2,
         "author": "Uta Frith"
       },
       {
         "title": "Circadian Rhythms",
-        "count": 4,
+        "count": 2,
         "author": "Russell Foster, Leon Kreitzman"
       },
       {
-        "title": "Consciousness",
-        "count": 4,
-        "author": "Susan Blackmore"
+        "title": "Cognitive Behavioural Therapy",
+        "count": 2,
+        "author": "Freda McManus"
+      },
+      {
+        "title": "Dementia",
+        "count": 2,
+        "author": "Kathleen Taylor"
+      },
+      {
+        "title": "Demography",
+        "count": 2,
+        "author": "Sarah Harper"
+      },
+      {
+        "title": "Depression",
+        "count": 2,
+        "author": "Mary Jane Tacchi, Jan Scott"
+      },
+      {
+        "title": "Dreaming",
+        "count": 2,
+        "author": "J. Allan Hobson"
+      },
+      {
+        "title": "Drugs",
+        "count": 2,
+        "author": "Leslie Iversen"
+      },
+      {
+        "title": "Dyslexia",
+        "count": 2,
+        "author": "Margaret J. Snowling"
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "author": "Gary Thomas"
+      },
+      {
+        "title": "Epidemiology",
+        "count": 2,
+        "author": "Rodolfo Saracci"
+      },
+      {
+        "title": "Eugenics",
+        "count": 2,
+        "author": "Philippa Levine"
+      },
+      {
+        "title": "Evolution",
+        "count": 2,
+        "author": "Brian Charlesworth, Deborah Charlesworth"
+      },
+      {
+        "title": "Genes",
+        "count": 2,
+        "author": "Jonathan Slack"
+      },
+      {
+        "title": "Human Anatomy",
+        "count": 2,
+        "author": "Leslie Klenerman"
+      },
+      {
+        "title": "Human evolution",
+        "count": 2,
+        "author": "Bernard Wood"
+      },
+      {
+        "title": "Human Physiology",
+        "count": 2,
+        "author": "Jamie A. Davies"
+      },
+      {
+        "title": "Intelligence",
+        "count": 2,
+        "author": "Ian J. Deary"
+      },
+      {
+        "title": "Mammals",
+        "count": 2,
+        "author": "T. S. Kemp"
+      },
+      {
+        "title": "Memory",
+        "count": 2,
+        "author": "Jonathan K. Foster"
+      },
+      {
+        "title": "Pain",
+        "count": 2,
+        "author": "Rob Boddice"
+      },
+      {
+        "title": "Perception",
+        "count": 2,
+        "author": "Brian J. Rogers"
+      },
+      {
+        "title": "Philosophy of Biology",
+        "count": 2,
+        "author": "Samir Okasha"
+      },
+      {
+        "title": "Psychiatry",
+        "count": 2,
+        "author": "Tom Burns"
+      },
+      {
+        "title": "Psychotherapy",
+        "count": 2,
+        "author": "Tom Burns (Author), Eva Burns-Lundgren (Editor)"
+      },
+      {
+        "title": "Racism",
+        "count": 2,
+        "author": "Ali Rattansi"
+      },
+      {
+        "title": "Schizophrenia",
+        "count": 2,
+        "author": "Chris Frith, Eve C. Johnstone"
+      },
+      {
+        "title": "Sleep",
+        "count": 2,
+        "author": "Steven W. Lockley, Russell G. Foster"
+      },
+      {
+        "title": "Smell",
+        "count": 2,
+        "author": "Matthew Cobb"
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 2,
+        "author": "John Monaghan, Peter Just"
+      },
+      {
+        "title": "Sound",
+        "count": 2,
+        "author": "Mike Goldsmith"
+      },
+      {
+        "title": "Teeth",
+        "count": 2,
+        "author": "Peter S. Ungar"
+      },
+      {
+        "title": "The Brain",
+        "count": 2,
+        "author": "Michael O'Shea"
+      },
+      {
+        "title": "The Eye",
+        "count": 2,
+        "author": "Michael F. Land"
       }
     ],
     "wiki": [
       {
-        "title": "Psychology",
-        "count": 6
-      },
-      {
-        "title": "Sigmund Freud",
-        "count": 6
-      },
-      {
-        "title": "Adolescence",
-        "count": 5
-      },
-      {
-        "title": "Human behavior",
-        "count": 5
-      },
-      {
-        "title": "Learning",
-        "count": 5
-      },
-      {
-        "title": "Health",
-        "count": 4
-      },
-      {
         "title": "Human",
-        "count": 4
-      },
-      {
-        "title": "Personality",
-        "count": 4
-      }
-    ],
-    "macro": [
-      {
-        "title": "Nutrition",
         "count": 3
       },
       {
-        "title": "Blood",
+        "title": "Mental health",
+        "count": 3
+      },
+      {
+        "title": "Adolescence",
         "count": 2
       },
       {
-        "title": "Circulation and Circulatory Systems",
+        "title": "Animal",
         "count": 2
       },
       {
-        "title": "Digestion and Digestive Systems",
+        "title": "Anthropology",
         "count": 2
       },
       {
-        "title": "Endocrine Systems",
+        "title": "Brain",
         "count": 2
       },
       {
-        "title": "Evolution, Human",
+        "title": "Charles Darwin",
         "count": 2
       },
       {
-        "title": "Excretion and Excretory Systems",
+        "title": "Child",
         "count": 2
       },
       {
-        "title": "Immunity",
+        "title": "Discrimination",
+        "count": 2
+      },
+      {
+        "title": "Ear",
+        "count": 2
+      },
+      {
+        "title": "Eye",
+        "count": 2
+      },
+      {
+        "title": "Health",
+        "count": 2
+      },
+      {
+        "title": "Human behavior",
+        "count": 2
+      },
+      {
+        "title": "Infant",
+        "count": 2
+      },
+      {
+        "title": "Learning",
+        "count": 2
+      },
+      {
+        "title": "Man",
+        "count": 2
+      },
+      {
+        "title": "Parenting",
+        "count": 2
+      },
+      {
+        "title": "Personality",
+        "count": 2
+      },
+      {
+        "title": "Primate",
+        "count": 2
+      },
+      {
+        "title": "Racism",
+        "count": 2
+      },
+      {
+        "title": "Sense",
+        "count": 2
+      },
+      {
+        "title": "Sex",
+        "count": 2
+      },
+      {
+        "title": "Sexual orientation",
         "count": 2
       }
     ]
