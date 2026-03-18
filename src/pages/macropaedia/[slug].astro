@@ -87,25 +87,25 @@ const rings = [
       <span class="text-gray-900">{article.title}</span>
     </nav>
 
-    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
-      <div class="flex-1 min-w-0">
-        <header>
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
-          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${article.title}`}>{article.title}</h1>
-          <span data-pagefind-meta="page_type:Macropaedia" class="hidden"></span>
-        </header>
-      </div>
+    <header>
+      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
+      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${article.title}`}>{article.title}</h1>
+      <span data-pagefind-meta="page_type:Macropaedia" class="hidden"></span>
+    </header>
 
-      <div class="flex-shrink-0 self-center sm:self-start">
-        <CoverageRings client:load rings={rings} size={140} ringWidth={12} />
+    <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
+      <div class="flex-1 min-w-0">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+          Referenced in {article.sections.length} {article.sections.length === 1 ? 'section' : 'sections'}
+        </h2>
+        <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
+      </div>
+      <div class="shrink-0">
+        <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
       </div>
     </div>
 
-    <section class="mt-8">
-      <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
-        Referenced in {article.sections.length} {article.sections.length === 1 ? 'section' : 'sections'}
-      </h2>
-
+    <section class="mt-6">
       {sortedParts.map(([partNumber, sections]) => (
         <div class="mt-4">
           <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
