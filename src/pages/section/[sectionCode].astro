@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import StickySubheading from '../../components/layout/StickySubheading.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
 import WikipediaRefs from '../../components/content/WikipediaRefs';
@@ -202,22 +203,18 @@ try {
 
 <BaseLayout title={`Section ${section.sectionCodeDisplay}: ${section.title} — Propaedia`} currentPartNumber={section.partNumber} currentDivisionId={section.divisionId} currentSectionCode={section.sectionCode}>
     <main id="main-content" class="flex-1 min-w-0">
-      <!-- Sticky section subheading -->
-      <div class="sticky top-16 z-20 bg-white/95 backdrop-blur-sm border-b border-slate-200 font-sans">
-        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 py-2">
-          <p class={`text-xs sm:text-sm font-medium uppercase tracking-wide truncate ${partTextColors[section.partNumber]}`}>
-            <a href={`${base}/part/${section.partNumber}`} class="hover:underline">Part {PART_NAMES[section.partNumber]}</a>
-            {' '}&middot;{' '}
-            <a href={`${base}/division/${section.divisionId}`} class="hover:underline">Division {parentDiv?.romanNumeral ?? ''}</a>
-            {' '}&middot;{' '}
-            Section {section.sectionCodeDisplay}
-          </p>
-          <div class="flex items-center gap-3 shrink-0 text-xs sm:text-sm font-medium">
-            <button type="button" data-scroll-to="subject-outline" class="text-slate-500 hover:text-slate-800 transition-colors cursor-pointer">Outline</button>
-            <button type="button" data-scroll-to="readings" class="text-slate-500 hover:text-slate-800 transition-colors cursor-pointer">Readings</button>
-          </div>
-        </div>
-      </div>
+      <StickySubheading
+        breadcrumbs={[
+          { label: `Part ${PART_NAMES[section.partNumber]}`, href: `${base}/part/${section.partNumber}` },
+          { label: `Division ${parentDiv?.romanNumeral ?? ''}`, href: `${base}/division/${section.divisionId}` },
+          { label: `Section ${section.sectionCodeDisplay}` },
+        ]}
+        scrollTargets={[
+          { id: 'subject-outline', label: 'Outline' },
+          { id: 'readings', label: 'Readings' },
+        ]}
+        colorClass={partTextColors[section.partNumber]}
+      />
 
       <div class="px-4 sm:px-8 py-6">
       <header class="mb-8">
@@ -249,7 +246,15 @@ try {
       </section>
 
       <!-- Reading Recommendations -->
-      <div id="readings" class="scroll-mt-24 flex flex-col gap-4">
+      <div id="readings" class="scroll-mt-24 flex flex-col gap-4 mb-8">
+        <div style="order:-2">
+          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+            Reading Recommendations
+          </p>
+          <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+            Books and articles mapped to this section's outline. Click any outline item above to filter recommendations by topic.
+          </p>
+        </div>
         <!-- VSI Recommendations -->
         {vsiMappings.length > 0 && (() => {
           function collectOutlineText(nodes: any[]): string {
@@ -403,14 +408,5 @@ try {
         </nav>
       )}
       </div>
-
-      <script is:inline>
-        document.querySelectorAll('[data-scroll-to]').forEach(function(btn) {
-          btn.addEventListener('click', function() {
-            var target = document.getElementById(btn.getAttribute('data-scroll-to'));
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
-          });
-        });
-      </script>
     </main>
 </BaseLayout>
