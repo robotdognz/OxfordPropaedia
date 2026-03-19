@@ -277,7 +277,7 @@ function getConnectionKey(a: number, b: number): string {
 }
 
 interface ConnectionSummary {
-  sections: { section: SectionMeta; refCount: number; isDirect: boolean }[];
+  sections: { section: SectionMeta; refCount: number }[];
   isDirect: boolean;
   hasKeyword: boolean;
   hasConnectionData: boolean;
@@ -311,7 +311,6 @@ function summarizeConnections(
       .map(([code, count]) => ({
         section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
         refCount: count,
-        isDirect,
       }))
       .filter((s) => s.section.partNumber > 0);
     return { sections, isDirect, hasKeyword, hasConnectionData: true };
@@ -341,7 +340,6 @@ function summarizeConnections(
     .map(([code, count]) => ({
       section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
       refCount: count,
-      isDirect: false,
     }))
     .filter((s) => s.section.partNumber > 0);
   return { sections, isDirect: false, hasKeyword: false, hasConnectionData: sections.length > 0 };
@@ -583,7 +581,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     const curIndexMap = new Map(outerParts.map((p, i) => [p.partNumber, i]));
     const newIndexMap = new Map(newOuterParts.map((p, i) => [p.partNumber, i]));
     const stableRotation = centerPreviewRotationRef.current;
-    const currentTopPN = topPartNumberForRotation(outerParts, stableRotation, segmentAngle);
+    let currentTopPN = topPartNumberForRotation(outerParts, stableRotation, segmentAngle);
+    // If the top part is the one being moved to center, pick the next part in the ring
+    if (currentTopPN === previewPN) {
+      const topIdx = outerParts.findIndex((p) => p.partNumber === currentTopPN);
+      const nextIdx = (topIdx + 1) % outerParts.length;
+      currentTopPN = outerParts[nextIdx].partNumber;
+    }
     const newTopIdx = newIndexMap.get(currentTopPN);
     const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(stableRotation, newSegAngle);
 
