@@ -13,10 +13,15 @@
  *   npm install @anthropic-ai/sdk
  *   ANTHROPIC_API_KEY environment variable
  *
- * Note: This script is also used as a reference by Claude Code subagents, which
- * replicate the prompts and logic inline (reading batch files from /tmp) rather
- * than calling the Anthropic API directly. The system prompt, guidelines, and
- * validation rules here are the canonical source of truth for those agents.
+ * IMPORTANT FOR CLAUDE CODE AGENTS:
+ * This script is the CANONICAL source of truth for summaryAI generation.
+ * DO NOT generate summaries without reading and using the SYSTEM_PROMPT defined
+ * below (including the full Propaedia taxonomy). Agents that improvise their own
+ * instructions produce inconsistent, unusable output. You MUST:
+ *   1. Read this file and extract SYSTEM_PROMPT (line ~116)
+ *   2. Include the full system prompt text in your agent instructions
+ *   3. Use the validation rules (validateSummary, line ~259) for self-checking
+ *   4. Follow the exact output format and word count limits (60-100 words)
  */
 
 import fs from 'fs';

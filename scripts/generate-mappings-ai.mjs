@@ -26,12 +26,14 @@
  *   ANTHROPIC_API_KEY environment variable
  *   summaryAI fields populated in catalog files (run generate-summary-ai.mjs first)
  *
- * Note: This script is also used as a reference by Claude Code subagents, which
- * replicate the assign-mode logic inline. The parent agent generates batch files
- * to /tmp (assign-batch-N.txt with pre-filtered candidates per section), launches
- * subagents that read those files and produce JSON output, then the parent parses
- * and saves results. The system prompts, pre-filtering (rankCandidatesForSection),
- * coverage-aware prompting, and output format defined here are the canonical source.
+ * IMPORTANT FOR CLAUDE CODE AGENTS:
+ * This script is the CANONICAL source of truth for section mapping generation.
+ * DO NOT generate mappings without reading and using the system prompts, pre-filtering
+ * logic (rankCandidatesForSection), coverage-aware prompting, and output format
+ * defined in this file. Agents that improvise their own instructions produce
+ * inconsistent, unusable output. The parent agent should generate batch files
+ * to /tmp (assign-batch-N.txt with pre-filtered candidates per section), launch
+ * subagents that read those files and produce JSON output, then parse and save results.
  */
 
 import fs from 'fs';
