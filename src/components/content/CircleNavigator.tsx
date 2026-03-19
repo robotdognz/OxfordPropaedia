@@ -276,13 +276,20 @@ function getConnectionKey(a: number, b: number): string {
   return Math.min(a, b) + '-' + Math.max(a, b);
 }
 
+interface ConnectionSummary {
+  sections: { section: SectionMeta; refCount: number; isDirect: boolean }[];
+  isDirect: boolean;
+  hasKeyword: boolean;
+  hasConnectionData: boolean;
+}
+
 function summarizeConnections(
   connections: Record<string, SectionConnection[]>,
   sectionMeta: Record<string, SectionMeta>,
   centerPart: number,
   topPart: number
-): { section: SectionMeta; refCount: number; isDirect: boolean }[] {
-  if (centerPart === topPart) return [];
+): ConnectionSummary {
+  if (centerPart === topPart) return { sections: [], isDirect: false, hasKeyword: false, hasConnectionData: false };
   const key = getConnectionKey(centerPart, topPart);
   const refs = connections[key] || [];
 
@@ -298,7 +305,7 @@ function summarizeConnections(
       counts[r.targetSection] = (counts[r.targetSection] || 0) + 1;
     });
 
-    return Object.entries(counts)
+    const sections = Object.entries(counts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 6)
       .map(([code, count]) => ({
@@ -307,6 +314,7 @@ function summarizeConnections(
         isDirect,
       }))
       .filter((s) => s.section.partNumber > 0);
+    return { sections, isDirect, hasKeyword, hasConnectionData: true };
   }
 
   // No connections at all: find the most cross-referenced sections from each part
@@ -329,13 +337,14 @@ function summarizeConnections(
     .sort((a, b) => b[1] - a[1])
     .slice(0, 3);
 
-  return [...fromCenter, ...fromTop]
+  const sections = [...fromCenter, ...fromTop]
     .map(([code, count]) => ({
       section: sectionMeta[code] || { title: code, partNumber: 0, sectionCode: code },
       refCount: count,
       isDirect: false,
     }))
     .filter((s) => s.section.partNumber > 0);
+  return { sections, isDirect: false, hasKeyword: false, hasConnectionData: sections.length > 0 };
 }
 
 export default function CircleNavigator({ parts, connections, sectionMeta, bridgeRecommendations, partReadings, baseUrl }: CircleNavigatorProps) {
@@ -531,7 +540,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
-  const suggestedSections = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : [];
+  const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
+  const suggestedSections = connectionSummary?.sections ?? [];
   const effectiveInnerRadius = hasCenter ? INNER_RADIUS : NO_CENTER_INNER_RADIUS;
 
   // Pre-compute angular offsets for the remove-from-center preview
@@ -624,7 +634,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
       const newOuter = parts.filter((p) => p.partNumber !== partNumber);
       const newSegAngle = 360 / newOuter.length;
       const oldSegAngle = 360 / oldOuter.length;
-      const currentTopPN = topPartNumberForRotation(oldOuter, snapped, oldSegAngle);
+      let currentTopPN = topPartNumberForRotation(oldOuter, snapped, oldSegAngle);
+      // If the top part is the one being moved to center, pick the next part in the ring
+      if (currentTopPN === partNumber) {
+        const topIdx = oldOuter.findIndex((p) => p.partNumber === currentTopPN);
+        const nextIdx = (topIdx + 1) % oldOuter.length;
+        currentTopPN = oldOuter[nextIdx].partNumber;
+      }
       const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
       const newTopIdx = newIndexMap.get(currentTopPN);
       const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(snapped, newSegAngle);
@@ -658,7 +674,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
 
     // Keep the current top part at the top after the swap
-    const currentTopPN = topPartNumberForRotation(oldOuter, rotationDegrees, oldSegAngle);
+    let currentTopPN = topPartNumberForRotation(oldOuter, rotationDegrees, oldSegAngle);
+    // If the top part is the one being moved to center, pick the next part in the ring
+    if (currentTopPN === partNumber) {
+      const topIdx = oldOuter.findIndex((p) => p.partNumber === currentTopPN);
+      const nextIdx = (topIdx + 1) % oldOuter.length;
+      currentTopPN = oldOuter[nextIdx].partNumber;
+    }
     const newTopIdx = newIndexMap.get(currentTopPN);
     const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
 
@@ -860,7 +882,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
         ? parts.filter((p) => p.partNumber !== partToCenter)
         : outerParts.filter((p) => p.partNumber !== partToCenter);
       const newSegAngle = 360 / newOuter.length;
-      const curTopPN = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
+      let curTopPN = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
+      // If the top part is the one being moved to center, pick the next part in the ring
+      if (curTopPN === partToCenter) {
+        const topIdx = outerParts.findIndex((p) => p.partNumber === curTopPN);
+        const nextIdx = (topIdx + 1) % outerParts.length;
+        curTopPN = outerParts[nextIdx].partNumber;
+      }
       const newTopIdx = newOuter.findIndex((p) => p.partNumber === curTopPN);
       const newRotation = newTopIdx >= 0 ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
 
@@ -1689,19 +1717,16 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   <>{' '}See where these fields connect below.</>
                 )}
               </p>
-              {suggestedSections.length > 0 && (() => {
-                const isDirect = suggestedSections[0].isDirect;
-                const key = getConnectionKey(centerPartNumber, topPartNumber);
-                const hasConnectionData = !!(connections[key] && connections[key].length > 0);
+              {suggestedSections.length > 0 && connectionSummary && (() => {
                 return (
                 <div class="mt-3 border-t border-slate-200 pt-3">
                   <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
                     Connected sections
                   </p>
                   <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                    {isDirect
-                      ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${hasKeyword ? ', supplemented by sections with related subject matter.' : '.'}`
-                      : hasConnectionData
+                    {connectionSummary.isDirect
+                      ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${connectionSummary.hasKeyword ? ', supplemented by sections with related subject matter.' : '.'}`
+                      : connectionSummary.hasConnectionData
                         ? `Sections that connect ${centerPart.title} and ${topPart.title} through shared references and related subject matter.`
                         : `Sections with related subject matter across ${centerPart.title} and ${topPart.title}.`}
                   </p>
