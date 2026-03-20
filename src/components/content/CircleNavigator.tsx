@@ -1019,61 +1019,73 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     finishDrag(event.pointerId);
   };
 
+  const centerActionTitle = hasCenter ? 'Remove from centre' : 'Move to centre';
+  const centerActionDescription = hasCenter
+    ? 'Return to single-part recommendations'
+    : 'Show cross-part recommendations';
+  const handleCenterAction = hasCenter
+    ? removeFromCenter
+    : () => animateToCenter(topPart.partNumber);
+
   return (
     <div class="space-y-3 sm:space-y-4">
-      <div class="rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm sm:rounded-2xl sm:px-4 sm:py-2.5">
-        <div class="flex items-center gap-3">
-          <span
-            class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
-            style={{ backgroundColor: focusPart.colorHex }}
-          >
-            {focusPart.partNumber}
-          </span>
+      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-2.5 sm:rounded-2xl sm:px-3 sm:py-3">
+        <div class="space-y-2">
           <a
             href={focusPart.href}
-            class="min-w-0 truncate text-sm font-serif font-bold text-slate-900 hover:text-indigo-700 transition-colors sm:text-base"
+            class="mx-auto flex max-w-full items-center justify-center gap-2 rounded-xl px-2.5 py-1.5 transition"
           >
-            {focusPart.title}
+            <span
+              class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
+              style={{ backgroundColor: focusPart.colorHex }}
+            >
+              {focusPart.partNumber}
+            </span>
+            <span class="min-w-0 text-left">
+              <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                Current part
+              </span>
+              <span class="block truncate font-serif text-sm font-bold text-slate-900 sm:text-[15px]">
+                {focusPart.title}
+              </span>
+            </span>
           </a>
-        </div>
-        <div class="mt-2 grid grid-cols-[2.75rem,minmax(0,1fr),2.75rem] items-center gap-2 sm:mt-1.5 sm:flex sm:h-7 sm:gap-1.5">
-          <button
-            type="button"
-            onClick={rotateLeft}
-            class="inline-flex h-11 w-11 items-center justify-center self-stretch rounded-full border border-slate-300 bg-white text-slate-600 shadow-sm transition hover:bg-slate-100 active:scale-[0.98] sm:h-auto sm:w-auto sm:self-auto sm:px-2.5 sm:py-1 sm:text-xs sm:shadow-none"
-            aria-label="Rotate left"
-          >
-            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          {hasCenter ? (
+          <div class="mx-auto flex max-w-[22rem] items-center justify-center gap-2">
             <button
               type="button"
-              onClick={removeFromCenter}
-              class="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100 active:scale-[0.99] sm:min-h-0 sm:w-auto sm:bg-white sm:px-3 sm:py-1 sm:text-xs sm:text-slate-600 sm:shadow-none"
+              onClick={rotateLeft}
+              class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-800 shadow-md shadow-slate-200/70 transition hover:-translate-y-px hover:border-slate-400 hover:bg-white active:translate-y-0 active:scale-[0.98] sm:h-12 sm:w-12"
+              aria-label="Rotate left"
             >
-              Remove from centre
+              <svg class="h-4 w-4 sm:h-4.5 sm:w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.75">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
-          ) : (
             <button
               type="button"
-              onClick={() => animateToCenter(topPart.partNumber)}
-              class="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100 active:scale-[0.99] sm:min-h-0 sm:w-auto sm:bg-white sm:px-3 sm:py-1 sm:text-xs sm:text-slate-600 sm:shadow-none"
+              onClick={handleCenterAction}
+              class="inline-flex min-h-11 flex-1 items-center justify-center rounded-xl border border-slate-200/70 bg-white px-3 py-1.5 text-center transition hover:border-slate-300 hover:bg-slate-50 active:scale-[0.99] sm:min-h-12"
             >
-              Move to centre
+              <span class="block">
+                <span class="block text-[13px] font-semibold text-slate-600">
+                  {centerActionTitle}
+                </span>
+                <span class="mt-0.5 block text-[10px] font-medium leading-4 text-slate-400">
+                  {centerActionDescription}
+                </span>
+              </span>
             </button>
-          )}
-          <button
-            type="button"
-            onClick={rotateRight}
-            class="inline-flex h-11 w-11 items-center justify-center self-stretch rounded-full border border-slate-300 bg-white text-slate-600 shadow-sm transition hover:bg-slate-100 active:scale-[0.98] sm:h-auto sm:w-auto sm:self-auto sm:px-2.5 sm:py-1 sm:text-xs sm:shadow-none"
-            aria-label="Rotate right"
-          >
-            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            <button
+              type="button"
+              onClick={rotateRight}
+              class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-800 shadow-md shadow-slate-200/70 transition hover:-translate-y-px hover:border-slate-400 hover:bg-white active:translate-y-0 active:scale-[0.98] sm:h-12 sm:w-12"
+              aria-label="Rotate right"
+            >
+              <svg class="h-4 w-4 sm:h-4.5 sm:w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.75">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
