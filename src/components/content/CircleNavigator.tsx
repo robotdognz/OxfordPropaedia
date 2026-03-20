@@ -1036,11 +1036,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             {focusPart.title}
           </a>
         </div>
-        <div class="mt-1.5 flex h-7 items-center gap-1.5">
+        <div class="mt-2 grid grid-cols-[2.75rem,minmax(0,1fr),2.75rem] items-center gap-2 sm:mt-1.5 sm:flex sm:h-7 sm:gap-1.5">
           <button
             type="button"
             onClick={rotateLeft}
-            class="rounded-full border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            class="inline-flex h-11 w-11 items-center justify-center self-stretch rounded-full border border-slate-300 bg-white text-slate-600 shadow-sm transition hover:bg-slate-100 active:scale-[0.98] sm:h-auto sm:w-auto sm:self-auto sm:px-2.5 sm:py-1 sm:text-xs sm:shadow-none"
             aria-label="Rotate left"
           >
             <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -1051,7 +1051,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             <button
               type="button"
               onClick={removeFromCenter}
-              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+              class="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100 active:scale-[0.99] sm:min-h-0 sm:w-auto sm:bg-white sm:px-3 sm:py-1 sm:text-xs sm:text-slate-600 sm:shadow-none"
             >
               Remove from centre
             </button>
@@ -1059,7 +1059,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             <button
               type="button"
               onClick={() => animateToCenter(topPart.partNumber)}
-              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+              class="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100 active:scale-[0.99] sm:min-h-0 sm:w-auto sm:bg-white sm:px-3 sm:py-1 sm:text-xs sm:text-slate-600 sm:shadow-none"
             >
               Move to centre
             </button>
@@ -1067,7 +1067,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
           <button
             type="button"
             onClick={rotateRight}
-            class="rounded-full border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            class="inline-flex h-11 w-11 items-center justify-center self-stretch rounded-full border border-slate-300 bg-white text-slate-600 shadow-sm transition hover:bg-slate-100 active:scale-[0.98] sm:h-auto sm:w-auto sm:self-auto sm:px-2.5 sm:py-1 sm:text-xs sm:shadow-none"
             aria-label="Rotate right"
           >
             <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
