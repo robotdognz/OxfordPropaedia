@@ -45,6 +45,8 @@ function polar(cx: number, cy: number, radius: number, degrees: number) {
   };
 }
 
+type PathPoint = { x: number; y: number };
+
 function donutSlicePath(
   cx: number,
   cy: number,
@@ -78,6 +80,46 @@ function easeOutCubic(t: number): number {
 
 const MORPH_DURATION_MS = 300;
 
+function arcPathPoints(
+  cx: number,
+  cy: number,
+  radius: number,
+  startAngle: number,
+  endAngle: number,
+  segments: number
+): PathPoint[] {
+  const steps = Math.max(1, segments);
+  return Array.from({ length: steps + 1 }, (_, index) =>
+    polar(cx, cy, radius, lerp(startAngle, endAngle, index / steps))
+  );
+}
+
+function linePathPoints(start: PathPoint, end: PathPoint, segments: number): PathPoint[] {
+  const steps = Math.max(1, segments);
+  return Array.from({ length: steps + 1 }, (_, index) => ({
+    x: lerp(start.x, end.x, index / steps),
+    y: lerp(start.y, end.y, index / steps),
+  }));
+}
+
+function appendPathPoints(target: PathPoint[], points: PathPoint[]) {
+  if (points.length === 0) return;
+  if (target.length === 0) {
+    target.push(...points);
+    return;
+  }
+  target.push(...points.slice(1));
+}
+
+function closedPathFromPoints(points: PathPoint[]): string {
+  if (points.length === 0) return '';
+  return [
+    `M ${points[0].x} ${points[0].y}`,
+    ...points.slice(1).map((point) => `L ${point.x} ${point.y}`),
+    'Z',
+  ].join(' ');
+}
+
 function morphedDonutPath(
   cx: number,
   cy: number,
@@ -88,15 +130,34 @@ function morphedDonutPath(
   targetRadius: number,
   t: number
 ): string {
-  const innerR = lerp(srcInner, 1, t);
-  const outerR = lerp(srcOuter, targetRadius, t);
   const srcSpan = srcEndAngle - srcStartAngle;
-  const span = lerp(srcSpan, 359.9, t);
-  const srcMid = (srcStartAngle + srcEndAngle) / 2;
-  const midAngle = lerp(srcMid, srcMid, t);
-  const startA = midAngle - span / 2;
-  const endA = midAngle + span / 2;
-  return donutSlicePath(cx, cy, innerR, outerR, startA, endA);
+  const sideSweep = Math.max(12, 180 - srcSpan);
+  const arcSegments = Math.max(6, Math.ceil(Math.abs(srcSpan) / 10));
+  const sideSegments = Math.max(8, Math.ceil(Math.abs(sideSweep) / 12));
+
+  const sourceOuterStart = polar(cx, cy, srcOuter, srcStartAngle);
+  const sourceOuterEnd = polar(cx, cy, srcOuter, srcEndAngle);
+  const sourceInnerEnd = polar(cx, cy, srcInner, srcEndAngle);
+  const sourceInnerStart = polar(cx, cy, srcInner, srcStartAngle);
+
+  const sourcePoints: PathPoint[] = [];
+  appendPathPoints(sourcePoints, arcPathPoints(cx, cy, srcOuter, srcStartAngle, srcEndAngle, arcSegments));
+  appendPathPoints(sourcePoints, linePathPoints(sourceOuterEnd, sourceInnerEnd, sideSegments));
+  appendPathPoints(sourcePoints, arcPathPoints(cx, cy, srcInner, srcEndAngle, srcStartAngle, arcSegments));
+  appendPathPoints(sourcePoints, linePathPoints(sourceInnerStart, sourceOuterStart, sideSegments));
+
+  const targetPoints: PathPoint[] = [];
+  appendPathPoints(targetPoints, arcPathPoints(cx, cy, targetRadius, srcStartAngle, srcEndAngle, arcSegments));
+  appendPathPoints(targetPoints, arcPathPoints(cx, cy, targetRadius, srcEndAngle, srcStartAngle + 180, sideSegments));
+  appendPathPoints(targetPoints, arcPathPoints(cx, cy, targetRadius, srcStartAngle + 180, srcEndAngle + 180, arcSegments));
+  appendPathPoints(targetPoints, arcPathPoints(cx, cy, targetRadius, srcEndAngle + 180, srcStartAngle + 360, sideSegments));
+
+  return closedPathFromPoints(
+    sourcePoints.map((point, index) => ({
+      x: lerp(point.x, targetPoints[index].x, t),
+      y: lerp(point.y, targetPoints[index].y, t),
+    }))
+  );
 }
 
 function normalizeDegrees(value: number): number {
@@ -452,10 +513,25 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const focusPart = centerPart ?? topPart;
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
+  const isCenterPreviewActive = centerPreviewPartNumber !== null;
   const isCenterSwapPreviewActive = hasCenter && centerPreviewPartNumber !== null;
+  const isCenterSwapPreviewReversing = hasCenter && centerPreviewPartNumber === null && morphT > 0 && morphPartNumber !== null;
+  const centerSwapReturnOpacity = isCenterSwapPreviewReversing
+    ? Math.max(0, Math.min(1, (0.45 - morphT) / 0.45))
+    : 1;
   const centerPreviewOutlineOpacity = isCenterSwapPreviewActive
     ? Math.max(0, Math.min(1, (morphT - 0.2) / 0.5))
     : 1;
+  const centerDiscOutlineOpacity = isCenterSwapPreviewActive
+    ? centerPreviewOutlineOpacity
+    : isCenterSwapPreviewReversing
+      ? centerSwapReturnOpacity
+      : 1;
+  const centerDiscContentOpacity = isCenterSwapPreviewActive
+    ? centerPreviewOutlineOpacity
+    : isCenterSwapPreviewReversing
+      ? centerSwapReturnOpacity
+      : 1;
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
   const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
   const suggestedSections = connectionSummary?.sections ?? [];
@@ -1254,6 +1330,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
           {/* Old center morphing out to ring during swap preview */}
           {morphT > 0 && hasCenter && centerPart && centerPreviewOffsets?.oldCenterTarget && (() => {
             const target = centerPreviewOffsets.oldCenterTarget;
+            const oldCenterGhostOpacity = isCenterSwapPreviewActive
+              ? morphT
+              : isCenterSwapPreviewReversing
+                ? 1 - centerSwapReturnOpacity
+                : morphT;
             const tDistFromTop = angularDistance(target.centerAngle, 0);
             const tSegAngle = centerPreviewOffsets.newSegAngle;
             const tTopWeight = Math.max(0, 1 - tDistFromTop / tSegAngle);
@@ -1267,7 +1348,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const tLabelX = tLabelPos.x + (tTextAnchor === 'start' ? -30 : tTextAnchor === 'end' ? 30 : 0);
             const tLabelLines = wrapLabel(centerPart.title);
             return (
-              <g opacity={morphT} pointer-events="none">
+              <g opacity={oldCenterGhostOpacity} pointer-events="none">
                 <path
                   d={morphedDonutPath(
                     CENTER, CENTER,
@@ -1277,7 +1358,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     1 - morphT
                   )}
                   fill={centerPart.colorHex}
-                  opacity={1 / Math.max(morphT, 0.01)}
+                  opacity={1 / Math.max(oldCenterGhostOpacity, 0.01)}
                 />
                 <text
                   x={tNumberPos.x}
@@ -1482,7 +1563,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               r={CENTER_DISC_RADIUS}
               fill={centerDisplayPart.colorHex}
               opacity={
-                removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
+                removeMorphT > 0
+                  ? Math.max(0, 1 - removeMorphT * 1.5)
+                  : isCenterPreviewActive
+                    ? 0
+                    : isCenterSwapPreviewReversing
+                      ? Math.max(0, Math.min(1, 1 - morphT))
+                    : 1
               }
             />
             {/* Focus outline on centre disc — show when centre exists, or when morph preview is nearly complete */}
@@ -1494,12 +1581,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 fill="none"
                 stroke="#0f172a"
                 stroke-width={SELECTION_OUTLINE_WIDTH}
-                opacity={centerPreviewOutlineOpacity}
+                opacity={centerDiscOutlineOpacity}
                 pointer-events="none"
               />
             )}
             <g opacity={
-              removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
+              removeMorphT > 0
+                ? Math.max(0, 1 - removeMorphT * 1.5)
+                : centerDiscContentOpacity
             }>
             <text
               x={CENTER}
