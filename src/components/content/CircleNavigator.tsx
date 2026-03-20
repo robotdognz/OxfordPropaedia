@@ -349,6 +349,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const [postSwapT, setPostSwapT] = useState(0);
   const [postSwapState, setPostSwapState] = useState<{
     oldCenterPartNumber: number;
+    oldSegAngle: number;
     angularOffsets: Map<number, number>;
   } | null>(null);
   const postSwapAnimRef = useRef<number | null>(null);
@@ -522,6 +523,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const centerPreviewOutlineOpacity = isCenterSwapPreviewActive
     ? Math.max(0, Math.min(1, (morphT - 0.2) / 0.5))
     : 1;
+  const dragMorphOutlineOpacity = isCenterSwapPreviewActive
+    ? Math.max(0, 1 - centerPreviewOutlineOpacity)
+    : isCenterSwapPreviewReversing
+      ? 0
+      : 1;
   const centerDiscOutlineOpacity = isCenterSwapPreviewActive
     ? centerPreviewOutlineOpacity
     : isCenterSwapPreviewReversing
@@ -532,6 +538,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     : isCenterSwapPreviewReversing
       ? centerSwapReturnOpacity
       : 1;
+  const showCenterDiscOutline = removeMorphT === 0 && (
+    isCenterSwapPreviewActive
+    || ((hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && !isCenterPreviewActive)
+  );
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
   const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
   const suggestedSections = connectionSummary?.sections ?? [];
@@ -707,7 +717,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     setCenterPartNumber(null);
     setCenterPreviewPartNumber(null);
 
-    setPostSwapState({ oldCenterPartNumber: removedPartNumber, angularOffsets: offsets });
+    setPostSwapState({ oldCenterPartNumber: removedPartNumber, oldSegAngle, angularOffsets: offsets });
     setPostSwapT(1);
 
     const startTime = performance.now();
@@ -1112,11 +1122,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               : 0;
             const isPostSwapMorphing = postSwapState?.oldCenterPartNumber === part.partNumber && postSwapT > 0;
             const centerAngle = rotationDegrees + index * segmentAngle + swapOffset + removeOffset + centerMoveOffset;
-            const effectiveSpan = removeMorphT > 0 && removePreviewOffsets
-              ? lerp(segmentAngle, removePreviewOffsets.fullSegAngle, removeMorphT)
-              : morphT > 0 && centerPreviewOffsets && part.partNumber !== morphPartNumber
-                ? lerp(segmentAngle, centerPreviewOffsets.newSegAngle, morphT)
-                : segmentAngle;
+            const effectiveSpan = postSwapState && postSwapT > 0
+              ? lerp(segmentAngle, postSwapState.oldSegAngle, postSwapT)
+              : removeMorphT > 0 && removePreviewOffsets
+                ? lerp(segmentAngle, removePreviewOffsets.fullSegAngle, removeMorphT)
+                : morphT > 0 && centerPreviewOffsets && part.partNumber !== morphPartNumber
+                  ? lerp(segmentAngle, centerPreviewOffsets.newSegAngle, morphT)
+                  : segmentAngle;
             const startAngle = centerAngle - effectiveSpan / 2;
             const endAngle = centerAngle + effectiveSpan / 2;
             const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, centerAngle);
@@ -1320,7 +1332,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   stroke="#0f172a"
                   stroke-width={SELECTION_OUTLINE_WIDTH}
                   stroke-linejoin="round"
-                  stroke-opacity={isCenterSwapPreviewActive ? Math.max(0, 1 - centerPreviewOutlineOpacity) : 1}
+                  stroke-opacity={dragMorphOutlineOpacity}
                   pointer-events="none"
                 />
               </>
@@ -1573,7 +1585,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               }
             />
             {/* Focus outline on centre disc — show when centre exists, or when morph preview is nearly complete */}
-            {(hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && removeMorphT === 0 && !isCenterPreviewActive && (
+            {showCenterDiscOutline && (
               <circle
                 cx={CENTER}
                 cy={CENTER}
