@@ -1272,7 +1272,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     CENTER_DISC_RADIUS - outlineInset,
                     postSwapT
                   )}
-                  fill="none"
+                  fill={oldCP.colorHex}
                   stroke="#0f172a"
                   stroke-width={SELECTION_OUTLINE_WIDTH}
                   stroke-linejoin="round"
@@ -1316,11 +1316,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     CENTER_DISC_RADIUS - outlineInset,
                     morphT
                   )}
-                  fill="none"
+                  fill={mPart.colorHex}
                   stroke="#0f172a"
                   stroke-width={SELECTION_OUTLINE_WIDTH}
                   stroke-linejoin="round"
-                  opacity={isCenterSwapPreviewActive ? Math.max(0, 1 - centerPreviewOutlineOpacity) : 1}
+                  stroke-opacity={isCenterSwapPreviewActive ? Math.max(0, 1 - centerPreviewOutlineOpacity) : 1}
                   pointer-events="none"
                 />
               </>
@@ -1427,7 +1427,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const rmOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, rmTopWeight);
             const rmOutlineInset = SELECTION_OUTLINE_WIDTH / 2;
             const rmOutlineInner = Math.max(rmInner + rmOutlineInset, CENTER_DISC_RADIUS + rmOutlineInset);
-
             const numberPos = polar(CENTER, CENTER, lerp(134, 138, rmTopWeight), rmCenterAngle);
             const rmConnectorStart = polar(CENTER, CENTER, rmOuter + 6, rmCenterAngle);
             const rmConnectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, rmTopWeight), rmCenterAngle);
@@ -1457,7 +1456,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     CENTER_DISC_RADIUS - rmOutlineInset,
                     1 - removeMorphT
                   )}
-                  fill="none"
+                  fill={centerPart.colorHex}
+                  opacity={1 / removeMorphT}
                   stroke="#0f172a"
                   stroke-width={SELECTION_OUTLINE_WIDTH}
                   stroke-linejoin="round"
@@ -1573,7 +1573,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               }
             />
             {/* Focus outline on centre disc — show when centre exists, or when morph preview is nearly complete */}
-            {(hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && removeMorphT === 0 && (
+            {(hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && removeMorphT === 0 && !isCenterPreviewActive && (
               <circle
                 cx={CENTER}
                 cy={CENTER}
