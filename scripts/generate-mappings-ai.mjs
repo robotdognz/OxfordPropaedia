@@ -6,6 +6,7 @@
  *   --mode remap    Improve existing mappings with better paths and rationales (default)
  *   --mode assign   Full recompute: select items for each section from catalog + assign paths
  *   --mode discover Find which sections an item maps to from the full catalog
+ *   --mode gap-fill Build an exact-leaf gap report and candidate plan for one source type
  *
  * Usage:
  *   node scripts/generate-mappings-ai.mjs --section 824                    # Remap one section
@@ -17,8 +18,10 @@
  *   node scripts/generate-mappings-ai.mjs --mode assign --section 824 --type vsi  # Assign one section
  *   node scripts/generate-mappings-ai.mjs --mode discover --item "Buddhism::Damien Keown" --type vsi
  *   node scripts/generate-mappings-ai.mjs --mode discover --new-only --type vsi
+ *   node scripts/generate-mappings-ai.mjs --mode gap-fill --type wikipedia # Exact leaf gap-fill plan
  *   node scripts/generate-mappings-ai.mjs --validate                       # Validate existing mappings
- *   node scripts/generate-mappings-ai.mjs --coverage                       # Coverage gap report
+ *   node scripts/generate-mappings-ai.mjs --coverage                       # Exact leaf coverage report
+ *   node scripts/generate-mappings-ai.mjs --coverage --report-file /tmp/mapping-report.json
  *   node scripts/generate-mappings-ai.mjs --section 824 --dry-run          # Preview without writing
  *
  * Requires:
@@ -43,6 +46,7 @@ import outlineData from './lib/outline-data.cjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const { buildTaxonomyText } = outlineData;
+const REPORTS_DIR = path.join(ROOT, 'scripts', 'output');
 
 // Lazy import — only loaded when API calls are needed
 async function getAnthropicClient() {
@@ -75,6 +79,7 @@ const newOnlyFlag = hasFlag('new-only');
 const validateFlag = hasFlag('validate');
 const coverageFlag = hasFlag('coverage');
 const dryRunFlag = hasFlag('dry-run');
+const reportFileFlag = getArg('report-file');
 
 if (!validateFlag && !coverageFlag) {
   if (modeFlag === 'remap' && !sectionFlag && !allFlag) {
@@ -95,6 +100,10 @@ if (!validateFlag && !coverageFlag) {
   }
   if (modeFlag === 'discover' && typeFlag === 'both') {
     console.error('Discover mode requires --type vsi or --type wikipedia');
+    process.exit(1);
+  }
+  if (modeFlag === 'gap-fill' && typeFlag === 'both') {
+    console.error('Gap-fill mode requires --type vsi or --type wikipedia');
     process.exit(1);
   }
 }
@@ -118,9 +127,81 @@ function countOverlap(setA, setB) {
   return count;
 }
 
+function normalizeType(type) {
+  return type === 'wikipedia' ? 'wiki' : type;
+}
+
+function typeLabel(type) {
+  return normalizeType(type) === 'wiki' ? 'Wikipedia' : 'VSI';
+}
+
+function typeSlug(type) {
+  return normalizeType(type) === 'wiki' ? 'wikipedia' : 'vsi';
+}
+
+function getRequestedTypes() {
+  const normalized = normalizeType(typeFlag);
+  if (normalized === 'both') return ['vsi', 'wiki'];
+  return [normalized];
+}
+
+function normalizeSectionStem(sectionCode) {
+  return String(sectionCode).replace(/\.json$/i, '').replace(/\//g, '-');
+}
+
+function sectionFilePath(sectionCode) {
+  return path.join(ROOT, 'src', 'content', 'sections', `${normalizeSectionStem(sectionCode)}.json`);
+}
+
+function mappingDirPath(type) {
+  return path.join(
+    ROOT,
+    normalizeType(type) === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings',
+  );
+}
+
+function mappingFilePath(sectionCode, type) {
+  return path.join(mappingDirPath(type), `${normalizeSectionStem(sectionCode)}.json`);
+}
+
+function ensureReportsDir() {
+  fs.mkdirSync(REPORTS_DIR, { recursive: true });
+}
+
+function resolveReportPath(defaultName) {
+  if (reportFileFlag) {
+    return path.isAbsolute(reportFileFlag)
+      ? reportFileFlag
+      : path.join(ROOT, reportFileFlag);
+  }
+  ensureReportsDir();
+  return path.join(REPORTS_DIR, defaultName);
+}
+
+const sectionDocumentCache = new Map();
+const sectionOutlineNodeCache = new Map();
+
 // --- Load data ---
 function loadTaxonomy() {
   return buildTaxonomyText(ROOT);
+}
+
+function loadSectionDocument(sectionCode) {
+  const stem = normalizeSectionStem(sectionCode);
+  if (sectionDocumentCache.has(stem)) return sectionDocumentCache.get(stem);
+
+  const filePath = sectionFilePath(stem);
+  if (!fs.existsSync(filePath)) return null;
+
+  const section = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const document = {
+    stem,
+    sectionCode: section.sectionCode,
+    title: section.title,
+    outline: section.outline || [],
+  };
+  sectionDocumentCache.set(stem, document);
+  return document;
 }
 
 function collectOutlineText(items) {
@@ -133,9 +214,8 @@ function collectOutlineText(items) {
 }
 
 function loadSectionOutline(sectionCode) {
-  const filePath = `src/content/sections/${sectionCode}.json`;
-  if (!fs.existsSync(filePath)) return null;
-  const section = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const section = loadSectionDocument(sectionCode);
+  if (!section) return null;
 
   function formatOutline(items, indent = 0) {
     let text = '';
@@ -147,11 +227,38 @@ function loadSectionOutline(sectionCode) {
   }
 
   return {
+    stem: section.stem,
     sectionCode: section.sectionCode,
     title: section.title,
     outlineText: formatOutline(section.outline),
     fullText: section.title + ' ' + collectOutlineText(section.outline),
   };
+}
+
+function loadSectionOutlineNodes(sectionCode) {
+  const section = loadSectionDocument(sectionCode);
+  if (!section) return [];
+  if (sectionOutlineNodeCache.has(section.stem)) return sectionOutlineNodeCache.get(section.stem);
+
+  const nodes = [];
+  function collect(items, prefix = [], trail = []) {
+    for (const item of items || []) {
+      const nextPrefix = [...prefix, item.level];
+      const nextTrail = [...trail, { level: item.level, text: item.text }];
+      const children = item.children || [];
+      nodes.push({
+        path: nextPrefix.join('.'),
+        text: item.text,
+        isLeaf: children.length === 0,
+        trail: nextTrail,
+      });
+      if (children.length > 0) collect(children, nextPrefix, nextTrail);
+    }
+  }
+
+  collect(section.outline);
+  sectionOutlineNodeCache.set(section.stem, nodes);
+  return nodes;
 }
 
 function loadAllSectionData() {
@@ -195,14 +302,13 @@ function loadWikiCatalog() {
 }
 
 function loadExistingMappings(sectionCode, type) {
-  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
-  const filePath = `${dir}/${sectionCode}.json`;
+  const filePath = mappingFilePath(sectionCode, type);
   if (!fs.existsSync(filePath)) return null;
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
 function getAllSectionCodes() {
-  return fs.readdirSync('src/content/sections')
+  return fs.readdirSync(path.join(ROOT, 'src', 'content', 'sections'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace('.json', ''))
     .sort();
@@ -210,12 +316,12 @@ function getAllSectionCodes() {
 
 // --- Find which sections an item is currently mapped to ---
 function findExistingMappedSections(itemId, type) {
-  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
+  const dir = mappingDirPath(type);
   const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
   const sections = [];
 
   for (const file of files) {
-    const data = JSON.parse(fs.readFileSync(`${dir}/${file}`, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
     for (const m of data.mappings) {
       const id = type === 'vsi' ? `${m.vsiTitle}::${m.vsiAuthor}` : m.articleTitle;
       if (id === itemId) {
@@ -294,20 +400,209 @@ function formatItemsForPrompt(items, type) {
   }).join('\n\n');
 }
 
+function normalizeOutlinePath(pathValue) {
+  return typeof pathValue === 'string' ? pathValue.trim() : '';
+}
+
+function isAncestorPath(ancestorPath, pathValue) {
+  return pathValue.startsWith(ancestorPath + '.');
+}
+
+function getLeafOutlinePaths(sectionCode) {
+  return loadSectionOutlineNodes(sectionCode).filter((node) => node.isLeaf);
+}
+
+function getItemPathsForSection(sectionCode, type) {
+  const data = loadExistingMappings(sectionCode, type);
+  const allPaths = new Set();
+  if (!data) return allPaths;
+  for (const mapping of data.mappings || []) {
+    for (const pathValue of mapping.relevantPathsAI || []) {
+      const normalized = normalizeOutlinePath(pathValue);
+      if (normalized) allPaths.add(normalized);
+    }
+  }
+  return allPaths;
+}
+
+function buildLeafCoverageAudit(sectionCode, type) {
+  const section = loadSectionDocument(sectionCode);
+  if (!section) return null;
+
+  const leaves = getLeafOutlinePaths(sectionCode);
+  const itemPaths = getItemPathsForSection(sectionCode, type);
+  const exactPaths = new Set(itemPaths);
+
+  const leafCoverage = leaves.map((leaf) => {
+    if (exactPaths.has(leaf.path)) {
+      return {
+        path: leaf.path,
+        text: leaf.text,
+        trail: leaf.trail,
+        status: 'exact',
+        fallbackPaths: [],
+      };
+    }
+
+    const fallbackPaths = [...exactPaths]
+      .filter((candidate) => candidate && isAncestorPath(candidate, leaf.path))
+      .sort((a, b) => b.length - a.length);
+
+    return {
+      path: leaf.path,
+      text: leaf.text,
+      trail: leaf.trail,
+      status: fallbackPaths.length > 0 ? 'fallback' : 'uncovered',
+      fallbackPaths,
+    };
+  });
+
+  const exact = leafCoverage.filter((leaf) => leaf.status === 'exact').length;
+  const fallback = leafCoverage.filter((leaf) => leaf.status === 'fallback').length;
+  const unresolved = leafCoverage.filter((leaf) => leaf.status === 'uncovered').length;
+
+  return {
+    sectionStem: section.stem,
+    sectionCode: section.sectionCode,
+    title: section.title,
+    totalLeafPaths: leafCoverage.length,
+    exactLeafPaths: exact,
+    fallbackLeafPaths: fallback,
+    unresolvedLeafPaths: unresolved,
+    leafCoverage,
+  };
+}
+
+function formatCoveragePriorityNote(sectionCode, type) {
+  const audit = buildLeafCoverageAudit(sectionCode, type);
+  if (!audit) return '';
+
+  const unresolved = audit.leafCoverage.filter((leaf) => leaf.status === 'uncovered');
+  const fallback = audit.leafCoverage.filter((leaf) => leaf.status === 'fallback');
+  const lines = [];
+  const maxPromptLeaves = 25;
+
+  if (unresolved.length > 0) {
+    const shown = unresolved.slice(0, maxPromptLeaves);
+    lines.push(
+      `EXACT LEAF PRIORITY — The following ${unresolved.length} leaf paths currently have no ${typeLabel(type)} recommendation at all. ` +
+      `If any candidate genuinely covers them, include the exact leaf path:`,
+      ...shown.map((leaf) => `  ${leaf.path}: ${leaf.text.substring(0, 80)}`),
+    );
+    if (unresolved.length > shown.length) {
+      lines.push(`  ... and ${unresolved.length - shown.length} more exact leaf gaps in this section`);
+    }
+  }
+
+  if (fallback.length > 0) {
+    const shown = fallback.slice(0, maxPromptLeaves);
+    if (lines.length > 0) lines.push('');
+    lines.push(
+      `CONTROLLED FALLBACK ONLY — The following ${fallback.length} leaf paths are only covered by broader parent paths. ` +
+      `Prefer an exact leaf mapping when it is defensible; otherwise the broader fallback is acceptable:`,
+      ...shown.map((leaf) => `  ${leaf.path}: ${leaf.text.substring(0, 80)} (fallback: ${leaf.fallbackPaths.join(', ')})`),
+    );
+    if (fallback.length > shown.length) {
+      lines.push(`  ... and ${fallback.length - shown.length} more fallback-only leaf paths in this section`);
+    }
+  }
+
+  return lines.length > 0 ? `\n\n${lines.join('\n')}` : '';
+}
+
+function buildCoverageReport(sectionCodes, types) {
+  const report = {
+    generatedAt: new Date().toISOString(),
+    exactLeafCoverageRequired: true,
+    fallbackPolicy: 'ancestor_path_fallback_only_when_no_exact_leaf_mapping_exists',
+    sectionCount: sectionCodes.length,
+    types: {},
+  };
+
+  for (const type of types) {
+    const sections = [];
+    const totals = {
+      totalLeafPaths: 0,
+      exactLeafPaths: 0,
+      fallbackLeafPaths: 0,
+      unresolvedLeafPaths: 0,
+      sectionsWithFallbackOnly: 0,
+      sectionsWithUnresolved: 0,
+    };
+
+    for (const code of sectionCodes) {
+      const audit = buildLeafCoverageAudit(code, type);
+      if (!audit) continue;
+
+      totals.totalLeafPaths += audit.totalLeafPaths;
+      totals.exactLeafPaths += audit.exactLeafPaths;
+      totals.fallbackLeafPaths += audit.fallbackLeafPaths;
+      totals.unresolvedLeafPaths += audit.unresolvedLeafPaths;
+      if (audit.fallbackLeafPaths > 0) totals.sectionsWithFallbackOnly++;
+      if (audit.unresolvedLeafPaths > 0) totals.sectionsWithUnresolved++;
+
+      sections.push({
+        sectionStem: audit.sectionStem,
+        sectionCode: audit.sectionCode,
+        title: audit.title,
+        totals: {
+          totalLeafPaths: audit.totalLeafPaths,
+          exactLeafPaths: audit.exactLeafPaths,
+          fallbackLeafPaths: audit.fallbackLeafPaths,
+          unresolvedLeafPaths: audit.unresolvedLeafPaths,
+          exactCoveragePct: audit.totalLeafPaths === 0
+            ? 100
+            : Math.round((audit.exactLeafPaths / audit.totalLeafPaths) * 1000) / 10,
+          fallbackCoveragePct: audit.totalLeafPaths === 0
+            ? 0
+            : Math.round((audit.fallbackLeafPaths / audit.totalLeafPaths) * 1000) / 10,
+        },
+        unresolvedLeaves: audit.leafCoverage
+          .filter((leaf) => leaf.status === 'uncovered')
+          .map((leaf) => ({ path: leaf.path, text: leaf.text })),
+        fallbackLeaves: audit.leafCoverage
+          .filter((leaf) => leaf.status === 'fallback')
+          .map((leaf) => ({
+            path: leaf.path,
+            text: leaf.text,
+            fallbackPaths: leaf.fallbackPaths,
+          })),
+      });
+    }
+
+    report.types[typeSlug(type)] = {
+      totals: {
+        ...totals,
+        exactCoveragePct: totals.totalLeafPaths === 0
+          ? 100
+          : Math.round((totals.exactLeafPaths / totals.totalLeafPaths) * 1000) / 10,
+        fallbackCoveragePct: totals.totalLeafPaths === 0
+          ? 0
+          : Math.round((totals.fallbackLeafPaths / totals.totalLeafPaths) * 1000) / 10,
+        unresolvedCoveragePct: totals.totalLeafPaths === 0
+          ? 0
+          : Math.round((totals.unresolvedLeafPaths / totals.totalLeafPaths) * 1000) / 10,
+      },
+      sections,
+    };
+  }
+
+  return report;
+}
+
+function writeJsonReport(filePath, data) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
+}
+
 // --- API calls ---
 async function generateRemapMappings(client, systemPrompt, section, items, type) {
-  // Find uncovered paths to include as context
-  const { uncovered } = findUncoveredPaths(section.sectionCode);
-  const uncoveredNote = uncovered.length > 0
-    ? `\n\nIMPORTANT — The following ${uncovered.length} outline paths currently have NO recommendations. ` +
-      `If any of the items below genuinely cover these topics, please include these paths in their relevantPathsAI:\n` +
-      uncovered.map((u) => `  ${u.path}: ${u.text.substring(0, 80)}`).join('\n')
-    : '';
+  const coverageNote = formatCoveragePriorityNote(section.stem || section.sectionCode, type);
 
   const userMessage = `Section ${section.sectionCode}: ${section.title}
 
 Outline:
-${section.outlineText}${uncoveredNote}
+${section.outlineText}${coverageNote}
 
 ---
 
@@ -397,8 +692,8 @@ function rankSectionsForItem(item, allSections) {
 
 // --- Write results ---
 function writeMappingResults(sectionCode, results, type, existingData) {
-  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
-  const filePath = `${dir}/${sectionCode}.json`;
+  const section = loadSectionDocument(sectionCode);
+  const filePath = mappingFilePath(sectionCode, type);
 
   const resultLookup = new Map(results.map((r) => [r.id, r]));
 
@@ -415,19 +710,29 @@ function writeMappingResults(sectionCode, results, type, existingData) {
     return m;
   });
 
-  const output = { sectionCode, mappings, _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
+  const output = {
+    sectionCode: existingData?.sectionCode || section?.sectionCode || sectionCode,
+    mappings,
+    _curatedBy: 'ai',
+    _generatedAt: new Date().toISOString().split('T')[0],
+  };
   fs.writeFileSync(filePath, JSON.stringify(output, null, 2) + '\n');
 }
 
 function writeDiscoverResult(sectionCode, item, result, type) {
-  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
-  const filePath = `${dir}/${sectionCode}.json`;
+  const section = loadSectionDocument(sectionCode);
+  const filePath = mappingFilePath(sectionCode, type);
 
   let data;
   if (fs.existsSync(filePath)) {
     data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   } else {
-    data = { sectionCode, mappings: [], _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
+    data = {
+      sectionCode: section?.sectionCode || sectionCode,
+      mappings: [],
+      _curatedBy: 'ai',
+      _generatedAt: new Date().toISOString().split('T')[0],
+    };
   }
 
   // Check if item already exists in this section's mappings
@@ -508,10 +813,10 @@ function getDiscoverItems(type, catalog) {
 
   if (newOnlyFlag) {
     // Find all items currently mapped to ANY section
-    const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
+    const dir = mappingDirPath(type);
     const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
     for (const file of files) {
-      const data = JSON.parse(fs.readFileSync(`${dir}/${file}`, 'utf8'));
+      const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
       for (const m of data.mappings) {
         const id = type === 'vsi' ? `${m.vsiTitle}::${m.vsiAuthor}` : m.articleTitle;
         mappedIds.add(id);
@@ -599,7 +904,7 @@ ${taxonomy}
 
 IMPORTANT RULES:
 - Only confirm items with genuine, substantive topical overlap — not just tangential mention of a keyword
-- Every outline path in the section should ideally have at least one item covering it, so that users clicking any subsection see recommendations. If a candidate is the only item that covers a particular outline path, include it even if the overlap is moderate.
+- Every leaf-level outline path in the section should ideally have at least one item covering it, so that users clicking any nested subsection see recommendations. If a candidate is the only defensible item for a particular leaf path, include it even if the overlap is moderate.
 - Use the most specific path that applies (e.g., A.3.b rather than just A), AND also include broader parent paths if the item covers the topic broadly
 - Write rationales that reference specific concepts from the item's summary and specific outline paths
 - Do not use framing like "This article covers..." — write direct factual rationales
@@ -630,34 +935,62 @@ function rankCandidatesForSection(section, allItems) {
   return scored.slice(0, ASSIGN_CANDIDATES);
 }
 
+function buildCatalogItems(catalog) {
+  return [...catalog.entries()]
+    .filter(([, entry]) => entry.summaryAI)
+    .map(([id, entry]) => {
+      const textParts = [entry.summaryAI, entry.title];
+      if (entry.author) textParts.push(entry.author);
+      if (entry.keywords) textParts.push(entry.keywords);
+      if (entry.subject) textParts.push(entry.subject);
+      return {
+        id,
+        title: entry.title,
+        author: entry.author,
+        summaryAI: entry.summaryAI,
+        keywords: entry.keywords,
+        subject: entry.subject,
+        tokens: tokenize(textParts.join(' ')),
+      };
+    });
+}
+
+function buildLeafQueryTokens(sectionAuditLeaf, sectionTitle) {
+  const textParts = [sectionTitle, ...sectionAuditLeaf.trail.map((step) => step.text)];
+  return tokenize(textParts.join(' '));
+}
+
+function getMappingId(mapping, type) {
+  return normalizeType(type) === 'vsi'
+    ? `${mapping.vsiTitle}::${mapping.vsiAuthor}`
+    : mapping.articleTitle;
+}
+
+function rankCandidatesForLeaf(sectionAudit, leaf, allItems, existingIds, limit = 12) {
+  const queryTokens = buildLeafQueryTokens(leaf, sectionAudit.title);
+  return allItems
+    .map((item) => {
+      const overlap = countOverlap(queryTokens, item.tokens || tokenize([item.summaryAI, item.title].join(' ')));
+      return {
+        id: item.id,
+        title: item.title,
+        author: item.author,
+        score: overlap,
+        alreadyMappedToSection: existingIds.has(item.id),
+      };
+    })
+    .filter((item) => item.score > 0 || item.alreadyMappedToSection)
+    .sort((a, b) => {
+      if (b.alreadyMappedToSection !== a.alreadyMappedToSection) {
+        return Number(b.alreadyMappedToSection) - Number(a.alreadyMappedToSection);
+      }
+      return b.score - a.score;
+    })
+    .slice(0, limit);
+}
+
 async function generateAssignMappings(client, systemPrompt, section, candidates, type) {
-  // Include all outline paths and flag which ones currently have no coverage from OTHER source types
-  const outlinePaths = collectAllOutlinePaths(section.sectionCode);
-
-  // Check coverage from the OTHER type (e.g., if assigning wikipedia, check what VSI already covers)
-  const otherType = type === 'wiki' ? 'vsi-mappings' : 'wiki-mappings';
-  const otherPaths = new Set();
-  const otherFile = `src/content/${otherType}/${section.sectionCode}.json`;
-  if (fs.existsSync(otherFile)) {
-    const otherData = JSON.parse(fs.readFileSync(otherFile, 'utf8'));
-    for (const m of otherData.mappings) {
-      for (const p of m.relevantPathsAI || []) otherPaths.add(p);
-    }
-  }
-
-  // Find paths not covered by the other type
-  const uncoveredByOther = outlinePaths.filter((op) => {
-    for (const ip of otherPaths) {
-      if (pathCovers(ip, op.path)) return false;
-    }
-    return true;
-  });
-
-  const coverageNote = uncoveredByOther.length > 0
-    ? `\n\nCOVERAGE PRIORITY — The following ${uncoveredByOther.length} outline paths have NO recommendations from other source types. ` +
-      `Prioritize including candidates that cover these paths, even if the overlap is moderate, so that every subsection has at least one recommendation:\n` +
-      uncoveredByOther.map((u) => `  ${u.path}: ${u.text.substring(0, 80)}`).join('\n')
-    : '';
+  const coverageNote = formatCoveragePriorityNote(section.stem || section.sectionCode, type);
 
   const userMessage = `Section ${section.sectionCode}: ${section.title}
 
@@ -693,8 +1026,8 @@ ${formatItemsForPrompt(candidates, type)}`;
 }
 
 function writeAssignResults(sectionCode, results, type) {
-  const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
-  const filePath = `${dir}/${sectionCode}.json`;
+  const section = loadSectionDocument(sectionCode);
+  const filePath = mappingFilePath(sectionCode, type);
 
   const mappings = results.map((r) => {
     if (type === 'vsi') {
@@ -715,7 +1048,12 @@ function writeAssignResults(sectionCode, results, type) {
     }
   });
 
-  const output = { sectionCode, mappings, _curatedBy: 'ai', _generatedAt: new Date().toISOString().split('T')[0] };
+  const output = {
+    sectionCode: section?.sectionCode || sectionCode,
+    mappings,
+    _curatedBy: 'ai',
+    _generatedAt: new Date().toISOString().split('T')[0],
+  };
   fs.writeFileSync(filePath, JSON.stringify(output, null, 2) + '\n');
 }
 
@@ -748,88 +1086,160 @@ async function processAssignSection(client, systemPrompt, sectionCode, type, all
 }
 
 // --- Coverage analysis ---
-function pathCovers(itemPath, outlinePath) {
-  return itemPath === outlinePath ||
-    outlinePath.startsWith(itemPath + '.') ||
-    itemPath.startsWith(outlinePath + '.');
-}
-
-function collectAllOutlinePaths(sectionCode) {
-  const section = JSON.parse(fs.readFileSync(`src/content/sections/${sectionCode}.json`, 'utf8'));
-  const paths = [];
-  function collect(items, prefix = []) {
-    for (const item of items) {
-      const p = [...prefix, item.level].join('.');
-      paths.push({ path: p, text: item.text });
-      if (item.children?.length > 0) collect(item.children, [...prefix, item.level]);
-    }
-  }
-  collect(section.outline);
-  return paths;
-}
-
-function getItemPathsForSection(sectionCode) {
-  const allPaths = new Set();
-  for (const type of ['vsi-mappings', 'wiki-mappings']) {
-    const filePath = `src/content/${type}/${sectionCode}.json`;
-    if (!fs.existsSync(filePath)) continue;
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    for (const m of data.mappings) {
-      for (const p of m.relevantPathsAI || []) allPaths.add(p);
-    }
-  }
-  return allPaths;
-}
-
-function findUncoveredPaths(sectionCode) {
-  const outlinePaths = collectAllOutlinePaths(sectionCode);
-  const itemPaths = getItemPathsForSection(sectionCode);
-  const uncovered = [];
-
-  for (const op of outlinePaths) {
-    let covered = false;
-    for (const ip of itemPaths) {
-      if (pathCovers(ip, op.path)) { covered = true; break; }
-    }
-    if (!covered) uncovered.push(op);
-  }
-
-  return { total: outlinePaths.length, uncovered };
-}
-
 function runCoverageReport() {
-  console.log('=== Outline Path Coverage Report ===\n');
-  const codes = getAllSectionCodes();
-  let totalPaths = 0;
-  let totalUncovered = 0;
-  const gaps = [];
+  const sectionCodes = sectionFlag
+    ? [normalizeSectionStem(sectionFlag)]
+    : getAllSectionCodes().slice(0, limitFlag);
+  const types = getRequestedTypes();
+  const report = buildCoverageReport(sectionCodes, types);
+  const reportPath = resolveReportPath('mapping-coverage-report.json');
 
-  for (const code of codes) {
-    const { total, uncovered } = findUncoveredPaths(code);
-    totalPaths += total;
-    totalUncovered += uncovered.length;
+  console.log('=== Exact Leaf Coverage Report ===\n');
+  console.log('Fallback policy: a broader ancestor path counts as fallback debt, not exact coverage.\n');
 
-    if (uncovered.length > 0) {
-      const section = loadSectionOutline(code);
-      gaps.push({ code, title: section?.title || code, total, uncovered: uncovered.length, paths: uncovered });
+  for (const type of types) {
+    const typeReport = report.types[typeSlug(type)];
+    const totals = typeReport.totals;
+
+    console.log(`${typeLabel(type)}:`);
+    console.log(`  Total leaf paths: ${totals.totalLeafPaths}`);
+    console.log(`  Exact leaf coverage: ${totals.exactLeafPaths} (${totals.exactCoveragePct}%)`);
+    console.log(`  Fallback only: ${totals.fallbackLeafPaths} (${totals.fallbackCoveragePct}%)`);
+    console.log(`  Unresolved: ${totals.unresolvedLeafPaths} (${totals.unresolvedCoveragePct}%)`);
+    console.log(`  Sections with unresolved leaves: ${totals.sectionsWithUnresolved}/${sectionCodes.length}`);
+    console.log('');
+
+    const worstSections = [...typeReport.sections]
+      .filter((section) => section.totals.unresolvedLeafPaths > 0 || section.totals.fallbackLeafPaths > 0)
+      .sort((a, b) => {
+        if (b.totals.unresolvedLeafPaths !== a.totals.unresolvedLeafPaths) {
+          return b.totals.unresolvedLeafPaths - a.totals.unresolvedLeafPaths;
+        }
+        return b.totals.fallbackLeafPaths - a.totals.fallbackLeafPaths;
+      })
+      .slice(0, 15);
+
+    for (const section of worstSections) {
+      console.log(
+        `  ${section.sectionCode} — ${section.title} ` +
+        `(exact ${section.totals.exactLeafPaths}/${section.totals.totalLeafPaths}, ` +
+        `fallback ${section.totals.fallbackLeafPaths}, unresolved ${section.totals.unresolvedLeafPaths})`,
+      );
+      for (const leaf of section.unresolvedLeaves.slice(0, 5)) {
+        console.log(`    missing: ${leaf.path}: ${leaf.text.substring(0, 70)}`);
+      }
+      if (section.unresolvedLeaves.length > 5) {
+        console.log(`    ... and ${section.unresolvedLeaves.length - 5} more unresolved leaves`);
+      }
+      for (const leaf of section.fallbackLeaves.slice(0, Math.max(0, 3 - Math.min(3, section.unresolvedLeaves.length)))) {
+        console.log(`    fallback: ${leaf.path}: ${leaf.text.substring(0, 70)} (${leaf.fallbackPaths.join(', ')})`);
+      }
     }
+
+    if (worstSections.length > 0) console.log('');
   }
 
-  console.log(`Total outline paths: ${totalPaths}`);
-  console.log(`Covered: ${totalPaths - totalUncovered} (${Math.round((totalPaths - totalUncovered) / totalPaths * 100)}%)`);
-  console.log(`Uncovered: ${totalUncovered} (${Math.round(totalUncovered / totalPaths * 100)}%)`);
-  console.log(`Sections with gaps: ${gaps.length}/${codes.length}\n`);
+  writeJsonReport(reportPath, report);
+  console.log(`Coverage report written to ${path.relative(ROOT, reportPath)}`);
+}
 
-  gaps.sort((a, b) => b.uncovered - a.uncovered);
+async function runGapFillMode() {
+  const type = normalizeType(typeFlag);
+  const catalog = type === 'vsi' ? loadVsiCatalog() : loadWikiCatalog();
+  const allItems = buildCatalogItems(catalog);
+  const sectionCodes = sectionFlag
+    ? [normalizeSectionStem(sectionFlag)]
+    : getAllSectionCodes().slice(0, limitFlag);
+  const plan = {
+    generatedAt: new Date().toISOString(),
+    type: typeSlug(type),
+    fallbackPolicy: 'allow broader ancestor path only when no defensible exact leaf mapping exists',
+    sections: [],
+    totals: {
+      totalLeafPaths: 0,
+      exactLeafPaths: 0,
+      fallbackLeafPaths: 0,
+      unresolvedLeafPaths: 0,
+      unresolvedTargets: 0,
+      fallbackTargets: 0,
+    },
+  };
 
-  for (const g of gaps) {
-    console.log(`${g.code} — ${g.title} (${g.uncovered}/${g.total} uncovered)`);
-    for (const p of g.paths.slice(0, 10)) {
-      console.log(`  ${p.path}: ${p.text.substring(0, 70)}`);
+  for (const code of sectionCodes) {
+    const audit = buildLeafCoverageAudit(code, type);
+    if (!audit) continue;
+
+    plan.totals.totalLeafPaths += audit.totalLeafPaths;
+    plan.totals.exactLeafPaths += audit.exactLeafPaths;
+    plan.totals.fallbackLeafPaths += audit.fallbackLeafPaths;
+    plan.totals.unresolvedLeafPaths += audit.unresolvedLeafPaths;
+
+    const existingData = loadExistingMappings(code, type);
+    const existingIds = new Set((existingData?.mappings || []).map((mapping) => getMappingId(mapping, type)));
+    const targets = audit.leafCoverage
+      .filter((leaf) => leaf.status === 'uncovered' || leaf.status === 'fallback')
+      .map((leaf) => ({
+        priority: leaf.status === 'uncovered' ? 'required' : 'fallback',
+        path: leaf.path,
+        text: leaf.text,
+        fallbackPaths: leaf.fallbackPaths,
+        trail: leaf.trail.map((step) => ({ level: step.level, text: step.text })),
+        candidates: rankCandidatesForLeaf(audit, leaf, allItems, existingIds),
+      }));
+
+    plan.totals.unresolvedTargets += targets.filter((target) => target.priority === 'required').length;
+    plan.totals.fallbackTargets += targets.filter((target) => target.priority === 'fallback').length;
+
+    plan.sections.push({
+      sectionStem: audit.sectionStem,
+      sectionCode: audit.sectionCode,
+      title: audit.title,
+      totals: {
+        totalLeafPaths: audit.totalLeafPaths,
+        exactLeafPaths: audit.exactLeafPaths,
+        fallbackLeafPaths: audit.fallbackLeafPaths,
+        unresolvedLeafPaths: audit.unresolvedLeafPaths,
+      },
+      targets,
+    });
+  }
+
+  const reportPath = resolveReportPath(`gap-fill-${typeSlug(type)}.json`);
+  writeJsonReport(reportPath, plan);
+
+  console.log(`=== Gap-Fill Plan (${typeLabel(type)}) ===\n`);
+  console.log(`Catalog items with summaryAI: ${allItems.length}`);
+  console.log(`Leaf paths audited: ${plan.totals.totalLeafPaths}`);
+  console.log(`Exact leaf coverage: ${plan.totals.exactLeafPaths}`);
+  console.log(`Fallback-only leaves: ${plan.totals.fallbackLeafPaths}`);
+  console.log(`Unresolved leaves: ${plan.totals.unresolvedLeafPaths}`);
+  console.log(`Targets queued: ${plan.totals.unresolvedTargets} required, ${plan.totals.fallbackTargets} fallback`);
+  console.log('');
+
+  for (const section of plan.sections.filter((entry) => entry.targets.length > 0).slice(0, 15)) {
+    console.log(
+      `${section.sectionCode} — ${section.title} ` +
+      `(${section.targets.filter((target) => target.priority === 'required').length} required, ` +
+      `${section.targets.filter((target) => target.priority === 'fallback').length} fallback)`,
+    );
+    for (const target of section.targets.slice(0, 4)) {
+      const candidateSummary = target.candidates
+        .slice(0, 3)
+        .map((candidate) => `${candidate.title}${candidate.author ? ` — ${candidate.author}` : ''} [${candidate.score}]${candidate.alreadyMappedToSection ? ' existing' : ''}`)
+        .join('; ');
+      console.log(`  ${target.priority}: ${target.path}: ${target.text.substring(0, 70)}`);
+      if (target.fallbackPaths.length > 0) {
+        console.log(`    fallback paths: ${target.fallbackPaths.join(', ')}`);
+      }
+      console.log(`    candidates: ${candidateSummary || 'none'}`);
     }
-    if (g.paths.length > 10) console.log(`  ... and ${g.paths.length - 10} more`);
+    if (section.targets.length > 4) {
+      console.log(`    ... and ${section.targets.length - 4} more targets`);
+    }
     console.log('');
   }
+
+  console.log(`Gap-fill plan written to ${path.relative(ROOT, reportPath)}`);
 }
 
 // --- Validation ---
@@ -842,20 +1252,10 @@ function runValidation() {
   let invalidPaths = 0;
 
   for (const code of sectionCodes) {
-    const validPaths = new Set();
-    function collectPaths(items, prefix = []) {
-      for (const item of items) {
-        const p = [...prefix, item.level].join('.');
-        validPaths.add(p);
-        if (item.children?.length > 0) collectPaths(item.children, [...prefix, item.level]);
-      }
-    }
-    const sectionData = JSON.parse(fs.readFileSync(`src/content/sections/${code}.json`, 'utf8'));
-    collectPaths(sectionData.outline);
+    const validPaths = new Set(loadSectionOutlineNodes(code).map((node) => node.path));
 
     for (const type of ['vsi', 'wiki']) {
-      const dir = type === 'vsi' ? 'src/content/vsi-mappings' : 'src/content/wiki-mappings';
-      const filePath = `${dir}/${code}.json`;
+      const filePath = mappingFilePath(code, type);
       if (!fs.existsSync(filePath)) continue;
 
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -895,6 +1295,11 @@ async function main() {
     return;
   }
 
+  if (modeFlag === 'gap-fill') {
+    await runGapFillMode();
+    return;
+  }
+
   const taxonomy = loadTaxonomy();
   const client = dryRunFlag ? null : await getAnthropicClient();
 
@@ -913,7 +1318,7 @@ async function runRemapMode(client, taxonomy) {
   const vsiCatalog = (typeFlag === 'vsi' || typeFlag === 'both') ? loadVsiCatalog() : null;
   const wikiCatalog = (typeFlag === 'wikipedia' || typeFlag === 'both') ? loadWikiCatalog() : null;
 
-  let sectionCodes = sectionFlag ? [sectionFlag] : getAllSectionCodes().slice(0, limitFlag);
+  const sectionCodes = sectionFlag ? [normalizeSectionStem(sectionFlag)] : getAllSectionCodes().slice(0, limitFlag);
 
   if (vsiCatalog) {
     const withSummary = [...vsiCatalog.values()].filter((v) => v.summaryAI).length;
@@ -924,9 +1329,7 @@ async function runRemapMode(client, taxonomy) {
     console.log(`Wikipedia catalog: ${withSummary}/${wikiCatalog.size} have summaryAI`);
   }
 
-  const types = [];
-  if (typeFlag === 'vsi' || typeFlag === 'both') types.push('vsi');
-  if (typeFlag === 'wikipedia' || typeFlag === 'both') types.push('wiki');
+  const types = getRequestedTypes();
 
   console.log(`\nMode: remap, Sections: ${sectionCodes.length}, Types: ${types.join(', ')}`);
   console.log(`Model: ${MODEL}, Concurrency: ${CONCURRENCY}`);
@@ -964,14 +1367,15 @@ async function runRemapMode(client, taxonomy) {
 
   // Post-run coverage check
   if (!dryRunFlag && totalProcessed > 0) {
-    console.log('=== Post-run coverage check ===');
-    let gapsBefore = 0;
-    let gapsAfter = 0;
-    for (const code of sectionCodes) {
-      const { uncovered } = findUncoveredPaths(code);
-      gapsAfter += uncovered.length;
+    console.log('=== Post-run exact leaf coverage ===');
+    const report = buildCoverageReport(sectionCodes, types);
+    for (const type of types) {
+      const totals = report.types[typeSlug(type)].totals;
+      console.log(
+        `  ${typeLabel(type)}: exact ${totals.exactLeafPaths}/${totals.totalLeafPaths} ` +
+        `(${totals.exactCoveragePct}%), fallback ${totals.fallbackLeafPaths}, unresolved ${totals.unresolvedLeafPaths}`,
+      );
     }
-    console.log(`Remaining uncovered paths in processed sections: ${gapsAfter}`);
   }
 
   console.log(`Done. Processed ${totalProcessed} mappings, skipped ${totalSkipped} sections.`);
@@ -1031,16 +1435,9 @@ async function runAssignMode(client, taxonomy) {
   }
 
   // Pre-compute all items as array with tokens for ranking
-  const allItems = [...catalog.entries()].map(([id, entry]) => ({
-    id,
-    title: entry.title,
-    author: entry.author,
-    summaryAI: entry.summaryAI,
-    keywords: entry.keywords,
-    subject: entry.subject,
-  }));
+  const allItems = buildCatalogItems(catalog);
 
-  let sectionCodes = sectionFlag ? [sectionFlag] : getAllSectionCodes().slice(0, limitFlag);
+  const sectionCodes = sectionFlag ? [normalizeSectionStem(sectionFlag)] : getAllSectionCodes().slice(0, limitFlag);
 
   console.log(`\nMode: assign, Sections: ${sectionCodes.length}, Type: ${type}`);
   console.log(`Model: ${MODEL}, Concurrency: ${CONCURRENCY}`);
@@ -1084,17 +1481,12 @@ async function runAssignMode(client, taxonomy) {
 
   // Post-run coverage check
   if (!dryRunFlag && totalConfirmed > 0) {
-    console.log('=== Post-assign coverage check ===');
-    let totalPaths = 0;
-    let uncoveredPaths = 0;
-    for (const code of sectionCodes) {
-      const { total, uncovered } = findUncoveredPaths(code);
-      totalPaths += total;
-      uncoveredPaths += uncovered.length;
-    }
-    console.log(`Outline paths in processed sections: ${totalPaths}`);
-    console.log(`Covered: ${totalPaths - uncoveredPaths} (${Math.round((totalPaths - uncoveredPaths) / totalPaths * 100)}%)`);
-    console.log(`Uncovered: ${uncoveredPaths} (${Math.round(uncoveredPaths / totalPaths * 100)}%)`);
+    console.log('=== Post-assign exact leaf coverage ===');
+    const totals = buildCoverageReport(sectionCodes, [type]).types[typeSlug(type)].totals;
+    console.log(`Leaf paths in processed sections: ${totals.totalLeafPaths}`);
+    console.log(`Exact: ${totals.exactLeafPaths} (${totals.exactCoveragePct}%)`);
+    console.log(`Fallback only: ${totals.fallbackLeafPaths} (${totals.fallbackCoveragePct}%)`);
+    console.log(`Unresolved: ${totals.unresolvedLeafPaths} (${totals.unresolvedCoveragePct}%)`);
   }
 
   console.log(`\nDone. Assigned ${totalConfirmed} items across ${sectionCodes.length - totalSkipped} sections (${totalCandidates} candidates evaluated).`);

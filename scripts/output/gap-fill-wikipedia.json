@@ -1,0 +1,1329 @@
+{
+  "generatedAt": "2026-03-22T05:12:43.022Z",
+  "type": "wikipedia",
+  "fallbackPolicy": "allow broader ancestor path only when no defensible exact leaf mapping exists",
+  "sections": [
+    {
+      "sectionStem": "10-31",
+      "sectionCode": "10/31",
+      "title": "History and Philosophy of Science",
+      "totals": {
+        "totalLeafPaths": 36,
+        "exactLeafPaths": 23,
+        "fallbackLeafPaths": 13,
+        "unresolvedLeafPaths": 0
+      },
+      "targets": [
+        {
+          "priority": "fallback",
+          "path": "A.2.a.i",
+          "text": "Protoscience in Greece before the age of Pericles: empirical versus religious or mythological explanations of natural phenomena",
+          "fallbackPaths": [
+            "A.2.a",
+            "A.2",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "2",
+              "text": "Science in ancient and medieval Western civilization"
+            },
+            {
+              "level": "a",
+              "text": "Science in Greek civilization"
+            },
+            {
+              "level": "i",
+              "text": "Protoscience in Greece before the age of Pericles: empirical versus religious or mythological explanations of natural phenomena"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 11,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 11,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ibn Khaldun",
+              "title": "Ibn Khaldun",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of medicine",
+              "title": "History of medicine",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.2.a.ii",
+          "text": "Development of scientific attitudes: the beginning of disciplined observation, inference, definition, and classification; the Platonic versus the Aristotelian view of nature",
+          "fallbackPaths": [
+            "A.2.a",
+            "A.2",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "2",
+              "text": "Science in ancient and medieval Western civilization"
+            },
+            {
+              "level": "a",
+              "text": "Science in Greek civilization"
+            },
+            {
+              "level": "ii",
+              "text": "Development of scientific attitudes: the beginning of disciplined observation, inference, definition, and classification; the Platonic versus the Aristotelian view of nature"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 11,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of medicine",
+              "title": "History of medicine",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific method",
+              "title": "Scientific method",
+              "score": 8,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.2.a.iii",
+          "text": "Science during the Hellenistic Age: the emergence of Alexandria as the foremost centre of scientific research",
+          "fallbackPaths": [
+            "A.2.a",
+            "A.2",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "2",
+              "text": "Science in ancient and medieval Western civilization"
+            },
+            {
+              "level": "a",
+              "text": "Science in Greek civilization"
+            },
+            {
+              "level": "iii",
+              "text": "Science during the Hellenistic Age: the emergence of Alexandria as the foremost centre of scientific research"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 11,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Western philosophy",
+              "title": "Western philosophy",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Human history",
+              "title": "Human history",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.2.b",
+          "text": "Science in Rome: the contrast between Roman success in law and technology and Roman failure in science",
+          "fallbackPaths": [
+            "A.2",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "2",
+              "text": "Science in ancient and medieval Western civilization"
+            },
+            {
+              "level": "b",
+              "text": "Science in Rome: the contrast between Roman success in law and technology and Roman failure in science"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of medicine",
+              "title": "History of medicine",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Antoine Lavoisier",
+              "title": "Antoine Lavoisier",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 6,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ibn Khaldun",
+              "title": "Ibn Khaldun",
+              "score": 6,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.2.c",
+          "text": "Medieval science",
+          "fallbackPaths": [
+            "A.2",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "2",
+              "text": "Science in ancient and medieval Western civilization"
+            },
+            {
+              "level": "c",
+              "text": "Medieval science"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 6,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 6,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 6,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Western philosophy",
+              "title": "Western philosophy",
+              "score": 6,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ibn Khaldun",
+              "title": "Ibn Khaldun",
+              "score": 5,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 5,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 5,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of medicine",
+              "title": "History of medicine",
+              "score": 5,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 5,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 5,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.4.a.i",
+          "text": "The state of science in Europe in the early 15th century",
+          "fallbackPaths": [
+            "A.4.a",
+            "A.4",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "4",
+              "text": "European science in the early modem period"
+            },
+            {
+              "level": "a",
+              "text": "The rebirth of science in the Renaissance"
+            },
+            {
+              "level": "i",
+              "text": "The state of science in Europe in the early 15th century"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 12,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Early modern period",
+              "title": "Early modern period",
+              "score": 11,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Discovery",
+              "title": "Age of Discovery",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Ancient Greece",
+              "title": "Ancient Greece",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Aristotle",
+              "title": "Aristotle",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.4.a.ii",
+          "text": "The influence of advances in printing, mining, metallurgy, and other areas of technology: the demands placed upon science by increases in trade and exploration",
+          "fallbackPaths": [
+            "A.4.a",
+            "A.4",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "4",
+              "text": "European science in the early modem period"
+            },
+            {
+              "level": "a",
+              "text": "The rebirth of science in the Renaissance"
+            },
+            {
+              "level": "ii",
+              "text": "The influence of advances in printing, mining, metallurgy, and other areas of technology: the demands placed upon science by increases in trade and exploration"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Discovery",
+              "title": "Age of Discovery",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Early modern period",
+              "title": "Early modern period",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Alan Turing",
+              "title": "Alan Turing",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.4.a.iii",
+          "text": "The coexistence of new scientific discoveries and old philosophical views",
+          "fallbackPaths": [
+            "A.4.a",
+            "A.4",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "4",
+              "text": "European science in the early modem period"
+            },
+            {
+              "level": "a",
+              "text": "The rebirth of science in the Renaissance"
+            },
+            {
+              "level": "iii",
+              "text": "The coexistence of new scientific discoveries and old philosophical views"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Early modern period",
+              "title": "Early modern period",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Human history",
+              "title": "Human history",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Galileo Galilei",
+              "title": "Galileo Galilei",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.4.b.i",
+          "text": "The radical reformulation of the objects, methods, and functions of natural knowledge: the work of Bacon, Descartes, and Galileo [see also 10/42.A.3.]",
+          "fallbackPaths": [
+            "A.4.b",
+            "A.4",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "4",
+              "text": "European science in the early modem period"
+            },
+            {
+              "level": "b",
+              "text": "The revolution in natural philosophy"
+            },
+            {
+              "level": "i",
+              "text": "The radical reformulation of the objects, methods, and functions of natural knowledge: the work of Bacon, Descartes, and Galileo [see also 10/42.A.3.]"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 12,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "René Descartes",
+              "title": "René Descartes",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Galileo Galilei",
+              "title": "Galileo Galilei",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Antoine Lavoisier",
+              "title": "Antoine Lavoisier",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "A.4.b.ii",
+          "text": "Results of the new philosophy: establishment of scientific societies, progress in particular fields of science",
+          "fallbackPaths": [
+            "A.4.b",
+            "A.4",
+            "A"
+          ],
+          "trail": [
+            {
+              "level": "A",
+              "text": "History of science"
+            },
+            {
+              "level": "4",
+              "text": "European science in the early modem period"
+            },
+            {
+              "level": "b",
+              "text": "The revolution in natural philosophy"
+            },
+            {
+              "level": "ii",
+              "text": "Results of the new philosophy: establishment of scientific societies, progress in particular fields of science"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Galileo Galilei",
+              "title": "Galileo Galilei",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Islamic Golden Age",
+              "title": "Islamic Golden Age",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Early modern period",
+              "title": "Early modern period",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "B.3.d",
+          "text": "Conceptual change and the development of science: historical problems concerning the changing theoretical organization of science",
+          "fallbackPaths": [
+            "B.3",
+            "B"
+          ],
+          "trail": [
+            {
+              "level": "B",
+              "text": "Philosophy of science [see also 10/52.B.2.]"
+            },
+            {
+              "level": "3",
+              "text": "Elements of the scientific enterprise"
+            },
+            {
+              "level": "d",
+              "text": "Conceptual change and the development of science: historical problems concerning the changing theoretical organization of science"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Science",
+              "title": "Science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Galileo Galilei",
+              "title": "Galileo Galilei",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Leonardo da Vinci",
+              "title": "Leonardo da Vinci",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Isaac Newton",
+              "title": "Isaac Newton",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Antoine Lavoisier",
+              "title": "Antoine Lavoisier",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of technology",
+              "title": "History of technology",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific method",
+              "title": "Scientific method",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "B.4.c",
+          "text": "Unification of the theories and concepts of separate sciences: attempts to construct an axiomatic system for all of natural science, the reductionist problem of achieving a consistent conceptual basis for two or more sciences",
+          "fallbackPaths": [
+            "B.4",
+            "B"
+          ],
+          "trail": [
+            {
+              "level": "B",
+              "text": "Philosophy of science [see also 10/52.B.2.]"
+            },
+            {
+              "level": "4",
+              "text": "Movements of scientific thought: the basic procedures of intellectual development in science"
+            },
+            {
+              "level": "c",
+              "text": "Unification of the theories and concepts of separate sciences: attempts to construct an axiomatic system for all of natural science, the reductionist problem of achieving a consistent conceptual basis for two or more sciences"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Isaac Newton",
+              "title": "Isaac Newton",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Galileo Galilei",
+              "title": "Galileo Galilei",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Antoine Lavoisier",
+              "title": "Antoine Lavoisier",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 9,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Physics",
+              "title": "Physics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Kurt Gödel",
+              "title": "Kurt Gödel",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 8,
+              "alreadyMappedToSection": true
+            }
+          ]
+        },
+        {
+          "priority": "fallback",
+          "path": "B.5.b",
+          "text": "The relationship between philosophical analysis and scientific practice: the application of different philosophical doctrines and approaches to different sciences",
+          "fallbackPaths": [
+            "B.5",
+            "B"
+          ],
+          "trail": [
+            {
+              "level": "B",
+              "text": "Philosophy of science [see also 10/52.B.2.]"
+            },
+            {
+              "level": "5",
+              "text": "The philosophical status of scientific theory"
+            },
+            {
+              "level": "b",
+              "text": "The relationship between philosophical analysis and scientific practice: the application of different philosophical doctrines and approaches to different sciences"
+            }
+          ],
+          "candidates": [
+            {
+              "id": "Nicolaus Copernicus",
+              "title": "Nicolaus Copernicus",
+              "score": 10,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Isaac Newton",
+              "title": "Isaac Newton",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Antoine Lavoisier",
+              "title": "Antoine Lavoisier",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of science",
+              "title": "History of science",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of mathematics",
+              "title": "History of mathematics",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "History of medicine",
+              "title": "History of medicine",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Age of Enlightenment",
+              "title": "Age of Enlightenment",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Sociology",
+              "title": "Sociology",
+              "score": 8,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Avicenna",
+              "title": "Avicenna",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Kurt Gödel",
+              "title": "Kurt Gödel",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Renaissance",
+              "title": "Renaissance",
+              "score": 7,
+              "alreadyMappedToSection": true
+            },
+            {
+              "id": "Scientific Revolution",
+              "title": "Scientific Revolution",
+              "score": 7,
+              "alreadyMappedToSection": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "totalLeafPaths": 36,
+    "exactLeafPaths": 23,
+    "fallbackLeafPaths": 13,
+    "unresolvedLeafPaths": 0,
+    "unresolvedTargets": 0,
+    "fallbackTargets": 13
+  }
+}
