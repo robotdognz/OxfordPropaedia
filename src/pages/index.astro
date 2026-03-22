@@ -235,10 +235,90 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-2 py-14 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-6xl px-2 pt-12 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-6 sm:py-7">
+        <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+          Coverage Scope
+        </p>
+        <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+          Explore Knowledge At Three Levels
+        </h2>
+        <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+          Start with the whole outline if you want the broadest possible spread, use the circle when you
+          want to focus that coverage through one field or the overlap between two, and move into divisions
+          and sections when you want precision.
+        </p>
+
+        <div class="mt-6 grid gap-4 lg:grid-cols-3">
+          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+              1. Whole outline
+            </p>
+            <h3 class="mt-2 font-serif text-xl text-slate-900">Maximise overall knowledge</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Use the global reading paths to cover as much of the outline as possible at the Part,
+              Division, Section, and Subsection levels.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <a
+                href={`${base}/vsi`}
+                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+              >
+                Oxford VSI
+              </a>
+              <a
+                href={`${base}/wikipedia`}
+                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+              >
+                Wikipedia
+              </a>
+              <a
+                href={`${base}/macropaedia`}
+                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+              >
+                Macropaedia
+              </a>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+              2. Selected field or fields
+            </p>
+            <h3 class="mt-2 font-serif text-xl text-slate-900">Focus coverage through the circle</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Keep one Part at the top to maximise coverage from that field outward, or move another Part
+              into the centre to maximise coverage through the overlap between two fields.
+            </p>
+            <a
+              href="#circle-of-learning"
+              class="mt-4 inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+            >
+              Jump to the circle
+            </a>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+              3. Specific topic
+            </p>
+            <h3 class="mt-2 font-serif text-xl text-slate-900">Use the outline for precision</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              When you want exact topics rather than field-level guidance, open a Division or Section and
+              let the outline structure narrow the recommendations for you.
+            </p>
+            <p class="mt-4 text-xs leading-5 text-slate-500">
+              The circle and the sidebar both lead into this deeper level of navigation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="circle-of-learning" class="mx-auto max-w-6xl px-2 py-14 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-          Navigation
+          Selected Field Or Fields
         </p>
         <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
           The Circle of Learning

@@ -18,3 +18,5 @@ Propaedia TODO:
     - How hard would it be to do a more contextual search that can figure out what section you might be looking for? Keywords are quite limited feeling, especially in the context of exploring all mapped human knwoledge
 
     - Rename repo to DigitalPropaedia (or something better)
+
+    - Add a subtle "Drag a part here to brige these feilds" type text in the middle when no part in center
