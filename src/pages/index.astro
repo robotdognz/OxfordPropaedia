@@ -230,7 +230,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           Outline of Knowledge
         </h1>
         <p class="mt-3 text-sm font-serif text-slate-500 sm:text-base">
-          A modern implementation of Mortimer J. Adler's autodidactic masterpiece
+          Explore the Propaedia as an interactive reading guide for people who want to maximise their overall knowledge.
         </p>
       </div>
     </section>
@@ -244,13 +244,10 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           The Circle of Learning
         </h2>
         <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-          A visual way to explore the ten parts of the Outline of Knowledge.
-          Use the arrows to rotate the ring - the part at the top is your current focus,
-          with its divisions and reading recommendations listed below.
-          Move a part to the centre to see how it connects to others through
-          shared readings. Drag the ring to rotate freely, or pull any part inward.
-          Adler&apos;s essay below explains the thinking behind this arrangement.
-          You can also browse the full outline from the sidebar on any page.
+          Use the circle to move across the ten parts of the outline and surface readings that cover the
+          most new ground from where you start. Keep one part at the top to explore it on its own, or
+          move another into the centre to compare two fields. Open a division to go deeper into the
+          outline, and use the essay below if you want the background behind Adler&apos;s design.
         </p>
       </div>
 
@@ -277,8 +274,8 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                 The Circle of Learning
               </h3>
               <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-                The conceptual explanation of why the ten parts can be rotated or re-centred
-                to assist with navigating the Propaedia contents.
+                Adler&apos;s explanation of why the ten parts work better as a circle than as a fixed list,
+                and how that idea changes the way you move through the outline.
               </p>
               {circleEssay?.data.author && (
                 <p class="mt-2 text-sm text-slate-500">by {circleEssay.data.author}</p>

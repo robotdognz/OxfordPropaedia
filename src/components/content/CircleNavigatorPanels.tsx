@@ -633,7 +633,7 @@ export function CenteredCircleNavigatorPanel({
       </p>
       <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
         Centred on {centerPart.title}, with {topPart.title} at the top. Start here if you want readings that
-        touch both parts but open out as widely as possible across the whole outline.
+        link both parts while still taking you into the widest new territory across the outline.
       </p>
 
       <div class="mt-3 border-t border-slate-200 pt-3">
@@ -683,8 +683,8 @@ export function CenteredCircleNavigatorPanel({
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
           Every item below is linked to both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}.
-          {' '}Unread items are ranked by how much new section coverage they add across the whole outline from your
-          current checklist. Items that add no new section coverage are left out of this list.
+          {' '}Unread items are ordered by how much new ground they still cover across the outline based on what
+          you&apos;ve already checked off. Items that would only repeat covered ground are left out.
         </p>
 
         {recommendationsError ? (
@@ -836,8 +836,8 @@ export function TopPartCircleNavigatorPanel({
         Circle of learning
       </p>
       <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        {topPart.title} is at the top. Start here if you want readings that touch this part but open out as
-        widely as possible across the whole outline.
+        {topPart.title} is at the top. Start here if you want readings linked to this part that still carry
+        you into the widest new territory across the outline.
       </p>
 
       <div class="mt-3 border-t border-slate-200 pt-3">
@@ -879,9 +879,9 @@ export function TopPartCircleNavigatorPanel({
           Recommended Readings
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          Every item below is linked to {topPart.partName}. Unread items are ranked by how much new section
-          coverage they add across the whole outline from your current checklist. Items that add no new
-          section coverage are left out of this list.
+          Every item below is linked to {topPart.partName}. Unread items are ordered by how much new ground
+          they still cover across the outline based on what you&apos;ve already checked off. Items that would
+          only repeat covered ground are left out.
         </p>
 
         {recommendationsError ? (
