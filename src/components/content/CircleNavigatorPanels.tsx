@@ -120,6 +120,15 @@ function pluralize(count: number, singular: string, plural = `${singular}s`): st
   return count === 1 ? singular : plural;
 }
 
+function renderScopeBadge(label: string, description: string) {
+  return (
+    <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-600">
+      <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">{label}</p>
+      <p class="mt-1 leading-5">{description}</p>
+    </div>
+  );
+}
+
 function countPartsSpanned(sections: ReadingSectionSummary[]): number {
   return new Set(sections.map((section) => section.partNumber)).size;
 }
@@ -223,8 +232,8 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
     const linkedPartCount = countPartsSpanned(item.entry.sections);
     const sectionLinkSections = item.newSectionCount > 0 ? item.newSections : sectionsInPart;
     const sectionLinkLabel = item.newSectionCount > 0
-      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'section')}`
-      : `Show the ${sectionsInPart.length} ${pluralize(sectionsInPart.length, 'linked section')} in ${topPart.partName}`;
+      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'Section')}`
+      : `Show the ${sectionsInPart.length} ${pluralize(sectionsInPart.length, 'linked Section')} in ${topPart.partName}`;
 
     return (
       <li
@@ -244,6 +253,18 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
             {section.renderMeta ? (
               <div class="mt-1 text-sm text-slate-600">{section.renderMeta(item.entry)}</div>
             ) : null}
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Why this next:{' '}
+              {item.isCompleted ? (
+                <>you already used it to reach this anchored Part and its linked Sections.</>
+              ) : (
+                <>
+                  it opens {item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')},
+                  {' '}covers {sectionsInPart.length} {pluralize(sectionsInPart.length, 'Section')} in {topPart.partName},
+                  {' '}and spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')} overall.
+                </>
+              )}
+            </p>
           </div>
           <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-slate-500">
             <input
@@ -263,17 +284,17 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
             </span>
           ) : (
             <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'section')}
+              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')}
             </span>
           )}
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'section')}
+            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'Section')}
           </span>
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
             {sectionsInPart.length} in {topPart.partName}
           </span>
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            Spans {linkedPartCount} {pluralize(linkedPartCount, 'part')}
+            Spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')}
           </span>
         </div>
 
@@ -299,10 +320,10 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
       <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
           {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to {topPart.title}.
-          {' '}Showing the {section.unreadCount} that still add new section coverage across the whole outline.
+          {' '}Showing the {section.unreadCount} that still add new Section coverage across the whole outline.
           {' '}{section.remainingSections > 0
-            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'section')} remain uncovered from this anchored list.`
-            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped section this anchored list can reach.`}
+            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'Section')} remain uncovered from this anchored list.`
+            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped Section this anchored list can reach.`}
         </p>
         <a
           href={section.browseHref}
@@ -323,8 +344,8 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
           {section.totalUnreadLinkedCount === 0
             ? `Every linked ${section.itemSingular} here is already marked done.`
             : section.overlapOnlyUnreadCount > 0
-              ? `No unread linked ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new section coverage right now.`
-              : `No additional linked ${pluralize(0, section.itemSingular)} are available right now.`}
+              ? `No unread linked ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new Section coverage right now. Open a Division or Section to narrow the topic further.`
+              : `No additional linked ${pluralize(0, section.itemSingular)} are available right now. Open a Division or Section to keep narrowing the topic.`}
         </div>
       )}
 
@@ -377,8 +398,8 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
     );
     const sectionLinkSections = item.newSectionCount > 0 ? item.newSections : selectedPartSections;
     const sectionLinkLabel = item.newSectionCount > 0
-      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'section')}`
-      : `Show the ${selectedPartSections.length} ${pluralize(selectedPartSections.length, 'linked section')} in ${centerPart.partName} and ${topPart.partName}`;
+      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'Section')}`
+      : `Show the ${selectedPartSections.length} ${pluralize(selectedPartSections.length, 'linked Section')} in ${centerPart.partName} and ${topPart.partName}`;
 
     return (
       <li
@@ -398,6 +419,18 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
             {section.renderMeta ? (
               <div class="mt-1 text-sm text-slate-600">{section.renderMeta(item.entry)}</div>
             ) : null}
+            <p class="mt-2 text-sm leading-6 text-slate-600">
+              Why this next:{' '}
+              {item.isCompleted ? (
+                <>you already used it to bridge these two Parts and the Sections they share.</>
+              ) : (
+                <>
+                  it links both selected Parts, opens {item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')},
+                  {' '}covers {centerSections.length} in {centerPart.partName} and {topSections.length} in {topPart.partName},
+                  {' '}and spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')} overall.
+                </>
+              )}
+            </p>
           </div>
           <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-slate-500">
             <input
@@ -417,11 +450,11 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
             </span>
           ) : (
             <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'section')}
+              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')}
             </span>
           )}
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'section')}
+            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'Section')}
           </span>
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
             {centerSections.length} in {centerPart.partName}
@@ -430,7 +463,7 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
             {topSections.length} in {topPart.partName}
           </span>
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            Spans {linkedPartCount} {pluralize(linkedPartCount, 'part')}
+            Spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')}
           </span>
         </div>
 
@@ -456,10 +489,10 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
       <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
           {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to both {centerPart.title} and {topPart.title}.
-          {' '}Showing the {section.unreadCount} that still add new section coverage across the whole outline.
+          {' '}Showing the {section.unreadCount} that still add new Section coverage across the whole outline.
           {' '}{section.remainingSections > 0
-            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'section')} remain uncovered from this shared pool.`
-            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped section this shared pool can reach.`}
+            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'Section')} remain uncovered from this shared pool.`
+            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped Section this shared pool can reach.`}
         </p>
         <a
           href={section.browseHref}
@@ -480,8 +513,8 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
           {section.totalUnreadLinkedCount === 0
             ? `Every shared ${section.itemSingular} here is already marked done.`
             : section.overlapOnlyUnreadCount > 0
-              ? `No unread shared ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new section coverage right now.`
-              : `No additional shared ${section.itemSingular} are available right now.`}
+              ? `No unread shared ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new Section coverage right now. Open one of the Connected Sections below to focus the topic further.`
+              : `No additional shared ${section.itemSingular} are available right now. Open one of the Connected Sections below to keep narrowing the topic.`}
         </div>
       )}
 
@@ -633,8 +666,9 @@ export function CenteredCircleNavigatorPanel({
       </p>
       <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
         Centred on {centerPart.title}, with {topPart.title} at the top. Start here if you want readings that
-        link both parts while still taking you into the widest new territory across the outline.
+        link both Parts while still taking you into the widest new territory across the outline.
       </p>
+      {renderScopeBadge('Shared Scope', 'Maximise overall coverage using only readings linked to both selected Parts. The Recommended Readings broaden outward from their overlap, while the Connected Sections show where to narrow into more specific topics.')}
 
       <div class="mt-3 border-t border-slate-200 pt-3">
         <div class="flex flex-wrap gap-2">
@@ -646,11 +680,11 @@ export function CenteredCircleNavigatorPanel({
       {suggestedSections.length > 0 && connectionSummary && (
         <div class="mt-3 border-t border-slate-200 pt-3">
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            Connected sections
+            Connected Sections
           </p>
           <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
             {connectionSummary.isDirect
-              ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${connectionSummary.hasKeyword ? ', supplemented by sections with related subject matter.' : '.'}`
+              ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${connectionSummary.hasKeyword ? ', supplemented by related subject matter.' : '.'}`
               : connectionSummary.hasConnectionData
                 ? `Sections that connect ${centerPart.title} and ${topPart.title} through shared references and related subject matter.`
                 : `Sections with related subject matter across ${centerPart.title} and ${topPart.title}.`}
@@ -684,7 +718,8 @@ export function CenteredCircleNavigatorPanel({
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
           Every item below is linked to both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}.
           {' '}Unread items are ordered by how much new ground they still cover across the outline based on what
-          you&apos;ve already checked off. Items that would only repeat covered ground are left out.
+          you&apos;ve already checked off. Items that would only repeat covered ground are left out. For precise topic work,
+          open one of the Connected Sections above.
         </p>
 
         {recommendationsError ? (
@@ -711,7 +746,7 @@ export function CenteredCircleNavigatorPanel({
           </div>
         ) : (
           <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            No shared mapped readings are currently available for this pair of parts.
+            No shared mapped readings are currently available for this pair of Parts. Open a connected Section to work at a narrower topic level instead.
           </div>
         )}
       </div>
@@ -836,9 +871,10 @@ export function TopPartCircleNavigatorPanel({
         Circle of learning
       </p>
       <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        {topPart.title} is at the top. Start here if you want readings linked to this part that still carry
+        {topPart.title} is at the top. Start here if you want readings linked to this Part that still carry
         you into the widest new territory across the outline.
       </p>
+      {renderScopeBadge('Selected Part Scope', 'Maximise overall coverage using only readings linked to this Part. The Recommended Readings broaden outward from it, while the Divisions show where to narrow into more specific topics.')}
 
       <div class="mt-3 border-t border-slate-200 pt-3">
         {renderEssayButton(topPart)}
@@ -850,8 +886,8 @@ export function TopPartCircleNavigatorPanel({
             Divisions in Selected Part
           </p>
           <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            These {topPart.divisions.length} {pluralize(topPart.divisions.length, 'division')} break {topPart.title}
-            {' '}into its main strands. Open one to move from this broad part-level view into narrower areas of the outline.
+            These {topPart.divisions.length} {pluralize(topPart.divisions.length, 'Division')} break {topPart.title}
+            {' '}into its main strands. Open one to move from this broad Part-level view into narrower areas of the outline.
           </p>
           <ul class="mt-2 space-y-1">
             {topPart.divisions.map((division) => (
@@ -881,7 +917,7 @@ export function TopPartCircleNavigatorPanel({
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
           Every item below is linked to {topPart.partName}. Unread items are ordered by how much new ground
           they still cover across the outline based on what you&apos;ve already checked off. Items that would
-          only repeat covered ground are left out.
+          only repeat covered ground are left out. Open a Division above when you want to move from broad coverage into a more specific topic.
         </p>
 
         {recommendationsError ? (
@@ -906,7 +942,7 @@ export function TopPartCircleNavigatorPanel({
           </div>
         ) : (
           <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            No mapped readings are currently available for this part.
+            No mapped readings are currently available for this Part. Open one of the Divisions above to keep moving through the outline.
           </div>
         )}
       </div>

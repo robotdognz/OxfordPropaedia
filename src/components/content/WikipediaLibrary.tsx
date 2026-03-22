@@ -57,14 +57,14 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     case 'section':
       return 'Sections with at least one checked vital article.';
     case 'subsection':
-      return 'Mapped subsection coverage from outline-path matches in the section mappings.';
+      return 'Mapped Subsection coverage from outline-path matches in the Section mappings.';
     default:
       return '';
   }
 }
 
 function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  const label = coverageLayerLabel(layer, 2, { lowercase: true });
+  const label = coverageLayerLabel(layer, 2);
   if (isComplete) {
     return `You have already covered every mapped ${label} in this tab.`;
   }
@@ -224,7 +224,7 @@ export default function WikipediaLibrary({
         bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
         bestNextHref={bestNextRead ? `${baseUrl}/wikipedia/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount, { lowercase: true })}, ${bestNextRead.sectionCount} total sections.` : undefined}
+        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.` : undefined}
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 

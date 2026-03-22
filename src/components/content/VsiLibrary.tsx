@@ -107,14 +107,14 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     case 'section':
       return 'Sections with at least one VSI covered by your checked titles.';
     case 'subsection':
-      return 'Mapped subsection coverage from outline-path matches, with whole-section fallback where path data is still missing.';
+      return 'Mapped Subsection coverage from outline-path matches, with whole-Section fallback where path data is still missing.';
     default:
       return '';
   }
 }
 
 function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  const label = coverageLayerLabel(layer, 2, { lowercase: true });
+  const label = coverageLayerLabel(layer, 2);
   if (isComplete) {
     return `You have already covered every mapped ${label} in this tab.`;
   }
@@ -230,7 +230,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
         bestNextSubtitle={bestNextRead?.author}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount, { lowercase: true })}, ${bestNextRead.sectionCount} total sections.` : undefined}
+        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.` : undefined}
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
         mobileRingWidth={7}
         desktopRingWidth={9}
@@ -259,7 +259,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">VSI Library</h2>
             <p class="mt-2 text-sm text-gray-600">
-              Search the full mapped VSI list and sort it by coverage across parts, divisions, sections, or subsections.
+              Search the full mapped VSI list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -356,7 +356,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
 
                     <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
                       <span class="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-700">
-                        Appears in {entry.sectionCount} sections
+                        Appears in {entry.sectionCount} Sections
                       </span>
                       {entry.subject && (
                         <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">{entry.subject}</span>
@@ -366,7 +366,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
                     <ReadingSectionLinks
                       sections={entry.sections}
                       baseUrl={baseUrl}
-                      label={`Show all ${entry.sectionCount} sections`}
+                      label={`Show all ${entry.sectionCount} Sections`}
                     />
                   </article>
                 );

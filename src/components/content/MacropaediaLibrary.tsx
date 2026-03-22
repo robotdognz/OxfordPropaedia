@@ -77,7 +77,7 @@ function activeCoverageDescription(layer: CoverageLayer): string {
 }
 
 function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  const label = coverageLayerLabel(layer, 2, { lowercase: true });
+  const label = coverageLayerLabel(layer, 2);
   if (isComplete) {
     return `You have already covered every mapped ${label} in this tab.`;
   }
@@ -190,7 +190,7 @@ export default function MacropaediaLibrary({
         bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
         bestNextHref={bestNextArticle ? `${baseUrl}/macropaedia/${slugify(bestNextArticle.title)}` : undefined}
         bestNextTitle={bestNextArticle?.title}
-        bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount, { lowercase: true })}, ${bestNextArticle.sectionCount} total sections.` : undefined}
+        bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount)}, ${bestNextArticle.sectionCount} total Sections.` : undefined}
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 
@@ -216,7 +216,7 @@ export default function MacropaediaLibrary({
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">Macropaedia Article List</h2>
             <p class="mt-2 text-sm text-gray-600">
-              Search the full historical Macropaedia list and sort it by coverage across parts, divisions, or sections.
+              Search the full historical Macropaedia list and sort it by coverage across Parts, Divisions, or Sections.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -290,7 +290,7 @@ export default function MacropaediaLibrary({
                           <a href={`${baseUrl}/macropaedia/${slugify(entry.title)}`} class="hover:text-indigo-700 transition-colors">{entry.title}</a>
                         </h3>
                         <p class="mt-3 text-xs font-medium text-gray-700">
-                          Appears in {entry.sectionCount} section{entry.sectionCount === 1 ? '' : 's'}
+                          Appears in {entry.sectionCount} Section{entry.sectionCount === 1 ? '' : 's'}
                         </p>
                       </div>
                       <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
@@ -313,7 +313,7 @@ export default function MacropaediaLibrary({
                     <ReadingSectionLinks
                       sections={entry.sections}
                       baseUrl={baseUrl}
-                      label={`Show all ${entry.sectionCount} sections`}
+                      label={`Show all ${entry.sectionCount} Sections`}
                     />
                   </article>
                 );

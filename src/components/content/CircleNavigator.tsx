@@ -1541,6 +1541,34 @@ export default function CircleNavigator({
             );
           })()}
 
+          {!centerDisplayPart && morphT === 0 && removeMorphT === 0 && (
+            <g pointer-events="none" aria-hidden="true">
+              <text
+                x={CENTER}
+                y={CENTER - 8}
+                fill="#64748b"
+                font-size="13"
+                font-family="Inter, sans-serif"
+                font-weight="600"
+                text-anchor="middle"
+                letter-spacing="0.08em"
+              >
+                DRAG A PART HERE
+              </text>
+              <text
+                x={CENTER}
+                y={CENTER + 12}
+                fill="#94a3b8"
+                font-size="12"
+                font-family="Inter, sans-serif"
+                font-weight="500"
+                text-anchor="middle"
+              >
+                to bridge fields
+              </text>
+            </g>
+          )}
+
           {centerDisplayPart && (
           <g
             role="button"

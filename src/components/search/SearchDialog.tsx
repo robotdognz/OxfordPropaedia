@@ -269,7 +269,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
           <input
             ref={inputRef}
             type="search"
-            placeholder="Search sections, outlines, references..."
+            placeholder="Search Sections, outlines, references..."
             value={query}
             onInput={(e) => setQuery((e.target as HTMLInputElement).value)}
             class="flex-1 bg-transparent text-sm text-gray-900 placeholder-gray-400 outline-none font-sans"
@@ -335,7 +335,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
           {!loading && !query && (
             <div class="px-4 py-8 text-center">
               <p class="text-sm text-gray-400 italic font-serif">
-                Type to search across all sections and outlines
+                Type to search across all Sections and outlines
               </p>
             </div>
           )}

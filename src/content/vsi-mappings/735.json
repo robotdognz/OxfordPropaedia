@@ -219,6 +219,32 @@
         "K.2"
       ],
       "rationaleAI": "Individual identification through measurement of personal attributes including facial features and fingerprints connects to detection and remote sensing (J) and sensing devices and transducers (K.2)."
+    },
+    {
+      "vsiTitle": "Numbers",
+      "vsiAuthor": "Peter M. Higgins",
+      "relevantPathsAI": [
+        "I.9"
+      ],
+      "rationaleAI": "Covers practical applications of number theory in internet cryptography and data encryption, directly relevant to encryption and decryption techniques and devices."
+    },
+    {
+      "vsiTitle": "Privacy",
+      "vsiAuthor": "Raymond Wacks",
+      "relevantPathsAI": [
+        "I.8",
+        "I.9"
+      ],
+      "rationaleAI": "Covers mass surveillance, data protection law, and digital communications challenges, relevant to electronic networks and encryption/decryption techniques."
+    },
+    {
+      "vsiTitle": "Navigation",
+      "vsiAuthor": "Jim Bennett",
+      "relevantPathsAI": [
+        "I.5",
+        "J.1"
+      ],
+      "rationaleAI": "Covers navigational instruments including radio and electronic equipment, relevant to radio communications systems and radar/remote sensing systems."
     }
   ],
   "_curatedBy": "ai",

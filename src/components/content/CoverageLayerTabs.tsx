@@ -6,6 +6,13 @@ import {
   type LayerCoverageSnapshot,
 } from '../../utils/readingLibrary';
 
+const LAYER_DESCRIPTIONS: Record<CoverageLayer, string> = {
+  part: 'Build a broad foundation across the ten major fields.',
+  division: 'Cover the main strands within those fields before you narrow further.',
+  section: 'Reach more named topics across the outline.',
+  subsection: 'Push into the finest mapped paths where specific path data is available.',
+};
+
 interface CoverageLayerTabsProps {
   activeLayer: CoverageLayer;
   onSelect: (layer: CoverageLayer) => void;
@@ -17,6 +24,9 @@ export default function CoverageLayerTabs({
   onSelect,
   snapshots,
 }: CoverageLayerTabsProps) {
+  const activeSnapshot = snapshots.find((snapshot) => snapshot.layer === activeLayer);
+  const activeMeta = COVERAGE_LAYER_META[activeLayer];
+
   return (
     <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-5">
       <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -25,6 +35,13 @@ export default function CoverageLayerTabs({
           <p class="mt-1 text-sm text-gray-600">
             Choose which layer of the outline you want the next recommendations to maximise.
           </p>
+          {activeSnapshot ? (
+            <p class="mt-2 text-sm leading-6 text-gray-600">
+              <span class="font-medium text-gray-900">{activeMeta.label} coverage:</span>{' '}
+              {LAYER_DESCRIPTIONS[activeLayer]} You have covered{' '}
+              {activeSnapshot.currentlyCoveredCount} of {activeSnapshot.totalCoverageCount} so far.
+            </p>
+          ) : null}
         </div>
       </div>
       <div class="mt-4 flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">

@@ -30,6 +30,10 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   sectionLinksVariant?: 'details' | 'chips';
 }
 
+function countPartsSpanned(sections: ReadingSectionSummary[]): number {
+  return new Set(sections.map((section) => section.partNumber)).size;
+}
+
 export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   isOpen,
   onToggleOpen,
@@ -71,13 +75,13 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
           </h2>
           <p class="mt-2 text-sm text-gray-700">
             A suggested reading order that builds your knowledge as broadly as possible. Each step picks the
-            unread {itemSingular} that opens up the most new {coverageUnitPlural.toLowerCase()}, favouring {itemPlural}
-            that reach across different parts of the outline rather than clustering in one area. The path adapts as you
+            unread {itemSingular} that opens up the most new {coverageUnitPlural}, favouring {itemPlural}
+            that reach across different Parts of the outline rather than clustering in one area. The path adapts as you
             check off what you have read.
           </p>
         </div>
         <p class="text-sm text-amber-900 flex-shrink-0">
-          {steps.length} steps · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular.toLowerCase() : coverageUnitPlural.toLowerCase()} uncovered
+          {steps.length} steps · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
         </p>
       </button>
 
@@ -85,6 +89,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
         <ol class="mt-6 grid gap-3 sm:gap-4 lg:grid-cols-2 min-w-0">
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
+            const newPartsSpanned = countPartsSpanned(step.newSections);
 
             return (
               <li key={step.checklistKey} class="rounded-xl border border-amber-200 bg-white p-4">
@@ -114,20 +119,33 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
 
                 <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
                   <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-                    +{step.newCoverageCount} new {step.newCoverageCount === 1 ? coverageUnitSingular.toLowerCase() : coverageUnitPlural.toLowerCase()}
+                    +{step.newCoverageCount} new {step.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural}
                   </span>
                   <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                    {step.sectionCount} total sections
+                    {step.sectionCount} linked {step.sectionCount === 1 ? 'Section' : 'Sections'}
                   </span>
                   <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                    {step.cumulativeCoveredCount} covered after this step
+                    {step.cumulativeCoveredCount} total {step.cumulativeCoveredCount === 1 ? coverageUnitSingular : coverageUnitPlural} after this step
                   </span>
                 </div>
+
+                <p class="mt-3 text-sm leading-6 text-gray-600">
+                  Why this next:{' '}
+                  {step.newCoverageCount > 0 ? (
+                    <>
+                      it opens {step.newCoverageCount} new{' '}
+                      {step.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural}
+                      {newPartsSpanned > 0 ? ` across ${newPartsSpanned} ${newPartsSpanned === 1 ? 'Part' : 'Parts'}` : ''}.
+                    </>
+                  ) : (
+                    <>it keeps this path visible, but does not add further new {coverageUnitPlural} right now.</>
+                  )}
+                </p>
 
                 <ReadingSectionLinks
                   sections={step.newSections}
                   baseUrl={baseUrl}
-                  label="Show the sections this opens up"
+                  label="Show the Sections this opens up"
                   variant={sectionLinksVariant}
                 />
               </li>

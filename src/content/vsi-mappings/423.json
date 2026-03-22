@@ -309,6 +309,70 @@
         "F.9.d"
       ],
       "rationaleAI": "Age-related cognitive decline addresses CNS disorders (F.9.d)."
+    },
+    {
+      "vsiTitle": "Human Anatomy",
+      "vsiAuthor": "Leslie Klenerman",
+      "relevantPathsAI": [
+        "F.2.a",
+        "F.2.b",
+        "F.8.a",
+        "F.8.b",
+        "F.8.c"
+      ],
+      "rationaleAI": "Covers the lymphatic system, skeletal system, and clinical conditions, directly addressing unresolved leaves on lymphatic vessel disorders, lymphoid tissue disorders, skeletal system diseases, connective tissue, and joint conditions."
+    },
+    {
+      "vsiTitle": "Human Physiology",
+      "vsiAuthor": "Jamie A. Davies",
+      "relevantPathsAI": [
+        "D.1",
+        "D.4",
+        "D.9"
+      ],
+      "rationaleAI": "Covers homeostasis, energy supply, and internal parameter regulation across organ systems, directly relevant to physiological shock, fluid and electrolyte balance disorders, and dehydration."
+    },
+    {
+      "vsiTitle": "Food",
+      "vsiAuthor": "John Krebs",
+      "relevantPathsAI": [
+        "D.3",
+        "F.4.g"
+      ],
+      "rationaleAI": "Covers nutrition, malnutrition, overconsumption, obesity, and food poisoning, directly relevant to nutritional diseases and disorders in digestion and absorption of foods."
+    },
+    {
+      "vsiTitle": "Sleep",
+      "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
+      "relevantPathsAI": [
+        "F.9.d"
+      ],
+      "rationaleAI": "Covers sleep disorders including obstructive sleep apnea and links to Alzheimer's disease and diabetes, relevant to disorders of the central nervous system."
+    },
+    {
+      "vsiTitle": "Clinical Psychology",
+      "vsiAuthor": "Susan Llewellyn, Katie Aafjes-van Doorn",
+      "relevantPathsAI": [
+        "C.2.l"
+      ],
+      "rationaleAI": "Covers clinical psychology addressing mental health assessment and treatment including cognitive therapy and psychoanalytic methods, directly relevant to psychological therapy in disease treatment."
+    },
+    {
+      "vsiTitle": "Genomics",
+      "vsiAuthor": "John M. Archibald",
+      "relevantPathsAI": [
+        "D.6",
+        "F.6.a"
+      ],
+      "rationaleAI": "Covers DNA sequencing, genome assembly, and applications in personalized medicine and epidemiology, relevant to diseases present at birth and genetic and congenital abnormalities."
+    },
+    {
+      "vsiTitle": "Child Psychology",
+      "vsiAuthor": "Usha Goswami",
+      "relevantPathsAI": [
+        "D.7"
+      ],
+      "rationaleAI": "Covers developmental psychology from birth through early adolescence including brain development and neurobiology, relevant as the only defensible candidate for the childhood diseases leaf."
     }
   ],
   "_curatedBy": "ai",
