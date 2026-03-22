@@ -1,68 +1,20 @@
 import { h } from 'preact';
 import Accordion from '../ui/Accordion';
 import { formatEditionLabel } from '../../utils/readingData';
-import { sectionReferenceUrl, slugify } from '../../utils/helpers';
-
-// Matches "824.B.4" style refs (with section code + outline path),
-// "section 824" style refs (bare code),
-// and bare outline paths like "A.1", "B.3.c", "C.2.d.ii" (within the current section)
-const CROSS_REF_RE = /\b(\d{2,3}(?:-\d{2})?)\.([A-Z](?:\.\d+[a-z]?)*)\.?|\bsection (\d{2,3}(?:-\d{2})?)\b/gi;
-const OUTLINE_PATH_RE = /\b([A-Z](?:\.\d+[a-z]?(?:\.[ivxlc]+)?)*)\b/g;
-
-function linkifyRationale(text: string, baseUrl: string, sectionCode?: string) {
-  // First pass: linkify cross-section references (824.B.4, section 824)
-  const parts: (string | h.JSX.Element)[] = [];
-  let last = 0;
-  let match;
-  CROSS_REF_RE.lastIndex = 0;
-  while ((match = CROSS_REF_RE.exec(text))) {
-    const code = match[1] || match[3];
-    const outlinePath = match[2] || '';
-    if (match.index > last) parts.push(text.slice(last, match.index));
-    const href = sectionReferenceUrl(code, outlinePath, baseUrl);
-    parts.push(
-      <a href={href} class="text-indigo-700 hover:text-indigo-900 hover:underline">
-        {match[0]}
-      </a>
-    );
-    last = CROSS_REF_RE.lastIndex;
-  }
-  if (last < text.length) parts.push(text.slice(last));
-
-  // Second pass: linkify bare outline paths (A.1, B.3.c) within plain text segments
-  if (!sectionCode) return parts;
-
-  return parts.flatMap((part) => {
-    if (typeof part !== 'string') return [part];
-    const subParts: (string | h.JSX.Element)[] = [];
-    let subLast = 0;
-    OUTLINE_PATH_RE.lastIndex = 0;
-    while ((match = OUTLINE_PATH_RE.exec(part))) {
-      // Only match if it looks like an outline path (has a dot with digits, not just a lone letter)
-      if (!match[1].includes('.')) continue;
-      if (match.index > subLast) subParts.push(part.slice(subLast, match.index));
-      const href = sectionReferenceUrl(sectionCode.replace(/\//g, '-'), match[1], baseUrl);
-      subParts.push(
-        <a href={href} class="text-indigo-700 hover:text-indigo-900 hover:underline">
-          {match[0]}
-        </a>
-      );
-      subLast = OUTLINE_PATH_RE.lastIndex;
-    }
-    if (subLast < part.length) subParts.push(part.slice(subLast));
-    return subParts.length > 0 ? subParts : [part];
-  });
-}
+import { slugify } from '../../utils/helpers';
+import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
 
 export interface VsiCardProps {
   title: string;
   author: string;
-  rationaleAI: string;
+  rationale?: string;
   baseUrl: string;
   sectionCode?: string;
   publicationYear?: number;
   edition?: number;
   matchPercent?: number;
+  precisionLabel?: string;
+  precisionClassName?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
 }
@@ -83,6 +35,8 @@ export default function VsiCard({
   publicationYear,
   edition,
   matchPercent,
+  precisionLabel,
+  precisionClassName,
   checked,
   onCheckedChange,
 }: VsiCardProps) {
@@ -125,9 +79,17 @@ export default function VsiCard({
         </div>
       )}
 
+      {precisionLabel && (
+        <div class="mb-3 flex flex-wrap gap-1.5 text-[10px] font-medium tracking-[0.02em]">
+          <span class={`inline-flex items-center rounded-md border px-2 py-0.5 ${precisionClassName ?? 'border-slate-200 bg-slate-50 text-slate-500'}`}>
+            {precisionLabel}
+          </span>
+        </div>
+      )}
+
       {rationale && (
         <Accordion title="Why this book?" defaultOpen={false}>
-          <p class="text-gray-600">{linkifyRationale(rationale, baseUrl, sectionCode)}</p>
+          <p class="text-gray-600">{linkifyRationaleReferences(rationale, baseUrl, sectionCode)}</p>
         </Accordion>
       )}
     </div>

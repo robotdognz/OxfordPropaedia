@@ -19,9 +19,11 @@ import {
   type CoverageLayer,
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
+import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
+import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 
 export interface VsiLibraryProps {
   entries: VsiAggregateEntry[];
@@ -120,6 +122,10 @@ function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): 
   }
 
   return `No unread VSI adds any further ${label} coverage right now.`;
+}
+
+function precisionBadgeText(entry: VsiAggregateEntry): string | null {
+  return subsectionPrecisionSummary(entry);
 }
 
 export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems }: VsiLibraryProps) {
@@ -230,10 +236,22 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
         bestNextSubtitle={bestNextRead?.author}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.` : undefined}
+        bestNextDescription={bestNextRead
+          ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
+          : undefined}
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
         mobileRingWidth={7}
         desktopRingWidth={9}
+      />
+
+      <CoverageGapPanel
+        entries={entries}
+        checklistState={checklistState}
+        activeLayer={activeLayer}
+        baseUrl={baseUrl}
+        itemLabelPlural="books"
+        outlineItemCounts={outlineItemCounts}
+        isComplete={isLayerComplete}
       />
 
       <ReadingSpreadPath
@@ -244,7 +262,14 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         checklistState={checklistState}
         onCheckedChange={writeChecklistState}
         getHref={(step) => `${baseUrl}/vsi/${slugify(step.title)}`}
-        renderMeta={(step) => <p class="mt-1 text-sm text-gray-600">{formatMetadata(step)}</p>}
+        renderMeta={(step) => (
+          <>
+            <p class="mt-1 text-sm text-gray-600">{formatMetadata(step)}</p>
+            {activeLayer === 'subsection' && precisionBadgeText(step) ? (
+              <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
+            ) : null}
+          </>
+        )}
         checkboxAriaLabel={(step) => `Mark ${step.title} by ${step.author} as completed`}
         itemSingular="book"
         itemPlural="books"
@@ -260,6 +285,9 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
             <h2 class="font-serif text-2xl text-gray-900">VSI Library</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the full mapped VSI list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
+            </p>
+            <p class="mt-1 text-xs text-gray-500">
+              These controls only change the full library list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -299,10 +327,10 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
               onChange={(event) => setSortField((event.currentTarget as HTMLSelectElement).value as SortField)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="part">Parts covered</option>
-              <option value="division">Divisions covered</option>
-              <option value="section">Sections covered</option>
-              <option value="subsection">Subsections covered</option>
+              <option value="part">Most Parts covered</option>
+              <option value="division">Most Divisions covered</option>
+              <option value="section">Most Sections covered</option>
+              <option value="subsection">Most Subsections covered</option>
               <option value="title">Title</option>
               <option value="number">Series number</option>
             </select>
@@ -358,6 +386,9 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
                       <span class="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-700">
                         Appears in {entry.sectionCount} Sections
                       </span>
+                      {precisionBadgeText(entry) && (
+                        <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">{precisionBadgeText(entry)}</span>
+                      )}
                       {entry.subject && (
                         <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">{entry.subject}</span>
                       )}

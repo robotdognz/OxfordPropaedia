@@ -2,13 +2,15 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import WikipediaLibrary from '../../components/content/WikipediaLibrary';
 import { buildWikipediaAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
-import { buildOutlineItemCoverage, buildSectionOutlinePathIndex, buildSubsectionCoverageKeys } from '../../utils/outlineCoverage';
+import { analyzeSubsectionCoverage, buildOutlineItemCoverage, buildSectionOutlinePathIndex } from '../../utils/outlineCoverage';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 const base = import.meta.env.BASE_URL;
 const sections = await getCollection('sections');
 const wikiMappings = await getCollection('wiki-mappings');
+const outline = await loadOutlineGraph();
 
 const sectionLookup = new Map<string, ReadingSectionSummary>(
   sections.map((s) => [
@@ -18,30 +20,50 @@ const sectionLookup = new Map<string, ReadingSectionSummary>(
       sectionCodeDisplay: s.data.sectionCodeDisplay,
       title: s.data.title,
       partNumber: s.data.partNumber,
+      partTitle: outline.sectionMeta[s.data.sectionCode]?.partTitle,
       divisionId: s.data.divisionId,
+      divisionTitle: outline.sectionMeta[s.data.sectionCode]?.divisionTitle,
     },
   ])
 );
 
 // Build sectionCodes per article from the per-section mapping files
 const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
-const articleCoverage = new Map<string, { sectionCodes: Set<string>; subsectionKeys: Set<string> }>();
+const articleCoverage = new Map<string, {
+  sectionCodes: Set<string>;
+  subsectionKeys: Set<string>;
+  mappedPathCount: number;
+  mappedPathSections: Set<string>;
+  fallbackSections: Set<string>;
+}>();
 for (const mapping of wikiMappings) {
   for (const m of mapping.data.mappings) {
     if (!articleCoverage.has(m.articleTitle)) {
       articleCoverage.set(m.articleTitle, {
         sectionCodes: new Set(),
         subsectionKeys: new Set(),
+        mappedPathCount: 0,
+        mappedPathSections: new Set(),
+        fallbackSections: new Set(),
       });
     }
 
     const coverage = articleCoverage.get(m.articleTitle)!;
     coverage.sectionCodes.add(mapping.data.sectionCode);
-    buildSubsectionCoverageKeys(
+    const subsectionCoverage = analyzeSubsectionCoverage(
       mapping.data.sectionCode,
       m.relevantPathsAI,
       sectionOutlinePathIndex
-    ).forEach((key) => coverage.subsectionKeys.add(key));
+    );
+
+    subsectionCoverage.coverageKeys.forEach((key) => coverage.subsectionKeys.add(key));
+    coverage.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
+    if (subsectionCoverage.matchedPathKeys.length > 0) {
+      coverage.mappedPathSections.add(mapping.data.sectionCode);
+    }
+    if (subsectionCoverage.usedFallback) {
+      coverage.fallbackSections.add(mapping.data.sectionCode);
+    }
   }
 }
 
@@ -50,6 +72,9 @@ const articles = (wikiCatalog as any).articles.map((a: any) => ({
   ...a,
   sectionCodes: [...(articleCoverage.get(a.title)?.sectionCodes || [])],
   subsectionKeys: [...(articleCoverage.get(a.title)?.subsectionKeys || [])],
+  mappedPathCount: articleCoverage.get(a.title)?.mappedPathCount || 0,
+  mappedPathSectionCount: articleCoverage.get(a.title)?.mappedPathSections.size || 0,
+  fallbackSectionCount: articleCoverage.get(a.title)?.fallbackSections.size || 0,
 }));
 
 const entries = buildWikipediaAggregateEntries(articles, sectionLookup);

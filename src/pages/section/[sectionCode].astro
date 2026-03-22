@@ -66,7 +66,7 @@ const {
         breadcrumbs={[
           { label: `Part ${PART_NAMES[section.partNumber]}`, href: `${base}/part/${section.partNumber}` },
           { label: `Division ${parentDiv?.romanNumeral ?? ''}`, href: `${base}/division/${section.divisionId}` },
-          { label: `Section ${section.sectionCodeDisplay}` },
+          { label: `Section ${section.sectionCodeDisplay}`, mobileLabel: section.sectionCodeDisplay },
         ]}
         scrollTargets={[
           { id: 'subject-outline', label: 'Outline' },

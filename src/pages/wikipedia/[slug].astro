@@ -18,19 +18,23 @@ export async function getStaticPaths() {
 
   // Build section codes per article from per-section mapping files
   const wikiMappings = await getCollection('wiki-mappings');
-  const articleSectionCodes = new Map<string, string[]>();
+  const articleSectionCodes = new Map<string, Array<{ sectionCode: string; relevantPathsAI: string[] }>>();
   for (const mapping of wikiMappings) {
     for (const m of mapping.data.mappings) {
       if (!articleSectionCodes.has(m.articleTitle)) articleSectionCodes.set(m.articleTitle, []);
-      articleSectionCodes.get(m.articleTitle)!.push(mapping.data.sectionCode);
+      articleSectionCodes.get(m.articleTitle)!.push({
+        sectionCode: mapping.data.sectionCode,
+        relevantPathsAI: m.relevantPathsAI ?? [],
+      });
     }
   }
 
   return (wikiCatalog as any).articles.map((article: any) => {
     const codes = articleSectionCodes.get(article.title) || [];
-    const sections = codes.map((code: string) => ({
-      sectionCode: code,
-      meta: outline.sectionMeta[code],
+    const sections = codes.map((entry) => ({
+      sectionCode: entry.sectionCode,
+      relevantPathsAI: entry.relevantPathsAI,
+      meta: outline.sectionMeta[entry.sectionCode],
     })).filter((s: any) => s.meta);
 
     const coveredParts = new Set(sections.map((s: any) => s.meta.partNumber));
@@ -122,13 +126,22 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
             <ul class="mt-2 space-y-2">
               {partSections.map((s) => (
                 <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
-                  <a
-                    href={sectionUrl(s.sectionCode, base)}
-                    class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
-                  >
-                    Section {s.sectionCode}: {s.meta.sectionTitle}
-                  </a>
-                  <p class="mt-0.5 text-xs text-gray-400">{s.meta.divisionTitle}</p>
+                  <div class="flex flex-wrap items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <a
+                        href={sectionUrl(s.sectionCode, base)}
+                        class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
+                      >
+                        Section {s.sectionCode}: {s.meta.sectionTitle}
+                      </a>
+                      <p class="mt-0.5 text-xs text-gray-400">{s.meta.divisionTitle}</p>
+                    </div>
+                    <span class={`inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-semibold ${s.relevantPathsAI?.length ? 'border-indigo-200 bg-indigo-50 text-indigo-700' : 'border-slate-200 bg-slate-100 text-slate-700'}`}>
+                      {s.relevantPathsAI?.length
+                        ? `${s.relevantPathsAI.length} mapped ${s.relevantPathsAI.length === 1 ? 'path' : 'paths'}`
+                        : 'Broader Section coverage'}
+                    </span>
+                  </div>
                 </li>
               ))}
             </ul>

@@ -4,14 +4,16 @@ import {
   wikipediaChecklistKey,
 } from './readingChecklist';
 import { macropaediaLookupKey, vsiLookupKey } from './readingIdentity';
-import { buildSectionOutlinePathIndex, buildSubsectionCoverageKeys } from './outlineCoverage';
+import { analyzeSubsectionCoverage, buildSectionOutlinePathIndex } from './outlineCoverage';
 
 export interface ReadingSectionSummary {
   sectionCode: string;
   sectionCodeDisplay: string;
   title: string;
   partNumber: number;
+  partTitle?: string;
   divisionId: string;
+  divisionTitle?: string;
 }
 
 export interface VsiCatalogTitle {
@@ -48,6 +50,9 @@ export interface VsiAggregateEntry {
   sectionCount: number;
   sections: ReadingSectionSummary[];
   subsectionKeys?: string[];
+  mappedPathCount?: number;
+  mappedPathSectionCount?: number;
+  fallbackSectionCount?: number;
 }
 
 export interface MacropaediaAggregateEntry {
@@ -108,6 +113,9 @@ export interface WikipediaAggregateEntry {
   sectionCount: number;
   sections: ReadingSectionSummary[];
   subsectionKeys?: string[];
+  mappedPathCount?: number;
+  mappedPathSectionCount?: number;
+  fallbackSectionCount?: number;
 }
 
 interface OutlineBearingSection extends ReadingSectionSummary {
@@ -204,6 +212,9 @@ export function buildVsiAggregateEntries(
       entry: VsiAggregateEntry;
       sectionCodes: Set<string>;
       subsectionKeys: Set<string>;
+      mappedPathSectionCodes: Set<string>;
+      fallbackSectionCodes: Set<string>;
+      mappedPathCount: number;
     }
   >();
 
@@ -215,11 +226,12 @@ export function buildVsiAggregateEntries(
       const lookupKey = vsiLookupKey(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
       const catalogEntry = catalogLookup.get(lookupKey);
       const existing = aggregateMap.get(lookupKey);
-      const subsectionKeys = buildSubsectionCoverageKeys(
+      const subsectionCoverage = analyzeSubsectionCoverage(
         section.sectionCode,
         mappingEntry.relevantPathsAI,
         sectionOutlinePathIndex
       );
+      const subsectionKeys = subsectionCoverage.coverageKeys;
 
       if (existing) {
         if (!existing.sectionCodes.has(section.sectionCode)) {
@@ -228,6 +240,13 @@ export function buildVsiAggregateEntries(
           existing.entry.sectionCount = existing.entry.sections.length;
         }
         subsectionKeys.forEach((key) => existing.subsectionKeys.add(key));
+        subsectionCoverage.matchedPathKeys.forEach(() => {
+          existing.mappedPathSectionCodes.add(section.sectionCode);
+        });
+        if (subsectionCoverage.usedFallback) {
+          existing.fallbackSectionCodes.add(section.sectionCode);
+        }
+        existing.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
         continue;
       }
 
@@ -237,6 +256,9 @@ export function buildVsiAggregateEntries(
       aggregateMap.set(lookupKey, {
         sectionCodes: new Set([section.sectionCode]),
         subsectionKeys: new Set(subsectionKeys),
+        mappedPathSectionCodes: subsectionCoverage.matchedPathKeys.length > 0 ? new Set([section.sectionCode]) : new Set<string>(),
+        fallbackSectionCodes: subsectionCoverage.usedFallback ? new Set([section.sectionCode]) : new Set<string>(),
+        mappedPathCount: subsectionCoverage.matchedPathKeys.length,
         entry: {
           title,
           author,
@@ -248,17 +270,23 @@ export function buildVsiAggregateEntries(
           sectionCount: 1,
           sections: [section],
           subsectionKeys,
+          mappedPathCount: subsectionCoverage.matchedPathKeys.length,
+          mappedPathSectionCount: subsectionCoverage.matchedPathKeys.length > 0 ? 1 : 0,
+          fallbackSectionCount: subsectionCoverage.usedFallback ? 1 : 0,
         },
       });
     }
   }
 
   return Array.from(aggregateMap.values())
-    .map(({ entry, subsectionKeys }) => ({
+    .map(({ entry, subsectionKeys, mappedPathSectionCodes, fallbackSectionCodes, mappedPathCount }) => ({
       ...entry,
       sections: [...entry.sections].sort(sectionSort),
       sectionCount: entry.sections.length,
       subsectionKeys: [...subsectionKeys].sort(),
+      mappedPathCount,
+      mappedPathSectionCount: mappedPathSectionCodes.size,
+      fallbackSectionCount: fallbackSectionCodes.size,
     }))
     .sort(vsiSort);
 }
@@ -356,7 +384,18 @@ export function buildMacropaediaCoverageSnapshot(
 }
 
 export function buildWikipediaAggregateEntries(
-  articles: Array<{ title: string; displayTitle?: string; url: string; category?: string; lowestLevel: number; sectionCodes: string[]; subsectionKeys?: string[] }>,
+  articles: Array<{
+    title: string;
+    displayTitle?: string;
+    url: string;
+    category?: string;
+    lowestLevel: number;
+    sectionCodes: string[];
+    subsectionKeys?: string[];
+    mappedPathCount?: number;
+    mappedPathSectionCount?: number;
+    fallbackSectionCount?: number;
+  }>,
   sectionLookup: Map<string, ReadingSectionSummary>
 ): WikipediaAggregateEntry[] {
   return articles.map((article) => {
@@ -375,6 +414,9 @@ export function buildWikipediaAggregateEntries(
       sectionCount: sections.length,
       sections,
       subsectionKeys: Array.from(new Set(article.subsectionKeys ?? [])).sort(),
+      mappedPathCount: article.mappedPathCount ?? 0,
+      mappedPathSectionCount: article.mappedPathSectionCount ?? 0,
+      fallbackSectionCount: article.fallbackSectionCount ?? 0,
     };
   }).sort((a, b) => {
     if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;

@@ -16,8 +16,10 @@ import {
   type CoverageLayer,
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
+import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSpreadPath from './ReadingSpreadPath';
+import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
@@ -70,6 +72,10 @@ function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): 
   }
 
   return `No unread article adds any further ${label} coverage right now.`;
+}
+
+function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
+  return subsectionPrecisionSummary(entry);
 }
 
 export default function WikipediaLibrary({
@@ -224,8 +230,20 @@ export default function WikipediaLibrary({
         bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
         bestNextHref={bestNextRead ? `${baseUrl}/wikipedia/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.` : undefined}
+        bestNextDescription={bestNextRead
+          ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
+          : undefined}
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+      />
+
+      <CoverageGapPanel
+        entries={entries}
+        checklistState={checklistState}
+        activeLayer={activeLayer}
+        baseUrl={baseUrl}
+        itemLabelPlural="articles"
+        outlineItemCounts={outlineItemCounts}
+        isComplete={isLayerComplete}
       />
 
       <ReadingSpreadPath
@@ -236,6 +254,13 @@ export default function WikipediaLibrary({
         checklistState={checklistState}
         onCheckedChange={writeChecklistState}
         getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
+        renderMeta={(step) => (
+          <>
+            {activeLayer === 'subsection' && precisionBadgeText(step) ? (
+              <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
+            ) : null}
+          </>
+        )}
         checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
         itemSingular="article"
         itemPlural="articles"
@@ -247,6 +272,11 @@ export default function WikipediaLibrary({
       />
 
       <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
+        <div class="mb-4 max-w-3xl">
+          <p class="text-xs text-gray-500">
+            These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+          </p>
+        </div>
         <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
@@ -277,10 +307,10 @@ export default function WikipediaLibrary({
               onChange={(event) => setSortField((event.currentTarget as HTMLSelectElement).value as SortField)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="part">Parts covered</option>
-              <option value="division">Divisions covered</option>
-              <option value="section">Sections covered</option>
-              <option value="subsection">Subsections covered</option>
+              <option value="part">Most Parts covered</option>
+              <option value="division">Most Divisions covered</option>
+              <option value="section">Most Sections covered</option>
+              <option value="subsection">Most Subsections covered</option>
               <option value="title">Title</option>
             </select>
           </label>
@@ -335,6 +365,11 @@ export default function WikipediaLibrary({
                       >
                         Read on Wikipedia ↗
                       </a>
+                      {precisionBadgeText(entry) && (
+                        <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold text-slate-700">
+                          {precisionBadgeText(entry)}
+                        </span>
+                      )}
                     </div>
                   </article>
                 );

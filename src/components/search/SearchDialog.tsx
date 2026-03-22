@@ -22,6 +22,12 @@ interface SearchResult {
   excerpt: string;
 }
 
+interface SearchResultGroup {
+  id: string;
+  label: string;
+  results: Array<SearchResult & { index: number }>;
+}
+
 interface PagefindSubResult {
   title?: string;
   url: string;
@@ -53,6 +59,37 @@ const STOP_WORDS = new Set([
   'has', 'he', 'in', 'is', 'it', 'its', 'of', 'on', 'or', 'that',
   'the', 'to', 'was', 'were', 'will', 'with',
 ]);
+
+const PAGE_TYPE_RANK: Record<string, number> = {
+  Section: 0,
+  Division: 1,
+  Part: 2,
+};
+
+function pageTypeRank(pageType?: string) {
+  return PAGE_TYPE_RANK[pageType ?? ''] ?? 99;
+}
+
+function shouldSurfaceResult(pageType?: string) {
+  return pageType !== 'Oxford VSI' && pageType !== 'Wikipedia' && pageType !== 'Macropaedia';
+}
+
+function resultGroupId(pageType?: string): string {
+  if (pageType === 'Section' || pageType === 'Division' || pageType === 'Part') {
+    return 'outline';
+  }
+  return 'other';
+}
+
+function resultGroupLabel(groupId: string): string {
+  switch (groupId) {
+    case 'outline':
+      return 'Outline Matches';
+    case 'other':
+    default:
+      return 'Other Pages';
+  }
+}
 
 function getQueryTokens(query: string) {
   return normalizeText(query)
@@ -127,7 +164,38 @@ function flattenResults(items: PagefindResultData[], query: string) {
     if (seen.has(item.url)) return false;
     seen.add(item.url);
     return true;
+  }).filter((item) => shouldSurfaceResult(item.pageType))
+    .sort((left, right) => {
+    const leftGroup = resultGroupId(left.pageType);
+    const rightGroup = resultGroupId(right.pageType);
+    if (leftGroup !== rightGroup) {
+      return leftGroup === 'outline' ? -1 : 1;
+    }
+    const rankDifference = pageTypeRank(left.pageType) - pageTypeRank(right.pageType);
+    if (rankDifference !== 0) return rankDifference;
+    return left.title.localeCompare(right.title, undefined, { numeric: true, sensitivity: 'base' });
   });
+}
+
+function groupResults(results: SearchResult[]): SearchResultGroup[] {
+  const grouped = new Map<string, SearchResultGroup>();
+
+  results.forEach((result, index) => {
+    const groupId = resultGroupId(result.pageType);
+    if (!grouped.has(groupId)) {
+      grouped.set(groupId, {
+        id: groupId,
+        label: resultGroupLabel(groupId),
+        results: [],
+      });
+    }
+
+    grouped.get(groupId)!.results.push({ ...result, index });
+  });
+
+  return ['outline', 'other']
+    .map((id) => grouped.get(id))
+    .filter((group): group is SearchResultGroup => Boolean(group) && group.results.length > 0);
 }
 
 export default function SearchDialog({ baseUrl }: SearchDialogProps) {
@@ -139,6 +207,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [pagefind, setPagefind] = useState<any>(null);
+  const groupedResults = groupResults(results);
 
   // Load Pagefind on first open
   useEffect(() => {
@@ -269,7 +338,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
           <input
             ref={inputRef}
             type="search"
-            placeholder="Search Sections, outlines, references..."
+            placeholder="Search for a topic, Part, Division, or Section"
             value={query}
             onInput={(e) => setQuery((e.target as HTMLInputElement).value)}
             class="flex-1 bg-transparent text-sm text-gray-900 placeholder-gray-400 outline-none font-sans"
@@ -300,42 +369,56 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
           )}
 
           {!loading && results.length > 0 && (
-            <ul class="py-2" role="listbox">
-              {results.map((result, i) => (
-                <li key={result.url} role="option" aria-selected={i === selectedIndex}>
-                  <a
-                    href={result.url}
-                    class={`block px-4 py-3 transition-colors ${
-                      i === selectedIndex ? 'bg-indigo-50' : 'hover:bg-gray-50'
-                    }`}
-                  >
-                    <div class="flex items-center gap-2">
-                      {result.pageType && (
-                        <span class="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-sans font-semibold uppercase tracking-wide text-slate-500">
-                          {result.pageType}
-                        </span>
-                      )}
-                      <p class="text-sm font-semibold text-gray-900 font-sans">{result.title}</p>
-                    </div>
-                    {result.pageTitle && (
-                      <p class="mt-0.5 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
-                        {result.pageTitle}
-                      </p>
-                    )}
-                    <p
-                      class="text-xs text-gray-500 mt-1 line-clamp-2"
-                      dangerouslySetInnerHTML={{ __html: result.excerpt }}
-                    />
-                  </a>
-                </li>
+            <div class="py-2">
+              {groupedResults.map((group) => (
+                <section key={group.id} class="pb-2">
+                  <div class="px-4 py-2">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
+                      {group.label}
+                    </p>
+                  </div>
+                  <ul role="listbox">
+                    {group.results.map((result) => (
+                      <li key={result.url} role="option" aria-selected={result.index === selectedIndex}>
+                        <a
+                          href={result.url}
+                          class={`block px-4 py-3 transition-colors ${
+                            result.index === selectedIndex ? 'bg-indigo-50' : 'hover:bg-gray-50'
+                          }`}
+                        >
+                          <div class="flex items-center gap-2">
+                            {result.pageType && (
+                              <span class="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-sans font-semibold uppercase tracking-wide text-slate-500">
+                                {result.pageType}
+                              </span>
+                            )}
+                            <p class="text-sm font-semibold text-gray-900 font-sans">{result.title}</p>
+                          </div>
+                          {result.pageTitle && (
+                            <p class="mt-0.5 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
+                              {result.pageTitle}
+                            </p>
+                          )}
+                          <p
+                            class="text-xs text-gray-500 mt-1 line-clamp-2"
+                            dangerouslySetInnerHTML={{ __html: result.excerpt }}
+                          />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               ))}
-            </ul>
+            </div>
           )}
 
           {!loading && !query && (
             <div class="px-4 py-8 text-center">
-              <p class="text-sm text-gray-400 italic font-serif">
-                Type to search across all Sections and outlines
+              <p class="text-sm text-gray-500 italic font-serif">
+                Start with a topic, then jump into a Part, Division, or Section.
+              </p>
+              <p class="mt-2 text-xs text-gray-400">
+                Try queries like <span class="font-medium">evolution</span>, <span class="font-medium">justice</span>, <span class="font-medium">optics</span>, or <span class="font-medium">ancient Greece</span>.
               </p>
             </div>
           )}

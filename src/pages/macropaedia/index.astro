@@ -3,11 +3,22 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import MacropaediaLibrary from '../../components/content/MacropaediaLibrary';
 import { getCollection } from 'astro:content';
 import { buildMacropaediaAggregateEntries } from '../../utils/readingData';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 const base = import.meta.env.BASE_URL;
 const sections = await getCollection('sections');
+const outline = await loadOutlineGraph();
 
-const entries = buildMacropaediaAggregateEntries(sections.map((entry) => entry.data));
+const sectionsWithMeta = sections.map((entry) => {
+  const meta = outline.sectionMeta[entry.data.sectionCode];
+  return {
+    ...entry.data,
+    partTitle: meta?.partTitle,
+    divisionTitle: meta?.divisionTitle,
+  };
+});
+
+const entries = buildMacropaediaAggregateEntries(sectionsWithMeta);
 ---
 
 <BaseLayout

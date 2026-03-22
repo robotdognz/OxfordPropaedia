@@ -1,13 +1,17 @@
 import { h } from 'preact';
 import Accordion from '../ui/Accordion';
 import { slugify } from '../../utils/helpers';
+import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
 
 export interface WikipediaCardProps {
   title: string;
   displayTitle?: string;
   rationale?: string;
   baseUrl: string;
+  sectionCode?: string;
   matchPercent?: number;
+  precisionLabel?: string;
+  precisionClassName?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
 }
@@ -24,7 +28,10 @@ export default function WikipediaCard({
   displayTitle,
   rationale,
   baseUrl,
+  sectionCode,
   matchPercent,
+  precisionLabel,
+  precisionClassName,
   checked,
   onCheckedChange,
 }: WikipediaCardProps) {
@@ -66,9 +73,17 @@ export default function WikipediaCard({
         </div>
       )}
 
+      {precisionLabel && (
+        <div class="mb-3 flex flex-wrap gap-1.5 text-[10px] font-medium tracking-[0.02em]">
+          <span class={`inline-flex items-center rounded-md border px-2 py-0.5 ${precisionClassName ?? 'border-slate-200 bg-slate-50 text-slate-500'}`}>
+            {precisionLabel}
+          </span>
+        </div>
+      )}
+
       {rationale && (
         <Accordion title="Why this article?" defaultOpen={false}>
-          <p class="text-gray-600">{rationale}</p>
+          <p class="text-gray-600">{linkifyRationaleReferences(rationale, baseUrl, sectionCode)}</p>
         </Accordion>
       )}
     </div>

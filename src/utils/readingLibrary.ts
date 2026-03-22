@@ -1,3 +1,4 @@
+import { divisionUrl, partUrl, sectionUrl } from './helpers';
 import type { ReadingSectionSummary } from './readingData';
 
 export interface ChecklistBackedReadingEntry {
@@ -44,6 +45,8 @@ export const COVERAGE_LAYER_META: Record<CoverageLayer, {
   },
 };
 
+const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+
 export function coverageLayerLabel(layer: CoverageLayer, count: number, options: {
   lowercase?: boolean;
 } = {}): string {
@@ -81,6 +84,15 @@ export interface LayerCoverageSnapshot<TEntry extends ChecklistBackedReadingEntr
   currentlyCoveredCount: number;
   remainingCoverageCount: number;
   path: Array<LayerCoveragePathStep<TEntry>>;
+}
+
+export interface CoverageGapItem {
+  key: string;
+  label: string;
+  href: string;
+  uncoveredCount: number;
+  candidateCount: number;
+  description: string;
 }
 
 export function completedChecklistKeysFromState(checklistState: Record<string, boolean>): Set<string> {
@@ -130,6 +142,15 @@ function uniqueTargetKeysForEntry(
   return Array.from(new Set(entry.sections.map((section) => coverageKeyForSection(section, layer))));
 }
 
+function buildEntryTargetKeyMap<TEntry extends ChecklistBackedReadingEntry>(
+  entries: TEntry[],
+  layer: CoverageLayer
+): Map<string, string[]> {
+  return new Map(
+    entries.map((entry) => [entry.checklistKey, uniqueTargetKeysForEntry(entry, layer)])
+  );
+}
+
 function sectionMatchesTargetKey(
   section: ReadingSectionSummary,
   layer: CoverageLayer,
@@ -140,6 +161,14 @@ function sectionMatchesTargetKey(
   }
 
   return coverageKeyForSection(section, layer) === targetKey;
+}
+
+function sectionSort(a: ReadingSectionSummary, b: ReadingSectionSummary): number {
+  if (a.partNumber !== b.partNumber) {
+    return a.partNumber - b.partNumber;
+  }
+
+  return collator.compare(a.sectionCodeDisplay, b.sectionCodeDisplay);
 }
 
 function dedupeSections(sections: ReadingSectionSummary[]): ReadingSectionSummary[] {
@@ -172,9 +201,10 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
   const totalTargets = new Map<string, number>();
   const coveredTargets = new Set<string>();
   let completedEntries = 0;
+  const entryTargetKeys = buildEntryTargetKeyMap(entries, layer);
 
   for (const entry of entries) {
-    const targetKeys = uniqueTargetKeysForEntry(entry, layer);
+    const targetKeys = entryTargetKeys.get(entry.checklistKey) ?? [];
     targetKeys.forEach((key) => {
       if (!totalTargets.has(key)) {
         totalTargets.set(key, coverageWeightForKey(key, layer, options));
@@ -209,7 +239,7 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
     for (const entry of remainingEntries) {
       if (usedChecklistKeys.has(entry.checklistKey)) continue;
 
-      const newTargetKeys = uniqueTargetKeysForEntry(entry, layer)
+      const newTargetKeys = (entryTargetKeys.get(entry.checklistKey) ?? [])
         .filter((key) => !coveredTargets.has(key));
       const newCoverageCount = newTargetKeys.reduce(
         (total, key) => total + (totalTargets.get(key) ?? coverageWeightForKey(key, layer, options)),
@@ -349,4 +379,168 @@ export function buildCoverageRings<T extends ChecklistBackedReadingEntry>(
       ? [{ label: 'Subsections', count: coveredOutlineItems, total: totalSubsectionItems, color: '#c4b5fd' }]
       : []),
   ];
+}
+
+export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry>(
+  entries: TEntry[],
+  completedChecklistKeys: Set<string>,
+  layer: CoverageLayer,
+  baseUrl: string,
+  options: {
+    outlineItemCounts?: Record<string, number>;
+    itemLabelPlural?: string;
+    limit?: number;
+  } = {}
+): CoverageGapItem[] {
+  const totalTargets = new Map<string, number>();
+  const coveredTargets = new Set<string>();
+  const unreadEntries = entries.filter((entry) => !completedChecklistKeys.has(entry.checklistKey));
+  const sectionLookup = new Map<string, ReadingSectionSummary>();
+  const partTitleLookup = new Map<number, string>();
+  const divisionTitleLookup = new Map<string, string>();
+  const entryTargetKeys = buildEntryTargetKeyMap(entries, layer);
+  const unreadTargetKeys = buildEntryTargetKeyMap(unreadEntries, layer);
+  const candidateCounts = new Map<string, Set<string>>();
+
+  for (const entry of entries) {
+    for (const section of entry.sections) {
+      if (!sectionLookup.has(section.sectionCode)) {
+        sectionLookup.set(section.sectionCode, section);
+      }
+      if (section.partTitle && !partTitleLookup.has(section.partNumber)) {
+        partTitleLookup.set(section.partNumber, section.partTitle);
+      }
+      if (section.divisionTitle && !divisionTitleLookup.has(section.divisionId)) {
+        divisionTitleLookup.set(section.divisionId, section.divisionTitle);
+      }
+    }
+
+    const targetKeys = entryTargetKeys.get(entry.checklistKey) ?? [];
+    targetKeys.forEach((key) => {
+      if (!totalTargets.has(key)) {
+        totalTargets.set(key, coverageWeightForKey(key, layer, options));
+      }
+    });
+
+    if (completedChecklistKeys.has(entry.checklistKey)) {
+      targetKeys.forEach((key) => coveredTargets.add(key));
+    }
+  }
+
+  for (const entry of unreadEntries) {
+    const targetKeys = unreadTargetKeys.get(entry.checklistKey) ?? [];
+    for (const key of targetKeys) {
+      if (!candidateCounts.has(key)) {
+        candidateCounts.set(key, new Set());
+      }
+      candidateCounts.get(key)!.add(entry.checklistKey);
+    }
+  }
+
+  const unresolvedKeys = Array.from(totalTargets.keys()).filter((key) => !coveredTargets.has(key));
+  const itemLabelPlural = options.itemLabelPlural ?? 'items';
+
+  if (layer === 'subsection') {
+    const grouped = new Map<string, {
+      section: ReadingSectionSummary;
+      uncoveredCount: number;
+      candidateKeys: Set<string>;
+    }>();
+
+    for (const key of unresolvedKeys) {
+      const [sectionCode] = key.split('::');
+      const section = sectionLookup.get(sectionCode);
+      if (!section) continue;
+
+      if (!grouped.has(sectionCode)) {
+        grouped.set(sectionCode, {
+          section,
+          uncoveredCount: 0,
+          candidateKeys: new Set(),
+        });
+      }
+
+      const group = grouped.get(sectionCode)!;
+      group.uncoveredCount += totalTargets.get(key) ?? coverageWeightForKey(key, layer, options);
+      (candidateCounts.get(key) ?? []).forEach((checklistKey) => group.candidateKeys.add(checklistKey));
+    }
+
+    return Array.from(grouped.values())
+      .sort((left, right) => {
+        if (right.uncoveredCount !== left.uncoveredCount) {
+          return right.uncoveredCount - left.uncoveredCount;
+        }
+        if (right.candidateKeys.size !== left.candidateKeys.size) {
+          return right.candidateKeys.size - left.candidateKeys.size;
+        }
+        return sectionSort(left.section, right.section);
+      })
+      .slice(0, options.limit ?? 5)
+      .map(({ section, uncoveredCount, candidateKeys }) => {
+        const candidateLabel = candidateKeys.size === 1 ? itemLabelPlural.replace(/s$/, '') : itemLabelPlural;
+        return {
+          key: section.sectionCode,
+          label: `Section ${section.sectionCodeDisplay}: ${section.title}`,
+          href: sectionUrl(section.sectionCode, baseUrl),
+          uncoveredCount,
+          candidateCount: candidateKeys.size,
+          description: `${uncoveredCount} uncovered ${uncoveredCount === 1 ? 'Subsection' : 'Subsections'} · ${candidateKeys.size} unread ${candidateLabel} can still help here`,
+        };
+      });
+  }
+
+  return unresolvedKeys
+    .map((key) => {
+      const uncoveredCount = totalTargets.get(key) ?? coverageWeightForKey(key, layer, options);
+      const candidateCount = candidateCounts.get(key)?.size ?? 0;
+      const candidateLabel = candidateCount === 1 ? itemLabelPlural.replace(/s$/, '') : itemLabelPlural;
+
+      if (layer === 'part') {
+        const partNumber = Number(key);
+        const partTitle = partTitleLookup.get(partNumber);
+        return {
+          key,
+          label: partTitle ? `Part ${key}: ${partTitle}` : `Part ${key}`,
+          href: partUrl(partNumber, baseUrl),
+          uncoveredCount,
+          candidateCount,
+          description: `${candidateCount} unread ${candidateLabel} can still help cover this Part`,
+        };
+      }
+
+      if (layer === 'division') {
+        const divisionTitle = divisionTitleLookup.get(key);
+        return {
+          key,
+          label: divisionTitle ? `Division ${key}: ${divisionTitle}` : `Division ${key}`,
+          href: divisionUrl(key, baseUrl),
+          uncoveredCount,
+          candidateCount,
+          description: `${candidateCount} unread ${candidateLabel} can still help cover this Division`,
+        };
+      }
+
+      const section = sectionLookup.get(key);
+      return {
+        key,
+        label: section ? `Section ${section.sectionCodeDisplay}: ${section.title}` : `Section ${key}`,
+        href: sectionUrl(key, baseUrl),
+        uncoveredCount,
+        candidateCount,
+        description: `${candidateCount} unread ${candidateLabel} can still help cover this Section`,
+      };
+    })
+    .sort((left, right) => {
+      if (right.uncoveredCount !== left.uncoveredCount) {
+        return right.uncoveredCount - left.uncoveredCount;
+      }
+      if (right.candidateCount !== left.candidateCount) {
+        return right.candidateCount - left.candidateCount;
+      }
+      if (layer === 'part') {
+        return Number(left.key) - Number(right.key);
+      }
+      return left.label.localeCompare(right.label, undefined, { numeric: true, sensitivity: 'base' });
+    })
+    .slice(0, options.limit ?? 5);
 }

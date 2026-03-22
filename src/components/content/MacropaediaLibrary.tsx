@@ -16,6 +16,7 @@ import {
   type CoverageLayer,
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
+import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -194,6 +195,15 @@ export default function MacropaediaLibrary({
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 
+      <CoverageGapPanel
+        entries={entries}
+        checklistState={checklistState}
+        activeLayer={activeLayer}
+        baseUrl={baseUrl}
+        itemLabelPlural="articles"
+        isComplete={isLayerComplete}
+      />
+
       <ReadingSpreadPath
         isOpen={spreadPathOpen}
         onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
@@ -217,6 +227,9 @@ export default function MacropaediaLibrary({
             <h2 class="font-serif text-2xl text-gray-900">Macropaedia Article List</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the full historical Macropaedia list and sort it by coverage across Parts, Divisions, or Sections.
+            </p>
+            <p class="mt-1 text-xs text-gray-500">
+              These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -256,9 +269,9 @@ export default function MacropaediaLibrary({
               onChange={(event) => setSortField((event.currentTarget as HTMLSelectElement).value as SortField)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="part">Parts covered</option>
-              <option value="division">Divisions covered</option>
-              <option value="section">Sections covered</option>
+              <option value="part">Most Parts covered</option>
+              <option value="division">Most Divisions covered</option>
+              <option value="section">Most Sections covered</option>
               <option value="title">Title</option>
             </select>
           </label>

@@ -18,6 +18,7 @@ import {
 } from '../../utils/wikipediaOutlineFilter';
 import { getReadingPreference } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
+import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 
 export interface WikipediaArticleRef extends SearchableWikiArticle {
   rationale?: string;
@@ -141,6 +142,9 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
               const mp = selection
                 ? Math.round(Math.min((article.filterScore || 0) / maxScore, 1) * 100)
                 : (article.matchPercent || 0);
+              const precision = mappingPrecisionBadge(
+                classifyMappingPrecision(article.relevantPathsAI, selection?.outlinePath ?? null)
+              );
 
               return (
                 <WikipediaCard
@@ -149,7 +153,10 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
                   displayTitle={article.displayTitle}
                   rationale={article.rationale}
                   baseUrl={baseUrl}
+                  sectionCode={sectionCode}
                   matchPercent={mp}
+                  precisionLabel={precision.label}
+                  precisionClassName={precision.className}
                   checked={isChecked}
                   onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
                 />

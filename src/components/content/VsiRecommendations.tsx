@@ -16,11 +16,13 @@ import {
 } from '../../utils/vsiOutlineFilter';
 import { getReadingPreference } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
+import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 
 export interface VsiMapping {
   vsiTitle: string;
   vsiAuthor: string;
   rationaleAI: string;
+  relevantPathsAI?: string[];
   publicationYear?: number;
   edition?: number;
   subject?: string;
@@ -130,6 +132,9 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                 ? Math.max(...visibleMappings.map((m: any) => m.filterScore ?? 0), 1)
                 : Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
               const matchPercent = Math.round(Math.min(relevanceScore / maxScore, 1) * 100);
+              const precision = mappingPrecisionBadge(
+                classifyMappingPrecision(mapping.relevantPathsAI, selection?.outlinePath ?? null)
+              );
 
               return (
                 <VsiCard
@@ -142,6 +147,8 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
                   matchPercent={matchPercent}
+                  precisionLabel={precision.label}
+                  precisionClassName={precision.className}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />

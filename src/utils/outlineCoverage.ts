@@ -72,6 +72,18 @@ export function buildSubsectionCoverageKeys(
   relevantPaths: string[] | undefined,
   sectionOutlinePathIndex: Record<string, string[]>
 ): string[] {
+  return analyzeSubsectionCoverage(sectionCode, relevantPaths, sectionOutlinePathIndex).coverageKeys;
+}
+
+export function analyzeSubsectionCoverage(
+  sectionCode: string,
+  relevantPaths: string[] | undefined,
+  sectionOutlinePathIndex: Record<string, string[]>
+): {
+  coverageKeys: string[];
+  matchedPathKeys: string[];
+  usedFallback: boolean;
+} {
   const validSectionPaths = sectionOutlinePathIndex[sectionCode] ?? [];
   const normalizedRelevantPaths = Array.from(new Set(
     (relevantPaths ?? [])
@@ -90,5 +102,13 @@ export function buildSubsectionCoverageKeys(
       ? normalizedRelevantPaths
       : validSectionPaths;
 
-  return pathsToUse.map((path) => `${sectionCode}::${path}`);
+  const usedFallback = normalizedRelevantPaths.length === 0;
+
+  return {
+    coverageKeys: pathsToUse.map((path) => `${sectionCode}::${path}`),
+    matchedPathKeys: usedFallback
+      ? []
+      : pathsToUse.map((path) => `${sectionCode}::${path}`),
+    usedFallback,
+  };
 }
