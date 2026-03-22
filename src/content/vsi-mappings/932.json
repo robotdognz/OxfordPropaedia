@@ -7,20 +7,21 @@
       "relevantPathsAI": [
         "A.1.b",
         "A.3",
-        "C.1.c",
-        "C.2.b.iii"
+        "B.2.a",
+        "C.1.c"
       ],
-      "rationaleAI": "Literary culture connects to T'ang developments (A.1.b), Sung achievements (A.3), Ming literature (C.1.c), and Ch'ing cultural developments (C.2.b.iii)."
+      "rationaleAI": "Chinese literary culture encompassing poetry, drama, fiction, and philosophy across dynastic periods. Tang cultural life including poetry and literary developments (A.1.b), Sung cultural and intellectual developments in literature (A.3), Yuan arts and literary production (B.2.a), and Ming cultural life including developments in literature and scholarship (C.1.c)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
         "A.3",
+        "B.2.a",
         "C.1.c",
         "C.2.b.iii"
       ],
-      "rationaleAI": "Neo-Confucianism's resurgence addresses Sung cultural developments (A.3). Qing-era Confucianism connects to C.2.b.iii."
+      "rationaleAI": "Confucianism's impact on state ideology through civil service examinations and moral governance. Resurgence of Neo-Confucianism as a Sung cultural development (A.3), the status of Confucian scholars under Mongol rule (B.2.a), Ming philosophy and religion (C.1.c), and cultural developments during the Ch'ing including government scholarship (C.2.b.iii)."
     },
     {
       "vsiTitle": "The Mongols",
@@ -30,9 +31,9 @@
         "B.1",
         "B.1.a",
         "B.1.b",
-        "B.2"
+        "B.2.b"
       ],
-      "rationaleAI": "Mongol Empire directly addresses the conquest of China (B.1.a), Yuan dynasty (B.1.b), and cultural contacts with the West (B.2.b)."
+      "rationaleAI": "Mongol Empire covering Genghis Khan's conquest of the Chin and Kublai Khan's establishment of the Yuan dynasty (B.1.a). Mongol governance, nonassimilation with Chinese, and expansion of trade (B.1.b). Commercial and cultural contacts between Yuan China and the West (B.2.b)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -41,51 +42,56 @@
         "A.1.b",
         "B.2.a"
       ],
-      "rationaleAI": "Buddhist influences connect to late T'ang (A.1.b) and Yuan religious toleration (B.2.a)."
+      "rationaleAI": "Buddhism's growing influence during the Tang period as a major cultural and religious force (A.1.b). Religious toleration and patronage of Buddhism under Mongol Yuan rule (B.2.a)."
     },
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides context for understanding the Ming and Ch'ing dynasties' legacy and the tributary system discussed in subsection C."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Modern China from the late imperial period, providing context for understanding the Ch'ing dynasty's transition to modernity including the Manchu administrative and political framework (C.2)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
         "A.1.c",
-        "B.1.b"
+        "B.1.b",
+        "B.2.b"
       ],
-      "rationaleAI": "Trade networks relate to Sung trade expansion (A.1.c) and Yuan commerce (B.1.b)."
+      "rationaleAI": "Central Eurasian trade routes covering agricultural advances and expansion of trade during the late Tang and Sung periods (A.1.c), Mongol expansion of trade networks with the capital at Ta-tu (B.1.b), and commercial and cultural contacts between Yuan China and the West (B.2.b)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.e",
         "B.1",
-        "C.1",
-        "C.2"
+        "C.1.a",
+        "C.1.a.i",
+        "C.2.a",
+        "C.2.a.i"
       ],
-      "rationaleAI": "Dynastic succession connects to Sung (A.1), Yuan (B.1), Ming (C.1), and Ch'ing (C.2)."
+      "rationaleAI": "Dynastic rule covering succession, governance, and family-based legitimacy. Relevant to the Northern Sung dynasty's foundation and expansion (A.1.e), Mongol conquest and Yuan establishment (B.1), Ming dynasty foundation and pattern of succession (C.1.a, C.1.a.i), and Manchu rise to power preserving Ming administration (C.2.a, C.2.a.i)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "C.1.b"
+        "C.1.b",
+        "C.2.a.ii"
       ],
-      "rationaleAI": "Global exploration connects to Ming foreign relations (C.1.b)."
+      "rationaleAI": "Global exploration relevant to developments in Ming foreign relations including maritime expeditions (C.1.b) and early Ch'ing foreign relations in Asia and contacts with the West (C.2.a.ii)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
         "A.1.c",
-        "C.1.b",
         "C.2.b.i"
       ],
-      "rationaleAI": "Economic development connects to Sung economics (A.1.c), Ming policy (C.1.b), and Ch'ing agriculture and commerce (C.2.b.i)."
+      "rationaleAI": "Comparative global economic development relevant to Sung social and economic developments including manufacturing advances (A.1.c) and mid-Ch'ing advances in agriculture, expansion of crafts and industries, and commerce (C.2.b.i)."
     }
   ],
   "_curatedBy": "ai",

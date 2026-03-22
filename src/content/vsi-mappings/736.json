@@ -6,12 +6,26 @@
       "vsiAuthor": "Alex Roland",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.4.a.i",
+        "A.4.a.ii",
+        "A.4.a.iii",
+        "A.4.b",
+        "A.4.c",
+        "A.5",
         "B",
         "C",
+        "C.1",
+        "C.2",
+        "C.4",
         "D",
+        "E",
         "F"
       ],
-      "rationaleAI": "Co-evolution of weapons systems, military tactics, and technological capabilities across land, sea, air, and digital domains covers offensive weaponry (A), defensive weaponry (B), weapon platforms (C), engineering (D), and electronics in information warfare (F)."
+      "rationaleAI": "Comprehensive co-evolution of weapons and military technology from prehistory to autonomous warfare. Covers early hand-powered weapons (A.1), gunpowder weapons (A.2), explosives (A.3), self-propelled missiles across land, sea, and air platforms (A.4, A.4.a.i, A.4.a.ii, A.4.a.iii) with rocket, jet, and propeller propulsion (A.4.b) and guidance systems (A.4.c), nuclear weapons (A.5), defensive measures (B), weapon platforms including land vehicles, surface ships, submarines, and aircraft (C.1, C.2, C.4), engineering support (D), logistics of supply and transport (E), and information warfare and electronics (F)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
@@ -20,9 +34,15 @@
         "A.5",
         "A.5.a",
         "A.5.b",
+        "A.4.a.i",
+        "A.4.a.ii",
+        "A.4.d",
+        "A.4.e",
+        "B.1.c",
+        "B.2.e",
         "B.3"
       ],
-      "rationaleAI": "Atomic fission and thermonuclear fusion weapons directly address nuclear weapons (A.5), fission and fusion energy sources (A.5.a), blast, heat, and fallout effects (A.5.b), and missile defense (B.3) through Strategic Defense Initiative coverage."
+      "rationaleAI": "Nuclear weapons covering fission and fusion energy sources (A.5.a), blast, heat, and radioactive fallout effects (A.5.b). Addresses ballistic missiles including land-based (A.4.a.i), submarine-launched (A.4.a.ii), warhead payloads including multiple reentry vehicles (A.4.d), and nuclear warheads (A.4.e). Covers Strategic Defense Initiative as missile defense (B.3), protection against nuclear weapons (B.1.c), and hardened missile silos (B.2.e)."
     },
     {
       "vsiTitle": "Modern War",
@@ -34,120 +54,150 @@
         "A.6",
         "C"
       ],
-      "rationaleAI": "Chemical warfare, nuclear proliferation, and terrorism cover explosives (A.3), nuclear weapons (A.5), chemical and biological weapons (A.6), and the evolution of weapon platforms (C) across modern conflicts."
+      "rationaleAI": "Nature and conduct of modern warfare covering explosives and bombing (A.3), nuclear proliferation (A.5), chemical warfare (A.6), and weapon platforms across land, sea, and air (C). Addresses military strategy, guerrilla tactics, and the relationship between technology and state formation."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
       "relevantPathsAI": [
         "A.1",
+        "A.1.a",
         "A.1.b",
         "A.1.c",
         "A.1.d",
-        "B.1",
-        "B.2.b"
+        "B.1.a",
+        "B.2.b",
+        "C.1.a"
       ],
-      "rationaleAI": "Greek and Roman warfare covering weapons, siege warfare, and combat addresses early hand-powered shock weapons (A.1.b), missile weapons (A.1.c), mechanical weapons like catapults (A.1.d), personal armor (B.1), and permanent fortification before gunpowder (B.2.b)."
+      "rationaleAI": "Ancient warfare covering early hand-powered weapons including construction materials of bronze and iron (A.1.a), shock weapons like swords (A.1.b), missile weapons like spears and javelins (A.1.c), and mechanical weapons like battering rams and catapults in siege warfare (A.1.d). Covers personal armor and shields (B.1.a), permanent fortification including masonry citadels (B.2.b), and animal mounts such as horses and elephants as weapon platforms (C.1.a)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
       "relevantPathsAI": [
         "A",
-        "B",
-        "D"
+        "A.3",
+        "A.4",
+        "D",
+        "E",
+        "F"
       ],
-      "rationaleAI": "Strategic theory covering annihilation, deterrence, coercion, and cyber warfare connects to offensive weaponry usage (A), defensive considerations (B), and engineering support (D)."
+      "rationaleAI": "Military strategy spanning ancient to contemporary warfare covering annihilation, attrition, deterrence, coercion, terror, and cyber warfare. Addresses the interplay of weapons systems with tactics (A), explosives and bombing (A.3), self-propelled missiles (A.4), engineering and strategic support (D), logistics of supply and transport (E), and electronic/cyber capabilities (F)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
       "relevantPathsAI": [
+        "A.3",
+        "A.4.a.iii",
         "C.4",
         "C.4.a",
+        "C.4.a.i",
+        "C.4.a.ii",
+        "C.4.a.iii",
         "C.4.b"
       ],
-      "rationaleAI": "Air power development covering aircraft, weapons systems, and unmanned combat directly addresses fixed-wing aircraft (C.4.a) and helicopters (C.4.b)."
+      "rationaleAI": "Military history of aerial warfare covering bombs and air-delivered explosives (A.3), air-to-air and cruise missiles (A.4.a.iii), fixed-wing aircraft with propeller and jet propulsion (C.4.a, C.4.a.i), aircraft configurations (C.4.a.ii), fighter and bomber types (C.4.a.iii), and helicopters (C.4.b). Addresses manned versus unmanned combat and technological evolution in aircraft."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
       "relevantPathsAI": [
         "A",
+        "B",
         "C",
-        "D"
+        "D",
+        "E"
       ],
-      "rationaleAI": "Four centuries of American military development covering technological impacts on military organization addresses offensive weaponry evolution (A), weapon platforms (C), and engineering support (D)."
+      "rationaleAI": "Four hundred years of American military development covering technological developments in weaponry (A), defensive measures (B), weapon platforms across service branches (C), engineering (D), and the logistics challenges of volunteer-dominated forces including supply, transport, and services (E)."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
       "relevantPathsAI": [
+        "A.2",
         "C.2",
+        "C.2.a",
         "C.2.b",
-        "C.2.c"
+        "C.2.c",
+        "C.3"
       ],
-      "rationaleAI": "Naval history from sailing ships to modern platforms directly addresses surface ships from sail-powered vessels (C.2.b) to steam-powered warships (C.2.c)."
+      "rationaleAI": "Naval history covering technological evolution from sailing ships to modern platforms. Addresses naval guns and artillery (A.2), oar- and sail-powered vessels (C.2.a, C.2.b), steam-powered battleships and aircraft carriers (C.2.c), and submarine warfare (C.3). Covers amphibious operations and evolving strategic doctrines."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
         "A.2",
+        "A.2.c",
         "A.3",
         "B.2.a",
-        "B.2.d"
+        "C.1.d",
+        "D",
+        "E"
       ],
-      "rationaleAI": "Trench warfare, mortar technology, and propaganda address gunpowder weapons (A.2), explosives (A.3), field fortification including trenches (B.2.a), and permanent fortification in the modern era (B.2.d)."
+      "rationaleAI": "WWI military technology including artillery such as mortars (A.2.c), explosives (A.3), trench warfare as field fortification (B.2.a), and tanks and armored vehicles as internal combustion weapon platforms (C.1.d). Covers engineering support for trenches and battlefields (D) and the logistics of supplying mass armies (E)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
       "relevantPathsAI": [
+        "A",
         "A.3",
-        "A.4",
-        "C.1.d",
-        "C.2.c",
-        "C.4.a"
+        "A.5",
+        "C",
+        "C.2",
+        "C.4",
+        "D.2",
+        "E"
       ],
-      "rationaleAI": "WWII campaigns covering air, land, and sea warfare address explosives and bombing (A.3), self-propelled missiles (A.4), tanks with internal combustion (C.1.d), steam-powered naval vessels (C.2.c), and military aircraft (C.4.a)."
+      "rationaleAI": "Global military conflict covering explosives and bombing campaigns (A.3), nuclear weapons at Hiroshima and Nagasaki (A.5), weapon platforms across land, sea, and air including the Battle of the Atlantic (C.2) and air power (C.4). Addresses strategic infrastructure including roads, bridges, and ports (D.2) and home front mobilization as logistics (E)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
       "relevantPathsAI": [
+        "A.1",
         "A.2",
+        "A.2.a",
+        "A.2.b",
         "A.2.c",
         "A.2.d",
+        "A.2.e.i",
+        "A.2.e.ii",
+        "B.2.a",
         "C.1.a"
       ],
-      "rationaleAI": "Napoleonic military tactics and weaponry address gunpowder weapons (A.2), artillery (A.2.c), small arms (A.2.d), and animal mounts in cavalry (C.1.a)."
+      "rationaleAI": "Napoleonic-era weaponry including transition from hand weapons (A.1) to gunpowder weapons with cannon and muskets (A.2). Covers construction materials of cast bronze and iron (A.2.a), muzzle-loading and later breech-loading systems (A.2.b), artillery including cannon (A.2.c), small arms including muskets and rifles (A.2.d), black powder propellant (A.2.e.i), and projectiles including cannonballs and shot (A.2.e.ii). Addresses field fortifications (B.2.a) and cavalry as animal mount platforms (C.1.a)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
       "relevantPathsAI": [
-        "A.4",
+        "A.4.a.i",
         "A.5",
-        "B.3"
+        "B.3",
+        "F"
       ],
-      "rationaleAI": "Nuclear deterrence and superpower rivalry address self-propelled missiles (A.4), nuclear weapons (A.5), and missile defense systems (B.3)."
+      "rationaleAI": "Cold War covering nuclear deterrence and ballistic missiles including land-based ICBMs (A.4.a.i), nuclear weapons arsenal competition (A.5), missile defense systems including surface-to-air missiles (B.3), and the role of electronics and surveillance technology in superpower rivalry (F)."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
-        "A.2"
+        "D",
+        "E"
       ],
-      "rationaleAI": "Clausewitz's military theory rooted in Napoleonic-era combat addresses the strategic use of gunpowder weapons (A.2) in the context of warfare theory."
+      "rationaleAI": "Foundational military theory addressing war as continuation of politics, friction in military operations, and the distinction between absolute and limited war. Covers strategic and tactical support concepts (D) and the relationship between logistics, supply, and military objectives (E)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
       "relevantPathsAI": [
+        "F",
         "F.1"
       ],
-      "rationaleAI": "Military codes and ciphers from ancient times to modern digital applications connect to the use of communications technology in military electronics (F.1)."
+      "rationaleAI": "Cryptography spanning ancient military codes to modern digital applications, covering information security for national defense -- directly relevant to electromagnetic communication, detection, and electronic warfare capabilities (F, F.1)."
     },
     {
       "vsiTitle": "Nuclear power",
@@ -155,15 +205,15 @@
       "relevantPathsAI": [
         "A.5.a"
       ],
-      "rationaleAI": "Nuclear fission and fusion technology provides the scientific foundation for nuclear weapons energy sources (A.5.a)."
+      "rationaleAI": "Nuclear fission and fusion technologies providing the scientific foundation for nuclear weapons energy sources (A.5.a)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "C.4.b"
+        "F"
       ],
-      "rationaleAI": "Autonomous machines for space exploration and military applications connect to unmanned aerial combat, addressed in military aircraft and helicopters (C.4.b)."
+      "rationaleAI": "Robotics covering autonomous and semi-autonomous machines with applications in sensing, actuation, and decision-making relevant to military electronics, unmanned systems, and electronic warfare capabilities (F)."
     },
     {
       "vsiTitle": "Terrorism",
@@ -172,7 +222,7 @@
         "A.3",
         "A.6"
       ],
-      "rationaleAI": "Terrorist violence including suicide attacks, September 2001, and ISIS connect to explosives (A.3) and the broader use of unconventional weapons including chemical and biological agents (A.6)."
+      "rationaleAI": "Terrorism covering explosive devices such as bombs and improvised weapons (A.3), and chemical and biological weapons threats in the context of terrorist attacks (A.6). Addresses counterterrorist measures and the relationship between military technology and asymmetric warfare."
     }
   ],
   "_curatedBy": "ai",

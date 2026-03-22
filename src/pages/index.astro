@@ -245,74 +245,89 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         </h2>
         <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
           Start with the whole outline if you want the broadest possible spread, use the circle when you
-          want to focus that coverage through one field or the overlap between two, and move into divisions
-          and sections when you want precision.
+          want to focus that coverage through one field or the overlap between two, and move into Divisions
+          and Sections when you want precision.
         </p>
 
         <div class="mt-6 grid gap-4 lg:grid-cols-3">
-          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+          <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
             <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              1. Whole outline
+              1. Whole Outline
             </p>
             <h3 class="mt-2 font-serif text-xl text-slate-900">Maximise overall knowledge</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
+            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
               Use the global reading paths to cover as much of the outline as possible at the Part,
               Division, Section, and Subsection levels.
             </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <a
-                href={`${base}/vsi`}
-                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
-              >
-                Oxford VSI
-              </a>
-              <a
-                href={`${base}/wikipedia`}
-                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
-              >
-                Wikipedia
-              </a>
-              <a
-                href={`${base}/macropaedia`}
-                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
-              >
-                Macropaedia
-              </a>
+            <div class="mt-4 border-t border-slate-200 pt-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                Choose a Reading List
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a
+                  href={`${base}/vsi`}
+                  class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+                >
+                  Oxford VSI
+                </a>
+                <a
+                  href={`${base}/wikipedia`}
+                  class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+                >
+                  Wikipedia
+                </a>
+                <a
+                  href={`${base}/macropaedia`}
+                  class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+                >
+                  Macropaedia
+                </a>
+              </div>
             </div>
           </article>
 
-          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+          <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
             <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              2. Selected field or fields
+              2. Selected Fields
             </p>
             <h3 class="mt-2 font-serif text-xl text-slate-900">Focus coverage through the circle</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
+            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
               Keep one Part at the top to maximise coverage from that field outward, or move another Part
               into the centre to maximise coverage through the overlap between two fields.
             </p>
             <p class="mt-3 text-xs leading-5 text-slate-500">
               When the circle gets you close, open a Division or Section to keep the same logic but at a narrower topic level.
             </p>
-            <a
-              href="#circle-of-learning"
-              class="mt-4 inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
-            >
-              Jump to the circle
-            </a>
+            <div class="mt-4 border-t border-slate-200 pt-4">
+              <a
+                href="#circle-of-learning"
+                class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
+              >
+                Jump to the circle
+              </a>
+            </div>
           </article>
 
-          <article class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
+          <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
             <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              3. Specific topic
+              3. Specific Topic
             </p>
             <h3 class="mt-2 font-serif text-xl text-slate-900">Use the outline for precision</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
+            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
               When you want exact topics rather than field-level guidance, open a Division or Section and
               let the outline structure narrow the recommendations for you.
             </p>
             <p class="mt-4 text-xs leading-5 text-slate-500">
               The circle and the sidebar both lead into this deeper level of navigation.
             </p>
+            <div class="mt-4 border-t border-slate-200 pt-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                Best entry points
+              </p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                Use the sidebar outline, or open a Part from the circle and narrow into a Division or Section from there.
+              </p>
+            </div>
           </article>
         </div>
       </div>
@@ -321,7 +336,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
     <section id="circle-of-learning" class="mx-auto max-w-6xl px-2 py-14 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-          Selected Field Or Fields
+          Selected Fields
         </p>
         <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
           The Circle of Learning
@@ -330,10 +345,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           Use the circle to move across the ten Parts of the outline and surface readings that cover the
           most new ground from where you start. Keep one Part at the top to explore it on its own, or
           move another into the centre to compare two fields. Open a Division to go deeper into the
-          outline, and use the essay below if you want the background behind Adler&apos;s design.
-        </p>
-        <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-500">
-          The circle helps you choose the right field or overlap. Divisions and Sections are where that same search becomes precise.
+          outline when you want more precision, and use the essay below if you want the background behind Adler&apos;s design.
         </p>
       </div>
 

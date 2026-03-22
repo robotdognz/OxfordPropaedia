@@ -5,49 +5,56 @@
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
       "relevantPathsAI": [
+        "A",
+        "B.4",
         "C",
         "C.1",
         "C.1.a",
         "C.1.b",
         "C.2",
         "C.2.a",
-        "C.2.d"
+        "C.2.b",
+        "C.2.c",
+        "C.2.d",
+        "C.2.e",
+        "E"
       ],
-      "rationaleAI": "Directly addresses the Mongol Empire under Genghis Khan (C.1.a), successors (C.1.b), Yuan dynasty (C.2.a), and Golden Horde (C.2.d)."
+      "rationaleAI": "The Mongol Empire directly covering the establishment of a united empire by Genghis Khan (C.1.a), division among his sons and further expansion (C.1.b), completion of the conquest of China and Yuan dynasty (C.2.a), the Chagatai khanate (C.2.b), Timurid dynasty connections (C.2.c), the Golden Horde and successor states (C.2.d), and Mongolia's later disunity (C.2.e). Mongol military campaigns relevant to the Mongolian and Tungusic states preceding the empire (B.4) and the waning of nomad power (E). Covers steppe peoples, cultures, and interactions with neighboring civilizations (A)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
         "A",
-        "B.3",
+        "B.3.a",
+        "B.3.b",
         "C.2.b",
-        "C.2.c"
+        "C.2.c",
+        "E"
       ],
-      "rationaleAI": "Trade routes connect to steppe peoples (A), Turkistan (B.3), Chagatai khanate (C.2.b), and Timurid Samarkand (C.2.c)."
+      "rationaleAI": "Central Eurasian trade routes covering the peoples and cultures of the steppes and their interactions (A). Addresses West Turkistan's Muslim rule and khanates (B.3.a), East Turkistan's Uighur tribes and Qarakhanid rule (B.3.b), the Chagatai khanate of Turkistan (C.2.b), Timurid Samarkand (C.2.c), and the waning of nomad power through Russian expansion (E)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
       "vsiAuthor": "Matthew T. Kapstein",
       "relevantPathsAI": [
+        "C.2.e",
         "D",
         "D.1",
         "D.1.a",
         "D.1.b",
-        "D.1.c",
-        "C.2.e"
+        "D.1.c"
       ],
-      "rationaleAI": "Tibetan Buddhist development addresses Tibet's Buddhism (D.1.a-c) and spread among Mongol peoples (C.2.e)."
+      "rationaleAI": "Thirteen centuries of Tibetan Buddhist development directly covering Tibet's legendary origins and introduction of Buddhism (D.1.a), Tibetan disunity and the eclipse and resurgence of Buddhism with Mongol conquest (D.1.b), and rule by the Dge-lugs-pa (Yellow Hat) monastic order and unification under Chinese overlordship (D.1.c). The spread of Tibetan Buddhism among Mongols connects to Mongolia's revival of Buddhism (C.2.e)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
         "D.1.a",
-        "D.1.b",
-        "C.2.e"
+        "D.1.b"
       ],
-      "rationaleAI": "Vajrayana and Tibetan Buddhism connect to Tibet (D.1.a, D.1.b) and Mongolia (C.2.e)."
+      "rationaleAI": "Buddhism covering Vajrayana traditions relevant to the introduction of Buddhism in Tibet (D.1.a) and its resurgence after periods of eclipse during Tibetan disunity (D.1.b). Tibetan Buddhism and the Dalai Lama connect to the development of Buddhist institutions across Inner Asia."
     },
     {
       "vsiTitle": "Russian History",
@@ -56,7 +63,7 @@
         "C.2.d",
         "E"
       ],
-      "rationaleAI": "Golden Horde's legacy connects to C.2.d. Russian expansion connects to waning nomad power (E)."
+      "rationaleAI": "Russian history covering the Golden Horde's legacy and Kipchak empire in eastern Europe (C.2.d), and Russian expansion into Siberia and western Turkistan representing the waning of nomad power (E)."
     },
     {
       "vsiTitle": "Islam",
@@ -65,16 +72,17 @@
         "B.3.a",
         "B.5"
       ],
-      "rationaleAI": "Islam in Central Asia connects to Muslim rule in West Turkistan (B.3.a) and Afghanistan (B.5)."
+      "rationaleAI": "Islam as a world religion relevant to Muslim rule in West Turkistan and the Uzbek and Kazakh khanates (B.3.a), and the development of Afghanistan under Muslim control from the 7th century (B.5)."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
         "B.5",
-        "C.2.c"
+        "C.2.c",
+        "C.2.d"
       ],
-      "rationaleAI": "Iranian civilization connects to Afghanistan (B.5) and the Timurid dynasty (C.2.c)."
+      "rationaleAI": "Iranian civilization relevant to the development of Afghanistan under various rulers including Achaemenians and the Timurid dynasty (B.5, C.2.c). The Iranian Il-Khans as a Mongol successor state (C.2.d)."
     },
     {
       "vsiTitle": "Dynasty",
@@ -83,7 +91,7 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Dynastic succession connects to Genghis Khan's division (C.1.b) and successor states (C.2)."
+      "rationaleAI": "Dynastic rule covering succession and governance relevant to the Mongol Empire's establishment under Genghis Khan and division among his sons (C.1), and the successor states including the Yuan, Chagatai, Timurid, and Il-Khan dynasties (C.2)."
     },
     {
       "vsiTitle": "Korea",
@@ -91,7 +99,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Korean interaction connects to Manchurian tribes and their penetration into Korea (B.2)."
+      "rationaleAI": "Korean peninsula history under the influence of neighboring powers relevant to Manchurian tribal relations with Korea, including Khitan and Juchen penetration into Korean territory (B.2)."
     },
     {
       "vsiTitle": "Alexander the Great",
@@ -99,7 +107,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Alexander's conquest of the Achaemenid Persian Empire including movements through Central Asia is relevant to the development of Afghanistan under Greek rule in the period following Alexander's campaigns."
+      "rationaleAI": "Alexander's conquest of the Achaemenid Empire extending to Central Asia, relevant to the development of Afghanistan under Greek rule following Achaemenian control (B.5)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
@@ -107,25 +115,25 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Covers the Hellenistic world from Alexander's death including successor states and multi-ethnic governance across territories extending to Central Asia, relevant to Afghanistan under Greek and later rule."
+      "rationaleAI": "Hellenistic world extending from the Rhone to the Indus, relevant to Greek rule in Afghanistan and Central Asia after Alexander, covering multi-ethnic governance in the region (B.5)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
         "B.3.a",
-        "B.5"
+        "B.5",
+        "C.2.c"
       ],
-      "rationaleAI": "Covers the rise and spread of Islam including the roles of Arabs, Persians, and Turks, directly relevant to Muslim rule in West Turkistan and the advent of Muslim control in Afghanistan in the 7th century."
+      "rationaleAI": "Islamic history covering the foundational roles of Arabs, Persians, and Turks relevant to Muslim rule in West Turkistan (B.3.a), the advent of Muslim control in Afghanistan in the 7th century (B.5), and Timurid Samarkand as an Islamic cultural center (C.2.c)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.2.b"
       ],
-      "rationaleAI": "Confucianism's impact on Chinese state ideology provides essential context for understanding Chinese cultural influence on Inner Asian peoples including the Hsiung-nu and Manchurian tribes through Han China and subsequent dynasties."
+      "rationaleAI": "Confucianism's influence on governance in territories including Manchuria, relevant to the Khitan and Juchen empires that penetrated into China and adopted Chinese institutional practices (B.2.b)."
     }
   ],
   "_curatedBy": "ai",

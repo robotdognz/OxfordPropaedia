@@ -6,10 +6,11 @@
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C"
+        "A.1",
+        "A.1.a",
+        "A.1.b"
       ],
-      "rationaleAI": "History of global exploration from ancient expeditions to volcanic and space exploration covers surface exploration (A), undersea exploration through maritime voyages (B), and space exploration (C)."
+      "rationaleAI": "History of global exploration covering scientific exploration determining Earth's properties (A.1.a) and resource exploration (A.1.b). Addresses surface exploration techniques from ancient expeditions through Enlightenment-era scientific voyages, extending to volcanic and space exploration (A, A.1)."
     },
     {
       "vsiTitle": "Geology",
@@ -19,27 +20,33 @@
         "A.1",
         "A.1.a",
         "A.1.b",
-        "A.2"
+        "A.2",
+        "A.2.a",
+        "A.2.b"
       ],
-      "rationaleAI": "Geology covering Earth's deep interior, surface features, resource discovery, and exploitation directly addresses surface and underground exploration (A), scientific determination of Earth's interior properties (A.1.a), resource exploration for ores, fuels, and water (A.1.b), and exploration methods (A.2)."
+      "rationaleAI": "Geology as a scientific discipline covering Earth's structure and composition -- scientific exploration of the Earth's interior (A.1.a). Addresses geological roles in resource discovery including minerals, fossil fuels, and water (A.1.b). Covers geophysical and geochemical methods (A.2.a) and direct methods through excavation, boring, and sampling of soil and rock (A.2.b)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
+        "A",
         "A.1.a",
+        "A.2",
         "A.2.a",
-        "B.2"
+        "B.1.c"
       ],
-      "rationaleAI": "Seismology, gravity, geomagnetism, and satellite-based measurement address scientific exploration of Earth's interior (A.1.a), indirect geophysical methods (A.2.a), and navigational methods for precise location (B.2)."
+      "rationaleAI": "Geophysics covering seismology, plate tectonics, and geomagnetism as indirect methods for exploring Earth's interior properties (A.1.a, A.2.a). Satellite-based measurement of gravitational and magnetic fields using GPS connects to remote sensing and satellite telemetry for undersea and surface exploration (A.2, B.1.c)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1.a",
+        "A.1.b",
+        "A.2.a"
       ],
-      "rationaleAI": "Plate tectonic theory explaining lithospheric movement, subduction, and geological processes directly addresses scientific determination of the properties of Earth's interior (A.1.a)."
+      "rationaleAI": "Plate tectonics explaining Earth's geological processes as scientific exploration of the Earth's interior properties (A.1.a). Practical applications in discovering mineral resources (A.1.b). Covers geophysical methods for understanding crustal structure and mantle dynamics (A.2.a)."
     },
     {
       "vsiTitle": "Oceans",
@@ -47,9 +54,11 @@
       "relevantPathsAI": [
         "B",
         "B.1",
+        "B.1.a",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Ocean science covering seafloor topography, currents, tides, and marine resources addresses undersea exploration (B), platforms for exploratory work (B.1), and oceanographic sampling and measurement (B.3)."
+      "rationaleAI": "Ocean science covering physical, chemical, biological, and geological dimensions of marine systems (B). Addresses seafloor topography and tectonic processes relevant to surface vessels and deep-sea drilling (B.1.a), navigational systems for establishing discovery locations (B.2), and oceanographic measurement techniques including acoustic methods (B.3)."
     },
     {
       "vsiTitle": "Marine biology",
@@ -58,61 +67,67 @@
         "B",
         "B.3"
       ],
-      "rationaleAI": "Marine ecosystem diversity and ocean circulation connect to undersea exploration (B) and developments in oceanographic measurement (B.3)."
+      "rationaleAI": "Ocean ecosystems covering ecological interactions and biogeochemical processes including ocean circulation patterns -- relevant to undersea exploration techniques (B). Addresses oceanographic sampling and measurement for marine research (B.3)."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
         "A",
-        "C.4"
+        "A.1.a",
+        "A.1.b"
       ],
-      "rationaleAI": "Antarctic exploration covering glaciology, paleoclimate ice core research, and connections to outer space research addresses surface exploration (A) and contributions to physical sciences from polar exploration (C.4)."
+      "rationaleAI": "Antarctic exploration covering the continent's extreme environment, glaciology, and paleoclimate research from ice cores -- scientific exploration determining Earth's properties (A.1.a). Addresses mining debates and resource potential (A.1.b) and connections to outer space research."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1.a",
+        "A.1.b"
       ],
-      "rationaleAI": "Arctic physical geography including ice masses, permafrost, and environmental transformation addresses surface exploration techniques and equipment (A)."
+      "rationaleAI": "Physical geography of the Arctic covering the cryosphere, permafrost, and ice masses -- scientific exploration of Earth's properties (A.1.a). Addresses resource competition and economic development in the region (A.1.b)."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
       "relevantPathsAI": [
         "C",
+        "C.2.b",
         "C.2.b.iii",
         "C.4"
       ],
-      "rationaleAI": "Planetary science covering the Solar System, exoplanets, and the Hubble Space Telescope addresses space exploration (C), unmanned spacecraft probing planets (C.2.b.iii), and contributions to physical sciences (C.4)."
+      "rationaleAI": "Planetary science covering the Solar System's origins and evolution (C). Addresses unmanned spacecraft probing the planets and their satellites (C.2.b.iii) and detection methods including the Hubble Space Telescope contributing to advances in physical sciences (C.4)."
     },
     {
       "vsiTitle": "Moons",
       "vsiAuthor": "David Rothery",
       "relevantPathsAI": [
-        "C.2.b.iii",
-        "C.4"
+        "C",
+        "C.2.b.iii"
       ],
-      "rationaleAI": "Natural satellites studied through space missions including New Horizons address unmanned spacecraft probing planets and their satellites (C.2.b.iii) and contributions to physical sciences (C.4)."
+      "rationaleAI": "Natural satellites from Galileo's telescopic discoveries to contemporary space missions such as New Horizons -- unmanned spacecraft probing planetary satellites (C.2.b.iii). Covers tidal heating as geological mechanism and the search for microbial life on ocean-bearing moons."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
       "relevantPathsAI": [
         "C",
+        "C.2.b",
         "C.4"
       ],
-      "rationaleAI": "Formation and evolution of planetary systems including exoplanetary discovery through modern telescopes addresses space exploration (C) and contributions to physical sciences (C.4)."
+      "rationaleAI": "Formation and evolution of planetary systems including exoplanetary discoveries through modern telescopes -- unmanned space probes expanding knowledge (C.2.b). New observational technologies enabling direct observation connecting to contributions of space exploration to advances in the physical sciences (C.4)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
+        "C",
         "C.2.b.ii",
         "C.4"
       ],
-      "rationaleAI": "Solar physics covering observational methods and solar missions addresses orbiting satellites for scientific purposes (C.2.b.ii) and contributions to physical sciences (C.4)."
+      "rationaleAI": "Solar physics covering observational methods and technological developments in solar missions -- orbiting satellites for scientific purposes studying natural phenomena of space (C.2.b.ii). Contributions of solar research to broader discoveries in astronomy and fundamental physics (C.4)."
     },
     {
       "vsiTitle": "Cosmology",
@@ -120,67 +135,76 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Physical cosmology studying the universe's origin and evolution, including Hubble Space Telescope contributions, addresses space exploration's contributions to physical sciences (C.4)."
+      "rationaleAI": "Physical cosmology studying the origin and structure of the universe, with the Hubble Space Telescope's observational contributions representing how space exploration advances the physical sciences (C.4)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
       "relevantPathsAI": [
+        "C",
+        "C.2.b.ii",
         "C.4"
       ],
-      "rationaleAI": "Physics of stars, galaxies, and cosmos using observational methods across the electromagnetic spectrum addresses contributions of space exploration to advances in physical sciences (C.4)."
+      "rationaleAI": "Physics of stars, galaxies, and cosmic phenomena using observational methods across the electromagnetic spectrum -- orbiting satellites for scientific purposes (C.2.b.ii). Rapid expansion of computational modelling as contributions of space exploration to physical sciences (C.4)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
       "relevantPathsAI": [
+        "C",
         "C.2.b.iii",
         "C.4"
       ],
-      "rationaleAI": "Search for life elsewhere in the solar system through comparative planetology addresses unmanned spacecraft probing planets (C.2.b.iii) and contributions to physical sciences (C.4)."
+      "rationaleAI": "Interdisciplinary study of life's potential distribution in the universe, applying principles to the search for life elsewhere in the solar system -- unmanned spacecraft probing planets and satellites (C.2.b.iii). Addresses how comparative planetology deepens understanding as contributions of space exploration to science (C.4)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
         "A.1.a",
+        "B.1.c",
         "C.2.b.i"
       ],
-      "rationaleAI": "Atmospheric science covering composition, greenhouse effect, and remote sensing addresses scientific exploration of Earth's properties (A.1.a) and sounding rockets exploring the upper atmosphere (C.2.b.i)."
+      "rationaleAI": "Atmospheric science covering physical and chemical properties of Earth's atmospheric layers -- scientific exploration of Earth's properties (A.1.a). Measurement techniques including remote sensing and satellite observations (B.1.c). Sounding rockets exploring the upper atmosphere (C.2.b.i)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
         "A.1.a",
-        "C.4"
+        "C.2.d"
       ],
-      "rationaleAI": "Interdisciplinary study of Earth as an integrated system covering atmosphere, biosphere, and oceans addresses scientific exploration of Earth's properties (A.1.a) and connects to contributions of space observation to Earth science (C.4)."
+      "rationaleAI": "Interdisciplinary study of Earth as an integrated system of atmosphere, biosphere, oceans, and rocks -- scientific exploration of Earth's properties and interior (A.1.a). Addresses Earth survey satellite applications for understanding planetary systems (C.2.d)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.1.b",
+        "A.2.b"
       ],
-      "rationaleAI": "Mineralogy covering mineral classification and geochemistry connects to resource exploration for ores and building materials (A.1.b)."
+      "rationaleAI": "Mineralogy covering major mineral families and analytical methods -- resource exploration for discovering sources of ores and building materials (A.1.b). Analytical techniques from X-ray diffraction to electron microscopy as direct methods of on-site testing and sampling (A.2.b)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.2.d",
+        "C.3.d.ii"
       ],
-      "rationaleAI": "Maritime navigation covering instruments and charting connects to navigational methods for establishing precise location in undersea exploration (B.2)."
+      "rationaleAI": "History and science of finding position using magnetic compasses, astrolabes, sextants, and modern electronic equipment -- navigational methods and systems for establishing precise locations (B.2). Earth-oriented navigation satellites (C.2.d) and navigation in space (C.3.d.ii)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
+        "C",
         "C.2.b.ii",
+        "C.3.b",
         "C.4"
       ],
-      "rationaleAI": "Space-based telescopes operating across the electromagnetic spectrum address orbiting satellites for scientific purposes (C.2.b.ii) and contributions to advances in physical sciences (C.4)."
+      "rationaleAI": "Telescope design from Galileo's instruments to modern space-based observatories -- orbiting satellites for scientific purposes in infrared, ultraviolet, X-ray, and gamma-ray wavelengths (C.2.b.ii). Advances in detector materials and mirror fabrication as spacecraft subsystem technology (C.3.b). Next-generation telescopes advancing physical sciences (C.4)."
     },
     {
       "vsiTitle": "Volcanoes",
@@ -188,25 +212,27 @@
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Volcanic processes as planetary-scale heat release mechanisms revealing tectonic forces address scientific exploration of Earth's interior properties (A.1.a)."
+      "rationaleAI": "Volcanic processes as a planetary-scale heat release mechanism revealing Earth's interior dynamics -- scientific exploration determining the properties of the Earth's interior (A.1.a)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
         "A.1.a",
-        "A.1.b"
+        "A.1.b",
+        "A.2.b"
       ],
-      "rationaleAI": "Geology of rocks covering deep Earth composition and extraterrestrial meteorites addresses scientific exploration of Earth's interior (A.1.a) and resource exploration for building materials (A.1.b)."
+      "rationaleAI": "Geology of rocks covering igneous, sedimentary, and metamorphic types revealing Earth's evolutionary history -- scientific exploration of Earth's interior properties (A.1.a). Connects to resource extraction of building materials (A.1.b) and on-site sampling of rock (A.2.b)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
       "relevantPathsAI": [
+        "C",
         "C.1",
         "C.4"
       ],
-      "rationaleAI": "History of astronomy from prehistoric observations through post-WWII developments connects to the history of space flight theory (C.1) and contributions to physical sciences (C.4)."
+      "rationaleAI": "History of Western astronomy from prehistoric observations to post-WWII technical developments -- the history of space observation as precursor to space flight (C.1). Traces the emergence of astrophysics and instrumentation connecting to contributions of space exploration to physical sciences (C.4)."
     },
     {
       "vsiTitle": "Tides",
@@ -215,16 +241,17 @@
         "B",
         "B.3"
       ],
-      "rationaleAI": "Tidal dynamics in oceans including observation methods and effects on Jupiter and Saturn moons connect to undersea exploration (B) and developments in oceanographic measurement (B.3)."
+      "rationaleAI": "Tidal phenomena driven by gravitational interactions with ocean water, covering observation and prediction methods -- undersea exploration techniques (B). Addresses tidal mixing measurement and monitoring (B.3)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
         "B.1.d",
-        "C.2.b.iii"
+        "C.2.b.iii",
+        "C.3.b"
       ],
-      "rationaleAI": "Robotic deployment for planetary space exploration and autonomous machines connect to unmanned underwater vehicles (B.1.d) and unmanned spacecraft probing planets (C.2.b.iii)."
+      "rationaleAI": "Robotic systems for planetary space exploration as unmanned spacecraft probing planets (C.2.b.iii). Covers autonomous sensing, actuation, and decision-making as spacecraft subsystem technology (C.3.b). Addresses unmanned units for exploration including underwater and extraterrestrial applications (B.1.d)."
     }
   ],
   "_curatedBy": "ai",

@@ -5,24 +5,22 @@
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A",
         "B.2.e",
-        "C.2.c",
+        "C.2.c.iii",
         "D.1.b",
-        "D.2.c"
+        "D.2.a"
       ],
-      "rationaleAI": "Confucian tradition addresses the Classical period of Chinese philosophy (B.2.e), Han state ideology (C.2.c.i), and T'ang cultural context (D.2.c)."
+      "rationaleAI": "Confucianism from its sixth-century BCE formulation as part of the Classical period of Chinese philosophy alongside Taoism and the 'hundred schools' (B.2.e). Covers Confucianism's influence on state ideology, imperial government, and civil service examinations in the Han period (C.2.c.iii) and its subsequent relationship with Buddhism during the Six Dynasties (D.1.b). Impact on Tang cultural and institutional life (D.2.a)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
       "relevantPathsAI": [
-        "A",
         "B.2.e",
         "C.2.c.iii",
-        "D.2.c"
+        "D.2.a"
       ],
-      "rationaleAI": "Chinese literary culture addresses the character of Chinese civilization (A), Classical philosophy (B.2.e), Han cultural life (C.2.c.iii), and T'ang cultural developments (D.2.c)."
+      "rationaleAI": "Chinese literary culture from antiquity encompassing poetry, narrative, and philosophical foundations including Confucian and Daoist traditions -- the Classical period of Chinese literature (B.2.e). Covers classical historical records and literati traditions relevant to Han cultural life and prose writing (C.2.c.iii). Literary developments through the Tang dynasty (D.2.a)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -31,34 +29,37 @@
         "C.2.c.iii",
         "D.1.b"
       ],
-      "rationaleAI": "Buddhism's spread into East Asia relates to the Han period introduction (C.2.c.iii) and Six Dynasties growth (D.1.b)."
+      "rationaleAI": "Buddhism's introduction to China during the Han period (C.2.c.iii) and its spread as a major intellectual and religious trend during the Six Dynasties period, when Confucianism declined and Buddhism expanded significantly (D.1.b)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
         "C.2.c.ii",
-        "D.2.c"
+        "D.2.a"
       ],
-      "rationaleAI": "Central Eurasian trade relates to Han relations with the Hsiung-nu (C.2.c.ii) and T'ang foreign affairs (D.2.c.ii)."
+      "rationaleAI": "Central Eurasian trade and cultural exchange covering Han dynasty relations with other peoples and Pan Ch'ao's campaigns in Central Asia (C.2.c.ii). Silk Road commerce and cultural transmission during the Sui and Tang dynasties (D.2.a)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "A",
         "B.2.b"
       ],
-      "rationaleAI": "Chinese logographic systems relate to the character of Chinese civilization (A) and Shang script development (B.2.b)."
+      "rationaleAI": "History of writing systems including Chinese characters as a logographic system, relevant to the development of script during the Shang period at Anyang (B.2.b)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
         "A",
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.1.d"
       ],
-      "rationaleAI": "Archaeological methods connect to archaeological sources (A) and the prehistoric period (B.1)."
+      "rationaleAI": "Archaeology as a scientific discipline reconstructing human pasts through excavation and laboratory techniques -- relevant to archaeological sources for Chinese civilization (A). Covers prehistoric periods including Paleolithic and Mesolithic industries (B.1.a), Neolithic settlements (B.1.b), Yang-shao Painted Pottery culture (B.1.c), and Lung-shan Black Pottery complex (B.1.d)."
     },
     {
       "vsiTitle": "Dynasty",
@@ -66,31 +67,37 @@
       "relevantPathsAI": [
         "B.2",
         "C",
+        "C.1",
+        "C.2",
         "D.2"
       ],
-      "rationaleAI": "Dynastic succession connects to early dynasties (B.2), Ch'in and Han (C), and Sui and T'ang (D.2)."
+      "rationaleAI": "Dynastic rule covering succession, governance, and family-based political legitimacy across Chinese dynasties -- the early dynasties (B.2), Ch'in and Han unification (C, C.1, C.2), and reunification under Sui and Tang (D.2)."
     },
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides broader context for understanding the foundational Chinese history covered in this section and its lasting influence."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Modern China from the late imperial period providing broad context for understanding the character and achievements of Chinese civilization and its continuity from ancient foundations to the present (A)."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
       "relevantPathsAI": [
-        "C.2.a.ii"
+        "D.1.a"
       ],
-      "rationaleAI": "Covers Mongol military campaigns and interactions with Chinese civilization — relevant to expansion under Han Wu Ti into Central Asia and relations with the Hsiung-nu peoples."
+      "rationaleAI": "The Mongol Empire's military campaigns and governance strategies, relevant to the era of barbarian invasions and the period of the Sixteen Kingdoms that characterized the division of the empire during the Six Dynasties (D.1.a)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b"
       ],
-      "rationaleAI": "Covers archaeological frameworks incorporating Chinese evidence and the development of agriculture — relevant to the prehistoric period including Paleolithic and Neolithic stages in China."
+      "rationaleAI": "Prehistory spanning from earliest human ancestors to the beginning of written records, covering the Paleolithic and Mesolithic stages (B.1.a) and Neolithic settlement with the invention of agriculture and domesticated animals (B.1.b). Chinese and central Asian evidence reframing traditional Eurasian narratives (B.1)."
     }
   ],
   "_curatedBy": "ai",

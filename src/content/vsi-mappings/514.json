@@ -6,35 +6,40 @@
       "vsiAuthor": "P. H. Matthews",
       "relevantPathsAI": [
         "C",
-        "C.1",
         "C.2",
+        "C.4",
         "C.7",
+        "D",
         "D.1",
         "F",
         "F.1",
         "F.2",
-        "F.3"
+        "F.3",
+        "F.4",
+        "F.7"
       ],
-      "rationaleAI": "Phonetics, syntax, semantics address the nature of language (C), definitions (C.1), ways of studying language (C.2), and linguistic change (C.7). Brain processing relates to phonetics (D.1). Linguistic theory development addresses F.1, F.2, F.3."
+      "rationaleAI": "Scientific study of language spanning phonetics, syntax, semantics, and neurolinguistics (F, F.1, F.2). Covers the nature of language, ways of studying it through phonetics and grammar (C, C.2), speech and language processing in the brain (C.4), and linguistic change and language typology (C.7). Addresses diachronic linguistics including the comparative method and language classification (F.3, F.7). Coverage of language change across geographic space touches on dialectology and linguistic geography (F.4)."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
       "relevantPathsAI": [
+        "C",
         "C.1",
         "C.3",
-        "C.7",
         "F.7",
         "H"
       ],
-      "rationaleAI": "Language classification addresses definitions (C.1), dialects (C.3), and typology (C.7). Global distribution addresses classification (F.7) and languages of the world (H)."
+      "rationaleAI": "Linguistic diversity worldwide covering language classification and identification criteria (F.7, H). Examines what differentiates languages from dialects (C.3), definitions of language (C.1), and typological features including phonology, word order, and morphological systems (C). Covers the global distribution of languages including examples from ASL, Arabic, Chinese, and German."
     },
     {
       "vsiTitle": "Sociolinguistics",
       "vsiAuthor": "John Edwards",
       "relevantPathsAI": [
         "C.3",
+        "C.5",
         "C.6",
+        "F.4",
         "G",
         "G.1",
         "G.2",
@@ -42,45 +47,50 @@
         "G.4",
         "G.5"
       ],
-      "rationaleAI": "Language in sociocultural context addresses variants (C.3), language and culture (C.6), attitudes (G.1), history (G.2), cross-cultural relations (G.3), political instrument (G.4), and group unification (G.5)."
+      "rationaleAI": "Language in sociocultural context covering social evaluations of dialects and language variants (C.3, G.1), language and social differentiation (C.6), and language dominance and shift (G.2, G.3). Addresses language planning and policy as politically driven processes (G.4), language and gender as social group dynamics (G.5), semantic flexibility and style (C.5). Traces historical linguistics from Bopp and Grimm connecting to dialectology (F.4)."
     },
     {
       "vsiTitle": "The English Language",
       "vsiAuthor": "Simon Horobin",
       "relevantPathsAI": [
         "C.7",
-        "H.1.f"
+        "H.1.f",
+        "F.3"
       ],
-      "rationaleAI": "English history addresses linguistic change (C.7) and Germanic languages (H.1.f)."
+      "rationaleAI": "History and evolution of English from Old English through modern global varieties, covering phonological, grammatical, and lexical changes over time (C.7, F.3). English as a Germanic language within the Indo-European family (H.1.f)."
     },
     {
       "vsiTitle": "Multilingualism",
       "vsiAuthor": "John C. Maher",
       "relevantPathsAI": [
         "C.6",
+        "G",
+        "G.2",
         "G.3",
         "G.4",
+        "G.5",
         "H"
       ],
-      "rationaleAI": "Language diversity addresses language and culture (C.6), cross-cultural relations (G.3), political instrument (G.4), and languages of the world (H)."
+      "rationaleAI": "Language diversity in societies covering transmission and coexistence of languages (C.6), the role of language in cross-cultural relations (G.3), language as a political instrument through nationalism and regional rights (G.4), and language in unifying social groups (G.5). Addresses endangered language decline and the connection of language with history and cultural transmission (G.2). Covers approximately 6,500-7,000 languages worldwide (H)."
     },
     {
       "vsiTitle": "Slang",
       "vsiAuthor": "Jonathon Green",
       "relevantPathsAI": [
         "C.3",
+        "C.5",
         "G.5"
       ],
-      "rationaleAI": "Nonstandard vocabulary addresses language variants (C.3) and group unification (G.5)."
+      "rationaleAI": "Slang as informal nonstandard vocabulary distinguished from dialect, jargon, and colloquialism -- a specialized language variant (C.3). Covers code-switching, register variation, and semantic flexibility (C.5). Examines slang's role in vernacular speech communities and group identity (G.5)."
     },
     {
       "vsiTitle": "Translation",
       "vsiAuthor": "Matthew Reynolds",
       "relevantPathsAI": [
-        "C.5",
+        "A",
         "G.3"
       ],
-      "rationaleAI": "Translation transforming meaning addresses meaning and style (C.5) and cross-cultural relations (G.3)."
+      "rationaleAI": "Translation as a fundamental mechanism of communication across languages and cultures (A), directly relevant to the role of language in cross-cultural relations (G.3). Covers how translation determines and transforms meaning in commerce, religion, literature, and political conflict."
     },
     {
       "vsiTitle": "Writing and Script",
@@ -89,18 +99,21 @@
         "E",
         "E.1",
         "E.2",
-        "E.3"
+        "E.3",
+        "E.5",
+        "F.6"
       ],
-      "rationaleAI": "Writing systems address origin (E.1), types (E.2), and systems (E.3)."
+      "rationaleAI": "History and development of writing systems from cuneiform and hieroglyphs to modern scripts (E.1). Covers logographic, syllabic, alphabetic systems (E.2), hieroglyphic, cuneiform, alphabetic, and ideographic scripts (E.3), and calligraphy traditions across Semitic, Arabic, Greek, Latin, and East Asian civilizations (E.5). Directly relevant to the study of writing as a linguistic subdiscipline (F.6)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
+        "E.1",
         "E.3",
-        "E.5"
+        "F.6"
       ],
-      "rationaleAI": "Egyptian hieroglyphs address hieroglyphic systems (E.3) and calligraphy (E.5)."
+      "rationaleAI": "Egyptian hieroglyphs as a writing system spanning three thousand years, covering the nature and evolution of this logographic-pictographic script (E.1, E.3). Addresses decipherment through the Rosetta Stone and the study of writing as a discipline (F.6)."
     },
     {
       "vsiTitle": "Typography",
@@ -108,34 +121,35 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Letterform design addresses adjuncts to writing (E.4)."
+      "rationaleAI": "Visual presentation of written language covering letterform design, typeface evolution, and font technology -- an adjunct to writing concerned with the visual rendering and formatting of text (E.4)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
         "C.6",
-        "E.1"
+        "E"
       ],
-      "rationaleAI": "Literacy evolution addresses language and culture (C.6) and writing evolution (E.1)."
+      "rationaleAI": "Historical and cultural survey of reading and literacy covering the evolution from oral reading to mass literacy driven by printing and public education (C.6). Connects written language to cultural transmission, language learning, and the relationship between written and spoken language (E)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "relevantPathsAI": [
-        "C.2",
+        "C.5",
         "F.5"
       ],
-      "rationaleAI": "Dictionaries address ways of studying language (C.2) and semantics (F.5)."
+      "rationaleAI": "History and craft of dictionaries addressing word definition, linguistic authority, and the recording of language use -- directly relevant to meaning and style in language (C.5) and semantics as the study of language and meaning (F.5)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
       "relevantPathsAI": [
         "A",
-        "C.5"
+        "C.5",
+        "G.4"
       ],
-      "rationaleAI": "Persuasion addresses communication as foundation of culture (A) and meaning and style (C.5)."
+      "rationaleAI": "Rhetoric as the art of persuasion foundational to civil society and democracy, a form of communication modifying human behavior (A). Covers stylistic and semantic dimensions of persuasive language (C.5) and the use of language as a political instrument across cultures (G.4)."
     },
     {
       "vsiTitle": "Meaning",
@@ -144,7 +158,7 @@
         "C.5",
         "F.5"
       ],
-      "rationaleAI": "Word meaning and reference address meaning and style (C.5) and semantics (F.5)."
+      "rationaleAI": "Philosophy of meaning examining how meaning arises in language, covering word meaning, reference, truth, formal semantics, and speech act theory (C.5, F.5). Addresses structural and lexical meanings and the relationship between language and conceptualization."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -153,16 +167,17 @@
         "C.5",
         "F.5"
       ],
-      "rationaleAI": "Interpretation and meaning construction address meaning and style (C.5) and semantics (F.5)."
+      "rationaleAI": "Theory and practice of interpretation examining how meaning is constructed through language, texts, and discourse (C.5, F.5). Covers the relationship between language and the mediation of knowledge."
     },
     {
       "vsiTitle": "Psycholinguistics",
       "vsiAuthor": "Fernanda Ferreira",
       "relevantPathsAI": [
         "C.4",
+        "D",
         "D.2"
       ],
-      "rationaleAI": "Language processing addresses psychological bases of speech (C.4) and brain functions (D.2)."
+      "rationaleAI": "Study of how humans process, comprehend, produce, store, and learn language -- the psychological bases of speech and language (C.4). Examines language processing mechanisms and the cognitive computations underlying communication, including the physiology of speech as brain functions (D.2)."
     },
     {
       "vsiTitle": "Dyslexia",
@@ -170,7 +185,7 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Reading disorder with brain differences addresses speech disorders (D.3)."
+      "rationaleAI": "Cognitive and neuroscientific study of dyslexia as a reading and speech disorder, covering diagnosis, brain-scanning research, and evidence-based interventions for this developmental language impairment (D.3)."
     },
     {
       "vsiTitle": "Child Psychology",
@@ -179,7 +194,7 @@
         "C.4",
         "C.6"
       ],
-      "rationaleAI": "Language acquisition addresses psychological bases of speech (C.4) and language transmission (C.6)."
+      "rationaleAI": "Developmental psychology covering language acquisition, inner speech, and brain development underlying learning -- the psychological bases of speech development in children (C.4). Covers language learning as part of cultural transmission (C.6)."
     },
     {
       "vsiTitle": "Cryptography",
@@ -187,7 +202,7 @@
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "Ciphers and codes directly address cryptology (C.8)."
+      "rationaleAI": "Cryptography as the science of securing information through codes, ciphers, and encryption -- directly mapping to cryptology as codes, ciphers, and other means of encrypting language (C.8)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -195,7 +210,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "AI language processing addresses cybernetic communication (B.4)."
+      "rationaleAI": "AI applications in language processing, memory, and learning, including computational theory and machine consciousness -- relevant to cybernetic communication, computer languages, human language-computer interfaces, and artificial intelligence (B.4)."
     },
     {
       "vsiTitle": "Computer Science",
@@ -203,7 +218,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Programming languages address computer languages (B.4)."
+      "rationaleAI": "Foundational computer science covering algorithms, programming languages, and computational models -- relevant to computer languages and human language-computer interfaces (B.4)."
     },
     {
       "vsiTitle": "Information",
@@ -212,7 +227,7 @@
         "A",
         "B.4"
       ],
-      "rationaleAI": "Information spanning communication addresses cultural foundation (A) and cybernetic communication (B.4)."
+      "rationaleAI": "Information as a foundational concept spanning communication, language, and the Internet (A). Covers computational foundations and information technology relevant to cybernetic communication and computer interfaces (B.4)."
     },
     {
       "vsiTitle": "Poststructuralism",
@@ -221,7 +236,7 @@
         "C.5",
         "F.5"
       ],
-      "rationaleAI": "Challenging fixed meanings addresses meaning and style (C.5) and semantics (F.5)."
+      "rationaleAI": "Poststructuralism challenging fixed meanings in language through Barthes's semiotics, Derrida's deconstruction, and Kristeva's intertextuality -- relevant to meaning and style in language, semantic flexibility (C.5), and the study of language and meaning (F.5)."
     },
     {
       "vsiTitle": "Literary Theory",
@@ -230,7 +245,7 @@
         "C.5",
         "F.5"
       ],
-      "rationaleAI": "Structuralism and speech act theory address meaning (C.5) and semantics (F.5)."
+      "rationaleAI": "Literary theory covering structuralism (Saussure), speech act theory, and identity construction through language -- relevant to meaning and style in language and conceptualization (C.5), and semantics as the study of language and meaning (F.5)."
     },
     {
       "vsiTitle": "Chinese literature",
@@ -238,7 +253,7 @@
       "relevantPathsAI": [
         "H.6.a"
       ],
-      "rationaleAI": "Chinese literary culture provides context for Chinese language (H.6.a)."
+      "rationaleAI": "Chinese literary culture from antiquity to the present, with the Chinese language as the medium of this literary tradition within the Sino-Tibetan language family (H.6.a)."
     },
     {
       "vsiTitle": "Japanese Literature",
@@ -246,24 +261,25 @@
       "relevantPathsAI": [
         "H.13"
       ],
-      "rationaleAI": "Japanese literature provides context for the Japanese language (H.13)."
+      "rationaleAI": "Japanese literature spanning 1,500 years, with the Japanese language as the medium of this literary tradition and cultural production (H.13)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "B.3",
-        "G.1"
+        "A",
+        "G.2"
       ],
-      "rationaleAI": "Covers cultural systems, symbolic communication, and the construction of selfhood through ethnographic study including kinship and exchange systems, relevant to the use of signals, signs, symbols, icons, and cultural artifacts and attitudes toward language."
+      "rationaleAI": "Anthropological study of communication as the essential element in social and cultural interaction (A). Connects to linguistics through the role of language in transmitting culture (G.2)."
     },
     {
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers the evolutionary origins and biological basis of emotions including the neural mechanisms of empathy and cross-cultural questions about emotional expression, relevant to communication by means of bodily gestures, posture, and facial expression."
+      "rationaleAI": "Nonverbal communication through bodily expression, facial expression, and empathy mechanisms (B.1). Addresses cross-cultural questions about emotional expression and laughter as communication (B.2)."
     },
     {
       "vsiTitle": "Humour",
@@ -277,10 +293,9 @@
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
-        "C.5",
-        "G.1"
+        "C.5"
       ],
-      "rationaleAI": "Examines the relationship between thought and language, culturally specific modes of reasoning versus universal cognitive patterns, directly relevant to meaning and style in language and the relation of language and thought."
+      "rationaleAI": "The relationship between thought and language, culturally specific modes of reasoning versus universal cognitive patterns, and how language relates to conceptualization (C.5)."
     },
     {
       "vsiTitle": "Comparative Literature",
@@ -288,7 +303,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Covers cross-cultural literary relations and how comparative literature functions as an agent of international intellectual relations, directly relevant to the role of language in cross-cultural relations."
+      "rationaleAI": "Cross-cultural literary relations examining translation, modernity, and engaging with literature beyond one's own culture -- the role of language in cross-cultural relations (G.3)."
     },
     {
       "vsiTitle": "The Etruscans",
@@ -296,7 +311,7 @@
       "relevantPathsAI": [
         "H.21.b"
       ],
-      "rationaleAI": "Covers Etruscan civilization including their language, which remains only partially deciphered and constitutes a language isolate, directly relevant to Etruscan as a language isolate."
+      "rationaleAI": "Etruscan civilization including their undeciphered language, an important language isolate with no known linguistic relatives (H.21.b)."
     }
   ],
   "_curatedBy": "ai",

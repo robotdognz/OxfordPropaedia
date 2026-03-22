@@ -670,7 +670,7 @@ export function CenteredCircleNavigatorPanel({
       </p>
       {renderScopeBadge('Shared Scope', 'Maximise overall coverage using only readings linked to both selected Parts. The Recommended Readings broaden outward from their overlap, while the Connected Sections show where to narrow into more specific topics.')}
 
-      <div class="mt-3 border-t border-slate-200 pt-3">
+      <div class="mt-3">
         <div class="flex flex-wrap gap-2">
           {renderEssayButton(centerPart, `Read ${centerPart.partName} essay`)}
           {renderEssayButton(topPart, `Read ${topPart.partName} essay`)}
@@ -711,7 +711,7 @@ export function CenteredCircleNavigatorPanel({
         </div>
       )}
 
-      <div class="mt-3 border-t border-slate-200 pt-3">
+      <div class="mt-4 border-t border-slate-200 pt-3">
         <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
           Recommended Readings
         </p>
@@ -876,7 +876,7 @@ export function TopPartCircleNavigatorPanel({
       </p>
       {renderScopeBadge('Selected Part Scope', 'Maximise overall coverage using only readings linked to this Part. The Recommended Readings broaden outward from it, while the Divisions show where to narrow into more specific topics.')}
 
-      <div class="mt-3 border-t border-slate-200 pt-3">
+      <div class="mt-3">
         {renderEssayButton(topPart)}
       </div>
 
@@ -910,7 +910,7 @@ export function TopPartCircleNavigatorPanel({
         </div>
       )}
 
-      <div class="mt-3 border-t border-slate-200 pt-3">
+      <div class="mt-4 border-t border-slate-200 pt-3">
         <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
           Recommended Readings
         </p>

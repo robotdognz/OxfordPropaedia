@@ -7,19 +7,31 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.4",
+        "A.5",
+        "A.6",
         "B",
-        "C.1"
+        "B.1",
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "D",
+        "D.1",
+        "D.2",
+        "D.5"
       ],
-      "rationaleAI": "Kinship, economic exchange, and belief systems address general kinship (A.1), groups within societies (B), and primitive economic systems (C.1)."
+      "rationaleAI": "Core anthropological treatment of kinship systems, descent, and social organization (A, A.1, A.4), including economic exchange and property in small-scale societies (C.1, C.1.a, C.1.b, C.1.c). Covers group structures and associations (B, B.1), transmission of culture and socialization (D.1), belief systems and folklore (D.2). Connects to linguistics through its relationship with language studies and structural-functionalist analysis of cultural systems (D.5)."
     },
     {
       "vsiTitle": "Family law",
       "vsiAuthor": "Jonathan Herring",
       "relevantPathsAI": [
         "A.2",
-        "A.6"
+        "A.5"
       ],
-      "rationaleAI": "Marriage, divorce, and domestic violence address mate selection and marriage customs (A.2). Evolving family structures address kinship and social change (A.6)."
+      "rationaleAI": "Legal frameworks for marriage, divorce, civil partnership, forced marriage, and sexual behavior regulation (A.2). Addresses inheritance, succession, and family as a centre for transmission of economic and legal powers and goods (A.5)."
     },
     {
       "vsiTitle": "Sexuality",
@@ -27,24 +39,25 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Social construction of sexual norms across cultures addresses sexual behaviour and marriage customs (A.2)."
+      "rationaleAI": "Social construction of sexual norms, reproductive rights, and the regulation of sexual behavior across cultures and historical periods (A.2)."
     },
     {
       "vsiTitle": "Polygamy",
       "vsiAuthor": "Sarah Pearsall",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.5"
       ],
-      "rationaleAI": "Plural marriage across religions addresses mate selection and marriage customs (A.2)."
+      "rationaleAI": "Plural marriage as an institution across cultures, its legal and religious dimensions regarding mate selection and marriage customs (A.2), and the role of marriage in transmitting political power and nation-building (A.5)."
     },
     {
       "vsiTitle": "Gender History",
       "vsiAuthor": "Antoinette Burton",
       "relevantPathsAI": [
-        "A.2",
+        "A.6",
         "B.2"
       ],
-      "rationaleAI": "Gender intersecting with class addresses marriage customs (A.2) and organization by status (B.2)."
+      "rationaleAI": "Gender as an evolving social institution intersecting with kinship and social change (A.6). Examines class, race, and gender as systems of social stratification and status organization (B.2)."
     },
     {
       "vsiTitle": "Sociology",
@@ -52,17 +65,19 @@
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.2"
+        "B.2",
+        "D.1"
       ],
-      "rationaleAI": "Social institutions and class address groups (B.1) and status organization (B.2)."
+      "rationaleAI": "Systematic study of social institutions, group behavior, and associations within societies (B, B.1). Covers social class, stratification, and egalitarianism as organization by status (B.2). Addresses education as a social institution and formal enculturation (D.1)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "A.5"
       ],
-      "rationaleAI": "Aristocracy addresses class systems (B.2)."
+      "rationaleAI": "History of aristocracy as a class system and organization by status from ancient origins through modern decline (B.2). Covers how aristocratic families transmitted political, economic, and social powers through inheritance and succession (A.5)."
     },
     {
       "vsiTitle": "American Slavery",
@@ -70,7 +85,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Chattel slavery addresses systems of slavery (B.2)."
+      "rationaleAI": "Chattel slavery as a system of social organization characterized by serfdom and forced labor, covering the legal and ideological construction of racial hierarchy (B.2)."
     },
     {
       "vsiTitle": "Abolitionism",
@@ -78,40 +93,44 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Dismantling slavery addresses systems of slavery (B.2)."
+      "rationaleAI": "The antislavery movement challenging systems characterized by slavery, redefining equality and social status through moral philosophy and democratic activism (B.2)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
       "relevantPathsAI": [
-        "C.2"
+        "C",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c"
       ],
-      "rationaleAI": "Resource allocation addresses developed nations' economic systems (C.2)."
+      "rationaleAI": "Resource allocation, market mechanisms, and division of labor as economic systems (C). Covers production and role differentiation (C.1.a), exchange of goods and distribution of wealth (C.1.b), and property rights (C.1.c)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "C.2"
+        "C",
+        "C.1.b"
       ],
-      "rationaleAI": "Market capitalism addresses developed nations' economic systems (C.2)."
+      "rationaleAI": "Capitalism as an economic system centered on market exchange, capital accumulation, and trade (C). Addresses exchange of goods, distribution of wealth, and financial systems including comparative economic models (C.1.b)."
     },
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.2"
+        "C",
+        "C.1.a"
       ],
-      "rationaleAI": "Work addresses division of labour (C.1.a) and developed economic systems (C.2)."
+      "rationaleAI": "Work as a social and economic phenomenon encompassing paid and unpaid labor, reflecting production and division of labor within economic systems (C, C.1.a)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "National wealth analysis addresses developed nations' economic systems (C.2)."
+      "rationaleAI": "Comparative analysis of economic development patterns across nations, addressing why some countries achieved prosperity while others remained poor -- a broad treatment of economic systems (C)."
     },
     {
       "vsiTitle": "Education",
@@ -119,7 +138,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Education systems address education and socialization (D.1)."
+      "rationaleAI": "Education systems as formal and informal enculturation, covering how schools evolved, the tension between formal instruction and progressive methods, and education's role in socialization and democratic citizenship (D.1)."
     },
     {
       "vsiTitle": "The History of Childhood",
@@ -127,7 +146,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Historical childhood addresses enculturation (D.1)."
+      "rationaleAI": "Shifting definitions and experiences of childhood as formal and informal enculturation across cultures, including the impact of reform movements on children's welfare and socialization (D.1)."
     },
     {
       "vsiTitle": "Myth",
@@ -135,7 +154,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Myth with cosmological functions addresses religious belief and folklore (D.2)."
+      "rationaleAI": "Myth as a cross-cultural phenomenon encompassing religious belief, folklore, and cosmological explanation, studied through anthropology, psychology, and comparative religion (D.2)."
     },
     {
       "vsiTitle": "World Mythology",
@@ -143,7 +162,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Comparative mythology addresses religious belief and folklore (D.2)."
+      "rationaleAI": "Comparative world mythology examining myths from diverse cultures as expressions of religious belief, folklore, and transcultural themes about human origins and the nature of deity (D.2)."
     },
     {
       "vsiTitle": "Ritual",
@@ -151,7 +170,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Rites of passage address religious belief and folklore (D.2)."
+      "rationaleAI": "Ritual as a fundamental cultural expression connected to religious belief and folklore, encompassing rites of passage, sacrifice, and ceremonies that transmit beliefs and values across cultures (D.2)."
     },
     {
       "vsiTitle": "Sport",
@@ -159,7 +178,7 @@
       "relevantPathsAI": [
         "D.6"
       ],
-      "rationaleAI": "Sport development addresses recreation, sports, and games (D.6)."
+      "rationaleAI": "Historical development of sport from folk games to modern global phenomena, covering recreation, sports, and games as cultural elements common to all societies (D.6)."
     },
     {
       "vsiTitle": "Ethnomusicology",
@@ -167,50 +186,52 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Music as universal trait addresses artistic expression (D.4)."
+      "rationaleAI": "Study of music across geographic and cultural diversity as an element of artistic expression common to all cultures but differing in practice between them (D.4)."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
       "relevantPathsAI": [
-        "A.2",
+        "A.6",
         "B.2"
       ],
-      "rationaleAI": "Marriage reform addresses marriage customs (A.2) and status organization (B.2)."
+      "rationaleAI": "Feminism as a movement challenging gender-based social organization and status systems (B.2), with marriage reform and the evolving institution of kinship and family as social change (A.6)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A.5",
-        "D.1"
+        "D.1",
+        "D.2"
       ],
-      "rationaleAI": "Domestic life and examinations address transmission of powers (A.5) and education (D.1)."
+      "rationaleAI": "Confucianism as a philosophical and cultural system shaping education, socialization, and formal enculturation through civil service examinations and moral cultivation (D.1), and as a system of religious and philosophical belief underlying social relations (D.2)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
       "relevantPathsAI": [
+        "B",
         "B.1"
       ],
-      "rationaleAI": "Group behaviour addresses groups within societies (B.1)."
+      "rationaleAI": "Social psychology examines how individuals relate to groups and society, covering group behavior, social influence, obedience, and the varieties of associations and dynamics within societies (B, B.1)."
     },
     {
       "vsiTitle": "Identity",
       "vsiAuthor": "Florian Coulmas",
       "relevantPathsAI": [
-        "B.1"
+        "B",
+        "B.1",
+        "D.5"
       ],
-      "rationaleAI": "Collective identity addresses groups and associations (B.1)."
+      "rationaleAI": "Interdisciplinary analysis of identity formation through markers such as citizenship, gender, and cultural belonging as aspects of group association (B, B.1). Connects to linguistics through the role of language in identity formation and philosophical treatments of selfhood (D.5)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
-        "A.2",
         "D.3"
       ],
-      "rationaleAI": "Family law addresses marriage customs (A.2). Islamic jurisprudence addresses legal systems (D.3)."
+      "rationaleAI": "Islamic jurisprudence as a major legal system covering family law, inheritance law, and penal law across the Middle East, Asia, and Africa (D.3)."
     },
     {
       "vsiTitle": "Home",
@@ -218,16 +239,17 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Domestic space and dwelling address rules of residence (A.3)."
+      "rationaleAI": "Philosophical examination of home as domestic space, covering the nature and variety of dwellings and place-attachment, directly relevant to rules of residence and dwelling patterns (A.3)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
       "relevantPathsAI": [
+        "A.4",
         "A.5",
-        "B.2"
+        "A.6"
       ],
-      "rationaleAI": "Covers bloodline-based political legitimacy and succession across cultures — directly relevant to control of resources and inheritance, and organization by status."
+      "rationaleAI": "Dynastic rule as bloodline-based political legitimacy involving descent systems and lineage (A.4), the family as a centre for transmission of political power and governance through inheritance and succession (A.5), and kinship as an evolving social institution in state formation (A.6)."
     },
     {
       "vsiTitle": "Theatre",
@@ -235,7 +257,7 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Covers theatre as a global artistic form from ancient Greece through Japan to modern performance — directly relevant to artistic expression across cultures."
+      "rationaleAI": "Theatre as a global artistic form integrating dance, literature, music, and visual arts -- a performing art as cultural expression common to societies worldwide (D.4)."
     },
     {
       "vsiTitle": "Law",
@@ -243,7 +265,7 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Covers law as a foundational social institution — directly relevant to legal systems as a cultural element."
+      "rationaleAI": "Law as a foundational social institution covering criminal, civil, constitutional, and international law as legal systems operating within human societies (D.3)."
     }
   ],
   "_curatedBy": "ai",

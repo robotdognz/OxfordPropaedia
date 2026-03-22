@@ -7,58 +7,78 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.3",
         "A.4",
         "A.5",
         "A.6",
+        "B",
         "B.1",
+        "B.1.b",
+        "B.3",
         "B.5",
+        "C",
         "C.1",
         "C.1.a",
         "C.1.b",
         "C.2",
         "C.2.a",
-        "C.2.b",
+        "C.2.c",
         "C.2.d",
-        "C.3"
+        "C.3",
+        "C.3.a",
+        "C.3.b"
       ],
-      "rationaleAI": "Comprehensive Judaism addresses biblical era (A.1), Talmudic foundations (A.3), medieval (A.4), modern (A.5), contemporary (A.6). Torah and Talmud relate to biblical literature (B.1). Practices address C.2. Orthodox (C.3.a), Reform (C.3.b), Kabbalah (B.5). God (C.1.a) and covenant (C.1.b) are central."
+      "rationaleAI": "Comprehensive introduction to Judaism covering biblical origins and the Torah (A.1, B.1, B.1.b), the Talmud and rabbinic tradition (B.3), Kabbalistic mystical writings (B.5), and the thought of Moses Mendelssohn and the Jewish Enlightenment (A.5). Covers doctrines concerning God and covenant theology (C.1.a, C.1.b), festivals, prayer, dietary laws, and Sabbath observance (C.2, C.2.a, C.2.c), the land of Israel and Jerusalem (C.2.d), and movements from Orthodox to Reform Judaism (C.3, C.3.a, C.3.b). Addresses the medieval era of European rabbinic Judaism (A.4), modern developments (A.5), and contemporary demographic aspects including the Holocaust and Israel (A.6)."
     },
     {
       "vsiTitle": "The Old Testament",
       "vsiAuthor": "Michael Coogan",
       "relevantPathsAI": [
         "A.1",
+        "B",
         "B.1",
-        "B.1.b"
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.4",
+        "C.1.a",
+        "C.1.b",
+        "C.1.d"
       ],
-      "rationaleAI": "The Hebrew Bible relates to biblical era (A.1) and TaNaKh (B.1.b)."
+      "rationaleAI": "Hebrew Bible and Christian Old Testament canons including differences among Jewish, Roman Catholic, Eastern Orthodox, and Protestant traditions (B.1.a). Covers the Pentateuch, prophetic literature, and wisdom writings as TaNaKh (B.1.b), and Apocrypha as noncanonical literature (B.1.c). Addresses divine justice and covenant theology (C.1.a, C.1.b), doctrines concerning the universe through creation narratives (C.1.d), and biblical exegesis through composition dating and authorship debates (B.4). Covers the biblical era of Judaism (A.1)."
     },
     {
       "vsiTitle": "The Hebrew Bible As Literature",
       "vsiAuthor": "Tod Linafelt",
       "relevantPathsAI": [
-        "B.1.b"
+        "B.1",
+        "B.1.b",
+        "B.4"
       ],
-      "rationaleAI": "Literary analysis of the Hebrew Bible addresses TaNaKh (B.1.b)."
+      "rationaleAI": "Literary analysis of the Hebrew Bible focusing on narrative and poetic modes within the TaNaKh (B.1.b). Covers character development, lyric poetry including Psalms, and the Song of Songs as biblical literature (B.1). Literary-critical approaches to scripture represent a form of Judaic exegesis and hermeneutics (B.4)."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
       "relevantPathsAI": [
+        "A.1",
+        "B",
         "B.1",
-        "B.4"
+        "B.1.a",
+        "B.4",
+        "C.4"
       ],
-      "rationaleAI": "The Bible relates to biblical literature (B.1) and exegesis (B.4)."
+      "rationaleAI": "The Bible as sacred text central to Judaism covering the Hebrew Bible, its composition, transmission, and canonization (B.1, B.1.a). Addresses diverse interpretive traditions including patristic, Reformation, and feminist readings as Judaic and broader exegesis (B.4). Covers the biblical era (A.1) and the Bible's role in art, music, and cultural expression (C.4)."
     },
     {
       "vsiTitle": "The Dead Sea Scrolls",
       "vsiAuthor": "Timothy Lim",
       "relevantPathsAI": [
         "A.2",
-        "B.2"
+        "B.2",
+        "B.1.a",
+        "B.4"
       ],
-      "rationaleAI": "Dead Sea Scrolls relate to the Hellenistic era (A.2) and Qumran literature (B.2)."
+      "rationaleAI": "Qumran manuscripts dating to the Second Temple Period directly mapping to Qumran literature and Dead Sea Scrolls (B.2). Significance for Old Testament textual criticism and biblical canon formation (B.1.a, B.4). Covers the Hellenistic era of early Jewish sectarianism (A.2)."
     },
     {
       "vsiTitle": "Jewish History",
@@ -66,37 +86,47 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.2",
+        "A.3",
         "A.4",
-        "A.5"
+        "A.5",
+        "A.6",
+        "C.1.b",
+        "C.2.d"
       ],
-      "rationaleAI": "Jewish history addresses biblical (A.1), medieval (A.4), and modern (A.5) eras."
+      "rationaleAI": "Jewish historical experience spanning millennia covering the biblical era (A.1), Hellenistic period (A.2), Talmudic era foundations (A.3), medieval diaspora (A.4), emergence of Zionism in the modern era (A.5), and current demographic realities (A.6). Addresses the concept of Covenant sustaining Jewish identity through persecution and assimilation (C.1.b) and the land of Israel as sacred place (C.2.d)."
     },
     {
       "vsiTitle": "Jewish Literature",
       "vsiAuthor": "Ilan Stavans",
       "relevantPathsAI": [
         "A.5",
-        "A.6"
+        "B.6",
+        "C.4"
       ],
-      "rationaleAI": "Modern Jewish literature relates to modern (A.5) and contemporary (A.6) Judaism."
+      "rationaleAI": "Modern Jewish literature from 1492 covering the modern era of Jewish cultural production (A.5). Diasporic identity and multilingualism in literary expression represent Jewish philosophical writings and intellectual creativity (B.6). Literary art as cultural expression (C.4)."
     },
     {
       "vsiTitle": "Kabbalah",
       "vsiAuthor": "Joseph Dan",
       "relevantPathsAI": [
+        "A.3",
+        "A.4",
         "B.5",
-        "C.3.d"
+        "B.4"
       ],
-      "rationaleAI": "Kabbalah addresses mystical writings (B.5) and Hasidism (C.3.d)."
+      "rationaleAI": "Jewish mystical tradition centered on esoteric interpretation of Torah and divine names as mystical and devotional writings (B.5). Key texts including Sefer Yetzirah, the Zohar, and the Safed school connect to the Talmudic era foundations (A.3) and medieval rabbinic Judaism (A.4). Gershom Scholem's academic study represents Judaic exegesis and hermeneutics (B.4)."
     },
     {
       "vsiTitle": "Moses Maimonides",
       "vsiAuthor": "Ross Brann",
       "relevantPathsAI": [
         "A.4",
+        "B.3",
+        "B.4",
         "B.6"
       ],
-      "rationaleAI": "Maimonides relates to medieval Judaism (A.4) and philosophical writings (B.6)."
+      "rationaleAI": "Medieval Jewish philosopher who transformed Jewish thought and law, representing the medieval era of rabbinic Judaism (A.4). His Commentary on the Mishnah and Mishneh Torah as rabbinic legal codification relate to Talmud and Midrash (B.3). The Guide for the Perplexed integrating rationalism with faith represents Jewish philosophical writings (B.6) and Judaic exegesis and hermeneutics (B.4)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
@@ -105,24 +135,28 @@
         "A.4",
         "B.6"
       ],
-      "rationaleAI": "Medieval philosophy relates to medieval era (A.4) and Jewish philosophy (B.6)."
+      "rationaleAI": "Medieval philosophy encompassing Jewish thinkers including Maimonides and Gersonides within interlinked Christian, Muslim, and Jewish intellectual traditions -- the medieval era of rabbinic Judaism (A.4) and Jewish philosophical writings (B.6)."
     },
     {
       "vsiTitle": "Biblical archaeology",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B.1.a",
+        "B.2"
       ],
-      "rationaleAI": "Biblical archaeology relates to the biblical era (A.1)."
+      "rationaleAI": "Material evidence related to the Hebrew Bible across the ancient Near East covering the biblical era (A.1). Key discoveries including the Dead Sea Scrolls connect to Qumran literature (B.2). Examines biblical texts and canons through archaeological verification (B.1.a)."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
       "relevantPathsAI": [
         "A.5",
+        "A.6",
+        "C.1.e",
         "C.2.d"
       ],
-      "rationaleAI": "Zionism relates to modern Judaism (A.5) and sacred places (C.2.d)."
+      "rationaleAI": "History of modern Jewish nationalism from the 1870s covering developments in modern Judaism (A.5) and current demographic and social aspects of Judaism today (A.6). The concept of Ingathering of the Exiles and the creation of Israel relate to eschatological views about the future of the Jewish people (C.1.e) and the land of Israel as a sacred place (C.2.d)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
@@ -137,61 +171,69 @@
       "vsiAuthor": "Steven Beller",
       "relevantPathsAI": [
         "A.4",
-        "A.5"
+        "A.5",
+        "A.6"
       ],
-      "rationaleAI": "Antisemitism addresses medieval (A.4) and modern (A.5) Jewish history."
+      "rationaleAI": "Hatred of Jews spanning from ancient religious conflicts through medieval anti-Judaism (A.4), 19th-century racial and political antisemitism (A.5), to 21st-century manifestations including the Holocaust and contemporary forms (A.6)."
     },
     {
       "vsiTitle": "The Ghetto",
       "vsiAuthor": "Bryan Cheyette",
       "relevantPathsAI": [
         "A.4",
-        "A.5"
+        "A.5",
+        "A.6"
       ],
-      "rationaleAI": "The ghetto relates to medieval (A.4) and modern (A.5) eras."
+      "rationaleAI": "History of the ghetto from sixteenth-century Italian Jewish confinement (A.4) through hundreds of Nazi ghettos in the Holocaust (A.5, A.6), covering the physical and conceptual dimensions of Jewish urban segregation."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
       "relevantPathsAI": [
-        "A.5"
+        "A.6"
       ],
-      "rationaleAI": "The Holocaust relates to modern Judaism (A.5)."
+      "rationaleAI": "Global history of concentration camps including the Third Reich's systematic incarceration and genocide of Jewish populations -- current and recent demographic and social aspects of Judaism (A.6)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
+        "A.4",
         "A.5",
         "A.6"
       ],
-      "rationaleAI": "Diaspora relates to modern (A.5) and contemporary (A.6) Judaism."
+      "rationaleAI": "Diaspora as a concept with origins in Jewish dispersal, covering migration, displacement, and transnational identity across the medieval (A.4), modern (A.5), and contemporary eras (A.6) of Jewish experience."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
       "relevantPathsAI": [
-        "C.1.a"
+        "C.1",
+        "C.1.a",
+        "C.1.d"
       ],
-      "rationaleAI": "Conceptions of God relate to Jewish doctrines concerning God (C.1.a)."
+      "rationaleAI": "Philosophical and theological conceptions of God across world religions including Judaism -- doctrines concerning God and arguments for divine existence (C.1.a). Addresses creation narratives and the nature of the divine relevant to doctrines concerning the universe (C.1.d)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
       "relevantPathsAI": [
         "A",
+        "C.1",
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Judaism as Abrahamic tradition relates to history (A), God (C.1.a), and Covenant (C.1.b)."
+      "rationaleAI": "Judaism, Christianity, and Islam as interrelated monotheistic traditions covering their intertwined histories (A). Addresses shared theological commonalities concerning God (C.1.a) and how mutual encounters shaped independent religious identities including the concept of Covenant (C.1.b)."
     },
     {
       "vsiTitle": "Paul",
       "vsiAuthor": "E. P. Sanders",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.1.b",
+        "C.1.e"
       ],
-      "rationaleAI": "Paul's relationship to Jewish law relates to the Hellenistic era (A.2)."
+      "rationaleAI": "The Apostle Paul's relationship to Jewish law and Judaism in the Hellenistic era (A.2). His teachings on monotheism and the salvation of Israel engage with TaNaKh traditions (B.1.b) and eschatological views about the King-Messiah and his reign (C.1.e)."
     },
     {
       "vsiTitle": "The Enlightenment",
@@ -199,7 +241,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "The Enlightenment provides context for modern Judaism (A.5)."
+      "rationaleAI": "Eighteenth-century Enlightenment including Moses Mendelssohn as a major thinker, directly relevant to developments in modern Judaism through the Jewish Enlightenment (Haskalah) (A.5)."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -207,15 +249,17 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Hermeneutics relates to Judaic exegesis (B.4)."
+      "rationaleAI": "Theory and practice of interpretation spanning textual, legal, and religious communication -- directly relevant to Judaic exegesis and hermeneutics as interpretive methodology applied to sacred texts (B.4)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "C.2.a",
+        "C.2.c"
       ],
-      "rationaleAI": "Ritual relates to Jewish practices (C.2)."
+      "rationaleAI": "Cross-cultural analysis of ritual encompassing rites of passage, sacrifice, and ceremonies -- relevant to individual and familial practices (C.2.a) and sacred times including sabbath and holidays as ritual observances (C.2.c)."
     },
     {
       "vsiTitle": "The Crusades",
@@ -223,15 +267,16 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "The Crusades' impact on Jews relates to the medieval era (A.4)."
+      "rationaleAI": "Crusading campaigns affecting Jewish communities in medieval Europe, including persecution and violence against Jews during the medieval era of European rabbinic Judaism (A.4)."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
       "relevantPathsAI": [
+        "A.5",
         "A.6"
       ],
-      "rationaleAI": "American Judaism relates to contemporary demographics (A.6)."
+      "rationaleAI": "Religious diversity in America covering Judaism alongside Christianity, Islam, and other religions -- developments in modern Judaism (A.5) and current demographic aspects of Jewish life in American religious pluralism (A.6)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -240,25 +285,25 @@
         "A.4",
         "B.6"
       ],
-      "rationaleAI": "Covers Jewish philosophers including Solomon Ibn Gabirol within the Islamic philosophical tradition, directly relevant to the medieval era of rabbinic Judaism and Jewish philosophical writings."
+      "rationaleAI": "History of philosophy in Islamic lands encompassing Jewish thinkers including Solomon Ibn Gabirol -- the medieval era of Islamic and European phases of rabbinic Judaism (A.4) and Jewish philosophical writings (B.6)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
       "relevantPathsAI": [
-        "C.4.a",
-        "C.4.b"
+        "C.4.a"
       ],
-      "rationaleAI": "Addresses the relationship between Christian imagery and Jewish visual traditions, directly relevant to the anti-iconic principle and uses of the visual arts in ceremony and ritual within Judaism."
+      "rationaleAI": "Christian art's relationship to Jewish visual traditions and the anti-iconic principle -- addressing the biblical prohibition against idolatry and its influence on visual representation (C.4.a)."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
       "relevantPathsAI": [
         "C.1",
+        "C.1.a",
         "B.4"
       ],
-      "rationaleAI": "Covers theology across major world religions including Judaism, examining concepts of God, salvation, the interpretation of sacred texts, and hermeneutics, directly relevant to basic beliefs and doctrines and Judaic exegesis."
+      "rationaleAI": "Systematic theology covering concepts of God in Judaism among world religions -- doctrines concerning God (C.1.a). Addresses interpretation of sacred texts as exegesis and hermeneutics (B.4)."
     },
     {
       "vsiTitle": "World music",
@@ -266,16 +311,16 @@
       "relevantPathsAI": [
         "C.4.c"
       ],
-      "rationaleAI": "Covers non-Western and folk musical traditions including the relationship between music and cultural identity, relevant to Jewish liturgical modes and the influence of folk traditions on Jewish vocal and instrumental music."
+      "rationaleAI": "World music covering non-Western and folk musical traditions including Jewish liturgical and folk music traditions -- music as Jewish liturgical modes and the influence of folk traditions (C.4.c)."
     },
     {
       "vsiTitle": "Spanish Literature",
       "vsiAuthor": "Jo Labanyi",
       "relevantPathsAI": [
         "A.4",
-        "B.7"
+        "C.2.e"
       ],
-      "rationaleAI": "Covers Hebrew literature as part of the multilingual literary traditions of Spain including medieval Iberian literature, relevant to the medieval era of rabbinic Judaism and Jewish literary traditions in the European and Islamic phases."
+      "rationaleAI": "Literary traditions of Spain including Hebrew literature alongside Castilian, Arabic, and other Iberian languages -- the medieval era of European rabbinic Judaism with Sephardic literary culture (A.4). Hebrew as a literary language in the Iberian context connects to the sacred language (C.2.e)."
     }
   ],
   "_curatedBy": "ai",
