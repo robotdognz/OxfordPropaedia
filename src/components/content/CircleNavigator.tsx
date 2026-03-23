@@ -23,6 +23,10 @@ const INNER_RADIUS = 96;
 const LABEL_RADIUS = 250;
 const CONNECTOR_RADIUS = 192;
 const INTERACTIVE_RADIUS = 320; // Touch/click boundary — covers labels and surrounding area
+const LABEL_EDGE_PADDING = 14;
+const LABEL_CHAR_WIDTH = 7;
+const LABEL_MIN_LENGTH = 8;
+const LABEL_MAX_LENGTH = 17;
 const FULL_SEGMENT_COUNT = 10;
 const FULL_SEGMENT_ANGLE = 360 / FULL_SEGMENT_COUNT;
 const RING_SEGMENT_COUNT = 9;
@@ -251,6 +255,36 @@ function textAnchorForAngle(angle: number) {
   if (horizontal > 0.3) return 'start';
   if (horizontal < -0.3) return 'end';
   return 'middle';
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
+}
+
+function getPartLabelLayout(angle: number, title: string) {
+  const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, angle);
+  const textAnchor = textAnchorForAngle(angle);
+  const minX = VIEWBOX_INSET + LABEL_EDGE_PADDING;
+  const maxX = VIEWBOX_SIZE - VIEWBOX_INSET - LABEL_EDGE_PADDING;
+  const baseX = labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
+  const labelX = clamp(baseX, minX, maxX);
+  const availableWidth = textAnchor === 'start'
+    ? maxX - labelX
+    : textAnchor === 'end'
+      ? labelX - minX
+      : Math.min(labelX - minX, maxX - labelX) * 2;
+  const maxLength = clamp(
+    Math.floor(Math.max(56, availableWidth) / LABEL_CHAR_WIDTH),
+    LABEL_MIN_LENGTH,
+    LABEL_MAX_LENGTH
+  );
+
+  return {
+    labelPosition,
+    textAnchor,
+    labelX,
+    labelLines: wrapLabel(title, maxLength, 4),
+  };
 }
 
 type DragState = {
@@ -902,6 +936,7 @@ export default function CircleNavigator({
 
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
+    if (event.pointerType === 'touch') return;
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
@@ -1098,8 +1133,8 @@ export default function CircleNavigator({
         <svg
           ref={svgRef}
           viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
-          class="mx-auto aspect-square w-full max-w-[38rem] cursor-default touch-none select-none sm:max-w-[42rem]"
-          style={{ overflow: 'visible' }}
+          class="mx-auto aspect-square w-full max-w-[38rem] cursor-default select-none sm:max-w-[42rem]"
+          style={{ overflow: 'visible', touchAction: 'pan-y pinch-zoom' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
           onPointerDown={handleBackgroundPointerDown}
@@ -1148,11 +1183,7 @@ export default function CircleNavigator({
                   : segmentAngle;
             const startAngle = centerAngle - effectiveSpan / 2;
             const endAngle = centerAngle + effectiveSpan / 2;
-            const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, centerAngle);
-            const labelLines = wrapLabel(part.title);
-            const textAnchor = textAnchorForAngle(centerAngle);
-            const labelX =
-              labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
+            const { labelPosition, labelLines, textAnchor, labelX } = getPartLabelLayout(centerAngle, part.title);
             const isTop = topPart.partNumber === part.partNumber;
             const distFromTop = angularDistance(centerAngle, 0);
             const topWeight = Math.max(0, 1 - distFromTop / effectiveSpan);
@@ -1168,12 +1199,14 @@ export default function CircleNavigator({
                   d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius + 10, startAngle, endAngle)}
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
+                  style={{ touchAction: 'none' }}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
                   d={donutSlicePath(CENTER, CENTER, segmentOuterRadius + 6, INTERACTIVE_RADIUS, startAngle, endAngle)}
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
+                  style={{ touchAction: 'none' }}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
@@ -1191,6 +1224,7 @@ export default function CircleNavigator({
                         : lerp(0.94, 1, topWeight)
                   }
                   class="cursor-grab active:cursor-grabbing"
+                  style={{ touchAction: 'none' }}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
 
@@ -1372,10 +1406,12 @@ export default function CircleNavigator({
             const tNumberPos = polar(CENTER, CENTER, lerp(134, 138, tTopWeight), target.centerAngle);
             const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
             const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
-            const tLabelPos = polar(CENTER, CENTER, LABEL_RADIUS, target.centerAngle);
-            const tTextAnchor = textAnchorForAngle(target.centerAngle);
-            const tLabelX = tLabelPos.x + (tTextAnchor === 'start' ? -30 : tTextAnchor === 'end' ? 30 : 0);
-            const tLabelLines = wrapLabel(centerPart.title);
+            const {
+              labelPosition: tLabelPos,
+              textAnchor: tTextAnchor,
+              labelX: tLabelX,
+              labelLines: tLabelLines,
+            } = getPartLabelLayout(target.centerAngle, centerPart.title);
             return (
               <g opacity={oldCenterGhostOpacity} pointer-events="none">
                 <path
@@ -1459,10 +1495,12 @@ export default function CircleNavigator({
             const numberPos = polar(CENTER, CENTER, lerp(134, 138, rmTopWeight), rmCenterAngle);
             const rmConnectorStart = polar(CENTER, CENTER, rmOuter + 6, rmCenterAngle);
             const rmConnectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, rmTopWeight), rmCenterAngle);
-            const rmLabelPos = polar(CENTER, CENTER, LABEL_RADIUS, rmCenterAngle);
-            const rmTextAnchor = textAnchorForAngle(rmCenterAngle);
-            const rmLabelX = rmLabelPos.x + (rmTextAnchor === 'start' ? -30 : rmTextAnchor === 'end' ? 30 : 0);
-            const rmLabelLines = wrapLabel(centerPart.title);
+            const {
+              labelPosition: rmLabelPos,
+              textAnchor: rmTextAnchor,
+              labelX: rmLabelX,
+              labelLines: rmLabelLines,
+            } = getPartLabelLayout(rmCenterAngle, centerPart.title);
 
             return (
               <g opacity={removeMorphT} pointer-events="none">
@@ -1574,7 +1612,7 @@ export default function CircleNavigator({
             role="button"
             tabIndex={0}
             class="cursor-grab active:cursor-grabbing"
-            style={{ outline: 'none' }}
+            style={{ outline: 'none', touchAction: 'none' }}
             onPointerDown={(event) => {
               event.preventDefault();
               setCenterHasFocus(false);
