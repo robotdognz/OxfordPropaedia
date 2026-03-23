@@ -4,101 +4,77 @@
     {
       "articleTitle": "Human body",
       "relevantPathsAI": [
-        "A",
-        "F",
-        "F.1",
-        "F.3",
-        "F.4",
-        "F.5",
-        "F.6",
-        "F.7",
-        "F.8",
-        "F.9"
+        "E",
+        "F"
       ],
-      "rationaleAI": "Provides a comprehensive hierarchical overview of all bodily systems — circulatory, digestive, endocrine, reproductive, urinary, nervous, musculoskeletal — directly corresponding to every organ-system subdivision under outline path F, and supplies the anatomical and physiological grounding for understanding disease classification under A."
+      "rationaleAI": "The human body's organ systems as the sites of diseases affecting any organ or tissue (E) and diseases of particular bodily systems (F)."
     },
     {
       "articleTitle": "Arthritis",
       "relevantPathsAI": [
-        "F.8.b",
         "F.8.c"
       ],
-      "rationaleAI": "Arthritis is a disorder of articular cartilage and joints (F.8.c), with rheumatoid arthritis also involving connective tissue and systemic manifestations (F.8.b); both osteoarthritis and inflammatory subtypes map directly to the supportive-protective system pathology outlined under F.8."
+      "rationaleAI": "Arthritis as a heterogeneous group of joint disorders within diseases of the supportive-protective system joints (F.8.c)."
     },
     {
       "articleTitle": "Cancer",
       "relevantPathsAI": [
-        "E",
-        "D.5"
+        "E"
       ],
-      "rationaleAI": "Cancer directly exemplifies outline path E (tumours and cancers, hyperplasia, atrophy affecting any organ or tissue), while the role of infectious agents such as HPV and H. pylori in causation also connects to D.5 (infectious impairment of health by living invaders)."
+      "rationaleAI": "Cancer as uncontrolled cell proliferation and tumours affecting any organ or tissue of the body (E)."
     },
     {
       "articleTitle": "Circulatory system",
       "relevantPathsAI": [
-        "F.1",
-        "F.1.a",
-        "F.1.b",
-        "F.1.c",
-        "F.1.d",
-        "F.2"
+        "F.1"
       ],
-      "rationaleAI": "Covers the heart, blood vessels, and blood-forming tissues — the exact structures enumerated under F.1 — and also the lymphatic system's relationship to circulation, addressing F.2; cardiovascular disease is explicitly identified as the leading global cause of death."
+      "rationaleAI": "Cardiovascular disease as the leading global cause of death, relevant to diseases of the cardiovascular system (F.1)."
     },
     {
       "articleTitle": "Allergy",
       "relevantPathsAI": [
         "D.11"
       ],
-      "rationaleAI": "Allergy is an IgE-mediated hypersensitivity disorder with manifestations ranging from rhinitis and dermatitis to anaphylactic shock, mapping precisely to outline path D.11 (allergenic diseases and anaphylactic shock)."
+      "rationaleAI": "Allergy as a hypersensitivity disorder producing allergenic diseases and anaphylactic shock (D.11)."
     },
     {
       "articleTitle": "Digestion",
       "relevantPathsAI": [
-        "F.4",
-        "F.4.a",
-        "F.4.b",
-        "F.4.c",
-        "F.4.d",
-        "F.4.e",
-        "F.4.f",
-        "F.4.g"
+        "F.4"
       ],
-      "rationaleAI": "Covers the full digestive process from mouth through large intestine including enzymatic secretion from digestive glands, directly corresponding to the subpaths of F.4 (the digestive system), and addresses nutrient absorption disorders relevant to F.4.g."
+      "rationaleAI": "Digestive processes relevant to diseases of the digestive system from mouth through large intestine and digestive glands (F.4)."
     },
     {
       "articleTitle": "Disease",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "B",
+        "D"
       ],
-      "rationaleAI": "The article addresses disease classification into infectious, deficiency, hereditary, and physiological types, communicable versus non-communicable status, etiology, pathogenesis, stages, and epidemiology — the core content of outline path A (characteristics, causes, and classifications of human disease)."
+      "rationaleAI": "Characteristics, causes, and classifications of human disease (A), detection and diagnosis (B), and symptoms of diseases of the body as a whole (D)."
     },
     {
       "articleTitle": "Pneumonia",
       "relevantPathsAI": [
-        "F.3.a",
-        "D.5"
+        "F.3.a"
       ],
-      "rationaleAI": "Pneumonia is an infection-induced inflammation of pulmonary alveoli fitting directly under F.3.a (infectious diseases of the respiratory system), and as an infectious disease caused by bacteria, viruses, and fungi it also exemplifies D.5 (impairment of health by living invaders)."
+      "rationaleAI": "Pneumonia as an infectious disease of the respiratory system caused by bacteria, viruses, and fungi (F.3.a)."
     },
     {
       "articleTitle": "Physical disability",
       "relevantPathsAI": [
-        "F.9",
-        "F.3",
-        "D.8"
+        "F.9"
       ],
-      "rationaleAI": "Covers lasting limitations from neurological conditions (epilepsy, mapping to F.9), respiratory impairments such as COPD (F.3), and sensory impairments (blindness, F.9.f), spanning multiple disease categories and connecting to disorders caused by physical agents under D.8."
+      "rationaleAI": "Physical disabilities affecting respiratory, neurological, and sensory function relevant to disorders of the nervous system (F.9)."
     },
     {
       "articleTitle": "Cardiovascular disease",
       "relevantPathsAI": [
         "F.1",
         "F.1.a",
-        "F.1.b",
-        "F.1.c"
+        "F.1.b"
       ],
-      "rationaleAI": "Cardiovascular disease is the leading cause of death globally, encompassing coronary artery disease, heart failure, stroke, and peripheral artery disease — directly corresponding to F.1 (the cardiovascular system) and its subpaths covering heart, blood vessels, and blood circulation."
+      "rationaleAI": "CVD encompassing diseases of the heart and great vessels (F.1.a) and blood vessels (F.1.b) as the leading global cause of death."
     },
     {
       "articleTitle": "Diabetes",
@@ -106,40 +82,35 @@
         "D.2",
         "F.5.f"
       ],
-      "rationaleAI": "Diabetes is a metabolic disorder of chronic hyperglycemia (D.2: metabolic diseases and disorders) involving the pancreatic beta cells and insulin system (F.5.f: the pancreas), with complications spanning renal, cardiovascular, and ophthalmic systems."
+      "rationaleAI": "Diabetes as a metabolic disease (D.2) involving the pancreas within diseases of the endocrine system (F.5.f)."
     },
     {
       "articleTitle": "Injury",
       "relevantPathsAI": [
         "D.8"
       ],
-      "rationaleAI": "Covers physiological damage from mechanical force (penetrating and blunt), thermal extremes, and biological toxins, corresponding directly to D.8 (disorders and injuries caused by physical agents including wounds and exposure to extremes of temperature)."
+      "rationaleAI": "Injuries caused by physical agents including electrical shock, temperature extremes, radiation, and wounds (D.8)."
     },
     {
       "articleTitle": "Bone",
       "relevantPathsAI": [
-        "F.8.a",
-        "F.8.b"
+        "F.8.a"
       ],
-      "rationaleAI": "Bone as mineralized connective tissue with pathologies including fractures, osteoporosis, and bone cancer maps to F.8.a (the skeletal system and bone) and F.8.b (connective tissue including bone and periosteum), the core content of the supportive-protective system's skeletal component."
+      "rationaleAI": "Bone pathologies including fractures, osteoporosis, and cancer relevant to diseases of the skeletal system and bone (F.8.a)."
     },
     {
       "articleTitle": "Pregnancy",
       "relevantPathsAI": [
         "F.6.e"
       ],
-      "rationaleAI": "Directly addresses pregnancy complications including gestational diabetes, hypertension, and anemia, as well as outcomes including miscarriage and stillbirth, corresponding exactly to F.6.e (pregnancy) under the reproductive system."
+      "rationaleAI": "Pregnancy complications including gestational diabetes, hypertension, and anemia as diseases of pregnancy (F.6.e)."
     },
     {
       "articleTitle": "Hormone",
       "relevantPathsAI": [
-        "F.5",
-        "F.5.a",
-        "F.5.b",
-        "F.5.d",
-        "F.5.f"
+        "F.5"
       ],
-      "rationaleAI": "Covers the endocrine signaling system including glands explicitly enumerated in F.5 (pituitary, thyroid, adrenal, pancreas), addressing the physiological basis for diseases of those glands; negative feedback failure underlies endocrine pathologies across all F.5 subpaths."
+      "rationaleAI": "Hormonal dysregulation underlying diseases of the endocrine system from pituitary through pancreas (F.5)."
     },
     {
       "articleTitle": "Tuberculosis",
@@ -147,224 +118,205 @@
         "D.5",
         "F.3.a"
       ],
-      "rationaleAI": "Tuberculosis caused by Mycobacterium tuberculosis spreads via airborne droplets, exemplifying D.5 (infectious diseases by living invaders), and its primary pulmonary manifestation fits F.3.a (infectious diseases of the respiratory system), with drug resistance patterns adding clinical urgency."
+      "rationaleAI": "Tuberculosis as a communicable infectious disease (D.5) and an infectious disease of the respiratory system (F.3.a)."
     },
     {
       "articleTitle": "Alcoholic beverage",
       "relevantPathsAI": [
-        "D.10",
-        "F.4.f",
-        "F.1"
+        "D.10"
       ],
-      "rationaleAI": "Long-term alcohol use causes organ damage including hepatic cirrhosis (F.4.f: digestive glands) and cardiovascular disease (F.1), and alcohol intoxication at high doses constitutes a form of poisoning (D.10); the article's disease-burden framing connects substantively to multiple system pathologies."
+      "rationaleAI": "Chronic alcohol consumption causing organ damage relevant to poisoning and toxic effects (D.10)."
     },
     {
       "articleTitle": "Myocardial infarction",
       "relevantPathsAI": [
-        "F.1.a",
-        "F.1.c"
+        "F.1.a"
       ],
-      "rationaleAI": "Myocardial infarction (heart attack) from coronary artery occlusion causing ischemic cardiac muscle death maps precisely to F.1.a (the heart and the great vessels), with the underlying atherosclerotic mechanism also relevant to F.1.c (blood circulation disorders)."
+      "rationaleAI": "Myocardial infarction as ischemic death of cardiac muscle, a disease of the heart and great vessels (F.1.a)."
     },
     {
       "articleTitle": "Gastroenteritis",
       "relevantPathsAI": [
-        "F.4",
         "D.5",
-        "D.9"
+        "F.4"
       ],
-      "rationaleAI": "Acute gastrointestinal inflammation by viral and bacterial pathogens falls under F.4 (the digestive system) and D.5 (infectious diseases by living invaders), while dehydration as its primary clinical danger directly addresses D.9 (dehydration and associated disorders)."
+      "rationaleAI": "Gastroenteritis as an acute infectious contagious disease (D.5) affecting the digestive system (F.4)."
     },
     {
       "articleTitle": "Sexually transmitted infection",
       "relevantPathsAI": [
-        "F.6.b",
-        "D.5"
+        "D.5",
+        "F.6.b"
       ],
-      "rationaleAI": "STIs are explicitly mapped by outline path F.6.b (infections and sexually transmitted diseases under the reproductive system), and as bacterial, viral, and parasitic pathogens transmitted sexually they also constitute infectious diseases under D.5."
+      "rationaleAI": "STIs as communicable contagious diseases (D.5) transmitted through sexual contact, relevant to infections and sexually transmitted diseases of the reproductive system (F.6.b)."
     },
     {
       "articleTitle": "Dentistry",
       "relevantPathsAI": [
         "F.4.a"
       ],
-      "rationaleAI": "Dentistry addresses diseases of the teeth, gums, and oral mucosa including the temporomandibular joint, which corresponds to F.4.a (the mouth, pharynx, and associated structures); the article notes intersection with systemic conditions including diabetes and osteoporosis, linking to F.5 and F.8."
+      "rationaleAI": "Dentistry treating diseases of the mouth, pharynx, and associated structures within the digestive system (F.4.a)."
     },
     {
       "articleTitle": "Nutrition",
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Nutrition directly addresses deficiencies and excesses of essential nutrients producing malnutrition, mapping precisely to D.3 (nutritional diseases: disorders related to nutritional deficiencies and excesses); the article frames nutritional science in terms of disease prevention and health outcomes."
+      "rationaleAI": "Nutritional diseases including disorders related to nutritional deficiencies and excesses (D.3)."
     },
     {
       "articleTitle": "Smoking",
       "relevantPathsAI": [
-        "F.3.c",
-        "F.1",
-        "E"
+        "F.3.c"
       ],
-      "rationaleAI": "Smoking causes lung cancer (E: tumours), cardiovascular disease (F.1), and COPD (F.3.c: bronchopulmonary diseases), making it a substantive causal agent across multiple disease categories in the outline; the article provides disease-burden data directly relevant to these paths."
+      "rationaleAI": "Smoking causing bronchopulmonary diseases including COPD and lung cancer (F.3.c)."
     },
     {
       "articleTitle": "Virus",
       "relevantPathsAI": [
-        "D.5",
-        "F.3.a"
+        "D.5"
       ],
-      "rationaleAI": "Viruses as obligate intracellular agents are a primary category of 'living invaders of the body' under D.5 (infectious or contagious diseases), and major respiratory diseases caused by viruses (influenza, COVID-19) connect to F.3.a (infectious diseases of the respiratory system)."
+      "rationaleAI": "Viruses as agents of communicable infectious diseases including HIV, influenza, and hepatitis (D.5)."
     },
     {
       "articleTitle": "Lung",
       "relevantPathsAI": [
-        "F.3",
-        "F.3.a",
-        "F.3.c",
-        "F.3.e"
+        "F.3"
       ],
-      "rationaleAI": "The lung article covers pneumonia, COPD, cancer, and emphysema as specific disease categories (F.3.a, F.3.c), and discusses respiratory dynamics (F.3.e), providing the organ-level anatomical context for the entire respiratory system disease category F.3."
+      "rationaleAI": "Lung diseases including pneumonia, COPD, cancer, and emphysema as diseases of the respiratory system (F.3)."
     },
     {
       "articleTitle": "Nervous system",
       "relevantPathsAI": [
-        "F.9",
-        "F.9.a",
-        "F.9.b",
-        "F.9.c",
-        "F.9.d"
+        "F.9"
       ],
-      "rationaleAI": "Covers the central and peripheral nervous system organization with associated disorders including neuropathy and neurodegeneration, directly corresponding to F.9 and its subpaths on neurological manifestations (F.9.a), peripheral nerve disorders (F.9.b), spinal cord disorders (F.9.c), and central nervous system disorders (F.9.d)."
+      "rationaleAI": "Disorders of the nervous system including neuropathy, demyelination, and neurodegeneration (F.9)."
     },
     {
       "articleTitle": "Skeletal muscle",
       "relevantPathsAI": [
         "F.8.f"
       ],
-      "rationaleAI": "Skeletal muscle composition, fiber types, and pathological conditions including atrophy directly address F.8.f (muscle) under the supportive-protective system; the article covers muscular plasticity and the adaptive changes relevant to disease and rehabilitation."
+      "rationaleAI": "Muscle disorders including atrophy and hypertrophy as diseases of muscle within the supportive-protective system (F.8.f)."
     },
     {
       "articleTitle": "Medical imaging",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Medical imaging modalities (X-ray, MRI, CT, ultrasound, PET) are core tools for producing visual representations of internal body structures for diagnosis, directly and substantively covering outline path B (the detection and diagnosis of disease)."
+      "rationaleAI": "Medical imaging modalities including X-ray, MRI, CT, and ultrasound as tools for detection and diagnosis of disease (B)."
     },
     {
       "articleTitle": "Common cold",
       "relevantPathsAI": [
-        "F.3.a",
-        "D.5"
+        "D.5",
+        "F.3.a"
       ],
-      "rationaleAI": "The common cold is an upper respiratory tract infection caused by over 200 virus strains, fitting squarely under F.3.a (infectious diseases of the respiratory system) and D.5 (infectious or contagious diseases: health impairment by living invaders)."
+      "rationaleAI": "The common cold as the most frequent communicable infectious disease (D.5) affecting the upper respiratory tract (F.3.a)."
     },
     {
       "articleTitle": "Health",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Defining health as the absence of disease and the determinants maintaining it provides direct conceptual framing for outline path A (characteristics, causes, and classifications of human disease), positioning the concept of disease in relation to its opposite state."
+      "rationaleAI": "Health as the baseline from which disease characteristics, causes, and classifications are defined (A)."
     },
     {
       "articleTitle": "Mental health",
       "relevantPathsAI": [
-        "F.9.a",
         "F.9.d"
       ],
-      "rationaleAI": "Mental health and mental disorder involve neurochemical and neurological dysfunction relevant to F.9.a (neurological manifestations including neurochemical disorders) and F.9.d (disorders of the central nervous system); the WHO definition and risk factors provide clinical framing for this underserved path."
+      "rationaleAI": "Mental health disorders relevant to disorders of the central nervous system (F.9.d)."
     },
     {
       "articleTitle": "Obesity",
       "relevantPathsAI": [
         "D.2",
-        "E"
+        "D.3"
       ],
-      "rationaleAI": "Obesity is classified as a metabolic disease (D.2: metabolic diseases and disorders) involving excess adipose tissue, and constitutes a form of tissue-level pathological change relevant to E (diseases and disorders affecting any organ or tissue: hyperplasia); it is a risk factor for multiple system diseases in F."
+      "rationaleAI": "Obesity as a metabolic disease (D.2) with nutritional excess dimensions (D.3)."
     },
     {
       "articleTitle": "Drug",
       "relevantPathsAI": [
-        "C.2.c",
-        "C.2.d"
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Pharmaceutical drugs as treatment agents map to C.2.c (pharmacodynamic therapy) and C.2.d (chemotherapy) among the major therapeutic techniques; the article distinguishes pharmaceutical from recreational use and covers administration routes relevant to therapeutic regimen formulation under C.1."
+      "rationaleAI": "Pharmaceutical drugs for pharmacodynamic therapy (C.3) and chemotherapy (C.4) in the treatment of disease."
     },
     {
       "articleTitle": "Bacteria",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Bacteria as pathogenic microorganisms are a primary category of 'living invaders of the body' under D.5 (infectious or contagious diseases), causing major diseases including tuberculosis, pneumonia, and STIs; the article covers bacterial pathogenesis and connects directly to infectious disease across multiple body systems."
+      "rationaleAI": "Bacteria as agents of communicable infectious diseases including pathogenic strains (D.5)."
     },
     {
       "articleTitle": "Ear",
       "relevantPathsAI": [
         "F.9.g"
       ],
-      "rationaleAI": "The ear article covers clinical conditions including hearing loss, tinnitus, and vertigo, directly addressing F.9.g (disorders of the ear and hearing) under the nervous system section of the outline; the anatomical detail of outer, middle, and inner ear structures grounds the pathological discussion."
+      "rationaleAI": "Disorders of the ear and hearing including hearing loss, tinnitus, and vertigo (F.9.g)."
     },
     {
       "articleTitle": "Skin",
       "relevantPathsAI": [
         "F.8.g"
       ],
-      "rationaleAI": "Skin as the outermost organ with protective, thermoregulatory, and sensory functions, and its pathologies, directly corresponds to F.8.g (the skin) under the supportive-protective system; wound healing and immune defense functions are clinically relevant to this path."
+      "rationaleAI": "Skin disorders as diseases of the integument within the supportive-protective system (F.8.g)."
     },
     {
       "articleTitle": "Wheat",
       "relevantPathsAI": [
-        "D.3",
-        "F.4.g"
+        "D.3"
       ],
-      "rationaleAI": "Gluten in wheat triggers coeliac disease, non-coeliac gluten sensitivity, and related autoimmune conditions, linking to D.3 (nutritional diseases and disorders related to dietary components) and F.4.g (disorders in the digestion and absorption of foods); this is the primary medical relevance of the article."
+      "rationaleAI": "Wheat gluten triggering coeliac disease and related autoimmune conditions as nutritional diseases (D.3)."
     },
     {
       "articleTitle": "Drinking water",
       "relevantPathsAI": [
-        "D.9",
-        "D.4"
+        "D.5"
       ],
-      "rationaleAI": "Drinking water availability directly addresses D.9 (dehydration and associated disorders) as unsafe or unavailable water causes dehydration and diarrheal disease; water quality also connects to D.4 (diseases and disorders of fluid and electrolyte balance), covering both priority uncovered paths."
+      "rationaleAI": "Unsafe drinking water as a primary cause of diarrheal communicable disease (D.5)."
     },
     {
       "articleTitle": "Milk",
       "relevantPathsAI": [
-        "D.3",
-        "F.4.g"
+        "D.3"
       ],
-      "rationaleAI": "Lactose intolerance and dairy allergy are physiologically distinct conditions addressed in the article, connecting to F.4.g (disorders in the digestion and absorption of foods) and D.3 (nutritional diseases); milk's role as a calcium and protein source also relates to nutritional adequacy and deficiency."
+      "rationaleAI": "Lactose intolerance and dairy allergy as nutritional disorders related to food composition (D.3)."
     },
     {
       "articleTitle": "Influenza",
       "relevantPathsAI": [
-        "F.3.a",
-        "D.5"
+        "D.5",
+        "F.3.a"
       ],
-      "rationaleAI": "Influenza is a respiratory infectious disease causing 3–5 million severe cases annually, mapping to F.3.a (infectious diseases of the respiratory system) and D.5 (infectious diseases by living invaders); its potential progression to pneumonia, ARDS, and encephalitis also connects to F.3 and F.9.d."
+      "rationaleAI": "Influenza as a communicable respiratory infectious disease (D.5) causing seasonal epidemics and respiratory system infection (F.3.a)."
     },
     {
       "articleTitle": "HIV/AIDS",
       "relevantPathsAI": [
         "D.5",
-        "F.6.b",
-        "F.2.b"
+        "F.6.b"
       ],
-      "rationaleAI": "HIV as a retrovirus progressively destroying CD4+ T cells maps to D.5 (infectious diseases by living invaders) and F.6.b (sexually transmitted diseases under the reproductive system); AIDS-related immunodeficiency also involves lymphoid tissue disorders relevant to F.2.b (disorders of lymphoid tissue), covering a priority uncovered path."
+      "rationaleAI": "HIV as a retrovirus causing communicable infectious disease (D.5) and a sexually transmitted infection (F.6.b)."
     },
     {
       "articleTitle": "Smallpox",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Smallpox, caused by Variola virus, was a uniquely human infectious disease with 30% case fatality, exemplifying D.5 (infectious or contagious diseases: health impairment by living invaders); its eradication also illustrates prevention and vaccine therapy relevant to C.2.b."
+      "rationaleAI": "Smallpox as a communicable viral disease eradicated through vaccination, exemplifying contagious disease control (D.5)."
     },
     {
       "articleTitle": "Vaccine",
       "relevantPathsAI": [
-        "C.2.b"
+        "C.2"
       ],
-      "rationaleAI": "Vaccines confer active acquired immunity as a biological preparation, directly mapping to C.2.b (biological therapy) among the major therapeutic techniques; the article covers vaccine types including attenuated, inactivated, mRNA, and DNA vaccines as forms of immunological treatment and prevention."
+      "rationaleAI": "Vaccines as biological therapy conferring active acquired immunity for disease treatment and prevention (C.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -12,39 +12,36 @@
         "F",
         "G",
         "H",
-        "I",
         "J",
         "K"
       ],
-      "rationaleAI": "Human body provides a comprehensive survey of all organ systems covered in Section 421, organized hierarchically from cells through organ systems including circulatory, digestive, endocrine, reproductive, respiratory, urinary, musculoskeletal, and nervous systems."
+      "rationaleAI": "The complete biological structure of Homo sapiens organized into organ systems directly corresponding to cardiovascular (A), lymphatic (B), respiratory (C), digestive (D), endocrine (E), reproductive (F), excretory (G), supportive-protective (H), and nervous (J) systems, plus body fluids and tissues (K)."
     },
     {
       "articleTitle": "Circulatory system",
       "relevantPathsAI": [
         "A",
         "A.2",
-        "A.4",
-        "B"
+        "A.4"
       ],
-      "rationaleAI": "The circulatory system article covers the heart, blood vessels, blood circuits (pulmonary and systemic), and the complementary lymphatic system, directly addressing the full scope of A (cardiovascular) and B (lymphatic system) in the outline."
+      "rationaleAI": "The cardiovascular system comprising heart, blood vessels, and blood (A), with arteries, veins, and capillaries (A.2) and pulmonary and systemic circulation (A.4)."
     },
     {
       "articleTitle": "Heart",
       "relevantPathsAI": [
-        "A.1",
-        "A.4"
+        "A.1"
       ],
-      "rationaleAI": "Heart covers the four-chambered human cardiac structure, sinoatrial pacemaker, conduction system, and both pulmonary and systemic circulation circuits, directly addressing the priority path A.1 (the heart) and A.4 (blood circulation)."
+      "rationaleAI": "The four-chambered heart with sinoatrial node pacemaker and conduction system (A.1)."
     },
     {
       "articleTitle": "Blood",
       "relevantPathsAI": [
         "A.3",
         "A.3.a",
-        "A.3.c",
-        "K"
+        "A.3.b",
+        "A.3.c"
       ],
-      "rationaleAI": "Blood covers plasma, erythrocytes, leukocytes, and platelets (A.3.a), coagulation and clotting (A.3.c), and as a specialized connective tissue fluid it also falls under K (body fluids and tissues)."
+      "rationaleAI": "Human blood components including plasma (A.3.a), red blood cells, white blood cells, and platelets (A.3.a), blood groups (A.3.b), and bleeding and clotting (A.3.c)."
     },
     {
       "articleTitle": "Digestion",
@@ -53,18 +50,16 @@
         "D.1",
         "D.2"
       ],
-      "rationaleAI": "Digestion covers the full digestive process from mouth through large intestine, including enzymatic and mechanical breakdown and nutrient absorption, directly mapping to D.1 (structure of digestive tract components) and D.2 (the digestive process)."
+      "rationaleAI": "The digestive system structure from mouth through large intestine (D.1) and the digestive process including enzymatic breakdown and nutrient absorption (D.2)."
     },
     {
       "articleTitle": "Hormone",
       "relevantPathsAI": [
         "E",
         "E.1",
-        "E.2",
-        "E.2.a",
-        "E.2.b"
+        "E.2"
       ],
-      "rationaleAI": "Hormone covers chemical classes of signaling molecules produced by endocrine glands (pituitary, thyroid, adrenal, pancreas), their mechanisms of action via surface and nuclear receptors, and negative feedback in homeostasis, directly addressing E and its sub-paths including effects on reproductive processes (E.2)."
+      "rationaleAI": "The endocrine system including glands and their secretions from thyroid through pancreatic islets (E.1) and endocrine effects upon reproductive processes (E.2)."
     },
     {
       "articleTitle": "Nervous system",
@@ -74,22 +69,21 @@
         "J.2",
         "J.3"
       ],
-      "rationaleAI": "Nervous system covers the CNS (brain and spinal cord), peripheral nervous system (somatic and autonomic divisions), and the sympathetic, parasympathetic, and enteric subdivisions, directly addressing J.1, J.2, and J.3."
+      "rationaleAI": "The central nervous system including brain and spinal cord (J.1), peripheral nervous system including cranial and spinal nerves (J.2), and the autonomic nervous system (J.3)."
     },
     {
       "articleTitle": "Brain",
       "relevantPathsAI": [
         "J.1"
       ],
-      "rationaleAI": "Brain covers the structure and functions of the central nervous system's primary organ, including forebrain, midbrain, and hindbrain divisions, cortical neuronal organization, and executive functions of the prefrontal cortex, directly addressing J.1 (the central nervous system: the brain)."
+      "rationaleAI": "The brain as the central organ of the nervous system responsible for sensory integration, cognition, and motor coordination (J.1)."
     },
     {
       "articleTitle": "Bone",
       "relevantPathsAI": [
-        "H.1",
-        "H.2"
+        "H.1"
       ],
-      "rationaleAI": "Bone covers cortical and cancellous osseous tissue, collagen organic matrix, mineral salt inorganic phase, osteoblast/osteocyte/osteoclast cell types, and connective tissue properties, directly addressing the priority paths H.1 (composition and properties of bone) and H.2 (connective tissues)."
+      "rationaleAI": "Bone composition and properties including cortical and cancellous tissue, osteoblasts, osteoclasts, and mineral homeostasis (H.1)."
     },
     {
       "articleTitle": "Skeletal muscle",
@@ -98,87 +92,74 @@
         "H.7",
         "H.7.a"
       ],
-      "rationaleAI": "Skeletal muscle covers the muscular system composition, fiber type differentiation (slow vs. fast twitch), actin-myosin sarcomere contraction mechanics, and functional roles in locomotion and posture, directly addressing priority paths H.6 (muscular system) and H.7/H.7.a (structure and properties of voluntary muscle)."
+      "rationaleAI": "The muscular system (H.6) with structure and properties of striated skeletal voluntary muscle (H.7.a)."
     },
     {
       "articleTitle": "Breathing",
       "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.2",
         "C.3"
       ],
-      "rationaleAI": "Breathing covers the complete respiratory process including airway anatomy (trachea, bronchi, bronchioles), alveolar gas exchange, chemoreceptor regulation of rate and depth, and the role of the diaphragm, directly addressing the priority paths C.1, C.2, and C.3."
+      "rationaleAI": "The regulation, control, and dynamics of breathing including chemoreceptor sensitivity and homeostatic regulation (C.3)."
     },
     {
       "articleTitle": "Lung",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "C.2"
       ],
-      "rationaleAI": "Lung covers the anatomy of the pulmonary system (lobes, alveoli, airways), dual blood supply, gas exchange mechanics, and diaphragm-driven breathing, directly addressing the priority path C.2 (the lungs and bronchi) and relating to C.3 (regulation of breathing)."
+      "rationaleAI": "The lungs and bronchi as the primary gas exchange organs of the human respiratory system (C.2)."
     },
     {
       "articleTitle": "Liver",
       "relevantPathsAI": [
-        "D.1.f",
-        "D.2"
+        "D.1.f"
       ],
-      "rationaleAI": "Liver covers bile secretion for fat digestion, glycogen storage, detoxification, and plasma protein synthesis, directly addressing D.1.f (associated glands: liver, gallbladder, bile ducts) and contributing to D.2 (the digestive process via bile)."
+      "rationaleAI": "The liver as an associated digestive gland performing bile secretion, detoxification, and metabolic functions (D.1.f)."
     },
     {
       "articleTitle": "Skin",
       "relevantPathsAI": [
-        "H.8",
-        "J.6.a"
+        "H.8"
       ],
-      "rationaleAI": "Skin covers the epidermis, dermis, and subcutaneous tissue structure, thermoregulation, UV protection, and cutaneous sensation functions, directly addressing the priority path H.8 (integument and derivatives: skin, hair, nails) and J.6.a (cutaneous senses)."
+      "rationaleAI": "The integument and derivatives including skin, hair, and nails as part of the supportive-protective system (H.8)."
     },
     {
       "articleTitle": "Eye",
       "relevantPathsAI": [
         "J.4"
       ],
-      "rationaleAI": "Eye covers photoreceptor-based light transduction, retinal structure, cone and rod function for color and scotopic vision, and visual processing, directly addressing J.4 (the eye and the process of vision)."
+      "rationaleAI": "The eye and the process of vision including photoreceptor cells and visual acuity (J.4)."
     },
     {
       "articleTitle": "Ear",
       "relevantPathsAI": [
-        "J.5",
-        "J.6.c"
+        "J.5"
       ],
-      "rationaleAI": "Ear covers the three-part anatomical structure of the human ear, cochlear hair-cell sound transduction, and vestibular apparatus (semicircular canals, utricle, saccule), directly addressing J.5 (the ear and process of audition) and J.6.c (vestibular sense)."
+      "rationaleAI": "The ear and the process of audition including outer, middle, and inner ear structures and sound transduction (J.5)."
     },
     {
       "articleTitle": "Sense",
       "relevantPathsAI": [
-        "J.6",
-        "J.6.a",
-        "J.6.b",
-        "J.6.c",
-        "J.6.d",
-        "J.6.e"
+        "J.4",
+        "J.5",
+        "J.6"
       ],
-      "rationaleAI": "Sense covers all sensory modalities including proprioception, nociception, vestibular, taste, and olfaction, alongside the classical five senses, directly addressing J.6 (other sensory receptors) and its sub-paths for cutaneous, kinesthetic, vestibular, gustatory, and olfactory senses."
+      "rationaleAI": "Sensory systems including vision (J.4), audition (J.5), and other sensory receptors including cutaneous, kinesthetic, vestibular, gustatory, and olfactory senses (J.6)."
     },
     {
       "articleTitle": "Pregnancy",
       "relevantPathsAI": [
-        "F",
-        "F.2",
         "E.2",
-        "E.2.b"
+        "F.2"
       ],
-      "rationaleAI": "Pregnancy covers intrauterine gestation, physiological maternal adaptations, endocrine changes through trimesters, and the processes of implantation and birth, directly addressing the priority paths F.2 (female reproductive system) and E.2.b (female processes under endocrine control including gestation and parturition)."
+      "rationaleAI": "Pregnancy involving endocrine control of gestation, parturition, and milk secretion (E.2) and the female reproductive system (F.2)."
     },
     {
       "articleTitle": "Woman",
       "relevantPathsAI": [
         "F.2",
-        "E.2.b",
-        "E.2.a"
+        "E.2.b"
       ],
-      "rationaleAI": "Woman covers female reproductive anatomy (ovaries, fallopian tubes, uterus, vagina), menstruation, menopause, and physiological sex differences, directly addressing the priority paths F.2 (female reproductive system) and E.2.b (female processes under endocrine control)."
+      "rationaleAI": "Female reproductive anatomy including ovaries, fallopian tubes, and uterus (F.2) and female processes under endocrine control including menstrual cycle and menopause (E.2.b)."
     },
     {
       "articleTitle": "Man",
@@ -186,45 +167,40 @@
         "F.1",
         "E.2.a"
       ],
-      "rationaleAI": "Man covers male reproductive anatomy (testes, epididymides, prostate, penis), XY chromosomal basis, and secondary sexual characteristics, directly addressing the priority path F.1 (the male reproductive system) and E.2.a (testes as glands affected by endocrine secretions)."
+      "rationaleAI": "Male reproductive anatomy including testes and prostate (F.1) and testes as glands affected by endocrine secretions (E.2.a)."
     },
     {
       "articleTitle": "Sex",
       "relevantPathsAI": [
-        "F",
-        "F.1",
-        "F.2"
+        "F"
       ],
-      "rationaleAI": "Sex covers gamete production by both sexes, chromosomal sex determination, sexual dimorphism, and hermaphroditism, providing broad coverage of F (structures and functions of the reproductive system) including F.1 and F.2."
+      "rationaleAI": "Biological sex relevant to the structures and functions of the reproductive system in both males and females (F)."
     },
     {
       "articleTitle": "Arthritis",
       "relevantPathsAI": [
         "H.3"
       ],
-      "rationaleAI": "Arthritis is a joint disorder directly characterizing the structure and pathology of joints through articular cartilage loss and inflammatory or degenerative processes, providing coverage of the priority path H.3 (the joints) that has no other source recommendations."
+      "rationaleAI": "Arthritis as a joint disorder relevant to the structures and functions of the joints (H.3)."
     },
     {
       "articleTitle": "Lipid",
       "relevantPathsAI": [
-        "K",
-        "D.2"
+        "K"
       ],
-      "rationaleAI": "Lipid covers phospholipid bilayer membrane structure, triglyceride energy storage, steroid hormones, and fat-soluble vitamins as components of body tissues and fluids, relevant to K (composition and properties of body fluids and tissues) and fat digestion in D.2."
+      "rationaleAI": "Lipids as components of body fluids and tissues including membrane phospholipids and steroid hormones (K)."
     },
     {
       "articleTitle": "Human",
       "relevantPathsAI": [
         "A",
         "D",
-        "E",
         "F",
-        "H",
         "J"
       ],
-      "rationaleAI": "Human provides broad anatomical and physiological coverage of Homo sapiens including cardiovascular, digestive, endocrine, reproductive, musculoskeletal, and nervous systems, serving as a broad parent entry for multiple outline divisions."
+      "rationaleAI": "Homo sapiens anatomy and physiology spanning cardiovascular (A), digestive (D), reproductive (F), and nervous (J) systems."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

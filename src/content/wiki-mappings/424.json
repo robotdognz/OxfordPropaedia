@@ -5,186 +5,173 @@
       "articleTitle": "Nursing",
       "relevantPathsAI": [
         "B",
-        "C"
+        "C.1.b"
       ],
-      "rationaleAI": "Nursing is explicitly named in outline path B (the related disciplines of nursing) and constitutes a major component of healthcare practice covered under C (the practice of medicine); the article addresses scope of practice, professional standards, and medical education connections."
+      "rationaleAI": "Nursing as the largest healthcare profession and a related discipline to medicine (B), with practice spanning hospital and specialist settings (C.1.b)."
     },
     {
       "articleTitle": "Vaccine",
       "relevantPathsAI": [
-        "H.1",
-        "H.5"
+        "H.1"
       ],
-      "rationaleAI": "Vaccines are the primary instrument of vaccination and immunization programs (H.1) and have been central to the eradication of smallpox and control of polio and measles, directly addressing H.5 (the prevention and control of epidemics) through population-level immunization campaigns."
+      "rationaleAI": "Vaccination and immunization as a primary method for prevention and control of infection (H.1)."
     },
     {
       "articleTitle": "Hospital",
       "relevantPathsAI": [
-        "E",
-        "C.1.b",
-        "A"
+        "E"
       ],
-      "rationaleAI": "Directly addresses hospital services and facilities (E), the primary uncovered path, covering typology of general, specialist, and teaching hospitals, funding structures, and administrative evolution; teaching hospitals also connect to C.1.b (hospital and specialist practice) and medical education under A."
+      "rationaleAI": "Hospital services and facilities including general, specialized, and teaching hospitals (E)."
     },
     {
       "articleTitle": "Hygiene",
       "relevantPathsAI": [
-        "H.3",
-        "F"
+        "F",
+        "H.3"
       ],
-      "rationaleAI": "Hygiene encompasses personal and environmental practices preventing disease transmission including hand washing and medical hygiene, directly addressing H.3 (destruction of infectious agent: aseptic and antiseptic precautions, disinfection), and connects to F (environmental sanitation) through its broader scope."
+      "rationaleAI": "Hygiene as environmental sanitation and health practices (F) and aseptic and antiseptic precautions for infection control (H.3)."
     },
     {
       "articleTitle": "Drinking water",
       "relevantPathsAI": [
-        "F",
-        "H.5"
+        "F"
       ],
-      "rationaleAI": "Safe drinking water is a central component of environmental sanitation (F: control of water pollution), and waterborne disease transmission from contaminated water connects to H.5 (the prevention and control of epidemics); WHO and national regulatory frameworks govern water quality standards globally."
+      "rationaleAI": "Drinking water quality and treatment relevant to environmental sanitation and control of water pollution (F)."
     },
     {
       "articleTitle": "Dentistry",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Dentistry is explicitly named as a related discipline in outline path B (fields of specialized medical research; the related disciplines of osteopathy, dentistry, and nursing), covering its own degree structure, subspecialties, and evidence-based practice — a primary uncovered priority path."
+      "rationaleAI": "Dentistry as a related medical discipline with its own degree structure and subspecialties (B)."
     },
     {
       "articleTitle": "Medicine",
       "relevantPathsAI": [
         "A",
-        "B",
         "C",
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Medicine as a broad article covers the science and practice of diagnosing, treating, and preventing human disease including clinical specialties, medical ethics, education, licensing, and healthcare delivery systems, spanning outline paths A (medical education), B (specialized fields), C (practice), and C.2 (professional standards)."
+      "rationaleAI": "Medical education (A), the practice of medicine including general and specialist practice (C.1), and maintenance of professional standards (C.2)."
     },
     {
       "articleTitle": "Tuberculosis",
       "relevantPathsAI": [
-        "H.5",
-        "H.4"
+        "H.4",
+        "H.5"
       ],
-      "rationaleAI": "Tuberculosis as the leading infectious disease killer globally illustrates both the prevention and control of epidemics (H.5) including multi-drug-resistant strain challenges, and the use of therapeutic agents and prophylactic medication (H.4) through BCG vaccination and multi-drug treatment regimens."
+      "rationaleAI": "TB control through therapeutic agents and prophylactic medication (H.4) and prevention and control of epidemics (H.5)."
     },
     {
       "articleTitle": "Drug",
       "relevantPathsAI": [
         "H.4",
-        "C"
+        "I.2"
       ],
-      "rationaleAI": "Pharmaceutical drugs as agents treating, curing, preventing, or diagnosing disease directly address H.4 (the use of therapeutic agents and prophylactic medication) and underpin the practice of medicine broadly under C; the article also covers drug regulation under I.2 (health and safety laws, control of foods and drugs)."
+      "rationaleAI": "Drugs as therapeutic agents for infection control (H.4) and subject to health and safety regulation including control of foods and drugs (I.2)."
     },
     {
       "articleTitle": "Florence Nightingale",
       "relevantPathsAI": [
         "B",
-        "D",
-        "H.3"
+        "F"
       ],
-      "rationaleAI": "Florence Nightingale professionalized nursing (B: related discipline of nursing), pioneered evidence-based hospital design and public health statistical methods (D: public health services and administration), and significantly reduced mortality by improving sanitation and hygiene (H.3: antiseptic precautions), covering multiple priority paths."
+      "rationaleAI": "Nightingale as the founder of modern nursing (B) who pioneered evidence-based hospital design and sanitation improvements (F)."
     },
     {
       "articleTitle": "Pollution",
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Pollution directly addresses environmental sanitation and health through the introduction of harmful contaminants into air, water, and soil (F: control of air, water, and soil pollution), covering all three environmental media explicitly named in the outline path and the nine million annual deaths attributable to pollution."
+      "rationaleAI": "Pollution as environmental contamination relevant to environmental sanitation and the control of air, water, and soil pollution (F)."
     },
     {
       "articleTitle": "Sexually transmitted infection",
       "relevantPathsAI": [
-        "H.5",
-        "H.1",
-        "H.3"
+        "H.5"
       ],
-      "rationaleAI": "STIs illustrate epidemic prevention and control (H.5) through programs combining vaccination for HPV and hepatitis B (H.1), condom use and comprehensive sex education (H.3: control of disease carriers), addressing public health coordination across multiple prevention strategies."
+      "rationaleAI": "STI prevention through vaccination, condom use, and sex education as part of prevention and control of epidemics (H.5)."
     },
     {
       "articleTitle": "Nutrition",
       "relevantPathsAI": [
         "G"
       ],
-      "rationaleAI": "Nutrition directly addresses the recognition and solution of problems relating to nutrient requirements and world food supply, corresponding exactly to outline path G (prevention of malnutrition: nutrient requirements, world food supply, and world population), covering macro- and micronutrient deficiency and excess."
+      "rationaleAI": "Nutritional science relevant to efforts directed toward prevention of malnutrition and nutrient requirements (G)."
     },
     {
       "articleTitle": "Trade union",
       "relevantPathsAI": [
         "I.2"
       ],
-      "rationaleAI": "Trade unions negotiate health and safety standards including regulation of working hours and elimination of health, safety, and fire hazards, directly connecting to I.2 (health and safety laws: restrictions on labor conditions and elimination of occupational hazards), one dimension of industrial and social medicine."
+      "rationaleAI": "Trade unions negotiating employment conditions relevant to health and safety laws and regulation of working hours (I.2)."
     },
     {
       "articleTitle": "Mining",
       "relevantPathsAI": [
-        "I.1",
-        "I.2"
+        "I.1"
       ],
-      "rationaleAI": "Mining generates significant occupational hazards including respiratory disease and physical injury, directly relevant to I.1 (the scope of industrial and occupational medicine) — a primary uncovered path — and the associated health and safety laws under I.2 governing working conditions in extractive industries."
+      "rationaleAI": "Mining's occupational hazards relevant to the scope of industrial and occupational medicine (I.1)."
     },
     {
       "articleTitle": "Birth control",
       "relevantPathsAI": [
-        "D",
-        "C.1.c"
+        "C.2.a"
       ],
-      "rationaleAI": "Birth control is central to public health services (D) through family planning programs and government reproductive health services (C.1.c: governmental practice, public health service), preventing pregnancy-related deaths and addressing unmet contraceptive need in developing countries as a public health intervention."
+      "rationaleAI": "Birth control raising ethical issues related to the ethical basis of medical practice alongside euthanasia and abortion (C.2.a)."
     },
     {
       "articleTitle": "Smoking",
       "relevantPathsAI": [
-        "I.1",
-        "H.5"
+        "I.1"
       ],
-      "rationaleAI": "Smoking causes 1.3 million annual deaths from secondhand smoke and is a major occupational and social medicine concern (I.1), while public health campaigns for smoking cessation address epidemic prevention (H.5); both the occupational health dimension and population-level prevention are directly relevant."
+      "rationaleAI": "Smoking as a public health hazard relevant to industrial and social medicine (I.1)."
     },
     {
       "articleTitle": "Waste",
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Waste management — encompassing hazardous, radioactive, medical, and municipal waste — directly addresses environmental sanitation and health (F), covering the control of soil and water pollution through collection, treatment, and recovery processes that prevent disease from environmental contamination."
+      "rationaleAI": "Waste management including pollution and environmental contamination relevant to environmental sanitation and health (F)."
     },
     {
       "articleTitle": "Biotechnology",
       "relevantPathsAI": [
-        "B"
+        "C.1.d"
       ],
-      "rationaleAI": "Biotechnology as specialized medical research applying living organisms for pharmaceutical production, diagnostics, and therapeutics connects to outline path B (fields of specialized medical research), covering a primary uncovered priority path; its integration with medicine through recombinant DNA and bioinformatics is directly relevant."
+      "rationaleAI": "Biotechnology including genetic engineering and pharmaceutical development relevant to medical research (C.1.d)."
     },
     {
       "articleTitle": "Food",
       "relevantPathsAI": [
-        "G"
+        "G",
+        "I.2"
       ],
-      "rationaleAI": "Food systems covering agriculture, food security, and global governance through FAO and WFP directly address outline path G (prevention of malnutrition: world food supply and world population), supplementing the Nutrition article with systems-level coverage of food production and distribution."
+      "rationaleAI": "Food systems relevant to world food supply problems (G) and control of foods regulation (I.2)."
     },
     {
       "articleTitle": "Hippocrates",
       "relevantPathsAI": [
-        "C.2.a",
-        "A"
+        "C.2.a"
       ],
-      "rationaleAI": "Hippocrates is foundational to the Hippocratic Oath (C.2.a: the ethical basis of medical practice), which the outline explicitly names, and to the establishment of medicine as a rational independent discipline — the historical basis for all medical education (A)."
+      "rationaleAI": "Hippocrates as the source of the Hippocratic oath foundational to the ethical basis of medical practice (C.2.a)."
     },
     {
       "articleTitle": "Louis Pasteur",
       "relevantPathsAI": [
-        "H.3",
         "H.1",
-        "H.5"
+        "H.3"
       ],
-      "rationaleAI": "Pasteur established germ theory as the basis for antiseptic precautions and hygiene (H.3), developed vaccines for cholera, anthrax, and rabies (H.1: vaccination and immunization), and founded bacteriology as the scientific basis for epidemic prevention (H.5), substantively covering three prevention-oriented paths."
+      "rationaleAI": "Pasteur's development of vaccines for vaccination and immunization (H.1) and pasteurization as an aseptic precaution (H.3)."
     },
     {
       "articleTitle": "History of medicine",
       "relevantPathsAI": [
         "A",
-        "C",
-        "D"
+        "C"
       ],
-      "rationaleAI": "Covers healing practices from prehistoric traditions through bacteriology, nursing, statistics, and modern specialties, tracing the development of medical education (A), clinical practice (C), and public health infrastructure (D) across cultures and historical periods."
+      "rationaleAI": "The history of medicine spanning medical education (A) and the evolution of medical practice from ancient to modern times (C)."
     },
     {
       "articleTitle": "Smallpox",
@@ -192,54 +179,53 @@
         "H.1",
         "H.5"
       ],
-      "rationaleAI": "Smallpox eradication through the WHO vaccination campaign is the canonical example of H.1 (vaccination and immunization) and H.5 (the prevention and control of epidemics); Jenner's 1796 vaccine as the foundational intervention and the global eradication campaign structure directly illustrate both paths."
+      "rationaleAI": "Smallpox eradication through vaccination (H.1) as the paradigmatic example of epidemic prevention and control (H.5)."
     },
     {
       "articleTitle": "Surgery",
       "relevantPathsAI": [
         "C.1.b",
-        "B"
+        "C.2"
       ],
-      "rationaleAI": "Surgery is a medical specialty employing manual and instrumental techniques spanning elective, emergency, and cosmetic procedures, directly addressing C.1.b (hospital and specialist practice: general surgery) and B (specialized medical research), covering a primary uncovered path through its scope, history, and subspecialties."
+      "rationaleAI": "Surgery as a medical specialty within hospital and specialist practice (C.1.b) with professional standards and ethical considerations (C.2)."
     },
     {
       "articleTitle": "Health",
       "relevantPathsAI": [
         "D",
-        "C"
+        "I"
       ],
-      "rationaleAI": "Health as physical, mental, and social well-being with determinants spanning individual behavior and structural societal factors provides the conceptual framework for public health services (D) and the broader practice of medicine (C), including healthcare access and occupational health connections."
+      "rationaleAI": "Health as the goal of public health services and administration (D) and industrial and social medicine (I)."
     },
     {
       "articleTitle": "Obesity",
       "relevantPathsAI": [
-        "I.1",
-        "D"
+        "G"
       ],
-      "rationaleAI": "Obesity as a social medicine issue with determinants including sedentary lifestyle and social factors connects to I.1 (the scope of industrial and occupational medicine) through workplace health, and to D (public health services) through the epidemiological scale of over one billion affected globally requiring population-level interventions."
+      "rationaleAI": "Obesity as a condition related to nutrient requirements and malnutrition prevention efforts (G)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Biochemistry as the study of chemical processes in living organisms underpins virtually all life science disciplines and medical research, connecting to outline path B (fields of specialized medical research); its applications in disease mechanisms, nutrition, and drug development make it foundational to medical practice."
+      "rationaleAI": "Biochemistry as a basic biomedical science informing specialized medical research (B)."
     },
     {
       "articleTitle": "Insurance",
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Health insurance as a mechanism funding healthcare delivery and managing medical risk is integral to public health services and administration (D), covering how health systems in different countries finance and organize care; the article discusses health insurance explicitly as a major category alongside other insurance types."
+      "rationaleAI": "Health insurance as a component of public health services and administration (D)."
     },
     {
       "articleTitle": "University",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Universities are the primary institutions of medical education (A), combining teaching and research, with medical faculties integral to the development of clinical training and residency programs; the article's coverage of degree-granting and research mandates directly supports this path."
+      "rationaleAI": "Universities as institutions providing medical education and degree programs (A)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

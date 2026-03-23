@@ -5,20 +5,18 @@
       "articleTitle": "Health",
       "relevantPathsAI": [
         "B",
-        "C",
         "D"
       ],
-      "rationaleAI": "Health directly addresses the WHO and other definitions of normality and well-being (B), the determinants of health maintenance, and connects to nutrition, exercise, and mental health covered under D, providing broad coverage of the entire section."
+      "rationaleAI": "Definitions and ranges of normality in human health (B) and regimes affecting standard values including nutrition, exercise, and sleep (D)."
     },
     {
       "articleTitle": "Pregnancy",
       "relevantPathsAI": [
         "A.1",
         "A.2",
-        "A.3",
-        "A.5"
+        "A.3"
       ],
-      "rationaleAI": "Pregnancy covers fertilization (A.1), intrauterine prenatal development through three trimesters (A.2), birth as an outcome (A.3), and reproduction as the mechanism (A.5), directly addressing multiple priority and standard life-cycle stages."
+      "rationaleAI": "Fertilization as the beginning of life (A.1), prenatal development through embryonic and fetal stages (A.2), and birth (A.3)."
     },
     {
       "articleTitle": "Nutrition",
@@ -28,7 +26,7 @@
         "D.1.b",
         "D.1.c"
       ],
-      "rationaleAI": "Nutrition covers macro- and micronutrient functions, classes of food, recommended dietary intakes, and metabolic roles, directly addressing D.1 (nutrition and diet) and its sub-paths on functions of food, classes of food, and nutrient requirements."
+      "rationaleAI": "Functions of food (D.1.a), classes of food providing macro- and micronutrients (D.1.b), and recommended intakes of nutrients (D.1.c)."
     },
     {
       "articleTitle": "Sleep",
@@ -37,22 +35,21 @@
         "D.3.a",
         "D.3.b"
       ],
-      "rationaleAI": "Sleep covers the nature and definition of sleep, NREM and REM phase cycling, circadian and homeostatic regulation, and physiological effects including immune restoration and memory consolidation, directly addressing D.3 and its sub-paths on defining sleep and psychophysiological variations."
+      "rationaleAI": "The nature of sleep including criteria for defining sleep (D.3.a) and psychophysiological variations including REM, NREM, and dreaming (D.3.b)."
     },
     {
       "articleTitle": "Death",
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Death covers clinical and biological definitions of dying and death, causes, the biology of senescence, and organ failure, directly addressing the priority path A.7 (dying and death) which has no other source recommendations."
+      "rationaleAI": "Dying and death as the final stage in the human life cycle (A.7)."
     },
     {
       "articleTitle": "Ageing",
       "relevantPathsAI": [
-        "A.6",
-        "A.7"
+        "A.6"
       ],
-      "rationaleAI": "Ageing covers the cumulative biological processes of senescence including DNA damage accumulation and epigenetic regulation, and connects aging to mortality, directly addressing A.6 (aging) and contextualizing A.7 (dying and death)."
+      "rationaleAI": "Aging as a cumulative biological process constituting a stage in the human life cycle (A.6)."
     },
     {
       "articleTitle": "Exercise",
@@ -61,160 +58,142 @@
         "D.2.a",
         "D.2.b"
       ],
-      "rationaleAI": "Exercise covers health benefits of physical activity across cardiovascular, immune, neurobiological, and musculoskeletal systems, recommended minimums, and physiological responses to conditioning, directly addressing D.2 and its sub-paths on exercise needs and physiological responses."
+      "rationaleAI": "Exercise needs for health maintenance and avoidance of injuries (D.2.a) and physiological responses to exercise and effects of physical conditioning (D.2.b)."
     },
     {
       "articleTitle": "Obesity",
       "relevantPathsAI": [
-        "B",
-        "D.1",
-        "D.2"
+        "D.1.d",
+        "D.1.e"
       ],
-      "rationaleAI": "Obesity covers excess body fat as a medical condition deviating from health norms (B), its dietary causes (D.1), and the role of exercise in management (D.2), providing substantive coverage across multiple outline paths."
+      "rationaleAI": "Obesity as a condition related to feeding behaviour (D.1.d) manageable through therapeutic diets and lifestyle modification (D.1.e)."
     },
     {
       "articleTitle": "Infant",
       "relevantPathsAI": [
-        "A.3",
         "A.4"
       ],
-      "rationaleAI": "Infant covers the neonatal period and first year of postnatal life including birth characteristics (A.3 priority path), developmental milestones, sleep patterning, and emotional bonding in postnatal development (A.4)."
+      "rationaleAI": "Infancy as a stage of postnatal development covering sensorimotor responsiveness and early language acquisition (A.4)."
     },
     {
       "articleTitle": "Allergy",
       "relevantPathsAI": [
         "C.2.d"
       ],
-      "rationaleAI": "Allergy covers IgE-mediated immune hypersensitivity responses including mast cell and basophil degranulation, directly exemplifying C.2.d (the immune response) as a bodily defense mechanism that can be pathologically exaggerated."
+      "rationaleAI": "Allergy as a hypersensitivity disorder involving the immune response as a bodily mechanism for stress maintenance (C.2.d)."
     },
     {
       "articleTitle": "Vaccine",
       "relevantPathsAI": [
         "C.2.d"
       ],
-      "rationaleAI": "Vaccine covers the mechanism of conferring active acquired immunity by priming the immune system's recognition and memory, directly addressing C.2.d (the immune response) as a primary defense against disease."
+      "rationaleAI": "Vaccines conferring active acquired immunity as part of the immune response defense mechanism against disease (C.2.d)."
     },
     {
       "articleTitle": "Injury",
       "relevantPathsAI": [
-        "C.2.c",
         "C.4"
       ],
-      "rationaleAI": "Injury covers inflammatory responses to tissue damage and wound healing processes involving coagulation and antimicrobial responses, directly addressing C.2.c (inflammation: the response to biological insult) and C.4 (healing: regeneration and repair of tissues)."
+      "rationaleAI": "Injury triggering inflammatory responses and wound healing as part of regeneration and tissue repair processes (C.4)."
     },
     {
       "articleTitle": "Blood",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Blood covers the roles of platelets and clotting factors in hemostasis, directly addressing C.3 (role of the blood in the prevention of hemorrhage) as a bodily mechanism for health maintenance."
+      "rationaleAI": "Blood's role in the prevention of hemorrhage through clotting mechanisms (C.3)."
     },
     {
       "articleTitle": "Disease",
       "relevantPathsAI": [
-        "B",
         "C.2"
       ],
-      "rationaleAI": "Disease provides the definitional contrast for B (definitions and ranges of normality in human health) and covers etiology and defenses relevant to C.2 (defenses against disease), giving substantive coverage of when and how normality fails."
+      "rationaleAI": "Bodily defenses against disease including skin integrity, phagocytic cells, inflammation, and immune response (C.2)."
     },
     {
       "articleTitle": "Adolescence",
       "relevantPathsAI": [
-        "A.4",
-        "A"
+        "A.4"
       ],
-      "rationaleAI": "Adolescence covers the transitional developmental stage from puberty to adulthood including physical, cognitive, and psychosocial development, directly addressing A.4 (postnatal development) and A (stages in the human life cycle)."
+      "rationaleAI": "Adolescence as a stage of postnatal development involving puberty-driven physical and cognitive changes (A.4)."
     },
     {
       "articleTitle": "Child",
       "relevantPathsAI": [
-        "A.4",
-        "A"
+        "A.4"
       ],
-      "rationaleAI": "Child covers developmental stages from birth through puberty including cognitive, physical, and social maturation, directly addressing A.4 (postnatal development) and providing broad coverage of the childhood portion of A (stages in the human life cycle)."
+      "rationaleAI": "Childhood as a stage of postnatal development involving progressive maturation (A.4)."
     },
     {
       "articleTitle": "Parenting",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Parenting covers the physical, cognitive, social, and emotional support provided to children, attachment, and developmental outcomes, directly relevant to A.4 (postnatal development) as a key environmental factor shaping human development."
+      "rationaleAI": "Parenting encompassing physical, cognitive, and emotional support during postnatal development stages (A.4)."
     },
     {
       "articleTitle": "Food",
       "relevantPathsAI": [
         "D.1",
-        "D.1.a",
-        "D.1.b"
+        "D.1.a"
       ],
-      "rationaleAI": "Food covers nutritional macronutrients (carbohydrates, fats, proteins, vitamins, minerals) and human food systems, directly addressing D.1.a (functions of food) and D.1.b (classes of food) within the nutrition and diet path."
+      "rationaleAI": "Food as substances consumed for nutritional support, relevant to functions of food in maintaining health (D.1.a)."
     },
     {
       "articleTitle": "Meat",
       "relevantPathsAI": [
-        "D.1",
         "D.1.b"
       ],
-      "rationaleAI": "Meat covers protein and fat content as a food class, dietary associations with cardiovascular and cancer risk, and nutritional quality variation, directly addressing D.1.b (classes of food) and D.1.e (therapeutic diets: reducing red meat intake)."
+      "rationaleAI": "Meat as a class of food providing protein and fat as part of nutritional classes of food (D.1.b)."
     },
     {
       "articleTitle": "Drinking water",
       "relevantPathsAI": [
-        "D.1",
-        "D.1.b",
-        "D.1.c"
+        "D.1"
       ],
-      "rationaleAI": "Drinking water covers safe water as a dietary essential, its role in hydration and public health, fluoridation for dental health, and daily intake requirements, addressing D.1.b (classes of food) and D.1.c (recommended intakes of nutrients)."
+      "rationaleAI": "Drinking water as essential for nutrition and hydration, relevant to nutrition and diet (D.1)."
     },
     {
       "articleTitle": "Alcoholic beverage",
       "relevantPathsAI": [
-        "D.1",
         "D.1.d"
       ],
-      "rationaleAI": "Alcoholic beverages cover ethanol consumption's dose-dependent physiological effects and long-term health risks as a food-related behavior, directly addressing D.1.d (feeding behaviour) and D.1.b (classes of food) in the nutrition path."
+      "rationaleAI": "Alcoholic beverages as substances affecting feeding behaviour and health through CNS depressant effects (D.1.d)."
     },
     {
       "articleTitle": "Louis Pasteur",
       "relevantPathsAI": [
-        "C.2",
-        "C.2.d"
+        "C.2"
       ],
-      "rationaleAI": "Louis Pasteur established germ theory and developed vaccines for cholera, anthrax, and rabies, foundational to understanding C.2 (defenses against disease) and C.2.d (the immune response), making him highly relevant despite being a biographical article."
+      "rationaleAI": "Pasteur's germ theory establishing the basis for understanding bodily defenses against disease (C.2)."
     },
     {
       "articleTitle": "Physiology",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "B"
       ],
-      "rationaleAI": "Physiology defines normal function at molecular, cellular, organ, and whole-organism levels (B), and pathological deviations underlying disease, providing the scientific framework for understanding bodily health maintenance mechanisms in C."
+      "rationaleAI": "Physiology as the study of normal function, relevant to definitions and ranges of normality in human health (B)."
     },
     {
       "articleTitle": "Human body",
       "relevantPathsAI": [
-        "B",
         "C.1"
       ],
-      "rationaleAI": "Human body covers organ system homeostasis and multi-system interaction maintaining normal function, directly relevant to B (definitions and ranges of normality) and C.1 (maintenance of the internal environment)."
+      "rationaleAI": "The human body's homeostatic mechanisms for maintenance of the internal environment during stress (C.1)."
     },
     {
       "articleTitle": "Swimming",
       "relevantPathsAI": [
-        "D.2",
-        "D.2.a",
-        "D.2.b"
+        "D.2"
       ],
-      "rationaleAI": "Swimming covers cardiovascular conditioning, muscle strengthening, and physical health benefits as a form of aerobic exercise, directly addressing D.2 (exercise and physical conditioning) and its sub-paths on exercise needs and physiological responses."
+      "rationaleAI": "Swimming as a form of exercise providing cardiovascular conditioning and health benefits (D.2)."
     },
     {
       "articleTitle": "Diabetes",
       "relevantPathsAI": [
-        "B",
-        "D.1",
-        "D.2"
+        "D.1.e"
       ],
-      "rationaleAI": "Diabetes illustrates deviation from metabolic normality (B) caused by diet and lifestyle (D.1), and manageable through exercise interventions (D.2), providing substantive coverage of health maintenance paths even though its primary home is Section 423."
+      "rationaleAI": "Diabetes management involving therapeutic diets and lifestyle interventions (D.1.e)."
     },
     {
       "articleTitle": "Salt",
@@ -222,31 +201,30 @@
         "D.1.b",
         "D.1.c"
       ],
-      "rationaleAI": "Salt covers sodium chloride as a dietary mineral essential for electrolyte balance, WHO intake recommendations to limit cardiovascular risk, and iodization to prevent deficiency, directly addressing D.1.b (classes of food) and D.1.c (recommended nutrient intakes)."
+      "rationaleAI": "Salt as a dietary source of sodium and chloride electrolytes, a class of food (D.1.b) with recommended intake limits (D.1.c)."
     },
     {
       "articleTitle": "Bread",
       "relevantPathsAI": [
         "D.1.b"
       ],
-      "rationaleAI": "Bread is one of humanity's most widely consumed staple foods and covers carbohydrate-based nutrition, leavening and fermentation, and its centrality to global human diets, addressing D.1.b (classes of food) within the nutrition path."
+      "rationaleAI": "Bread as a baked staple providing carbohydrates as a class of food (D.1.b)."
     },
     {
       "articleTitle": "Fruit",
       "relevantPathsAI": [
         "D.1.b"
       ],
-      "rationaleAI": "Fruit covers seed-bearing plant structures consumed for nutrition, providing vitamins and dietary variety, and their role in global agricultural food supply, addressing D.1.b (classes of food) within the nutrition path."
+      "rationaleAI": "Fruit as a food class providing vitamins, minerals, and dietary fiber (D.1.b)."
     },
     {
       "articleTitle": "Drink",
       "relevantPathsAI": [
-        "D.1.b",
         "D.1.d"
       ],
-      "rationaleAI": "Drink covers all liquid beverage categories consumed by humans for hydration and physiological support, addressing D.1.b (classes of food) and D.1.d (feeding behaviour), including the cultural and health dimensions of beverage consumption."
+      "rationaleAI": "Beverages as liquids for human consumption relevant to feeding behaviour and hydration (D.1.d)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

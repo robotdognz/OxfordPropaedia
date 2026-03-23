@@ -8,7 +8,7 @@
         "B.2",
         "C"
       ],
-      "rationaleAI": "Directly addresses the entire outline: the evolutionary process from primate divergence (A, B.2), distinguishing characteristics of the Homo lineage including bipedalism and encephalization (B.2.a), and the fossil record from Australopithecus through anatomically modern humans (C.2)."
+      "rationaleAI": "The evolutionary process of human divergence from ancestral primates (A), distinguishing characteristics of the Hominidae including bipedalism and encephalization (B.2), and the fossil record from Australopithecus through Homo sapiens (C)."
     },
     {
       "articleTitle": "Human",
@@ -16,74 +16,74 @@
         "B.2",
         "C.2.d"
       ],
-      "rationaleAI": "Covers the defining characteristics of Homo sapiens — bipedality, manual dexterity, large prefrontal cortex — mapping to B.2.a (morphological characteristics of Hominidae), and evolutionary origins 300,000 years ago in Africa (C.2.d)."
+      "rationaleAI": "Homo sapiens defined by bipedality, manual dexterity, and advanced cognition as distinguishing Hominidae characteristics (B.2), with evolutionary origins ~300,000 years ago in Africa (C.2.d)."
     },
     {
       "articleTitle": "Evolution",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "A"
       ],
-      "rationaleAI": "Evolution covers the mechanisms (natural selection, drift, mutation, gene flow) constituting the evolutionary process (A) and the phylogenetic framework for reconstructing human relationships with primates (B)."
+      "rationaleAI": "Evolution as the overarching process of change in heritable characteristics across generations, providing the framework for understanding human evolutionary relationships (A)."
     },
     {
       "articleTitle": "Charles Darwin",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Darwin's formulation of natural selection and his work on human evolution in The Descent of Man directly concern the evolutionary process (A) that underlies human origins; his framework is foundational to understanding hominid evolution."
+      "rationaleAI": "Darwin's theory of natural selection and The Descent of Man (1871) directly addressing human evolution as part of the evolutionary process (A)."
     },
     {
       "articleTitle": "Primate",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.c",
+        "B.1.d"
       ],
-      "rationaleAI": "The article directly covers B.1 in full: distinguishing characteristics of primates (B.1.a), natural history of primate life (B.1.b), evolution and paleontology (B.1.c), and classification into prosimians and anthropoids (B.1.d)."
+      "rationaleAI": "Primates as the order including prosimians and anthropoids (B.1.d), with distinguishing characteristics including enlarged brains and opposable thumbs (B.1.a) and their evolutionary paleontology (B.1.c)."
     },
     {
       "articleTitle": "Ecology",
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Ecology's coverage of behavioral, cognitive, and social ecology is tangentially relevant to the natural history of primate life (B.1.b), including group behavior and ecological niches; moderate overlap but only for that specific path."
+      "rationaleAI": "Ecological relationships relevant to the natural history of primate life (B.1.b)."
     },
     {
       "articleTitle": "Anthropology",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "C.1"
       ],
-      "rationaleAI": "Physical/biological anthropology encompasses the study of human evolution and primate biology (B) and paleoanthropology (C), directly framing the discipline within which the fossil record and hominid classification are studied."
+      "rationaleAI": "Anthropology including physical anthropology and archaeology relevant to the discovery and recognition of the hominid fossil record (C.1)."
     },
     {
       "articleTitle": "Abiogenesis",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Abiogenesis addresses the ultimate origins of life that precede and contextualise the evolutionary process (A); while more distant from hominid evolution specifically, it establishes the deep background of the evolutionary sequence culminating in humans."
+      "rationaleAI": "The origin of life as the deepest context for the evolutionary process from which human evolution eventually proceeded (A)."
     },
     {
       "articleTitle": "Paleontology",
       "relevantPathsAI": [
+        "B.1.c",
         "C"
       ],
-      "rationaleAI": "Paleontology is the scientific foundation for C (the fossil record of Hominidae), encompassing the methods of fossil discovery, classification, and reconstruction of prehistoric ecology that underpin the entire hominid fossil record section."
+      "rationaleAI": "Paleontology providing the fossil evidence for primate evolution (B.1.c) and the hominid fossil record (C)."
     },
     {
       "articleTitle": "Africa",
       "relevantPathsAI": [
         "C.2.d"
       ],
-      "rationaleAI": "Africa is the geographic origin of Homo sapiens (~260,000–350,000 BP) and most hominid evolution, directly relevant to C.2.d (Homo sapiens of Africa) and the broader fossil record of the Hominidae in the African context."
+      "rationaleAI": "Africa as the cradle of Homo sapiens where anatomically modern humans emerged ~300,000 years ago (C.2.d)."
     },
     {
       "articleTitle": "Stone Age",
       "relevantPathsAI": [
-        "C.2.d",
-        "C.2.b",
-        "C.2.c"
+        "C.2"
       ],
-      "rationaleAI": "The Stone Age encompasses the material culture of Homo habilis (earliest tools, C.2.b), Homo erectus (Lower Paleolithic, C.2.c), and early Homo sapiens through Neanderthals and Cro-Magnons (C.2.d.i–iii)."
+      "rationaleAI": "The Stone Age encompassing hominid evolution and lithic tool use from Oldowan tools through the Neolithic, relevant to classification of the Hominidae (C.2)."
     },
     {
       "articleTitle": "History of life",
@@ -91,7 +91,7 @@
         "A",
         "B.1.c"
       ],
-      "rationaleAI": "Covers the evolutionary history of life culminating in primate and human emergence, providing the deep-time context for the evolutionary process (A) and primate paleontology (B.1.c)."
+      "rationaleAI": "The 3.7-billion-year history of life providing evolutionary context (A) and primate evolution within the broader mammalian radiation (B.1.c)."
     },
     {
       "articleTitle": "Taxonomy (biology)",
@@ -99,74 +99,72 @@
         "B.1.d",
         "C.2"
       ],
-      "rationaleAI": "Biological taxonomy provides the classificatory system for primate suborders (B.1.d) and hominid classification including Australopithecus, Homo habilis, Homo erectus, and Homo sapiens (C.2)."
+      "rationaleAI": "Biological taxonomy providing the classification framework for primates (B.1.d) and the classification of the Hominidae (C.2)."
     },
     {
       "articleTitle": "Rodent",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.c"
       ],
-      "rationaleAI": "Rodents are part of Glires, the clade sister to Lagomorpha, and their fossil record from the Paleocene provides context for primate paleontology (B.1.c) as a comparator taxon in mammalian diversification, though overlap is moderate."
+      "rationaleAI": "Rodents as the largest mammalian order providing comparative context for primate evolution and paleontology (B.1.c)."
     },
     {
       "articleTitle": "Dinosaur",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Dinosaur extinction at 66 Mya created ecological space for mammalian and ultimately primate diversification, providing essential background context for the evolutionary process (A) leading to primates and humans; overlap is moderate but relevant."
+      "rationaleAI": "Dinosaurs' Cretaceous-Paleogene extinction enabling mammalian radiation, providing evolutionary context for the process leading to primate and human emergence (A)."
     },
     {
       "articleTitle": "Natural selection",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Natural selection is the primary mechanism of the evolutionary process (A), directly explaining how hominid traits including bipedalism, encephalization, and reduced sexual dimorphism arose through differential survival and reproduction."
+      "rationaleAI": "Natural selection as the primary mechanism driving the evolutionary process (A)."
     },
     {
       "articleTitle": "Biology",
       "relevantPathsAI": [
-        "A",
-        "B.2"
+        "A"
       ],
-      "rationaleAI": "Biology provides the framework of evolution, genetics, and physiology underlying the evolutionary process (A) and the morphological and inferred behavioral characteristics distinguishing Hominidae (B.2.a, B.2.b)."
+      "rationaleAI": "Biology as the overarching science whose evolutionary framework underlies understanding of the evolutionary process (A)."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
-        "A"
+        "B.2.b"
       ],
-      "rationaleAI": "Reproductive biology — gametogenesis, meiosis, life-history strategies — underlies the evolutionary process (A) including sexual selection and the breeding system features of primates; the outline notes humans' lack of a definite breeding season as a distinguishing physiological characteristic."
+      "rationaleAI": "Reproductive strategies as inferred behavioral characteristics of the Hominidae (B.2.b)."
     },
     {
       "articleTitle": "Animal",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Animals as kingdom Animalia provides the broader taxonomic context for primates as an order within the class Mammalia, relevant to the classification of primates (B.1.d) and their evolutionary origin in the Cambrian explosion."
+      "rationaleAI": "Animals as the kingdom within which primates are classified, relevant to primate characteristics and evolutionary context (B.1)."
     },
     {
       "articleTitle": "Species",
       "relevantPathsAI": [
-        "B.1.d",
         "C.2"
       ],
-      "rationaleAI": "The species concept is essential to classifying primate suborders (B.1.d) and to distinguishing hominid taxa including the multiple species of Australopithecus and Homo in the fossil record (C.2)."
+      "rationaleAI": "Species concepts relevant to the classification of Hominidae including Australopithecus and Homo species (C.2)."
     },
     {
       "articleTitle": "Extinction",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.d.ii"
       ],
-      "rationaleAI": "Extinction is directly relevant to the hominid fossil record (C.2): Australopithecus, Homo habilis, Homo erectus, and Neanderthals are all extinct lineages whose terminal events are essential to understanding the hominid record."
+      "rationaleAI": "Extinction relevant to the disappearance of Neanderthals and other archaic Homo species (C.2.d.ii)."
     },
     {
       "articleTitle": "Human behavior",
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Human behavior covers the full range of behavioral responses shaped by genetics and environment, directly relevant to B.2.b (inferred behavioral characteristics of Hominidae) and the behavioral capacities that distinguish humans from other primates."
+      "rationaleAI": "Inferred behavioral characteristics of the Hominidae including tool use and social organization (B.2.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

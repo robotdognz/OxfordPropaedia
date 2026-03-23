@@ -5,10 +5,9 @@
       "articleTitle": "Ecology",
       "relevantPathsAI": [
         "B.1",
-        "B.2",
-        "D.1"
+        "D"
       ],
-      "rationaleAI": "Ecology's coverage of human ecology, restoration ecology, and the influence of physical factors on humans directly supports B.1 (human modification of environment), B.2 (environment's influence on humans), and D.1 (conservation management)."
+      "rationaleAI": "Human ecology and restoration ecology relevant to the influence of the human species on environmental modification (B.1) and the conservation and management of natural resources (D)."
     },
     {
       "articleTitle": "Animal",
@@ -16,159 +15,146 @@
         "C.4",
         "C.5"
       ],
-      "rationaleAI": "Covers human uses of animals for food, materials, labor, culture, and religion (C.5), and the diversity of species subject to domestication and cultivation (C.4), directly mapping to section 355's treatment of animal utilization."
+      "rationaleAI": "Animal cultivation and breeding (C.4) and major uses of animals for food, materials, and labor (C.5)."
     },
     {
       "articleTitle": "Food",
       "relevantPathsAI": [
         "D.4",
-        "C.5"
+        "C.3"
       ],
-      "rationaleAI": "Addresses global food systems, food security, sustainability, and the management of world food supply (D.4), as well as the use of animals and plants as food (C.5); greenhouse gas emissions connect to human biosphere impact (B.1)."
+      "rationaleAI": "Management of the world's food supply including difficulties facing developing countries (D.4) and uses of plants for food (C.3)."
     },
     {
       "articleTitle": "Maize",
       "relevantPathsAI": [
-        "C.2",
-        "C.3",
-        "D.4"
+        "C.1",
+        "C.2"
       ],
-      "rationaleAI": "Maize is a prime example of plant domestication and cultivation (C.2), with diverse human uses (C.3), and as the world's highest-volume grain crop is central to the management of world food supply (D.4)."
+      "rationaleAI": "Maize domesticated ~9,000 years ago as a cultivated plant (C.1) with breeding for yield and disease resistance (C.2)."
     },
     {
       "articleTitle": "Agriculture",
       "relevantPathsAI": [
+        "C",
         "C.1",
         "C.2",
-        "C.4",
-        "D.4"
+        "C.4"
       ],
-      "rationaleAI": "Agriculture encompasses plant and animal domestication (C.1), plant cultivation and breeding (C.2), animal breeding and raising (C.4), and food supply management (D.4); its environmental impacts directly address B.1 (human modification of environment)."
+      "rationaleAI": "Agriculture as the cultivation of plants and livestock encompassing domestication (C.1), plant breeding and growing (C.2), and animal breeding and raising (C.4)."
     },
     {
       "articleTitle": "Museum",
       "relevantPathsAI": [
+        "C.6",
         "C.6.a"
       ],
-      "rationaleAI": "Covers natural history museums as institutions for the preservation and display of specimens of animals and plants (C.6.a), which the outline explicitly lists as a subcategory of public and private collections."
+      "rationaleAI": "Museums of natural history as public collections of preserved animals and plants (C.6.a)."
     },
     {
       "articleTitle": "Meat",
       "relevantPathsAI": [
-        "C.5",
-        "D.4"
+        "C.5"
       ],
-      "rationaleAI": "Meat production represents a major use of animals (C.5) and connects to food supply management and environmental sustainability (D.4) through its greenhouse gas emissions, land use, and biodiversity impacts."
+      "rationaleAI": "Meat as animal tissue consumed as food, a major use of domesticated animals (C.5)."
     },
     {
       "articleTitle": "Cat",
       "relevantPathsAI": [
-        "C.4",
+        "C.1",
         "C.5"
       ],
-      "rationaleAI": "The domestic cat exemplifies animal domestication (C.4) and major uses of animals including vermin control and companionship (C.5); feral cat impacts on biodiversity also connect to B.1 (human modification of the biosphere)."
+      "rationaleAI": "Domestic cat as a domesticated species (C.1) used for vermin control and companionship (C.5)."
     },
     {
       "articleTitle": "Soil",
       "relevantPathsAI": [
-        "D.2",
-        "D.3"
+        "B.1",
+        "D.2"
       ],
-      "rationaleAI": "Soil is a critical natural resource (D.2) whose degradation through acidification, erosion, and contamination requires active management (D.3), connecting to the section's coverage of conservation and natural resource management."
+      "rationaleAI": "Soil as a natural resource type (D.2) affected by human environmental modification including degradation and contamination (B.1)."
     },
     {
       "articleTitle": "Ecosystem",
       "relevantPathsAI": [
-        "B.1",
-        "D.1"
+        "D.1",
+        "D.3"
       ],
-      "rationaleAI": "Ecosystem services — provisioning, regulating, cultural — and ecological resilience underpin D.1 (nature and scope of conservation management), while human-driven ecosystem modification maps to B.1."
+      "rationaleAI": "Ecosystem conservation and management scope (D.1) and management of natural resources (D.3)."
     },
     {
       "articleTitle": "Dog",
       "relevantPathsAI": [
         "C.1",
-        "C.4",
         "C.5"
       ],
-      "rationaleAI": "The dog is the first domesticated species (C.1), the paradigm case of animal cultivation and selective breeding (C.4), and serves multiple human roles including herding, hunting, guarding, and assistance (C.5)."
+      "rationaleAI": "Dog as the first domesticated species (C.1) with major uses including herding, hunting, guarding, and companionship (C.5)."
     },
     {
       "articleTitle": "Biotechnology",
       "relevantPathsAI": [
-        "C.2",
-        "B.3"
+        "B.3",
+        "C.2"
       ],
-      "rationaleAI": "Biotechnology encompasses genetic engineering of crops and organisms (C.2, plant breeding), GMO development (C.4 for animals), and the selective genetic modification addressed in B.3 (attempts to change genetic endowments)."
+      "rationaleAI": "Biotechnology including genetic engineering relevant to deliberate genetic modification (B.3) and plant breeding through recombinant DNA (C.2)."
     },
     {
       "articleTitle": "Biology",
       "relevantPathsAI": [
-        "A",
-        "B.2"
+        "A"
       ],
-      "rationaleAI": "Biology as a discipline covers the structural and physiological characteristics of organisms (A.1, A.2) and evolution underpinning human uniqueness in the biosphere; connects to B.2 through environmental influences on biological adaptation."
+      "rationaleAI": "Biology as the science of life broadly relevant to qualities setting humans apart in the biosphere (A)."
     },
     {
       "articleTitle": "History of agriculture",
       "relevantPathsAI": [
-        "C.1",
-        "C.2",
-        "C.4",
-        "D.4"
+        "C.1"
       ],
-      "rationaleAI": "Traces plant and animal domestication across independent centres (C.1), historical development of cultivation techniques and breeding (C.2, C.4), and the connection between agricultural history and food supply management (D.4)."
+      "rationaleAI": "The history of domestication and farming across independent Neolithic centers relevant to the distribution and development of plant and animal domestication (C.1)."
     },
     {
       "articleTitle": "Vegetable",
       "relevantPathsAI": [
         "C.2",
-        "C.3",
-        "D.4"
+        "C.3"
       ],
-      "rationaleAI": "Vegetables represent cultivated plant products (C.2) with defined human uses as food (C.3), and their global cultivation connects to food supply management and nutrition security (D.4)."
+      "rationaleAI": "Vegetables as cultivated edible plant parts relevant to plant breeding and growing (C.2) and uses of plants (C.3)."
     },
     {
       "articleTitle": "Species",
       "relevantPathsAI": [
-        "D.2"
+        "D.1"
       ],
-      "rationaleAI": "The species concept is foundational to understanding what types of natural resources exist (D.2) and to conservation biology; the 8–8.7 million estimated species frame the scope of biodiversity as a resource for management."
+      "rationaleAI": "Species as the foundational unit of biodiversity relevant to the nature and scope of conservation management (D.1)."
     },
     {
       "articleTitle": "Fishing",
       "relevantPathsAI": [
         "C.5",
-        "D.3",
         "D.4"
       ],
-      "rationaleAI": "Fishing is a major use of aquatic animals (C.5), and its sustainability challenges — overfishing, fisheries management, and food security implications — directly address D.3 (management of natural resources) and D.4 (world food supply)."
+      "rationaleAI": "Fishing as a major use of aquatic animals (C.5) connected to management of the world's food supply (D.4)."
     },
     {
       "articleTitle": "Nature",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Nature addresses the philosophical tension between humans as part of the natural world and their role apart from it (A.3 analogue); its coverage of wilderness, ecology, and the nature/culture divide supports B.1 and B.2."
+      "rationaleAI": "The physical world's phenomena including ecosystems and living organisms, relevant to human influence on environmental modification (B.1)."
     },
     {
       "articleTitle": "Animal husbandry",
       "relevantPathsAI": [
-        "C.1",
-        "C.4",
-        "C.5",
-        "B.1"
+        "C.4"
       ],
-      "rationaleAI": "Animal husbandry is precisely the cultivation and breeding of animals (C.4), building on domestication origins (C.1), encompassing major uses of livestock (C.5), and with modern industrial-scale impacts on climate and biodiversity (B.1)."
+      "rationaleAI": "Animal husbandry as the agricultural management of livestock through feeding, breeding, and health management (C.4)."
     },
     {
       "articleTitle": "Domestication",
       "relevantPathsAI": [
-        "C.1",
-        "C.4"
+        "C.1"
       ],
-      "rationaleAI": "Domestication directly covers C.1 (domestication of plants and animals, distribution and development), addressing both animal and plant domestication as the foundational human appropriation of other species in the biosphere."
+      "rationaleAI": "Domestication as the multi-generational process of controlling species for food, fibre, labour, and companionship (C.1)."
     },
     {
       "articleTitle": "Garden",
@@ -176,16 +162,14 @@
         "C.2",
         "C.6.d"
       ],
-      "rationaleAI": "Gardens represent controlled cultivation of plants (C.2) and the article explicitly includes botanic and zoological collections (C.6.d, botanical gardens), mapping directly to the outline's treatment of institutional and private plant collections."
+      "rationaleAI": "Gardens as planned spaces for cultivating plants relevant to plant breeding and growing (C.2) and botanical gardens and arboretums (C.6.d)."
     },
     {
       "articleTitle": "Evolution",
       "relevantPathsAI": [
-        "A",
-        "B.2",
-        "B.3"
+        "B.2"
       ],
-      "rationaleAI": "Evolution underpins the structural and physiological characteristics that set humans apart (A.1, A.2) and the environmental modifications shaping human adaptation (B.2); selective breeding as artificial evolution connects to B.3."
+      "rationaleAI": "Evolutionary change relevant to the influence of the environment on the modification of the human species (B.2)."
     },
     {
       "articleTitle": "Botany",
@@ -193,18 +177,17 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Botany encompasses the science underlying plant cultivation and breeding (C.2) and the uses of plants (C.3) through pharmacology, agriculture, and ecology; as a discipline it provides the scientific basis for plant utilization by humans."
+      "rationaleAI": "Botany as the study of plants relevant to the cultivation of plants (C.2) and uses of plants (C.3)."
     },
     {
       "articleTitle": "Pig",
       "relevantPathsAI": [
         "C.1",
-        "C.4",
-        "C.5"
+        "C.4"
       ],
-      "rationaleAI": "The pig was independently domesticated twice (C.1), is raised for pork globally (~1.5 billion annually, C.4), and serves as a biomedical model in addition to food production (C.5); connects domestication history to modern utilization."
+      "rationaleAI": "Pig domesticated independently twice, exemplifying animal domestication (C.1) and animal breeding and raising (C.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

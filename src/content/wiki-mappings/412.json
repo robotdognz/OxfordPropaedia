@@ -6,83 +6,66 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.4"
+        "A.3"
       ],
-      "rationaleAI": "Genetics is the foundational discipline for Section 412, covering Mendel's laws, DNA inheritance mechanisms, mutation, chromosomal variation, and gene-environment interaction directly relevant to the biological basis of human heredity and its applications. Twin studies and behavioral genetics fall squarely under A.2 and A.4."
+      "rationaleAI": "Genetics as the scientific study of genes, variation, and heredity broadly relevant to heredity in humans (A), the biological basis of genetic reproduction (A.1), and applications of human genetics (A.3)."
     },
     {
       "articleTitle": "Heredity",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "A.5"
+        "A.1"
       ],
-      "rationaleAI": "Heredity is the central concept of Section 412, covering transmission of genetic information, Mendelian laws, dominant-recessive allelic relationships, and common inherited disorders; it also touches on consanguinity through accumulation of recessive alleles across generations (A.5)."
+      "rationaleAI": "Heredity as genetic information transmission from parents to offspring through the biological basis of human genetic reproduction (A.1)."
     },
     {
       "articleTitle": "Natural selection",
       "relevantPathsAI": [
-        "A.1",
-        "B",
         "B.1"
       ],
-      "rationaleAI": "Natural selection is the mechanism driving differential survival of heritable traits and explains the origin of human physical variation through directional and stabilising selection, directly relevant to B (origin of human physical variation) and the biological basis of heredity in A.1."
+      "rationaleAI": "Natural selection driving differential fitness underlying aspects of human physical diversity (B.1)."
     },
     {
       "articleTitle": "Evolution",
       "relevantPathsAI": [
-        "A.1",
-        "B",
         "B.1"
       ],
-      "rationaleAI": "Evolution covers the full framework of heritable change across generations — natural selection, genetic drift, mutation, gene flow — and directly addresses the origin of human physical variation (B) and the genetic mechanisms underpinning heredity (A.1)."
+      "rationaleAI": "Evolutionary change in heritable characteristics producing the nature and origin of human physical variation (B.1)."
     },
     {
       "articleTitle": "Human evolution",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Human evolution directly covers the divergence of Homo sapiens from ancestral primates, anatomical innovations such as bipedalism and encephalization, interbreeding with Neanderthals and Denisovans, and the genetic and physical diversity that constitutes the subject of B."
+      "rationaleAI": "Human evolutionary divergence producing aspects of human diversity and physical variation (B.1)."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Reproduction covers the biological process of genetic transmission from parents to offspring via gametogenesis, meiosis, and fertilization, which is the mechanism at the heart of the biological basis of human heredity (A.1)."
+      "rationaleAI": "Sexual reproduction as the mechanism of genetic reproduction providing the biological basis of human heredity (A.1)."
     },
     {
       "articleTitle": "Sex",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "B.1"
+        "A.1"
       ],
-      "rationaleAI": "Sex covers chromosomal sex-determination systems (XY in humans), gametic recombination enabling hereditary transmission, and sexual dimorphism as a dimension of human physical variation; chromosomal abnormalities in sex determination also relate to A.2.b."
+      "rationaleAI": "Sexual reproduction enabling genetic recombination as the biological basis of human genetic reproduction (A.1)."
     },
     {
       "articleTitle": "Racism",
       "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.a"
+        "B.2"
       ],
-      "rationaleAI": "Racism directly addresses the historical construction of racial categories through physical measures (color, hair form, body measurements), polygenism, and scientific racism — corresponding precisely to B.2 and B.2.a on measures of race, as well as the broader question of the nature of human physical variation in B."
+      "rationaleAI": "Racism and its connection to assertions of racial superiority based on heritable differences, directly relevant to measures of race (B.2) and historical racial typology."
     },
     {
       "articleTitle": "Human",
       "relevantPathsAI": [
-        "A",
-        "B",
         "B.1"
       ],
-      "rationaleAI": "The Human article covers biological variation, genetics, life cycle, and evolutionary origins of Homo sapiens, providing broad coverage of both the hereditary mechanisms in A and the physical diversity and its origins discussed in B."
+      "rationaleAI": "Homo sapiens covering anatomy, genetics, and biological variation relevant to aspects of human diversity (B.1)."
     },
     {
       "articleTitle": "Sexual orientation",
@@ -90,7 +73,7 @@
         "A.2",
         "A.4"
       ],
-      "rationaleAI": "Sexual orientation covers genetic factors, prenatal hormone exposure, and fraternal birth order as biological determinants, situating it within A.2 (inheritance of behavioral traits, including twin studies) and A.4 (specific behavioral traits affected by inheritance)."
+      "rationaleAI": "Biological determinants including genetic factors and prenatal hormone exposure relevant to inheritance of behavioral traits (A.2) and specific behavioral traits affected by inheritance (A.4)."
     },
     {
       "articleTitle": "Personality",
@@ -98,42 +81,38 @@
         "A.2",
         "A.4"
       ],
-      "rationaleAI": "Personality research examines the heritability of behavioral patterns, drawing on twin and adoption studies to estimate genetic contributions; this maps to A.2 (inheritance of behavioral traits, twin studies) and A.4 (specific behavioral traits affected by inheritance)."
+      "rationaleAI": "Personality traits linked to life outcomes and influenced by developmental biology and environmental factors, relevant to inheritance of behavioral traits (A.2) and specific traits affected by inheritance (A.4)."
     },
     {
       "articleTitle": "Man",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
-        "B.1"
+        "B.1",
+        "B.2.a"
       ],
-      "rationaleAI": "Man covers XY chromosomal inheritance and SRY-gene-driven sex differentiation as a key example of genetic determination of physical traits (A.1, A.2.b) and male secondary sexual characteristics as a dimension of human physical diversity (B.1)."
+      "rationaleAI": "Male biological characteristics including XY chromosomal inheritance and secondary sexual characteristics relevant to aspects of human diversity (B.1) and old measures of physical variation (B.2.a)."
     },
     {
       "articleTitle": "Discrimination",
       "relevantPathsAI": [
-        "B",
         "B.2"
       ],
-      "rationaleAI": "Discrimination covers race-based systematic disadvantage and connects to the history of racial classification and the social consequences of measuring race (B.2), providing context for why the concept of race in B carries social as well as biological dimensions."
+      "rationaleAI": "Discrimination based on race and physical characteristics connected to measures of race and the social consequences of racial classification (B.2)."
     },
     {
       "articleTitle": "Mental health",
       "relevantPathsAI": [
-        "A.2.b",
-        "A.4"
+        "A.2.b"
       ],
-      "rationaleAI": "Mental health encompasses conditions arising from both genetic predisposition and environmental interaction, relating to A.2.b (genetic explanations for abnormalities) and A.4 (specific behavioral traits affected by inheritance, including psychiatric conditions)."
+      "rationaleAI": "Mental health risk factors spanning biological dimensions relevant to genetic explanations for abnormalities through chromosome variations and mutation (A.2.b)."
     },
     {
       "articleTitle": "Learning",
       "relevantPathsAI": [
-        "A.2",
         "A.4"
       ],
-      "rationaleAI": "Learning capacity is a behavioral trait shaped by genetic factors and studied through twin research, situating it under A.2 (inheritance of behavioral traits and twin studies) and A.4 (specific behavioral traits affected by inheritance)."
+      "rationaleAI": "Learning shaped by genetics and epigenetics as a specific behavioral trait affected by inheritance (A.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

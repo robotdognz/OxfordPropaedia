@@ -5,30 +5,29 @@
       "articleTitle": "Genetics",
       "relevantPathsAI": [
         "A",
-        "A.1",
         "A.2",
         "B",
-        "B.2"
+        "B.2",
+        "C.1"
       ],
-      "rationaleAI": "Genetics is the direct subject of Section 339, covering Mendel's founding experiments (A.1, A.2), Mendelian laws, and the molecular mechanisms of genes including the genetic code, gene regulation, mutation, and applications of molecular genetics (B.2); its treatment of nature-versus-nurture also addresses A path broadly."
+      "rationaleAI": "Mendelian genetics including laws of segregation and independent assortment (A.2), molecular mechanisms of DNA replication, transcription, and gene regulation (B.2), and population genetics including gene pool and Hardy-Weinberg principle (C.1)."
     },
     {
       "articleTitle": "Gene",
       "relevantPathsAI": [
-        "B",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "The gene article explicates the molecular gene as a nucleotide sequence in DNA, covering transcription, translation, alleles, and the genotype-environment interaction that determines phenotype, directly mapping to the chemical and molecular nature of genes and gene expression (B.2) and the physical basis of heredity (B)."
+      "rationaleAI": "Chromosomes and genes as the cellular basis of heredity (B.1) and the chemical nature of genes, genetic code, mutations, and gene expression (B.2)."
     },
     {
       "articleTitle": "Heredity",
       "relevantPathsAI": [
         "A",
         "A.2",
-        "C",
-        "C.1"
+        "A.3"
       ],
-      "rationaleAI": "Heredity is the core concept of Section 339, covering transmission of genetic information across generations (A), Mendel's laws of segregation and independent assortment (A.2), dominant/recessive allele relationships, and its role in enabling variation and evolution by natural selection (C, C.1)."
+      "rationaleAI": "Transmission of genetic information from parents to offspring through Mendel's laws (A.2) and the combined action of heredity and environment in producing an organism (A.3)."
     },
     {
       "articleTitle": "Evolution",
@@ -37,166 +36,164 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Evolution addresses heredity's role in evolutionary change, including population genetics, gene pool dynamics, the Hardy-Weinberg principle (C.1), and natural selection as the driver of evolutionary change (C.2), directly corresponding to Section 339's C division on heredity and evolution."
+      "rationaleAI": "Evolutionary change through natural selection, genetic drift, and mutation acting on gene frequencies (C.1) and natural selection as an agent of evolutionary change (C.2)."
     },
     {
       "articleTitle": "Natural selection",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Natural selection is the subject of outline path C.2, covering how heritable variation in fitness-related traits causes differential survival and reproduction, shifting allele frequencies; the article also discusses artificial selection as a distinct concept, reinforcing the C.3 context."
+      "rationaleAI": "Natural selection as the primary agent of evolutionary change through differential survival and reproduction shifting trait frequencies (C.2)."
     },
     {
       "articleTitle": "DNA",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "DNA covers the chemical and molecular nature of genes — base-pair encoding, replication ensuring heritable transmission, transcription and translation, and biotechnological applications of molecular genetics — all core content of outline path B.2."
+      "rationaleAI": "DNA as the double-helical polymer encoding genetic information, with replication, transcription, and chromatin organization as molecular genetics fundamentals (B.2)."
     },
     {
       "articleTitle": "Charles Darwin",
       "relevantPathsAI": [
-        "A.1",
         "C.2"
       ],
-      "rationaleAI": "Darwin's formulation of natural selection (C.2) and his pre-Mendelian speculations about inheritance (A.1) place him squarely in the early history of heredity theory; the article notes his work preceded the Mendelian synthesis that came later."
+      "rationaleAI": "Darwin's formulation of natural selection as the agent of evolutionary change (C.2), later synthesized with Mendelian genetics in the modern evolutionary synthesis."
     },
     {
       "articleTitle": "Domestication",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Domestication directly addresses artificial selection for genetic improvement of domesticated animals (dogs, cattle, goats, sheep) and cultivated plants, with hereditary behavioral and morphological changes across generations — the explicit subject of outline path C.3."
+      "rationaleAI": "Domestication as artificial selection for genetic improvements of animals and plants (C.3), affecting behaviour genes and morphology genes across generations."
     },
     {
       "articleTitle": "Dog",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "The dog article covers the first and most extensively studied case of artificial selection and domestication from wolves, including heritable behavioral and physiological traits selected across generations — a paradigm example for outline path C.3 (artificial selection in domesticated animals)."
+      "rationaleAI": "The dog as the first domesticated species, illustrating artificial selection for genetic improvements including reduced aggression and enhanced human social cue interpretation (C.3)."
     },
     {
       "articleTitle": "Maize",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Maize is a key example of artificial selection in cultivated plants: domesticated from teosinte ~9,000 years ago with dramatic genetically heritable changes in morphology and yield, and now subject to genetic modification — directly illustrating C.3 (artificial selection in cultivated plants)."
+      "rationaleAI": "Maize domesticated from teosinte ~9,000 years ago, exemplifying artificial selection for genetic improvements in cultivated plants (C.3)."
     },
     {
       "articleTitle": "Sheep",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Sheep domestication (~10,000 years ago, Iran) and subsequent artificial selection for wool, meat, and milk production traits provide a standard example of heritable improvement in domesticated animals under outline path C.3."
+      "rationaleAI": "Sheep domesticated ~10,000 years ago from wild mouflon, illustrating artificial selection for wool, meat, and milk production in domesticated animals (C.3)."
     },
     {
       "articleTitle": "Cattle",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Cattle were among the earliest domesticated animals with independently selected taurine and zebu lineages; the article notes cattle as among the first fully genome-mapped species, illustrating heritable artificial selection in domesticated animals (C.3)."
+      "rationaleAI": "Cattle independently domesticated twice from aurochs, with over 1,000 breeds resulting from artificial selection for meat, dairy, and draft power (C.3)."
     },
     {
       "articleTitle": "Chicken",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "The chicken is the world's most numerous domesticated animal, selectively bred into distinct broiler and laying breeds over 8,000 years — a direct illustration of artificial selection for genetic improvement in domesticated animals (C.3)."
+      "rationaleAI": "The chicken domesticated ~8,000 years ago and specialized into broiler and laying breeds through artificial selection (C.3)."
     },
     {
       "articleTitle": "Pig",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Pigs were independently domesticated twice and subsequently selectively bred; their close physiological similarity to humans also makes them biomedical models, but their primary relevance here is as a domesticated animal subject to artificial selection (C.3)."
+      "rationaleAI": "The pig independently domesticated twice in the Neolithic, exemplifying artificial selection for genetic improvements in domesticated animals (C.3)."
     },
     {
       "articleTitle": "Molecular biology",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Molecular biology's central dogma — DNA replication, transcription, translation — and its techniques (PCR, cloning, gel electrophoresis) directly cover the chemical and molecular nature of genes, gene expression, and applications of molecular genetics at the heart of outline path B.2."
+      "rationaleAI": "The central dogma of DNA replication, transcription to RNA, and translation to protein as the chemical and molecular nature of genes (B.2)."
     },
     {
       "articleTitle": "RNA",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "RNA covers its coding role (mRNA as translation template) and non-coding regulatory roles (miRNA, siRNA gene silencing, CRISPR), directly addressing gene expression, regulation, and applications of molecular genetics as outlined in B.2."
+      "rationaleAI": "RNA as a single-stranded nucleic acid bridging genetic information storage and protein synthesis, relevant to the expression and regulation of genes (B.2)."
     },
     {
       "articleTitle": "Protein",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Proteins are the products of gene expression — encoded by DNA, produced through transcription and translation — and their diversity of function (enzymes, structural scaffolds, signaling) illustrates the output of the genetic code described in B.2."
+      "rationaleAI": "Proteins as the functional products of gene expression via translation, relevant to the genetic code and its expression (B.2)."
     },
     {
       "articleTitle": "Sex",
       "relevantPathsAI": [
-        "B.1",
-        "A.3"
+        "C.1"
       ],
-      "rationaleAI": "Sex covers chromosomal sex-determination systems (XY, ZW, XO, haplodiploidy) as the cellular and chromosomal basis of a major heritable trait (B.1), and the interaction of sex with environmental mechanisms (temperature-dependent determination in reptiles) is relevant to A.3."
+      "rationaleAI": "Sexual reproduction enabling genetic recombination and inheritance from both parents, relevant to the gene pool and changes in gene frequencies (C.1)."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
-        "B.1",
-        "A.3"
+        "A.3",
+        "C.1"
       ],
-      "rationaleAI": "Reproduction covers meiosis, gametogenesis, and fertilization as the cellular mechanisms enabling genetic transmission across generations (B.1), and addresses the evolutionary paradox of sex and r/K strategies that reflect the combined action of heredity and environment (A.3)."
+      "rationaleAI": "Reproduction as the mechanism transmitting hereditary information (A.3) and sexual reproduction generating genetic variation within the gene pool (C.1)."
     },
     {
       "articleTitle": "Biotechnology",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Biotechnology's coverage of recombinant DNA, genetic engineering, GMO crops, and bioinformatics maps onto the applications of molecular genetics component of outline path B.2."
+      "rationaleAI": "Genetic engineering and recombinant DNA as applications of molecular genetics (B.2)."
     },
     {
       "articleTitle": "Species",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Species is the unit around which population genetics operates — interbreeding populations constitute the gene pool, and speciation reflects changes in gene frequencies described in C.1; the article addresses the biological species concept and its connection to evolutionary genetics."
+      "rationaleAI": "Species as interbreeding populations relevant to the gene pool concept and Hardy-Weinberg equilibrium in population genetics (C.1)."
     },
     {
       "articleTitle": "Intelligence",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Intelligence as a trait shaped by both genetic factors and environmental context — the classic nature-nurture issue central to outline path A.3 — is directly addressed in the article's coverage of IQ, heritability, and the interaction of genetics and environment in producing cognitive outcomes."
+      "rationaleAI": "Intelligence as a trait influenced by the combined action of heredity and environment (A.3), relevant to the nature-nurture debate in behavioral genetics."
     },
     {
       "articleTitle": "Learning",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Learning as shaped by both genetic predisposition and environmental experience is a classic instance of the combined action of heredity and environment (A.3); the article explicitly addresses the nature-versus-nurture dimension of learning."
+      "rationaleAI": "Learning shaped by genetics, epigenetics, and environmental factors, illustrating the combined action of heredity and environment (A.3)."
     },
     {
       "articleTitle": "Cereal",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Cereals were among the first domesticated plants, selectively bred for grain size and non-shattering traits beginning ~8,000 years ago across multiple world regions — a paradigm case of artificial selection in cultivated plants (C.3)."
+      "rationaleAI": "Cereals domesticated in the Neolithic across multiple centers, exemplifying artificial selection for genetic improvements in cultivated plants (C.3)."
     },
     {
       "articleTitle": "Potato",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "The potato's domestication from Andean wild relatives and development of over 5,000 cultivated varieties through sustained human selection illustrates artificial selection in cultivated plants (C.3) with a well-documented genetic history."
+      "rationaleAI": "Potato domesticated 7,000-10,000 years ago with over 5,000 cultivated varieties, illustrating artificial selection for genetic improvements in cultivated plants (C.3)."
     },
     {
       "articleTitle": "Scientific Revolution",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "The Scientific Revolution (16th–17th centuries) encompasses the pre-Mendelian era of natural philosophy when early speculations on heredity, generation, and biological transmission were debated — providing the intellectual context for A.1 (early speculations on the nature of heredity)."
+      "rationaleAI": "The Scientific Revolution's empirical methods provided the intellectual foundation for early speculations on the nature of heredity (A.1), preceding Mendel's formalization."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

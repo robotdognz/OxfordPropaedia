@@ -6,10 +6,12 @@
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.2",
-        "B.3"
+        "B.3",
+        "B.3.b",
+        "B.3.c",
+        "B.3.e"
       ],
-      "rationaleAI": "Directly covers the organ system comprising heart, blood vessels, and blood that transports substances; addresses both invertebrate open systems and vertebrate closed systems (B.1, B.3), blood and lymph as circulating fluids (B.2), and dual pulmonary/systemic circuits."
+      "rationaleAI": "Vertebrate closed circulatory system with pulmonary and systemic circuits (B.3.b), coronary circulation (B.3.c), and biodynamics of circulation (B.3.e); open circulatory systems in arthropods address invertebrate systems (B.3.a); the lymphatic system complements circulation (B.2.d). Broadly covers circulation and transport patterns (B.1)."
     },
     {
       "articleTitle": "Breathing",
@@ -19,25 +21,25 @@
         "A.4",
         "A.5"
       ],
-      "rationaleAI": "Covers the mechanics of pulmonary ventilation as the core process of extracting oxygen and releasing CO2 (A.1), the dynamics of respiratory mechanisms (A.4), and chemoreceptor-mediated homeostatic control of breathing rate and depth (A.5)."
+      "rationaleAI": "Pulmonary ventilation as the mechanical process of gas exchange (A.1), with dynamics of respiratory mechanisms including diaphragm-driven breathing (A.4) and neural/chemoreceptor control of breathing rate and depth (A.5)."
     },
     {
       "articleTitle": "Blood",
       "relevantPathsAI": [
         "B.2",
         "B.2.b",
-        "B.2.c",
-        "B.2.d"
+        "B.2.c"
       ],
-      "rationaleAI": "Blood is the primary circulating fluid in vertebrates; directly covers plasma composition (B.2.b), formed elements including erythrocytes, leukocytes, and platelets (B.2.c), and lymphocytes in vertebrates (B.2.d)."
+      "rationaleAI": "Plasma composition including water, proteins, and glucose (B.2.b) and formed elements comprising erythrocytes, leukocytes, and platelets (B.2.c); evolutionary origins of circulating fluids addressed through comparative context (B.2.a)."
     },
     {
       "articleTitle": "Lung",
       "relevantPathsAI": [
+        "A",
         "A.3.b",
         "A.7"
       ],
-      "rationaleAI": "Lungs are the primary vertebrate respiratory organs, covering gills-to-lungs in tetrapods (A.3.b) and the human respiratory system including alveolar gas exchange mechanics, airway structure, and dual blood supply (A.7)."
+      "rationaleAI": "Lungs as the primary respiratory organ of vertebrates (A.3.b), with detailed human respiratory anatomy including alveoli and airways (A.7). Dual blood supply connects to pulmonary circulation."
     },
     {
       "articleTitle": "Heart",
@@ -46,15 +48,14 @@
         "B.3.c",
         "B.3.e"
       ],
-      "rationaleAI": "The heart is the pump driving vertebrate circulatory systems; covers four-chambered vertebrate cardiac anatomy and function (B.3.b), coronary circulation (B.3.c), and biodynamics including cardiac output, heart rate, and stroke volume (B.3.e)."
+      "rationaleAI": "The four-chambered heart as the central pump of the vertebrate circulatory system (B.3.b), coronary circulation (B.3.c), and biodynamics including cardiac output, heart rate, and stroke volume (B.3.e)."
     },
     {
       "articleTitle": "Carbon dioxide",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1"
       ],
-      "rationaleAI": "CO2 is the primary metabolic waste product exchanged during respiration; the article directly covers gas exchange chemistry and the challenges CO2 dissolution poses in aquatic versus terrestrial environments (A.1, A.2), as well as its role in the broader carbon cycle."
+      "rationaleAI": "CO2 as the waste gas released during respiration, directly relevant to the process of gas exchange (A.1) where oxygen is extracted and carbon dioxide expelled."
     },
     {
       "articleTitle": "Immune system",
@@ -62,24 +63,24 @@
         "B.2.c",
         "B.2.d"
       ],
-      "rationaleAI": "The immune system involves leukocytes and lymphocytes transported via the blood and lymph; the article covers white cell functions (B.2.c) and lymphatic system components including lymphocytes (B.2.d) in their circulatory context."
+      "rationaleAI": "Leukocytes as formed elements of circulating fluid performing immune defense (B.2.c) and lymphocytes and lymph in vertebrates providing adaptive immunity (B.2.d)."
     },
     {
       "articleTitle": "Mollusca",
       "relevantPathsAI": [
-        "A.3.a",
         "B.3.a"
       ],
-      "rationaleAI": "Molluscs exemplify invertebrate respiratory and circulatory diversity; the article covers gill-based respiration in aquatic molluscs (A.3.a) and open circulatory systems using haemocoel, contrasting with cephalopod closed systems (B.3.a)."
+      "rationaleAI": "Open circulatory system with haemocoel in molluscs exemplifies invertebrate circulatory systems (B.3.a)."
     },
     {
       "articleTitle": "Hormone",
       "relevantPathsAI": [
-        "B.2"
+        "B.1.b",
+        "B.2.b"
       ],
-      "rationaleAI": "Hormones are transported via the bloodstream from endocrine glands to target tissues, making them a key component of the circulating fluid medium described in B.2; the article covers plasma-borne signaling molecules and their systemic distribution."
+      "rationaleAI": "Hormones are transported via the bloodstream to distant target tissues, directly relevant to circulation in multicellular animals (B.1.b) and plasma as the transport medium containing hormones (B.2.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
