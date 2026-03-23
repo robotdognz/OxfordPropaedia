@@ -6,10 +6,9 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
         "B"
       ],
-      "rationaleAI": "Covers the nature, scope, and diverse conceptions of philosophy (A.1–A.2) and surveys all its major divisions — metaphysics, epistemology, ethics, philosophy of mind, political philosophy, aesthetics, philosophy of language, science, religion, and mathematics — directly mapping to paths B.1 through B.16. Provides the broadest overview of what the section is about."
+      "rationaleAI": "Philosophy's core branches (epistemology, ethics, logic, metaphysics) and additional subfields (aesthetics, philosophy of language, mind, religion, science) directly map to diverse conceptions of philosophy (A.1) and the divisions of philosophy (B) including metaphysics (B.1), epistemology (B.3), ethics (B.6), and aesthetics (B.8)."
     },
     {
       "articleTitle": "Epistemology",
@@ -19,46 +18,48 @@
         "B.3.b",
         "B.3.c"
       ],
-      "rationaleAI": "Directly covers the history, nature, scope, and problems of epistemology (B.3.a, B.3.c), its relation to logic, philosophy of science, and philosophy of mind (B.3.b), and major schools including skepticism, empiricism, rationalism, foundationalism, and coherentism."
+      "rationaleAI": "Epistemology examining propositional knowledge, justification, and the sources of knowledge (perception, reason, testimony) directly maps to the theory of knowledge (B.3), its history, nature, and scope (B.3.a), its relation to metaphysics and logic (B.3.b), and problems in epistemology including skepticism, foundationalism, and coherentism (B.3.c)."
     },
     {
       "articleTitle": "Aristotle",
       "relevantPathsAI": [
+        "A.2",
         "A.3",
         "B.1",
-        "B.2.e",
-        "B.5",
+        "B.3",
+        "B.4",
         "B.6"
       ],
-      "rationaleAI": "Aristotle's written corpus encompasses treatises constituting major forms of philosophical exposition (A.3) and foundational contributions to metaphysics and substance theory (B.1), philosophy of biology (B.2.e), philosophical anthropology/psychology (B.5), and virtue ethics (B.6). His Organon is also foundational to B.10."
+      "rationaleAI": "Aristotle's systematic works on logic, metaphysics (substance, potentiality, actuality), ethics, and politics connect to diverse views of the methods of philosophy (A.2), forms of philosophical exposition including systematically ordered treatises (A.3), and multiple divisions including metaphysics (B.1), epistemology (B.3), philosophy of mind through psychology (B.4), and ethics (B.6)."
     },
     {
       "articleTitle": "Immanuel Kant",
       "relevantPathsAI": [
+        "B.1",
         "B.3",
         "B.6",
         "B.7",
         "B.8"
       ],
-      "rationaleAI": "Kant's Critiques directly address epistemology and the limits of knowledge (B.3), deontological moral philosophy (B.6), political philosophy including perpetual peace (B.7), and aesthetics and teleological judgment (B.8), making him central to four major divisions of philosophy."
+      "rationaleAI": "Kant's Critique of Pure Reason addresses metaphysics and its limits (B.1), Critique of Practical Reason addresses ethics through the categorical imperative (B.6), Critique of Judgment addresses aesthetics and teleology (B.8), his political philosophy connects to B.7, and his critical examination of reason is central to epistemology (B.3)."
     },
     {
       "articleTitle": "Time",
       "relevantPathsAI": [
         "B.1.c",
-        "B.2.c",
         "B.2.d"
       ],
-      "rationaleAI": "Time is a core problem in metaphysics (B.1.c — the nature of temporal existence, identity over time) and in the philosophy of nature (B.2.c — basic aspects of the natural order; B.2.d — philosophy of physics, including special and general relativistic time dilation). The article explicitly spans philosophical and scientific conceptions."
+      "rationaleAI": "Time as a fundamental dimension of spacetime with philosophical tensions about its irreversibility connects to problems in metaphysics (B.1.c) and the philosophy of physics (B.2.d)."
     },
     {
       "articleTitle": "Reason",
       "relevantPathsAI": [
         "A.2",
-        "B.3.c",
-        "B.4.c"
+        "A.4",
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Reason as a cognitive capacity is central to diverse views of philosophical method (A.2) and is a key problem in epistemology (B.3.c — sources and validity of knowledge) and philosophy of mind (B.4.c — the nature of rational cognition and its relation to emotion and intuition)."
+      "rationaleAI": "Reason as the cognitive capacity for logical processing, with tensions between reason and faith and between substantive and formal reason, connects to diverse views of methods of philosophy (A.2), criteria of meaning and truth (A.4), epistemology (B.3), and the philosophy of mind (B.4)."
     },
     {
       "articleTitle": "Thought",
@@ -67,7 +68,7 @@
         "B.4.a",
         "B.4.c"
       ],
-      "rationaleAI": "Covers the major theories of thinking — Platonism, Aristotelianism, computationalism, behaviorism, inner-speech hypotheses — squarely within the philosophy of mind (B.4.a, B.4.c), and spans phenomenology, cognitive psychology, and AI, all of which B.4.b cross-references."
+      "rationaleAI": "Cognitive processes including Platonism, Aristotelianism, computationalism, and phenomenology directly map to the philosophy of mind (B.4), its history and scope (B.4.a), and problems in philosophy of mind including the nature of thought and consciousness (B.4.c)."
     },
     {
       "articleTitle": "Mind",
@@ -77,43 +78,42 @@
         "B.4.b",
         "B.4.c"
       ],
-      "rationaleAI": "Directly treats the history, nature, and scope of philosophy of mind (B.4.a), its relation to neuroscience, cognitive science, and empirical disciplines (B.4.b), and core problems including the mind–body problem, consciousness, and mental disorder (B.4.c)."
+      "rationaleAI": "The mind-body problem, physicalist resolution, and the attribution of mind to non-human agents directly map to the philosophy of mind (B.4), its history and scope (B.4.a), its relation to empirical and mathematical sciences (B.4.b), and problems in the philosophy of mind (B.4.c)."
     },
     {
       "articleTitle": "René Descartes",
       "relevantPathsAI": [
-        "A.3",
+        "A.2",
         "B.1",
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Descartes' method of radical doubt and foundationalism (B.3), mind-body dualism (B.4), and metaphysical arguments for God's existence (B.1) are central to the divisions of philosophy; his dialogical treatises exemplify a major form of philosophical exposition (A.3)."
+      "rationaleAI": "Descartes' method of radical doubt represents a view of philosophical method (A.2), mind-body dualism connects to metaphysics (B.1) and philosophy of mind (B.4), and his foundationalism is central to epistemology (B.3)."
     },
     {
       "articleTitle": "Mathematical proof",
       "relevantPathsAI": [
-        "B.11",
-        "B.10"
+        "B.11"
       ],
-      "rationaleAI": "Mathematical proof is the foundational object of the philosophy of mathematics (B.11) and connects directly to the philosophy of logic (B.10) through proof theory and the relation between formal systems and mathematical truth."
+      "rationaleAI": "Mathematical proof establishing truth through axioms and inference rules connects to the philosophy of mathematics (B.11)."
     },
     {
       "articleTitle": "Ethics",
       "relevantPathsAI": [
         "B.6",
+        "B.6.a",
         "B.6.b",
         "B.6.c"
       ],
-      "rationaleAI": "Provides a comprehensive treatment of moral philosophy covering the history and types of ethics including metaethics and normative ethics (B.6.a), its relation to other disciplines (B.6.b), and key problems and theories — consequentialism, deontology, virtue ethics (B.6.c)."
+      "rationaleAI": "Ethics covering normative ethics (consequentialism, deontology, virtue ethics), metaethics, and applied ethics directly maps to ethics or moral philosophy (B.6), the distinction between metaethics and normative ethics (B.6.a), its relation to other philosophical disciplines (B.6.b), and problems in ethics (B.6.c)."
     },
     {
       "articleTitle": "Socrates",
       "relevantPathsAI": [
-        "A.3",
-        "B.3",
+        "A.2",
         "B.6"
       ],
-      "rationaleAI": "Socrates developed the elenctic dialogue as a distinctive form of philosophical exposition (A.3) and his Socratic method is central to epistemology (B.3) and moral philosophy (B.6); his legacy shaped the entire subsequent tradition addressed in B."
+      "rationaleAI": "Socrates' dialectical method (elenchus) represents a distinctive view of philosophical method (A.2), and his ethical concerns with justice, virtue, and piety connect to ethics or moral philosophy (B.6)."
     },
     {
       "articleTitle": "Plato",
@@ -123,7 +123,7 @@
         "B.3",
         "B.7"
       ],
-      "rationaleAI": "Plato's dialogues are the paradigm of philosophical exposition in dialogue form (A.3); his Theory of Forms anchors metaphysics (B.1) and epistemology (B.3), and the Republic is a foundational text of political philosophy (B.7)."
+      "rationaleAI": "Plato's philosophical dialogues represent a form of philosophical exposition (A.3), his Theory of Forms connects to metaphysics (B.1), his epistemology to theory of knowledge (B.3), and his Republic's advocacy of philosopher-kings to political philosophy (B.7)."
     },
     {
       "articleTitle": "Thomas Aquinas",
@@ -133,36 +133,32 @@
         "B.6",
         "B.14"
       ],
-      "rationaleAI": "Aquinas' Summa Theologiae treats metaphysics and natural theology (B.1.b — relation to logic and natural theology), moral philosophy and natural law (B.6), and the philosophy of religion (B.14) through systematic treatise form."
+      "rationaleAI": "Aquinas' natural theology and proofs for God's existence connect to metaphysics and its relation to natural theology (B.1.b), his moral philosophy connects to ethics (B.6), and his faith-reason reconciliation connects to philosophy of religion (B.14)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.6",
-        "B.7"
+        "B.3",
+        "B.7",
+        "B.13"
       ],
-      "rationaleAI": "The Enlightenment crystallized distinctive philosophical conceptions (A.1) and methods centered on reason and empirical inquiry (A.2), and generated major advances in moral philosophy (B.6) and political philosophy including natural rights, constitutionalism, and social contract theory (B.7)."
+      "rationaleAI": "The Enlightenment's emphasis on empirical inquiry and reason connects to epistemology (B.3), its political theory of natural rights and constitutional government to political philosophy (B.7), and its focus on science and natural history to philosophy of science (B.13)."
     },
     {
       "articleTitle": "Good and evil",
       "relevantPathsAI": [
         "B.1.c",
-        "B.6.c",
-        "B.14"
+        "B.6.c"
       ],
-      "rationaleAI": "Good and evil addresses core metaphysical problems including theodicy and the ontological status of evil (B.1.c), central normative and metaethical problems (B.6.c — moral realism, naturalism, cognitivism), and the philosophy of religion (B.14 — the problem of evil in theism)."
+      "rationaleAI": "The moral dichotomy of good and evil with contested ontological status (force, privation, social construct) connects to problems in metaphysics (B.1.c) and problems in ethics (B.6.c)."
     },
     {
       "articleTitle": "Knowledge",
       "relevantPathsAI": [
         "B.3",
-        "B.3.a",
-        "B.3.c",
-        "A.4"
+        "B.3.c"
       ],
-      "rationaleAI": "Covers the philosophical analysis of knowledge including the Gettier problem, foundationalism, coherentism, and the sources of justified belief (B.3.a, B.3.c), as well as criteria of truth applicable to philosophical thought (A.4)."
+      "rationaleAI": "Knowledge as true justified belief, with Gettier problem challenges and foundationalism vs. coherentism debates, directly maps to epistemology or theory of knowledge (B.3) and its problems (B.3.c)."
     },
     {
       "articleTitle": "Niccolò Machiavelli",
@@ -170,16 +166,15 @@
         "B.7",
         "B.7.c"
       ],
-      "rationaleAI": "Machiavelli is a central figure in the history of political philosophy (B.7.c), separating empirical analysis of power from normative virtue frameworks and thereby transforming the discipline; his work bears directly on the relation of political philosophy to political science (B.7.a)."
+      "rationaleAI": "Machiavelli's analysis of political power, The Prince, and civic republicanism connect to political philosophy (B.7) and its history (B.7.c)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "B.4",
-        "B.4.c",
-        "B.5.c"
+        "B.5"
       ],
-      "rationaleAI": "Freud's structural model of the mind (id, ego, superego) and the unconscious directly engage problems in the philosophy of mind (B.4.c), while his psychosexual theory of human nature connects to philosophical anthropology (B.5.c)."
+      "rationaleAI": "Freud's theories of the unconscious, repression, and the structural model of the mind (id, ego, superego) connect to the philosophy of mind (B.4), and his cultural analysis connects to the philosophy of man or philosophical anthropology (B.5)."
     },
     {
       "articleTitle": "Kurt Gödel",
@@ -187,16 +182,15 @@
         "B.10",
         "B.11"
       ],
-      "rationaleAI": "Gödel's incompleteness theorems set permanent limits on what can be proved within any formal system, directly shaping the philosophy of logic (B.10) and the philosophy of mathematics (B.11) by demonstrating the irreducibility of mathematical truth to formal provability."
+      "rationaleAI": "Gödel's incompleteness theorems setting permanent limits on mathematical provability connect to the philosophy of logic (B.10) and philosophy of mathematics (B.11)."
     },
     {
       "articleTitle": "History of philosophy",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "A.3"
+        "B"
       ],
-      "rationaleAI": "Surveys the development of philosophical inquiry across all major traditions (A), illustrating diverse conceptions of philosophy (A.1) and the major forms of exposition from Presocratic fragments through Platonic dialogues to systematic treatises (A.3)."
+      "rationaleAI": "The history of philosophy surveying diverse philosophical traditions connects to diverse conceptions of philosophy (A.1) and provides historical context for all divisions of philosophy (B)."
     },
     {
       "articleTitle": "Aesthetics",
@@ -205,18 +199,17 @@
         "B.8.a",
         "B.8.b",
         "B.8.c",
-        "B.8.d",
-        "B.12"
+        "B.8.d"
       ],
-      "rationaleAI": "Directly covers the history, nature, and scope of aesthetics (B.8.a), its development and key approaches (B.8.b), problems including the ontology of artworks and aesthetic judgment (B.8.c), and its relation to other disciplines including ethics and psychology (B.8.d); also maps to B.12 (philosophy of art)."
+      "rationaleAI": "Aesthetics examining beauty, taste, and art directly maps to the nature and scope of aesthetics (B.8.a), its development from antiquity through 18th-century emergence (B.8.b), problems in aesthetics including subjectivism vs. objectivism (B.8.c), and its relation to ethics, psychology, and comparative traditions (B.8.d)."
     },
     {
       "articleTitle": "Art",
       "relevantPathsAI": [
-        "B.12",
-        "B.8"
+        "B.8",
+        "B.12"
       ],
-      "rationaleAI": "Directly addresses the contested definition, classification, and ontology of art and the distinction between fine, applied, and decorative arts, mapping to the philosophy of art (B.12) and its overlap with aesthetics (B.8)."
+      "rationaleAI": "Art's contested definition, with the philosophy of art (aesthetics) examining creativity and interpretation, connects to aesthetics (B.8) and the philosophy of art (B.12)."
     },
     {
       "articleTitle": "Metaphysics",
@@ -226,38 +219,35 @@
         "B.1.b",
         "B.1.c"
       ],
-      "rationaleAI": "Directly covers the history, nature, and scope of metaphysics (B.1.a), its relation to ethics, logic, and natural theology (B.1.b), and core problems including universals, identity, causation, space, time, and modality (B.1.c)."
+      "rationaleAI": "Metaphysics examining being, existence, ontology, causation, and modality directly maps to metaphysics or speculative philosophy (B.1), its history, nature, and scope (B.1.a), its relation to ethics and logic (B.1.b), and problems in metaphysics (B.1.c)."
     },
     {
       "articleTitle": "Eastern philosophy",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.6"
+        "A.1"
       ],
-      "rationaleAI": "Covers the major non-Western philosophical traditions that embody diverse conceptions of philosophy (A.1) and alternative frameworks in metaphysics (B.1) and ethics (B.6), providing comparative context for the Western philosophical divisions outlined in B."
+      "rationaleAI": "Eastern philosophical traditions including Confucianism, Taoism, Vedanta, and Buddhism represent diverse conceptions of philosophy distinct from Western approaches (A.1)."
     },
     {
       "articleTitle": "Political science",
       "relevantPathsAI": [
-        "B.7",
         "B.7.a"
       ],
-      "rationaleAI": "Political science is explicitly named in the outline as the discipline to which political philosophy must be related (B.7.a); the article defines how empirical political science diverges from normative political philosophy, directly illuminating that boundary."
+      "rationaleAI": "Political science as the empirical study of governance connects to the nature and scope of political philosophy and its relation to political science (B.7.a)."
     },
     {
       "articleTitle": "Mathematics",
       "relevantPathsAI": [
         "B.11"
       ],
-      "rationaleAI": "Mathematics as a discipline is the subject matter of the philosophy of mathematics (B.11), covering the axiomatic method, pure versus applied mathematics, foundational questions, and historical development that grounds philosophical inquiry into mathematical truth and method."
+      "rationaleAI": "Mathematics covering pure and applied domains, the axiomatic method, and foundational questions connects to the philosophy of mathematics (B.11)."
     },
     {
       "articleTitle": "Logic",
       "relevantPathsAI": [
         "B.10"
       ],
-      "rationaleAI": "Logic is the direct subject of the philosophy of logic (B.10), covering formal and informal reasoning, metalogic, and the full historical sweep from Aristotelian syllogistics to contemporary proof theory."
+      "rationaleAI": "Logic as the study of correct reasoning from Aristotelian syllogistics through Frege connects to the philosophy of logic (B.10)."
     },
     {
       "articleTitle": "Psychology",
@@ -265,7 +255,7 @@
         "B.4.b",
         "B.5.b"
       ],
-      "rationaleAI": "Psychology is the primary empirical discipline to which philosophy of mind (B.4.b) and philosophical anthropology (B.5.b) must be related, making it essential context for understanding those divisions even though the article itself is not philosophical."
+      "rationaleAI": "Psychology as the scientific study of mind and behavior connects to the philosophy of mind's relation to empirical sciences (B.4.b) and philosophical anthropology's relation to social sciences (B.5.b)."
     },
     {
       "articleTitle": "Truth",
@@ -273,7 +263,7 @@
         "A.4",
         "B.3.c"
       ],
-      "rationaleAI": "Truth theories — correspondence, coherence, pragmatism, deflation — are directly relevant to criteria of meaning and truth in philosophical thought (A.4) and to problems in epistemology including what justification and knowledge consist in (B.3.c)."
+      "rationaleAI": "Truth theories (correspondence, coherence, pragmatism, deflationary) connect to criteria of meaning and truth in philosophical thought (A.4) and problems in epistemology (B.3.c)."
     },
     {
       "articleTitle": "Ontology",
@@ -282,31 +272,30 @@
         "B.1.a",
         "B.1.c"
       ],
-      "rationaleAI": "Ontology is the core of metaphysics (B.1.a), addressing what entities exist and how they are classified — including universals, abstract objects, and possible worlds — which are among the key problems in metaphysics (B.1.c)."
+      "rationaleAI": "Ontology as the study of being, existence, and the most general categories of reality maps to metaphysics (B.1), its nature and scope (B.1.a), and problems including universals vs. particulars and realism vs. anti-realism (B.1.c)."
     },
     {
       "articleTitle": "Education",
       "relevantPathsAI": [
         "B.16"
       ],
-      "rationaleAI": "Education is the subject matter of the philosophy of education (B.16), a priority coverage path; the article covers the aims and ideologies of education which are the objects of philosophical analysis in B.16."
+      "rationaleAI": "Education's aims, learning theories, and history from ancient literacy to modern schooling connect to the philosophy of education (B.16)."
     },
     {
       "articleTitle": "Avicenna",
       "relevantPathsAI": [
         "B.1",
-        "B.4",
-        "B.14"
+        "B.4"
       ],
-      "rationaleAI": "Avicenna's Book of Healing covers Peripatetic metaphysics (B.1) and psychology of the soul (B.4); his natural theology and proof of the Necessary Existent engages the philosophy of religion (B.14), bridging Islamic and European scholastic philosophy."
+      "rationaleAI": "Avicenna's Book of Healing covering metaphysics and logic connects to metaphysics (B.1), and his philosophical psychology connects to philosophy of mind (B.4)."
     },
     {
       "articleTitle": "Scientific method",
       "relevantPathsAI": [
-        "B.13",
-        "B.2.b"
+        "B.2",
+        "B.13"
       ],
-      "rationaleAI": "The scientific method is the primary subject of the philosophy of science (B.13), covering falsifiability, empiricism, rationalism, and methodological debates; it also bears on the relation of the philosophy of nature to science and metaphysics (B.2.b)."
+      "rationaleAI": "The scientific method with its empirical framework, falsifiability, and philosophical tensions between empiricism and rationalism connects to the philosophy of nature and its relation to science (B.2.b) and the philosophy of science (B.13)."
     },
     {
       "articleTitle": "Nature",
@@ -315,84 +304,76 @@
         "B.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "The concept of nature is the subject of the philosophy of nature (B.2.a), including its scope and the philosophical tensions between humans as part of or apart from nature (B.2.c — basic aspects of the natural order)."
+      "rationaleAI": "The concept of nature spanning physical world phenomena with philosophical tensions about the nature/culture divide connects to the philosophy of nature (B.2), its history and scope (B.2.a), and the basic aspects of the natural order (B.2.c)."
     },
     {
       "articleTitle": "Human rights",
       "relevantPathsAI": [
-        "B.7",
-        "B.6.c"
+        "B.7"
       ],
-      "rationaleAI": "Human rights are a central topic of political philosophy (B.7) through natural rights theory and social contract, and of moral philosophy in debates over moral realism, universalism, and cultural relativism (B.6.c)."
+      "rationaleAI": "Human rights as universally recognized moral principles grounded in natural rights theory, with tensions between universalism and cultural relativism, connect to political philosophy (B.7)."
     },
     {
       "articleTitle": "Cicero",
       "relevantPathsAI": [
         "A.3",
-        "B.7",
-        "B.6"
+        "B.6",
+        "B.7"
       ],
-      "rationaleAI": "Cicero's philosophical treatises adapting Hellenistic schools into Latin represent a major tradition of philosophical exposition (A.3); his works on moral duty, justice, and natural law connect to political philosophy (B.7) and ethics (B.6)."
+      "rationaleAI": "Cicero's adaptation of Hellenistic philosophical schools into Latin treatises represents a form of philosophical exposition through commentaries (A.3), and his works connect to ethics (B.6) and political philosophy through constitutional law (B.7)."
     },
     {
       "articleTitle": "John Locke",
       "relevantPathsAI": [
         "B.3",
-        "B.4",
-        "B.7",
-        "B.15"
+        "B.7"
       ],
-      "rationaleAI": "Locke's Essay is foundational to epistemology (B.3 — tabula rasa, sources of ideas); his Two Treatises ground political philosophy in natural rights and consent (B.7); his theory of personal identity engages philosophy of mind (B.4); and his advocacy of church-state separation is relevant to philosophy of law (B.15)."
+      "rationaleAI": "Locke's tabula rasa and experiential origin of ideas connect to epistemology (B.3), and his natural rights, social contract, and theory of government consent connect to political philosophy (B.7)."
     },
     {
       "articleTitle": "The arts",
       "relevantPathsAI": [
-        "B.12",
-        "B.8"
+        "B.8",
+        "B.12"
       ],
-      "rationaleAI": "The arts as a category directly supplies the content of the philosophy of art (B.12) and connects to aesthetics (B.8) through aesthetic theory and art criticism, covering the practice and production context for philosophical inquiry."
+      "rationaleAI": "The arts as encompassing visual, literary, and performing arts with aesthetic theory connect to aesthetics (B.8) and the philosophy of art (B.12)."
     },
     {
       "articleTitle": "Emotion",
       "relevantPathsAI": [
-        "B.4.c",
-        "B.6.c"
+        "B.4.c"
       ],
-      "rationaleAI": "Emotion is a central problem in the philosophy of mind (B.4.c — the relation of feelings to thought, motivation, and rational agency) and bears on moral psychology and metaethics (B.6.c — moral motivation and the role of feeling in ethical judgment)."
+      "rationaleAI": "Emotion as studied across psychology and philosophy, with somatic and cognitive theories, connects to problems in the philosophy of mind (B.4.c)."
     },
     {
       "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.2.d",
+        "B.2",
         "B.13"
       ],
-      "rationaleAI": "Galileo's work relates the philosophy of nature to experimental science and to Copernican mechanics (B.2.b, B.2.d — philosophy of physics), and his confrontation with the Church is a foundational episode in the philosophy of science (B.13)."
+      "rationaleAI": "Galileo's experimental method and championing of heliocentrism connect to the philosophy of nature (B.2) and the philosophy of science through the development of modern scientific methodology (B.13)."
     },
     {
       "articleTitle": "Charles Darwin",
       "relevantPathsAI": [
         "B.2.e",
-        "B.5.c",
         "B.13"
       ],
-      "rationaleAI": "Darwin's theory of evolution is central to the philosophy of biology (B.2.e), raises problems about human nature in philosophical anthropology (B.5.c), and is a key episode in the philosophy of science (B.13) regarding the demarcation and history of scientific theorizing."
+      "rationaleAI": "Darwin's theory of evolution by natural selection connects to the philosophy of biology (B.2.e) and the philosophy of science through its implications for teleology and design arguments (B.13)."
     },
     {
       "articleTitle": "Property",
       "relevantPathsAI": [
-        "B.7",
-        "B.6.c",
-        "B.15"
+        "B.7"
       ],
-      "rationaleAI": "Property has a rich philosophical tradition from Locke's labor theory through Hume, Marx, and Proudhon, engaging political philosophy (B.7), distributive justice in ethics (B.6.c), and the philosophy of law (B.15)."
+      "rationaleAI": "Property rights theories from Locke's labor theory through Marx's critique connect to political philosophy (B.7)."
     },
     {
       "articleTitle": "Social science",
       "relevantPathsAI": [
         "B.5.b"
       ],
-      "rationaleAI": "Social science is the body of empirical disciplines to which philosophical anthropology (B.5.b) must be related; understanding its scope and methods contextualizes what philosophical anthropology contributes beyond empirical inquiry."
+      "rationaleAI": "Social science disciplines studying human societies connect to the relation of philosophical anthropology to social sciences (B.5.b)."
     },
     {
       "articleTitle": "Anthropology",
@@ -400,9 +381,9 @@
         "B.5",
         "B.5.b"
       ],
-      "rationaleAI": "Physical and cultural anthropology are explicitly named in B.5.b as the disciplines to which philosophical anthropology must relate; the article's coverage of human evolution, culture, and kinship provides the empirical backdrop for philosophical anthropology's problems."
+      "rationaleAI": "Anthropology's study of humanity encompassing biology, society, and culture connects to the philosophy of man or philosophical anthropology (B.5) and its relation to physical and cultural anthropology (B.5.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

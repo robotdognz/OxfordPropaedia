@@ -11,7 +11,7 @@
         "B.1.d",
         "B.1.e"
       ],
-      "rationaleAI": "Directly covers arithmetic as a branch of mathematics including fundamental definitions, number systems, notation (decimal, binary), divisibility, and logarithms, matching B.1 and all its sub-paths comprehensively."
+      "rationaleAI": "Numerical operations across number systems correspond to fundamental definitions and laws (B.1.a), theory of divisors and fractions (B.1.b), numeral systems and positional notation (B.1.c), decimal calculation (B.1.d), and logarithms (B.1.e)."
     },
     {
       "articleTitle": "Geometry",
@@ -21,10 +21,9 @@
         "C.2",
         "C.3",
         "C.4",
-        "C.6",
-        "C.7"
+        "C.6"
       ],
-      "rationaleAI": "Broad survey spanning Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometries, covering section C and its major sub-paths including priority paths C.2, C.3, C.6, and C.7."
+      "rationaleAI": "Comprehensive coverage from Euclidean geometry (C.1) through non-Euclidean (C.2), projective (C.3), analytic and trigonometric (C.4), and differential geometry (C.6); covers points, lines, planes, manifolds, and symmetry."
     },
     {
       "articleTitle": "Mathematical analysis",
@@ -34,25 +33,19 @@
         "D.2",
         "D.3",
         "D.4",
-        "D.5",
-        "D.6"
+        "D.5"
       ],
-      "rationaleAI": "Directly maps to section D (Analysis), covering real analysis, complex analysis, functional analysis, harmonic analysis, differential equations, measure theory, and probability — the core content of D.1 through D.6."
+      "rationaleAI": "Continuous functions, limits, differentiation, integration, and measure theory (D.1); complex analysis (D.2); differential equations (D.3); functional analysis (D.4); Fourier analysis and series (D.5)."
     },
     {
       "articleTitle": "Algebra",
       "relevantPathsAI": [
         "B",
         "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
-        "B.2.d",
         "B.3",
-        "B.3.a",
         "B.4"
       ],
-      "rationaleAI": "Covers elementary algebra, linear algebra, abstract algebra (groups, rings, fields, modules), universal algebra, and category theory, directly mapping to the priority paths B.2 (elementary/multivariate algebra), B.3 (linear algebra), and B.4 (algebraic structures)."
+      "rationaleAI": "Elementary algebra with equations and variables (B.2), linear algebra including vector spaces (B.3), and abstract algebraic structures -- groups, rings, fields, modules, category theory (B.4)."
     },
     {
       "articleTitle": "Number theory",
@@ -64,7 +57,7 @@
         "E.2.d",
         "E.2.e"
       ],
-      "rationaleAI": "Directly covers number theory with all subdivisions: elementary (E.2.a), algebraic (E.2.b), analytic (E.2.c), geometric (E.2.d), and probabilistic (E.2.e) — a precise match to the full E.2 sub-tree."
+      "rationaleAI": "Elementary number theory on integers (E.2.a), algebraic number theory (E.2.b), analytic number theory including Riemann zeta function (E.2.c), geometric number theory (E.2.d), and probabilistic number theory (E.2.e)."
     },
     {
       "articleTitle": "Line (geometry)",
@@ -73,42 +66,34 @@
         "C.1.a",
         "C.4.a"
       ],
-      "rationaleAI": "Lines are foundational objects in Euclidean geometry axioms (C.1.a) and in plane analytic geometry (C.4.a); the article also treats lines in non-Euclidean and projective settings."
+      "rationaleAI": "Fundamental geometric object defined by Euclid's postulates in Euclidean geometry (C.1, C.1.a); linear equations in plane analytic geometry (C.4.a)."
     },
     {
       "articleTitle": "Three-dimensional space",
       "relevantPathsAI": [
-        "C.1",
         "C.1.e",
-        "C.4",
         "C.4.d",
-        "B.3.a"
+        "D.7"
       ],
-      "rationaleAI": "Covers 3D Euclidean space as a generalization of geometry (C.1.e), coordinate systems central to solid analytic geometry (C.4.d), and inner product/linear algebra structure (B.3.a)."
+      "rationaleAI": "Generalization of Euclidean geometry to higher dimensions (C.1.e); projective and solid analytic geometry (C.4.d); vector and tensor analysis in three dimensions (D.7)."
     },
     {
       "articleTitle": "Topology",
       "relevantPathsAI": [
         "F",
         "F.1",
-        "F.1.a",
-        "F.1.b",
-        "F.1.c",
         "F.2",
-        "F.2.e",
         "F.3"
       ],
-      "rationaleAI": "Directly covers general topology (F.1), topological groups and differential topology (F.2), and algebraic topology (F.3) including fundamental group, homology, cohomology — the full content of section F."
+      "rationaleAI": "General topology covering topological spaces, continuity, compactness (F.1); differential topology (F.2); algebraic topology including fundamental group, homology, cohomology (F.3)."
     },
     {
       "articleTitle": "Exponentiation",
       "relevantPathsAI": [
         "B.1.d",
-        "B.1.e",
-        "B.4.b",
-        "B.4.c"
+        "B.1.e"
       ],
-      "rationaleAI": "Exponentiation is part of arithmetic calculation (B.1.d roots and powers), connects to logarithms (B.1.e), and extends to group and ring theory (B.4.b, B.4.c) for abstract exponentiation."
+      "rationaleAI": "Repeated multiplication extended to various exponents connects to arithmetic calculation with decimals and roots (B.1.d); inverse operation (logarithms) is treated in B.1.e."
     },
     {
       "articleTitle": "Set (mathematics)",
@@ -116,31 +101,25 @@
         "A",
         "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c"
+        "A.3"
       ],
-      "rationaleAI": "Directly addresses the foundations of set theory including fundamental set concepts (A.2.a), Cantorian set theory (A.2.b), and ZFC axiomatic set theory with its postulates and limitations (A.3.a, A.3.b, A.3.c)."
+      "rationaleAI": "Origins and definitions of sets (A.1), fundamental set concepts and Cantorian set theory (A.2), and axiomatic set theory including ZFC (A.3)."
     },
     {
       "articleTitle": "Integer",
       "relevantPathsAI": [
         "B.1.a",
-        "B.1.b",
         "E.2.a"
       ],
-      "rationaleAI": "Integers are the foundational objects of arithmetic (B.1.a defines natural numbers and integers, B.1.b divisibility) and elementary number theory (E.2.a properties of whole numbers/integers)."
+      "rationaleAI": "Integers as the smallest ring containing natural numbers relate to fundamental definitions and laws of arithmetic (B.1.a); properties of whole numbers in elementary number theory (E.2.a)."
     },
     {
       "articleTitle": "Natural number",
       "relevantPathsAI": [
         "B.1.a",
-        "E.2.a"
+        "A.2.b"
       ],
-      "rationaleAI": "Natural numbers underlie the fundamental definitions and laws of arithmetic (B.1.a) and elementary number theory (E.2.a); the article covers Peano axioms and set-theoretic constructions foundational to both paths."
+      "rationaleAI": "Formal definition via Peano axioms relates to fundamental concepts of natural numbers and integers (B.1.a); set-theoretic construction connects to Cantorian set theory (A.2.b)."
     },
     {
       "articleTitle": "Abstract algebra",
@@ -151,38 +130,37 @@
         "B.4.c",
         "B.4.d",
         "B.4.e",
-        "B.4.f",
         "B.4.g"
       ],
-      "rationaleAI": "Abstract algebra directly covers all algebraic structures listed under B.4: lattices (B.4.a), groups (B.4.b), fields (B.4.c), rings (B.4.d), categories (B.4.e), homological algebra (B.4.f), and universal algebra (B.4.g)."
+      "rationaleAI": "Groups (B.4.b), rings (B.4.d), fields (B.4.c), lattices (B.4.a), categories (B.4.e), and universal algebra (B.4.g) are the core algebraic structures."
     },
     {
       "articleTitle": "Linear algebra",
       "relevantPathsAI": [
-        "B.3",
         "B.3.a",
-        "B.3.v",
-        "B.3.v.vi"
+        "B.3.a.i",
+        "B.3.a.ii",
+        "B.3.a.iii",
+        "B.3.a.v"
       ],
-      "rationaleAI": "Linear algebra directly covers all the priority paths: vector spaces (B.3.i), matrices (B.3.i.ii), linear transformations (B.3.i.iii), linear functionals (B.3.i.iv), inner products (B.3.v), and self-adjoint operators and spectral theorem (B.3.v.vi)."
+      "rationaleAI": "Vector spaces (B.3.a.i), matrices (B.3.a.ii), linear transformations (B.3.a.iii), and inner products (B.3.a.v) are the core objects of linear algebra."
     },
     {
       "articleTitle": "Number",
       "relevantPathsAI": [
         "B.1.a",
+        "B.1.b",
         "B.1.c",
-        "D.1.b",
-        "E.2"
+        "D.1.b"
       ],
-      "rationaleAI": "Surveys number systems (natural, integer, rational, real, complex, p-adic, transfinite), numeral systems and notation (B.1.c), number properties foundational to real analysis (D.1.b) and number theory (E.2)."
+      "rationaleAI": "Natural numbers and integers (B.1.a), fractions and rationals (B.1.b), numeral systems (B.1.c), and number systems and their properties in real analysis (D.1.b)."
     },
     {
       "articleTitle": "Kurt Gödel",
       "relevantPathsAI": [
-        "A.3.b",
-        "A.3.c"
+        "A.3.b"
       ],
-      "rationaleAI": "Gödel's incompleteness theorems directly address the limitations of axiomatic set theory (A.3.b) and the profound changes and present status of axiomatic set theory resulting from recent discoveries (A.3.c)."
+      "rationaleAI": "Independence of the axiom of choice and continuum hypothesis from ZFC and incompleteness results directly address limitations of axiomatic set theory and Gödel's theorem (A.3.b)."
     },
     {
       "articleTitle": "Prime number",
@@ -190,16 +168,15 @@
         "E.2.a",
         "E.2.c"
       ],
-      "rationaleAI": "Prime numbers are the central object of elementary number theory (E.2.a divisibility and factorization) and analytic number theory (E.2.c prime number theorem, Riemann hypothesis, distribution of primes)."
+      "rationaleAI": "Fundamental theorem of arithmetic and prime distribution relate to elementary number theory (E.2.a); prime number theorem and Riemann zeta function connect to analytic number theory (E.2.c)."
     },
     {
       "articleTitle": "Real number",
       "relevantPathsAI": [
-        "D.1",
-        "D.1.a",
-        "D.1.b"
+        "D.1.b",
+        "D.1.a"
       ],
-      "rationaleAI": "Real numbers are the foundational objects of real analysis (D.1), covering their formal definition via Dedekind cuts and Cauchy sequences (D.1.a origins and concepts) and number system properties (D.1.b)."
+      "rationaleAI": "Dedekind cuts and Cauchy sequences defining the complete ordered field relate to number systems and their properties (D.1.b) and origins of real analysis (D.1.a)."
     },
     {
       "articleTitle": "0",
@@ -207,44 +184,42 @@
         "B.1.a",
         "B.1.c"
       ],
-      "rationaleAI": "Zero is the additive identity central to fundamental arithmetic definitions (B.1.a), and its role as positional placeholder is essential to number systems and notation (B.1.c) including the historical development of decimal notation."
+      "rationaleAI": "Zero as additive identity relates to fundamental definitions and laws of arithmetic (B.1.a); zero as a placeholder digit enabling positional notation relates to number systems (B.1.c)."
     },
     {
       "articleTitle": "Function (mathematics)",
       "relevantPathsAI": [
         "D.1.c",
-        "D.4",
-        "B.4.e"
+        "B.2.c"
       ],
-      "rationaleAI": "Functions are central to differential calculus (D.1.c), functional analysis (D.4), and form the morphisms of category theory (B.4.e); they underpin virtually all of analysis (section D)."
+      "rationaleAI": "Functions as central objects of calculus and analysis relate to functions and differential calculus (D.1.c); functions generalize to polynomials and rational functions in algebra (B.2.c)."
     },
     {
       "articleTitle": "History of mathematics",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "C.1",
-        "D.1"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
       ],
-      "rationaleAI": "Traces the origins of set theory, arithmetic, geometry, and analysis, providing contextual coverage of introductory paths across multiple branches including A.1, B.1.a, C.1, and D.1.a."
+      "rationaleAI": "Historical survey touching all branches -- set theory, algebra, geometry, analysis, number theory, and topology -- provides developmental context for the entire taxonomy of mathematical branches."
     },
     {
       "articleTitle": "Fraction",
       "relevantPathsAI": [
-        "B.1.b",
-        "B.1.d"
+        "B.1.b"
       ],
-      "rationaleAI": "Fractions arise directly from the theory of divisors and extension to non-integers (B.1.b) and are involved in arithmetic calculation with decimals (B.1.d)."
+      "rationaleAI": "Fractions as part-to-whole ratios with numerator and denominator directly correspond to the theory of divisors and fractions resulting from division (B.1.b)."
     },
     {
       "articleTitle": "Equation",
       "relevantPathsAI": [
         "B.2.d",
-        "D.3",
-        "D.3.a",
-        "D.3.b"
+        "D.3"
       ],
-      "rationaleAI": "Solving equations is the principal problem of elementary algebra (B.2.d); the article also covers differential equations, connecting to D.3 (ordinary and partial differential equations)."
+      "rationaleAI": "Solving polynomial, linear, and Diophantine equations is the principal problem of elementary algebra (B.2.d); differential and parametric equations fall under differential equations in analysis (D.3)."
     },
     {
       "articleTitle": "Area",
@@ -252,141 +227,126 @@
         "C.1.b",
         "D.1.d"
       ],
-      "rationaleAI": "Area connects to the measure of polygons and the theories of equivalence (C.1.b) and to integral calculus and Lebesgue measure (D.1.d) as the analytic generalization of geometric area."
+      "rationaleAI": "Area of polygons and polyhedra relates to the measure of polygons (C.1.b); generalization via Lebesgue measure connects to measure and integral calculus (D.1.d)."
     },
     {
       "articleTitle": "Euclid",
       "relevantPathsAI": [
         "C.1",
         "C.1.a",
-        "C.1.b",
-        "C.1.d"
+        "E.2.a"
       ],
-      "rationaleAI": "Euclid's Elements established axiomatic foundations of geometry (C.1.a), the measure of polygons and polyhedra (C.1.b), and geometric constructions (C.1.d); he is the foundational figure for all of C.1."
+      "rationaleAI": "Euclid's Elements established axiomatic Euclidean geometry (C.1, C.1.a); his proof of the infinitude of primes connects to elementary number theory (E.2.a)."
     },
     {
       "articleTitle": "Carl Friedrich Gauss",
       "relevantPathsAI": [
+        "E.2.a",
+        "E.2.b",
         "C.2",
         "C.6",
-        "E.2",
-        "E.2.b"
+        "D.6"
       ],
-      "rationaleAI": "Gauss contributed foundational results in non-Euclidean geometry (C.2), differential geometry and Gaussian curvature (C.6), and number theory including quadratic reciprocity (E.2, E.2.b algebraic number theory)."
+      "rationaleAI": "Quadratic reciprocity and Disquisitiones Arithmeticae in elementary and algebraic number theory (E.2.a, E.2.b); non-Euclidean geometry and Gaussian curvature (C.2, C.6); Gaussian distribution in probability theory (D.6)."
     },
     {
       "articleTitle": "Limit (mathematics)",
       "relevantPathsAI": [
         "D.1",
         "D.1.a",
-        "D.1.c",
-        "D.5.a"
+        "D.1.c"
       ],
-      "rationaleAI": "Limits are the foundational concept of real analysis (D.1.a origins and concepts), define derivatives and continuity (D.1.c), and underlie the theory of series (D.5.a)."
+      "rationaleAI": "Limits define continuity, derivatives, and integrals, foundational to real analysis (D.1, D.1.a); central to functions and differential calculus (D.1.c)."
     },
     {
       "articleTitle": "Complex number",
       "relevantPathsAI": [
         "D.2",
         "D.2.a",
-        "C.3.c",
-        "B.4.c"
+        "C.3.c"
       ],
-      "rationaleAI": "Complex numbers are the domain of complex analysis (D.2), underlie complex projective geometry as homogeneous coordinates (C.3.c), and form an algebraically closed field in abstract algebra (B.4.c)."
+      "rationaleAI": "Complex analysis is the theory of analytic functions of complex variables (D.2, D.2.a); complex numbers as homogeneous coordinates in projective geometry (C.3.c)."
     },
     {
       "articleTitle": "Leonhard Euler",
       "relevantPathsAI": [
-        "D",
+        "D.1",
         "D.2",
         "E.2",
         "F.1"
       ],
-      "rationaleAI": "Euler founded or decisively advanced analysis (D), complex analysis (D.2), number theory (E.2), and topology (F.1 via the polyhedron formula); his breadth spans the major branches of section 10-22."
+      "rationaleAI": "Decisive contributions to analysis (D.1, D.2), number theory (E.2), and founding of graph theory and topology (F.1)."
     },
     {
       "articleTitle": "Emmy Noether",
       "relevantPathsAI": [
         "B.4",
-        "B.4.b",
         "B.4.c",
         "B.4.d"
       ],
-      "rationaleAI": "Noether's foundational work in abstract algebra — ideals, rings, modules, and chain conditions — directly maps to algebraic structures (B.4), particularly groups (B.4.b), fields (B.4.c), and rings (B.4.d)."
+      "rationaleAI": "Reshaped abstract algebra with the modern theory of rings (B.4.d), ideals, fields (B.4.c), and modules; Noetherian chain conditions apply to algebraic structures broadly (B.4)."
     },
     {
       "articleTitle": "Mathematical proof",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.a",
-        "A.3.b"
+        "C.1.a"
       ],
-      "rationaleAI": "Mathematical proof is the method underlying axiomatic set theory (A.3) and its postulates (A.3.a); Gödel's incompleteness, which limits proof, is addressed at A.3.b (limitations of axiomatic set theory)."
+      "rationaleAI": "Deductive argument establishing truth from axioms connects to the axiomatization of the foundations of geometry and results derived from axioms (C.1.a)."
     },
     {
       "articleTitle": "Series (mathematics)",
       "relevantPathsAI": [
         "D.5",
         "D.5.a",
-        "D.5.b",
-        "D.5.c",
-        "D.1"
+        "D.5.b"
       ],
-      "rationaleAI": "Mathematical series directly covers the theory of series (D.5.a), Fourier series (D.5.b), and harmonic analysis (D.5.c), as well as convergence concepts foundational to real analysis (D.1)."
+      "rationaleAI": "Infinite series, convergence theory, power series, Fourier series, and Dirichlet series directly correspond to the theory of series (D.5.a) and Fourier series (D.5.b)."
     },
     {
       "articleTitle": "Logarithm",
       "relevantPathsAI": [
         "B.1.e"
       ],
-      "rationaleAI": "Logarithms are explicitly listed at B.1.e as a sub-topic of arithmetic: their formal definition and use to reduce multiplication/division to addition/subtraction — a direct and precise match."
+      "rationaleAI": "Logarithm as inverse of exponentiation, reducing multiplication to addition, directly matches the formal definition and use of logarithms (B.1.e)."
     },
     {
       "articleTitle": "Angle",
       "relevantPathsAI": [
         "C.4.b",
-        "C.1",
-        "C.2.d"
+        "C.1"
       ],
-      "rationaleAI": "Angles are fundamental to trigonometry (C.4.b), Euclidean geometry (C.1), and hyperbolic trigonometry (C.2.d); the article covers degree/radian measurement, trigonometric connections, and spherical/hyperbolic geometry."
+      "rationaleAI": "Angles are central to trigonometry (C.4.b) and fundamental geometric figures in Euclidean geometry (C.1)."
     },
     {
       "articleTitle": "Trigonometry",
       "relevantPathsAI": [
-        "C.4.b",
-        "C.4.a",
-        "C.4.c",
-        "D.5"
+        "C.4.b"
       ],
-      "rationaleAI": "Trigonometry is explicitly listed at C.4.b; it connects to plane analytic geometry (C.4.a), coordinate transformations (C.4.c), and ultimately Fourier analysis (D.5) through the periodic character of trigonometric functions."
+      "rationaleAI": "Trigonometric functions, laws of sines and cosines, and Euler's formula directly correspond to trigonometry within analytic and trigonometric geometry (C.4.b)."
     },
     {
       "articleTitle": "Polygon",
       "relevantPathsAI": [
-        "C.1",
         "C.1.b",
         "E.1.c"
       ],
-      "rationaleAI": "Polygons are core objects of Euclidean plane geometry (C.1), central to the measure of polygons and equivalence theories (C.1.b), and connect to combinatorial geometry via triangulation and tiling (E.1.c)."
+      "rationaleAI": "Interior angle sums and area formulas relate to the measure of polygons and polyhedra (C.1.b); tilings and triangulation connect to combinatorial geometry (E.1.c)."
     },
     {
       "articleTitle": "Triangle",
       "relevantPathsAI": [
-        "C.1",
         "C.1.b",
-        "C.4.b",
-        "C.1.c"
+        "C.4.b"
       ],
-      "rationaleAI": "Triangles are foundational to Euclidean geometry (C.1), the measure of polygons (C.1.b), and the primary objects of trigonometry (C.4.b); transformation geometry (C.1.c congruence and similarity) also applies directly."
+      "rationaleAI": "Simplest polygon with congruence and similarity theorems in Euclidean geometry (C.1.b); fundamental to trigonometric functions and the Pythagorean theorem (C.4.b)."
     },
     {
       "articleTitle": "Infinity",
       "relevantPathsAI": [
         "A.2.b",
-        "A.3",
         "D.1"
       ],
-      "rationaleAI": "Infinity is central to Cantorian set theory and multiple infinite cardinalities (A.2.b), axiomatic set theory (A.3 axiom of infinity), and the limit and convergence concepts of real analysis (D.1)."
+      "rationaleAI": "Cantor's multiple infinite cardinalities relate to Cantorian set theory (A.2.b); limit concept and convergence in calculus and analysis (D.1)."
     },
     {
       "articleTitle": "Volume",
@@ -394,7 +354,7 @@
         "C.1.b",
         "D.1.d"
       ],
-      "rationaleAI": "Volume is part of the measure of polyhedra (C.1.b) and is computed via integral calculus including Lebesgue measure (D.1.d); a moderate but genuine overlap with these two paths."
+      "rationaleAI": "Volume of polyhedra relates to the measure of polygons and polyhedra (C.1.b); volume integrals connect to measure and integral calculus (D.1.d)."
     },
     {
       "articleTitle": "Mathematics",
@@ -406,7 +366,7 @@
         "E",
         "F"
       ],
-      "rationaleAI": "The overarching mathematics article covers all major branches of section 10-22 — set theory, algebra, geometry, analysis, combinatorics/number theory, and topology — at the parent-path level."
+      "rationaleAI": "Encompasses all branches: set theory (A), algebra (B), geometry (C), analysis (D), combinatorics and number theory (E), and topology (F)."
     },
     {
       "articleTitle": "Pi",
@@ -416,7 +376,7 @@
         "D.5",
         "E.2.c"
       ],
-      "rationaleAI": "Pi is defined geometrically (circle circumference, C.1), appears in trigonometry (C.4.b), Fourier analysis (D.5), and analytic number theory through the Riemann zeta function and prime counting (E.2.c)."
+      "rationaleAI": "Ratio of circumference to diameter in Euclidean geometry (C.1); appears in trigonometric identities (C.4.b); recurrence in Fourier analysis and Gaussian integrals (D.5); connection to Riemann zeta function in analytic number theory (E.2.c)."
     },
     {
       "articleTitle": "Probability",
@@ -426,26 +386,24 @@
         "D.6.b",
         "D.6.c"
       ],
-      "rationaleAI": "Probability theory is explicitly listed at D.6 as a branch of analysis; the article covers Kolmogorov's axiomatic approach and finite and infinite dimensional probability spaces, matching D.6.a, D.6.b, and D.6.c precisely."
+      "rationaleAI": "Kolmogorov's axioms, sample spaces, Bayes' theorem, and interpretations correspond to heuristic introduction to probability (D.6.a), finite dimensional (D.6.b), and infinite dimensional probability spaces (D.6.c)."
     },
     {
       "articleTitle": "Al-Khwarizmi",
       "relevantPathsAI": [
-        "B.2",
         "B.2.a",
-        "B.1.c"
+        "B.2.d"
       ],
-      "rationaleAI": "Al-Khwarizmi founded algebra as a systematic discipline (B.2, B.2.a algebra as extension of arithmetic) and introduced the decimal positional number system to Western mathematics (B.1.c number systems and notation)."
+      "rationaleAI": "First systematic treatise on algebra presenting solutions of linear and quadratic equations connects to algebra as extension of arithmetic (B.2.a) and solution of equations (B.2.d)."
     },
     {
       "articleTitle": "Circle",
       "relevantPathsAI": [
         "C.1",
         "C.4.a",
-        "C.4.e",
-        "F.3"
+        "C.4.e"
       ],
-      "rationaleAI": "The circle is a fundamental object of Euclidean geometry (C.1), plane analytic geometry (C.4.a), a named curve studied in mathematics (C.4.e), and the 1-sphere fundamental to algebraic topology (F.3)."
+      "rationaleAI": "Fundamental Euclidean geometric figure (C.1); analytic equation in plane analytic geometry (C.4.a); as a conic section and special curve (C.4.e)."
     },
     {
       "articleTitle": "René Descartes",
@@ -454,18 +412,17 @@
         "C.4.a",
         "C.4.c"
       ],
-      "rationaleAI": "Descartes founded analytic geometry and the Cartesian coordinate system, directly corresponding to plane analytic geometry (C.4.a) and coordinates and transformation of coordinates (C.4.c)."
+      "rationaleAI": "Inventor of the Cartesian coordinate system and analytic geometry connecting algebra to geometry (C.4, C.4.a); coordinates and transformation of coordinates (C.4.c)."
     },
     {
       "articleTitle": "Variable (mathematics)",
       "relevantPathsAI": [
-        "B.2",
         "B.2.a",
         "B.2.b"
       ],
-      "rationaleAI": "Variables are central to elementary and multivariate algebra (B.2), introduced as an extension and generalization of arithmetic (B.2.a) and underlying the basic algebraic properties covered at B.2.b."
+      "rationaleAI": "Variables as symbols representing unspecified mathematical objects are fundamental to algebra as an extension and generalization of arithmetic (B.2.a) and basic algebraic properties (B.2.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

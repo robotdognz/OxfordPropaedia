@@ -6,15 +6,9 @@
       "relevantPathsAI": [
         "A.1",
         "A.1.a",
-        "A.1.b",
-        "A.1.b.i",
-        "A.1.b.ii",
-        "A.1.b.iii",
-        "A.1.b.iv",
-        "A.1.b.v",
-        "A.1.c"
+        "A.1.b"
       ],
-      "rationaleAI": "Directly covers the institution of the museum in full: management and maintenance of collections (A.1.a), all named museum types including art, natural history, science, and history museums (A.1.b.i–v), and classification by geographic coverage, collection character, and provider (A.1.c)."
+      "rationaleAI": "Directly addresses museums and galleries (A.1), including the management and maintenance of institutional collections (A.1.a) and types of museum categorized by subject area including art, natural history, science, and history (A.1.b)."
     },
     {
       "articleTitle": "Library",
@@ -24,33 +18,29 @@
         "B.4.a",
         "B.4.b"
       ],
-      "rationaleAI": "Directly covers the library as an institution for protection and storage (A.2) and for information retrieval (B.4), including types of libraries (B.4.a) and library science (B.4.b), as well as the distinction from archives."
+      "rationaleAI": "Directly addresses libraries (A.2, B.4), including types of libraries — public, academic, national, research, special, digital (B.4.a) — and the science of library systems including acquisition, organization, and circulation services (B.4.b)."
     },
     {
       "articleTitle": "News",
       "relevantPathsAI": [
         "C.3.a.ii",
-        "C.4",
-        "C.3.b"
+        "C.4"
       ],
-      "rationaleAI": "News covers newspaper publishing (C.3.a.ii — newspapers as print publishing), broadcasting of news via radio and television (C.4.a, C.4.b), and electronic publishing and digital distribution (C.3.b), constituting a substantive fit with dissemination institutions."
+      "rationaleAI": "News dissemination through print, broadcasting, and digital media connects to newspapers (C.3.a.ii) and broadcasting through radio and television (C.4)."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
-        "B.6",
-        "C.3.b"
+        "B.6"
       ],
-      "rationaleAI": "AI connects to bibliographic and numeric databases (B.6) through machine learning applications in information retrieval, and to electronic publishing and digital dissemination (C.3.b) through recommendation systems and content generation; the fit is moderate but covers these priority areas of digital knowledge management."
+      "rationaleAI": "AI systems performing search, recommendation, and natural language processing connect to bibliographic and numeric databases (B.6) as computational tools for storage and retrieval of information."
     },
     {
       "articleTitle": "Johannes Gutenberg",
       "relevantPathsAI": [
-        "C.3",
-        "C.3.a",
         "C.3.a.i"
       ],
-      "rationaleAI": "Gutenberg's invention of the European movable-type printing press is the foundational event in the history of print publishing (C.3.a — print publishing; C.3.a.i — books), enabling mass production of texts and catalyzing the transformation of knowledge dissemination."
+      "rationaleAI": "Gutenberg's invention of the European movable-type printing press and the Gutenberg Bible as the first mechanically printed book directly connect to print publishing of books (C.3.a.i), catalyzing mass-production of texts."
     },
     {
       "articleTitle": "Broadcasting",
@@ -59,135 +49,121 @@
         "C.4.a",
         "C.4.b"
       ],
-      "rationaleAI": "Directly covers broadcasting as a dissemination institution including radio (C.4.a), television (C.4.b), and digital streaming, with analysis of regulatory models, public versus commercial structures, and the historical development of broadcast media."
+      "rationaleAI": "Broadcasting as one-to-many distribution of audio or audiovisual content directly maps to broadcasting (C.4), including radio (C.4.a) and television (C.4.b), with coverage of commercial, public, and community models."
     },
     {
       "articleTitle": "Publishing",
       "relevantPathsAI": [
         "C.3",
         "C.3.a",
-        "C.3.a.i",
-        "C.3.a.ii",
-        "C.3.a.iii",
         "C.3.b"
       ],
-      "rationaleAI": "Directly covers publishing as a knowledge dissemination institution including books (C.3.a.i), newspapers (C.3.a.ii), periodicals (C.3.a.iii), and electronic/digital publishing (C.3.b), as well as the commercial and governmental contexts of publishing."
+      "rationaleAI": "Publishing as the process of making content publicly available directly maps to selection, preparation, and marketing of printed material (C.3), including print publishing of books, newspapers, and periodicals (C.3.a) and electronic publishing (C.3.b)."
     },
     {
       "articleTitle": "Book",
       "relevantPathsAI": [
-        "B.4",
-        "C.3.a.i",
-        "A.2"
+        "C.3.a.i"
       ],
-      "rationaleAI": "Books are the primary unit of print publishing (C.3.a.i) and the codex is a foundational physical format for knowledge storage (A.2); the article also covers libraries as distribution networks (B.4) and intellectual property in knowledge preservation."
+      "rationaleAI": "Books as written works distributed in printed, audio, or electronic form, with their evolution from clay tablets to codex manuscripts and machine-printed volumes, directly connect to print publishing of books (C.3.a.i)."
     },
     {
       "articleTitle": "Paper",
       "relevantPathsAI": [
         "C.3.a"
       ],
-      "rationaleAI": "Paper is the material substrate of print publishing (C.3.a), and its invention and spread from China to Europe is directly tied to the history of the book and the printing press; without paper there is no print publishing industry."
+      "rationaleAI": "Paper as the medium for printed material, invented in Han dynasty China and refined through chemical and mechanical pulping, connects to print publishing (C.3.a) as the foundational substrate."
     },
     {
       "articleTitle": "Education",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Education relates to C.1 (educational institutions as institutions for the advancement and dissemination of knowledge), which cross-references Part Five, Division VI; the article provides context for understanding the role of schools and universities in this outline."
+      "rationaleAI": "Education as the transmission of knowledge through formal and informal institutions directly connects to educational institutions (C.1) as institutions for the advancement and dissemination of knowledge."
     },
     {
       "articleTitle": "History of science",
       "relevantPathsAI": [
-        "C.2",
-        "C.5"
+        "C.2"
       ],
-      "rationaleAI": "The history of science covers the development of scientific academies, learned societies, journals, and universities (C.2 — academies for the advancement of knowledge; C.5 — observatories) as the institutional infrastructure for knowledge production and dissemination."
+      "rationaleAI": "The history of science encompassing institutional history (universities, journals, societies) connects to academies of learning or societies established for the advancement of knowledge (C.2)."
     },
     {
       "articleTitle": "Mass media",
       "relevantPathsAI": [
         "C.3",
-        "C.3.a.ii",
-        "C.3.b",
         "C.4"
       ],
-      "rationaleAI": "Mass media encompasses all the major dissemination channels in section C: newspaper and print publishing (C.3.a.ii), electronic publishing (C.3.b), and broadcasting including radio and television (C.4), making it a near-comprehensive coverage item for the dissemination sub-section."
+      "rationaleAI": "Mass media comprising broadcast, print, digital, and streaming channels connects to publishing (C.3) and broadcasting (C.4) as institutions for disseminating knowledge and information to large audiences."
     },
     {
       "articleTitle": "Science",
       "relevantPathsAI": [
-        "C.2",
-        "C.5"
+        "C.2"
       ],
-      "rationaleAI": "Science covers the institutional framework of academies, scientific societies, peer review journals, and observatories (C.2, C.5), providing essential context for how knowledge is advanced and disseminated through these institutions."
+      "rationaleAI": "Science as systematic knowledge-building through institutional collaborative research connects to academies of learning and societies established for the advancement of knowledge (C.2)."
     },
     {
       "articleTitle": "Literature",
       "relevantPathsAI": [
-        "C.3.a.i",
-        "B.4",
-        "A.2"
+        "C.3.a.i"
       ],
-      "rationaleAI": "Literature covers book history and print culture from oral tradition through the printing press and digital era (C.3.a.i), with discussion of textual criticism and book history as scholarly fields; it also connects to libraries (B.4) and encyclopaedias (A.2) as vehicles for literary preservation."
+      "rationaleAI": "Literature as written and oral works distributed through printing and digital publication connects to print publishing of books (C.3.a.i)."
     },
     {
       "articleTitle": "Research",
       "relevantPathsAI": [
-        "C.2",
-        "B.6"
+        "C.2"
       ],
-      "rationaleAI": "Research is the core activity of the academies and learned societies (C.2) and generates the data stored in bibliographic and numeric databases (B.6); the article addresses peer review, publication bias, and the institutional infrastructure of knowledge advancement."
+      "rationaleAI": "Research as the systematic process of increasing knowledge through evidence collection, peer review, and publication connects to academies of learning and societies for the advancement of knowledge (C.2)."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "The Islamic Golden Age created major institutions for the advancement of knowledge — the House of Wisdom in Baghdad, hospitals as teaching institutions, observatories — that directly correspond to C.2 (academies of learning), providing a non-Western historical example of knowledge institutions."
+      "rationaleAI": "The Islamic Golden Age's intellectual production through Abbasid caliphate patronage and urban centers of learning (Baghdad, Cordoba, Cairo) represents historical academies and societies for the advancement of knowledge (C.2)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
+        "B.2",
         "C.2",
-        "C.3.a.ii",
-        "A.1"
+        "C.3.a"
       ],
-      "rationaleAI": "The Enlightenment's encyclopaedia projects (Diderot's Encyclopédie) relate to A.1 museums and the nascent public institution; its salons, coffeehouses, and print trade represent C.2 and C.3.a.ii dissemination; encyclopaedias as a covered priority path (B.2) are directly referenced."
+      "rationaleAI": "The Enlightenment's dissemination through encyclopedias (B.2) and the print trade (C.3.a), and its institutional basis in salons, coffeehouses, and learned societies (C.2), directly connect to knowledge preservation and dissemination."
     },
     {
       "articleTitle": "Oral tradition",
       "relevantPathsAI": [
-        "A.3",
         "B"
       ],
-      "rationaleAI": "Oral tradition is a pre-literate and parallel system of knowledge storage and transmission distinct from written records, mapping to A.3 (historic places and landmarks as memory sites) only tangentially but more substantively as a baseline against which libraries, archives, and publishing are distinguished; it covers the earliest form of knowledge preservation addressed by section 10-61."
+      "rationaleAI": "Oral tradition as the transmission of knowledge through speech across generations represents a foundational mode of storage and retrieval of information (B), predating written records and continuing alongside them."
     },
     {
       "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Shen Kuo's Dream Pool Essays represents a key example of a learned polymath working within state scientific institutions (astronomy bureau, diplomatic corps) that parallel the academies of learning (C.2) in Song dynasty China, providing cross-cultural evidence for institutional knowledge advancement."
+      "rationaleAI": "Shen Kuo's Dream Pool Essays recording scientific observations across mathematics, optics, and cartography exemplifies historical knowledge preservation through learned societies and imperial patronage (C.2)."
     },
     {
       "articleTitle": "History of technology",
       "relevantPathsAI": [
         "A.1.b.iii",
-        "C.5"
+        "C.3.a"
       ],
-      "rationaleAI": "History of technology relates to science and technology museums (A.1.b.iii) as one of the most important categories of museum type, and its coverage of computing and communication technology connects to observatories and instruments for knowledge (C.5)."
+      "rationaleAI": "The history of technology tracing computing and communication technologies connects to museums of science and technology (A.1.b.iii), and the history of printing technology connects to print publishing (C.3.a)."
     },
     {
       "articleTitle": "Computer",
       "relevantPathsAI": [
         "B.6",
-        "B.7",
         "C.3.b"
       ],
-      "rationaleAI": "Computers are the technological substrate for bibliographic and numeric databases (B.6), magnetic and optical recordings (B.7), and electronic publishing (C.3.b), enabling all modern digital forms of knowledge storage and dissemination enumerated in section B and C.3.b."
+      "rationaleAI": "Computers as programmable machines foundational to the Digital Revolution connect to bibliographic and numeric databases (B.6) and electronic publishing (C.3.b) as tools for information storage, retrieval, and dissemination."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

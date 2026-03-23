@@ -4,30 +4,29 @@
     {
       "articleTitle": "Computer",
       "relevantPathsAI": [
+        "B",
         "D",
         "D.1",
-        "D.2",
-        "D.3",
-        "D.4"
+        "D.4",
+        "A"
       ],
-      "rationaleAI": "Programmable machines executing operations via stored programs correspond to computers (D), types including digital and analog (D.1), programming systems (D.2), computer languages (D.3), and applications (D.4)."
+      "rationaleAI": "History from manual abacus and mechanical calculators through vacuum-tube, transistor, and integrated-circuit machines directly covers calculating devices including the abacus and mechanical calculators (B). Digital and analog architectures correspond to types of computers (D.1). Coverage of microprocessors and mobile devices addresses applications of microcomputers, minicomputers, and supercomputers (D.4). Information theory connections address communication and information theory (A)."
     },
     {
       "articleTitle": "Telephone",
       "relevantPathsAI": [
         "I.4"
       ],
-      "rationaleAI": "Devices converting sound into electronic signals for transmission correspond to telephone and telecommunications systems and equipment (I.4)."
+      "rationaleAI": "Bell's 1876 patent, evolution from point-to-point to public switched telephone networks, cellular and VoIP variants directly correspond to telephone and telecommunications systems and equipment (I.4)."
     },
     {
       "articleTitle": "Telecommunications",
       "relevantPathsAI": [
-        "I",
-        "I.3",
         "I.4",
-        "I.5"
+        "I.3",
+        "I.7"
       ],
-      "rationaleAI": "Transmission of information over distance via electrical or electronic means corresponds to major systems of communication (I), including telegraph (I.3), telephone (I.4), and radio (I.5)."
+      "rationaleAI": "Historical progression from optical and electric telegraphs through telephone, radio, television, and internet covers telephone and telecommunications systems (I.4) and telegraph systems (I.3). Mention of transition from voice to data and network architecture connects to communications satellite systems (I.7)."
     },
     {
       "articleTitle": "Broadcasting",
@@ -35,55 +34,54 @@
         "I.5",
         "I.6"
       ],
-      "rationaleAI": "One-to-many distribution of audio/audiovisual content via radio waves corresponds to radio communications (I.5) and television communications (I.6)."
+      "rationaleAI": "Commercial AM/FM radio broadcasting from the 1920s directly matches radio communications systems (I.5). Terrestrial television and cable television broadcasting correspond to television communications systems (I.6)."
     },
     {
       "articleTitle": "Electronics",
       "relevantPathsAI": [
         "K",
         "K.1",
-        "K.1.a",
-        "K.1.c"
+        "K.1.a"
       ],
-      "rationaleAI": "Design and operation of devices using transistors, diodes, and integrated circuits corresponds to electronic components (K), active components (K.1.a), and integrated circuits (K.1.c)."
+      "rationaleAI": "Design and operation of devices using transistors, diodes, and integrated circuits directly addresses electronic components and techniques (K). Active components including transistors, semiconductor devices correspond to K.1.a. Coverage spans analog and digital circuits and PCB fabrication (K.1)."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
-        "G.1"
+        "G.1",
+        "G.2"
       ],
-      "rationaleAI": "Instrument capturing images by focusing light corresponds to still photography technology (G.1)."
+      "rationaleAI": "Development from daguerreotype through SLR and digital sensors directly addresses still photography (G.1). Motion picture camera types correspond to motion-picture and television photography (G.2)."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Systems performing tasks associated with human intelligence — learning, reasoning, perception, and natural language processing — correspond to developments in artificial intelligence (D.5)."
+      "rationaleAI": "Neural networks, deep learning, natural language processing, perception, and decision-making directly cover developments in artificial intelligence including expert systems, natural-language processing, computer vision, and robotics (D.5)."
     },
     {
       "articleTitle": "Mobile phone",
       "relevantPathsAI": [
         "I.4"
       ],
-      "rationaleAI": "Portable wireless telephones operating over cellular networks correspond to telephone and telecommunications systems (I.4)."
+      "rationaleAI": "Portable wireless telephone operating over cellular radio-frequency networks, with evolution from Motorola's 1973 demonstration through 5G, directly addresses telephone and telecommunications systems and equipment (I.4)."
     },
     {
       "articleTitle": "Alan Turing",
       "relevantPathsAI": [
-        "D",
-        "D.5",
+        "D.2",
         "I.9"
       ],
-      "rationaleAI": "Founded theoretical computer science via the Turing machine (D), proposed the Turing test for AI (D.5), and led cryptanalysis of the Enigma cipher relevant to encryption and decryption (I.9)."
+      "rationaleAI": "Formalization of algorithm and computation via the Turing machine and contributions to stored-program computer design relate to programming systems and the concept of software (D.2). Cryptanalysis of the Enigma cipher at Bletchley Park directly addresses encryption and decryption techniques and history of cryptology (I.9)."
     },
     {
       "articleTitle": "Information",
       "relevantPathsAI": [
         "A",
-        "H"
+        "H.1.a"
       ],
-      "rationaleAI": "Abstract concept of meaning transmission quantified in bits corresponds to communication and information theory (A) and information processing and systems (H)."
+      "rationaleAI": "Shannon's information theory quantifying information in bits and covering encoding, transmission, storage, and compression directly addresses communication and information theory (A). Discussion of discrete digital signals and continuous analogue forms aligns with analog and digital forms of information (H.1.a)."
     },
     {
       "articleTitle": "Library",
@@ -91,38 +89,39 @@
         "H.1.c",
         "H.2.c"
       ],
-      "rationaleAI": "Organized collections of physical and digital materials with catalogs correspond to organization and retrieval including computerized catalogs in libraries (H.1.c) and educational and reference systems (H.2.c)."
+      "rationaleAI": "Organization, circulation, reference services, and computerized catalogs in library networks directly address organization and retrieval including bibliographic databases and computerized catalogs (H.1.c). Libraries as educational and reference systems correspond to H.2.c."
     },
     {
       "articleTitle": "Printing",
       "relevantPathsAI": [
         "E.3",
-        "E.4"
+        "E.4",
+        "E.4.a"
       ],
-      "rationaleAI": "Mass reproduction of text and images from woodblock printing through digital printing corresponds to printing machines and processes (E.3) and production of printing plates (E.4)."
+      "rationaleAI": "Mass reproduction of text from woodblock printing through Gutenberg's press to digital printing directly addresses printing machines and processes (E.3). Letterpress, offset lithography, and gravure correspond to production of printing plates (E.4). Woodblock printing and lithography specifically match mechanical techniques (E.4.a)."
     },
     {
       "articleTitle": "Television",
       "relevantPathsAI": [
         "I.6",
-        "F.2",
-        "F.3"
+        "F.3",
+        "H.1.d"
       ],
-      "rationaleAI": "Telecommunication medium transmitting moving images corresponds to television communications (I.6), magnetic video recording (F.2), and optical video systems (F.3)."
+      "rationaleAI": "Television as a telecommunication medium for mass broadcast directly covers television communications systems and equipment (I.6). Digital transmission and display technologies (CRT, plasma, LCD, OLED) relate to optical systems for audio and video (F.3). Smart TVs integrating internet functions connect to display and dissemination via television monitors and interactive terminals (H.1.d)."
     },
     {
       "articleTitle": "Cryptography",
       "relevantPathsAI": [
         "I.9"
       ],
-      "rationaleAI": "Mathematical practice of securing communications via encryption and authentication corresponds to encryption and decryption techniques and history of cryptology (I.9)."
+      "rationaleAI": "Encryption, authentication, classical ciphers through modern symmetric-key and public-key systems, and history of cryptology directly match encryption and decryption techniques and devices including signal security, message authentication, and history of cryptology (I.9)."
     },
     {
       "articleTitle": "Radar",
       "relevantPathsAI": [
         "J.1"
       ],
-      "rationaleAI": "Radio wave detection for ranging and tracking corresponds to radar systems and equipment (J.1)."
+      "rationaleAI": "Radar using pulsed or continuous radio waves for detection of distance, direction, and velocity, including air traffic control and military applications, directly addresses radar systems and equipment (J.1)."
     },
     {
       "articleTitle": "Photography",
@@ -130,78 +129,80 @@
         "G",
         "G.1"
       ],
-      "rationaleAI": "Capture of images by recording light corresponds to the technology of photography (G) and still photography (G.1)."
+      "rationaleAI": "Capture of images via chemical film and electronic sensors, covering amateur, commercial, art, and scientific applications, directly addresses the technology of photography (G) and still photography (G.1)."
     },
     {
       "articleTitle": "News",
       "relevantPathsAI": [
-        "I.1"
+        "I.1",
+        "I.2"
       ],
-      "rationaleAI": "Information about current events disseminated through print, broadcasting, and digital media corresponds to book, newspaper, and magazine publishing (I.1)."
+      "rationaleAI": "Information disseminated through print, postal systems, broadcasting, and digital media, including newspapers, directly addresses book, newspaper, and magazine publishing (I.1). Historical mention of postal systems as a distribution channel connects to postal systems and equipment (I.2)."
     },
     {
       "articleTitle": "Publishing",
       "relevantPathsAI": [
         "I.1"
       ],
-      "rationaleAI": "Making content publicly available in print or digital form corresponds to book, newspaper, and magazine publishing (I.1)."
+      "rationaleAI": "Making content publicly available in print or digital form, centered on books, newspapers, and magazines, directly addresses book, newspaper, and magazine publishing (I.1)."
     },
     {
       "articleTitle": "Book",
       "relevantPathsAI": [
-        "I.1"
+        "I.1",
+        "E.1"
       ],
-      "rationaleAI": "Written works distributed in printed, audio, or electronic form correspond to book publishing (I.1)."
+      "rationaleAI": "Books as written works distributed in printed, audio, or electronic form, with formats evolving from clay tablets and scrolls to codex manuscripts, directly address book, newspaper, and magazine publishing (I.1). Historical progression from clay tablets connects to simple recording implements and devices (E.1)."
     },
     {
       "articleTitle": "Internet",
       "relevantPathsAI": [
-        "I.8"
+        "I.8",
+        "H.2.b"
       ],
-      "rationaleAI": "Global network-of-networks using TCP/IP corresponds to electronic networks (I.8)."
+      "rationaleAI": "The global TCP/IP network interconnecting systems and hosting the World Wide Web, email, and streaming directly addresses electronic networks (I.8). Online database access and web-based information services connect to public information utilities and on-line database search systems (H.2.b)."
     },
     {
       "articleTitle": "Integrated circuit",
       "relevantPathsAI": [
         "K.1.c"
       ],
-      "rationaleAI": "Miniaturized assemblies of transistors and other components fabricated on semiconductor substrates correspond to integrated circuits (K.1.c)."
+      "rationaleAI": "Miniaturized assembly of transistors, resistors, and capacitors on semiconductor substrate, from SSI through VLSI and SoC, directly matches integrated circuits as miniature arrays of interconnected active or passive circuit elements including microprocessors (K.1.c)."
     },
     {
       "articleTitle": "Laser",
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Laser applications in optical disc storage and fiber-optic communications connect to holography and laser photography (G.3)."
+      "rationaleAI": "Coherent monochromatic light through stimulated emission, with applications in optical disc storage and fiber-optic communications, directly addresses holography and laser photography (G.3)."
     },
     {
       "articleTitle": "Thomas Edison",
       "relevantPathsAI": [
         "F.1"
       ],
-      "rationaleAI": "Invented the phonograph for sound recording, corresponding to mechanical systems for sound recording (F.1)."
+      "rationaleAI": "Edison's invention of the phonograph directly addresses mechanical systems for sound recording and reproducing — phonographs (F.1)."
     },
     {
       "articleTitle": "Johannes Gutenberg",
       "relevantPathsAI": [
-        "E.3",
-        "E.4"
+        "E.3"
       ],
-      "rationaleAI": "Invented the European movable-type printing press, corresponding to printing machines and processes (E.3) and production of printing plates (E.4)."
+      "rationaleAI": "Inventor of the European movable-type printing press using oil-based ink and durable alloy, producing the Gutenberg Bible as the first mechanically printed book in Europe, directly addresses printing machines and processes (E.3)."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Design and operation of robots integrating AI corresponds to developments in artificial intelligence including robotics (D.5)."
+      "rationaleAI": "Design, construction, and operation of robots integrating AI, sensing, and manipulation directly relates to developments in artificial intelligence including robotics (D.5)."
     },
     {
       "articleTitle": "Radio",
       "relevantPathsAI": [
         "I.5"
       ],
-      "rationaleAI": "Use of electromagnetic waves to transmit information wirelessly corresponds to radio communications systems and equipment (I.5)."
+      "rationaleAI": "Use of electromagnetic waves for wireless transmission including broadcasting, two-way communication, and international frequency allocation directly addresses radio communications systems and equipment (I.5)."
     },
     {
       "articleTitle": "Communication",
@@ -209,22 +210,22 @@
         "A",
         "I"
       ],
-      "rationaleAI": "Transmission and creation of meaning between senders and receivers corresponds to communication and information theory (A) and major systems of communication (I)."
+      "rationaleAI": "Transmission and creation of meaning via coded messages through channels, covering historical evolution driven by writing, print, broadcast, and digital technologies, broadly addresses communication and information theory (A) and major systems of communication (I)."
     },
     {
       "articleTitle": "Information Age",
       "relevantPathsAI": [
         "D.4",
-        "I.8"
+        "H"
       ],
-      "rationaleAI": "The shift to information-technology-centered economies via transistors and the internet corresponds to applications of computers (D.4) and electronic networks (I.8)."
+      "rationaleAI": "The shift to information-technology-centred economies initiated by the transistor, internet, and World Wide Web relates to applications of computers (D.4). Moore's Law, data storage, and computing economics connect to information processing and systems (H)."
     },
     {
       "articleTitle": "Video game",
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Electronic interactive systems played on console, computer, and mobile platforms correspond to applications of computers (D.4)."
+      "rationaleAI": "Electronic interactive systems played on arcade, console, computer, mobile, and cloud platforms represent a major application domain for microcomputers and personal computing, connecting to applications of microcomputers, minicomputers, and supercomputers (D.4)."
     }
   ],
   "_curatedBy": "ai",

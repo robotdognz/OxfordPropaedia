@@ -4,108 +4,112 @@
     {
       "articleTitle": "Engineering",
       "relevantPathsAI": [
+        "A",
         "B",
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Engineering directly addresses the nature and scope of engineering as a discipline (B), including its professional education and functions (B.1) and all branches named in the outline — civil, mechanical, electrical, chemical, aerospace, and nuclear engineering (B.2)."
+      "rationaleAI": "Directly addresses the nature and scope of engineering (B), including engineering as a profession with education, training, and professional associations (B.1), and branches spanning civil, mechanical, electrical, chemical, and aerospace engineering (B.2). The historical trace from ancient machines through the Industrial Revolution connects to the history of the technological sciences (A)."
     },
     {
       "articleTitle": "Agriculture",
       "relevantPathsAI": [
         "C",
+        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Agriculture covers the nature and scope of agricultural practice including crop production, livestock, genetic engineering, and agricultural economics (C), and its subsystems map directly to the subdivisions of agricultural sciences — soil science, plant production, and animal production — named in C.2."
+      "rationaleAI": "Directly covers the nature and scope of agricultural sciences (C), including the history from Neolithic domestication through industrial agriculture (C.1), and subdivisions encompassing crop and livestock production, agricultural automation, and farm economics (C.2)."
     },
     {
       "articleTitle": "Mechanical engineering",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Mechanical engineering is explicitly named as one of the branches of engineering in B.2, and the article covers core competencies in mechanics, thermodynamics, materials science, CAD/CAM, and emerging fields including mechatronics and biomechanics."
+      "rationaleAI": "Mechanical engineering as a branch applying physics and materials science to the design and manufacture of mechanical systems, spanning thermodynamics, dynamics, and mechatronics, is explicitly listed under branches of engineering (B.2)."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
-        "B.2",
+        "D",
         "D.1",
-        "D.1.a"
+        "D.2"
       ],
-      "rationaleAI": "Robotics is an interdisciplinary field spanning mechanical and electrical engineering (B.2) that also exemplifies bionics (D.1, D.1.a) through the mimicry of biological locomotion, neural control systems, and manipulation in robotic design."
+      "rationaleAI": "Robotics as an interdisciplinary field integrating AI, mechanical structures, and control systems exemplifies recently developed interscience disciplines (D). Biomimicry of natural models for engineering problems (D.1) and systems integration with operations research (D.2) are directly relevant."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
+        "D",
         "D.1.b",
         "D.2"
       ],
-      "rationaleAI": "AI exemplifies D.1.b (use of the human brain as a model for computers and information-processing devices) through neural networks and deep learning, and its system-level optimization and decision theory dimensions connect to systems engineering and operations research (D.2)."
+      "rationaleAI": "AI systems performing learning, reasoning, and perception connect to bionics as the use of the human brain as a model for computers and information-processing devices (D.1.b), and to systems engineering and operations research through optimization and planning (D.2)."
     },
     {
       "articleTitle": "Computer",
       "relevantPathsAI": [
-        "B.2",
+        "A",
         "D.1.b"
       ],
-      "rationaleAI": "The computer article covers electrical/electronics engineering as a branch (B.2) and directly exemplifies D.1.b — the human brain as a paradigm for computer memory and information-processing devices, from early mechanical calculators to modern AI-enabled systems."
+      "rationaleAI": "The history of computing from mechanical calculators to microprocessors connects to the history of the technological sciences (A), and the computer as a programmable machine modeled partly on information-processing concepts connects to the human brain as a model for computers (D.1.b)."
     },
     {
       "articleTitle": "Computer science",
       "relevantPathsAI": [
-        "B.2",
-        "D.1.b"
+        "D",
+        "D.1.b",
+        "D.2"
       ],
-      "rationaleAI": "Computer science is the theoretical and applied discipline underlying electrical/electronics engineering (B.2) and its algorithms, computability theory, and AI subfields bear directly on computation as a model of information processing per D.1.b."
+      "rationaleAI": "Computer science as the study of computation and automation, spanning algorithms, AI, and networks, constitutes a recently developed interscience discipline (D). Neural network and machine learning research connects to natural neural networks as models for electronic circuits (D.1.b), and algorithmic optimization connects to systems engineering and operations research (D.2)."
     },
     {
       "articleTitle": "Electronics",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Electronics is explicitly named as a branch of engineering in B.2 (electrical and electronics engineering), and the article covers transistors, integrated circuits, semiconductor devices, and signal processing that underpin all modern electronics engineering."
+      "rationaleAI": "Electronics as a discipline governing transistors, diodes, and integrated circuits directly falls under electrical and electronics engineering as a branch of engineering (B.2)."
     },
     {
       "articleTitle": "Soil",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Soil science is the first subdivision of agricultural sciences explicitly listed in C.2; this article covers edaphology (soil-organism relations), pedology (formation and morphology), soil classification, and soil threats such as acidification and desertification."
+      "rationaleAI": "Soil science as the study of soil formation, classification, and function as a plant-growth medium is explicitly listed as a subdivision of the agricultural sciences (C.2)."
     },
     {
       "articleTitle": "Animal husbandry",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Animal production is explicitly listed as a subdivision of agricultural sciences in C.2; animal husbandry covers livestock management including feeding, breeding, health management, and production systems for cattle, sheep, pigs, poultry, and aquaculture species."
+      "rationaleAI": "Animal husbandry as the agricultural management of livestock for meat, milk, fibre, and labour, encompassing feeding, breeding, and health management, falls under animal production as a subdivision of the agricultural sciences (C.2)."
     },
     {
       "articleTitle": "History of agriculture",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "History of agriculture is the direct content of C.1 (history of the agricultural sciences), a coverage-priority path; the article spans Neolithic origins through the Green Revolution, covering all major agricultural transitions from multiple independent domestication centers globally."
+      "rationaleAI": "Directly covers the history of the agricultural sciences (C.1), tracing from Neolithic origins through the British Agricultural Revolution, mechanization, and the Green Revolution."
     },
     {
       "articleTitle": "Maize",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Maize is the world's highest-volume grain crop and a foundational subject of plant production science within the agricultural sciences (C.2), covering its domestication, genetics, breeding, pest management, and industrial uses including ethanol production."
+      "rationaleAI": "Maize as the world's highest-volume grain crop, with coverage of domestication, genetic modification, and production practices, falls under plant production as a subdivision of the agricultural sciences (C.2)."
     },
     {
       "articleTitle": "History of technology",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "History of technology directly addresses A (history of the technological sciences), tracing tool-making and engineering from the Stone Age through the Industrial Revolutions to 20th-century computing and biotechnology, providing the historical foundation for the entire section."
+      "rationaleAI": "Directly addresses the history of the technological sciences (A), tracing from Stone Age tool-making through metallurgy, the Industrial Revolutions, and 20th-21st-century computing and communication technologies."
     },
     {
       "articleTitle": "Telecommunications",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Telecommunications falls within electrical and electronics engineering (B.2), covering signal transmission, modulation, network architecture, and the progression from telegraph through telephone, radio, and internet that defines the communications engineering branch."
+      "rationaleAI": "Telecommunications as the transmission of information via electrical or electronic means, spanning telegraph, telephone, radio, and internet, connects to electrical and electronics engineering as a branch of engineering (B.2)."
     },
     {
       "articleTitle": "Thomas Edison",
@@ -113,7 +117,7 @@
         "A",
         "B.2"
       ],
-      "rationaleAI": "Edison exemplifies the history of the technological sciences (A) through his industrial research paradigm and inventions in electrical power distribution, light, and communications; his work spans what is now electrical engineering (B.2)."
+      "rationaleAI": "Edison's paradigm of industrial research laboratories and inventions spanning electric power, the phonograph, and motion pictures connect to the history of the technological sciences (A) and electrical engineering (B.2)."
     },
     {
       "articleTitle": "Nikola Tesla",
@@ -121,15 +125,14 @@
         "A",
         "B.2"
       ],
-      "rationaleAI": "Tesla's development of AC power systems places him in the history of the technological sciences (A), and his polyphase AC motor and induction motor designs are foundational contributions to electrical engineering (B.2)."
+      "rationaleAI": "Tesla's design of the AC induction motor and polyphase power system, foundational to modern electrical distribution, connects to the history of the technological sciences (A) and electrical engineering (B.2)."
     },
     {
       "articleTitle": "Henry Ford",
       "relevantPathsAI": [
-        "A",
-        "B.2"
+        "A"
       ],
-      "rationaleAI": "Ford's moving assembly line and Fordist mass production system are landmarks in the history of technological sciences and industrial engineering (A), and his automotive manufacturing work connects to mechanical engineering as a branch (B.2)."
+      "rationaleAI": "Ford's pioneering of mass automobile production through the moving assembly line and Fordism represents a landmark in the history of the technological sciences (A), linking manufacturing innovation to economic and social change."
     },
     {
       "articleTitle": "Machine",
@@ -137,22 +140,22 @@
         "A",
         "B.2"
       ],
-      "rationaleAI": "The machine article covers the history of technological devices from simple machines through industrial machinery (A), and its treatment of mechanical advantage, thermodynamic systems, and power transmission is foundational to mechanical engineering (B.2)."
+      "rationaleAI": "The concept of machines from simple mechanisms through complex mechanical systems connects to the history of the technological sciences (A) and to mechanical engineering as a branch of engineering (B.2)."
     },
     {
       "articleTitle": "Manufacturing",
       "relevantPathsAI": [
         "A",
-        "B"
+        "B.2"
       ],
-      "rationaleAI": "Manufacturing covers the transformation of raw materials through engineering processes, tracing the history of the technological sciences from prehistoric handicraft through the Industrial Revolutions (A) and spanning multiple engineering branches (B)."
+      "rationaleAI": "Manufacturing as the transformation of raw materials into finished goods, spanning from prehistoric handicraft through the Industrial Revolutions to modern high-tech production, connects to the history of the technological sciences (A) and to engineering branches including mechanical and chemical engineering (B.2)."
     },
     {
       "articleTitle": "Semiconductor",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Semiconductors are the material foundation of all modern electrical and electronics engineering (B.2); the article covers p-n junctions, transistors, integrated circuits, and the quantum physics underlying semiconductor device operation."
+      "rationaleAI": "Semiconductors as the basis of diodes, transistors, and integrated circuits are foundational to electrical and electronics engineering (B.2)."
     },
     {
       "articleTitle": "Michael Faraday",
@@ -160,80 +163,79 @@
         "A",
         "B.2"
       ],
-      "rationaleAI": "Faraday's discovery of electromagnetic induction laid the historical foundation for electrical engineering (B.2) and is a landmark in the history of the technological sciences (A), leading directly to the electric motor and practical electrical power generation."
+      "rationaleAI": "Faraday's discovery of electromagnetic induction, electrolysis, and the foundation for electric motor technology connect to the history of the technological sciences (A) and electrical engineering (B.2)."
     },
     {
       "articleTitle": "Food",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Food production and processing is the ultimate output of agricultural sciences (C.2), and the article covers industrial agriculture, food systems, and food security topics within the scope of plant and animal production subdivisions named in C.2."
+      "rationaleAI": "Food production systems including industrial agriculture, processing, and food security connect to plant and animal production and agricultural economics and management as subdivisions of the agricultural sciences (C.2)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
-        "C.2",
-        "D"
+        "C.2"
       ],
-      "rationaleAI": "Biochemistry is explicitly noted in its summary as applying to agriculture through soil chemistry and pest control (C.2); its bridging of biological and chemical engineering through biotechnology also exemplifies the interscience disciplines in D."
+      "rationaleAI": "Biochemistry's applications in agriculture including soil chemistry, pest control, and nutrition connect to soil science and plant production as subdivisions of the agricultural sciences (C.2)."
     },
     {
       "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Shen Kuo's Dream Pool Essays documented foundational technological innovations — compass, movable-type printing, drydock engineering, and canal locks — making him a significant figure in the history of the technological sciences (A) from a non-Western perspective."
+      "rationaleAI": "Shen Kuo's Dream Pool Essays recorded innovations including the magnetic compass, movable-type printing, and canal pound locks, representing contributions to the history of the technological sciences (A) from medieval China."
     },
     {
       "articleTitle": "Tool",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "The tool article traces human technological development from prehistoric stone tools through metalworking and mechanization (A), providing the earliest layer of the history of technological sciences and its connection to human evolution and manufacturing."
+      "rationaleAI": "The prehistoric development of tools from stone and bone through metalworking and mechanization traces the earliest history of the technological sciences (A), foundational to all subsequent engineering."
     },
     {
       "articleTitle": "Paper",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Paper's invention in Han dynasty China and its subsequent global spread represent a significant episode in the history of technological sciences (A), connecting cellulose chemistry, printing technology, and information dissemination in the history of applied material processes."
+      "rationaleAI": "Paper's invention in Han dynasty China and its subsequent chemical and mechanical pulping processes represent a significant technological development in the history of the technological sciences (A)."
     },
     {
       "articleTitle": "Silicon",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Silicon is the dominant material of the semiconductor industry underpinning electrical and electronics engineering (B.2); the article covers its use in transistors, integrated circuits, and solar cells and the materials science that enables modern electronics."
+      "rationaleAI": "Silicon as the dominant semiconductor material for transistors, integrated circuits, and solar cells is foundational to electrical and electronics engineering (B.2)."
     },
     {
       "articleTitle": "Electric battery",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Electric batteries are a core electrical engineering technology (B.2), covering electrochemical energy storage from primary cells through lithium-ion and grid-scale systems that underpin portable electronics, electric vehicles, and renewable energy infrastructure."
+      "rationaleAI": "Electric batteries as electrochemical devices spanning from miniature cells to grid storage connect to electrical and electronics engineering (B.2)."
     },
     {
       "articleTitle": "Leonardo da Vinci",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Leonardo's notebooks contain systematic engineering investigations of mechanical devices, hydraulics, and optics that preceded modern technological science, making him a notable figure in the history of the technological sciences (A) as a Renaissance precursor."
+      "rationaleAI": "Leonardo's systematic investigations of mechanical devices, engineering projects, and hydrodynamics in his notebooks represent Renaissance contributions to the history of the technological sciences (A)."
     },
     {
       "articleTitle": "Textile",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Textiles represent one of the oldest industries and were central to the First Industrial Revolution; the article's coverage of fibre, yarn, and fabric production processes across history makes it relevant to the history of the technological sciences (A)."
+      "rationaleAI": "Textiles as one of the oldest industries, spanning from ancient weaving to industrial chemistry and synthetic fibre production, connect to the history of the technological sciences (A)."
     },
     {
       "articleTitle": "Radar",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Radar is an electrical and electronics engineering technology (B.2) using radio wave propagation, signal processing, and phased-array electronics across applications in air traffic control, meteorology, and autonomous vehicles."
+      "rationaleAI": "Radar as a technology using radio waves for detection and ranging, with applications in air traffic control and autonomous vehicles, connects to electrical and electronics engineering (B.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

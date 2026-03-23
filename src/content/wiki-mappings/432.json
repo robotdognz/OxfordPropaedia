@@ -5,81 +5,74 @@
       "articleTitle": "Psychology",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C"
+        "A.1",
+        "A.2",
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Scientific study of mind and behavior, directly encompassing attention (A), sensation and perception (B, C), and the various schools (behaviorist, cognitive) that shaped theories of attention and perception."
+      "rationaleAI": "Psychology as the scientific study of mind and behavior addresses the problem of defining attention (A.1), the development of theories of attention through stimulus-response and behaviourist studies (A.2), and contemporary theories of perception including the influence of Gestalt and behaviourist theories (C.1), providing the disciplinary framework for all perception and sensation research."
     },
     {
       "articleTitle": "Ear",
       "relevantPathsAI": [
         "B.3",
         "B.3.a",
-        "B.3.b",
         "B.3.d",
         "B.6"
       ],
-      "rationaleAI": "Anatomy and function of the outer, middle, and inner ear, covering sound transduction via cochlear hair cells (B.3.a, B.3.b) and semicircular canals for vestibular balance (B.3.d, B.6)."
+      "rationaleAI": "The ear's three anatomical regions — outer, middle (tympanic membrane and ossicles), and inner ear (cochlea) — cover the mechanisms of the external, middle, and inner ear and functions involved in sound transmission and conversion to neural messages (B.3.a). The semicircular canals, utricle, and saccule for balance cover vestibular senses and maintaining equilibrium (B.3.d, B.6)."
     },
     {
       "articleTitle": "Sense",
       "relevantPathsAI": [
-        "B",
         "B.1",
-        "B.4",
         "B.5",
         "B.6",
-        "B.7",
-        "B.8"
+        "E.3"
       ],
-      "rationaleAI": "Comprehensive coverage of sensory modalities including mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors (B.1), proprioception (B.5), vestibular sense (B.6), and additional modalities beyond the classical five senses (B.4, B.7, B.8)."
+      "rationaleAI": "Senses as biological systems for sensation via specialized receptor cells — mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors — cover the senses in general (B.1). Proprioception connects to kinesthesis and kinesthetic feedback in movement control (B.5), vestibular sense to maintaining equilibrium (B.6), and the breadth of sensory modalities to interrelations among the senses (E.3)."
     },
     {
       "articleTitle": "Consciousness",
       "relevantPathsAI": [
         "A",
-        "C",
-        "G.2"
+        "A.1"
       ],
-      "rationaleAI": "Awareness of internal and external events (A), subjective experience and its neural correlates relevant to perceptual processing (C), and altered states of consciousness bordering on hallucinatory phenomena (G.2)."
+      "rationaleAI": "Consciousness as awareness of internal states or external objects — encompassing wakefulness, self-awareness, and metacognition — directly relates to attention as awareness of internal and external events (A) and the problem of defining attention (A.1)."
     },
     {
       "articleTitle": "Color",
       "relevantPathsAI": [
         "B.2",
         "B.2.a",
-        "B.2.b",
         "B.2.c"
       ],
-      "rationaleAI": "Visual perception arising from cone cell activation in the retina (B.2.a), transduction of light into neural signals (B.2.b), and perceptual processes including trichromacy, color mixing, and metamerism (B.2.c)."
+      "rationaleAI": "Color perception arising from cone cell activation in the retina covers the work of the retina in vision (B.2.a), and perceptual phenomena such as trichromacy, metamerism, hue, saturation, and lightness cover perceptual processes of vision (B.2.c)."
     },
     {
       "articleTitle": "Eye",
       "relevantPathsAI": [
         "B.2",
         "B.2.a",
-        "B.2.b",
-        "B.2.c"
+        "B.2.b"
       ],
-      "rationaleAI": "The sensory organ for photoreception, covering retinal photoreceptor cells (B.2.a), transduction of light to neural signals (B.2.b), and visual acuity and color perception via cone and rod photoreceptors (B.2.c)."
+      "rationaleAI": "The eye as the sensory organ for photoreception covers the work of the retina with rod and cone photoreceptors (B.2.a) and the transduction process converting the retinal image into neural signals via electrochemical processes (B.2.b)."
     },
     {
       "articleTitle": "Sound",
       "relevantPathsAI": [
         "B.3",
-        "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Mechanical wave phenomenon covering frequency, amplitude, and speed as physical properties (B.3.a) and psychoacoustic perception of pitch, loudness, timbre, and spatial location (B.3.b)."
+      "rationaleAI": "Sound as a mechanical wave phenomenon characterized by frequency, amplitude, and speed, bridging the physical wave and psychoacoustic perception of pitch, loudness, timbre, and spatial location, covers audition and the encoding, processing, and discrimination of auditory qualities (B.3.b)."
     },
     {
       "articleTitle": "Brain",
       "relevantPathsAI": [
         "A.5",
-        "B.2.d",
-        "B.3.b"
+        "B.2.d"
       ],
-      "rationaleAI": "Central organ of nervous system responsible for sensory integration, including physiological mechanisms of attention (A.5), cerebral cortex responses to visual stimuli (B.2.d), and auditory pathway processing in the central nervous system (B.3.b)."
+      "rationaleAI": "The brain as the central organ for sensory integration and cognition covers physiological mechanisms of attention (A.5), and the cerebral cortex's role in processing visual and other sensory information relates to responses of the cerebral cortex to visual stimuli (B.2.d)."
     },
     {
       "articleTitle": "Mental disorder",
@@ -88,37 +81,46 @@
         "G.2.a",
         "G.2.b"
       ],
-      "rationaleAI": "Clinically significant disturbances in cognition and perception, including neurobiological factors in hallucinations (G.2.a) and types of hallucinatory experience arising from psychotic and neurodevelopmental disorders (G.2.b)."
+      "rationaleAI": "Mental disorders including psychotic conditions involve clinically significant disturbances in cognition that can produce hallucinations (G.2), with neurological factors in hallucinations (G.2.a) and types of hallucinatory experience across conditions (G.2.b)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
-        "A.4",
-        "C.4"
+        "A.4"
       ],
-      "rationaleAI": "Psychoanalytic theory of unconscious influences on attention (A.4) and individual differences in perceptual functioning shaped by personality, drives, and unconscious processes (C.4)."
+      "rationaleAI": "Freud's theories of the unconscious, repression, and the structural model of the mind (id, ego, superego) address determinants of attention including unconscious influences, temperament, and interests (A.4)."
     },
     {
       "articleTitle": "Animation",
       "relevantPathsAI": [
+        "G.1",
         "F.1"
       ],
-      "rationaleAI": "Filmmaking technique creating the illusion of motion through sequential display of images, directly illustrating visual cues for perceiving movement (F.1)."
+      "rationaleAI": "Animation as a filmmaking technique creating the illusion of motion through sequential display of manipulated images directly relates to types of illusory experience (G.1) and visual cues for perceiving motion of objects (F.1), exploiting the phi phenomenon and persistence of vision."
     },
     {
       "articleTitle": "Information",
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Information theory (Shannon) quantifies information in bits inversely proportional to event probability, directly applicable to the analysis of attentive phenomena in terms of information theory (A.6)."
+      "rationaleAI": "Information theory (Shannon) — quantifying information in bits inversely proportional to event probability — directly relates to the analysis of attentive phenomena in terms of information theory (A.6)."
     },
     {
       "articleTitle": "Human behavior",
       "relevantPathsAI": [
         "A",
-        "C"
+        "C.4"
       ],
-      "rationaleAI": "Full range of human responses to internal and external stimuli, encompassing attention to the environment (A) and cognitive behavior including perception and decision-making (C)."
+      "rationaleAI": "Human behavior as the full range of mental, physical, and social responses shaped by psychological and cultural factors relates to attention as awareness of events (A), and individual differences in cognitive behavior and perception connect to differences in perceptual functioning among individuals (C.4)."
+    },
+    {
+      "articleTitle": "Anesthesia",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "B.4.d"
+      ],
+      "rationaleAI": "Anesthesia is the pharmacological suppression of sensation and awareness, directly addressing awareness of events (A), the general functioning of the senses (B.1), and pain experience including its cause, qualities, and modes of treatment (B.4.d)."
     }
   ],
   "_curatedBy": "ai",

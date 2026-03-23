@@ -10,7 +10,7 @@
         "A.3",
         "A.4"
       ],
-      "rationaleAI": "Provides comprehensive, structured coverage of the entire history-of-medicine outline, from prehistoric and ancient Eastern and Western practice (A.1) through 19th-century scientific medicine including bacteriology and germ theory (A.2), 20th-century chemotherapy, immunology, and endocrinology (A.3), and the emergence of 20th-century surgical specialties (A.4)."
+      "rationaleAI": "Comprehensive coverage from prehistoric and ancient healing practices (A.1) through 19th-century germ theory and bacteriology (A.2), to modern antibiotics, vaccines, cardiovascular surgery, and telemedicine (A.3, A.4)."
     },
     {
       "articleTitle": "Louis Pasteur",
@@ -18,53 +18,54 @@
         "A.2.c",
         "A.3.b"
       ],
-      "rationaleAI": "Pasteur's verification of germ theory and identification of disease-producing organisms directly address A.2.c (establishment of bacteriology); his creation of vaccines for anthrax, chicken cholera, and rabies maps precisely to A.3.b (advances in immunology and bacterial/viral vaccine development)."
+      "rationaleAI": "Established germ theory and identified disease-producing organisms, corresponding to the establishment of bacteriology (A.2.c); developed vaccines for cholera, anthrax, and rabies, corresponding to advances in immunology (A.3.b)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
-        "B.1.g",
-        "A.3"
+        "B.1.g"
       ],
-      "rationaleAI": "Freud founded psychoanalysis and transformed clinical psychiatry, making him directly relevant to B.1.g (psychiatry as a hospital residency specialty); his influence on 20th-century medicine and his clinical work with neurosis also connect to A.3 (medicine in the 20th century)."
+      "rationaleAI": "Founder of psychoanalysis whose clinical work reshaped psychiatry corresponds to psychiatry as a hospital residency specialty (B.1.g)."
     },
     {
       "articleTitle": "Hippocrates",
       "relevantPathsAI": [
-        "A.1.d"
+        "A.1.d.ii"
       ],
-      "rationaleAI": "Hippocrates is the central figure in the beginning of systematic medicine in the Greco-Roman world (A.1.d), and his contributions — clinical observation, humoral theory, disease categorization, and the Hippocratic Oath — map exactly to A.1.d.ii (Hippocrates' theories and the charter of medical conduct)."
+      "rationaleAI": "Work of Hippocrates on the nature and treatment of disease and the charter of medical conduct (A.1.d.ii)."
     },
     {
       "articleTitle": "Medicine",
       "relevantPathsAI": [
         "A",
         "B",
-        "C"
+        "B.1",
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "As the broad overview article for the entire discipline, it covers the history of medicine and surgery (A), clinical and nonclinical medical specialties (B), and affiliated disciplines including nursing and dentistry (C), making it relevant to all three top-level outline divisions."
+      "rationaleAI": "The science and practice of diagnosing, treating, and preventing disease covers the entire scope of medicine history (A), hospital specialties (B.1), clinical specialties (B.2), and nonclinical sciences (B.3)."
     },
     {
       "articleTitle": "Hospital",
       "relevantPathsAI": [
-        "A.1.h",
+        "A.1.h.i",
         "B.1"
       ],
-      "rationaleAI": "The hospital article addresses the genesis of the hospital and its role in medical education (A.1.h.i), and its typology of general, specialized, and teaching hospitals maps directly to the hospital residency specialties in B.1, including radiology, surgery, and other clinical departments."
+      "rationaleAI": "Genesis of the medical school and hospital in the 18th century (A.1.h.i); hospital residency specialties as fields of specialized practice (B.1)."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
-        "A.1.e"
+        "A.1.e.i"
       ],
-      "rationaleAI": "The Islamic Golden Age includes substantial treatment of medieval Islamic medicine and surgery, corresponding to A.1.e.i's coverage of Arabian medicine as a reservoir of medical learning that preserved and advanced Greco-Roman medical heritage through the Middle Ages."
+      "rationaleAI": "Islamic Golden Age medicine and surgery correspond to reservoirs of medical learning and contributions of Arabian medicine during the Middle Ages (A.1.e.i)."
     },
     {
       "articleTitle": "Dentistry",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Dentistry is the exact subject of outline path C.1 (history and practice of dentistry), covering its historical development as the earliest specialized medical discipline, its subspecialties, and its connections to broader medical practice including radiology and systemic disease."
+      "rationaleAI": "Dentistry as the medical discipline focused on oral health directly corresponds to the history and practice of dentistry (C.1)."
     },
     {
       "articleTitle": "Physiology",
@@ -72,24 +73,23 @@
         "A.2.b",
         "B.3"
       ],
-      "rationaleAI": "Physiology addresses further advances in physiology relevant to A.2.b in the 19th-century rise of scientific medicine, and maps to B.3 as one of the nonclinical specialties and basic medical sciences (medical physiology and pathological physiology) explicitly named in the outline."
+      "rationaleAI": "Further advances in physiology in the 19th century (A.2.b); medical physiology and pathological physiology as nonclinical specialties (B.3)."
     },
     {
       "articleTitle": "Disease",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.a",
         "A.3",
         "B.2.d"
       ],
-      "rationaleAI": "The disease article covers etiology, pathogenesis, prevention, and treatment across infectious, deficiency, hereditary, and physiological categories, connecting to 19th-century germ theory and pathogenesis (A.2), 20th-century advances in treatment (A.3), and public health as a clinical specialty (B.2.d)."
+      "rationaleAI": "Classification of diseases and pathogenesis connect to new doctrines including cellular pathology (A.2.a); 20th-century treatment advances (A.3); public health as a clinical specialty (B.2.d)."
     },
     {
       "articleTitle": "Avicenna",
       "relevantPathsAI": [
-        "A.1.e",
-        "A.1.c"
+        "A.1.e.i"
       ],
-      "rationaleAI": "Avicenna's Canon of Medicine was a standard medical text at European universities through the 17th century, directly addressing A.1.e.i (contributions of Arabian medicine as a reservoir of learning); his synthesis of Greek and Islamic medical traditions also connects to A.1.c (systematized medicine in the Orient and its transmissions)."
+      "rationaleAI": "The Canon of Medicine as a standard medical text relates to reservoirs of medical learning and contributions of Arabian medicine in the Middle Ages (A.1.e.i)."
     },
     {
       "articleTitle": "Scientific Revolution",
@@ -97,82 +97,94 @@
         "A.1.f",
         "A.1.g"
       ],
-      "rationaleAI": "The Scientific Revolution covers Vesalius's anatomical improvements relevant to A.1.f (improvements in anatomical theory and surgery in the Renaissance), and the experimental method and discoveries concerning blood circulation that map directly to A.1.g (medicine in the 17th century)."
+      "rationaleAI": "Vesalius's anatomical revolution corresponds to improvements in anatomical theory and surgery during the Renaissance (A.1.f); discoveries concerning blood circulation and the experimental method in the 17th century (A.1.g)."
     },
     {
       "articleTitle": "HIV/AIDS",
       "relevantPathsAI": [
-        "A.3.b",
+        "A.3.a",
         "B.2.f"
       ],
-      "rationaleAI": "HIV/AIDS engages immunology and the challenge of viral vaccine development (A.3.b.ii), while also being a core subject within immunology as a clinical specialty (B.2.f), including antiretroviral therapy and its intersection with public health and tropical medicine."
+      "rationaleAI": "Antiretroviral therapy and prevention correspond to advances in chemotherapy and treatment of diseases (A.3.a); HIV intersection with immunology (B.2.f)."
     },
     {
       "articleTitle": "Surgery",
       "relevantPathsAI": [
         "A.4",
+        "A.4.a",
+        "A.4.b",
         "B.1.b"
       ],
-      "rationaleAI": "Surgery covers the entire 20th-century surgery outline (A.4) including the emergence of surgical specialties, treatment of wounds, blood transfusions, and inhalation anesthesia, and is also the specific hospital residency specialty named in B.1.b."
+      "rationaleAI": "History of surgery from antisepsis to modern techniques (A.4, A.4.a); emergence of surgical specialties (A.4.b); surgery as a hospital residency specialty (B.1.b)."
     },
     {
       "articleTitle": "Vaccine",
       "relevantPathsAI": [
-        "A.3.b"
+        "A.1.h.iii",
+        "A.3.b",
+        "A.3.b.i",
+        "A.3.b.ii"
       ],
-      "rationaleAI": "The vaccine article directly addresses advances in immunology (A.3.b), covering both improvements in bacterial vaccines such as typhoid, diphtheria, and tuberculosis (A.3.b.i) and the development of viral vaccines for yellow fever, influenza, polio, and measles (A.3.b.ii)."
+      "rationaleAI": "Improvement in vaccination techniques in the 18th century (A.1.h.iii); improvements in vaccines controlling bacterial diseases (A.3.b.i) and viral diseases (A.3.b.ii)."
     },
     {
       "articleTitle": "Middle Ages",
       "relevantPathsAI": [
-        "A.1.e"
+        "A.1.e",
+        "A.1.e.i",
+        "A.1.e.ii"
       ],
-      "rationaleAI": "The Middle Ages article covers the institutional role of monasteries in preserving Greco-Roman medical knowledge and the contributions of Arabian medicine — the two themes explicitly identified in A.1.e (medicine from the fall of Rome through the Middle Ages)."
+      "rationaleAI": "Medieval monasteries preserving Greco-Roman medical heritage and contributions of Arabian medicine (A.1.e.i); establishment of the first organized medical school at Salerno (A.1.e.ii)."
     },
     {
       "articleTitle": "Renaissance",
       "relevantPathsAI": [
-        "A.1.f"
+        "A.1.f",
+        "A.1.f.i",
+        "A.1.f.iii"
       ],
-      "rationaleAI": "The Renaissance article addresses the anatomical and surgical improvements of the period alongside the work of figures like Paracelsus, corresponding to A.1.f (medicine in the Renaissance, including improvements in anatomical theory and surgery)."
+      "rationaleAI": "Improvements in anatomical theory and surgery (A.1.f.i); work of Paracelsus and Fracastoro in the Renaissance (A.1.f.iii)."
     },
     {
       "articleTitle": "Ancient Greece",
       "relevantPathsAI": [
-        "A.1.d"
+        "A.1.d",
+        "A.1.d.i",
+        "A.1.d.ii",
+        "A.1.d.iii"
       ],
-      "rationaleAI": "Ancient Greece provides the cultural and intellectual context for the beginning of systematic medicine in the Greco-Roman world (A.1.d), covering the philosophical traditions and institutions from which Hippocratic medicine emerged."
+      "rationaleAI": "Beginning of systematic medicine in the Greco-Roman world (A.1.d); early philosophical influences (A.1.d.i); work of Hippocrates (A.1.d.ii); spread of Greek teachings to Rome (A.1.d.iii)."
     },
     {
       "articleTitle": "Ancient Rome",
       "relevantPathsAI": [
-        "A.1.d"
+        "A.1.d.iii"
       ],
-      "rationaleAI": "Ancient Rome covers the spread of Greek medical teachings to Rome and Galen's acceptance as the dominant medical authority, corresponding precisely to A.1.d.iii (the spread of Greek teachings to Rome and the acceptance of Galen)."
+      "rationaleAI": "The spread of Greek medical teachings to Rome and the acceptance of Galen as medical authority (A.1.d.iii)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
         "A.1.h"
       ],
-      "rationaleAI": "The Enlightenment article addresses 18th-century institutional and intellectual developments directly connected to A.1.h, including the genesis of organized medical schools, hospitals, and the beginnings of medical specialization through rational reform."
+      "rationaleAI": "18th-century Enlightenment corresponds to medicine in the 18th century including genesis of the medical school and hospital (A.1.h)."
     },
     {
       "articleTitle": "Florence Nightingale",
       "relevantPathsAI": [
-        "C.3",
-        "A.2"
+        "C.3"
       ],
-      "rationaleAI": "Florence Nightingale is the founder of modern nursing, making her directly relevant to C.3 (history and practice of nursing), a coverage-priority path; her statistical innovations and hospital reform work also connect to 19th-century advances in medicine (A.2)."
+      "rationaleAI": "Founder of modern nursing who professionalized nursing as a vocation directly corresponds to the history and practice of nursing (C.3)."
     },
     {
       "articleTitle": "Marie Curie",
       "relevantPathsAI": [
-        "A.3.d"
+        "A.3.d.iv",
+        "B.1.a"
       ],
-      "rationaleAI": "Curie founded radioisotope cancer treatment and deployed mobile X-ray units, directly addressing medical technology and biomedical instrumentation (A.3.d.iv) and cancer research through novel therapeutic application (A.3.d.ii)."
+      "rationaleAI": "Pioneered research into radioactivity with applications to cancer treatment through radioisotope therapy (A.3.d.iv); radiology as a hospital specialty (B.1.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -6,7 +6,7 @@
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "Leonardo's systematic anatomical investigations and illustrations directly exemplify A.1.d's Renaissance biology — the beginning of scientific anatomy through dissection, and the role of artists' illustrations in disseminating biological knowledge."
+      "rationaleAI": "Systematic investigations of human anatomy in notebooks exemplify the Renaissance influence of artists' illustrations on biological knowledge and the scientific study of anatomy through dissection (A.1.d)."
     },
     {
       "articleTitle": "History of science",
@@ -14,160 +14,164 @@
         "A",
         "A.1"
       ],
-      "rationaleAI": "History of science covers the development of biological sciences across all periods: ancient Greek biology, Islamic Golden Age medicine, Renaissance anatomy (Vesalius), 19th-century evolution (Darwin), and 20th-century genetics and molecular biology, spanning A and A.1."
+      "rationaleAI": "Broad history of science tracing evolution, germ theory, and genetics provides overarching context for the origin and development of biological ideas (A, A.1)."
     },
     {
       "articleTitle": "Middle Ages",
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Middle Ages covers the period of A.1.c — the influence of Arabian biologists, the development of botany and zoology as separate disciplines, and further discoveries in anatomy through Islamic and European medieval scholarship."
+      "rationaleAI": "Medieval period including Islamic expansion and scholasticism corresponds to biology in the Middle Ages with Arabian biologists and the development of botany and zoology (A.1.c)."
     },
     {
       "articleTitle": "Zoology",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.1.b",
+        "A.1.c"
       ],
-      "rationaleAI": "Zoology is an explicit biological subdiscipline (B's nature/scope coverage), rooted in Aristotelian naturalism (A.1.b — Aristotelian classification, reproduction, descent) and formalized through Linnaeus and Darwin."
+      "rationaleAI": "Zoology rooted in Aristotle's naturalism connects to Greco-Roman theories of classification (A.1.b); its formalization as a separate discipline in the Middle Ages (A.1.c)."
     },
     {
       "articleTitle": "Charles Darwin",
       "relevantPathsAI": [
-        "A",
         "A.1"
       ],
-      "rationaleAI": "Darwin is the pivotal figure in the history of biological sciences — his theory of evolution by natural selection fundamentally reorganized all life sciences, making him central to the 19th-century section of A and the history outlined in A.1."
+      "rationaleAI": "Darwin's theory of evolution by natural selection is the foundational framework of the life sciences; while the outline only covers through the Renaissance, Darwin's work is central to the broader history of biological sciences (A.1)."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "The Islamic Golden Age directly corresponds to A.1.c through the influence of Arabian biologists (Ibn Sina's Canon, Al-Jahiz's zoological works), the development of medicine, botany, and anatomy during the medieval period."
+      "rationaleAI": "Islamic Golden Age contributions to biology, medicine, and natural sciences correspond to the influence of Arabian biologists in the Middle Ages (A.1.c)."
     },
     {
       "articleTitle": "Human",
-      "relevantPathsAI": [],
-      "rationaleAI": "Human covers the biological dimensions of Homo sapiens — anatomy, genetics, evolutionary origins, and life cycle — relevant to biological sciences' scope (B) through human biology, physical anthropology, and evolutionary biology."
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Homo sapiens anatomy and biological characteristics connect to Greco-Roman theories about mankind, anatomical discoveries, and classification (A.1.b)."
     },
     {
       "articleTitle": "Evolution",
       "relevantPathsAI": [
-        "A"
+        "A.1"
       ],
-      "rationaleAI": "Evolution is both a central subject in the history of biology (A — Darwin, modern evolutionary synthesis) and the unifying theoretical framework of modern biological sciences (B — natural selection, molecular mechanisms, phylogenetics)."
+      "rationaleAI": "Evolution as the change in heritable characteristics of biological populations is central to the history of biological sciences broadly, though the detailed outline ends at the Renaissance (A.1)."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Reproduction is a fundamental biological process covered under B's nature/scope of biological sciences. Aristotelian theories of reproduction are specifically named in A.1.b as part of Greco-Roman biological investigations."
+      "rationaleAI": "Asexual and sexual reproduction strategies connect to Aristotelian concepts of reproduction and heredity in the Greco-Roman world (A.1.b)."
     },
     {
       "articleTitle": "Aristotle",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Aristotle is explicitly central to A.1.b — Greco-Roman biology covering Aristotelian concepts of classification, reproduction, heredity, and descent; botanical investigations; and initial anatomical discoveries. He is the founding figure of systematic biology."
+      "rationaleAI": "Aristotle's empirical taxonomy and concepts of classification, reproduction, heredity, and descent are foundational to biology in the Greco-Roman world (A.1.b)."
     },
     {
       "articleTitle": "Johannes Gutenberg",
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "Gutenberg's printing press is directly referenced in A.1.d's focus on the influence of the craft of printing on the dissemination of botanical knowledge and biological illustration during the Renaissance."
+      "rationaleAI": "The European movable-type printing press directly relates to the influence of the craft of printing on the dissemination of botanical knowledge during the Renaissance (A.1.d)."
     },
     {
       "articleTitle": "History of medicine",
       "relevantPathsAI": [
-        "A.1",
-        "A"
+        "A.1.b",
+        "A.1.c"
       ],
-      "rationaleAI": "History of medicine substantially overlaps with the history of biology through anatomy, physiology, germ theory (Pasteur, Koch), and the development of biochemistry, covering all periods in A.1 from ancient through 20th-century biological science."
+      "rationaleAI": "Ancient Greek humoral theory and medieval medical institutions connect to Greco-Roman biological and anatomical ideas (A.1.b) and biology in the Middle Ages (A.1.c)."
     },
     {
       "articleTitle": "Ancient Egypt",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Ancient Egypt represents A.1.a's views of life and living things in ancient Eastern and Middle Eastern civilizations, particularly through Egyptian medicine, herbalism, and early anatomical knowledge from mummification."
+      "rationaleAI": "Egyptian medicine and biological knowledge correspond to views of life in ancient Eastern civilizations (A.1.a)."
     },
     {
       "articleTitle": "Ancient Greece",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Ancient Greece is the setting for A.1.b's Greco-Roman biology, encompassing Aristotle's taxonomy and zoology, Theophrastus's botany, Hippocratic medicine, and Galen's anatomy — the foundational texts of Western biological science."
+      "rationaleAI": "Greek natural science, philosophy, and mathematics connect to biology in the Greco-Roman world including Aristotelian classification and anatomical discoveries (A.1.b)."
     },
     {
       "articleTitle": "Scientific Revolution",
       "relevantPathsAI": [
-        "A.1.d",
-        "A"
+        "A.1.d"
       ],
-      "rationaleAI": "The Scientific Revolution covers A.1.d's Renaissance biological developments — Vesalius's anatomical revolution (1543), Harvey's discovery of blood circulation, and the empirical approach transforming natural philosophy into scientific biology."
+      "rationaleAI": "Vesalius's anatomical revolution and the beginning of scientific study of anatomy through dissection connect to biology in the Renaissance (A.1.d)."
     },
     {
       "articleTitle": "History of life",
       "relevantPathsAI": [
-        "A"
+        "A.1"
       ],
-      "rationaleAI": "History of life covers the entire biological record from abiogenesis through the Cambrian explosion and mass extinctions, spanning the palaeontological and evolutionary dimensions of both A (historical development) and B (the biological sciences' subject matter)."
+      "rationaleAI": "The 3.7-billion-year history of life from microbial origins to present provides the subject matter for the entire history of biological sciences (A.1)."
     },
     {
       "articleTitle": "Heredity",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Heredity (genetics) is both named in A.1.b as an Aristotelian topic and is a core biological science subdiscipline (B). Mendel's laws of inheritance are the pivotal 19th-century development in the history of biology."
+      "rationaleAI": "Biological inheritance and transmission of genetic information connect to Aristotelian concepts of heredity and descent in the Greco-Roman world (A.1.b)."
     },
     {
       "articleTitle": "Biology",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Biology defines the entire scope of this section, covering the discipline's five unifying themes (cell theory, heredity, evolution, energy, homeostasis), subdisciplines (B), and historical development from ancient to modern (A)."
+      "rationaleAI": "Biology as the scientific study of life spanning molecular to biosphere levels provides the overall framework for the history of the biological sciences (A, A.1)."
     },
     {
       "articleTitle": "Animal",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Animals are the subject of zoology (B) and Aristotle's taxonomy of animals is explicitly part of A.1.b (Greco-Roman biology). The kingdom Animalia's evolutionary origins and classification history span both historical and scope dimensions."
+      "rationaleAI": "Animal classification history from Aristotle through Linnaeus connects to Greco-Roman theories of classification and descent (A.1.b)."
     },
     {
       "articleTitle": "Louis Pasteur",
       "relevantPathsAI": [
-        "A"
+        "A.1"
       ],
-      "rationaleAI": "Pasteur's disproving of spontaneous generation and founding of germ theory represent the 19th-century breakthrough that transformed biology and medicine, placing him firmly in the history of biological sciences (A)."
+      "rationaleAI": "Pasteur's disproval of spontaneous generation and establishment of germ theory are pivotal events in the history of biological sciences (A.1)."
     },
     {
       "articleTitle": "Abiogenesis",
       "relevantPathsAI": [
-        "A"
+        "A.1.b"
       ],
-      "rationaleAI": "Abiogenesis addresses the origin of life from non-living chemistry, a foundational question in both the history of biological sciences (A) and B's scope of biological sciences, relating to early debates about spontaneous generation and modern origin-of-life research."
+      "rationaleAI": "Theories about the origin of life from non-living chemistry connect to Greco-Roman theories about mankind and the origin of life (A.1.b)."
     },
     {
       "articleTitle": "Organism",
-      "relevantPathsAI": [],
-      "rationaleAI": "Organism is the foundational subject of biology — any individual living entity — directly relevant to B's nature and scope of biological sciences, including questions of individual function, reproduction, metabolism, and the philosophy of organismal boundaries."
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "The concept of an individual living entity characterized by reproduction, growth, and metabolism connects to Aristotelian biological concepts in the Greco-Roman world (A.1.b)."
     },
     {
       "articleTitle": "Paleontology",
       "relevantPathsAI": [
-        "A"
+        "A.1"
       ],
-      "rationaleAI": "Paleontology is a related biological discipline (B) and its development through Georges Cuvier and Darwin's evolutionary framework is central to the 19th-century history of biology (A), particularly through biostratigraphy and extinction analysis."
+      "rationaleAI": "Scientific study of past life through fossils provides evidence for the history of biological ideas, connecting to the development of biological sciences (A.1)."
     },
     {
       "articleTitle": "Species",
       "relevantPathsAI": [
-        "A"
+        "A.1.b"
       ],
-      "rationaleAI": "Species is the foundational unit of biological classification and biodiversity (B), and debates over species concepts from Aristotle through Linnaeus to Darwin to molecular systematics span the entire history of biology (A)."
+      "rationaleAI": "Species as the foundational unit of biological classification connects to Aristotelian concepts of classification in the Greco-Roman world (A.1.b)."
     },
     {
       "articleTitle": "Botany",
@@ -176,7 +180,7 @@
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "Botany is an explicit biological subdiscipline (B) whose history spans A.1.b (Greco-Roman botanical investigations, Theophrastus), A.1.c (Middle Ages — development of botany as a separate discipline), and A.1.d (Renaissance — printing's influence on botanical knowledge dissemination)."
+      "rationaleAI": "Greek botanical investigations (A.1.b); botany developing as a separate discipline in the Middle Ages (A.1.c); printing and artists' illustrations disseminating botanical knowledge in the Renaissance (A.1.d)."
     },
     {
       "articleTitle": "Anatomy",
@@ -185,47 +189,51 @@
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "Anatomy is explicitly named across A.1.b (initial anatomical discoveries in Greco-Roman world), A.1.c (further anatomical discoveries in the Middle Ages), and A.1.d (beginning of scientific anatomy through dissection in the Renaissance), as well as being a biological subdiscipline (B)."
+      "rationaleAI": "Initial anatomical discoveries in the Greco-Roman world (A.1.b); further discoveries in the Middle Ages (A.1.c); beginning of scientific study of anatomy through dissection in the Renaissance (A.1.d)."
     },
     {
       "articleTitle": "Biochemistry",
-      "relevantPathsAI": [],
-      "rationaleAI": "Biochemistry is a major subdiscipline of biology (B), characterizing macromolecules, enzymology, and metabolism as part of the biological sciences' scope. Its methodology underpins molecular biology, physiology, and cell biology."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Biochemistry as the study of chemical processes in living organisms is central to the history of biological sciences (A.1)."
     },
     {
       "articleTitle": "Printing",
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "Printing is explicitly referenced in A.1.d's focus on the influence of the craft of printing and artists' illustrations on the dissemination of botanical knowledge during the Renaissance, making this a direct match."
+      "rationaleAI": "The craft of printing and artists' illustrations directly influenced the dissemination of botanical knowledge in the Renaissance (A.1.d)."
     },
     {
       "articleTitle": "Ecology",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ecology is a major subdiscipline of biological sciences (B), studying relationships among living organisms and their environments across individual through biosphere levels, including biodiversity, food webs, and ecosystem dynamics."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Ecology as the study of relationships among organisms and environments is a key development within the biological sciences (A.1)."
     },
     {
       "articleTitle": "Ancient history",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Ancient history covers early civilizations (Mesopotamia, Egypt, ancient West Asia) where preliminary biological knowledge — herbalism, medicine, animal husbandry — originated, fitting A.1.a (views of life in ancient Eastern and Middle Eastern civilizations)."
+      "rationaleAI": "Ancient civilizations in West Asia, Africa, and East Asia correspond to views of life in ancient Eastern and Middle Eastern civilizations (A.1.a)."
     },
     {
       "articleTitle": "Mesopotamia",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Mesopotamia is an ancient Eastern civilization directly covered by A.1.a, with early biological knowledge including herbal medicine, animal husbandry, and agricultural plant knowledge predating Greek systematic biology."
+      "rationaleAI": "Mesopotamian civilization as a cradle of early knowledge connects to views of life in ancient Eastern civilizations (A.1.a)."
     },
     {
       "articleTitle": "Renaissance",
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "The Renaissance is exactly the period addressed in A.1.d, covering the influence of printing, humanist illustration, and empirical observation — particularly Vesalius's anatomical revolution — on the development of biological knowledge."
+      "rationaleAI": "The Renaissance influence of printing and artists' illustrations on dissemination of botanical knowledge and the beginning of scientific anatomy (A.1.d)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

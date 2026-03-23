@@ -5,215 +5,274 @@
       "articleTitle": "Lake",
       "relevantPathsAI": [
         "A.8",
-        "C.2"
+        "A.8.a",
+        "A.8.b",
+        "C.2",
+        "C.2.a",
+        "C.2.d"
       ],
-      "rationaleAI": "Lakes are subject to lacustrine processes including erosion, deposition, and sedimentation (A.8), and the lacustrine environment covers lake basins, hydraulics, and glacial lakes (C.2). Tectonic, volcanic, and glacial lake origins relate to specific formation environments."
+      "rationaleAI": "Covers lacustrine erosion and deposition by waves and currents (A.8.a), sedimentation in lakes (A.8.b), and the lacustrine environment broadly (C.2) including lake basin types (C.2.a) and glacial lakes (C.2.d). Thermal stratification, water chemistry, and hydrological-cycle roles address lacustrine processes (A.8)."
     },
     {
       "articleTitle": "Desert",
       "relevantPathsAI": [
         "A.5",
-        "C.5"
+        "A.5.a",
+        "A.5.b",
+        "A.5.c",
+        "C.5",
+        "C.5.a",
+        "C.5.b",
+        "C.5.b.i",
+        "C.5.b.iv",
+        "C.5.b.v",
+        "C.5.b.vi",
+        "C.5.c"
       ],
-      "rationaleAI": "Deserts are shaped by eolian processes including wind erosion, sand dune dynamics, and transportation of rock debris (A.5), and the desert environment covers geomorphic processes, surficial features, and desert boundary expansion (C.5)."
+      "rationaleAI": "Eolian processes including wind erosion, sand dune dynamics, and desert pavement formation (A.5, A.5.a, A.5.b, A.5.c). The desert environment broadly (C.5) with geomorphic processes shaping desert landforms (C.5.a), surficial features including mountains and plateaus (C.5.b.i), desert plains and basins (C.5.b.iv), salt pans (C.5.b.v), sand dunes (C.5.b.vi), and desert boundary expansion/contraction (C.5.c)."
     },
     {
       "articleTitle": "River",
       "relevantPathsAI": [
         "A.4",
-        "C.1"
+        "A.4.a",
+        "A.4.b",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.1.e"
       ],
-      "rationaleAI": "Rivers are shaped by fluvial processes including entrainment, transport, erosion, and deposition (A.4), and the fluvial environment covers drainage patterns, streamflow, flooding, floodplains, terraces, and deltas (C.1)."
+      "rationaleAI": "Fluvial processes including entrainment and transport of materials (A.4.a), erosion and deposition by water (A.4.b), and drainage system yields (A.4). The fluvial environment (C.1) with distribution of rivers (C.1.a), drainage patterns (C.1.b), geometry of river systems (C.1.c), streamflow landforms such as flooding, floodplains, terraces, and deltas (C.1.d), and evolution of river systems through geologic time (C.1.e)."
     },
     {
       "articleTitle": "Erosion",
       "relevantPathsAI": [
         "A.1",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7"
+        "A.2.d",
+        "A.4.b",
+        "A.5.b",
+        "A.6.a",
+        "A.7",
+        "B.1.c",
+        "D.2"
       ],
-      "rationaleAI": "Erosion is the central geomorphic process, operating through weathering (A.1), fluvial entrainment and transport (A.4), eolian wind transport (A.5), marine wave and current action (A.6), and glacial processes (A.7). Human activities accelerate erosion rates up to 100-fold."
+      "rationaleAI": "Weathering and rock disintegration at Earth's surface (A.1); soil erosion and degradation from human activity (A.2.d); erosion and deposition by fluvial (A.4.b), eolian (A.5.b), marine (A.6.a), and glacial (A.7) processes. Human-accelerated erosion from agriculture, deforestation, and urbanization addresses effects of humankind on surface features (B.1.c). The concept of the cycle of erosion (D.2)."
     },
     {
       "articleTitle": "Soil",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "A.2.d",
+        "B.1.a"
       ],
-      "rationaleAI": "Soil formation results from weathering, biological activity, and climate influence (A.2), covering processes and factors in soil formation (A.2.a), classification and distribution (A.2.b), soil crusts (A.2.c), and soil erosion and deterioration (A.2.d)."
+      "rationaleAI": "Soil formation as a result of weathering (A.2), including processes and factors in soil formation such as biological activity and climate influence (A.2.a), classification of soils into horizons and profiles (A.2.b), and soil erosion, contamination, acidification, and degradation (A.2.d). Role of organisms and plants in rock weathering and pedogenesis (B.1.a)."
     },
     {
       "articleTitle": "Wind",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "A.5.a",
+        "A.5.b",
+        "A.5.c"
       ],
-      "rationaleAI": "Wind drives eolian processes (A.5) including transportation of rock debris (A.5.a), effects of wind transport including erosion (A.5.b), and deposition forming dunes with the role of vegetation (A.5.c)."
+      "rationaleAI": "Wind as the driver of eolian processes (A.5): transportation of rock debris (A.5.a), erosional effects of wind transport such as desert migration (A.5.b), and deposition by wind including dune formation and the role of vegetation (A.5.c)."
     },
     {
       "articleTitle": "Snow",
       "relevantPathsAI": [
         "A.7",
-        "C.6"
+        "C.6",
+        "C.6.a",
+        "C.7"
       ],
-      "rationaleAI": "Snowpack accumulation compacting into glacial ice connects to glacial processes of erosion, transport, and deposition (A.7), and the glacial environment (C.6) including periglacial processes and permafrost."
+      "rationaleAI": "Snowpack compaction into firn and glacial ice connects to glacial processes of erosion, transport, and deposition (A.7, C.6, C.6.a). Snow zones in polar regions and high latitudes address the polar environment (C.7). Snowmelt as a freshwater reservoir connects to glacial and periglacial dynamics."
     },
     {
       "articleTitle": "Flood",
       "relevantPathsAI": [
+        "A.4",
+        "A.4.b",
         "C.1.d"
       ],
-      "rationaleAI": "Floods represent peak discharge events within the fluvial environment, creating river floodplains and terraces (C.1.d), driven by riverbank overflow, and intensified by deforestation and urbanization."
+      "rationaleAI": "Riverbank overflow and flash flooding are fluvial processes (A.4) involving erosion and deposition (A.4.b). Peak discharge, flooding, and river floodplains are characteristic features of the fluvial environment (C.1.d)."
     },
     {
       "articleTitle": "Antarctica",
       "relevantPathsAI": [
         "C.6",
+        "C.6.b",
+        "C.6.c",
         "C.7"
       ],
-      "rationaleAI": "The coldest continent with ice sheet dynamics directly relevant to the glacial environment (C.6) and the polar environment (C.7), including glacial erosion, deposition, and periglacial landforms."
+      "rationaleAI": "Antarctica holds ~70% of global freshwater as ice, with ice sheet dynamics directly relevant to the glacial environment (C.6), including landforms produced by glacial erosion (C.6.b) and glacial deposition (C.6.c). As Earth's coldest, driest, windiest continent, it exemplifies the polar environment (C.7)."
     },
     {
       "articleTitle": "Amazon rainforest",
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "The world's largest tropical moist broadleaf forest, directly relevant to the tropical environment of jungles and rain forests (C.8), with role in precipitation cycles and carbon storage."
+      "rationaleAI": "The world's largest tropical moist broadleaf forest exemplifies the tropical environment of jungles and rain forests (C.8)."
     },
     {
       "articleTitle": "Sahara",
       "relevantPathsAI": [
-        "C.5"
+        "C.5",
+        "C.5.a",
+        "C.5.b",
+        "C.5.b.i",
+        "C.5.b.vi",
+        "C.5.c"
       ],
-      "rationaleAI": "Earth's largest hot desert, exemplifying the desert environment (C.5) with geomorphic features including mountains, plateaus, sand dunes, and 20,000-year savanna-desert cycles relevant to desert boundary expansion and contraction (C.5.c)."
+      "rationaleAI": "Earth's largest hot desert, with sub-regions including mountains (Ahaggar, Tibesti) and plateaus (C.5.b.i), sand dune areas like the Tenere (C.5.b.vi), hyperarid climate shaping desert landforms (C.5.a), and 20,000-year savanna-desert cycles illustrating desert boundary expansion and contraction (C.5.c)."
     },
     {
       "articleTitle": "Volcano",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Volcanic eruptions producing lava flows, tephra, and aerosols represent volcanic-tectonic processes acting on Earth's surface features (B.3)."
+      "rationaleAI": "Volcanic eruptions producing lava flows, tephra, and crustal vents are volcanic-tectonic processes that shape Earth's surface features (B.3)."
     },
     {
       "articleTitle": "Earthquake",
       "relevantPathsAI": [
+        "A.3",
         "B.3"
       ],
-      "rationaleAI": "Seismic events cause landslides, soil liquefaction, and surface rupture, representing volcanic-tectonic processes affecting the Earth's surface (B.3)."
+      "rationaleAI": "Seismic energy release causing landslides and soil liquefaction relates to gravitational processes and earth movements on slopes (A.3). Fault rupture along tectonic plate boundaries is a volcanic-tectonic process affecting surface features (B.3)."
     },
     {
       "articleTitle": "Great Lakes",
       "relevantPathsAI": [
         "A.8",
         "C.2",
+        "C.2.a",
         "C.2.d"
       ],
-      "rationaleAI": "Five interconnected freshwater lakes of glacial geological origin, relevant to lacustrine processes (A.8) and the lacustrine environment (C.2), specifically as glacial lakes (C.2.d)."
+      "rationaleAI": "The largest freshwater lake system by area, with glacial geological origin relevant to glacial lakes (C.2.d), lake basins (C.2.a), and the lacustrine environment broadly (C.2). Lake-effect climate, ecology, and bathymetry address lacustrine processes (A.8)."
     },
     {
       "articleTitle": "Grassland",
       "relevantPathsAI": [
         "C.9"
       ],
-      "rationaleAI": "Grass-dominated ecosystems covering 31-69% of Earth's land area, directly relevant to the temperate environment of woodlands and grasslands (C.9)."
+      "rationaleAI": "Grass-dominated ecosystems covering large portions of Earth's land area, classified as temperate and tropical/subtropical, directly exemplify the temperate environment of woodlands and grasslands (C.9)."
     },
     {
       "articleTitle": "Forest",
       "relevantPathsAI": [
         "C.8",
         "C.9",
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Tree-dominated ecosystems spanning tropical moist and dry forests (C.8) and temperate woodlands (C.9), with vegetation type and density affecting sediment yield and geomorphic processes (B.1.b)."
+      "rationaleAI": "Tree-dominated ecosystems spanning boreal, temperate, and tropical biomes address both the tropical environment of rain forests (C.8) and the temperate environment of woodlands (C.9). Deforestation's effect on erosion and sediment yield connects to vegetation density effects on sediment yield (B.1.b)."
     },
     {
       "articleTitle": "Ocean",
       "relevantPathsAI": [
         "A.6",
-        "C.4"
+        "A.6.a",
+        "A.6.b",
+        "C.4",
+        "C.4.d"
       ],
-      "rationaleAI": "The ocean drives marine processes including erosion and deposition of coastal materials by waves and currents (A.6), and shapes the marine environment with coastal features and submerged continental features (C.4)."
+      "rationaleAI": "Marine processes including erosion and deposition of coastal materials by waves and currents (A.6.a) and sediment transport by density flows (A.6.b). Ocean depth zones including the continental shelf and slope and submarine features address submerged coastal features (C.4.d). The marine environment broadly (C.4)."
     },
     {
       "articleTitle": "Ganges",
       "relevantPathsAI": [
+        "A.4",
+        "C.1",
         "C.1.d"
       ],
-      "rationaleAI": "The Ganges forms one of the world's largest delta systems, exemplifying river delta formation within the fluvial environment (C.1.d), with periodic flooding and floodplain dynamics."
+      "rationaleAI": "The Ganges-Brahmaputra-Meghna delta system is one of the world's largest river deltas (C.1.d). Hydrology, irrigation canals, and dams relate to fluvial processes (A.4) and the fluvial environment (C.1)."
     },
     {
       "articleTitle": "Yangtze",
       "relevantPathsAI": [
+        "A.4",
+        "C.1",
         "C.1.d"
       ],
-      "rationaleAI": "China's longest river with periodic flooding and delta formation, relevant to streamflow and fluvial landforms (C.1.d) including floodplains and the economically productive Yangtze Delta."
+      "rationaleAI": "China's longest river with periodic flooding and the Yangtze Delta address streamflow, floodplains, and river deltas (C.1.d). Geology and navigation history connect to the fluvial environment broadly (C.1) and fluvial processes (A.4)."
     },
     {
       "articleTitle": "Rain",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Rain is the dominant freshwater delivery mechanism sustaining river systems and groundwater recharge, driving fluvial processes of entrainment, transport, erosion, and deposition (A.4)."
+      "rationaleAI": "Rain as the dominant freshwater delivery mechanism sustains river systems and groundwater recharge, directly driving fluvial processes of entrainment, transport, erosion, and deposition (A.4)."
     },
     {
       "articleTitle": "Human settlement",
       "relevantPathsAI": [
         "B.1.c"
       ],
-      "rationaleAI": "Human settlements represent the effects of humankind on Earth's surface features through land cultivation, construction, and infrastructure development (B.1.c)."
+      "rationaleAI": "Communities of people and their physical infrastructure — roads, construction, field systems — alter Earth's surface features through land cultivation, construction of artificial channels and dams (B.1.c)."
     },
     {
       "articleTitle": "Canal",
       "relevantPathsAI": [
         "B.1.c"
       ],
-      "rationaleAI": "Artificial waterways constructed for drainage, irrigation, or transport, exemplifying human construction of artificial channels and dams affecting Earth's surface (B.1.c)."
+      "rationaleAI": "Engineered artificial waterways for drainage, irrigation, and water transport are artificial channels constructed by humankind that affect Earth's surface features (B.1.c)."
     },
     {
       "articleTitle": "Andes",
       "relevantPathsAI": [
-        "C.5",
-        "C.6"
+        "B.3",
+        "C.5.b.i",
+        "C.6",
+        "C.6.b.ii"
       ],
-      "rationaleAI": "The Andes span three climatic divisions including dry conditions relevant to desert environments (C.5) and high-altitude glacial environments (C.6), with volcanism and erosional features shaping surface morphology."
+      "rationaleAI": "Subduction-driven orogenic uplift, seismic activity, and volcanism exemplify volcanic-tectonic processes (B.3). The highest volcanoes and mountain peaks are desert surficial features of mountains and plateaus (C.5.b.i in the Dry Andes). Glaciated valleys and cirques at high elevations relate to the glacial environment (C.6, C.6.b.ii)."
     },
     {
       "articleTitle": "Himalayas",
       "relevantPathsAI": [
-        "C.6"
+        "B.3",
+        "C.6",
+        "C.6.b.ii"
       ],
-      "rationaleAI": "The Himalayas contain extensive glaciers and are shaped by glacial processes (C.6), including glaciated valleys, cirques, and moraines, with hydrology feeding major river systems."
+      "rationaleAI": "Continental collision tectonics forming the highest mountain range exemplify volcanic-tectonic processes (B.3). Glaciology and peaks above 7,200 m with glaciated valleys, cirques, and aretes address the glacial environment and landforms produced by glacial erosion (C.6, C.6.b.ii)."
     },
     {
       "articleTitle": "Arctic Ocean",
       "relevantPathsAI": [
         "C.7",
-        "A.7"
+        "C.6"
       ],
-      "rationaleAI": "The Arctic Ocean with its sea ice dynamics is relevant to the polar environment (C.7) and glacial processes including periglacial phenomena (A.7)."
+      "rationaleAI": "The smallest ocean centered on the North Pole with near-complete ice cover and extreme cold exemplifies the polar environment (C.7). Sea ice dynamics and accelerating ice loss connect to the glacial environment (C.6)."
     },
     {
       "articleTitle": "Mediterranean Sea",
       "relevantPathsAI": [
         "A.6",
-        "C.4"
+        "C.4",
+        "C.4.c"
       ],
-      "rationaleAI": "A nearly landlocked sea with marine processes including coastal erosion and deposition (A.6) and marine environmental features (C.4)."
+      "rationaleAI": "A nearly landlocked intercontinental sea with circulation, wave action, and coastal features addresses marine processes (A.6) and the marine environment (C.4). Its fjord-like coastlines, peninsulas, and islands represent coastal features dependent on bedrock type and local topography (C.4.c)."
     },
     {
       "articleTitle": "Island",
       "relevantPathsAI": [
+        "C.4.a",
         "C.4.a.iv",
         "C.4.c"
       ],
-      "rationaleAI": "Islands formed through volcanism, coral reef accretion, and sediment deposition relate to coral reefs (C.4.a.iv) and coastal features dependent on bedrock and topography including peninsulas and islands (C.4.c)."
+      "rationaleAI": "Islands formed by volcanism, coral reef accretion (atolls — C.4.a.iv), and sediment deposition (barrier islands) are coastal features resulting from depositional processes (C.4.a). Continental islands and volcanic islands dependent on bedrock type and local topography address coastal features dependent on bedrock structure (C.4.c)."
     },
     {
       "articleTitle": "Storm",
       "relevantPathsAI": [
-        "A.6"
+        "A.4",
+        "A.5",
+        "A.6.a"
       ],
-      "rationaleAI": "Storms cause storm surge, flooding, and wind-driven erosion and deposition, relevant to marine processes and coastal material modification (A.6)."
+      "rationaleAI": "Storms cause flooding affecting fluvial processes (A.4), drive dust storms relevant to eolian processes (A.5), and generate storm surges that erode and deposit coastal materials via waves and currents (A.6.a)."
     }
   ],
   "_curatedBy": "ai",

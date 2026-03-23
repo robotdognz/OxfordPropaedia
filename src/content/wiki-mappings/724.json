@@ -8,43 +8,43 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Extraction of geological materials including metals, coal, gemstones, and industrial minerals corresponds to mining and quarrying (B.1), with surface and underground operations (B.1.a) yielding coal, stone, and metal ores (B.1.b)."
+      "rationaleAI": "Extraction of geological materials including metals, coal, gemstones, and industrial minerals from surface and subsurface addresses mining and quarrying (B.1). Surface (open-pit, high-wall) and underground operations are processes of underground and surface mining (B.1.a). Products including coal, metal ores, and gemstones (B.1.b)."
     },
     {
       "articleTitle": "Silver",
       "relevantPathsAI": [
         "C.3.m"
       ],
-      "rationaleAI": "Silver production, mostly as a byproduct of copper, gold, lead, and zinc refining, corresponds to production and processing of silver (C.3.m)."
+      "rationaleAI": "Silver as a precious metal produced primarily as a byproduct of copper, gold, lead, and zinc refining directly addresses production and processing of silver (C.3.m)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Extraction and performance of metallic elements, covering mineral processing, reduction, and phase transformations, corresponds to production and processing of metal ores and metals (C.3)."
+      "rationaleAI": "Materials science of metallic elements encompassing extraction (mineral processing, reduction, oxidation) and physical metallurgy (crystallography, phase transformations) addresses production and processing of metal ores and metals broadly (C.3). Ferrous metallurgy covering iron and steel, and non-ferrous covering aluminium, copper, and titanium connect to specific metal processing paths."
     },
     {
       "articleTitle": "Wood",
       "relevantPathsAI": [
         "C.8.b"
       ],
-      "rationaleAI": "Wood processing into roundwood, sawn wood, veneer, plywood, and laminated timber corresponds to obtaining wood products from plant materials (C.8.b)."
+      "rationaleAI": "Secondary xylem tissue processed into roundwood, sawn wood, plywood, laminated timber, particleboard, and fibreboard directly addresses processing of plant products to obtain roundwood, sawn wood, veneer, plywood, laminated constructions, particleboard, and fibreboard (C.8.b)."
     },
     {
       "articleTitle": "Salt",
       "relevantPathsAI": [
+        "B.1.b",
         "C.6"
       ],
-      "rationaleAI": "Salt production from salt mines and sea evaporation corresponds to processing of water to obtain salt (C.6)."
+      "rationaleAI": "Salt as a mineral produced from salt mines is a mining product (B.1.b). Production from sea evaporation and mineral springs connects to processing of water to obtain salt (C.6)."
     },
     {
       "articleTitle": "Hydrogen",
       "relevantPathsAI": [
-        "C.6",
-        "C.7"
+        "C.6"
       ],
-      "rationaleAI": "Hydrogen production via steam reforming and electrolysis corresponds to processing of water to obtain hydrogen (C.6) and processing of air (C.7)."
+      "rationaleAI": "Industrial hydrogen production via electrolysis of water connects to processing of water to obtain hydrogen and other elements (C.6)."
     },
     {
       "articleTitle": "Silicon",
@@ -52,14 +52,14 @@
         "C.5.a",
         "C.5.c"
       ],
-      "rationaleAI": "Silicon occurring as silica and silicates, used in glass, ceramics, and cement, corresponds to manufacture of glass (C.5.a) and industrial ceramics (C.5.c)."
+      "rationaleAI": "Silicon occurring as silica (SiO2) and silicates, used in construction materials including cement, glass, and ceramics, addresses manufacture of glass and glass products (C.5.a) and manufacture of industrial ceramics (C.5.c)."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
         "C.3.g"
       ],
-      "rationaleAI": "Iron production via blast furnace, direct reduction, and electric arc processes corresponds to production and processing of iron (C.3.g)."
+      "rationaleAI": "Iron as the most economically indispensable metal, processed via blast furnace, direct reduction, and electric arc steelmaking, directly addresses production and processing of iron (C.3.g)."
     },
     {
       "articleTitle": "Petroleum",
@@ -67,28 +67,28 @@
         "B.2",
         "C.1"
       ],
-      "rationaleAI": "Crude oil recovery by drilling and unconventional means corresponds to petroleum and natural gas production (B.2), and refining by distillation corresponds to petroleum refining (C.1)."
+      "rationaleAI": "Recovery of crude oil by drilling and unconventional means (fracking, oil sands) addresses petroleum and natural gas production (B.2). Refining by distillation into gasoline, diesel, kerosene, jet fuel, lubricants, bitumen, and chemical feedstocks addresses petroleum refining (C.1)."
     },
     {
       "articleTitle": "Copper",
       "relevantPathsAI": [
         "C.3.e"
       ],
-      "rationaleAI": "Copper smelting and alloying with tin (bronze) and zinc (brass) corresponds to production and processing of copper (C.3.e)."
+      "rationaleAI": "Copper as a ductile transition metal historically among the first smelted and alloyed (bronze, brass), with industrial applications in electrical wiring and electronics, directly addresses production and processing of copper (C.3.e)."
     },
     {
       "articleTitle": "Metal",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Metals characterized by conductivity, ductility, and malleability, classified as ferrous/non-ferrous, correspond broadly to production and processing of metal ores and metals (C.3)."
+      "rationaleAI": "Metals classified as ferrous/non-ferrous, precious/base, with metallurgy intersecting materials science and extraction, broadly address production and processing of metal ores and metals (C.3)."
     },
     {
       "articleTitle": "Steel",
       "relevantPathsAI": [
         "C.3.o"
       ],
-      "rationaleAI": "Iron-carbon alloy production from bloomery furnaces through basic oxygen steelmaking corresponds to steel and steel alloys (C.3.o)."
+      "rationaleAI": "Iron-carbon alloys produced via Bessemer process, basic oxygen steelmaking, and electric arc processes, including carbon steel, alloy steel, and stainless steel, directly address steel and steel alloys (C.3.o)."
     },
     {
       "articleTitle": "Fossil fuel",
@@ -96,35 +96,35 @@
         "B.1.b",
         "B.2"
       ],
-      "rationaleAI": "Coal, petroleum, and natural gas as non-renewable energy sources correspond to coal as a mining product (B.1.b) and petroleum/natural gas production (B.2)."
+      "rationaleAI": "Coal as a fossil fuel is a mining product (B.1.b). Petroleum and natural gas as fossil fuels connect to petroleum and natural gas production (B.2)."
     },
     {
       "articleTitle": "Concrete",
       "relevantPathsAI": [
         "C.5.b"
       ],
-      "rationaleAI": "Portland cement as the binding agent in concrete corresponds to manufacture of cement and gypsum plasters (C.5.b)."
+      "rationaleAI": "Composite material of aggregate bound by hydrated Portland cement, the world's most-manufactured building material, directly addresses manufacture of cement, gypsum plasters, and plastic cements (C.5.b)."
     },
     {
       "articleTitle": "Natural rubber",
       "relevantPathsAI": [
         "C.8.c"
       ],
-      "rationaleAI": "Natural rubber harvested as latex corresponds to obtaining nonfood products from plant and animal processing (C.8.c)."
+      "rationaleAI": "Natural rubber harvested as latex from Hevea brasiliensis, a non-food plant product used for tires, medical devices, and industrial seals, addresses processing of plant products to obtain nonfood products (C.8.c)."
     },
     {
       "articleTitle": "Gold",
       "relevantPathsAI": [
         "C.3.f"
       ],
-      "rationaleAI": "Gold occurring in native form, veins, and alluvial deposits corresponds to production and processing of gold (C.3.f)."
+      "rationaleAI": "Gold occurring naturally in native form, veins, and alluvial deposits, used in jewelry, electronics, and medicine, directly addresses production and processing of gold (C.3.f)."
     },
     {
       "articleTitle": "Bronze",
       "relevantPathsAI": [
         "C.3.v"
       ],
-      "rationaleAI": "Copper-tin alloy corresponds to metal alloys (C.3.v) as a historically significant product of metallurgical processing."
+      "rationaleAI": "Bronze as a copper-tin alloy augmented with various metals for specific properties directly addresses metal alloys (C.3.v)."
     },
     {
       "articleTitle": "Coal",
@@ -132,72 +132,73 @@
         "B.1.b",
         "C.2"
       ],
-      "rationaleAI": "Coal as a mining product (B.1.b) and its utilization for production of coke, coal tar, and chemicals (C.2)."
+      "rationaleAI": "Coal as a combustible sedimentary rock extracted by mining is a mining product (B.1.b). Classified into lignite, sub-bituminous, bituminous, and anthracite for energy use, it addresses coal utilization including production of coke, gas, and chemicals (C.2)."
     },
     {
       "articleTitle": "Nitrogen",
       "relevantPathsAI": [
         "C.7"
       ],
-      "rationaleAI": "Nitrogen constituting 78% of Earth's atmosphere corresponds to processing of air to obtain nitrogen (C.7)."
+      "rationaleAI": "Nitrogen forming ~78% of Earth's atmosphere, industrially fixed into ammonia, nitric acid, and fertilizers, connects to processing of air to obtain nitrogen and other gases (C.7)."
     },
     {
       "articleTitle": "Oxygen",
       "relevantPathsAI": [
+        "C.6",
         "C.7"
       ],
-      "rationaleAI": "Oxygen as the most abundant crustal element corresponds to processing of air to obtain oxygen (C.7)."
+      "rationaleAI": "Oxygen as the most abundant element in Earth's crust, obtained industrially from water electrolysis, addresses processing of water to obtain oxygen (C.6). As a major atmospheric component, also obtainable through processing of air to obtain oxygen (C.7)."
     },
     {
       "articleTitle": "Alloy",
       "relevantPathsAI": [
         "C.3.v"
       ],
-      "rationaleAI": "Metallic mixtures combining elements for improved properties correspond to metal alloys (C.3.v)."
+      "rationaleAI": "Metallic mixtures of two or more elements including bronze, steel, brass, sterling silver, duralumin, and titanium alloys, with heat treatment altering properties, directly address metal alloys (C.3.v)."
     },
     {
       "articleTitle": "Mineral",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B.1.b"
       ],
-      "rationaleAI": "Naturally occurring solid inorganic substances correspond to the identification and distribution of natural resources (A.1)."
+      "rationaleAI": "Naturally occurring solid inorganic substances classified into silicates, oxides, sulfides, and other groups address identification and distribution of natural resources (A.1). Minerals as products of mining and quarrying (B.1.b)."
     },
     {
       "articleTitle": "Forest",
       "relevantPathsAI": [
         "A.1",
-        "A.2.a",
         "C.8.b"
       ],
-      "rationaleAI": "Tree-dominated ecosystems as biological resources (A.1), subject to conservation (A.2.a), and the source of wood products (C.8.b)."
+      "rationaleAI": "Forests as a biological resource covering 31% of Earth's land address identification and distribution of natural resources (A.1). Timber and wood products from forests connect to processing plant products to obtain roundwood, sawn wood, veneer, plywood, and fibreboard (C.8.b)."
     },
     {
       "articleTitle": "Cotton",
       "relevantPathsAI": [
         "C.8.f"
       ],
-      "rationaleAI": "Cellulosic staple fiber harvested from seed bolls corresponds to obtaining natural fibers from plant products (C.8.f)."
+      "rationaleAI": "Cotton as a cellulosic staple fibre spun into yarn and woven into cloth — the most widely used natural textile fibre — directly addresses processing of plant products to obtain natural fibres (C.8.f)."
     },
     {
       "articleTitle": "Textile",
       "relevantPathsAI": [
         "C.8.f"
       ],
-      "rationaleAI": "Fibre-based materials from natural and synthetic sources correspond to obtaining natural fibers (C.8.f) as raw material inputs."
+      "rationaleAI": "Fibre-based materials produced from natural (plant, animal) and synthetic sources, with fibre and yarn formation, address processing of plant and animal products to obtain natural fibres (C.8.f)."
     },
     {
       "articleTitle": "Explosive",
       "relevantPathsAI": [
         "B.1.a"
       ],
-      "rationaleAI": "Explosives used in mining operations for blasting correspond to processes of underground and surface mining (B.1.a)."
+      "rationaleAI": "Explosives with applications in mining and construction for blasting connect to mining processes (B.1.a), where controlled detonation is a fundamental extraction technique."
     },
     {
       "articleTitle": "Geology",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Earth science including economic geology and petroleum geology underpins the identification and distribution of natural resources (A.1)."
+      "rationaleAI": "Geology's applied branches including economic geology, petroleum geology, and natural resource assessment address identification and distribution of natural resources (A.1)."
     }
   ],
   "_curatedBy": "ai",

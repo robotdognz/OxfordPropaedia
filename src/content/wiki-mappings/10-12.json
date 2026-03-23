@@ -9,109 +9,112 @@
         "A.2",
         "A.3",
         "A.4",
-        "A.5",
         "B",
-        "C"
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Covers propositional and first-order classical logic, modal, higher-order, and deviant logics, fallacies, metalogic, and formal semantics — directly spanning the entire formal logic (A), metalogic (B), and applied logic (C) outline. The most comprehensive single-article match for this section."
+      "rationaleAI": "Comprehensive coverage of formal logic including propositional and first-order classical logic (A.1, A.2), syllogistic reasoning (A.3), modal and deviant logics (A.4), metalogic and formal semantics (B), and fallacies and argumentation (C.1)."
     },
     {
       "articleTitle": "Kurt Gödel",
       "relevantPathsAI": [
+        "B",
         "B.3",
-        "B.4",
         "A.5"
       ],
-      "rationaleAI": "Gödel's incompleteness theorems are the defining results on completeness and consistency of formal systems (B.3) and his work on the independence of the axiom of choice addresses decidability; his contributions to modal logic (clarifying classical, intuitionistic, modal relations) also maps to A.4 and B.4."
+      "rationaleAI": "Incompleteness theorems directly address completeness, consistency, and decidability of formal mathematical systems (B.3); independence results for axiom of choice and continuum hypothesis relate to set theory and natural-number arithmetic (A.5); proof theory contributions fall within metalogic broadly (B)."
     },
     {
       "articleTitle": "Set (mathematics)",
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Set theory and natural-number arithmetic constitute outline path A.5 directly; ZFC axiomatization, cardinality, and Cantor's results are the core content of formal set theory as a branch of the predicate calculus."
+      "rationaleAI": "ZFC axiomatic set theory, cardinality of infinite sets, and foundational role underpinning mathematical structures directly correspond to set theory and natural-number arithmetic within formal logic (A.5)."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
-        "C.4",
-        "C.3"
+        "C.4"
       ],
-      "rationaleAI": "AI employs formal logic — automated theorem proving, constraint satisfaction, planning systems — as core techniques; these correspond to logics of physical application (C.4) and practical logic dealing with planning and decision-making (C.3). Applied formal logic is foundational to AI reasoning systems."
+      "rationaleAI": "AI employs formal logic as a core technique for reasoning and decision-making, constituting a physical and computational application of logic (C.4)."
     },
     {
       "articleTitle": "Mathematical proof",
       "relevantPathsAI": [
-        "B.1",
-        "B.3"
+        "A",
+        "B",
+        "B.2"
       ],
-      "rationaleAI": "Mathematical proof is the direct subject of proof theory within metalogic (B.1 — nature and elements of metalogic); questions of completeness, consistency, and the limits of formal provability (B.3) are central to its treatment of formal and informal proof methods."
+      "rationaleAI": "Proof methods (direct, induction, contradiction) operate within formal logical systems (A); formal proofs using symbolic logic connect to formal systems and formal languages (B.2); proof theory intersects metalogic (B)."
     },
     {
       "articleTitle": "Aristotle",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "C.1"
       ],
-      "rationaleAI": "Aristotle's syllogistic is the historical origin of the theory of the syllogism (A.3) and his Organon established the predicate logic framework (A.2); he is the foundational figure for formal logic's development of both propositional and predicate analysis."
+      "rationaleAI": "Aristotle founded formal logic through the Organon and the theory of syllogistic reasoning (A.3); his work on demonstration and fallacies connects to the critique of forms of reasoning (C.1)."
     },
     {
       "articleTitle": "Truth",
       "relevantPathsAI": [
-        "B.5",
-        "C.1.b"
+        "B",
+        "C.2"
       ],
-      "rationaleAI": "The semantic theory of truth and Tarski's metalanguage analysis bear directly on model theory (B.5 — interpretations that satisfy axioms of a formal system) and the liar paradox connects to formal fallacies (C.1.b). Addresses logical semantics and truth-value gaps relevant to metalogic."
+      "rationaleAI": "Semantic theories of truth using metalanguage to analyze object-language truth conditions are central to metalogic (B); the liar paradox and truth-value gaps connect to formal semantics; epistemic dimensions of truth relate to epistemic logic (C.2)."
     },
     {
       "articleTitle": "Reason",
       "relevantPathsAI": [
+        "C",
         "C.1",
         "C.1.b"
       ],
-      "rationaleAI": "Addresses critique of forms of reasoning — deductive, inductive, abductive — including systematic biases and logical fallacies (C.1.b), making it relevant to the applied logic section's treatment of argumentation theory and analysis of fallacious reasoning (C.1)."
+      "rationaleAI": "Deductive, inductive, abductive, and analogical reasoning constitute forms of applied reasoning (C); systematic biases and fallacies documented by cognitive science connect to analysis of logical fallacies (C.1.b)."
     },
     {
       "articleTitle": "Ontology",
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Formal ontology — including Quine's criterion of ontological commitment based on existential quantification — is part of model theory and the study of what entities formal systems are committed to (B.5); directly connects the predicate calculus's quantifiers to ontological questions."
+      "rationaleAI": "Formal ontology applied in knowledge representation uses logical frameworks; Quine's criterion of ontological commitment connects logic to ontological questions within model theory and formal semantics (B.5)."
     },
     {
       "articleTitle": "Metaphysics",
       "relevantPathsAI": [
-        "A.4"
+        "C.2"
       ],
-      "rationaleAI": "Modal logic — outline path A.4 — concerns necessity, possibility, and contingency, which are the central concepts of metaphysical modality; the article on metaphysics directly addresses necessary vs. contingent truths and possible worlds, which modal logic formally systematizes."
+      "rationaleAI": "Metaphysical questions about necessary versus contingent truths and modality intersect with epistemic and modal logic (C.2); the connection to logic is tangential but present through formal treatments of necessity."
     },
     {
       "articleTitle": "Epistemology",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Epistemic logic (C.2) deals with the logical analysis of belief, knowledge, justification, and assertion — the precise subject matter of epistemology. Foundationalism, coherentism, and the logic of knowledge are shared concerns."
+      "rationaleAI": "Epistemology examines knowledge, belief, justification, and doubt -- the core concepts of epistemic logic dealing with belief, knowledge, assertion, doubt, and question (C.2)."
     },
     {
       "articleTitle": "Alan Turing",
       "relevantPathsAI": [
         "B.3",
-        "B.4"
+        "C.4"
       ],
-      "rationaleAI": "Turing's resolution of Hilbert's Entscheidungsproblem established undecidability of the predicate calculus (B.3, B.4 — decidability and undecidability of logical calculi); the Turing machine is foundational to the theory of computability within metalogic."
+      "rationaleAI": "The Turing machine formalized computability and decidability, directly addressing decidability and undecidability within metalogic (B.3); the Turing test and AI contributions represent logical application to physical systems (C.4)."
     },
     {
       "articleTitle": "Variable (mathematics)",
       "relevantPathsAI": [
+        "A.1.a",
         "A.2.a"
       ],
-      "rationaleAI": "Variables — including bound and free variables in mathematical logic — are the core syntactic elements of the predicate calculus (A.2.a), where individual variables and predicate variables with universal and existential quantifiers are defined. This article addresses their role in formal logical language."
+      "rationaleAI": "Propositional variables are fundamental elements of the propositional calculus (A.1.a); bound and free variables in mathematical logic are central to the predicate calculus with individual and predicate variables (A.2.a)."
     },
     {
       "articleTitle": "Natural number",
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Natural number arithmetic formally defined via Peano axioms connects directly to A.5 (set theory and natural-number arithmetic as branches of formal logic); the foundations of arithmetic and its axiomatic treatment are core content of this outline path."
+      "rationaleAI": "Peano axioms and set-theoretic construction of natural numbers directly relate to set theory and natural-number arithmetic within formal logic (A.5)."
     },
     {
       "articleTitle": "Infinity",
@@ -119,37 +122,35 @@
         "A.5",
         "B.3"
       ],
-      "rationaleAI": "Cantor's theory of infinite cardinalities and the axiom of infinity in ZFC are directly part of A.5 (set theory); the question of whether infinite formal systems can be proven consistent is central to B.3 (completeness, consistency, Gödel's results)."
+      "rationaleAI": "Cantor's results on infinite cardinalities and ZFC axiom of infinity relate to set theory and natural-number arithmetic (A.5); connections to computability and logical limits touch on metalogical discoveries about formal systems (B.3)."
     },
     {
       "articleTitle": "Thought",
       "relevantPathsAI": [
-        "C.1.b",
-        "C.2"
+        "C.1"
       ],
-      "rationaleAI": "The laws of thought (identity, non-contradiction, excluded middle) are discussed in this article and are the traditional axioms of classical logic; the article's treatment of counterfactual thinking connects to modal logic applications, and the logic of judgment relates to epistemic logic (C.2)."
+      "rationaleAI": "Laws of thought (identity, non-contradiction, excluded middle) and critical thinking relate to the critique of forms of reasoning and analysis of logical fallacies (C.1)."
     },
     {
       "articleTitle": "Scientific method",
       "relevantPathsAI": [
-        "C.1",
-        "C.4"
+        "C.1"
       ],
-      "rationaleAI": "The scientific method employs deductive and inductive logic, and its philosophical tensions (empiricism vs. rationalism, falsifiability) relate to C.1 (critique of forms of reasoning) and C.4 (logics of physical application — logic applied to empirical inference and experimental design)."
+      "rationaleAI": "Inductive hypothesis development, deductive prediction, and falsifiability as a demarcation criterion represent forms of reasoning analyzed within applied logic (C.1)."
     },
     {
       "articleTitle": "Cryptography",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Modern cryptography rests on mathematical logic and computational complexity — public-key cryptography depends on number-theoretic hardness assumptions and is a prime application of formal logical and mathematical methods to physical/digital systems (C.4 — logics of physical application)."
+      "rationaleAI": "Cryptographic systems rest on computational hardness assumptions and formal logical structures, representing a physical and computational application of logic (C.4)."
     },
     {
       "articleTitle": "Information",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Shannon information theory provides a logic of encoding, transmission, and entropy — foundational to the logics of physical application (C.4) and connecting formal logical structure to computational and communication systems."
+      "rationaleAI": "Information theory's formal quantification of information in bits and its connection to encoding and pattern recognition constitute a logical application to physical and computational systems (C.4)."
     },
     {
       "articleTitle": "Mathematics",
@@ -157,9 +158,9 @@
         "A.5",
         "B"
       ],
-      "rationaleAI": "Mathematics covers mathematical logic, set theory, and the foundational crisis (axiomatic method, proof theory), which overlap with A.5 (set theory and natural-number arithmetic in formal logic) and broadly with metalogic (B); the distinction between logic and mathematics is itself a metalogical question."
+      "rationaleAI": "Mathematical logic and set theory as branches of mathematics connect to set theory and natural-number arithmetic (A.5); the foundational crisis and axiomatic method relate to metalogic (B)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

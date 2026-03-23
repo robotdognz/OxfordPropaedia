@@ -4,47 +4,45 @@
     {
       "articleTitle": "Engine",
       "relevantPathsAI": [
-        "B.8",
-        "B.4.a",
-        "C.7"
+        "B.8.a",
+        "B.4.a"
       ],
-      "rationaleAI": "Converts energy forms into mechanical energy, encompassing internal combustion engines (B.8.a), steam engines (B.4.a), and electric motors; generators perform the inverse conversion for electric power generation (C.7)."
+      "rationaleAI": "Heat engines converting fuel combustion into mechanical energy, including internal combustion engines (piston, turbine) and external combustion engines (steam, Stirling), address devices for utilizing chemical energy (B.8.a) and steam engines and steam power plants (B.4.a)."
     },
     {
       "articleTitle": "Internal combustion engine",
       "relevantPathsAI": [
         "B.8.a"
       ],
-      "rationaleAI": "Gasoline, diesel, gas turbine, and jet engines where fuel combustion occurs within the working-fluid circuit directly correspond to internal-combustion engines (B.8.a)."
+      "rationaleAI": "Reciprocating engines using Otto and diesel cycles, gas turbines, and jet engines are internal-combustion engines including gasoline, gas turbine, diesel, jet, turbojet, fan-jet, and turboprop engines (B.8.a)."
     },
     {
       "articleTitle": "Electric motor",
       "relevantPathsAI": [
         "B.5.b"
       ],
-      "rationaleAI": "Converts electrical energy into mechanical energy via magnetic field interaction, with induction, synchronous, and commutator types corresponding to electric motors (B.5.b)."
+      "rationaleAI": "Converts electrical energy into mechanical energy via magnetic field and current-carrying windings, encompassing induction motors, synchronous motors, and commutator motors utilizing AC and DC (B.5.b)."
     },
     {
       "articleTitle": "Electric battery",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Electrochemical cells converting chemical energy into electrical energy via redox reactions directly correspond to batteries and fuel cells (C.4)."
+      "rationaleAI": "Electrochemical cells converting chemical energy into electrical energy via redox reactions, including primary and secondary (rechargeable) batteries, are batteries and fuel cells for energy conversion (C.4)."
     },
     {
       "articleTitle": "Semiconductor",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "P-n junctions forming diodes, transistors, and integrated circuits correspond to solid-state devices including transistors and semiconductor diodes (D.2)."
+      "rationaleAI": "Semiconductor materials with conductivity modifiable by doping, forming p-n junctions as the basis of diodes, transistors, and integrated circuits, are solid-state devices for energy concentration and control (D.2)."
     },
     {
       "articleTitle": "Electronics",
       "relevantPathsAI": [
-        "D.1",
         "D.2"
       ],
-      "rationaleAI": "Design and operation of devices using transistors, diodes, and integrated circuits corresponds to electron tubes (D.1) and solid-state devices (D.2) for energy concentration and control."
+      "rationaleAI": "Design and operation of devices using transistors, diodes, and integrated circuits for signal manipulation and switching directly addresses solid-state devices for energy concentration and control (D.2)."
     },
     {
       "articleTitle": "Nikola Tesla",
@@ -52,36 +50,39 @@
         "B.5.b",
         "C.7"
       ],
-      "rationaleAI": "Designed the AC induction motor (B.5.b) and polyphase AC power system forming the cornerstone of modern electrical power distribution and generation (C.7)."
+      "rationaleAI": "Design of the AC induction motor and polyphase AC power system addresses electric motors including induction and synchronous motors (B.5.b). Development of electrical power distribution infrastructure connects to devices for electric power generation (C.7)."
     },
     {
       "articleTitle": "Gunpowder",
       "relevantPathsAI": [
         "B.8.b"
       ],
-      "rationaleAI": "The earliest chemical explosive consisting of potassium nitrate, charcoal, and sulfur corresponds to black powder as a chemical explosive (B.8.b)."
+      "rationaleAI": "The earliest known chemical explosive (low explosive, deflagrating propellant) composed of potassium nitrate, charcoal, and sulfur is black powder — the first chemical explosive listed under chemical explosives (B.8.b)."
     },
     {
       "articleTitle": "Steam engine",
       "relevantPathsAI": [
-        "B.4.a"
+        "B.4.a",
+        "B.4.b"
       ],
-      "rationaleAI": "External combustion heat engine using steam pressure to drive pistons or turbines corresponds to steam engines and steam power plants (B.4.a)."
+      "rationaleAI": "External combustion heat engine using steam pressure to drive a piston or turbine, analyzed via the Rankine cycle, directly addresses steam engines and steam power plants (B.4.a). Steam turbines that displaced reciprocating engines in power generation address steam turbines (B.4.b)."
     },
     {
       "articleTitle": "Electricity",
       "relevantPathsAI": [
         "B.5",
+        "B.5.a",
         "C.7"
       ],
-      "rationaleAI": "Electric charge, current, and electromagnetic induction correspond to devices utilizing magnetic and electrical energy (B.5) and electric power generation (C.7)."
+      "rationaleAI": "Electric charge, current, and electromagnetic induction broadly address devices for utilizing magnetic and electrical energy (B.5), including magnets and electromagnets (B.5.a). Power generation and transmission connect to devices for electric power generation including generators and dynamos (C.7)."
     },
     {
       "articleTitle": "Petroleum",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "B.8.a"
       ],
-      "rationaleAI": "Crude oil as a non-renewable hydrocarbon energy source corresponds to nonrenewable energy sources including oil (A.3)."
+      "rationaleAI": "Petroleum as a non-renewable hydrocarbon fuel is a nonrenewable energy source alongside coal and natural gas (A.3). Refined into gasoline, diesel, kerosene, and jet fuel, it powers internal-combustion engines (B.8.a)."
     },
     {
       "articleTitle": "Nuclear power",
@@ -89,101 +90,103 @@
         "A.1",
         "B.9"
       ],
-      "rationaleAI": "Electricity generation through nuclear fission corresponds to primary energy sources including nuclear fission and radioactivity (A.1) and devices for utilizing nuclear energy including fission reactors (B.9)."
+      "rationaleAI": "Nuclear fission of uranium/plutonium and experimental fusion reactions are primary energy sources including thermonuclear reaction and nuclear fission (A.1). Civilian fission reactors supplying ~9% of global electricity are devices and materials for utilizing nuclear energy (B.9)."
     },
     {
       "articleTitle": "Hydropower",
       "relevantPathsAI": [
         "A.2",
-        "B.2"
+        "B.2",
+        "C.7"
       ],
-      "rationaleAI": "Converting gravitational potential energy of flowing water into electricity corresponds to recurring water energy sources (A.2) and devices utilizing water energy including waterwheels and water turbines (B.2)."
+      "rationaleAI": "Gravitational potential and kinetic energy of flowing water is a recurring energy source (A.2). Watermills, waterwheels, and water turbines are devices for utilizing water energy (B.2). Hydroelectric generation uses hydraulic-turbine-driven generators for electric power generation (C.7)."
     },
     {
       "articleTitle": "Plasma (physics)",
       "relevantPathsAI": [
-        "B.9"
+        "C.3"
       ],
-      "rationaleAI": "Ionized gas behavior relevant to nuclear fusion reactors and plasma-based energy applications (B.9)."
+      "rationaleAI": "Electrically conductive ionized gas governed by magnetohydrodynamics, with applications in nuclear fusion reactors and space propulsion, connects to magnetohydrodynamic power generators for energy conversion (C.3)."
     },
     {
       "articleTitle": "Silicon",
       "relevantPathsAI": [
-        "D.2",
-        "C.7"
+        "B.10",
+        "D.2"
       ],
-      "rationaleAI": "Silicon as a semiconductor material for transistors, integrated circuits, and solar cells corresponds to solid-state devices (D.2) and photovoltaic devices for power generation (C.7)."
+      "rationaleAI": "Silicon in solar cells addresses devices for utilizing solar energy (B.10). Silicon as the dominant semiconductor for transistors and integrated circuits addresses solid-state devices for energy concentration and control (D.2)."
     },
     {
       "articleTitle": "Electric light",
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "Incandescent, gas-discharge, and LED lighting devices converting electrical energy into visible light correspond to lamps and other lighting devices (C.5)."
+      "rationaleAI": "Incandescent, gas-discharge (fluorescent), and LED devices converting electrical energy into visible light are lamps and other lighting devices for energy conversion (C.5)."
     },
     {
       "articleTitle": "Rocket",
       "relevantPathsAI": [
         "B.8.a"
       ],
-      "rationaleAI": "Self-propelled vehicles generating thrust via chemical reaction correspond to rocket engines as internal-combustion engine types (B.8.a)."
+      "rationaleAI": "Self-propelled vehicles generating thrust via high-speed exhaust with liquid bipropellants, solid fuels, and hybrid systems are rocket engines — internal-combustion engines utilizing chemical energy (B.8.a)."
     },
     {
       "articleTitle": "Laser",
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Produces coherent light through stimulated emission in semiconductor and other gain media, corresponding to optoelectronic devices including semiconductor lasers (D.3)."
+      "rationaleAI": "Semiconductor lasers producing coherent monochromatic light through stimulated emission are optoelectronic devices for energy concentration and control (D.3), alongside optical fibres used in laser-based fiber-optic communications."
     },
     {
       "articleTitle": "Explosive",
       "relevantPathsAI": [
         "B.8.b"
       ],
-      "rationaleAI": "Reactive substances releasing stored energy correspond to chemical explosives including black powder, nitroglycerin, dynamites, and military explosives (B.8.b)."
+      "rationaleAI": "High and low explosives releasing stored chemical energy suddenly, classified by detonation velocity and sensitivity, directly address chemical explosives including nitroglycerin, dynamites, and military explosives (B.8.b)."
     },
     {
       "articleTitle": "Natural gas",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Fossil fuel composed primarily of methane corresponds to nonrenewable energy sources including natural gas (A.3)."
+      "rationaleAI": "Natural gas composed primarily of methane, extracted from geological formations and used for power generation and heating, is a nonrenewable energy source (A.3)."
     },
     {
       "articleTitle": "Solar energy",
       "relevantPathsAI": [
         "A.2",
-        "B.10"
+        "B.10",
+        "C.7"
       ],
-      "rationaleAI": "Electromagnetic radiation harnessed via photovoltaic and concentrated solar power corresponds to recurring solar energy sources (A.2) and devices for utilizing solar energy (B.10)."
+      "rationaleAI": "Solar radiation is a recurring energy source (A.2). Photovoltaic systems and concentrated solar power are devices for utilizing solar energy (B.10). Photovoltaic devices are also devices for electric power generation (C.7)."
     },
     {
       "articleTitle": "Refrigeration",
       "relevantPathsAI": [
         "B.7"
       ],
-      "rationaleAI": "Heat transfer using vapour-compression and thermoelectric effects corresponds to devices for utilizing heat energy including refrigeration equipment (B.7)."
+      "rationaleAI": "Mechanical vapour-compression cycles, thermoelectric (Peltier) effects, and heat transfer to higher-temperature sinks are devices for utilizing heat energy including heat exchangers and refrigeration equipment (B.7)."
     },
     {
       "articleTitle": "Energy",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "The conserved scalar physical quantity representing capacity to do work, manifesting as kinetic, potential, chemical, thermal, radiant, and nuclear forms, corresponds to major types of energy useful to humankind (A)."
+      "rationaleAI": "Energy as a conserved physical quantity manifesting in kinetic, potential, chemical, thermal, radiant, and nuclear forms provides the foundational framework for major types of energy useful to humankind (A)."
     },
     {
       "articleTitle": "Fossil fuel",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Coal, petroleum, and natural gas as non-renewable carbon-rich energy sources correspond to nonrenewable energy sources (A.3)."
+      "rationaleAI": "Coal, petroleum, and natural gas as carbon-rich non-renewable energy sources supplying 77% of global primary energy are nonrenewable energy sources (A.3)."
     },
     {
       "articleTitle": "Radioactive decay",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Spontaneous nuclear transformation releasing energy as radiation corresponds to radioactivity as a primary energy source (A.1)."
+      "rationaleAI": "Spontaneous nuclear transformation of unstable isotopes releasing energy as radiation — alpha, beta, and gamma decay — is radioactivity as a primary energy source (A.1)."
     },
     {
       "articleTitle": "Wind",
@@ -191,21 +194,22 @@
         "A.2",
         "B.2"
       ],
-      "rationaleAI": "Air movement driven by differential solar heating corresponds to recurring wind energy sources (A.2) and devices utilizing wind energy including windmills (B.2)."
+      "rationaleAI": "Wind as movement of air driven by differential solar heating is a recurring energy source (A.2). Wind's role in sailing and power generation connects to devices for utilizing wind energy including sails, windmills, and wind turbines (B.2)."
     },
     {
       "articleTitle": "Coal",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Combustible sedimentary rock supplying a quarter of global primary energy corresponds to nonrenewable energy sources including coal (A.3)."
+      "rationaleAI": "Combustible sedimentary rock supplying roughly a quarter of global primary energy is coal as a nonrenewable energy source (A.3)."
     },
     {
       "articleTitle": "Simple machine",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "The six classical mechanical devices including lever, pulley, and wheel correspond to devices for utilizing muscle energy (B.1)."
+      "rationaleAI": "The six classical mechanical devices — lever, pulley, inclined plane, wheel and axle, wedge, screw — that redirect or amplify force using mechanical advantage address devices for utilizing muscle energy including pulley, lever, and block and tackle (B.1). Counterweight mechanisms using mechanical advantage relate to devices for utilizing gravitational energy (B.3)."
     },
     {
       "articleTitle": "Dam",
@@ -213,15 +217,14 @@
         "B.2",
         "C.7"
       ],
-      "rationaleAI": "Barriers creating reservoirs for hydroelectric power generation correspond to devices utilizing water energy (B.2) and hydraulic-turbine-driven generators (C.7)."
+      "rationaleAI": "Barriers impeding water flow to create reservoirs for hydroelectric power generation involve water turbines as devices for utilizing water energy (B.2). Hydroelectric power generated by hydraulic-turbine-driven generators addresses devices for electric power generation (C.7)."
     },
     {
       "articleTitle": "Electron",
       "relevantPathsAI": [
-        "D.1",
-        "D.2"
+        "D.1"
       ],
-      "rationaleAI": "Free and bound electrons enabling cathode ray tubes and semiconductor devices correspond to electron tubes (D.1) and solid-state devices (D.2)."
+      "rationaleAI": "Electrons in cathode ray tubes and electron microscopes, with tunable carrier density in semiconductors, connect to electron tubes as devices for energy concentration and control (D.1)."
     }
   ],
   "_curatedBy": "ai",

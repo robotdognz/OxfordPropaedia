@@ -5,22 +5,18 @@
       "articleTitle": "Social science",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H"
+        "A.1",
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "As the overview article for the entire cluster of social science disciplines, it addresses the history and scope of anthropology, sociology, economics, political science, geography, psychology, and linguistics, providing broad coverage across all outline divisions."
+      "rationaleAI": "Comprehensive overview of the social sciences as a cluster of disciplines tracing from 18th-century origins (A.1) through 19th-century disciplinary formation (A.2) to 20th-century methodological developments including quantitative methods and computational tools (A.3.c, A.3.d.iii, A.3.d.iv). Covers positivist and interpretivist approaches and the role of social science in policy and governance (A.3.d.ii)."
     },
     {
       "articleTitle": "Sociology",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
+        "A.2.b",
+        "A.3.d",
+        "A.3.e",
         "C",
         "C.1",
         "C.2",
@@ -28,76 +24,81 @@
         "C.4",
         "C.5"
       ],
-      "rationaleAI": "Sociology traces its origins with Comte, Marx, and Durkheim (A.1, A.2) and 20th-century methodological evolution (A.3), and comprehensively covers the background, methodology, status, and emergent trends of sociology as well as cognate disciplines including criminology and demography (C.1–C.5)."
+      "rationaleAI": "Directly addresses the nature and development of sociology (C) from Comte, Marx, Spencer, and Durkheim (C.1), through functionalism, conflict theory, and structuralism (A.3.e, C.2), to contemporary subfields including criminology and social psychology (C.5). The discipline's 19th-century emergence as a separate discipline (A.2.b) and its 20th-century specialization and cross-disciplinary approaches (A.3.d) are covered."
     },
     {
       "articleTitle": "Political science",
       "relevantPathsAI": [
+        "A.2.b",
+        "A.3.d.iii",
+        "A.3.d.iv",
         "E",
         "E.1",
         "E.2",
         "E.3"
       ],
-      "rationaleAI": "Political science covers the discipline's emergence as an academic field in the late 19th century (E.1), the scope and quantitative methods of contemporary political science including comparative politics and formal modelling (E.2), and cognate areas such as public administration and international relations (E.3)."
+      "rationaleAI": "Directly addresses the nature of political science (E), its emergence as an academic discipline in the late 19th century (E.1), and its contemporary scope and methods including quantitative approaches, formal modelling, and surveys (E.2, A.3.d.iii, A.3.d.iv). Covers cognate disciplines including international relations, public administration, and public policy (E.3)."
     },
     {
       "articleTitle": "Economics",
       "relevantPathsAI": [
+        "A.2.b",
         "D",
         "D.1",
         "D.2",
         "D.3"
       ],
-      "rationaleAI": "Economics covers the full history of economic thought from classical through Keynesian and post-2008 frameworks (D.1), the scope and methods including microeconomics and macroeconomics (D.2), and cognate disciplines including mathematical economics and behavioral economics (D.3)."
+      "rationaleAI": "Directly covers the nature of economics (D), including the history of economic thought from classical through Keynesian and post-2008 frameworks (D.1), the scope of microeconomics and macroeconomics (D.2), and cognate disciplines including behavioral and mathematical economics (D.3). Its 19th-century development as a separate discipline aligns with A.2.b."
     },
     {
       "articleTitle": "Anthropology",
       "relevantPathsAI": [
+        "A.2.b",
         "B",
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Anthropology directly addresses B.1 (background of anthropology) and B.2 (scope and methods including the division between cultural/sociocultural and physical/biological anthropology), with ethnography as its core method and all four subfields covered."
+      "rationaleAI": "Directly addresses the nature of anthropology (B), its background (B.1), and the division between cultural and physical anthropology with ethnographic methods (B.2). The discipline's 19th-century emergence as a separate discipline aligns with A.2.b."
     },
     {
       "articleTitle": "Government",
       "relevantPathsAI": [
-        "E.2",
         "E.3"
       ],
-      "rationaleAI": "Government covers constitutional frameworks, branches of power, and historical and contemporary forms of governance, mapping to the scope and methods of contemporary political science (E.2) and cognate areas including public administration and political systems (E.3)."
+      "rationaleAI": "Covers legislative, executive, and judicial branches, constitutional frameworks, public administration, and forms of governance including democracy, monarchy, and autocracy, relevant to the cognate disciplines of political science including political systems and public administration (E.3)."
     },
     {
       "articleTitle": "Human migration",
       "relevantPathsAI": [
-        "C.5",
-        "F.2"
+        "C.5"
       ],
-      "rationaleAI": "Human migration is a core subject of demography — a cognate discipline explicitly listed under C.5 — and connects to human geography's study of population distribution and settlement patterns within F.2 (scope and methods of geography)."
+      "rationaleAI": "Migration intersects with demography (C.5) as a cognate discipline of sociology, and draws on theoretical frameworks from labor economics and political science that cross social science boundaries."
     },
     {
       "articleTitle": "Karl Marx",
       "relevantPathsAI": [
+        "A.2.a",
         "A.3.b",
+        "C.1",
         "D.1"
       ],
-      "rationaleAI": "Marx is the primary source of Marxist influence on the social sciences (A.3.b), and his economic theory — historical materialism, surplus value, and critique of capitalism — was foundational to the development of economic theory (D.1), particularly as a challenge to classical political economy."
+      "rationaleAI": "Historical materialism and class struggle theory represent a foundational 19th-century influence on social, political, and economic theories (A.2.a). Marxism's continuing 20th-century influence on the social sciences is directly addressed (A.3.b). Marx shaped the background of sociology (C.1) and the development of economic theories (D.1)."
     },
     {
       "articleTitle": "History of philosophy",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b"
+        "A.1"
       ],
-      "rationaleAI": "The history of philosophy traces the intellectual precursors from which the social sciences emerged, including Scholastic and Renaissance thought (A.1.a) and Enlightenment social and political philosophy (A.1.b) that directly shaped the reform movements from which social science developed."
+      "rationaleAI": "The survey of systematic rational inquiry from Presocratic thought through Enlightenment traditions provides intellectual context for the origins of the social sciences in Renaissance and Enlightenment thought (A.1.a, A.1.b)."
     },
     {
       "articleTitle": "Social class",
       "relevantPathsAI": [
-        "C",
-        "C.1"
+        "A.2.a",
+        "A.3.b",
+        "C.2"
       ],
-      "rationaleAI": "Social class — covering Marxist, Weberian, and Bourdieusian stratification theory — is a foundational topic in the background and contemporary practice of sociology (C.1), connecting directly to sociology's study of social structure and the dynamics of stratification central to C.3 and C.4."
+      "rationaleAI": "Marxist class analysis (bourgeoisie vs. proletariat) and Weberian stratification theory represent key 19th-century social theories (A.2.a) and the continuing influence of Marxism (A.3.b). Class stratification is a core subject of sociological methodology and theory (C.2)."
     },
     {
       "articleTitle": "Human behavior",
@@ -105,7 +106,7 @@
         "G.2",
         "C.5"
       ],
-      "rationaleAI": "Human behavior covers the full interdisciplinary range of behavioral science touching the nature and scope of psychology (G.2), and its social dimensions — norms, conformity, group behavior — relate to social psychology as a cognate discipline of sociology (C.5)."
+      "rationaleAI": "The full range of human behavioral responses across psychological, social, and cultural domains maps to the nature and scope of psychology (G.2) and intersects with social psychology as a cognate discipline of both psychology and sociology (G.3, C.5)."
     },
     {
       "articleTitle": "Geography",
@@ -114,15 +115,15 @@
         "F.1",
         "F.2"
       ],
-      "rationaleAI": "Geography directly addresses F.1 (history of geography from Eratosthenes onward) and F.2 (scope and methods including the division between physical, human, and regional geography as well as technical/GIS approaches)."
+      "rationaleAI": "Directly addresses the nature of geography (F), its historical roots in Greek scholarship (F.1), and the division between physical, human, and regional geography with spatial analysis traditions (F.2)."
     },
     {
       "articleTitle": "Statistics",
       "relevantPathsAI": [
-        "A.3.d",
-        "D.3"
+        "A.2.b",
+        "A.3.d.iii"
       ],
-      "rationaleAI": "Statistics maps to A.3.d.iii (introduction of mathematical and quantitative methods and computers in social science) and A.3.d.iv (empiricism, data collection, surveys, and testing of theories); it also underlies econometrics as a cognate discipline of economics (D.3)."
+      "rationaleAI": "Social statistics developed as a separate discipline in the 19th century (A.2.b), and the introduction of mathematical and quantitative methods including statistical computing became central to 20th-century social sciences (A.3.d.iii)."
     },
     {
       "articleTitle": "Emotion",
@@ -130,68 +131,68 @@
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Emotion is a central topic within the nature and scope of psychology (G.2) and connects to physiological and social psychology as special branches (G.3), with the article covering neurophysiological substrates, evolutionary accounts, and cross-cultural variation."
+      "rationaleAI": "Emotion as a subject studied across psychology and neuroscience falls within the nature and scope of psychology (G.2), with connections to social psychology as a cognate discipline (G.3)."
     },
     {
       "articleTitle": "State (polity)",
       "relevantPathsAI": [
-        "E",
-        "E.2"
+        "E.2",
+        "E.3"
       ],
-      "rationaleAI": "The state article covers theories of state function, legitimacy, and historical forms of governance, directly relevant to the scope of contemporary political science (E.2) and the foundational political concept that defines the discipline's primary object of study."
+      "rationaleAI": "The state as a political entity exercising sovereign authority, with theories ranging from social contract to Marxist and pluralist models, is a core subject of contemporary political science (E.2) and its cognate disciplines including political systems and international relations (E.3)."
     },
     {
       "articleTitle": "Immanuel Kant",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Kant's political philosophy and Enlightenment epistemology were central to the heritage of the Enlightenment (A.1.b) that directly fostered conditions for social science's emergence through emphasis on rational, empirical reform of social and political institutions."
+      "rationaleAI": "Kant's Enlightenment philosophy of reason, political philosophy including perpetual peace, and epistemological contributions represent the heritage of the Enlightenment that shaped social reforms and the intellectual preconditions for social science (A.1.b)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "The Enlightenment is precisely identified in A.1.b as the heritage of social reforms and revolution from which social science emerged; its coverage of political theory, economics, and rational governance directly shaped the origins of the separate social science disciplines."
+      "rationaleAI": "The Enlightenment's emphasis on reason, empirical inquiry, and rational reform of social and political institutions directly constitutes the heritage of the Enlightenment that gave rise to the social sciences (A.1.b)."
     },
     {
       "articleTitle": "Information Age",
       "relevantPathsAI": [
-        "A.3.d"
+        "A.3.d.iii"
       ],
-      "rationaleAI": "The Information Age article covers computing, digital data, and the transformation of knowledge production, mapping to A.3.d.iii's focus on the introduction of mathematical, computational, and quantitative methods and computer use in the social sciences."
+      "rationaleAI": "The shift to information-technology-centred economies, computing, and data-driven analysis connects to the introduction of mathematical methods and the use of computers in 20th-century social sciences (A.3.d.iii)."
     },
     {
       "articleTitle": "Gender",
       "relevantPathsAI": [
         "B.2",
-        "C"
+        "C.2"
       ],
-      "rationaleAI": "Gender as a socioculturally constructed category is a key concern of sociocultural anthropology's scope and methods (B.2) and of sociology's study of social structure and stratification (C), with the article covering both social science and biological theoretical frameworks."
+      "rationaleAI": "Gender as a social construct examined through feminist theory, developmental psychology, and sociology connects to cultural anthropology's scope and methods (B.2) and the methodology of contemporary sociology (C.2)."
     },
     {
       "articleTitle": "Society",
       "relevantPathsAI": [
         "C",
-        "C.1"
+        "C.1",
+        "C.2"
       ],
-      "rationaleAI": "Society is the foundational object of sociological inquiry, and the article's coverage of social structure, roles, and theoretical frameworks — functionalism, conflict theory, symbolic interactionism — maps directly to the background and methodology of sociology (C.1, C.2)."
+      "rationaleAI": "The concept of society as a persistent group with social relations, division of labor, and theoretical frameworks including functionalism and conflict theory maps directly to the nature, background, and methodology of sociology (C, C.1, C.2)."
     },
     {
       "articleTitle": "Law",
       "relevantPathsAI": [
-        "E.3",
-        "C.5"
+        "E.3"
       ],
-      "rationaleAI": "Law is listed as a cognate area of political science through public law (E.3) and is connected to criminology and penology as cognate disciplines of sociology (C.5), making it substantively relevant at both of those intersections in the outline."
+      "rationaleAI": "Public law, constitutional law, and the intersection of law with sociology and political institutions connect to the cognate disciplines of political science including public law (E.3)."
     },
     {
       "articleTitle": "Niccolò Machiavelli",
       "relevantPathsAI": [
+        "A.1.a",
         "E.1"
       ],
-      "rationaleAI": "Machiavelli is conventionally identified as the founder of modern political science through his empirical analysis of power in The Prince and the Discourses, placing him as a formative figure in the history of political science (E.1)."
+      "rationaleAI": "Machiavelli's empirical analysis of power in the Renaissance represents a precursor to the social sciences (A.1.a) and a foundational figure in the history of political science (E.1)."
     },
     {
       "articleTitle": "John Locke",
@@ -199,41 +200,38 @@
         "A.1.b",
         "E.1"
       ],
-      "rationaleAI": "Locke's social contract theory and natural rights doctrine were foundational to the Enlightenment heritage of political and social reform (A.1.b) and to the history of political science (E.1), directly influencing constitutional liberalism and later empirical social science."
+      "rationaleAI": "Locke's social contract theory, empiricism, and natural rights philosophy represent core Enlightenment contributions (A.1.b) that shaped the history of political science (E.1)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "A.3.c",
-        "G.1",
-        "G.2"
+        "G.1"
       ],
-      "rationaleAI": "Freudian ideas are explicitly named as a major 20th-century influence on the social sciences (A.3.c); Freud also anchors the history of psychology (G.1) and his psychoanalytic framework shaped the nature and scope of psychology (G.2) and social psychology as a cognate discipline."
+      "rationaleAI": "Freud's psychoanalytic theory and its influence on understanding the unconscious, repression, and cultural analysis directly constitutes the influence of Freudian ideas on 20th-century social sciences (A.3.c) and the history of psychology (G.1)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "E.3",
         "A.3.a"
       ],
-      "rationaleAI": "Imperialism connects to international relations as a cognate area of political science (E.3), and the anti-imperialist revolution of rising expectations in the non-Western world is one of the named influences on 20th-century social science development (A.3.a)."
+      "rationaleAI": "The extension of power over foreign peoples, anti-imperialist movements, and theories of economic imperialism (Lenin, Hobson) connect to the influence of social upheaval in the non-Western world and the revolution of rising expectations (A.3.a)."
     },
     {
       "articleTitle": "Culture",
       "relevantPathsAI": [
         "B.2",
-        "C"
+        "C.2"
       ],
-      "rationaleAI": "Culture is the central object of study in sociocultural anthropology's scope and methods (B.2) and a fundamental concept in sociology's study of shared norms, institutions, and collective life (C), with the article covering both anthropological and sociological theoretical frameworks."
+      "rationaleAI": "Culture as the symbolic and normative content of collective life, studied through anthropology and sociology, connects to the scope and methods of anthropology (B.2) and the methodology of sociology (C.2)."
     },
     {
       "articleTitle": "Ethnicity",
       "relevantPathsAI": [
-        "B",
         "B.2",
-        "C"
+        "C.2"
       ],
-      "rationaleAI": "Ethnicity as a socioculturally constructed group identity is foundational in sociocultural anthropology (B.2 — cultural meaning, kinship, identity) and sociology (C — stratification, social structure), with the article covering primordialism, constructivism, and inter-ethnic dynamics."
+      "rationaleAI": "Ethnicity as socioculturally constructed identification studied through primordialism and constructivism connects to cultural anthropology's scope (B.2) and sociological methodology (C.2)."
     },
     {
       "articleTitle": "Politics",
@@ -241,47 +239,46 @@
         "E",
         "E.2"
       ],
-      "rationaleAI": "Politics provides the overview of collective decision-making and power distribution that frames the scope of political science as a discipline (E, E.2), covering forms of government, the political spectrum, and the relationship between political theory and empirical political science."
+      "rationaleAI": "The activities and systems of collective decision-making and power distribution, covering political theory, forms of government, and the left-right spectrum, map directly to the nature and scope of contemporary political science (E, E.2)."
     },
     {
       "articleTitle": "Ibn Khaldun",
       "relevantPathsAI": [
         "A.1.a",
-        "D.1"
+        "C.1"
       ],
-      "rationaleAI": "Ibn Khaldun is a medieval precursor to sociology and political science through his empirical theory of social cohesion and dynastic cycles (A.1.a), and his proto-macroeconomic analysis of supply, demand, and taxation places him in the development of economic theories (D.1)."
+      "rationaleAI": "Ibn Khaldun's Muqaddimah introduced systematic theories of historical causation, group solidarity (asabiyyah), and proto-macroeconomics, representing a precursor of the social sciences in the Middle Ages (A.1.a) and a forerunner of sociology (C.1)."
     },
     {
       "articleTitle": "Adam Smith",
       "relevantPathsAI": [
-        "D.1",
-        "A.2.b"
+        "A.1.b",
+        "D.1"
       ],
-      "rationaleAI": "Adam Smith is the founder of classical political economy, directly anchoring the development of economic theories (D.1); his work is also the paradigmatic example of the separation of economics as a distinct discipline in the 19th century (A.2.b)."
+      "rationaleAI": "Smith's Wealth of Nations founded classical political economy with theories of division of labour, free markets, and capital accumulation, representing both the Enlightenment heritage (A.1.b) and the development of economic theories (D.1)."
     },
     {
       "articleTitle": "Philosophy",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1"
       ],
-      "rationaleAI": "Philosophy as the parent discipline of all systematic inquiry provides the intellectual background and precursor tradition (A.1.a) from which the social sciences emerged, covering logic, epistemology, and political and moral philosophy as antecedents to empirical social science."
+      "rationaleAI": "Philosophy as the parent discipline of the social sciences, with branches including epistemology, ethics, and political philosophy, provides the intellectual origins from which the social sciences emerged (A.1)."
     },
     {
       "articleTitle": "Trade",
       "relevantPathsAI": [
-        "D",
-        "D.1"
+        "D.2"
       ],
-      "rationaleAI": "Trade is a core subject of economic theory covering comparative advantage, market mechanisms, and the history of exchange from ancient networks through modern globalization, connecting to the development of economic theories (D.1) and the scope of economics as a discipline (D)."
+      "rationaleAI": "Trade as the exchange of goods and services, covering specialization, comparative advantage, and free trade versus protectionism, falls within the scope and methods of economics including microeconomics and macroeconomics (D.2)."
     },
     {
       "articleTitle": "Finance",
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Finance is a cognate discipline of economics that fits within D.3 (mathematical economics, econometrics, accounting), and its focus on investment, risk management, and capital allocation reflects the applied quantitative extensions of economic science."
+      "rationaleAI": "Finance as the discipline of monetary resources, capital allocation, and risk management, distinguished from but connected to economics, aligns with cognate disciplines of economics including mathematical economics and accounting (D.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

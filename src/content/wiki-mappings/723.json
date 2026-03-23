@@ -4,55 +4,59 @@
     {
       "articleTitle": "Optics",
       "relevantPathsAI": [
-        "E.1",
-        "D.1.f"
+        "C",
+        "D.2.e",
+        "E.1"
       ],
-      "rationaleAI": "Study of light behavior, manipulation, and detection underpins microscopes and telescopes (E.1) and devices for measuring light intensity (D.1.f)."
+      "rationaleAI": "Optics as the study of electromagnetic radiation behaviour, covering refraction, diffraction, and polarisation, underpins the principles by which optical instruments operate (C). Polarimeters and refractometers for optical measurements (D.2.e) and instruments for observing phenomena such as microscopes and telescopes (E.1) all depend on optical principles."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
         "E.2"
       ],
-      "rationaleAI": "Instrument capturing images by focusing light onto film or sensors corresponds to instruments for recording phenomena (E.2)."
+      "rationaleAI": "Cameras as instruments capturing images by recording light chemically on film or electronically via sensors directly address instruments for recording phenomena (E.2)."
     },
     {
       "articleTitle": "Radar",
       "relevantPathsAI": [
         "G.7",
-        "H"
+        "G.5"
       ],
-      "rationaleAI": "Radio wave detection for determining distance, direction, and velocity corresponds to navigational techniques and devices (G.7) and instrumentation and control systems (H)."
+      "rationaleAI": "Radar as a system using radio waves to determine distance, direction, and velocity of objects directly addresses navigational techniques and devices (G.7). Its application in meteorology for weather tracking connects to meteorological measurement (G.5)."
     },
     {
       "articleTitle": "Telescope",
       "relevantPathsAI": [
-        "E.1.b"
+        "E.1.b",
+        "G.6"
       ],
-      "rationaleAI": "Devices for observing distant objects via electromagnetic emission, including optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems, directly correspond to telescopes (E.1.b)."
+      "rationaleAI": "Telescopes as devices for observing distant objects via electromagnetic emission across the full spectrum — optical, radio, infrared, X-ray, gamma-ray — directly address telescopes (E.1.b). Their centrality to observational astronomy connects to astronomical observations (G.6)."
     },
     {
       "articleTitle": "Microscope",
       "relevantPathsAI": [
         "E.1.a"
       ],
-      "rationaleAI": "Instruments for examining microscopic objects, including optical, electron, and scanning probe types, directly correspond to microscopes (E.1.a)."
+      "rationaleAI": "Microscopes as instruments for examining objects invisible to the naked eye, classified by beam type — optical, electron, fluorescence, scanning probe — directly address microscopes (E.1.a)."
     },
     {
       "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
         "D.2.c.i",
-        "G.2"
+        "G.2",
+        "G.5"
       ],
-      "rationaleAI": "Recorded the first description of the magnetic needle compass (D.2.c.i) and pioneered raised-relief maps for cartography (G.2)."
+      "rationaleAI": "Shen Kuo's first description of the magnetic needle compass and magnetic declination directly addresses compasses (D.2.c.i). His work on raised-relief maps connects to mapping and cartography (G.2), and his meteorological observations and climate change hypothesis from fossil evidence connect to meteorological measurement (G.5)."
     },
     {
       "articleTitle": "Mass",
       "relevantPathsAI": [
+        "A",
         "B.1",
         "D.1.b"
       ],
-      "rationaleAI": "Intrinsic scalar property of matter measured in kilograms (SI base unit) corresponds to standards for measurement of mass (B.1) and devices for measuring mass and weight including scales and balances (D.1.b)."
+      "rationaleAI": "Mass as an intrinsic scalar property with inertial and gravitational definitions connects to theory of measurement (A). The kilogram as the SI base unit connects to standards for measurement of mass and length (B.1). Scales and balances used to measure mass connect to devices for measuring mass and weight (D.1.b)."
     },
     {
       "articleTitle": "Clock",
@@ -60,29 +64,31 @@
         "B.2",
         "D.1.c"
       ],
-      "rationaleAI": "Devices measuring elapsed time from pendulums through atomic clocks correspond to standards and techniques for measurement of time (B.2) and devices for measuring time (D.1.c)."
+      "rationaleAI": "Clocks as devices measuring elapsed time using harmonic oscillators — pendulums, quartz crystals, atomic transitions — directly address devices for measuring time (D.1.c). The formal definition of the second by atomic clock precision connects to standards and techniques for measurement of time (B.2)."
     },
     {
       "articleTitle": "Time",
       "relevantPathsAI": [
+        "A",
         "B.2"
       ],
-      "rationaleAI": "Time as a fundamental measurable physical quantity with the SI base unit second corresponds to standards and techniques for measurement of time (B.2)."
+      "rationaleAI": "Time as a fundamental dimension and measurable physical quantity (SI base unit: second) connects to theory of measurement (A). Coverage of measurement methods from Planck time to cosmological scales and clocks/calendars connects to standards and techniques for measurement of time (B.2)."
     },
     {
       "articleTitle": "Compass",
       "relevantPathsAI": [
-        "D.2.c.i"
+        "D.2.c.i",
+        "G.7"
       ],
-      "rationaleAI": "Orientation instrument using a magnetized needle aligning with Earth's magnetic field directly corresponds to magnetic compasses and gyrocompasses (D.2.c.i)."
+      "rationaleAI": "Compasses as orientation instruments indicating cardinal directions via magnetized needles directly address magnetic compasses and gyrocompasses (D.2.c.i). Their adoption for maritime navigation connects to navigational techniques and devices (G.7)."
     },
     {
       "articleTitle": "Lens",
       "relevantPathsAI": [
-        "E.1.a",
-        "E.1.b"
+        "C",
+        "E.1"
       ],
-      "rationaleAI": "Transmissive optical device focusing or dispersing light is a foundational component in microscopes (E.1.a) and telescopes (E.1.b)."
+      "rationaleAI": "Lenses as transmissive optical devices that focus or disperse light through refraction are foundational components in cameras, telescopes, microscopes, and other observational instruments (E.1). The lensmaker's equation and aberration correction represent principles by which instruments of measurement operate (C)."
     },
     {
       "articleTitle": "Measurement",
@@ -90,15 +96,16 @@
         "A",
         "B"
       ],
-      "rationaleAI": "Quantification of attributes enabling comparison against reference quantities corresponds to theory of measurement (A) and units and standards of measurement including the SI system (B)."
+      "rationaleAI": "Measurement as the quantification of attributes enabling comparison against reference quantities directly addresses theory of measurement (A). Coverage of the International System of Units and the progression from fragmented local systems to unified standards connects to units and standards of measurement (B)."
     },
     {
       "articleTitle": "Laser",
       "relevantPathsAI": [
-        "E.1.c",
-        "E.1.d"
+        "C",
+        "D.1.f",
+        "G.8"
       ],
-      "rationaleAI": "Coherent monochromatic light used in spectroscopy (E.1.c) and interferometry (E.1.d), as well as lidar applications in measurement systems."
+      "rationaleAI": "Lasers as devices producing coherent, monochromatic light through stimulated emission underpin various measurement instruments and represent principles by which instruments operate (C). Laser-based measurements connect to devices for measuring light intensity (D.1.f). Applications in lidar and medical procedures connect to radiological techniques and devices (G.8)."
     },
     {
       "articleTitle": "Electron",
@@ -106,51 +113,115 @@
         "E.1.a",
         "F.3"
       ],
-      "rationaleAI": "Free electrons enabling electron microscopes (E.1.a) and particle accelerators (F.3) for scientific research."
+      "rationaleAI": "Free electrons enabling electron microscopes directly connect to microscopes including electron microscopes (E.1.a). Electrons in accelerators and lithography connect to particle accelerators (F.3)."
     },
     {
       "articleTitle": "Temperature",
       "relevantPathsAI": [
+        "A",
         "D.1.d"
       ],
-      "rationaleAI": "Scalar property measured by thermometers in Celsius, Fahrenheit, and Kelvin scales corresponds to devices for measuring temperature (D.1.d)."
+      "rationaleAI": "Temperature as a scalar intensive property measured by thermometers, with primary scales of Celsius, Fahrenheit, and Kelvin (SI base unit), directly addresses devices for measuring temperature (D.1.d). The zeroth law of thermodynamics defining temperature connects to theory of measurement (A)."
     },
     {
       "articleTitle": "Photography",
       "relevantPathsAI": [
         "E.2"
       ],
-      "rationaleAI": "Capture of images by recording light corresponds to instruments for recording phenomena including cameras (E.2)."
+      "rationaleAI": "Photography as the capture of images by recording light chemically on film or electronically via sensors directly addresses instruments for recording phenomena including cameras (E.2)."
     },
     {
       "articleTitle": "International System of Units",
       "relevantPathsAI": [
         "B",
-        "B.1"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "The modern metric system with seven base units and decimal prefixes directly corresponds to systems of weights and measures and standards for measurement (B, B.1)."
+      "rationaleAI": "The SI system comprising seven base units (metre, kilogram, second, ampere, kelvin, mole, candela) with 24 decimal prefixes directly addresses units and standards of measurement (B). The metre and kilogram connect to standards for measurement of mass and length (B.1), and the second connects to standards for measurement of time (B.2)."
     },
     {
       "articleTitle": "Navigation",
       "relevantPathsAI": [
-        "G.7"
+        "G.7",
+        "D.2.c",
+        "D.2.c.ii"
       ],
-      "rationaleAI": "Monitoring and controlling vehicle movement using compasses, sextants, radar, and GNSS directly corresponds to navigational techniques and devices (G.7)."
+      "rationaleAI": "Navigation as monitoring and controlling vehicle movement using celestial navigation, sextants, marine chronometers, radar, and GNSS directly addresses navigational techniques and devices (G.7). Sextants and surveying methods connect to surveying instruments (D.2.c.ii) and instruments for measuring position by angulation (D.2.c)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
-        "E.1.b",
-        "E.1.c"
+        "C",
+        "D.1.f",
+        "F.7"
       ],
-      "rationaleAI": "The full electromagnetic spectrum from radio to gamma rays is observed by telescopes (E.1.b) and analyzed by spectroscopes (E.1.c)."
+      "rationaleAI": "Electromagnetic radiation as self-propagating waves described by Maxwell's equations underpins the principles by which many measurement instruments operate (C). Detection across the spectrum connects to devices for measuring light intensity (D.1.f) and particle detectors including scintillation counters (F.7)."
     },
     {
       "articleTitle": "Internal structure of Earth",
       "relevantPathsAI": [
-        "F.6"
+        "F.6",
+        "D.2.d"
       ],
-      "rationaleAI": "Earth's layered interior inferred from seismic wave analysis connects to seismographs as scientific research instruments (F.6)."
+      "rationaleAI": "Earth's radially layered interior inferred from seismic wave analysis connects to seismographs (F.6). Gravity and magnetic field measurements used to study the interior connect to instruments for measuring gravity such as gravimeters (D.2.d)."
+    },
+    {
+      "articleTitle": "Speed of light",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "E.1.d"
+      ],
+      "rationaleAI": "The speed of light as a universal physical constant defining the metre by international agreement connects to theory of measurement (A) and standards for measurement of length (B.1). Progressive measurement from Romer to modern interferometry connects to interferometers (E.1.d)."
+    },
+    {
+      "articleTitle": "Electricity",
+      "relevantPathsAI": [
+        "D.1.e",
+        "C"
+      ],
+      "rationaleAI": "Electricity encompassing electric charge, current, and electromagnetic induction directly connects to devices for measuring electric current and electrical properties including galvanometers, ammeters, and voltmeters (D.1.e). Electromagnetic principles underpin many measurement instruments (C)."
+    },
+    {
+      "articleTitle": "Light",
+      "relevantPathsAI": [
+        "C",
+        "D.1.f",
+        "E.1"
+      ],
+      "rationaleAI": "Visible electromagnetic radiation with properties of intensity, frequency, polarization, and wave-particle duality underpins the principles by which optical instruments operate (C). Measurement of light intensity connects to photometers and light meters (D.1.f). Geometric and quantum optics govern instruments for observing phenomena (E.1)."
+    },
+    {
+      "articleTitle": "Computer",
+      "relevantPathsAI": [
+        "H",
+        "H.1",
+        "H.2"
+      ],
+      "rationaleAI": "Computers as programmable machines executing arithmetic and logical operations connect to instrumentation and control systems (H). Digital computation underpins systems that actuate control devices or record measurements automatically (H.1) and control systems (H.2)."
+    },
+    {
+      "articleTitle": "Michael Faraday",
+      "relevantPathsAI": [
+        "D.1.e"
+      ],
+      "rationaleAI": "Faraday's discovery of electromagnetic induction and the laws of electrolysis, and his coining of terms including anode, cathode, electrode, and ion, are foundational to devices for measuring electric current and electrical properties (D.1.e)."
+    },
+    {
+      "articleTitle": "Marie Curie",
+      "relevantPathsAI": [
+        "D.2.f",
+        "G.8"
+      ],
+      "rationaleAI": "Curie's pioneering research into radioactivity and deployment of mobile X-ray units connects to instruments for measuring ionizing radiation such as Geiger counters (D.2.f) and radiological techniques and devices (G.8)."
+    },
+    {
+      "articleTitle": "Particle physics",
+      "relevantPathsAI": [
+        "F.3",
+        "F.7"
+      ],
+      "rationaleAI": "Particle physics studying fundamental constituents via the Standard Model using accelerators like the LHC directly addresses particle accelerators (F.3). The experimental domain involving particle detection connects to particle detectors including bubble chambers and scintillation counters (F.7)."
     }
   ],
   "_curatedBy": "ai",

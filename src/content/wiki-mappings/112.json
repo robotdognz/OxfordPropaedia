@@ -14,7 +14,7 @@
         "C.7.c",
         "C.7.d"
       ],
-      "rationaleAI": "Alpha, beta, and gamma decay modes (C.2) with exponential decay statistics (C.7.a), alpha decay (C.7.b), beta decay via weak force (C.7.c), and gamma photon release (C.7.d). Energy release associated with radioactive decay (C.5)."
+      "rationaleAI": "Spontaneous nuclear transformation of unstable isotopes is the phenomenon of radioactivity (C.1). Alpha, beta, and gamma decay modes are types of radioactivity (C.2). Energy released as radiation addresses energy release associated with radioactive decay (C.5). Exponential decay statistics characterized by half-life address the exponential decay law (C.7.a), while alpha (C.7.b), beta (C.7.c), and gamma (C.7.d) decay are named decay rate categories. Applications including radiometric dating, medical isotopes, and radiation therapy address applications of radioactivity (C.8)."
     },
     {
       "articleTitle": "Weak interaction",
@@ -23,7 +23,7 @@
         "H.2",
         "H.6"
       ],
-      "rationaleAI": "The weak force drives beta decay by transforming quarks between flavors (C.7.c). Electroweak unification describes a fundamental force (H.2). Relations of weak interactions to strong and electromagnetic interactions (H.6)."
+      "rationaleAI": "The weak interaction drives radioactive beta decay by transforming quarks between flavors, directly addressing beta decay rates (C.7.c). As one of the four fundamental forces it is a fundamental force associated with particle interactions (H.2). Electroweak unification (Glashow-Weinberg-Salam) describes relations of weak interactions to electromagnetic interactions (H.6)."
     },
     {
       "articleTitle": "Standard Model",
@@ -34,17 +34,17 @@
         "H.3",
         "H.4"
       ],
-      "rationaleAI": "Classification of all known elementary particles (H.1.d), fundamental forces (H.2), classification systems (H.3), and conservation and symmetry laws (H.4)."
+      "rationaleAI": "Quantum field theory classifying all known elementary particles addresses the known elementary particles (H.1.d). Three fundamental interactions (electromagnetic, weak, strong) address forces associated with particle interactions (H.2). Classification of fermions and bosons addresses systems for classifying elementary particles (H.3). Symmetry breaking and conservation laws address elementary particles and conservation laws (H.4)."
     },
     {
       "articleTitle": "Subatomic particle",
       "relevantPathsAI": [
         "H",
         "H.1",
-        "H.3",
-        "I"
+        "H.1.d",
+        "H.3"
       ],
-      "rationaleAI": "Discovery and classification of subatomic particles (H.1), classification systems (H.3), and effects of particle passage through matter (I)."
+      "rationaleAI": "Particles smaller than an atom divided into composite (protons, neutrons) and elementary (electrons, quarks, photons) address the development of subatomic particle concepts (H.1) and the known elementary particles (H.1.d). Classification by composition, spin statistics, mass, and decay mode addresses systems for classifying elementary particles (H.3)."
     },
     {
       "articleTitle": "Particle physics",
@@ -55,233 +55,223 @@
         "H.3",
         "H.5"
       ],
-      "rationaleAI": "Fundamental constituents of matter (H), discovery of particles (H.1), fundamental forces (H.2), classification systems (H.3), and production in accelerators and cosmic rays (H.5)."
+      "rationaleAI": "Studies of fundamental constituents of matter via the Standard Model framework address subatomic particles broadly (H). Fermions and bosons as matter and force particles (H.1). Four fundamental interactions (H.2). Three fermion generations and classification (H.3). Experimental accelerators (LHC) as sources of unstable elementary particles (H.5)."
     },
     {
       "articleTitle": "Strong interaction",
       "relevantPathsAI": [
-        "A.6",
         "H.2",
-        "H.9"
+        "H.9",
+        "A.6"
       ],
-      "rationaleAI": "QCD confining quarks into hadrons relates to theories of nuclear structure and binding force (A.6), fundamental forces (H.2), and nuclear forces involving elementary particles (H.9)."
+      "rationaleAI": "The strong nuclear force confining quarks into hadrons and binding nucleons into nuclei is a fundamental force associated with particle interactions (H.2). The residual nuclear force binding protons and neutrons addresses theories of nuclear structure and nuclear binding force (A.6). QCD as the theory of nuclear forces involving elementary particles (H.9)."
     },
     {
       "articleTitle": "Proton",
       "relevantPathsAI": [
+        "A.2.b",
         "A.1.b",
-        "A.2.b"
+        "A.1.a"
       ],
-      "rationaleAI": "Proton charge defining atomic number (A.1.b) and protons as nuclear components (A.2.b)."
+      "rationaleAI": "The proton as a stable positively charged baryon is a component of atomic nuclei (A.2.b). Proton count defining atomic number addresses nuclear charge (A.1.b). Proton mass of ~1836 electron masses addresses nuclear mass properties (A.1.a)."
     },
     {
       "articleTitle": "Neutron",
       "relevantPathsAI": [
-        "A.2.a",
         "D",
         "D.1",
         "D.2",
         "D.4",
-        "F"
+        "A.2.a"
       ],
-      "rationaleAI": "Neutrons as nuclear components (A.2.a), neutron properties (D.1), sources (D.2), nuclear reactions produced by neutrons (D.4), and role in enabling fission (F)."
+      "rationaleAI": "The neutron as a component of the nucleus (A.2.a) with properties including mass, charge neutrality, and quark composition (D.1). Neutron sources from reactors and spallation (D.2). Nuclear reactions produced by neutrons including fission, fusion, and capture (D.4)."
     },
     {
       "articleTitle": "Chemical element",
       "relevantPathsAI": [
         "A.1.b",
+        "A.3",
         "B",
+        "B.1",
+        "B.2",
         "A.8"
       ],
-      "rationaleAI": "Atomic number defining element identity (A.1.b), isotopic composition (B), and formation of atomic nuclei in the universe (A.8)."
+      "rationaleAI": "Atomic number (proton count) defining element identity addresses nuclear charge (A.1.b). Isotopes and nuclides address isotopes broadly (B, A.3) including classification of nuclides (B.1) and isotopic composition of elements (B.2). Origin of elements through stellar nucleosynthesis addresses formation and evolution of atomic nuclei in the universe (A.8)."
     },
     {
       "articleTitle": "Atom",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
-        "B"
+        "A.2"
       ],
-      "rationaleAI": "General properties of atomic nuclei (A.1), nuclear components (A.2), and isotopes as atomic species with same atomic number but different masses (B)."
+      "rationaleAI": "Atoms comprising a dense nucleus of protons and neutrons address the structure of the atomic nucleus (A) and general properties including mass and charge (A.1). Proton and neutron composition addresses components of atomic nuclei (A.2)."
     },
     {
       "articleTitle": "Hydrogen",
       "relevantPathsAI": [
-        "A.2.b",
-        "B.1",
-        "G.1"
+        "A.1",
+        "G.3.a"
       ],
-      "rationaleAI": "Hydrogen as the simplest nucleus (A.2.b), its isotopes deuterium and tritium (B.1), and hydrogen fusion as the primary thermonuclear reaction (G.1)."
+      "rationaleAI": "Hydrogen as the lightest element with a single proton nucleus addresses general properties of atomic nuclei at their simplest (A.1). As the primary fuel of stellar fusion, hydrogen connects to thermonuclear reactions in the Sun and stars (G.3.a)."
     },
     {
       "articleTitle": "Star",
       "relevantPathsAI": [
-        "A.8",
-        "G.3.a"
+        "G.3.a",
+        "A.8"
       ],
-      "rationaleAI": "Stellar nucleosynthesis connects to formation of atomic nuclei (A.8). Thermonuclear reactions in the Sun and stars (G.3.a)."
+      "rationaleAI": "Thermonuclear hydrogen-to-helium fusion in stellar cores addresses thermonuclear reactions in the Sun and stars (G.3.a). Stellar nucleosynthesis producing all elements heavier than lithium addresses formation and evolution of atomic nuclei in the universe (A.8)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
         "G.3.a"
       ],
-      "rationaleAI": "Hydrogen-to-helium fusion in the solar core is the primary thermonuclear reaction in the Sun (G.3.a)."
+      "rationaleAI": "Nuclear fusion in the Sun's core converting hydrogen to helium directly addresses thermonuclear reactions in the Sun and the stars (G.3.a)."
     },
     {
       "articleTitle": "Big Bang",
       "relevantPathsAI": [
         "A.8"
       ],
-      "rationaleAI": "Primordial nucleosynthesis relates directly to the formation and evolution of atomic nuclei in the universe (A.8)."
+      "rationaleAI": "Sequential formation of subatomic particles and atoms from the initial hot dense state, including primordial element abundances (Big Bang nucleosynthesis), directly addresses the formation and evolution of atomic nuclei in the universe (A.8)."
     },
     {
       "articleTitle": "Plasma (physics)",
       "relevantPathsAI": [
         "G.4",
-        "I"
+        "G.4.a",
+        "G.4.b"
       ],
-      "rationaleAI": "Plasma formation and confinement are essential for thermonuclear reactors (G.4). Ionized matter interacts with nuclear radiations (I)."
+      "rationaleAI": "Ionized gas with free electrons and ions, governed by magnetohydrodynamics, with applications in nuclear fusion reactors addresses basic conditions for a thermonuclear reactor (G.4), including formation of suitable plasma (G.4.a) and confinement and control of high-temperature plasma (G.4.b)."
     },
     {
       "articleTitle": "Mass",
       "relevantPathsAI": [
         "A.1.a",
-        "A.4",
-        "E.2"
+        "H.1.d"
       ],
-      "rationaleAI": "Nuclear mass (A.1.a), relationships between masses and binding energies (A.4), and energy relationships of nuclear reactions (E.2)."
+      "rationaleAI": "Mass as an intrinsic property of matter with E=mc^2 and the Brout-Englert-Higgs mechanism conferring particle masses addresses nuclear mass properties (A.1.a) and connects to known elementary particles and the Higgs boson (H.1.d)."
     },
     {
       "articleTitle": "Magnetism",
       "relevantPathsAI": [
         "A.1.e"
       ],
-      "rationaleAI": "Nuclear magnetic moment and nuclear magnetic resonance phenomena (A.1.e)."
+      "rationaleAI": "Magnetic phenomena arising from intrinsic magnetic moments of elementary particles, including electron spin and orbital angular momentum, connect to nuclear magnetic moment and nuclear magnetic resonance phenomena (A.1.e)."
     },
     {
       "articleTitle": "Quantum mechanics",
       "relevantPathsAI": [
         "A.5",
-        "H.1.c",
-        "H.4"
+        "H.4.a",
+        "E.3"
       ],
-      "rationaleAI": "Nuclear models rely on quantum mechanics (A.5). Advances in quantum field theory (H.1.c) and symmetry operations (H.4)."
+      "rationaleAI": "Quantum theory governing matter at atomic and subatomic scales underpins nuclear models and properties of nuclear states (A.5). Wave functions, superposition, and uncertainty principles are the quantum mechanical symmetry operations related to subatomic particles (H.4.a). Quantum field theory provides theories and models of nuclear reactions (E.3)."
     },
     {
       "articleTitle": "Energy",
       "relevantPathsAI": [
-        "C.5",
         "E.2",
-        "F.1.c",
-        "G.1"
+        "C.5",
+        "F.1.c"
       ],
-      "rationaleAI": "Energy release in radioactive decay (C.5), energy relationships of nuclear reactions (E.2), energy in fission (F.1.c), and energy in fusion (G.1)."
+      "rationaleAI": "Energy conservation laws and nuclear energy forms address energy relationships of nuclear reactions (E.2). Relativistic energy-mass equivalence (E=mc^2) connects to energy released in radioactive decay (C.5) and energy released in fission (F.1.c)."
     },
     {
       "articleTitle": "Photon",
       "relevantPathsAI": [
         "C.7.d",
-        "I.1.a"
+        "I.1.a",
+        "H.1.d"
       ],
-      "rationaleAI": "Gamma decay involves high-energy photon release (C.7.d), and electromagnetic waves interacting with atomic structure (I.1.a)."
+      "rationaleAI": "Massless gauge boson mediating electromagnetic force is a known elementary particle (H.1.d). High-energy photon release in gamma decay (C.7.d). Passage of electromagnetic waves and their interaction with atomic structure (I.1.a)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
-        "C.7.d",
         "I.1.a",
-        "I.3"
+        "I.1.b",
+        "C.7.d"
       ],
-      "rationaleAI": "Gamma rays from nuclear decay (C.7.d), interaction with atomic structure (I.1.a), and utilization in biological, medical, and technological fields (I.3)."
+      "rationaleAI": "Self-propagating waves of coupled electric and magnetic fields including X-rays and gamma rays address the passage of electromagnetic waves and their interaction with atomic structure (I.1.a). Wavelength-dependent interaction with matter addresses passage of radiations through matter (I.1.b). Gamma rays as high-energy electromagnetic radiation connect to gamma decay (C.7.d)."
     },
     {
       "articleTitle": "Matter",
       "relevantPathsAI": [
+        "H",
         "H.1",
         "I"
       ],
-      "rationaleAI": "Subatomic particles as fundamental units of matter (H.1) and effects of passage of particles through matter (I)."
+      "rationaleAI": "Ordinary baryonic matter (atoms, protons, neutrons) and exotic forms (antimatter, quark-gluon plasma) address subatomic particles (H) and development of particle concepts (H.1). Interaction of particles with matter broadly addresses effects of passage of particles through matter (I)."
     },
     {
       "articleTitle": "Albert Einstein",
       "relevantPathsAI": [
-        "E.2",
-        "H.1.c"
+        "E.2"
       ],
-      "rationaleAI": "Mass-energy equivalence is central to nuclear reaction energetics (E.2). Bose-Einstein statistics contributed to quantum field theory (H.1.c)."
+      "rationaleAI": "Einstein's E=mc^2 from special relativity is fundamental to the energy relationships of nuclear reactions (E.2), establishing the equivalence of mass and energy that underpins all nuclear energy calculations."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
+        "B",
         "B.6"
       ],
-      "rationaleAI": "Carbon-14 radiocarbon dating is a key application of radioactive isotopes (B.6)."
+      "rationaleAI": "Carbon isotope C-14 enabling radiocarbon dating is an application of radioactive and stable isotopes (B.6). Carbon isotopes broadly connect to the isotope framework (B)."
     },
     {
       "articleTitle": "Emmy Noether",
       "relevantPathsAI": [
-        "H.4"
+        "H.4",
+        "H.4.a"
       ],
-      "rationaleAI": "Noether's theorem connecting symmetry to conservation laws underpins subatomic particle theory and symmetry operations (H.4)."
+      "rationaleAI": "Noether's theorem establishing the connection between continuous symmetry and conservation laws in physics directly underpins elementary particles and conservation-symmetry laws (H.4) and quantum mechanical symmetry operations related to subatomic particles (H.4.a)."
     },
     {
       "articleTitle": "Supernova",
       "relevantPathsAI": [
-        "A.8"
+        "A.8",
+        "G.3.a"
       ],
-      "rationaleAI": "Supernovae seed the interstellar medium with elements, connecting to formation of atomic nuclei in the universe (A.8)."
+      "rationaleAI": "Supernovae as the dominant source of elements from oxygen to rubidium address formation and evolution of atomic nuclei in the universe (A.8). Core-collapse supernovae involve thermonuclear processes in massive stars (G.3.a)."
     },
     {
       "articleTitle": "Physical cosmology",
       "relevantPathsAI": [
         "A.8"
       ],
-      "rationaleAI": "Primordial nucleosynthesis relates to the formation of atomic nuclei (A.8)."
+      "rationaleAI": "Modeling the universe's origin and evolution including primordial nucleosynthesis and element formation addresses the formation and evolution of atomic nuclei in the universe (A.8)."
     },
     {
       "articleTitle": "Vacuum",
       "relevantPathsAI": [
-        "I.1.b"
+        "H.7"
       ],
-      "rationaleAI": "Passage of particles through vacuum versus matter contexts (I.1.b)."
-    },
-    {
-      "articleTitle": "Liquid",
-      "relevantPathsAI": [
-        "I.4.c"
-      ],
-      "rationaleAI": "Bubble chambers as liquid-state radiation detectors (I.4.c)."
+      "rationaleAI": "The quantum vacuum containing zero-point energy and virtual particle fluctuations (Casimir effect) connects to other particles suggested by contemporary theoretical ideas (H.7), as quantum vacuum phenomena inform particle physics beyond the Standard Model."
     },
     {
       "articleTitle": "Explosive",
       "relevantPathsAI": [
-        "F.2.a",
-        "G.3.b"
+        "F.2.a"
       ],
-      "rationaleAI": "Nuclear explosions via fission chain reactions (F.2.a) and thermonuclear explosions (G.3.b)."
-    },
-    {
-      "articleTitle": "State of matter",
-      "relevantPathsAI": [
-        "I.1.b"
-      ],
-      "rationaleAI": "Passage of particles through different states of matter (I.1.b)."
+      "rationaleAI": "Nuclear explosives releasing energy suddenly connect to nuclear explosions and atomic bombs as an application of fission chain reactions reaching critical mass (F.2.a)."
     },
     {
       "articleTitle": "Universe",
       "relevantPathsAI": [
         "A.8"
       ],
-      "rationaleAI": "Formation and evolution of atomic nuclei in the universe (A.8)."
+      "rationaleAI": "The universe's composition including ordinary baryonic matter, chronology from Big Bang through structure formation, and the LCDM model connect to the formation and evolution of atomic nuclei in the universe (A.8)."
     },
     {
       "articleTitle": "Force",
       "relevantPathsAI": [
-        "H.2"
+        "H.2",
+        "A.6"
       ],
-      "rationaleAI": "The four fundamental forces are the forces associated with particle interactions (H.2)."
+      "rationaleAI": "The four fundamental interactions — gravity, electromagnetism, strong nuclear, weak nuclear — are the fundamental forces associated with particle interactions (H.2). Nuclear forces binding nucleons address theories of nuclear structure and nuclear binding force (A.6)."
     }
   ],
   "_curatedBy": "ai",

@@ -4,20 +4,20 @@
     {
       "articleTitle": "Linear algebra",
       "relevantPathsAI": [
+        "A.4",
+        "C.4",
         "H.1",
-        "H.2",
-        "H.5"
+        "H.8"
       ],
-      "rationaleAI": "Linear algebra provides the mathematical framework for mechanics of particles (H.1), fluid mechanics (H.2), and electromagnetic theory (H.5); its vector and matrix methods are the core mathematical apparatus of these physical theories."
+      "rationaleAI": "Study of linear equations, linear maps, and matrices connects to calculatory aspects of algebra and algebraic notation (A.4). Solution of linear systems is central to numerical analysis of linear equations (C.4). Applications to mechanics (particles and systems) correspond to H.1, and applications to quantum theory correspond to H.8."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
         "G.6",
-        "D.1",
-        "D.2"
+        "E.1"
       ],
-      "rationaleAI": "Artificial intelligence is explicitly listed as sub-topic G.6 of computer science; neural nets and probabilistic questions in AI also connect to automata theory concepts D.1 and D.2."
+      "rationaleAI": "AI systems for learning, reasoning, perception, and decision-making directly address artificial intelligence within computer science (G.6). Strategic game-playing (AlphaGo, chess) and optimization connect to the theory of games and analysis of strategic conflict situations (E.1)."
     },
     {
       "articleTitle": "Statistics",
@@ -30,26 +30,25 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Statistics directly corresponds to section B, covering statistical inference (B.1), distribution functions including Gaussian distribution (B.1.b), estimation (B.2), hypothesis testing (B.3), and regression (B.4)."
+      "rationaleAI": "Comprehensive coverage of descriptive and inferential statistics including means, standard deviations, distributions (B.1.b), sampling and experimental design (B.1.a), hypothesis testing and confidence intervals (B.3), estimation techniques (B.2), and regression analysis for structure in data (B.4) maps across the full statistics outline (B)."
     },
     {
       "articleTitle": "Computer",
       "relevantPathsAI": [
+        "A.6",
+        "A.6.b",
         "A.7",
-        "A.7.a",
         "A.7.c",
-        "G",
         "G.3"
       ],
-      "rationaleAI": "The computer article covers digital computation (A.7), digital calculators (A.7.a), programmed machines and digital computers (A.7.c), and computer architecture (G.3), spanning the history of computing machines — priority paths A.7.a and A.7.c."
+      "rationaleAI": "History from abacus and mechanical calculators through analog and digital architectures covers analog computation and analogue computers (A.6, A.6.b) and digital computation including programmed machines (A.7, A.7.c). Hardware architecture including CPU, memory, and I/O corresponds to computer architecture (G.3)."
     },
     {
       "articleTitle": "Quantum mechanics",
       "relevantPathsAI": [
-        "H.8",
-        "H.4"
+        "H.8"
       ],
-      "rationaleAI": "Quantum mechanics is explicitly listed at H.8 (mathematical aspects of physical theories) and connects to statistical mechanics (H.4) through quantum statistical distributions foundational to both."
+      "rationaleAI": "Wave functions, probability amplitudes, uncertainty principle, superposition, and entanglement directly address the mathematical aspects of quantum mechanics (H.8)."
     },
     {
       "articleTitle": "Computer science",
@@ -58,22 +57,19 @@
         "G.1",
         "G.2",
         "G.3",
-        "G.4",
-        "G.5",
-        "G.6"
+        "G.4"
       ],
-      "rationaleAI": "Computer science directly maps to section G in full: algorithms (G.1), theory of computation (G.2), computer architecture (G.3), programming languages (G.4), numeric computation (G.5), and artificial intelligence (G.6)."
+      "rationaleAI": "Study of computation, information, and automation covering algorithms and data structures (G.1), theory of computation and abstract models (G.2), hardware design and computer architecture (G.3), and programming languages and software engineering (G.4) maps across the computer science outline (G)."
     },
     {
       "articleTitle": "Probability",
       "relevantPathsAI": [
-        "B",
         "B.1",
         "B.1.a",
         "B.1.b",
         "D.3"
       ],
-      "rationaleAI": "Probability is the mathematical foundation of statistical inference (B.1) and provides the framework for probabilistic questions in automata theory (D.3); its axiomatic formulation directly supports both sections."
+      "rationaleAI": "Kolmogorov's axioms, sample spaces, events, conditional probability, and Bayes' theorem underpin statistical inference concepts (B.1). Random variables and mathematical description of experiments connect to B.1.a. Distributions and the Gaussian distribution match B.1.b. Probabilistic questions in stochastic processes relate to random effects in automata operation (D.3)."
     },
     {
       "articleTitle": "Number",
@@ -82,133 +78,121 @@
         "A.1.b",
         "A.1.c"
       ],
-      "rationaleAI": "Covers numeral systems and numerical notations (A.1), ancient numerical notations across cultures including Hindu-Arabic (A.1.b), and the development of decimal notation (A.1.c) — addressing three priority paths directly."
+      "rationaleAI": "Natural numbers, integers, rationals, reals, and complex numbers, with coverage of numeral systems including Hindu-Arabic, the development of zero, and historical numerical notations directly address numerical notations (A.1), ancient numerical notations (A.1.b), and decimal notation and modern developments (A.1.c)."
     },
     {
       "articleTitle": "Carl Friedrich Gauss",
       "relevantPathsAI": [
+        "B.1.b",
         "B.2",
-        "H.7"
+        "H.7",
+        "A.2.d"
       ],
-      "rationaleAI": "Gauss's method of least squares is foundational to statistical estimation (B.2), and his contributions to differential geometry underlie Riemannian geometry (H.7) as applied in physical theories."
+      "rationaleAI": "The Gaussian (normal) distribution and method of least squares connect directly to distribution functions (B.1.b) and estimation techniques (B.2). Gaussian curvature and Theorema Egregium in differential geometry relate to Riemannian geometry (H.7). Geodetic surveys and astronomical measurement connect to applications of geometry to celestial measurement (A.2.d)."
     },
     {
       "articleTitle": "Classical mechanics",
       "relevantPathsAI": [
-        "H.1",
-        "H.3",
-        "H.2"
+        "H.1"
       ],
-      "rationaleAI": "Classical mechanics directly corresponds to mechanics of particles and systems (H.1) and mechanics of solids (H.3) — both priority paths — and also covers fluid dynamics (H.2) through Lagrangian and Hamiltonian frameworks."
+      "rationaleAI": "Newtonian, Lagrangian, and Hamiltonian mechanics describing motion and equilibrium of macroscopic bodies under forces directly address the mathematical aspects of mechanics of particles and systems (H.1)."
     },
     {
       "articleTitle": "Algorithm",
       "relevantPathsAI": [
-        "G.1",
-        "G.2",
-        "A.7.c"
+        "G.1"
       ],
-      "rationaleAI": "Algorithms are the subject of synthesis and analysis (G.1) and theory of computation (G.2); they also connect to programmed machines (A.7.c) as the instructions executed by digital computers."
+      "rationaleAI": "Finite rigorous sequences of instructions for solving problems, classified by design paradigm and formalized via Turing machines, directly address synthesis and analysis of algorithms (G.1)."
     },
     {
       "articleTitle": "Function (mathematics)",
       "relevantPathsAI": [
-        "A.5.b",
-        "G.4"
+        "C.3"
       ],
-      "rationaleAI": "Functions underlie graphs and graphical procedures (A.5.b) and are the central constructs of programming languages and methodology (G.4) — both priority paths."
+      "rationaleAI": "Functions as mappings from domain to codomain, with properties including composition and extension, are central to approximation of functions including interpolation and least squares approximation (C.3)."
     },
     {
       "articleTitle": "Equation",
       "relevantPathsAI": [
-        "C.4",
-        "C.3",
-        "A.4.a"
+        "A.4",
+        "A.4.a",
+        "C.4"
       ],
-      "rationaleAI": "Equations are central to numerical analysis — solution of linear, nonlinear, and differential equations (C.4) — and connect to algebraic notation in calculatory algebra (A.4.a)."
+      "rationaleAI": "Polynomial, linear, differential, and Diophantine equations connect to calculatory aspects of algebra (A.4) and algebraic notation (A.4.a). Solving equations of various types directly addresses solution of linear, nonlinear, and differential equations in numerical analysis (C.4)."
     },
     {
       "articleTitle": "Geometry",
       "relevantPathsAI": [
         "A.2",
         "A.2.a",
-        "A.2.b",
-        "A.2.d"
+        "H.7"
       ],
-      "rationaleAI": "Geometry covers early applications (A.2.a), instruments for observation and navigation (A.2.b), and applications to celestial measurement (A.2.d) as geometric aids in applied mathematics."
+      "rationaleAI": "Properties of space including distance, shape, and angle from Euclidean through differential and non-Euclidean geometries correspond to geometrical aids (A.2) and early applications of geometry (A.2.a). Non-Euclidean geometries developed by Gauss and Riemann directly address Riemannian geometry (H.7)."
     },
     {
       "articleTitle": "Leonhard Euler",
       "relevantPathsAI": [
-        "H.1",
-        "H.2",
-        "A.4.b"
+        "A.4",
+        "A.5.b",
+        "H.2"
       ],
-      "rationaleAI": "Euler made decisive contributions to mechanics of particles and systems (H.1), fluid dynamics (H.2), and logarithms as calculatory tools (A.4.b); his mathematical physics work spans much of section H."
+      "rationaleAI": "Standardization of mathematical notation (pi, e, i, f(x), sigma) and contributions to analysis connect to calculatory aspects of algebra and algebraic notation (A.4). Founding of graph theory relates to graphs and graphical procedures (A.5.b). Contributions to fluid dynamics correspond to mathematical aspects of fluid mechanics (H.2)."
     },
     {
       "articleTitle": "Isaac Newton",
       "relevantPathsAI": [
         "H.1",
-        "H.6"
+        "C.4",
+        "C"
       ],
-      "rationaleAI": "Newton's Principia established classical mechanics (H.1), and his calculus and gravitational theory are foundational to the mathematical treatment of physical theories including relativity's predecessor framework (H.6)."
+      "rationaleAI": "Laws of motion and universal gravitation establishing classical mechanics directly address mechanics of particles and systems (H.1). Co-development of infinitesimal calculus and contributions to numerical analysis connect to solution of equations (C.4) and numerical analysis broadly (C)."
     },
     {
       "articleTitle": "Albert Einstein",
       "relevantPathsAI": [
         "H.6",
-        "H.7",
         "H.4"
       ],
-      "rationaleAI": "Einstein's general relativity directly corresponds to relativity theory and space-time as a four-dimensional continuum (H.6), requires Riemannian geometry (H.7), and his Brownian motion/Bose-Einstein statistics work connects to statistical mechanics (H.4)."
+      "rationaleAI": "Special and general relativity establishing space and time as a four-dimensional continuum and gravitation as spacetime curvature directly address relativity theory (H.6). Contributions to statistical mechanics and Bose-Einstein statistics connect to statistical mechanics (H.4)."
     },
     {
       "articleTitle": "Alan Turing",
       "relevantPathsAI": [
         "G.2",
-        "D",
         "D.1",
-        "D.4",
-        "G.6"
+        "F.4"
       ],
-      "rationaleAI": "Turing founded theory of computation (G.2) via Turing machines, established automata theory concepts (D.1, D.4 — priority paths), and pioneered artificial intelligence (G.6) through the Turing test and early stored-program computing."
+      "rationaleAI": "Formalization of algorithm and computation via the Turing machine founding theoretical computer science directly addresses theory of computation (G.2). The Turing machine as a foundational automaton connects to definition and development of automata theory (D.1). Cryptanalysis of Enigma relates to applications of information theory to cryptography (F.4)."
     },
     {
       "articleTitle": "Cryptography",
       "relevantPathsAI": [
-        "F.4",
-        "G.2"
+        "F.4"
       ],
-      "rationaleAI": "Cryptography is explicitly listed as an application of information theory (F.4) and connects to theory of computation (G.2) through computational hardness assumptions underlying public-key schemes."
+      "rationaleAI": "Encryption, authentication, and the mathematical practice of securing communications directly address applications of information theory to cryptography (F.4)."
     },
     {
       "articleTitle": "Measurement",
       "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.5.a"
+        "A.2.b"
       ],
-      "rationaleAI": "Measurement connects to units used to assist counting and grouping (A.1.a — priority path) and to mathematical tables used in practical standardized calculation (A.5.a — priority path)."
+      "rationaleAI": "Quantification of attributes enabling comparison against reference quantities, including the SI system and metrology, relates to numerical notations and units for counting or grouping (A.1). Historical unified standards and measurement instruments connect to instruments for observation and navigation (A.2.b)."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
-        "D",
-        "D.1",
         "E.4",
         "G.6"
       ],
-      "rationaleAI": "Robotics applies automata theory (D.1 — priority path — physical analogy to automata), control theory (E.4), and artificial intelligence (G.6); the field's theoretical basis in automata and control is directly relevant."
+      "rationaleAI": "Robot control systems integrating sensing and software (including AI) connect to control theory (E.4). Robots as an application domain for AI connect to artificial intelligence within computer science (G.6)."
     },
     {
       "articleTitle": "Force",
       "relevantPathsAI": [
-        "H.1",
-        "H.3",
-        "H.5"
+        "H.1"
       ],
-      "rationaleAI": "Force is the central concept of mechanics of particles and systems (H.1 — priority path) and mechanics of solids (H.3 — priority path); electromagnetic force connects to electromagnetic theory (H.5)."
+      "rationaleAI": "Force as a vector quantity in Newton's laws of motion, with applications to mechanics of particles including torque, friction, and centripetal forces, directly addresses mechanics of particles and systems (H.1)."
     },
     {
       "articleTitle": "Space",
@@ -216,61 +200,50 @@
         "H.6",
         "H.7"
       ],
-      "rationaleAI": "Space as a mathematical concept connects to relativity theory and spacetime (H.6) and to Riemannian geometry (H.7), which provides the mathematical framework for curved space in general relativity."
+      "rationaleAI": "Space as a three-dimensional continuum unified with time in four-dimensional spacetime under general relativity directly addresses relativity theory (H.6). Non-Euclidean curved geometries developed by Gauss and Riemann connect to Riemannian geometry (H.7)."
     },
     {
       "articleTitle": "Fraction",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.4.a"
+        "A.1"
       ],
-      "rationaleAI": "Fractions are part of decimal notation and modern notational developments (A.1.c — priority path) and relevant to algebraic notation in calculatory algebra (A.4.a)."
+      "rationaleAI": "Numerical representation of part-to-whole ratios as numerator over denominator, foundational to arithmetic and proportion, connects to numerical notations and units used for counting and grouping (A.1)."
     },
     {
       "articleTitle": "Arithmetic",
       "relevantPathsAI": [
-        "A",
         "A.1",
+        "A.1.b",
         "A.1.c",
-        "A.4"
+        "A.5.a"
       ],
-      "rationaleAI": "Arithmetic as the elementary calculatory science underlies section A broadly, including numerical notations (A.1), decimal notation (A.1.c — priority path), and calculatory aspects of algebra (A.4)."
+      "rationaleAI": "Elementary numerical operations across number systems, covering Hindu-Arabic and other numeral systems, correspond to numerical notations (A.1), ancient numerical notations from Egyptian and Sumerian calculation (A.1.b), and decimal notation (A.1.c). Historical computational arithmetic and mechanization relate to mathematical tables (A.5.a)."
     },
     {
       "articleTitle": "History of mathematics",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
+        "A",
         "A.1.b",
-        "A.1.c",
-        "A.2",
-        "A.4.b"
+        "A.2.a",
+        "A.4"
       ],
-      "rationaleAI": "Covers ancient numerical notations (A.1.b — priority), development of decimal notation (A.1.c — priority), early geometric applications (A.2), and history of logarithms (A.4.b) — addressing multiple priority paths directly."
+      "rationaleAI": "Spans prehistoric counting through Babylonian algebra, Egyptian practical mathematics, Greek axiomatic proof, Islamic algebra, and modern developments. Ancient numerical systems correspond to ancient numerical notations (A.1.b), early land measurement to early applications of geometry (A.2.a), and symbolic algebra development to calculatory aspects of algebra (A.4). Broadly covers mathematics as a calculatory science (A)."
     },
     {
       "articleTitle": "Al-Khwarizmi",
       "relevantPathsAI": [
-        "A.1.c",
         "A.4",
         "A.4.a",
-        "A.4.b"
+        "A.1.c"
       ],
-      "rationaleAI": "Al-Khwarizmi introduced the decimal positional number system (A.1.c — priority), established algebraic notation and calculation methods (A.4.a), and his work on computation directly precedes logarithms as calculatory tools (A.4.b)."
+      "rationaleAI": "First systematic treatise on algebra presenting solutions of linear and quadratic equations directly addresses calculatory aspects of algebra (A.4) and algebraic notation (A.4.a). Introduction of the decimal positional number system to Western Europe connects to decimal notation and modern notational developments (A.1.c)."
     },
     {
       "articleTitle": "Physics",
       "relevantPathsAI": [
-        "H",
-        "H.1",
-        "H.2",
-        "H.3",
-        "H.4",
-        "H.5",
-        "H.6",
-        "H.8"
+        "H"
       ],
-      "rationaleAI": "Physics as a discipline encompasses all the physical theories in section H — mechanics (H.1, H.3 — priority paths), fluid mechanics (H.2), statistical mechanics (H.4 — priority), electromagnetism (H.5), relativity (H.6), and quantum mechanics (H.8)."
+      "rationaleAI": "Fundamental natural science covering classical mechanics, electromagnetism, quantum mechanics, and relativity provides the physical context for mathematical aspects of physical theories (H)."
     },
     {
       "articleTitle": "Astronomy",
@@ -278,38 +251,38 @@
         "A.2.d",
         "A.2.b"
       ],
-      "rationaleAI": "Astronomy connects to the application of geometry to celestial measurement (A.2.d) and to instruments for observation and navigation (A.2.b) as historical drivers of mathematical tool development."
+      "rationaleAI": "Study of celestial objects using mathematics and physics, from planetary science to cosmology, directly connects to applications of geometry to celestial measurement (A.2.d). Observational astronomy historically drove development of instruments for observation and navigation (A.2.b)."
     },
     {
       "articleTitle": "Electricity",
       "relevantPathsAI": [
         "H.5"
       ],
-      "rationaleAI": "Electricity, unified with magnetism through Maxwell's equations, corresponds to the mathematical aspects of electromagnetic theory (H.5)."
+      "rationaleAI": "Electric charge, electric fields, electric current, and electromagnetic induction unified through Maxwell's equations directly address the mathematical aspects of electromagnetic theory (H.5)."
     },
     {
       "articleTitle": "Electromagnetism",
       "relevantPathsAI": [
         "H.5"
       ],
-      "rationaleAI": "Electromagnetism governed by Maxwell's equations is the primary subject of H.5 (electromagnetic theory) as a mathematical aspect of physical theories."
+      "rationaleAI": "Maxwell's equations providing a complete classical description of electromagnetic fields, the Lorentz force, and electromagnetic wave prediction directly address the mathematical aspects of electromagnetic theory (H.5)."
     },
     {
       "articleTitle": "Complex number",
       "relevantPathsAI": [
-        "H.5",
+        "A.4",
         "H.8"
       ],
-      "rationaleAI": "Complex numbers are mathematically essential in electromagnetic theory (H.5 via phasors and wave equations) and quantum mechanics (H.8 via wave functions and Hilbert space formalism)."
+      "rationaleAI": "Numbers of the form a + bi with Euler's formula and the fundamental theorem of algebra connect to calculatory aspects of algebra (A.4). Applications in quantum mechanics and signal processing relate to mathematical aspects of quantum mechanics (H.8)."
     },
     {
       "articleTitle": "Three-dimensional space",
       "relevantPathsAI": [
+        "A.2",
         "H.1",
-        "H.2",
-        "H.3"
+        "H.7"
       ],
-      "rationaleAI": "Three-dimensional Euclidean space is the arena in which mechanics of particles (H.1 — priority), fluid mechanics (H.2), and mechanics of solids (H.3 — priority) are formulated and solved."
+      "rationaleAI": "Euclidean 3-space with Cartesian, cylindrical, and spherical coordinates connecting to geometrical aids (A.2). Calculus in 3D including gradient, divergence, and curl applied to classical mechanics relates to mechanics of particles and systems (H.1). Generalization to 3-manifolds and spacetime connects to Riemannian geometry (H.7)."
     },
     {
       "articleTitle": "Gravity",
@@ -317,62 +290,57 @@
         "H.1",
         "H.6"
       ],
-      "rationaleAI": "Gravity is central to mechanics of particles (H.1 — priority path via Newtonian gravitation) and to relativity theory (H.6 via Einstein's interpretation of gravity as spacetime curvature)."
+      "rationaleAI": "Newton's law of universal gravitation modeling force proportional to mass product directly addresses mechanics of particles and systems (H.1). Einstein's general relativity reinterpreting gravity as spacetime curvature connects to relativity theory as space and time as a four-dimensional continuum (H.6)."
     },
     {
       "articleTitle": "Momentum",
       "relevantPathsAI": [
         "H.1",
         "H.2",
-        "H.4"
+        "H.8"
       ],
-      "rationaleAI": "Momentum is the central conserved quantity in mechanics of particles (H.1 — priority), generalized in fluid mechanics (H.2), and distributed statistically in statistical mechanics (H.4 — priority)."
+      "rationaleAI": "Linear momentum as a conserved quantity in Newtonian, Lagrangian, and Hamiltonian mechanics directly addresses mechanics of particles and systems (H.1). Momentum densities in fluid mechanics via Navier-Stokes equations connect to fluid mechanics (H.2). Momentum as a quantum mechanical operator related to position via the uncertainty principle addresses quantum mechanics (H.8)."
     },
     {
       "articleTitle": "Exponentiation",
       "relevantPathsAI": [
-        "A.4.b",
-        "F.4"
+        "A.4",
+        "A.4.b"
       ],
-      "rationaleAI": "Exponentiation connects to logarithms as calculatory tools (A.4.b) and to cryptographic applications (F.4) through modular exponentiation underlying RSA and related schemes."
+      "rationaleAI": "Repeated multiplication extended to various exponents with inverse operations being roots and logarithms connects to calculatory aspects of algebra (A.4). The direct relationship between exponentiation and logarithms addresses logarithms (A.4.b)."
     },
     {
       "articleTitle": "Physical cosmology",
       "relevantPathsAI": [
         "H.6"
       ],
-      "rationaleAI": "Physical cosmology applies relativity theory and the mathematical treatment of spacetime (H.6) as its primary theoretical framework for modeling the universe's large-scale structure."
+      "rationaleAI": "Modeling the universe's large-scale structure using general relativity, including spacetime curvature, gravitational waves, and cosmic evolution, directly addresses relativity theory and space-time as a four-dimensional continuum (H.6)."
     },
     {
       "articleTitle": "Time",
       "relevantPathsAI": [
-        "H.6",
-        "H.1"
+        "H.6"
       ],
-      "rationaleAI": "Time as a physical dimension connects to relativity theory and space-time as a four-dimensional continuum (H.6) and appears as the fundamental variable in mechanics of particles and systems (H.1 — priority)."
+      "rationaleAI": "Time as a fundamental dimension of spacetime in general relativity, covering special and general relativistic time dilation, directly addresses relativity theory and space and time as a four-dimensional continuum (H.6)."
     },
     {
       "articleTitle": "Mathematical analysis",
       "relevantPathsAI": [
         "C",
-        "C.1",
-        "C.2",
         "C.3",
-        "C.4",
-        "C.5",
-        "H"
+        "C.4"
       ],
-      "rationaleAI": "Mathematical analysis provides the underpinning for numerical analysis (C — approximation, error, solution of equations) and the mathematical apparatus for physical theories (H) including differential equations and functional analysis."
+      "rationaleAI": "Continuous functions, limits, differentiation, integration, and differential equations underpin numerical analysis (C). Treatment of function approximation connects to approximation of functions (C.3). Differential equations connect to solution of differential equations (C.4)."
     },
     {
       "articleTitle": "Number theory",
       "relevantPathsAI": [
-        "F.4",
-        "G.1"
+        "A.4",
+        "F.4"
       ],
-      "rationaleAI": "Number theory underlies cryptographic applications of information theory (F.4 — RSA and related systems) and primality-testing algorithms (G.1 synthesis and analysis of algorithms)."
+      "rationaleAI": "Study of integers, arithmetic functions, divisibility, and congruences connects to calculatory aspects of algebra (A.4). Foundational role in public-key cryptography (RSA) directly relates to applications of information theory to cryptography (F.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
