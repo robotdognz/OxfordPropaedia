@@ -81,7 +81,11 @@ const bgColors: Record<number, string> = {
     <main id="main-content" class="flex-1 min-w-0">
       <StickySubheading
         breadcrumbs={[
-          { label: `Part ${PART_NAMES[part.partNumber]}`, compactLabel: PART_ROMAN[part.partNumber] },
+          {
+            label: `Part ${PART_NAMES[part.partNumber]}`,
+            compactLabel: PART_ROMAN[part.partNumber],
+            compactPriority: 1,
+          },
         ]}
         scrollTargets={[
           { id: 'divisions', label: 'Divisions' },

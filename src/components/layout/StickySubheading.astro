@@ -3,6 +3,7 @@ interface BreadcrumbItem {
   label: string;
   mobileLabel?: string;
   compactLabel?: string;
+  compactPriority?: number;
   href?: string;
 }
 
@@ -32,13 +33,18 @@ const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
             {i > 0 && <Fragment>&nbsp;&rsaquo;&nbsp;</Fragment>}
             {item.href
               ? (
-                <a href={item.href} class="hover:underline">
+                <a
+                  href={item.href}
+                  class="hover:underline"
+                  data-breadcrumb-item
+                  data-compact-priority={item.compactPriority ?? ''}
+                >
                   <span data-breadcrumb-full>{item.label}</span>
                   <span data-breadcrumb-compact>{item.compactLabel ?? item.mobileLabel ?? item.label}</span>
                 </a>
               )
               : (
-                <span>
+                <span data-breadcrumb-item data-compact-priority={item.compactPriority ?? ''}>
                   <span data-breadcrumb-full>{item.label}</span>
                   <span data-breadcrumb-compact>{item.compactLabel ?? item.mobileLabel ?? item.label}</span>
                 </span>
@@ -67,11 +73,25 @@ const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
     display: none;
   }
 
-  [data-breadcrumbs-root][data-compact="true"] [data-breadcrumb-full] {
+  [data-breadcrumbs-root][data-compact-stage] [data-breadcrumb-full] {
+    display: inline;
+  }
+
+  [data-breadcrumbs-root][data-compact-stage="1"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-full],
+  [data-breadcrumbs-root][data-compact-stage="2"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-full],
+  [data-breadcrumbs-root][data-compact-stage="2"] [data-breadcrumb-item][data-compact-priority="2"] [data-breadcrumb-full],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-full],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="2"] [data-breadcrumb-full],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="3"] [data-breadcrumb-full] {
     display: none;
   }
 
-  [data-breadcrumbs-root][data-compact="true"] [data-breadcrumb-compact] {
+  [data-breadcrumbs-root][data-compact-stage="1"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-compact],
+  [data-breadcrumbs-root][data-compact-stage="2"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-compact],
+  [data-breadcrumbs-root][data-compact-stage="2"] [data-breadcrumb-item][data-compact-priority="2"] [data-breadcrumb-compact],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="1"] [data-breadcrumb-compact],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="2"] [data-breadcrumb-compact],
+  [data-breadcrumbs-root][data-compact-stage="3"] [data-breadcrumb-item][data-compact-priority="3"] [data-breadcrumb-compact] {
     display: inline;
   }
 </style>
@@ -83,10 +103,32 @@ const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
 
     var mobileMedia = window.matchMedia('(max-width: 639px)');
 
+    var priorities = Array.from(root.querySelectorAll('[data-breadcrumb-item][data-compact-priority]'))
+      .map(function(el) {
+        var raw = el.getAttribute('data-compact-priority');
+        var value = raw ? Number(raw) : NaN;
+        return Number.isFinite(value) ? value : 0;
+      })
+      .filter(function(value) { return value > 0; });
+
+    var maxStage = priorities.length ? Math.max.apply(Math, priorities) : 0;
+
+    function fitsAtStage(stage) {
+      root.setAttribute('data-compact-stage', String(stage));
+      return scrollEl.scrollWidth <= scrollEl.clientWidth + 4;
+    }
+
     function updateCompactState() {
-      root.setAttribute('data-compact', 'false');
-      var shouldCompact = mobileMedia.matches && scrollEl.scrollWidth > scrollEl.clientWidth + 4;
-      root.setAttribute('data-compact', shouldCompact ? 'true' : 'false');
+      if (!mobileMedia.matches) {
+        root.setAttribute('data-compact-stage', '0');
+        return;
+      }
+
+      for (var stage = 0; stage <= maxStage; stage += 1) {
+        if (fitsAtStage(stage)) return;
+      }
+
+      root.setAttribute('data-compact-stage', String(maxStage));
     }
 
     var resizeObserver = new ResizeObserver(function() {

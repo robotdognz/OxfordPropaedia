@@ -69,9 +69,14 @@ const partTextColors: Record<number, string> = {
           {
             label: `Part ${PART_NAMES[division.partNumber]}`,
             compactLabel: PART_ROMAN[division.partNumber],
+            compactPriority: 2,
             href: `${base}/part/${division.partNumber}`,
           },
-          { label: `Division ${division.romanNumeral}`, compactLabel: division.romanNumeral },
+          {
+            label: `Division ${division.romanNumeral}`,
+            compactLabel: division.romanNumeral,
+            compactPriority: 1,
+          },
         ]}
         scrollTargets={[
           { id: 'sections', label: 'Sections' },

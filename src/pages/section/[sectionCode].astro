@@ -71,17 +71,20 @@ const {
           {
             label: `Part ${PART_NAMES[section.partNumber]}`,
             compactLabel: PART_ROMAN[section.partNumber],
+            compactPriority: 3,
             href: `${base}/part/${section.partNumber}`,
           },
           {
             label: `Division ${parentDiv?.romanNumeral ?? ''}`,
             compactLabel: parentDiv?.romanNumeral ?? '',
+            compactPriority: 2,
             href: `${base}/division/${section.divisionId}`,
           },
           {
             label: `Section ${section.sectionCodeDisplay}`,
             mobileLabel: section.sectionCodeDisplay,
             compactLabel: section.sectionCodeDisplay,
+            compactPriority: 1,
           },
         ]}
         scrollTargets={[
