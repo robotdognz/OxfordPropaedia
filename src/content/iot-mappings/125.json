@@ -1,0 +1,94 @@
+{
+  "sectionCode": "125",
+  "mappings": [
+    {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "X-ray diffraction crystallography determining atomic arrangements in crystalline solids, Bragg's law, and synchrotron techniques directly address crystal patterns (A.1) and diffraction methods (A.2)."
+    },
+    {
+      "episodeTitle": "Conductors and Semiconductors",
+      "pid": "b01c7sml",
+      "relevantPathsAI": [
+        "B.5",
+        "E",
+        "E.1",
+        "E.3",
+        "E.4"
+      ],
+      "rationaleAI": "Electron band theory, conductors versus insulators versus semiconductors, doping, p-n junctions, and transistors comprehensively address electronic structure of solids (B.5) and semiconductors (E)."
+    },
+    {
+      "episodeTitle": "The Science of Glass",
+      "pid": "b05w456c",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "Glass as an amorphous solid lacking crystalline order, the glass transition temperature, and condensed matter physics of disordered materials directly address the glassy/amorphous state (F)."
+    },
+    {
+      "episodeTitle": "Superconductivity",
+      "pid": "m001hfpc",
+      "relevantPathsAI": [
+        "D.8",
+        "D.8.a",
+        "D.8.b"
+      ],
+      "rationaleAI": "Superconductivity in metals covering transition temperature, BCS theory (Cooper pairs), the Meissner effect, and high-temperature superconductors directly addresses superconductivity in metals (D.8)."
+    },
+    {
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
+      "relevantPathsAI": [
+        "B.6",
+        "D.9"
+      ],
+      "rationaleAI": "Magnetic materials and domains, quantum mechanical explanations of magnetic behaviour, and Earth's magnetic field address principal types of magnetic behaviour in solids (B.6) and magnetic phenomena in metals (D.9)."
+    },
+    {
+      "episodeTitle": "States of Matter",
+      "pid": "b03zdbr4",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "States of matter covering solids and phase transitions addresses the classification of solids according to electronic structure and bonding (B.1)."
+    },
+    {
+      "episodeTitle": "The Photon",
+      "pid": "b051vlpf",
+      "relevantPathsAI": [
+        "B.7",
+        "B.7.c",
+        "E.4.a"
+      ],
+      "rationaleAI": "The photoelectric effect, photon interactions with matter, and photovoltaic applications address the interaction of light with solids (B.7), the photoelectric effect (B.7.c), and optical effects in semiconductors (E.4.a)."
+    },
+    {
+      "episodeTitle": "The Electron",
+      "pid": "m001cf1n",
+      "relevantPathsAI": [
+        "B.5.a",
+        "D.2",
+        "E.2"
+      ],
+      "rationaleAI": "Electron behaviour in solids including band theory, conduction, and quantum tunneling addresses the nature and mobility of electrons in conductors/insulators/semiconductors (B.5.a) and mechanisms of conduction (E.2)."
+    },
+    {
+      "episodeTitle": "Absolute Zero",
+      "pid": "b01r113g",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Low-temperature phenomena including superconductivity, superfluidity, and Bose-Einstein condensation relate to effects of temperature on crystal strength and hardness (A.5) through extreme-condition material behaviour."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

@@ -1,0 +1,84 @@
+{
+  "sectionCode": "10/12",
+  "mappings": [
+    {
+      "episodeTitle": "Logic",
+      "pid": "b00vcqcx",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "B"
+      ],
+      "rationaleAI": "Covers Aristotelian term logic (A.3 syllogistic), Stoic propositional logic (A.1), Frege's predicate calculus (A.2), Boole's algebraisation (A.1), and Goedel's incompleteness theorems bearing on metalogic (B.3), providing a comprehensive survey of formal logical systems."
+    },
+    {
+      "episodeTitle": "Godel's Incompleteness Theorems",
+      "pid": "b00dshx3",
+      "relevantPathsAI": [
+        "A.5",
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "Goedel's incompleteness theorems are the central result in metalogic concerning completeness, consistency, and decidability of formal mathematical systems (B.3), with direct implications for set theory and natural-number arithmetic (A.5)."
+    },
+    {
+      "episodeTitle": "Bertrand Russell",
+      "pid": "b01p8fsr",
+      "relevantPathsAI": [
+        "A.2",
+        "A.5",
+        "B.3"
+      ],
+      "rationaleAI": "Russell's Principia Mathematica developed the predicate calculus and theory of types (A.2), Russell's paradox raised fundamental issues in set theory (A.5), and his work is central to discoveries about formal mathematical systems (B.3)."
+    },
+    {
+      "episodeTitle": "Truth",
+      "pid": "b04v59gz",
+      "relevantPathsAI": [
+        "B.5",
+        "C.2"
+      ],
+      "rationaleAI": "Tarski's semantic theory of truth is foundational for model theory (B.5), and the discussion of meaning and truth theories engages directly with the semantics of formal languages and epistemic logic (C.2)."
+    },
+    {
+      "episodeTitle": "Rhetoric",
+      "pid": "p004y263",
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Rhetoric from Aristotle through its modern revival directly addresses the critique of forms of reasoning, including argumentation theory (C.1.a) and analysis of logical fallacies (C.1.b)."
+    },
+    {
+      "episodeTitle": "Mathematics and Platonism",
+      "pid": "p0054799",
+      "relevantPathsAI": [
+        "A.5",
+        "B.3"
+      ],
+      "rationaleAI": "Mathematical Platonism's discussion of Goedel, Brouwer, and Hilbert bears directly on set theory foundations (A.5) and on completeness, consistency, and decidability of formal systems (B.3)."
+    },
+    {
+      "episodeTitle": "Zeno's Paradoxes",
+      "pid": "b07vs3v1",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Zeno's paradoxes engage with logical analysis of propositions about infinity and continuity, connecting to propositional and predicate reasoning about motion and plurality (A.1)."
+    },
+    {
+      "episodeTitle": "The Ontological Argument",
+      "pid": "b01mwx64",
+      "relevantPathsAI": [
+        "A.4",
+        "C.2"
+      ],
+      "rationaleAI": "Plantinga's modern reformulation of the ontological argument using modal logic exemplifies the application of modal logic (A.4), and the argument's structure engages with epistemic logic concerning belief and knowledge (C.2)."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

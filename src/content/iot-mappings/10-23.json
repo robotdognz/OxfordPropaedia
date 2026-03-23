@@ -1,0 +1,164 @@
+{
+  "sectionCode": "10/23",
+  "mappings": [
+    {
+      "episodeTitle": "Random and Pseudorandom",
+      "pid": "b00x9xjb",
+      "relevantPathsAI": [
+        "B",
+        "F",
+        "G.5"
+      ],
+      "rationaleAI": "Pseudorandom number generators and Monte Carlo simulations are core statistical tools (B) and connect to information theory (F) and numeric computation (G.5)."
+    },
+    {
+      "episodeTitle": "P v NP",
+      "pid": "b06mtms8",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "G.2"
+      ],
+      "rationaleAI": "The P versus NP problem is central to computer science theory of computation (G.2), algorithm analysis (G.1), and has implications for cryptography and artificial intelligence (G.6)."
+    },
+    {
+      "episodeTitle": "Renaissance Maths",
+      "pid": "p003k9hq",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4.a"
+      ],
+      "rationaleAI": "Renaissance mathematics covers the introduction of modern notation (A.4.a), advances in navigation and cartography (A.2.b, A.2.c), and perspective geometry as a geometrical aid (A.2.a)."
+    },
+    {
+      "episodeTitle": "Artificial Intelligence",
+      "pid": "p003k9fc",
+      "relevantPathsAI": [
+        "D",
+        "G.6"
+      ],
+      "rationaleAI": "Artificial intelligence covers neural networks, expert systems, and the Turing test, directly addressing AI as a branch of computer science (G.6) and automata theory's connections to neural nets (D.2)."
+    },
+    {
+      "episodeTitle": "Cryptography",
+      "pid": "p004y272",
+      "relevantPathsAI": [
+        "F.4",
+        "G"
+      ],
+      "rationaleAI": "Cryptography's mathematical foundations including RSA and Diffie-Hellman connect to applications of information theory to cryptography (F.4) and computer science (G)."
+    },
+    {
+      "episodeTitle": "Alan Turing",
+      "pid": "m000ncmw",
+      "relevantPathsAI": [
+        "D",
+        "G",
+        "G.1",
+        "G.2",
+        "G.4"
+      ],
+      "rationaleAI": "Alan Turing's universal Turing machine established theoretical foundations of computation (G.2), his work on algorithms and computability (G.1), and his concepts relate to automata theory (D)."
+    },
+    {
+      "episodeTitle": "Prime Numbers",
+      "pid": "p003hyf5",
+      "relevantPathsAI": [
+        "F.4"
+      ],
+      "rationaleAI": "Prime numbers' crucial application in modern cryptography and internet security (RSA encryption) connects to applications of information theory and number theory to cryptography (F.4)."
+    },
+    {
+      "episodeTitle": "Probability",
+      "pid": "b00bqf61",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.b",
+        "E.1"
+      ],
+      "rationaleAI": "Probability theory covers statistical inference principles (B.1), distribution functions (B.1.b), and applications in decision theory connecting to game theory (E.1)."
+    },
+    {
+      "episodeTitle": "Artificial Intelligence",
+      "pid": "p00545h7",
+      "relevantPathsAI": [
+        "D",
+        "G.6"
+      ],
+      "rationaleAI": "Artificial intelligence from the late 1990s perspective covers computational approaches to consciousness and neural networks, connecting to automata theory (D) and AI as a computer science field (G.6)."
+    },
+    {
+      "episodeTitle": "Carl Friedrich Gauss",
+      "pid": "b09gbnfj",
+      "relevantPathsAI": [
+        "B.2",
+        "H.1",
+        "H.5"
+      ],
+      "rationaleAI": "Gauss's method of least squares connects to statistical estimation (B.2), his work on celestial mechanics to mechanics of particles (H.1), and electromagnetic theory with Weber to electromagnetic theory (H.5)."
+    },
+    {
+      "episodeTitle": "e",
+      "pid": "b04hz49f",
+      "relevantPathsAI": [
+        "A.4.b"
+      ],
+      "rationaleAI": "Euler's number e, the natural logarithm, and exponential function connect to calculatory aspects of algebra through logarithms (A.4.b)."
+    },
+    {
+      "episodeTitle": "Chaos Theory",
+      "pid": "p00548f6",
+      "relevantPathsAI": [
+        "E.4",
+        "H.2"
+      ],
+      "rationaleAI": "Chaos theory's study of deterministic systems sensitive to initial conditions connects to control theory (E.4) and fluid mechanics applications (H.2)."
+    },
+    {
+      "episodeTitle": "The Laws of Motion",
+      "pid": "b009mvj0",
+      "relevantPathsAI": [
+        "H.1"
+      ],
+      "rationaleAI": "Newton's Laws of Motion are the foundation of the mathematical treatment of mechanics of particles and systems (H.1)."
+    },
+    {
+      "episodeTitle": "Relativity",
+      "pid": "b02144gl",
+      "relevantPathsAI": [
+        "H.6",
+        "H.7"
+      ],
+      "rationaleAI": "Einstein's relativity directly addresses space and time as a four-dimensional continuum (H.6) and Riemannian geometry (H.7) through general relativity's curved spacetime."
+    },
+    {
+      "episodeTitle": "Indian Mathematics",
+      "pid": "p0038xb0",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Indian mathematics covers the decimal place-value system (A.1) and early computational methods including trigonometric tables, connecting to ancient numerical notations (A.1.b)."
+    },
+    {
+      "episodeTitle": "Maths in the Early Islamic World",
+      "pid": "b08dr5qt",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.c"
+      ],
+      "rationaleAI": "Islamic mathematics covers the development of Arabic numerals and the decimal system (A.1.c), and al-Khwarizmi's algorithms connecting to algebraic notation (A.4.a)."
+    },
+    {
+      "episodeTitle": "Mathematics' Unintended Consequences",
+      "pid": "b00qj2nq",
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "The unintended applications of pure mathematics illustrate mathematical aspects of physical theories (H), including non-Euclidean geometry in general relativity and group theory in particle physics."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

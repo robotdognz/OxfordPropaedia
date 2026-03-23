@@ -1,4 +1,5 @@
 import type {
+  IotAggregateEntry,
   MacropaediaAggregateEntry,
   VsiAggregateEntry,
   WikipediaAggregateEntry,
@@ -44,6 +45,11 @@ export type CircleNavigatorWikipediaEntry = Pick<
   'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'checklistKey' | 'sectionCount' | 'sections'
 >;
 
+export type CircleNavigatorIotEntry = Pick<
+  IotAggregateEntry,
+  'pid' | 'title' | 'url' | 'datePublished' | 'durationSeconds' | 'checklistKey' | 'sectionCount' | 'sections'
+>;
+
 export type CircleNavigatorMacropaediaEntry = Pick<
   MacropaediaAggregateEntry,
   'title' | 'checklistKey' | 'sectionCount' | 'sections'
@@ -52,6 +58,7 @@ export type CircleNavigatorMacropaediaEntry = Pick<
 export interface CircleNavigatorPartRecommendations {
   vsi: CircleNavigatorVsiEntry[];
   wiki: CircleNavigatorWikipediaEntry[];
+  iot: CircleNavigatorIotEntry[];
   macro: CircleNavigatorMacropaediaEntry[];
 }
 

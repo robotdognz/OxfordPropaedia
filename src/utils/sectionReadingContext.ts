@@ -1,8 +1,10 @@
 import { getCollection } from 'astro:content';
+import iotCatalog from '../data/iot-catalog.json';
 import wikiCatalog from '../data/wikipedia-catalog.json';
 import { loadOutlineGraph } from './outlineGraph';
 import { vsiLookupKey } from './readingIdentity';
 import { computeWikiRelevanceScore, tokenize } from './wikipediaOutlineFilter';
+import { computeIotRelevanceScore } from './iotOutlineFilter';
 
 interface ReverseReference {
   sourceSection: string;
@@ -56,12 +58,27 @@ export interface EnrichedWikiArticle {
   _score: number;
 }
 
+export interface EnrichedIotEpisode {
+  pid: string;
+  title: string;
+  url: string;
+  synopsis?: string;
+  datePublished?: string;
+  durationSeconds?: number;
+  rationale: string;
+  relevantPathsAI: string[];
+  matchPercent: number;
+  _score: number;
+}
+
 interface SectionReadingCaches {
   reverseIndex: Map<string, ReverseReference[]>;
   vsiCatalogLookup: Map<string, any>;
   vsiMappingsBySection: Map<string, any[]>;
   wikiMappingsBySection: Map<string, any[]>;
+  iotMappingsBySection: Map<string, any[]>;
   wikiCatalogLookup: Map<string, any>;
+  iotCatalogLookup: Map<string, any>;
 }
 
 let cachesPromise: Promise<SectionReadingCaches> | undefined;
@@ -84,11 +101,12 @@ async function loadCaches(): Promise<SectionReadingCaches> {
 }
 
 async function buildCaches(): Promise<SectionReadingCaches> {
-  const [sections, vsiMappings, vsiCatalogCollections, wikiMappings] = await Promise.all([
+  const [sections, vsiMappings, vsiCatalogCollections, wikiMappings, iotMappings] = await Promise.all([
     getCollection('sections'),
     getCollection('vsi-mappings'),
     getCollection('vsi'),
     getCollection('wiki-mappings'),
+    getCollection('iot-mappings'),
   ]);
 
   const reverseIndex = new Map<string, ReverseReference[]>();
@@ -118,14 +136,21 @@ async function buildCaches(): Promise<SectionReadingCaches> {
     wikiMappings.map((entry) => [entry.data.sectionCode, entry.data.mappings])
   );
 
+  const iotMappingsBySection = new Map(
+    iotMappings.map((entry) => [entry.data.sectionCode, entry.data.mappings])
+  );
+
   const wikiCatalogLookup = new Map((wikiCatalog as any).articles.map((article: any) => [article.title, article]));
+  const iotCatalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
 
   return {
     reverseIndex,
     vsiCatalogLookup,
     vsiMappingsBySection,
     wikiMappingsBySection,
+    iotMappingsBySection,
     wikiCatalogLookup,
+    iotCatalogLookup,
   };
 }
 
@@ -188,6 +213,7 @@ export async function loadSectionReadingContext(section: {
   groupedReverseRefs: GroupedReverseReferencePart[];
   vsiMappings: EnrichedVsiMapping[];
   wikiArticlesForSection: EnrichedWikiArticle[];
+  iotEpisodesForSection: EnrichedIotEpisode[];
 }> {
   const [outline, caches] = await Promise.all([loadOutlineGraph(), loadCaches()]);
   const reverseRefs = caches.reverseIndex.get(section.sectionCode) ?? [];
@@ -241,10 +267,44 @@ export async function loadSectionReadingContext(section: {
     }))
     .sort((left, right) => right._score - left._score);
 
+  let iotEpisodesForSection = (caches.iotMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
+    const catalogEntry = caches.iotCatalogLookup.get(entry.pid);
+    const title = catalogEntry?.title ?? entry.episodeTitle;
+    const synopsis = catalogEntry?.description ?? catalogEntry?.synopsis;
+    return {
+      pid: entry.pid,
+      title,
+      url: catalogEntry?.url || `https://www.bbc.co.uk/programmes/${entry.pid}`,
+      synopsis,
+      datePublished: catalogEntry?.datePublished,
+      durationSeconds: catalogEntry?.durationSeconds,
+      rationale: entry.rationaleAI || '',
+      relevantPathsAI: entry.relevantPathsAI || [],
+      _score: computeIotRelevanceScore(
+        {
+          title,
+          synopsis,
+          relevantPathsAI: entry.relevantPathsAI,
+        },
+        sectionTokens
+      ),
+      matchPercent: 0,
+    };
+  });
+
+  const maxIotScore = Math.max(...iotEpisodesForSection.map((episode) => episode._score), 1);
+  iotEpisodesForSection = iotEpisodesForSection
+    .map((episode) => ({
+      ...episode,
+      matchPercent: Math.round(Math.min(episode._score / maxIotScore, 1) * 100),
+    }))
+    .sort((left, right) => right._score - left._score);
+
   return {
     reverseRefs,
     groupedReverseRefs,
     vsiMappings,
     wikiArticlesForSection,
+    iotEpisodesForSection,
   };
 }

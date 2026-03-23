@@ -1,0 +1,32 @@
+{
+  "sectionCode": "211",
+  "mappings": [
+    {
+      "episodeTitle": "The Moon",
+      "pid": "b016lh15",
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "The Moon's tidal effects on Earth directly address tidal friction (A.2.c) as a dynamic effect related to Earth's rotation."
+    },
+    {
+      "episodeTitle": "al-Biruni",
+      "pid": "b00smnlk",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Al-Biruni's pioneering geodesic measurement of Earth's radius directly addresses the development of improved approximations to Earth's size and shape (B.2) and measurement of geodetic parameters (B.3)."
+    },
+    {
+      "episodeTitle": "Meteorology",
+      "pid": "p00548v8",
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
+      "rationaleAI": "Meteorology covering atmospheric dynamics including the Coriolis force's effect on weather systems addresses the Coriolis force (A.2.a) as related to Earth's rotation."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

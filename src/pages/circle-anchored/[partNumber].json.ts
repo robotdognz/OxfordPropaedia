@@ -1,8 +1,10 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import iotCatalog from '../../data/iot-catalog.json';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import type { CircleNavigatorPartRecommendations } from '../../components/content/circleNavigatorShared';
 import {
+  buildIotAggregateEntries,
   buildMacropaediaAggregateEntries,
   buildVsiAggregateEntries,
   buildWikipediaAggregateEntries,
@@ -20,6 +22,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
       const vsiMappings = await getCollection('vsi-mappings');
       const vsiCatalogCollections = await getCollection('vsi');
       const wikiMappings = await getCollection('wiki-mappings');
+      const iotMappings = await getCollection('iot-mappings');
 
       const sectionSummaries = sections.map((entry) => ({
         sectionCode: entry.data.sectionCode,
@@ -48,6 +51,37 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         sectionCodes: [...(articleSectionCodes.get(article.title) || [])],
       }));
 
+      const iotCatalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
+      const episodeSectionCodes = new Map<string, Set<string>>();
+      const episodeTitleLookup = new Map<string, string>();
+
+      for (const mapping of iotMappings) {
+        for (const episode of mapping.data.mappings) {
+          if (!episodeSectionCodes.has(episode.pid)) {
+            episodeSectionCodes.set(episode.pid, new Set());
+          }
+          episodeSectionCodes.get(episode.pid)!.add(mapping.data.sectionCode);
+          if (!episodeTitleLookup.has(episode.pid)) {
+            episodeTitleLookup.set(episode.pid, episode.episodeTitle);
+          }
+        }
+      }
+
+      const iotEpisodes = Array.from(episodeSectionCodes.entries()).map(([pid, sectionCodes]) => {
+        const catalogEntry = iotCatalogLookup.get(pid);
+
+        return {
+          pid,
+          title: catalogEntry?.title ?? episodeTitleLookup.get(pid) ?? pid,
+          url: catalogEntry?.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
+          synopsis: catalogEntry?.synopsis,
+          summaryAI: catalogEntry?.summaryAI,
+          datePublished: catalogEntry?.datePublished,
+          durationSeconds: catalogEntry?.durationSeconds,
+          sectionCodes: [...sectionCodes],
+        };
+      });
+
       const vsiEntries = buildVsiAggregateEntries(
         sectionSummaries,
         vsiMappings.map((entry) => entry.data),
@@ -70,6 +104,17 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         sections: entry.sections,
       }));
 
+      const iotEntries = buildIotAggregateEntries(iotEpisodes, sectionLookup).map((entry) => ({
+        pid: entry.pid,
+        title: entry.title,
+        url: entry.url,
+        datePublished: entry.datePublished,
+        durationSeconds: entry.durationSeconds,
+        checklistKey: entry.checklistKey,
+        sectionCount: entry.sectionCount,
+        sections: entry.sections,
+      }));
+
       const macroEntries = buildMacropaediaAggregateEntries(sections.map((entry) => entry.data)).map((entry) => ({
         title: entry.title,
         checklistKey: entry.checklistKey,
@@ -84,6 +129,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
           return [partNumber, {
             vsi: vsiEntries.filter((entry) => entry.sections.some(belongsToPart)),
             wiki: wikiEntries.filter((entry) => entry.sections.some(belongsToPart)),
+            iot: iotEntries.filter((entry) => entry.sections.some(belongsToPart)),
             macro: macroEntries.filter((entry) => entry.sections.some(belongsToPart)),
           }];
         })

@@ -1,0 +1,70 @@
+{
+  "sectionCode": "212",
+  "mappings": [
+    {
+      "episodeTitle": "The Earth's Core",
+      "pid": "b05s3gyv",
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "C.3",
+        "D.1",
+        "D.2",
+        "E"
+      ],
+      "rationaleAI": "The Earth's core covering magnetic field generation through dynamo theory, core-mantle interactions, iron/nickel composition, and extreme conditions addresses the magnetic field (B), electrical currents from the core (C.3), heat sources (D.1), heat flow from interior (D.2), and mechanical properties (E)."
+    },
+    {
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Earth's magnetic field, polarity reversals, magnetic materials, and Gilbert's De Magnete directly address measurement and representation (B.1), sources and characteristics (B.2), and variations including reversals (B.3)."
+    },
+    {
+      "episodeTitle": "Seismology",
+      "pid": "m00154gh",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "G"
+      ],
+      "rationaleAI": "Seismology revealing Earth's internal structure through seismic wave analysis, earthquake mechanisms, and the Richter scale directly addresses mechanical properties (E), seismic waves (E.2), and deformation of materials (G)."
+    },
+    {
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": [
+        "D.3",
+        "E.6",
+        "G"
+      ],
+      "rationaleAI": "Plate tectonics covering mantle convection, subduction, mountain building, and volcanic activity addresses geologic aspects of heat flow (D.3), response to long-duration stresses (E.6), and deformation of crustal materials (G)."
+    },
+    {
+      "episodeTitle": "Solar Wind",
+      "pid": "m000dg9n",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Solar wind interaction with Earth's magnetosphere producing auroras and magnetic storms addresses variations in the main magnetic field including magnetic storms (B.3)."
+    },
+    {
+      "episodeTitle": "Heat",
+      "pid": "b00fq3d4",
+      "relevantPathsAI": [
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "The history of heat science, thermodynamics, and heat transfer mechanisms address the Earth's thermal properties (D) and sources of heat (D.1)."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

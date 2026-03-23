@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import IotLibrary from '../../components/content/IotLibrary';
+import { buildIotAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
+import { analyzeSubsectionCoverage, buildOutlineItemCoverage, buildSectionOutlinePathIndex } from '../../utils/outlineCoverage';
+import iotCatalog from '../../data/iot-catalog.json';
+import { getCollection } from 'astro:content';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
+
+const base = import.meta.env.BASE_URL;
+const sections = await getCollection('sections');
+const iotMappings = await getCollection('iot-mappings');
+const outline = await loadOutlineGraph();
+
+const sectionLookup = new Map<string, ReadingSectionSummary>(
+  sections.map((section) => [
+    section.data.sectionCode,
+    {
+      sectionCode: section.data.sectionCode,
+      sectionCodeDisplay: section.data.sectionCodeDisplay,
+      title: section.data.title,
+      partNumber: section.data.partNumber,
+      partTitle: outline.sectionMeta[section.data.sectionCode]?.partTitle,
+      divisionId: section.data.divisionId,
+      divisionTitle: outline.sectionMeta[section.data.sectionCode]?.divisionTitle,
+    },
+  ])
+);
+
+const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
+const episodeCoverage = new Map<string, {
+  sectionCodes: Set<string>;
+  subsectionKeys: Set<string>;
+  mappedPathCount: number;
+  mappedPathSections: Set<string>;
+  fallbackSections: Set<string>;
+}>();
+const episodeTitleLookup = new Map<string, string>();
+
+for (const mapping of iotMappings) {
+  for (const entry of mapping.data.mappings) {
+    if (!episodeTitleLookup.has(entry.pid)) {
+      episodeTitleLookup.set(entry.pid, entry.episodeTitle);
+    }
+
+    if (!episodeCoverage.has(entry.pid)) {
+      episodeCoverage.set(entry.pid, {
+        sectionCodes: new Set(),
+        subsectionKeys: new Set(),
+        mappedPathCount: 0,
+        mappedPathSections: new Set(),
+        fallbackSections: new Set(),
+      });
+    }
+
+    const coverage = episodeCoverage.get(entry.pid)!;
+    coverage.sectionCodes.add(mapping.data.sectionCode);
+    const subsectionCoverage = analyzeSubsectionCoverage(
+      mapping.data.sectionCode,
+      entry.relevantPathsAI,
+      sectionOutlinePathIndex
+    );
+
+    subsectionCoverage.coverageKeys.forEach((key) => coverage.subsectionKeys.add(key));
+    coverage.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
+    if (subsectionCoverage.matchedPathKeys.length > 0) {
+      coverage.mappedPathSections.add(mapping.data.sectionCode);
+    }
+    if (subsectionCoverage.usedFallback) {
+      coverage.fallbackSections.add(mapping.data.sectionCode);
+    }
+  }
+}
+
+const catalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
+const episodes = Array.from(episodeCoverage.keys()).map((pid) => {
+  const catalogEntry = catalogLookup.get(pid);
+  const coverage = episodeCoverage.get(pid);
+
+  return {
+    pid,
+    title: catalogEntry?.title ?? episodeTitleLookup.get(pid) ?? pid,
+    synopsis: catalogEntry?.description ?? catalogEntry?.synopsis,
+    url: catalogEntry?.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
+    datePublished: catalogEntry?.datePublished,
+    durationSeconds: catalogEntry?.durationSeconds,
+    sectionCodes: [...(coverage?.sectionCodes || [])],
+    subsectionKeys: [...(coverage?.subsectionKeys || [])],
+    mappedPathCount: coverage?.mappedPathCount || 0,
+    mappedPathSectionCount: coverage?.mappedPathSections.size || 0,
+    fallbackSectionCount: coverage?.fallbackSections.size || 0,
+  };
+});
+
+const entries = buildIotAggregateEntries(episodes, sectionLookup);
+const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
+  sections.map((entry) => entry.data)
+);
+---
+
+<BaseLayout
+  title="BBC In Our Time — Propaedia"
+  description="Browse BBC In Our Time episodes mapped to the Propaedia outline, with coverage-based listening paths across the whole outline."
+>
+  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <header class="max-w-4xl">
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Lists</p>
+      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">BBC In Our Time</h1>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
+        Browse mapped <a href="https://www.bbc.co.uk/programmes/b006qykl" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline">In Our Time</a> episodes as a coverage-first listening guide. Use the same Part, Division, Section, and Subsection tabs as the other reading lists, but follow them through expert conversations instead of books or articles. Check off episodes as you go to track how much of the outline you have already covered.
+      </p>
+    </header>
+
+    <section class="mt-10">
+      <IotLibrary
+        client:load
+        entries={entries}
+        baseUrl={base}
+        outlineItemCounts={outlineItemCounts}
+        totalOutlineItems={totalOutlineItems}
+      />
+    </section>
+  </main>
+</BaseLayout>

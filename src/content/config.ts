@@ -36,6 +36,13 @@ const wikiMappingEntrySchema = z.object({
   relevantPathsAI: z.array(z.string()).optional(),
 });
 
+const iotMappingEntrySchema = z.object({
+  episodeTitle: z.string(),
+  pid: z.string(),
+  rationaleAI: z.string().optional(),
+  relevantPathsAI: z.array(z.string()).optional(),
+});
+
 // --- Collection schemas ---
 
 const partsCollection = defineCollection({
@@ -123,6 +130,15 @@ const wikiMappingsCollection = defineCollection({
   }),
 });
 
+const iotMappingsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/iot-mappings' }),
+  schema: z.object({
+    _curatedBy: z.string().optional(),
+    sectionCode: z.string(),
+    mappings: z.array(iotMappingEntrySchema),
+  }),
+});
+
 const readingItemSchema = z.object({
   title: z.string(),
   author: z.string().optional(),
@@ -136,6 +152,9 @@ const readingsSchema = z.object({
   vsi: z.array(readingItemSchema).optional(),
   wiki: z.array(readingItemSchema).optional(),
   macro: z.array(readingItemSchema).optional(),
+  iot: z.array(readingItemSchema.extend({
+    pid: z.string().optional(),
+  })).optional(),
 });
 
 const partReadingsCollection = defineCollection({
@@ -162,6 +181,7 @@ export const collections = {
   vsi: vsiCatalogCollection,
   'wiki-mappings': wikiMappingsCollection,
   'vsi-mappings': vsiMappingsCollection,
+  'iot-mappings': iotMappingsCollection,
   'part-readings': partReadingsCollection,
   'division-readings': divisionReadingsCollection,
 };

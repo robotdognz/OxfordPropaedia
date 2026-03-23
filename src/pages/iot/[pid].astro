@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import CoverageRings from '../../components/ui/CoverageRings';
+import ReadingCheckbox from '../../components/content/ReadingCheckbox';
+import { sectionUrl } from '../../utils/helpers';
+import { iotChecklistKey } from '../../utils/readingChecklist';
+import iotCatalog from '../../data/iot-catalog.json';
+import { getCollection } from 'astro:content';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
+
+export async function getStaticPaths() {
+  const outline = await loadOutlineGraph();
+  const totals = {
+    parts: outline.totals.parts,
+    divisions: outline.totals.divisions,
+    sections: outline.totals.sections,
+  };
+
+  const catalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
+  const iotMappings = await getCollection('iot-mappings');
+  const episodeMappings = new Map<string, Array<{
+    title: string;
+    sectionCode: string;
+    rationaleAI?: string;
+    relevantPathsAI: string[];
+  }>>();
+
+  for (const mapping of iotMappings) {
+    for (const entry of mapping.data.mappings) {
+      if (!episodeMappings.has(entry.pid)) {
+        episodeMappings.set(entry.pid, []);
+      }
+
+      episodeMappings.get(entry.pid)!.push({
+        title: entry.episodeTitle,
+        sectionCode: mapping.data.sectionCode,
+        rationaleAI: entry.rationaleAI,
+        relevantPathsAI: entry.relevantPathsAI ?? [],
+      });
+    }
+  }
+
+  return Array.from(episodeMappings.entries()).map(([pid, codes]) => {
+    const catalogEpisode = catalogLookup.get(pid);
+    const episode = {
+      pid,
+      title: catalogEpisode?.title ?? codes[0]?.title ?? pid,
+      url: catalogEpisode?.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
+      synopsis: catalogEpisode?.description ?? catalogEpisode?.synopsis,
+      datePublished: catalogEpisode?.datePublished,
+      durationSeconds: catalogEpisode?.durationSeconds,
+    };
+    const sections = codes
+      .map((entry) => ({
+        sectionCode: entry.sectionCode,
+        relevantPathsAI: entry.relevantPathsAI,
+        rationaleAI: entry.rationaleAI,
+        meta: outline.sectionMeta[entry.sectionCode],
+      }))
+      .filter((section: any) => section.meta);
+
+    const coveredParts = new Set(sections.map((section: any) => section.meta.partNumber));
+    const coveredDivisions = new Set(sections.map((section: any) => section.meta.divisionId));
+    const coverage = {
+      parts: coveredParts.size,
+      divisions: coveredDivisions.size,
+      sections: sections.length,
+    };
+
+    return {
+      params: { pid },
+      props: { episode, sections, coverage, totals },
+    };
+  });
+}
+
+const base = import.meta.env.BASE_URL;
+const { episode, sections, coverage, totals } = Astro.props;
+
+const byPart = new Map<number, typeof sections>();
+for (const section of sections) {
+  const items = byPart.get(section.meta.partNumber) || [];
+  items.push(section);
+  byPart.set(section.meta.partNumber, items);
+}
+const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
+
+const rings = [
+  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
+  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
+  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
+];
+
+const metadata = formatIotEpisodeMeta(episode);
+---
+
+<BaseLayout title={`${episode.title} — BBC In Our Time`} description={episode.synopsis || `BBC In Our Time episode: ${episode.title}`}>
+  <main id="main-content" class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="mb-6 text-sm text-gray-500 font-sans">
+      <a href={`${base}/`} class="hover:text-indigo-700">Home</a>
+      <span class="mx-1">/</span>
+      <a href={`${base}/iot`} class="hover:text-indigo-700">BBC In Our Time</a>
+      <span class="mx-1">/</span>
+      <span class="text-gray-900">{episode.title}</span>
+    </nav>
+
+    <header>
+      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">BBC In Our Time</p>
+      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${episode.title}`}>{episode.title}</h1>
+      <span data-pagefind-meta="page_type:BBC In Our Time" class="hidden"></span>
+      {metadata && (
+        <p class="mt-2 text-base text-gray-500">{metadata}</p>
+      )}
+      <div class="mt-3 flex flex-wrap items-center gap-4">
+        <ReadingCheckbox client:idle checklistKey={iotChecklistKey(episode.pid)} />
+        <a
+          href={episode.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+        >
+          Listen on BBC ↗
+        </a>
+      </div>
+    </header>
+
+    {episode.synopsis && (
+      <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">BBC Synopsis</h2>
+        <p class="mt-2 text-sm leading-relaxed text-gray-700">{episode.synopsis}</p>
+      </section>
+    )}
+
+    {sections.length > 0 && (
+      <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
+        <div class="flex-1 min-w-0">
+          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+            Mapped to {sections.length} {sections.length === 1 ? 'Section' : 'Sections'}
+          </h2>
+          <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
+        </div>
+        <div class="shrink-0">
+          <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
+        </div>
+      </div>
+    )}
+
+    {sections.length > 0 ? (
+      <section class="mt-6">
+        {sortedParts.map(([partNumber, partSections]) => (
+          <div class="mt-4">
+            <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
+              Part {partNumber}: {partSections[0].meta.partTitle}
+            </h3>
+            <ul class="mt-2 space-y-2">
+              {partSections.map((section) => (
+                <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
+                  <div class="flex flex-wrap items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <a
+                        href={sectionUrl(section.sectionCode, base)}
+                        class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
+                      >
+                        Section {section.sectionCode}: {section.meta.sectionTitle}
+                      </a>
+                      <p class="mt-0.5 text-xs text-gray-400">{section.meta.divisionTitle}</p>
+                    </div>
+                    <span class={`inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-semibold ${section.relevantPathsAI?.length ? 'border-indigo-200 bg-indigo-50 text-indigo-700' : 'border-slate-200 bg-slate-100 text-slate-700'}`}>
+                      {section.relevantPathsAI?.length
+                        ? `${section.relevantPathsAI.length} mapped ${section.relevantPathsAI.length === 1 ? 'path' : 'paths'}`
+                        : 'Broader Section coverage'}
+                    </span>
+                  </div>
+                  {section.rationaleAI && (
+                    <p class="mt-1 text-xs text-gray-500 leading-relaxed">{section.rationaleAI}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    ) : (
+      <section class="mt-8">
+        <p class="text-sm text-gray-400 italic">This episode has not yet been mapped to Propaedia Sections.</p>
+      </section>
+    )}
+  </main>
+</BaseLayout>

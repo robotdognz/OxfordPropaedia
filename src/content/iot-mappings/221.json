@@ -1,0 +1,95 @@
+{
+  "sectionCode": "221",
+  "mappings": [
+    {
+      "episodeTitle": "Meteorology",
+      "pid": "p00548v8",
+      "relevantPathsAI": [
+        "A.2",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "B.7"
+      ],
+      "rationaleAI": "Meteorology covering atmospheric dynamics, fronts, pressure systems, jet streams, numerical weather prediction, and synoptic charts comprehensively addresses thermal structure (A.2) and large-scale atmospheric motions (B)."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": [
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Photosynthesis and the Great Oxygenation Event, along with photosynthesis's global significance for the carbon cycle and atmospheric composition, directly address the carbon budget (A.1.a.ii)."
+    },
+    {
+      "episodeTitle": "Solar Wind",
+      "pid": "m000dg9n",
+      "relevantPathsAI": [
+        "A.3.b"
+      ],
+      "rationaleAI": "Solar wind interaction with Earth's magnetosphere producing auroras and magnetic storms directly addresses ionospheric variations of solar origin (A.3.b.ii)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
+        "A.1.a.i"
+      ],
+      "rationaleAI": "Water's phase transitions, the water cycle, and climate regulation directly address the water cycle in the homosphere (A.1.a.i)."
+    },
+    {
+      "episodeTitle": "Carbon",
+      "pid": "p003c1cj",
+      "relevantPathsAI": [
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Carbon's role in the carbon cycle, fossil fuels, and climate change directly addresses the carbon budget (A.1.a.ii)."
+    },
+    {
+      "episodeTitle": "Oxygen",
+      "pid": "b0088nql",
+      "relevantPathsAI": [
+        "A.1.b.i"
+      ],
+      "rationaleAI": "Oxygen's significance for Earth's atmosphere and the evolution of atmospheric composition addresses oxygen dissociation in the heterosphere (A.1.b.i) and provides broader atmospheric chemistry context."
+    },
+    {
+      "episodeTitle": "Venus",
+      "pid": "m0001rm1",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Venus's runaway greenhouse effect and crushing atmospheric pressure provide a comparative planetary perspective on atmospheric thermal structure (A.2) and atmospheric evolution."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c.iii"
+      ],
+      "rationaleAI": "Cosmic rays interacting with Earth's atmosphere producing particle showers address ionospheric disturbances (A.3.b) and the Van Allen radiation belt context (A.3.c.iii)."
+    },
+    {
+      "episodeTitle": "Plasma",
+      "pid": "b07x6j4g",
+      "relevantPathsAI": [
+        "A.3.b"
+      ],
+      "rationaleAI": "Plasma physics in the magnetosphere and auroras addresses ionospheric variations and disturbances of solar origin (A.3.b)."
+    },
+    {
+      "episodeTitle": "Mars",
+      "pid": "b00772rr",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Mars's thin atmosphere provides comparative context for understanding atmospheric composition and structure (A), though its primary focus is planetary science."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

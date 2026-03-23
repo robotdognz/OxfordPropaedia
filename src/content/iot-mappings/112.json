@@ -1,0 +1,151 @@
+{
+  "sectionCode": "112",
+  "mappings": [
+    {
+      "episodeTitle": "The Neutron",
+      "pid": "b076mnkr",
+      "relevantPathsAI": [
+        "A.2.a",
+        "D",
+        "D.1",
+        "D.4",
+        "C.7.c"
+      ],
+      "rationaleAI": "Chadwick's discovery of the neutron, its role in nuclear stability, neutron-proton ratio, nuclear fission chain reactions, and beta decay directly address neutrons as nuclear components (A.2.a), neutron properties and reactions (D), and beta decay (C.7.c)."
+    },
+    {
+      "episodeTitle": "The Proton",
+      "pid": "b09zt3mr",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.b",
+        "A.6",
+        "H.1.a"
+      ],
+      "rationaleAI": "The proton's charge defining atomic number (A.1.b), its role as a nuclear component (A.2.b), quark structure and QCD relating to nuclear force theories (A.6), and its discovery as a fundamental particle (H.1.a)."
+    },
+    {
+      "episodeTitle": "Nuclear Physics",
+      "pid": "p0054887",
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "F",
+        "H"
+      ],
+      "rationaleAI": "A comprehensive overview covering Rutherford's nucleus discovery, Chadwick's neutron, nuclear fission, chain reactions, radioactive decay, the strong and weak forces, particle accelerators, and the Standard Model addresses nuclear structure (A), radioactivity (C), fission (F), and elementary particles (H)."
+    },
+    {
+      "episodeTitle": "The Neutrino",
+      "pid": "b0106tjc",
+      "relevantPathsAI": [
+        "C.7.c",
+        "H.1.a",
+        "H.1.d",
+        "H.2"
+      ],
+      "rationaleAI": "The neutrino was predicted to explain beta decay energy conservation (C.7.c), its three flavours and oscillation place it among known elementary particles (H.1.d), and its interaction via the weak force addresses fundamental forces (H.2)."
+    },
+    {
+      "episodeTitle": "Antimatter",
+      "pid": "b00808w8",
+      "relevantPathsAI": [
+        "H.1.a",
+        "H.3.c",
+        "H.4.c"
+      ],
+      "rationaleAI": "The prediction and discovery of antiparticles (H.1.a), matter-antimatter symmetry classification (H.3.c), and CP violation as a conservation law violation (H.4.c) are directly addressed."
+    },
+    {
+      "episodeTitle": "Higgs Boson",
+      "pid": "p004y2b7",
+      "relevantPathsAI": [
+        "H.1.d",
+        "H.2",
+        "H.1.c"
+      ],
+      "rationaleAI": "The Higgs boson and Higgs mechanism for mass generation address known elementary particles (H.1.d), fundamental forces unification (H.2), and advances in quantum field theory (H.1.c)."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "H.5.b",
+        "I.1.b"
+      ],
+      "rationaleAI": "Cosmic rays producing particle showers in Earth's atmosphere and their role in discovering subatomic particles address production by cosmic ray interactions (H.5.b) and passage of particles through matter (I.1.b)."
+    },
+    {
+      "episodeTitle": "Lise Meitner",
+      "pid": "m002bt7s",
+      "relevantPathsAI": [
+        "F.1",
+        "F.1.a",
+        "C"
+      ],
+      "rationaleAI": "Meitner's co-discovery of nuclear fission, her theoretical explanation using Bohr's liquid drop model, and her work on radioactivity and transuranic elements address fission phenomena (F.1) and radioactivity (C)."
+    },
+    {
+      "episodeTitle": "Nuclear Fusion",
+      "pid": "b04mgtdq",
+      "relevantPathsAI": [
+        "G",
+        "G.1",
+        "G.2",
+        "G.3",
+        "G.4",
+        "G.5"
+      ],
+      "rationaleAI": "Nuclear fusion in stellar interiors, the proton-proton chain, tokamak and inertial confinement approaches, the Lawson criterion, and plasma confinement challenges comprehensively address all aspects of nuclear fusion (G)."
+    },
+    {
+      "episodeTitle": "Theories of Everything",
+      "pid": "p004y24b",
+      "relevantPathsAI": [
+        "H.2",
+        "H.7"
+      ],
+      "rationaleAI": "The quest to unify all fundamental forces and the Standard Model's treatment of three of four forces address fundamental forces in particle interactions (H.2) and other particles suggested by contemporary theory (H.7)."
+    },
+    {
+      "episodeTitle": "Grand Unified Theory",
+      "pid": "p00546nx",
+      "relevantPathsAI": [
+        "H.2",
+        "H.6"
+      ],
+      "rationaleAI": "Grand Unified Theory covering the four fundamental forces, electroweak unification, and attempts to incorporate the strong force address fundamental forces (H.2) and relations between weak, strong, and electromagnetic interactions (H.6)."
+    },
+    {
+      "episodeTitle": "Quantum Gravity",
+      "pid": "p00547c4",
+      "relevantPathsAI": [
+        "H.2",
+        "H.7"
+      ],
+      "rationaleAI": "Attempts to reconcile quantum mechanics and general relativity, string theory, and loop quantum gravity address fundamental forces (H.2) and theoretical particles suggested by contemporary ideas (H.7)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": [
+        "A.1.d",
+        "H.3.b",
+        "H.4"
+      ],
+      "rationaleAI": "The Exclusion Principle governing fermion quantum states relates to nuclear spin (A.1.d), classification by statistics (H.3.b), and conservation laws and symmetry (H.4)."
+    },
+    {
+      "episodeTitle": "Plasma",
+      "pid": "b07x6j4g",
+      "relevantPathsAI": [
+        "G.4",
+        "G.4.a",
+        "G.4.b"
+      ],
+      "rationaleAI": "Plasma physics including ionisation, Debye shielding, and collective behaviour in tokamaks directly addresses the formation and confinement of plasma for thermonuclear reactors (G.4)."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

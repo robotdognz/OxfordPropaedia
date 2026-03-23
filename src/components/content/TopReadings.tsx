@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import Accordion from '../ui/Accordion';
 import {
+  iotChecklistKey,
   readChecklistState,
   subscribeChecklistState,
   writeChecklistState,
@@ -19,6 +20,7 @@ import { slugify } from '../../utils/helpers';
 export interface ReadingItem {
   title: string;
   author?: string;
+  pid?: string;
   count: number;
   sections?: number;
   paths?: number;
@@ -28,6 +30,7 @@ export interface ReadingItem {
 export interface TopReadingsProps {
   vsi?: ReadingItem[];
   wiki?: ReadingItem[];
+  iot?: ReadingItem[];
   macro?: ReadingItem[];
   baseUrl: string;
   contextLabel: string; // e.g., "this part" or "this division"
@@ -71,7 +74,7 @@ function buildRationale(item: ReadingItem, countLabel: string, contextLabel: str
   return lines.join(' ');
 }
 
-export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
+export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [readingPref, setReadingPref] = useState<ReadingType>(() => getReadingPreference());
 
@@ -82,7 +85,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
     return () => { unsubChecklist(); unsubPref(); };
   }, []);
 
-  if (vsi.length === 0 && wiki.length === 0 && macro.length === 0) return null;
+  if (vsi.length === 0 && wiki.length === 0 && iot.length === 0 && macro.length === 0) return null;
 
   // Use the pre-computed relevance score from the build script.
   // Falls back to 100 if not available (shouldn't happen with current data).
@@ -94,13 +97,14 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
           Recommended Readings
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          The most relevant books and articles for {contextLabel}, ranked by how broadly and deeply they cover the subject matter.
+          The most relevant books, articles, and episodes for {contextLabel}, ranked by how broadly and deeply they cover the subject matter.
         </p>
       </div>
 
       {[
         { type: 'vsi' as const, items: vsi, title: `Oxford VSI Recommendations (${vsi.length})`, browseHref: `${baseUrl}/vsi#vsi-library`, browseLabel: 'Browse all Oxford VSI books', whyLabel: 'Why this book?', getCheckKey: (item: ReadingItem) => vsiChecklistKey(item.title, item.author || ''), getHref: (item: ReadingItem) => `${baseUrl}/vsi/${slugify(item.title)}`, showAuthor: true },
         { type: 'wikipedia' as const, items: wiki, title: `Wikipedia Article Recommendations (${wiki.length})`, browseHref: `${baseUrl}/wikipedia#wikipedia-library`, browseLabel: 'Browse all Wikipedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => wikipediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/wikipedia/${slugify(item.title)}`, showAuthor: false },
+        { type: 'iot' as const, items: iot, title: `BBC In Our Time Episodes (${iot.length})`, browseHref: `${baseUrl}/iot#iot-library`, browseLabel: 'Browse all BBC In Our Time episodes', whyLabel: 'Why this episode?', getCheckKey: (item: ReadingItem) => iotChecklistKey(item.pid || item.title), getHref: (item: ReadingItem) => item.pid ? `${baseUrl}/iot/${item.pid}` : `${baseUrl}/iot`, showAuthor: false },
         { type: 'macropaedia' as const, items: macro, title: `Macropaedia Reading List (${macro.length})`, browseHref: `${baseUrl}/macropaedia#macropaedia-library`, browseLabel: 'Browse all Macropaedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => macropaediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/macropaedia/${slugify(item.title)}`, showAuthor: false },
       ]
         .filter(s => s.items.length > 0)

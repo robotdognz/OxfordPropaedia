@@ -8,7 +8,7 @@ import {
   subscribeReadingPreference,
 } from '../../utils/readingPreference';
 
-const TYPES: ReadingType[] = ['vsi', 'wikipedia', 'macropaedia'];
+const TYPES: ReadingType[] = ['vsi', 'wikipedia', 'iot', 'macropaedia'];
 
 export default function ReadingPreferencePicker() {
   const [selected, setSelected] = useState<ReadingType>('vsi');

@@ -23,6 +23,10 @@ export function wikipediaChecklistKey(title: string): string {
   return `wikipedia:${normalizeChecklistKeyPart(title)}`;
 }
 
+export function iotChecklistKey(identifier: string): string {
+  return `iot:${normalizeChecklistKeyPart(identifier)}`;
+}
+
 export function readChecklistState(): Record<string, boolean> {
   if (typeof window === 'undefined') return {};
 

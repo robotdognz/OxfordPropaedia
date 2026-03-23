@@ -3,7 +3,7 @@
  * Determines which recommendation type to auto-open/scroll to.
  */
 
-export type ReadingType = 'vsi' | 'wikipedia' | 'macropaedia';
+export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
 
 const STORAGE_KEY = 'propaedia-reading-preference';
 const CHANGE_EVENT = 'propaedia:reading-preference-change';
@@ -11,6 +11,7 @@ const CHANGE_EVENT = 'propaedia:reading-preference-change';
 export const READING_TYPE_LABELS: Record<ReadingType, string> = {
   vsi: 'Oxford VSI',
   wikipedia: 'Wikipedia',
+  iot: 'BBC In Our Time',
   macropaedia: 'Macropaedia',
 };
 
@@ -18,7 +19,7 @@ export function getReadingPreference(): ReadingType {
   if (typeof window === 'undefined') return 'vsi';
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === 'vsi' || stored === 'wikipedia' || stored === 'macropaedia') {
+    if (stored === 'vsi' || stored === 'wikipedia' || stored === 'iot' || stored === 'macropaedia') {
       return stored;
     }
   } catch {

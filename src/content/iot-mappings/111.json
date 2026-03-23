@@ -1,0 +1,145 @@
+{
+  "sectionCode": "111",
+  "mappings": [
+    {
+      "episodeTitle": "The Electron",
+      "pid": "m001cf1n",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3.c",
+        "A.4.c"
+      ],
+      "rationaleAI": "J.J. Thomson's 1897 identification of the electron as a component of all matter (A.3.c), its role in atomic structure and chemical bonding (A.1), and quantum mechanical electron behaviour including wave-particle duality (A.4.c)."
+    },
+    {
+      "episodeTitle": "The Proton",
+      "pid": "b09zt3mr",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4.a"
+      ],
+      "rationaleAI": "Rutherford's discovery of the proton and its role defining atomic number addresses the nucleus-electron structure (A.1), while its connection to the Rutherford model is central to A.4.a."
+    },
+    {
+      "episodeTitle": "Rutherford",
+      "pid": "p004y23q",
+      "relevantPathsAI": [
+        "A.3.e",
+        "A.4.a"
+      ],
+      "rationaleAI": "Rutherford's gold foil experiment established the nuclear model of the atom (A.4.a), and his identification of alpha and beta radiation relates to radioactive transformation (A.3.e)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": [
+        "A.4.c",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "The Exclusion Principle explains electron shell configurations and periodic table structure via quantum states, directly addressing wave-mechanical electronic structure (A.4.c) and the origin of atomic spectra in quantized transitions (C.2)."
+    },
+    {
+      "episodeTitle": "Heisenberg's Uncertainty Principle",
+      "pid": "m001wq9h",
+      "relevantPathsAI": [
+        "A.4.c",
+        "C.2"
+      ],
+      "rationaleAI": "The uncertainty principle is foundational to the wave-mechanical theory of electronic structure (A.4.c) and shapes understanding of quantized electronic transitions producing atomic spectra (C.2)."
+    },
+    {
+      "episodeTitle": "Antimatter",
+      "pid": "b00808w8",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4"
+      ],
+      "rationaleAI": "Dirac's prediction of the positron, its experimental discovery, matter-antimatter symmetry, annihilation reactions, CP violation, and the baryon asymmetry problem comprehensively address all aspects of antimatter (E.1-E.4)."
+    },
+    {
+      "episodeTitle": "Paul Dirac",
+      "pid": "m000fw0p",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "Dirac's prediction of antimatter through the Dirac equation and the positron's confirmation address antimatter properties (E.1) and charge conjugation invariance (E.3)."
+    },
+    {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.5"
+      ],
+      "rationaleAI": "X-ray diffraction crystallography by the Braggs directly addresses general X-ray phenomena (D.1), X-ray theory and atomic structure (D.2), and diffraction of X rays by crystals (D.5)."
+    },
+    {
+      "episodeTitle": "John Dalton",
+      "pid": "b07zzy8b",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3.a",
+        "B"
+      ],
+      "rationaleAI": "Dalton's atomic theory with characteristic atomic weights bridges philosophical atomism (A.2) and chemical evidence for atoms (A.3.a), and his atomic weight tables directly address B."
+    },
+    {
+      "episodeTitle": "Chemical Elements",
+      "pid": "p00546sz",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3.a",
+        "B.2"
+      ],
+      "rationaleAI": "The history from Greek four-element concepts through Mendeleev's periodic table covers early atomistic speculation (A.2), chemical developments (A.3.a), and the significance of atomic weights in chemistry (B.2)."
+    },
+    {
+      "episodeTitle": "Albert Einstein",
+      "pid": "m001qdx1",
+      "relevantPathsAI": [
+        "A.3.f",
+        "D.2",
+        "F"
+      ],
+      "rationaleAI": "Einstein's Brownian motion paper provided evidence for atoms (A.3.f), his photoelectric effect work connects to X-ray and photon phenomena (D.2), and his work relates to fundamental physical constants (F)."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Cosmic rays' role in discovering subatomic particles (positron, muon, pion) through high-energy atmospheric collisions addresses the production of antiparticles in high-energy collisions (E.2)."
+    },
+    {
+      "episodeTitle": "The Photon",
+      "pid": "b051vlpf",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "The photoelectric effect, Planck's quantum hypothesis, and wave-particle duality address the significance of atomic spectra (C.1), quantized electronic transitions (C.2), and the relationship between photon absorption and atomic structure (D.2.a)."
+    },
+    {
+      "episodeTitle": "The Speed of Light",
+      "pid": "p0038x9h",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "The speed of light as a fundamental physical constant, its measurement history, and its role in E=mc2 directly address the fundamental physical constants (F) and their interrelationships (F.2)."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

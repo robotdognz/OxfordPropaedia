@@ -4,6 +4,7 @@ import StickySubheading from '../../components/layout/StickySubheading.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import TopReadings from '../../components/content/TopReadings';
 import { getCollection } from 'astro:content';
+import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 export async function getStaticPaths() {
@@ -36,6 +37,8 @@ const sections = divNav?.sections ?? [];
 const allDivReadings = await getCollection('division-readings');
 const divReadingsEntry = allDivReadings.find((r) => r.data.divisionId === division.divisionId);
 const divReadings = divReadingsEntry?.data.readings;
+const iotTopReadings = await loadIotTopReadings();
+const divisionIotReadings = iotTopReadings.divisionReadingsByDivision.get(division.divisionId) ?? [];
 
 // Build flat ordered list of all divisions for prev/next navigation
 const allDivisions = outline.flatDivisions.map((entry) => ({
@@ -120,13 +123,14 @@ const partTextColors: Record<number, string> = {
         </div>
       </section>
 
-      {divReadings && (
+      {(divReadings || divisionIotReadings.length > 0) && (
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
             client:load
-            vsi={divReadings.vsi}
-            wiki={divReadings.wiki}
-            macro={divReadings.macro}
+            vsi={divReadings?.vsi}
+            wiki={divReadings?.wiki}
+            iot={divReadings?.iot ?? divisionIotReadings}
+            macro={divReadings?.macro}
             baseUrl={base}
             contextLabel="this Division"
             countLabel="Sections"

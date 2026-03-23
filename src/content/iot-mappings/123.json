@@ -1,0 +1,70 @@
+{
+  "sectionCode": "123",
+  "mappings": [
+    {
+      "episodeTitle": "Enzymes",
+      "pid": "b08rp369",
+      "relevantPathsAI": [
+        "C.1.d",
+        "D.1"
+      ],
+      "rationaleAI": "Enzymes as biological catalysts with Michaelis-Menten kinetics, lock-and-key models, and allosteric regulation directly address catalysts affecting reaction rates (C.1.d) and factors influencing reaction course (D.1)."
+    },
+    {
+      "episodeTitle": "Oxygen",
+      "pid": "b0088nql",
+      "relevantPathsAI": [
+        "A.3.a.vi",
+        "F"
+      ],
+      "rationaleAI": "Oxygen's role in combustion and oxidation, and Lavoisier's dismantling of phlogiston theory address oxidation-reduction reactions (F) and their classification (A.3.a.vi)."
+    },
+    {
+      "episodeTitle": "Free Radicals",
+      "pid": "m0000xqd",
+      "relevantPathsAI": [
+        "A.3.a.iii",
+        "F.5"
+      ],
+      "rationaleAI": "Free radical chain reactions in oxidation processes and their role in biological systems (lipid peroxidation, immune defense) address chain reactions (A.3.a.iii) and oxidation-reduction in biological systems (F.5)."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": [
+        "G",
+        "F.5"
+      ],
+      "rationaleAI": "Photosynthesis as a photochemical reaction converting light energy to chemical energy addresses the photochemical process (G), and its electron transport chain involves oxidation-reduction in biological systems (F.5)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
+        "C.1.a",
+        "E"
+      ],
+      "rationaleAI": "Water as a universal solvent and its role as a medium for biochemical reactions addresses solvent effects on reaction rates (C.1.a), and water's proton-donor/acceptor properties relate to acid-base equilibria (E)."
+    },
+    {
+      "episodeTitle": "The Second Law of Thermodynamics",
+      "pid": "p004y2bm",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "The second law of thermodynamics, entropy, and free energy changes are directly relevant to energy changes in chemical reactions (B) and thermodynamic relations including chemical equilibrium (B.3)."
+    },
+    {
+      "episodeTitle": "Heat",
+      "pid": "b00fq3d4",
+      "relevantPathsAI": [
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "The history of heat science including the laws of thermodynamics and the mechanical equivalent of heat addresses energy changes in chemical reactions (B) and classification by energy changes (B.1)."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

@@ -9,15 +9,18 @@ import {
 import type { ReadingType } from '../../utils/readingPreference';
 import { divisionUrl, sectionUrl, slugify } from '../../utils/helpers';
 import {
+  buildIotCoverageSnapshot,
   buildMacropaediaCoverageSnapshot,
   buildVsiCoverageSnapshot,
   buildWikipediaCoverageSnapshot,
   type ReadingSectionSummary,
 } from '../../utils/readingData';
+import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { completedChecklistKeysFromState } from '../../utils/readingLibrary';
 import Accordion from '../ui/Accordion';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import type {
+  CircleNavigatorIotEntry,
   CircleNavigatorMacropaediaEntry,
   CircleNavigatorPart,
   CircleNavigatorPartRecommendations,
@@ -598,6 +601,10 @@ export function CenteredCircleNavigatorPanel({
     const wikiSnapshot = buildWikipediaCoverageSnapshot(sharedWikiEntries, completedChecklistKeys);
     const wikiRecommendations = buildAnchoredRecommendationItems(sharedWikiEntries, checklistState, wikiSnapshot);
 
+    const sharedIotEntries = intersectSharedEntries(sharedPartRecommendations.center.iot, sharedPartRecommendations.top.iot);
+    const iotSnapshot = buildIotCoverageSnapshot(sharedIotEntries, completedChecklistKeys);
+    const iotRecommendations = buildAnchoredRecommendationItems(sharedIotEntries, checklistState, iotSnapshot);
+
     const sharedMacroEntries = intersectSharedEntries(sharedPartRecommendations.center.macro, sharedPartRecommendations.top.macro);
     const macroSnapshot = buildMacropaediaCoverageSnapshot(sharedMacroEntries, completedChecklistKeys);
     const macroRecommendations = buildAnchoredRecommendationItems(sharedMacroEntries, checklistState, macroSnapshot);
@@ -637,6 +644,23 @@ export function CenteredCircleNavigatorPanel({
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
+      },
+      {
+        type: 'iot' as const,
+        title: 'BBC In Our Time Episodes',
+        browseHref: `${baseUrl}/iot#iot-library`,
+        browseLabel: 'Browse all BBC In Our Time episodes',
+        itemSingular: 'episode',
+        totalCount: sharedIotEntries.length,
+        unreadCount: iotRecommendations.unreadItems.length,
+        completedCount: iotRecommendations.completedItems.length,
+        remainingSections: iotSnapshot.remainingSections,
+        overlapOnlyUnreadCount: iotRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: iotRecommendations.totalUnreadLinkedCount,
+        unreadItems: iotRecommendations.unreadItems,
+        completedItems: iotRecommendations.completedItems,
+        getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
+        renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
       },
       {
         type: 'macropaedia' as const,
@@ -804,6 +828,10 @@ export function TopPartCircleNavigatorPanel({
     const wikiSnapshot = buildWikipediaCoverageSnapshot(anchoredWikiEntries, completedChecklistKeys);
     const wikiRecommendations = buildAnchoredRecommendationItems(anchoredWikiEntries, checklistState, wikiSnapshot);
 
+    const anchoredIotEntries = partRecommendations.iot.filter((entry) => entry.sections.some(belongsToPart));
+    const iotSnapshot = buildIotCoverageSnapshot(anchoredIotEntries, completedChecklistKeys);
+    const iotRecommendations = buildAnchoredRecommendationItems(anchoredIotEntries, checklistState, iotSnapshot);
+
     const anchoredMacroEntries = partRecommendations.macro.filter((entry) => entry.sections.some(belongsToPart));
     const macroSnapshot = buildMacropaediaCoverageSnapshot(anchoredMacroEntries, completedChecklistKeys);
     const macroRecommendations = buildAnchoredRecommendationItems(anchoredMacroEntries, checklistState, macroSnapshot);
@@ -843,6 +871,23 @@ export function TopPartCircleNavigatorPanel({
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
+      },
+      {
+        type: 'iot' as const,
+        title: 'BBC In Our Time Episodes',
+        browseHref: `${baseUrl}/iot#iot-library`,
+        browseLabel: 'Browse all BBC In Our Time episodes',
+        itemSingular: 'episode',
+        totalCount: anchoredIotEntries.length,
+        unreadCount: iotRecommendations.unreadItems.length,
+        completedCount: iotRecommendations.completedItems.length,
+        remainingSections: iotSnapshot.remainingSections,
+        overlapOnlyUnreadCount: iotRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: iotRecommendations.totalUnreadLinkedCount,
+        unreadItems: iotRecommendations.unreadItems,
+        completedItems: iotRecommendations.completedItems,
+        getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
+        renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
       },
       {
         type: 'macropaedia' as const,

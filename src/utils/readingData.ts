@@ -1,4 +1,5 @@
 import {
+  iotChecklistKey,
   macropaediaChecklistKey,
   vsiChecklistKey,
   wikipediaChecklistKey,
@@ -116,6 +117,45 @@ export interface WikipediaAggregateEntry {
   mappedPathCount?: number;
   mappedPathSectionCount?: number;
   fallbackSectionCount?: number;
+}
+
+export interface IotAggregateEntry {
+  pid: string;
+  title: string;
+  url: string;
+  synopsis?: string;
+  datePublished?: string;
+  durationSeconds?: number;
+  checklistKey: string;
+  sectionCount: number;
+  sections: ReadingSectionSummary[];
+  subsectionKeys?: string[];
+  mappedPathCount?: number;
+  mappedPathSectionCount?: number;
+  fallbackSectionCount?: number;
+}
+
+export interface IotCoveragePathStep {
+  pid: string;
+  title: string;
+  url: string;
+  synopsis?: string;
+  datePublished?: string;
+  durationSeconds?: number;
+  checklistKey: string;
+  sectionCount: number;
+  newSectionCount: number;
+  cumulativeCoveredSectionCount: number;
+  newSections: ReadingSectionSummary[];
+}
+
+export interface IotCoverageSnapshot {
+  totalEpisodes: number;
+  completedEpisodes: number;
+  totalCoveredSections: number;
+  currentlyCoveredSections: number;
+  remainingSections: number;
+  path: IotCoveragePathStep[];
 }
 
 interface OutlineBearingSection extends ReadingSectionSummary {
@@ -422,6 +462,69 @@ export function buildWikipediaAggregateEntries(
     if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;
     return collator.compare(a.title, b.title);
   });
+}
+
+export function buildIotAggregateEntries(
+  episodes: Array<{
+    pid: string;
+    title: string;
+    url: string;
+    synopsis?: string;
+    datePublished?: string;
+    durationSeconds?: number;
+    sectionCodes: string[];
+    subsectionKeys?: string[];
+    mappedPathCount?: number;
+    mappedPathSectionCount?: number;
+    fallbackSectionCount?: number;
+  }>,
+  sectionLookup: Map<string, ReadingSectionSummary>
+): IotAggregateEntry[] {
+  return episodes.map((episode) => {
+    const sections = (episode.sectionCodes || [])
+      .map((code) => sectionLookup.get(code))
+      .filter((section): section is ReadingSectionSummary => section !== undefined)
+      .sort(sectionSort);
+
+    return {
+      pid: episode.pid,
+      title: episode.title,
+      url: episode.url,
+      synopsis: episode.synopsis,
+      datePublished: episode.datePublished,
+      durationSeconds: episode.durationSeconds,
+      checklistKey: iotChecklistKey(episode.pid),
+      sectionCount: sections.length,
+      sections,
+      subsectionKeys: Array.from(new Set(episode.subsectionKeys ?? [])).sort(),
+      mappedPathCount: episode.mappedPathCount ?? 0,
+      mappedPathSectionCount: episode.mappedPathSectionCount ?? 0,
+      fallbackSectionCount: episode.fallbackSectionCount ?? 0,
+    };
+  }).sort((a, b) => {
+    if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;
+    return collator.compare(a.title, b.title);
+  });
+}
+
+export function buildIotCoverageSnapshot(
+  entries: IotAggregateEntry[],
+  completedChecklistKeys: Set<string>,
+  pathLength = Infinity
+): IotCoverageSnapshot {
+  const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
+
+  return {
+    totalEpisodes: snapshot.totalEntries,
+    completedEpisodes: snapshot.completedEntries,
+    totalCoveredSections: snapshot.totalCoveredSections,
+    currentlyCoveredSections: snapshot.currentlyCoveredSections,
+    remainingSections: snapshot.remainingSections,
+    path: snapshot.path.map(({ entry, ...rest }) => ({
+      ...entry,
+      ...rest,
+    })),
+  };
 }
 
 export function buildWikipediaCoverageSnapshot(

@@ -4,6 +4,7 @@ import StickySubheading from '../../components/layout/StickySubheading.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import TopReadings from '../../components/content/TopReadings';
 import { getCollection, render } from 'astro:content';
+import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 export async function getStaticPaths() {
@@ -43,6 +44,8 @@ const divisions = partNav?.divisions ?? [];
 const allPartReadings = await getCollection('part-readings');
 const partReadingsEntry = allPartReadings.find((r) => r.data.partNumber === part.partNumber);
 const partReadings = partReadingsEntry?.data.readings;
+const iotTopReadings = await loadIotTopReadings();
+const partIotReadings = iotTopReadings.partReadingsByPart.get(part.partNumber) ?? [];
 
 // Prev/next parts
 const partIndex = outline.parts.findIndex((p) => p.partNumber === part.partNumber);
@@ -179,13 +182,14 @@ const bgColors: Record<number, string> = {
         </div>
       </section>
 
-      {partReadings && (
+      {(partReadings || partIotReadings.length > 0) && (
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
             client:load
-            vsi={partReadings.vsi}
-            wiki={partReadings.wiki}
-            macro={partReadings.macro}
+            vsi={partReadings?.vsi}
+            wiki={partReadings?.wiki}
+            iot={partReadings?.iot ?? partIotReadings}
+            macro={partReadings?.macro}
             baseUrl={base}
             contextLabel="this Part"
             countLabel="Divisions"

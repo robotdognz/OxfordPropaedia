@@ -1,0 +1,192 @@
+{
+  "sectionCode": "10/22",
+  "mappings": [
+    {
+      "episodeTitle": "e",
+      "pid": "b04hz49f",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.c",
+        "D.3"
+      ],
+      "rationaleAI": "Euler's number e is central to real analysis (D.1), differential calculus through the exponential function (D.1.c), and differential equations where e appears naturally in growth and decay processes (D.3)."
+    },
+    {
+      "episodeTitle": "Godel's Incompleteness Theorems",
+      "pid": "b00dshx3",
+      "relevantPathsAI": [
+        "A.3.b",
+        "B.1.a"
+      ],
+      "rationaleAI": "Goedel's incompleteness theorems demonstrate limitations of axiomatic set theory (A.3.b) and bear on fundamental definitions and laws in arithmetic (B.1.a) by showing that consistent formal systems rich enough for arithmetic are incomplete."
+    },
+    {
+      "episodeTitle": "Imaginary Numbers",
+      "pid": "b00tt6b2",
+      "relevantPathsAI": [
+        "B.2",
+        "D.2"
+      ],
+      "rationaleAI": "Imaginary numbers and complex analysis cover the mathematical properties of complex numbers, Gauss's complex plane, and their geometric representation (B.2, algebraic properties and solution of equations), and the theory of analytic functions of complex variables (D.2)."
+    },
+    {
+      "episodeTitle": "Zero",
+      "pid": "p004y254",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.c"
+      ],
+      "rationaleAI": "Zero is fundamental to arithmetic (B.1.a) as the identity element for addition, and its role in the place-value number system connects to number systems and notation using positional principle and the symbol zero (B.1.c)."
+    },
+    {
+      "episodeTitle": "Prime Numbers",
+      "pid": "p003hyf5",
+      "relevantPathsAI": [
+        "E.2",
+        "E.2.a",
+        "E.2.c"
+      ],
+      "rationaleAI": "Prime numbers, the Riemann Hypothesis, the prime number theorem, and sieve methods are central topics in elementary number theory (E.2.a) and analytic number theory (E.2.c)."
+    },
+    {
+      "episodeTitle": "Fermat's Last Theorem",
+      "pid": "b01ngn3j",
+      "relevantPathsAI": [
+        "E.2.b",
+        "C.7"
+      ],
+      "rationaleAI": "Fermat's Last Theorem and Wiles's proof using elliptic curves, modular forms, and Galois representations are major results in algebraic number theory (E.2.b) and algebraic geometry (C.7)."
+    },
+    {
+      "episodeTitle": "Euclid's Elements",
+      "pid": "b07881kn",
+      "relevantPathsAI": [
+        "C.1",
+        "C.1.a",
+        "C.2",
+        "E.2.a"
+      ],
+      "rationaleAI": "Euclid's Elements establishes the axiomatic foundations of geometry (C.1.a), including axioms of congruence, parallels, and continuity, the proof of the infinitude of primes is elementary number theory (E.2.a), and challenges to the parallel postulate led to non-Euclidean geometry (C.2)."
+    },
+    {
+      "episodeTitle": "Infinity",
+      "pid": "p0054927",
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.2.b",
+        "D.1"
+      ],
+      "rationaleAI": "Cantor's set theory, transfinite numbers, and the continuum hypothesis are central to set theory (A, A.2, A.2.b), while the discussion of infinity in calculus connects to real analysis (D.1)."
+    },
+    {
+      "episodeTitle": "Pi",
+      "pid": "p004y291",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4.b",
+        "D.1",
+        "D.5"
+      ],
+      "rationaleAI": "Pi connects to Euclidean geometry through circle measurement (C.1), trigonometry (C.4.b), real analysis through irrationality and transcendence proofs (D.1), and Fourier analysis (D.5)."
+    },
+    {
+      "episodeTitle": "Probability",
+      "pid": "b00bqf61",
+      "relevantPathsAI": [
+        "D.6",
+        "D.6.a",
+        "D.6.b"
+      ],
+      "rationaleAI": "Probability theory from Pascal through Kolmogorov covers the mathematical definition of probability (D.6.a), probability on finite dimensional spaces (D.6.b), and alternative interpretations including Bayesian and frequentist views."
+    },
+    {
+      "episodeTitle": "Mathematics' Unintended Consequences",
+      "pid": "b00qj2nq",
+      "relevantPathsAI": [
+        "B.4.b",
+        "C.2",
+        "E.2"
+      ],
+      "rationaleAI": "Examples of pure mathematics finding unexpected applications -- number theory in cryptography, non-Euclidean geometry in relativity, group theory in particle physics, Boolean algebra in computing -- illustrate connections between algebraic structures (B.4.b), non-Euclidean geometry (C.2), and number theory (E.2)."
+    },
+    {
+      "episodeTitle": "Indian Mathematics",
+      "pid": "p0038xb0",
+      "relevantPathsAI": [
+        "C.4.b",
+        "E.1.b"
+      ],
+      "rationaleAI": "Indian mathematics covers contributions to trigonometry (C.4.b) and number theory and combinatorics (E.1.b, E.2), including the Kerala school's anticipation of calculus."
+    },
+    {
+      "episodeTitle": "Negative Numbers",
+      "pid": "p003hyd9",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.2"
+      ],
+      "rationaleAI": "Negative numbers extend natural number concepts (B.1.a, B.1.b) and their role in solving equations connects to elementary algebra (B.2)."
+    },
+    {
+      "episodeTitle": "P v NP",
+      "pid": "b06mtms8",
+      "relevantPathsAI": [
+        "E.1.b"
+      ],
+      "rationaleAI": "The P versus NP problem involves combinatorial theory (E.1.b) through NP-complete problems and computational complexity, concerning the limits of efficient computation for combinatorial optimization."
+    },
+    {
+      "episodeTitle": "The Poincaré Conjecture",
+      "pid": "p0038x8l",
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2"
+      ],
+      "rationaleAI": "The Poincare Conjecture about simply connected closed three-dimensional manifolds is a central problem in topology (F.1), and Perelman's proof using Ricci flow connects to differential topology (F.2.e)."
+    },
+    {
+      "episodeTitle": "Random and Pseudorandom",
+      "pid": "b00x9xjb",
+      "relevantPathsAI": [
+        "D.6",
+        "E.1.b"
+      ],
+      "rationaleAI": "Mathematical randomness, algorithmic randomness, Kolmogorov complexity, and pseudorandom number generators connect to probability theory (D.6) and combinatorial methods (E.1.b)."
+    },
+    {
+      "episodeTitle": "Paul Erdős",
+      "pid": "m001jc68",
+      "relevantPathsAI": [
+        "E.1.b",
+        "E.2",
+        "D.6",
+        "A.2"
+      ],
+      "rationaleAI": "Erdos's contributions to number theory, combinatorics, probability theory, set theory, and graph theory span multiple branches of mathematics including combinatorics (E.1.b), number theory (E.2), probability (D.6), and set theory (A.2)."
+    },
+    {
+      "episodeTitle": "Mathematics and Music",
+      "pid": "p003c1b9",
+      "relevantPathsAI": [
+        "D.5",
+        "B.4.b"
+      ],
+      "rationaleAI": "Fourier analysis of sound waves (D.5) and group theory in atonal and serial music (B.4.b) demonstrate mathematical structures underlying music through harmonic analysis and algebraic structures."
+    },
+    {
+      "episodeTitle": "Mathematics",
+      "pid": "p00545hk",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "A broad overview of mathematics as a discipline, the axiomatic method, and the distinction between pure and applied mathematics provides general context for all branches of mathematics."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}

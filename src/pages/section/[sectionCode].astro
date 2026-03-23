@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import IotRecommendations from '../../components/content/IotRecommendations';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
@@ -60,6 +61,7 @@ const {
   groupedReverseRefs,
   vsiMappings,
   wikiArticlesForSection,
+  iotEpisodesForSection,
 } = await loadSectionReadingContext(section);
 
 ---
@@ -134,7 +136,7 @@ const {
             Reading Recommendations
           </p>
           <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            Books and articles mapped to this section's outline. Click any outline item above to filter recommendations by topic.
+            Books, articles, and episodes mapped to this Section's outline. Click any outline item above to filter recommendations by topic.
           </p>
         </div>
         <!-- VSI Recommendations -->
@@ -165,6 +167,17 @@ const {
             <WikipediaRefs
               client:load
               articles={wikiArticlesForSection}
+              sectionCode={section.sectionCode}
+              baseUrl={base}
+            />
+          </section>
+        )}
+
+        {iotEpisodesForSection.length > 0 && (
+          <section data-reading-type="iot">
+            <IotRecommendations
+              client:load
+              episodes={iotEpisodesForSection}
               sectionCode={section.sectionCode}
               baseUrl={base}
             />

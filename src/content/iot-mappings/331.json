@@ -1,0 +1,60 @@
+{
+  "sectionCode": "331",
+  "mappings": [
+    {
+      "episodeTitle": "The Cell",
+      "pid": "b01mk8vh",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "The cell covers Robert Hooke's discovery, Schleiden and Schwann's cell theory, organelle structure and function (nucleus, mitochondria, ribosomes), cell division (mitosis and meiosis), and endosymbiosis -- spanning cell theory, classification, design, function, and the cell cycle."
+    },
+    {
+      "episodeTitle": "Macromolecules",
+      "pid": "b018grhm",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Macromolecules -- nucleic acids, proteins, polysaccharides, and lipids -- are the molecular system components of cells, directly mapping to the cell as a molecular system."
+    },
+    {
+      "episodeTitle": "Mitochondria",
+      "pid": "m001md34",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "Mitochondria as organelles with independent DNA and double-membrane structure are key morphological elements of cells, directly relevant to cell organelle morphology."
+    },
+    {
+      "episodeTitle": "Genetic Mutation",
+      "pid": "b008drvm",
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "Genetic mutations including chromosomal rearrangements relate to cell division errors during meiosis, relevant to the division of germ cells into gametes with potential genetic alterations."
+    },
+    {
+      "episodeTitle": "Free Radicals",
+      "pid": "m0000xqd",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Free radicals' role in cellular damage and cell signaling relates to the internal environment and cell matrix, as oxidative stress affects the intracellular milieu."
+    },
+    {
+      "episodeTitle": "Slime Moulds",
+      "pid": "m002691y",
+      "relevantPathsAI": [
+        "C.4",
+        "C.5"
+      ],
+      "rationaleAI": "Slime moulds demonstrate remarkable cell movement through aggregation and their transition between unicellular and multicellular states illustrates cells in combination forming multicellular organisms."
+    }
+  ],
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-23"
+}
