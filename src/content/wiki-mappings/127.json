@@ -11,7 +11,7 @@
         "E",
         "F"
       ],
-      "rationaleAI": "Electromagnetism is the subject of the entire section: it unifies electrostatics (A), moving charges and currents (B), magnetism (C), field theory (D), and electromagnetic radiation (E), with Maxwell's equations at its core; its relativistic extension (QED) maps to F."
+      "rationaleAI": "Electrostatics (A), electric currents (B), magnetism (C), field theory (D), electromagnetic radiation theory (E), and relativistic electrodynamics (F)."
     },
     {
       "articleTitle": "Electricity",
@@ -19,65 +19,57 @@
         "A",
         "B",
         "B.1",
-        "B.2"
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Electricity covers electric charge, electric fields, electric current, electromagnetic induction, circuits, and power generation — spanning electrostatics (A) and all of Section B (direct current, conduction mechanisms, and alternating current)."
+      "rationaleAI": "Static electricity (A), direct current (B.1), conduction mechanisms (B.2), and alternating current (B.3)."
     },
     {
       "articleTitle": "Magnetism",
       "relevantPathsAI": [
         "C",
         "C.1",
-        "C.5",
-        "C.5.a",
-        "C.5.c"
+        "C.2",
+        "C.3",
+        "C.4",
+        "C.5"
       ],
-      "rationaleAI": "Magnetism directly covers Section C: ferromagnetism, paramagnetism, diamagnetism, and antiferromagnetism (C.5.c), classification of magnetic substances (C.5.a), atomic magnetic moments and their quantum-mechanical origins (C.3.d), and magnetic domain structure."
+      "rationaleAI": "General phenomena (C.1), magnetic effects of currents (C.2), charged particles in fields (C.3), electromagnetic induction (C.4), and magnetic materials (C.5)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
         "E",
         "E.1",
-        "E.1.b",
-        "E.1.c",
-        "E.2",
-        "E.3"
+        "E.2"
       ],
-      "rationaleAI": "Electromagnetic radiation is the subject of Section E: Maxwell's equations for electromagnetic nature of light (E.1.b), the full EM spectrum (E.1.c), quantum theory of radiation including wave-particle duality and Compton effect (E.2), and mathematical formulation of EM theory (E.3)."
+      "rationaleAI": "Classical radiation theory including Maxwell's equations (E.1) and quantum theory including Compton and photoelectric effects (E.2)."
     },
     {
       "articleTitle": "James Clerk Maxwell",
       "relevantPathsAI": [
         "E.1.b",
-        "E.3",
-        "E.3.a",
-        "C.2"
+        "E.3.a"
       ],
-      "rationaleAI": "Maxwell unified electricity and magnetism into classical electromagnetic theory; his equations are the explicit subject of E.1.b (Maxwell's equations for the electromagnetic nature of light) and E.3.a (Maxwell's equations for fields and radiation), foundational to the entire section."
+      "rationaleAI": "Maxwell's equations for electromagnetic nature of light (E.1.b) and mathematical formulation of electromagnetic theory (E.3.a)."
     },
     {
       "articleTitle": "Michael Faraday",
       "relevantPathsAI": [
-        "B",
-        "C.4",
+        "B.3.a",
         "C.4.a",
         "B.5.d"
       ],
-      "rationaleAI": "Faraday discovered electromagnetic induction (B.3.a, C.4.a — the laws of electromagnetic induction), diamagnetism, and the laws of electrolysis (B.5.d), with his field-line concept directly underpinning the outline's treatment of magnetic effects of varying currents (C.4)."
+      "rationaleAI": "Faraday's law (B.3.a), laws of electromagnetic induction (C.4.a), and electrolysis (B.5.d)."
     },
     {
       "articleTitle": "Electron",
       "relevantPathsAI": [
-        "B.2",
         "B.2.a",
-        "B.2.b",
         "B.2.d",
-        "C.3",
-        "C.3.a",
-        "C.3.b"
+        "C.3"
       ],
-      "rationaleAI": "The electron's motion and properties underpin multiple outline paths: charge carrier motion in electric fields (B.2.a), conduction mechanisms in solids and semiconductors (B.2.b), electron emission including thermionic and photoelectric (B.2.d), and motion of charges in magnetic fields (C.3.a–b)."
+      "rationaleAI": "Charged particles in electric fields (B.2.a), electron emission (B.2.d), and motion in magnetic and electric fields (C.3)."
     },
     {
       "articleTitle": "Photon",
@@ -86,151 +78,138 @@
         "E.2.a",
         "E.2.b"
       ],
-      "rationaleAI": "The photon as quantum of electromagnetic radiation directly covers E.2: evidence of particle nature of EMR including the photoelectric and Compton effects (E.2.a) and wave-particle duality (E.2.b)."
+      "rationaleAI": "Particle nature of radiation (E.2.a) and wave-particle duality (E.2.b)."
     },
     {
       "articleTitle": "Quantum mechanics",
       "relevantPathsAI": [
         "E.2",
-        "E.2.c",
         "E.2.d"
       ],
-      "rationaleAI": "Quantum mechanics provides the theoretical framework for the quantum theory of radiation (E.2), including absorption, emission, and scattering by atomic and molecular structures (E.2.c) and the relation of EMR to quantum theory and relativity (E.2.d)."
+      "rationaleAI": "Quantum theory of radiation (E.2) and relation to quantum theory and relativity (E.2.d)."
     },
     {
       "articleTitle": "Nikola Tesla",
       "relevantPathsAI": [
-        "B"
+        "B.3",
+        "B.3.k"
       ],
-      "rationaleAI": "Tesla's principal contribution was the design of the AC induction motor and polyphase AC power system, directly relevant to alternating current (B.3) and the principles of generation and transmission of AC single- and multiphase power (B.3.k)."
+      "rationaleAI": "AC systems (B.3) and generation/transmission of AC power (B.3.k)."
     },
     {
       "articleTitle": "Electric battery",
       "relevantPathsAI": [
-        "B.1",
         "B.1.b"
       ],
-      "rationaleAI": "An electric battery provides electromotive force (B.1.b) through electrochemical redox reactions, driving direct current (B.1); it is the paradigmatic EMF source for DC circuits discussed in the outline."
+      "rationaleAI": "Batteries providing electromotive force (B.1.b)."
     },
     {
       "articleTitle": "Electric motor",
       "relevantPathsAI": [
-        "B",
         "B.4.c",
-        "C.4"
+        "C.2"
       ],
-      "rationaleAI": "An electric motor operates via the force on current-carrying conductors in magnetic fields (B.4.c), uses electromagnetic induction and inductance (C.4), and operates on AC (induction motors) or DC (B.3, B.1), spanning several key outline paths."
+      "rationaleAI": "Electromagnetic field force and energy (B.4.c) and magnetic effects of currents (C.2)."
     },
     {
       "articleTitle": "Electronics",
       "relevantPathsAI": [
         "B.2.b",
-        "B.1.c"
+        "B.3"
       ],
-      "rationaleAI": "Electronics covers the design of devices controlling charged particles via transistors, diodes, and integrated circuits — grounded in conduction mechanisms in semiconductors (B.2.b) and direct current circuit principles including Ohm's and Kirchhoff's laws (B.1.c)."
+      "rationaleAI": "Semiconductor conduction (B.2.b) and AC circuit principles (B.3)."
     },
     {
       "articleTitle": "Optics",
       "relevantPathsAI": [
+        "E.1",
         "E.1.a",
-        "E.2",
-        "E.2.b"
+        "B.5.b"
       ],
-      "rationaleAI": "Optics covers the development of concepts and theories concerning the nature of light (E.1.a) and the wave-particle duality of the photon (E.2.b), which are the opening elements of Section E on the electromagnetic field and radiation theory."
+      "rationaleAI": "Nature of light (E.1.a) and optical effects (B.5.b)."
     },
     {
       "articleTitle": "Albert Einstein",
       "relevantPathsAI": [
         "E.2.a",
-        "E.2.d",
         "F"
       ],
-      "rationaleAI": "Einstein's quantum theory of the photoelectric effect is a primary evidence of the particle nature of EMR (E.2.a), his special relativity governs the relation of EMR to quantum theory and relativity (E.2.d), and relativistic electrodynamics (F) is directly founded on his work."
+      "rationaleAI": "Photoelectric effect (E.2.a) and relativistic electrodynamics (F)."
     },
     {
       "articleTitle": "Semiconductor",
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Semiconductors are explicitly listed in outline B.2.b as one of the key media for electrical conduction mechanisms, and the article's detailed treatment of charge-carrier concentration, doping, and band-gap conductivity directly supports this path."
+      "rationaleAI": "Conduction in semiconductors (B.2.b)."
     },
     {
       "articleTitle": "Proton",
       "relevantPathsAI": [
-        "A.1.a",
-        "B.2"
+        "C.3.d"
       ],
-      "rationaleAI": "The proton as a positive charge carrier is directly relevant to electrostatics (A.1.a — interaction of charged bodies) and the mechanisms of charge conduction (B.2); in chemistry, proton transfer relates to B.5.d (electrolysis)."
+      "rationaleAI": "Nuclear magnetic moments and magnetic resonance (C.3.d)."
     },
     {
       "articleTitle": "Plasma (physics)",
       "relevantPathsAI": [
-        "B.2.b",
-        "A.1.e"
+        "B.2.b"
       ],
-      "rationaleAI": "Plasma is an ionized gas relevant to conduction mechanisms (B.2.b — conduction in gases) and to atmospheric electricity phenomena (A.1.e — lightning is partially ionized plasma); it is also governed by electromagnetic fields as stated in the article."
+      "rationaleAI": "Conduction in gases involving ionization (B.2.b)."
     },
     {
       "articleTitle": "Vacuum",
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Vacuum is listed explicitly in outline B.2.b as one of the media for conduction of electricity, and the article covers electron motion in vacuum (vacuum tubes, cathode ray tubes) directly supporting this path."
+      "rationaleAI": "Conduction in vacuum via electron emission (B.2.b)."
     },
     {
       "articleTitle": "Speed of light",
       "relevantPathsAI": [
-        "E.1",
         "E.1.b",
-        "E.3.b"
+        "F"
       ],
-      "rationaleAI": "The speed of light is the fundamental constant of electromagnetism predicted by Maxwell's equations (E.1.b) and governing transmission of radiation in free space (E.3.b); its invariance is also the basis of relativistic electrodynamics (F)."
+      "rationaleAI": "Speed c in Maxwell's equations (E.1.b) and relativistic electrodynamics (F)."
     },
     {
       "articleTitle": "Wave",
       "relevantPathsAI": [
-        "E.3",
         "E.3.b",
-        "E.3.c",
-        "E.3.d"
+        "E.3.c"
       ],
-      "rationaleAI": "Wave covers electromagnetic wave phenomena including propagation in free space (E.3.b), wave equations bounded by conductors (E.3.c), and scattering of electromagnetic waves (E.3.d), mapping directly to the mathematical formulation of EM theory in Section E.3."
+      "rationaleAI": "Radiation transmission in free space (E.3.b) and wave equations in bounded space (E.3.c)."
     },
     {
       "articleTitle": "Thermodynamics",
       "relevantPathsAI": [
-        "B.2.c",
-        "B.5.c"
+        "B.2.c"
       ],
-      "rationaleAI": "Thermoelectric effects — transformation between electric and thermal energy (B.2.c) — and resistive heating (B.5.c, thermal effect of electricity) are the specific outline paths connecting thermodynamics to electricity and magnetism."
+      "rationaleAI": "Thermoelectric effects (B.2.c)."
     },
     {
       "articleTitle": "Light",
       "relevantPathsAI": [
-        "E.1.a",
-        "E.1.b",
-        "E.2",
-        "E.2.b"
+        "E.1",
+        "E.1.a"
       ],
-      "rationaleAI": "Light is the central subject of Section E on electromagnetic radiation: the development of theories on the nature of light (E.1.a), Maxwell's equations for the electromagnetic nature of light (E.1.b), and wave-particle duality (E.2.b) are all directly covered."
+      "rationaleAI": "Concepts and theories of the nature of light (E.1.a)."
     },
     {
       "articleTitle": "Gas",
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Gas is explicitly listed in outline B.2.b as one of the media for electrical conduction mechanisms; the article covers ionization, discharge, and plasma formation relevant to conduction in gases."
+      "rationaleAI": "Conduction in gases (B.2.b)."
     },
     {
       "articleTitle": "Atom",
       "relevantPathsAI": [
-        "C.3.d",
-        "C.5.d",
         "E.2.c"
       ],
-      "rationaleAI": "Atoms are the seat of magnetic dipole moments and nuclear moments (C.3.d), atomic structure governs magnetism (C.5.d), and atomic and molecular absorption, emission, and scattering of radiation (E.2.c) are all explicitly covered in the outline."
+      "rationaleAI": "Interaction of electromagnetic radiation with atomic structures (E.2.c)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

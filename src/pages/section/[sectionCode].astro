@@ -27,6 +27,10 @@ const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
   6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
 };
+const PART_ROMAN: Record<number, string> = {
+  1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V',
+  6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X',
+};
 
 // Find parent part and division
 const parentPart = outline.partByNumber.get(section.partNumber);
@@ -64,9 +68,21 @@ const {
     <main id="main-content" class="flex-1 min-w-0">
       <StickySubheading
         breadcrumbs={[
-          { label: `Part ${PART_NAMES[section.partNumber]}`, href: `${base}/part/${section.partNumber}` },
-          { label: `Division ${parentDiv?.romanNumeral ?? ''}`, href: `${base}/division/${section.divisionId}` },
-          { label: `Section ${section.sectionCodeDisplay}`, mobileLabel: section.sectionCodeDisplay },
+          {
+            label: `Part ${PART_NAMES[section.partNumber]}`,
+            compactLabel: PART_ROMAN[section.partNumber],
+            href: `${base}/part/${section.partNumber}`,
+          },
+          {
+            label: `Division ${parentDiv?.romanNumeral ?? ''}`,
+            compactLabel: parentDiv?.romanNumeral ?? '',
+            href: `${base}/division/${section.divisionId}`,
+          },
+          {
+            label: `Section ${section.sectionCodeDisplay}`,
+            mobileLabel: section.sectionCodeDisplay,
+            compactLabel: section.sectionCodeDisplay,
+          },
         ]}
         scrollTargets={[
           { id: 'subject-outline', label: 'Outline' },
@@ -81,6 +97,10 @@ const {
           {section.title}
         </h1>
         <span data-pagefind-meta="page_type:Section" class="hidden"></span>
+        <span
+          data-pagefind-meta={`page_context:Part ${PART_NAMES[section.partNumber]}: ${parentPart?.title ?? ''} > Division ${parentDiv?.romanNumeral ?? ''}: ${parentDiv?.title ?? ''}`}
+          class="hidden"
+        ></span>
       </header>
 
       <!-- Subject Outline -->

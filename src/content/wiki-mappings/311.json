@@ -6,24 +6,17 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.c",
-        "A.1.d",
-        "A.1.e",
-        "A.2",
-        "B",
-        "B.1"
+        "B"
       ],
-      "rationaleAI": "Life is the direct subject of Section 311: it covers all properties of life (homeostasis, metabolism, growth, reproduction, response to stimuli), levels of biotic organization from molecular to population, and explicitly addresses the possibility of artificial and extraterrestrial life (B.1). This is the core article for the entire section."
+      "rationaleAI": "Defines biological life through homeostasis, metabolism, growth, reproduction, and response to stimuli (A.1), with classification spanning Archaea, Bacteria, and Eukaryota (A.2), and addresses the possibility of extraterrestrial life (B)."
     },
     {
       "articleTitle": "Organism",
       "relevantPathsAI": [
         "A.1",
-        "A.2.d"
+        "A.2"
       ],
-      "rationaleAI": "Organism defines the individual living entity through properties of autonomous reproduction, growth, and metabolism (A.1) and situates it within the population and community level of biotic organization (A.2.d), directly addressing two outline paths."
+      "rationaleAI": "Defines the individual functional unit of life through autonomous reproduction, growth, and metabolism (A.1), with boundary cases complicating the concept at various levels of biotic organization (A.2)."
     },
     {
       "articleTitle": "Biology",
@@ -32,22 +25,21 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Biology's five unifying themes — cell theory, heredity, evolution, energy transformation, and homeostasis — map precisely onto the concept of life (A), properties of life (A.1), and levels of biotic organization (A.2) in this section's outline."
+      "rationaleAI": "The scientific study of life covering cell theory, heredity, evolution, metabolism, and homeostasis (A.1), spanning all levels of organization from molecules and cells to ecosystems (A.2)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
-        "A.1.b",
         "A.2.a"
       ],
-      "rationaleAI": "Biochemistry characterizes the four classes of biological macromolecules (proteins, nucleic acids, carbohydrates, lipids) forming the molecular level of biotic organization (A.2.a), and covers metabolism including catabolism and anabolism as a property of life (A.1.b)."
+      "rationaleAI": "Characterizes the four classes of biological macromolecules — proteins, nucleic acids, carbohydrates, and lipids — at the molecular level of biotic organization (A.2.a)."
     },
     {
       "articleTitle": "Carbohydrate",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Carbohydrates are explicitly named in outline path A.2.a ('polymers, carbohydrates, lipids, proteins, and nucleic acids'), and the article covers their roles as energy-storage polymers and structural components at the molecular level of biotic organization."
+      "rationaleAI": "One of four major biomolecule families, polysaccharides function as polymers at the molecular level of biotic organization (A.2.a), with energy storage and structural roles."
     },
     {
       "articleTitle": "Hormone",
@@ -55,43 +47,43 @@
         "A.1.c",
         "A.1.e"
       ],
-      "rationaleAI": "Hormones are signaling molecules mediating sensory reception and physiological response (A.1.c) and regulating organism-environment interaction through negative feedback homeostasis (A.1.e), directly covering two life-properties paths."
+      "rationaleAI": "Hormones as signaling molecules regulate physiology in response to stimuli (A.1.c) and mediate interaction with the environment through negative feedback homeostasis (A.1.e)."
     },
     {
       "articleTitle": "Metabolism",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Metabolism is explicitly named in outline path A.1.b ('Metabolism: catabolism and anabolism') as a property of life, and the article covers exactly catabolism (glycolysis, oxidative phosphorylation) and anabolism (biosynthesis of proteins, lipids, nucleic acids)."
+      "rationaleAI": "Metabolism as the totality of enzyme-catalyzed reactions sustaining life, divided into catabolism and anabolism (A.1.b), is a defining property of life."
     },
     {
       "articleTitle": "DNA",
       "relevantPathsAI": [
-        "A.1.d",
         "A.2.a"
       ],
-      "rationaleAI": "DNA encodes genetic information enabling hereditary transmission and reproduction (A.1.d) and constitutes the central nucleic acid polymer at the molecular level of biotic organization (A.2.a)."
+      "rationaleAI": "DNA is a nucleic acid polymer encoding genetic information, a fundamental polymer at the molecular level of biotic organization (A.2.a)."
     },
     {
       "articleTitle": "Protein",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Proteins are explicitly listed in outline path A.2.a among the polymers of the molecular level of biotic organization, and the article covers their full functional range — enzymes, structural scaffolds, signaling ligands — in living systems."
+      "rationaleAI": "Proteins are large biomolecular polymers with functional breadth spanning enzymes, structural scaffolds, and transport carriers at the molecular level (A.2.a)."
     },
     {
       "articleTitle": "Abiogenesis",
       "relevantPathsAI": [
+        "A",
         "B.1"
       ],
-      "rationaleAI": "Abiogenesis directly addresses the chemical origins of life and the prebiotic chemistry framework used to assess habitability beyond Earth, corresponding to outline path B.1 ('The concept of extraterrestrial life and its chemistry')."
+      "rationaleAI": "The origin of life from non-living chemistry relates to the concept of life on Earth (A), and the RNA world hypothesis and prebiotic chemistry connect to the concept of extraterrestrial life and its chemistry (B.1)."
     },
     {
       "articleTitle": "Bacteria",
       "relevantPathsAI": [
         "A.2.b"
       ],
-      "rationaleAI": "Bacteria are prokaryotic cells, directly instantiating the 'procaryotic cells' category of the cellular level of biotic organization (A.2.b), among the earliest life forms with essential metabolic and ecological roles."
+      "rationaleAI": "Bacteria are single-celled prokaryotic organisms, fundamental to the cellular level of biotic organization (A.2.b), exhibiting procaryotic cell structure."
     },
     {
       "articleTitle": "Physiology",
@@ -99,59 +91,56 @@
         "A.1",
         "A.2.c"
       ],
-      "rationaleAI": "Physiology studies functions and mechanisms spanning molecular, cellular, organ, and whole-organism levels, directly covering properties of life (A.1) and the organ-tissue level of biotic organization (A.2.c: 'tissues, tissue systems, and the whole organism')."
+      "rationaleAI": "Physiology studies functions and mechanisms of living systems, relevant to properties of life including metabolism and homeostasis (A.1) and organ-level organization (A.2.c)."
     },
     {
       "articleTitle": "Ecology",
       "relevantPathsAI": [
-        "A.1.e",
         "A.2.d"
       ],
-      "rationaleAI": "Ecology covers organisms' interaction with environments (A.1.e) and the population-community level of biotic organization (A.2.d: 'species and communities'), both explicit outline categories."
+      "rationaleAI": "Ecology studies organism-environment relationships at population and community levels of biotic organization (A.2.d), including species interactions and ecosystem dynamics."
     },
     {
       "articleTitle": "Ecosystem",
       "relevantPathsAI": [
-        "A.1.e",
         "A.2.d"
       ],
-      "rationaleAI": "An ecosystem integrates organisms and their abiotic environment through energy flows and nutrient cycles, covering organism-environment interaction (A.1.e) and the population-community level of biotic organization (A.2.d)."
+      "rationaleAI": "Ecosystems represent the community level of biotic organization (A.2.d), comprising organisms interacting with their abiotic environment through nutrient cycles and energy flows."
     },
     {
       "articleTitle": "Archaea",
       "relevantPathsAI": [
-        "A.2.b",
-        "B.1"
+        "A.2.b"
       ],
-      "rationaleAI": "Archaea are prokaryotic cells (A.2.b) phylogenetically distinct from bacteria and ancestral to eukaryotes; their extremophile biochemistry is central to astrobiology and the concept of extraterrestrial life and its chemistry (B.1)."
+      "rationaleAI": "Archaea constitute a prokaryotic domain of life, relevant to the cellular level of biotic organization (A.2.b) with procaryotic cell characteristics distinct from bacteria."
     },
     {
       "articleTitle": "Virus",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Viruses represent the canonical boundary case for the concept of life — lacking autonomous metabolism yet replicating and evolving — making them directly relevant to the outline's discussion of the concept and properties of life (A.1)."
+      "rationaleAI": "Viruses as obligate intracellular agents challenge definitions of life properties (A.1), lacking autonomous metabolism yet evolving and replicating within host cells."
     },
     {
       "articleTitle": "Cell (biology)",
       "relevantPathsAI": [
         "A.2.b"
       ],
-      "rationaleAI": "The cell is the fundamental structural and functional unit of all life, and the article explicitly covers the prokaryote–eukaryote distinction, directly corresponding to outline path A.2.b ('Cellular: procaryotic cells and eucaryotic cells')."
+      "rationaleAI": "The cell is the fundamental unit of life, directly relevant to the cellular level of biotic organization (A.2.b) including the prokaryote-eukaryote distinction."
     },
     {
       "articleTitle": "RNA",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "RNA is a nucleic acid polymer (A.2.a) with critical roles in the central dogma (mRNA, rRNA, tRNA) and as a hypothesized primordial molecule, placing it squarely at the molecular level of biotic organization."
+      "rationaleAI": "RNA as a nucleic acid polymer bridging genetic information and protein synthesis at the molecular level (A.2.a), with the RNA world hypothesis relevant to the origin of life."
     },
     {
       "articleTitle": "Molecular biology",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Molecular biology investigates nucleic acids and proteins at the macromolecular scale corresponding to the molecular level of biotic organization (A.2.a), with the central dogma framework directly relevant to how genetic information flows through living systems."
+      "rationaleAI": "Investigates molecular structures underlying biological activity at the molecular level of biotic organization (A.2.a), centered on nucleic acids and proteins."
     },
     {
       "articleTitle": "Genetics",
@@ -159,79 +148,81 @@
         "A.1.d",
         "A.2.a"
       ],
-      "rationaleAI": "Genetics studies hereditary transmission enabling reproduction and development (A.1.d) and covers molecular mechanisms including DNA, RNA, and gene regulation at the molecular level of biotic organization (A.2.a)."
+      "rationaleAI": "The study of heredity relates to reproduction as a property of life (A.1.d) and nucleic acids at the molecular level (A.2.a)."
     },
     {
       "articleTitle": "Nutrition",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.1.b",
+        "A.1.e"
       ],
-      "rationaleAI": "Nutrition describes the biochemical process by which organisms use food to supply macronutrients for energy production (catabolism) and chemical synthesis (anabolism), directly mapping to outline path A.1.b."
+      "rationaleAI": "Nutrition supplies nutrients for energy production and chemical synthesis relevant to metabolism (A.1.b) and organismal interaction with the environment (A.1.e)."
     },
     {
       "articleTitle": "Natural selection",
       "relevantPathsAI": [
-        "A.1.e"
+        "A.1.e",
+        "A.2.d"
       ],
-      "rationaleAI": "Natural selection governs organism-environment interaction (A.1.e) by linking heritable variation to differential survival and reproduction in response to environmental pressures, a core property of life at the population level."
+      "rationaleAI": "Natural selection operates through interaction with the environment (A.1.e) and shifts trait frequencies within populations (A.2.d)."
     },
     {
       "articleTitle": "Taxonomy (biology)",
       "relevantPathsAI": [
         "A.2.d"
       ],
-      "rationaleAI": "Biological taxonomy defines and classifies species — the unit of the population level of biotic organization (A.2.d: 'Population: species and communities')—directly relevant to this outline path."
+      "rationaleAI": "Taxonomy classifies organisms into hierarchical ranks, organizing the population level of biotic organization including species and communities (A.2.d)."
     },
     {
       "articleTitle": "Death",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Death, as the irreversible cessation of biological functions, is the complement of life's defining properties (A.1: homeostasis, metabolism, reproduction, response to stimuli), and its coverage of cell death, senescence, and biological aging is directly relevant to the concept of life."
+      "rationaleAI": "Death as the irreversible cessation of biological functions represents the termination of life properties including metabolism, reproduction, and response to stimuli (A.1)."
     },
     {
       "articleTitle": "Bone",
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Bone is a mineralized connective tissue constituting a tissue and whole-organism structural component, directly instantiating the 'Organ: tissues, tissue systems, and the whole organism' level of biotic organization (A.2.c)."
+      "rationaleAI": "Bone as mineralized connective tissue functions at the organ level (A.2.c), serving as part of tissue systems within the whole organism."
     },
     {
       "articleTitle": "Flower",
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "Flowers are the reproductive structures of angiosperms whose primary function is facilitating sexual reproduction, directly covering the reproduction and development property of life (A.1.d)."
+      "rationaleAI": "Flowers are reproductive structures of angiosperms, directly relevant to reproduction as a property of life (A.1.d)."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
         "A.1.d"
       ],
-      "rationaleAI": "Reproduction is explicitly listed in the outline as a property of life (A.1.d: 'Reproduction, growth, and development'), and the article covers all modes — asexual and sexual — across all domains of life."
+      "rationaleAI": "Reproduction as the biological process producing offspring is a defining property of life (A.1.d), encompassing asexual and sexual strategies."
     },
     {
       "articleTitle": "Evolution",
       "relevantPathsAI": [
-        "A.1.e",
+        "A.1.d",
         "A.2.d"
       ],
-      "rationaleAI": "Evolution describes how populations interact with and respond to environments (A.1.e) and drives the diversity of species and communities (A.2.d), foundational to the concept of life as a dynamic, adaptive phenomenon."
+      "rationaleAI": "Evolution changes heritable characteristics across generations through reproduction (A.1.d), operating at population and community levels (A.2.d)."
     },
     {
       "articleTitle": "Venus",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Venus is directly relevant to astrobiology: the article discusses Venus Life Finder mission plans and habitability research, corresponding to outline paths B.1 ('The concept of extraterrestrial life and its chemistry') and B.2 ('The significance of the search for life beyond Earth')."
+      "rationaleAI": "Venus connects to astrobiology and the search for life beyond Earth (B), with active mission plans including Venus Life Finder relevant to the concept of extraterrestrial life (B.1)."
     },
     {
       "articleTitle": "Energy",
       "relevantPathsAI": [
         "A.1.b"
       ],
-      "rationaleAI": "Energy underpins cell metabolism — catabolism releases it and anabolism consumes it — placing it at the core of outline path A.1.b (metabolism: catabolism and anabolism)."
+      "rationaleAI": "Energy as the capacity to do work is central to metabolism (A.1.b), the biochemical processes sustaining life through catabolism and anabolism."
     },
     {
       "articleTitle": "Photosynthesis",
@@ -239,9 +230,9 @@
         "A.1.b",
         "A.1.e"
       ],
-      "rationaleAI": "Photosynthesis is a form of anabolism (A.1.b) converting light energy into chemical energy, and it mediates a key organism-environment interaction (A.1.e) by capturing solar energy and releasing oxygen to shape Earth's atmosphere."
+      "rationaleAI": "Photosynthesis converts light energy into chemical energy as a metabolic process (A.1.b), representing a fundamental mode of interaction with the environment (A.1.e)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

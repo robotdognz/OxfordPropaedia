@@ -6,10 +6,10 @@
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.1.b",
-        "B.2"
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Directly covers the classification of sensory systems by receptor type (photoreceptors, thermoreceptors, chemoreceptors, mechanoreceptors, electroreceptors) corresponding to outline path B.1.b, and the evolution of specialized sensory organs (B.2). Addresses sensory transduction across both vertebrate and invertebrate taxa."
+      "rationaleAI": "Sensory systems classified by receptor location (exteroceptors, interoceptors) and stimulus type (photoreceptors, chemoreceptors, mechanoreceptors) (B.1), with evolution of specialized organs (B.2) and sensory information processing (B.3)."
     },
     {
       "articleTitle": "Nervous system",
@@ -19,15 +19,15 @@
         "D.3",
         "D.4"
       ],
-      "rationaleAI": "Comprehensive treatment of the nervous system as a coordination mechanism, covering both invertebrate and vertebrate nervous systems (D.3, D.4), the neuron and synaptic transmission (D.2), and the division into central and peripheral systems — all core content of outline path D."
+      "rationaleAI": "The nervous system as the integrated signaling network covering nervous coordination (D.2), invertebrate nervous systems from diffuse to centralized (D.3), and vertebrate nervous systems including brain, spinal cord, and peripheral nerves (D.4)."
     },
     {
       "articleTitle": "Brain",
       "relevantPathsAI": [
-        "D.4",
-        "D.4.a"
+        "D.4.a",
+        "D.4.e"
       ],
-      "rationaleAI": "Covers the vertebrate brain in anatomical and functional detail including embryonic divisions into forebrain, midbrain, and hindbrain, directly corresponding to outline path D.4.a (the central nervous system, brain and components). Also addresses evolutionary development of the vertebrate nervous system (D.4.d)."
+      "rationaleAI": "The brain as the central organ of the vertebrate nervous system (D.4.a), with forebrain, midbrain, and hindbrain components, and biodynamics of the vertebrate nervous system (D.4.e)."
     },
     {
       "articleTitle": "Eye",
@@ -35,27 +35,24 @@
         "B.1.b",
         "B.2"
       ],
-      "rationaleAI": "The eye is the primary photoreceptor organ, covering ten convergently evolved eye types across taxa (B.1.b: photoreceptors) and the evolution of specialized visual organs (B.2). Non-visual functions including circadian entrainment via the retinohypothalamic tract also touch on outline path E (biological clock)."
+      "rationaleAI": "The eye as a photoreceptor organ (B.1.b) with convergent evolution across taxa representing the evolution of specialized sensory organs (B.2)."
     },
     {
       "articleTitle": "Hormone",
       "relevantPathsAI": [
         "C",
         "C.1",
-        "C.2",
-        "C.4"
+        "C.2"
       ],
-      "rationaleAI": "Hormones are the chemical basis of endocrine coordination, directly addressing C.1 (relationships between endocrine and neural regulation), C.2 (vertebrate endocrine systems including glands, blood transport, structure and function), and C.4 (comparative and evolutionary aspects including hypothalamus-pituitary control)."
+      "rationaleAI": "Hormones as endocrine signaling molecules (C), covering the relationship between endocrine and neural regulation (C.1) and vertebrate endocrine systems (C.2)."
     },
     {
       "articleTitle": "Sleep",
       "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.2",
-        "E.3"
+        "A.6",
+        "E"
       ],
-      "rationaleAI": "Sleep is a major biological periodicity regulated by the circadian clock (Process C) and homeostatic pressure, directly mapping to outline path E on biological clocks and rhythms. The article covers rhythms correlated with natural geophysical cycles (E.2), the mechanism of the biological clock (E.3), and factors affecting periodicities (E.4)."
+      "rationaleAI": "Sleep as a dormant state with lower metabolic rate (A.6), regulated by the circadian clock representing the biological clock and periodicity (E), with rhythms correlated to solar-day cycles (E.2)."
     },
     {
       "articleTitle": "Ear",
@@ -63,7 +60,7 @@
         "B.1.b",
         "B.2"
       ],
-      "rationaleAI": "The ear is the primary mechanoreceptor/sound receptor organ in vertebrates, directly covering outline path B.1.b (sound receptors, mechanoreceptors). Its evolutionary variation across vertebrate taxa addresses B.2 (evolution of specialized sensory organs and information-processing structures)."
+      "rationaleAI": "The ear as a sound receptor and mechanoreceptor organ (B.1.b), with vestibular balance function, representing evolved specialized sensory organs (B.2)."
     },
     {
       "articleTitle": "Insect",
@@ -71,7 +68,7 @@
         "C.3",
         "D.3"
       ],
-      "rationaleAI": "Insects are the paradigmatic example cited in outline path C.3 (invertebrate endocrine systems: insects) and have centralized nervous systems treated under D.3 (invertebrate nervous systems). Their tracheal respiratory regulation and hormonal metamorphosis control are canonical endocrine-neural coordination examples."
+      "rationaleAI": "Insects have endocrine systems relevant to invertebrate hormonal coordination (C.3) and centralized nervous systems (D.3) with compound eyes and antennae."
     },
     {
       "articleTitle": "Arthropod",
@@ -79,16 +76,14 @@
         "C.3",
         "D.3"
       ],
-      "rationaleAI": "Arthropods include insects and crustaceans — both explicitly cited in outline path C.3 (invertebrate endocrine systems)—and their ventral nerve cords with segmental ganglia are the primary example of centralized invertebrate nervous systems (D.3.c)."
+      "rationaleAI": "Arthropods have invertebrate endocrine systems including insects and crustaceans (C.3) and centralized nervous systems with ventral nerve cords and segmental ganglia (D.3)."
     },
     {
       "articleTitle": "Metabolism",
       "relevantPathsAI": [
-        "A",
-        "A.2",
         "A.6"
       ],
-      "rationaleAI": "Metabolism is directly relevant to homeostasis (A): basal metabolic rate is a homeostatic parameter, and metabolic dormancy (A.6) and acclimatization (A.5) involve metabolic rate suppression. The regulation of metabolism via hormonal signals and allosteric enzymes connects to the broader homeostatic control hierarchy (A.3)."
+      "rationaleAI": "Metabolism regulation connects to inactive states accompanied by lower metabolic rates (A.6), with allosteric enzymes and hormonal signals controlling metabolic processes."
     },
     {
       "articleTitle": "Physiology",
@@ -96,12 +91,11 @@
         "A",
         "B",
         "C",
-        "D",
-        "E"
+        "D"
       ],
-      "rationaleAI": "Physiology as a discipline is the overarching scientific framework for all content in Section 333 — homeostasis, sensory reception, endocrine and nervous coordination, and biological clocks are all core physiological topics. Serves as a disciplinary anchor article across all outline paths."
+      "rationaleAI": "Physiology of regulation and integration spans homeostasis (A), sensory reception (B), endocrine systems (C), and nervous systems (D)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

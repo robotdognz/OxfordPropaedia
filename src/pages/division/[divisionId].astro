@@ -22,6 +22,10 @@ const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
   6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
 };
+const PART_ROMAN: Record<number, string> = {
+  1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V',
+  6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X',
+};
 
 // Find parent part info
 const parentPart = outline.partByNumber.get(division.partNumber);
@@ -62,8 +66,12 @@ const partTextColors: Record<number, string> = {
     <main id="main-content" class="flex-1 min-w-0">
       <StickySubheading
         breadcrumbs={[
-          { label: `Part ${PART_NAMES[division.partNumber]}`, href: `${base}/part/${division.partNumber}` },
-          { label: `Division ${division.romanNumeral}` },
+          {
+            label: `Part ${PART_NAMES[division.partNumber]}`,
+            compactLabel: PART_ROMAN[division.partNumber],
+            href: `${base}/part/${division.partNumber}`,
+          },
+          { label: `Division ${division.romanNumeral}`, compactLabel: division.romanNumeral },
         ]}
         scrollTargets={[
           { id: 'sections', label: 'Sections' },
@@ -78,6 +86,7 @@ const partTextColors: Record<number, string> = {
           {division.title}
         </h1>
         <span data-pagefind-meta="page_type:Division" class="hidden"></span>
+        <span data-pagefind-meta={`page_context:Part ${PART_NAMES[division.partNumber]}: ${parentPart?.title ?? ''}`} class="hidden"></span>
       </header>
 
       <NotesDisclosure

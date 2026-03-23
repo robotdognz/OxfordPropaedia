@@ -5,13 +5,15 @@
       "articleTitle": "Skin",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.2",
         "A.3",
         "A.4",
         "A.5",
         "A.6",
         "A.7"
       ],
-      "rationaleAI": "Skin directly covers outline path A in full: vertebrate integument layers (epidermis, dermis — A.3.a), skin derivatives and appendages (scales, hair, glands — A.3.b), variation among vertebrate taxa (A.4), embryology and evolution (A.5), biodynamics including wound healing (A.6), and human integument (A.7). One of the two or three most central articles for this section."
+      "rationaleAI": "Directly covers body covering (A), including general features of integument (A.1), invertebrate integuments (A.2), vertebrate integuments with skin layers and derivatives (A.3), skin variations among vertebrates (A.4), embryology and evolution (A.5), biodynamics (A.6), and human integument (A.7)."
     },
     {
       "articleTitle": "Skeleton",
@@ -20,28 +22,28 @@
         "B.1",
         "B.2",
         "B.3",
-        "B.4"
+        "B.4",
+        "B.5"
       ],
-      "rationaleAI": "Covers all three skeleton types (exo-, endo-, hydroskeleton) corresponding to outline paths B.2.a–c, invertebrate skeletal solutions including chitinous exoskeletons and spicules (B.3), and vertebrate endoskeleton organization (B.4). Directly addresses the roles of the skeleton (B.1) and skeletal composition."
+      "rationaleAI": "Directly covers the body skeleton (B), including roles (B.1), composition of skeletal elements from cuticular to semirigid structures (B.2), invertebrate skeleton (B.3), vertebrate skeleton (B.4), and joints (B.5)."
     },
     {
       "articleTitle": "Bone",
       "relevantPathsAI": [
         "B.2.a",
-        "B.6",
-        "B.7"
+        "B.4",
+        "B.6"
       ],
-      "rationaleAI": "Bone covers the composition and cellular biology of osseous tissue (osteoblasts, osteocytes, osteoclasts; cortical and cancellous structure) directly addressing outline paths B.2.a (cuticular/osseous structures) and B.6 (properties of bone and its development). The human skeletal count (300 at birth, 206 in adults) contributes to B.7."
+      "rationaleAI": "Bone as a cuticular skeletal element (B.2.a), part of the vertebrate skeleton structure and function (B.4), with properties and development (B.6)."
     },
     {
       "articleTitle": "Skeletal muscle",
       "relevantPathsAI": [
         "C",
-        "C.1",
         "C.2.b",
         "C.5"
       ],
-      "rationaleAI": "Skeletal muscle directly addresses outline path C.2.b (complex contractile tissues: striated muscle), C.1 (general features of muscle tissue including thermoregulation and function), and C.5 (vertebrate muscle systems including function and regulation). Fiber type variation (slow/fast-twitch) corresponds to C.5.c (function and regulation of muscle action)."
+      "rationaleAI": "Skeletal muscle as body musculature (C), specifically striated muscle as a complex contractile tissue (C.2.b), within vertebrate muscle systems (C.5)."
     },
     {
       "articleTitle": "Anatomy",
@@ -50,79 +52,71 @@
         "B",
         "C"
       ],
-      "rationaleAI": "Anatomy is the disciplinary framework for all structural content in Section 334, covering comparative structural analysis of integument, skeleton, and musculature across vertebrate and invertebrate taxa. Serves as a broad disciplinary anchor for paths A, B, and C collectively."
+      "rationaleAI": "Anatomy as the study of structure underpins all three systems: body covering (A), body skeleton (B), and body musculature (C), with comparative anatomy across taxa."
     },
     {
       "articleTitle": "Human body",
       "relevantPathsAI": [
         "A.7",
-        "B.7",
-        "C.5"
+        "B.7"
       ],
-      "rationaleAI": "Human body provides an integrative overview of the human musculoskeletal and integumentary systems — skin, bones, and muscles — corresponding to the human-specific paths A.7 (human integument), B.7 (human skeletal system), and the vertebrate muscle coverage in C.5."
+      "rationaleAI": "The human body is specifically addressed through human integument and derivatives (A.7) and the human skeletal system (B.7)."
     },
     {
       "articleTitle": "Vertebrate",
       "relevantPathsAI": [
         "A.3",
-        "A.4",
         "B.4",
         "C.5"
       ],
-      "rationaleAI": "Vertebrates are the primary taxon for paths A.3–A.5 (vertebrate integuments) and B.4 (vertebrate skeleton), and C.5 (vertebrate muscle systems). The article covers the vertebral column, cranium, and body plan diversity that grounds the comparative anatomy in this section."
+      "rationaleAI": "Vertebrate integuments (A.3), the vertebrate skeleton including embryology and evolution (B.4), and vertebrate muscle systems (C.5)."
     },
     {
       "articleTitle": "Mammal",
       "relevantPathsAI": [
-        "A.3",
         "A.3.b",
-        "A.4"
+        "B.4"
       ],
-      "rationaleAI": "Mammals are defined in part by hair/fur (A.3.b: skin derivatives and appendages) and mammary glands as skin-derived structures, making this article directly relevant to vertebrate integument variation (A.4) and the distinctive mammalian integumentary features of outline path A.3."
+      "rationaleAI": "Mammals have distinctive skin derivatives including hair (A.3.b) and endoskeletal features distinguishing them from other vertebrates (B.4)."
     },
     {
       "articleTitle": "Mollusca",
       "relevantPathsAI": [
-        "B.2.a",
+        "A.2",
         "B.3"
       ],
-      "rationaleAI": "Molluscs have both shells (calcareous skeletal elements, B.2.a) and soft bodies supported by hydrostatic and muscular mechanisms (B.2.c), making them directly relevant to invertebrate skeletal organization (B.3). The mantle and radula also represent integumentary and muscular specializations."
+      "rationaleAI": "Molluscs have invertebrate integuments with noncellular coatings (A.2) and skeletal elements including shells (B.3)."
     },
     {
       "articleTitle": "Physiology",
       "relevantPathsAI": [
         "A.6",
-        "B.6",
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "Physiology as a discipline underlies the biodynamics content of paths A.6 (biodynamics of vertebrate skin), B.6 (bone development), and C (muscle physiology including contraction and regulation). Comparative physiology specifically addresses the adaptive variation across taxa addressed throughout this section."
+      "rationaleAI": "Biodynamics of vertebrate skin (A.6) and muscle contraction mechanisms (C.3) represent physiological function of these systems."
     },
     {
       "articleTitle": "Heart",
       "relevantPathsAI": [
-        "C.1",
         "C.2.b"
       ],
-      "rationaleAI": "The heart is composed of cardiac muscle, a form of striated muscle (C.2.b: complex contractile tissues), and its function as a muscular pump is part of the general treatment of muscle tissue roles including gland discharge (C.1). Cardiac muscle is a key example within the vertebrate contractile tissue coverage."
+      "rationaleAI": "The heart as cardiac muscle relates to complex contractile tissues (C.2.b), though distinct from skeletal striated muscle."
     },
     {
       "articleTitle": "Meat",
       "relevantPathsAI": [
-        "C",
-        "C.1"
+        "C"
       ],
-      "rationaleAI": "Meat is predominantly skeletal muscle tissue, making it directly relevant to outline path C (body musculature) and C.1 (general features of muscle tissue including color and arrangement). The article's coverage of muscle composition (water, protein, fat) maps onto the structural properties of skeletal muscle."
+      "rationaleAI": "Meat as predominantly muscle tissue connects to the body musculature (C), composed mainly of skeletal muscle fibers."
     },
     {
       "articleTitle": "Bird",
       "relevantPathsAI": [
-        "A.3.b",
-        "A.4",
-        "B.4"
+        "A.3.b"
       ],
-      "rationaleAI": "Birds exhibit distinctive integumentary features — feathers as a skin derivative (A.3.b)—and lightweight skeletal adaptations for flight (B.4.a), directly relevant to vertebrate skin variation (A.4) and the vertebrate skeleton section. Their unique integumentary and skeletal adaptations make them a key comparative example."
+      "rationaleAI": "Birds have feathered, keratinized skin coverings as vertebrate skin derivatives and appendages (A.3.b), with lightweight skeletons adapted for flight."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

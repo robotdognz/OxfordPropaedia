@@ -12,25 +12,19 @@
         "A.5",
         "A.6"
       ],
-      "rationaleAI": "Covers the full survey of the solar system (outline path A), including all major constituents — planets, dwarf planets, asteroids, Kuiper belt, Oort cloud, comets, meteoroids, and the heliosphere — as well as formation theories and comparison with extrasolar systems (A.6)."
+      "rationaleAI": "Complete survey: Sun (A.1), planets (A.2), other constituents (A.3), regularities (A.4), interactions (A.5), and origin theories (A.6)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
         "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
         "B.3",
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "Directly covers all aspects of outline section B: photosphere, chromosphere, corona (B.1), solar magnetic activity, sunspots, solar cycle (B.2), interior structure and energy generation (B.3), electromagnetic output across all wavelengths (B.4), and solar-terrestrial relationships (B.5)."
+      "rationaleAI": "Surface layers (B.1), active Sun features (B.2), solar interior (B.3), solar radiation (B.4), and solar-terrestrial relationships (B.5)."
     },
     {
       "articleTitle": "Moon",
@@ -38,17 +32,13 @@
         "E",
         "E.1",
         "E.2",
+        "E.3",
         "E.4",
-        "E.4.a",
-        "E.4.b",
-        "E.4.c",
         "E.5",
         "E.6",
-        "E.7",
-        "E.7.a",
-        "E.7.b"
+        "E.7"
       ],
-      "rationaleAI": "Comprehensively covers outline section E: physical characteristics, orbital mechanics, mass and gravitational field, surface features (craters, maria, rilles), origin and evolution, chemical composition of lunar rock samples, and the Sun-Earth-Moon system including eclipses (E.7.b)."
+      "rationaleAI": "Shape and brightness (E.1), motion (E.2), mass and gravity (E.3), physical nature (E.4), origin (E.5), chemistry (E.6), and Sun-Earth-Moon system (E.7)."
     },
     {
       "articleTitle": "Earth",
@@ -56,219 +46,195 @@
         "D",
         "D.1",
         "D.2",
-        "D.4",
-        "D.5",
-        "D.6",
-        "A.2"
+        "D.3"
       ],
-      "rationaleAI": "Covers the Earth as a planet (outline section D): orbital motion and rotation (D.2), physical properties including magnetosphere (D.4), internal structure (D.5), and origin of Earth and its envelopes (D.6); also addresses Earth as one of the major planets (A.2)."
+      "rationaleAI": "Earth as a planet: distance from Sun (D.1), orbital motion and rotation (D.2), and effects on observations (D.3)."
     },
     {
       "articleTitle": "Mercury (planet)",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.1"
+        "C.1.a"
       ],
-      "rationaleAI": "Directly covers Mercury (C.1.a), the Solar System's innermost terrestrial planet, with detail on its heavily cratered surface, spin-orbit resonance, thin magnetic field, and extreme temperature swings."
+      "rationaleAI": "Mercury as the innermost terrestrial planet (C.1.a)."
     },
     {
       "articleTitle": "Venus",
       "relevantPathsAI": [
-        "C.1.b",
-        "C.1"
+        "C.1.b"
       ],
-      "rationaleAI": "Directly covers Venus (C.1.b), including its dense CO₂ atmosphere, retrograde rotation, volcanic surface, absence of magnetic field, and history of space exploration."
+      "rationaleAI": "Venus as the second terrestrial planet (C.1.b)."
     },
     {
       "articleTitle": "Mars",
       "relevantPathsAI": [
-        "C.1.d",
-        "C.1"
+        "C.1.d"
       ],
-      "rationaleAI": "Directly covers Mars (C.1.d), including its surface geology (Olympus Mons, Valles Marineris), hemispheric dichotomy, two moons, past oceans, and its status as a primary target for crewed exploration."
+      "rationaleAI": "Mars as the fourth terrestrial planet (C.1.d)."
     },
     {
       "articleTitle": "Jupiter",
       "relevantPathsAI": [
-        "C.3.a",
-        "C.3"
+        "C.3.a"
       ],
-      "rationaleAI": "Directly covers Jupiter (C.3.a), including its hydrogen-helium atmosphere, Great Red Spot, metallic hydrogen interior, strong magnetic field, and the Galilean moons (Io, Europa, Ganymede, Callisto)."
+      "rationaleAI": "Jupiter as the first giant planet (C.3.a)."
     },
     {
       "articleTitle": "Saturn",
       "relevantPathsAI": [
-        "C.3.b",
-        "C.3"
+        "C.3.b"
       ],
-      "rationaleAI": "Directly covers Saturn (C.3.b), including its prominent ring system, layered interior, magnetic field, and its 274+ moons including Titan — the only Solar System moon with a substantial atmosphere."
+      "rationaleAI": "Saturn as the second giant planet (C.3.b)."
     },
     {
       "articleTitle": "Uranus",
       "relevantPathsAI": [
-        "C.3.c",
-        "C.3"
+        "C.3.c"
       ],
-      "rationaleAI": "Directly covers Uranus (C.3.c), an ice giant with an extreme 98° axial tilt, offset magnetosphere, ring system, and 28 known moons, explored only by Voyager 2."
+      "rationaleAI": "Uranus as the third giant planet (C.3.c)."
     },
     {
       "articleTitle": "Neptune",
       "relevantPathsAI": [
-        "C.3.d",
-        "C.3"
+        "C.3.d"
       ],
-      "rationaleAI": "Directly covers Neptune (C.3.d), the Solar System's outermost known planet, including its active storm systems, offset magnetosphere, fragmented ring system, and Triton as a captured Kuiper Belt object."
+      "rationaleAI": "Neptune as the outermost giant planet (C.3.d)."
     },
     {
       "articleTitle": "Asteroid",
       "relevantPathsAI": [
-        "A.3.a",
-        "C.2"
+        "A.3.a"
       ],
-      "rationaleAI": "Directly covers minor planets/asteroids (A.3.a and C.2), including main-belt, Jupiter Trojan, and near-Earth populations, spectral classification, and impact hazard history."
+      "rationaleAI": "Minor planets or asteroids (A.3.a)."
     },
     {
       "articleTitle": "Comet",
       "relevantPathsAI": [
         "A.3.b"
       ],
-      "rationaleAI": "Directly covers comets (A.3.b): icy bodies that develop coma and tails, short-period origins in the Kuiper Belt, long-period origins in the Oort Cloud, and their role in meteor showers and organic compound delivery to early Earth."
+      "rationaleAI": "Comets as solar system constituents (A.3.b)."
     },
     {
       "articleTitle": "Natural satellite",
       "relevantPathsAI": [
-        "A.4",
-        "C"
+        "A.2",
+        "A.4"
       ],
-      "rationaleAI": "Covers the distribution and properties of natural satellites across the solar system (A.4), including formation mechanisms (accretion, capture, giant impact), tidal locking, and the diversity of geological activity among moons."
+      "rationaleAI": "Satellites of major planets (A.2) and distribution of natural satellites (A.4)."
     },
     {
       "articleTitle": "Planet",
       "relevantPathsAI": [
         "A.2",
-        "C",
-        "A.4"
+        "C"
       ],
-      "rationaleAI": "Covers the major planets of the solar system as a class (A.2) and their characteristics including axial tilt, atmosphere, magnetosphere, and orbital clearing; also connects to satellite distribution (A.4) and the contested definition of planet vs. dwarf planet."
+      "rationaleAI": "Major planets (A.2) and detailed coverage of terrestrial and giant planets (C)."
     },
     {
       "articleTitle": "Year",
       "relevantPathsAI": [
         "D.2",
-        "E.7.a"
+        "E.7.a.ii"
       ],
-      "rationaleAI": "Covers Earth's orbital period (the year) at outline path D.2, and the use of Earth's orbital cycle as the astronomical basis of chronology (E.7.a.ii), including the tropical, sidereal, and Julian year definitions."
+      "rationaleAI": "Earth's orbital period defining the year (D.2) and chronological basis (E.7.a.ii)."
     },
     {
       "articleTitle": "Day",
       "relevantPathsAI": [
         "D.2",
-        "E.7.a"
+        "E.7.a.ii"
       ],
-      "rationaleAI": "Covers the Earth's rotation period (the day) as defined at D.2, and the astronomical basis of chronology including the sidereal and solar day (E.7.a.ii), with connections to rotational irregularities and leap seconds."
+      "rationaleAI": "Earth's rotation defining the day (D.2) and chronological cycles (E.7.a.ii)."
     },
     {
       "articleTitle": "Season",
       "relevantPathsAI": [
         "D.2",
-        "D.3"
+        "E.7.a.i"
       ],
-      "rationaleAI": "Covers the effects of Earth's axial tilt and orbital position on seasonal variation (D.2), which is the primary driver of the seasonal cycle discussed in this article, fitting the outline's treatment of Earth's orbital effects."
+      "rationaleAI": "Axial tilt producing seasons (D.2) and Sun-Earth-Moon geometry (E.7.a.i)."
     },
     {
       "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
-        "D.4",
-        "D.6",
-        "B.5"
+        "D.4"
       ],
-      "rationaleAI": "Covers the origin and evolution of Earth's atmosphere (D.6) and solar-terrestrial interactions including the greenhouse effect and ozone, relevant to solar radiation's effects (B.5); also addresses the atmosphere as part of D.4 (Earth's physical properties)."
+      "rationaleAI": "Earth's atmosphere as a planetary property (D.4)."
     },
     {
       "articleTitle": "Volcano",
       "relevantPathsAI": [
-        "E.4.b",
-        "E.4.c",
-        "C.1.b"
+        "C.1.b",
+        "C.1.d"
       ],
-      "rationaleAI": "Relevant to the volcanic theory of the origin of Moon's surface features (E.4.c) and Moon's volcanic history (E.4.b); also covers volcanism on Venus (C.1.b), which compares to Earth's volcanic activity in the context of terrestrial planets."
+      "rationaleAI": "Volcanic surfaces on Venus (C.1.b) and Mars (C.1.d)."
     },
     {
       "articleTitle": "Gravity",
       "relevantPathsAI": [
-        "A.4",
         "A.5",
-        "D.2"
+        "E.3"
       ],
-      "rationaleAI": "Covers gravitational interactions that govern planetary distances (A.4), gravitational perturbations among bodies in the solar system (A.5), and the orbital mechanics of Earth's revolution around the Sun (D.2)."
+      "rationaleAI": "Gravitational interactions among bodies (A.5) and Moon's gravitational field (E.3)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Covers the full electromagnetic spectrum, directly relevant to solar radiation (B.4), which the outline specifies includes light, radio waves, and particles emitted by the Sun."
+      "rationaleAI": "Solar radiation including light, radio, and particles (B.4)."
     },
     {
       "articleTitle": "Star",
       "relevantPathsAI": [
-        "B.3",
-        "A.6"
+        "B.3"
       ],
-      "rationaleAI": "Covers stellar evolution — including the life cycles of main-sequence stars like the Sun — directly relevant to the Sun's interior evolution (B.3) and to understanding the Sun's origin and its eventual fate, contextualizing origin theories (A.6)."
+      "rationaleAI": "The Sun as a star with interior energy generation (B.3)."
     },
     {
       "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
-        "C.3.a",
-        "C.1.b",
-        "B.2.b"
+        "C.3.a"
       ],
-      "rationaleAI": "Galileo's telescopic discoveries directly underlie knowledge of Jupiter's moons (C.3.a), the phases of Venus (C.1.b), and sunspot observations (B.2.b), making him a historically essential contributor to solar system science."
+      "rationaleAI": "Galileo's discovery of Jupiter's moons (C.3.a)."
     },
     {
       "articleTitle": "Classical mechanics",
       "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "D.2"
+        "A.5"
       ],
-      "rationaleAI": "Classical (Newtonian) mechanics underlies the regularities of planetary distances (A.4), gravitational perturbations (A.5), and the orbital and rotational dynamics of Earth (D.2) that are fundamental to solar system science."
+      "rationaleAI": "Gravitational perturbations governed by classical mechanics (A.5)."
     },
     {
       "articleTitle": "Isaac Newton",
       "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "D.2"
+        "A.5"
       ],
-      "rationaleAI": "Newton's law of universal gravitation directly explains the regularities of planetary distances and distribution of satellites (A.4), gravitational perturbations among solar system bodies (A.5), and Earth's orbital and rotational dynamics (D.2)."
+      "rationaleAI": "Newton's gravitational theory governing solar system interactions (A.5)."
     },
     {
       "articleTitle": "Astronomy",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "D.3"
       ],
-      "rationaleAI": "Astronomy is the discipline through which the solar system is studied; the article covers planetary science and solar astronomy as subfields directly relevant to the survey of the solar system (A)."
+      "rationaleAI": "Survey of the solar system (A) and effects on astronomical observations (D.3)."
     },
     {
       "articleTitle": "Magnetism",
       "relevantPathsAI": [
-        "B.2",
         "B.2.a",
-        "B.2.b",
-        "D.4"
+        "C.3.a"
       ],
-      "rationaleAI": "Covers the physics of magnetic fields underpinning solar magnetic activity and localized strong magnetic fields at the Sun's surface (B.2.a), the sunspot cycle (B.2.b), and Earth's magnetism (D.4)."
+      "rationaleAI": "Strong solar surface magnetic fields (B.2.a) and Jupiter's planetary magnetic field (C.3.a)."
     },
     {
       "articleTitle": "Outer space",
       "relevantPathsAI": [
         "A.3.d"
       ],
-      "rationaleAI": "Covers the interplanetary medium (A.3.d) as part of its description of outer space regions including the near-vacuum, cosmic rays, magnetic fields, and the heliosphere between planetary bodies."
+      "rationaleAI": "The interplanetary medium (A.3.d)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

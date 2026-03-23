@@ -56,16 +56,18 @@ const outline = await loadOutlineGraph();
       Skip to main content
     </a>
 
-    <Header />
+    <Header searchEntriesUrl={`${base}/outline-search.json`} />
 
-    <div class="flex-1 flex" data-pagefind-body>
+    <div class="flex-1 flex">
       <Sidebar
         navigation={outline.parts}
         currentPartNumber={currentPartNumber}
         currentDivisionId={currentDivisionId}
         currentSectionCode={currentSectionCode}
       />
-      <slot />
+      <div class="flex-1 min-w-0" data-pagefind-body>
+        <slot />
+      </div>
     </div>
 
     <Footer />

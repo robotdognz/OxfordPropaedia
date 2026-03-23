@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v1';
+const CACHE_NAME = 'propaedia-v2';
 const BASE = '/OxfordPropaedia/';
 
 self.addEventListener('install', () => {

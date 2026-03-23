@@ -7,24 +7,21 @@
         "B",
         "B.1",
         "B.2",
-        "B.3",
-        "B.4",
-        "B.5"
+        "B.3"
       ],
-      "rationaleAI": "Gravity is the primary article for 131.B, covering Newton's universal law, general relativity's geometric reinterpretation, gravitational measurements and anomalies (131.B.2), the gravitational constant (131.B.5), and large-scale cosmic structure shaped by gravity. It addresses the full developmental arc from early concepts through modern field theory required by 131.B.1–B.5."
+      "rationaleAI": "Gravitational theory from Kepler through Newton (B.1), gravity measurements (B.2), and modern theory including general relativity (B.3)."
     },
     {
       "articleTitle": "Big Bang",
       "relevantPathsAI": [
+        "E",
         "E.1",
         "E.1.a",
         "E.1.b",
         "E.1.c",
-        "A.1.b",
-        "A.1.c",
-        "A.1.e"
+        "E.3"
       ],
-      "rationaleAI": "Big Bang is the central article for 131.E.1, covering the steady-state vs. Big Bang debate (E.1.a), primordial nucleosynthesis (E.1.b), and early universe extrapolation (E.1.c). It also directly addresses Hubble's redshift law (A.1.b), the age of the universe (A.1.c), and cosmic microwave background radiation (A.1.e)."
+      "rationaleAI": "Big-bang vs steady-state models (E.1.a), primordial nucleosynthesis (E.1.b), early universe (E.1.c), and time scale (E.3)."
     },
     {
       "articleTitle": "Physical cosmology",
@@ -32,49 +29,42 @@
         "A",
         "A.1",
         "A.2",
-        "E",
-        "D"
+        "E"
       ],
-      "rationaleAI": "Physical cosmology covers all core areas of Section 131: the large-scale structure of the universe (A.1), cosmological models (A.2), origin and development including Big Bang and CMB (E.1), and the astronomical implications of general relativity (D.2). It is the disciplinary umbrella article for Section 131."
+      "rationaleAI": "Structure and properties of the universe (A.1), cosmological models (A.2), and origin and development (E)."
     },
     {
       "articleTitle": "Universe",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.1.d",
-        "A.1.e",
-        "A.1.f",
-        "A.1.g",
-        "A.3"
+        "A.3",
+        "E"
       ],
-      "rationaleAI": "Universe covers basic data for the universe including chemical composition (A.1.a), large-scale structure and expansion with Hubble's law (A.1.b), galaxy clustering (A.1.d), CMB (A.1.e), missing mass/dark matter (A.1.f), and spacetime as a four-dimensional continuum (A.1.g). It also addresses the full range of known universe components (A.3)."
+      "rationaleAI": "Basic data including composition, structure, age (A.1), components (A.3), and origin and development (E)."
     },
     {
       "articleTitle": "Galaxy",
       "relevantPathsAI": [
         "A.1.d",
         "A.3.a",
-        "A.3.b",
         "E.2.a"
       ],
-      "rationaleAI": "Galaxy covers clustering of galaxies (A.1.d), distant galaxies and the Local Group as known universe components (A.3.a, A.3.b), and galaxy formation as part of the origin and development of the universe (E.2.a). It also addresses supermassive black holes at galactic centres (A.3.c context)."
+      "rationaleAI": "Galaxy clustering (A.1.d), distant galaxies (A.3.a), and galaxy origin and development (E.2.a)."
     },
     {
       "articleTitle": "Black hole",
       "relevantPathsAI": [
-        "A.3.c",
-        "D.2.c"
+        "A.3.c"
       ],
-      "rationaleAI": "Black hole directly addresses supermassive black holes at the centres of galaxies listed in 131.A.3.c, and represents an implication of general relativity (131.D.2.c). Hawking radiation and the information paradox further connect to modern gravitational theory (131.B.3)."
+      "rationaleAI": "Supermassive black holes as postulated quasar components (A.3.c)."
     },
     {
       "articleTitle": "Milky Way",
       "relevantPathsAI": [
         "A.3.b"
       ],
-      "rationaleAI": "The Milky Way is explicitly part of the Local Group of galaxies (131.A.3.b) and exemplifies galactic structure (spiral arms, central bar, supermassive black hole Sagittarius A*). It provides the primary local instance of the galaxy component class described in 131.A.3."
+      "rationaleAI": "The Milky Way in the Local Group of galaxies (A.3.b)."
     },
     {
       "articleTitle": "Star",
@@ -82,16 +72,15 @@
         "A.3.e",
         "E.2.b"
       ],
-      "rationaleAI": "Stars are explicitly listed among the known components of the universe (131.A.3.e) and their formation and development is a key subtopic of 131.E.2.b. The article covers stellar nucleosynthesis, formation from nebular collapse, and evolution — all addressed under Section 131's universe development outline."
+      "rationaleAI": "Stars as universe components (A.3.e) and star formation and development (E.2.b)."
     },
     {
       "articleTitle": "Astronomy",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "C"
+        "E"
       ],
-      "rationaleAI": "Astronomy is the observational science providing data for virtually all of Section 131, including measurement of galactic distances, cosmic expansion (Hubble's law), gravitational phenomena, and celestial mechanics. It connects the empirical basis of cosmological models to theoretical physics in 131.A and 131.B."
+      "rationaleAI": "Structure and properties (A) and origin and development of the universe (E)."
     },
     {
       "articleTitle": "Classical mechanics",
@@ -99,25 +88,23 @@
         "B.1.b",
         "C"
       ],
-      "rationaleAI": "Classical mechanics includes Newton's law of gravity (131.B.1.b) and forms the foundation of celestial mechanics (131.C, the highest-priority uncovered path), encompassing orbital dynamics, Kepler's laws, and gravitational interactions that govern planetary and stellar motions."
+      "rationaleAI": "Newton's gravity law (B.1.b) and celestial mechanics (C)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
-        "A.3.f",
-        "E.2.b",
+        "A.3.e",
         "E.2.c"
       ],
-      "rationaleAI": "The Sun exemplifies stars as components of the universe (131.A.3.f) and its origin as a star is part of 131.E.2.b (formation of stars). The solar system's origin (131.E.2.c) directly involves the Sun's formation from a collapsing molecular cloud."
+      "rationaleAI": "The Sun as a star (A.3.e) and origin of the solar system (E.2.c)."
     },
     {
       "articleTitle": "Albert Einstein",
       "relevantPathsAI": [
-        "D.1",
-        "D.2",
-        "B.3.b"
+        "B.3.b",
+        "D"
       ],
-      "rationaleAI": "Einstein formulated both the special theory of relativity (131.D.1) and the general theory of relativity (131.D.2), which is used to interpret gravitational phenomena (131.B.3.a). His work fundamentally reshaped the understanding of spacetime and gravity central to Section 131.D and B.3."
+      "rationaleAI": "General relativity interpreting gravity (B.3.b) and astronomical implications of relativity (D)."
     },
     {
       "articleTitle": "Space",
@@ -125,32 +112,30 @@
         "A.1.g",
         "D"
       ],
-      "rationaleAI": "Space directly addresses the spacetime continuum as a four-dimensional entity (131.A.1.g) and connects to the properties of spacetime described in 131.D, including both special and general relativistic treatments of spatial geometry and curvature."
+      "rationaleAI": "Space-time as a four-dimensional continuum (A.1.g) and properties of the space-time continuum (D)."
     },
     {
       "articleTitle": "Theory of relativity",
       "relevantPathsAI": [
+        "D",
         "D.1",
-        "D.2",
-        "B.3",
-        "B.3.a"
+        "D.2"
       ],
-      "rationaleAI": "Theory of relativity comprehensively covers both special relativity (131.D.1) and general relativity (131.D.2), including experimental confirmations (Mercury's perihelion, gravitational lensing, gravitational waves) that correspond to 131.D.2.b and its use to interpret gravity (131.B.3.a)."
+      "rationaleAI": "Special relativity (D.1) and general relativity with experimental confirmation (D.2)."
     },
     {
       "articleTitle": "Speed of light",
       "relevantPathsAI": [
-        "D.1.b",
-        "D.1.c"
+        "D.1.b"
       ],
-      "rationaleAI": "Speed of light's invariance is the founding postulate of special relativity (131.D.1.b, relativity of space and time) and its constancy across frames is among the consequences of special relativity (131.D.1.c). The article directly supports the historical background and consequences of special relativity under 131.D.1."
+      "rationaleAI": "Constancy of c and its role in space-time geometry (D.1.b)."
     },
     {
       "articleTitle": "Planet",
       "relevantPathsAI": [
         "A.3.f"
       ],
-      "rationaleAI": "Planets are explicitly listed as components of planetary systems — both solar and extrasolar — in 131.A.3.f. The article covers planet formation, classification, and the broad structure of planetary systems as known universe components."
+      "rationaleAI": "Planetary systems as universe components (A.3.f)."
     },
     {
       "articleTitle": "Newton's laws of motion",
@@ -158,108 +143,101 @@
         "B.1.b",
         "C"
       ],
-      "rationaleAI": "Newton's laws include his law of gravity (131.B.1.b) and form the classical foundation of celestial mechanics (131.C — the priority uncovered path), governing planetary orbits, the two-body problem, and the Principia's unification of terrestrial and celestial dynamics."
+      "rationaleAI": "Newton's gravity law (B.1.b) and celestial mechanics (C)."
     },
     {
       "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
         "B.1.a"
       ],
-      "rationaleAI": "Galileo Galilei is explicitly named in 131.B.1.a (early concepts of gravity: Aristotelian viewpoint, contributions of Kepler and Galileo), having established the law of free fall and inertia that underpinned Newton's later gravitational synthesis. He also provides heliocentric observational evidence foundational to cosmology."
+      "rationaleAI": "Galileo's contributions to early gravitational concepts (B.1.a)."
     },
     {
       "articleTitle": "Isaac Newton",
       "relevantPathsAI": [
-        "B.1.b",
-        "C"
+        "B.1.b"
       ],
-      "rationaleAI": "Isaac Newton is the central figure of 131.B.1.b (Newton's law of gravity) and celestial mechanics (131.C — the priority uncovered path), having formulated universal gravitation in the Principia and unified terrestrial and celestial mechanics, establishing the mathematical basis for orbital dynamics."
+      "rationaleAI": "Newton's law of gravity (B.1.b)."
     },
     {
       "articleTitle": "Nicolaus Copernicus",
       "relevantPathsAI": [
-        "B.1.a"
+        "D.1.a"
       ],
-      "rationaleAI": "Copernicus is part of the historical development of gravitational and cosmological theory (131.B.1.a early concepts), as his heliocentric model was a prerequisite for Kepler's laws and ultimately Newton's universal gravitation. The Copernican Revolution restructured understanding of celestial mechanics."
+      "rationaleAI": "Copernican heliocentric model as historical background for relativity (D.1.a)."
     },
     {
       "articleTitle": "Outer space",
       "relevantPathsAI": [
-        "A.1",
         "A.3"
       ],
-      "rationaleAI": "Outer space covers the vacuum and physical conditions of interplanetary, interstellar, and intergalactic regions, directly relevant to the structure and known components of the universe (131.A.1 and A.3). Intergalactic plasma as baryonic matter and CMB as background radiation connect to A.1.e and A.1.a."
+      "rationaleAI": "Interstellar and intergalactic space containing universe components (A.3)."
     },
     {
       "articleTitle": "Comet",
       "relevantPathsAI": [
         "A.3.f"
       ],
-      "rationaleAI": "Comets are small bodies of the solar system and thus part of planetary systems listed in 131.A.3.f, originating in the Oort Cloud and Kuiper Belt — structures that bracket the solar system's extent. Their orbital mechanics also connect to celestial mechanics (131.C)."
+      "rationaleAI": "Comets within planetary systems (A.3.f)."
     },
     {
       "articleTitle": "Mercury (planet)",
       "relevantPathsAI": [
-        "D.2.b",
-        "A.3.f"
+        "D.2.b"
       ],
-      "rationaleAI": "Mercury's anomalous perihelion precession is the classic experimental confirmation of general relativity cited in 131.D.2.b, making this article uniquely relevant to the empirical verification subsection. It is also a planetary component of the solar system (131.A.3.f)."
+      "rationaleAI": "Mercury's perihelion precession confirming general relativity (D.2.b)."
     },
     {
       "articleTitle": "Saturn",
       "relevantPathsAI": [
-        "A.3.f",
-        "C"
+        "A.3.f"
       ],
-      "rationaleAI": "Saturn is a major planetary body of the solar system (131.A.3.f) and its complex moon system and ring dynamics illustrate gravitational and orbital mechanics (131.C). Its exploration by Cassini also provided gravitational data relevant to solar system celestial mechanics."
+      "rationaleAI": "Saturn within the solar system (A.3.f)."
     },
     {
       "articleTitle": "Time",
       "relevantPathsAI": [
         "A.1.g",
-        "D.1",
+        "D.1.b",
         "E.3"
       ],
-      "rationaleAI": "Time is a fundamental dimension of the spacetime continuum (131.A.1.g) and its relativistic treatment — time dilation in both special and general relativity — is central to 131.D.1. The time scale of the universe and dating of significant events also corresponds to 131.E.3."
+      "rationaleAI": "Space-time continuum (A.1.g), relativity of time (D.1.b), and time scale of the universe (E.3)."
     },
     {
       "articleTitle": "Chemical element",
       "relevantPathsAI": [
-        "E.1.b",
-        "A.1.a"
+        "A.1.a",
+        "E.1.b"
       ],
-      "rationaleAI": "Chemical elements' cosmic abundances and their nucleosynthetic origins are directly addressed in primordial nucleosynthesis (131.E.1.b) and the estimated chemical composition of the universe (131.A.1.a). The article covers stellar nucleosynthesis and primordial hydrogen and helium abundances."
+      "rationaleAI": "Chemical composition of the universe (A.1.a) and primordial nucleosynthesis (E.1.b)."
     },
     {
       "articleTitle": "Standard Model",
       "relevantPathsAI": [
-        "B.3"
+        "E.1.c"
       ],
-      "rationaleAI": "The Standard Model represents the modern field-theoretic treatment of forces that contextualises gravity as the one interaction not yet incorporated into quantum field theory (131.B.3), motivating quantum gravity research. It provides the framework within which modern gravitational theory (general relativity) must eventually be reconciled."
+      "rationaleAI": "Particle physics of the early universe (E.1.c)."
     },
     {
       "articleTitle": "Measurement",
       "relevantPathsAI": [
-        "B.2",
         "B.5"
       ],
-      "rationaleAI": "Measurement addresses quantification and standards directly applicable to the interpretation of gravity measurements (131.B.2) and methods for measuring the gravitational constant G (131.B.5). The history of precision measurement is integral to these gravitational subsections."
+      "rationaleAI": "Gravitational constant G and methods of measurement (B.5)."
     },
     {
       "articleTitle": "Moon",
       "relevantPathsAI": [
-        "A.3.f",
-        "C"
+        "A.3.f"
       ],
-      "rationaleAI": "The Moon is a natural satellite within the solar and planetary system (131.A.3.f) and its tidal and orbital interaction with Earth represents a classic case of celestial mechanics (131.C — the priority uncovered path). Lunar orbital mechanics was central to Newton's derivation of universal gravitation."
+      "rationaleAI": "The Moon within the Earth-Moon system (A.3.f)."
     },
     {
       "articleTitle": "Jupiter",
       "relevantPathsAI": [
-        "A.3.f",
-        "C"
+        "A.3.f"
       ],
-      "rationaleAI": "Jupiter is the dominant planet of the solar system (131.A.3.f) and its early inward migration shaped planetary system architecture, a key topic for celestial mechanics (131.C). Its Galilean moons also provided the first direct observation of orbital mechanics beyond Earth."
+      "rationaleAI": "Jupiter in the solar system (A.3.f)."
     },
     {
       "articleTitle": "Earth",
@@ -267,7 +245,7 @@
         "A.3.f",
         "B.4"
       ],
-      "rationaleAI": "Earth is the reference planetary body for 131.A.3.f (planetary systems) and the surface acceleration of gravity on Earth (131.B.4) is directly discussed in the gravitational theory section. Earth's orbital mechanics exemplify celestial mechanics (131.C)."
+      "rationaleAI": "Earth in the solar system (A.3.f) and surface gravity (B.4)."
     },
     {
       "articleTitle": "History of Earth",
@@ -275,9 +253,9 @@
         "E.2.c",
         "E.3"
       ],
-      "rationaleAI": "History of Earth covers the origin and formation of the solar system (~4.54 billion years ago from a collapsing molecular cloud), directly relevant to 131.E.2.c (origin of the solar system). It also contributes to the universe's time scale and dating of significant events (131.E.3)."
+      "rationaleAI": "Origin of the solar system (E.2.c) and dating significant events (E.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

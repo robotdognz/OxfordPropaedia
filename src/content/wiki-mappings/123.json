@@ -6,14 +6,12 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
         "A.3",
         "B",
         "C",
-        "D",
-        "H"
+        "D"
       ],
-      "rationaleAI": "The core article for this section, covering the general nature and classification of chemical reactions (A), energy changes (B), rates (C), mechanisms (D), and chemical theory in synthesis (H) with comprehensive breadth across all major outline divisions."
+      "rationaleAI": "Basic concepts (A.1), classification of reaction types (A.3), energy changes (B), rates and kinetics (C), and mechanisms (D)."
     },
     {
       "articleTitle": "Acid–base reaction",
@@ -34,9 +32,10 @@
         "F.1",
         "F.2",
         "F.3",
-        "F.4"
+        "F.4",
+        "F.5"
       ],
-      "rationaleAI": "Directly covers the F division on oxidation-reduction reactions, including major reaction classes (F.1: electron and atom transfer), oxidation state definitions (F.2–F.3), and electrochemical reactions (F.4) including electrode potentials."
+      "rationaleAI": "Major redox classes (F.1), stoichiometric definitions (F.2), theoretical aspects (F.3), electrochemical reactions (F.4), and biological redox (F.5)."
     },
     {
       "articleTitle": "Catalysis",
@@ -45,52 +44,49 @@
         "D.1",
         "D.4"
       ],
-      "rationaleAI": "Catalysts are a key factor affecting reaction rate (C.1.d) and the course of a reaction (D.1), and catalysis is an explicit basis for classification of reaction mechanisms (D.4), making this a directly relevant article for multiple outline paths."
+      "rationaleAI": "Catalysts affecting reaction rate (C.1.d), influencing reaction course (D.1), and mechanism classification by catalysis type (D.4)."
     },
     {
       "articleTitle": "Thermodynamics",
       "relevantPathsAI": [
-        "A.1",
-        "B.3",
-        "C.3"
+        "B",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Covers conservation of mass and energy (A.1), thermodynamic relations including chemical equilibrium and free energy changes (B.3), and the equilibrium constant governing the extent of chemical reactions (C.3)."
+      "rationaleAI": "Exothermic and endothermic classification (B.1) and thermodynamic relations including equilibrium and free energy (B.3)."
     },
     {
       "articleTitle": "Physical chemistry",
       "relevantPathsAI": [
-        "A.2",
-        "B.3",
+        "B",
         "C",
         "D"
       ],
-      "rationaleAI": "Physical chemistry encompasses the major theoretical frameworks for chemical reactions: thermodynamic relations (B.3), reaction kinetics (C), reaction mechanisms (D), and the growth of major theories concerning chemical reactions (A.2)."
+      "rationaleAI": "Energy changes (B), reaction rates and kinetics (C), and reaction mechanisms (D)."
     },
     {
       "articleTitle": "Electric battery",
       "relevantPathsAI": [
         "F.4",
-        "F.4.a",
-        "F.4.b"
+        "F.4.a"
       ],
-      "rationaleAI": "An electric battery is a canonical electrochemical device operating through F.4 electrochemical reactions (redox at anode and cathode), covering types of electrochemical processes (F.4.a) and complex electrochemical reactions (F.4.b)."
+      "rationaleAI": "Electrochemical cells converting chemical to electrical energy via redox (F.4, F.4.a)."
     },
     {
       "articleTitle": "Photosynthesis",
       "relevantPathsAI": [
         "F.5",
-        "G.1",
-        "G.3"
+        "G"
       ],
-      "rationaleAI": "Photosynthesis is a primary example of oxidation-reduction reactions in biological systems (F.5) and is itself a photochemical process (G.1–G.3) converting light energy into chemical energy via redox reactions in living organisms."
+      "rationaleAI": "Biological redox process using light energy (F.5) and photochemical reactions (G)."
     },
     {
       "articleTitle": "Fire",
       "relevantPathsAI": [
         "F.6",
-        "A.3.a"
+        "B.1"
       ],
-      "rationaleAI": "Fire directly exemplifies oxidation-reduction reactions in combustion and flames (F.6), and combustion is a key decomposition/chain reaction type (A.3.a) involving rapid exothermic oxidation with characteristic reaction mechanisms."
+      "rationaleAI": "Rapid exothermic oxidation corresponds to combustion and flames (F.6) and exothermic classification (B.1)."
     },
     {
       "articleTitle": "Energy",
@@ -100,7 +96,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Covers the energy changes in chemical reactions (B) including the distinction between exothermic and endothermic processes (B.1), activation energy (B.2), and thermodynamic relations including free energy and entropy in chemical reactions (B.3)."
+      "rationaleAI": "Conservation in reactions (A.1), classification by energy changes (B.1), activation energy (B.2), and thermodynamic relations (B.3)."
     },
     {
       "articleTitle": "Antoine Lavoisier",
@@ -108,31 +104,30 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Lavoisier established the law of conservation of mass fundamental to chemical reactions (A.1) and pioneered quantitative chemistry and stoichiometry that defined the growth of major theories concerning chemical reactions (A.2)."
+      "rationaleAI": "Conservation of mass (A.1) and growth of major theories on chemical reactions (A.2)."
     },
     {
       "articleTitle": "Chemistry",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A",
+        "H"
       ],
-      "rationaleAI": "As the parent discipline, Chemistry covers the growth of major theories concerning chemical reactions (A.2) and the principal classification systems for reaction types including redox, acid-base, and synthesis reactions (A.3)."
+      "rationaleAI": "General considerations of reactions (A) and chemical theory in synthesis (H)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
         "F.5",
-        "G.3"
+        "E.3.c"
       ],
-      "rationaleAI": "Biochemistry covers oxidation-reduction reactions in biological systems (F.5) including cellular respiration and enzymatic redox cascades, and metabolic photochemical processes (G.3) such as the light reactions of photosynthesis."
+      "rationaleAI": "Redox in biological systems (F.5) and acid-base catalysis in enzymatic processes (E.3.c)."
     },
     {
       "articleTitle": "Inorganic chemistry",
       "relevantPathsAI": [
-        "H",
-        "F.4"
+        "H"
       ],
-      "rationaleAI": "Inorganic chemistry covers the synthesis of chemical compounds including factors affecting synthetic path choice (H), and mechanistic analysis of inorganic redox reactions and electrochemical processes (F.4)."
+      "rationaleAI": "Inorganic compound synthesis connects to chemical reactions in synthesis (H)."
     },
     {
       "articleTitle": "Proton",
@@ -140,49 +135,46 @@
         "E.2.b",
         "E.3.a"
       ],
-      "rationaleAI": "The proton functions as the hydrogen ion (H+) central to the Brønsted-Lowry definition of acids (E.2.b) and is the species transferred in proton-transfer reactions (E.3.a), the primary mechanism of acid-base chemistry."
+      "rationaleAI": "Protons in Bronsted-Lowry theory (E.2.b) and proton-transfer reactions (E.3.a)."
     },
     {
       "articleTitle": "Explosive",
       "relevantPathsAI": [
-        "A.3.a",
-        "F.6"
+        "A.3.a.iii",
+        "B.1"
       ],
-      "rationaleAI": "Explosives are defined by rapid chain reactions and decomposition reactions (A.3.a) and involve extreme cases of exothermic oxidation-reduction reactions in combustion (F.6), with detonation as a supersonic combustion front."
+      "rationaleAI": "Explosive chain reactions (A.3.a.iii) releasing chemical energy exothermically (B.1)."
     },
     {
       "articleTitle": "Temperature",
       "relevantPathsAI": [
-        "C.1.b",
-        "B.2"
+        "C.1.b"
       ],
-      "rationaleAI": "Temperature is a key factor affecting the rate and direction of chemical reactions (C.1.b) and is directly related to activation energy through the Arrhenius equation (B.2: the significance of activation energy)."
+      "rationaleAI": "Temperature affecting reaction rate and direction (C.1.b)."
     },
     {
       "articleTitle": "Water",
       "relevantPathsAI": [
-        "E.1",
         "E.4.a"
       ],
-      "rationaleAI": "Water as the solvent for most acid-base reactions provides the medium for aqueous equilibria (E.4.a), and its self-ionization (Kw) is foundational to the general properties of acids and bases in aqueous solution (E.1)."
+      "rationaleAI": "Acid-base equilibria in aqueous solutions (E.4.a)."
     },
     {
       "articleTitle": "Electricity",
       "relevantPathsAI": [
-        "F.4",
-        "F.4.a"
+        "F.4"
       ],
-      "rationaleAI": "Electricity covers electrolysis and electrochemical reactions (F.4) as chemical changes associated with the passage of an electrical current, with types of electrochemical reactions (F.4.a) as a subfield of electrical science."
+      "rationaleAI": "Electrochemical reactions involving electrical current (F.4)."
     },
     {
       "articleTitle": "Chemical bond",
       "relevantPathsAI": [
-        "D.4",
-        "D.5"
+        "A.1",
+        "D.3"
       ],
-      "rationaleAI": "Chemical bond types and electron pairing are the basis for classifying reaction mechanisms (D.4: nucleophilic/electrophilic based on electron pairing in transition state) and for understanding mechanisms of nucleophilic and electrophilic substitution (D.5)."
+      "rationaleAI": "Bond-breaking and bond-forming as the basis of reactions (A.1), and intermediates revealing mechanisms (D.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

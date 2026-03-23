@@ -2,6 +2,7 @@
 interface BreadcrumbItem {
   label: string;
   mobileLabel?: string;
+  compactLabel?: string;
   href?: string;
 }
 
@@ -19,9 +20,12 @@ interface Props {
 const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
 ---
 
-<div class="sticky top-16 z-20 bg-white/95 backdrop-blur-sm border-b border-slate-200 font-sans">
+<div data-breadcrumbs-root class="sticky top-16 z-20 bg-white/95 backdrop-blur-sm border-b border-slate-200 font-sans">
   <div class="flex items-center justify-between gap-4 px-4 sm:px-8 py-2">
-    <div class="min-w-0 flex-1 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+    <div
+      data-breadcrumbs-scroll
+      class="min-w-0 flex-1 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+    >
       <p class={`whitespace-nowrap text-[11px] sm:text-sm font-medium uppercase tracking-[0.14em] sm:tracking-wide ${colorClass}`}>
         {breadcrumbs.map((item, i) => (
           <>
@@ -29,14 +33,14 @@ const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
             {item.href
               ? (
                 <a href={item.href} class="hover:underline">
-                  <span class="sm:hidden">{item.mobileLabel ?? item.label}</span>
-                  <span class="hidden sm:inline">{item.label}</span>
+                  <span data-breadcrumb-full>{item.label}</span>
+                  <span data-breadcrumb-compact>{item.compactLabel ?? item.mobileLabel ?? item.label}</span>
                 </a>
               )
               : (
                 <span>
-                  <span class="sm:hidden">{item.mobileLabel ?? item.label}</span>
-                  <span class="hidden sm:inline">{item.label}</span>
+                  <span data-breadcrumb-full>{item.label}</span>
+                  <span data-breadcrumb-compact>{item.compactLabel ?? item.mobileLabel ?? item.label}</span>
                 </span>
               )
             }
@@ -58,7 +62,43 @@ const { breadcrumbs, scrollTargets, colorClass } = Astro.props;
   </div>
 </div>
 
+<style>
+  [data-breadcrumb-compact] {
+    display: none;
+  }
+
+  [data-breadcrumbs-root][data-compact="true"] [data-breadcrumb-full] {
+    display: none;
+  }
+
+  [data-breadcrumbs-root][data-compact="true"] [data-breadcrumb-compact] {
+    display: inline;
+  }
+</style>
+
 <script is:inline>
+  document.querySelectorAll('[data-breadcrumbs-root]').forEach(function(root) {
+    var scrollEl = root.querySelector('[data-breadcrumbs-scroll]');
+    if (!(scrollEl instanceof HTMLElement)) return;
+
+    var mobileMedia = window.matchMedia('(max-width: 639px)');
+
+    function updateCompactState() {
+      root.setAttribute('data-compact', 'false');
+      var shouldCompact = mobileMedia.matches && scrollEl.scrollWidth > scrollEl.clientWidth + 4;
+      root.setAttribute('data-compact', shouldCompact ? 'true' : 'false');
+    }
+
+    var resizeObserver = new ResizeObserver(function() {
+      requestAnimationFrame(updateCompactState);
+    });
+
+    resizeObserver.observe(scrollEl);
+    resizeObserver.observe(root);
+    mobileMedia.addEventListener('change', updateCompactState);
+    requestAnimationFrame(updateCompactState);
+  });
+
   document.querySelectorAll('[data-scroll-to]').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var target = document.getElementById(btn.getAttribute('data-scroll-to'));

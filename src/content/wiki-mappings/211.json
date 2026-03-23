@@ -5,108 +5,98 @@
       "articleTitle": "Earth",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
         "B"
       ],
-      "rationaleAI": "Covers Earth's orbital revolution and axial rotation (A.1), the Coriolis force and centrifugal effects from Earth's rotation (A.2), and the planet's overall size, shape, and geophysical properties that define the figure of the Earth (B)."
+      "rationaleAI": "Orbital motions including revolution and rotation (A) and figure of the Earth including geoid (B)."
     },
     {
       "articleTitle": "Moon",
       "relevantPathsAI": [
-        "A.2.c",
-        "A"
+        "A.2.c"
       ],
-      "rationaleAI": "The Moon's gravitational interaction with Earth drives tidal friction (A.2.c), which gradually slows Earth's rotation; the article covers tidal dynamics between Earth and Moon explicitly."
+      "rationaleAI": "Tidal friction from Moon's gravitational interaction (A.2.c)."
     },
     {
       "articleTitle": "Natural satellite",
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Covers tidal locking and tidal dynamics that produce tidal friction (A.2.c) across satellite systems, with direct application to Earth-Moon tidal braking of Earth's rotation."
+      "rationaleAI": "Satellite gravitational effects including tidal friction (A.2.c)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.c"
+        "A.1"
       ],
-      "rationaleAI": "Earth's revolution about the Sun (A.1) is one of the two primary orbital motions; solar tidal forces also contribute to tidal friction (A.2.c) affecting Earth's rotation rate."
+      "rationaleAI": "Revolution of Earth about the Sun (A.1)."
     },
     {
       "articleTitle": "Day",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1"
       ],
-      "rationaleAI": "Directly covers Earth's rotation on its axis and the resultant solar and sidereal day (A.1), as well as rotational irregularities; connects to centrifugal effects and rotational dynamics (A.2)."
+      "rationaleAI": "Earth's rotation defining the day (A.1)."
     },
     {
       "articleTitle": "Season",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Seasons result from Earth's axial tilt during its revolution about the Sun (A.1); this article covers the geometry of the orbital motion and its effects on solar flux across latitudes."
+      "rationaleAI": "Earth's revolution with axial tilt producing seasons (A.1)."
     },
     {
       "articleTitle": "Wind",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Wind patterns are driven by the Coriolis effect arising from Earth's rotation (A.2.a), making the article directly relevant to the forces and dynamic effects of Earth's rotation."
+      "rationaleAI": "Coriolis force from Earth's rotation affecting wind patterns (A.2.a)."
     },
     {
       "articleTitle": "Carl Friedrich Gauss",
       "relevantPathsAI": [
-        "B",
         "B.3"
       ],
-      "rationaleAI": "Gauss conducted geodetic surveys of Hanover and made contributions to potential theory and differential geometry, directly supporting the geodetic measurement of Earth's figure (B.3); the method of least squares is foundational to correlating geodetic data (B.3.c)."
+      "rationaleAI": "Gauss's contributions to geodesy and geodetic parameter measurement (B.3)."
     },
     {
       "articleTitle": "Isaac Newton",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2"
+        "A.2"
       ],
-      "rationaleAI": "Newton established the laws of orbital motion (A.1) and centrifugal/gravitational forces governing Earth's rotation (A.2); his theory of universal gravitation predicts Earth's oblate spheroid shape, foundational to determining the figure of the Earth (B.1, B.2)."
+      "rationaleAI": "Newton's gravitational theory governing rotational forces and dynamic effects (A.2)."
     },
     {
       "articleTitle": "Geometry",
       "relevantPathsAI": [
-        "B",
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "The figure of the Earth (B) is defined geometrically as the geoid (B.1) and measured through improved spherical/ellipsoidal approximations (B.2); geodesy is a direct application of differential geometry and spherical geometry."
+      "rationaleAI": "The geoid definition (B.1) and approximations to Earth's size and shape (B.2)."
     },
     {
       "articleTitle": "Solar System",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Earth's revolution about the Sun and its place in the solar system (A.1) is covered in this article's account of solar system structure and orbital dynamics."
+      "rationaleAI": "Earth's orbital position in the solar system (A.1)."
     },
     {
       "articleTitle": "Astronomy",
       "relevantPathsAI": [
-        "A.1",
+        "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Astronomy provides the observational framework for measuring Earth's orbital motion (A.1) and contributes satellite-based geodetic measurements (B.3.b) through space and observational astronomy."
+      "rationaleAI": "Astrogravimetric methods (B.3.a) and satellite measurements (B.3.b) for geodesy."
     },
     {
       "articleTitle": "Planet",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Covers planetary characteristics including revolution, rotation, and axial tilt (A.1), as well as rotational dynamics that are relevant to understanding Earth's orbital motions (A.2)."
+      "rationaleAI": "Earth as a planet with orbital motions (A) and defined figure (B)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

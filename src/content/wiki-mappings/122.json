@@ -8,28 +8,26 @@
         "D.1",
         "D.2",
         "D.3",
-        "D.4",
-        "E.2"
+        "D.4"
       ],
-      "rationaleAI": "Comprehensively covers the theory of chemical bonding (Section D) including nonquantum, quantum-mechanical, and other bonding effects such as hydrogen, metallic, and coordinate bonds. Also addresses classification of compounds by bond type (E.2: ionic, covalent, coordination)."
+      "rationaleAI": "Theory of chemical bonding (D): ionic, covalent, metallic bonds (D.1.b), quantum-mechanical treatment (D.2), hydrogen bonding (D.3), and experimental observation (D.4)."
     },
     {
       "articleTitle": "Chemistry",
       "relevantPathsAI": [
-        "E",
-        "G"
+        "A",
+        "B",
+        "E"
       ],
-      "rationaleAI": "As the parent discipline article, Chemistry covers the systems of classification of chemical compounds (E) and provides broad context for organic and inorganic compound families (G), including reaction types and subdisciplines relevant to the full section."
+      "rationaleAI": "Molecular structure theory (A), experimental procedures for structure determination (B), and classification of compounds (E)."
     },
     {
       "articleTitle": "Organic chemistry",
       "relevantPathsAI": [
         "G",
-        "G.1",
-        "G.2",
-        "G.3"
+        "G.1"
       ],
-      "rationaleAI": "Directly covers the major groups of organic compounds, their nomenclature, properties, synthesis, and reactions (G.1.a–G.1.u), preparation and purification of organic compounds (G.2), and their physical properties (G.3)."
+      "rationaleAI": "Major groups of organic compounds including hydrocarbons, halogen compounds, organometallics (G.1)."
     },
     {
       "articleTitle": "Chemical compound",
@@ -37,133 +35,127 @@
         "E",
         "E.1",
         "E.2",
-        "E.3",
-        "E.4"
+        "E.3"
       ],
-      "rationaleAI": "Defines and classifies chemical compounds by elemental composition, bond type (ionic, covalent, coordination), and physical state, directly addressing outline sections E.1 through E.4 on the systems of classification of chemical substances."
+      "rationaleAI": "Classification by elemental composition (E.1), bond type (E.2), and chemical reactivity (E.3)."
     },
     {
       "articleTitle": "Molecule",
       "relevantPathsAI": [
         "A",
+        "A.1",
         "A.3",
         "A.5"
       ],
-      "rationaleAI": "Covers the theory of molecular structure (A), including molecular bonds and three-dimensional shapes (A.3) determined by VSEPR and spectroscopy, and the relation of molecular structure to properties of bulk matter (A.5)."
+      "rationaleAI": "Molecular structure theory (A.1), bonds and shapes (A.3), and relation to bulk properties (A.5)."
     },
     {
       "articleTitle": "Electron",
       "relevantPathsAI": [
-        "D.2",
+        "D.1.b",
         "D.2.a"
       ],
-      "rationaleAI": "Covers atomic and molecular orbital concepts (D.2.a) and the quantum-mechanical treatment of chemical bonding (D.2), as valence electrons govern bond formation and molecular orbital theory."
+      "rationaleAI": "Electronic theory of bonding (D.1.b) and molecular orbital concepts (D.2.a)."
     },
     {
       "articleTitle": "Inorganic chemistry",
       "relevantPathsAI": [
         "F",
+        "F.1",
         "F.2",
-        "F.2.c",
         "F.3",
         "F.4"
       ],
-      "rationaleAI": "Directly covers the structural classification of inorganic compounds including coordination compounds (F.2.c), methods of preparation (F.3), and reactions of inorganic compounds including acid-base, substitution, and redox reactions (F.4)."
+      "rationaleAI": "Inorganic compounds: nomenclature (F.1), structural classification (F.2), preparation (F.3), and reactions (F.4)."
     },
     {
       "articleTitle": "Physical chemistry",
       "relevantPathsAI": [
         "B",
-        "B.3",
-        "C",
-        "D",
-        "D.2"
+        "C"
       ],
-      "rationaleAI": "Covers experimental and instrumental procedures for determining molecular structures (B.3 spectrochemical methods), molecular spectra (C), and the quantum-mechanical theory of chemical bonding (D.2) as core subfields of physical chemistry."
+      "rationaleAI": "Experimental procedures for structure determination (B) and molecular spectra theory (C)."
     },
     {
       "articleTitle": "Atom",
       "relevantPathsAI": [
-        "A",
-        "D.2.a"
+        "A.1",
+        "D.1.c"
       ],
-      "rationaleAI": "As the fundamental unit underlying molecular structure, the atom article covers atomic orbitals and electron configurations (D.2.a) and the quantum-mechanical basis for how atoms combine to form molecules, foundational to Section A's theory of molecular structure."
+      "rationaleAI": "Early concepts of molecular structure (A.1) and quantum theory applied to atomic structure (D.1.c)."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
         "G.1.a",
-        "G.1.u"
+        "E.1"
       ],
-      "rationaleAI": "Carbon's unique tetravalency and bonding versatility are the foundation of the organic compounds section (G); specifically covers hydrocarbons (G.1.a) and, through its allotropes, organic polymers including fullerenes and graphene (G.1.u)."
+      "rationaleAI": "Carbon's bonding versatility underlies organic compounds (G.1.a), classified by elemental composition (E.1)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
         "B.3.a",
-        "C",
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "Covers the electromagnetic spectrum underlying spectrochemical analytical methods (B.3.a: microwave, infrared, UV spectroscopy) and the types of molecular spectra (C.2), which are central to identifying molecular structure."
+      "rationaleAI": "Spectrochemical methods (B.3.a) and molecular spectra (C)."
     },
     {
       "articleTitle": "DNA",
       "relevantPathsAI": [
         "G.1.r"
       ],
-      "rationaleAI": "DNA is the primary exemplar of the nucleic acids subcategory of organic compounds (G.1.r: nucleic acids — DNA and RNA), covering its double-helical polymer structure of nucleotide monomers and associated chemistry."
+      "rationaleAI": "DNA as a nucleic acid is covered under organic compounds (G.1.r)."
     },
     {
       "articleTitle": "RNA",
       "relevantPathsAI": [
         "G.1.r"
       ],
-      "rationaleAI": "RNA is the second nucleic acid covered explicitly in outline path G.1.r (nucleic acids: DNA and RNA), with its distinct single-stranded polymer structure, ribose backbone, and diverse functional roles as molecular species."
+      "rationaleAI": "RNA as a nucleic acid is covered under organic compounds (G.1.r)."
     },
     {
       "articleTitle": "Carbohydrate",
       "relevantPathsAI": [
         "G.1.m"
       ],
-      "rationaleAI": "Directly corresponds to outline path G.1.m (carbohydrates), covering monosaccharides, disaccharides, and polysaccharides with their nomenclature, structure, chemical and physical properties, and biosynthetic occurrence."
+      "rationaleAI": "Carbohydrates as organic compounds (G.1.m)."
     },
     {
       "articleTitle": "Protein",
       "relevantPathsAI": [
         "G.1.n"
       ],
-      "rationaleAI": "Directly corresponds to outline path G.1.n (amino acids, proteins, and peptides), covering the polymer structure, sequence-function relationships, and chemical properties of protein macromolecules."
+      "rationaleAI": "Amino acids, proteins, and peptides (G.1.n)."
     },
     {
       "articleTitle": "Natural rubber",
       "relevantPathsAI": [
-        "G.1.o",
         "G.1.u"
       ],
-      "rationaleAI": "Natural rubber is a biopolymer of isoprene (isoprenoid, G.1.o) and simultaneously an organic polymer (G.1.u), directly illustrating both subcategories with its polyisoprene structure, vulcanization chemistry, and properties."
+      "rationaleAI": "Natural rubber as an isoprene biopolymer connects to organic polymers (G.1.u)."
     },
     {
       "articleTitle": "Silicon",
       "relevantPathsAI": [
-        "F.2.f",
         "G.1.j"
       ],
-      "rationaleAI": "Silicon corresponds directly to the inorganic polymers path (F.2.f: silicate structures and inorganic polymers) and organic silicon compounds (G.1.j: organosilicon chemistry including silicones), covering both inorganic and organometallic aspects."
+      "rationaleAI": "Organic silicon compounds (G.1.j)."
     },
     {
       "articleTitle": "Oxygen",
       "relevantPathsAI": [
-        "F.2.b",
-        "E.3"
+        "F.2.b"
       ],
-      "rationaleAI": "Oxygen directly relates to inorganic oxides, anhydrides, acids, and bases (F.2.b) and to classification by chemical reactivity as an oxidizing agent (E.3), providing specific coverage of two otherwise uncovered paths."
+      "rationaleAI": "Oxygen in oxides, anhydrides, acids, and bases (F.2.b)."
     },
     {
       "articleTitle": "Carbon dioxide",
       "relevantPathsAI": [
+        "A.3.a",
         "F.2.b"
       ],
-      "rationaleAI": "Carbon dioxide is a canonical example of an inorganic oxide and anhydride (F.2.b), with its linear triatomic molecular structure and acid-forming properties (carbonic acid) illustrating structural classification of inorganic compounds."
+      "rationaleAI": "CO2 as a linear triatomic molecule (A.3.a) and an oxide (F.2.b)."
     },
     {
       "articleTitle": "Acid–base reaction",
@@ -176,49 +168,50 @@
     {
       "articleTitle": "Substance (chemistry)",
       "relevantPathsAI": [
+        "E",
         "E.4",
         "E.5"
       ],
-      "rationaleAI": "Covers classification of chemical substances by physical state — gas, liquid, solid (E.4) — and discusses pure versus natural and synthetic compounds, addressing E.5 (by origin: natural and synthetic) among uncovered paths."
+      "rationaleAI": "Classification by physical state (E.4) and origin (E.5)."
     },
     {
       "articleTitle": "Water",
       "relevantPathsAI": [
-        "D.3",
-        "A.5.a"
+        "A.3",
+        "D.3"
       ],
-      "rationaleAI": "Water illustrates hydrogen bonding as a major bonding effect (D.3) and its anomalous density and surface properties demonstrate how molecular structure influences physical properties of bulk matter (A.5.a)."
+      "rationaleAI": "Water's hydrogen bonding connects to molecular bonds (A.3) and bonding effects (D.3)."
     },
     {
       "articleTitle": "Antoine Lavoisier",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Lavoisier's Chemical Revolution established early concepts of elemental composition and molecular structure (A.1: early concepts of molecular structure), including chemical nomenclature that persists in naming inorganic compounds (F.1)."
+      "rationaleAI": "Lavoisier's systematic nomenclature contributed to early molecular structure concepts (A.1)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
-        "G.1.m",
         "G.1.n",
-        "G.1.q",
         "G.1.r"
       ],
-      "rationaleAI": "Biochemistry encompasses the major classes of biomolecular organic compounds covered in G.1.m–G.1.r (carbohydrates, proteins, nucleotides, nucleic acids), providing broader disciplinary context for these organic compound families."
+      "rationaleAI": "Macromolecule classes map to organic compound categories: proteins (G.1.n) and nucleic acids (G.1.r)."
     },
     {
       "articleTitle": "Natural gas",
       "relevantPathsAI": [
         "G.1.a"
       ],
-      "rationaleAI": "Natural gas is composed primarily of methane and higher alkanes — aliphatic hydrocarbons — directly corresponding to outline path G.1.a (hydrocarbons: aliphatic and aromatic), providing a real-world exemplar of this organic compound class."
+      "rationaleAI": "Natural gas (methane and alkanes) falls under aliphatic hydrocarbons (G.1.a)."
     },
     {
       "articleTitle": "Chemical reaction",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the factors affecting synthetic paths and reaction conditions in the synthesis of chemical compounds (H and H.1), as reaction types (decomposition, substitution, addition) are integral to understanding compound preparation."
+      "relevantPathsAI": [
+        "A.5.b"
+      ],
+      "rationaleAI": "Chemical behavior determined by molecular bond nature (A.5.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

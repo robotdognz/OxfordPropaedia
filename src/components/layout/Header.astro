@@ -1,6 +1,12 @@
 ---
 import SearchDialog from '../search/SearchDialog';
 const base = import.meta.env.BASE_URL;
+
+interface Props {
+  searchEntriesUrl?: string;
+}
+
+const { searchEntriesUrl = `${base}/outline-search.json` } = Astro.props;
 ---
 
 <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
@@ -62,7 +68,9 @@ const base = import.meta.env.BASE_URL;
 </header>
 
 <!-- Search Dialog (Preact island) -->
-<SearchDialog client:idle baseUrl={base} />
+<div data-pagefind-ignore>
+  <SearchDialog client:idle baseUrl={base} outlineEntriesUrl={searchEntriesUrl} />
+</div>
 
 <script>
   function setupHeader() {

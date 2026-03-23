@@ -7,28 +7,32 @@
         "A.1.a",
         "B",
         "E",
+        "F",
         "G",
         "H"
       ],
-      "rationaleAI": "Ocean covers the physical and chemical properties of seawater (222.B), ocean-atmosphere interactions including ENSO and Gulf Stream effects (222.E), surface and internal waves and tides (222.G), and ocean circulation currents (222.H). It directly addresses the principal saltwater bodies of the hydrosphere (222.A.1.a)."
+      "rationaleAI": "Covers the major saltwater body of the hydrosphere (A.1.a), physical and chemical properties of seawater including salinity, dissolved gases, and pH (B), ocean-atmosphere interactions influencing weather and climate (E), environmental threats such as pollution, acidification, and warming (F), ocean waves and tides (G), and ocean current systems both surface and deep (H)."
     },
     {
       "articleTitle": "Sea",
       "relevantPathsAI": [
-        "A.1.a",
+        "A.1",
         "B",
+        "E",
+        "F",
         "G",
         "H"
       ],
-      "rationaleAI": "Sea covers seawater chemistry (salinity, pH, dissolved gases), ocean currents including thermohaline conveyor, tides, and waves (222.G, 222.H), directly mapping to the physical and chemical properties of seawater (222.B) and saltwater body distribution (222.A.1.a)."
+      "rationaleAI": "Addresses saltwater bodies including marginal seas (A.1), seawater chemistry covering salinity, pH, and dissolved gases (B), ocean-atmosphere interactions and climate moderation (E), environmental issues including marine pollution (F), waves, tides, and tsunamis (G), and surface and deep thermohaline circulation (H)."
     },
     {
       "articleTitle": "Earth",
       "relevantPathsAI": [
         "A",
-        "D"
+        "D",
+        "E"
       ],
-      "rationaleAI": "Earth's article covers the hydrosphere including oceans covering 70.8% of the surface and the water cycle broadly, providing essential framing for the distribution of water in the hydrosphere (222.A) and the hydrologic cycle (222.D)."
+      "rationaleAI": "Addresses the hydrosphere broadly, noting oceans cover 70.8% of Earth's surface (A), the role of greenhouse effect and weather systems in the water cycle (D and E), and Earth's origin and atmospheric evolution relevant to ocean-atmosphere interactions (E)."
     },
     {
       "articleTitle": "Lake",
@@ -36,50 +40,54 @@
         "A.2.a",
         "C"
       ],
-      "rationaleAI": "Lake covers freshwater bodies including tectonic, glacial, volcanic, and endorheic lakes (222.A.2.a), with limnology covering the physical and chemical properties of freshwater standing water bodies (222.C)."
+      "rationaleAI": "Directly covers freshwater lakes as enclosed water bodies on land (A.2.a), including limnology, thermal stratification, water chemistry, and the role of lakes in the hydrological cycle (C). Covers tectonic, volcanic, glacial, and artificial lake origins."
     },
     {
       "articleTitle": "Water",
       "relevantPathsAI": [
+        "A",
         "B",
         "C",
         "D"
       ],
-      "rationaleAI": "Water covers the molecular structure and physical properties of H₂O, the global water cycle, and ocean and groundwater distribution, directly relevant to the physical and chemical properties of seawater and freshwater (222.B, 222.C) and the hydrologic cycle (222.D)."
+      "rationaleAI": "Covers the global distribution of water across oceans, freshwater bodies, and biological fluids (A), molecular structure and properties relevant to seawater and freshwater chemistry (B, C), the global water cycle including evaporation, precipitation, and groundwater (D), and phase transitions relevant to ice in the hydrosphere (A.3)."
     },
     {
       "articleTitle": "Pacific Ocean",
       "relevantPathsAI": [
         "A.1.a",
-        "E.3.b",
+        "G.1",
         "H"
       ],
-      "rationaleAI": "The Pacific Ocean is one of the principal saltwater bodies (222.A.1.a); its Coriolis-driven circulation connects to ocean currents (222.H), and its role in El Niño/ENSO patterns directly maps to ocean-atmosphere interactions and climate anomalies (222.E.3.b)."
+      "rationaleAI": "The largest oceanic division, directly relevant to oceans and marginal seas (A.1.a). Covers the Mariana Trench, seamount chains, Coriolis-driven circulation (H), and El Nino patterns relevant to ocean-atmosphere interactions."
     },
     {
       "articleTitle": "Arctic Ocean",
       "relevantPathsAI": [
         "A.1.a",
         "A.3.b",
-        "E"
+        "B",
+        "H"
       ],
-      "rationaleAI": "The Arctic Ocean is a principal saltwater body (222.A.1.a) with sea ice dynamics including icebergs and pack ice (222.A.3.b), and its connections to Atlantic and Pacific circulation are relevant to ocean-atmosphere interactions and global climate regulation (222.E)."
+      "rationaleAI": "The smallest oceanic division (A.1.a), characterized by sea ice dynamics including icebergs and pack ice (A.3.b), low salinity properties distinct from other oceans (B), and connections to Atlantic and Pacific via ocean current pathways (H)."
     },
     {
       "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
+        "D.2",
         "D.3",
         "E"
       ],
-      "rationaleAI": "Atmosphere of Earth covers the role of water vapor, precipitation and evaporation in the atmospheric system (222.D.3), and the greenhouse effect and ocean-atmosphere energy exchange are directly relevant to ocean-atmosphere interactions (222.E)."
+      "rationaleAI": "Covers atmospheric water vapor and its role in the hydrologic cycle through evaporation and condensation (D.2, D.3), and ocean-atmosphere interactions including greenhouse effect, weather systems, and climate moderation (E)."
     },
     {
       "articleTitle": "Mediterranean Sea",
       "relevantPathsAI": [
         "A.1.a",
+        "A.1.b",
         "B"
       ],
-      "rationaleAI": "The Mediterranean Sea is a major marginal saltwater body (222.A.1.a) with distinctive oceanography including the Messinian salinity crisis, circulation patterns, and seawater chemistry relevant to physical and chemical properties of seawater (222.B)."
+      "rationaleAI": "An intercontinental marginal sea (A.1.a) with gulf and bay characteristics (A.1.b), covering unique oceanographic properties including the Messinian salinity crisis and circulation patterns relevant to seawater chemistry (B)."
     },
     {
       "articleTitle": "River",
@@ -87,30 +95,32 @@
         "A.2.a",
         "D.4"
       ],
-      "rationaleAI": "Rivers are primary freshwater bodies (222.A.2.a) whose hydrology — drainage basins, discharge, and groundwater connections — maps directly to runoff and subsurface water in the hydrologic cycle (222.D.4)."
+      "rationaleAI": "Rivers are freshwater channels flowing toward oceans and lakes (A.2.a), playing a central role in runoff and subsurface water within the hydrologic cycle (D.4), including drainage basins, discharge, and groundwater seepage."
     },
     {
       "articleTitle": "Climate change",
       "relevantPathsAI": [
+        "E.2",
         "E.3",
         "F"
       ],
-      "rationaleAI": "Climate change covers glacier retreat, sea level rise, and intensified storms as documented hydrosphere impacts, relevant to ocean-atmosphere interactions affecting climate (222.E.3), and addresses human activities disrupting the water balance and ocean acidification (222.F)."
+      "rationaleAI": "Rising CO2 and ocean warming directly address the ocean as a carbon dioxide sink (E.2), impacts on ocean-atmosphere interactions and climate anomalies including Arctic amplification and sea level rise (E.3), and greenhouse warming disrupting the water balance (F)."
     },
     {
       "articleTitle": "Rain",
       "relevantPathsAI": [
         "D.3",
-        "D.4"
+        "D.6"
       ],
-      "rationaleAI": "Rain is the dominant freshwater delivery mechanism globally, sustaining river systems and groundwater recharge, which maps to the role of water vapor and precipitation in the hydrologic cycle (222.D.3) and runoff and subsurface water (222.D.4)."
+      "rationaleAI": "Rain is the dominant precipitation mechanism, formed through atmospheric water vapor condensation (D.3), sustaining river systems and groundwater recharge as part of the hydrologic cycle, and shaping water resources and supply globally (D.6)."
     },
     {
       "articleTitle": "Tropical cyclone",
       "relevantPathsAI": [
-        "E.3.a"
+        "E.3",
+        "G.1"
       ],
-      "rationaleAI": "Tropical cyclones are sustained by warm ocean surface temperatures, directly illustrating the link between ocean surface temperature and climate/weather anomalies (222.E.3.a), and their storm surges demonstrate ocean-atmosphere interaction impacts."
+      "rationaleAI": "Tropical cyclones are sustained by heat energy from warm ocean surfaces, directly illustrating ocean-atmosphere interactions and climate anomalies (E.3). They generate storm surges and ocean waves (G.1)."
     },
     {
       "articleTitle": "Carbon dioxide",
@@ -118,46 +128,47 @@
         "E.2",
         "F"
       ],
-      "rationaleAI": "CO₂ dissolving in ocean water to form carbonic acid and causing ocean acidification is the central topic of oceanic waters as a sink for carbon dioxide (222.E.2), and rising CO₂ from fossil fuels is the primary example of human activities acidifying precipitation and disrupting the water balance (222.F)."
+      "rationaleAI": "CO2 dissolves in ocean water forming carbonic acid, causing ocean acidification, directly relevant to the ocean as a carbon dioxide sink (E.2). Rising atmospheric CO2 from fossil fuels drives greenhouse warming and potential water balance disruption (F)."
     },
     {
       "articleTitle": "Cloud",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "E.1"
       ],
-      "rationaleAI": "Clouds are central to the role of water vapor in the hydrologic cycle — condensation and precipitation processes (222.D.3)—covering cloud formation, classification, and their role in precipitation, directly relevant to the hydrosphere's water cycle linkages."
+      "rationaleAI": "Clouds form from atmospheric water vapor condensation (D.3) and modulate Earth's energy balance through radiation budgets relevant to ocean-atmosphere interactions (E.1)."
     },
     {
       "articleTitle": "Snow",
       "relevantPathsAI": [
-        "A.3.c",
+        "A.3",
         "D.5"
       ],
-      "rationaleAI": "Snow covers river ice and lake ice as a form of frozen freshwater (222.A.3.c) and snowpack's role as a critical freshwater reservoir regulating seasonal runoff, directly mapping to the role of ice in the hydrologic cycle (222.D.5)."
+      "rationaleAI": "Snowpack compacts into firn and glacial ice relevant to ice sheets and glaciers (A.3.a), and snow serves as a critical freshwater reservoir regulating seasonal runoff and groundwater recharge as part of the ice component of the hydrologic cycle (D.5)."
     },
     {
       "articleTitle": "Antarctica",
       "relevantPathsAI": [
         "A.3.a",
-        "A.3.b"
+        "D.5"
       ],
-      "rationaleAI": "Antarctica holds approximately 70% of global freshwater as ice sheets and glaciers (222.A.3.a), with sea-level implications from ice sheet dynamics; it also connects to icebergs calving into the Southern Ocean (222.A.3.b)."
+      "rationaleAI": "Holds approximately 70% of global freshwater as ice sheets (A.3.a), directly relevant to ice in the hydrologic cycle and sea-level implications (D.5). Southern Ocean circulation connects to ocean current systems."
     },
     {
       "articleTitle": "Flood",
       "relevantPathsAI": [
         "D.4",
-        "F"
+        "D.6"
       ],
-      "rationaleAI": "Floods represent the direct consequence of runoff and subsurface water overflows in the hydrologic cycle (222.D.4), and human activities such as deforestation and urbanization that increase flood frequency constitute effects on the hydrosphere (222.F)."
+      "rationaleAI": "Floods represent extreme runoff events within the hydrologic cycle (D.4), driven by riverbank overflow, storm surge, and intensified water cycle from climate change, connecting to water resources management (D.6)."
     },
     {
       "articleTitle": "Indian Ocean",
       "relevantPathsAI": [
         "A.1.a",
-        "E.3"
+        "H"
       ],
-      "rationaleAI": "The Indian Ocean is the third-largest oceanic saltwater body (222.A.1.a) with monsoon-driven climate and Walker circulation directly relevant to ocean-atmosphere interactions affecting weather and climate (222.E.3)."
+      "rationaleAI": "The third-largest oceanic division (A.1.a) with monsoon-driven climate and Walker circulation patterns, unique upwelling, and ocean current systems (H)."
     },
     {
       "articleTitle": "Great Lakes",
@@ -165,61 +176,60 @@
         "A.2.a",
         "C"
       ],
-      "rationaleAI": "The Great Lakes constitute the largest freshwater lake system on Earth's surface (222.A.2.a), containing 21% of surface freshwater, with water chemistry and limnological properties directly relevant to the physical and chemical properties of freshwater (222.C)."
+      "rationaleAI": "The largest freshwater lake system containing 21% of Earth's surface fresh water (A.2.a), with properties relevant to freshwater chemistry including ecology, invasive species, and water quality (C)."
     },
     {
       "articleTitle": "Caspian Sea",
       "relevantPathsAI": [
-        "A.1.a",
         "A.2.a",
         "C"
       ],
-      "rationaleAI": "The Caspian Sea is the world's largest inland body of water and is ambiguous between lake and sea (222.A.1.a, 222.A.2.a), with distinctive low salinity chemistry and hydrology (endorheic basin with Volga inflow) directly relevant to freshwater and brackish water properties (222.C)."
+      "rationaleAI": "The world's largest inland body of water, an endorheic basin with salinity far below seawater (A.2.a), covering hydrology, freshwater properties, and environmental concerns including projected depth decline from climate change (C)."
     },
     {
       "articleTitle": "Ecology",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Ecology covers the role of water in biosphere functioning including aquatic ecosystems, directly addressing water in the biosphere (222.A.4), the sole no-coverage priority path for this section."
+      "rationaleAI": "Ecology's study of organism-environment relationships connects to water in the biosphere (A.4), including aquatic ecosystems, energy flow, and nutrient cycling in hydrospheric contexts."
     },
     {
       "articleTitle": "Wind",
       "relevantPathsAI": [
         "E.3",
-        "H.2",
-        "H.3"
+        "G.1",
+        "H.2"
       ],
-      "rationaleAI": "Wind drives ocean surface circulation through frictional forces (222.H.2, 222.H.3) including trade winds and westerlies generating major surface currents, and is a key component of ocean-atmosphere interactions affecting climate (222.E.3)."
+      "rationaleAI": "Wind drives ocean-atmosphere interactions through differential solar heating and the Coriolis effect (E.3), generates surface waves in the hydrosphere (G.1), and is a primary force causing ocean currents via pressure gradients and frictional forces (H.2)."
     },
     {
       "articleTitle": "Earthquake",
       "relevantPathsAI": [
         "G.1"
       ],
-      "rationaleAI": "Earthquakes generate tsunamis — a form of surface wave in the hydrosphere (222.G.1)—and the article explicitly covers these as a secondary seismic effect, making it relevant to waves in the hydrosphere."
+      "rationaleAI": "Earthquakes generate tsunamis, a major type of surface wave in the hydrosphere (G.1), through sudden seismic energy release along tectonic plate boundaries."
     },
     {
       "articleTitle": "Amazon rainforest",
       "relevantPathsAI": [
-        "A.4",
-        "D"
+        "D",
+        "A.4"
       ],
-      "rationaleAI": "The Amazon rainforest plays a disproportionate role in South American hydrology and water cycling, relevant to water in the biosphere (222.A.4) and to the hydrologic cycle via Amazonian moisture recycling (222.D)."
+      "rationaleAI": "The Amazon plays a disproportionate role in South American hydrology through rainfall feedback and carbon storage, connecting to the hydrologic cycle (D) and water in the biosphere (A.4)."
     },
     {
       "articleTitle": "Hydropower",
       "relevantPathsAI": [
         "D.6"
       ],
-      "rationaleAI": "Hydropower is a direct application of water resources and supply (222.D.6), converting the energy of flowing water into electricity and constituting a major component of freshwater utilization in the hydrosphere."
+      "rationaleAI": "Converts gravitational energy of flowing water into electricity, directly relevant to water resources and supply (D.6), including river basin management and the broader water-energy nexus."
     },
     {
       "articleTitle": "Pollution",
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Pollution covers the introduction of harmful contaminants into water bodies, including cultural eutrophication and acid precipitation from sulfur dioxide and nitrogen oxides — exactly the examples cited in outline path 222.F on human activities affecting the hydrosphere."
+      "rationaleAI": "Water pollution, acidification of precipitation from sulfur dioxide and nitrogen oxide emissions, and other contaminants directly address human effects on the hydrosphere (F)."
     },
     {
       "articleTitle": "Yangtze",
@@ -227,7 +237,7 @@
         "A.2.a",
         "D.4"
       ],
-      "rationaleAI": "The Yangtze is a major freshwater river body (222.A.2.a) whose hydrology, periodic flooding, and Three Gorges Dam connect to runoff and water resources in the hydrologic cycle (222.D.4, 222.D.6)."
+      "rationaleAI": "China's longest river draining one-fifth of its land area (A.2.a), with periodic flooding and the Three Gorges Dam illustrating runoff and water resource management within the hydrologic cycle (D.4)."
     },
     {
       "articleTitle": "Ganges",
@@ -235,22 +245,22 @@
         "A.2.a",
         "D.4"
       ],
-      "rationaleAI": "The Ganges is a major Himalayan-fed freshwater river (222.A.2.a) whose hydrology, irrigation canals, and dams connect to runoff and subsurface water in the hydrologic cycle (222.D.4), and it is threatened by climate-driven water stress."
+      "rationaleAI": "A major Himalayan river forming one of the world's largest delta systems (A.2.a), with hydrology, irrigation, and dams relevant to runoff and subsurface water in the hydrologic cycle (D.4)."
     },
     {
       "articleTitle": "Arctic",
       "relevantPathsAI": [
         "A.3.b",
-        "E"
+        "E.3"
       ],
-      "rationaleAI": "The Arctic covers sea ice dynamics including seasonal melt and icebergs/pack ice (222.A.3.b) and connects to global climate regulation through polar ocean-atmosphere interactions (222.E)."
+      "rationaleAI": "The Arctic region encompasses sea ice, permafrost, and seasonal ice dynamics including icebergs and pack ice (A.3.b), with accelerating sea-ice loss illustrating ocean-atmosphere interactions and climate anomalies (E.3)."
     },
     {
       "articleTitle": "History of Earth",
       "relevantPathsAI": [
-        "D"
+        "A"
       ],
-      "rationaleAI": "History of Earth covers oceanic and atmospheric formation and the evolution of the hydrosphere over geological time, relevant as broad background to the hydrologic cycle (222.D) and the long-term context of water distribution."
+      "rationaleAI": "Earth's 4.54-billion-year history includes oceanic and atmospheric formation, relevant to the origin and distribution of water in the hydrosphere (A)."
     },
     {
       "articleTitle": "Fossil fuel",
@@ -258,9 +268,9 @@
         "E.2",
         "F"
       ],
-      "rationaleAI": "Fossil fuel combustion is the primary driver of CO₂ buildup causing ocean acidification (222.E.2) and greenhouse warming that disrupts the water balance (222.F), making it directly relevant to human effects on the hydrosphere."
+      "rationaleAI": "Fossil fuel combustion releases greenhouse gases driving ocean acidification, relevant to the ocean as a CO2 sink (E.2), and disrupting the water balance through greenhouse warming (F)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

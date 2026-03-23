@@ -5,25 +5,13 @@
       "articleTitle": "Evolution",
       "relevantPathsAI": [
         "B",
-        "B.1",
         "B.1.b",
-        "B.1.c",
         "B.1.d",
-        "B.1.e",
         "B.2",
-        "B.2.a",
-        "B.2.d",
         "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "D",
-        "D.1",
-        "D.4",
-        "D.6",
-        "D.6.c"
+        "D"
       ],
-      "rationaleAI": "Evolution is the central subject of section 312.B–D: it covers Darwin and Wallace (B.1.b), the modern evolutionary synthesis (B.1.d), molecular and genetic studies (B.1.e), fossil record and molecular clues as evidence (B.2.a, B.2.d), mutation and genetic drift (C.1–C.2), natural selection modes (C.3), and speciation including adaptive radiation and molecular evolution (D). This is the core article for the bulk of the section outline."
+      "rationaleAI": "Covers the history of evolutionary theory including Darwin's natural selection (B.1.b) and the synthetic theory (B.1.d), evidence for evolution from fossils and molecular clues (B.2), the process of evolution through genetic variation and natural selection (C), and speciation (D)."
     },
     {
       "articleTitle": "Natural selection",
@@ -31,11 +19,10 @@
         "B.1.b",
         "C.3",
         "C.3.a",
-        "C.3.b",
         "C.3.c",
         "C.3.d"
       ],
-      "rationaleAI": "Natural selection maps directly to outline paths C.3.a–d (adaptation and fitness; coloration, mimicry, polymorphism; genetic change; types of selection: stabilizing, directional, diversifying, sexual, kin) and to Darwin's theory (B.1.b), covering the process comprehensively."
+      "rationaleAI": "Darwin's theory of natural selection (B.1.b), with adaptation and fitness (C.3.a), natural selection in genetic change (C.3.c), and types of selection including stabilizing, directional, diversifying, and sexual (C.3.d)."
     },
     {
       "articleTitle": "Abiogenesis",
@@ -43,24 +30,17 @@
         "A",
         "A.1",
         "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.3",
-        "A.3.a",
-        "A.3.b"
+        "A.3"
       ],
-      "rationaleAI": "Abiogenesis is the direct subject of outline section A: it addresses hypotheses about the origin of life (A.1), chemical precursor steps including primitive atmosphere formation (A.2.a), simple organic molecule production (A.2.b), long-chain polymer formation (A.2.c), and genetic code origin (A.2.d), plus early living systems including procaryotic/eucaryotic cell origin (A.3.b) and RNA world enzymatic chain evolution (A.3.a)."
+      "rationaleAI": "Directly covers stages in the emergence of life (A), including hypotheses about the origin of life (A.1), steps in producing chemical precursors (A.2), and the earliest living systems including enzymatic reaction chains and origin of cells (A.3)."
     },
     {
       "articleTitle": "Charles Darwin",
       "relevantPathsAI": [
-        "B.1",
         "B.1.b",
-        "B.2"
+        "C.3"
       ],
-      "rationaleAI": "Darwin developed the theory of evolution by natural selection (B.1.b) through the Beagle voyage and On the Origin of Species, and his work directly established evidence for evolution (B.2) through geological and comparative anatomy; the article covers the foundational history of evolutionary theory as detailed in B.1."
+      "rationaleAI": "Developed the theory of evolution by natural selection (B.1.b), with On the Origin of Species establishing the framework for understanding adaptation, fitness, and the role of natural selection in genetic change (C.3)."
     },
     {
       "articleTitle": "Heredity",
@@ -69,71 +49,62 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Heredity covers Mendel's laws of segregation and independent assortment (B.1.c), the molecular basis of inheritance, and allelic variation that directly feeds into genetic variation through mutation (C.1) and gene frequency changes (C.2)."
+      "rationaleAI": "Mendel's theory of heredity formalized genetic inheritance (B.1.c), with genetic variation through gene or chromosomal mutation (C.1) and changes in gene frequencies within populations (C.2)."
     },
     {
       "articleTitle": "Virus",
       "relevantPathsAI": [
-        "A.3",
-        "B.1.e"
+        "C.2"
       ],
-      "rationaleAI": "Viruses have debated evolutionary origins (plasmid or bacterial descent) connecting to early living systems (A.3) and are key agents of horizontal gene transfer relevant to molecular evolutionary studies (B.1.e)."
+      "rationaleAI": "Viruses as key agents of horizontal gene transfer contribute to changes in gene frequencies within populations through gene migration (C.2)."
     },
     {
       "articleTitle": "History of life",
       "relevantPathsAI": [
         "A.3",
         "A.4",
-        "B.2.a",
-        "C",
-        "D"
+        "D.6"
       ],
-      "rationaleAI": "History of life covers the RNA world and protocell emergence (A.3), the antiquity of life in the geological record (A.4), the fossil record of gradual change (B.2.a), and biological diversification including speciation and mass extinctions (C, D). It is explicitly distinguished from abiogenesis by focusing on biological diversification after the origin event."
+      "rationaleAI": "Spans from the RNA world and emergence of protocells (A.3) through evidence of biological activity in the geological record (A.4), with patterns and rates of species evolution including the Cambrian explosion (D.6)."
     },
     {
       "articleTitle": "Biochemistry",
       "relevantPathsAI": [
-        "A.2",
-        "A.2.b",
-        "A.2.c"
+        "A.2"
       ],
-      "rationaleAI": "Biochemistry covers the macromolecules (proteins, nucleic acids, carbohydrates, lipids) and small molecules constituting the chemical precursors of life (A.2), including their polymer structure (A.2.c), directly relevant to the prebiotic chemistry steps in the outline's section A.2."
+      "rationaleAI": "Characterizes biological macromolecules and small molecules relevant to the production of chemical precursors of life (A.2), including organic molecules, long-chain polymers, and the origin of the genetic code."
     },
     {
       "articleTitle": "History of Earth",
       "relevantPathsAI": [
-        "A",
-        "A.2.a",
-        "A.3",
         "A.4"
       ],
-      "rationaleAI": "Earth's history explicitly covers oceanic and atmospheric formation (A.2.a), earliest life evidence at ~3.5 Ga (A.3–A.4), and the Great Oxygenation Event, providing the geological context for the stages of life's emergence described in the outline's section A."
+      "rationaleAI": "The geological time scale provides evidence of biological activity in the geological record (A.4), integrating stratigraphic, radiometric, and fossil data."
     },
     {
       "articleTitle": "Reproduction",
       "relevantPathsAI": [
-        "A.3",
-        "C.1",
-        "D.2"
+        "D.2",
+        "C.3.d"
       ],
-      "rationaleAI": "Reproduction covers the evolutionary origin and paradox of sexual reproduction, meiosis, and gametogenesis, directly relevant to early living systems (A.3), genetic variation through mutation (C.1), and the criterion of reproductive isolation in speciation (D.2)."
+      "rationaleAI": "Reproductive isolation as a criterion for species distinctiveness (D.2), with sexual selection as a type of selection (C.3.d) and the evolutionary paradox of the cost of sex."
     },
     {
       "articleTitle": "Gene",
       "relevantPathsAI": [
         "A.2.d",
-        "B.1.e",
         "C.1",
-        "C.2"
+        "C.2",
+        "D.5"
       ],
-      "rationaleAI": "Gene covers the origin and function of the genetic code (A.2.d), molecular and genetic evolutionary studies (B.1.e), gene or chromosomal mutation generating genetic variation (C.1), and gene frequency changes through mutation, migration, and drift (C.2)."
+      "rationaleAI": "Genes as nucleotide sequences connect to the origin of the genetic code (A.2.d), genetic variation through mutation (C.1), changes in gene frequencies (C.2), and genetic differentiation during speciation (D.5)."
     },
     {
       "articleTitle": "Photosynthesis",
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Photosynthesis covers the evolution of oxygenic and anoxygenic photosynthesis, with cyanobacteria responsible for Earth's Great Oxidation Event, directly corresponding to outline path A.3.c ('Evolution of photosynthesis')."
+      "rationaleAI": "The evolution of photosynthesis (A.3.c) was a key transition in the earliest living systems, with cyanobacteria responsible for the Great Oxidation Event."
     },
     {
       "articleTitle": "Sex",
@@ -141,15 +112,14 @@
         "C.3.d",
         "D.2"
       ],
-      "rationaleAI": "Sex covers sexual selection as a type of natural selection (C.3.d), sex-determination systems and their evolutionary implications, and the evolutionary paradox of sexual reproduction with its consequences for speciation and reproductive isolation (D.2)."
+      "rationaleAI": "Sexual selection as a type of selection (C.3.d) and sex-determination systems relevant to reproductive isolation as a criterion for species (D.2)."
     },
     {
       "articleTitle": "Extinction",
       "relevantPathsAI": [
-        "D.6",
-        "D.6.b"
+        "D.6"
       ],
-      "rationaleAI": "Extinction represents an evolutionary endpoint whose patterns in the fossil record — mass extinctions punctuating the history of life — are directly relevant to patterns and rates of species evolution (D.6) and the rate of morphological change (D.6.b) in the outline."
+      "rationaleAI": "Mass and background extinctions are integral to patterns and rates of species evolution (D.6), shaping the topology of phylogenies."
     },
     {
       "articleTitle": "Genetics",
@@ -157,35 +127,34 @@
         "B.1.c",
         "B.1.d",
         "B.1.e",
-        "C.1",
-        "C.2"
+        "C",
+        "D.5"
       ],
-      "rationaleAI": "Genetics covers Mendelian heredity (B.1.c), the modern evolutionary synthesis (B.1.d), molecular genetic studies (B.1.e), gene mutation (C.1), and gene frequency changes within populations (C.2), spanning most of the evolutionary-theory and evolutionary-process outline paths."
+      "rationaleAI": "Mendel's theory of heredity (B.1.c), the synthetic theory integrating genetics and evolution (B.1.d), molecular and genetic studies (B.1.e), the process of evolution through genetic mechanisms (C), and genetic differentiation during speciation (D.5)."
     },
     {
       "articleTitle": "Bacteria",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.a",
         "A.3.b"
       ],
-      "rationaleAI": "Bacteria are among the earliest life forms (~3.5 Ga); their origins, metabolic diversity, and horizontal gene transfer are directly relevant to the earliest living systems (A.3) including enzymatic reaction chain evolution (A.3.a) and the origin of procaryotic cells (A.3.b)."
+      "rationaleAI": "Among the earliest life forms (~3.5 Ga), relevant to the origin of procaryotic cells (A.3.b) and horizontal gene transfer as an evolutionary mechanism."
     },
     {
       "articleTitle": "Molecular biology",
       "relevantPathsAI": [
         "B.1.e",
+        "B.2.d",
         "D.6.c"
       ],
-      "rationaleAI": "Molecular biology provides techniques underlying molecular and genetic evolutionary studies (B.1.e) and molecular evolution as a pattern of species evolution (D.6.c); the Watson-Crick model defines its foundational contribution to understanding heredity."
+      "rationaleAI": "Molecular structures underlying biology connect to molecular and genetic evolutionary studies (B.1.e), molecular clues to evolutionary history (B.2.d), and molecular evolution (D.6.c)."
     },
     {
       "articleTitle": "Taxonomy (biology)",
       "relevantPathsAI": [
-        "D",
-        "D.6.a"
+        "D.1",
+        "D.3"
       ],
-      "rationaleAI": "Biological taxonomy defines species and their phylogenetic relationships, directly relevant to the origin of species (D), the topology of phylogenies (D.6.a), and modes of speciation including cladistic classification reflecting evolutionary branching events."
+      "rationaleAI": "Taxonomy defines species distinctiveness (D.1) and properties of species (D.3), fundamental to understanding speciation and the classification of living things."
     },
     {
       "articleTitle": "Species",
@@ -194,86 +163,78 @@
         "D.1",
         "D.2",
         "D.3",
-        "D.5",
-        "D.6"
+        "D.4"
       ],
-      "rationaleAI": "Species directly maps to the entire outline section D: it covers the biological species concept and alternatives (D.1), reproductive isolation as the criterion (D.2), properties of species (D.3), genetic differentiation during speciation (D.5), and patterns and rates of species evolution (D.6)."
+      "rationaleAI": "Directly covers the origin of species and speciation (D), including species distinctiveness (D.1), reproductive isolation criterion (D.2), properties of species (D.3), and modes of speciation (D.4)."
     },
     {
       "articleTitle": "Louis Pasteur",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Pasteur's experimental disproof of spontaneous generation is foundational to the scientific framing of origin-of-life hypotheses (A.1), establishing that life does not arise de novo from non-living matter without biological parentage and setting the stage for modern abiogenesis research."
+      "rationaleAI": "Pasteur experimentally disproved spontaneous generation, directly relevant to hypotheses about the origin of life (A.1) and the scientific understanding of how life emerges."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
-        "A.2.b",
-        "A.2.c"
+        "A.2.b"
       ],
-      "rationaleAI": "Carbon's unique tetravalent bonding versatility is the chemical foundation for simple organic molecule production (A.2.b) and the formation of long-chain repeating polymers (A.2.c) in prebiotic chemistry, directly relevant to the steps in producing chemical precursors of life."
+      "rationaleAI": "Carbon's bonding versatility underlies all known life, relevant to the production of simple organic molecules (A.2.b) as chemical precursors of life."
     },
     {
       "articleTitle": "RNA",
       "relevantPathsAI": [
-        "A.2.c",
         "A.2.d",
         "A.3.a"
       ],
-      "rationaleAI": "RNA is central to the RNA world hypothesis: it represents the long-chain self-replicating molecule (A.2.c), the primordial genetic code (A.2.d), and catalytic ribozymes (A.3.a: evolution of enzymatic reaction chains), making it the pivotal molecule across three outline paths in section A."
+      "rationaleAI": "The RNA world hypothesis posits RNA as the primordial molecule, relevant to the origin of the genetic code (A.2.d) and evolution of enzymatic reaction chains (A.3.a)."
     },
     {
       "articleTitle": "Protein",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3.a"
+        "B.2.d"
       ],
-      "rationaleAI": "Proteins as enzyme catalysts are the product of prebiotic polymer formation (A.2.c) and constitute the enzymatic reaction chains defining early metabolic living systems (A.3.a), spanning two key outline paths in the emergence-of-life section."
+      "rationaleAI": "Proteins as polymers of amino acids relate to production of long-chain molecules (A.2.c), with proteomics providing molecular clues to evolutionary history (B.2.d)."
     },
     {
       "articleTitle": "DNA",
       "relevantPathsAI": [
-        "A.2.c",
         "A.2.d",
-        "B.1.e"
+        "B.1.e",
+        "B.2.d"
       ],
-      "rationaleAI": "DNA represents the long-chain information-storing polymer (A.2.c) encoding the genetic code (A.2.d), and its structure and sequencing are central to molecular and genetic evolutionary studies (B.1.e) including phylogenetic reconstruction."
+      "rationaleAI": "DNA encoding genetic information relates to origin of the genetic code (A.2.d), molecular and genetic studies advancing evolutionary theory (B.1.e), and molecular clues to evolutionary history (B.2.d)."
     },
     {
       "articleTitle": "Catalysis",
       "relevantPathsAI": [
         "A.3.a"
       ],
-      "rationaleAI": "Catalysis covers the origin-of-life prebiotic chemistry dimension where enzymes and ribozymes lower activation energy, directly relevant to outline path A.3.a ('Evolution of enzymatic reaction chains') as the earliest metabolic networks in emerging living systems."
+      "rationaleAI": "Enzyme catalysis connects to the evolution of enzymatic reaction chains in the earliest living systems (A.3.a), with biocatalysts playing a central role in metabolic evolution."
     },
     {
       "articleTitle": "Flower",
       "relevantPathsAI": [
-        "D.4"
+        "C.3.b"
       ],
-      "rationaleAI": "Flowers evolved 150–190 million years ago and their emergence enabled angiosperms to dominate terrestrial ecosystems through coevolution with pollinators, representing a major adaptive radiation (D.4: 'Modes of speciation, e.g., geographic speciation, adaptive radiation')."
+      "rationaleAI": "Flower color, shape, and scent are co-evolutionary adaptations for pollinators, relevant to aspects of natural selection including coloration and mimicry (C.3.b)."
     },
     {
       "articleTitle": "Domestication",
       "relevantPathsAI": [
-        "C.3.a",
-        "C.3.c"
+        "C.3"
       ],
-      "rationaleAI": "Domestication is directed selection producing heritable adaptation and fitness changes (C.3.a) in domesticated species over generations, with morphological and behavioral genetic outcomes (C.3.c: natural selection in the process of genetic change)."
+      "rationaleAI": "Domestication involves multi-generational selection reducing aggression genes and increasing desirable traits, illustrating natural selection processes applied by humans (C.3), though distinct from artificial selection."
     },
     {
       "articleTitle": "History of science",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
+        "B.1"
       ],
-      "rationaleAI": "History of science covers the development of evolutionary theory from Lamarck through Darwin to the modern evolutionary synthesis, spanning the history of evolutionary theory paths B.1.a (Lamarck's contribution), B.1.b (Darwin's natural selection), B.1.c (Mendel's heredity), and B.1.d (synthetic theory)."
+      "rationaleAI": "The history of evolutionary theory from Lamarck through Darwin, Mendel, and the modern synthesis (B.1) forms a key chapter in the broader history of science."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

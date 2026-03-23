@@ -5,35 +5,37 @@
       "articleTitle": "Solid",
       "relevantPathsAI": [
         "A",
-        "B.1",
+        "B",
+        "C",
+        "D",
+        "E",
         "F"
       ],
-      "rationaleAI": "Directly covers the solid state as crystalline (regular periodic lattices) versus amorphous (disordered, e.g. glass), material classes by bonding and electronic structure, and mechanical/thermal/electrical/optical properties — mapping to the outline's core distinction between crystalline (A, B) and glassy states (F)."
+      "rationaleAI": "Crystal structures (A), theory of crystalline solids (B), ionic crystals (C), metals (D), semiconductors (E), and amorphous glassy state (F)."
     },
     {
       "articleTitle": "Semiconductor",
       "relevantPathsAI": [
+        "E",
         "E.1",
         "E.2",
         "E.3",
-        "E.3.a",
-        "E.3.b",
-        "E.3.c",
-        "E.3.d",
         "E.4"
       ],
-      "rationaleAI": "Comprehensively covers Section E: electrical conductivity intermediate between conductors and insulators, doping mechanisms (impurity conduction matching E.3.a), energy bands and gaps (E.3.b), intrinsic and extrinsic types (E.3.c), and p-n junction applications including photoelectric and photovoltaic effects (E.4)."
+      "rationaleAI": "General properties (E.1), conduction mechanisms (E.2), electrical conduction (E.3), and semiconductor applications (E.4)."
     },
     {
       "articleTitle": "Metal",
       "relevantPathsAI": [
+        "D",
         "D.1",
         "D.2",
+        "D.3",
         "D.4",
         "D.8",
         "D.9"
       ],
-      "rationaleAI": "Covers metals as the central subject of outline section D: delocalized electrons driving conductivity (D.2), structural classification including alloys (D.1), groups of metals (D.4), and magnetic behaviour of metals (D.9); the article's metallurgy and materials-science scope spans structural and physical properties."
+      "rationaleAI": "Structural aspects (D.1), free electron model (D.2), electronic structure (D.3), band structure (D.4), superconductivity (D.8), and magnetic phenomena (D.9)."
     },
     {
       "articleTitle": "Glass",
@@ -42,7 +44,7 @@
         "F.1",
         "F.2"
       ],
-      "rationaleAI": "Directly addresses the outline's Section F on the glassy or amorphous state: rapid quenching producing non-crystalline structure (F.2), effects of temperature and composition on glass properties (F.1), and the distinction from crystalline solids."
+      "rationaleAI": "Glassy or amorphous state (F), temperature and composition effects (F.1), and glass structure (F.2)."
     },
     {
       "articleTitle": "Magnetism",
@@ -50,141 +52,119 @@
         "B.6",
         "D.9"
       ],
-      "rationaleAI": "Covers the principal types of magnetic behaviour exhibited by solids (B.6) — ferromagnetism, paramagnetism, diamagnetism, and antiferromagnetism — directly matching outline B.6 and D.9, with quantum-mechanical origins in electron spin."
+      "rationaleAI": "Magnetic behavior in solids (B.6) and magnetic phenomena in metals (D.9)."
     },
     {
       "articleTitle": "Chemical bond",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "C.1"
       ],
-      "rationaleAI": "Covers ionic, covalent, metallic, and hydrogen bonds — the bonding types used in outline B.1 to classify solids into ionic, covalent, metallic, molecular, and hydrogen-bonded categories."
+      "rationaleAI": "Classification of solids by bonding (B.1) and bonding in ionic crystals (C.1)."
     },
     {
       "articleTitle": "Electron",
       "relevantPathsAI": [
         "B.5",
-        "B.5.a",
-        "B.5.b",
         "D.2",
-        "D.3",
-        "E.1",
+        "D.6",
         "E.2"
       ],
-      "rationaleAI": "The electron's role in solids is central to multiple outline paths: delocalized electrons in metals explain conductivity (D.2, D.3), electron emission modes (thermionic, photoelectric) map to B.5.b, and carrier mobility in semiconductors and insulators maps directly to E.1–E.2."
+      "rationaleAI": "Electronic structure of solids (B.5), free electron model (D.2), electron emission (D.6), and mobility in semiconductors (E.2)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
-        "D.1",
-        "D.4",
-        "A.4",
-        "A.5"
+        "A.5",
+        "D.1"
       ],
-      "rationaleAI": "Metallurgy's physical branch covers crystallography, phase transformations, mechanical properties, and failure analysis of metals and alloys, mapping to D.1 (structural aspects of metals and alloys), D.4 (band structure by metal groups), A.4 (dislocations and defects), and A.5 (effects of temperature, pressure, and alloying on crystal strength)."
+      "rationaleAI": "Temperature, pressure, and alloying effects on crystals (A.5) and structural aspects of metals and alloys (D.1)."
     },
     {
       "articleTitle": "Steel",
       "relevantPathsAI": [
         "D.1",
-        "A.4",
-        "A.5",
-        "B.3"
+        "D.4"
       ],
-      "rationaleAI": "Steel is an iron-carbon alloy whose microstructural phases (martensite, austenite, cementite) and alloy-composition-dependent properties directly illustrate D.1 (structural aspects of metals and alloys) and A.4–A.5 (effects of alloying and imperfections on crystal properties); its elastic modulus and yield strength touch B.3."
+      "rationaleAI": "Steel alloy structure (D.1) and band structure of transition metals (D.4)."
     },
     {
       "articleTitle": "Quantum mechanics",
       "relevantPathsAI": [
-        "B.5",
-        "B.5.c",
         "B.5.d",
-        "E.3.b"
+        "D.7"
       ],
-      "rationaleAI": "Quantum mechanics provides the theoretical foundation for the electronic structure of solids (B.5), including the nearly free electron approximation (B.5.c) and energy-band theory (B.5.d), as well as band-gap descriptions of semiconductor conduction (E.3.b)."
+      "rationaleAI": "Energy-band theory (B.5.d) and many-body effects including Fermi liquid theory (D.7)."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "F"
+        "B.1"
       ],
-      "rationaleAI": "Carbon's allotropes — diamond and graphite (crystalline) versus amorphous carbon — provide concrete examples of different crystal structures (A.1) and solid-state bonding types (B.1, covalent vs. layered), while amorphous carbon relates to Section F; graphene and nanotubes are treated by solid-state physics."
+      "rationaleAI": "Carbon allotropes demonstrate different solid-state bonding classifications (B.1)."
     },
     {
       "articleTitle": "Mineral",
       "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.2",
         "C"
       ],
-      "rationaleAI": "Minerals are naturally occurring crystalline solids with defined crystal structures and chemical compositions; their classification by crystallography, identification by X-ray diffraction (A.2), and predominantly ionic bonding (C) align directly with outline sections A and C."
+      "rationaleAI": "Minerals as crystalline solids (A.1) and ionic crystal properties (C)."
     },
     {
       "articleTitle": "Thermodynamics",
       "relevantPathsAI": [
-        "B.4",
-        "D.8.a"
+        "B.4"
       ],
-      "rationaleAI": "Thermodynamics underpins the thermal and thermodynamic properties of solids (B.4 — specific heat, thermal conductivity) and the thermal properties of superconductors discussed in D.8.a (transition temperature, specific heat, thermal conductivity)."
+      "rationaleAI": "Thermal and thermodynamic properties of solids (B.4)."
     },
     {
       "articleTitle": "Temperature",
       "relevantPathsAI": [
         "A.5",
-        "B.4",
-        "D.8"
+        "B.4"
       ],
-      "rationaleAI": "Temperature governs phase transitions, crystal growth, and the strength and hardness of crystals (A.5) as well as thermal properties of solids (B.4) and superconducting transition temperatures (D.8); it is a central parameter across the entire section."
+      "rationaleAI": "Temperature effects on crystal strength (A.5) and thermal properties (B.4)."
     },
     {
       "articleTitle": "Copper",
       "relevantPathsAI": [
-        "D.1",
-        "D.2",
         "D.4"
       ],
-      "rationaleAI": "Copper is a paradigmatic noble transition metal with the highest electrical and thermal conductivity of common structural metals, directly illustrating the free-electron model of conductivity (D.2) and properties of noble-metal groups (D.4); its alloys (bronze, brass) illustrate D.1."
+      "rationaleAI": "Copper relates to band structure and properties of metal groups (D.4)."
     },
     {
       "articleTitle": "State of matter",
       "relevantPathsAI": [
-        "A",
-        "B",
+        "B.1",
         "F"
       ],
-      "rationaleAI": "Provides the broader context locating the solid state among matter's phases and explicitly covers crystalline versus amorphous distinctions, magnetic states (ferromagnetism, antiferromagnetism), and Bose-Einstein condensates — all referenced across the outline's A, B, and F sections."
+      "rationaleAI": "Classification of solids by bonding (B.1) and amorphous glassy state (F)."
     },
     {
       "articleTitle": "Inorganic chemistry",
       "relevantPathsAI": [
-        "C",
-        "B.1"
+        "C"
       ],
-      "rationaleAI": "Inorganic chemistry covers solid-state materials including coordination compounds and ionic compounds, directly relevant to Section C (ionic crystals) and the bonding-based classification in B.1; solid-state chemistry is explicitly listed as a branch of physical/inorganic chemistry."
+      "rationaleAI": "Ionic crystals including bonding, structure, and properties (C)."
     },
     {
       "articleTitle": "Physical chemistry",
       "relevantPathsAI": [
         "B",
-        "C.3",
-        "F.1"
+        "E"
       ],
-      "rationaleAI": "Physical chemistry's solid-state branch covers thermodynamic and electronic properties of crystalline and glassy materials, mapping to B (theory of the crystalline solid state) and properties of ionic crystals (C.3), and glass properties (F.1)."
+      "rationaleAI": "Theoretical framework for crystalline solids (B) and semiconductor physics (E)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
-        "B.7",
-        "B.7.a",
-        "B.7.b"
+        "A.2",
+        "B.7"
       ],
-      "rationaleAI": "Covers the interaction of electromagnetic radiation with matter broadly, directly supporting outline B.7 (interaction of light with solids): reflection, absorption, transmission (B.7.a) and generation of radiation from solids (B.7.b)."
+      "rationaleAI": "X-ray diffraction by crystals (A.2) and interaction of light with solids (B.7)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

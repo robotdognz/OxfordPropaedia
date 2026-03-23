@@ -13,17 +13,16 @@
         "D.6",
         "D.7"
       ],
-      "rationaleAI": "Star is the primary article for Section 132.D, covering stellar identification (D.1), observable characteristics including brightness and spectra (D.2), derived characteristics of mass, diameter, and temperature (D.3), stellar variability and supernovae (D.4), Hertzsprung-Russell statistics (D.5), stellar structure (D.6), and evolution through the main sequence (D.7). It also connects to galactic composition and star formation in 132.B."
+      "rationaleAI": "Identification (D.1), observable characteristics (D.2), derived characteristics (D.3), variability (D.4), statistics (D.5), structure (D.6), and evolution (D.7)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
         "B.3",
         "D.2",
-        "D.3",
-        "D.6"
+        "D.7"
       ],
-      "rationaleAI": "The Sun is the nearest star and thus the reference object for 132.B.3 (stars nearest the Sun) and for calibrating observable and derived stellar characteristics (132.D.2, D.3). Its internal structure covers stellar atmosphere and internal structure (132.D.6) and its life cycle exemplifies stellar evolution (132.D.7)."
+      "rationaleAI": "Nearest star for calibration (B.3), observable characteristics (D.2), and main-sequence evolution reference (D.7)."
     },
     {
       "articleTitle": "Galaxy",
@@ -33,9 +32,10 @@
         "A.2",
         "A.3",
         "A.4",
+        "A.5",
         "A.6"
       ],
-      "rationaleAI": "Galaxy is the primary article for Section 132.A, addressing statistical properties including classification and distance determination (A.1), physical properties (A.2), structural features (A.3 — a priority path), clusters of galaxies (A.4), and galaxy origin and evolution (A.6). It covers elliptical, spiral, and irregular morphological types and supermassive black holes at galactic centres."
+      "rationaleAI": "Classification (A.1), physical properties (A.2), structural features (A.3), clusters (A.4), radio and X-ray sources (A.5), and evolution (A.6)."
     },
     {
       "articleTitle": "Milky Way",
@@ -43,187 +43,163 @@
         "B",
         "B.1",
         "B.2",
-        "B.3",
         "B.5",
         "B.6",
         "B.7"
       ],
-      "rationaleAI": "Milky Way is the primary article for Section 132.B, covering distance determinations (B.1), stellar velocities and the Sun's motion (B.2), nearby stars (B.3), galactic composition including stellar populations and the interstellar medium (B.5), spatial structure and rotation (B.6), and galactic evolution (B.7). It directly maps to the full Milky Way outline."
+      "rationaleAI": "Distance determinations (B.1), stellar velocities (B.2), galactic composition (B.5), structure and dynamics (B.6), and evolution (B.7)."
     },
     {
       "articleTitle": "Black hole",
       "relevantPathsAI": [
         "A.5",
-        "A.3",
-        "D.4.b"
+        "D.7.a.iii"
       ],
-      "rationaleAI": "Black holes are key extragalactic objects (132.A.5, alongside radio and X-ray galaxies) and supermassive black holes anchor galactic structural features (132.A.3 — a priority path). Stellar-mass black holes form as endpoints of massive star evolution, connecting to explosive variables and stellar endpoints (132.D.4.b.ii)."
+      "rationaleAI": "Extragalactic X-ray sources and quasars (A.5) and massive stars evolving to black holes (D.7.a.iii)."
     },
     {
       "articleTitle": "Supernova",
       "relevantPathsAI": [
-        "D.4.b",
         "B.5.d",
-        "D.7.a",
+        "D.4.b.ii",
         "D.7.b"
       ],
-      "rationaleAI": "Supernova directly addresses explosive stellar variables (132.D.4.b.ii: novae, supernovae, and novalike variables), supernova remnants in the galactic interstellar medium (132.B.5.d), the final evolutionary stages of massive stars (132.D.7.a.iii), and element formation through nucleosynthesis (132.D.7.b)."
+      "rationaleAI": "Supernova remnants (B.5.d), explosive variables (D.4.b.ii), and stellar element formation (D.7.b)."
     },
     {
       "articleTitle": "Physical cosmology",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.6",
-        "B.7",
-        "A.4"
+        "A.6"
       ],
-      "rationaleAI": "Physical cosmology provides the theoretical framework for galactic distance determination methods (A.1.b), galaxy origin and evolution (A.6), and the formation of large-scale structure including clusters (A.4). CMB, dark matter, and dark energy discussed in cosmology contextualise missing mass problems relevant to 132.A."
+      "rationaleAI": "Galaxy origin and evolution (A.6)."
     },
     {
       "articleTitle": "Universe",
       "relevantPathsAI": [
-        "A.4",
-        "A.1.c",
-        "A.6"
+        "A",
+        "A.4"
       ],
-      "rationaleAI": "Universe covers galaxy clustering and the hierarchical structure of groups, clusters, and filaments (132.A.4), the distribution of galaxies (132.A.1.c), and galaxy formation theory (132.A.6). Its treatment of the ΛCDM model and large-scale structure directly informs galactic statistics."
+      "rationaleAI": "Galaxies as universe building blocks (A) organized in clusters (A.4)."
     },
     {
       "articleTitle": "Astronomy",
       "relevantPathsAI": [
-        "A.1.b",
-        "D.1.d",
-        "D.2.a"
+        "D.1",
+        "D.2"
       ],
-      "rationaleAI": "Astronomy as the observational science provides the methods for galactic distance determination (A.1.b), star maps and catalogues (D.1.d), and stellar positions and motions (D.2.a). It covers the full EM spectrum observational approaches used to study galaxies and stars in 132.A and 132.D."
+      "rationaleAI": "Celestial coordinates (D.1) and observational methods for stellar characteristics (D.2)."
     },
     {
       "articleTitle": "Chemical element",
       "relevantPathsAI": [
-        "D.7.b",
-        "B.7.b"
+        "D.7.b"
       ],
-      "rationaleAI": "Chemical elements' formation in stars through nucleosynthesis (132.D.7.b) and the problem of heavy element distribution in galactic chemical evolution (132.B.7.b) are directly covered. The article addresses stellar nucleosynthesis from hydrogen through heavier elements, central to both stellar and galactic evolution."
+      "rationaleAI": "Formation of elements in stars through nucleosynthesis (D.7.b)."
     },
     {
       "articleTitle": "Telescope",
       "relevantPathsAI": [
-        "A.1.b",
-        "D.1.d",
-        "A.5"
+        "A.1.b"
       ],
-      "rationaleAI": "Telescopes spanning the full EM spectrum — radio, infrared, ultraviolet, X-ray, and gamma-ray — are the primary observational tools for determining galactic distances (A.1.b), mapping stellar catalogues (D.1.d), and detecting extragalactic radio and X-ray sources (A.5)."
+      "rationaleAI": "Observational methods for galaxy distances (A.1.b)."
     },
     {
       "articleTitle": "Electromagnetism",
       "relevantPathsAI": [
-        "B.5.h",
-        "B.6.c",
-        "A.5"
+        "A.5",
+        "B.6.c"
       ],
-      "rationaleAI": "Electromagnetism governs interstellar magnetic fields (132.B.5.h), the galactic magnetic field and its effects on cosmic rays, radio waves, and light (132.B.6.c), and the emission from extragalactic radio and X-ray sources (132.A.5). Maxwell's equations underpin the entire EM-based observational approach to galactic and stellar astrophysics."
+      "rationaleAI": "Radio and X-ray sources (A.5) and galactic magnetic field (B.6.c)."
     },
     {
       "articleTitle": "Subatomic particle",
       "relevantPathsAI": [
-        "B.5.g",
-        "D.6.b"
+        "B.5.g"
       ],
-      "rationaleAI": "Subatomic particles cover primary cosmic rays (132.B.5.g — protons, nuclei, and electrons at relativistic energies) that permeate the galactic interstellar medium, and the elementary particles whose interactions govern stellar interior structure and energy generation (132.D.6.b)."
+      "rationaleAI": "Primary cosmic rays in galactic composition (B.5.g)."
     },
     {
       "articleTitle": "Mass",
       "relevantPathsAI": [
-        "A.2",
         "D.3.b"
       ],
-      "rationaleAI": "Mass is a primary physical property used to characterise galaxies (132.A.2) and is a key derived stellar characteristic (132.D.3.b: stellar masses). The article addresses how mass is operationally defined and measured, directly applicable to mass determinations from orbital dynamics in both galactic and stellar contexts."
+      "rationaleAI": "Stellar masses as derived characteristics (D.3.b)."
     },
     {
       "articleTitle": "Natural satellite",
       "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.2",
-        "C.3"
+        "A.3"
       ],
-      "rationaleAI": "While natural satellites are primarily solar system objects, the article covers formation via accretion and capture, and tidal locking — all relevant to the priority paths on star clusters and stellar associations (132.C), as the dynamics of star clusters share conceptual parallels with multi-body gravitational systems. This is a moderate-overlap inclusion for the priority uncovered C paths."
+      "rationaleAI": "Satellite galaxies in galactic structure (A.3)."
     },
     {
       "articleTitle": "Gravity",
       "relevantPathsAI": [
-        "B.6",
         "B.7.c",
-        "C.4",
-        "D.6.b"
+        "D.7.a.i"
       ],
-      "rationaleAI": "Gravity governs galactic structure and rotation (132.B.6), star formation through gravitational condensation of dust and gas clouds (132.B.7.c — formation of spiral structure), the formation and dispersion of star clusters (132.C.4 — a priority path), and stellar internal structure where gravity balances thermal pressure (132.D.6.b)."
+      "rationaleAI": "Star formation via gravitational condensation (B.7.c) and protostar gravitational contraction (D.7.a.i)."
     },
     {
       "articleTitle": "Motion",
       "relevantPathsAI": [
         "B.2",
-        "D.2.a"
+        "B.6.d"
       ],
-      "rationaleAI": "Motion directly addresses stellar velocities relative to the Sun and galactic rotation (132.B.2), as well as stellar positions and motions as observable stellar characteristics (132.D.2.a). The article covers translational, rotational, and oscillatory motion applicable to stellar kinematics and galactic dynamics."
+      "rationaleAI": "Stellar velocities (B.2) and galactic differential rotation (B.6.d)."
     },
     {
       "articleTitle": "State of matter",
       "relevantPathsAI": [
-        "B.5.b",
-        "D.6.a"
+        "B.5.f"
       ],
-      "rationaleAI": "State of matter covers plasma — the ionised gas state of stellar interiors and of emission nebulae/H II regions (132.B.5.b) — and the extreme states of stellar atmospheres (132.D.6.a). Bose-Einstein condensates and degenerate matter also arise in white dwarf and neutron star interiors that are products of stellar evolution."
+      "rationaleAI": "Interstellar medium in various matter states (B.5.f)."
     },
     {
       "articleTitle": "Matter",
       "relevantPathsAI": [
-        "A.1",
-        "B.5.f"
+        "A.2",
+        "B.5"
       ],
-      "rationaleAI": "Matter covers dark matter (the missing mass problem in galaxy and cluster dynamics, 132.A.1.f) and baryonic matter in the form of the interstellar medium — neutral hydrogen, interstellar molecules, and dust (132.B.5.f). The article's treatment of exotic matter forms connects to galactic mass accounting."
+      "rationaleAI": "Galactic mass (A.2) and galactic composition including interstellar matter (B.5)."
     },
     {
       "articleTitle": "Planet",
       "relevantPathsAI": [
-        "D.7.a",
-        "B.7.c"
+        "A.3"
       ],
-      "rationaleAI": "Planets form from the debris of star formation and thus relate to stellar evolutionary endpoints (132.D.7.a) and star formation from gravitational condensation (132.B.7.c). Exoplanet discovery via stellar observation also connects to the observable characteristics of stars in 132.D.2."
+      "rationaleAI": "Planetary systems in galactic structure (A.3)."
     },
     {
       "articleTitle": "Albert Einstein",
       "relevantPathsAI": [
-        "D.6.b",
-        "B.6.d"
+        "A.1.b"
       ],
-      "rationaleAI": "Einstein's general relativity underlies the physics of stellar structure (132.D.6.b — stellar interiors require GR for neutron stars and black holes) and the differential rotation of the galaxy (132.B.6.d requires relativistic treatments at galactic scales). His photoelectric effect work also underpins spectroscopic stellar analysis."
+      "rationaleAI": "General relativity informs galaxy distance determination (A.1.b)."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
-        "B.5.f",
+        "B.7.b",
         "D.7.b"
       ],
-      "rationaleAI": "Carbon is a key interstellar molecule (132.B.5.f.iii — interstellar molecules and radicals) and is produced in stars through nucleosynthesis via the triple-alpha process (132.D.7.b — formation of chemical elements in stars). Carbon monoxide is the primary tracer molecule for mapping interstellar cloud structure."
+      "rationaleAI": "Carbon from stellar nucleosynthesis and chemical evolution (B.7.b, D.7.b)."
     },
     {
       "articleTitle": "Comet",
       "relevantPathsAI": [
-        "C.2",
-        "C.5"
+        "B.5.f"
       ],
-      "rationaleAI": "Comets are primitive Solar System bodies whose nuclei are composed of the same ices and carbonaceous material as star-forming clouds; they also exist in external galaxies as minor bodies. They provide a moderate-overlap inclusion for the priority uncovered cluster paths (C.2, C.5) given the lack of dedicated star cluster articles."
+      "rationaleAI": "Comets in the interstellar and interplanetary medium (B.5.f)."
     },
     {
       "articleTitle": "Asteroid",
       "relevantPathsAI": [
-        "C.2",
-        "C.4"
+        "B.5.f"
       ],
-      "rationaleAI": "Asteroids as remnant planetesimals share compositional and dynamic origins with star cluster members (open clusters also contain young, loosely bound members). This represents a moderate-overlap inclusion for the priority uncovered C.2 and C.4 paths, as the formation and dispersion dynamics of minor body populations parallels cluster dispersal."
+      "rationaleAI": "Asteroids as minor bodies in the galactic system (B.5.f)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

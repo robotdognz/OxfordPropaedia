@@ -9,160 +9,162 @@
         "C",
         "E"
       ],
-      "rationaleAI": "Weather is the foundational topic of Section 223, covering temperature, humidity, cloud cover, and precipitation (223.A), atmospheric circulation driving storms (223.B), limits of forecast accuracy (223.C), and the distinction between weather and climate (223.E)."
+      "rationaleAI": "Covers short-term atmospheric state including temperature, humidity, cloud cover, and precipitation (A), atmospheric circulation cells, jet streams, and cyclonic systems (B), weather as a chaotic system limiting forecast accuracy (C), and climate as the long-term aggregate of weather driven by solar heating gradients (E)."
     },
     {
       "articleTitle": "Climate",
       "relevantPathsAI": [
         "E",
+        "E.1",
         "E.2",
         "E.3",
         "E.6"
       ],
-      "rationaleAI": "Climate directly covers the aggregate of weather conditions averaged over 30 years (223.E), Köppen and other classification systems (223.E.3), paleoclimatology (223.E.6), and climate variability and change, mapping precisely to the climate sub-sections of 223.E."
+      "rationaleAI": "Directly addresses climate as the aggregate of weather (E), including classification systems like Koppen (E.3), paleoclimatology using proxy records relevant to climatic evidence (E.6), climate models (E.1), and climate variability and change (E.2, E.6)."
     },
     {
       "articleTitle": "Cloud",
       "relevantPathsAI": [
+        "A.3",
         "A.3.a",
         "A.3.b",
         "A.3.c",
-        "A.3.d",
-        "A.3.e",
-        "A.3"
+        "E.1.a"
       ],
-      "rationaleAI": "Cloud covers formation and growth of clouds (223.A.3.a), description and classification by altitude and morphology (223.A.3.b), their role in precipitation and weather (223.A.3.c), and connects to fog (223.A.3.d), addressing all sub-paths under clouds and fogs."
+      "rationaleAI": "Formation and growth of clouds from atmospheric cooling to dew point (A.3.a), classification by altitude and morphology into tropospheric genera (A.3.b), clouds and weather interactions (A.3.c), and modulation of Earth's energy balance through radiation reflection and trapping relevant to solar radiation factors (E.1.a)."
     },
     {
       "articleTitle": "Rain",
       "relevantPathsAI": [
+        "A.4",
         "A.4.a",
         "A.4.b",
         "A.4.c",
-        "A.4.d",
-        "A.1"
+        "A.4.d"
       ],
-      "rationaleAI": "Rain covers the origin of precipitation in clouds and mechanisms of release (223.A.4.a), types of precipitation (223.A.4.b), global distribution of rainfall (223.A.4.c), and effects of precipitation (223.A.4.d), along with condensation nuclei and atmospheric humidity relevant to 223.A.1."
+      "rationaleAI": "Liquid precipitation formed through condensation and coalescence (A.4.a), classified as a precipitation type (A.4.b), with global distribution shaped by monsoon circulation and ITCZ (A.4.c), and effects on river systems, groundwater recharge, and agriculture (A.4.d)."
     },
     {
       "articleTitle": "Tropical cyclone",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.1"
       ],
-      "rationaleAI": "Tropical cyclones — hurricanes and typhoons — are the primary subject of outline path 223.B.4 (tropical cyclones: hurricanes and typhoons), covering formation over warm ocean surfaces, structure, storm surges, and climate change intensification."
+      "rationaleAI": "Tropical cyclones are hurricanes and typhoons sustained by warm ocean heat energy (B.4), representing a major cyclonic system with distinct development and distribution patterns (B.1)."
     },
     {
       "articleTitle": "Storm",
       "relevantPathsAI": [
         "B",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
+        "B.3"
       ],
-      "rationaleAI": "Storm broadly covers all disturbed atmospheric states including thunderstorms, hurricanes, blizzards, and tornadoes, mapping to the full winds and storms section (223.B) including cyclones/anticyclones (223.B.1), thunderstorms (223.B.2), tornadoes and severe phenomena (223.B.3), and tropical cyclones (223.B.4)."
+      "rationaleAI": "Storms encompass thunderstorms, hurricanes, blizzards, and tornadoes as disturbed atmospheric states (B), involving cyclone and anticyclone development (B.1) and severe phenomena associated with organized storms (B.3)."
     },
     {
       "articleTitle": "Lightning",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Lightning is the central topic of thunderstorms — lightning and thunderstorms (223.B.2)—covering electrostatic discharge in convective cloud systems, charge separation mechanisms, and its role in the global electrical circuit and atmospheric chemistry."
+      "rationaleAI": "Electrostatic atmospheric discharge between charge-separated regions in thunderstorm clouds (B.2), driving atmospheric chemistry including nitrogen fixation and ozone production, and serving as an Essential Climate Variable."
     },
     {
       "articleTitle": "Snow",
       "relevantPathsAI": [
         "A.4.b",
-        "A.3.a"
+        "E.1.a"
       ],
-      "rationaleAI": "Snow is a type of solid precipitation (223.A.4.b — types of precipitation: snow) whose nucleation around atmospheric particles and growth within clouds connects to cloud formation processes (223.A.3.a)."
+      "rationaleAI": "Snow is a type of solid precipitation formed from ice crystals nucleated in clouds (A.4.b), serving as a critical freshwater reservoir and connecting to climate through albedo effects from snow cover (E.1.a.iii)."
     },
     {
       "articleTitle": "Climate change",
       "relevantPathsAI": [
         "E.2.c",
-        "E.6"
+        "E.6",
+        "E.1.a.ii"
       ],
-      "rationaleAI": "Climate change covers effects of human activities on global climate through greenhouse warming induced by CO₂ buildup (223.E.2.c), redistribution of precipitation, and intensified storms, as well as climatic change evidence including glaciations and proxy records (223.E.6)."
+      "rationaleAI": "Anthropogenic greenhouse warming from fossil fuel combustion and CO2 buildup (E.2.c), representing major climatic change with evidence from glacier retreat and sea level rise (E.6), driven by the greenhouse effect trapping infrared radiation (E.1.a.ii)."
     },
     {
       "articleTitle": "Wind",
       "relevantPathsAI": [
         "B",
-        "B.1"
+        "E.1.c"
       ],
-      "rationaleAI": "Wind directly addresses the winds component of 223.B (winds and storms), covering trade winds, westerlies, polar easterlies, sea breezes, and the development of cyclones and anticyclones through differential solar heating and the Coriolis effect (223.B.1)."
+      "rationaleAI": "Wind driven by differential solar heating and Coriolis effect encompasses trade winds, westerlies, and polar easterlies relevant to winds and storms (B), and atmospheric pressure gradients relevant to climate generation factors (E.1.c)."
     },
     {
       "articleTitle": "Earth",
       "relevantPathsAI": [
-        "E.1.a",
-        "E.1"
+        "E.1",
+        "E.2.c"
       ],
-      "rationaleAI": "Earth covers solar radiation, axial tilt producing seasons, the greenhouse effect, and the role of oceans, all of which are factors generating climate (223.E.1) including solar radiation as a primary climate driver (223.E.1.a)."
+      "rationaleAI": "Covers atmosphere with greenhouse effect and weather systems (E.1), axial tilt producing seasons relevant to seasonal climatic changes (E.2.a), and environmental impact of human activity including climate change (E.2.c)."
     },
     {
       "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
         "A.1",
-        "A.2.a",
-        "E.1"
+        "E.1.a",
+        "E.2.c"
       ],
-      "rationaleAI": "Atmosphere of Earth covers atmospheric humidity, condensation processes, greenhouse effect, and atmospheric evolution, mapping to moisture in the atmosphere (223.A.1), convection leading to condensation (223.A.2.a), and factors generating climate including absorption by atmospheric gases (223.E.1)."
+      "rationaleAI": "Atmospheric composition including water vapor directly relevant to moisture in the atmosphere (A.1), greenhouse effect and ozone depletion relevant to solar radiation absorption (E.1.a.ii), and human impacts including acid deposition and climate change (E.2.c)."
     },
     {
       "articleTitle": "Season",
       "relevantPathsAI": [
-        "E.2.a",
-        "E.1.a"
+        "E.2.a"
       ],
-      "rationaleAI": "Season covers the annual cycle driven by Earth's axial tilt and orbital parallelism around the Sun, directly addressing seasonal changes from north-south migration of cyclonic activity (223.E.2.a) and solar radiation variability as a climate factor (223.E.1.a)."
+      "rationaleAI": "Seasonal variations driven by Earth's axial tilt producing systematic variation in solar flux and temperature (E.2.a), directly relevant to seasonal changes resulting from north-south migration of cyclonic activity belts."
     },
     {
       "articleTitle": "Flood",
       "relevantPathsAI": [
-        "A.4.d"
+        "A.4.d",
+        "B"
       ],
-      "rationaleAI": "Floods are a primary consequence of precipitation effects (223.A.4.d), with the article covering how climate change's intensified water cycle and sea level rise increase flood frequency and severity — directly relevant to effects of precipitation."
+      "rationaleAI": "Floods result from extreme precipitation events (A.4.d), driven by storms including coastal storm surge and intensified water cycle from climate change (B)."
     },
     {
       "articleTitle": "Natural disaster",
       "relevantPathsAI": [
+        "B",
         "B.3",
-        "B.4",
-        "A.4.d"
+        "B.4"
       ],
-      "rationaleAI": "Natural disasters span meteorological hazards including tornadoes, hurricanes, and blizzards (223.B.3, 223.B.4), as well as floods from precipitation effects (223.A.4.d), providing broad coverage of severe weather phenomena in Section 223."
+      "rationaleAI": "Meteorological and hydrological natural hazards including floods, hurricanes, tornadoes, and blizzards (B), encompassing severe storm phenomena (B.3) and tropical cyclones (B.4)."
     },
     {
       "articleTitle": "Carbon dioxide",
       "relevantPathsAI": [
+        "E.1.a.ii",
         "E.2.c"
       ],
-      "rationaleAI": "CO₂ as the primary driver of greenhouse warming from fossil fuel combustion is the exact example cited in the outline for effects of human activities on global climate (223.E.2.c — greenhouse warming induced by high concentrations of carbon dioxide)."
+      "rationaleAI": "CO2 as a greenhouse gas absorbing infrared radiation, directly relevant to the trapping of solar radiation (E.1.a.ii), with rising concentrations from fossil fuel combustion as the principal driver of greenhouse warming (E.2.c)."
     },
     {
       "articleTitle": "Desert",
       "relevantPathsAI": [
         "E.3",
-        "E.2.b"
+        "E.4"
       ],
-      "rationaleAI": "Deserts are defined by climate (hyperaridity, precipitation thresholds) and are climatically classified into hot, cold, coastal, and polar types (223.E.3 — climatic types and world distribution), with formation driven by local terrain and atmospheric conditions (223.E.2.b)."
+      "rationaleAI": "Deserts represent a distinct climatic type characterized by scarce precipitation, relevant to climate classification and distribution (E.3), with influences on terrestrial life through drought adaptation (E.4)."
     },
     {
       "articleTitle": "Fossil fuel",
       "relevantPathsAI": [
         "E.2.c"
       ],
-      "rationaleAI": "Fossil fuel combustion is the principal human activity inducing greenhouse warming by generating high concentrations of CO₂ and other greenhouse gases — the specific mechanism named in outline path 223.E.2.c for effects of human activities on global climate."
+      "rationaleAI": "Fossil fuel combustion releases greenhouse gas emissions driving climate change (E.2.c), with CO2 buildup directly causing greenhouse warming of the atmosphere."
     },
     {
       "articleTitle": "Amazon rainforest",
       "relevantPathsAI": [
-        "E.1.e",
-        "E.2.b"
+        "E.3",
+        "E.4",
+        "E.6"
       ],
-      "rationaleAI": "The Amazon rainforest plays a critical role in the South American moisture cycle and precipitation recycling (223.E.1.e — the moisture cycle as a climate factor), and its large-scale deforestation modifies regional climate (223.E.2.b — local effects on climate by surface conditions)."
+      "rationaleAI": "The Amazon represents a tropical moist climate type (E.3) with disproportionate influence on regional precipitation through rainfall feedback (E.4), and deforestation-related climate change impacts (E.6)."
     },
     {
       "articleTitle": "Sahara",
@@ -170,25 +172,25 @@
         "E.3",
         "E.6"
       ],
-      "rationaleAI": "The Sahara exemplifies a hyperarid desert climate type (223.E.3) and its paleoclimatology — 20,000-year savanna-desert cycles driven by Earth's axial precession — is a prime example of climatic change evidence and variation (223.E.6)."
+      "rationaleAI": "Earth's largest hot desert exemplifies a hyperarid climatic type (E.3), with 20,000-year savanna-desert cycles driven by axial precession representing major climatic change evidence (E.6)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
         "E.1.a",
-        "E.1.a"
+        "E.1.a.i"
       ],
-      "rationaleAI": "The Sun's electromagnetic output, solar cycles, and the solar constant are directly relevant to variability of incident solar radiation and the solar constant (223.E.1.a.i) as a primary factor generating climate."
+      "rationaleAI": "The Sun's electromagnetic output drives solar radiation as the primary climate factor (E.1.a), with variability in incident radiation and the solar constant (E.1.a.i) directly governing Earth's energy input."
     },
     {
       "articleTitle": "Forest",
       "relevantPathsAI": [
-        "E.2.b",
-        "E.1.e"
+        "E.4",
+        "E.2.b"
       ],
-      "rationaleAI": "Forests play a major role in precipitation cycles through transpiration and moisture recycling (223.E.1.e — the moisture cycle), and their surface properties modify local climate (223.E.2.b — modification of climate by local terrain and surface conditions)."
+      "rationaleAI": "Forests are major terrestrial ecosystems influenced by and influencing climate (E.4), with forest cover modifying local climate through surface conditions (E.2.b) and precipitation cycle feedback."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

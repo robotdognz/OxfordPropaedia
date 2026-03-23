@@ -1,8 +1,10 @@
 import { h } from 'preact';
 import { useState, useEffect, useRef, useCallback } from 'preact/hooks';
+import type { SearchOutlineEntry } from '../../utils/outlineSearch';
 
 export interface SearchDialogProps {
   baseUrl: string;
+  outlineEntriesUrl?: string;
 }
 
 const OPEN_SEARCH_EVENT = 'propaedia:open-search';
@@ -19,7 +21,10 @@ interface SearchResult {
   title: string;
   pageTitle?: string;
   pageType?: string;
+  pageContext?: string;
   excerpt: string;
+  score?: number;
+  pagefindScore?: number;
 }
 
 interface SearchResultGroup {
@@ -36,10 +41,14 @@ interface PagefindSubResult {
 
 interface PagefindResultData {
   url: string;
-  meta?: { title?: string; page_type?: string };
+  meta?: { title?: string; page_type?: string; page_context?: string };
   excerpt: string;
   raw_content?: string;
   sub_results?: PagefindSubResult[];
+}
+
+interface PagefindSearchItem extends PagefindResultData {
+  pagefindScore?: number;
 }
 
 function stripHtml(html: string) {
@@ -110,21 +119,194 @@ function matchesQuery(text: string, tokens: string[]) {
   return new RegExp(proximityPattern, 'i').test(normalized);
 }
 
-function buildHighlightedUrl(rawUrl: string, query: string) {
+function normalizeSearchUrl(rawUrl: string, baseUrl: string) {
+  const normalizedBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+  if (/^(https?:)?\/\//.test(rawUrl)) return rawUrl;
+  if (rawUrl.startsWith(normalizedBase)) return rawUrl;
+  if (rawUrl.startsWith('/')) return `${normalizedBase}${rawUrl}`;
+  return `${normalizedBase}/${rawUrl}`;
+}
+
+function buildHighlightedUrl(rawUrl: string, query: string, baseUrl: string) {
   const trimmed = query.trim();
-  if (!trimmed) return rawUrl;
+  const normalizedUrl = normalizeSearchUrl(rawUrl, baseUrl);
+  if (!trimmed) return normalizedUrl;
 
   try {
-    const isAbsolute = /^(https?:)?\/\//.test(rawUrl);
-    const url = new URL(isAbsolute ? rawUrl : `https://example.com${rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`}`);
+    const isAbsolute = /^(https?:)?\/\//.test(normalizedUrl);
+    const url = new URL(isAbsolute ? normalizedUrl : `https://example.com${normalizedUrl.startsWith('/') ? normalizedUrl : `/${normalizedUrl}`}`);
     url.searchParams.append(PAGEFIND_HIGHLIGHT_PARAM, trimmed);
     return isAbsolute ? url.toString() : url.toString().replace(/^https:\/\/example\.com/, '');
   } catch {
-    return rawUrl;
+    return normalizedUrl;
   }
 }
 
-function flattenResults(items: PagefindResultData[], query: string) {
+function scoreResult(result: SearchResult, query: string) {
+  const normalizedQuery = normalizeText(query);
+  if (!normalizedQuery) return 0;
+
+  const titleText = normalizeText(result.title);
+  const pageTitleText = normalizeText(result.pageTitle ?? '');
+  const excerptText = normalizeText(stripHtml(result.excerpt));
+  const combinedTitle = [titleText, pageTitleText].filter(Boolean).join(' ');
+  const tokens = getQueryTokens(query);
+
+  let score = 0;
+
+  if (titleText === normalizedQuery || combinedTitle === normalizedQuery) {
+    score += 1000;
+  } else if (titleText.startsWith(normalizedQuery) || combinedTitle.startsWith(normalizedQuery)) {
+    score += 450;
+  } else if (titleText.includes(normalizedQuery) || combinedTitle.includes(normalizedQuery)) {
+    score += 250;
+  }
+
+  tokens.forEach((token) => {
+    if (titleText.includes(token)) {
+      score += 80;
+    } else if (combinedTitle.includes(token)) {
+      score += 50;
+    } else if (excerptText.includes(token)) {
+      score += 10;
+    }
+  });
+
+  if (resultGroupId(result.pageType) === 'outline') {
+    score += 100;
+  }
+
+  score += Math.max(0, 20 - pageTypeRank(result.pageType));
+
+  return score;
+}
+
+function scoreOutlineEntry(entry: SearchOutlineEntry, query: string) {
+  const normalizedQuery = normalizeText(query);
+  const compactQuery = query.toLowerCase().replace(/\s+/g, '').replace(/\//g, '-').trim();
+  if (!normalizedQuery && !compactQuery) return 0;
+
+  const searchableFields = [
+    entry.title,
+    entry.pageContext ?? '',
+    ...entry.keywords,
+  ].filter(Boolean);
+
+  const hasDirectFieldMatch = searchableFields.some((field) => {
+    const normalizedField = normalizeText(field);
+    const compactField = field.toLowerCase().replace(/\s+/g, '').replace(/\//g, '-').trim();
+
+    return (
+      (compactQuery && compactField === compactQuery) ||
+      (normalizedQuery && (
+        normalizedField === normalizedQuery ||
+        normalizedField.startsWith(normalizedQuery) ||
+        normalizedField.includes(normalizedQuery)
+      ))
+    );
+  });
+
+  if (!hasDirectFieldMatch) {
+    return 0;
+  }
+
+  let score = scoreResult(entry, query) + 150;
+
+  entry.keywords.forEach((keyword) => {
+    const normalizedKeyword = normalizeText(keyword);
+    const compactKeyword = keyword.toLowerCase().replace(/\s+/g, '').replace(/\//g, '-').trim();
+
+    if (compactQuery && compactKeyword === compactQuery) {
+      score = Math.max(score, 2500);
+      return;
+    }
+
+    if (normalizedKeyword === normalizedQuery) {
+      score = Math.max(score, 2200);
+      return;
+    }
+
+    if (normalizedQuery && normalizedKeyword.startsWith(normalizedQuery)) {
+      score = Math.max(score, 1200);
+      return;
+    }
+
+    if (normalizedQuery && normalizedKeyword.includes(normalizedQuery)) {
+      score = Math.max(score, 700);
+    }
+  });
+
+  return score;
+}
+
+function compareSearchResults(left: SearchResult, right: SearchResult) {
+  const scoreDifference = (right.score ?? 0) - (left.score ?? 0);
+  if (scoreDifference !== 0) return scoreDifference;
+
+  const pagefindScoreDifference = (right.pagefindScore ?? 0) - (left.pagefindScore ?? 0);
+  if (pagefindScoreDifference !== 0) return pagefindScoreDifference;
+
+  const leftGroup = resultGroupId(left.pageType);
+  const rightGroup = resultGroupId(right.pageType);
+  if (leftGroup !== rightGroup) {
+    return leftGroup === 'outline' ? -1 : 1;
+  }
+
+  const rankDifference = pageTypeRank(left.pageType) - pageTypeRank(right.pageType);
+  if (rankDifference !== 0) return rankDifference;
+
+  return left.title.localeCompare(right.title, undefined, { numeric: true, sensitivity: 'base' });
+}
+
+function canonicalResultKey(url: string, baseUrl: string) {
+  try {
+    const parsed = new URL(url, 'https://example.com');
+    parsed.searchParams.delete(PAGEFIND_HIGHLIGHT_PARAM);
+    let pathname = parsed.pathname.replace(/\/index\.html$/i, '');
+    const normalizedBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+    if (pathname.startsWith(normalizedBase)) {
+      pathname = pathname.slice(normalizedBase.length) || '/';
+    }
+    if (pathname.length > 1) {
+      pathname = pathname.replace(/\/+$/, '');
+    }
+    return `${pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return url;
+  }
+}
+
+function findDirectOutlineMatches(query: string, outlineEntries: SearchOutlineEntry[], baseUrl: string) {
+  if (!query.trim()) return [];
+
+  return outlineEntries
+    .map((entry) => ({
+      ...entry,
+      url: buildHighlightedUrl(entry.url, query, baseUrl),
+      score: scoreOutlineEntry(entry, query),
+    }))
+    .filter((entry) => (entry.score ?? 0) >= 250)
+    .sort((left, right) => {
+      return compareSearchResults(left, right);
+    })
+    .slice(0, 12);
+}
+
+function mergeResults(primary: SearchResult[], secondary: SearchResult[], baseUrl: string) {
+  const merged = new Map<string, SearchResult>();
+
+  [...primary, ...secondary].forEach((result) => {
+    const key = canonicalResultKey(result.url, baseUrl);
+    const existing = merged.get(key);
+    if (!existing || compareSearchResults(result, existing) < 0) {
+      merged.set(key, result);
+    }
+  });
+
+  return [...merged.values()].sort(compareSearchResults);
+}
+
+function flattenResults(items: PagefindSearchItem[], query: string, baseUrl: string) {
   const tokens = getQueryTokens(query);
   const flattened = items.flatMap((item) => {
     const pageTitle = item.meta?.title || 'Untitled';
@@ -136,11 +318,13 @@ function flattenResults(items: PagefindResultData[], query: string) {
         return matchesQuery(subText, tokens);
       })
       .map((subResult) => ({
-        url: buildHighlightedUrl(subResult.url, query),
+        url: buildHighlightedUrl(subResult.url, query, baseUrl),
         title: subResult.title || pageTitle,
         pageTitle: subResult.title && subResult.title !== pageTitle ? pageTitle : undefined,
         pageType,
+        pageContext: item.meta?.page_context,
         excerpt: subResult.excerpt,
+        pagefindScore: item.pagefindScore,
       }));
 
     if (subResults.length > 0) {
@@ -152,29 +336,24 @@ function flattenResults(items: PagefindResultData[], query: string) {
     }
 
     return [{
-      url: buildHighlightedUrl(item.url, query),
+      url: buildHighlightedUrl(item.url, query, baseUrl),
       title: pageTitle,
       pageType,
+      pageContext: item.meta?.page_context,
       excerpt: item.excerpt,
+      pagefindScore: item.pagefindScore,
     }];
   });
 
   const seen = new Set<string>();
   return flattened.filter((item) => {
-    if (seen.has(item.url)) return false;
-    seen.add(item.url);
+    const key = canonicalResultKey(item.url, baseUrl);
+    if (seen.has(key)) return false;
+    seen.add(key);
     return true;
   }).filter((item) => shouldSurfaceResult(item.pageType))
-    .sort((left, right) => {
-    const leftGroup = resultGroupId(left.pageType);
-    const rightGroup = resultGroupId(right.pageType);
-    if (leftGroup !== rightGroup) {
-      return leftGroup === 'outline' ? -1 : 1;
-    }
-    const rankDifference = pageTypeRank(left.pageType) - pageTypeRank(right.pageType);
-    if (rankDifference !== 0) return rankDifference;
-    return left.title.localeCompare(right.title, undefined, { numeric: true, sensitivity: 'base' });
-  });
+    .map((item) => ({ ...item, score: scoreResult(item, query) }))
+    .sort(compareSearchResults);
 }
 
 function groupResults(results: SearchResult[]): SearchResultGroup[] {
@@ -198,7 +377,7 @@ function groupResults(results: SearchResult[]): SearchResultGroup[] {
     .filter((group): group is SearchResultGroup => Boolean(group) && group.results.length > 0);
 }
 
-export default function SearchDialog({ baseUrl }: SearchDialogProps) {
+export default function SearchDialog({ baseUrl, outlineEntriesUrl }: SearchDialogProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -207,7 +386,30 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [pagefind, setPagefind] = useState<any>(null);
+  const [outlineEntries, setOutlineEntries] = useState<SearchOutlineEntry[]>([]);
   const groupedResults = groupResults(results);
+
+  useEffect(() => {
+    if (!isOpen || outlineEntries.length > 0 || !outlineEntriesUrl) return;
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const response = await fetch(outlineEntriesUrl, { credentials: 'same-origin' });
+        if (!response.ok) return;
+        const entries = await response.json();
+        if (!cancelled && Array.isArray(entries)) {
+          setOutlineEntries(entries);
+        }
+      } catch {
+        // Ignore and fall back to Pagefind-only search.
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isOpen, outlineEntries.length, outlineEntriesUrl]);
 
   // Load Pagefind on first open
   useEffect(() => {
@@ -229,7 +431,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
   // Perform search
   useEffect(() => {
     if (!pagefind || !query.trim()) {
-      setResults([]);
+      setResults(findDirectOutlineMatches(query, outlineEntries, baseUrl));
       setSelectedIndex(0);
       return;
     }
@@ -239,23 +441,28 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
       try {
         const search = await pagefind.search(query);
         const items = await Promise.all(
-          search.results.slice(0, 20).map((r: any) => r.data())
+          search.results.slice(0, 80).map(async (r: any) => ({
+            ...(await r.data()),
+            pagefindScore: typeof r.score === 'number' ? r.score : undefined,
+          }))
         );
         if (!cancelled) {
-          setResults(flattenResults(items, query));
+          const directResults = findDirectOutlineMatches(query, outlineEntries, baseUrl);
+          const pagefindResults = flattenResults(items, query, baseUrl);
+          setResults(mergeResults(directResults, pagefindResults, baseUrl));
           setSelectedIndex(0);
           setLoading(false);
         }
       } catch {
         if (!cancelled) {
-          setResults([]);
+          setResults(findDirectOutlineMatches(query, outlineEntries, baseUrl));
           setSelectedIndex(0);
           setLoading(false);
         }
       }
     })();
     return () => { cancelled = true; };
-  }, [query, pagefind]);
+  }, [query, pagefind, outlineEntries, baseUrl]);
 
   // Listen for global open event and "/" shortcut
   useEffect(() => {
@@ -397,6 +604,11 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
                           {result.pageTitle && (
                             <p class="mt-0.5 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
                               {result.pageTitle}
+                            </p>
+                          )}
+                          {result.pageContext && (
+                            <p class="mt-0.5 text-[11px] text-gray-400 font-sans">
+                              {result.pageContext}
                             </p>
                           )}
                           <p

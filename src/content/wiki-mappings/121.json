@@ -9,73 +9,66 @@
         "C",
         "D"
       ],
-      "rationaleAI": "The chemical element article comprehensively covers the periodic law and classification (A), all major element groups including their properties and occurrence (B), other classification schemes (C), and the origin and abundance of elements in nature (D), making it the broadest-coverage article for this section."
+      "rationaleAI": "Element classification by periodic law (A), groups of elements (B), other classifications (C), and origin and abundances in nature (D)."
     },
     {
       "articleTitle": "Periodic table",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
-      "rationaleAI": "The periodic table article directly addresses the systematic classification of elements by chemical and physical properties and electronic structure (A), covers all element groups and periodic trends (B), and classifies metals, metalloids, and nonmetals (C.1)."
+      "rationaleAI": "Organization by atomic number expressing periodic law (A), with block structure linking to element groups (B)."
     },
     {
       "articleTitle": "Dmitri Mendeleev",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Mendeleev formulated the periodic law and created the most influential periodic table, using atomic weight systematics to predict undiscovered elements — the founding contribution to the systematic classification described in outline path A."
+      "rationaleAI": "Mendeleev's formulation of the periodic law is the foundational contribution to systematic element classification (A)."
     },
     {
       "articleTitle": "Antoine Lavoisier",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "B.7"
       ],
-      "rationaleAI": "Lavoisier established the modern concept of a chemical element as a pure substance and co-developed systematic chemical nomenclature, constituting a foundational historical contribution to the element classification framework of outline path A."
+      "rationaleAI": "Lavoisier's identification of oxygen and hydrogen as elements contributed to element classification (A). His characterization of oxygen connects to the oxygen group (B.7)."
     },
     {
       "articleTitle": "Hydrogen",
       "relevantPathsAI": [
-        "B.1",
-        "D.2",
-        "D.3"
+        "B.1"
       ],
-      "rationaleAI": "Hydrogen (B.1) is explicitly the first element group in the outline covering its forms, isotopes, and compounds including water; hydrogen is also the most cosmically abundant element, directly relevant to solar system and stellar elemental abundances (D.2–D.3)."
+      "rationaleAI": "Hydrogen, its forms, isotopes, compounds, and water are specifically outlined (B.1)."
     },
     {
       "articleTitle": "Water",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Water is explicitly called out in outline path B.1 as a hydrogen compound whose structure, forms, and physical and chemical properties belong to the hydrogen element group discussion."
+      "rationaleAI": "Water's structure, forms, and properties are covered under hydrogen's compounds (B.1)."
     },
     {
       "articleTitle": "Nitrogen",
       "relevantPathsAI": [
-        "B.6",
-        "D.1.c",
-        "D.1.d"
+        "B.6"
       ],
-      "rationaleAI": "Nitrogen is the lead element of Group Va (the nitrogen group) as specified in B.6, and its dominance of Earth's atmosphere (D.1.c) and essential role in amino acids and nucleic acids (D.1.d) directly addresses atmospheric and biospheric elemental abundance."
+      "rationaleAI": "Nitrogen as a Group Va element covering occurrence, properties, and compounds (B.6)."
     },
     {
       "articleTitle": "Oxygen",
       "relevantPathsAI": [
-        "B.7",
-        "D.1.a",
-        "D.1.c",
-        "D.1.d"
+        "B.7"
       ],
-      "rationaleAI": "Oxygen is the lead element of Group VIa (the oxygen group) per B.7, and is the most abundant element in Earth's crust (D.1.a), a major atmospheric component (D.1.c), and essential to aerobic biological systems (D.1.d)."
+      "rationaleAI": "Oxygen as a Group VIa element covering occurrence, history, and properties (B.7)."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
         "B.5",
-        "D.1.d"
+        "D"
       ],
-      "rationaleAI": "Carbon is a principal element of Group IVa (the carbon group) per B.5, with allotropes spanning graphite to graphene; its dominance of biochemistry (D.1.d) and C-14's radioactivity connect to both element group coverage and the stable/radioactive classification (C.2)."
+      "rationaleAI": "Carbon as a Group IVa element (B.5), and C-14 for dating connects to element origins (D)."
     },
     {
       "articleTitle": "Silicon",
@@ -83,7 +76,7 @@
         "B.5",
         "D.1.a"
       ],
-      "rationaleAI": "Silicon is the second element of Group IVa (the carbon group) per B.5, and is the second most abundant element in Earth's crust (~28%), directly addressing both element group properties and crustal elemental abundance (D.1.a)."
+      "rationaleAI": "Silicon as a Group IVa element (B.5) and second most abundant crustal element (D.1.a)."
     },
     {
       "articleTitle": "Iron",
@@ -91,23 +84,21 @@
         "B.11.a",
         "D.1.a"
       ],
-      "rationaleAI": "Iron is explicitly listed as a first transition series element (B.11.a) covering its occurrence, properties, and compounds; as the most abundant element by mass on Earth and fourth most abundant in the crust, it directly addresses D.1.a."
+      "rationaleAI": "Iron as a first transition series element (B.11.a) and most abundant element by mass on Earth (D.1.a)."
     },
     {
       "articleTitle": "Copper",
       "relevantPathsAI": [
-        "B.11.a",
-        "C.4"
+        "B.11.a"
       ],
-      "rationaleAI": "Copper is explicitly listed as a first transition series element (B.11.a); as a noble metal with historically monetary uses and the highest conductivity among common structural metals, it partially addresses the noble metals classification (C.4)."
+      "rationaleAI": "Copper as a first transition series element (B.11.a)."
     },
     {
       "articleTitle": "Silver",
       "relevantPathsAI": [
-        "B.11.b",
-        "C.4"
+        "B.11.b"
       ],
-      "rationaleAI": "Silver (Ag) belongs to the second transition series (B.11.b) and as a precious metal with the highest electrical conductivity of any element it is a core example of the noble metals classification (C.4) called out in the coverage priority."
+      "rationaleAI": "Silver as a second transition series element (B.11.b)."
     },
     {
       "articleTitle": "Gold",
@@ -115,43 +106,42 @@
         "B.11.b",
         "C.4"
       ],
-      "rationaleAI": "Gold (Au) is a noble metal of the third transition series (B.11.b) and the most corrosion-resistant common metal; as the prototypical noble metal it directly addresses the noble metals classification (C.4) identified as a coverage priority."
+      "rationaleAI": "Gold as a third transition series element (B.11.b) and a noble metal (C.4)."
     },
     {
       "articleTitle": "Radioactive decay",
       "relevantPathsAI": [
-        "C.2",
-        "B.13"
+        "C.2"
       ],
-      "rationaleAI": "Radioactive decay is the defining property distinguishing stable from radioactive elements (C.2) and the central process of actinide elements (B.13); the article covers all major decay modes and primordial radionuclides including uranium and thorium."
+      "rationaleAI": "Distinction between stable and radioactive elements (C.2)."
     },
     {
       "articleTitle": "Atom",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Atomic number (proton count) is the scientific foundation of the periodic law and systematic element classification (A); the atom article grounds all periodic trends in electronic structure and nuclear composition."
+      "rationaleAI": "Atomic structure underlies the systematic classification of elements (A)."
     },
     {
       "articleTitle": "Star",
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Stars are the primary sites of stellar nucleosynthesis producing elements heavier than lithium (D.3); the article covers nucleosynthesis mechanisms across the stellar mass spectrum and supernova dispersal of elements into the interstellar medium."
+      "rationaleAI": "Stellar nucleosynthesis connects to element origins in stars (D.3)."
     },
     {
       "articleTitle": "Sun",
       "relevantPathsAI": [
-        "D.3"
+        "D.2"
       ],
-      "rationaleAI": "The Sun's photospheric composition provides the reference standard for solar system elemental abundances (D.2–D.3), and the article covers the Sun as a stellar nucleosynthesis site producing helium from hydrogen."
+      "rationaleAI": "Solar composition contributes to element abundances in the solar system (D.2)."
     },
     {
       "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
         "D.1.c"
       ],
-      "rationaleAI": "The article covers the chemical composition of Earth's atmosphere — dominated by nitrogen, oxygen, and argon — directly addressing the outline's treatment of elemental abundance in the atmosphere (D.1.c)."
+      "rationaleAI": "Atmospheric composition relates to element occurrence in the atmosphere (D.1.c)."
     },
     {
       "articleTitle": "Inorganic chemistry",
@@ -159,101 +149,95 @@
         "B",
         "C"
       ],
-      "rationaleAI": "Inorganic chemistry covers all element groups (B) including transition metals, main-group elements, and actinides, and their classification by type (C.1, metals/metalloids/nonmetals) and coordination behavior."
+      "rationaleAI": "Inorganic chemistry spans element groups (B) and their classifications (C)."
     },
     {
       "articleTitle": "Organic chemistry",
       "relevantPathsAI": [
-        "B.5",
-        "C.1"
+        "B.5"
       ],
-      "rationaleAI": "Organic chemistry centers on carbon (B.5) and defines the primary chemical context for the carbon group's unique bonding versatility; it also addresses the nonmetal classification of carbon at the metal/nonmetal boundary (C.1)."
+      "rationaleAI": "Organic chemistry's centrality of carbon connects to the carbon group elements (B.5)."
     },
     {
       "articleTitle": "Mineral",
       "relevantPathsAI": [
-        "D.1.a",
-        "C.3"
+        "D.1.a"
       ],
-      "rationaleAI": "Minerals represent the primary form of combined elements in Earth's crust (~90% silicates), directly addressing native versus combined element distributions (C.3) and crustal elemental abundances (D.1.a)."
+      "rationaleAI": "Mineral composition connects to element occurrence in the crust (D.1.a)."
     },
     {
       "articleTitle": "Earth",
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "The Earth article addresses elemental composition across the crust, hydrosphere, and atmosphere (D.1), covering the planet's bulk composition and the distribution of elements across its major structural components."
+      "rationaleAI": "Earth's crust, hydrosphere, atmosphere, and biosphere are domains for element occurrence (D.1)."
     },
     {
       "articleTitle": "Alloy",
       "relevantPathsAI": [
-        "B.11",
-        "C"
+        "B.11"
       ],
-      "rationaleAI": "Alloys demonstrate the practical applications of transition metal properties and periodic trends (B.11), and the article covers metallic bonding and phase behavior relevant to the metals/metalloids classification (C.1)."
+      "rationaleAI": "Alloys of transition metals connect to transition element properties and uses (B.11)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
-        "B.11",
-        "C.1"
+        "C.1",
+        "C.7"
       ],
-      "rationaleAI": "Metallurgy covers extraction and processing of metallic elements including transition metals (B.11) and provides the technical context for metals/metalloids/nonmetals classification and the distinction between native and combined elements (C.1, C.3)."
+      "rationaleAI": "Classification of metals, semimetals, and nonmetals (C.1) and technologically significant elements (C.7)."
     },
     {
       "articleTitle": "Carbon dioxide",
       "relevantPathsAI": [
-        "B.5",
-        "B.7",
         "D.1.c"
       ],
-      "rationaleAI": "Carbon dioxide involves both the carbon group element (B.5) and the oxygen group element (B.7) in their most common combined form, and as an atmospheric trace gas contributes to elemental abundance patterns in the atmosphere (D.1.c)."
+      "rationaleAI": "CO2 as an atmospheric trace gas connects to element occurrence in the atmosphere (D.1.c)."
     },
     {
       "articleTitle": "Geology",
       "relevantPathsAI": [
-        "D.1",
         "D.1.a"
       ],
-      "rationaleAI": "Geology encompasses the study of Earth's crustal mineral and elemental composition (D.1, D.1.a), providing the geochemical framework for understanding elemental abundances in the lithosphere as addressed in the outline."
+      "rationaleAI": "Geological science connects to element occurrence in the crust (D.1.a)."
     },
     {
       "articleTitle": "Salt",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Sodium chloride directly represents the alkali metals group (B.2 — sodium) and the halogen group (B.8 — chlorine) in their most common ionic compound form, illustrating occurrence, production, and uses of two element groups."
+      "rationaleAI": "Sodium chloride connects to the alkali metals group (B.2)."
     },
     {
       "articleTitle": "Ocean",
       "relevantPathsAI": [
         "D.1.b"
       ],
-      "rationaleAI": "The ocean constitutes the primary hydrosphere component; its chemical properties including salinity and dissolved element distribution directly address elemental abundances in the hydrosphere (D.1.b)."
+      "rationaleAI": "Ocean salinity connects to element occurrence in the hydrosphere (D.1.b)."
     },
     {
       "articleTitle": "Photosynthesis",
       "relevantPathsAI": [
+        "D.1.d",
         "C.6"
       ],
-      "rationaleAI": "Photosynthesis depends on biologically essential elements including carbon, nitrogen, oxygen, phosphorus, magnesium (chlorophyll), and iron (electron transport), making it relevant to the biologically active and essential elements classification (C.6)."
+      "rationaleAI": "Photosynthesis concentrates elements in the biosphere (D.1.d), biologically active elements (C.6)."
     },
     {
       "articleTitle": "Venus",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Venus provides comparative planetary data on elemental abundances in the solar system (D.2); its CO2-dominated atmosphere and volcanic surface composition offer contrast to Earth's elemental distribution for understanding solar system element patterns."
+      "rationaleAI": "Venus's atmosphere provides data on element abundances in the solar system (D.2)."
     },
     {
       "articleTitle": "Soil",
       "relevantPathsAI": [
-        "D.1.a",
-        "D.1.d"
+        "D.1.a"
       ],
-      "rationaleAI": "Soil represents the interface between crustal mineral elements (D.1.a) and biologically cycling elements in the terrestrial biosphere (D.1.d), with coverage of mineral composition, nutrient elements, and organic matter distribution."
+      "rationaleAI": "Soil mineral composition connects to element occurrence in the crust (D.1.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

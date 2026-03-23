@@ -8,11 +8,9 @@
         "A.1",
         "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.b",
         "A.4"
       ],
-      "rationaleAI": "Mineral is the central subject of the entire A division: the article covers chemical composition, crystalline structure, and morphology (A.1), physical properties including hardness, cleavage, and specific gravity (A.2), and classification by crystal structure and chemical composition including silicates, oxides, sulfides, halides, and carbonates (A.3). It also addresses natural occurrence and rock-forming mineral groups (A.4)."
+      "rationaleAI": "Chemical composition and structure (A.1), physical properties (A.2), classification by chemistry -- nonsilicates and silicates (A.3), and occurrence in nature (A.4)."
     },
     {
       "articleTitle": "Rock (geology)",
@@ -23,181 +21,155 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Rock directly addresses the B division of the outline: igneous rocks (crystallized from magma), sedimentary rocks (lithified from transported particles), and metamorphic rocks (recrystallized under pressure and temperature) are the article's three fundamental classes, matching B.1–B.3. It also connects to rock associations in different crustal environments (B.4)."
+      "rationaleAI": "Igneous rocks (B.1), sedimentary rocks (B.2), metamorphic rocks (B.3), and rock associations in different environments (B.4)."
     },
     {
       "articleTitle": "Silicon",
       "relevantPathsAI": [
-        "A.3.b",
-        "A.4.a"
+        "A.3.b"
       ],
-      "rationaleAI": "Silicon is the key element in silicate minerals, which comprise ~90% of Earth's crust and are the subject of outline path A.3.b. Its coverage of silica (SiO2), silicate bonding, and geological role in the silicon-oxygen tetrahedron directly addresses A.3.b.i and the silica mineral group A.4.a.vii."
+      "rationaleAI": "Silicate minerals defined by the silicon-oxygen tetrahedron (A.3.b.i)."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
-        "A.3.a",
-        "A.4.a",
-        "A.4.c",
+        "A.4.a.xi",
+        "B.2.e.viii",
         "C.1"
       ],
-      "rationaleAI": "Iron covers its occurrence as a native element (A.3.a.i), in oxide minerals such as magnetite (A.3.a.iv and A.4.a.x), and in ore deposits (A.4.c); as the most abundant element by mass in Earth, it is also central to C.1 (composition of the core)."
+      "rationaleAI": "Iron-bearing minerals (A.4.a.xi), iron-rich sedimentary rocks (B.2.e.viii), and iron in the core (C.1)."
     },
     {
       "articleTitle": "Gold",
       "relevantPathsAI": [
-        "A.3.a",
-        "A.4.c",
-        "A.4.d"
+        "A.3.a.i",
+        "A.4.c"
       ],
-      "rationaleAI": "Gold is a native element occurring in natural veins and alluvial deposits (A.3.a.i), a major ore mineral (A.4.c), and a gem-quality mineral when found in crystalline form; the article covers its geochemical occurrence, ore deposit context, and distinguishing chemical properties."
+      "rationaleAI": "Gold as a native element (A.3.a.i) in ore deposits (A.4.c)."
     },
     {
       "articleTitle": "Silver",
       "relevantPathsAI": [
-        "A.3.a",
+        "A.3.a.i",
         "A.4.c"
       ],
-      "rationaleAI": "Silver occurs primarily in sulfide mineral compounds (A.3.a.ii) and as a byproduct ore of copper, lead, zinc, and gold mining, placing it squarely within A.4.c (ore deposits: concentrations of metals and metalliferous minerals)."
+      "rationaleAI": "Silver as a native element (A.3.a.i) from ore deposits (A.4.c)."
     },
     {
       "articleTitle": "Fossil fuel",
       "relevantPathsAI": [
-        "B.5",
-        "B.5.a",
-        "B.5.b",
-        "B.5.c",
-        "B.5.d"
+        "B.5"
       ],
-      "rationaleAI": "Fossil fuels directly correspond to outline path B.5, covering coal, petroleum, tar sands, oil shales, and natural gas — the article describes all four as carbon-rich, non-renewable energy sources formed from organic matter, exactly matching the complete B.5 subdivision."
+      "rationaleAI": "Fossil fuels including coals, petroleum, tar sands, and natural gas (B.5)."
     },
     {
       "articleTitle": "Coal",
       "relevantPathsAI": [
-        "B.5.a",
-        "B.2.e",
-        "B.2.v.ix"
+        "B.5.a"
       ],
-      "rationaleAI": "Coal is explicitly listed at B.5.a and the article identifies it as a combustible sedimentary rock formed from compressed organic matter, connecting it also to B.2.e (principal types of sedimentary rocks) and B.2.v.ix (organic-rich sedimentary rocks)."
+      "rationaleAI": "Coals as combustible sedimentary rocks (B.5.a)."
     },
     {
       "articleTitle": "Petroleum",
       "relevantPathsAI": [
         "B.5.b"
       ],
-      "rationaleAI": "Petroleum directly covers B.5.b: formed from anaerobic decay of prehistoric marine organisms concentrated in geological formations, the article describes the rock-hosted hydrocarbon deposits that define this outline path."
+      "rationaleAI": "Petroleum in geological formations (B.5.b)."
     },
     {
       "articleTitle": "Natural gas",
       "relevantPathsAI": [
         "B.5.d"
       ],
-      "rationaleAI": "Natural gas directly covers outline path B.5.d: the article describes its formation from thermodecomposition of marine organic matter under geological pressure and heat, its composition (primarily methane with higher alkanes), and its extraction from geological formations alongside petroleum."
+      "rationaleAI": "Natural gas as a fossil fuel (B.5.d)."
     },
     {
       "articleTitle": "Volcano",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.1.e",
-        "B.4.a"
+        "B.1.c"
       ],
-      "rationaleAI": "Volcanoes are the mechanism by which magma crystallizes into igneous rocks — the article covers magma chamber formation, lava flow types, and pyroclastic deposits, directly informing B.1 (igneous rocks, magmas) and B.1.e.ii (extrusive igneous rocks such as basalt and andesite). Oceanic volcanism at mid-ocean ridges also connects to B.4.a."
+      "rationaleAI": "Formation of igneous rocks from magma and volcanic eruptions (B.1.c)."
     },
     {
       "articleTitle": "Inorganic chemistry",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.a",
-        "A.3.b"
+        "A.3"
       ],
-      "rationaleAI": "Inorganic chemistry covers the synthesis, structure, and behavior of non-carbon compounds including coordination compounds, oxides, sulfides, halides, and silicates — the same chemical families that constitute the mineral classification system in A.3. Its solid-state materials focus directly informs understanding of mineral structure and composition."
+      "rationaleAI": "Mineral classification by chemistry spans inorganic compound classes (A.3)."
     },
     {
       "articleTitle": "Internal structure of Earth",
       "relevantPathsAI": [
-        "C.1",
-        "C.2",
-        "B.1.c"
+        "C"
       ],
-      "rationaleAI": "The article describes the chemical and mineralogical composition of Earth's core and mantle (C.1 and C.2), drawing on high-pressure crystalline experiments and volcanic xenoliths. The silicate crust discussed also connects to the context for igneous rock formation (B.1.c)."
+      "rationaleAI": "Element occurrence in core, mantle, and crust (C)."
     },
     {
       "articleTitle": "Soil",
       "relevantPathsAI": [
-        "C.3",
-        "C.6"
+        "C.3"
       ],
-      "rationaleAI": "Soil is the pedosphere — the weathering-derived mixture of minerals, organic matter, gases, and water at Earth's surface — directly covering C.3 (crust: soils as a component of the crustal element occurrence) and C.6 (biosphere: selective concentration of elements through biological activity in soil organisms and plants)."
+      "rationaleAI": "Soils as a crustal component (C.3)."
     },
     {
       "articleTitle": "Chemical element",
       "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.5",
-        "C.6"
+        "C"
       ],
-      "rationaleAI": "Chemical element covers elemental abundance in the universe and on Earth, including the crust, with direct relevance to the full C division of the outline (occurrence of elements in Earth and its envelope). Its coverage of stellar nucleosynthesis and primordial element distribution supports C.1 (core), C.2 (mantle), and C.3 (crust) entries."
+      "rationaleAI": "Element occurrence from core to biosphere (C)."
     },
     {
       "articleTitle": "Geology",
       "relevantPathsAI": [
-        "A",
         "B",
-        "C"
+        "B.4"
       ],
-      "rationaleAI": "Geology provides the overarching disciplinary framework covering petrology, mineralogy, stratigraphy, and geochemistry that encompasses all three major divisions of the section 214 outline. It serves as the broad parent for rocks, minerals, and elemental distribution in Earth."
+      "rationaleAI": "Rock classification and distribution (B) and rock associations in crustal environments (B.4)."
     },
     {
       "articleTitle": "Water",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Water covers the hydrosphere — Earth's oceans, freshwater bodies, and biological fluids — directly mapping to outline path C.4 (hydrosphere: occurrence of elements in the hydrosphere), as dissolved elements and their geochemical cycling through water are a primary subject."
+      "rationaleAI": "Element occurrence in the hydrosphere (C.4)."
     },
     {
       "articleTitle": "Carbon",
       "relevantPathsAI": [
         "B.5",
-        "C.3",
         "C.6"
       ],
-      "rationaleAI": "Carbon's participation in fossil fuel formation (B.5) and its role in the global carbon cycle linking photosynthesis, respiration, and organic matter to geochemistry makes it relevant to the fossil fuels subdivision and to the biosphere's selective concentration of elements (C.6) and crustal organic carbon (C.3)."
+      "rationaleAI": "Carbon in fossil fuels (B.5) and biospheric element concentration (C.6)."
     },
     {
       "articleTitle": "Mining",
       "relevantPathsAI": [
         "A.4.c"
       ],
-      "rationaleAI": "Mining is the extraction of ore deposits and concentrated metalliferous minerals from Earth's crust — directly corresponding to A.4.c (ore deposits: concentrations of metals and metalliferous minerals). The article covers prospecting, ore processing, and the range of mineral commodities extracted."
+      "rationaleAI": "Ore deposits as concentrations of metalliferous minerals (A.4.c)."
     },
     {
       "articleTitle": "Moon",
       "relevantPathsAI": [
-        "A.4.b"
+        "A.4.b.iii"
       ],
-      "rationaleAI": "The Moon article discusses regolith composition, maria mineralogy, volcanic history, and lunar rock types directly relevant to outline path A.4.b.iii, which concerns the occurrence of mineral associations in the Moon, planets, and meteorites."
+      "rationaleAI": "Mineral associations in the Moon, planets, and meteorites (A.4.b.iii)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
-        "A.4.c",
-        "B.1"
+        "A.4.c"
       ],
-      "rationaleAI": "Metallurgy covers the extraction and processing of metallic elements and ore minerals (chemical metallurgy), directly connecting to A.4.c (ore deposits and metalliferous minerals). Physical metallurgy's coverage of crystallography and phase transformations also informs understanding of igneous rock crystallization (B.1)."
+      "rationaleAI": "Ore deposits as source materials for extraction (A.4.c)."
     },
     {
       "articleTitle": "Atmosphere of Earth",
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "The Atmosphere of Earth article covers the composition of Earth's atmospheric gas envelope — nitrogen, oxygen, argon, CO2, and water vapor — directly mapping to outline path C.5 (atmosphere: occurrence of elements in the atmosphere)."
+      "rationaleAI": "Element occurrence in the atmosphere (C.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
