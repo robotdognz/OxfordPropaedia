@@ -16,13 +16,13 @@ import type {
 import { getConnectionKey } from './circleNavigatorShared';
 
 const VIEWBOX_SIZE = 680;
-const VIEWBOX_INSET = 30;
+const VIEWBOX_INSET = 20;
 const CENTER = VIEWBOX_SIZE / 2;
-const OUTER_RADIUS = 176;
-const INNER_RADIUS = 100;
-const LABEL_RADIUS = 262;
-const CONNECTOR_RADIUS = 202;
-const INTERACTIVE_RADIUS = 328; // Touch/click boundary — covers labels and surrounding area
+const OUTER_RADIUS = 188;
+const INNER_RADIUS = 106;
+const LABEL_RADIUS = 282;
+const CONNECTOR_RADIUS = 220;
+const INTERACTIVE_RADIUS = 346; // Touch/click boundary — covers labels and surrounding area
 const LABEL_EDGE_PADDING = 14;
 const LABEL_CHAR_WIDTH = 7;
 const LABEL_MIN_LENGTH = 8;
@@ -259,6 +259,15 @@ function textAnchorForAngle(angle: number) {
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
+}
+
+function getSegmentNumberRadius(innerRadius: number, outerRadius: number, emphasis = 0): number {
+  const baseRatio = lerp(0.45, 0.49, emphasis);
+  return lerp(innerRadius, outerRadius, baseRatio);
+}
+
+function getSegmentNumberFontSize(emphasis = 0): number {
+  return lerp(25, 27, emphasis);
 }
 
 function getPartLabelLayout(angle: number, title: string) {
@@ -1151,7 +1160,7 @@ export default function CircleNavigator({
         <svg
           ref={svgRef}
           viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
-          class="mx-auto aspect-square w-full max-w-[42rem] cursor-default select-none sm:max-w-[46rem] lg:max-w-[48rem]"
+          class="mx-auto aspect-square w-full max-w-[48rem] cursor-default select-none sm:max-w-[52rem] lg:max-w-[56rem]"
           style={{ overflow: 'visible', touchAction: 'auto' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
@@ -1209,7 +1218,12 @@ export default function CircleNavigator({
             const topWeight = Math.max(0, 1 - distFromTop / effectiveSpan);
             const segmentInnerRadius = lerp(effectiveInnerRadius, effectiveInnerRadius - 10, topWeight);
             const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, topWeight);
-            const numberPosition = polar(CENTER, CENTER, lerp(134, 138, topWeight), centerAngle);
+            const numberPosition = polar(
+              CENTER,
+              CENTER,
+              getSegmentNumberRadius(segmentInnerRadius, segmentOuterRadius, topWeight),
+              centerAngle,
+            );
             const connectorStart = polar(CENTER, CENTER, segmentOuterRadius + 6, centerAngle);
             const connectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, topWeight), centerAngle);
 
@@ -1267,7 +1281,7 @@ export default function CircleNavigator({
                   x={numberPosition.x}
                   y={numberPosition.y}
                   fill="white"
-                  font-size="24"
+                  font-size={getSegmentNumberFontSize(topWeight)}
                   font-family="Inter, sans-serif"
                   font-weight="700"
                   text-anchor="middle"
@@ -1295,7 +1309,7 @@ export default function CircleNavigator({
                     x={labelX}
                     y={labelPosition.y - (labelLines.length * 8)}
                     fill={topWeight > 0.5 ? '#0f172a' : '#334155'}
-                    font-size={`${lerp(11, 12, topWeight)}`}
+                    font-size={`${lerp(12, 13, topWeight)}`}
                     font-family="Inter, sans-serif"
                     font-weight="700"
                     letter-spacing="0.12em"
@@ -1308,7 +1322,7 @@ export default function CircleNavigator({
                       <tspan
                         x={labelX}
                         dy={lineIndex === 0 ? 16 : 14}
-                        font-size={`${lerp(13, 14, topWeight)}`}
+                        font-size={`${lerp(14, 15, topWeight)}`}
                         font-weight={topWeight > 0.5 ? '700' : '600'}
                         letter-spacing="0"
                       >
@@ -1426,7 +1440,12 @@ export default function CircleNavigator({
             const tTopWeight = Math.max(0, 1 - tDistFromTop / tSegAngle);
             const tInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, tTopWeight);
             const tOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, tTopWeight);
-            const tNumberPos = polar(CENTER, CENTER, lerp(134, 138, tTopWeight), target.centerAngle);
+            const tNumberPos = polar(
+              CENTER,
+              CENTER,
+              getSegmentNumberRadius(tInner, tOuter, tTopWeight),
+              target.centerAngle,
+            );
             const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
             const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
             const {
@@ -1452,7 +1471,7 @@ export default function CircleNavigator({
                   x={tNumberPos.x}
                   y={tNumberPos.y}
                   fill="white"
-                  font-size="24"
+                  font-size={getSegmentNumberFontSize(tTopWeight)}
                   font-family="Inter, sans-serif"
                   font-weight="700"
                   text-anchor="middle"
@@ -1473,7 +1492,7 @@ export default function CircleNavigator({
                   x={tLabelX}
                   y={tLabelPos.y - (tLabelLines.length * 8)}
                   fill={tTopWeight > 0.5 ? '#0f172a' : '#334155'}
-                  font-size={`${lerp(11, 12, tTopWeight)}`}
+                  font-size={`${lerp(12, 13, tTopWeight)}`}
                   font-family="Inter, sans-serif"
                   font-weight="700"
                   letter-spacing="0.12em"
@@ -1486,7 +1505,7 @@ export default function CircleNavigator({
                     <tspan
                       x={tLabelX}
                       dy={lineIndex === 0 ? 16 : 14}
-                      font-size={`${lerp(13, 14, tTopWeight)}`}
+                      font-size={`${lerp(14, 15, tTopWeight)}`}
                       font-weight={tTopWeight > 0.5 ? '700' : '600'}
                       letter-spacing="0"
                     >
@@ -1515,7 +1534,12 @@ export default function CircleNavigator({
             const rmOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, rmTopWeight);
             const rmOutlineInset = SELECTION_OUTLINE_WIDTH / 2;
             const rmOutlineInner = Math.max(rmInner + rmOutlineInset, CENTER_DISC_RADIUS + rmOutlineInset);
-            const numberPos = polar(CENTER, CENTER, lerp(134, 138, rmTopWeight), rmCenterAngle);
+            const numberPos = polar(
+              CENTER,
+              CENTER,
+              getSegmentNumberRadius(rmInner, rmOuter, rmTopWeight),
+              rmCenterAngle,
+            );
             const rmConnectorStart = polar(CENTER, CENTER, rmOuter + 6, rmCenterAngle);
             const rmConnectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, rmTopWeight), rmCenterAngle);
             const {
@@ -1556,7 +1580,7 @@ export default function CircleNavigator({
                   x={numberPos.x}
                   y={numberPos.y}
                   fill="white"
-                  font-size="24"
+                  font-size={getSegmentNumberFontSize(rmTopWeight)}
                   font-family="Inter, sans-serif"
                   font-weight="700"
                   text-anchor="middle"
@@ -1577,7 +1601,7 @@ export default function CircleNavigator({
                   x={rmLabelX}
                   y={rmLabelPos.y - (rmLabelLines.length * 8)}
                   fill={rmTopWeight > 0.5 ? '#0f172a' : '#334155'}
-                  font-size={`${lerp(11, 12, rmTopWeight)}`}
+                  font-size={`${lerp(12, 13, rmTopWeight)}`}
                   font-family="Inter, sans-serif"
                   font-weight="700"
                   letter-spacing="0.12em"
@@ -1590,7 +1614,7 @@ export default function CircleNavigator({
                     <tspan
                       x={rmLabelX}
                       dy={lineIndex === 0 ? 16 : 14}
-                      font-size={`${lerp(13, 14, rmTopWeight)}`}
+                      font-size={`${lerp(14, 15, rmTopWeight)}`}
                       font-weight={rmTopWeight > 0.5 ? '700' : '600'}
                       letter-spacing="0"
                     >
@@ -1713,7 +1737,7 @@ export default function CircleNavigator({
               x={CENTER}
               y={CENTER - 30}
               fill="white"
-              font-size="42"
+              font-size="46"
               font-family="Inter, sans-serif"
               font-weight="700"
               text-anchor="middle"
@@ -1723,9 +1747,9 @@ export default function CircleNavigator({
             </text>
             <text
               x={CENTER}
-              y={CENTER + 2}
+              y={CENTER + 8}
               fill="white"
-              font-size="13"
+              font-size="14"
               font-family="Inter, sans-serif"
               font-weight="700"
               text-anchor="middle"
@@ -1737,9 +1761,9 @@ export default function CircleNavigator({
               <text
                 key={`${centerDisplayPart.partNumber}-${line}-${index}`}
                 x={CENTER}
-                y={CENTER + 26 + index * 14}
+                y={CENTER + 34 + index * 15}
                 fill="white"
-                font-size="12"
+                font-size="13"
                 font-family="Inter, sans-serif"
                 font-weight="600"
                 text-anchor="middle"
