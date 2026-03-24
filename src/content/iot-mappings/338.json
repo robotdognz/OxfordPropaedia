@@ -2,44 +2,36 @@
   "sectionCode": "338",
   "mappings": [
     {
-      "episodeTitle": "Ageing",
-      "pid": "p00545c0",
-      "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.2",
-        "E.3"
-      ],
-      "rationaleAI": "Directly addresses biological mechanisms of senescence including cellular ageing, telomere shortening, evolutionary theories of why organisms age, and life span -- covering all major sub-topics of aging and decline in animals."
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": ["C.2.b", "C.2", "C"],
+      "rationaleAI": "Directly addresses plant pollination mechanisms including wind, water, and animal-mediated transfer, and the co-evolutionary adaptations of flower morphology to attract pollinators—central to the preparatory events of plant development outlined in C.2.b."
+    },
+    {
+      "episodeTitle": "The Cell",
+      "pid": "b01mk8vh",
+      "relevantPathsAI": ["A", "B.1", "B.3", "B.4"],
+      "rationaleAI": "The cell as the fundamental unit of life underpins all developmental processes; the episode explicitly covers cell division (growth, B.1), the enormous variety of differentiated cell types (B.3), and cellular signaling processes that integrate and control development (B.4)."
+    },
+    {
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["F.5", "B.3", "B.4"],
+      "rationaleAI": "The cloning of Dolly the sheep demonstrated that differentiated adult cells can be reprogrammed to develop into a complete organism, directly relevant to differentiation (B.3), developmental control (B.4), and development in vitro (F.5)."
+    },
+    {
+      "episodeTitle": "Genetic Mutation",
+      "pid": "b008drvm",
+      "relevantPathsAI": ["E.2", "F.3"],
+      "rationaleAI": "Mutations as errors in DNA replication are a direct cause of developmental malformations (F.3) and are linked to aging and cancer (E.2, causes of aging), connecting molecular-level events to disrupted developmental outcomes."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": [
-        "E.2",
-        "B.4"
-      ],
-      "rationaleAI": "Mitochondrial dysfunction is implicated in ageing and disease, and mitochondrial involvement in programmed cell death (apoptosis) is directly relevant to causes of aging and control/integration of development."
-    },
-    {
-      "episodeTitle": "Circadian Rhythms",
-      "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "Circadian rhythms involve clock genes and molecular feedback loops controlling biological timing of developmental processes, directly relevant to the control and integration of development."
-    },
-    {
-      "episodeTitle": "The Infant Brain",
-      "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "D.4",
-        "B.1",
-        "B.3"
-      ],
-      "rationaleAI": "The infant brain episode covers postembyonic development including neuroplasticity, synaptogenesis and synaptic pruning, critical periods for development, and the nature-nurture interplay -- directly relevant to postembryonic development and differentiation."
+      "relevantPathsAI": ["E.2", "E.1"],
+      "rationaleAI": "Mitochondrial dysfunction is directly implicated in cellular aging and neurodegenerative disease, providing a mechanistic explanation for senescence in mammals (E.1) and causes of aging (E.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

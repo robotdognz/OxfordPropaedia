@@ -18,18 +18,21 @@
       "relevantPathsAI": [
         "A.4.b",
         "A.4.a",
-        "A.2"
+        "A.2",
+        "A.5.a"
       ],
-      "rationaleAI": "The social contract tradition from Hobbes through Locke and Rousseau to Rawls directly maps to the outline's treatment of social contract theory, popular sovereignty, and the state's relationship to the individual."
+      "rationaleAI": "The social contract tradition from Grotius, Hobbes, Locke, and Rousseau examines governmental legitimacy through consent, covering popular sovereignty (A.4.a), the social contract (A.4.b), the state-individual relationship (A.2), and the origins of constitutional government (A.5.a)."
     },
     {
       "episodeTitle": "The Divine Right of Kings",
       "pid": "b0080xph",
       "relevantPathsAI": [
         "A.4.d",
-        "A.4.c"
+        "A.4.c",
+        "A.4.b",
+        "A.5.a"
       ],
-      "rationaleAI": "The Divine Right of Kings as the doctrine that monarchs derive authority from God directly addresses divine right as a basis of legitimacy, and its decline connects to the transition from hereditary monarchy to constitutional government."
+      "rationaleAI": "The doctrine that monarchs receive authority directly from God addresses divine right as a basis of legitimacy (A.4.d), hereditary monarchy (A.4.c), its challenge by Locke's social contract theory (A.4.b), and constitutional developments from regicide through the Glorious Revolution (A.5.a)."
     },
     {
       "episodeTitle": "The Nation State",
@@ -38,9 +41,10 @@
         "A.1",
         "A.3",
         "C.3.b.vii",
-        "C.4.c"
+        "C.4.c",
+        "C.4.e"
       ],
-      "rationaleAI": "The nation state concept covers state sovereignty, national identity, theories of nationalism (civic vs. ethnic), devolution, and supranational governance challenges -- directly addressing statehood, nationalism as ideology, and international cooperation."
+      "rationaleAI": "The nation state concept covers state sovereignty, national identity, nationalism as ideology (C.3.b.vii), challenges from globalization and European integration for international cooperation (C.4.c), and adapting traditional political forms to devolution and multiculturalism (C.4.e)."
     },
     {
       "episodeTitle": "Hobbes",
@@ -51,7 +55,7 @@
         "A.1",
         "C.1"
       ],
-      "rationaleAI": "Hobbes's Leviathan covers the social contract, absolute sovereignty, the state of nature, and the case for political authority -- directly addressing bases of legitimacy, the state and the individual, and political power."
+      "rationaleAI": "Hobbes's Leviathan argues for absolute sovereignty through social contract, the surrender of individual freedoms to the state (A.2), and the necessity of centralized political power (C.1) to prevent the war of all against all."
     },
     {
       "episodeTitle": "Anarchism",
@@ -59,7 +63,7 @@
       "relevantPathsAI": [
         "C.3.b.i"
       ],
-      "rationaleAI": "Anarchism as a political philosophy advocating abolition of the state, covering Godwin, Proudhon, Bakunin, Kropotkin, and Goldman with diverse strands from mutualism to anarcho-syndicalism, directly addresses the anarchism entry in current political ideologies."
+      "rationaleAI": "Anarchism as a political philosophy from Proudhon through Kropotkin, covering anarcho-communism and the Spanish Civil War experiment in anarchist social organisation, directly addresses the anarchism entry in current political ideologies."
     },
     {
       "episodeTitle": "Peter Kropotkin",
@@ -84,11 +88,21 @@
       "episodeTitle": "Plato's Republic",
       "pid": "b08vwn6h",
       "relevantPathsAI": [
+        "A.4",
         "A.2",
         "A.5.a",
         "C.1"
       ],
-      "rationaleAI": "Plato's Republic explores justice, the philosopher-king, the critique of democracy, and the relationship between knowledge and political authority -- foundational for conceptions of legitimacy, constitutional theory, and political power."
+      "rationaleAI": "Plato's Republic examines forms of government from aristocracy to tyranny, proposes philosopher-kings as ideal rulers (C.1), explores the state-individual relationship through justice (A.2), and provides foundational political theory on legitimacy and constitutional origins (A.4, A.5.a)."
+    },
+    {
+      "episodeTitle": "Plato's Gorgias",
+      "pid": "m0011rzy",
+      "relevantPathsAI": [
+        "C.1",
+        "A.2"
+      ],
+      "rationaleAI": "The Gorgias examines the nature of political power and whether might is right through Callicles' challenge to Socratic ethics, directly engaging the concept of political power (C.1) and the relationship between the state and the individual (A.2)."
     },
     {
       "episodeTitle": "Democracy",
@@ -150,9 +164,10 @@
       "pid": "p00546pv",
       "relevantPathsAI": [
         "C.3.b.ii",
-        "C.3.b.vi"
+        "C.3.b.vi",
+        "C.1"
       ],
-      "rationaleAI": "Lenin's Marxist theoretical contributions, vanguardism, and democratic centralism directly address communism and Marxism as political ideologies."
+      "rationaleAI": "Lenin's invention of the one-party state model and development of Marxist-Leninist ideology as a framework for communist revolution (C.3.b.ii), adaptation of Marxism to Russian conditions (C.3.b.vi), and the exercise and concentration of political power (C.1)."
     },
     {
       "episodeTitle": "Marsilius of Padua",
@@ -162,7 +177,7 @@
         "A.5.a",
         "C.4.a"
       ],
-      "rationaleAI": "Marsilius of Padua's argument for popular sovereignty and subordination of Church to secular authority addresses the origins of constitutional government and the church-state problem."
+      "rationaleAI": "Marsilius's Defensor Pacis argued that legitimate authority derives from the people (A.4.a) and denied papal temporal power, establishing an early theory of church-state separation (C.4.a) and anticipating democratic constitutional theory (A.5.a)."
     },
     {
       "episodeTitle": "Mill",
@@ -173,6 +188,16 @@
         "C.3.b.v"
       ],
       "rationaleAI": "Mill's On Liberty, harm principle, utilitarianism, and contributions to liberal political theory directly address the state-individual relationship, human rights, and liberalism as an ideology."
+    },
+    {
+      "episodeTitle": "On Liberty",
+      "pid": "m002pqnc",
+      "relevantPathsAI": [
+        "C.3.b.v",
+        "A.2",
+        "C.2"
+      ],
+      "rationaleAI": "Mill's On Liberty articulates the harm principle as the limit of state power over the individual (A.2), defends freedom of thought and expression as human rights (C.2), and is a foundational text of liberal political philosophy (C.3.b.v)."
     },
     {
       "episodeTitle": "Thomas Paine's Common Sense",
@@ -188,21 +213,21 @@
       "episodeTitle": "Politics in the 20th Century",
       "pid": "p005456z",
       "relevantPathsAI": [
-        "C.3",
         "C.3.a",
-        "C.4.e"
+        "C.4.e",
+        "B.4"
       ],
-      "rationaleAI": "The intersection of politics and morality in the 20th century, the decline of ideology after the Cold War, and power politics address the importance of ideology to political systems and adapting traditional political forms."
+      "rationaleAI": "Examines the future viability of the nation-state, the evolving relationship between politics and morality, democratic governance affected by media culture (B.4), the importance of ideology to political systems (C.3.a), and adapting traditional political forms to changing conditions (C.4.e)."
     },
     {
       "episodeTitle": "The Monarchy",
       "pid": "p00545k6",
       "relevantPathsAI": [
         "A.4.c",
-        "A.4.d",
-        "A.5"
+        "A.5.c",
+        "C.4.e"
       ],
-      "rationaleAI": "The British monarchy's evolution from absolute to constitutional monarchy, the relationship between Crown and Parliament, and the royal prerogative address hereditary monarchy as a basis of legitimacy and constitutional government."
+      "rationaleAI": "The British monarchy's constitutional evolution from divine-right claims through the Glorious Revolution to ceremonial role addresses hereditary monarchy and constitutional succession (A.4.c), methods of constitutional growth (A.5.c), and adapting traditional political forms to changing conditions (C.4.e)."
     },
     {
       "episodeTitle": "Englishness",
@@ -228,16 +253,17 @@
         "C.1",
         "C.3.b.iv"
       ],
-      "rationaleAI": "The Frankfurt School's use of Freudian concepts to critique authoritarianism and the relationship between psychoanalysis and democratic culture address political power and fascism/totalitarianism as ideological phenomena."
+      "rationaleAI": "Freud's Group Psychology examines the psychological foundations of political authoritarianism and groups' desire for domination, engaging the concept of political power (C.1) and the psychological mechanisms underlying fascist and authoritarian movements (C.3.b.iv)."
     },
     {
       "episodeTitle": "The Aristocracy",
       "pid": "p00548zx",
       "relevantPathsAI": [
+        "A.4.c",
         "B.3",
-        "C.4.d"
+        "C.4.e"
       ],
-      "rationaleAI": "The British aristocracy's role in governance through the House of Lords, the relationship between land ownership and political authority, and the extension of the franchise address special-interest group action and centralization vs. decentralization of power."
+      "rationaleAI": "The aristocracy as a governing class with hereditary authority connects to venerable sanction and constitutional succession (A.4.c), political action by a special-interest governing elite (B.3), and its decline through democratic reform illustrates adapting traditional political forms (C.4.e)."
     },
     {
       "episodeTitle": "Wilberforce",
@@ -281,8 +307,246 @@
         "C.4.c"
       ],
       "rationaleAI": "Cultural rights covering the Universal Declaration of Human Rights, universal vs. culturalist approaches, and institutional frameworks for protecting rights address human rights concepts and international cooperation."
+    },
+    {
+      "episodeTitle": "Montesquieu",
+      "pid": "b0b5qnfx",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.b",
+        "C.4.d"
+      ],
+      "rationaleAI": "Montesquieu's separation of powers into judicial, executive, and legislative branches is a core theory of constitutionalism (A.5.a), defines features of constitutional government (A.5.b), and addresses centralization versus decentralization of power (C.4.d)."
+    },
+    {
+      "episodeTitle": "Freedom",
+      "pid": "p00548hh",
+      "relevantPathsAI": [
+        "C.2",
+        "A.2",
+        "C.3.b.v"
+      ],
+      "rationaleAI": "Explores freedom as the most basic human right (C.2), the tension between natural liberty and law, and the relationship between the individual and the state (A.2), engaging core liberal political philosophy (C.3.b.v) on authority versus individual autonomy."
+    },
+    {
+      "episodeTitle": "The Trial of Charles I",
+      "pid": "b00kpzd6",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.4.d",
+        "A.1",
+        "A.5.a"
+      ],
+      "rationaleAI": "The trial pitted parliamentary sovereignty against divine royal authority (A.4.d), established the precedent that a sovereign could be held accountable by the people's representatives (A.4.a), and was epoch-making for constitutional government (A.5.a) and the nature of sovereignty (A.1)."
+    },
+    {
+      "episodeTitle": "Republicanism",
+      "pid": "p00546mp",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.5.a",
+        "A.5.c"
+      ],
+      "rationaleAI": "Examines English republicanism from the 1649 republic under Cromwell through modern debates, addressing popular sovereignty (A.4.a), origins of constitutional government (A.5.a), and constitutional evolution versus replacement (A.5.c)."
+    },
+    {
+      "episodeTitle": "The Roman Republic",
+      "pid": "p004y26w",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.b",
+        "C.4.e"
+      ],
+      "rationaleAI": "The Roman Republic developed constitutional government balancing consuls, senate, and popular assemblies (A.5.a, A.5.b), and its collapse into dictatorship raises enduring questions about the vulnerabilities of representative systems and adapting political forms (C.4.e)."
+    },
+    {
+      "episodeTitle": "Rosa Luxemburg",
+      "pid": "b08lfc77",
+      "relevantPathsAI": [
+        "C.3.b.viii",
+        "C.3.b.ii",
+        "C.3.b.vi"
+      ],
+      "rationaleAI": "Luxemburg's political writings on mass strike theory, critiques of Bolshevik centralism, and the relationship between democracy and socialism address socialist ideology (C.3.b.viii), communist organizational theory (C.3.b.ii), and Marxist political thought (C.3.b.vi)."
+    },
+    {
+      "episodeTitle": "Solon the Lawgiver",
+      "pid": "m001k7wb",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.5.a"
+      ],
+      "rationaleAI": "Solon's constitutional reforms reorganizing citizenship by wealth rather than birth and cancelling debt slavery bridge aristocratic governance and popular sovereignty (A.4.a), representing a foundational moment in the origins of constitutional and democratic theory (A.5.a)."
+    },
+    {
+      "episodeTitle": "Suffragism",
+      "pid": "b00jjgg8",
+      "relevantPathsAI": [
+        "C.2",
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "The suffrage movement addresses political rights as human rights (C.2), political action by special-interest groups using petition, lobbying, and civil disobedience (B.3), and the political influence of public opinion galvanized by protest (B.4)."
+    },
+    {
+      "episodeTitle": "The Concordat of Worms",
+      "pid": "b0184v2j",
+      "relevantPathsAI": [
+        "C.4.a",
+        "A.1"
+      ],
+      "rationaleAI": "The Concordat's separation of ecclesiastical and political power established a precedent for church-state relations (C.4.a) and influenced the development of limited sovereignty and the modern nation-state (A.1)."
+    },
+    {
+      "episodeTitle": "The Dreyfus Affair",
+      "pid": "b00n1l95",
+      "relevantPathsAI": [
+        "C.4.a",
+        "C.2",
+        "B.4"
+      ],
+      "rationaleAI": "The Dreyfus Affair contributed to the 1905 French law separating Church and State (C.4.a), raised fundamental questions about civil liberties and human rights (C.2), and demonstrated the political influence of public opinion through Zola's J'Accuse (B.4)."
+    },
+    {
+      "episodeTitle": "Ockham's Razor",
+      "pid": "b007m0w4",
+      "relevantPathsAI": [
+        "A.4.a",
+        "C.4.a"
+      ],
+      "rationaleAI": "Ockham argued that political authority derives from the governed, anticipating social contract theory and popular sovereignty (A.4.a), and challenged papal temporal authority, contributing to church-state separation (C.4.a)."
+    },
+    {
+      "episodeTitle": "The French Revolution's Legacy",
+      "pid": "p00547gg",
+      "relevantPathsAI": [
+        "A.4.a",
+        "C.2",
+        "C.3.b.iii",
+        "C.3.b.vii",
+        "A.5.c"
+      ],
+      "rationaleAI": "The Revolution's legacy includes Burke's conservatism (C.3.b.iii) versus Paine's radical democratic argument advancing popular sovereignty (A.4.a), modern conceptions of human rights and citizenship (C.2), nationalist movements (C.3.b.vii), and constitutional transformation through substantive replacement (A.5.c)."
+    },
+    {
+      "episodeTitle": "The French Revolution's reign of terror",
+      "pid": "p003k9cf",
+      "relevantPathsAI": [
+        "A.4.a",
+        "C.1"
+      ],
+      "rationaleAI": "The Reign of Terror raises fundamental questions about how popular sovereignty taken to extremes becomes authoritarian (A.4.a), illustrating the dynamics of political power, state violence, and radicalization within revolutionary political theory (C.1)."
+    },
+    {
+      "episodeTitle": "The Magna Carta",
+      "pid": "b00k4fg7",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.b",
+        "C.2"
+      ],
+      "rationaleAI": "Magna Carta established foundational principles of constitutional government including rule of law and limits on arbitrary power (A.5.a, A.5.b), and influenced the philosophy of rights including habeas corpus and protections against arbitrary imprisonment (C.2)."
+    },
+    {
+      "episodeTitle": "Social Darwinism",
+      "pid": "b03vgq1q",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b.iv"
+      ],
+      "rationaleAI": "Social Darwinism illustrates how scientific ideas are appropriated for political ideology (C.3.a), providing intellectual justification for laissez-faire economics and fascist racial ideology adopted in the twentieth century (C.3.b.iv)."
+    },
+    {
+      "episodeTitle": "Hitler in History",
+      "pid": "p00546wh",
+      "relevantPathsAI": [
+        "C.3.b.iv",
+        "C.3.a"
+      ],
+      "rationaleAI": "Analyzes fascism through the intentionalist versus structuralist debate over Nazi governance (C.3.b.iv), examining how ideology mobilized a democratic nation for totalitarian purposes (C.3.a)."
+    },
+    {
+      "episodeTitle": "The Spanish Civil War",
+      "pid": "p00548wn",
+      "relevantPathsAI": [
+        "C.3.b.iv",
+        "C.3.b.ii",
+        "C.3.a"
+      ],
+      "rationaleAI": "The Spanish Civil War was an ideological proxy struggle between fascism (C.3.b.iv), communism (C.3.b.ii), and democracy, exemplifying the importance of ideology to political movements and systems (C.3.a)."
+    },
+    {
+      "episodeTitle": "The American Ideal",
+      "pid": "p00546tb",
+      "relevantPathsAI": [
+        "A.4.a",
+        "C.3.b.v",
+        "C.2"
+      ],
+      "rationaleAI": "American political philosophy rooted in Enlightenment principles of liberty, equality, and democratic self-governance (A.4.a), liberal idealism (C.3.b.v), and the tension between aspirational human rights rhetoric and historical practice (C.2)."
+    },
+    {
+      "episodeTitle": "The American Century",
+      "pid": "p0054594",
+      "relevantPathsAI": [
+        "C.3.b.v",
+        "C.4.c"
+      ],
+      "rationaleAI": "Examines the global spread of democratic ideals and free-market capitalism as expressions of liberal political philosophy (C.3.b.v) and interrogates international cooperation through American hegemonic influence (C.4.c)."
+    },
+    {
+      "episodeTitle": "The Covenanters",
+      "pid": "m000g3f6",
+      "relevantPathsAI": [
+        "C.4.a",
+        "A.4.d"
+      ],
+      "rationaleAI": "The Covenanters' resistance to royal absolutism over church governance directly engages the problem of church and state (C.4.a) and challenges to divine-right monarchical authority (A.4.d)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": [
+        "C.1",
+        "C.3.b.vi"
+      ],
+      "rationaleAI": "Enclosures raise fundamental questions about political power exercised through property law (C.1), and Marx's analysis of enclosures producing the proletariat connects directly to Marxist political theory on class formation (C.3.b.vi)."
+    },
+    {
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Pamphlets and polemical literature as ideological weapons in the English Civil War demonstrate how print culture shaped public opinion and political discourse (B.4), transforming patterns of political action."
+    },
+    {
+      "episodeTitle": "The Han Synthesis",
+      "pid": "p004y29t",
+      "relevantPathsAI": [
+        "A.4",
+        "C.3.a"
+      ],
+      "rationaleAI": "The Han Synthesis merged Confucian ethics with cosmological frameworks into a unified state ideology, exemplifying the relationship between ideology and political systems (C.3.a) and establishing conceptions of legitimacy rooted in intellectual orthodoxy (A.4)."
+    },
+    {
+      "episodeTitle": "Octavia Hill",
+      "pid": "b0100jpz",
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "Octavia Hill's pioneering social housing reform and advocacy for voluntary action over state intervention engages the urban problem (C.4.b) and debates about the role of government in addressing metropolitan poverty."
+    },
+    {
+      "episodeTitle": "Germinal",
+      "pid": "m001rq08",
+      "relevantPathsAI": [
+        "C.3.b.viii",
+        "C.3.b.i"
+      ],
+      "rationaleAI": "Zola's Germinal dramatizes tensions between capitalism, socialism (C.3.b.viii), and anarchism (C.3.b.i) through miners' collective action and class struggle, serving as a literary exploration of competing political ideologies."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

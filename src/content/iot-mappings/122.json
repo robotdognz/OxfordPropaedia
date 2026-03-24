@@ -2,65 +2,89 @@
   "sectionCode": "122",
   "mappings": [
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
-      "relevantPathsAI": [
-        "A.3",
-        "D.3"
-      ],
-      "rationaleAI": "Water's hydrogen bonding, molecular shape, and anomalous physical properties illustrate molecular bonds and shapes (A.3) and hydrogen bonding effects (D.3)."
-    },
-    {
-      "episodeTitle": "Chromatography",
-      "pid": "b06z4w7p",
-      "relevantPathsAI": [
-        "B.1.b"
-      ],
-      "rationaleAI": "Chromatography techniques including paper, thin-layer, gas, and liquid chromatography for separating mixtures directly address separation by chromatography (B.1.b)."
-    },
-    {
-      "episodeTitle": "Crystallography",
-      "pid": "b01p0s9s",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "X-ray diffraction crystallography by the Braggs and Hodgkin for determining molecular structures in crystalline solids directly addresses diffraction methods for molecular structure determination (B.4)."
-    },
-    {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
       "relevantPathsAI": [
         "A.3.a",
+        "A.5.a",
+        "A.5.c",
         "G.1.n",
         "G.1.r",
-        "G.1.u"
+        "G.1.u",
+        "E.1"
       ],
-      "rationaleAI": "Macromolecules covering proteins (amino acid polymers), nucleic acids (DNA/RNA), carbohydrates, and lipids address spatial arrangement including chains and polymers (A.3.a), and specific organic compound groups (G.1.n, G.1.r, G.1.u)."
-    },
-    {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "G.1.a",
-        "A.3.a"
-      ],
-      "rationaleAI": "Carbon's tetravalency enabling long chains and complex molecules, its allotropes, and its central role in organic chemistry address hydrocarbons (G.1.a) and molecular spatial arrangements (A.3.a)."
-    },
-    {
-      "episodeTitle": "The Science of Glass",
-      "pid": "b05w456c",
-      "relevantPathsAI": [
-        "A.5.a"
-      ],
-      "rationaleAI": "Glass as an amorphous solid lacking crystalline order, its unique physical properties (transparency, strength), and the glass transition temperature address the physical properties of matter as affected by molecular structure (A.5.a)."
+      "rationaleAI": "Macromolecules: polymers (A.3.a), proteins (G.1.n), DNA (G.1.r), synthetics (G.1.u)."
     },
     {
       "episodeTitle": "States of Matter",
       "pid": "b03zdbr4",
       "relevantPathsAI": [
+        "A.5.a",
         "E.4"
       ],
-      "rationaleAI": "States of matter covering solids, liquids, gases, and exotic states with phase transitions address classification of compounds by physical state (E.4)."
+      "rationaleAI": "States of matter: molecular arrangement and properties (A.5.a, E.4)."
+    },
+    {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": [
+        "B.4",
+        "B.3",
+        "A.3.a"
+      ],
+      "rationaleAI": "Crystallography: X-ray diffraction for molecular structures (B.4, B.3, A.3.a)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
+        "D.3",
+        "A.5.a",
+        "A.5.c",
+        "F.2.b"
+      ],
+      "rationaleAI": "Water: hydrogen bonding (D.3), properties (A.5.a, A.5.c), oxide (F.2.b)."
+    },
+    {
+      "episodeTitle": "Chromatography",
+      "pid": "b06z4w7p",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Chromatography: separation/purification (B.1, B.1.b), analysis (B.2)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": [
+        "D.1.c",
+        "D.2.a",
+        "D.1.b.i"
+      ],
+      "rationaleAI": "Pauli exclusion: electron shells, bonding (D.1.c, D.2.a, D.1.b.i)."
+    },
+    {
+      "episodeTitle": "Carbon",
+      "pid": "p003c1cj",
+      "relevantPathsAI": [
+        "G.1",
+        "G.1.a",
+        "A.3.a",
+        "E.1"
+      ],
+      "rationaleAI": "Carbon: organic chemistry foundation (G.1), allotropes (A.3.a)."
+    },
+    {
+      "episodeTitle": "The Electron",
+      "pid": "m001cf1n",
+      "relevantPathsAI": [
+        "D.1.b",
+        "D.1.c",
+        "D.2.a"
+      ],
+      "rationaleAI": "Electron: electronic bonding theory (D.1.b, D.1.c, D.2.a)."
     },
     {
       "episodeTitle": "Free Radicals",
@@ -68,27 +92,57 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Free radicals as highly reactive molecules with unpaired electrons directly address anomalous molecular structures and molecular fragments with apparently anomalous valences (D.5)."
+      "rationaleAI": "Free radicals: anomalous molecular structures (D.5)."
     },
     {
-      "episodeTitle": "The Electron",
-      "pid": "m001cf1n",
+      "episodeTitle": "The Science of Glass",
+      "pid": "b05w456c",
       "relevantPathsAI": [
-        "D.1.b",
-        "D.2.a"
+        "A.3.a",
+        "A.5.a",
+        "D.3"
       ],
-      "rationaleAI": "The electron's role in chemical bonding, from early electronic theory through quantum mechanical orbital concepts, addresses early electronic theory of bonding (D.1.b) and atomic and molecular orbital concepts (D.2.a)."
+      "rationaleAI": "Glass: amorphous vs crystalline structure (A.3.a, A.5.a, D.3)."
     },
     {
-      "episodeTitle": "Pauli's Exclusion Principle",
-      "pid": "b08kscgb",
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
       "relevantPathsAI": [
-        "D.1.c",
+        "A.3",
+        "B.4",
         "D.2"
       ],
-      "rationaleAI": "The Exclusion Principle's role in electron shell configurations and its significance for chemical bonding addresses quantum theory applied to atomic structure (D.1.c) and quantum-mechanical treatment of bonding (D.2)."
+      "rationaleAI": "Symmetry: molecular structure, crystallography, bonding theory (A.3, B.4, D.2)."
+    },
+    {
+      "episodeTitle": "Kinetic Theory",
+      "pid": "m00057s5",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "A.5.a"
+      ],
+      "rationaleAI": "Kinetic theory: molecular motion, properties (A.1, A.4, A.5.a)."
+    },
+    {
+      "episodeTitle": "John Dalton",
+      "pid": "b07zzy8b",
+      "relevantPathsAI": [
+        "A.1",
+        "D.1.a"
+      ],
+      "rationaleAI": "Dalton: foundational molecular/bonding concepts (A.1, D.1.a)."
+    },
+    {
+      "episodeTitle": "The Death of Stars",
+      "pid": "m0018128",
+      "relevantPathsAI": [
+        "A.2",
+        "D.2"
+      ],
+      "rationaleAI": "Heisenberg: quantum mechanics for bonding theory (A.2, D.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

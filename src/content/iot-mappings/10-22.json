@@ -2,41 +2,47 @@
   "sectionCode": "10/22",
   "mappings": [
     {
-      "episodeTitle": "e",
-      "pid": "b04hz49f",
+      "episodeTitle": "Pi",
+      "pid": "p004y291",
       "relevantPathsAI": [
+        "C.4.b",
         "D.1",
         "D.1.c",
-        "D.3"
+        "E.2"
       ],
-      "rationaleAI": "Euler's number e is central to real analysis (D.1), differential calculus through the exponential function (D.1.c), and differential equations where e appears naturally in growth and decay processes (D.3)."
+      "rationaleAI": "Pi's irrationality and transcendence connect to number theory (E.2), its geometric definition to trigonometry (C.4.b), and its centrality in calculus to real analysis (D.1, D.1.c)."
     },
     {
       "episodeTitle": "Godel's Incompleteness Theorems",
       "pid": "b00dshx3",
       "relevantPathsAI": [
-        "A.3.b",
-        "B.1.a"
+        "A.3",
+        "A.3.b"
       ],
-      "rationaleAI": "Goedel's incompleteness theorems demonstrate limitations of axiomatic set theory (A.3.b) and bear on fundamental definitions and laws in arithmetic (B.1.a) by showing that consistent formal systems rich enough for arithmetic are incomplete."
+      "rationaleAI": "Gödel's incompleteness theorems demonstrate limitations of axiomatic set theory (A.3.b) and foundational axiomatic reasoning (A.3)."
+    },
+    {
+      "episodeTitle": "Mathematics' Unintended Consequences",
+      "pid": "b00qj2nq",
+      "relevantPathsAI": [
+        "B.2",
+        "C.2",
+        "D.6",
+        "E.2"
+      ],
+      "rationaleAI": "Number theory in cryptography (E.2), cubic equations in algebra (B.2), non-Euclidean geometry for relativity (C.2), probability from games of chance (D.6)."
     },
     {
       "episodeTitle": "Imaginary Numbers",
       "pid": "b00tt6b2",
       "relevantPathsAI": [
         "B.2",
-        "D.2"
+        "B.2.d",
+        "D.2",
+        "D.2.a",
+        "C.3.c"
       ],
-      "rationaleAI": "Imaginary numbers and complex analysis cover the mathematical properties of complex numbers, Gauss's complex plane, and their geometric representation (B.2, algebraic properties and solution of equations), and the theory of analytic functions of complex variables (D.2)."
-    },
-    {
-      "episodeTitle": "Zero",
-      "pid": "p004y254",
-      "relevantPathsAI": [
-        "B.1.a",
-        "B.1.c"
-      ],
-      "rationaleAI": "Zero is fundamental to arithmetic (B.1.a) as the identity element for addition, and its role in the place-value number system connects to number systems and notation using positional principle and the symbol zero (B.1.c)."
+      "rationaleAI": "Imaginary numbers from cubic equations (B.2.d), complex number plane and complex analysis (D.2.a), complex coordinates in geometry (C.3.c)."
     },
     {
       "episodeTitle": "Prime Numbers",
@@ -46,49 +52,28 @@
         "E.2.a",
         "E.2.c"
       ],
-      "rationaleAI": "Prime numbers, the Riemann Hypothesis, the prime number theorem, and sieve methods are central topics in elementary number theory (E.2.a) and analytic number theory (E.2.c)."
+      "rationaleAI": "Euclid's proof of infinite primes (E.2.a), Riemann zeta function connecting to analytic number theory (E.2.c)."
     },
     {
-      "episodeTitle": "Fermat's Last Theorem",
-      "pid": "b01ngn3j",
+      "episodeTitle": "Indian Mathematics",
+      "pid": "p0038xb0",
       "relevantPathsAI": [
-        "E.2.b",
-        "C.7"
+        "B.1.a",
+        "B.1.c",
+        "C.1"
       ],
-      "rationaleAI": "Fermat's Last Theorem and Wiles's proof using elliptic curves, modular forms, and Galois representations are major results in algebraic number theory (E.2.b) and algebraic geometry (C.7)."
-    },
-    {
-      "episodeTitle": "Euclid's Elements",
-      "pid": "b07881kn",
-      "relevantPathsAI": [
-        "C.1",
-        "C.1.a",
-        "C.2",
-        "E.2.a"
-      ],
-      "rationaleAI": "Euclid's Elements establishes the axiomatic foundations of geometry (C.1.a), including axioms of congruence, parallels, and continuity, the proof of the infinitude of primes is elementary number theory (E.2.a), and challenges to the parallel postulate led to non-Euclidean geometry (C.2)."
+      "rationaleAI": "Zero and decimal place-value (B.1.c), arithmetic definitions (B.1.a), Vedic altar geometry (C.1)."
     },
     {
       "episodeTitle": "Infinity",
       "pid": "p0054927",
       "relevantPathsAI": [
         "A",
-        "A.2",
         "A.2.b",
-        "D.1"
+        "A.3",
+        "D.1.a"
       ],
-      "rationaleAI": "Cantor's set theory, transfinite numbers, and the continuum hypothesis are central to set theory (A, A.2, A.2.b), while the discussion of infinity in calculus connects to real analysis (D.1)."
-    },
-    {
-      "episodeTitle": "Pi",
-      "pid": "p004y291",
-      "relevantPathsAI": [
-        "C.1",
-        "C.4.b",
-        "D.1",
-        "D.5"
-      ],
-      "rationaleAI": "Pi connects to Euclidean geometry through circle measurement (C.1), trigonometry (C.4.b), real analysis through irrationality and transcendence proofs (D.1), and Fourier analysis (D.5)."
+      "rationaleAI": "Cantor's transfinite cardinals (A.2.b), continuum hypothesis (A.3), Zeno's paradoxes and limits (D.1.a)."
     },
     {
       "episodeTitle": "Probability",
@@ -98,43 +83,65 @@
         "D.6.a",
         "D.6.b"
       ],
-      "rationaleAI": "Probability theory from Pascal through Kolmogorov covers the mathematical definition of probability (D.6.a), probability on finite dimensional spaces (D.6.b), and alternative interpretations including Bayesian and frequentist views."
+      "rationaleAI": "Probability from gambling (D.6.a) to formalization on finite dimensional spaces (D.6.b)."
     },
     {
-      "episodeTitle": "Mathematics' Unintended Consequences",
-      "pid": "b00qj2nq",
+      "episodeTitle": "Zeno's Paradoxes",
+      "pid": "b07vs3v1",
       "relevantPathsAI": [
-        "B.4.b",
-        "C.2",
-        "E.2"
+        "D.1.a",
+        "A.2"
       ],
-      "rationaleAI": "Examples of pure mathematics finding unexpected applications -- number theory in cryptography, non-Euclidean geometry in relativity, group theory in particle physics, Boolean algebra in computing -- illustrate connections between algebraic structures (B.4.b), non-Euclidean geometry (C.2), and number theory (E.2)."
+      "rationaleAI": "Zeno's paradoxes stimulated set theory (A.2) and real analysis (D.1.a)."
     },
     {
-      "episodeTitle": "Indian Mathematics",
-      "pid": "p0038xb0",
-      "relevantPathsAI": [
-        "C.4.b",
-        "E.1.b"
-      ],
-      "rationaleAI": "Indian mathematics covers contributions to trigonometry (C.4.b) and number theory and combinatorics (E.1.b, E.2), including the Kerala school's anticipation of calculus."
-    },
-    {
-      "episodeTitle": "Negative Numbers",
-      "pid": "p003hyd9",
+      "episodeTitle": "Zero",
+      "pid": "p004y254",
       "relevantPathsAI": [
         "B.1.a",
-        "B.2"
+        "B.1.c"
       ],
-      "rationaleAI": "Negative numbers extend natural number concepts (B.1.a, B.1.b) and their role in solving equations connects to elementary algebra (B.2)."
+      "rationaleAI": "Zero in arithmetic (B.1.a) and place-value notation (B.1.c)."
     },
     {
-      "episodeTitle": "P v NP",
-      "pid": "b06mtms8",
+      "episodeTitle": "Euclid's Elements",
+      "pid": "b07881kn",
       "relevantPathsAI": [
-        "E.1.b"
+        "C.1",
+        "C.1.a",
+        "E.2.a"
       ],
-      "rationaleAI": "The P versus NP problem involves combinatorial theory (E.1.b) through NP-complete problems and computational complexity, concerning the limits of efficient computation for combinatorial optimization."
+      "rationaleAI": "Euclid's Elements: axiomatic geometry (C.1.a) and elementary number theory (E.2.a)."
+    },
+    {
+      "episodeTitle": "Renaissance Maths",
+      "pid": "p003k9hq",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1",
+        "C.4",
+        "D.1.c"
+      ],
+      "rationaleAI": "Euclidean geometry (C.1), Arabic algebra (B.2), analytic geometry (C.4), calculus (D.1.c)."
+    },
+    {
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
+      "relevantPathsAI": [
+        "B.4.b"
+      ],
+      "rationaleAI": "Symmetry formalized through group theory (B.4.b)."
+    },
+    {
+      "episodeTitle": "Maths in the Early Islamic World",
+      "pid": "b08dr5qt",
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.d",
+        "C.4.b",
+        "E.1"
+      ],
+      "rationaleAI": "Al-Khwarizmi's algebra (B.2), cubic equations (B.2.d), trigonometry (C.4.b), combinatorics (E.1)."
     },
     {
       "episodeTitle": "The Poincaré Conjecture",
@@ -142,51 +149,75 @@
       "relevantPathsAI": [
         "F",
         "F.1",
-        "F.2"
+        "F.1.a",
+        "F.2.d",
+        "D.3.d"
       ],
-      "rationaleAI": "The Poincare Conjecture about simply connected closed three-dimensional manifolds is a central problem in topology (F.1), and Perelman's proof using Ricci flow connects to differential topology (F.2.e)."
+      "rationaleAI": "Poincaré conjecture in topology (F.1.a), Ricci flow (F.2.d), dynamical systems (D.3.d)."
     },
     {
-      "episodeTitle": "Random and Pseudorandom",
-      "pid": "b00x9xjb",
+      "episodeTitle": "Calculus",
+      "pid": "b00mrfwq",
       "relevantPathsAI": [
-        "D.6",
-        "E.1.b"
+        "D.1",
+        "D.1.c",
+        "D.1.d"
       ],
-      "rationaleAI": "Mathematical randomness, algorithmic randomness, Kolmogorov complexity, and pseudorandom number generators connect to probability theory (D.6) and combinatorial methods (E.1.b)."
+      "rationaleAI": "Newton and Leibniz: differential (D.1.c) and integral calculus (D.1.d)."
+    },
+    {
+      "episodeTitle": "e",
+      "pid": "b04hz49f",
+      "relevantPathsAI": [
+        "D.1",
+        "D.1.b",
+        "B.1.e"
+      ],
+      "rationaleAI": "Euler's number e in real analysis (D.1.b) and logarithms (B.1.e)."
     },
     {
       "episodeTitle": "Paul Erdős",
       "pid": "m001jc68",
       "relevantPathsAI": [
-        "E.1.b",
         "E.2",
-        "D.6",
-        "A.2"
-      ],
-      "rationaleAI": "Erdos's contributions to number theory, combinatorics, probability theory, set theory, and graph theory span multiple branches of mathematics including combinatorics (E.1.b), number theory (E.2), probability (D.6), and set theory (A.2)."
-    },
-    {
-      "episodeTitle": "Mathematics and Music",
-      "pid": "p003c1b9",
-      "relevantPathsAI": [
-        "D.5",
-        "B.4.b"
-      ],
-      "rationaleAI": "Fourier analysis of sound waves (D.5) and group theory in atonal and serial music (B.4.b) demonstrate mathematical structures underlying music through harmonic analysis and algebraic structures."
-    },
-    {
-      "episodeTitle": "Mathematics",
-      "pid": "p00545hk",
-      "relevantPathsAI": [
+        "E.1",
+        "E.1.b",
         "A",
-        "B",
-        "C",
-        "D"
+        "D.6"
       ],
-      "rationaleAI": "A broad overview of mathematics as a discipline, the axiomatic method, and the distinction between pure and applied mathematics provides general context for all branches of mathematics."
+      "rationaleAI": "Erdős: number theory (E.2), graph theory (E.1.b), set theory (A), probabilistic methods (D.6)."
+    },
+    {
+      "episodeTitle": "Pythagoras",
+      "pid": "b00p693b",
+      "relevantPathsAI": [
+        "E.2.a",
+        "C.1"
+      ],
+      "rationaleAI": "Pythagorean theorem in geometry (C.1) and number theory (E.2.a)."
+    },
+    {
+      "episodeTitle": "Carl Friedrich Gauss",
+      "pid": "b09gbnfj",
+      "relevantPathsAI": [
+        "E.2",
+        "E.2.a",
+        "C.2",
+        "C.1.d"
+      ],
+      "rationaleAI": "Gauss: number theory (E.2.a), geometric constructions (C.1.d), non-Euclidean geometry (C.2)."
+    },
+    {
+      "episodeTitle": "Fermat's Last Theorem",
+      "pid": "b01ngn3j",
+      "relevantPathsAI": [
+        "E.2",
+        "E.2.a",
+        "E.2.b"
+      ],
+      "rationaleAI": "Fermat's Last Theorem (E.2.a), Wiles's proof via algebraic number theory (E.2.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

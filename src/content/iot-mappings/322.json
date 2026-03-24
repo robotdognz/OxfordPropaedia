@@ -4,67 +4,58 @@
     {
       "episodeTitle": "Photosynthesis",
       "pid": "b0435jyv",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
-        "A.7"
-      ],
-      "rationaleAI": "Photosynthesis directly covers the light-dependent reactions, the Calvin cycle (carbon fixation), chlorophyll and photosynthetic pigments, photophosphorylation, C3/C4/CAM pathways, and the efficiency of photosynthesis -- the entire photosynthesis subsection."
+      "relevantPathsAI": ["A", "A.1", "A.3", "A.4", "A.5", "A.6", "A.7"],
+      "rationaleAI": "Directly addresses the biochemical process of photosynthesis including light-dependent reactions capturing photons (A.6 photoelectron transfer, photophosphorylation), the Calvin cycle fixing carbon (A.7 carbon reduction cycle), chloroplast-based mechanisms in green plants (A.4), photosynthetic pigments (A.5), and photosynthesis as the primary energy source for food webs (A.1 biological importance)."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Mitochondria's role in cellular respiration and ATP synthesis through oxidative phosphorylation directly addresses the combustion of food materials and energy conservation through cellular respiration."
+      "relevantPathsAI": ["B", "B.2"],
+      "rationaleAI": "Mitochondria are the primary sites of aerobic respiration and ATP production through oxidative phosphorylation, directly covering cellular respiration, oxidation, and energy transduction (B.2). Their role as the bioenergetic powerhouses of eukaryotic cells is central to metabolism."
     },
     {
       "episodeTitle": "Enzymes",
       "pid": "b08rp369",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "Enzyme regulation through allosteric control and feedback inhibition directly relates to the regulation of metabolism through enzymatic control mechanisms."
+      "relevantPathsAI": ["B", "B.1", "B.2", "B.3", "B.4"],
+      "rationaleAI": "Enzymes catalyze virtually all metabolic reactions including breaking down molecules (B.1 catabolism), energy-yielding oxidation reactions (B.2), building molecules (B.3 anabolism), and regulating cell growth and death (B.4 regulation of metabolism). Their control of reaction speed is fundamental to bioenergetics and biosynthesis."
     },
     {
-      "episodeTitle": "Macromolecules",
-      "pid": "b018grhm",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "Macromolecules including proteins, nucleic acids, carbohydrates, and lipids represent the products of biosynthesis (anabolism) -- the building of cell components from simpler precursors."
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Hormones regulate metabolism and maintain homeostasis through feedback loops; insulin and cortisol are key metabolic regulators controlling energy balance, directly relevant to the regulation of metabolism (B.4)."
     },
     {
       "episodeTitle": "Free Radicals",
       "pid": "m0000xqd",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Free radicals and oxidative processes in cellular damage and defense relate to oxidation reactions within cellular respiration and the metabolic balance of oxidation and transduction."
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Free radicals are a byproduct of cellular respiration causing cumulative oxidative damage, directly addressing the biochemistry of oxidation processes in living cells (B.2 cellular respiration, oxidation and transduction)."
+    },
+    {
+      "episodeTitle": "The Second Law of Thermodynamics",
+      "pid": "p004y2bm",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "The second law governs energy dispersal and entropy, the thermodynamic principles underlying why metabolic energy transformations in cellular respiration are irreversible and why organisms must continuously consume and transduce energy (B.2)."
     },
     {
       "episodeTitle": "Plankton",
       "pid": "m001r1t5",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Phytoplankton as major producers of atmospheric oxygen through photosynthesis illustrates the biological importance of photosynthesis at the global scale."
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Phytoplankton are photosynthetic microorganisms producing approximately half of Earth's atmospheric oxygen and driving oceanic carbon cycling, illustrating the biological importance of photosynthesis at planetary scale (A.1)."
     },
     {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "A.7"
-      ],
-      "rationaleAI": "The carbon cycle and carbon's role in organic chemistry connect to the metabolic path of carbon in photosynthesis through the carbon reduction cycle."
+      "episodeTitle": "The Photon",
+      "pid": "b051vlpf",
+      "relevantPathsAI": ["A.6"],
+      "rationaleAI": "The photon as a quantum of electromagnetic radiation is the energy input captured in photosynthetic light reactions; understanding photon absorption is essential to the energetics of photosynthesis, photoelectron transfer, and photophosphorylation (A.6)."
+    },
+    {
+      "episodeTitle": "Macromolecules",
+      "pid": "b018grhm",
+      "relevantPathsAI": ["B.3"],
+      "rationaleAI": "Proteins, nucleic acids, and carbohydrates are the macromolecular products of biosynthesis (B.3 anabolism). Polymer assembly from monomeric subunits exemplifies the constructive metabolic pathways that build cell components."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

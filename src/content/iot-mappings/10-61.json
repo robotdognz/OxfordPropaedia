@@ -2,40 +2,67 @@
   "sectionCode": "10/61",
   "mappings": [
     {
+      "episodeTitle": "Copyright",
+      "pid": "m002c3bm",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Copyright law: legal framework for publishing."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 1",
+      "pid": "b018wfsc",
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Writing as technology for recording and preserving knowledge."
+    },
+    {
+      "episodeTitle": "Pitt-Rivers",
+      "pid": "b01qwgxx",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "A.1.b.iv",
+        "A.1.c.ii"
+      ],
+      "rationaleAI": "Pitt-Rivers Museum: museum founding and classification."
+    },
+    {
+      "episodeTitle": "The Encyclopédie",
+      "pid": "p0038x93",
+      "relevantPathsAI": [
+        "B.2",
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Encyclopedie: encyclopedia, publishing."
+    },
+    {
       "episodeTitle": "The Library of Alexandria",
       "pid": "b00j0q53",
       "relevantPathsAI": [
         "B.4",
+        "B.5",
         "C.2"
       ],
-      "rationaleAI": "The Library of Alexandria as the greatest ancient centre of learning, with its Mouseion research institution and text collection, addresses libraries (B.4) and academies of learning (C.2)."
+      "rationaleAI": "Library of Alexandria: library, cataloguing, academy."
     },
     {
-      "episodeTitle": "The Library at Nineveh",
-      "pid": "b00b7r71",
+      "episodeTitle": "Imperial Science",
+      "pid": "p00547b5",
       "relevantPathsAI": [
-        "B.4",
-        "B.5"
+        "A.4.c",
+        "C.2"
       ],
-      "rationaleAI": "The Library of Ashurbanipal at Nineveh as the greatest collection of cuneiform texts addresses libraries (B.4) and archives (B.5) in the ancient world."
+      "rationaleAI": "Imperial Science: botanical gardens, scientific societies."
     },
     {
-      "episodeTitle": "Episode 2",
-      "pid": "b018wy46",
+      "episodeTitle": "Li Shizhen",
+      "pid": "m000bp3g",
       "relevantPathsAI": [
-        "C.3",
-        "C.3.a.i"
+        "B.2"
       ],
-      "rationaleAI": "The invention and impact of the book from scrolls through codex to print addresses publishing history (C.3) and book publishing (C.3.a.i)."
-    },
-    {
-      "episodeTitle": "Caxton and the Printing Press",
-      "pid": "b01nbqz3",
-      "relevantPathsAI": [
-        "C.3",
-        "C.3.a.i"
-      ],
-      "rationaleAI": "Caxton's introduction of the printing press to England and its impact on literacy and the book trade address publishing (C.3) and book publishing (C.3.a.i)."
+      "rationaleAI": "Li Shizhen's Compendium: encyclopedic reference."
     },
     {
       "episodeTitle": "Pliny's Natural History",
@@ -43,42 +70,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Pliny's Natural History as one of the first encyclopaedic works directly addresses encyclopaedias (B.2) as a form of knowledge storage and retrieval."
-    },
-    {
-      "episodeTitle": "Episode 1",
-      "pid": "b018wfsc",
-      "relevantPathsAI": [
-        "B"
-      ],
-      "rationaleAI": "The origins of writing from cuneiform to alphabetic script enabled the storage and retrieval of information (B), foundational for all subsequent knowledge institutions."
-    },
-    {
-      "episodeTitle": "Episode 5",
-      "pid": "b018xy22",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "Writing's role in disseminating scientific knowledge through printed texts and the Republic of Letters addresses publishing and the dissemination of knowledge (C.3)."
-    },
-    {
-      "episodeTitle": "Information Technology",
-      "pid": "p00546lm",
-      "relevantPathsAI": [
-        "B.6",
-        "C.3.b",
-        "C.4"
-      ],
-      "rationaleAI": "The information technology revolution covers digital communication, the internet, and the transformation of media, connecting to databases (B.6), electronic publishing (C.3.b), and broadcasting (C.4)."
-    },
-    {
-      "episodeTitle": "Heritage",
-      "pid": "p00548j4",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3"
-      ],
-      "rationaleAI": "Heritage culture covers the role of museums, historic preservation, and the politics of commemoration, addressing museums and galleries (A.1) and historic places and landmarks (A.3)."
+      "rationaleAI": "Pliny's Natural History: encyclopedia template."
     },
     {
       "episodeTitle": "The Royal Society and British Science: Episode 3",
@@ -86,18 +78,113 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "The 19th-century proliferation of specialist scientific societies (Geological Society, Linnean Society, British Association) addresses academies of learning established for the advancement of knowledge (C.2)."
+      "rationaleAI": "Royal Society: learned societies, professionalization."
     },
     {
-      "episodeTitle": "Imperial Science",
-      "pid": "p00547b5",
+      "episodeTitle": "The Venerable Bede",
+      "pid": "p004y26h",
       "relevantPathsAI": [
-        "A.1.b.ii",
-        "A.4.c"
+        "B.4",
+        "C.3.a.i"
       ],
-      "rationaleAI": "Imperial science's use of botanical gardens (Kew) and natural history collections for colonial purposes addresses museums of natural history (A.1.b.ii) and botanical gardens (A.4.c)."
+      "rationaleAI": "Bede: monastic libraries, book production."
+    },
+    {
+      "episodeTitle": "Education",
+      "pid": "p005463m",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Education: educational institutions."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 2",
+      "pid": "b018wy46",
+      "relevantPathsAI": [
+        "B",
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Written World Ep2: scrolls to printing, book history."
+    },
+    {
+      "episodeTitle": "Octavia Hill",
+      "pid": "b0100jpz",
+      "relevantPathsAI": [
+        "A.3",
+        "A.5"
+      ],
+      "rationaleAI": "Octavia Hill: National Trust, historic preservation."
+    },
+    {
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": [
+        "C.3.a.i",
+        "C.3.a.ii"
+      ],
+      "rationaleAI": "17th-century print culture: books, pamphlets, periodicals."
+    },
+    {
+      "episodeTitle": "The Medieval University",
+      "pid": "b00zf384",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Medieval University: educational and learned institutions."
+    },
+    {
+      "episodeTitle": "The Royal Society and British Science: Episode 1",
+      "pid": "b00pk7j0",
+      "relevantPathsAI": [
+        "C.2",
+        "C.5"
+      ],
+      "rationaleAI": "Royal Society founding: academy, observatory."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 5",
+      "pid": "b018xy22",
+      "relevantPathsAI": [
+        "B",
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Written World Ep5: notebooks, manuscripts, scientific knowledge."
+    },
+    {
+      "episodeTitle": "Melvyn Bragg talks to Mishal Husain",
+      "pid": "p0gfn8qk",
+      "relevantPathsAI": [
+        "C.4.a"
+      ],
+      "rationaleAI": "In Our Time 1000th: radio as knowledge dissemination."
+    },
+    {
+      "episodeTitle": "Biography",
+      "pid": "p00546vf",
+      "relevantPathsAI": [
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Biography: book publishing genre."
+    },
+    {
+      "episodeTitle": "Giorgio Vasari's Lives of the Artists",
+      "pid": "b00sg2y4",
+      "relevantPathsAI": [
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Vasari's Lives: reference text, knowledge dissemination."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 3",
+      "pid": "b018xsmd",
+      "relevantPathsAI": [
+        "B",
+        "C.3.a.i"
+      ],
+      "rationaleAI": "Written World Ep3: sacred manuscripts, book preservation."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

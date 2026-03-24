@@ -4,73 +4,88 @@
     {
       "episodeTitle": "Memory",
       "pid": "p00548yy",
-      "relevantPathsAI": [
-        "E",
-        "F"
-      ],
-      "rationaleAI": "Memory covers types of memory (episodic, semantic, procedural, working memory), the neuroscience of memory formation and retrieval (hippocampus, long-term potentiation), psychology of forgetting, false memories, and amnesia, directly addressing retention, forgetting, and abnormalities of memory."
+      "relevantPathsAI": ["E", "F"],
+      "rationaleAI": "Directly addresses encoding, storage, and retrieval of experience across short-term, long-term, episodic, semantic, and procedural memory systems (E), while its examination of amnesia, false memory, and the reconstructive fallibility of memory processes maps to abnormalities of memory (F)."
     },
     {
-      "episodeTitle": "The Infant Brain",
-      "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "C",
-        "G.2"
-      ],
-      "rationaleAI": "The infant brain covers critical periods for language acquisition and visual development, neuroplasticity, synaptogenesis and synaptic pruning, and debates about innate versus learned capacities, addressing theories of learning, perceptual learning, and the role of language in thought processes."
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["A.2", "D", "G.1"],
+      "rationaleAI": "The nature-nurture debate over cognitive ability, multiple intelligence theories, and what cognitive science reveals about problem-solving, memory, and abstract reasoning bear directly on major issues in learning theories (A.2), conceptual learning (D), and the psychology of higher thought processes (G.1)."
     },
     {
-      "episodeTitle": "Dreams",
-      "pid": "p004y23x",
-      "relevantPathsAI": [
-        "E",
-        "F"
-      ],
-      "rationaleAI": "Dreams covers memory consolidation theories and the relationship between dreaming and memory processing, directly relevant to retention of learned content and the relationship between sleep states and memory."
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": ["G.2", "G.3", "D"],
+      "rationaleAI": "Chomsky's innate universal grammar, the relationship between language and thought, and nativist versus empiricist models of language acquisition directly address the role of language in higher thought processes (G.2) and meaning (G.3), while the capacity for infinite expression from finite elements illuminates concept formation (D)."
+    },
+    {
+      "episodeTitle": "Imagination",
+      "pid": "p00548lc",
+      "relevantPathsAI": ["G.1", "D"],
+      "rationaleAI": "Kant's characterization of imagination as a fundamental cognitive faculty, together with examination of mental simulation, abstract thought, novel mental representations, and counterfactual reasoning, maps to the psychology of higher thought processes (G.1) and conceptual learning through creative problem-solving (D)."
     },
     {
       "episodeTitle": "History of Metaphor",
       "pid": "b00w227c",
-      "relevantPathsAI": [
-        "G.2",
-        "G.3"
-      ],
-      "rationaleAI": "The history of metaphor covers cognitive linguistics (Lakoff and Johnson), metaphor's role in everyday reasoning and scientific discovery, and the relationship between literal and figurative meaning, directly addressing the role of language in higher thought processes and meaning."
+      "relevantPathsAI": ["G.2", "G.3"],
+      "rationaleAI": "Analysis of how metaphor functions as a cognitive device revealing the mind's capacity for analogy and abstraction, combined with theories of how metaphor shapes meaning, directly addresses the role of language in higher thought processes (G.2) and meaning (G.3)."
+    },
+    {
+      "episodeTitle": "Neuroscience",
+      "pid": "b00fbd26",
+      "relevantPathsAI": ["A.1", "G.1"],
+      "rationaleAI": "Advances in brain science revealing biological mechanisms of thought, decision-making, and behaviour provide neurological foundations for modern learning theories (A.1) and illuminate the neural substrates of higher thought processes (G.1)."
     },
     {
       "episodeTitle": "The Brain and Consciousness",
       "pid": "p0054582",
-      "relevantPathsAI": [
-        "E",
-        "F",
-        "G.1"
-      ],
-      "rationaleAI": "The neural basis of memory, perception, and awareness, and the development of neuroscience address memory formation, amnesia and neurological disorders, and the psychology of higher thought processes."
+      "relevantPathsAI": ["E", "G.1"],
+      "rationaleAI": "Examination of brain structure and memory mechanisms addresses retention and forgetting (E), while analysis of how neural processes give rise to cognition and conscious experience connects to the psychology of higher thought processes (G.1)."
     },
     {
-      "episodeTitle": "Neuroscience in the 20th century",
-      "pid": "p005459f",
-      "relevantPathsAI": [
-        "E",
-        "F",
-        "G.1"
-      ],
-      "rationaleAI": "Neuroscience advances in understanding memory formation, synaptic plasticity, and neurological disorders (Alzheimer's) directly address retention and forgetting, abnormalities of memory, and the psychology of higher thought processes."
+      "episodeTitle": "The Brain",
+      "pid": "b00b54yx",
+      "relevantPathsAI": ["A.1", "G.1"],
+      "rationaleAI": "The historical trajectory from ancient debates about the seat of thought to modern neuroimaging of functional brain architecture provides biological context for modern learning theories (A.1) and the study of higher thought processes (G.1)."
+    },
+    {
+      "episodeTitle": "Dreams",
+      "pid": "p004y23x",
+      "relevantPathsAI": ["E", "C"],
+      "rationaleAI": "Neuroscience of dream formation, including memory consolidation processes and contributions connecting perception and memory, addresses retention of learned content (E) and the psychology of perception as it relates to perceptual learning (C)."
+    },
+    {
+      "episodeTitle": "Imagination and Consciousness",
+      "pid": "p00546vr",
+      "relevantPathsAI": ["G.1", "C"],
+      "rationaleAI": "The capacity to form mental representations of absent objects, mental imagery and its neural correlates, and debates over conscious and subconscious processing address the psychology of higher thought processes (G.1), while examination of subjective experience and perception connects to perceptual learning (C)."
+    },
+    {
+      "episodeTitle": "Lévi-Strauss",
+      "pid": "b01sjjxl",
+      "relevantPathsAI": ["D", "G.1"],
+      "rationaleAI": "Lévi-Strauss's argument that underlying structures of human thought are universal across all cultures, along with his work on classification systems in The Savage Mind, directly addresses conceptual learning and concept formation (D) and the psychology of higher thought processes (G.1)."
+    },
+    {
+      "episodeTitle": "Education",
+      "pid": "p005463m",
+      "relevantPathsAI": ["A", "A.3"],
+      "rationaleAI": "The debate between Plato's emphasis on revealing eternal truths versus modern vocational approaches engages fundamental questions about theories of learning (A), and whether education should teach transferable understanding or practical tools directly addresses transfer of training (A.3)."
+    },
+    {
+      "episodeTitle": "Empiricism",
+      "pid": "p004y28g",
+      "relevantPathsAI": ["A.2"],
+      "rationaleAI": "Locke's foundational argument that all ideas derive from experience rather than innate knowledge, and the empiricist-nativist debate it established, directly addresses major issues in learning theories (A.2) regarding the origins and mechanisms of human knowledge acquisition."
     },
     {
       "episodeTitle": "Evolutionary Psychology",
       "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "G.1"
-      ],
-      "rationaleAI": "Evolutionary psychology's coverage of modular theories of mind, the evolution of language, and the nature-nurture debate addresses modern learning theories, major issues in learning, and the psychology of higher thought processes."
+      "relevantPathsAI": ["A.2", "G.1"],
+      "rationaleAI": "The debate over whether human cognition and behaviour are fundamentally determined by genetic imperatives or shaped by culture and learning addresses major issues in learning theories (A.2), while modular theories of mind and the evolution of cognitive capacities connect to the psychology of higher thought processes (G.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

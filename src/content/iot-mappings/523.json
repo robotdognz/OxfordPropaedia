@@ -2,78 +2,114 @@
   "sectionCode": "523",
   "mappings": [
     {
+      "episodeTitle": "The Aristocracy",
+      "pid": "p00548zx",
+      "relevantPathsAI": ["A.3.a", "A.3.b", "B.1", "B.3"],
+      "rationaleAI": "British aristocracy exemplifies stratification through land ownership, hereditary titles, and political power (A.3.b, B.1), with aristocratic decline driven by industrialization and democratic reform illustrating shifts in upper-class status (B.3) and the economic foundations of elite power (A.3.a)."
+    },
+    {
       "episodeTitle": "The Theory of the Leisure Class",
       "pid": "m001sdrt",
-      "relevantPathsAI": [
-        "A.3.b",
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "Veblen's Theory of the Leisure Class analyzing conspicuous consumption, the distinction between industrial and pecuniary employments, and emulation driving consumer behaviour directly addresses class, status, and power as forms of stratification and theories and characteristics of social classes."
+      "relevantPathsAI": ["A.1", "A.3.a", "A.3.b", "B.2", "B.3"],
+      "rationaleAI": "Veblen's concepts of conspicuous consumption and conspicuous leisure are foundational to theories of social stratification (A.1, B.2), analyzing how the newly wealthy American class signaled status through wasteful display (A.3.b) and how economic differentiation produced class-specific behaviors (A.3.a, B.3)."
+    },
+    {
+      "episodeTitle": "Social Darwinism",
+      "pid": "b03vgq1q",
+      "relevantPathsAI": ["A.2", "A.3.b", "B.2"],
+      "rationaleAI": "Social Darwinism applied natural selection to justify racial hierarchies and laissez-faire economics as theories of social stratification (B.2), connecting racial and intellectual differentiation (A.2) to ideologies legitimizing class, status, and power inequalities (A.3.b)."
+    },
+    {
+      "episodeTitle": "Weber's The Protestant Ethic",
+      "pid": "b03yqj31",
+      "relevantPathsAI": ["A.3.a", "B.2"],
+      "rationaleAI": "Weber's thesis that Calvinist theology fostered dispositions enabling modern capitalism represents a major theory of how cultural values produce economic differentiation (A.3.a), and Weber himself is among the most important theorists of class, status, and power as forms of stratification (B.2)."
     },
     {
       "episodeTitle": "Consequences of the Industrial Revolution",
       "pid": "b00wr9r7",
-      "relevantPathsAI": [
-        "A.3.a",
-        "B.3",
-        "B.4"
-      ],
-      "rationaleAI": "The consequences of the Industrial Revolution cover the rise of the middle class, class formation, and trade union movements, directly addressing economic differentiation as the basis of stratification, characteristics of modern social classes, and social mobility."
-    },
-    {
-      "episodeTitle": "Feminism",
-      "pid": "p00545b0",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Feminism covers sex differentiation and the transformation of women's legal, economic, and social status, directly addressing factors producing social and cultural differences including sex differentiation."
-    },
-    {
-      "episodeTitle": "The Great Gatsby",
-      "pid": "m000r4tq",
-      "relevantPathsAI": [
-        "B.3",
-        "B.4"
-      ],
-      "rationaleAI": "The Great Gatsby examines wealth, class, the corruption of the American Dream, social mobility, and the critique of 1920s consumer culture, directly addressing characteristics of social classes and social mobility."
-    },
-    {
-      "episodeTitle": "Cultural Imperialism",
-      "pid": "p00548h4",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3.c"
-      ],
-      "rationaleAI": "Cultural imperialism covers the imposition of cultural values by dominant powers on subordinate peoples and postcolonial resistance, addressing social and cultural factors in differentiation and the relation of the individual to society."
+      "relevantPathsAI": ["A.3.a", "B.3", "B.4"],
+      "rationaleAI": "The social consequences of industrialization—workers moving from agricultural settlements to factory towns, transforming health, housing, and labour relations—directly illustrate how economic change produces new class structures (A.3.a, B.3) and reshapes social mobility (B.4)."
     },
     {
       "episodeTitle": "The Industrial Revolution",
       "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A.3.a",
-        "B.3"
-      ],
-      "rationaleAI": "The Industrial Revolution's social consequences including class formation, child labour, and urbanisation directly address economic differentiation as the basis of stratification and types of modern social classes."
+      "relevantPathsAI": ["A.3.a", "B.4"],
+      "rationaleAI": "The Industrial Revolution altered class structures, labor relations, and living conditions as mechanized production and urbanization created new economic bases for social stratification (A.3.a) and new patterns of social mobility (B.4)."
     },
     {
-      "episodeTitle": "Plato's Republic",
-      "pid": "b08vwn6h",
-      "relevantPathsAI": [
-        "B.2",
-        "B.5"
-      ],
-      "rationaleAI": "Plato's Republic covers the tripartite class structure of the ideal state, the philosopher-king, and gender equality among guardians, directly addressing theories of social class and the idea of a classless society."
+      "episodeTitle": "North and South",
+      "pid": "b08h0654",
+      "relevantPathsAI": ["A.3.a", "A.3.b", "B.3"],
+      "rationaleAI": "Gaskell's novel dramatizes class tensions between factory owners and workers in industrial England, exploring new social structures created by industrial capitalism (A.3.a, A.3.b) and the characteristics of the emerging working and middle classes (B.3)."
     },
     {
-      "episodeTitle": "The Individual",
-      "pid": "p0054631",
-      "relevantPathsAI": [
-        "A.3.c"
-      ],
-      "rationaleAI": "The concept of the individual covers the tension between individual rights and communal obligations, individualism and political liberalism, directly addressing the relation of the individual to society and the effects of differentiation and stratification."
+      "episodeTitle": "Germinal",
+      "pid": "m001rq08",
+      "relevantPathsAI": ["A.3.a", "B.2", "B.3"],
+      "rationaleAI": "Zola's depiction of coalmining communities, class struggle, and tensions between capitalism, socialism, and anarchism provides a naturalistic portrait of working-class conditions (B.3), economic exploitation as the basis of stratification (A.3.a), and competing theories about class relationships (B.2)."
+    },
+    {
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["A.2", "A.3.c"],
+      "rationaleAI": "IQ testing's misuse in eugenics and scientific racism, the nature-versus-nurture debate over cognitive ability, and the relationship between intelligence metrics and social outcomes directly address intellectual and racial differentiation as factors producing social stratification (A.2) and the effects on individuals (A.3.c)."
+    },
+    {
+      "episodeTitle": "The Black Death",
+      "pid": "b00bcqt8",
+      "relevantPathsAI": ["A.3.a", "B.3", "B.4"],
+      "rationaleAI": "Labour shortages after the plague empowered surviving peasants economically, challenging feudal structures—a dramatic historical example of how demographic catastrophe reshaped social hierarchy (A.3.a), the peasant class's position (B.3), and upward social mobility (B.4)."
+    },
+    {
+      "episodeTitle": "The Eunuch",
+      "pid": "b053bsf9",
+      "relevantPathsAI": ["A.2", "A.3.b", "B.1"],
+      "rationaleAI": "Eunuchs rising to political power within royal households across civilizations illustrates the intersection of bodily modification, gender, and servitude with social hierarchy (A.2, A.3.b), and represents a distinctive form of elite status and caste-like social position (B.1)."
+    },
+    {
+      "episodeTitle": "Politeness",
+      "pid": "p004y29m",
+      "relevantPathsAI": ["A.3.c", "B.4"],
+      "rationaleAI": "Eighteenth-century politeness culture represented a social revolution reshaping class interactions beyond aristocratic circles, illustrating how cultural norms mediate the individual's relation to stratified society (A.3.c) and enable social mobility through refined manners and taste (B.4)."
+    },
+    {
+      "episodeTitle": "Piers Plowman",
+      "pid": "m000nvsl",
+      "relevantPathsAI": ["A.3.c", "B.3"],
+      "rationaleAI": "Langland's poem explores the moral obligations of different social classes and questions of social justice and labor in fourteenth-century England, directly addressing the peasant class (B.3) and the relation of individuals to their stratified society (A.3.c)."
+    },
+    {
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": ["B.2", "B.5"],
+      "rationaleAI": "Lenin's adaptation of Marxist class theory to build the Soviet one-party state represents a major attempt to realize a classless society (B.5), grounded in Marxist-Leninist theory of class struggle and revolutionary transformation of social structures (B.2)."
+    },
+    {
+      "episodeTitle": "Edith Wharton",
+      "pid": "m0000ml8",
+      "relevantPathsAI": ["A.3.b", "B.3"],
+      "rationaleAI": "Wharton's novels explore privileged New York Gilded Age society, depicting the constraints of upper-class life and women's limited choices within rigid social hierarchies, illustrating class and status as forms of stratification (A.3.b) and the characteristics of the upper class (B.3)."
+    },
+    {
+      "episodeTitle": "Materialism and the Consumer",
+      "pid": "p00546q2",
+      "relevantPathsAI": ["A.3.a", "A.3.b"],
+      "rationaleAI": "Consumer culture's role in shaping identity and social participation, where acquiring goods functions as status display or democratic expression, connects economic differentiation (A.3.a) with status as a form of stratification through material consumption (A.3.b)."
+    },
+    {
+      "episodeTitle": "Marriage",
+      "pid": "p00548c2",
+      "relevantPathsAI": ["A.2", "A.3.c"],
+      "rationaleAI": "Marriage as an economic and social institution involving financial stability, class endogamy, and gender relations illustrates sex differentiation and social factors in producing stratification (A.2) and the effects of social structure on individual life (A.3.c)."
+    },
+    {
+      "episodeTitle": "John Wesley and Methodism",
+      "pid": "m000q3m2",
+      "relevantPathsAI": ["B.3"],
+      "rationaleAI": "Methodism's deliberate targeting of new industrial working-class communities underserved by the established Church of England illuminates the characteristics and cultural life of the emerging working class (B.3) during Britain's industrialization."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -5,14 +5,17 @@
       "episodeTitle": "The Laws of Motion",
       "pid": "b009mvj0",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.2",
         "A.3",
         "A.3.b",
         "A.3.b.i",
         "A.3.b.v",
-        "A.3.b.vi"
+        "A.3.c",
+        "A.3.e"
       ],
-      "rationaleAI": "Newton's three laws of motion (inertia, force, action-reaction), universal gravitation, and the synthesis of terrestrial and celestial mechanics comprehensively address statics (A.2), dynamics (A.3), Newton's laws (A.3.b.i), and gravitational law (A.3.b.v)."
+      "rationaleAI": "Newton's three laws of motion—inertia, the relationship between force, mass and acceleration, and action-reaction—are the foundation of classical mechanics, directly covering statics and dynamics (A.2, A.3), Newton's laws (A.3.b.i), universal gravitation (A.3.b.v), momentum (A.3.c), and energy concepts (A.3.e). The unification of terrestrial and celestial mechanics bridges sections A and B."
     },
     {
       "episodeTitle": "Relativity",
@@ -24,42 +27,58 @@
         "C.3",
         "A.3.e.iii"
       ],
-      "rationaleAI": "Special and general relativity covering spacetime unification, E=mc2, time dilation, and gravitational lensing directly address relativistic mechanics (C), including mass-energy equivalence (A.3.e.iii)."
+      "rationaleAI": "Einstein's special and general relativity directly address relativistic mechanics in inertial systems (C), including the mechanical foundations of special relativity (C.1), relativistic kinematics such as time dilation and length contraction (C.2), the equivalence of gravitational and inertial mass (C.3), and mass-energy equivalence E=mc² (A.3.e.iii)."
     },
     {
       "episodeTitle": "Johannes Kepler",
       "pid": "b085xpzf",
       "relevantPathsAI": [
         "A.3.b.vi",
-        "B"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Kepler's three laws of planetary motion (elliptical orbits, equal areas, harmonic law) directly address Kepler's laws (A.3.b.vi) and celestial mechanics (B)."
+      "rationaleAI": "Kepler's three laws of planetary motion—elliptical orbits, equal areas in equal times, and the period-distance relationship—are explicitly listed in the outline (A.3.b.vi) and form the historical foundation of celestial mechanics (B.1). His work transforming Copernican astronomy by abandoning circular orbits laid essential groundwork for Newtonian gravitational theory."
     },
     {
-      "episodeTitle": "The Speed of Light",
-      "pid": "p0038x9h",
+      "episodeTitle": "Perpetual Motion",
+      "pid": "b06c06nd",
       "relevantPathsAI": [
-        "C.1",
-        "A.3.e.iii"
+        "A.3.d",
+        "A.3.e",
+        "A.3.e.i"
       ],
-      "rationaleAI": "The speed of light as a fundamental constant of relativity, time dilation, length contraction, and mass-energy equivalence address mechanical foundations of special relativity (C.1) and the equivalence of mass and energy (A.3.e.iii)."
+      "rationaleAI": "The history of perpetual motion machines directly engages work and power (A.3.d), energy concepts (A.3.e), and especially energy conservation (A.3.e.i). Leonardo da Vinci's spinning wheel experiments and the definitive refutation through Joule's and von Mayer's thermodynamic laws illustrate why mechanical energy cannot be created from nothing."
     },
     {
-      "episodeTitle": "Gravitational Waves",
-      "pid": "b007h8gv",
+      "episodeTitle": "Kinetic Theory",
+      "pid": "m00057s5",
       "relevantPathsAI": [
-        "C.3"
+        "A.1",
+        "A.3.b",
+        "A.3.c",
+        "A.3.e",
+        "A.4.a"
       ],
-      "rationaleAI": "Gravitational waves predicted by general relativity and their detection via LIGO address the relationship between gravitational mass and inertial mass in relativistic mechanics (C.3)."
+      "rationaleAI": "Kinetic theory applies classical mechanical principles—particle motion, momentum, and energy—to gas molecules, connecting the fundamental parameters of matter and motion (A.1) with dynamics of particles (A.3.b). Maxwell and Boltzmann's statistical treatment of molecular collisions involves momentum transfer (A.3.c), energy distribution (A.3.e), and elastic collisions between particles (A.4.a)."
     },
     {
-      "episodeTitle": "The Physics of Time",
-      "pid": "b00g0nmw",
+      "episodeTitle": "Chaos Theory",
+      "pid": "p00548f6",
       "relevantPathsAI": [
-        "A.3.a.i",
-        "C"
+        "A.3",
+        "A.6"
       ],
-      "rationaleAI": "Newton's absolute time, Einstein's relativistic spacetime, time dilation, and the block universe concept address kinematics (A.3.a.i) and relativistic mechanics (C)."
+      "rationaleAI": "Chaos theory emerged from classical mechanics, specifically from sensitivity to initial conditions in deterministic dynamical systems. The episode traces from Newton's Principia to the discovery that complex mechanical systems can exhibit unpredictable behavior, directly relevant to the mechanics of complex systems (A.6) and nonlinear dynamics within classical mechanics (A.3)."
+    },
+    {
+      "episodeTitle": "Zeno's Paradoxes",
+      "pid": "b07vs3v1",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.a",
+        "A.3.a.i"
+      ],
+      "rationaleAI": "Zeno's paradoxes of motion—Achilles and the tortoise, the flying arrow—directly challenge the fundamental parameters of mechanics: motion, space, and time (A.1). They address kinematics (A.3.a) by questioning how continuous motion and velocity (A.3.a.i) are possible, problems whose resolution through calculus underpins modern mechanical analysis."
     },
     {
       "episodeTitle": "Albert Einstein",
@@ -67,11 +86,162 @@
       "relevantPathsAI": [
         "C",
         "C.1",
+        "C.2",
+        "C.3",
+        "A.3.e.iii"
+      ],
+      "rationaleAI": "Einstein's 1905 papers on special relativity and mass-energy equivalence directly address the mechanical foundations of special relativity (C.1), relativistic kinematics (C.2), the relationship between gravitational and inertial mass (C.3), and E=mc² (A.3.e.iii). His work on Brownian motion also connects to particle mechanics."
+    },
+    {
+      "episodeTitle": "Pierre-Simon Laplace",
+      "pid": "m000twgj",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.4",
+        "A.6.d"
+      ],
+      "rationaleAI": "Laplace made foundational contributions to celestial mechanics (B), demonstrating the long-term stability of the Solar System through perturbation theory (B.2) and addressing the general n-body problem (B.4). His deterministic framework and advanced mathematical methods connect to Lagrangian and Hamiltonian formulations of mechanics (A.6.d)."
+    },
+    {
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
+      "relevantPathsAI": [
+        "A.3.e.i",
+        "A.3.f"
+      ],
+      "rationaleAI": "Noether's theorem establishes the fundamental connection between symmetries and conservation laws in mechanics—time-translation symmetry yields energy conservation (A.3.e.i) and spatial-translation symmetry yields momentum conservation (A.3.f). These principles are cornerstones of both classical and relativistic mechanics."
+    },
+    {
+      "episodeTitle": "The Speed of Light",
+      "pid": "p0038x9h",
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "A.3.e.iii"
+      ],
+      "rationaleAI": "The speed of light as an absolute cosmic speed limit is the mechanical foundation of special relativity (C.1). Time dilation, length contraction, and mass-energy equivalence are consequences of relativistic kinematics (C.2, A.3.e.iii). Historical measurements from Roemer onward connect to the development of mechanics."
+    },
+    {
+      "episodeTitle": "Gravitational Waves",
+      "pid": "b007h8gv",
+      "relevantPathsAI": [
+        "C",
+        "C.3",
+        "B"
+      ],
+      "rationaleAI": "Gravitational waves are ripples in spacetime predicted by general relativity, directly connecting to relativistic mechanics (C) and the relationship between gravitational and inertial mass (C.3). Their generation by orbiting massive bodies relates to celestial mechanics (B) and wave propagation in the gravitational field."
+    },
+    {
+      "episodeTitle": "The Physics of Time",
+      "pid": "b00g0nmw",
+      "relevantPathsAI": [
+        "A.1",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Time is a fundamental parameter of classical mechanics (A.1). Newton's absolute time versus Einstein's relativistic time directly addresses the mechanical foundations of special relativity (C.1) and relativistic kinematics (C.2), where time dilation near massive objects and at high velocities transforms mechanical predictions."
+    },
+    {
+      "episodeTitle": "Comets",
+      "pid": "b01pw38n",
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Halley's demonstration that cometary apparitions were the same object returning every 75 years is a landmark in celestial mechanics (B.1). Cometary orbits, their perturbations by planetary gravity (B.2), and the application of Keplerian and Newtonian orbital mechanics to predict their return paths are core topics."
+    },
+    {
+      "episodeTitle": "Mercury",
+      "pid": "m001yqp3",
+      "relevantPathsAI": [
+        "B",
+        "B.2",
         "C.3"
       ],
-      "rationaleAI": "Einstein's special and general relativity, Brownian motion, and mass-energy equivalence directly address relativistic mechanics (C) and the relationship between gravitational and inertial mass (C.3)."
+      "rationaleAI": "The anomalous precession of Mercury's perihelion was the key observational test confirming Einstein's general relativity, directly relevant to orbital perturbations in celestial mechanics (B.2) and the relationship between gravitational and inertial mass (C.3). Mercury's orbit exemplifies the two-body problem with relativistic corrections."
+    },
+    {
+      "episodeTitle": "States of Matter",
+      "pid": "b03zdbr4",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "F.1",
+        "G"
+      ],
+      "rationaleAI": "States of matter—solid, liquid, gas, plasma—are distinguished by intermolecular forces and molecular arrangement, connecting to elasticity and stress-strain relationships in solids (D.1, D.2), general fluid properties (F.1), and rheological phenomena in materials like glasses, gels, and liquid crystals that exhibit complex deformation and flow behavior (G)."
+    },
+    {
+      "episodeTitle": "The Music of the Spheres",
+      "pid": "b00c1fct",
+      "relevantPathsAI": [
+        "B.1",
+        "A.3.b.vi"
+      ],
+      "rationaleAI": "The ancient concept of celestial harmony originates from Pythagorean mathematics applied to planetary motion. Kepler's Harmonices Mundi explicitly derived musical intervals from orbital mechanics, connecting Kepler's laws of planetary motion (A.3.b.vi) with the scope and history of celestial mechanics (B.1)."
+    },
+    {
+      "episodeTitle": "Mathematics and Music",
+      "pid": "p003c1b9",
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.3"
+      ],
+      "rationaleAI": "The physics of vibrating strings producing harmonic series directly addresses vibrations of elastic bodies (E), including natural or free vibrations and their modes (E.1), and types of vibrational waves and their propagation (E.3). The mathematical relationship between string length, tension, and pitch is a foundational example of mechanical vibration theory."
+    },
+    {
+      "episodeTitle": "The Antikythera Mechanism",
+      "pid": "m0024x0g",
+      "relevantPathsAI": [
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "This ancient bronze analogue computer calculated planetary positions, tracked eclipse cycles, and modelled celestial mechanics with gear systems encoding orbital relationships. It demonstrates early practical application of celestial mechanical principles (B.1) two thousand years ago."
+    },
+    {
+      "episodeTitle": "The Second Law of Thermodynamics",
+      "pid": "p004y2bm",
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.e",
+        "A.3.e.i",
+        "A.3.e.ii"
+      ],
+      "rationaleAI": "The second law governs energy dispersal and entropy, directly relating to work and power (A.3.d), energy conservation (A.3.e.i), and forms of energy and their transformations (A.3.e.ii). Its original formulation through Carnot's analysis of steam engine efficiency connects mechanical work to heat, and the impossibility of perpetual motion machines is a direct mechanical consequence."
+    },
+    {
+      "episodeTitle": "Renaissance Maths",
+      "pid": "p003k9hq",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.a"
+      ],
+      "rationaleAI": "The transformation from studying static geometric shapes to tracking real-world motion, culminating in Newton and Leibniz's invention of calculus, directly enabled the mathematical framework of classical mechanics (A.1) and kinematics (A.3.a). Calculus is the essential tool for describing velocity, acceleration, and forces in mechanical systems."
+    },
+    {
+      "episodeTitle": "Jupiter",
+      "pid": "m001n8mv",
+      "relevantPathsAI": [
+        "B",
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Jupiter's massive gravitational influence on the distribution of matter in the solar system and its system of 95 moons illustrate orbital perturbations (B.2) and the n-body gravitational problem (B.4). Its gravitational sweeping of astral debris demonstrates ongoing celestial mechanical interactions."
+    },
+    {
+      "episodeTitle": "The Graviton",
+      "pid": "p003k9ks",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "The graviton as hypothetical quantum mediator of gravitational force directly addresses the relationship between gravitational mass and inertial mass (C.3), and the tension between general relativity's spacetime curvature and quantum field theory's force-carrier particle model of gravity."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

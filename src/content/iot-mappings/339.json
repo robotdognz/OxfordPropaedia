@@ -4,105 +4,64 @@
     {
       "episodeTitle": "Genetics",
       "pid": "p00547md",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2"
-      ],
-      "rationaleAI": "Covers the entire arc of genetics from Mendel's experiments with peas through the chromosome theory of inheritance (Morgan), DNA's structure (Watson, Crick, Franklin), the genetic code, and the Human Genome Project -- spanning both Mendelian genetics and molecular genetics."
+      "relevantPathsAI": ["A", "A.1", "A.2", "B.2", "C.2"],
+      "rationaleAI": "Traces the full history of genetics from Mendel's pea experiments establishing heredity laws through the Modern Synthesis linking genetics to Darwinian evolution, the discovery of DNA structure by Crick and Watson, and developments in genetic manipulation. Spans early speculations (A.1), Mendelian genetics (A.2), molecular genetics and DNA (B.2), and natural selection via the Modern Synthesis (C.2)."
     },
     {
       "episodeTitle": "Genetic Mutation",
       "pid": "b008drvm",
-      "relevantPathsAI": [
-        "B.2",
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Genetic mutation covers changes in DNA sequence including point mutations, insertions, deletions, and chromosomal rearrangements, their role as raw material for natural selection, neutral mutations and genetic drift -- directly relevant to the chemical nature of genes, gene mutations, and changes in gene frequencies."
-    },
-    {
-      "episodeTitle": "Evolution",
-      "pid": "p00545gl",
-      "relevantPathsAI": [
-        "A.3",
-        "B.2",
-        "C.2"
-      ],
-      "rationaleAI": "Covers natural selection, gene therapy, the Human Genome Project, and the tension between genetic determinism and environmental influence -- relevant to the combined action of heredity and environment, molecular genetics applications, and natural selection as evolutionary agent."
-    },
-    {
-      "episodeTitle": "Genetic Engineering",
-      "pid": "p00545bb",
-      "relevantPathsAI": [
-        "B.2",
-        "C.3"
-      ],
-      "rationaleAI": "Genetic engineering covers recombinant DNA technology, gene cloning, GMOs, gene therapy, and CRISPR -- directly relevant to applications of molecular genetics and artificial selection for genetic improvements."
+      "relevantPathsAI": ["B.2", "C.1", "C.2"],
+      "rationaleAI": "Examines the molecular mechanisms of DNA mutation as errors in replication, their role in generating heritable variation for natural selection, and Haldane's contributions to population genetics. Directly addresses the genetic code and its mutations (B.2), population-level gene frequency changes (C.1), and natural selection acting on mutational variation (C.2)."
     },
     {
       "episodeTitle": "Genetic Determinism",
       "pid": "p005461w",
-      "relevantPathsAI": [
-        "A.3",
-        "C.1"
-      ],
-      "rationaleAI": "Genetic determinism directly addresses the nature-nurture controversy, twin studies, behavioral genetics, and gene-environment interaction -- the core of the combined action of heredity and environment."
+      "relevantPathsAI": ["A.2", "A.3", "B.2"],
+      "rationaleAI": "Traces the intellectual lineage from Mendel's heredity laws through DNA discovery to debates about genes governing human traits, directly engaging the nature-versus-nurture question. Addresses Mendelian genetics (A.2), the combined action of heredity and environment on organism traits (A.3), and the molecular basis of hereditary claims via DNA (B.2)."
     },
     {
       "episodeTitle": "Hybrids",
       "pid": "m0009t41",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Hybridization covers interspecific reproduction, hybrid zones, polyploidy, and how hybridization challenges species concepts -- relevant to population genetics, gene pool changes, and natural selection's role in speciation."
+      "relevantPathsAI": ["B.1", "C.2", "C.3"],
+      "rationaleAI": "Examines what occurs when organisms with different genetic constitutions interbreed, producing sterile or fertile offspring with novel trait combinations through hybrid vigor. Darwin's study of domestication and artificial selection in agriculture and animal breeding connects to C.3, while the genetic mechanisms of speciation through hybridization involve chromosomal processes (B.1) and natural selection (C.2)."
     },
     {
-      "episodeTitle": "Darwin: On the Origin of Species",
-      "pid": "b00gd3wy",
-      "relevantPathsAI": [
-        "A.2",
-        "C.2"
-      ],
-      "rationaleAI": "Darwin's Origin of Species covers the argument for variation, struggle for existence, and natural selection as the mechanism of evolutionary change -- foundational to understanding heredity's role in evolution."
+      "episodeTitle": "Lamarck and Natural Selection",
+      "pid": "p005495d",
+      "relevantPathsAI": ["A.1", "A.2", "C.2"],
+      "rationaleAI": "Lamarck's theory of inheritance of acquired characteristics represents a key early speculation on heredity (A.1), and Darwin's effort to distinguish natural selection from Lamarckian inheritance frames the debate that Mendelian genetics ultimately resolved (A.2). Discussion of epigenetics connects historical heredity debates to modern molecular understanding of inheritance."
     },
     {
-      "episodeTitle": "Bacteriophages",
-      "pid": "m0020pf0",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Bacteriophages contributed to molecular genetics through the Hershey-Chase experiment confirming DNA as genetic material and CRISPR's origin in bacterial anti-phage defense -- directly relevant to the chemical and molecular nature of genes."
+      "episodeTitle": "Lysenkoism",
+      "pid": "b00bw51j",
+      "relevantPathsAI": ["A.1", "A.2", "C.2"],
+      "rationaleAI": "Lysenko's state-enforced rejection of Mendelian genetics in favour of Lamarckian inheritance of acquired characteristics devastated Soviet biological sciences for decades. Directly engages competing early theories of inheritance (A.1), the suppression and vindication of Mendel's laws (A.2), and the ideological rejection of Darwinian natural selection (C.2)."
+    },
+    {
+      "episodeTitle": "The Cell",
+      "pid": "b01mk8vh",
+      "relevantPathsAI": ["B.1"],
+      "rationaleAI": "The cell as the fundamental structural unit of life underpins the cellular basis of heredity, with cell division transmitting genetic material across generations. The episode explicitly notes that cell biology underpins genetics and developmental biology, connecting directly to chromosomes and genes at the cellular level (B.1)."
     },
     {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Macromolecules covers nucleic acids (DNA and RNA) for genetic information storage and transmission, and the determination of DNA structure by Watson and Crick -- directly relevant to the molecular basis of heredity."
-    },
-    {
-      "episodeTitle": "Circadian Rhythms",
-      "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Circadian rhythms are governed by clock genes and molecular feedback loops, providing a concrete example of gene expression and regulation -- relevant to the expression and regulation of genes."
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "DNA is highlighted as an extraordinarily complex informational polymer, and protein folding is covered as a key macromolecular process. Directly relevant to the chemical and molecular nature of genes (B.2), explaining the polymer chemistry underlying genetic information storage and protein expression."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2"
-      ],
-      "rationaleAI": "Mitochondria retain independent DNA with maternal inheritance patterns, illustrating a non-nuclear form of heredity -- relevant to the cellular basis of heredity and the chemical nature of genes."
+      "relevantPathsAI": ["B.1", "B.2"],
+      "rationaleAI": "Mitochondria possess their own circular DNA inherited maternally, providing a distinct non-nuclear mode of genetic transmission. Their role in tracing human evolutionary lineage through mitochondrial DNA connects the cellular basis of heredity (B.1) with the molecular nature of genes and applications of molecular genetics in population studies (B.2)."
+    },
+    {
+      "episodeTitle": "Social Darwinism",
+      "pid": "b03vgq1q",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "The eugenics movement promoting selective breeding of humans represents the most controversial historical application of hereditary principles to deliberate genetic modification of human populations (C.3). Illustrates how concepts of heredity and selection were appropriated for programs of artificial selection applied to humankind."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,123 +2,66 @@
   "sectionCode": "321",
   "mappings": [
     {
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
+      "relevantPathsAI": ["B.9", "B.9.a", "B.9.b"],
+      "rationaleAI": "Directly examines hormones as chemical messengers including oestrogen, testosterone, adrenalin, insulin, and cortisol, covering their roles in homeostasis, metabolism, growth, and reproduction, and the relationship between endocrine and neural regulation."
+    },
+    {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.5"
-      ],
-      "rationaleAI": "Macromolecules covers the four main classes of biological molecules -- carbohydrates, lipids, proteins, and nucleic acids (DNA and RNA) -- directly mapping to organic chemicals participating in life processes."
+      "relevantPathsAI": ["B", "B.1", "B.3", "B.5"],
+      "rationaleAI": "Examines the giant polymeric molecules forming the chemical basis of life — proteins, nucleic acids (DNA as informational polymer), and carbohydrates such as cellulose — alongside protein folding and the general chemistry of biological macromolecules."
     },
     {
       "episodeTitle": "Enzymes",
       "pid": "b08rp369",
-      "relevantPathsAI": [
-        "B.7"
-      ],
-      "rationaleAI": "Enzymes as biological catalysts with lock-and-key and induced fit models, reaction kinetics, cofactors, and regulatory mechanisms directly address the enzyme category of organic chemicals in life processes."
+      "relevantPathsAI": ["B.7"],
+      "rationaleAI": "Directly addresses enzymes as catalytic proteins controlling the speed of biochemical reactions, covering their functions in molecular breakdown and synthesis, cell growth regulation, and cell communication."
     },
     {
-      "episodeTitle": "Hormones",
-      "pid": "m001w0z9",
-      "relevantPathsAI": [
-        "B.9",
-        "B.9.a",
-        "B.9.b"
-      ],
-      "rationaleAI": "Hormones as chemical messengers covering insulin, adrenaline, oestrogen, testosterone, hypothalamus-pituitary feedback loops, and the history of endocrinology directly map to hormones of vertebrates and their general features."
-    },
-    {
-      "episodeTitle": "Drugs",
-      "pid": "p00548fh",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.4.c",
-        "C.5",
-        "C.7"
-      ],
-      "rationaleAI": "The history of drugs covers narcotics, stimulants, anesthesia, morphine, cocaine, antibiotics, and the pharmaceutical industry, directly addressing drugs as chemicals that change physiological state, including drugs affecting the CNS and drug use/abuse."
+      "episodeTitle": "Penicillin",
+      "pid": "b07dnnkm",
+      "relevantPathsAI": ["C.5", "C.5.a"],
+      "rationaleAI": "Covers the discovery, mass production, and clinical deployment of penicillin as the first major antibiotic derived from a living microorganism (Penicillium mould), and addresses the growing crisis of antimicrobial resistance."
     },
     {
       "episodeTitle": "Pheromones",
       "pid": "m0002mdl",
-      "relevantPathsAI": [
-        "B.9.c"
-      ],
-      "rationaleAI": "Pheromones as chemical signals used by insects and mammals for sexual attraction, alarm signaling, and social organization directly map to hormonelike substances of invertebrates."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "C.4.h",
-        "C.5"
-      ],
-      "rationaleAI": "Immunisation covers vaccines that stimulate the immune response system and the scientific understanding of immunity, directly relevant to drugs affecting the immune response system and drugs derived from microorganisms."
-    },
-    {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "B"
-      ],
-      "rationaleAI": "Carbon's central role as the basis of all organic chemistry and life, forming long chains and complex molecules, underpins all organic chemicals participating naturally in life processes."
-    },
-    {
-      "episodeTitle": "Man and Disease",
-      "pid": "p00548m0",
-      "relevantPathsAI": [
-        "C.5",
-        "E.3"
-      ],
-      "rationaleAI": "The history of disease covers antibiotics and germ theory, relevant to drugs derived from microorganisms and directed against disease organisms, as well as microbial toxins (biotoxins)."
-    },
-    {
-      "episodeTitle": "The Origins of Infectious Disease",
-      "pid": "b011pldm",
-      "relevantPathsAI": [
-        "C.5",
-        "E.3"
-      ],
-      "rationaleAI": "Infectious disease origins cover pathogens, antibiotic resistance, and evolutionary arms races between hosts and pathogens, relevant to chemotherapeutic drugs and microbial toxins."
-    },
-    {
-      "episodeTitle": "Circadian Rhythms",
-      "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "B.9",
-        "B.9.a"
-      ],
-      "rationaleAI": "Circadian rhythms governing hormone release and metabolism through molecular feedback loops relate directly to hormonal regulation and the relationship between endocrine and neural regulation."
+      "relevantPathsAI": ["B.9.c"],
+      "rationaleAI": "Examines pheromones as chemical communication signals functioning as hormonelike substances in invertebrates and other animals, covering trail-laying, alarm signaling, caste determination in social insects, and their endocrine-like regulatory mechanisms."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "Mitochondria's role in ATP synthesis through oxidative phosphorylation directly addresses ATP as the major carrier of chemical energy in living systems."
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Mitochondria are the primary sites of aerobic respiration and ATP production — the major carrier of chemical energy in living systems — directly addressing the biochemical energy currency described in outline path B.4."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": ["B", "B.4", "B.6"],
+      "rationaleAI": "Photosynthesis converts light energy into organic molecules via pigment-mediated (chlorophyll) light-dependent reactions and the Calvin cycle, directly involving biological pigments and ATP as the chemical energy carrier in biosynthetic pathways."
     },
     {
       "episodeTitle": "Vitalism",
       "pid": "b00dwhwt",
-      "relevantPathsAI": [
-        "B"
-      ],
-      "rationaleAI": "Vitalism's challenge by organic chemistry (Wohler's urea synthesis) and the eventual triumph of mechanistic biology provides the historical context for understanding chemicals in vital processes."
+      "relevantPathsAI": ["A", "B"],
+      "rationaleAI": "Wöhler's 1828 synthesis of urea from inorganic materials challenged the strict boundary between inorganic and organic chemistry in living systems, directly bearing on the foundational distinction between the inorganic milieu (A) and organic chemicals of life (B)."
     },
     {
-      "episodeTitle": "Parasitism",
-      "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "E.3"
-      ],
-      "rationaleAI": "Parasitic strategies for immune evasion and host manipulation involve biotoxins and chemical interactions between organisms, relevant to biotoxins produced by microorganisms and animals."
+      "episodeTitle": "Bacteriophages",
+      "pid": "m0020pf0",
+      "relevantPathsAI": ["C.5", "C.5.a"],
+      "rationaleAI": "Bacteriophages are explored as a therapeutic alternative to antibiotics for treating chronic bacterial infections, directly relevant to drugs derived from living microorganisms and the challenge of antimicrobial resistance."
+    },
+    {
+      "episodeTitle": "The Origins of Life",
+      "pid": "p004y29f",
+      "relevantPathsAI": ["B", "B.5", "B.5.c"],
+      "rationaleAI": "Examines how the first self-replicating organic molecules arose from inorganic precursors, with RNA world theory proposing that self-replicating RNA preceded DNA and proteins, directly addressing the primordial organic chemicals and nucleic acids foundational to life processes."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

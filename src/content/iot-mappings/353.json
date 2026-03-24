@@ -4,57 +4,52 @@
     {
       "episodeTitle": "Man and Disease",
       "pid": "p00548m0",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.4",
-        "C"
-      ],
-      "rationaleAI": "Covers the full history of human struggle against disease from miasma through germ theory, epidemic diseases (plague, smallpox, cholera), the development of epidemiology, vaccination, antibiotics, and public health -- spanning noncommunicable and communicable disease, endemic and epidemic disease, and disease control."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "C"
-      ],
-      "rationaleAI": "Immunisation covers the immune system's mechanisms, active and passive immunisation, vaccine development for multiple diseases, and public health campaigns -- directly relevant to immunity and disease control."
+      "relevantPathsAI": ["A", "A.2", "A.2.b", "A.3", "A.4"],
+      "rationaleAI": "Traces the history of epidemic disease from ancient humoral medicine through the Black Death to nineteenth-century germ theory breakthroughs by Pasteur and Koch, directly addressing epidemic disease (A.2.b), the development of vaccination and public health measures as disease control (A.4), and the evolving understanding of communicable disease (A.2)."
     },
     {
       "episodeTitle": "The Origins of Infectious Disease",
       "pid": "b011pldm",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "C"
-      ],
-      "rationaleAI": "The origins of infectious disease covers how pathogens co-evolved with hosts, zoonotic transmission, crowd diseases, antibiotic resistance, and emerging infections -- directly relevant to the multifactorial concept of contagious disease and endemic/epidemic patterns."
+      "relevantPathsAI": ["A.2", "A.2.a", "A.2.b", "A.4"],
+      "rationaleAI": "Examines how pathogens emerge from animal reservoirs through zoonotic spillover, illustrating the multifactorial nature of contagious disease (A.2.a) involving ecological disruption, population density, and global travel. Covers endemic and epidemic patterns (A.2.b) and modern genomic surveillance strategies for pandemic prevention (A.4)."
+    },
+    {
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
+      "relevantPathsAI": ["A.2", "A.2.a", "A.4"],
+      "rationaleAI": "Covers the full range of pathogenic microorganisms — bacteria, viruses, fungi, protozoa, and archaea — that cause infectious disease, alongside Pasteur and Koch's germ theory and breakthroughs in antibiotics, vaccines, and sterilization as instruments of disease control (A.4)."
+    },
+    {
+      "episodeTitle": "Penicillin",
+      "pid": "b07dnnkm",
+      "relevantPathsAI": ["A.2", "A.4"],
+      "rationaleAI": "Documents the discovery and mass production of the first major antibiotic as a landmark in disease treatment and control (A.4), and addresses antimicrobial resistance as an evolutionary consequence threatening communicable disease management (A.2)."
+    },
+    {
+      "episodeTitle": "Bacteriophages",
+      "pid": "m0020pf0",
+      "relevantPathsAI": ["A.2", "A.4"],
+      "rationaleAI": "Bacteriophages — viruses that destroy bacteria — are explored as therapeutic agents for treating chronic bacterial infections and as a potential answer to antibiotic resistance, directly relevant to communicable disease biology (A.2) and disease control (A.4)."
     },
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "A.2",
-        "C"
-      ],
-      "rationaleAI": "Parasitism covers the diversity of parasitic organisms causing disease (viruses, bacteria, protozoa, helminths), their strategies for immune evasion, and the disease burden on humans and livestock -- directly relevant to communicable disease in animals."
+      "relevantPathsAI": ["A.2", "A.3", "B", "C"],
+      "rationaleAI": "Examines parasitism across plants (mistletoe, B), invertebrates (hookworms, C), and birds (brood parasitism, C), with co-evolutionary dynamics including host immune defenses and counter-adaptations directly addressing immunity (A.3) and the biology of communicable disease (A.2)."
     },
     {
-      "episodeTitle": "Louis Pasteur",
-      "pid": "b08q317p",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.4"
-      ],
-      "rationaleAI": "Louis Pasteur's germ theory of disease, vaccines for rabies and anthrax, and disproof of spontaneous generation are foundational to understanding communicable disease and its control."
+      "episodeTitle": "Fungi",
+      "pid": "b09r3nwl",
+      "relevantPathsAI": ["A.2", "B", "C"],
+      "rationaleAI": "Pathogenic fungi cause fatal human diseases and devastate tree populations, directly relevant to plant diseases (B) and communicable disease in animals and humans (A.2, C). Fungal pathogens contextualised within the broader biosphere's decomposition and nutrient cycling roles."
+    },
+    {
+      "episodeTitle": "Mitochondria",
+      "pid": "m001md34",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Mitochondrial dysfunction is linked to neurodegenerative diseases and aging, directly illustrating noncommunicable disease rooted in metabolic defects (A.1) at the cellular organelle level."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

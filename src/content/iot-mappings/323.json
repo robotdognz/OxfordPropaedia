@@ -11,7 +11,7 @@
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "The nervous system covers nerve cells, synaptic transmission and neurotransmitters, Galvani's bioelectricity experiments, and the distinction between sensory and motor pathways -- directly addressing bioelectricity, neuron structure, nerve impulse nature, and synaptic transmission."
+      "rationaleAI": "Directly addresses bioelectricity (B) through neurons transmitting electrical and chemical signals, neuron structure and sensory/motor/interneuron subdivisions (C.1), the nature of the nerve impulse (C.3), and synaptic transmission via neurotransmitters including acetylcholine and dopamine (C.4)."
     },
     {
       "episodeTitle": "The Cell",
@@ -21,41 +21,46 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Cell biology covers cell membrane structure and function, organelle compartmentalization, and the distinction between prokaryotic and eukaryotic cells, directly addressing the nature of membranes and cell compartmentalization."
-    },
-    {
-      "episodeTitle": "Macromolecules",
-      "pid": "b018grhm",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Lipids as membrane components (the lipid bilayer) directly relate to the nature of cell membranes and their composition from macromolecular constituents."
+      "rationaleAI": "The cell as the fundamental structural unit of life involves cell membrane structure and function (A.1) and organelle compartmentalization (A.2), with cellular processes such as metabolism and signaling dependent on membrane-mediated selective transport."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
       "relevantPathsAI": [
+        "A.1",
         "A.2"
       ],
-      "rationaleAI": "Mitochondria as membrane-bound organelles illustrate compartmentalization of the cell, with their double-membrane structure enabling ATP synthesis."
+      "rationaleAI": "Mitochondria are membrane-bound organelles exemplifying cellular compartmentalization (A.2), with their double-membrane structure (A.1) essential to ATP production through chemiosmotic gradients across the inner membrane."
     },
     {
-      "episodeTitle": "Circadian Rhythms",
-      "pid": "b06rzd44",
+      "episodeTitle": "Neuroscience in the 20th century",
+      "pid": "p005459f",
       "relevantPathsAI": [
-        "C.3"
+        "C.1",
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Circadian rhythms involve molecular feedback loops and the suprachiasmatic nucleus processing neural signals, relevant to the nature of nerve impulses and their role in biological timing."
+      "rationaleAI": "Explicitly quantifies neuron structure with 100,000 neurons, 2 million axons, and 1 billion synapses per grain-of-sand-sized brain tissue (C.1), directly illustrating the molecular complexity of nerve impulse transmission (C.3) and synaptic connectivity (C.4)."
     },
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
+      "episodeTitle": "Vitalism",
+      "pid": "b00dwhwt",
       "relevantPathsAI": [
-        "A.3"
+        "B",
+        "D",
+        "D.1"
       ],
-      "rationaleAI": "Water's properties including osmotic behavior and its role as the universal solvent directly relate to the movement of water across cell membranes through osmosis."
+      "rationaleAI": "Galvani's experiments making dead frogs' legs twitch with electricity directly demonstrate bioelectricity (B) and muscle contraction (D), while the broader inquiry into what animates living matter connects to contractile activity as a characteristic of all living things (D.1)."
+    },
+    {
+      "episodeTitle": "Slime Moulds",
+      "pid": "m002691y",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Slime moulds exhibit collective motile and contractile activity without nervous systems, directly illustrating that contractile or motile activity is a fundamental characteristic of all living things (D.1), not restricted to organisms with specialized muscle tissue."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

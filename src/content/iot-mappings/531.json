@@ -4,113 +4,88 @@
     {
       "episodeTitle": "The Wealth of Nations",
       "pid": "b052ln55",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.5",
-        "A.6",
-        "A.7",
-        "C.1.a",
-        "C.2"
-      ],
-      "rationaleAI": "The Wealth of Nations covers the division of labour, the invisible hand of market self-regulation, free trade against mercantilism, the labour theory of value, the role of self-interest, and the proper functions of government, directly addressing fundamental economic concepts and the pure private enterprise economy."
-    },
-    {
-      "episodeTitle": "Capitalism",
-      "pid": "p00545kv",
-      "relevantPathsAI": [
-        "C",
-        "C.1.a",
-        "C.1.c",
-        "C.2",
-        "C.3"
-      ],
-      "rationaleAI": "Capitalism traces development from mercantilism through industrial capitalism to global finance, covering Smith's free market principles, Marx's critique, Keynesian interventionism, and Hayek's neoliberalism, directly addressing the comparison of different economic systems."
-    },
-    {
-      "episodeTitle": "Marx",
-      "pid": "p003k9jg",
-      "relevantPathsAI": [
-        "A.5",
-        "C.1.b",
-        "C.3"
-      ],
-      "rationaleAI": "Marx's historical materialism, theory of surplus value, class struggle, and predicted transition from capitalism to communism directly address the concept of capital, the centrally planned economy, and socialist-type economic systems."
+      "relevantPathsAI": ["A.1", "A.2", "A.5", "A.6", "A.8", "C.1.a", "C.2"],
+      "rationaleAI": "Adam Smith's foundational treatise directly established core economic concepts including division of labour, free markets, wealth accumulation, and the productive power of self-interest, while advancing arguments for limited government intervention that define the private enterprise model and Western market economies."
     },
     {
       "episodeTitle": "David Ricardo",
       "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "A.3",
-        "A.6",
-        "A.7"
-      ],
-      "rationaleAI": "Ricardo's theory of comparative advantage, labor theory of value, theory of rent, and arguments for free trade directly address the concepts of diminishing returns, competition, and comparative advantage."
-    },
-    {
-      "episodeTitle": "Hayek's The Road to Serfdom",
-      "pid": "m0023x87",
-      "relevantPathsAI": [
-        "C.1.a",
-        "C.1.b",
-        "C.1.c"
-      ],
-      "rationaleAI": "Hayek's defense of free market liberalism against centralized planning, the debate over welfare states, and the Austrian School of economics directly address the comparison between private enterprise, centrally planned, and mixed economies."
-    },
-    {
-      "episodeTitle": "The Fable of the Bees",
-      "pid": "m0000t3y",
-      "relevantPathsAI": [
-        "A.6",
-        "C.1.a"
-      ],
-      "rationaleAI": "Mandeville's thesis that private vices produce public benefits and its influence on Adam Smith's economic thought directly address the concept of competition and the theoretical model of the pure private enterprise economy."
+      "relevantPathsAI": ["A.6", "A.7", "C.2"],
+      "rationaleAI": "Ricardo's Theory of Comparative Advantage is one of the foundational concepts of economics (A.7), and his arguments for free trade and analysis of how existing policy favoured landlords address competition (A.6) and the functioning of Western-type market economies (C.2)."
     },
     {
       "episodeTitle": "The Physiocrats",
       "pid": "b02x97k6",
-      "relevantPathsAI": [
-        "A.1",
-        "C.1.a"
-      ],
-      "rationaleAI": "The Physiocrats' doctrine that agriculture is the sole source of wealth, Quesnay's Tableau Economique, and their advocacy of laissez-faire directly address the concept of economic activity as resource allocation and the pure private enterprise economy model."
+      "relevantPathsAI": ["A.1", "C.1.a", "C.2", "C.5"],
+      "rationaleAI": "The Physiocrats developed early systematic economic theory including the laissez-faire doctrine and Quesnay's Tableau Economique modelling economic circulation, addressing scarce resource allocation (A.1), the theoretical foundations of the private enterprise economy (C.1.a), and their agrarian theory of value represents a distinctive early economic system (C.5)."
+    },
+    {
+      "episodeTitle": "Hayek's The Road to Serfdom",
+      "pid": "m0023x87",
+      "relevantPathsAI": ["C.1.a", "C.1.b", "C.1.c", "C.2", "C.3"],
+      "rationaleAI": "Hayek's central argument that centralized economic planning threatens liberty directly compares the pure private enterprise model (C.1.a) against centrally planned socialist economies (C.1.b), while his influence on Thatcherism and Reaganomics shaped Western market economies (C.2) and debates over mixed economies (C.1.c)."
+    },
+    {
+      "episodeTitle": "The Gold Standard",
+      "pid": "m0013hh7",
+      "relevantPathsAI": ["B.3", "C.2"],
+      "rationaleAI": "The gold standard's role in monetary policy, exchange rates, and international capital flows is a core macroeconomic topic (B.3), and its constraining effect during the Great Depression illustrates the functioning and vulnerabilities of Western-type market economies (C.2)."
+    },
+    {
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["A.2", "A.5", "A.8", "C.2"],
+      "rationaleAI": "Mechanized production and factory organization exemplify the division of labour (A.2), available capital driving industrialization illustrates the concept of capital (A.5), Britain's economic transformation demonstrates growth and development (A.8), and the revolution established the template for Western market economies (C.2)."
     },
     {
       "episodeTitle": "Economic Rights",
       "pid": "p00546m7",
-      "relevantPathsAI": [
-        "C.1.c",
-        "C.2"
-      ],
-      "rationaleAI": "Economic rights debates over whether political freedom requires economic freedom, the tension between free markets and social welfare, and the welfare state as a compromise directly address the mixed economy and Western-type market economies."
+      "relevantPathsAI": ["C.1.a", "C.1.c", "C.2", "C.4"],
+      "rationaleAI": "Directly addresses whether democracy is capitalism's truest conduit, Friedman's defence of free-market efficiency (C.1.a), Sen's work on economic justice in developing countries (C.4), and the tension between globalized capital and democratic institutions in mixed economies (C.1.c)."
     },
     {
-      "episodeTitle": "Weber's The Protestant Ethic",
-      "pid": "b03yqj31",
-      "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "Weber's Protestant Ethic links Calvinist values to the rise of modern capitalism, addressing the cultural conditions enabling Western-type market economies."
+      "episodeTitle": "Game Theory",
+      "pid": "b01h75xp",
+      "relevantPathsAI": ["A.6", "B.1"],
+      "rationaleAI": "Game theory's analysis of strategic decision-making in market competition and negotiation directly addresses the concept of competition (A.6), and its modelling of rational choice by individuals and firms is a core tool of microeconomic analysis (B.1)."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["A.1", "A.3", "A.8"],
+      "rationaleAI": "Malthus's argument that population grows geometrically while food supply increases arithmetically is a foundational statement of scarcity in economics (A.1), his theory of natural population checks embodies diminishing returns (A.3), and neo-Malthusian concerns about resource limits address growth and development (A.8)."
     },
     {
       "episodeTitle": "The Needham Question",
       "pid": "p0038x9m",
-      "relevantPathsAI": [
-        "A.8",
-        "C.4"
-      ],
-      "rationaleAI": "The Needham Question asks why the Industrial Revolution developed in Europe rather than China, examining market economics, legal frameworks, and structural explanations, directly addressing concepts of growth and development and mixed economies in different contexts."
+      "relevantPathsAI": ["A.8", "C.2", "C.5"],
+      "rationaleAI": "The comparison of why modern economic development arose in Europe rather than China involves property rights, competitive state systems versus unified bureaucracy, and differing relationships between state power and mercantile enterprise, directly addressing comparative economic systems (C.2, C.5) and conditions for growth (A.8)."
     },
     {
-      "episodeTitle": "Work in the 20th Century",
-      "pid": "p0054588",
-      "relevantPathsAI": [
-        "A.2",
-        "C.2"
-      ],
-      "rationaleAI": "Work in the 20th century covers Taylorism, Fordist mass production, the service economy transition, and debates about work-life balance, addressing the concept of division of labour and Western-type market economies."
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": ["C.1.b", "C.3"],
+      "rationaleAI": "Lenin's founding of the Soviet state, development of Marxist-Leninist ideology, and implementation of the New Economic Policy represent the creation and early operation of the centrally planned socialist economy (C.1.b) and the archetypal Soviet-type economic system (C.3)."
+    },
+    {
+      "episodeTitle": "The Great Irish Famine",
+      "pid": "m0003rj1",
+      "relevantPathsAI": ["C.1.a", "C.2"],
+      "rationaleAI": "British government responses shaped by laissez-faire economics and Poor Law administration illustrate the consequences of applying pure private enterprise principles (C.1.a) within a Western market economy (C.2), serving as a case study in free-market ideology's real-world operation."
+    },
+    {
+      "episodeTitle": "The Poor Laws",
+      "pid": "m0001m73",
+      "relevantPathsAI": ["C.1.a", "C.1.c"],
+      "rationaleAI": "The 1834 reform driven by Malthusian economics and the belief that relief discouraged labour embodies private enterprise logic (C.1.a), while the workhouse system's eventual replacement by the welfare state illustrates evolution toward mixed economies with varying degrees of planning (C.1.c)."
+    },
+    {
+      "episodeTitle": "The Great Disruption",
+      "pid": "p00545kh",
+      "relevantPathsAI": ["A.8", "C.1.c"],
+      "rationaleAI": "Fukuyama's analysis of the transition from industrial to information-based economies addresses economic growth and structural transformation (A.8), and the comparison with earlier agrarian-to-industrial transitions illustrates how mixed economies evolve through technological change (C.1.c)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

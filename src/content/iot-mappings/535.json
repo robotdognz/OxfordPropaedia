@@ -4,34 +4,34 @@
     {
       "episodeTitle": "The Gold Standard",
       "pid": "m0013hh7",
-      "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.2",
-        "B.2.a"
-      ],
-      "rationaleAI": "The gold standard covers monetary systems, exchange rate stability, the classical gold standard era, Churchill's 1925 return to gold, the Great Depression's deflationary pressures, Bretton Woods, and the transition to fiat currency, directly addressing foreign exchange markets, balance of payments, and international monetary institutions."
+      "relevantPathsAI": ["B.1", "B.1.a", "B.1.d", "B.2.a", "B.2.b", "A.1.b", "C.3"],
+      "rationaleAI": "The gold standard as an international monetary system directly addresses fixed exchange rates and alternative monetary standards (B.1), equilibrating balance-of-payments mechanisms (B.1.a), and gold crises and currency reserve problems (B.2.a). Its role in deepening the Great Depression by constraining expansionary monetary policy illustrates classical unemployment theory (A.1.b) and the failure of countercyclical policy (C.3), while its collapse after World War I exemplifies post-war financial crises (B.2.b)."
+    },
+    {
+      "episodeTitle": "The Wealth of Nations",
+      "pid": "b052ln55",
+      "relevantPathsAI": ["A.1.a", "A.1"],
+      "rationaleAI": "Adam Smith's theory of wealth accumulation, markets, and limited government intervention established the classical economics framework underpinning the classical law of markets (A.1.a), providing the intellectual foundation against which Keynesian effective demand theory was later developed."
+    },
+    {
+      "episodeTitle": "Mercantilism",
+      "pid": "m001k0zv",
+      "relevantPathsAI": ["B.1", "B.1.c", "B.1.d"],
+      "rationaleAI": "Mercantilist doctrine that national wealth derives from maximizing exports and accumulating bullion represents the earliest systematic approach to balance-of-payments accounting (B.1.c) and international monetary adjustment through protectionist tariffs and regulated trade (B.1.d), establishing concepts of favorable trade balances that modern macroeconomics later formalized."
     },
     {
       "episodeTitle": "David Ricardo",
       "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1.d"
-      ],
-      "rationaleAI": "Ricardo's theory of comparative advantage and arguments for free trade directly address classical theories relevant to national income and employment, and methods for adjusting to fundamental disequilibrium through trade policy."
+      "relevantPathsAI": ["B", "B.1", "A.1.a"],
+      "rationaleAI": "Ricardo's Theory of Comparative Advantage provides the foundational analytical framework for international economic equilibrium (B) and trade-based exchange rate dynamics (B.1), while his classical economic reasoning about markets and value contributes to the classical theoretical tradition contrasted with Keynesian theory (A.1.a)."
     },
     {
-      "episodeTitle": "The South Sea Bubble",
-      "pid": "b01pcs5g",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "The South Sea Bubble covers speculative mania, financial crash, crowd psychology, and parallels with later financial crises, directly addressing the identification and measurement of business cycles and cyclical theories."
+      "episodeTitle": "The American Populists",
+      "pid": "b08tbf4g",
+      "relevantPathsAI": ["B.2.a", "C.3"],
+      "rationaleAI": "Populist demands for currency reform centered on gold-versus-silver monetary policy debates and adequate currency reserves (B.2.a), while the movement's economic grievances and the later adoption of Populist ideas in New Deal programs illustrate countercyclical fiscal and monetary policy responses (C.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

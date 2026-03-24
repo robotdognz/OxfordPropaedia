@@ -2,90 +2,168 @@
   "sectionCode": "543",
   "mappings": [
     {
-      "episodeTitle": "New Wars",
-      "pid": "p00546qy",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4"
-      ],
-      "rationaleAI": "New wars' treatment of the privatisation of military force, humanitarian intervention, and the blurring of combatant-civilian distinctions directly addresses internal and external security functions and the regulatory functions of government."
+      "episodeTitle": "Charisma",
+      "pid": "m0015b6r",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Weber's theory of charismatic authority directly addresses how political power is exercised through exceptional personal qualities rather than legal or traditional mechanisms, with analysis of Napoleon, Washington, and television's role in modern political leadership dynamics."
     },
     {
-      "episodeTitle": "Sovereignty",
-      "pid": "b07hhvxx",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Sovereignty's coverage of the Westphalian system and contemporary challenges from supranational institutions directly addresses the conduct of foreign relations with other sovereign states and international organizations."
+      "episodeTitle": "Montesquieu",
+      "pid": "b0b5qnfx",
+      "relevantPathsAI": ["A", "A.3"],
+      "rationaleAI": "Montesquieu's theory of separation of powers into judicial, executive, and legislative branches is foundational to how government functions are divided and exercised, with his comparative analysis of monarchy, despotism, and republicanism directly addressing the structural dynamics of political process."
     },
     {
-      "episodeTitle": "Democracy",
-      "pid": "p00547jm",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "Democracy's coverage of the extension of suffrage and 20th-century democratization directly addresses peaceful changes of government by electoral process."
+      "episodeTitle": "The Federalist Papers",
+      "pid": "m001r7sv",
+      "relevantPathsAI": ["A", "A.3", "C.1"],
+      "rationaleAI": "The 85 essays advocating constitutional ratification provide detailed arguments for how republican government should function through separation of powers and federalism, directly addressing mechanisms by which political power is exercised and peacefully transferred."
     },
     {
-      "episodeTitle": "The Great Reform Act",
-      "pid": "b00flwh9",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The Great Reform Act of 1832 restructuring parliamentary representation through eliminating rotten boroughs and extending the franchise exemplifies peaceful change of government form by constitutional mandate and electoral reform."
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": ["A", "A.1", "C"],
+      "rationaleAI": "Lenin's invention of the one-party state model and establishment of Bolshevik governance exemplify how political power is exercised through centralised revolutionary restructuring, demonstrating internal security functions and a radical method of changing the form of government."
+    },
+    {
+      "episodeTitle": "The Trial of Charles I",
+      "pid": "b00kpzd6",
+      "relevantPathsAI": ["A.3", "A.5", "C"],
+      "rationaleAI": "The trial pitting parliamentary sovereignty against divine royal authority directly addresses adjudicatory and corrective functions of government (A.3, A.5), while the execution of an anointed king established the precedent that a sovereign could be held accountable, fundamentally changing the form of government."
     },
     {
       "episodeTitle": "The French Revolution's reign of terror",
       "pid": "p003k9cf",
-      "relevantPathsAI": [
-        "C"
-      ],
-      "rationaleAI": "The French Revolution's Reign of Terror illustrates the most extreme methods of changing the form of government, showing how revolutionary idealism transformed into state violence and eventual reaction (Thermidorian Reaction)."
+      "relevantPathsAI": ["A.5", "C"],
+      "rationaleAI": "Revolutionary tribunals, political purges, and mass executions exemplify the corrective and enforcement functions of government taken to extremes (A.5), while the Terror's trajectory from democratic movement to authoritarian rule illustrates how methods of changing government can subvert their own ideals."
     },
     {
-      "episodeTitle": "The Glorious Revolution",
-      "pid": "p00547fk",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The Glorious Revolution of 1688 establishing the Bill of Rights and limited monarchy exemplifies a peaceful (or near-peaceful) change of governmental form by constitutional settlement."
+      "episodeTitle": "The Social Contract",
+      "pid": "b008w3xm",
+      "relevantPathsAI": ["A", "C"],
+      "rationaleAI": "The social contract tradition from Hobbes, Locke, and Rousseau addresses the legitimacy of governmental authority over individuals and whether people may reclaim sovereignty from tyrants, underpinning both the exercise of political power and the theoretical basis for changing forms of government."
     },
     {
-      "episodeTitle": "The Great Stink",
-      "pid": "m001gjcm",
-      "relevantPathsAI": [
-        "A.4",
-        "A.6"
-      ],
-      "rationaleAI": "The Great Stink forcing Parliament to act on London's sanitation crisis, leading to Bazalgette's sewer system, illustrates regulatory functions of government in public health and enterprising functions in infrastructure."
+      "episodeTitle": "The Monarchy",
+      "pid": "p00545k6",
+      "relevantPathsAI": ["A", "C", "C.1"],
+      "rationaleAI": "The British monarchy's constitutional evolution from governing power to ceremonial role illustrates the dynamics of political process, including the Glorious Revolution as a method of changing government and the gradual peaceful transition through parliamentary sovereignty and constitutional convention."
+    },
+    {
+      "episodeTitle": "President Ulysses S Grant",
+      "pid": "m0005f2k",
+      "relevantPathsAI": ["A.1", "A.5"],
+      "rationaleAI": "Grant's deployment of federal troops to enforce civil rights and suppress the Ku Klux Klan exemplifies the internal security function (A.1) and law enforcement and corrective functions of government (A.5), demonstrating executive power exercised during Reconstruction."
+    },
+    {
+      "episodeTitle": "Chinese Legalism",
+      "pid": "b06r84qy",
+      "relevantPathsAI": ["A", "A.4", "A.5"],
+      "rationaleAI": "Legalism's three pillars — firm implementation of laws, techniques of administrative responsibility, and exploitation of the ruler's position — directly address the regulatory (A.4) and enforcement (A.5) functions of government, representing one of the earliest systematic theories of how political power should be exercised."
+    },
+    {
+      "episodeTitle": "The Han Synthesis",
+      "pid": "p004y29t",
+      "relevantPathsAI": ["A", "A.4"],
+      "rationaleAI": "The Han dynasty's establishment of the world's first civil service examination system and merger of Confucian ethics with state ideology exemplify the regulatory and administrative functions of government (A.4), demonstrating how bureaucratic meritocracy was institutionalised as a mechanism for exercising political power."
+    },
+    {
+      "episodeTitle": "Aristotle's Politics",
+      "pid": "b00f8530",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Aristotle's empirical classification of governments into oligarchies, democracies, and monarchies based on observation of Greek city-states, along with his analysis of how wealth, law, and education function within governance, directly addresses the ways political power is exercised across different regime types."
+    },
+    {
+      "episodeTitle": "Cicero",
+      "pid": "b09nrsfg",
+      "relevantPathsAI": ["A", "A.1", "A.5"],
+      "rationaleAI": "Cicero's suppression of Catiline's conspiracy exemplifies the internal security function (A.1), while his philosophical writings on duty, laws, and emergency powers address the corrective functions of republican governance (A.5) and how political power is legitimately exercised."
+    },
+    {
+      "episodeTitle": "Animal Farm",
+      "pid": "b07wgkz4",
+      "relevantPathsAI": ["A", "C"],
+      "rationaleAI": "Orwell's allegory of revolutionary betrayal illustrates how political power is exercised through propaganda and corruption of governing institutions, while the pigs' transformation into indistinguishable oppressors demonstrates the dynamics by which changes in government form can reproduce the tyranny they sought to overthrow."
+    },
+    {
+      "episodeTitle": "Democracy",
+      "pid": "p00547jm",
+      "relevantPathsAI": ["A", "C.1"],
+      "rationaleAI": "The evolution of democracy from Athenian participatory governance through its 19th-century rehabilitation traces how the electoral process (C.1) became the dominant mechanism for political legitimacy, directly addressing the dynamics by which political power is exercised in democratic systems."
+    },
+    {
+      "episodeTitle": "The Restoration",
+      "pid": "p00547bx",
+      "relevantPathsAI": ["C", "C.1"],
+      "rationaleAI": "The transition from Cromwell's Commonwealth to Charles II's restored monarchy and the subsequent Glorious Revolution of 1688 illustrate methods of changing the form of government, culminating in the replacement of Stuart absolutism with constitutional monarchy."
+    },
+    {
+      "episodeTitle": "Sovereignty",
+      "pid": "b07hhvxx",
+      "relevantPathsAI": ["A", "C"],
+      "rationaleAI": "The evolution of sovereignty theory from Bodin through Hobbes to the American and French Revolutions traces the philosophical foundations of how political power is legitimately exercised, while the revolutionary redefinition of sovereign authority as residing in the people addresses methods of changing the form of government."
+    },
+    {
+      "episodeTitle": "Plato's Republic",
+      "pid": "b08vwn6h",
+      "relevantPathsAI": ["A", "C"],
+      "rationaleAI": "Plato's analysis of how governments degenerate through a cycle from aristocracy to timocracy, oligarchy, democracy, and tyranny directly addresses the dynamics of political process and governmental change, while the philosopher-king concept proposes an ideal mode of exercising political power."
+    },
+    {
+      "episodeTitle": "The Spanish Inquisition",
+      "pid": "p003c1bw",
+      "relevantPathsAI": ["A.4", "A.5"],
+      "rationaleAI": "The Inquisition's 350-year operation exemplifies the regulatory function of government in enforcing religious uniformity (A.4) and the corrective functions through sanctions, penalties, and enforcement mechanisms including tribunals, torture, imprisonment, and execution (A.5)."
     },
     {
       "episodeTitle": "William Cecil",
       "pid": "m0002zq6",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "William Cecil's management of Elizabethan government including the religious settlement, Anglo-Spanish relations, intelligence networks, and statecraft directly illustrates internal security and foreign relations functions of government."
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Cecil's four decades as Elizabeth I's chief minister exemplify how political power is exercised through ministerial office, including strengthening state finances, stabilising governance, and making security decisions such as the execution of Mary Queen of Scots to protect the realm (A.1)."
     },
     {
-      "episodeTitle": "Charisma",
-      "pid": "m0015b6r",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "Weber's concept of charismatic authority and the routinization of charisma into institutional structures addresses how political power is exercised through different forms of legitimacy."
+      "episodeTitle": "Athelstan",
+      "pid": "b00sv7wd",
+      "relevantPathsAI": ["A.1", "A.4"],
+      "rationaleAI": "Athelstan's legal reforms changing how crime was dealt with in England exemplify the regulatory functions of government (A.4), while his unification of England and foreign policy alliances demonstrate the internal security functions of early English governance (A.1)."
     },
     {
-      "episodeTitle": "Machiavelli and the Italian City States",
-      "pid": "p004y26p",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "Machiavelli's analysis of political power, statecraft, and virtu in The Prince addresses how political power is exercised through security functions and foreign relations in practice."
+      "episodeTitle": "The Polish-Lithuanian Commonwealth",
+      "pid": "m0010f8z",
+      "relevantPathsAI": ["A", "C.1"],
+      "rationaleAI": "The Commonwealth's Sejm parliament, elected monarchy, and liberum veto illustrate distinctive mechanisms for exercising political power and peaceful political change (C.1), while the state's progressive paralysis demonstrates how dysfunctional political processes can lead to governmental collapse."
+    },
+    {
+      "episodeTitle": "Tiberius",
+      "pid": "m001t9j8",
+      "relevantPathsAI": ["A", "C"],
+      "rationaleAI": "Tiberius's consolidation of Roman imperial institutions when no precedent for succession existed illustrates both how political power was exercised in the early Empire and the practical challenge of establishing mechanisms for governmental transition in the absence of constitutional mandate."
+    },
+    {
+      "episodeTitle": "Psychoanalysis and Democracy",
+      "pid": "p00548hr",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Freud's analysis of how groups desire domination and the parallel between psychoanalytic authority and political authoritarianism illuminate the psychological dynamics underlying how political power is exercised, connecting mechanisms of repression to collective political submission."
+    },
+    {
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": ["A.4"],
+      "rationaleAI": "Censorship, licensing, and state efforts to control the press during the English Civil War period exemplify the regulatory functions of government (A.4), demonstrating how the state actively enforced standards over political and religious expression through print regulation."
+    },
+    {
+      "episodeTitle": "The Wealth of Nations",
+      "pid": "b052ln55",
+      "relevantPathsAI": ["B"],
+      "rationaleAI": "Smith's arguments for limited government intervention in markets and his comprehensive theory of wealth accumulation directly address the government's role in production and consumption (B), establishing the foundational case for constraining the state's enterprising and regulatory economic functions."
+    },
+    {
+      "episodeTitle": "Garibaldi and the Risorgimento",
+      "pid": "b083qx9j",
+      "relevantPathsAI": ["C"],
+      "rationaleAI": "The Italian Risorgimento's political and military movement overthrowing the Bourbon monarchy and forging a unified state from fragmented kingdoms exemplifies methods of changing the form of government through revolutionary and military means."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

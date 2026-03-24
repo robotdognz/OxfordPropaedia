@@ -6,11 +6,13 @@
       "pid": "b05s3gyv",
       "relevantPathsAI": [
         "A",
+        "A.1",
         "A.2.c",
         "A.2.d",
-        "D.1"
+        "D.1",
+        "D.1.b"
       ],
-      "rationaleAI": "The Earth's core covering seismological evidence for solid inner and liquid outer core, iron/nickel composition, and dynamo theory comprehensively addresses the Earth's concentric layers (A), the mantle (A.2.c), the core (A.2.d), and geophysical evidence (D.1)."
+      "rationaleAI": "Directly addresses Earth's concentric layered structure, focusing on the solid inner core of iron and nickel, the liquid outer core, and convective flow generating the geodynamo. Seismological evidence for core structure and density distribution provides key geophysical data for inferring interior composition."
     },
     {
       "episodeTitle": "Seismology",
@@ -21,9 +23,11 @@
         "B.1",
         "B.2",
         "B.3",
-        "D.1"
+        "B.4",
+        "D.1",
+        "D.1.a"
       ],
-      "rationaleAI": "Seismology revealing crustal, mantle, and core divisions through seismic wave analysis, earthquake causes, distribution, and magnitude scales comprehensively addresses the basic divisions (A.2), earthquakes (B), and geophysical evidence (D.1)."
+      "rationaleAI": "Seismic wave analysis revealing Earth's layered internal structure including crust, mantle, and core addresses the basic divisions of the solid Earth. Coverage of earthquake causes, distribution, magnitude, instrumentation from the Lisbon and San Francisco earthquakes, and Cold War seismograph networks addresses earthquakes and seismic measurements comprehensively."
     },
     {
       "episodeTitle": "Plate Tectonics",
@@ -35,33 +39,37 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Plate tectonics covering crust, mantle convection, subduction, earthquake distribution, and the Mohorovicic discontinuity addresses the basic divisions of the solid Earth (A.2), earthquake causes (B.1), and distribution (B.2)."
+      "rationaleAI": "The lithosphere-asthenosphere distinction differentiates crust from upper mantle, while seafloor spreading and subduction illuminate the Mohorovicic discontinuity and mantle dynamics. Earthquake causes are explained through plate boundary interactions, and global earthquake distribution follows plate margins."
     },
     {
-      "episodeTitle": "The Earth's Origins",
-      "pid": "p00547hl",
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
       "relevantPathsAI": [
-        "A.3"
+        "A.2.a",
+        "A.2.c",
+        "A.3",
+        "C"
       ],
-      "rationaleAI": "Earth's formation from the nebular hypothesis, differentiation into core/mantle/crust, and the origin of atmosphere and oceans addresses the development of Earth's structure and composition (A.3)."
+      "rationaleAI": "Magma generation deep in the mantle and its ascent through the crust illuminates mantle composition and crustal structure. Volcanism's essential role in forming Earth's atmosphere and crust addresses the development of Earth's structure, while erupted materials provide direct evidence of elemental distribution across mantle and crust."
     },
     {
-      "episodeTitle": "Ageing the Earth",
-      "pid": "p005493g",
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
       "relevantPathsAI": [
-        "D.2"
+        "A.2.d",
+        "D.1"
       ],
-      "rationaleAI": "Radiometric dating using radioactive decay and isotope geochemistry to determine Earth's age at 4.54 billion years addresses geochemical evidence for inferring Earth's interior composition (D.2)."
+      "rationaleAI": "William Gilbert's De Magnete proposed Earth itself as a giant magnet, an early inference about core structure from surface geophysical observations. Earth's magnetic field is a primary line of geophysical evidence for a metallic, partially liquid core, directly connecting magnetic phenomena to interior structure."
     },
     {
-      "episodeTitle": "Catastrophism",
-      "pid": "b03s9tlz",
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
       "relevantPathsAI": [
-        "B.1"
+        "D.2.a"
       ],
-      "rationaleAI": "Catastrophism and the asteroid impact hypothesis for K-Pg extinction, along with geological forces shaping Earth, provides context for earthquake causes and sudden geological events (B.1)."
+      "rationaleAI": "X-ray crystallography is a foundational technique for investigating mineral structures and phase transitions under high temperatures and pressures, enabling determination of the mineralogy and geochemical equilibria that characterize Earth's deep interior."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

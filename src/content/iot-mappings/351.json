@@ -4,86 +4,88 @@
     {
       "episodeTitle": "Photosynthesis",
       "pid": "b0435jyv",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4.b",
-        "B.2.a"
-      ],
-      "rationaleAI": "Photosynthesis is the primary mechanism of energy flow in the biosphere, drives the carbon and oxygen cycles, and represents the fundamental producer function in ecosystems."
+      "relevantPathsAI": ["A.3", "A.4.b", "B.2.a"],
+      "rationaleAI": "Photosynthesis is the primary mechanism of energy flow in the biosphere (A.3), drives the carbon and oxygen cycles by fixing carbon and generating atmospheric oxygen (A.4.b), and defines green plants, algae, and cyanobacteria as the foundational producers in ecosystems (B.2.a)."
     },
     {
       "episodeTitle": "Plankton",
       "pid": "m001r1t5",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4.b",
-        "B.2.a",
-        "B.2.b"
-      ],
-      "rationaleAI": "Plankton (phytoplankton as producers, zooplankton as primary consumers) are the base of marine food webs, produce atmospheric oxygen, and play a central role in the carbon cycle and biological pump."
+      "relevantPathsAI": ["A.3", "A.4.b", "B.2.a", "B.2.b"],
+      "rationaleAI": "Phytoplankton are major biosphere producers generating roughly half of atmospheric oxygen and driving oceanic carbon cycling (A.3, A.4.b, B.2.a), while zooplankton illustrate consumer trophic levels and marine food web dynamics (B.2.b)."
     },
     {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "A.4.a",
-        "A.4.b"
-      ],
-      "rationaleAI": "Carbon covers the carbon cycle in Earth's biosphere, carbon's role in fossil fuels and climate change, and the cycling of carbon through living and non-living systems -- directly relevant to chemical cycles and the carbon-oxygen cycle."
-    },
-    {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
-      "relevantPathsAI": [
-        "A.4.e",
-        "B.3.d"
-      ],
-      "rationaleAI": "Water covers the water cycle and climate regulation, water's role as the medium for life, and its phase transitions -- directly relevant to the water cycle and water as an abiotic component of ecosystems."
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
+      "relevantPathsAI": ["A.4", "A.4.b", "A.4.c", "B.2.c"],
+      "rationaleAI": "Microbes are indispensable decomposers recycling nutrients through ecosystems (B.2.c), and their roles in decomposition and water purification underpin the general pattern of chemical cycling in the biosphere, including carbon and nitrogen turnover (A.4, A.4.b, A.4.c)."
     },
     {
       "episodeTitle": "Fungi",
       "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "B.2.c"
-      ],
-      "rationaleAI": "Fungi as decomposers play a critical ecological role in nutrient cycling, breaking down organic matter and returning nutrients to the ecosystem -- directly relevant to decomposers as biotic components."
+      "relevantPathsAI": ["A.4", "B.2.c", "B.4"],
+      "rationaleAI": "Fungi are essential decomposers breaking down organic matter to recycle nutrients through ecosystems (B.2.c, A.4), and their symbiotic relationships enabling plant nutrient absorption exemplify how living organisms condition the abiotic environment (B.4)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": ["A.1", "A.4.e", "B.3.d"],
+      "rationaleAI": "Water's anomalous properties—high heat capacity, solvent versatility, density maximum at four degrees—make it the basis of all known life and a precondition of the biosphere (A.1). Its natural occurrence in three states underpins the water cycle (A.4.e), and its characteristics define a critical abiotic ecosystem component (B.3.d)."
+    },
+    {
+      "episodeTitle": "Carbon",
+      "pid": "p003c1cj",
+      "relevantPathsAI": ["A.4", "A.4.b"],
+      "rationaleAI": "Carbon is the chemical basis of all organic life, bonding to form nearly 10 million compounds, making it central to the general pattern of chemical cycling in nature (A.4) and specifically the carbon cycle connecting organisms, atmosphere, and geosphere (A.4.b)."
+    },
+    {
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
+      "relevantPathsAI": ["A.3", "B.3.b", "B.3.c"],
+      "rationaleAI": "Solar nuclear fusion is the ultimate energy source powering nearly all biosphere energy flow (A.3), and the Sun's radiation and illumination output are primary abiotic components governing photosynthesis and ecosystem function (B.3.b, B.3.c)."
+    },
+    {
+      "episodeTitle": "The Habitability of Planets",
+      "pid": "m0025vvd",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Directly addresses the preconditions for life including liquid water, carbon-based organic molecules, and energy sources—mapping to the Earth as an ideal medium for life and the fundamental requirements enabling a biosphere (A.1)."
+    },
+    {
+      "episodeTitle": "Venus",
+      "pid": "m0001rm1",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "The runaway greenhouse effect on Venus, despite being Earth's near twin in size and composition, illuminates by contrast the specific planetary conditions required for a viable biosphere (A.1)."
+    },
+    {
+      "episodeTitle": "The Earth's Core",
+      "pid": "b05s3gyv",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "The geodynamo-generated magnetosphere shields Earth's surface from solar radiation, constituting a fundamental geophysical precondition that makes the biosphere possible (A.1)."
     },
     {
       "episodeTitle": "Extremophiles",
       "pid": "b05zl3v2",
-      "relevantPathsAI": [
-        "A.1",
-        "B.3.a",
-        "B.3.b",
-        "B.5"
-      ],
-      "rationaleAI": "Extremophiles thriving in extreme heat, cold, acidity, and pressure demonstrate the extent of the biosphere's limits and the effects of microenvironments including temperature and pressure on ecosystems."
+      "relevantPathsAI": ["A.1", "B.3", "B.5"],
+      "rationaleAI": "Extremophiles redefine the physical and chemical limits of life, expanding understanding of biosphere preconditions (A.1) and demonstrating how organisms exploit extreme abiotic conditions (B.3) in specialized microenvironments (B.5)."
     },
     {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
-      "relevantPathsAI": [
-        "A.4.b"
-      ],
-      "rationaleAI": "Oxygen's role in combustion, respiration, and oxidation, plus its significance for Earth's atmospheric history, is directly relevant to the carbon and oxygen cycles in the biosphere."
+      "episodeTitle": "Archaea",
+      "pid": "m002sg10",
+      "relevantPathsAI": ["B.2", "B.5"],
+      "rationaleAI": "Archaea constitute a distinct domain of life thriving in extreme environments such as salty lakes and acidic pools, illustrating biotic diversity within ecosystems (B.2) and the role of microenvironments in supporting specialized organisms (B.5)."
     },
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "B.2.b"
-      ],
-      "rationaleAI": "Parasitism covers consumers that regulate host populations within ecosystems -- directly relevant to the consumer component of biotic ecosystem structure."
+      "relevantPathsAI": ["B.2.b", "B.6"],
+      "rationaleAI": "Parasitism as a pervasive consumer relationship affecting nearly half of animal species exemplifies biotic consumer interactions within ecosystems (B.2.b) and the co-evolutionary processes that determine ecosystem nature and productivity (B.6)."
     },
     {
-      "episodeTitle": "The Origins of Life",
-      "pid": "p004y29f",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "The origins of life addresses how the biosphere first emerged on Earth, including conditions for life and the emergence of the first living organisms -- relevant to the preconditions of the biosphere."
+      "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
+      "pid": "b08hpmmf",
+      "relevantPathsAI": ["A.4.b", "B.3.a"],
+      "rationaleAI": "Massive carbon dioxide and methane releases during the PETM illustrate disruption of the carbon cycle on a planetary scale (A.4.b), and the resulting five-degree temperature rise demonstrates how temperature shifts reshape entire ecosystems as an abiotic limiting factor (B.3.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

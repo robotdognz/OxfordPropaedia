@@ -2,82 +2,122 @@
   "sectionCode": "10/37",
   "mappings": [
     {
-      "episodeTitle": "Thomas Edison",
-      "pid": "b00wdjr8",
-      "relevantPathsAI": [
-        "A",
-        "B.2"
-      ],
-      "rationaleAI": "Edison's development of the phonograph, light bulb, and electrical power distribution system, plus his Menlo Park laboratory as the first industrial research facility, addresses the history of technological sciences (A) and electrical engineering (B.2)."
-    },
-    {
-      "episodeTitle": "Nikola Tesla",
-      "pid": "m001xvhb",
-      "relevantPathsAI": [
-        "A",
-        "B.2"
-      ],
-      "rationaleAI": "Tesla's development of AC systems, the polyphase motor, and wireless power transmission are central to the history of electrical and electronics engineering (A, B.2)."
-    },
-    {
-      "episodeTitle": "Conductors and Semiconductors",
-      "pid": "b01c7sml",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Semiconductor physics and the invention of the transistor enabled the electronics revolution, central to electrical and electronics engineering (B.2)."
-    },
-    {
-      "episodeTitle": "Automata",
-      "pid": "b0bk1c4d",
-      "relevantPathsAI": [
-        "A",
-        "D.1"
-      ],
-      "rationaleAI": "The history of automata from Hero of Alexandria to Jacquet-Droz covers the history of technological sciences (A) and bionics through the mimicry of nature in mechanical devices (D.1)."
-    },
-    {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "The Industrial Revolution's key innovations in textile manufacturing, steam power, iron and steel production, and the factory system are foundational to the history of the technological sciences (A)."
-    },
-    {
-      "episodeTitle": "Artificial Intelligence",
-      "pid": "p003k9fc",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Artificial intelligence covers neural networks and computational models of cognition that connect to bionics and the use of the human brain as a paradigm for computer memory devices (D.1)."
-    },
-    {
       "episodeTitle": "The Antikythera Mechanism",
       "pid": "m0024x0g",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "The Antikythera Mechanism demonstrates sophisticated ancient mechanical engineering, relevant to the history of the technological sciences (A)."
+      "rationaleAI": "Antikythera Mechanism: ancient precision engineering (A)."
     },
     {
-      "episodeTitle": "Superconductivity",
-      "pid": "m001hfpc",
+      "episodeTitle": "Thomas Edison",
+      "pid": "b00wdjr8",
       "relevantPathsAI": [
+        "A",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Superconductivity's applications in MRI machines, particle accelerators, and maglev trains connect to electrical and electronics engineering (B.2)."
+      "rationaleAI": "Edison: industrial research lab (B.1), electrical engineering (B.2), history (A)."
     },
     {
-      "episodeTitle": "Complexity",
-      "pid": "b03ls154",
+      "episodeTitle": "Brunel",
+      "pid": "b04nvbp1",
       "relevantPathsAI": [
-        "D",
+        "A",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Brunel: Victorian engineering, bridges, tunnels, railways (B.1, B.2)."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Needham Question: comparative history of technological development (A)."
+    },
+    {
+      "episodeTitle": "The Science of Glass",
+      "pid": "b05w456c",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Glass science: materials engineering, fiber optics (A, B.2)."
+    },
+    {
+      "episodeTitle": "Macromolecules",
+      "pid": "b018grhm",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Macromolecules: chemical engineering, synthetic materials (A, B.2)."
+    },
+    {
+      "episodeTitle": "The City - a history, part 2",
+      "pid": "b00rp1fd",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Railways and motor cars transforming cities: civil engineering (A, B.2)."
+    },
+    {
+      "episodeTitle": "Ada Lovelace",
+      "pid": "b0092j0x",
+      "relevantPathsAI": [
+        "A",
+        "D.1.b"
+      ],
+      "rationaleAI": "Lovelace/Babbage: early computing, bionics precursor (A, D.1.b)."
+    },
+    {
+      "episodeTitle": "Archimedes",
+      "pid": "b00773bv",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Archimedes: military engineering, mechanical devices (A, B.2)."
+    },
+    {
+      "episodeTitle": "George and Robert Stephenson",
+      "pid": "b09y6zfr",
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Stephensons: railway engineering, locomotives, bridges (A, B.1, B.2)."
+    },
+    {
+      "episodeTitle": "Game Theory",
+      "pid": "b01h75xp",
+      "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Complexity theory's treatment of emergent behavior, network theory, and self-organization connects to systems engineering and operations research (D.2)."
+      "rationaleAI": "Game theory: foundational to operations research (D.2)."
+    },
+    {
+      "episodeTitle": "Longitude",
+      "pid": "m000vyn6",
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
+      "rationaleAI": "Longitude: precision clockmaking, instruments (A, B.2)."
+    },
+    {
+      "episodeTitle": "Lysenkoism",
+      "pid": "b00bw51j",
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Lysenkoism: ideological distortion of agricultural sciences (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

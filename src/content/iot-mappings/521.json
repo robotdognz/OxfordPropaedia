@@ -2,149 +2,276 @@
   "sectionCode": "521",
   "mappings": [
     {
+      "episodeTitle": "The Great Disruption",
+      "pid": "p00545kh",
+      "relevantPathsAI": ["A", "B.1", "D.8", "D.9"],
+      "rationaleAI": "Fukuyama's analysis of three great disruptions in social order directly addresses theories of social structure (A), the social consequences of the transition from industrial to information economies (B.1), the relationship between technological change and social cohesion (D.9), and how economic transformation erodes trust and social capital (D.8)."
+    },
+    {
       "episodeTitle": "Consequences of the Industrial Revolution",
       "pid": "b00wr9r7",
-      "relevantPathsAI": [
-        "B.1",
-        "D.9",
-        "E.2.b",
-        "E.2.c"
-      ],
-      "rationaleAI": "The consequences of the Industrial Revolution cover urbanization, working conditions, the rise of the middle class, trade union movements, and responses including Luddism and Chartism, directly addressing social effects of industrialization, technological factors in social change, and reform and interest group movements."
+      "relevantPathsAI": ["B.1", "B.3", "D.9"],
+      "rationaleAI": "Directly examines how industrialization transformed lifestyles, health, housing, and labour relations as workers moved from agricultural to factory settings (B.1, B.3), and how new social theories arose to address the realities of urban industrial life, exemplifying technological factors driving social change (D.9)."
     },
     {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "B.1",
-        "D.9"
-      ],
-      "rationaleAI": "The Industrial Revolution's transformation of society through factory systems, urbanisation, class formation, and the origins of modern capitalism directly addresses the social effects of industrialization and technological factors in social change."
+      "episodeTitle": "Marriage",
+      "pid": "p00548c2",
+      "relevantPathsAI": ["A", "C.1", "D.6"],
+      "rationaleAI": "Marriage as a foundational social institution connects to social structure and organization (A), the transmission of normative behaviour through family (C.1), and the role of religion in shaping and regulating social arrangements across cultures and periods (D.6)."
     },
     {
-      "episodeTitle": "Marx",
-      "pid": "p003k9jg",
-      "relevantPathsAI": [
-        "D.1",
-        "D.8",
-        "E.2.d"
-      ],
-      "rationaleAI": "Marx's historical materialism, class struggle, critique of capitalist exploitation, and the predicted transition from capitalism through socialism to communism directly address the role of ideology in social change, economic factors in social stability, and revolutionary movements."
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": ["D.9", "D.11"],
+      "rationaleAI": "The spread of cheap print transformed public discourse through pamphlets and broadsides as ideological weapons, directly illustrating technological factors in social change (D.9) and the emergence of public opinion as a force in social behaviour (D.11)."
     },
     {
-      "episodeTitle": "The Temperance Movement",
-      "pid": "m0013zl8",
-      "relevantPathsAI": [
-        "D.6",
-        "E.2.a",
-        "E.2.b"
-      ],
-      "rationaleAI": "The temperance movement's origins in evangelical Christianity, its relationship to working-class reform, legislative campaigns, and connections to feminism directly address religion as a factor in social change and both religiously-centered and humanitarian reform movements."
+      "episodeTitle": "The Cultural Revolution",
+      "pid": "m000q9b6",
+      "relevantPathsAI": ["D.1", "D.10", "E.2.d"],
+      "rationaleAI": "Mao's campaign to reassert ideological control through mass mobilization of Red Guards exemplifies the role of ideology in social change (D.1), collective behaviour as a force for transformation (D.10), and a revolutionary movement that devastated education, governance, and cultural heritage (E.2.d)."
     },
     {
-      "episodeTitle": "Wilberforce",
-      "pid": "b00774j0",
-      "relevantPathsAI": [
-        "D.6",
-        "E.2.a",
-        "E.2.b"
-      ],
-      "rationaleAI": "Wilberforce's evangelical Christianity motivating the parliamentary campaign against slavery, his methods of persuasion and public mobilisation, directly address religion as a factor in social change and humanitarian reform movements."
-    },
-    {
-      "episodeTitle": "Delacroix's Liberty Leading the People",
-      "pid": "b015zrrj",
-      "relevantPathsAI": [
-        "D.5",
-        "E.2.d"
-      ],
-      "rationaleAI": "Delacroix's Liberty Leading the People commemorating the July Revolution, with its mixture of allegory and realism and figures from different social classes, directly addresses the role of art in social change and revolutionary movements."
-    },
-    {
-      "episodeTitle": "The French Revolution's Legacy",
-      "pid": "p00547gg",
-      "relevantPathsAI": [
-        "D.1",
-        "D.7",
-        "E.2.d"
-      ],
-      "rationaleAI": "The French Revolution's ideals of liberty, equality, and fraternity, the Declaration of the Rights of Man, and its influence on subsequent revolutionary movements directly address the role of ideology and intellectual factors in social change and revolutionary movements."
-    },
-    {
-      "episodeTitle": "Information Technology",
-      "pid": "p00546lm",
-      "relevantPathsAI": [
-        "B.1",
-        "D.9"
-      ],
-      "rationaleAI": "The information technology revolution's consequences for work, commerce, education, and social interaction, and comparisons with earlier technological revolutions directly address the social effects of industrialization and technological factors in social change."
-    },
-    {
-      "episodeTitle": "Work in the 20th Century",
-      "pid": "p0054588",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3"
-      ],
-      "rationaleAI": "Work in the 20th century covers Taylorism, Fordist mass production, automation anxieties, and the service economy transition, directly addressing the social effects of industrial specialization and automation."
-    },
-    {
-      "episodeTitle": "George Fox and the Quakers",
-      "pid": "b01f67y4",
-      "relevantPathsAI": [
-        "D.6",
-        "E.2.a"
-      ],
-      "rationaleAI": "George Fox and the Quakers covers the Inner Light, refusal of oaths and military service, and Quaker contributions to anti-slavery and prison reform, directly addressing religion as a factor in social change and movements centred on religious personalities."
-    },
-    {
-      "episodeTitle": "The Waltz",
-      "pid": "m001x50m",
-      "relevantPathsAI": [
-        "D.2",
-        "D.10"
-      ],
-      "rationaleAI": "The waltz as a case study in how cultural practices challenge and reshape social conventions around gender relations, physical contact, and class boundaries addresses contact with other cultures as a factor in social change and the role of collective behaviour."
-    },
-    {
-      "episodeTitle": "The Gin Craze",
-      "pid": "b084zk6z",
-      "relevantPathsAI": [
-        "C.3.a",
-        "C.3.c",
-        "D.11"
-      ],
-      "rationaleAI": "The gin craze covers legislative attempts to control consumption, moral panic, and public health policy, directly addressing the regulation of behaviour departing from social norms through punishment and persuasion, and the role of public opinion."
+      "episodeTitle": "The Aristocracy",
+      "pid": "p00548zx",
+      "relevantPathsAI": ["A", "B.1"],
+      "rationaleAI": "The rise and decline of the British aristocracy as a governing class illustrates diverse types of social structure based on land ownership, hereditary titles, and peerage (A), with industrialization, democratic reform, and death duties as factors in aristocratic decline and social levelling (B.1)."
     },
     {
       "episodeTitle": "The Black Death",
       "pid": "b00bcqt8",
-      "relevantPathsAI": [
-        "D.3",
-        "D.4",
-        "D.6"
-      ],
-      "rationaleAI": "The Black Death's social and psychological impact, religious responses including flagellant movements, economic consequences including the decline of serfdom, and long-term demographic effects directly address environmental, demographic, and religious factors in social change."
+      "relevantPathsAI": ["D.4", "D.6", "D.8"],
+      "rationaleAI": "The demographic catastrophe of the Black Death killing one-third of Europe's population directly illustrates demographic factors in social change (D.4), with labour shortages empowering peasants and challenging feudal structures (D.8), and religious responses ranging from flagellant movements to disillusionment with the Church (D.6)."
     },
     {
-      "episodeTitle": "Comenius",
-      "pid": "m0017chy",
-      "relevantPathsAI": [
-        "D.7",
-        "E.2.b"
-      ],
-      "rationaleAI": "Comenius's educational philosophy emphasizing universal education, learning through the senses, and pan-European reform proposals directly address intellectual factors in social change and humanitarian reform movements."
+      "episodeTitle": "Capitalism",
+      "pid": "p00545kv",
+      "relevantPathsAI": ["D.1", "D.8", "B.1"],
+      "rationaleAI": "Marx's analysis of capitalism as a system of constant revolutionary production and economic disruption connects ideology as a driver of social change (D.1), economic factors in social stability and transformation (D.8), and the social effects of industrialization and modernization (B.1)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": ["A", "B.1", "D.8"],
+      "rationaleAI": "Enclosures revolutionized land tenure and social structure by dispossessing smallholders and creating an industrial proletariat (A), directly linking agrarian economic change to class formation and capitalist development (D.8), and producing the displaced rural labour force that enabled industrialization (B.1)."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["A", "C.2", "D.1", "D.5"],
+      "rationaleAI": "Critical theory's analysis of how mass culture maintains capitalist social conformity addresses theories of social structure (A), alienation under industrial capitalism (C.2), ideology's role in social change (D.1), and art as an ideological instrument for maintaining or challenging social order (D.5)."
+    },
+    {
+      "episodeTitle": "The Emancipation of the Serfs",
+      "pid": "b0b2gspd",
+      "relevantPathsAI": ["A", "D.8", "E.2.b"],
+      "rationaleAI": "The abolition of serfdom for over a third of Russia's population fundamentally restructured social hierarchy (A), driven by economic and military pressures exposing serfdom's liabilities (D.8), and exemplifies a humanitarian reform movement imposed from above to preempt revolution from below (E.2.b)."
+    },
+    {
+      "episodeTitle": "1848: Year of Revolution",
+      "pid": "b019gy9p",
+      "relevantPathsAI": ["D.10", "E.1", "E.2.d"],
+      "rationaleAI": "The pan-European revolutionary upheavals of 1848 exemplify collective behaviour in social change (D.10), demonstrate key characteristics of social movements including their simultaneous eruption and comprehensive defeat (E.1), and represent revolutionary movements driven by liberal and nationalist causes (E.2.d)."
+    },
+    {
+      "episodeTitle": "Annie Besant",
+      "pid": "b01jxtd7",
+      "relevantPathsAI": ["E.1", "E.2.b", "E.2.c"],
+      "rationaleAI": "Besant's campaigning across secularism, women's rights, socialism, and workers' conditions exemplifies characteristics of social movements (E.1), humanitarian and reform movements (E.2.b), and interest group movements such as the 1888 match factory strike that brought working conditions to public attention (E.2.c)."
+    },
+    {
+      "episodeTitle": "William Morris",
+      "pid": "b0b9w0vq",
+      "relevantPathsAI": ["C.2", "D.5", "E.2.d"],
+      "rationaleAI": "Morris diagnosed alienation from meaningful labour under industrial capitalism (C.2), pursued art as an instrument of social reform through the Arts and Crafts movement (D.5), and ultimately embraced revolutionary socialism as the only path to restoring creative dignity to work (E.2.d)."
+    },
+    {
+      "episodeTitle": "Cultural Imperialism",
+      "pid": "p00548h4",
+      "relevantPathsAI": ["D.2"],
+      "rationaleAI": "Directly addresses how dominant powers exert cultural influence through dress, education, law, and philosophy, exemplifying contact with other cultures as a factor in social change (D.2) from ancient Rome to modern globalisation."
+    },
+    {
+      "episodeTitle": "Fundamentalism",
+      "pid": "p00545gy",
+      "relevantPathsAI": ["D.6", "E.2.a"],
+      "rationaleAI": "Fundamentalist movements across Islam, Christianity, and Judaism exemplify religion as a factor both for and against social change (D.6), and represent movements centred on religious concepts that have unexpectedly flourished despite secularization theories (E.2.a)."
+    },
+    {
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": ["D.1", "E.2.d"],
+      "rationaleAI": "Lenin's invention of the one-party state and development of Marxist-Leninist ideology as a framework for revolution directly illustrates ideology's role in social change (D.1) and represents the paradigmatic revolutionary movement that became a model for 20th-century transformations worldwide (E.2.d)."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["D.4", "D.7"],
+      "rationaleAI": "Malthus's theory that population growth outstrips food supply directly addresses demographic factors in social change (D.4), and his work's profound influence on political economy, poor law reform, and social policy illustrates the role of intellectual factors in reshaping social thought and institutions (D.7)."
+    },
+    {
+      "episodeTitle": "Octavia Hill",
+      "pid": "b0100jpz",
+      "relevantPathsAI": ["E.2.b"],
+      "rationaleAI": "Hill's pioneering social housing work and co-founding of the National Trust represent humanitarian and reform movements addressing urban poverty through voluntary action and private enterprise rather than state intervention (E.2.b)."
+    },
+    {
+      "episodeTitle": "Ibn Khaldun",
+      "pid": "b00qckbw",
+      "relevantPathsAI": ["A", "D.7"],
+      "rationaleAI": "Ibn Khaldun's cyclical theory of dynastic rise and fall based on group solidarity (asabiyyah) represents a pioneering theory of social structure and organization (A), and his analysis of social organization, economics, and historical causation exemplifies intellectual factors in understanding social change (D.7)."
+    },
+    {
+      "episodeTitle": "Lévi-Strauss",
+      "pid": "b01sjjxl",
+      "relevantPathsAI": ["A", "D.7"],
+      "rationaleAI": "Lévi-Strauss's structuralist anthropology, arguing that underlying structures of human thought are universal across all cultures, represents a major theory of social structure and organization (A), and his work on kinship systems and classification illustrates intellectual factors shaping understanding of social change (D.7)."
     },
     {
       "episodeTitle": "Harriet Martineau",
       "pid": "b084d7b0",
-      "relevantPathsAI": [
-        "D.7",
-        "E.2.b"
-      ],
-      "rationaleAI": "Harriet Martineau's role as a public intellectual translating economic theory for popular audiences, her advocacy of abolitionism and women's rights, and her sociological method address intellectual factors in social change and humanitarian reform movements."
+      "relevantPathsAI": ["D.7", "E.2.b"],
+      "rationaleAI": "Martineau pioneered sociological methods of observation applied to religion, slavery, and women's rights, illustrating intellectual factors in social change (D.7), and her popularization of political economy and reform advocacy exemplifies humanitarian and reform movements bridging Enlightenment rationalism and Victorian social reform (E.2.b)."
+    },
+    {
+      "episodeTitle": "George Fox and the Quakers",
+      "pid": "b01f67y4",
+      "relevantPathsAI": ["D.6", "E.2.a"],
+      "rationaleAI": "Quakerism's advocacy of religious toleration, equality between men and women, pacifism, and social reform illustrates religion as a factor for social change (D.6), and represents a movement centred on religious concepts that shaped Protestant dissenting traditions and philanthropic reform (E.2.a)."
+    },
+    {
+      "episodeTitle": "John Wesley and Methodism",
+      "pid": "m000q3m2",
+      "relevantPathsAI": ["D.6", "E.2.a"],
+      "rationaleAI": "Methodism's targeting of new industrial working-class communities underserved by the established Church illustrates religion as a factor in social change during industrialization (D.6), and represents a movement centred on religious concepts and personalities that grew into a major denomination (E.2.a)."
+    },
+    {
+      "episodeTitle": "Complexity",
+      "pid": "b03ls154",
+      "relevantPathsAI": ["A", "D.10"],
+      "rationaleAI": "Complexity science studies how individuals behave unpredictably in groups, with applications to social systems from city traffic to disease spread, addressing theories of social structure (A) and collective behaviour as a factor in social change (D.10)."
+    },
+    {
+      "episodeTitle": "On Liberty",
+      "pid": "m002pqnc",
+      "relevantPathsAI": ["C", "D.1", "D.11"],
+      "rationaleAI": "Mill's harm principle defines the limits of social control over individual liberty (C), articulates ideology's role in shaping social arrangements (D.1), and addresses the tyranny of the majority and freedom of expression as dimensions of public opinion in social behaviour (D.11)."
+    },
+    {
+      "episodeTitle": "Dickens",
+      "pid": "p00547hx",
+      "relevantPathsAI": ["D.5"],
+      "rationaleAI": "Dickens's use of fiction as social critique — Shaw called Little Dorrit 'more seditious than Das Kapital' — directly illustrates the role of art in social change and art as an ideological instrument for exposing institutional injustice and motivating reform (D.5)."
+    },
+    {
+      "episodeTitle": "Germinal",
+      "pid": "m001rq08",
+      "relevantPathsAI": ["D.5", "D.8"],
+      "rationaleAI": "Zola's naturalist depiction of miners' strikes, class struggle, and tensions between capitalism, socialism, and anarchism illustrates art as an ideological instrument addressing social change (D.5) and the relationship between economic exploitation and social instability (D.8)."
+    },
+    {
+      "episodeTitle": "The Gracchi",
+      "pid": "m0029jjb",
+      "relevantPathsAI": ["E.2.b", "E.2.d"],
+      "rationaleAI": "The Gracchi brothers' land redistribution and grain reforms represent humanitarian reform movements addressing social inequality (E.2.b), while their violent suppression and the resulting destabilization of the Republic illustrate how reform movements can become catalysts for revolutionary transformation of political and social order (E.2.d)."
+    },
+    {
+      "episodeTitle": "Rousseau on Education",
+      "pid": "m00094kn",
+      "relevantPathsAI": ["C.1", "D.7"],
+      "rationaleAI": "Rousseau's thesis that children are born good and corrupted by society directly addresses socialization and the transmission of normative behaviour through education (C.1), and his influential ideas on human nature and social institutions exemplify intellectual factors in social change (D.7)."
+    },
+    {
+      "episodeTitle": "Guilt",
+      "pid": "b0084kd8",
+      "relevantPathsAI": ["C", "C.3.b"],
+      "rationaleAI": "Guilt as a mechanism for maintaining social order through conscience, moral agency, and internalized norms relates to social control (C), and Freudian theories of superego and unconscious guilt connect to psychological therapy as regulation of behaviour (C.3.b)."
+    },
+    {
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["B.1", "D.9"],
+      "rationaleAI": "The Industrial Revolution's transformation of labour relations, class structures, living conditions, and urbanization directly addresses the social effects of industrialization (B.1) and technological factors — from the spinning jenny to steam power — driving fundamental social change (D.9)."
+    },
+    {
+      "episodeTitle": "John Ruskin",
+      "pid": "p003k9bv",
+      "relevantPathsAI": ["C.2", "D.5"],
+      "rationaleAI": "Ruskin's central argument linking art to moral and social values, using medieval craftsmanship as evidence of superior labour conditions versus degraded industrial capitalist work, addresses alienation under industrialism (C.2) and the role of art criticism as an instrument of social change (D.5)."
+    },
+    {
+      "episodeTitle": "The Enlightenment in Scotland",
+      "pid": "p00548ln",
+      "relevantPathsAI": ["D.7"],
+      "rationaleAI": "The rapid intellectual transformation of Scottish society — from executing a student for blasphemy to producing Hume and Smith within sixty years — directly exemplifies the role of intellectual factors in social change (D.7), with Scottish Enlightenment ideas influencing American revolutionary thought and modern social science."
+    },
+    {
+      "episodeTitle": "Chivalry",
+      "pid": "b03tt7kn",
+      "relevantPathsAI": ["A", "C.1"],
+      "rationaleAI": "The chivalric code as an elaborate system governing knightly behaviour across military, religious, and literary domains illustrates a type of social structure based on moral codes and hierarchy (A), and its transmission through education, literature, and courtly institutions exemplifies socialization processes (C.1)."
+    },
+    {
+      "episodeTitle": "Electrickery",
+      "pid": "p004y269",
+      "relevantPathsAI": ["D.9"],
+      "rationaleAI": "The episode traces how natural philosophers' experiments with electricity unleashed transformative social forces, directly illustrating technological factors in social change (D.9) and the social and political contentiousness of new technologies."
+    },
+    {
+      "episodeTitle": "Man and Disease",
+      "pid": "p00548m0",
+      "relevantPathsAI": ["D.4"],
+      "rationaleAI": "Epidemic disease as a demographic force transforming social and economic structures — particularly the Black Death killing one-third of Europe's population — directly illustrates demographic factors in social change (D.4)."
+    },
+    {
+      "episodeTitle": "Brunel",
+      "pid": "b04nvbp1",
+      "relevantPathsAI": ["B.1", "D.9"],
+      "rationaleAI": "Brunel's engineering achievements provide a window onto the social changes accompanying the Industrial Revolution (B.1), illustrating how technological innovation in transportation infrastructure drove broader social transformation (D.9)."
+    },
+    {
+      "episodeTitle": "George Sand",
+      "pid": "m000dxsr",
+      "relevantPathsAI": ["D.5", "E.2.b"],
+      "rationaleAI": "Sand's debut novel Indiana challenged social conventions around marriage and women's autonomy, illustrating art as an instrument of social change (D.5), while her advocacy for women's rights and education connects to humanitarian reform movements (E.2.b)."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["D.2"],
+      "rationaleAI": "The British Empire's imposition of governance, economic, and cultural systems across one quarter of the globe exemplifies contact with other cultures as a factor in social change (D.2), reshaping colonized societies through trade, missionary activity, and administrative systems."
+    },
+    {
+      "episodeTitle": "The Decadent Movement",
+      "pid": "m0011lrn",
+      "relevantPathsAI": ["D.5"],
+      "rationaleAI": "The Decadent movement's revolt against Victorian moral conventions through art for art's sake, provoking public moral panic during Wilde's trials, illustrates the role of art in social change and art as an ideological instrument challenging dominant social norms (D.5)."
+    },
+    {
+      "episodeTitle": "Duty",
+      "pid": "p0054935",
+      "relevantPathsAI": ["C"],
+      "rationaleAI": "The concept of duty — that others have a claim on our actions — addresses social control and the normative obligations that maintain civilised society (C), exploring how duty became powerful enough for people to die for and why it has become unfashionable."
+    },
+    {
+      "episodeTitle": "Bohemianism",
+      "pid": "p005491s",
+      "relevantPathsAI": ["E.2.b"],
+      "rationaleAI": "Bohemianism as a deliberate rejection of Victorian moral and social conventions — embracing artistic freedom, sexual liberation, and defiance of bourgeois norms — represents a cultural reform movement challenging dominant social structures and influencing subsequent countercultural movements (E.2.b)."
+    },
+    {
+      "episodeTitle": "Altruism",
+      "pid": "p0038x9c",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Altruism as a concept coined by Comte and central to religious and philosophical traditions addresses foundational questions about social organization and cooperative behaviour that underpin diverse theories of social structure (A)."
+    },
+    {
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["C.1"],
+      "rationaleAI": "The development of IQ testing, its misuse in eugenics and forced sterilization, cultural bias in testing, and the nature-nurture debate over cognitive ability address how socialization, education, and institutional mechanisms shape and regulate human development and social outcomes (C.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

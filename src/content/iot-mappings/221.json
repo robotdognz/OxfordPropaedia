@@ -17,20 +17,30 @@
       "rationaleAI": "Meteorology covering atmospheric dynamics, fronts, pressure systems, jet streams, numerical weather prediction, and synoptic charts comprehensively addresses thermal structure (A.2) and large-scale atmospheric motions (B)."
     },
     {
+      "episodeTitle": "Solar Wind",
+      "pid": "m000dg9n",
+      "relevantPathsAI": [
+        "A.3.b.ii",
+        "A.3.c.iii"
+      ],
+      "rationaleAI": "Solar wind charged particles drive auroras and magnetic storms in the ionosphere (A.3.b.ii) and inject particles into the Van Allen radiation belts in the exosphere (A.3.c.iii), directly governing upper atmospheric disturbances of solar origin."
+    },
+    {
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
+      "relevantPathsAI": [
+        "A.3.b.ii",
+        "A.3.a.ii"
+      ],
+      "rationaleAI": "Solar flares and coronal mass ejections cause ionospheric variations and magnetic storms of solar origin (A.3.b.ii), while solar radiation drives heating of the upper atmosphere through energy absorption (A.3.a.ii)."
+    },
+    {
       "episodeTitle": "Photosynthesis",
       "pid": "b0435jyv",
       "relevantPathsAI": [
         "A.1.a.ii"
       ],
-      "rationaleAI": "Photosynthesis and the Great Oxygenation Event, along with photosynthesis's global significance for the carbon cycle and atmospheric composition, directly address the carbon budget (A.1.a.ii)."
-    },
-    {
-      "episodeTitle": "Solar Wind",
-      "pid": "m000dg9n",
-      "relevantPathsAI": [
-        "A.3.b"
-      ],
-      "rationaleAI": "Solar wind interaction with Earth's magnetosphere producing auroras and magnetic storms directly addresses ionospheric variations of solar origin (A.3.b.ii)."
+      "rationaleAI": "Photosynthesis is the primary biological process governing the atmospheric carbon budget (A.1.a.ii), fixing CO2 into organic molecules and releasing oxygen, having fundamentally transformed atmospheric composition through the Great Oxygenation Event."
     },
     {
       "episodeTitle": "Water",
@@ -38,7 +48,7 @@
       "relevantPathsAI": [
         "A.1.a.i"
       ],
-      "rationaleAI": "Water's phase transitions, the water cycle, and climate regulation directly address the water cycle in the homosphere (A.1.a.i)."
+      "rationaleAI": "Water's anomalous properties — existing naturally in gas, liquid, and solid states on Earth — underpin the atmospheric water cycle (A.1.a.i), driving evaporation, cloud formation, and precipitation processes in the homosphere."
     },
     {
       "episodeTitle": "Carbon",
@@ -46,7 +56,70 @@
       "relevantPathsAI": [
         "A.1.a.ii"
       ],
-      "rationaleAI": "Carbon's role in the carbon cycle, fossil fuels, and climate change directly addresses the carbon budget (A.1.a.ii)."
+      "rationaleAI": "Carbon's atmospheric chemistry, particularly CO2 as the central molecule in the homospheric carbon budget (A.1.a.ii), governs greenhouse effects and the cycling of carbon between atmosphere, biosphere, and geosphere."
+    },
+    {
+      "episodeTitle": "Plankton",
+      "pid": "m001r1t5",
+      "relevantPathsAI": [
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Phytoplankton produce approximately half of Earth's atmospheric oxygen and are major participants in oceanic-atmospheric carbon cycling, directly affecting the atmospheric carbon budget (A.1.a.ii) through photosynthetic CO2 fixation."
+    },
+    {
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": [
+        "A.1.a.iv",
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Volcanic eruptions inject sulfur compounds (SO2, H2S) into the atmosphere affecting the sulfur budget (A.1.a.iv) and release CO2 influencing the carbon budget (A.1.a.ii); volcanism played essential roles in forming Earth's early atmosphere."
+    },
+    {
+      "episodeTitle": "The Earth's Core",
+      "pid": "b05s3gyv",
+      "relevantPathsAI": [
+        "A.3.c.iii",
+        "A.3.b.ii"
+      ],
+      "rationaleAI": "The geodynamo in Earth's liquid outer core generates the magnetosphere that shapes the Van Allen radiation belts (A.3.c.iii) and governs ionospheric disturbances of solar origin by deflecting charged particles (A.3.b.ii)."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "A.3.a.i",
+        "A.3.b"
+      ],
+      "rationaleAI": "Cosmic rays are subatomic particles bombarding Earth from outside the atmosphere, with most absorbed by atmospheric shielding related to ozonospheric protection (A.3.a.i); their interaction with the ionosphere connects to ionospheric variations of extraterrestrial origin (A.3.b)."
+    },
+    {
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
+      "relevantPathsAI": [
+        "A.1.a.ii",
+        "B.7"
+      ],
+      "rationaleAI": "Ice ages are driven partly by variations in atmospheric CO2 levels central to the carbon budget (A.1.a.ii), and glacial-interglacial transitions involve fundamental reorganizations of mean meridional atmospheric circulations (B.7)."
+    },
+    {
+      "episodeTitle": "Radiation",
+      "pid": "b00nqljy",
+      "relevantPathsAI": [
+        "A.3.a.i",
+        "A.3.a.ii",
+        "A.3.b.iii"
+      ],
+      "rationaleAI": "Electromagnetic radiation physics underpins ozonospheric absorption of harmful UV wavelengths (A.3.a.i), heating of the upper atmosphere (A.3.a.ii), and the ionosphere's effects on radio wave propagation (A.3.b.iii)."
+    },
+    {
+      "episodeTitle": "The Photon",
+      "pid": "b051vlpf",
+      "relevantPathsAI": [
+        "A.3.a.i",
+        "A.3.a.ii"
+      ],
+      "rationaleAI": "Photon absorption by ozone molecules is the quantum mechanism by which the ozonosphere filters harmful ultraviolet radiation (A.3.a.i) and heats the upper atmosphere (A.3.a.ii), connecting fundamental particle physics to atmospheric structure."
     },
     {
       "episodeTitle": "Oxygen",
@@ -65,31 +138,14 @@
       "rationaleAI": "Venus's runaway greenhouse effect and crushing atmospheric pressure provide a comparative planetary perspective on atmospheric thermal structure (A.2) and atmospheric evolution."
     },
     {
-      "episodeTitle": "Cosmic Rays",
-      "pid": "b01sdnkg",
-      "relevantPathsAI": [
-        "A.3.b",
-        "A.3.c.iii"
-      ],
-      "rationaleAI": "Cosmic rays interacting with Earth's atmosphere producing particle showers address ionospheric disturbances (A.3.b) and the Van Allen radiation belt context (A.3.c.iii)."
-    },
-    {
       "episodeTitle": "Plasma",
       "pid": "b07x6j4g",
       "relevantPathsAI": [
         "A.3.b"
       ],
       "rationaleAI": "Plasma physics in the magnetosphere and auroras addresses ionospheric variations and disturbances of solar origin (A.3.b)."
-    },
-    {
-      "episodeTitle": "Mars",
-      "pid": "b00772rr",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "Mars's thin atmosphere provides comparative context for understanding atmospheric composition and structure (A), though its primary focus is planetary science."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

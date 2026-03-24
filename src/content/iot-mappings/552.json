@@ -2,143 +2,210 @@
   "sectionCode": "552",
   "mappings": [
     {
-      "episodeTitle": "The Code of Hammurabi",
-      "pid": "m002r4v1",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The Code of Hammurabi's 282 laws treating commerce, property, family, and criminal justice with the principle of lex talionis represent an early codification of laws governing criminal acts and principles of criminal law."
-    },
-    {
-      "episodeTitle": "Sovereignty",
-      "pid": "b07hhvxx",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1"
-      ],
-      "rationaleAI": "Sovereignty's treatment of parliamentary sovereignty and the Westphalian system directly addresses constitutional law governing state organization and the sources and concepts of international law."
-    },
-    {
-      "episodeTitle": "War in the 20th Century",
-      "pid": "p0054578",
-      "relevantPathsAI": [
-        "B.4",
-        "B.5"
-      ],
-      "rationaleAI": "The Geneva Conventions, Nuremberg principles, and the emergence of international humanitarian law directly address attempts to impose rules of warfare and punish war crimes."
-    },
-    {
-      "episodeTitle": "New Wars",
-      "pid": "p00546qy",
-      "relevantPathsAI": [
-        "B.4",
-        "B.2"
-      ],
-      "rationaleAI": "New wars' implications for international law, the Geneva Conventions, state sovereignty, and the UN's role directly address attempts to impose rules of warfare and create supranational authority."
+      "episodeTitle": "The Magna Carta",
+      "pid": "b00k4fg7",
+      "relevantPathsAI": ["A", "A.1", "E", "F.1"],
+      "rationaleAI": "Magna Carta established foundational constitutional principles including limits on royal authority, protections against arbitrary imprisonment (habeas corpus), and the requirement of consent for taxation, directly shaping constitutional law, taxation law, and judicial institutions in the English-speaking legal tradition."
     },
     {
       "episodeTitle": "Montesquieu",
       "pid": "b0b5qnfx",
-      "relevantPathsAI": [
-        "A.1",
-        "F.1"
-      ],
-      "rationaleAI": "Montesquieu's separation of powers theory and its impact on constitutions directly address basic laws governing state organization and the organization of the legal system including the judiciary."
+      "relevantPathsAI": ["A", "A.1", "F.1"],
+      "rationaleAI": "Montesquieu's theory of separation of powers into judicial, executive, and legislative branches directly shaped modern constitutional law and the organization of courts and the judiciary, including the American Constitution's structural design."
     },
     {
-      "episodeTitle": "The Federalist Papers",
-      "pid": "m001r7sv",
-      "relevantPathsAI": [
-        "A.1",
-        "F.1"
-      ],
-      "rationaleAI": "The Federalist Papers' arguments for separation of powers, checks and balances, and an independent judiciary directly address constitutional law and the organization of the legal system."
+      "episodeTitle": "The Code of Hammurabi",
+      "pid": "m002r4v1",
+      "relevantPathsAI": ["C", "C.1", "F"],
+      "rationaleAI": "Hammurabi's code is among the earliest comprehensive legal codes, encompassing criminal punishment, property, and commerce under state authority, with its lex talionis principle foundational to the development of criminal law doctrines and judicial procedure."
     },
     {
-      "episodeTitle": "The Trial of Charles I",
-      "pid": "b00kpzd6",
-      "relevantPathsAI": [
-        "A.1",
-        "F.1",
-        "F.2.a"
-      ],
-      "rationaleAI": "The trial of Charles I -- putting a monarch on trial for treason -- directly addresses constitutional law, the organization of courts, and criminal procedure in a foundational case."
+      "episodeTitle": "Justinian's Legal Code",
+      "pid": "b082j2q2",
+      "relevantPathsAI": ["A", "A.1", "C.1", "F"],
+      "rationaleAI": "Justinian's Corpus Juris Civilis systematically codified Roman public and private law, establishing the foundation of civil law traditions across continental Europe and profoundly influencing constitutional law, criminal law doctrines, and judicial procedure in modern legal systems."
     },
     {
-      "episodeTitle": "Atrocity in the 20th Century",
-      "pid": "p0054638",
-      "relevantPathsAI": [
-        "B.5"
-      ],
-      "rationaleAI": "The development of international humanitarian law and war crimes tribunals in response to genocide and mass atrocity directly addresses attempts to punish war crimes and crimes against humanity."
+      "episodeTitle": "Solon the Lawgiver",
+      "pid": "m001k7wb",
+      "relevantPathsAI": ["A", "A.1", "D.1"],
+      "rationaleAI": "Solon's constitutional reforms reorganized Athenian citizenship classes, cancelled debts, and prohibited debt slavery, representing early legislation addressing both the fundamental organization of the state (constitutional law) and social welfare through law."
     },
     {
-      "episodeTitle": "The Monarchy",
-      "pid": "p00545k6",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "The British monarchy's constitutional role, the relationship between Crown and Parliament, and the royal prerogative address basic laws governing state organization and functions."
-    },
-    {
-      "episodeTitle": "Marriage",
-      "pid": "p00548c2",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Marriage law, property rights, divorce, and the evolving relationship between marriage and law address laws promoting public welfare and social security."
-    },
-    {
-      "episodeTitle": "The Tudor State",
-      "pid": "p00546xd",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "The Tudor State's growth of royal authority, the relationship between Crown and Parliament, and the Poor Laws address constitutional law governing state organization and laws promoting public welfare."
+      "episodeTitle": "Islamic Law and its Origins",
+      "pid": "b010t69b",
+      "relevantPathsAI": ["A", "C.1", "F"],
+      "rationaleAI": "Sharia law encompasses comprehensive public legal systems including criminal law, state governance, and judicial procedure derived from the Quran, Hadith, scholarly consensus, and analogical reasoning, representing a major jurisprudential tradition with distinct principles and doctrines of criminal law."
     },
     {
       "episodeTitle": "Just War",
       "pid": "p00545jx",
-      "relevantPathsAI": [
-        "B.4",
-        "B.5"
-      ],
-      "rationaleAI": "Just war theory from Augustine through Grotius to the Geneva Conventions directly addresses the attempt to impose rules of warfare and its philosophical-legal foundations."
+      "relevantPathsAI": ["B", "B.1", "B.4", "B.5"],
+      "rationaleAI": "Just war doctrine from Augustine and Aquinas through modern international law directly addresses the legal and moral frameworks governing the rules of warfare (B.4) and the criteria for distinguishing lawful from criminal uses of force, informing modern war crimes jurisprudence (B.5)."
     },
     {
-      "episodeTitle": "Copyright",
-      "pid": "m002c3bm",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Copyright law from the Statute of Anne through the Berne Convention addresses laws governing public administration of intellectual property and regulation of creative works."
+      "episodeTitle": "The Trial of Charles I",
+      "pid": "b00kpzd6",
+      "relevantPathsAI": ["A", "A.1", "F", "F.1", "F.2.a"],
+      "rationaleAI": "The trial established the revolutionary constitutional precedent that a sovereign could be held accountable by representatives of the people, directly confronting questions of constitutional law (parliamentary sovereignty vs. divine right) and criminal procedure applied to a head of state."
     },
     {
-      "episodeTitle": "The Temperance Movement",
-      "pid": "m0013zl8",
-      "relevantPathsAI": [
-        "D.2"
-      ],
-      "rationaleAI": "The temperance movement's legislative campaigns for restricting public houses address laws promoting public health and safety through regulation."
+      "episodeTitle": "The Roman Republic",
+      "pid": "p004y26w",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "The Roman Republic developed a sophisticated constitutional system balancing consuls, senate, and popular assemblies under legal authority, representing one of the earliest sustained experiments in constitutional law and the organizational structure of the state."
     },
     {
-      "episodeTitle": "The Congress of Vienna",
-      "pid": "b098bt3h",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "The Congress of Vienna's Concert of Europe system as an attempt to maintain peace through international agreement addresses the sources and concepts of international law and collective security."
+      "episodeTitle": "The Salem Witch Trials",
+      "pid": "b06pxp2z",
+      "relevantPathsAI": ["C.1", "F.2.a"],
+      "rationaleAI": "The Salem trials exposed critical failures in criminal procedure, particularly reliance on spectral evidence over substantive proof, and their legacy directly shaped American legal protections and procedural safeguards in criminal law."
+    },
+    {
+      "episodeTitle": "Sovereignty",
+      "pid": "b07hhvxx",
+      "relevantPathsAI": ["A", "A.1", "B.1"],
+      "rationaleAI": "Traces the legal-political concept of sovereignty from Bodin's formal theorization through Hobbes to the American and French Revolutions, directly addressing the foundational question of constitutional law (where supreme authority resides) and the basis of international law among sovereign states."
     },
     {
       "episodeTitle": "The Social Contract",
       "pid": "b008w3xm",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "The social contract's influence on democratic constitutionalism and the concept that legitimate authority rests on agreement directly addresses basic laws governing state organization."
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Social contract theory from Hobbes, Locke, and Rousseau underpins modern constitutionalism by addressing the legitimacy of governmental authority over individuals, forming the philosophical basis of constitutional law and the proper limits of state power."
+    },
+    {
+      "episodeTitle": "The Divine Right of Kings",
+      "pid": "b0080xph",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "The doctrine of divine right directly concerns the constitutional basis of state authority; its challenge by Locke's social contract theory, the regicide of Charles I, and the Glorious Revolution traced the historical development of constitutional law limiting sovereign power."
+    },
+    {
+      "episodeTitle": "On Liberty",
+      "pid": "m002pqnc",
+      "relevantPathsAI": ["A", "A.1", "C.1"],
+      "rationaleAI": "Mill's harm principle articulates the philosophical boundary between legitimate and illegitimate exercises of state power over individuals, directly informing constitutional law on civil liberties and the doctrinal basis for defining criminal conduct in public law."
+    },
+    {
+      "episodeTitle": "Washington and the American Revolution",
+      "pid": "p004y28v",
+      "relevantPathsAI": ["A", "A.1", "E"],
+      "rationaleAI": "The American Constitution drew on Locke, Montesquieu, and classical republicanism to create a foundational constitutional framework, and the revolution itself was driven by disputes over taxation without representation, connecting constitutional law with laws governing taxation."
+    },
+    {
+      "episodeTitle": "The Gettysburg Address",
+      "pid": "b07c2w5j",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Lincoln's address redefined the constitutional meaning of the American republic as founded on liberty and equality, influencing subsequent constitutional interpretation and civil rights law as foundational principles of public law."
+    },
+    {
+      "episodeTitle": "The Congress of Vienna",
+      "pid": "b098bt3h",
+      "relevantPathsAI": ["B", "B.1"],
+      "rationaleAI": "The Congress established principles of diplomatic concert, collective security, and great-power negotiation that shaped the sources and concepts of international law governing relations among sovereign states."
+    },
+    {
+      "episodeTitle": "The Hittites",
+      "pid": "m0012q5n",
+      "relevantPathsAI": ["B", "B.1"],
+      "rationaleAI": "The treaty following the Battle of Kadesh between the Hittites and Egypt (c. 1274 BC) is one of history's earliest known peace agreements, representing a foundational source of international law governing relations between sovereign states."
+    },
+    {
+      "episodeTitle": "The Oath",
+      "pid": "p003wtk7",
+      "relevantPathsAI": ["B.1", "F"],
+      "rationaleAI": "Oaths served as binding legal instruments in the ancient world, underpinning peace treaties between states (an early source of international law) and legal testimony in judicial proceedings, fusing religious authority with procedural practice."
+    },
+    {
+      "episodeTitle": "Kafka's The Trial",
+      "pid": "b04pv8j1",
+      "relevantPathsAI": ["C.1", "F", "F.2.a"],
+      "rationaleAI": "Kafka's depiction of prosecution for an unspecified crime within an opaque legal system is a foundational literary critique of criminal law and judicial procedure, directly engaging with failures of due process and the individual's powerlessness before state legal machinery."
+    },
+    {
+      "episodeTitle": "Elizabethan Revenge",
+      "pid": "b00l16vp",
+      "relevantPathsAI": ["C", "C.1"],
+      "rationaleAI": "Elizabethan revenge tragedy dramatized the transition from medieval private vengeance codes to Tudor state-administered criminal justice, reflecting the historical development of criminal law doctrines and the state's monopoly on legitimate punishment."
+    },
+    {
+      "episodeTitle": "The Gin Craze",
+      "pid": "b084zk6z",
+      "relevantPathsAI": ["D", "D.2"],
+      "rationaleAI": "The Gin Acts represent early public health and safety legislation by the state, directly illustrating the development of laws promoting public welfare through regulation of harmful substances."
+    },
+    {
+      "episodeTitle": "The Haymarket Affair",
+      "pid": "m0023gm2",
+      "relevantPathsAI": ["C.1", "D.3", "F.2.a"],
+      "rationaleAI": "The Haymarket affair involved criminal prosecution on questionable evidence and the workers' demand for the eight-hour day, connecting criminal law and procedure with the development of laws regulating worker health, safety, and welfare."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["D", "D.1"],
+      "rationaleAI": "Malthus's population theory directly influenced poor law reform and social welfare policy, shaping the legislative framework for public welfare laws addressing poverty and public health."
+    },
+    {
+      "episodeTitle": "Toleration",
+      "pid": "p004y288",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "The development of religious toleration from persecution to legal protection of conscience, including Locke's arguments and post-Civil War legislation, directly concerns constitutional law's treatment of individual rights and the limits of state authority over belief."
+    },
+    {
+      "episodeTitle": "The Berlin Conference",
+      "pid": "b03ffkfd",
+      "relevantPathsAI": ["B", "B.1"],
+      "rationaleAI": "The Berlin Conference established international legal rules for colonial territorial claims including requirements for effective occupation and free trade zones, representing a significant development in the sources and concepts of international law."
+    },
+    {
+      "episodeTitle": "The Monarchy",
+      "pid": "p00545k6",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "The British monarchy's constitutional evolution from governing power to ceremonial role, including royal prerogative, parliamentary sovereignty, and the unwritten constitution, directly addresses basic laws governing state organization and functions."
+    },
+    {
+      "episodeTitle": "Marriage",
+      "pid": "p00548c2",
+      "relevantPathsAI": ["D.1"],
+      "rationaleAI": "The evolution of marriage from ecclesiastical jurisdiction to civil law regulation illustrates the development of public welfare legislation governing personal relationships, family structure, and social security."
+    },
+    {
+      "episodeTitle": "President Ulysses S Grant",
+      "pid": "m0005f2k",
+      "relevantPathsAI": ["A.1", "C.1"],
+      "rationaleAI": "Grant's enforcement of the Enforcement Acts to suppress the Ku Klux Klan and protect African American civil rights illustrates the use of federal criminal law and constitutional authority to implement Reconstruction-era public law."
+    },
+    {
+      "episodeTitle": "The Covenanters",
+      "pid": "m000g3f6",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "The Covenanting movement concerned the constitutional relationship between sovereign authority and subjects' rights, with formal bonds (covenants) between monarchs and people representing early constitutional instruments limiting royal power."
+    },
+    {
+      "episodeTitle": "The Thirty Years War",
+      "pid": "m0001fv2",
+      "relevantPathsAI": ["B", "B.1"],
+      "rationaleAI": "The Peace of Westphalia established foundational principles of state sovereignty and religious coexistence that reshaped European political order, inaugurating the modern state system and the conceptual basis of international law among sovereign nations."
+    },
+    {
+      "episodeTitle": "Freedom",
+      "pid": "p00548hh",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Examines freedom as a fundamental human right and the tension between natural liberty and law as freedom's protector, addressing the constitutional foundations of individual rights and the relationship between state authority and personal liberty."
+    },
+    {
+      "episodeTitle": "Hobbes",
+      "pid": "p003k9l1",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Hobbes's Leviathan develops the theory that sovereign authority arises from social contract, with individuals surrendering freedoms for social order under an absolute ruler, directly addressing the constitutional basis of state power and political obligation."
+    },
+    {
+      "episodeTitle": "The Art of War",
+      "pid": "p00548zm",
+      "relevantPathsAI": ["B.4", "B.5"],
+      "rationaleAI": "Traces the evolution of just war theory from Augustine through modern international law and the moral frameworks governing armed conflict, directly addressing the attempt to impose rules of warfare and limit war crimes."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

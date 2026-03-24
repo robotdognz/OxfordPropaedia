@@ -2,154 +2,223 @@
   "sectionCode": "10/32",
   "mappings": [
     {
-      "episodeTitle": "The Universe's Origins",
-      "pid": "p00545j9",
-      "relevantPathsAI": [
-        "A.1.f.iv",
-        "A.1.f.vii",
-        "B.5"
-      ],
-      "rationaleAI": "The origins of the universe from the Big Bang through inflation theory addresses relativistic cosmologies (A.1.f.iv), cosmic background radiation (A.1.f.vii), and astrophysics/cosmology (B.5)."
-    },
-    {
-      "episodeTitle": "Black Holes",
-      "pid": "p00547f4",
-      "relevantPathsAI": [
-        "A.1.f.vii",
-        "A.2.e.i",
-        "B.5"
-      ],
-      "rationaleAI": "Black holes from Einstein's general relativity through Hawking radiation address identification of possible black holes (A.1.f.vii), development of relativity (A.2.e.i), and astrophysics (B.5)."
-    },
-    {
-      "episodeTitle": "Comets",
-      "pid": "b01pw38n",
-      "relevantPathsAI": [
-        "A.1.c.i",
-        "A.1.f.v",
-        "B.2"
-      ],
-      "rationaleAI": "Comets from ancient omens through Halley's periodicity prediction to Rosetta address history of astronomy from ancient through modern (A.1.c.i, A.1.f.v) and component disciplines including solar system study (B.2)."
-    },
-    {
       "episodeTitle": "Maxwell",
       "pid": "p005491g",
       "relevantPathsAI": [
         "A.2.d.ii",
-        "A.2.e.ii",
-        "C.2"
-      ],
-      "rationaleAI": "Maxwell's unification of electricity, magnetism, and light addresses development of electromagnetic theories (A.2.d.ii), quantum mechanics connections (A.2.e.ii), and the component disciplines of physics (C.2)."
-    },
-    {
-      "episodeTitle": "Pauli's Exclusion Principle",
-      "pid": "b08kscgb",
-      "relevantPathsAI": [
-        "A.2.e.iii",
-        "D.1"
-      ],
-      "rationaleAI": "Pauli's Exclusion Principle explains the periodic table structure and stability of matter, connecting to atomic structure theories (A.2.e.iii) and the nature of chemistry (D.1)."
-    },
-    {
-      "episodeTitle": "The Second Law of Thermodynamics",
-      "pid": "p004y2bm",
-      "relevantPathsAI": [
         "A.2.d.iii",
+        "C.1",
         "C.2"
       ],
-      "rationaleAI": "The second law of thermodynamics from Carnot through Boltzmann's statistical mechanics covers the development of thermodynamic theories (A.2.d.iii) and a core discipline of physics (C.2)."
+      "rationaleAI": "Maxwell's unification of electricity, magnetism, and light (A.2.d.ii), kinetic theory of gases (A.2.d.iii), exemplifying physics' concern with matter and energy (C.1, C.2)."
     },
     {
-      "episodeTitle": "Alchemy",
-      "pid": "p003k9bn",
+      "episodeTitle": "The Laws of Motion",
+      "pid": "b009mvj0",
       "relevantPathsAI": [
-        "A.3.a",
-        "A.3.a.i"
-      ],
-      "rationaleAI": "Alchemy from Hellenistic Egypt through Islamic civilization to early modern Europe covers chemistry before 1700 (A.3.a) including the alchemists' goals of transmutation (A.3.a.i)."
-    },
-    {
-      "episodeTitle": "Chemical Elements",
-      "pid": "p00546sz",
-      "relevantPathsAI": [
-        "A.3.b.i",
-        "A.3.c.i",
-        "D.1"
-      ],
-      "rationaleAI": "The history of chemical elements from Greek concepts through Mendeleev's periodic table covers laboratory discoveries (A.3.b.ii), development of the periodic table (A.3.c.i), and the nature of chemistry (D.1)."
-    },
-    {
-      "episodeTitle": "Heat",
-      "pid": "b00fq3d4",
-      "relevantPathsAI": [
-        "A.2.d.iii",
+        "A.2.c",
+        "C.1",
         "C.2"
       ],
-      "rationaleAI": "The history of heat from caloric theory to thermodynamics directly covers development of thermodynamic theories (A.2.d.iii) and a core discipline of physics (C.2)."
-    },
-    {
-      "episodeTitle": "Radiation",
-      "pid": "b00nqljy",
-      "relevantPathsAI": [
-        "A.2.d.ii",
-        "A.2.e.ii"
-      ],
-      "rationaleAI": "Electromagnetic radiation from Maxwell through X-rays and radioactivity covers development of electromagnetic wave theories (A.2.d.ii) and the discovery of radioactivity and X-rays (A.2.d.iv)."
-    },
-    {
-      "episodeTitle": "Albert Einstein",
-      "pid": "m001qdx1",
-      "relevantPathsAI": [
-        "A.1.f.iii",
-        "A.2.e.i",
-        "A.2.e.ii"
-      ],
-      "rationaleAI": "Einstein's contributions to relativity (A.2.e.i), quantum theory (A.2.e.ii), and the 1919 eclipse confirmation as an astronomical test of general relativity (A.1.f.iii)."
-    },
-    {
-      "episodeTitle": "Exoplanets",
-      "pid": "b03brwql",
-      "relevantPathsAI": [
-        "A.1.f.v",
-        "B.2"
-      ],
-      "rationaleAI": "Exoplanet discovery and detection methods represent major advances in solar-system and planetary astronomy (A.1.f.v) and component disciplines of astronomy (B.2)."
-    },
-    {
-      "episodeTitle": "Galaxies",
-      "pid": "p003c1cn",
-      "relevantPathsAI": [
-        "A.1.f.i",
-        "B.5"
-      ],
-      "rationaleAI": "Galaxy classification, formation, evolution, and supermassive black holes address statistical studies of galaxies (A.1.f.i) and astrophysics (B.5)."
-    },
-    {
-      "episodeTitle": "Quantum Gravity",
-      "pid": "p00547c4",
-      "relevantPathsAI": [
-        "A.2.e.iii",
-        "C.6"
-      ],
-      "rationaleAI": "Quantum gravity attempts to reconcile quantum mechanics and general relativity, addressing unified field theory efforts (A.2.e.iii) and philosophical problems in physics (C.6)."
+      "rationaleAI": "Newton's three laws of motion: 16th-17th century mechanics (A.2.c), foundation of physics (C.1, C.2)."
     },
     {
       "episodeTitle": "The Age of the Universe",
       "pid": "b00yz3gy",
       "relevantPathsAI": [
         "A.1.f.iv",
+        "A.1.f.i",
         "B.5"
       ],
-      "rationaleAI": "The age of the universe from Hubble's expanding universe through cosmic microwave background measurements addresses relativistic cosmologies (A.1.f.iv) and astrophysics/cosmology (B.5)."
+      "rationaleAI": "Age of universe through Hubble, cosmic microwave background (A.1.f.iv, A.1.f.i), astrophysics (B.5)."
     },
     {
-      "episodeTitle": "The Death of Stars",
-      "pid": "m0018128",
+      "episodeTitle": "Gravitational Waves",
+      "pid": "b007h8gv",
+      "relevantPathsAI": [
+        "A.1.f.iii",
+        "A.2.e.i",
+        "A.1.f.viii",
+        "C.3"
+      ],
+      "rationaleAI": "Gravitational waves predicted by Einstein (A.1.f.iii, A.2.e.i), LIGO instrumentation (A.1.f.viii), physics methods (C.3)."
+    },
+    {
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.b",
+        "A.2.c",
+        "A.2.d.ii"
+      ],
+      "rationaleAI": "Magnetism from Greek through Gilbert to electromagnetism (A.2.a-A.2.d.ii)."
+    },
+    {
+      "episodeTitle": "The Life of Stars",
+      "pid": "p00548w8",
       "relevantPathsAI": [
         "A.1.f.ii",
         "B.5"
       ],
-      "rationaleAI": "The death of stars covering supernovae, neutron stars, black holes, and nucleosynthesis addresses theories of stellar evolution (A.1.f.ii) and astrophysics (B.5)."
+      "rationaleAI": "Stellar evolution from nebulae to white dwarfs, neutron stars, black holes (A.1.f.ii, B.5)."
+    },
+    {
+      "episodeTitle": "Kinetic Theory",
+      "pid": "m00057s5",
+      "relevantPathsAI": [
+        "A.2.d.iii",
+        "A.2.d.iv",
+        "A.2.e.ii",
+        "C.2"
+      ],
+      "rationaleAI": "Kinetic theory, thermodynamics (A.2.d.iii), atomic theory (A.2.d.iv), statistical mechanics (A.2.e.ii, C.2)."
+    },
+    {
+      "episodeTitle": "Theories of Everything",
+      "pid": "p004y24b",
+      "relevantPathsAI": [
+        "A.2.e.iii",
+        "C.6"
+      ],
+      "rationaleAI": "Unification of quantum mechanics and general relativity (A.2.e.iii), philosophical problems in physics (C.6)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": [
+        "A.2.e.ii",
+        "A.2.e.iii",
+        "C.2"
+      ],
+      "rationaleAI": "Pauli's exclusion principle: quantum theory (A.2.e.ii), atomic structure (A.2.e.iii, C.2)."
+    },
+    {
+      "episodeTitle": "Ptolemy and Ancient Astronomy",
+      "pid": "b017528d",
+      "relevantPathsAI": [
+        "A.1.a.ii",
+        "A.1.a.iii",
+        "A.1.b"
+      ],
+      "rationaleAI": "Ptolemy's geocentric model (A.1.a.ii, A.1.a.iii), medieval astronomy (A.1.b)."
+    },
+    {
+      "episodeTitle": "Radiation",
+      "pid": "b00nqljy",
+      "relevantPathsAI": [
+        "A.2.d.i",
+        "A.2.d.ii",
+        "A.2.d.iv",
+        "A.2.e.ii"
+      ],
+      "rationaleAI": "Radiation: light theory (A.2.d.i), electromagnetism (A.2.d.ii), radioactivity (A.2.d.iv), quantum (A.2.e.ii)."
+    },
+    {
+      "episodeTitle": "Robert Hooke",
+      "pid": "b070h6ww",
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.1.c.iii"
+      ],
+      "rationaleAI": "Hooke's light diffraction (A.2.c), telescope use (A.1.c.iii)."
+    },
+    {
+      "episodeTitle": "The Cool Universe",
+      "pid": "b00s7b6r",
+      "relevantPathsAI": [
+        "A.1.f.vi",
+        "B.5"
+      ],
+      "rationaleAI": "Interstellar medium via infrared astronomy (A.1.f.vi), astrophysics (B.5)."
+    },
+    {
+      "episodeTitle": "The Proton",
+      "pid": "b09zt3mr",
+      "relevantPathsAI": [
+        "A.2.e.iii",
+        "C.1"
+      ],
+      "rationaleAI": "Proton's quark composition and role in stellar fusion (A.2.e.iii, C.1)."
+    },
+    {
+      "episodeTitle": "Grand Unified Theory",
+      "pid": "p00546nx",
+      "relevantPathsAI": [
+        "A.2.e.iii",
+        "C.6"
+      ],
+      "rationaleAI": "Grand Unified Theory quest (A.2.e.iii), philosophical problems (C.6)."
+    },
+    {
+      "episodeTitle": "Laws of Nature",
+      "pid": "p00546x5",
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.c",
+        "C.3",
+        "C.6"
+      ],
+      "rationaleAI": "Laws of nature from Thales to string theory (A.2.a, A.2.c), realism debate (C.3, C.6)."
+    },
+    {
+      "episodeTitle": "Mercury",
+      "pid": "m001yqp3",
+      "relevantPathsAI": [
+        "A.1.c.i",
+        "A.1.f.iii",
+        "A.1.f.v",
+        "B.2"
+      ],
+      "rationaleAI": "Mercury: heliocentric theory (A.1.c.i), general relativity test (A.1.f.iii), space missions (A.1.f.v, B.2)."
+    },
+    {
+      "episodeTitle": "Optics",
+      "pid": "b00774t5",
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.1.c.iii",
+        "A.2.d.i"
+      ],
+      "rationaleAI": "Optics: Galileo's telescope (A.1.c.iii, A.2.c), theories of light (A.2.d.i)."
+    },
+    {
+      "episodeTitle": "Perpetual Motion",
+      "pid": "b06c06nd",
+      "relevantPathsAI": [
+        "A.2.d.iii",
+        "C.2"
+      ],
+      "rationaleAI": "Perpetual motion and laws of thermodynamics (A.2.d.iii, C.2)."
+    },
+    {
+      "episodeTitle": "Relativity",
+      "pid": "b02144gl",
+      "relevantPathsAI": [
+        "A.2.e.i",
+        "A.1.f.iii",
+        "C.2"
+      ],
+      "rationaleAI": "Einstein's relativity: spacetime, black holes (A.2.e.i, A.1.f.iii, C.2)."
+    },
+    {
+      "episodeTitle": "Rutherford",
+      "pid": "p004y23q",
+      "relevantPathsAI": [
+        "A.2.d.iv",
+        "A.2.e.iii",
+        "A.3.c.ii"
+      ],
+      "rationaleAI": "Rutherford: nucleus discovery (A.2.d.iv), nuclear interactions (A.2.e.iii), radioactive elements (A.3.c.ii)."
+    },
+    {
+      "episodeTitle": "The Antikythera Mechanism",
+      "pid": "m0024x0g",
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.1.a.iii"
+      ],
+      "rationaleAI": "Antikythera Mechanism: ancient astronomical prediction and instruments (A.1.a.i, A.1.a.iii)."
     },
     {
       "episodeTitle": "The Electron",
@@ -159,155 +228,45 @@
         "A.2.e.ii",
         "A.2.e.iii"
       ],
-      "rationaleAI": "The electron's discovery by Thomson and its quantum behavior address discovery of the electron (A.2.d.iv), quantum theory development (A.2.e.ii), and atomic structure (A.2.e.iii)."
+      "rationaleAI": "Electron discovery: atomic theory (A.2.d.iv), quantum (A.2.e.ii), atomic structure (A.2.e.iii)."
     },
     {
-      "episodeTitle": "Optics",
-      "pid": "b00774t5",
+      "episodeTitle": "Heat",
+      "pid": "b00fq3d4",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.2.c",
-        "A.2.d.i",
+        "A.2.d.iii",
         "C.2"
       ],
-      "rationaleAI": "The history of optics from Greek theories through Newton's experiments to quantum optics covers Greek physics (A.2.a), 16th-17th century physics (A.2.c), the wave-corpuscular debate (A.2.d.i), and physics disciplines (C.2)."
-    },
-    {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
-      "relevantPathsAI": [
-        "A.3.b.i",
-        "A.3.b.ii"
-      ],
-      "rationaleAI": "Oxygen's discovery and Lavoisier's dismantling of phlogiston theory cover 18th-century combustion studies (A.3.b.i) and laboratory discoveries including identification of gases (A.3.b.ii)."
-    },
-    {
-      "episodeTitle": "John Dalton",
-      "pid": "b07zzy8b",
-      "relevantPathsAI": [
-        "A.2.d.iv",
-        "A.3.c.iv",
-        "D.1"
-      ],
-      "rationaleAI": "Dalton's atomic theory covers the development of atomic theory of matter (A.2.d.iv) and theories of molecular structure (A.3.c.iv), fundamental to the nature of chemistry (D.1)."
+      "rationaleAI": "Heat: caloric to kinetic theory, Joule, Carnot, thermodynamics (A.2.d.iii, C.2)."
     },
     {
       "episodeTitle": "Johannes Kepler",
       "pid": "b085xpzf",
       "relevantPathsAI": [
         "A.1.c.i",
-        "A.1.c.ii"
+        "A.1.c.ii",
+        "A.2.c"
       ],
-      "rationaleAI": "Kepler's three laws of planetary motion directly address the heliocentric world system (A.1.c.i) and the discovery of laws of planetary motion (A.1.c.ii)."
+      "rationaleAI": "Kepler's planetary motion laws (A.1.c.i, A.1.c.ii, A.2.c)."
     },
     {
-      "episodeTitle": "The Planets",
-      "pid": "p004y25b",
+      "episodeTitle": "The Universe's Origins",
+      "pid": "p00545j9",
       "relevantPathsAI": [
+        "A.1.d.iii",
         "A.1.f.v",
         "B.2"
       ],
-      "rationaleAI": "The planets of our solar system and exoplanet discoveries address major advances in solar-system astronomy (A.1.f.v) and component disciplines of astronomy (B.2)."
+      "rationaleAI": "Planetary origins: nebular hypothesis (A.1.d.iii), exoplanets (A.1.f.v, B.2)."
     },
     {
-      "episodeTitle": "The Sun",
-      "pid": "b048nlfb",
+      "episodeTitle": "Galaxies",
+      "pid": "p003c1cn",
       "relevantPathsAI": [
-        "A.1.f.ii",
+        "A.1.f.i",
         "B.5"
       ],
-      "rationaleAI": "The Sun's physics, nuclear fusion, and solar cycle address theories of stellar structure (A.1.f.ii) and astrophysics (B.5)."
-    },
-    {
-      "episodeTitle": "The Vacuum of Space",
-      "pid": "b00jz5t3",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.d.i",
-        "A.2.e.ii"
-      ],
-      "rationaleAI": "The vacuum of space from Democritus through Boyle to quantum field theory covers Greek physics (A.2.a), the search for the ether (A.2.d.i), and quantum theory (A.2.e.ii)."
-    },
-    {
-      "episodeTitle": "Antimatter",
-      "pid": "b00808w8",
-      "relevantPathsAI": [
-        "A.2.e.ii",
-        "A.2.e.iii"
-      ],
-      "rationaleAI": "Antimatter from Dirac's prediction to baryon asymmetry addresses quantum theory development (A.2.e.ii) and elementary particle theories (A.2.e.iii)."
-    },
-    {
-      "episodeTitle": "The Laws of Motion",
-      "pid": "b009mvj0",
-      "relevantPathsAI": [
-        "A.2.c",
-        "C.2"
-      ],
-      "rationaleAI": "Newton's Laws of Motion are foundational for 16th-17th century physics (A.2.c) and mechanics as a core discipline of physics (C.2)."
-    },
-    {
-      "episodeTitle": "Cosmic Rays",
-      "pid": "b01sdnkg",
-      "relevantPathsAI": [
-        "A.2.e.iii"
-      ],
-      "rationaleAI": "Cosmic rays' role in discovering subatomic particles (positron, muon, pion) contributes to the development of elementary particle theories (A.2.e.iii)."
-    },
-    {
-      "episodeTitle": "Eclipses",
-      "pid": "m000qmnj",
-      "relevantPathsAI": [
-        "A.1.a.i",
-        "A.1.f.iii",
-        "B.3"
-      ],
-      "rationaleAI": "Eclipses from Babylonian saros cycles to Eddington's 1919 relativity test cover ancient astronomical prediction (A.1.a.i), astronomical tests of general relativity (A.1.f.iii), and distance measurement (B.3)."
-    },
-    {
-      "episodeTitle": "The Cool Universe",
-      "pid": "b00s7b6r",
-      "relevantPathsAI": [
-        "A.1.f.vi",
-        "A.1.f.viii"
-      ],
-      "rationaleAI": "The cool universe and infrared/submillimeter astronomy address development of radio, infrared, and other astronomy (A.1.f.vi) and advances in instrumentation (A.1.f.viii)."
-    },
-    {
-      "episodeTitle": "Asteroids",
-      "pid": "p003k9kh",
-      "relevantPathsAI": [
-        "A.1.e.i",
-        "A.1.f.v",
-        "B.2"
-      ],
-      "rationaleAI": "Asteroids from their 19th-century discovery address the discovery of asteroids (A.1.e.i), solar system exploration (A.1.f.v), and component disciplines of astronomy (B.2)."
-    },
-    {
-      "episodeTitle": "Magnetism",
-      "pid": "p003k9dd",
-      "relevantPathsAI": [
-        "A.2.d.ii",
-        "C.2"
-      ],
-      "rationaleAI": "The history of magnetism from Gilbert through Maxwell's electromagnetic theory covers development of electromagnetic theories (A.2.d.ii) and core physics disciplines (C.2)."
-    },
-    {
-      "episodeTitle": "The Neutron",
-      "pid": "b076mnkr",
-      "relevantPathsAI": [
-        "A.2.e.iii"
-      ],
-      "rationaleAI": "The neutron's discovery by Chadwick and its significance for nuclear fission directly addresses theories concerning atomic structure and nuclear interactions (A.2.e.iii)."
-    },
-    {
-      "episodeTitle": "Saturn",
-      "pid": "b06vmr1m",
-      "relevantPathsAI": [
-        "A.1.f.v",
-        "B.2"
-      ],
-      "rationaleAI": "Saturn's ring system, moons, and Cassini-Huygens discoveries address major advances in solar-system astronomy (A.1.f.v) and component disciplines of astronomy (B.2)."
+      "rationaleAI": "Galaxy structure, supermassive black holes (A.1.f.i, B.5)."
     },
     {
       "episodeTitle": "Jupiter",
@@ -316,62 +275,213 @@
         "A.1.f.v",
         "B.2"
       ],
-      "rationaleAI": "Jupiter's Galilean satellites, the Juno mission, and Europa's subsurface ocean address solar-system astronomy (A.1.f.v) and planetary science (B.2)."
+      "rationaleAI": "Jupiter via Pioneer, Voyager, Cassini (A.1.f.v, B.2)."
     },
     {
-      "episodeTitle": "Solar Wind",
-      "pid": "m000dg9n",
+      "episodeTitle": "Pierre-Simon Laplace",
+      "pid": "m000twgj",
       "relevantPathsAI": [
-        "A.1.f.v",
+        "A.1.d.i",
+        "A.1.d.iii",
+        "B.4"
+      ],
+      "rationaleAI": "Laplace: celestial mechanics (A.1.d.i), nebular hypothesis (A.1.d.iii), orbit theory (B.4)."
+    },
+    {
+      "episodeTitle": "Plasma",
+      "pid": "b07x6j4g",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
         "C.5"
       ],
-      "rationaleAI": "Solar wind physics and its interaction with Earth's magnetosphere address solar system astronomy (A.1.f.v) and interdisciplinary fields of physics including geophysics (C.5)."
+      "rationaleAI": "Plasma: fourth state of matter, stars, fusion research (C.1, C.2, C.5)."
     },
     {
-      "episodeTitle": "The Invention of Radio",
-      "pid": "b0368knw",
+      "episodeTitle": "Quantum Gravity",
+      "pid": "p00547c4",
       "relevantPathsAI": [
-        "A.2.d.ii",
-        "A.2.e.v"
+        "A.2.e.iii",
+        "C.6"
       ],
-      "rationaleAI": "The invention of radio from Maxwell's theory through Hertz and Marconi covers development of electromagnetic wave theories (A.2.d.ii) and modern developments in physics (A.2.e.v)."
+      "rationaleAI": "Quantum gravity search (A.2.e.iii), philosophical problems (C.6)."
     },
     {
-      "episodeTitle": "The Kuiper Belt",
-      "pid": "b08g7ttx",
+      "episodeTitle": "Robert Boyle",
+      "pid": "b0460p63",
       "relevantPathsAI": [
-        "A.1.f.v",
-        "B.2"
+        "A.3.a.ii",
+        "A.2.c",
+        "D.3"
       ],
-      "rationaleAI": "The Kuiper Belt, trans-Neptunian objects, and the New Horizons mission address major advances in solar-system astronomy (A.1.f.v) and component disciplines of astronomy (B.2)."
+      "rationaleAI": "Boyle's Law, experimental methods (A.3.a.ii, A.2.c), chemistry methods (D.3)."
     },
     {
-      "episodeTitle": "The Life of Stars",
-      "pid": "p00548w8",
+      "episodeTitle": "The Death of Stars",
+      "pid": "m0018128",
       "relevantPathsAI": [
         "A.1.f.ii",
         "B.5"
       ],
-      "rationaleAI": "The life cycle of stars from formation through death covers theories of stellar formation and evolution (A.1.f.ii) and astrophysics (B.5)."
+      "rationaleAI": "Stellar end states, supernovae, nucleosynthesis (A.1.f.ii, B.5)."
     },
     {
-      "episodeTitle": "The Music of the Spheres",
-      "pid": "b00c1fct",
+      "episodeTitle": "Saturn",
+      "pid": "b06vmr1m",
       "relevantPathsAI": [
-        "A.1.a.ii",
-        "A.1.c.ii"
+        "A.1.c.iii",
+        "A.1.f.v",
+        "B.2"
       ],
-      "rationaleAI": "The music of the spheres from Pythagoras through Kepler's Harmonices Mundi traces early cosmologies (A.1.a.ii) and the discovery of laws of planetary motion (A.1.c.ii)."
+      "rationaleAI": "Saturn's rings, Huygens, space missions (A.1.c.iii, A.1.f.v, B.2)."
     },
     {
-      "episodeTitle": "Al-Kindi",
-      "pid": "b01k2bv8",
+      "episodeTitle": "The Graviton",
+      "pid": "p003k9ks",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.2.e.iii",
+        "C.6"
       ],
-      "rationaleAI": "Al-Kindi's contributions to optics connect to medieval astronomy through Islamic contributions (A.1.b)."
+      "rationaleAI": "Graviton: unified field theory efforts (A.2.e.iii), philosophical problems (C.6)."
+    },
+    {
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
+      "relevantPathsAI": [
+        "A.1.f.v",
+        "A.1.f.viii",
+        "B.5"
+      ],
+      "rationaleAI": "Sun: nuclear fusion, solar cycles, Parker probe (A.1.f.v, A.1.f.viii, B.5)."
+    },
+    {
+      "episodeTitle": "Chemical Elements",
+      "pid": "p00546sz",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.c.i",
+        "D.1"
+      ],
+      "rationaleAI": "Elements from Aristotle to periodic table (A.3.a, A.3.c.i, D.1)."
+    },
+    {
+      "episodeTitle": "Chromatography",
+      "pid": "b06z4w7p",
+      "relevantPathsAI": [
+        "A.3.c.iii",
+        "D.2",
+        "D.3"
+      ],
+      "rationaleAI": "Chromatography: accurate analysis methods (A.3.c.iii, D.2, D.3)."
+    },
+    {
+      "episodeTitle": "Conductors and Semiconductors",
+      "pid": "b01c7sml",
+      "relevantPathsAI": [
+        "A.2.e.iv",
+        "A.2.e.v",
+        "C.2"
+      ],
+      "rationaleAI": "Semiconductors, condensed matter physics (A.2.e.iv, A.2.e.v, C.2)."
+    },
+    {
+      "episodeTitle": "Higgs Boson",
+      "pid": "p004y2b7",
+      "relevantPathsAI": [
+        "A.2.e.ii",
+        "A.2.e.iii",
+        "C.2"
+      ],
+      "rationaleAI": "Higgs boson, Standard Model, electroweak unification (A.2.e.ii, A.2.e.iii, C.2)."
+    },
+    {
+      "episodeTitle": "Space in Religion and Science",
+      "pid": "p00545d1",
+      "relevantPathsAI": [
+        "A.2.e.i",
+        "C.6"
+      ],
+      "rationaleAI": "Einstein's space-time (A.2.e.i), philosophical problems (C.6)."
+    },
+    {
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
+      "relevantPathsAI": [
+        "A.2.e.ii",
+        "A.2.e.iii",
+        "C.6"
+      ],
+      "rationaleAI": "Symmetry, Noether's theorem, Higgs mechanism (A.2.e.ii, A.2.e.iii, C.6)."
+    },
+    {
+      "episodeTitle": "The Measurement of Time",
+      "pid": "b01dvw6t",
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.1.d.ii"
+      ],
+      "rationaleAI": "Timekeeping: ancient astronomy (A.1.a.i), measurement precision (A.1.d.ii)."
+    },
+    {
+      "episodeTitle": "The Multiverse",
+      "pid": "b008z744",
+      "relevantPathsAI": [
+        "A.1.f.iv",
+        "A.2.e.ii",
+        "C.6"
+      ],
+      "rationaleAI": "Multiverse: cosmologies (A.1.f.iv), quantum theory (A.2.e.ii), philosophical problems (C.6)."
+    },
+    {
+      "episodeTitle": "The Speed of Light",
+      "pid": "p0038x9h",
+      "relevantPathsAI": [
+        "A.2.d.i",
+        "A.2.e.i",
+        "C.1"
+      ],
+      "rationaleAI": "Speed of light: theories of light (A.2.d.i), relativity (A.2.e.i), energy (C.1)."
+    },
+    {
+      "episodeTitle": "Exoplanets",
+      "pid": "b03brwql",
+      "relevantPathsAI": [
+        "A.1.f.v",
+        "B.2"
+      ],
+      "rationaleAI": "Exoplanets from 1992 (A.1.f.v), planetary science (B.2)."
+    },
+    {
+      "episodeTitle": "Eclipses",
+      "pid": "m000qmnj",
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.1.f.iii",
+        "B.1"
+      ],
+      "rationaleAI": "Eclipses: ancient prediction (A.1.a.i), 1919 relativity confirmation (A.1.f.iii), astronomy methods (B.1)."
+    },
+    {
+      "episodeTitle": "Black Holes",
+      "pid": "p00547f4",
+      "relevantPathsAI": [
+        "A.1.f.iii",
+        "A.1.f.vii",
+        "B.5"
+      ],
+      "rationaleAI": "Black holes: relativity tests (A.1.f.iii), identification (A.1.f.vii), astrophysics (B.5)."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "A.1.f.vi",
+        "A.2.e.iii",
+        "C.5"
+      ],
+      "rationaleAI": "Cosmic rays: non-EM astronomy (A.1.f.vi), particle physics (A.2.e.iii), interdisciplinary (C.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

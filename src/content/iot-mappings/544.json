@@ -16,28 +16,29 @@
       "pid": "p00546qy",
       "relevantPathsAI": [
         "E.1",
-        "E.2.e"
+        "E.2.a"
       ],
-      "rationaleAI": "New wars covers civil wars, ethnic conflicts, terrorism, asymmetric warfare, the privatisation of military force, and implications for the Geneva Conventions and the UN's role -- directly addressing kinds of war and wartime law."
+      "rationaleAI": "Directly examines how the nature of warfare has changed from Clausewitz's classical framework through nuclear deterrence and asymmetric conflict, addressing degrees and kinds of war including ethnic, regional, and limited wars (E.1) and evolving military strategy (E.2.a)."
     },
     {
       "episodeTitle": "Clausewitz and On War",
       "pid": "b01hl293",
       "relevantPathsAI": [
         "E.2.a",
-        "E.2.b"
+        "E.2.b",
+        "E.1"
       ],
-      "rationaleAI": "Clausewitz's On War covers war as continuation of politics, the fog of war, absolute versus limited war, and the culminating point of attack -- foundational for military strategy and tactics."
+      "rationaleAI": "On War is the foundational Western text on military strategy (E.2.a) and tactics (E.2.b), articulating the Clausewitzian Trinity linking war to politics and establishing the theoretical framework for understanding war among states (E.1)."
     },
     {
       "episodeTitle": "Sun Tzu and The Art of War",
       "pid": "b09smh59",
       "relevantPathsAI": [
         "E.2.a",
-        "E.2.b",
-        "E.3.b"
+        "E.2.c",
+        "D"
       ],
-      "rationaleAI": "Sun Tzu's Art of War covers deception, intelligence, adaptability, and winning without fighting -- foundational principles of military strategy and tactics, and the historical development of military thought."
+      "rationaleAI": "The Art of War is a foundational text on military strategy (E.2.a), logistics (E.2.c), and espionage and intelligence gathering (D), covering deception, terrain, and the relationship between warfare and statecraft."
     },
     {
       "episodeTitle": "Genghis Khan",
@@ -55,19 +56,19 @@
       "pid": "m0001fv2",
       "relevantPathsAI": [
         "E.1",
-        "B.2"
+        "B.2",
+        "E.2.d"
       ],
-      "rationaleAI": "The Thirty Years War covers religious war escalating to European-wide conflict, and the Peace of Westphalia establishing principles of state sovereignty and religious coexistence -- addressing kinds of war and treaties terminating wars."
+      "rationaleAI": "A paradigmatic regional and religious war involving multiple states (E.1), concluded by the Peace of Westphalia which established foundational principles of state sovereignty (B.2), with devastating psychological and civilian effects illustrating the impact of prolonged warfare (E.2.d)."
     },
     {
       "episodeTitle": "The Spanish Civil War",
       "pid": "p00548wn",
       "relevantPathsAI": [
         "E.1",
-        "E.3.a",
-        "A.1"
+        "E.3.a"
       ],
-      "rationaleAI": "The Spanish Civil War covers civil war with international intervention (International Brigades, German/Italian/Soviet involvement), internal factional conflicts, and the war as prelude to WWII -- addressing kinds of war and transnational political movements."
+      "rationaleAI": "An ideologically driven civil war that became an international proxy conflict with German, Italian, and Soviet intervention (E.1), featuring professional armies, international volunteer brigades, and foreign mercenary forces representing diverse types of soldiers (E.3.a)."
     },
     {
       "episodeTitle": "Atrocity in the 20th Century",
@@ -82,10 +83,10 @@
       "episodeTitle": "Just War",
       "pid": "p00545jx",
       "relevantPathsAI": [
-        "E.1",
-        "E.2.e"
+        "E.2.e",
+        "E.1"
       ],
-      "rationaleAI": "Just war theory from Augustine through Grotius to the Geneva Conventions addresses the philosophical and legal foundations for degrees and kinds of war and international law relating to warfare."
+      "rationaleAI": "Directly examines the just war tradition from Augustine through Aquinas to modern international law governing the treatment of persons and moral conduct during wartime (E.2.e), and the criteria for distinguishing legitimate from illegitimate armed conflict (E.1)."
     },
     {
       "episodeTitle": "Agincourt",
@@ -119,37 +120,39 @@
       "pid": "b03ffkfd",
       "relevantPathsAI": [
         "B.4",
-        "C.1"
+        "C.2"
       ],
-      "rationaleAI": "The Berlin Conference of 1884-85 established rules for claiming African territory and drew borders -- directly addressing territorial treaties and foreign policy aims."
+      "rationaleAI": "The 1884-1885 conference established international rules for claiming and partitioning African territory (B.4) through multilateral diplomatic negotiation among European powers (C.2), directly shaping colonial boundaries and sovereignty."
     },
     {
       "episodeTitle": "The Congress of Vienna",
       "pid": "b098bt3h",
       "relevantPathsAI": [
-        "C.2",
-        "B.2"
+        "B.2",
+        "B.1",
+        "B.4",
+        "C.2"
       ],
-      "rationaleAI": "The Congress of Vienna's diplomatic reshaping of post-Napoleonic Europe through principles of legitimacy, balance of power, and the Concert of Europe system directly addresses diplomacy and treaties terminating wars."
+      "rationaleAI": "The 1814-1815 settlement is a paradigmatic treaty terminating war (B.2) that established collective security through great-power concert (B.1), redrew European territorial boundaries (B.4), and pioneered multilateral diplomatic negotiation and arbitration (C.2)."
     },
     {
       "episodeTitle": "The Hittites",
       "pid": "m0012q5n",
       "relevantPathsAI": [
         "B.2",
+        "E.3.b",
         "C.2"
       ],
-      "rationaleAI": "The Hittites' Treaty of Kadesh with Egypt (the earliest known peace treaty) and their diplomatic achievements directly address international treaties and the use of diplomacy."
+      "rationaleAI": "The Battle of Kadesh and subsequent Egyptian-Hittite treaty represent one of history's earliest documented peace agreements terminating hostilities between states (B.2), with Hittite cuneiform archives revealing early diplomacy (C.2) and innovations in chariot warfare illustrating the historical development of military forces (E.3.b)."
     },
     {
       "episodeTitle": "The Mexican-American War",
       "pid": "b0b7d18j",
       "relevantPathsAI": [
         "E.1",
-        "B.4",
-        "E.2.a"
+        "B.4"
       ],
-      "rationaleAI": "The Mexican-American War covers military campaigns, the Treaty of Guadalupe Hidalgo (territorial treaty), and Manifest Destiny ideology -- addressing kinds of war, territorial treaties, and military strategy."
+      "rationaleAI": "A national war between two states triggered by territorial disputes (E.1), concluded by a treaty transferring approximately half of Mexico's territory to the United States, exemplifying treaties regarding the sale or transfer of land and settlement of border disputes (B.4)."
     },
     {
       "episodeTitle": "The Opium Wars",
@@ -209,9 +212,10 @@
       "episodeTitle": "David Ricardo",
       "pid": "m000tfjk",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "C.1"
       ],
-      "rationaleAI": "David Ricardo's theory of comparative advantage and arguments for free trade following the Napoleonic Wars directly address economic and commercial treaties and international trade policy."
+      "rationaleAI": "Ricardo's Theory of Comparative Advantage provided the intellectual foundation for economic and commercial treaties promoting free trade (B.5), and his argument that trade reduces the likelihood of war connects economics to foreign policy aims and international peace (C.1)."
     },
     {
       "episodeTitle": "The Treaty of Limerick",
@@ -220,8 +224,162 @@
         "B.2"
       ],
       "rationaleAI": "The Treaty of Limerick ending the Williamite War in Ireland and its subsequent violation directly illustrates treaties terminating wars and their enforcement."
+    },
+    {
+      "episodeTitle": "The Economic Consequences of the Peace",
+      "pid": "m001qtpf",
+      "relevantPathsAI": [
+        "B.2",
+        "B.1",
+        "C.2"
+      ],
+      "rationaleAI": "Keynes's critique of the Versailles Treaty directly addresses war-terminating treaties (B.2) and their failure to establish collective security (B.1), while the Paris Peace Conference exemplifies public international diplomacy and negotiation of disputes (C.2)."
+    },
+    {
+      "episodeTitle": "The Franco-American Alliance 1778",
+      "pid": "m000v99n",
+      "relevantPathsAI": [
+        "B.1",
+        "C.2",
+        "E.3.c.ii"
+      ],
+      "rationaleAI": "The 1778 treaties of amity and military cooperation constitute a nonaggression and collective security alliance (B.1) negotiated through diplomacy (C.2), and French naval power at Yorktown illustrates the role of naval forces in deciding interstate conflicts (E.3.c.ii)."
+    },
+    {
+      "episodeTitle": "The American Century",
+      "pid": "p0054594",
+      "relevantPathsAI": [
+        "C.1",
+        "A.1"
+      ],
+      "rationaleAI": "Assesses United States foreign policy aims and their compatibility with national and humanitarian interests (C.1), including Cold War interventionism, support for authoritarian regimes, and the global spread of democratic ideals as a transnational political movement (A.1)."
+    },
+    {
+      "episodeTitle": "The Art of War",
+      "pid": "p00548zm",
+      "relevantPathsAI": [
+        "E.1",
+        "E.2.a",
+        "E.2.e"
+      ],
+      "rationaleAI": "Surveys the philosophy of warfare from antiquity through modernity, covering just war theory and international law relating to wartime conduct (E.2.e), Clausewitz's doctrine linking war to politics (E.2.a), and the evolving classification of armed conflict (E.1)."
+    },
+    {
+      "episodeTitle": "The Siege of Paris 1870-71",
+      "pid": "m000d8rv",
+      "relevantPathsAI": [
+        "E.1",
+        "E.2.b",
+        "E.2.d"
+      ],
+      "rationaleAI": "The Franco-Prussian War siege illustrates national warfare between states and the civil insurrection of the Paris Commune (E.1), siege tactics and military operations (E.2.b), and the psychological and civilian effects of wartime deprivation (E.2.d)."
+    },
+    {
+      "episodeTitle": "The Korean Empire",
+      "pid": "m002bj6d",
+      "relevantPathsAI": [
+        "C.1",
+        "B.4"
+      ],
+      "rationaleAI": "Korea's brief assertion of sovereignty involved diplomatic outreach to rival great powers (C.1) before Japan's annexation in 1910, illustrating how territorial treaties and geopolitical competition determine the fate of smaller states (B.4)."
+    },
+    {
+      "episodeTitle": "The Long March",
+      "pid": "m0001bpf",
+      "relevantPathsAI": [
+        "E.1",
+        "E.2.a"
+      ],
+      "rationaleAI": "The Chinese Communist military campaign during the civil war exemplifies guerrilla warfare and civil war as forms of armed conflict (E.1), with Mao's strategic decisions during the march illustrating military strategy under conditions of retreat and attrition (E.2.a)."
+    },
+    {
+      "episodeTitle": "The Hanseatic League",
+      "pid": "m001vshs",
+      "relevantPathsAI": [
+        "B.5",
+        "C.2"
+      ],
+      "rationaleAI": "The Hanseatic League negotiated tax exemptions, trading monopolies, and diplomatic privileges across sovereign territories (B.5), functioning as an international commercial organization that used collective naval power and diplomacy to protect trade routes (C.2)."
+    },
+    {
+      "episodeTitle": "The Mokrani Revolt",
+      "pid": "m001wymz",
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "The largest anticolonial insurrection in French Algeria between the initial conquest and the 1954 war of independence exemplifies colonial insurrection and guerrilla warfare as a form of armed conflict between a subject population and an imperial state (E.1)."
+    },
+    {
+      "episodeTitle": "The Concordat of Worms",
+      "pid": "b0184v2j",
+      "relevantPathsAI": [
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "The 1122 Concordat resolved the Investiture Controversy through negotiated treaty (B.2), establishing a diplomatic precedent for separating spheres of authority between competing powers through arbitration and mediation (C.2)."
+    },
+    {
+      "episodeTitle": "The Gold Standard",
+      "pid": "m0013hh7",
+      "relevantPathsAI": [
+        "B.5"
+      ],
+      "rationaleAI": "The gold standard functioned as an international monetary framework facilitating economic and commercial treaties and stable exchange rates among nations (B.5), with its collapse during the interwar period directly connected to the breakdown of international economic cooperation."
+    },
+    {
+      "episodeTitle": "William Cecil",
+      "pid": "m0002zq6",
+      "relevantPathsAI": [
+        "C.1",
+        "D"
+      ],
+      "rationaleAI": "As Elizabeth I's chief minister, Cecil directed England's foreign policy to defend national security against foreign threats (C.1), and his role in intelligence regarding Mary Queen of Scots exemplifies the use of intelligence activities in preserving national security (D)."
+    },
+    {
+      "episodeTitle": "The Nation State",
+      "pid": "p005462v",
+      "relevantPathsAI": [
+        "A.1",
+        "C.1"
+      ],
+      "rationaleAI": "The nation state as the fundamental unit of the international system underpins international relations, and the episode examines sovereignty, European integration, and devolution as transnational political movements (A.1) and foreign policy challenges posed by globalization (C.1)."
+    },
+    {
+      "episodeTitle": "Garibaldi and the Risorgimento",
+      "pid": "b083qx9j",
+      "relevantPathsAI": [
+        "A.1",
+        "E.1"
+      ],
+      "rationaleAI": "The Risorgimento was a transnational nationalist movement (A.1) that achieved Italian unification through military campaigns against foreign-dominated territories, exemplifying national wars and insurrections (E.1)."
+    },
+    {
+      "episodeTitle": "1848: Year of Revolution",
+      "pid": "b019gy9p",
+      "relevantPathsAI": [
+        "E.1",
+        "A.1"
+      ],
+      "rationaleAI": "The simultaneous revolutionary upheavals across Europe represent civil wars and insurrections driven by liberal and nationalist causes (E.1), constituting a pan-European transnational political movement for self-determination and constitutional reform (A.1)."
+    },
+    {
+      "episodeTitle": "The Mexican Revolution",
+      "pid": "b00xhz8d",
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "A decade-long civil war featuring guerrilla warfare by Villa's northern forces and Zapata's agrarian insurgency exemplifies civil wars, insurrections, and guerrilla warfare as forms of armed conflict (E.1)."
+    },
+    {
+      "episodeTitle": "The Oath",
+      "pid": "p003wtk7",
+      "relevantPathsAI": [
+        "B.1",
+        "E.3.a"
+      ],
+      "rationaleAI": "Oaths cemented peace treaties between warring states and underpinned collective security agreements in the ancient world (B.1), while the Roman military sacramentum illustrates the binding obligations of professional and conscripted soldiers (E.3.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

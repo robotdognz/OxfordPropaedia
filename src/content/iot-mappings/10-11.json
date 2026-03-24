@@ -6,176 +6,79 @@
       "pid": "b00vcqcx",
       "relevantPathsAI": [
         "A",
-        "A.1",
         "A.1.b",
-        "A.1.d",
-        "A.2",
-        "A.2.b",
-        "A.3",
-        "A.3.b",
         "A.3.c",
         "A.4",
         "A.4.a",
-        "B",
         "B.1.b"
       ],
-      "rationaleAI": "Directly traces the history of formal logic from Aristotle's syllogistic (A.1.b) through Stoic propositional logic (A.1.d), medieval supposition theory (A.2.b), Leibniz's calculus of reasoning (A.3.b), Boole's algebra and Frege's predicate calculus (A.3.c), Russell and Whitehead's Principia (A.4.a), and Goedel's incompleteness theorems (B.1.b)."
+      "rationaleAI": "Traces logic from Aristotle's syllogistic reasoning (A.1.b) through Frege's reconception as rigorous formal discipline (A.3.c) to Gödel's incompleteness theorems (B.1.b) and Russell's logicist program (A.4.a)."
     },
     {
       "episodeTitle": "Godel's Incompleteness Theorems",
       "pid": "b00dshx3",
       "relevantPathsAI": [
-        "A.4",
         "A.4.a",
         "A.4.c",
         "B.1.b"
       ],
-      "rationaleAI": "Goedel's incompleteness theorems are among the most important results in 20th-century logic, directly addressing the conflict between Logicism, Formalism, and Intuitionism (A.4.a), metalogical studies of axiomatized systems (A.4.c), and the limitations of logic including undecidability (B.1.b)."
+      "rationaleAI": "Gödel's incompleteness theorems address the conflict between Hilbert's Formalism and Russell's Logicism (A.4.a), constitute metalogical results about axiomatized systems (A.4.c), and demonstrate limitations of formal logical systems (B.1.b)."
     },
     {
       "episodeTitle": "Bertrand Russell",
       "pid": "b01p8fsr",
       "relevantPathsAI": [
-        "A.4",
-        "A.4.a",
-        "B.1.b"
-      ],
-      "rationaleAI": "Russell's foundational work in mathematical logic including Principia Mathematica, Russell's paradox, and the theory of types directly addresses Logicism (A.4.a), and his contributions to philosophy of logic including questions about logic's limitations (B.1.b)."
-    },
-    {
-      "episodeTitle": "Stoicism",
-      "pid": "p003k9fs",
-      "relevantPathsAI": [
-        "A.1.d"
-      ],
-      "rationaleAI": "Stoic logic, including Chrysippus's contributions, was foundational for the logic of propositions (A.1.d), and the episode covers Stoic logic as part of its treatment of the school's three branches of philosophy."
-    },
-    {
-      "episodeTitle": "Wittgenstein",
-      "pid": "p0054945",
-      "relevantPathsAI": [
-        "A.4",
-        "B.1",
-        "B.2.c"
-      ],
-      "rationaleAI": "Wittgenstein's Tractatus Logico-Philosophicus engaged directly with questions about the limits of language and logic, while his later work on language games bears on alternative logics (B.2.c) and the nature and scope of logic (B.1)."
-    },
-    {
-      "episodeTitle": "Infinity",
-      "pid": "p0054927",
-      "relevantPathsAI": [
         "A.3.c",
         "A.4.a",
-        "B.1.b"
+        "B.1.a"
       ],
-      "rationaleAI": "The discussion of Cantor's set theory and the foundational crisis in mathematics engages directly with Frege's and Cantor's study of logic and foundations of mathematics (A.3.c), the conflict between logicism, intuitionism, and formalism (A.4.a), and Goedel's incompleteness theorems (B.1.b)."
+      "rationaleAI": "Russell's attempt to reduce mathematics to logic exemplifies Logicism (A.4.a), Russell's Paradox exposed problems in Frege's system (A.3.c), and his theory of descriptions shaped logic as a discipline (B.1.a)."
     },
     {
-      "episodeTitle": "Euclid's Elements",
-      "pid": "b07881kn",
+      "episodeTitle": "The Continental-Analytic Split",
+      "pid": "b016x2jp",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.4",
+        "B.1.a"
       ],
-      "rationaleAI": "Euclid's axiomatic-deductive method is a landmark in the history of logical reasoning (A.1.b), systematizing geometry through formal proofs that influenced the development of logical methodology from antiquity onward."
-    },
-    {
-      "episodeTitle": "Ockham's Razor",
-      "pid": "b007m0w4",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.b",
-        "A.2.c"
-      ],
-      "rationaleAI": "William of Ockham's contributions to nominalist metaphysics and parsimony are central to medieval logic (A.2), including theories of supposition and categorematic terms (A.2.b) and developments in formal logic including logical fallacies (A.2.c)."
-    },
-    {
-      "episodeTitle": "Rhetoric",
-      "pid": "p004y263",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "Rhetoric's history from the Sophists through Aristotle directly addresses the precursors of ancient logic including the Sophists' contributions to theories of language (A.1.a)."
-    },
-    {
-      "episodeTitle": "St Thomas Aquinas",
-      "pid": "b00mkd63",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.a"
-      ],
-      "rationaleAI": "Aquinas's synthesis of Aristotelian philosophy with Christian theology is central to medieval logic's development, and the scholastic method relates directly to summations of logic in the medieval period (A.2.a)."
-    },
-    {
-      "episodeTitle": "Zeno's Paradoxes",
-      "pid": "b07vs3v1",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a"
-      ],
-      "rationaleAI": "Zeno's paradoxes represent early engagement with logical reasoning about infinity, continuity, and motion, contributing to pre-Socratic logical thinking that preceded and influenced Aristotelian logic (A.1.a)."
+      "rationaleAI": "The analytic tradition founded by Russell, Frege, and Wittgenstein placed formal logic at philosophy's center, shaping conceptions of logic's scope (B.1.a) and reflecting different approaches to philosophical method (A.4)."
     },
     {
       "episodeTitle": "Ordinary Language Philosophy",
       "pid": "b03ggc19",
       "relevantPathsAI": [
-        "A.4",
+        "B.1.a",
+        "B.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "Ordinary Language Philosophy, including Austin's speech act theory and Ryle's category mistakes, represents a major 20th-century development challenging formal logic's scope and proposing alternative approaches to philosophical analysis (B.2.c), with implications for the nature and varieties of logic (A.4)."
+      "rationaleAI": "Ordinary language philosophy challenged formal logic's dominance, presenting alternative conception of logic's scope (B.1.a), connecting to problems in meaning and truth (B.2.a) and alternatives to formal logics (B.2.c)."
     },
     {
-      "episodeTitle": "Mathematics",
-      "pid": "p00545hk",
+      "episodeTitle": "Truth",
+      "pid": "b04v59gz",
       "relevantPathsAI": [
-        "A.3.c",
-        "A.4.a",
-        "B.1.b"
-      ],
-      "rationaleAI": "The discussion of whether mathematics is discovered or invented, and debates about mathematical realism, formalism, and foundations, directly engages with the relationship between logic and foundations of mathematics (A.3.c, A.4.a) and Goedel's incompleteness theorems (B.1.b)."
-    },
-    {
-      "episodeTitle": "Mathematics and Platonism",
-      "pid": "p0054799",
-      "relevantPathsAI": [
-        "A.4.a",
-        "B.1.b"
-      ],
-      "rationaleAI": "Mathematical Platonism directly addresses the conflict between Logicism, Intuitionism, and Formalism (A.4.a) through the positions of Goedel, Brouwer, and Hilbert, and engages with Goedel's incompleteness theorems and their philosophical implications (B.1.b)."
-    },
-    {
-      "episodeTitle": "Empiricism",
-      "pid": "p004y28g",
-      "relevantPathsAI": [
-        "A.3.a",
         "B.2.a"
       ],
-      "rationaleAI": "Empiricism's influence on logical positivism and the Vienna Circle connects to the rise of mathematical logic (A.3.a via the search for clarity), and its epistemological framework bears on problems of meaning and truth in the philosophy of logic (B.2.a)."
+      "rationaleAI": "Correspondence, coherence, pragmatist, and semantic theories of truth directly address problems in meaning and truth central to philosophy of logic (B.2.a)."
     },
     {
-      "episodeTitle": "Baconian Science",
-      "pid": "b00jdb6c",
+      "episodeTitle": "Aristotle's Poetics",
+      "pid": "b00xw210",
       "relevantPathsAI": [
-        "A.3.a"
+        "A.2",
+        "A.2.a"
       ],
-      "rationaleAI": "Bacon's critique of Aristotelian deduction and his four Idols (obstacles to clear thinking) represent a key Renaissance development in the relationship between logic and scientific method (A.3.a)."
+      "rationaleAI": "Medieval universities adopted logic as core trivium discipline, providing institutional setting for disputes between old and new logic after translation of Aristotle's Organon (A.2.a)."
     },
     {
-      "episodeTitle": "Calculus",
-      "pid": "b00mrfwq",
-      "relevantPathsAI": [
-        "A.3.b"
-      ],
-      "rationaleAI": "Leibniz's differential notation and the calculus connect to his broader dream of a universal calculus of reasoning during the Enlightenment (A.3.b), and the episode addresses the philosophical implications of infinitesimals relevant to the development of mathematical logic."
-    },
-    {
-      "episodeTitle": "Al-Kindi",
-      "pid": "b01k2bv8",
+      "episodeTitle": "The 12th Century Renaissance",
+      "pid": "b07z6vzq",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Al-Kindi's role in the translation movement that brought Greek philosophical works including Aristotle's logical writings into Arabic is relevant to the Arabic contributions to the development of medieval logic (A.2.a)."
+      "rationaleAI": "The twelfth-century renaissance channeled Arabic translations of Aristotle back into Latin scholarship, enabling recovery of the Organon that sparked old/new logic disputes (A.2.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,75 +2,66 @@
   "sectionCode": "337",
   "mappings": [
     {
-      "episodeTitle": "Hybrids",
-      "pid": "m0009t41",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "D.2.b"
-      ],
-      "rationaleAI": "Hybridization directly addresses interspecific reproduction mechanisms in plants (polyploidy) and animals (mules, ligers), barriers to reproduction (prezygotic and postzygotic isolation), and the role of reproductive processes in speciation and genetic diversity."
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": ["C", "C.1", "C.3.b", "C.5"],
+      "rationaleAI": "Directly addresses plant reproductive biology including pollination mechanisms (wind, water, animal-mediated), co-evolutionary relationships between plants and pollinators, and flower morphology adaptations for sexual reproduction in seed plants."
     },
     {
-      "episodeTitle": "Behavioural Ecology",
-      "pid": "b04tljk0",
-      "relevantPathsAI": [
-        "A.3",
-        "B.3",
-        "D.1",
-        "D.3.c"
-      ],
-      "rationaleAI": "Behavioural ecology covers sexual selection and mate choice, parental investment, kin selection, and the evolution of reproductive strategies -- directly relevant to natural selection's shaping of reproduction and hormone cycles related to reproductive behaviour."
-    },
-    {
-      "episodeTitle": "Slime Moulds",
-      "pid": "m002691y",
-      "relevantPathsAI": [
-        "A.1.b",
-        "A.1.d",
-        "C.4"
-      ],
-      "rationaleAI": "Slime moulds exhibit remarkable reproductive biology including spore formation, aggregation cycles, and life cycles that span sexual and asexual phases, relevant to cell reproduction, organism life cycles, and variations in reproductive cycles."
-    },
-    {
-      "episodeTitle": "Fungi",
-      "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "A.2",
-        "C.1",
-        "C.3.a"
-      ],
-      "rationaleAI": "Fungi reproduce via spore production through both sexual and asexual means, with diverse reproductive strategies relevant to asexual systems creating identical organisms and sex organs in spore plants."
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
+      "relevantPathsAI": ["D.3.c", "C.5", "B.6.d"],
+      "rationaleAI": "Covers reproductive hormones including oestrogen and testosterone, their roles in regulating reproduction, and hormonal feedback loops, directly relevant to the role of gonads in hormone cycles and the influence of hormonal factors on reproductive maturation."
     },
     {
       "episodeTitle": "Pheromones",
       "pid": "m0002mdl",
-      "relevantPathsAI": [
-        "D.2.b",
-        "D.3.c"
-      ],
-      "rationaleAI": "Pheromones play a central role in sexual attraction and reproductive signaling across animal species, directly relevant to mechanisms aiding gamete union and the role of gonads in hormone cycles."
+      "relevantPathsAI": ["D.2.b", "D.1", "B.5"],
+      "rationaleAI": "Pheromones function as chemical signals for sexual attractiveness and mate selection across animal species, directly relevant to mechanisms aiding the union of gametes in invertebrates, and caste determination in social insects represents a form of reproductive specialization."
     },
     {
-      "episodeTitle": "Linnaeus",
-      "pid": "m001l291",
-      "relevantPathsAI": [
-        "C.3.b"
-      ],
-      "rationaleAI": "Linnaeus developed the sexual system of plant classification based on reproductive structures (stamens and pistils), directly relevant to variations of sex organs in seed plants."
+      "episodeTitle": "Behavioural Ecology",
+      "pid": "b04tljk0",
+      "relevantPathsAI": ["A.3", "B.3", "D.1"],
+      "rationaleAI": "Examines mating strategies and reproductive decision-making in ecological context, addressing how organisms evolve behaviours for reproduction under natural selection pressures and the adaptive significance of different reproductive strategies across species."
     },
     {
-      "episodeTitle": "Circadian Rhythms",
-      "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "C.5",
-        "D.3.c"
-      ],
-      "rationaleAI": "Circadian rhythms govern hormone release cycles including reproductive hormones, directly relevant to internal factors influencing maturation and the role of gonads in hormone cycles."
+      "episodeTitle": "Hybrids",
+      "pid": "m0009t41",
+      "relevantPathsAI": ["A.2", "A.3", "B.3", "B.5"],
+      "rationaleAI": "Interspecies hybridization directly concerns sexual reproduction outcomes, with sterile hybrids (mules) versus fertile offspring establishing new species illustrating the adaptive significance of sex in generating genetic diversity and the evolutionary consequences of different reproductive patterns."
+    },
+    {
+      "episodeTitle": "The Cell",
+      "pid": "b01mk8vh",
+      "relevantPathsAI": ["A.1.b", "A.1"],
+      "rationaleAI": "Cell division is a fundamental mode of reproduction at the cellular level; the episode covers cell biology including division processes relevant to binary fission, cell reproduction, and the cellular basis underlying all organismal reproduction."
+    },
+    {
+      "episodeTitle": "Genetic Mutation",
+      "pid": "b008drvm",
+      "relevantPathsAI": ["A.1.a", "A.3"],
+      "rationaleAI": "Mutations as errors in DNA replication during reproduction are central to molecular replication processes, and the generation of heritable variation through mutation is the raw material upon which natural selection acts to shape the evolution of reproductive strategies."
+    },
+    {
+      "episodeTitle": "Bacteriophages",
+      "pid": "m0020pf0",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Bacteriophages mediate transduction, the transfer of genetic material between bacteria via viral vectors, which is the principal mechanism of sexlike genetic recombination in viruses and bacteria described in the outline."
+    },
+    {
+      "episodeTitle": "Parasitism",
+      "pid": "b08bb9cy",
+      "relevantPathsAI": ["A.1.d", "A.3", "D.2"],
+      "rationaleAI": "Parasites exhibit complex reproductive life cycles and specialized reproductive strategies including brood parasitism in cuckoos, illustrating how natural selection drives the evolution of diverse reproductive adaptations and co-evolutionary arms races between host and parasite reproductive biology."
+    },
+    {
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["A.2", "B.3"],
+      "rationaleAI": "Cloning (Dolly the sheep) represents artificial asexual reproduction of organisms, and genetic manipulation technologies directly address the control of genetic diversity and variation in reproduction, raising questions about the boundary between sexual and asexual reproductive outcomes."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

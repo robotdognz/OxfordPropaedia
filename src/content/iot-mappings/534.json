@@ -5,10 +5,12 @@
       "episodeTitle": "The Wealth of Nations",
       "pid": "b052ln55",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.2.a",
         "B.2"
       ],
-      "rationaleAI": "The Wealth of Nations covers the labour theory of value, the role of self-interest, and the proper functions of government, directly addressing distribution by factor shares and the nature and purposes of taxation."
+      "rationaleAI": "Smith's foundational economic theory directly addresses the nature and sources of wealth (A.1), the distribution of national product into wages, profits, and rent as factor shares (A.2.a), and arguments about the proper functions and limits of government intervention including taxation (B.2)."
     },
     {
       "episodeTitle": "Capitalism",
@@ -58,9 +60,12 @@
       "episodeTitle": "The Enclosures of the 18th Century",
       "pid": "b00b1m9b",
       "relevantPathsAI": [
-        "A.3.b"
+        "A.2.b",
+        "A.3.b",
+        "B.3.a",
+        "B.6"
       ],
-      "rationaleAI": "The enclosure movement's social impact on rural laborers and small farmers who lost common rights and its relationship to property rights directly addresses comparisons among wealth and income groups."
+      "rationaleAI": "The enclosure movement fundamentally redistributed land wealth from smallholders and commoners to larger landowners (A.2.b, A.3.b), with parliamentary legislation enabling enclosures illustrating direct government control over property rights (B.3.a, B.6) and the relationship between land tenure policy and class-based wealth inequality."
     },
     {
       "episodeTitle": "The Poor Laws",
@@ -85,7 +90,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "The South Sea Bubble's scheme to assume the national debt directly addresses the financing of budgetary deficits and the public debt."
+      "rationaleAI": "The South Sea Company's scheme to restructure national debt through equity conversion and the subsequent crisis directly address the financing of budgetary deficits and the management of public debt (B.5), while the resulting regulatory reforms illustrate early government financial controls."
     },
     {
       "episodeTitle": "The Emancipation of the Serfs",
@@ -94,7 +99,7 @@
         "A.3.b",
         "B.6.a"
       ],
-      "rationaleAI": "The emancipation of the serfs covers land redistribution, redemption payments, and the conditions of serfdom, directly addressing comparisons among wealth and income groups and price, wage, and profit control."
+      "rationaleAI": "The 1861 emancipation restructured agrarian wealth distribution between nobles and former serfs (A.3.b), with redemption payment terms and constraints on land transfer representing direct government controls over wages and economic conditions (B.6.a)."
     },
     {
       "episodeTitle": "The Peasants’ Revolt",
@@ -121,8 +126,91 @@
         "B.6"
       ],
       "rationaleAI": "Economic rights debates over free markets versus social welfare and the welfare state as a compromise directly address government welfare programs and direct controls over the private sector."
+    },
+    {
+      "episodeTitle": "The Theory of the Leisure Class",
+      "pid": "m001sdrt",
+      "relevantPathsAI": [
+        "A",
+        "A.2.b",
+        "A.3.b"
+      ],
+      "rationaleAI": "Veblen's analysis of conspicuous consumption examines how wealth concentrates among social classes (A.2.b) and the behavioral patterns distinguishing wealth groups (A.3.b). His critique of unearned privilege and distributional justice influenced Progressive Era and New Deal thinking about redistribution of income and wealth."
+    },
+    {
+      "episodeTitle": "The Aristocracy",
+      "pid": "p00548zx",
+      "relevantPathsAI": [
+        "A.2.b",
+        "A.3.b",
+        "B.3.a",
+        "B.3.f"
+      ],
+      "rationaleAI": "Examines hereditary concentration of wealth through land ownership and primogeniture (A.2.b, A.3.b), and the role of death duties (B.3.f) and property-based taxation (B.3.a) in eroding aristocratic wealth. The discussion of twentieth-century social leveling illustrates how government tax policy reshapes wealth distribution across classes."
+    },
+    {
+      "episodeTitle": "The Corn Laws",
+      "pid": "b03dvbyk",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "Tariffs on grain imports (B.3.c) that artificially inflated food prices, transferring income from manufacturers and the working class to landed aristocrats—a direct case study in how tariff policy produces regressive effects on income distribution across classes (B.2.b)."
+    },
+    {
+      "episodeTitle": "The Domesday Book",
+      "pid": "b040llvb",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.3.a"
+      ],
+      "rationaleAI": "A comprehensive survey recording land ownership, property values, tenants, and agricultural resources for taxation purposes—directly illustrating the measurement and classification of wealth (A.1, A.2) and the assessment of real property for tax collection (B.3.a)."
+    },
+    {
+      "episodeTitle": "Social Darwinism",
+      "pid": "b03vgq1q",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Spencer's 'survival of the fittest' provided ideological justification for existing patterns of wealth and income inequality (A.3), arguing competitive struggle among individuals naturally produces hierarchical distribution and defending laissez-faire economics against redistributive government intervention."
+    },
+    {
+      "episodeTitle": "Mercantilism",
+      "pid": "m001k0zv",
+      "relevantPathsAI": [
+        "B.3.c",
+        "B.6"
+      ],
+      "rationaleAI": "Mercantilist policies of protectionist tariffs and export controls (B.3.c) combined with state regulation of commerce through colonial monopolies and chartered trading companies (B.6) represent a systematic approach to government control over the distribution of national wealth through trade barriers and direct economic intervention."
+    },
+    {
+      "episodeTitle": "The Great Irish Famine",
+      "pid": "m0003rj1",
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.c"
+      ],
+      "rationaleAI": "British government responses shaped by laissez-faire economics and Poor Law administration illustrate the consequences of inadequate welfare transfers and relief programs (B.4.c) on vulnerable populations. The famine exposed how landlordism and government inaction on subsidies affect the distribution of resources to the poorest classes."
+    },
+    {
+      "episodeTitle": "Annie Besant",
+      "pid": "b01jxtd7",
+      "relevantPathsAI": [
+        "B.6.a",
+        "B.6.b"
+      ],
+      "rationaleAI": "Besant's role in the 1888 match factory strike brought exploitative wages and working conditions to public attention, engaging issues of wage control and workers' protections (B.6.a). Her campaigning for labor rights connects to legislative regulation of labor practices and the broader framework of government controls over private-sector employment conditions (B.6.b)."
+    },
+    {
+      "episodeTitle": "John Bull",
+      "pid": "m0018nsd",
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Arbuthnot's satirical creation represented the overtaxed English voter exploited by war financiers during the War of the Spanish Succession, directly illustrating public debate over the burden and incidence of taxation (B.2.c) and how tax costs are shifted between social classes."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

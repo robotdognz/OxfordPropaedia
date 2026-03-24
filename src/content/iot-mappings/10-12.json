@@ -2,6 +2,16 @@
   "sectionCode": "10/12",
   "mappings": [
     {
+      "episodeTitle": "Godel's Incompleteness Theorems",
+      "pid": "b00dshx3",
+      "relevantPathsAI": [
+        "B",
+        "B.3",
+        "A.5"
+      ],
+      "rationaleAI": "Gödel's Incompleteness Theorems prove any sufficiently powerful formal system is incomplete or inconsistent (B.3), directly engaging set theory and natural-number arithmetic (A.5)."
+    },
+    {
       "episodeTitle": "Logic",
       "pid": "b00vcqcx",
       "relevantPathsAI": [
@@ -9,76 +19,84 @@
         "A.1",
         "A.2",
         "A.3",
-        "B"
-      ],
-      "rationaleAI": "Covers Aristotelian term logic (A.3 syllogistic), Stoic propositional logic (A.1), Frege's predicate calculus (A.2), Boole's algebraisation (A.1), and Goedel's incompleteness theorems bearing on metalogic (B.3), providing a comprehensive survey of formal logical systems."
-    },
-    {
-      "episodeTitle": "Godel's Incompleteness Theorems",
-      "pid": "b00dshx3",
-      "relevantPathsAI": [
-        "A.5",
         "B",
         "B.3"
       ],
-      "rationaleAI": "Goedel's incompleteness theorems are the central result in metalogic concerning completeness, consistency, and decidability of formal mathematical systems (B.3), with direct implications for set theory and natural-number arithmetic (A.5)."
+      "rationaleAI": "Surveys formal logic from Aristotle's syllogistic (A.3) through propositional (A.1) and predicate calculus (A.2) to Frege, covering Gödel's metalogical limits (B.3)."
     },
     {
       "episodeTitle": "Bertrand Russell",
       "pid": "b01p8fsr",
       "relevantPathsAI": [
-        "A.2",
+        "A.5",
+        "B",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Russell's Paradox exposed contradictions in naive set theory (A.5), motivating type theory and formal systems (B.2), with Principia addressing completeness and consistency (B.3)."
+    },
+    {
+      "episodeTitle": "Game Theory",
+      "pid": "b01h75xp",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Game theory formalizes strategic decision-making through models of rational action under uncertainty, corresponding to practical logic (C.3)."
+    },
+    {
+      "episodeTitle": "Goethe and the Science of the Enlightenment",
+      "pid": "p00546n1",
+      "relevantPathsAI": [
         "A.5",
         "B.3"
       ],
-      "rationaleAI": "Russell's Principia Mathematica developed the predicate calculus and theory of types (A.2), Russell's paradox raised fundamental issues in set theory (A.5), and his work is central to discoveries about formal mathematical systems (B.3)."
+      "rationaleAI": "Cantor's set theory proving different sizes of infinity and the continuum hypothesis are core to set theory (A.5); undecidability of the continuum hypothesis is a landmark metalogical result (B.3)."
     },
     {
-      "episodeTitle": "Truth",
-      "pid": "b04v59gz",
+      "episodeTitle": "Ordinary Language Philosophy",
+      "pid": "b03ggc19",
       "relevantPathsAI": [
-        "B.5",
-        "C.2"
+        "C.1",
+        "C.1.a"
       ],
-      "rationaleAI": "Tarski's semantic theory of truth is foundational for model theory (B.5), and the discussion of meaning and truth theories engages directly with the semantics of formal languages and epistemic logic (C.2)."
+      "rationaleAI": "Ordinary language philosophy represents a systematic critique of forms of reasoning (C.1) and argumentation grounded in linguistic practice (C.1.a)."
     },
     {
-      "episodeTitle": "Rhetoric",
-      "pid": "p004y263",
+      "episodeTitle": "The Scientific Method",
+      "pid": "b01b1ljm",
       "relevantPathsAI": [
         "C.1",
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Rhetoric from Aristotle through its modern revival directly addresses the critique of forms of reasoning, including argumentation theory (C.1.a) and analysis of logical fallacies (C.1.b)."
+      "rationaleAI": "Scientific method concerns critique of reasoning (C.1): Bacon's induction vs Aristotelian deduction, Popper's falsifiability demarcating science from pseudoscience (C.1.b)."
     },
     {
-      "episodeTitle": "Mathematics and Platonism",
-      "pid": "p0054799",
+      "episodeTitle": "Truth",
+      "pid": "b04v59gz",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Theories of truth are central to epistemic logic (C.2), dealing with concepts of belief, knowledge, and assertion."
+    },
+    {
+      "episodeTitle": "Euclid's Elements",
+      "pid": "b07881kn",
       "relevantPathsAI": [
         "A.5",
-        "B.3"
+        "B.2"
       ],
-      "rationaleAI": "Mathematical Platonism's discussion of Goedel, Brouwer, and Hilbert bears directly on set theory foundations (A.5) and on completeness, consistency, and decidability of formal systems (B.3)."
+      "rationaleAI": "Euclid's Elements established the axiomatic-deductive paradigm for formal systems (B.2); number theory connects to natural-number arithmetic (A.5)."
     },
     {
       "episodeTitle": "Zeno's Paradoxes",
       "pid": "b07vs3v1",
       "relevantPathsAI": [
-        "A.1"
+        "A.5"
       ],
-      "rationaleAI": "Zeno's paradoxes engage with logical analysis of propositions about infinity and continuity, connecting to propositional and predicate reasoning about motion and plurality (A.1)."
-    },
-    {
-      "episodeTitle": "The Ontological Argument",
-      "pid": "b01mwx64",
-      "relevantPathsAI": [
-        "A.4",
-        "C.2"
-      ],
-      "rationaleAI": "Plantinga's modern reformulation of the ontological argument using modal logic exemplifies the application of modal logic (A.4), and the argument's structure engages with epistemic logic concerning belief and knowledge (C.2)."
+      "rationaleAI": "Zeno's paradoxes stimulated development of set theory and rigorous treatment of natural-number arithmetic (A.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

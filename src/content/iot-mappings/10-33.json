@@ -2,34 +2,66 @@
   "sectionCode": "10/33",
   "mappings": [
     {
-      "episodeTitle": "Early Geology",
-      "pid": "b01dgh7d",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.3.a.ii",
-        "A.3.a.iii",
-        "A.4.a.iii"
-      ],
-      "rationaleAI": "The emergence of geology covers the development of paleontology and stratigraphy (A.3.a.ii), the Neptunist-Plutonist controversy (A.3.a.iii), and uniformitarianism (A.4.a.iii)."
-    },
-    {
-      "episodeTitle": "Fossils",
-      "pid": "p00547d3",
-      "relevantPathsAI": [
-        "A.2.a.ii",
-        "A.3.a.ii",
-        "A.4.a.ii"
-      ],
-      "rationaleAI": "Fossils from early speculations through Mary Anning and William Smith cover speculations about fossils (A.2.a.ii), development of paleontology and stratigraphy (A.3.a.ii), and faunal succession (A.4.a.ii)."
-    },
-    {
       "episodeTitle": "Plate Tectonics",
       "pid": "b008q0sp",
       "relevantPathsAI": [
         "A.5.a.vi",
         "B.2"
       ],
-      "rationaleAI": "Plate tectonics as the unifying theory of Earth science covers the theory of plate tectonics (A.5.a.vi) and is central to the geologic sciences as a discipline (B.2)."
+      "rationaleAI": "Plate tectonics: unifying 20th-century geological theory (A.5.a.vi, B.2)."
+    },
+    {
+      "episodeTitle": "The Earth's Origins",
+      "pid": "p00547hl",
+      "relevantPathsAI": [
+        "A.3.a.ii",
+        "A.3.a.iii",
+        "A.4.a.ii",
+        "A.4.a.iii",
+        "A.4.a.v"
+      ],
+      "rationaleAI": "Earth's age from Ussher through Hutton, Smith, Lyell (A.3.a.ii-A.4.a.v)."
+    },
+    {
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
+      "relevantPathsAI": [
+        "A.4.a.iv",
+        "A.5.a.v",
+        "A.5.b.v",
+        "B.2"
+      ],
+      "rationaleAI": "Ice ages: Agassiz (A.4.a.iv), Snowball Earth (A.5.a.v), glaciers (A.5.b.v, B.2)."
+    },
+    {
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": [
+        "A.2.a.i",
+        "A.5.a.iii",
+        "B.2"
+      ],
+      "rationaleAI": "Volcanology from Pliny through modern monitoring (A.2.a.i, A.5.a.iii, B.2)."
+    },
+    {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": [
+        "A.4.a.i",
+        "B.2"
+      ],
+      "rationaleAI": "Crystallography: mineral classification (A.4.a.i, B.2)."
+    },
+    {
+      "episodeTitle": "Early Geology",
+      "pid": "b01dgh7d",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3.a",
+        "A.4"
+      ],
+      "rationaleAI": "Geology's emergence from antiquity to Geological Society (A.1-A.4)."
     },
     {
       "episodeTitle": "Seismology",
@@ -38,149 +70,160 @@
         "A.5.a.iii",
         "B.2"
       ],
-      "rationaleAI": "Seismology covers advances in geophysics and the study of the internal structure of the Earth (A.5.a.iii) and is a core geologic discipline (B.2)."
-    },
-    {
-      "episodeTitle": "Ice Ages",
-      "pid": "b01qjj99",
-      "relevantPathsAI": [
-        "A.4.a.iv",
-        "A.5.b.v"
-      ],
-      "rationaleAI": "Ice ages from Agassiz through Milankovitch cycles cover the evidence for an Ice Age (A.4.a.iv) and the study of glacier motion and ice sheets (A.5.b.v)."
+      "rationaleAI": "Seismology: Lisbon to Cold War networks (A.5.a.iii, B.2)."
     },
     {
       "episodeTitle": "The Geological Formation of Britain",
       "pid": "b00n8t48",
       "relevantPathsAI": [
-        "A.4.a",
         "A.5.a.vi",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "The geological formation of Britain covers plate tectonics (A.5.a.vi), stratigraphic processes (A.4.a), and demonstrates how Britain's geological diversity made it central to geology as a science (B.2)."
+      "rationaleAI": "Britain's geological formation via plate tectonics (A.5.a.vi, B.1, B.2)."
     },
     {
       "episodeTitle": "Ageing the Earth",
       "pid": "p005493g",
       "relevantPathsAI": [
         "A.4.a.v",
-        "A.5.a.i"
+        "A.5.a.i",
+        "B.2"
       ],
-      "rationaleAI": "Ageing the Earth from Ussher through Kelvin to radiometric dating covers estimates of the age of the Earth (A.4.a.v) and development of radiometric dating (A.5.a.i)."
+      "rationaleAI": "Geochronology: Ussher to radiometric dating (A.4.a.v, A.5.a.i, B.2)."
     },
     {
       "episodeTitle": "Catastrophism",
       "pid": "b03s9tlz",
       "relevantPathsAI": [
-        "A.3.a.ii",
         "A.4.a.ii",
-        "A.4.a.iii"
+        "A.4.a.iii",
+        "A.5.a.v"
       ],
-      "rationaleAI": "Catastrophism covers Cuvier's fossil evidence for mass extinctions (A.3.a.ii), the debate with uniformitarianism (A.4.a.iii), and the concept of faunal succession (A.4.a.ii)."
+      "rationaleAI": "Catastrophism vs uniformitarianism (A.4.a.ii, A.4.a.iii, A.5.a.v)."
     },
     {
-      "episodeTitle": "The Earth's Core",
-      "pid": "b05s3gyv",
+      "episodeTitle": "Ediacara Biota",
+      "pid": "b00lh2s3",
       "relevantPathsAI": [
-        "A.5.a.iii",
-        "B.2"
+        "A.5.a.v"
       ],
-      "rationaleAI": "The Earth's core covers seismological evidence for internal structure, dynamo theory, and core-mantle interactions, all central to advances in geophysics (A.5.a.iii) and the geologic sciences (B.2)."
+      "rationaleAI": "Ediacara Biota: Precambrian life (A.5.a.v)."
+    },
+    {
+      "episodeTitle": "Meteorology",
+      "pid": "p00548v8",
+      "relevantPathsAI": [
+        "A.2.b",
+        "A.3.c",
+        "A.4.c",
+        "A.5.c"
+      ],
+      "rationaleAI": "Meteorology from Aristotle to satellite observation (A.2.b-A.5.c)."
     },
     {
       "episodeTitle": "Oceanography",
       "pid": "p00547lb",
       "relevantPathsAI": [
         "A.4.b.ii",
-        "A.5.b",
+        "A.5.b.iii",
+        "A.5.b.iv",
         "B.3"
       ],
-      "rationaleAI": "Oceanography from HMS Challenger through modern deep-sea research covers the beginnings of oceanography (A.4.b.ii), 20th-century hydrologic sciences (A.5.b), and the hydrologic sciences as a discipline (B.3)."
+      "rationaleAI": "Oceanography: Azoic Theory refuted, ocean mapping (A.4.b.ii-A.5.b.iv, B.3)."
     },
     {
-      "episodeTitle": "Vulcanology",
-      "pid": "p005490h",
+      "episodeTitle": "Venus",
+      "pid": "m0001rm1",
       "relevantPathsAI": [
-        "A.2.a.i",
-        "A.5.a.vi",
-        "B.2"
+        "A.4.b.ii",
+        "A.5.b.iii",
+        "A.5.b.iv",
+        "B.3"
       ],
-      "rationaleAI": "Vulcanology covers speculations about volcanic eruptions (A.2.a.i), the relationship between volcanism and plate tectonics (A.5.a.vi), and is a core geologic discipline (B.2)."
-    },
-    {
-      "episodeTitle": "Meteorology",
-      "pid": "p00548v8",
-      "relevantPathsAI": [
-        "A.4.c.iii",
-        "A.5.c",
-        "B.1"
-      ],
-      "rationaleAI": "Meteorology from Aristotle through numerical weather prediction covers the study of weather and climate (A.4.c.iii), 20th-century atmospheric sciences (A.5.c), and physical geography (B.1)."
+      "rationaleAI": "Challenger expedition: oceanography as discipline (A.4.b.ii-A.5.b.iv, B.3)."
     },
     {
       "episodeTitle": "Antarctica",
       "pid": "b00ss2th",
       "relevantPathsAI": [
         "A.5.b.v",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Antarctica's ice sheets, climate role, and scientific significance connect to the study of high-latitude ice sheets (A.5.b.v) and the hydrologic sciences including glaciology (B.3)."
+      "rationaleAI": "Antarctica: ice sheets, paleoclimatology (A.5.b.v, B.2, B.3)."
     },
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
+      "episodeTitle": "Climate Change",
+      "pid": "p00546l7",
       "relevantPathsAI": [
-        "A.5.b.i",
-        "B.3"
+        "A.5.c.i",
+        "A.5.c.ii",
+        "A.5.c.v"
       ],
-      "rationaleAI": "Water's unique properties including the water cycle and climate regulation connect to the study of water resources (A.5.b.i) and the hydrologic sciences (B.3)."
+      "rationaleAI": "Climate change: modern meteorology (A.5.c.i-A.5.c.v)."
+    },
+    {
+      "episodeTitle": "The Cambrian Period",
+      "pid": "p003k9bg",
+      "relevantPathsAI": [
+        "A.5.a.v",
+        "B.2"
+      ],
+      "rationaleAI": "Cambrian explosion fossils (A.5.a.v, B.2)."
     },
     {
       "episodeTitle": "Doggerland",
       "pid": "m0006707",
       "relevantPathsAI": [
         "A.5.b.v",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Doggerland's submergence due to post-glacial sea level rise connects to the study of glacier motion and high-latitude ice sheets (A.5.b.v) and geological sciences (B.2)."
+      "rationaleAI": "Doggerland: post-glacial submersion (A.5.b.v, B.1, B.2)."
     },
     {
-      "episodeTitle": "The Mariana Trench",
-      "pid": "m002q38k",
+      "episodeTitle": "Mars",
+      "pid": "b00772rr",
       "relevantPathsAI": [
-        "A.5.b.iii",
-        "A.5.a.vi",
+        "A.5.a.iv"
+      ],
+      "rationaleAI": "Mars: astrogeologic research (A.5.a.iv)."
+    },
+    {
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": [
+        "A.5.a.iv"
+      ],
+      "rationaleAI": "Venus: planetary climate dynamics, astrogeology (A.5.a.iv)."
+    },
+    {
+      "episodeTitle": "Darwin: The Voyage of the Beagle",
+      "pid": "b00gbf2g",
+      "relevantPathsAI": [
+        "A.4.a.ii",
+        "A.4.a.vi"
+      ],
+      "rationaleAI": "Darwin's geological observations (A.4.a.ii, A.4.a.vi)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "The Mariana Trench covers charting of ocean floors (A.5.b.iii), subduction and plate tectonics (A.5.a.vi), and oceanography (B.3)."
+      "rationaleAI": "Water's properties underpin hydrologic sciences (B.3)."
     },
     {
-      "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
-      "pid": "b08hpmmf",
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
       "relevantPathsAI": [
-        "A.5.a.v",
-        "A.5.c.v"
+        "A.4.a.vii"
       ],
-      "rationaleAI": "The PETM as a rapid global warming event 56 million years ago connects to advances in paleontology including paleoecology (A.5.a.v) and climate classification (A.5.c.v)."
-    },
-    {
-      "episodeTitle": "The Permian-Triassic Boundary",
-      "pid": "b007r285",
-      "relevantPathsAI": [
-        "A.5.a.v"
-      ],
-      "rationaleAI": "The Permian-Triassic extinction covers advances in paleontology (A.5.a.v), the most severe mass extinction and its implications for understanding ecological collapse."
-    },
-    {
-      "episodeTitle": "Extremophiles",
-      "pid": "b05zl3v2",
-      "relevantPathsAI": [
-        "A.5.b.i",
-        "B.3"
-      ],
-      "rationaleAI": "Extremophiles in deep-sea hydrothermal vents and other extreme environments connect to the study of seawater chemistry and oceanic resources (A.5.b.i, A.5.b.ii) and the hydrologic sciences (B.3)."
+      "rationaleAI": "Gilbert's Earth-as-magnet: early geophysics (A.4.a.vii)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

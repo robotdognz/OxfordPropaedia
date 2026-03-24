@@ -4,150 +4,166 @@
     {
       "episodeTitle": "The Sun",
       "pid": "b048nlfb",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5"
-      ],
-      "rationaleAI": "The Sun's composition, photosphere, chromosphere, corona, sunspots, solar cycle, solar wind, and expected evolution comprehensively address all aspects of the Sun (B)."
+      "relevantPathsAI": ["B", "B.1", "B.1.a", "B.1.b", "B.1.c", "B.2", "B.2.a", "B.2.b", "B.2.c", "B.3", "B.4", "B.5"],
+      "rationaleAI": "Comprehensive treatment of the Sun covering nuclear fusion energy generation in its core (B.3), photosphere observations (B.1.a), corona structure and extreme temperature (B.1.c), sunspot cycles and localized magnetic fields (B.2.a, B.2.b), solar flares and coronal mass ejections (B.2.c), solar wind dynamics (B.1.c), solar radiation (B.4), and disruption of terrestrial communications and power grids (B.5)."
     },
     {
       "episodeTitle": "Solar Wind",
       "pid": "m000dg9n",
-      "relevantPathsAI": [
-        "B.1.c",
-        "B.5",
-        "A.3.d"
-      ],
-      "rationaleAI": "The solar wind as a stream of charged particles from the corona, its interaction with Earth's magnetosphere, and the heliosphere address the corona and solar wind (B.1.c), solar-terrestrial relationships (B.5), and the interplanetary medium (A.3.d)."
-    },
-    {
-      "episodeTitle": "The Planets",
-      "pid": "p004y25b",
-      "relevantPathsAI": [
-        "A",
-        "C",
-        "C.1",
-        "C.3"
-      ],
-      "rationaleAI": "A survey of all eight planets, their characteristics, formation, and the reclassification of Pluto comprehensively address the solar system survey (A) and both terrestrial (C.1) and giant planets (C.3)."
-    },
-    {
-      "episodeTitle": "Saturn",
-      "pid": "b06vmr1m",
-      "relevantPathsAI": [
-        "C.3.b"
-      ],
-      "rationaleAI": "Saturn's gas giant composition, ring system, moons (Titan, Enceladus), and Cassini-Huygens discoveries directly address Saturn (C.3.b)."
-    },
-    {
-      "episodeTitle": "Jupiter",
-      "pid": "m001n8mv",
-      "relevantPathsAI": [
-        "C.3.a"
-      ],
-      "rationaleAI": "Jupiter's composition, Great Red Spot, Galilean satellites, magnetosphere, and role in solar system dynamics directly address Jupiter (C.3.a)."
+      "relevantPathsAI": ["B.1.c", "B.4", "B.5", "A.3.d"],
+      "rationaleAI": "Focused treatment of the stream of charged particles flowing from the Sun's corona into interplanetary space (B.1.c), defining the heliosphere boundary where solar pressure balances the interstellar medium (A.3.d). Covers Eugene Parker's theoretical framework for supersonic plasma flow, auroral effects at Earth's poles, and space weather impacts on technology and climate (B.5)."
     },
     {
       "episodeTitle": "Mercury",
       "pid": "m001yqp3",
-      "relevantPathsAI": [
-        "C.1.a"
-      ],
-      "rationaleAI": "Mercury's extreme conditions, cratered surface, large iron core, and MESSENGER mission directly address Mercury (C.1.a)."
+      "relevantPathsAI": ["C.1.a", "A.2"],
+      "rationaleAI": "Dedicated treatment of Mercury as the smallest and innermost terrestrial planet (C.1.a), covering extreme temperature variations, thin exosphere, heavily cratered surface, and unexpectedly large iron core as revealed by Mariner 10, MESSENGER, and BepiColombo missions. The anomalous precession of Mercury's orbit provided key confirmation of general relativity."
     },
     {
       "episodeTitle": "Venus",
       "pid": "m0001rm1",
-      "relevantPathsAI": [
-        "C.1.b"
-      ],
-      "rationaleAI": "Venus's extreme conditions, runaway greenhouse effect, retrograde rotation, and Venera missions directly address Venus (C.1.b)."
+      "relevantPathsAI": ["C.1.b", "A.2"],
+      "rationaleAI": "Dedicated treatment of Venus (C.1.b), covering its retrograde rotation, surface temperatures reaching 450 degrees Celsius, dense sulfuric acid atmosphere, and runaway greenhouse effect. Comparison with Earth as near twins in size and composition that diverged radically in atmospheric evolution illuminates planetary climate dynamics."
     },
     {
-      "episodeTitle": "Asteroids",
-      "pid": "p003k9kh",
-      "relevantPathsAI": [
-        "A.3.a"
-      ],
-      "rationaleAI": "Asteroids' classification, composition, distribution in the main belt, and role as remnants of solar system formation directly address minor planets/asteroids (A.3.a)."
+      "episodeTitle": "Mars",
+      "pid": "b00772rr",
+      "relevantPathsAI": ["C.1.d", "A.2"],
+      "rationaleAI": "Dedicated treatment of Mars (C.1.d), covering Olympus Mons as the solar system's tallest volcano, the Valles Marineris canyon system, evidence for past water, and questions of habitability. Addresses Mars's surface geology and atmosphere as a major terrestrial planet."
     },
     {
-      "episodeTitle": "Comets",
-      "pid": "b01pw38n",
-      "relevantPathsAI": [
-        "A.3.b"
-      ],
-      "rationaleAI": "Comets' composition, Oort Cloud and Kuiper Belt origins, orbital mechanics, and role in delivering water to early Earth directly address comets (A.3.b)."
+      "episodeTitle": "Jupiter",
+      "pid": "m001n8mv",
+      "relevantPathsAI": ["C.3.a", "A.2", "A.5", "A.6"],
+      "rationaleAI": "Dedicated treatment of Jupiter as the largest planet (C.3.a), with 95 known moons constituting a mini solar system. Its role in early solar system formation by influencing matter distribution (A.6), gravitational sweeping of debris potentially shielding inner planets (A.5), atmospheric dynamics including the Great Red Spot, and moons Europa and Ganymede as candidates for extraterrestrial life."
+    },
+    {
+      "episodeTitle": "Saturn",
+      "pid": "b06vmr1m",
+      "relevantPathsAI": ["C.3.b", "A.2", "A.4"],
+      "rationaleAI": "Dedicated treatment of Saturn (C.3.b), covering its ring system of ice and rock particles, over 60 moons including Titan, and atmospheric composition. Traces observational history from Galileo (1610) through Huygens (1655) to Pioneer 11, Voyager, and Cassini-Huygens missions, addressing ring dynamics, moon geology, and gas giant planetary science."
     },
     {
       "episodeTitle": "The Kuiper Belt",
       "pid": "b08g7ttx",
-      "relevantPathsAI": [
-        "A.3.b",
-        "C.3.e"
-      ],
-      "rationaleAI": "The Kuiper Belt beyond Neptune, Pluto's reclassification, trans-Neptunian objects, and short-period comet origins address comets' source regions (A.3.b) and Pluto (C.3.e)."
+      "relevantPathsAI": ["A.3", "A.3.a", "A.3.b", "C.3.e", "A.6"],
+      "rationaleAI": "Covers the vast disc of icy bodies extending from Neptune's orbit to roughly 50 AU, including dwarf planets Pluto, Eris, Makemake, and Haumea (C.3.e). Short-period comets originate here (A.3.b). Primordial material from solar system formation (A.6) and the belt's resonant structure providing evidence about planetary migration make this essential for understanding outer solar system constituents."
     },
     {
-      "episodeTitle": "Eclipses",
-      "pid": "m000qmnj",
-      "relevantPathsAI": [
-        "E.7.b"
-      ],
-      "rationaleAI": "Solar and lunar eclipse mechanics, the Babylonian saros cycle, and Eddington's 1919 expedition directly address eclipses of the Sun and Moon (E.7.b)."
+      "episodeTitle": "Asteroids",
+      "pid": "p003k9kh",
+      "relevantPathsAI": ["A.3.a", "C.2", "A.5", "A.6"],
+      "rationaleAI": "Dedicated treatment of asteroids as chemically unchanged building blocks from the solar system's formation (A.6), directly addressing minor planets (A.3.a, C.2). Covers why asteroids failed to coalesce into planets, the Hayabusa probe's mission to Itokawa, their distinction from comets, and their potential for Earth impact as physical encounters between solar system bodies (A.5)."
+    },
+    {
+      "episodeTitle": "Comets",
+      "pid": "b01pw38n",
+      "relevantPathsAI": ["A.3.b", "A.6"],
+      "rationaleAI": "Dedicated treatment of comets as icy bodies orbiting the Sun (A.3.b), focusing on Halley's comet with its 75-year orbital period. Their composition as frozen time capsules containing materials from the solar system's formation (A.6) connects orbital mechanics with primordial solar system science."
     },
     {
       "episodeTitle": "The Moon",
       "pid": "b016lh15",
-      "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.4",
-        "E.5",
-        "E.7"
-      ],
-      "rationaleAI": "The Moon's giant impact origin, geological composition, tidal effects, Apollo missions, and role in stabilising Earth's axial tilt comprehensively address the Moon (E)."
+      "relevantPathsAI": ["E", "E.1", "E.4", "E.4.a", "E.4.b", "E.4.c", "E.5", "E.7", "E.7.a.ii"],
+      "rationaleAI": "Comprehensive treatment of the Moon covering the giant impact hypothesis for its origin (E.5), lunar geology including maria, highlands, and craters (E.4.b), volcanic and impact theories for surface features (E.4.c), Apollo missions (E.4.a), tidal effects and axial tilt stabilization (E.7), and cultural associations with calendrical systems (E.7.a.ii)."
     },
     {
-      "episodeTitle": "The Earth's Origins",
-      "pid": "p00547hl",
-      "relevantPathsAI": [
-        "A.6",
-        "D"
-      ],
-      "rationaleAI": "Earth's formation from the nebular hypothesis, accretion of planetesimals, the Moon-forming impact, and differentiation of core/mantle/crust address theories of solar system origin (A.6) and the Earth as a planet (D)."
+      "episodeTitle": "Eclipses",
+      "pid": "m000qmnj",
+      "relevantPathsAI": ["E.7.b", "E.7.a", "E.7.a.i"],
+      "rationaleAI": "Dedicated treatment of solar and lunar eclipses (E.7.b), covering the geometry of the Sun-Earth-Moon system (E.7.a.i). Scientific discoveries enabled by eclipses include measuring the speed of light, discovering helium, proving Earth's roundness, and confirming general relativity during the 1919 solar eclipse."
+    },
+    {
+      "episodeTitle": "The Planets",
+      "pid": "p004y25b",
+      "relevantPathsAI": ["A.2", "A.6", "C"],
+      "rationaleAI": "Broad survey of planetary science encompassing solar system planets and exoplanets. The 1995 discovery of 51 Pegasi b revolutionized understanding of planetary formation and migration (A.6), and statistical extrapolation suggests planets may outnumber stars. Contextualizes solar system planets within planetary diversity across the galaxy."
+    },
+    {
+      "episodeTitle": "The Calendar",
+      "pid": "p00548m9",
+      "relevantPathsAI": ["E.7.a.ii"],
+      "rationaleAI": "Directly addresses the Sun-Earth-Moon system as the astronomical basis of chronology (E.7.a.ii), covering how solar and lunar cycles define the day, month, and year. Traces temporal concepts from Babylonian astronomers tracking celestial movements through Julian and Gregorian calendar reforms."
+    },
+    {
+      "episodeTitle": "Astronomy and Empire",
+      "pid": "p003c1cd",
+      "relevantPathsAI": ["D.1", "C.1.b"],
+      "rationaleAI": "James Cook's 18th-century voyages to observe the Transit of Venus from Tahiti measured the Sun-Venus distance, directly relevant to determining the astronomical unit and solar parallax (D.1). The Transit of Venus connects observational astronomy of a specific planet (C.1.b) with establishing fundamental solar system distances."
+    },
+    {
+      "episodeTitle": "Johannes Kepler",
+      "pid": "b085xpzf",
+      "relevantPathsAI": ["A.4", "A.5", "D.2"],
+      "rationaleAI": "Kepler's three laws of planetary motion—elliptical orbits, equal areas in equal times, and the period-distance relationship—directly govern the regularities of planetary distances (A.4). His abandonment of circular orbits transformed understanding of orbital mechanics (D.2) and laid essential groundwork for Newton's gravitational theory of perturbations (A.5)."
+    },
+    {
+      "episodeTitle": "The Laws of Motion",
+      "pid": "b009mvj0",
+      "relevantPathsAI": ["A.5", "D.2", "A.4"],
+      "rationaleAI": "Newton's Principia unified terrestrial and celestial mechanics, providing the mathematical framework for gravitational perturbations between solar system bodies (A.5) and orbital motion of Earth and planets (D.2). Sufficient for the 1969 Moon landing, these laws directly underpin the regularities and dynamics of the solar system (A.4)."
     },
     {
       "episodeTitle": "The Earth's Core",
       "pid": "b05s3gyv",
-      "relevantPathsAI": [
-        "D.4",
-        "D.5"
-      ],
-      "rationaleAI": "The Earth's core composition (iron and nickel), magnetic field generation through dynamo theory, and core-mantle interactions address the Earth's physical properties (D.4) and interior structure (D.5)."
+      "relevantPathsAI": ["D.4", "D.5", "B.5"],
+      "rationaleAI": "Earth's core structure—solid inner core of iron and nickel surrounded by liquid outer core—and the geodynamo generating its magnetic field address Earth's physical properties (D.4) and interior composition (D.5). The resulting magnetosphere shielding the surface from solar radiation represents a fundamental solar-terrestrial relationship (B.5)."
+    },
+    {
+      "episodeTitle": "The Earth's Origins",
+      "pid": "p00547hl",
+      "relevantPathsAI": ["D.6", "A.6"],
+      "rationaleAI": "Traces development of ideas about Earth's age from Ussher's biblical chronology through Hutton and Lyell establishing deep geological time. Directly addresses the origin of the Earth (D.6) within the broader context of solar system formation (A.6), connecting stratigraphy, fossil evidence, and uniformitarian principles with planetary origins."
+    },
+    {
+      "episodeTitle": "The Universe's Origins",
+      "pid": "p00545j9",
+      "relevantPathsAI": ["A.6"],
+      "rationaleAI": "Covers Kant's nebular hypothesis and Laplace's refinements for the orderly formation of the solar system, tracing Earth's origin to gravitational collapse within a solar nebula 4.6 billion years ago (A.6). Giordano Bruno's assertion of innumerable worlds provides historical context for theories of planetary system origin."
+    },
+    {
+      "episodeTitle": "The KT Boundary",
+      "pid": "p003k9d0",
+      "relevantPathsAI": ["A.3.c", "A.5"],
+      "rationaleAI": "The Chicxulub impactor was an asteroid or comet whose collision with Earth 66 million years ago exemplifies actual physical encounters between solar system bodies (A.5). Anomalous iridium concentrations confirm extraterrestrial origin, directly connecting meteoroid and meteorite science (A.3.c) with the consequences of solar system dynamics."
+    },
+    {
+      "episodeTitle": "The Neutrino",
+      "pid": "b0106tjc",
+      "relevantPathsAI": ["B.3", "B.4"],
+      "rationaleAI": "The Sun produces trillions of neutrinos per second through nuclear fusion, making solar neutrinos a primary probe of the solar interior and energy generation processes (B.3). Neutrino detection provides direct evidence of thermonuclear reactions within the Sun, complementing electromagnetic radiation observations (B.4)."
+    },
+    {
+      "episodeTitle": "Extra Terrestrials",
+      "pid": "p00548cq",
+      "relevantPathsAI": ["C.1.d", "C.3.a"],
+      "rationaleAI": "Discusses Jupiter's moon Europa with its ice-crusted ocean as a candidate for extraterrestrial life (relevant to C.3.a and its satellites), evidence of water on Mars raising habitability questions (C.1.d), and deep-ocean vent organisms expanding definitions of habitable environments within the solar system."
+    },
+    {
+      "episodeTitle": "Catastrophism",
+      "pid": "b03s9tlz",
+      "relevantPathsAI": ["A.3.c", "A.5"],
+      "rationaleAI": "The 1970s revival of catastrophism centered on evidence of a massive asteroid impact 65 million years ago, connecting meteoroid science (A.3.c) with physical encounters between solar system bodies and Earth (A.5). Illustrates how solar system dynamics shape planetary geological history through catastrophic events."
     },
     {
       "episodeTitle": "Cosmic Rays",
       "pid": "b01sdnkg",
-      "relevantPathsAI": [
-        "A.3.d"
-      ],
-      "rationaleAI": "Cosmic rays as high-energy particles in the interplanetary medium address the interplanetary medium (A.3.d)."
+      "relevantPathsAI": ["A.3.d"],
+      "rationaleAI": "Cosmic rays as subatomic particles constantly bombarding Earth from outside the atmosphere, mostly absorbed by the atmosphere, address the interplanetary medium (A.3.d). Their interaction with Earth's environment and potential damage to satellites connects to the particle environment of interplanetary space."
     },
     {
-      "episodeTitle": "The Habitability of Planets",
-      "pid": "m0025vvd",
-      "relevantPathsAI": [
-        "A.6",
-        "C.1.d"
-      ],
-      "rationaleAI": "Habitability of planets including Mars, Europa, and Enceladus as candidates for life addresses theories of solar system evolution (A.6) and Mars specifically (C.1.d)."
+      "episodeTitle": "Albert Einstein",
+      "pid": "m001qdx1",
+      "relevantPathsAI": ["E.7.b", "C.1.a"],
+      "rationaleAI": "The 1919 solar eclipse confirmation that gravity bends light represents a landmark in solar eclipse science (E.7.b), while Einstein's general relativity explained the anomalous precession of Mercury's orbit (C.1.a). Both achievements are grounded in solar system observations that validated fundamental physics."
+    },
+    {
+      "episodeTitle": "Relativity",
+      "pid": "b02144gl",
+      "relevantPathsAI": ["C.1.a", "E.7.b"],
+      "rationaleAI": "General relativity resolved the anomalous precession of Mercury's orbit that Newtonian mechanics could not explain (C.1.a), and gravitational lensing predicted by relativity was first confirmed during a solar eclipse (E.7.b). These solar system observations were critical tests of the theory."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

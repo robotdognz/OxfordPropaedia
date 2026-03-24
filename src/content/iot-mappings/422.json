@@ -42,17 +42,20 @@
       "episodeTitle": "Hormones",
       "pid": "m001w0z9",
       "relevantPathsAI": [
+        "A.5",
+        "C.1",
         "C.5"
       ],
-      "rationaleAI": "Hormones covers adrenaline and the stress response regulated by the hypothalamus-pituitary axis -- directly relevant to the alarm reaction (preparation through hormonal effects for flight or resistance)."
+      "rationaleAI": "Hormones regulate homeostasis (C.1) and the stress alarm reaction via adrenalin and cortisol (C.5), and govern reproductive processes (A.5). Their role in maintaining metabolic balance and responding to physiological stress is central to human health."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
       "relevantPathsAI": [
+        "A.6",
         "C.1"
       ],
-      "rationaleAI": "Mitochondrial dysfunction's role in ageing and disease, and mitochondrial involvement in apoptosis, is relevant to the maintenance of the internal environment and adaptation of cells to severe stress."
+      "rationaleAI": "Mitochondria are the primary sites of cellular energy production essential for maintaining the internal environment (C.1), and mitochondrial dysfunction is directly linked to neurodegenerative diseases and aging (A.6)."
     },
     {
       "episodeTitle": "Louis Pasteur",
@@ -67,12 +70,51 @@
       "episodeTitle": "Man and Disease",
       "pid": "p00548m0",
       "relevantPathsAI": [
+        "B",
         "C.2",
+        "C.2.d",
         "C.4"
       ],
-      "rationaleAI": "Man and Disease covers the history of disease understanding from humoral medicine through germ theory, vaccination, antibiotics, and public health -- relevant to defenses against disease and healing processes."
+      "rationaleAI": "The evolution from humoral balance to germ theory reshaped definitions of health normality (B), while breakthroughs in vaccination and public health directly address defenses against disease (C.2), immune responses (C.2.d), and healing processes (C.4)."
+    },
+    {
+      "episodeTitle": "The Four Humours",
+      "pid": "b008h5dz",
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "D.1"
+      ],
+      "rationaleAI": "Humoral medicine defined health as balance among four bodily fluids, establishing foundational concepts of normality (B) and bodily maintenance mechanisms (C). Therapeutic practices of dietary regulation and seasonal timing relate to nutrition and health regimes (D.1)."
+    },
+    {
+      "episodeTitle": "Pain",
+      "pid": "p00545m1",
+      "relevantPathsAI": [
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Pain perception via neural signaling pathways is a bodily mechanism for detecting threats to health (C), and individual variation in pain thresholds relates to the maintenance of the internal environment and adaptation to stress (C.1)."
+    },
+    {
+      "episodeTitle": "Penicillin",
+      "pid": "b07dnnkm",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.d"
+      ],
+      "rationaleAI": "Penicillin as the first major antibiotic supports bodily defenses against disease (C.2), and the growing crisis of antimicrobial resistance poses a fundamental challenge to immune and therapeutic health maintenance (C.2.d)."
+    },
+    {
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
+      "relevantPathsAI": [
+        "C.2",
+        "C.2.d"
+      ],
+      "rationaleAI": "Germ theory, antibiotics, vaccines, and sterilization are foundational to bodily defenses against disease (C.2) and the immune response (C.2.d). The human microbiome's role in health underscores microbiology's direct relevance to health maintenance."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

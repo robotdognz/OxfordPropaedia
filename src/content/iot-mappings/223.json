@@ -6,88 +6,120 @@
       "pid": "p00548v8",
       "relevantPathsAI": [
         "A",
-        "B.1",
+        "B",
         "C",
+        "C.1",
+        "C.2",
+        "D",
         "E"
       ],
-      "rationaleAI": "Meteorology directly addresses atmospheric science, weather forecasting from synoptic charts through numerical prediction, fronts, pressure systems, jet streams, chaos theory's limits on predictability, and the Bergen School's foundational work."
+      "rationaleAI": "Traces the full history of meteorology from Aristotle's Meteorologica through Renaissance-era invention of the barometer, thermometer, and hygrometer to modern forecasting integrating thermodynamics, fluid dynamics, satellite observation, and computational modeling. Covers synoptic weather data collection (C.1), numerical weather prediction (C.2), weather lore rooted in ancient and folk traditions (D), and cultural responses to weather phenomena."
     },
     {
       "episodeTitle": "Climate Change",
       "pid": "p00546l7",
       "relevantPathsAI": [
-        "E.1.a.ii",
+        "E",
         "E.2.c",
-        "E.6"
+        "E.6",
+        "C.4",
+        "C.4.b"
       ],
-      "rationaleAI": "Climate change covers the greenhouse effect trapping infrared radiation, anthropogenic warming from fossil fuel emissions, sea level rise, and the scientific consensus on human effects on global climate."
+      "rationaleAI": "Directly addresses human-caused global warming (E.2.c), the scientific evidence for climatic change (E.6), and the tension between atmospheric science predictions and their reliability (C.4.b). Examines the IPCC's role in climate assessment and the political dimensions of climate policy, connecting greenhouse warming from fossil fuels to long-range forecasting challenges."
     },
     {
       "episodeTitle": "Ice Ages",
       "pid": "b01qjj99",
       "relevantPathsAI": [
         "E.6",
-        "E.6.a"
+        "E.6.a",
+        "E.2",
+        "E.1.a",
+        "E.4"
       ],
-      "rationaleAI": "Ice ages and Milankovitch cycles provide evidence of climatic change from glaciation features, sea level fluctuations, and ice core data, directly relevant to evidence of climatic change and the Pleistocene epoch."
-    },
-    {
-      "episodeTitle": "1816, the Year Without a Summer",
-      "pid": "b077j4yv",
-      "relevantPathsAI": [
-        "E.2.b",
-        "E.6"
-      ],
-      "rationaleAI": "Mount Tambora's 1815 eruption demonstrates volcanic climate forcing producing unseasonable cold, crop failures, and global climate disruption -- a dramatic instance of local and global climatic variation."
+      "rationaleAI": "Covers the Quaternary glaciation and multiple ice ages throughout geological history, including Snowball Earth episodes (E.6). Examines Milankovitch orbital cycles as a driver of climatic variation (E.1.a), atmospheric CO2 levels as a climate factor (E.2), and landscape features associated with glaciations as evidence of climatic change (E.6.a). Documents profound effects on species distribution and biological evolution (E.4)."
     },
     {
       "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
       "pid": "b08hpmmf",
       "relevantPathsAI": [
-        "E.1.a.ii",
+        "E.6",
         "E.2.c",
-        "E.6"
+        "E.1.a.ii",
+        "E.4"
       ],
-      "rationaleAI": "The PETM was a rapid global warming event driven by massive carbon release, serving as a palaeoclimate analogue for understanding greenhouse warming and climate sensitivity."
+      "rationaleAI": "The PETM involved global temperatures rising over five degrees Celsius from massive carbon dioxide and methane releases, exemplifying greenhouse warming (E.1.a.ii) and abrupt climatic change (E.6). Warming ocean currents destabilizing frozen methane hydrates illustrate runaway greenhouse feedback. Serves as a deep-time analogue for anthropogenic climate change (E.2.c), with widespread extinctions reshaping terrestrial and marine ecosystems (E.4)."
     },
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
+      "episodeTitle": "1816, the Year Without a Summer",
+      "pid": "b077j4yv",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "E.1.e"
-      ],
-      "rationaleAI": "Water's unique properties including high specific heat capacity and phase transitions directly underpin atmospheric humidity, condensation processes, and the moisture cycle that generates climate."
-    },
-    {
-      "episodeTitle": "Antarctica",
-      "pid": "b00ss2th",
-      "relevantPathsAI": [
+        "E.2",
         "E.1.a.iii",
-        "E.6"
+        "E.4",
+        "A.4.d",
+        "B"
       ],
-      "rationaleAI": "Antarctica's ice sheets influence Earth's albedo through ice and snow cover, and the continent plays a major role in global climate systems, with ongoing climate change concerns relevant to climatic variation."
+      "rationaleAI": "The eruption of Mt Tambora injected aerosols that altered Earth's albedo and reduced solar radiation reaching the surface (E.1.a.iii), producing unseasonal frosts and heavy rains across North America and Europe (A.4.d). Demonstrates how volcanic particulates modify climate through atmospheric absorption (E.2), with resulting food shortages illustrating the influence of climate on terrestrial life and human societies (E.4)."
     },
     {
-      "episodeTitle": "Vulcanology",
-      "pid": "p005490h",
+      "episodeTitle": "Venus",
+      "pid": "m0001rm1",
       "relevantPathsAI": [
-        "E.2.b",
-        "E.6"
+        "E.1.a.ii",
+        "E.2.c"
       ],
-      "rationaleAI": "Volcanic eruptions inject aerosols into the atmosphere, modifying climate locally and globally through effects on atmospheric composition, relevant to local climatic effects and climatic change evidence."
+      "rationaleAI": "Venus's runaway greenhouse effect, which transformed a planet of similar size and composition to Earth into a 450-degree furnace beneath dense sulfuric acid clouds, directly illuminates the greenhouse mechanism whereby atmospheric gases trap infrared radiation (E.1.a.ii). Serves as a natural laboratory for understanding how greenhouse processes can radically alter planetary climate, relevant to concerns about anthropogenic greenhouse warming on Earth (E.2.c)."
+    },
+    {
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
+      "relevantPathsAI": [
+        "E.1.a",
+        "E.1.a.i"
+      ],
+      "rationaleAI": "Solar radiation is the primary energy source driving Earth's climate system (E.1.a). Covers periodic cycles of solar activity including sunspots, solar flares, and coronal mass ejections, directly relevant to variability of incident radiation and the solar constant (E.1.a.i). These solar cycles influence Earth's climate patterns and disruptions to terrestrial systems."
+    },
+    {
+      "episodeTitle": "The Permian-Triassic Boundary",
+      "pid": "b007r285",
+      "relevantPathsAI": [
+        "E.6",
+        "E.1.a.ii",
+        "E.4"
+      ],
+      "rationaleAI": "The largest mass extinction in Earth's history was driven by Siberian Traps volcanism releasing greenhouse gases, ocean anoxia, methane release from destabilized clathrates, and ozone depletion — all mechanisms of catastrophic climatic change (E.6). Demonstrates how greenhouse gas forcing and atmospheric composition changes (E.1.a.ii) profoundly affected terrestrial and marine life (E.4), with ecosystems requiring millions of years to recover."
     },
     {
       "episodeTitle": "Doggerland",
       "pid": "m0006707",
       "relevantPathsAI": [
         "E.6",
-        "E.6.a"
+        "E.6.a",
+        "E.4"
       ],
-      "rationaleAI": "Doggerland's submergence by post-glacial sea level rise illustrates climatic change evidence from landscape features and sea level fluctuations associated with the end of the last ice age."
+      "rationaleAI": "Documents the submergence of inhabited land under the North Sea as glaciers melted and sea levels rose after the last ice age, providing direct archaeological and landscape evidence of climatic change (E.6.a). The displacement of human populations by rising seas illustrates the influence of climate on terrestrial life (E.4) and connects prehistoric climate change to geomorphological transformation."
+    },
+    {
+      "episodeTitle": "Plankton",
+      "pid": "m001r1t5",
+      "relevantPathsAI": [
+        "E.1.d",
+        "E.1.e",
+        "E.2.c"
+      ],
+      "rationaleAI": "Phytoplankton produce approximately half of Earth's atmospheric oxygen and play a central role in oceanic carbon cycling, directly linking ocean biology to climate regulation (E.1.d). Their role in biogeochemical processes connecting oceanic and atmospheric systems relates to the moisture cycle (E.1.e), and disruption of plankton populations by warming oceans has implications for anthropogenic climate change (E.2.c)."
+    },
+    {
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": [
+        "E.2",
+        "E.6"
+      ],
+      "rationaleAI": "Volcanic eruptions release gases and particulates that modify atmospheric composition and climate, and volcanism played essential roles in forming Earth's early atmosphere. Atmospheric effects of eruptions connect to climatic variation (E.2), while major eruptions throughout geological history have caused significant climatic shifts documented in the geological record (E.6)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,93 +2,96 @@
   "sectionCode": "514",
   "mappings": [
     {
-      "episodeTitle": "Episode 1",
-      "pid": "b018wfsc",
-      "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.3"
-      ],
-      "rationaleAI": "The origins of writing covering cuneiform in Mesopotamia and hieroglyphics in Egypt, the transition from pictographic to phonetic writing systems, and the alphabet's development directly address the nature, origin, and evolution of writing and systems of writing."
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": ["C.1", "C.5", "F.1", "F.2", "G.1"],
+      "rationaleAI": "Directly addresses the nature of language through Chomsky's transformational-generative grammar (F.2), debates over language origins and the relationship between language and thought (G.1), and nativist versus empiricist models of acquisition, spanning definitions of language (C.1), meaning and conceptualization (C.5), and the development of linguistic theory (F.1)."
     },
     {
       "episodeTitle": "The Alphabet",
       "pid": "p0054950",
-      "relevantPathsAI": [
-        "E.1",
-        "E.2",
-        "E.3",
-        "G.2"
-      ],
-      "rationaleAI": "The history of the alphabet from Proto-Sinaitic through Phoenician to Greek innovations, the spread of alphabetic writing, and the cognitive implications of alphabetic literacy directly address the evolution of writing, types of writing systems, and the connection of language with history."
+      "relevantPathsAI": ["E.1", "E.2", "E.3"],
+      "rationaleAI": "Traces the singular invention of the alphabet c.1700 BC from proto-Sinaitic script through Phoenician, Greek, Latin, and Arabic diffusion, directly covering the origin and evolution of writing (E.1), alphabetic writing as a type of system (E.2), and specific alphabetic scripts (E.3)."
     },
     {
-      "episodeTitle": "Literature",
+      "episodeTitle": "The Written World: Episode 1",
+      "pid": "b018wfsc",
+      "relevantPathsAI": ["E.1", "A"],
+      "rationaleAI": "Examines the development of written language as humanity's most important invention, covering the oldest surviving writing implements and how marks on clay, wood, and parchment enabled cultural development, directly addressing the origin and evolution of writing (E.1) and communication as a foundation of human culture (A)."
+    },
+    {
+      "episodeTitle": "The Written World: Literature",
       "pid": "b018xw60",
-      "relevantPathsAI": [
-        "E.1",
-        "E.3",
-        "G.2"
-      ],
-      "rationaleAI": "The origins of literature from writing systems used for accounting to literary forms, cuneiform tablets, and the transition from oral to written culture address the origin of writing, writing systems, and the role of language in transmitting culture."
+      "relevantPathsAI": ["E.1", "E.3", "C.6"],
+      "rationaleAI": "Covers origins of writing systems in Mesopotamia and Egypt for administrative purposes before evolving into literary expression, addressing cuneiform and hieroglyphic systems (E.3), the evolution of writing (E.1), and how oral traditions interacted with written forms as part of language and cultural transmission (C.6)."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 2",
+      "pid": "b018wy46",
+      "relevantPathsAI": ["E.1", "E.4", "C.6"],
+      "rationaleAI": "Traces the evolution of writing technology from scrolls to codices to printing, covering changes in writing materials and formats that shaped what could be written and preserved, relevant to the evolution of writing (E.1), adjuncts and material aspects of writing (E.4), and the relationship between written language, literacy, and cultural transmission (C.6)."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 3",
+      "pid": "b018xsmd",
+      "relevantPathsAI": ["E.1", "E.3", "C.6"],
+      "rationaleAI": "Examines how writing influenced the spread of religion through evolving materials and techniques, featuring early sacred texts including the Codex Sinaiticus and an 8th-century Koran, relevant to writing system evolution (E.1), specific scripts (E.3), and the role of written versus spoken language in cultural transmission (C.6)."
     },
     {
       "episodeTitle": "The Phoenicians",
       "pid": "b03szw8l",
-      "relevantPathsAI": [
-        "E.1",
-        "E.2",
-        "H.21.a"
-      ],
-      "rationaleAI": "The Phoenicians' revolutionary alphabetic writing system, ancestor of Greek and Latin alphabets, directly addresses the evolution of writing and types of writing systems, and their language connects to ancient Near Eastern linguistic history."
+      "relevantPathsAI": ["E.1", "E.2", "H.11.a"],
+      "rationaleAI": "The Phoenicians transmitted their alphabet to the Greeks, forming the basis of Western writing systems, directly relevant to the origin and evolution of writing (E.1) and alphabetic systems (E.2). As Semitic-language speakers, they connect to Afro-Asiatic Semitic languages (H.11.a)."
     },
     {
-      "episodeTitle": "Episode 2",
-      "pid": "b018wy46",
-      "relevantPathsAI": [
-        "E",
-        "F.6",
-        "G.2"
-      ],
-      "rationaleAI": "The invention and impact of the book covers the evolution from scrolls to codex, medieval manuscript production, Chinese invention of paper and printing, and how the physical format shaped reading practices, addressing written language and the study of writing."
+      "episodeTitle": "The Etruscan Civilisation",
+      "pid": "b0151q7j",
+      "relevantPathsAI": ["E.1", "H.21.b"],
+      "rationaleAI": "Credited with transmitting the Greek alphabet to the Italian peninsula, relevant to the diffusion of writing systems (E.1). The Etruscan language is a recognized language isolate (H.21.b), providing direct coverage of that outline node."
     },
     {
-      "episodeTitle": "Episode 5",
-      "pid": "b018xy22",
-      "relevantPathsAI": [
-        "G.2",
-        "G.4"
-      ],
-      "rationaleAI": "How writing made the Scientific Revolution possible covers the role of printed texts in disseminating knowledge, scientific notation, the Republic of Letters, and the relationship between literacy and empirical inquiry, addressing language's role in transmitting culture and as a political instrument."
+      "episodeTitle": "Sources of Early Chinese History",
+      "pid": "b03qf7qx",
+      "relevantPathsAI": ["E.1", "E.2", "E.3", "H.6.a"],
+      "rationaleAI": "Oracle bone inscriptions from the Shang dynasty represent the earliest Chinese writing, with subsequent development on bamboo, silk, and paper, directly addressing the origin of logographic and ideographic writing systems (E.2, E.3), the evolution of writing (E.1), and the Chinese language (H.6.a)."
+    },
+    {
+      "episodeTitle": "Lévi-Strauss",
+      "pid": "b01sjjxl",
+      "relevantPathsAI": ["F.1", "F.2"],
+      "rationaleAI": "Lévi-Strauss's structuralism drew directly on the linguistics of Saussure and Jakobson, applying structural analysis of language to kinship, myth, and culture, relevant to the development of linguistic theory (F.1) and the structural approach in synchronic linguistics (F.2)."
+    },
+    {
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": ["C.6", "G.4"],
+      "rationaleAI": "Growth of book production and expanding literacy transformed public discourse, with pamphlets and broadsides serving as political and ideological weapons during the English Civil War, directly relevant to language learning, literacy, and written versus spoken language (C.6) and the use of language as a political instrument (G.4)."
+    },
+    {
+      "episodeTitle": "Shahnameh of Ferdowsi",
+      "pid": "b01p7dcv",
+      "relevantPathsAI": ["G.2", "G.4", "H.1.b"],
+      "rationaleAI": "The Shahnameh functioned as a vehicle for Persian linguistic preservation against Arabization, directly relevant to the role of language in transmission of culture (G.2) and language as a political instrument (G.4). As a monument of the Persian language, it connects to Indo-Iranian languages (H.1.b)."
+    },
+    {
+      "episodeTitle": "Sir Gawain and the Green Knight",
+      "pid": "m0001kr8",
+      "relevantPathsAI": ["C.3", "C.6", "H.1.f"],
+      "rationaleAI": "Composed c.1400 in a distinctive Northwest Midlands dialect of Middle English, significant for the study of dialectal variation (C.3), oral-written literary transmission and its relationship to language and culture (C.6), and exemplifies a specific stage in the development of Germanic/English language (H.1.f)."
     },
     {
       "episodeTitle": "The Infant Brain",
       "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "C.4",
-        "C.6",
-        "D"
-      ],
-      "rationaleAI": "The infant brain covers critical periods for language acquisition, the nature-nurture interplay in language development, and the neuroscience of cognitive development, directly addressing speech, language and culture, and the physiology of speech."
+      "relevantPathsAI": ["C.4", "F.1"],
+      "rationaleAI": "Chomsky's proposal of innate language acquisition structures and experiments revealing pre-verbal infant capacities for cognition directly address the psychological bases of speech and language development (C.4) and nativist models within the development of linguistic theory (F.1)."
     },
     {
-      "episodeTitle": "History of Metaphor",
-      "pid": "b00w227c",
-      "relevantPathsAI": [
-        "C.5",
-        "F.5"
-      ],
-      "rationaleAI": "The history and theory of metaphor covers Aristotle's treatment, cognitive linguistics (Lakoff and Johnson), metaphor's role in reasoning, and the relationship between literal and figurative meaning, directly addressing meaning and style in language and semantics."
-    },
-    {
-      "episodeTitle": "The Hittites",
-      "pid": "m0012q5n",
-      "relevantPathsAI": [
-        "H.1.a"
-      ],
-      "rationaleAI": "The Hittites' Indo-European language and cuneiform archives directly address Anatolian languages within the Indo-European language family."
+      "episodeTitle": "The Celts",
+      "pid": "p0054894",
+      "relevantPathsAI": ["H.1.i"],
+      "rationaleAI": "Celtic societies developed distinctive languages that persisted in Ireland, Scotland, Wales, and Brittany after Roman conquest absorbed Continental Celts, providing coverage of the Celtic branch of Indo-European languages (H.1.i)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

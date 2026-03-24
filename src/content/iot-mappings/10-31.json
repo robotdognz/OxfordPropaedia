@@ -2,202 +2,160 @@
   "sectionCode": "10/31",
   "mappings": [
     {
-      "episodeTitle": "Baconian Science",
-      "pid": "b00jdb6c",
+      "episodeTitle": "Laws of Nature",
+      "pid": "p00546x5",
       "relevantPathsAI": [
-        "A.4.b.i",
+        "B.3.c",
+        "B.5.a",
+        "B.2.a",
         "B.2.b",
-        "B.3.a"
+        "A.2.a"
       ],
-      "rationaleAI": "Bacon's empirical inductive method directly addresses the radical reformulation of natural knowledge (A.4.b.i), the 17th-century debate about scientific methodology (B.2.b), and empirical procedures of science (B.3.a, B.3.b)."
+      "rationaleAI": "Laws of nature from Thales through Newton to string theory: philosophical status of scientific theory (B.5.a) and formal structures (B.3.c)."
     },
     {
-      "episodeTitle": "Empiricism",
-      "pid": "p004y28g",
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.2.c",
-        "B.2.e"
+        "A.2.a",
+        "A.2.c",
+        "A.4.b"
       ],
-      "rationaleAI": "Empiricism's development from Locke through Hume and Kant's synthesis traces the 17th-18th century epistemological debates (B.2.b, B.2.c), while its influence on logical positivism and the Vienna Circle connects to 20th-century philosophy of science (B.2.e)."
+      "rationaleAI": "Magnetism from Greek lodestone through Gilbert's De Magnete: transition from natural philosophy to systematic investigation."
     },
     {
       "episodeTitle": "Scepticism",
       "pid": "b01kblc3",
       "relevantPathsAI": [
-        "A.2.a",
         "B.2.b",
+        "B.2.c",
         "B.4.b"
       ],
-      "rationaleAI": "Scepticism's influence on scientific methodology from Pyrrhonian suspension to Hume's radical scepticism bears on the philosophy of science's development (B.2.b) and the validation of scientific theories (B.4.b)."
-    },
-    {
-      "episodeTitle": "The Royal Society and British Science: Episode 1",
-      "pid": "b00pk7j0",
-      "relevantPathsAI": [
-        "A.4.b",
-        "A.4.b.i",
-        "A.4.b.ii"
-      ],
-      "rationaleAI": "The Royal Society's founding in the 1660s embodies the revolution in natural philosophy (A.4.b.i), Baconian empiricism, and the establishment of scientific societies (A.4.b.ii)."
-    },
-    {
-      "episodeTitle": "The Royal Society and British Science: Episode 2",
-      "pid": "b00pk9s1",
-      "relevantPathsAI": [
-        "A.4.c",
-        "A.5.b"
-      ],
-      "rationaleAI": "The Royal Society under Newton's presidency and its 18th-century role address characteristics of European science (A.4.c) and intellectual origins of the Enlightenment (A.5.b)."
-    },
-    {
-      "episodeTitle": "The Royal Society and British Science: Episode 4",
-      "pid": "b00pkx5q",
-      "relevantPathsAI": [
-        "A.7",
-        "A.8",
-        "B.6"
-      ],
-      "rationaleAI": "The Royal Society's 20th-century role in government-funded research and science policy addresses the social organization of science (A.7) and contemporary problems facing science (A.8, B.6)."
-    },
-    {
-      "episodeTitle": "The Scientist",
-      "pid": "p00548jq",
-      "relevantPathsAI": [
-        "A.6",
-        "A.7",
-        "B.6"
-      ],
-      "rationaleAI": "The emergence of the professional scientist from natural philosopher traces the 19th-century professionalization (A.6), 20th-century social organization (A.7), and science's social significance (B.6)."
-    },
-    {
-      "episodeTitle": "Vitalism",
-      "pid": "b00dwhwt",
-      "relevantPathsAI": [
-        "A.5.d",
-        "A.6",
-        "B.2.d"
-      ],
-      "rationaleAI": "Vitalism's relationship to Romantic Naturphilosophie (A.5.d) and its eventual replacement by mechanistic biology represent 19th-century progress in biology (A.6) and illustrate changing philosophical positions toward science (B.2.d)."
-    },
-    {
-      "episodeTitle": "Renaissance Maths",
-      "pid": "p003k9hq",
-      "relevantPathsAI": [
-        "A.4.a",
-        "A.4.a.i",
-        "A.4.a.ii"
-      ],
-      "rationaleAI": "Renaissance mathematics covers the state of science in the early 15th century (A.4.a.i), the influence of technology on science (A.4.a.ii), and the coexistence of new discoveries and old philosophical views (A.4.a.iii)."
+      "rationaleAI": "Hume's scepticism about causation and induction: foundational challenges to scientific epistemology."
     },
     {
       "episodeTitle": "Optics",
       "pid": "b00774t5",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.3",
+        "A.4.a",
         "A.4.b"
       ],
-      "rationaleAI": "The history of optics from Greek theories through Islamic contributions to the Scientific Revolution illustrates science in Greek civilization (A.2.a), Islamic science (A.3), and the revolution in natural philosophy (A.4.b)."
+      "rationaleAI": "Galileo's telescope and Kepler's optics: interplay between instruments and theory in the scientific revolution."
     },
     {
-      "episodeTitle": "The Enlightenment in Britain",
-      "pid": "p005479m",
+      "episodeTitle": "The Scientific Method",
+      "pid": "b01b1ljm",
       "relevantPathsAI": [
-        "A.5.b",
-        "B.2.c"
+        "B.2.b",
+        "B.3.b",
+        "B.4.b",
+        "A.4.b.i"
       ],
-      "rationaleAI": "The British Enlightenment's empiricist tradition from Locke to Hume and Newton's scientific legacy address the spirit of the Enlightenment (A.5.b) and Empiricist interpretations of Newtonian physics (B.2.c)."
+      "rationaleAI": "Bacon's induction, Popper's falsifiability, paradigm debates: core philosophy of science from 17th century onward."
     },
     {
-      "episodeTitle": "Galen",
-      "pid": "b03c4dys",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.c",
-        "A.3"
-      ],
-      "rationaleAI": "Galen's integration of Hippocratic medicine with Aristotelian philosophy illustrates science in Greek civilization (A.2.a), his authority persisting through medieval science (A.2.c), and his influence on Islamic medicine (A.3)."
-    },
-    {
-      "episodeTitle": "al-Biruni",
-      "pid": "b00smnlk",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "Al-Biruni's empirical approach to natural philosophy and his pioneering methods in astronomy, mathematics, and geography exemplify Islamic science (A.3)."
-    },
-    {
-      "episodeTitle": "Electrickery",
-      "pid": "p004y269",
-      "relevantPathsAI": [
-        "A.5.a",
-        "A.6"
-      ],
-      "rationaleAI": "The early history of electricity from Franklin through Faraday traces science during the Industrial Revolution (A.5.a) and 19th-century progress in physics (A.6)."
-    },
-    {
-      "episodeTitle": "The Laws of Motion",
-      "pid": "b009mvj0",
-      "relevantPathsAI": [
-        "A.4.b",
-        "B.2.c"
-      ],
-      "rationaleAI": "Newton's Laws of Motion and the Principia embody the revolution in natural philosophy (A.4.b) and shaped Empiricist, Rationalist, and Kantian interpretations of Newtonian physics (B.2.c)."
-    },
-    {
-      "episodeTitle": "The Romantics",
-      "pid": "p00546ws",
-      "relevantPathsAI": [
-        "A.5.d"
-      ],
-      "rationaleAI": "Romanticism's reaction against Enlightenment rationalism connects directly to the Romantic reaction and its relationship to science, including Naturphilosophie (A.5.d)."
-    },
-    {
-      "episodeTitle": "Renaissance Astrology",
-      "pid": "b007nmym",
-      "relevantPathsAI": [
-        "A.4.a.iii"
-      ],
-      "rationaleAI": "Renaissance astrology illustrates the coexistence of new scientific discoveries and old philosophical views (A.4.a.iii), showing the gradual separation of astrology from science during the Scientific Revolution."
-    },
-    {
-      "episodeTitle": "Mathematics",
-      "pid": "p00545hk",
-      "relevantPathsAI": [
-        "B.3.c",
-        "B.5.b"
-      ],
-      "rationaleAI": "The nature of mathematics and its unreasonable effectiveness in natural sciences bears on the formal structures of science (B.3.c) and the relationship between philosophical analysis and scientific practice (B.5.b)."
-    },
-    {
-      "episodeTitle": "Popper",
-      "pid": "b00773y4",
+      "episodeTitle": "The Measurement Problem in Physics",
+      "pid": "b00hv1dp",
       "relevantPathsAI": [
         "B.2.e",
-        "B.4.b",
-        "B.5.a"
+        "B.5.a",
+        "B.3.d"
       ],
-      "rationaleAI": "Popper's falsifiability criterion, critique of logical positivism, and critical rationalism are central to 20th-century philosophy of science (B.2.e), validation of theories (B.4.b), and the status of scientific propositions (B.5.a)."
+      "rationaleAI": "Quantum measurement problem: philosophical responses to changes in natural science."
     },
     {
-      "episodeTitle": "Social Darwinism",
-      "pid": "b03vgq1q",
+      "episodeTitle": "The Scientist",
+      "pid": "p00548jq",
       "relevantPathsAI": [
+        "A.5",
         "A.6",
+        "A.7",
+        "A.8",
         "B.6"
       ],
-      "rationaleAI": "Social Darwinism illustrates the misapplication of scientific concepts to social policy (B.6) and 19th-century interactions between biology and social thought (A.6)."
+      "rationaleAI": "Evolving social role of the scientist from natural philosopher to professional researcher."
     },
     {
-      "episodeTitle": "Alchemy",
-      "pid": "p003k9bn",
+      "episodeTitle": "Early Geology",
+      "pid": "b01dgh7d",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.6",
+        "A.1"
+      ],
+      "rationaleAI": "Geology's emergence as a discipline from ancient speculation to rigorous science."
+    },
+    {
+      "episodeTitle": "Chaos Theory",
+      "pid": "p00548f6",
+      "relevantPathsAI": [
+        "A.6",
+        "B.2.e",
+        "B.3.d"
+      ],
+      "rationaleAI": "Chaos theory challenged Newtonian predictability, contributing to debates about determinism."
+    },
+    {
+      "episodeTitle": "Science's Revelations",
+      "pid": "p005454c",
+      "relevantPathsAI": [
+        "B.6",
+        "A.8"
+      ],
+      "rationaleAI": "Scientific explanation vs poetic wonder: two cultures divide."
+    },
+    {
+      "episodeTitle": "The Translation Movement",
+      "pid": "b00dp4d8",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "9th-century translation of Greek scientific texts into Arabic: transmission of science between civilizations."
+    },
+    {
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": [
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Genetics from Mendel through Modern Synthesis to DNA: 19th-20th century biological progress."
+    },
+    {
+      "episodeTitle": "Grand Unified Theory",
+      "pid": "p00546nx",
+      "relevantPathsAI": [
+        "B.4.c",
+        "A.7"
+      ],
+      "rationaleAI": "Quest for grand unified theory: drive toward unification in 20th-century physics."
+    },
+    {
+      "episodeTitle": "Pliny's Natural History",
+      "pid": "b00sxjlz",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Pliny's Natural History: Roman approach to systematic knowledge compilation."
+    },
+    {
+      "episodeTitle": "Pythagoras",
+      "pid": "b00p693b",
+      "relevantPathsAI": [
+        "A.2.a.i",
+        "A.2.a.ii",
+        "B.2.a"
+      ],
+      "rationaleAI": "Pythagorean doctrine as foundational Greek protoscience bridging observation and metaphysics."
+    },
+    {
+      "episodeTitle": "Roger Bacon",
+      "pid": "b08m8z2w",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3",
-        "A.4.a.iii"
+        "B.2.b"
       ],
-      "rationaleAI": "Alchemy's history from Hellenistic Egypt through Islamic civilization to early modern Europe illustrates medieval science (A.2.c), Islamic science (A.3), and the coexistence of old and new philosophical views (A.4.a.iii)."
+      "rationaleAI": "Roger Bacon: medieval advocacy of empirical observation anticipating Baconian method."
     },
     {
       "episodeTitle": "The 12th Century Renaissance",
@@ -206,26 +164,129 @@
         "A.2.c",
         "A.3"
       ],
-      "rationaleAI": "The 12th-century Renaissance's recovery of classical texts through Arabic translations and the founding of universities connect to medieval science (A.2.c) and Islamic contributions to Western science (A.3)."
+      "rationaleAI": "12th-century transmission of Arabic-translated Aristotle into Latin scholarship."
     },
     {
-      "episodeTitle": "The Music of the Spheres",
-      "pid": "b00c1fct",
-      "relevantPathsAI": [
-        "A.2.a"
-      ],
-      "rationaleAI": "The music of the spheres from Pythagoras through Kepler illustrates the deep connection between mathematics and science in Greek civilization (A.2.a) and the transition from ancient to modern scientific cosmology."
-    },
-    {
-      "episodeTitle": "Progress",
-      "pid": "p0054646",
+      "episodeTitle": "The Encyclopédie",
+      "pid": "p0038x93",
       "relevantPathsAI": [
         "A.5.b",
         "B.6"
       ],
-      "rationaleAI": "The idea of progress in Western thought, from Enlightenment optimism through 20th-century critiques, connects to the spirit of the Enlightenment (A.5.b) and the social significance of science (B.6)."
+      "rationaleAI": "Encyclopedie systematized Enlightenment knowledge, challenging religious authority."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4.c",
+        "A.8"
+      ],
+      "rationaleAI": "Needham Question: why modern science emerged in Europe rather than China."
+    },
+    {
+      "episodeTitle": "Baconian Science",
+      "pid": "b00jdb6c",
+      "relevantPathsAI": [
+        "A.4.b.i",
+        "A.4.b.ii",
+        "B.2.b"
+      ],
+      "rationaleAI": "Baconian inductive method: foundation of modern empirical science."
+    },
+    {
+      "episodeTitle": "Johannes Kepler",
+      "pid": "b085xpzf",
+      "relevantPathsAI": [
+        "A.4.a",
+        "A.4.b"
+      ],
+      "rationaleAI": "Kepler's laws transformed astronomy, exemplifying the scientific revolution."
+    },
+    {
+      "episodeTitle": "John Dalton",
+      "pid": "b07zzy8b",
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.6"
+      ],
+      "rationaleAI": "Dalton's atomic theory from Quaker dissenting culture and provincial science."
+    },
+    {
+      "episodeTitle": "Kinetic Theory",
+      "pid": "m00057s5",
+      "relevantPathsAI": [
+        "A.6",
+        "B.5.a"
+      ],
+      "rationaleAI": "Kinetic theory development: molecular existence debated, scientific realism questions."
+    },
+    {
+      "episodeTitle": "Science in the 20th century",
+      "pid": "p005457h",
+      "relevantPathsAI": [
+        "A.7",
+        "A.8",
+        "B.2.e",
+        "B.3.d",
+        "B.4.b",
+        "B.6"
+      ],
+      "rationaleAI": "20th-century science: paradigm theory, falsifiability, specialization, postmodern critiques."
+    },
+    {
+      "episodeTitle": "The Antikythera Mechanism",
+      "pid": "m0024x0g",
+      "relevantPathsAI": [
+        "A.2.a.iii"
+      ],
+      "rationaleAI": "Antikythera Mechanism: Hellenistic scientific and engineering capability."
+    },
+    {
+      "episodeTitle": "The Enlightenment in Britain",
+      "pid": "p005479m",
+      "relevantPathsAI": [
+        "A.5.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "British Enlightenment empiricism and natural philosophy."
+    },
+    {
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
+      "relevantPathsAI": [
+        "B.5.b",
+        "B.6"
+      ],
+      "rationaleAI": "Environmental determinism debate: scientific vs humanistic explanation."
+    },
+    {
+      "episodeTitle": "Galen",
+      "pid": "b03c4dys",
+      "relevantPathsAI": [
+        "A.2.a.ii",
+        "A.2.b"
+      ],
+      "rationaleAI": "Galen's systematic physiological theory: Greco-Roman scientific method."
+    },
+    {
+      "episodeTitle": "Renaissance Maths",
+      "pid": "p003k9hq",
+      "relevantPathsAI": [
+        "A.4.a"
+      ],
+      "rationaleAI": "Renaissance recovery of Greek mathematics transforming natural philosophy."
+    },
+    {
+      "episodeTitle": "Darwin: On the Origins of Charles Darwin",
+      "pid": "b00g9z9x",
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Darwin's intellectual formation in early 19th-century institutional context."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

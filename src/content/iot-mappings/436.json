@@ -4,94 +4,58 @@
     {
       "episodeTitle": "Jung",
       "pid": "p004y2bf",
-      "relevantPathsAI": [
-        "A.2",
-        "C.1"
-      ],
-      "rationaleAI": "Jung's concepts of the collective unconscious, archetypes (Shadow, Anima/Animus, Self), psychological types (introversion/extraversion), and individuation directly address psychoanalytic theories of personality and the subjective aspect of personality including awareness of self."
+      "relevantPathsAI": ["A.2", "A.4", "C.1"],
+      "rationaleAI": "Jung's concepts of introversion and extroversion constitute foundational personality typology (A.4), his collective unconscious and archetypes extend psychoanalytic personality theory beyond Freud (A.2), and individuation as the process of psychological self-realization directly addresses development of self-awareness (C.1)."
     },
     {
-      "episodeTitle": "Hysteria",
-      "pid": "p004y27w",
-      "relevantPathsAI": [
-        "D.1",
-        "D.3"
-      ],
-      "rationaleAI": "Hysteria covers the conversion of psychological distress into physical symptoms (conversion disorder), Charcot's neurological demonstrations, and Freud and Breuer's psychoanalytic reinterpretation, directly addressing somatoform disorders and the causation of mental disorders."
+      "episodeTitle": "Guilt",
+      "pid": "b0084kd8",
+      "relevantPathsAI": ["A.2", "C.2", "C.3", "D.1"],
+      "rationaleAI": "Freudian theories of superego and unconscious guilt relate to psychoanalytic personality structure (A.2), guilt as a force distorting reason and undermining psychological well-being constitutes a psychological stress (C.2), and pathological guilt that undermines functioning connects to defense mechanisms (C.3) and mental disorder (D.1)."
     },
     {
       "episodeTitle": "The Brain and Consciousness",
       "pid": "p0054582",
-      "relevantPathsAI": [
-        "A.1",
-        "D.1",
-        "D.3"
-      ],
-      "rationaleAI": "Brain function and consciousness, the development of neuroscience from phrenology to brain imaging, and implications for mental illness address physiological theories of personality and both major categories and causation of mental disorders."
+      "relevantPathsAI": ["A.1", "C.1", "D.1", "D.3"],
+      "rationaleAI": "Neuroscience's account of how brain structure gives rise to selfhood and moral responsibility bears on physiological theories of personality (A.1) and subjective self-awareness (C.1), while implications for treating neurological and psychiatric conditions connect to major categories and causation of mental disorders (D.1, D.3)."
     },
     {
-      "episodeTitle": "Neuroscience",
-      "pid": "b00fbd26",
-      "relevantPathsAI": [
-        "A.1",
-        "D.3"
-      ],
-      "rationaleAI": "Neuroscience covers the localisation of brain functions, consciousness, the neuroscience of emotion and decision-making, and the explanatory gap, addressing physiological theories of personality and the causation of mental disorders."
-    },
-    {
-      "episodeTitle": "The Frankfurt School",
-      "pid": "b00pr54s",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "C.2",
-        "C.3"
-      ],
-      "rationaleAI": "The Frankfurt School's synthesis of Marxist social theory with Freudian psychoanalysis, the analysis of authoritarianism and the authoritarian personality, and the critique of culture industry address psychoanalytic and social analytic theories of personality and environmental strains on personality functioning."
-    },
-    {
-      "episodeTitle": "The Individual",
-      "pid": "p0054631",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The concept of the individual traces development of selfhood, autonomy, and personal identity from Renaissance humanism through modern individualism, directly addressing the development of awareness of self."
-    },
-    {
-      "episodeTitle": "Consciousness",
-      "pid": "p005464j",
-      "relevantPathsAI": [
-        "C.1",
-        "D.3"
-      ],
-      "rationaleAI": "Consciousness addresses subjective experience, the relationship between brain states and mental experience, and implications for personal identity and free will, relevant to the subjective aspect of personality and the causation of mental disorders."
+      "episodeTitle": "Psychoanalysis and Democracy",
+      "pid": "p00548hr",
+      "relevantPathsAI": ["A.2", "C.3"],
+      "rationaleAI": "Freud's Group Psychology and the Analysis of the Ego directly engages psychoanalytic personality theory including the conflict between permitted and repressed ideas within the psyche (A.2), and the mechanisms of repression as defense mechanisms for coping with internal and external demands (C.3)."
     },
     {
       "episodeTitle": "Imagination and Consciousness",
       "pid": "p00546vr",
-      "relevantPathsAI": [
-        "C.1",
-        "D.3"
-      ],
-      "rationaleAI": "Consciousness, neural correlates of awareness, altered states of consciousness, and the explanatory gap address the subjective development of awareness of self and neurological factors in mental disorders."
+      "relevantPathsAI": ["A.2", "C.1"],
+      "rationaleAI": "Examination of consciousness, subjective experience, and Freud's framework of the subconscious relates to psychoanalytic personality structure (A.2), while exploration of self-awareness and qualia directly addresses the subjective aspect of personality and development of awareness of self (C.1)."
     },
     {
-      "episodeTitle": "The Four Humours",
-      "pid": "b008h5dz",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "The four humours theory directly addresses physiological theories of personality, with its association of humours with temperaments (sanguine, phlegmatic, choleric, melancholic) and its lasting influence on personality theory."
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["B.1", "B.2"],
+      "rationaleAI": "The development and critique of IQ testing from Binet onward, including factor analysis of cognitive abilities, nature-versus-nurture debates, twin studies, and cultural bias in assessment, directly illustrates methods of psychological assessment (B.1) and the evaluation of assessment techniques for reliability and validity (B.2)."
+    },
+    {
+      "episodeTitle": "The Mind/Body Problem",
+      "pid": "p003k9b8",
+      "relevantPathsAI": ["A.1", "C.1"],
+      "rationaleAI": "Competing accounts of how mind relates to body — including identity theory, functionalism, and eliminative materialism — bear directly on physiological theories of personality (A.1), while the philosophical treatment of consciousness, free will, and personal identity addresses the subjective aspect of personality and self-awareness (C.1)."
+    },
+    {
+      "episodeTitle": "Drugs",
+      "pid": "p00548fh",
+      "relevantPathsAI": ["C.2", "C.3", "D.1"],
+      "rationaleAI": "Drug use as a means of altering perception and mood illustrates coping responses to environmental strain (C.3), the cycle of pleasure and self-destruction exemplifies deprivation of accustomed gratification as a psychological stress (C.2), and substance-related disorders constitute a recognized category of mental disorder (D.1)."
     },
     {
       "episodeTitle": "Mrs Dalloway",
       "pid": "b048033q",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Mrs Dalloway's parallel narrative of shell-shocked veteran Septimus Smith and its engagement with mental illness directly illustrate major categories of mental disorders including post-traumatic stress."
+      "relevantPathsAI": ["C.1", "D.1"],
+      "rationaleAI": "Woolf's interweaving of sanity and insanity through Clarissa Dalloway and shell-shocked veteran Septimus Smith substantively explores the subjective experience of selfhood (C.1) and portrays posttraumatic stress disorder as a persisting disturbance of personality integration (D.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

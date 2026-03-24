@@ -2,143 +2,114 @@
   "sectionCode": "533",
   "mappings": [
     {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A",
-        "C.1",
-        "C.3"
-      ],
-      "rationaleAI": "The Industrial Revolution covers textile manufacturing innovations, steam power, the factory system, coal resources, and capital markets, directly addressing the organization of production, labour as an input, and energy as an input in the productive process."
+      "episodeTitle": "The Wealth of Nations",
+      "pid": "b052ln55",
+      "relevantPathsAI": ["A", "B.1", "F.1", "G.2"],
+      "rationaleAI": "Adam Smith's foundational work on division of labour, wealth accumulation, free markets, and the proper role of government directly addresses the organization of production, the relationship between productive process and income, classical trade theory, and justification of government's claim to share in resource use."
     },
     {
-      "episodeTitle": "Work in the 20th Century",
-      "pid": "p0054588",
-      "relevantPathsAI": [
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.j"
-      ],
-      "rationaleAI": "Work in the 20th century covers Taylorism, Fordist mass production, automation, the service economy transition, and debates about work, directly addressing labour as an input, deployment of workforce, methods of fixing pay, and the economic role of managers."
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["A", "C.1", "C.3", "C.4"],
+      "rationaleAI": "Mechanized factory production, steam power, coal-driven industry, and available capital illustrate the organization of production and the roles of labour, energy, and capital as inputs in the productive process."
     },
     {
       "episodeTitle": "Consequences of the Industrial Revolution",
       "pid": "b00wr9r7",
-      "relevantPathsAI": [
-        "C.1.g",
-        "C.1.h",
-        "E.4"
-      ],
-      "rationaleAI": "The consequences of the Industrial Revolution cover trade union movements, working conditions, the transformation of agriculture, and the global spread of industrialization, addressing the organization of unions and their influence on labour and the effect of technology on agriculture."
-    },
-    {
-      "episodeTitle": "The Wealth of Nations",
-      "pid": "b052ln55",
-      "relevantPathsAI": [
-        "B.1",
-        "D.1",
-        "F.1",
-        "G.2"
-      ],
-      "rationaleAI": "The Wealth of Nations covers the division of labour, the invisible hand, free trade against mercantilism, and the proper functions of government, directly addressing the distribution of goods, the nature of money, classical theories of trade, and government's claim to share in resource use."
-    },
-    {
-      "episodeTitle": "David Ricardo",
-      "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "B.2",
-        "F.1",
-        "F.2.a"
-      ],
-      "rationaleAI": "Ricardo's comparative advantage, labor theory of value, theory of rent, and the Corn Laws debate directly address the earnings of land, labour, and capital, classical theories of trade, and tariffs imposed to protect domestic industry."
-    },
-    {
-      "episodeTitle": "The Dutch East India Company",
-      "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "D.4",
-        "F.2",
-        "F.3"
-      ],
-      "rationaleAI": "The Dutch East India Company as the world's first multinational corporation and joint-stock company, with its governance structure and role in financial capitalism, directly addresses the business corporation, trade arrangements, and international trade."
+      "relevantPathsAI": ["C.1", "C.1.e", "C.1.g", "C.1.h"],
+      "rationaleAI": "The social consequences of industrialisation including factory labour relations, urban employment conditions, and the rise of organised labour directly address labour as a productive input, employment patterns, and the organization and influence of unions."
     },
     {
       "episodeTitle": "The Gold Standard",
       "pid": "m0013hh7",
-      "relevantPathsAI": [
-        "D.1",
-        "D.2",
-        "D.2.a",
-        "D.2.e"
-      ],
-      "rationaleAI": "The gold standard covers monetary systems tying currency values to gold, exchange rate stability, international trade balances, and the transition to fiat currency, directly addressing the nature of money, banking systems, and international monetary markets."
-    },
-    {
-      "episodeTitle": "The South Sea Bubble",
-      "pid": "b01pcs5g",
-      "relevantPathsAI": [
-        "D.2.g",
-        "J.1"
-      ],
-      "rationaleAI": "The South Sea Bubble covers securities speculation, financial innovation, the national debt, and insurance-like risk distribution, directly addressing the market for long-term funds and the nature of insurance."
+      "relevantPathsAI": ["D.1", "D.1.b", "D.2.d", "D.2.e", "D.2.f"],
+      "rationaleAI": "The gold standard's fixed currency-to-gold convertibility, central bank constraints, international capital flows, and interwar monetary crisis directly address forms of money, central banking functions, international money markets, and proposals for international monetary cooperation."
     },
     {
       "episodeTitle": "The Enclosures of the 18th Century",
       "pid": "b00b1m9b",
-      "relevantPathsAI": [
-        "E.1",
-        "E.5"
-      ],
-      "rationaleAI": "The enclosure movement transformed English agriculture from open fields to private holdings with improved efficiency, directly addressing the relationship between agricultural and economic development and the organization of farming."
+      "relevantPathsAI": ["C.2", "E.1", "E.5"],
+      "rationaleAI": "The enclosure movement consolidated open fields into private holdings, transforming agricultural organization and displacing rural labour, directly addressing land as a productive input, the relationship between agriculture and economic development, and types of farming organization."
     },
     {
-      "episodeTitle": "The Fable of the Bees",
-      "pid": "m0000t3y",
-      "relevantPathsAI": [
-        "D.1.a"
-      ],
-      "rationaleAI": "Mandeville's thesis about self-interest driving economic prosperity and its influence on Adam Smith's invisible hand concept directly addresses the basic functions of money and market mechanisms."
+      "episodeTitle": "Mercantilism",
+      "pid": "m001k0zv",
+      "relevantPathsAI": ["F.1", "F.2.a", "F.3", "G.4"],
+      "rationaleAI": "Mercantilist trade doctrine of maximizing exports through protectionist tariffs, colonial monopolies, and state-regulated commerce directly addresses classical trade theories, tariffs and embargoes, international trade arrangements, and government operation of commercial enterprises."
     },
     {
-      "episodeTitle": "Money",
-      "pid": "p00547ch",
-      "relevantPathsAI": [
-        "D.1",
-        "D.1.a",
-        "D.1.b",
-        "D.2.a"
-      ],
-      "rationaleAI": "Money covers the development of monetary systems, the history of coinage and banking, and the relationship between economic change and political transformation, directly addressing the nature of money, forms of money, and historical development of banking."
+      "episodeTitle": "The Corn Laws",
+      "pid": "b03dvbyk",
+      "relevantPathsAI": ["E.2", "E.3", "F.2.a"],
+      "rationaleAI": "The Corn Laws imposed tariffs inflating grain prices to protect landed interests, and their repeal marked Britain's shift to free trade, directly addressing efforts to control agricultural prices and production, farm price behaviour and farmer incomes, and tariffs imposed to protect domestic industry."
     },
     {
-      "episodeTitle": "The Highland Clearances",
-      "pid": "b09tc4tm",
-      "relevantPathsAI": [
-        "E.1",
-        "E.5"
-      ],
-      "rationaleAI": "The Highland Clearances' forced removal of communities for sheep farming directly addresses the relationship between agricultural and economic development and the organization of farming."
+      "episodeTitle": "The Physiocrats",
+      "pid": "b02x97k6",
+      "relevantPathsAI": ["C.2", "E.1", "G.2"],
+      "rationaleAI": "The Physiocrats' doctrine that agriculture is the sole source of genuine wealth, their laissez-faire opposition to government market restrictions, and Quesnay's Tableau Economique modelling economic circulation address land as a productive input, agriculture's relationship to economic development, and the justification of government's resource claims."
+    },
+    {
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": ["D.4", "F.2", "F.3"],
+      "rationaleAI": "The VOC pioneered the joint-stock corporate structure and dominated global spice trade through territorial control and monopoly, directly addressing the business corporation, national factors influencing trade, and international trade arrangements."
+    },
+    {
+      "episodeTitle": "The East India Company",
+      "pid": "p0054906",
+      "relevantPathsAI": ["D.4", "F.2", "F.3"],
+      "rationaleAI": "The English East India Company operated as a commercial corporation governing territories with a private army and fleet, illustrating the business corporation as an institutional arrangement, national and regional trade factors, and international trade arrangements."
     },
     {
       "episodeTitle": "The Lancashire Cotton Famine",
       "pid": "b05tly3f",
-      "relevantPathsAI": [
-        "C.2",
-        "F.2.b"
-      ],
-      "rationaleAI": "The Lancashire Cotton Famine covers dependency on raw cotton, global commodity chains, and diversification of cotton sources, directly addressing raw materials as inputs and changes in conditions of production."
+      "relevantPathsAI": ["C.2", "F.2.b"],
+      "rationaleAI": "The disruption of raw cotton supply to Lancashire mills and subsequent diversification of sourcing to India and Egypt directly addresses raw materials as productive inputs and changes in production conditions including costs, labour, and commodity networks."
     },
     {
-      "episodeTitle": "Thomas Edison",
-      "pid": "b00wdjr8",
-      "relevantPathsAI": [
-        "H.1",
-        "C.1.j"
-      ],
-      "rationaleAI": "Thomas Edison's Menlo Park laboratory as the first industrial research facility, his prolific patenting, and his business methods directly address the economic role of managers and entrepreneurs and methods of business organization."
+      "episodeTitle": "Marx",
+      "pid": "p003k9jg",
+      "relevantPathsAI": ["B.1", "B.2", "C.1"],
+      "rationaleAI": "Marx's analysis of labour exploitation, surplus value extraction, and capitalism's internal contradictions directly addresses the relationship between the productive process and derived incomes, the earnings of labour and capital, and labour as a productive input."
+    },
+    {
+      "episodeTitle": "Weber's The Protestant Ethic",
+      "pid": "b03yqj31",
+      "relevantPathsAI": ["C.4", "D.4"],
+      "rationaleAI": "Weber's thesis that Calvinist asceticism encouraged disciplined labour and systematic reinvestment of profit rather than consumption addresses capital accumulation as a productive input and the cultural conditions enabling the modern business corporation."
+    },
+    {
+      "episodeTitle": "Economic Rights",
+      "pid": "p00546m7",
+      "relevantPathsAI": ["G.2", "F.2"],
+      "rationaleAI": "The examination of capitalism's relationship to democracy, Friedman's market efficiency arguments, and globalised capital's impact on economic justice address the justification of government's claim to share in resource use and national factors influencing trade."
+    },
+    {
+      "episodeTitle": "Materialism and the Consumer",
+      "pid": "p00546q2",
+      "relevantPathsAI": ["H.5", "I"],
+      "rationaleAI": "The history of shopping, department stores, and advertising's role in shaping consumer identity directly addresses the distribution and marketing of goods and advertising as a mechanism for stimulating demand."
+    },
+    {
+      "episodeTitle": "The Theory of the Leisure Class",
+      "pid": "m001sdrt",
+      "relevantPathsAI": ["I", "B.1"],
+      "rationaleAI": "Veblen's analysis of conspicuous consumption as status display and his critique of profit accumulation divorced from productive work address advertising's role in creating demand and the relationship between the productive process and derived incomes."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["E.1", "E.4"],
+      "rationaleAI": "Malthus's thesis that food production grows only arithmetically while population grows geometrically directly addresses the relationship between agriculture and economic development, and the question of crop yields keeping pace with demand."
+    },
+    {
+      "episodeTitle": "Mathematics' Unintended Consequences",
+      "pid": "b00qj2nq",
+      "relevantPathsAI": ["J.6", "K"],
+      "rationaleAI": "Probability theory's foundational role in actuarial science and Fermat's primes underpinning modern credit card encryption directly address underwriting and rate making in insurance and the infrastructure of consumer credit."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

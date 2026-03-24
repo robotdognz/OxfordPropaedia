@@ -7,10 +7,20 @@
       "relevantPathsAI": [
         "A.7",
         "C.6",
+        "C.6.a",
         "C.6.b",
-        "C.6.c"
+        "C.6.c",
+        "C.7"
       ],
-      "rationaleAI": "Pleistocene glaciations shaped landforms through glacial erosion and deposition, creating moraines, glaciated valleys, and other features, with evidence from geology directly relevant to the glacial environment and periglacial processes."
+      "rationaleAI": "Directly addresses glacial processes including erosion, transport, and deposition that produce landforms such as moraines, drumlins, and glaciated valleys. Covers alternating glacial and interglacial periods, Milankovitch cycles, and the profound effects of ice sheets on geography, sea levels, and landform shaping across geological time."
+    },
+    {
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Explains volcanic-tectonic processes driven by subduction zones, mid-ocean ridges, and mantle plumes that fundamentally shape Earth's surface features through mountain building, volcanic activity, and continental reconfiguration."
     },
     {
       "episodeTitle": "The Geological Formation of Britain",
@@ -21,33 +31,16 @@
         "C.6",
         "D.1"
       ],
-      "rationaleAI": "Britain's geological formation includes Quaternary ice ages sculpting the modern landscape and Carboniferous coal measures from swamp forests, illustrating glacial, volcanic-tectonic, and sedimentary geomorphic processes and uniformitarianism."
-    },
-    {
-      "episodeTitle": "Catastrophism",
-      "pid": "b03s9tlz",
-      "relevantPathsAI": [
-        "D.1",
-        "D.2"
-      ],
-      "rationaleAI": "The debate between catastrophism and uniformitarianism (Hutton, Lyell) is foundational to the concepts of uniformitarianism and the cycle of erosion in landform evolution theory."
+      "rationaleAI": "Traces over 600 million years of geomorphic processes shaping Britain's diverse landscape, including tectonic convergence closing the Iapetus Ocean, volcanic episodes, ice ages producing glacial landforms, and the formation of geological features from Precambrian Highlands to Cretaceous chalk through processes of weathering, erosion, and deposition."
     },
     {
       "episodeTitle": "Corals",
       "pid": "m0010xnr",
       "relevantPathsAI": [
-        "C.4.a.iv"
+        "C.4.a.iv",
+        "A.6"
       ],
-      "rationaleAI": "Coral reef formation through calcium carbonate deposition is directly relevant to coral reefs as coastal depositional features in the marine environment."
-    },
-    {
-      "episodeTitle": "Doggerland",
-      "pid": "m0006707",
-      "relevantPathsAI": [
-        "A.6",
-        "C.4"
-      ],
-      "rationaleAI": "Doggerland's submergence by post-glacial sea level rise and the Storegga Slide tsunami illustrate marine processes of coastal erosion and deposition, and the effects of sea level change on coastal features."
+      "rationaleAI": "Covers coral reef formation as a major coastal depositional feature and Darwin's early scientific work on reef structure and distribution, which demonstrated how biological organisms create significant marine landforms through long-term geological processes."
     },
     {
       "episodeTitle": "Vulcanology",
@@ -55,25 +48,85 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Volcanism at subduction zones, mid-ocean ridges, and hotspots shapes Earth's surface through volcanic-tectonic processes including lava flows and pyroclastic deposits."
+      "rationaleAI": "Examines volcanic processes from magma generation to surface eruptions, covering how volcanism at subduction zones, mid-ocean ridges, and mantle plumes creates and reshapes Earth's surface features. Volcanism played essential roles in forming Earth's atmosphere and crust, directly shaping landforms."
     },
     {
-      "episodeTitle": "Plate Tectonics",
-      "pid": "b008q0sp",
+      "episodeTitle": "Doggerland",
+      "pid": "m0006707",
+      "relevantPathsAI": [
+        "A.6",
+        "A.7",
+        "C.4",
+        "C.4.d",
+        "C.6"
+      ],
+      "rationaleAI": "Examines Doggerland as a landscape submerged by post-glacial sea-level rise, connecting glacial processes, marine transgression, and coastal geomorphology. Seismic surveys reveal drowned river systems and terrain features, illustrating how glacial melting and marine processes reshape continental shelves and coastlines."
+    },
+    {
+      "episodeTitle": "Oceanography",
+      "pid": "p00547lb",
+      "relevantPathsAI": [
+        "A.6",
+        "A.6.b",
+        "C.4",
+        "C.4.d"
+      ],
+      "rationaleAI": "Covers ocean floor mapping, deep-sea features, and the continental shelf and slope as submerged coastal landforms. Marine erosion, deposition, sediment transport by density flows, and submarine canyon formation are central geomorphic processes shaping the marine environment."
+    },
+    {
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": [
+        "A.2",
+        "A.2.a",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Links the first development of terrestrial soils and early forest colonization to nutrient runoff into shallow seas, directly illustrating how biological processes drive soil formation, rock weathering, and sediment yield -- key geomorphic processes in the outline for weathering and biosphere effects on surface features."
+    },
+    {
+      "episodeTitle": "Seismology",
+      "pid": "m00154gh",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Plate tectonics drives volcanic-tectonic processes that produce surface features through subduction, mountain building, and volcanic activity."
+      "rationaleAI": "Seismic activity along tectonic faults produces earthquakes that directly reshape surface features through ground displacement, landslides, and tsunami-driven coastal modification. Seismology's revelation of Earth's layered structure illuminates the tectonic driving forces behind volcanic and orogenic geomorphic processes."
     },
     {
-      "episodeTitle": "Asteroids",
-      "pid": "p003k9kh",
+      "episodeTitle": "Ageing the Earth",
+      "pid": "p005493g",
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Traces the concept of Deep Time and uniformitarianism -- the foundational principle that present geomorphic processes operated throughout geological history -- alongside the stratigraphic division of Earth's history into eons, eras, and periods that underpin landform evolution theory."
+    },
+    {
+      "episodeTitle": "1816, the Year Without a Summer",
+      "pid": "b077j4yv",
+      "relevantPathsAI": [
+        "B.3",
+        "A.5.d"
+      ],
+      "rationaleAI": "The 1815 Tambora eruption, the largest in recorded history, exemplifies how volcanic-tectonic processes affect Earth's surface through massive tephra deposition and atmospheric disruption. The resulting climate anomalies altered weathering patterns, soil productivity, and agricultural landscapes across hemispheres."
+    },
+    {
+      "episodeTitle": "The California Gold Rush",
+      "pid": "b05nxgdd",
+      "relevantPathsAI": [
+        "B.1.c"
+      ],
+      "rationaleAI": "Hydraulic mining during the Gold Rush caused irreversible environmental damage including deforestation, mercury contamination of waterways, and massive reshaping of hillslopes and river systems -- a direct example of how human mining and land modification alter Earth's surface features."
+    },
+    {
+      "episodeTitle": "The KT Boundary",
+      "pid": "p003k9d0",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Asteroid impacts create meteorite craters as extraterrestrial geomorphic processes, with the Chicxulub impact being a prime example of extraterrestrial surface modification."
+      "rationaleAI": "The Chicxulub meteorite impact created one of Earth's largest impact craters, directly illustrating extraterrestrial processes that produce meteorite craters on Earth's surface. The iridium-rich boundary layer represents a globally significant depositional event from an extraterrestrial source."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

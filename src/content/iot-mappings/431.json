@@ -2,125 +2,108 @@
   "sectionCode": "431",
   "mappings": [
     {
-      "episodeTitle": "Genetic Determinism",
-      "pid": "p005461w",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.a",
-        "A.2.b"
-      ],
-      "rationaleAI": "Directly addresses the nature-nurture controversy (A.2), covering twin studies, behavioral genetics, gene-environment interaction, and the ethical implications of genetic determinism — mapping precisely to genetic versus environmental factors in human behaviour."
-    },
-    {
-      "episodeTitle": "Evolutionary Psychology",
-      "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.b",
-        "A.1.c",
-        "A.2"
-      ],
-      "rationaleAI": "Evolutionary psychology applies evolutionary theory to human cognition and behavior, addressing what capacities are distinctive to humans (A.1.b), phylogenetic continuity (A.1.c), and the nature-nurture debate (A.2) including evolved predispositions versus cultural variation."
-    },
-    {
-      "episodeTitle": "The Infant Brain",
-      "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3.a",
-        "B.4"
-      ],
-      "rationaleAI": "Covers neuroplasticity, synaptogenesis, critical periods for language and visual development, and the nature-nurture interplay in infant brain development — directly relevant to environmental versus genetic factors (A.2), cognitive development (A.3.a), and infancy (B.4)."
-    },
-    {
       "episodeTitle": "Intelligence",
       "pid": "p00545l3",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.5"
-      ],
-      "rationaleAI": "Covers IQ testing, g-factor, multiple intelligence theories, heredity-versus-environment controversy, and comparisons of human and artificial intelligence (A.5), directly addressing cognitive dimensions (A.3.a) and the nature-nurture question (A.2)."
+      "relevantPathsAI": ["A.2", "A.2.a", "A.2.b", "A.3.a"],
+      "rationaleAI": "Directly examines the nature-versus-nurture debate over cognitive ability, including twin studies (genetic endowment) and environmental factors such as education and nutrition, while also addressing the cognitive dimension through IQ measurement, memory, problem-solving, and abstract reasoning."
+    },
+    {
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": ["A.1.b", "A.1.c", "A.2", "A.3.a"],
+      "rationaleAI": "Propositional language as a distinctively human trait (Chomsky's innate universal grammar), the nativist versus empiricist debate over language acquisition as a case of the nature-nurture controversy, and the relationship between language and thought as a core aspect of the cognitive dimension."
+    },
+    {
+      "episodeTitle": "Genetic Determinism",
+      "pid": "p005461w",
+      "relevantPathsAI": ["A.2", "A.2.a", "A.2.b"],
+      "rationaleAI": "Directly addresses the nature-nurture controversy by examining claims that genes determine intelligence, personality, sexual orientation, and criminal behavior, while also exploring the limits of genetic explanation and the role of environment and moral responsibility."
     },
     {
       "episodeTitle": "The Brain and Consciousness",
       "pid": "p0054582",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.5"
-      ],
-      "rationaleAI": "Explores the neural basis of memory, perception, and consciousness (A.3.a cognitive dimension), the hard problem of consciousness, free will, and brain research implications — also covers the comparison of human and machine intelligence, relevant to A.5."
+      "relevantPathsAI": ["A.3.a", "A.3.b", "A"],
+      "rationaleAI": "Examines how neural processes give rise to subjective experience, memory, and cognition (the cognitive dimension), while addressing free will and moral responsibility (the voluntary and involuntary within the conative dimension) and the mind-body problem central to understanding human nature."
     },
     {
-      "episodeTitle": "Childhood",
-      "pid": "p0054653",
-      "relevantPathsAI": [
-        "B.5",
-        "B.1"
-      ],
-      "rationaleAI": "Directly addresses the changing concept and experience of childhood, developmental psychology (Piaget), and the stages of human development from Victorian era to present, mapping to early childhood and childhood (B.5) and general aspects of human development (B.1)."
+      "episodeTitle": "Consciousness",
+      "pid": "p005464j",
+      "relevantPathsAI": ["A.3.a", "A"],
+      "rationaleAI": "Directly addresses perception, memory, and reason as components of consciousness, the hard problem of subjective experience, and whether the human mind can understand its own basis — core questions about the cognitive dimension of human behaviour and experience."
+    },
+    {
+      "episodeTitle": "Evolutionary Psychology",
+      "pid": "p00546xr",
+      "relevantPathsAI": ["A.1.c", "A.2", "A.2.a"],
+      "rationaleAI": "Claims all human behaviour can be understood through genetic imperatives for reproduction, directly engaging the nature-nurture debate and the principle of phylogenetic continuity, while raising the question of whether human nature is genetically determined or culturally shaped."
+    },
+    {
+      "episodeTitle": "The Infant Brain",
+      "pid": "b00r2cn4",
+      "relevantPathsAI": ["B.1", "B.4", "A.2.a", "A.3.a"],
+      "rationaleAI": "Reveals innate cognitive capacities in pre-verbal infants including number sense, object permanence, and theory of mind, directly relevant to infancy as a developmental stage and the role of genetic endowment in shaping early cognitive abilities."
     },
     {
       "episodeTitle": "Artificial Intelligence",
-      "pid": "p00545h7",
-      "relevantPathsAI": [
-        "A.5"
-      ],
-      "rationaleAI": "Examines whether computers can achieve genuine thought and feeling, the Turing test, computational approaches to consciousness, and the gap between rule-based processing and human understanding — directly addressing comparison of human and artificial intelligence (A.5)."
+      "pid": "p003k9fc",
+      "relevantPathsAI": ["A.5"],
+      "rationaleAI": "Directly addresses the comparison of human and artificial intelligence, including the Chinese Room Argument about whether machines can truly think, debates about machine consciousness, and whether intelligence is the defining human characteristic."
     },
     {
-      "episodeTitle": "Existentialism",
-      "pid": "p00547h8",
-      "relevantPathsAI": [
-        "A.3.b",
-        "A.3.c"
-      ],
-      "rationaleAI": "Existentialism's core concerns with freedom, choice, anxiety, and authenticity bear directly on the conative dimension (desires, motivation, the voluntary and involuntary — A.3.b) and the affective dimension (anxiety, the pleasant and unpleasant — A.3.c) of human experience."
+      "episodeTitle": "Imagination",
+      "pid": "p00548lc",
+      "relevantPathsAI": ["A.1.b", "A.1.c", "A.3.a"],
+      "rationaleAI": "Examines imagination as a distinctively human cognitive faculty with evolutionary origins, addressing its role in creativity, abstract thought, mental simulation, and problem-solving — capacities central to the cognitive dimension and to what distinguishes humans from other species."
+    },
+    {
+      "episodeTitle": "Imagination and Consciousness",
+      "pid": "p00546vr",
+      "relevantPathsAI": ["A.1.a", "A.3.a", "A"],
+      "rationaleAI": "Explores consciousness, subjective experience, and mental representation, while addressing animal consciousness (behavioral capacities shared with other species) and the subconscious, spanning key questions about the cognitive dimension of human behaviour and experience."
+    },
+    {
+      "episodeTitle": "Feminism",
+      "pid": "p00545b0",
+      "relevantPathsAI": ["A.2", "A.2.a", "A.2.b"],
+      "rationaleAI": "Directly engages the nature-nurture debate through the question of whether biological differences between sexes are insuperable, contrasting Darwinian views of innate sex differences (genetic endowment) with feminist arguments emphasizing cultural and environmental conditioning."
     },
     {
       "episodeTitle": "The Neanderthals",
       "pid": "b00sq1nv",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.b",
-        "A.1.c"
-      ],
-      "rationaleAI": "Neanderthals exhibited tool-making, burial practices suggesting symbolic thought, and coexistence with Homo sapiens — directly relevant to behavioral capacities shared with other hominins (A.1.a), supposedly distinctive human traits (A.1.b), and phylogenetic continuity (A.1.c)."
+      "relevantPathsAI": ["A.1", "A.1.b", "A.1.c"],
+      "rationaleAI": "Debates over Neanderthal cognitive abilities, language capacity, and cultural sophistication bear directly on which behavioral capacities are distinctively human and the evolutionary development of mankind through comparison with our closest hominin relatives."
     },
     {
-      "episodeTitle": "Human Evolution",
-      "pid": "p003hyfl",
-      "relevantPathsAI": [
-        "A.1.c"
-      ],
-      "rationaleAI": "Covers six million years of human evolution including bipedalism, brain enlargement, tool use, and the Out of Africa hypothesis — directly addressing the evolutionary development of mankind and phylogenetic continuity (A.1.c)."
+      "episodeTitle": "Cave Art",
+      "pid": "m000mqn7",
+      "relevantPathsAI": ["A.1.b", "A.1.c"],
+      "rationaleAI": "The debate over whether Neanderthals as well as humans created cave art directly addresses which behavioral and cognitive capacities are distinctively human, including symbolic representation and cumulative cultural transmission."
     },
     {
-      "episodeTitle": "Ageing",
-      "pid": "p00545c0",
-      "relevantPathsAI": [
-        "B.7",
-        "B.1"
-      ],
-      "rationaleAI": "Examines biological mechanisms of ageing including cellular senescence and telomere shortening, as well as the demographic and ethical dimensions of growing older — directly relevant to maturity (B.7) and general aspects of human development (B.1)."
+      "episodeTitle": "Behavioural Ecology",
+      "pid": "b04tljk0",
+      "relevantPathsAI": ["A.1.a", "A.1.c"],
+      "rationaleAI": "The evolutionary basis of behavioral strategies for feeding, mating, and social cooperation illuminates behavioral capacities humans share with other animals, providing the comparative framework for understanding human behaviour within phylogenetic continuity."
     },
     {
-      "episodeTitle": "Nature",
-      "pid": "p005490t",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Explores the concept of human nature in relation to the natural world, including the nature-culture distinction and the impact of Darwinian evolution on understandings of human nature — relevant to the question of mankind's relationship to nature (A.1)."
+      "episodeTitle": "Automata",
+      "pid": "b0bk1c4d",
+      "relevantPathsAI": ["A.5", "A.1.b"],
+      "rationaleAI": "Machines that imitate the living raised foundational questions about what is distinctly human, including Hobbes's argument that humans are sophisticated machines — directly relevant to emergent problems comparing human and artificial intelligence."
     },
     {
-      "episodeTitle": "The Evolution of Teeth",
-      "pid": "m0003zbg",
-      "relevantPathsAI": [
-        "A.1.c"
-      ],
-      "rationaleAI": "Human dental evolution and what fossil teeth reveal about evolutionary history directly address the evolutionary development of mankind through anatomical evidence (A.1.c)."
+      "episodeTitle": "Existentialism",
+      "pid": "p00547h8",
+      "relevantPathsAI": ["A", "A.3.b"],
+      "rationaleAI": "Existentialism's concern with individual freedom, choice, responsibility, and what it means to be a conscious being addresses the conative dimension of human experience — desires, motivation, purpose, and the voluntary — and broader questions about human nature."
+    },
+    {
+      "episodeTitle": "The Fall",
+      "pid": "p004y27p",
+      "relevantPathsAI": ["A", "A.3.b"],
+      "rationaleAI": "The doctrine of original sin provided a foundational Western framework for understanding human nature, moral responsibility, and the tension between desire and moral will — core concerns of the conative and affective dimensions of human experience."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

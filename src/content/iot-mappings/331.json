@@ -4,57 +4,52 @@
     {
       "episodeTitle": "The Cell",
       "pid": "b01mk8vh",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B",
-        "C",
-        "D"
-      ],
-      "rationaleAI": "The cell covers Robert Hooke's discovery, Schleiden and Schwann's cell theory, organelle structure and function (nucleus, mitochondria, ribosomes), cell division (mitosis and meiosis), and endosymbiosis -- spanning cell theory, classification, design, function, and the cell cycle."
+      "relevantPathsAI": ["A.1", "A.2", "A.2.b", "B.2", "B.2.a", "B.2.b", "C", "D", "D.2.a", "D.2.c"],
+      "rationaleAI": "Directly addresses cell theory from Hooke's 1665 observations onward, the diversity of cell types (neurons, muscle fibers, immune cells) in the human body, cell organelle structure, and cell division processes including mitosis and meiosis, spanning virtually the entire section outline."
     },
     {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "Macromolecules -- nucleic acids, proteins, polysaccharides, and lipids -- are the molecular system components of cells, directly mapping to the cell as a molecular system."
+      "relevantPathsAI": ["B.1", "B.1.a", "B.1.b"],
+      "rationaleAI": "Proteins, nucleic acids (DNA), polysaccharides, and lipids are the macromolecular and small-molecule constituents of cells, directly mapping to the cell as a molecular system including both macromolecular and small-molecule components."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": [
-        "B.2.b"
-      ],
-      "rationaleAI": "Mitochondria as organelles with independent DNA and double-membrane structure are key morphological elements of cells, directly relevant to cell organelle morphology."
+      "relevantPathsAI": ["B.2.b", "C.3"],
+      "rationaleAI": "Mitochondria are membrane-bound organelles central to cell energetics with their own DNA, directly relevant as morphological elements of the cell; the endosymbiotic theory of their origin from engulfed bacteria illustrates the interplay between nucleus and cytoplasm in eukaryotic cell evolution."
     },
     {
-      "episodeTitle": "Genetic Mutation",
-      "pid": "b008drvm",
-      "relevantPathsAI": [
-        "D.2.c"
-      ],
-      "rationaleAI": "Genetic mutations including chromosomal rearrangements relate to cell division errors during meiosis, relevant to the division of germ cells into gametes with potential genetic alterations."
+      "episodeTitle": "Enzymes",
+      "pid": "b08rp369",
+      "relevantPathsAI": ["C", "C.1", "D.1"],
+      "rationaleAI": "Enzymes control the speed of all chemical reactions within cells, regulate cell growth and programmed cell death, and enable intercellular communication, making them fundamental to the functional aspects of cells and the cell growth phase of the cell cycle."
+    },
+    {
+      "episodeTitle": "Archaea",
+      "pid": "m002sg10",
+      "relevantPathsAI": ["A.2.a", "B.2.c"],
+      "rationaleAI": "The discovery of archaea as a separate domain distinct from bacteria, sharing cellular features with eukaryotes, and the theory that bacterial-archaeal fusion produced eukaryotic cells are directly relevant to the classification and comparison of prokaryotic and eukaryotic cell types."
     },
     {
       "episodeTitle": "Free Radicals",
       "pid": "m0000xqd",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "Free radicals' role in cellular damage and cell signaling relates to the internal environment and cell matrix, as oxidative stress affects the intracellular milieu."
+      "relevantPathsAI": ["C.1", "D.1"],
+      "rationaleAI": "Free radicals as byproducts of cellular respiration that cause cumulative intracellular damage relate to the cell's internal environment, while their positive roles in cell signalling and driving normal cell division connect to the cell growth and division cycle."
     },
     {
       "episodeTitle": "Slime Moulds",
       "pid": "m002691y",
-      "relevantPathsAI": [
-        "C.4",
-        "C.5"
-      ],
-      "rationaleAI": "Slime moulds demonstrate remarkable cell movement through aggregation and their transition between unicellular and multicellular states illustrates cells in combination forming multicellular organisms."
+      "relevantPathsAI": ["C.4", "C.5"],
+      "rationaleAI": "Slime moulds exhibit amoeboid cell movement and collective problem-solving through cellular aggregation, directly illustrating both cell motility and how individual cells combine, communicate, and form cohesive multicellular structures without nervous systems."
+    },
+    {
+      "episodeTitle": "Rosalind Franklin",
+      "pid": "b09rzm9y",
+      "relevantPathsAI": ["B.1.a"],
+      "rationaleAI": "Franklin's X-ray crystallography of DNA, including Photograph 51, was pivotal to determining the double-helix structure of nucleic acids, which are among the principal macromolecules constituting the cell's molecular system."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

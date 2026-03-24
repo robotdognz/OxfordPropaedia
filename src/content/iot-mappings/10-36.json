@@ -2,166 +2,208 @@
   "sectionCode": "10/36",
   "mappings": [
     {
-      "episodeTitle": "History of History",
-      "pid": "b00gryrx",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "Historiography from Herodotus through the Annales school and postmodern challenges traces the origins and 19th-century development of the social sciences (A.1, A.2)."
-    },
-    {
-      "episodeTitle": "The Wealth of Nations",
-      "pid": "b052ln55",
-      "relevantPathsAI": [
-        "D",
-        "D.1"
-      ],
-      "rationaleAI": "Adam Smith's Wealth of Nations covers the division of labour, free trade, and the invisible hand -- foundational concepts for the development of economic theories (D.1)."
-    },
-    {
-      "episodeTitle": "David Ricardo",
-      "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "D",
-        "D.1"
-      ],
-      "rationaleAI": "Ricardo's theory of comparative advantage, labor theory of value, and influence on classical economics contribute to the development of economic theories (D.1)."
-    },
-    {
-      "episodeTitle": "Hayek's The Road to Serfdom",
-      "pid": "m0023x87",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Hayek's Road to Serfdom represents a major 20th-century development in economic and political theory, influencing neoliberal thought and debates about economic freedom (D.1)."
-    },
-    {
-      "episodeTitle": "The Theory of the Leisure Class",
-      "pid": "m001sdrt",
-      "relevantPathsAI": [
-        "C",
-        "C.1"
-      ],
-      "rationaleAI": "Veblen's Theory of the Leisure Class introduces conspicuous consumption and institutional economics, contributing to the background of contemporary sociology (C.1)."
-    },
-    {
-      "episodeTitle": "Education",
-      "pid": "p005463m",
-      "relevantPathsAI": [
-        "A.1.b",
-        "G"
-      ],
-      "rationaleAI": "The history of education from ancient Greek paideia through progressive movements connects to the Enlightenment heritage of social reform (A.1.b) and the history of psychology through developmental psychology (G)."
-    },
-    {
-      "episodeTitle": "Social Darwinism",
-      "pid": "b03vgq1q",
-      "relevantPathsAI": [
-        "A.2.a",
-        "C.5"
-      ],
-      "rationaleAI": "Social Darwinism illustrates the influence of new concepts in scientific theories on 19th-century social sciences (A.2.a) and connects to social psychology (C.5)."
-    },
-    {
-      "episodeTitle": "Democracy",
-      "pid": "p00547jm",
-      "relevantPathsAI": [
-        "E",
-        "E.1"
-      ],
-      "rationaleAI": "Democracy's development from Athens through the Enlightenment to modern democratization addresses the history of political science (E.1) and political systems (E.3)."
-    },
-    {
-      "episodeTitle": "Psychoanalysis and Democracy",
-      "pid": "p00548hr",
-      "relevantPathsAI": [
-        "A.3.c",
-        "G.1"
-      ],
-      "rationaleAI": "Psychoanalysis and democracy covers the influence of Freudian ideas on social sciences (A.3.c) and the history of psychology (G.1)."
-    },
-    {
-      "episodeTitle": "Work in the 20th Century",
-      "pid": "p0054588",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.3.b"
-      ],
-      "rationaleAI": "Work in the 20th century covering Taylorism, Fordism, and labor transitions illustrates the influence of social upheaval (A.3.a) and Marxism (A.3.b) on the social sciences."
-    },
-    {
-      "episodeTitle": "Episode 1",
-      "pid": "b018wfsc",
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
       "relevantPathsAI": [
         "H",
-        "H.1"
+        "H.1",
+        "H.2",
+        "A.3.e"
       ],
-      "rationaleAI": "The origins of writing from cuneiform through the alphabet's development connects to the history of linguistics (H.1) and language systems."
+      "rationaleAI": "Linguistics: Chomsky, structuralism, language acquisition (H, A.3.e)."
     },
     {
-      "episodeTitle": "Money",
-      "pid": "p00547ch",
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
       "relevantPathsAI": [
-        "D.1"
+        "G",
+        "G.1",
+        "G.2",
+        "G.3"
       ],
-      "rationaleAI": "Money and economic forces in history covers Marxist historical materialism and the development of monetary systems, contributing to the development of economic theories (D.1)."
+      "rationaleAI": "Intelligence: IQ testing, nature-nurture, cognitive science (G)."
     },
     {
-      "episodeTitle": "Condorcet",
-      "pid": "m001v3wy",
+      "episodeTitle": "Neuroscience",
+      "pid": "b00fbd26",
+      "relevantPathsAI": [
+        "G.1",
+        "G.3",
+        "A.3.c"
+      ],
+      "rationaleAI": "Neuroscience: physiological psychology (G.3), Freudian convergences (A.3.c)."
+    },
+    {
+      "episodeTitle": "David Hume",
+      "pid": "b015cpfp",
       "relevantPathsAI": [
         "A.1.b",
-        "A.3.d.iii",
-        "D.3"
+        "D.1"
       ],
-      "rationaleAI": "Condorcet's contributions to social mathematics and voting theory connect to the Enlightenment heritage (A.1.b), the introduction of mathematical methods in social sciences (A.3.d.iii), and mathematical economics (D.3)."
+      "rationaleAI": "Hume: Enlightenment foundations, influence on Adam Smith (A.1.b, D.1)."
     },
     {
-      "episodeTitle": "Sovereignty",
-      "pid": "b07hhvxx",
+      "episodeTitle": "Harriet Martineau",
+      "pid": "b084d7b0",
       "relevantPathsAI": [
-        "E",
-        "E.2"
+        "A.2.b",
+        "C.1",
+        "D.1"
       ],
-      "rationaleAI": "Sovereignty from Bodin through Hobbes to the Westphalian system addresses the scope of political science (E.2) and international relations (E.3)."
+      "rationaleAI": "Martineau: pioneered sociological methods, popularized economics (C.1, D.1)."
     },
     {
-      "episodeTitle": "The Enlightenment in Britain",
-      "pid": "p005479m",
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
       "relevantPathsAI": [
-        "A.1.b"
+        "B.2",
+        "A.3.d.i"
       ],
-      "rationaleAI": "The British Enlightenment's empiricist tradition and development of natural rights theory connects to the heritage of the Enlightenment for social sciences (A.1.b)."
+      "rationaleAI": "Diamond's environmental determinism: anthropological methods (B.2)."
+    },
+    {
+      "episodeTitle": "Hypnosis",
+      "pid": "m002cqq3",
+      "relevantPathsAI": [
+        "G.1",
+        "G.3"
+      ],
+      "rationaleAI": "Hypnosis: history and physiological psychology (G.1, G.3)."
+    },
+    {
+      "episodeTitle": "The Royal Society and British Science: Episode 4",
+      "pid": "b00pkx5q",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "A.2.b"
+      ],
+      "rationaleAI": "Pitt-Rivers: emergence of anthropology as discipline (B.1, B.2)."
+    },
+    {
+      "episodeTitle": "Popper",
+      "pid": "b00773y4",
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c",
+        "A.3.d.iv"
+      ],
+      "rationaleAI": "Popper: critiqued Marxism and Freud as unfalsifiable (A.3.b, A.3.c)."
+    },
+    {
+      "episodeTitle": "The Individual",
+      "pid": "p0054631",
+      "relevantPathsAI": [
+        "A.3.e",
+        "C.1"
+      ],
+      "rationaleAI": "The Individual: structuralism, Foucault (A.3.e, C.1)."
     },
     {
       "episodeTitle": "Consequences of the Industrial Revolution",
       "pid": "b00wr9r7",
       "relevantPathsAI": [
         "A.2.a",
-        "C"
+        "C.1",
+        "D.1"
       ],
-      "rationaleAI": "The consequences of the Industrial Revolution including urbanization, class formation, and labor movements address the influence of new social theories in the 19th century (A.2.a) and the background of sociology (C)."
+      "rationaleAI": "Industrial Revolution's social upheaval stimulated sociology and economics."
     },
     {
-      "episodeTitle": "Youth",
-      "pid": "p00548x7",
+      "episodeTitle": "Democracy",
+      "pid": "p00547jm",
       "relevantPathsAI": [
-        "C",
-        "G"
+        "A.3.b",
+        "E.1"
       ],
-      "rationaleAI": "The history of concepts of youth from antiquity through the emergence of youth culture connects to sociology (C) and the history of psychology through developmental psychology (G)."
+      "rationaleAI": "Lenin: Marxism's influence on social sciences (A.3.b, E.1)."
     },
     {
-      "episodeTitle": "Science in the 20th century",
-      "pid": "p005457h",
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.d"
+        "A.2.a",
+        "D.1",
+        "C.5"
       ],
-      "rationaleAI": "How perceptions of science changed during the 20th century addresses the changing character of social science disciplines (A.3.d) and the increasing professionalism of scientists (A.3.d.ii)."
+      "rationaleAI": "Malthus: political economy, demography (D.1, C.5)."
+    },
+    {
+      "episodeTitle": "Montesquieu",
+      "pid": "b0b5qnfx",
+      "relevantPathsAI": [
+        "E.1",
+        "A.1.b"
+      ],
+      "rationaleAI": "Montesquieu: founding political science, Enlightenment heritage (E.1, A.1.b)."
+    },
+    {
+      "episodeTitle": "Psychoanalysis and its Legacy",
+      "pid": "p00545cg",
+      "relevantPathsAI": [
+        "A.3.c",
+        "G.1",
+        "G.2"
+      ],
+      "rationaleAI": "Psychoanalysis: Freudian influence on social sciences (A.3.c, G.1)."
+    },
+    {
+      "episodeTitle": "Ibn Khaldun",
+      "pid": "b00qckbw",
+      "relevantPathsAI": [
+        "A.1.a",
+        "C.1",
+        "E.1"
+      ],
+      "rationaleAI": "Ibn Khaldun: precursor of sociology and political science (A.1.a, C.1, E.1)."
+    },
+    {
+      "episodeTitle": "Lévi-Strauss",
+      "pid": "b01sjjxl",
+      "relevantPathsAI": [
+        "B",
+        "B.2",
+        "A.3.e",
+        "H.2"
+      ],
+      "rationaleAI": "Lévi-Strauss: structuralist anthropology, linguistics intersection (B, A.3.e, H.2)."
+    },
+    {
+      "episodeTitle": "Childhood",
+      "pid": "p0054653",
+      "relevantPathsAI": [
+        "G.1",
+        "G.2",
+        "C.4"
+      ],
+      "rationaleAI": "Childhood: developmental psychology, sociology of family (G.1, C.4)."
+    },
+    {
+      "episodeTitle": "Condorcet",
+      "pid": "m001v3wy",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Condorcet: Enlightenment heritage in social reform (A.1.b)."
+    },
+    {
+      "episodeTitle": "Herodotus",
+      "pid": "m000zv33",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Herodotus: ethnographic methodology, precursor to anthropology (B.1)."
+    },
+    {
+      "episodeTitle": "Probability",
+      "pid": "b00bqf61",
+      "relevantPathsAI": [
+        "A.3.d.iii",
+        "D.3"
+      ],
+      "rationaleAI": "Probability: quantitative methods in social sciences (A.3.d.iii, D.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

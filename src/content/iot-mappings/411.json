@@ -4,89 +4,82 @@
     {
       "episodeTitle": "Human Evolution",
       "pid": "p003hyfl",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.2",
-        "C.2.a",
-        "C.2.b",
-        "C.2.c",
-        "C.2.d"
-      ],
-      "rationaleAI": "Directly covers the full arc of human evolution over six million years including Australopithecus, Homo habilis, Homo erectus, and Homo sapiens, the fossil record from East Africa, bipedalism, brain enlargement, and the Out of Africa hypothesis."
-    },
-    {
-      "episodeTitle": "Human Origins",
-      "pid": "p00546rl",
-      "relevantPathsAI": [
-        "A",
-        "B.2",
-        "C",
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Covers palaeoanthropological evidence for early hominin evolution, key fossil discoveries in Africa, the evolutionary significance of bipedalism and tool manufacture, and the relationship between Homo sapiens and Neanderthals."
+      "relevantPathsAI": ["A", "B.2", "C", "C.1", "C.2", "C.2.a", "C.2.c", "C.2.d"],
+      "rationaleAI": "Directly addresses human evolution over six million years, covering multiple hominin species from Australopithecus through Homo lineages, the fossil record, genetic and molecular methods for tracing evolutionary relationships, environmental drivers of speciation, and the distinctiveness of the modern human brain."
     },
     {
       "episodeTitle": "Homo erectus",
       "pid": "m00168lg",
-      "relevantPathsAI": [
-        "C.2.c"
-      ],
-      "rationaleAI": "Directly covers Homo erectus including its emergence in Africa, dispersal across Asia and Europe, increased brain size, Acheulean hand axes, fire control, and debates about species boundaries -- precisely corresponding to outline path C.2.c."
+      "relevantPathsAI": ["C.2.c", "C.1", "B.2.a", "B.2.b"],
+      "rationaleAI": "Focused examination of Homo erectus as a long-surviving hominin ancestor, covering Dubois's 1891 Java discovery, spread from Africa across Asia, evidence for diet, group living, endurance hunting, tool use, rudimentary communication, and debates about cooking and brain size expansion."
+    },
+    {
+      "episodeTitle": "Human Origins",
+      "pid": "p00546rl",
+      "relevantPathsAI": ["A", "C", "C.1", "C.2", "C.2.a", "C.2.d"],
+      "rationaleAI": "Synthesizes fossil and genetic evidence for Homo sapiens origins across fifteen to twenty hominin species from Australopithecus anamensis onward, the Out of Africa hypothesis, environmental drivers of speciation, and the extinction of other hominin lineages."
     },
     {
       "episodeTitle": "The Neanderthals",
       "pid": "b00sq1nv",
-      "relevantPathsAI": [
-        "C.2.d.ii"
-      ],
-      "rationaleAI": "Directly covers the Neanderthals including physical characteristics, tool-making, burial practices, adaptation to ice age climates, interbreeding with Homo sapiens, and extinction theories -- precisely corresponding to outline path C.2.d.ii."
+      "relevantPathsAI": ["C.2.d.ii", "B.2.a", "B.2.b", "B.2.c"],
+      "rationaleAI": "Detailed treatment of Neanderthals from their 1856 Neander Valley discovery through their 400,000-year habitation of Europe and Central Asia, covering tool manufacture, burial practices, cognitive and language debates, extinction hypotheses, and genomic evidence of hybridization with Homo sapiens."
     },
     {
       "episodeTitle": "Cave Art",
       "pid": "m000mqn7",
-      "relevantPathsAI": [
-        "C.2.d.iii"
-      ],
-      "rationaleAI": "Upper Paleolithic cave art (Lascaux, Chauvet, Altamira) was produced by Cro-Magnon (anatomically modern) humans, and the episode covers what the art reveals about cognitive development and symbolic thinking in early Homo sapiens."
+      "relevantPathsAI": ["C.2.d.ii", "C.2.d.iii", "B.2.b"],
+      "rationaleAI": "Stone Age cave art at Chauvet and Lascaux produced by Cro-Magnon humans, with debate over whether Neanderthals also created such images, directly bearing on inferred behavioral characteristics and cognitive capacities distinguishing hominin species."
     },
     {
-      "episodeTitle": "The Evolution of Teeth",
-      "pid": "m0003zbg",
-      "relevantPathsAI": [
-        "B.2.a",
-        "C.1"
-      ],
-      "rationaleAI": "The evolution of teeth covers human dental evolution and what fossil teeth reveal about evolutionary history -- directly relevant to morphological characteristics of Hominidae and the discovery of the hominid fossil record."
+      "episodeTitle": "Darwin: On the Origin of Species",
+      "pid": "b00gd3wy",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "The publication and reception of Darwin's theory of natural selection, the foundational mechanism underlying the evolutionary process that produced the hominid lineage, including Wallace's parallel discovery and the cultural upheaval that followed."
     },
     {
-      "episodeTitle": "Alfred Russel Wallace",
-      "pid": "b01r9rxr",
-      "relevantPathsAI": [
-        "A",
-        "B.1.c"
-      ],
-      "rationaleAI": "Alfred Russel Wallace's identification of the Wallace Line and his work on biogeography and evolution, including his divergence from Darwin on human evolution specifically, is relevant to the evolutionary process and primate paleontology."
+      "episodeTitle": "Darwin: The Voyage of the Beagle",
+      "pid": "b00gbf2g",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Darwin's geological and biological observations during the Beagle voyage provided the empirical foundations for natural selection theory, the core mechanism driving the evolutionary process that shaped the hominid lineage."
     },
     {
       "episodeTitle": "Lamarck and Natural Selection",
       "pid": "p005495d",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "Lamarck's pre-Darwinian evolutionary theory and the distinction between Lamarckism and natural selection, with modern reassessments through epigenetics, provide foundational context for understanding the evolutionary process."
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Lamarck's transformist theory and his debate with Darwin over evolutionary mechanisms represent foundational competing explanations of the evolutionary process underlying human origins."
     },
     {
-      "episodeTitle": "Feathered Dinosaurs",
-      "pid": "b099v33p",
-      "relevantPathsAI": [
-        "B.1.c"
-      ],
-      "rationaleAI": "Feathered dinosaurs establishing the link between theropod dinosaurs and birds illustrate the evolutionary paleontology of vertebrates and provide context for understanding the broader primate evolutionary tree."
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": ["A", "B"],
+      "rationaleAI": "The development of genetics from Mendel through the Modern Synthesis and DNA discovery provides the molecular framework for understanding heredity, evolutionary relationships among primates, and the genetic basis of human evolutionary divergence."
+    },
+    {
+      "episodeTitle": "Evolution",
+      "pid": "p00545gl",
+      "relevantPathsAI": ["A", "B.2.c"],
+      "rationaleAI": "Directly addresses whether humans continue to evolve, what genetic similarity between humans and apes means for understanding human distinctiveness, and the implications of DNA for evolutionary biology."
+    },
+    {
+      "episodeTitle": "Mammals",
+      "pid": "p003k9ds",
+      "relevantPathsAI": ["B.1.c", "B.1"],
+      "rationaleAI": "Cenozoic mammalian diversification following the KT extinction, continental drift enabling distinct evolutionary radiations, and the evolution of increasing brain-to-body ratios culminating in primate intelligence provide the broader evolutionary context for primate and hominid emergence."
+    },
+    {
+      "episodeTitle": "Fossils",
+      "pid": "p00547d3",
+      "relevantPathsAI": ["C.1"],
+      "rationaleAI": "Paleontological methods including mass spectrometry, electron microscopy, and X-ray analysis that enable fossil interpretation are directly relevant to the discovery and recognition of the hominid fossil record."
+    },
+    {
+      "episodeTitle": "Chance and Design",
+      "pid": "p00548td",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Gould's argument that replaying evolutionary history would produce entirely different outcomes directly engages the contingency of the evolutionary process that produced Homo sapiens, a core question in understanding human evolution's trajectory."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,33 +2,23 @@
   "sectionCode": "121",
   "mappings": [
     {
+      "episodeTitle": "Carbon",
+      "pid": "p003c1cj",
+      "relevantPathsAI": [
+        "B.5",
+        "D.3"
+      ],
+      "rationaleAI": "Carbon: carbon group element (B.5), carbon-nitrogen cycle in stars (D.3)."
+    },
+    {
       "episodeTitle": "Chemical Elements",
       "pid": "p00546sz",
       "relevantPathsAI": [
         "A",
         "B",
-        "C.2"
+        "D"
       ],
-      "rationaleAI": "The history from Greek elements through Mendeleev's periodic table directly addresses the systematic classification of elements (A), groups of elements (B), and the distinction between stable and radioactive elements (C.2)."
-    },
-    {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "B.5",
-        "C.1",
-        "D.1.d"
-      ],
-      "rationaleAI": "Carbon's tetravalency, allotropes (diamond, graphite, fullerenes), and role as the basis of organic chemistry and the biosphere directly address the carbon group (B.5), nonmetal classification (C.1), and elements in the biosphere (D.1.d)."
-    },
-    {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
-      "relevantPathsAI": [
-        "B.7",
-        "D.1.c"
-      ],
-      "rationaleAI": "The discovery of oxygen and its role in combustion, respiration, and Earth's atmosphere directly addresses the oxygen group elements (B.7) and elements in the atmosphere (D.1.c)."
+      "rationaleAI": "Chemical elements: periodic table, Big Bang H/He production (A, B, D)."
     },
     {
       "episodeTitle": "Water",
@@ -36,27 +26,68 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Water's molecular structure, hydrogen bonding, and unique physical properties directly address hydrogen and its compounds, specifically water's structure, forms, and properties (B.1)."
+      "rationaleAI": "Water: hydrogen compound properties (B.1)."
     },
     {
-      "episodeTitle": "John Dalton",
-      "pid": "b07zzy8b",
+      "episodeTitle": "The Curies",
+      "pid": "b05n1dmt",
       "relevantPathsAI": [
-        "A",
-        "B"
-      ],
-      "rationaleAI": "Dalton's atomic theory proposing elements consist of atoms with characteristic weights and his atomic weight tables contributed foundationally to the systematic classification of elements (A) and understanding element groups (B)."
-    },
-    {
-      "episodeTitle": "Alchemy",
-      "pid": "p003k9bn",
-      "relevantPathsAI": [
-        "A",
+        "C.2",
         "C.5"
       ],
-      "rationaleAI": "Alchemy's pursuit of transmutation and its role in the development of modern chemistry provides historical context for element classification (A) and connects to the concept of synthetic/transformed elements (C.5)."
+      "rationaleAI": "Curies: radioactive elements (C.2), synthetic isotopes (C.5)."
+    },
+    {
+      "episodeTitle": "Lise Meitner",
+      "pid": "m002bt7s",
+      "relevantPathsAI": [
+        "B.13",
+        "C.2"
+      ],
+      "rationaleAI": "Meitner: uranium/actinides (B.13), radioactive elements (C.2)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Pauli exclusion: periodic table structure (A)."
+    },
+    {
+      "episodeTitle": "The Life of Stars",
+      "pid": "p00548w8",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Life of stars: stellar nucleosynthesis of heavy elements (D.3)."
+    },
+    {
+      "episodeTitle": "The Death of Stars",
+      "pid": "m0018128",
+      "relevantPathsAI": [
+        "D.3"
+      ],
+      "rationaleAI": "Death of stars: supernova nucleosynthesis (D.3)."
+    },
+    {
+      "episodeTitle": "The Proton",
+      "pid": "b09zt3mr",
+      "relevantPathsAI": [
+        "B.1",
+        "D.3"
+      ],
+      "rationaleAI": "Proton: hydrogen as simplest element (B.1), stellar element formation (D.3)."
+    },
+    {
+      "episodeTitle": "Oxygen",
+      "pid": "b0088nql",
+      "relevantPathsAI": [
+        "B.7"
+      ],
+      "rationaleAI": "Oxygen: oxygen group element discovery (B.7)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

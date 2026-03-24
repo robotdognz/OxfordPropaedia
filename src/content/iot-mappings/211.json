@@ -2,31 +2,24 @@
   "sectionCode": "211",
   "mappings": [
     {
-      "episodeTitle": "The Moon",
-      "pid": "b016lh15",
+      "episodeTitle": "Ptolemy and Ancient Astronomy",
+      "pid": "b017528d",
       "relevantPathsAI": [
-        "A.2.c"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "The Moon's tidal effects on Earth directly address tidal friction (A.2.c) as a dynamic effect related to Earth's rotation."
+      "rationaleAI": "Ptolemy's geocentric model in the Almagest used mathematical systems of epicycles and deferents to explain observed motions of the Sun, Moon, and planets from Earth, representing the foundational attempt to describe Earth's relationship to celestial bodies and the apparent revolution of the heavens—the historical precursor to understanding Earth's own revolution about the Sun (A.1)."
     },
     {
-      "episodeTitle": "al-Biruni",
-      "pid": "b00smnlk",
+      "episodeTitle": "The Antikythera Mechanism",
+      "pid": "m0024x0g",
       "relevantPathsAI": [
-        "B.2",
-        "B.3"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Al-Biruni's pioneering geodesic measurement of Earth's radius directly addresses the development of improved approximations to Earth's size and shape (B.2) and measurement of geodetic parameters (B.3)."
-    },
-    {
-      "episodeTitle": "Meteorology",
-      "pid": "p00548v8",
-      "relevantPathsAI": [
-        "A.2.a"
-      ],
-      "rationaleAI": "Meteorology covering atmospheric dynamics including the Coriolis force's effect on weather systems addresses the Coriolis force (A.2.a) as related to Earth's rotation."
+      "rationaleAI": "This ancient astronomical computer calculated positions of the sun, moon, and known planets while tracking eclipse cycles, encoding the orbital relationships between Earth and other solar system bodies. Its modeling of celestial mechanics reflects early quantitative approaches to Earth's revolution and rotational periodicity (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

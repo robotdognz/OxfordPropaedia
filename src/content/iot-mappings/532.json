@@ -2,98 +2,132 @@
   "sectionCode": "532",
   "mappings": [
     {
+      "episodeTitle": "Materialism and the Consumer",
+      "pid": "p00546q2",
+      "relevantPathsAI": ["B", "B.2", "C.4"],
+      "rationaleAI": "Directly addresses consumer culture, how markets, department stores, and advertising shape consumer identity and spending (B.2), and the broader relationship between markets, social participation, and democratic expression (C.4)."
+    },
+    {
       "episodeTitle": "The Wealth of Nations",
       "pid": "b052ln55",
-      "relevantPathsAI": [
-        "C.4",
-        "D.1"
-      ],
-      "rationaleAI": "The Wealth of Nations covers the invisible hand of market self-regulation, free trade against mercantilism, the role of self-interest in generating public benefit, and the proper functions of government, directly addressing the historical development of markets and the price system."
+      "relevantPathsAI": ["A", "C.4", "C.6", "D.1"],
+      "rationaleAI": "Adam Smith's foundational work established classical theories of free markets, division of labor, and the price mechanism as an organizer of economic activity (D.1), including supply-demand equilibrium (C.6) and the role of self-interest in market function (C.4)."
     },
     {
-      "episodeTitle": "Capitalism",
-      "pid": "p00545kv",
-      "relevantPathsAI": [
-        "C.1",
-        "C.4",
-        "D.1"
-      ],
-      "rationaleAI": "Capitalism traces market development from mercantilism through industrial capitalism to global finance, covering debates over market efficiency and inequality, directly addressing markets classified by competition, the historical development of markets, and the price system."
+      "episodeTitle": "The Physiocrats",
+      "pid": "b02x97k6",
+      "relevantPathsAI": ["C.4", "D.1"],
+      "rationaleAI": "The Physiocrats pioneered laissez-faire doctrine opposing mercantilist market restrictions and Quesnay's Tableau Economique modelled economic circulation as a system, contributing directly to the historical development of market theory (C.4) and understanding of how the price system organizes production (D.1)."
     },
     {
-      "episodeTitle": "The Theory of the Leisure Class",
-      "pid": "m001sdrt",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Veblen's analysis of conspicuous consumption, emulation driving consumer behaviour, and the distinction between industrial and pecuniary employments directly addresses factors influencing consumers' tastes and spending."
+      "episodeTitle": "The Gold Standard",
+      "pid": "m0013hh7",
+      "relevantPathsAI": ["C.2.c", "C.5"],
+      "rationaleAI": "The gold standard governed international monetary exchange and capital markets (C.2.c) by tying currencies to fixed gold quantities, directly facilitating international trade flows (C.5) and constraining monetary policy with consequences for market stability."
     },
     {
-      "episodeTitle": "David Ricardo",
-      "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "C.4",
-        "C.5",
-        "D.1"
-      ],
-      "rationaleAI": "Ricardo's comparative advantage, labor theory of value, and arguments for free trade directly address the historical development of markets, markets in international trade, and the price system."
-    },
-    {
-      "episodeTitle": "Hayek's The Road to Serfdom",
-      "pid": "m0023x87",
-      "relevantPathsAI": [
-        "C.1.d",
-        "C.3"
-      ],
-      "rationaleAI": "Hayek's critique of centralized planning versus free market liberalism directly addresses government regulation of monopolistic practices and the counterpart of the market under full-scale economic planning."
-    },
-    {
-      "episodeTitle": "The Fable of the Bees",
-      "pid": "m0000t3y",
-      "relevantPathsAI": [
-        "B.2",
-        "C.4"
-      ],
-      "rationaleAI": "Mandeville's thesis that luxury and self-interest drive economic prosperity addresses factors influencing consumers' tastes and the historical relationship of the market to social welfare."
-    },
-    {
-      "episodeTitle": "The Dutch East India Company",
-      "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "C.2.c",
-        "C.4",
-        "C.5"
-      ],
-      "rationaleAI": "The Dutch East India Company's monopoly on trade, the spice trade, and the Amsterdam Stock Exchange directly address markets for money and capital, the historical development of markets, and markets in international trade."
-    },
-    {
-      "episodeTitle": "The East India Company",
-      "pid": "p0054906",
-      "relevantPathsAI": [
-        "C.2.a",
-        "C.5"
-      ],
-      "rationaleAI": "The East India Company's origins in the spice trade and rivalry with the Dutch VOC directly address markets for primary commodities and markets in international trade."
+      "episodeTitle": "The Corn Laws",
+      "pid": "b03dvbyk",
+      "relevantPathsAI": ["C.1.d", "C.2.a", "C.4", "C.5", "D.2.b"],
+      "rationaleAI": "Corn Law tariffs on grain markets (C.2.a) represented government price regulation (D.2.b) and monopolistic protection of landed interests (C.1.d); repeal marked Britain's decisive shift toward free trade (C.5) and reshaped the political relationship between markets and social welfare (C.4)."
     },
     {
       "episodeTitle": "The South Sea Bubble",
       "pid": "b01pcs5g",
-      "relevantPathsAI": [
-        "C.2.c",
-        "C.4"
-      ],
-      "rationaleAI": "The South Sea Bubble covers speculative mania in securities, financial innovation, crowd psychology, and inadequate regulation, directly addressing markets for money and capital and the historical development of markets."
+      "relevantPathsAI": ["C.2.c", "C.4", "D.2"],
+      "rationaleAI": "The South Sea Bubble exemplifies speculative failure in capital and securities markets (C.2.c), exposing limitations of the price system through information asymmetry and fraud (D.2), and prompted early financial regulation marking a key moment in the historical development of market institutions (C.4)."
+    },
+    {
+      "episodeTitle": "The Theory of the Leisure Class",
+      "pid": "m001sdrt",
+      "relevantPathsAI": ["A", "B.2"],
+      "rationaleAI": "Veblen's theory of conspicuous consumption directly analyzes how status-seeking and wasteful display shape consumer spending patterns (B.2), challenging classical assumptions about utility and value in consumer behavior (A)."
+    },
+    {
+      "episodeTitle": "Game Theory",
+      "pid": "b01h75xp",
+      "relevantPathsAI": ["C.1.a", "C.1.b"],
+      "rationaleAI": "Game theory provides the mathematical framework for analyzing strategic behavior in market competition, including oligopoly pricing, negotiation, and seller behavior under various competitive conditions (C.1.b), directly modeling outcomes in imperfectly competitive markets (C.1.a)."
+    },
+    {
+      "episodeTitle": "Hayek's The Road to Serfdom",
+      "pid": "m0023x87",
+      "relevantPathsAI": ["C.3", "D.1", "D.2.b"],
+      "rationaleAI": "Hayek argued that centralized economic planning suppresses the dispersed individual knowledge essential to functioning markets (D.1), positioning free markets against socialist planning (C.3) and government price intervention (D.2.b) as safeguards of both liberty and economic efficiency."
     },
     {
       "episodeTitle": "Economic Rights",
       "pid": "p00546m7",
-      "relevantPathsAI": [
-        "C.4",
-        "D.2.b"
-      ],
-      "rationaleAI": "Economic rights debates over free markets versus social welfare and the welfare state directly address the historical relationship of the market to social welfare and government-established price controls and subsidies."
+      "relevantPathsAI": ["C.4", "D.1"],
+      "rationaleAI": "Directly examines the relationship between capitalism, democracy, and market function, including Friedman's argument for market efficiency (D.1) and Sen's work on economic justice, addressing whether market forces serve or undermine social welfare (C.4)."
+    },
+    {
+      "episodeTitle": "Weber's The Protestant Ethic",
+      "pid": "b03yqj31",
+      "relevantPathsAI": ["C.4"],
+      "rationaleAI": "Weber's thesis on how Calvinist theology fostered disciplined labor and systematic profit reinvestment addresses the cultural and historical origins of capitalist market behavior, directly relevant to the historical development of markets and their relationship to social values (C.4)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": ["C.2.a", "C.4"],
+      "rationaleAI": "Enclosure converted common land into private property, creating markets in primary commodities (C.2.a) and displacing labor into wage markets, exemplifying how the historical development of property rights and market institutions reshaped economic organization (C.4)."
+    },
+    {
+      "episodeTitle": "The Great Exhibition of 1851",
+      "pid": "p003c19x",
+      "relevantPathsAI": ["C.2.b", "C.4", "C.5"],
+      "rationaleAI": "The first international exhibition of manufactured goods showcased markets for manufactured products (C.2.b) and embodied mid-Victorian free trade ideology (C.5), marking a pivotal moment in the historical development of international markets and commercial display (C.4)."
+    },
+    {
+      "episodeTitle": "Money",
+      "pid": "p00547ch",
+      "relevantPathsAI": ["A", "C.2.c"],
+      "rationaleAI": "Examines money as medium of exchange, store of value, and symbol of power from ancient coinage to modern capitalism, directly relevant to pricing mechanisms and value theory (A) and the functioning of money and capital markets (C.2.c)."
+    },
+    {
+      "episodeTitle": "Coffee",
+      "pid": "m000c4x1",
+      "relevantPathsAI": ["C.2.a", "C.4", "C.5"],
+      "rationaleAI": "Coffee as a globally traded primary commodity (C.2.a) illustrates colonial trade networks and international markets (C.5), with coffee houses fostering the commercial culture that shaped early modern market institutions (C.4)."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["B.2", "C.4"],
+      "rationaleAI": "The Frankfurt School's critical theory argued that mass culture functions to maintain capitalist social conformity, directly analyzing how media and cultural production shape consumer tastes and spending (B.2) and critiquing the market's relationship to social welfare (C.4)."
+    },
+    {
+      "episodeTitle": "The Medici",
+      "pid": "b03m7z08",
+      "relevantPathsAI": ["C.2.c", "C.4"],
+      "rationaleAI": "The Medici's international banking operations represent early capital markets (C.2.c), and their transformation of financial wealth into political and cultural power illustrates the historical development of markets and their relationship to social institutions (C.4)."
+    },
+    {
+      "episodeTitle": "Consequences of the Industrial Revolution",
+      "pid": "b00wr9r7",
+      "relevantPathsAI": ["B.1", "C.4"],
+      "rationaleAI": "Examines how industrialization created consumer society and transformed consumption patterns through mass production and urbanization (B.1), with new economic theories developed to address market realities including urban living and changing labor-market relations (C.4)."
+    },
+    {
+      "episodeTitle": "The Empire of Mali",
+      "pid": "b06kgggv",
+      "relevantPathsAI": ["C.2.a", "C.4", "C.5"],
+      "rationaleAI": "Mali's control of trans-Saharan gold trade routes linking West African mines to Mediterranean markets exemplifies primary commodity markets (C.2.a) and long-distance international trade (C.5), with Mansa Musa's gold distribution affecting commodity prices in Cairo, illustrating supply-demand dynamics in medieval economies (C.4)."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["A", "C.6"],
+      "rationaleAI": "Malthus's theory of population outstripping food supply directly addresses scarcity as a fundamental economic concept (A), and his analysis of resource constraints shaped classical economics including theories of market equilibrium between supply and demand (C.6)."
+    },
+    {
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["C.2.b", "C.4"],
+      "rationaleAI": "Mechanized production, factory organization, and colonial markets transformed the production and distribution of manufactured goods (C.2.b), fundamentally reshaping market structures and the historical development of capitalist market institutions (C.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

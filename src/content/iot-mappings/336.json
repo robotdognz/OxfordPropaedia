@@ -4,63 +4,34 @@
     {
       "episodeTitle": "The Evolution of Lungs",
       "pid": "m002d8t2",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3.b",
-        "A.4",
-        "A.5",
-        "A.6"
-      ],
-      "rationaleAI": "Directly addresses the evolution of lungs as respiratory organs in vertebrates, the mechanics of ventilation, the vagus nerve's role in respiratory control, and respiratory adaptations across environments including the diaphragm in mammals and unidirectional airflow in birds."
-    },
-    {
-      "episodeTitle": "Blood",
-      "pid": "p00548ym",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.b",
-        "B.2.c",
-        "B.3.b"
-      ],
-      "rationaleAI": "Covers blood components (red cells, white cells, platelets, plasma), blood typing and transfusion, Harvey's discovery of circulation, and the history of understanding cardiovascular physiology -- directly relevant to circulatory fluid media and vertebrate circulatory systems."
-    },
-    {
-      "episodeTitle": "Cephalopods",
-      "pid": "b09pjgrn",
-      "relevantPathsAI": [
-        "B.2.c",
-        "B.3.a"
-      ],
-      "rationaleAI": "Cephalopods possess three hearts, blue copper-based blood, and jet propulsion -- illustrating invertebrate circulatory systems with distinctive formed elements and transport mechanisms."
+      "relevantPathsAI": ["A", "A.1", "A.3.b", "A.4", "A.6"],
+      "rationaleAI": "Directly addresses the evolution of vertebrate respiratory organs over 400 million years, including the transition from aquatic to terrestrial gas exchange, buccal pumping mechanisms in amphibians, and the repurposing of swimming musculature to operate lungs as bellows — spanning respiratory structures (A.3.b), respiratory dynamics (A.4), and adaptation to environmental conditions (A.6)."
     },
     {
       "episodeTitle": "The Fish-Tetrapod Transition",
       "pid": "m001d56q",
-      "relevantPathsAI": [
-        "A.3.b",
-        "A.6"
-      ],
-      "rationaleAI": "The fish-tetrapod transition covers the evolution of air-breathing and adaptation to terrestrial environments, directly relevant to the development of vertebrate respiratory organs (gills to lungs) and adaptation to special environmental conditions."
+      "relevantPathsAI": ["A.3.b", "A.6"],
+      "rationaleAI": "The evolution of lungs from swim bladders and the transformation of respiratory systems during the Devonian water-to-land transition directly illustrates the development of vertebrate respiratory organs (A.3.b) and adaptation to the fundamentally different gas-exchange demands of terrestrial environments (A.6)."
     },
     {
-      "episodeTitle": "The Nervous System",
-      "pid": "b00y9283",
-      "relevantPathsAI": [
-        "A.5"
-      ],
-      "rationaleAI": "The nervous system episode covers reflex arcs, the autonomic nervous system (sympathetic and parasympathetic), and neural control pathways -- directly relevant to the neural reflexes controlling respiration."
+      "episodeTitle": "The Whale - A History",
+      "pid": "b00kfqm6",
+      "relevantPathsAI": ["A.3.b", "A.6"],
+      "rationaleAI": "The whale lineage's reversal from terrestrial to fully aquatic life required profound respiratory adaptations for breath-holding and diving, exemplifying vertebrate respiratory organ modification (A.3.b) and adaptation to special aquatic environmental conditions (A.6)."
     },
     {
-      "episodeTitle": "Photosynthesis",
-      "pid": "b0435jyv",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Photosynthesis covers the fundamental process of oxygen production and carbon dioxide consumption by plants, the complementary side of the gas exchange equation described in A.1."
+      "episodeTitle": "Bird Migration",
+      "pid": "b08wmk5j",
+      "relevantPathsAI": ["A.3.b", "A.4", "A.6"],
+      "rationaleAI": "Sustained migratory flight across hemispheres demands exceptional respiratory efficiency, reflecting the uniquely effective avian respiratory system with unidirectional airflow (A.3.b), the dynamics of continuous high-output gas exchange during prolonged flight (A.4), and physiological adaptation to extreme aerobic demands at altitude (A.6)."
+    },
+    {
+      "episodeTitle": "Mitochondria",
+      "pid": "m001md34",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Mitochondria are the primary sites of aerobic respiration where oxygen is consumed and carbon dioxide produced at the cellular level — the biochemical endpoint of the organismal gas exchange process described in A.1, linking respiratory system function to cellular energy metabolism."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

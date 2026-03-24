@@ -2,74 +2,90 @@
   "sectionCode": "536",
   "mappings": [
     {
-      "episodeTitle": "Capitalism",
-      "pid": "p00545kv",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2",
-        "A.4",
-        "B"
-      ],
-      "rationaleAI": "Capitalism's development from mercantilism through industrial capitalism to global finance directly addresses factors influencing economic growth (markets, capital supply), theories of growth, and the relationship between state planning and market systems including Keynesian interventionism."
-    },
-    {
       "episodeTitle": "The Industrial Revolution",
       "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4.a"
-      ],
-      "rationaleAI": "The Industrial Revolution's key innovations in manufacturing and enabling factors (coal, capital markets, agricultural revolution, colonial trade) constitute a foundational case study in the causes and factors of economic growth and GDP expansion."
+      "relevantPathsAI": ["A.1", "A.3", "A.5"],
+      "rationaleAI": "Mechanized production, steam power, available capital, patent law, colonial markets, and factory organization illustrate key factors driving economic growth (A.1), while transformed labor relations, class structures, and living conditions demonstrate the social costs and benefits of growth (A.3) and dramatic changes in economic productivity through industrialization (A.5)."
     },
     {
-      "episodeTitle": "The Enclosures of the 18th Century",
-      "pid": "b00b1m9b",
-      "relevantPathsAI": [
-        "A.1",
-        "A.5"
-      ],
-      "rationaleAI": "The enclosure movement's consolidation of land into private holdings for improved agricultural efficiency, and its relationship to the Industrial Revolution's labour supply, directly addresses factors influencing economic growth and changes in economic productivity."
+      "episodeTitle": "Consequences of the Industrial Revolution",
+      "pid": "b00wr9r7",
+      "relevantPathsAI": ["A.3", "A.5"],
+      "rationaleAI": "Industrial growth's effects on health, housing, and labor relations as workers shifted from agriculture to factory towns directly address the social costs and benefits of economic growth (A.3), and theories originated to deal with mass production and consumer society reflect analysis of changing economic productivity and output (A.5)."
     },
     {
-      "episodeTitle": "Hayek's The Road to Serfdom",
-      "pid": "m0023x87",
-      "relevantPathsAI": [
-        "A.2",
-        "B.1",
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "Hayek's Road to Serfdom directly argues that centralized economic planning leads to totalitarianism, engaging with the nature of economic planning, its application in Communist and non-Communist countries, and the theoretical debate between planned and market economies."
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["A.4.a", "A.4.b", "A.3"],
+      "rationaleAI": "Malthus's thesis that population grows geometrically while food supply increases arithmetically directly addresses the relationship between GDP growth and population growth in developing economies (A.4.a), and constitutes a foundational theory of economic development and retardation (A.4.b), with broader implications for the social costs of growth (A.3)."
     },
     {
-      "episodeTitle": "Economic Rights",
-      "pid": "p00546m7",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "B.3"
-      ],
-      "rationaleAI": "Economic rights explores whether political freedom requires economic freedom, the welfare state as compromise, the Asian developmental state model, and economic globalization's impact on sovereignty -- all bearing on social costs of growth and planning in developing and developed countries."
+      "episodeTitle": "Capitalism",
+      "pid": "p00545kv",
+      "relevantPathsAI": ["A.1", "A.2", "A.3"],
+      "rationaleAI": "Marx's analysis of capitalism's dynamics of constant revolutionary production and economic disruption addresses theoretical foundations of economic growth (A.2), factors driving capitalist expansion including markets and capital (A.1), and the social costs of unfettered capitalism (A.3)."
     },
     {
-      "episodeTitle": "The Fable of the Bees",
-      "pid": "m0000t3y",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Mandeville's thesis that private vices produce public benefits and its influence on Adam Smith's invisible hand concept represent an early theoretical model of how self-interest drives economic growth and prosperity."
+      "episodeTitle": "Marx",
+      "pid": "p003k9jg",
+      "relevantPathsAI": ["A.2", "B.2"],
+      "rationaleAI": "Historical materialism, class struggle, surplus value, and the analysis of capitalism's internal contradictions in Das Kapital constitute foundational economic growth theory (A.2), while Marx's revolutionary framework provided the intellectual basis for Communist economic planning systems (B.2)."
     },
     {
       "episodeTitle": "Lenin",
       "pid": "p00546pv",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Lenin's War Communism and New Economic Policy represent foundational examples of economic planning in Communist countries, directly addressing centrally planned approaches to economic growth and state control of production."
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Lenin's invention of the one-party state, establishment of Bolshevik governance, and implementation of the New Economic Policy represent the foundational model of Communist economic planning that endured over seventy years (B.2)."
+    },
+    {
+      "episodeTitle": "Weber's The Protestant Ethic",
+      "pid": "b03yqj31",
+      "relevantPathsAI": ["A.1", "A.4.b"],
+      "rationaleAI": "Weber's thesis that Calvinist doctrines fostered disciplined labor and systematic reinvestment of profit identifies cultural values as a factor influencing economic growth (A.1), and the debate over why capitalism developed most vigorously in Protestant northern Europe constitutes a major theory of differential national economic development (A.4.b)."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": ["A.4.b", "A.1"],
+      "rationaleAI": "The question of why modern science and technology developed in Europe rather than China, explained through institutional structures, property rights, competitive state systems, and mercantile enterprise, is a paradigmatic case study in theories of national economic development and retardation (A.4.b) and identifies institutional factors influencing economic growth (A.1)."
+    },
+    {
+      "episodeTitle": "The Corn Laws",
+      "pid": "b03dvbyk",
+      "relevantPathsAI": ["A.1", "B.3"],
+      "rationaleAI": "The imposition and repeal of grain tariffs illustrates how governmental fiscal policies and market mechanisms influence economic growth (A.1), and the shift from protectionism to free trade under organized political pressure exemplifies economic policy planning in a developed non-Communist country (B.3)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": ["A.1", "A.3", "A.5"],
+      "rationaleAI": "Conversion of common lands into private holdings enabled the Agricultural Revolution through efficient consolidated farming (A.5) and mobilized capital and displaced rural labor into urban wage work (A.1), while dispossession of smallholders and class formation illustrate the social costs of growth (A.3)."
+    },
+    {
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
+      "relevantPathsAI": ["A.4.b"],
+      "rationaleAI": "Jared Diamond's thesis that geographic and ecological factors -- domesticable plants, continental axis orientation, disease exposure -- determined why some civilizations developed complex technologies while others did not constitutes a major theory of national economic development and retardation (A.4.b)."
+    },
+    {
+      "episodeTitle": "Information Technology",
+      "pid": "p00546lm",
+      "relevantPathsAI": ["A.1", "A.3"],
+      "rationaleAI": "The IT revolution framed as a third wave following agricultural and industrial revolutions illustrates technology as a primary factor driving economic growth (A.1), while debates over digital divides, workplace transformation, and threats to democratic institutions address the social costs and benefits of technology-driven growth (A.3)."
+    },
+    {
+      "episodeTitle": "Rosa Luxemburg",
+      "pid": "b08lfc77",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Luxemburg's political writings on mass strike theory, critiques of Bolshevik centralism, and the relationship between democracy and socialism address foundational debates about the nature and methods of Communist economic and political planning (B.2)."
+    },
+    {
+      "episodeTitle": "Economic Rights",
+      "pid": "p00546m7",
+      "relevantPathsAI": ["A.3", "A.4"],
+      "rationaleAI": "Amartya Sen's work on economic justice and the debate over whether countries can prosper without liberal constitutions address economic growth in developing countries (A.4), while the tension between globalised capital and human rights explores social costs and benefits of economic growth (A.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

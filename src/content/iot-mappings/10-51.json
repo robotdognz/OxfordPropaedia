@@ -2,36 +2,13 @@
   "sectionCode": "10/51",
   "mappings": [
     {
-      "episodeTitle": "Stoicism",
-      "pid": "p003k9fs",
-      "relevantPathsAI": [
-        "A.1.c.i"
-      ],
-      "rationaleAI": "Stoicism from Zeno through Chrysippus, Epictetus, Seneca, and Marcus Aurelius directly covers the philosophy of the Stoics (A.1.c.i)."
-    },
-    {
-      "episodeTitle": "Epicureanism",
-      "pid": "b01qf083",
-      "relevantPathsAI": [
-        "A.1.c.ii"
-      ],
-      "rationaleAI": "Epicureanism from Epicurus through Lucretius covers the teaching of Epicurus concerning the universe, pleasure, and man's relationship to gods (A.1.c.ii)."
-    },
-    {
-      "episodeTitle": "Scepticism",
-      "pid": "b01kblc3",
-      "relevantPathsAI": [
-        "A.1.c.iii"
-      ],
-      "rationaleAI": "Scepticism from Pyrrho through Sextus Empiricus covers the teaching of Pyrrhon concerning man's lack of certainty (A.1.c.iii) and the preservation of ancient doctrines."
-    },
-    {
       "episodeTitle": "Neoplatonism",
       "pid": "b01g62w1",
       "relevantPathsAI": [
-        "A.1.c.iv"
+        "A.1.c.iv",
+        "A.1.c.v"
       ],
-      "rationaleAI": "Neoplatonism from Plotinus through Porphyry and Proclus covers the teaching of Plotinus concerning levels of being (A.1.c.iv) and Neo-Pythagorean schools."
+      "rationaleAI": "Neoplatonism: philosophy of Neoplatonists, Jewish/Christian philosophy."
     },
     {
       "episodeTitle": "St Thomas Aquinas",
@@ -39,31 +16,86 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Aquinas's synthesis of Aristotelianism and Christian theology directly covers the age of the Schoolmen (A.2.c)."
+      "rationaleAI": "Aquinas: age of Schoolmen, reconciling philosophy and theology."
     },
     {
-      "episodeTitle": "Averroes",
-      "pid": "p0038x79",
+      "episodeTitle": "Roger Bacon",
+      "pid": "b08m8z2w",
+      "relevantPathsAI": [
+        "A.2.d"
+      ],
+      "rationaleAI": "Roger Bacon: new philosophical styles vying with Thomism."
+    },
+    {
+      "episodeTitle": "Happiness",
+      "pid": "p005489g",
+      "relevantPathsAI": [
+        "A.1.b.ii",
+        "A.1.b.iii",
+        "A.1.c.i",
+        "A.1.c.ii"
+      ],
+      "rationaleAI": "Happiness: Plato, Aristotle, Stoics, Epicureans."
+    },
+    {
+      "episodeTitle": "Materialism",
+      "pid": "b009ydlj",
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.3.b.i",
+        "A.3.b.ii",
+        "A.3.d.ii"
+      ],
+      "rationaleAI": "Materialism: Democritus through Hobbes to Marx."
+    },
+    {
+      "episodeTitle": "Pythagoras",
+      "pid": "b00p693b",
+      "relevantPathsAI": [
+        "A.1.a.iii"
+      ],
+      "rationaleAI": "Pythagoras: metaphysics of number."
+    },
+    {
+      "episodeTitle": "Plato's Gorgias",
+      "pid": "m0011rzy",
+      "relevantPathsAI": [
+        "A.1.b.i",
+        "A.1.b.ii"
+      ],
+      "rationaleAI": "Plato's Gorgias: Socratic dialectic, ethics."
+    },
+    {
+      "episodeTitle": "Spinoza",
+      "pid": "b0079ps2",
+      "relevantPathsAI": [
+        "A.3.b.ii"
+      ],
+      "rationaleAI": "Spinoza: speculative Rationalist tradition."
+    },
+    {
+      "episodeTitle": "Epicureanism",
+      "pid": "b01qf083",
+      "relevantPathsAI": [
+        "A.1.c.ii"
+      ],
+      "rationaleAI": "Epicureanism."
+    },
+    {
+      "episodeTitle": "Maimonides",
+      "pid": "b00yjqz3",
       "relevantPathsAI": [
         "A.2.b"
       ],
-      "rationaleAI": "Averroes' commentaries on Aristotle and their influence on medieval scholasticism address the contribution of Arabic philosophy (A.2.b)."
+      "rationaleAI": "Maimonides: Arabic and Jewish philosophy."
     },
     {
-      "episodeTitle": "Avicenna",
-      "pid": "b00855lt",
+      "episodeTitle": "China's Warring States period",
+      "pid": "p004y24k",
       "relevantPathsAI": [
-        "A.2.b"
+        "B.2.a"
       ],
-      "rationaleAI": "Avicenna's synthesis of Aristotelian and Neoplatonic thought addresses the role of Islamic philosophers in increasing Aristotle's influence in the West (A.2.b)."
-    },
-    {
-      "episodeTitle": "Al-Kindi",
-      "pid": "b01k2bv8",
-      "relevantPathsAI": [
-        "A.2.b"
-      ],
-      "rationaleAI": "Al-Kindi's role in the translation movement and reconciliation of Greek philosophy with Islamic theology connects to Arabic philosophy's contribution (A.2.b)."
+      "rationaleAI": "Warring States: classical Chinese philosophy."
     },
     {
       "episodeTitle": "Empiricism",
@@ -72,15 +104,154 @@
         "A.3.b.i",
         "A.3.c.i"
       ],
-      "rationaleAI": "Empiricism from Locke through Hume covers developments in the Empiricist tradition (A.3.b.i) and Locke and Berkeley's inquiry into knowledge (A.3.c.i)."
+      "rationaleAI": "Empiricism: Locke, Hume."
     },
     {
-      "episodeTitle": "Spinoza",
-      "pid": "b0079ps2",
+      "episodeTitle": "Stoicism",
+      "pid": "p003k9fs",
       "relevantPathsAI": [
-        "A.3.b.ii"
+        "A.1.c.i"
       ],
-      "rationaleAI": "Spinoza's pantheistic Ethics and rationalist metaphysics cover developments in the Rationalist tradition (A.3.b.ii)."
+      "rationaleAI": "Stoicism."
+    },
+    {
+      "episodeTitle": "The 12th Century Renaissance",
+      "pid": "b07z6vzq",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "12th-century: Arabic Aristotle translations to West."
+    },
+    {
+      "episodeTitle": "The Translation Movement",
+      "pid": "b00dp4d8",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Translation Movement: Islamic philosophers preserving Aristotle."
+    },
+    {
+      "episodeTitle": "The Scientific Method",
+      "pid": "b01b1ljm",
+      "relevantPathsAI": [
+        "A.3.b.i",
+        "A.3.c.ii"
+      ],
+      "rationaleAI": "Scientific Method: Bacon, Popper."
+    },
+    {
+      "episodeTitle": "Baconian Science",
+      "pid": "b00jdb6c",
+      "relevantPathsAI": [
+        "A.3.b.i"
+      ],
+      "rationaleAI": "Baconian Science: empiricist tradition."
+    },
+    {
+      "episodeTitle": "Heraclitus",
+      "pid": "b017x3p4",
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Heraclitus: flux, logos, metaphysics of matter."
+    },
+    {
+      "episodeTitle": "Plato's Symposium",
+      "pid": "b03mhyzk",
+      "relevantPathsAI": [
+        "A.1.b.ii"
+      ],
+      "rationaleAI": "Plato's Symposium: Forms, desire, beauty."
+    },
+    {
+      "episodeTitle": "Plato's Atlantis",
+      "pid": "m001c6t3",
+      "relevantPathsAI": [
+        "A.1.b.ii"
+      ],
+      "rationaleAI": "Plato's Atlantis: politics, metaphysics."
+    },
+    {
+      "episodeTitle": "Pragmatism",
+      "pid": "p003k9f5",
+      "relevantPathsAI": [
+        "A.3.e.i"
+      ],
+      "rationaleAI": "Pragmatism: James, Dewey."
+    },
+    {
+      "episodeTitle": "Scepticism",
+      "pid": "b01kblc3",
+      "relevantPathsAI": [
+        "A.1.c.iii",
+        "A.3.c.i"
+      ],
+      "rationaleAI": "Scepticism: Pyrrhonian, Descartes, Hume."
+    },
+    {
+      "episodeTitle": "The Examined Life",
+      "pid": "p00548dx",
+      "relevantPathsAI": [
+        "A.1.b.i"
+      ],
+      "rationaleAI": "Socrates: examined life."
+    },
+    {
+      "episodeTitle": "The School of Athens",
+      "pid": "b00j7txt",
+      "relevantPathsAI": [
+        "A.3.a.ii"
+      ],
+      "rationaleAI": "School of Athens: Renaissance renewal of Plato."
+    },
+    {
+      "episodeTitle": "Al-Ghazali",
+      "pid": "b055j9rv",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Al-Ghazali: Islamic philosophy."
+    },
+    {
+      "episodeTitle": "Al-Kindi",
+      "pid": "b01k2bv8",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Al-Kindi: Islamic/Aristotelian philosophy."
+    },
+    {
+      "episodeTitle": "Aristotle's Politics",
+      "pid": "b00f8530",
+      "relevantPathsAI": [
+        "A.1.b.iii"
+      ],
+      "rationaleAI": "Aristotle's Politics."
+    },
+    {
+      "episodeTitle": "Socrates",
+      "pid": "b007zp21",
+      "relevantPathsAI": [
+        "A.1.b.i"
+      ],
+      "rationaleAI": "Socrates: dialectical method."
+    },
+    {
+      "episodeTitle": "Ockham's Razor",
+      "pid": "b007m0w4",
+      "relevantPathsAI": [
+        "A.2.d"
+      ],
+      "rationaleAI": "Ockham: nominalism, late medieval philosophy."
+    },
+    {
+      "episodeTitle": "Avicenna",
+      "pid": "b00855lt",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Avicenna: Islamic philosophy."
     },
     {
       "episodeTitle": "Hobbes",
@@ -89,161 +260,104 @@
         "A.3.a.i",
         "A.3.b.i"
       ],
-      "rationaleAI": "Hobbes's Leviathan and materialist philosophy cover political theory in the Renaissance (A.3.a.i) and developments in the Empiricist tradition (A.3.b.i)."
+      "rationaleAI": "Hobbes: political theory, empiricist tradition."
     },
     {
-      "episodeTitle": "Materialism",
-      "pid": "b009ydlj",
+      "episodeTitle": "The Social Contract",
+      "pid": "b008w3xm",
       "relevantPathsAI": [
-        "A.1.c.ii",
-        "A.3.b.ii",
-        "A.3.d.ii"
+        "A.3.a.i",
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Materialism from ancient atomism through dialectical materialism covers Epicurean atomism (A.1.c.ii), Rationalist developments (A.3.b.ii via Hobbes), and dialectical Materialism of Marx (A.3.d.ii)."
+      "rationaleAI": "Social Contract: Hobbes through Rousseau."
     },
     {
-      "episodeTitle": "Hegel's Philosophy of History",
-      "pid": "m0017k8w",
-      "relevantPathsAI": [
-        "A.3.d.i"
-      ],
-      "rationaleAI": "Hegel's philosophy of history and dialectical method address the Idealism of Hegel (A.3.d.i)."
-    },
-    {
-      "episodeTitle": "Existentialism",
-      "pid": "p00547h8",
-      "relevantPathsAI": [
-        "A.3.d.iii",
-        "A.3.e.i"
-      ],
-      "rationaleAI": "Existentialism from Kierkegaard and Nietzsche through Heidegger and Sartre covers the reaction against Rationalism (A.3.d.iii) and independent philosophies (A.3.e.i)."
-    },
-    {
-      "episodeTitle": "Pragmatism",
-      "pid": "p003k9f5",
-      "relevantPathsAI": [
-        "A.3.e.i"
-      ],
-      "rationaleAI": "Pragmatism from Peirce, James, and Dewey covers William James's and Dewey's Pragmatism (A.3.e.i)."
-    },
-    {
-      "episodeTitle": "David Hume",
-      "pid": "b015cpfp",
+      "episodeTitle": "Kant's Copernican Revolution",
+      "pid": "m000wlf4",
       "relevantPathsAI": [
         "A.3.c.i"
       ],
-      "rationaleAI": "Hume's radical empiricism, problem of induction, and critique of causation cover Hume's science of man (A.3.c.i)."
+      "rationaleAI": "Kant's Copernican Revolution."
     },
     {
-      "episodeTitle": "Virtue",
-      "pid": "p005489r",
+      "episodeTitle": "The Upanishads",
+      "pid": "b01nq7ct",
       "relevantPathsAI": [
-        "A.1.b.i",
-        "A.1.b.ii"
+        "B.1.a"
       ],
-      "rationaleAI": "Virtue from Socrates through Aristotle covers Socrates's ethical concerns (A.1.b.i) and Aristotle's ethics (A.1.b.iii)."
-    },
-    {
-      "episodeTitle": "The Soul",
-      "pid": "p00548g4",
-      "relevantPathsAI": [
-        "A.1.b.ii",
-        "A.1.c.iv",
-        "A.3.b.ii"
-      ],
-      "rationaleAI": "The soul from Plato through Descartes covers Platonic metaphysics (A.1.b.ii), Neoplatonist thought on levels of being (A.1.c.iv), and Cartesian dualism (A.3.b.ii)."
-    },
-    {
-      "episodeTitle": "Plato's Republic",
-      "pid": "b08vwn6h",
-      "relevantPathsAI": [
-        "A.1.b.ii"
-      ],
-      "rationaleAI": "Plato's Republic covering the Theory of Forms, the philosopher-king, and epistemology addresses the philosophy of Plato (A.1.b.ii)."
-    },
-    {
-      "episodeTitle": "Aristotle's Politics",
-      "pid": "b00f8530",
-      "relevantPathsAI": [
-        "A.1.b.iii"
-      ],
-      "rationaleAI": "Aristotle's Politics addresses his empirical researches on political institutions (A.1.b.iii)."
-    },
-    {
-      "episodeTitle": "Zen",
-      "pid": "b04sxv29",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "Zen Buddhism covers Chan Buddhism's synthesis of Buddhist and Daoist elements, relevant to Japanese philosophy (B.3)."
+      "rationaleAI": "Upanishads: presystematic Indian philosophy."
     },
     {
       "episodeTitle": "The Han Synthesis",
       "pid": "p004y29t",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a",
+        "B.2.c"
       ],
-      "rationaleAI": "The Han Synthesis blending Confucian, Legalist, and Daoist thought addresses Chinese philosophy including Neo-Confucianism (B.2.c)."
+      "rationaleAI": "Han Synthesis: Confucianism, Neo-Confucianism."
     },
     {
-      "episodeTitle": "Cicero",
-      "pid": "b09nrsfg",
+      "episodeTitle": "Karma",
+      "pid": "m0020966",
       "relevantPathsAI": [
-        "A.1.c.i",
-        "A.1.c.iii"
+        "B.1.a",
+        "B.1.b"
       ],
-      "rationaleAI": "Cicero's philosophical works transmitting Stoicism and Skepticism to Rome address both Stoic (A.1.c.i) and Skeptic (A.1.c.iii) philosophy in the Hellenistic-Roman period."
+      "rationaleAI": "Karma: Indian metaphysics, ethics."
     },
     {
-      "episodeTitle": "Baconian Science",
-      "pid": "b00jdb6c",
+      "episodeTitle": "The Age of Doubt",
+      "pid": "p00546pj",
       "relevantPathsAI": [
-        "A.3.b.i"
+        "A.3.c.iii",
+        "A.3.d.iii"
       ],
-      "rationaleAI": "Bacon's attempt to formulate a new scientific method through empirical induction addresses developments in the Empiricist tradition (A.3.b.i)."
+      "rationaleAI": "Age of Doubt: Hegel, Nietzsche."
     },
     {
-      "episodeTitle": "Deism",
-      "pid": "m000n47b",
+      "episodeTitle": "Sovereignty",
+      "pid": "b07hhvxx",
       "relevantPathsAI": [
+        "A.3.a.i",
         "A.3.c.iii"
       ],
-      "rationaleAI": "Deism's development of natural religion and rejection of revelation addresses developments in religious philosophy during the Enlightenment (A.3.c.iii)."
+      "rationaleAI": "Sovereignty: Bodin, Hobbes, Locke, Rousseau."
     },
     {
-      "episodeTitle": "The Romantics",
-      "pid": "p00546ws",
+      "episodeTitle": "The Abbasid Caliphs",
+      "pid": "p003hyfd",
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Abbasid: Islamic philosophers, Aristotle transmission."
+    },
+    {
+      "episodeTitle": "Just War",
+      "pid": "p00545jx",
+      "relevantPathsAI": [
+        "A.2.a.i",
+        "A.2.c"
+      ],
+      "rationaleAI": "Just War: Augustine, Aquinas."
+    },
+    {
+      "episodeTitle": "Good and Evil",
+      "pid": "p00545g0",
       "relevantPathsAI": [
         "A.3.d.iii"
       ],
-      "rationaleAI": "Romanticism's reaction against Enlightenment rationalism connects to the reaction against Rationalism including Schopenhauer and Kierkegaard (A.3.d.iii)."
+      "rationaleAI": "Good and Evil: Nietzsche."
     },
     {
-      "episodeTitle": "Freedom",
-      "pid": "p00548hh",
+      "episodeTitle": "Laws of Nature",
+      "pid": "p00546x5",
       "relevantPathsAI": [
-        "A.3.c.iii"
+        "A.1.a.i",
+        "A.3.c.ii"
       ],
-      "rationaleAI": "The concept of freedom from Hobbes through Rousseau and Mill addresses the concern of Locke and Rousseau with freedom and equality (A.3.c.iii)."
-    },
-    {
-      "episodeTitle": "Alcuin",
-      "pid": "m000dqy8",
-      "relevantPathsAI": [
-        "A.2.a.ii"
-      ],
-      "rationaleAI": "Alcuin's role in preserving classical learning connects to philosophy and the liberal arts in Christian West schools (A.2.a.ii)."
-    },
-    {
-      "episodeTitle": "Friendship",
-      "pid": "p003hyd3",
-      "relevantPathsAI": [
-        "A.1.b.iii",
-        "A.1.c.ii"
-      ],
-      "rationaleAI": "Friendship from Aristotle's Nicomachean Ethics through Epicurean friendship addresses Aristotle's ethics (A.1.b.iii) and Epicurean philosophy (A.1.c.ii)."
+      "rationaleAI": "Laws of Nature: Thales to philosophy of science."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

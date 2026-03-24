@@ -4,98 +4,94 @@
     {
       "episodeTitle": "Plankton",
       "pid": "m001r1t5",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.5"
-      ],
-      "rationaleAI": "Plankton as the base of marine food webs, encompassing phytoplankton producers and zooplankton consumers, is directly relevant to oceanic populations (benthos, plankton, nekton) and productivity in aquatic ecosystems."
+      "relevantPathsAI": ["B.2", "B.2.b", "B.2.d", "B.5"],
+      "rationaleAI": "Phytoplankton as photosynthetic base of marine food chains and zooplankton's diel vertical migration directly address oceanic population types (plankton) and marine productivity, while their role in carbon cycling and atmospheric oxygen production connects to aquatic ecosystem productivity assessment."
     },
     {
-      "episodeTitle": "Corals",
-      "pid": "m0010xnr",
-      "relevantPathsAI": [
-        "B.4.b",
-        "B.2.c",
-        "B.5"
-      ],
-      "rationaleAI": "Coral reefs represent neritic boundary ecosystems along seacoasts, with adaptations to marine conditions and extraordinary productivity -- directly relevant to neritic communities and aquatic ecosystem productivity."
-    },
-    {
-      "episodeTitle": "Oceanography",
-      "pid": "p00547lb",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.4"
-      ],
-      "rationaleAI": "Oceanography covers ocean circulation patterns, marine biology and ecosystems, hydrothermal vents, the ocean's role in climate regulation, and deep-sea life -- directly relevant to the aquatic environment, ocean communities, and boundary ecosystems."
-    },
-    {
-      "episodeTitle": "Extremophiles",
-      "pid": "b05zl3v2",
-      "relevantPathsAI": [
-        "B.2.c",
-        "A.1.d"
-      ],
-      "rationaleAI": "Extremophiles in deep-sea hydrothermal vents and Antarctic ice demonstrate adaptations to marine conditions and specialized biomes (polar, subterranean) -- relevant to both aquatic adaptations and specialized terrestrial biomes."
-    },
-    {
-      "episodeTitle": "The Mariana Trench",
-      "pid": "m002q38k",
-      "relevantPathsAI": [
-        "B.2",
-        "B.2.c"
-      ],
-      "rationaleAI": "The Mariana Trench covers deep-sea ecosystems at extreme pressure, unique hadal fauna, and conditions at the deepest point of the ocean -- directly relevant to the sea as a biological environment and adaptations to marine conditions."
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": ["A.2.c", "A.3", "B.5"],
+      "rationaleAI": "Photosynthesis as the primary energy source for nearly all food webs underpins the producer role in terrestrial ecosystem classification and is fundamental to measuring productivity in both terrestrial and aquatic ecosystems through carbon fixation and biogeochemical cycling."
     },
     {
       "episodeTitle": "Fungi",
       "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "A.2.c",
-        "A.2.b"
-      ],
-      "rationaleAI": "Fungi's roles as decomposers and mycorrhizal symbionts are fundamental to terrestrial ecosystem classification by niche, and their presence in soil and forests relates to habitat-based classification."
+      "relevantPathsAI": ["A.2.b", "A.2.c", "A.3"],
+      "rationaleAI": "Fungi as essential decomposers cycling nutrients through terrestrial ecosystems and their symbiotic relationships enabling plant nutrient absorption directly address the decomposer niche and soil organism classification, while their facilitation of plant land colonization connects to terrestrial ecosystem productivity."
     },
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
-      "relevantPathsAI": [
-        "B.1",
-        "A.1.a"
-      ],
-      "rationaleAI": "Water's properties as a biological medium are essential for understanding the aquatic environment and comparing terrestrial and aquatic ecosystems."
-    },
-    {
-      "episodeTitle": "The Evolution of Horses",
-      "pid": "m000fp9y",
-      "relevantPathsAI": [
-        "C",
-        "D.1.a",
-        "D.3"
-      ],
-      "rationaleAI": "The geographic migration of horses between North America and Eurasia and their extinction in the Americas illustrates biogeographic distribution patterns across the Holarctic and Neogaean realms."
-    },
-    {
-      "episodeTitle": "Cephalopods",
-      "pid": "b09pjgrn",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.2.c"
-      ],
-      "rationaleAI": "Cephalopods including deep-sea giant squid illustrate oceanic populations (nekton) and adaptations to marine conditions across diverse ocean environments."
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": ["A.2", "A.2.c", "A.3"],
+      "rationaleAI": "Co-evolutionary relationships between plants and pollinators exemplify producer-consumer interactions central to terrestrial ecosystem functioning, and the ecological significance of pollination for plant biodiversity and food production directly affects terrestrial ecosystem productivity."
     },
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "A.2.c",
-        "B.2.c"
-      ],
-      "rationaleAI": "Parasitism covers parasitic organisms across terrestrial and aquatic ecosystems, with ecological significance in food webs and population regulation -- relevant to classification by niche (consumers) in both biome types."
+      "relevantPathsAI": ["A.2.c", "B.2.b"],
+      "rationaleAI": "Parasitism as a pervasive ecological relationship affecting host population dynamics and ecosystem functioning spans both terrestrial and aquatic consumer niches, with co-evolutionary arms races shaping community structure across ecosystems."
+    },
+    {
+      "episodeTitle": "Humboldt",
+      "pid": "p003c1c2",
+      "relevantPathsAI": ["A.1.c", "C", "D"],
+      "rationaleAI": "Alexander von Humboldt pioneered biogeography and plant geography, introducing the concept of vegetation zones linked to climate and altitude that directly established the study of organism distribution across biogeographic regions and the characterization of major terrestrial biomes."
+    },
+    {
+      "episodeTitle": "Darwin: The Voyage of the Beagle",
+      "pid": "b00gbf2g",
+      "relevantPathsAI": ["C", "D", "D.3"],
+      "rationaleAI": "Darwin's biogeographic observations across South America and the Galapagos Islands provided foundational evidence for understanding organism distribution patterns, particularly within the Neogaean realm, and established key principles linking geographic isolation to species variation."
+    },
+    {
+      "episodeTitle": "The Columbian Exchange",
+      "pid": "m002rrvz",
+      "relevantPathsAI": ["C", "D"],
+      "rationaleAI": "The massive biological transfer of organisms across the Atlantic and Pacific following 1492 dramatically altered biogeographic distributions, with imported livestock transforming American grasslands to desert and New World crops reshaping Old World ecosystems, illustrating human-driven redistribution of flora and fauna across biogeographic realms."
+    },
+    {
+      "episodeTitle": "The Challenger Expedition 1872-1876",
+      "pid": "m001fcvd",
+      "relevantPathsAI": ["B.1", "B.2", "B.2.a"],
+      "rationaleAI": "The first systematic oceanographic survey discovered thousands of new marine species and proved life exists at the deepest ocean depths, establishing foundational knowledge of the sea as a biological environment and marine community diversity across ocean zones."
+    },
+    {
+      "episodeTitle": "The Mariana Trench",
+      "pid": "m002q38k",
+      "relevantPathsAI": ["B.1", "B.2", "B.2.c"],
+      "rationaleAI": "Discovery of diverse organisms including extremophile microbes, amphipods, and fish adapted to hadal conditions of extreme pressure and darkness demonstrates marine community adaptations to the deepest oceanic environments."
+    },
+    {
+      "episodeTitle": "Oceanography",
+      "pid": "p00547lb",
+      "relevantPathsAI": ["B.1", "B.2", "B.2.a"],
+      "rationaleAI": "The revelation that deep-ocean biodiversity exceeds all other habitats combined overturned the Azoic Theory and fundamentally reshaped understanding of the sea as a biological environment and the character of deep-ocean communities."
+    },
+    {
+      "episodeTitle": "Extremophiles",
+      "pid": "b05zl3v2",
+      "relevantPathsAI": ["B.2", "B.2.c", "A.1.d"],
+      "rationaleAI": "Hydrothermal vent communities supporting unexpected biodiversity in superheated, acidic deep-ocean environments represent specialized aquatic ecosystems with organisms exhibiting extreme adaptations to marine conditions, expanding understanding of viable habitats for life."
+    },
+    {
+      "episodeTitle": "Cephalopods",
+      "pid": "b09pjgrn",
+      "relevantPathsAI": ["B.2.b", "B.2.c"],
+      "rationaleAI": "Cephalopods as nekton surviving in deep cold oceans with adaptations including camouflage, jet propulsion, and rapid growth illustrate oceanic population character and marine organism adaptations that enable them to exploit changing habitats."
+    },
+    {
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": ["A.1.a", "B.2", "B.5"],
+      "rationaleAI": "The causal link between terrestrial plant colonization creating new soils and the resulting nutrient runoff triggering marine anoxia directly illustrates the interaction between terrestrial and aquatic ecosystems and its catastrophic impact on marine community productivity."
+    },
+    {
+      "episodeTitle": "The Fish-Tetrapod Transition",
+      "pid": "m001d56q",
+      "relevantPathsAI": ["A.1.a", "A.1.b"],
+      "rationaleAI": "The evolution of limbs, lungs, and weight-bearing locomotion enabling vertebrate colonization of land illustrates the fundamental comparison between terrestrial and aquatic ecosystems and the limiting factors organisms must overcome to live on land."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

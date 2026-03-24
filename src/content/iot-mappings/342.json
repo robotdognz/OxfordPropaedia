@@ -2,64 +2,49 @@
   "sectionCode": "342",
   "mappings": [
     {
-      "episodeTitle": "Behavioural Ecology",
-      "pid": "b04tljk0",
-      "relevantPathsAI": [
-        "A.1",
-        "A.6",
-        "C.1",
-        "C.3",
-        "C.4"
-      ],
-      "rationaleAI": "Behavioural ecology covers optimal foraging (food getting), sexual selection and mate choice (reproduction-related behaviour), kin selection, cooperation and altruism (social behaviour dynamics), and the distinction between social and nonsocial animal groups."
-    },
-    {
       "episodeTitle": "Pheromones",
       "pid": "m0002mdl",
       "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "Pheromones are chemical signals used by animals for communication including sexual attraction, alarm signaling, territory marking, and social organisation -- directly relevant to animal communication."
-    },
-    {
-      "episodeTitle": "Echolocation",
-      "pid": "b0b6hrl3",
-      "relevantPathsAI": [
-        "A.1",
         "A.3",
-        "C.2"
+        "A.6",
+        "C.2",
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Echolocation in bats and dolphins demonstrates sophisticated sensory-guided food-getting behaviour, avoidance of obstacles, and a form of biological communication -- relevant to food getting, avoidance behaviour, and animal communication."
+      "rationaleAI": "Pheromones function as chemical communication signals governing alarm and predator avoidance responses (A.3), sexual attractiveness and reproductive behaviour (A.6), and intraspecific communication that organizes social insect colonies including caste determination in honey bees (C.2, C.3, C.4)."
     },
     {
-      "episodeTitle": "Slime Moulds",
-      "pid": "m002691y",
+      "episodeTitle": "Behavioural Ecology",
+      "pid": "b04tljk0",
       "relevantPathsAI": [
-        "B.3",
-        "B.5",
-        "C.1"
+        "A",
+        "A.1",
+        "A.4",
+        "A.5",
+        "A.6",
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Slime moulds solve spatial problems and navigate mazes without a nervous system, demonstrating complex problem solving and collective behaviour that blurs the line between individual and group organisms."
+      "rationaleAI": "Behavioural ecology directly studies animal decision-making about feeding (A.1), territorial defence and aggression (A.4), habitat use (A.5), mating and reproduction (A.6), and social cooperation (C.3, C.4), integrating evolutionary biology with field observation of behavioural diversity across species."
+    },
+    {
+      "episodeTitle": "Complexity",
+      "pid": "b03ls154",
+      "relevantPathsAI": [
+        "C",
+        "C.4"
+      ],
+      "rationaleAI": "Complexity science examines how organisms behave in groups in emergent, unpredictable ways that differ from individual behaviour, with examples such as bird flocking illustrating self-organisation and nonlinear dynamics in collective animal behaviour (C.4)."
     },
     {
       "episodeTitle": "Cephalopods",
       "pid": "b09pjgrn",
       "relevantPathsAI": [
-        "A.1",
+        "A.3",
         "B.5",
-        "C.2"
+        "B.5.c"
       ],
-      "rationaleAI": "Cephalopods demonstrate remarkable intelligence, complex problem solving, color-changing communication via chromatophores, and sophisticated predatory behaviour -- relevant to food getting, problem solving, and animal communication."
-    },
-    {
-      "episodeTitle": "The Infant Brain",
-      "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "B.2",
-        "B.4",
-        "B.5.d"
-      ],
-      "rationaleAI": "The infant brain covers critical periods for language acquisition, the role of attachment in development, and the nature-nurture interplay in learning -- directly relevant to associative learning, imprinting, and language learning."
+      "rationaleAI": "Cephalopods demonstrate sophisticated avoidance behaviours including camouflage, colour change, and ink squirting (A.3), alongside remarkable problem-solving abilities and intelligence in invertebrates that illustrate complex cognitive capacities and reasoning beyond vertebrates (B.5, B.5.c)."
     },
     {
       "episodeTitle": "Altruism",
@@ -68,18 +53,28 @@
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Altruism examines cooperation and prosocial behaviour across human and animal societies through kin selection, reciprocal altruism, and game theory -- directly relevant to the range and dynamics of social behaviour."
+      "rationaleAI": "The evolutionary paradox of altruistic behaviour — costly kindness explained through Dawkins's gene-centred perspective — addresses how natural selection shapes cooperative and self-sacrificing social behaviour among animals, central to the range and dynamics of social behaviour (C.3, C.4)."
     },
     {
-      "episodeTitle": "Corals",
-      "pid": "m0010xnr",
+      "episodeTitle": "Slime Moulds",
+      "pid": "m002691y",
       "relevantPathsAI": [
-        "C.1",
-        "C.3"
+        "B.5",
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Coral spawning involves coordinated group reproduction behaviour, and coral reef ecosystems illustrate the colonial organisms that exist between individual and group life -- relevant to the distinction between social and nonsocial groups and interspecies associations."
+      "rationaleAI": "Slime moulds exhibit collective problem-solving without nervous systems, demonstrating emergent group behaviour and decision-making capacities (B.5) in organisms that challenge conventional boundaries between social and nonsocial groups (C.3, C.4)."
+    },
+    {
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": [
+        "A.1",
+        "A.6"
+      ],
+      "rationaleAI": "Pollinator behaviour — insects, birds, and mammals responding to floral coloration, scent, and morphology — illustrates food-getting behaviour (A.1) shaped by co-evolutionary dynamics, while plant reproductive adaptations drive pollinator behavioural patterns related to reproduction (A.6)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

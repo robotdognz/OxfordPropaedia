@@ -2,6 +2,55 @@
   "sectionCode": "214",
   "mappings": [
     {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3.b.i"
+      ],
+      "rationaleAI": "X-ray crystallography reveals the internal atomic arrangements and crystal structures of minerals, directly addressing mineral structure and morphology (A.1), physical properties including optical characteristics (A.2), and the silicon-oxygen tetrahedron basis of silicate structure (A.3.b.i)."
+    },
+    {
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Symmetry principles formalized through group theory underpin crystallography and the classification of crystal systems, directly relevant to the internal structure and morphology of minerals (A.1) and their classification by crystal structure (A.3)."
+    },
+    {
+      "episodeTitle": "Chemical Elements",
+      "pid": "p00546sz",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.a",
+        "C"
+      ],
+      "rationaleAI": "The periodic table's organization of 108 elements by chemical properties, from Big Bang nucleosynthesis of hydrogen and helium onward, provides the chemical foundation for mineral composition (A.1), the classification of nonsilicate minerals by their constituent elements (A.3.a), and the occurrence of elements in the Earth (C)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "C.4"
+      ],
+      "rationaleAI": "Ice exhibits at least fifteen distinct crystalline forms under varying pressures, directly relevant to mineral crystal structure and morphology (A.1) and physical properties (A.2). Water covering two-thirds of Earth's surface addresses the hydrosphere's elemental composition (C.4)."
+    },
+    {
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.e.ii",
+        "B.1.e.iii"
+      ],
+      "rationaleAI": "Volcanic processes from magma generation in the mantle to surface eruptions directly address the formation of igneous rocks from magma (B.1.c), extrusive rocks like basalt formed from lava flows (B.1.e.ii), and pyroclastic rocks like pumice and tuff from explosive eruptions (B.1.e.iii)."
+    },
+    {
       "episodeTitle": "The Geological Formation of Britain",
       "pid": "b00n8t48",
       "relevantPathsAI": [
@@ -10,9 +59,39 @@
         "B.2",
         "B.3",
         "B.4",
-        "B.5"
+        "B.5.a"
       ],
-      "rationaleAI": "Britain's geological formation over 3 billion years covering Precambrian rocks, Carboniferous coal measures, Mesozoic chalk, volcanic activity, and sedimentary processes comprehensively addresses igneous (B.1), sedimentary (B.2), and metamorphic rocks (B.3), rock associations (B.4), and fossil fuels (B.5)."
+      "rationaleAI": "Britain's 600-million-year geological record encompasses Precambrian metamorphic rocks of the Scottish Highlands (B.3), volcanic episodes and igneous formations (B.1), Carboniferous coal swamps (B.5.a), desert sandstones and Cretaceous chalk as sedimentary rocks (B.2), and diverse rock associations from oceanic to mountain environments (B.4)."
+    },
+    {
+      "episodeTitle": "Early Geology",
+      "pid": "b01dgh7d",
+      "relevantPathsAI": [
+        "B",
+        "B.2.f"
+      ],
+      "rationaleAI": "The emergence of geology as a science from ancient speculation through mining insights to the founding of the Geological Society addresses the systematic study of rocks (B) and the use of stratigraphy and fossils for understanding distribution of sedimentary rocks through time (B.2.f)."
+    },
+    {
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.4",
+        "B.4.a",
+        "B.4.d",
+        "B.4.e"
+      ],
+      "rationaleAI": "Plate tectonic processes of subduction, seafloor spreading, and continental collision govern magma formation (B.1.c) and determine rock associations across crustal environments including oceanic regions with basaltic lavas (B.4.a), island arcs with andesite lavas (B.4.d), and mountain ranges with metamorphic rocks and granitic batholiths (B.4.e)."
+    },
+    {
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
+      "relevantPathsAI": [
+        "B.2.e.i",
+        "B.4.b"
+      ],
+      "rationaleAI": "Glacial periods produce tillites and other heterogeneous clastic sedimentary rocks from ice-transported debris (B.2.e.i), and glacial-interglacial cycles shape sedimentary sequences in stable continental regions including conglomerates and distinctive glacial deposits (B.4.b)."
     },
     {
       "episodeTitle": "The Earth's Core",
@@ -21,7 +100,7 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "The Earth's core composition (iron and nickel) and core-mantle interactions address the occurrence of elements in the core (C.1) and mantle (C.2)."
+      "rationaleAI": "The solid inner core of iron and nickel and the liquid outer core directly address the occurrence of elements in the core (C.1), while convective flow in the liquid outer core and core-mantle interactions address mantle composition (C.2)."
     },
     {
       "episodeTitle": "The Earth's Origins",
@@ -32,80 +111,35 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Earth's formation and differentiation into core, mantle, and crust addresses the distribution of elements across Earth's layers (C.1-C.3)."
+      "rationaleAI": "Earth's formation from a solar nebula and subsequent differentiation into distinct layers addresses the distribution and concentration of elements across the core (C.1), mantle (C.2), and crust (C.3) as the planet cooled and heavy elements sank inward."
     },
     {
-      "episodeTitle": "Ageing the Earth",
-      "pid": "p005493g",
+      "episodeTitle": "Seismology",
+      "pid": "m00154gh",
       "relevantPathsAI": [
-        "B.2.f"
+        "C.1",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "The geological timescale and stratigraphic principles address the distribution of sedimentary rocks through time (B.2.f)."
+      "rationaleAI": "Seismic wave analysis revealing Earth's layered internal structure — crust, mantle, and core — provides the primary observational evidence for understanding where elements occur in the core (C.1), mantle (C.2), and crust (C.3)."
     },
     {
-      "episodeTitle": "Plate Tectonics",
-      "pid": "b008q0sp",
+      "episodeTitle": "Asteroids",
+      "pid": "p003k9kh",
       "relevantPathsAI": [
-        "B.1.c",
-        "B.4"
+        "A.4.b.iii"
       ],
-      "rationaleAI": "Plate tectonics covering subduction, mountain building, volcanic activity, and seafloor spreading addresses formation of igneous rocks from magma (B.1.c) and rock associations in different crustal environments (B.4)."
+      "rationaleAI": "Asteroids as chemically unchanged primordial building blocks of the solar system provide direct evidence of the mineral and elemental composition found in meteorites and planetary bodies (A.4.b.iii)."
     },
     {
-      "episodeTitle": "Vulcanology",
-      "pid": "p005490h",
+      "episodeTitle": "Comets",
+      "pid": "b01pw38n",
       "relevantPathsAI": [
-        "B.1.c",
-        "B.1.e.ii",
-        "B.1.e.iii"
+        "A.4.b.iii"
       ],
-      "rationaleAI": "Vulcanology covering magma chemistry, eruption styles, and volcano types addresses formation of igneous rocks (B.1.c) and extrusive and pyroclastic igneous rocks (B.1.e.ii, B.1.e.iii)."
-    },
-    {
-      "episodeTitle": "The Mariana Trench",
-      "pid": "m002q38k",
-      "relevantPathsAI": [
-        "B.4.a"
-      ],
-      "rationaleAI": "The Mariana Trench formed by Pacific Plate subduction beneath the Mariana Plate addresses rock associations in oceanic regions (B.4.a)."
-    },
-    {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "B.5",
-        "C.6"
-      ],
-      "rationaleAI": "Carbon's role in fossil fuels and the carbon cycle addresses fossil fuels (B.5) and selective concentration of elements by organisms in the biosphere (C.6)."
-    },
-    {
-      "episodeTitle": "Early Geology",
-      "pid": "b01dgh7d",
-      "relevantPathsAI": [
-        "B",
-        "B.2.f"
-      ],
-      "rationaleAI": "Early geology covering stratigraphy, identification and dating of geological strata using fossils, and debates between neptunists and plutonists addresses rocks of the Earth's crust (B) and distribution of sedimentary rocks through time (B.2.f)."
-    },
-    {
-      "episodeTitle": "Fossils",
-      "pid": "p00547d3",
-      "relevantPathsAI": [
-        "B.2.f",
-        "B.5"
-      ],
-      "rationaleAI": "Fossils' significance for stratigraphy and dating geological strata addresses the distribution of sedimentary rocks through time (B.2.f) and organic-rich sedimentary deposits (B.5)."
-    },
-    {
-      "episodeTitle": "Crystallography",
-      "pid": "b01p0s9s",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "Crystallography determining atomic arrangements within crystalline solids addresses the internal structure and morphology of minerals (A.1) and their physical properties (A.2)."
+      "rationaleAI": "Comets as frozen time capsules of ice and dust from the solar system's formation contain primordial mineral and chemical materials relevant to understanding mineral occurrence in meteorites and planetary bodies (A.4.b.iii)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,139 +2,84 @@
   "sectionCode": "242",
   "mappings": [
     {
-      "episodeTitle": "Ageing the Earth",
-      "pid": "p005493g",
-      "relevantPathsAI": [
-        "A.2",
-        "D.2",
-        "D.4.a",
-        "D.4.b"
-      ],
-      "rationaleAI": "Directly addresses the quest to determine Earth's age through radiometric dating, stratigraphic principles, fossil evidence, and the development of the geological timescale -- the core concerns of absolute dating and stratigraphic interpretation."
+      "episodeTitle": "The Earth's Origins",
+      "pid": "p00547hl",
+      "relevantPathsAI": ["A.2.a", "A.2.b", "A.2.c", "D"],
+      "rationaleAI": "Directly traces the historical development of stratigraphic interpretation through Hutton's uniformitarianism, William Smith's use of fossil succession for correlating strata, and Lyell's gradualist geology, covering the foundational principles of superposition, uniformitarianism, and fossil correlation that define how the geologic record is read."
     },
     {
-      "episodeTitle": "Fossils",
-      "pid": "p00547d3",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C.1"
-      ],
-      "rationaleAI": "Fossils and their role in stratigraphy (William Smith), the fossil record's evidence for extinction and evolution, and modern techniques including radiometric dating directly address paleontological interpretation, index fossils, and relative dating."
+      "episodeTitle": "Ageing the Earth",
+      "pid": "p005493g",
+      "relevantPathsAI": ["D.2", "D.4.a", "D.4.b", "A.2"],
+      "rationaleAI": "Traces geochronology from Ussher's biblical dating through Kelvin's thermodynamic estimates to modern radiometric methods yielding 4.5 billion years, directly addressing absolute dating techniques, the construction of the geologic time scale (Eons, Eras, Periods, Epochs), and how stratigraphic classifications relate to radiometric age determinations."
     },
     {
       "episodeTitle": "Catastrophism",
       "pid": "b03s9tlz",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.c",
-        "B.3"
-      ],
-      "rationaleAI": "The catastrophism-uniformitarianism debate (Cuvier vs. Hutton/Lyell) is foundational to stratigraphic interpretation principles and understanding mass extinctions in the fossil record."
-    },
-    {
-      "episodeTitle": "Early Geology",
-      "pid": "b01dgh7d",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.b",
-        "A.2.c",
-        "C.1"
-      ],
-      "rationaleAI": "Early geology covers Hutton's uniformitarianism, William Smith's stratigraphic mapping using fossils, superposition of strata, and the shift from biblical chronology to deep time -- directly the historical development of stratigraphic classification."
+      "relevantPathsAI": ["A.2.a", "B.3"],
+      "rationaleAI": "Examines the foundational debate between uniformitarianism and catastrophism that shaped stratigraphic interpretation, from Buckland's diluvial theory through Lyell's gradualism to the modern revival of catastrophist explanations via the asteroid impact linked to the KT mass extinction, illustrating how theoretical frameworks govern interpretation of the geologic record."
     },
     {
       "episodeTitle": "Ediacara Biota",
       "pid": "b00lh2s3",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.2.a.ii"
-      ],
-      "rationaleAI": "The Ediacara biota are Precambrian multicellular fossils predating the Cambrian explosion, directly relevant to the Proterozoic fossil record and Precambrian protists, plants, and animals."
-    },
-    {
-      "episodeTitle": "The Cambrian Period",
-      "pid": "p003k9bg",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.2.b.ix",
-        "B.3"
-      ],
-      "rationaleAI": "The Cambrian Period and its explosion of complex animal life, documented in the Burgess Shale, directly maps to the Phanerozoic fossil record and the appearance of major animal phyla including trilobites."
-    },
-    {
-      "episodeTitle": "The KT Boundary",
-      "pid": "p003k9d0",
-      "relevantPathsAI": [
-        "B.3",
-        "D.4.b",
-        "E"
-      ],
-      "rationaleAI": "The K-T boundary iridium anomaly and Chicxulub crater demonstrate mass extinction revealed in the fossil record, radiometric dating of boundary events, and paleogeographic interpretation."
+      "relevantPathsAI": ["B.2.a.ii", "B.1", "B.4"],
+      "rationaleAI": "Concerns the Ediacara fauna as key Precambrian fossils whose discovery and recognition transformed understanding of pre-Cambrian life, directly addressing Proterozoic fossil preservation processes and the use of these organisms as paleontological evidence for dating and correlating late Precambrian strata."
     },
     {
       "episodeTitle": "The Permian-Triassic Boundary",
       "pid": "b007r285",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "The Permian-Triassic extinction killed over 90% of marine species, representing the most severe mass extinction in the fossil record, directly relevant to the appearance and disappearance of species."
+      "relevantPathsAI": ["B.3", "A.3.b"],
+      "rationaleAI": "The Permian-Triassic boundary represents the most significant stratigraphic boundary problem in the geologic record, marking the largest mass extinction event (~95% species loss) and illustrating how geochemical evidence, fossil disappearance patterns, and volcanic signatures are used to interpret and correlate boundary deposits globally."
     },
     {
-      "episodeTitle": "The Geological Formation of Britain",
-      "pid": "b00n8t48",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "C.1"
-      ],
-      "rationaleAI": "Britain's geological formation from Precambrian through Quaternary illustrates the layered rock record, stratigraphic correlation across geological periods, and how Britain's geological diversity helped establish geology as a science."
+      "episodeTitle": "The KT Boundary",
+      "pid": "p003k9d0",
+      "relevantPathsAI": ["B.3", "A.1", "A.3.b", "B.4"],
+      "rationaleAI": "The KT boundary is a globally recognized stratigraphic marker identified by anomalous iridium concentrations in a thin sedimentary layer, exemplifying how geochemical and paleontological analysis of layered deposits enables precise correlation of the geologic record and interpretation of mass extinction events."
     },
     {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "D.2.d"
-      ],
-      "rationaleAI": "Carbon dating for archaeology uses radioactive decay of carbon-14 as an absolute dating method, directly relevant to radiometric dating techniques."
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": ["B.3", "B.2.b"],
+      "rationaleAI": "Addresses the Late Devonian mass extinction as recorded in the fossil record, showing how the disappearance of reef-building organisms, brachiopods, and armored fish in marine strata provides paleontological evidence for interpreting environmental change, including the link between terrestrial plant colonization and marine anoxia preserved in sedimentary sequences."
     },
     {
-      "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
-      "pid": "b08hpmmf",
-      "relevantPathsAI": [
-        "B.3",
-        "E"
-      ],
-      "rationaleAI": "The PETM is identified through geological markers including shifts in carbon isotope ratios and foraminifera extinctions, illustrating paleontological and paleogeographical interpretation of the geological record."
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": ["E", "D.4.c"],
+      "rationaleAI": "Plate tectonics provides the framework for paleogeographical interpretation of the geologic record, explaining the distribution of fossils across formerly connected continents and establishing seafloor spreading rates that serve as independent checks on radiometric dating of ocean floor basalts."
     },
     {
-      "episodeTitle": "Feathered Dinosaurs",
-      "pid": "b099v33p",
-      "relevantPathsAI": [
-        "B.2.b.x"
-      ],
-      "rationaleAI": "Feathered dinosaur fossils from Liaoning Province provide key evidence for the dinosaur-bird transition, directly relevant to fossil reptiles and fossil birds in the Phanerozoic record."
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
+      "relevantPathsAI": ["E", "A.1.d", "C.1", "D.3"],
+      "rationaleAI": "Glacial and interglacial periods leave distinctive cyclic deposits (varved sediments, tillites, moraines) that serve as stratigraphic markers, while Milankovitch orbital cycles provide non-radiometric chronometers; Snowball Earth episodes illustrate paleogeographical interpretation of Precambrian glacial evidence across multiple continents."
     },
     {
-      "episodeTitle": "The Fish-Tetrapod Transition",
-      "pid": "m001d56q",
-      "relevantPathsAI": [
-        "B.2.b.x"
-      ],
-      "rationaleAI": "The fish-tetrapod transition documented by fossils like Tiktaalik, Acanthostega, and Ichthyostega represents a major evolutionary transformation preserved in the fossil record of amphibians and fish."
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": ["A.1.c", "E"],
+      "rationaleAI": "Volcanic rocks form distinctive stratigraphic layers (ash beds, lava flows) that serve as key marker horizons for correlating the geologic record, and volcanic deposits are among the most reliably radiometrically dated materials; volcanism also provides critical evidence for paleogeographical reconstruction through its association with plate boundaries."
     },
     {
-      "episodeTitle": "The Evolution of Teeth",
-      "pid": "m0003zbg",
-      "relevantPathsAI": [
-        "B.2.b.x",
-        "B.4"
-      ],
-      "rationaleAI": "Fossil teeth reveal evolutionary history and paleoecology, serving as important index fossils and paleontological criteria for correlation, given teeth's exceptional preservation in the fossil record."
+      "episodeTitle": "Pitt-Rivers",
+      "pid": "b01qwgxx",
+      "relevantPathsAI": ["C.2"],
+      "rationaleAI": "Augustus Pitt-Rivers pioneered systematic stratigraphic excavation and meticulous recording methods in archaeology, directly applying geological principles of superposition and relative dating to archaeological problems and establishing methodological standards that bridged geological and archaeological interpretation of layered deposits."
+    },
+    {
+      "episodeTitle": "The Evolution of Crocodiles",
+      "pid": "m000zmhf",
+      "relevantPathsAI": ["B.2.b.x", "B.3"],
+      "rationaleAI": "Crocodilian fossils spanning from the Triassic to the present provide a continuous paleontological record of reptilian evolution through multiple mass extinction events, illustrating how fossil reptile lineages are used to interpret faunal assemblages and stratigraphic correlation across geological periods."
+    },
+    {
+      "episodeTitle": "Mammals",
+      "pid": "p003k9ds",
+      "relevantPathsAI": ["B.2.b.x", "B.3"],
+      "rationaleAI": "Fossil mammals document the major Cenozoic faunal radiation following the KT extinction, with distinct mammalian assemblages on different continents serving as key index fossils for correlating Cenozoic strata and illustrating how plate tectonic isolation shaped the paleontological record."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

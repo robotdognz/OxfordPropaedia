@@ -2,36 +2,60 @@
   "sectionCode": "334",
   "mappings": [
     {
+      "episodeTitle": "Cephalopods",
+      "pid": "b09pjgrn",
+      "relevantPathsAI": ["A.2", "B.2.c", "B.3", "C.1", "C.4"],
+      "rationaleAI": "Cephalopods exhibit chromatophore-based colour change directly involving integumentary specialization (A.2), rely on a hydrostatic skeleton rather than rigid support structures (B.2.c, B.3), and use their muscular mantle for jet propulsion, exemplifying invertebrate muscle systems (C.1, C.4)."
+    },
+    {
+      "episodeTitle": "The Cambrian Period",
+      "pid": "p003k9bg",
+      "relevantPathsAI": ["A.2", "B.2.a", "B.3"],
+      "rationaleAI": "The Cambrian explosion marks the first widespread appearance of hard exoskeletons, shells, and mineralized body parts across multiple phyla, directly relevant to the evolution of invertebrate integuments (A.2) and cuticular skeletal structures including spicules and calcareous elements (B.2.a, B.3)."
+    },
+    {
       "episodeTitle": "The Evolution of Teeth",
       "pid": "m0003zbg",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.4.d",
-        "B.6"
-      ],
-      "rationaleAI": "The evolution of teeth from dermal denticles to differentiated mammalian dentition covers cuticular skeletal elements (bone, enamel), the vertebrate skeleton's dental component, and properties of bone development as teeth are modified skeletal structures."
+      "relevantPathsAI": ["A.3.b", "A.5", "B.4", "B.6"],
+      "rationaleAI": "Teeth likely originated from tooth-like dermal scales migrating into the mouth, linking epidermal scale derivatives (A.3.b) to the embryology and evolution of vertebrate skin (A.5). Tooth development also involves bone-like mineralized tissues relevant to vertebrate skeletal structure and bone properties (B.4, B.6)."
+    },
+    {
+      "episodeTitle": "Feathered Dinosaurs",
+      "pid": "b099v33p",
+      "relevantPathsAI": ["A.3.b", "A.5"],
+      "rationaleAI": "Fossil evidence of feathered dinosaurs illuminates the evolutionary origin and diversification of feathers as epidermal derivatives (A.3.b), with implications for thermal regulation and display that inform the embryology and evolution of vertebrate skin appendages (A.5)."
+    },
+    {
+      "episodeTitle": "The Fish-Tetrapod Transition",
+      "pid": "m001d56q",
+      "relevantPathsAI": ["B.4", "B.4.b", "B.4.d", "C.5", "C.5.a", "C.5.b"],
+      "rationaleAI": "The Devonian transition from lobe-finned fish to tetrapods involved the evolution of weight-bearing limbs from fins (B.4.d), fundamental changes to vertebrate skeletal architecture (B.4, B.4.b), and the repurposing of swimming musculature for terrestrial locomotion, illustrating vertebrate musculatory system evolution (C.5, C.5.a, C.5.b)."
+    },
+    {
+      "episodeTitle": "The Whale - A History",
+      "pid": "b00kfqm6",
+      "relevantPathsAI": ["A.4", "B.4.d", "C.5.b"],
+      "rationaleAI": "Whale evolution from a cloven-hoofed land mammal to fully aquatic form involved loss of hind limbs and radical skeletal reorganization (B.4.d), development of streamlined integument adapted for aquatic life (A.4), and major transformation of the vertebrate musculatory system for swimming (C.5.b)."
+    },
+    {
+      "episodeTitle": "Corals",
+      "pid": "m0010xnr",
+      "relevantPathsAI": ["B.2.a", "B.3"],
+      "rationaleAI": "Corals secrete calcareous exoskeletons that form massive reef structures, exemplifying cuticular skeletal elements including crystals and spicules (B.2.a) and the organization and function of invertebrate skeletons (B.3)."
     },
     {
       "episodeTitle": "The Evolution of Lungs",
       "pid": "m002d8t2",
-      "relevantPathsAI": [
-        "C.2.b",
-        "C.5.b",
-        "C.5.c"
-      ],
-      "rationaleAI": "The evolution of lungs covers the diaphragm as a muscular structure in mammals and ventilation mechanics involving skeletal and smooth muscle, relevant to vertebrate muscle systems and their evolution."
+      "relevantPathsAI": ["C.5", "C.5.b"],
+      "rationaleAI": "The evolution of lungs involved the repurposing of swimming musculature to operate as bellows for respiration in terrestrial vertebrates, directly illustrating the evolutionary co-option of the vertebrate musculatory system (C.5, C.5.b)."
     },
     {
-      "episodeTitle": "Cephalopods",
-      "pid": "b09pjgrn",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3",
-        "C.4"
-      ],
-      "rationaleAI": "Cephalopods have jet propulsion (muscular system), chromatophores (integumentary color change), and hydrostatic skeletons, illustrating invertebrate integuments, invertebrate skeleton organization, and invertebrate muscle systems."
+      "episodeTitle": "The Evolution of Crocodiles",
+      "pid": "m000zmhf",
+      "relevantPathsAI": ["A.4", "B.4", "B.4.a"],
+      "rationaleAI": "Crocodilian evolution from Triassic ancestors encompasses dramatic variation in skeletal body plans from bipedal runners to armoured modern forms, illustrating vertebrate skeletal diversity (B.4, B.4.a) and skin variation including dermal armour plates among vertebrates (A.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

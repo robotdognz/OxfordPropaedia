@@ -2,69 +2,81 @@
   "sectionCode": "123",
   "mappings": [
     {
+      "episodeTitle": "Oxygen",
+      "pid": "b0088nql",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3.a.vi",
+        "F",
+        "F.1",
+        "F.2",
+        "F.6"
+      ],
+      "rationaleAI": "Oxygen: phlogiston to combustion/oxidation theory (A.2, F, F.6)."
+    },
+    {
       "episodeTitle": "Enzymes",
       "pid": "b08rp369",
       "relevantPathsAI": [
         "C.1.d",
-        "D.1"
+        "D.1",
+        "A.3.c",
+        "B.2"
       ],
-      "rationaleAI": "Enzymes as biological catalysts with Michaelis-Menten kinetics, lock-and-key models, and allosteric regulation directly address catalysts affecting reaction rates (C.1.d) and factors influencing reaction course (D.1)."
-    },
-    {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
-      "relevantPathsAI": [
-        "A.3.a.vi",
-        "F"
-      ],
-      "rationaleAI": "Oxygen's role in combustion and oxidation, and Lavoisier's dismantling of phlogiston theory address oxidation-reduction reactions (F) and their classification (A.3.a.vi)."
+      "rationaleAI": "Enzymes: biological catalysis (C.1.d, D.1, A.3.c, B.2)."
     },
     {
       "episodeTitle": "Free Radicals",
       "pid": "m0000xqd",
       "relevantPathsAI": [
         "A.3.a.iii",
+        "A.3.a.vi",
+        "F",
         "F.5"
       ],
-      "rationaleAI": "Free radical chain reactions in oxidation processes and their role in biological systems (lipid peroxidation, immune defense) address chain reactions (A.3.a.iii) and oxidation-reduction in biological systems (F.5)."
+      "rationaleAI": "Free radicals: chain reactions (A.3.a.iii), oxidation-reduction (F, F.5)."
     },
     {
-      "episodeTitle": "Photosynthesis",
-      "pid": "b0435jyv",
+      "episodeTitle": "Macromolecules",
+      "pid": "b018grhm",
       "relevantPathsAI": [
-        "G",
-        "F.5"
+        "A.3.a.ii",
+        "H",
+        "H.1"
       ],
-      "rationaleAI": "Photosynthesis as a photochemical reaction converting light energy to chemical energy addresses the photochemical process (G), and its electron transport chain involves oxidation-reduction in biological systems (F.5)."
+      "rationaleAI": "Macromolecules: polymerization reactions (A.3.a.ii), synthesis (H)."
     },
     {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
+      "episodeTitle": "Michael Faraday",
+      "pid": "b06s9rz9",
       "relevantPathsAI": [
-        "C.1.a",
-        "E"
+        "F.4",
+        "F.4.a",
+        "A.2"
       ],
-      "rationaleAI": "Water as a universal solvent and its role as a medium for biochemical reactions addresses solvent effects on reaction rates (C.1.a), and water's proton-donor/acceptor properties relate to acid-base equilibria (E)."
+      "rationaleAI": "Faraday: electrolysis laws (F.4, F.4.a)."
     },
     {
       "episodeTitle": "The Second Law of Thermodynamics",
       "pid": "p004y2bm",
       "relevantPathsAI": [
         "B",
+        "B.1",
         "B.3"
       ],
-      "rationaleAI": "The second law of thermodynamics, entropy, and free energy changes are directly relevant to energy changes in chemical reactions (B) and thermodynamic relations including chemical equilibrium (B.3)."
+      "rationaleAI": "Second Law: thermodynamic relations in reactions (B, B.1, B.3)."
     },
     {
-      "episodeTitle": "Heat",
-      "pid": "b00fq3d4",
+      "episodeTitle": "The Origins of Life",
+      "pid": "p004y29f",
       "relevantPathsAI": [
-        "B",
-        "B.1"
+        "H",
+        "H.1",
+        "A"
       ],
-      "rationaleAI": "The history of heat science including the laws of thermodynamics and the mechanical equivalent of heat addresses energy changes in chemical reactions (B) and classification by energy changes (B.1)."
+      "rationaleAI": "Origins of life: prebiotic chemical synthesis pathways (H, H.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

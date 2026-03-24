@@ -4,51 +4,46 @@
     {
       "episodeTitle": "Intelligence",
       "pid": "p00545l3",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "D",
-        "E",
-        "E.1",
-        "E.2",
-        "E.3",
-        "E.4"
-      ],
-      "rationaleAI": "Directly addresses the nature and measurement of intelligence, IQ testing from Binet through Spearman's g factor, multiple intelligence theories (Gardner, Sternberg), the heredity-versus-environment controversy, cultural biases in testing, and the Bell Curve controversy on group differences."
+      "relevantPathsAI": ["B", "B.1", "B.2", "B.3", "D", "E", "E.1", "E.4"],
+      "rationaleAI": "Directly addresses IQ testing from Binet's 1905 scale onward (B.1, B.2), cultural bias and validity of intelligence metrics (B.3, E.1), multiple intelligence theories and the nature of cognitive ability (D), and group differences by race, socioeconomic class, and other factors including the nature-versus-nurture debate (E.4)."
     },
     {
       "episodeTitle": "Genetic Determinism",
       "pid": "p005461w",
-      "relevantPathsAI": [
-        "D",
-        "E.4"
-      ],
-      "rationaleAI": "Genetic determinism addresses the debate over how far genes determine personality, behavior, and intelligence, including twin studies, behavioral genetics, and the nature-nurture controversy, directly relevant to theories of intelligence and group differences."
+      "relevantPathsAI": ["D", "E.4", "F"],
+      "rationaleAI": "Examines claims that genes determine intelligence, personality, and behavior, directly engaging theories of cognitive ability (D), the interpretation of group differences through hereditary versus environmental lenses (E.4), and whether personal propensities like sexual orientation and temperament are genetically fixed (F)."
     },
     {
-      "episodeTitle": "The Infant Brain",
-      "pid": "b00r2cn4",
-      "relevantPathsAI": [
-        "A",
-        "D",
-        "E.4",
-        "G.3"
-      ],
-      "rationaleAI": "The infant brain covers neuroplasticity, critical periods for language and visual development, the nature-nurture interplay, and debates about innate versus learned capacities, addressing the nature of human capacities, intellectual abilities, and the development of attitudes."
+      "episodeTitle": "Imagination",
+      "pid": "p00548lc",
+      "relevantPathsAI": ["A", "D", "F"],
+      "rationaleAI": "Addresses imagination as a fundamental cognitive faculty per Kant and its evolutionary origins as an adaptive trait (A), its relationship to problem-solving and abstract reasoning as an intellectual ability (D), and creativity as a persisting personal propensity influencing behavior (F)."
     },
     {
-      "episodeTitle": "Social Darwinism",
-      "pid": "b03vgq1q",
-      "relevantPathsAI": [
-        "E.4",
-        "G.1",
-        "G.2"
-      ],
-      "rationaleAI": "Social Darwinism covers the use of evolutionary rhetoric to justify racial hierarchy and eugenics, and the distinction between Darwin's views and Social Darwinist ideology, directly relevant to group differences in intelligence and the nature and functions of attitudes."
+      "episodeTitle": "Jung",
+      "pid": "p004y2bf",
+      "relevantPathsAI": ["F", "G.1", "G.3"],
+      "rationaleAI": "Jung's concepts of introversion and extroversion as enduring personality types and the collective unconscious as a source of archetypal patterns directly address persisting personal propensities and idiosyncrasies (F), the nature of deep psychological attitudes (G.1), and how attitudes develop through individuation and unconscious processes (G.3)."
+    },
+    {
+      "episodeTitle": "Feminism",
+      "pid": "p00545b0",
+      "relevantPathsAI": ["E.4"],
+      "rationaleAI": "Directly engages whether biological differences between men and women are insuperable, contrasting Cronin's Darwinian view of innate sex-based competitive differences with Greer's arguments for social construction — bearing directly on measurement and interpretation of sex-based group differences in intelligence and abilities (E.4)."
+    },
+    {
+      "episodeTitle": "Altruism",
+      "pid": "p0038x9c",
+      "relevantPathsAI": ["F", "G.1"],
+      "rationaleAI": "Examines whether altruistic behaviour is an innate human propensity or learned disposition, exploring evolutionary explanations for prosocial inclinations that persist across cultures (F) and the nature of cooperative and moral attitudes as fundamental to human social behaviour (G.1)."
+    },
+    {
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": ["A", "D"],
+      "rationaleAI": "Chomsky's theory of innate universal grammar posits language as a persisting biological capacity enabling infinite expression from finite elements, directly addressing the nature of human capacities (A) and nativist versus empiricist models of a core intellectual ability (D)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

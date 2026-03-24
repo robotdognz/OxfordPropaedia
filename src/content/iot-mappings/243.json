@@ -4,148 +4,118 @@
     {
       "episodeTitle": "Ageing the Earth",
       "pid": "p005493g",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "rationaleAI": "Directly addresses the division of geological time into four great eons (Hadean, Archean, Proterozoic, Phanerozoic) and the development of the geological timescale spanning all eras."
+      "relevantPathsAI": ["A", "B", "C", "D"],
+      "rationaleAI": "Directly examines the division of Earth's 4.5-billion-year history into Eons, Eras, Periods, and Epochs — the Hadean, Archaean, Proterozoic, and Phanerozoic — and the geochronological and stratigraphic methods used to establish these divisions."
     },
     {
       "episodeTitle": "The Geological Formation of Britain",
       "pid": "b00n8t48",
-      "relevantPathsAI": [
-        "A",
-        "B.5",
-        "C",
-        "D.2",
-        "D.2.a"
-      ],
-      "rationaleAI": "Britain's geological formation from Precambrian through Carboniferous coal measures, Mesozoic chalk and limestone, to Quaternary ice ages spans all major geological eras and periods."
-    },
-    {
-      "episodeTitle": "The Cambrian Period",
-      "pid": "p003k9bg",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "Directly covers the Cambrian Period (541-485 Mya) and the Cambrian Explosion, the rapid diversification of complex animal life that defines the start of the Paleozoic Era."
+      "relevantPathsAI": ["A", "B", "B.5", "C.3", "D.2.a"],
+      "rationaleAI": "Britain's 600-million-year geological record spans Precambrian Scottish Highlands, Carboniferous coal swamps, Cretaceous chalk, and Pleistocene ice ages, providing a concrete stratigraphic case study across all major eras and periods of geologic time."
     },
     {
       "episodeTitle": "Ediacara Biota",
       "pid": "b00lh2s3",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "The Ediacara biota from the late Precambrian (635-541 Mya) represent the key multicellular life forms of Precambrian time, immediately preceding the Cambrian explosion."
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "The Ediacara Biota are Precambrian life forms vanishing approximately 542 million years ago, representing the most significant known biological assemblage of the late Precambrian and key evidence about life before the Cambrian explosion."
     },
     {
-      "episodeTitle": "The Late Devonian Extinction",
-      "pid": "m000sz7x",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "The Late Devonian Extinction (372-359 Mya) occurred during the Devonian Period of the Paleozoic Era, devastating marine ecosystems and shaping the trajectory of vertebrate evolution."
+      "episodeTitle": "Archaea",
+      "pid": "m002sg10",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Archaea separated from bacteria billions of years ago in deep Precambrian time and later combined to form eukaryotic cells, representing a fundamental evolutionary divergence of the earliest eon of Earth's history."
     },
     {
-      "episodeTitle": "The Permian-Triassic Boundary",
-      "pid": "b007r285",
-      "relevantPathsAI": [
-        "B.6",
-        "C.1"
-      ],
-      "rationaleAI": "The Permian-Triassic extinction (252 Mya) marks the boundary between the Permian (last Paleozoic period) and Triassic (first Mesozoic period), the most severe mass extinction in Earth's history."
+      "episodeTitle": "The Origins of Life",
+      "pid": "p004y29f",
+      "relevantPathsAI": ["A"],
+      "rationaleAI": "Life originated nearly four billion years ago during the Precambrian, and competing hypotheses — primordial soup, hydrothermal vents, RNA world — address the earliest biological events in Earth's geologic timeline."
     },
     {
-      "episodeTitle": "The KT Boundary",
-      "pid": "p003k9d0",
-      "relevantPathsAI": [
-        "C.3",
-        "D.1"
-      ],
-      "rationaleAI": "The K-T boundary at 66 Mya marks the end of the Cretaceous Period (last Mesozoic) and the start of the Tertiary Period (Cenozoic), with the asteroid impact eliminating non-avian dinosaurs."
+      "episodeTitle": "The Cambrian Period",
+      "pid": "p003k9bg",
+      "relevantPathsAI": ["B.1"],
+      "rationaleAI": "Directly covers the Cambrian explosion approximately 550 million years ago, including rapid diversification of complex multicellular life, the Burgess Shale fossil record, and the environmental conditions of ocean chemistry and atmospheric oxygen that drove Cambrian speciation."
     },
     {
-      "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
-      "pid": "b08hpmmf",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "The PETM occurred approximately 56 Mya during the early Tertiary Period of the Cenozoic Era, a major global warming event that drove mammalian diversification."
-    },
-    {
-      "episodeTitle": "Mammals",
-      "pid": "p003k9ds",
-      "relevantPathsAI": [
-        "C.3",
-        "D.1",
-        "D.2"
-      ],
-      "rationaleAI": "Mammalian evolution covers the Mesozoic origins of early mammals through their Cenozoic adaptive radiation, including Pleistocene megafaunal extinctions, spanning multiple geological periods."
-    },
-    {
-      "episodeTitle": "Ice Ages",
-      "pid": "b01qjj99",
-      "relevantPathsAI": [
-        "D.2",
-        "D.2.a"
-      ],
-      "rationaleAI": "Pleistocene glaciations and earlier Snowball Earth events relate directly to the Quaternary Period and the Pleistocene Epoch, as well as Precambrian glacial episodes."
-    },
-    {
-      "episodeTitle": "The Earth's Origins",
-      "pid": "p00547hl",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "Earth's formation approximately 4.5 billion years ago and earliest evidence of life address the beginning of Precambrian time and the formation of the oldest rocks."
-    },
-    {
-      "episodeTitle": "Early Geology",
-      "pid": "b01dgh7d",
-      "relevantPathsAI": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "rationaleAI": "Early geology covers the identification and dating of geological strata, the development of the geological timescale through the work of Smith, Lyell, and Cuvier across all major eras."
-    },
-    {
-      "episodeTitle": "The Evolution of Crocodiles",
-      "pid": "m000zmhf",
-      "relevantPathsAI": [
-        "C.1",
-        "C.3"
-      ],
-      "rationaleAI": "Crocodilian evolution from diverse Triassic archosaurs through Cretaceous survival spans the Mesozoic Era, illustrating evolutionary changes across Triassic, Jurassic, and Cretaceous periods."
-    },
-    {
-      "episodeTitle": "The Evolution of Horses",
-      "pid": "m000fp9y",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Horse evolution from Eohippus approximately 55 Mya to modern Equus spans the Tertiary Period of the Cenozoic Era."
-    },
-    {
-      "episodeTitle": "The Whale - A History",
-      "pid": "b00kfqm6",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Whale evolution from land-dwelling mammals to fully aquatic forms over approximately 50 million years documents a major Tertiary Period evolutionary transformation."
+      "episodeTitle": "Fungi",
+      "pid": "b09r3nwl",
+      "relevantPathsAI": ["B.2", "B.3"],
+      "rationaleAI": "Fungi facilitated plant colonization of land approximately 450 million years ago during the Ordovician-Silurian transition, a pivotal terrestrialization event of the early Paleozoic that reshaped ecosystems and provides coverage for these otherwise underrepresented periods."
     },
     {
       "episodeTitle": "The Fish-Tetrapod Transition",
       "pid": "m001d56q",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "The fish-tetrapod transition occurred in the Devonian Period, with key fossils like Tiktaalik documenting this evolutionary milestone of the Paleozoic Era."
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Covers the late Devonian transition approximately 400 million years ago when lobe-finned fish evolved limbs, lungs, and neck structures to become the first tetrapods, a defining biological event of the Devonian Period."
+    },
+    {
+      "episodeTitle": "The Evolution of Lungs",
+      "pid": "m002d8t2",
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Respiratory lung evolution beginning approximately 400 million years ago during the Devonian Period, when early fish in shallow pools first developed air-breathing capacity, marks a key physiological innovation of the Devonian water-to-land transition."
+    },
+    {
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Directly addresses the late Devonian mass extinction approximately 370 million years ago that eliminated roughly 70 percent of species, linking terrestrial forest development and soil formation to marine anoxia that devastated reef-building organisms and armored fish."
+    },
+    {
+      "episodeTitle": "The Permian-Triassic Boundary",
+      "pid": "b007r285",
+      "relevantPathsAI": ["B.6", "C.1"],
+      "rationaleAI": "The most catastrophic mass extinction in Earth's history at approximately 250 million years ago spans the Permian-Triassic boundary — the transition from the Paleozoic to the Mesozoic Era — with causes including Siberian Traps volcanism and ocean anoxia."
+    },
+    {
+      "episodeTitle": "The KT Boundary",
+      "pid": "p003k9d0",
+      "relevantPathsAI": ["C.3", "D"],
+      "rationaleAI": "The Cretaceous-Paleogene boundary at approximately 66 million years ago marks the end of the Mesozoic Era, with the Chicxulub impact, iridium anomaly evidence, and Deccan Traps volcanism debate defining the transition into the Cenozoic."
+    },
+    {
+      "episodeTitle": "Catastrophism",
+      "pid": "b03s9tlz",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "The catastrophism-versus-uniformitarianism debate centers on the 1970s revival of catastrophist thinking through evidence of a massive asteroid impact 65 million years ago at the end of the Cretaceous Period that caused dinosaur extinction."
+    },
+    {
+      "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
+      "pid": "b08hpmmf",
+      "relevantPathsAI": ["D.1"],
+      "rationaleAI": "A major Tertiary Period climate event approximately 56 million years ago when global temperatures rose over five degrees Celsius, destabilizing methane hydrates and causing widespread extinctions that reshaped early Cenozoic ecosystems."
+    },
+    {
+      "episodeTitle": "Mammals",
+      "pid": "p003k9ds",
+      "relevantPathsAI": ["D", "D.1"],
+      "rationaleAI": "The rise and diversification of mammals during the Cenozoic Era following the KT extinction 65 million years ago, with continental drift from Pangaea breakup creating isolated landmasses that enabled the distinct mammalian radiations characterizing the Tertiary Period."
+    },
+    {
+      "episodeTitle": "The Whale - A History",
+      "pid": "b00kfqm6",
+      "relevantPathsAI": ["D.1"],
+      "rationaleAI": "Whale evolution from small land mammals to fully aquatic creatures over millions of years during the Tertiary Period, with fossil intermediates documenting one of the Cenozoic's most dramatic vertebrate transformations."
+    },
+    {
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
+      "relevantPathsAI": ["A", "D.2", "D.2.a"],
+      "rationaleAI": "Covers ice ages throughout geological history including Precambrian Snowball Earth episodes and the Quaternary glaciation beginning up to 40 million years ago, with detailed treatment of Pleistocene glacial-interglacial cycles driven by Milankovitch orbital cycles and atmospheric CO2 levels."
+    },
+    {
+      "episodeTitle": "Human Evolution",
+      "pid": "p003hyfl",
+      "relevantPathsAI": ["D.2", "D.2.a"],
+      "rationaleAI": "Spans over six million years of hominin evolution during the late Tertiary and Quaternary Periods, with climate change driving speciation and extinction across the Pliocene and Pleistocene, directly documenting the biological events of Earth's most recent geologic periods."
+    },
+    {
+      "episodeTitle": "The Neanderthals",
+      "pid": "b00sq1nv",
+      "relevantPathsAI": ["D.2.a"],
+      "rationaleAI": "Neanderthals inhabited Europe and Central Asia from approximately 400,000 to 28,000 years ago during the Pleistocene Epoch, and their adaptation, tool use, and eventual extinction or hybridization with Homo sapiens characterize a defining chapter of Quaternary prehistory."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

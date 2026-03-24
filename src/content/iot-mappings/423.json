@@ -4,131 +4,100 @@
     {
       "episodeTitle": "Man and Disease",
       "pid": "p00548m0",
-      "relevantPathsAI": [
-        "A",
-        "D.5",
-        "F"
-      ],
-      "rationaleAI": "Covers the full history of disease causation theories, epidemic diseases (plague, smallpox, cholera), tropical medicine, and emerging infectious diseases -- directly relevant to characteristics and causes of disease, infectious diseases, and diseases of particular bodily systems."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "C.2.b",
-        "D.5"
-      ],
-      "rationaleAI": "Immunisation covers vaccine development for polio, measles, and diphtheria, and the immune system's mechanisms -- directly relevant to biological therapy and infectious/contagious diseases."
+      "relevantPathsAI": ["A", "D.5"],
+      "rationaleAI": "Directly traces the history of epidemic disease and evolving theories of disease causation from ancient humoral medicine through germ theory, covering plague, smallpox, and the demographic consequences of infectious disease."
     },
     {
       "episodeTitle": "The Origins of Infectious Disease",
       "pid": "b011pldm",
-      "relevantPathsAI": [
-        "A",
-        "D.5"
-      ],
-      "rationaleAI": "The origins of infectious disease covers pathogen-host co-evolution, zoonotic transmission, antibiotic resistance, and emerging infections -- directly relevant to the characteristics and causes of communicable disease."
-    },
-    {
-      "episodeTitle": "Genetic Mutation",
-      "pid": "b008drvm",
-      "relevantPathsAI": [
-        "D.6",
-        "E",
-        "F.9.a"
-      ],
-      "rationaleAI": "Genetic mutation covers mutations causing genetic diseases (sickle cell anemia, cystic fibrosis) and mutations' significance for understanding cancer -- directly relevant to diseases present at birth, tumours and cancers, and neurochemical disorders."
+      "relevantPathsAI": ["A", "D.5"],
+      "rationaleAI": "Examines how pathogens — bacteria, viruses, fungi, and parasites — emerge through zoonotic spillover from animal reservoirs, and how genomic techniques trace pathogen evolutionary histories to inform surveillance and pandemic prevention."
     },
     {
       "episodeTitle": "Penicillin",
       "pid": "b07dnnkm",
-      "relevantPathsAI": [
-        "C.2.d",
-        "D.5"
-      ],
-      "rationaleAI": "Penicillin covers the discovery and development of the first widely used antibiotic, its impact on treating bacterial infections, and antibiotic resistance -- directly relevant to chemotherapy and infectious diseases."
-    },
-    {
-      "episodeTitle": "Louis Pasteur",
-      "pid": "b08q317p",
-      "relevantPathsAI": [
-        "A",
-        "C.2.b",
-        "D.5"
-      ],
-      "rationaleAI": "Louis Pasteur's germ theory, vaccines for rabies and anthrax, and establishment of microbiology are foundational to understanding disease causation, biological therapy, and infectious diseases."
-    },
-    {
-      "episodeTitle": "Hysteria",
-      "pid": "p004y27w",
-      "relevantPathsAI": [
-        "F.9",
-        "B"
-      ],
-      "rationaleAI": "Hysteria covers the medical construction of a nervous system disorder from antiquity through Charcot and Freud, conversion disorder, and the history of psychiatric classification -- relevant to disorders of the nervous system and disease detection/diagnosis."
-    },
-    {
-      "episodeTitle": "Anaesthetics",
-      "pid": "b00775zv",
-      "relevantPathsAI": [
-        "C.2.a",
-        "C.2.c"
-      ],
-      "rationaleAI": "Anaesthetics covers the history from opium through ether and chloroform to modern techniques -- directly relevant to surgical treatment and pharmacodynamic therapy."
-    },
-    {
-      "episodeTitle": "Hormones",
-      "pid": "m001w0z9",
-      "relevantPathsAI": [
-        "F.5"
-      ],
-      "rationaleAI": "Hormones covers insulin, thyroid hormones, and adrenal hormones and their dysfunction -- directly relevant to diseases of the endocrine system including pancreas, thyroid, and adrenals."
-    },
-    {
-      "episodeTitle": "Genetic Engineering",
-      "pid": "p00545bb",
-      "relevantPathsAI": [
-        "C.2.b",
-        "D.6"
-      ],
-      "rationaleAI": "Genetic engineering covers gene therapy for inherited diseases and CRISPR -- directly relevant to biological therapy and diseases present at birth."
-    },
-    {
-      "episodeTitle": "The Heart",
-      "pid": "p003c1bh",
-      "relevantPathsAI": [
-        "F.1.a"
-      ],
-      "rationaleAI": "The Heart covers cardiac surgery, artificial hearts, and heart transplantation -- directly relevant to diseases of the heart and great vessels."
-    },
-    {
-      "episodeTitle": "The Four Humours",
-      "pid": "b008h5dz",
-      "relevantPathsAI": [
-        "A",
-        "B"
-      ],
-      "rationaleAI": "The four humours theory dominated disease causation thinking from Hippocrates to the 19th century, with humoral treatments including bloodletting and purging -- directly relevant to historical disease classification and diagnosis."
+      "relevantPathsAI": ["C.2.c", "C.2.d", "D.5"],
+      "rationaleAI": "Fleming's discovery and Florey and Chain's mass production of penicillin as the first major antibiotic transformed the treatment of bacterial infections, while the growing crisis of antimicrobial resistance raises ongoing challenges for pharmacodynamic and chemotherapeutic approaches."
     },
     {
       "episodeTitle": "Bacteriophages",
       "pid": "m0020pf0",
-      "relevantPathsAI": [
-        "C.2.b",
-        "D.5"
-      ],
-      "rationaleAI": "Bacteriophages covers phage therapy as an alternative to antibiotics for treating bacterial infections, directly relevant to biological therapy and infectious diseases."
+      "relevantPathsAI": ["C.2.b", "D.5"],
+      "rationaleAI": "Bacteriophages as viruses that destroy bacteria offer a biological therapy alternative to antibiotics for treating chronic bacterial infections, directly relevant to managing infectious disease amid growing antimicrobial resistance."
     },
     {
-      "episodeTitle": "Dorothy Hodgkin",
-      "pid": "m0008wkk",
-      "relevantPathsAI": [
-        "C.2.c",
-        "C.2.d"
-      ],
-      "rationaleAI": "Dorothy Hodgkin's X-ray crystallographic work on penicillin, vitamin B12, and insulin structures was foundational for pharmaceutical development -- relevant to pharmacodynamic therapy and chemotherapy."
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
+      "relevantPathsAI": ["A", "D.5"],
+      "rationaleAI": "Pasteur and Koch's germ theory established the microbial causation of infectious disease, enabling breakthroughs in antibiotics, vaccines, and sterilization foundational to understanding disease causes and contagious illness."
+    },
+    {
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
+      "relevantPathsAI": ["F.5", "D.2"],
+      "rationaleAI": "Covers hormonal roles in homeostasis and the consequences of hormonal imbalance for health, directly relevant to endocrine system disorders of the pituitary, thyroid, adrenals, gonads, and pancreas, as well as metabolic diseases."
+    },
+    {
+      "episodeTitle": "Genetic Mutation",
+      "pid": "b008drvm",
+      "relevantPathsAI": ["A", "D.6", "E"],
+      "rationaleAI": "Mutations as molecular mechanisms producing cancers, hereditary diseases, and contributing to aging directly address disease causation, tumours, and congenital disorders present at birth."
+    },
+    {
+      "episodeTitle": "Free Radicals",
+      "pid": "m0000xqd",
+      "relevantPathsAI": ["A", "D.8", "E"],
+      "rationaleAI": "Free radicals as agents of radiation damage causing cumulative cellular harm linked to aging and cancer, alongside their aberrant role in cell division, connect to disorders caused by physical agents and tumour formation."
+    },
+    {
+      "episodeTitle": "The Curies",
+      "pid": "b05n1dmt",
+      "relevantPathsAI": ["C.2.f", "E"],
+      "rationaleAI": "The Curie family's radioactivity research led directly to radiation-based cancer treatment, and synthesis of artificial radioactive isotopes expanded medical applications of radiation therapy for tumours."
+    },
+    {
+      "episodeTitle": "Hysteria",
+      "pid": "p004y27w",
+      "relevantPathsAI": ["A", "B", "F.9.d"],
+      "rationaleAI": "Hysteria as a diagnosed condition involving conversion of emotional distress into physical symptoms spans historical disease classification from Hippocratic theory through Freud's psychoanalytic reinterpretation, relevant to disorders of the central nervous system and evolving diagnostic practice."
+    },
+    {
+      "episodeTitle": "The Anatomy of Melancholy",
+      "pid": "b010y30m",
+      "relevantPathsAI": ["A", "F.9.d"],
+      "rationaleAI": "Burton's encyclopaedic synthesis of melancholy as a disease caused by humoral imbalance affecting mind and body anticipates modern conceptions of depression, connecting historical disease classification with central nervous system disorders."
+    },
+    {
+      "episodeTitle": "The Four Humours",
+      "pid": "b008h5dz",
+      "relevantPathsAI": ["A", "C.2"],
+      "rationaleAI": "Humoral medicine's framework of disease as imbalance among four bodily fluids dominated Western medical thought for two millennia, directly shaping theories of disease causation and therapeutic practices including bloodletting, purging, and dietary regulation."
+    },
+    {
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["C.2.b", "D.6"],
+      "rationaleAI": "Techniques for manipulating genetic material have direct medical applications in treating hereditary and congenital conditions, representing a form of biological therapy with transformative potential for diseases present at birth."
+    },
+    {
+      "episodeTitle": "Neuroscience",
+      "pid": "b00fbd26",
+      "relevantPathsAI": ["B", "F.9", "F.9.d"],
+      "rationaleAI": "Neuroimaging advances that reveal the active brain in real time are directly relevant to detecting and diagnosing neurological and psychiatric conditions, with implications for treating disorders of the central nervous system."
+    },
+    {
+      "episodeTitle": "The Great Stink",
+      "pid": "m001gjcm",
+      "relevantPathsAI": ["D.5"],
+      "rationaleAI": "Cholera epidemics from waterborne pathogens in the contaminated Thames and Bazalgette's sewer engineering as a public health intervention illustrate the transmission and prevention of infectious contagious disease."
+    },
+    {
+      "episodeTitle": "Mitochondria",
+      "pid": "m001md34",
+      "relevantPathsAI": ["D.2", "F.9.a"],
+      "rationaleAI": "Mitochondrial dysfunction is linked to neurodegenerative diseases and aging, and mitochondria are central to biomedical research into metabolic disorders, connecting cellular energetics to specific disease categories."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

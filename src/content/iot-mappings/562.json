@@ -14,20 +14,31 @@
       "rationaleAI": "The history of education covering ancient Greek paideia, medieval scholastic education, the humanist curriculum, Enlightenment universal education, mass compulsory schooling, and progressive movements directly spans multiple periods of educational history."
     },
     {
+      "episodeTitle": "The Medieval University",
+      "pid": "b00zf384",
+      "relevantPathsAI": [
+        "B.3.c",
+        "B.3"
+      ],
+      "rationaleAI": "Directly addresses the rise of medieval universities at Bologna, Paris, and Oxford, the liberal arts curriculum of trivium and quadrivium rooted in ancient Greek educational tradition, the training of clergy and lawyers, and the development of institutional structures including faculties, degrees, and academic freedom—core content of B.3.c."
+    },
+    {
       "episodeTitle": "The 12th Century Renaissance",
       "pid": "b07z6vzq",
       "relevantPathsAI": [
-        "B.3.c"
+        "B.3.c",
+        "B.5.a"
       ],
-      "rationaleAI": "The 12th-century Renaissance's founding of universities (Bologna, Paris, Oxford), the development of scholastic philosophy, and the troubadour tradition directly address the 12th-century rise of secular urban schools and universities."
+      "rationaleAI": "Cathedral schools evolving into the first European universities at Bologna, Paris, and Oxford, and the recovery of Arabic translations of Aristotle, Euclid, and Ptolemy channeled into Latin scholarship, directly address the 12th-century educational renaissance (B.3.c) and Arabic influences on later humanism (B.5.a)."
     },
     {
       "episodeTitle": "The Carolingian Renaissance",
       "pid": "p003hydz",
       "relevantPathsAI": [
-        "B.3.b"
+        "B.3.b",
+        "B.3.a"
       ],
-      "rationaleAI": "The Carolingian Renaissance's promotion of learning and literacy, the palace school at Aachen under Alcuin, and monastic education directly address the cultural revival under Charlemagne and his successors."
+      "rationaleAI": "Charlemagne's cultural revival centered on monastic scriptoria preserving classical texts, standardizing Latin script, and advancing education through cathedral schools maps directly to B.3.b (cultural revival under Charlemagne) and B.3.a (development of monastic schools)."
     },
     {
       "episodeTitle": "Alcuin",
@@ -37,6 +48,16 @@
         "B.3.a"
       ],
       "rationaleAI": "Alcuin's reform of education across the Frankish Empire through schools and standardized liberal arts curriculum directly addresses Charlemagne's cultural revival and its educational institutions."
+    },
+    {
+      "episodeTitle": "The Jesuits",
+      "pid": "b007731w",
+      "relevantPathsAI": [
+        "B.5.d",
+        "B.6.b",
+        "B.6.c"
+      ],
+      "rationaleAI": "The Society of Jesus established over 500 schools and universities and developed the Ratio Studiorum, a standardized curriculum that influenced modern education systems, directly addressing Counter-Reformation educational practice (B.5.d), 17th-18th century educational methods (B.6.b), and European educational influence in New World colonies (B.6.c)."
     },
     {
       "episodeTitle": "Comenius",
@@ -57,13 +78,21 @@
       "rationaleAI": "Erasmus's advocacy of educational reform and return to classical sources (ad fontes), the studia humanitatis, directly addresses the humanistic tradition in northern and western Europe during the Renaissance."
     },
     {
-      "episodeTitle": "The Jesuits",
-      "pid": "b007731w",
+      "episodeTitle": "The Grand Tour",
+      "pid": "p00548fs",
       "relevantPathsAI": [
-        "B.5.d",
-        "B.6.c"
+        "B.6.b",
+        "B.6.a"
       ],
-      "rationaleAI": "The Jesuits' establishment of schools and universities across Europe and missionary educational work in Asia and South America address education during the Counter-Reformation and European influences in New World development."
+      "rationaleAI": "The 18th-century tradition of completing elite education through travel to study classical antiquities, Renaissance art, and architecture in France and Italy directly addresses educational theories and practices of the period (B.6.b) and its social setting (B.6.a)."
+    },
+    {
+      "episodeTitle": "Greyfriars and Blackfriars",
+      "pid": "p003k9dz",
+      "relevantPathsAI": [
+        "B.3.c"
+      ],
+      "rationaleAI": "The Dominican and Franciscan mendicant orders reshaped curricula at Paris and Oxford universities by reconciling Aristotelian philosophy with Christian theology through figures like Aquinas and Bonaventure, directly contributing to the 12th-13th century educational transformation described in B.3.c."
     },
     {
       "episodeTitle": "The Translation Movement",
@@ -80,15 +109,33 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "The Abbasid Caliphate's golden age with the House of Wisdom and achievements in learning directly addresses Islamic education during the early medieval period."
+      "rationaleAI": "Abbasid court patronage stimulated a golden age of Arabic philosophy, mathematics, astronomy, and medicine, and systematic translation of Classical Greek texts preserved and extended ancient learning—directly addressing the intellectual and educational foundations of Islamic civilization (B.2.d)."
     },
     {
-      "episodeTitle": "The Grand Tour",
-      "pid": "p00548fs",
+      "episodeTitle": "Maths in the Early Islamic World",
+      "pid": "b08dr5qt",
       "relevantPathsAI": [
-        "B.6.b"
+        "B.2.d"
       ],
-      "rationaleAI": "The Grand Tour as the customary educational journey for young British aristocrats, with its cultural purposes of classical education and connoisseurship, directly addresses 17th-18th century educational practices."
+      "rationaleAI": "Mathematics in the early Islamic world, including the House of Wisdom and the transmission of knowledge to medieval Europe, directly addresses Islamic education and its influence on Western learning."
+    },
+    {
+      "episodeTitle": "Averroes",
+      "pid": "p0038x79",
+      "relevantPathsAI": [
+        "B.2.d",
+        "B.5.a"
+      ],
+      "rationaleAI": "Averroes's vast commentary on Aristotle within Islamic intellectual life and his transmission of classical philosophy to Christian thinkers including Aquinas address Islamic education (B.2.d) and the Arabic and secular influences on Renaissance humanism (B.5.a)."
+    },
+    {
+      "episodeTitle": "The May Fourth Movement",
+      "pid": "m001282c",
+      "relevantPathsAI": [
+        "B.8.c",
+        "B.8.a"
+      ],
+      "rationaleAI": "The 1919 movement's advocacy for science, democracy, vernacular literature, and rejection of Confucian educational tradition represents a watershed in the modernization of Chinese education (B.8.c), driven by the political and intellectual trends of the 20th century (B.8.a)."
     },
     {
       "episodeTitle": "Youth",
@@ -100,12 +147,22 @@
       "rationaleAI": "Youth's coverage of Rousseau's Emile, Victorian anxieties about juvenile delinquency, the emergence of youth culture, and extended adolescence addresses early reform movements in pedagogy and 20th-century educational trends."
     },
     {
-      "episodeTitle": "Maths in the Early Islamic World",
-      "pid": "b08dr5qt",
+      "episodeTitle": "Montaigne",
+      "pid": "b01s0qmj",
       "relevantPathsAI": [
-        "B.2.d"
+        "B.5.c",
+        "B.6.b"
       ],
-      "rationaleAI": "Mathematics in the early Islamic world, including the House of Wisdom and the transmission of knowledge to medieval Europe, directly addresses Islamic education and its influence on Western learning."
+      "rationaleAI": "Montaigne's essays explicitly addressed education as one of his key subjects, and his skeptical humanistic approach exemplifies the northern European humanistic educational tradition (B.5.c) that influenced Enlightenment pedagogical thought (B.6.b)."
+    },
+    {
+      "episodeTitle": "Seventeenth Century Print Culture",
+      "pid": "p003hycj",
+      "relevantPathsAI": [
+        "B.6.a",
+        "B.6.b"
+      ],
+      "rationaleAI": "Expanding literacy rates, the democratization of access to written knowledge through cheap print, and the growth of book production directly shaped the social and historical setting for 17th-century education (B.6.a) and its evolving practices (B.6.b)."
     },
     {
       "episodeTitle": "Rome and European Civilization",
@@ -114,8 +171,58 @@
         "B.1.e"
       ],
       "rationaleAI": "Rome's legacy in education through Latin, governance models, and the Renaissance rediscovery of classical culture addresses ancient Roman education and its lasting influence."
+    },
+    {
+      "episodeTitle": "Zen",
+      "pid": "b04sxv29",
+      "relevantPathsAI": [
+        "B.4.c"
+      ],
+      "rationaleAI": "Zen's spread to medieval Japan and its associated temples, monasteries, and universities that remain culturally significant institutions address Japanese educational traditions from ancient times through the pre-modern period (B.4.c)."
+    },
+    {
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": [
+        "A.3.d",
+        "B.8.a"
+      ],
+      "rationaleAI": "Lenin's invention of the one-party state model and Marxist-Leninist ideology established the paradigm for party-controlled educational systems (A.3.d) that shaped 20th-century education across communist nations (B.8.a)."
+    },
+    {
+      "episodeTitle": "Justinian's Legal Code",
+      "pid": "b082j2q2",
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.3.c"
+      ],
+      "rationaleAI": "The Corpus Juris Civilis reflects Byzantine intellectual and institutional culture (B.2.b), and its rediscovery in medieval Western Europe became foundational to legal scholarship at Bologna and other early universities (B.3.c)."
+    },
+    {
+      "episodeTitle": "Japan's Sakoku Period",
+      "pid": "b01rlptf",
+      "relevantPathsAI": [
+        "B.4.c"
+      ],
+      "rationaleAI": "Dutch learning (rangaku) during Japan's period of national isolation enabled continued intellectual and scientific exchange with Europe through Dejima, representing a distinctive channel of educational transmission in pre-modern Japanese education (B.4.c)."
+    },
+    {
+      "episodeTitle": "Harriet Martineau",
+      "pid": "b084d7b0",
+      "relevantPathsAI": [
+        "B.7.b"
+      ],
+      "rationaleAI": "Martineau's popularization of political economy through accessible writing made complex knowledge available beyond elite audiences, exemplifying 19th-century educational reform movements that democratized learning (B.7.b)."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": [
+        "B.8.b"
+      ],
+      "rationaleAI": "Critical theory's profound influence on 1960s New Left movements and cultural studies reshaped Western university curricula and educational philosophy, representing an experimental intellectual movement that transformed 20th-century education (B.8.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

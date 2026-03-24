@@ -2,86 +2,138 @@
   "sectionCode": "522",
   "mappings": [
     {
-      "episodeTitle": "Booth's Life and Labour Survey",
-      "pid": "m000wsxf",
-      "relevantPathsAI": [
-        "C.5",
-        "D.1",
-        "D.2.f"
-      ],
-      "rationaleAI": "Booth's Life and Labour Survey documenting poverty across London, his poverty maps, classification of poverty levels, and influence on the Old Age Pensions Act directly address poverty as a social concern, the background of welfare services, and community development."
+      "episodeTitle": "The British Empire's Legacy",
+      "pid": "p005459p",
+      "relevantPathsAI": ["A.4", "B"],
+      "rationaleAI": "Directly addresses how colonial history shaped racial attitudes, immigration patterns, and the development of multicultural Britain, connecting to minority and ethnic group formation (A.4) and the social effects of racial prejudice (B)."
+    },
+    {
+      "episodeTitle": "Ibn Khaldun",
+      "pid": "b00qckbw",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Ibn Khaldun's theory of asabiyyah (group solidarity) and its cyclical decay is a foundational analysis of how social groups form, cohere, and dissolve, directly relevant to classifications of groups (A.1)."
     },
     {
       "episodeTitle": "Marriage",
       "pid": "p00548c2",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "The history of marriage as a social, legal, and religious institution, its changing significance for gender relations and family structure, directly addresses the modern family and its organization and functions."
+      "relevantPathsAI": ["A.2"],
+      "rationaleAI": "Traces the history and evolution of marriage as a social institution, covering family structure, the transition from informal arrangements to regulated monogamy, and the competing purposes of marriage including procreation, companionship, and economic stability — directly addressing the modern family's organization and functions (A.2)."
+    },
+    {
+      "episodeTitle": "Booth's Life and Labour Survey",
+      "pid": "m000wsxf",
+      "relevantPathsAI": ["C.5", "C.2", "D.1"],
+      "rationaleAI": "Charles Booth's empirical survey discovered that nearly a third of Londoners lived in poverty, with many being unsupported elderly or children, and his campaign for old age pensions directly connects to poverty (C.5), old age as a social concern (C.2), and the historical origins of modern welfare services (D.1)."
+    },
+    {
+      "episodeTitle": "The Great Disruption",
+      "pid": "p00545kh",
+      "relevantPathsAI": ["A.1", "A.2"],
+      "rationaleAI": "Fukuyama's analysis of declining social capital, rising crime, family breakdown, and erosion of trust in post-1960s Western societies addresses the transformation of group structures (A.1) and the disintegration of modern family organization (A.2) as consequences of the shift from industrial to information economies."
     },
     {
       "episodeTitle": "The Temperance Movement",
       "pid": "m0013zl8",
-      "relevantPathsAI": [
-        "C.9",
-        "D.1"
-      ],
-      "rationaleAI": "The temperance movement's campaign against alcohol, its origins in evangelical Christianity, connections to public health, and relationship to working-class reform directly address drug and alcohol abuse as a social concern and the background of social welfare services."
+      "relevantPathsAI": ["A.3", "C.9", "D.1"],
+      "rationaleAI": "The temperance movement exemplifies a special-interest group (A.3) organized around alcohol abuse as a social problem (C.9), establishing Temperance Halls as alternative community centers and driving legislative reform that prefigured modern social welfare approaches (D.1)."
     },
     {
-      "episodeTitle": "The Theory of the Leisure Class",
-      "pid": "m001sdrt",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Veblen's Theory of the Leisure Class analyzing how the wealthy display status through conspicuous consumption addresses classifications of groups and the relationship between social class and social structure."
+      "episodeTitle": "Childhood",
+      "pid": "p0054653",
+      "relevantPathsAI": ["C.1", "D.2.b"],
+      "rationaleAI": "Directly examines how the concept of childhood transformed over the twentieth century, including children entering the workforce later, spending more time in school, and the question of whether a clear childhood-adulthood distinction helps individuals — relevant to adolescence (C.1) and child welfare (D.2.b)."
     },
     {
-      "episodeTitle": "The Poor Laws",
-      "pid": "m0001m73",
-      "relevantPathsAI": [
-        "C.5",
-        "D.1",
-        "D.2.a",
-        "D.2.b"
-      ],
-      "rationaleAI": "The Poor Laws cover the Elizabethan parish system, the New Poor Law workhouse regime, Malthusian and Benthamite influences, and the ideological underpinnings of welfare policy, directly addressing poverty, the background of welfare services, and family and child welfare."
+      "episodeTitle": "Octavia Hill",
+      "pid": "b0100jpz",
+      "relevantPathsAI": ["C.5", "D.1", "D.2.a"],
+      "rationaleAI": "Octavia Hill's pioneering social housing for the urban poor and her advocacy for voluntary welfare action over state intervention directly address poverty (C.5), the history of social and welfare services (D.1), and family welfare through housing reform (D.2.a)."
     },
     {
       "episodeTitle": "The Gin Craze",
       "pid": "b084zk6z",
-      "relevantPathsAI": [
-        "C.9",
-        "D.1"
-      ],
-      "rationaleAI": "The gin craze covers a public health and social crisis from cheap gin, moral panic, urbanisation and poverty, and legislative attempts to control consumption, directly addressing drug and alcohol abuse and the background of social welfare services."
+      "relevantPathsAI": ["C.9", "C.5"],
+      "rationaleAI": "The eighteenth-century gin craze caused widespread addiction, infant mortality, and urban disorder among London's poor, with legislative responses attempting regulation — directly addressing drug and alcohol abuse (C.9) and the intersection of substance abuse with poverty (C.5)."
     },
     {
-      "episodeTitle": "Drugs",
-      "pid": "p00548fh",
-      "relevantPathsAI": [
-        "C.9",
-        "D.2.g"
-      ],
-      "rationaleAI": "The history of drugs covers the distinction between therapeutic and recreational use, the regulation of drugs, and the shifting boundary between medicine and addiction, directly addressing drug abuse and medical social services."
+      "episodeTitle": "A Room of One's Own",
+      "pid": "m001kh32",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Woolf's argument that women need financial independence and private space to produce literature is a landmark analysis of women's social and economic status (C.3), connecting gender inequality to material conditions and institutional barriers."
     },
     {
-      "episodeTitle": "Ageing",
-      "pid": "p00545c0",
-      "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "Ageing covers the demographic shift toward longer lifespans, implications for healthcare and pensions, age-related diseases including dementia, and the social dimensions of growing older, directly addressing old age as a special social concern."
+      "episodeTitle": "Englishness",
+      "pid": "p00546r8",
+      "relevantPathsAI": ["A.4", "B"],
+      "rationaleAI": "Examines English national identity and whether it can still be defined given Britain's high rate of inter-racial marriage, directly addressing the relationship between ethnic groups (A.4) and contemporary debates about ethnicity and prejudice in multicultural society (B)."
     },
     {
-      "episodeTitle": "Feminism",
-      "pid": "p00545b0",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "Feminism covers first, second, and third-wave feminism, suffrage, reproductive rights, and the transformation of women's legal, economic, and social status, directly addressing women's social and legal status."
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["B", "A.4"],
+      "rationaleAI": "Covers the misuse of IQ testing in eugenics, forced sterilization, and scientific racism, as well as cultural bias in testing and the nature-versus-nurture debate — directly relevant to the social effects of racial and ethnic prejudice (B) and the treatment of minority groups (A.4)."
+    },
+    {
+      "episodeTitle": "Consequences of the Industrial Revolution",
+      "pid": "b00wr9r7",
+      "relevantPathsAI": ["A.1", "C.5", "D.1"],
+      "rationaleAI": "Examines how workers moved from agricultural settlements to factory towns, transforming health, housing, and labour relations, and the theories developed to address urban living — relevant to changing group structures (A.1), new forms of poverty (C.5), and the origins of social welfare responses (D.1)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": ["A.1", "C.5"],
+      "rationaleAI": "Enclosures dispossessed smallholders and created the industrial proletariat through class formation, directly addressing the restructuring of social groups (A.1) and the creation of poverty through changes in land tenure and property rights (C.5)."
+    },
+    {
+      "episodeTitle": "Edith Wharton",
+      "pid": "m0000ml8",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Wharton's novels explore women's limited choices and the constraints on female freedom even among the wealthy in Gilded Age New York, directly addressing women's social status and the gendered limitations imposed by class structure (C.3)."
+    },
+    {
+      "episodeTitle": "Lysistrata",
+      "pid": "m001y2z4",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Aristophanes' comedy depicts women collectively organizing to force political change through a sex strike, serving as a foundational text on women's social status, gender relations, and women's collective agency within patriarchal structures (C.3)."
+    },
+    {
+      "episodeTitle": "A Christmas Carol",
+      "pid": "m0012fl5",
+      "relevantPathsAI": ["C.5", "D.1"],
+      "rationaleAI": "Dickens's novella critiques money-obsessed isolation from society and sentimentally portrays the struggles of the poor Cratchit family, serving as a culturally influential work shaping attitudes toward poverty (C.5) and social responsibility toward the disadvantaged (D.1)."
+    },
+    {
+      "episodeTitle": "Bedlam",
+      "pid": "b0739rfg",
+      "relevantPathsAI": ["D.2.g"],
+      "rationaleAI": "The history of Bedlam as a psychiatric institution illustrates the evolution of society's treatment of the mentally ill, from spectacle to medical care, directly relevant to medical and psychiatric social services (D.2.g)."
+    },
+    {
+      "episodeTitle": "Hysteria",
+      "pid": "p004y27w",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Hysteria's long association with femininity and the medicalization of women's experience — from the ancient Greek wandering womb theory through Freud's psychoanalytic reinterpretation — directly addresses the intersection of gender stereotypes with women's social status (C.3)."
+    },
+    {
+      "episodeTitle": "Rousseau on Education",
+      "pid": "m00094kn",
+      "relevantPathsAI": ["C.1", "C.3"],
+      "rationaleAI": "Rousseau's Emile theorizes childhood development and education through direct experience (relevant to adolescence, C.1), while his proposal of a subordinate educational role for women through the character Sophie directly addresses women's social status (C.3)."
+    },
+    {
+      "episodeTitle": "Aldous Huxley's Brave New World",
+      "pid": "b00jn8bc",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Huxley's dystopia envisions a society organized through rigid social engineering and caste-like stratification, offering a critical fictional analysis of group classification systems and the suppression of individuality within engineered social structures (A.1)."
+    },
+    {
+      "episodeTitle": "The Black Death",
+      "pid": "b00bcqt8",
+      "relevantPathsAI": ["A.1", "C.5"],
+      "rationaleAI": "The demographic catastrophe empowered surviving peasants economically and challenged feudal social structures, fundamentally restructuring group hierarchies (A.1) and transforming the distribution of poverty and wealth across medieval European society (C.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

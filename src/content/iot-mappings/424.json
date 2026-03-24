@@ -2,132 +2,132 @@
   "sectionCode": "424",
   "mappings": [
     {
-      "episodeTitle": "The Hippocratic Oath",
-      "pid": "b014gdqq",
-      "relevantPathsAI": [
-        "C.2.a",
-        "A"
-      ],
-      "rationaleAI": "The Hippocratic Oath covers the foundational ethical code for medical practice including prohibitions on harm, patient confidentiality, and contemporary debates about euthanasia and genetic engineering -- directly relevant to the ethical basis of medical practice and medical education."
+      "episodeTitle": "Penicillin",
+      "pid": "b07dnnkm",
+      "relevantPathsAI": ["B", "C.1.d", "H.4"],
+      "rationaleAI": "Fleming's discovery and Florey and Chain's mass production of penicillin as the first major antibiotic revolutionized treatment of infectious disease, constituting landmark specialized medical research (B) and clinical research (C.1.d), and directly addressing the use of therapeutic agents for infection control (H.4)."
     },
     {
       "episodeTitle": "Man and Disease",
       "pid": "p00548m0",
-      "relevantPathsAI": [
-        "C",
-        "D",
-        "H"
-      ],
-      "rationaleAI": "Man and Disease covers the development of epidemiology, public health infrastructure, vaccination, and the relationship between urbanisation and disease -- relevant to medical practice, public health services, and prevention of infection."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "H.1",
-        "H.5"
-      ],
-      "rationaleAI": "Immunisation covers vaccination and public health campaigns from Jenner through modern vaccine development and anti-vaccination movements -- directly relevant to vaccination/immunization and prevention of epidemics."
-    },
-    {
-      "episodeTitle": "Louis Pasteur",
-      "pid": "b08q317p",
-      "relevantPathsAI": [
-        "H.3",
-        "H.4",
-        "D"
-      ],
-      "rationaleAI": "Louis Pasteur's germ theory, pasteurisation, and vaccine development transformed medical practice and public health -- directly relevant to destruction of infectious agents, prophylactic medication, and public health."
+      "relevantPathsAI": ["D", "H", "H.5"],
+      "rationaleAI": "Traces epidemic disease from antiquity through germ theory breakthroughs by Pasteur and Koch that enabled vaccination and public health measures, covering public health services (D), infection prevention (H), and the prevention and control of epidemics (H.5)."
     },
     {
       "episodeTitle": "Microbiology",
       "pid": "b007753d",
-      "relevantPathsAI": [
-        "B",
-        "D",
-        "H.3"
-      ],
-      "rationaleAI": "Microbiology covers germ theory, Koch's postulates, antibiotics, vaccines, and the microbiome -- directly relevant to specialized medical research, public health, and destruction of infectious agents."
+      "relevantPathsAI": ["B", "H", "H.3"],
+      "rationaleAI": "Pasteur and Koch's germ theory enabled breakthroughs in antibiotics, vaccines, and sterilization, underpinning specialized medical research (B) and destruction of infectious agents through aseptic and antiseptic precautions (H.3)."
+    },
+    {
+      "episodeTitle": "The Hippocratic Oath",
+      "pid": "b014gdqq",
+      "relevantPathsAI": ["C.2.a", "C.2", "C.2.d"],
+      "rationaleAI": "Directly addresses the ethical basis of medical practice including the Hippocratic oath's prohibitions against harm and its modern adaptations (C.2.a), professional self-regulation and maintenance of standards (C.2, C.2.d)."
+    },
+    {
+      "episodeTitle": "Galen",
+      "pid": "b03c4dys",
+      "relevantPathsAI": ["A", "B", "C"],
+      "rationaleAI": "Galen's clinical practice serving Roman emperors, anatomical research through dissection, and medical theories that dominated Western and Islamic medicine for over a millennium encompass medical education (A), specialized medical research (B), and the broader practice of medicine (C)."
+    },
+    {
+      "episodeTitle": "Medical Ethics",
+      "pid": "p005465c",
+      "relevantPathsAI": ["C.2.a", "C.2"],
+      "rationaleAI": "Addresses moral dilemmas in advancing biomedical technology including end-of-life care, genetic privacy, treatment allocation, and consent, directly covering the ethical basis of medical practice and problems relating to euthanasia (C.2.a) and maintenance of professional standards (C.2)."
+    },
+    {
+      "episodeTitle": "The Four Humours",
+      "pid": "b008h5dz",
+      "relevantPathsAI": ["B", "C"],
+      "rationaleAI": "Humoral medicine originating with Hippocrates and systematized by Galen dominated Western medical theory and therapeutic practices from antiquity through the nineteenth century, representing a foundational chapter in specialized medical research (B) and the practice of medicine (C)."
     },
     {
       "episodeTitle": "The Great Stink",
       "pid": "m001gjcm",
-      "relevantPathsAI": [
-        "D",
-        "F"
-      ],
-      "rationaleAI": "The Great Stink covers London's sanitation crisis, cholera epidemics, and Bazalgette's sewer system -- directly relevant to public health services and environmental sanitation."
+      "relevantPathsAI": ["D", "F"],
+      "rationaleAI": "Bazalgette's sewer system as a public health intervention that eliminated waterborne cholera from London directly illustrates environmental sanitation and health through control of water pollution (F) and public health services and administration (D)."
+    },
+    {
+      "episodeTitle": "Immunisation",
+      "pid": "p003c19q",
+      "relevantPathsAI": ["H.1", "H.5", "D"],
+      "rationaleAI": "Traces vaccination history from Montagu's variolation through Jenner's cowpox vaccine to global smallpox eradication, directly covering vaccination and immunization (H.1), epidemic control (H.5), and public health mandates including compulsory vaccination policy (D)."
+    },
+    {
+      "episodeTitle": "Louis Pasteur",
+      "pid": "b08q317p",
+      "relevantPathsAI": ["B", "H.1", "H.3", "D"],
+      "rationaleAI": "Pasteur's germ theory revolutionized public health (D), his vaccines against anthrax and rabies advanced immunization (H.1), and pasteurisation represents destruction of infectious agents as prophylaxis (H.3), all constituting landmark specialized medical research (B)."
+    },
+    {
+      "episodeTitle": "The Origins of Infectious Disease",
+      "pid": "b011pldm",
+      "relevantPathsAI": ["H", "H.5", "B"],
+      "rationaleAI": "Examines zoonotic spillover of pathogens including HIV and Ebola, genomic tracing of pathogen evolution, and strategies for pandemic surveillance and vaccine development, directly relevant to infection prevention (H), epidemic control (H.5), and medical research (B)."
     },
     {
       "episodeTitle": "Anaesthetics",
       "pid": "b00775zv",
-      "relevantPathsAI": [
-        "B",
-        "C.1.b"
-      ],
-      "rationaleAI": "Anaesthetics covers the development of anaesthesiology as a medical specialty and the transformation of surgical practice -- directly relevant to specialized medical fields and hospital/specialist practice."
+      "relevantPathsAI": ["B", "C.1.b"],
+      "rationaleAI": "The development of ether and chloroform anaesthesia transformed hospital and surgical practice (C.1.b), representing a major advance in specialized medical research (B) that fundamentally changed what surgery could accomplish."
     },
     {
-      "episodeTitle": "Anatomy",
-      "pid": "p005488j",
-      "relevantPathsAI": [
-        "A",
-        "B"
-      ],
-      "rationaleAI": "Anatomy covers Vesalius's anatomical revolution, anatomical theatres, body snatching, and the Anatomy Act of 1832 -- directly relevant to medical education and specialized medical research."
+      "episodeTitle": "Bacteriophages",
+      "pid": "m0020pf0",
+      "relevantPathsAI": ["B", "H.4"],
+      "rationaleAI": "Bacteriophages as a therapeutic alternative to antibiotics for treating chronic bacterial infections address the use of therapeutic agents (H.4) and represent an active frontier of specialized medical research (B) in the context of growing antimicrobial resistance."
+    },
+    {
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["B", "C.1.d", "C.2.a"],
+      "rationaleAI": "Medical applications of genetic engineering including the Human Genome Project and gene therapy represent specialized medical research (B) and clinical research frontiers (C.1.d), while ethical concerns about altering human hereditary material raise fundamental questions for medical ethics (C.2.a)."
+    },
+    {
+      "episodeTitle": "Hypnosis",
+      "pid": "m002cqq3",
+      "relevantPathsAI": ["B", "C"],
+      "rationaleAI": "The evolution from Mesmer's animal magnetism to hypnotism's use in psychotherapy and pain management traces a specialized medical discipline (B), and debates about its therapeutic applications illustrate the broader development of medical practice (C)."
+    },
+    {
+      "episodeTitle": "The Gin Craze",
+      "pid": "b084zk6z",
+      "relevantPathsAI": ["D", "I.2"],
+      "rationaleAI": "The public health devastation of unregulated gin consumption and the legislative Gin Acts attempting regulation illustrate public health administration (D) and health and safety laws controlling substances harmful to the population (I.2)."
+    },
+    {
+      "episodeTitle": "The Black Death",
+      "pid": "b00bcqt8",
+      "relevantPathsAI": ["H.5", "H.2"],
+      "rationaleAI": "The bubonic plague pandemic killing one-third of Europe's population represents a defining episode in epidemic prevention and control (H.5), and empirical observation of contagion advanced understanding of quarantine and isolation measures (H.2)."
+    },
+    {
+      "episodeTitle": "Bedlam",
+      "pid": "b0739rfg",
+      "relevantPathsAI": ["E", "C.1.b"],
+      "rationaleAI": "The Hospital of St Mary of Bethlehem as England's institution for the mentally ill illustrates hospital services and facilities (E) and specialist medical practice in psychiatry (C.1.b)."
+    },
+    {
+      "episodeTitle": "Annie Besant",
+      "pid": "b01jxtd7",
+      "relevantPathsAI": ["I.1", "I.2"],
+      "rationaleAI": "Besant's role in the 1888 match factory strike exposed appalling industrial working conditions and health hazards, directly relating to the scope of occupational medicine (I.1) and the impetus for health and safety laws regulating worker protections (I.2)."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["G"],
+      "rationaleAI": "Malthus's theory that population growth outstrips food supply, with famine and disease as natural checks, directly frames the problems of nutrient requirements, world food supply, and world population that underpin efforts to prevent malnutrition (G)."
     },
     {
       "episodeTitle": "Drugs",
       "pid": "p00548fh",
-      "relevantPathsAI": [
-        "I.2",
-        "H.4"
-      ],
-      "rationaleAI": "Drugs covers the regulation of pharmacologically active substances, drug control treaties, and the pharmaceutical industry -- directly relevant to health and safety laws controlling foods and drugs, and prophylactic medication."
-    },
-    {
-      "episodeTitle": "Avicenna",
-      "pid": "b00855lt",
-      "relevantPathsAI": [
-        "A",
-        "C.1.b"
-      ],
-      "rationaleAI": "Avicenna's Canon of Medicine dominated medical education for centuries, representing a foundational text for understanding the historical practice of medicine and specialist medical knowledge."
-    },
-    {
-      "episodeTitle": "The Oath",
-      "pid": "p003wtk7",
-      "relevantPathsAI": [
-        "C.2.a"
-      ],
-      "rationaleAI": "The Oath episode covers the Hippocratic Oath in its classical context as a binding religious and professional instrument -- directly relevant to the ethical basis of medical practice."
-    },
-    {
-      "episodeTitle": "Animal Experiments and Rights",
-      "pid": "p00545f8",
-      "relevantPathsAI": [
-        "C.2.a",
-        "B"
-      ],
-      "rationaleAI": "Animal Experiments and Rights covers the ethics of vivisection and animal models in biomedical research, the three Rs framework, and regulatory frameworks -- relevant to the ethical basis of medical practice and specialized medical research."
-    },
-    {
-      "episodeTitle": "Penicillin",
-      "pid": "b07dnnkm",
-      "relevantPathsAI": [
-        "H.4"
-      ],
-      "rationaleAI": "Penicillin's discovery and development as the first antibiotic, and the problem of antibiotic resistance, is directly relevant to the use of therapeutic agents and prophylactic medication."
-    },
-    {
-      "episodeTitle": "Echolocation",
-      "pid": "b0b6hrl3",
-      "relevantPathsAI": [
-        "I.2"
-      ],
-      "rationaleAI": "Echolocation has applications in medical imaging technology (ultrasound), tangentially relevant to industrial medicine, but the overlap is too tangential."
+      "relevantPathsAI": ["H.4", "I.2"],
+      "rationaleAI": "The history of narcotics in medicine and the ambivalent relationship between medicine and poison address therapeutic and prophylactic medication (H.4), while the regulation of pharmacologically active substances connects to health and safety laws controlling drugs (I.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

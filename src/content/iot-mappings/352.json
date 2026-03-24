@@ -4,72 +4,70 @@
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.3",
-        "C.1.c"
-      ],
-      "rationaleAI": "Parasitism is a key negative interspecific interaction where one population is harmed, with co-evolutionary arms races between hosts and parasites illustrating ecological and evolutionary aspects of population interaction."
-    },
-    {
-      "episodeTitle": "Behavioural Ecology",
-      "pid": "b04tljk0",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1.c"
-      ],
-      "rationaleAI": "Behavioural ecology covers predator-prey dynamics (hawk-dove games), cooperation and altruism (positive intraspecific interactions), and evolutionary stable strategies governing population interactions -- directly relevant to both intra- and interspecific interactions."
-    },
-    {
-      "episodeTitle": "Fungi",
-      "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "B.2.c",
-        "C.1.c",
-        "C.5.b"
-      ],
-      "rationaleAI": "Fungi's mycorrhizal symbiosis with plant roots is a key mutualistic interaction, and their role as decomposers drives community function and nutrient cycling -- relevant to positive interspecific interactions and community classification."
-    },
-    {
-      "episodeTitle": "Hybrids",
-      "pid": "m0009t41",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.3"
-      ],
-      "rationaleAI": "Hybridization represents a form of interspecific interaction involving reproductive contact between different species, with hybrid zones providing natural laboratories for studying ecological and evolutionary aspects of population interaction."
-    },
-    {
-      "episodeTitle": "Plankton",
-      "pid": "m001r1t5",
-      "relevantPathsAI": [
-        "C.2",
-        "C.1.d"
-      ],
-      "rationaleAI": "Plankton form the base of marine food webs illustrating community energy flow from producers to consumers, and plankton blooms demonstrate population fluctuations and community dynamics."
-    },
-    {
-      "episodeTitle": "The Origins of Infectious Disease",
-      "pid": "b011pldm",
-      "relevantPathsAI": [
-        "B.2.b",
-        "B.3"
-      ],
-      "rationaleAI": "The origins of infectious disease covers host-pathogen co-evolution, zoonotic transmission, and evolutionary arms races -- directly relevant to negative interspecific interactions (parasitic) and their ecological/evolutionary consequences."
+      "relevantPathsAI": ["B.2.b", "B.3", "C.1.c"],
+      "rationaleAI": "Parasitism is a major negative interspecific interaction (B.2.b) in which hosts are harmed, with co-evolutionary arms races, immune counter-adaptations, and impacts on host population dynamics illustrating the ecological and evolutionary aspects of population-level interaction (B.3) and community-level predation and symbiosis (C.1.c)."
     },
     {
       "episodeTitle": "Corals",
       "pid": "m0010xnr",
-      "relevantPathsAI": [
-        "B.2.c",
-        "C.1.a",
-        "C.1.d"
-      ],
-      "rationaleAI": "Coral reef ecosystems demonstrate mutualistic interactions (coral-zooxanthellae symbiosis), vertical zonation patterns, and extraordinary species diversity within a community niche structure."
+      "relevantPathsAI": ["B.2.c", "C.1.a", "C.1.d", "C.2"],
+      "rationaleAI": "Coral reef ecosystems exemplify mutualistic symbiosis between corals and zooxanthellae (B.2.c), exhibit vertical and horizontal zonation patterns shaped by environmental gradients (C.1.a), support extraordinary species diversity and niche differentiation (C.1.d), and function as major centers of community energy flow (C.2)."
+    },
+    {
+      "episodeTitle": "Plankton",
+      "pid": "m001r1t5",
+      "relevantPathsAI": ["C.1.a", "C.1.b", "C.2", "C.1.d"],
+      "rationaleAI": "Phytoplankton and zooplankton form the base of marine food chains, directly illustrating community energy flow from primary producers to consumers (C.2). Diel vertical migration demonstrates periodicity and population changes within communities (C.1.b), while diverse plankton assemblages exemplify vertical stratification (C.1.a) and niche partitioning (C.1.d)."
+    },
+    {
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": ["B.2.c", "B.3"],
+      "rationaleAI": "Plant-pollinator relationships are a paradigmatic example of mutualism where both populations benefit (B.2.c), and the co-evolutionary dynamics shaping flower morphology and pollinator behavior illustrate the ecological, evolutionary, and biogeographical aspects of interspecific interaction (B.3)."
+    },
+    {
+      "episodeTitle": "Behavioural Ecology",
+      "pid": "b04tljk0",
+      "relevantPathsAI": ["B.1", "B.2", "B.3", "C.1.c"],
+      "rationaleAI": "Behavioural ecology examines feeding strategies, territorial defence, and social cooperation as intraspecific interactions (B.1), alongside predator-prey and competitive dynamics as interspecific interactions (B.2), with evolutionary strategies governing how populations interact within community structures (C.1.c)."
+    },
+    {
+      "episodeTitle": "Pheromones",
+      "pid": "m0002mdl",
+      "relevantPathsAI": ["B.1", "B.2.a"],
+      "rationaleAI": "Chemical signaling via pheromones mediates intraspecific interactions including alarm signaling, dominance hierarchies, and reproductive coordination (B.1), with honey bee caste determination by pheromones exemplifying how chemical ecology shapes population structure and social organization within and between species (B.2.a)."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["A.2.b", "A.3", "A.4"],
+      "rationaleAI": "Malthus's thesis that population grows geometrically while resources increase arithmetically directly addresses population growth form and carrying capacity (A.3), natality and mortality as population regulators (A.2.b), and famine, disease, and war as checks causing fluctuations in population size (A.4). Darwin credited Malthus with inspiring natural selection theory through population dynamics."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": ["C.2"],
+      "rationaleAI": "Photosynthesis provides the primary energy input for nearly all food webs on Earth, making it foundational to community energy flow (C.2) and the biogeochemical cycles that sustain biological communities."
+    },
+    {
+      "episodeTitle": "Echolocation",
+      "pid": "b0b6hrl3",
+      "relevantPathsAI": ["B.2.b", "B.3"],
+      "rationaleAI": "Evolutionary arms races between echolocating predators (bats, dolphins) and prey that evolved counter-adaptations to detect predator frequencies exemplify negative interspecific interactions through consumption (B.2.b) and the co-evolutionary dynamics driving adaptation at the population level (B.3)."
+    },
+    {
+      "episodeTitle": "Hybrids",
+      "pid": "m0009t41",
+      "relevantPathsAI": ["B.2.a", "B.3"],
+      "rationaleAI": "Hybridization represents an interspecies association (B.2.a) involving reproductive contact between different species populations, with hybrid zones and hybrid speciation illustrating the ecological and evolutionary consequences of interspecific interaction at the population level (B.3)."
+    },
+    {
+      "episodeTitle": "Circadian Rhythms",
+      "pid": "b06rzd44",
+      "relevantPathsAI": ["C.1.b"],
+      "rationaleAI": "Circadian rhythms govern daily periodicity in organisms from bacteria to animals, directly relevant to time relations and periodicity within biological communities (C.1.b), as synchronized activity cycles shape when organisms feed, reproduce, and interact within community structures."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

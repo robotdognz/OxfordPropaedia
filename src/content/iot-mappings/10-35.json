@@ -2,87 +2,116 @@
   "sectionCode": "10/35",
   "mappings": [
     {
+      "episodeTitle": "The Four Humours",
+      "pid": "b008h5dz",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.d",
+        "A.1.d.ii",
+        "A.1.d.iii",
+        "A.1.e",
+        "A.1.f",
+        "A.1.g",
+        "A.1.h"
+      ],
+      "rationaleAI": "Humoral medicine from Hippocrates through Galen spanning Greco-Roman through early modern medicine."
+    },
+    {
+      "episodeTitle": "Penicillin",
+      "pid": "b07dnnkm",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.2.c",
+        "B.2.f"
+      ],
+      "rationaleAI": "Penicillin: antibiotics (A.3.a), germ theory (A.2.c), antimicrobial resistance (B.2.f)."
+    },
+    {
       "episodeTitle": "Galen",
       "pid": "b03c4dys",
       "relevantPathsAI": [
+        "A.1",
+        "A.1.d",
+        "A.1.d.ii",
         "A.1.d.iii",
         "A.1.e.i"
       ],
-      "rationaleAI": "Galen's work as the dominant medical authority covers the acceptance of Galen in the Greco-Roman world (A.1.d.iii) and the preservation of his medical heritage in medieval monasteries and Arabian medicine (A.1.e.i)."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "A.1.h.iii",
-        "A.3.b"
-      ],
-      "rationaleAI": "Immunisation from Jenner's vaccination through modern vaccine development covers improvement in vaccination techniques (A.1.h.iii) and advances in immunology (A.3.b)."
+      "rationaleAI": "Galen: Hippocratic synthesis (A.1.d.iii), Islamic/European authority (A.1.e.i)."
     },
     {
       "episodeTitle": "Man and Disease",
       "pid": "p00548m0",
       "relevantPathsAI": [
+        "A",
         "A.1",
+        "A.1.d",
         "A.2.c",
-        "A.3"
+        "A.3.b",
+        "B.2.d",
+        "B.2.h"
       ],
-      "rationaleAI": "The history of human struggle against disease from miasma theory through germ theory, epidemiology, and antibiotics spans the full history of medicine from ancient through modern times (A.1, A.2.c, A.3)."
+      "rationaleAI": "Epidemic disease from humoral medicine through germ theory (A.2.c), public health (B.2.d)."
     },
     {
-      "episodeTitle": "The Heart",
-      "pid": "p003c1bh",
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
       "relevantPathsAI": [
-        "A.1.d.iii",
-        "A.1.g.i"
+        "A.2.c",
+        "A.3.a",
+        "A.3.b",
+        "B.2.d",
+        "B.2.f",
+        "B.3"
       ],
-      "rationaleAI": "Harvey's 1628 discovery of blood circulation addresses discoveries concerning the circulation of blood (A.1.g.i), while Galen's earlier theories connect to Greco-Roman medicine (A.1.d.iii)."
+      "rationaleAI": "Microbiology: germ theory (A.2.c), antibiotics (A.3.a), vaccines (A.3.b), immunology (B.2.f)."
     },
     {
-      "episodeTitle": "Drugs",
-      "pid": "p00548fh",
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": [
+        "A.2.a",
+        "B.3"
+      ],
+      "rationaleAI": "Genetics: new 19th-century doctrines (A.2.a), basic medical sciences (B.3)."
+    },
+    {
+      "episodeTitle": "Hypnosis",
+      "pid": "m002cqq3",
       "relevantPathsAI": [
         "A.1.h.iii",
-        "A.2.d",
-        "A.3.a"
+        "B.1.g"
       ],
-      "rationaleAI": "The history of drugs covers improvement in treatment of disease (A.1.h.iii), the discovery of anesthesia (A.2.d), and advances in chemotherapy including antibiotics (A.3.a)."
-    },
-    {
-      "episodeTitle": "The Four Humours",
-      "pid": "b008h5dz",
-      "relevantPathsAI": [
-        "A.1.d.ii",
-        "A.1.d.iii"
-      ],
-      "rationaleAI": "The four humours from Hippocrates through Galen directly covers the charter of medical conduct and theories on disease (A.1.d.ii) and the acceptance of Galen as authority (A.1.d.iii)."
-    },
-    {
-      "episodeTitle": "Vitalism",
-      "pid": "b00dwhwt",
-      "relevantPathsAI": [
-        "A.1.g.ii",
-        "A.2.a"
-      ],
-      "rationaleAI": "Vitalism's iatrochemical and iatrophysical theories relate to 17th-century debates about life as chemical processes versus physical mechanisms (A.1.g.ii), while the cell theory connects to new doctrines in the 19th century (A.2.a)."
+      "rationaleAI": "Hypnosis: mesmerism (A.1.h.iii), psychiatry (B.1.g)."
     },
     {
       "episodeTitle": "Louis Pasteur",
       "pid": "b08q317p",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3.b"
+        "A.3.b",
+        "B.2.f",
+        "B.3"
       ],
-      "rationaleAI": "Pasteur's germ theory, disproof of spontaneous generation, and development of vaccines for rabies and anthrax directly cover establishment of bacteriology (A.2.c) and advances in immunology (A.3.b)."
+      "rationaleAI": "Pasteur: germ theory (A.2.c), vaccines (A.3.b), immunology (B.2.f)."
     },
     {
-      "episodeTitle": "Anaesthetics",
-      "pid": "b00775zv",
+      "episodeTitle": "The Microscope",
+      "pid": "b03jdy3p",
       "relevantPathsAI": [
-        "A.2.d",
-        "A.4.a"
+        "A.1.g.i",
+        "A.2.a"
       ],
-      "rationaleAI": "The history of anaesthetics from early methods through ether and chloroform directly covers the discovery and use of anesthesia (A.2.d) and the importance of anesthesia to modern surgery (A.4.a)."
+      "rationaleAI": "Microscope: medical studies (A.1.g.i), cell theory (A.2.a)."
+    },
+    {
+      "episodeTitle": "Bacteriophages",
+      "pid": "m0020pf0",
+      "relevantPathsAI": [
+        "A.3.a",
+        "B.2.f"
+      ],
+      "rationaleAI": "Bacteriophages: antibiotics alternatives (A.3.a), immunology (B.2.f)."
     },
     {
       "episodeTitle": "Blood",
@@ -92,77 +121,105 @@
         "A.1.g.i",
         "A.4.d"
       ],
-      "rationaleAI": "Blood covers Harvey's circulation discovery (A.1.g.i), Galen's earlier theories (A.1.d.iii), and blood transfusion techniques (A.4.d)."
+      "rationaleAI": "Blood: Galen (A.1.d.iii), circulation (A.1.g.i), transfusion (A.4.d)."
     },
     {
-      "episodeTitle": "Anatomy",
-      "pid": "p005488j",
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
       "relevantPathsAI": [
-        "A.1.d.iii",
-        "A.1.f.i"
+        "A.3.c",
+        "B.2.e",
+        "B.3"
       ],
-      "rationaleAI": "The history of anatomical knowledge covers Galen's authority (A.1.d.iii) and Renaissance improvements in anatomical theory through Vesalius (A.1.f.i)."
+      "rationaleAI": "Hormones: endocrinology (A.3.c, B.2.e), medical physiology (B.3)."
     },
     {
-      "episodeTitle": "Microbiology",
-      "pid": "b007753d",
+      "episodeTitle": "Hysteria",
+      "pid": "p004y27w",
       "relevantPathsAI": [
-        "A.2.c",
-        "A.3.a"
+        "A.1.d.i",
+        "B.1.g"
       ],
-      "rationaleAI": "Microbiology from van Leeuwenhoek through Pasteur and Koch covers the establishment of bacteriology and germ theory (A.2.c) and antibiotics (A.3.a)."
+      "rationaleAI": "Hysteria: Hippocratic medicine (A.1.d.i), psychiatry (B.1.g)."
     },
     {
-      "episodeTitle": "Penicillin",
-      "pid": "b07dnnkm",
+      "episodeTitle": "Medical Ethics",
+      "pid": "p005465c",
       "relevantPathsAI": [
-        "A.3.a"
+        "A.3",
+        "A.4",
+        "B"
       ],
-      "rationaleAI": "Penicillin's discovery and development as the first widely used antibiotic directly covers advances in chemotherapy and antibiotics (A.3.a)."
+      "rationaleAI": "Medical ethics: moral dilemmas from biomedical advances."
     },
     {
       "episodeTitle": "The Origins of Infectious Disease",
       "pid": "b011pldm",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3.d.iii"
+        "A.3.b",
+        "A.3.d.iii",
+        "B.2.d",
+        "B.2.h"
       ],
-      "rationaleAI": "The origins of infectious disease cover the germ theory revolution (A.2.c) and the relationship between human ecology and pandemic spread connecting to tropical medicine (A.3.d.iii)."
+      "rationaleAI": "Infectious disease origins: germ theory (A.2.c), vaccines (A.3.b), public health (B.2.d)."
     },
     {
-      "episodeTitle": "Bacteriophages",
-      "pid": "m0020pf0",
+      "episodeTitle": "Anatomy",
+      "pid": "p005488j",
       "relevantPathsAI": [
-        "A.2.c",
-        "A.3.a"
+        "A.1",
+        "A.1.d.iii",
+        "A.1.f.i",
+        "A.1.h.ii"
       ],
-      "rationaleAI": "Bacteriophages cover contributions to molecular biology through the Hershey-Chase experiment and their renewed importance given antibiotic resistance, connecting to bacteriology (A.2.c) and chemotherapy developments (A.3.a)."
+      "rationaleAI": "Anatomy: Galen (A.1.d.iii), Vesalius (A.1.f.i), pathology emergence (A.1.h.ii)."
     },
     {
-      "episodeTitle": "Al-Kindi",
-      "pid": "b01k2bv8",
+      "episodeTitle": "Immunisation",
+      "pid": "p003c19q",
       "relevantPathsAI": [
-        "A.1.e.i"
+        "A.1.h.iii",
+        "A.3.b",
+        "A.3.b.i",
+        "A.3.b.ii",
+        "B.2.d",
+        "B.2.f"
       ],
-      "rationaleAI": "Al-Kindi's contributions to medicine connect to the role of Arabian medicine in preserving and advancing the medical heritage (A.1.e.i)."
+      "rationaleAI": "Immunisation: Jenner (A.1.h.iii), vaccines (A.3.b), public health (B.2.d), immunology (B.2.f)."
     },
     {
-      "episodeTitle": "Alchemy",
-      "pid": "p003k9bn",
+      "episodeTitle": "Neuroscience",
+      "pid": "b00fbd26",
       "relevantPathsAI": [
-        "A.1.f.iii"
+        "B.1.f",
+        "B.1.g",
+        "B.3"
       ],
-      "rationaleAI": "Alchemy's connection to Paracelsus relates to the work of Paracelsus in Renaissance medicine (A.1.f.iii)."
+      "rationaleAI": "Neuroscience: neurology (B.1.f), psychiatry (B.1.g), medical physiology (B.3)."
     },
     {
-      "episodeTitle": "Genetics",
-      "pid": "p00547md",
+      "episodeTitle": "The Brain",
+      "pid": "b00b54yx",
       "relevantPathsAI": [
-        "A.2.a"
+        "A.1.d.i",
+        "B.1.f",
+        "B.3"
       ],
-      "rationaleAI": "Genetics from Mendel through the Human Genome Project connects to new doctrines and laws including the Mendelian laws in 19th-century medicine (A.2.a)."
+      "rationaleAI": "Brain: Hippocrates (A.1.d.i), neurology (B.1.f), physiology (B.3)."
+    },
+    {
+      "episodeTitle": "The Eye",
+      "pid": "b03w2w19",
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1.d",
+        "A.1.e.i",
+        "B.1.e"
+      ],
+      "rationaleAI": "Eye: Islamic physicians (A.1.e.i), Greek vision theories (A.1.d), ophthalmology (B.1.e)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

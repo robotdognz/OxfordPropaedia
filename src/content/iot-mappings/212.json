@@ -2,69 +2,54 @@
   "sectionCode": "212",
   "mappings": [
     {
-      "episodeTitle": "The Earth's Core",
-      "pid": "b05s3gyv",
-      "relevantPathsAI": [
-        "B.2",
-        "B.3",
-        "C.3",
-        "D.1",
-        "D.2",
-        "E"
-      ],
-      "rationaleAI": "The Earth's core covering magnetic field generation through dynamo theory, core-mantle interactions, iron/nickel composition, and extreme conditions addresses the magnetic field (B), electrical currents from the core (C.3), heat sources (D.1), heat flow from interior (D.2), and mechanical properties (E)."
+      "episodeTitle": "Seismology",
+      "pid": "m00154gh",
+      "relevantPathsAI": ["E.1", "E.2", "E.3", "A.3"],
+      "rationaleAI": "Seismic wave analysis reveals Earth's layered internal structure (crust, mantle, core) and fundamental mechanical properties, directly addressing the use of indirect evidence to determine internal properties (E.1), the nature of seismic waves and stress-strain behaviour (E.2), and basic internal mechanical properties (E.3). Gravity data interpretation from seismic studies also informs understanding of Earth's interior (A.3)."
     },
     {
       "episodeTitle": "Magnetism",
       "pid": "p003k9dd",
-      "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "Earth's magnetic field, polarity reversals, magnetic materials, and Gilbert's De Magnete directly address measurement and representation (B.1), sources and characteristics (B.2), and variations including reversals (B.3)."
+      "relevantPathsAI": ["B.1", "B.2"],
+      "rationaleAI": "William Gilbert's De Magnete (1600) established the first systematic study of Earth as a giant magnet, directly relevant to the sources and characteristics of Earth's main magnetic field (B.2). The history of compass navigation and lodestone observation connects to the measurement and representation of magnetic fields (B.1)."
     },
     {
-      "episodeTitle": "Seismology",
-      "pid": "m00154gh",
-      "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.2",
-        "E.3",
-        "G"
-      ],
-      "rationaleAI": "Seismology revealing Earth's internal structure through seismic wave analysis, earthquake mechanisms, and the Richter scale directly addresses mechanical properties (E), seismic waves (E.2), and deformation of materials (G)."
-    },
-    {
-      "episodeTitle": "Plate Tectonics",
-      "pid": "b008q0sp",
-      "relevantPathsAI": [
-        "D.3",
-        "E.6",
-        "G"
-      ],
-      "rationaleAI": "Plate tectonics covering mantle convection, subduction, mountain building, and volcanic activity addresses geologic aspects of heat flow (D.3), response to long-duration stresses (E.6), and deformation of crustal materials (G)."
+      "episodeTitle": "The Earth's Core",
+      "pid": "b05s3gyv",
+      "relevantPathsAI": ["B.2", "B.3", "E.1", "E.3", "F.1"],
+      "rationaleAI": "The geodynamo mechanism in the liquid outer core generating Earth's magnetic field maps directly to B.2, while the magnetosphere's shielding function and differential core rotation connect to magnetic field variations (B.3). The iron-nickel composition and extreme density of inner and outer cores address volumetric rock density (F.1), while seismological evidence for core structure illustrates indirect determination of internal mechanical properties (E.1, E.3)."
     },
     {
       "episodeTitle": "Solar Wind",
       "pid": "m000dg9n",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "Solar wind interaction with Earth's magnetosphere producing auroras and magnetic storms addresses variations in the main magnetic field including magnetic storms (B.3)."
+      "relevantPathsAI": ["B.3", "C.1"],
+      "rationaleAI": "Solar wind interaction with Earth's magnetosphere produces magnetic storms and magnetospheric substorms (B.3), while the charged particle stream drives currents in the ionosphere (C.1). The episode covers space weather effects on Earth's magnetic environment and the auroral phenomena resulting from charged particle interactions with the upper atmosphere."
     },
     {
-      "episodeTitle": "Heat",
-      "pid": "b00fq3d4",
-      "relevantPathsAI": [
-        "D",
-        "D.1"
-      ],
-      "rationaleAI": "The history of heat science, thermodynamics, and heat transfer mechanisms address the Earth's thermal properties (D) and sources of heat (D.1)."
+      "episodeTitle": "The Geological Formation of Britain",
+      "pid": "b00n8t48",
+      "relevantPathsAI": ["G", "G.2", "G.2.a", "G.3", "F"],
+      "rationaleAI": "Britain's 600-million-year geological history encompasses tectonic plate convergence closing the Iapetus Ocean (G.2.a tectonic folding), varied rock deformation across Precambrian to Cretaceous formations (G), and fracture and faulting from repeated tectonic episodes (G.3). The diversity of rock types from volcanic to sedimentary illustrates the range of physical properties of Earth materials (F)."
+    },
+    {
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": ["D.3", "D.4", "E", "E.6", "G", "G.1", "G.2", "G.3"],
+      "rationaleAI": "Plate tectonics explains convection currents within Earth driving rock metamorphism and mountain building (D.3), volcanic activity as a surface manifestation of heat flow (D.4), and the mechanical behaviour of the lithosphere on the asthenosphere (E, E.6). Crustal deformation through plate interactions produces folding (G.2), faulting at plate boundaries (G.3), and the overall stress-strain response of crustal rocks (G.1)."
+    },
+    {
+      "episodeTitle": "Vulcanology",
+      "pid": "p005490h",
+      "relevantPathsAI": ["D.3", "D.4", "G"],
+      "rationaleAI": "Magma generation in the mantle and surface eruptions directly illustrate convection and heat transmission from Earth's interior (D.3), while volcanoes, hot springs, and geysers are the principal surface manifestations of heat flow (D.4). Volcanism driven by subduction zones and mid-ocean ridges demonstrates crustal deformation processes (G) linked to plate boundary dynamics."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": ["F.5", "F.1", "F.3"],
+      "rationaleAI": "Water's anomalous physical properties including density maximum at four degrees Celsius and its behaviour in gas, liquid, and solid states on Earth relate to volumetric properties (F.1) and thermal properties including specific heat and thermal expansion (F.3). Its role as the primary geological fluid connects directly to hydraulic properties of Earth materials including porosity and permeability (F.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,102 +2,108 @@
   "sectionCode": "128",
   "mappings": [
     {
-      "episodeTitle": "Radiation",
-      "pid": "b00nqljy",
-      "relevantPathsAI": [
-        "B",
-        "B.2"
-      ],
-      "rationaleAI": "The electromagnetic spectrum from radio waves through gamma rays, Maxwell's theory, and Hertz's discovery of radio waves directly address electromagnetic waves (B) and their properties across the spectrum (B.2)."
+      "episodeTitle": "The Speed of Light",
+      "pid": "p0038x9h",
+      "relevantPathsAI": ["C.2", "C.6", "C.8", "B.1"],
+      "rationaleAI": "Directly addresses the measurement and nature of the velocity of light (C.2), from Roemer's 17th-century experiments to Einstein's special relativity establishing it as a cosmic speed limit. Connects to Maxwell's electromagnetic theory (C.6) and the photon concept (C.8), as well as fundamental properties of electromagnetic wave propagation (B.1)."
     },
     {
       "episodeTitle": "The Photon",
       "pid": "b051vlpf",
-      "relevantPathsAI": [
-        "C.8",
-        "C.8.a",
-        "C.8.b",
-        "B.4"
-      ],
-      "rationaleAI": "The photon, photoelectric effect, wave-particle duality, and laser applications address the quantum theory of light (C.8), photon phenomena (C.8.a), and sources of coherent electromagnetic waves (B.4)."
+      "relevantPathsAI": ["C.8", "C.8.a", "C.8.b", "C.8.c", "B.4"],
+      "rationaleAI": "Centres on the quantum theory of light (C.8), covering Planck's quantisation, Einstein's photoelectric effect explanation (C.8.a), and wave-particle duality. Addresses photon detection and applications (C.8.c) and coherent electromagnetic sources including lasers and fibre-optic communications (B.4)."
     },
     {
-      "episodeTitle": "Optics",
-      "pid": "b00774t5",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.1.a",
-        "D",
-        "D.1"
-      ],
-      "rationaleAI": "The history and science of optics covering wave theory, diffraction, interference, polarization, lenses, telescopes, microscopes, and fibre optics comprehensively addresses light waves (C) and focusing/imaging (D)."
+      "episodeTitle": "Gravitational Waves",
+      "pid": "b007h8gv",
+      "relevantPathsAI": ["A.1", "A.2", "A.3.b", "A.3.d"],
+      "rationaleAI": "Gravitational waves exhibit general wave properties including frequency, amplitude, and propagation velocity equal to the speed of light (A.1, A.3.b). As spacetime ripples distinct from electromagnetic or mechanical waves, they illustrate wave classification beyond standard media (A.2) and transport energy and momentum from cataclysmic astrophysical sources (A.3.d)."
+    },
+    {
+      "episodeTitle": "Radiation",
+      "pid": "b00nqljy",
+      "relevantPathsAI": ["B.1", "B.2", "C.1", "C.1.a", "A.2.a", "A.7"],
+      "rationaleAI": "Traces the unification of heat, visible light, radio waves, and X-rays as electromagnetic radiation within Maxwell's framework (B.1, B.2). Covers Thomas Young's wave experiments demonstrating diffraction and interference (C.1.a) and Planck's quantum hypothesis. Addresses the full electromagnetic spectrum and absorption phenomena (A.7)."
     },
     {
       "episodeTitle": "Maxwell",
       "pid": "p005491g",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2.a",
-        "C.6"
-      ],
-      "rationaleAI": "Maxwell's prediction of electromagnetic waves, his equations unifying electricity, magnetism, and light, and his influence on radio development address electromagnetic wave properties (B.1), radio waves (B.2.a), and light wave properties via Maxwell's equations (C.6)."
+      "relevantPathsAI": ["B.1", "B.2", "B.5", "C.6", "A.3.c"],
+      "rationaleAI": "Maxwell's electromagnetic field equations unified electricity, magnetism, and light, predicting electromagnetic waves (B.1, C.6) and providing the wave equation framework (A.3.c). His theoretical work laid foundations for radio, radar, and telecommunications, directly relating to transmission of electromagnetic waves (B.5) and the properties of the full electromagnetic spectrum (B.2)."
     },
     {
       "episodeTitle": "The Invention of Radio",
       "pid": "b0368knw",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.3.a",
-        "B.5"
-      ],
-      "rationaleAI": "The invention of radio from Maxwell's theory through Hertz's experiments and Marconi's wireless telegraphy directly addresses radio waves (B.2.a), sources of radio waves (B.3.a), and transmission of electromagnetic waves (B.5)."
+      "relevantPathsAI": ["B.2.a", "B.3.a", "B.5", "A.2.a"],
+      "rationaleAI": "Covers radio waves from Maxwell's 1860s theoretical prediction through Hertz's experimental confirmation to Marconi's practical wireless telegraphy (B.2.a). Addresses sources of radio waves including oscillators and antennas (B.3.a), transmission of electromagnetic waves through space and via transmission systems (B.5), and classification of waves by medium (A.2.a)."
     },
     {
-      "episodeTitle": "Mathematics and Music",
-      "pid": "p003c1b9",
-      "relevantPathsAI": [
-        "E.6",
-        "E.6.a"
-      ],
-      "rationaleAI": "Pythagoras's harmonic ratios, Fourier analysis of sound waves, and mathematical structures in music directly address physical aspects of musical sound (E.6) including pitch, timbre, and overtones (E.6.a)."
-    },
-    {
-      "episodeTitle": "Echolocation",
-      "pid": "b0b6hrl3",
-      "relevantPathsAI": [
-        "E",
-        "E.1",
-        "E.4"
-      ],
-      "rationaleAI": "Echolocation using sound reflection, the physics of returning echoes, and comparison with sonar technology address sound waves' nature and properties (E.1) and reception of sound (E.4)."
-    },
-    {
-      "episodeTitle": "Relativity",
-      "pid": "b02144gl",
-      "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "The speed of light from special relativity, time dilation, and length contraction address the velocity of light and its measurement (C.2)."
-    },
-    {
-      "episodeTitle": "The Cool Universe",
-      "pid": "b00s7b6r",
-      "relevantPathsAI": [
-        "B.2.c",
-        "B.3.c.i"
-      ],
-      "rationaleAI": "Infrared and submillimeter astronomy studying cold objects in space through infrared telescopes and space observatories addresses infrared radiation (B.2.c) and blackbody radiation sources (B.3.c.i)."
+      "episodeTitle": "Michael Faraday",
+      "pid": "b06s9rz9",
+      "relevantPathsAI": ["B.1", "B.3"],
+      "rationaleAI": "Faraday's discovery of electromagnetic induction and introduction of field theory concepts, later formalised by Maxwell into electromagnetic wave theory (B.1). His foundational work on electromagnetism established the experimental basis from which sources and properties of electromagnetic waves were understood (B.3)."
     },
     {
       "episodeTitle": "Albert Einstein",
       "pid": "m001qdx1",
-      "relevantPathsAI": [
-        "C.8.a"
-      ],
-      "rationaleAI": "Einstein's photoelectric effect paper establishing light's particle nature directly addresses observed photon phenomena (C.8.a)."
+      "relevantPathsAI": ["C.8.a", "C.2", "C.8"],
+      "rationaleAI": "Einstein's 1905 explanation of the photoelectric effect established the photon concept central to the quantum theory of light (C.8, C.8.a). His work on special relativity directly relates to the velocity of light and its role as a fundamental constant (C.2)."
+    },
+    {
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
+      "relevantPathsAI": ["C.4", "A.6", "B.2.f"],
+      "rationaleAI": "X-ray crystallography depends fundamentally on diffraction phenomena (C.4, A.6), where X-rays interact with periodic crystal lattices to produce interference patterns revealing atomic structure. Connects directly to properties and applications of X-rays in the electromagnetic spectrum (B.2.f)."
+    },
+    {
+      "episodeTitle": "Robert Hooke",
+      "pid": "b070h6ww",
+      "relevantPathsAI": ["C.1.a", "C.4", "D.1"],
+      "rationaleAI": "Hooke's discovery of light diffraction supported wave theory (C.1.a, C.4) and his work with microscopes and telescopes connects to geometrical optics and optical systems (D.1). His Micrographia demonstrates early application of optical instruments for scientific observation."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": ["C.11", "C.7.c"],
+      "rationaleAI": "Photosynthesis is the primary biological effect of light (C.11), explicitly cross-referenced in the outline. Light-dependent reactions capture photons and convert electromagnetic energy into chemical energy, illustrating mechanical and chemical effects of light on matter (C.7.c)."
+    },
+    {
+      "episodeTitle": "Mathematics and Music",
+      "pid": "p003c1b9",
+      "relevantPathsAI": ["E.6", "E.6.a", "A.4.a", "E.5.c"],
+      "rationaleAI": "Covers the physics of vibrating strings producing harmonic series (E.6, E.6.a), directly addressing pitch, timbre, fundamentals, and overtones in musical sound. Standing wave patterns on strings (A.4.a) underpin scale construction. Connects acoustics with music theory (E.5.c)."
+    },
+    {
+      "episodeTitle": "Heisenberg's Uncertainty Principle",
+      "pid": "m001wq9h",
+      "relevantPathsAI": ["C.8.b"],
+      "rationaleAI": "The uncertainty principle has direct application to the study of light phenomena (C.8.b), establishing fundamental limits on simultaneously measuring photon position and momentum, which is explicitly included in the section outline as it relates to quantum optics."
+    },
+    {
+      "episodeTitle": "The Curies",
+      "pid": "b05n1dmt",
+      "relevantPathsAI": ["B.2.g", "B.3.e"],
+      "rationaleAI": "The Curie family's research on radioactivity directly connects to gamma rays in the electromagnetic spectrum (B.2.g) and radioactive nuclei as sources of gamma radiation (B.3.e). Marie Curie's isolation of radium and polonium involved characterising emissions across the radiation spectrum."
+    },
+    {
+      "episodeTitle": "Goethe and the Science of the Enlightenment",
+      "pid": "p00546n1",
+      "relevantPathsAI": ["C.1.b", "C.7"],
+      "rationaleAI": "Goethe developed a theory of colour opposing Newton's optics, directly engaging with the spectrum of light and colour description (C.1.b). His empirical investigations into how light interacts with matter and perception address the interaction of light with matter (C.7)."
+    },
+    {
+      "episodeTitle": "The Cool Universe",
+      "pid": "b00s7b6r",
+      "relevantPathsAI": ["B.2.a", "B.2.c", "B.3.a", "B.3.c.i"],
+      "rationaleAI": "Interstellar gas and dust clouds are detected primarily through infrared and radio astronomy (B.2.a, B.2.c), illustrating practical observation across the electromagnetic spectrum. Molecular clouds emit blackbody radiation (B.3.c.i) and cosmic sources generate radio waves (B.3.a)."
+    },
+    {
+      "episodeTitle": "Nuclear Physics",
+      "pid": "p0054887",
+      "relevantPathsAI": ["B.2.g", "B.3.e"],
+      "rationaleAI": "Nuclear radioactivity produces gamma radiation from radioactive nuclei (B.2.g, B.3.e). Understanding nuclear structure and fission/fusion processes involves characterising the electromagnetic radiation emitted during nuclear reactions, connecting nuclear physics to the gamma ray portion of the electromagnetic spectrum."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

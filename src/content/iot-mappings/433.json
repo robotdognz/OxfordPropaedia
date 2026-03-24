@@ -4,99 +4,100 @@
     {
       "episodeTitle": "Hypnosis",
       "pid": "m002cqq3",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "Hypnosis covers the history of hypnotic suggestion, trance states, altered consciousness, and clinical applications including pain management, directly addressing hypnosis and related states of altered consciousness."
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Traces the history and science of hypnosis from Mesmer through modern psychology, examining whether hypnotic states represent genuine altered consciousness or social compliance—directly addressing hypnosis and related states of altered consciousness."
     },
     {
       "episodeTitle": "Dreams",
       "pid": "p004y23x",
-      "relevantPathsAI": [
-        "C.2"
-      ],
+      "relevantPathsAI": ["C.2"],
       "rationaleAI": "Dreams covers ancient dream interpretation, Freud's wish fulfillment theory, Jung's collective unconscious, REM sleep, memory consolidation, and the activation-synthesis hypothesis, directly addressing the transient state of dreams."
     },
     {
       "episodeTitle": "Altruism",
       "pid": "p0038x9c",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3"
-      ],
+      "relevantPathsAI": ["A.2", "A.3"],
       "rationaleAI": "Altruism examines whether genuine selfless motivation exists, theories of kin selection and reciprocal altruism, and the tension between egoism and prosocial behavior, addressing specific human motives and the relationship between motivation and cognitive evaluation."
     },
     {
       "episodeTitle": "Evolutionary Psychology",
       "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
+      "relevantPathsAI": ["A.1", "A.2"],
       "rationaleAI": "Evolutionary psychology's treatment of modular theories of mind, sexual selection and mate choice, and evolved predispositions for behavior addresses diverse theories of motivation and specific human needs including sexual behaviour."
-    },
-    {
-      "episodeTitle": "Consciousness",
-      "pid": "p005464j",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2"
-      ],
-      "rationaleAI": "Consciousness as a topic addresses the nature of subjective experience and neural correlates of awareness, relevant to the nature of emotion and the roles of the nervous system in emotional states."
-    },
-    {
-      "episodeTitle": "Imagination and Consciousness",
-      "pid": "p00546vr",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.3"
-      ],
-      "rationaleAI": "Consciousness, neural correlates of awareness, altered states of consciousness, and the explanatory gap between brain processes and phenomenal experience address the nature of emotion, the roles of the nervous system, and altered states of consciousness."
     },
     {
       "episodeTitle": "Neuroscience",
       "pid": "b00fbd26",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Neuroscience covers the neuroscience of emotion and decision-making, neural plasticity, and the localisation of brain functions, directly relevant to diverse conceptions of emotion and the roles of the nervous system."
+      "relevantPathsAI": ["A.1", "B.2"],
+      "rationaleAI": "Brain science revealing convergences with Freudian theories of the unconscious mind bears on psychoanalytic motivation theory, while neural mechanisms underpinning decision-making and behaviour illuminate the role of the nervous system in emotional and motivational states."
     },
     {
       "episodeTitle": "The Brain",
       "pid": "b00b54yx",
-      "relevantPathsAI": [
-        "B.2"
-      ],
+      "relevantPathsAI": ["B.2"],
       "rationaleAI": "The brain episode covers the relationship between brain structure and consciousness, emotion, and personality, and debates about localization of brain function, directly addressing the roles of the nervous system in emotional states."
     },
     {
       "episodeTitle": "Pain",
       "pid": "p00545m1",
-      "relevantPathsAI": [
-        "A.2",
-        "B.1"
-      ],
+      "relevantPathsAI": ["A.2", "B.1"],
       "rationaleAI": "Pain covers the subjective nature of pain experience, cultural variation in pain expression, and the relationship between pain and suffering, addressing specific motivational states and the nature of emotional bodily conditions."
     },
     {
       "episodeTitle": "The Nervous System",
       "pid": "b00y9283",
-      "relevantPathsAI": [
-        "B.2"
-      ],
+      "relevantPathsAI": ["B.2"],
       "rationaleAI": "The nervous system's coverage of the autonomic nervous system (sympathetic and parasympathetic), synaptic transmission, and neurotransmitters directly addresses the roles of the nervous system in emotional arousal and motivational states."
     },
     {
       "episodeTitle": "The Four Humours",
       "pid": "b008h5dz",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1"
-      ],
-      "rationaleAI": "The four humours theory's association of humours with temperaments (sanguine, phlegmatic, choleric, melancholic) and its influence on psychology represent an early theory of motivation and emotion linking bodily conditions to behavioral states."
+      "relevantPathsAI": ["B.1", "B.2"],
+      "rationaleAI": "Humoral theory linking bodily fluids to temperaments—sanguine, melancholic, choleric, phlegmatic—represents a foundational conception of how physiological states produce emotional dispositions, prefiguring modern psychosomatic and mind-body approaches to the role of bodily systems in emotion."
+    },
+    {
+      "episodeTitle": "Circadian Rhythms",
+      "pid": "b06rzd44",
+      "relevantPathsAI": ["C.1", "C.4"],
+      "rationaleAI": "The internal body clock governing daily cycles of physical, behavioural, and mental changes has its most noticeable human manifestation in sleep patterns and plays a central role in regulating fatigue and arousal cycles."
+    },
+    {
+      "episodeTitle": "The Brain and Consciousness",
+      "pid": "p0054582",
+      "relevantPathsAI": ["B.2", "C"],
+      "rationaleAI": "Neural processes giving rise to subjective experience and the relationship between brain structure and conscious states address the role of the nervous system in emotion and arousal, and how transient neurological states affect behaviour and experience."
+    },
+    {
+      "episodeTitle": "Psychoanalysis and Democracy",
+      "pid": "p00548hr",
+      "relevantPathsAI": ["A.1", "A.2"],
+      "rationaleAI": "Freud's Group Psychology and the internal psychic conflict between permitted and repressed ideas directly engage psychoanalytic theories of motivation and the specific motives of anxiety and aggression as mechanisms of psychological repression."
+    },
+    {
+      "episodeTitle": "Psychoanalysis and its Legacy",
+      "pid": "p00545cg",
+      "relevantPathsAI": ["A.1", "A.4"],
+      "rationaleAI": "Assessment of the psychoanalytic movement's development, fragmentation into competing schools, and tension with empirical neuroscience addresses psychoanalytic theories of motivation and recent developments in how motivation theory adapts to evidence-based approaches."
+    },
+    {
+      "episodeTitle": "Guilt",
+      "pid": "b0084kd8",
+      "relevantPathsAI": ["B.1", "A.1", "A.2"],
+      "rationaleAI": "Guilt examined through Freudian superego theory and unconscious guilt connects psychoanalytic motivation with the nature of emotion, while its relationship to anxiety, shame, and moral agency addresses specific human motives that channel behaviour."
+    },
+    {
+      "episodeTitle": "Schopenhauer",
+      "pid": "b00nfrrz",
+      "relevantPathsAI": ["A.1", "B.1"],
+      "rationaleAI": "Schopenhauer's metaphysics of the Will as ceaseless driving force producing desire, suffering, and boredom anticipates drive theories of motivation and directly influenced Freud's concept of unconscious drives, while his analysis of suffering and boredom bears on the nature of emotion."
+    },
+    {
+      "episodeTitle": "Epicureanism",
+      "pid": "b01qf083",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Epicurus's central thesis that life's goal is pleasure through avoidance of pain provides a foundational philosophical framework for hedonic theories of motivation."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

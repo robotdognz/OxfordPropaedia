@@ -4,66 +4,58 @@
     {
       "episodeTitle": "Genetic Determinism",
       "pid": "p005461w",
-      "relevantPathsAI": [
-        "A.2",
-        "A.2.a",
-        "A.2.b",
-        "A.4"
-      ],
-      "rationaleAI": "Genetic determinism directly addresses twin studies, behavioral genetics, the search for genes linked to traits, and eugenics history -- covering inheritance of behavioral traits, fraternal and identical twin studies, and genetic explanations for abnormalities."
+      "relevantPathsAI": ["A", "A.1", "A.2", "A.4"],
+      "rationaleAI": "Directly examines the extent to which genes govern human traits and behavior, tracing from Mendel's heredity laws through DNA discovery to claims about genetic determination of intelligence, personality, and sexual orientation -- central to the nature-versus-nurture debate and the limits of genetic explanation for human heredity."
     },
     {
-      "episodeTitle": "Genetics",
-      "pid": "p00547md",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3"
-      ],
-      "rationaleAI": "Genetics covers Mendel's laws, chromosome theory, DNA structure, and the Human Genome Project -- directly relevant to the biological basis of human heredity and applications of human genetics."
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["A.2", "A.2.a", "A.4"],
+      "rationaleAI": "Covers twin studies as a method for disentangling genetic and environmental contributions to cognitive ability, the misuse of IQ research in eugenics and scientific racism, and the nature-versus-nurture debate over a specific inherited behavioral trait (intelligence)."
     },
     {
-      "episodeTitle": "Human Nature",
-      "pid": "p00548kf",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4"
-      ],
-      "rationaleAI": "Human nature covers the nature-nurture debate, twin studies, behaviorism versus nativism, and gene-environment interaction in epigenetics -- directly relevant to inheritance of behavioral traits and specific behavioral traits affected by inheritance."
-    },
-    {
-      "episodeTitle": "Evolutionary Psychology",
-      "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4"
-      ],
-      "rationaleAI": "Evolutionary psychology covers evolutionary explanations for human behavior including sexual selection, the nature-nurture debate, and genetic determinism controversies -- relevant to inheritance of behavioral traits and specific behavioral traits."
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["A.1", "A.3"],
+      "rationaleAI": "Covers the Human Genome Project, techniques for manipulating genetic material, and potential medical and reproductive applications including cloning -- directly relevant to the biological basis of human heredity and applications of human genetics."
     },
     {
       "episodeTitle": "Genetic Mutation",
       "pid": "b008drvm",
-      "relevantPathsAI": [
-        "A.2.b"
-      ],
-      "rationaleAI": "Genetic mutation covers chromosomal rearrangements, mutations causing genetic diseases (sickle cell anemia, cystic fibrosis), and the relationship between mutation and disease -- directly relevant to genetic explanations for abnormalities through chromosome variations and mutation."
+      "relevantPathsAI": ["A.1", "A.2.b"],
+      "rationaleAI": "Examines mutation as errors in DNA replication that cause hereditary diseases and cancers, directly addressing genetic explanations for abnormalities through chromosome variations and mutation, and the molecular mechanisms underlying human heredity."
     },
     {
-      "episodeTitle": "The Neanderthals",
-      "pid": "b00sq1nv",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "Neanderthal-Homo sapiens interbreeding (2-4% Neanderthal DNA in modern non-Africans) provides concrete evidence of human physical variation and its origins through ancient genetic admixture."
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": ["A", "A.1", "A.3"],
+      "rationaleAI": "Comprehensive history of genetics from Mendel's heredity laws through DNA structure discovery to genetic manipulation, covering the gene as the fundamental unit of heredity -- provides the foundational scientific framework for human heredity and its applications."
     },
     {
-      "episodeTitle": "Mitochondria",
-      "pid": "m001md34",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Mitochondrial genetics and maternal inheritance patterns represent a distinct mode of human hereditary transmission relevant to the biological basis of human heredity."
+      "episodeTitle": "Evolutionary Psychology",
+      "pid": "p00546xr",
+      "relevantPathsAI": ["A.2", "A.4"],
+      "rationaleAI": "Examines the claim that human behaviour is fundamentally shaped by genetic imperatives for reproduction and gene preservation, including Dawkins's selfish gene concept -- directly addresses inheritance of behavioral traits and whether human nature is genetically determined."
+    },
+    {
+      "episodeTitle": "Human Origins",
+      "pid": "p00546rl",
+      "relevantPathsAI": ["B", "B.1"],
+      "rationaleAI": "Examines genetic and fossil evidence for the evolution and diversification of Homo sapiens including the Out of Africa hypothesis and environmental drivers of speciation -- directly relevant to understanding the nature and origin of human physical variation."
+    },
+    {
+      "episodeTitle": "Evolution",
+      "pid": "p00545gl",
+      "relevantPathsAI": ["A.1", "A.3"],
+      "rationaleAI": "Addresses ongoing human evolution, implications of DNA discovery for the life sciences, and the future of gene therapy -- connecting the biological basis of heredity to practical applications of human genetics and continuing evolutionary change."
+    },
+    {
+      "episodeTitle": "Altruism",
+      "pid": "p0038x9c",
+      "relevantPathsAI": ["A.2", "A.4"],
+      "rationaleAI": "Explores the evolutionary and genetic basis of altruistic behavior including Dawkins's gene-centred explanation, directly addressing a specific behavioral trait whose inheritance poses a central puzzle for understanding genetic determination of human social behavior."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

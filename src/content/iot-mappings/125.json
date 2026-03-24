@@ -4,91 +4,76 @@
     {
       "episodeTitle": "Crystallography",
       "pid": "b01p0s9s",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "X-ray diffraction crystallography determining atomic arrangements in crystalline solids, Bragg's law, and synchrotron techniques directly address crystal patterns (A.1) and diffraction methods (A.2)."
-    },
-    {
-      "episodeTitle": "Conductors and Semiconductors",
-      "pid": "b01c7sml",
-      "relevantPathsAI": [
-        "B.5",
-        "E",
-        "E.1",
-        "E.3",
-        "E.4"
-      ],
-      "rationaleAI": "Electron band theory, conductors versus insulators versus semiconductors, doping, p-n junctions, and transistors comprehensively address electronic structure of solids (B.5) and semiconductors (E)."
-    },
-    {
-      "episodeTitle": "The Science of Glass",
-      "pid": "b05w456c",
-      "relevantPathsAI": [
-        "F",
-        "F.1",
-        "F.2"
-      ],
-      "rationaleAI": "Glass as an amorphous solid lacking crystalline order, the glass transition temperature, and condensed matter physics of disordered materials directly address the glassy/amorphous state (F)."
+      "relevantPathsAI": ["A", "A.1", "A.2", "A.3"],
+      "rationaleAI": "X-ray crystallography's role in revealing atomic arrangements in crystals, diffraction techniques pioneered by the Braggs, and structural determination across physics, chemistry, and biology directly address crystal patterns (A.1), X-ray diffraction by crystal structures (A.2), and crystal growth and preparation (A.3)."
     },
     {
       "episodeTitle": "Superconductivity",
       "pid": "m001hfpc",
-      "relevantPathsAI": [
-        "D.8",
-        "D.8.a",
-        "D.8.b"
-      ],
-      "rationaleAI": "Superconductivity in metals covering transition temperature, BCS theory (Cooper pairs), the Meissner effect, and high-temperature superconductors directly addresses superconductivity in metals (D.8)."
+      "relevantPathsAI": ["D.8", "D.8.a", "D.8.b", "B.5", "B.5.d"],
+      "rationaleAI": "Zero electrical resistance discovered by Kamerlingh Onnes in 1911, BCS theory of Cooper pairs, the Meissner effect expelling magnetic fields, transition temperatures, energy gaps, and high-temperature superconductors directly address superconductivity in metals (D.8), thermal properties of superconductors (D.8.a), and magnetic/electromagnetic properties including the Meissner effect and phase coherence (D.8.b). The quantum mechanical explanation connects to energy-band theory (B.5.d)."
     },
     {
-      "episodeTitle": "Magnetism",
-      "pid": "p003k9dd",
-      "relevantPathsAI": [
-        "B.6",
-        "D.9"
-      ],
-      "rationaleAI": "Magnetic materials and domains, quantum mechanical explanations of magnetic behaviour, and Earth's magnetic field address principal types of magnetic behaviour in solids (B.6) and magnetic phenomena in metals (D.9)."
+      "episodeTitle": "The Science of Glass",
+      "pid": "b05w456c",
+      "relevantPathsAI": ["F", "F.1", "F.2", "B.1"],
+      "rationaleAI": "The glass transition from molten liquid to amorphous solid, the absence of ordered molecular structure distinguishing glass from crystalline solids, and modern innovations in float glass and metallic glasses directly address the glassy state (F), temperature and composition effects on glass properties (F.1), glass structure (F.2), and the classification of solids by bonding and structure (B.1)."
+    },
+    {
+      "episodeTitle": "Conductors and Semiconductors",
+      "pid": "b01c7sml",
+      "relevantPathsAI": ["E", "E.1", "E.2", "E.3", "E.4", "D.2", "B.5.a"],
+      "rationaleAI": "Electrical conduction based on atomic structure, semiconductor physics enabling transistors, solar cells, and silicon chips, and the distinction between conductors, semiconductors, and superconductors address semiconductor properties (E.1), conduction mechanisms (E.2), electrical conduction in semiconductors (E.3), semiconductor applications (E.4), the free electron model for metals (D.2), and electron mobility in conductors, insulators, and semiconductors (B.5.a)."
     },
     {
       "episodeTitle": "States of Matter",
       "pid": "b03zdbr4",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "States of matter covering solids and phase transitions addresses the classification of solids according to electronic structure and bonding (B.1)."
+      "relevantPathsAI": ["B.1", "F", "F.2"],
+      "rationaleAI": "Classification of solid, liquid, gas, and plasma by molecular arrangement and intermolecular forces, with specific discussion of glasses as disordered solids and liquid crystals exhibiting directional molecular order, addresses the classification of solids by electronic structure and bonding (B.1) and the glassy/amorphous state including glass structure (F, F.2)."
+    },
+    {
+      "episodeTitle": "Pauli's Exclusion Principle",
+      "pid": "b08kscgb",
+      "relevantPathsAI": ["B.5", "B.5.a", "B.5.d", "D.3"],
+      "rationaleAI": "The exclusion principle governing electron shell configurations, chemical bonding, and condensed matter behavior underpins the electronic structure of solids (B.5), electron behavior in conductors, insulators, and semiconductors (B.5.a), energy-band theory (B.5.d), and the electronic structure of metals including conduction electron interactions with periodic lattices (D.3)."
     },
     {
       "episodeTitle": "The Photon",
       "pid": "b051vlpf",
-      "relevantPathsAI": [
-        "B.7",
-        "B.7.c",
-        "E.4.a"
-      ],
-      "rationaleAI": "The photoelectric effect, photon interactions with matter, and photovoltaic applications address the interaction of light with solids (B.7), the photoelectric effect (B.7.c), and optical effects in semiconductors (E.4.a)."
+      "relevantPathsAI": ["B.7", "B.7.a", "B.7.b", "B.7.c", "B.5.b", "E.4.a"],
+      "rationaleAI": "Einstein's photoelectric effect explanation, wave-particle duality, and applications in photovoltaic cells, LEDs, and lasers directly address the interaction of light with solids (B.7), reflection, absorption, and transmission of photons (B.7.a), electromagnetic radiation generation from solids (B.7.b), the photoelectric effect (B.7.c, B.5.b), and optical effects in semiconductors including the photovoltaic effect and luminescence (E.4.a)."
     },
     {
       "episodeTitle": "The Electron",
       "pid": "m001cf1n",
-      "relevantPathsAI": [
-        "B.5.a",
-        "D.2",
-        "E.2"
-      ],
-      "rationaleAI": "Electron behaviour in solids including band theory, conduction, and quantum tunneling addresses the nature and mobility of electrons in conductors/insulators/semiconductors (B.5.a) and mechanisms of conduction (E.2)."
+      "relevantPathsAI": ["B.5", "B.5.a", "D.2", "D.3", "E.2"],
+      "rationaleAI": "Thomson's discovery of the electron, its role in probing atomic structure, and connections to condensed matter physics are foundational to the electronic structure of solids (B.5), electron mobility in conductors and insulators (B.5.a), the free electron model for metal conductivity (D.2), conduction electron behavior in metallic lattices (D.3), and mechanisms of conduction in semiconductors (E.2)."
+    },
+    {
+      "episodeTitle": "Symmetry",
+      "pid": "b00776v8",
+      "relevantPathsAI": ["A.1.b", "A.1", "A"],
+      "rationaleAI": "Group theory formalization of symmetry and its direct application to crystallography and molecular structure address symmetry considerations in crystal system classification (A.1.b) and atomic patterns in crystals (A.1)."
     },
     {
       "episodeTitle": "Absolute Zero",
       "pid": "b01r113g",
-      "relevantPathsAI": [
-        "A.5"
-      ],
-      "rationaleAI": "Low-temperature phenomena including superconductivity, superfluidity, and Bose-Einstein condensation relate to effects of temperature on crystal strength and hardness (A.5) through extreme-condition material behaviour."
+      "relevantPathsAI": ["B.4", "D.8", "D.8.a"],
+      "rationaleAI": "Ultra-low temperature physics approaching minus 273 degrees Celsius, superfluids at cryogenic temperatures, and strange quantum phenomena in cooled solids address thermal and thermodynamic properties of solids including specific heat and thermal conductivity (B.4), and superconductivity including transition temperatures (D.8, D.8.a)."
+    },
+    {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": ["A", "A.1", "B.1"],
+      "rationaleAI": "Ice exhibiting at least fifteen distinct crystalline forms under varying pressures exemplifies crystal polymorphism and the relationship between atomic arrangement and macroscopic properties, addressing crystal patterns (A.1) and classification of solids including hydrogen-bonded solids (B.1)."
+    },
+    {
+      "episodeTitle": "Louis Pasteur",
+      "pid": "b08q317p",
+      "relevantPathsAI": ["A.1", "A.1.b"],
+      "rationaleAI": "Pasteur's foundational work demonstrating left and right-handed crystal forms of tartrate molecules established key principles of crystallographic symmetry (A.1.b) and the relationship between molecular chirality and crystal structure (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -4,66 +4,52 @@
     {
       "episodeTitle": "Photosynthesis",
       "pid": "b0435jyv",
-      "relevantPathsAI": [
-        "B"
-      ],
-      "rationaleAI": "Directly covers photosynthesis as the production of food in green plants, including light-dependent reactions, Calvin cycle, chlorophyll, C3/C4/CAM pathways, and the Great Oxygenation Event — a precise match to outline path B."
-    },
-    {
-      "episodeTitle": "Fungi",
-      "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4"
-      ],
-      "rationaleAI": "Fungi are heterotrophic organisms with distinctive nutritional patterns including decomposition and mycorrhizal symbiosis with plant roots, directly relevant to nutritional patterns (A.1) and syntrophism/nutritional interrelationships (A.4)."
-    },
-    {
-      "episodeTitle": "Enzymes",
-      "pid": "b08rp369",
-      "relevantPathsAI": [
-        "C.2.b",
-        "C.2.c",
-        "C.2.d"
-      ],
-      "rationaleAI": "Covers enzyme structure, lock-and-key and induced fit models, reaction kinetics, cofactors, and regulation — enzymes are the biological catalysts driving digestion in vertebrate digestive systems, relevant to the biodynamics and mechanics of digestion."
+      "relevantPathsAI": ["B"],
+      "rationaleAI": "Directly addresses photosynthesis as the biochemical process by which green plants convert sunlight into organic molecules, covering light-dependent reactions, the Calvin cycle, and the role of photosynthesis as the primary energy source for nearly all food webs."
     },
     {
       "episodeTitle": "The Evolution of Teeth",
       "pid": "m0003zbg",
-      "relevantPathsAI": [
-        "C.2.b",
-        "C.2.c"
-      ],
-      "rationaleAI": "Traces the evolution of teeth from dermal denticles through mammalian tooth types (incisors, canines, molars), directly relevant to vertebrate digestive systems' oral cavity and teeth (C.2.b) and the evolutionary development of the vertebrate digestive system (C.2.c)."
-    },
-    {
-      "episodeTitle": "The Evolution of Lungs",
-      "pid": "m002d8t2",
-      "relevantPathsAI": [
-        "C.2.b"
-      ],
-      "rationaleAI": "Examines the evolution of lungs and respiratory systems relevant to how organisms process nutrients through respiration, though the primary relevance is to vertebrate alimentary physiology — the vagus nerve controls digestive as well as respiratory function, connecting to vertebrate digestive system biology."
+      "relevantPathsAI": ["C.2.b", "C.2.c"],
+      "rationaleAI": "Traces the evolutionary origins of teeth in vertebrates over half a billion years, directly relevant to the oral cavity and teeth component of vertebrate digestive systems and the embryology and evolutionary development of the vertebrate digestive system."
     },
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.4"
-      ],
-      "rationaleAI": "Parasitism represents a major heterotrophic nutritional pattern (A.1) involving methods of penetration and ingestion of host tissues (A.2), and parasitic strategies exemplify syntrophic relationships where one organism's metabolism provides nutrients for another (A.4)."
+      "relevantPathsAI": ["A.1", "A.2", "A.4"],
+      "rationaleAI": "Parasitism represents a distinct heterotrophic nutritional pattern involving penetration and exploitation of host organisms, with co-evolutionary dynamics between parasites and hosts illustrating nutritional interrelationships where one organism procures nutrients at another's expense."
+    },
+    {
+      "episodeTitle": "Fungi",
+      "pid": "b09r3nwl",
+      "relevantPathsAI": ["A.1", "A.4"],
+      "rationaleAI": "Fungi exemplify heterotrophic nutritional patterns including saprotrophic decomposition and mycorrhizal symbiosis enabling plant nutrient absorption, directly illustrating syntrophism where metabolic products of fungi provide essential nutrients for partner organisms."
+    },
+    {
+      "episodeTitle": "Corals",
+      "pid": "m0010xnr",
+      "relevantPathsAI": ["A.4", "C.2.a"],
+      "rationaleAI": "Corals as simple animals illustrate invertebrate digestive systems and their symbiotic relationship with photosynthetic zooxanthellae exemplifies syntrophism, where photosynthetic products of algae provide essential nutrients to the coral host."
+    },
+    {
+      "episodeTitle": "Microbiology",
+      "pid": "b007753d",
+      "relevantPathsAI": ["A.1", "A.4"],
+      "rationaleAI": "Microbes exhibit the full range of nutritional patterns including autotrophy and chemotrophy, and their roles in decomposition and nutrient recycling through ecosystems exemplify syntrophic interrelationships where metabolic end products of one organism provide essential nutrients for another."
     },
     {
       "episodeTitle": "Slime Moulds",
       "pid": "m002691y",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Slime moulds challenge conventional classification and exhibit distinctive nutritional patterns that are neither purely autotrophic nor conventionally heterotrophic, relevant to the variety of nutritional patterns in outline path A.1."
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Slime moulds, found on decaying organic matter, illustrate unusual heterotrophic nutritional strategies that defy standard biological classification, demonstrating the diversity of nutritional patterns across organisms that blur boundaries between kingdoms."
+    },
+    {
+      "episodeTitle": "The Nervous System",
+      "pid": "b00y9283",
+      "relevantPathsAI": ["C.2.d"],
+      "rationaleAI": "The autonomic nervous system regulates digestive processes including intestinal movements and glandular secretions, directly relevant to the biodynamics of the vertebrate digestive system and control of secretions and intestinal movements."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

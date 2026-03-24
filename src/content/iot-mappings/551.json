@@ -2,107 +2,84 @@
   "sectionCode": "551",
   "mappings": [
     {
+      "episodeTitle": "Justinian's Legal Code",
+      "pid": "b082j2q2",
+      "relevantPathsAI": ["B.2.f", "B.3.a", "B.4.b", "C"],
+      "rationaleAI": "The Corpus Juris Civilis is the single most important codification of Roman law, systematizing centuries of jurisprudence and imperial edicts. Its rediscovery in medieval Europe directly shaped the continental civil law tradition, making it central to Roman law (B.2.f), medieval legal development (B.3.a), modern civil law systems (B.4.b), and comparative legal study (C)."
+    },
+    {
       "episodeTitle": "Islamic Law and its Origins",
       "pid": "b010t69b",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3.d"
-      ],
-      "rationaleAI": "Islamic law (Sharia) covering the Quran, Hadith, the four Sunni legal schools, and ijtihad directly addresses non-Western philosophies of law and the development of canon/religious law."
+      "relevantPathsAI": ["A.2", "C"],
+      "rationaleAI": "Directly addresses the origins and structure of Sharia, covering its four principal sources (Quran, Hadith, ijma, qiyas), the emergence of classical legal schools (madhabs), and the role of ulama in interpreting law — a comprehensive treatment of Islamic legal philosophy and jurisprudence as a non-Western system."
     },
     {
-      "episodeTitle": "The Oath",
-      "pid": "p003wtk7",
-      "relevantPathsAI": [
-        "A.1.c",
-        "A.1.d",
-        "B.2.d",
-        "B.2.f"
-      ],
-      "rationaleAI": "The oath in Greek and Roman society as a binding legal instrument, oaths in Athenian democracy and Roman law, and the foundations of contract and promising address the relationship between law and morality, and Greek and Roman legal systems."
-    },
-    {
-      "episodeTitle": "Sovereignty",
-      "pid": "b07hhvxx",
-      "relevantPathsAI": [
-        "A.1.d",
-        "B.4.a",
-        "B.4.b"
-      ],
-      "rationaleAI": "Sovereignty's coverage from Bodin through parliamentary sovereignty in British constitutional thought and the Westphalian system provides a historical survey of legal-political theories underpinning modern law systems."
-    },
-    {
-      "episodeTitle": "The Magna Carta",
-      "pid": "b00k4fg7",
-      "relevantPathsAI": [
-        "A.1.c",
-        "A.1.d",
-        "B.3.b",
-        "B.4.a"
-      ],
-      "rationaleAI": "Magna Carta's provisions on limits to royal taxation, habeas corpus, and trial by jury, its revival by Coke, and its influence on the US Constitution directly address medieval constitutional law sources and Anglo-American common law origins."
-    },
-    {
-      "episodeTitle": "The 12th Century Renaissance",
-      "pid": "b07z6vzq",
-      "relevantPathsAI": [
-        "B.3.a",
-        "B.3.b"
-      ],
-      "rationaleAI": "The 12th-century Renaissance's recovery of Roman law, the founding of universities (especially Bologna as a law school), and scholastic philosophy's development directly address the origins and development of medieval European law."
-    },
-    {
-      "episodeTitle": "The Medieval University",
-      "pid": "b00zf384",
-      "relevantPathsAI": [
-        "B.3.a",
-        "D.1"
-      ],
-      "rationaleAI": "The medieval university's role in training lawyers and the development of the legal profession through Bologna's law faculty directly address medieval European law institutions and the profession of law."
+      "episodeTitle": "Solon the Lawgiver",
+      "pid": "m001k7wb",
+      "relevantPathsAI": ["B.2.d", "A.1.d"],
+      "rationaleAI": "Solon's constitutional and legal reforms in 594 BC Athens — debt cancellation, prohibition of debt slavery, reorganisation of citizenship classes — represent a foundational moment in Greek law. His surviving poetry as a primary source for his legal philosophy contributes to the historical survey of legal theories from the ancient world."
     },
     {
       "episodeTitle": "St Thomas Aquinas",
       "pid": "b00mkd63",
-      "relevantPathsAI": [
-        "A.1.c",
-        "B.3.d"
-      ],
-      "rationaleAI": "Aquinas's natural law theory and his synthesis of Aristotelian philosophy with Christian theology directly address the relationship between law and morality, the influence of natural law principles, and the development of canon law."
+      "relevantPathsAI": ["A.1.c", "A.1.d", "A.1.b"],
+      "rationaleAI": "Aquinas's natural law theory, grounding ethics and law in reason accessible to all rather than revelation alone, is one of the most influential contributions to Western jurisprudence. His synthesis of Aristotelian philosophy with Christian doctrine profoundly shaped the relationship between law and morality and remains foundational to natural law approaches in legal theory."
     },
     {
-      "episodeTitle": "Averroes",
-      "pid": "p0038x79",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Averroes as an Islamic jurist and philosopher whose commentaries influenced medieval European scholasticism bridges Islamic and Western legal-philosophical traditions, addressing non-Western philosophies of law."
+      "episodeTitle": "Plato's Gorgias",
+      "pid": "m0011rzy",
+      "relevantPathsAI": ["A.1.b", "A.1.c", "A.1.d"],
+      "rationaleAI": "Callicles' argument that natural law supersedes human convention and that might is right represents one of the earliest articulations of legal positivism's challenge to natural law — a foundational problem in jurisprudence. The dialogue's examination of whether justice is grounded in nature or convention directly engages the relationship between law and morality."
     },
     {
-      "episodeTitle": "War in the 20th Century",
-      "pid": "p0054578",
-      "relevantPathsAI": [
-        "A.1.d"
-      ],
-      "rationaleAI": "The development of international humanitarian law, Geneva Conventions, and Nuremberg principles represents a major modern development in the historical survey of legal theories."
+      "episodeTitle": "The Magna Carta",
+      "pid": "b00k4fg7",
+      "relevantPathsAI": ["B.3.b", "B.4.a", "A.1.d"],
+      "rationaleAI": "Magna Carta's 1215 establishment of rule of law, limits on royal taxation, and protections against arbitrary imprisonment are foundational to medieval constitutional law. Its influence on habeas corpus, the English Bill of Rights, and the American Constitution traces a direct line from medieval sources to the Anglo-American common law tradition."
     },
     {
-      "episodeTitle": "Virtue",
-      "pid": "p005489r",
-      "relevantPathsAI": [
-        "A.1.c"
-      ],
-      "rationaleAI": "The concept of virtue from Plato's cardinal virtues through Aquinas's theological virtues to modern virtue ethics addresses the foundational relationship between law and morality in Western legal philosophy."
+      "episodeTitle": "Montesquieu",
+      "pid": "b0b5qnfx",
+      "relevantPathsAI": ["A.1.b", "A.1.d", "B.4"],
+      "rationaleAI": "Montesquieu's theory of separation of powers into judicial, executive, and legislative branches is a cornerstone of modern constitutional legal theory. His empirical comparative analysis of government types and his direct influence on the American Constitution make him essential to understanding modern legal system design and jurisprudential theory."
     },
     {
-      "episodeTitle": "Byzantium",
-      "pid": "p00547j9",
-      "relevantPathsAI": [
-        "A.1.d",
-        "B.2.f"
-      ],
-      "rationaleAI": "Byzantium's coverage of Justinian's Corpus Juris Civilis -- the codification of Roman law that became the basis of civil law systems -- directly addresses Roman law and its influence on modern continental civil law."
+      "episodeTitle": "The Social Contract",
+      "pid": "b008w3xm",
+      "relevantPathsAI": ["A.1.b", "A.1.c", "A.1.d"],
+      "rationaleAI": "Social contract theory from Grotius through Hobbes, Locke, and Rousseau directly addresses the philosophical legitimacy of law and governmental authority over individuals. The tradition's debates about natural rights, consent, and the right to resist tyranny underpin modern constitutionalism and the theoretical foundations of legal obligation."
+    },
+    {
+      "episodeTitle": "The 12th Century Renaissance",
+      "pid": "b07z6vzq",
+      "relevantPathsAI": ["B.3.a", "C"],
+      "rationaleAI": "The recovery and reinterpretation of Roman law during the twelfth century, alongside the founding of the University of Bologna as Europe's first law school, were pivotal to the development of medieval European legal scholarship and laid the groundwork for systematisation of canon and civil law traditions."
+    },
+    {
+      "episodeTitle": "Roman Slavery",
+      "pid": "b09xnl51",
+      "relevantPathsAI": ["B.2.f"],
+      "rationaleAI": "Examines the legal status of slaves under Roman law, including manumission practices, freedmen's social and legal roles, and philosophical responses to slavery — providing substantive insight into how Roman legal institutions governed persons and property across eight centuries of the Republic and Empire."
+    },
+    {
+      "episodeTitle": "Philippa Foot",
+      "pid": "m001z6p8",
+      "relevantPathsAI": ["A.1.b", "A.1.c"],
+      "rationaleAI": "Foot's revival of Aristotelian and Thomistic natural-law traditions to argue that moral judgments can be objectively grounded directly engages the relationship between law and morality. Her Trolley Problem, distinguishing acts from omissions and doing harm versus allowing harm, has become a foundational tool in legal as well as ethical reasoning."
+    },
+    {
+      "episodeTitle": "Confucius",
+      "pid": "p00547k8",
+      "relevantPathsAI": ["A.2"],
+      "rationaleAI": "Confucian philosophy of hierarchy, ritual propriety, and moral governance became the bedrock of Chinese legal and political thought for over two millennia, representing the dominant non-Western philosophical framework shaping Chinese approaches to law, social order, and justice."
+    },
+    {
+      "episodeTitle": "The Han Synthesis",
+      "pid": "p004y29t",
+      "relevantPathsAI": ["A.2", "B.2.c"],
+      "rationaleAI": "The Han dynasty's merger of Confucian ethics with cosmological frameworks into a unified state ideology, and its establishment of the civil service examination system, institutionalised Chinese legal-philosophical principles into governance structures and defined the relationship between state authority and law in Chinese civilisation."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

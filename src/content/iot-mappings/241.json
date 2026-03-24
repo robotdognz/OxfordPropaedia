@@ -5,97 +5,253 @@
       "episodeTitle": "Plate Tectonics",
       "pid": "b008q0sp",
       "relevantPathsAI": [
+        "F",
         "F.1",
         "F.2",
         "F.3",
         "F.4",
         "F.4.a",
         "D",
-        "E"
+        "E.1",
+        "E.2"
       ],
-      "rationaleAI": "Plate tectonics directly covers Wegener's continental drift, Hess's seafloor spreading, plate boundaries as sites of volcanism and orogeny, mountain building, and continental formation -- the core of section F and its connections to D and E."
-    },
-    {
-      "episodeTitle": "The Earth's Origins",
-      "pid": "p00547hl",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "B.2",
-        "C.1"
-      ],
-      "rationaleAI": "Earth's origins covers the nebular hypothesis, differentiation of core, mantle, and crust from the primordial Earth, the origin of the atmosphere and oceans, and the Late Heavy Bombardment, directly addressing the origin of the lithosphere, atmosphere, and hydrosphere."
-    },
-    {
-      "episodeTitle": "The Earth's Core",
-      "pid": "b05s3gyv",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "D.1",
-        "D.3"
-      ],
-      "rationaleAI": "Earth's core structure, including its iron-nickel composition, differentiation during formation, core-mantle interactions, and dynamo-generated magnetic field, relates directly to geochemical differentiation and the relationship between endogenic regimes and deep-seated processes."
+      "rationaleAI": "Directly addresses the theory of plate tectonics including continental drift hypotheses (F.1, F.2), seafloor spreading (F.3), and the unifying role of plate tectonics in explaining volcanism, seismicity, and orogeny at plate boundaries (F.4.a). Also covers the long-term evolution of continents and ocean basins (D) and the distribution of mountain belts in relation to global tectonics (E.1, E.2)."
     },
     {
       "episodeTitle": "Vulcanology",
       "pid": "p005490h",
       "relevantPathsAI": [
+        "A.2",
         "B.3",
-        "E.1",
         "F.4.a"
       ],
-      "rationaleAI": "Volcanism at subduction zones, mid-ocean ridges, and hotspots has shaped Earth's atmosphere and climate throughout geological history, and volcanic activity marks lithospheric plate boundaries."
+      "rationaleAI": "Volcanism at subduction zones, mid-ocean ridges, and mantle plumes drives geochemical differentiation of Earth's outer layers (A.2). Volcanoes played essential roles in forming Earth's atmosphere and crust, contributing to the development of the present atmosphere through outgassing (B.3). Volcanism at plate boundaries exemplifies lithospheric plate boundary processes (F.4.a)."
     },
     {
-      "episodeTitle": "The Geological Formation of Britain",
-      "pid": "b00n8t48",
+      "episodeTitle": "The Earth's Origins",
+      "pid": "p00547hl",
       "relevantPathsAI": [
-        "D",
-        "E.2",
-        "F.1"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Britain's geological formation illustrates continental growth through Paleozoic plate collisions (Iapetus Ocean closure), mountain building, and the concept of a former supercontinent fragmenting into present landmasses."
+      "rationaleAI": "Covers the historical development of ideas about Earth's age and geological origins from biblical chronology through Hutton, Smith, and Lyell's establishment of deep time via stratigraphic observation and uniformitarian principles. Directly relevant to theories of the origin of the Earth (A.1) and the conceptual foundations for understanding lithospheric evolution."
+    },
+    {
+      "episodeTitle": "The Universe's Origins",
+      "pid": "p00545j9",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Traces Earth's formation to gravitational collapse within a solar nebula 4.6 billion years ago, covering Kant's nebular hypothesis, Laplace's refinements, and planetary accretion. Directly addresses theories of Earth's origin (A.1) and the relation of atmospheric development to the origin of the solar system (B.1)."
+    },
+    {
+      "episodeTitle": "The Earth's Core",
+      "pid": "b05s3gyv",
+      "relevantPathsAI": [
+        "A.2",
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Earth's internal structure — solid inner core, liquid outer core generating the magnetic field via geodynamo convection, and core-mantle interactions — relates to geochemical differentiation of outer layers (A.2), Earth's crust and upper mantle (D.1), and the relation between endogenic regimes and deep-seated processes (D.3)."
     },
     {
       "episodeTitle": "Seismology",
       "pid": "m00154gh",
       "relevantPathsAI": [
         "D.1",
-        "E.1",
+        "D.3",
         "F.4.a"
       ],
-      "rationaleAI": "Seismology reveals Earth's internal structure through seismic wave analysis and connects to plate tectonics, earthquake mechanisms at plate boundaries, and the relationship between endogenic regimes and deep-seated processes."
+      "rationaleAI": "Seismic wave analysis revealing Earth's layered internal structure — crust, mantle, and core — is directly relevant to understanding Earth's crust and upper mantle (D.1) and deep-seated processes (D.3). Plate tectonics, fault mechanics, and seismic hazard assessment relate to seismicity at plate boundaries (F.4.a)."
     },
     {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
+      "episodeTitle": "Ice Ages",
+      "pid": "b01qjj99",
       "relevantPathsAI": [
-        "B.2",
-        "B.3"
+        "B.3",
+        "C.1",
+        "C.2"
       ],
-      "rationaleAI": "Oxygen's significance for the history of Earth's atmosphere and the evolution of life connects directly to the development of the present terrestrial atmosphere from its original reducing state."
-    },
-    {
-      "episodeTitle": "Catastrophism",
-      "pid": "b03s9tlz",
-      "relevantPathsAI": [
-        "D",
-        "E"
-      ],
-      "rationaleAI": "Catastrophism's debate with uniformitarianism shaped understanding of how continental features and mountain ranges formed, whether through gradual or sudden geological processes."
+      "rationaleAI": "Multiple ice ages throughout geological history including Snowball Earth episodes illustrate the development of the present atmosphere through CO2 levels and Milankovitch cycles (B.3). Profound effects on sea levels and ocean chemistry connect to the early oceans (C.1) and the chemical evolution of modern oceans (C.2)."
     },
     {
       "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
       "pid": "b08hpmmf",
       "relevantPathsAI": [
+        "B.3",
         "B.5",
         "C.2"
       ],
-      "rationaleAI": "The PETM involved ocean acidification and shifts in ocean circulation 56 million years ago, relevant to the chemical evolution of the modern oceans and effects of massive carbon release on atmosphere and hydrosphere."
+      "rationaleAI": "Massive carbon dioxide and methane releases raised global temperatures over five degrees, exemplifying atmospheric evolution through greenhouse feedback (B.3). Serves as a deep-time analogue for anthropogenic carbon emissions and their atmospheric ramifications (B.5). Warming ocean currents destabilizing methane hydrates connects to the chemical view of modern oceans (C.2)."
+    },
+    {
+      "episodeTitle": "Venus",
+      "pid": "m0001rm1",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.5"
+      ],
+      "rationaleAI": "Comparing Venus's runaway greenhouse atmosphere with Earth's illuminates the development of planetary atmospheres from similar starting conditions (B.1) and how Earth's original atmosphere diverged from Venus's fate (B.2). Venus's extreme greenhouse serves as a natural laboratory for understanding greenhouse warming processes relevant to Earth (B.5)."
+    },
+    {
+      "episodeTitle": "Photosynthesis",
+      "pid": "b0435jyv",
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Photosynthesis arose very early in evolutionary history among prokaryotic organisms and fundamentally transformed Earth's atmosphere by generating and maintaining oxygen levels. Central to the development of the present terrestrial atmosphere (B.3) through the Great Oxidation Event."
+    },
+    {
+      "episodeTitle": "Oceanography",
+      "pid": "p00547lb",
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Covers ocean floor mapping, ocean currents, and deep-sea exploration including hydrothermal vent ecosystems, relevant to the chemical view of the modern oceans (C.2) and understanding how oceanic systems have developed over geological time."
+    },
+    {
+      "episodeTitle": "Early Geology",
+      "pid": "b01dgh7d",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "The emergence of geology as a scientific discipline from ancient speculation through Renaissance mining to the Geological Society provides the methodological foundation for theories of Earth's origin (A.1). Stratigraphy and empirical earth sciences underpin understanding of lithospheric evolution (A)."
+    },
+    {
+      "episodeTitle": "Antarctica",
+      "pid": "b00ss2th",
+      "relevantPathsAI": [
+        "B.3",
+        "F.1"
+      ],
+      "rationaleAI": "Antarctica's paleoclimatology, ice cover history, and climatological significance relate to atmospheric development (B.3). Its position as part of former supercontinent Gondwana connects to early speculations about supercontinent existence and fragmentation (F.1)."
+    },
+    {
+      "episodeTitle": "Asteroids",
+      "pid": "p003k9kh",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Asteroids are pristine, chemically unchanged building blocks from the solar system's formation, providing direct evidence about the accretion processes that formed Earth. Relevant to theories of the origin of the Earth (A.1) as snapshots of primordial matter."
+    },
+    {
+      "episodeTitle": "Comets",
+      "pid": "b01pw38n",
+      "relevantPathsAI": [
+        "A.1",
+        "C.1"
+      ],
+      "rationaleAI": "Comets as frozen time capsules from the solar system's formation are relevant to theories of Earth's origin (A.1). Their potential role in delivering water and volatile compounds to the early Earth connects to the origin of the hydrosphere and early oceans (C.1)."
+    },
+    {
+      "episodeTitle": "The Permian-Triassic Boundary",
+      "pid": "b007r285",
+      "relevantPathsAI": [
+        "B.3",
+        "B.5"
+      ],
+      "rationaleAI": "Siberian Traps volcanism releasing greenhouse gases, ocean anoxia, methane release from destabilized clathrates, and ozone depletion illustrate major perturbations in atmospheric development (B.3). These cascading disruptions parallel concerns about human-induced atmospheric changes and their ramifications (B.5)."
+    },
+    {
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": [
+        "B.3",
+        "C.2"
+      ],
+      "rationaleAI": "Terrestrial plant colonization driving nutrient runoff, marine anoxia, and ocean chemistry changes demonstrates co-evolution of Earth's atmosphere and hydrosphere. New soil formation affecting atmospheric composition relates to atmospheric development (B.3), while resulting ocean chemistry perturbations connect to the chemical view of modern oceans (C.2)."
+    },
+    {
+      "episodeTitle": "Solar Wind",
+      "pid": "m000dg9n",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "The solar wind's interaction with Earth's magnetosphere shapes atmospheric retention and evolution, relevant to the relation between atmospheric development and solar system processes (B.1). The magnetosphere shielding the atmosphere from solar radiation is essential to understanding how the present atmosphere developed and persists (B.3)."
+    },
+    {
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "The Sun's 4.5-billion-year history and formation from the solar nebula are fundamental to understanding Earth's origin (A.1). Solar radiation output and activity cycles relate to the development of Earth's atmosphere in the context of the solar system (B.1)."
+    },
+    {
+      "episodeTitle": "The Kuiper Belt",
+      "pid": "b08g7ttx",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Primordial material from solar system formation preserved in the Kuiper Belt, and evidence about planetary migration from its structure, inform understanding of how the solar system and Earth assembled. Relevant to theories of Earth's origin (A.1)."
+    },
+    {
+      "episodeTitle": "Jupiter",
+      "pid": "m001n8mv",
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Jupiter's crucial role in early solar system formation by influencing the distribution of matter is directly relevant to theories of Earth's origin (A.1). Its gravitational shielding of inner planets from debris connects to conditions enabling Earth's atmospheric development within the solar system context (B.1)."
+    },
+    {
+      "episodeTitle": "Corals",
+      "pid": "m0010xnr",
+      "relevantPathsAI": [
+        "C.2",
+        "B.5"
+      ],
+      "rationaleAI": "Darwin's work on coral reefs informed understanding of slow geological change and ocean chemistry processes (C.2). Current threats from climate change, pollution, and ocean acidification exemplify human activities and their ramifications on Earth's envelopes (B.5)."
+    },
+    {
+      "episodeTitle": "The Cambrian Period",
+      "pid": "p003k9bg",
+      "relevantPathsAI": [
+        "B.3",
+        "C.2"
+      ],
+      "rationaleAI": "The Cambrian explosion's dependence on ocean chemistry and atmospheric oxygen levels directly relates to the development of Earth's atmosphere (B.3) and the chemical evolution of early oceans (C.2). The interplay between atmospheric oxygenation and marine diversification illustrates co-development of Earth's envelopes."
+    },
+    {
+      "episodeTitle": "The Cool Universe",
+      "pid": "b00s7b6r",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Molecular clouds as the raw substance from which planetary systems form through gravitational collapse, and their chemical composition governing planetary formation, are directly relevant to theories of Earth's origin from interstellar material (A.1)."
+    },
+    {
+      "episodeTitle": "The Death of Stars",
+      "pid": "m0018128",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Supernovae synthesizing heavy elements through nucleosynthesis and dispersing enriched material into molecular clouds from which subsequent planetary systems originate explains Earth's elemental composition. Directly relevant to theories of Earth's origin (A.1)."
+    },
+    {
+      "episodeTitle": "Magnetism",
+      "pid": "p003k9dd",
+      "relevantPathsAI": [
+        "D.1",
+        "F.2"
+      ],
+      "rationaleAI": "William Gilbert's proposal that Earth is a giant magnet relates to understanding Earth's crust and internal structure (D.1). Paleomagnetic evidence from rock records provided crucial support for Wegener's continental drift concept (F.2)."
+    },
+    {
+      "episodeTitle": "Mammals",
+      "pid": "p003k9ds",
+      "relevantPathsAI": [
+        "D",
+        "F.1"
+      ],
+      "rationaleAI": "Continental drift from Pangaea breakup creating isolated landmasses that enabled distinct mammalian evolutionary radiations directly illustrates the consequences of supercontinent fragmentation (F.1) and the formation and growth of continents (D)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

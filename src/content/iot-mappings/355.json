@@ -2,80 +2,126 @@
   "sectionCode": "355",
   "mappings": [
     {
-      "episodeTitle": "Genetic Determinism",
-      "pid": "p005461w",
-      "relevantPathsAI": [
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "Genetic determinism covers the nature-nurture controversy, eugenics history, and gene-environment interaction -- directly relevant to environmental modification of the human species and deliberate selective measures (eugenics)."
+      "episodeTitle": "Language and the Mind",
+      "pid": "p00545cr",
+      "relevantPathsAI": ["A.3"],
+      "rationaleAI": "Directly addresses propositional speech and innate language capacity as uniquely human traits, including Chomsky's universal grammar and debates over whether language ability distinguishes humans from other species."
+    },
+    {
+      "episodeTitle": "Cave Art",
+      "pid": "m000mqn7",
+      "relevantPathsAI": ["A.1", "A.3"],
+      "rationaleAI": "Stone Age cave art demonstrates uniquely human behavioral capacities for symbolic expression and conceptualization, with debates about Neanderthal creative capability directly addressing what sets humans apart in the biosphere."
+    },
+    {
+      "episodeTitle": "Human Nature",
+      "pid": "p00548kf",
+      "relevantPathsAI": ["A", "B.2", "B.3"],
+      "rationaleAI": "The nature-versus-nurture debate directly addresses whether human qualities are innate biological endowments or environmentally shaped, engaging with evolutionary psychology, genetics, and the implications of fixed versus malleable human nature."
     },
     {
       "episodeTitle": "Evolutionary Psychology",
       "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.3",
-        "B.2"
-      ],
-      "rationaleAI": "Evolutionary psychology covers the evolution of language, the Environment of Evolutionary Adaptedness, modular theories of mind, and the nature-nurture debate -- directly relevant to behavioral capacity as the basis of unique human culture and environmental modification of the species."
+      "relevantPathsAI": ["A.3", "B.2"],
+      "rationaleAI": "Examines human behavioral capacity through the lens of genetic imperatives and natural selection, addressing whether uniquely human behaviors are determined by evolutionary pressures or shaped by culture and environment."
     },
     {
-      "episodeTitle": "History as Science",
-      "pid": "p00545f0",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.1"
-      ],
-      "rationaleAI": "History as Science covers domesticable plants and animals as drivers of civilizational development and humanity's ecological modification of environments -- directly relevant to human influence on the environment and domestication of organisms."
+      "episodeTitle": "Intelligence",
+      "pid": "p00545l3",
+      "relevantPathsAI": ["A.3", "B.3"],
+      "rationaleAI": "Covers human intellect and cognitive ability as distinctive traits, including the misuse of IQ testing in eugenics programs and forced sterilization—directly relevant to attempts to change genetic endowments through deliberate selective measures."
     },
     {
-      "episodeTitle": "Nature",
-      "pid": "p005490t",
-      "relevantPathsAI": [
-        "A",
-        "B.1"
-      ],
-      "rationaleAI": "The concept of nature covers humanity's relationship to the natural world, the nature-culture distinction, and ecological thinking -- directly relevant to the qualities that set humans apart and human influence on the environment."
+      "episodeTitle": "Hybrids",
+      "pid": "m0009t41",
+      "relevantPathsAI": ["C.1", "C.2", "C.4"],
+      "rationaleAI": "Addresses deliberate human manipulation of hybridization in agriculture and animal breeding, with Darwin's study of domestication and artificial selection connecting directly to the cultivation and breeding of plants and animals."
     },
     {
       "episodeTitle": "The Evolution of Horses",
       "pid": "m000fp9y",
-      "relevantPathsAI": [
-        "C.1",
-        "C.4"
-      ],
-      "rationaleAI": "The domestication of horses approximately 4000 BCE and its transformative impact on warfare, transportation, and civilization is directly relevant to the domestication and cultivation of animals."
+      "relevantPathsAI": ["C.1", "C.4", "C.5"],
+      "rationaleAI": "Horse domestication in Central Asia transformed human civilization through warfare, agriculture, transportation, and trade, exemplifying domestication of animals, animal raising, and major uses of animals by humans."
+    },
+    {
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
+      "relevantPathsAI": ["B.2", "C.1", "D.4"],
+      "rationaleAI": "Jared Diamond's thesis that domesticable plants and animals, continental geography, and disease exposure determined civilizational trajectories directly addresses environmental influence on human development, domestication, and food supply management."
+    },
+    {
+      "episodeTitle": "Coffee",
+      "pid": "m000c4x1",
+      "relevantPathsAI": ["C.2", "C.3"],
+      "rationaleAI": "Traces coffee from Ethiopian origins through colonial plantation cultivation by enslaved labor to global commodity, illustrating plant cultivation, distribution, and the diverse uses of plants in human societies."
+    },
+    {
+      "episodeTitle": "Li Shizhen",
+      "pid": "m000bp3g",
+      "relevantPathsAI": ["C.3", "C.5"],
+      "rationaleAI": "Li Shizhen's Bencao Gangmu systematically documented nearly 1,900 plants, animals, and minerals with medicinal properties, directly exemplifying the diverse uses of plants and animals by humans."
+    },
+    {
+      "episodeTitle": "Pitt-Rivers",
+      "pid": "b01qwgxx",
+      "relevantPathsAI": ["C.6.a"],
+      "rationaleAI": "Augustus Pitt-Rivers amassed thousands of ethnographic and archaeological objects forming the founding collection of the Pitt Rivers Museum at Oxford, directly relevant to museums of natural history as institutions for preserving collections of specimens."
+    },
+    {
+      "episodeTitle": "Corals",
+      "pid": "m0010xnr",
+      "relevantPathsAI": ["B.1", "D.1", "D.3"],
+      "rationaleAI": "Coral reefs threatened by human activity including fishing, pollution, and climate change illustrate the human influence on environmental modification and the need for conservation management of natural resources."
+    },
+    {
+      "episodeTitle": "Malthusianism",
+      "pid": "b011zzh6",
+      "relevantPathsAI": ["D.4", "D.4.a"],
+      "rationaleAI": "Malthus's argument that population grows geometrically while food supply increases arithmetically, with famine as a natural check, directly addresses the management of world food supply and the problems of resource scarcity."
+    },
+    {
+      "episodeTitle": "Octavia Hill",
+      "pid": "b0100jpz",
+      "relevantPathsAI": ["D.1", "D.3"],
+      "rationaleAI": "Co-founded the National Trust for preserving places of natural beauty and pioneered the concept of green belts for urban green spaces, directly relevant to the nature, scope, and practice of conservation management of natural resources."
+    },
+    {
+      "episodeTitle": "Social Darwinism",
+      "pid": "b03vgq1q",
+      "relevantPathsAI": ["B.3"],
+      "rationaleAI": "Connected to the eugenics movement promoting selective breeding to alter human genetic endowments, directly illustrating attempts to change hereditary traits through deliberate selective measures applied to human populations."
+    },
+    {
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": ["B.3"],
+      "rationaleAI": "Covers the growing capacity for human intervention in genetic processes from Mendel through DNA discovery to genetic manipulation, directly relevant to attempts to change genetic endowments through deliberate measures."
+    },
+    {
+      "episodeTitle": "Genetic Determinism",
+      "pid": "p005461w",
+      "relevantPathsAI": ["B.2", "B.3"],
+      "rationaleAI": "Examines claims that genes determine intelligence, personality, and behavior, engaging with the extent to which heredity versus environment shapes the human species and the social implications of deliberate genetic selection."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 1",
+      "pid": "b018wfsc",
+      "relevantPathsAI": ["A.3"],
+      "rationaleAI": "Writing as arguably humanity's most important invention enabled the development of human culture through recording and transmitting knowledge, exemplifying the behavioral capacity for communication and conceptualization that sets humans apart."
     },
     {
       "episodeTitle": "Linnaeus",
       "pid": "m001l291",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2",
-        "C.3"
-      ],
-      "rationaleAI": "Linnaeus developed the system for classifying organisms and his work on plant classification relates directly to the scientific framework for understanding domesticated and cultivated plants and their distribution."
+      "relevantPathsAI": ["C.6.a", "C.6.d"],
+      "rationaleAI": "Linnaeus's systematic classification of living organisms and his expeditions cataloguing flora and fauna are foundational to natural history museums and botanical gardens as institutions for collecting and preserving specimens of plants and animals."
     },
     {
-      "episodeTitle": "Darwin: On the Origin of Species",
-      "pid": "b00gd3wy",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3"
-      ],
-      "rationaleAI": "Darwin's Origin of Species placed humanity within the natural order, directly relevant to understanding the qualities distinguishing humans in the biosphere and behavioral capacity as the basis of human culture."
-    },
-    {
-      "episodeTitle": "Darwin: Life After Origins",
-      "pid": "b00gdhqf",
-      "relevantPathsAI": [
-        "A.3",
-        "C.2"
-      ],
-      "rationaleAI": "Darwin's post-Origin work on orchid pollination and earthworms illustrates human scientific investigation of organisms' roles in the biosphere, and sexual selection in The Descent of Man is relevant to distinctive human behavioural capacities."
+      "episodeTitle": "Nature",
+      "pid": "p005490t",
+      "relevantPathsAI": ["A", "B.1"],
+      "rationaleAI": "Competing philosophical conceptions of humanity's place within the natural world—from Genesis narratives to evolutionary thought—directly address the qualities setting humans apart in the biosphere and the human relationship to the environment."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

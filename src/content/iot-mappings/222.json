@@ -2,123 +2,134 @@
   "sectionCode": "222",
   "mappings": [
     {
+      "episodeTitle": "Water",
+      "pid": "b01rgm9g",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Water's anomalous physical properties—high heat capacity, surface tension, solvent versatility, density maximum at 4°C, and natural occurrence in gas, liquid, and solid states covering two-thirds of Earth's surface—directly address the physical and chemical properties of seawater (B) and freshwater (C), the distribution of water in the hydrosphere (A), and the hydrologic cycle (D)."
+    },
+    {
       "episodeTitle": "Oceanography",
       "pid": "p00547lb",
       "relevantPathsAI": [
+        "A.1",
         "A.1.a",
         "B",
-        "E.3",
         "H",
-        "G.1"
+        "H.1",
+        "H.3",
+        "H.4.a"
       ],
-      "rationaleAI": "Oceanography directly addresses ocean science, covering ocean circulation patterns (thermohaline circulation, El Nino), the chemistry of seawater, the geology of the ocean floor, and the Challenger expedition's foundational role in mapping oceans."
+      "rationaleAI": "The science of oceanography from 19th-century deep-sea exploration to modern ocean floor mapping covers the distribution of saltwater bodies (A.1), ocean currents (H), deep-sea circulation (H.4.a), and the physical properties of seawater (B), while the Azoic Theory's refutation demonstrates how understanding of deep-ocean environments evolved."
+    },
+    {
+      "episodeTitle": "The Challenger Expedition 1872-1876",
+      "pid": "m001fcvd",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "B",
+        "H",
+        "H.1",
+        "H.4",
+        "H.4.a"
+      ],
+      "rationaleAI": "The first systematic oceanographic survey gathered data on ocean temperatures, currents, chemistry, and seafloor geology across nearly 70,000 nautical miles, plumbing the Mariana Trench at nearly five miles depth, directly establishing empirical knowledge of ocean current distribution (H.1), deep-sea circulation (H.4.a), and seawater properties (B)."
     },
     {
       "episodeTitle": "Ice Ages",
       "pid": "b01qjj99",
       "relevantPathsAI": [
+        "A.3",
         "A.3.a",
-        "D.5",
-        "E.3"
+        "A.3.b",
+        "D.5"
       ],
-      "rationaleAI": "Pleistocene glaciations and Snowball Earth events relate directly to ice sheets and glaciers, the role of ice in the hydrologic cycle, and the impact of glaciation on sea levels and ocean circulation in climate regulation."
-    },
-    {
-      "episodeTitle": "Water",
-      "pid": "b01rgm9g",
-      "relevantPathsAI": [
-        "B",
-        "C",
-        "D"
-      ],
-      "rationaleAI": "Water's unique physical and chemical properties -- hydrogen bonding, high specific heat capacity, expansion upon freezing, surface tension, and its role in the water cycle and climate regulation -- map directly onto the properties of seawater and freshwater and the hydrologic cycle."
+      "rationaleAI": "Extensive polar and continental ice sheets during the Quaternary glaciation and Snowball Earth episodes, with alternating glacial and interglacial periods affecting sea levels and geography, directly address ice sheets and glaciers (A.3.a), icebergs and pack ice (A.3.b), and the role of ice in the hydrologic cycle (D.5)."
     },
     {
       "episodeTitle": "Climate Change",
       "pid": "p00546l7",
       "relevantPathsAI": [
-        "E.2",
+        "E",
+        "E.3",
         "E.3.a",
-        "E.3.b",
         "F"
       ],
-      "rationaleAI": "Climate change science covers the greenhouse effect, sea level rise, and ocean-atmosphere interactions including the link between ocean temperature anomalies and climate, directly relevant to carbon dioxide as an oceanic sink and effects of human activities on the hydrosphere."
-    },
-    {
-      "episodeTitle": "Antarctica",
-      "pid": "b00ss2th",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.3.b",
-        "D.5"
-      ],
-      "rationaleAI": "Antarctica's ice sheets contain most of Earth's fresh water, and the continent's role in global climate systems connects directly to ice masses, icebergs, pack ice, and ice in the hydrologic cycle."
+      "rationaleAI": "Evidence for human-caused global warming and the role of ocean surface temperature in climate anomalies address ocean-atmosphere interactions (E) and their impact on climate and weather (E.3), while the potential disruption of the water balance due to greenhouse warming directly maps to effects of human activities on the hydrosphere (F)."
     },
     {
       "episodeTitle": "The Paleocene-Eocene Thermal Maximum",
       "pid": "b08hpmmf",
       "relevantPathsAI": [
+        "B",
+        "E",
         "E.2",
         "E.3.a",
         "F"
       ],
-      "rationaleAI": "The PETM involved ocean acidification, shifts in ocean circulation, and massive carbon release, directly relevant to oceanic waters as a carbon dioxide sink and ocean-atmosphere interactions affecting climate."
+      "rationaleAI": "Arctic seas warming to subtropical temperatures, destabilization of frozen methane hydrate crystals in seabed sediments, and runaway greenhouse feedback address seawater properties under extreme change (B), the ocean as a carbon dioxide sink (E.2), the link between ocean surface temperature and climate anomalies (E.3.a), and disruption of the water balance due to greenhouse processes (F)."
     },
     {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
+      "episodeTitle": "The Moon",
+      "pid": "b016lh15",
       "relevantPathsAI": [
-        "E.2",
-        "F"
+        "G.3",
+        "H.4.b"
       ],
-      "rationaleAI": "The carbon cycle in Earth's biosphere and carbon's role in fossil fuels and climate change connect to oceanic carbon dioxide absorption and the effects of carbon dioxide buildup on the hydrosphere."
-    },
-    {
-      "episodeTitle": "Plankton",
-      "pid": "m001r1t5",
-      "relevantPathsAI": [
-        "A.4",
-        "E.2"
-      ],
-      "rationaleAI": "Plankton's role in the carbon cycle and biological pump, and phytoplankton as major oxygen producers, relate directly to water in the biosphere and oceanic waters as a carbon dioxide sink."
-    },
-    {
-      "episodeTitle": "1816, the Year Without a Summer",
-      "pid": "b077j4yv",
-      "relevantPathsAI": [
-        "E.3"
-      ],
-      "rationaleAI": "The 1816 eruption of Tambora caused volcanic climate forcing that disrupted weather patterns globally, demonstrating ocean-atmosphere interactions' impact on climate and weather."
+      "rationaleAI": "The Moon governs Earth's tides and stabilizes axial tilt influencing climate, directly addressing tidal phenomena (G.3) and the tidal currents associated with tides in the sea (H.4.b)."
     },
     {
       "episodeTitle": "Corals",
       "pid": "m0010xnr",
       "relevantPathsAI": [
-        "A.4",
+        "A.1.a",
         "F"
       ],
-      "rationaleAI": "Coral reef ecosystems are threatened by ocean acidification and warming-driven bleaching, directly connecting to the effects of human activities on the hydrosphere including cultural eutrophication and greenhouse warming."
+      "rationaleAI": "Coral reefs as major marine ecosystems threatened by fishing, pollution, and climate-change-driven bleaching illustrate the biological richness of ocean environments (A.1.a) and the effects of human activities on the hydrosphere including eutrophication and warming (F)."
     },
     {
-      "episodeTitle": "Vulcanology",
-      "pid": "p005490h",
-      "relevantPathsAI": [
-        "E.3",
-        "F"
-      ],
-      "rationaleAI": "Volcanism shapes Earth's atmosphere and climate, with eruptions influencing ocean-atmosphere interactions and contributing to atmospheric changes that affect the hydrosphere."
-    },
-    {
-      "episodeTitle": "The Mariana Trench",
-      "pid": "m002q38k",
+      "episodeTitle": "Doggerland",
+      "pid": "m0006707",
       "relevantPathsAI": [
         "A.1.a",
-        "G.2",
+        "A.3",
+        "A.3.a",
+        "D.5"
+      ],
+      "rationaleAI": "The submergence of inhabited land beneath the North Sea as glaciers melted and seas rose demonstrates the dynamic relationship between ice masses (A.3.a), the role of ice in the hydrologic cycle (D.5), and the expansion of marginal seas (A.1.a) through post-glacial sea level change."
+    },
+    {
+      "episodeTitle": "The Permian-Triassic Boundary",
+      "pid": "b007r285",
+      "relevantPathsAI": [
+        "B",
+        "F"
+      ],
+      "rationaleAI": "Ocean anoxia, methane release from destabilized clathrates, and the collapse of marine ecosystems during Earth's greatest mass extinction illustrate extreme changes in seawater chemistry (B) and catastrophic disruption of hydrospheric conditions analogous to anthropogenic effects (F)."
+    },
+    {
+      "episodeTitle": "The Late Devonian Extinction",
+      "pid": "m000sz7x",
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Nutrient runoff from newly developed terrestrial soils into shallow seas triggering massive algal blooms and marine anoxia exemplifies how environmental changes can profoundly alter hydrospheric chemistry, paralleling modern cultural eutrophication (F)."
+    },
+    {
+      "episodeTitle": "Plate Tectonics",
+      "pid": "b008q0sp",
+      "relevantPathsAI": [
+        "A.1.a",
         "H.4.a"
       ],
-      "rationaleAI": "The Mariana Trench represents the deepest oceanic feature, formed through subduction, with unique deep-sea ecosystems, directly relevant to oceans, internal waves at depth, and deep-sea circulation."
+      "rationaleAI": "Seafloor spreading at mid-ocean ridges and the formation and destruction of ocean basins through plate movement shape the distribution of oceans and marginal seas (A.1.a), while mantle-driven convection influences deep-sea circulation patterns (H.4.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

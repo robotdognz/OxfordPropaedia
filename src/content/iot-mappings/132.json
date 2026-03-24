@@ -6,74 +6,48 @@
       "pid": "p003c1cn",
       "relevantPathsAI": [
         "A",
-        "A.1",
+        "A.1.a",
         "A.2",
         "A.3",
-        "A.4",
-        "A.5",
-        "A.6"
+        "A.6",
+        "B.6",
+        "B.6.a",
+        "B.6.b",
+        "B.6.d"
       ],
-      "rationaleAI": "Galaxy classification (elliptical, spiral, irregular), formation theories, collisions, supermassive black holes, the Milky Way, and galaxy clusters comprehensively address all aspects of galaxies in general (A)."
+      "rationaleAI": "Covers galaxy types including spirals, ellipticals, and dwarfs (A.1.a), physical properties such as size and morphology (A.2), structural features (A.3), and galaxy formation and evolution (A.6). Addresses the Milky Way's 100,000 light-year dimensions and disc-like structure (B.6.a), rotation at 220 km/s (B.6.d), and supermassive black holes governing stellar dynamics at galactic centres (B.6.b), plus the predicted Andromeda collision as galaxy interaction."
     },
     {
       "episodeTitle": "The Life of Stars",
       "pid": "p00548w8",
       "relevantPathsAI": [
-        "B.4",
-        "D.5",
-        "D.6",
-        "D.7"
+        "D.7",
+        "D.7.a",
+        "D.7.a.i",
+        "D.7.a.ii",
+        "D.7.a.iii",
+        "D.7.b",
+        "D.6.b",
+        "D.5.a",
+        "B.4"
       ],
-      "rationaleAI": "The life cycle of stars including the Hertzsprung-Russell diagram, hydrogen fusion, red giants, supernovae, and nucleosynthesis addresses stellar classification (B.4), stellar statistics (D.5), structure (D.6), and evolution (D.7)."
+      "rationaleAI": "Spans the full stellar lifecycle from nebular formation through main-sequence hydrogen fusion to death as white dwarfs, neutron stars, or black holes. Covers nuclear fusion processes (D.6.b), the Hertzsprung-Russell diagram (B.4, D.5.a), protostar gravitational contraction (D.7.a.i), attainment of the main sequence (D.7.a.ii), evolution away from the main sequence (D.7.a.iii), and heavy-element nucleosynthesis in supernovae (D.7.b)."
     },
     {
       "episodeTitle": "The Death of Stars",
       "pid": "m0018128",
       "relevantPathsAI": [
+        "D.7",
+        "D.7.a.iii",
+        "D.7.a.iv",
+        "D.7.b",
+        "D.4.b.ii",
         "B.5.c",
         "B.5.d",
-        "D.4.b.ii",
-        "D.7.b"
+        "B.7.b",
+        "B.7.c"
       ],
-      "rationaleAI": "The death of stars covering planetary nebulae, supernovae, neutron stars, and stellar nucleosynthesis addresses planetary nebulae (B.5.c), supernova remnants (B.5.d), explosive variables (D.4.b.ii), and element formation (D.7.b)."
-    },
-    {
-      "episodeTitle": "The Sun",
-      "pid": "b048nlfb",
-      "relevantPathsAI": [
-        "D.2",
-        "D.3",
-        "D.6",
-        "D.7"
-      ],
-      "rationaleAI": "The Sun's composition, nuclear fusion, spectral characteristics, photosphere/chromosphere/corona, and expected evolution provide a detailed case study addressing stellar characteristics (D.2, D.3), structure (D.6), and evolution (D.7)."
-    },
-    {
-      "episodeTitle": "Black Holes",
-      "pid": "p00547f4",
-      "relevantPathsAI": [
-        "A.5",
-        "A.5.c",
-        "D.4.b.ii"
-      ],
-      "rationaleAI": "Black holes at galactic centres, X-ray binaries, and stellar collapse address extragalactic X-ray sources (A.5), quasars (A.5.c), and explosive variables (D.4.b.ii)."
-    },
-    {
-      "episodeTitle": "Dark Matter",
-      "pid": "b054t3s2",
-      "relevantPathsAI": [
-        "A.2",
-        "B.6"
-      ],
-      "rationaleAI": "Dark matter's role in galaxy rotation curves, gravitational lensing, and large-scale structure addresses physical properties of galaxies (A.2) and galactic structure and dynamics (B.6)."
-    },
-    {
-      "episodeTitle": "Cosmic Rays",
-      "pid": "b01sdnkg",
-      "relevantPathsAI": [
-        "B.5.g"
-      ],
-      "rationaleAI": "Cosmic rays as high-energy particles from astrophysical sources bombarding Earth's atmosphere directly address primary cosmic rays in the galactic composition (B.5.g)."
+      "rationaleAI": "Comprehensive treatment of stellar end states across mass ranges: red giants shedding planetary nebulae (B.5.c) and collapsing into white dwarfs, core-collapse supernovae (D.4.b.ii) producing neutron stars and black holes (D.7.a.iii), and nucleosynthesis of heavy elements dispersed into the interstellar medium (D.7.b, B.7.b). Supernovae seed molecular clouds for subsequent star formation (B.7.c)."
     },
     {
       "episodeTitle": "The Cool Universe",
@@ -81,40 +55,164 @@
       "relevantPathsAI": [
         "B.5.e",
         "B.5.f",
+        "B.5.f.i",
+        "B.5.f.ii",
+        "B.5.f.iii",
+        "B.5.b",
         "B.7.c",
         "D.7.a.i"
       ],
-      "rationaleAI": "Infrared astronomy studying cold molecular clouds, star formation, and dust around stars addresses dust clouds (B.5.e), the interstellar medium (B.5.f), star formation theories (B.7.c/D.7.a.i)."
+      "rationaleAI": "Focuses on the interstellar medium: molecular clouds, diffuse nebulae, and dark dust lanes (B.5.e, B.5.b), including interstellar dust grains (B.5.f.i), neutral hydrogen regions (B.5.f.ii), and interstellar molecules (B.5.f.iii). These regions constitute the raw material from which new stars form through gravitational collapse (B.7.c, D.7.a.i) and the debris into which dying stars disintegrate."
     },
     {
-      "episodeTitle": "William and Caroline Herschel",
-      "pid": "m0011c4p",
+      "episodeTitle": "The Sun",
+      "pid": "b048nlfb",
       "relevantPathsAI": [
-        "B.1",
-        "D.1",
-        "A.1.b"
+        "D.6",
+        "D.6.a",
+        "D.6.b",
+        "D.2",
+        "D.4.b",
+        "D.3.e",
+        "B.3"
       ],
-      "rationaleAI": "William Herschel's mapping of nebulae and the Milky Way, discovery of infrared radiation, and Caroline's comet discoveries address distance determinations (B.1), star identification (D.1), and galactic distance methods (A.1.b)."
+      "rationaleAI": "Detailed study of the nearest star as a main-sequence exemplar: nuclear fusion converting hydrogen to helium in the core (D.6.b), atmospheric phenomena including sunspots, flares, and coronal mass ejections (D.6.a, D.4.b), and magnetic field dynamics. Observable characteristics including luminosity and temperature (D.2), and its proximity makes it the reference point for stellar velocity measurements (B.3)."
+    },
+    {
+      "episodeTitle": "Black Holes",
+      "pid": "p00547f4",
+      "relevantPathsAI": [
+        "D.7.a.iii",
+        "D.4.b.ii",
+        "A.5.b",
+        "A.6"
+      ],
+      "rationaleAI": "Examines black holes as collapsed remnants of massive stars (D.7.a.iii), from Mitchell's 1783 prediction through Einstein's General Relativity to the discovery of Cygnus X-1 as an X-ray source (A.5.b). Addresses their role in galaxy formation (A.6) and their connection to explosive stellar variables through supernova collapse (D.4.b.ii)."
+    },
+    {
+      "episodeTitle": "Dark Matter",
+      "pid": "b054t3s2",
+      "relevantPathsAI": [
+        "A.2",
+        "A.1.c",
+        "B.6",
+        "B.6.d"
+      ],
+      "rationaleAI": "Oort's 1932 observation that galaxies moved too fast for their visible matter directly concerns galactic physical properties including mass (A.2). The missing mass problem affects understanding of galaxy distribution (A.1.c), the rotation of the Galaxy (B.6.d), and overall galactic structure and dynamics (B.6)."
+    },
+    {
+      "episodeTitle": "Cosmic Rays",
+      "pid": "b01sdnkg",
+      "relevantPathsAI": [
+        "B.5.g",
+        "B.6.c"
+      ],
+      "rationaleAI": "Directly addresses primary cosmic rays (B.5.g) as subatomic particles bombarding Earth from astrophysical sources outside the atmosphere. Their propagation through the Galaxy is affected by galactic magnetic fields (B.6.c), connecting cosmic ray origins to high-energy galactic phenomena."
+    },
+    {
+      "episodeTitle": "Plasma",
+      "pid": "b07x6j4g",
+      "relevantPathsAI": [
+        "D.6",
+        "D.6.b",
+        "B.5.f"
+      ],
+      "rationaleAI": "Plasma constitutes over 99 percent of observable matter in the universe, including all stars and the interstellar medium. Stars are plasma spheres whose internal structure depends on plasma physics (D.6, D.6.b), and the general interstellar medium contains ionized plasma components (B.5.f). Foundational to understanding stellar structure and galactic composition."
+    },
+    {
+      "episodeTitle": "The Age of the Universe",
+      "pid": "b00yz3gy",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.6",
+        "D.7.a.iv"
+      ],
+      "rationaleAI": "Hubble's measurement of galactic recession velocities established observational methods for determining distances to galaxies (A.1.b). Stellar evolution models used as independent age constraints (D.7.a.iv), and nucleosynthesis constraints connect to galaxy formation timescales (A.6)."
+    },
+    {
+      "episodeTitle": "Gravitational Waves",
+      "pid": "b007h8gv",
+      "relevantPathsAI": [
+        "D.4.b.ii",
+        "A.5"
+      ],
+      "rationaleAI": "Generated by supernovae, colliding black holes, and neutron star mergers — all stellar end-state phenomena (D.4.b.ii). LIGO interferometer detection opens a new observational window on violent astrophysical events, complementing electromagnetic observations of extragalactic sources (A.5)."
+    },
+    {
+      "episodeTitle": "Carbon",
+      "pid": "p003c1cj",
+      "relevantPathsAI": [
+        "D.7.b",
+        "D.6.b"
+      ],
+      "rationaleAI": "The carbon-nitrogen cycle operates in stellar cores as a nuclear fusion pathway converting hydrogen to helium in massive stars (D.6.b). Carbon's formation through stellar nucleosynthesis exemplifies the creation of chemical elements in stars (D.7.b), providing specific chemical context for stellar energy generation and evolution."
+    },
+    {
+      "episodeTitle": "The Proton",
+      "pid": "b09zt3mr",
+      "relevantPathsAI": [
+        "D.6.b",
+        "D.7.b"
+      ],
+      "rationaleAI": "Hydrogen fusion in stellar cores converts protons into helium, powering stars including the Sun (D.6.b). Protons formed in the Big Bang constitute the nuclei of all chemical elements subsequently synthesized in stellar interiors (D.7.b), connecting nuclear physics to stellar energy generation and cosmic chemical evolution."
+    },
+    {
+      "episodeTitle": "The Neutrino",
+      "pid": "b0106tjc",
+      "relevantPathsAI": [
+        "D.6.b"
+      ],
+      "rationaleAI": "The Sun produces trillions of neutrinos per second as byproducts of nuclear fusion in its core, providing direct observational evidence of stellar interior processes (D.6.b). Neutrino oscillation and mass measurements constrain models of stellar energy generation, and solar neutrino detection confirmed theoretical predictions about fusion reaction chains in stars."
     },
     {
       "episodeTitle": "Tycho Brahe",
       "pid": "m001hnlf",
       "relevantPathsAI": [
-        "D.1",
-        "D.2.a",
-        "D.4.b.ii"
+        "D.1.d",
+        "D.1.c",
+        "D.2.a"
       ],
-      "rationaleAI": "Tycho Brahe's precise stellar position cataloguing, the 1572 supernova observation, and his astronomical data address star identification (D.1), stellar positions (D.2.a), and explosive variables (D.4.b.ii)."
+      "rationaleAI": "Brahe's comprehensive star catalogues of unprecedented accuracy (D.1.d) and systematic naked-eye measurements of stellar positions (D.2.a) established new standards for observational astronomy. His star naming conventions and meticulous data collection from Uraniborg (D.1.c) provided the empirical foundation for modern stellar identification and nomenclature."
     },
     {
-      "episodeTitle": "The Universe's Shape",
-      "pid": "p0054880",
+      "episodeTitle": "The Observatory at Jaipur",
+      "pid": "b00hmpdd",
       "relevantPathsAI": [
+        "D.1",
+        "D.1.a",
+        "D.2.a"
+      ],
+      "rationaleAI": "Jantar Mantar's masonry instruments measured celestial positions using coordinate systems on the celestial sphere (D.1.a) with remarkable precision. Represents pre-telescopic observational methods for determining stellar positions (D.2.a) and star identification (D.1), bridging Indian and Persian astronomical traditions."
+    },
+    {
+      "episodeTitle": "The Universe's Origins",
+      "pid": "p00545j9",
+      "relevantPathsAI": [
+        "D.7.b",
+        "B.7.c",
         "A.6"
       ],
-      "rationaleAI": "The shape and topology of the universe, cosmic flatness, and the Omega parameter relate to the origin and evolution of galaxies within the cosmological framework (A.6)."
+      "rationaleAI": "Covers stellar nucleosynthesis as the origin of chemical elements beyond hydrogen and helium (D.7.b), gravitational collapse within nebulae as the mechanism of star and planet formation (B.7.c), and the broader evolutionary context from cosmic origins through which galaxies and their stellar populations developed (A.6)."
+    },
+    {
+      "episodeTitle": "Exoplanets",
+      "pid": "b03brwql",
+      "relevantPathsAI": [
+        "D.2",
+        "B.5.a"
+      ],
+      "rationaleAI": "Discovery of exoplanets orbiting pulsar PSR B1257+12 and other stars relies on stellar observation methods including radial velocity measurements and transit photometry, which simultaneously characterize host star properties (D.2). The diversity of stellar systems hosting planets illuminates stellar population characteristics across the Galaxy (B.5.a)."
+    },
+    {
+      "episodeTitle": "The Vacuum of Space",
+      "pid": "b00jz5t3",
+      "relevantPathsAI": [
+        "B.5.f",
+        "A.1.c"
+      ],
+      "rationaleAI": "Dark energy driving cosmic acceleration fundamentally affects the large-scale distribution of galaxies (A.1.c). Vacuum energy, zero-point fluctuations, and field interactions pervading the space between stars are integral to understanding the interstellar medium (B.5.f) and the cosmological context in which galactic structure exists."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

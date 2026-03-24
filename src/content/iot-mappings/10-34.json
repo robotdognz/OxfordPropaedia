@@ -5,19 +5,31 @@
       "episodeTitle": "Aristotle's Biology",
       "pid": "m0002cfd",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.1.b"
       ],
-      "rationaleAI": "Aristotle's systematic study of animals including classification, comparative anatomy, and teleological explanations of biological function directly covers Aristotelian concepts of classification, reproduction, heredity, and descent in the Greco-Roman world (A.1.b)."
+      "rationaleAI": "Aristotle's biological investigations: classification, reproduction, heredity (A.1.b)."
+    },
+    {
+      "episodeTitle": "Pliny's Natural History",
+      "pid": "b00sxjlz",
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Pliny's Natural History: Roman-era synthesis of biological knowledge (A.1.b)."
     },
     {
       "episodeTitle": "Anatomy",
       "pid": "p005488j",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.1.b",
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "The 2000-year history of anatomical knowledge from Hippocratic and Galenic traditions through Vesalius's 1543 treatise covers initial anatomical discoveries in the Greco-Roman world (A.1.b), medieval developments (A.1.c), and the Renaissance scientific study of anatomy through dissection (A.1.d)."
+      "rationaleAI": "2,000 years of anatomy from Galen to Vesalius (A.1.b-A.1.d)."
     },
     {
       "episodeTitle": "Galen",
@@ -26,65 +38,110 @@
         "A.1.b",
         "A.1.c"
       ],
-      "rationaleAI": "Galen's anatomical studies, integration of Hippocratic medicine with Aristotelian philosophy, and his authority persisting through the medieval period cover biological ideas in the Greco-Roman world (A.1.b) and the influence of Arabian biologists in the Middle Ages (A.1.c)."
+      "rationaleAI": "Galen: Greco-Roman anatomy (A.1.b), Islamic and medieval influence (A.1.c)."
     },
     {
-      "episodeTitle": "The Heart",
-      "pid": "p003c1bh",
+      "episodeTitle": "Goethe and the Science of the Enlightenment",
+      "pid": "p00546n1",
       "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Goethe's morphology and comparative anatomy: history of biological sciences."
+    },
+    {
+      "episodeTitle": "The Microscope",
+      "pid": "b03jdy3p",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Microscope revealed microorganisms and cells, transforming biological investigation."
+    },
+    {
+      "episodeTitle": "Darwin: On the Origins of Charles Darwin",
+      "pid": "b00g9z9x",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Darwin's formation as a scientist: history of biological sciences."
+    },
+    {
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": [
+        "A",
+        "A.1"
+      ],
+      "rationaleAI": "Genetics from Mendel through DNA: major chapter in biological sciences."
+    },
+    {
+      "episodeTitle": "Linnaeus",
+      "pid": "m001l291",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.1.b"
       ],
-      "rationaleAI": "The history of ideas about the heart from Aristotle's view as the seat of intelligence through Galen's theories covers biological theories about mankind in the Greco-Roman world (A.1.b)."
+      "rationaleAI": "Linnaeus's binomial nomenclature: systematic taxonomy from Aristotelian origins (A.1.b)."
     },
     {
-      "episodeTitle": "Pliny's Natural History",
-      "pid": "b00sxjlz",
+      "episodeTitle": "The Natural Order",
+      "pid": "p00546ql",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.1.b"
       ],
-      "rationaleAI": "Pliny's Natural History covers zoology, botany, and natural history in the Greco-Roman world, providing a comprehensive compilation of biological knowledge from antiquity (A.1.b)."
+      "rationaleAI": "Taxonomy from Linnaeus through cladistics: classification as biological discipline."
     },
     {
-      "episodeTitle": "The Cell",
-      "pid": "b01mk8vh",
+      "episodeTitle": "Women and Enlightenment Science",
+      "pid": "b00vky4n",
       "relevantPathsAI": [
-        "A.1.d"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "The discovery of cells by Hooke and the development of cell theory represent foundational developments in biological science that emerged from the Renaissance tradition of microscopic observation (A.1.d)."
+      "rationaleAI": "Women in Enlightenment science: botanical knowledge and classification."
     },
     {
-      "episodeTitle": "Darwin: Life After Origins",
-      "pid": "b00gdhqf",
+      "episodeTitle": "Alfred Russel Wallace",
+      "pid": "b01r9rxr",
       "relevantPathsAI": [
-        "A.1.b"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Darwin's post-Origin work on orchid pollination, emotional expression, earthworms, and sexual selection illustrates the development of biological ideas through meticulous empirical work across diverse fields (A.1.b broadly as a continuation of systematic biological investigation)."
+      "rationaleAI": "Wallace: co-discovery of natural selection, founding biogeography."
     },
     {
-      "episodeTitle": "The Eye",
-      "pid": "b03w2w19",
+      "episodeTitle": "Darwin: The Voyage of the Beagle",
+      "pid": "b00gbf2g",
       "relevantPathsAI": [
-        "A.1.b"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "The history of ideas about the eye and vision from ancient theories through Darwin's discussion of eye evolution covers biological theories in the Greco-Roman world (A.1.b) and botanical/zoological investigations."
+      "rationaleAI": "Darwin's Beagle voyage: defining episode in biological sciences."
     },
     {
-      "episodeTitle": "The Fish-Tetrapod Transition",
-      "pid": "m001d56q",
+      "episodeTitle": "Imperial Science",
+      "pid": "p00547b5",
       "relevantPathsAI": [
-        "A.1.b"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "The fish-tetrapod transition illustrates evolutionary biology and comparative anatomy relevant to the development of biological ideas about the origin and development of life (A.1.b)."
+      "rationaleAI": "Botany and imperial expansion: institutional history of biological sciences."
     },
     {
-      "episodeTitle": "The Whale - A History",
-      "pid": "b00kfqm6",
+      "episodeTitle": "Crystallography",
+      "pid": "b01p0s9s",
       "relevantPathsAI": [
-        "A.1.b"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "The evolutionary history of whales from land-dwelling mammals to aquatic giants represents a major case study in macroevolution and adaptation relevant to theories about descent (A.1.b)."
+      "rationaleAI": "X-ray crystallography enabling molecular biology including DNA structure."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }

@@ -2,87 +2,54 @@
   "sectionCode": "341",
   "mappings": [
     {
+      "episodeTitle": "Behavioural Ecology",
+      "pid": "b04tljk0",
+      "relevantPathsAI": ["A", "A.1", "A.2", "A.3", "D", "D.2"],
+      "rationaleAI": "Behavioural ecology studies animal decision-making about feeding, mating, and territorial defence in ecological context, directly addressing the variety (A.1), classification (A.2), and components (A.3) of animal behaviour. Its integration of evolutionary biology and genetics with field observation bears on the evolution of behaviour and the influence of experience on behavioural patterns (D.2)."
+    },
+    {
       "episodeTitle": "The Nervous System",
       "pid": "b00y9283",
-      "relevantPathsAI": [
-        "C.3",
-        "B.2"
-      ],
-      "rationaleAI": "Covers the nervous system's structure and function including reflex arcs, synaptic transmission, sensory and motor pathways, and the autonomic nervous system -- directly relevant to the nervous system's role in receiving information, processing it, and initiating responses."
+      "relevantPathsAI": ["C.1", "C.3", "B.2"],
+      "rationaleAI": "Covers the central and peripheral nervous systems, sensory and motor neurons, reflex arcs, neurotransmitters such as acetylcholine and dopamine, and the autonomic subdivision—directly addressing the nervous system's role in receiving information, processing it in brain and spinal cord, and initiating responses (C.3), reflex and reflexlike activities (B.2), and endocrine-nervous interaction (C.1)."
     },
     {
       "episodeTitle": "Hormones",
       "pid": "m001w0z9",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Hormones covers the endocrine system's chemical messengers including adrenaline, oestrogen, testosterone, and feedback loops involving the hypothalamus and pituitary -- directly relevant to hormonal influences on behaviour and interaction of endocrine and nervous systems."
+      "relevantPathsAI": ["C.1", "C.2"],
+      "rationaleAI": "Examines the endocrine system's chemical messengers including sex hormones (oestrogen, testosterone), stress hormones (adrenalin, cortisol), and feedback loops, directly relevant to hormonal influences on behaviour (C.2) and the interaction of endocrine and nervous systems (C.1)."
     },
     {
-      "episodeTitle": "Echolocation",
-      "pid": "b0b6hrl3",
-      "relevantPathsAI": [
-        "A.1",
-        "B.2",
-        "D.1"
-      ],
-      "rationaleAI": "Echolocation in bats and dolphins illustrates stereotyped behavioral responses to environmental stimuli, neurological processing of sensory information, and the independent evolution of echolocation as evidence of genetic determination of behaviour."
+      "episodeTitle": "Pheromones",
+      "pid": "m0002mdl",
+      "relevantPathsAI": ["A.1", "B.2", "C.2", "D.1"],
+      "rationaleAI": "Pheromones govern trail-laying, alarm responses, dominance hierarchies, sexual attraction, and caste determination in social insects—examples of fixed action patterns and instinctive behaviours (B.2). Their endocrine-like regulatory role connects to hormonal influences on behaviour (C.2), and their species-wide uniformity evidences genetic determination of behaviour (D.1)."
     },
     {
       "episodeTitle": "Circadian Rhythms",
       "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "B.3",
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Circadian rhythms govern sleep-wake patterns, hormone release, and metabolism through molecular feedback loops and the suprachiasmatic nucleus -- directly relevant to photoperiodism, endocrine-nervous system interaction, and hormonal influences on behaviour."
+      "relevantPathsAI": ["B.1", "B.2", "B.3"],
+      "rationaleAI": "Internal body clocks drive daily behavioural and physiological cycles across bacteria, plants, fungi, and animals, responding primarily to light-darkness cycles. Directly addresses photoperiodism (B.3), stereotyped plant responses to light (B.1), and rhythmic animal behavioural patterns as unlearned responses to environmental stimuli (B.2)."
     },
     {
-      "episodeTitle": "Genetic Determinism",
-      "pid": "p005461w",
-      "relevantPathsAI": [
-        "D.1",
-        "D.2"
-      ],
-      "rationaleAI": "Genetic determinism addresses the debate over genetic versus environmental determination of behaviour, twin studies, and behavioral genetics -- directly relevant to evidence of genetic determination of behaviour and the influence of experience."
+      "episodeTitle": "Echolocation",
+      "pid": "b0b6hrl3",
+      "relevantPathsAI": ["A.1", "B.2", "D", "D.1", "D.2"],
+      "rationaleAI": "Bat and dolphin echolocation exemplifies specialized sensory-motor behaviour (A.1) involving fixed action patterns of sound emission and neural processing (B.2). Evolutionary arms races in which prey evolved frequency detection demonstrate genetic determination of behaviour (D.1) and co-evolutionary shaping of behavioural adaptations (D.2)."
     },
     {
-      "episodeTitle": "Human Nature",
-      "pid": "p00548kf",
-      "relevantPathsAI": [
-        "D.1",
-        "D.2"
-      ],
-      "rationaleAI": "Human nature covers the nature-nurture debate, behaviorism versus nativism, twin studies, and gene-environment interaction in epigenetics -- directly relevant to both genetic determination of behaviour and the influence of experience."
+      "episodeTitle": "Parasitism",
+      "pid": "b08bb9cy",
+      "relevantPathsAI": ["A.1", "B.2", "D", "D.2"],
+      "rationaleAI": "Brood parasitism by cuckoos and host behaviour modification by parasites illustrate fixed action patterns and instinctive responses (B.2) across diverse organisms (A.1). Co-evolutionary arms races between parasites and hosts demonstrate phyletic patterns in the evolution of behavioural adaptations (D.2)."
     },
     {
-      "episodeTitle": "The Eye",
-      "pid": "b03w2w19",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "The Eye covers the anatomy and mechanism of visual perception and visual processing in the brain, directly relevant to the nervous system's role in receiving sensory information and initiating appropriate responses."
-    },
-    {
-      "episodeTitle": "Perception and the Senses",
-      "pid": "p003k9h0",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "Perception and the senses covers how the brain processes sensory information from multiple senses, the neuroscience of visual and auditory processing, and multisensory integration -- directly relevant to the nervous system receiving and processing information."
-    },
-    {
-      "episodeTitle": "Behavioural Ecology",
-      "pid": "b04tljk0",
-      "relevantPathsAI": [
-        "D.1",
-        "D.2"
-      ],
-      "rationaleAI": "Behavioural ecology covers optimal foraging theory, kin selection, and game theory applied to animal strategies -- relevant to evolutionary shaping of behaviour and evidence of genetic determination of behavioural patterns."
+      "episodeTitle": "Neuroscience",
+      "pid": "b00fbd26",
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "Traces brain science from 19th-century speech localisation to modern neuroimaging, directly addressing how the nervous system processes information and initiates behavioural responses (C.3), including the biological mechanisms underlying thought and decision-making."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-24"
 }
