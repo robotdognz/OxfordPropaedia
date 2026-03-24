@@ -11,6 +11,7 @@ import {
   type ReadingType,
 } from '../../utils/readingPreference';
 import {
+  COVERAGE_LAYER_META,
   buildCoverageRings,
   buildLayerCoverageSnapshot,
   completedChecklistKeysFromState,
@@ -19,9 +20,8 @@ import {
   selectDefaultCoverageLayer,
   type CoverageLayer,
 } from '../../utils/readingLibrary';
-import CoverageLayerTabs from './CoverageLayerTabs';
-import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSpreadPath from './ReadingSpreadPath';
+import CoverageRings from '../ui/CoverageRings';
 
 interface HomepageCoverageExplorerProps {
   baseUrl: string;
@@ -151,44 +151,46 @@ export default function HomepageCoverageExplorer({
   return (
     <section
       id="whole-outline-reading-paths"
-      class="rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7"
+      class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7"
     >
       <div class="space-y-5 border-b border-slate-200 pb-6">
-        <div class="max-w-3xl space-y-2">
-          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Whole Outline
-          </p>
-          <h2 class="text-3xl font-serif font-bold text-slate-900">
-            Coverage-First Reading Paths
-          </h2>
-        </div>
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl space-y-2">
+            <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Whole Outline
+            </p>
+            <h2 class="text-3xl font-serif font-bold text-slate-900">
+              Coverage-First Reading Paths
+            </h2>
+          </div>
 
-        <div class="space-y-3">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Reading List
-          </p>
-          <div class="flex flex-wrap gap-2">
-            {SOURCE_ORDER.map((type) => {
-              const isActive = type === selectedType;
-              return (
-                <button
-                  key={type}
-                  type="button"
-                  onClick={() => {
-                    setSelectedType(type);
-                    setReadingPreference(type);
-                    void ensureSourceLoaded(type);
-                  }}
-                  class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-                    isActive
-                      ? 'border-slate-900 bg-slate-900 text-white'
-                      : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  {READING_TYPE_LABELS[type]}
-                </button>
-              );
-            })}
+          <div class="space-y-2 lg:max-w-xl">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500 lg:text-right">
+              Reading List
+            </p>
+            <div class="flex flex-wrap gap-2 lg:justify-end">
+              {SOURCE_ORDER.map((type) => {
+                const isActive = type === selectedType;
+                return (
+                  <button
+                    key={type}
+                    type="button"
+                    onClick={() => {
+                      setSelectedType(type);
+                      setReadingPreference(type);
+                      void ensureSourceLoaded(type);
+                    }}
+                    class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+                      isActive
+                        ? 'border-slate-900 bg-slate-900 text-white'
+                        : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
+                    }`}
+                  >
+                    {READING_TYPE_LABELS[type]}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -205,39 +207,105 @@ export default function HomepageCoverageExplorer({
         </div>
       ) : source ? (
         <div class="mt-6 space-y-6">
-          <CoverageLayerTabs
-            activeLayer={activeLayer}
-            onSelect={(layer) => {
-              setSelectedLayers((current) => ({
-                ...current,
-                [selectedType]: layer,
-              }));
-            }}
-            snapshots={tabSnapshots}
-          />
+          <section class="space-y-4">
+            <div class="flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
+              {tabSnapshots.map((snapshot) => {
+                const isActive = snapshot.layer === activeLayer;
+                const meta = COVERAGE_LAYER_META[snapshot.layer];
 
-          <ReadingCoverageSummary
-            coverageRings={coverageRings}
-            totalLabel={source.totalLabel}
-            totalCount={source.entries.length}
-            totalDescription={source.totalDescription}
-            completedCount={completedCount}
-            completedDescription={source.completedDescription}
-            activeCoverageLabel={`${coverageLayerLabel(activeLayer, 1)} Coverage`}
-            activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-            activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-            activeCoverageDescription={source.activeCoverageDescriptions[activeLayer] ?? ''}
-            bestNextLabel={`Best Next for ${coverageLayerLabel(activeLayer, 1)} Coverage`}
-            bestNextHref={bestNext?.href}
-            bestNextTitle={bestNext?.title}
-            bestNextSubtitle={bestNext?.meta}
-            bestNextDescription={
-              bestNext
-                ? `Adds ${bestNext.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNext.newCoverageCount)}, ${bestNext.sectionCount} linked Sections.`
-                : undefined
-            }
-            emptyBestNextText={emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
-          />
+                return (
+                  <button
+                    key={snapshot.layer}
+                    type="button"
+                    role="tab"
+                    aria-selected={isActive}
+                    onClick={() => {
+                      setSelectedLayers((current) => ({
+                        ...current,
+                        [selectedType]: snapshot.layer,
+                      }));
+                    }}
+                    class={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
+                      isActive
+                        ? 'border-slate-900 bg-slate-900 text-white'
+                        : 'border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50'
+                    }`}
+                  >
+                    <span class="font-medium">{meta.label}</span>
+                    <span class={`ml-2 text-xs ${isActive ? 'text-slate-200' : 'text-slate-500'}`}>
+                      {snapshot.currentlyCoveredCount}/{snapshot.totalCoverageCount}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <p class="text-sm text-slate-600">
+              {source.activeCoverageDescriptions[activeLayer] ?? ''}
+            </p>
+          </section>
+
+          <section class="grid gap-3 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.8fr)_minmax(0,1.1fr)]">
+            <div class="rounded-xl border border-slate-200 bg-white p-4">
+              <div class="flex items-center gap-4">
+                <div class="shrink-0">
+                  <CoverageRings rings={coverageRings} size={96} ringWidth={8} hideLegend />
+                </div>
+                <div class="min-w-0 space-y-2">
+                  <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
+                  <div class="space-y-1 text-xs text-slate-500">
+                    {coverageRings.map((ring) => (
+                      <div key={ring.label} class="flex items-center gap-1.5">
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
+                        <span>{ring.label}: {ring.count}/{ring.total}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p class="text-sm text-slate-600">
+                    {completedCount} of {source.entries.length} {source.totalLabel.toLowerCase()} checked off.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-slate-200 bg-white p-4">
+              <p class="text-sm font-medium uppercase tracking-wide text-slate-500">
+                {coverageLayerLabel(activeLayer, 1)} Coverage
+              </p>
+              <p class="mt-2 font-serif text-3xl text-slate-900">
+                {activeSnapshot?.currentlyCoveredCount ?? 0} / {activeSnapshot?.totalCoverageCount ?? 0}
+              </p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">
+                {isLayerComplete
+                  ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 2, { lowercase: true })} in this view.`
+                  : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0, { lowercase: true })} still to reach.`}
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
+              <p class="text-sm font-medium uppercase tracking-wide text-amber-800">
+                Best Next for {coverageLayerLabel(activeLayer, 1)} Coverage
+              </p>
+              {bestNext ? (
+                <>
+                  <a
+                    href={bestNext.href}
+                    class="mt-2 block font-serif text-2xl leading-tight text-amber-950 transition-colors hover:text-indigo-700"
+                  >
+                    {bestNext.title}
+                  </a>
+                  {bestNext.meta ? <p class="mt-1 text-sm text-amber-900">{bestNext.meta}</p> : null}
+                  <p class="mt-3 text-sm leading-6 text-amber-900">
+                    Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount, { lowercase: true })} and touches {bestNext.sectionCount} linked Sections.
+                  </p>
+                </>
+              ) : (
+                <p class="mt-2 text-sm text-amber-900">
+                  {emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
+                </p>
+              )}
+            </div>
+          </section>
 
           <ReadingSpreadPath
             isOpen={spreadPathOpen}
