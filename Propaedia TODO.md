@@ -3,7 +3,7 @@ Propaedia TODO:
     - Remap BBC In Our Time podcast episodes
         - Why are so many of them not mapped at all?
 
-    - Add progress circle for selected reading type to homepage
+    - Look into agregating all the textbook recomendations from the recomended readings in the backs of VSI's
 
     - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     

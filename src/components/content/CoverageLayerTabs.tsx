@@ -29,14 +29,14 @@ export default function CoverageLayerTabs({
 
   return (
     <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-5">
-      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h2 class="font-serif text-2xl text-gray-900">Recommendation Focus</h2>
+          <h2 class="text-sm font-medium uppercase tracking-wide text-gray-500">Outline Layer</h2>
           <p class="mt-1 text-sm text-gray-600">
             Choose which layer of the outline you want the next recommendations to maximise.
           </p>
           {activeSnapshot ? (
-            <p class="mt-2 text-sm leading-6 text-gray-600">
+            <p class="mt-1.5 text-sm leading-6 text-gray-600">
               <span class="font-medium text-gray-900">{activeMeta.label} coverage:</span>{' '}
               {LAYER_DESCRIPTIONS[activeLayer]} You have covered{' '}
               {activeSnapshot.currentlyCoveredCount} of {activeSnapshot.totalCoverageCount} so far.
@@ -44,7 +44,7 @@ export default function CoverageLayerTabs({
           ) : null}
         </div>
       </div>
-      <div class="mt-4 flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
+      <div class="mt-3 flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
         {snapshots.map((snapshot) => {
           const isActive = snapshot.layer === activeLayer;
           const meta = COVERAGE_LAYER_META[snapshot.layer];

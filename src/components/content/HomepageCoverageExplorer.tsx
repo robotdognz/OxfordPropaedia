@@ -149,12 +149,9 @@ export default function HomepageCoverageExplorer({
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
 
   return (
-    <section
-      id="whole-outline-reading-paths"
-      class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7"
-    >
-      <div class="space-y-5 border-b border-slate-200 pb-6">
-        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+    <section class="rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7">
+      <div class="space-y-3 border-b border-slate-200 pb-4">
+        <div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl space-y-2">
             <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
               Whole Outline
@@ -164,9 +161,9 @@ export default function HomepageCoverageExplorer({
             </h2>
           </div>
 
-          <div class="space-y-2 lg:max-w-xl">
+          <div class="space-y-1.5 lg:max-w-xl">
             <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500 lg:text-right">
-              Reading List
+              Reading Type
             </p>
             <div class="flex flex-wrap gap-2 lg:justify-end">
               {SOURCE_ORDER.map((type) => {
@@ -206,8 +203,11 @@ export default function HomepageCoverageExplorer({
           Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
         </div>
       ) : source ? (
-        <div class="mt-6 space-y-6">
-          <section class="space-y-4">
+        <div class="mt-4 space-y-4">
+          <section class="space-y-2">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+              Outline Layer
+            </p>
             <div class="flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
               {tabSnapshots.map((snapshot) => {
                 const isActive = snapshot.layer === activeLayer;
@@ -239,94 +239,92 @@ export default function HomepageCoverageExplorer({
                 );
               })}
             </div>
-
-            <p class="text-sm text-slate-600">
-              {source.activeCoverageDescriptions[activeLayer] ?? ''}
-            </p>
           </section>
 
-          <section class="grid gap-3 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.8fr)_minmax(0,1.1fr)]">
-            <div class="rounded-xl border border-slate-200 bg-white p-4">
-              <div class="flex items-center gap-4">
-                <div class="shrink-0">
-                  <CoverageRings rings={coverageRings} size={96} ringWidth={8} hideLegend />
-                </div>
-                <div class="min-w-0 space-y-2">
-                  <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
-                  <div class="space-y-1 text-xs text-slate-500">
-                    {coverageRings.map((ring) => (
-                      <div key={ring.label} class="flex items-center gap-1.5">
-                        <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
-                        <span>{ring.label}: {ring.count}/{ring.total}</span>
-                      </div>
-                    ))}
+          <div class="space-y-4">
+            <section class="grid gap-3 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.8fr)_minmax(0,1.1fr)]">
+              <div class="rounded-xl border border-slate-200 bg-white p-4">
+                <div class="flex items-center gap-4">
+                  <div class="shrink-0">
+                    <CoverageRings rings={coverageRings} size={96} ringWidth={8} hideLegend />
                   </div>
-                  <p class="text-sm text-slate-600">
-                    {completedCount} of {source.entries.length} {source.totalLabel.toLowerCase()} checked off.
-                  </p>
+                  <div class="min-w-0 space-y-2">
+                    <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
+                    <div class="space-y-1 text-xs text-slate-500">
+                      {coverageRings.map((ring) => (
+                        <div key={ring.label} class="flex items-center gap-1.5">
+                          <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
+                          <span>{ring.label}: {ring.count}/{ring.total}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p class="text-sm text-slate-600">
+                      {completedCount} of {source.entries.length} {source.totalLabel.toLowerCase()} checked off.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="rounded-xl border border-slate-200 bg-white p-4">
-              <p class="text-sm font-medium uppercase tracking-wide text-slate-500">
-                {coverageLayerLabel(activeLayer, 1)} Coverage
-              </p>
-              <p class="mt-2 font-serif text-3xl text-slate-900">
-                {activeSnapshot?.currentlyCoveredCount ?? 0} / {activeSnapshot?.totalCoverageCount ?? 0}
-              </p>
-              <p class="mt-2 text-sm leading-6 text-slate-600">
-                {isLayerComplete
-                  ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 2, { lowercase: true })} in this view.`
-                  : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0, { lowercase: true })} still to reach.`}
-              </p>
-            </div>
-
-            <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
-              <p class="text-sm font-medium uppercase tracking-wide text-amber-800">
-                Best Next for {coverageLayerLabel(activeLayer, 1)} Coverage
-              </p>
-              {bestNext ? (
-                <>
-                  <a
-                    href={bestNext.href}
-                    class="mt-2 block font-serif text-2xl leading-tight text-amber-950 transition-colors hover:text-indigo-700"
-                  >
-                    {bestNext.title}
-                  </a>
-                  {bestNext.meta ? <p class="mt-1 text-sm text-amber-900">{bestNext.meta}</p> : null}
-                  <p class="mt-3 text-sm leading-6 text-amber-900">
-                    Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount, { lowercase: true })} and touches {bestNext.sectionCount} linked Sections.
-                  </p>
-                </>
-              ) : (
-                <p class="mt-2 text-sm text-amber-900">
-                  {emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
+              <div class="rounded-xl border border-slate-200 bg-white p-4">
+                <p class="text-sm font-medium uppercase tracking-wide text-slate-500">
+                  {coverageLayerLabel(activeLayer, 1)} Coverage
                 </p>
-              )}
-            </div>
-          </section>
+                <p class="mt-2 font-serif text-3xl text-slate-900">
+                  {activeSnapshot?.currentlyCoveredCount ?? 0} / {activeSnapshot?.totalCoverageCount ?? 0}
+                </p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  {isLayerComplete
+                    ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 2, { lowercase: true })} in this view.`
+                    : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0, { lowercase: true })} still to reach.`}
+                </p>
+              </div>
 
-          <ReadingSpreadPath
-            isOpen={spreadPathOpen}
-            onToggleOpen={() => setSpreadPathOpen((current) => !current)}
-            steps={activePath}
-            remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-            checklistState={checklistState}
-            onCheckedChange={writeChecklistState}
-            getHref={(step) => step.href}
-            renderMeta={(step) =>
-              step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null
-            }
-            checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-            itemSingular={source.itemSingular}
-            itemPlural={source.itemPlural}
-            coverageUnitSingular={coverageLayerLabel(activeLayer, 1)}
-            coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
-            emptyMessage={emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
-            baseUrl={baseUrl}
-            sectionLinksVariant="chips"
-          />
+              <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
+                <p class="text-sm font-medium uppercase tracking-wide text-amber-800">
+                  Best Next for {coverageLayerLabel(activeLayer, 1)} Coverage
+                </p>
+                {bestNext ? (
+                  <>
+                    <a
+                      href={bestNext.href}
+                      class="mt-2 block font-serif text-2xl leading-tight text-amber-950 transition-colors hover:text-indigo-700"
+                    >
+                      {bestNext.title}
+                    </a>
+                    {bestNext.meta ? <p class="mt-1 text-sm text-amber-900">{bestNext.meta}</p> : null}
+                    <p class="mt-3 text-sm leading-6 text-amber-900">
+                      Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount, { lowercase: true })} and touches {bestNext.sectionCount} linked Sections.
+                    </p>
+                  </>
+                ) : (
+                  <p class="mt-2 text-sm text-amber-900">
+                    {emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
+                  </p>
+                )}
+              </div>
+            </section>
+
+            <ReadingSpreadPath
+              isOpen={spreadPathOpen}
+              onToggleOpen={() => setSpreadPathOpen((current) => !current)}
+              steps={activePath}
+              remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
+              checklistState={checklistState}
+              onCheckedChange={writeChecklistState}
+              getHref={(step) => step.href}
+              renderMeta={(step) =>
+                step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null
+              }
+              checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+              itemSingular={source.itemSingular}
+              itemPlural={source.itemPlural}
+              coverageUnitSingular={coverageLayerLabel(activeLayer, 1)}
+              coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
+              emptyMessage={emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
+              baseUrl={baseUrl}
+              sectionLinksVariant="chips"
+            />
+          </div>
         </div>
       ) : null}
     </section>

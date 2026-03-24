@@ -216,60 +216,62 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
   const canShowMore = visibleEntries.length < filteredEntries.length;
 
   return (
-    <div class="space-y-8">
+    <div class="space-y-4">
       <CoverageLayerTabs
         activeLayer={activeLayer}
         onSelect={(layer) => setSelectedLayer(layer)}
         snapshots={layerTabSnapshots}
       />
 
-      <ReadingCoverageSummary
-        coverageRings={coverageRings}
-        totalLabel="Titles"
-        totalCount={entries.length}
-        totalDescription="Unique Oxford Very Short Introductions in the mapped reading list."
-        completedCount={completedCount}
-        completedDescription="Shared with the Done boxes on section pages."
-        activeCoverageLabel={`${layerMeta.label} Coverage`}
-        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription(activeLayer)}
-        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-        bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
-        bestNextTitle={bestNextRead?.title}
-        bestNextSubtitle={bestNextRead?.author}
-        bestNextDescription={bestNextRead
-          ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
-          : undefined}
-        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-        mobileRingWidth={7}
-        desktopRingWidth={9}
-      />
+      <div class="space-y-4">
+        <ReadingCoverageSummary
+          coverageRings={coverageRings}
+          totalLabel="Titles"
+          totalCount={entries.length}
+          totalDescription="Unique Oxford Very Short Introductions in the mapped reading list."
+          completedCount={completedCount}
+          completedDescription="Shared with the Done boxes on section pages."
+          activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+          activeCoverageDescription={activeCoverageDescription(activeLayer)}
+          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
+          bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
+          bestNextTitle={bestNextRead?.title}
+          bestNextSubtitle={bestNextRead?.author}
+          bestNextDescription={bestNextRead
+            ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
+            : undefined}
+          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          mobileRingWidth={7}
+          desktopRingWidth={9}
+        />
 
-      <ReadingSpreadPath
-        isOpen={spreadPathOpen}
-        onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={activePath}
-        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-        checklistState={checklistState}
-        onCheckedChange={writeChecklistState}
-        getHref={(step) => `${baseUrl}/vsi/${slugify(step.title)}`}
-        renderMeta={(step) => (
-          <>
-            <p class="mt-1 text-sm text-gray-600">{formatMetadata(step)}</p>
-            {activeLayer === 'subsection' && precisionBadgeText(step) ? (
-              <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
-            ) : null}
-          </>
-        )}
-        checkboxAriaLabel={(step) => `Mark ${step.title} by ${step.author} as completed`}
-        itemSingular="book"
-        itemPlural="books"
-        coverageUnitSingular={layerMeta.label}
-        coverageUnitPlural={layerMeta.pluralLabel}
-        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-        baseUrl={baseUrl}
-      />
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
+          steps={activePath}
+          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => `${baseUrl}/vsi/${slugify(step.title)}`}
+          renderMeta={(step) => (
+            <>
+              <p class="mt-1 text-sm text-gray-600">{formatMetadata(step)}</p>
+              {activeLayer === 'subsection' && precisionBadgeText(step) ? (
+                <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
+              ) : null}
+            </>
+          )}
+          checkboxAriaLabel={(step) => `Mark ${step.title} by ${step.author} as completed`}
+          itemSingular="book"
+          itemPlural="books"
+          coverageUnitSingular={layerMeta.label}
+          coverageUnitPlural={layerMeta.pluralLabel}
+          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          baseUrl={baseUrl}
+        />
+      </div>
 
       <CoverageGapPanel
         entries={entries}
@@ -282,14 +284,14 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
       />
 
       <section id="vsi-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6">
-        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">VSI Library</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the full mapped VSI list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full library list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+              These controls only change the full library list below. The Outline Layer tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -297,7 +299,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           </div>
         </div>
 
-        <div class="mt-6 grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
+        <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
             <input

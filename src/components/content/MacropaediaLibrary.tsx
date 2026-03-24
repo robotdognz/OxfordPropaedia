@@ -172,47 +172,49 @@ export default function MacropaediaLibrary({
   const canShowMore = visibleEntries.length < filteredEntries.length;
 
   return (
-    <div class="space-y-8">
+    <div class="space-y-4">
       <CoverageLayerTabs
         activeLayer={activeLayer}
         onSelect={(layer) => setSelectedLayer(layer)}
         snapshots={layerTabSnapshots}
       />
 
-      <ReadingCoverageSummary
-        coverageRings={coverageRings}
-        totalLabel="Articles"
-        totalCount={entries.length}
-        totalDescription="Unique Macropaedia titles referenced in the outline."
-        completedCount={completedCount}
-        completedDescription="Uses the same checklist state as the section reading boxes."
-        activeCoverageLabel={`${layerMeta.label} Coverage`}
-        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription(activeLayer)}
-        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-        bestNextHref={bestNextArticle ? `${baseUrl}/macropaedia/${slugify(bestNextArticle.title)}` : undefined}
-        bestNextTitle={bestNextArticle?.title}
-        bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount)}, ${bestNextArticle.sectionCount} total Sections.` : undefined}
-        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-      />
+      <div class="space-y-4">
+        <ReadingCoverageSummary
+          coverageRings={coverageRings}
+          totalLabel="Articles"
+          totalCount={entries.length}
+          totalDescription="Unique Macropaedia titles referenced in the outline."
+          completedCount={completedCount}
+          completedDescription="Uses the same checklist state as the section reading boxes."
+          activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+          activeCoverageDescription={activeCoverageDescription(activeLayer)}
+          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
+          bestNextHref={bestNextArticle ? `${baseUrl}/macropaedia/${slugify(bestNextArticle.title)}` : undefined}
+          bestNextTitle={bestNextArticle?.title}
+          bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount)}, ${bestNextArticle.sectionCount} total Sections.` : undefined}
+          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+        />
 
-      <ReadingSpreadPath
-        isOpen={spreadPathOpen}
-        onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={activePath}
-        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-        checklistState={checklistState}
-        onCheckedChange={writeChecklistState}
-        getHref={(step) => `${baseUrl}/macropaedia/${slugify(step.title)}`}
-        checkboxAriaLabel={(step) => `Mark ${step.title} as completed`}
-        itemSingular="article"
-        itemPlural="articles"
-        coverageUnitSingular={layerMeta.label}
-        coverageUnitPlural={layerMeta.pluralLabel}
-        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-        baseUrl={baseUrl}
-      />
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
+          steps={activePath}
+          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => `${baseUrl}/macropaedia/${slugify(step.title)}`}
+          checkboxAriaLabel={(step) => `Mark ${step.title} as completed`}
+          itemSingular="article"
+          itemPlural="articles"
+          coverageUnitSingular={layerMeta.label}
+          coverageUnitPlural={layerMeta.pluralLabel}
+          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          baseUrl={baseUrl}
+        />
+      </div>
 
       <CoverageGapPanel
         entries={entries}
@@ -224,14 +226,14 @@ export default function MacropaediaLibrary({
       />
 
       <section id="macropaedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6">
-        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">Macropaedia Article List</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the full historical Macropaedia list and sort it by coverage across Parts, Divisions, or Sections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+              These controls only change the full article list below. The Outline Layer tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -239,7 +241,7 @@ export default function MacropaediaLibrary({
           </div>
         </div>
 
-        <div class="mt-6 grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
+        <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
             <input

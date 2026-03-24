@@ -193,7 +193,7 @@ export default function WikipediaLibrary({
   const canShowMore = visibleEntries.length < filteredEntries.length;
 
   return (
-    <div class="space-y-8">
+    <div class="space-y-4">
       <div class="flex justify-center">
         <div class="flex rounded-lg border border-gray-200 bg-white p-1">
           {([1, 2, 3] as KnowledgeLevel[]).map((lvl) => {
@@ -218,50 +218,52 @@ export default function WikipediaLibrary({
         snapshots={layerTabSnapshots}
       />
 
-      <ReadingCoverageSummary
-        coverageRings={coverageRings}
-        totalLabel="Articles"
-        totalCount={levelEntries.length}
-        totalDescription="Wikipedia Vital Articles at the selected level."
-        completedCount={completedCount}
-        completedDescription="Shared with the Done boxes on section pages."
-        activeCoverageLabel={`${layerMeta.label} Coverage`}
-        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription(activeLayer)}
-        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-        bestNextHref={bestNextRead ? `${baseUrl}/wikipedia/${slugify(bestNextRead.title)}` : undefined}
-        bestNextTitle={bestNextRead?.title}
-        bestNextDescription={bestNextRead
-          ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
-          : undefined}
-        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-      />
+      <div class="space-y-4">
+        <ReadingCoverageSummary
+          coverageRings={coverageRings}
+          totalLabel="Articles"
+          totalCount={levelEntries.length}
+          totalDescription="Wikipedia Vital Articles at the selected level."
+          completedCount={completedCount}
+          completedDescription="Shared with the Done boxes on section pages."
+          activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+          activeCoverageDescription={activeCoverageDescription(activeLayer)}
+          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
+          bestNextHref={bestNextRead ? `${baseUrl}/wikipedia/${slugify(bestNextRead.title)}` : undefined}
+          bestNextTitle={bestNextRead?.title}
+          bestNextDescription={bestNextRead
+            ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
+            : undefined}
+          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+        />
 
-      <ReadingSpreadPath
-        isOpen={spreadPathOpen}
-        onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={activePath}
-        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-        checklistState={checklistState}
-        onCheckedChange={writeChecklistState}
-        getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
-        renderMeta={(step) => (
-          <>
-            {activeLayer === 'subsection' && precisionBadgeText(step) ? (
-              <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
-            ) : null}
-          </>
-        )}
-        checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
-        itemSingular="article"
-        itemPlural="articles"
-        coverageUnitSingular={layerMeta.label}
-        coverageUnitPlural={layerMeta.pluralLabel}
-        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-        baseUrl={baseUrl}
-        sectionLinksVariant="chips"
-      />
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
+          steps={activePath}
+          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
+          renderMeta={(step) => (
+            <>
+              {activeLayer === 'subsection' && precisionBadgeText(step) ? (
+                <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
+              ) : null}
+            </>
+          )}
+          checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
+          itemSingular="article"
+          itemPlural="articles"
+          coverageUnitSingular={layerMeta.label}
+          coverageUnitPlural={layerMeta.pluralLabel}
+          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          baseUrl={baseUrl}
+          sectionLinksVariant="chips"
+        />
+      </div>
 
       <CoverageGapPanel
         entries={entries}
@@ -274,14 +276,14 @@ export default function WikipediaLibrary({
       />
 
       <section id="wikipedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
-        <div class="mb-4 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">Wikipedia Article List</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the full Vital Articles list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+              These controls only change the full article list below. The Outline Layer tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">

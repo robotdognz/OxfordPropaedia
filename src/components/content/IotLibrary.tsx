@@ -202,60 +202,62 @@ export default function IotLibrary({
   const canShowMore = visibleEntries.length < filteredEntries.length;
 
   return (
-    <div class="space-y-8">
+    <div class="space-y-4">
       <CoverageLayerTabs
         activeLayer={activeLayer}
         onSelect={(layer) => setSelectedLayer(layer)}
         snapshots={layerTabSnapshots}
       />
 
-      <ReadingCoverageSummary
-        coverageRings={coverageRings}
-        totalLabel="Episodes"
-        totalCount={entries.length}
-        totalDescription="Mapped BBC In Our Time episodes in the listening list."
-        completedCount={completedCount}
-        completedDescription="Shared with the Done boxes on Section pages."
-        activeCoverageLabel={`${layerMeta.label} Coverage`}
-        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription(activeLayer)}
-        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-        bestNextHref={bestNextEpisode ? `${baseUrl}/iot/${bestNextEpisode.pid}` : undefined}
-        bestNextTitle={bestNextEpisode?.title}
-        bestNextDescription={bestNextEpisode
-          ? `Adds ${bestNextEpisode.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextEpisode.newCoverageCount)}, ${bestNextEpisode.sectionCount} total Sections.${formatIotEpisodeMeta(bestNextEpisode) ? ` ${formatIotEpisodeMeta(bestNextEpisode)}.` : ''}${activeLayer === 'subsection' && precisionBadgeText(bestNextEpisode) ? ` ${precisionBadgeText(bestNextEpisode)}.` : ''}`
-          : undefined}
-        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-      />
+      <div class="space-y-4">
+        <ReadingCoverageSummary
+          coverageRings={coverageRings}
+          totalLabel="Episodes"
+          totalCount={entries.length}
+          totalDescription="Mapped BBC In Our Time episodes in the listening list."
+          completedCount={completedCount}
+          completedDescription="Shared with the Done boxes on Section pages."
+          activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+          activeCoverageDescription={activeCoverageDescription(activeLayer)}
+          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
+          bestNextHref={bestNextEpisode ? `${baseUrl}/iot/${bestNextEpisode.pid}` : undefined}
+          bestNextTitle={bestNextEpisode?.title}
+          bestNextDescription={bestNextEpisode
+            ? `Adds ${bestNextEpisode.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextEpisode.newCoverageCount)}, ${bestNextEpisode.sectionCount} total Sections.${formatIotEpisodeMeta(bestNextEpisode) ? ` ${formatIotEpisodeMeta(bestNextEpisode)}.` : ''}${activeLayer === 'subsection' && precisionBadgeText(bestNextEpisode) ? ` ${precisionBadgeText(bestNextEpisode)}.` : ''}`
+            : undefined}
+          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+        />
 
-      <ReadingSpreadPath
-        isOpen={spreadPathOpen}
-        onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={activePath}
-        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-        checklistState={checklistState}
-        onCheckedChange={writeChecklistState}
-        getHref={(step) => `${baseUrl}/iot/${step.pid}`}
-        renderMeta={(step) => (
-          <>
-            {formatIotEpisodeMeta(step) ? (
-              <p class="mt-1 text-sm text-gray-600">{formatIotEpisodeMeta(step)}</p>
-            ) : null}
-            {activeLayer === 'subsection' && precisionBadgeText(step) ? (
-              <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
-            ) : null}
-          </>
-        )}
-        checkboxAriaLabel={(step) => `Mark ${step.title} as listened`}
-        itemSingular="episode"
-        itemPlural="episodes"
-        coverageUnitSingular={layerMeta.label}
-        coverageUnitPlural={layerMeta.pluralLabel}
-        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-        baseUrl={baseUrl}
-        sectionLinksVariant="chips"
-      />
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
+          steps={activePath}
+          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => `${baseUrl}/iot/${step.pid}`}
+          renderMeta={(step) => (
+            <>
+              {formatIotEpisodeMeta(step) ? (
+                <p class="mt-1 text-sm text-gray-600">{formatIotEpisodeMeta(step)}</p>
+              ) : null}
+              {activeLayer === 'subsection' && precisionBadgeText(step) ? (
+                <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
+              ) : null}
+            </>
+          )}
+          checkboxAriaLabel={(step) => `Mark ${step.title} as listened`}
+          itemSingular="episode"
+          itemPlural="episodes"
+          coverageUnitSingular={layerMeta.label}
+          coverageUnitPlural={layerMeta.pluralLabel}
+          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          baseUrl={baseUrl}
+          sectionLinksVariant="chips"
+        />
+      </div>
 
       <CoverageGapPanel
         entries={entries}
@@ -268,14 +270,14 @@ export default function IotLibrary({
       />
 
       <section id="iot-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
-        <div class="mb-4 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">BBC In Our Time Episode List</h2>
             <p class="mt-2 text-sm text-gray-600">
               Search the mapped episode list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full episode list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+              These controls only change the full episode list below. The Outline Layer tabs above drive the adaptive path and gap panels.
             </p>
           </div>
           <div class="text-sm text-gray-500">

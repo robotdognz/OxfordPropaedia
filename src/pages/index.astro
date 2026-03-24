@@ -239,32 +239,36 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-2 pt-12 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-6xl px-2 py-12 sm:px-6 lg:px-8">
       <div class="rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-6 sm:py-7">
-        <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-          Coverage Scope
-        </p>
-        <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
-          Explore Knowledge At Three Levels
-        </h2>
-        <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-          Start with the whole outline if you want the broadest possible spread, use the circle when you
-          want to focus that coverage through one field or the overlap between two, and move into Divisions
-          and Sections when you want precision.
-        </p>
+        <div class="space-y-3">
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Coverage Scope
+          </p>
+          <h2 class="text-3xl font-serif font-bold text-slate-900">
+            Explore Knowledge At Three Levels
+          </h2>
+          <p class="max-w-3xl text-sm leading-7 text-slate-600">
+            Start with the whole outline if you want the broadest possible spread, use the circle when you
+            want to focus that coverage through one field or the overlap between two, and move into Divisions
+            and Sections when you want precision.
+          </p>
+        </div>
 
         <div class="mt-6 grid gap-4 lg:grid-cols-3">
           <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              1. Whole Outline
-            </p>
-            <h3 class="mt-2 font-serif text-xl text-slate-900">Maximise overall knowledge</h3>
-            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
-              Use the global reading paths to cover as much of the outline as possible at the Part,
-              Division, Section, and Subsection levels.
-            </p>
+            <div class="flex-1 space-y-3">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+                1. Whole Outline
+              </p>
+              <h3 class="font-serif text-xl text-slate-900">Maximise overall knowledge</h3>
+              <p class="text-sm leading-6 text-slate-600">
+                Use the global reading paths to cover as much of the outline as possible at the Part,
+                Division, Section, and Subsection levels.
+              </p>
+            </div>
             <div class="mt-4 border-t border-slate-200 pt-4">
-              <div class="mt-1 flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-2">
                 <a
                   href="#whole-outline-reading-paths"
                   class="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100"
@@ -276,17 +280,19 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           </article>
 
           <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              2. Selected Fields
-            </p>
-            <h3 class="mt-2 font-serif text-xl text-slate-900">Focus coverage through the circle</h3>
-            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
-              Keep one Part at the top to maximise coverage from that field outward, or move another Part
-              into the centre to maximise coverage through the overlap between two fields.
-            </p>
-            <p class="mt-3 text-xs leading-5 text-slate-500">
-              When the circle gets you close, open a Division or Section to keep the same logic but at a narrower topic level.
-            </p>
+            <div class="flex-1 space-y-3">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+                2. Selected Fields
+              </p>
+              <h3 class="font-serif text-xl text-slate-900">Focus coverage through the circle</h3>
+              <p class="text-sm leading-6 text-slate-600">
+                Keep one Part at the top to maximise coverage from that field outward, or move another Part
+                into the centre to maximise coverage through the overlap between two fields.
+              </p>
+              <p class="text-xs leading-5 text-slate-500">
+                When the circle gets you close, open a Division or Section to keep the same logic but at a narrower topic level.
+              </p>
+            </div>
             <div class="mt-4 border-t border-slate-200 pt-4">
               <a
                 href="#circle-of-learning"
@@ -298,17 +304,19 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           </article>
 
           <article class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 px-4 py-4">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              3. Specific Topic
-            </p>
-            <h3 class="mt-2 font-serif text-xl text-slate-900">Use the outline for precision</h3>
-            <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">
-              When you want exact topics rather than field-level guidance, open a Division or Section and
-              let the outline structure narrow the recommendations for you.
-            </p>
-            <p class="mt-4 text-xs leading-5 text-slate-500">
-              The circle and the sidebar both lead into this deeper level of navigation.
-            </p>
+            <div class="flex-1 space-y-3">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+                3. Specific Topic
+              </p>
+              <h3 class="font-serif text-xl text-slate-900">Use the outline for precision</h3>
+              <p class="text-sm leading-6 text-slate-600">
+                When you want exact topics rather than field-level guidance, open a Division or Section and
+                let the outline structure narrow the recommendations for you.
+              </p>
+              <p class="text-xs leading-5 text-slate-500">
+                The circle and the sidebar both lead into this deeper level of navigation.
+              </p>
+            </div>
             <div class="mt-4 border-t border-slate-200 pt-4">
               <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
                 Best entry points
@@ -322,7 +330,10 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-2 py-12 sm:px-6 lg:px-8">
+    <section
+      id="whole-outline-reading-paths"
+      class="mx-auto max-w-6xl px-2 py-12 sm:px-6 lg:px-8"
+    >
       <HomepageCoverageExplorer
         client:load
         baseUrl={base}
@@ -330,7 +341,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       />
     </section>
 
-    <section id="circle-of-learning" class="mx-auto max-w-6xl px-2 py-14 sm:px-6 lg:px-8">
+    <section id="circle-of-learning" class="mx-auto max-w-6xl px-2 py-12 sm:px-6 lg:px-8">
       <div class="rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7">
         <div>
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -347,7 +358,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           </p>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-6">
           <CircleNavigator
             client:load
             parts={circleNavigatorParts}
@@ -359,7 +370,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-2 pb-14 sm:px-6 lg:px-8 space-y-4">
+    <section class="mx-auto max-w-6xl space-y-4 px-2 pb-12 sm:px-6 lg:px-8">
       <details class="group rounded-lg border border-slate-200 bg-white shadow-sm">
         <summary class="cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
           <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
