@@ -20,6 +20,7 @@ import {
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
+import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 
@@ -62,11 +63,11 @@ function storeLevel(level: KnowledgeLevel) {
 function activeCoverageDescription(layer: CoverageLayer): string {
   switch (layer) {
     case 'part':
-      return 'Parts with at least one checked vital article.';
+      return 'Parts with at least one checked article.';
     case 'division':
-      return 'Divisions with at least one checked vital article.';
+      return 'Divisions with at least one checked article.';
     case 'section':
-      return 'Sections with at least one checked vital article.';
+      return 'Sections with at least one checked article.';
     case 'subsection':
       return 'Mapped Subsection coverage from outline-path matches in the Section mappings.';
     default:
@@ -381,21 +382,23 @@ export default function WikipediaLibrary({
                         Done
                       </label>
                     </div>
-                    <div class="mt-3 flex items-center gap-3">
-                      <a
-                        href={entry.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-xs text-indigo-600 hover:text-indigo-800"
-                      >
-                        Read on Wikipedia ↗
-                      </a>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
+                      <span class={`rounded-full px-2.5 py-1 ${entry.sectionCount > 0 ? 'bg-indigo-50 text-indigo-700' : 'bg-gray-100 text-gray-500'}`}>
+                        {entry.sectionCount > 0 ? `Appears in ${entry.sectionCount} Sections` : 'No matching sections'}
+                      </span>
                       {precisionBadgeText(entry) && (
-                        <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold text-slate-700">
-                          {precisionBadgeText(entry)}
-                        </span>
+                        <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">{precisionBadgeText(entry)}</span>
+                      )}
+                      {entry.category && (
+                        <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">{entry.category}</span>
                       )}
                     </div>
+
+                    <ReadingSectionLinks
+                      sections={entry.sections}
+                      baseUrl={baseUrl}
+                      label={`Show all ${entry.sectionCount} Sections`}
+                    />
                   </article>
                 );
               })}
