@@ -381,7 +381,9 @@ export default function IotLibrary({
                     </div>
 
                     {entry.synopsis && (
-                      <p class="mt-3 text-sm leading-6 text-gray-600">{entry.synopsis}</p>
+                      <p class="mt-3 text-sm leading-6 text-gray-600">
+                        {entry.synopsis.length > 200 ? entry.synopsis.slice(0, 200).replace(/\s\S*$/, '') + '…' : entry.synopsis}
+                      </p>
                     )}
 
                     <div class="mt-3 flex flex-wrap items-center gap-3">

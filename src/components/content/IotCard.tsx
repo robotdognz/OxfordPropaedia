@@ -92,11 +92,9 @@ export default function IotCard({
       )}
 
       {rationale && (
-        <p class="mb-3 text-sm leading-6 text-gray-600">{linkifyRationaleReferences(rationale, baseUrl, sectionCode)}</p>
-      )}
-
-      {synopsis && !rationale && (
-        <p class="mb-3 text-sm leading-6 text-gray-600">{synopsis}</p>
+        <Accordion title="Why this episode?" defaultOpen={false}>
+          <p class="text-gray-600">{linkifyRationaleReferences(rationale, baseUrl, sectionCode)}</p>
+        </Accordion>
       )}
     </div>
   );
