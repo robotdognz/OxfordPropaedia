@@ -7,7 +7,7 @@ export interface PartCoverageRingProps {
   size?: number;
   innerRadius?: number;
   outerRadius?: number;
-  gapDegrees?: number;
+  gapPx?: number;
 }
 
 function polar(cx: number, cy: number, r: number, angleDeg: number) {
@@ -16,55 +16,74 @@ function polar(cx: number, cy: number, r: number, angleDeg: number) {
 }
 
 /**
- * Donut-slice path with semicircular end caps.
- * Cap radius = half the ring thickness, drawn as arcs connecting
- * inner and outer edges at each end of the segment.
+ * Convert a pixel gap to an angular inset at a given radius.
+ * Half the gap on each side, so the total gap between adjacent segments = gapPx.
+ */
+function gapInsetDeg(halfGapPx: number, radius: number): number {
+  return (halfGapPx / radius) * (180 / Math.PI);
+}
+
+/**
+ * Donut-slice path with semicircular end caps and parallel-edge gaps.
+ * The gap is specified in pixels so inner and outer edges stay parallel.
  */
 function roundedSegmentPath(
   cx: number,
   cy: number,
   innerR: number,
   outerR: number,
-  startDeg: number,
-  endDeg: number,
+  centerDeg: number,
+  segDeg: number,
+  halfGapPx: number,
 ): string {
-  const sweep = endDeg - startDeg;
-  if (sweep <= 0.01) return '';
+  // Compute per-radius angular insets for parallel gaps
+  const outerGapDeg = gapInsetDeg(halfGapPx, outerR);
+  const innerGapDeg = gapInsetDeg(halfGapPx, innerR);
+
+  const outerStart = centerDeg - segDeg / 2 + outerGapDeg;
+  const outerEnd = centerDeg + segDeg / 2 - outerGapDeg;
+  const innerStart = centerDeg - segDeg / 2 + innerGapDeg;
+  const innerEnd = centerDeg + segDeg / 2 - innerGapDeg;
+
+  const outerSweep = outerEnd - outerStart;
+  const innerSweep = innerEnd - innerStart;
+  if (outerSweep <= 0.01 || innerSweep <= 0.01) return '';
 
   const thickness = outerR - innerR;
   const capR = thickness / 2;
-  const outerInsetDeg = (capR / outerR) * (180 / Math.PI);
-  const innerInsetDeg = (capR / innerR) * (180 / Math.PI);
+  const capInsetOuter = (capR / outerR) * (180 / Math.PI);
+  const capInsetInner = (capR / innerR) * (180 / Math.PI);
 
   // If too narrow for caps, draw without rounding
-  if (sweep < (outerInsetDeg + innerInsetDeg) * 2) {
-    const largeArc = sweep > 180 ? 1 : 0;
-    const oS = polar(cx, cy, outerR, startDeg);
-    const oE = polar(cx, cy, outerR, endDeg);
-    const iE = polar(cx, cy, innerR, endDeg);
-    const iS = polar(cx, cy, innerR, startDeg);
-    return `M ${oS.x} ${oS.y} A ${outerR} ${outerR} 0 ${largeArc} 1 ${oE.x} ${oE.y} L ${iE.x} ${iE.y} A ${innerR} ${innerR} 0 ${largeArc} 0 ${iS.x} ${iS.y} Z`;
+  if (outerSweep < capInsetOuter * 2.5 || innerSweep < capInsetInner * 2.5) {
+    const oS = polar(cx, cy, outerR, outerStart);
+    const oE = polar(cx, cy, outerR, outerEnd);
+    const iE = polar(cx, cy, innerR, innerEnd);
+    const iS = polar(cx, cy, innerR, innerStart);
+    return [
+      `M ${oS.x} ${oS.y}`,
+      `A ${outerR} ${outerR} 0 ${outerSweep > 180 ? 1 : 0} 1 ${oE.x} ${oE.y}`,
+      `L ${iE.x} ${iE.y}`,
+      `A ${innerR} ${innerR} 0 ${innerSweep > 180 ? 1 : 0} 0 ${iS.x} ${iS.y}`,
+      'Z',
+    ].join(' ');
   }
 
-  // Inset points for the main arcs
-  const oS = polar(cx, cy, outerR, startDeg + outerInsetDeg);
-  const oE = polar(cx, cy, outerR, endDeg - outerInsetDeg);
-  const iS = polar(cx, cy, innerR, startDeg + innerInsetDeg);
-  const iE = polar(cx, cy, innerR, endDeg - innerInsetDeg);
+  // Inset points for rounded caps
+  const oS = polar(cx, cy, outerR, outerStart + capInsetOuter);
+  const oE = polar(cx, cy, outerR, outerEnd - capInsetOuter);
+  const iS = polar(cx, cy, innerR, innerStart + capInsetInner);
+  const iE = polar(cx, cy, innerR, innerEnd - capInsetInner);
 
-  const outerSweep = sweep - 2 * outerInsetDeg;
-  const innerSweep = sweep - 2 * innerInsetDeg;
+  const mainOuterSweep = outerSweep - 2 * capInsetOuter;
+  const mainInnerSweep = innerSweep - 2 * capInsetInner;
 
   return [
-    // Start at inner-start, cap arc to outer-start
     `M ${iS.x} ${iS.y}`,
     `A ${capR} ${capR} 0 0 1 ${oS.x} ${oS.y}`,
-    // Outer arc to outer-end
-    `A ${outerR} ${outerR} 0 ${outerSweep > 180 ? 1 : 0} 1 ${oE.x} ${oE.y}`,
-    // End cap arc to inner-end
+    `A ${outerR} ${outerR} 0 ${mainOuterSweep > 180 ? 1 : 0} 1 ${oE.x} ${oE.y}`,
     `A ${capR} ${capR} 0 0 1 ${iE.x} ${iE.y}`,
-    // Inner arc back to inner-start
-    `A ${innerR} ${innerR} 0 ${innerSweep > 180 ? 1 : 0} 0 ${iS.x} ${iS.y}`,
+    `A ${innerR} ${innerR} 0 ${mainInnerSweep > 180 ? 1 : 0} 0 ${iS.x} ${iS.y}`,
     'Z',
   ].join(' ');
 }
@@ -76,7 +95,7 @@ export default function PartCoverageRing({
   size = 100,
   innerRadius,
   outerRadius,
-  gapDegrees = 3,
+  gapPx = 2.5,
 }: PartCoverageRingProps) {
   const [animated, setAnimated] = useState(false);
   const [clipId] = useState(() => `pcr-${++idCounter}`);
@@ -87,7 +106,7 @@ export default function PartCoverageRing({
   const iR = innerRadius ?? oR * 0.55;
   const segmentCount = segments.length || 10;
   const segDeg = 360 / segmentCount;
-  const halfGap = gapDegrees / 2;
+  const halfGapPx = gapPx / 2;
 
   useEffect(() => {
     setAnimated(false);
@@ -101,7 +120,6 @@ export default function PartCoverageRing({
     <svg viewBox={`0 0 ${size} ${size}`} class="w-28 h-28 sm:w-32 sm:h-32">
       <defs>
         {segments.map((seg, i) => {
-          // Clip circle: radius grows from innerR (empty) to outerR (full)
           const fillR = animated ? iR + seg.fraction * (oR - iR) : iR;
           return (
             <clipPath key={i} id={`${clipId}-${i}`}>
@@ -119,9 +137,8 @@ export default function PartCoverageRing({
       </defs>
 
       {segments.map((seg, i) => {
-        const startDeg = i * segDeg + halfGap;
-        const endDeg = (i + 1) * segDeg - halfGap;
-        const segPath = roundedSegmentPath(cx, cy, iR, oR, startDeg, endDeg);
+        const centerDeg = (i + 0.5) * segDeg;
+        const segPath = roundedSegmentPath(cx, cy, iR, oR, centerDeg, segDeg, halfGapPx);
 
         return (
           <g key={seg.partNumber}>
