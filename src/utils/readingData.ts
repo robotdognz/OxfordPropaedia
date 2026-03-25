@@ -318,6 +318,34 @@ export function buildVsiAggregateEntries(
     }
   }
 
+  // Include unmapped catalog items so they appear in the master list
+  for (const catalogEntry of catalog) {
+    const lookupKey = vsiLookupKey(catalogEntry.title, catalogEntry.author);
+    if (aggregateMap.has(lookupKey)) continue;
+    aggregateMap.set(lookupKey, {
+      sectionCodes: new Set(),
+      subsectionKeys: new Set(),
+      mappedPathSectionCodes: new Set(),
+      fallbackSectionCodes: new Set(),
+      mappedPathCount: 0,
+      entry: {
+        title: catalogEntry.title,
+        author: catalogEntry.author,
+        number: catalogEntry.number,
+        subject: catalogEntry.subject,
+        publicationYear: catalogEntry.publicationYear,
+        edition: catalogEntry.edition,
+        checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
+        sectionCount: 0,
+        sections: [],
+        subsectionKeys: [],
+        mappedPathCount: 0,
+        mappedPathSectionCount: 0,
+        fallbackSectionCount: 0,
+      },
+    });
+  }
+
   return Array.from(aggregateMap.values())
     .map(({ entry, subsectionKeys, mappedPathSectionCodes, fallbackSectionCodes, mappedPathCount }) => ({
       ...entry,

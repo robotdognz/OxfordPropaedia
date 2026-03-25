@@ -41,7 +41,7 @@ export async function getStaticPaths() {
     }
   }
 
-  return Array.from(episodeMappings.entries()).map(([pid, codes]) => {
+  const paths = Array.from(episodeMappings.entries()).map(([pid, codes]) => {
     const catalogEpisode = catalogLookup.get(pid);
     const episode = {
       pid,
@@ -73,6 +73,30 @@ export async function getStaticPaths() {
       props: { episode, sections, coverage, totals },
     };
   });
+
+  // Generate detail pages for unmapped catalog episodes too
+  const mappedPids = new Set(episodeMappings.keys());
+  for (const [pid, catalogEpisode] of catalogLookup) {
+    if (mappedPids.has(pid)) continue;
+    paths.push({
+      params: { pid },
+      props: {
+        episode: {
+          pid,
+          title: catalogEpisode.title ?? pid,
+          url: catalogEpisode.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
+          synopsis: catalogEpisode.description ?? catalogEpisode.synopsis,
+          datePublished: catalogEpisode.datePublished,
+          durationSeconds: catalogEpisode.durationSeconds,
+        },
+        sections: [],
+        coverage: { parts: 0, divisions: 0, sections: 0 },
+        totals,
+      },
+    });
+  }
+
+  return paths;
 }
 
 const base = import.meta.env.BASE_URL;
@@ -132,19 +156,19 @@ const metadata = formatIotEpisodeMeta(episode);
       </section>
     )}
 
-    {sections.length > 0 && (
-      <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
-        <div class="flex-1 min-w-0">
-          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
-            Mapped to {sections.length} {sections.length === 1 ? 'Section' : 'Sections'}
-          </h2>
-          <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
-        </div>
-        <div class="shrink-0">
-          <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
-        </div>
+    <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
+      <div class="flex-1 min-w-0">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+          {sections.length > 0
+            ? `Mapped to ${sections.length} ${sections.length === 1 ? 'Section' : 'Sections'}`
+            : 'No matching sections'}
+        </h2>
+        <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
       </div>
-    )}
+      <div class="shrink-0">
+        <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
+      </div>
+    </div>
 
     {sections.length > 0 ? (
       <section class="mt-6">
@@ -183,7 +207,7 @@ const metadata = formatIotEpisodeMeta(episode);
       </section>
     ) : (
       <section class="mt-8">
-        <p class="text-sm text-gray-400 italic">This episode has not yet been mapped to Propaedia Sections.</p>
+        <p class="text-sm text-gray-400 italic">This episode does not match any sections in the Outline of Knowledge.</p>
       </section>
     )}
   </main>

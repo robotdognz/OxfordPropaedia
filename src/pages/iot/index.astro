@@ -92,6 +92,25 @@ const episodes = Array.from(episodeCoverage.keys()).map((pid) => {
   };
 });
 
+// Include unmapped catalog episodes so they appear in the master list
+for (const [pid, catalogEntry] of catalogLookup) {
+  if (!episodeCoverage.has(pid)) {
+    episodes.push({
+      pid,
+      title: catalogEntry.title ?? pid,
+      synopsis: catalogEntry.description ?? catalogEntry.synopsis,
+      url: catalogEntry.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
+      datePublished: catalogEntry.datePublished,
+      durationSeconds: catalogEntry.durationSeconds,
+      sectionCodes: [],
+      subsectionKeys: [],
+      mappedPathCount: 0,
+      mappedPathSectionCount: 0,
+      fallbackSectionCount: 0,
+    });
+  }
+}
+
 const entries = buildIotAggregateEntries(episodes, sectionLookup);
 const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
   sections.map((entry) => entry.data)

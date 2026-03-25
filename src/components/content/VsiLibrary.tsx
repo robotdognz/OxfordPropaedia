@@ -398,8 +398,8 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
                     </div>
 
                     <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
-                      <span class="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-700">
-                        Appears in {entry.sectionCount} Sections
+                      <span class={`rounded-full px-2.5 py-1 ${entry.sectionCount > 0 ? 'bg-indigo-50 text-indigo-700' : 'bg-gray-100 text-gray-500'}`}>
+                        {entry.sectionCount > 0 ? `Appears in ${entry.sectionCount} Sections` : 'No matching sections'}
                       </span>
                       {precisionBadgeText(entry) && (
                         <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">{precisionBadgeText(entry)}</span>
