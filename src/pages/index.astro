@@ -740,7 +740,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
 
           const stored = localStorage.getItem(STORAGE_KEY);
           if (stored && modeLookup.has(stored)) {
-            return { key: stored, scroll: true };
+            return { key: stored, scroll: false };
           }
 
           const defaultMode = modeItems.find((item) => item.details.open) || modeItems[0];
