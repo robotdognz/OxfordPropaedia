@@ -2,71 +2,60 @@
   "sectionCode": "968",
   "mappings": [
     {
+      "episodeTitle": "The Mughal Empire",
+      "pid": "p004y27h",
+      "relevantPathsAI": ["A", "B.1"],
+      "rationaleAI": "The Mughal Empire's administrative structure under Akbar, its cultural production including the Taj Mahal, and its gradual decline that enabled East India Company expansion set the essential context for European commercial penetration (A) and the growth of Company political power (B.1)."
+    },
+    {
       "episodeTitle": "The East India Company",
       "pid": "p0054906",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3.a",
-        "A.3.b",
-        "A.3.c",
-        "B.1",
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "The East India Company covers its origins in the spice trade, rivalry with the Dutch VOC, territorial acquisition from trading posts to governance, the Battle of Plassey, Clive and Hastings, the Indian Rebellion of 1857, and the transfer of power to the Crown, matching virtually the entire arc of A and B."
+      "relevantPathsAI": ["A.3.a", "B.1", "B.1.a", "B.1.b", "B.2"],
+      "rationaleAI": "Founded in 1600, the English East India Company's evolution from a trading enterprise with 130 ships into a governing authority with a 200,000-strong private army that toppled Indian princes and administered territories maps to the establishment of British settlements (A.3.a), the growth of Company political power and its transition to ruling authority (B.1, B.1.a, B.1.b), and the political and economic reshaping of the subcontinent (B.2)."
     },
     {
       "episodeTitle": "The Indian Mutiny",
       "pid": "b00qprnj",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "The Indian Mutiny of 1857 covers the uprising against Company rule, the siege of Delhi, massacres at Cawnpore and Lucknow, and the British crown's assumption of responsibility for India, directly matching B.3."
-    },
-    {
-      "episodeTitle": "The Dutch East India Company",
-      "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "The Dutch East India Company covers Dutch trading posts and commercial activities in Asia including rivalry with the British, directly matching A.2 on Dutch trading posts and conflicts with the British."
+      "relevantPathsAI": ["B.3"],
+      "rationaleAI": "The 1857 mutiny's causes in greased cartridges, economic exploitation, aggressive annexation, and missionary threats to caste and religious traditions, its fifteen-month suppression, and the consequent transfer of authority from the East India Company to the Crown correspond precisely to B.3."
     },
     {
       "episodeTitle": "The Sikh Empire",
       "pid": "b075t5mn",
-      "relevantPathsAI": [
-        "B.1.f"
-      ],
-      "rationaleAI": "The Sikh Empire under Ranjit Singh and the Anglo-Sikh Wars leading to British annexation directly match B.1.f on completion of British annexation of the Sikh kingdoms in the 1840s."
+      "relevantPathsAI": ["B.1.f"],
+      "rationaleAI": "Ranjit Singh's unified Punjab state stretching from the Khyber Pass to Tibet, and the two Anglo-Sikh Wars culminating in British annexation of Punjab by 1849, map directly to the completion of British annexation of the Sikh kingdom in the 1840s and 1850s (B.1.f)."
     },
     {
-      "episodeTitle": "The Mughal Empire",
-      "pid": "p004y27h",
-      "relevantPathsAI": [
-        "A.3.b",
-        "B.2",
-        "C.1"
-      ],
-      "rationaleAI": "The Mughal Empire's decline and the degree to which British colonial administration built upon Mughal precedents directly relate to A.3.b on the transition of Company status, B.2 on political and cultural effects of British influence, and C.1 on the raj."
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["B", "C", "C.1"],
+      "rationaleAI": "Victoria's 1877 proclamation as Empress of India, the analysis of colonial governance structures and economic exploitation, and the role of nationalist movements and world wars in driving decolonization provide broad coverage of the extension of British power (B) and the climax of the raj (C, C.1)."
     },
     {
-      "episodeTitle": "Annie Besant",
-      "pid": "b01jxtd7",
-      "relevantPathsAI": [
-        "C.3",
-        "C.4"
-      ],
-      "rationaleAI": "Annie Besant's involvement in the Indian independence movement and the Home Rule League directly matches C.3 on the beginning of Indian nationalism and C.4 on World War I and the emergence of Gandhi."
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": ["A.1", "A.2"],
+      "rationaleAI": "The VOC's displacement of the Portuguese from key Asian trading posts and its exclusion of British competitors from the spice trade map to the decline of Portuguese hegemony and the rise of Dutch influence (A.1) and Dutch trading posts and conflicts with the British (A.2)."
+    },
+    {
+      "episodeTitle": "Tea",
+      "pid": "p004y24y",
+      "relevantPathsAI": ["B.2", "D.3"],
+      "rationaleAI": "Tea plantation economies in India and Ceylon illustrate the economic transformation wrought by British imperialism, mapping to the economic and social effects of British influence (B.2) and Ceylon's transition from subsistence to a commercial economy under British rule (D.3)."
+    },
+    {
+      "episodeTitle": "Tagore",
+      "pid": "b05sxv7b",
+      "relevantPathsAI": ["C.3", "C.4"],
+      "rationaleAI": "Tagore's renunciation of his British knighthood after the 1919 Amritsar Massacre and his role as intellectual counterpart to Gandhi connect directly to the rise of Indian nationalism in the late 19th century (C.3) and post-WWI political upheaval including Amritsar and Gandhi's emergence (C.4)."
     },
     {
       "episodeTitle": "The Opium Wars",
       "pid": "b00776k9",
-      "relevantPathsAI": [
-        "A.3.a"
-      ],
-      "rationaleAI": "The Opium Wars cover the British East India Company's opium trade from India to China, directly relating to British commercial and imperial activities in the Indian subcontinent under A.3.a."
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Opium grown in British India and smuggled to China was a central pillar of the colonial economy, and the resulting wars reshaped Asian geopolitics, illustrating the economic and political effects of British rule on the subcontinent (B.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

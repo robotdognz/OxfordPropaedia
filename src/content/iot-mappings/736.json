@@ -4,176 +4,131 @@
     {
       "episodeTitle": "The Manhattan Project",
       "pid": "m00108h1",
-      "relevantPathsAI": ["A.5", "A.5.a", "A.5.b"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.5.b"
+      ],
       "rationaleAI": "The Manhattan Project developed the first atomic weapons through nuclear fission (A.5.a), with the Trinity test and bombings of Hiroshima and Nagasaki demonstrating blast, heat, and radioactive fallout effects (A.5.b)."
     },
     {
       "episodeTitle": "Nuclear Physics",
       "pid": "p0054887",
-      "relevantPathsAI": ["A.5", "A.5.a"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a"
+      ],
       "rationaleAI": "Traces nuclear physics from the discovery of the atomic nucleus through to nuclear weapons, explicitly connecting fission science (A.5.a) to twentieth-century military technology and the dual-use nature of nuclear knowledge."
     },
     {
       "episodeTitle": "Nuclear Fusion",
       "pid": "b04mgtdq",
-      "relevantPathsAI": ["A.5", "A.5.a"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a"
+      ],
       "rationaleAI": "Covers nuclear fusion as exploited in thermonuclear weapons (hydrogen bombs), directly addressing fusion as a nuclear weapon energy source (A.5.a) alongside the physics of combining atomic nuclei to release energy."
     },
     {
       "episodeTitle": "The Neutron",
       "pid": "b076mnkr",
-      "relevantPathsAI": ["A.5", "A.5.a"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a"
+      ],
       "rationaleAI": "Chadwick's discovery of the electrically neutral neutron enabled nuclear fission chain reactions and the development of atomic weapons (A.5); neutron bombardment is the fundamental mechanism of fission-based nuclear warheads (A.5.a)."
     },
     {
       "episodeTitle": "New Wars",
       "pid": "p00546qy",
-      "relevantPathsAI": ["A", "A.4", "A.5", "A.5.b"],
+      "relevantPathsAI": [
+        "A",
+        "A.4",
+        "A.5",
+        "A.5.b"
+      ],
       "rationaleAI": "Directly examines how nuclear weapons, Cold War deterrence (A.5, A.5.b), and billion-dollar military technology including self-propelled missiles (A.4) have transformed the nature of armed conflict from Clausewitz's classical framework to modern asymmetric combat."
     },
     {
       "episodeTitle": "Constantinople Siege and Fall",
       "pid": "p0038xbd",
-      "relevantPathsAI": ["A.2.c", "B.2.b", "B.2.c"],
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.2.b",
+        "B.2.c"
+      ],
       "rationaleAI": "The 1453 siege featured Mehmet II's advanced cannon technology (A.2.c) breaching Constantinople's masonry fortifications (B.2.b), illustrating the gunpowder-era transition in permanent fortification design (B.2.c)."
     },
     {
       "episodeTitle": "The Iron Age",
       "pid": "b00zm1ks",
-      "relevantPathsAI": ["A.1.a", "A.1.b", "A.1.c"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b",
+        "A.1.c"
+      ],
       "rationaleAI": "Iron smelting replacing bronze as the dominant metal for weapons directly addresses construction materials (A.1.a), producing harder, more versatile shock weapons like swords and axes (A.1.b) and missile weapons like spearheads (A.1.c) accessible to broader populations."
     },
     {
       "episodeTitle": "Archimedes",
       "pid": "b00773bv",
-      "relevantPathsAI": ["A.1.d", "D.1"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.1"
+      ],
       "rationaleAI": "Archimedes designed catapults and ship-tilting defensive devices for Syracuse's defense against Roman siege, exemplifying mechanical weapons (A.1.d) and tactical military engineering support (D.1)."
     },
     {
       "episodeTitle": "The Great Wall of China",
       "pid": "b00s3h3w",
-      "relevantPathsAI": ["B.2", "B.2.b", "D.2"],
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.b",
+        "D.2"
+      ],
       "rationaleAI": "The Great Wall is a monumental permanent fortification before gunpowder (B.2.b), constructed of rammed earth and later brick and stone as imperial defense against nomadic incursions, representing strategic engineering support on a massive scale (D.2)."
     },
     {
       "episodeTitle": "The Fighting Temeraire",
       "pid": "b081r260",
-      "relevantPathsAI": ["C.2.b", "C.2.c"],
+      "relevantPathsAI": [
+        "C.2.b",
+        "C.2.c"
+      ],
       "rationaleAI": "Depicts HMS Temeraire, a sail-powered ship of the line distinguished at Trafalgar (C.2.b), being towed by a steam tug, symbolizing the technological transition from sail-powered to steam-powered naval warships (C.2.c)."
     },
     {
       "episodeTitle": "The Invention of Radio",
       "pid": "b0368knw",
-      "relevantPathsAI": ["F.1"],
+      "relevantPathsAI": [
+        "F.1"
+      ],
       "rationaleAI": "Radio technology transformed military strategy, communication, and navigation (F.1), developing from Maxwell's electromagnetic theory through Marconi's wireless telegraphy, with direct applications in military command, detection, and coordination systems."
     },
     {
       "episodeTitle": "Maxwell",
       "pid": "p005491g",
-      "relevantPathsAI": ["F.1"],
+      "relevantPathsAI": [
+        "F.1"
+      ],
       "rationaleAI": "Maxwell's electromagnetic equations predicted electromagnetic waves and provided the theoretical foundation for radio and radar (F.1), technologies essential to military communication, navigation, warning, detection, and weapon guidance systems."
     },
     {
       "episodeTitle": "The Charge of the Light Brigade",
       "pid": "b008md8x",
-      "relevantPathsAI": ["C.1.a"],
+      "relevantPathsAI": [
+        "C.1.a"
+      ],
       "rationaleAI": "The 1854 cavalry charge at Balaclava illustrates horses as animal mounts serving as weapon platforms (C.1.a) in mid-nineteenth-century warfare, and the vulnerability of mounted cavalry against entrenched artillery positions."
-    },
-    {
-      "episodeTitle": "The Art of War",
-      "pid": "p00548zm",
-      "relevantPathsAI": ["A", "B", "C", "D"],
-      "rationaleAI": "Directly covers the evolution of military strategy and tactics, the impact of technology on warfare from gunpowder to nuclear weapons, and the professionalization of armies."
-    },
-    {
-      "episodeTitle": "Clausewitz and On War",
-      "pid": "b01hl293",
-      "relevantPathsAI": ["A", "B", "C", "D"],
-      "rationaleAI": "Clausewitz's On War covers military theory including offensive and defensive warfare, the fog of war, friction, and the relationship between war and the state."
-    },
-    {
-      "episodeTitle": "War in the 20th Century",
-      "pid": "p0054578",
-      "relevantPathsAI": ["A.5", "A.6"],
-      "rationaleAI": "War in the 20th century covers the impact of industrial technology on warfare, nuclear weapons and deterrence theory, directly relevant to modern military technology."
-    },
-    {
-      "episodeTitle": "The Battle of Lepanto",
-      "pid": "b06nrqv8",
-      "relevantPathsAI": ["C.2.b"],
-      "rationaleAI": "The Battle of Lepanto (1571) was a major naval engagement involving oar and sail-powered warships, relevant to sail-powered surface ship weapon platforms."
-    },
-    {
-      "episodeTitle": "The Battle of Crécy",
-      "pid": "m001kx5s",
-      "relevantPathsAI": ["A.1.c", "A.1.d", "C.1.a"],
-      "rationaleAI": "The Battle of Crecy demonstrates the devastating effectiveness of the English longbow against cavalry, relevant to early hand-powered missile weapons and animal mounts as weapon platforms."
-    },
-    {
-      "episodeTitle": "The Battle of Salamis",
-      "pid": "b08j99jl",
-      "relevantPathsAI": ["C.2.a"],
-      "rationaleAI": "The Battle of Salamis was a decisive naval engagement involving oar-powered warships (galleys), relevant to oar-powered surface ship weapon platforms."
-    },
-    {
-      "episodeTitle": "Thermopylae",
-      "pid": "p004y278",
-      "relevantPathsAI": ["A.1", "B.1"],
-      "rationaleAI": "The Battle of Thermopylae demonstrates ancient hand-powered weapons and defensive tactics at a fortified pass, relevant to early weaponry and personal protection."
-    },
-    {
-      "episodeTitle": "The Spanish Armada",
-      "pid": "b00v1qyb",
-      "relevantPathsAI": ["A.2", "C.2.b"],
-      "rationaleAI": "The Spanish Armada demonstrates gunpowder-era naval warfare with sail-powered warships, relevant to gunpowder weapons and sail-powered weapon platforms."
-    },
-    {
-      "episodeTitle": "Hadrian's Wall",
-      "pid": "b01kkr42",
-      "relevantPathsAI": ["B.2.b", "D.1", "D.2"],
-      "rationaleAI": "Hadrian's Wall is a Roman frontier fortification with milecastles and forts, directly exemplifying permanent fortification before gunpowder and tactical/strategic engineering support."
-    },
-    {
-      "episodeTitle": "The Siege of Malta, 1565",
-      "pid": "b09l1wmr",
-      "relevantPathsAI": ["B.2.b", "B.2.c"],
-      "rationaleAI": "The Siege of Malta involved the defence of permanent fortifications against Ottoman assault in the early gunpowder era."
-    },
-    {
-      "episodeTitle": "The Siege of Vienna",
-      "pid": "b00k9h9g",
-      "relevantPathsAI": ["B.2.c"],
-      "rationaleAI": "The Siege of Vienna 1683 involved permanent fortification defence in the gunpowder era against Ottoman siege forces."
-    },
-    {
-      "episodeTitle": "The Russo-Japanese War",
-      "pid": "m000tnq3",
-      "relevantPathsAI": ["C.2.c", "C.2.d"],
-      "rationaleAI": "The Russo-Japanese War demonstrated modern industrial warfare including naval battles (Tsushima), relevant to steam-powered and internal combustion weapon platforms."
     },
     {
       "episodeTitle": "The Bronze Age Collapse",
       "pid": "b07fl5bh",
-      "relevantPathsAI": ["A.1.a", "A.1.b"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b"
+      ],
       "rationaleAI": "The Bronze Age collapse involves the military technologies of the era including bronze construction materials for weapons (A.1.a) and the disruption caused by the Sea Peoples' invasions using shock weapons (A.1.b)."
-    },
-    {
-      "episodeTitle": "The Battle of Lincoln 1217",
-      "pid": "b08njv60",
-      "relevantPathsAI": ["A.1", "B.2.b"],
-      "rationaleAI": "The Battle of Lincoln 1217 involved siege warfare at Lincoln Castle, relevant to pre-gunpowder fortification and early hand-powered weapons."
-    },
-    {
-      "episodeTitle": "The Shimabara Rebellion",
-      "pid": "m001lrd7",
-      "relevantPathsAI": ["A.2", "B.2.c"],
-      "rationaleAI": "The Shimabara Rebellion involved the siege of Hara Castle in the early gunpowder era, relevant to gunpowder weapons and permanent fortification."
-    },
-    {
-      "episodeTitle": "The Wars of the Roses",
-      "pid": "p00546sp",
-      "relevantPathsAI": ["A.1", "A.2", "C.1.a"],
-      "rationaleAI": "The Wars of the Roses involved key battles with medieval weaponry and mounted cavalry, relevant to early hand-powered weapons and animal mounts."
     }
   ],
   "_curatedBy": "ai",

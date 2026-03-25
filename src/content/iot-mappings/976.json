@@ -2,30 +2,36 @@
   "sectionCode": "976",
   "mappings": [
     {
-      "episodeTitle": "Annie Besant",
-      "pid": "b01jxtd7",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "Annie Besant's involvement in the Indian independence movement and the Home Rule League directly matches A.1.a on intensified agitation for Indian independence."
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["A", "A.1", "A.1.a", "A.1.b", "B", "C"],
+      "rationaleAI": "British imperial governance, decolonization driven by nationalist movements and two world wars, and shifting global power dynamics form the overarching framework for the emergence of independent nations across South and Southeast Asia detailed throughout this section."
+    },
+    {
+      "episodeTitle": "The East India Company",
+      "pid": "p0054906",
+      "relevantPathsAI": ["A", "A.1", "A.1.a"],
+      "rationaleAI": "The East India Company's 258-year transformation from trading enterprise to governing authority over the Indian subcontinent—commanding a private army, collecting taxes, and reshaping South Asian political geography—created the colonial structures against which India's independence movement (A.1.a) and demands for partition (A.1.b) were directed."
+    },
+    {
+      "episodeTitle": "The Mughal Empire",
+      "pid": "p004y27h",
+      "relevantPathsAI": ["A", "A.1.b"],
+      "rationaleAI": "The Mughal Empire's Indo-Islamic cultural synthesis and administrative legacy shaped both British colonial governance of the subcontinent and the communal Hindu-Muslim tensions that fueled the Muslim League's demand for a separate Pakistan (A.1.b), culminating in partition in 1947."
     },
     {
       "episodeTitle": "The Sino-Japanese War",
       "pid": "b042ldyq",
-      "relevantPathsAI": [
-        "B.4.a"
-      ],
-      "rationaleAI": "The Sino-Japanese War's coverage of the Burma Road supply line and Japanese occupation of Southeast Asia relates to B.4 on Indochina's involvement and Japanese occupation during WWII."
+      "relevantPathsAI": ["B.1.a", "B.2.a", "B.3.a", "B.4.a", "C.1.a.i", "C.2.a"],
+      "rationaleAI": "Japan's full-scale war with China from 1937 to 1945 led directly to Japanese military occupation across Southeast Asia—Burma (B.1.a), Malaya (B.2.a), Thailand (B.3.a), Indochina (B.4.a), Indonesia (C.1.a.i), and the Philippines (C.2.a)—destabilizing European colonial authority and accelerating postwar independence movements throughout the region."
     },
     {
-      "episodeTitle": "Lawrence of Arabia",
-      "pid": "m000c0b0",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "Lawrence of Arabia covers the Arab Revolt during WWI and British imperial strategy, but the episode focuses on the Middle East, not South and Southeast Asia. Reject."
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": ["C.1", "C.1.a"],
+      "rationaleAI": "The VOC's centuries of military force and territorial control in the Indonesian archipelago established the Dutch colonial infrastructure and legacy of exploitation against which Indonesian nationalist and communist revolts of the 1920s-1930s (C.1.a.i) and Sukarno's independence proclamation (C.1.a.ii) were mounted."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

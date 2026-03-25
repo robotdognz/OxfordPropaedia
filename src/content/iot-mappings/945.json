@@ -4,38 +4,28 @@
     {
       "episodeTitle": "The Zulu Nation's Rise and Fall",
       "pid": "b00rykqd",
-      "relevantPathsAI": [
-        "C.4",
-        "C.7"
-      ],
-      "rationaleAI": "The Zulu Nation's formation under Shaka (c. 1816), the mfecane, the Anglo-Zulu War of 1879 (Isandlwana, Ulundi), and the kingdom's destruction under British colonialism directly correspond to C.4 (rise of the Zulu Empire under Shaka) and C.7 (Transvaal-Pedi and Zulu wars)."
+      "relevantPathsAI": ["C.4", "C.6", "C.6.b", "C.7"],
+      "rationaleAI": "Shaka's transformation of the Zulu into a formidable empire directly addresses C.4 (rise of the Zulu Empire under Shaka and 19th-century African migrations), while confrontations with Afrikaner settlers and the British, the Battle of Isandhlwana, and the kingdom's absorption into Natal cover C.6 (Cape eastern frontier conflicts), C.6.b (British colony of Natal), and C.7 (Zulu wars)."
     },
     {
       "episodeTitle": "The Berlin Conference",
       "pid": "b03ffkfd",
-      "relevantPathsAI": [
-        "C.7"
-      ],
-      "rationaleAI": "The Berlin Conference (1884-85) and the Scramble for Africa provide the broader context for C.7 (era of mineral discoveries and confederation) at the section's terminal date of c. 1885."
+      "relevantPathsAI": ["A", "C.7"],
+      "rationaleAI": "The 1884-1885 Berlin Conference established rules for European colonial claims that directly shaped the partition of southern Africa at the terminal date of this section, accelerating the imposition of arbitrary borders and colonial frameworks across the region during the era of mineral discoveries and confederation (C.7)."
     },
     {
       "episodeTitle": "The Dutch East India Company",
       "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "C.3"
-      ],
-      "rationaleAI": "The Dutch East India Company's trading posts from the Cape onward are directly relevant to C.3 on the Dutch settlement at the Cape of Good Hope from 1652 and expansion toward the Orange River."
+      "relevantPathsAI": ["C.3"],
+      "rationaleAI": "The VOC established the Dutch settlement at the Cape of Good Hope in 1652 (C.3), which became the foundation of European colonization in southern Africa; the company's displacement of Portuguese trading posts and its broader commercial and territorial ambitions provide essential context for the Cape Colony's origins."
     },
     {
-      "episodeTitle": "The East India Company",
-      "pid": "p0054906",
-      "relevantPathsAI": [
-        "C.6",
-        "C.6.b"
-      ],
-      "rationaleAI": "The East India Company's role as an instrument of British imperial expansion provides context for C.6 on British colonial settlements and the Cape eastern frontier, including the British colonies of Natal and Cape Colony."
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["C.6", "C.6.b", "C.7"],
+      "rationaleAI": "British imperial expansion encompassing military conquest, settler colonialism, and colonial governance structures directly shaped southern Africa through the establishment of Cape Colony and Natal (C.6.b), conflicts with Boers and Xhosa on the Cape frontier (C.6), and the era of mineral discoveries that drew intensified British imperial interest (C.7)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

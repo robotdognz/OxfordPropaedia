@@ -2,100 +2,48 @@
   "sectionCode": "96/10",
   "mappings": [
     {
-      "episodeTitle": "The Boxer Rebellion",
-      "pid": "b00j4hmv",
-      "relevantPathsAI": [
-        "A.1.c",
-        "A.2.c"
-      ],
-      "rationaleAI": "The Boxer Rebellion (1899-1901), anti-Christian and anti-foreign sentiment, the siege of the Legation Quarter, international military response, and Empress Dowager Cixi's role directly correspond to A.2.c (Boxer Rebellion as expression of anti-foreign feelings and Western seizure of Peking)."
-    },
-    {
-      "episodeTitle": "Empress Dowager Cixi",
-      "pid": "m001zdw0",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.c",
-        "A.2.d"
-      ],
-      "rationaleAI": "Empress Dowager Cixi's management of the Tongzhi and Guangxu reigns, the Self-Strengthening Movement, the Hundred Days' Reform and its suppression, and her role in the Boxer Rebellion correspond to A.2.a (self-strengthening movement) and A.2.c-d (conservative reaction and reform movements)."
-    },
-    {
       "episodeTitle": "The Opium Wars",
       "pid": "b00776k9",
-      "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
-        "A.1.a.i",
-        "A.1.a.ii"
-      ],
-      "rationaleAI": "The Opium Wars (1839-1842, 1856-1860), the Treaty of Nanking, and the unequal treaty system directly correspond to A.1.a on the Western challenge (1839-60) and the problems created by the opium trade."
+      "relevantPathsAI": ["A.1.a", "A.1.a.i", "A.1.a.ii"],
+      "rationaleAI": "Directly addresses China's opium trade crisis, Commissioner Lin Zexu's confiscation provoking British military response, the Treaty of Nanking opening treaty ports and ceding Hong Kong (A.1.a, A.1.a.i), and the Second Opium War extending Western commercial privileges, which fueled anti-foreign sentiment concentrated at Canton (A.1.a.ii)."
     },
     {
       "episodeTitle": "The Taiping Rebellion",
       "pid": "b00yqvqt",
-      "relevantPathsAI": [
-        "A.1.b"
-      ],
-      "rationaleAI": "The Taiping Rebellion (1850-1864), Hong Xiuquan's Christianised ideology, the Taiping Heavenly Kingdom's radical programme, and the Qing suppression directly correspond to A.1.b on popular uprisings of the Taiping and the effects of the rebellions."
+      "relevantPathsAI": ["A.1.b"],
+      "rationaleAI": "Hong Xiuquan's Taiping Heavenly Kingdom (1850-1864) is the central popular uprising covered under A.1.b, exposing Qing administrative weakness, empowering regional military commanders, and causing an estimated twenty million deaths that reshaped China's political trajectory."
     },
     {
-      "episodeTitle": "The Korean Empire",
-      "pid": "m002bj6d",
-      "relevantPathsAI": [
-        "A.2.b"
-      ],
-      "rationaleAI": "The Korean Empire (1897-1910) and the Sino-Japanese and Russo-Japanese Wars' impact on Korean sovereignty correspond to A.2.b (Korea and the Sino-Japanese War, 1894-95) and the broader context of foreign encroachments."
+      "episodeTitle": "The Boxer Rebellion",
+      "pid": "b00j4hmv",
+      "relevantPathsAI": ["A.2.c", "A.2.d"],
+      "rationaleAI": "The 1900 Boxer uprising and siege of foreign legations in Peking directly corresponds to A.2.c (anti-foreign feelings, Western seizure of Peking, further Ch'ing concessions). The rebellion's role in catalyzing political reform movements leading to the 1911 revolution connects to A.2.d."
+    },
+    {
+      "episodeTitle": "Empress Dowager Cixi",
+      "pid": "m001zdw0",
+      "relevantPathsAI": ["A.2", "A.2.a", "A.2.c", "A.2.d"],
+      "rationaleAI": "Cixi dominated the Chinese court for nearly fifty years as regent ruling through child emperors, embodying the tension between westernization and tradition (A.2). Her contested relationship with modernizing reforms (A.2.a), role during the Boxer crisis (A.2.c), and debates over whether she obstructed or advanced late Qing reform (A.2.d) make her central to the entire self-strengthening and reform narrative."
     },
     {
       "episodeTitle": "Japan's Sakoku Period",
       "pid": "b01rlptf",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "Japan's Sakoku period and its ending by Commodore Perry provide the essential precursor to B.1.a on the fall of the Tokugawa and the Meiji Restoration."
+      "relevantPathsAI": ["B.1.a"],
+      "rationaleAI": "Covers the Tokugawa isolation policies and Commodore Perry's 1853-54 forced reopening of Japan, which are the immediate preconditions for the fall of the Tokugawa shogunate and the Meiji Restoration described in B.1.a."
     },
     {
       "episodeTitle": "The Russo-Japanese War",
       "pid": "m000tnq3",
-      "relevantPathsAI": [
-        "B.1.c"
-      ],
-      "rationaleAI": "The Russo-Japanese War (1904-1905), Japan's victory as an Asian power defeating a European one, and the Treaty of Portsmouth correspond to Japan's emergence as a world power under B.1 and its growing military and political significance."
+      "relevantPathsAI": ["B", "B.1.b"],
+      "rationaleAI": "Japan's 1904-05 victory over Russia demonstrated that rapid Meiji-era modernization (B.1.b) could produce a military power capable of defeating a European empire, confirming Japan's emergence as a world power (B) and shocking Western assumptions about Asian capability."
     },
     {
-      "episodeTitle": "The Sino-Japanese War",
-      "pid": "b042ldyq",
-      "relevantPathsAI": [
-        "A.2.b"
-      ],
-      "rationaleAI": "While the Second Sino-Japanese War (1937-1945) is chronologically later, it connects to the broader Sino-Japanese tensions beginning with the 1894-95 war (A.2.b). However, this is largely outside the section's timeframe."
-    },
-    {
-      "episodeTitle": "The Samurai",
-      "pid": "b00pcm9f",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "The samurai class's abolition during the Meiji Restoration directly corresponds to B.1.a on the fall of the Tokugawa, samurai opposition, and government countermeasures during the early Meiji period."
-    },
-    {
-      "episodeTitle": "The May Fourth Movement",
-      "pid": "m001282c",
-      "relevantPathsAI": [
-        "A.2.d"
-      ],
-      "rationaleAI": "The May Fourth Movement (1919) is chronologically just beyond this section but its roots in anti-imperialist sentiment and the New Culture Movement challenging Confucianism directly follow from A.2.d on reformist and revolutionary movements at the end of the dynasty."
-    },
-    {
-      "episodeTitle": "The Shimabara Rebellion",
-      "pid": "m001lrd7",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "The Shimabara Rebellion's consequences (sakoku policy) provide essential historical context for understanding B.1.a on the fall of the Tokugawa and the end of Japanese isolation."
+      "episodeTitle": "The Korean Empire",
+      "pid": "m002bj6d",
+      "relevantPathsAI": ["A.2.b", "B"],
+      "rationaleAI": "Korea's brief assertion of sovereignty (1897-1910) and its annexation by Japan in 1910 illustrate the geopolitical consequences of the Sino-Japanese War and foreign encroachments in East Asia (A.2.b explicitly mentions Korea), while Korea's fate under Japanese imperialism reflects Japan's emergence as a world power (B)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

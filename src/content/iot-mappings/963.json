@@ -4,166 +4,160 @@
     {
       "episodeTitle": "Garibaldi and the Risorgimento",
       "pid": "b083qx9j",
-      "relevantPathsAI": [
-        "B.2.a.i",
-        "B.2.a.ii",
-        "A.2.m.iii",
-        "A.2.m.iv",
-        "B.3.f.i"
-      ],
-      "rationaleAI": "Garibaldi and the Risorgimento cover Italian unification including the Expedition of the Thousand, Cavour's diplomacy, and the creation of the Kingdom of Italy, directly matching B.2.a.i-ii on Italian unification and B.3.f.i on Cavour and unification under Victor Emmanuel."
+      "relevantPathsAI": ["A.2.m.iii", "B.2.a.ii", "B.3.f.i"],
+      "rationaleAI": "Garibaldi's military campaigns, Mazzini's Young Italy, Cavour's diplomacy, and Victor Emmanuel's role in Italian unification map directly to the Risorgimento outline entries (A.2.m.iii), the Italian War of Independence against Austria (B.2.a.ii), and the completion of unification through the conquest of the south and acquisition of Rome (B.3.f.i)."
     },
     {
-      "episodeTitle": "Bismarck",
-      "pid": "b00775pm",
-      "relevantPathsAI": [
-        "B.2.a.iii",
-        "B.2.b.i",
-        "B.3.c.i",
-        "B.3.c.ii",
-        "B.3.c.iii"
-      ],
-      "rationaleAI": "Bismarck's wars against Denmark, Austria, and France, the proclamation of the German Empire, the Kulturkampf, and anti-socialist laws directly match B.2.a.iii on Bismarck's creation of the German Empire and B.3.c on Prussian and German developments from 1850-1920."
-    },
-    {
-      "episodeTitle": "The Siege of Paris 1870-71",
-      "pid": "m000d8rv",
-      "relevantPathsAI": [
-        "B.3.b.ii"
-      ],
-      "rationaleAI": "The Siege of Paris (1870-71) and the Paris Commune cover France's defeat by Germany, the Commune's revolutionary social programme, and its suppression during Bloody Week, directly matching B.3.b.ii on the siege of Paris, the Commune, and the establishment of the Third Republic."
-    },
-    {
-      "episodeTitle": "1848: Year of Revolution",
-      "pid": "b019gy9p",
-      "relevantPathsAI": [
-        "A.2.h.ii",
-        "A.2.k.ii",
-        "A.2.l.iii",
-        "A.2.m.iii",
-        "A.2.m.iv"
-      ],
-      "rationaleAI": "The revolutions of 1848 swept across France, the German states, the Austrian Empire, and the Italian peninsula, directly matching A.2.h.ii on general European unrest and revolutions of 1848."
-    },
-    {
-      "episodeTitle": "The Congress of Vienna",
-      "pid": "b098bt3h",
-      "relevantPathsAI": [
-        "A.1.c.v",
-        "A.1.d",
-        "A.1.g"
-      ],
-      "rationaleAI": "The Congress of Vienna (1814-1815) covers Metternich, Castlereagh, Talleyrand, the principles of legitimacy and balance of power, and the Concert of Europe, directly matching A.1.c.v and A.2.h.i on the Congress system."
-    },
-    {
-      "episodeTitle": "Napoleon's Hundred Days",
-      "pid": "m001y8fp",
-      "relevantPathsAI": [
-        "A.1.c.v"
-      ],
-      "rationaleAI": "Napoleon's Hundred Days covers his return from Elba, the Waterloo campaign, and Napoleon's final defeat, directly matching A.1.c.v on the Hundred Days and Napoleon's final defeat at Waterloo."
-    },
-    {
-      "episodeTitle": "Consequences of the Industrial Revolution",
-      "pid": "b00wr9r7",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.a.iii"
-      ],
-      "rationaleAI": "The social consequences of the Industrial Revolution including urbanization, child labour, trade unions, Chartism, and Marxism directly match A.2.a on the Industrial Revolution and A.2.a.iii on social consequences."
-    },
-    {
-      "episodeTitle": "The Corn Laws",
-      "pid": "b03dvbyk",
-      "relevantPathsAI": [
-        "A.2.i.ii"
-      ],
-      "rationaleAI": "The Corn Laws and their repeal in 1846 under Peel directly match A.2.i.ii on political and social reform measures including repeal of the Corn Laws."
-    },
-    {
-      "episodeTitle": "The Irish Rebellion of 1798",
-      "pid": "m001fwb9",
-      "relevantPathsAI": [
-        "A.1.e.ii"
-      ],
-      "rationaleAI": "The Irish Rebellion of 1798 and the resulting Act of Union 1801 directly match A.1.e.ii on suppression of the Irish Rebellion and union of Great Britain and Ireland."
+      "episodeTitle": "Lenin",
+      "pid": "p00546pv",
+      "relevantPathsAI": ["B.3.e.iv", "B.2.d.iii"],
+      "rationaleAI": "Lenin's role in the 1917 Russian Revolution and establishment of Bolshevik governance directly addresses the abolition of the monarchy in Russia (B.3.e.iv), while the Treaty of Brest-Litovsk and Russia's military collapse connect to the WWI narrative of the Eastern Front and the armistice (B.2.d.iii)."
     },
     {
       "episodeTitle": "The Battle of Trafalgar",
       "pid": "m0012141",
-      "relevantPathsAI": [
-        "A.1.c.iii"
-      ],
-      "rationaleAI": "The Battle of Trafalgar (1805) was the decisive naval victory establishing British naval supremacy, directly matching A.1.c.iii on the battles of Trafalgar and Austerlitz."
+      "relevantPathsAI": ["A.1.c.iii"],
+      "rationaleAI": "Nelson's 1805 naval victory destroying the Franco-Spanish fleet and establishing British naval supremacy maps directly to the Third Coalition battles including Trafalgar and Austerlitz (A.1.c.iii), and the failure of Napoleon's Continental System."
+    },
+    {
+      "episodeTitle": "The Franco-American Alliance 1778",
+      "pid": "m000v99n",
+      "relevantPathsAI": ["A.1.a"],
+      "rationaleAI": "The enormous financial cost of French intervention in the American Revolution burdened the French treasury and contributed to the fiscal crisis precipitating the 1789 French Revolution, directly connecting to the climate of revolutionary change preceding 1789 (A.1.a)."
+    },
+    {
+      "episodeTitle": "The Corn Laws",
+      "pid": "b03dvbyk",
+      "relevantPathsAI": ["A.2.i.i", "A.2.i.ii"],
+      "rationaleAI": "The 1815 Corn Laws, the Anti-Corn Law League led by Cobden and Bright, and repeal in 1846 under Peel splitting the Conservative Party map directly to post-Napoleonic economic depression and social unrest (A.2.i.i) and the era of political and social reform including repeal of the Corn Laws (A.2.i.ii)."
+    },
+    {
+      "episodeTitle": "1848: Year of Revolution",
+      "pid": "b019gy9p",
+      "relevantPathsAI": ["A.2.h.ii", "A.2.j.iii", "A.2.k.ii", "A.2.l.iii", "A.2.m.iv"],
+      "rationaleAI": "Pan-European revolutionary upheavals of 1848 in France, Germany, Austria, Hungary, and Italy map directly to the revolutions of 1848 and their suppression (A.2.h.ii), the French Second Republic (A.2.j.iii), the Frankfurt National Assembly (A.2.k.ii), revolutionary uprisings in Vienna, Prague, and Budapest (A.2.l.iii), and the first phase of the Italian War of Independence (A.2.m.iv)."
+    },
+    {
+      "episodeTitle": "Consequences of the Industrial Revolution",
+      "pid": "b00wr9r7",
+      "relevantPathsAI": ["A.2.a.iii"],
+      "rationaleAI": "The social and intellectual consequences of British industrialization -- changes in lifestyles, health, housing, labour relations, and the theories developed to address urban living and mass production -- directly address the social consequences of the Industrial Revolution (A.2.a.iii)."
     },
     {
       "episodeTitle": "Rosa Luxemburg",
       "pid": "b08lfc77",
-      "relevantPathsAI": [
-        "B.3.c.iv",
-        "B.3.e.ii"
-      ],
-      "rationaleAI": "Rosa Luxemburg's role in the German Social Democratic Party, Spartacist League, opposition to WWI, and murder during the 1919 German revolution directly match B.3.c.iv-v on Social Democrats and the establishment of the German Republic."
+      "relevantPathsAI": ["B.3.c.iv", "B.3.c.v"],
+      "rationaleAI": "Luxemburg's anti-war activism, co-founding of the Spartacus League and German Communist Party, and murder during the 1919 Spartacist uprising connect to Social Democrats and militarists in pre-WWI Germany (B.3.c.iv) and the establishment of the German Republic in 1919 (B.3.c.v)."
     },
     {
-      "episodeTitle": "The Russo-Japanese War",
-      "pid": "m000tnq3",
-      "relevantPathsAI": [
-        "B.2.b.ii",
-        "B.3.e.iv"
-      ],
-      "rationaleAI": "The Russo-Japanese War (1904-05) and its contribution to the 1905 Revolution in Russia directly match B.2.b.ii on Franco-Russian alliance and Russia's defeat in the Far East, and B.3.e.iv on disorders following the Russo-Japanese War."
+      "episodeTitle": "The Congress of Vienna",
+      "pid": "b098bt3h",
+      "relevantPathsAI": ["A.1.c.v", "A.2.h"],
+      "rationaleAI": "The 1814-1815 Congress redrawing the European map under Metternich, Castlereagh, and Talleyrand maps directly to the Congress of Vienna and Metternich's attempt to restore the old order (A.1.c.v), and the subsequent Congress system for maintaining the Vienna settlement (A.2.h)."
+    },
+    {
+      "episodeTitle": "The Siege of Paris 1870-71",
+      "pid": "m000d8rv",
+      "relevantPathsAI": ["B.3.b.i", "B.3.b.ii"],
+      "rationaleAI": "The Prussian siege of Paris after Napoleon III's defeat at Sedan, the establishment and bloody suppression of the Paris Commune, and the founding of the Third Republic map directly to Napoleon III's defeat by Germany (B.3.b.i) and the siege, the Commune, and establishment of the Third Republic (B.3.b.ii)."
+    },
+    {
+      "episodeTitle": "The Emancipation of the Serfs",
+      "pid": "b0b2gspd",
+      "relevantPathsAI": ["B.3.e.i"],
+      "rationaleAI": "Alexander II's 1861 abolition of serfdom following defeat in the Crimean War maps directly to the Crimean War defeat, emancipation of serfs, and local government reforms under Alexander II (B.3.e.i)."
+    },
+    {
+      "episodeTitle": "Bismarck",
+      "pid": "b00775pm",
+      "relevantPathsAI": ["B.2.a.iii", "B.3.c.i", "B.3.c.ii", "B.3.c.iii"],
+      "rationaleAI": "Bismarck's wars against Denmark, Austria, and France creating the German Empire (B.2.a.iii), his clashes with liberals and army reform (B.3.c.i), the Schleswig-Holstein question and exclusion of Austria (B.3.c.ii), and his chancellorship including Kulturkampf, anti-Socialist measures, and the Triple Alliance (B.3.c.iii) are all directly covered."
+    },
+    {
+      "episodeTitle": "Paul von Hindenburg",
+      "pid": "m002cfjz",
+      "relevantPathsAI": ["B.2.d.i", "B.2.d.v"],
+      "rationaleAI": "Hindenburg's hero status from the 1914 Battle of Tannenberg on the Eastern Front and promotion of the stab-in-the-back myth after Germany's defeat connect directly to WWI opening campaigns (B.2.d.i) and the leadership and strategic goals of the belligerents (B.2.d.v)."
+    },
+    {
+      "episodeTitle": "The Battle of Valmy",
+      "pid": "m0026vs5",
+      "relevantPathsAI": ["A.1.b.i", "A.1.c.i"],
+      "rationaleAI": "The 1792 battle where revolutionary citizen volunteers defeated Prussian-Austrian forces, followed by the abolition of the monarchy and declaration of the First Republic, maps directly to the uprising of the Third Estate and abolition of the monarchy (A.1.b.i) and the War of the First Coalition (A.1.c.i)."
     },
     {
       "episodeTitle": "The Berlin Conference",
       "pid": "b03ffkfd",
-      "relevantPathsAI": [
-        "B.2.c.ii"
-      ],
-      "rationaleAI": "The Berlin Conference of 1884-85 regulated European colonization in Africa and created the Congo Free State, directly matching B.2.c.ii on the scramble for Africa and European penetration."
+      "relevantPathsAI": ["B.2.c.i", "B.2.c.ii"],
+      "rationaleAI": "Bismarck's 1884-1885 conference establishing rules for claiming African territory and accelerating the partition of Africa maps directly to renewed European interest in overseas expansion (B.2.c.i) and the scramble for Africa (B.2.c.ii)."
     },
     {
-      "episodeTitle": "The Economic Consequences of the Peace",
-      "pid": "m001qtpf",
-      "relevantPathsAI": [
-        "B.2.d.vi"
-      ],
-      "rationaleAI": "Keynes's Economic Consequences of the Peace critiques the Treaty of Versailles reparations, directly matching B.2.d.vi on the Paris Peace Conference, German reparations, and the peace treaty."
+      "episodeTitle": "The Great Exhibition of 1851",
+      "pid": "p003c19x",
+      "relevantPathsAI": ["B.3.a.i"],
+      "rationaleAI": "The 1851 Great Exhibition in the Crystal Palace, showcasing British industrial supremacy and free trade ideology under Prince Albert's vision, maps directly to mid-Victorian politics and economics including the Great Exhibition (B.3.a.i)."
+    },
+    {
+      "episodeTitle": "The Haitian Revolution",
+      "pid": "b04lsqgs",
+      "relevantPathsAI": ["A.1.c.i"],
+      "rationaleAI": "The 1791-1804 Haitian Revolution was triggered directly by French Revolutionary ideals of liberty colliding with plantation slavery, involving French republicans and British/Spanish military interventions, connecting to France's support for revolution in neighbouring lands and the international dimensions of the Revolutionary Wars (A.1.c.i)."
+    },
+    {
+      "episodeTitle": "The Mokrani Revolt",
+      "pid": "m001wymz",
+      "relevantPathsAI": ["B.2.c.i"],
+      "rationaleAI": "The 1871 Algerian insurrection triggered partly by France's Franco-Prussian War defeat exemplifies European colonial expansion and its consequences in Africa (B.2.c.i), with French military suppression followed by accelerated settler colonization."
     },
     {
       "episodeTitle": "Annie Besant",
       "pid": "b01jxtd7",
-      "relevantPathsAI": [
-        "B.3.a.iii"
-      ],
-      "rationaleAI": "Annie Besant's Fabian socialism, the matchgirls' strike, and trade unionism connect to B.3.a.iii on Gladstone's liberalism, Fabian socialism, and growth of the Labour movement."
+      "relevantPathsAI": ["B.3.a.iii"],
+      "rationaleAI": "Besant's championing of workers' rights, the 1888 match factory strike, Irish Home Rule, and Fabian socialism connect directly to the growth of the Labour movement, Fabian socialism, and the Irish Home Rule struggle in late Victorian Britain (B.3.a.iii)."
     },
     {
-      "episodeTitle": "Chartism",
-      "pid": "m001hx7n",
-      "relevantPathsAI": [
-        "A.2.i.ii"
-      ],
-      "rationaleAI": "Chartism's People's Charter and campaign for democratic reform directly match A.2.i.ii on the Chartist movement."
+      "episodeTitle": "Goethe",
+      "pid": "p003c1c8",
+      "relevantPathsAI": ["A.2.c", "A.2.e"],
+      "rationaleAI": "Goethe's literary career spanning Sturm und Drang, Weimar Classicism, and early Romanticism, his partnership with Schiller, and his support for Napoleon map directly to the Romantic movement (A.2.c) and German Idealism and philosophy including Kant's disciples (A.2.e), as a towering figure bridging these intellectual currents."
     },
     {
-      "episodeTitle": "The Boxer Rebellion",
-      "pid": "b00j4hmv",
-      "relevantPathsAI": [
-        "B.2.c.ii"
-      ],
-      "rationaleAI": "The Boxer Rebellion (1899-1901) and the international military response relate to B.2.c.ii on European penetration of Asia and economic penetration of China."
+      "episodeTitle": "The Dreyfus Affair",
+      "pid": "b00n1l95",
+      "relevantPathsAI": ["B.3.b.ii"],
+      "rationaleAI": "The Dreyfus Affair exposing antisemitism and political divisions in the Third Republic, Zola's J'Accuse, and the resulting 1905 separation of church and state map directly to the Republican Republic, the Dreyfus affair, and separation of church and state (B.3.b.ii)."
     },
     {
-      "episodeTitle": "David Ricardo",
-      "pid": "m000tfjk",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.i.ii"
-      ],
-      "rationaleAI": "David Ricardo's theory of comparative advantage and role in the Corn Laws debate shaped 19th-century British trade policy, relevant to the Industrial Revolution context and British political reform."
+      "episodeTitle": "The Economic Consequences of the Peace",
+      "pid": "m001qtpf",
+      "relevantPathsAI": ["B.2.d.vi"],
+      "rationaleAI": "Keynes's critique of the Versailles Treaty's punitive reparations, written after his resignation from the British delegation at the Paris Peace Conference, maps directly to the peace treaty, Wilson's influence, German reparations and restrictions, and reorganization of Europe (B.2.d.vi)."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["B.2.c", "B.3.a"],
+      "rationaleAI": "The British Empire's expansion from 1877 to its peak in 1919, covering political, economic, and ideological motivations for imperial expansion, maps to the resurgence of European imperialism (B.2.c) and British overseas expansion under Disraeli and subsequent governments (B.3.a)."
+    },
+    {
+      "episodeTitle": "The Zulu Nation's Rise and Fall",
+      "pid": "b00rykqd",
+      "relevantPathsAI": ["B.2.c.ii"],
+      "rationaleAI": "The 1879 Battle of Isandhlwana and British conquest of the Zulu kingdom into the colony of Natal exemplify the European penetration and partitioning of Africa during the scramble for colonial territories (B.2.c.ii)."
+    },
+    {
+      "episodeTitle": "Lawrence of Arabia",
+      "pid": "m000c0b0",
+      "relevantPathsAI": ["B.2.d.ii", "B.2.d.vi"],
+      "rationaleAI": "Lawrence's role in the WWI Arab Revolt against Ottoman rule connects to campaigns in the Middle East (B.2.d.ii), while his disillusionment with the postwar settlement and British betrayal of Arab self-determination connects to the Paris Peace Conference's reorganization of the Middle East (B.2.d.vi)."
+    },
+    {
+      "episodeTitle": "Sovereignty",
+      "pid": "b07hhvxx",
+      "relevantPathsAI": ["A.1.b", "A.2.b"],
+      "rationaleAI": "The concept of sovereignty as practically tested and redefined by the French Revolution -- transferring sovereign authority from monarchs to the people -- connects directly to the revolutionary transformation of French government (A.1.b) and the legacy of the French Revolution including cultural nationalism and populism (A.2.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

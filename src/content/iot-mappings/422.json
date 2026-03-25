@@ -2,119 +2,54 @@
   "sectionCode": "422",
   "mappings": [
     {
-      "episodeTitle": "Ageing",
-      "pid": "p00545c0",
-      "relevantPathsAI": [
-        "A.6",
-        "A.7"
-      ],
-      "rationaleAI": "Ageing covers biological mechanisms of senescence, telomere shortening, evolutionary theories of aging, life extension questions, and age-related diseases -- directly relevant to aging and dying/death stages of the human life cycle."
-    },
-    {
-      "episodeTitle": "Immunisation",
-      "pid": "p003c19q",
-      "relevantPathsAI": [
-        "C.2",
-        "C.2.d"
-      ],
-      "rationaleAI": "Immunisation covers the immune system's mechanisms, active and passive immunisation, and vaccine development -- directly relevant to the immune response as a defense against disease."
+      "episodeTitle": "Hormones",
+      "pid": "m001w0z9",
+      "relevantPathsAI": ["A.5", "A.6", "B", "C.1", "C.5"],
+      "rationaleAI": "Hormones regulate homeostasis (C.1), the stress alarm reaction via adrenalin and cortisol (C.5), and reproductive processes (A.5). Their role in metabolism, growth, and mood connects to aging (A.6), and hormonal balance is a key criterion for defining normal health (B)."
     },
     {
       "episodeTitle": "Circadian Rhythms",
       "pid": "b06rzd44",
-      "relevantPathsAI": [
-        "D.3",
-        "D.3.a",
-        "D.3.b"
-      ],
-      "rationaleAI": "Circadian rhythms govern sleep-wake patterns, with coverage of the suprachiasmatic nucleus as the master clock, REM/NREM cycles, and disruptions like jet lag -- directly relevant to the state of sleep and psychophysiological variations in sleep."
-    },
-    {
-      "episodeTitle": "Free Radicals",
-      "pid": "m0000xqd",
-      "relevantPathsAI": [
-        "C.1",
-        "A.6"
-      ],
-      "rationaleAI": "Free radicals covers cellular damage, the free radical theory of aging, antioxidant defense mechanisms, and the role of oxidative stress in disease -- relevant to both maintenance of internal environment under stress and aging."
-    },
-    {
-      "episodeTitle": "Hormones",
-      "pid": "m001w0z9",
-      "relevantPathsAI": [
-        "A.5",
-        "C.1",
-        "C.5"
-      ],
-      "rationaleAI": "Hormones regulate homeostasis (C.1) and the stress alarm reaction via adrenalin and cortisol (C.5), and govern reproductive processes (A.5). Their role in maintaining metabolic balance and responding to physiological stress is central to human health."
-    },
-    {
-      "episodeTitle": "Mitochondria",
-      "pid": "m001md34",
-      "relevantPathsAI": [
-        "A.6",
-        "C.1"
-      ],
-      "rationaleAI": "Mitochondria are the primary sites of cellular energy production essential for maintaining the internal environment (C.1), and mitochondrial dysfunction is directly linked to neurodegenerative diseases and aging (A.6)."
-    },
-    {
-      "episodeTitle": "Louis Pasteur",
-      "pid": "b08q317p",
-      "relevantPathsAI": [
-        "C.2.c",
-        "C.2.d"
-      ],
-      "rationaleAI": "Pasteur's germ theory and vaccine development are foundational to understanding bodily defenses against disease including inflammation and the immune response."
-    },
-    {
-      "episodeTitle": "Man and Disease",
-      "pid": "p00548m0",
-      "relevantPathsAI": [
-        "B",
-        "C.2",
-        "C.2.d",
-        "C.4"
-      ],
-      "rationaleAI": "The evolution from humoral balance to germ theory reshaped definitions of health normality (B), while breakthroughs in vaccination and public health directly address defenses against disease (C.2), immune responses (C.2.d), and healing processes (C.4)."
+      "relevantPathsAI": ["D.3", "D.3.a", "D.3.b"],
+      "rationaleAI": "Circadian rhythms govern the internal body clock whose most prominent human manifestation is the sleep-wake cycle (D.3), encompassing how sleep is defined and generated (D.3.a) and the daily psychophysiological variations in physical, behavioural, and mental states (D.3.b)."
     },
     {
       "episodeTitle": "The Four Humours",
       "pid": "b008h5dz",
-      "relevantPathsAI": [
-        "B",
-        "C",
-        "D.1"
-      ],
-      "rationaleAI": "Humoral medicine defined health as balance among four bodily fluids, establishing foundational concepts of normality (B) and bodily maintenance mechanisms (C). Therapeutic practices of dietary regulation and seasonal timing relate to nutrition and health regimes (D.1)."
+      "relevantPathsAI": ["B", "D.1", "D.1.e"],
+      "rationaleAI": "Humoral medicine defined health as balance among four bodily fluids, establishing a foundational framework for normality in human health (B). Therapeutic regimens of dietary regulation, bloodletting, and purging timed to seasons connect directly to nutrition and therapeutic diets (D.1, D.1.e)."
     },
     {
-      "episodeTitle": "Pain",
-      "pid": "p00545m1",
-      "relevantPathsAI": [
-        "C",
-        "C.1"
-      ],
-      "rationaleAI": "Pain perception via neural signaling pathways is a bodily mechanism for detecting threats to health (C), and individual variation in pain thresholds relates to the maintenance of the internal environment and adaptation to stress (C.1)."
+      "episodeTitle": "Man and Disease",
+      "pid": "p00548m0",
+      "relevantPathsAI": ["B", "C.2", "C.2.d"],
+      "rationaleAI": "The transition from humoral definitions of health as bodily balance (B) to germ theory by Pasteur and Koch enabled vaccination and public health measures constituting modern defenses against disease (C.2), particularly the immune response (C.2.d)."
     },
     {
       "episodeTitle": "Penicillin",
       "pid": "b07dnnkm",
-      "relevantPathsAI": [
-        "C.2",
-        "C.2.d"
-      ],
-      "rationaleAI": "Penicillin as the first major antibiotic supports bodily defenses against disease (C.2), and the growing crisis of antimicrobial resistance poses a fundamental challenge to immune and therapeutic health maintenance (C.2.d)."
+      "relevantPathsAI": ["C.2", "C.2.d"],
+      "rationaleAI": "Penicillin as the first major antibiotic augmented bodily defenses against bacterial infection (C.2), and the episode's treatment of antimicrobial resistance highlights the evolutionary challenge to sustaining immune and pharmacological defenses (C.2.d)."
     },
     {
       "episodeTitle": "Microbiology",
       "pid": "b007753d",
-      "relevantPathsAI": [
-        "C.2",
-        "C.2.d"
-      ],
-      "rationaleAI": "Germ theory, antibiotics, vaccines, and sterilization are foundational to bodily defenses against disease (C.2) and the immune response (C.2.d). The human microbiome's role in health underscores microbiology's direct relevance to health maintenance."
+      "relevantPathsAI": ["C.2", "C.2.d"],
+      "rationaleAI": "Germ theory, antibiotics, vaccines, and sterilization are foundational to understanding and supporting bodily defenses against disease (C.2) and the immune response (C.2.d). Microbes outnumbering human cells in the body underscores microbiology's direct relevance to health maintenance."
+    },
+    {
+      "episodeTitle": "Mitochondria",
+      "pid": "m001md34",
+      "relevantPathsAI": ["A.6", "C.1"],
+      "rationaleAI": "Mitochondrial ATP production is central to maintaining the cellular internal environment and powering vital processes (C.1), and mitochondrial dysfunction is directly linked to aging and neurodegenerative disease (A.6)."
+    },
+    {
+      "episodeTitle": "Pain",
+      "pid": "p00545m1",
+      "relevantPathsAI": ["C", "C.5"],
+      "rationaleAI": "Pain perception via nociceptive neural pathways is a key bodily mechanism for detecting and responding to threats during stress (C), and individual variation in pain thresholds reflects the alarm-response system preparing the body for flight or resistance (C.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-24"
+  "_generatedAt": "2026-03-25"
 }

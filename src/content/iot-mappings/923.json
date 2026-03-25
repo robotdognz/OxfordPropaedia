@@ -4,217 +4,253 @@
     {
       "episodeTitle": "The 12th Century Renaissance",
       "pid": "b07z6vzq",
-      "relevantPathsAI": ["A.1.e", "A.1.e.i", "A.1.e.ii", "A.1.e.iii"],
+      "relevantPathsAI": [
+        "A.1.e",
+        "A.1.e.i",
+        "A.1.e.ii",
+        "A.1.e.iii"
+      ],
       "rationaleAI": "Directly addresses the intellectual and institutional transformation of twelfth-century Western Europe: the founding of universities at Bologna, Paris, and Oxford (A.1.e.i), the recovery of Aristotle and development of Scholasticism (A.1.e.ii), and the emergence of Gothic architecture (A.1.e.iii)."
-    },
-    {
-      "episodeTitle": "The Medieval University",
-      "pid": "b00zf384",
-      "relevantPathsAI": ["A.1.e.i", "A.1.e.ii"],
-      "rationaleAI": "Directly covers the foundation of medieval universities at Bologna, Paris, and Oxford, their organization into nations and faculties, the trivium and quadrivium curriculum, and scholastic method, mapping precisely to A.1.e.i (schools and universities) and A.1.e.ii (intellectual revival and Scholasticism)."
     },
     {
       "episodeTitle": "Greyfriars and Blackfriars",
       "pid": "p003k9dz",
-      "relevantPathsAI": ["A.1.d", "A.1.e.ii"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "A.1.e.ii"
+      ],
       "rationaleAI": "The Dominican and Franciscan mendicant orders are central to A.1.d's reform movements and the Inquisition, while Aquinas's and Bonaventure's synthesis of Aristotelian philosophy with Christian theology at Paris and Oxford directly covers Scholasticism (A.1.e.ii)."
-    },
-    {
-      "episodeTitle": "Catharism",
-      "pid": "p005488v",
-      "relevantPathsAI": ["A.1.d", "A.3.a.ii"],
-      "rationaleAI": "Catharism's dualist heresy in southern France and the Albigensian Crusade (1209-1229) launched by Innocent III directly correspond to A.1.d (struggle against heretics, Inquisition) and A.3.a.ii (the Albigensian Crusade under Louis VIII)."
-    },
-    {
-      "episodeTitle": "The Schism",
-      "pid": "p0054921",
-      "relevantPathsAI": ["A.1.d", "A.1.g.i"],
-      "rationaleAI": "The Great Schism of 1054 and the deepening separation through the Crusades provide context for A.1.d (church reform and papal hegemony) and A.1.g.i (relations between temporal and spiritual power)."
-    },
-    {
-      "episodeTitle": "Chivalry",
-      "pid": "b03tt7kn",
-      "relevantPathsAI": ["A.1.a", "B.2.a"],
-      "rationaleAI": "Medieval chivalry's code of conduct for knights, the Peace and Truce of God, courtly love literature, and tournament culture map to A.1.a (feudal nobility in the High Middle Ages) and B.2.a (exaggeration of chivalry and declining importance of feudal nobility)."
     },
     {
       "episodeTitle": "Eleanor of Aquitaine",
       "pid": "b06yfhqk",
-      "relevantPathsAI": ["A.1.a", "A.3.a", "A.5.b.i"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.3.a",
+        "A.5.b.i"
+      ],
       "rationaleAI": "Eleanor's marriages to Louis VII and Henry II link Capetian France (A.3.a) and early Plantagenet England (A.5.b.i), her vast Aquitaine inheritance set the stage for 250 years of Anglo-French territorial conflict, and her career illuminates the status of women in medieval society (A.1.a)."
     },
     {
       "episodeTitle": "The Divine Right of Kings",
       "pid": "b0080xph",
-      "relevantPathsAI": ["A.1.g.ii"],
+      "relevantPathsAI": [
+        "A.1.g.ii"
+      ],
       "rationaleAI": "Traces the political theology of divine right from medieval sacral kingship, directly relevant to A.1.g.ii on kingship as the ideal Christian form of government and its relationship to sacrality."
     },
     {
       "episodeTitle": "Marsilius of Padua",
       "pid": "m001znkd",
-      "relevantPathsAI": ["A.1.g.i", "B.1.c"],
+      "relevantPathsAI": [
+        "A.1.g.i",
+        "B.1.c"
+      ],
       "rationaleAI": "Marsilius's Defensor Pacis (1324) arguing for popular sovereignty over papal temporal claims engages the relations between temporal and spiritual power (A.1.g.i), and his political theory on the decline of papal supremacy and rising national monarchies is central to late medieval intellectual developments (B.1.c)."
     },
     {
       "episodeTitle": "The Concordat of Worms",
       "pid": "b0184v2j",
-      "relevantPathsAI": ["A.1.g.i", "A.2.a", "A.2.a.i"],
+      "relevantPathsAI": [
+        "A.1.g.i",
+        "A.2.a",
+        "A.2.a.i"
+      ],
       "rationaleAI": "The 1122 resolution of the Investiture Controversy is the defining event of A.2.a.i (the clash between papacy and emperors over lay investiture) and establishes the precedent for separating temporal and spiritual power central to A.1.g.i."
     },
     {
       "episodeTitle": "The Venetian Empire",
       "pid": "m0024fj3",
-      "relevantPathsAI": ["A.2.a.iii", "A.2.b.iv", "B.5.b.iii", "B.5.c.iv"],
+      "relevantPathsAI": [
+        "A.2.a.iii",
+        "A.2.b.iv",
+        "B.5.b.iii",
+        "B.5.c.iv"
+      ],
       "rationaleAI": "Venice's rise as a maritime power, its commercial expansion in the eastern Mediterranean, and its republican institutions map to Venetian maritime power in northern Italy (A.2.a.iii), expansion in the Levant including the Fourth Crusade (A.2.b.iv), and Venice's republican institutions and commercial empire in the late medieval period (B.5.b.iii, B.5.c.iv)."
     },
     {
       "episodeTitle": "The Hanseatic League",
       "pid": "m001vshs",
-      "relevantPathsAI": ["A.1.b", "A.2.b.i", "A.6.b", "B.4.a.ii"],
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.b.i",
+        "A.6.b",
+        "B.4.a.ii"
+      ],
       "rationaleAI": "The Hanseatic confederation dominating North European and Baltic trade corresponds to the revival of commercial activity and towns (A.1.b), the development of commercial centres like Lubeck (A.2.b.i), its influence on Scandinavian economic developments (A.6.b), and German urban economy in the 14th-15th centuries (B.4.a.ii)."
     },
     {
       "episodeTitle": "The Anarchy",
       "pid": "b01nl963",
-      "relevantPathsAI": ["A.5.a.iii"],
+      "relevantPathsAI": [
+        "A.5.a.iii"
+      ],
       "rationaleAI": "The civil war between Stephen and Matilda (1135-54) is the specific subject of A.5.a.iii, and the Treaty of Winchester establishing Henry II as successor directly founded the Plantagenet dynasty."
     },
     {
       "episodeTitle": "The Domesday Book",
       "pid": "b040llvb",
-      "relevantPathsAI": ["A.5.a", "A.5.a.i"],
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.a.i"
+      ],
       "rationaleAI": "The 1086 Domesday survey commissioned by William the Conqueror is explicitly named in A.5.a.i and serves as a primary source for understanding the introduction of feudalism and royal administration under the Norman Conquest (A.5.a)."
     },
     {
       "episodeTitle": "The Battle of Lincoln 1217",
       "pid": "b08njv60",
-      "relevantPathsAI": ["A.5.b.iii", "A.5.b.iv"],
+      "relevantPathsAI": [
+        "A.5.b.iii",
+        "A.5.b.iv"
+      ],
       "rationaleAI": "The 1217 battle during the First Barons' War follows directly from John's conflict with the barons and Magna Carta (A.5.b.iii), while William Marshal's consolidation of Henry III's rule and reissue of Magna Carta connects to the early reign of Henry III (A.5.b.iv)."
     },
     {
       "episodeTitle": "Third Crusade",
       "pid": "p00547ls",
-      "relevantPathsAI": ["A.5.b.ii", "A.2.b.i"],
+      "relevantPathsAI": [
+        "A.5.b.ii",
+        "A.2.b.i"
+      ],
       "rationaleAI": "Richard I's participation in the Third Crusade and administration during his absence are central to A.5.b.ii, while Frederick Barbarossa's drowning en route directly involves the Hohenstaufen emperor of A.2.b.i."
-    },
-    {
-      "episodeTitle": "The Second Barons' War",
-      "pid": "m000vqq3",
-      "relevantPathsAI": ["A.5.b.iv"],
-      "rationaleAI": "Simon de Montfort's rebellion against Henry III, the Provisions of Oxford, his experimental parliament including commoners, and his defeat at Evesham directly correspond to A.5.b.iv (Simon de Montfort and the Barons' War, growth of Parliament)."
     },
     {
       "episodeTitle": "The Davidian Revolution",
       "pid": "m0016xty",
-      "relevantPathsAI": ["A.5.c.i"],
+      "relevantPathsAI": [
+        "A.5.c.i"
+      ],
       "rationaleAI": "David I's introduction of feudal landholding, royal burghs, monasteries, and Anglo-Norman administrative structures constitutes the formative period of Scottish monarchy covered in A.5.c.i (unification of Scotland and development of the monarchy)."
     },
     {
       "episodeTitle": "Baltic Crusades",
       "pid": "b0832rmz",
-      "relevantPathsAI": ["A.7.a", "B.10.b"],
+      "relevantPathsAI": [
+        "A.7.a",
+        "B.10.b"
+      ],
       "rationaleAI": "The Teutonic Order's crusading campaigns in northeastern Europe and founding of a state in Prussia are directly relevant to the early role of the Teutonic Order in eastern Europe (A.7.a) and the broader context of Poland-Lithuania and the Teutonic Order (B.10.b)."
     },
     {
       "episodeTitle": "Bohemia",
       "pid": "p00548cz",
-      "relevantPathsAI": ["A.7.b", "B.4.b", "B.4.b.i", "B.4.b.ii", "B.4.b.iii"],
+      "relevantPathsAI": [
+        "A.7.b",
+        "B.4.b",
+        "B.4.b.i",
+        "B.4.b.ii",
+        "B.4.b.iii"
+      ],
       "rationaleAI": "The episode spans Bohemia's full medieval arc: the Premysl rulers (A.7.b), Prague under Charles IV as the Luxemburg dynasty's capital (B.4.b.i), Jan Hus's reform movement and execution at Constance (B.4.b.ii), and the subsequent Hussite Wars (B.4.b.iii)."
     },
     {
       "episodeTitle": "The Polish-Lithuanian Commonwealth",
       "pid": "m0010f8z",
-      "relevantPathsAI": ["B.10.b", "B.10.b.i"],
+      "relevantPathsAI": [
+        "B.10.b",
+        "B.10.b.i"
+      ],
       "rationaleAI": "The Commonwealth's medieval origins through dynastic ties between Poland and Lithuania in the fourteenth century, its elective monarchy, and its relationship to the Teutonic Order correspond to B.10.b on Poland-Lithuania and the broader eastern European political developments."
-    },
-    {
-      "episodeTitle": "The Renaissance",
-      "pid": "p00546tq",
-      "relevantPathsAI": ["B.1.a", "B.1.a.i", "B.1.a.ii"],
-      "rationaleAI": "Covers the early Renaissance in Italy, Humanism, artistic innovations in painting and sculpture, the role of city-states including Florence and Venice, and major figures from Petrarch to Michelangelo, directly relevant to B.1.a on the early Renaissance and its historiographic problems."
     },
     {
       "episodeTitle": "Paganism in the Renaissance",
       "pid": "p003k9ct",
-      "relevantPathsAI": ["B.1.a", "B.1.a.i", "B.1.a.ii"],
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.a.i",
+        "B.1.a.ii"
+      ],
       "rationaleAI": "The revival of Greco-Roman mythology in Renaissance art, from Botticelli's Primavera to papal patronage of pagan-themed art in the Vatican, covers the relationship between Humanism and Christianity (B.1.a.i) and new concepts in painting and sculpture (B.1.a.ii)."
     },
     {
       "episodeTitle": "Piers Plowman",
       "pid": "m000nvsl",
-      "relevantPathsAI": ["B.1.b", "B.1.c", "B.2.b"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.c",
+        "B.2.b"
+      ],
       "rationaleAI": "Langland's c.1370 alliterative poem exploring social justice, clerical corruption, and moral crisis in post-plague England exemplifies late Gothic literary culture in northern Europe (B.1.b), late medieval intellectual developments (B.1.c), and the social upheaval following the Black Death (B.2.b)."
-    },
-    {
-      "episodeTitle": "Christine de Pizan",
-      "pid": "b08sksb4",
-      "relevantPathsAI": ["A.1.e.iii", "B.6.a.v"],
-      "rationaleAI": "Christine de Pizan's works including The Book of the City of Ladies, her participation in the Querelle de la Rose, and her final poem on Joan of Arc connect to A.1.e.iii (Latin and vernacular literature) and B.6.a.v (Joan of Arc and French national feeling)."
     },
     {
       "episodeTitle": "The Black Death",
       "pid": "b00bcqt8",
-      "relevantPathsAI": ["B.2.b", "B.5.a"],
+      "relevantPathsAI": [
+        "B.2.b",
+        "B.5.a"
+      ],
       "rationaleAI": "The 1347-50 pandemic and its economic, social, and religious consequences are the defining event of B.2.b (effects of the Black Death and subsequent epidemics), and the demographic catastrophe arriving via Genoese ships at Messina connects to the crises of the 14th century in Italy (B.5.a)."
-    },
-    {
-      "episodeTitle": "The Peasants' Revolt",
-      "pid": "p0038x8s",
-      "relevantPathsAI": ["B.2.b", "B.7.a.ii"],
-      "rationaleAI": "The Peasants' Revolt of 1381 under Wat Tyler and John Ball, triggered by poll tax and Black Death aftermath, directly corresponds to B.7.a.ii (Richard II and the Peasants' Revolt) and B.2.b (effects of the Black Death and peasant revolts)."
-    },
-    {
-      "episodeTitle": "Wyclif and the Lollards",
-      "pid": "b011vh4k",
-      "relevantPathsAI": ["B.7.a.ii", "B.4.b.ii"],
-      "rationaleAI": "Wyclif's challenge to Catholic orthodoxy, his doctrines on Scripture and transubstantiation, and his influence on Jan Hus directly correspond to B.7.a.ii (Richard II and the influence of John Wycliffe) and B.4.b.ii (the beginning of religious reform in Bohemia and Hus)."
     },
     {
       "episodeTitle": "The Battle of Crécy",
       "pid": "m001kx5s",
-      "relevantPathsAI": ["B.2.a", "B.6.a.ii"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.6.a.ii"
+      ],
       "rationaleAI": "The 1346 Battle of Crecy with its decisive role of the longbow against mounted knights exemplifies the declining importance of feudal nobility through changing military technology (B.2.a) and is a major engagement in the early phase of the Hundred Years' War (B.6.a.ii)."
     },
     {
       "episodeTitle": "The Siege of Orléans",
       "pid": "b007l3yq",
-      "relevantPathsAI": ["B.6.a.v"],
+      "relevantPathsAI": [
+        "B.6.a.v"
+      ],
       "rationaleAI": "Joan of Arc's 1429 relief of Orleans, the subsequent coronation of Charles VII at Reims, and the stirring of French national feeling are the central events of B.6.a.v (recovery, reunification, and expulsion of the English)."
     },
     {
       "episodeTitle": "The Medici",
       "pid": "b03m7z08",
-      "relevantPathsAI": ["B.1.a", "B.1.a.ii", "B.5.c.i"],
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.a.ii",
+        "B.5.c.i"
+      ],
       "rationaleAI": "The Medici family's dominance of Florence, their banking wealth, and patronage of Botticelli, Michelangelo, and Leonardo address the crisis of Florentine republicanism and Medici rule (B.5.c.i) and the contribution of city-states to Renaissance developments in the fine arts (B.1.a, B.1.a.ii)."
     },
     {
       "episodeTitle": "Machiavelli and the Italian City States",
       "pid": "p004y26p",
-      "relevantPathsAI": ["B.1.c", "B.5.c"],
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.5.c"
+      ],
       "rationaleAI": "Machiavelli's political realism and The Prince arise from the context of Renaissance Florence, papal politics, and foreign invasions, covering late medieval political theory (B.1.c) and the Italian states in the 15th century (B.5.c)."
     },
     {
       "episodeTitle": "Owain Glyndwr",
       "pid": "m00027xk",
-      "relevantPathsAI": ["B.7.c"],
+      "relevantPathsAI": [
+        "B.7.c"
+      ],
       "rationaleAI": "Glyndwr's major revolt against English rule under Henry IV, his establishment of a Welsh parliament, and the eventual English reconquest connect directly to fluctuating English influence in Wales (B.7.c)."
     },
     {
       "episodeTitle": "Margaret of Anjou",
       "pid": "b0b39v6r",
-      "relevantPathsAI": ["B.7.a.iii", "B.7.a.iv"],
+      "relevantPathsAI": [
+        "B.7.a.iii",
+        "B.7.a.iv"
+      ],
       "rationaleAI": "Margaret's political and military leadership during Henry VI's incapacity and her role as a catalyst for the Wars of the Roses are central to B.7.a.iii (domestic rivalries and Wars of the Roses) and B.7.a.iv (the reigns of Edward IV and Richard III)."
     },
     {
       "episodeTitle": "Muslim Spain",
       "pid": "p00548l1",
-      "relevantPathsAI": ["A.4", "A.4.b", "B.8.c.i"],
+      "relevantPathsAI": [
+        "A.4",
+        "A.4.b",
+        "B.8.c.i"
+      ],
       "rationaleAI": "Islamic civilization in Iberia provides essential context for the Spanish Christian kingdoms' expansion into Muslim territory (A.4, A.4.b), and the fall of Granada under Ferdinand and Isabella in 1492 with the expulsion of Jews maps to B.8.c.i."
     },
     {
       "episodeTitle": "The Spanish Inquisition",
       "pid": "p003c1bw",
-      "relevantPathsAI": ["B.8.c.i"],
+      "relevantPathsAI": [
+        "B.8.c.i"
+      ],
       "rationaleAI": "The 1478 tribunal established under Ferdinand and Isabella targeting converted Jews and Muslims is directly addressed in B.8.c.i (the Inquisition and treatment of Jews under the united Spanish monarchy)."
     }
   ],

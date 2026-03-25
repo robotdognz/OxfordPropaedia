@@ -2,22 +2,29 @@
   "sectionCode": "964",
   "mappings": [
     {
-      "episodeTitle": "The Inca",
-      "pid": "m0005t68",
-      "relevantPathsAI": [
-        "A",
-        "B.1"
-      ],
-      "rationaleAI": "The Inca Empire covers the largest pre-Columbian civilization in the Americas including Pizarro's conquest, directly matching A on geography and ethnography of the Americas and B.1 on Spanish discovery, exploration, and conquest."
-    },
-    {
       "episodeTitle": "The Aztecs",
       "pid": "p00548v0",
       "relevantPathsAI": [
         "A",
         "B.1"
       ],
-      "rationaleAI": "The Aztec Empire covers Tenochtitlan, the Triple Alliance, chinampas agriculture, and the Spanish conquest under Cortes, directly matching A on ethnography and B.1 on Spanish conquest of Mexico."
+      "rationaleAI": "The Aztec Triple Alliance empire, its political organization, tribute systems, and the factors enabling Spanish conquest under Cortes provide essential context for the pre-contact Americas (A) and for understanding Spanish conquest of Mexico (B.1)."
+    },
+    {
+      "episodeTitle": "The Siege of Tenochtitlan",
+      "pid": "b016924x",
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "The 1521 siege by Cortes and indigenous allies that destroyed the Aztec capital and inaugurated Spanish colonization of Mexico falls squarely within Spanish discovery, exploration, and conquest of the Caribbean islands, Mexico, and Central America (B.1)."
+    },
+    {
+      "episodeTitle": "The Valladolid Debate",
+      "pid": "m000fgmw",
+      "relevantPathsAI": [
+        "B.2.b"
+      ],
+      "rationaleAI": "The 1550 debate between Las Casas and Sepulveda over the legitimacy of conquering and enslaving indigenous peoples directly addresses Spain's Indian policy, the moral foundations of the encomienda system, and the missionary role of the Roman Catholic Church (B.2.b)."
     },
     {
       "episodeTitle": "Mercantilism",
@@ -26,53 +33,86 @@
         "B.2.c",
         "C.3.b.i"
       ],
-      "rationaleAI": "Mercantilism covers colonial exploitation, Navigation Acts, and chartered trading companies, directly matching B.2.c on colonial mercantilist economy and C.3.b.i on British economic policies including the Navigation Acts."
+      "rationaleAI": "Mercantilist economic theory directly underpinned Spain's colonial trade monopolies, smuggling, and piracy (B.2.c) as well as British mercantilism and the Navigation Acts governing the English colonies (C.3.b.i), with colonial monopolies and chartered trading companies central to the episode."
     },
     {
-      "episodeTitle": "The Jesuits",
-      "pid": "b007731w",
+      "episodeTitle": "The South Sea Bubble",
+      "pid": "b01pcs5g",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.3.b"
+        "B.2.c",
+        "B.6"
       ],
-      "rationaleAI": "The Jesuits' missionary work in South America including the Reductions directly matches B.2.b on the missionary role of the Roman Catholic Church in Spanish colonies and B.3.b on the role of the Church in colonial Brazil."
-    },
-    {
-      "episodeTitle": "Food",
-      "pid": "p00547n1",
-      "relevantPathsAI": [
-        "B.2.c"
-      ],
-      "rationaleAI": "The Columbian Exchange and introduction of New World foods (potatoes, tomatoes, chocolate) and the colonial plantation economy directly relate to B.2.c on colonial economy and agricultural expansion."
+      "rationaleAI": "The South Sea Company's monopoly on trade with Spanish South America and its operation of the slave trade under the Asiento contract directly connect to colonial economy, smuggling, and mercantilism (B.2.c) and English economic expansion into areas of Spanish colonization (B.6)."
     },
     {
       "episodeTitle": "Coffee",
       "pid": "m000c4x1",
       "relevantPathsAI": [
-        "B.2.c",
-        "C.3.b"
+        "B.3.a",
+        "B.2.c"
       ],
-      "rationaleAI": "The colonial coffee plantation economy in the Caribbean and Americas directly relates to B.2.c on colonial economic development and agricultural trade."
+      "rationaleAI": "Coffee as a colonial product grown by slaves, traded by Dutch and French empires, with Brazil emerging as a major producer connects directly to Portuguese colonial economic policies including black slavery and agricultural development (B.3.a) and to the broader colonial economy of the Americas (B.2.c)."
     },
     {
-      "episodeTitle": "Washington and the American Revolution",
-      "pid": "p004y28v",
+      "episodeTitle": "The Haitian Revolution",
+      "pid": "b04lsqgs",
       "relevantPathsAI": [
-        "C.3",
+        "B.6",
+        "B.2.b"
+      ],
+      "rationaleAI": "The 1791 slave uprising in French Saint-Domingue arose directly from the plantation slavery economics of European Caribbean colonization (B.6), while the conflict involving enslaved Africans, free people of color, and British and Spanish military interventions illustrates the consequences of colonial slave policy across European empires in the Caribbean (B.2.b)."
+    },
+    {
+      "episodeTitle": "Prester John",
+      "pid": "b05wyq5m",
+      "relevantPathsAI": [
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "The Prester John legend's role in motivating Portuguese exploration and the broader Age of Exploration provides essential context for the European impulse toward discovery that led to Spanish and Portuguese colonization of the Americas (B.1, B.3)."
+    },
+    {
+      "episodeTitle": "The Pilgrim Fathers",
+      "pid": "b007rlb6",
+      "relevantPathsAI": [
+        "C.3.a"
+      ],
+      "rationaleAI": "The 1620 Mayflower voyage, Plymouth Colony's founding, the Mayflower Compact's framework for self-governance, and religious motivations for settlement directly illustrate the founding of the English colonies and their economic, political, and religious reasons for settlement (C.3.a)."
+    },
+    {
+      "episodeTitle": "The Glorious Revolution",
+      "pid": "p00547fk",
+      "relevantPathsAI": [
+        "C.3.b.ii"
+      ],
+      "rationaleAI": "The 1688 settlement establishing parliamentary supremacy, the Bill of Rights, and Locke's political philosophy directly shaped colonial administration and self-government in the English North American colonies (C.3.b.ii), providing the constitutional and philosophical foundations that governed colonial political development."
+    },
+    {
+      "episodeTitle": "The American Ideal",
+      "pid": "p00546tb",
+      "relevantPathsAI": [
         "C.3.a",
-        "C.3.b"
+        "C.3.c"
       ],
-      "rationaleAI": "Washington and the American Revolution cover the political opposition to Britain, the War of Independence, the Constitutional Convention, and republican government, directly matching C.3 on the development of the English colonies and their conflict with Britain (though the Revolution extends beyond this section's scope to 1763)."
+      "rationaleAI": "The Enlightenment principles of liberty, equality, and democratic self-governance that shaped American self-conception from the founding era connect to the religious and political motivations for colonial settlement (C.3.a) and to colonial cultural and intellectual achievements (C.3.c)."
     },
     {
-      "episodeTitle": "The Franco-American Alliance 1778",
-      "pid": "m000v99n",
+      "episodeTitle": "Deism",
+      "pid": "m000n47b",
       "relevantPathsAI": [
-        "C.3.d"
+        "C.3.c"
       ],
-      "rationaleAI": "The Franco-American Alliance of 1778 covers France's entry into the American Revolutionary War, matching the context of C.3.d on conflicts with the French and expulsion of French power."
+      "rationaleAI": "Deism's influence on colonial intellectual life through Thomas Paine and its role in the American Revolution connects to colonial cultural and scientific achievements and the development of Enlightenment thought in the English colonies (C.3.c)."
+    },
+    {
+      "episodeTitle": "Louis XIV: The Sun King",
+      "pid": "m001m4v6",
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Louis XIV's centralization of French administration directly shaped royal governance of New France, including the transition from joint-stock companies to direct royal control of missionaries, Indian relations, and the fur trade (D.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -2,76 +2,36 @@
   "sectionCode": "973",
   "mappings": [
     {
-      "episodeTitle": "The Manhattan Project",
-      "pid": "m00108h1",
-      "relevantPathsAI": [
-        "A.2.d",
-        "A.3.a"
-      ],
-      "rationaleAI": "The Manhattan Project covers the development of nuclear weapons during WWII and the bombings of Hiroshima and Nagasaki, directly matching A.2.d on the role of US forces in defeating the Axis powers and A.3.a on the Truman administration."
+      "episodeTitle": "The American Century",
+      "pid": "p0054594",
+      "relevantPathsAI": ["A", "A.3", "A.4", "A.5"],
+      "rationaleAI": "Directly assesses whether the twentieth century merits designation as the 'American Century,' examining US military, economic, diplomatic, and cultural dominance after WWI and especially post-1945, Cold War interventionism, and the tension between democratic ideals and hegemonic power — spanning the full arc of A."
     },
     {
-      "episodeTitle": "Paul von Hindenburg",
-      "pid": "m002cfjz",
-      "relevantPathsAI": [
-        "A.2.c"
-      ],
-      "rationaleAI": "Hindenburg's appointment of Hitler relates to the context of US foreign policy and opposition to Japanese expansionism and Axis powers under A.2.c, though the connection is indirect. Reject."
-    },
-    {
-      "episodeTitle": "The Haymarket Affair",
-      "pid": "m0023gm2",
-      "relevantPathsAI": [
-        "A.1.b"
-      ],
-      "rationaleAI": "The Haymarket Affair (1886) predates this section's timeframe of since 1920. Reject."
-    },
-    {
-      "episodeTitle": "Hayek's The Road to Serfdom",
-      "pid": "m0023x87",
-      "relevantPathsAI": [
-        "A.4.f.i"
-      ],
-      "rationaleAI": "Hayek's Road to Serfdom influenced Reagan's economic policies and neoliberal thought, directly matching A.4.f.i on Reagan's cuts in social welfare programs and conservative economic policies."
+      "episodeTitle": "The American Ideal",
+      "pid": "p00546tb",
+      "relevantPathsAI": ["A", "A.2", "A.4"],
+      "rationaleAI": "Examines American idealism as a political and cultural force rooted in Enlightenment principles, including Woodrow Wilson's assertion that American identity is inseparable from idealism, and the persistent tension between aspirational rhetoric and realities of inequality — a thematic lens across the entire post-1920 US experience."
     },
     {
       "episodeTitle": "The Gold Standard",
       "pid": "m0013hh7",
-      "relevantPathsAI": [
-        "A.1.c",
-        "A.1.a"
-      ],
-      "rationaleAI": "The gold standard's history including the Great Depression's deflationary pressures and interwar economics directly relates to A.1.c on Hoover's administration and the stock market crash, and the broader economic context of A.1.a on Coolidge prosperity."
+      "relevantPathsAI": ["A.1.a", "A.1.c"],
+      "rationaleAI": "Adherence to gold convertibility during the early 1930s deepened the Great Depression by preventing expansionary monetary responses to deflation and unemployment, directly relevant to the stock market crash and Hoover's failed attempts at economic recovery under A.1.c, with broader context for 1920s prosperity under A.1.a."
     },
     {
       "episodeTitle": "The Sino-Japanese War",
       "pid": "b042ldyq",
-      "relevantPathsAI": [
-        "A.2.c",
-        "A.2.d"
-      ],
-      "rationaleAI": "The Sino-Japanese War merged into WWII, covering US opposition to Japanese expansionism and the Pacific war, directly matching A.2.c on opposition to Japanese expansionism and A.2.d on the role of US forces."
+      "relevantPathsAI": ["A.2.c", "A.2.d"],
+      "rationaleAI": "Japan's 1937-1945 war with China merged into the broader Pacific theatre after Pearl Harbor, directly connecting to US opposition to Japanese expansionism and economic sanctions (A.2.c) and the role of US forces in defeating the Axis powers in the Pacific (A.2.d)."
     },
     {
-      "episodeTitle": "The Economic Consequences of the Peace",
-      "pid": "m001qtpf",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "Keynes's critique of the Treaty of Versailles reparations provides essential context for the interwar economic order and the conditions leading to the Great Depression, relevant to A.1 on post-WWI developments."
-    },
-    {
-      "episodeTitle": "The American Century",
-      "pid": "p0054594",
-      "relevantPathsAI": [
-        "A",
-        "A.3",
-        "A.4",
-        "A.5"
-      ],
-      "rationaleAI": "The American Century covers America's rise from isolationism to global superpower, the Cold War, and debates about American exceptionalism, directly matching the entire arc of post-1920 US history."
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["A.4.b.ii"],
+      "rationaleAI": "The Frankfurt School's exile to the United States during the Nazi era and its development of critical theory on American soil profoundly influenced 1960s New Left movements and campus protests, directly relevant to increasing alienation among youth and minority groups under A.4.b.ii."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,253 +4,296 @@
     {
       "episodeTitle": "St Paul",
       "pid": "b00kjk8z",
-      "relevantPathsAI": ["A.1.a", "F.1.c", "F.4", "E.5"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "F.1.c",
+        "F.4",
+        "E.5"
+      ],
       "rationaleAI": "Paul of Tarsus was the principal architect of early Christian theology, establishing doctrines of justification by faith and salvation extended to Gentiles that transformed Christianity into a universal religion (A.1.a). His epistles shaped Christology (F.1.c), doctrines concerning mankind and salvation (F.4), and profoundly influenced Augustine and Luther (E.5)."
     },
     {
       "episodeTitle": "Constantine the Great",
       "pid": "b096gjw0",
-      "relevantPathsAI": ["A.2.a"],
+      "relevantPathsAI": [
+        "A.2.a"
+      ],
       "rationaleAI": "Constantine was the first Roman Emperor to profess Christianity, legalizing the faith and granting privileges that led to steady Christianization of the Empire (A.2.a). His building of Constantinople established the eastern center that would shape the growing division between Eastern and Western Christianity."
     },
     {
       "episodeTitle": "The Nicene Creed",
       "pid": "b008jglt",
-      "relevantPathsAI": ["A.2.b", "E.4", "F.1.f", "F.5"],
+      "relevantPathsAI": [
+        "A.2.b",
+        "E.4",
+        "F.1.f",
+        "F.5"
+      ],
       "rationaleAI": "The Nicene Creed formulated at the Council of Nicaea (325) to counter Arianism is a foundational doctrinal statement (E.4, F.5) affirming the consubstantiality of the Son with the Father (F.1.f). Its creation under Constantine exemplifies the entanglement of theology with imperial politics in the early Church (A.2.b)."
-    },
-    {
-      "episodeTitle": "Arianism",
-      "pid": "m000v2w7",
-      "relevantPathsAI": ["A.2.b"],
-      "rationaleAI": "Arianism and the Council of Nicaea's formulation of the Nicene Creed directly address doctrinal controversies including reaction to Arius's teachings (A.2.b)."
     },
     {
       "episodeTitle": "The Trinity",
       "pid": "b03xgl3m",
-      "relevantPathsAI": ["F.1.f", "A.2.b", "E.5", "E.7"],
+      "relevantPathsAI": [
+        "F.1.f",
+        "A.2.b",
+        "E.5",
+        "E.7"
+      ],
       "rationaleAI": "The doctrine of the Holy Trinity is a core Christian teaching on the nature of God (F.1.f), formally clarified at Nicaea against Arianism (A.2.b). Augustine's and Aquinas's explorations of Trinitarian theology represent major contributions to post-patristic theological writing (E.5) and Christian philosophy (E.7)."
     },
     {
       "episodeTitle": "The Pelagian Controversy",
       "pid": "b010dstl",
-      "relevantPathsAI": ["A.2.b", "F.4", "E.5"],
+      "relevantPathsAI": [
+        "A.2.b",
+        "F.4",
+        "E.5"
+      ],
       "rationaleAI": "The Pelagian controversy over original sin and divine grace provoked Augustine's influential defense of the necessity of grace, a doctrinal dispute explicitly named in the section outline (A.2.b). The controversy permanently shaped Western Christian doctrines concerning mankind (F.4) and influenced both Catholic and Protestant thought through Augustine's writings (E.5)."
-    },
-    {
-      "episodeTitle": "The Fall",
-      "pid": "p004y27p",
-      "relevantPathsAI": ["F.4", "E.2"],
-      "rationaleAI": "The Fall and original sin from Genesis through Augustine and Reformation disputes directly addresses doctrines concerning mankind (F.4) and biblical exegesis (E.2)."
     },
     {
       "episodeTitle": "Gnosticism",
       "pid": "b01s4rhz",
-      "relevantPathsAI": ["A.1.b", "F.3", "E.8"],
+      "relevantPathsAI": [
+        "A.1.b",
+        "F.3",
+        "E.8"
+      ],
       "rationaleAI": "Gnosticism flourished in the first through third centuries and was condemned as heretical by Church Fathers including Irenaeus and Tertullian, directly shaping post-apostolic orthodoxy (A.1.b). Its dualistic cosmology dividing material and spiritual realms relates to doctrines concerning the physical world (F.3) and the role of myth in Christianity (E.8)."
     },
     {
       "episodeTitle": "Mary Magdalene",
       "pid": "b0717j1r",
-      "relevantPathsAI": ["E.1", "A.1.a", "F.7.b", "E.8"],
+      "relevantPathsAI": [
+        "E.1",
+        "A.1.a",
+        "F.7.b",
+        "E.8"
+      ],
       "rationaleAI": "Mary Magdalene as witness to the crucifixion and first witness to the resurrection is central to New Testament literature (E.1) and the origins of the primitive church (A.1.a). The centuries-long conflation of her identity shaped Christian art (F.7.b), and the Gnostic Gospel of Mary raises questions about myth and authority in early Christianity (E.8)."
     },
     {
       "episodeTitle": "The Carolingian Renaissance",
       "pid": "p003hydz",
-      "relevantPathsAI": ["A.3.b", "A.3.c", "F.6.a"],
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c",
+        "F.6.a"
+      ],
       "rationaleAI": "Charlemagne's fusion of military conquest, forced conversion, and ecclesiastical reform shaped the relation of Christianity to Western culture (A.3.b). Monastic scriptoria preserving texts and advancing education through cathedral schools expanded Christian institutions in the West (A.3.c), while the emphasis on sin and discipline reflects canon law and church polity (F.6.a)."
     },
     {
       "episodeTitle": "The Lindisfarne Gospels",
       "pid": "p00548tq",
-      "relevantPathsAI": ["A.3.c", "F.7.a", "F.6.c"],
+      "relevantPathsAI": [
+        "A.3.c",
+        "F.7.a",
+        "F.6.c"
+      ],
       "rationaleAI": "The Lindisfarne Gospels (c. 700 AD) reflect the expansion of Christianity to Anglo-Saxon Britain following Pope Gregory's mission (A.3.c). The lavishly illuminated manuscript blending Celtic, Anglo-Saxon, and Mediterranean traditions represents early medieval Christian art (F.7.a), and its monastic production connects to forms of Christian religious life (F.6.c)."
     },
     {
       "episodeTitle": "Byzantium",
       "pid": "p00547j9",
-      "relevantPathsAI": ["B.1", "A.3.b"],
+      "relevantPathsAI": [
+        "B.1",
+        "A.3.b"
+      ],
       "rationaleAI": "The Byzantine Empire's thousand-year history from 395 AD encompasses the era of imperial Byzantium during which the Eastern Orthodox church developed (B.1). Constantinople's role as a centre of classical and Christian learning shaped the relation of Christianity to Byzantine culture (A.3.b)."
     },
     {
       "episodeTitle": "The Schism",
       "pid": "p0054921",
-      "relevantPathsAI": ["A.3.d", "A.3.a", "G.1.c"],
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.a",
+        "G.1.c"
+      ],
       "rationaleAI": "The Great Schism of 1054 permanently divided Christianity into Roman Catholic and Eastern Orthodox communions, directly corresponding to the outline's coverage of the great East-West schism (A.3.d). The filioque dispute, papal authority claims, and liturgical differences underpin distinctions between Eastern and Western Christianity (A.3.a, G.1.c)."
     },
     {
       "episodeTitle": "The Concordat of Worms",
       "pid": "b0184v2j",
-      "relevantPathsAI": ["C.1.a", "F.6.a"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "F.6.a"
+      ],
       "rationaleAI": "The 1122 Concordat of Worms resolved the Investiture Controversy over episcopal appointment, establishing the separation of spiritual and temporal authority (C.1.a). This distinction between ecclesiastical and political power directly concerns the structure of church institutions and canon law (F.6.a)."
     },
     {
       "episodeTitle": "The 12th Century Renaissance",
       "pid": "b07z6vzq",
-      "relevantPathsAI": ["C.1.a", "C.1.b"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.1.b"
+      ],
       "rationaleAI": "The twelfth-century transformation included cathedral schools evolving into universities, Gothic architecture, and papal reform reshaping state formation, all relevant to the development of the papacy and religious-cultural characteristics of Latin Christianity in the medieval era (C.1.a, C.1.b)."
     },
     {
       "episodeTitle": "Catharism",
       "pid": "p005488v",
-      "relevantPathsAI": ["C.1.a", "C.1.b", "F.5"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.1.b",
+        "F.5"
+      ],
       "rationaleAI": "The Cathar heresy in medieval southern France and the papal campaign against it under Innocent III at the Fourth Lateran Council (1215) reflects the medieval papacy's enforcement of doctrinal conformity (C.1.a). The Cathars' alternative Christian beliefs and their violent suppression concern religious characteristics of Latin Christianity (C.1.b) and normative expressions of belief (F.5)."
     },
     {
       "episodeTitle": "Marsilius of Padua",
       "pid": "m001znkd",
-      "relevantPathsAI": ["C.1.a", "C.2.a", "E.5"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2.a",
+        "E.5"
+      ],
       "rationaleAI": "Marsilius's Defensor Pacis (c. 1324) denied papal temporal authority on scriptural grounds, challenging the development of the papacy as chief spiritual and temporal power (C.1.a). His condemned work later attracted Protestant reformers, forming part of the intellectual background to the Reformation (C.2.a, E.5)."
-    },
-    {
-      "episodeTitle": "The Jesuits",
-      "pid": "b007731w",
-      "relevantPathsAI": ["C.2.c", "F.6.c"],
-      "rationaleAI": "The Jesuits as Counter-Reformation order with global missionary work directly addresses the Catholic Reformation (C.2.c) and monasticism/the saintly life (F.6.c)."
-    },
-    {
-      "episodeTitle": "Wyclif and the Lollards",
-      "pid": "b011vh4k",
-      "relevantPathsAI": ["D.1.a", "E.2"],
-      "rationaleAI": "Wyclif's challenge to Catholic orthodoxy and advocacy for vernacular Bible translation directly addresses the background of the Protestant Reformation (D.1.a) and biblical exegesis (E.2)."
     },
     {
       "episodeTitle": "Bohemia",
       "pid": "p00548cz",
-      "relevantPathsAI": ["C.2.a", "D.1.a"],
+      "relevantPathsAI": [
+        "C.2.a",
+        "D.1.a"
+      ],
       "rationaleAI": "Jan Hus's ideas anticipated the Lutheran Reformation by a century, and his burning at the stake and the subsequent Hussite Wars represent the background of the Protestant Reformation in late medieval Catholicism (C.2.a, D.1.a)."
     },
     {
       "episodeTitle": "The Diet of Worms",
       "pid": "p0038x8z",
-      "relevantPathsAI": ["D.1.b", "C.2.b"],
+      "relevantPathsAI": [
+        "D.1.b",
+        "C.2.b"
+      ],
       "rationaleAI": "Luther's 1521 appearance before Charles V at the Diet of Worms and his refusal to recant is a defining moment of the German Reformation (D.1.b). The resulting fracture of Western Christendom into Catholic and Protestant confessions directly shaped the Reformation's trajectory (C.2.b)."
     },
     {
       "episodeTitle": "Marguerite de Navarre",
       "pid": "m001smkv",
-      "relevantPathsAI": ["C.2.a", "D.1.c"],
+      "relevantPathsAI": [
+        "C.2.a",
+        "D.1.c"
+      ],
       "rationaleAI": "Marguerite de Navarre was a leading advocate of Catholic Church reform in France who translated early Luther writings into French and sheltered religious reformers (C.2.a, D.1.c). Her activity connects the background of the Reformation in late medieval Catholicism with the early spread of Protestant ideas in France."
     },
     {
       "episodeTitle": "Purgatory",
       "pid": "b08qxfrb",
-      "relevantPathsAI": ["F.1.d", "C.1.b", "A.3.d", "C.2"],
+      "relevantPathsAI": [
+        "F.1.d",
+        "C.1.b",
+        "A.3.d",
+        "C.2"
+      ],
       "rationaleAI": "Purgatory's theological development from twelfth-century formalization concerns eschatological doctrine (F.1.d) and religious characteristics of Latin Christianity (C.1.b). Its role in the 1054 Great Schism (A.3.d) and renewed divisiveness during the Protestant Reformation through indulgences (C.2) span major divisions in Christian history."
     },
     {
       "episodeTitle": "The Thirty Years War",
       "pid": "m0001fv2",
-      "relevantPathsAI": ["D.1.h", "C.2.d"],
+      "relevantPathsAI": [
+        "D.1.h",
+        "C.2.d"
+      ],
       "rationaleAI": "The Thirty Years War (1618-1648) originated in religious conflict between Catholics, Lutherans, and Calvinists, making it a central episode in the wars of religion (D.1.h, C.2.d). The Peace of Westphalia established principles of religious coexistence that reshaped church-state relations across Protestant and Catholic Europe."
-    },
-    {
-      "episodeTitle": "Comenius",
-      "pid": "m0017chy",
-      "relevantPathsAI": ["D.1.f"],
-      "rationaleAI": "Comenius as bishop of the Moravian Brethren during the Thirty Years' War represents radical Protestant reform movements (D.1.f)."
-    },
-    {
-      "episodeTitle": "The Tudor State",
-      "pid": "p00546xd",
-      "relevantPathsAI": ["D.1.d"],
-      "rationaleAI": "The Tudor State's break with Rome, dissolution of the monasteries, and Elizabethan settlement directly address the English Reformation (D.1.d)."
-    },
-    {
-      "episodeTitle": "The Divine Right of Kings",
-      "pid": "b0080xph",
-      "relevantPathsAI": ["D.1.h"],
-      "rationaleAI": "The Divine Right of Kings covers the theological doctrine of monarchical authority from God and church-state relations — relevant to church-state relations during the wars of religion (D.1.h)."
     },
     {
       "episodeTitle": "The Book of Common Prayer",
       "pid": "b03ct4n4",
-      "relevantPathsAI": ["D.1.d", "G.3.d.iii", "F.6.b"],
+      "relevantPathsAI": [
+        "D.1.d",
+        "G.3.d.iii",
+        "F.6.b"
+      ],
       "rationaleAI": "The 1549 Book of Common Prayer established unified English-language Protestant liturgy during the English Reformation (D.1.d), becoming central to Anglicanism as a distinct tradition (G.3.d.iii). It functions as a liturgical text shaping worship practice and the church year (F.6.b)."
     },
     {
       "episodeTitle": "The Covenanters",
       "pid": "m000g3f6",
-      "relevantPathsAI": ["D.1.d", "D.2.d", "G.3.d.ii"],
+      "relevantPathsAI": [
+        "D.1.d",
+        "D.2.d",
+        "G.3.d.ii"
+      ],
       "rationaleAI": "The Covenanters were Scottish Presbyterians who defended their Reformed worship against episcopal imposition, relevant to the Scottish Reformation (D.1.d) and developments in English Protestantism (D.2.d). Their movement shaped Presbyterian church governance and identity (G.3.d.ii)."
     },
     {
       "episodeTitle": "George Fox and the Quakers",
       "pid": "b01f67y4",
-      "relevantPathsAI": ["G.3.e.iv", "D.2.d"],
+      "relevantPathsAI": [
+        "G.3.e.iv",
+        "D.2.d"
+      ],
       "rationaleAI": "George Fox founded the Society of Friends (Quakers) in mid-seventeenth-century England, rejecting established Church hierarchy and sacramental worship (G.3.e.iv). Quaker advocacy of religious toleration and equality shaped Protestant dissenting traditions in English Protestantism (D.2.d)."
-    },
-    {
-      "episodeTitle": "Deism",
-      "pid": "m000n47b",
-      "relevantPathsAI": ["D.2.c"],
-      "rationaleAI": "Deism as the Enlightenment challenge to revealed religion directly addresses the challenge of rationalism, Deism, and the Enlightenment (D.2.c)."
     },
     {
       "episodeTitle": "The Age of Doubt",
       "pid": "p00546pj",
-      "relevantPathsAI": ["D.2.c", "D.3", "D.4"],
+      "relevantPathsAI": [
+        "D.2.c",
+        "D.3",
+        "D.4"
+      ],
       "rationaleAI": "The spread of religious doubt through Enlightenment rationalism, Darwinian evolution, and biblical higher criticism directly challenged Protestant scriptural authority (D.2.c). The trajectory from deism through agnosticism reshaped theology in the modern and post-World War I Protestant eras (D.3, D.4)."
     },
     {
       "episodeTitle": "John Wesley and Methodism",
       "pid": "m000q3m2",
-      "relevantPathsAI": ["D.2.d", "D.3", "G.3.d.iv"],
+      "relevantPathsAI": [
+        "D.2.d",
+        "D.3",
+        "G.3.d.iv"
+      ],
       "rationaleAI": "John Wesley founded Methodism as a major Protestant movement in eighteenth-century Britain, pioneering evangelical mass preaching to industrial working-class communities (D.2.d, D.3). Methodism as a Free church denomination is explicitly listed in the outline (G.3.d.iv)."
     },
     {
       "episodeTitle": "The Oxford Movement",
       "pid": "p003c19j",
-      "relevantPathsAI": ["D.3", "G.3.d.iii", "E.5"],
+      "relevantPathsAI": [
+        "D.3",
+        "G.3.d.iii",
+        "E.5"
+      ],
       "rationaleAI": "The Oxford Movement from 1833 revived ritual, liturgy, and patristic theology within Anglicanism, with Newman arguing the Church of England possessed apostolic succession (G.3.d.iii). Newman's conversion to Roman Catholicism and his theological significance make him central to modern Protestant and Catholic history (D.3, E.5)."
     },
     {
       "episodeTitle": "Karl Barth",
       "pid": "m001t2zf",
-      "relevantPathsAI": ["D.4", "E.5", "G.3.b"],
+      "relevantPathsAI": [
+        "D.4",
+        "E.5",
+        "G.3.b"
+      ],
       "rationaleAI": "Karl Barth was one of the twentieth century's most influential Protestant theologians, whose neo-orthodox rejection of liberal theology reshaped post-World War I Protestantism (D.4). His resistance to Nazi church interference and contribution to the Barmen Declaration connect to Protestant teachings and organization (G.3.b, E.5)."
-    },
-    {
-      "episodeTitle": "Fundamentalism",
-      "pid": "p00545gy",
-      "relevantPathsAI": ["G.3.e.vii"],
-      "rationaleAI": "Religious fundamentalism's origins in American Protestant movements defending biblical inerrancy directly addresses fundamentalist and evangelical groups (G.3.e.vii)."
-    },
-    {
-      "episodeTitle": "The Rapture",
-      "pid": "m0008p2k",
-      "relevantPathsAI": ["F.1.d", "G.3.e.iii"],
-      "rationaleAI": "The Rapture as dispensationalist eschatology directly addresses eschatological doctrines (F.1.d) and millenarian churches (G.3.e.iii)."
-    },
-    {
-      "episodeTitle": "Typology",
-      "pid": "m0029zmc",
-      "relevantPathsAI": ["E.2"],
-      "rationaleAI": "Biblical typology as an interpretive method directly addresses biblical exegesis and hermeneutics (E.2)."
-    },
-    {
-      "episodeTitle": "Angels",
-      "pid": "p003k9gf",
-      "relevantPathsAI": ["F.2"],
-      "rationaleAI": "Angels in Christianity including hierarchies and the fall of Lucifer directly address doctrines concerning intermediary beings (F.2)."
     },
     {
       "episodeTitle": "Papal Infallibility",
       "pid": "m0001yck",
-      "relevantPathsAI": ["C.4", "G.2.c", "F.5", "C.1.a"],
+      "relevantPathsAI": [
+        "C.4",
+        "G.2.c",
+        "F.5",
+        "C.1.a"
+      ],
       "rationaleAI": "The formal definition of papal infallibility at Vatican I (1870) is a landmark in modern Catholic history (C.4), while the historical elevation of the Bishop of Rome traces the development of the papacy (C.1.a). The doctrine concerns Catholic teachings distinguishing it from other traditions (G.2.c) and normative doctrinal expression (F.5)."
     },
     {
       "episodeTitle": "Julian of Norwich",
       "pid": "m001rgs4",
-      "relevantPathsAI": ["E.6", "F.1.a", "E.5"],
+      "relevantPathsAI": [
+        "E.6",
+        "F.1.a",
+        "E.5"
+      ],
       "rationaleAI": "Julian of Norwich was a fourteenth-century Christian mystic whose Revelations of Divine Love explored divine love, the nature of sin, and feminine aspects of God (E.6). Her bold vernacular theology addressing God's nature (F.1.a) makes her a significant post-patristic theological writer (E.5)."
     },
     {
       "episodeTitle": "Just War",
       "pid": "p00545jx",
-      "relevantPathsAI": ["E.7", "E.5"],
+      "relevantPathsAI": [
+        "E.7",
+        "E.5"
+      ],
       "rationaleAI": "Augustine's fifth-century theological justification for Christian warfare and Aquinas's thirteenth-century formalization of just war criteria represent major developments in Christian philosophy (E.7) and post-patristic theological writing (E.5)."
     }
   ],

@@ -4,74 +4,46 @@
     {
       "episodeTitle": "The Sino-Japanese War",
       "pid": "b042ldyq",
-      "relevantPathsAI": [
-        "A.3",
-        "A.3.a",
-        "A.3.b",
-        "B.2.b",
-        "B.2.c"
-      ],
-      "rationaleAI": "The Second Sino-Japanese War (1937-1945) covers the Nanjing Massacre, Communist-Nationalist cooperation and conflict, US military aid, and Japan's surrender, directly matching A.3 on the war against Japan and B.2.b on Japan's alignment with Axis Powers."
+      "relevantPathsAI": ["A.3", "A.3.a", "A.3.b", "A.5.a", "B.2.a", "B.2.b", "B.2.c"],
+      "rationaleAI": "The 1937-1945 Sino-Japanese War is the central event of outline path A.3, covering Communist-Nationalist cooperation against Japan, U.S. military involvement, and the weakening of Nationalist authority that enabled Communist victory. It equally addresses Japan's military expansionism (B.2.a-c), from the seizure of Manchuria through initial Japanese successes in Southeast Asia to unconditional surrender."
     },
     {
       "episodeTitle": "The Cultural Revolution",
       "pid": "m000q9b6",
-      "relevantPathsAI": [
-        "A.5.c.iii"
-      ],
-      "rationaleAI": "The Cultural Revolution (1966-1976) covers Mao's mass mobilization, Red Guards, persecution of intellectuals, and the Gang of Four, directly matching A.5.c.iii on the Great Proletarian Cultural Revolution."
-    },
-    {
-      "episodeTitle": "The Long March",
-      "pid": "m0001bpf",
-      "relevantPathsAI": [
-        "A.2.d.ii"
-      ],
-      "rationaleAI": "The Long March (1934-35) covers the Red Army's retreat, the Zunyi Conference establishing Mao's leadership, and its transformation into a founding myth, directly matching A.2.d.ii on the Long March and Communist-Nationalist conflict."
+      "relevantPathsAI": ["A.5.c.iii", "A.5.e"],
+      "rationaleAI": "Mao's 1966-1976 Cultural Revolution maps directly to A.5.c.iii (attacks on cultural leaders and party members, resistance to Peking) and to A.5.e (factional struggles of the early 1970s, Mao's death in September 1976, and the subsequent purge of the Gang of Four)."
     },
     {
       "episodeTitle": "The May Fourth Movement",
       "pid": "m001282c",
-      "relevantPathsAI": [
-        "A.1.b"
-      ],
-      "rationaleAI": "The May Fourth Movement of 1919 covers student protests against the Treaty of Versailles, the New Culture Movement, and the founding of the Chinese Communist Party, directly matching A.1.b on modernization and the growth of nationalism."
+      "relevantPathsAI": ["A.1.b", "A.2.a", "A.4.a"],
+      "rationaleAI": "The 1919 May Fourth protests against the Versailles Treaty's Shandong decision directly address A.1.b (modernization and growth of nationalism, the new intelligentsia, riots and protests). The movement's participants founding the Chinese Communist Party in 1921 connects to A.2.a (beginnings of a national revolution, the CCP) and A.4.a (origins of modern ideologies)."
     },
     {
-      "episodeTitle": "Empress Dowager Cixi",
-      "pid": "m001zdw0",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.2.d.i"
-      ],
-      "rationaleAI": "Empress Dowager Cixi's management of late Qing modernization, the Hundred Days' Reform, and the Boxer Rebellion provide essential pre-revolutionary context for A.1.a on early power struggles and the background to the republic."
+      "episodeTitle": "The Long March",
+      "pid": "m0001bpf",
+      "relevantPathsAI": ["A.2.d.ii", "A.4.d"],
+      "rationaleAI": "The 1934-1935 Long March from Jiangxi to Yan'an maps directly to A.2.d.ii (the Long March, formation of the United Front against Japan). Mao's consolidation of leadership at the Zunyi Conference and the march's role as Communist founding myth address A.4.d (development of Maoist ideology, the role of peasants, the border regions)."
     },
     {
       "episodeTitle": "The Korean Empire",
       "pid": "m002bj6d",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The Korean Empire (1897-1910) covers Japan's eventual annexation in 1910, directly matching C.1 on Japanese rule from 1910 to 1945."
+      "relevantPathsAI": ["C.1"],
+      "rationaleAI": "The Korean Empire's loss of sovereignty culminating in Japan's 1910 annexation provides essential context for C.1 (Japanese rule 1910-45), explaining the political conditions, failed modernization, and geopolitical pressures that shaped Korean resistance movements under colonial rule."
     },
     {
       "episodeTitle": "The Russo-Japanese War",
       "pid": "m000tnq3",
-      "relevantPathsAI": [
-        "B.1.a",
-        "C.1"
-      ],
-      "rationaleAI": "The Russo-Japanese War's significance for the rise of Japan as a great power and its impact on Korea directly relates to B.1 on Japan's early 20th-century political developments and C.1 on the context of Japanese rule over Korea."
+      "relevantPathsAI": ["B.1", "B.2.a", "C.1"],
+      "rationaleAI": "Japan's 1905 victory demonstrated its emergence as a modern military power, directly shaping the imperial ambitions and militarist ideology described in B.1 (Japan's early 20th-century developments) and B.2.a (rise of the militarists, seizure of initiative in foreign policy by the military). The war also secured Japan's dominant position over Korea, leading to the 1910 annexation (C.1)."
     },
     {
       "episodeTitle": "The Boxer Rebellion",
       "pid": "b00j4hmv",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "The Boxer Rebellion (1899-1901) and its aftermath contributed to the fall of imperial China and the conditions leading to the republic, providing context for A.1.a on early power struggles."
+      "relevantPathsAI": ["A.4.a"],
+      "rationaleAI": "The 1900 anti-foreign uprising exposed Qing weakness, intensified anti-imperialist nationalism, and catalyzed reform movements contributing to the 1911 revolution — directly addressing A.4.a (origins and background of modern ideologies: social and political conditions, China's ideological heritage)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

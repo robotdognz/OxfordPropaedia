@@ -2,33 +2,30 @@
   "sectionCode": "978",
   "mappings": [
     {
+      "episodeTitle": "Lawrence of Arabia",
+      "pid": "m000c0b0",
+      "relevantPathsAI": ["B", "B.1", "B.1.a", "B.1.b", "B.1.c"],
+      "rationaleAI": "T.E. Lawrence's role in the 1916 Arab Revolt against Ottoman rule and the postwar betrayal of Arab self-determination through the mandate system directly shaped the political landscape of B.1, including the French mandate over Syria and Lebanon (B.1.a), British mandate over Iraq (B.1.b), and the British mandate over Palestine and Transjordan (B.1.c)."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["E", "E.1", "E.2", "E.3"],
+      "rationaleAI": "Examination of British imperial expansion, colonial governance structures, and causes of decolonization including nationalist movements and shifting post-WWII power dynamics directly addresses the maturation and dissolution of the European colonial system in sub-Saharan Africa (E.1), administrative policies of colonial powers (E.2), and the rise of African independence movements (E.3)."
+    },
+    {
+      "episodeTitle": "The Berlin Conference",
+      "pid": "b03ffkfd",
+      "relevantPathsAI": ["E.1", "E.2"],
+      "rationaleAI": "The 1884-85 Berlin Conference established rules for European partition of Africa and imposed arbitrary borders disregarding ethnic boundaries, creating the colonial administrative frameworks (E.2) and territorial divisions (E.1) that persisted into the post-1920 period and shaped decolonization conflicts throughout sub-Saharan Africa."
+    },
+    {
       "episodeTitle": "The Mokrani Revolt",
       "pid": "m001wymz",
-      "relevantPathsAI": [
-        "D.1.a"
-      ],
-      "rationaleAI": "The Mokrani Revolt of 1871 provides essential context for understanding Algerian colonial resistance and the long trajectory toward independence, directly relevant to D.1.a on the French protectorate and the Algerian War of Independence."
-    },
-    {
-      "episodeTitle": "Africa",
-      "pid": "p00545ld",
-      "relevantPathsAI": [
-        "E",
-        "E.2",
-        "E.3",
-        "E.4"
-      ],
-      "rationaleAI": "The roots of Africa's political crises in European colonialism, Cold War interference, ethnic conflict, and post-independence nation-building directly match E on the maturation of the colonial system and nationalist movements in sub-Saharan Africa."
-    },
-    {
-      "episodeTitle": "The Haitian Revolution",
-      "pid": "b04lsqgs",
-      "relevantPathsAI": [
-        "B.2.a"
-      ],
-      "rationaleAI": "The Haitian Revolution provides historical context for Caribbean independence movements but does not substantively address the post-1920 developments in the outlined geography. Reject."
+      "relevantPathsAI": ["D.1.a", "D.2.d"],
+      "rationaleAI": "The 1871 Mokrani Revolt, the largest Algerian anticolonial insurrection between the French conquest and the 1954 war of independence, illustrates the trajectory of resistance to French colonial land confiscation policies (D.1.a) that fueled the long arc toward Algerian independence (D.2.d)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -2,237 +2,273 @@
   "sectionCode": "811",
   "mappings": [
     {
-      "episodeTitle": "Angels",
-      "pid": "p003k9gf",
-      "relevantPathsAI": ["D.5"],
-      "rationaleAI": "Directly covers angelology across Judaism, Christianity, and Islam including hierarchies, theological debates about angelic nature, and the fall of Lucifer — a precise match to the doctrine of angelology (D.5)."
-    },
-    {
-      "episodeTitle": "Deism",
-      "pid": "m000n47b",
-      "relevantPathsAI": ["D.3.c.ii"],
-      "rationaleAI": "Directly covers Deism as the Enlightenment religious philosophy rejecting revelation and miracles in favour of reason, from Herbert of Cherbury through Voltaire — a precise match to Deism (D.3.c.ii)."
-    },
-    {
-      "episodeTitle": "Miracles",
-      "pid": "b00dkh78",
-      "relevantPathsAI": ["D.11"],
-      "rationaleAI": "Directly covers the history and philosophy of miracles including biblical traditions, Hume's critique, and theological understandings of divine intervention — a precise match to the doctrine of miracles (D.11)."
-    },
-    {
-      "episodeTitle": "Zoroastrianism",
-      "pid": "p005bc5v",
-      "relevantPathsAI": ["D.3.b", "D.7", "E"],
-      "rationaleAI": "Zoroastrianism's cosmic dualism between good and evil (D.3.b), eschatological judgment (D.7), and its role as a comparative case in the study and classification of religions (E) make it directly relevant to multiple doctrinal categories."
-    },
-    {
-      "episodeTitle": "Spinoza",
-      "pid": "b0079ps2",
-      "relevantPathsAI": ["D.3.c.iii", "D.3.d"],
-      "rationaleAI": "Spinoza's pantheistic identification of God with Nature (Deus sive Natura) is a direct instantiation of pantheism (D.3.c.iii), while his critique of organized religion raises questions about atheism/agnosticism (D.3.d)."
-    },
-    {
-      "episodeTitle": "The Trinity",
-      "pid": "b03xgl3m",
-      "relevantPathsAI": ["D.3.c.i", "A.2.b"],
-      "rationaleAI": "Directly covers the Trinity as a central doctrine about the nature of the divine, including whether the sacred is one or more persons (A.2.b), and Trinitarian monotheism (D.3.c.i)."
-    },
-    {
-      "episodeTitle": "Faust",
-      "pid": "p004y2bt",
-      "relevantPathsAI": ["F.1"],
-      "rationaleAI": "The Faust myth about a scholar who sells his soul to the devil explores the relationship between human knowledge and the supernatural — relevant to myth and mythology (F.1) in the broader study of belief systems."
-    },
-    {
-      "episodeTitle": "The Devil",
-      "pid": "p005494p",
-      "relevantPathsAI": ["D.5", "D.3.b"],
-      "rationaleAI": "Covers the theological and cultural history of the Devil, the development of Satan, and the influence of Zoroastrian dualism — relevant to angelology (D.5 including fallen angels) and religious dualism (D.3.b)."
-    },
-    {
-      "episodeTitle": "Redemption",
-      "pid": "p00548vp",
-      "relevantPathsAI": ["D.8"],
-      "rationaleAI": "Covers the theological concept of redemption including atonement theories and the relationship between redemption, sin, and grace — directly relevant to doctrines of grace and salvation (D.8)."
-    },
-    {
-      "episodeTitle": "Daoism",
-      "pid": "b00wlgbg",
-      "relevantPathsAI": ["E", "A.2.a"],
-      "rationaleAI": "Daoism's concept of the Dao as the ultimate principle underlying reality explores whether the divine is personal or impersonal (A.2.a), and its distinctive religious tradition is relevant to classification of religions (E)."
-    },
-    {
-      "episodeTitle": "Cave Art",
-      "pid": "m000mqn7",
-      "relevantPathsAI": ["F.1", "F.4"],
-      "rationaleAI": "Prehistoric cave art with theories about shamanism, hunting magic, and social bonding relates to mythological and magical belief systems (F.1, F.2) and shamanism (F.4)."
-    },
-    {
       "episodeTitle": "Science and Religion",
       "pid": "p005479y",
-      "relevantPathsAI": ["G.2"],
+      "relevantPathsAI": [
+        "G.2"
+      ],
       "rationaleAI": "Directly addresses the boundary between scientific inquiry and religious belief, examining Gould's non-overlapping magisteria model and challenges from evolutionary biology, cosmology, and neuroscience to religious claims (G.2)."
     },
     {
       "episodeTitle": "The Soul",
       "pid": "p00548g4",
-      "relevantPathsAI": ["A.1.a", "A.1.b", "A.1.d", "A.2", "D.3"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.b",
+        "A.1.d",
+        "A.2",
+        "D.3"
+      ],
       "rationaleAI": "Examines the soul as an immaterial essence across philosophy and theology, engaging questions about the existence of the divine (A.1.a), divine attributes (A.1.b), immortality (A.1.d), whether the divine is personal or impersonal (A.2), and religious doctrines of moral judgment after death (D.3)."
     },
     {
       "episodeTitle": "Prayer",
       "pid": "p005465m",
-      "relevantPathsAI": ["B", "C", "D.2"],
+      "relevantPathsAI": [
+        "B",
+        "C",
+        "D.2"
+      ],
       "rationaleAI": "Examines prayer as spiritual communication with the divine across religious traditions, covering religious experience (B), basic patterns of religious action (C), and the tension between petition and contemplation central to mystical theology (D.2)."
     },
     {
       "episodeTitle": "William James's 'The Varieties of Religious Experience'",
       "pid": "b00s9ftw",
-      "relevantPathsAI": ["B", "D.2", "E"],
+      "relevantPathsAI": [
+        "B",
+        "D.2",
+        "E"
+      ],
       "rationaleAI": "James's empirical study of conversion, mysticism, saintliness, and prayer as personal psychological experience founded the psychology of religion, directly addressing religious experience (B), mystical theology (D.2), and systematic classification of religious phenomena (E)."
     },
     {
       "episodeTitle": "Gnosticism",
       "pid": "b01s4rhz",
-      "relevantPathsAI": ["D.3.b", "D.8", "E"],
+      "relevantPathsAI": [
+        "D.3.b",
+        "D.8",
+        "E"
+      ],
       "rationaleAI": "Gnostic dualistic cosmology dividing existence into flawed material creation and transcendent divine reality exemplifies religious dualism (D.3.b) and doctrines of salvation through gnosis (D.8), while the Nag Hammadi discoveries transformed scholarly classification of early religious movements (E)."
     },
     {
       "episodeTitle": "St Thomas Aquinas",
       "pid": "b00mkd63",
-      "relevantPathsAI": ["A.1.a", "A.1.c", "D", "D.1.b", "D.3.c.i", "G.4"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.c",
+        "D",
+        "D.1.b",
+        "D.3.c.i",
+        "G.4"
+      ],
       "rationaleAI": "Aquinas's synthesis of Aristotelian philosophy with Christian doctrine produced arguments for God's existence (A.1.a), explored the scope of human knowledge of the divine through reason and revelation (A.1.c, D.1.b), articulated classical theism (D.3.c.i), and grounded ethics in natural law accessible to reason (G.4)."
     },
     {
       "episodeTitle": "The Pelagian Controversy",
       "pid": "b010dstl",
-      "relevantPathsAI": ["A.1.d", "D.8"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.8"
+      ],
       "rationaleAI": "The dispute between Pelagius and Augustine over original sin, innate moral capacity, and the necessity of divine grace directly addresses the problems of free will (A.1.d) and doctrines of grace and salvation (D.8) that permanently shaped Western Christian theology."
     },
     {
       "episodeTitle": "The Fall",
       "pid": "p004y27p",
-      "relevantPathsAI": ["D.1.a", "D.4", "D.8", "G.4"],
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.4",
+        "D.8",
+        "G.4"
+      ],
       "rationaleAI": "The Genesis narrative of Adam and Eve's banishment is foundational to Christian doctrines of original sin and salvation (D.8), creation theology (D.4), the role of Sacred Scripture (D.1.a), and shaped Western conceptions of moral responsibility and human nature (G.4)."
     },
     {
       "episodeTitle": "Neoplatonism",
       "pid": "b01g62w1",
-      "relevantPathsAI": ["A.2", "D.2", "D.3.c.iii"],
+      "relevantPathsAI": [
+        "A.2",
+        "D.2",
+        "D.3.c.iii"
+      ],
       "rationaleAI": "Plotinus's metaphysical system of emanation from the One, linking human souls with the divine through contemplation and ascent, exemplifies pantheistic and panentheistic doctrines (D.3.c.iii) and mystical theology (D.2), and profoundly influenced Christian, Jewish, and Islamic theology on questions of divine personality (A.2)."
     },
     {
       "episodeTitle": "Good and Evil",
       "pid": "p00545g0",
-      "relevantPathsAI": ["A.1.d", "G.4"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "G.4"
+      ],
       "rationaleAI": "Traces how moral concepts evolved from religious frameworks through Enlightenment rationalism, engaging the problem of evil and suffering (A.1.d) and whether religion remains necessary for moral judgment (G.4), including Nietzsche's critique of Christianity and Darwin's challenge to divine command ethics."
     },
     {
       "episodeTitle": "Evil",
       "pid": "p00547g3",
-      "relevantPathsAI": ["A.1.d", "D.3", "G.4"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.3",
+        "G.4"
+      ],
       "rationaleAI": "Examines whether Christianity invented evil as a moral category, Nietzsche's critique of Christian 'herd morality,' and the philosophical history of evil from ancient thought through medieval Christianity — directly addressing the problem of evil (A.1.d) and religion's relationship to morality (G.4)."
     },
     {
       "episodeTitle": "The Age of Doubt",
       "pid": "p00546pj",
-      "relevantPathsAI": ["A.1.a", "D.3.d", "G.2"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "D.3.d",
+        "G.2"
+      ],
       "rationaleAI": "Charts the spread of religious doubt through Enlightenment rationalism, scientific discovery, and philosophical critique, covering deism, agnosticism, and atheism (D.3.d), challenges to the existence of God (A.1.a), and the conflict between religion and science (G.2)."
     },
     {
       "episodeTitle": "Karma",
       "pid": "m0020966",
-      "relevantPathsAI": ["A.1.d", "D.6", "D.8"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.6",
+        "D.8"
+      ],
       "rationaleAI": "The doctrine of karma as moral causation governing rebirth addresses free will versus determinism (A.1.d), divine governance and providence through karmic law (D.6), and paths to liberation as soteriological doctrines (D.8) across Hindu, Jain, and Buddhist traditions."
     },
     {
       "episodeTitle": "Hindu Ideas of Creation",
       "pid": "b03k289f",
-      "relevantPathsAI": ["D.3.a", "D.3.c", "D.4"],
+      "relevantPathsAI": [
+        "D.3.a",
+        "D.3.c",
+        "D.4"
+      ],
       "rationaleAI": "Hindu cosmogonic traditions from the Rig Veda's Nasadiya Sukta through cyclical creation-dissolution directly address doctrines of creation (D.4), encompassing both polytheistic (D.3.a) and monotheistic frameworks (D.3.c), and illustrating Hinduism's pluralistic theological character."
     },
     {
       "episodeTitle": "The Cult of Mithras",
       "pid": "b01pg5nt",
-      "relevantPathsAI": ["C", "E"],
+      "relevantPathsAI": [
+        "C",
+        "E"
+      ],
       "rationaleAI": "Mithraic mystery religion with its initiation grades, communal meals, and underground temples exemplifies basic patterns of religious action and association (C), while scholarly debate over its Iranian origins and relationship to Christianity illuminates the study and classification of religions (E)."
     },
     {
       "episodeTitle": "Free Will",
       "pid": "b00z5y9z",
-      "relevantPathsAI": ["A.1.d"],
+      "relevantPathsAI": [
+        "A.1.d"
+      ],
       "rationaleAI": "Free will as a philosophical and theological problem debated for over two millennia directly addresses the special problem of free will (A.1.d), spanning determinism, Spinoza's theological framework, and the implications for moral responsibility."
     },
     {
       "episodeTitle": "Julian of Norwich",
       "pid": "m001rgs4",
-      "relevantPathsAI": ["B", "D.2", "D.3.c"],
+      "relevantPathsAI": [
+        "B",
+        "D.2",
+        "D.3.c"
+      ],
       "rationaleAI": "Julian's Revelations of Divine Love records direct mystical visions of Christ (B, D.2), while her theology of divine love, the feminine aspects of God, and the nature of sin develops substantive doctrines concerning God within Christian monotheism (D.3.c)."
     },
     {
       "episodeTitle": "Kierkegaard",
       "pid": "b009fycc",
-      "relevantPathsAI": ["A.1", "B", "D.3.d"],
+      "relevantPathsAI": [
+        "A.1",
+        "B",
+        "D.3.d"
+      ],
       "rationaleAI": "Kierkegaard's exploration of the leap of faith, despair, and the religious stage of existence directly engages basic questions in philosophy of religion (A.1), religious experience through subjective inwardness (B), and critique of institutional Christianity that anticipates existentialist approaches to atheism and agnosticism (D.3.d)."
     },
     {
       "episodeTitle": "Hope",
       "pid": "m00017vl",
-      "relevantPathsAI": ["D.3", "G.4"],
+      "relevantPathsAI": [
+        "D.3",
+        "G.4"
+      ],
       "rationaleAI": "Christianity's elevation of hope to a theological virtue alongside faith and charity is a doctrinal development concerning God and salvation (D.3), while the contrast between Greek suspicion of hope and Christian valorization illuminates religion's relationship to morality (G.4)."
     },
     {
       "episodeTitle": "The Muses",
       "pid": "b07bft7v",
-      "relevantPathsAI": ["F.8", "G.1"],
+      "relevantPathsAI": [
+        "F.8",
+        "G.1"
+      ],
       "rationaleAI": "The Muses as goddesses associated with natural features and creative inspiration exemplify nature worship (F.8), while their cult raising questions about whether artistic creation channels divine gift directly addresses religion and art (G.1)."
     },
     {
       "episodeTitle": "Akhenaten",
       "pid": "b00mwsly",
-      "relevantPathsAI": ["D.3.a", "D.3.c", "E"],
+      "relevantPathsAI": [
+        "D.3.a",
+        "D.3.c",
+        "E"
+      ],
       "rationaleAI": "Akhenaten's elevation of the solar god Aten above the traditional polytheistic pantheon represents a historical transition from polytheism (D.3.a) toward monotheistic impulses (D.3.c), providing important evidence for the study and classification of religions (E)."
     },
     {
       "episodeTitle": "Shinto",
       "pid": "b014qnld",
-      "relevantPathsAI": ["A.2", "C", "E", "F.8"],
+      "relevantPathsAI": [
+        "A.2",
+        "C",
+        "E",
+        "F.8"
+      ],
       "rationaleAI": "Shinto's concept of kami as sacred presences in natural features exemplifies nature worship (F.8) and questions about whether the divine is personal or impersonal (A.2), while its ritual practices illustrate basic patterns of religious action (C) and its syncretism with Buddhism is significant for the classification of religions (E)."
     },
     {
       "episodeTitle": "The Consolations of Philosophy",
       "pid": "b00g46p0",
-      "relevantPathsAI": ["A.1.d", "D.6"],
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.6"
+      ],
       "rationaleAI": "Boethius's examination of divine providence, free will, and theodicy in the Consolation of Philosophy directly addresses the special problems of free will, evil and suffering (A.1.d) and doctrines of divine government and providence (D.6), bridging classical thought and Christian theology."
     },
     {
       "episodeTitle": "Guilt",
       "pid": "b0084kd8",
-      "relevantPathsAI": ["G.4"],
+      "relevantPathsAI": [
+        "G.4"
+      ],
       "rationaleAI": "Traces guilt through Christian doctrines of sin and conscience, exploring how religious concepts of moral responsibility shaped Western ethics and psychology — directly relevant to the relationship between religion and morality (G.4)."
     },
     {
       "episodeTitle": "Space in Religion and Science",
       "pid": "p00545d1",
-      "relevantPathsAI": ["D.4", "G.2"],
+      "relevantPathsAI": [
+        "D.4",
+        "G.2"
+      ],
       "rationaleAI": "Traces conceptions of space from medieval theology through modern physics, examining how religious metaphysics and scientific cosmology have shaped understanding of spatial reality — addressing doctrines of creation (D.4) and the relationship between religion and science (G.2)."
     },
     {
       "episodeTitle": "Duty",
       "pid": "p0054935",
-      "relevantPathsAI": ["G.4"],
+      "relevantPathsAI": [
+        "G.4"
+      ],
       "rationaleAI": "Examines how the concept of duty connects moral philosophy with religion, tracing the religious and theological roots of obligation and moral claims on human action — relevant to religion and morality (G.4)."
     },
     {
       "episodeTitle": "The Examined Life",
       "pid": "p00548dx",
-      "relevantPathsAI": ["A.1", "G.4"],
+      "relevantPathsAI": [
+        "A.1",
+        "G.4"
+      ],
       "rationaleAI": "Compares the claims of philosophy, science, the arts, and religion as competing paths to self-knowledge and human flourishing, directly engaging basic questions about what religion offers for understanding human existence (A.1) and the intersection of religion and morality (G.4)."
     },
     {
       "episodeTitle": "Materialism",
       "pid": "b009ydlj",
-      "relevantPathsAI": ["A.1.a", "D.3.d"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "D.3.d"
+      ],
       "rationaleAI": "Philosophical materialism's denial of spirit and divine agency, from ancient atomism through d'Holbach's condemnation for denying God, directly challenges the existence of the divine (A.1.a) and exemplifies the philosophical basis for atheism and agnosticism (D.3.d)."
     }
   ],

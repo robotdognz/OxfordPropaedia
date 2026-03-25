@@ -4,29 +4,46 @@
     {
       "episodeTitle": "The Dutch East India Company",
       "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.1.a"
-      ],
-      "rationaleAI": "The Dutch East India Company covers its monopoly on Dutch trade in Asia, spice trade, trading posts from the Cape to Japan, and its decline in 1799, directly matching B.2.a on the VOC's establishment of Dutch commercial supremacy and company rule in Java."
-    },
-    {
-      "episodeTitle": "The Ming Voyages",
-      "pid": "b015p8c2",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "The Ming voyages across Southeast Asia provide context for pre-European trade networks in the region, relevant to B.1.a on Portuguese rivalry with the Spanish in the Spice Islands."
+      "relevantPathsAI": ["B.2", "B.2.a", "B.1.a"],
+      "rationaleAI": "The VOC's 1602 charter, monopoly over nutmeg, mace, cloves, and cinnamon in the Indonesian archipelago, displacement of the Portuguese from key trading posts, and territorial control directly correspond to Dutch commercial supremacy under Coen (B.2.a) and the collapse of the Portuguese commercial empire (B.1.a)."
     },
     {
       "episodeTitle": "The East India Company",
       "pid": "p0054906",
-      "relevantPathsAI": [
-        "A.1.b"
-      ],
-      "rationaleAI": "The East India Company's rivalry with the Dutch VOC and its role in Malaya and Burma relate to A.1.b on British incursions into Malaya and the assumption of power from sultanates."
+      "relevantPathsAI": ["A.1", "A.1.b.ii"],
+      "rationaleAI": "The English East India Company's commercial and military expansion across Asia provided the institutional framework for British incursions into Malaya in the late 18th century and subsequent assumption of power from Malay sultanates (A.1.b.ii), as the Company's trading networks and territorial ambitions extended into Southeast Asia."
+    },
+    {
+      "episodeTitle": "The Ming Voyages",
+      "pid": "b015p8c2",
+      "relevantPathsAI": ["A.3.a", "B.1.a"],
+      "rationaleAI": "Zheng He's expeditions to Southeast Asia established tributary relationships and facilitated trade in porcelain, silk, and spices, providing essential context for Siam's trade relations with China and other Asian countries (A.3.a) and for the pre-European maritime commercial networks that Portuguese and Spanish powers later sought to dominate (B.1.a)."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["A.1", "A.1.a", "A.1.b", "A.3.c"],
+      "rationaleAI": "British imperial expansion, colonial governance structures, and economic exploitation are central to the Anglo-Burmese Wars and annexation of Burma (A.1.a), British intervention and assumption of power in Malaya (A.1.b), and Anglo-French competition that carved up Siamese territory (A.3.c)."
+    },
+    {
+      "episodeTitle": "The Russo-Japanese War",
+      "pid": "m000tnq3",
+      "relevantPathsAI": ["A.3.c"],
+      "rationaleAI": "Japan's 1905 victory over Russia altered the great-power balance in East and Southeast Asia, directly affecting Anglo-French activity in the region and the geopolitical pressures that shaped Siamese territorial losses to European powers during the reign of Chulalongkorn (A.3.c)."
+    },
+    {
+      "episodeTitle": "Coffee",
+      "pid": "m000c4x1",
+      "relevantPathsAI": ["B.2.b", "B.2.b.i"],
+      "rationaleAI": "Coffee as a colonial product grown by forced labor under the Dutch empire directly relates to the Culture System (Cultuur-stelsel) and its deleterious effects on Java from 1830 to 1870 (B.2.b.i), illustrating how Dutch colonial plantation economics exploited Javanese agricultural labor."
+    },
+    {
+      "episodeTitle": "The Opium Wars",
+      "pid": "b00776k9",
+      "relevantPathsAI": ["A.2.a", "A.1.b.ii"],
+      "rationaleAI": "Britain's use of overwhelming naval force to open Asian markets and impose unequal treaties established the model of European imperial coercion simultaneously applied across Southeast Asia, contextualizing French intervention in Indochina (A.2.a) and British commercial expansion into Malaya (A.1.b.ii)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

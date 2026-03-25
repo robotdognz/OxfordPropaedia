@@ -4,61 +4,52 @@
     {
       "episodeTitle": "The Spanish Civil War",
       "pid": "p00548wn",
-      "relevantPathsAI": [
-        "A.5.a.i"
-      ],
-      "rationaleAI": "The Spanish Civil War covers Franco's military uprising, German and Italian intervention, and the establishment of the Franco dictatorship, directly matching A.5.a.i on the Civil War, foreign intervention, and Franco's victory."
-    },
-    {
-      "episodeTitle": "Paul von Hindenburg",
-      "pid": "m002cfjz",
-      "relevantPathsAI": [
-        "A.3.a.i"
-      ],
-      "rationaleAI": "Hindenburg's role as Weimar Republic president and his appointment of Hitler as chancellor directly match A.3.a.i on the Weimar Republic and the rise of National Socialists to power."
+      "relevantPathsAI": ["A.5.a.i", "A.5.a"],
+      "rationaleAI": "The 1936-1939 Spanish Civil War, Franco's Nationalist victory with German and Italian support, and the establishment of an authoritarian regime directly correspond to the outline's coverage of Spain's Civil War, foreign intervention, and Franco's rule."
     },
     {
       "episodeTitle": "Lenin",
       "pid": "p00546pv",
-      "relevantPathsAI": [
-        "B.1.a.i"
-      ],
-      "rationaleAI": "Lenin's Bolshevik seizure of power, War Communism, and the New Economic Policy directly match B.1.a.i on the October Revolution, civil war, and the rise of Stalin."
+      "relevantPathsAI": ["B.1.a", "B.1.a.i", "B.1.a.ii"],
+      "rationaleAI": "Lenin's role in the October Revolution, establishment of the one-party Soviet state, civil war leadership, and the New Economic Policy directly map to the outline's coverage of the Soviet Union from 1917 through the post-Lenin succession struggle."
+    },
+    {
+      "episodeTitle": "Paul von Hindenburg",
+      "pid": "m002cfjz",
+      "relevantPathsAI": ["A.3.a.i"],
+      "rationaleAI": "Hindenburg's presidency of the Weimar Republic and his 1933 appointment of Hitler as Chancellor directly address the outline's coverage of the Weimar Republic's political instability and the Nazi rise to power that ended it."
+    },
+    {
+      "episodeTitle": "The Economic Consequences of the Peace",
+      "pid": "m001qtpf",
+      "relevantPathsAI": ["A.3.a.i", "A.1.a.iii", "A.2.a.i"],
+      "rationaleAI": "Keynes's argument that Versailles reparations would cause economic catastrophe connects to German reaction against the Treaty (A.3.a.i), British appeasement policy in the 1930s (A.1.a.iii), and French interwar disputes over reparations and collective security (A.2.a.i)."
     },
     {
       "episodeTitle": "Rosa Luxemburg",
       "pid": "b08lfc77",
-      "relevantPathsAI": [
-        "A.3.a.i",
-        "B.2.d.i"
-      ],
-      "rationaleAI": "Rosa Luxemburg's role in the Spartacist League and murder during the 1919 German revolution relates to A.3.a.i on the Weimar Republic's early period and challenges from left and right."
+      "relevantPathsAI": ["A.3.a.i"],
+      "rationaleAI": "Luxemburg's co-founding of the German Communist Party and her murder during the 1919 Spartacist uprising illustrate the violent opposition from the left that destabilized the early Weimar Republic, as specified in the outline's coverage of leftist and rightist challenges to the republic."
     },
     {
-      "episodeTitle": "Bohemia",
-      "pid": "p00548cz",
-      "relevantPathsAI": [
-        "B.2.c"
-      ],
-      "rationaleAI": "Bohemia's Czech national revival and formation of Czechoslovakia directly relate to B.2.c on Czechoslovakia's establishment under Masaryk and subsequent developments."
+      "episodeTitle": "Dietrich Bonhoeffer",
+      "pid": "b0bkpjns",
+      "relevantPathsAI": ["A.3.a.ii"],
+      "rationaleAI": "Bonhoeffer's opposition to Nazi anti-Semitism, participation in the resistance plot to kill Hitler, and execution at Flossenburg directly relate to the Third Reich's totalitarian police state, persecution of Jews, and internal resistance (1933-45)."
     },
     {
-      "episodeTitle": "Yeats and Irish Politics",
-      "pid": "b009twvd",
-      "relevantPathsAI": [
-        "A.1.b.i"
-      ],
-      "rationaleAI": "Yeats and Irish politics cover the Easter Rising, War of Independence, Civil War, and the Irish Free State, directly matching A.1.b.i on division of Ireland and establishment of the Irish Free State."
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["A.3.a.i", "A.3.a.ii"],
+      "rationaleAI": "Founded in Weimar-era Germany in 1923 to analyze why the working class did not revolt, the Frankfurt School's exile under Nazism and its critical theory of mass culture illuminate both Weimar intellectual life and the cultural impact of the Third Reich's suppression of dissent."
     },
     {
-      "episodeTitle": "The Cultural Revolution",
-      "pid": "m000q9b6",
-      "relevantPathsAI": [
-        "B.1.b"
-      ],
-      "rationaleAI": "The Cultural Revolution is about the Soviet Union's ideological rival China, not European history. Reject."
+      "episodeTitle": "The Gold Standard",
+      "pid": "m0013hh7",
+      "relevantPathsAI": ["A.1.a.i", "A.2.a.i", "A.3.a.i"],
+      "rationaleAI": "The gold standard's role in deepening the Great Depression by preventing expansionary monetary responses connects to interwar economic depression in Britain (A.1.a.i), France's financial crises (A.2.a.i), and the economic instability that undermined the Weimar Republic (A.3.a.i)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,157 +4,254 @@
     {
       "episodeTitle": "The Photon",
       "pid": "b051vlpf",
-      "relevantPathsAI": ["E.1", "E.2", "E.2.a", "E.2.b", "E.2.c"],
+      "relevantPathsAI": [
+        "E.1",
+        "E.2",
+        "E.2.a",
+        "E.2.b",
+        "E.2.c"
+      ],
       "rationaleAI": "The quantum of electromagnetic radiation, embodying wave-particle duality. Planck's quantisation of energy and Einstein's photoelectric effect (E.2.a) overturned classical wave theory. Photons as massless bosons mediating the electromagnetic force connect to the full scope of classical and quantum radiation theory (E.1, E.2), including interaction with atomic structures (E.2.c)."
     },
     {
       "episodeTitle": "Maxwell",
       "pid": "p005491g",
-      "relevantPathsAI": ["B.3.a", "B.4", "C.2", "D", "E.1", "E.1.b", "E.3.a"],
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.4",
+        "C.2",
+        "D",
+        "E.1",
+        "E.1.b",
+        "E.3.a"
+      ],
       "rationaleAI": "Maxwell's unification of electricity, magnetism, and light into electromagnetic field equations is the foundational theoretical achievement of this section. His equations predicted electromagnetic waves (E.1.b), formalized Faraday's induction law (B.3.a), described magnetic effects of currents (C.2), established field theory (D), and provided the mathematical formulation of electromagnetic theory (E.3.a)."
     },
     {
       "episodeTitle": "Michael Faraday",
       "pid": "b06s9rz9",
-      "relevantPathsAI": ["B.3.a", "B.4.a", "B.4.b", "B.5.d", "C.2", "C.4.a", "D.1"],
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.4.a",
+        "B.4.b",
+        "B.5.d",
+        "C.2",
+        "C.4.a",
+        "D.1"
+      ],
       "rationaleAI": "Faraday's discovery of electromagnetic induction—a moving wire near a magnet generating current—established Faraday's law (B.3.a, C.4.a). His laws of electrolysis address chemical effects of electricity (B.5.d), his work on diamagnetism connects to magnetic effects of steady currents (C.2), and his introduction of field lines originated field theory concepts (D.1)."
     },
     {
       "episodeTitle": "Superconductivity",
       "pid": "m001hfpc",
-      "relevantPathsAI": ["B.2.b", "C.1", "C.5", "C.5.c"],
+      "relevantPathsAI": [
+        "B.2.b",
+        "C.1",
+        "C.5",
+        "C.5.c"
+      ],
       "rationaleAI": "Zero electrical resistance directly concerns mechanisms of electrical conduction (B.2.b). The Meissner effect—expulsion of magnetic fields—is a fundamental magnetic property of superconducting matter (C.5, C.5.c), and BCS theory involving Cooper pairs connects to the quantum-mechanical basis of magnetism in materials."
     },
     {
       "episodeTitle": "Radiation",
       "pid": "b00nqljy",
-      "relevantPathsAI": ["E.1", "E.1.a", "E.1.c", "E.2.a"],
+      "relevantPathsAI": [
+        "E.1",
+        "E.1.a",
+        "E.1.c",
+        "E.2.a"
+      ],
       "rationaleAI": "Traces the unification of heat, visible light, radio waves, and X-rays as electromagnetic radiation within Maxwell's framework, covering the development of concepts about light's nature (E.1.a) and the electromagnetic spectrum (E.1.c). Planck's quantum hypothesis connects to evidence of the particle nature of radiation (E.2.a)."
     },
     {
       "episodeTitle": "Conductors and Semiconductors",
       "pid": "b01c7sml",
-      "relevantPathsAI": ["B.2", "B.2.a", "B.2.b"],
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.b"
+      ],
       "rationaleAI": "Directly addresses the physics of electrical conduction: how materials conduct electricity based on atomic structure, the mechanisms of conduction in metals and semiconductors (B.2.b), and the motion of charged particles in materials (B.2.a). Covers transistors, solar cells, and silicon chips as applications of semiconductor physics."
     },
     {
       "episodeTitle": "Plasma",
       "pid": "b07x6j4g",
-      "relevantPathsAI": ["B.2.a", "B.2.b", "C.3"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.b",
+        "C.3"
+      ],
       "rationaleAI": "Plasma consists of ionized atoms with free electrons and ions, directly relevant to motion of charged particles in electric fields (B.2.a) and conduction mechanisms in gases (B.2.b). Electromagnetic phenomena in plasma, including how charged particles respond to magnetic and electric fields, connect to C.3."
     },
     {
       "episodeTitle": "The Electron",
       "pid": "m001cf1n",
-      "relevantPathsAI": ["B.1.a", "B.2", "B.2.a", "B.2.d"],
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.2",
+        "B.2.a",
+        "B.2.d"
+      ],
       "rationaleAI": "Thomson's 1897 discovery of the electron established the fundamental charge carrier underlying all electrical phenomena. General phenomena of moving charges (B.1.a), mechanisms of electrical conduction (B.2), motion of charged particles in fields (B.2.a), and electron emission (B.2.d) all center on this particle."
     },
     {
       "episodeTitle": "The Earth's Core",
       "pid": "b05s3gyv",
-      "relevantPathsAI": ["C.1", "C.5.c.vi"],
+      "relevantPathsAI": [
+        "C.1",
+        "C.5.c.vi"
+      ],
       "rationaleAI": "The geodynamo mechanism—convective flow in Earth's liquid outer core generating the planetary magnetic field—directly addresses terrestrial magnetism (C.5.c.vi). The resulting magnetosphere shielding Earth from solar radiation illustrates large-scale magnetic phenomena (C.1)."
     },
     {
       "episodeTitle": "Imaginary Numbers",
       "pid": "b00tt6b2",
-      "relevantPathsAI": ["B.3.b", "B.3.c"],
+      "relevantPathsAI": [
+        "B.3.b",
+        "B.3.c"
+      ],
       "rationaleAI": "Complex numbers and complex analysis have practical applications in electrical engineering and radio wave theory. The mathematical and graphical representation of alternating currents (B.3.b) and basic laws of AC circuits (B.3.c) rely fundamentally on imaginary numbers and the complex plane."
     },
     {
       "episodeTitle": "Symmetry",
       "pid": "b00776v8",
-      "relevantPathsAI": ["D.1", "E.3"],
+      "relevantPathsAI": [
+        "D.1",
+        "E.3"
+      ],
       "rationaleAI": "Noether's theorem linking symmetries to conservation laws underpins electromagnetic field theory. Gauge symmetry is the fundamental organizing principle of electromagnetism, connecting to the definition of fields in physics (D.1) and the mathematical formulation of electromagnetic theory (E.3)."
     },
     {
       "episodeTitle": "Paul Dirac",
       "pid": "m000fw0p",
-      "relevantPathsAI": ["E.2.d", "F", "F.1"],
+      "relevantPathsAI": [
+        "E.2.d",
+        "F",
+        "F.1"
+      ],
       "rationaleAI": "The Dirac equation unified quantum mechanics with special relativity and pioneered quantum electrodynamics—the relativistic quantum theory of electromagnetic interactions. Directly relevant to relativistic electrodynamics (F.1) and the relation of electromagnetic radiation to quantum theory and relativity (E.2.d)."
     },
     {
       "episodeTitle": "Relativity",
       "pid": "b02144gl",
-      "relevantPathsAI": ["F", "F.1", "E.2.d"],
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "E.2.d"
+      ],
       "rationaleAI": "Einstein's special relativity resolved contradictions in electromagnetic theory and showed electric and magnetic fields are different aspects of the same electromagnetic field depending on reference frame. Directly underpins relativistic electrodynamics (F) and the relation of electromagnetic radiation to relativity (E.2.d)."
     },
     {
       "episodeTitle": "The Speed of Light",
       "pid": "p0038x9h",
-      "relevantPathsAI": ["E.1.a", "E.1.b", "E.3.b", "F"],
+      "relevantPathsAI": [
+        "E.1.a",
+        "E.1.b",
+        "E.3.b",
+        "F"
+      ],
       "rationaleAI": "The speed of light is the fundamental constant governing electromagnetic wave propagation in vacuum (E.3.b). Einstein's cosmic speed limit arose from Maxwell's electromagnetic theory (E.1.b) and is central to relativistic electrodynamics (F). Historical measurement of light's velocity traces concepts about the nature of light (E.1.a)."
     },
     {
       "episodeTitle": "The Invention of Radio",
       "pid": "b0368knw",
-      "relevantPathsAI": ["B.3.g", "B.4.d", "E.1.b", "E.3.b", "E.3.f"],
+      "relevantPathsAI": [
+        "B.3.g",
+        "B.4.d",
+        "E.1.b",
+        "E.3.b",
+        "E.3.f"
+      ],
       "rationaleAI": "Radio emerged from Maxwell's prediction of electromagnetic waves, confirmed by Hertz. Covers propagation of electric waves in cables (B.3.g), generation of electromagnetic radiation by changing currents (B.4.d), Maxwell's equations for radiation (E.1.b), transmission in free space (E.3.b), and antenna functions (E.3.f)."
     },
     {
       "episodeTitle": "Albert Einstein",
       "pid": "m001qdx1",
-      "relevantPathsAI": ["E.2.a", "E.2.d", "F"],
+      "relevantPathsAI": [
+        "E.2.a",
+        "E.2.d",
+        "F"
+      ],
       "rationaleAI": "Einstein's 1905 photoelectric effect paper demonstrated the particle nature of electromagnetic radiation (E.2.a), and his special relativity emerged from resolving contradictions in Maxwell's electrodynamics, underpinning relativistic electrodynamics (F) and the relation of radiation to relativity (E.2.d)."
     },
     {
       "episodeTitle": "Grand Unified Theory",
       "pid": "p00546nx",
-      "relevantPathsAI": ["D.1", "E.2.d"],
+      "relevantPathsAI": [
+        "D.1",
+        "E.2.d"
+      ],
       "rationaleAI": "The quest to unify fundamental forces begins with electromagnetism as one of the four forces. Gauge theories and the electroweak unification merge electromagnetism with the weak force, directly relevant to the scope of field theory (D.1) and the relation of electromagnetic radiation to quantum theory (E.2.d)."
     },
     {
       "episodeTitle": "Higgs Boson",
       "pid": "p004y2b7",
-      "relevantPathsAI": ["D.1", "E.2.d"],
+      "relevantPathsAI": [
+        "D.1",
+        "E.2.d"
+      ],
       "rationaleAI": "The Higgs mechanism emerged from spontaneous symmetry breaking and electroweak force unification—merging electromagnetism and the weak nuclear force. The Higgs field's central role in the Standard Model connects to the scope of field theory in physics (D.1) and electromagnetic radiation's relation to quantum theory (E.2.d)."
     },
     {
       "episodeTitle": "The Sun",
       "pid": "b048nlfb",
-      "relevantPathsAI": ["C.1", "E.1.c"],
+      "relevantPathsAI": [
+        "C.1",
+        "E.1.c"
+      ],
       "rationaleAI": "The Sun's magnetic field dynamics, sunspot cycles, solar flares, and coronal mass ejections disrupting terrestrial power grids involve large-scale electromagnetic phenomena (C.1). Solar radiation across the electromagnetic spectrum connects to E.1.c."
     },
     {
       "episodeTitle": "Pauli's Exclusion Principle",
       "pid": "b08kscgb",
-      "relevantPathsAI": ["C.5.c", "C.5.d"],
+      "relevantPathsAI": [
+        "C.5.c",
+        "C.5.d"
+      ],
       "rationaleAI": "The exclusion principle explains electron shell configurations determining the magnetic properties of atoms, including atomic magnetic dipole moments (C.5.d). Diamagnetism, paramagnetism, and ferromagnetism (C.5.c) arise from how electron configurations governed by this principle respond to magnetic fields."
     },
     {
       "episodeTitle": "Cosmic Rays",
       "pid": "b01sdnkg",
-      "relevantPathsAI": ["C.3", "C.3.a", "C.3.c"],
+      "relevantPathsAI": [
+        "C.3",
+        "C.3.a",
+        "C.3.c"
+      ],
       "rationaleAI": "Cosmic rays are charged subatomic particles whose trajectories are bent by magnetic and electric fields in space and Earth's magnetosphere, illustrating the force on moving charges (C.3.a) and motion of charges in combined electric and magnetic fields (C.3.c)."
     },
     {
       "episodeTitle": "The Graviton",
       "pid": "p003k9ks",
-      "relevantPathsAI": ["D.1", "D.3"],
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
       "rationaleAI": "Einstein's pursuit of a unified field theory linking gravity with electromagnetism bears directly on the definition and classification of fields in physics (D.1, D.3). The comparison between the graviton and the photon mediating electromagnetism illuminates the scope of field theory."
-    },
-    {
-      "episodeTitle": "Absolute Zero",
-      "pid": "b01r113g",
-      "relevantPathsAI": ["B.2.c", "C.5.c"],
-      "rationaleAI": "Ultra-low temperature phenomena include superconductivity (zero electrical resistance) and superfluidity, connecting to thermoelectric effects (B.2.c). The Meissner effect and quantum-mechanical electromagnetic behavior in materials at extreme cold connect to magnetism of matter (C.5.c)."
     },
     {
       "episodeTitle": "Mathematics' Unintended Consequences",
       "pid": "b00qj2nq",
-      "relevantPathsAI": ["B.3"],
+      "relevantPathsAI": [
+        "B.3"
+      ],
       "rationaleAI": "Explicitly notes that Renaissance work on cubic equations eventually enabled alternating current electrical systems, directly connecting pure mathematics to AC circuit theory (B.3) and providing historical context for the mathematical foundations of electrical engineering."
     },
     {
       "episodeTitle": "The Vacuum of Space",
       "pid": "b00jz5t3",
-      "relevantPathsAI": ["D.1", "E.3.b"],
+      "relevantPathsAI": [
+        "D.1",
+        "E.3.b"
+      ],
       "rationaleAI": "Quantum field theory reveals vacuum seething with virtual particle pairs and field interactions, directly relevant to the nature of fields in physics (D.1). The luminiferous ether debate and its resolution by Einstein connects to transmission of electromagnetic radiation in free space (E.3.b)."
     },
     {
       "episodeTitle": "Lise Meitner",
       "pid": "m002bt7s",
-      "relevantPathsAI": ["C.3.d"],
+      "relevantPathsAI": [
+        "C.3.d"
+      ],
       "rationaleAI": "Meitner's work on nuclear physics intersects with atomic magnetic moments and nuclear moments (C.3.d). Her application of mass-energy equivalence to nuclear splitting relied on understanding electromagnetic properties of atomic nuclei, connecting to magnetic dipole moments in the nuclear context."
     }
   ],

@@ -4,22 +4,16 @@
     {
       "episodeTitle": "The Mexican Revolution",
       "pid": "b00xhz8d",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3"
-      ],
-      "rationaleAI": "The Mexican Revolution (1910-1920) covers the 1917 Constitution and the revolution's legacy in Mexican politics and the PRI, providing direct context for A.1 on Obregon's coup and the subsequent institutionalization of revolutionary politics."
+      "relevantPathsAI": ["A", "A.1", "A.2"],
+      "rationaleAI": "The 1910-1920 revolution, the 1917 constitution's land reform and labor rights provisions, and the factional struggles among Zapata, Villa, and the constitutionalists directly produced the post-revolutionary order described in A.1 (Obregon's coup, Calles' National Revolutionary Party) and A.2 (Cardenas' social reforms and petroleum expropriation built on the constitutional framework)."
     },
     {
-      "episodeTitle": "The Haitian Revolution",
-      "pid": "b04lsqgs",
-      "relevantPathsAI": [
-        "B.2.a"
-      ],
-      "rationaleAI": "The Haitian Revolution created the first independent Black republic and its legacy of civil war between blacks and mulattoes directly provides context for B.2.a on Haiti's political instability and the struggle for power."
+      "episodeTitle": "The American Century",
+      "pid": "p0054594",
+      "relevantPathsAI": ["A.4.b", "B.1.a.ii", "B.1.d", "B.1.f", "B.2.a", "B.2.b", "B.2.c.iv", "B.2.d"],
+      "rationaleAI": "U.S. Cold War interventionism, economic imperialism, and support for authoritarian regimes are central themes across the section, from the CIA-sponsored coup in Guatemala (B.1.a.ii) and Contra insurgency in Nicaragua (B.1.d) to the Bay of Pigs and missile crisis with Cuba (B.2.c.iv), military interventions in the Dominican Republic (B.2.b), Haiti (B.2.a), Panama (B.1.f), and Grenada (B.2.d), and trade relations with Mexico (A.4.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

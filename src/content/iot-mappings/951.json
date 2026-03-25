@@ -4,28 +4,10 @@
     {
       "episodeTitle": "The Inca",
       "pid": "m0005t68",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.1.e",
-        "C.1.f",
-        "C.2"
-      ],
-      "rationaleAI": "The Inca Empire covering expansion under Pachacuti, the road network, quipu record-keeping, terraced agriculture, the civil war between Atahualpa and Huascar, and Pizarro's conquest directly corresponds to the entire section C on the Inca empire, its origins, expansion, and Spanish conquest."
-    },
-    {
-      "episodeTitle": "The Aztecs",
-      "pid": "p00548v0",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "The Aztec Empire provides comparative pre-Columbian context for understanding Andean civilization, though its geographic focus is Mesoamerica rather than the Andes. The overlap is primarily comparative."
+      "relevantPathsAI": ["A", "C.1.a", "C.1.c", "C.1.e", "C.1.f", "C.2.a"],
+      "rationaleAI": "Directly addresses the Inca Empire's expansion from the Cusco Valley under Pachacuti (C.1.c), the civil war between Atahualpa and Huascar (C.1.e), Pizarro's conquest in 1533 (C.1.f), and administrative innovations including quipu record-keeping and mit'a labor tribute (C.2.a), while providing a broad overview of Andean civilization's character and achievements (A)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

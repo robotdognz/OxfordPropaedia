@@ -2,16 +2,43 @@
   "sectionCode": "967",
   "mappings": [
     {
-      "episodeTitle": "Voyages of James Cook",
-      "pid": "b06qkrks",
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
       "relevantPathsAI": [
         "A.3",
-        "B.1",
-        "C.1"
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Cook's voyages mapped New Zealand and eastern Australia, made first European contact with the east coast, and contributed to British imperial expansion in Oceania, directly matching A.3 on European exploration, B.1 on early European exploration of Australia, and C.1 on British annexation of New Zealand."
+      "rationaleAI": "British imperial expansion encompassed Australia and the Pacific, with colonial governance structures, settler colonialism, and economic exploitation directly shaping the colonization of New South Wales (B.2), the development of the commonwealth (B.3), and the broader pattern of European colonial settlement across Oceania (A.3)."
+    },
+    {
+      "episodeTitle": "The Great Irish Famine",
+      "pid": "m0003rj1",
+      "relevantPathsAI": [
+        "B.2",
+        "C.3"
+      ],
+      "rationaleAI": "The 1840s Irish famine diaspora explicitly included Australia as a major destination, making Irish emigration a significant demographic force in the expansion and development of the Australian colonies (B.2) and contributing to immigration patterns that shaped New Zealand's economic development (C.3)."
+    },
+    {
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Jared Diamond's Guns, Germs and Steel uses Australia, New Guinea, and Polynesia as central case studies for how geographic and ecological factors determined why Europeans colonized Oceania rather than the reverse, directly addressing the geography, ethnography, and prehistory of the region (A.2) and offering a methodological framework for interpreting Oceanian historical development (A.1)."
+    },
+    {
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": [
+        "A.3",
+        "B.1"
+      ],
+      "rationaleAI": "The VOC's territorial and commercial operations in the Indonesian archipelago provided the base from which Dutch navigators made the earliest European explorations of Australia and New Zealand, establishing the Dutch context for European exploration and colonial presence in the region before British settlement."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,101 +4,88 @@
     {
       "episodeTitle": "Washington and the American Revolution",
       "pid": "p004y28v",
-      "relevantPathsAI": [
-        "A.1.a",
-        "A.1.a.i",
-        "A.1.a.ii",
-        "A.1.b.i",
-        "A.1.b.ii"
-      ],
-      "rationaleAI": "Washington covers the Declaration of Independence, command of the Continental Army, Yorktown, the Constitutional Convention, and his precedent-setting presidency, directly matching A.1.a on the Revolutionary period and A.1.b on strengthening the national government."
-    },
-    {
-      "episodeTitle": "The War of 1812",
-      "pid": "b01q95s0",
-      "relevantPathsAI": [
-        "A.1.b.iii",
-        "C.2.a"
-      ],
-      "rationaleAI": "The War of 1812 covers Madison's administration, impressment, Canadian expansion ambitions, Tecumseh, and the Treaty of Ghent, directly matching A.1.b.iii on the War of 1812 and C.2.a on Canada's participation."
-    },
-    {
-      "episodeTitle": "The Mexican-American War",
-      "pid": "b0b7d18j",
-      "relevantPathsAI": [
-        "A.2.d"
-      ],
-      "rationaleAI": "The Mexican-American War (1846-48) covers annexation of Texas, Manifest Destiny, and acquisition of California and New Mexico, directly matching A.2.d on westward expansionism and the Mexican War."
-    },
-    {
-      "episodeTitle": "The American Populists",
-      "pid": "b08tbf4g",
-      "relevantPathsAI": [
-        "B.2.f.v",
-        "B.3.b"
-      ],
-      "rationaleAI": "The American Populist movement covers farmers' grievances, the People's Party, Bryan's 1896 campaign, and Populism's influence on Progressive reforms, directly matching B.2.f.v on the Farmers' Alliances and Populist Party and B.3.b on the Progressive Movement."
-    },
-    {
-      "episodeTitle": "Frederick Douglass",
-      "pid": "b09qb0kc",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.2.c"
-      ],
-      "rationaleAI": "Frederick Douglass covers the abolitionist movement, his relationship with Lincoln, advocacy during the Civil War, and Reconstruction-era politics, directly matching A.3.a on the Abolitionist movement and A.2.c on the Age of Reform."
-    },
-    {
-      "episodeTitle": "The Lancashire Cotton Famine",
-      "pid": "b05tly3f",
-      "relevantPathsAI": [
-        "A.3.c.iii"
-      ],
-      "rationaleAI": "The Lancashire Cotton Famine covers the disruption of cotton supplies during the Civil War and its global economic impact, relating to A.3.c.iii on foreign affairs of the Union and Confederacy."
-    },
-    {
-      "episodeTitle": "President Ulysses S Grant",
-      "pid": "m0005f2k",
-      "relevantPathsAI": [
-        "B.1.a",
-        "B.1.b"
-      ],
-      "rationaleAI": "Grant's presidency covers Reconstruction, enforcement of the 14th and 15th Amendments, fighting the KKK, and the Panic of 1873, directly matching B.1.a-b on Radical Reconstruction and Grant's administrations."
-    },
-    {
-      "episodeTitle": "Uncle Tom's Cabin",
-      "pid": "p003c1bp",
-      "relevantPathsAI": [
-        "A.3.a",
-        "A.2.e"
-      ],
-      "rationaleAI": "Uncle Tom's Cabin intensified Northern opposition to slavery before the Civil War, directly matching A.3.a on literature of the period related to sectionalism and slavery and A.2.e on cultural development."
-    },
-    {
-      "episodeTitle": "Suffragism",
-      "pid": "b00jjgg8",
-      "relevantPathsAI": [
-        "B.3.b"
-      ],
-      "rationaleAI": "The suffragist movement covers women's voting rights from the Seneca Falls Convention (1848) through the achievement of suffrage, relating to the Progressive Movement under B.3.b."
+      "relevantPathsAI": ["A.1.a", "A.1.a.i", "A.1.a.ii", "A.1.b.i"],
+      "rationaleAI": "Washington's leadership of the Continental Army, the intellectual foundations of the Revolution in Locke and Montesquieu, and the Constitutional Convention directly address the American Revolutionary period and the strengthening of the national government through the federal Constitution."
     },
     {
       "episodeTitle": "The Franco-American Alliance 1778",
       "pid": "m000v99n",
-      "relevantPathsAI": [
-        "A.1.a.ii"
-      ],
-      "rationaleAI": "The Franco-American Alliance of 1778 covers France's entry into the Revolutionary War and the decisive role at Yorktown, directly matching A.1.a.ii on French military support in the War of Independence."
+      "relevantPathsAI": ["A.1.a.ii"],
+      "rationaleAI": "The 1778 Franco-American alliance and French naval power proving decisive at Yorktown directly address French military support during the U.S. War of Independence and the peace treaty of 1783."
     },
     {
-      "episodeTitle": "The Haymarket Affair",
-      "pid": "m0023gm2",
-      "relevantPathsAI": [
-        "B.2.e"
-      ],
-      "rationaleAI": "The Haymarket Affair of 1886 covers the eight-hour day movement, labour radicalism, and the Haymarket Riot, directly matching B.2.e on emergence of national labour unions and the Haymarket Riot (1886)."
+      "episodeTitle": "The Federalist Papers",
+      "pid": "m001r7sv",
+      "relevantPathsAI": ["A.1.b.i", "A.1.b.ii"],
+      "rationaleAI": "Hamilton, Madison, and Jay's advocacy for constitutional ratification in 1787-1788 directly covers the struggle for ratification and the development of national policies, including Hamilton's economic vision and the intellectual foundations of federalism and separation of powers."
+    },
+    {
+      "episodeTitle": "The War of 1812",
+      "pid": "b01q95s0",
+      "relevantPathsAI": ["A.1.b.iii", "C.2.a"],
+      "rationaleAI": "The War of 1812 under Madison's administration, fought over British trade restrictions, impressment of sailors, and frontier conflicts, directly addresses Madison's presidency and Canada's participation in the war alongside Britain."
+    },
+    {
+      "episodeTitle": "The Mexican-American War",
+      "pid": "b0b7d18j",
+      "relevantPathsAI": ["A.2.d", "A.3.a"],
+      "rationaleAI": "The 1846-1848 war over Texas annexation and the resulting acquisition of California and New Mexico directly covers westward expansionism, the Compromise of 1850, and the intensification of the slavery debate that fueled sectionalism."
+    },
+    {
+      "episodeTitle": "Little Women",
+      "pid": "m00245nl",
+      "relevantPathsAI": ["A.2.e", "B.4.a"],
+      "rationaleAI": "Alcott's 1868 novel set during the Civil War, drawing on her father's transcendentalist philosophy, directly addresses cultural development including the Transcendentalist movement and advances in American fiction from the mid-nineteenth century onward."
+    },
+    {
+      "episodeTitle": "The American West",
+      "pid": "p00548gg",
+      "relevantPathsAI": ["A.2.d", "B.2.b", "B.2.b.ii", "B.2.b.iv"],
+      "rationaleAI": "Manifest Destiny ideology, wagon trails to California and Oregon, gold rushes, cattle ranching, and military campaigns against Native peoples directly address westward expansion both before and after the Civil War, including cattlemen, the open range, and settler-Indian conflicts."
+    },
+    {
+      "episodeTitle": "The Lancashire Cotton Famine",
+      "pid": "b05tly3f",
+      "relevantPathsAI": ["A.3.c.iii"],
+      "rationaleAI": "The Union naval blockade of Confederate ports cutting cotton supply to British mills and its international diplomatic ramifications directly address the foreign affairs of the Union and the Confederacy during the Civil War."
+    },
+    {
+      "episodeTitle": "President Ulysses S Grant",
+      "pid": "m0005f2k",
+      "relevantPathsAI": ["B.1.a", "B.1.b"],
+      "rationaleAI": "Grant's presidency (1869-1877) during Reconstruction, his enforcement of the Enforcement Acts against the Ku Klux Klan, his support for African American civil rights, and the corruption scandals of his administration directly cover Radical Reconstruction and the Grant administrations."
+    },
+    {
+      "episodeTitle": "The American Populists",
+      "pid": "b08tbf4g",
+      "relevantPathsAI": ["B.1.c", "B.2.f.v"],
+      "rationaleAI": "The Populist movement among economically squeezed farmers, the founding of the People's Party demanding railroad regulation and currency reform, and white supremacist voter suppression in the South directly address the Farmers' Alliances, the Populist Party, and Jim Crow legislation in the New South."
+    },
+    {
+      "episodeTitle": "The California Gold Rush",
+      "pid": "b05nxgdd",
+      "relevantPathsAI": ["B.2.b.i"],
+      "rationaleAI": "The 1849 Gold Rush near Sacramento, the massive westward migration of Forty-Niners, and the reshaping of the western economy through mining wealth directly address the quest for gold and the boom-and-bust cycle in western mining towns."
+    },
+    {
+      "episodeTitle": "The Gold Standard",
+      "pid": "m0013hh7",
+      "relevantPathsAI": ["B.2.f.vi", "B.2.f.vii"],
+      "rationaleAI": "The gold standard's role in late nineteenth-century monetary policy, gold reserves, and currency debates directly addresses the silver issue, the Panic of 1893, repeal of the Sherman Silver Purchase Act, and the Gold Standard Act of 1900 under McKinley."
+    },
+    {
+      "episodeTitle": "The Boxer Rebellion",
+      "pid": "b00j4hmv",
+      "relevantPathsAI": ["B.3.a.ii"],
+      "rationaleAI": "The eight-nation military coalition's intervention in China during the 1900 Boxer Rebellion directly addresses the U.S. 'Open Door' policy and armed intervention in China, a key element of America's emergence as an imperial power."
+    },
+    {
+      "episodeTitle": "The American Ideal",
+      "pid": "p00546tb",
+      "relevantPathsAI": ["A.1.a.i", "B.3.c.iii"],
+      "rationaleAI": "The philosophical foundations of American self-conception in Enlightenment principles of liberty and self-governance, and Wilson's assertion that American identity is inseparable from idealism, connect the founding era's political opposition to Britain and Wilson's policies at the Paris Peace Conference."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

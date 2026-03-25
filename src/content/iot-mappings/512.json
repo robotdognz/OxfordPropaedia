@@ -2,315 +2,174 @@
   "sectionCode": "512",
   "mappings": [
     {
-      "episodeTitle": "Modern Culture",
-      "pid": "p00545bs",
-      "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "B.2",
-        "B.3"
-      ],
-      "rationaleAI": "Directly addresses definitions of culture, cultural comparisons, cultural adaptation and change, debates about high versus popular culture, postmodern challenges to cultural hierarchies, and the development of modern industrial civilization as mass society."
-    },
-    {
-      "episodeTitle": "Cave Art",
-      "pid": "m000mqn7",
-      "relevantPathsAI": [
-        "A.4",
-        "B.1.a"
-      ],
-      "rationaleAI": "Cave art reveals cognitive development, symbolic thinking, and the emergence of human creativity in Upper Paleolithic hunter-gatherer societies, directly addressing cultural adaptation and cultures of nomadic hunters and gatherers."
-    },
-    {
-      "episodeTitle": "The Written World: Episode 1",
-      "pid": "b018wfsc",
-      "relevantPathsAI": [
-        "A.4",
-        "B.2"
-      ],
-      "rationaleAI": "The origins of writing enabled the cognitive and social revolution that distinguished literate from oral societies, directly addressing cultural adaptation and change and the origins of civilized societies."
-    },
-    {
-      "episodeTitle": "Multiculturalism",
-      "pid": "p00545hw",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "B.3"
-      ],
-      "rationaleAI": "Multiculturalism examines cultural diversity in liberal democracies, cultural relativism, and debates about integration versus cultural preservation, directly addressing ethnocentrism, cultural relativism, cultural adaptation, and modern industrial civilization."
-    },
-    {
-      "episodeTitle": "Materialism and the Consumer",
-      "pid": "p00546q2",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "Materialism and consumer culture covers the development from early modern luxury trades through the consumer revolution to mass consumption, with Veblen's conspicuous consumption and Frankfurt School critique, directly addressing the development of modern industrial civilization and mass society."
-    },
-    {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A.4",
-        "B.3"
-      ],
-      "rationaleAI": "The Industrial Revolution transformed global economics and society through technological innovation, factory systems, and urbanisation, directly addressing cultural adaptation and change and the development of modern industrial civilization."
-    },
-    {
-      "episodeTitle": "The Theory of the Leisure Class",
-      "pid": "m001sdrt",
-      "relevantPathsAI": [
-        "B.3"
-      ],
-      "rationaleAI": "Veblen's Theory of the Leisure Class with its concepts of conspicuous consumption and leisure, and its evolutionary approach to economics, directly addresses the development of modern industrial civilization and mass society."
-    },
-    {
-      "episodeTitle": "Ibn Khaldun",
-      "pid": "b00qckbw",
-      "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "A.5",
-        "B.2"
-      ],
-      "rationaleAI": "Ibn Khaldun's Muqaddimah pioneered sociological analysis through concepts of group solidarity, cyclical civilizational rise and decline, and the distinction between sedentary and nomadic societies, directly addressing definitions of culture, cultural patterns, and theories of civilized societies' origin and evolution."
-    },
-    {
-      "episodeTitle": "Evolutionary Psychology",
-      "pid": "p00546xr",
-      "relevantPathsAI": [
-        "A.2",
-        "A.4"
-      ],
-      "rationaleAI": "Evolutionary psychology's claims about universal human nature, the relationship between evolved predispositions and cultural variation, and the nature-nurture debate directly address culture and personality and cultural adaptation."
-    },
-    {
-      "episodeTitle": "Cultural Imperialism",
-      "pid": "p00548h4",
-      "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "B.2"
-      ],
-      "rationaleAI": "The imposition of dominant cultural norms through empire—from Roman dress and law to modern globalisation—addresses ethnocentrism and cultural comparison (A.3), cultural adaptation and change under external pressure (A.4), and how civilized societies transmit and transform culture (B.2)."
-    },
-    {
-      "episodeTitle": "Cultural Rights in the 20th Century",
-      "pid": "p005458s",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "Cultural rights covers the tension between universal human rights and cultural relativism, indigenous peoples' cultural rights, and the politics of multiculturalism, directly addressing cultural comparisons and cultural relativism."
-    },
-    {
-      "episodeTitle": "Food",
-      "pid": "p00547n1",
-      "relevantPathsAI": [
-        "A.4",
-        "B.1.d",
-        "B.2"
-      ],
-      "rationaleAI": "The cultural history of food covers the Columbian Exchange, the relationship between food and national identity, and how culinary traditions reflect broader cultural values, addressing cultural adaptation and cultures of settled agriculturists and civilized societies."
-    },
-    {
-      "episodeTitle": "The Great Disruption",
-      "pid": "p00545kh",
-      "relevantPathsAI": [
-        "A.4",
-        "B.3"
-      ],
-      "rationaleAI": "Fukuyama's analysis of social disruption from the transition to information-based economies—declining social capital, family breakdown, erosion of trust—addresses cultural adaptation and change (A.4) and the transformation of modern industrial mass society (B.3)."
-    },
-    {
-      "episodeTitle": "The City - a history, part 1",
-      "pid": "b00rfhx2",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "The history of the city from Bronze Age origins covers the relationship between cities and civilization, the earliest cities in Mesopotamia, and urban development across cultures, directly addressing theories of civilized societies' origin and evolution."
-    },
-    {
-      "episodeTitle": "Nature",
-      "pid": "p005490t",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3"
-      ],
-      "rationaleAI": "The concept of nature examines the nature-culture distinction, the social construction of wilderness, and how concepts of nature have changed across cultures, directly addressing definitions of culture and cultural comparisons."
-    },
-    {
-      "episodeTitle": "The Evolution of Horses",
-      "pid": "m000fp9y",
-      "relevantPathsAI": [
-        "A.4",
-        "B.1.c"
-      ],
-      "rationaleAI": "Horse domestication in Central Asia transformed human civilization through warfare, agriculture, transportation, and trade, directly illustrating cultural adaptation and change (A.4) and the cultures of pastoralists and herdsmen dependent on animal husbandry (B.1.c)."
-    },
-    {
       "episodeTitle": "Lévi-Strauss",
       "pid": "b01sjjxl",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.5",
-        "B.1"
-      ],
-      "rationaleAI": "Lévi-Strauss's structuralist anthropology posited universal structures of human thought across all cultures, developed through fieldwork among indigenous Brazilian societies, and produced foundational theories of kinship, myth, and cultural classification bearing on definitions of culture (A.1), culture and personality (A.2), cultural patterns (A.5), and primitive societies (B.1)."
+      "relevantPathsAI": ["A", "A.1", "A.2", "A.3", "A.5", "B.1"],
+      "rationaleAI": "Lévi-Strauss's structuralist anthropology directly addresses definitions of culture, universal structures of human thought across societies, kinship systems, and myth classification — foundational contributions to cultural theory and the comparative study of primitive and civilized societies."
     },
     {
       "episodeTitle": "History as Science",
       "pid": "p00545f0",
-      "relevantPathsAI": [
-        "A.4",
-        "B.2"
-      ],
-      "rationaleAI": "Jared Diamond's thesis that geographic and ecological factors determined divergent civilizational trajectories over 13,000 years is a major theory of how civilized societies originated and evolved (B.2), grounded in environmental determinism as a driver of cultural adaptation and change (A.4)."
+      "relevantPathsAI": ["A.4", "B.1", "B.1.a", "B.1.b", "B.1.c", "B.1.d", "B.2"],
+      "rationaleAI": "Jared Diamond's thesis that geographic and ecological factors — domesticable plants and animals, continental axis orientation, disease exposure — determined divergent trajectories of human civilizations directly addresses why some societies remained hunter-gatherers while others developed complex civilizations, covering theories of cultural origin and evolution."
     },
     {
-      "episodeTitle": "The Frankfurt School",
-      "pid": "b00pr54s",
-      "relevantPathsAI": [
-        "A.1",
-        "A.5",
-        "B.3"
-      ],
-      "rationaleAI": "The Frankfurt School's critical theory analyzed mass culture—film, radio, popular music—as mechanisms maintaining capitalist conformity, directly engaging definitions of culture (A.1), cultural patterns of ideology (A.5), and the nature of modern industrial mass society (B.3)."
+      "episodeTitle": "The Great Disruption",
+      "pid": "p00545kh",
+      "relevantPathsAI": ["A.4", "B.3"],
+      "rationaleAI": "Fukuyama's analysis of three great historical disruptions in social order, the transition from industrial to information economies, and the decline of social capital directly addresses cultural adaptation and change and the development of modern industrial and post-industrial mass society."
     },
     {
       "episodeTitle": "Consequences of the Industrial Revolution",
       "pid": "b00wr9r7",
-      "relevantPathsAI": [
-        "A.4",
-        "B.3"
-      ],
-      "rationaleAI": "The social transformation from agricultural settlements to factory towns, with new theories of urban living and consumer society, illustrates cultural adaptation under industrialization (A.4) and the development of modern industrial mass society (B.3)."
+      "relevantPathsAI": ["A.4", "B.3"],
+      "rationaleAI": "The transformation of lifestyles from agricultural settlements to factory towns, the emergence of urban living, mass production, and consumer society directly illustrates cultural adaptation during the development of modern industrial civilization."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["A.1", "A.4", "B.3"],
+      "rationaleAI": "Critical theory's analysis of how mass culture — film, radio, popular music — functions to maintain social conformity directly addresses definitions of culture, cultural change under capitalism, and the nature of modern industrial mass society."
+    },
+    {
+      "episodeTitle": "Modern Culture",
+      "pid": "p00545bs",
+      "relevantPathsAI": ["A.1", "A.3", "B.3"],
+      "rationaleAI": "The debate over whether contemporary culture represents decline or enrichment, tensions between high and popular culture, and the role of cultural relativism in assessing standards of taste directly address definitions of culture, cultural comparison, and the character of modern mass society."
+    },
+    {
+      "episodeTitle": "Cultural Imperialism",
+      "pid": "p00548h4",
+      "relevantPathsAI": ["A.3", "A.4"],
+      "rationaleAI": "The examination of how dominant powers exert cultural influence through dress, art, education, and law — and whether this constitutes legitimate exchange or domination — directly addresses ethnocentrism, cultural comparison, and mechanisms of cultural adaptation and change."
     },
     {
       "episodeTitle": "Relativism",
       "pid": "p003hyc8",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "Philosophical relativism—the position that truth is situated within cultural and historical frameworks—is the intellectual foundation of cultural relativism (A.3), with direct implications for judging practices across different cultures."
+      "relevantPathsAI": ["A.3"],
+      "rationaleAI": "Philosophical relativism and the tension between cultural pluralism and universal moral standards directly address the outline's topic of cultural comparisons, ethnocentrism, and cultural relativism as analytical frameworks for understanding culture."
     },
     {
-      "episodeTitle": "Marriage",
-      "pid": "p00548c2",
-      "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "B.2"
-      ],
-      "rationaleAI": "Marriage as an evolving social institution across cultures—from polygamy in ancient civilizations to Christian monogamy to modern civil law—illustrates cultural adaptation and change (A.4), recurring cultural patterns (A.5), and the institutional development of civilized societies (B.2)."
-    },
-    {
-      "episodeTitle": "Hegel's Philosophy of History",
-      "pid": "m0017k8w",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Hegel's dialectical theory of civilizational progress—from despotic societies through aristocracies to modern states achieving universal freedom—is a foundational theory of the origin and evolution of civilized societies (B.2)."
+      "episodeTitle": "Multiculturalism",
+      "pid": "p00545hw",
+      "relevantPathsAI": ["A.3", "A.4"],
+      "rationaleAI": "The debate over multicultural integration, changing attitudes toward ethnicity and identity, and how globalization reshapes cultural identity directly address cultural comparisons, ethnocentrism, and cultural adaptation in contemporary societies."
     },
     {
       "episodeTitle": "Jung",
       "pid": "p004y2bf",
-      "relevantPathsAI": [
-        "A.2",
-        "A.5"
-      ],
-      "rationaleAI": "Jung's concepts of the collective unconscious and archetypes recurring across cultures and history directly address the relationship between culture and personality (A.2) and universal cultural patterns (A.5)."
+      "relevantPathsAI": ["A.2", "A.5"],
+      "rationaleAI": "Jung's concepts of the collective unconscious and archetypes recurring across cultures and history, along with personality typology (introversion/extroversion), directly address the relationship between culture and personality and the identification of universal cultural patterns."
     },
     {
-      "episodeTitle": "The Neanderthals",
-      "pid": "b00sq1nv",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "Neanderthals' cultural behaviors—stone tool manufacture, fire use, burial of the dead, and creation of personal ornaments—represent early evidence of culture among hunter-gatherer societies (B.1.a)."
+      "episodeTitle": "Materialism and the Consumer",
+      "pid": "p00546q2",
+      "relevantPathsAI": ["A.4", "B.3"],
+      "rationaleAI": "The history of consumer culture, how markets and advertising shaped identity, and the debate over whether material acquisition enriches or impoverishes human experience directly address cultural change and the character of modern industrial mass society."
     },
     {
-      "episodeTitle": "Doggerland",
-      "pid": "m0006707",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "The submerged landscape of Doggerland, inhabited by hunter-gatherer communities until c.7000 BC with evidence of rivers and wooded hills ideal for hunting and gathering, illustrates the cultures of nomadic and settled hunters and gatherers (B.1.a)."
+      "episodeTitle": "Marriage",
+      "pid": "p00548c2",
+      "relevantPathsAI": ["A.4", "A.5", "A.6"],
+      "rationaleAI": "The evolution of marriage across civilizations — from polygamy and concubinage through Christian monogamy to civil law — illustrates cultural adaptation and change, recurring cultural patterns, and the development of cultural institutions across different societies."
     },
     {
-      "episodeTitle": "Megaliths",
-      "pid": "m001jkzg",
-      "relevantPathsAI": [
-        "B.1.d",
-        "B.2"
-      ],
-      "rationaleAI": "Megalith construction required significant communal labor and engineering knowledge in Neolithic and Bronze Age societies, revealing social organization among settled agricultural communities (B.1.d) and early markers of civilizational development (B.2)."
+      "episodeTitle": "Hegel's Philosophy of History",
+      "pid": "m0017k8w",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Hegel's dialectical conception of historical development as the progressive realization of freedom, moving through stages of civilizational organization, constitutes a major theory of the origin and evolution of civilized societies."
     },
     {
-      "episodeTitle": "The Brothers Grimm",
-      "pid": "b00h8t18",
-      "relevantPathsAI": [
-        "A.4",
-        "A.5"
-      ],
-      "rationaleAI": "The Grimms' fairy tale collection as philological preservation of Germanic folk tradition, connected to Romantic nationalism and the construction of national cultural identity, illustrates cultural patterns (A.5) and cultural adaptation through deliberate archiving of oral tradition during modernization (A.4)."
+      "episodeTitle": "The Aztecs",
+      "pid": "p00548v0",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "The Aztec Triple Alliance empire — with its religious cosmology, political organization, tribute systems, urban planning, and enduring cultural legacy — exemplifies the development of a complex civilized society and its cultural characteristics."
     },
     {
       "episodeTitle": "The Celts",
       "pid": "p0054894",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "Celtic societies organized around tribal chieftains and warrior aristocracies, with distinctive art, metalwork, languages, and social structures, exemplify cultures of pre-urban tribal societies (B.1) spanning from Iberia to Anatolia."
+      "relevantPathsAI": ["B.1", "B.2"],
+      "rationaleAI": "Celtic societies organized around tribal chieftains and warrior aristocracies with distinctive art, metalwork, languages, and social structures illustrate nonurban tribal cultures and their relationship to emerging civilized societies in Europe."
     },
     {
-      "episodeTitle": "Englishness",
-      "pid": "p00546r8",
-      "relevantPathsAI": [
-        "A.1",
-        "A.3",
-        "A.5"
-      ],
-      "rationaleAI": "The construction of English national identity—exploring when and how cultural characteristics were forged and whether they remain meaningful amid demographic change—engages definitions of culture (A.1), ethnocentrism (A.3), and cultural patterns (A.5)."
+      "episodeTitle": "The Brothers Grimm",
+      "pid": "b00h8t18",
+      "relevantPathsAI": ["A.4", "A.5"],
+      "rationaleAI": "The Grimms' collection of fairy tales as part of broader philological research into Germanic culture, and the use of folk tradition to construct national cultural identity during German unification, illustrates cultural patterns and the role of tradition in cultural adaptation and change."
+    },
+    {
+      "episodeTitle": "Doggerland",
+      "pid": "m0006707",
+      "relevantPathsAI": ["B.1.a"],
+      "rationaleAI": "Evidence of Mesolithic communities inhabiting the now-submerged North Sea landscape — hunting, gathering, and being displaced by rising seas — provides a concrete example of nomadic and settled hunter-gatherer cultures and their vulnerability to environmental change."
+    },
+    {
+      "episodeTitle": "The Evolution of Horses",
+      "pid": "m000fp9y",
+      "relevantPathsAI": ["A.4", "B.1.c"],
+      "rationaleAI": "Horse domestication in Central Asia transformed human civilization through warfare, agriculture, transportation, and trade, directly connecting to pastoralist cultures and to cultural adaptation driven by the human-animal relationship."
+    },
+    {
+      "episodeTitle": "Megaliths",
+      "pid": "m001jkzg",
+      "relevantPathsAI": ["B.1.d", "B.2"],
+      "rationaleAI": "The communal labor, engineering knowledge, and ritual purposes behind megalithic construction reveal the social organization and cultural practices of Neolithic and Bronze Age settled agricultural communities, marking the transition toward civilized societies."
     },
     {
       "episodeTitle": "Herodotus",
       "pid": "m000zv33",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "Herodotus pioneered cross-cultural observation and comparison by documenting customs, geography, and practices across Egypt, Persia, Scythia, and Greece, making him a foundational figure in the tradition of cultural comparison (A.3)."
-    },
-    {
-      "episodeTitle": "The Calendar",
-      "pid": "p00548m9",
-      "relevantPathsAI": [
-        "A.5",
-        "B.2"
-      ],
-      "rationaleAI": "Calendar systems rooted in Babylonian astronomy, Hebrew theology, Roman reform, and papal standardization represent fundamental cultural patterns (A.5) and illustrate how civilized societies develop shared institutions for organizing temporal experience (B.2)."
+      "relevantPathsAI": ["A.3"],
+      "rationaleAI": "Herodotus pioneered cross-cultural comparison by systematically documenting the geography, ethnography, and cultural practices of Egyptians, Persians, Scythians, and Greeks — an early and influential exercise in the kind of cultural comparison central to this section."
     },
     {
       "episodeTitle": "The Bronze Age Collapse",
       "pid": "b07fl5bh",
-      "relevantPathsAI": [
-        "A.4",
-        "B.2"
-      ],
-      "rationaleAI": "The systemic destruction of interconnected Bronze Age civilizations around 1200 BC illustrates the vulnerability of complex interdependent cultures and theories of civilizational rise, decline, and transformation (B.2), as well as cultural adaptation under catastrophic change (A.4)."
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "The systemic collapse of interconnected palatial civilizations across the Eastern Mediterranean around 1200 BC illustrates theories of civilizational vulnerability, decline, and the cyclical nature of complex societies' development and disintegration."
     },
     {
-      "episodeTitle": "Homo erectus",
-      "pid": "m00168lg",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "Homo erectus exhibited cultural behaviors including tool use, group living, endurance hunting, and rudimentary communication over two million years, representing the earliest evidence of hunter-gatherer cultural development (B.1.a)."
+      "episodeTitle": "Englishness",
+      "pid": "p00546r8",
+      "relevantPathsAI": ["A.1", "A.5"],
+      "rationaleAI": "The examination of when and how English national identity was forged, the characteristics attributed to it across history, and whether it can still be meaningfully defined addresses definitions of culture and the persistence and transformation of cultural patterns."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 2",
+      "pid": "b018wy46",
+      "relevantPathsAI": ["A.4", "B.2"],
+      "rationaleAI": "The evolution of writing technology from scrolls to codices to printing shaped what could be written and preserved, connecting material changes in text production to the development of literacy, scholarship, and cultural transmission in civilized societies."
+    },
+    {
+      "episodeTitle": "The Cultural Revolution",
+      "pid": "m000q9b6",
+      "relevantPathsAI": ["A.4"],
+      "rationaleAI": "Mao's campaign to destroy the 'Four Olds' — old customs, culture, habits, and ideas — represents an extreme case of deliberate, state-directed cultural change and the forcible transformation of cultural patterns."
+    },
+    {
+      "episodeTitle": "The Calendar",
+      "pid": "p00548m9",
+      "relevantPathsAI": ["A.5", "B.2"],
+      "rationaleAI": "Calendar systems developed by Babylonian astronomers, Hebrew theologians, Roman emperors, and Catholic popes illustrate how civilized societies create shared cultural patterns for organizing temporal experience across religious, agricultural, and political domains."
+    },
+    {
+      "episodeTitle": "Rome and European Civilization",
+      "pid": "p00547ms",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Rome's foundational role in European civilization — through law, infrastructure, language, political thought, and religious institutions shaping culture across two millennia — exemplifies the origin and enduring influence of a civilized society's cultural framework."
+    },
+    {
+      "episodeTitle": "The Etruscan Civilisation",
+      "pid": "b0151q7j",
+      "relevantPathsAI": ["B.2"],
+      "rationaleAI": "Etruscan civilization's development of distinctive arts, military culture, and writing systems — and its profound cultural influence on Roman art, religion, and institutions — illustrates how civilized societies originate, transmit, and transform cultural elements."
+    },
+    {
+      "episodeTitle": "The British Empire's Legacy",
+      "pid": "p005459p",
+      "relevantPathsAI": ["A.3", "A.4"],
+      "rationaleAI": "The continuing effects of colonial history on national identity, immigration patterns, racial attitudes, and multicultural Britain address ethnocentrism in cultural comparisons and the long-term processes of cultural adaptation and change resulting from imperial contact."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-24"
+  "_generatedAt": "2026-03-25"
 }
