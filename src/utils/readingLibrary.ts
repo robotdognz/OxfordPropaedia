@@ -381,6 +381,73 @@ export function buildCoverageRings<T extends ChecklistBackedReadingEntry>(
   ];
 }
 
+export interface PartCoverageSegment {
+  partNumber: number;
+  colorHex: string;
+  title: string;
+  covered: number;
+  total: number;
+  fraction: number;
+}
+
+export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  layer: CoverageLayer,
+  partsMeta: Array<{ partNumber: number; colorHex: string; title: string }>,
+): PartCoverageSegment[] {
+  // Group all/covered keys by partNumber for the active layer
+  const allByPart = new Map<number, Set<string>>();
+  const coveredByPart = new Map<number, Set<string>>();
+
+  for (const pm of partsMeta) {
+    allByPart.set(pm.partNumber, new Set());
+    coveredByPart.set(pm.partNumber, new Set());
+  }
+
+  for (const entry of entries) {
+    const isChecked = Boolean(checklistState[entry.checklistKey]);
+
+    if (layer === 'subsection') {
+      // Subsection keys encode the section code before "::"
+      // Build a sectionCode -> partNumber lookup from sections
+      const sectionPartMap = new Map<string, number>();
+      for (const section of entry.sections) {
+        sectionPartMap.set(section.sectionCode, section.partNumber);
+      }
+
+      for (const key of entry.subsectionKeys ?? []) {
+        const sectionCode = key.includes('::') ? key.split('::')[0] : key;
+        const partNumber = sectionPartMap.get(sectionCode);
+        if (partNumber === undefined) continue;
+        allByPart.get(partNumber)?.add(key);
+        if (isChecked) coveredByPart.get(partNumber)?.add(key);
+      }
+    } else {
+      for (const section of entry.sections) {
+        const key = coverageKeyForSection(section, layer);
+        allByPart.get(section.partNumber)?.add(key);
+        if (isChecked) coveredByPart.get(section.partNumber)?.add(key);
+      }
+    }
+  }
+
+  return partsMeta.map((pm) => {
+    const all = allByPart.get(pm.partNumber) ?? new Set();
+    const covered = coveredByPart.get(pm.partNumber) ?? new Set();
+    const total = all.size;
+    const count = covered.size;
+    return {
+      partNumber: pm.partNumber,
+      colorHex: pm.colorHex,
+      title: pm.title,
+      covered: count,
+      total,
+      fraction: total > 0 ? count / total : 0,
+    };
+  });
+}
+
 export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry>(
   entries: TEntry[],
   completedChecklistKeys: Set<string>,

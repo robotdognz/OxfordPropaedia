@@ -264,6 +264,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           client:load
           baseUrl={base}
           initialSource={homepageInitialCoverageSource}
+          partsMeta={homepagePartCards.map(p => ({ partNumber: p.partNumber, colorHex: p.colorHex, title: p.title }))}
           showHeader={false}
           framed={false}
         />

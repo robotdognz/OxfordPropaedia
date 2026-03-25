@@ -14,6 +14,7 @@ import {
   COVERAGE_LAYER_META,
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildPartCoverageSegments,
   completedChecklistKeysFromState,
   countCompletedEntries,
   coverageLayerLabel,
@@ -22,10 +23,18 @@ import {
 } from '../../utils/readingLibrary';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import CoverageRings from '../ui/CoverageRings';
+import PartCoverageRing from '../ui/PartCoverageRing';
+
+interface PartMeta {
+  partNumber: number;
+  colorHex: string;
+  title: string;
+}
 
 interface HomepageCoverageExplorerProps {
   baseUrl: string;
   initialSource: HomepageCoverageSource;
+  partsMeta?: PartMeta[];
   showHeader?: boolean;
   framed?: boolean;
 }
@@ -55,6 +64,7 @@ function emptyRecommendationMessage(source: HomepageCoverageSource, layer: Cover
 export default function HomepageCoverageExplorer({
   baseUrl,
   initialSource,
+  partsMeta,
   showHeader = true,
   framed = true,
 }: HomepageCoverageExplorerProps) {
@@ -156,6 +166,10 @@ export default function HomepageCoverageExplorer({
       includeSubsections: source.includeSubsections,
     });
   }, [checklistState, source]);
+  const partSegments = useMemo(() => {
+    if (!source || !partsMeta) return [];
+    return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
+  }, [checklistState, source, activeLayer, partsMeta]);
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
   const wrapperClass = framed
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
@@ -310,6 +324,11 @@ export default function HomepageCoverageExplorer({
                       }}
                     />
                   </div>
+                  {partSegments.length > 0 && (
+                    <div class="shrink-0 hidden sm:block">
+                      <PartCoverageRing segments={partSegments} size={100} />
+                    </div>
+                  )}
                   <div class="min-w-0 space-y-2">
                     <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
                     <div class="space-y-1 text-xs text-slate-500">
