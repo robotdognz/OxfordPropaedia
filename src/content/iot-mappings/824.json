@@ -4,50 +4,103 @@
     {
       "episodeTitle": "The Buddha",
       "pid": "p00548br",
-      "relevantPathsAI": ["A.2", "A.3", "A.7", "A.8", "C.1", "C.1.a", "C.1.b", "C.1.c", "C.2", "C.2.a", "C.2.b", "C.2.c", "C.3.a", "B.4"],
+      "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "A.7",
+        "A.8",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.3.a",
+        "B.4"
+      ],
       "rationaleAI": "Directly covers Siddhartha Gautama's founding of Buddhism, the Four Noble Truths, Nirvana, the cycle of rebirth governed by karma, and the spread of Buddhism through South and Southeast Asia via monastic communities. Addresses all three major schools (Theravada, Mahayana, Vajrayana), meditation practice, ethics, and paths to spiritual liberation."
     },
     {
       "episodeTitle": "Zen",
       "pid": "b04sxv29",
-      "relevantPathsAI": ["A.4", "A.5", "C.2.b.i", "C.2.b.iii", "C.3.b", "C.4", "C.4.b"],
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "C.2.b.i",
+        "C.2.b.iii",
+        "C.3.b",
+        "C.4",
+        "C.4.b"
+      ],
       "rationaleAI": "Zen Buddhism's origins in the encounter between Buddhism and Chinese Daoist thought maps to Buddhism in China (A.4), while its spread to Japan and influence on martial arts, tea ceremony, and garden design covers Buddhism in Japan (A.5) and Buddhist art (C.4). Its prioritization of direct meditative experience exemplifies Mahayana views of absolute reality (C.2.b.i), and Zen is explicitly one of the individual Mahayana schools (C.2.b.iii)."
     },
     {
       "episodeTitle": "Ashoka the Great",
       "pid": "b0511tm1",
-      "relevantPathsAI": ["A.3", "A.7", "C.3.b"],
+      "relevantPathsAI": [
+        "A.3",
+        "A.7",
+        "C.3.b"
+      ],
       "rationaleAI": "Ashoka's 3rd-century BC conversion to Buddhism and propagation of the religion throughout his vast Indian empire addresses developments in India (A.3), while his missionary activities extended Buddhism to Sri Lanka and Southeast Asia (A.7). The stone pillar edicts promoting Buddhist principles illustrate the interplay of royal patronage and monastic institutions (C.3.b)."
     },
     {
       "episodeTitle": "Journey to the West",
       "pid": "m000w5hd",
-      "relevantPathsAI": ["A.4", "B.1", "B.2", "C.4.b"],
+      "relevantPathsAI": [
+        "A.4",
+        "B.1",
+        "B.2",
+        "C.4.b"
+      ],
       "rationaleAI": "Based on the historical 7th-century journey of the monk Xuanzang to India to retrieve Buddhist scriptures, this novel addresses the transmission of Buddhism to China (A.4) and Buddhist sacred literature (B.1). The mythological elaboration featuring Monkey, Pigsy, and Sandy enriched by a thousand years of retelling exemplifies Buddhist mythology (B.2) and religious expression in literary arts (C.4.b)."
     },
     {
       "episodeTitle": "Angkor Wat",
       "pid": "m0018hd7",
-      "relevantPathsAI": ["A.7", "C.4", "C.4.a", "C.4.b"],
+      "relevantPathsAI": [
+        "A.7",
+        "C.4",
+        "C.4.a",
+        "C.4.b"
+      ],
       "rationaleAI": "Angkor Wat's 900-year history as a centre for Hinduism, Buddhism, and Animism documents Buddhist traditions in Southeast Asia (A.7), while the largest religious structure on Earth with intricately carved surfaces exemplifies Buddhist symbolism and iconography (C.4.a) and religious expression in architecture (C.4.b)."
     },
     {
       "episodeTitle": "Shinto",
       "pid": "b014qnld",
-      "relevantPathsAI": ["A.5", "C.3.d"],
+      "relevantPathsAI": [
+        "A.5",
+        "C.3.d"
+      ],
       "rationaleAI": "Shinto's distinctive coexistence and syncretism with Buddhism since the sixth century addresses Buddhism's encounter with indigenous Japanese religion (A.5) and regional variations in Buddhist practices (C.3.d), illustrating how Buddhism adapted to local religious traditions in Japan."
     },
     {
       "episodeTitle": "The Upanishads",
       "pid": "b01nq7ct",
-      "relevantPathsAI": ["A.1", "B.3"],
+      "relevantPathsAI": [
+        "A.1",
+        "B.3"
+      ],
       "rationaleAI": "The Upanishads profoundly shaped Buddhist philosophical traditions, and their exploration of the nature of reality, the self, and ultimate truth constitutes the Hindu intellectual background from which Buddhism emerged (A.1). Concepts such as Brahman, Atman, and liberation from cyclical existence provided the philosophical vocabulary Buddhist thinkers engaged with and reinterpreted (B.3)."
     },
     {
       "episodeTitle": "Daoism",
       "pid": "b00wlgbg",
-      "relevantPathsAI": ["A.4"],
+      "relevantPathsAI": [
+        "A.4"
+      ],
       "rationaleAI": "Buddhism's arrival in China in the 2nd century BC and its relationship with Daoism illustrates how Buddhism interacted with indigenous Chinese religious and philosophical traditions as it established itself in East Asia (A.4)."
+    },
+    {
+      "episodeTitle": "The Silk Road",
+      "pid": "b00p315t",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Buddhism traveled eastward along the Silk Road into China and Japan, one of the most significant cultural transmissions along these routes (A.4 Buddhism in Central Asia and China)"
     }
   ],
   "_curatedBy": "ai",

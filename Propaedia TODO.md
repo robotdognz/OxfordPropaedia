@@ -4,6 +4,10 @@ Propaedia TODO:
 
     - Check if there are any unmapped readings (VSI, BBC, Wikipedia) and run assign on them
 
+    - See if we can bring in ratings from amazon and goodreads for VSI's, should be dynamic, not hard coded
+
+    - Check that the app will work fully offline on mobile
+
     - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     
 

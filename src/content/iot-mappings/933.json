@@ -4,44 +4,76 @@
     {
       "episodeTitle": "Genghis Khan",
       "pid": "b00773mr",
-      "relevantPathsAI": ["A", "C.1", "C.1.a", "C.1.b"],
+      "relevantPathsAI": [
+        "A",
+        "C.1",
+        "C.1.a",
+        "C.1.b"
+      ],
       "rationaleAI": "Temujin's unification of nomadic Mongol peoples on the steppe and his conquest of an empire stretching from the Caspian to Manchuria directly addresses the rise of Genghis Khan (C.1.a), his military and political organization, tactics, and the division of his empire among his sons (C.1.b), as well as the broader geography and ethnography of Inner Asian steppe peoples (A)."
     },
     {
       "episodeTitle": "The Great Wall of China",
       "pid": "b00s3h3w",
-      "relevantPathsAI": ["A", "B.1"],
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
       "rationaleAI": "The Wall's function as a boundary between settled agrarian and nomadic steppe civilizations illuminates the interactions between Inner Asian peoples and neighboring China (A), while its original construction against northern nomadic pressure and Ming-era reinforcement against Mongol incursions connects to the Hsiung-nu confederation's pressure on Han China (B.1)."
     },
     {
       "episodeTitle": "The Battle of Talas",
       "pid": "b04kf8ps",
-      "relevantPathsAI": ["A", "B.3.a"],
+      "relevantPathsAI": [
+        "A",
+        "B.3.a"
+      ],
       "rationaleAI": "The 751 AD battle between the Abbasid Caliphate and Tang Dynasty China near modern Kazakhstan determined the region's allegiance would shift toward Islam rather than Chinese cultural influence, directly bearing on the development of West Turkistan under Muslim rule (B.3.a) and interactions between Inner Asian peoples and neighboring civilizations (A)."
     },
     {
       "episodeTitle": "Marco Polo",
       "pid": "b01hxpxh",
-      "relevantPathsAI": ["C", "C.2.a"],
+      "relevantPathsAI": [
+        "C",
+        "C.2.a"
+      ],
       "rationaleAI": "Polo's overland journey through Central Asia and extended residence at the court of Kublai Khan provides a primary Western account of the Mongol Yuan dynasty in China (C.2.a), including descriptions of Mongol governance, Asian commerce, and the geography of the Mongol successor states (C)."
     },
     {
       "episodeTitle": "Alexander the Great",
       "pid": "b06d9bkx",
-      "relevantPathsAI": ["B.3.a", "B.5"],
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.5"
+      ],
       "rationaleAI": "Alexander's conquests reached Afghanistan, Pakistan, and Central Asia, establishing Greek rule that is explicitly part of Afghanistan's historical development (B.5, rule by Greeks to c. 1st century AD) and the early empires phase of West Turkistan's history (B.3.a)."
     },
     {
       "episodeTitle": "The Mamluks",
       "pid": "b03bfmlh",
-      "relevantPathsAI": ["C.2.d"],
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
       "rationaleAI": "The Mamluk defeat of the Mongols at Ain Jalut in 1260 marked a critical check on Mongol westward expansion under the Il-Khans (C.2.d), providing essential context for understanding the western limits and military reverses of the Mongol successor states in western Asia."
     },
     {
       "episodeTitle": "The Mughal Empire",
       "pid": "p004y27h",
-      "relevantPathsAI": ["B.5", "C.2.c"],
+      "relevantPathsAI": [
+        "B.5",
+        "C.2.c"
+      ],
       "rationaleAI": "Founded by Babur, a Timurid prince from Central Asia's Fergana Valley, the Mughal Empire represents the continuation of Timurid rule — the outline at C.2.c explicitly includes Timurid successors, and B.5 names Timurids and Mughals among Afghanistan's rulers, making the dynasty's Central Asian origins a direct part of Inner Asian history."
+    },
+    {
+      "episodeTitle": "The Silk Road",
+      "pid": "b00p315t",
+      "relevantPathsAI": [
+        "A",
+        "B.3.a",
+        "C.1.a"
+      ],
+      "rationaleAI": "The Silk Road traversed Inner Asia, passing through oasis cities like Samarkand; the peoples and states of Central Asia along these routes (A); West Turkistan under various empires along the trade corridors (B.3.a); Mongol conquests that periodically reopened and secured the routes (C.1.a)"
     }
   ],
   "_curatedBy": "ai",

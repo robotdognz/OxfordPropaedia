@@ -4,26 +4,56 @@
     {
       "episodeTitle": "Citizen Kane",
       "pid": "m001g37l",
-      "relevantPathsAI": ["A", "A.1", "A.2.b", "A.2.c", "A.2.e", "A.3", "B", "C.1", "C.3"],
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2.b",
+        "A.2.c",
+        "A.2.e",
+        "A.3",
+        "B",
+        "C.1",
+        "C.3"
+      ],
       "rationaleAI": "Welles's Citizen Kane exemplifies the classification and nature of motion-picture art (A.1), the roles of director and actor combined in a single auteur (A.2.b, A.2.c), innovative cinematographic and editing techniques (A.2.e, A.3), and the interrelation of literature and visual arts in film narrative (B). Hearst's campaign to suppress the film illustrates the motion-picture industry's power dynamics (C.1), and the film's canonical status makes it central to the study and appreciation of cinema (C.3)."
     },
     {
       "episodeTitle": "Walter Benjamin",
       "pid": "m0014710",
-      "relevantPathsAI": ["A.1", "C.2", "C.3"],
+      "relevantPathsAI": [
+        "A.1",
+        "C.2",
+        "C.3"
+      ],
       "rationaleAI": "Benjamin's The Work of Art in the Age of Mechanical Reproduction is a foundational text on how film and photography dissolved art's traditional aura and transformed aesthetic experience and political function, directly addressing the nature of motion-picture art (A.1), cinema's role as a medium of education and propaganda (C.2), and the theoretical study and appreciation of motion pictures (C.3)."
     },
     {
       "episodeTitle": "The Frankfurt School",
       "pid": "b00pr54s",
-      "relevantPathsAI": ["C.2", "C.3"],
+      "relevantPathsAI": [
+        "C.2",
+        "C.3"
+      ],
       "rationaleAI": "The Frankfurt School's critical theory specifically analyzed film, radio, and popular music as instruments of social conformity under capitalism, directly addressing cinema's function as a medium of propaganda and ideological control (C.2) and contributing foundational frameworks for media theory and the critical study of motion pictures (C.3)."
     },
     {
       "episodeTitle": "The Invention of Photography",
       "pid": "b07j699g",
-      "relevantPathsAI": ["A.2.e", "B"],
+      "relevantPathsAI": [
+        "A.2.e",
+        "B"
+      ],
       "rationaleAI": "Photography's optical and chemical principles provided the direct technological foundation for motion pictures (A.2.e), and the debates it provoked about visual representation, the relationship between mechanical reproduction and artistic expression, and its claimed displacement of painting established the aesthetic framework within which cinema would develop (B)."
+    },
+    {
+      "episodeTitle": "The Seventh Seal",
+      "pid": "m001qmkx",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2.c",
+        "C.3"
+      ],
+      "rationaleAI": "Bergman's 1957 film is a landmark of European art cinema (A.1 as classification of motion pictures); the director's role in shaping its distinctive visual and thematic character (A.2.c); it became a canonical film studied and appreciated as major cinematic art (C.3)"
     }
   ],
   "_curatedBy": "ai",

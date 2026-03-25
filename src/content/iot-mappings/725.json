@@ -4,68 +4,114 @@
     {
       "episodeTitle": "The Iron Age",
       "pid": "b00zm1ks",
-      "relevantPathsAI": ["B.2", "B.2.a", "B.2.a.ii"],
+      "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.a.ii"
+      ],
       "rationaleAI": "Iron smelting technology spreading from the Middle East around 1000 BC is a foundational example of extractive pyrometallurgy, directly addressing smelting processes for removing molten metal from ore and the higher-temperature challenges of iron versus bronze production."
     },
     {
       "episodeTitle": "The Industrial Revolution",
       "pid": "b00wqdc7",
-      "relevantPathsAI": ["A", "B", "B.2.a.iii"],
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.2.a.iii"
+      ],
       "rationaleAI": "Mechanized textile production, cheap iron and steel manufacturing, and factory organization exemplify the full scope of industrial production processes, with specific relevance to converting techniques for making steel and the transformation from craft to industrial-scale materials processing."
     },
     {
       "episodeTitle": "The Science of Glass",
       "pid": "b05w456c",
-      "relevantPathsAI": ["A.2.a.ii", "A.5", "A.5.a"],
+      "relevantPathsAI": [
+        "A.2.a.ii",
+        "A.5",
+        "A.5.a"
+      ],
       "rationaleAI": "Float glass manufacturing, fiber optics production, and metallic glass fabrication are direct examples of casting and molding nonmetals, while the liquid-to-solid glass transition and thermal processing techniques address property modification of amorphous materials."
     },
     {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
-      "relevantPathsAI": ["A.1.b", "A.2.a.ii", "A.4.b"],
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.a.ii",
+        "A.4.b"
+      ],
       "rationaleAI": "Polymerization as a chemical processing technique for creating synthetic materials like nylon, plastics, and paints directly addresses preliminary chemical processing; injection molding of polymers relates to forming nonmetals; and synthetic adhesives connect to adhesive bonding processes."
     },
     {
       "episodeTitle": "Plasma",
       "pid": "b07x6j4g",
-      "relevantPathsAI": ["A.3", "A.5.b"],
+      "relevantPathsAI": [
+        "A.3",
+        "A.5.b"
+      ],
       "rationaleAI": "Plasma etching for microchip fabrication is a direct application of material removal processes in semiconductor manufacturing, and plasma processing exemplifies property modification through exposure to physical conditions other than heat or cold."
     },
     {
       "episodeTitle": "Conductors and Semiconductors",
       "pid": "b01c7sml",
-      "relevantPathsAI": ["A.5", "A.5.a", "A.5.b"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.5.b"
+      ],
       "rationaleAI": "Semiconductor fabrication enabling transistors, solar cells, and silicon chips involves property modification through both thermal processing and exposure to controlled physical conditions, representing core industrial production processes in modern electronics manufacturing."
     },
     {
       "episodeTitle": "Heat",
       "pid": "b00fq3d4",
-      "relevantPathsAI": ["A.5.a", "A.5.a.i"],
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.a.i"
+      ],
       "rationaleAI": "The scientific understanding of heat underpinning thermodynamics directly connects to thermal processing in manufacturing, including basic heat-treating operations such as annealing and hardening, while the Industrial Revolution context links heat science to its industrial production applications."
     },
     {
       "episodeTitle": "Carbon",
       "pid": "p003c1cj",
-      "relevantPathsAI": ["A.5", "A.1.b"],
+      "relevantPathsAI": [
+        "A.5",
+        "A.1.b"
+      ],
       "rationaleAI": "Carbon's varied industrial forms from soft graphite to hard diamond, the discovery of buckminsterfullerene, and carbon's role in nanotechnology connect to property modification of materials and chemical processing of industrial raw materials into engineered products."
     },
     {
       "episodeTitle": "Superconductivity",
       "pid": "m001hfpc",
-      "relevantPathsAI": ["A.5.a.iv", "A.5.b"],
+      "relevantPathsAI": [
+        "A.5.a.iv",
+        "A.5.b"
+      ],
       "rationaleAI": "Superconducting materials require cryogenic temperature processing near absolute zero, directly addressing exposure to cryogenic temperatures as a property modification technique, with practical manufacturing applications in MRI magnets and particle accelerator components."
     },
     {
       "episodeTitle": "Michael Faraday",
       "pid": "b06s9rz9",
-      "relevantPathsAI": ["A.6.b", "B.2.b"],
+      "relevantPathsAI": [
+        "A.6.b",
+        "B.2.b"
+      ],
       "rationaleAI": "Faraday's laws of electrolysis established the scientific basis for electrochemical processes including electroplating and electrometallurgical techniques such as electrorefining and electrowinning, which are core industrial production processes in metallurgy."
     },
     {
       "episodeTitle": "States of Matter",
       "pid": "b03zdbr4",
-      "relevantPathsAI": ["A.2", "A.5"],
+      "relevantPathsAI": [
+        "A.2",
+        "A.5"
+      ],
       "rationaleAI": "Understanding phase transitions between solid, liquid, and gas states governed by temperature and pressure is fundamental to forming processes that cast or mold liquid materials and to property modification through thermal processing, with glasses and liquid crystals as industrially engineered intermediate states."
+    },
+    {
+      "episodeTitle": "Vase-mania",
+      "pid": "m00268hz",
+      "relevantPathsAI": [
+        "A.2.a.ii"
+      ],
+      "rationaleAI": "Josiah Wedgwood's translation of aristocratic taste into commercially available ceramics represents industrial production processes - specifically casting and molding nonmetals (A.2.a.ii) - democratizing classical aesthetics through manufacturing"
     }
   ],
   "_curatedBy": "ai",

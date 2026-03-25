@@ -4,152 +4,245 @@
     {
       "episodeTitle": "The Measurement of Time",
       "pid": "b01dvw6t",
-      "relevantPathsAI": ["A", "B.2", "D.1.c"],
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "D.1.c"
+      ],
       "rationaleAI": "Traces the full history of timekeeping from ancient water clocks and sundials through medieval mechanical clocks to pendulum mechanisms, railway-driven standardization, the 1884 International Meridian Conference, and modern atomic clocks accurate to one second in fifteen million years—directly covering time measurement standards (B.2), time-measuring devices (D.1.c), and the theory of measurement standardization (A)."
     },
     {
       "episodeTitle": "The Antikythera Mechanism",
       "pid": "m0024x0g",
-      "relevantPathsAI": ["D.1.c", "D.2.c", "H.1"],
+      "relevantPathsAI": [
+        "D.1.c",
+        "D.2.c",
+        "H.1"
+      ],
       "rationaleAI": "A two-thousand-year-old bronze analogue computer with intricate gearing that calculated positions of sun, moon, and planets and tracked eclipse cycles, exemplifying ancient precision measurement of time and celestial position (D.1.c, D.2.c) and an early automated instrumentation system (H.1)."
     },
     {
       "episodeTitle": "Longitude",
       "pid": "m000vyn6",
-      "relevantPathsAI": ["B.2", "D.1.c", "D.2.c.i", "D.2.c.ii", "G.7"],
+      "relevantPathsAI": [
+        "B.2",
+        "D.1.c",
+        "D.2.c.i",
+        "D.2.c.ii",
+        "G.7"
+      ],
       "rationaleAI": "The longitude problem drove competing advances in Harrison's precision chronometer (D.1.c, B.2), astronomical lunar distance methods using sextants (D.2.c.ii), and celestial navigation combining compass bearings and angular measurement (D.2.c.i, G.7)."
     },
     {
       "episodeTitle": "The Microscope",
       "pid": "b03jdy3p",
-      "relevantPathsAI": ["E.1.a", "C"],
+      "relevantPathsAI": [
+        "E.1.a",
+        "C"
+      ],
       "rationaleAI": "Directly covers the development of optical microscopes—Leeuwenhoek's single-lens instruments and Hooke's compound microscope—and the principles of lens-based magnification that opened an unseen world of microorganisms, cells, and material structure to systematic observation."
     },
     {
       "episodeTitle": "Optics",
       "pid": "b00774t5",
-      "relevantPathsAI": ["E.1.a", "E.1.b", "C"],
+      "relevantPathsAI": [
+        "E.1.a",
+        "E.1.b",
+        "C"
+      ],
       "rationaleAI": "Covers the development of optical instruments including spectacles, giant telescopes, and microscopes from the early modern period, along with Kepler's formulation of optical theory explaining how these instruments operate, directly relevant to microscopes (E.1.a), telescopes (E.1.b), and instrument operating principles (C)."
     },
     {
       "episodeTitle": "Tycho Brahe",
       "pid": "m001hnlf",
-      "relevantPathsAI": ["G.6", "D.2.c.ii"],
+      "relevantPathsAI": [
+        "G.6",
+        "D.2.c.ii"
+      ],
       "rationaleAI": "Brahe's observatory Uraniborg produced naked-eye astronomical measurements of unprecedented accuracy using purpose-built surveying-type angular instruments, establishing new standards for systematic empirical data collection that directly advanced astronomical observation systems (G.6) and precision angular measurement (D.2.c.ii)."
     },
     {
       "episodeTitle": "The Observatory at Jaipur",
       "pid": "b00hmpdd",
-      "relevantPathsAI": ["G.6", "D.1.c", "D.2.c.ii"],
+      "relevantPathsAI": [
+        "G.6",
+        "D.1.c",
+        "D.2.c.ii"
+      ],
       "rationaleAI": "The Jantar Mantar's vast masonry instruments measured celestial positions, time, and eclipses with remarkable precision using architectural-scale angular instruments without lenses, directly exemplifying astronomical observation systems (G.6), time measurement devices (D.1.c), and surveying instruments (D.2.c.ii)."
     },
     {
       "episodeTitle": "Astronomy and Empire",
       "pid": "p003c1cd",
-      "relevantPathsAI": ["G.6", "G.7", "D.2.c.ii"],
+      "relevantPathsAI": [
+        "G.6",
+        "G.7",
+        "D.2.c.ii"
+      ],
       "rationaleAI": "Cook's voyages to observe the Transit of Venus used precise astronomical measurement to determine the Sun-Venus distance, while the Royal Observatory at Greenwich and the integration of celestial observation with maritime navigation connect directly to astronomical observation systems (G.6), navigational techniques (G.7), and surveying instruments (D.2.c.ii)."
     },
     {
       "episodeTitle": "Meteorology",
       "pid": "p00548v8",
-      "relevantPathsAI": ["G.5", "D.2.a", "D.1.d"],
+      "relevantPathsAI": [
+        "G.5",
+        "D.2.a",
+        "D.1.d"
+      ],
       "rationaleAI": "Traces the development of meteorological measurement from the Renaissance-era invention of the barometer (D.2.a), thermometer (D.1.d), and hygrometer through to modern satellite observation and computational modeling, directly covering meteorological measurement systems (G.5) and pressure and temperature measuring instruments."
     },
     {
       "episodeTitle": "Gravitational Waves",
       "pid": "b007h8gv",
-      "relevantPathsAI": ["E.1.d", "F", "G.6"],
+      "relevantPathsAI": [
+        "E.1.d",
+        "F",
+        "G.6"
+      ],
       "rationaleAI": "Detection of gravitational waves using laser interferometers such as LIGO exemplifies cutting-edge interferometric measurement technology (E.1.d), represents specialized scientific research apparatus (F), and opens an entirely new observational window on the cosmos complementing electromagnetic astronomy (G.6)."
     },
     {
       "episodeTitle": "Seismology",
       "pid": "m00154gh",
-      "relevantPathsAI": ["F.6", "H.1"],
+      "relevantPathsAI": [
+        "F.6",
+        "H.1"
+      ],
       "rationaleAI": "Seismographs are explicitly listed in the section outline (F.6); the episode covers their development from early instruments to Cold War-driven global seismograph networks that automatically record and transmit data, exemplifying automated instrumentation systems (H.1)."
     },
     {
       "episodeTitle": "The Challenger Expedition 1872-1876",
       "pid": "m001fcvd",
-      "relevantPathsAI": ["G.3", "G.4"],
+      "relevantPathsAI": [
+        "G.3",
+        "G.4"
+      ],
       "rationaleAI": "The first systematic oceanographic survey gathered data on ocean temperatures, currents, chemistry, and seafloor geology through depth soundings covering nearly 70,000 nautical miles, directly covering hydrographic charting (G.3) and oceanographic measurement (G.4)."
     },
     {
       "episodeTitle": "Magnetism",
       "pid": "p003k9dd",
-      "relevantPathsAI": ["D.2.c.i", "G.7"],
+      "relevantPathsAI": [
+        "D.2.c.i",
+        "G.7"
+      ],
       "rationaleAI": "Covers the magnetic compass as a medieval navigational instrument and Gilbert's De Magnete (1600) as the first systematic scientific study of magnetism, directly relevant to compass technology for direction finding (D.2.c.i) and navigational techniques (G.7)."
     },
     {
       "episodeTitle": "Eclipses",
       "pid": "m000qmnj",
-      "relevantPathsAI": ["G.6", "A"],
+      "relevantPathsAI": [
+        "G.6",
+        "A"
+      ],
       "rationaleAI": "Eclipses have served as critical astronomical observation events enabling fundamental measurements—the speed of light, Earth's roundness, helium's discovery, and confirming General Relativity—illustrating how astronomical observations (G.6) function as measurement systems validating physical theories (A)."
     },
     {
       "episodeTitle": "Superconductivity",
       "pid": "m001hfpc",
-      "relevantPathsAI": ["F.3", "F.4"],
+      "relevantPathsAI": [
+        "F.3",
+        "F.4"
+      ],
       "rationaleAI": "Superconducting technology enables particle accelerators such as the Large Hadron Collider (F.3), SQUID magnetometers for ultra-sensitive magnetic field measurement, and MRI medical imaging systems, all representing specialized scientific research and measurement apparatus."
     },
     {
       "episodeTitle": "Time",
       "pid": "p005465z",
-      "relevantPathsAI": ["A", "B.2"],
+      "relevantPathsAI": [
+        "A",
+        "B.2"
+      ],
       "rationaleAI": "Addresses time as a measurable physical quantity, the extraordinary precision of atomic clocks, and the philosophical gap between increasingly precise measurement and unresolved questions about time's nature, directly engaging the theory of measurement (A) and time measurement standards (B.2)."
     },
     {
       "episodeTitle": "The Speed of Light",
       "pid": "p0038x9h",
-      "relevantPathsAI": ["A", "C"],
+      "relevantPathsAI": [
+        "A",
+        "C"
+      ],
       "rationaleAI": "The progressive measurement of light's finite velocity from Roemer's seventeenth-century observations through increasingly precise modern experiments exemplifies the theory and practice of precision measurement of a fundamental physical constant, and the development of optical measurement principles."
     },
     {
       "episodeTitle": "Cosmic Rays",
       "pid": "b01sdnkg",
-      "relevantPathsAI": ["D.2.f", "F.7"],
+      "relevantPathsAI": [
+        "D.2.f",
+        "F.7"
+      ],
       "rationaleAI": "Discovery and study of cosmic rays involves instruments for measuring ionizing radiation (D.2.f) and particle detectors (F.7), both explicitly listed in the section outline, and cosmic ray research drove major advances in particle physics instrumentation."
     },
     {
       "episodeTitle": "The Measurement Problem in Physics",
       "pid": "b00hv1dp",
-      "relevantPathsAI": ["A"],
+      "relevantPathsAI": [
+        "A"
+      ],
       "rationaleAI": "The quantum measurement problem—how observation collapses superposition states into definite outcomes—addresses fundamental questions at the heart of the theory of measurement (A), examining what measurement means at the most basic physical level."
     },
     {
       "episodeTitle": "The Science of Glass",
       "pid": "b05w456c",
-      "relevantPathsAI": ["C", "E.1.a", "E.1.b"],
+      "relevantPathsAI": [
+        "C",
+        "E.1.a",
+        "E.1.b"
+      ],
       "rationaleAI": "Glass is the enabling material for optical instrumentation—lenses in microscopes (E.1.a) and telescopes (E.1.b), fiber optics for modern telecommunications—making its material science directly relevant to the principles and processes by which optical measurement and observation instruments operate (C)."
     },
     {
       "episodeTitle": "The Cavendish Family in Science",
       "pid": "b00sdbw4",
-      "relevantPathsAI": ["D.2.d", "F"],
+      "relevantPathsAI": [
+        "D.2.d",
+        "F"
+      ],
       "rationaleAI": "Henry Cavendish's torsion balance experiment measuring Earth's density exemplifies precision gravimetric instrumentation (D.2.d), and the family's funding of the Cavendish Laboratory at Cambridge established a world-leading center for experimental physics research apparatus (F)."
     },
     {
       "episodeTitle": "Fossils",
       "pid": "p00547d3",
-      "relevantPathsAI": ["F.4", "E.1.a"],
+      "relevantPathsAI": [
+        "F.4",
+        "E.1.a"
+      ],
       "rationaleAI": "Modern fossil analysis relies on mass spectrometers (F.4), electron microscopes (E.1.a), and X-ray detectors—instruments explicitly listed in the section outline—to reveal information about Earth's past in unprecedented detail."
     },
     {
       "episodeTitle": "Saturn",
       "pid": "b06vmr1m",
-      "relevantPathsAI": ["E.1.b", "G.6"],
+      "relevantPathsAI": [
+        "E.1.b",
+        "G.6"
+      ],
       "rationaleAI": "Galileo's first telescopic observation of Saturn (1610), Huygens' resolution of its ring structure (1655), and successive space probe missions (Pioneer, Voyager, Cassini-Huygens) illustrate the progressive advancement of telescopic and remote observation technology (E.1.b) within astronomical measurement systems (G.6)."
     },
     {
       "episodeTitle": "Johannes Kepler",
       "pid": "b085xpzf",
-      "relevantPathsAI": ["G.6", "C"],
+      "relevantPathsAI": [
+        "G.6",
+        "C"
+      ],
       "rationaleAI": "Kepler's work in optics contributed to telescope design principles (C), and his derivation of planetary motion laws from Brahe's precise observational data exemplifies how astronomical observation systems (G.6) generate foundational scientific knowledge."
     },
     {
       "episodeTitle": "Solar Wind",
       "pid": "m000dg9n",
-      "relevantPathsAI": ["G.6", "D.2.f"],
+      "relevantPathsAI": [
+        "G.6",
+        "D.2.f"
+      ],
       "rationaleAI": "Investigation of the solar wind through space probes including Voyager missions involves radiation detection instruments (D.2.f) measuring charged particle streams and magnetic fields, contributing to astronomical observation systems (G.6) that map the heliosphere boundary."
+    },
+    {
+      "episodeTitle": "William and Caroline Herschel",
+      "pid": "m0011c4p",
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The Herschels constructed extraordinarily powerful telescopes that revealed objects far beyond previous observational limits; their instruments represent advances in observation technology (E instruments used for observing and recording)"
     }
   ],
   "_curatedBy": "ai",

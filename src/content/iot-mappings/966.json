@@ -4,44 +4,76 @@
     {
       "episodeTitle": "Bolivar",
       "pid": "b00f4prq",
-      "relevantPathsAI": ["A", "A.1.a", "A.2", "A.2.a", "A.2.c", "A.2.d", "D.1.a", "E.1"],
+      "relevantPathsAI": [
+        "A",
+        "A.1.a",
+        "A.2",
+        "A.2.a",
+        "A.2.c",
+        "A.2.d",
+        "D.1.a",
+        "E.1"
+      ],
       "rationaleAI": "Directly covers Simon Bolivar's military campaigns liberating Venezuela, Colombia, Ecuador, Peru, and Bolivia from Spanish rule, including his Enlightenment inspirations (Locke, Rousseau) and Britain's role in the independence wars. Central to the South American War of Independence (A.2), the independence movement's intellectual foundations (A.1.a), and the origins of the Gran Colombia successor states (D) and Andean nations (E)."
     },
     {
       "episodeTitle": "The Haitian Revolution",
       "pid": "b04lsqgs",
-      "relevantPathsAI": ["A.1.b", "C.2.a"],
+      "relevantPathsAI": [
+        "A.1.b",
+        "C.2.a"
+      ],
       "rationaleAI": "Covers the 1791-1804 Haitian Revolution from slave uprising to independence, including Toussaint Louverture's leadership, French Revolutionary ideals colliding with plantation slavery, and the establishment of Haiti as the first Black republic. Directly maps to Toussaint-Louverture's revolt influencing Latin American independence (A.1.b) and Haiti's early national history (C.2.a)."
     },
     {
       "episodeTitle": "The Mexican Revolution",
       "pid": "b00xhz8d",
-      "relevantPathsAI": ["B.3", "B.3.b", "B.4"],
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.b",
+        "B.4"
+      ],
       "rationaleAI": "Covers the 1910 overthrow of Porfirio Diaz, the ensuing civil war among Zapata, Villa, and constitutionalist factions, and the 1917 constitution establishing land reform and labor rights. Directly addresses the Diaz dictatorship's collapse (B.3.b) and the Revolutionary period including key figures and the transformative 1917 constitution (B.4)."
     },
     {
       "episodeTitle": "The Mexican-American War",
       "pid": "b0b7d18j",
-      "relevantPathsAI": ["B.1.b"],
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
       "rationaleAI": "Covers the 1846-1848 war between the United States and Mexico over Texas annexation and border disputes, resulting in Mexico's loss of roughly half its territory including California and New Mexico. Directly addresses Santa Anna's military career and the war with the U.S. over Texas, New Mexico, and California (B.1.b)."
     },
     {
       "episodeTitle": "The Battle of Trafalgar",
       "pid": "m0012141",
-      "relevantPathsAI": ["A.1.c"],
+      "relevantPathsAI": [
+        "A.1.c"
+      ],
       "rationaleAI": "The 1805 destruction of the combined Franco-Spanish fleet severed maritime links between Spain and its American colonies, directly accelerating Latin American independence movements. Provides essential context for Spain's involvement in the Napoleonic Wars and loss of control over colonial territories (A.1.c)."
     },
     {
       "episodeTitle": "The Franco-American Alliance 1778",
       "pid": "m000v99n",
-      "relevantPathsAI": ["A.1.a"],
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
       "rationaleAI": "French support for American independence proved decisive at Yorktown, and the resulting fiscal crisis contributed to the French Revolution — both events explicitly cited as influences on Latin American independence (A.1.a). Illustrates the transatlantic chain of revolutionary upheavals that inspired Creole discontent."
     },
     {
       "episodeTitle": "Washington and the American Revolution",
       "pid": "p004y28v",
-      "relevantPathsAI": ["A.1.a"],
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
       "rationaleAI": "The American Revolution's success and its intellectual foundations in Locke, Montesquieu, and Enlightenment political thought directly influenced Latin American independence movements; the outline explicitly lists the U.S. War of Independence and the Enlightenment among catalysts for Creole discontent (A.1.a)."
+    },
+    {
+      "episodeTitle": "The Morant Bay Rebellion",
+      "pid": "m001dnlr",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "The Morant Bay Rebellion (1865) in Jamaica, the post-emancipation conditions, Governor Eyre's martial law, and the imposition of Crown Colony rule connect to the remaining European insular possessions in the Caribbean region from c. 1810 to c. 1920 (C.2.d)."
     }
   ],
   "_curatedBy": "ai",
