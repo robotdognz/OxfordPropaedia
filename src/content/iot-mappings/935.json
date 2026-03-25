@@ -4,32 +4,57 @@
     {
       "episodeTitle": "Ashoka the Great",
       "pid": "b0511tm1",
-      "relevantPathsAI": ["A", "B.5", "B.5.a", "B.5.b"],
+      "relevantPathsAI": [
+        "A",
+        "B.5",
+        "B.5.a",
+        "B.5.b"
+      ],
       "rationaleAI": "Ashoka's consolidation of the Mauryan Empire as the largest South Asian state directly covers the Mauryan period (B.5) and his reign c. 265-238 BC (B.5.a), while his stone pillar edicts—deciphered only in the 19th century—are crucial documentary sources for ancient Indian chronology (A) and illustrate Mauryan administrative and cultural developments including Buddhist expansion (B.5.b)."
     },
     {
       "episodeTitle": "The Arthashastra",
       "pid": "m0014xt4",
-      "relevantPathsAI": ["B.5", "B.5.a", "B.5.b"],
+      "relevantPathsAI": [
+        "B.5",
+        "B.5.a",
+        "B.5.b"
+      ],
       "rationaleAI": "Attributed to Chanakya (Kautilya), advisor to Chandragupta Maurya who founded the Mauryan Empire c. 321 BC (B.5.a), this treatise on governance, law, economics, diplomacy, and military strategy directly illuminates Mauryan political and administrative systems (B.5.b) and the evolution of the concept of the state in ancient India."
     },
     {
       "episodeTitle": "Alexander the Great",
       "pid": "b06d9bkx",
-      "relevantPathsAI": ["B.4.b"],
+      "relevantPathsAI": [
+        "B.4.b"
+      ],
       "rationaleAI": "Alexander's conquests extended into Pakistan and part of India, directly corresponding to the invasion of 327 BC and the establishment of Greek settlements in the northwest Indian subcontinent (B.4.b)."
     },
     {
       "episodeTitle": "The Kama Sutra",
       "pid": "b01bb9c9",
-      "relevantPathsAI": ["C.1", "B.7.b"],
+      "relevantPathsAI": [
+        "C.1",
+        "B.7.b"
+      ],
       "rationaleAI": "Composed during the Gupta dynasty c. 3rd century CE (C.1), the text's treatment of kama alongside dharma and artha reflects the sophisticated Hindu philosophical framework and urban culture of classical India, illustrating cultural and religious developments including the growth of sects in Hinduism (B.7.b)."
     },
     {
       "episodeTitle": "The Iron Age",
       "pid": "b00zm1ks",
-      "relevantPathsAI": ["B.3", "B.3.b"],
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.b"
+      ],
       "rationaleAI": "The spread of iron smelting technology and its consequences—agricultural expansion through iron ploughs, new settlement patterns, and the rise of new civilizations—provide essential context for the urbanization and state formation in the Ganges Valley during the later Vedic period (B.3, B.3.b)."
+    },
+    {
+      "episodeTitle": "Kali",
+      "pid": "m0028bng",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Kali traditions spanning over two millennia in South Asian religious life connect to the broad character and achievements of Indian subcontinent civilization to c. AD 1200."
     }
   ],
   "_curatedBy": "ai",

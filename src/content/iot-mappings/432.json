@@ -4,56 +4,110 @@
     {
       "episodeTitle": "Perception and the Senses",
       "pid": "p003k9h0",
-      "relevantPathsAI": ["B", "B.1", "B.2", "B.7", "B.8", "C", "C.4", "E.3"],
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.7",
+        "B.8",
+        "C",
+        "C.4",
+        "E.3"
+      ],
       "rationaleAI": "Directly examines how the brain integrates and interprets data from multiple sensory modalities including vision, touch, smell, taste, and hearing, with cross-modal interactions such as tactile stimulation activating visual cortex (B.1, B.2, B.7, B.8, E.3). Also addresses subjective variation in perceptual experience between individuals and developmental aspects of perception in infants (C.4)."
     },
     {
       "episodeTitle": "Pain",
       "pid": "p00545m1",
-      "relevantPathsAI": ["B.4", "B.4.a", "B.4.d"],
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.a",
+        "B.4.d"
+      ],
       "rationaleAI": "Physiological mechanisms of pain signaling, neural pathways, and individual variation in pain experience directly address cutaneous sensation of pain (B.4), the variety of nerve terminals involved (B.4.a), and the sensory experience of pain including its cause, function, qualities, and subjective thresholds (B.4.d)."
     },
     {
       "episodeTitle": "The Nervous System",
       "pid": "b00y9283",
-      "relevantPathsAI": ["A.5", "B.1", "B.5", "B.6"],
+      "relevantPathsAI": [
+        "A.5",
+        "B.1",
+        "B.5",
+        "B.6"
+      ],
       "rationaleAI": "Covers the neural architecture underlying sensation and attention, including sensory neurons relaying information inward, reflex arcs, and the autonomic nervous system, providing the physiological basis for attentive phenomena (A.5), the senses in general (B.1), kinesthetic feedback via motor neurons (B.5), and vestibular regulation (B.6)."
     },
     {
       "episodeTitle": "Hypnosis",
       "pid": "m002cqq3",
-      "relevantPathsAI": ["A", "D.3", "G.2", "G.2.b"],
+      "relevantPathsAI": [
+        "A",
+        "D.3",
+        "G.2",
+        "G.2.b"
+      ],
       "rationaleAI": "Hypnosis is explicitly listed in the outline as a factor affecting time perception (D.3), and debates about whether hypnotic states represent genuine altered consciousness or social compliance relate to attention manipulation (A) and types of hallucinatory experience induced through suggestion (G.2, G.2.b)."
     },
     {
       "episodeTitle": "Echolocation",
       "pid": "b0b6hrl3",
-      "relevantPathsAI": ["B.3", "B.3.a", "B.3.b", "F.2"],
+      "relevantPathsAI": [
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "F.2"
+      ],
       "rationaleAI": "Explores how bats and dolphins use high-frequency sound emission and reception to perceive their environments, illuminating auditory mechanisms of sound transmission and conversion into neural messages (B.3.a), encoding and processing of sound for localization (B.3.b), and nonvisual auditory cues for perceiving movement (F.2)."
     },
     {
       "episodeTitle": "The Brain",
       "pid": "b00b54yx",
-      "relevantPathsAI": ["A.5", "B.1", "B.2.d"],
+      "relevantPathsAI": [
+        "A.5",
+        "B.1",
+        "B.2.d"
+      ],
       "rationaleAI": "Traces the history of understanding the brain from Hippocrates identifying it as the source of all sensation and thought through modern neuroimaging revealing functional architecture in real time, providing foundational knowledge for physiological mechanisms of attention (A.5) and cortical responses to sensory stimuli (B.2.d)."
     },
     {
       "episodeTitle": "The Brain and Consciousness",
       "pid": "p0054582",
-      "relevantPathsAI": ["A", "A.5", "C"],
+      "relevantPathsAI": [
+        "A",
+        "A.5",
+        "C"
+      ],
       "rationaleAI": "Examines how neural processes give rise to subjective experience and how advances in neuroscience have transformed understanding of cognition, addressing the physiological mechanisms underlying attention and awareness of internal and external events (A, A.5) and the neural basis of perceptual experience (C)."
     },
     {
       "episodeTitle": "Consciousness",
       "pid": "p005464j",
-      "relevantPathsAI": ["A.1", "C.1", "C.2"],
+      "relevantPathsAI": [
+        "A.1",
+        "C.1",
+        "C.2"
+      ],
       "rationaleAI": "Engages directly with whether perception and reason can be explained in purely physical terms of neural firing, addressing the problem of defining attention and awareness (A.1) and central problems of continuing concern in perception theory including the explanatory gap between brain processes and phenomenal experience (C.1, C.2)."
     },
     {
       "episodeTitle": "Kant's Copernican Revolution",
       "pid": "m000wlf4",
-      "relevantPathsAI": ["C.1", "C.2", "C.3.c", "E.1"],
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3.c",
+        "E.1"
+      ],
       "rationaleAI": "Kant's argument that the mind actively structures experience through innate categories of space, time, and causality directly addresses theories of perceptual organization (C.1, C.2), the tendency toward perceptual constancy despite changing stimulation (C.3.c), and the nature of space perception as orientation to the environment (E.1)."
+    },
+    {
+      "episodeTitle": "Memory and Culture",
+      "pid": "p00545jl",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Freud's positioning of memory as central to psychoanalysis connects to the influence of the current environment on behavior and conscious experience, including psychological dimensions of perception and memory."
     }
   ],
   "_curatedBy": "ai",

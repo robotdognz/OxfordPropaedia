@@ -4,32 +4,66 @@
     {
       "episodeTitle": "Mathematics and Music",
       "pid": "p003c1b9",
-      "relevantPathsAI": ["A.1", "A.4", "B.1", "C.1.b", "C.1.c", "C.4"],
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "B.1",
+        "C.1.b",
+        "C.1.c",
+        "C.4"
+      ],
       "rationaleAI": "Directly examines deep structural connections between mathematics and music, including the physics of vibrating strings producing harmonic series (B.1), scale construction and octave division across cultures (C.1.b), tuning systems (C.1.c), harmony as mathematical ratio (C.4), and diverse conceptions of music from Pythagorean number-sound relationships to twentieth-century serial and stochastic composition (A.1, A.4)."
     },
     {
       "episodeTitle": "Beethoven",
       "pid": "b09jbsjc",
-      "relevantPathsAI": ["A.3", "E.2.a.ii", "G.1"],
+      "relevantPathsAI": [
+        "A.3",
+        "E.2.a.ii",
+        "G.1"
+      ],
       "rationaleAI": "Beethoven's development of the symphony as a musical form (E.2.a.ii), his elevation of instrumental above choral music, and his compositional achievement despite deafness illuminate both musical performance and interpretation (A.3) and the history of Western music (G.1)."
     },
     {
       "episodeTitle": "The Waltz",
       "pid": "m001x50m",
-      "relevantPathsAI": ["E.3.c.ii", "E.4", "G.1"],
+      "relevantPathsAI": [
+        "E.3.c.ii",
+        "E.4",
+        "G.1"
+      ],
       "rationaleAI": "The waltz's emergence as a musical-dance form in three-quarter time, Johann Strauss's defining compositions, and Diaghilev's modernist reinterpretations connect directly to music for theatrical dance (E.3.c.ii), while its role as a popular cultural phenomenon spanning ballroom to concert hall illustrates genres determined by cultural milieu (E.4) and Western music history (G.1)."
     },
     {
       "episodeTitle": "The Music of the Spheres",
       "pid": "b00c1fct",
-      "relevantPathsAI": ["A.1", "A.2", "A.4", "C.1.b", "C.1.c"],
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4",
+        "C.1.b",
+        "C.1.c"
+      ],
       "rationaleAI": "Pythagorean mathematical ratios linked to musical intervals, Boethius's musica mundana, and Kepler's derivation of musical intervals from orbital mechanics represent foundational conceptions of music as cosmic order (A.1), the problem of musical meaning as expression of universal harmony (A.2), music's relation to astronomy and philosophy (A.4), and historical systems of pitch and tuning (C.1.b, C.1.c)."
     },
     {
       "episodeTitle": "The Frankfurt School",
       "pid": "b00pr54s",
-      "relevantPathsAI": ["A.4", "A.5", "E.4"],
+      "relevantPathsAI": [
+        "A.4",
+        "A.5",
+        "E.4"
+      ],
       "rationaleAI": "Adorno and the Frankfurt School's critical theory argued that mass culture including popular music functions to maintain capitalist social conformity, constituting major twentieth-century writings about music's social role (A.5), the relation of music to ideology and society (A.4), and critical analysis of popular music as a cultural genre (E.4)."
+    },
+    {
+      "episodeTitle": "Hildegard of Bingen",
+      "pid": "b047c312",
+      "relevantPathsAI": [
+        "E.3.a",
+        "G.1"
+      ],
+      "rationaleAI": "Hildegard composed liturgical music including the Ordo Virtutum, one of the earliest morality plays, connecting to liturgical music (E.3.a) and the history of Western music (G.1)."
     }
   ],
   "_curatedBy": "ai",

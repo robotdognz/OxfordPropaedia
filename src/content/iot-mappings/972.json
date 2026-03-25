@@ -4,50 +4,190 @@
     {
       "episodeTitle": "The Spanish Civil War",
       "pid": "p00548wn",
-      "relevantPathsAI": ["A.5.a.i", "A.5.a"],
+      "relevantPathsAI": [
+        "A.5.a.i",
+        "A.5.a"
+      ],
       "rationaleAI": "The 1936-1939 Spanish Civil War, Franco's Nationalist victory with German and Italian support, and the establishment of an authoritarian regime directly correspond to the outline's coverage of Spain's Civil War, foreign intervention, and Franco's rule."
     },
     {
       "episodeTitle": "Lenin",
       "pid": "p00546pv",
-      "relevantPathsAI": ["B.1.a", "B.1.a.i", "B.1.a.ii"],
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.a.i",
+        "B.1.a.ii"
+      ],
       "rationaleAI": "Lenin's role in the October Revolution, establishment of the one-party Soviet state, civil war leadership, and the New Economic Policy directly map to the outline's coverage of the Soviet Union from 1917 through the post-Lenin succession struggle."
     },
     {
       "episodeTitle": "Paul von Hindenburg",
       "pid": "m002cfjz",
-      "relevantPathsAI": ["A.3.a.i"],
+      "relevantPathsAI": [
+        "A.3.a.i"
+      ],
       "rationaleAI": "Hindenburg's presidency of the Weimar Republic and his 1933 appointment of Hitler as Chancellor directly address the outline's coverage of the Weimar Republic's political instability and the Nazi rise to power that ended it."
     },
     {
       "episodeTitle": "The Economic Consequences of the Peace",
       "pid": "m001qtpf",
-      "relevantPathsAI": ["A.3.a.i", "A.1.a.iii", "A.2.a.i"],
+      "relevantPathsAI": [
+        "A.3.a.i",
+        "A.1.a.iii",
+        "A.2.a.i"
+      ],
       "rationaleAI": "Keynes's argument that Versailles reparations would cause economic catastrophe connects to German reaction against the Treaty (A.3.a.i), British appeasement policy in the 1930s (A.1.a.iii), and French interwar disputes over reparations and collective security (A.2.a.i)."
     },
     {
       "episodeTitle": "Rosa Luxemburg",
       "pid": "b08lfc77",
-      "relevantPathsAI": ["A.3.a.i"],
+      "relevantPathsAI": [
+        "A.3.a.i"
+      ],
       "rationaleAI": "Luxemburg's co-founding of the German Communist Party and her murder during the 1919 Spartacist uprising illustrate the violent opposition from the left that destabilized the early Weimar Republic, as specified in the outline's coverage of leftist and rightist challenges to the republic."
     },
     {
       "episodeTitle": "Dietrich Bonhoeffer",
       "pid": "b0bkpjns",
-      "relevantPathsAI": ["A.3.a.ii"],
+      "relevantPathsAI": [
+        "A.3.a.ii"
+      ],
       "rationaleAI": "Bonhoeffer's opposition to Nazi anti-Semitism, participation in the resistance plot to kill Hitler, and execution at Flossenburg directly relate to the Third Reich's totalitarian police state, persecution of Jews, and internal resistance (1933-45)."
     },
     {
       "episodeTitle": "The Frankfurt School",
       "pid": "b00pr54s",
-      "relevantPathsAI": ["A.3.a.i", "A.3.a.ii"],
+      "relevantPathsAI": [
+        "A.3.a.i",
+        "A.3.a.ii"
+      ],
       "rationaleAI": "Founded in Weimar-era Germany in 1923 to analyze why the working class did not revolt, the Frankfurt School's exile under Nazism and its critical theory of mass culture illuminate both Weimar intellectual life and the cultural impact of the Third Reich's suppression of dissent."
     },
     {
       "episodeTitle": "The Gold Standard",
       "pid": "m0013hh7",
-      "relevantPathsAI": ["A.1.a.i", "A.2.a.i", "A.3.a.i"],
+      "relevantPathsAI": [
+        "A.1.a.i",
+        "A.2.a.i",
+        "A.3.a.i"
+      ],
       "rationaleAI": "The gold standard's role in deepening the Great Depression by preventing expansionary monetary responses connects to interwar economic depression in Britain (A.1.a.i), France's financial crises (A.2.a.i), and the economic instability that undermined the Weimar Republic (A.3.a.i)."
+    },
+    {
+      "episodeTitle": "Alan Turing",
+      "pid": "m000ncmw",
+      "relevantPathsAI": [
+        "A.3",
+        "B.1"
+      ],
+      "rationaleAI": "Turing's wartime codebreaking at Bletchley Park contributed to Allied victory in WWII (A.3 World War II), and his 1952 prosecution for homosexuality reflects postwar British social policies (B.1 postwar Britain)."
+    },
+    {
+      "episodeTitle": "Atrocity in the 20th Century",
+      "pid": "p0054638",
+      "relevantPathsAI": [
+        "A.3",
+        "A.4",
+        "B"
+      ],
+      "rationaleAI": "The Holocaust, Stalinist Russia's 20 million killed, and WWII atrocities are central events in European history since 1920 (A.3 WWII, A.4 postwar developments, B specific European nations)."
+    },
+    {
+      "episodeTitle": "Auden",
+      "pid": "m000cc0r",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Auden witnessed the rise of totalitarianism in 1930s Berlin and the Spanish Civil War, key events in interwar European history (A.2 the interwar period, A.3 WWII era)."
+    },
+    {
+      "episodeTitle": "Bergson and Time",
+      "pid": "m0004s9w",
+      "relevantPathsAI": [
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Bergson's death in 1941 after refusing the Vichy government's exemption from Jewish registration connects to WWII France (A.3) and his Jewish identity amid 20th-century European anti-Semitism (B.3)."
+    },
+    {
+      "episodeTitle": "Bertolt Brecht",
+      "pid": "m001yj9q",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "B.3"
+      ],
+      "rationaleAI": "Brecht's career traversed Weimar Germany, Nazi rise, exile, and post-war East Berlin, connecting to interwar and postwar European history (A.1, A.2, A.3) and specifically German history (B.3)."
+    },
+    {
+      "episodeTitle": "Colette",
+      "pid": "m0013rmw",
+      "relevantPathsAI": [
+        "A.2.a.ii",
+        "A.2.b"
+      ],
+      "rationaleAI": "Colette (1873-1954) was a major French cultural figure whose work reflects social, cultural, and economic developments under the Third Republic (A.2.a.ii) and into the postwar period of the Fifth Republic (A.2.b)."
+    },
+    {
+      "episodeTitle": "Decline and Fall",
+      "pid": "b01qmbsc",
+      "relevantPathsAI": [
+        "A.1.a.i"
+      ],
+      "rationaleAI": "Decline and Fall (1928) provides a vivid satirical portrait of interwar British society during the period of economic depression and labour unrest, class dynamics, and modernity in 1920s Britain (A.1.a.i)."
+    },
+    {
+      "episodeTitle": "Dylan Thomas",
+      "pid": "m001882k",
+      "relevantPathsAI": [
+        "A.1.a.iii",
+        "A.1.a.iv"
+      ],
+      "rationaleAI": "Dylan Thomas (1914-1953) wrote Blitz poems during Britain's stand against the Axis Powers in WWII (A.1.a.iii), and his postwar career as a literary celebrity connects to developments in British culture during the welfare state era (A.1.a.iv)."
+    },
+    {
+      "episodeTitle": "Fritz Lang",
+      "pid": "m0012s94",
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Lang's Weimar-era filmmaking (Dr Mabuse, Metropolis, M) and his emigration prompted by the rise of Nazism are directly situated in Germany's interwar and early Nazi period (A.3)."
+    },
+    {
+      "episodeTitle": "Hannah Arendt",
+      "pid": "b08c2ljg",
+      "relevantPathsAI": [
+        "A.3",
+        "B.1"
+      ],
+      "rationaleAI": "Arendt's analysis of totalitarianism was rooted in Germany's Nazi period (A.3) and the broader political dynamics of Eastern European states (B.1) in the 20th century."
+    },
+    {
+      "episodeTitle": "Italo Calvino",
+      "pid": "m002552g",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Calvino's trajectory from neorealism rooted in wartime Partisan experience to postmodern experimentation is embedded in 20th-century Italian cultural life (A.4)."
+    },
+    {
+      "episodeTitle": "Lorca",
+      "pid": "m0006dss",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Lorca's execution by Nationalist forces at the outbreak of the Spanish Civil War in 1936 situates him directly in the history of Spain and Portugal in the 20th century (A.5)."
+    },
+    {
+      "episodeTitle": "Memory and Culture",
+      "pid": "p00545jl",
+      "relevantPathsAI": [
+        "A.3",
+        "B.1"
+      ],
+      "rationaleAI": "Post-war Germany's confrontation with its traumatic past connects to Germany since 1920 (A.3), and post-Soviet Eastern European memory politics connect to Eastern European states (B.1)."
     }
   ],
   "_curatedBy": "ai",

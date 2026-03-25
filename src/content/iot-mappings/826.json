@@ -4,38 +4,80 @@
     {
       "episodeTitle": "The Dead Sea Scrolls",
       "pid": "m001ljc0",
-      "relevantPathsAI": ["A.2", "B.2", "B.1.b"],
+      "relevantPathsAI": [
+        "A.2",
+        "B.2",
+        "B.1.b"
+      ],
       "rationaleAI": "Ancient Jewish manuscripts from the Qumran settlement illuminate Second Temple Judaism and the diversity of Jewish religious practice before rabbinic consolidation, directly covering Qumran literature (B.2) and including the oldest known copies of Hebrew Bible texts (B.1.b) from the Hellenistic era (A.2)."
     },
     {
       "episodeTitle": "The Talmud",
       "pid": "b044j7pd",
-      "relevantPathsAI": ["A.3", "B.3", "C.2", "C.3"],
+      "relevantPathsAI": [
+        "A.3",
+        "B.3",
+        "C.2",
+        "C.3"
+      ],
       "rationaleAI": "The Mishnah and Gemara constitute the foundational texts of Rabbinic Judaism compiled from the second century CE onward, covering the Talmudic era (A.3), Talmud and Midrash as literature (B.3), basic practices and institutions (C.2), and present-day forms of Judaism including Orthodox and Conservative traditions (C.3)."
     },
     {
       "episodeTitle": "King Solomon",
       "pid": "b01jhjc7",
-      "relevantPathsAI": ["A.1", "B.1.b", "B.7", "C.2.d"],
+      "relevantPathsAI": [
+        "A.1",
+        "B.1.b",
+        "B.7",
+        "C.2.d"
+      ],
       "rationaleAI": "Solomon's reign as biblical ruler of ancient Israel, his construction of the First Temple in Jerusalem, and his authorship of Proverbs, Ecclesiastes, and Song of Songs place this squarely within the biblical era (A.1), Hebrew Bible literature (B.1.b), Jewish myth and legend (B.7), and the sacred significance of Jerusalem and the Temple (C.2.d)."
     },
     {
       "episodeTitle": "Moses Mendelssohn",
       "pid": "b01djnxx",
-      "relevantPathsAI": ["A.5", "B.6", "C.1"],
+      "relevantPathsAI": [
+        "A.5",
+        "B.6",
+        "C.1"
+      ],
       "rationaleAI": "Mendelssohn as principal architect of the Haskalah (Jewish Enlightenment) brought Judaism into dialogue with European intellectual culture, directly addressing developments in modern Judaism (A.5), Jewish philosophical writings (B.6), and fundamental questions about the coexistence of reason with Jewish faith and doctrine (C.1)."
     },
     {
       "episodeTitle": "Judas Maccabeus",
       "pid": "b017cjm8",
-      "relevantPathsAI": ["A.2", "C.1.b", "C.2.c", "C.2.d"],
+      "relevantPathsAI": [
+        "A.2",
+        "C.1.b",
+        "C.2.c",
+        "C.2.d"
+      ],
       "rationaleAI": "The Maccabean revolt against Seleucid Hellenization and the rededication of the Temple are central to Hellenistic-era Judaism (A.2), doctrines concerning Jewish peoplehood and covenant identity (C.1.b), the origins of Hanukkah as a sacred time (C.2.c), and the sanctity of Jerusalem and the Temple as sacred places (C.2.d)."
     },
     {
       "episodeTitle": "Typology",
       "pid": "m0029zmc",
-      "relevantPathsAI": ["B.4"],
+      "relevantPathsAI": [
+        "B.4"
+      ],
       "rationaleAI": "Typological interpretation reads Old Testament figures such as Moses, Jonah, and David as prefigurations, engaging directly with biblical hermeneutics (B.4) and demonstrating how Hebrew Bible texts have been subject to systematic exegetical methods across religious traditions."
+    },
+    {
+      "episodeTitle": "Angels",
+      "pid": "p003k9gf",
+      "relevantPathsAI": [
+        "B.4",
+        "C.1"
+      ],
+      "rationaleAI": "The episode traces angelic imagery from Ezekiel and Hebrew scripture, connecting to Jewish theological literature and beliefs about intermediary beings."
+    },
+    {
+      "episodeTitle": "Hannah Arendt",
+      "pid": "b08c2ljg",
+      "relevantPathsAI": [
+        "A.5"
+      ],
+      "rationaleAI": "Arendt's experience as a Jewish refugee from Nazi Germany and her analysis of the Holocaust connect to developments in modern-era Judaism (A.5)."
     }
   ],
   "_curatedBy": "ai",

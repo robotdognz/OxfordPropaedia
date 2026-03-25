@@ -4,206 +4,413 @@
     {
       "episodeTitle": "Louis XIV: The Sun King",
       "pid": "m001m4v6",
-      "relevantPathsAI": ["C.1.a", "C.2.b.i", "C.2.b.ii", "C.2.b.iii", "C.2.b.iv"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2.b.i",
+        "C.2.b.ii",
+        "C.2.b.iii",
+        "C.2.b.iv"
+      ],
       "rationaleAI": "Louis XIV's personal rule from 1661, construction of Versailles, centralization of administration, revocation of the Edict of Nantes, Colbert's mercantilist policies, and expansionist wars including the War of the Spanish Succession directly correspond to the Age of Louis XIV in international affairs (C.1.a) and French government, religious policy, military campaigns, and cultural development under his reign (C.2.b.i-iv)."
     },
     {
       "episodeTitle": "Maria Theresa",
       "pid": "m000nlyv",
-      "relevantPathsAI": ["C.1.b.i", "C.1.b.ii", "C.2.c.ii"],
+      "relevantPathsAI": [
+        "C.1.b.i",
+        "C.1.b.ii",
+        "C.2.c.ii"
+      ],
       "rationaleAI": "Maria Theresa's 1740 accession, Frederick the Great's seizure of Silesia, the War of the Austrian Succession, her administrative and military reforms, and co-regency with Joseph II map directly to Austrian Habsburg consolidation (C.2.c.ii), the emergence of Prussia and Austria as European powers (C.1.b.i), and the Seven Years' War (C.1.b.ii)."
     },
     {
       "episodeTitle": "The Thirty Years War",
       "pid": "m0001fv2",
-      "relevantPathsAI": ["A.4.d", "A.5.f.ii", "A.5.i"],
+      "relevantPathsAI": [
+        "A.4.d",
+        "A.5.f.ii",
+        "A.5.i"
+      ],
       "rationaleAI": "The 1618-1648 conflict originating in religious divisions within the Holy Roman Empire, involvement of France, Sweden, Spain, and the Habsburgs, and the Peace of Westphalia establishing state sovereignty and religious coexistence correspond to the Thirty Years' War (A.4.d), German political and religious settlements (A.5.f.ii), and Scandinavian participation (A.5.i)."
     },
     {
       "episodeTitle": "The Diet of Worms",
       "pid": "p0038x8z",
-      "relevantPathsAI": ["A.3.a", "A.5.f.i"],
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.5.f.i"
+      ],
       "rationaleAI": "Luther's 1521 appearance before Charles V, his refusal to recant, and the resulting fracture of Western Christendom into Catholic and Protestant confessions address the Protestant Reformation and its political consequences (A.3.a) and the specific outline entry on Martin Luther, Charles V, and the Diet and Edict of Worms (A.5.f.i)."
     },
     {
       "episodeTitle": "The Interregnum",
       "pid": "m000wcxn",
-      "relevantPathsAI": ["C.2.a.i"],
+      "relevantPathsAI": [
+        "C.2.a.i"
+      ],
       "rationaleAI": "The 1649-1660 period covering the Rump Parliament, Cromwell's Protectorate, conquest of Ireland, defeat of Royalist Scots, and the eventual Restoration under Charles II maps directly to Oliver Cromwell, the Commonwealth, and the Protectorate (C.2.a.i)."
     },
     {
       "episodeTitle": "Mary, Queen of Scots",
       "pid": "b088fs7z",
-      "relevantPathsAI": ["A.5.d.iii", "A.5.d.vi"],
+      "relevantPathsAI": [
+        "A.5.d.iii",
+        "A.5.d.vi"
+      ],
       "rationaleAI": "Mary Stuart's Catholic claim to the English throne, rivalry with Elizabeth I, the Babington Plot, her 1587 execution, and her son James VI's succession address Elizabeth I's dynastic challenge from Mary Queen of Scots (A.5.d.iii) and Scotland's coverage of Mary's reign and the Scottish Reformation (A.5.d.vi)."
     },
     {
       "episodeTitle": "The Franco-American Alliance 1778",
       "pid": "m000v99n",
-      "relevantPathsAI": ["C.1.b.iii", "C.2.b.vi"],
+      "relevantPathsAI": [
+        "C.1.b.iii",
+        "C.2.b.vi"
+      ],
       "rationaleAI": "The 1778 Franco-American alliance and French naval intervention against Britain correspond to Franco-Spanish cooperation against Britain in the US War of Independence (C.1.b.iii), while the enormous financial cost contributing to fiscal crisis connects to the financial crisis and reform attempts under the ancien regime (C.2.b.vi)."
     },
     {
       "episodeTitle": "The Tudor State",
       "pid": "p00546xd",
-      "relevantPathsAI": ["A.5.d.i", "A.5.d.ii", "A.5.d.iii"],
+      "relevantPathsAI": [
+        "A.5.d.i",
+        "A.5.d.ii",
+        "A.5.d.iii"
+      ],
       "rationaleAI": "Henry VII's centralization after Bosworth (A.5.d.i), Henry VIII's break with Rome and establishment of the Church of England (A.5.d.ii), and Elizabeth I's consolidation of the Protestant settlement and projection of naval power (A.5.d.iii) map directly to the outline's detailed coverage of British monarchs from 1485 to 1603."
     },
     {
       "episodeTitle": "Frederick the Great",
       "pid": "b060bctg",
-      "relevantPathsAI": ["C.1.b.i", "C.1.b.ii", "C.2.d.ii"],
+      "relevantPathsAI": [
+        "C.1.b.i",
+        "C.1.b.ii",
+        "C.2.d.ii"
+      ],
       "rationaleAI": "Frederick II's military campaigns making Prussia a leading European power, his role in the War of the Austrian Succession and Seven Years' War, Enlightenment credentials attracting Voltaire, and the partition of Poland correspond to Frederick the Great (C.2.d.ii) and the wars establishing Prussia as a European power (C.1.b.i, C.1.b.ii)."
     },
     {
       "episodeTitle": "The Covenanters",
       "pid": "m000g3f6",
-      "relevantPathsAI": ["A.5.d.v", "A.5.d.vi", "C.2.a.i"],
+      "relevantPathsAI": [
+        "A.5.d.v",
+        "A.5.d.vi",
+        "C.2.a.i"
+      ],
       "rationaleAI": "The Covenanters' resistance to Charles I's episcopal impositions, role in the Bishops' Wars and English Civil War, and persecution during the Restoration correspond to Scotland's religious and political conflicts (A.5.d.vi), Charles I and the Civil War (A.5.d.v), and the Restoration period (C.2.a.i)."
     },
     {
       "episodeTitle": "The Glorious Revolution",
       "pid": "p00547fk",
-      "relevantPathsAI": ["C.2.a.i", "C.2.a.ii"],
+      "relevantPathsAI": [
+        "C.2.a.i",
+        "C.2.a.ii"
+      ],
       "rationaleAI": "William of Orange's replacement of James II in 1688, the Bill of Rights establishing parliamentary supremacy, and Locke's philosophical justifications map to the Glorious Revolution ending crown rule without Parliament (C.2.a.i) and limited monarchy under William III and Mary II (C.2.a.ii)."
     },
     {
       "episodeTitle": "The Polish-Lithuanian Commonwealth",
       "pid": "m0010f8z",
-      "relevantPathsAI": ["C.1.b.iii", "C.2.c.i"],
+      "relevantPathsAI": [
+        "C.1.b.iii",
+        "C.2.c.i"
+      ],
       "rationaleAI": "Jan III Sobieski's relief of the 1683 Siege of Vienna during the Austro-Turkish wars and the progressive partitions by Austria, Russia, and Prussia from 1772 connect to Austrian expansion through the Austro-Turkish wars (C.2.c.i) and the Russian-Prussian partition of Poland (C.1.b.iii)."
     },
     {
       "episodeTitle": "The Hanoverian Succession",
       "pid": "m0025d6j",
-      "relevantPathsAI": ["C.2.a.ii"],
+      "relevantPathsAI": [
+        "C.2.a.ii"
+      ],
       "rationaleAI": "The Act of Settlement 1701, exclusion of Catholic claimants, George I's 1714 accession, Jacobite threats, and the role of Whig and Tory factions correspond to the Hanoverian succession, growth of political parties, and emergence of the cabinet system (C.2.a.ii)."
     },
     {
       "episodeTitle": "The Hanseatic League",
       "pid": "m001vshs",
-      "relevantPathsAI": ["B.2.a"],
+      "relevantPathsAI": [
+        "B.2.a"
+      ],
       "rationaleAI": "The Hanseatic League's domination of North European and Baltic trade and its decline driven by centralized nation-states and Dutch commercial competition correspond to the outline's explicit mention of the decline of the Hanseatic League (B.2.a)."
     },
     {
       "episodeTitle": "Sovereignty",
       "pid": "b07hhvxx",
-      "relevantPathsAI": ["A.1.a", "C.3.a"],
+      "relevantPathsAI": [
+        "A.1.a",
+        "C.3.a"
+      ],
       "rationaleAI": "Jean Bodin's formal theorization of sovereignty during the French Wars of Religion and Hobbes's absolutist sovereignty theory in Leviathan connect to Machiavelli and the principle of raison d'etat (A.1.a) and Enlightenment-era developments in political philosophy (C.3.a)."
     },
     {
       "episodeTitle": "The Needham Question",
       "pid": "p0038x9m",
-      "relevantPathsAI": ["A.2"],
+      "relevantPathsAI": [
+        "A.2"
+      ],
       "rationaleAI": "The comparative question of why modern science developed in Europe rather than China, with explanations involving competitive European state systems and institutional structures, directly addresses the emergence of modern science and technology in the 16th and 17th centuries (A.2)."
     },
     {
       "episodeTitle": "The Siege of Vienna",
       "pid": "b00k9h9g",
-      "relevantPathsAI": ["C.2.c.i"],
+      "relevantPathsAI": [
+        "C.2.c.i"
+      ],
       "rationaleAI": "The 1683 Ottoman siege of Vienna, Jan III Sobieski's relief force, and the subsequent Habsburg reconquest of Hungary correspond to Austrian conquest of Hungary and penetration of the Balkans in the Austro-Turkish wars of 1683-99 (C.2.c.i)."
     },
     {
       "episodeTitle": "Mercantilism",
       "pid": "m001k0zv",
-      "relevantPathsAI": ["B.4.a.iii", "C.2.b.ii"],
+      "relevantPathsAI": [
+        "B.4.a.iii",
+        "C.2.b.ii"
+      ],
       "rationaleAI": "Mercantilist theories of economic nationalism, protectionist tariffs, and colonial monopolies correspond to the growth of mercantilism (B.4.a.iii), while Colbert's mercantilist policies under Louis XIV connect to French government economic policy (C.2.b.ii)."
     },
     {
       "episodeTitle": "The Dutch East India Company",
       "pid": "b071vl2l",
-      "relevantPathsAI": ["B.1.b.ii", "B.4.a.i", "A.5.h.iii"],
+      "relevantPathsAI": [
+        "B.1.b.ii",
+        "B.4.a.i",
+        "A.5.h.iii"
+      ],
       "rationaleAI": "The VOC's 1602 charter as a pioneering joint-stock company, its monopoly on the spice trade, and displacement of Portuguese competitors correspond to colonial exploration and settlement (B.1.b.ii), joint-stock companies for colonial exploitation (B.4.a.i), and Dutch commercial supremacy (A.5.h.iii)."
     },
     {
       "episodeTitle": "The Venetian Empire",
       "pid": "m0024fj3",
-      "relevantPathsAI": ["A.5.a.iii", "B.2.b"],
+      "relevantPathsAI": [
+        "A.5.a.iii",
+        "B.2.b"
+      ],
       "rationaleAI": "Venice's republican government, maritime trade dominance, and decline as Atlantic routes diminished Mediterranean primacy connect to independent Italian states including Venice (A.5.a.iii) and the decline in Mediterranean trade with the growth of new commercial centres (B.2.b)."
     },
     {
       "episodeTitle": "The Field of the Cloth of Gold",
       "pid": "p003k9dl",
-      "relevantPathsAI": ["A.4.b", "A.5.d.ii", "A.5.e.i"],
+      "relevantPathsAI": [
+        "A.4.b",
+        "A.5.d.ii",
+        "A.5.e.i"
+      ],
       "rationaleAI": "The 1520 Anglo-French summit between Henry VIII and Francis I near Calais, showcasing Renaissance court culture and competitive diplomacy, connects to French and Austrian struggles for supremacy (A.4.b), Henry VIII's foreign policies (A.5.d.ii), and the reign of Francis I (A.5.e.i)."
     },
     {
       "episodeTitle": "The Spanish Armada",
       "pid": "b00v1qyb",
-      "relevantPathsAI": ["A.5.b.i", "A.5.d.iii", "A.4.c"],
+      "relevantPathsAI": [
+        "A.5.b.i",
+        "A.5.d.iii",
+        "A.4.c"
+      ],
       "rationaleAI": "Philip II's 1588 dispatch of 151 warships to overthrow Elizabeth I and restore Catholicism, and the English defeat of the fleet, correspond to Philip II's foreign policies and the Armada (A.5.b.i), Elizabeth I's struggle with Spain (A.5.d.iii), and conflicts between Catholic and Protestant powers (A.4.c)."
     },
     {
       "episodeTitle": "George Fox and the Quakers",
       "pid": "b01f67y4",
-      "relevantPathsAI": ["C.2.a.i"],
+      "relevantPathsAI": [
+        "C.2.a.i"
+      ],
       "rationaleAI": "George Fox's founding of Quakerism in mid-17th-century England, Quaker rejection of Church hierarchy, advocacy of religious toleration, and persecution after the 1660 Restoration connect to the Commonwealth, Protectorate, and Stuart Restoration religious developments (C.2.a.i)."
     },
     {
       "episodeTitle": "The Death of Elizabeth I",
       "pid": "b00n5nqr",
-      "relevantPathsAI": ["A.5.d.iii", "A.5.d.iv"],
+      "relevantPathsAI": [
+        "A.5.d.iii",
+        "A.5.d.iv"
+      ],
       "rationaleAI": "The political crisis following Elizabeth I's 1603 death, Cecil's arrangement of James VI's succession, and the resulting union of English and Scottish crowns connect to Elizabeth I's reign (A.5.d.iii) and James I's establishment of the Stuart dynasty (A.5.d.iv)."
     },
     {
       "episodeTitle": "The Divine Right of Kings",
       "pid": "b0080xph",
-      "relevantPathsAI": ["A.5.d.iv", "A.5.d.v", "C.2.a.i"],
+      "relevantPathsAI": [
+        "A.5.d.iv",
+        "A.5.d.v",
+        "C.2.a.i"
+      ],
       "rationaleAI": "The doctrine of divine right central to Stuart claims, its challenge by Locke's social contract theory and Milton's republicanism, and its arc through the regicide of Charles I and the Glorious Revolution connect to James I's conflicts with Parliament (A.5.d.iv), the Civil War and execution of Charles I (A.5.d.v), and the constitutional settlement of 1688 (C.2.a.i)."
     },
     {
       "episodeTitle": "The East India Company",
       "pid": "p0054906",
-      "relevantPathsAI": ["B.1.b.ii", "B.4.a.i"],
+      "relevantPathsAI": [
+        "B.1.b.ii",
+        "B.4.a.i"
+      ],
       "rationaleAI": "The English East India Company founded in 1600 as a joint-stock trading enterprise that evolved into a governing authority corresponds to establishment of colonial empires through exploration of coastal regions of India (B.1.b.ii) and development of joint-stock and chartered companies for colonial exploitation (B.4.a.i)."
     },
     {
       "episodeTitle": "Marie Antoinette",
       "pid": "m000117y",
-      "relevantPathsAI": ["C.2.b.v", "C.2.b.vi"],
+      "relevantPathsAI": [
+        "C.2.b.v",
+        "C.2.b.vi"
+      ],
       "rationaleAI": "Marie Antoinette's marriage to Louis XVI cementing the Franco-Austrian alliance, her role as symbol of monarchical excess, and her execution during the Revolution connect to the decline of the monarchy under Louis XVI (C.2.b.v) and the financial crisis and beginning of the Revolution (C.2.b.vi)."
     },
     {
       "episodeTitle": "Montesquieu",
       "pid": "b0b5qnfx",
-      "relevantPathsAI": ["C.3.a", "C.2.b.vi"],
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.2.b.vi"
+      ],
       "rationaleAI": "Montesquieu's theory of separation of powers, analysis of government types, and empirical comparative political philosophy represent core Enlightenment intellectual developments (C.3.a), while his influence on reform thought connects to the intellectual challenge to the ancien regime (C.2.b.vi)."
     },
     {
       "episodeTitle": "Republicanism",
       "pid": "p00546mp",
-      "relevantPathsAI": ["A.5.d.v", "C.2.a.i"],
+      "relevantPathsAI": [
+        "A.5.d.v",
+        "C.2.a.i"
+      ],
       "rationaleAI": "English republicanism from the execution of Charles I in 1649 through the Commonwealth under Cromwell and subsequent constitutional debates corresponds to the English Civil War and execution of Charles I (A.5.d.v) and the Commonwealth and Protectorate (C.2.a.i)."
     },
     {
       "episodeTitle": "Seventeenth Century Print Culture",
       "pid": "p003hycj",
-      "relevantPathsAI": ["A.5.d.v", "C.3.a"],
+      "relevantPathsAI": [
+        "A.5.d.v",
+        "C.3.a"
+      ],
       "rationaleAI": "Growth of print culture in 17th-century England, pamphlets as ideological weapons during the English Civil War, and the democratization of access to written knowledge connect to conflict between Crown and Parliament (A.5.d.v) and intellectual and cultural origins of the Enlightenment (C.3.a)."
     },
     {
       "episodeTitle": "John Wesley and Methodism",
       "pid": "m000q3m2",
-      "relevantPathsAI": ["C.2.a.iv"],
+      "relevantPathsAI": [
+        "C.2.a.iv"
+      ],
       "rationaleAI": "Wesley's founding of Methodism and its spread among industrial working-class communities in 18th-century Britain corresponds to the outline's explicit mention of the influence of Methodism among economic, cultural, and social developments (C.2.a.iv)."
     },
     {
       "episodeTitle": "The Barbary Corsairs",
       "pid": "m001s5ds",
-      "relevantPathsAI": ["A.4.c"],
+      "relevantPathsAI": [
+        "A.4.c"
+      ],
       "rationaleAI": "North African corsairs operating from the 16th century onward, raiding Christian shipping, and their connection to Ottoman imperial power correspond to conflicts between Catholic and Protestant powers and conflict with the Ottoman Empire after c. 1555 (A.4.c)."
     },
     {
       "episodeTitle": "The Monarchy",
       "pid": "p00545k6",
-      "relevantPathsAI": ["C.2.a.i", "C.2.a.ii"],
+      "relevantPathsAI": [
+        "C.2.a.i",
+        "C.2.a.ii"
+      ],
       "rationaleAI": "The British monarchy's constitutional evolution from the execution of Charles I through the Glorious Revolution, installation of the Hanoverian dynasty, and gradual transition to ceremonial role corresponds to the Restoration and Glorious Revolution (C.2.a.i) and limited monarchy under the Hanoverians (C.2.a.ii)."
     },
     {
       "episodeTitle": "Politeness",
       "pid": "p004y29m",
-      "relevantPathsAI": ["C.3.a"],
+      "relevantPathsAI": [
+        "C.3.a"
+      ],
       "rationaleAI": "The rise of politeness as a cultural and philosophical concept in early 18th-century Britain through coffee house culture and periodicals like the Spectator represents Enlightenment developments in the arts and social philosophy (C.3.a)."
+    },
+    {
+      "episodeTitle": "A Midsummer Night's Dream",
+      "pid": "m00046rp",
+      "relevantPathsAI": [
+        "A.5.d.iii"
+      ],
+      "rationaleAI": "The play was written c1595 during the reign of Elizabeth I and engages with Elizabethan politics, court culture, and the political vulnerabilities of the 1590s (A.5.d.iii Elizabeth I: social and cultural developments, domestic policies)."
+    },
+    {
+      "episodeTitle": "Aphra Behn",
+      "pid": "b0977v4t",
+      "relevantPathsAI": [
+        "C.2.a.i"
+      ],
+      "rationaleAI": "Behn worked under the Restoration of Charles II and was loyal to the Stuart kings, placing her squarely in the period of the Commonwealth, Protectorate, and Stuart Restoration (C.2.a.i)."
+    },
+    {
+      "episodeTitle": "Bishop Berkeley",
+      "pid": "b03y36vr",
+      "relevantPathsAI": [
+        "C.3.a"
+      ],
+      "rationaleAI": "Berkeley was an 18th-century Anglo-Irish philosopher active during the age of the Enlightenment (C.3.a origins in scientific achievements, developments in political and religious philosophies)."
+    },
+    {
+      "episodeTitle": "Boudica",
+      "pid": "b00r7lr9",
+      "relevantPathsAI": [
+        "A.5.d.iii"
+      ],
+      "rationaleAI": "Boudica's reappearance as a symbol of female power under Elizabeth I connects to Elizabethan cultural and political developments (A.5.d.iii Elizabeth I)."
+    },
+    {
+      "episodeTitle": "Calvinism",
+      "pid": "b00qvqpz",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.5.g"
+      ],
+      "rationaleAI": "The spread of Calvinism across Europe and to America connects to the Protestant Reformation and its political consequences (A.3.a), and the Swiss Reformation under Zwingli and Calvin (A.5.g)."
+    },
+    {
+      "episodeTitle": "Catherine of Aragon",
+      "pid": "m0027twc",
+      "relevantPathsAI": [
+        "A.5.d.ii",
+        "A.5.b.i"
+      ],
+      "rationaleAI": "Catherine's marriage to Henry VIII, the annulment leading to the English Reformation, and establishment of the Church of England are directly covered (A.5.d.ii Henry VIII: the divorce question, the English Reformation). Her Spanish origins connect to Habsburg Spain (A.5.b.i)."
+    },
+    {
+      "episodeTitle": "Comenius",
+      "pid": "m0017chy",
+      "relevantPathsAI": [
+        "A.3.a",
+        "A.3.b",
+        "A.4.d"
+      ],
+      "rationaleAI": "Comenius lived through the Protestant Reformation's political consequences (A.3.a), the Catholic Counter-Reformation that exiled him (A.3.b), and the Thirty Years' War (A.4.d) whose peace settlement entrenched his exile."
+    },
+    {
+      "episodeTitle": "Erasmus",
+      "pid": "b01bmlsy",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.3.a"
+      ],
+      "rationaleAI": "Erasmus exemplifies the cultural and intellectual life of the later Renaissance (A.1.b) and his work is inseparable from the Protestant Reformation and its political and social consequences (A.3.a)."
+    },
+    {
+      "episodeTitle": "John Donne",
+      "pid": "m001gx0k",
+      "relevantPathsAI": [
+        "A.3",
+        "A.5.d"
+      ],
+      "rationaleAI": "Donne's life (1573-1631) in Elizabethan and Jacobean England spans the period of the emergence of a religiously divided Europe (A.3) and the national development of England (A.5.d)."
+    },
+    {
+      "episodeTitle": "Lear",
+      "pid": "b0090s0l",
+      "relevantPathsAI": [
+        "A.5.d"
+      ],
+      "rationaleAI": "The play was written c.1606 during James I's reign, engaging contemporary interests in kingship and divine right within the national and dynastic development of England (A.5.d)."
+    },
+    {
+      "episodeTitle": "Macbeth",
+      "pid": "m000mytn",
+      "relevantPathsAI": [
+        "A.5.d"
+      ],
+      "rationaleAI": "Written c.1606 during James I's reign, the play engages contemporary interests in witchcraft, kingship, and divine right within the national development of England (A.5.d)."
+    },
+    {
+      "episodeTitle": "Mary Astell",
+      "pid": "m000nzpf",
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Astell (1666-1731) was active during the age of the Enlightenment in England (C.3), engaging with Enlightenment philosophy and intellectual culture."
     }
   ],
   "_curatedBy": "ai",

@@ -4,73 +4,121 @@
     {
       "episodeTitle": "The Abbasid Caliphs",
       "pid": "p003hyfd",
-      "relevantPathsAI": ["C", "C.1", "C.1.a", "C.1.c", "C.1.d", "C.1.d.i", "C.1.d.ii"],
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.c",
+        "C.1.d",
+        "C.1.d.i",
+        "C.1.d.ii"
+      ],
       "rationaleAI": "The Abbasid caliphate (750-c.950) ruling from Baghdad is the central subject of outline section C.1, covering the dynasty's establishment, its golden age of Arabic philosophy, mathematics, and astronomy, the systematic translation of Greek texts into Arabic (C.1.d.ii), and the integration of Persian, Arab, and Turkic cultural traditions alongside manufactures and trade networks (C.1.c)."
     },
     {
       "episodeTitle": "The Arab Conquests",
       "pid": "b00c5xzc",
-      "relevantPathsAI": ["B", "B.1", "B.1.b", "B.1.c", "B.1.c.i"],
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.b",
+        "B.1.c",
+        "B.1.c.i"
+      ],
       "rationaleAI": "The seventh- and eighth-century Arab conquests of the Byzantine Levant, Sasanian Persia, and North Africa directly correspond to B.1.c (Muslim expansion under the four Patriarchal Caliphs), covering the rapid military expansion that created the territorial basis of the Islamic empire and the spread of Islam, Arabic language, and new administrative systems."
     },
     {
       "episodeTitle": "The Battle of Tours",
       "pid": "b03pm7dv",
-      "relevantPathsAI": ["B.2.b", "C.2.a.i"],
+      "relevantPathsAI": [
+        "B.2.b",
+        "C.2.a.i"
+      ],
       "rationaleAI": "The 732 AD Battle of Poitiers where Charles Martel defeated an Arab-Berber army is explicitly referenced in outline C.2.a.i as the defeat of the Muslims near Poitiers, and represents the zenith of Umayyad westward military expansion (B.2.b) into Europe from Islamic Iberia."
     },
     {
       "episodeTitle": "The Battle of Talas",
       "pid": "b04kf8ps",
-      "relevantPathsAI": ["C.1.a", "C.2.f"],
+      "relevantPathsAI": [
+        "C.1.a",
+        "C.2.f"
+      ],
       "rationaleAI": "The 751 AD Battle of Talas between the Abbasid Caliphate and Tang China marked the eastern limit of Islamic expansion in Central Asia shortly after the Abbasid dynasty's establishment (C.1.a), with consequences for Central Asian Islamization and possible transmission of papermaking technology relevant to the Turkic peoples and eastern territories discussed in C.2.f."
     },
     {
       "episodeTitle": "Muslim Spain",
       "pid": "p00548l1",
-      "relevantPathsAI": ["C.2.a", "C.2.a.i", "C.2.a.ii", "C.2.a.iii"],
+      "relevantPathsAI": [
+        "C.2.a",
+        "C.2.a.i",
+        "C.2.a.ii",
+        "C.2.a.iii"
+      ],
       "rationaleAI": "Islamic civilization in Iberia from the 711 Berber invasion through the Umayyad emirate and caliphate at Cordoba directly covers C.2.a (the Umayyad emirate and caliphate in Spain), including the political and cultural splendour of Cordoba, coexistence of Muslim, Jewish, and Christian communities (C.2.a.iii), and the history of Al-Andalus under Umayyad rule."
     },
     {
       "episodeTitle": "Islamic Law and its Origins",
       "pid": "b010t69b",
-      "relevantPathsAI": ["B.1.b", "B.2.d.ii", "C.1.d.i"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2.d.ii",
+        "C.1.d.i"
+      ],
       "rationaleAI": "The development of Sharia from the 7th through 10th centuries — including Quranic law replacing pre-Islamic tribal custom, the emergence of classical legal schools by 900 CE, and the role of ulama — spans the Umayyad and Abbasid periods, covering the doctrine of Islam (B.1.b), fragmentation into religious sects (B.2.d.ii), and Abbasid-era theology and philosophy (C.1.d.i)."
     },
     {
       "episodeTitle": "Avicenna",
       "pid": "b00855lt",
-      "relevantPathsAI": ["C.1.d.i", "C.1.d.ii"],
+      "relevantPathsAI": [
+        "C.1.d.i",
+        "C.1.d.ii"
+      ],
       "rationaleAI": "Avicenna (Ibn Sina, 980-1037), the foremost philosopher in Islamic history, exemplifies Abbasid-era cultural achievements in theology, philosophy (C.1.d.i), and the sciences (C.1.d.ii), with his medical compendium and philosophical works reflecting Greek and Persian influences integrated into Islamic intellectual life."
     },
     {
       "episodeTitle": "al-Biruni",
       "pid": "b00smnlk",
-      "relevantPathsAI": ["C.1.d.ii", "C.2.d", "C.2.f"],
+      "relevantPathsAI": [
+        "C.1.d.ii",
+        "C.2.d",
+        "C.2.f"
+      ],
       "rationaleAI": "Al-Biruni (c.973-c.1048), a Central Asian polymath mastering mathematics, astronomy, and medicine, represents the flourishing of arts and sciences under the Abbasid cultural sphere (C.1.d.ii), while his work under Ghaznavid patronage and his pioneering cross-cultural study of India connects to the Samanid and Ghaznavid dynasties of eastern Islamic lands (C.2.d, C.2.f)."
     },
     {
       "episodeTitle": "Shahnameh of Ferdowsi",
       "pid": "b01p7dcv",
-      "relevantPathsAI": ["C.1.d", "C.1.d.ii", "C.2.d"],
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.1.d.ii",
+        "C.2.d"
+      ],
       "rationaleAI": "Ferdowsi's Shahnameh (c.1000 CE) is a landmark of Persian literary culture composed under Samanid patronage (C.2.d), embodying the Iranian cultural revival and Persian linguistic preservation against Arabization that characterized the later Abbasid period (C.1.d), with its Zoroastrian themes reflecting Persian influences on the arts (C.1.d.ii)."
     },
     {
       "episodeTitle": "Ibn Khaldun",
       "pid": "b00qckbw",
-      "relevantPathsAI": ["A"],
+      "relevantPathsAI": [
+        "A"
+      ],
       "rationaleAI": "Ibn Khaldun's Muqaddimah pioneered the systematic analysis of Islamic historical causation, dynastic cycles, and social organization, making him directly relevant to outline section A (the study of Islamic history: historical sources and historiographic problems) as the foremost theorist of Islamic historiography."
     },
     {
       "episodeTitle": "The Sassanid Empire",
       "pid": "b008g2x5",
-      "relevantPathsAI": ["B.1.a", "B.1.c.i"],
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.c.i"
+      ],
       "rationaleAI": "The Sassanid Empire as the principal pre-Islamic Persian power provides essential context for Arabia before Muhammad (B.1.a), while the Islamic conquest of the Sasanian realm is a core event of outline B.1.c.i; the episode's emphasis on Sassanid administrative structures and cultural legacy profoundly influencing subsequent Islamic civilization connects directly to the formative period's institutional foundations."
     },
     {
       "episodeTitle": "The Arabian Nights",
       "pid": "b0081kdb",
-      "relevantPathsAI": ["C.1.d", "C.1.d.ii"],
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.1.d.ii"
+      ],
       "rationaleAI": "The One Thousand and One Nights is a medieval Arabic literary collection compiled and elaborated during the Abbasid period, incorporating Indian and Persian story traditions into Arabic literary culture — a representative product of the cross-cultural artistic synthesis (C.1.d.ii) and cultural life under the Abbasid caliphate (C.1.d)."
     }
   ],

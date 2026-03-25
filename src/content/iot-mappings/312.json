@@ -4,200 +4,328 @@
     {
       "episodeTitle": "The Origins of Life",
       "pid": "p004y29f",
-      "relevantPathsAI": ["A", "A.1", "A.2", "A.2.b", "A.2.c", "A.2.d", "A.3"],
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.2.b",
+        "A.2.c",
+        "A.2.d",
+        "A.3"
+      ],
       "rationaleAI": "Directly addresses hypotheses about life's origin including primordial soup, hydrothermal vents, and RNA world theory, covering the production of organic molecules and the transition from chemistry to self-replicating biology."
     },
     {
       "episodeTitle": "Macromolecules",
       "pid": "b018grhm",
-      "relevantPathsAI": ["A.2.c", "A.2.d"],
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.2.d"
+      ],
       "rationaleAI": "Polymers as long chains of repeating molecular units forming proteins, nucleic acids, and DNA as an informational polymer directly address the production of long-chain molecules and the molecular basis of the genetic code."
     },
     {
       "episodeTitle": "Photosynthesis",
       "pid": "b0435jyv",
-      "relevantPathsAI": ["A.3.c", "A.4"],
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.4"
+      ],
       "rationaleAI": "Photosynthesis arose very early among prokaryotic organisms and fundamentally transformed Earth's atmosphere by generating oxygen, directly covering the evolution of photosynthesis in the earliest living systems and its evidence in the geological record."
     },
     {
       "episodeTitle": "Mitochondria",
       "pid": "m001md34",
-      "relevantPathsAI": ["A.3.b"],
+      "relevantPathsAI": [
+        "A.3.b"
+      ],
       "rationaleAI": "The endosymbiotic theory that mitochondria originated as free-living bacteria engulfed by ancestral cells over a billion years ago directly addresses the origin of eukaryotic cells from prokaryotic precursors."
     },
     {
       "episodeTitle": "The Cambrian Period",
       "pid": "p003k9bg",
-      "relevantPathsAI": ["A.4", "D.4", "D.6.b"],
+      "relevantPathsAI": [
+        "A.4",
+        "D.4",
+        "D.6.b"
+      ],
       "rationaleAI": "The Cambrian explosion as rapid diversification of complex multicellular life provides key evidence of biological activity in the geological record and raises fundamental questions about mechanisms driving rapid speciation and the rate of morphological change."
     },
     {
       "episodeTitle": "Ediacara Biota",
       "pid": "b00lh2s3",
-      "relevantPathsAI": ["A.4", "D.6.b"],
+      "relevantPathsAI": [
+        "A.4",
+        "D.6.b"
+      ],
       "rationaleAI": "Precambrian life forms whose discovery confirmed Darwin's prediction of pre-Cambrian life, providing direct evidence of ancient biological activity in the geological record and informing debate about evolutionary dead ends versus lineage continuity."
     },
     {
       "episodeTitle": "Lamarck and Natural Selection",
       "pid": "p005495d",
-      "relevantPathsAI": ["B.1", "B.1.a", "B.1.b"],
+      "relevantPathsAI": [
+        "B.1",
+        "B.1.a",
+        "B.1.b"
+      ],
       "rationaleAI": "Directly covers Lamarck's theory of inheritance of acquired characteristics and progressive complexification, Darwin's effort to distinguish natural selection from Lamarckian inheritance, and the persistent debate over soft inheritance in evolutionary theory."
     },
     {
       "episodeTitle": "Darwin: On the Origins of Charles Darwin",
       "pid": "b00g9z9x",
-      "relevantPathsAI": ["B.1.b"],
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
       "rationaleAI": "Darwin's early intellectual formation at Cambridge, where his interests shifted from religion to natural science under key mentors, provides biographical context for the development of his theory of natural selection."
     },
     {
       "episodeTitle": "Darwin: The Voyage of the Beagle",
       "pid": "b00gbf2g",
-      "relevantPathsAI": ["B.1.b", "B.2", "B.2.a", "B.2.b"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2",
+        "B.2.a",
+        "B.2.b"
+      ],
       "rationaleAI": "Darwin's geological and biological observations across South America and the Galapagos provided foundational evidence for evolution through species variation, comparative biology, and the fossil record, directly shaping his theory of natural selection."
     },
     {
       "episodeTitle": "Alfred Russel Wallace",
       "pid": "b01r9rxr",
-      "relevantPathsAI": ["B.1.b", "D.4"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "D.4"
+      ],
       "rationaleAI": "Wallace independently formulated natural selection and founded biogeography as a science, contributing to the history of evolutionary theory and illuminating geographic speciation through his fieldwork in the Amazon and Malay Archipelago."
     },
     {
       "episodeTitle": "Darwin: On the Origin of Species",
       "pid": "b00gd3wy",
-      "relevantPathsAI": ["B.1.b", "B.1.d", "C.3"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.d",
+        "C.3"
+      ],
       "rationaleAI": "The publication of On the Origin of Species, Wallace's parallel discovery, and the scientific debates that followed document the pivotal establishment of natural selection as the organizing framework of evolutionary biology."
     },
     {
       "episodeTitle": "Genetics",
       "pid": "p00547md",
-      "relevantPathsAI": ["B.1.c", "B.1.d", "B.1.e"],
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.1.d",
+        "B.1.e"
+      ],
       "rationaleAI": "Traces the development of genetics from Mendel's heredity laws through the Modern Synthesis unifying Mendelian genetics with Darwinian evolution, the discovery of DNA structure, and modern molecular genetic studies."
     },
     {
       "episodeTitle": "Goethe and the Science of the Enlightenment",
       "pid": "p00546n1",
-      "relevantPathsAI": ["B.1", "B.2.b"],
+      "relevantPathsAI": [
+        "B.1",
+        "B.2.b"
+      ],
       "rationaleAI": "Goethe's comparative anatomical work on plant metamorphosis and skeletal homology anticipated evolutionary thinking before Darwin, and his coining of the term morphology contributed to identifying structural similarities across species as evidence for common descent."
     },
     {
       "episodeTitle": "The Whale - A History",
       "pid": "b00kfqm6",
-      "relevantPathsAI": ["B.2.a", "B.2.b", "B.2.d", "D.6.b"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.b",
+        "B.2.d",
+        "D.6.b"
+      ],
       "rationaleAI": "The whale's transition from land mammal to fully aquatic life is documented through fossils of intermediate stages and molecular analysis confirming genetic relationships, exemplifying gradual morphological change, structural homologies, and molecular evidence for evolution."
     },
     {
       "episodeTitle": "The Evolution of Lungs",
       "pid": "m002d8t2",
-      "relevantPathsAI": ["B.2.b", "C.3.a", "D.6.b"],
+      "relevantPathsAI": [
+        "B.2.b",
+        "C.3.a",
+        "D.6.b"
+      ],
       "rationaleAI": "The repurposing of swimming musculature for respiratory function and comparative anatomy of buccal pumping illustrate structural homologies across vertebrate species and the co-option of existing structures for novel functions through natural selection."
     },
     {
       "episodeTitle": "The Evolution of Crocodiles",
       "pid": "m000zmhf",
-      "relevantPathsAI": ["B.2.a", "D.4", "D.6", "D.6.b"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "D.4",
+        "D.6",
+        "D.6.b"
+      ],
       "rationaleAI": "Crocodilian evolutionary history from Triassic origins through multiple mass extinctions demonstrates adaptive radiation, far greater morphological diversity than modern forms suggest, and continued rapid evolutionary change challenging the living-fossil misconception."
     },
     {
       "episodeTitle": "Corals",
       "pid": "m0010xnr",
-      "relevantPathsAI": ["B.1.b", "B.2.a"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2.a"
+      ],
       "rationaleAI": "Darwin's first book on coral reef formation led him to conclude Earth changed slowly, representing an early application of gradualist evolutionary reasoning informed by geological and fossil evidence that preceded On the Origin of Species."
     },
     {
       "episodeTitle": "Genetic Mutation",
       "pid": "b008drvm",
-      "relevantPathsAI": ["C.1", "C.2", "C.3.c"],
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3.c"
+      ],
       "rationaleAI": "Mutation as the fundamental mechanism generating genetic variation upon which natural selection acts directly covers gene and chromosomal mutation, changes in gene frequencies, and Haldane's contributions to understanding mutation's role in population genetics."
     },
     {
       "episodeTitle": "Evolution",
       "pid": "p00545gl",
-      "relevantPathsAI": ["B.1.e", "C.3"],
+      "relevantPathsAI": [
+        "B.1.e",
+        "C.3"
+      ],
       "rationaleAI": "Addresses whether humans continue to evolve, the implications of DNA discovery for evolutionary biology, and whether evolution necessarily means progression, engaging with molecular studies and the ongoing process of natural selection."
     },
     {
       "episodeTitle": "Parasitism",
       "pid": "b08bb9cy",
-      "relevantPathsAI": ["C.3.a", "C.3.b", "C.3.c"],
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b",
+        "C.3.c"
+      ],
       "rationaleAI": "Co-evolutionary arms races between parasites and hosts exemplify adaptation, counter-adaptation, and the role of natural selection in driving genetic change, with immune defense dynamics illustrating diversifying selection pressures."
     },
     {
       "episodeTitle": "Pollination",
       "pid": "m0028jtx",
-      "relevantPathsAI": ["C.3.a", "C.3.b"],
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b"
+      ],
       "rationaleAI": "Co-evolutionary relationships between plants and pollinators, with elaborate flower coloration, mimicry, and volatile chemical scents to attract specific pollinators, directly illustrate adaptation, fitness, and aspects of natural selection including mimicry and polymorphism."
     },
     {
       "episodeTitle": "Altruism",
       "pid": "p0038x9c",
-      "relevantPathsAI": ["C.3.d"],
+      "relevantPathsAI": [
+        "C.3.d"
+      ],
       "rationaleAI": "The evolutionary paradox of altruism and Dawkins's gene-centred explanation directly engage kin selection theory, addressing how costly cooperative behaviour persists under natural selection."
     },
     {
       "episodeTitle": "Peter Kropotkin",
       "pid": "m0014pfr",
-      "relevantPathsAI": ["C.3.d"],
+      "relevantPathsAI": [
+        "C.3.d"
+      ],
       "rationaleAI": "Kropotkin's mutual aid theory arguing that cooperation, not solely competition, drives evolution directly challenges Social Darwinist readings of natural selection and contributes to understanding kin selection and cooperative dynamics."
     },
     {
       "episodeTitle": "Evolutionary Psychology",
       "pid": "p00546xr",
-      "relevantPathsAI": ["C.3.d"],
+      "relevantPathsAI": [
+        "C.3.d"
+      ],
       "rationaleAI": "The gene-centred view of humans as survival machines and the compulsion to reproduce directly engage sexual selection and kin selection as types of natural selection shaping behaviour."
     },
     {
       "episodeTitle": "Chance and Design",
       "pid": "p00548td",
-      "relevantPathsAI": ["C.3", "D.6.b"],
+      "relevantPathsAI": [
+        "C.3",
+        "D.6.b"
+      ],
       "rationaleAI": "Gould's contingency thesis versus directionality in evolution directly addresses whether evolutionary change is gradual or punctuational and the role of chance versus deterministic selection in shaping species evolution."
     },
     {
       "episodeTitle": "Hybrids",
       "pid": "m0009t41",
-      "relevantPathsAI": ["D.1", "D.2", "D.5"],
+      "relevantPathsAI": [
+        "D.1",
+        "D.2",
+        "D.5"
+      ],
       "rationaleAI": "Hybridization between species, the distinction between sterile and fertile hybrids, and the establishment of new species through novel trait combinations directly address species distinctiveness, reproductive isolation, and genetic differentiation during speciation."
     },
     {
       "episodeTitle": "Human Evolution",
       "pid": "p003hyfl",
-      "relevantPathsAI": ["B.2.a", "B.2.d", "D.4", "D.6"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.d",
+        "D.4",
+        "D.6"
+      ],
       "rationaleAI": "Multiple diverse hominin species shaped by environmental pressures document the fossil record of gradual change, molecular clues from genetics tracing evolutionary relationships, adaptive radiation, and patterns of speciation and extinction over six million years."
     },
     {
       "episodeTitle": "Human Origins",
       "pid": "p00546rl",
-      "relevantPathsAI": ["B.2.a", "B.2.d", "D.6"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.2.d",
+        "D.6"
+      ],
       "rationaleAI": "Fossil and genetic evidence for human origins, the Out of Africa hypothesis, and the coexistence and extinction of multiple hominin lineages illustrate the fossil record, molecular evolutionary evidence, and patterns of species evolution."
     },
     {
       "episodeTitle": "Homo erectus",
       "pid": "m00168lg",
-      "relevantPathsAI": ["B.2.a", "D.4", "D.6"],
+      "relevantPathsAI": [
+        "B.2.a",
+        "D.4",
+        "D.6"
+      ],
       "rationaleAI": "Homo erectus's two-million-year persistence, spread from Africa across Asia adapting to diverse habitats, and debates about diet and brain size expansion illustrate the fossil record, adaptive radiation, and patterns and rates of species evolution."
     },
     {
       "episodeTitle": "Social Darwinism",
       "pid": "b03vgq1q",
-      "relevantPathsAI": ["B.1.b", "C.3.a"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.3.a"
+      ],
       "rationaleAI": "Traces how Darwin's theory of natural selection and Spencer's survival of the fittest were interpreted and misapplied, illustrating the cultural reception and ideological distortion of core evolutionary concepts including adaptation and competition."
     },
     {
       "episodeTitle": "Pheromones",
       "pid": "m0002mdl",
-      "relevantPathsAI": ["C.3.b", "C.3.d"],
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.3.d"
+      ],
       "rationaleAI": "Pheromones governing sexual attractiveness, dominance hierarchies, and caste determination in social insects illustrate aspects of natural selection including sexual selection and the evolutionary mechanisms underlying social organization."
     },
     {
       "episodeTitle": "Linnaeus",
       "pid": "m001l291",
-      "relevantPathsAI": ["D.1", "D.3"],
+      "relevantPathsAI": [
+        "D.1",
+        "D.3"
+      ],
       "rationaleAI": "Linnaeus's hierarchical classification of organisms into species, genera, and higher taxa established the concept of species distinctiveness and defined species properties that later evolutionary theory would reinterpret in terms of common descent."
     },
     {
       "episodeTitle": "Slime Moulds",
       "pid": "m002691y",
-      "relevantPathsAI": ["D.1", "D.6.a"],
+      "relevantPathsAI": [
+        "D.1",
+        "D.6.a"
+      ],
       "rationaleAI": "Organisms defying standard biological classification and spanning multiple kingdoms highlight fundamental problems in defining species distinctiveness and the topology of phylogenies at life's deepest taxonomic boundaries."
+    },
+    {
+      "episodeTitle": "Darwin: Life After Origins",
+      "pid": "b00gdhqf",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.d",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Darwin's post-Origin work continued developing his theory of natural selection (B.1.b), contributed to the synthetic theory of evolution through molecular and genetic studies (B.1.d), and advanced understanding of the process of evolution (C) and speciation (D)."
     }
   ],
   "_curatedBy": "ai",
