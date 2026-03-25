@@ -388,34 +388,38 @@ export interface PartCoverageSegment {
   covered: number;
   total: number;
   fraction: number;
+  /** Composite score from all layers below the active one, for tiebreaking. */
+  depthScore: number;
 }
 
-export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>(
-  entries: T[],
+const LAYERS_BELOW: Record<CoverageLayer, CoverageLayer[]> = {
+  part: ['division', 'section', 'subsection'],
+  division: ['section', 'subsection'],
+  section: ['subsection'],
+  subsection: [],
+};
+
+function groupCoverageByPart(
+  entries: ChecklistBackedReadingEntry[],
   checklistState: Record<string, boolean>,
   layer: CoverageLayer,
-  partsMeta: Array<{ partNumber: number; colorHex: string; title: string }>,
-): PartCoverageSegment[] {
-  // Group all/covered keys by partNumber for the active layer
+  partNumbers: number[],
+): { allByPart: Map<number, Set<string>>; coveredByPart: Map<number, Set<string>> } {
   const allByPart = new Map<number, Set<string>>();
   const coveredByPart = new Map<number, Set<string>>();
-
-  for (const pm of partsMeta) {
-    allByPart.set(pm.partNumber, new Set());
-    coveredByPart.set(pm.partNumber, new Set());
+  for (const pn of partNumbers) {
+    allByPart.set(pn, new Set());
+    coveredByPart.set(pn, new Set());
   }
 
   for (const entry of entries) {
     const isChecked = Boolean(checklistState[entry.checklistKey]);
 
     if (layer === 'subsection') {
-      // Subsection keys encode the section code before "::"
-      // Build a sectionCode -> partNumber lookup from sections
       const sectionPartMap = new Map<string, number>();
       for (const section of entry.sections) {
         sectionPartMap.set(section.sectionCode, section.partNumber);
       }
-
       for (const key of entry.subsectionKeys ?? []) {
         const sectionCode = key.includes('::') ? key.split('::')[0] : key;
         const partNumber = sectionPartMap.get(sectionCode);
@@ -432,11 +436,40 @@ export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>
     }
   }
 
+  return { allByPart, coveredByPart };
+}
+
+export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  layer: CoverageLayer,
+  partsMeta: Array<{ partNumber: number; colorHex: string; title: string }>,
+): PartCoverageSegment[] {
+  const partNumbers = partsMeta.map(pm => pm.partNumber);
+  const { allByPart, coveredByPart } = groupCoverageByPart(entries, checklistState, layer, partNumbers);
+
+  // Compute coverage at all layers below for composite tiebreak score
+  const belowLayers = LAYERS_BELOW[layer];
+  const belowData = belowLayers.map(bl => groupCoverageByPart(entries, checklistState, bl, partNumbers));
+
   return partsMeta.map((pm) => {
     const all = allByPart.get(pm.partNumber) ?? new Set();
     const covered = coveredByPart.get(pm.partNumber) ?? new Set();
     const total = all.size;
     const count = covered.size;
+
+    // Composite depth score: weight each sub-layer so higher layers dominate
+    // e.g. for Parts layer: division fraction * 10000 + section fraction * 100 + subsection fraction
+    let depthScore = 0;
+    for (let i = 0; i < belowData.length; i++) {
+      const bd = belowData[i];
+      const bdAll = bd.allByPart.get(pm.partNumber) ?? new Set();
+      const bdCovered = bd.coveredByPart.get(pm.partNumber) ?? new Set();
+      const frac = bdAll.size > 0 ? bdCovered.size / bdAll.size : 0;
+      const weight = Math.pow(100, belowData.length - i);
+      depthScore += frac * weight;
+    }
+
     return {
       partNumber: pm.partNumber,
       colorHex: pm.colorHex,
@@ -444,6 +477,7 @@ export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>
       covered: count,
       total,
       fraction: total > 0 ? count / total : 0,
+      depthScore,
     };
   });
 }

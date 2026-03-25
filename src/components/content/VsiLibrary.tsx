@@ -125,12 +125,11 @@ function activeCoverageDescription(layer: CoverageLayer): string {
 }
 
 function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  const label = coverageLayerLabel(layer, 2);
   if (isComplete) {
-    return `You have already covered every mapped ${label} in this tab.`;
+    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this tab.`;
   }
 
-  return `No unread VSI adds any further ${label} coverage right now.`;
+  return `No unread VSI adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
 }
 
 function precisionBadgeText(entry: VsiAggregateEntry): string | null {
@@ -261,7 +260,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
             : undefined}
           emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           partSegments={partSegments}
-          activeLayerLabel={coverageLayerLabel(activeLayer, 2, { lowercase: true })}
+          activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
           mobileRingWidth={7}
           desktopRingWidth={9}
         />

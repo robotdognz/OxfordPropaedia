@@ -111,7 +111,7 @@ export default function ReadingCoverageSummary({
           </svg>
         </button>
         {statsOpen && (
-          <div class={`mt-2 grid gap-3 ${hasPartRing ? 'grid-cols-2' : 'grid-cols-1'}`}>
+          <div class={`mt-2 grid gap-3 ${hasPartRing ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
             <div class="space-y-1 text-xs text-slate-500">
               {coverageRings.map((ring) => (
                 <div
@@ -124,12 +124,11 @@ export default function ReadingCoverageSummary({
                   <span>{ring.label}: {ring.count}/{ring.total}</span>
                 </div>
               ))}
-              <p class="pt-1 text-slate-400">{completedCount} of {totalCount} {totalLabel.toLowerCase()} checked off.</p>
             </div>
             {hasPartRing && (() => {
-              const covered = partSegments.filter(s => s.fraction > 0).sort((a, b) => b.fraction - a.fraction);
-              const uncovered = partSegments.filter(s => s.fraction === 0);
-              const lbl = activeLayerLabel ?? 'items';
+              const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
+              const covered = sorted.filter(s => s.fraction > 0);
+              const uncovered = sorted.filter(s => s.fraction === 0);
               return (
                 <div class="space-y-1 text-xs text-slate-500">
                   {covered.length > 0 && (
@@ -138,18 +137,18 @@ export default function ReadingCoverageSummary({
                       {covered.slice(0, 3).map(s => (
                         <div key={s.partNumber} class="flex items-center gap-1.5">
                           <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>Part {s.partNumber}: {s.covered}/{s.total} {lbl}</span>
+                          <span>{s.title}: {s.covered}/{s.total} {activeLayerLabel ?? 'items'}</span>
                         </div>
                       ))}
                     </>
                   )}
                   {uncovered.length > 0 && uncovered.length < 10 && (
                     <>
-                      <p class="pt-1 font-medium text-slate-600">Not yet started</p>
+                      <p class="pt-1 font-medium text-slate-600">Least covered</p>
                       {uncovered.slice(0, 3).map(s => (
                         <div key={s.partNumber} class="flex items-center gap-1.5">
                           <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>Part {s.partNumber}: {s.title}</span>
+                          <span>{s.title}: {s.covered}/{s.total} {activeLayerLabel ?? 'items'}</span>
                         </div>
                       ))}
                       {uncovered.length > 3 && (
@@ -158,7 +157,7 @@ export default function ReadingCoverageSummary({
                     </>
                   )}
                   {covered.length === 0 && (
-                    <p class="text-slate-400">No {lbl} covered yet.</p>
+                    <p class="text-slate-400">No {activeLayerLabel ?? 'items'} covered yet.</p>
                   )}
                 </div>
               );

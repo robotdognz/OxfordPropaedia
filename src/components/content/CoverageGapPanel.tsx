@@ -66,7 +66,7 @@ export default function CoverageGapPanel<TEntry extends ChecklistBackedReadingEn
 
       {isComplete ? (
         <div class="mt-5 rounded-xl border border-emerald-200 bg-white px-4 py-5 text-sm text-emerald-800">
-          You have covered every mapped {layerMeta.pluralLabel} in this tab.
+          You have covered every mapped {layerMeta.label} in this tab.
         </div>
       ) : gapItems.length > 0 ? (
         <div class="mt-5 grid gap-3 lg:grid-cols-2">

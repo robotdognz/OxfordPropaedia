@@ -53,12 +53,11 @@ function availableLayers(source: HomepageCoverageSource): CoverageLayer[] {
 }
 
 function emptyRecommendationMessage(source: HomepageCoverageSource, layer: CoverageLayer, isComplete: boolean): string {
-  const label = coverageLayerLabel(layer, 2, { lowercase: true });
   if (isComplete) {
-    return `You have already covered every mapped ${label} in this view.`;
+    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
   }
 
-  return `No unread ${source.itemSingular} adds any further ${label} right now.`;
+  return `No unread ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
 }
 
 export default function HomepageCoverageExplorer({
@@ -346,7 +345,7 @@ export default function HomepageCoverageExplorer({
                   </svg>
                 </button>
                 {statsOpen && (
-                  <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                  <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
                     <div class="space-y-1 text-xs text-slate-500">
                       {coverageRings.map((ring) => (
                         <div
@@ -361,12 +360,12 @@ export default function HomepageCoverageExplorer({
                           <span>{ring.label}: {ring.count}/{ring.total}</span>
                         </div>
                       ))}
-                      <p class="pt-1 text-slate-400">{completedCount} of {source.entries.length} {source.totalLabel.toLowerCase()} checked off.</p>
                     </div>
                     {partSegments.length > 0 && (() => {
-                      const covered = partSegments.filter(s => s.fraction > 0).sort((a, b) => b.fraction - a.fraction);
-                      const uncovered = partSegments.filter(s => s.fraction === 0);
-                      const layerLabel = coverageLayerLabel(activeLayer, 2, { lowercase: true });
+                      const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
+                      const covered = sorted.filter(s => s.fraction > 0);
+                      const uncovered = sorted.filter(s => s.fraction === 0);
+                      const layerLabel = coverageLayerLabel(activeLayer, 2);
                       return (
                         <div class="space-y-1 text-xs text-slate-500">
                           {covered.length > 0 && (
@@ -375,18 +374,18 @@ export default function HomepageCoverageExplorer({
                               {covered.slice(0, 3).map(s => (
                                 <div key={s.partNumber} class="flex items-center gap-1.5">
                                   <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                  <span>Part {s.partNumber}: {s.covered}/{s.total} {layerLabel}</span>
+                                  <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
                                 </div>
                               ))}
                             </>
                           )}
                           {uncovered.length > 0 && uncovered.length < 10 && (
                             <>
-                              <p class="pt-1 font-medium text-slate-600">Not yet started</p>
+                              <p class="pt-1 font-medium text-slate-600">Least covered</p>
                               {uncovered.slice(0, 3).map(s => (
                                 <div key={s.partNumber} class="flex items-center gap-1.5">
                                   <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                  <span>Part {s.partNumber}: {s.title}</span>
+                                  <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
                                 </div>
                               ))}
                               {uncovered.length > 3 && (
@@ -413,8 +412,8 @@ export default function HomepageCoverageExplorer({
                 </p>
                 <p class="mt-2 text-sm leading-6 text-slate-600">
                   {isLayerComplete
-                    ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 2, { lowercase: true })} in this view.`
-                    : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0, { lowercase: true })} still to reach.`}
+                    ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 1)} in this view.`
+                    : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0)} still to reach.`}
                 </p>
               </div>
 
@@ -432,7 +431,7 @@ export default function HomepageCoverageExplorer({
                     </a>
                     {bestNext.meta ? <p class="mt-1 text-sm text-amber-900">{bestNext.meta}</p> : null}
                     <p class="mt-3 text-sm leading-6 text-amber-900">
-                      Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount, { lowercase: true })} and touches {bestNext.sectionCount} linked Sections.
+                      Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount)} and touches {bestNext.sectionCount} linked Sections.
                     </p>
                   </>
                 ) : (
