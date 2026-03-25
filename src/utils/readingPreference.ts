@@ -38,6 +38,49 @@ export function setReadingPreference(type: ReadingType): void {
   document.dispatchEvent(new CustomEvent(CHANGE_EVENT, { detail: type }));
 }
 
+// --- Hide checked readings on outline pages ---
+
+const HIDE_CHECKED_KEY = 'propaedia-hide-checked-readings';
+const HIDE_CHECKED_EVENT = 'propaedia:hide-checked-change';
+
+export function getHideCheckedReadings(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    return localStorage.getItem(HIDE_CHECKED_KEY) === 'true';
+  } catch {
+    return false;
+  }
+}
+
+export function setHideCheckedReadings(hide: boolean): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(HIDE_CHECKED_KEY, String(hide));
+  } catch {
+    // Ignore
+  }
+  document.dispatchEvent(new CustomEvent(HIDE_CHECKED_EVENT, { detail: hide }));
+}
+
+export function subscribeHideCheckedReadings(callback: (hide: boolean) => void): () => void {
+  const handler = (event: Event) => {
+    callback((event as CustomEvent<boolean>).detail);
+  };
+  document.addEventListener(HIDE_CHECKED_EVENT, handler);
+
+  const storageHandler = (event: StorageEvent) => {
+    if (event.key === HIDE_CHECKED_KEY) {
+      callback(event.newValue === 'true');
+    }
+  };
+  window.addEventListener('storage', storageHandler);
+
+  return () => {
+    document.removeEventListener(HIDE_CHECKED_EVENT, handler);
+    window.removeEventListener('storage', storageHandler);
+  };
+}
+
 export function subscribeReadingPreference(callback: (type: ReadingType) => void): () => void {
   const handler = (event: Event) => {
     callback((event as CustomEvent<ReadingType>).detail);

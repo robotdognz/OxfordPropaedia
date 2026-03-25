@@ -1,7 +1,5 @@
 Propaedia TODO:
 
-    - Need to have a site wide setting for show or hide readings that are already checked off, this will be accessible from all of the reading accordians in the outline pages, and only apply to reading accordians in the outline pages
-
     - It would be nice if all the reading accordians had horazontal scroll with arrows instead of expanding a long list vertically
 
     - Add spotify link to BBC epsiodes. Add Amazon and Goodreads links and star ratings to pages for VSI's (and fix the broken links for the Oxford website). Add the Wikipedia scraped paragraphs to Wikipedia pages

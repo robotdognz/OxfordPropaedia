@@ -14,7 +14,7 @@ import {
   OUTLINE_SELECT_EVENT,
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
-import { getReadingPreference } from '../../utils/readingPreference';
+import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 
@@ -45,11 +45,17 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'vsi' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
+  const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
+
   useEffect(() => {
     setChecklistState(readChecklistState());
     return subscribeChecklistState(() => {
       setChecklistState(readChecklistState());
     });
+  }, []);
+
+  useEffect(() => {
+    return subscribeHideCheckedReadings((hide) => setHideChecked(hide));
   }, []);
 
   useEffect(() => {
@@ -79,8 +85,11 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
 
   const scoredMappings = sortByDefaultRelevance(mappings, sectionTitle, sectionOutlineText);
   const visibleMappings = selection ? filterMappingsForOutline(scoredMappings, selection) : scoredMappings;
+  const displayMappings = hideChecked
+    ? visibleMappings.filter(m => !checklistState[vsiChecklistKey(m.vsiTitle, m.vsiAuthor)])
+    : visibleMappings;
   const totalCount = mappings.length;
-  const visibleCount = visibleMappings.length;
+  const visibleCount = displayMappings.length;
   const isFiltered = selection !== null;
   const selectionPath = selection?.outlinePath ?? '';
   const selectionText = selection?.text ?? '';
@@ -92,7 +101,16 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
   return (
     <section ref={sectionRef} id="vsi-recommendations" class="scroll-mt-24">
       <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
-        <div class="mb-4 flex justify-end">
+        <div class="mb-4 flex items-center justify-between">
+          <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              checked={hideChecked}
+              onChange={(e) => setHideCheckedReadings((e.currentTarget as HTMLInputElement).checked)}
+              class="h-3.5 w-3.5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+            />
+            Hide checked
+          </label>
           <a
             href={`${baseUrl}/vsi#vsi-library`}
             class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
@@ -123,13 +141,13 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
 
         {visibleCount > 0 ? (
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {visibleMappings.map((mapping, index) => {
+            {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
 
               const filterScore = (mapping as any).filterScore;
               const relevanceScore = filterScore ?? (mapping as any).relevanceScore ?? 0;
               const maxScore = filterScore !== undefined
-                ? Math.max(...visibleMappings.map((m: any) => m.filterScore ?? 0), 1)
+                ? Math.max(...displayMappings.map((m: any) => m.filterScore ?? 0), 1)
                 : Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
               const matchPercent = Math.round(Math.min(relevanceScore / maxScore, 1) * 100);
               const precision = mappingPrecisionBadge(

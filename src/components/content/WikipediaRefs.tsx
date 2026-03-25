@@ -16,7 +16,7 @@ import {
   filterArticlesForOutline,
   type SearchableWikiArticle,
 } from '../../utils/wikipediaOutlineFilter';
-import { getReadingPreference } from '../../utils/readingPreference';
+import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 
@@ -52,6 +52,8 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'wikipedia' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
+  const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
+
   useEffect(() => {
     setLevel(getStoredLevel());
     setChecklistState(readChecklistState());
@@ -62,6 +64,10 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
     };
     window.addEventListener('storage', onStorage);
     return () => { unsub(); window.removeEventListener('storage', onStorage); };
+  }, []);
+
+  useEffect(() => {
+    return subscribeHideCheckedReadings((hide) => setHideChecked(hide));
   }, []);
 
   useEffect(() => {
@@ -93,21 +99,36 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
     visibleArticles = [...levelFiltered].sort((a, b) => (b.matchPercent || 0) - (a.matchPercent || 0));
   }
 
+  const displayArticles = hideChecked
+    ? visibleArticles.filter(a => !checklistState[wikipediaChecklistKey(a.title)])
+    : visibleArticles;
+
   const isFiltered = selection !== null;
   const totalCount = levelFiltered.length;
-  const visibleCount = visibleArticles.length;
+  const visibleCount = displayArticles.length;
 
   const maxScore = selection
-    ? Math.max(...visibleArticles.map((a) => a.filterScore || 0), 1)
-    : Math.max(...visibleArticles.map((a) => a.matchPercent || 0), 1);
+    ? Math.max(...displayArticles.map((a) => a.filterScore || 0), 1)
+    : Math.max(...displayArticles.map((a) => a.matchPercent || 0), 1);
 
   return (
     <section ref={sectionRef} class="scroll-mt-24">
       <Accordion title={`Wikipedia Article Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
-        <div class="mb-4 flex flex-wrap items-start justify-between gap-3">
-          <span class="text-xs text-gray-500">
-            Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (~1,000)'}
-          </span>
+        <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-4">
+            <span class="text-xs text-gray-500">
+              Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (~1,000)'}
+            </span>
+            <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={hideChecked}
+                onChange={(e) => setHideCheckedReadings((e.currentTarget as HTMLInputElement).checked)}
+                class="h-3.5 w-3.5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              Hide checked
+            </label>
+          </div>
           <a
             href={`${baseUrl}/wikipedia#wikipedia-library`}
             class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
@@ -136,7 +157,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
 
         {visibleCount > 0 ? (
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {visibleArticles.map((article) => {
+            {displayArticles.map((article) => {
               const checkKey = wikipediaChecklistKey(article.title);
               const isChecked = Boolean(checklistState[checkKey]);
               const mp = selection

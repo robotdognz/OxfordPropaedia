@@ -12,6 +12,9 @@ import {
 } from '../../utils/readingChecklist';
 import {
   getReadingPreference,
+  getHideCheckedReadings,
+  setHideCheckedReadings,
+  subscribeHideCheckedReadings,
   subscribeReadingPreference,
   type ReadingType,
 } from '../../utils/readingPreference';
@@ -77,12 +80,14 @@ function buildRationale(item: ReadingItem, countLabel: string, contextLabel: str
 export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [readingPref, setReadingPref] = useState<ReadingType>(() => getReadingPreference());
+  const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
 
   useEffect(() => {
     setChecklistState(readChecklistState());
     const unsubChecklist = subscribeChecklistState(() => setChecklistState(readChecklistState()));
     const unsubPref = subscribeReadingPreference((type) => setReadingPref(type));
-    return () => { unsubChecklist(); unsubPref(); };
+    const unsubHide = subscribeHideCheckedReadings((hide) => setHideChecked(hide));
+    return () => { unsubChecklist(); unsubPref(); unsubHide(); };
   }, []);
 
   if (vsi.length === 0 && wiki.length === 0 && iot.length === 0 && macro.length === 0) return null;
@@ -111,7 +116,16 @@ export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [],
         .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0))
         .map((section) => (
         <Accordion key={section.type} title={section.title} forceOpenKey={readingPref === section.type ? 0 : undefined} forceCloseKey={readingPref !== section.type ? 0 : undefined}>
-          <div class="mb-4 flex justify-end">
+          <div class="mb-4 flex items-center justify-between">
+            <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={hideChecked}
+                onChange={(e) => setHideCheckedReadings((e.currentTarget as HTMLInputElement).checked)}
+                class="h-3.5 w-3.5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              Hide checked
+            </label>
             <a
               href={section.browseHref}
               class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
@@ -120,7 +134,10 @@ export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [],
             </a>
           </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {section.items.map((item) => {
+            {section.items.filter((item) => {
+              if (!hideChecked) return true;
+              return !checklistState[section.getCheckKey(item)];
+            }).map((item) => {
               const checkKey = section.getCheckKey(item);
               const isChecked = Boolean(checklistState[checkKey]);
               const matchPercent = item.relevance ?? 100;
