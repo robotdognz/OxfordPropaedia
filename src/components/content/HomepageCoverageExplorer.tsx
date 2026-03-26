@@ -4,9 +4,12 @@ import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
 import {
+  getCoverageLayerPreference,
   getReadingPreference,
   READING_TYPE_LABELS,
+  setCoverageLayerPreference,
   setReadingPreference,
+  subscribeCoverageLayerPreference,
   subscribeReadingPreference,
   type ReadingType,
 } from '../../utils/readingPreference';
@@ -72,7 +75,7 @@ export default function HomepageCoverageExplorer({
   const [sourceCache, setSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>({
     [initialSource.type]: initialSource,
   });
-  const [selectedLayers, setSelectedLayers] = useState<Partial<Record<ReadingType, CoverageLayer>>>({});
+  const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
   const [statsOpen, setStatsOpen] = useState(false);
   const [loadingType, setLoadingType] = useState<ReadingType | null>(null);
@@ -104,11 +107,21 @@ export default function HomepageCoverageExplorer({
     const preferred = getReadingPreference();
     setSelectedType(preferred);
     void ensureSourceLoaded(preferred);
+    setSelectedLayer(getCoverageLayerPreference());
 
-    return subscribeReadingPreference((type) => {
+    const unsubType = subscribeReadingPreference((type) => {
       setSelectedType(type);
       void ensureSourceLoaded(type);
     });
+
+    const unsubLayer = subscribeCoverageLayerPreference((layer) => {
+      setSelectedLayer(layer);
+    });
+
+    return () => {
+      unsubType();
+      unsubLayer();
+    };
   }, []);
 
   const source = sourceCache[selectedType];
@@ -142,10 +155,9 @@ export default function HomepageCoverageExplorer({
     [tabSnapshots],
   );
 
-  const explicitLayer = source ? selectedLayers[selectedType] : null;
   const activeLayer =
-    source && explicitLayer && supportedLayers.includes(explicitLayer)
-      ? explicitLayer
+    selectedLayer && supportedLayers.includes(selectedLayer)
+      ? selectedLayer
       : defaultLayer;
   const activeSnapshot = snapshots.find((snapshot) => snapshot.layer === activeLayer) ?? snapshots[0];
   const activePath = activeSnapshot
@@ -280,10 +292,8 @@ export default function HomepageCoverageExplorer({
                     role="tab"
                     aria-selected={isActive}
                     onClick={() => {
-                      setSelectedLayers((current) => ({
-                        ...current,
-                        [selectedType]: snapshot.layer,
-                      }));
+                      setSelectedLayer(snapshot.layer);
+                      setCoverageLayerPreference(snapshot.layer);
                     }}
                     class={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
                       isActive
@@ -315,10 +325,8 @@ export default function HomepageCoverageExplorer({
                     onSelectRing={(label) => {
                       const layer = LAYER_BY_RING_LABEL[label];
                       if (layer && supportedLayers.includes(layer)) {
-                        setSelectedLayers((current) => ({
-                          ...current,
-                          [selectedType]: layer,
-                        }));
+                        setSelectedLayer(layer);
+                        setCoverageLayerPreference(layer);
                       }
                     }}
                   />

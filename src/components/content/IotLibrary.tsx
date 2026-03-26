@@ -24,6 +24,11 @@ import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
+import {
+  getCoverageLayerPreference,
+  setCoverageLayerPreference,
+  subscribeCoverageLayerPreference,
+} from '../../utils/readingPreference';
 
 export interface IotLibraryProps {
   entries: IotAggregateEntry[];
@@ -113,6 +118,19 @@ export default function IotLibrary({
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
+
+  const changeLayer = (layer: CoverageLayer) => {
+    setSelectedLayer(layer);
+    setCoverageLayerPreference(layer);
+  };
+
+  useEffect(() => {
+    setSelectedLayer(getCoverageLayerPreference());
+    const unsubLayer = subscribeCoverageLayerPreference((layer) => setSelectedLayer(layer));
+    return () => {
+      unsubLayer();
+    };
+  }, []);
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
@@ -218,7 +236,7 @@ export default function IotLibrary({
     <div class="space-y-4">
       <CoverageLayerTabs
         activeLayer={activeLayer}
-        onSelect={(layer) => setSelectedLayer(layer)}
+        onSelect={(layer) => changeLayer(layer)}
         snapshots={layerTabSnapshots}
       />
 
@@ -234,7 +252,7 @@ export default function IotLibrary({
           activeRingLabel={layerMeta.pluralLabel}
           onSelectCoverageRing={(label) => {
             const layer = LAYER_BY_RING_LABEL[label];
-            if (layer) setSelectedLayer(layer);
+            if (layer) changeLayer(layer);
           }}
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}

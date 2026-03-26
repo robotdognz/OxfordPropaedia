@@ -1,13 +1,10 @@
 Propaedia TODO:
 
-    - Fix the broken links for the Oxford website
-
-    - Need to remember and restore users outline layer choice site wide (home page and reading home pages). Default to Part, but otherwise restore user preference
-
+    - Fix the broken links for the Oxford website (maybe replace with search like we have for goodreads and amazon?)
     
-
-    
-    - Still need to improve the gaps between elements on the home page, bit weird looking.
+    - Still need to improve the gaps between elements on the home page, bit weird looking. 
+        - Need to figure out where to put the circle of learning essay
+        - Need to simplify and clean up cricle navigation ui, it's overwhelming at the moment
 
     - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     

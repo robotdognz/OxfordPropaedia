@@ -81,6 +81,56 @@ export function subscribeHideCheckedReadings(callback: (hide: boolean) => void):
   };
 }
 
+// --- Coverage layer preference ---
+
+import type { CoverageLayer } from './readingLibrary';
+
+const LAYER_KEY = 'propaedia-coverage-layer';
+const LAYER_EVENT = 'propaedia:coverage-layer-change';
+const VALID_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+
+export function getCoverageLayerPreference(): CoverageLayer {
+  if (typeof window === 'undefined') return 'part';
+  try {
+    const stored = localStorage.getItem(LAYER_KEY);
+    if (stored && VALID_LAYERS.includes(stored as CoverageLayer)) {
+      return stored as CoverageLayer;
+    }
+  } catch {
+    // Ignore
+  }
+  return 'part';
+}
+
+export function setCoverageLayerPreference(layer: CoverageLayer): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(LAYER_KEY, layer);
+  } catch {
+    // Ignore
+  }
+  document.dispatchEvent(new CustomEvent(LAYER_EVENT, { detail: layer }));
+}
+
+export function subscribeCoverageLayerPreference(callback: (layer: CoverageLayer) => void): () => void {
+  const handler = (event: Event) => {
+    callback((event as CustomEvent<CoverageLayer>).detail);
+  };
+  document.addEventListener(LAYER_EVENT, handler);
+
+  const storageHandler = (event: StorageEvent) => {
+    if (event.key === LAYER_KEY && event.newValue && VALID_LAYERS.includes(event.newValue as CoverageLayer)) {
+      callback(event.newValue as CoverageLayer);
+    }
+  };
+  window.addEventListener('storage', storageHandler);
+
+  return () => {
+    document.removeEventListener(LAYER_EVENT, handler);
+    window.removeEventListener('storage', storageHandler);
+  };
+}
+
 export function subscribeReadingPreference(callback: (type: ReadingType) => void): () => void {
   const handler = (event: Event) => {
     callback((event as CustomEvent<ReadingType>).detail);
