@@ -196,6 +196,13 @@ export default function CoverageRings({
               startRotation = startComp * 360;
               fraction = rawFraction > 0 ? Math.max(0.001, rawFraction - startComp) : 0;
             }
+          } else if (width > ringWidth) {
+            // Full circle (rawFraction === 1) — rotationally invariant, but keep
+            // the same startRotation so it doesn't visibly snap during transitions
+            const baseRadius = radius + (width - ringWidth) / 2;
+            const baseCirc = 2 * Math.PI * baseRadius;
+            startRotation = ((width / 2) / circumference - (ringWidth / 2) / baseCirc) * 360;
+            fraction = rawFraction;
           } else {
             fraction = rawFraction;
             startRotation = 0;
