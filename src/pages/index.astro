@@ -289,7 +289,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         {circleIntroHtml && (
           <details class="mt-6 group/essay">
             <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 [&::-webkit-details-marker]:hidden list-none">
-              <span>The Circle of Learning — essay by {circleEssay?.data.author ?? 'Mortimer J. Adler'}</span>
+              <span>The Circle of Learning - essay by {circleEssay?.data.author ?? 'Mortimer J. Adler'}</span>
               <svg
                 class="h-3 w-3 transition-transform group-open/essay:rotate-180"
                 xmlns="http://www.w3.org/2000/svg"
@@ -301,26 +301,128 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
-            <div class="mt-4 rounded-xl border border-slate-200 bg-white p-5 sm:p-6">
+            <div class="mt-4 rounded-xl border border-slate-200 bg-white p-5 sm:p-6 font-serif text-sm text-slate-500 sm:text-base">
+              <h3 class="text-2xl font-bold text-slate-900">The Circle of Learning</h3>
+              {circleEssay?.data.author && (
+                <p class="mt-1 text-sm text-slate-500">by {circleEssay.data.author}</p>
+              )}
               <div
-                class="prose-propaedia min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                class="prose-propaedia mt-4 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
                 set:html={circleIntroHtml}
               />
               {circleListHtml && (
                 <div
-                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
                   set:html={circleListHtml}
                 />
               )}
+
+              {circleFirstFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
+                  set:html={circleFirstFigureIntroHtml}
+                />
+              )}
+              {segmentRotationGroup && (
+                <div class="mt-6 grid gap-5 md:grid-cols-2 md:justify-items-center">
+                  {segmentRotationGroup.figures.map((figure) => (
+                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
+                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                        {figure.kind === 'segments' && figure.order.map((partNumber, index) => {
+                          const segmentAngle = 360 / figure.order.length;
+                          const offset = -segmentAngle / 2;
+                          const start = index * segmentAngle + offset;
+                          const end = start + segmentAngle;
+                          const label = labelPosition(110, 110, 69, start, end);
+                          return (
+                            <g>
+                              <path d={donutSlicePath(110, 110, 42, 96, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
+                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                            </g>
+                          );
+                        })}
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
+              {circleSecondFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
+                  set:html={circleSecondFigureIntroHtml}
+                />
+              )}
+              {alternativeCentreGroup && (
+                <div class="mt-6 grid gap-5 md:grid-cols-2 md:justify-items-center">
+                  {alternativeCentreGroup.figures.map((figure) => (
+                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
+                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                        {figure.kind === 'hub' && figure.outer.map((partNumber, index) => {
+                          const segmentAngle = 360 / figure.outer.length;
+                          const offset = -segmentAngle / 2;
+                          const start = index * segmentAngle + offset;
+                          const end = start + segmentAngle;
+                          const label = labelPosition(110, 110, 75, start, end);
+                          return (
+                            <g>
+                              <path d={donutSlicePath(110, 110, 52, 98, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
+                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                            </g>
+                          );
+                        })}
+                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                        <text x="110" y="110" fill="white" font-size="20" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
+              {circleThirdFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
+                  set:html={circleThirdFigureIntroHtml}
+                />
+              )}
+              {partTenCentreGroup && (
+                <div class="mt-6 flex justify-center">
+                  {partTenCentreGroup.figures.map((figure) => (
+                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
+                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                        {figure.kind === 'hub' && figure.outer.map((partNumber, index) => {
+                          const segmentAngle = 360 / figure.outer.length;
+                          const offset = -segmentAngle / 2;
+                          const start = index * segmentAngle + offset;
+                          const end = start + segmentAngle;
+                          const label = labelPosition(110, 110, 75, start, end);
+                          return (
+                            <g>
+                              <path d={donutSlicePath(110, 110, 52, 98, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
+                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                            </g>
+                          );
+                        })}
+                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                        <text x="110" y="110" fill="white" font-size="20" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
               {circlePartTenReasonHtml && (
                 <div
-                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
                   set:html={circlePartTenReasonHtml}
                 />
               )}
               {circleRemainderHtml && (
                 <div
-                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:font-serif prose-p:text-sm prose-p:text-slate-500 sm:prose-p:text-base prose-li:font-serif prose-li:text-sm prose-li:text-slate-500 sm:prose-li:text-base prose-strong:text-slate-700"
                   set:html={circleRemainderHtml}
                 />
               )}
