@@ -1,12 +1,12 @@
 Propaedia TODO:
 
+    - Make "3. Specific Topic" home page element have the the Part title text match the Part color as well as having a color dot in the corner
+
     - Fix the broken links for the Oxford website (maybe replace with search like we have for goodreads and amazon?)
     
     - Still need to improve the gaps between elements on the home page, bit weird looking. 
         - Need to figure out where to put the circle of learning essay
         - Need to simplify and clean up cricle navigation ui, it's overwhelming at the moment
-
-    - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     
 
     More work:

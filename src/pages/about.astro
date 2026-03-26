@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
+import ProgressBackup from '../components/content/ProgressBackup';
 ---
 
 <BaseLayout title="About — Propaedia" description="About this web edition of the Propaedia Outline of Knowledge">
@@ -105,6 +106,14 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
         covering 998 articles.
       </p>
 
+      <h2 id="your-reading-progress">Your Reading Progress</h2>
+    </div>
+
+    <div class="mt-4 mb-8">
+      <ProgressBackup client:load />
+    </div>
+
+    <div class="prose-propaedia">
       <h2>Technical Details</h2>
       <p>
         This site is built with <a href="https://astro.build">Astro</a> and
