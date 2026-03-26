@@ -6,7 +6,6 @@ interface HorizontalCardScrollProps {
   cardMinWidth?: number;
 }
 
-const GAP = 16;
 const DRAG_THRESHOLD = 5;
 
 export default function HorizontalCardScroll({
@@ -37,7 +36,7 @@ export default function HorizontalCardScroll({
     };
   }, [updateArrows, children]);
 
-  // Touch/mouse drag scrolling — only activates after DRAG_THRESHOLD px of movement
+  // Touch/mouse drag scrolling
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
@@ -51,7 +50,6 @@ export default function HorizontalCardScroll({
       if (e.button !== 0) return;
       const target = e.target as HTMLElement;
       if (target.closest('a, button, input, label, select, textarea')) return;
-
       pointerId = e.pointerId;
       startX = e.clientX;
       scrollStart = el.scrollLeft;
@@ -61,16 +59,13 @@ export default function HorizontalCardScroll({
     const onPointerMove = (e: PointerEvent) => {
       if (pointerId === null || e.pointerId !== pointerId) return;
       const dx = e.clientX - startX;
-
       if (!hasDragged && Math.abs(dx) < DRAG_THRESHOLD) return;
-
       if (!hasDragged) {
         hasDragged = true;
         el.setPointerCapture(e.pointerId);
         el.style.scrollBehavior = 'auto';
         el.style.cursor = 'grabbing';
       }
-
       el.scrollLeft = scrollStart - dx;
     };
 
@@ -105,9 +100,7 @@ export default function HorizontalCardScroll({
     const cards = Array.from(el.children) as HTMLElement[];
     if (cards.length === 0) return;
 
-    const scrollLeft = el.scrollLeft;
-    const viewWidth = el.clientWidth;
-    const viewCenter = scrollLeft + viewWidth / 2;
+    const viewCenter = el.scrollLeft + el.clientWidth / 2;
 
     // Find the card whose center is closest to the viewport center
     let anchorIdx = 0;
@@ -118,8 +111,6 @@ export default function HorizontalCardScroll({
       if (d < anchorDist) { anchorDist = d; anchorIdx = i; }
     });
 
-    // If the anchor is already well-centered (within a few px), step past it.
-    // Otherwise, center the anchor first.
     const anchorCenter = cards[anchorIdx].offsetLeft + cards[anchorIdx].offsetWidth / 2;
     const alreadyCentered = Math.abs(anchorCenter - viewCenter) < 10;
 
@@ -129,8 +120,6 @@ export default function HorizontalCardScroll({
         ? Math.min(anchorIdx + 1, cards.length - 1)
         : Math.max(anchorIdx - 1, 0);
     } else {
-      // Not centered on any card — first click centers the nearest one
-      // in the scroll direction
       if (direction === 'right' && anchorCenter > viewCenter) {
         targetIdx = anchorIdx;
       } else if (direction === 'left' && anchorCenter < viewCenter) {
@@ -142,16 +131,28 @@ export default function HorizontalCardScroll({
       }
     }
 
-    const target = cards[targetIdx];
-    const targetCenter = target.offsetLeft + target.offsetWidth / 2;
-    const ideal = targetCenter - viewWidth / 2;
-    const max = el.scrollWidth - viewWidth;
+    const max = el.scrollWidth - el.clientWidth;
+
+    // First card: snap to start. Last card: snap to end. Otherwise center.
+    let scrollTarget: number;
+    if (targetIdx === 0) {
+      scrollTarget = 0;
+    } else if (targetIdx === cards.length - 1) {
+      scrollTarget = max;
+    } else {
+      const card = cards[targetIdx];
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      scrollTarget = Math.max(0, Math.min(cardCenter - el.clientWidth / 2, max));
+    }
 
     el.scrollTo({
-      left: Math.max(0, Math.min(ideal, max)),
+      left: scrollTarget,
       behavior: 'smooth',
     });
   };
+
+  // Responsive card width: use container width on small screens so one card fills the view
+  const cardStyle = `width: ${cardMinWidth}px; min-width: min(${cardMinWidth}px, calc(100% - 16px))`;
 
   return (
     <div class="relative">
@@ -185,11 +186,11 @@ export default function HorizontalCardScroll({
         style={{ scrollbarWidth: 'thin' }}
       >
         {Array.isArray(children) ? children.map((child, i) => (
-          <div key={i} class="shrink-0" style={{ width: `${cardMinWidth}px`, minWidth: `${cardMinWidth}px` }}>
+          <div key={i} class="shrink-0" style={cardStyle}>
             {child}
           </div>
         )) : (
-          <div class="shrink-0" style={{ width: `${cardMinWidth}px`, minWidth: `${cardMinWidth}px` }}>
+          <div class="shrink-0" style={cardStyle}>
             {children}
           </div>
         )}
