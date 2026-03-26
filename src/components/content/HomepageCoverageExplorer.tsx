@@ -80,11 +80,15 @@ export default function HomepageCoverageExplorer({
   const [loadingType, setLoadingType] = useState<ReadingType | null>(null);
   const [errorType, setErrorType] = useState<ReadingType | null>(null);
 
+  const loadingRef = useRef<Set<ReadingType>>(new Set());
+
   async function ensureSourceLoaded(type: ReadingType) {
     if (sourceCache[type]) return;
+    if (loadingRef.current.has(type)) return; // Already in flight
 
+    loadingRef.current.add(type);
     setLoadingType(type);
-    setErrorType(null);
+    setErrorType((current) => current === type ? null : current);
     try {
       const response = await fetch(`${baseUrl}/home-coverage/${type}.json`);
       if (!response.ok) {
@@ -95,9 +99,11 @@ export default function HomepageCoverageExplorer({
         ...current,
         [type]: source,
       }));
+      setErrorType((current) => current === type ? null : current);
     } catch {
       setErrorType(type);
     } finally {
+      loadingRef.current.delete(type);
       setLoadingType((current) => (current === type ? null : current));
     }
   }
@@ -107,6 +113,18 @@ export default function HomepageCoverageExplorer({
     setSelectedType(preferred);
     void ensureSourceLoaded(preferred);
     setSelectedLayer(getCoverageLayerPreference());
+
+    // Preload other reading types in the background so switching is instant
+    const preload = () => {
+      SOURCE_ORDER.forEach((type) => {
+        if (type !== preferred) void ensureSourceLoaded(type);
+      });
+    };
+    if (typeof requestIdleCallback === 'function') {
+      requestIdleCallback(preload);
+    } else {
+      setTimeout(preload, 1000);
+    }
 
     const unsubType = subscribeReadingPreference((type) => {
       setSelectedType(type);
@@ -124,20 +142,29 @@ export default function HomepageCoverageExplorer({
   }, []);
 
   const source = sourceCache[selectedType] ?? null;
+
+  // Defer heavy computation by one frame so the tab switch paints instantly
+  const [deferredSource, setDeferredSource] = useState(source);
+  useEffect(() => {
+    if (source === deferredSource) return;
+    const id = requestAnimationFrame(() => setDeferredSource(source));
+    return () => cancelAnimationFrame(id);
+  }, [source]);
+
   const completedChecklistKeys = useMemo(
     () => completedChecklistKeysFromState(checklistState),
     [checklistState],
   );
 
-  const supportedLayers = source ? availableLayers(source) : ['part', 'division', 'section'];
+  const supportedLayers = deferredSource ? availableLayers(deferredSource) : ['part', 'division', 'section'];
   const snapshots = useMemo(() => {
-    if (!source) return [];
+    if (!deferredSource) return [];
     return supportedLayers.map((layer) =>
-      buildLayerCoverageSnapshot(source.entries, completedChecklistKeys, layer, {
-        outlineItemCounts: source.outlineItemCounts,
+      buildLayerCoverageSnapshot(deferredSource.entries, completedChecklistKeys, layer, {
+        outlineItemCounts: deferredSource.outlineItemCounts,
       }),
     );
-  }, [completedChecklistKeys, source, supportedLayers]);
+  }, [completedChecklistKeys, deferredSource, supportedLayers]);
 
   const tabSnapshots = useMemo(
     () =>
@@ -157,7 +184,9 @@ export default function HomepageCoverageExplorer({
   const activeLayer =
     selectedLayer && supportedLayers.includes(selectedLayer)
       ? selectedLayer
-      : defaultLayer;
+      : selectedLayer === 'subsection' && supportedLayers.includes('section')
+        ? 'section'
+        : defaultLayer;
   const activeSnapshot = snapshots.find((snapshot) => snapshot.layer === activeLayer) ?? snapshots[0];
   const activePath = activeSnapshot
     ? activeSnapshot.path.map(({ entry, ...rest }) => ({
@@ -169,17 +198,17 @@ export default function HomepageCoverageExplorer({
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
   const coverageRingsLatest = useMemo(() => {
-    if (!source) return null;
-    return buildCoverageRings(source.entries, checklistState, {
-      outlineItemCounts: source.outlineItemCounts,
-      totalOutlineItems: source.totalOutlineItems,
-      includeSubsections: source.includeSubsections,
+    if (!deferredSource) return null;
+    return buildCoverageRings(deferredSource.entries, checklistState, {
+      outlineItemCounts: deferredSource.outlineItemCounts,
+      totalOutlineItems: deferredSource.totalOutlineItems,
+      includeSubsections: deferredSource.includeSubsections,
     });
-  }, [checklistState, source]);
+  }, [checklistState, deferredSource]);
   const partSegmentsLatest = useMemo(() => {
-    if (!source || !partsMeta) return null;
-    return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
-  }, [checklistState, source, activeLayer, partsMeta]);
+    if (!deferredSource || !partsMeta) return null;
+    return buildPartCoverageSegments(deferredSource.entries, checklistState, activeLayer, partsMeta);
+  }, [checklistState, deferredSource, activeLayer, partsMeta]);
 
   // Keep showing previous data while a new source loads to avoid ring flash
   const prevRingsRef = useRef(coverageRingsLatest ?? []);
@@ -223,6 +252,10 @@ export default function HomepageCoverageExplorer({
                       onClick={() => {
                         setSelectedType(type);
                         setReadingPreference(type);
+                        if (errorType === type) {
+                          setErrorType(null);
+                          loadingRef.current.delete(type);
+                        }
                         void ensureSourceLoaded(type);
                       }}
                       class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
@@ -268,6 +301,10 @@ export default function HomepageCoverageExplorer({
                       onClick={() => {
                         setSelectedType(type);
                         setReadingPreference(type);
+                        if (errorType === type) {
+                          setErrorType(null);
+                          loadingRef.current.delete(type);
+                        }
                         void ensureSourceLoaded(type);
                       }}
                       class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${

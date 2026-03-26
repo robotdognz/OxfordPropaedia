@@ -1,7 +1,6 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
-import type { CoverageRing } from '../../utils/readingLibrary';
-import type { PartCoverageSegment } from '../../utils/readingLibrary';
+import type { CoverageRing, PartCoverageSegment } from '../../utils/readingLibrary';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
 

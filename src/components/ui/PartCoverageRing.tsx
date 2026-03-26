@@ -158,7 +158,7 @@ export default function PartCoverageRing({
       </defs>
 
       {segments.map((seg, i) => {
-        const centerDeg = (i + 0.5) * segDeg;
+        const centerDeg = i * segDeg;
         const segPath = roundedSegmentPath(cx, cy, iR, oR, centerDeg, segDeg, halfGapPx);
 
         return (

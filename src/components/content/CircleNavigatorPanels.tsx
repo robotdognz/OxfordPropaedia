@@ -115,13 +115,9 @@ function loadPartRecommendations(
     });
 }
 
-
-
-
 function essayHref(part: CircleNavigatorPart): string {
   return `${part.href}?view=essay#essay`;
 }
-
 
 function intersectSharedEntries<TEntry extends AnchoredEntryBase>(
   first: TEntry[],

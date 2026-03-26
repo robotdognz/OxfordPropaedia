@@ -25,6 +25,9 @@ export default function CoverageRings({
   const geometryTransition = 'r 180ms ease, stroke-width 180ms ease, stroke 180ms ease, stroke-opacity 180ms ease';
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  // Track which rings should hide their arc (after transition to zero completes)
+  const [hiddenArcs, setHiddenArcs] = useState<Set<string>>(new Set());
+  const hideTimers = useRef<Map<string, number>>(new Map());
 
   useEffect(() => {
     // Trigger animation after mount — subsequent data changes
@@ -34,6 +37,27 @@ export default function CoverageRings({
     });
     return () => cancelAnimationFrame(timer);
   }, []);
+
+  // When a ring's fraction goes to 0, delay hiding it until the CSS transition finishes
+  useEffect(() => {
+    rings.forEach((ring) => {
+      const fraction = ring.total > 0 ? ring.count / ring.total : 0;
+      const existing = hideTimers.current.get(ring.label);
+
+      if (fraction > 0) {
+        // Show immediately
+        if (existing) { clearTimeout(existing); hideTimers.current.delete(ring.label); }
+        setHiddenArcs((prev) => { if (!prev.has(ring.label)) return prev; const next = new Set(prev); next.delete(ring.label); return next; });
+      } else if (!hiddenArcs.has(ring.label) && !existing) {
+        // Delay hide until after the 0.8s transition
+        const id = window.setTimeout(() => {
+          hideTimers.current.delete(ring.label);
+          setHiddenArcs((prev) => new Set(prev).add(ring.label));
+        }, 850);
+        hideTimers.current.set(ring.label, id);
+      }
+    });
+  }, [rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',')]);
 
   const ringWidths = rings.map((ring) =>
     ring.label === activeRingLabel ? ringWidth + activeRingWidthBoost : ringWidth
@@ -119,13 +143,13 @@ export default function CoverageRings({
                   transition: geometryTransition,
                 }}
               />
-              {/* Animated arc */}
+              {/* Animated arc — hidden after transition completes at zero to prevent round-cap dot on mobile */}
               <circle
                 cx={center} cy={center} r={radius}
                 fill="none"
                 pathLength={1}
                 stroke={ring.color}
-                stroke-opacity={isActive ? '1' : '0.82'}
+                stroke-opacity={hiddenArcs.has(ring.label) ? '0' : (isActive ? '1' : '0.82')}
                 stroke-width={width}
                 stroke-linecap="round"
                 stroke-dasharray="1 1"

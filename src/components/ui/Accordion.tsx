@@ -1,6 +1,5 @@
-import { h } from 'preact';
+import { h, type ComponentChildren } from 'preact';
 import { useState, useRef, useEffect } from 'preact/hooks';
-import type { ComponentChildren } from 'preact';
 
 export interface AccordionProps {
   title: string;

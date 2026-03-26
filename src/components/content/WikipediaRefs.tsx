@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
-import Accordion from '../ui/Accordion';
+import Accordion, { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import WikipediaCard from './WikipediaCard';
 import {
   wikipediaChecklistKey,
@@ -17,7 +17,6 @@ import {
   type SearchableWikiArticle,
 } from '../../utils/wikipediaOutlineFilter';
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
-import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
