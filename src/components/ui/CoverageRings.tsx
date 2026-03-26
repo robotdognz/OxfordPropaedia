@@ -20,7 +20,7 @@ export default function CoverageRings({
 }: CoverageRingsProps) {
   const center = size / 2;
   const gap = 3;
-  const activeRingWidthBoost = 2;
+  const activeRingWidthBoost = 3;
   const outerEdgeInset = 1;
   const geometryTransition = 'r 180ms ease, stroke-width 180ms ease, stroke 180ms ease, stroke-opacity 180ms ease';
   const [animated, setAnimated] = useState(false);
@@ -146,17 +146,34 @@ export default function CoverageRings({
           const rawFraction = ring.total > 0 ? ring.count / ring.total : 0;
           const isActive = ring.label === activeRingLabel;
           // Round caps extend by strokeWidth/2 beyond the arc endpoint.
-          // The active ring is wider, so its caps protrude further than inactive rings.
-          // capDelta = the extra cap protrusion in pathLength units (1 = full circumference).
-          // Start: rotate forward by capDelta to pull the start cap tip in.
-          // End: reduce fraction by 2*capDelta — one to offset the start rotation
-          // eating into the arc, one more to actually pull the end cap tip back.
-          const excessCapPx = (width - ringWidth) / 2;
+          // The active ring is wider (and has a slightly smaller radius), so its
+          // cap tips sit at different angles than the base ring's caps.
+          // We align by angular position: both start and end cap tips should
+          // appear at the same angle as the base (non-boosted) ring.
           const circumference = 2 * Math.PI * radius;
           const isPartial = rawFraction > 0 && rawFraction < 1;
-          const capDelta = isPartial ? excessCapPx / circumference : 0;
-          const fraction = Math.max(0, rawFraction - capDelta * 2);
-          const startRotation = capDelta * 360;
+
+          let fraction: number;
+          let startRotation: number;
+          if (isPartial && width > ringWidth) {
+            const baseRadius = radius + (width - ringWidth) / 2;
+            const baseCirc = 2 * Math.PI * baseRadius;
+            // Angular start compensation: align start cap tips
+            const startComp = (width / 2) / circumference - (ringWidth / 2) / baseCirc;
+            // Angular end compensation: fraction that puts end cap tip at same angle
+            const idealFraction = rawFraction + ringWidth / baseCirc - width / circumference;
+            if (idealFraction > 0) {
+              fraction = idealFraction;
+              startRotation = startComp * 360;
+            } else {
+              // Arc too small — just align start, clamp to a dot
+              startRotation = startComp * 360;
+              fraction = Math.max(0.001, rawFraction - startComp);
+            }
+          } else {
+            fraction = rawFraction;
+            startRotation = 0;
+          }
 
           return (
             <g key={ring.label}>
