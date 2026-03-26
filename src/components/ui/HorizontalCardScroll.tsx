@@ -32,7 +32,7 @@ export default function HorizontalCardScroll({
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
     const available = wrapper.clientWidth;
-    const cw = Math.min(cardMinWidth, available - 32);
+    const cw = Math.min(cardMinWidth, available - 12);
     setCardWidth(cw);
     // Add centering padding only if doing so results in exactly one card visible
     // (i.e. the gap between cards fills or exceeds the remaining space after centering)
