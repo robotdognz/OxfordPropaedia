@@ -17,12 +17,21 @@ export default function HorizontalCardScroll({
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
   const [cardWidth, setCardWidth] = useState(cardMinWidth);
+  const [thumbLeft, setThumbLeft] = useState(0);
+  const [thumbWidth, setThumbWidth] = useState(100);
 
   const updateArrows = useCallback(() => {
     const el = scrollRef.current;
     if (!el) return;
     setCanScrollLeft(el.scrollLeft > 1);
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
+    // Update custom scrollbar thumb
+    const ratio = el.clientWidth / el.scrollWidth;
+    setThumbWidth(Math.max(ratio * 100, 10));
+    const scrollFraction = el.scrollWidth > el.clientWidth
+      ? el.scrollLeft / (el.scrollWidth - el.clientWidth)
+      : 0;
+    setThumbLeft(scrollFraction * (100 - ratio * 100));
   }, []);
 
   // Measure container and set card width responsively
@@ -205,9 +214,10 @@ export default function HorizontalCardScroll({
       )}
       <div
         ref={scrollRef}
-        class="flex gap-4 overflow-x-auto scroll-smooth pb-2 touch-pan-x"
-        style={{ scrollbarWidth: 'thin', paddingLeft: `${edgePad}px`, paddingRight: `${edgePad}px` }}
+        class="hcs-noscroll flex gap-4 overflow-x-auto scroll-smooth touch-pan-x"
+        style={{ scrollbarWidth: 'none', paddingLeft: `${edgePad}px`, paddingRight: `${edgePad}px`, WebkitOverflowScrolling: 'touch' }}
       >
+        <style>{`.hcs-noscroll::-webkit-scrollbar { display: none; }`}</style>
         {Array.isArray(children) ? children.map((child, i) => (
           <div key={i} class="shrink-0" style={{ width: `${cardWidth}px` }}>
             {child}
@@ -218,6 +228,14 @@ export default function HorizontalCardScroll({
           </div>
         )}
       </div>
+      {thumbWidth < 100 && (
+        <div class="mt-2 mx-auto h-1 rounded-full bg-gray-200/70" style={{ width: '60%' }}>
+          <div
+            class="h-full rounded-full bg-gray-400/60 transition-[left,width] duration-150"
+            style={{ width: `${thumbWidth}%`, marginLeft: `${thumbLeft}%` }}
+          />
+        </div>
+      )}
     </div>
   );
 }
