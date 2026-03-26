@@ -1,9 +1,6 @@
-import { h, type ComponentChildren } from 'preact';
+import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import {
-  macropaediaChecklistKey,
-  vsiChecklistKey,
-  wikipediaChecklistKey,
   writeChecklistState,
 } from '../../utils/readingChecklist';
 import type { ReadingType } from '../../utils/readingPreference';
@@ -17,9 +14,7 @@ import {
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { completedChecklistKeysFromState } from '../../utils/readingLibrary';
-import Accordion from '../ui/Accordion';
-import HorizontalCardScroll from '../ui/HorizontalCardScroll';
-import ReadingSectionLinks from './ReadingSectionLinks';
+import ReadingSpreadPath from './ReadingSpreadPath';
 import type {
   CircleNavigatorIotEntry,
   CircleNavigatorMacropaediaEntry,
@@ -120,37 +115,13 @@ function loadPartRecommendations(
     });
 }
 
-function pluralize(count: number, singular: string, plural = `${singular}s`): string {
-  return count === 1 ? singular : plural;
-}
 
-function renderScopeBadge(label: string, description: string) {
-  return (
-    <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-600">
-      <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">{label}</p>
-      <p class="mt-1 leading-5">{description}</p>
-    </div>
-  );
-}
 
-function countPartsSpanned(sections: ReadingSectionSummary[]): number {
-  return new Set(sections.map((section) => section.partNumber)).size;
-}
 
 function essayHref(part: CircleNavigatorPart): string {
   return `${part.href}?view=essay#essay`;
 }
 
-function renderEssayButton(part: CircleNavigatorPart, label?: string) {
-  return (
-    <a
-      href={essayHref(part)}
-      class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
-    >
-      {label ?? 'Read essay'}
-    </a>
-  );
-}
 
 function intersectSharedEntries<TEntry extends AnchoredEntryBase>(
   first: TEntry[],
@@ -209,331 +180,24 @@ function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
   return { unreadItems, completedItems, overlapOnlyUnreadCount, totalUnreadLinkedCount };
 }
 
-function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
-  section: AnchoredRecommendationSectionConfig<TEntry>,
-  options: {
-    topPart: CircleNavigatorPart;
-    topPartNumber: number;
-    readingPref: ReadingType;
-    checklistState: Record<string, boolean>;
-    baseUrl: string;
-  }
+function buildSpreadPathFromRecommendations<TEntry extends AnchoredEntryBase>(
+  activeSection: AnchoredRecommendationSectionConfig<TEntry> | undefined,
 ) {
-  const {
-    topPart,
-    topPartNumber,
-    readingPref,
-    checklistState,
-    baseUrl,
-  } = options;
+  if (!activeSection) return { steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>, remaining: 0 };
 
-  const renderItem = (
-    item: AnchoredRecommendationItem<TEntry>,
-    indexLabel: string
-  ) => {
-    const isChecked = Boolean(checklistState[item.entry.checklistKey]);
-    const sectionsInPart = item.entry.sections.filter((entrySection) => entrySection.partNumber === topPartNumber);
-    const linkedPartCount = countPartsSpanned(item.entry.sections);
-    const sectionLinkSections = item.newSectionCount > 0 ? item.newSections : sectionsInPart;
-    const sectionLinkLabel = item.newSectionCount > 0
-      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'Section')}`
-      : `Show the ${sectionsInPart.length} ${pluralize(sectionsInPart.length, 'linked Section')} in ${topPart.partName}`;
+  const steps = activeSection.unreadItems.map((item) => ({
+    title: activeSection.getLabel ? activeSection.getLabel(item.entry) : item.entry.title,
+    checklistKey: item.entry.checklistKey,
+    sectionCount: item.entry.sectionCount,
+    sections: item.entry.sections,
+    newCoverageCount: item.newSectionCount,
+    cumulativeCoveredCount: item.cumulativeCoveredSectionCount,
+    newSections: item.newSections,
+    href: activeSection.getHref(item.entry),
+    meta: activeSection.renderMeta ? activeSection.renderMeta(item.entry) : undefined,
+  }));
 
-    return (
-      <div
-        key={item.entry.checklistKey}
-        class={`rounded-xl border p-4 transition-colors ${item.isCompleted ? 'border-slate-200 bg-slate-100/80' : 'border-slate-200 bg-white'}`}
-      >
-        <div class="flex items-start justify-between gap-3">
-          <div class="min-w-0">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              {indexLabel}
-            </p>
-            <h4 class="mt-1 font-serif text-lg leading-tight text-slate-900">
-              <a href={section.getHref(item.entry)} class="transition-colors hover:text-indigo-700">
-                {section.getLabel ? section.getLabel(item.entry) : item.entry.title}
-              </a>
-            </h4>
-            {section.renderMeta ? (
-              <div class="mt-1 text-sm text-slate-600">{section.renderMeta(item.entry)}</div>
-            ) : null}
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              Why this next:{' '}
-              {item.isCompleted ? (
-                <>you already used it to reach this anchored Part and its linked Sections.</>
-              ) : (
-                <>
-                  it opens {item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')},
-                  {' '}covers {sectionsInPart.length} {pluralize(sectionsInPart.length, 'Section')} in {topPart.partName},
-                  {' '}and spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')} overall.
-                </>
-              )}
-            </p>
-          </div>
-          <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-slate-500">
-            <input
-              type="checkbox"
-              checked={isChecked}
-              onChange={(event) => writeChecklistState(item.entry.checklistKey, (event.currentTarget as HTMLInputElement).checked)}
-              class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-            />
-            Done
-          </label>
-        </div>
-
-        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
-          {item.isCompleted ? (
-            <span class="rounded-full bg-slate-200 px-2.5 py-1 text-slate-700">
-              Already marked done
-            </span>
-          ) : (
-            <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')}
-            </span>
-          )}
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'Section')}
-          </span>
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {sectionsInPart.length} in {topPart.partName}
-          </span>
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            Spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')}
-          </span>
-        </div>
-
-        {sectionLinkSections.length > 0 && (
-          <ReadingSectionLinks
-            sections={sectionLinkSections}
-            baseUrl={baseUrl}
-            label={sectionLinkLabel}
-            variant="chips"
-          />
-        )}
-      </div>
-    );
-  };
-
-  return (
-    <Accordion
-      key={section.type}
-      title={`${section.title} (${section.unreadCount})`}
-      forceOpenKey={readingPref === section.type ? 0 : undefined}
-      forceCloseKey={readingPref !== section.type ? 0 : undefined}
-    >
-      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
-          {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to {topPart.title}.
-          {' '}Showing the {section.unreadCount} that still add new Section coverage across the whole outline.
-          {' '}{section.remainingSections > 0
-            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'Section')} remain uncovered from this anchored list.`
-            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped Section this anchored list can reach.`}
-        </p>
-        <a
-          href={section.browseHref}
-          class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
-        >
-          {section.browseLabel}
-        </a>
-      </div>
-
-      {section.unreadItems.length > 0 ? (
-        <HorizontalCardScroll>
-          {section.unreadItems.map((item, index) =>
-            renderItem(item, `Step ${index + 1}`)
-          )}
-        </HorizontalCardScroll>
-      ) : (
-        <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-          {section.totalUnreadLinkedCount === 0
-            ? `Every linked ${section.itemSingular} here is already marked done.`
-            : section.overlapOnlyUnreadCount > 0
-              ? `No unread linked ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new Section coverage right now. Open a Division or Section to narrow the topic further.`
-              : `No additional linked ${pluralize(0, section.itemSingular)} are available right now. Open a Division or Section to keep narrowing the topic.`}
-        </div>
-      )}
-
-      {section.completedItems.length > 0 && (
-        <div class="mt-5 border-t border-slate-200 pt-4">
-          <p class="mb-3 text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Already marked done ({section.completedItems.length})
-          </p>
-          <HorizontalCardScroll>
-            {section.completedItems.map((item) => renderItem(item, 'Done'))}
-          </HorizontalCardScroll>
-        </div>
-      )}
-    </Accordion>
-  );
-}
-
-function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryBase>(
-  section: AnchoredRecommendationSectionConfig<TEntry>,
-  options: {
-    centerPart: CircleNavigatorPart;
-    centerPartNumber: number;
-    topPart: CircleNavigatorPart;
-    topPartNumber: number;
-    readingPref: ReadingType;
-    checklistState: Record<string, boolean>;
-    baseUrl: string;
-  }
-) {
-  const {
-    centerPart,
-    centerPartNumber,
-    topPart,
-    topPartNumber,
-    readingPref,
-    checklistState,
-    baseUrl,
-  } = options;
-
-  const renderItem = (
-    item: AnchoredRecommendationItem<TEntry>,
-    indexLabel: string
-  ) => {
-    const isChecked = Boolean(checklistState[item.entry.checklistKey]);
-    const centerSections = item.entry.sections.filter((entrySection) => entrySection.partNumber === centerPartNumber);
-    const topSections = item.entry.sections.filter((entrySection) => entrySection.partNumber === topPartNumber);
-    const linkedPartCount = countPartsSpanned(item.entry.sections);
-    const selectedPartSections = item.entry.sections.filter((entrySection) =>
-      entrySection.partNumber === centerPartNumber || entrySection.partNumber === topPartNumber
-    );
-    const sectionLinkSections = item.newSectionCount > 0 ? item.newSections : selectedPartSections;
-    const sectionLinkLabel = item.newSectionCount > 0
-      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'Section')}`
-      : `Show the ${selectedPartSections.length} ${pluralize(selectedPartSections.length, 'linked Section')} in ${centerPart.partName} and ${topPart.partName}`;
-
-    return (
-      <div
-        key={item.entry.checklistKey}
-        class={`rounded-xl border p-4 transition-colors ${item.isCompleted ? 'border-slate-200 bg-slate-100/80' : 'border-slate-200 bg-white'}`}
-      >
-        <div class="flex items-start justify-between gap-3">
-          <div class="min-w-0">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              {indexLabel}
-            </p>
-            <h4 class="mt-1 font-serif text-lg leading-tight text-slate-900">
-              <a href={section.getHref(item.entry)} class="transition-colors hover:text-indigo-700">
-                {section.getLabel ? section.getLabel(item.entry) : item.entry.title}
-              </a>
-            </h4>
-            {section.renderMeta ? (
-              <div class="mt-1 text-sm text-slate-600">{section.renderMeta(item.entry)}</div>
-            ) : null}
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              Why this next:{' '}
-              {item.isCompleted ? (
-                <>you already used it to bridge these two Parts and the Sections they share.</>
-              ) : (
-                <>
-                  it links both selected Parts, opens {item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')},
-                  {' '}covers {centerSections.length} in {centerPart.partName} and {topSections.length} in {topPart.partName},
-                  {' '}and spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')} overall.
-                </>
-              )}
-            </p>
-          </div>
-          <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-slate-500">
-            <input
-              type="checkbox"
-              checked={isChecked}
-              onChange={(event) => writeChecklistState(item.entry.checklistKey, (event.currentTarget as HTMLInputElement).checked)}
-              class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-            />
-            Done
-          </label>
-        </div>
-
-        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
-          {item.isCompleted ? (
-            <span class="rounded-full bg-slate-200 px-2.5 py-1 text-slate-700">
-              Already marked done
-            </span>
-          ) : (
-            <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'Section')}
-            </span>
-          )}
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'Section')}
-          </span>
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {centerSections.length} in {centerPart.partName}
-          </span>
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            {topSections.length} in {topPart.partName}
-          </span>
-          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-            Spans {linkedPartCount} {pluralize(linkedPartCount, 'Part')}
-          </span>
-        </div>
-
-        {sectionLinkSections.length > 0 && (
-          <ReadingSectionLinks
-            sections={sectionLinkSections}
-            baseUrl={baseUrl}
-            label={sectionLinkLabel}
-            variant="chips"
-          />
-        )}
-      </div>
-    );
-  };
-
-  return (
-    <Accordion
-      key={section.type}
-      title={`${section.title} (${section.unreadCount})`}
-      forceOpenKey={readingPref === section.type ? 0 : undefined}
-      forceCloseKey={readingPref !== section.type ? 0 : undefined}
-    >
-      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
-          {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to both {centerPart.title} and {topPart.title}.
-          {' '}Showing the {section.unreadCount} that still add new Section coverage across the whole outline.
-          {' '}{section.remainingSections > 0
-            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'Section')} remain uncovered from this shared pool.`
-            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped Section this shared pool can reach.`}
-        </p>
-        <a
-          href={section.browseHref}
-          class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
-        >
-          {section.browseLabel}
-        </a>
-      </div>
-
-      {section.unreadItems.length > 0 ? (
-        <HorizontalCardScroll>
-          {section.unreadItems.map((item, index) =>
-            renderItem(item, `Step ${index + 1}`)
-          )}
-        </HorizontalCardScroll>
-      ) : (
-        <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-          {section.totalUnreadLinkedCount === 0
-            ? `Every shared ${section.itemSingular} here is already marked done.`
-            : section.overlapOnlyUnreadCount > 0
-              ? `No unread shared ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new Section coverage right now. Open one of the Connected Sections below to focus the topic further.`
-              : `No additional shared ${section.itemSingular} are available right now. Open one of the Connected Sections below to keep narrowing the topic.`}
-        </div>
-      )}
-
-      {section.completedItems.length > 0 && (
-        <div class="mt-5 border-t border-slate-200 pt-4">
-          <p class="mb-3 text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Already marked done ({section.completedItems.length})
-          </p>
-          <HorizontalCardScroll>
-            {section.completedItems.map((item) => renderItem(item, 'Done'))}
-          </HorizontalCardScroll>
-        </div>
-      )}
-    </Accordion>
-  );
+  return { steps, remaining: activeSection.remainingSections };
 }
 
 export function CenteredCircleNavigatorPanel({
@@ -556,6 +220,7 @@ export function CenteredCircleNavigatorPanel({
     return cachedCenter && cachedTop ? { center: cachedCenter, top: cachedTop } : null;
   });
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
+  const [spreadPathOpen, setSpreadPathOpen] = useState(false);
 
   useEffect(() => {
     const cachedCenter = partRecommendationCache.get(centerPartNumber);
@@ -684,66 +349,77 @@ export function CenteredCircleNavigatorPanel({
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [sharedPartRecommendations, checklistState, readingPref, baseUrl]);
 
+  const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
+  const { steps: spreadSteps, remaining: spreadRemaining } = buildSpreadPathFromRecommendations(activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined);
+
   return (
     <>
-      <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
-      </p>
+      <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
+        <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+          Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
+        </p>
 
-      {suggestedSections.length > 0 && (
-        <details class="mt-3">
-          <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
-            Connected Sections ({suggestedSections.length})
-          </summary>
-          <ul class="mt-2 space-y-1">
-            {suggestedSections.map((item) => {
-              const part = parts.find((candidate) => candidate.partNumber === item.section.partNumber);
-              return (
-                <li key={item.section.sectionCode}>
-                  <a
-                    href={sectionUrl(item.section.sectionCode, baseUrl)}
-                    class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                  >
-                    <span
-                      class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
-                      style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
-                    />
-                    <span class="text-slate-700 group-hover:text-indigo-700">{item.section.title}</span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </details>
-      )}
+        {suggestedSections.length > 0 && (
+          <details class="mt-3">
+            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
+              Connected Sections ({suggestedSections.length})
+            </summary>
+            <ul class="mt-2 space-y-1">
+              {suggestedSections.map((item) => {
+                const part = parts.find((candidate) => candidate.partNumber === item.section.partNumber);
+                return (
+                  <li key={item.section.sectionCode}>
+                    <a
+                      href={sectionUrl(item.section.sectionCode, baseUrl)}
+                      class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                    >
+                      <span
+                        class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
+                        style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
+                      />
+                      <span class="text-slate-700 group-hover:text-indigo-700">{item.section.title}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        )}
 
-        {recommendationsError ? (
+        {recommendationsError && (
           <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
             {recommendationsError}
           </div>
-        ) : !sharedPartRecommendations ? (
+        )}
+        {!sharedPartRecommendations && !recommendationsError && (
           <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
             Loading shared recommendations for {centerPart.partName} and {topPart.partName}...
           </div>
-        ) : recommendationSections.length > 0 ? (
-          <div class="mt-3 space-y-4">
-            {recommendationSections.map((section) =>
-              renderSharedCoverageRecommendationSection(section, {
-                centerPart,
-                centerPartNumber,
-                topPart,
-                topPartNumber: topPart.partNumber,
-                readingPref,
-                checklistState,
-                baseUrl,
-              })
-            )}
-          </div>
-        ) : (
-          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            No shared mapped readings are currently available for this pair of Parts. Open a connected Section to work at a narrower topic level instead.
-          </div>
         )}
+      </div>
+
+      {spreadSteps.length > 0 && (
+        <div class="mt-3">
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(o => !o)}
+          steps={spreadSteps}
+          remainingCoverageCount={spreadRemaining}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => step.href}
+          renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
+          checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+          itemSingular={activeRecommendation?.itemSingular ?? 'item'}
+          itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
+          coverageUnitSingular="Section"
+          coverageUnitPlural="Sections"
+          emptyMessage="No recommendations available."
+          baseUrl={baseUrl}
+          sectionLinksVariant="chips"
+        />
+        </div>
+      )}
     </>
   );
 }
@@ -759,6 +435,7 @@ export function TopPartCircleNavigatorPanel({
     () => partRecommendationCache.get(topPartNumber) ?? null
   );
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
+  const [spreadPathOpen, setSpreadPathOpen] = useState(false);
 
   useEffect(() => {
     const cached = partRecommendationCache.get(topPartNumber);
@@ -880,63 +557,76 @@ export function TopPartCircleNavigatorPanel({
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl]);
 
+  const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
+  const { steps: spreadSteps, remaining: spreadRemaining } = buildSpreadPathFromRecommendations(activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined);
+
   return (
     <>
-      <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
-      </p>
+      <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
+        <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+          Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
+        </p>
 
-      {topPart.divisions.length > 0 && (
-        <details class="mt-3">
-          <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
-            Divisions ({topPart.divisions.length})
-          </summary>
-          <ul class="mt-2 space-y-1">
-            {topPart.divisions.map((division) => (
-              <li key={division.divisionId}>
-                <a
-                  href={divisionUrl(division.divisionId, baseUrl)}
-                  class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                >
-                  <span
-                    class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
-                    style={{ backgroundColor: topPart.colorHex }}
-                  />
-                  <span class="text-slate-700 group-hover:text-indigo-700">
-                    <span class="text-slate-400">{division.romanNumeral}.</span>{' '}{division.title}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
+        {topPart.divisions.length > 0 && (
+          <details class="mt-3">
+            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
+              Divisions ({topPart.divisions.length})
+            </summary>
+            <ul class="mt-2 space-y-1">
+              {topPart.divisions.map((division) => (
+                <li key={division.divisionId}>
+                  <a
+                    href={divisionUrl(division.divisionId, baseUrl)}
+                    class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
+                  >
+                    <span
+                      class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
+                      style={{ backgroundColor: topPart.colorHex }}
+                    />
+                    <span class="text-slate-700 group-hover:text-indigo-700">
+                      <span class="text-slate-400">{division.romanNumeral}.</span>{' '}{division.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
 
-        {recommendationsError ? (
+        {recommendationsError && (
           <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
             {recommendationsError}
           </div>
-        ) : !partRecommendations ? (
+        )}
+        {!partRecommendations && !recommendationsError && (
           <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
             Loading anchored recommendations for {topPart.partName}...
           </div>
-        ) : recommendationSections.length > 0 ? (
-          <div class="mt-3 space-y-4">
-            {recommendationSections.map((section) =>
-              renderAnchoredRecommendationSection(section, {
-                topPart,
-                topPartNumber,
-                readingPref,
-                checklistState,
-                baseUrl,
-              })
-            )}
-          </div>
-        ) : (
-          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            No mapped readings are currently available for this Part. Open one of the Divisions above to keep moving through the outline.
-          </div>
         )}
+      </div>
+
+      {spreadSteps.length > 0 && (
+        <div class="mt-3">
+        <ReadingSpreadPath
+          isOpen={spreadPathOpen}
+          onToggleOpen={() => setSpreadPathOpen(o => !o)}
+          steps={spreadSteps}
+          remainingCoverageCount={spreadRemaining}
+          checklistState={checklistState}
+          onCheckedChange={writeChecklistState}
+          getHref={(step) => step.href}
+          renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
+          checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+          itemSingular={activeRecommendation?.itemSingular ?? 'item'}
+          itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
+          coverageUnitSingular="Section"
+          coverageUnitPlural="Sections"
+          emptyMessage="No recommendations available."
+          baseUrl={baseUrl}
+          sectionLinksVariant="chips"
+        />
+        </div>
+      )}
     </>
   );
 }

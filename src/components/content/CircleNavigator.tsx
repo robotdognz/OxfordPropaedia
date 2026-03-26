@@ -1776,29 +1776,27 @@ export default function CircleNavigator({
           )}
         </svg>
 
-        <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
-          {hasCenter && centerPart ? (
-            <CenteredCircleNavigatorPanel
-              parts={parts}
-              centerPart={centerPart}
-              centerPartNumber={centerPartNumber}
-              topPart={topPart}
-              connectionSummary={connectionSummary}
-              suggestedSections={suggestedSections}
-              readingPref={readingPref}
-              checklistState={checklistState}
-              baseUrl={baseUrl}
-            />
-          ) : (
-            <TopPartCircleNavigatorPanel
-              topPart={topPart}
-              topPartNumber={topPartNumber}
-              readingPref={readingPref}
-              checklistState={checklistState}
-              baseUrl={baseUrl}
-            />
-          )}
-        </div>
+        {hasCenter && centerPart ? (
+          <CenteredCircleNavigatorPanel
+            parts={parts}
+            centerPart={centerPart}
+            centerPartNumber={centerPartNumber}
+            topPart={topPart}
+            connectionSummary={connectionSummary}
+            suggestedSections={suggestedSections}
+            readingPref={readingPref}
+            checklistState={checklistState}
+            baseUrl={baseUrl}
+          />
+        ) : (
+          <TopPartCircleNavigatorPanel
+            topPart={topPart}
+            topPartNumber={topPartNumber}
+            readingPref={readingPref}
+            checklistState={checklistState}
+            baseUrl={baseUrl}
+          />
+        )}
       </div>
 
     </div>
