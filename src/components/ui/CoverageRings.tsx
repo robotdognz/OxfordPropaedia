@@ -177,6 +177,11 @@ export default function CoverageRings({
             startRotation = 0;
           }
 
+          // Keep a tiny dot while fading out so opacity transition has something visible
+          if (fraction === 0 && !hiddenArcs.has(ring.label) && animated) {
+            fraction = 0.001;
+          }
+
           return (
             <g key={ring.label}>
               {/* Background track */}
@@ -205,8 +210,8 @@ export default function CoverageRings({
                   transform: `rotate(${-90 + startRotation}deg)`,
                   transformOrigin: `${center}px ${center}px`,
                   transition: snapTransition
-                    ? 'none'
-                    : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.35s ease-out, transform 180ms ease, ${geometryTransition}`,
+                    ? 'stroke-opacity 0.4s ease-out'
+                    : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out, transform 180ms ease, ${geometryTransition}`,
                 }}
               />
             </g>
