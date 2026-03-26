@@ -258,7 +258,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         number={1}
         title="Whole Outline"
         description="A guided reading order across the full scope of human knowledge. Each suggestion is chosen to cover as much of the outline as possible with every reading."
-        defaultOpen={true}
+        defaultOpen={false}
       >
         <HomepageCoverageExplorer
           client:load
@@ -552,7 +552,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           modeItems.forEach((item) => {
             item.details.open = false;
           });
-          localStorage.removeItem(STORAGE_KEY);
+          localStorage.setItem(STORAGE_KEY, 'none');
           clearHash();
         }
 
@@ -584,12 +584,15 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           }
 
           const stored = localStorage.getItem(STORAGE_KEY);
+          if (stored === 'none') {
+            return null;
+          }
           if (stored && modeLookup.has(stored)) {
             return { key: stored, scroll: false };
           }
 
-          const defaultMode = modeItems.find((item) => item.details.open) || modeItems[0];
-          return defaultMode ? { key: defaultMode.mode, scroll: false } : null;
+          // Default: all collapsed for new users
+          return null;
         }
 
         window.addEventListener('hashchange', () => {
@@ -611,6 +614,11 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
             store: true,
             updateHash: false,
             behavior: 'auto',
+          });
+        } else {
+          // All collapsed
+          modeItems.forEach((item) => {
+            item.details.open = false;
           });
         }
       })();

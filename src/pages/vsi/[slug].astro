@@ -128,14 +128,6 @@ const rings = [
       <div class="mt-3 flex flex-wrap items-center gap-4">
         <ReadingCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author)} />
         <a
-          href={`https://global.oup.com/academic/content/series/v/very-short-introductions-702/?cc=us&lang=en&q=${encodeURIComponent(entry.title)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
-        >
-          Oxford University Press ↗
-        </a>
-        <a
           href={`https://www.amazon.com/s?k=${encodeURIComponent(entry.title + ' Very Short Introduction ' + entry.author)}`}
           target="_blank"
           rel="noopener noreferrer"
