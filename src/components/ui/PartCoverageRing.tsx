@@ -129,12 +129,13 @@ export default function PartCoverageRing({
   const halfGapPx = gapPx / 2;
 
   useEffect(() => {
-    setAnimated(false);
+    // Trigger animation after mount — subsequent data changes
+    // transition smoothly via CSS without resetting to zero
     const id = requestAnimationFrame(() => {
       requestAnimationFrame(() => setAnimated(true));
     });
     return () => cancelAnimationFrame(id);
-  }, [segments.map((s) => s.fraction).join(',')]);
+  }, []);
 
   return (
     <svg viewBox={`0 0 ${size} ${size}`} class="w-28 h-28 sm:w-32 sm:h-32">

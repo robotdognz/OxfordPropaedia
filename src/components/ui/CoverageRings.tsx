@@ -27,21 +27,13 @@ export default function CoverageRings({
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Trigger animation after mount
+    // Trigger animation after mount — subsequent data changes
+    // transition smoothly via CSS without resetting to zero
     const timer = requestAnimationFrame(() => {
       requestAnimationFrame(() => setAnimated(true));
     });
     return () => cancelAnimationFrame(timer);
   }, []);
-
-  // Re-animate when ring data changes
-  useEffect(() => {
-    setAnimated(false);
-    const timer = requestAnimationFrame(() => {
-      requestAnimationFrame(() => setAnimated(true));
-    });
-    return () => cancelAnimationFrame(timer);
-  }, [rings.map(r => r.count).join(',')]);
 
   const ringWidths = rings.map((ring) =>
     ring.label === activeRingLabel ? ringWidth + activeRingWidthBoost : ringWidth
