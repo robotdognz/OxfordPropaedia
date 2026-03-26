@@ -143,28 +143,22 @@ export default function HomepageCoverageExplorer({
 
   const source = sourceCache[selectedType] ?? null;
 
-  // Defer heavy computation by one frame so the tab switch paints instantly
-  const [deferredSource, setDeferredSource] = useState(source);
-  useEffect(() => {
-    if (source === deferredSource) return;
-    const id = requestAnimationFrame(() => setDeferredSource(source));
-    return () => cancelAnimationFrame(id);
-  }, [source]);
-
   const completedChecklistKeys = useMemo(
     () => completedChecklistKeysFromState(checklistState),
     [checklistState],
   );
 
-  const supportedLayers = deferredSource ? availableLayers(deferredSource) : ['part', 'division', 'section'];
+  const supportedLayers = source ? availableLayers(source) : ['part', 'division', 'section'];
+
+  // All computations run eagerly against source (including expensive spread paths)
   const snapshots = useMemo(() => {
-    if (!deferredSource) return [];
+    if (!source) return [];
     return supportedLayers.map((layer) =>
-      buildLayerCoverageSnapshot(deferredSource.entries, completedChecklistKeys, layer, {
-        outlineItemCounts: deferredSource.outlineItemCounts,
+      buildLayerCoverageSnapshot(source.entries, completedChecklistKeys, layer, {
+        outlineItemCounts: source.outlineItemCounts,
       }),
     );
-  }, [completedChecklistKeys, deferredSource, supportedLayers]);
+  }, [completedChecklistKeys, source, supportedLayers]);
 
   const tabSnapshots = useMemo(
     () =>
@@ -198,25 +192,29 @@ export default function HomepageCoverageExplorer({
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
   const coverageRingsLatest = useMemo(() => {
-    if (!deferredSource) return null;
-    return buildCoverageRings(deferredSource.entries, checklistState, {
-      outlineItemCounts: deferredSource.outlineItemCounts,
-      totalOutlineItems: deferredSource.totalOutlineItems,
-      includeSubsections: deferredSource.includeSubsections,
+    if (!source) return null;
+    return buildCoverageRings(source.entries, checklistState, {
+      outlineItemCounts: source.outlineItemCounts,
+      totalOutlineItems: source.totalOutlineItems,
+      includeSubsections: source.includeSubsections,
     });
-  }, [checklistState, deferredSource]);
+  }, [checklistState, source]);
   const partSegmentsLatest = useMemo(() => {
-    if (!deferredSource || !partsMeta) return null;
-    return buildPartCoverageSegments(deferredSource.entries, checklistState, activeLayer, partsMeta);
-  }, [checklistState, deferredSource, activeLayer, partsMeta]);
+    if (!source || !partsMeta) return null;
+    return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
+  }, [checklistState, source, activeLayer, partsMeta]);
 
-  // Keep showing previous data while a new source loads to avoid ring flash
-  const prevRingsRef = useRef(coverageRingsLatest ?? []);
-  const prevSegmentsRef = useRef(partSegmentsLatest ?? []);
-  if (coverageRingsLatest) prevRingsRef.current = coverageRingsLatest;
-  if (partSegmentsLatest) prevSegmentsRef.current = partSegmentsLatest;
-  const coverageRings = coverageRingsLatest ?? prevRingsRef.current;
-  const partSegments = partSegmentsLatest ?? prevSegmentsRef.current;
+  // Delay pushing new ring values so the browser settles before animations start
+  const [coverageRings, setCoverageRings] = useState(coverageRingsLatest ?? []);
+  const [partSegments, setPartSegments] = useState(partSegmentsLatest ?? []);
+  useEffect(() => {
+    if (!coverageRingsLatest && !partSegmentsLatest) return;
+    const id = setTimeout(() => {
+      if (coverageRingsLatest) setCoverageRings(coverageRingsLatest);
+      if (partSegmentsLatest) setPartSegments(partSegmentsLatest);
+    }, 150);
+    return () => clearTimeout(id);
+  }, [coverageRingsLatest, partSegmentsLatest]);
 
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
   const wrapperClass = framed
