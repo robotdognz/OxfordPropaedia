@@ -355,7 +355,7 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
 
       {section.completedItems.length > 0 && (
         <div class="mt-5 border-t border-slate-200 pt-4">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+          <p class="mb-3 text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Already marked done ({section.completedItems.length})
           </p>
           <HorizontalCardScroll>
@@ -524,7 +524,7 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
 
       {section.completedItems.length > 0 && (
         <div class="mt-5 border-t border-slate-200 pt-4">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+          <p class="mb-3 text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Already marked done ({section.completedItems.length})
           </p>
           <HorizontalCardScroll>
@@ -686,34 +686,15 @@ export function CenteredCircleNavigatorPanel({
 
   return (
     <>
-      <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-        Circle of learning
+      <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+        Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
       </p>
-      <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        Centred on {centerPart.title}, with {topPart.title} at the top. Start here if you want readings that
-        link both Parts while still taking you into the widest new territory across the outline.
-      </p>
-      {renderScopeBadge('Shared Scope', 'Maximise overall coverage using only readings linked to both selected Parts. The Recommended Readings broaden outward from their overlap, while the Connected Sections show where to narrow into more specific topics.')}
 
-      <div class="mt-3">
-        <div class="flex flex-wrap gap-2">
-          {renderEssayButton(centerPart, `Read ${centerPart.partName} essay`)}
-          {renderEssayButton(topPart, `Read ${topPart.partName} essay`)}
-        </div>
-      </div>
-
-      {suggestedSections.length > 0 && connectionSummary && (
-        <div class="mt-3 border-t border-slate-200 pt-3">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            Connected Sections
-          </p>
-          <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            {connectionSummary.isDirect
-              ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${connectionSummary.hasKeyword ? ', supplemented by related subject matter.' : '.'}`
-              : connectionSummary.hasConnectionData
-                ? `Sections that connect ${centerPart.title} and ${topPart.title} through shared references and related subject matter.`
-                : `Sections with related subject matter across ${centerPart.title} and ${topPart.title}.`}
-          </p>
+      {suggestedSections.length > 0 && (
+        <details class="mt-3">
+          <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
+            Connected Sections ({suggestedSections.length})
+          </summary>
           <ul class="mt-2 space-y-1">
             {suggestedSections.map((item) => {
               const part = parts.find((candidate) => candidate.partNumber === item.section.partNumber);
@@ -733,19 +714,8 @@ export function CenteredCircleNavigatorPanel({
               );
             })}
           </ul>
-        </div>
+        </details>
       )}
-
-      <div class="mt-4 border-t border-slate-200 pt-3">
-        <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-          Recommended Readings
-        </p>
-        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          Every item below is linked to both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}.
-          {' '}Unread items are ordered by how much new ground they still cover across the outline based on what
-          you&apos;ve already checked off. Items that would only repeat covered ground are left out. For precise topic work,
-          open one of the Connected Sections above.
-        </p>
 
         {recommendationsError ? (
           <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
@@ -774,7 +744,6 @@ export function CenteredCircleNavigatorPanel({
             No shared mapped readings are currently available for this pair of Parts. Open a connected Section to work at a narrower topic level instead.
           </div>
         )}
-      </div>
     </>
   );
 }
@@ -913,28 +882,15 @@ export function TopPartCircleNavigatorPanel({
 
   return (
     <>
-      <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-        Circle of learning
+      <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+        Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
       </p>
-      <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        {topPart.title} is at the top. Start here if you want readings linked to this Part that still carry
-        you into the widest new territory across the outline.
-      </p>
-      {renderScopeBadge('Selected Part Scope', 'Maximise overall coverage using only readings linked to this Part. The Recommended Readings broaden outward from it, while the Divisions show where to narrow into more specific topics.')}
-
-      <div class="mt-3">
-        {renderEssayButton(topPart)}
-      </div>
 
       {topPart.divisions.length > 0 && (
-        <div class="mt-3 border-t border-slate-200 pt-3">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            Divisions in Selected Part
-          </p>
-          <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            These {topPart.divisions.length} {pluralize(topPart.divisions.length, 'Division')} break {topPart.title}
-            {' '}into its main strands. Open one to move from this broad Part-level view into narrower areas of the outline.
-          </p>
+        <details class="mt-3">
+          <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
+            Divisions ({topPart.divisions.length})
+          </summary>
           <ul class="mt-2 space-y-1">
             {topPart.divisions.map((division) => (
               <li key={division.divisionId}>
@@ -953,18 +909,8 @@ export function TopPartCircleNavigatorPanel({
               </li>
             ))}
           </ul>
-        </div>
+        </details>
       )}
-
-      <div class="mt-4 border-t border-slate-200 pt-3">
-        <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-          Recommended Readings
-        </p>
-        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          Every item below is linked to {topPart.partName}. Unread items are ordered by how much new ground
-          they still cover across the outline based on what you&apos;ve already checked off. Items that would
-          only repeat covered ground are left out. Open a Division above when you want to move from broad coverage into a more specific topic.
-        </p>
 
         {recommendationsError ? (
           <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
@@ -991,7 +937,6 @@ export function TopPartCircleNavigatorPanel({
             No mapped readings are currently available for this Part. Open one of the Divisions above to keep moving through the outline.
           </div>
         )}
-      </div>
     </>
   );
 }

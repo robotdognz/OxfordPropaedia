@@ -1,9 +1,5 @@
 Propaedia TODO:
 
-    - Still need to improve the gaps between elements on the home page, bit weird looking. 
-        - Need to figure out where to put the circle of learning essay
-        - Need to simplify and clean up cricle navigation ui, it's overwhelming at the moment
-
     - Fix the broken links for the Oxford website (maybe replace with search like we have for goodreads and amazon?)
     
 

@@ -77,7 +77,6 @@ export default function HomepageCoverageExplorer({
   });
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-  const [statsOpen, setStatsOpen] = useState(false);
   const [loadingType, setLoadingType] = useState<ReadingType | null>(null);
   const [errorType, setErrorType] = useState<ReadingType | null>(null);
 
@@ -334,24 +333,20 @@ export default function HomepageCoverageExplorer({
                     <PartCoverageRing segments={partSegments} size={100} />
                   )}
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setStatsOpen(o => !o)}
-                  class="mt-3 flex items-center gap-1 cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors"
-                >
-                  <span>Coverage Statistics</span>
-                  <svg
-                    class={`h-3 w-3 transform transition-transform duration-200 ${statsOpen ? 'rotate-180' : 'rotate-0'}`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width={2}
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {statsOpen && (
+                <details class="mt-3 group/stats">
+                  <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 list-none [&::-webkit-details-marker]:hidden">
+                    <span>Coverage Statistics</span>
+                    <svg
+                      class="h-3 w-3 transition-transform group-open/stats:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width={2}
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
                   <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
                     <div class="space-y-1 text-xs text-slate-500">
                       {coverageRings.map((ring) => (
@@ -406,7 +401,7 @@ export default function HomepageCoverageExplorer({
                       );
                     })()}
                   </div>
-                )}
+                </details>
               </div>
 
               <div class="rounded-xl border border-slate-200 bg-white p-4">
