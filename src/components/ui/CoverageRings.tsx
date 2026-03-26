@@ -26,7 +26,10 @@ export default function CoverageRings({
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   // Track which rings should hide their arc (after transition to zero completes)
-  const [hiddenArcs, setHiddenArcs] = useState<Set<string>>(new Set());
+  // Initialize with any rings already at zero to prevent flash on mount
+  const [hiddenArcs, setHiddenArcs] = useState<Set<string>>(
+    () => new Set(rings.filter(r => r.total === 0 || r.count === 0).map(r => r.label))
+  );
   const hideTimers = useRef<Map<string, number>>(new Map());
 
   useEffect(() => {
@@ -49,11 +52,11 @@ export default function CoverageRings({
         if (existing) { clearTimeout(existing); hideTimers.current.delete(ring.label); }
         setHiddenArcs((prev) => { if (!prev.has(ring.label)) return prev; const next = new Set(prev); next.delete(ring.label); return next; });
       } else if (!hiddenArcs.has(ring.label) && !existing) {
-        // Delay hide until after the 0.8s transition
+        // Start fading as the dashoffset transition nears completion
         const id = window.setTimeout(() => {
           hideTimers.current.delete(ring.label);
           setHiddenArcs((prev) => new Set(prev).add(ring.label));
-        }, 850);
+        }, 500);
         hideTimers.current.set(ring.label, id);
       }
     });
@@ -127,8 +130,16 @@ export default function CoverageRings({
         {rings.map((ring, i) => {
           const radius = radii[i];
           const width = ringWidths[i];
-          const fraction = ring.total > 0 ? ring.count / ring.total : 0;
+          const rawFraction = ring.total > 0 ? ring.count / ring.total : 0;
           const isActive = ring.label === activeRingLabel;
+          // Compensate for round cap extending further on thicker active ring
+          // capDelta = extra cap size vs base ring width, in pathLength units
+          const capDelta = isActive && rawFraction > 0 && rawFraction < 1
+            ? (activeRingWidthBoost / 2) / (2 * Math.PI * radius)
+            : 0;
+          // Shorten the arc to pull the end cap back, and shift the start forward
+          const fraction = Math.max(0, rawFraction - capDelta * 0.9);
+          const startRotation = capDelta * 360 * 0.7; // degrees to nudge start cap forward
 
           return (
             <g key={ring.label}>
@@ -155,9 +166,9 @@ export default function CoverageRings({
                 stroke-dasharray="1 1"
                 stroke-dashoffset={animated ? 1 - fraction : 1}
                 style={{
-                  transform: 'rotate(-90deg)',
+                  transform: `rotate(${-90 + startRotation}deg)`,
                   transformOrigin: `${center}px ${center}px`,
-                  transition: `stroke-dashoffset 0.8s ease-out, ${geometryTransition}`,
+                  transition: `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.35s ease-out, transform 180ms ease, ${geometryTransition}`,
                 }}
               />
             </g>
