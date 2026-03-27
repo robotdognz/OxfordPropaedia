@@ -3,22 +3,8 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useCoverageLayerPreferenceState } from '../../hooks/useCoverageLayerPreferenceState';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useReadingPreferenceState } from '../../hooks/useReadingPreferenceState';
-import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
-import {
-  READING_TYPE_ORDER,
-  READING_TYPE_UI_META,
-  setCoverageLayerPreference,
-  setReadingPreference,
-  type ReadingType,
-} from '../../utils/readingPreference';
-import {
-  COVERAGE_LAYER_ORDER,
-  COVERAGE_LAYER_META,
-  buildLayerCoverageSnapshot,
-  completedChecklistKeysFromState,
-  type CoverageLayer,
-} from '../../utils/readingLibrary';
+import { READING_TYPE_ORDER, type ReadingType } from '../../utils/readingPreference';
 import {
   CenteredCircleNavigatorPanel,
   TopPartCircleNavigatorPanel,
@@ -61,12 +47,6 @@ const SEGMENT_GAP_PX = 7;
 const SEGMENT_CORNER_RADIUS = 6;
 const MORPH_POINT_COUNT = 40;
 const STORAGE_KEY = 'propaedia-circle-navigator-v1';
-const CIRCLE_LAYER_ACCENT_COLORS: Record<CoverageLayer, string> = {
-  part: '#6366f1',
-  division: '#8b5cf6',
-  section: '#a78bfa',
-  subsection: '#c4b5fd',
-};
 const homepageCoverageSourceCache = new Map<ReadingType, HomepageCoverageSource>();
 
 function joinBaseUrl(baseUrl: string, path: string): string {
@@ -654,7 +634,7 @@ export default function CircleNavigator({
         };
       });
     } catch {
-      // Leave counts hidden if the auxiliary source cannot be loaded.
+      // Keep the panel interactive even if the auxiliary coverage source fails.
     } finally {
       coverageSourceLoadingRef.current.delete(type);
     }
@@ -662,6 +642,20 @@ export default function CircleNavigator({
 
   useEffect(() => {
     void ensureCoverageSourceLoaded(readingPref);
+
+    const preload = () => {
+      READING_TYPE_ORDER.forEach((type) => {
+        if (type !== readingPref) {
+          void ensureCoverageSourceLoaded(type);
+        }
+      });
+    };
+
+    if (typeof requestIdleCallback === 'function') {
+      requestIdleCallback(preload);
+    } else {
+      window.setTimeout(preload, 1000);
+    }
   }, [baseUrl, readingPref]);
 
   useEffect(() => {
@@ -717,10 +711,6 @@ export default function CircleNavigator({
   const showCenterDiscOutline = removeMorphT === 0 && (
     isCenterSwapPreviewActive
     || ((hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && !isCenterPreviewActive)
-  );
-  const completedChecklistKeys = useMemo(
-    () => completedChecklistKeysFromState(checklistState),
-    [checklistState],
   );
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
   const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
@@ -1286,61 +1276,6 @@ export default function CircleNavigator({
   const handleCenterAction = hasCenter
     ? removeFromCenter
     : () => animateToCenter(topPart.partNumber);
-  const circleSupportedLayers = useMemo<CoverageLayer[]>(
-    () => (readingPref === 'macropaedia'
-      ? ['part', 'division', 'section']
-      : ['part', 'division', 'section', 'subsection']),
-    [readingPref],
-  );
-  const circleActiveLayer = circleSupportedLayers.includes(selectedCoverageLayer)
-    ? selectedCoverageLayer
-    : selectedCoverageLayer === 'subsection' && circleSupportedLayers.includes('section')
-      ? 'section'
-      : circleSupportedLayers[0];
-  const circleCoverageSource = coverageSourceCache[readingPref] ?? null;
-  const circleCoverageSnapshotMeta = useMemo(() => {
-    if (!circleCoverageSource) return new Map<CoverageLayer, string>();
-
-    return new Map(
-      circleSupportedLayers.map((layer) => {
-        const snapshot = buildLayerCoverageSnapshot(
-          circleCoverageSource.entries,
-          completedChecklistKeys,
-          layer,
-        );
-
-        return [layer, `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`] as const;
-      }),
-    );
-  }, [circleCoverageSource, circleSupportedLayers, completedChecklistKeys]);
-  const readingTypeOptions = READING_TYPE_ORDER.map((type) => ({
-    value: type,
-    eyebrow: READING_TYPE_UI_META[type].eyebrow,
-    label: READING_TYPE_UI_META[type].label,
-    accentColor: READING_TYPE_UI_META[type].accentColor,
-  }));
-  const coverageLayerOptions = COVERAGE_LAYER_ORDER.map((layer) => ({
-    value: layer,
-    label: COVERAGE_LAYER_META[layer].pluralLabel,
-    meta: circleCoverageSnapshotMeta.get(layer),
-    accentColor: CIRCLE_LAYER_ACCENT_COLORS[layer],
-    disabled: !circleSupportedLayers.includes(layer),
-  }));
-  const selectionControls = (
-    <ReadingSelectionStrip
-      readingTypeValue={readingPref}
-      readingTypeOptions={readingTypeOptions}
-      onReadingTypeChange={(type) => setReadingPreference(type)}
-      readingTypeAriaLabel="Selected fields reading type"
-      coverageLayerValue={circleActiveLayer}
-      coverageLayerOptions={coverageLayerOptions}
-      onCoverageLayerChange={(layer) => {
-        if (!circleSupportedLayers.includes(layer)) return;
-        setCoverageLayerPreference(layer);
-      }}
-      coverageLayerAriaLabel="Selected fields coverage layer"
-    />
-  );
 
   return (
     <div class="space-y-3 sm:space-y-4">
@@ -2047,20 +1982,20 @@ export default function CircleNavigator({
             connectionSummary={connectionSummary}
             suggestedSections={suggestedSections}
             readingPref={readingPref}
-            activeLayer={circleActiveLayer}
+            activeLayer={selectedCoverageLayer}
             checklistState={checklistState}
             baseUrl={baseUrl}
-            selectionControls={selectionControls}
+            coverageSources={coverageSourceCache}
           />
         ) : (
           <TopPartCircleNavigatorPanel
             topPart={topPart}
             topPartNumber={topPartNumber}
             readingPref={readingPref}
-            activeLayer={circleActiveLayer}
+            activeLayer={selectedCoverageLayer}
             checklistState={checklistState}
             baseUrl={baseUrl}
-            selectionControls={selectionControls}
+            coverageSources={coverageSourceCache}
           />
         )}
       </div>

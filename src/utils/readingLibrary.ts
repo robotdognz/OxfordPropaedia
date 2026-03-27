@@ -280,6 +280,135 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
   };
 }
 
+export function buildLayerCoverageSnapshotWithReferenceEntries<
+  TEntry extends ChecklistBackedReadingEntry & {
+    title: string;
+    sectionCount: number;
+  },
+  TReferenceEntry extends ChecklistBackedReadingEntry,
+>(
+  entries: TEntry[],
+  referenceEntries: TReferenceEntry[],
+  completedChecklistKeys: Set<string>,
+  layer: CoverageLayer,
+): LayerCoverageSnapshot<TEntry> {
+  const totalTargets = new Map<string, number>();
+  const coveredTargets = new Set<string>();
+  const candidateTargetKeys = buildEntryTargetKeyMap(entries, layer);
+  const referenceTargetKeys = buildEntryTargetKeyMap(referenceEntries, layer);
+  let completedEntries = 0;
+
+  for (const entry of referenceEntries) {
+    const targetKeys = referenceTargetKeys.get(entry.checklistKey) ?? [];
+    targetKeys.forEach((key) => {
+      if (!totalTargets.has(key)) {
+        totalTargets.set(key, 1);
+      }
+    });
+
+    if (!completedChecklistKeys.has(entry.checklistKey)) continue;
+    targetKeys.forEach((key) => coveredTargets.add(key));
+  }
+
+  for (const entry of entries) {
+    const targetKeys = candidateTargetKeys.get(entry.checklistKey) ?? [];
+    targetKeys.forEach((key) => {
+      if (!totalTargets.has(key)) {
+        totalTargets.set(key, 1);
+      }
+    });
+
+    if (completedChecklistKeys.has(entry.checklistKey)) {
+      completedEntries += 1;
+    }
+  }
+
+  const countTargets = (keys: Iterable<string>): number => {
+    let total = 0;
+    for (const key of keys) {
+      total += totalTargets.get(key) ?? 1;
+    }
+    return total;
+  };
+
+  const currentlyCoveredCount = countTargets(coveredTargets);
+  const totalCoverageCount = countTargets(totalTargets.keys());
+  const remainingEntries = entries.filter((entry) => !completedChecklistKeys.has(entry.checklistKey));
+  const usedChecklistKeys = new Set<string>();
+  const path: Array<LayerCoveragePathStep<TEntry>> = [];
+
+  while (usedChecklistKeys.size < remainingEntries.length) {
+    let bestEntry: TEntry | null = null;
+    let bestNewCoverageCount = -1;
+    let bestNewSections: ReadingSectionSummary[] = [];
+    let bestTargetKeys: string[] = [];
+
+    for (const entry of remainingEntries) {
+      if (usedChecklistKeys.has(entry.checklistKey)) continue;
+
+      const newTargetKeys = (candidateTargetKeys.get(entry.checklistKey) ?? [])
+        .filter((key) => !coveredTargets.has(key));
+      const newCoverageCount = newTargetKeys.reduce(
+        (total, key) => total + (totalTargets.get(key) ?? 1),
+        0
+      );
+      const newSections = dedupeSections(
+        entry.sections.filter((section) => newTargetKeys.some((key) => sectionMatchesTargetKey(section, layer, key)))
+      );
+
+      if (!bestEntry || newCoverageCount > bestNewCoverageCount) {
+        bestEntry = entry;
+        bestNewCoverageCount = newCoverageCount;
+        bestNewSections = newSections;
+        bestTargetKeys = newTargetKeys;
+        continue;
+      }
+
+      if (newCoverageCount === bestNewCoverageCount) {
+        const spreadScore = sectionSpreadScore(newSections);
+        const bestSpreadScore = sectionSpreadScore(bestNewSections);
+
+        if (spreadScore > bestSpreadScore) {
+          bestEntry = entry;
+          bestNewCoverageCount = newCoverageCount;
+          bestNewSections = newSections;
+          bestTargetKeys = newTargetKeys;
+          continue;
+        }
+
+        if (spreadScore === bestSpreadScore && entry.sectionCount > bestEntry.sectionCount) {
+          bestEntry = entry;
+          bestNewCoverageCount = newCoverageCount;
+          bestNewSections = newSections;
+          bestTargetKeys = newTargetKeys;
+        }
+      }
+    }
+
+    if (!bestEntry || bestNewCoverageCount <= 0) break;
+
+    usedChecklistKeys.add(bestEntry.checklistKey);
+    bestTargetKeys.forEach((key) => coveredTargets.add(key));
+
+    path.push({
+      entry: bestEntry,
+      newCoverageCount: bestNewCoverageCount,
+      cumulativeCoveredCount: countTargets(coveredTargets),
+      newSections: bestNewSections,
+    });
+  }
+
+  return {
+    layer,
+    totalEntries: entries.length,
+    completedEntries,
+    totalCoverageCount,
+    currentlyCoveredCount,
+    remainingCoverageCount: Math.max(0, totalCoverageCount - currentlyCoveredCount),
+    path,
+  };
+}
+
 export function selectDefaultCoverageLayer(
   snapshots: Array<Pick<LayerCoverageSnapshot<ChecklistBackedReadingEntry>, 'layer' | 'currentlyCoveredCount' | 'totalCoverageCount'>>
 ): CoverageLayer {

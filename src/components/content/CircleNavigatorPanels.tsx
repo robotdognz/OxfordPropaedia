@@ -3,20 +3,31 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import {
   writeChecklistState,
 } from '../../utils/readingChecklist';
-import type { ReadingType } from '../../utils/readingPreference';
+import {
+  READING_TYPE_ORDER,
+  READING_TYPE_UI_META,
+  setCoverageLayerPreference,
+  setReadingPreference,
+  type ReadingType,
+} from '../../utils/readingPreference';
 import { divisionUrl, sectionUrl, slugify } from '../../utils/helpers';
 import {
   type ReadingSectionSummary,
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
+import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
 import {
+  COVERAGE_LAYER_META,
+  COVERAGE_LAYER_ORDER,
   buildLayerCoverageSnapshot,
+  buildLayerCoverageSnapshotWithReferenceEntries,
   completedChecklistKeysFromState,
   coverageLayerLabel,
   type CoverageLayer,
   type LayerCoverageSnapshot,
 } from '../../utils/readingLibrary';
 import ReadingSpreadPath from './ReadingSpreadPath';
+import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import type {
   CircleNavigatorIotEntry,
   CircleNavigatorMacropaediaEntry,
@@ -38,7 +49,7 @@ interface CenteredCircleNavigatorPanelProps {
   activeLayer: CoverageLayer;
   checklistState: Record<string, boolean>;
   baseUrl: string;
-  selectionControls?: ComponentChildren;
+  coverageSources: Partial<Record<ReadingType, HomepageCoverageSource>>;
 }
 
 interface TopPartCircleNavigatorPanelProps {
@@ -48,7 +59,7 @@ interface TopPartCircleNavigatorPanelProps {
   activeLayer: CoverageLayer;
   checklistState: Record<string, boolean>;
   baseUrl: string;
-  selectionControls?: ComponentChildren;
+  coverageSources: Partial<Record<ReadingType, HomepageCoverageSource>>;
 }
 
 type AnchoredEntryBase = {
@@ -165,6 +176,7 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   itemSingular: string;
   entries: TEntry[];
   completedChecklistKeys: Set<string>;
+  coverageEntries?: HomepageCoverageSource['entries'];
   getHref: (item: TEntry) => string;
   getLabel?: (item: TEntry) => string;
   renderMeta?: (item: TEntry) => ComponentChildren;
@@ -174,11 +186,18 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   const supportedLayers = supportedLayersForReadingType(config.type);
   const layerSnapshots: Partial<Record<CoverageLayer, LayerCoverageSnapshot<TEntry>>> = {};
   supportedLayers.forEach((layer) => {
-    layerSnapshots[layer] = buildLayerCoverageSnapshot(
-      config.entries,
-      config.completedChecklistKeys,
-      layer,
-    );
+    layerSnapshots[layer] = config.coverageEntries
+      ? buildLayerCoverageSnapshotWithReferenceEntries(
+          config.entries,
+          config.coverageEntries,
+          config.completedChecklistKeys,
+          layer,
+        )
+      : buildLayerCoverageSnapshot(
+          config.entries,
+          config.completedChecklistKeys,
+          layer,
+        );
   });
 
   return {
@@ -193,6 +212,98 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   };
 }
 
+function emptyRecommendationMessage(
+  itemSingular: string,
+  layer: CoverageLayer,
+  isComplete: boolean,
+): string {
+  if (isComplete) {
+    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
+  }
+
+  return `No unread ${itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
+}
+
+function resolveRecommendationSelection<TEntry extends AnchoredEntryBase>(
+  recommendationSections: AnchoredRecommendationSectionConfig<TEntry>[],
+  readingPref: ReadingType,
+  activeLayer: CoverageLayer,
+) {
+  const availableTypes = new Set(recommendationSections.map((section) => section.type));
+  const activeRecommendation = recommendationSections.find((section) => section.type === readingPref)
+    ?? recommendationSections[0];
+  const effectiveReadingType = activeRecommendation?.type ?? readingPref;
+  const supportedLayers = activeRecommendation?.supportedLayers ?? supportedLayersForReadingType(effectiveReadingType);
+  const effectiveLayer = supportedLayers.includes(activeLayer)
+    ? activeLayer
+    : activeLayer === 'subsection' && supportedLayers.includes('section')
+      ? 'section'
+      : supportedLayers[0] ?? activeLayer;
+  const coverageLayerMeta = new Map<CoverageLayer, string>();
+
+  if (activeRecommendation) {
+    supportedLayers.forEach((layer) => {
+      const snapshot = activeRecommendation.layerSnapshots[layer];
+      if (!snapshot) return;
+      coverageLayerMeta.set(layer, `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`);
+    });
+  }
+
+  return {
+    activeRecommendation,
+    availableTypes,
+    effectiveReadingType,
+    effectiveLayer,
+    coverageLayerMeta,
+  };
+}
+
+function renderSelectionControls<TEntry extends AnchoredEntryBase>(
+  recommendationSections: AnchoredRecommendationSectionConfig<TEntry>[],
+  readingPref: ReadingType,
+  activeLayer: CoverageLayer,
+): ComponentChildren {
+  const {
+    activeRecommendation,
+    availableTypes,
+    effectiveReadingType,
+    effectiveLayer,
+    coverageLayerMeta,
+  } = resolveRecommendationSelection(recommendationSections, readingPref, activeLayer);
+
+  return (
+    <ReadingSelectionStrip
+      readingTypeValue={effectiveReadingType}
+      readingTypeOptions={READING_TYPE_ORDER.map((type) => ({
+        value: type,
+        eyebrow: READING_TYPE_UI_META[type].eyebrow,
+        label: READING_TYPE_UI_META[type].label,
+        disabled: recommendationSections.length > 0 ? !availableTypes.has(type) : false,
+      }))}
+      onReadingTypeChange={(type) => {
+        if (recommendationSections.length > 0 && !availableTypes.has(type)) return;
+        setReadingPreference(type);
+      }}
+      readingTypeAriaLabel="Selected fields reading type"
+      coverageLayerValue={effectiveLayer}
+      coverageLayerOptions={COVERAGE_LAYER_ORDER.map((layer) => ({
+        value: layer,
+        label: COVERAGE_LAYER_META[layer].pluralLabel,
+        meta: coverageLayerMeta.get(layer),
+        disabled: !activeRecommendation
+          ? !supportedLayersForReadingType(effectiveReadingType).includes(layer)
+          : !activeRecommendation.supportedLayers.includes(layer),
+      }))}
+      onCoverageLayerChange={(layer) => {
+        const supportedLayers = activeRecommendation?.supportedLayers ?? supportedLayersForReadingType(effectiveReadingType);
+        if (!supportedLayers.includes(layer)) return;
+        setCoverageLayerPreference(layer);
+      }}
+      coverageLayerAriaLabel="Selected fields coverage layer"
+    />
+  );
+}
+
 export function CenteredCircleNavigatorPanel({
   parts,
   centerPart,
@@ -204,7 +315,7 @@ export function CenteredCircleNavigatorPanel({
   activeLayer,
   checklistState,
   baseUrl,
-  selectionControls,
+  coverageSources,
 }: CenteredCircleNavigatorPanelProps) {
   const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
     center: CircleNavigatorPartRecommendations;
@@ -264,6 +375,7 @@ export function CenteredCircleNavigatorPanel({
         itemSingular: 'book',
         entries: sharedVsiEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
         renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
       }),
@@ -272,6 +384,7 @@ export function CenteredCircleNavigatorPanel({
         itemSingular: 'episode',
         entries: sharedIotEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.iot?.entries,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
         renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
       }),
@@ -280,6 +393,7 @@ export function CenteredCircleNavigatorPanel({
         itemSingular: 'article',
         entries: sharedWikiEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.wikipedia?.entries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
@@ -289,12 +403,13 @@ export function CenteredCircleNavigatorPanel({
         itemSingular: 'article',
         entries: sharedMacroEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.macropaedia?.entries,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
       }),
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl]);
+  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources]);
 
   const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
@@ -302,6 +417,11 @@ export function CenteredCircleNavigatorPanel({
     activeLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
+  const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
+  const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
+  const isLayerComplete = activeSnapshot
+    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
 
   return (
     <>
@@ -352,13 +472,11 @@ export function CenteredCircleNavigatorPanel({
         )}
       </div>
 
-      {selectionControls ? (
-        <div class="mt-3">
-          {selectionControls}
-        </div>
-      ) : null}
+      <div class="mt-3">
+        {selectionControls}
+      </div>
 
-      {spreadSteps.length > 0 && (
+      {activeRecommendation ? (
         <div class="mt-3">
         <ReadingSpreadPath
           isOpen={spreadPathOpen}
@@ -374,12 +492,12 @@ export function CenteredCircleNavigatorPanel({
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
           coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
           coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          emptyMessage="No recommendations available."
+          emptyMessage={emptyRecommendationMessage(activeRecommendation.itemSingular, resolvedLayer, isLayerComplete)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
         />
         </div>
-      )}
+      ) : null}
     </>
   );
 }
@@ -391,7 +509,7 @@ export function TopPartCircleNavigatorPanel({
   activeLayer,
   checklistState,
   baseUrl,
-  selectionControls,
+  coverageSources,
 }: TopPartCircleNavigatorPanelProps) {
   const [partRecommendations, setPartRecommendations] = useState<CircleNavigatorPartRecommendations | null>(
     () => partRecommendationCache.get(topPartNumber) ?? null
@@ -439,6 +557,7 @@ export function TopPartCircleNavigatorPanel({
         itemSingular: 'book',
         entries: anchoredVsiEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
         renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
       }),
@@ -447,6 +566,7 @@ export function TopPartCircleNavigatorPanel({
         itemSingular: 'episode',
         entries: anchoredIotEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.iot?.entries,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
         renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
       }),
@@ -455,6 +575,7 @@ export function TopPartCircleNavigatorPanel({
         itemSingular: 'article',
         entries: anchoredWikiEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.wikipedia?.entries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
@@ -464,12 +585,13 @@ export function TopPartCircleNavigatorPanel({
         itemSingular: 'article',
         entries: anchoredMacroEntries,
         completedChecklistKeys,
+        coverageEntries: coverageSources.macropaedia?.entries,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
       }),
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl]);
+  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources]);
 
   const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
@@ -477,6 +599,11 @@ export function TopPartCircleNavigatorPanel({
     activeLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
+  const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
+  const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
+  const isLayerComplete = activeSnapshot
+    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
 
   return (
     <>
@@ -526,13 +653,11 @@ export function TopPartCircleNavigatorPanel({
         )}
       </div>
 
-      {selectionControls ? (
-        <div class="mt-3">
-          {selectionControls}
-        </div>
-      ) : null}
+      <div class="mt-3">
+        {selectionControls}
+      </div>
 
-      {spreadSteps.length > 0 && (
+      {activeRecommendation ? (
         <div class="mt-3">
         <ReadingSpreadPath
           isOpen={spreadPathOpen}
@@ -548,12 +673,12 @@ export function TopPartCircleNavigatorPanel({
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
           coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
           coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          emptyMessage="No recommendations available."
+          emptyMessage={emptyRecommendationMessage(activeRecommendation.itemSingular, resolvedLayer, isLayerComplete)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
         />
         </div>
-      )}
+      ) : null}
     </>
   );
 }
