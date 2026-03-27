@@ -1387,13 +1387,13 @@ export default function CircleNavigator({
                     d={roundedDonutSlicePath(
                       CENTER,
                       CENTER,
-                      segmentInnerRadius + 2,
-                      segmentOuterRadius - 2,
+                      segmentInnerRadius,
+                      segmentOuterRadius,
                       startAngle,
                       endAngle,
                       {
                         gapPx: SEGMENT_GAP_PX,
-                        cornerRadiusPx: Math.max(0, SEGMENT_CORNER_RADIUS - 1),
+                        cornerRadiusPx: SEGMENT_CORNER_RADIUS,
                       }
                     )}
                     fill="none"
