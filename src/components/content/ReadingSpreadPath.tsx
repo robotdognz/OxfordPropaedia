@@ -83,7 +83,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
             {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
           </p>
         </div>
-        {bestNext ? (
+        {!isOpen && bestNext ? (
           <div>
             <a href={getHref(bestNext)} class="font-serif text-2xl leading-tight text-amber-950 hover:text-indigo-700 transition-colors">
               {bestNext.title}
@@ -93,9 +93,9 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
               Adds {bestNext.newCoverageCount} new {bestNext.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} and touches {bestNext.sectionCount} linked {bestNext.sectionCount === 1 ? 'Section' : 'Sections'}.
             </p>
           </div>
-        ) : (
+        ) : !bestNext ? (
           <p class="text-sm text-amber-900">{emptyMessage}</p>
-        )}
+        ) : null}
       </div>
 
       {isOpen && steps.length > 0 ? (
