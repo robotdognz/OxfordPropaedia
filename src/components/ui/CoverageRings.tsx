@@ -27,30 +27,38 @@ export default function CoverageRings({
   const ringGeometryTransition = 'r 180ms ease, stroke-width 180ms ease';
   const trackTransition = `${ringGeometryTransition}, stroke 180ms ease, stroke-opacity 180ms ease`;
   const fillTransition = 'stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out';
+  const opacityTransition = 'stroke-opacity 0.4s ease-out';
   const arcTransition = `${fillTransition}, transform 180ms ease, ${ringGeometryTransition}`;
   const zeroArcHideDelayMs = 850;
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const ringFingerprint = rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',');
   const prevLabelRef = useRef(activeRingLabel);
-  const snapGeometryRef = useRef(false);
+  const prevFingerprintRef = useRef(ringFingerprint);
+  const snapModeRef = useRef<'none' | 'geometry' | 'all'>('none');
   const [, forceRender] = useState(0);
 
-  // Detect the active-label change during render so geometry snaps on the same
-  // frame the new active ring arrives, while fill transitions remain enabled.
-  if (activeRingLabel !== prevLabelRef.current) {
+  // Detect changes during render so the snap mode applies on the same frame.
+  // Layer-only active-ring changes should snap the whole arc instantly.
+  // Source switches should only snap geometry and keep fill animation enabled.
+  const labelChanged = activeRingLabel !== prevLabelRef.current;
+  const dataChanged = ringFingerprint !== prevFingerprintRef.current;
+  if (labelChanged) {
     prevLabelRef.current = activeRingLabel;
-    snapGeometryRef.current = true;
+    snapModeRef.current = dataChanged ? 'geometry' : 'all';
   }
+  prevFingerprintRef.current = ringFingerprint;
 
-  const isSnappingGeometry = snapGeometryRef.current;
+  const snapMode = snapModeRef.current;
+  const isSnappingGeometry = snapMode !== 'none';
+  const isSnappingAll = snapMode === 'all';
 
   useEffect(() => {
-    if (snapGeometryRef.current) {
+    if (snapModeRef.current !== 'none') {
       let innerFrame = 0;
       const outerFrame = requestAnimationFrame(() => {
         innerFrame = requestAnimationFrame(() => {
-          snapGeometryRef.current = false;
+          snapModeRef.current = 'none';
           forceRender(n => n + 1);
         });
       });
@@ -60,7 +68,7 @@ export default function CoverageRings({
         if (innerFrame) cancelAnimationFrame(innerFrame);
       };
     }
-  }, [activeRingLabel]);
+  }, [activeRingLabel, ringFingerprint]);
 
   // Detect rings that just appeared — suppress them for one frame so they animate from 0
   const prevRingLabelsRef = useRef<Set<string>>(new Set(rings.map(r => r.label)));
@@ -273,7 +281,9 @@ export default function CoverageRings({
                   transformOrigin: `${center}px ${center}px`,
                   transition: freezeTransitions
                     ? 'none'
-                    : isSnappingGeometry
+                    : isSnappingAll
+                      ? opacityTransition
+                      : isSnappingGeometry
                       ? fillTransition
                       : arcTransition,
                 }}
