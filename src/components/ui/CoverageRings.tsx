@@ -24,26 +24,47 @@ export default function CoverageRings({
   const gap = 3;
   const activeRingWidthBoost = 3;
   const outerEdgeInset = 1;
-  const geometryTransition = 'r 180ms ease, stroke-width 180ms ease, stroke 180ms ease, stroke-opacity 180ms ease';
+  const ringGeometryTransition = 'r 180ms ease, stroke-width 180ms ease';
+  const trackTransition = `${ringGeometryTransition}, stroke 180ms ease, stroke-opacity 180ms ease`;
+  const fillTransition = 'stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out';
+  const arcTransition = `${fillTransition}, transform 180ms ease, ${ringGeometryTransition}`;
+  const zeroArcHideDelayMs = 850;
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  // Snap (skip transition) when only the active ring changes, not the data
-  const [snapTransition, setSnapTransition] = useState(false);
-  const prevActiveRef = useRef(activeRingLabel);
+  const ringFingerprint = rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',');
+  const prevLabelRef = useRef(activeRingLabel);
+  const snapGeometryRef = useRef(false);
+  const [, forceRender] = useState(0);
+
+  // Detect the active-label change during render so geometry snaps on the same
+  // frame the new active ring arrives, while fill transitions remain enabled.
+  if (activeRingLabel !== prevLabelRef.current) {
+    prevLabelRef.current = activeRingLabel;
+    snapGeometryRef.current = true;
+  }
+
+  const isSnappingGeometry = snapGeometryRef.current;
+
   useEffect(() => {
-    if (prevActiveRef.current !== activeRingLabel) {
-      prevActiveRef.current = activeRingLabel;
-      setSnapTransition(true);
-      const id = requestAnimationFrame(() => {
-        requestAnimationFrame(() => setSnapTransition(false));
+    if (snapGeometryRef.current) {
+      let innerFrame = 0;
+      const outerFrame = requestAnimationFrame(() => {
+        innerFrame = requestAnimationFrame(() => {
+          snapGeometryRef.current = false;
+          forceRender(n => n + 1);
+        });
       });
-      return () => cancelAnimationFrame(id);
+
+      return () => {
+        cancelAnimationFrame(outerFrame);
+        if (innerFrame) cancelAnimationFrame(innerFrame);
+      };
     }
   }, [activeRingLabel]);
+
   // Detect rings that just appeared — suppress them for one frame so they animate from 0
   const prevRingLabelsRef = useRef<Set<string>>(new Set(rings.map(r => r.label)));
   const newRingLabelsRef = useRef<Set<string>>(new Set());
-  const [, forceRender] = useState(0);
   const currentLabels = rings.map(r => r.label);
   const justAppeared = currentLabels.filter(l => !prevRingLabelsRef.current.has(l));
   if (justAppeared.length > 0) {
@@ -93,11 +114,16 @@ export default function CoverageRings({
         const id = window.setTimeout(() => {
           hideTimers.current.delete(ring.label);
           setHiddenArcs((prev) => new Set(prev).add(ring.label));
-        }, 850);
+        }, zeroArcHideDelayMs);
         hideTimers.current.set(ring.label, id);
       }
     });
-  }, [rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',')]);
+  }, [ringFingerprint]);
+
+  useEffect(() => () => {
+    hideTimers.current.forEach((timerId) => clearTimeout(timerId));
+    hideTimers.current.clear();
+  }, []);
 
   const ringWidths = rings.map((ring) =>
     ring.label === activeRingLabel ? ringWidth + activeRingWidthBoost : ringWidth
@@ -228,7 +254,7 @@ export default function CoverageRings({
                 stroke-opacity={isActive ? '0.78' : '0.72'}
                 stroke-width={width}
                 style={{
-                  transition: freezeTransitions ? 'none' : geometryTransition,
+                  transition: freezeTransitions || isSnappingGeometry ? 'none' : trackTransition,
                 }}
               />
               {/* Animated arc — hidden after transition completes at zero to prevent round-cap dot on mobile */}
@@ -247,9 +273,9 @@ export default function CoverageRings({
                   transformOrigin: `${center}px ${center}px`,
                   transition: freezeTransitions
                     ? 'none'
-                    : snapTransition
-                      ? 'stroke-opacity 0.4s ease-out'
-                      : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out, transform 180ms ease, ${geometryTransition}`,
+                    : isSnappingGeometry
+                      ? fillTransition
+                      : arcTransition,
                 }}
               />
             </g>

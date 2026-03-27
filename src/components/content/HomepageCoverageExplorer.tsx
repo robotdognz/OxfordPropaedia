@@ -18,9 +18,11 @@ import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
   buildPartCoverageSegments,
+  type CoverageRing,
   completedChecklistKeysFromState,
   countCompletedEntries,
   coverageLayerLabel,
+  type PartCoverageSegment,
   selectDefaultCoverageLayer,
   type CoverageLayer,
 } from '../../utils/readingLibrary';
@@ -44,12 +46,20 @@ interface HomepageCoverageExplorerProps {
 
 const SOURCE_ORDER: ReadingType[] = ['vsi', 'iot', 'wikipedia', 'macropaedia'];
 const ALL_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+const DEFAULT_SUPPORTED_LAYERS: CoverageLayer[] = ['part', 'division', 'section'];
 const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Parts: 'part',
   Divisions: 'division',
   Sections: 'section',
   Subsections: 'subsection',
 };
+
+interface StagedCoverageDisplay {
+  sourceKey: ReadingType | null;
+  rings: CoverageRing[];
+  partSegments: PartCoverageSegment[];
+  activeRingLabel: string;
+}
 
 function availableLayers(source: HomepageCoverageSource): CoverageLayer[] {
   return source.includeSubsections ? ALL_LAYERS : ALL_LAYERS.filter((layer) => layer !== 'subsection');
@@ -61,6 +71,66 @@ function emptyRecommendationMessage(source: HomepageCoverageSource, layer: Cover
   }
 
   return `No unread ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
+}
+
+function useStagedCoverageDisplay(
+  sourceKey: ReadingType | null,
+  rings: CoverageRing[],
+  partSegments: PartCoverageSegment[],
+  activeRingLabel: string,
+): Omit<StagedCoverageDisplay, 'sourceKey'> {
+  const latestRef = useRef<StagedCoverageDisplay>({
+    sourceKey,
+    rings,
+    partSegments,
+    activeRingLabel,
+  });
+  const [display, setDisplay] = useState<StagedCoverageDisplay>(latestRef.current);
+  const previousSourceKeyRef = useRef(sourceKey);
+  const deferSourceSwitchRef = useRef(false);
+
+  latestRef.current = {
+    sourceKey,
+    rings,
+    partSegments,
+    activeRingLabel,
+  };
+
+  if (previousSourceKeyRef.current !== sourceKey) {
+    previousSourceKeyRef.current = sourceKey;
+    deferSourceSwitchRef.current = true;
+  }
+
+  useEffect(() => {
+    if (deferSourceSwitchRef.current) {
+      let innerFrame = 0;
+      const outerFrame = requestAnimationFrame(() => {
+        innerFrame = requestAnimationFrame(() => {
+          deferSourceSwitchRef.current = false;
+          setDisplay(latestRef.current);
+        });
+      });
+
+      return () => {
+        cancelAnimationFrame(outerFrame);
+        if (innerFrame) cancelAnimationFrame(innerFrame);
+      };
+    }
+
+    setDisplay(latestRef.current);
+  }, [activeRingLabel, partSegments, rings, sourceKey]);
+
+  return deferSourceSwitchRef.current
+    ? {
+        rings: display.rings,
+        partSegments: display.partSegments,
+        activeRingLabel: display.activeRingLabel,
+      }
+    : {
+        rings,
+        partSegments,
+        activeRingLabel,
+      };
 }
 
 export default function HomepageCoverageExplorer({
@@ -81,9 +151,12 @@ export default function HomepageCoverageExplorer({
   const [errorType, setErrorType] = useState<ReadingType | null>(null);
 
   const loadingRef = useRef<Set<ReadingType>>(new Set());
+  const sourceCacheRef = useRef(sourceCache);
+
+  sourceCacheRef.current = sourceCache;
 
   async function ensureSourceLoaded(type: ReadingType) {
-    if (sourceCache[type]) return;
+    if (sourceCacheRef.current[type]) return;
     if (loadingRef.current.has(type)) return; // Already in flight
 
     loadingRef.current.add(type);
@@ -148,7 +221,10 @@ export default function HomepageCoverageExplorer({
     [checklistState],
   );
 
-  const supportedLayers = source ? availableLayers(source) : ['part', 'division', 'section'];
+  const supportedLayers = useMemo(
+    () => (source ? availableLayers(source) : DEFAULT_SUPPORTED_LAYERS),
+    [source?.includeSubsections],
+  );
 
   // All computations run eagerly against source (including expensive spread paths)
   const snapshots = useMemo(() => {
@@ -189,65 +265,27 @@ export default function HomepageCoverageExplorer({
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
+  const activeRingLabel = coverageLayerLabel(activeLayer, 2);
   const coverageRingsLatest = useMemo(() => {
-    if (!source) return null;
+    if (!source) return [];
     return buildCoverageRings(source.entries, checklistState, {
       includeSubsections: source.includeSubsections,
     });
   }, [checklistState, source]);
   const partSegmentsLatest = useMemo(() => {
-    if (!source || !partsMeta) return null;
+    if (!source || !partsMeta) return [];
     return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
   }, [checklistState, source, activeLayer, partsMeta]);
-
-  // Deferred ring values: when the data source changes, keep showing the OLD
-  // ring values for one frame (so heavy useMemo work doesn't stutter an
-  // in-progress animation). On the next frame, swap in new values — CSS
-  // transitions then animate smoothly from old → new.
-  const prevRingsRef = useRef(coverageRingsLatest);
-  const prevSegmentsRef = useRef(partSegmentsLatest);
-  const latestRingsRef = useRef(coverageRingsLatest);
-  const latestSegmentsRef = useRef(partSegmentsLatest);
-  const prevSourceRef = useRef(source);
-  const deferringRef = useRef(false);
-  const [, forceRender] = useState(0);
-
-  // Always keep latest refs in sync so the raf reads fresh values
-  latestRingsRef.current = coverageRingsLatest;
-  latestSegmentsRef.current = partSegmentsLatest;
-
-  if (source !== prevSourceRef.current) {
-    prevSourceRef.current = source;
-    deferringRef.current = true;
-  }
-
-  const coverageRings = deferringRef.current
-    ? (prevRingsRef.current ?? coverageRingsLatest ?? [])
-    : (coverageRingsLatest ?? []);
-  const partSegments = deferringRef.current
-    ? (prevSegmentsRef.current ?? partSegmentsLatest ?? [])
-    : (partSegmentsLatest ?? []);
-
-  // Keep prev refs in sync when not deferring
-  if (!deferringRef.current) {
-    prevRingsRef.current = coverageRingsLatest;
-    prevSegmentsRef.current = partSegmentsLatest;
-  }
-
-  useEffect(() => {
-    if (deferringRef.current) {
-      const id = requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          // Read from refs (not closure) so rapid switches always get latest values
-          prevRingsRef.current = latestRingsRef.current;
-          prevSegmentsRef.current = latestSegmentsRef.current;
-          deferringRef.current = false;
-          forceRender(n => n + 1);
-        });
-      });
-      return () => cancelAnimationFrame(id);
-    }
-  }, [source]);
+  const {
+    rings: coverageRings,
+    partSegments,
+    activeRingLabel: displayActiveRingLabel,
+  } = useStagedCoverageDisplay(
+    source?.type ?? null,
+    coverageRingsLatest,
+    partSegmentsLatest,
+    activeRingLabel,
+  );
 
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
   const wrapperClass = framed
@@ -405,7 +443,7 @@ export default function HomepageCoverageExplorer({
                     size={100}
                     ringWidth={8}
                     hideLegend
-                    activeRingLabel={coverageLayerLabel(activeLayer, 2)}
+                    activeRingLabel={displayActiveRingLabel}
                     onSelectRing={(label) => {
                       const layer = LAYER_BY_RING_LABEL[label];
                       if (layer && supportedLayers.includes(layer)) {
@@ -438,7 +476,7 @@ export default function HomepageCoverageExplorer({
                         <div
                           key={ring.label}
                           class={`flex items-center gap-1.5 ${
-                            ring.label === coverageLayerLabel(activeLayer, 2)
+                            ring.label === displayActiveRingLabel
                               ? 'font-medium text-slate-700'
                               : ''
                           }`}
@@ -453,7 +491,7 @@ export default function HomepageCoverageExplorer({
                       const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
                       const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
                       const allComplete = sorted.every(s => s.fraction >= 1);
-                      const layerLabel = coverageLayerLabel(activeLayer, 2);
+                      const layerLabel = displayActiveRingLabel;
                       return (
                         <div class="space-y-1 text-xs text-slate-500">
                           {top.length > 0 ? (
