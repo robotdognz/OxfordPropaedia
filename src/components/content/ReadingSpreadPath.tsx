@@ -26,6 +26,7 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   itemPlural: string;
   coverageUnitSingular: string;
   coverageUnitPlural: string;
+  statusMessage?: string;
   emptyMessage: string;
   baseUrl: string;
   sectionLinksVariant?: 'details' | 'chips';
@@ -49,6 +50,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   itemPlural,
   coverageUnitSingular,
   coverageUnitPlural,
+  statusMessage,
   emptyMessage,
   baseUrl,
   sectionLinksVariant = 'details',
@@ -82,6 +84,11 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
           <p class="mt-1 text-xs font-medium text-amber-900">
             {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
           </p>
+          {statusMessage ? (
+            <p class="mt-1.5 text-xs leading-5 text-amber-950/85">
+              {statusMessage}
+            </p>
+          ) : null}
         </div>
         {!isOpen && bestNext ? (
           <div>

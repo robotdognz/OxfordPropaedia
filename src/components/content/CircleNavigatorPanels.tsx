@@ -212,16 +212,34 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   };
 }
 
+function selectionConstraintMessage(
+  layer: CoverageLayer,
+  totalCoverageCount: number,
+  reachableCoverageCount: number,
+): string | null {
+  const constrainedCount = Math.max(0, totalCoverageCount - reachableCoverageCount);
+  if (constrainedCount <= 0) return null;
+
+  const constrainedLabel = coverageLayerLabel(layer, constrainedCount);
+  const constrainedVerb = constrainedCount === 1 ? 'lies' : 'lie';
+
+  return `This path can take you to ${reachableCoverageCount}/${totalCoverageCount} ${coverageLayerLabel(layer, totalCoverageCount)}. The remaining ${constrainedCount} ${constrainedLabel} ${constrainedVerb} outside the current selection.`;
+}
+
 function emptyRecommendationMessage(
-  itemSingular: string,
   layer: CoverageLayer,
   isComplete: boolean,
+  remainingCoverageCount: number,
 ): string {
   if (isComplete) {
     return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
   }
 
-  return `No unread ${itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
+  if (remainingCoverageCount > 0) {
+    return `No readings in this selection add new ${coverageLayerLabel(layer, 1)} coverage. ${remainingCoverageCount} ${coverageLayerLabel(layer, remainingCoverageCount)} ${remainingCoverageCount === 1 ? 'remains' : 'remain'} outside the current selection.`;
+  }
+
+  return `No readings in this selection add further ${coverageLayerLabel(layer, 1)} coverage right now.`;
 }
 
 function resolveRecommendationSelection<TEntry extends AnchoredEntryBase>(
@@ -422,6 +440,12 @@ export function CenteredCircleNavigatorPanel({
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
+  const reachableCoverageCount = spreadSteps[spreadSteps.length - 1]?.cumulativeCoveredCount
+    ?? activeSnapshot?.currentlyCoveredCount
+    ?? 0;
+  const statusMessage = activeSnapshot && spreadSteps.length > 0 && !isLayerComplete
+    ? selectionConstraintMessage(resolvedLayer, activeSnapshot.totalCoverageCount, reachableCoverageCount)
+    : null;
 
   return (
     <>
@@ -492,7 +516,8 @@ export function CenteredCircleNavigatorPanel({
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
           coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
           coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          emptyMessage={emptyRecommendationMessage(activeRecommendation.itemSingular, resolvedLayer, isLayerComplete)}
+          statusMessage={statusMessage ?? undefined}
+          emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
         />
@@ -604,6 +629,12 @@ export function TopPartCircleNavigatorPanel({
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
+  const reachableCoverageCount = spreadSteps[spreadSteps.length - 1]?.cumulativeCoveredCount
+    ?? activeSnapshot?.currentlyCoveredCount
+    ?? 0;
+  const statusMessage = activeSnapshot && spreadSteps.length > 0 && !isLayerComplete
+    ? selectionConstraintMessage(resolvedLayer, activeSnapshot.totalCoverageCount, reachableCoverageCount)
+    : null;
 
   return (
     <>
@@ -673,7 +704,8 @@ export function TopPartCircleNavigatorPanel({
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
           coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
           coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          emptyMessage={emptyRecommendationMessage(activeRecommendation.itemSingular, resolvedLayer, isLayerComplete)}
+          statusMessage={statusMessage ?? undefined}
+          emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
         />
