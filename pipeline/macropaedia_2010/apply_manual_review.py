@@ -144,6 +144,15 @@ def apply_volume_1_review(volume: dict, review: dict[str, str]) -> None:
     )
 
 
+def apply_generic_page_title_review(volume: dict, review: dict[str, str]) -> None:
+    for key, title in review.items():
+        if not key.startswith("page_") or not key.endswith("_title") or not title:
+            continue
+        page = key.removeprefix("page_").removesuffix("_title").upper()
+        upsert_article(volume, page, title)
+        remove_leftovers(volume, [title, page])
+
+
 def apply_volume_13_review(volume: dict, review: dict[str, str]) -> None:
     page_pairs = [
         ("550", review.get("page_550_title", "")),
@@ -178,6 +187,11 @@ def apply_volume_13_review(volume: dict, review: dict[str, str]) -> None:
     )
 
 
+def apply_volume_11_review(volume: dict, review: dict[str, str]) -> None:
+    apply_generic_page_title_review(volume, review)
+    remove_leftovers(volume, ["LIGHT"])
+
+
 def apply_optional_spelling_fixes(candidates: dict, review_sections: dict[str, dict[str, str]]) -> None:
     optional = review_sections.get("optional_spelling_checks", {})
     notes = review_sections.get("notes", {})
@@ -208,9 +222,15 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
     reviewed = deepcopy(raw_candidates)
 
     volume_1 = volume_by_number(reviewed, 1)
+    volume_2 = volume_by_number(reviewed, 2)
+    volume_7 = volume_by_number(reviewed, 7)
+    volume_11 = volume_by_number(reviewed, 11)
     volume_13 = volume_by_number(reviewed, 13)
 
     apply_volume_1_review(volume_1, review_sections.get("volume_1", {}))
+    apply_generic_page_title_review(volume_2, review_sections.get("volume_2", {}))
+    apply_generic_page_title_review(volume_7, review_sections.get("volume_7", {}))
+    apply_volume_11_review(volume_11, review_sections.get("volume_11", {}))
     apply_volume_13_review(volume_13, review_sections.get("volume_13_confirmed_pairs", {}))
     apply_optional_spelling_fixes(reviewed, review_sections)
 

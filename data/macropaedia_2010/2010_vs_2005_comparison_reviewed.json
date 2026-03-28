@@ -1,9 +1,9 @@
 {
   "baselineUniqueCount": 666,
-  "candidateUniqueCount": 685,
-  "matchedCount": 617,
+  "candidateUniqueCount": 688,
+  "matchedCount": 620,
   "newIn2010Count": 68,
-  "missingFrom2010Count": 49,
+  "missingFrom2010Count": 46,
   "newIn2010": [
     {
       "title": "Ansel ADAMS",
@@ -1876,10 +1876,25 @@
         "903"
       ],
       "pageCountEstimates": [
-        166
+        104
       ],
       "matchedBaselineTitle": "Biblical Literature and Its Critical Interpretation",
       "matchedBaselineLookupKey": "biblical literature and its critical interpretation"
+    },
+    {
+      "title": "Biochemical Components of Organisms",
+      "lookupKey": "biochemical components of organisms",
+      "volumes": [
+        2
+      ],
+      "startPages": [
+        "1007"
+      ],
+      "pageCountEstimates": [
+        62
+      ],
+      "matchedBaselineTitle": "Biochemical Components of Organisms",
+      "matchedBaselineLookupKey": "biochemical components of organisms"
     },
     {
       "title": "Biological COLORATION",
@@ -4321,10 +4336,25 @@
         "745"
       ],
       "pageCountEstimates": [
-        132
+        3
       ],
       "matchedBaselineTitle": "Genghis Khan",
       "matchedBaselineLookupKey": "genghis khan"
+    },
+    {
+      "title": "GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record",
+      "lookupKey": "geochronology: the interpretation and dating of the geologic record",
+      "volumes": [
+        7
+      ],
+      "startPages": [
+        "748"
+      ],
+      "pageCountEstimates": [
+        129
+      ],
+      "matchedBaselineTitle": "Geochronology: The Interpretation and Dating of the Geologic Record",
+      "matchedBaselineLookupKey": "geochronology: the interpretation and dating of the geologic record"
     },
     {
       "title": "GEOGRAPHY",
@@ -5705,6 +5735,21 @@
       ],
       "matchedBaselineTitle": "Life",
       "matchedBaselineLookupKey": "life"
+    },
+    {
+      "title": "LIGHT",
+      "lookupKey": "light",
+      "volumes": [
+        11
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        28
+      ],
+      "matchedBaselineTitle": "Light",
+      "matchedBaselineLookupKey": "light"
     },
     {
       "title": "LIMA",
@@ -10178,15 +10223,6 @@
       ]
     },
     {
-      "title": "Biochemical Components of Organisms",
-      "lookupKey": "biochemical components of organisms",
-      "sectionCodes": [
-        "122",
-        "321",
-        "421"
-      ]
-    },
-    {
       "title": "Biosphere, The",
       "lookupKey": "biosphere, the",
       "sectionCodes": [
@@ -10316,14 +10352,6 @@
       ]
     },
     {
-      "title": "Geochronology: The Interpretation and Dating of the Geologic Record",
-      "lookupKey": "geochronology: the interpretation and dating of the geologic record",
-      "sectionCodes": [
-        "242",
-        "243"
-      ]
-    },
-    {
       "title": "Globalization",
       "lookupKey": "globalization",
       "sectionCodes": [
@@ -10389,13 +10417,6 @@
       "lookupKey": "lamp shells: phylum brachiopoda",
       "sectionCodes": [
         "313"
-      ]
-    },
-    {
-      "title": "Light",
-      "lookupKey": "light",
-      "sectionCodes": [
-        "128"
       ]
     },
     {

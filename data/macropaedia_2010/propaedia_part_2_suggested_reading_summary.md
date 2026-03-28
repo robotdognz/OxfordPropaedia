@@ -1,13 +1,8 @@
 # Part 2 Propaedia Suggested Reading
 
 - Pages captured: `12`
-- Matched recommendations: `41`
-- Unmatched recommendations: `2`
-
-## Unmatched recommendations
-
-- Page `88`: `Geochronology: The Interpretation and Dating of the Geologic Record`
-- Page `89`: `Geochronology: The Interpretation and Dating of the Geologic Record`
+- Matched recommendations: `43`
+- Unmatched recommendations: `0`
 
 ## Page summaries
 
@@ -115,7 +110,7 @@
 - Topic summary: Major articles dealing with the interpretation of the geologic record
 - Recommendations:
   - `Earth, The: Its Properties, Composition, and Structure` -> `The EARTH: Its Properties, Composition, and Structure` (v5 p569)
-  - `Geochronology: The Interpretation and Dating of the Geologic Record` -> unmatched
+  - `Geochronology: The Interpretation and Dating of the Geologic Record` -> `GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record` (v7 p748)
 
 ### Page 89
 
@@ -123,5 +118,5 @@
 - Topic summary: Major articles dealing with the eras and periods of geologic time
 - Recommendations:
   - `Earth, The: Its Properties, Composition, and Structure` -> `The EARTH: Its Properties, Composition, and Structure` (v5 p569)
-  - `Geochronology: The Interpretation and Dating of the Geologic Record` -> unmatched
+  - `Geochronology: The Interpretation and Dating of the Geologic Record` -> `GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record` (v7 p748)
   - `Volcanism` -> `VOLCANISM` (v17 p509)

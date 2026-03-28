@@ -1,8 +1,8 @@
 {
   "partNumber": 2,
   "pageCount": 12,
-  "matchedRecommendationCount": 41,
-  "unmatchedRecommendationCount": 2,
+  "matchedRecommendationCount": 43,
+  "unmatchedRecommendationCount": 0,
   "pages": [
     {
       "partNumber": 2,
@@ -584,8 +584,13 @@
           "sortOrder": 2,
           "observedTitle": "Geochronology: The Interpretation and Dating of the Geologic Record",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "748",
+          "matchedStartPageIndex": 748,
+          "matchedPageCountEstimate": 129
         }
       ]
     },
@@ -613,8 +618,13 @@
           "sortOrder": 2,
           "observedTitle": "Geochronology: The Interpretation and Dating of the Geologic Record",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "748",
+          "matchedStartPageIndex": 748,
+          "matchedPageCountEstimate": 129
         },
         {
           "sortOrder": 3,

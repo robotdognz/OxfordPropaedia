@@ -1,8 +1,8 @@
 {
   "partNumber": 1,
   "pageCount": 13,
-  "matchedRecommendationCount": 44,
-  "unmatchedRecommendationCount": 2,
+  "matchedRecommendationCount": 46,
+  "unmatchedRecommendationCount": 0,
   "pages": [
     {
       "partNumber": 1,
@@ -178,8 +178,13 @@
           "sortOrder": 1,
           "observedTitle": "Biochemical Components of Organisms",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Biochemical Components of Organisms",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1007",
+          "matchedStartPageIndex": 1007,
+          "matchedPageCountEstimate": 62
         },
         {
           "sortOrder": 2,
@@ -461,8 +466,13 @@
           "sortOrder": 5,
           "observedTitle": "Light",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "LIGHT",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 28
         }
       ]
     },

@@ -1,13 +1,8 @@
 # Part 1 Propaedia Suggested Reading
 
 - Pages captured: `13`
-- Matched recommendations: `44`
-- Unmatched recommendations: `2`
-
-## Unmatched recommendations
-
-- Page `32`: `Biochemical Components of Organisms`
-- Page `50`: `Light`
+- Matched recommendations: `46`
+- Unmatched recommendations: `0`
 
 ## Page summaries
 
@@ -45,7 +40,7 @@
 - Header context: `Part One. Matter and Energy`
 - Topic summary: Major articles dealing with chemical compounds: molecular structure and chemical bonding
 - Recommendations:
-  - `Biochemical Components of Organisms` -> unmatched
+  - `Biochemical Components of Organisms` -> `Biochemical Components of Organisms` (v2 p1007)
   - `Chemical Compounds` -> `CHEMICAL COMPOUNDS` (v3 p777)
 
 ### Page 36
@@ -100,7 +95,7 @@
   - `Electromagnetic Radiation` -> `ELECTROMAGNETIC RADIATION` (v6 p195)
   - `Optics, Principles of` -> `Principles of OPTICS` (v13 p202)
   - `Sound` -> `SOUND` (v15 p556)
-  - `Light` -> unmatched
+  - `Light` -> `LIGHT` (v11 p1)
 
 ### Page 53
 

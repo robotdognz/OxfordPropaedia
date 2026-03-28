@@ -1,7 +1,7 @@
 {
   "source": "2010 Macropaedia contents-page OCR + manual review",
   "volumeCount": 17,
-  "articleCount": 685,
+  "articleCount": 688,
   "volumes": [
     {
       "volumeNumber": 1,
@@ -241,8 +241,8 @@
       "volumeNumber": 2,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-02-contents.jpg",
       "chosenOrientation": "left",
-      "articleCount": 46,
-      "leftoverCount": 2,
+      "articleCount": 47,
+      "leftoverCount": 1,
       "articles": [
         {
           "title": "The ARCTIC",
@@ -550,7 +550,14 @@
           "lookupKey": "biblical literature and its critical interpretation",
           "startPage": "903",
           "startPageIndex": 903,
-          "pageCountEstimate": 166
+          "pageCountEstimate": 104
+        },
+        {
+          "title": "Biochemical Components of Organisms",
+          "lookupKey": "biochemical components of organisms",
+          "startPage": "1007",
+          "startPageIndex": 1007,
+          "pageCountEstimate": 62
         },
         {
           "title": "The BIOLOGICAL SCIENCES",
@@ -568,8 +575,7 @@
         }
       ],
       "leftovers": [
-        "570",
-        "1007"
+        "570"
       ]
     },
     {
@@ -1688,7 +1694,7 @@
       "volumeNumber": 7,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-07-contents.jpg",
       "chosenOrientation": "right",
-      "articleCount": 38,
+      "articleCount": 39,
       "leftoverCount": 0,
       "articles": [
         {
@@ -1941,7 +1947,14 @@
           "lookupKey": "genghis khan",
           "startPage": "745",
           "startPageIndex": 745,
-          "pageCountEstimate": 132
+          "pageCountEstimate": 3
+        },
+        {
+          "title": "GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record",
+          "lookupKey": "geochronology: the interpretation and dating of the geologic record",
+          "startPage": "748",
+          "startPageIndex": 748,
+          "pageCountEstimate": 129
         },
         {
           "title": "GEOGRAPHY",
@@ -2823,9 +2836,16 @@
       "volumeNumber": 11,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-11-contents.jpg",
       "chosenOrientation": "down",
-      "articleCount": 41,
-      "leftoverCount": 1,
+      "articleCount": 42,
+      "leftoverCount": 0,
       "articles": [
+        {
+          "title": "LIGHT",
+          "lookupKey": "light",
+          "startPage": "1",
+          "startPageIndex": 1,
+          "pageCountEstimate": 28
+        },
         {
           "title": "LIMA",
           "lookupKey": "lima",
@@ -3114,9 +3134,7 @@
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "LIGHT"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 12,
