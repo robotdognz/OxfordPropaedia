@@ -18,8 +18,34 @@ african_american_literature_page = 120A
 [volume_2]
 page_1007_title = Biochemical Components of Organisms
 
+[volume_2_remove_leftovers]
+remove_570 = yes
+
+[volume_3]
+page_604_title = CENSORSHIP
+
+[volume_5]
+page_244_title = The Great DEPRESSION
+page_246_title = DIAGNOSIS AND THERAPEUTICS
+page_275_title = DIGESTION AND DIGESTIVE SYSTEMS
+
+[volume_6]
+page_1_title = EDUCATION
+
+[volume_6_remove_leftovers]
+remove_EDUCATION = yes
+
 [volume_7]
 page_748_title = GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record
+
+[volume_9]
+page_1_title = INDIA
+page_176_title = The INDIAN OCEAN
+page_191_title = INDIAN PHILOSOPHY
+page_213_title = INDONESIA
+page_246_title = INDUSTRIAL CERAMICS
+page_344_title = Chemical Process INDUSTRIES
+page_385_title = Extraction and Processing INDUSTRIES
 
 [volume_13_confirmed_pairs]
 page_562_title = Western PHILOSOPHICAL SCHOOLS AND DOCTRINES
@@ -43,6 +69,8 @@ confirm_515_peru = yes
 confirm_528_peter_i_the_great_of_russia = yes
 
 [optional_spelling_checks]
+biblical_literature_title = BIBLICAL LITERATURE and Its Critical Interpretation
+biosphere_title = The BIOSPHERE and Concepts of Ecology
 business_law_title = BUSINESS LAW
 jackson_pollock_title = Jackson POLLOCK
 los_angeles_title = LOS ANGELES

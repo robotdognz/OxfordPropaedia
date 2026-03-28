@@ -99,6 +99,8 @@ Generated outputs:
 - `data/macropaedia_2010/project/macropaedia_2010_project.sqlite`
 - `data/macropaedia_2010/project/article_identity_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
+- `data/macropaedia_2010/project/contents_page_review_human.csv`
+- `data/macropaedia_2010/project/contents_risk_review_human.csv`
 - `data/macropaedia_2010/project/propaedia_suggested_reading_page_review.csv`
 - `data/macropaedia_2010/project/propaedia_suggested_reading_risk_review.csv`
 - `data/macropaedia_2010/project/propaedia_suggested_reading_page_review_human.csv`
@@ -126,6 +128,12 @@ Export the human-review worklists for extracted Propaedia suggested-reading data
 python3 pipeline/macropaedia_2010/export_propaedia_review_worklists.py
 ```
 
+Export the human-review worklists for 2010 contents-page extraction with:
+
+```bash
+python3 pipeline/macropaedia_2010/export_contents_review_worklists.py
+```
+
 Apply edited worklists back into the database with:
 
 ```bash
@@ -146,6 +154,21 @@ For every article:
 Primary worklist:
 
 - `article_identity_worklist.csv`
+
+### Phase 1.5. Visually verify the contents-page extraction
+
+For each volume contents page:
+
+1. open the contents photo
+2. compare the visible contents list to `contents_page_review_human.csv`
+3. mark the page `verified` if the extracted article list is complete
+4. fill `missing_entries` or `extra_entries` only if the page and extraction disagree
+5. use `contents_risk_review_human.csv` for rescued manual rows and any unresolved leftovers
+
+Primary tracked files:
+
+- `contents_page_review_human.csv`
+- `contents_risk_review_human.csv`
 
 ### Phase 2. Capture Propaedia page photos
 

@@ -1,9 +1,9 @@
 {
   "baselineUniqueCount": 666,
-  "candidateUniqueCount": 688,
-  "matchedCount": 620,
-  "newIn2010Count": 68,
-  "missingFrom2010Count": 46,
+  "candidateUniqueCount": 695,
+  "matchedCount": 624,
+  "newIn2010Count": 71,
+  "missingFrom2010Count": 42,
   "newIn2010": [
     {
       "title": "Ansel ADAMS",
@@ -185,6 +185,19 @@
       ],
       "pageCountEstimates": [
         24
+      ]
+    },
+    {
+      "title": "EDUCATION",
+      "lookupKey": "education",
+      "volumes": [
+        6
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        null
       ]
     },
     {
@@ -708,6 +721,19 @@
       ]
     },
     {
+      "title": "The Great DEPRESSION",
+      "lookupKey": "the great depression",
+      "volumes": [
+        5
+      ],
+      "startPages": [
+        "244"
+      ],
+      "pageCountEstimates": [
+        2
+      ]
+    },
+    {
       "title": "The History of ART CRITICISM",
       "lookupKey": "the history of art criticism",
       "volumes": [
@@ -783,6 +809,19 @@
       ],
       "pageCountEstimates": [
         6
+      ]
+    },
+    {
+      "title": "The INDIAN OCEAN",
+      "lookupKey": "the indian ocean",
+      "volumes": [
+        9
+      ],
+      "startPages": [
+        "176"
+      ],
+      "pageCountEstimates": [
+        15
       ]
     },
     {
@@ -1867,7 +1906,7 @@
       "matchedBaselineLookupKey": "beverage production"
     },
     {
-      "title": "BIBLICAL LITERATUrE and Its Critical Interpretation",
+      "title": "BIBLICAL LITERATURE and Its Critical Interpretation",
       "lookupKey": "biblical literature and its critical interpretation",
       "volumes": [
         2
@@ -2371,10 +2410,25 @@
         "594"
       ],
       "pageCountEstimates": [
-        18
+        10
       ],
       "matchedBaselineTitle": "Celtic Literature",
       "matchedBaselineLookupKey": "celtic literature"
+    },
+    {
+      "title": "CENSORSHIP",
+      "lookupKey": "censorship",
+      "volumes": [
+        3
+      ],
+      "startPages": [
+        "604"
+      ],
+      "pageCountEstimates": [
+        8
+      ],
+      "matchedBaselineTitle": "Censorship",
+      "matchedBaselineLookupKey": "censorship"
     },
     {
       "title": "CENTRAL AFRICA",
@@ -2518,10 +2572,10 @@
         9
       ],
       "startPages": [
-        "385"
+        "344"
       ],
       "pageCountEstimates": [
-        150
+        41
       ],
       "matchedBaselineTitle": "Industries, Chemical Process",
       "matchedBaselineLookupKey": "industries, chemical process"
@@ -3181,7 +3235,7 @@
         "227"
       ],
       "pageCountEstimates": [
-        42
+        17
       ],
       "matchedBaselineTitle": "Denmark",
       "matchedBaselineLookupKey": "denmark"
@@ -3202,6 +3256,21 @@
       "matchedBaselineLookupKey": "cartesianism, descartes and"
     },
     {
+      "title": "DIAGNOSIS AND THERAPEUTICS",
+      "lookupKey": "diagnosis and therapeutics",
+      "volumes": [
+        5
+      ],
+      "startPages": [
+        "246"
+      ],
+      "pageCountEstimates": [
+        23
+      ],
+      "matchedBaselineTitle": "Diagnosis and Therapeutics",
+      "matchedBaselineLookupKey": "diagnosis and therapeutics"
+    },
+    {
       "title": "DICKENS",
       "lookupKey": "dickens",
       "volumes": [
@@ -3211,10 +3280,25 @@
         "269"
       ],
       "pageCountEstimates": [
-        46
+        6
       ],
       "matchedBaselineTitle": "Dickens",
       "matchedBaselineLookupKey": "dickens"
+    },
+    {
+      "title": "DIGESTION AND DIGESTIVE SYSTEMS",
+      "lookupKey": "digestion and digestive systems",
+      "volumes": [
+        5
+      ],
+      "startPages": [
+        "275"
+      ],
+      "pageCountEstimates": [
+        40
+      ],
+      "matchedBaselineTitle": "Digestion and Digestive Systems",
+      "matchedBaselineLookupKey": "digestion and digestive systems"
     },
     {
       "title": "DINOSAURS",
@@ -3868,10 +3952,10 @@
         9
       ],
       "startPages": [
-        "344"
+        "385"
       ],
       "pageCountEstimates": [
-        41
+        150
       ],
       "matchedBaselineTitle": "Industries, Extraction and Processing",
       "matchedBaselineLookupKey": "industries, extraction and processing"
@@ -4978,13 +5062,28 @@
         9
       ],
       "startPages": [
-        "176"
+        "1"
       ],
       "pageCountEstimates": [
-        37
+        175
       ],
       "matchedBaselineTitle": "India",
       "matchedBaselineLookupKey": "india"
+    },
+    {
+      "title": "INDIAN PHILOSOPHY",
+      "lookupKey": "indian philosophy",
+      "volumes": [
+        9
+      ],
+      "startPages": [
+        "191"
+      ],
+      "pageCountEstimates": [
+        22
+      ],
+      "matchedBaselineTitle": "Indian Philosophy",
+      "matchedBaselineLookupKey": "indian philosophy"
     },
     {
       "title": "INDONESIA",
@@ -4993,10 +5092,10 @@
         9
       ],
       "startPages": [
-        "246"
+        "213"
       ],
       "pageCountEstimates": [
-        20
+        33
       ],
       "matchedBaselineTitle": "Indonesia",
       "matchedBaselineLookupKey": "indonesia"
@@ -5008,10 +5107,10 @@
         9
       ],
       "startPages": [
-        "213"
+        "246"
       ],
       "pageCountEstimates": [
-        33
+        20
       ],
       "matchedBaselineTitle": "Industrial Ceramics",
       "matchedBaselineLookupKey": "industrial ceramics"
@@ -8902,7 +9001,7 @@
       "matchedBaselineLookupKey": "biological sciences, the"
     },
     {
-      "title": "The BIosPHErE and Concepts of Ecology",
+      "title": "The BIOSPHERE and Concepts of Ecology",
       "lookupKey": "the biosphere and concepts of ecology",
       "volumes": [
         2
@@ -10246,13 +10345,6 @@
       ]
     },
     {
-      "title": "Censorship",
-      "lookupKey": "censorship",
-      "sectionCodes": [
-        "543"
-      ]
-    },
-    {
       "title": "Childhood Disease",
       "lookupKey": "childhood disease",
       "sectionCodes": [
@@ -10297,27 +10389,10 @@
       ]
     },
     {
-      "title": "Diagnosis and Therapeutics",
-      "lookupKey": "diagnosis and therapeutics",
-      "sectionCodes": [
-        "423"
-      ]
-    },
-    {
       "title": "Dictionaries",
       "lookupKey": "dictionaries",
       "sectionCodes": [
         "735"
-      ]
-    },
-    {
-      "title": "Digestion and Digestive Systems",
-      "lookupKey": "digestion and digestive systems",
-      "sectionCodes": [
-        "332",
-        "335",
-        "421",
-        "423"
       ]
     },
     {
@@ -10394,14 +10469,6 @@
       "lookupKey": "ideology and reform movements, modern",
       "sectionCodes": [
         "541"
-      ]
-    },
-    {
-      "title": "Indian Philosophy",
-      "lookupKey": "indian philosophy",
-      "sectionCodes": [
-        "10/51",
-        "823"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "source": "2010 Macropaedia contents-page OCR + manual review",
   "volumeCount": 17,
-  "articleCount": 688,
+  "articleCount": 695,
   "volumes": [
     {
       "volumeNumber": 1,
@@ -242,7 +242,7 @@
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-02-contents.jpg",
       "chosenOrientation": "left",
       "articleCount": 47,
-      "leftoverCount": 1,
+      "leftoverCount": 0,
       "articles": [
         {
           "title": "The ARCTIC",
@@ -546,7 +546,7 @@
           "pageCountEstimate": 5
         },
         {
-          "title": "BIBLICAL LITERATUrE and Its Critical Interpretation",
+          "title": "BIBLICAL LITERATURE and Its Critical Interpretation",
           "lookupKey": "biblical literature and its critical interpretation",
           "startPage": "903",
           "startPageIndex": 903,
@@ -567,23 +567,21 @@
           "pageCountEstimate": 58
         },
         {
-          "title": "The BIosPHErE and Concepts of Ecology",
+          "title": "The BIOSPHERE and Concepts of Ecology",
           "lookupKey": "the biosphere and concepts of ecology",
           "startPage": "1127",
           "startPageIndex": 1127,
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "570"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 3,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-03-contents.jpg",
       "chosenOrientation": "right",
-      "articleCount": 48,
-      "leftoverCount": 1,
+      "articleCount": 49,
+      "leftoverCount": 0,
       "articles": [
         {
           "title": "BIRDS",
@@ -835,7 +833,14 @@
           "lookupKey": "celtic literature",
           "startPage": "594",
           "startPageIndex": 594,
-          "pageCountEstimate": 18
+          "pageCountEstimate": 10
+        },
+        {
+          "title": "CENSORSHIP",
+          "lookupKey": "censorship",
+          "startPage": "604",
+          "startPageIndex": 604,
+          "pageCountEstimate": 8
         },
         {
           "title": "CENTRAL AFRICA",
@@ -922,9 +927,7 @@
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "604CENSORSHIP"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 4,
@@ -1269,8 +1272,8 @@
       "volumeNumber": 5,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-05-contents.jpg",
       "chosenOrientation": "left",
-      "articleCount": 31,
-      "leftoverCount": 3,
+      "articleCount": 34,
+      "leftoverCount": 0,
       "articles": [
         {
           "title": "DECORATIVE ARTS AND FURNISHINGS",
@@ -1298,14 +1301,35 @@
           "lookupKey": "denmark",
           "startPage": "227",
           "startPageIndex": 227,
-          "pageCountEstimate": 42
+          "pageCountEstimate": 17
+        },
+        {
+          "title": "The Great DEPRESSION",
+          "lookupKey": "the great depression",
+          "startPage": "244",
+          "startPageIndex": 244,
+          "pageCountEstimate": 2
+        },
+        {
+          "title": "DIAGNOSIS AND THERAPEUTICS",
+          "lookupKey": "diagnosis and therapeutics",
+          "startPage": "246",
+          "startPageIndex": 246,
+          "pageCountEstimate": 23
         },
         {
           "title": "DICKENS",
           "lookupKey": "dickens",
           "startPage": "269",
           "startPageIndex": 269,
-          "pageCountEstimate": 46
+          "pageCountEstimate": 6
+        },
+        {
+          "title": "DIGESTION AND DIGESTIVE SYSTEMS",
+          "lookupKey": "digestion and digestive systems",
+          "startPage": "275",
+          "startPageIndex": 275,
+          "pageCountEstimate": 40
         },
         {
           "title": "DINOSAURS",
@@ -1490,19 +1514,22 @@
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "The Great DEPRESSION",
-        "DIAGNOSIS AND THERAPEUTICS",
-        "DIGESTION AND DIGESTIVE SYSTEMS"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 6,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-06-contents.jpg",
       "chosenOrientation": "up",
-      "articleCount": 26,
-      "leftoverCount": 1,
+      "articleCount": 27,
+      "leftoverCount": 0,
       "articles": [
+        {
+          "title": "EDUCATION",
+          "lookupKey": "education",
+          "startPage": "1",
+          "startPageIndex": 1,
+          "pageCountEstimate": null
+        },
         {
           "title": "History of EDUCATION",
           "lookupKey": "history of education",
@@ -1686,9 +1713,7 @@
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "EDUCATION"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 7,
@@ -2302,26 +2327,40 @@
       "volumeNumber": 9,
       "sourceImage": "Macropaedia 2010/contents_pages/macropaedia-2010-volume-09-contents.jpg",
       "chosenOrientation": "left",
-      "articleCount": 26,
-      "leftoverCount": 2,
+      "articleCount": 28,
+      "leftoverCount": 0,
       "articles": [
         {
           "title": "INDIA",
           "lookupKey": "india",
-          "startPage": "176",
-          "startPageIndex": 176,
-          "pageCountEstimate": 37
+          "startPage": "1",
+          "startPageIndex": 1,
+          "pageCountEstimate": 175
         },
         {
-          "title": "INDUSTRIAL CERAMICS",
-          "lookupKey": "industrial ceramics",
+          "title": "The INDIAN OCEAN",
+          "lookupKey": "the indian ocean",
+          "startPage": "176",
+          "startPageIndex": 176,
+          "pageCountEstimate": 15
+        },
+        {
+          "title": "INDIAN PHILOSOPHY",
+          "lookupKey": "indian philosophy",
+          "startPage": "191",
+          "startPageIndex": 191,
+          "pageCountEstimate": 22
+        },
+        {
+          "title": "INDONESIA",
+          "lookupKey": "indonesia",
           "startPage": "213",
           "startPageIndex": 213,
           "pageCountEstimate": 33
         },
         {
-          "title": "INDONESIA",
-          "lookupKey": "indonesia",
+          "title": "INDUSTRIAL CERAMICS",
+          "lookupKey": "industrial ceramics",
           "startPage": "246",
           "startPageIndex": 246,
           "pageCountEstimate": 20
@@ -2348,15 +2387,15 @@
           "pageCountEstimate": 36
         },
         {
-          "title": "Extraction and Processing INDUSTRIES",
-          "lookupKey": "extraction and processing industries",
+          "title": "Chemical Process INDUSTRIES",
+          "lookupKey": "chemical process industries",
           "startPage": "344",
           "startPageIndex": 344,
           "pageCountEstimate": 41
         },
         {
-          "title": "Chemical Process INDUSTRIES",
-          "lookupKey": "chemical process industries",
+          "title": "Extraction and Processing INDUSTRIES",
+          "lookupKey": "extraction and processing industries",
           "startPage": "385",
           "startPageIndex": 385,
           "pageCountEstimate": 150
@@ -2488,10 +2527,7 @@
           "pageCountEstimate": null
         }
       ],
-      "leftovers": [
-        "The INDIAN OCEAN",
-        "INDIAN PHILOSOPHY"
-      ]
+      "leftovers": []
     },
     {
       "volumeNumber": 10,

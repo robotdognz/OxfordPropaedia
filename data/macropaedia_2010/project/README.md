@@ -20,6 +20,8 @@ Generated files:
 
 - `article_identity_worklist.csv`
 - `propaedia_page_capture_index.csv`
+- `contents_page_review_human.csv`
+- `contents_risk_review_human.csv`
 - `propaedia_suggested_reading_page_review.csv`
 - `propaedia_suggested_reading_risk_review.csv`
 - `propaedia_suggested_reading_page_review_human.csv`
@@ -38,6 +40,7 @@ Useful commands:
 python3 pipeline/macropaedia_2010/export_project_worklists.py
 python3 pipeline/macropaedia_2010/apply_project_worklists.py
 python3 pipeline/macropaedia_2010/export_propaedia_review_worklists.py
+python3 pipeline/macropaedia_2010/export_contents_review_worklists.py
 ```
 
 Suggested review flow for Propaedia pages:
@@ -46,3 +49,10 @@ Suggested review flow for Propaedia pages:
 2. Then work down `propaedia_suggested_reading_page_review_human.csv` and mark each page `verified`.
 3. Only if a page disagrees with the extraction do you need to fill `missing_titles`, `extra_titles`,
    or `notes`.
+
+Suggested review flow for volume contents pages:
+
+1. Open `contents_risk_review_human.csv` to inspect rescued rows and unresolved leftovers.
+2. Then work down `contents_page_review_human.csv` and mark each volume page `verified`.
+3. Only if a volume page disagrees with the extraction do you need to fill `missing_entries`,
+   `extra_entries`, or `notes`.

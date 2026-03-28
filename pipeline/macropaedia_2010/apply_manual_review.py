@@ -88,6 +88,13 @@ def remove_leftovers(volume: dict, values: list[str]) -> None:
     volume["leftovers"] = remaining
 
 
+def remove_articles_by_page(volume: dict, page_labels: list[str]) -> None:
+    remove_set = {label.strip().upper() for label in page_labels if label.strip()}
+    if not remove_set:
+        return
+    volume["articles"] = [article for article in volume["articles"] if article["startPage"].upper() not in remove_set]
+
+
 def recompute_volume(volume: dict) -> None:
     ordered = sorted(
         volume["articles"],
@@ -150,7 +157,31 @@ def apply_generic_page_title_review(volume: dict, review: dict[str, str]) -> Non
             continue
         page = key.removeprefix("page_").removesuffix("_title").upper()
         upsert_article(volume, page, title)
-        remove_leftovers(volume, [title, page])
+        remove_leftovers(volume, [title, page, f"{page}{title}".replace(" ", "")])
+
+
+def apply_explicit_leftover_removals(volume: dict, review: dict[str, str]) -> None:
+    values_to_remove: list[str] = []
+    for key, value in review.items():
+        if not key.startswith("remove_"):
+            continue
+        if value.strip().lower() not in {"yes", "true", "1"}:
+            continue
+        values_to_remove.append(key.removeprefix("remove_"))
+    if values_to_remove:
+        remove_leftovers(volume, values_to_remove)
+
+
+def apply_explicit_article_removals(volume: dict, review: dict[str, str]) -> None:
+    pages_to_remove: list[str] = []
+    for key, value in review.items():
+        if not key.startswith("remove_page_"):
+            continue
+        if value.strip().lower() not in {"yes", "true", "1"}:
+            continue
+        pages_to_remove.append(key.removeprefix("remove_page_"))
+    if pages_to_remove:
+        remove_articles_by_page(volume, pages_to_remove)
 
 
 def apply_volume_13_review(volume: dict, review: dict[str, str]) -> None:
@@ -197,6 +228,16 @@ def apply_optional_spelling_fixes(candidates: dict, review_sections: dict[str, d
     notes = review_sections.get("notes", {})
 
     rename_map = [
+        (
+            2,
+            "BIBLICAL LITERATUrE and Its Critical Interpretation",
+            optional.get("biblical_literature_title", ""),
+        ),
+        (
+            2,
+            "The BIosPHErE and Concepts of Ecology",
+            optional.get("biosphere_title", ""),
+        ),
         (3, "BUSINESSLAW", optional.get("business_law_title", "")),
         (13, "Jackson PoLLOCK", optional.get("jackson_pollock_title", "")),
         (11, "Los ANGELES", optional.get("los_angeles_title", "")),
@@ -223,18 +264,34 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
 
     volume_1 = volume_by_number(reviewed, 1)
     volume_2 = volume_by_number(reviewed, 2)
+    volume_3 = volume_by_number(reviewed, 3)
+    volume_5 = volume_by_number(reviewed, 5)
+    volume_6 = volume_by_number(reviewed, 6)
     volume_7 = volume_by_number(reviewed, 7)
+    volume_9 = volume_by_number(reviewed, 9)
     volume_11 = volume_by_number(reviewed, 11)
     volume_13 = volume_by_number(reviewed, 13)
 
     apply_volume_1_review(volume_1, review_sections.get("volume_1", {}))
     apply_generic_page_title_review(volume_2, review_sections.get("volume_2", {}))
+    apply_generic_page_title_review(volume_3, review_sections.get("volume_3", {}))
+    apply_generic_page_title_review(volume_5, review_sections.get("volume_5", {}))
+    apply_generic_page_title_review(volume_6, review_sections.get("volume_6", {}))
     apply_generic_page_title_review(volume_7, review_sections.get("volume_7", {}))
+    apply_generic_page_title_review(volume_9, review_sections.get("volume_9", {}))
     apply_volume_11_review(volume_11, review_sections.get("volume_11", {}))
     apply_volume_13_review(volume_13, review_sections.get("volume_13_confirmed_pairs", {}))
     apply_optional_spelling_fixes(reviewed, review_sections)
 
     for volume in reviewed["volumes"]:
+        apply_explicit_article_removals(
+            volume,
+            review_sections.get(f"volume_{volume['volumeNumber']}_remove_articles", {}),
+        )
+        apply_explicit_leftover_removals(
+            volume,
+            review_sections.get(f"volume_{volume['volumeNumber']}_remove_leftovers", {}),
+        )
         recompute_volume(volume)
 
     reviewed["articleCount"] = sum(volume["articleCount"] for volume in reviewed["volumes"])

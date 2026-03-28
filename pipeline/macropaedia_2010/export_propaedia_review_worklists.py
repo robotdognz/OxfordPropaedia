@@ -35,6 +35,33 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) 
         writer.writerows(rows)
 
 
+def read_existing_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def index_existing_rows(rows: list[dict[str, str]], key_fields: list[str]) -> dict[tuple[str, ...], dict[str, str]]:
+    return {tuple(row.get(field, "") for field in key_fields): row for row in rows}
+
+
+def apply_existing_values(
+    rows: list[dict[str, object]],
+    existing_rows: dict[tuple[str, ...], dict[str, str]],
+    key_fields: list[str],
+    fields_to_preserve: list[str],
+) -> None:
+    for row in rows:
+        key = tuple(str(row.get(field, "")) for field in key_fields)
+        existing = existing_rows.get(key)
+        if existing is None:
+            continue
+        for field in fields_to_preserve:
+            if field in existing and existing[field]:
+                row[field] = existing[field]
+
+
 def discover_payloads(data_dir: Path) -> list[dict[str, object]]:
     payloads: list[dict[str, object]] = []
     for path in sorted(data_dir.glob("propaedia_part_*_suggested_reading.json")):
@@ -155,6 +182,39 @@ def export_review_worklists(
     risk_rows = build_risk_rows(payloads)
     page_rows_human = build_page_rows_human(page_rows)
     risk_rows_human = build_risk_rows_human(risk_rows)
+
+    apply_existing_values(
+        page_rows,
+        index_existing_rows(
+            read_existing_rows(page_review_path),
+            ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path"],
+        ),
+        ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path"],
+        ["review_status", "visual_title_count", "missing_titles", "extra_titles", "notes"],
+    )
+    apply_existing_values(
+        risk_rows,
+        index_existing_rows(
+            read_existing_rows(risk_review_path),
+            ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path", "sort_order"],
+        ),
+        ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path", "sort_order"],
+        ["review_status", "corrected_observed_title", "corrected_matched_title", "notes"],
+    )
+    page_rows_human = build_page_rows_human(page_rows)
+    risk_rows_human = build_risk_rows_human(risk_rows)
+    apply_existing_values(
+        page_rows_human,
+        index_existing_rows(read_existing_rows(page_review_human_path), ["page", "image"]),
+        ["page", "image"],
+        ["status", "missing_titles", "extra_titles", "notes"],
+    )
+    apply_existing_values(
+        risk_rows_human,
+        index_existing_rows(read_existing_rows(risk_review_human_path), ["page", "image", "observed_title", "matched_title"]),
+        ["page", "image", "observed_title", "matched_title"],
+        ["status", "corrected_observed_title", "corrected_matched_title", "notes"],
+    )
 
     write_csv(
         page_review_path,
