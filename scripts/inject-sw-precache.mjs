@@ -8,7 +8,7 @@ import path from 'path';
 
 const DIST = path.resolve('dist');
 const SW_PATH = path.join(DIST, 'sw.js');
-const BASE = '/OxfordPropaedia/';
+const BASE = '/NeoPropaedia/';
 
 // Find all division pages
 const divDir = path.join(DIST, 'division');

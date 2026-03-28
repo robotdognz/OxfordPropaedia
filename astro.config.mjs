@@ -5,7 +5,7 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://robotdognz.github.io',
-  base: '/OxfordPropaedia',
+  base: '/NeoPropaedia',
   integrations: [
     preact(),
     tailwind(),

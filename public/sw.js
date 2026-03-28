@@ -1,5 +1,5 @@
-const CACHE_NAME = 'propaedia-v3';
-const BASE = '/OxfordPropaedia/';
+const CACHE_NAME = 'propaedia-v4';
+const BASE = '/NeoPropaedia/';
 
 // Pre-cached on install: Part and Division pages for core offline navigation
 const PRECACHE_URLS = [
