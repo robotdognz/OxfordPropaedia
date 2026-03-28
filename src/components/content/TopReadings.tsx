@@ -107,9 +107,9 @@ function resolvePreferredReadingType(
   return availableTypes[0] ?? 'vsi';
 }
 
-function emptyStateMessage(type: ReadingType, hideChecked: boolean): string {
-  if (hideChecked) {
-    return `No ${READING_TYPE_UI_META[type].label} recommendations remain visible with checked items hidden.`;
+function emptyStateMessage(type: ReadingType, hideChecked: boolean, matchedCount: number): string {
+  if (hideChecked && matchedCount > 0) {
+    return `All ${READING_TYPE_UI_META[type].label} recommendations in this list are hidden because they're marked done. Turn off Hide checked to review them again.`;
   }
   return `No ${READING_TYPE_UI_META[type].label} recommendations are available here right now.`;
 }
@@ -243,7 +243,7 @@ export default function TopReadings({
 
         <div class="mt-4">
           {visibleItems.length > 0 ? (
-            <HorizontalCardScroll singleCardOnMobile>
+            <HorizontalCardScroll key={activeSection.type} singleCardOnMobile>
               {visibleItems.map((item) => {
                 const checkKey = activeSection.getCheckKey(item);
                 const isChecked = Boolean(checklistState[checkKey]);
@@ -309,7 +309,7 @@ export default function TopReadings({
             </HorizontalCardScroll>
           ) : (
             <div class="rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-amber-900/80">
-              {emptyStateMessage(activeType, hideChecked)}
+              {emptyStateMessage(activeType, hideChecked, activeSection.items.length)}
             </div>
           )}
         </div>

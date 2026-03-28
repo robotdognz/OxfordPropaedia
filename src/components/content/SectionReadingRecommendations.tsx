@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import Accordion from '../ui/Accordion';
 import VsiCard from './VsiCard';
 import WikipediaCard from './WikipediaCard';
 import IotCard from './IotCard';
@@ -60,10 +61,11 @@ type KnowledgeLevel = 1 | 2 | 3;
 
 interface ActiveSectionRecommendationPanel {
   title: string;
-  totalCount: number;
+  matchedCount: number;
   visibleCount: number;
   toolbarLabel?: string;
   selectionNotice?: string | null;
+  emptyMessage: string;
   body: h.JSX.Element;
 }
 
@@ -105,6 +107,55 @@ function wikipediaLevelLabel(level: KnowledgeLevel): string {
   if (level === 1) return 'Level 1 (Top 10)';
   if (level === 2) return 'Level 2 (Top 100)';
   return 'Level 3 (~1,000)';
+}
+
+function filteredEmptyMessage(
+  typeLabel: string,
+  matchedCount: number,
+  hideChecked: boolean,
+  selection: OutlineSelectionDetail | null,
+  options?: { sectionLevelOnly?: boolean },
+): string {
+  if (hideChecked && matchedCount > 0) {
+    if (options?.sectionLevelOnly) {
+      return `All ${typeLabel} recommendations in this Section are hidden because they're marked done. Turn off Hide checked to review them again.`;
+    }
+    if (selection) {
+      return `All ${typeLabel} recommendations for ${selection.outlinePath} are hidden because they're marked done. Turn off Hide checked to review them again.`;
+    }
+    return `All ${typeLabel} recommendations in this list are hidden because they're marked done. Turn off Hide checked to review them again.`;
+  }
+
+  if (options?.sectionLevelOnly && selection) {
+    return 'Macropaedia is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.';
+  }
+
+  if (selection) {
+    return `No ${typeLabel} recommendations match ${selection.outlinePath}.`;
+  }
+
+  return `No ${typeLabel} recommendations are available here right now.`;
+}
+
+function selectionSummaryLine(
+  matchedCount: number,
+  visibleCount: number,
+  outlinePath: string,
+): string {
+  if (matchedCount === 0) {
+    return `No matches for ${outlinePath}`;
+  }
+  if (visibleCount < matchedCount) {
+    return `Showing ${visibleCount} of ${matchedCount} for ${outlinePath}`;
+  }
+  return `Showing ${matchedCount} for ${outlinePath}`;
+}
+
+function macropaediaCardRationale(selection: OutlineSelectionDetail | null): string {
+  if (selection) {
+    return 'This article is referenced directly from this Section. Macropaedia is mapped at section level here, so selecting a narrower outline topic does not narrow its scope.';
+  }
+  return 'This article is referenced directly from this Section, so it serves as a broader companion reading for the subject as a whole.';
 }
 
 export default function SectionReadingRecommendations({
@@ -202,10 +253,16 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
-        totalCount: vsiMappings.length,
+        matchedCount: visibleMappings.length,
         visibleCount: displayMappings.length,
+        emptyMessage: filteredEmptyMessage(
+          READING_TYPE_UI_META.vsi.label,
+          visibleMappings.length,
+          hideChecked,
+          selection,
+        ),
         body: displayMappings.length > 0 ? (
-          <HorizontalCardScroll singleCardOnMobile>
+          <HorizontalCardScroll key={activeType} singleCardOnMobile>
             {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
               const relevanceScore = mapping.filterScore ?? mapping.relevanceScore ?? 0;
@@ -233,9 +290,12 @@ export default function SectionReadingRecommendations({
             })}
           </HorizontalCardScroll>
         ) : (
-          <div class={emptyStateClass()}>
-            No Oxford VSI recommendations matched this outline item.
-          </div>
+          <div class={emptyStateClass()}>{filteredEmptyMessage(
+            READING_TYPE_UI_META.vsi.label,
+            visibleMappings.length,
+            hideChecked,
+            selection,
+          )}</div>
         ),
       };
     }
@@ -255,10 +315,16 @@ export default function SectionReadingRecommendations({
       return {
         title: 'Recommendations',
         toolbarLabel: `Showing ${wikipediaLevelLabel(wikiLevel)}`,
-        totalCount: levelFiltered.length,
+        matchedCount: visibleArticles.length,
         visibleCount: displayArticles.length,
+        emptyMessage: filteredEmptyMessage(
+          READING_TYPE_UI_META.wikipedia.label,
+          visibleArticles.length,
+          hideChecked,
+          selection,
+        ),
         body: displayArticles.length > 0 ? (
-          <HorizontalCardScroll singleCardOnMobile>
+          <HorizontalCardScroll key={activeType} singleCardOnMobile>
             {displayArticles.map((article) => {
               const checklistKey = wikipediaChecklistKey(article.title);
               const precision = mappingPrecisionBadge(
@@ -285,9 +351,12 @@ export default function SectionReadingRecommendations({
             })}
           </HorizontalCardScroll>
         ) : (
-          <div class={emptyStateClass()}>
-            No Wikipedia articles matched this outline item.
-          </div>
+          <div class={emptyStateClass()}>{filteredEmptyMessage(
+            READING_TYPE_UI_META.wikipedia.label,
+            visibleArticles.length,
+            hideChecked,
+            selection,
+          )}</div>
         ),
       };
     }
@@ -305,10 +374,16 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
-        totalCount: iotEpisodes.length,
+        matchedCount: visibleEpisodes.length,
         visibleCount: displayEpisodes.length,
+        emptyMessage: filteredEmptyMessage(
+          READING_TYPE_UI_META.iot.label,
+          visibleEpisodes.length,
+          hideChecked,
+          selection,
+        ),
         body: displayEpisodes.length > 0 ? (
-          <HorizontalCardScroll singleCardOnMobile>
+          <HorizontalCardScroll key={activeType} singleCardOnMobile>
             {displayEpisodes.map((episode) => {
               const checklistKey = iotChecklistKey(episode.pid);
               const precision = mappingPrecisionBadge(
@@ -338,9 +413,12 @@ export default function SectionReadingRecommendations({
             })}
           </HorizontalCardScroll>
         ) : (
-          <div class={emptyStateClass()}>
-            No BBC In Our Time episodes matched this outline item.
-          </div>
+          <div class={emptyStateClass()}>{filteredEmptyMessage(
+            READING_TYPE_UI_META.iot.label,
+            visibleEpisodes.length,
+            hideChecked,
+            selection,
+          )}</div>
         ),
       };
     }
@@ -351,45 +429,76 @@ export default function SectionReadingRecommendations({
 
     return {
       title: 'Recommendations',
-      totalCount: macropaediaReferences.length,
+      matchedCount: macropaediaReferences.length,
       visibleCount: visibleReferences.length,
       selectionNotice: selection
-        ? 'Macropaedia is mapped at section level, so topic filtering does not narrow this list.'
+        ? 'Macropaedia is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.'
         : null,
+      emptyMessage: filteredEmptyMessage(
+        READING_TYPE_UI_META.macropaedia.label,
+        macropaediaReferences.length,
+        hideChecked,
+        selection,
+        { sectionLevelOnly: true },
+      ),
       body: visibleReferences.length > 0 ? (
-        <ul class="space-y-2">
+        <HorizontalCardScroll key={activeType} singleCardOnMobile>
           {visibleReferences.map((reference) => {
             const checklistKey = macropaediaChecklistKey(reference);
             const isChecked = Boolean(checklistState[checklistKey]);
 
             return (
-              <li key={reference} class="flex items-start justify-between gap-3 rounded-xl border border-amber-200 bg-white px-4 py-3 text-amber-950/80">
-                <a
-                  href={`${baseUrl}/macropaedia/${slugify(reference)}`}
-                  class={`min-w-0 flex-1 text-sm italic leading-6 transition-colors hover:text-amber-950 ${isChecked ? 'text-amber-800/40 line-through' : ''}`}
-                >
-                  {reference}
-                </a>
-                <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-amber-900/70">
-                  <input
-                    type="checkbox"
-                    checked={isChecked}
-                    onChange={(event) => {
-                      writeChecklistState(checklistKey, (event.currentTarget as HTMLInputElement).checked);
-                    }}
-                    class="h-4 w-4 rounded border-amber-300 text-amber-700 focus:ring-amber-400"
-                    aria-label={`Mark ${reference} as completed`}
-                  />
-                  Done
-                </label>
-              </li>
+              <div
+                key={reference}
+                class={`rounded-xl border border-amber-200 bg-white p-4 transition-shadow duration-200 hover:shadow-md ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : ''}`}
+              >
+                <div class="mb-2 flex items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
+                      <a
+                        href={`${baseUrl}/macropaedia/${slugify(reference)}`}
+                        class="transition-colors hover:text-indigo-700"
+                      >
+                        {reference}
+                      </a>
+                    </h4>
+                  </div>
+                  <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
+                    <input
+                      type="checkbox"
+                      checked={isChecked}
+                      onChange={(event) => {
+                        writeChecklistState(checklistKey, (event.currentTarget as HTMLInputElement).checked);
+                      }}
+                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      aria-label={`Mark ${reference} as completed`}
+                    />
+                    Done
+                  </label>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2 text-xs font-medium">
+                  <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
+                    Section reference
+                  </span>
+                  <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
+                    Section-level mapping
+                  </span>
+                </div>
+                <Accordion title="Why this article?" defaultOpen={false}>
+                  <p class="text-gray-600">{macropaediaCardRationale(selection)}</p>
+                </Accordion>
+              </div>
             );
           })}
-        </ul>
+        </HorizontalCardScroll>
       ) : (
-        <div class={emptyStateClass()}>
-          No Macropaedia articles remain visible in this list.
-        </div>
+        <div class={emptyStateClass()}>{filteredEmptyMessage(
+          READING_TYPE_UI_META.macropaedia.label,
+          macropaediaReferences.length,
+          hideChecked,
+          selection,
+          { sectionLevelOnly: true },
+        )}</div>
       ),
     };
   }, [
@@ -457,7 +566,11 @@ export default function SectionReadingRecommendations({
           <div class="mt-4 flex flex-wrap items-start justify-between gap-3 rounded-xl border border-amber-200 bg-white/85 px-3 py-2.5">
             <div class="min-w-0">
               <p class="text-sm font-medium text-amber-950">
-                Showing {headerMeta.visibleCount} of {headerMeta.totalCount} for {selection.outlinePath}
+                {selectionSummaryLine(
+                  headerMeta.matchedCount,
+                  headerMeta.visibleCount,
+                  selection.outlinePath,
+                )}
               </p>
               <p class="mt-1 text-xs leading-5 text-amber-900/80">
                 {headerMeta.selectionNotice ?? selection.text}
