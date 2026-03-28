@@ -27,11 +27,11 @@ import {
 } from '../ui/controlTheme';
 
 const VIEWBOX_SIZE = 680;
-const VIEWBOX_INSET = 20;
+const VIEWBOX_INSET = 32;
 const CENTER = VIEWBOX_SIZE / 2;
 const OUTER_RADIUS = 188;
 const INNER_RADIUS = 106;
-const INTERACTIVE_RADIUS = 346; // Touch/click boundary — covers labels and surrounding area
+const INTERACTIVE_RADIUS = 332; // Touch/click boundary — covers labels and surrounding area
 const LABEL_BOX_WIDTH = 112;
 const LABEL_WRAP_LENGTH = 16;
 const LABEL_MAX_LINES = 2;
@@ -1350,7 +1350,7 @@ export default function CircleNavigator({
         <svg
           ref={svgRef}
           viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
-          class="mx-auto aspect-square w-full max-w-[48rem] cursor-default select-none sm:max-w-[52rem] lg:max-w-[56rem]"
+          class="mx-auto aspect-square w-full max-w-[50rem] cursor-default select-none sm:max-w-[56rem] lg:max-w-[60rem]"
           style={{ overflow: 'visible', touchAction: 'auto' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
