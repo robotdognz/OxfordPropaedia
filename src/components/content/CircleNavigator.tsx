@@ -31,13 +31,12 @@ const VIEWBOX_INSET = 20;
 const CENTER = VIEWBOX_SIZE / 2;
 const OUTER_RADIUS = 188;
 const INNER_RADIUS = 106;
-const LABEL_RADIUS = 282;
-const CONNECTOR_RADIUS = 220;
 const INTERACTIVE_RADIUS = 346; // Touch/click boundary — covers labels and surrounding area
-const LABEL_EDGE_PADDING = 14;
-const LABEL_CHAR_WIDTH = 7;
-const LABEL_MIN_LENGTH = 8;
-const LABEL_MAX_LENGTH = 17;
+const LABEL_BOX_WIDTH = 112;
+const LABEL_WRAP_LENGTH = 16;
+const LABEL_MAX_LINES = 2;
+const LABEL_LINE_HEIGHT = 16;
+const LABEL_CENTER_RADIUS = OUTER_RADIUS + 32 + LABEL_BOX_WIDTH / 2;
 const FULL_SEGMENT_COUNT = 10;
 const FULL_SEGMENT_ANGLE = 360 / FULL_SEGMENT_COUNT;
 const RING_SEGMENT_COUNT = 9;
@@ -257,15 +256,6 @@ function svgPoint(svg: SVGSVGElement, clientX: number, clientY: number) {
   };
 }
 
-function textAnchorForAngle(angle: number) {
-  const radians = ((angle - 90) * Math.PI) / 180;
-  const horizontal = Math.cos(radians);
-
-  if (horizontal > 0.3) return 'start';
-  if (horizontal < -0.3) return 'end';
-  return 'middle';
-}
-
 function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
 }
@@ -279,34 +269,27 @@ function getSegmentNumberFontSize(emphasis = 0): number {
   return lerp(25, 27, emphasis);
 }
 
+function getPartLabelFontSize(emphasis = 0): number {
+  return lerp(14.75, 16.4, emphasis);
+}
+
+function getPartLabelFontWeight(emphasis = 0): '600' | '700' {
+  return emphasis > 0.45 ? '700' : '600';
+}
+
 function getPartLabelLayout(angle: number, title: string) {
-  const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, angle);
-  const textAnchor = textAnchorForAngle(angle);
-  const minX = VIEWBOX_INSET + LABEL_EDGE_PADDING;
-  const maxX = VIEWBOX_SIZE - VIEWBOX_INSET - LABEL_EDGE_PADDING;
-  const baseX = labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
-  const labelX = clamp(baseX, minX, maxX);
-  const availableWidth = textAnchor === 'start'
-    ? maxX - labelX
-    : textAnchor === 'end'
-      ? labelX - minX
-      : Math.min(labelX - minX, maxX - labelX) * 2;
-  const maxLength = clamp(
-    Math.floor(Math.max(56, availableWidth) / LABEL_CHAR_WIDTH),
-    LABEL_MIN_LENGTH,
-    LABEL_MAX_LENGTH
-  );
+  const labelCenter = polar(CENTER, CENTER, LABEL_CENTER_RADIUS, angle);
 
   return {
-    labelPosition,
-    textAnchor,
-    labelX,
-    labelLines: wrapLabel(title, maxLength, 4),
+    textAnchor: 'middle' as const,
+    labelX: labelCenter.x,
+    labelY: labelCenter.y,
+    labelLines: wrapLabel(title, LABEL_WRAP_LENGTH, LABEL_MAX_LINES),
   };
 }
 
-function floatingLabelStartY(labelY: number, lineCount: number) {
-  return labelY - Math.max(0, lineCount - 1) * 7;
+function partLabelLineY(labelY: number, lineIndex: number, lineCount: number) {
+  return labelY + (lineIndex - (lineCount - 1) / 2) * LABEL_LINE_HEIGHT;
 }
 
 type DragState = {
@@ -1423,7 +1406,6 @@ export default function CircleNavigator({
                   : segmentAngle;
             const startAngle = centerAngle - effectiveSpan / 2;
             const endAngle = centerAngle + effectiveSpan / 2;
-            const { labelPosition, labelLines, textAnchor, labelX } = getPartLabelLayout(centerAngle, part.title);
             const isTop = topPart.partNumber === part.partNumber;
             const distFromTop = angularDistance(centerAngle, 0);
             const topWeight = Math.max(0, 1 - distFromTop / effectiveSpan);
@@ -1435,8 +1417,7 @@ export default function CircleNavigator({
               getSegmentNumberRadius(segmentInnerRadius, segmentOuterRadius, topWeight),
               centerAngle,
             );
-            const connectorStart = polar(CENTER, CENTER, segmentOuterRadius + 6, centerAngle);
-            const connectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, topWeight), centerAngle);
+            const { labelY, labelLines, textAnchor, labelX } = getPartLabelLayout(centerAngle, part.title);
             const baseSegmentOpacity = lerp(0.94, 1, topWeight);
 
             return (
@@ -1531,31 +1512,22 @@ export default function CircleNavigator({
                   pointer-events="none"
                   opacity={isMorphingToCenter ? Math.max(0, 1 - morphT * 1.5) : postSwapContentOpacity}
                 >
-                  <line
-                    x1={connectorStart.x}
-                    y1={connectorStart.y}
-                    x2={connectorEnd.x}
-                    y2={connectorEnd.y}
-                    stroke={topWeight > 0.5 ? part.colorHex : '#cbd5e1'}
-                    stroke-width={lerp(1.5, 2.5, topWeight)}
-                  />
-                  <circle cx={connectorEnd.x} cy={connectorEnd.y} r={3.5} fill={part.colorHex} />
                   <text
                     x={labelX}
-                    y={floatingLabelStartY(labelPosition.y, labelLines.length)}
                     fill={topWeight > 0.5 ? '#0f172a' : '#334155'}
-                    font-size={`${lerp(12, 13, topWeight)}`}
+                    font-size={`${getPartLabelFontSize(topWeight)}`}
                     font-family="Inter, sans-serif"
-                    font-weight="700"
-                    letter-spacing="0.12em"
+                    font-weight={getPartLabelFontWeight(topWeight)}
+                    letter-spacing="0"
                     text-anchor={textAnchor}
+                    dominant-baseline="middle"
                   >
                     {labelLines.map((line, lineIndex) => (
                       <tspan
                         x={labelX}
-                        dy={lineIndex === 0 ? 0 : 14}
-                        font-size={`${lerp(14, 15, topWeight)}`}
-                        font-weight={topWeight > 0.5 ? '700' : '600'}
+                        y={partLabelLineY(labelY, lineIndex, labelLines.length)}
+                        font-size={`${getPartLabelFontSize(topWeight)}`}
+                        font-weight={getPartLabelFontWeight(topWeight)}
                         letter-spacing="0"
                       >
                         {line}
@@ -1661,10 +1633,8 @@ export default function CircleNavigator({
               getSegmentNumberRadius(tInner, tOuter, tTopWeight),
               target.centerAngle,
             );
-            const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
-            const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
             const {
-              labelPosition: tLabelPos,
+              labelY: tLabelY,
               textAnchor: tTextAnchor,
               labelX: tLabelX,
               labelLines: tLabelLines,
@@ -1695,31 +1665,22 @@ export default function CircleNavigator({
                 >
                   {centerPart.partNumber}
                 </text>
-                <line
-                  x1={tConnStart.x}
-                  y1={tConnStart.y}
-                  x2={tConnEnd.x}
-                  y2={tConnEnd.y}
-                  stroke={tTopWeight > 0.5 ? centerPart.colorHex : '#cbd5e1'}
-                  stroke-width={lerp(1.5, 2.5, tTopWeight)}
-                />
-                <circle cx={tConnEnd.x} cy={tConnEnd.y} r={3.5} fill={centerPart.colorHex} />
                 <text
                   x={tLabelX}
-                  y={floatingLabelStartY(tLabelPos.y, tLabelLines.length)}
                   fill={tTopWeight > 0.5 ? '#0f172a' : '#334155'}
-                  font-size={`${lerp(12, 13, tTopWeight)}`}
+                  font-size={`${getPartLabelFontSize(tTopWeight)}`}
                   font-family="Inter, sans-serif"
-                  font-weight="700"
-                  letter-spacing="0.12em"
+                  font-weight={getPartLabelFontWeight(tTopWeight)}
+                  letter-spacing="0"
                   text-anchor={tTextAnchor}
+                  dominant-baseline="middle"
                 >
                   {tLabelLines.map((line, lineIndex) => (
                     <tspan
                       x={tLabelX}
-                      dy={lineIndex === 0 ? 0 : 14}
-                      font-size={`${lerp(14, 15, tTopWeight)}`}
-                      font-weight={tTopWeight > 0.5 ? '700' : '600'}
+                      y={partLabelLineY(tLabelY, lineIndex, tLabelLines.length)}
+                      font-size={`${getPartLabelFontSize(tTopWeight)}`}
+                      font-weight={getPartLabelFontWeight(tTopWeight)}
                       letter-spacing="0"
                     >
                       {line}
@@ -1762,15 +1723,12 @@ export default function CircleNavigator({
               getSegmentNumberRadius(rmInner, rmOuter, rmTopWeight),
               rmCenterAngle,
             );
-            const rmConnectorStart = polar(CENTER, CENTER, rmOuter + 6, rmCenterAngle);
-            const rmConnectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, rmTopWeight), rmCenterAngle);
             const {
-              labelPosition: rmLabelPos,
+              labelY: rmLabelY,
               textAnchor: rmTextAnchor,
               labelX: rmLabelX,
               labelLines: rmLabelLines,
             } = getPartLabelLayout(rmCenterAngle, centerPart.title);
-
             return (
               <g opacity={removeMorphT} pointer-events="none">
                 <path
@@ -1793,31 +1751,22 @@ export default function CircleNavigator({
                 >
                   {centerPart.partNumber}
                 </text>
-                <line
-                  x1={rmConnectorStart.x}
-                  y1={rmConnectorStart.y}
-                  x2={rmConnectorEnd.x}
-                  y2={rmConnectorEnd.y}
-                  stroke={rmTopWeight > 0.5 ? centerPart.colorHex : '#cbd5e1'}
-                  stroke-width={lerp(1.5, 2.5, rmTopWeight)}
-                />
-                <circle cx={rmConnectorEnd.x} cy={rmConnectorEnd.y} r={3.5} fill={centerPart.colorHex} />
                 <text
                   x={rmLabelX}
-                  y={floatingLabelStartY(rmLabelPos.y, rmLabelLines.length)}
                   fill={rmTopWeight > 0.5 ? '#0f172a' : '#334155'}
-                  font-size={`${lerp(12, 13, rmTopWeight)}`}
+                  font-size={`${getPartLabelFontSize(rmTopWeight)}`}
                   font-family="Inter, sans-serif"
-                  font-weight="700"
-                  letter-spacing="0.12em"
+                  font-weight={getPartLabelFontWeight(rmTopWeight)}
+                  letter-spacing="0"
                   text-anchor={rmTextAnchor}
+                  dominant-baseline="middle"
                 >
                   {rmLabelLines.map((line, lineIndex) => (
                     <tspan
                       x={rmLabelX}
-                      dy={lineIndex === 0 ? 0 : 14}
-                      font-size={`${lerp(14, 15, rmTopWeight)}`}
-                      font-weight={rmTopWeight > 0.5 ? '700' : '600'}
+                      y={partLabelLineY(rmLabelY, lineIndex, rmLabelLines.length)}
+                      font-size={`${getPartLabelFontSize(rmTopWeight)}`}
+                      font-weight={getPartLabelFontWeight(rmTopWeight)}
                       letter-spacing="0"
                     >
                       {line}
