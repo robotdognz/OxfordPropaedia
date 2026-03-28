@@ -19,6 +19,7 @@ WHITESPACE_RE = re.compile(r"\s+")
 PUNCTUATION_RE = re.compile(r"[^a-z0-9 ]+")
 HEADER_CONTEXT_RE = re.compile(r"(Division\s+[IVXLC]+\.\s+Section\s+\d+)")
 PAGE_RE = re.compile(r"^\s*(\d+)\b")
+TRAILING_PAGE_RE = re.compile(r"\b(\d+)\s*$")
 LEADING_ARTICLE_COLON_RE = re.compile(r"^(.*?),\s*(The|A|An)\s*:\s*(.*)$", re.IGNORECASE)
 
 
@@ -34,11 +35,7 @@ class Article:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--part-number", type=int, required=True)
-    parser.add_argument(
-        "--ocr-dir",
-        type=Path,
-        default=RAW_OUTPUT_DIR / "propaedia_part_1_ocr" / "ocr",
-    )
+    parser.add_argument("--ocr-dir", type=Path)
     parser.add_argument(
         "--capture-index",
         type=Path,
@@ -49,22 +46,20 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DATA_DIR / "2010_article_candidates_reviewed.json",
     )
-    parser.add_argument(
-        "--output-json",
-        type=Path,
-        default=DATA_DIR / "propaedia_part_1_suggested_reading.json",
-    )
-    parser.add_argument(
-        "--output-csv",
-        type=Path,
-        default=DATA_DIR / "propaedia_part_1_suggested_reading.csv",
-    )
-    parser.add_argument(
-        "--output-summary",
-        type=Path,
-        default=DATA_DIR / "propaedia_part_1_suggested_reading_summary.md",
-    )
-    return parser.parse_args()
+    parser.add_argument("--output-json", type=Path)
+    parser.add_argument("--output-csv", type=Path)
+    parser.add_argument("--output-summary", type=Path)
+    args = parser.parse_args()
+    suffix = f"propaedia_part_{args.part_number}"
+    if args.ocr_dir is None:
+        args.ocr_dir = RAW_OUTPUT_DIR / f"{suffix}_ocr" / "ocr"
+    if args.output_json is None:
+        args.output_json = DATA_DIR / f"{suffix}_suggested_reading.json"
+    if args.output_csv is None:
+        args.output_csv = DATA_DIR / f"{suffix}_suggested_reading.csv"
+    if args.output_summary is None:
+        args.output_summary = DATA_DIR / f"{suffix}_suggested_reading_summary.md"
+    return args
 
 
 def normalize_key(value: str) -> str:
@@ -145,8 +140,13 @@ def read_ocr_lines(path: Path) -> list[str]:
 def extract_page_reference(lines: list[str]) -> str:
     for line in lines[:5]:
         match = PAGE_RE.match(line)
-        if match:
+        if match and ("Part " in line or line.strip() == match.group(1)):
             return match.group(1)
+    for line in lines[:5]:
+        if "Section" in line or "Part " in line:
+            trailing = TRAILING_PAGE_RE.search(line)
+            if trailing:
+                return trailing.group(1)
     return ""
 
 
@@ -224,7 +224,6 @@ def reconcile_fragmented_titles(
         index
         for index, item in enumerate(recommendations)
         if item["matchStatus"] == "unmatched"
-        and len(str(item["observedTitle"]).split()) == 1
     ]
     used: set[int] = set()
     merged_items: dict[int, dict[str, object]] = {}
@@ -235,7 +234,15 @@ def reconcile_fragmented_titles(
         for right in unmatched_indices:
             if right <= left or right in used:
                 continue
-            combined_title = f"{recommendations[left]['observedTitle']} {recommendations[right]['observedTitle']}"
+            left_title = str(recommendations[left]["observedTitle"])
+            right_title = str(recommendations[right]["observedTitle"])
+            if not (
+                left_title.endswith(",")
+                or left_title.endswith(":")
+                or (len(left_title.split()) == 1 and len(right_title.split()) == 1)
+            ):
+                continue
+            combined_title = f"{left_title} {right_title}"
             match, match_method = match_title(combined_title, article_index)
             if match is None:
                 continue
