@@ -11,6 +11,12 @@ from pathlib import Path
 from export_contents_review_worklists import export_review_worklists as export_contents_review_worklists
 from export_propaedia_review_worklists import export_review_worklists
 from paths import PROJECT_DATA_DIR
+from propaedia_name_aliases import (
+    build_propaedia_name_candidate_summary,
+    build_propaedia_name_evidence,
+    build_propaedia_name_summary_lookup,
+    discover_payloads,
+)
 
 
 DEFAULT_DB_PATH = PROJECT_DATA_DIR / "macropaedia_2010_project.sqlite"
@@ -34,7 +40,54 @@ def fetch_rows(connection: sqlite3.Connection, query: str) -> list[sqlite3.Row]:
     return list(connection.execute(query))
 
 
+def current_propaedia_name_summaries() -> list[dict[str, object]]:
+    return build_propaedia_name_candidate_summary(
+        build_propaedia_name_evidence(discover_payloads())
+    )
+
+
+def export_propaedia_name_evidence_worklist() -> None:
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_name_evidence_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "observed_propaedia_name",
+            "match_method",
+            "extraction_method",
+            "part_number",
+            "capture_sequence",
+            "propaedia_page_reference",
+            "source_image_relative_path",
+        ],
+        build_propaedia_name_evidence(discover_payloads()),
+    )
+
+
+def export_propaedia_name_candidate_summary_worklist() -> dict[tuple[int, str], dict[str, object]]:
+    summary_rows = current_propaedia_name_summaries()
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_name_candidate_summary.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "candidate_count",
+            "suggested_propaedia_name",
+            "suggested_occurrence_count",
+            "suggested_match_methods",
+            "suggested_source_pages",
+            "suggested_source_images",
+            "alternate_propaedia_names",
+        ],
+        summary_rows,
+    )
+    return build_propaedia_name_summary_lookup(summary_rows)
+
+
 def export_identity_worklist(connection: sqlite3.Connection) -> None:
+    alias_summary = export_propaedia_name_candidate_summary_worklist()
     rows = fetch_rows(
         connection,
         """
@@ -59,12 +112,44 @@ def export_identity_worklist(connection: sqlite3.Connection) -> None:
             "start_page_index",
             "page_length",
             "macropaedia_contents_name",
+            "suggested_propaedia_name",
+            "suggested_propaedia_name_occurrence_count",
+            "suggested_propaedia_name_match_methods",
+            "suggested_propaedia_name_source_pages",
+            "suggested_propaedia_name_source_images",
+            "alternate_propaedia_names",
             "propaedia_name",
             "propaedia_name_source_image_path",
             "notes",
         ],
         [
             {
+                **({
+                    "suggested_propaedia_name": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("suggested_propaedia_name", ""),
+                    "suggested_propaedia_name_occurrence_count": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("suggested_occurrence_count", ""),
+                    "suggested_propaedia_name_match_methods": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("suggested_match_methods", ""),
+                    "suggested_propaedia_name_source_pages": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("suggested_source_pages", ""),
+                    "suggested_propaedia_name_source_images": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("suggested_source_images", ""),
+                    "alternate_propaedia_names": alias_summary.get(
+                        (int(row["volume_number"]), row["start_page_label"]),
+                        {},
+                    ).get("alternate_propaedia_names", ""),
+                }),
                 "volume_number": row["volume_number"],
                 "start_page_label": row["start_page_label"],
                 "start_page_index": row["start_page_index"],
@@ -262,6 +347,7 @@ def main() -> None:
     args = parse_args()
     connection = sqlite3.connect(args.db)
     connection.row_factory = sqlite3.Row
+    export_propaedia_name_evidence_worklist()
     export_identity_worklist(connection)
     export_article_contents_worklist(connection)
     export_mapping_worklist(connection)

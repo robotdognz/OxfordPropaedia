@@ -10,6 +10,12 @@ import sqlite3
 from pathlib import Path
 
 from paths import DATA_DIR, IMAGE_ROOT, PROJECT_DATA_DIR, RAW_OUTPUT_DIR, REPO_ROOT
+from propaedia_name_aliases import (
+    build_propaedia_name_candidate_summary,
+    build_propaedia_name_evidence,
+    build_propaedia_name_summary_lookup,
+    discover_payloads,
+)
 
 SCHEMA_PATH = REPO_ROOT / "pipeline" / "macropaedia_2010" / "schema.sql"
 REVIEWED_CANDIDATES_PATH = DATA_DIR / "2010_article_candidates_reviewed.json"
@@ -181,6 +187,45 @@ def fetch_rows(connection: sqlite3.Connection, query: str) -> list[sqlite3.Row]:
 
 
 def export_worklists(connection: sqlite3.Connection) -> None:
+    alias_summary_rows = build_propaedia_name_candidate_summary(
+        build_propaedia_name_evidence(discover_payloads())
+    )
+    alias_summary = build_propaedia_name_summary_lookup(alias_summary_rows)
+
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_name_evidence_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "observed_propaedia_name",
+            "match_method",
+            "extraction_method",
+            "part_number",
+            "capture_sequence",
+            "propaedia_page_reference",
+            "source_image_relative_path",
+        ],
+        build_propaedia_name_evidence(discover_payloads()),
+    )
+
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_name_candidate_summary.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "candidate_count",
+            "suggested_propaedia_name",
+            "suggested_occurrence_count",
+            "suggested_match_methods",
+            "suggested_source_pages",
+            "suggested_source_images",
+            "alternate_propaedia_names",
+        ],
+        alias_summary_rows,
+    )
+
     article_rows = fetch_rows(
         connection,
         """
@@ -202,6 +247,30 @@ def export_worklists(connection: sqlite3.Connection) -> None:
             "start_page_index": row["start_page_index"],
             "page_length": row["page_length"] or "",
             "macropaedia_contents_name": row["macropaedia_contents_name"],
+            "suggested_propaedia_name": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("suggested_propaedia_name", ""),
+            "suggested_propaedia_name_occurrence_count": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("suggested_occurrence_count", ""),
+            "suggested_propaedia_name_match_methods": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("suggested_match_methods", ""),
+            "suggested_propaedia_name_source_pages": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("suggested_source_pages", ""),
+            "suggested_propaedia_name_source_images": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("suggested_source_images", ""),
+            "alternate_propaedia_names": alias_summary.get(
+                (int(row["volume_number"]), row["start_page_label"]),
+                {},
+            ).get("alternate_propaedia_names", ""),
             "propaedia_name": "",
             "propaedia_name_source_image_path": "",
             "notes": "",
@@ -216,6 +285,12 @@ def export_worklists(connection: sqlite3.Connection) -> None:
             "start_page_index",
             "page_length",
             "macropaedia_contents_name",
+            "suggested_propaedia_name",
+            "suggested_propaedia_name_occurrence_count",
+            "suggested_propaedia_name_match_methods",
+            "suggested_propaedia_name_source_pages",
+            "suggested_propaedia_name_source_images",
+            "alternate_propaedia_names",
             "propaedia_name",
             "propaedia_name_source_image_path",
             "notes",
@@ -367,6 +442,8 @@ The SQLite database is a local working index regenerated from the tracked files 
 Generated files:
 
 - `article_identity_worklist.csv`
+- `propaedia_name_evidence_worklist.csv`
+- `propaedia_name_candidate_summary.csv`
 - `article_contents_capture_worklist.csv`
 - `propaedia_mapping_worklist.csv`
 - `britannica_breakdown_worklist.csv`

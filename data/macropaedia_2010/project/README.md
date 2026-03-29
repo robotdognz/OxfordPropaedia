@@ -19,6 +19,8 @@ The SQLite database is a local working index regenerated from the tracked files 
 Generated files:
 
 - `article_identity_worklist.csv`
+- `propaedia_name_evidence_worklist.csv`
+- `propaedia_name_candidate_summary.csv`
 - `propaedia_page_capture_index.csv`
 - `contents_page_review_human.csv`
 - `contents_risk_review_human.csv`
@@ -33,6 +35,12 @@ Generated files:
 
 The database is the intended source of truth for this project. The CSV files are fill-in worklists
 for manual capture and review.
+
+The Propaedia-name files have different roles:
+
+- `propaedia_name_evidence_worklist.csv` stores each matched observed Propaedia title instance
+- `propaedia_name_candidate_summary.csv` groups those instances by article and suggests the current best `propaedia_name`
+- `article_identity_worklist.csv` includes those suggestions alongside the editable canonical `propaedia_name` field
 
 Useful commands:
 

@@ -98,6 +98,8 @@ Generated outputs:
 
 - `data/macropaedia_2010/project/macropaedia_2010_project.sqlite`
 - `data/macropaedia_2010/project/article_identity_worklist.csv`
+- `data/macropaedia_2010/project/propaedia_name_evidence_worklist.csv`
+- `data/macropaedia_2010/project/propaedia_name_candidate_summary.csv`
 - `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
 - `data/macropaedia_2010/project/contents_page_review_human.csv`
 - `data/macropaedia_2010/project/contents_risk_review_human.csv`
@@ -154,6 +156,16 @@ For every article:
 Primary worklist:
 
 - `article_identity_worklist.csv`
+
+Supporting alias evidence:
+
+- `propaedia_name_evidence_worklist.csv`
+- `propaedia_name_candidate_summary.csv`
+
+Those files track:
+
+- per-instance observed Propaedia names matched from photographed pages
+- the current best suggested `propaedia_name` for each Macropaedia article
 
 ### Phase 1.5. Visually verify the contents-page extraction
 
