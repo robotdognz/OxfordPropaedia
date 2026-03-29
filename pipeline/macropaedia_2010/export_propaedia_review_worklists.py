@@ -80,6 +80,12 @@ def risk_reason(rec: dict[str, object]) -> str:
     return "|".join(reasons)
 
 
+def sort_pipe_separated_titles(value: object) -> str:
+    titles = [part.strip() for part in str(value).split("|") if part.strip()]
+    titles.sort(key=lambda item: item.casefold())
+    return " | ".join(titles)
+
+
 def build_page_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     for payload in payloads:
@@ -144,7 +150,7 @@ def build_page_rows_human(page_rows: list[dict[str, object]]) -> list[dict[str, 
             "page": row["propaedia_page_reference"],
             "image": row["image_relative_path"],
             "title_count": row["extracted_count"],
-            "titles": row["extracted_titles"],
+            "titles": sort_pipe_separated_titles(row["extracted_titles"]),
             "status": row["review_status"],
             "missing_titles": row["missing_titles"],
             "extra_titles": row["extra_titles"],

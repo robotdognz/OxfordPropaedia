@@ -137,6 +137,13 @@ def read_ocr_lines(path: Path) -> list[str]:
     return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
+def read_ocr_line_payload(path: Path) -> list[dict[str, object]]:
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return list(payload.get("lines", []))
+
+
 def extract_page_reference(lines: list[str]) -> str:
     for line in lines[:5]:
         match = PAGE_RE.match(line)
@@ -158,21 +165,100 @@ def extract_header_context(lines: list[str]) -> str:
     return lines[0] if lines else ""
 
 
-def extract_macropaedia_block(lines: list[str]) -> list[str]:
+def extract_macropaedia_block(lines: list[str]) -> tuple[list[str], bool]:
     block: list[str] = []
+    fallback_block: list[str] = []
     in_macro = False
+    in_suggested = False
+    saw_macro_label = False
     for line in lines:
+        if line.startswith("Suggested reading in the Encyclopædia Britannica:"):
+            in_suggested = True
+            continue
         if line.startswith("MACROPAEDIA:"):
             in_macro = True
+            saw_macro_label = True
             remainder = line.split("MACROPAEDIA:", 1)[1].strip()
             if remainder:
                 block.append(remainder)
             continue
-        if in_macro and line.startswith("MICROPAEDIA:"):
+        if (in_macro or in_suggested) and line.startswith("MICROPAEDIA:"):
             break
         if in_macro:
             block.append(line)
-    return block
+            continue
+        if in_suggested:
+            fallback_block.append(line)
+    return (block or fallback_block, saw_macro_label)
+
+
+def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object]]) -> list[str]:
+    if not ocr_lines:
+        return []
+
+    def line_text(line: dict[str, object]) -> str:
+        return str(line.get("text", "")).strip()
+
+    def mid_x(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["midX"])
+
+    def mid_y(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["midY"])
+
+    def height(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["height"])
+
+    suggested = next((line for line in ocr_lines if line_text(line).startswith("Suggested reading in the Encyclopædia Britannica:")), None)
+    micro = next((line for line in ocr_lines if line_text(line).startswith("MICROPAEDIA:")), None)
+    macro = next((line for line in ocr_lines if line_text(line).startswith("MACROPAEDIA:")), None)
+
+    if suggested is None or micro is None:
+        return []
+
+    upper_anchor = macro if macro is not None else suggested
+    upper_limit = mid_y(upper_anchor) - max(height(upper_anchor), 0.012)
+    lower_limit = mid_y(micro) + max(height(micro), 0.01)
+
+    candidate_lines = [
+        line
+        for line in ocr_lines
+        if lower_limit < mid_y(line) < upper_limit
+        and not line_text(line).startswith("Suggested reading in the Encyclopædia Britannica:")
+        and not line_text(line).startswith("MACROPAEDIA:")
+        and not line_text(line).startswith("MICROPAEDIA:")
+    ]
+
+    if not candidate_lines:
+        return []
+
+    sorted_by_x = sorted(candidate_lines, key=mid_x)
+    columns: list[list[dict[str, object]]] = []
+    current_column: list[dict[str, object]] = []
+    previous_x: float | None = None
+    for line in sorted_by_x:
+        x = mid_x(line)
+        if previous_x is None or x - previous_x <= 0.12:
+            current_column.append(line)
+        else:
+            columns.append(current_column)
+            current_column = [line]
+        previous_x = x
+    if current_column:
+        columns.append(current_column)
+
+    ordered_lines: list[str] = []
+    if macro is not None:
+        remainder = line_text(macro).split("MACROPAEDIA:", 1)[1].strip()
+        if remainder:
+            ordered_lines.append(remainder)
+
+    for column in columns:
+        for line in sorted(column, key=lambda item: (-mid_y(item), mid_x(item))):
+            text = line_text(line)
+            if text:
+                ordered_lines.append(text)
+
+    return ordered_lines
 
 
 def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tuple[Article | None, str | None]:
@@ -184,6 +270,19 @@ def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tu
     return None, None
 
 
+def combine_adjacent_title_fragments(left: str, right: str) -> list[tuple[str, str]]:
+    forward = f"{left} {right}".strip()
+    reverse = f"{right} {left}".strip()
+
+    candidates: list[tuple[str, str]] = []
+    if right.endswith(",") or right.endswith(":"):
+        candidates.append((reverse, "combined_adjacent_ocr_lines_reordered"))
+    candidates.append((forward, "combined_adjacent_ocr_lines"))
+    if reverse != forward:
+        candidates.append((reverse, "combined_adjacent_ocr_lines_reordered"))
+    return candidates
+
+
 def split_descriptor_and_titles(
     block_lines: list[str],
     article_index: dict[str, tuple[Article, str]],
@@ -191,23 +290,42 @@ def split_descriptor_and_titles(
     if not block_lines:
         return "", []
 
-    descriptor_lines: list[str] = [block_lines[0]]
-    index = 1
-    while index < len(block_lines) and block_lines[index][:1].islower():
-        descriptor_lines.append(block_lines[index])
-        index += 1
+    descriptor_lines: list[str] = []
+    index = 0
+
+    first_line = block_lines[0]
+    first_match, _ = match_title(first_line, article_index)
+    first_line_lower = first_line.lower()
+    starts_with_descriptor = (
+        "major article" in first_line_lower
+        or "major articles" in first_line_lower
+        or "biography dealing" in first_line_lower
+        or "articles dealing" in first_line_lower
+        or "article dealing" in first_line_lower
+    )
+    if starts_with_descriptor or (first_match is None and first_line_lower.startswith("major ")):
+        descriptor_lines = [first_line]
+        index = 1
+        while index < len(block_lines) and block_lines[index][:1].islower():
+            descriptor_lines.append(block_lines[index])
+            index += 1
 
     titles: list[tuple[str, str]] = []
     while index < len(block_lines):
         current = block_lines[index]
         if index + 1 < len(block_lines):
-            combined = f"{current} {block_lines[index + 1]}"
-            combined_match, _ = match_title(combined, article_index)
             current_match, _ = match_title(current, article_index)
             next_match, _ = match_title(block_lines[index + 1], article_index)
-            if combined_match is not None and current_match is None and next_match is None:
-                titles.append((combined, "combined_adjacent_ocr_lines"))
-                index += 2
+            if current_match is None and next_match is None:
+                for combined_title, extraction_method in combine_adjacent_title_fragments(current, block_lines[index + 1]):
+                    combined_match, _ = match_title(combined_title, article_index)
+                    if combined_match is not None:
+                        titles.append((combined_title, extraction_method))
+                        index += 2
+                        break
+                else:
+                    titles.append((current, "single_ocr_line"))
+                    index += 1
                 continue
         titles.append((current, "single_ocr_line"))
         index += 1
@@ -242,25 +360,27 @@ def reconcile_fragmented_titles(
                 or (len(left_title.split()) == 1 and len(right_title.split()) == 1)
             ):
                 continue
-            combined_title = f"{left_title} {right_title}"
-            match, match_method = match_title(combined_title, article_index)
-            if match is None:
-                continue
-            merged_items[left] = {
-                "sortOrder": recommendations[left]["sortOrder"],
-                "observedTitle": combined_title,
-                "extractionMethod": "combined_fragment_titles",
-                "matchStatus": "matched",
-                "matchMethod": match_method,
-                "matchedTitle": match.title,
-                "matchedVolumeNumber": match.volume_number,
-                "matchedStartPage": match.start_page,
-                "matchedStartPageIndex": match.start_page_index,
-                "matchedPageCountEstimate": match.page_count_estimate,
-            }
-            used.add(left)
-            used.add(right)
-            break
+            for combined_title, extraction_method in combine_adjacent_title_fragments(left_title, right_title):
+                match, match_method = match_title(combined_title, article_index)
+                if match is None:
+                    continue
+                merged_items[left] = {
+                    "sortOrder": recommendations[left]["sortOrder"],
+                    "observedTitle": combined_title,
+                    "extractionMethod": extraction_method.replace("adjacent_ocr_lines", "fragment_titles"),
+                    "matchStatus": "matched",
+                    "matchMethod": match_method,
+                    "matchedTitle": match.title,
+                    "matchedVolumeNumber": match.volume_number,
+                    "matchedStartPage": match.start_page,
+                    "matchedStartPageIndex": match.start_page_index,
+                    "matchedPageCountEstimate": match.page_count_estimate,
+                }
+                used.add(left)
+                used.add(right)
+                break
+            if left in used:
+                break
 
     normalized: list[dict[str, object]] = []
     for index, item in enumerate(recommendations):
@@ -282,8 +402,13 @@ def build_page_payload(
     image_relative_path = row["image_relative_path"]
     stem = Path(image_relative_path).stem
     ocr_path = ocr_dir / f"{stem}.txt"
+    ocr_lines_path = ocr_dir.parent / "ocr_lines" / f"{stem}.json"
     lines = read_ocr_lines(ocr_path)
-    block = extract_macropaedia_block(lines)
+    block, saw_macro_label = extract_macropaedia_block(lines)
+    if not saw_macro_label:
+        geometry_block = extract_macropaedia_block_from_ocr_geometry(read_ocr_line_payload(ocr_lines_path))
+        if geometry_block:
+            block = geometry_block
     topic_summary, titles = split_descriptor_and_titles(block, article_index)
 
     page_payload: dict[str, object] = {

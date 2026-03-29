@@ -1,0 +1,1595 @@
+{
+  "partNumber": 3,
+  "pageCount": 22,
+  "matchedRecommendationCount": 104,
+  "unmatchedRecommendationCount": 17,
+  "pages": [
+    {
+      "partNumber": 3,
+      "captureSequence": 1,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-01.jpg",
+      "propaediaPageReference": "96",
+      "headerContext": "96 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with the characteristics of living things",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Growth and Development, Biological",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Biological GROWTH AND DEVELOPMENT",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "361",
+          "matchedStartPageIndex": 361,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Animals",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ANIMALS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "766",
+          "matchedStartPageIndex": 766,
+          "matchedPageCountEstimate": 12
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Life",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "LIFE",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "964",
+          "matchedStartPageIndex": 964,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Bacteria and Other Monerans",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Metabolism",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "METABOLISM",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "893",
+          "matchedStartPageIndex": 893,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Behaviour, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "744",
+          "matchedStartPageIndex": 744,
+          "matchedPageCountEstimate": 85
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Mimicry",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MIMICRY",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "144",
+          "matchedStartPageIndex": 144,
+          "matchedPageCountEstimate": 8
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Biological Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The BIOLOGICAL SCIENCES",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1069",
+          "matchedStartPageIndex": 1069,
+          "matchedPageCountEstimate": 58
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Photosynthesis",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PHOTOSYNTHESIS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "799",
+          "matchedStartPageIndex": 799,
+          "matchedPageCountEstimate": 8
+        },
+        {
+          "sortOrder": 10,
+          "observedTitle": "Biosphere, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 11,
+          "observedTitle": "Plants",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PLANTS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "867",
+          "matchedStartPageIndex": 867,
+          "matchedPageCountEstimate": 16
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 13,
+          "observedTitle": "Protists",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PROTISTS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "268",
+          "matchedStartPageIndex": 268,
+          "matchedPageCountEstimate": 11
+        },
+        {
+          "sortOrder": 14,
+          "observedTitle": "Coloration, Biological",
+          "extractionMethod": "combined_adjacent_ocr_lines_reordered",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Biological COLORATION",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "585",
+          "matchedStartPageIndex": 585,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 15,
+          "observedTitle": "Reproduction and Reproductive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "REPRODUCTION AND REPRODUCTIVE SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "609",
+          "matchedStartPageIndex": 609,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 16,
+          "observedTitle": "Evolution, The Theory of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Theory of EVOLUTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "855",
+          "matchedStartPageIndex": 855,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 17,
+          "observedTitle": "Sensory Reception",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SENSORY RECEPTION",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "115",
+          "matchedStartPageIndex": 115,
+          "matchedPageCountEstimate": 108
+        },
+        {
+          "sortOrder": 18,
+          "observedTitle": "Fungi",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FUNGI",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "597",
+          "matchedStartPageIndex": 597,
+          "matchedPageCountEstimate": 14
+        },
+        {
+          "sortOrder": 19,
+          "observedTitle": "Genetics and Heredity, The Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Principles of GENETICS AND HEREDITY",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "699",
+          "matchedStartPageIndex": 699,
+          "matchedPageCountEstimate": 42
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 2,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-02.jpg",
+      "propaediaPageReference": "97",
+      "headerContext": "Division I. Section 312",
+      "topicSummary": "Major articles and a biography dealing with the origin of life and the evolution of living things",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Coloration, Biological",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Biological COLORATION",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "585",
+          "matchedStartPageIndex": 585,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Darwin",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DARWIN",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "977",
+          "matchedStartPageIndex": 977,
+          "matchedPageCountEstimate": 5
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Evolution, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human EVOLUTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "812",
+          "matchedStartPageIndex": 812,
+          "matchedPageCountEstimate": 43
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Evolution, The Theory of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Theory of EVOLUTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "855",
+          "matchedStartPageIndex": 855,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Mimicry",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MIMICRY",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "144",
+          "matchedStartPageIndex": 144,
+          "matchedPageCountEstimate": 8
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 3,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-03.jpg",
+      "propaediaPageReference": "100",
+      "headerContext": "100 Part Three. Life on Earth",
+      "topicSummary": "",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Algae",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ALGAE",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "234",
+          "matchedStartPageIndex": 234,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "ihmtl",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Bryophytes",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BRYOPHYTES",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "252",
+          "matchedStartPageIndex": 252,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Chordates",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHORDATES",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "241",
+          "matchedStartPageIndex": 241,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Cnidarians",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CNIDARIANS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "523",
+          "matchedStartPageIndex": 523,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Crustaceans",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CRUSTACEANS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "840",
+          "matchedStartPageIndex": 840,
+          "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Dinosaurs",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DINOSAURS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "315",
+          "matchedStartPageIndex": 315,
+          "matchedPageCountEstimate": 15
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Echinoderms",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ECHINODERMS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "857",
+          "matchedStartPageIndex": 857,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Ferns and Other",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 10,
+          "observedTitle": "Lower Vascular",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 11,
+          "observedTitle": "Plants",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PLANTS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "867",
+          "matchedStartPageIndex": 867,
+          "matchedPageCountEstimate": 16
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Fishes",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FISHES",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "192",
+          "matchedStartPageIndex": 192,
+          "matchedPageCountEstimate": 85
+        },
+        {
+          "sortOrder": 13,
+          "observedTitle": "Flatworms:",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 14,
+          "observedTitle": "Platyhelminthes",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 15,
+          "observedTitle": "Fungi",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FUNGI",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "597",
+          "matchedStartPageIndex": 597,
+          "matchedPageCountEstimate": 14
+        },
+        {
+          "sortOrder": 16,
+          "observedTitle": "Gymnosperms",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GYMNOSPERMS",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "447",
+          "matchedStartPageIndex": 447,
+          "matchedPageCountEstimate": 19
+        },
+        {
+          "sortOrder": 17,
+          "observedTitle": "Insects",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INSECTS",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "648",
+          "matchedStartPageIndex": 648,
+          "matchedPageCountEstimate": 93
+        },
+        {
+          "sortOrder": 18,
+          "observedTitle": "Lamp Shells:",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 19,
+          "observedTitle": "Phylum",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 20,
+          "observedTitle": "Brachiopoda",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 21,
+          "observedTitle": "Mammals",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MAMMALS",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "339",
+          "matchedStartPageIndex": 339,
+          "matchedPageCountEstimate": 121
+        },
+        {
+          "sortOrder": 22,
+          "observedTitle": "Mollesks",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 23,
+          "observedTitle": "Moss Animals: Phylum Bryozoa",
+          "extractionMethod": "combined_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Moss ANIMALS: Phylum Bryozoa",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "365",
+          "matchedStartPageIndex": 365,
+          "matchedPageCountEstimate": 4
+        },
+        {
+          "sortOrder": 24,
+          "observedTitle": "Plants",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PLANTS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "867",
+          "matchedStartPageIndex": 867,
+          "matchedPageCountEstimate": 16
+        },
+        {
+          "sortOrder": 25,
+          "observedTitle": "Protists",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PROTISTS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "268",
+          "matchedStartPageIndex": 268,
+          "matchedPageCountEstimate": 11
+        },
+        {
+          "sortOrder": 26,
+          "observedTitle": "Protozoa",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PROTOZOA",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "279",
+          "matchedStartPageIndex": 279,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 27,
+          "observedTitle": "Reptiles",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "REPTILES",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "688",
+          "matchedStartPageIndex": 688,
+          "matchedPageCountEstimate": 37
+        },
+        {
+          "sortOrder": 28,
+          "observedTitle": "Sponges: Phylum Porifera",
+          "extractionMethod": "combined_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SPONGES: Phylum Porifera",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "93",
+          "matchedStartPageIndex": 93,
+          "matchedPageCountEstimate": 7
+        },
+        {
+          "sortOrder": 29,
+          "observedTitle": "Viruses",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "VIRUSES",
+          "matchedVolumeNumber": 17,
+          "matchedStartPage": "503",
+          "matchedStartPageIndex": 503,
+          "matchedPageCountEstimate": 6
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 4,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-04.jpg",
+      "propaediaPageReference": "113",
+      "headerContext": "Division II. Section 321",
+      "topicSummary": "Major articles dealing with chemicals and the vital processes",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Drugs and Drug Action",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DRUGS AND DRUG ACTION",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "529",
+          "matchedStartPageIndex": 529,
+          "matchedPageCountEstimate": 32
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Biochemical Components of Organisms",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Biochemical Components of Organisms",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1007",
+          "matchedStartPageIndex": 1007,
+          "matchedPageCountEstimate": 62
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Poisons and Poisoning",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "POISONS AND POISONING",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "908",
+          "matchedStartPageIndex": 908,
+          "matchedPageCountEstimate": 22
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Chemical Compounds",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHEMICAL COMPOUNDS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "777",
+          "matchedStartPageIndex": 777,
+          "matchedPageCountEstimate": 155
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 5,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-05.jpg",
+      "propaediaPageReference": "115",
+      "headerContext": "Division II. Section 322",
+      "topicSummary": "Major articles dealing with metabolism: bioenergetics and biosynthesis",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Metabolism",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "METABOLISM",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "893",
+          "matchedStartPageIndex": 893,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Photosynthes\u0131s",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 6,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-06.jpg",
+      "propaediaPageReference": "116",
+      "headerContext": "116 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with vital processes at the molecular level",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Electricity and Magnetism",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ELECTRICITY AND MAGNETISM",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "159",
+          "matchedStartPageIndex": 159,
+          "matchedPageCountEstimate": 36
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Muscles and Muscle Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MUSCLES AND MUSCLE SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 28
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Nerves and Nervous Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NERVES AND NERVOUS SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "784",
+          "matchedStartPageIndex": 784,
+          "matchedPageCountEstimate": 80
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 7,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-07.jpg",
+      "propaediaPageReference": "118",
+      "headerContext": "118 Part Three. Life on Earth",
+      "topicSummary": "Major article dealing with the cellular basis of form and function",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 8,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-08.jpg",
+      "propaediaPageReference": "119",
+      "headerContext": "Division III. Section 332",
+      "topicSummary": "Major articles dealing with the relation of form and function in organisms",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Integumentary Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INTEGUMENTARY SYSTEMS",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "755",
+          "matchedStartPageIndex": 755,
+          "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Animals",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ANIMALS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "766",
+          "matchedStartPageIndex": 766,
+          "matchedPageCountEstimate": 12
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Muscles and Muscle Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MUSCLES AND MUSCLE SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 28
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Blood",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BLOOD",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "125",
+          "matchedStartPageIndex": 125,
+          "matchedPageCountEstimate": 30
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Nerves and Nervous Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NERVES AND NERVOUS SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "784",
+          "matchedStartPageIndex": 784,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Plants",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PLANTS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "867",
+          "matchedStartPageIndex": 867,
+          "matchedPageCountEstimate": 16
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Circulation and Circulatory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CIRCULATION AND CIRCULATORY SYSTEMS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "377",
+          "matchedStartPageIndex": 377,
+          "matchedPageCountEstimate": 41
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Reproduction and Reproductive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "REPRODUCTION AND REPRODUCTIVE SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "609",
+          "matchedStartPageIndex": 609,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 10,
+          "observedTitle": "Digestion and Digestive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DIGESTION AND DIGESTIVE SYSTEMS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "275",
+          "matchedStartPageIndex": 275,
+          "matchedPageCountEstimate": 40
+        },
+        {
+          "sortOrder": 11,
+          "observedTitle": "Respiration and Respiratory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RESPIRATION AND RESPIRATORY SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "725",
+          "matchedStartPageIndex": 725,
+          "matchedPageCountEstimate": 33
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Endocrine Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENDOCRINE SYSTEMS",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "287",
+          "matchedStartPageIndex": 287,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 13,
+          "observedTitle": "Supportive and Connective Tissues",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SUPPORTIVE AND CONNECTIVE TISSUES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "272",
+          "matchedStartPageIndex": 272,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 14,
+          "observedTitle": "Excretion and Excretory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "EXCRETION AND EXCRETORY SYSTEMS",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 27
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 9,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-09.jpg",
+      "propaediaPageReference": "121",
+      "headerContext": "Division III. Section 333",
+      "topicSummary": "Major articles dealing with the coordination of vital processes: regulation and integration",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Endocrine Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENDOCRINE SYSTEMS",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "287",
+          "matchedStartPageIndex": 287,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Nerves and Nervous Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NERVES AND NERVOUS SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "784",
+          "matchedStartPageIndex": 784,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Sensory Reception",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SENSORY RECEPTION",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "115",
+          "matchedStartPageIndex": 115,
+          "matchedPageCountEstimate": 108
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 10,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-10.jpg",
+      "propaediaPageReference": "123",
+      "headerContext": "Division III. Section 335",
+      "topicSummary": "Major articles dealing with covering and support: integumentary, skeletal, and musculatory systems",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Integumentary Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INTEGUMENTARY SYSTEMS",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "755",
+          "matchedStartPageIndex": 755,
+          "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Muscles and Muscle Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MUSCLES AND MUSCLE SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 28
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Supportive and Connective Tissues",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SUPPORTIVE AND CONNECTIVE TISSUES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "272",
+          "matchedStartPageIndex": 272,
+          "matchedPageCountEstimate": 45
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 11,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-11.jpg",
+      "propaediaPageReference": "124",
+      "headerContext": "124 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with nutrition: the procurement and processing of nutrients",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Digestion and Digestive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DIGESTION AND DIGESTIVE SYSTEMS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "275",
+          "matchedStartPageIndex": 275,
+          "matchedPageCountEstimate": 40
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Nutrition",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NUTRITION",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "50",
+          "matchedStartPageIndex": 50,
+          "matchedPageCountEstimate": 26
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 12,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-12.jpg",
+      "propaediaPageReference": "125",
+      "headerContext": "Division III. Section 336",
+      "topicSummary": "Major articles dealing with gas exchange, internal transport, and elimination",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cells: Their Structures and Functions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CELLS: Their Structures and Functions",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "565",
+          "matchedStartPageIndex": 565,
+          "matchedPageCountEstimate": 29
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Circulation and Circulatory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CIRCULATION AND CIRCULATORY SYSTEMS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "377",
+          "matchedStartPageIndex": 377,
+          "matchedPageCountEstimate": 41
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Excretion and Excretory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "EXCRETION AND EXCRETORY SYSTEMS",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 27
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Respiration and Respiratory Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RESPIRATION AND RESPIRATORY SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "725",
+          "matchedStartPageIndex": 725,
+          "matchedPageCountEstimate": 33
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 13,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-13.jpg",
+      "propaediaPageReference": "127",
+      "headerContext": "Division III. Section 337",
+      "topicSummary": "Major articles dealing with reproduction and sex",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Behaviour, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "744",
+          "matchedStartPageIndex": 744,
+          "matchedPageCountEstimate": 85
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Reproduction and Reproductive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "REPRODUCTION AND REPRODUCTIVE SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "609",
+          "matchedStartPageIndex": 609,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Sex and Sexuality",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SEX AND SEXUALITY",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "233",
+          "matchedStartPageIndex": 233,
+          "matchedPageCountEstimate": 20
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 14,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-14.jpg",
+      "propaediaPageReference": "128",
+      "headerContext": "128 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with development: growth, differentiation, and morphogenesis",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Death",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DEATH",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "982",
+          "matchedStartPageIndex": 982,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Growth and Development, Biological",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Biological GROWTH AND DEVELOPMENT",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "361",
+          "matchedStartPageIndex": 361,
+          "matchedPageCountEstimate": 80
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 15,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-15.jpg",
+      "propaediaPageReference": "129",
+      "headerContext": "Division III. Section 339",
+      "topicSummary": "Major article dealing with heredity: the transmission of traits",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Genetics and Heredity, The Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Principles of GENETICS AND HEREDITY",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "699",
+          "matchedStartPageIndex": 699,
+          "matchedPageCountEstimate": 42
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 16,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-16.jpg",
+      "propaediaPageReference": "130",
+      "headerContext": "130 Part Three. Life on Earth",
+      "topicSummary": "Major article dealing with the nature and patterns of behavioral responses",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "\u2022 Behaviour, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "744",
+          "matchedStartPageIndex": 744,
+          "matchedPageCountEstimate": 85
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 17,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-17.jpg",
+      "propaediaPageReference": "131",
+      "headerContext": "Division IV. Section 342",
+      "topicSummary": "Major articles dealing with the development and range of behavioral capacities: \u0131ndividual and group behaviour",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Behaviour, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "744",
+          "matchedStartPageIndex": 744,
+          "matchedPageCountEstimate": 85
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Learning, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal LEARNING",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "854",
+          "matchedStartPageIndex": 854,
+          "matchedPageCountEstimate": 16
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 18,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-18.jpg",
+      "propaediaPageReference": "133",
+      "headerContext": "Division V. Section 352",
+      "topicSummary": "Major article dealing with the basic features of the biosphere",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Biosphere,The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 19,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-19.jpg",
+      "propaediaPageReference": "134",
+      "headerContext": "134 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with biological populations and communities",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Behaviour, Animal",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Animal BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "744",
+          "matchedStartPageIndex": 744,
+          "matchedPageCountEstimate": 85
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Biosphere, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 20,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-20.jpg",
+      "propaediaPageReference": "135",
+      "headerContext": "Division V. Section 353",
+      "topicSummary": "Major articles dealing with hazards of life in the biosphere: disease and death",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Death",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DEATH",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "982",
+          "matchedStartPageIndex": 982,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Disease",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DISEASE",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "341",
+          "matchedStartPageIndex": 341,
+          "matchedPageCountEstimate": 53
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Immunity",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "IMMUNITY",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "773",
+          "matchedStartPageIndex": 773,
+          "matchedPageCountEstimate": null
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 21,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-21.jpg",
+      "propaediaPageReference": "137",
+      "headerContext": "Division V. Section 355",
+      "topicSummary": "Major articles dealing with biogeographic distribution of organisms: ecosystems",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Biosphere and Concepts",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Rivers",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RIVERS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "843",
+          "matchedStartPageIndex": 843,
+          "matchedPageCountEstimate": 27
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "of Ecology, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Trees",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "TREES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "903",
+          "matchedStartPageIndex": 903,
+          "matchedPageCountEstimate": 11
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Lakes",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "LAKES",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "531",
+          "matchedStartPageIndex": 531,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Oceans",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "OCEANS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "134",
+          "matchedStartPageIndex": 134,
+          "matchedPageCountEstimate": 63
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "captureSequence": 22,
+      "imageRelativePath": "propaedia_pages/part_3/propaedia-2010-part-03-photo-22.jpg",
+      "propaediaPageReference": "138",
+      "headerContext": "138 Part Three. Life on Earth",
+      "topicSummary": "Major articles dealing with the place of humans in the biosphere",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Farming and Agricultural Technology",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FARMING and Agricultural Technology",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "87",
+          "matchedStartPageIndex": 87,
+          "matchedPageCountEstimate": 73
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Biosphere and Concepts of Ecology, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The BIOSPHERE and Concepts of Ecology",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1127",
+          "matchedStartPageIndex": 1127,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Forestry and Wood Production",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FORESTRY AND WOOD PRODUCTION",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "410",
+          "matchedStartPageIndex": 410,
+          "matchedPageCountEstimate": 17
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Cats, Domestic",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Domestic CATS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "561",
+          "matchedStartPageIndex": 561,
+          "matchedPageCountEstimate": 4
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Gardening and Horticulture",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GARDENING AND HORTICULTURE",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "670",
+          "matchedStartPageIndex": 670,
+          "matchedPageCountEstimate": 19
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Conservation of Natural Resources",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Horses and Horsemanship",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "HORSES AND HORSEMANSHIP",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "646",
+          "matchedStartPageIndex": 646,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Dogs",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DOGS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "440",
+          "matchedStartPageIndex": 440,
+          "matchedPageCountEstimate": 11
+        }
+      ]
+    }
+  ]
+}
