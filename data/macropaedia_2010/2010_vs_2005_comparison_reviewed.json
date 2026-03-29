@@ -1,9 +1,9 @@
 {
   "baselineUniqueCount": 666,
-  "candidateUniqueCount": 695,
-  "matchedCount": 624,
+  "candidateUniqueCount": 701,
+  "matchedCount": 630,
   "newIn2010Count": 71,
-  "missingFrom2010Count": 42,
+  "missingFrom2010Count": 36,
   "newIn2010": [
     {
       "title": "Ansel ADAMS",
@@ -509,7 +509,7 @@
         "393"
       ],
       "pageCountEstimates": [
-        28
+        45
       ]
     },
     {
@@ -626,7 +626,7 @@
         "42A"
       ],
       "pageCountEstimates": [
-        1
+        null
       ]
     },
     {
@@ -636,10 +636,10 @@
         15
       ],
       "startPages": [
-        "421"
+        "42I"
       ],
       "pageCountEstimates": [
-        17
+        1
       ]
     },
     {
@@ -5512,10 +5512,10 @@
         12
       ],
       "startPages": [
-        "138"
+        "134"
       ],
       "pageCountEstimates": [
-        6
+        4
       ],
       "matchedBaselineTitle": "Mill, John Stuart",
       "matchedBaselineLookupKey": "mill, john stuart"
@@ -6361,6 +6361,21 @@
       "matchedBaselineLookupKey": "metabolism"
     },
     {
+      "title": "METAPHYSICS",
+      "lookupKey": "metaphysics",
+      "volumes": [
+        12
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        26
+      ],
+      "matchedBaselineTitle": "Metaphysics",
+      "matchedBaselineLookupKey": "metaphysics"
+    },
+    {
       "title": "MEXICO",
       "lookupKey": "mexico",
       "volumes": [
@@ -6427,10 +6442,10 @@
         12
       ],
       "startPages": [
-        "134"
+        "138"
       ],
       "pageCountEstimates": [
-        4
+        6
       ],
       "matchedBaselineTitle": "Milton",
       "matchedBaselineLookupKey": "milton"
@@ -6640,7 +6655,7 @@
         "445"
       ],
       "pageCountEstimates": [
-        35
+        7
       ],
       "matchedBaselineTitle": "Mozart",
       "matchedBaselineLookupKey": "mozart"
@@ -6659,6 +6674,21 @@
       ],
       "matchedBaselineTitle": "Islam, Muhammad and the Religion of",
       "matchedBaselineLookupKey": "islam, muhammad and the religion of"
+    },
+    {
+      "title": "MUSCLES AND MUSCLE SYSTEMS",
+      "lookupKey": "muscles and muscle systems",
+      "volumes": [
+        12
+      ],
+      "startPages": [
+        "452"
+      ],
+      "pageCountEstimates": [
+        28
+      ],
+      "matchedBaselineTitle": "Muscles and Muscle Systems",
+      "matchedBaselineLookupKey": "muscles and muscle systems"
     },
     {
       "title": "MUSEUMS",
@@ -7621,6 +7651,21 @@
       "matchedBaselineLookupKey": "prague"
     },
     {
+      "title": "PRE-COLUMBIAN CIVILIZATIONS",
+      "lookupKey": "pre-columbian civilizations",
+      "volumes": [
+        14
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        44
+      ],
+      "matchedBaselineTitle": "Pre-Columbian Civilizations",
+      "matchedBaselineLookupKey": "pre-columbian civilizations"
+    },
+    {
       "title": "PREHISTORIC PEOPLES AND CULTURES",
       "lookupKey": "prehistoric peoples and cultures",
       "volumes": [
@@ -8221,6 +8266,21 @@
       "matchedBaselineLookupKey": "johnson, samuel"
     },
     {
+      "title": "SAN FRANCISCO",
+      "lookupKey": "san francisco",
+      "volumes": [
+        15
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        5
+      ],
+      "matchedBaselineTitle": "San Francisco",
+      "matchedBaselineLookupKey": "san francisco"
+    },
+    {
       "title": "SCANDINAVIAN LITERATURE",
       "lookupKey": "scandinavian literature",
       "volumes": [
@@ -8311,8 +8371,8 @@
       "matchedBaselineLookupKey": "shanghai"
     },
     {
-      "title": "SHINTO",
-      "lookupKey": "shinto",
+      "title": "SHINT\u014c",
+      "lookupKey": "shint\u014d",
       "volumes": [
         15
       ],
@@ -8759,6 +8819,21 @@
       ],
       "matchedBaselineTitle": "Religious and Spiritual Belief, Systems of",
       "matchedBaselineLookupKey": "religious and spiritual belief, systems of"
+    },
+    {
+      "title": "S\u00c3O PAULO",
+      "lookupKey": "s\u00e3o paulo",
+      "volumes": [
+        15
+      ],
+      "startPages": [
+        "6"
+      ],
+      "pageCountEstimates": [
+        4
+      ],
+      "matchedBaselineTitle": "Sao Paulo",
+      "matchedBaselineLookupKey": "sao paulo"
     },
     {
       "title": "TAIWAN",
@@ -9976,6 +10051,21 @@
       "matchedBaselineLookupKey": "union of soviet socialist republics"
     },
     {
+      "title": "UNITED KINGDOM",
+      "lookupKey": "united kingdom",
+      "volumes": [
+        17
+      ],
+      "startPages": [
+        "1"
+      ],
+      "pageCountEstimates": [
+        137
+      ],
+      "matchedBaselineTitle": "United Kingdom",
+      "matchedBaselineLookupKey": "united kingdom"
+    },
+    {
       "title": "UNITED NATIONS",
       "lookupKey": "united nations",
       "volumes": [
@@ -10276,8 +10366,8 @@
       "matchedBaselineLookupKey": "zoroastrianism and parsiism"
     },
     {
-      "title": "\u00d6SAKA-KOBE METROPOLITAN AREA",
-      "lookupKey": "\u00f6saka-kobe metropolitan area",
+      "title": "\u014cSAKA-K\u014cBE METROPOLITAN AREA",
+      "lookupKey": "\u014dsaka-k\u014dbe metropolitan area",
       "volumes": [
         13
       ],
@@ -10501,24 +10591,6 @@
       ]
     },
     {
-      "title": "Metaphysics",
-      "lookupKey": "metaphysics",
-      "sectionCodes": [
-        "10/52"
-      ]
-    },
-    {
-      "title": "Muscles and Muscle Systems",
-      "lookupKey": "muscles and muscle systems",
-      "sectionCodes": [
-        "323",
-        "332",
-        "334",
-        "421",
-        "423"
-      ]
-    },
-    {
       "title": "New Zealand United States of America: Hawaii",
       "lookupKey": "new zealand united states of america: hawaii",
       "sectionCodes": [
@@ -10547,30 +10619,6 @@
       ]
     },
     {
-      "title": "Pre-Columbian Civilizations",
-      "lookupKey": "pre-columbian civilizations",
-      "sectionCodes": [
-        "822",
-        "951",
-        "952"
-      ]
-    },
-    {
-      "title": "San Francisco",
-      "lookupKey": "san francisco",
-      "sectionCodes": [
-        "965"
-      ]
-    },
-    {
-      "title": "Sao Paulo",
-      "lookupKey": "sao paulo",
-      "sectionCodes": [
-        "966",
-        "974"
-      ]
-    },
-    {
       "title": "Shanghai Metropolitan Area",
       "lookupKey": "shanghai metropolitan area",
       "sectionCodes": [
@@ -10589,17 +10637,6 @@
       "lookupKey": "theatre, the art of",
       "sectionCodes": [
         "622"
-      ]
-    },
-    {
-      "title": "United Kingdom",
-      "lookupKey": "united kingdom",
-      "sectionCodes": [
-        "921",
-        "923",
-        "961",
-        "963",
-        "972"
       ]
     },
     {

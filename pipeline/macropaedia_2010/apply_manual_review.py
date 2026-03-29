@@ -261,6 +261,8 @@ def apply_optional_spelling_fixes(candidates: dict, review_sections: dict[str, d
         (11, "MENTAL DISORDErS and Their Treatment", optional.get("mental_disorders_title", "")),
         (12, "The Art of MusIc", optional.get("music_art_title", "")),
         (14, "Rock MusIc", optional.get("music_rock_title", "")),
+        (13, "ÖSAKA-KOBE METROPOLITAN AREA", optional.get("osaka_kobe_title", "")),
+        (15, "SHINTO", optional.get("shinto_title", "")),
         (
             10,
             "KARÁCHI",
@@ -294,7 +296,11 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
     volume_9 = volume_by_number(reviewed, 9)
     volume_10 = volume_by_number(reviewed, 10)
     volume_11 = volume_by_number(reviewed, 11)
+    volume_12 = volume_by_number(reviewed, 12)
     volume_13 = volume_by_number(reviewed, 13)
+    volume_14 = volume_by_number(reviewed, 14)
+    volume_15 = volume_by_number(reviewed, 15)
+    volume_17 = volume_by_number(reviewed, 17)
 
     apply_volume_1_review(volume_1, review_sections.get("volume_1", {}))
     apply_generic_page_title_review(volume_2, review_sections.get("volume_2", {}))
@@ -305,7 +311,11 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
     apply_generic_page_title_review(volume_9, review_sections.get("volume_9", {}))
     apply_generic_page_title_review(volume_10, review_sections.get("volume_10", {}))
     apply_volume_11_review(volume_11, review_sections.get("volume_11", {}))
+    apply_generic_page_title_review(volume_12, review_sections.get("volume_12", {}))
     apply_volume_13_review(volume_13, review_sections.get("volume_13_confirmed_pairs", {}))
+    apply_generic_page_title_review(volume_14, review_sections.get("volume_14", {}))
+    apply_generic_page_title_review(volume_15, review_sections.get("volume_15", {}))
+    apply_generic_page_title_review(volume_17, review_sections.get("volume_17", {}))
     apply_optional_spelling_fixes(reviewed, review_sections)
 
     for volume in reviewed["volumes"]:
