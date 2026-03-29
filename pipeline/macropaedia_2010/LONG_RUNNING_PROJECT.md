@@ -80,6 +80,20 @@ App-facing implication:
   secondary display where it helps explain why a Propaedia recommendation points to that article
 - if the two differ, keep both values in the data instead of collapsing one into the other
 
+Known edge case:
+
+- a contents-page title can itself be abbreviated relative to the actual article heading inside the
+  volume
+- current observed example:
+  - contents page: `CHILDHOOD DISEASES`
+  - article heading: `Childhood Diseases and Disorders`
+  - Propaedia recommendation: `Childhood Diseases and Disorders`
+- this means future article-opening-page capture may need a third field such as
+  `macropaedia_article_title` in addition to `macropaedia_contents_name` and `propaedia_name`
+- when future mismatches appear, do not assume the issue is only in the Propaedia data; verify the
+  Propaedia recommendation wording, the Macropaedia contents-page wording, and the actual article
+  heading if an article-opening-page photo exists
+
 For now:
 
 - page lengths for the last article in each volume should stay blank until volume-end page evidence is added
@@ -246,6 +260,8 @@ For every photographed Propaedia page with extracted recommendations:
 4. fill `missing_titles` or `extra_titles` if anything is off
 5. check `propaedia_suggested_reading_risk_review.csv` first for the pages that needed line
    recombination or title normalization
+6. if a remaining mismatch still looks suspicious, treat it as a possible cross-source mismatch and
+   verify the Propaedia wording, the contents-page wording, and the article heading separately
 
 For dense multi-column pages, the extractor now also does a second OCR pass on cropped
 Macropaedia columns. That scratch OCR lives under:

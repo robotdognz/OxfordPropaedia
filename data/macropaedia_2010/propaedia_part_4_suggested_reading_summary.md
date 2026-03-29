@@ -57,6 +57,9 @@
 
 - Header context: `Division II. Section 423`
 - Topic summary: Major articles dealing with human diseases
+- Note: the 2010 contents page uses `CHILDHOOD DISEASES`, but the actual article heading in the
+  volume is `Childhood Diseases and Disorders`. Treat this as a known edge case showing that
+  mismatches can come from the contents page as well as from the Propaedia recommendation text.
 - Recommendations:
   - `Blood` -> `BLOOD` (v3 p125)
   - `Cancer` -> `CANCER` (v3 p519)

@@ -50,6 +50,13 @@ Use those fields with this split in mind:
   display that explains the Propaedia wording
 - when the names differ, keep both, because readers may navigate from a Propaedia recommendation but
   still need the actual contents-page title to find the article in the Macropaedia
+- note that a contents-page title can itself be abbreviated relative to the article heading inside
+  the volume, so future mismatches should be checked against both the contents page and the actual
+  article heading when that evidence exists
+- current example:
+  - contents page: `CHILDHOOD DISEASES`
+  - article heading: `Childhood Diseases and Disorders`
+  - Propaedia recommendation: `Childhood Diseases and Disorders`
 
 `propaedia_page_capture_index.csv` is block-based. A single image can appear on multiple rows when
 one photo contains more than one logical `Suggested reading` block. Use:

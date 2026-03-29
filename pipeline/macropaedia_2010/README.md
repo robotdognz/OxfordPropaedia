@@ -15,7 +15,11 @@ The current goal is to produce separate machine-readable data for:
 - preserved title crosswalks between Macropaedia contents names and Propaedia lookup/display names
 
 For eventual app use, treat the Macropaedia contents name as the default article label and the
-Propaedia name as an alias/crosswalk field.
+Propaedia name as an alias/crosswalk field. Also note that a contents-page title can be shorter
+than the actual article heading inside the volume. Current observed example:
+`CHILDHOOD DISEASES` in contents vs `Childhood Diseases and Disorders` on the article itself. When
+future mismatches appear, verify the Propaedia wording, the contents-page wording, and the article
+heading separately before deciding which source is wrong.
 
 ## Source images
 
