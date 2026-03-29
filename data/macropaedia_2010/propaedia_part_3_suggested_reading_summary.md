@@ -1,27 +1,18 @@
 # Part 3 Propaedia Suggested Reading
 
 - Pages captured: `22`
-- Matched recommendations: `104`
-- Unmatched recommendations: `17`
+- Matched recommendations: `115`
+- Unmatched recommendations: `8`
 
 ## Unmatched recommendations
 
 - Page `96`: `Bacteria and Other Monerans`
 - Page `96`: `Biosphere, The`
-- Page `100`: `ihmtl`
-- Page `100`: `Ferns and Other`
-- Page `100`: `Lower Vascular`
-- Page `100`: `Flatworms:`
-- Page `100`: `Platyhelminthes`
-- Page `100`: `Lamp Shells:`
-- Page `100`: `Phylum`
-- Page `100`: `Brachiopoda`
-- Page `100`: `Mollesks`
+- Page `100`: `Bacteria and Other Monerans`
+- Page `100`: `Lamp Shells: Phylum Brachiopoda`
 - Page `115`: `Photosynthesıs`
 - Page `133`: `Biosphere,The`
 - Page `134`: `Biosphere, The`
-- Page `137`: `Biosphere and Concepts`
-- Page `137`: `of Ecology, The`
 - Page `138`: `Conservation of Natural Resources`
 
 ## Page summaries
@@ -67,27 +58,30 @@
 - Header context: `100 Part Three. Life on Earth`
 - Recommendations:
   - `Algae` -> `ALGAE` (v1 p234)
-  - `ihmtl` -> unmatched
+  - `Amphibians` -> `AMPHIBIANS` (v1 p418)
+  - `Angiosperms: The Flowering Plants` -> `ANGIOSPERMS: The Flowering Plants` (v1 p603)
+  - `Animals` -> `ANIMALS` (v1 p766)
+  - `Annelids` -> `ANNELIDS` (v1 p778)
+  - `Arachnids` -> `ARACHNIDS` (v1 p853)
+  - `Arthropods` -> `ARTHROPODS` (v2 p108)
+  - `Aschelminths` -> `ASCHELMINTHS` (v2 p122)
+  - `Bacteria and Other Monerans` -> unmatched
+  - `Birds` -> `BIRDS` (v3 p1)
   - `Bryophytes` -> `BRYOPHYTES` (v3 p252)
   - `Chordates` -> `CHORDATES` (v4 p241)
   - `Cnidarians` -> `CNIDARIANS` (v4 p523)
   - `Crustaceans` -> `CRUSTACEANS` (v4 p840)
   - `Dinosaurs` -> `DINOSAURS` (v5 p315)
   - `Echinoderms` -> `ECHINODERMS` (v5 p857)
-  - `Ferns and Other` -> unmatched
-  - `Lower Vascular` -> unmatched
-  - `Plants` -> `PLANTS` (v13 p867)
+  - `Ferns and Other Lower Vascular Plants` -> `FERNS AND OTHER LOWER VASCULAR PLANTS` (v7 p163)
   - `Fishes` -> `FISHES` (v7 p192)
-  - `Flatworms:` -> unmatched
-  - `Platyhelminthes` -> unmatched
+  - `Flatworms: Phylum Platyhelminthes` -> `FLATWORMS: Phylum Platyhelminthes` (v7 p294)
   - `Fungi` -> `FUNGI` (v7 p597)
   - `Gymnosperms` -> `GYMNOSPERMS` (v8 p447)
   - `Insects` -> `INSECTS` (v9 p648)
-  - `Lamp Shells:` -> unmatched
-  - `Phylum` -> unmatched
-  - `Brachiopoda` -> unmatched
+  - `Lamp Shells: Phylum Brachiopoda` -> unmatched
   - `Mammals` -> `MAMMALS` (v11 p339)
-  - `Mollesks` -> unmatched
+  - `Mollusks` -> `MOLLUSKS` (v12 p296)
   - `Moss Animals: Phylum Bryozoa` -> `Moss ANIMALS: Phylum Bryozoa` (v12 p365)
   - `Plants` -> `PLANTS` (v13 p867)
   - `Protists` -> `PROTISTS` (v14 p268)
@@ -257,9 +251,8 @@
 - Header context: `Division V. Section 355`
 - Topic summary: Major articles dealing with biogeographic distribution of organisms: ecosystems
 - Recommendations:
-  - `Biosphere and Concepts` -> unmatched
+  - `Biosphere and Concepts of Ecology, The` -> `The BIOSPHERE and Concepts of Ecology` (v2 p1127)
   - `Rivers` -> `RIVERS` (v14 p843)
-  - `of Ecology, The` -> unmatched
   - `Trees` -> `TREES` (v16 p903)
   - `Lakes` -> `LAKES` (v10 p531)
   - `Oceans` -> `OCEANS` (v13 p134)

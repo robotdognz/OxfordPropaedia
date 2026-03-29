@@ -101,6 +101,26 @@ Outputs:
 
 This keeps the raw OCR-derived outputs intact and writes a separate reviewed layer on top.
 
+### Dense Propaedia pages
+
+Some Propaedia `Suggested reading` blocks are too dense for a reliable full-page OCR pass.
+The extractor now has a second-stage fallback for those pages:
+
+- it finds the `Suggested reading ...` to `MICROPAEDIA:` band from OCR geometry
+- crops that band into columns
+- reruns Vision OCR on the cropped column images
+- then rebuilds the recommendation list from the denser column OCR
+
+Those scratch files are written under:
+
+- `pipeline/output/macropaedia_2010/propaedia_dense_ocr/`
+
+The canonical tracked outputs remain:
+
+- `data/macropaedia_2010/propaedia_part_<n>_suggested_reading.json`
+- `data/macropaedia_2010/propaedia_part_<n>_suggested_reading.csv`
+- `data/macropaedia_2010/propaedia_part_<n>_suggested_reading_summary.md`
+
 ### 6. Initialize the long-running 2010 project database
 
 For the separate, photo-backed data project:

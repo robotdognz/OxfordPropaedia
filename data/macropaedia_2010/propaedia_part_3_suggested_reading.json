@@ -1,8 +1,8 @@
 {
   "partNumber": 3,
   "pageCount": 22,
-  "matchedRecommendationCount": 104,
-  "unmatchedRecommendationCount": 17,
+  "matchedRecommendationCount": 115,
+  "unmatchedRecommendationCount": 8,
   "pages": [
     {
       "partNumber": 3,
@@ -161,7 +161,7 @@
         {
           "sortOrder": 14,
           "observedTitle": "Coloration, Biological",
-          "extractionMethod": "combined_adjacent_ocr_lines_reordered",
+          "extractionMethod": "combined_2_adjacent_ocr_lines_reordered",
           "matchStatus": "matched",
           "matchMethod": "observed_comma_flip",
           "matchedTitle": "Biological COLORATION",
@@ -324,13 +324,109 @@
         },
         {
           "sortOrder": 2,
-          "observedTitle": "ihmtl",
+          "observedTitle": "Amphibians",
           "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "AMPHIBIANS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "418",
+          "matchedStartPageIndex": 418,
+          "matchedPageCountEstimate": 18
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Angiosperms: The Flowering Plants",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ANGIOSPERMS: The Flowering Plants",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "603",
+          "matchedStartPageIndex": 603,
+          "matchedPageCountEstimate": 163
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Animals",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ANIMALS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "766",
+          "matchedStartPageIndex": 766,
+          "matchedPageCountEstimate": 12
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Annelids",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ANNELIDS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "778",
+          "matchedStartPageIndex": 778,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Arachnids",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ARACHNIDS",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "853",
+          "matchedStartPageIndex": 853,
+          "matchedPageCountEstimate": 19
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Arthropods",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ARTHROPODS",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "108",
+          "matchedStartPageIndex": 108,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Aschelminths",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ASCHELMINTHS",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "122",
+          "matchedStartPageIndex": 122,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Bacteria and Other Monerans",
+          "extractionMethod": "forced_combined_2_adjacent_ocr_lines",
           "matchStatus": "unmatched",
           "matchMethod": null
         },
         {
-          "sortOrder": 3,
+          "sortOrder": 10,
+          "observedTitle": "Birds",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BIRDS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 112
+        },
+        {
+          "sortOrder": 11,
           "observedTitle": "Bryophytes",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -342,7 +438,7 @@
           "matchedPageCountEstimate": 6
         },
         {
-          "sortOrder": 4,
+          "sortOrder": 12,
           "observedTitle": "Chordates",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -354,7 +450,7 @@
           "matchedPageCountEstimate": 10
         },
         {
-          "sortOrder": 5,
+          "sortOrder": 13,
           "observedTitle": "Cnidarians",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -366,7 +462,7 @@
           "matchedPageCountEstimate": 6
         },
         {
-          "sortOrder": 6,
+          "sortOrder": 14,
           "observedTitle": "Crustaceans",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -378,7 +474,7 @@
           "matchedPageCountEstimate": 20
         },
         {
-          "sortOrder": 7,
+          "sortOrder": 15,
           "observedTitle": "Dinosaurs",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -390,7 +486,7 @@
           "matchedPageCountEstimate": 15
         },
         {
-          "sortOrder": 8,
+          "sortOrder": 16,
           "observedTitle": "Echinoderms",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -402,33 +498,19 @@
           "matchedPageCountEstimate": 9
         },
         {
-          "sortOrder": 9,
-          "observedTitle": "Ferns and Other",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 10,
-          "observedTitle": "Lower Vascular",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 11,
-          "observedTitle": "Plants",
-          "extractionMethod": "single_ocr_line",
+          "sortOrder": 17,
+          "observedTitle": "Ferns and Other Lower Vascular Plants",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
           "matchStatus": "matched",
           "matchMethod": "direct",
-          "matchedTitle": "PLANTS",
-          "matchedVolumeNumber": 13,
-          "matchedStartPage": "867",
-          "matchedStartPageIndex": 867,
+          "matchedTitle": "FERNS AND OTHER LOWER VASCULAR PLANTS",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "163",
+          "matchedStartPageIndex": 163,
           "matchedPageCountEstimate": 16
         },
         {
-          "sortOrder": 12,
+          "sortOrder": 18,
           "observedTitle": "Fishes",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -440,21 +522,19 @@
           "matchedPageCountEstimate": 85
         },
         {
-          "sortOrder": 13,
-          "observedTitle": "Flatworms:",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "sortOrder": 19,
+          "observedTitle": "Flatworms: Phylum Platyhelminthes",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FLATWORMS: Phylum Platyhelminthes",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "294",
+          "matchedStartPageIndex": 294,
+          "matchedPageCountEstimate": 6
         },
         {
-          "sortOrder": 14,
-          "observedTitle": "Platyhelminthes",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 15,
+          "sortOrder": 20,
           "observedTitle": "Fungi",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -466,7 +546,7 @@
           "matchedPageCountEstimate": 14
         },
         {
-          "sortOrder": 16,
+          "sortOrder": 21,
           "observedTitle": "Gymnosperms",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -478,7 +558,7 @@
           "matchedPageCountEstimate": 19
         },
         {
-          "sortOrder": 17,
+          "sortOrder": 22,
           "observedTitle": "Insects",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -490,28 +570,14 @@
           "matchedPageCountEstimate": 93
         },
         {
-          "sortOrder": 18,
-          "observedTitle": "Lamp Shells:",
-          "extractionMethod": "single_ocr_line",
+          "sortOrder": 23,
+          "observedTitle": "Lamp Shells: Phylum Brachiopoda",
+          "extractionMethod": "forced_combined_3_adjacent_ocr_lines",
           "matchStatus": "unmatched",
           "matchMethod": null
         },
         {
-          "sortOrder": 19,
-          "observedTitle": "Phylum",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 20,
-          "observedTitle": "Brachiopoda",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 21,
+          "sortOrder": 24,
           "observedTitle": "Mammals",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -523,16 +589,21 @@
           "matchedPageCountEstimate": 121
         },
         {
-          "sortOrder": 22,
-          "observedTitle": "Mollesks",
+          "sortOrder": 25,
+          "observedTitle": "Mollusks",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MOLLUSKS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "296",
+          "matchedStartPageIndex": 296,
+          "matchedPageCountEstimate": 27
         },
         {
-          "sortOrder": 23,
+          "sortOrder": 26,
           "observedTitle": "Moss Animals: Phylum Bryozoa",
-          "extractionMethod": "combined_adjacent_ocr_lines",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
           "matchStatus": "matched",
           "matchMethod": "direct",
           "matchedTitle": "Moss ANIMALS: Phylum Bryozoa",
@@ -542,7 +613,7 @@
           "matchedPageCountEstimate": 4
         },
         {
-          "sortOrder": 24,
+          "sortOrder": 27,
           "observedTitle": "Plants",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -554,7 +625,7 @@
           "matchedPageCountEstimate": 16
         },
         {
-          "sortOrder": 25,
+          "sortOrder": 28,
           "observedTitle": "Protists",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -566,7 +637,7 @@
           "matchedPageCountEstimate": 11
         },
         {
-          "sortOrder": 26,
+          "sortOrder": 29,
           "observedTitle": "Protozoa",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -578,7 +649,7 @@
           "matchedPageCountEstimate": 10
         },
         {
-          "sortOrder": 27,
+          "sortOrder": 30,
           "observedTitle": "Reptiles",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -590,9 +661,9 @@
           "matchedPageCountEstimate": 37
         },
         {
-          "sortOrder": 28,
+          "sortOrder": 31,
           "observedTitle": "Sponges: Phylum Porifera",
-          "extractionMethod": "combined_adjacent_ocr_lines",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
           "matchStatus": "matched",
           "matchMethod": "direct",
           "matchedTitle": "SPONGES: Phylum Porifera",
@@ -602,7 +673,7 @@
           "matchedPageCountEstimate": 7
         },
         {
-          "sortOrder": 29,
+          "sortOrder": 32,
           "observedTitle": "Viruses",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -1428,10 +1499,15 @@
       "recommendations": [
         {
           "sortOrder": 1,
-          "observedTitle": "Biosphere and Concepts",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "observedTitle": "Biosphere and Concepts of Ecology, The",
+          "extractionMethod": "combined_2_fragment_titles",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The BIOSPHERE and Concepts of Ecology",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1127",
+          "matchedStartPageIndex": 1127,
+          "matchedPageCountEstimate": null
         },
         {
           "sortOrder": 2,
@@ -1447,13 +1523,6 @@
         },
         {
           "sortOrder": 3,
-          "observedTitle": "of Ecology, The",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 4,
           "observedTitle": "Trees",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -1465,7 +1534,7 @@
           "matchedPageCountEstimate": 11
         },
         {
-          "sortOrder": 5,
+          "sortOrder": 4,
           "observedTitle": "Lakes",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -1477,7 +1546,7 @@
           "matchedPageCountEstimate": 9
         },
         {
-          "sortOrder": 6,
+          "sortOrder": 5,
           "observedTitle": "Oceans",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",

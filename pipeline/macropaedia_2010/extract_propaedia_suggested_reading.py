@@ -7,11 +7,14 @@ import argparse
 import csv
 import json
 import re
+import subprocess
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
-from paths import DATA_DIR, PROJECT_DATA_DIR, RAW_OUTPUT_DIR
+from PIL import Image
+
+from paths import DATA_DIR, PROJECT_DATA_DIR, RAW_OUTPUT_DIR, IMAGE_ROOT, REPO_ROOT
 
 
 PARENTHETICAL_RE = re.compile(r"\s*\([^)]*\)")
@@ -261,6 +264,232 @@ def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object
     return ordered_lines
 
 
+def detect_dense_macro_columns(
+    ocr_lines: list[dict[str, object]],
+) -> tuple[tuple[float, float], list[tuple[float, float]]] | None:
+    if not ocr_lines:
+        return None
+
+    def line_text(line: dict[str, object]) -> str:
+        return str(line.get("text", "")).strip()
+
+    def mid_x(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["midX"])
+
+    def mid_y(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["midY"])
+
+    def height(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["height"])
+
+    def left_x(line: dict[str, object]) -> float:
+        return float(line["uprightBoundingBox"]["x"])
+
+    def right_x(line: dict[str, object]) -> float:
+        box = line["uprightBoundingBox"]
+        return float(box["x"]) + float(box["width"])
+
+    suggested = next(
+        (line for line in ocr_lines if line_text(line).startswith("Suggested reading in the Encyclopædia Britannica:")),
+        None,
+    )
+    micro = next((line for line in ocr_lines if line_text(line).startswith("MICROPAEDIA:")), None)
+    if suggested is None or micro is None:
+        return None
+
+    crop_top = min(0.985, mid_y(suggested) + max(height(suggested) * 1.35, 0.018))
+    crop_bottom = max(0.015, mid_y(micro) - max(height(micro) * 0.9, 0.012))
+    if crop_bottom >= crop_top:
+        return None
+
+    candidate_lines = [
+        line
+        for line in ocr_lines
+        if crop_bottom < mid_y(line) < crop_top
+        and not line_text(line).startswith("Suggested reading in the Encyclopædia Britannica:")
+        and not line_text(line).startswith("MACROPAEDIA:")
+        and not line_text(line).startswith("MICROPAEDIA:")
+    ]
+    if len(candidate_lines) < 8:
+        return None
+
+    sorted_by_x = sorted(candidate_lines, key=mid_x)
+    columns: list[list[dict[str, object]]] = []
+    current_column: list[dict[str, object]] = []
+    previous_x: float | None = None
+    for line in sorted_by_x:
+        x = mid_x(line)
+        if previous_x is None or x - previous_x <= 0.1:
+            current_column.append(line)
+        else:
+            columns.append(current_column)
+            current_column = [line]
+        previous_x = x
+    if current_column:
+        columns.append(current_column)
+
+    if len(columns) < 3:
+        return None
+
+    column_ranges: list[tuple[float, float]] = []
+    for index, column in enumerate(columns):
+        observed_left = min(left_x(line) for line in column)
+        observed_right = max(right_x(line) for line in column)
+        if index == 0:
+            left = max(0.03, observed_left - 0.05)
+        else:
+            prev_right = max(right_x(line) for line in columns[index - 1])
+            left = max(0.03, min(observed_left - 0.03, (prev_right + observed_left) / 2 - 0.01))
+        if index == len(columns) - 1:
+            right = min(0.97, observed_right + 0.05)
+        else:
+            next_left = min(left_x(line) for line in columns[index + 1])
+            right = min(0.97, max(observed_right + 0.03, (observed_right + next_left) / 2 + 0.01))
+        column_ranges.append((left, right))
+
+    return (crop_bottom, crop_top), column_ranges
+
+
+def dense_crop_directories(stem: str) -> tuple[Path, Path]:
+    base_dir = RAW_OUTPUT_DIR / "propaedia_dense_ocr" / stem
+    return base_dir / "crops", base_dir / "ocr"
+
+
+def write_dense_crop_images(
+    image_path: Path,
+    crop_bounds: tuple[float, float],
+    column_ranges: list[tuple[float, float]],
+    output_dir: Path,
+) -> list[Path]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    existing = sorted(output_dir.glob("column-*.jpg"))
+    if len(existing) == len(column_ranges):
+        return existing
+
+    image = Image.open(image_path)
+    width, height = image.size
+    crop_bottom, crop_top = crop_bounds
+    crop_top_px = int(height * (1 - crop_top))
+    crop_bottom_px = int(height * (1 - crop_bottom))
+
+    for child in existing:
+        child.unlink()
+
+    crop_paths: list[Path] = []
+    for index, (left, right) in enumerate(column_ranges, start=1):
+        crop = image.crop(
+            (
+                int(width * left),
+                crop_top_px,
+                int(width * right),
+                crop_bottom_px,
+            )
+        )
+        crop = crop.resize((crop.size[0] * 3, crop.size[1] * 3))
+        crop_path = output_dir / f"column-{index:02d}.jpg"
+        crop.save(crop_path, quality=95)
+        crop_paths.append(crop_path)
+    return crop_paths
+
+
+def ensure_dense_crop_ocr(crop_dir: Path, output_dir: Path) -> None:
+    manifest_path = output_dir / "manifest.json"
+    crop_mtime = max((path.stat().st_mtime for path in crop_dir.glob("*.jpg")), default=0)
+    if manifest_path.exists() and manifest_path.stat().st_mtime >= crop_mtime:
+        return
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    crop_arg = str(crop_dir.relative_to(REPO_ROOT))
+    output_arg = str(output_dir.relative_to(REPO_ROOT))
+    try:
+        subprocess.run(
+            [
+                "swift",
+                "pipeline/macropaedia_2010/ocr_contents.swift",
+                "--input-dir",
+                crop_arg,
+                "--output-dir",
+                output_arg,
+            ],
+            cwd=REPO_ROOT,
+            check=True,
+        )
+    except subprocess.CalledProcessError:
+        if manifest_path.exists():
+            return
+        raise
+
+
+def clean_dense_crop_lines(lines: list[str]) -> list[str]:
+    cleaned: list[str] = []
+    for line in lines:
+        lowered = line.lower()
+        if lowered in {"laanmd", "tion", "ion", "ihmtl"}:
+            continue
+        if any(
+            marker in lowered
+            for marker in (
+                "suggested reading",
+                "encyclop",
+                "britannica",
+                "major article",
+                "major at",
+                "major ar",
+                "dealing with",
+                "classification of living things",
+                "living things",
+                "reference inform",
+                "selected e",
+                "micro paedia",
+                "micropaedia",
+            )
+        ):
+            if "micro" in lowered or "reference inform" in lowered:
+                break
+            continue
+        cleaned.append(line)
+    return cleaned
+
+
+def should_force_combine_fragments(fragments: list[str]) -> bool:
+    if not fragments:
+        return False
+
+    first = fragments[0].lower()
+    if len(fragments) == 2:
+        if fragments[0].endswith(":") or fragments[0].endswith(","):
+            return True
+        if first.endswith(" and other"):
+            return True
+    if len(fragments) >= 3 and fragments[1] in {"Phylum", "Lower Vascular"}:
+        return True
+    return False
+
+
+def extract_macropaedia_block_from_dense_column_ocr(
+    image_relative_path: str,
+    ocr_lines: list[dict[str, object]],
+) -> list[str]:
+    layout = detect_dense_macro_columns(ocr_lines)
+    if layout is None:
+        return []
+
+    crop_bounds, column_ranges = layout
+    stem = Path(image_relative_path).stem
+    crop_dir, dense_ocr_dir = dense_crop_directories(stem)
+    crop_paths = write_dense_crop_images(IMAGE_ROOT / image_relative_path, crop_bounds, column_ranges, crop_dir)
+    if not crop_paths:
+        return []
+
+    ensure_dense_crop_ocr(crop_dir, dense_ocr_dir)
+
+    ordered_lines: list[str] = []
+    for crop_path in crop_paths:
+        ocr_text_path = dense_ocr_dir / "ocr" / f"{crop_path.stem}.txt"
+        ordered_lines.extend(clean_dense_crop_lines(read_ocr_lines(ocr_text_path)))
+    return ordered_lines
+
+
 def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tuple[Article | None, str | None]:
     for variant, method in lookup_variants(title).items():
         match = article_index.get(variant)
@@ -270,16 +499,21 @@ def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tu
     return None, None
 
 
-def combine_adjacent_title_fragments(left: str, right: str) -> list[tuple[str, str]]:
-    forward = f"{left} {right}".strip()
-    reverse = f"{right} {left}".strip()
+def combine_adjacent_title_fragments(fragments: list[str]) -> list[tuple[str, str]]:
+    forward = " ".join(fragment.strip() for fragment in fragments if fragment.strip()).strip()
+    if not forward:
+        return []
 
-    candidates: list[tuple[str, str]] = []
-    if right.endswith(",") or right.endswith(":"):
-        candidates.append((reverse, "combined_adjacent_ocr_lines_reordered"))
-    candidates.append((forward, "combined_adjacent_ocr_lines"))
-    if reverse != forward:
-        candidates.append((reverse, "combined_adjacent_ocr_lines_reordered"))
+    method_suffix = f"{len(fragments)}_adjacent_ocr_lines"
+    candidates: list[tuple[str, str]] = [(forward, f"combined_{method_suffix}")]
+
+    if len(fragments) == 2:
+        left, right = fragments
+        reverse = f"{right} {left}".strip()
+        if right.endswith(",") or right.endswith(":"):
+            candidates.insert(0, (reverse, f"combined_{method_suffix}_reordered"))
+        elif reverse != forward:
+            candidates.append((reverse, f"combined_{method_suffix}_reordered"))
     return candidates
 
 
@@ -313,19 +547,30 @@ def split_descriptor_and_titles(
     titles: list[tuple[str, str]] = []
     while index < len(block_lines):
         current = block_lines[index]
-        if index + 1 < len(block_lines):
-            current_match, _ = match_title(current, article_index)
-            next_match, _ = match_title(block_lines[index + 1], article_index)
-            if current_match is None and next_match is None:
-                for combined_title, extraction_method in combine_adjacent_title_fragments(current, block_lines[index + 1]):
+        current_match, _ = match_title(current, article_index)
+        if current_match is None:
+            combined = False
+            for window_size in (3, 2):
+                if index + window_size > len(block_lines):
+                    continue
+                window = block_lines[index : index + window_size]
+                force_combine = should_force_combine_fragments(window)
+                if not force_combine and any(match_title(fragment, article_index)[0] is not None for fragment in window):
+                    continue
+                for combined_title, extraction_method in combine_adjacent_title_fragments(window):
                     combined_match, _ = match_title(combined_title, article_index)
                     if combined_match is not None:
                         titles.append((combined_title, extraction_method))
-                        index += 2
+                        index += window_size
+                        combined = True
                         break
-                else:
-                    titles.append((current, "single_ocr_line"))
-                    index += 1
+                if not combined and force_combine:
+                    titles.append((window[0] + " " + " ".join(window[1:]), f"forced_combined_{window_size}_adjacent_ocr_lines"))
+                    index += window_size
+                    combined = True
+                if combined:
+                    break
+            if combined:
                 continue
         titles.append((current, "single_ocr_line"))
         index += 1
@@ -349,18 +594,23 @@ def reconcile_fragmented_titles(
     for left in unmatched_indices:
         if left in used:
             continue
-        for right in unmatched_indices:
-            if right <= left or right in used:
+        left_title = str(recommendations[left]["observedTitle"])
+        if not (left_title.endswith(",") or left_title.endswith(":") or len(left_title.split()) <= 4):
+            continue
+        for window_size in (3, 2):
+            window = [left]
+            cursor = left + 1
+            while len(window) < window_size and cursor < len(recommendations):
+                if cursor in used:
+                    cursor += 1
+                    continue
+                if recommendations[cursor]["matchStatus"] == "unmatched":
+                    window.append(cursor)
+                cursor += 1
+            if len(window) != window_size:
                 continue
-            left_title = str(recommendations[left]["observedTitle"])
-            right_title = str(recommendations[right]["observedTitle"])
-            if not (
-                left_title.endswith(",")
-                or left_title.endswith(":")
-                or (len(left_title.split()) == 1 and len(right_title.split()) == 1)
-            ):
-                continue
-            for combined_title, extraction_method in combine_adjacent_title_fragments(left_title, right_title):
+            fragments = [str(recommendations[index]["observedTitle"]) for index in window]
+            for combined_title, extraction_method in combine_adjacent_title_fragments(fragments):
                 match, match_method = match_title(combined_title, article_index)
                 if match is None:
                     continue
@@ -376,8 +626,8 @@ def reconcile_fragmented_titles(
                     "matchedStartPageIndex": match.start_page_index,
                     "matchedPageCountEstimate": match.page_count_estimate,
                 }
-                used.add(left)
-                used.add(right)
+                for index in window:
+                    used.add(index)
                 break
             if left in used:
                 break
@@ -404,11 +654,15 @@ def build_page_payload(
     ocr_path = ocr_dir / f"{stem}.txt"
     ocr_lines_path = ocr_dir.parent / "ocr_lines" / f"{stem}.json"
     lines = read_ocr_lines(ocr_path)
+    ocr_line_payload = read_ocr_line_payload(ocr_lines_path)
     block, saw_macro_label = extract_macropaedia_block(lines)
     if not saw_macro_label:
-        geometry_block = extract_macropaedia_block_from_ocr_geometry(read_ocr_line_payload(ocr_lines_path))
+        geometry_block = extract_macropaedia_block_from_ocr_geometry(ocr_line_payload)
         if geometry_block:
             block = geometry_block
+    dense_block = extract_macropaedia_block_from_dense_column_ocr(image_relative_path, ocr_line_payload)
+    if len(dense_block) > len(block):
+        block = dense_block
     topic_summary, titles = split_descriptor_and_titles(block, article_index)
 
     page_payload: dict[str, object] = {

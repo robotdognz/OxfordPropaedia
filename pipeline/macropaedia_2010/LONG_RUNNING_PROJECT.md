@@ -207,6 +207,11 @@ For every photographed Propaedia page with extracted recommendations:
 5. check `propaedia_suggested_reading_risk_review.csv` first for the pages that needed line
    recombination or title normalization
 
+For dense multi-column pages, the extractor now also does a second OCR pass on cropped
+Macropaedia columns. That scratch OCR lives under:
+
+- `pipeline/output/macropaedia_2010/propaedia_dense_ocr/`
+
 Primary tracked files:
 
 - `propaedia_suggested_reading_page_review.csv`
