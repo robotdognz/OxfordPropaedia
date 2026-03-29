@@ -1,17 +1,14 @@
 # Part 3 Propaedia Suggested Reading
 
 - Pages captured: `22`
-- Matched recommendations: `115`
-- Unmatched recommendations: `8`
+- Matched recommendations: `118`
+- Unmatched recommendations: `5`
 
 ## Unmatched recommendations
 
-- Page `96`: `Bacteria and Other Monerans`
 - Page `96`: `Biosphere, The`
-- Page `100`: `Bacteria and Other Monerans`
 - Page `100`: `Lamp Shells: Phylum Brachiopoda`
-- Page `115`: `Photosynthesıs`
-- Page `133`: `Biosphere,The`
+- Page `133`: `Biosphere, The`
 - Page `134`: `Biosphere, The`
 - Page `138`: `Conservation of Natural Resources`
 
@@ -25,7 +22,7 @@
   - `Growth and Development, Biological` -> `Biological GROWTH AND DEVELOPMENT` (v8 p361)
   - `Animals` -> `ANIMALS` (v1 p766)
   - `Life` -> `LIFE` (v10 p964)
-  - `Bacteria and Other Monerans` -> unmatched
+  - `Bacteria and Other Monerans` -> `BACTERIA AND OTHER MONERANS` (v2 p570)
   - `Metabolism` -> `METABOLISM` (v11 p893)
   - `Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
   - `Mimicry` -> `MIMICRY` (v12 p144)
@@ -65,7 +62,7 @@
   - `Arachnids` -> `ARACHNIDS` (v1 p853)
   - `Arthropods` -> `ARTHROPODS` (v2 p108)
   - `Aschelminths` -> `ASCHELMINTHS` (v2 p122)
-  - `Bacteria and Other Monerans` -> unmatched
+  - `Bacteria and Other Monerans` -> `BACTERIA AND OTHER MONERANS` (v2 p570)
   - `Birds` -> `BIRDS` (v3 p1)
   - `Bryophytes` -> `BRYOPHYTES` (v3 p252)
   - `Chordates` -> `CHORDATES` (v4 p241)
@@ -108,7 +105,7 @@
 - Recommendations:
   - `Cells: Their Structures and Functions` -> `CELLS: Their Structures and Functions` (v3 p565)
   - `Metabolism` -> `METABOLISM` (v11 p893)
-  - `Photosynthesıs` -> unmatched
+  - `Photosynthesıs` -> `PHOTOSYNTHESIS` (v13 p799)
 
 ### Page 116
 
@@ -212,7 +209,7 @@
 - Header context: `130 Part Three. Life on Earth`
 - Topic summary: Major article dealing with the nature and patterns of behavioral responses
 - Recommendations:
-  - `• Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
+  - `Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
 
 ### Page 131
 
@@ -227,7 +224,7 @@
 - Header context: `Division V. Section 352`
 - Topic summary: Major article dealing with the basic features of the biosphere
 - Recommendations:
-  - `Biosphere,The` -> unmatched
+  - `Biosphere, The` -> unmatched
 
 ### Page 134
 

@@ -24,6 +24,8 @@ HEADER_CONTEXT_RE = re.compile(r"(Division\s+[IVXLC]+\.\s+Section\s+\d+)")
 PAGE_RE = re.compile(r"^\s*(\d+)\b")
 TRAILING_PAGE_RE = re.compile(r"\b(\d+)\s*$")
 LEADING_ARTICLE_COLON_RE = re.compile(r"^(.*?),\s*(The|A|An)\s*:\s*(.*)$", re.IGNORECASE)
+LEADING_BULLET_RE = re.compile(r"^[•●◦▪·*]+\s*")
+MISSING_COMMA_SPACE_RE = re.compile(r",(?=\S)")
 
 
 @dataclass(frozen=True)
@@ -66,6 +68,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def normalize_key(value: str) -> str:
+    value = value.translate(
+        str.maketrans(
+            {
+                "ı": "i",
+                "İ": "I",
+            }
+        )
+    )
     ascii_value = (
         unicodedata.normalize("NFKD", value)
         .encode("ascii", "ignore")
@@ -110,6 +120,11 @@ def lookup_variants(title: str) -> dict[str, str]:
         add(f"{article} {head}: {tail}", "comma_article_colon")
 
     return variants
+
+
+def sanitize_observed_title(title: str) -> str:
+    title = LEADING_BULLET_RE.sub("", title).strip()
+    return MISSING_COMMA_SPACE_RE.sub(", ", title)
 
 
 def load_article_index(path: Path) -> dict[str, tuple[Article, str]]:
@@ -500,7 +515,11 @@ def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tu
 
 
 def combine_adjacent_title_fragments(fragments: list[str]) -> list[tuple[str, str]]:
-    forward = " ".join(fragment.strip() for fragment in fragments if fragment.strip()).strip()
+    forward = " ".join(
+        sanitize_observed_title(fragment)
+        for fragment in fragments
+        if sanitize_observed_title(fragment)
+    ).strip()
     if not forward:
         return []
 
@@ -546,14 +565,14 @@ def split_descriptor_and_titles(
 
     titles: list[tuple[str, str]] = []
     while index < len(block_lines):
-        current = block_lines[index]
+        current = sanitize_observed_title(block_lines[index])
         current_match, _ = match_title(current, article_index)
         if current_match is None:
             combined = False
             for window_size in (3, 2):
                 if index + window_size > len(block_lines):
                     continue
-                window = block_lines[index : index + window_size]
+                window = [sanitize_observed_title(line) for line in block_lines[index : index + window_size]]
                 force_combine = should_force_combine_fragments(window)
                 if not force_combine and any(match_title(fragment, article_index)[0] is not None for fragment in window):
                     continue
@@ -565,7 +584,7 @@ def split_descriptor_and_titles(
                         combined = True
                         break
                 if not combined and force_combine:
-                    titles.append((window[0] + " " + " ".join(window[1:]), f"forced_combined_{window_size}_adjacent_ocr_lines"))
+                    titles.append((" ".join(window), f"forced_combined_{window_size}_adjacent_ocr_lines"))
                     index += window_size
                     combined = True
                 if combined:

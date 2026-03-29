@@ -14,6 +14,8 @@ from propaedia_name_aliases import (
     build_propaedia_name_candidate_summary,
     build_propaedia_name_evidence,
     build_propaedia_name_summary_lookup,
+    build_unmatched_propaedia_occurrences,
+    build_unmatched_propaedia_summary,
     discover_payloads,
 )
 
@@ -187,10 +189,11 @@ def fetch_rows(connection: sqlite3.Connection, query: str) -> list[sqlite3.Row]:
 
 
 def export_worklists(connection: sqlite3.Connection) -> None:
-    alias_summary_rows = build_propaedia_name_candidate_summary(
-        build_propaedia_name_evidence(discover_payloads())
-    )
+    payloads = discover_payloads()
+    alias_evidence_rows = build_propaedia_name_evidence(payloads)
+    alias_summary_rows = build_propaedia_name_candidate_summary(alias_evidence_rows)
     alias_summary = build_propaedia_name_summary_lookup(alias_summary_rows)
+    unmatched_occurrences = build_unmatched_propaedia_occurrences(payloads)
 
     write_csv(
         PROJECT_DATA_DIR / "propaedia_name_evidence_worklist.csv",
@@ -206,7 +209,7 @@ def export_worklists(connection: sqlite3.Connection) -> None:
             "propaedia_page_reference",
             "source_image_relative_path",
         ],
-        build_propaedia_name_evidence(discover_payloads()),
+        alias_evidence_rows,
     )
 
     write_csv(
@@ -224,6 +227,36 @@ def export_worklists(connection: sqlite3.Connection) -> None:
             "alternate_propaedia_names",
         ],
         alias_summary_rows,
+    )
+
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_unmatched_contents_occurrences.csv",
+        [
+            "part_number",
+            "capture_sequence",
+            "propaedia_page_reference",
+            "header_context",
+            "topic_summary",
+            "observed_propaedia_name",
+            "extraction_method",
+            "image_relative_path",
+        ],
+        unmatched_occurrences,
+    )
+
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_unmatched_contents_summary.csv",
+        [
+            "observed_propaedia_name",
+            "occurrence_count",
+            "part_numbers",
+            "propaedia_page_references",
+            "header_contexts",
+            "image_relative_paths",
+            "review_notes",
+            "resolved_macropaedia_contents_name",
+        ],
+        build_unmatched_propaedia_summary(unmatched_occurrences),
     )
 
     article_rows = fetch_rows(
@@ -444,6 +477,8 @@ Generated files:
 - `article_identity_worklist.csv`
 - `propaedia_name_evidence_worklist.csv`
 - `propaedia_name_candidate_summary.csv`
+- `propaedia_unmatched_contents_occurrences.csv`
+- `propaedia_unmatched_contents_summary.csv`
 - `article_contents_capture_worklist.csv`
 - `propaedia_mapping_worklist.csv`
 - `britannica_breakdown_worklist.csv`

@@ -1,8 +1,8 @@
 {
   "partNumber": 3,
   "pageCount": 22,
-  "matchedRecommendationCount": 115,
-  "unmatchedRecommendationCount": 8,
+  "matchedRecommendationCount": 118,
+  "unmatchedRecommendationCount": 5,
   "pages": [
     {
       "partNumber": 3,
@@ -52,8 +52,13 @@
           "sortOrder": 4,
           "observedTitle": "Bacteria and Other Monerans",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BACTERIA AND OTHER MONERANS",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "570",
+          "matchedStartPageIndex": 570,
+          "matchedPageCountEstimate": 17
         },
         {
           "sortOrder": 5,
@@ -409,9 +414,14 @@
         {
           "sortOrder": 9,
           "observedTitle": "Bacteria and Other Monerans",
-          "extractionMethod": "forced_combined_2_adjacent_ocr_lines",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BACTERIA AND OTHER MONERANS",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "570",
+          "matchedStartPageIndex": 570,
+          "matchedPageCountEstimate": 17
         },
         {
           "sortOrder": 10,
@@ -792,8 +802,13 @@
           "sortOrder": 3,
           "observedTitle": "Photosynthes\u0131s",
           "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PHOTOSYNTHESIS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "799",
+          "matchedStartPageIndex": 799,
+          "matchedPageCountEstimate": 8
         }
       ]
     },
@@ -1351,7 +1366,7 @@
       "recommendations": [
         {
           "sortOrder": 1,
-          "observedTitle": "\u2022 Behaviour, Animal",
+          "observedTitle": "Behaviour, Animal",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
           "matchMethod": "observed_comma_flip",
@@ -1407,7 +1422,7 @@
       "recommendations": [
         {
           "sortOrder": 1,
-          "observedTitle": "Biosphere,The",
+          "observedTitle": "Biosphere, The",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "unmatched",
           "matchMethod": null

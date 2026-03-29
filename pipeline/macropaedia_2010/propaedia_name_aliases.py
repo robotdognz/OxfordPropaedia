@@ -118,3 +118,66 @@ def build_propaedia_name_summary_lookup(
         (int(row["volume_number"]), str(row["start_page_label"])): row
         for row in summary_rows
     }
+
+
+def build_unmatched_propaedia_occurrences(payloads: list[dict[str, object]]) -> list[dict[str, object]]:
+    rows: list[dict[str, object]] = []
+    for payload in payloads:
+        part_number = int(payload["partNumber"])
+        for page in payload["pages"]:
+            for recommendation in page["recommendations"]:
+                if recommendation["matchStatus"] != "unmatched":
+                    continue
+                rows.append(
+                    {
+                        "part_number": part_number,
+                        "capture_sequence": page["captureSequence"],
+                        "propaedia_page_reference": page["propaediaPageReference"],
+                        "header_context": page["headerContext"],
+                        "topic_summary": page["topicSummary"],
+                        "observed_propaedia_name": recommendation["observedTitle"],
+                        "extraction_method": recommendation.get("extractionMethod", "") or "",
+                        "image_relative_path": page["imageRelativePath"],
+                    }
+                )
+    return rows
+
+
+def build_unmatched_propaedia_summary(
+    occurrence_rows: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    grouped: dict[str, dict[str, object]] = {}
+    for row in occurrence_rows:
+        key = str(row["observed_propaedia_name"])
+        summary = grouped.setdefault(
+            key,
+            {
+                "observed_propaedia_name": key,
+                "occurrence_count": 0,
+                "part_numbers": set(),
+                "propaedia_page_references": set(),
+                "header_contexts": set(),
+                "image_relative_paths": set(),
+            },
+        )
+        summary["occurrence_count"] += 1
+        summary["part_numbers"].add(str(row["part_number"]))
+        summary["propaedia_page_references"].add(str(row["propaedia_page_reference"]))
+        summary["header_contexts"].add(str(row["header_context"]))
+        summary["image_relative_paths"].add(str(row["image_relative_path"]))
+
+    return [
+        {
+            "observed_propaedia_name": key,
+            "occurrence_count": value["occurrence_count"],
+            "part_numbers": " | ".join(sorted(value["part_numbers"])),
+            "propaedia_page_references": " | ".join(
+                sorted(value["propaedia_page_references"], key=lambda item: (len(item), item))
+            ),
+            "header_contexts": " | ".join(sorted(value["header_contexts"])),
+            "image_relative_paths": " | ".join(sorted(value["image_relative_paths"])),
+            "review_notes": "",
+            "resolved_macropaedia_contents_name": "",
+        }
+        for key, value in sorted(grouped.items(), key=lambda item: item[0].casefold())
+    ]

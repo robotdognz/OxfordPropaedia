@@ -1,9 +1,9 @@
 {
   "baselineUniqueCount": 666,
-  "candidateUniqueCount": 701,
-  "matchedCount": 630,
+  "candidateUniqueCount": 702,
+  "matchedCount": 631,
   "newIn2010Count": 71,
-  "missingFrom2010Count": 36,
+  "missingFrom2010Count": 35,
   "newIn2010": [
     {
       "title": "Ansel ADAMS",
@@ -1709,6 +1709,21 @@
       ],
       "matchedBaselineTitle": "Bach",
       "matchedBaselineLookupKey": "bach"
+    },
+    {
+      "title": "BACTERIA AND OTHER MONERANS",
+      "lookupKey": "bacteria and other monerans",
+      "volumes": [
+        2
+      ],
+      "startPages": [
+        "570"
+      ],
+      "pageCountEstimates": [
+        17
+      ],
+      "matchedBaselineTitle": "Bacteria and Other Monerans",
+      "matchedBaselineLookupKey": "bacteria and other monerans"
     },
     {
       "title": "BAGHDAD",
@@ -4180,7 +4195,7 @@
         "564"
       ],
       "pageCountEstimates": [
-        23
+        6
       ],
       "matchedBaselineTitle": "Bacon, Francis",
       "matchedBaselineLookupKey": "bacon, francis"
@@ -10394,14 +10409,6 @@
       "lookupKey": "australia pacific islands",
       "sectionCodes": [
         "977"
-      ]
-    },
-    {
-      "title": "Bacteria and Other Monerans",
-      "lookupKey": "bacteria and other monerans",
-      "sectionCodes": [
-        "311",
-        "313"
       ]
     },
     {

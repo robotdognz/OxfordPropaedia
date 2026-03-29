@@ -71,12 +71,12 @@ def discover_payloads(data_dir: Path) -> list[dict[str, object]]:
 
 def risk_reason(rec: dict[str, object]) -> str:
     reasons: list[str] = []
-    extraction_method = str(rec.get("extractionMethod", ""))
-    match_method = str(rec.get("matchMethod", ""))
+    extraction_method = rec.get("extractionMethod") or ""
+    match_method = rec.get("matchMethod") or ""
     if extraction_method and extraction_method != "single_ocr_line":
         reasons.append("ocr_line_recombination")
     if match_method and match_method != "direct":
-        reasons.append(match_method)
+        reasons.append(str(match_method))
     return "|".join(reasons)
 
 

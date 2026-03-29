@@ -100,6 +100,8 @@ Generated outputs:
 - `data/macropaedia_2010/project/article_identity_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_name_evidence_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_name_candidate_summary.csv`
+- `data/macropaedia_2010/project/propaedia_unmatched_contents_occurrences.csv`
+- `data/macropaedia_2010/project/propaedia_unmatched_contents_summary.csv`
 - `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
 - `data/macropaedia_2010/project/contents_page_review_human.csv`
 - `data/macropaedia_2010/project/contents_risk_review_human.csv`
@@ -161,11 +163,14 @@ Supporting alias evidence:
 
 - `propaedia_name_evidence_worklist.csv`
 - `propaedia_name_candidate_summary.csv`
+- `propaedia_unmatched_contents_occurrences.csv`
+- `propaedia_unmatched_contents_summary.csv`
 
 Those files track:
 
 - per-instance observed Propaedia names matched from photographed pages
 - the current best suggested `propaedia_name` for each Macropaedia article
+- the remaining observed Propaedia titles that still do not map to 2010 Macropaedia contents
 
 ### Phase 1.5. Visually verify the contents-page extraction
 

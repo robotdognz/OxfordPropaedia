@@ -15,6 +15,8 @@ from propaedia_name_aliases import (
     build_propaedia_name_candidate_summary,
     build_propaedia_name_evidence,
     build_propaedia_name_summary_lookup,
+    build_unmatched_propaedia_occurrences,
+    build_unmatched_propaedia_summary,
     discover_payloads,
 )
 
@@ -36,6 +38,33 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) 
         writer.writerows(rows)
 
 
+def read_existing_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def index_existing_rows(rows: list[dict[str, str]], key_fields: list[str]) -> dict[tuple[str, ...], dict[str, str]]:
+    return {tuple(row.get(field, "") for field in key_fields): row for row in rows}
+
+
+def apply_existing_values(
+    rows: list[dict[str, object]],
+    existing_rows: dict[tuple[str, ...], dict[str, str]],
+    key_fields: list[str],
+    fields_to_preserve: list[str],
+) -> None:
+    for row in rows:
+        key = tuple(str(row.get(field, "")) for field in key_fields)
+        existing = existing_rows.get(key)
+        if existing is None:
+            continue
+        for field in fields_to_preserve:
+            if field in existing and existing[field]:
+                row[field] = existing[field]
+
+
 def fetch_rows(connection: sqlite3.Connection, query: str) -> list[sqlite3.Row]:
     return list(connection.execute(query))
 
@@ -44,6 +73,10 @@ def current_propaedia_name_summaries() -> list[dict[str, object]]:
     return build_propaedia_name_candidate_summary(
         build_propaedia_name_evidence(discover_payloads())
     )
+
+
+def current_unmatched_propaedia_occurrences() -> list[dict[str, object]]:
+    return build_unmatched_propaedia_occurrences(discover_payloads())
 
 
 def export_propaedia_name_evidence_worklist() -> None:
@@ -62,6 +95,46 @@ def export_propaedia_name_evidence_worklist() -> None:
             "source_image_relative_path",
         ],
         build_propaedia_name_evidence(discover_payloads()),
+    )
+
+
+def export_unmatched_propaedia_review_worklists() -> None:
+    occurrences = current_unmatched_propaedia_occurrences()
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_unmatched_contents_occurrences.csv",
+        [
+            "part_number",
+            "capture_sequence",
+            "propaedia_page_reference",
+            "header_context",
+            "topic_summary",
+            "observed_propaedia_name",
+            "extraction_method",
+            "image_relative_path",
+        ],
+        occurrences,
+    )
+    summary_path = PROJECT_DATA_DIR / "propaedia_unmatched_contents_summary.csv"
+    summary_rows = build_unmatched_propaedia_summary(occurrences)
+    apply_existing_values(
+        summary_rows,
+        index_existing_rows(read_existing_rows(summary_path), ["observed_propaedia_name"]),
+        ["observed_propaedia_name"],
+        ["review_notes", "resolved_macropaedia_contents_name"],
+    )
+    write_csv(
+        summary_path,
+        [
+            "observed_propaedia_name",
+            "occurrence_count",
+            "part_numbers",
+            "propaedia_page_references",
+            "header_contexts",
+            "image_relative_paths",
+            "review_notes",
+            "resolved_macropaedia_contents_name",
+        ],
+        summary_rows,
     )
 
 
@@ -348,6 +421,7 @@ def main() -> None:
     connection = sqlite3.connect(args.db)
     connection.row_factory = sqlite3.Row
     export_propaedia_name_evidence_worklist()
+    export_unmatched_propaedia_review_worklists()
     export_identity_worklist(connection)
     export_article_contents_worklist(connection)
     export_mapping_worklist(connection)
