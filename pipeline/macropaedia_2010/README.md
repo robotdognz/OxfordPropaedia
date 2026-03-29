@@ -121,6 +121,18 @@ The canonical tracked outputs remain:
 - `data/macropaedia_2010/propaedia_part_<n>_suggested_reading.csv`
 - `data/macropaedia_2010/propaedia_part_<n>_suggested_reading_summary.md`
 
+If one Propaedia photo contains more than one logical `Suggested reading` block, the capture index
+can now store multiple rows for the same `image_relative_path`. Each row can specify:
+
+- `block_index`
+- `section_code`
+- `crop_top_pct`
+- `crop_bottom_pct`
+- `header_context_override`
+
+The extractor will then emit one payload per logical block instead of merging the whole image into
+one section.
+
 ### 6. Initialize the long-running 2010 project database
 
 For the separate, photo-backed data project:

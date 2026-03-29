@@ -1,20 +1,20 @@
 # Part 3 Propaedia Suggested Reading
 
-- Pages captured: `22`
+- Logical blocks captured: `22`
 - Matched recommendations: `118`
 - Unmatched recommendations: `5`
 
 ## Unmatched recommendations
 
-- Page `96`: `Biosphere, The`
-- Page `100`: `Lamp Shells: Phylum Brachiopoda`
-- Page `133`: `Biosphere, The`
-- Page `134`: `Biosphere, The`
-- Page `138`: `Conservation of Natural Resources`
+- Page `96` / Section 311: `Biosphere, The`
+- Page `100` / Section 313: `Lamp Shells: Phylum Brachiopoda`
+- Page `133` / Section 351: `Biosphere, The`
+- Page `134` / Section 352: `Biosphere, The`
+- Page `138` / Section 355: `Conservation of Natural Resources`
 
-## Page summaries
+## Block summaries
 
-### Page 96
+### Page 96 / Section 311
 
 - Header context: `96 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with the characteristics of living things
@@ -39,7 +39,7 @@
   - `Fungi` -> `FUNGI` (v7 p597)
   - `Genetics and Heredity, The Principles of` -> `The Principles of GENETICS AND HEREDITY` (v7 p699)
 
-### Page 97
+### Page 97 / Section 312
 
 - Header context: `Division I. Section 312`
 - Topic summary: Major articles and a biography dealing with the origin of life and the evolution of living things
@@ -50,7 +50,7 @@
   - `Evolution, The Theory of` -> `The Theory of EVOLUTION` (v6 p855)
   - `Mimicry` -> `MIMICRY` (v12 p144)
 
-### Page 100
+### Page 100 / Section 313
 
 - Header context: `100 Part Three. Life on Earth`
 - Recommendations:
@@ -87,7 +87,7 @@
   - `Sponges: Phylum Porifera` -> `SPONGES: Phylum Porifera` (v16 p93)
   - `Viruses` -> `VIRUSES` (v17 p503)
 
-### Page 113
+### Page 113 / Section 321
 
 - Header context: `Division II. Section 321`
 - Topic summary: Major articles dealing with chemicals and the vital processes
@@ -98,7 +98,7 @@
   - `Cells: Their Structures and Functions` -> `CELLS: Their Structures and Functions` (v3 p565)
   - `Chemical Compounds` -> `CHEMICAL COMPOUNDS` (v3 p777)
 
-### Page 115
+### Page 115 / Section 322
 
 - Header context: `Division II. Section 322`
 - Topic summary: Major articles dealing with metabolism: bioenergetics and biosynthesis
@@ -107,7 +107,7 @@
   - `Metabolism` -> `METABOLISM` (v11 p893)
   - `Photosynthesıs` -> `PHOTOSYNTHESIS` (v13 p799)
 
-### Page 116
+### Page 116 / Section 323
 
 - Header context: `116 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with vital processes at the molecular level
@@ -117,14 +117,14 @@
   - `Muscles and Muscle Systems` -> `MUSCLES AND MUSCLE SYSTEMS` (v12 p452)
   - `Nerves and Nervous Systems` -> `NERVES AND NERVOUS SYSTEMS` (v12 p784)
 
-### Page 118
+### Page 118 / Section 331
 
 - Header context: `118 Part Three. Life on Earth`
 - Topic summary: Major article dealing with the cellular basis of form and function
 - Recommendations:
   - `Cells: Their Structures and Functions` -> `CELLS: Their Structures and Functions` (v3 p565)
 
-### Page 119
+### Page 119 / Section 332
 
 - Header context: `Division III. Section 332`
 - Topic summary: Major articles dealing with the relation of form and function in organisms
@@ -144,7 +144,7 @@
   - `Supportive and Connective Tissues` -> `SUPPORTIVE AND CONNECTIVE TISSUES` (v16 p272)
   - `Excretion and Excretory Systems` -> `EXCRETION AND EXCRETORY SYSTEMS` (v7 p1)
 
-### Page 121
+### Page 121 / Section 333
 
 - Header context: `Division III. Section 333`
 - Topic summary: Major articles dealing with the coordination of vital processes: regulation and integration
@@ -153,7 +153,7 @@
   - `Nerves and Nervous Systems` -> `NERVES AND NERVOUS SYSTEMS` (v12 p784)
   - `Sensory Reception` -> `SENSORY RECEPTION` (v15 p115)
 
-### Page 123
+### Page 123 / Section 334
 
 - Header context: `Division III. Section 335`
 - Topic summary: Major articles dealing with covering and support: integumentary, skeletal, and musculatory systems
@@ -162,7 +162,7 @@
   - `Muscles and Muscle Systems` -> `MUSCLES AND MUSCLE SYSTEMS` (v12 p452)
   - `Supportive and Connective Tissues` -> `SUPPORTIVE AND CONNECTIVE TISSUES` (v16 p272)
 
-### Page 124
+### Page 124 / Section 335
 
 - Header context: `124 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with nutrition: the procurement and processing of nutrients
@@ -170,7 +170,7 @@
   - `Digestion and Digestive Systems` -> `DIGESTION AND DIGESTIVE SYSTEMS` (v5 p275)
   - `Nutrition` -> `NUTRITION` (v13 p50)
 
-### Page 125
+### Page 125 / Section 336
 
 - Header context: `Division III. Section 336`
 - Topic summary: Major articles dealing with gas exchange, internal transport, and elimination
@@ -180,7 +180,7 @@
   - `Excretion and Excretory Systems` -> `EXCRETION AND EXCRETORY SYSTEMS` (v7 p1)
   - `Respiration and Respiratory Systems` -> `RESPIRATION AND RESPIRATORY SYSTEMS` (v14 p725)
 
-### Page 127
+### Page 127 / Section 337
 
 - Header context: `Division III. Section 337`
 - Topic summary: Major articles dealing with reproduction and sex
@@ -189,7 +189,7 @@
   - `Reproduction and Reproductive Systems` -> `REPRODUCTION AND REPRODUCTIVE SYSTEMS` (v14 p609)
   - `Sex and Sexuality` -> `SEX AND SEXUALITY` (v15 p233)
 
-### Page 128
+### Page 128 / Section 338
 
 - Header context: `128 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with development: growth, differentiation, and morphogenesis
@@ -197,21 +197,21 @@
   - `Death` -> `DEATH` (v4 p982)
   - `Growth and Development, Biological` -> `Biological GROWTH AND DEVELOPMENT` (v8 p361)
 
-### Page 129
+### Page 129 / Section 339
 
 - Header context: `Division III. Section 339`
 - Topic summary: Major article dealing with heredity: the transmission of traits
 - Recommendations:
   - `Genetics and Heredity, The Principles of` -> `The Principles of GENETICS AND HEREDITY` (v7 p699)
 
-### Page 130
+### Page 130 / Section 341
 
 - Header context: `130 Part Three. Life on Earth`
 - Topic summary: Major article dealing with the nature and patterns of behavioral responses
 - Recommendations:
   - `Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
 
-### Page 131
+### Page 131 / Section 342
 
 - Header context: `Division IV. Section 342`
 - Topic summary: Major articles dealing with the development and range of behavioral capacities: ındividual and group behaviour
@@ -219,14 +219,14 @@
   - `Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
   - `Learning, Animal` -> `Animal LEARNING` (v10 p854)
 
-### Page 133
+### Page 133 / Section 351
 
 - Header context: `Division V. Section 352`
 - Topic summary: Major article dealing with the basic features of the biosphere
 - Recommendations:
   - `Biosphere, The` -> unmatched
 
-### Page 134
+### Page 134 / Section 352
 
 - Header context: `134 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with biological populations and communities
@@ -234,7 +234,7 @@
   - `Behaviour, Animal` -> `Animal BEHAVIOUR` (v2 p744)
   - `Biosphere, The` -> unmatched
 
-### Page 135
+### Page 135 / Section 353
 
 - Header context: `Division V. Section 353`
 - Topic summary: Major articles dealing with hazards of life in the biosphere: disease and death
@@ -243,7 +243,7 @@
   - `Disease` -> `DISEASE` (v5 p341)
   - `Immunity` -> `IMMUNITY` (v8 p773)
 
-### Page 137
+### Page 137 / Section 354
 
 - Header context: `Division V. Section 355`
 - Topic summary: Major articles dealing with biogeographic distribution of organisms: ecosystems
@@ -254,7 +254,7 @@
   - `Lakes` -> `LAKES` (v10 p531)
   - `Oceans` -> `OCEANS` (v13 p134)
 
-### Page 138
+### Page 138 / Section 355
 
 - Header context: `138 Part Three. Life on Earth`
 - Topic summary: Major articles dealing with the place of humans in the biosphere

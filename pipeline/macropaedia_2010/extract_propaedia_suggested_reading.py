@@ -21,11 +21,22 @@ PARENTHETICAL_RE = re.compile(r"\s*\([^)]*\)")
 WHITESPACE_RE = re.compile(r"\s+")
 PUNCTUATION_RE = re.compile(r"[^a-z0-9 ]+")
 HEADER_CONTEXT_RE = re.compile(r"(Division\s+[IVXLC]+\.\s+Section\s+\d+)")
+SECTION_CODE_RE = re.compile(r"Section\s+(\d{3})")
 PAGE_RE = re.compile(r"^\s*(\d+)\b")
 TRAILING_PAGE_RE = re.compile(r"\b(\d+)\s*$")
 LEADING_ARTICLE_COLON_RE = re.compile(r"^(.*?),\s*(The|A|An)\s*:\s*(.*)$", re.IGNORECASE)
 LEADING_BULLET_RE = re.compile(r"^[•●◦▪·*]+\s*")
 MISSING_COMMA_SPACE_RE = re.compile(r",(?=\S)")
+SECTIONS_DIR = REPO_ROOT / "src" / "content" / "sections"
+MANUAL_SECTION_CODE_OVERRIDES: dict[tuple[int, str, int], str] = {
+    (1, "53", 1): "131",
+    (1, "44", 1): "126",
+    (1, "50", 1): "128",
+    (3, "123", 1): "334",
+    (3, "133", 1): "351",
+    (3, "137", 1): "354",
+    (4, "148", 1): "421",
+}
 
 
 @dataclass(frozen=True)
@@ -35,6 +46,13 @@ class Article:
     start_page: str
     start_page_index: int
     page_count_estimate: int | None
+
+
+@dataclass(frozen=True)
+class SectionReference:
+    section_code: str
+    part_number: int
+    normalized_titles: tuple[str, ...]
 
 
 def parse_args() -> argparse.Namespace:
@@ -148,7 +166,75 @@ def load_capture_index(path: Path, part_number: int) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
     selected = [row for row in rows if int(row["part_number"]) == part_number]
-    return sorted(selected, key=lambda row: int(row["capture_sequence"]))
+    return sorted(
+        selected,
+        key=lambda row: (
+            int(row["capture_sequence"]),
+            int((row.get("block_index") or "1").strip() or "1"),
+            row.get("section_code", "").strip(),
+            row.get("propaedia_page_reference", "").strip(),
+        ),
+    )
+
+
+def load_section_references() -> dict[int, list[SectionReference]]:
+    catalog: dict[int, list[SectionReference]] = {}
+    for path in sorted(SECTIONS_DIR.glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        part_number = int(data.get("partNumber") or 0)
+        section_code = str(data.get("sectionCode") or "").strip()
+        normalized_titles = tuple(
+            sorted(
+                {
+                    normalize_key(str(ref))
+                    for ref in data.get("macropaediaReferences", [])
+                    if str(ref).strip()
+                }
+            )
+        )
+        if not part_number or not section_code or not normalized_titles:
+            continue
+        catalog.setdefault(part_number, []).append(
+            SectionReference(
+                section_code=section_code,
+                part_number=part_number,
+                normalized_titles=normalized_titles,
+            )
+        )
+    return catalog
+
+
+def infer_section_code_from_recommendations(
+    part_number: int,
+    page_reference: str,
+    block_index: int,
+    recommendations: list[dict[str, object]],
+    section_references: dict[int, list[SectionReference]],
+) -> str:
+    manual_override = MANUAL_SECTION_CODE_OVERRIDES.get((part_number, str(page_reference), int(block_index)))
+    if manual_override:
+        return manual_override
+
+    normalized_titles = tuple(
+        sorted(
+            {
+                normalize_key(str(item["observedTitle"]))
+                for item in recommendations
+                if str(item.get("observedTitle", "")).strip()
+            }
+        )
+    )
+    if not normalized_titles:
+        return ""
+
+    matches = [
+        entry.section_code
+        for entry in section_references.get(part_number, [])
+        if entry.normalized_titles == normalized_titles
+    ]
+    if len(matches) == 1:
+        return matches[0]
+    return ""
 
 
 def read_ocr_lines(path: Path) -> list[str]:
@@ -181,6 +267,43 @@ def extract_header_context(lines: list[str]) -> str:
         if match:
             return match.group(1)
     return lines[0] if lines else ""
+
+
+def extract_section_code(text: str) -> str:
+    match = SECTION_CODE_RE.search(text)
+    return match.group(1) if match else ""
+
+
+def parse_crop_pct(value: str) -> float | None:
+    stripped = value.strip()
+    if not stripped:
+        return None
+    return float(stripped)
+
+
+def filter_ocr_lines_by_vertical_crop(
+    ocr_lines: list[dict[str, object]],
+    crop_top_pct: float | None,
+    crop_bottom_pct: float | None,
+) -> list[dict[str, object]]:
+    if crop_top_pct is None and crop_bottom_pct is None:
+        return ocr_lines
+
+    top = 0.0 if crop_top_pct is None else crop_top_pct
+    bottom = 100.0 if crop_bottom_pct is None else crop_bottom_pct
+    if bottom <= top:
+        return ocr_lines
+
+    filtered: list[dict[str, object]] = []
+    for line in ocr_lines:
+        box = line.get("uprightBoundingBox")
+        if not isinstance(box, dict):
+            continue
+        mid_y = float(box["midY"])
+        mid_from_top = (1.0 - mid_y) * 100.0
+        if top <= mid_from_top <= bottom:
+            filtered.append(line)
+    return filtered
 
 
 def extract_macropaedia_block(lines: list[str]) -> tuple[list[str], bool]:
@@ -230,12 +353,15 @@ def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object
     micro = next((line for line in ocr_lines if line_text(line).startswith("MICROPAEDIA:")), None)
     macro = next((line for line in ocr_lines if line_text(line).startswith("MACROPAEDIA:")), None)
 
-    if suggested is None or micro is None:
+    if suggested is None:
         return []
 
     upper_anchor = macro if macro is not None else suggested
     upper_limit = mid_y(upper_anchor) - max(height(upper_anchor), 0.012)
-    lower_limit = mid_y(micro) + max(height(micro), 0.01)
+    if micro is not None:
+        lower_limit = mid_y(micro) + max(height(micro), 0.01)
+    else:
+        lower_limit = 0.02
 
     candidate_lines = [
         line
@@ -309,11 +435,14 @@ def detect_dense_macro_columns(
         None,
     )
     micro = next((line for line in ocr_lines if line_text(line).startswith("MICROPAEDIA:")), None)
-    if suggested is None or micro is None:
+    if suggested is None:
         return None
 
     crop_top = min(0.985, mid_y(suggested) + max(height(suggested) * 1.35, 0.018))
-    crop_bottom = max(0.015, mid_y(micro) - max(height(micro) * 0.9, 0.012))
+    if micro is not None:
+        crop_bottom = max(0.015, mid_y(micro) - max(height(micro) * 0.9, 0.012))
+    else:
+        crop_bottom = 0.02
     if crop_bottom >= crop_top:
         return None
 
@@ -407,11 +536,11 @@ def write_dense_crop_images(
     return crop_paths
 
 
-def ensure_dense_crop_ocr(crop_dir: Path, output_dir: Path) -> None:
+def ensure_dense_crop_ocr(crop_dir: Path, output_dir: Path) -> bool:
     manifest_path = output_dir / "manifest.json"
     crop_mtime = max((path.stat().st_mtime for path in crop_dir.glob("*.jpg")), default=0)
     if manifest_path.exists() and manifest_path.stat().st_mtime >= crop_mtime:
-        return
+        return True
 
     output_dir.mkdir(parents=True, exist_ok=True)
     crop_arg = str(crop_dir.relative_to(REPO_ROOT))
@@ -431,8 +560,9 @@ def ensure_dense_crop_ocr(crop_dir: Path, output_dir: Path) -> None:
         )
     except subprocess.CalledProcessError:
         if manifest_path.exists():
-            return
-        raise
+            return True
+        return False
+    return True
 
 
 def clean_dense_crop_lines(lines: list[str]) -> list[str]:
@@ -496,7 +626,8 @@ def extract_macropaedia_block_from_dense_column_ocr(
     if not crop_paths:
         return []
 
-    ensure_dense_crop_ocr(crop_dir, dense_ocr_dir)
+    if not ensure_dense_crop_ocr(crop_dir, dense_ocr_dir):
+        return []
 
     ordered_lines: list[str] = []
     for crop_path in crop_paths:
@@ -573,8 +704,15 @@ def split_descriptor_and_titles(
                 if index + window_size > len(block_lines):
                     continue
                 window = [sanitize_observed_title(line) for line in block_lines[index : index + window_size]]
+                window_matches = [match_title(fragment, article_index)[0] is not None for fragment in window]
                 force_combine = should_force_combine_fragments(window)
-                if not force_combine and any(match_title(fragment, article_index)[0] is not None for fragment in window):
+                # Do not force a 2-line merge when the trailing line already stands on
+                # its own as a valid article. That pattern occurs on pages where OCR
+                # places a split title fragment next to a separate recommendation, such
+                # as "Earth, The: Its Properties," followed by "Lakes".
+                if force_combine and window_size == 2 and any(window_matches[1:]):
+                    force_combine = False
+                if not force_combine and any(window_matches):
                     continue
                 for combined_title, extraction_method in combine_adjacent_title_fragments(window):
                     combined_match, _ = match_title(combined_title, article_index)
@@ -658,6 +796,53 @@ def reconcile_fragmented_titles(
         elif index not in used:
             normalized.append(item)
 
+    # Some OCR blocks split a title across two unmatched fragments with one correctly
+    # matched title between them, for example:
+    #   "Earth, The: Its Properties," / "Lakes" / "Composition, and Structure"
+    # This pass repairs that specific pattern without consuming the matched middle item.
+    merged_items = {}
+    used = set()
+    for left in range(len(normalized) - 2):
+        middle = left + 1
+        right = left + 2
+        if (
+            normalized[left]["matchStatus"] != "unmatched"
+            or normalized[middle]["matchStatus"] != "matched"
+            or normalized[right]["matchStatus"] != "unmatched"
+        ):
+            continue
+        fragments = [
+            str(normalized[left]["observedTitle"]),
+            str(normalized[right]["observedTitle"]),
+        ]
+        for combined_title, extraction_method in combine_adjacent_title_fragments(fragments):
+            match, match_method = match_title(combined_title, article_index)
+            if match is None:
+                continue
+            merged_items[left] = {
+                "sortOrder": normalized[left]["sortOrder"],
+                "observedTitle": combined_title,
+                "extractionMethod": extraction_method.replace("adjacent_ocr_lines", "fragment_titles_across_gap"),
+                "matchStatus": "matched",
+                "matchMethod": match_method,
+                "matchedTitle": match.title,
+                "matchedVolumeNumber": match.volume_number,
+                "matchedStartPage": match.start_page,
+                "matchedStartPageIndex": match.start_page_index,
+                "matchedPageCountEstimate": match.page_count_estimate,
+            }
+            used.add(right)
+            break
+
+    if merged_items or used:
+        second_pass: list[dict[str, object]] = []
+        for index, item in enumerate(normalized):
+            if index in merged_items:
+                second_pass.append(merged_items[index])
+            elif index not in used:
+                second_pass.append(item)
+        normalized = second_pass
+
     for sort_order, item in enumerate(normalized, start=1):
         item["sortOrder"] = sort_order
     return normalized
@@ -667,6 +852,7 @@ def build_page_payload(
     row: dict[str, str],
     ocr_dir: Path,
     article_index: dict[str, tuple[Article, str]],
+    section_references: dict[int, list[SectionReference]],
 ) -> dict[str, object]:
     image_relative_path = row["image_relative_path"]
     stem = Path(image_relative_path).stem
@@ -674,50 +860,91 @@ def build_page_payload(
     ocr_lines_path = ocr_dir.parent / "ocr_lines" / f"{stem}.json"
     lines = read_ocr_lines(ocr_path)
     ocr_line_payload = read_ocr_line_payload(ocr_lines_path)
-    block, saw_macro_label = extract_macropaedia_block(lines)
-    if not saw_macro_label:
-        geometry_block = extract_macropaedia_block_from_ocr_geometry(ocr_line_payload)
-        if geometry_block:
-            block = geometry_block
-    dense_block = extract_macropaedia_block_from_dense_column_ocr(image_relative_path, ocr_line_payload)
-    if len(dense_block) > len(block):
-        block = dense_block
-    topic_summary, titles = split_descriptor_and_titles(block, article_index)
+    crop_top_pct = parse_crop_pct(row.get("crop_top_pct", ""))
+    crop_bottom_pct = parse_crop_pct(row.get("crop_bottom_pct", ""))
+    cropped_ocr_line_payload = filter_ocr_lines_by_vertical_crop(
+        ocr_line_payload,
+        crop_top_pct,
+        crop_bottom_pct,
+    )
+    candidate_lines = (
+        lines
+        if crop_top_pct is None and crop_bottom_pct is None
+        else [str(line.get("text", "")).strip() for line in cropped_ocr_line_payload if str(line.get("text", "")).strip()]
+    )
+    block, saw_macro_label = extract_macropaedia_block(candidate_lines)
+
+    geometry_block = extract_macropaedia_block_from_ocr_geometry(cropped_ocr_line_payload)
+    dense_block = extract_macropaedia_block_from_dense_column_ocr(image_relative_path, cropped_ocr_line_payload)
+
+    candidate_blocks: list[list[str]] = []
+    for candidate in (block, geometry_block, dense_block):
+        if candidate and candidate not in candidate_blocks:
+            candidate_blocks.append(candidate)
 
     page_payload: dict[str, object] = {
         "partNumber": int(row["part_number"]),
         "captureSequence": int(row["capture_sequence"]),
+        "blockIndex": int((row.get("block_index") or "1").strip() or "1"),
+        "sectionCode": row.get("section_code", "").strip(),
         "imageRelativePath": image_relative_path,
         "propaediaPageReference": row.get("propaedia_page_reference") or extract_page_reference(lines),
-        "headerContext": extract_header_context(lines),
-        "topicSummary": topic_summary,
+        "headerContext": row.get("header_context_override", "").strip() or extract_header_context(lines),
+        "topicSummary": row.get("topic_summary_override", "").strip(),
         "recommendations": [],
     }
+    if not page_payload["sectionCode"]:
+        page_payload["sectionCode"] = extract_section_code(str(page_payload["headerContext"]))
 
-    recommendations: list[dict[str, object]] = []
-    for sort_order, (observed_title, extraction_method) in enumerate(titles, start=1):
-        match, match_method = match_title(observed_title, article_index)
-        item: dict[str, object] = {
-            "sortOrder": sort_order,
-            "observedTitle": observed_title,
-            "extractionMethod": extraction_method,
-            "matchStatus": "matched" if match is not None else "unmatched",
-            "matchMethod": match_method,
-        }
-        if match is not None:
-            item.update(
-                {
-                    "matchedTitle": match.title,
-                    "matchedVolumeNumber": match.volume_number,
-                    "matchedStartPage": match.start_page,
-                    "matchedStartPageIndex": match.start_page_index,
-                    "matchedPageCountEstimate": match.page_count_estimate,
-                }
-            )
-        recommendations.append(item)
+    best_topic_summary = ""
+    best_recommendations: list[dict[str, object]] = []
+    best_score = (-1, 1, -1)
 
-    recommendations = reconcile_fragmented_titles(recommendations, article_index)
-    page_payload["recommendations"] = recommendations
+    for candidate_block in candidate_blocks:
+        topic_summary, titles = split_descriptor_and_titles(candidate_block, article_index)
+        recommendations: list[dict[str, object]] = []
+        for sort_order, (observed_title, extraction_method) in enumerate(titles, start=1):
+            match, match_method = match_title(observed_title, article_index)
+            item: dict[str, object] = {
+                "sortOrder": sort_order,
+                "observedTitle": observed_title,
+                "extractionMethod": extraction_method,
+                "matchStatus": "matched" if match is not None else "unmatched",
+                "matchMethod": match_method,
+            }
+            if match is not None:
+                item.update(
+                    {
+                        "matchedTitle": match.title,
+                        "matchedVolumeNumber": match.volume_number,
+                        "matchedStartPage": match.start_page,
+                        "matchedStartPageIndex": match.start_page_index,
+                        "matchedPageCountEstimate": match.page_count_estimate,
+                    }
+                )
+            recommendations.append(item)
+
+        recommendations = reconcile_fragmented_titles(recommendations, article_index)
+        matched_count = sum(1 for item in recommendations if item["matchStatus"] == "matched")
+        unmatched_count = len(recommendations) - matched_count
+        score = (matched_count, -unmatched_count, len(recommendations))
+        if score > best_score:
+            best_score = score
+            best_topic_summary = topic_summary
+            best_recommendations = recommendations
+
+    if not page_payload["topicSummary"]:
+        page_payload["topicSummary"] = best_topic_summary
+    page_payload["recommendations"] = best_recommendations
+    inferred_section_code = infer_section_code_from_recommendations(
+        int(page_payload["partNumber"]),
+        str(page_payload["propaediaPageReference"]),
+        int(page_payload["blockIndex"]),
+        best_recommendations,
+        section_references,
+    )
+    if inferred_section_code:
+        page_payload["sectionCode"] = inferred_section_code
     return page_payload
 
 
@@ -729,6 +956,8 @@ def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
             fieldnames=[
                 "part_number",
                 "capture_sequence",
+                "block_index",
+                "section_code",
                 "propaedia_page_reference",
                 "header_context",
                 "image_relative_path",
@@ -752,7 +981,7 @@ def write_summary(path: Path, pages: list[dict[str, object]], matched_count: int
     lines = [
         f"# Part {pages[0]['partNumber']} Propaedia Suggested Reading",
         "",
-        f"- Pages captured: `{len(pages)}`",
+        f"- Logical blocks captured: `{len(pages)}`",
         f"- Matched recommendations: `{matched_count}`",
         f"- Unmatched recommendations: `{unmatched_count}`",
         "",
@@ -762,14 +991,20 @@ def write_summary(path: Path, pages: list[dict[str, object]], matched_count: int
         lines.extend(["## Unmatched recommendations", ""])
         for page in pages:
             page_ref = page["propaediaPageReference"]
+            section_suffix = f" / Section {page['sectionCode']}" if page.get("sectionCode") else ""
             for rec in page["recommendations"]:
                 if rec["matchStatus"] == "unmatched":
-                    lines.append(f"- Page `{page_ref}`: `{rec['observedTitle']}`")
+                    lines.append(f"- Page `{page_ref}`{section_suffix}: `{rec['observedTitle']}`")
         lines.append("")
 
-    lines.extend(["## Page summaries", ""])
+    lines.extend(["## Block summaries", ""])
     for page in pages:
-        lines.append(f"### Page {page['propaediaPageReference']}")
+        heading = f"### Page {page['propaediaPageReference']}"
+        if page.get("sectionCode"):
+            heading += f" / Section {page['sectionCode']}"
+        if int(page.get("blockIndex", 1)) > 1:
+            heading += f" / Block {page['blockIndex']}"
+        lines.append(heading)
         lines.append("")
         lines.append(f"- Header context: `{page['headerContext']}`")
         if page["topicSummary"]:
@@ -792,8 +1027,9 @@ def write_summary(path: Path, pages: list[dict[str, object]], matched_count: int
 def main() -> None:
     args = parse_args()
     article_index = load_article_index(args.reviewed_candidates)
+    section_references = load_section_references()
     capture_rows = load_capture_index(args.capture_index, args.part_number)
-    pages = [build_page_payload(row, args.ocr_dir, article_index) for row in capture_rows]
+    pages = [build_page_payload(row, args.ocr_dir, article_index, section_references) for row in capture_rows]
 
     matched_count = sum(
         1
@@ -825,6 +1061,8 @@ def main() -> None:
                 {
                     "part_number": page["partNumber"],
                     "capture_sequence": page["captureSequence"],
+                    "block_index": page["blockIndex"],
+                    "section_code": page["sectionCode"],
                     "propaedia_page_reference": page["propaediaPageReference"],
                     "header_context": page["headerContext"],
                     "image_relative_path": page["imageRelativePath"],

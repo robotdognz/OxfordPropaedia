@@ -23,6 +23,14 @@ Track the captured files in:
 
 - `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
 
+That capture index can now contain more than one row for the same image. Use that when a single
+photo contains multiple section-specific `Suggested reading` blocks. Each row can carry:
+
+- a `block_index`
+- a `section_code`
+- crop percentages for the relevant vertical band
+- an optional header override for the logical block
+
 Refresh that tracked index with:
 
 ```bash

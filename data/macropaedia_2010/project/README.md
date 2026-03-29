@@ -13,7 +13,7 @@ The SQLite database is a local working index regenerated from the tracked files 
 
 - database: `macropaedia_2010_project.sqlite`
 - seeded volumes: `17`
-- seeded articles: `685`
+- seeded articles: `702`
 - articles with blank page length: `17`
 
 Generated files:
@@ -41,6 +41,14 @@ The Propaedia-name files have different roles:
 - `propaedia_name_evidence_worklist.csv` stores each matched observed Propaedia title instance
 - `propaedia_name_candidate_summary.csv` groups those instances by article and suggests the current best `propaedia_name`
 - `article_identity_worklist.csv` includes those suggestions alongside the editable canonical `propaedia_name` field
+
+`propaedia_page_capture_index.csv` is block-based. A single image can appear on multiple rows when
+one photo contains more than one logical `Suggested reading` block. Use:
+
+- `block_index` to distinguish the logical blocks
+- `section_code` to store the owning section id
+- `crop_top_pct` and `crop_bottom_pct` to isolate the vertical band for that block
+- `header_context_override` when the page header on the photo only names one of the sections
 
 Useful commands:
 

@@ -200,6 +200,18 @@ Primary tracked file:
 
 - `propaedia_page_capture_index.csv`
 
+The capture index is now block-based, not strictly image-based. If one photo contains two separate
+`Suggested reading` blocks:
+
+1. duplicate the row with the same `image_relative_path`
+2. set `block_index` to `1`, `2`, and so on
+3. fill the correct `section_code` for each logical block
+4. use `crop_top_pct` and `crop_bottom_pct` to isolate the relevant vertical band
+5. use `header_context_override` when the visible running header only reflects one of the sections
+
+That lets multiple sections point at the same source image without merging their recommendation
+lists together.
+
 ### Phase 3. Capture article contents-page photos
 
 For every article:

@@ -35,6 +35,8 @@ def build_propaedia_name_evidence(payloads: list[dict[str, object]]) -> list[dic
                         "extraction_method": recommendation.get("extractionMethod", "") or "",
                         "part_number": part_number,
                         "capture_sequence": page["captureSequence"],
+                        "block_index": page.get("blockIndex", 1),
+                        "section_code": page.get("sectionCode", "") or "",
                         "propaedia_page_reference": page["propaediaPageReference"],
                         "source_image_relative_path": page["imageRelativePath"],
                     }
@@ -65,6 +67,7 @@ def build_propaedia_name_candidate_summary(
                 "count": 0,
                 "match_methods": set(),
                 "source_pages": set(),
+                "source_sections": set(),
                 "source_images": set(),
             },
         )
@@ -73,6 +76,8 @@ def build_propaedia_name_candidate_summary(
             candidate["match_methods"].add(str(row["match_method"]))
         if row["propaedia_page_reference"]:
             candidate["source_pages"].add(str(row["propaedia_page_reference"]))
+        if row.get("section_code"):
+            candidate["source_sections"].add(str(row["section_code"]))
         if row["source_image_relative_path"]:
             candidate["source_images"].add(str(row["source_image_relative_path"]))
 
@@ -86,6 +91,7 @@ def build_propaedia_name_candidate_summary(
                     "count": int(details["count"]),
                     "match_methods": sorted(details["match_methods"]),
                     "source_pages": sorted(details["source_pages"], key=lambda value: (len(value), value)),
+                    "source_sections": sorted(details["source_sections"]),
                     "source_images": sorted(details["source_images"]),
                 }
             )
@@ -101,6 +107,7 @@ def build_propaedia_name_candidate_summary(
                 "suggested_occurrence_count": suggested["count"] if suggested else "",
                 "suggested_match_methods": " | ".join(suggested["match_methods"]) if suggested else "",
                 "suggested_source_pages": " | ".join(suggested["source_pages"]) if suggested else "",
+                "suggested_source_sections": " | ".join(suggested["source_sections"]) if suggested else "",
                 "suggested_source_images": " | ".join(suggested["source_images"]) if suggested else "",
                 "alternate_propaedia_names": " | ".join(
                     candidate["observed_propaedia_name"] for candidate in candidates[1:]
@@ -132,6 +139,8 @@ def build_unmatched_propaedia_occurrences(payloads: list[dict[str, object]]) -> 
                     {
                         "part_number": part_number,
                         "capture_sequence": page["captureSequence"],
+                        "block_index": page.get("blockIndex", 1),
+                        "section_code": page.get("sectionCode", "") or "",
                         "propaedia_page_reference": page["propaediaPageReference"],
                         "header_context": page["headerContext"],
                         "topic_summary": page["topicSummary"],
@@ -155,6 +164,7 @@ def build_unmatched_propaedia_summary(
                 "observed_propaedia_name": key,
                 "occurrence_count": 0,
                 "part_numbers": set(),
+                "section_codes": set(),
                 "propaedia_page_references": set(),
                 "header_contexts": set(),
                 "image_relative_paths": set(),
@@ -162,6 +172,8 @@ def build_unmatched_propaedia_summary(
         )
         summary["occurrence_count"] += 1
         summary["part_numbers"].add(str(row["part_number"]))
+        if row.get("section_code"):
+            summary["section_codes"].add(str(row["section_code"]))
         summary["propaedia_page_references"].add(str(row["propaedia_page_reference"]))
         summary["header_contexts"].add(str(row["header_context"]))
         summary["image_relative_paths"].add(str(row["image_relative_path"]))
@@ -171,6 +183,7 @@ def build_unmatched_propaedia_summary(
             "observed_propaedia_name": key,
             "occurrence_count": value["occurrence_count"],
             "part_numbers": " | ".join(sorted(value["part_numbers"])),
+            "section_codes": " | ".join(sorted(value["section_codes"])),
             "propaedia_page_references": " | ".join(
                 sorted(value["propaedia_page_references"], key=lambda item: (len(item), item))
             ),

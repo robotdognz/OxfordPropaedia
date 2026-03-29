@@ -1,0 +1,851 @@
+{
+  "partNumber": 4,
+  "pageCount": 12,
+  "matchedRecommendationCount": 53,
+  "unmatchedRecommendationCount": 9,
+  "pages": [
+    {
+      "partNumber": 4,
+      "captureSequence": 1,
+      "blockIndex": 1,
+      "sectionCode": "411",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-01.jpg",
+      "propaediaPageReference": "144",
+      "headerContext": "144 Part Four. Human Life",
+      "topicSummary": "Major articles dealing with human evolution",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Evolution, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human EVOLUTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "812",
+          "matchedStartPageIndex": 812,
+          "matchedPageCountEstimate": 43
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Life",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "LIFE",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "964",
+          "matchedStartPageIndex": 964,
+          "matchedPageCountEstimate": null
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 2,
+      "blockIndex": 1,
+      "sectionCode": "412",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-02.jpg",
+      "propaediaPageReference": "145",
+      "headerContext": "Division I. Section 412",
+      "topicSummary": "Major articles dealing with human heredity: the races of mankind",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Evolution, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human EVOLUTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "812",
+          "matchedStartPageIndex": 812,
+          "matchedPageCountEstimate": 43
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Genetics and Heredity, The Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Principles of GENETICS AND HEREDITY",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "699",
+          "matchedStartPageIndex": 699,
+          "matchedPageCountEstimate": 42
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Life",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "LIFE",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "964",
+          "matchedStartPageIndex": 964,
+          "matchedPageCountEstimate": null
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 3,
+      "blockIndex": 1,
+      "sectionCode": "421",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-03.jpg",
+      "propaediaPageReference": "148",
+      "headerContext": "Part Four. Human Life",
+      "topicSummary": "Major articles dealing with the structures and functions of the human body",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Components of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Organisms",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Blood",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BLOOD",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "125",
+          "matchedStartPageIndex": 125,
+          "matchedPageCountEstimate": 30
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Circulation and Circulatory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CIRCULATION AND CIRCULATORY SYSTEMS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "377",
+          "matchedStartPageIndex": 377,
+          "matchedPageCountEstimate": 41
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Digestive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Endocrine Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENDOCRINE SYSTEMS",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "287",
+          "matchedStartPageIndex": 287,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Excretion and Excretory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "EXCRETION AND EXCRETORY SYSTEMS",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 27
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Integumentary Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INTEGUMENTARY SYSTEMS",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "755",
+          "matchedStartPageIndex": 755,
+          "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Nerves and Nervous Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NERVES AND NERVOUS SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "784",
+          "matchedStartPageIndex": 784,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 10,
+          "observedTitle": "Nutrition",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NUTRITION",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "50",
+          "matchedStartPageIndex": 50,
+          "matchedPageCountEstimate": 26
+        },
+        {
+          "sortOrder": 11,
+          "observedTitle": "Reproduction and Reproductive Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "REPRODUCTION AND REPRODUCTIVE SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "609",
+          "matchedStartPageIndex": 609,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 13,
+          "observedTitle": "Sensory Reception",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SENSORY RECEPTION",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "115",
+          "matchedStartPageIndex": 115,
+          "matchedPageCountEstimate": 108
+        },
+        {
+          "sortOrder": 14,
+          "observedTitle": "Supportive and Connective Tissues",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SUPPORTIVE AND CONNECTIVE TISSUES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "272",
+          "matchedStartPageIndex": 272,
+          "matchedPageCountEstimate": 45
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 4,
+      "blockIndex": 1,
+      "sectionCode": "422",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-04.jpg",
+      "propaediaPageReference": "151",
+      "headerContext": "Division II. Section 423",
+      "topicSummary": "Major articles dealing with human health",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Death",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DEATH",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "982",
+          "matchedStartPageIndex": 982,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Exercise and Physical Conditioning",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "EXERCISE AND PHYSICAL CONDITIONING",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "28",
+          "matchedStartPageIndex": 28,
+          "matchedPageCountEstimate": 5
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Immunity",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "IMMUNITY",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "773",
+          "matchedStartPageIndex": 773,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Nutrition",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NUTRITION",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "50",
+          "matchedStartPageIndex": 50,
+          "matchedPageCountEstimate": 26
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 5,
+      "blockIndex": 1,
+      "sectionCode": "423",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-05.jpg",
+      "propaediaPageReference": "153",
+      "headerContext": "Division II. Section 423",
+      "topicSummary": "Major articles dealing with human diseases",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cancer",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CANCER",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "519",
+          "matchedStartPageIndex": 519,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Childhood",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Diseases and",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Disorders",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Circulation and Circulatory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CIRCULATION AND CIRCULATORY SYSTEMS",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "377",
+          "matchedStartPageIndex": 377,
+          "matchedPageCountEstimate": 41
+        },
+        {
+          "sortOrder": 6,
+          "observedTitle": "Diagnosis and Therapeutics",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DIAGNOSIS AND THERAPEUTICS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "246",
+          "matchedStartPageIndex": 246,
+          "matchedPageCountEstimate": 23
+        },
+        {
+          "sortOrder": 7,
+          "observedTitle": "Digestive Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Disease",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DISEASE",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "341",
+          "matchedStartPageIndex": 341,
+          "matchedPageCountEstimate": 53
+        },
+        {
+          "sortOrder": 9,
+          "observedTitle": "Endocrine Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENDOCRINE SYSTEMS",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "287",
+          "matchedStartPageIndex": 287,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 10,
+          "observedTitle": "Excretion and Excretory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "EXCRETION AND EXCRETORY SYSTEMS",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "1",
+          "matchedStartPageIndex": 1,
+          "matchedPageCountEstimate": 27
+        },
+        {
+          "sortOrder": 11,
+          "observedTitle": "Immunity",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "IMMUNITY",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "773",
+          "matchedStartPageIndex": 773,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Infectious Diseases",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INFECTIOUS DISEASES",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "589",
+          "matchedStartPageIndex": 589,
+          "matchedPageCountEstimate": 26
+        },
+        {
+          "sortOrder": 13,
+          "observedTitle": "Metabolism",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "METABOLISM",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "893",
+          "matchedStartPageIndex": 893,
+          "matchedPageCountEstimate": null
+        },
+        {
+          "sortOrder": 14,
+          "observedTitle": "Muscles and Muscle Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MUSCLES AND MUSCLE SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 28
+        },
+        {
+          "sortOrder": 15,
+          "observedTitle": "Nerves and Nervous Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NERVES AND NERVOUS SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "784",
+          "matchedStartPageIndex": 784,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 16,
+          "observedTitle": "Nutrition",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NUTRITION",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "50",
+          "matchedStartPageIndex": 50,
+          "matchedPageCountEstimate": 26
+        },
+        {
+          "sortOrder": 17,
+          "observedTitle": "Poisons and Poisoning",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "POISONS AND POISONING",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "908",
+          "matchedStartPageIndex": 908,
+          "matchedPageCountEstimate": 22
+        },
+        {
+          "sortOrder": 18,
+          "observedTitle": "Systems",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 19,
+          "observedTitle": "Sensory Reception",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SENSORY RECEPTION",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "115",
+          "matchedStartPageIndex": 115,
+          "matchedPageCountEstimate": 108
+        },
+        {
+          "sortOrder": 20,
+          "observedTitle": "Supportive and Connective Tissues",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SUPPORTIVE AND CONNECTIVE TISSUES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "272",
+          "matchedStartPageIndex": 272,
+          "matchedPageCountEstimate": 45
+        },
+        {
+          "sortOrder": 21,
+          "observedTitle": "Transplants, Organ and Tissue",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Organ and Tissue TRANSPLANTS",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "774",
+          "matchedStartPageIndex": 774,
+          "matchedPageCountEstimate": 7
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 6,
+      "blockIndex": 1,
+      "sectionCode": "424",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-06.jpg",
+      "propaediaPageReference": "159",
+      "headerContext": "Division II. Section 424",
+      "topicSummary": "Major articles dealing withthe practice of medicine and the care of health",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Birth Control",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BIRTH CONTROL",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "113",
+          "matchedStartPageIndex": 113,
+          "matchedPageCountEstimate": 8
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Medicine",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MEDICINE",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "774",
+          "matchedStartPageIndex": 774,
+          "matchedPageCountEstimate": 55
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Occupational Diseases and Disorders",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "OCCUPATIONAL DISEASES AND DISORDERS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "99",
+          "matchedStartPageIndex": 99,
+          "matchedPageCountEstimate": 5
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 7,
+      "blockIndex": 1,
+      "sectionCode": "431",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-07.jpg",
+      "propaediaPageReference": "161",
+      "headerContext": "Division III. Section 432",
+      "topicSummary": "Major article dealing with human nature and experience: general considerations",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Behaviour, The Development of Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Development of Human BEHAVIOUR",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "829",
+          "matchedStartPageIndex": 829,
+          "matchedPageCountEstimate": 15
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 8,
+      "blockIndex": 1,
+      "sectionCode": "432",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-08.jpg",
+      "propaediaPageReference": "163",
+      "headerContext": "Division III. Section 433",
+      "topicSummary": "Major articles dealing with the influence of the current environment on a person's behaviour and conscious experience: attention, sensation, and perception",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Attention",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ATTENTION",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "391",
+          "matchedStartPageIndex": 391,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Perception, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human PERCEPTION",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "481",
+          "matchedStartPageIndex": 481,
+          "matchedPageCountEstimate": 22
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 9,
+      "blockIndex": 1,
+      "sectionCode": "433",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-09.jpg",
+      "propaediaPageReference": "164",
+      "headerContext": "164 Part Four. Human Life",
+      "topicSummary": "Major articles dealing with the current internal states affecting a person's behaviour and conscious experience",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Sex and Sexuality",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SEX AND SEXUALITY",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "233",
+          "matchedStartPageIndex": 233,
+          "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Emotion, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human EMOTION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "248",
+          "matchedStartPageIndex": 248,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Sleep and Dreams",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SLEEP AND DREAMS",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "301",
+          "matchedStartPageIndex": 301,
+          "matchedPageCountEstimate": 11
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Motivation, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human MOTIVATION",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "436",
+          "matchedStartPageIndex": 436,
+          "matchedPageCountEstimate": 9
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 10,
+      "blockIndex": 1,
+      "sectionCode": "434",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-10.jpg",
+      "propaediaPageReference": "165",
+      "headerContext": "Division III. Section 434",
+      "topicSummary": "Major articles dealing with the persisting capacities and inclinations that influence human behaviour and conscious experience",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Intelligence, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human INTELLIGENCE",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "775",
+          "matchedStartPageIndex": 775,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Psychological Tests and Measurement",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PSYCHOLOGICAL TESTS AND MEASUREMENT",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "289",
+          "matchedStartPageIndex": 289,
+          "matchedPageCountEstimate": 5
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 10,
+      "blockIndex": 2,
+      "sectionCode": "435",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-10.jpg",
+      "propaediaPageReference": "165",
+      "headerContext": "Division III. Section 435",
+      "topicSummary": "Major articles dealing with the development of a person's potentials: learning and thinking",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Learning and Cognition, Human",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Human LEARNING AND COGNITION",
+          "matchedVolumeNumber": 10,
+          "matchedStartPage": "870",
+          "matchedStartPageIndex": 870,
+          "matchedPageCountEstimate": 19
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Memory",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MEMORY",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "832",
+          "matchedStartPageIndex": 832,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Thought and Thought Processes",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "THOUGHT AND THOUGHT PROCESSES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "650",
+          "matchedStartPageIndex": 650,
+          "matchedPageCountEstimate": 7
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "captureSequence": 11,
+      "blockIndex": 1,
+      "sectionCode": "436",
+      "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-11.jpg",
+      "propaediaPageReference": "167",
+      "headerContext": "Division III. Section 436",
+      "topicSummary": "Major articles and a biography dealing with personality and the self: integration and disintegration of the person as a whole",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Freud",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "FREUD",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "566",
+          "matchedStartPageIndex": 566,
+          "matchedPageCountEstimate": 6
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Mental Disorders and Their Treatment",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MENTAL DISORDERS and Their Treatment",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "841",
+          "matchedStartPageIndex": 841,
+          "matchedPageCountEstimate": 19
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Personality",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "PERSONALITY",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "503",
+          "matchedStartPageIndex": 503,
+          "matchedPageCountEstimate": 12
+        }
+      ]
+    }
+  ]
+}

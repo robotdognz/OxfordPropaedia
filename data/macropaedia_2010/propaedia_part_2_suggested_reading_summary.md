@@ -1,13 +1,12 @@
 # Part 2 Propaedia Suggested Reading
 
-- Pages captured: `12`
+- Logical blocks captured: `12`
 - Matched recommendations: `43`
 - Unmatched recommendations: `0`
-- Human page review: `verified`
 
-## Page summaries
+## Block summaries
 
-### Page 66
+### Page 66 / Section 211
 
 - Header context: `66 Part Two. The Earth`
 - Topic summary: Major articles dealing with the planet Earth
@@ -15,7 +14,7 @@
   - `Earth, The: Its Properties, Composition, and Structure` -> `The EARTH: Its Properties, Composition, and Structure` (v5 p569)
   - `Solar System, The` -> `The SOLAR SYSTEM` (v15 p452)
 
-### Page 67
+### Page 67 / Section 212
 
 - Header context: `Division I. Section 212`
 - Topic summary: Major articles dealing with the Earth's physical properties
@@ -24,7 +23,7 @@
   - `Minerals and Rocks` -> `MINERALS AND ROCKS` (v12 p162)
   - `Volcanism` -> `VOLCANISM` (v17 p509)
 
-### Page 68
+### Page 68 / Section 213
 
 - Header context: `68 Part Two. The Earth`
 - Topic summary: Major articles dealing with the structure and composition of the Earth's interior
@@ -32,7 +31,7 @@
   - `Earth, The: Its Properties, Composition, and Structure` -> `The EARTH: Its Properties, Composition, and Structure` (v5 p569)
   - `Earthquakes` -> `EARTHQUAKES` (v5 p655)
 
-### Page 71
+### Page 71 / Section 214
 
 - Header context: `Division I. Section 214`
 - Topic summary: Major articles dealing with the Earth's constituent minerals and rocks
@@ -43,14 +42,14 @@
   - `Minerals and Rocks` -> `MINERALS AND ROCKS` (v12 p162)
   - `Volcanism` -> `VOLCANISM` (v17 p509)
 
-### Page 74
+### Page 74 / Section 221
 
 - Header context: `74 Part Two. The Earth`
 - Topic summary: Major article dealing with the atmosphere
 - Recommendations:
   - `Atmosphere` -> `ATMOSPHERE` (v2 p315)
 
-### Page 76
+### Page 76 / Section 222
 
 - Header context: `76 Part Two. The Earth`
 - Topic summary: Major articles dealing with the hydrosphere: the oceans, freshwater bodies, and ice masses
@@ -62,14 +61,14 @@
   - `Rivers` -> `RIVERS` (v14 p843)
   - `Ice and Ice Formations` -> `ICE AND ICE FORMATIONS` (v8 p732)
 
-### Page 78
+### Page 78 / Section 223
 
 - Header context: `78 Part Two. The Earth`
 - Topic summary: Major article dealing with weather and climate
 - Recommendations:
   - `Climate and Weather` -> `CLIMATE AND WEATHER` (v4 p436)
 
-### Page 80
+### Page 80 / Section 231
 
 - Header context: `80 Part Two. The Earth`
 - Topic summary: Major articles dealing with the physical features of the Earth's surface
@@ -80,7 +79,7 @@
   - `Plate Tectonics` -> `PLATE TECTONICS` (v13 p883)
   - `Volcanism` -> `VOLCANISM` (v17 p509)
 
-### Page 84
+### Page 84 / Section 232
 
 - Header context: `84 Part Two. The Earth`
 - Topic summary: Major articles dealing with the features produced by geomorphic processes acting on the Earth's surface
@@ -95,7 +94,7 @@
   - `Volcanism` -> `VOLCANISM` (v17 p509)
   - `Ice and Ice Formations` -> `ICE AND ICE FORMATIONS` (v8 p732)
 
-### Page 86
+### Page 86 / Section 241
 
 - Header context: `86 Part Two. The Earth`
 - Topic summary: Major articles dealing with the origin and development of the tarth and ils enverope
@@ -105,7 +104,7 @@
   - `Plate Tectonics` -> `PLATE TECTONICS` (v13 p883)
   - `Volcanism` -> `VOLCANISM` (v17 p509)
 
-### Page 88
+### Page 88 / Section 242
 
 - Header context: `88 Part Two. The Barth`
 - Topic summary: Major articles dealing with the interpretation of the geologic record
@@ -113,7 +112,7 @@
   - `Earth, The: Its Properties, Composition, and Structure` -> `The EARTH: Its Properties, Composition, and Structure` (v5 p569)
   - `Geochronology: The Interpretation and Dating of the Geologic Record` -> `GEOCHRONOLOGY: The Interpretation and Dating of the Geologic Record` (v7 p748)
 
-### Page 89
+### Page 89 / Section 243
 
 - Header context: `Division IV. Section 243`
 - Topic summary: Major articles dealing with the eras and periods of geologic time

@@ -43,7 +43,25 @@ def read_existing_rows(path: Path) -> list[dict[str, str]]:
 
 
 def index_existing_rows(rows: list[dict[str, str]], key_fields: list[str]) -> dict[tuple[str, ...], dict[str, str]]:
-    return {tuple(row.get(field, "") for field in key_fields): row for row in rows}
+    def value(row: dict[str, str], field: str) -> str:
+        if field == "block_index":
+            return row.get(field, "").strip() or "1"
+        return row.get(field, "")
+
+    return {tuple(value(row, field) for field in key_fields): row for row in rows}
+
+
+def index_unique_existing_rows(
+    rows: list[dict[str, str]],
+    key_fields: list[str],
+) -> dict[tuple[str, ...], dict[str, str]]:
+    counts: dict[tuple[str, ...], int] = {}
+    indexed: dict[tuple[str, ...], dict[str, str]] = {}
+    for row in rows:
+        key = tuple(row.get(field, "").strip() for field in key_fields)
+        counts[key] = counts.get(key, 0) + 1
+        indexed[key] = row
+    return {key: indexed[key] for key, count in counts.items() if count == 1}
 
 
 def apply_existing_values(
@@ -55,6 +73,27 @@ def apply_existing_values(
     for row in rows:
         key = tuple(str(row.get(field, "")) for field in key_fields)
         existing = existing_rows.get(key)
+        if existing is None:
+            continue
+        for field in fields_to_preserve:
+            if field in existing and existing[field]:
+                row[field] = existing[field]
+
+
+def apply_existing_values_with_fallback(
+    rows: list[dict[str, object]],
+    primary_existing_rows: dict[tuple[str, ...], dict[str, str]],
+    primary_key_fields: list[str],
+    fallback_existing_rows: dict[tuple[str, ...], dict[str, str]],
+    fallback_key_fields: list[str],
+    fields_to_preserve: list[str],
+) -> None:
+    for row in rows:
+        primary_key = tuple(str(row.get(field, "")) for field in primary_key_fields)
+        existing = primary_existing_rows.get(primary_key)
+        if existing is None:
+            fallback_key = tuple(str(row.get(field, "")) for field in fallback_key_fields)
+            existing = fallback_existing_rows.get(fallback_key)
         if existing is None:
             continue
         for field in fields_to_preserve:
@@ -97,6 +136,8 @@ def build_page_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]
                 {
                     "part_number": part_number,
                     "capture_sequence": page["captureSequence"],
+                    "block_index": page.get("blockIndex", 1),
+                    "section_code": page.get("sectionCode", "") or "",
                     "propaedia_page_reference": page["propaediaPageReference"],
                     "image_relative_path": page["imageRelativePath"],
                     "header_context": page["headerContext"],
@@ -127,6 +168,8 @@ def build_risk_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]
                     {
                         "part_number": part_number,
                         "capture_sequence": page["captureSequence"],
+                        "block_index": page.get("blockIndex", 1),
+                        "section_code": page.get("sectionCode", "") or "",
                         "propaedia_page_reference": page["propaediaPageReference"],
                         "image_relative_path": page["imageRelativePath"],
                         "sort_order": rec["sortOrder"],
@@ -147,6 +190,8 @@ def build_risk_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]
 def build_page_rows_human(page_rows: list[dict[str, object]]) -> list[dict[str, object]]:
     return [
         {
+            "section_code": row["section_code"],
+            "block_index": row["block_index"],
             "page": row["propaedia_page_reference"],
             "image": row["image_relative_path"],
             "title_count": row["extracted_count"],
@@ -163,6 +208,8 @@ def build_page_rows_human(page_rows: list[dict[str, object]]) -> list[dict[str, 
 def build_risk_rows_human(risk_rows: list[dict[str, object]]) -> list[dict[str, object]]:
     return [
         {
+            "section_code": row["section_code"],
+            "block_index": row["block_index"],
             "page": row["propaedia_page_reference"],
             "image": row["image_relative_path"],
             "observed_title": row["observed_title"],
@@ -188,36 +235,57 @@ def export_review_worklists(
     risk_rows = build_risk_rows(payloads)
     page_rows_human = build_page_rows_human(page_rows)
     risk_rows_human = build_risk_rows_human(risk_rows)
+    existing_page_rows = read_existing_rows(page_review_path)
+    existing_risk_rows = read_existing_rows(risk_review_path)
+    existing_page_rows_human = read_existing_rows(page_review_human_path)
+    existing_risk_rows_human = read_existing_rows(risk_review_human_path)
 
-    apply_existing_values(
+    apply_existing_values_with_fallback(
         page_rows,
         index_existing_rows(
-            read_existing_rows(page_review_path),
-            ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path"],
+            existing_page_rows,
+            ["part_number", "capture_sequence", "block_index", "section_code", "propaedia_page_reference", "image_relative_path"],
         ),
-        ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path"],
+        ["part_number", "capture_sequence", "block_index", "section_code", "propaedia_page_reference", "image_relative_path"],
+        index_unique_existing_rows(existing_page_rows, ["propaedia_page_reference", "image_relative_path"]),
+        ["propaedia_page_reference", "image_relative_path"],
         ["review_status", "visual_title_count", "missing_titles", "extra_titles", "notes"],
     )
-    apply_existing_values(
+    apply_existing_values_with_fallback(
         risk_rows,
         index_existing_rows(
-            read_existing_rows(risk_review_path),
-            ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path", "sort_order"],
+            existing_risk_rows,
+            ["part_number", "capture_sequence", "block_index", "section_code", "propaedia_page_reference", "image_relative_path", "sort_order"],
         ),
-        ["part_number", "capture_sequence", "propaedia_page_reference", "image_relative_path", "sort_order"],
+        ["part_number", "capture_sequence", "block_index", "section_code", "propaedia_page_reference", "image_relative_path", "sort_order"],
+        index_unique_existing_rows(
+            existing_risk_rows,
+            ["propaedia_page_reference", "image_relative_path", "observed_title", "matched_title"],
+        ),
+        ["propaedia_page_reference", "image_relative_path", "observed_title", "matched_title"],
         ["review_status", "corrected_observed_title", "corrected_matched_title", "notes"],
     )
     page_rows_human = build_page_rows_human(page_rows)
     risk_rows_human = build_risk_rows_human(risk_rows)
-    apply_existing_values(
+    apply_existing_values_with_fallback(
         page_rows_human,
-        index_existing_rows(read_existing_rows(page_review_human_path), ["page", "image"]),
+        index_existing_rows(existing_page_rows_human, ["section_code", "block_index", "page", "image"]),
+        ["section_code", "block_index", "page", "image"],
+        index_unique_existing_rows(existing_page_rows_human, ["page", "image"]),
         ["page", "image"],
         ["status", "missing_titles", "extra_titles", "notes"],
     )
-    apply_existing_values(
+    apply_existing_values_with_fallback(
         risk_rows_human,
-        index_existing_rows(read_existing_rows(risk_review_human_path), ["page", "image", "observed_title", "matched_title"]),
+        index_existing_rows(
+            existing_risk_rows_human,
+            ["section_code", "block_index", "page", "image", "observed_title", "matched_title"],
+        ),
+        ["section_code", "block_index", "page", "image", "observed_title", "matched_title"],
+        index_unique_existing_rows(
+            existing_risk_rows_human,
+            ["page", "image", "observed_title", "matched_title"],
+        ),
         ["page", "image", "observed_title", "matched_title"],
         ["status", "corrected_observed_title", "corrected_matched_title", "notes"],
     )
@@ -227,6 +295,8 @@ def export_review_worklists(
         [
             "part_number",
             "capture_sequence",
+            "block_index",
+            "section_code",
             "propaedia_page_reference",
             "image_relative_path",
             "header_context",
@@ -247,6 +317,8 @@ def export_review_worklists(
         [
             "part_number",
             "capture_sequence",
+            "block_index",
+            "section_code",
             "propaedia_page_reference",
             "image_relative_path",
             "sort_order",
@@ -265,6 +337,8 @@ def export_review_worklists(
     write_csv(
         page_review_human_path,
         [
+            "section_code",
+            "block_index",
             "page",
             "image",
             "title_count",
@@ -279,6 +353,8 @@ def export_review_worklists(
     write_csv(
         risk_review_human_path,
         [
+            "section_code",
+            "block_index",
             "page",
             "image",
             "observed_title",
