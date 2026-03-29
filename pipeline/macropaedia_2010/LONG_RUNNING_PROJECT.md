@@ -69,6 +69,17 @@ Important distinction:
 - `propaedia_name` is the display name as printed in the Propaedia style, including comma reversals
   where Britannica uses them to make volume lookup easier
 
+App-facing implication:
+
+- when this data eventually ships in the app, the default user-facing article label should normally
+  come from `macropaedia_contents_name`, because that is the title a reader needs in order to find
+  the article in the Macropaedia volumes
+- `macropaedia_contents_name` is both the canonical 2010 contents title and the default lookup label
+  for app display, though the display layer may normalize capitalization for readability
+- `propaedia_name` should stay as the Propaedia-side alias used for matching, evidence, and optional
+  secondary display where it helps explain why a Propaedia recommendation points to that article
+- if the two differ, keep both values in the data instead of collapsing one into the other
+
 For now:
 
 - page lengths for the last article in each volume should stay blank until volume-end page evidence is added

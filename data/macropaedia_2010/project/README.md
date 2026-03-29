@@ -42,6 +42,15 @@ The Propaedia-name files have different roles:
 - `propaedia_name_candidate_summary.csv` groups those instances by article and suggests the current best `propaedia_name`
 - `article_identity_worklist.csv` includes those suggestions alongside the editable canonical `propaedia_name` field
 
+Use those fields with this split in mind:
+
+- `macropaedia_contents_name` is the canonical article title from the 2010 contents pages and should
+  normally be the default app-facing lookup/display label for the article itself
+- `propaedia_name` is the Propaedia-side alias used for matching and for any optional secondary
+  display that explains the Propaedia wording
+- when the names differ, keep both, because readers may navigate from a Propaedia recommendation but
+  still need the actual contents-page title to find the article in the Macropaedia
+
 `propaedia_page_capture_index.csv` is block-based. A single image can appear on multiple rows when
 one photo contains more than one logical `Suggested reading` block. Use:
 

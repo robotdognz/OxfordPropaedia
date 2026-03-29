@@ -12,6 +12,10 @@ The current goal is to produce separate machine-readable data for:
 - candidate article titles and starting pages
 - estimated page lengths within each volume
 - comparison against the 2005 Macropaedia title set already referenced in the app
+- preserved title crosswalks between Macropaedia contents names and Propaedia lookup/display names
+
+For eventual app use, treat the Macropaedia contents name as the default article label and the
+Propaedia name as an alias/crosswalk field.
 
 ## Source images
 
