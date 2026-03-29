@@ -1,20 +1,8 @@
 # Part 4 Propaedia Suggested Reading
 
 - Logical blocks captured: `12`
-- Matched recommendations: `53`
-- Unmatched recommendations: `9`
-
-## Unmatched recommendations
-
-- Page `148` / Section 421: `Components of`
-- Page `148` / Section 421: `Organisms`
-- Page `148` / Section 421: `Digestive Systems`
-- Page `148` / Section 421: `Systems`
-- Page `153` / Section 423: `Childhood`
-- Page `153` / Section 423: `Diseases and`
-- Page `153` / Section 423: `Disorders`
-- Page `153` / Section 423: `Digestive Systems`
-- Page `153` / Section 423: `Systems`
+- Matched recommendations: `62`
+- Unmatched recommendations: `0`
 
 ## Block summaries
 
@@ -40,24 +28,24 @@
 - Header context: `Part Four. Human Life`
 - Topic summary: Major articles dealing with the structures and functions of the human body
 - Recommendations:
-  - `Components of` -> unmatched
-  - `Organisms` -> unmatched
+  - `Biochemical Components of Organisms` -> `Biochemical Components of Organisms` (v2 p1007)
   - `Blood` -> `BLOOD` (v3 p125)
   - `Circulation and Circulatory Systems` -> `CIRCULATION AND CIRCULATORY SYSTEMS` (v4 p377)
-  - `Digestive Systems` -> unmatched
+  - `Digestion and Digestive Systems` -> `DIGESTION AND DIGESTIVE SYSTEMS` (v5 p275)
   - `Endocrine Systems` -> `ENDOCRINE SYSTEMS` (v6 p287)
   - `Excretion and Excretory Systems` -> `EXCRETION AND EXCRETORY SYSTEMS` (v7 p1)
   - `Integumentary Systems` -> `INTEGUMENTARY SYSTEMS` (v9 p755)
+  - `Muscles and Muscle Systems` -> `MUSCLES AND MUSCLE SYSTEMS` (v12 p452)
   - `Nerves and Nervous Systems` -> `NERVES AND NERVOUS SYSTEMS` (v12 p784)
   - `Nutrition` -> `NUTRITION` (v13 p50)
   - `Reproduction and Reproductive Systems` -> `REPRODUCTION AND REPRODUCTIVE SYSTEMS` (v14 p609)
-  - `Systems` -> unmatched
+  - `Respiration and Respiratory Systems` -> `RESPIRATION AND RESPIRATORY SYSTEMS` (v14 p725)
   - `Sensory Reception` -> `SENSORY RECEPTION` (v15 p115)
   - `Supportive and Connective Tissues` -> `SUPPORTIVE AND CONNECTIVE TISSUES` (v16 p272)
 
 ### Page 151 / Section 422
 
-- Header context: `Division II. Section 423`
+- Header context: `Division II. Section 422`
 - Topic summary: Major articles dealing with human health
 - Recommendations:
   - `Death` -> `DEATH` (v4 p982)
@@ -70,24 +58,24 @@
 - Header context: `Division II. Section 423`
 - Topic summary: Major articles dealing with human diseases
 - Recommendations:
+  - `Blood` -> `BLOOD` (v3 p125)
   - `Cancer` -> `CANCER` (v3 p519)
-  - `Childhood` -> unmatched
-  - `Diseases and` -> unmatched
-  - `Disorders` -> unmatched
+  - `Childhood Diseases and Disorders` -> `CHILDHOOD DISEASES` (v4 p9)
   - `Circulation and Circulatory Systems` -> `CIRCULATION AND CIRCULATORY SYSTEMS` (v4 p377)
   - `Diagnosis and Therapeutics` -> `DIAGNOSIS AND THERAPEUTICS` (v5 p246)
-  - `Digestive Systems` -> unmatched
+  - `Digestion and Digestive Systems` -> `DIGESTION AND DIGESTIVE SYSTEMS` (v5 p275)
   - `Disease` -> `DISEASE` (v5 p341)
   - `Endocrine Systems` -> `ENDOCRINE SYSTEMS` (v6 p287)
   - `Excretion and Excretory Systems` -> `EXCRETION AND EXCRETORY SYSTEMS` (v7 p1)
   - `Immunity` -> `IMMUNITY` (v8 p773)
   - `Infectious Diseases` -> `INFECTIOUS DISEASES` (v9 p589)
+  - `Integumentary Systems` -> `INTEGUMENTARY SYSTEMS` (v9 p755)
   - `Metabolism` -> `METABOLISM` (v11 p893)
   - `Muscles and Muscle Systems` -> `MUSCLES AND MUSCLE SYSTEMS` (v12 p452)
   - `Nerves and Nervous Systems` -> `NERVES AND NERVOUS SYSTEMS` (v12 p784)
   - `Nutrition` -> `NUTRITION` (v13 p50)
   - `Poisons and Poisoning` -> `POISONS AND POISONING` (v13 p908)
-  - `Systems` -> unmatched
+  - `Respiration and Respiratory Systems` -> `RESPIRATION AND RESPIRATORY SYSTEMS` (v14 p725)
   - `Sensory Reception` -> `SENSORY RECEPTION` (v15 p115)
   - `Supportive and Connective Tissues` -> `SUPPORTIVE AND CONNECTIVE TISSUES` (v16 p272)
   - `Transplants, Organ and Tissue` -> `Organ and Tissue TRANSPLANTS` (v16 p774)
@@ -103,14 +91,14 @@
 
 ### Page 161 / Section 431
 
-- Header context: `Division III. Section 432`
+- Header context: `Division III. Section 431`
 - Topic summary: Major article dealing with human nature and experience: general considerations
 - Recommendations:
   - `Behaviour, The Development of Human` -> `The Development of Human BEHAVIOUR` (v2 p829)
 
 ### Page 163 / Section 432
 
-- Header context: `Division III. Section 433`
+- Header context: `Division III. Section 432`
 - Topic summary: Major articles dealing with the influence of the current environment on a person's behaviour and conscious experience: attention, sensation, and perception
 - Recommendations:
   - `Attention` -> `ATTENTION` (v2 p391)

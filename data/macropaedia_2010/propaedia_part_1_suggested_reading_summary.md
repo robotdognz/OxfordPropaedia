@@ -99,7 +99,7 @@
 
 ### Page 53 / Section 131
 
-- Header context: `Division III. Section 132`
+- Header context: `Division III. Section 131`
 - Topic summary: Major articles dealing with the cosmos
 - Recommendations:
   - `Analysis and Measurement, Physical and Chemical` -> `Physical and Chemical ANALYSIS AND MEASUREMENT` (v1 p523)

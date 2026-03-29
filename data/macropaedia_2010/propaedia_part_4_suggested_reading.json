@@ -1,8 +1,8 @@
 {
   "partNumber": 4,
   "pageCount": 12,
-  "matchedRecommendationCount": 53,
-  "unmatchedRecommendationCount": 9,
+  "matchedRecommendationCount": 62,
+  "unmatchedRecommendationCount": 0,
   "pages": [
     {
       "partNumber": 4,
@@ -100,20 +100,18 @@
       "recommendations": [
         {
           "sortOrder": 1,
-          "observedTitle": "Components of",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "observedTitle": "Biochemical Components of Organisms",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Biochemical Components of Organisms",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "1007",
+          "matchedStartPageIndex": 1007,
+          "matchedPageCountEstimate": 62
         },
         {
           "sortOrder": 2,
-          "observedTitle": "Organisms",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 3,
           "observedTitle": "Blood",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -125,7 +123,7 @@
           "matchedPageCountEstimate": 30
         },
         {
-          "sortOrder": 4,
+          "sortOrder": 3,
           "observedTitle": "Circulation and Circulatory Systems",
           "extractionMethod": "combined_3_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -137,14 +135,19 @@
           "matchedPageCountEstimate": 41
         },
         {
-          "sortOrder": 5,
-          "observedTitle": "Digestive Systems",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "sortOrder": 4,
+          "observedTitle": "Digestion and Digestive Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DIGESTION AND DIGESTIVE SYSTEMS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "275",
+          "matchedStartPageIndex": 275,
+          "matchedPageCountEstimate": 40
         },
         {
-          "sortOrder": 6,
+          "sortOrder": 5,
           "observedTitle": "Endocrine Systems",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -156,7 +159,7 @@
           "matchedPageCountEstimate": 45
         },
         {
-          "sortOrder": 7,
+          "sortOrder": 6,
           "observedTitle": "Excretion and Excretory Systems",
           "extractionMethod": "combined_3_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -168,7 +171,7 @@
           "matchedPageCountEstimate": 27
         },
         {
-          "sortOrder": 8,
+          "sortOrder": 7,
           "observedTitle": "Integumentary Systems",
           "extractionMethod": "combined_2_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -178,6 +181,18 @@
           "matchedStartPage": "755",
           "matchedStartPageIndex": 755,
           "matchedPageCountEstimate": 20
+        },
+        {
+          "sortOrder": 8,
+          "observedTitle": "Muscles and Muscle Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MUSCLES AND MUSCLE SYSTEMS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 28
         },
         {
           "sortOrder": 9,
@@ -217,10 +232,15 @@
         },
         {
           "sortOrder": 12,
-          "observedTitle": "Systems",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "observedTitle": "Respiration and Respiratory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RESPIRATION AND RESPIRATORY SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "725",
+          "matchedStartPageIndex": 725,
+          "matchedPageCountEstimate": 33
         },
         {
           "sortOrder": 13,
@@ -255,7 +275,7 @@
       "sectionCode": "422",
       "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-04.jpg",
       "propaediaPageReference": "151",
-      "headerContext": "Division II. Section 423",
+      "headerContext": "Division II. Section 422",
       "topicSummary": "Major articles dealing with human health",
       "recommendations": [
         {
@@ -320,6 +340,18 @@
       "recommendations": [
         {
           "sortOrder": 1,
+          "observedTitle": "Blood",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "BLOOD",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "125",
+          "matchedStartPageIndex": 125,
+          "matchedPageCountEstimate": 30
+        },
+        {
+          "sortOrder": 2,
           "observedTitle": "Cancer",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -331,28 +363,19 @@
           "matchedPageCountEstimate": 9
         },
         {
-          "sortOrder": 2,
-          "observedTitle": "Childhood",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
           "sortOrder": 3,
-          "observedTitle": "Diseases and",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "observedTitle": "Childhood Diseases and Disorders",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "observed_manual_alias",
+          "matchedTitle": "CHILDHOOD DISEASES",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "9",
+          "matchedStartPageIndex": 9,
+          "matchedPageCountEstimate": 12
         },
         {
           "sortOrder": 4,
-          "observedTitle": "Disorders",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
-        },
-        {
-          "sortOrder": 5,
           "observedTitle": "Circulation and Circulatory Systems",
           "extractionMethod": "combined_3_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -364,7 +387,7 @@
           "matchedPageCountEstimate": 41
         },
         {
-          "sortOrder": 6,
+          "sortOrder": 5,
           "observedTitle": "Diagnosis and Therapeutics",
           "extractionMethod": "combined_2_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -376,14 +399,19 @@
           "matchedPageCountEstimate": 23
         },
         {
-          "sortOrder": 7,
-          "observedTitle": "Digestive Systems",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "sortOrder": 6,
+          "observedTitle": "Digestion and Digestive Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "DIGESTION AND DIGESTIVE SYSTEMS",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "275",
+          "matchedStartPageIndex": 275,
+          "matchedPageCountEstimate": 40
         },
         {
-          "sortOrder": 8,
+          "sortOrder": 7,
           "observedTitle": "Disease",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -395,7 +423,7 @@
           "matchedPageCountEstimate": 53
         },
         {
-          "sortOrder": 9,
+          "sortOrder": 8,
           "observedTitle": "Endocrine Systems",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -407,7 +435,7 @@
           "matchedPageCountEstimate": 45
         },
         {
-          "sortOrder": 10,
+          "sortOrder": 9,
           "observedTitle": "Excretion and Excretory Systems",
           "extractionMethod": "combined_3_adjacent_ocr_lines",
           "matchStatus": "matched",
@@ -419,7 +447,7 @@
           "matchedPageCountEstimate": 27
         },
         {
-          "sortOrder": 11,
+          "sortOrder": 10,
           "observedTitle": "Immunity",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -431,7 +459,7 @@
           "matchedPageCountEstimate": null
         },
         {
-          "sortOrder": 12,
+          "sortOrder": 11,
           "observedTitle": "Infectious Diseases",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -441,6 +469,18 @@
           "matchedStartPage": "589",
           "matchedStartPageIndex": 589,
           "matchedPageCountEstimate": 26
+        },
+        {
+          "sortOrder": 12,
+          "observedTitle": "Integumentary Systems",
+          "extractionMethod": "combined_2_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "INTEGUMENTARY SYSTEMS",
+          "matchedVolumeNumber": 9,
+          "matchedStartPage": "755",
+          "matchedStartPageIndex": 755,
+          "matchedPageCountEstimate": 20
         },
         {
           "sortOrder": 13,
@@ -504,10 +544,15 @@
         },
         {
           "sortOrder": 18,
-          "observedTitle": "Systems",
-          "extractionMethod": "single_ocr_line",
-          "matchStatus": "unmatched",
-          "matchMethod": null
+          "observedTitle": "Respiration and Respiratory Systems",
+          "extractionMethod": "combined_3_adjacent_ocr_lines",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RESPIRATION AND RESPIRATORY SYSTEMS",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "725",
+          "matchedStartPageIndex": 725,
+          "matchedPageCountEstimate": 33
         },
         {
           "sortOrder": 19,
@@ -602,7 +647,7 @@
       "sectionCode": "431",
       "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-07.jpg",
       "propaediaPageReference": "161",
-      "headerContext": "Division III. Section 432",
+      "headerContext": "Division III. Section 431",
       "topicSummary": "Major article dealing with human nature and experience: general considerations",
       "recommendations": [
         {
@@ -626,7 +671,7 @@
       "sectionCode": "432",
       "imageRelativePath": "propaedia_pages/part_4/propaedia-2010-part-04-photo-08.jpg",
       "propaediaPageReference": "163",
-      "headerContext": "Division III. Section 433",
+      "headerContext": "Division III. Section 432",
       "topicSummary": "Major articles dealing with the influence of the current environment on a person's behaviour and conscious experience: attention, sensation, and perception",
       "recommendations": [
         {

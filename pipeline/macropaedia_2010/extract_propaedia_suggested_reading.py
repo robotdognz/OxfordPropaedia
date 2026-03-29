@@ -37,6 +37,9 @@ MANUAL_SECTION_CODE_OVERRIDES: dict[tuple[int, str, int], str] = {
     (3, "137", 1): "354",
     (4, "148", 1): "421",
 }
+PROPAEDIA_TO_CONTENTS_TITLE_OVERRIDES: dict[str, str] = {
+    "Childhood Diseases and Disorders": "CHILDHOOD DISEASES",
+}
 
 
 @dataclass(frozen=True)
@@ -274,6 +277,14 @@ def extract_section_code(text: str) -> str:
     return match.group(1) if match else ""
 
 
+def normalize_header_context_section(header_context: str, section_code: str) -> str:
+    if not header_context or not section_code:
+        return header_context
+    if extract_section_code(header_context) == section_code:
+        return header_context
+    return SECTION_CODE_RE.sub(f"Section {section_code}", header_context, count=1)
+
+
 def parse_crop_pct(value: str) -> float | None:
     stripped = value.strip()
     if not stripped:
@@ -357,7 +368,9 @@ def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object
         return []
 
     upper_anchor = macro if macro is not None else suggested
-    upper_limit = mid_y(upper_anchor) - max(height(upper_anchor), 0.012)
+    # Dense multi-column blocks can begin almost immediately below the label line.
+    # Use a shallow gap so the first row is not clipped out of the geometry pass.
+    upper_limit = mid_y(upper_anchor) - max(height(upper_anchor) * 0.25, 0.004)
     if micro is not None:
         lower_limit = mid_y(micro) + max(height(micro), 0.01)
     else:
@@ -637,6 +650,15 @@ def extract_macropaedia_block_from_dense_column_ocr(
 
 
 def match_title(title: str, article_index: dict[str, tuple[Article, str]]) -> tuple[Article | None, str | None]:
+    override_title = PROPAEDIA_TO_CONTENTS_TITLE_OVERRIDES.get(title)
+    if override_title is None:
+        override_title = PROPAEDIA_TO_CONTENTS_TITLE_OVERRIDES.get(normalize_key(title))
+    if override_title is not None:
+        for variant in lookup_variants(override_title):
+            match = article_index.get(variant)
+            if match is not None:
+                article, _ = match
+                return article, "observed_manual_alias"
     for variant, method in lookup_variants(title).items():
         match = article_index.get(variant)
         if match is not None:
@@ -945,6 +967,11 @@ def build_page_payload(
     )
     if inferred_section_code:
         page_payload["sectionCode"] = inferred_section_code
+        if not row.get("header_context_override", "").strip():
+            page_payload["headerContext"] = normalize_header_context_section(
+                str(page_payload["headerContext"]),
+                inferred_section_code,
+            )
     return page_payload
 
 

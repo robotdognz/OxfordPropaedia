@@ -155,7 +155,7 @@
 
 ### Page 123 / Section 334
 
-- Header context: `Division III. Section 335`
+- Header context: `Division III. Section 334`
 - Topic summary: Major articles dealing with covering and support: integumentary, skeletal, and musculatory systems
 - Recommendations:
   - `Integumentary Systems` -> `INTEGUMENTARY SYSTEMS` (v9 p755)
@@ -221,7 +221,7 @@
 
 ### Page 133 / Section 351
 
-- Header context: `Division V. Section 352`
+- Header context: `Division V. Section 351`
 - Topic summary: Major article dealing with the basic features of the biosphere
 - Recommendations:
   - `Biosphere, The` -> unmatched
@@ -245,7 +245,7 @@
 
 ### Page 137 / Section 354
 
-- Header context: `Division V. Section 355`
+- Header context: `Division V. Section 354`
 - Topic summary: Major articles dealing with biogeographic distribution of organisms: ecosystems
 - Recommendations:
   - `Biosphere and Concepts of Ecology, The` -> `The BIOSPHERE and Concepts of Ecology` (v2 p1127)
