@@ -526,7 +526,7 @@ export function CenteredCircleNavigatorPanel({
     <>
       <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
         <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-          Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new {resolvedLayerLabel} they open across the outline.
+          Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how many new {resolvedLayerLabel} they open across the outline.
         </p>
 
         {suggestedSections.length > 0 && (
@@ -592,6 +592,7 @@ export function CenteredCircleNavigatorPanel({
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
+            coverageLayer={resolvedLayer}
             coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
             coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
             statusMessage={statusMessage ?? undefined}
@@ -734,7 +735,7 @@ export function TopPartCircleNavigatorPanel({
     <>
       <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
         <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-          Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new {resolvedLayerLabel} they open across the outline.
+          Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how many new {resolvedLayerLabel} they open across the outline.
         </p>
 
         {topPart.divisions.length > 0 && (
@@ -798,6 +799,7 @@ export function TopPartCircleNavigatorPanel({
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
+            coverageLayer={resolvedLayer}
             coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
             coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
             statusMessage={statusMessage ?? undefined}

@@ -4,6 +4,7 @@ import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { sectionUrl, slugify } from '../../utils/helpers';
 import { wikipediaChecklistKey } from '../../utils/readingChecklist';
+import { splitWikipediaExtractParagraphs } from '../../utils/wikipediaExtract';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
 import {
@@ -107,6 +108,13 @@ const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
 const levelLabels: Record<number, string> = { 1: 'Level 1 (Top 10)', 2: 'Level 2 (Top 100)', 3: 'Level 3 (~1,000)' };
 const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
+const extractParagraphs = splitWikipediaExtractParagraphs(article.extract);
+const overviewHeading = extractParagraphs.length > 0 ? 'Wikipedia Extract' : article.summaryAI ? 'Article Summary' : null;
+const overviewParagraphs = extractParagraphs.length > 0
+  ? extractParagraphs
+  : article.summaryAI
+    ? [article.summaryAI]
+    : [];
 ---
 
 <BaseLayout title={`${article.displayTitle || article.title} — Wikipedia`} description={`Wikipedia article: ${article.title}`}>
@@ -141,10 +149,14 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
       </div>
     </header>
 
-    {article.extract && (
+    {overviewHeading && overviewParagraphs.length > 0 && (
       <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Wikipedia Extract</h2>
-        <p class="mt-2 text-sm leading-relaxed text-gray-700">{article.extract}</p>
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">{overviewHeading}</h2>
+        <div class="mt-2 space-y-3">
+          {overviewParagraphs.map((paragraph) => (
+            <p class="text-sm leading-relaxed text-gray-700">{paragraph}</p>
+          ))}
+        </div>
       </section>
     )}
 

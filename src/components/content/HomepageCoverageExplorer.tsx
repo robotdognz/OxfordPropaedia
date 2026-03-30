@@ -498,6 +498,7 @@ export default function HomepageCoverageExplorer({
               checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
               itemSingular={source.itemSingular}
               itemPlural={source.itemPlural}
+              coverageLayer={activeLayer}
               coverageUnitSingular={coverageLayerLabel(activeLayer, 1)}
               coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
               emptyMessage={emptyRecommendationMessage(source, activeLayer, isLayerComplete)}

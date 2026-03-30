@@ -1,5 +1,11 @@
 Propaedia TODO:
 
+    - Need to fix the odd fading out Whole Outline layer bars leaving weird dots that fade out for a while when changing to a reading type that doesn't have any progress. It looks quite strange
+
+    - Info pages for VSI's should say what edition the book is as well as release year
+
+    - About page needs to be updated with In Our Time info and scrape date. Update copy to match current functionality, add boxes like "How relevance is calculated" for home page recommendations and also aggregation in Division and Part pages
+
     - Add button for download full site for offline use
 
     - Macropaedia data needed for app (first pass)

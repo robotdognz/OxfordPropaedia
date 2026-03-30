@@ -275,6 +275,7 @@ export default function WikipediaLibrary({
           checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
           itemSingular="article"
           itemPlural="articles"
+          coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}

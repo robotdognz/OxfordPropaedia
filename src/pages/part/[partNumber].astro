@@ -114,14 +114,23 @@ const bgColors: Record<number, string> = {
       {EssayContent && (
         <section id="essay" class="mb-10 scroll-mt-24">
           <details id="essay-panel" class="group">
-            <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center gap-2">
-              <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <summary class="cursor-pointer text-gray-700 flex items-start gap-3">
+              <svg class="mt-0.5 w-5 h-5 shrink-0 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
-              Introductory Essay
-              {essay?.data.author && (
-                <span class="text-sm font-normal text-gray-500">by {essay.data.author}</span>
-              )}
+              <span class="min-w-0">
+                <span class="block text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
+                  Introductory Essay
+                </span>
+                {essay?.data.title && (
+                  <span class="mt-1 block font-serif text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
+                    {essay.data.title}
+                  </span>
+                )}
+                {essay?.data.author && (
+                  <span class="mt-1 block text-sm font-sans font-normal text-gray-500">by {essay.data.author}</span>
+                )}
+              </span>
             </summary>
             <div class="mt-4 pl-7 prose-propaedia">
               <EssayContent />

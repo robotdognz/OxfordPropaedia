@@ -273,6 +273,7 @@ export default function IotLibrary({
           checkboxAriaLabel={(step) => `Mark ${step.title} as listened`}
           itemSingular="episode"
           itemPlural="episodes"
+          coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}

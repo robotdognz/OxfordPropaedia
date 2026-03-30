@@ -286,6 +286,7 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
           checkboxAriaLabel={(step) => `Mark ${step.title} by ${step.author} as completed`}
           itemSingular="book"
           itemPlural="books"
+          coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}

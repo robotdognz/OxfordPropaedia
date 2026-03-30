@@ -1,4 +1,5 @@
 import { h, type ComponentChildren } from 'preact';
+import type { CoverageLayer } from '../../utils/readingLibrary';
 import type { ReadingSectionSummary } from '../../utils/readingData';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSectionLinks from './ReadingSectionLinks';
@@ -25,6 +26,7 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   checkboxAriaLabel: (step: TStep) => string;
   itemSingular: string;
   itemPlural: string;
+  coverageLayer: CoverageLayer;
   coverageUnitSingular: string;
   coverageUnitPlural: string;
   statusMessage?: string;
@@ -50,6 +52,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   checkboxAriaLabel,
   itemSingular,
   itemPlural,
+  coverageLayer,
   coverageUnitSingular,
   coverageUnitPlural,
   statusMessage,
@@ -116,6 +119,9 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
             const newPartsSpanned = countPartsSpanned(step.newSections);
+            const crossPartContext = coverageLayer !== 'part' && newPartsSpanned > 0
+              ? ` across ${newPartsSpanned} ${newPartsSpanned === 1 ? 'Part' : 'Parts'}`
+              : '';
 
             return (
               <div key={step.checklistKey} class="rounded-xl border border-amber-200 bg-white p-4">
@@ -161,7 +167,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
                     <>
                       it opens {step.newCoverageCount} new{' '}
                       {step.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural}
-                      {newPartsSpanned > 0 ? ` across ${newPartsSpanned} ${newPartsSpanned === 1 ? 'Part' : 'Parts'}` : ''}.
+                      {crossPartContext}.
                     </>
                   ) : (
                     <>it keeps this path visible, but does not add further new {coverageUnitPlural} right now.</>

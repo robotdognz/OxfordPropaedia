@@ -243,6 +243,7 @@ export default function MacropaediaLibrary({
           checkboxAriaLabel={(step) => `Mark ${step.title} as completed`}
           itemSingular="article"
           itemPlural="articles"
+          coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
