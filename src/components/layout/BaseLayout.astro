@@ -210,6 +210,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         function formatSource(source) {
           switch (source) {
             case 'full-site cache': return 'Full Snapshot';
+            case 'full-site cache (fallback)': return 'Full Snapshot Fallback';
             case 'core cache': return 'Core Cache';
             case 'core cache (timeout)': return 'Core Cache Timeout';
             case 'core cache (fallback)': return 'Core Cache Fallback';
@@ -223,11 +224,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         function formatEntry(entry, fallbackText) {
           if (!entry) return fallbackText;
           var path = entry.path === '/' ? 'home' : entry.path;
-          var parts = [formatSource(entry.source), truncateMiddle(path, 36)];
           if (typeof entry.ms === 'number') {
-            parts.push(entry.ms + ' ms');
+            return [formatSource(entry.source), entry.ms + ' ms', truncateMiddle(path, 28)].join(' · ');
           }
-          return parts.join(' · ');
+          return [formatSource(entry.source), truncateMiddle(path, 32)].join(' · ');
         }
 
         function mountBadge() {

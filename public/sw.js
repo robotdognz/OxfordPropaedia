@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v10';
+const CACHE_NAME = 'propaedia-v11';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
@@ -145,15 +145,19 @@ async function matchOfflineRequest(cache, request, ignoreSearch) {
   return null;
 }
 
-async function matchAnyOfflineCache(request, ignoreSearch) {
+async function matchActiveOfflineCache(request, ignoreSearch) {
   const activeOfflineCache = await getActiveOfflineCache();
-  const activeOfflineMatch = activeOfflineCache
-    ? await matchOfflineRequest(activeOfflineCache, request, ignoreSearch)
-    : null;
+  if (!activeOfflineCache) {
+    return null;
+  }
+
+  return matchOfflineRequest(activeOfflineCache, request, ignoreSearch);
+}
+
+async function matchCoreCache(request, ignoreSearch) {
   const coreCache = await caches.open(CACHE_NAME);
   const coreMatch = await matchOfflineRequest(coreCache, request, ignoreSearch);
   return {
-    activeOfflineMatch,
     coreCache,
     coreMatch,
   };
@@ -205,53 +209,72 @@ self.addEventListener('fetch', (event) => {
       const debugClientId = event.resultingClientId || event.clientId || null;
       const ignoreSearch = event.request.mode === 'navigate';
       const isOfflineDownloadRequest = event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) === '1';
-      const offlineMatches = await matchAnyOfflineCache(event.request, ignoreSearch);
-      const cached = offlineMatches.activeOfflineMatch || offlineMatches.coreMatch;
-      const cacheDelay = !isOfflineDownloadRequest && offlineMatches.coreMatch
+      const coreMatches = await matchCoreCache(event.request, ignoreSearch);
+      const cacheDelay = !isOfflineDownloadRequest && coreMatches.coreMatch
         ? cacheFallbackDelay(event.request)
         : null;
 
-      if (!isOfflineDownloadRequest && offlineMatches.activeOfflineMatch) {
-        event.waitUntil(updateDebugState(debugClientId, event.request, 'full-site cache', startedAt));
-        return offlineMatches.activeOfflineMatch;
-      }
+      if (!isOfflineDownloadRequest && self.navigator.onLine === false) {
+        const activeOfflineMatch = await matchActiveOfflineCache(event.request, ignoreSearch);
+        if (activeOfflineMatch) {
+          event.waitUntil(updateDebugState(debugClientId, event.request, 'full-site cache', startedAt));
+          return activeOfflineMatch;
+        }
 
-      if (self.navigator.onLine === false && cached) {
-        event.waitUntil(updateDebugState(debugClientId, event.request, 'core cache', startedAt));
-        return cached;
+        if (coreMatches.coreMatch) {
+          event.waitUntil(updateDebugState(debugClientId, event.request, 'core cache', startedAt));
+          return coreMatches.coreMatch;
+        }
+
+        if (event.request.mode === 'navigate') {
+          const fallback = (await coreMatches.coreCache.match(BASE)) || Response.error();
+          event.waitUntil(updateDebugState(debugClientId, event.request, 'home fallback', startedAt));
+          return fallback;
+        }
+
+        event.waitUntil(updateDebugState(debugClientId, event.request, 'error', startedAt));
+        return Response.error();
       }
 
       try {
-        if (cached && cacheDelay !== null) {
+        if (coreMatches.coreMatch && cacheDelay !== null) {
           const networkResponse = fetchAndUpdateCoreCache(event.request).catch(() => null);
           const preferredResponse = await Promise.race([
             networkResponse,
             new Promise((resolve) => {
-              setTimeout(() => resolve(cached), cacheDelay);
+              setTimeout(() => resolve(coreMatches.coreMatch), cacheDelay);
             }),
           ]);
 
           if (preferredResponse) {
-            const source = preferredResponse === cached ? 'core cache (timeout)' : 'network';
+            const source = preferredResponse === coreMatches.coreMatch ? 'core cache (timeout)' : 'network';
             event.waitUntil(updateDebugState(debugClientId, event.request, source, startedAt));
             return preferredResponse;
           }
 
           event.waitUntil(updateDebugState(debugClientId, event.request, 'core cache', startedAt));
-          return cached;
+          return coreMatches.coreMatch;
         }
 
         const response = await fetchAndUpdateCoreCache(event.request);
         event.waitUntil(updateDebugState(debugClientId, event.request, 'network', startedAt));
         return response;
       } catch {
-        if (cached) {
+        if (!isOfflineDownloadRequest) {
+          const activeOfflineMatch = await matchActiveOfflineCache(event.request, ignoreSearch);
+          if (activeOfflineMatch) {
+            event.waitUntil(updateDebugState(debugClientId, event.request, 'full-site cache (fallback)', startedAt));
+            return activeOfflineMatch;
+          }
+        }
+
+        if (coreMatches.coreMatch) {
           event.waitUntil(updateDebugState(debugClientId, event.request, 'core cache (fallback)', startedAt));
-          return cached;
+          return coreMatches.coreMatch;
         }
 
         if (event.request.mode === 'navigate') {
-          const fallback = (await offlineMatches.coreCache.match(BASE)) || Response.error();
+          const fallback = (await coreMatches.coreCache.match(BASE)) || Response.error();
           event.waitUntil(updateDebugState(debugClientId, event.request, 'home fallback', startedAt));
           return fallback;
         }
