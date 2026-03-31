@@ -173,6 +173,145 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
     <script is:inline>
       (function() {
+        if (!('serviceWorker' in navigator)) return;
+
+        var STORAGE_KEY = 'propaedia-cache-debug';
+        var PARAM_KEY = 'cache-debug';
+        var params = new URLSearchParams(window.location.search);
+
+        if (params.get(PARAM_KEY) === '1') {
+          sessionStorage.setItem(STORAGE_KEY, '1');
+        } else if (params.get(PARAM_KEY) === '0') {
+          sessionStorage.removeItem(STORAGE_KEY);
+        }
+
+        if (sessionStorage.getItem(STORAGE_KEY) !== '1') return;
+
+        function truncateMiddle(value, maxLength) {
+          if (!value || value.length <= maxLength) return value;
+          var edgeLength = Math.max(8, Math.floor((maxLength - 1) / 2));
+          return value.slice(0, edgeLength) + '…' + value.slice(-edgeLength);
+        }
+
+        function formatSource(source) {
+          switch (source) {
+            case 'full-site cache': return 'Full Snapshot';
+            case 'core cache': return 'Core Cache';
+            case 'core cache (timeout)': return 'Core Cache Timeout';
+            case 'core cache (fallback)': return 'Core Cache Fallback';
+            case 'network': return 'Network';
+            case 'home fallback': return 'Home Fallback';
+            case 'error': return 'Error';
+            default: return source || 'Waiting';
+          }
+        }
+
+        function formatEntry(entry, fallbackText) {
+          if (!entry) return fallbackText;
+          var path = entry.path === '/' ? 'home' : entry.path;
+          var parts = [formatSource(entry.source), truncateMiddle(path, 36)];
+          if (typeof entry.ms === 'number') {
+            parts.push(entry.ms + ' ms');
+          }
+          return parts.join(' · ');
+        }
+
+        var badge = document.createElement('aside');
+        badge.setAttribute('aria-live', 'polite');
+        badge.style.cssText = [
+          'position:fixed',
+          'left:1rem',
+          'bottom:1rem',
+          'z-index:80',
+          'width:min(22rem,calc(100vw - 2rem))',
+          'border:1px solid rgba(148,163,184,0.6)',
+          'background:rgba(255,255,255,0.96)',
+          'backdrop-filter:blur(10px)',
+          'border-radius:1rem',
+          'box-shadow:0 18px 50px rgba(15,23,42,0.18)',
+          'padding:0.85rem 0.9rem',
+          'font:12px/1.45 Inter, sans-serif',
+          'color:#0f172a'
+        ].join(';');
+
+        badge.innerHTML = [
+          '<div style="display:flex;align-items:center;justify-content:space-between;gap:0.75rem;margin-bottom:0.5rem;">',
+          '  <div>',
+          '    <div style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#64748b;">Cache Debug</div>',
+          '    <div style="font-size:11px;color:#94a3b8;">Enabled via ?cache-debug=1</div>',
+          '  </div>',
+          '  <button type="button" data-cache-debug-hide style="border:0;background:transparent;color:#475569;font:inherit;cursor:pointer;padding:0;">Hide</button>',
+          '</div>',
+          '<div data-cache-debug-status style="font-size:11px;color:#64748b;margin-bottom:0.55rem;">Waiting for service worker…</div>',
+          '<div style="display:grid;gap:0.35rem;">',
+          '  <div data-cache-debug-page style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></div>',
+          '  <div data-cache-debug-data style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></div>',
+          '  <div data-cache-debug-asset style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></div>',
+          '</div>',
+        ].join('');
+
+        document.body.appendChild(badge);
+
+        var statusEl = badge.querySelector('[data-cache-debug-status]');
+        var pageEl = badge.querySelector('[data-cache-debug-page]');
+        var dataEl = badge.querySelector('[data-cache-debug-data]');
+        var assetEl = badge.querySelector('[data-cache-debug-asset]');
+        var hideButton = badge.querySelector('[data-cache-debug-hide]');
+
+        function renderState(state, statusText) {
+          if (statusEl) {
+            statusEl.textContent = statusText || 'Watching current page requests';
+          }
+
+          if (pageEl) {
+            pageEl.textContent = 'Page: ' + formatEntry(state && state.page, 'Waiting');
+          }
+          if (dataEl) {
+            dataEl.textContent = 'Data: ' + formatEntry(state && state.data, 'Waiting');
+          }
+          if (assetEl) {
+            assetEl.textContent = 'Assets: ' + formatEntry(state && state.asset, 'Waiting');
+          }
+        }
+
+        renderState(null, 'Waiting for service worker…');
+
+        if (hideButton) {
+          hideButton.addEventListener('click', function() {
+            sessionStorage.removeItem(STORAGE_KEY);
+            badge.remove();
+          });
+        }
+
+        navigator.serviceWorker.addEventListener('message', function(event) {
+          if (!event.data || event.data.type !== 'propaedia-cache-debug-state') return;
+          renderState(event.data.state || null);
+        });
+
+        function requestDebugState() {
+          if (!navigator.serviceWorker.controller) {
+            renderState(null, 'No active controller yet. Reload once after updates.');
+            return;
+          }
+
+          navigator.serviceWorker.controller.postMessage({
+            type: 'propaedia-cache-debug-get',
+          });
+        }
+
+        navigator.serviceWorker.ready.then(function() {
+          requestDebugState();
+          window.setTimeout(requestDebugState, 500);
+        });
+
+        navigator.serviceWorker.addEventListener('controllerchange', function() {
+          window.setTimeout(requestDebugState, 100);
+        });
+      })();
+    </script>
+
+    <script is:inline>
+      (function() {
         var HIGHLIGHT_CLASS = 'pagefind-highlight';
         var HIGHLIGHT_PARAM = 'pagefind-highlight';
         var terms = new URLSearchParams(window.location.search).getAll(HIGHLIGHT_PARAM);
