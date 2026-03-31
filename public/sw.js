@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v8';
+const CACHE_NAME = 'propaedia-v9';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
@@ -135,7 +135,14 @@ self.addEventListener('fetch', (event) => {
       const isOfflineDownloadRequest = event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) === '1';
       const offlineMatches = await matchAnyOfflineCache(event.request, ignoreSearch);
       const cached = offlineMatches.activeOfflineMatch || offlineMatches.coreMatch;
-      const cacheDelay = !isOfflineDownloadRequest && cached ? cacheFallbackDelay(event.request) : null;
+      const cacheDelay = !isOfflineDownloadRequest && offlineMatches.coreMatch
+        ? cacheFallbackDelay(event.request)
+        : null;
+
+      if (!isOfflineDownloadRequest && offlineMatches.activeOfflineMatch) {
+        event.waitUntil(fetchAndUpdateCoreCache(event.request).catch(() => null));
+        return offlineMatches.activeOfflineMatch;
+      }
 
       if (self.navigator.onLine === false && cached) {
         return cached;
