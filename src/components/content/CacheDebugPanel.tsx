@@ -28,6 +28,12 @@ function writeCacheDebugPreference(enabled: boolean): boolean {
   }
 }
 
+function statusClasses(enabled: boolean): string {
+  return enabled
+    ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
+    : 'border-slate-200 bg-slate-50 text-slate-700';
+}
+
 export default function CacheDebugPanel() {
   const [enabled, setEnabled] = useState(false);
   const [storageAvailable, setStorageAvailable] = useState(true);
@@ -55,20 +61,15 @@ export default function CacheDebugPanel() {
   }
 
   return (
-    <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div class="max-w-3xl space-y-2">
+    <section class="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div class="max-w-2xl space-y-2">
           <p class="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
             Cache Debug
           </p>
-          <h2 class="font-serif text-2xl text-slate-900">Show cache source details in the app</h2>
+          <h2 class="font-serif text-2xl text-slate-900">Inspect request sources</h2>
           <p class="text-sm leading-6 text-slate-600">
-            This adds a small fixed badge that shows whether the current page, JSON data, and app assets came from
-            the full offline snapshot, the core cache, or the network.
-          </p>
-          <p class="text-sm leading-6 text-slate-600">
-            The setting persists across pages on this device. Turning it on or off reloads the current page once so the
-            badge state is applied immediately.
+            Shows where the current page, data, and assets are coming from.
           </p>
           {!storageAvailable ? (
             <p class="text-sm leading-6 text-red-700">
@@ -77,21 +78,26 @@ export default function CacheDebugPanel() {
           ) : null}
         </div>
 
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
-          <p>
-            Status: <span class="font-medium text-slate-900">{enabled ? 'On' : 'Off'}</span>
-          </p>
+        <div class={`rounded-full border px-4 py-2 text-sm font-medium ${statusClasses(enabled)}`}>
+          {enabled ? 'Badge On' : 'Badge Off'}
         </div>
       </div>
 
-      <div class="mt-5 flex flex-wrap gap-2">
+      <div class="mt-5 flex flex-wrap items-center gap-3">
         <button
           type="button"
           onClick={handleToggle}
-          class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
+          class={`rounded-full px-4 py-2 text-sm font-medium transition ${
+            enabled
+              ? 'border border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50'
+              : 'bg-slate-900 text-white hover:bg-slate-800'
+          }`}
         >
           {enabled ? 'Hide cache debug badge' : 'Show cache debug badge'}
         </button>
+        <p class="text-sm leading-6 text-slate-500">
+          Changing this setting reloads the current page once.
+        </p>
       </div>
     </section>
   );

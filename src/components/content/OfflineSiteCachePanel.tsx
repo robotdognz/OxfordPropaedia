@@ -43,6 +43,17 @@ function formatBytes(bytes: number): string {
   return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 }
 
+function formatGeneratedAt(value: string): string {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+
+  return date.toLocaleString(undefined, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
 function currentCacheName(version: string): string {
   return `${FULL_SITE_CACHE_PREFIX}${version}`;
 }
@@ -366,10 +377,10 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
   const hasPendingUpdate = Boolean(activeVersion && manifest && activeVersion !== manifest.version);
   const showReplaceButton = hasPendingUpdate || (quotaFailure && Boolean(activeVersion));
   const statusTitle = status === 'complete'
-    ? 'Full offline download is ready.'
+    ? 'Full offline snapshot is ready.'
     : hasPendingUpdate
-      ? 'Offline update available'
-      : 'Download status';
+      ? 'A newer snapshot is available'
+      : 'Snapshot status';
   const downloadButtonLabel = status === 'downloading'
     ? 'Downloading...'
     : hasPendingUpdate
@@ -381,10 +392,45 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         : cachedCount > 0
           ? 'Resume download'
           : 'Download full site';
+  const statusPillClass = status === 'complete'
+    ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
+    : status === 'downloading' || status === 'clearing'
+      ? 'border-sky-200 bg-sky-50 text-sky-900'
+      : status === 'error'
+        ? 'border-red-200 bg-red-50 text-red-800'
+        : hasPendingUpdate
+          ? 'border-amber-200 bg-amber-50 text-amber-900'
+          : 'border-slate-200 bg-slate-50 text-slate-700';
+  const statusPillLabel = status === 'complete'
+    ? 'Ready'
+    : status === 'downloading'
+      ? 'Downloading'
+      : status === 'clearing'
+        ? 'Clearing'
+        : status === 'error'
+          ? 'Attention'
+          : hasPendingUpdate
+            ? 'Update Available'
+            : 'Not Downloaded';
+  const snapshotSummary = activeVersion === manifest.version
+    ? 'Current build saved'
+    : activeVersion
+      ? 'Older snapshot still active'
+      : 'Core offline only';
+  const snapshotSummaryCopy = activeVersion === manifest.version
+    ? 'This build is already available offline.'
+    : activeVersion
+      ? 'Your previous download stays live until a new one finishes.'
+      : 'Only the built-in homepage, About, Part, and Division pages are offline by default.';
+  const helperCopy = hasPendingUpdate
+    ? 'Your current offline copy stays active until the update finishes.'
+    : showReplaceButton
+      ? 'If this device is low on storage, replace the older offline copy instead of keeping both.'
+      : 'Part and Division pages are already available offline by default.';
 
   if (status === 'unsupported') {
     return (
-      <div class="rounded-2xl border border-amber-200 bg-amber-50 px-5 py-5 text-sm text-amber-900">
+      <div class="rounded-[1.75rem] border border-amber-200 bg-amber-50 px-5 py-5 text-sm text-amber-900">
         This browser does not expose the storage APIs needed for a full offline download.
       </div>
     );
@@ -393,7 +439,7 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
   if (status === 'loading' || !manifest) {
     if (status === 'error') {
       return (
-        <div class="rounded-2xl border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
+        <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
           {errorMessage || 'Could not load the offline manifest.'}
         </div>
       );
@@ -401,123 +447,103 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
 
     if (!manifest) {
       return (
-        <div class="rounded-2xl border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
+        <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
           Could not load the offline manifest.
         </div>
       );
     }
 
     return (
-      <div class="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 text-sm text-slate-600">
+      <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 px-5 py-5 text-sm text-slate-600">
         Loading offline download details...
       </div>
     );
   }
 
   return (
-    <div class="space-y-4">
-      <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-        <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-          <div class="max-w-3xl space-y-2">
-            <p class="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
-              Full Offline Cache
-            </p>
-            <h2 class="font-serif text-2xl text-slate-900">Download the full site for offline use</h2>
-            <p class="text-sm leading-6 text-slate-600">
-              This saves the current static build into browser storage so the whole site stays available without a network connection.
-              It is best used on desktop or on a device with plenty of free storage.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
-            <p><span class="font-medium text-slate-900">{manifest.totalFiles.toLocaleString()}</span> files</p>
-            <p><span class="font-medium text-slate-900">{formatBytes(manifest.totalBytes)}</span> total</p>
-          </div>
+    <section class="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div class="max-w-2xl space-y-2">
+          <p class="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
+            Full Offline Snapshot
+          </p>
+          <h2 class="font-serif text-2xl text-slate-900">Download the full site</h2>
+          <p class="text-sm leading-6 text-slate-600">
+            Saves the current build to this device so the rest of the site stays available without a connection.
+          </p>
+          <p class="text-sm leading-6 text-slate-500">
+            {manifest.totalFiles.toLocaleString()} files
+            {' · '}
+            {formatBytes(manifest.totalBytes)}
+            {' · '}
+            built {formatGeneratedAt(manifest.generatedAt)}
+          </p>
         </div>
+        <span class={`rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] ${statusPillClass}`}>
+          {statusPillLabel}
+        </span>
+      </div>
 
-        <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p class="text-sm font-medium text-slate-900">{statusTitle}</p>
-              <p class="mt-1 text-sm text-slate-600">
-                {cachedCount.toLocaleString()} / {manifest.totalFiles.toLocaleString()} files cached
-                {' · '}
-                {formatBytes(cachedBytes)} / {formatBytes(manifest.totalBytes)}
-              </p>
-              {hasPendingUpdate ? (
-                <p class="mt-2 text-sm text-slate-600">
-                  Your current offline snapshot stays active until this update finishes.
-                </p>
-              ) : null}
-              {showReplaceButton ? (
-                <p class="mt-2 text-sm text-slate-600">
-                  If this device runs out of storage during an update, replace the older full-site snapshot instead of keeping both copies at once.
-                </p>
-              ) : null}
-            </div>
-            <div class="flex flex-wrap gap-2">
+      <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p class="text-sm font-medium text-slate-900">{statusTitle}</p>
+            <p class="mt-1 text-sm leading-6 text-slate-600">
+              {cachedCount.toLocaleString()} / {manifest.totalFiles.toLocaleString()} files cached
+              {' · '}
+              {formatBytes(cachedBytes)} / {formatBytes(manifest.totalBytes)}
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-500">{helperCopy}</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={handleDownload}
+              disabled={status === 'downloading' || status === 'clearing'}
+              class="rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-400"
+            >
+              {downloadButtonLabel}
+            </button>
+            {showReplaceButton ? (
               <button
                 type="button"
-                onClick={handleDownload}
+                onClick={handleReplaceDownload}
                 disabled={status === 'downloading' || status === 'clearing'}
-                class="rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-400"
+                class="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-900 transition hover:border-amber-400 hover:bg-amber-100 disabled:cursor-not-allowed disabled:border-amber-200 disabled:text-amber-500"
               >
-                {downloadButtonLabel}
+                Replace existing offline copy
               </button>
-              {showReplaceButton ? (
-                <button
-                  type="button"
-                  onClick={handleReplaceDownload}
-                  disabled={status === 'downloading' || status === 'clearing'}
-                  class="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-900 transition hover:border-amber-400 hover:bg-amber-100 disabled:cursor-not-allowed disabled:border-amber-200 disabled:text-amber-500"
-                >
-                  Replace existing offline copy
-                </button>
-              ) : null}
-              <button
-                type="button"
-                onClick={handleClear}
-                disabled={status === 'downloading' || status === 'clearing' || !hasOfflineDownload}
-                class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 disabled:cursor-not-allowed disabled:border-slate-200 disabled:text-slate-400"
-              >
-                {status === 'clearing' ? 'Clearing...' : 'Clear offline download'}
-              </button>
-            </div>
+            ) : null}
+            <button
+              type="button"
+              onClick={handleClear}
+              disabled={status === 'downloading' || status === 'clearing' || !hasOfflineDownload}
+              class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 disabled:cursor-not-allowed disabled:border-slate-200 disabled:text-slate-400"
+            >
+              {status === 'clearing' ? 'Clearing...' : 'Clear offline download'}
+            </button>
           </div>
+        </div>
 
-          <div class="mt-4">
-            <div class="h-3 overflow-hidden rounded-full bg-slate-200">
-              <div
-                class="h-full rounded-full bg-slate-900 transition-[width] duration-300"
-                style={{ width: `${progressPercent}%` }}
-              />
-            </div>
-            <p class="mt-2 text-xs uppercase tracking-[0.16em] text-slate-500">{progressPercent}% cached</p>
+        <div class="mt-4 h-3 overflow-hidden rounded-full bg-slate-200">
+          <div
+            class="h-full rounded-full bg-slate-900 transition-[width] duration-300"
+            style={{ width: `${progressPercent}%` }}
+          />
+        </div>
+        <p class="mt-2 text-xs uppercase tracking-[0.16em] text-slate-500">{progressPercent}% cached</p>
+
+        <div class="mt-4 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600">
+          <p class="font-medium text-slate-900">{snapshotSummary}</p>
+          <p class="mt-1">{snapshotSummaryCopy}</p>
+        </div>
+
+        {errorMessage ? (
+          <div class="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            {errorMessage}
           </div>
-
-          {errorMessage ? (
-            <div class="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-              {errorMessage}
-            </div>
-          ) : null}
-        </div>
-      </section>
-
-      <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-        <h3 class="font-serif text-xl text-slate-900">What this changes</h3>
-        <div class="mt-3 space-y-3 text-sm leading-6 text-slate-600">
-          <p>
-            The normal install flow already keeps the homepage, About page, Part pages, and Division pages available offline.
-            This download adds the rest of the site: Section pages, reading libraries, reading detail pages, search assets, and the client-side data files behind them.
-          </p>
-          <p>
-            Query-string views such as essay tabs on Part pages will use the cached page shell offline as well.
-            If the site updates later, press Re-download full site to fetch the new snapshot. Your previous full offline copy stays in place until the update finishes.
-          </p>
-          <p>
-            Phones may not have enough storage to hold both the old and new full-site snapshots during an update. If that happens, use Replace existing offline copy to clear the older snapshot first.
-          </p>
-        </div>
-      </section>
-    </div>
+        ) : null}
+      </div>
+    </section>
   );
 }
