@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v6';
+const CACHE_NAME = 'propaedia-v7';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
@@ -77,36 +77,50 @@ async function matchOfflineRequest(cache, request, ignoreSearch) {
   return null;
 }
 
+async function matchAnyOfflineCache(request, ignoreSearch) {
+  const activeOfflineCache = await getActiveOfflineCache();
+  const activeOfflineMatch = activeOfflineCache
+    ? await matchOfflineRequest(activeOfflineCache, request, ignoreSearch)
+    : null;
+  const coreCache = await caches.open(CACHE_NAME);
+  const coreMatch = await matchOfflineRequest(coreCache, request, ignoreSearch);
+  return {
+    activeOfflineMatch,
+    coreCache,
+    coreMatch,
+  };
+}
+
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   if (!event.request.url.includes(BASE)) return;
 
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
+    (async () => {
+      const ignoreSearch = event.request.mode === 'navigate';
+      const offlineMatches = await matchAnyOfflineCache(event.request, ignoreSearch);
+      const cached = offlineMatches.activeOfflineMatch || offlineMatches.coreMatch;
+
+      if (self.navigator.onLine === false && cached) {
+        return cached;
+      }
+
+      try {
+        const response = await fetch(event.request);
         if (response.ok && event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) !== '1') {
           const clone = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
         return response;
-      })
-      .catch(async () => {
-        const ignoreSearch = event.request.mode === 'navigate';
-        const activeOfflineCache = await getActiveOfflineCache();
-        const activeOfflineMatch = activeOfflineCache
-          ? await matchOfflineRequest(activeOfflineCache, event.request, ignoreSearch)
-          : null;
-        if (activeOfflineMatch) return activeOfflineMatch;
-
-        const coreCache = await caches.open(CACHE_NAME);
-        const cached = await matchOfflineRequest(coreCache, event.request, ignoreSearch);
+      } catch {
         if (cached) return cached;
 
         if (event.request.mode === 'navigate') {
-          return (await coreCache.match(BASE)) || Response.error();
+          return (await offlineMatches.coreCache.match(BASE)) || Response.error();
         }
 
         return Response.error();
-      })
+      }
+    })()
   );
 });

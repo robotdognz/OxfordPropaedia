@@ -1,5 +1,7 @@
 Propaedia TODO:
 
+    - Changing between a partially filled reading type and an empty one can make the bars vanish immediately instead of animating down if done before the current animation finshes
+
     - Macropaedia data needed for app (first pass)
         - Article length
         - Volume the article is in (keep in mind the macropaedia articles start at 13, so we'll need to calculate that from the macropaedia numbers we have)
