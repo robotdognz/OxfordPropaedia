@@ -21,6 +21,8 @@ interface OfflineSiteCachePanelProps {
 type PanelStatus = 'loading' | 'ready' | 'downloading' | 'complete' | 'error' | 'unsupported' | 'clearing';
 
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
+const OFFLINE_META_CACHE_NAME = 'propaedia-offline-meta-v1';
+const OFFLINE_ACTIVE_VERSION_KEY = '__offline-active-version';
 const OFFLINE_DOWNLOAD_HEADER = 'X-Propaedia-Offline-Download';
 const DOWNLOAD_CONCURRENCY = 6;
 
@@ -40,13 +42,70 @@ function currentCacheName(version: string): string {
   return `${FULL_SITE_CACHE_PREFIX}${version}`;
 }
 
-async function deleteOfflineCaches(keepName?: string): Promise<void> {
+function activeVersionRequestUrl(baseUrl: string): string {
+  return joinBaseUrl(baseUrl, OFFLINE_ACTIVE_VERSION_KEY);
+}
+
+async function cleanupOfflineCaches(keepNames: string[] = []): Promise<void> {
+  const keep = new Set(keepNames.filter(Boolean));
   const names = await caches.keys();
   await Promise.all(
     names
-      .filter((name) => name.startsWith(FULL_SITE_CACHE_PREFIX) && name !== keepName)
+      .filter((name) => name.startsWith(FULL_SITE_CACHE_PREFIX) && !keep.has(name))
       .map((name) => caches.delete(name)),
   );
+}
+
+async function readActiveOfflineVersion(baseUrl: string): Promise<string | null> {
+  const metaCache = await caches.open(OFFLINE_META_CACHE_NAME);
+  const response = await metaCache.match(activeVersionRequestUrl(baseUrl));
+  if (!response) return null;
+
+  const version = (await response.text()).trim();
+  return version || null;
+}
+
+async function writeActiveOfflineVersion(baseUrl: string, version: string | null): Promise<void> {
+  const metaCache = await caches.open(OFFLINE_META_CACHE_NAME);
+  const requestUrl = activeVersionRequestUrl(baseUrl);
+
+  if (!version) {
+    await metaCache.delete(requestUrl);
+    return;
+  }
+
+  await metaCache.put(
+    requestUrl,
+    new Response(version, {
+      headers: {
+        'content-type': 'text/plain; charset=utf-8',
+      },
+    }),
+  );
+}
+
+async function resolveActiveOfflineVersion(baseUrl: string, preferredVersion?: string): Promise<string | null> {
+  const names = await caches.keys();
+  const fullSiteCacheNames = names.filter((name) => name.startsWith(FULL_SITE_CACHE_PREFIX));
+  const version = await readActiveOfflineVersion(baseUrl);
+
+  if (version && fullSiteCacheNames.includes(currentCacheName(version))) {
+    return version;
+  }
+
+  const fallbackVersion = preferredVersion && fullSiteCacheNames.includes(currentCacheName(preferredVersion))
+    ? preferredVersion
+    : fullSiteCacheNames.length === 1
+      ? fullSiteCacheNames[0].slice(FULL_SITE_CACHE_PREFIX.length)
+      : null;
+
+  if (fallbackVersion) {
+    await writeActiveOfflineVersion(baseUrl, fallbackVersion);
+    return fallbackVersion;
+  }
+
+  await writeActiveOfflineVersion(baseUrl, null);
+  return null;
 }
 
 async function readCacheProgress(manifest: OfflineManifest): Promise<{ count: number; bytes: number }> {
@@ -70,6 +129,7 @@ async function readCacheProgress(manifest: OfflineManifest): Promise<{ count: nu
 export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanelProps) {
   const [status, setStatus] = useState<PanelStatus>('loading');
   const [manifest, setManifest] = useState<OfflineManifest | null>(null);
+  const [activeVersion, setActiveVersion] = useState<string | null>(null);
   const [cachedCount, setCachedCount] = useState(0);
   const [cachedBytes, setCachedBytes] = useState(0);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -97,14 +157,25 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         }
 
         const nextManifest = await response.json() as OfflineManifest;
-        await deleteOfflineCaches(currentCacheName(nextManifest.version));
+        const nextActiveVersion = await resolveActiveOfflineVersion(baseUrl, nextManifest.version);
+        await cleanupOfflineCaches(
+          [
+            currentCacheName(nextManifest.version),
+            nextActiveVersion ? currentCacheName(nextActiveVersion) : null,
+          ].filter((name): name is string => Boolean(name)),
+        );
         const progress = await readCacheProgress(nextManifest);
         if (cancelled) return;
 
         setManifest(nextManifest);
+        setActiveVersion(nextActiveVersion);
         setCachedCount(progress.count);
         setCachedBytes(progress.bytes);
-        setStatus(progress.count >= nextManifest.totalFiles ? 'complete' : 'ready');
+        setStatus(
+          progress.count >= nextManifest.totalFiles && nextActiveVersion === nextManifest.version
+            ? 'complete'
+            : 'ready',
+        );
       } catch (error) {
         if (cancelled) return;
         setErrorMessage(error instanceof Error ? error.message : 'Could not load the offline manifest.');
@@ -124,11 +195,16 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
     return Math.min(100, Math.round((cachedCount / manifest.totalFiles) * 100));
   }, [cachedCount, manifest]);
 
-  async function refreshProgress(nextManifest: OfflineManifest) {
+  async function refreshProgress(nextManifest: OfflineManifest, nextActiveVersion: string | null) {
     const progress = await readCacheProgress(nextManifest);
+    setActiveVersion(nextActiveVersion);
     setCachedCount(progress.count);
     setCachedBytes(progress.bytes);
-    setStatus(progress.count >= nextManifest.totalFiles ? 'complete' : 'ready');
+    setStatus(
+      progress.count >= nextManifest.totalFiles && nextActiveVersion === nextManifest.version
+        ? 'complete'
+        : 'ready',
+    );
   }
 
   async function handleDownload() {
@@ -139,7 +215,8 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
     setErrorMessage(null);
 
     try {
-      await deleteOfflineCaches(currentCacheName(manifest.version));
+      const previousActiveVersion = await resolveActiveOfflineVersion(baseUrl, manifest.version);
+      setActiveVersion(previousActiveVersion);
       const cache = await caches.open(currentCacheName(manifest.version));
       const existingProgress = await readCacheProgress(manifest);
 
@@ -202,6 +279,9 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         setErrorMessage(`Cached ${nextCount}/${manifest.totalFiles} files. ${failures.length} files failed; press Download again to resume.`);
         setStatus('error');
       } else {
+        await writeActiveOfflineVersion(baseUrl, manifest.version);
+        await cleanupOfflineCaches([currentCacheName(manifest.version)]);
+        setActiveVersion(manifest.version);
         setStatus('complete');
       }
     } catch (error) {
@@ -217,9 +297,29 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
 
     setStatus('clearing');
     setErrorMessage(null);
-    await deleteOfflineCaches();
-    await refreshProgress(manifest);
+    await cleanupOfflineCaches();
+    await writeActiveOfflineVersion(baseUrl, null);
+    await refreshProgress(manifest, null);
   }
+
+  const hasOfflineDownload = Boolean(activeVersion) || cachedCount > 0;
+  const hasPendingUpdate = Boolean(activeVersion && manifest && activeVersion !== manifest.version);
+  const statusTitle = status === 'complete'
+    ? 'Full offline download is ready.'
+    : hasPendingUpdate
+      ? 'Offline update available'
+      : 'Download status';
+  const downloadButtonLabel = status === 'downloading'
+    ? 'Downloading...'
+    : hasPendingUpdate
+      ? cachedCount > 0
+        ? 'Resume update'
+        : 'Update offline download'
+      : status === 'complete'
+        ? 'Re-download full site'
+        : cachedCount > 0
+          ? 'Resume download'
+          : 'Download full site';
 
   if (status === 'unsupported') {
     return (
@@ -276,14 +376,17 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p class="text-sm font-medium text-slate-900">
-                {status === 'complete' ? 'Full offline download is ready.' : 'Download status'}
-              </p>
+              <p class="text-sm font-medium text-slate-900">{statusTitle}</p>
               <p class="mt-1 text-sm text-slate-600">
                 {cachedCount.toLocaleString()} / {manifest.totalFiles.toLocaleString()} files cached
                 {' · '}
                 {formatBytes(cachedBytes)} / {formatBytes(manifest.totalBytes)}
               </p>
+              {hasPendingUpdate ? (
+                <p class="mt-2 text-sm text-slate-600">
+                  Your current offline snapshot stays active until this update finishes.
+                </p>
+              ) : null}
             </div>
             <div class="flex flex-wrap gap-2">
               <button
@@ -292,18 +395,12 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
                 disabled={status === 'downloading' || status === 'clearing'}
                 class="rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-400"
               >
-                {status === 'complete'
-                  ? 'Re-download full site'
-                  : status === 'downloading'
-                    ? 'Downloading...'
-                    : cachedCount > 0
-                      ? 'Resume download'
-                      : 'Download full site'}
+                {downloadButtonLabel}
               </button>
               <button
                 type="button"
                 onClick={handleClear}
-                disabled={status === 'downloading' || status === 'clearing' || cachedCount === 0}
+                disabled={status === 'downloading' || status === 'clearing' || !hasOfflineDownload}
                 class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 disabled:cursor-not-allowed disabled:border-slate-200 disabled:text-slate-400"
               >
                 {status === 'clearing' ? 'Clearing...' : 'Clear offline download'}
@@ -338,7 +435,7 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
           </p>
           <p>
             Query-string views such as essay tabs on Part pages will use the cached page shell offline as well.
-            If the site updates later, press Re-download full site to refresh the cached version.
+            If the site updates later, press Re-download full site to fetch the new snapshot. Your previous full offline copy stays in place until the update finishes.
           </p>
         </div>
       </section>
