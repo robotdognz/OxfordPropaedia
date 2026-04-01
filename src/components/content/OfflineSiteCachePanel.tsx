@@ -383,7 +383,7 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
     );
   }
 
-  if (status === 'error') {
+  if (status === 'error' && !manifest) {
     return (
       <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
         {errorMessage || 'Could not load the offline manifest.'}
