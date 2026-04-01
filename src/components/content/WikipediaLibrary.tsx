@@ -22,6 +22,8 @@ import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
+import SelectorCardRail from '../ui/SelectorCardRail';
+import { CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 import {
   getCoverageLayerPreference,
@@ -43,6 +45,16 @@ type SortDirection = 'asc' | 'desc';
 const LEVEL_KEY = 'propaedia-wiki-level';
 const INITIAL_VISIBLE = 50;
 const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+const LEVEL_LABELS: Record<KnowledgeLevel, string> = {
+  1: 'Level 1',
+  2: 'Level 2',
+  3: 'Level 3',
+};
+const LEVEL_META: Record<KnowledgeLevel, string> = {
+  1: '10',
+  2: '100',
+  3: '1,000',
+};
 const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Parts: 'part',
   Divisions: 'division',
@@ -212,23 +224,21 @@ export default function WikipediaLibrary({
 
   return (
     <div class="space-y-4">
-      <div class="flex justify-center">
-        <div class="flex rounded-lg border border-gray-200 bg-white p-1">
-          {([1, 2, 3] as KnowledgeLevel[]).map((lvl) => {
-            const labels: Record<number, string> = { 1: 'Level 1 - 10', 2: 'Level 2 - 100', 3: 'Level 3 - ~1,000' };
-            return (
-              <button
-                key={lvl}
-                type="button"
-                onClick={() => changeLevel(lvl)}
-                class={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${level === lvl ? 'bg-indigo-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
-              >
-                {labels[lvl]}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
+        <SelectorCardRail
+          label="Wikipedia Level"
+          ariaLabel="Wikipedia level"
+          value={level}
+          columns={3}
+          options={([1, 2, 3] as KnowledgeLevel[]).map((lvl) => ({
+            value: lvl,
+            label: LEVEL_LABELS[lvl],
+            meta: LEVEL_META[lvl],
+          }))}
+          onChange={changeLevel}
+          size="compact"
+        />
+      </section>
 
       <CoverageLayerTabs
         activeLayer={activeLayer}

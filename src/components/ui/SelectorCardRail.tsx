@@ -17,6 +17,7 @@ interface SelectorCardRailProps<Value extends string = string> {
   label?: string;
   description?: string;
   size?: 'regular' | 'compact';
+  columns?: 1 | 2 | 3 | 4;
 }
 
 export default function SelectorCardRail<Value extends string = string>({
@@ -27,15 +28,27 @@ export default function SelectorCardRail<Value extends string = string>({
   label,
   description,
   size = 'regular',
+  columns,
 }: SelectorCardRailProps<Value>) {
   const isCompact = size === 'compact';
-  const layoutClass = options.length <= 1
+  const forcedLayoutClass = columns === 1
     ? 'grid-cols-1'
-    : options.length <= 2
-    ? 'grid-cols-2'
-    : options.length === 3
-      ? 'grid-cols-2 sm:grid-cols-3'
-      : 'grid-cols-2 xl:grid-cols-4';
+    : columns === 2
+      ? 'grid-cols-2'
+      : columns === 3
+        ? 'grid-cols-3'
+        : columns === 4
+          ? 'grid-cols-4'
+          : null;
+  const layoutClass = columns
+    ? forcedLayoutClass
+    : options.length <= 1
+      ? 'grid-cols-1'
+      : options.length <= 2
+        ? 'grid-cols-2'
+        : options.length === 3
+          ? 'grid-cols-2 sm:grid-cols-3'
+          : 'grid-cols-2 xl:grid-cols-4';
 
   return (
     <section class={label || description ? 'space-y-1.5' : undefined}>

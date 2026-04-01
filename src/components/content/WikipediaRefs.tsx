@@ -120,7 +120,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
               href={`${baseUrl}/wikipedia`}
               class="text-xs text-gray-500 underline decoration-slate-300 underline-offset-2 transition hover:text-indigo-700 hover:decoration-indigo-300"
             >
-              Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (~1,000)'}
+              Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (Top 1,000)'}
             </a>
             <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
               <input

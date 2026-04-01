@@ -98,7 +98,7 @@ function emptyStateClass() {
 function wikipediaLevelLabel(level: KnowledgeLevel): string {
   if (level === 1) return 'Level 1 (Top 10)';
   if (level === 2) return 'Level 2 (Top 100)';
-  return 'Level 3 (~1,000)';
+  return 'Level 3 (Top 1,000)';
 }
 
 function filteredEmptyMessage(
