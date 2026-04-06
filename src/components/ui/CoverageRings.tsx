@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import { h, type ComponentChildren } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
 export interface CoverageRingsProps {
@@ -9,6 +9,7 @@ export interface CoverageRingsProps {
   freezeTransitions?: boolean;
   activeRingLabel?: string;
   onSelectRing?: (label: string) => void;
+  centerContent?: ComponentChildren;
 }
 
 export default function CoverageRings({
@@ -19,6 +20,7 @@ export default function CoverageRings({
   freezeTransitions = false,
   activeRingLabel,
   onSelectRing,
+  centerContent,
 }: CoverageRingsProps) {
   const center = size / 2;
   const gap = 3;
@@ -186,21 +188,22 @@ export default function CoverageRings({
 
   return (
     <div ref={ref} class="flex flex-col items-center">
-      <svg
-        viewBox={`0 0 ${size} ${size}`}
-        class={`w-28 h-28 sm:w-32 sm:h-32 ${onSelectRing ? 'cursor-pointer touch-none' : ''}`}
-        onPointerDown={(event) => {
-          if (!onSelectRing) return;
-          const target = event.currentTarget as SVGSVGElement;
-          target.setPointerCapture(event.pointerId);
-          updateSelectedRing(event.clientX, event.clientY);
-        }}
-        onPointerMove={(event) => {
-          if (!onSelectRing || (event.buttons & 1) !== 1) return;
-          updateSelectedRing(event.clientX, event.clientY);
-        }}
-      >
-        {rings.map((ring, i) => {
+      <div class="relative w-28 h-28 sm:w-32 sm:h-32">
+        <svg
+          viewBox={`0 0 ${size} ${size}`}
+          class={`h-full w-full ${onSelectRing ? 'cursor-pointer touch-none' : ''}`}
+          onPointerDown={(event) => {
+            if (!onSelectRing) return;
+            const target = event.currentTarget as SVGSVGElement;
+            target.setPointerCapture(event.pointerId);
+            updateSelectedRing(event.clientX, event.clientY);
+          }}
+          onPointerMove={(event) => {
+            if (!onSelectRing || (event.buttons & 1) !== 1) return;
+            updateSelectedRing(event.clientX, event.clientY);
+          }}
+        >
+          {rings.map((ring, i) => {
           const radius = radii[i];
           const width = ringWidths[i];
           const rawFraction = ring.total > 0 ? ring.count / ring.total : 0;
@@ -301,8 +304,14 @@ export default function CoverageRings({
               />
             </g>
           );
-        })}
-      </svg>
+          })}
+        </svg>
+        {centerContent ? (
+          <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+            {centerContent}
+          </div>
+        ) : null}
+      </div>
       {!hideLegend && (
         <div class="mt-3 space-y-1">
           {rings.map((ring) => (

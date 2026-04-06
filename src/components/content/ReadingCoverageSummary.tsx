@@ -43,6 +43,9 @@ export default function ReadingCoverageSummary({
 }: ReadingCoverageSummaryProps) {
   const [statsOpen, setStatsOpen] = useState(false);
   const hasPartRing = partSegments && partSegments.length > 0;
+  const activeCoveragePercent = activeCoverageTotal > 0
+    ? Math.round((activeCoverageCount / activeCoverageTotal) * 100)
+    : 0;
 
   return (
     <section class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -72,10 +75,10 @@ export default function ReadingCoverageSummary({
           {hasPartRing && (
             <>
               <div class="sm:hidden">
-                <PartCoverageRing segments={partSegments} size={100} />
+                <PartCoverageRing segments={partSegments} size={100} centerPercentage={activeCoveragePercent} />
               </div>
               <div class="hidden sm:block">
-                <PartCoverageRing segments={partSegments} size={112} />
+                <PartCoverageRing segments={partSegments} size={112} centerPercentage={activeCoveragePercent} />
               </div>
             </>
           )}

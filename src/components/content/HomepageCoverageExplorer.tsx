@@ -297,6 +297,9 @@ export default function HomepageCoverageExplorer({
     partSegmentsLatest,
     activeRingLabel,
   );
+  const activeCoveragePercent = activeSnapshot && activeSnapshot.totalCoverageCount > 0
+    ? Math.round((activeSnapshot.currentlyCoveredCount / activeSnapshot.totalCoverageCount) * 100)
+    : 0;
 
   const wrapperClass = framed
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
@@ -383,7 +386,7 @@ export default function HomepageCoverageExplorer({
                   }}
                 />
                 {partSegments.length > 0 && (
-                  <PartCoverageRing segments={partSegments} size={100} />
+                  <PartCoverageRing segments={partSegments} size={100} centerPercentage={activeCoveragePercent} />
                 )}
               </div>
               <details class="mt-3 group/stats">
