@@ -51,6 +51,7 @@ export interface SectionReadingRecommendationsProps extends SectionReadingRecomm
 
 interface ActiveSectionRecommendationPanel {
   title: string;
+  totalCount: number;
   matchedCount: number;
   visibleCount: number;
   toolbarLabel?: string;
@@ -123,6 +124,14 @@ function selectionSummaryLine(
     return `Showing ${visibleCount} of ${matchedCount} for ${outlinePath}`;
   }
   return `Showing ${matchedCount} for ${outlinePath}`;
+}
+
+function recommendationCountSubtitle(visibleCount: number, totalCount: number): string {
+  const noun = totalCount === 1 ? 'recommendation' : 'recommendations';
+  if (visibleCount === totalCount) {
+    return `${totalCount} ${noun}`;
+  }
+  return `Showing ${visibleCount} of ${totalCount} ${noun}`;
 }
 
 function macropaediaCardRationale(selection: OutlineSelectionDetail | null): string {
@@ -215,6 +224,7 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
+        totalCount: scoredMappings.length,
         matchedCount: visibleMappings.length,
         visibleCount: displayMappings.length,
         emptyMessage: filteredEmptyMessage(
@@ -275,6 +285,7 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
+        totalCount: levelFiltered.length,
         matchedCount: visibleArticles.length,
         visibleCount: displayArticles.length,
         emptyMessage: filteredEmptyMessage(
@@ -334,6 +345,7 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
+        totalCount: iotEpisodes.length,
         matchedCount: visibleEpisodes.length,
         visibleCount: displayEpisodes.length,
         emptyMessage: filteredEmptyMessage(
@@ -388,6 +400,7 @@ export default function SectionReadingRecommendations({
 
     return {
       title: 'Recommendations',
+      totalCount: macropaediaReferences.length,
       matchedCount: macropaediaReferences.length,
       visibleCount: visibleReferences.length,
       selectionNotice: selection
@@ -480,12 +493,12 @@ export default function SectionReadingRecommendations({
       <section class={recommendationPanelClass()}>
         <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
           <div class="min-w-0">
-            <h2 class="flex items-baseline gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
-              <span>{headerMeta.title}</span>
-              <span class="text-[0.68rem] font-medium tracking-[0.12em] text-amber-900/70">
-                ({headerMeta.visibleCount})
-              </span>
+            <h2 class="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
+              {headerMeta.title}
             </h2>
+            <p class="mt-1 text-xs font-medium text-amber-900/70">
+              {recommendationCountSubtitle(headerMeta.visibleCount, headerMeta.totalCount)}
+            </p>
           </div>
           {headerMeta.toolbarLabel ? (
             <div class="flex flex-wrap items-center gap-3 text-xs">

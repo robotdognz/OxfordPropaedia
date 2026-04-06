@@ -143,6 +143,14 @@ function emptyStateMessage(type: ReadingType, hideChecked: boolean, matchedCount
   return `No ${READING_TYPE_UI_META[type].label} recommendations are available here right now.`;
 }
 
+function recommendationCountSubtitle(visibleCount: number, totalCount: number): string {
+  const noun = totalCount === 1 ? 'recommendation' : 'recommendations';
+  if (visibleCount === totalCount) {
+    return `${totalCount} ${noun}`;
+  }
+  return `Showing ${visibleCount} of ${totalCount} ${noun}`;
+}
+
 export default function TopReadings({
   vsi = [],
   wiki = [],
@@ -259,12 +267,12 @@ export default function TopReadings({
 
       <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
         <div class="min-w-0">
-          <h2 class="flex items-baseline gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
-            <span>{activeSection.title}</span>
-            <span class="text-[0.68rem] font-medium tracking-[0.12em] text-amber-900/70">
-              ({visibleItems.length})
-            </span>
+          <h2 class="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
+            {activeSection.title}
           </h2>
+          <p class="mt-1 text-xs font-medium text-amber-900/70">
+            {recommendationCountSubtitle(visibleItems.length, levelFilteredItems.length)}
+          </p>
         </div>
 
         <div class="mt-4">
