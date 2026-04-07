@@ -6,7 +6,7 @@ import {
 } from '../utils/readingPreference';
 
 export function useReadingPreferenceState(): ReadingType {
-  const [readingPreference, setReadingPreference] = useState<ReadingType>('vsi');
+  const [readingPreference, setReadingPreference] = useState<ReadingType>(() => getReadingPreference());
 
   useEffect(() => {
     setReadingPreference(getReadingPreference());

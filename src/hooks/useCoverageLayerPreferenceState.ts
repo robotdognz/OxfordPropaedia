@@ -6,7 +6,7 @@ import {
 import type { CoverageLayer } from '../utils/readingLibrary';
 
 export function useCoverageLayerPreferenceState(): CoverageLayer {
-  const [coverageLayer, setCoverageLayer] = useState<CoverageLayer>('part');
+  const [coverageLayer, setCoverageLayer] = useState<CoverageLayer>(() => getCoverageLayerPreference());
 
   useEffect(() => {
     setCoverageLayer(getCoverageLayerPreference());

@@ -1252,9 +1252,16 @@ export default function CircleNavigator({
   const handleCenterAction = hasCenter
     ? removeFromCenter
     : () => animateToCenter(topPart.partNumber);
+  const readyStyle = hasLoadedState
+    ? undefined
+    : { opacity: 0, pointerEvents: 'none' as const };
 
   return (
-    <div class="space-y-3 sm:space-y-4">
+    <div
+      class="space-y-3 sm:space-y-4"
+      style={readyStyle}
+      aria-busy={hasLoadedState ? 'false' : 'true'}
+    >
       <div class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:rounded-2xl sm:p-3`}>
         <div class="grid gap-2 sm:gap-2.5">
           <a
