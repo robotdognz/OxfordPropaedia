@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v12';
+const CACHE_NAME = 'propaedia-v13';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
@@ -6,6 +6,7 @@ const OFFLINE_META_CACHE_NAME = 'propaedia-offline-meta-v1';
 const ACTIVE_VERSION_URL = BASE + '__offline-active-version';
 const DATA_CACHE_TIMEOUT_MS = 400;
 const ASSET_CACHE_TIMEOUT_MS = 100;
+const LARGE_DATA_NETWORK_TIMEOUT_MS = 2500;
 const CACHE_DEBUG_MESSAGE_TYPE = 'propaedia-cache-debug-state';
 const CACHE_DEBUG_REQUEST_TYPE = 'propaedia-cache-debug-get';
 const debugStateByClientId = new Map();
@@ -196,8 +197,39 @@ function cacheFallbackDelay(request) {
   return null;
 }
 
+function networkTimeoutForRequest(request) {
+  const pathname = new URL(request.url).pathname;
+
+  if (
+    pathname.endsWith('.json')
+    && (
+      pathname.includes('/library-data/')
+      || pathname.includes('/section-data/')
+      || pathname.includes('/circle-anchored/')
+    )
+  ) {
+    return LARGE_DATA_NETWORK_TIMEOUT_MS;
+  }
+
+  return null;
+}
+
 async function fetchAndUpdateCoreCache(request) {
-  const response = await fetch(request);
+  const timeoutMs = networkTimeoutForRequest(request);
+  const controller = timeoutMs ? new AbortController() : null;
+  const timeoutId = timeoutMs
+    ? setTimeout(() => controller?.abort(), timeoutMs)
+    : null;
+
+  let response;
+  try {
+    response = await fetch(request, controller ? { signal: controller.signal } : undefined);
+  } finally {
+    if (timeoutId !== null) {
+      clearTimeout(timeoutId);
+    }
+  }
+
   if (response.ok && request.headers.get(OFFLINE_DOWNLOAD_HEADER) !== '1') {
     const clone = response.clone();
     caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));

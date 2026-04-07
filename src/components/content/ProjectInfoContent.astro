@@ -32,7 +32,7 @@ const iotFetchedLabel = formatSourceDate(iotCatalog.fetchedAt);
 const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
 ---
 
-<div class="max-w-3xl mx-auto px-4 py-12">
+<div class="max-w-3xl mx-auto px-4 pt-4 pb-12 sm:pt-6">
   <h1 class="text-4xl font-serif font-bold text-gray-900 mb-8">{heading}</h1>
 
   <div class="prose-propaedia">
@@ -73,12 +73,12 @@ const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
       different style of study:
     </p>
     <ul>
-      <li><strong>Whole Outline</strong> - a coverage-first path that suggests the next unread book, article, or episode based on how much new territory it opens across the outline</li>
-      <li><strong>Selected Fields</strong> - Adler's circle navigator, where you can centre one Part, compare it with another, and surface bridge readings that connect both</li>
-      <li><strong>Specific Topic</strong> - direct browsing by Part, Division, and Section, with essays and recommendation panels tied to the exact outline area you are exploring</li>
+      <li><strong>Full Coverage</strong> - a coverage-first path that suggests the next unread book, article, or episode based on how much new territory it opens across the outline</li>
+      <li><strong>Guided Coverage</strong> - Adler's circle navigator, where you can centre one Part, compare it with another, and surface bridge readings that connect both</li>
+      <li><strong>Outline</strong> - direct browsing by Part, Division, and Section, with essays and recommendation panels tied to the exact outline area you are exploring</li>
     </ul>
     <p>
-      In the Selected Fields mode, when one Part is placed at the centre and another is
+      In the Guided Coverage mode, when one Part is placed at the centre and another is
       rotated to the top, the panel below the circle shows how they connect through
       cross-referenced Sections and through <strong>bridge readings</strong> that were
       independently recommended in both Parts.
@@ -86,14 +86,14 @@ const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
 
     <h2>Reading Tools</h2>
     <p>
-      A <strong>reading preference</strong> setting in the sidebar stores your default
-      reading type (Oxford VSI, Wikipedia, BBC In Our Time, or Macropaedia) across the
-      outline pages.
+      The reading-type selectors across the site share a stored default reading type
+      (Oxford VSI, Wikipedia, BBC In Our Time, or Macropaedia), so the same source can
+      stay selected as you move between the outline and recommendation views.
     </p>
     <p>
       Section, Division, and Part pages each have their own reading-type selector inside
-      the recommendation panel, and the homepage has separate selectors in Whole Outline
-      and Selected Fields. Changing any of these selectors updates the shared default, so
+      the recommendation panel, and the homepage has separate selectors in Full Coverage
+      and Guided Coverage. Changing any of these selectors updates the shared default, so
       the same reading type is shown first elsewhere whenever it is available.
     </p>
     <p>
@@ -136,10 +136,10 @@ const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
     </details>
 
     <details class="mt-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
-      <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Whole Outline recommendations work</summary>
+      <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Full Coverage recommendations work</summary>
       <div class="mt-3 space-y-3 text-sm text-gray-600">
         <p>
-          The Whole Outline tool ignores items you have already marked done and asks a
+          The Full Coverage tool ignores items you have already marked done and asks a
           coverage-first question: which unread item adds the largest number of currently
           uncovered Parts, Divisions, Sections, or Subsections for the selected reading type?
         </p>

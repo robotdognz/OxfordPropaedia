@@ -299,13 +299,13 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
       </div>
     </section>
 
-    <section class="space-y-4 py-12">
+    <section class="space-y-4 pt-2 pb-12 sm:pt-4">
       <HomepageModeSection
         id="whole-outline"
         mode="whole-outline"
         alias="whole-outline-reading-paths"
         number={1}
-        title="Whole Outline"
+        title="Full Coverage"
         description="A guided reading order across the full scope of human knowledge. Each suggestion is chosen to cover as much of the outline as possible with every reading."
         defaultOpen={false}
       >
@@ -323,7 +323,7 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
         mode="selected-fields"
         alias="circle-of-learning"
         number={2}
-        title="Selected Fields"
+        title="Guided Coverage"
         description="Select one or two fields to explore the connections between them. Suggested readings start from their shared ground and spread outward across the wider outline."
       >
         <CircleNavigator
@@ -606,7 +606,7 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
         id="specific-topic"
         mode="specific-topic"
         number={3}
-        title="Specific Topic"
+        title="Outline"
         description="Navigate directly to a Part of the outline and narrow your focus through its Divisions and Sections into progressively more specific topics."
       >
         <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -682,6 +682,10 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
           padding-left: 1rem;
           padding-right: 1rem;
         }
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] {
+        margin-top: 0 !important;
       }
 
       [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-summary] {

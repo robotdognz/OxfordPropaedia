@@ -71,13 +71,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <Footer />
     <MobileExploreTabs />
 
-    <script is:inline>
+    <script is:inline define:vars={{ homeWorkspacePrefix: `${base}?explore=` }}>
       (function() {
         var STORAGE_KEY = 'propaedia-scroll-positions-v1';
         var pendingSaveTimer = 0;
         var currentUrlKey = function() {
           return window.location.pathname + window.location.search;
         };
+
+        function isHomeWorkspaceUrl(urlKey) {
+          return typeof urlKey === 'string' && urlKey.indexOf(homeWorkspacePrefix) === 0;
+        }
 
         function readPositions() {
           try {
@@ -100,6 +104,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         function rememberScroll(urlKey, y) {
           if (!urlKey) return;
+          if (isHomeWorkspaceUrl(urlKey)) return;
 
           var positions = readPositions();
           positions[urlKey] = {
@@ -148,6 +153,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         function restoreScroll(urlKey) {
           if (!urlKey) return;
+          if (isHomeWorkspaceUrl(urlKey)) {
+            requestAnimationFrame(function() {
+              requestAnimationFrame(function() {
+                window.scrollTo({ top: 0, behavior: 'auto' });
+              });
+            });
+            return;
+          }
           var y = getStoredScroll(urlKey);
           if (typeof y !== 'number') return;
 
@@ -293,11 +306,33 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       })();
     </script>
 
-    <script is:inline define:vars={{ swPath: `${base}/sw.js` }}>
+    <script is:inline define:vars={{ swPath: `${base}/sw.js`, basePath: base, isDev: import.meta.env.DEV }}>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(swPath)
-          .then((reg) => console.log('SW registered', reg.scope))
-          .catch((err) => console.log('SW failed:', err));
+        if (isDev) {
+          navigator.serviceWorker.getRegistrations()
+            .then((registrations) =>
+              Promise.all(
+                registrations
+                  .filter((registration) => registration.scope.indexOf(window.location.origin + basePath) === 0)
+                  .map((registration) => registration.unregister()),
+              ),
+            )
+            .then(() => {
+              if (!('caches' in window)) return;
+              return caches.keys().then((names) =>
+                Promise.all(
+                  names
+                    .filter((name) => name.indexOf('propaedia-') === 0)
+                    .map((name) => caches.delete(name)),
+                ),
+              );
+            })
+            .catch((err) => console.log('SW cleanup failed:', err));
+        } else {
+          navigator.serviceWorker.register(swPath)
+            .then((reg) => console.log('SW registered', reg.scope))
+            .catch((err) => console.log('SW failed:', err));
+        }
       }
     </script>
 

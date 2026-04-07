@@ -106,7 +106,7 @@ function filteredEmptyMessage(
   }
 
   if (options?.sectionLevelOnly && selection) {
-    return 'Macropaedia is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.';
+    return 'Britannica is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.';
   }
 
   if (selection) {
@@ -140,7 +140,7 @@ function recommendationCountSubtitle(visibleCount: number, totalCount: number): 
 
 function macropaediaCardRationale(selection: OutlineSelectionDetail | null): string {
   if (selection) {
-    return 'This article is referenced directly from this Section. Macropaedia is mapped at section level here, so selecting a narrower outline topic does not narrow its scope.';
+    return 'This article is referenced directly from this Section. Britannica is mapped at section level here, so selecting a narrower outline topic does not narrow its scope.';
   }
   return 'This article is referenced directly from this Section, so it serves as a broader companion reading for the subject as a whole.';
 }
@@ -415,7 +415,7 @@ export default function SectionReadingRecommendations({
       matchedCount: macropaediaReferences.length,
       visibleCount: visibleReferences.length,
       selectionNotice: selection
-        ? 'Macropaedia is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.'
+        ? 'Britannica is only mapped at section level here, so selecting a narrower outline topic does not narrow these recommendations.'
         : null,
       emptyMessage: filteredEmptyMessage(
         READING_TYPE_UI_META.macropaedia.label,

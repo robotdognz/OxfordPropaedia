@@ -13,7 +13,7 @@ export const READING_TYPE_LABELS: Record<ReadingType, string> = {
   vsi: 'Oxford VSI',
   wikipedia: 'Wikipedia',
   iot: 'BBC In Our Time',
-  macropaedia: 'Macropaedia',
+  macropaedia: 'Britannica',
 };
 
 export const READING_TYPE_UI_META: Record<ReadingType, {
@@ -38,7 +38,7 @@ export const READING_TYPE_UI_META: Record<ReadingType, {
   },
   macropaedia: {
     eyebrow: 'Britannica',
-    label: 'Macropaedia',
+    label: 'Britannica',
     accentColor: '#0f766e',
   },
 };

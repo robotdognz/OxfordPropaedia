@@ -372,7 +372,7 @@ export default function HomepageCoverageExplorer({
         <div class="space-y-3 border-b border-slate-200 pb-4">
           <div class="max-w-3xl space-y-2">
             <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Whole Outline
+              Full Coverage
             </p>
             <h2 class="text-3xl font-serif font-bold text-slate-900">
               Coverage-First Reading Paths

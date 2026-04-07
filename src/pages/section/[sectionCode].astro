@@ -63,6 +63,10 @@ const { reverseRefs, groupedReverseRefs } = await loadSectionReverseReferences(s
       <StickySubheading
         breadcrumbs={[
           {
+            label: 'Outline',
+            href: `${base}/?explore=specific-topic`,
+          },
+          {
             label: `Part ${PART_NAMES[section.partNumber]}`,
             compactLabel: PART_ROMAN[section.partNumber],
             compactPriority: 3,
