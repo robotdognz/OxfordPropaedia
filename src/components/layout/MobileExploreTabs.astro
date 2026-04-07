@@ -182,11 +182,14 @@ const workspaceHrefs = {
 
     function syncStoredUrls() {
       const urls = readStoredWorkspaceUrls();
+      const pathname = normalizePath(window.location.pathname);
+      const current = new URL(window.location.href);
+      const requestedHomeWorkspace = pathname === homePath ? current.searchParams.get('explore') : null;
       urls['whole-outline'] = homeUrlKey('whole-outline');
       urls['selected-fields'] = homeUrlKey('selected-fields');
       urls['help'] = homeUrlKey('help');
 
-      if (isSpecificTopicRoute(window.location.pathname)) {
+      if (isSpecificTopicRoute(window.location.pathname) || requestedHomeWorkspace === 'specific-topic') {
         urls['specific-topic'] = currentUrlKey();
       } else if (!urls['specific-topic']) {
         urls['specific-topic'] = homeUrlKey('specific-topic');
