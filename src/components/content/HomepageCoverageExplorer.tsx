@@ -33,7 +33,6 @@ import {
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import {
   estimateReadingMinutes,
-  formatEstimatedMinutes,
   formatEstimatedReadingTime,
 } from '../../utils/readingSpeed';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
@@ -42,6 +41,11 @@ import ReadingSpreadPath from './ReadingSpreadPath';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
+import CoverageStatisticsDetails from './CoverageStatisticsDetails';
+import {
+  BRITANNICA_TIME_UNAVAILABLE_MESSAGE,
+  default as CompletedTimeStatistics,
+} from './CompletedTimeStatistics';
 
 interface PartMeta {
   partNumber: number;
@@ -402,76 +406,27 @@ export default function HomepageCoverageExplorer({
     setCoverageLayerPreference(layer);
   };
 
-  const completedSourceSummary = useMemo(() => {
+  const completedViewStatistics = useMemo(() => {
     if (!filteredSource) return null;
 
-    let completedCount = 0;
-    let timedCount = 0;
-    let totalMinutes = 0;
-
-    for (const entry of filteredSource.entries) {
-      if (!checklistState[entry.checklistKey]) continue;
-      completedCount += 1;
-
-      if (filteredSource.type === 'iot') {
-        if (!entry.durationSeconds || entry.durationSeconds <= 0) continue;
-        timedCount += 1;
-        totalMinutes += entry.durationSeconds / 60;
-        continue;
-      }
-
-      const estimatedMinutes = estimateReadingMinutes(entry.wordCount, readingSpeedWpm);
-      if (!estimatedMinutes) continue;
-      timedCount += 1;
-      totalMinutes += estimatedMinutes;
-    }
-
-    return {
-      completedCount,
-      timedCount,
-      totalMinutes,
-    };
-  }, [checklistState, filteredSource, readingSpeedWpm]);
-
-  const completedViewStatistics = useMemo(() => {
-    if (!filteredSource || !completedSourceSummary) return null;
-
     if (filteredSource.type === 'macropaedia') {
-      return (
-        <p class="text-xs leading-5 text-slate-500">
-          Time summaries for Britannica will appear here once article-length data is available.
-        </p>
-      );
-    }
-
-    if (completedSourceSummary.completedCount === 0) {
-      return (
-        <p class="text-xs leading-5 text-slate-500">
-          No completed {READING_TYPE_LABELS[filteredSource.type]} items in this view yet.
-        </p>
-      );
-    }
-
-    const timeLabel = formatEstimatedMinutes(
-      completedSourceSummary.totalMinutes,
-      filteredSource.type !== 'iot',
-    );
-
-    if (!timeLabel || completedSourceSummary.timedCount === 0) {
-      return (
-        <p class="text-xs leading-5 text-slate-500">
-          {completedSourceSummary.completedCount} {completedSourceSummary.completedCount === 1 ? 'item' : 'items'} completed here, but time data is not available yet.
-        </p>
-      );
+      return <CompletedTimeStatistics
+        entries={filteredSource.entries}
+        checklistState={checklistState}
+        sourceLabel={READING_TYPE_LABELS[filteredSource.type]}
+        unsupportedMessage={BRITANNICA_TIME_UNAVAILABLE_MESSAGE}
+      />;
     }
 
     return (
-      <p class="text-xs leading-5 text-slate-500">
-        <span class="font-medium text-slate-700">{timeLabel}</span>{' '}
-        spent across {completedSourceSummary.completedCount} {completedSourceSummary.completedCount === 1 ? 'item' : 'items'} in {READING_TYPE_LABELS[filteredSource.type]}.
-      </p>
+      <CompletedTimeStatistics
+        entries={filteredSource.entries}
+        checklistState={checklistState}
+        sourceLabel={READING_TYPE_LABELS[filteredSource.type]}
+        readingSpeedWpm={readingSpeedWpm}
+      />
     );
-  }, [completedSourceSummary, filteredSource]);
+  }, [checklistState, filteredSource, readingSpeedWpm]);
 
   const selectionStrip = (
     <ReadingSelectionStrip
@@ -540,63 +495,13 @@ export default function HomepageCoverageExplorer({
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div class="mt-2 space-y-3">
-                  {completedViewStatistics}
-                  <div class={`grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
-                  <div class="space-y-1 text-xs text-slate-500">
-                    {coverageRings.map((ring) => (
-                      <div
-                        key={ring.label}
-                        class={`flex items-center gap-1.5 ${
-                          ring.label === displayActiveRingLabel
-                            ? 'font-medium text-slate-700'
-                            : ''
-                        }`}
-                      >
-                        <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
-                        <span>{ring.label}: {ring.count}/{ring.total}</span>
-                      </div>
-                    ))}
-                  </div>
-                  {partSegments.length > 0 && (() => {
-                    const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
-                    const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
-                    const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
-                    const allComplete = sorted.every(s => s.fraction >= 1);
-                    const layerLabel = displayActiveRingLabel;
-                    return (
-                      <div class="space-y-1 text-xs text-slate-500">
-                        {top.length > 0 ? (
-                          <>
-                            <p class="font-medium text-slate-600">Most covered</p>
-                            {top.map(s => (
-                              <div key={s.partNumber} class="flex items-center gap-1.5">
-                                <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
-                              </div>
-                            ))}
-                          </>
-                        ) : (
-                          <p class="text-slate-400">No {layerLabel} covered yet.</p>
-                        )}
-                        {allComplete ? (
-                          <p class="pt-1 text-slate-400">All {layerLabel} covered.</p>
-                        ) : incomplete.length > 0 && top.length > 0 && (
-                          <>
-                            <p class="pt-1 font-medium text-slate-600">Least covered</p>
-                            {incomplete.map(s => (
-                              <div key={s.partNumber} class="flex items-center gap-1.5">
-                                <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
-                              </div>
-                            ))}
-                          </>
-                        )}
-                      </div>
-                    );
-                  })()}
-                  </div>
-                </div>
+                <CoverageStatisticsDetails
+                  coverageRings={coverageRings}
+                  activeRingLabel={displayActiveRingLabel}
+                  partSegments={partSegments}
+                  activeLayerLabel={displayActiveRingLabel}
+                  preface={completedViewStatistics}
+                />
               </details>
             </section>
 

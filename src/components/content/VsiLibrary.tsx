@@ -28,6 +28,7 @@ import {
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
+import CompletedTimeStatistics from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -271,6 +272,14 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
+          coverageStatisticsPreface={
+            <CompletedTimeStatistics
+              entries={entries}
+              checklistState={checklistState}
+              sourceLabel="Oxford VSI"
+              readingSpeedWpm={readingSpeedWpm}
+            />
+          }
           mobileRingWidth={7}
           desktopRingWidth={9}
         />

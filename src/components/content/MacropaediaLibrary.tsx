@@ -19,6 +19,10 @@ import {
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
+import {
+  BRITANNICA_TIME_UNAVAILABLE_MESSAGE,
+  default as CompletedTimeStatistics,
+} from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -230,6 +234,14 @@ export default function MacropaediaLibrary({
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
+          coverageStatisticsPreface={
+            <CompletedTimeStatistics
+              entries={entries}
+              checklistState={checklistState}
+              sourceLabel="Britannica"
+              unsupportedMessage={BRITANNICA_TIME_UNAVAILABLE_MESSAGE}
+            />
+          }
         />
 
         <ReadingSpreadPath

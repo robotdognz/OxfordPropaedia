@@ -98,6 +98,7 @@ const vsiCatalogCollection = defineCollection({
     fetchedAt: z.string().optional(),
     pageCountsFetchedAt: z.string().optional(),
     titles: z.array(z.object({
+      id: z.string(),
       title: z.string(),
       author: z.string(),
       number: z.number().int().optional(),

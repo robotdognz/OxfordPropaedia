@@ -107,6 +107,22 @@ function catalogKey(entry) {
   return `${normalizeIdentity(entry.title)}::${normalizeIdentity(entry.author)}::${entry.edition ?? 1}`;
 }
 
+function normalizeStableKeyPart(value) {
+  return String(value || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .replace(/\s+/g, '-');
+}
+
+function deriveVsiId(entry) {
+  if (entry.id) return entry.id;
+  if (entry.printIsbn) return `isbn-${entry.printIsbn}`;
+  return `legacy-${normalizeStableKeyPart(entry.title)}-${normalizeStableKeyPart(entry.author)}`;
+}
+
 const MANUAL_PUBLISHED_CANONICAL_OVERRIDES = new Map([
   ['medical ethics', { author: 'Michael Dunn, Tony Hope' }],
   ['social work', { author: 'Sally Holland, Jonathan Scourfield' }],
@@ -240,7 +256,7 @@ function resolveAcceptedIdentity(current, scraped) {
 }
 
 function buildCandidateEntry(current, scraped) {
-  const candidate = { ...current };
+  const candidate = { ...current, id: deriveVsiId(current) };
   const identityCompatible = isIdentityCompatible(current, scraped);
   const acceptedIdentity = resolveAcceptedIdentity(current, scraped);
   const mergeMetadata = canMergeMetadata(current, scraped);

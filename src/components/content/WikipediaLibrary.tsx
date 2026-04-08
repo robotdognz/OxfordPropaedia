@@ -20,6 +20,7 @@ import {
 } from '../../utils/readingLibrary';
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
+import CompletedTimeStatistics from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -255,6 +256,14 @@ export default function WikipediaLibrary({
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
+          coverageStatisticsPreface={
+            <CompletedTimeStatistics
+              entries={levelEntries}
+              checklistState={checklistState}
+              sourceLabel="Wikipedia"
+              readingSpeedWpm={readingSpeedWpm}
+            />
+          }
         />
 
 	        <ReadingSpreadPath

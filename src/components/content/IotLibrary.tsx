@@ -19,6 +19,7 @@ import {
 import type { PartMeta } from '../../utils/helpers';
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
+import CompletedTimeStatistics from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -250,6 +251,13 @@ export default function IotLibrary({
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
+          coverageStatisticsPreface={
+            <CompletedTimeStatistics
+              entries={entries}
+              checklistState={checklistState}
+              sourceLabel="BBC In Our Time"
+            />
+          }
         />
 
         <ReadingSpreadPath

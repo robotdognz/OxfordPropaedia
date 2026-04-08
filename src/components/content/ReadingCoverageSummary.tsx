@@ -1,8 +1,9 @@
-import { h } from 'preact';
+import { h, type ComponentChildren } from 'preact';
 import { useState } from 'preact/hooks';
 import type { CoverageRing, PartCoverageSegment } from '../../utils/readingLibrary';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
+import CoverageStatisticsDetails from './CoverageStatisticsDetails';
 
 interface ReadingCoverageSummaryProps {
   coverageRings: CoverageRing[];
@@ -21,6 +22,7 @@ interface ReadingCoverageSummaryProps {
   desktopRingWidth?: number;
   partSegments?: PartCoverageSegment[];
   activeLayerLabel?: string;
+  coverageStatisticsPreface?: ComponentChildren;
 }
 
 export default function ReadingCoverageSummary({
@@ -40,6 +42,7 @@ export default function ReadingCoverageSummary({
   desktopRingWidth = 10,
   partSegments,
   activeLayerLabel,
+  coverageStatisticsPreface,
 }: ReadingCoverageSummaryProps) {
   const [statsOpen, setStatsOpen] = useState(false);
   const hasPartRing = partSegments && partSegments.length > 0;
@@ -101,58 +104,13 @@ export default function ReadingCoverageSummary({
           </svg>
         </button>
         {statsOpen && (
-          <div class={`mt-2 grid gap-3 ${hasPartRing ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
-            <div class="space-y-1 text-xs text-slate-500">
-              {coverageRings.map((ring) => (
-                <div
-                  key={ring.label}
-                  class={`flex items-center gap-1.5 ${
-                    ring.label === activeRingLabel ? 'font-medium text-slate-700' : ''
-                  }`}
-                >
-                  <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
-                  <span>{ring.label}: {ring.count}/{ring.total}</span>
-                </div>
-              ))}
-            </div>
-            {hasPartRing && (() => {
-              const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
-              const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
-              const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
-              const allComplete = sorted.every(s => s.fraction >= 1);
-              const lbl = activeLayerLabel ?? 'items';
-              return (
-                <div class="space-y-1 text-xs text-slate-500">
-                  {top.length > 0 ? (
-                    <>
-                      <p class="font-medium text-slate-600">Most covered</p>
-                      {top.map(s => (
-                        <div key={s.partNumber} class="flex items-center gap-1.5">
-                          <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>{s.title}: {s.covered}/{s.total} {lbl}</span>
-                        </div>
-                      ))}
-                    </>
-                  ) : (
-                    <p class="text-slate-400">No {lbl} covered yet.</p>
-                  )}
-                  {allComplete ? (
-                    <p class="pt-1 text-slate-400">All {lbl} covered.</p>
-                  ) : incomplete.length > 0 && top.length > 0 && (
-                    <>
-                      <p class="pt-1 font-medium text-slate-600">Least covered</p>
-                      {incomplete.map(s => (
-                        <div key={s.partNumber} class="flex items-center gap-1.5">
-                          <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>{s.title}: {s.covered}/{s.total} {lbl}</span>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                </div>
-              );
-            })()}
-          </div>
+          <CoverageStatisticsDetails
+            coverageRings={coverageRings}
+            activeRingLabel={activeRingLabel}
+            partSegments={partSegments}
+            activeLayerLabel={activeLayerLabel}
+            preface={coverageStatisticsPreface}
+          />
         )}
       </div>
       <div class="rounded-xl border border-gray-200 bg-white p-5">

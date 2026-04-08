@@ -23,6 +23,7 @@ export interface ReadingSectionSummary {
 }
 
 export interface VsiCatalogTitle {
+  id: string;
   title: string;
   author: string;
   number?: number;
@@ -323,7 +324,7 @@ export function buildVsiAggregateEntries(
           edition: catalogEntry.edition,
           pageCount: catalogEntry.pageCount,
           wordCount: catalogEntry.wordCount,
-          checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
+          checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author, catalogEntry.printIsbn, catalogEntry.id),
           sectionCount: 1,
           sections: [section],
           progressSubsectionKeys,
@@ -354,7 +355,7 @@ export function buildVsiAggregateEntries(
         edition: catalogEntry.edition,
         pageCount: catalogEntry.pageCount,
         wordCount: catalogEntry.wordCount,
-        checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
+        checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author, catalogEntry.printIsbn, catalogEntry.id),
         sectionCount: 0,
         sections: [],
         progressSubsectionKeys: [],
