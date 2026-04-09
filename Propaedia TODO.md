@@ -1,6 +1,6 @@
 Propaedia TODO:
 
-    - Add word count to wikipedia article metadata, and wire that into the recomendation cards in place of author name, etc.
+    - Better tab icons for Global and Bounded (wedge circles like the coverage wedge circle for both, but the Bounded can have a bigger wedge at the top)
 
     - Macropaedia data needed for app (first pass)
         - Article length

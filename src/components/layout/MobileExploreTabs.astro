@@ -2,8 +2,8 @@
 const base = import.meta.env.BASE_URL;
 
 const tabs = [
-  { workspace: 'whole-outline', label: 'Full Coverage' },
-  { workspace: 'selected-fields', label: 'Guided Coverage' },
+  { workspace: 'whole-outline', label: 'Global' },
+  { workspace: 'selected-fields', label: 'Bounded' },
   { workspace: 'specific-topic', label: 'Outline' },
   { workspace: 'library', label: 'Library' },
 ] as const;
@@ -28,52 +28,62 @@ const workspaceHrefs = {
         <a
           data-mobile-workspace-tab={tab.workspace}
           href={workspaceHrefs[tab.workspace]}
-          class="flex min-w-0 flex-col items-center gap-0.5 rounded-xl px-2 py-1.5 text-[0.66rem] font-sans font-medium text-slate-500 transition-colors"
+          class="relative flex min-w-0 flex-col items-center rounded-xl px-2 py-1.5 text-[0.66rem] font-sans font-medium text-slate-500 transition-colors duration-200"
         >
           <span
-            data-mobile-workspace-icon
-            class="flex h-8 w-11 items-center justify-center rounded-lg border border-transparent text-slate-400 transition-colors"
-            aria-hidden="true"
+            data-mobile-workspace-content
+            class="relative z-10 flex flex-col items-center gap-0.5 transition-transform duration-200"
           >
-            {tab.workspace === 'whole-outline' ? (
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="7.25"></circle>
-                <circle cx="12" cy="12" r="3.25"></circle>
-              </svg>
-            ) : tab.workspace === 'selected-fields' ? (
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="7" cy="12" r="2.5"></circle>
-                <circle cx="17" cy="7" r="2.5"></circle>
-                <circle cx="17" cy="17" r="2.5"></circle>
-                <path d="M9.2 10.9 14.7 8"></path>
-                <path d="m9.2 13.1 5.5 2.9"></path>
-              </svg>
-            ) : tab.workspace === 'specific-topic' ? (
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M7 6h10"></path>
-                <path d="M7 12h7"></path>
-                <path d="M7 18h5"></path>
-                <circle cx="6" cy="6" r="1"></circle>
-                <circle cx="6" cy="12" r="1"></circle>
-                <circle cx="6" cy="18" r="1"></circle>
-              </svg>
-            ) : (
-              <svg
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 6.1a8.85 8.85 0 0 0-5.95-2.35c-1.03 0-2.02.18-2.8.52v13.42a8.8 8.8 0 0 1 2.8-.44c2.3 0 4.44.85 5.95 2.25"></path>
-                <path d="M12 6.1a8.85 8.85 0 0 1 5.95-2.35c1.03 0 2.02.18 2.8.52v13.42a8.8 8.8 0 0 0-2.8-.44c-2.3 0-4.44.85-5.95 2.25"></path>
-                <path d="M12 6.1v13.4"></path>
-              </svg>
-            )}
+            <span
+              data-mobile-workspace-icon
+              class="flex h-8 w-11 items-center justify-center rounded-lg text-slate-400 transition-colors duration-200"
+              aria-hidden="true"
+            >
+              {tab.workspace === 'whole-outline' ? (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="7.25"></circle>
+                  <circle cx="12" cy="12" r="3.25"></circle>
+                </svg>
+              ) : tab.workspace === 'selected-fields' ? (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="7" cy="12" r="2.5"></circle>
+                  <circle cx="17" cy="7" r="2.5"></circle>
+                  <circle cx="17" cy="17" r="2.5"></circle>
+                  <path d="M9.2 10.9 14.7 8"></path>
+                  <path d="m9.2 13.1 5.5 2.9"></path>
+                </svg>
+              ) : tab.workspace === 'specific-topic' ? (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M7 6h10"></path>
+                  <path d="M7 12h7"></path>
+                  <path d="M7 18h5"></path>
+                  <circle cx="6" cy="6" r="1"></circle>
+                  <circle cx="6" cy="12" r="1"></circle>
+                  <circle cx="6" cy="18" r="1"></circle>
+                </svg>
+              ) : (
+                <svg
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 6.1a8.85 8.85 0 0 0-5.95-2.35c-1.03 0-2.02.18-2.8.52v13.42a8.8 8.8 0 0 1 2.8-.44c2.3 0 4.44.85 5.95 2.25"></path>
+                  <path d="M12 6.1a8.85 8.85 0 0 1 5.95-2.35c1.03 0 2.02.18 2.8.52v13.42a8.8 8.8 0 0 0-2.8-.44c-2.3 0-4.44.85-5.95 2.25"></path>
+                  <path d="M12 6.1v13.4"></path>
+                </svg>
+              )}
+            </span>
+            <span
+              data-mobile-workspace-label
+              class="truncate text-center leading-tight transition-[color,transform] duration-200"
+            >
+              {tab.label}
+            </span>
           </span>
-          <span class="truncate text-center leading-tight">{tab.label}</span>
         </a>
       ))}
     </div>
@@ -86,9 +96,23 @@ const workspaceHrefs = {
   }
 
   [data-mobile-workspace-tab][data-active='true'] [data-mobile-workspace-icon] {
-    border-color: rgb(226 232 240);
-    background: rgb(248 250 252);
     color: #0f172a;
+  }
+
+  [data-mobile-workspace-tab][data-active='true'] [data-mobile-workspace-icon] svg {
+    filter:
+      drop-shadow(0 6px 8px rgb(15 23 42 / 0.22))
+      drop-shadow(0 2px 3px rgb(15 23 42 / 0.14));
+  }
+
+  [data-mobile-workspace-tab][data-active='true'] [data-mobile-workspace-label] {
+    text-shadow:
+      0 5px 8px rgb(15 23 42 / 0.2),
+      0 2px 3px rgb(15 23 42 / 0.12);
+  }
+
+  [data-mobile-workspace-tab][data-active='true'] [data-mobile-workspace-content] {
+    transform: translateY(-1px);
   }
 </style>
 

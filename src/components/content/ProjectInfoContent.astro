@@ -59,7 +59,7 @@ const quickStartSteps = [
   {
     step: '1',
     title: 'Pick a way in',
-    body: 'Use Full Coverage for unrestricted breadth, Guided Coverage to keep that same coverage logic but constrain it to a chosen Part or overlap, or Outline if you already know where you want to browse.',
+    body: 'Use Global for unrestricted breadth, Bounded to keep that same coverage logic but constrain it to a chosen Part or overlap, or Outline if you already know where you want to browse.',
   },
   {
     step: '2',
@@ -75,13 +75,13 @@ const quickStartSteps = [
 
 const modeCards = [
   {
-    eyebrow: 'Full Coverage',
+    eyebrow: 'Global',
     title: 'Work outward from what you have not covered yet',
     body: 'This mode builds a coverage-first path across the whole outline and keeps recalculating the next best unread item for the selected source.',
     bestFor: 'Best for: steady breadth and long reading plans.',
   },
   {
-    eyebrow: 'Guided Coverage',
+    eyebrow: 'Bounded',
     title: 'Guide full-outline coverage through a chosen Part or overlap',
     body: 'Rotate the ring to bring a Part to the top and guide the path through readings connected to that Part. Move a Part to the centre to narrow the pool further to readings shared by the centre and top Parts. Inside that narrower pool, the path still ranks readings by how much new outline territory they open.',
     bestFor: 'Best for: keeping a coverage-first path, but steering it through one Part or the shared ground between two.',
@@ -115,8 +115,8 @@ const recommendationNotes = [
     body: 'Recommendations are scored from title matches, mapped outline paths, subject terms, keywords, and overlap with the Section title and outline language. Percentages are relative within the current view, not global scores.',
   },
   {
-    title: 'How Full Coverage works',
-    body: 'Full Coverage asks a narrower question: which unread item adds the most currently uncovered Parts, Divisions, Sections, or Subsections for the selected source? It is not just showing the highest raw relevance score.',
+    title: 'How Global works',
+    body: 'Global asks a narrower question: which unread item adds the most currently uncovered Parts, Divisions, Sections, or Subsections for the selected source? It is not just showing the highest raw relevance score.',
   },
   {
     title: 'How Part and Division rollups work',
@@ -265,10 +265,10 @@ const practicalNotes = [
         </summary>
         <div class="mt-3 space-y-3 text-sm leading-6 text-slate-600">
           <p>
-            Full Coverage keeps recalculating from unread items only. If two items open the same amount of new territory, the tie breaks toward the one whose coverage is spread more widely across the outline, and then toward the one attached to more Sections overall.
+            Global keeps recalculating from unread items only. If two items open the same amount of new territory, the tie breaks toward the one whose coverage is spread more widely across the outline, and then toward the one attached to more Sections overall.
           </p>
           <p>
-            Guided Coverage keeps the same coverage-first logic as Full Coverage, but it narrows the candidate pool first. With no centre Part, it ranks readings attached to the Part at the top of the circle by how much new territory they open across the wider outline. Once a Part is moved to the centre, it switches to readings shared by the centre and top Parts and ranks that narrower pool the same way.
+            Bounded keeps the same coverage-first logic as Global, but it narrows the candidate pool first. With no centre Part, it ranks readings attached to the Part at the top of the circle by how much new territory they open across the wider outline. Once a Part is moved to the centre, it switches to readings shared by the centre and top Parts and ranks that narrower pool the same way.
           </p>
         </div>
       </details>
