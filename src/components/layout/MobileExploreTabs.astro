@@ -1,5 +1,53 @@
 ---
+import { roundedDonutSlicePath } from '../../utils/donutPaths';
+
 const base = import.meta.env.BASE_URL;
+
+const ICON_SIZE = 24;
+const ICON_CENTER = ICON_SIZE / 2;
+const ICON_OUTER_RADIUS = 9.15;
+const ICON_INNER_RADIUS = 5.1;
+const ICON_GAP_PX = 0.82;
+const ICON_CORNER_RADIUS_PX = 1.25;
+const TAB_ICON_CLASS = 'h-[1.48rem] w-[1.48rem]';
+const GLOBAL_ICON_ROTATION_DEG = -30;
+
+type WedgeIconSegment = {
+  startDeg: number;
+  endDeg: number;
+  fillOpacity?: number;
+  innerRadius?: number;
+  outerRadius?: number;
+  stroke?: boolean;
+};
+
+function buildWedgeIconSegments(segments: WedgeIconSegment[]) {
+  return segments
+    .map((segment) => ({
+      ...segment,
+      path: roundedDonutSlicePath(
+        ICON_CENTER,
+        ICON_CENTER,
+        segment.innerRadius ?? ICON_INNER_RADIUS,
+        segment.outerRadius ?? ICON_OUTER_RADIUS,
+        segment.startDeg,
+        segment.endDeg,
+        {
+          gapPx: ICON_GAP_PX,
+          cornerRadiusPx: ICON_CORNER_RADIUS_PX,
+        },
+      ),
+    }))
+    .filter((segment) => Boolean(segment.path));
+}
+
+const globalIconSegments = buildWedgeIconSegments(
+  Array.from({ length: 6 }, (_, index) => ({
+    startDeg: index * 60,
+    endDeg: (index + 1) * 60,
+    fillOpacity: 0.94,
+  })),
+);
 
 const tabs = [
   { workspace: 'whole-outline', label: 'Global' },
@@ -40,30 +88,30 @@ const workspaceHrefs = {
               aria-hidden="true"
             >
               {tab.workspace === 'whole-outline' ? (
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <circle cx="12" cy="12" r="7.25"></circle>
-                  <circle cx="12" cy="12" r="3.25"></circle>
+                <svg class={TAB_ICON_CLASS} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="7.65"></circle>
+                  <circle cx="12" cy="12" r="3.55"></circle>
                 </svg>
               ) : tab.workspace === 'selected-fields' ? (
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <circle cx="7" cy="12" r="2.5"></circle>
-                  <circle cx="17" cy="7" r="2.5"></circle>
-                  <circle cx="17" cy="17" r="2.5"></circle>
-                  <path d="M9.2 10.9 14.7 8"></path>
-                  <path d="m9.2 13.1 5.5 2.9"></path>
+                <svg class={TAB_ICON_CLASS} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <g transform={`rotate(${GLOBAL_ICON_ROTATION_DEG} ${ICON_CENTER} ${ICON_CENTER})`}>
+                    {globalIconSegments.map((segment) => (
+                      <path d={segment.path} fill="currentColor" fill-opacity={segment.fillOpacity ?? 0.94} />
+                    ))}
+                  </g>
                 </svg>
               ) : tab.workspace === 'specific-topic' ? (
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M7 6h10"></path>
-                  <path d="M7 12h7"></path>
-                  <path d="M7 18h5"></path>
-                  <circle cx="6" cy="6" r="1"></circle>
-                  <circle cx="6" cy="12" r="1"></circle>
-                  <circle cx="6" cy="18" r="1"></circle>
+                <svg class={TAB_ICON_CLASS} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M6.8 5.7h10.4"></path>
+                  <path d="M6.8 12h7.5"></path>
+                  <path d="M6.8 18.3h5.4"></path>
+                  <circle cx="5.6" cy="5.7" r="1"></circle>
+                  <circle cx="5.6" cy="12" r="1"></circle>
+                  <circle cx="5.6" cy="18.3" r="1"></circle>
                 </svg>
               ) : (
                 <svg
-                  class="h-5 w-5"
+                  class={TAB_ICON_CLASS}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
