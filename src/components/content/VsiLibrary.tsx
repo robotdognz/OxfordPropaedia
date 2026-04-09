@@ -8,55 +8,31 @@ import {
   type VsiAggregateEntry,
 } from '../../utils/readingData';
 import {
-  estimateReadingMinutes,
   formatEstimatedReadingTime,
 } from '../../utils/readingSpeed';
 import { formatVsiPageCount } from '../../utils/vsiCatalog';
-import { slugify, type PartMeta } from '../../utils/helpers';
+import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import { useReadingLibraryControlsState } from '../../hooks/useReadingLibraryControlsState';
+import type { ReadingType } from '../../utils/readingPreference';
 import {
-  buildCoverageRings,
-  buildLayerCoverageSnapshot,
-  buildPartCoverageSegments,
-  completedChecklistKeysFromState,
   countEntryCoverageForLayer,
   countCompletedEntries,
-  coverageLayerLabel,
-  COVERAGE_LAYER_META,
-  selectDefaultCoverageLayer,
-  type CoverageLayer,
 } from '../../utils/readingLibrary';
-import CoverageLayerTabs from './CoverageLayerTabs';
-import CoverageGapPanel from './CoverageGapPanel';
-import CompletedTimeStatistics from './CompletedTimeStatistics';
-import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingActionControls from './ReadingActionControls';
-import ReadingLibraryStatisticsAccordion from './ReadingLibraryStatisticsAccordion';
+import LibraryWorkspaceControls from './LibraryWorkspaceControls';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
-import {
-  getCoverageLayerPreference,
-  setCoverageLayerPreference,
-  subscribeCoverageLayerPreference,
-} from '../../utils/readingPreference';
 
 export interface VsiLibraryProps {
   entries: VsiAggregateEntry[];
   baseUrl: string;
-  partsMeta?: PartMeta[];
+  onReadingTypeChange: (type: ReadingType) => void;
 }
 
 const INITIAL_VISIBLE_COUNT = 50;
-const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
-const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
-  Parts: 'part',
-  Divisions: 'division',
-  Sections: 'section',
-  Subsections: 'subsection',
-};
 
 type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title' | 'number';
 type SortDirection = 'asc' | 'desc';
@@ -123,99 +99,35 @@ function sortEntries(
   return nextEntries;
 }
 
-function activeCoverageDescription(layer: CoverageLayer): string {
-  switch (layer) {
-    case 'part':
-      return 'Parts with at least one VSI covered by your checked titles.';
-    case 'division':
-      return 'Divisions with at least one VSI covered by your checked titles.';
-    case 'section':
-      return 'Sections with at least one VSI covered by your checked titles.';
-    case 'subsection':
-      return 'Top-level Subsection coverage from explicit outline-path matches inside each Section.';
-    default:
-      return '';
-  }
-}
-
 function precisionBadgeText(entry: VsiAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
-export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryProps) {
+export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: VsiLibraryProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   const shelfState = useReadingShelfState();
   const {
+    scope,
     checkedOnly,
-    shelvedOnly,
     sortField,
     sortDirection,
+    setScope,
     setCheckedOnly,
-    setShelvedOnly,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('vsi', 'section');
   useHashAnchorCorrection('vsi-library');
-  const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
-  const changeLayer = (layer: CoverageLayer) => {
-    setSelectedLayer(layer);
-    setCoverageLayerPreference(layer);
-  };
-
-  useEffect(() => {
-    setSelectedLayer(getCoverageLayerPreference());
-    const unsubLayer = subscribeCoverageLayerPreference((layer) => setSelectedLayer(layer));
-    return () => {
-      unsubLayer();
-    };
-  }, []);
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  }, [query, checkedOnly, shelvedOnly, sortField, sortDirection]);
+  }, [query, scope, checkedOnly, sortField, sortDirection]);
 
   const normalizedQuery = query.trim().toLowerCase();
-  const completedCount = countCompletedEntries(entries, checklistState);
-
-  const {
-    coverageRings,
-    defaultLayer,
-    layerSnapshots,
-    layerTabSnapshots,
-  } = useMemo(() => {
-    const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer));
-    const tabSnapshots = snapshots.map((snapshot) => ({
-      layer: snapshot.layer,
-      currentlyCoveredCount: snapshot.currentlyCoveredCount,
-      totalCoverageCount: snapshot.totalCoverageCount,
-    }));
-
-    return {
-      coverageRings: buildCoverageRings(entries, checklistState),
-      defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
-      layerSnapshots: snapshots,
-      layerTabSnapshots: tabSnapshots,
-    };
-  }, [entries, checklistState]);
-
-  const activeLayer = selectedLayer ?? defaultLayer;
-  const partSegments = useMemo(() => {
-    if (!partsMeta) return undefined;
-    return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
-  }, [entries, checklistState, activeLayer, partsMeta]);
-  const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
-  const isLayerComplete = activeSnapshot
-    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
-    : false;
-  const partSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === 'part') ?? layerSnapshots[0];
-  const isPartComplete = partSnapshot
-    ? partSnapshot.currentlyCoveredCount >= partSnapshot.totalCoverageCount
-    : false;
-  const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
+  const shelvedCount = entries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
+  const isShelfView = scope === 'shelf';
   const coverageCounts = useMemo(() => new Map(
     entries.map((entry) => [
       entry.checklistKey,
@@ -228,13 +140,16 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
     ])
   ), [entries]);
 
+  const scopedEntries = isShelfView
+    ? entries.filter((entry) => Boolean(shelfState[entry.checklistKey]))
+    : entries;
+  const scopedCompletedCount = countCompletedEntries(scopedEntries, checklistState);
+
   const filteredEntries = sortEntries(
-    entries.filter((entry) => {
+    scopedEntries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-      const isShelved = Boolean(shelfState[entry.checklistKey]);
 
       if (checkedOnly && !isChecked) return false;
-      if (shelvedOnly && !isShelved) return false;
       return matchesQuery(entry, normalizedQuery);
     }),
     sortField,
@@ -247,78 +162,24 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
 
   return (
     <div class="space-y-4">
-      <CoverageLayerTabs
-        activeLayer={activeLayer}
-        onSelect={(layer) => changeLayer(layer)}
-        snapshots={layerTabSnapshots}
-      />
-
-      <div class="space-y-4">
-        <ReadingCoverageSummary
-          coverageRings={coverageRings}
-          totalLabel="Titles"
-          totalCount={entries.length}
-          totalDescription="Unique Oxford Very Short Introductions in the mapped reading list."
-          completedCount={completedCount}
-          completedDescription="Shared with the Done boxes on section pages."
-          activeCoverageLabel={`${layerMeta.label} Coverage`}
-          activeRingLabel={layerMeta.pluralLabel}
-          onSelectCoverageRing={(label) => {
-            const layer = LAYER_BY_RING_LABEL[label];
-            if (layer) changeLayer(layer);
-          }}
-          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-          activeCoverageDescription={activeCoverageDescription(activeLayer)}
-          partSegments={partSegments}
-          activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
-          coverageStatisticsPreface={
-            <CompletedTimeStatistics
-              entries={entries}
-              checklistState={checklistState}
-              sourceLabel="Oxford VSI"
-              readingSpeedWpm={readingSpeedWpm}
-            />
-          }
-          mobileRingWidth={7}
-          desktopRingWidth={9}
-          showSummaryCards={false}
-        />
-      </div>
-      <ReadingLibraryStatisticsAccordion
-        totalLabel="Titles"
+      <LibraryWorkspaceControls
+        baseUrl={baseUrl}
+        readingType="vsi"
+        onReadingTypeChange={onReadingTypeChange}
+        scope={scope}
+        onScopeChange={setScope}
         totalCount={entries.length}
-        totalDescription="Unique Oxford Very Short Introductions in the mapped reading list."
-        completedCount={completedCount}
-        completedDescription="Shared with the Done boxes on section pages."
-        activeCoverageLabel="Part Coverage"
-        activeCoverageCount={partSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={partSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription('part')}
-      >
-        <CoverageGapPanel
-          entries={entries}
-          checklistState={checklistState}
-          activeLayer="part"
-          baseUrl={baseUrl}
-          itemLabelPlural="books"
-          isComplete={isPartComplete}
-        />
-      </ReadingLibraryStatisticsAccordion>
+        shelvedCount={shelvedCount}
+      />
 
       <section id="vsi-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6">
         <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-3xl">
-            <h2 class="font-serif text-2xl text-gray-900">VSI Library</h2>
-            <p class="mt-2 text-sm text-gray-600">
-              Search the full mapped VSI list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
-            </p>
-            <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full library list below. The Outline Layer tabs above drive the coverage view; the statistics drawer stays focused on overall Parts coverage.
-            </p>
+          <div>
+            <h2 class="font-serif text-2xl text-gray-900">{isShelfView ? 'VSI Shelf' : 'VSI Library'}</h2>
+            <p class="mt-1 text-sm text-gray-500">{scopedCompletedCount} checked off</p>
           </div>
           <div class="text-sm text-gray-500">
-            Showing {visibleEntries.length} of {filteredEntries.length} matching titles
+            Showing {visibleEntries.length} of {filteredEntries.length} matching {isShelfView ? 'shelved titles' : 'titles'}
           </div>
         </div>
 
@@ -345,15 +206,6 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
                   class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                 />
                 Checked only
-              </label>
-              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
-                <input
-                  type="checkbox"
-                  checked={shelvedOnly}
-                  onChange={(event) => setShelvedOnly((event.currentTarget as HTMLInputElement).checked)}
-                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                />
-                Shelved only
               </label>
             </div>
           </div>
@@ -451,9 +303,15 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
           </>
         ) : (
           <div class="mt-6 rounded-xl border border-dashed border-gray-300 px-4 py-10 text-center text-sm text-gray-600">
-            {checkedOnly || shelvedOnly
-              ? 'No VSI titles matched those filters.'
-              : 'No VSI titles matched that search.'}
+            {isShelfView
+              ? shelvedCount === 0
+                ? 'Nothing is on your VSI shelf yet. Add titles to Shelf to keep them here.'
+                : checkedOnly
+                  ? 'No shelved VSI titles matched those filters.'
+                  : 'No shelved VSI titles matched that search.'
+              : checkedOnly
+                ? 'No VSI titles matched those filters.'
+                : 'No VSI titles matched that search.'}
           </div>
         )}
       </section>

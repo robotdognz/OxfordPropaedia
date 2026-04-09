@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { useJsonPayload } from '../../hooks/useJsonPayload';
 import type { VsiLibraryPayload } from '../../utils/readingLibraryPayloads';
 import VsiLibrary from './VsiLibrary';
@@ -6,10 +7,18 @@ import VsiLibrary from './VsiLibrary';
 interface VsiLibraryLoaderProps {
   dataUrl: string;
   baseUrl: string;
+  onReadingTypeChange: (type: import('../../utils/readingPreference').ReadingType) => void;
+  onReady?: () => void;
 }
 
-export default function VsiLibraryLoader({ dataUrl, baseUrl }: VsiLibraryLoaderProps) {
+export default function VsiLibraryLoader({ dataUrl, baseUrl, onReadingTypeChange, onReady }: VsiLibraryLoaderProps) {
   const { data, error } = useJsonPayload<VsiLibraryPayload>(dataUrl);
+
+  useEffect(() => {
+    if (data && onReady) {
+      onReady();
+    }
+  }, [data, onReady]);
 
   if (error) {
     return (
@@ -31,7 +40,7 @@ export default function VsiLibraryLoader({ dataUrl, baseUrl }: VsiLibraryLoaderP
     <VsiLibrary
       entries={data.entries}
       baseUrl={baseUrl}
-      partsMeta={data.partsMeta}
+      onReadingTypeChange={onReadingTypeChange}
     />
   );
 }

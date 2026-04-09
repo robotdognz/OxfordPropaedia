@@ -1,28 +1,20 @@
 ---
-import BaseLayout from '../../components/layout/BaseLayout.astro';
-import MacropaediaLibraryLoader from '../../components/content/MacropaediaLibraryLoader';
-
 const base = import.meta.env.BASE_URL;
+const destination = `${base}/library?source=macropaedia`;
 ---
 
-<BaseLayout
-  title="Britannica Articles - Propaedia"
-  description="Browse the Macropaedia articles referenced in the Propaedia outline - long-form Britannica articles providing in-depth treatment of major subjects."
->
-  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-    <header class="max-w-4xl">
-      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Type</p>
-      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">Britannica Articles</h1>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
-        The Macropaedia was the long-form heart of the <a href="https://www.britannica.com/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline">Encyclopaedia Britannica</a> - in-depth articles of 10 to 300+ pages written by leading scholars on major subjects.
-        The Propaedia outline references these articles as the primary reading for each Section.
-        Browse the full list below, see which articles span the most Sections, and track your progress
-        alongside the VSI and Wikipedia reading types.
-      </p>
-    </header>
-
-    <section class="mt-8">
-      <MacropaediaLibraryLoader client:load dataUrl={`${base}/library-data/macropaedia.json`} baseUrl={base} />
-    </section>
-  </main>
-</BaseLayout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <link rel="canonical" href={destination} />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+    <p><a href={destination}>Continue to the Library</a></p>
+  </body>
+</html>

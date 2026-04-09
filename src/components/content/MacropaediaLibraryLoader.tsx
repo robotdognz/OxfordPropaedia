@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { useJsonPayload } from '../../hooks/useJsonPayload';
 import type { MacropaediaLibraryPayload } from '../../utils/readingLibraryPayloads';
 import MacropaediaLibrary from './MacropaediaLibrary';
@@ -6,13 +7,23 @@ import MacropaediaLibrary from './MacropaediaLibrary';
 interface MacropaediaLibraryLoaderProps {
   dataUrl: string;
   baseUrl: string;
+  onReadingTypeChange: (type: import('../../utils/readingPreference').ReadingType) => void;
+  onReady?: () => void;
 }
 
 export default function MacropaediaLibraryLoader({
   dataUrl,
   baseUrl,
+  onReadingTypeChange,
+  onReady,
 }: MacropaediaLibraryLoaderProps) {
   const { data, error } = useJsonPayload<MacropaediaLibraryPayload>(dataUrl);
+
+  useEffect(() => {
+    if (data && onReady) {
+      onReady();
+    }
+  }, [data, onReady]);
 
   if (error) {
     return (
@@ -34,7 +45,7 @@ export default function MacropaediaLibraryLoader({
     <MacropaediaLibrary
       entries={data.entries}
       baseUrl={baseUrl}
-      partsMeta={data.partsMeta}
+      onReadingTypeChange={onReadingTypeChange}
     />
   );
 }

@@ -1,31 +1,20 @@
 ---
-import BaseLayout from '../../components/layout/BaseLayout.astro';
-import WikipediaLibraryLoader from '../../components/content/WikipediaLibraryLoader';
-
 const base = import.meta.env.BASE_URL;
+const destination = `${base}/library?source=wikipedia`;
 ---
 
-<BaseLayout
-  title="Wikipedia Articles - Propaedia"
-  description="Browse Wikipedia's most important articles mapped to the Propaedia outline, with three zoom levels for different reading goals."
->
-  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-    <header class="max-w-4xl">
-      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Type</p>
-      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">Wikipedia Articles</h1>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
-        Wikipedia's <a href="https://en.wikipedia.org/wiki/Wikipedia:Vital_articles" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline">Vital Articles</a> are
-        a community-curated list of the most important articles on Wikipedia, organised into three tiers.
-        Use the zoom level to match how much reading you want to do: Level 1 gives you a broad sweep of
-        all human knowledge in just 10 articles, Level 2 expands to 100 for more depth, and Level 3
-        opens up roughly 1,000 articles for comprehensive coverage. Start wide to frontload a diverse
-        foundation, then zoom in to go deeper where it matters to you. Each article is mapped to Propaedia
-        Sections - check them off as you read and track your progress across the outline.
-      </p>
-    </header>
-
-    <section class="mt-8">
-      <WikipediaLibraryLoader client:load dataUrl={`${base}/library-data/wikipedia.json`} baseUrl={base} />
-    </section>
-  </main>
-</BaseLayout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <link rel="canonical" href={destination} />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+    <p><a href={destination}>Continue to the Library</a></p>
+  </body>
+</html>

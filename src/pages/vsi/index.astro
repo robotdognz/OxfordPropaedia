@@ -1,28 +1,20 @@
 ---
-import BaseLayout from '../../components/layout/BaseLayout.astro';
-import VsiLibraryLoader from '../../components/content/VsiLibraryLoader';
-
 const base = import.meta.env.BASE_URL;
+const destination = `${base}/library?source=vsi`;
 ---
 
-<BaseLayout
-  title="Oxford VSI Library - Propaedia"
-  description="Browse every Oxford Very Short Introduction mapped into the Propaedia, ranked by how widely each title appears across Sections."
->
-  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-    <header class="max-w-4xl">
-      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Type</p>
-      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">Oxford Very Short Introductions</h1>
-      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
-        Oxford's <a href="https://global.oup.com/academic/content/series/v/very-short-introductions-vsi/?lang=en&cc=nz" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline">Very Short Introductions</a> are
-        concise, expert-written books that cover a subject in roughly 150 pages. Each title below has been mapped to the
-        Propaedia Sections it relates to, so you can see which books give the widest spread across the outline of knowledge.
-        Check off titles as you read them and follow a reading path that adapts to what you've already covered.
-      </p>
-    </header>
-
-    <section class="mt-8">
-      <VsiLibraryLoader client:load dataUrl={`${base}/library-data/vsi.json`} baseUrl={base} />
-    </section>
-  </main>
-</BaseLayout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <link rel="canonical" href={destination} />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+    <p><a href={destination}>Continue to the Library</a></p>
+  </body>
+</html>

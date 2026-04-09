@@ -4,9 +4,10 @@
 
 export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
 export type ReadingPoolScope = 'all' | 'shelved';
+export type ReadingLibraryScope = 'library' | 'shelf';
 export interface ReadingLibraryControlsPreference<TSortField extends string = string> {
+  scope: ReadingLibraryScope;
   checkedOnly: boolean;
-  shelvedOnly: boolean;
   sortField: TSortField;
   sortDirection: 'asc' | 'desc';
 }
@@ -247,8 +248,8 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
   defaultSortDirection: 'asc' | 'desc' = 'desc'
 ): ReadingLibraryControlsPreference<TSortField> {
   const fallback: ReadingLibraryControlsPreference<TSortField> = {
+    scope: 'library',
     checkedOnly: false,
-    shelvedOnly: false,
     sortField: defaultSortField,
     sortDirection: defaultSortDirection,
   };
@@ -259,11 +260,15 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
     const raw = localStorage.getItem(readingLibraryControlsKey(readingType));
     if (!raw) return fallback;
 
-    const parsed = JSON.parse(raw) as Partial<ReadingLibraryControlsPreference<string>>;
+    const parsed = JSON.parse(raw) as Partial<ReadingLibraryControlsPreference<string>> & {
+      shelvedOnly?: boolean;
+    };
+
+    const scope = parsed.scope === 'shelf' || parsed.shelvedOnly === true ? 'shelf' : 'library';
 
     return {
+      scope,
       checkedOnly: parsed.checkedOnly === true,
-      shelvedOnly: parsed.shelvedOnly === true,
       sortField: (typeof parsed.sortField === 'string' ? parsed.sortField : defaultSortField) as TSortField,
       sortDirection: parsed.sortDirection === 'asc' || parsed.sortDirection === 'desc'
         ? parsed.sortDirection
@@ -282,6 +287,30 @@ export function setReadingLibraryControlsPreference(
 
   try {
     localStorage.setItem(readingLibraryControlsKey(readingType), JSON.stringify(preference));
+  } catch {
+    // Ignore
+  }
+}
+
+export function setReadingLibraryScopePreference(
+  readingType: ReadingType,
+  scope: ReadingLibraryScope,
+): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    const key = readingLibraryControlsKey(readingType);
+    const raw = localStorage.getItem(key);
+    const parsed = raw ? JSON.parse(raw) as Record<string, unknown> : {};
+
+    localStorage.setItem(
+      key,
+      JSON.stringify({
+        ...parsed,
+        scope,
+        shelvedOnly: undefined,
+      }),
+    );
   } catch {
     // Ignore
   }

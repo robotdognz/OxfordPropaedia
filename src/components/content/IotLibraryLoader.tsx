@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { useJsonPayload } from '../../hooks/useJsonPayload';
 import type { IotLibraryPayload } from '../../utils/readingLibraryPayloads';
 import IotLibrary from './IotLibrary';
@@ -6,10 +7,18 @@ import IotLibrary from './IotLibrary';
 interface IotLibraryLoaderProps {
   dataUrl: string;
   baseUrl: string;
+  onReadingTypeChange: (type: import('../../utils/readingPreference').ReadingType) => void;
+  onReady?: () => void;
 }
 
-export default function IotLibraryLoader({ dataUrl, baseUrl }: IotLibraryLoaderProps) {
+export default function IotLibraryLoader({ dataUrl, baseUrl, onReadingTypeChange, onReady }: IotLibraryLoaderProps) {
   const { data, error } = useJsonPayload<IotLibraryPayload>(dataUrl);
+
+  useEffect(() => {
+    if (data && onReady) {
+      onReady();
+    }
+  }, [data, onReady]);
 
   if (error) {
     return (
@@ -31,7 +40,7 @@ export default function IotLibraryLoader({ dataUrl, baseUrl }: IotLibraryLoaderP
     <IotLibrary
       entries={data.entries}
       baseUrl={baseUrl}
-      partsMeta={data.partsMeta}
+      onReadingTypeChange={onReadingTypeChange}
     />
   );
 }

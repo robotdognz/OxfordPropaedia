@@ -1,4 +1,4 @@
-const CACHE_NAME = 'propaedia-v13';
+const CACHE_NAME = 'propaedia-v14';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
@@ -11,9 +11,10 @@ const CACHE_DEBUG_MESSAGE_TYPE = 'propaedia-cache-debug-state';
 const CACHE_DEBUG_REQUEST_TYPE = 'propaedia-cache-debug-get';
 const debugStateByClientId = new Map();
 
-// Pre-cached on install: homepage, about, offline, plus Part and Division pages for core offline navigation
+// Pre-cached on install: homepage, library, about, offline, plus Part and Division pages for core offline navigation
 const PRECACHE_URLS = [
   BASE,
+  BASE + 'library/',
   BASE + 'about/',
   BASE + 'offline/',
   // Part pages

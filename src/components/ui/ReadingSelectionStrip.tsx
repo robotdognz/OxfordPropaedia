@@ -23,6 +23,7 @@ interface ReadingSelectionStripProps {
   scopeOptions?: SelectorCardRailOption<ReadingPoolScope>[];
   onScopeChange?: (scope: ReadingPoolScope) => void;
   scopeAriaLabel?: string;
+  extraSelector?: ComponentChildren;
   supplementaryControls?: ComponentChildren;
   showWikipediaLevelSelector?: boolean;
 }
@@ -40,6 +41,7 @@ export default function ReadingSelectionStrip({
   scopeOptions,
   onScopeChange,
   scopeAriaLabel,
+  extraSelector,
   supplementaryControls,
   showWikipediaLevelSelector = false,
 }: ReadingSelectionStripProps) {
@@ -57,7 +59,8 @@ export default function ReadingSelectionStrip({
       && scopeAriaLabel,
   );
   const showsWikipediaLevel = showWikipediaLevelSelector && readingTypeValue === 'wikipedia';
-  const controlCount = 1 + (showsCoverageLayer ? 1 : 0) + (showsScope ? 1 : 0) + (showsWikipediaLevel ? 1 : 0);
+  const hasExtraSelector = Boolean(extraSelector);
+  const controlCount = 1 + (showsCoverageLayer ? 1 : 0) + (showsScope ? 1 : 0) + (showsWikipediaLevel ? 1 : 0) + (hasExtraSelector ? 1 : 0);
   const gridClass = controlCount >= 4
     ? 'sm:grid-cols-2 xl:grid-cols-4'
     : controlCount >= 3
@@ -113,6 +116,7 @@ export default function ReadingSelectionStrip({
             columns={3}
           />
         ) : null}
+        {extraSelector}
       </div>
       {supplementaryControls ? (
         <div class="mt-2 flex flex-wrap items-center gap-2 border-t border-slate-200/80 px-0.5 pt-2 text-xs">

@@ -4,83 +4,35 @@ import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { writeShelfState } from '../../utils/readingShelf';
 import { type WikipediaAggregateEntry } from '../../utils/readingData';
-import { slugify, type PartMeta } from '../../utils/helpers';
+import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import { useReadingLibraryControlsState } from '../../hooks/useReadingLibraryControlsState';
+import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
+import type { ReadingType } from '../../utils/readingPreference';
 import {
-  buildCoverageRings,
-  buildLayerCoverageSnapshot,
-  buildPartCoverageSegments,
-  completedChecklistKeysFromState,
   countEntryCoverageForLayer,
   countCompletedEntries,
-  coverageLayerLabel,
-  COVERAGE_LAYER_META,
-  selectDefaultCoverageLayer,
-  type CoverageLayer,
 } from '../../utils/readingLibrary';
-import CoverageLayerTabs from './CoverageLayerTabs';
-import CoverageGapPanel from './CoverageGapPanel';
-import CompletedTimeStatistics from './CompletedTimeStatistics';
-import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingActionControls from './ReadingActionControls';
-import ReadingLibraryStatisticsAccordion from './ReadingLibraryStatisticsAccordion';
-import SelectorCardRail from '../ui/SelectorCardRail';
-import { CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
+import LibraryWorkspaceControls from './LibraryWorkspaceControls';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 import {
-  getStoredWikipediaLevel,
-  setStoredWikipediaLevel,
-  subscribeWikipediaLevel,
-  wikipediaLevelCount,
-  wikipediaLevelName,
-  type WikipediaKnowledgeLevel,
-} from '../../utils/wikipediaLevel';
-import {
-  getCoverageLayerPreference,
-  setCoverageLayerPreference,
-  subscribeCoverageLayerPreference,
-} from '../../utils/readingPreference';
-import {
-  estimateReadingMinutes,
   formatEstimatedReadingTime,
 } from '../../utils/readingSpeed';
 
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
   baseUrl: string;
-  partsMeta?: PartMeta[];
+  onReadingTypeChange: (type: ReadingType) => void;
 }
 
-type KnowledgeLevel = WikipediaKnowledgeLevel;
 type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title';
 type SortDirection = 'asc' | 'desc';
 
 const INITIAL_VISIBLE = 50;
-const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
-const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
-  Parts: 'part',
-  Divisions: 'division',
-  Sections: 'section',
-  Subsections: 'subsection',
-};
-function activeCoverageDescription(layer: CoverageLayer): string {
-  switch (layer) {
-    case 'part':
-      return 'Parts with at least one checked article.';
-    case 'division':
-      return 'Divisions with at least one checked article.';
-    case 'section':
-      return 'Sections with at least one checked article.';
-    case 'subsection':
-      return 'Top-level Subsection coverage from explicit article path matches inside each Section.';
-    default:
-      return '';
-  }
-}
 
 function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
@@ -89,91 +41,34 @@ function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
 export default function WikipediaLibrary({
   entries,
   baseUrl,
-  partsMeta,
+  onReadingTypeChange,
 }: WikipediaLibraryProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   const shelfState = useReadingShelfState();
+  const level = useWikipediaLevel();
   const {
+    scope,
     checkedOnly,
-    shelvedOnly,
     sortField,
     sortDirection,
+    setScope,
     setCheckedOnly,
-    setShelvedOnly,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('wikipedia', 'section');
   useHashAnchorCorrection('wikipedia-library');
-  const [level, setLevel] = useState<KnowledgeLevel>(3);
-  const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
-  const changeLayer = (layer: CoverageLayer) => {
-    setSelectedLayer(layer);
-    setCoverageLayerPreference(layer);
-  };
-
-  useEffect(() => {
-    setLevel(getStoredWikipediaLevel());
-    setSelectedLayer(getCoverageLayerPreference());
-    const unsubLevel = subscribeWikipediaLevel((nextLevel) => setLevel(nextLevel));
-    const unsubLayer = subscribeCoverageLayerPreference((layer) => setSelectedLayer(layer));
-    return () => {
-      unsubLevel();
-      unsubLayer();
-    };
-  }, []);
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
-  }, [query, checkedOnly, shelvedOnly, sortField, sortDirection, level]);
-
-  const changeLevel = (newLevel: KnowledgeLevel) => {
-    setLevel(newLevel);
-    setStoredWikipediaLevel(newLevel);
-  };
+  }, [query, scope, checkedOnly, sortField, sortDirection, level]);
 
   const levelEntries = entries.filter((entry) => entry.lowestLevel <= level);
-  const completedCount = countCompletedEntries(levelEntries, checklistState);
+  const shelvedCount = levelEntries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
+  const isShelfView = scope === 'shelf';
   const normalizedQuery = query.trim().toLowerCase();
-
-  const {
-    coverageRings,
-    defaultLayer,
-    layerSnapshots,
-    layerTabSnapshots,
-  } = useMemo(() => {
-    const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(levelEntries, completedChecklistKeys, layer));
-    const tabSnapshots = snapshots.map((snapshot) => ({
-      layer: snapshot.layer,
-      currentlyCoveredCount: snapshot.currentlyCoveredCount,
-      totalCoverageCount: snapshot.totalCoverageCount,
-    }));
-
-    return {
-      coverageRings: buildCoverageRings(levelEntries, checklistState),
-      defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
-      layerSnapshots: snapshots,
-      layerTabSnapshots: tabSnapshots,
-    };
-  }, [checklistState, levelEntries]);
-
-  const activeLayer = selectedLayer ?? defaultLayer;
-  const partSegments = useMemo(() => {
-    if (!partsMeta) return undefined;
-    return buildPartCoverageSegments(levelEntries, checklistState, activeLayer, partsMeta);
-  }, [levelEntries, checklistState, activeLayer, partsMeta]);
-  const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
-  const isLayerComplete = activeSnapshot
-    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
-    : false;
-  const partSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === 'part') ?? layerSnapshots[0];
-  const isPartComplete = partSnapshot
-    ? partSnapshot.currentlyCoveredCount >= partSnapshot.totalCoverageCount
-    : false;
-  const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
   const coverageCounts = useMemo(() => new Map(
     levelEntries.map((entry) => [
       entry.checklistKey,
@@ -186,14 +81,17 @@ export default function WikipediaLibrary({
     ])
   ), [levelEntries]);
 
+  const scopedEntries = isShelfView
+    ? levelEntries.filter((entry) => Boolean(shelfState[entry.checklistKey]))
+    : levelEntries;
+  const scopedCompletedCount = countCompletedEntries(scopedEntries, checklistState);
+
   const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
   const compareNumber = (a: number, b: number) => (sortDirection === 'asc' ? a - b : b - a);
-  const filteredEntries = levelEntries
+  const filteredEntries = scopedEntries
     .filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-      const isShelved = Boolean(shelfState[entry.checklistKey]);
       if (checkedOnly && !isChecked) return false;
-      if (shelvedOnly && !isShelved) return false;
       if (!normalizedQuery) return true;
       return entry.title.toLowerCase().includes(normalizedQuery) || (entry.category || '').toLowerCase().includes(normalizedQuery);
     })
@@ -215,92 +113,25 @@ export default function WikipediaLibrary({
 
   return (
     <div class="space-y-4">
-      <section class={`${CONTROL_SURFACE_CLASS} space-y-2.5 p-2.5 sm:p-3`}>
-        <CoverageLayerTabs
-          activeLayer={activeLayer}
-          onSelect={(layer) => changeLayer(layer)}
-          snapshots={layerTabSnapshots}
-          framed={false}
-        />
-        <SelectorCardRail
-          label="Wikipedia Level"
-          ariaLabel="Wikipedia level"
-          value={level}
-          columns={3}
-          options={([1, 2, 3] as KnowledgeLevel[]).map((lvl) => ({
-            value: lvl,
-            label: wikipediaLevelName(lvl),
-            meta: wikipediaLevelCount(lvl),
-          }))}
-          onChange={changeLevel}
-          size="compact"
-        />
-      </section>
-
-      <div class="space-y-4">
-        <ReadingCoverageSummary
-          coverageRings={coverageRings}
-          totalLabel="Articles"
-          totalCount={levelEntries.length}
-          totalDescription="Wikipedia Vital Articles at the selected level."
-          completedCount={completedCount}
-          completedDescription="Shared with the Done boxes on section pages."
-          activeCoverageLabel={`${layerMeta.label} Coverage`}
-          activeRingLabel={layerMeta.pluralLabel}
-          onSelectCoverageRing={(label) => {
-            const layer = LAYER_BY_RING_LABEL[label];
-            if (layer) changeLayer(layer);
-          }}
-          activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
-          activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
-          activeCoverageDescription={activeCoverageDescription(activeLayer)}
-          partSegments={partSegments}
-          activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
-          coverageStatisticsPreface={
-            <CompletedTimeStatistics
-              entries={levelEntries}
-              checklistState={checklistState}
-              sourceLabel="Wikipedia"
-              readingSpeedWpm={readingSpeedWpm}
-            />
-          }
-          showSummaryCards={false}
-        />
-      </div>
-      <ReadingLibraryStatisticsAccordion
-        totalLabel="Articles"
+      <LibraryWorkspaceControls
+        baseUrl={baseUrl}
+        readingType="wikipedia"
+        onReadingTypeChange={onReadingTypeChange}
+        scope={scope}
+        onScopeChange={setScope}
         totalCount={levelEntries.length}
-        totalDescription="Wikipedia Vital Articles at the selected level."
-        completedCount={completedCount}
-        completedDescription="Shared with the Done boxes on section pages."
-        activeCoverageLabel="Part Coverage"
-        activeCoverageCount={partSnapshot?.currentlyCoveredCount ?? 0}
-        activeCoverageTotal={partSnapshot?.totalCoverageCount ?? 0}
-        activeCoverageDescription={activeCoverageDescription('part')}
-      >
-        <CoverageGapPanel
-          entries={levelEntries}
-          checklistState={checklistState}
-          activeLayer="part"
-          baseUrl={baseUrl}
-          itemLabelPlural="articles"
-          isComplete={isPartComplete}
-        />
-      </ReadingLibraryStatisticsAccordion>
+        shelvedCount={shelvedCount}
+        showWikipediaLevelSelector
+      />
 
       <section id="wikipedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
         <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-3xl">
-            <h2 class="font-serif text-2xl text-gray-900">Wikipedia Article List</h2>
-            <p class="mt-2 text-sm text-gray-600">
-              Search the full Vital Articles list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
-            </p>
-            <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full article list below. The Outline Layer tabs above drive the coverage view; the statistics drawer stays focused on overall Parts coverage.
-            </p>
+          <div>
+            <h2 class="font-serif text-2xl text-gray-900">{isShelfView ? 'Wikipedia Shelf' : 'Wikipedia Article List'}</h2>
+            <p class="mt-1 text-sm text-gray-500">{scopedCompletedCount} checked off</p>
           </div>
           <div class="text-sm text-gray-500">
-            Showing {visibleEntries.length} of {filteredEntries.length} matching articles
+            Showing {visibleEntries.length} of {filteredEntries.length} matching {isShelfView ? 'shelved articles' : 'articles'}
           </div>
         </div>
         <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -325,15 +156,6 @@ export default function WikipediaLibrary({
                   class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                 />
                 Checked only
-              </label>
-              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
-                <input
-                  type="checkbox"
-                  checked={shelvedOnly}
-                  onChange={(event) => setShelvedOnly((event.currentTarget as HTMLInputElement).checked)}
-                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                />
-                Shelved only
               </label>
             </div>
           </div>
@@ -429,9 +251,15 @@ export default function WikipediaLibrary({
           </>
         ) : (
           <div class="mt-6 rounded-xl border border-dashed border-gray-300 bg-white px-4 py-6 text-sm text-gray-600">
-            {checkedOnly || shelvedOnly
-              ? 'No articles matched those filters.'
-              : 'No articles match your filters.'}
+            {isShelfView
+              ? shelvedCount === 0
+                ? 'Nothing is on your Wikipedia shelf at this level yet. Add articles to Shelf to keep them here.'
+                : checkedOnly
+                  ? 'No shelved articles matched those filters.'
+                  : 'No shelved articles matched that search.'
+              : checkedOnly
+                ? 'No articles matched those filters.'
+                : 'No articles match your filters.'}
           </div>
         )}
       </section>

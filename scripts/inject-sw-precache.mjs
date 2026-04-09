@@ -28,4 +28,4 @@ sw = sw.replace('/*INJECT_DIVISION_URLS*/[]', JSON.stringify(divisionUrls));
 fs.writeFileSync(SW_PATH, sw);
 
 console.log(`Injected ${divisionUrls.length} division URLs into sw.js`);
-console.log(`Total pre-cache: ${13 + divisionUrls.length} URLs (home + about + offline + 10 parts + ${divisionUrls.length} divisions)`);
+console.log(`Total pre-cache: ${14 + divisionUrls.length} URLs (home + library + about + offline + 10 parts + ${divisionUrls.length} divisions)`);

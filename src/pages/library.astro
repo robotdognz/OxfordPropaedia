@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import LibraryWorkspaceLoader from '../components/content/LibraryWorkspaceLoader';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Library - Propaedia"
+  description="Browse Propaedia's mapped source libraries for Oxford VSI, Wikipedia, BBC In Our Time, and Britannica."
+>
+  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 pt-2 pb-12 sm:px-6 sm:pt-4 lg:px-8">
+    <section class="mb-6 max-w-3xl space-y-2">
+      <h1 class="text-2xl font-serif font-bold text-slate-900 sm:text-3xl">
+        Library
+      </h1>
+      <p class="text-sm font-serif text-slate-500 sm:text-base">
+        Browse the mapped source collections, switch to Shelf to focus on items you have saved, and manage your progress across books, articles, episodes, and Britannica entries.
+      </p>
+    </section>
+
+    <section>
+      <LibraryWorkspaceLoader client:load baseUrl={base} />
+    </section>
+  </main>
+</BaseLayout>

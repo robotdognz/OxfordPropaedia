@@ -120,9 +120,7 @@ const overviewParagraphs = extractParagraphs.length > 0
 <BaseLayout title={`${article.displayTitle || article.title} - Wikipedia`} description={`Wikipedia article: ${article.title}`}>
   <main id="main-content" class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
     <nav class="mb-6 text-sm text-gray-500 font-sans">
-      <a href={`${base}/`} class="hover:text-indigo-700">Home</a>
-      <span class="mx-1">/</span>
-      <a href={`${base}/wikipedia`} class="hover:text-indigo-700">Wikipedia</a>
+      <a href={`${base}/library?source=wikipedia`} class="hover:text-indigo-700">Library</a>
       <span class="mx-1">/</span>
       <span class="text-gray-900">{article.displayTitle || article.title}</span>
     </nav>

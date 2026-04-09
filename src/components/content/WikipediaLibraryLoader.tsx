@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { useJsonPayload } from '../../hooks/useJsonPayload';
 import type { WikipediaLibraryPayload } from '../../utils/readingLibraryPayloads';
 import WikipediaLibrary from './WikipediaLibrary';
@@ -6,13 +7,23 @@ import WikipediaLibrary from './WikipediaLibrary';
 interface WikipediaLibraryLoaderProps {
   dataUrl: string;
   baseUrl: string;
+  onReadingTypeChange: (type: import('../../utils/readingPreference').ReadingType) => void;
+  onReady?: () => void;
 }
 
 export default function WikipediaLibraryLoader({
   dataUrl,
   baseUrl,
+  onReadingTypeChange,
+  onReady,
 }: WikipediaLibraryLoaderProps) {
   const { data, error } = useJsonPayload<WikipediaLibraryPayload>(dataUrl);
+
+  useEffect(() => {
+    if (data && onReady) {
+      onReady();
+    }
+  }, [data, onReady]);
 
   if (error) {
     return (
@@ -34,7 +45,7 @@ export default function WikipediaLibraryLoader({
     <WikipediaLibrary
       entries={data.entries}
       baseUrl={baseUrl}
-      partsMeta={data.partsMeta}
+      onReadingTypeChange={onReadingTypeChange}
     />
   );
 }

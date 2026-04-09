@@ -3,6 +3,7 @@ import {
   getReadingLibraryControlsPreference,
   setReadingLibraryControlsPreference,
   type ReadingLibraryControlsPreference,
+  type ReadingLibraryScope,
   type ReadingType,
 } from '../utils/readingPreference';
 
@@ -24,15 +25,15 @@ export function useReadingLibraryControlsState<TSortField extends string>(
   }, [readingType, controls]);
 
   return {
+    scope: controls.scope,
     checkedOnly: controls.checkedOnly,
-    shelvedOnly: controls.shelvedOnly,
     sortField: controls.sortField,
     sortDirection: controls.sortDirection,
+    setScope: (scope: ReadingLibraryScope) => {
+      setControls((previous) => ({ ...previous, scope }));
+    },
     setCheckedOnly: (checkedOnly: boolean) => {
       setControls((previous) => ({ ...previous, checkedOnly }));
-    },
-    setShelvedOnly: (shelvedOnly: boolean) => {
-      setControls((previous) => ({ ...previous, shelvedOnly }));
     },
     setSortField: (sortField: TSortField) => {
       setControls((previous) => ({ ...previous, sortField }));
