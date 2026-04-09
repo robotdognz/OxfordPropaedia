@@ -67,11 +67,12 @@ export default function LibraryWorkspaceLoader({ baseUrl }: LibraryWorkspaceLoad
 
     const targetY = pendingScrollY.current;
     pendingScrollY.current = null;
-
-    window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        window.scrollTo({ top: targetY, behavior: 'auto' });
-      });
+    [0, 80, 220].forEach((delay) => {
+      window.setTimeout(() => {
+        window.requestAnimationFrame(() => {
+          window.scrollTo({ top: targetY, behavior: 'auto' });
+        });
+      }, delay);
     });
   };
 

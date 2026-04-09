@@ -75,12 +75,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       (function() {
         var STORAGE_KEY = 'propaedia-scroll-positions-v1';
         var pendingSaveTimer = 0;
+        var restoreToken = 0;
         var currentUrlKey = function() {
           return window.location.pathname + window.location.search;
         };
+        var lastUrlKey = currentUrlKey();
 
-        function isHomeWorkspaceUrl(urlKey) {
-          return typeof urlKey === 'string' && urlKey.indexOf(homeWorkspacePrefix) === 0;
+        try {
+          if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+          }
+        } catch (_error) {
+          // Ignore browser history failures and continue with manual restore attempts.
         }
 
         function readPositions() {
@@ -104,7 +110,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         function rememberScroll(urlKey, y) {
           if (!urlKey) return;
-          if (isHomeWorkspaceUrl(urlKey)) return;
 
           var positions = readPositions();
           positions[urlKey] = {
@@ -153,21 +158,22 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         function restoreScroll(urlKey) {
           if (!urlKey) return;
-          if (isHomeWorkspaceUrl(urlKey)) {
-            requestAnimationFrame(function() {
-              requestAnimationFrame(function() {
-                window.scrollTo({ top: 0, behavior: 'auto' });
-              });
-            });
-            return;
-          }
           var y = getStoredScroll(urlKey);
+          if (typeof y !== 'number') {
+            y = typeof urlKey === 'string' && urlKey.indexOf(homeWorkspacePrefix) === 0 ? 0 : null;
+          }
           if (typeof y !== 'number') return;
 
-          requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-              window.scrollTo({ top: y, behavior: 'auto' });
-            });
+          restoreToken += 1;
+          var token = restoreToken;
+          [0, 80, 220, 420].forEach(function(delay) {
+            window.setTimeout(function() {
+              if (restoreToken !== token) return;
+              requestAnimationFrame(function() {
+                if (restoreToken !== token) return;
+                window.scrollTo({ top: y, behavior: 'auto' });
+              });
+            }, delay);
           });
         }
 
@@ -195,16 +201,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         document.addEventListener('propaedia:workspace-after-change', function(event) {
           var detail = event && event.detail ? event.detail : {};
-          restoreScroll(detail.urlKey || currentUrlKey());
+          var nextUrlKey = detail.urlKey || currentUrlKey();
+          lastUrlKey = nextUrlKey;
+          restoreScroll(nextUrlKey);
+        });
+
+        window.addEventListener('popstate', function() {
+          rememberScroll(lastUrlKey, window.scrollY);
+          lastUrlKey = currentUrlKey();
+          restoreScroll(lastUrlKey);
         });
 
         if (!shouldSkipInitialRestore()) {
-          restoreScroll(currentUrlKey());
+          lastUrlKey = currentUrlKey();
+          restoreScroll(lastUrlKey);
 
           window.addEventListener(
             'load',
             function() {
-              restoreScroll(currentUrlKey());
+              lastUrlKey = currentUrlKey();
+              restoreScroll(lastUrlKey);
             },
             { once: true },
           );
