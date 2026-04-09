@@ -1,7 +1,5 @@
 Propaedia TODO:
 
-    - Better tab icons for Global and Bounded (wedge circles like the coverage wedge circle for both, but the Bounded can have a bigger wedge at the top)
-
     - Macropaedia data needed for app (first pass)
         - Article length
         - Volume the article is in (keep in mind the macropaedia articles start at 13, so we'll need to calculate that from the macropaedia numbers we have)
