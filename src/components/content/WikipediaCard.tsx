@@ -60,7 +60,7 @@ export default function WikipediaCard({
       checkboxAriaLabel={`Mark ${title} as read`}
       shelved={shelved}
       onShelvedChange={onShelvedChange}
-      shelfAriaLabel={`Add ${title} to shelf`}
+      shelfAriaLabel={`Add ${title} to My Shelf`}
     />
   );
 }

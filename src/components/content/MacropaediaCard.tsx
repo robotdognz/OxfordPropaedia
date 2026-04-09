@@ -47,7 +47,7 @@ export default function MacropaediaCard({
       checkboxAriaLabel={`Mark ${title} as completed`}
       shelved={shelved}
       onShelvedChange={onShelvedChange}
-      shelfAriaLabel={`Add ${title} to shelf`}
+      shelfAriaLabel={`Add ${title} to My Shelf`}
     />
   );
 }

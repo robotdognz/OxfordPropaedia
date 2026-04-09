@@ -32,7 +32,7 @@ export default function ReadingLibraryScopeTabs({
         },
         {
           value: 'shelf',
-          label: 'Shelf',
+          label: 'My Shelf',
           meta: String(shelvedCount),
         },
       ]}

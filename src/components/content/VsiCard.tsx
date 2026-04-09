@@ -71,7 +71,7 @@ export default function VsiCard({
       checkboxAriaLabel={`Mark ${title}${author ? ` by ${author}` : ''} as completed`}
       shelved={shelved}
       onShelvedChange={onShelvedChange}
-      shelfAriaLabel={`Add ${title}${author ? ` by ${author}` : ''} to shelf`}
+      shelfAriaLabel={`Add ${title}${author ? ` by ${author}` : ''} to My Shelf`}
     />
   );
 }

@@ -50,7 +50,7 @@ export default function ShelfToggleButton({
   shelved,
   onToggle,
   ariaLabel,
-  label = 'Shelf',
+  label = 'My Shelf',
   compact = false,
   variant = compact ? 'ribbon' : 'inline',
   ribbonOffsetClass = '-mt-[18px]',

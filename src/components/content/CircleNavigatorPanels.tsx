@@ -639,7 +639,7 @@ export function CenteredCircleNavigatorPanel({
             getHref={(step) => step.href}
             renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-            shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
+            shelfAriaLabel={(step) => `Add ${step.title} to My Shelf`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
             coverageLayer={resolvedLayer}
@@ -860,7 +860,7 @@ export function TopPartCircleNavigatorPanel({
             getHref={(step) => step.href}
             renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-            shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
+            shelfAriaLabel={(step) => `Add ${step.title} to My Shelf`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
             coverageLayer={resolvedLayer}

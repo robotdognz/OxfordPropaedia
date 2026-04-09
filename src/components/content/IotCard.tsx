@@ -61,7 +61,7 @@ export default function IotCard({
       checkboxAriaLabel={`Mark ${title} as listened`}
       shelved={shelved}
       onShelvedChange={onShelvedChange}
-      shelfAriaLabel={`Add ${title} to shelf`}
+      shelfAriaLabel={`Add ${title} to My Shelf`}
     />
   );
 }

@@ -106,7 +106,7 @@ export default function MacropaediaRefs({ references, sectionCode, baseUrl }: Ma
                 checkboxAriaLabel={`Mark ${ref} as completed`}
                 shelved={isShelved}
                 onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
-                shelfAriaLabel={`Add ${ref} to shelf`}
+                shelfAriaLabel={`Add ${ref} to My Shelf`}
               />
             </li>
           );

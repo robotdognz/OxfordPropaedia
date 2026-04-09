@@ -30,7 +30,7 @@ export default function ReadingActionControls({
         shelved={shelved}
         onToggle={onShelvedChange}
         ariaLabel={shelfAriaLabel}
-        label="Shelf"
+        label="My Shelf"
         compact
         variant="ribbon"
         ribbonOffsetClass={ribbonOffsetClass}

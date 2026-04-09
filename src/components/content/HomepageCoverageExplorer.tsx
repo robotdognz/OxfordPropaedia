@@ -102,7 +102,7 @@ function emptyRecommendationMessage(
   shelvedCount: number,
 ): string {
   if (scope === 'shelved' && shelvedCount === 0) {
-    return `Nothing in your shelf is available in this ${READING_TYPE_LABELS[source.type]} view yet. Add readings to Shelf to rank them here.`;
+    return `Nothing in your shelf is available in this ${READING_TYPE_LABELS[source.type]} view yet. Add readings to My Shelf to rank them here.`;
   }
 
   if (isComplete) {
@@ -587,7 +587,7 @@ export default function HomepageCoverageExplorer({
                 return meta ? <p class="mt-1 text-sm text-gray-600">{meta}</p> : null;
               }}
               checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-              shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
+              shelfAriaLabel={(step) => `Add ${step.title} to My Shelf`}
               itemSingular={filteredSource.itemSingular}
               itemPlural={filteredSource.itemPlural}
               coverageLayer={activeLayer}

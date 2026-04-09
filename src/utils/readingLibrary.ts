@@ -63,6 +63,33 @@ export function countEntryCoverageForLayer(
   return uniqueTargetKeysForEntry(entry, layer).length;
 }
 
+export function dominantPartNumberForEntry(
+  entry: ChecklistBackedReadingEntry,
+): number | null {
+  if (!entry.sections.length) return null;
+
+  const counts = new Map<number, number>();
+  for (const section of entry.sections) {
+    counts.set(section.partNumber, (counts.get(section.partNumber) ?? 0) + 1);
+  }
+
+  let bestPart: number | null = null;
+  let bestCount = -1;
+
+  for (const [partNumber, count] of counts.entries()) {
+    if (
+      count > bestCount
+      || (count === bestCount && bestPart !== null && partNumber < bestPart)
+      || bestPart === null
+    ) {
+      bestPart = partNumber;
+      bestCount = count;
+    }
+  }
+
+  return bestPart;
+}
+
 export interface LayerCoveragePathStep<TEntry extends ChecklistBackedReadingEntry> {
   entry: TEntry;
   newCoverageCount: number;

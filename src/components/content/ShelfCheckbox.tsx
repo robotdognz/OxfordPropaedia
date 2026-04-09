@@ -12,7 +12,7 @@ export interface ShelfCheckboxProps {
   label?: string;
 }
 
-export default function ShelfCheckbox({ checklistKey, label = 'Add to shelf' }: ShelfCheckboxProps) {
+export default function ShelfCheckbox({ checklistKey, label = 'Add to My Shelf' }: ShelfCheckboxProps) {
   const [shelved, setShelved] = useState(false);
 
   useEffect(() => {
@@ -26,8 +26,8 @@ export default function ShelfCheckbox({ checklistKey, label = 'Add to shelf' }: 
     <ShelfToggleButton
       shelved={shelved}
       onToggle={(next) => writeShelfState(checklistKey, next)}
-      ariaLabel={shelved ? 'Remove from shelf' : label}
-      label={shelved ? 'On shelf' : label}
+      ariaLabel={shelved ? 'Remove from My Shelf' : label}
+      label={shelved ? 'On My Shelf' : label}
     />
   );
 }
