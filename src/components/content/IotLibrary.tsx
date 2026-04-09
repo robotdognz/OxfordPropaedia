@@ -21,8 +21,8 @@ import BookshelfGrid from './BookshelfGrid';
 import { formatIotDuration, formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 import {
-  formatSummaryMinutes,
   summarizeTimedEntries,
+  summarizeTimedEntryLines,
 } from '../../utils/readingTimeSummary';
 
 export interface IotLibraryProps {
@@ -38,6 +38,12 @@ const INITIAL_VISIBLE = 50;
 
 function precisionBadgeText(entry: IotAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
+}
+
+function matchesCheckedFilter(isChecked: boolean, checkedFilter: 'both' | 'checked' | 'unchecked'): boolean {
+  if (checkedFilter === 'checked') return isChecked;
+  if (checkedFilter === 'unchecked') return !isChecked;
+  return true;
 }
 
 function matchesQuery(entry: IotAggregateEntry, normalizedQuery: string): boolean {
@@ -73,11 +79,11 @@ export default function IotLibrary({
   const shelfState = useReadingShelfState();
   const {
     scope,
-    checkedOnly,
+    checkedFilter,
     sortField,
     sortDirection,
     setScope,
-    setCheckedOnly,
+    setCheckedFilter,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('iot', 'section');
@@ -87,7 +93,7 @@ export default function IotLibrary({
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
-  }, [query, scope, checkedOnly, sortField, sortDirection]);
+  }, [query, scope, checkedFilter, sortField, sortDirection]);
 
   const normalizedQuery = query.trim().toLowerCase();
   const shelvedCount = entries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
@@ -115,7 +121,7 @@ export default function IotLibrary({
   const filteredEntries = [...scopedEntries]
     .filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-      if (checkedOnly && !isChecked) return false;
+      if (!matchesCheckedFilter(isChecked, checkedFilter)) return false;
       return matchesQuery(entry, normalizedQuery);
     })
     .sort((a, b) => {
@@ -149,12 +155,9 @@ export default function IotLibrary({
     () => summarizeTimedEntries(filteredEntries, checklistState),
     [filteredEntries, checklistState]
   );
-  const shelfSpentLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.completedMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
-  const shelfRemainingLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.remainingMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
+  const shelfSummaryLines = summarizeTimedEntryLines(shelfTimeSummary, {
+    showCompletedCount: checkedFilter !== 'checked',
+  });
 
   return (
     <div class="space-y-4">
@@ -164,6 +167,7 @@ export default function IotLibrary({
         onReadingTypeChange={onReadingTypeChange}
         scope={scope}
         onScopeChange={setScope}
+        checkedFilter={checkedFilter}
         totalCount={entries.length}
         shelvedCount={shelvedCount}
       />
@@ -172,8 +176,8 @@ export default function IotLibrary({
         query={query}
         onQueryInput={setQuery}
         queryPlaceholder="Title, synopsis, or summary"
-        checkedOnly={checkedOnly}
-        onCheckedOnlyChange={setCheckedOnly}
+        checkedFilter={checkedFilter}
+        onCheckedFilterChange={setCheckedFilter}
         sortField={sortField}
         onSortFieldChange={(value) => setSortField(value as SortField)}
         sortOptions={[
@@ -192,19 +196,14 @@ export default function IotLibrary({
       {isShelfView ? (
         <section
           id="iot-library"
-          class="scroll-mt-24 rounded-[1.75rem] border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
+          class="scroll-mt-24 rounded-2xl border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
         >
           <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 class="font-serif text-2xl text-gray-900">My BBC In Our Time Shelf</h2>
-              <p class="mt-1 text-sm text-gray-500">{shelfTimeSummary.completedCount} checked off</p>
-              {(shelfSpentLabel || shelfRemainingLabel) && (
-                <p class="mt-1 text-sm text-gray-500">
-                  {shelfSpentLabel ? `${shelfSpentLabel} spent` : ''}
-                  {shelfSpentLabel && shelfRemainingLabel ? ' · ' : ''}
-                  {shelfRemainingLabel ? `${shelfRemainingLabel} remaining` : ''}
-                </p>
-              )}
+              {shelfSummaryLines.map((line) => (
+                <p class="mt-1 text-sm text-gray-500">{line}</p>
+              ))}
             </div>
             <div class="text-sm text-gray-500">
               Showing {visibleEntries.length} of {filteredEntries.length} matching episodes in My Shelf
@@ -250,7 +249,7 @@ export default function IotLibrary({
             <div class="mt-4 rounded-xl border border-dashed border-[#d9c8ac] bg-white/70 px-4 py-6 text-sm text-gray-600">
               {shelvedCount === 0
                 ? 'Nothing is on your BBC In Our Time shelf yet. Add episodes to My Shelf to keep them here.'
-                : checkedOnly
+                : checkedFilter !== 'both'
                   ? 'No episodes in My Shelf matched those filters.'
                   : 'No episodes in My Shelf matched that search.'}
             </div>
@@ -330,7 +329,7 @@ export default function IotLibrary({
             </>
           ) : (
             <div class="rounded-xl border border-dashed border-gray-300 bg-white px-4 py-6 text-sm text-gray-600">
-              {checkedOnly
+              {checkedFilter !== 'both'
                 ? 'No episodes matched those filters.'
                 : 'No episodes match your filters.'}
             </div>

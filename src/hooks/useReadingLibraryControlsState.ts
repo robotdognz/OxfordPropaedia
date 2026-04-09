@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import {
   getReadingLibraryControlsPreference,
   setReadingLibraryControlsPreference,
+  type ReadingLibraryCheckedFilter,
   type ReadingLibraryControlsPreference,
   type ReadingLibraryScope,
   type ReadingType,
@@ -26,14 +27,14 @@ export function useReadingLibraryControlsState<TSortField extends string>(
 
   return {
     scope: controls.scope,
-    checkedOnly: controls.checkedOnly,
+    checkedFilter: controls.checkedFilter,
     sortField: controls.sortField,
     sortDirection: controls.sortDirection,
     setScope: (scope: ReadingLibraryScope) => {
       setControls((previous) => ({ ...previous, scope }));
     },
-    setCheckedOnly: (checkedOnly: boolean) => {
-      setControls((previous) => ({ ...previous, checkedOnly }));
+    setCheckedFilter: (checkedFilter: ReadingLibraryCheckedFilter) => {
+      setControls((previous) => ({ ...previous, checkedFilter }));
     },
     setSortField: (sortField: TSortField) => {
       setControls((previous) => ({ ...previous, sortField }));

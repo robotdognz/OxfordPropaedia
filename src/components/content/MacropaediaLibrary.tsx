@@ -20,8 +20,8 @@ import LibraryWorkspaceControls from './LibraryWorkspaceControls';
 import LibraryListControlsPanel from './LibraryListControlsPanel';
 import BookshelfGrid from './BookshelfGrid';
 import {
-  formatSummaryMinutes,
   summarizeTimedEntries,
+  summarizeTimedEntryLines,
 } from '../../utils/readingTimeSummary';
 
 export interface MacropaediaLibraryProps {
@@ -34,6 +34,12 @@ const INITIAL_VISIBLE_COUNT = 60;
 
 type SortField = 'section' | 'part' | 'division' | 'title';
 type SortDirection = 'asc' | 'desc';
+
+function matchesCheckedFilter(isChecked: boolean, checkedFilter: 'both' | 'checked' | 'unchecked'): boolean {
+  if (checkedFilter === 'checked') return isChecked;
+  if (checkedFilter === 'unchecked') return !isChecked;
+  return true;
+}
 
 function matchesQuery(entry: MacropaediaAggregateEntry, query: string): boolean {
   if (!query) return true;
@@ -73,11 +79,11 @@ export default function MacropaediaLibrary({
   const shelfState = useReadingShelfState();
   const {
     scope,
-    checkedOnly,
+    checkedFilter,
     sortField,
     sortDirection,
     setScope,
-    setCheckedOnly,
+    setCheckedFilter,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('macropaedia', 'section');
@@ -87,7 +93,7 @@ export default function MacropaediaLibrary({
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  }, [query, scope, checkedOnly, sortField, sortDirection]);
+  }, [query, scope, checkedFilter, sortField, sortDirection]);
 
   const shelvedCount = entries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
   const isShelfView = scope === 'shelf';
@@ -110,8 +116,7 @@ export default function MacropaediaLibrary({
   const filteredEntries = sortEntries(
     scopedEntries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-
-      if (checkedOnly && !isChecked) return false;
+      if (!matchesCheckedFilter(isChecked, checkedFilter)) return false;
       return matchesQuery(entry, query.trim().toLowerCase());
     }),
     sortField,
@@ -125,12 +130,9 @@ export default function MacropaediaLibrary({
     () => summarizeTimedEntries(filteredEntries, checklistState),
     [filteredEntries, checklistState]
   );
-  const shelfSpentLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.completedMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
-  const shelfRemainingLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.remainingMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
+  const shelfSummaryLines = summarizeTimedEntryLines(shelfTimeSummary, {
+    showCompletedCount: checkedFilter !== 'checked',
+  });
 
   return (
     <div class="space-y-4">
@@ -140,6 +142,7 @@ export default function MacropaediaLibrary({
         onReadingTypeChange={onReadingTypeChange}
         scope={scope}
         onScopeChange={setScope}
+        checkedFilter={checkedFilter}
         totalCount={entries.length}
         shelvedCount={shelvedCount}
       />
@@ -148,8 +151,8 @@ export default function MacropaediaLibrary({
         query={query}
         onQueryInput={setQuery}
         queryPlaceholder="Article title"
-        checkedOnly={checkedOnly}
-        onCheckedOnlyChange={setCheckedOnly}
+        checkedFilter={checkedFilter}
+        onCheckedFilterChange={setCheckedFilter}
         sortField={sortField}
         onSortFieldChange={(value) => setSortField(value as SortField)}
         sortOptions={[
@@ -165,19 +168,14 @@ export default function MacropaediaLibrary({
       {isShelfView ? (
         <section
           id="macropaedia-library"
-          class="scroll-mt-24 rounded-[1.75rem] border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
+          class="scroll-mt-24 rounded-2xl border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
         >
           <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 class="font-serif text-2xl text-gray-900">My Britannica Shelf</h2>
-              <p class="mt-1 text-sm text-gray-500">{shelfTimeSummary.completedCount} checked off</p>
-              {(shelfSpentLabel || shelfRemainingLabel) && (
-                <p class="mt-1 text-sm text-gray-500">
-                  {shelfSpentLabel ? `${shelfSpentLabel} spent` : ''}
-                  {shelfSpentLabel && shelfRemainingLabel ? ' · ' : ''}
-                  {shelfRemainingLabel ? `${shelfRemainingLabel} remaining` : ''}
-                </p>
-              )}
+              {shelfSummaryLines.map((line) => (
+                <p class="mt-1 text-sm text-gray-500">{line}</p>
+              ))}
             </div>
             <div class="text-sm text-gray-500">
               Showing {visibleEntries.length} of {filteredEntries.length} matching articles in My Shelf
@@ -224,7 +222,7 @@ export default function MacropaediaLibrary({
             <div class="mt-4 rounded-xl border border-dashed border-[#d9c8ac] bg-white/70 px-4 py-10 text-center text-sm text-gray-600">
               {shelvedCount === 0
                 ? 'Nothing is on your Britannica shelf yet. Add articles to My Shelf to keep them here.'
-                : checkedOnly
+                : checkedFilter !== 'both'
                   ? 'No Britannica articles in My Shelf matched those filters.'
                   : 'No Britannica articles in My Shelf matched that search.'}
             </div>
@@ -295,7 +293,7 @@ export default function MacropaediaLibrary({
             </>
           ) : (
             <div class="rounded-xl border border-dashed border-gray-300 px-4 py-10 text-center text-sm text-gray-600">
-              {checkedOnly
+              {checkedFilter !== 'both'
                 ? 'No Britannica articles matched those filters.'
                 : 'No Macropaedia articles matched that search.'}
             </div>

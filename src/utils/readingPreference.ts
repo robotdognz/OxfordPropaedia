@@ -5,9 +5,10 @@
 export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
 export type ReadingPoolScope = 'all' | 'shelved';
 export type ReadingLibraryScope = 'library' | 'shelf';
+export type ReadingLibraryCheckedFilter = 'both' | 'checked' | 'unchecked';
 export interface ReadingLibraryControlsPreference<TSortField extends string = string> {
   scope: ReadingLibraryScope;
-  checkedOnly: boolean;
+  checkedFilter: ReadingLibraryCheckedFilter;
   sortField: TSortField;
   sortDirection: 'asc' | 'desc';
 }
@@ -249,7 +250,7 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
 ): ReadingLibraryControlsPreference<TSortField> {
   const fallback: ReadingLibraryControlsPreference<TSortField> = {
     scope: 'library',
-    checkedOnly: false,
+    checkedFilter: 'both',
     sortField: defaultSortField,
     sortDirection: defaultSortDirection,
   };
@@ -262,13 +263,19 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
 
     const parsed = JSON.parse(raw) as Partial<ReadingLibraryControlsPreference<string>> & {
       shelvedOnly?: boolean;
+      checkedOnly?: boolean;
     };
 
     const scope = parsed.scope === 'shelf' || parsed.shelvedOnly === true ? 'shelf' : 'library';
+    const checkedFilter = parsed.checkedFilter === 'checked' || parsed.checkedFilter === 'unchecked' || parsed.checkedFilter === 'both'
+      ? parsed.checkedFilter
+      : parsed.checkedOnly === true
+        ? 'checked'
+        : 'both';
 
     return {
       scope,
-      checkedOnly: parsed.checkedOnly === true,
+      checkedFilter,
       sortField: (typeof parsed.sortField === 'string' ? parsed.sortField : defaultSortField) as TSortField,
       sortDirection: parsed.sortDirection === 'asc' || parsed.sortDirection === 'desc'
         ? parsed.sortDirection
@@ -309,6 +316,29 @@ export function setReadingLibraryScopePreference(
         ...parsed,
         scope,
         shelvedOnly: undefined,
+      }),
+    );
+  } catch {
+    // Ignore
+  }
+}
+
+export function setReadingLibraryCheckedFilterPreference(
+  readingType: ReadingType,
+  checkedFilter: ReadingLibraryCheckedFilter,
+): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    const key = readingLibraryControlsKey(readingType);
+    const raw = localStorage.getItem(key);
+    const parsed = raw ? JSON.parse(raw) as Record<string, unknown> : {};
+
+    localStorage.setItem(
+      key,
+      JSON.stringify({
+        ...parsed,
+        checkedFilter,
       }),
     );
   } catch {

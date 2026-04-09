@@ -26,8 +26,8 @@ import {
   formatEstimatedReadingTime,
 } from '../../utils/readingSpeed';
 import {
-  formatSummaryMinutes,
   summarizeTimedEntries,
+  summarizeTimedEntryLines,
 } from '../../utils/readingTimeSummary';
 
 export interface WikipediaLibraryProps {
@@ -45,6 +45,12 @@ function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
+function matchesCheckedFilter(isChecked: boolean, checkedFilter: 'both' | 'checked' | 'unchecked'): boolean {
+  if (checkedFilter === 'checked') return isChecked;
+  if (checkedFilter === 'unchecked') return !isChecked;
+  return true;
+}
+
 export default function WikipediaLibrary({
   entries,
   baseUrl,
@@ -56,11 +62,11 @@ export default function WikipediaLibrary({
   const level = useWikipediaLevel();
   const {
     scope,
-    checkedOnly,
+    checkedFilter,
     sortField,
     sortDirection,
     setScope,
-    setCheckedOnly,
+    setCheckedFilter,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('wikipedia', 'section');
@@ -70,7 +76,7 @@ export default function WikipediaLibrary({
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
-  }, [query, scope, checkedOnly, sortField, sortDirection, level]);
+  }, [query, scope, checkedFilter, sortField, sortDirection, level]);
 
   const levelEntries = entries.filter((entry) => entry.lowestLevel <= level);
   const shelvedCount = levelEntries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
@@ -98,7 +104,7 @@ export default function WikipediaLibrary({
   const filteredEntries = scopedEntries
     .filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-      if (checkedOnly && !isChecked) return false;
+      if (!matchesCheckedFilter(isChecked, checkedFilter)) return false;
       if (!normalizedQuery) return true;
       return entry.title.toLowerCase().includes(normalizedQuery) || (entry.category || '').toLowerCase().includes(normalizedQuery);
     })
@@ -121,12 +127,9 @@ export default function WikipediaLibrary({
     () => summarizeTimedEntries(filteredEntries, checklistState, readingSpeedWpm),
     [filteredEntries, checklistState, readingSpeedWpm]
   );
-  const shelfSpentLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.completedMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
-  const shelfRemainingLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.remainingMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
+  const shelfSummaryLines = summarizeTimedEntryLines(shelfTimeSummary, {
+    showCompletedCount: checkedFilter !== 'checked',
+  });
 
   return (
     <div class="space-y-4">
@@ -136,6 +139,7 @@ export default function WikipediaLibrary({
         onReadingTypeChange={onReadingTypeChange}
         scope={scope}
         onScopeChange={setScope}
+        checkedFilter={checkedFilter}
         totalCount={levelEntries.length}
         shelvedCount={shelvedCount}
         showWikipediaLevelSelector
@@ -145,8 +149,8 @@ export default function WikipediaLibrary({
         query={query}
         onQueryInput={setQuery}
         queryPlaceholder="Search articles..."
-        checkedOnly={checkedOnly}
-        onCheckedOnlyChange={setCheckedOnly}
+        checkedFilter={checkedFilter}
+        onCheckedFilterChange={setCheckedFilter}
         sortField={sortField}
         onSortFieldChange={(value) => setSortField(value as SortField)}
         sortOptions={[
@@ -163,19 +167,14 @@ export default function WikipediaLibrary({
       {isShelfView ? (
         <section
           id="wikipedia-library"
-          class="scroll-mt-24 rounded-[1.75rem] border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
+          class="scroll-mt-24 rounded-2xl border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
         >
           <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 class="font-serif text-2xl text-gray-900">My Wikipedia Shelf</h2>
-              <p class="mt-1 text-sm text-gray-500">{shelfTimeSummary.completedCount} checked off</p>
-              {(shelfSpentLabel || shelfRemainingLabel) && (
-                <p class="mt-1 text-sm text-gray-500">
-                  {shelfSpentLabel ? `${shelfSpentLabel} spent` : ''}
-                  {shelfSpentLabel && shelfRemainingLabel ? ' · ' : ''}
-                  {shelfRemainingLabel ? `${shelfRemainingLabel} remaining` : ''}
-                </p>
-              )}
+              {shelfSummaryLines.map((line) => (
+                <p class="mt-1 text-sm text-gray-500">{line}</p>
+              ))}
             </div>
             <div class="text-sm text-gray-500">
               Showing {visibleEntries.length} of {filteredEntries.length} matching articles in My Shelf
@@ -221,7 +220,7 @@ export default function WikipediaLibrary({
             <div class="mt-4 rounded-xl border border-dashed border-[#d9c8ac] bg-white/70 px-4 py-6 text-sm text-gray-600">
               {shelvedCount === 0
                 ? 'Nothing is on your Wikipedia shelf at this level yet. Add articles to My Shelf to keep them here.'
-                : checkedOnly
+                : checkedFilter !== 'both'
                   ? 'No articles in My Shelf matched those filters.'
                   : 'No articles in My Shelf matched that search.'}
             </div>
@@ -304,7 +303,7 @@ export default function WikipediaLibrary({
             </>
           ) : (
             <div class="rounded-xl border border-dashed border-gray-300 bg-white px-4 py-6 text-sm text-gray-600">
-              {checkedOnly
+              {checkedFilter !== 'both'
                 ? 'No articles matched those filters.'
                 : 'No articles match your filters.'}
             </div>

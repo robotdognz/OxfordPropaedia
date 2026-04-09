@@ -11,8 +11,8 @@ import {
   formatEstimatedReadingTime,
 } from '../../utils/readingSpeed';
 import {
-  formatSummaryMinutes,
   summarizeTimedEntries,
+  summarizeTimedEntryLines,
 } from '../../utils/readingTimeSummary';
 import { formatVsiPageCount } from '../../utils/vsiCatalog';
 import { slugify } from '../../utils/helpers';
@@ -110,17 +110,23 @@ function precisionBadgeText(entry: VsiAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
+function matchesCheckedFilter(isChecked: boolean, checkedFilter: 'both' | 'checked' | 'unchecked'): boolean {
+  if (checkedFilter === 'checked') return isChecked;
+  if (checkedFilter === 'unchecked') return !isChecked;
+  return true;
+}
+
 export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: VsiLibraryProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   const shelfState = useReadingShelfState();
   const {
     scope,
-    checkedOnly,
+    checkedFilter,
     sortField,
     sortDirection,
     setScope,
-    setCheckedOnly,
+    setCheckedFilter,
     setSortField,
     setSortDirection,
   } = useReadingLibraryControlsState<SortField>('vsi', 'section');
@@ -130,7 +136,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  }, [query, scope, checkedOnly, sortField, sortDirection]);
+  }, [query, scope, checkedFilter, sortField, sortDirection]);
 
   const normalizedQuery = query.trim().toLowerCase();
   const shelvedCount = entries.filter((entry) => Boolean(shelfState[entry.checklistKey])).length;
@@ -155,8 +161,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
   const filteredEntries = sortEntries(
     scopedEntries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-
-      if (checkedOnly && !isChecked) return false;
+      if (!matchesCheckedFilter(isChecked, checkedFilter)) return false;
       return matchesQuery(entry, normalizedQuery);
     }),
     sortField,
@@ -170,12 +175,9 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
     () => summarizeTimedEntries(filteredEntries, checklistState, readingSpeedWpm),
     [filteredEntries, checklistState, readingSpeedWpm]
   );
-  const shelfSpentLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.completedMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
-  const shelfRemainingLabel = shelfTimeSummary.timedEntryCount > 0
-    ? formatSummaryMinutes(shelfTimeSummary.remainingMinutes, shelfTimeSummary.usesApproximateTime)
-    : null;
+  const shelfSummaryLines = summarizeTimedEntryLines(shelfTimeSummary, {
+    showCompletedCount: checkedFilter !== 'checked',
+  });
 
   return (
     <div class="space-y-4">
@@ -185,6 +187,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
         onReadingTypeChange={onReadingTypeChange}
         scope={scope}
         onScopeChange={setScope}
+        checkedFilter={checkedFilter}
         totalCount={entries.length}
         shelvedCount={shelvedCount}
       />
@@ -193,8 +196,8 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
         query={query}
         onQueryInput={setQuery}
         queryPlaceholder="Title, author, subject, or series number"
-        checkedOnly={checkedOnly}
-        onCheckedOnlyChange={setCheckedOnly}
+        checkedFilter={checkedFilter}
+        onCheckedFilterChange={setCheckedFilter}
         sortField={sortField}
         onSortFieldChange={(value) => setSortField(value as SortField)}
         sortOptions={[
@@ -212,19 +215,14 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
       {isShelfView ? (
         <section
           id="vsi-library"
-          class="scroll-mt-24 rounded-[1.75rem] border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
+          class="scroll-mt-24 rounded-2xl border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
         >
           <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 class="font-serif text-2xl text-gray-900">My Oxford VSI Shelf</h2>
-              <p class="mt-1 text-sm text-gray-500">{shelfTimeSummary.completedCount} checked off</p>
-              {(shelfSpentLabel || shelfRemainingLabel) && (
-                <p class="mt-1 text-sm text-gray-500">
-                  {shelfSpentLabel ? `${shelfSpentLabel} spent` : ''}
-                  {shelfSpentLabel && shelfRemainingLabel ? ' · ' : ''}
-                  {shelfRemainingLabel ? `${shelfRemainingLabel} remaining` : ''}
-                </p>
-              )}
+              {shelfSummaryLines.map((line) => (
+                <p class="mt-1 text-sm text-gray-500">{line}</p>
+              ))}
             </div>
             <div class="text-sm text-gray-500">
               Showing {visibleEntries.length} of {filteredEntries.length} matching titles in My Shelf
@@ -272,7 +270,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
             <div class="mt-4 rounded-xl border border-dashed border-[#d9c8ac] bg-white/70 px-4 py-10 text-center text-sm text-gray-600">
               {shelvedCount === 0
                 ? 'Nothing is on your VSI shelf yet. Add titles to My Shelf to keep them here.'
-                : checkedOnly
+                : checkedFilter !== 'both'
                   ? 'No VSI titles in My Shelf matched those filters.'
                   : 'No VSI titles in My Shelf matched that search.'}
             </div>
@@ -354,7 +352,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
             </>
           ) : (
             <div class="rounded-xl border border-dashed border-gray-300 px-4 py-10 text-center text-sm text-gray-600">
-              {checkedOnly
+              {checkedFilter !== 'both'
                 ? 'No VSI titles matched those filters.'
                 : 'No VSI titles matched that search.'}
             </div>

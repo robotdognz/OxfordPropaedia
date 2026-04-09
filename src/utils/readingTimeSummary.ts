@@ -76,3 +76,33 @@ export function formatSummaryMinutes(
   if (minutes <= 0) return '0 min';
   return formatEstimatedMinutes(minutes, approximate) ?? '0 min';
 }
+
+export function summarizeTimedEntryLines(
+  summary: TimedEntriesSummary,
+  options?: {
+    showCompletedCount?: boolean;
+  },
+): string[] {
+  const lines: string[] = [];
+  const showCompletedCount = options?.showCompletedCount !== false;
+
+  if (showCompletedCount && summary.completedCount > 0) {
+    lines.push(`${summary.completedCount} checked off`);
+  }
+
+  const timeParts: string[] = [];
+
+  if (summary.completedMinutes > 0) {
+    timeParts.push(`${formatSummaryMinutes(summary.completedMinutes, summary.usesApproximateTime)} spent`);
+  }
+
+  if (summary.remainingMinutes > 0) {
+    timeParts.push(`${formatSummaryMinutes(summary.remainingMinutes, summary.usesApproximateTime)} remaining`);
+  }
+
+  if (timeParts.length > 0) {
+    lines.push(timeParts.join(' · '));
+  }
+
+  return lines;
+}

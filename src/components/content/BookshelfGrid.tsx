@@ -239,13 +239,13 @@ function DoneToggle({
       aria-pressed={checked}
       aria-label={ariaLabel}
       onClick={() => onCheckedChange(!checked)}
-      class={`inline-flex h-8 w-8 items-center justify-center rounded-full border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 ${
+      class={`inline-flex h-7 w-7 items-center justify-center rounded-full border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 ${
         checked
           ? 'border-slate-900 bg-slate-900 text-white shadow-sm'
           : 'border-white/70 bg-white/90 text-slate-400 hover:border-slate-300 hover:text-slate-600'
       }`}
     >
-      <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+      <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
         <path d="m5 10 3 3 7-7" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
     </button>
@@ -320,7 +320,7 @@ export default function BookshelfGrid({
                     />
                   </div>
 
-                  <div class="absolute right-2 top-2 z-10">
+                  <div class="absolute right-1.5 top-1.5 z-10">
                     <DoneToggle
                       checked={item.checked}
                       onCheckedChange={item.onCheckedChange}

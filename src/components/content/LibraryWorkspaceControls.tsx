@@ -2,10 +2,12 @@ import { h } from 'preact';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import ReadingLibraryScopeTabs from './ReadingLibraryScopeTabs';
 import {
+  setReadingLibraryCheckedFilterPreference,
   READING_TYPE_ORDER,
   READING_TYPE_UI_META,
   setReadingLibraryScopePreference,
   setReadingPreference,
+  type ReadingLibraryCheckedFilter,
   type ReadingLibraryScope,
   type ReadingType,
 } from '../../utils/readingPreference';
@@ -16,6 +18,7 @@ interface LibraryWorkspaceControlsProps {
   onReadingTypeChange: (type: ReadingType) => void;
   scope: ReadingLibraryScope;
   onScopeChange: (scope: ReadingLibraryScope) => void;
+  checkedFilter: ReadingLibraryCheckedFilter;
   totalCount: number;
   shelvedCount: number;
   showWikipediaLevelSelector?: boolean;
@@ -31,6 +34,7 @@ export default function LibraryWorkspaceControls({
   onReadingTypeChange,
   scope,
   onScopeChange,
+  checkedFilter,
   totalCount,
   shelvedCount,
   showWikipediaLevelSelector = false,
@@ -45,6 +49,7 @@ export default function LibraryWorkspaceControls({
       }))}
       onReadingTypeChange={(type) => {
         setReadingLibraryScopePreference(type, scope);
+        setReadingLibraryCheckedFilterPreference(type, checkedFilter);
         onReadingTypeChange(type);
         setReadingPreference(type);
 
