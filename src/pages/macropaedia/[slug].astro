@@ -86,19 +86,20 @@ const rings = [
       </div>
     </header>
 
-    <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
-          Referenced in {article.sections.length} {article.sections.length === 1 ? 'Section' : 'Sections'}
-        </h2>
-        <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
+    <div class="mt-6 space-y-6">
+      <div class="flex items-start gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+        <div class="flex-1 min-w-0">
+          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+            Referenced in {article.sections.length} {article.sections.length === 1 ? 'Section' : 'Sections'}
+          </h2>
+          <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
+        </div>
+        <div class="shrink-0">
+          <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
+        </div>
       </div>
-      <div class="shrink-0">
-        <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
-      </div>
-    </div>
 
-    <section class="mt-6">
+    <section>
       {sortedParts.map(([partNumber, sections]) => (
         <div class="mt-4">
           <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
@@ -120,5 +121,6 @@ const rings = [
         </div>
       ))}
     </section>
+    </div>
   </main>
 </BaseLayout>

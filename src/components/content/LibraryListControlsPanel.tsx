@@ -19,9 +19,9 @@ interface LibraryListControlsPanelProps {
 }
 
 const LABEL_CLASS = 'text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500';
-const FIELD_WRAP_CLASS = 'mt-1.5 flex min-h-9 items-center rounded-xl border border-slate-200 bg-white/95 px-2.5 py-1.5 text-slate-600 shadow-sm shadow-slate-200/60 transition hover:border-slate-300 focus-within:border-slate-300 focus-within:bg-white focus-within:shadow-sm focus-within:shadow-slate-200/70';
-const SEARCH_INPUT_CLASS = 'w-full bg-transparent p-0 font-sans text-xs font-normal leading-5 text-slate-600 placeholder:text-slate-400 focus:outline-none';
-const SELECT_CLASS = 'w-full appearance-none bg-transparent p-0 pr-5 font-sans text-xs font-normal leading-5 text-slate-600 focus:outline-none';
+const FIELD_WRAP_CLASS = 'flex min-h-9 items-center rounded-xl border border-slate-200 bg-white/95 px-2.5 py-1.5 text-slate-600 shadow-sm shadow-slate-200/60 transition hover:border-slate-300 focus-within:border-slate-300 focus-within:bg-white focus-within:shadow-sm focus-within:shadow-slate-200/70';
+const SEARCH_INPUT_CLASS = 'w-full bg-transparent p-0 font-serif text-xs font-medium leading-5 text-slate-900 placeholder:text-slate-400 focus:outline-none';
+const SELECT_CLASS = 'w-full appearance-none bg-transparent p-0 pr-5 font-serif text-xs font-medium leading-5 text-slate-900 focus:outline-none';
 
 function SelectChevron() {
   return (
@@ -51,10 +51,10 @@ export default function LibraryListControlsPanel({
 }: LibraryListControlsPanelProps) {
   return (
     <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
-      <div class="grid gap-3 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.35fr)] lg:items-end">
-        <label class="min-w-0">
-          <span class={LABEL_CLASS}>Search</span>
-          <span class={FIELD_WRAP_CLASS}>
+      <div class="grid gap-2.5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.35fr)] lg:items-start">
+        <section class="min-w-0 space-y-1.5">
+          <div class={LABEL_CLASS}>Search</div>
+          <div class="flex min-h-9 items-center rounded-xl border border-slate-200 bg-white/95 px-2.5 py-1.5 text-slate-600 shadow-sm shadow-slate-200/60 transition hover:border-slate-300 focus-within:border-slate-300 focus-within:bg-white focus-within:shadow-sm focus-within:shadow-slate-200/70">
             <input
               type="search"
               value={query}
@@ -62,12 +62,12 @@ export default function LibraryListControlsPanel({
               placeholder={queryPlaceholder}
               class={SEARCH_INPUT_CLASS}
             />
-          </span>
-        </label>
+          </div>
+        </section>
 
         <section class="min-w-0 space-y-1.5">
           <div class={LABEL_CLASS}>Sort</div>
-          <div class="grid gap-2 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.76fr)_minmax(13rem,1.08fr)] xl:items-start">
+          <div class="grid gap-1.5 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.76fr)_minmax(13rem,1.08fr)] xl:items-start">
             <label class="min-w-0">
               <span class={`${FIELD_WRAP_CLASS} relative`}>
                 <select
@@ -97,7 +97,7 @@ export default function LibraryListControlsPanel({
               </span>
             </label>
 
-            <div class="min-w-0 xl:pt-1.5">
+            <div class="min-w-0">
               <SelectorCardRail
                 ariaLabel="Checked filter"
                 value={checkedFilter}

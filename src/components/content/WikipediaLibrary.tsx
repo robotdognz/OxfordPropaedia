@@ -29,6 +29,7 @@ import {
   summarizeTimedEntries,
   summarizeTimedEntryLines,
 } from '../../utils/readingTimeSummary';
+import { buildVisibleResultsSummary } from '../../utils/libraryListSummary';
 
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
@@ -123,6 +124,13 @@ export default function WikipediaLibrary({
 
   const visibleEntries = filteredEntries.slice(0, visibleCount);
   const canShowMore = visibleEntries.length < filteredEntries.length;
+  const visibleResultsSummary = buildVisibleResultsSummary({
+    visibleCount: visibleEntries.length,
+    matchingCount: filteredEntries.length,
+    scopeCount: scopedEntries.length,
+    noun: 'articles',
+    scopeLabel: isShelfView ? 'in My Shelf' : undefined,
+  });
   const shelfTimeSummary = useMemo(
     () => summarizeTimedEntries(filteredEntries, checklistState, readingSpeedWpm),
     [filteredEntries, checklistState, readingSpeedWpm]
@@ -130,6 +138,9 @@ export default function WikipediaLibrary({
   const shelfSummaryLines = summarizeTimedEntryLines(shelfTimeSummary, {
     showCompletedCount: checkedFilter !== 'checked',
   });
+  const shelfHeaderLines = visibleResultsSummary
+    ? [...shelfSummaryLines, visibleResultsSummary]
+    : shelfSummaryLines;
 
   return (
     <div class="space-y-4">
@@ -169,15 +180,12 @@ export default function WikipediaLibrary({
           id="wikipedia-library"
           class="scroll-mt-24 rounded-2xl border border-[#eadbc3] bg-gradient-to-b from-[#f9f3e7] via-[#f1e6d2] to-[#ebdcc1] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-6 sm:py-6"
         >
-          <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+          <div class="mb-5">
             <div>
               <h2 class="font-serif text-2xl text-gray-900">My Wikipedia Shelf</h2>
-              {shelfSummaryLines.map((line) => (
+              {shelfHeaderLines.map((line) => (
                 <p class="mt-1 text-sm text-gray-500">{line}</p>
               ))}
-            </div>
-            <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching articles in My Shelf
             </div>
           </div>
 
@@ -233,9 +241,9 @@ export default function WikipediaLibrary({
               <h2 class="font-serif text-2xl text-gray-900">Wikipedia Article List</h2>
               <p class="mt-1 text-sm text-gray-500">{scopedCompletedCount} checked off</p>
             </div>
-            <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching articles
-            </div>
+            {visibleResultsSummary ? (
+              <div class="text-sm text-gray-500">{visibleResultsSummary}</div>
+            ) : null}
           </div>
 
           {filteredEntries.length > 0 ? (

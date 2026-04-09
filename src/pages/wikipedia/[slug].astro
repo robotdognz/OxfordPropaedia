@@ -131,7 +131,7 @@ const overviewParagraphs = extractParagraphs.length > 0
 	      <span data-pagefind-meta="page_type:Wikipedia" class="hidden"></span>
 	      {article.category && (
 	        <div class="mt-2">
-	          <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>
+	          <span class="inline-block rounded-full border border-gray-200 bg-white px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>
 	        </div>
 	      )}
 	      {article.wordCount ? (
@@ -139,21 +139,25 @@ const overviewParagraphs = extractParagraphs.length > 0
             <ReadingTimeText client:load wordCount={article.wordCount} />
           </p>
 	      ) : null}
-	      <div class="mt-3 flex flex-wrap items-center gap-4">
-        <ReadingCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
-        <ShelfCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
-        <a
-          href={article.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
-        >
-          Read on Wikipedia ↗
-        </a>
+	      <div class="mt-3">
+        <div class="flex flex-wrap items-center gap-4">
+          <ReadingCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
+          <ShelfCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
+        </div>
+        <div class="mt-2 flex flex-wrap items-center gap-4">
+          <a
+            href={article.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+          >
+            Read on Wikipedia ↗
+          </a>
+        </div>
       </div>
     </header>
 
-    <div class="mt-8">
+    <div class="mt-6 space-y-6">
       <ReadingDetailCoveragePreview
         client:load
         heading="Coverage Preview"
@@ -166,21 +170,20 @@ const overviewParagraphs = extractParagraphs.length > 0
         size={100}
         ringWidth={8}
       />
-    </div>
 
-    {overviewHeading && overviewParagraphs.length > 0 && (
-      <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">{overviewHeading}</h2>
-        <div class="mt-2 space-y-3">
-          {overviewParagraphs.map((paragraph) => (
-            <p class="text-sm leading-relaxed text-gray-700">{paragraph}</p>
-          ))}
-        </div>
-      </section>
-    )}
+      {overviewHeading && overviewParagraphs.length > 0 && (
+        <section class="rounded-xl border border-gray-200 bg-white px-5 py-4">
+          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">{overviewHeading}</h2>
+          <div class="mt-2 space-y-3">
+            {overviewParagraphs.map((paragraph) => (
+              <p class="text-sm leading-relaxed text-gray-700">{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
 
-    {sections.length > 0 ? (
-      <section class="mt-6">
+      {sections.length > 0 ? (
+      <section>
         <div class="mb-4">
           <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Outline Connections</h2>
           <p class="mt-1 text-xs text-slate-400">Parts and Sections this article connects to in the Outline of Knowledge.</p>
@@ -215,10 +218,11 @@ const overviewParagraphs = extractParagraphs.length > 0
           </div>
         ))}
       </section>
-    ) : (
-      <section class="mt-8">
+      ) : (
+      <section>
         <p class="text-sm text-gray-400 italic">This article does not match any sections in the Outline of Knowledge.</p>
       </section>
-    )}
+      )}
+    </div>
   </main>
 </BaseLayout>

@@ -11,6 +11,7 @@ export interface TimedSummaryEntry {
 }
 
 export interface TimedEntriesSummary {
+  totalCount: number;
   completedCount: number;
   timedEntryCount: number;
   completedMinutes: number;
@@ -61,6 +62,7 @@ export function summarizeTimedEntries(
   }
 
   return {
+    totalCount: entries.length,
     completedCount,
     timedEntryCount,
     completedMinutes,
@@ -86,10 +88,6 @@ export function summarizeTimedEntryLines(
   const lines: string[] = [];
   const showCompletedCount = options?.showCompletedCount !== false;
 
-  if (showCompletedCount && summary.completedCount > 0) {
-    lines.push(`${summary.completedCount} checked off`);
-  }
-
   const timeParts: string[] = [];
 
   if (summary.completedMinutes > 0) {
@@ -102,6 +100,10 @@ export function summarizeTimedEntryLines(
 
   if (timeParts.length > 0) {
     lines.push(timeParts.join(' · '));
+  }
+
+  if (showCompletedCount && summary.completedCount > 0) {
+    lines.push(`${summary.completedCount} of ${summary.totalCount} checked off`);
   }
 
   return lines;

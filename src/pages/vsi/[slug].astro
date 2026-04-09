@@ -104,29 +104,33 @@ const editionLabel = formatEditionLabel(entry.edition);
       {entry.subject && (
         <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
       )}
-      <div class="mt-3 flex flex-wrap items-center gap-4">
-        <ReadingCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)} />
-        <ShelfCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)} />
-        <a
-          href={`https://www.amazon.com/s?i=digital-text&k=${encodeURIComponent(entry.title + ' Very Short Introduction ' + entry.author)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
-        >
-          Kindle Store ↗
-        </a>
-        <a
-          href={`https://www.goodreads.com/search?q=${encodeURIComponent(entry.title + ' Very Short Introduction')}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
-        >
-          Goodreads ↗
-        </a>
+      <div class="mt-3">
+        <div class="flex flex-wrap items-center gap-4">
+          <ReadingCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)} />
+          <ShelfCheckbox client:idle checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)} />
+        </div>
+        <div class="mt-2 flex flex-wrap items-center gap-4">
+          <a
+            href={`https://www.amazon.com/s?i=digital-text&k=${encodeURIComponent(entry.title + ' Very Short Introduction ' + entry.author)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+          >
+            Kindle Store ↗
+          </a>
+          <a
+            href={`https://www.goodreads.com/search?q=${encodeURIComponent(entry.title + ' Very Short Introduction')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+          >
+            Goodreads ↗
+          </a>
+        </div>
       </div>
     </header>
 
-    <div class="mt-8">
+    <div class="mt-6 space-y-6">
       <ReadingDetailCoveragePreview
         client:load
         heading="Coverage Preview"
@@ -139,27 +143,26 @@ const editionLabel = formatEditionLabel(entry.edition);
         size={100}
         ringWidth={8}
       />
-    </div>
 
-    {entry.abstract && (
-      <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
-        <p class="mt-2 text-sm leading-relaxed text-gray-700">{entry.abstract}</p>
-      </section>
-    )}
+      {entry.abstract && (
+        <section class="rounded-xl border border-gray-200 bg-white px-5 py-4">
+          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
+          <p class="mt-2 text-sm leading-relaxed text-gray-700">{entry.abstract}</p>
+        </section>
+      )}
 
-    {entry.keywords && entry.keywords.length > 0 && (
-      <section class="mt-4">
-        <div class="flex flex-wrap gap-1.5">
-          {entry.keywords.map((kw: string) => (
-            <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{kw}</span>
-          ))}
-        </div>
-      </section>
-    )}
+      {entry.keywords && entry.keywords.length > 0 && (
+        <section>
+          <div class="flex flex-wrap gap-1.5">
+            {entry.keywords.map((kw: string) => (
+              <span class="inline-block rounded-full border border-gray-200 bg-white px-2.5 py-0.5 text-xs text-gray-600">{kw}</span>
+            ))}
+          </div>
+        </section>
+      )}
 
-    {mappedSections.length > 0 ? (
-    <section class="mt-6">
+      {mappedSections.length > 0 ? (
+    <section>
       <div class="mb-4">
         <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Outline Connections</h2>
         <p class="mt-1 text-xs text-slate-400">Parts and Sections this book connects to in the Outline of Knowledge.</p>
@@ -195,9 +198,10 @@ const editionLabel = formatEditionLabel(entry.edition);
       ))}
     </section>
     ) : (
-      <section class="mt-8">
+      <section>
         <p class="text-sm text-gray-400 italic">This title does not match any sections in the Outline of Knowledge.</p>
       </section>
     )}
+    </div>
   </main>
 </BaseLayout>

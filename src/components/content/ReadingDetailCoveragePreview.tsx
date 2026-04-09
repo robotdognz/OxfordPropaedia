@@ -90,7 +90,7 @@ export default function ReadingDetailCoveragePreview({
   if (error && fallbackRings.length > 0) {
     return (
       <div class="w-full space-y-3">
-        <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 sm:flex-row sm:items-start">
+        <div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 sm:flex-row sm:items-start">
           <div class="min-w-0 flex-1">
             <h2 class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">{heading}</h2>
             <p class="mt-1 text-xs text-slate-400">{description}</p>
@@ -106,7 +106,7 @@ export default function ReadingDetailCoveragePreview({
   if (!data || checklistState === null) {
     return (
       <div class="w-full space-y-3" aria-hidden="true">
-        <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 sm:flex-row sm:items-start">
+        <div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 sm:flex-row sm:items-start">
           <div class="min-w-0 flex-1">
             <div class="h-4 w-40 rounded bg-slate-200/80" />
             <div class="mt-2 h-3 w-56 rounded bg-slate-200/70" />
@@ -151,7 +151,7 @@ export default function ReadingDetailCoveragePreview({
 
   return (
     <div class="w-full space-y-3">
-      <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 sm:flex-row sm:items-start">
+      <div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 sm:flex-row sm:items-start">
         <div class="min-w-0 flex-1">
           <h2 class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">{resolvedHeading}</h2>
           <p class="mt-1 text-xs text-slate-400">{resolvedDescription}</p>

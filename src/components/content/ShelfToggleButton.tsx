@@ -23,7 +23,7 @@ function BookmarkIcon({
   const outlinePath = variant === 'ribbon'
     ? 'M7.7 0.4V22.1L12 18.7L16.3 22.1V0.4'
     : filledPath;
-  const sizeClass = variant === 'ribbon' ? 'h-9 w-10' : 'h-4 w-4';
+  const sizeClass = variant === 'ribbon' ? 'h-9 w-10' : 'h-5 w-5';
 
   if (shelved) {
     return (
@@ -82,7 +82,7 @@ export default function ShelfToggleButton({
       class={`inline-flex items-center gap-1.5 rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 ${
         compact
           ? 'px-0.5 py-0.5 text-xs font-medium'
-          : 'px-0.5 py-0.5 text-sm font-sans'
+          : 'px-0.5 py-0.5 text-sm font-sans leading-none'
       } ${shelved ? 'text-blue-700 hover:text-blue-800' : 'text-slate-500 hover:text-slate-700'}`}
     >
       {icon}
