@@ -141,7 +141,21 @@ async function buildCaches(): Promise<SectionReadingCaches> {
   }
 
   const vsiMappingsBySection = new Map(
-    vsiMappings.map((entry) => [entry.data.sectionCode, entry.data.mappings])
+    vsiMappings.map((entry) => [
+      entry.data.sectionCode,
+      entry.data.mappings.flatMap((mapping: any) => {
+        const catalogEntry = resolveVsiCatalogEntry(mapping.vsiTitle, mapping.vsiAuthor);
+        if (!catalogEntry) {
+          return [];
+        }
+
+        return [{
+          ...mapping,
+          vsiTitle: catalogEntry.title,
+          vsiAuthor: catalogEntry.author,
+        }];
+      }),
+    ])
   );
 
   const wikiMappingsBySection = new Map(

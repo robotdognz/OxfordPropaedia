@@ -13,7 +13,7 @@ const CANDIDATE_PATH = resolve(OUTPUT_DIR, 'vsi-catalog-candidate.json');
 const DIFF_PATH = resolve(OUTPUT_DIR, 'vsi-catalog-candidate-diff.json');
 
 const referenceDateFlag = process.argv.find((arg) => arg.startsWith('--reference-date='));
-const referenceDateLabel = referenceDateFlag?.split('=').slice(1).join('=').trim() || '2026-04-08';
+const referenceDateLabel = referenceDateFlag?.split('=').slice(1).join('=').trim() || '2026-04-10';
 const referenceDate = new Date(`${referenceDateLabel}T23:59:59Z`);
 
 function normalizeWhitespace(value) {
