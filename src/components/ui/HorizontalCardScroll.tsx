@@ -113,6 +113,7 @@ export default function HorizontalCardScroll({
     let hasDragged = false;
 
     const onPointerDown = (e: PointerEvent) => {
+      if (e.pointerType !== 'mouse') return;
       if (e.button !== 0) return;
       const target = e.target as HTMLElement;
       if (target.closest('a, button, input, label, select, textarea')) return;
@@ -243,7 +244,7 @@ export default function HorizontalCardScroll({
       )}
       <div
         ref={scrollRef}
-        class="hcs-noscroll flex gap-4 overflow-x-auto scroll-smooth touch-pan-x"
+        class="hcs-noscroll flex gap-4 overflow-x-auto scroll-smooth touch-auto"
         style={{
           scrollbarWidth: 'none',
           paddingLeft: `${edgePad}px`,

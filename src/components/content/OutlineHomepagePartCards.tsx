@@ -45,7 +45,7 @@ export default function OutlineHomepagePartCards({
                 {part.title}
               </h3>
             </div>
-            <div class="flex shrink-0 flex-col items-center gap-2 self-start pt-0.5">
+            <div class="grid shrink-0 self-stretch pt-0.5" style="grid-template-rows: auto minmax(0, 1fr);">
               <OutlineProgressWheel
                 targets={part.progressTargets}
                 coverageState={coverageState}
@@ -53,9 +53,9 @@ export default function OutlineHomepagePartCards({
                 size={88}
                 ringWidth={8}
                 containerClassName="h-12 w-12"
-                className="pointer-events-none shrink-0"
+                className="pointer-events-none shrink-0 justify-self-center"
               />
-              <span class="flex h-6 w-6 items-center justify-center text-slate-300 transition group-hover:text-slate-500">
+              <span class="flex h-6 w-6 items-center justify-center self-center justify-self-center text-slate-300 transition group-hover:text-slate-500">
                 <svg
                   class="h-4 w-4 shrink-0"
                   fill="none"
