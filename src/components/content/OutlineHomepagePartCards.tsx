@@ -33,8 +33,8 @@ export default function OutlineHomepagePartCards({
           href={part.href}
           class="group rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
         >
-          <div class="flex items-start justify-between gap-3">
-            <div class="space-y-2">
+          <div class="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-4 gap-y-3">
+            <div class="min-w-0 space-y-2">
               <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
                 {part.partName}
               </p>
@@ -45,27 +45,40 @@ export default function OutlineHomepagePartCards({
                 {part.title}
               </h3>
             </div>
-            <OutlineProgressWheel
-              targets={part.progressTargets}
-              coverageState={coverageState}
-              loading={loading}
-              size={88}
-              ringWidth={8}
-              containerClassName="h-12 w-12"
-              className="pointer-events-none shrink-0"
-            />
-          </div>
-
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-            <span class="rounded-full bg-white px-2.5 py-1">
-              {part.divisionCount} {part.divisionCount === 1 ? 'Division' : 'Divisions'}
-            </span>
-            <span class="rounded-full bg-white px-2.5 py-1">
-              {part.sectionCount} {part.sectionCount === 1 ? 'Section' : 'Sections'}
-            </span>
-            <span class="rounded-full bg-white px-2.5 py-1">
-              {part.subsectionCount} {part.subsectionCount === 1 ? 'Subsection' : 'Subsections'}
-            </span>
+            <div class="flex shrink-0 flex-col items-center gap-2 self-start pt-0.5">
+              <OutlineProgressWheel
+                targets={part.progressTargets}
+                coverageState={coverageState}
+                loading={loading}
+                size={88}
+                ringWidth={8}
+                containerClassName="h-12 w-12"
+                className="pointer-events-none shrink-0"
+              />
+              <span class="flex h-6 w-6 items-center justify-center text-slate-300 transition group-hover:text-slate-500">
+                <svg
+                  class="h-4 w-4 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+            <div class="col-span-2 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+              <span class="rounded-full bg-white px-2.5 py-1">
+                {part.divisionCount} {part.divisionCount === 1 ? 'Division' : 'Divisions'}
+              </span>
+              <span class="rounded-full bg-white px-2.5 py-1">
+                {part.sectionCount} {part.sectionCount === 1 ? 'Section' : 'Sections'}
+              </span>
+              <span class="rounded-full bg-white px-2.5 py-1">
+                {part.subsectionCount} {part.subsectionCount === 1 ? 'Subsection' : 'Subsections'}
+              </span>
+            </div>
           </div>
         </a>
       ))}
